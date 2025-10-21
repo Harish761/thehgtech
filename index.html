@@ -1,0 +1,1659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheHGTech - Cybersecurity & AI News</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #f5f5f7;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #4facfe 75%, #00f2fe 100%);
+            position: relative;
+            overflow-x: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        body.light-mode {
+            color: #1a1a1a;
+            background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.75);
+            z-index: 0;
+            pointer-events: none;
+            transition: all 0.3s ease;
+        }
+        
+        body.light-mode::before {
+            background: rgba(255, 255, 255, 0.85);
+        }
+        
+        .orb {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.3;
+            pointer-events: none;
+            animation: float 20s ease-in-out infinite;
+        }
+        
+        .orb1 {
+            top: -10%;
+            right: -5%;
+            width: 500px;
+            height: 500px;
+            background: linear-gradient(135deg, #667eea, #764ba2, #f093fb);
+            animation-delay: 0s;
+        }
+        
+        .orb2 {
+            bottom: -10%;
+            left: -5%;
+            width: 600px;
+            height: 600px;
+            background: linear-gradient(135deg, #4facfe, #00f2fe, #fa709a);
+            animation-delay: 7s;
+        }
+        
+        .orb3 {
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height: 400px;
+            background: linear-gradient(135deg, #f093fb, #f5576c);
+            animation-delay: 14s;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(30px, -30px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+        }
+        
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            padding: 30px 0;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(20px) saturate(180%);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        
+        .theme-toggle {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1.5em;
+        }
+        
+        .theme-toggle:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(102, 126, 234, 0.3);
+        }
+        
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            padding: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .logo-icon:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(102, 126, 234, 0.3);
+        }
+        
+        .logo-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+        }
+        
+        .logo {
+            font-size: 1.8em;
+            font-weight: 700;
+            background: linear-gradient(135deg, #fff 0%, #667eea 20%, #f093fb 40%, #4facfe 60%, #00f2fe 80%, #fa709a 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.5px;
+            animation: gradientShift 8s ease infinite;
+            cursor: pointer;
+        }
+        
+        /* Article Page Styles */
+        .article-page {
+            display: none;
+            min-height: 100vh;
+            padding: 40px 0;
+        }
+        
+        .article-page.active {
+            display: block;
+        }
+        
+        .main-content {
+            display: block;
+        }
+        
+        .main-content.hidden {
+            display: none;
+        }
+        
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background: rgba(102, 126, 234, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(102, 126, 234, 0.2);
+            border-radius: 20px;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-bottom: 40px;
+            cursor: pointer;
+        }
+        
+        .back-button:hover {
+            background: rgba(102, 126, 234, 0.15);
+            transform: translateX(-5px);
+        }
+        
+        .article-header {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid rgba(102, 126, 234, 0.2);
+        }
+        
+        .article-meta {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            font-size: 0.9em;
+            color: #a1a1a6;
+        }
+        
+        .article-category-tag {
+            background: linear-gradient(135deg, #667eea, #f093fb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 600;
+        }
+        
+        .article-page h1 {
+            font-size: 2.5em;
+            color: #f5f5f7;
+            line-height: 1.3;
+            margin-bottom: 20px;
+        }
+        
+        .article-content-wrapper {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 40px;
+        }
+        
+        .article-content-wrapper p {
+            margin-bottom: 20px;
+            color: #d0d0d0;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+        
+        .article-content-wrapper h3 {
+            font-size: 1.6em;
+            color: #f5f5f7;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        
+        .article-content-wrapper h4 {
+            font-size: 1.3em;
+            color: #e0e0e0;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        .article-content-wrapper ul, .article-content-wrapper ol {
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+        
+        .article-content-wrapper li {
+            margin-bottom: 10px;
+            color: #d0d0d0;
+            line-height: 1.7;
+        }
+        
+        .article-content-wrapper strong {
+            color: #f5f5f7;
+            font-weight: 600;
+        }
+        
+        /* Modal Popup Styles */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .modal-overlay.active {
+            display: flex;
+        }
+        
+        .modal-content {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(30px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 28px;
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            max-height: 80vh;
+            overflow-y: auto;
+            position: relative;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            animation: modalSlideIn 0.3s ease;
+        }
+        
+        @keyframes modalSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1.5em;
+            color: #a1a1a6;
+        }
+        
+        .modal-close:hover {
+            background: rgba(255, 255, 255, 0.15);
+            color: #f5f5f7;
+            transform: rotate(90deg);
+        }
+        
+        .modal-content h2 {
+            font-size: 2em;
+            color: #f5f5f7;
+            margin-bottom: 24px;
+            background: linear-gradient(135deg, #fff 0%, #667eea 50%, #f093fb 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .modal-content p {
+            color: #d0d0d0;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-size: 1.05em;
+        }
+        
+        .modal-content h3 {
+            color: #f5f5f7;
+            font-size: 1.4em;
+            margin-top: 30px;
+            margin-bottom: 16px;
+        }
+        
+        .modal-content ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .modal-content li {
+            color: #d0d0d0;
+            margin-bottom: 12px;
+            line-height: 1.7;
+        }
+        
+        .modal-content strong {
+            color: #f5f5f7;
+        }
+        
+        .contact-info {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 24px;
+            margin-top: 24px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+        
+        .contact-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .contact-icon {
+            font-size: 1.5em;
+        }
+        
+        .contact-link {
+            color: #6366f1;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        
+        .contact-link:hover {
+            color: #f093fb;
+        }
+        
+        @keyframes gradientShift {
+            0%, 100% { background-position: 0% center; }
+            50% { background-position: 100% center; }
+        }
+        
+        .hero {
+            padding: 80px 0 40px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3.5em;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 24px;
+            background: linear-gradient(135deg, #fff 0%, #667eea 20%, #f093fb 40%, #4facfe 60%, #00f2fe 80%, #fa709a 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -1px;
+            animation: gradientShift 8s ease infinite;
+        }
+        
+        body.light-mode .hero h1 {
+            background: linear-gradient(135deg, #1a1a1a 0%, #667eea 30%, #f093fb 60%, #4facfe 100%);
+        }
+        
+        .hero-description {
+            font-size: 1.3em;
+            color: #a1a1a6;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            line-height: 1.6;
+        }
+        
+        body.light-mode .hero-description {
+            color: #4a4a4a;
+        }
+        
+        .quick-highlights {
+            padding: 40px 0 60px;
+        }
+        
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .highlight-card {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 24px 16px;
+            transition: all 0.3s ease;
+        }
+        
+        .highlight-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.3);
+            background: rgba(255, 255, 255, 0.05);
+        }
+        
+        .highlight-card .highlight-icon {
+            font-size: 2em;
+            margin-bottom: 12px;
+        }
+        
+        .highlight-card h4 {
+            font-size: 1em;
+            color: #f5f5f7;
+            margin-bottom: 4px;
+            font-weight: 600;
+        }
+        
+        body.light-mode .highlight-card h4 {
+            color: #1a1a1a;
+        }
+        
+        .highlight-card p {
+            font-size: 0.85em;
+            color: #86868b;
+            margin: 0;
+        }
+        
+        body.light-mode .highlight-card p {
+            color: #666;
+        }
+        
+        .signup-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .form-group {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+        
+        input[type="email"] {
+            flex: 1;
+            padding: 18px 20px;
+            font-size: 1em;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 8px;
+            color: #f5f5f7;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        
+        input[type="email"]::placeholder {
+            color: #86868b;
+        }
+        
+        input[type="email"]:focus {
+            outline: none;
+            border-color: rgba(102, 126, 234, 0.5);
+            background: rgba(255, 255, 255, 0.12);
+            box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.15), 0 0 20px rgba(102, 126, 234, 0.3);
+        }
+        
+        button {
+            padding: 18px 40px;
+            font-size: 1em;
+            font-weight: 600;
+            color: #ffffff;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #4facfe 100%);
+            background-size: 200% auto;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            animation: gradientShift 6s ease infinite;
+        }
+        
+        button:hover {
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.5), 0 0 30px rgba(240, 147, 251, 0.4);
+        }
+        
+        .privacy-note {
+            text-align: center;
+            font-size: 0.85em;
+            color: #86868b;
+        }
+        
+        .success-message {
+            display: none;
+            padding: 16px;
+            background: rgba(34, 197, 94, 0.15);
+            backdrop-filter: blur(20px) saturate(180%);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            border-radius: 8px;
+            color: #4ade80;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .what-we-offer {
+            padding: 60px 0;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px) saturate(180%);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .what-we-offer-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .what-we-offer h2 {
+            font-size: 2.2em;
+            font-weight: 700;
+            margin-bottom: 24px;
+            background: linear-gradient(135deg, #fff 0%, #667eea 20%, #f093fb 40%, #4facfe 60%, #00f2fe 80%, #fa709a 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradientShift 8s ease infinite;
+        }
+        
+        body.light-mode .what-we-offer h2 {
+            background: linear-gradient(135deg, #1a1a1a 0%, #667eea 30%, #f093fb 60%, #4facfe 100%);
+        }
+        
+        .what-we-offer p {
+            font-size: 1.1em;
+            color: #a1a1a6;
+            line-height: 1.8;
+        }
+        
+        body.light-mode .what-we-offer p {
+            color: #4a4a4a;
+        }
+        
+        .posts-section {
+            padding: 100px 0;
+        }
+        
+        .posts-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .posts-header h2 {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, #fff 0%, #667eea 20%, #f093fb 40%, #4facfe 60%, #00f2fe 80%, #fa709a 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradientShift 8s ease infinite;
+        }
+        
+        .posts-header p {
+            font-size: 1.2em;
+            color: #a1a1a6;
+            margin-bottom: 40px;
+        }
+        
+        .tabs-nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+        }
+        
+        .tab-button {
+            padding: 14px 32px;
+            font-size: 1em;
+            font-weight: 600;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 28px;
+            color: #a1a1a6;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .tab-button:hover {
+            background: rgba(255, 255, 255, 0.08);
+            color: #f5f5f7;
+        }
+        
+        .tab-button.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #4facfe 100%);
+            color: #ffffff;
+            border-color: transparent;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .shorts-slider {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .short-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 28px;
+            padding: 50px 40px;
+            text-align: center;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .short-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            box-shadow: 0 20px 60px rgba(102, 126, 234, 0.4);
+        }
+        
+        .short-meta {
+            font-size: 0.9em;
+            color: #86868b;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            justify-content: center;
+        }
+        
+        .short-date {
+            color: #a0a0a0;
+        }
+        
+        .short-divider {
+            color: #606060;
+        }
+        
+        .short-card h3 {
+            font-size: 2em;
+            color: #f5f5f7;
+            margin-bottom: 24px;
+            line-height: 1.3;
+        }
+        
+        .short-card p {
+            font-size: 1.2em;
+            color: #a1a1a6;
+            line-height: 1.7;
+        }
+        
+        .slider-nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .slider-btn {
+            padding: 12px 24px;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 20px;
+            color: #f5f5f7;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .slider-btn:hover:not(:disabled) {
+            background: linear-gradient(135deg, #667eea, #f093fb);
+            border-color: transparent;
+            transform: translateY(-2px);
+        }
+        
+        .slider-btn:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
+        
+        .slider-indicator {
+            color: #a1a1a6;
+            font-size: 0.95em;
+        }
+        
+        .posts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        .post-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 28px;
+            padding: 30px;
+            transition: all 0.3s ease;
+        }
+        
+        .post-card:hover {
+            background: rgba(255, 255, 255, 0.05);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 60px rgba(102, 126, 234, 0.4);
+        }
+        
+        .post-meta {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 16px;
+            font-size: 0.85em;
+        }
+        
+        .post-date {
+            color: #86868b;
+        }
+        
+        .post-category {
+            background: linear-gradient(135deg, #667eea, #f093fb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 600;
+        }
+        
+        .post-card h3 {
+            font-size: 1.4em;
+            color: #f5f5f7;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+        
+        .post-excerpt {
+            color: #a1a1a6;
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+        
+        .read-more {
+            background: linear-gradient(135deg, #667eea, #f093fb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 600;
+            font-size: 0.9em;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: gap 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .read-more:hover {
+            gap: 10px;
+        }
+        
+        .coming-soon {
+            padding: 100px 0;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px) saturate(180%);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .coming-soon h2 {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, #fff 0%, #667eea 20%, #f093fb 40%, #4facfe 60%, #00f2fe 80%, #fa709a 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradientShift 8s ease infinite;
+        }
+        
+        .coming-soon p {
+            font-size: 1.2em;
+            color: #86868b;
+        }
+        
+        .cta-section {
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            font-size: 3em;
+            font-weight: 700;
+            margin-bottom: 24px;
+            background: linear-gradient(135deg, #fff 0%, #667eea 20%, #f093fb 40%, #4facfe 60%, #00f2fe 80%, #fa709a 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradientShift 8s ease infinite;
+        }
+        
+        .cta-section p {
+            font-size: 1.2em;
+            color: #a1a1a6;
+            margin-bottom: 40px;
+        }
+        
+        footer {
+            padding: 60px 0;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(20px) saturate(180%);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .footer-content {
+            color: #86868b;
+            font-size: 0.9em;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links a {
+            color: #a1a1a6;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        
+        .footer-links a:hover {
+            color: #f5f5f7;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2em;
+            }
+            
+            .hero-description {
+                font-size: 1.1em;
+            }
+            
+            .form-group {
+                flex-direction: column;
+            }
+            
+            button {
+                width: 100%;
+            }
+            
+            .posts-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .short-card {
+                padding: 30px 20px;
+                min-height: 350px;
+            }
+            
+            .short-card h3 {
+                font-size: 1.5em;
+            }
+            
+            .short-card p {
+                font-size: 1em;
+            }
+            
+            .logo-icon {
+                width: 40px;
+                height: 40px;
+            }
+            
+            .logo {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+    
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="header-left">
+                    <div class="logo-icon" onclick="goHome()">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23667eea;stop-opacity:1' /%3E%3Cstop offset='50%25' style='stop-color:%23f093fb;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%234facfe;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M20,30 L50,60 L35,75 L5,45 Z' fill='url(%23grad1)'/%3E%3Cpath d='M50,40 L80,70 L65,85 L35,55 Z' fill='%23000'/%3E%3Cpath d='M65,25 L95,55 L80,70 L50,40 Z' fill='%2318181b'/%3E%3C/svg%3E" alt="TheHGTech Logo">
+                    </div>
+                    <div class="logo" onclick="goHome()">TheHGTech</div>
+                </div>
+                <div class="theme-toggle" onclick="toggleTheme()" title="Toggle Dark/Light Mode">
+                    <span id="themeIcon">🌙</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content (Homepage) -->
+    <div class="main-content" id="mainContent">
+    
+    <section class="hero">
+        <div class="container">
+            <h1>Get the latest cybersecurity & AI news in 5 minutes.</h1>
+            
+            <p class="hero-description">
+                Stay ahead with curated intelligence on emerging threats and breakthrough AI innovations.
+            </p>
+        </div>
+    </section>
+    
+    <section class="quick-highlights">
+        <div class="container">
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="highlight-icon">⚡</div>
+                    <h4>Daily Updates</h4>
+                    <p>Fresh content</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🎯</div>
+                    <h4>Curated</h4>
+                    <p>No noise</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🔒</div>
+                    <h4>Security</h4>
+                    <p>Threat intel</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🤖</div>
+                    <h4>AI Insights</h4>
+                    <p>Latest trends</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="posts-section">
+        <div class="container">
+            <div class="posts-header">
+                <h2>Latest Updates</h2>
+            </div>
+            
+            <div class="tabs-nav">
+                <button class="tab-button active" onclick="switchTab('cybersecurity')">
+                    🛡️ Cybersecurity Shorts
+                </button>
+                <button class="tab-button" onclick="switchTab('ai')">
+                    🤖 AI Shorts
+                </button>
+                <button class="tab-button" onclick="switchTab('articles')">
+                    📰 Full Articles
+                </button>
+            </div>
+            
+            <div id="cybersecurity-tab" class="tab-content active">
+                <div class="shorts-slider">
+                    <div class="short-card">
+                        <div class="short-meta">
+                            <span class="short-date" id="cyber-date"></span>
+                            <span class="short-divider">•</span>
+                            <span>Cybersecurity Short</span>
+                        </div>
+                        <h3 id="cyber-title"></h3>
+                        <p id="cyber-content"></p>
+                    </div>
+                    <div class="slider-nav">
+                        <button class="slider-btn" id="cyber-prev" onclick="prevShort('cyber')">← Previous</button>
+                        <span class="slider-indicator" id="cyber-indicator">1 / 3</span>
+                        <button class="slider-btn" id="cyber-next" onclick="nextShort('cyber')">Next →</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="ai-tab" class="tab-content">
+                <div class="shorts-slider">
+                    <div class="short-card">
+                        <div class="short-meta">
+                            <span class="short-date" id="ai-date"></span>
+                            <span class="short-divider">•</span>
+                            <span>AI Short</span>
+                        </div>
+                        <h3 id="ai-title"></h3>
+                        <p id="ai-content"></p>
+                    </div>
+                    <div class="slider-nav">
+                        <button class="slider-btn" id="ai-prev" onclick="prevShort('ai')">← Previous</button>
+                        <span class="slider-indicator" id="ai-indicator">1 / 3</span>
+                        <button class="slider-btn" id="ai-next" onclick="nextShort('ai')">Next →</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="articles-tab" class="tab-content">
+                <div class="posts-grid">
+                    <div class="post-card">
+                        <div class="post-meta">
+                            <span class="post-date">Oct 18, 2025</span>
+                            <span class="post-category">Cybersecurity</span>
+                        </div>
+                        <h3>Critical Zero-Day Vulnerability Discovered in Enterprise VPN</h3>
+                        <p class="post-excerpt">
+                            Security researchers have identified a critical vulnerability affecting major VPN solutions. Organizations are urged to patch immediately.
+                        </p>
+                        <a class="read-more" href="#" onclick="openArticle('article1'); return false;">Read more →</a>
+                    </div>
+                    
+                    <div class="post-card">
+                        <div class="post-meta">
+                            <span class="post-date">Oct 17, 2025</span>
+                            <span class="post-category">AI</span>
+                        </div>
+                        <h3>New AI Model Achieves Breakthrough in Threat Detection</h3>
+                        <p class="post-excerpt">
+                            Researchers unveil an advanced machine learning system capable of identifying sophisticated cyber attacks with 98% accuracy.
+                        </p>
+                        <a class="read-more" href="#" onclick="openArticle('article2'); return false;">Read more →</a>
+                    </div>
+                    
+                    <div class="post-card">
+                        <div class="post-meta">
+                            <span class="post-date">Oct 16, 2025</span>
+                            <span class="post-category">Analysis</span>
+                        </div>
+                        <h3>The Rise of AI-Powered Phishing Campaigns</h3>
+                        <p class="post-excerpt">
+                            Deep dive into how attackers are leveraging large language models to create more convincing phishing campaigns.
+                        </p>
+                        <a class="read-more" href="#" onclick="openArticle('article3'); return false;">Read more →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="what-we-offer">
+        <div class="container">
+            <div class="what-we-offer-content">
+                <h2>About TheHGTech</h2>
+                <p>
+                    We deliver expertly curated cybersecurity and AI news that matters. Every day, we filter through hundreds of sources to bring you the most important developments, vulnerabilities, and innovations in a concise, digestible format.
+                </p>
+                <p style="margin-top: 20px; font-size: 1.1em;">
+                    Join our community to stay informed without the noise. Quality insights, delivered daily.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="coming-soon">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <p>Coming Soon...</p>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#" onclick="openModal('about'); return false;">About</a>
+                <a href="#" onclick="openModal('contact'); return false;">Contact</a>
+                <a href="#" onclick="openModal('privacy'); return false;">Privacy</a>
+            </div>
+            <div class="footer-content">
+                © 2025 TheHGTech. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    </div>
+    
+    <!-- Article Page -->
+    <div class="article-page" id="articlePage">
+        <div class="container">
+            <a href="#" class="back-button" onclick="goHome(); return false;">← Back to Home</a>
+            
+            <div class="article-header">
+                <div class="article-meta">
+                    <span class="article-date" id="articleDate"></span>
+                    <span class="article-category-tag" id="articleCategory"></span>
+                </div>
+                <h1 id="articleTitle"></h1>
+            </div>
+            
+            <div class="article-content-wrapper" id="articleContent"></div>
+        </div>
+    </div>
+    
+    <!-- Modal Popups -->
+    <div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <div class="modal-close" onclick="closeModal()">&times;</div>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+    
+    <script>
+        const cyberShorts = [
+            {
+                date: "2025-10-18",
+                title: "Critical Apache Log4j Vulnerability Exploited in the Wild",
+                content: "A severe zero-day vulnerability in Apache Log4j is being actively exploited. The flaw allows remote code execution and affects millions of Java applications worldwide. Security teams are urged to patch immediately."
+            },
+            {
+                date: "2025-10-17",
+                title: "Ransomware Group Targets Healthcare Systems",
+                content: "A sophisticated ransomware campaign has compromised multiple healthcare facilities across North America. The attackers are demanding millions in cryptocurrency while threatening to leak sensitive patient data."
+            },
+            {
+                date: "2025-10-16",
+                title: "New Phishing Technique Bypasses MFA Protection",
+                content: "Security researchers have discovered an advanced phishing method that circumvents multi-factor authentication. The technique exploits session tokens and has already been used in several high-profile breaches."
+            }
+        ];
+        
+        const aiShorts = [
+            {
+                date: "2025-10-18",
+                title: "GPT-5 Rumors Surface with Multimodal Capabilities",
+                content: "Industry insiders suggest OpenAI is developing GPT-5 with advanced multimodal processing, including real-time video understanding and enhanced reasoning capabilities. Launch expected in Q2 2025."
+            },
+            {
+                date: "2025-10-17",
+                title: "AI-Powered Code Generation Reaches 95% Accuracy",
+                content: "New research demonstrates AI models achieving unprecedented accuracy in code generation tasks. The breakthrough could revolutionize software development workflows and reduce debugging time significantly."
+            },
+            {
+                date: "2025-10-16",
+                title: "Ethical Concerns Grow Over AI-Generated Deepfakes",
+                content: "Deepfake technology has reached a critical point where distinguishing real from fake content is nearly impossible. Experts call for urgent regulatory frameworks to address potential misuse in elections and fraud."
+            }
+        ];
+        
+        const articles = {
+            article1: {
+                title: "Critical Zero-Day Vulnerability Discovered in Enterprise VPN Software",
+                date: "October 18, 2025",
+                category: "Cybersecurity",
+                content: `
+                    <p>Security researchers at ThreatWatch Labs have identified a critical zero-day vulnerability (CVE-2025-12345) affecting several major enterprise VPN solutions used by organizations worldwide. The vulnerability, which has been assigned a CVSS score of 9.8, allows unauthenticated remote attackers to execute arbitrary code on vulnerable systems.</p>
+                    
+                    <h3>Technical Details</h3>
+                    <p>The vulnerability exists in the authentication module of the VPN software and can be exploited by sending specially crafted packets to the VPN server. Once exploited, attackers gain complete control over the affected system, potentially allowing them to:</p>
+                    
+                    <ul>
+                        <li>Access sensitive corporate data</li>
+                        <li>Deploy ransomware or other malware</li>
+                        <li>Pivot to other systems on the network</li>
+                        <li>Establish persistent backdoor access</li>
+                    </ul>
+                    
+                    <h3>Affected Products</h3>
+                    <p>The following VPN products are confirmed to be vulnerable:</p>
+                    <ul>
+                        <li>SecureVPN Enterprise versions 5.0 through 5.8</li>
+                        <li>CorporateConnect VPN versions 3.x and 4.x</li>
+                        <li>GlobalAccess VPN all versions prior to 6.2</li>
+                    </ul>
+                    
+                    <h3>Active Exploitation</h3>
+                    <p>According to threat intelligence reports, the vulnerability is being actively exploited by advanced persistent threat (APT) groups. Multiple organizations have already been compromised, with attacks originating from IP addresses associated with known threat actors.</p>
+                    
+                    <h3>Mitigation Steps</h3>
+                    <p>Organizations using affected VPN solutions should take immediate action:</p>
+                    <ol>
+                        <li>Apply security patches released by vendors immediately</li>
+                        <li>If patches are not available, consider temporarily disabling VPN services</li>
+                        <li>Implement additional network segmentation and monitoring</li>
+                        <li>Review logs for signs of compromise</li>
+                        <li>Enable multi-factor authentication on all remote access points</li>
+                    </ol>
+                    
+                    <h3>Vendor Response</h3>
+                    <p>All affected vendors have released emergency patches and are working with customers to ensure rapid deployment. Security advisories have been published with detailed remediation instructions.</p>
+                    
+                    <p>This incident highlights the critical importance of maintaining up-to-date security patches and implementing defense-in-depth strategies. Organizations should prioritize VPN security as remote work continues to be a primary attack vector.</p>
+                `
+            },
+            article2: {
+                title: "New AI Model Achieves Breakthrough in Threat Detection",
+                date: "October 17, 2025",
+                category: "AI",
+                content: `
+                    <p>Researchers at MIT's Computer Science and Artificial Intelligence Laboratory (CSAIL) have unveiled ThreatGuardian, a revolutionary AI model that achieves 98% accuracy in detecting sophisticated cyber attacks, representing a significant leap forward in cybersecurity defense capabilities.</p>
+                    
+                    <h3>The Innovation</h3>
+                    <p>ThreatGuardian utilizes a novel architecture combining transformer-based models with graph neural networks to analyze network traffic patterns, system logs, and user behavior in real-time. Unlike traditional signature-based detection systems, this AI model can identify previously unknown attack patterns and zero-day exploits.</p>
+                    
+                    <h3>Key Capabilities</h3>
+                    <ul>
+                        <li><strong>Real-time Analysis:</strong> Processes millions of events per second with minimal latency</li>
+                        <li><strong>Behavioral Learning:</strong> Adapts to new attack patterns without manual retraining</li>
+                        <li><strong>False Positive Reduction:</strong> 95% reduction in false alarms compared to existing solutions</li>
+                        <li><strong>Explainable AI:</strong> Provides detailed reasoning for each detection</li>
+                    </ul>
+                    
+                    <h3>Testing and Validation</h3>
+                    <p>The model was tested against a dataset of over 10 million security events, including:</p>
+                    <ul>
+                        <li>Advanced persistent threats (APTs)</li>
+                        <li>Ransomware attacks</li>
+                        <li>Insider threats</li>
+                        <li>Supply chain compromises</li>
+                        <li>Zero-day exploits</li>
+                    </ul>
+                    
+                    <p>In controlled testing environments, ThreatGuardian successfully identified 98% of attacks, including several novel attack vectors that had never been seen before by any security system.</p>
+                    
+                    <h3>Industry Impact</h3>
+                    <p>Security experts believe this breakthrough could fundamentally change how organizations approach threat detection. Dr. Sarah Chen, lead researcher on the project, stated: "We're moving from reactive to proactive security. This system doesn't just detect known threats—it understands attack patterns at a fundamental level."</p>
+                    
+                    <h3>Commercial Availability</h3>
+                    <p>The research team has partnered with several leading cybersecurity vendors to commercialize the technology. Beta testing with enterprise customers is expected to begin in Q1 2026, with general availability targeted for late 2026.</p>
+                    
+                    <h3>Ethical Considerations</h3>
+                    <p>The researchers have emphasized the importance of responsible AI deployment, including:</p>
+                    <ul>
+                        <li>Privacy-preserving analysis techniques</li>
+                        <li>Bias mitigation in training data</li>
+                        <li>Human oversight in critical decisions</li>
+                        <li>Transparent explainability features</li>
+                    </ul>
+                    
+                    <p>This development represents a significant milestone in the convergence of artificial intelligence and cybersecurity, potentially giving defenders a crucial advantage in the ongoing battle against cyber threats.</p>
+                `
+            },
+            article3: {
+                title: "The Rise of AI-Powered Phishing Campaigns",
+                date: "October 16, 2025",
+                category: "Analysis",
+                content: `
+                    <p>The cybersecurity landscape is facing a new and sophisticated threat: AI-powered phishing campaigns that leverage large language models (LLMs) to create highly convincing, personalized attacks at unprecedented scale. This deep dive examines the evolution of this threat and its implications for organizations worldwide.</p>
+                    
+                    <h3>The Evolution of Phishing</h3>
+                    <p>Traditional phishing attacks were often easy to spot due to poor grammar, generic messaging, and suspicious links. However, the integration of advanced AI has fundamentally changed the game. Modern AI-powered phishing campaigns exhibit:</p>
+                    
+                    <ul>
+                        <li>Perfect grammar and natural language</li>
+                        <li>Highly personalized content based on scraped data</li>
+                        <li>Context-aware messaging that references real events</li>
+                        <li>Dynamic adaptation to victim responses</li>
+                    </ul>
+                    
+                    <h3>How AI Enhances Phishing</h3>
+                    <p>Attackers are leveraging AI in multiple ways:</p>
+                    
+                    <h4>1. Content Generation</h4>
+                    <p>LLMs create convincing emails, messages, and websites that perfectly mimic legitimate communications. The AI can generate thousands of unique variations, making detection through pattern matching nearly impossible.</p>
+                    
+                    <h4>2. Target Research</h4>
+                    <p>AI systems scrape social media, professional networks, and public databases to build detailed profiles of targets, enabling highly personalized attacks that reference specific projects, colleagues, or recent activities.</p>
+                    
+                    <h4>3. Real-time Interaction</h4>
+                    <p>Chatbots powered by LLMs can engage in natural conversations with victims, answering questions and overcoming objections in real-time, significantly increasing success rates.</p>
+                    
+                    <h4>4. Voice and Video Deepfakes</h4>
+                    <p>Advanced campaigns now incorporate AI-generated voice calls and video messages that perfectly impersonate executives or trusted contacts, adding another layer of authenticity.</p>
+                    
+                    <h3>Recent Case Studies</h3>
+                    <p>Several high-profile incidents demonstrate the effectiveness of AI-powered phishing:</p>
+                    
+                    <ul>
+                        <li><strong>Financial Sector Attack:</strong> A major bank lost $12 million when AI-generated voice calls convinced employees to authorize fraudulent wire transfers</li>
+                        <li><strong>Healthcare Breach:</strong> Personalized phishing emails led to credential theft affecting 500,000 patient records</li>
+                        <li><strong>Supply Chain Compromise:</strong> AI-crafted business email compromise attack resulted in malware deployment across multiple organizations</li>
+                    </ul>
+                    
+                    <h3>Detection Challenges</h3>
+                    <p>Traditional email security solutions struggle to detect AI-powered phishing because:</p>
+                    <ul>
+                        <li>Content is unique and doesn't match known patterns</li>
+                        <li>Emails often come from compromised legitimate accounts</li>
+                        <li>Language and context are indistinguishable from real communications</li>
+                        <li>Links may lead to legitimate-looking cloned websites</li>
+                    </ul>
+                    
+                    <h3>Defense Strategies</h3>
+                    <p>Organizations must adopt multi-layered defenses:</p>
+                    
+                    <h4>Technical Controls</h4>
+                    <ul>
+                        <li>AI-powered email security that can detect AI-generated content</li>
+                        <li>Advanced authentication mechanisms (hardware tokens, biometrics)</li>
+                        <li>Behavioral analysis to detect anomalous patterns</li>
+                        <li>Zero-trust architecture limiting damage from credential theft</li>
+                    </ul>
+                    
+                    <h4>Human Element</h4>
+                    <ul>
+                        <li>Regular security awareness training updated for AI threats</li>
+                        <li>Verification procedures for sensitive requests</li>
+                        <li>Incident reporting mechanisms and response protocols</li>
+                        <li>Healthy skepticism culture, even for seemingly legitimate communications</li>
+                    </ul>
+                    
+                    <h3>The Arms Race</h3>
+                    <p>The battle between AI-powered attacks and AI-powered defenses is escalating. Security vendors are developing their own AI systems to detect and block these sophisticated threats, but attackers continue to evolve their techniques.</p>
+                    
+                    <h3>Looking Forward</h3>
+                    <p>Experts predict that AI-powered phishing will become the dominant attack vector by 2026. Organizations that fail to adapt their security posture will face increasingly successful attacks. The key is not just investing in technology, but creating a security-aware culture that questions unexpected communications, regardless of how legitimate they appear.</p>
+                    
+                    <p>As one security researcher noted: "We're entering an era where trust must be continuously verified, not assumed. The old rule of 'trust but verify' is now simply 'verify, verify, verify.'"</p>
+                `
+            }
+        };
+        
+        let currentCyberIndex = 0;
+        let currentAIIndex = 0;
+        
+        function initShorts() {
+            updateShort('cyber', currentCyberIndex);
+            updateShort('ai', currentAIIndex);
+        }
+        
+        function updateShort(type, index) {
+            const shorts = type === 'cyber' ? cyberShorts : aiShorts;
+            const data = shorts[index];
+            
+            document.getElementById(type + '-date').textContent = formatDate(data.date);
+            document.getElementById(type + '-title').textContent = data.title;
+            document.getElementById(type + '-content').textContent = data.content;
+            document.getElementById(type + '-indicator').textContent = (index + 1) + ' / ' + shorts.length;
+            
+            document.getElementById(type + '-prev').disabled = index === 0;
+            document.getElementById(type + '-next').disabled = index === shorts.length - 1;
+        }
+        
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            const options = { month: 'short', day: 'numeric', year: 'numeric' };
+            return date.toLocaleDateString('en-US', options);
+        }
+        
+        function nextShort(type) {
+            if (type === 'cyber' && currentCyberIndex < cyberShorts.length - 1) {
+                currentCyberIndex++;
+                updateShort('cyber', currentCyberIndex);
+            } else if (type === 'ai' && currentAIIndex < aiShorts.length - 1) {
+                currentAIIndex++;
+                updateShort('ai', currentAIIndex);
+            }
+        }
+        
+        function prevShort(type) {
+            if (type === 'cyber' && currentCyberIndex > 0) {
+                currentCyberIndex--;
+                updateShort('cyber', currentCyberIndex);
+            } else if (type === 'ai' && currentAIIndex > 0) {
+                currentAIIndex--;
+                updateShort('ai', currentAIIndex);
+            }
+        }
+        
+        function switchTab(tabName) {
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            document.querySelectorAll('.tab-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            if (tabName === 'cybersecurity') {
+                document.getElementById('cybersecurity-tab').classList.add('active');
+                document.querySelectorAll('.tab-button')[0].classList.add('active');
+            } else if (tabName === 'ai') {
+                document.getElementById('ai-tab').classList.add('active');
+                document.querySelectorAll('.tab-button')[1].classList.add('active');
+            } else if (tabName === 'articles') {
+                document.getElementById('articles-tab').classList.add('active');
+                document.querySelectorAll('.tab-button')[2].classList.add('active');
+            }
+        }
+        
+        function openArticle(articleId) {
+            const article = articles[articleId];
+            if (!article) {
+                alert('Article not found!');
+                return false;
+            }
+            
+            // Populate article page
+            document.getElementById('articleDate').textContent = article.date;
+            document.getElementById('articleCategory').textContent = article.category;
+            document.getElementById('articleTitle').textContent = article.title;
+            document.getElementById('articleContent').innerHTML = article.content;
+            
+            // Hide main content, show article page
+            document.getElementById('mainContent').classList.add('hidden');
+            document.getElementById('articlePage').classList.add('active');
+            
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            
+            return false;
+        }
+        
+        function goHome() {
+            // Hide article page, show main content
+            document.getElementById('articlePage').classList.remove('active');
+            document.getElementById('mainContent').classList.remove('hidden');
+            
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        
+        // Modal content
+        const modalContent = {
+            about: `
+                <h2>About TheHGTech</h2>
+                <p>TheHGTech is your trusted source for cutting-edge cybersecurity and artificial intelligence news. We're dedicated to keeping security professionals, developers, and tech enthusiasts informed about the latest threats, innovations, and trends shaping the digital landscape.</p>
+                
+                <h3>Our Mission</h3>
+                <p>To deliver high-quality, curated content that cuts through the noise and provides actionable insights on cybersecurity threats and AI developments. We believe in making complex technical topics accessible without sacrificing depth or accuracy.</p>
+                
+                <h3>What We Cover</h3>
+                <ul>
+                    <li><strong>Cybersecurity:</strong> Latest vulnerabilities, threat intelligence, attack trends, and security best practices</li>
+                    <li><strong>Artificial Intelligence:</strong> Breakthrough AI models, machine learning advances, and AI security implications</li>
+                    <li><strong>Expert Analysis:</strong> In-depth analysis from industry professionals and security researchers</li>
+                    <li><strong>Quick Updates:</strong> Daily shorts that keep you informed in minutes</li>
+                </ul>
+                
+                <h3>Why TheHGTech?</h3>
+                <p>In a world overflowing with information, we focus on quality over quantity. Every piece of content is carefully curated to ensure it's relevant, accurate, and valuable to our readers. Whether you're a CISO, security analyst, developer, or tech enthusiast, TheHGTech delivers the intelligence you need to stay ahead.</p>
+            `,
+            
+            contact: `
+                <h2>Contact Us</h2>
+                <p>We'd love to hear from you! Whether you have questions, feedback, or want to collaborate, feel free to reach out.</p>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <div>
+                            <strong>Email:</strong><br>
+                            <a href="mailto:harish@thehgtech.com" class="contact-link">harish@thehgtech.com</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3>Get In Touch For:</h3>
+                <ul>
+                    <li>Story tips and news leads</li>
+                    <li>Partnership opportunities</li>
+                    <li>Feedback and suggestions</li>
+                    <li>Press inquiries</li>
+                    <li>Technical questions</li>
+                </ul>
+                
+                <p>We typically respond within 24-48 hours. For urgent security disclosures, please mention "URGENT" in your subject line.</p>
+            `,
+            
+            privacy: `
+                <h2>Privacy Policy</h2>
+                <p><em>Last updated: October 19, 2025</em></p>
+                
+                <h3>Information We Collect</h3>
+                <p>TheHGTech is committed to protecting your privacy. We collect minimal information necessary to provide our services:</p>
+                <ul>
+                    <li><strong>Usage Data:</strong> We collect anonymous analytics data (page views, time spent, device type) to improve our content and user experience</li>
+                    <li><strong>Cookies:</strong> We use essential cookies to maintain site functionality and preferences</li>
+                </ul>
+                
+                <h3>How We Use Your Information</h3>
+                <p>Any information we collect is used solely to:</p>
+                <ul>
+                    <li>Improve our content and user experience</li>
+                    <li>Analyze site traffic and engagement</li>
+                    <li>Respond to your inquiries when you contact us</li>
+                </ul>
+                
+                <h3>Third-Party Services</h3>
+                <p>We may use third-party analytics services (such as Google Analytics) to understand how visitors interact with our site. These services may collect information sent by your browser as part of a web page request.</p>
+                
+                <h3>Data Security</h3>
+                <p>We implement industry-standard security measures to protect any information we collect. However, no method of transmission over the internet is 100% secure.</p>
+                
+                <h3>Your Rights</h3>
+                <p>You have the right to:</p>
+                <ul>
+                    <li>Access any personal data we hold about you</li>
+                    <li>Request deletion of your data</li>
+                    <li>Opt-out of analytics tracking</li>
+                    <li>Request clarification about our data practices</li>
+                </ul>
+                
+                <h3>Changes to This Policy</h3>
+                <p>We may update this privacy policy from time to time. Any changes will be posted on this page with an updated revision date.</p>
+                
+                <h3>Contact Us</h3>
+                <p>If you have any questions about this privacy policy, please contact us at <a href="mailto:harish@thehgtech.com" class="contact-link">harish@thehgtech.com</a></p>
+            `
+        };
+        
+        function openModal(type) {
+            const modalBody = document.getElementById('modalBody');
+            const modalOverlay = document.getElementById('modalOverlay');
+            
+            if (modalContent[type]) {
+                modalBody.innerHTML = modalContent[type];
+                modalOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+        
+        function closeModal(event) {
+            if (!event || event.target.id === 'modalOverlay' || event.target.classList.contains('modal-close')) {
+                document.getElementById('modalOverlay').classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        }
+        
+        // Close modal on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+        
+        function handleSubmit(formId, emailId, messageId) {
+            document.getElementById(formId).addEventListener('submit', function(e) {
+                e.preventDefault();
+                const email = document.getElementById(emailId).value;
+                document.getElementById(messageId).style.display = 'block';
+                document.getElementById(emailId).value = '';
+                setTimeout(function() {
+                    document.getElementById(messageId).style.display = 'none';
+                }, 5000);
+            });
+        }
+        
+        window.addEventListener('DOMContentLoaded', function() {
+            initShorts();
+            handleSubmit('newsletterForm', 'emailInput', 'successMessage');
+            handleSubmit('newsletterForm2', 'emailInput2', 'successMessage2');
+        });
+    </script>
+</body>
+</html>
