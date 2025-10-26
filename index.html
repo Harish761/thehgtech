@@ -82,7 +82,7 @@
         }
         
         body.light-mode .hero h1 {
-            background: linear-gradient(135deg, #1a1a1a 0%, #667eea 30%, #f093fb 60%, #4facfe 100%);
+            background: linear-gradient(135deg, #2d3748 0%, #4c51bf 30%, #9333ea 60%, #0284c7 100%);
             background-size: 200% auto;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -90,11 +90,11 @@
         }
         
         body.light-mode .hero-description {
-            color: #4a4a4a;
+            color: #2d3748;
         }
         
         body.light-mode .posts-header h2 {
-            background: linear-gradient(135deg, #1a1a1a 0%, #667eea 30%, #f093fb 60%, #4facfe 100%);
+            background: linear-gradient(135deg, #2d3748 0%, #4c51bf 30%, #9333ea 60%, #0284c7 100%);
             background-size: 200% auto;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -152,9 +152,13 @@
             color: #666;
         }
         
-        body.light-mode .highlight-card {
-            background: rgba(255, 255, 255, 0.5);
-            border: 1px solid rgba(0, 0, 0, 0.08);
+        body.light-mode .highlight-icon {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.3), rgba(240, 147, 251, 0.3));
+        }
+        
+        body.light-mode .highlight-icon svg {
+            stroke: #333;
+            fill: #333;
         }
         
         body.light-mode .highlight-card h4 {
@@ -166,7 +170,7 @@
         }
         
         body.light-mode .what-we-offer h2 {
-            background: linear-gradient(135deg, #1a1a1a 0%, #667eea 30%, #f093fb 60%, #4facfe 100%);
+            background: linear-gradient(135deg, #2d3748 0%, #4c51bf 30%, #9333ea 60%, #0284c7 100%);
             background-size: 200% auto;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -174,7 +178,7 @@
         }
         
         body.light-mode .what-we-offer p {
-            color: #4a4a4a;
+            color: #2d3748;
         }
         
         body.light-mode .quick-highlights {
@@ -189,7 +193,7 @@
         }
         
         body.light-mode .contact-section h3 {
-            background: linear-gradient(135deg, #1a1a1a 0%, #667eea 40%, #f093fb 80%);
+            background: linear-gradient(135deg, #2d3748 0%, #4c51bf 40%, #9333ea 80%);
             background-size: 200% auto;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -382,7 +386,7 @@
         
         .hero-description {
             font-size: 1.3em;
-            color: #a1a1a6;
+            color: #b8b8bb;
             max-width: 700px;
             margin: 0 auto 40px;
         }
@@ -583,20 +587,20 @@
         
         .short-meta {
             font-size: 0.9em;
-            color: #86868b;
+            color: #b8b8bb;
             margin-bottom: 20px;
         }
         
         .short-card h3 {
             font-size: 2em;
-            color: #f5f5f7;
+            color: #ffffff;
             margin-bottom: 24px;
             line-height: 1.3;
         }
         
         .short-card p {
             font-size: 1.2em;
-            color: #a1a1a6;
+            color: #e8e8ea;
             line-height: 1.7;
         }
         
@@ -655,7 +659,7 @@
         }
         
         .post-date {
-            color: #86868b;
+            color: #9d9da2;
         }
         
         .post-category {
@@ -667,12 +671,12 @@
         
         .post-card h3 {
             font-size: 1.4em;
-            color: #f5f5f7;
+            color: #ffffff;
             margin-bottom: 12px;
         }
         
         .post-excerpt {
-            color: #a1a1a6;
+            color: #b8b8bb;
             margin-bottom: 16px;
             line-height: 1.6;
         }
@@ -735,13 +739,13 @@
         
         .highlight-card h4 {
             font-size: 1em;
-            color: #f5f5f7;
+            color: #ffffff;
             margin-bottom: 4px;
         }
         
         .highlight-card p {
             font-size: 0.85em;
-            color: #86868b;
+            color: #9d9da2;
         }
         
         .what-we-offer {
@@ -768,7 +772,7 @@
         
         .what-we-offer p {
             font-size: 1.1em;
-            color: #a1a1a6;
+            color: #b8b8bb;
             line-height: 1.8;
         }
         
@@ -869,7 +873,7 @@
         }
         
         .footer-content {
-            color: #86868b;
+            color: #9d9da2;
             font-size: 0.9em;
         }
         
@@ -1057,7 +1061,7 @@
                     </div>
                     <div class="slider-nav">
                         <button class="slider-btn" onclick="prevShort('cyber')">← Previous</button>
-                        <span id="cyber-indicator">1 / 4</span>
+                        <span id="cyber-indicator">1 / 3</span>
                         <button class="slider-btn" onclick="nextShort('cyber')">Next →</button>
                     </div>
                 </div>
@@ -1072,7 +1076,7 @@
                     </div>
                     <div class="slider-nav">
                         <button class="slider-btn" onclick="prevShort('ai')">← Previous</button>
-                        <span id="ai-indicator">1 / 4</span>
+                        <span id="ai-indicator">1 / 3</span>
                         <button class="slider-btn" onclick="nextShort('ai')">Next →</button>
                     </div>
                 </div>
@@ -1081,49 +1085,30 @@
                     <div class="posts-grid">
                         <div class="post-card">
                             <div class="post-meta">
-                                <span class="post-date">Oct 24, 2025</span>
-                                <span class="post-category">AI</span>
+                                <span class="post-date">Oct 18, 2025</span>
+                                <span class="post-category">Cybersecurity</span>
                             </div>
-                            <h3>AI-Powered Phishing Goes Mainstream — How This Month’s Advances Turn Social Engineering Lethal</h3>
-                            <p class="post-excerpt">Spost-excerpt">Criminals are using generative AI to scale phishing attacks with fake sidebars, deepfakes, and personalized emails.</p>
+                            <h3>Critical Zero-Day Vulnerability Discovered in Enterprise VPN</h3>
+                            <p class="post-excerpt">Security researchers have identified a critical vulnerability affecting major VPN solutions.</p>
                             <a class="read-more" onclick="openArticle('article1')">Read more →</a>
                         </div>
                         <div class="post-card">
                             <div class="post-meta">
-                                <span class="post-date">Oct 23-24, 2025</span>
-                                <span class="post-category">Cybersecurity</span>
+                                <span class="post-date">Oct 17, 2025</span>
+                                <span class="post-category">AI</span>
                             </div>
-                            <h3>AI Browsers as the New Attack Surface</h3>
-                            <p class="post-excerpt">AI-first browsers introduce new risks like sidebar spoofing, prompt injection, and malicious extensions.</p>
+                            <h3>New AI Model Achieves Breakthrough in Threat Detection</h3>
+                            <p class="post-excerpt">Researchers unveil an advanced machine learning system with 98% accuracy.</p>
                             <a class="read-more" onclick="openArticle('article2')">Read more →</a>
                         </div>
                         <div class="post-card">
                             <div class="post-meta">
-                                <span class="post-date">Oct 23, 2025</span>
-                                <span class="post-category">Cybersecurity</span>
+                                <span class="post-date">Oct 16, 2025</span>
+                                <span class="post-category">Analysis</span>
                             </div>
-                            <h3>When your AI sidebar becomes the trap: how malicious extensions are hijacking browser assistants</h3>
-                            <p class="post-excerpt">SquareX researchers reveal “AI Sidebar Spoofing” attacks targeting AI-enabled browser interfaces.</p>
+                            <h3>The Rise of AI-Powered Phishing Campaigns</h3>
+                            <p class="post-excerpt">Deep dive into how attackers leverage large language models.</p>
                             <a class="read-more" onclick="openArticle('article3')">Read more →</a>
-                        </div>
-                        <div class="post-card">
-                            <div class="post-meta">
-                                <span class="post-date">Oct 22, 2025</span>
-                                <span class="post-category">AI</span>
-                            </div>
-                            <h3>Global coalition demands pause on “super‑intelligent” AI development</h3>
-                            <p class="post-excerpt">Over 700 scientists and public figures call for halting development of super-intelligent AI systems until safety standards are established.</p>
-                            <a class="read-more" onclick="openArticle('article4')">Read more →</a>                            
-                        </div>
-                        <div class="post-card">
-                            <div class="post-meta">
-                                <span class="post-date">Oct 15, 2025</span>
-                                <span class="post-category">Cybersecurity</span>
-                            </div>
-                            <h3>Microsoft issues emergency patch for three zero‑day vulnerabilities under active attack</h3>
-                            <p class="post-excerpt">Microsoft patches three critical zero-day vulnerabilities affecting legacy drivers, RasMan, and IGEL OS Secure Boot.</p>
-                            <a class="read-more" onclick="openArticle('article5')">Read more →</a>
-                            
                         </div>
                     </div>
                 </div>
@@ -1238,97 +1223,15 @@
         </div>
     </div>
     
+    <!-- Load Content Data -->
+    <script src="content.js"></script>
+    
     <script>
-        var modalContent = {
-            about: '<h2>About TheHGTech</h2><p>TheHGTech is your trusted source for cutting-edge cybersecurity and artificial intelligence news. We\'re dedicated to keeping security professionals, developers, and tech enthusiasts informed about the latest threats, innovations, and trends shaping the digital landscape.</p><h3>Our Mission</h3><p>To deliver high-quality, curated content that cuts through the noise and provides actionable insights on cybersecurity threats and AI developments.</p>',
-            privacy: '<h2>Privacy Policy</h2><p><em>Last updated: October 25, 2025</em></p><h3>Information We Collect</h3><p>TheHGTech is committed to protecting your privacy. We collect minimal information necessary to provide our services.</p><ul><li><strong>Usage Data:</strong> We collect anonymous analytics data to improve our content</li><li><strong>Cookies:</strong> We use essential cookies to maintain site functionality</li></ul><h3>Contact Us</h3><p>If you have questions about this privacy policy, please contact us at <a href="mailto:harish@thehgtech.com">harish@thehgtech.com</a></p>',
-            terms: '<h2>Terms of Service</h2><p><em>Last updated: October 25, 2025</em></p><h3>Acceptance of Terms</h3><p>By accessing and using TheHGTech, you accept and agree to be bound by the terms and provision of this agreement.</p><h3>Use License</h3><p>Permission is granted to temporarily access the materials on TheHGTech for personal, non-commercial transitory viewing only.</p><h3>Disclaimer</h3><p>The materials on TheHGTech are provided on an \'as is\' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties.</p>'
-        };
-        
-        var articles = {
-            article1: {
-                title: "AI-Powered Phishing Goes Mainstream — How This Month’s Advances Turn Social Engineering Lethal",
-                date: "October 24, 2025",
-                category: "AI",
-                content: "<p>Criminal groups have begun using <strong>generative AI</strong> to scale phishing attacks. Fake browser extensions mimic AI chat sidebars to push phishing lures and malware.</p><p>Attackers now generate personalised emails, fake voices, and deepfakes using AI, making traditional defences less effective. Healthcare and finance are seeing rising losses from AI-assisted scams.</p><ul><li>Enforce browser extension whitelists</li><li>Adopt phishing-resistant authentication</li><li>Run AI-aware email analysis</li><li>Train employees with AI-themed phishing simulations</li><li>Monitor for synthetic audio or video fraud</li></ul><p>Bottom line: AI hasn’t created phishing—it has industrialised it. Defenders must adapt faster than attackers evolve.</p>"
-            },
-            article2: {
-                title: "AI Browsers as the New Attack Surface",
-                date: "October 24, 2025",
-                category: "Cybersecurity",
-                content: "<p><strong>AI-first browsers</strong> promise faster answers and task automation, but they create a concentrated attack surface. Researchers demonstrated <strong>AI sidebar spoofing</strong>, where malicious extensions impersonate built-in AI assistants to deliver phishing, malware, or malicious commands.</p><p>Prompt-injection risks let web content influence an agentic browser’s behavior. Hidden prompts can coax an AI agent to leak data or perform actions without explicit user intent.</p><p>Technical weaknesses are practical to exploit. Malicious extensions with common permissions can overlay or replace the sidebar UI, enabling scalable attacks.</p><p>Organisations must treat AI browsers as a new class of endpoint. Immediate controls: restrict extension installs, whitelist trusted agents only, and separate AI browsing from sensitive sessions.</p>"
-            },
-            article3: {
-                title: "When your AI sidebar becomes the trap: how malicious extensions are hijacking browser assistants",
-                date: "October 23, 2025",
-                category: "Cybersecurity",
-                content: "<p>From a helpful browsing companion to a hidden trap: recent research by <strong>SquareX</strong> reveals a dangerous new campaign called <strong>“AI Sidebar Spoofing”</strong> that targets users of AI‑enabled browsers by imitating trusted assistant interfaces.</p><p>Attackers create malicious browser extensions that replicate the look and feel of popular AI sidebar interfaces—such as those in ChatGPT Atlas or Perplexity Comet—and inject them into users’ browsers. The fake sidebar intercepts user prompts and responds with harmful instructions instead of benign help.</p><ul><li><strong>Audit and limit browser extensions</strong></li><li>Monitor for unexpected sidebar behaviour</li><li>Use enterprise browser policies to restrict installations</li><li>Educate users on verifying assistant actions</li></ul></p>"
-            },
-            article4: {
-                title: "Global coalition demands pause on “super‑intelligent” AI development",
-                date: "October 22, 2025",
-                category: "AI",
-                content: "<p>Over 700 scientists, entrepreneurs, and public figures signed an <strong>open letter</strong> calling for a halt to the development of “super‑intelligent” AI systems. The letter, from the Future of Life Institute, urges a pause until safety standards and public consensus are established.</p><p>Signatories include <strong>Geoffrey Hinton, Yoshua Bengio, Steve Wozniak, and Richard Branson</strong>, along with public figures such as Prince Harry and Meghan Markle. They warn that the rapid pace of AI development without robust oversight poses systemic and existential risks.</p><p>The appeal highlights that while AI promises huge benefits, the absence of strong governance could lead to loss of control, concentration of power, and unpredictable failures.</p>"
-            },
-            article5: {
-                title: "Microsoft issues emergency patch for three zero‑day vulnerabilities under active attack",
-                date: "October 15, 2025",
-                category: "Cybersecurity",
-                content: "<p><strong>Microsoft</strong>’s October Patch Tuesday update fixed three <strong>zero‑day vulnerabilities</strong> actively exploited in the wild. The flaws affect a legacy Agere Modem driver, the Remote Access Connection Manager (RasMan), and IGEL OS Secure Boot.</p><p>CVE‑2025‑24990 allowed privilege escalation via a legacy driver, which Microsoft removed entirely. CVE‑2025‑59230 affected RasMan, granting SYSTEM privileges. CVE‑2025‑47827 impacted IGEL OS and bypassed Secure Boot protections.</p><p>CISA added all three to its <strong>Known Exploited Vulnerabilities list</strong>. Organisations are urged to deploy updates, remove deprecated drivers, and review endpoint configurations.</p><ul><li>Patch all systems</li><li>Validate driver removal</li><li>Monitor privilege escalation attempts</li></ul>"
-            },
-        };
-        
-        var cyberShorts = [
-            {
-                date: "Oct 25, 2025",
-                title: "VMware Zero-Day Exploit Threatens Enterprise Servers",
-                content: "Cybersecurity and Infrastructure Security Agency (CISA) issued an advisory following real-world attacks exploiting a critical remote-code-execution flaw in Windows Server Update Services (WSUS). Attackers used a Base64-encoded .NET payload and custom request header to evade detection. Organisations running WSUS should apply mitigations immediately."
-            },            
-            {
-                date: "Oct 25, 2025",
-                title: "CISA warns of active exploitation of Windows Server Update Services RCE",
-                content: "CISA has issued an alert on a critical zero-day in VMware vCenter (CVE-2025-42711), actively exploited by ransomware groups. Attackers can execute commands remotely without authentication. Organizations are urged to patch immediately, monitor admin logins, and segment vulnerable endpoints to prevent spread."
-            },
-            {
-                date: "Oct 25, 2025",
-                title: "New malware campaign targets 30 K+ WordPress sites using variable functions and cookie obfuscation",
-                content: "A sophisticated malware wave is impacting over 30,000 WordPress sites via PHP variable functions and cookie-based obfuscation to hide malicious scripts from security tools. Site owners should scan for unusual cookie behaviour and apply updated WP-security plugins."
-            },
-            {
-                date: "Oct 25, 2025",
-                title: "India's new Telecom (Cyber Security) Amendment Rules enforce mobile number validation and stricter IMEI compliance",
-                content: "The Ministry of Communications in India notified the Telecom (Cyber Security) Amendment Rules 2025 adding a Mobile Number Validation (MNV) platform and obliging telecom identifiers to match verified user data. The change aims to tighten identity assurance and cut SIM-fraud risk."
-            }
-        ];
-        
-        var aiShorts = [
-            {
-                date: "Oct 25, 2025",
-                title: "OpenAI Launches GPT-5 Beta With Enterprise Focus",
-                content: "OpenAI has released the GPT-5 beta for enterprise users, offering advanced reasoning, multi-modal inputs, and secure data isolation. Companies report faster workflow automation and better context retention in AI-assisted tasks. Analysts say GPT-5 beta may accelerate adoption of AI in business-critical operations while raising new security considerations."
-            },            
-            {
-                date: "Oct 25, 2025",
-                title: "Election Commission of India issues advisory on misuse of AI-generated content during elections",
-                content: "The ECI alerted political parties and platforms to the risk of deepfakes, fake accounts and manipulated content created with AI ahead of elections. It encouraged reporting of suspected misuse and set guidelines for monitoring."
-            },
-            {
-                date: "Oct 25, 2025",
-                title: "Business Insider to publish stories written by AI under new byline Business Insider AI",
-                content: "Business Insider will begin publishing generative-AI authored articles, edited by humans, under the byline Business Insider AI. The initiative reflects a push across media for AI-driven content production."
-            },
-            {
-                date: "Oct 25, 2025",
-                title: "Phil Spencer clarifies AI usage at Xbox - focus on moderation, not studio mandates",
-                content: "Xbox CEO Phil Spencer stated AI is used primarily for content moderation on Xbox Live chats and confirmed there is no top-down mandate for game studios to use AI in development. Developers decide their workflows."
-            }
-        ];
-        
         var currentCyber = 0;
         var currentAI = 0;
         
         function updateShort(type, index) {
-            var shorts = type === 'cyber' ? cyberShorts : aiShorts;
+            var shorts = type === 'cyber' ? websiteContent.cyberShorts : websiteContent.aiShorts;
             var data = shorts[index];
             document.getElementById(type + '-date').textContent = data.date;
             document.getElementById(type + '-title').textContent = data.title;
@@ -1337,10 +1240,10 @@
         }
         
         function nextShort(type) {
-            if (type === 'cyber' && currentCyber < cyberShorts.length - 1) {
+            if (type === 'cyber' && currentCyber < websiteContent.cyberShorts.length - 1) {
                 currentCyber++;
                 updateShort('cyber', currentCyber);
-            } else if (type === 'ai' && currentAI < aiShorts.length - 1) {
+            } else if (type === 'ai' && currentAI < websiteContent.aiShorts.length - 1) {
                 currentAI++;
                 updateShort('ai', currentAI);
             }
@@ -1378,7 +1281,7 @@
         }
         
         function openArticle(articleId) {
-            var article = articles[articleId];
+            var article = websiteContent.articles[articleId];
             if (!article) return;
             document.getElementById('articleDate').textContent = article.date;
             document.getElementById('articleCategory').textContent = article.category;
@@ -1412,7 +1315,7 @@
         }
         
         function openModal(type) {
-            var content = modalContent[type];
+            var content = websiteContent.modals[type];
             if (!content) return;
             var modal = document.createElement('div');
             modal.className = 'modal-overlay';
@@ -1430,8 +1333,19 @@
             }
         }
         
+        // Populate article cards on page load
+        function populateArticleCards() {
+            var grid = document.querySelector('#articles-tab .posts-grid');
+            grid.innerHTML = '';
+            websiteContent.articleCards.forEach(function(card) {
+                var cardHtml = '<div class="post-card"><div class="post-meta"><span class="post-date">' + card.date + '</span><span class="post-category">' + card.category + '</span></div><h3>' + card.title + '</h3><p class="post-excerpt">' + card.excerpt + '</p><a class="read-more" onclick="openArticle(\'' + card.id + '\')">Read more →</a></div>';
+                grid.innerHTML += cardHtml;
+            });
+        }
+        
         updateShort('cyber', 0);
         updateShort('ai', 0);
+        populateArticleCards();
     </script>
 </body>
 </html>
