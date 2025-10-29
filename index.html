@@ -163,6 +163,121 @@
         .hero {
             text-align: center;
             padding: 60px 0 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Network Background for Hero */
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            opacity: 0.2;
+            pointer-events: none;
+            background-image: 
+                /* Curved neural connections - simulated with multiple angles */
+                radial-gradient(ellipse 400px 3px at 20% 30%, rgba(224, 31, 61, 0.4) 0%, transparent 100%),
+                radial-gradient(ellipse 350px 2px at 45% 25%, rgba(224, 31, 61, 0.35) 0%, transparent 100%),
+                radial-gradient(ellipse 380px 3px at 70% 35%, rgba(224, 31, 61, 0.38) 0%, transparent 100%),
+                radial-gradient(ellipse 300px 2px at 30% 50%, rgba(224, 31, 61, 0.32) 0%, transparent 100%),
+                radial-gradient(ellipse 420px 3px at 65% 55%, rgba(224, 31, 61, 0.4) 0%, transparent 100%),
+                radial-gradient(ellipse 340px 2px at 50% 70%, rgba(224, 31, 61, 0.36) 0%, transparent 100%),
+                radial-gradient(ellipse 280px 2px at 25% 65%, rgba(224, 31, 61, 0.33) 0%, transparent 100%),
+                radial-gradient(ellipse 360px 3px at 80% 60%, rgba(224, 31, 61, 0.37) 0%, transparent 100%);
+            transform: rotate(-15deg);
+            animation: neuralPulse 8s ease-in-out infinite;
+        }
+        
+        /* Neural network nodes for Hero */
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            opacity: 0.35;
+            pointer-events: none;
+            background-image:
+                /* Large neuron nodes with glow */
+                radial-gradient(circle, rgba(224, 31, 61, 0.9) 0%, rgba(224, 31, 61, 0.6) 15%, rgba(224, 31, 61, 0.3) 30%, rgba(224, 31, 61, 0.1) 50%, transparent 70%),
+                radial-gradient(circle, rgba(224, 31, 61, 0.85) 0%, rgba(224, 31, 61, 0.55) 18%, rgba(224, 31, 61, 0.28) 32%, rgba(224, 31, 61, 0.08) 52%, transparent 68%),
+                radial-gradient(circle, rgba(224, 31, 61, 0.88) 0%, rgba(224, 31, 61, 0.58) 16%, rgba(224, 31, 61, 0.29) 31%, rgba(224, 31, 61, 0.09) 51%, transparent 69%),
+                /* Medium neurons */
+                radial-gradient(circle, rgba(224, 31, 61, 0.75) 0%, rgba(224, 31, 61, 0.45) 25%, rgba(224, 31, 61, 0.15) 45%, transparent 65%),
+                radial-gradient(circle, rgba(224, 31, 61, 0.72) 0%, rgba(224, 31, 61, 0.42) 28%, rgba(224, 31, 61, 0.12) 48%, transparent 66%),
+                radial-gradient(circle, rgba(224, 31, 61, 0.78) 0%, rgba(224, 31, 61, 0.48) 23%, rgba(224, 31, 61, 0.16) 43%, transparent 63%),
+                radial-gradient(circle, rgba(224, 31, 61, 0.7) 0%, rgba(224, 31, 61, 0.4) 30%, rgba(224, 31, 61, 0.13) 50%, transparent 68%),
+                /* Small neurons */
+                radial-gradient(circle, rgba(224, 31, 61, 0.65) 0%, rgba(224, 31, 61, 0.3) 35%, transparent 60%),
+                radial-gradient(circle, rgba(224, 31, 61, 0.62) 0%, rgba(224, 31, 61, 0.28) 38%, transparent 62%),
+                radial-gradient(circle, rgba(224, 31, 61, 0.68) 0%, rgba(224, 31, 61, 0.32) 33%, transparent 58%);
+            background-size: 
+                45px 45px,
+                42px 42px,
+                40px 40px,
+                22px 22px,
+                20px 20px,
+                24px 24px,
+                21px 21px,
+                12px 12px,
+                11px 11px,
+                13px 13px;
+            background-position: 
+                20% 30%,
+                45% 25%,
+                70% 35%,
+                30% 50%,
+                55% 45%,
+                65% 55%,
+                80% 60%,
+                25% 65%,
+                50% 70%,
+                75% 70%;
+            background-repeat: no-repeat;
+            animation: neuronPulse 6s ease-in-out infinite;
+        }
+        
+        body.light-mode .hero::before {
+            opacity: 0.12;
+        }
+        
+        body.light-mode .hero::after {
+            opacity: 0.25;
+        }
+        
+        @keyframes neuralPulse {
+            0%, 100% {
+                opacity: 0.2;
+                transform: rotate(-15deg) scale(1);
+            }
+            50% {
+                opacity: 0.35;
+                transform: rotate(-15deg) scale(1.02);
+            }
+        }
+        
+        @keyframes neuronPulse {
+            0%, 100% {
+                opacity: 0.35;
+            }
+            25% {
+                opacity: 0.5;
+            }
+            75% {
+                opacity: 0.42;
+            }
+        }
+        
+        /* Ensure hero content stays above background */
+        .hero > * {
+            position: relative;
+            z-index: 1;
         }
         
         .hero h1 {
@@ -203,6 +318,162 @@
         /* Quick Insights Section */
         .quick-insights {
             margin: 40px 0;
+            position: relative;
+            padding: 60px 0;
+            overflow: hidden;
+        }
+        
+        /* Animated Neural Network Background */
+        .quick-insights::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            opacity: 0.22;
+            pointer-events: none;
+            background-image: 
+                /* Organic neural connections - curved paths */
+                radial-gradient(ellipse 450px 3px at 15% 20%, rgba(224, 31, 61, 0.42) 0%, transparent 100%),
+                radial-gradient(ellipse 380px 2px at 40% 18%, rgba(224, 31, 61, 0.38) 0%, transparent 100%),
+                radial-gradient(ellipse 410px 3px at 68% 25%, rgba(224, 31, 61, 0.4) 0%, transparent 100%),
+                radial-gradient(ellipse 320px 2px at 25% 40%, rgba(224, 31, 61, 0.35) 0%, transparent 100%),
+                radial-gradient(ellipse 440px 3px at 60% 45%, rgba(224, 31, 61, 0.43) 0%, transparent 100%),
+                radial-gradient(ellipse 360px 2px at 82% 50%, rgba(224, 31, 61, 0.37) 0%, transparent 100%),
+                radial-gradient(ellipse 390px 3px at 35% 65%, rgba(224, 31, 61, 0.39) 0%, transparent 100%),
+                radial-gradient(ellipse 330px 2px at 55% 70%, rgba(224, 31, 61, 0.36) 0%, transparent 100%),
+                radial-gradient(ellipse 370px 3px at 78% 75%, rgba(224, 31, 61, 0.38) 0%, transparent 100%),
+                radial-gradient(ellipse 310px 2px at 20% 80%, rgba(224, 31, 61, 0.34) 0%, transparent 100%);
+            transform: rotate(-12deg);
+            animation: neuralConnectionPulse 10s ease-in-out infinite;
+        }
+        
+        body.light-mode .quick-insights::before {
+            opacity: 0.15;
+        }
+        
+        /* Neural network neurons */
+        .quick-insights::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            opacity: 0.38;
+            pointer-events: none;
+            background-image:
+                /* Large neurons with glow */
+                radial-gradient(circle, rgba(224, 31, 61, 0.92) 0%, rgba(224, 31, 61, 0.62) 18%, rgba(224, 31, 61, 0.28) 36%, rgba(224, 31, 61, 0.1) 54%, transparent 70%),
+                radial-gradient(circle, rgba(224, 31, 61, 0.88) 0%, rgba(224, 31, 61, 0.58) 20%, rgba(224, 31, 61, 0.26) 38%, rgba(224, 31, 61, 0.08) 56%, transparent 72%),
+                radial-gradient(circle, rgba(224, 31, 61, 0.9) 0%, rgba(224, 31, 61, 0.6) 19%, rgba(224, 31, 61, 0.27) 37%, rgba(224, 31, 61, 0.09) 55%, transparent 71%),
+                /* Medium neurons */
+                radial-gradient(circle, rgba(224, 31, 61, 0.78) 0%, rgba(224, 31, 61, 0.48) 26%, rgba(224, 31, 61, 0.18) 48%, transparent 66%),
+                radial-gradient(circle, rgba(224, 31, 61, 0.75) 0%, rgba(224, 31, 61, 0.45) 28%, rgba(224, 31, 61, 0.16) 50%, transparent 68%),
+                radial-gradient(circle, rgba(224, 31, 61, 0.8) 0%, rgba(224, 31, 61, 0.5) 24%, rgba(224, 31, 61, 0.19) 46%, transparent 64%),
+                radial-gradient(circle, rgba(224, 31, 61, 0.73) 0%, rgba(224, 31, 61, 0.43) 30%, rgba(224, 31, 61, 0.15) 52%, transparent 70%),
+                radial-gradient(circle, rgba(224, 31, 61, 0.77) 0%, rgba(224, 31, 61, 0.47) 27%, rgba(224, 31, 61, 0.17) 49%, transparent 67%),
+                /* Small neurons */
+                radial-gradient(circle, rgba(224, 31, 61, 0.68) 0%, rgba(224, 31, 61, 0.35) 36%, transparent 62%),
+                radial-gradient(circle, rgba(224, 31, 61, 0.65) 0%, rgba(224, 31, 61, 0.32) 38%, transparent 64%),
+                radial-gradient(circle, rgba(224, 31, 61, 0.7) 0%, rgba(224, 31, 61, 0.37) 34%, transparent 60%),
+                radial-gradient(circle, rgba(224, 31, 61, 0.63) 0%, rgba(224, 31, 61, 0.3) 40%, transparent 66%);
+            background-size: 
+                38px 38px,
+                36px 36px,
+                40px 40px,
+                20px 20px,
+                19px 19px,
+                21px 21px,
+                18px 18px,
+                22px 22px,
+                11px 11px,
+                10px 10px,
+                12px 12px,
+                10px 10px;
+            background-position: 
+                15% 20%,
+                40% 18%,
+                68% 25%,
+                25% 40%,
+                50% 38%,
+                60% 45%,
+                82% 50%,
+                72% 60%,
+                35% 65%,
+                55% 70%,
+                78% 75%,
+                20% 80%;
+            background-repeat: no-repeat;
+            animation: neuronActivityPulse 7s ease-in-out infinite;
+        }
+        
+        body.light-mode .quick-insights::after {
+            opacity: 0.28;
+        }
+        
+        @keyframes neuralConnectionPulse {
+            0%, 100% {
+                opacity: 0.22;
+                transform: rotate(-12deg) scale(1);
+            }
+            33% {
+                opacity: 0.38;
+                transform: rotate(-12deg) scale(1.03);
+            }
+            66% {
+                opacity: 0.28;
+                transform: rotate(-12deg) scale(0.98);
+            }
+        }
+        
+        @keyframes neuronActivityPulse {
+            0%, 100% {
+                opacity: 0.38;
+            }
+            20% {
+                opacity: 0.52;
+            }
+            40% {
+                opacity: 0.44;
+            }
+            60% {
+                opacity: 0.5;
+            }
+            80% {
+                opacity: 0.42;
+            }
+        }
+        
+        body.light-mode .quick-insights::after {
+            animation: neuronActivityPulseLightMode 7s ease-in-out infinite;
+        }
+        
+        @keyframes neuronActivityPulseLightMode {
+            0%, 100% {
+                opacity: 0.28;
+            }
+            20% {
+                opacity: 0.4;
+            }
+            40% {
+                opacity: 0.32;
+            }
+            60% {
+                opacity: 0.38;
+            }
+            80% {
+                opacity: 0.3;
+            }
+        }
+        
+        /* Ensure content stays above background */
+        .quick-insights > * {
+            position: relative;
+            z-index: 1;
         }
         
         .section-title {
@@ -897,6 +1168,201 @@
             transition: opacity 0.3s ease;
         }
         
+        /* Waterfall Neural Network Effect - Top of Article */
+        .article-page::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 500px;
+            z-index: 0;
+            pointer-events: none;
+            /* Mask to create waterfall fade effect from top to bottom */
+            mask-image: linear-gradient(to bottom, 
+                rgba(0,0,0,1) 0%, 
+                rgba(0,0,0,0.85) 20%, 
+                rgba(0,0,0,0.6) 40%, 
+                rgba(0,0,0,0.35) 60%, 
+                rgba(0,0,0,0.15) 80%, 
+                rgba(0,0,0,0) 100%);
+            -webkit-mask-image: linear-gradient(to bottom, 
+                rgba(0,0,0,1) 0%, 
+                rgba(0,0,0,0.85) 20%, 
+                rgba(0,0,0,0.6) 40%, 
+                rgba(0,0,0,0.35) 60%, 
+                rgba(0,0,0,0.15) 80%, 
+                rgba(0,0,0,0) 100%);
+            background-image: 
+                /* Organic curved neural connections flowing down */
+                radial-gradient(ellipse 500px 4px at 12% 0%, rgba(224, 31, 61, 0.6) 0%, transparent 100%),
+                radial-gradient(ellipse 450px 3px at 35% 0%, rgba(224, 31, 61, 0.55) 0%, transparent 100%),
+                radial-gradient(ellipse 480px 4px at 58% 0%, rgba(224, 31, 61, 0.58) 0%, transparent 100%),
+                radial-gradient(ellipse 420px 3px at 78% 0%, rgba(224, 31, 61, 0.52) 0%, transparent 100%),
+                radial-gradient(ellipse 460px 3px at 22% 0%, rgba(224, 31, 61, 0.56) 0%, transparent 100%),
+                radial-gradient(ellipse 440px 4px at 48% 0%, rgba(224, 31, 61, 0.54) 0%, transparent 100%),
+                radial-gradient(ellipse 490px 3px at 68% 0%, rgba(224, 31, 61, 0.57) 0%, transparent 100%),
+                radial-gradient(ellipse 430px 3px at 88% 0%, rgba(224, 31, 61, 0.53) 0%, transparent 100%);
+            background-size: 
+                100% 500px,
+                100% 500px,
+                100% 500px,
+                100% 500px,
+                100% 500px,
+                100% 500px,
+                100% 500px,
+                100% 500px;
+            background-position: 
+                0% 0%,
+                0% 0%,
+                0% 0%,
+                0% 0%,
+                0% 0%,
+                0% 0%,
+                0% 0%,
+                0% 0%;
+            background-repeat: no-repeat;
+            transform: rotate(-8deg);
+            animation: neuralWaterfallFlow 10s linear infinite;
+        }
+        
+        /* Waterfall neurons - flowing down */
+        .article-page::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 500px;
+            z-index: 0;
+            pointer-events: none;
+            /* Same mask for waterfall effect */
+            mask-image: linear-gradient(to bottom, 
+                rgba(0,0,0,1) 0%, 
+                rgba(0,0,0,0.85) 20%, 
+                rgba(0,0,0,0.6) 40%, 
+                rgba(0,0,0,0.35) 60%, 
+                rgba(0,0,0,0.15) 80%, 
+                rgba(0,0,0,0) 100%);
+            -webkit-mask-image: linear-gradient(to bottom, 
+                rgba(0,0,0,1) 0%, 
+                rgba(0,0,0,0.85) 20%, 
+                rgba(0,0,0,0.6) 40%, 
+                rgba(0,0,0,0.35) 60%, 
+                rgba(0,0,0,0.15) 80%, 
+                rgba(0,0,0,0) 100%);
+            background-image:
+                /* Neurons with glowing aura */
+                radial-gradient(circle, rgba(224, 31, 61, 0.95) 0%, rgba(224, 31, 61, 0.65) 22%, rgba(224, 31, 61, 0.3) 40%, rgba(224, 31, 61, 0.12) 58%, transparent 75%),
+                radial-gradient(circle, rgba(224, 31, 61, 0.92) 0%, rgba(224, 31, 61, 0.62) 24%, rgba(224, 31, 61, 0.28) 42%, rgba(224, 31, 61, 0.1) 60%, transparent 76%),
+                radial-gradient(circle, rgba(224, 31, 61, 0.9) 0%, rgba(224, 31, 61, 0.6) 23%, rgba(224, 31, 61, 0.29) 41%, rgba(224, 31, 61, 0.11) 59%, transparent 74%),
+                radial-gradient(circle, rgba(224, 31, 61, 0.88) 0%, rgba(224, 31, 61, 0.58) 25%, rgba(224, 31, 61, 0.27) 43%, rgba(224, 31, 61, 0.09) 61%, transparent 77%),
+                /* Medium neurons */
+                radial-gradient(circle, rgba(224, 31, 61, 0.82) 0%, rgba(224, 31, 61, 0.52) 28%, rgba(224, 31, 61, 0.2) 50%, transparent 70%),
+                radial-gradient(circle, rgba(224, 31, 61, 0.8) 0%, rgba(224, 31, 61, 0.5) 30%, rgba(224, 31, 61, 0.18) 52%, transparent 72%),
+                radial-gradient(circle, rgba(224, 31, 61, 0.78) 0%, rgba(224, 31, 61, 0.48) 29%, rgba(224, 31, 61, 0.19) 51%, transparent 71%),
+                radial-gradient(circle, rgba(224, 31, 61, 0.76) 0%, rgba(224, 31, 61, 0.46) 31%, rgba(224, 31, 61, 0.17) 53%, transparent 73%),
+                /* Small neurons */
+                radial-gradient(circle, rgba(224, 31, 61, 0.72) 0%, rgba(224, 31, 61, 0.38) 38%, transparent 65%),
+                radial-gradient(circle, rgba(224, 31, 61, 0.7) 0%, rgba(224, 31, 61, 0.36) 40%, transparent 66%),
+                radial-gradient(circle, rgba(224, 31, 61, 0.68) 0%, rgba(224, 31, 61, 0.34) 39%, transparent 64%),
+                radial-gradient(circle, rgba(224, 31, 61, 0.74) 0%, rgba(224, 31, 61, 0.4) 37%, transparent 67%);
+            background-size: 
+                42px 42px,
+                40px 40px,
+                38px 38px,
+                44px 44px,
+                22px 22px,
+                20px 20px,
+                24px 24px,
+                21px 21px,
+                13px 13px,
+                12px 12px,
+                11px 11px,
+                14px 14px;
+            background-position: 
+                12% -50px,
+                35% -80px,
+                58% -60px,
+                78% -90px,
+                22% -40px,
+                48% -70px,
+                68% -50px,
+                88% -65px,
+                28% -35px,
+                52% -45px,
+                72% -55px,
+                18% -42px;
+            background-repeat: no-repeat;
+            animation: neuralNodesWaterfallFlow 8s linear infinite;
+        }
+        
+        body.light-mode .article-page::before {
+            opacity: 0.7;
+        }
+        
+        body.light-mode .article-page::after {
+            opacity: 0.7;
+        }
+        
+        @keyframes neuralWaterfallFlow {
+            0% {
+                background-position: 
+                    0% 0%,
+                    0% 0%,
+                    0% 0%,
+                    0% 0%,
+                    0% 0%,
+                    0% 0%,
+                    0% 0%,
+                    0% 0%;
+            }
+            100% {
+                background-position: 
+                    0% 100%,
+                    0% 100%,
+                    0% 100%,
+                    0% 100%,
+                    0% 100%,
+                    0% 100%,
+                    0% 100%,
+                    0% 100%;
+            }
+        }
+        
+        @keyframes neuralNodesWaterfallFlow {
+            0% {
+                background-position: 
+                    12% -50px,
+                    35% -80px,
+                    58% -60px,
+                    78% -90px,
+                    22% -40px,
+                    48% -70px,
+                    68% -50px,
+                    88% -65px,
+                    28% -35px,
+                    52% -45px,
+                    72% -55px,
+                    18% -42px;
+            }
+            100% {
+                background-position: 
+                    12% 550px,
+                    35% 580px,
+                    58% 560px,
+                    78% 590px,
+                    22% 540px,
+                    48% 570px,
+                    68% 550px,
+                    88% 565px,
+                    28% 535px,
+                    52% 545px,
+                    72% 555px,
+                    18% 542px;
+            }
+        }
+        
         body.light-mode .article-page {
             background: rgba(255, 255, 255, 0.98);
         }
@@ -910,6 +1376,8 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 100px 20px 60px;
+            position: relative;
+            z-index: 1;
         }
         
         .back-button {
@@ -1006,6 +1474,139 @@
         
         .article-full-content a:hover {
             color: #FF4D6D;
+        }
+        
+        /* Modal Styles */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(5px);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 300;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        
+        body.light-mode .modal-overlay {
+            background: rgba(0, 0, 0, 0.7);
+        }
+        
+        .modal-content {
+            background: linear-gradient(180deg, #1A1A1A 0%, #0A0A0A 100%);
+            border: 2px solid rgba(224, 31, 61, 0.3);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 800px;
+            width: 100%;
+            max-height: 85vh;
+            overflow-y: auto;
+            position: relative;
+            box-shadow: 0 20px 60px rgba(224, 31, 61, 0.3);
+            animation: modalFadeIn 0.3s ease;
+        }
+        
+        body.light-mode .modal-content {
+            background: linear-gradient(180deg, #FFFFFF 0%, #F5F5F5 100%);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+        }
+        
+        @keyframes modalFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px) scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+        
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 32px;
+            color: #E01F3D;
+            cursor: pointer;
+            background: rgba(224, 31, 61, 0.1);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            line-height: 1;
+        }
+        
+        .modal-close:hover {
+            background: rgba(224, 31, 61, 0.2);
+            transform: rotate(90deg);
+        }
+        
+        .modal-content h2 {
+            color: #E01F3D;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+        
+        .modal-content h3 {
+            color: #E01F3D;
+            margin: 25px 0 15px;
+            font-size: 1.3rem;
+        }
+        
+        .modal-content p {
+            color: #E5E5E5;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+        
+        body.light-mode .modal-content p {
+            color: #1A1A1A;
+        }
+        
+        .modal-content ul {
+            color: #E5E5E5;
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+        
+        body.light-mode .modal-content ul {
+            color: #1A1A1A;
+        }
+        
+        .modal-content ul li {
+            margin-bottom: 10px;
+        }
+        
+        .modal-content strong {
+            color: #FF4D6D;
+        }
+        
+        /* Custom scrollbar for modal */
+        .modal-content::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        .modal-content::-webkit-scrollbar-track {
+            background: rgba(224, 31, 61, 0.1);
+            border-radius: 10px;
+        }
+        
+        .modal-content::-webkit-scrollbar-thumb {
+            background: rgba(224, 31, 61, 0.5);
+            border-radius: 10px;
+        }
+        
+        .modal-content::-webkit-scrollbar-thumb:hover {
+            background: rgba(224, 31, 61, 0.7);
         }
         
         /* Footer */
@@ -1483,6 +2084,204 @@
     <script src="archives-content.js"></script>
     
     <script>
+        // Initialize websiteContent and ensure modals are always available
+        if (typeof websiteContent === 'undefined') {
+            var websiteContent = {};
+        }
+        
+        // Always set these properties if they don't exist
+        if (!websiteContent.cyberShorts) websiteContent.cyberShorts = [];
+        if (!websiteContent.aiShorts) websiteContent.aiShorts = [];
+        if (!websiteContent.articleCards) websiteContent.articleCards = [];
+        if (!websiteContent.articles) websiteContent.articles = {};
+        if (!websiteContent.featureInsights) websiteContent.featureInsights = [];
+        
+        // Always define modals (override external file if needed)
+        websiteContent.modals = {
+            about: `
+                <h2 style="color: #E01F3D; margin-bottom: 20px; font-size: 2rem;">About TheHGTech</h2>
+                <p style="margin-bottom: 15px; line-height: 1.8;">
+                    TheHGTech is your trusted source for cutting-edge insights into cybersecurity threats, 
+                    AI innovations, and technology trends shaping the digital future. Our mission is to empower 
+                    individuals and organizations with the knowledge they need to navigate the rapidly evolving 
+                    landscape of technology and security.
+                </p>
+                <p style="margin-bottom: 15px; line-height: 1.8;">
+                    Founded by technology enthusiasts and security experts, we deliver comprehensive analysis, 
+                    real-time updates, and expert commentary on the most pressing issues in cybersecurity and 
+                    artificial intelligence. Our team is dedicated to making complex technical topics accessible 
+                    and actionable for our diverse audience.
+                </p>
+                <p style="margin-bottom: 15px; line-height: 1.8;">
+                    We believe that staying informed about technological advances and security threats is not 
+                    just important—it's essential. That's why we curate, analyze, and present the most relevant 
+                    information to help you stay ahead in the digital age.
+                </p>
+                <h3 style="color: #E01F3D; margin: 25px 0 15px; font-size: 1.5rem;">What We Cover</h3>
+                <ul style="margin-left: 20px; line-height: 1.8;">
+                    <li style="margin-bottom: 10px;">Cybersecurity threats and defense strategies</li>
+                    <li style="margin-bottom: 10px;">Artificial Intelligence breakthroughs and applications</li>
+                    <li style="margin-bottom: 10px;">Data privacy and protection</li>
+                    <li style="margin-bottom: 10px;">Emerging technology trends</li>
+                    <li style="margin-bottom: 10px;">Industry news and expert analysis</li>
+                </ul>
+            `,
+            privacy: `
+                <h2 style="color: #E01F3D; margin-bottom: 20px; font-size: 2rem;">Privacy Policy</h2>
+                <p style="margin-bottom: 15px; line-height: 1.8; font-size: 0.9rem; color: #909090;">
+                    <strong>Last Updated:</strong> October 29, 2025
+                </p>
+                
+                <h3 style="color: #E01F3D; margin: 25px 0 15px; font-size: 1.3rem;">1. Information We Collect</h3>
+                <p style="margin-bottom: 15px; line-height: 1.8;">
+                    We collect information that you provide directly to us, including when you create an account, 
+                    subscribe to our newsletter, or interact with our content. This may include your name, email 
+                    address, and preferences.
+                </p>
+                
+                <h3 style="color: #E01F3D; margin: 25px 0 15px; font-size: 1.3rem;">2. How We Use Your Information</h3>
+                <p style="margin-bottom: 15px; line-height: 1.8;">
+                    We use the information we collect to:
+                </p>
+                <ul style="margin-left: 20px; line-height: 1.8; margin-bottom: 15px;">
+                    <li style="margin-bottom: 8px;">Provide, maintain, and improve our services</li>
+                    <li style="margin-bottom: 8px;">Send you updates, newsletters, and promotional materials</li>
+                    <li style="margin-bottom: 8px;">Respond to your comments, questions, and requests</li>
+                    <li style="margin-bottom: 8px;">Analyze usage patterns and trends</li>
+                    <li style="margin-bottom: 8px;">Detect, prevent, and address technical issues</li>
+                </ul>
+                
+                <h3 style="color: #E01F3D; margin: 25px 0 15px; font-size: 1.3rem;">3. Information Sharing</h3>
+                <p style="margin-bottom: 15px; line-height: 1.8;">
+                    We do not sell, trade, or rent your personal information to third parties. We may share your 
+                    information only in the following circumstances:
+                </p>
+                <ul style="margin-left: 20px; line-height: 1.8; margin-bottom: 15px;">
+                    <li style="margin-bottom: 8px;">With your explicit consent</li>
+                    <li style="margin-bottom: 8px;">To comply with legal obligations</li>
+                    <li style="margin-bottom: 8px;">To protect our rights and safety</li>
+                    <li style="margin-bottom: 8px;">With service providers who assist in our operations</li>
+                </ul>
+                
+                <h3 style="color: #E01F3D; margin: 25px 0 15px; font-size: 1.3rem;">4. Cookies and Tracking</h3>
+                <p style="margin-bottom: 15px; line-height: 1.8;">
+                    We use cookies and similar tracking technologies to enhance your experience on our site. 
+                    You can control cookie settings through your browser preferences.
+                </p>
+                
+                <h3 style="color: #E01F3D; margin: 25px 0 15px; font-size: 1.3rem;">5. Data Security</h3>
+                <p style="margin-bottom: 15px; line-height: 1.8;">
+                    We implement appropriate technical and organizational measures to protect your personal 
+                    information against unauthorized access, alteration, disclosure, or destruction.
+                </p>
+                
+                <h3 style="color: #E01F3D; margin: 25px 0 15px; font-size: 1.3rem;">6. Your Rights</h3>
+                <p style="margin-bottom: 15px; line-height: 1.8;">
+                    You have the right to access, correct, or delete your personal information. You may also 
+                    opt out of marketing communications at any time. To exercise these rights, please contact us.
+                </p>
+                
+                <h3 style="color: #E01F3D; margin: 25px 0 15px; font-size: 1.3rem;">7. Changes to This Policy</h3>
+                <p style="margin-bottom: 15px; line-height: 1.8;">
+                    We may update this Privacy Policy from time to time. We will notify you of any changes by 
+                    posting the new policy on this page and updating the "Last Updated" date.
+                </p>
+                
+                <h3 style="color: #E01F3D; margin: 25px 0 15px; font-size: 1.3rem;">8. Contact Us</h3>
+                <p style="margin-bottom: 15px; line-height: 1.8;">
+                    If you have questions about this Privacy Policy, please contact us through our website 
+                    or social media channels.
+                </p>
+            `,
+            terms: `
+                <h2 style="color: #E01F3D; margin-bottom: 20px; font-size: 2rem;">Terms of Service</h2>
+                <p style="margin-bottom: 15px; line-height: 1.8; font-size: 0.9rem; color: #909090;">
+                    <strong>Last Updated:</strong> October 29, 2025
+                </p>
+                
+                <h3 style="color: #E01F3D; margin: 25px 0 15px; font-size: 1.3rem;">1. Acceptance of Terms</h3>
+                <p style="margin-bottom: 15px; line-height: 1.8;">
+                    By accessing and using TheHGTech website, you accept and agree to be bound by these Terms of 
+                    Service. If you do not agree to these terms, please do not use our services.
+                </p>
+                
+                <h3 style="color: #E01F3D; margin: 25px 0 15px; font-size: 1.3rem;">2. Use of Service</h3>
+                <p style="margin-bottom: 15px; line-height: 1.8;">
+                    You may use our service only for lawful purposes and in accordance with these Terms. You agree not to:
+                </p>
+                <ul style="margin-left: 20px; line-height: 1.8; margin-bottom: 15px;">
+                    <li style="margin-bottom: 8px;">Use the service in any way that violates any applicable law or regulation</li>
+                    <li style="margin-bottom: 8px;">Attempt to interfere with or disrupt the service or servers</li>
+                    <li style="margin-bottom: 8px;">Engage in any automated use of the system without our permission</li>
+                    <li style="margin-bottom: 8px;">Use the service to transmit any harmful or malicious code</li>
+                    <li style="margin-bottom: 8px;">Collect or harvest any personally identifiable information from the service</li>
+                </ul>
+                
+                <h3 style="color: #E01F3D; margin: 25px 0 15px; font-size: 1.3rem;">3. Intellectual Property</h3>
+                <p style="margin-bottom: 15px; line-height: 1.8;">
+                    All content on TheHGTech, including but not limited to text, graphics, logos, images, and 
+                    software, is the property of TheHGTech or its content suppliers and is protected by 
+                    international copyright and intellectual property laws.
+                </p>
+                
+                <h3 style="color: #E01F3D; margin: 25px 0 15px; font-size: 1.3rem;">4. User Content</h3>
+                <p style="margin-bottom: 15px; line-height: 1.8;">
+                    If you submit comments, feedback, or other content to our service, you grant us a non-exclusive, 
+                    royalty-free, perpetual, and worldwide license to use, modify, and display such content.
+                </p>
+                
+                <h3 style="color: #E01F3D; margin: 25px 0 15px; font-size: 1.3rem;">5. Disclaimers</h3>
+                <p style="margin-bottom: 15px; line-height: 1.8;">
+                    The information provided on TheHGTech is for general informational purposes only. While we 
+                    strive for accuracy, we make no warranties or representations about the completeness, 
+                    reliability, or accuracy of the information.
+                </p>
+                <p style="margin-bottom: 15px; line-height: 1.8;">
+                    THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER 
+                    EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR 
+                    A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.
+                </p>
+                
+                <h3 style="color: #E01F3D; margin: 25px 0 15px; font-size: 1.3rem;">6. Limitation of Liability</h3>
+                <p style="margin-bottom: 15px; line-height: 1.8;">
+                    To the maximum extent permitted by law, TheHGTech shall not be liable for any indirect, 
+                    incidental, special, consequential, or punitive damages arising out of or relating to your 
+                    use of the service.
+                </p>
+                
+                <h3 style="color: #E01F3D; margin: 25px 0 15px; font-size: 1.3rem;">7. External Links</h3>
+                <p style="margin-bottom: 15px; line-height: 1.8;">
+                    Our service may contain links to third-party websites. We are not responsible for the content, 
+                    privacy policies, or practices of any third-party sites.
+                </p>
+                
+                <h3 style="color: #E01F3D; margin: 25px 0 15px; font-size: 1.3rem;">8. Modifications to Service</h3>
+                <p style="margin-bottom: 15px; line-height: 1.8;">
+                    We reserve the right to modify, suspend, or discontinue any part of the service at any time 
+                    without notice. We shall not be liable to you or any third party for any modification, 
+                    suspension, or discontinuance of the service.
+                </p>
+                
+                <h3 style="color: #E01F3D; margin: 25px 0 15px; font-size: 1.3rem;">9. Governing Law</h3>
+                <p style="margin-bottom: 15px; line-height: 1.8;">
+                    These Terms shall be governed by and construed in accordance with applicable laws, without 
+                    regard to conflict of law principles.
+                </p>
+                
+                <h3 style="color: #E01F3D; margin: 25px 0 15px; font-size: 1.3rem;">10. Changes to Terms</h3>
+                <p style="margin-bottom: 15px; line-height: 1.8;">
+                    We reserve the right to update these Terms at any time. Your continued use of the service 
+                    after changes constitutes acceptance of the modified Terms.
+                </p>
+                
+                <h3 style="color: #E01F3D; margin: 25px 0 15px; font-size: 1.3rem;">11. Contact Information</h3>
+                <p style="margin-bottom: 15px; line-height: 1.8;">
+                    If you have any questions about these Terms of Service, please contact us through our 
+                    website or social media channels.
+                </p>
+            `
+        };
+        
         // Logo management based on theme
         function updateLogo() {
             const logoImg = document.getElementById('logoImg');
@@ -1781,8 +2580,16 @@
         
         // Open modal
         function openModal(type) {
+            console.log('Opening modal:', type);
+            console.log('websiteContent.modals:', websiteContent.modals);
+            
             const content = websiteContent.modals[type];
-            if (!content) return;
+            if (!content) {
+                console.error('Modal content not found for type:', type);
+                return;
+            }
+            
+            console.log('Modal content found, creating modal...');
             
             const modal = document.createElement('div');
             modal.className = 'modal-overlay';
@@ -1793,8 +2600,13 @@
                     <div>${content}</div>
                 </div>
             `;
+            // Close modal when clicking outside
+            modal.onclick = function() {
+                closeModal(modal.querySelector('.modal-close'));
+            };
             document.body.appendChild(modal);
             document.body.style.overflow = 'hidden';
+            console.log('Modal opened successfully');
         }
         
         // Close modal
