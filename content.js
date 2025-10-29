@@ -36,9 +36,7 @@ var websiteContent = {
         {
             "date": "Oct 28 2025",
             "title": "Nvidia’s GTC 2025 Keynote Unveils Free Models & SDKs for Startups",
-            "content": "At its GTC 2025 keynote in Washington D.C., Nvidia CEO Jensen Huang announced that the company is releasing new AI models, tools and software-development kits (SDKs) free for developers and startups. The keynote also expanded the Inception programme to support over 18,000 global companies with go-to-market expertise, training and resources. Nvidia emphasised supporting startup ecosystems and lowering the barrier for AI innovation. For technology teams this is significant: access to advanced models and infrastructure resources is becoming more democratised, which may accelerate AI adoption across sectors. Organisations should evaluate how they might leverage such resources, build internal capabilities around SDK-integration, and consider how to architect end-to-end AI pipelines (from data to deployment). Free access doesn’t remove operational and governance risks: scaling responsibly still demands data quality, security controls, model-risk management and ethical guardrails.",
-            "source": "MLQ AI",
-            "sourceUrl": "https://mlq.ai/news/nvidia-ceo-jensen-huang-delivers-major-ai-announcements-at-gtc-2025-keynote-in-washington-dc/?utm_source=chatgpt.com"
+            "content": "At its GTC 2025 keynote in Washington D.C., Nvidia CEO Jensen Huang announced that the company is releasing new AI models, tools and software-development kits (SDKs) free for developers and startups. The keynote also expanded the Inception programme to support over 18,000 global companies with go-to-market expertise, training and resources. Nvidia emphasised supporting startup ecosystems and lowering the barrier for AI innovation. For technology teams this is significant: access to advanced models and infrastructure resources is becoming more democratised, which may accelerate AI adoption across sectors. Organisations should evaluate how they might leverage such resources, build internal capabilities around SDK-integration, and consider how to architect end-to-end AI pipelines (from data to deployment). Free access doesn’t remove operational and governance risks: scaling responsibly still demands data quality, security controls, model-risk management and ethical guardrails."
         },
         {
             "date": "Oct 28 2025",
@@ -121,6 +119,32 @@ var websiteContent = {
             "excerpt": "AI is transforming both sides of cybersecurity. Attackers now use generative AI and reinforcement learning to craft adaptive malware, automate reconnaissance, and launch targeted phishing faster than traditional defenses can react. Organizations dependent on legacy, rule-based tools are falling behind. Experts urge deploying AI-powered anomaly detection, zero-trust frameworks, and continuous learning SOCs to counter evolving threats. The balance of power in cybersecurity is shifting rapidly toward machine-led conflict."
         }
     ],
-    "featureInsights": [],
+    "featureInsights": [
+        {
+            "icon": "🧩",
+            "title": "Adaptive Intelligence",
+            "description": "Where AI meets cybersecurity — discover how machine learning, automation, and predictive analytics are reshaping modern threat defense."
+        },
+        {
+            "icon": "🔐",
+            "title": "Digital Trust Frameworks",
+            "description": "Insights into zero-trust architectures, identity governance, and the policies redefining data protection in a hyper-connected world."
+        },
+        {
+            "icon": "📊",
+            "title": "AI Infrastructure & Risk",
+            "description": "Examine how large-scale AI compute, cloud orchestration, and data governance intersect with resilience, privacy, and compliance."
+        },
+        {
+            "icon": "🌐",
+            "title": "Threat Horizon 2030",
+            "description": "Forward-looking analysis of global cyber risks, AI-powered attacks, and national strategies driving the next era of digital security."
+        },
+        {
+            "icon": "⚡",
+            "title": "Intelligent Automation",
+            "description": "Explore how autonomous systems, AI agents, and secure orchestration are transforming operations, defense, and decision-making speed."
+        }
+    ],
     "modals": {}
 };
