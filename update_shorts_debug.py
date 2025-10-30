@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-TheHGTech Content Automation Script - FIXED VERSION
+TheHGTech Content Automation Script - DEBUG VERSION
 Generates and updates cybersecurity and AI shorts using OpenAI API
-WITH SAFEGUARDS TO PREVENT CONTENT LOSS
+WITH DETAILED LOGGING TO TROUBLESHOOT ISSUES
 """
 
 import os
@@ -14,13 +14,21 @@ import pytz
 from openai import OpenAI
 
 # Initialize OpenAI client
-client = OpenAI(api_key=os.environ.get('OPENAI_API_KEY'))
+api_key = os.environ.get('OPENAI_API_KEY')
+print(f"🔑 API Key present: {'Yes' if api_key else 'No'}")
+print(f"🔑 API Key length: {len(api_key) if api_key else 0} characters")
+
+if not api_key:
+    print("❌ ERROR: OPENAI_API_KEY environment variable is not set!")
+    sys.exit(1)
+
+client = OpenAI(api_key=api_key)
 
 # Prompts
 CYBER_PROMPT = """You are my content assistant for TheHGTech.com, a professional publication focused on Cybersecurity.
 Generate 4–5 verified cybersecurity news shorts from the *past 24 hours only*.
 Each short must be ~200 words and follow this exact format:
-Date: [e.g., Oct 29 2025]
+Date: [e.g., Oct 30 2025]
 Source Name: [Publisher or organisation name]
 Source URL: [Full valid link]
 Title: [Catchy and concise headline]
@@ -42,7 +50,7 @@ Cybersecurity Shorts
 AI_PROMPT = """You are my content assistant for TheHGTech.com, a professional publication focused on Artificial Intelligence.
 Generate 4–5 verified AI news shorts from the *past 24 hours only*.
 Each short must be ~200 words and follow this exact format:
-Date: [e.g., Oct 29 2025]
+Date: [e.g., Oct 30 2025]
 Source Name: [Publisher or organisation name]
 Source URL: [Full valid link]
 Title: [Catchy and concise headline]
@@ -80,8 +88,11 @@ def is_older_than_24_hours(date_string):
         # Calculate age in hours
         age_hours = (now - date_obj).total_seconds() / 3600
         
+        print(f"   📅 Date '{date_string}' is {age_hours:.1f} hours old")
+        
         return age_hours >= 24
-    except:
+    except Exception as e:
+        print(f"   ⚠️  Could not parse date '{date_string}': {e}")
         # If parsing fails, keep the item (don't remove)
         return False
 
@@ -89,10 +100,12 @@ def is_older_than_24_hours(date_string):
 def generate_content(prompt, content_type):
     """Generate content using OpenAI API"""
     print(f"\n🤖 Generating {content_type} content...")
+    print(f"   Model: gpt-4o")
+    print(f"   Prompt length: {len(prompt)} characters")
     
     try:
         response = client.chat.completions.create(
-            model="gpt-4o",  # Using GPT-4o for better accuracy
+            model="gpt-4o",
             messages=[
                 {"role": "system", "content": "You are a professional tech news content generator. Always provide accurate, verified information with proper sources."},
                 {"role": "user", "content": prompt}
@@ -103,24 +116,29 @@ def generate_content(prompt, content_type):
         
         content = response.choices[0].message.content
         print(f"✅ Generated {content_type} content successfully")
+        print(f"   Response length: {len(content)} characters")
+        print(f"   First 100 chars: {content[:100]}...")
         return content
         
     except Exception as e:
         print(f"❌ Error generating {content_type} content: {e}")
-        return None  # Return None instead of exiting
+        print(f"   Error type: {type(e).__name__}")
+        return None
 
 
 def parse_shorts(content):
     """Parse the generated content into structured shorts"""
     if not content:
+        print("   ⚠️  No content to parse")
         return []
     
     shorts = []
     
     # Split by "Date:" to get individual shorts
     items = re.split(r'\n(?=Date:)', content)
+    print(f"   Found {len(items)} potential items")
     
-    for item in items:
+    for i, item in enumerate(items):
         if not item.strip() or 'Date:' not in item:
             continue
             
@@ -140,26 +158,42 @@ def parse_shorts(content):
                 "sourceUrl": url_match.group(1).strip()
             }
             shorts.append(short)
+            print(f"   ✅ Parsed item {i+1}: {short['title'][:50]}...")
+        else:
+            print(f"   ❌ Failed to parse item {i+1} (missing fields)")
     
     return shorts
 
 
 def read_content_js():
     """Read the current content.js file"""
+    print("\n📖 Reading content.js...")
+    
+    if not os.path.exists('content.js'):
+        print("   ❌ content.js file not found!")
+        print(f"   Current directory: {os.getcwd()}")
+        print(f"   Files in directory: {os.listdir('.')}")
+        sys.exit(1)
+    
     with open('content.js', 'r', encoding='utf-8') as f:
         content = f.read()
+    
+    print(f"   File size: {len(content)} bytes")
     
     # Extract the websiteContent object
     match = re.search(r'var websiteContent = ({.*?});', content, re.DOTALL)
     if not match:
-        print("❌ Could not parse content.js")
+        print("❌ Could not parse content.js - websiteContent not found")
         sys.exit(1)
     
+    print("   ✅ Successfully parsed content.js")
     return json.loads(match.group(1))
 
 
 def write_content_js(data):
     """Write updated content back to content.js"""
+    print("\n💾 Writing to content.js...")
+    
     js_content = f"""// TheHGTech Website Content
 // Update this file to change website content
 
@@ -167,6 +201,8 @@ var websiteContent = {json.dumps(data, indent=4, ensure_ascii=False)};"""
     
     with open('content.js', 'w', encoding='utf-8') as f:
         f.write(js_content)
+    
+    print(f"   ✅ Written {len(js_content)} bytes to content.js")
 
 
 def update_shorts():
@@ -174,8 +210,9 @@ def update_shorts():
     ist_time = get_current_time_ist()
     
     print(f"\n{'='*60}")
-    print(f"🚀 TheHGTech Content Automation")
+    print(f"🚀 TheHGTech Content Automation - DEBUG MODE")
     print(f"⏰ Time: {ist_time.strftime('%Y-%m-%d %I:%M %p IST')}")
+    print(f"📂 Working directory: {os.getcwd()}")
     print(f"🔄 Mode: 24-Hour Rolling Window with Safeguards")
     print(f"{'='*60}\n")
     
@@ -184,7 +221,17 @@ def update_shorts():
     existing_cyber = data.get('cyberShorts', [])
     existing_ai = data.get('aiShorts', [])
     
-    print(f"📚 Existing: {len(existing_cyber)} cyber, {len(existing_ai)} AI shorts")
+    print(f"\n📚 EXISTING CONTENT:")
+    print(f"   Cyber shorts: {len(existing_cyber)}")
+    print(f"   AI shorts: {len(existing_ai)}")
+    
+    if existing_cyber:
+        print(f"   Latest cyber: {existing_cyber[0].get('title', 'N/A')[:50]}...")
+        print(f"   Latest cyber date: {existing_cyber[0].get('date', 'N/A')}")
+    
+    if existing_ai:
+        print(f"   Latest AI: {existing_ai[0].get('title', 'N/A')[:50]}...")
+        print(f"   Latest AI date: {existing_ai[0].get('date', 'N/A')}")
     
     # Generate new content
     cyber_content = generate_content(CYBER_PROMPT, "Cybersecurity")
@@ -194,16 +241,25 @@ def update_shorts():
     new_cyber_shorts = parse_shorts(cyber_content)
     new_ai_shorts = parse_shorts(ai_content)
     
-    print(f"\n📊 Generated {len(new_cyber_shorts)} new cybersecurity shorts")
-    print(f"📊 Generated {len(new_ai_shorts)} new AI shorts")
+    print(f"\n📊 NEW CONTENT GENERATED:")
+    print(f"   Cybersecurity shorts: {len(new_cyber_shorts)}")
+    print(f"   AI shorts: {len(new_ai_shorts)}")
+    
+    if new_cyber_shorts:
+        print(f"   First new cyber: {new_cyber_shorts[0].get('title', 'N/A')[:50]}...")
+    
+    if new_ai_shorts:
+        print(f"   First new AI: {new_ai_shorts[0].get('title', 'N/A')[:50]}...")
     
     # ⚠️ SAFEGUARD: If no new content was generated, don't delete old content!
     if len(new_cyber_shorts) == 0 and len(new_ai_shorts) == 0:
         print("\n⚠️  WARNING: No new content generated!")
         print("⚠️  Keeping existing content to prevent data loss")
         print("⚠️  Check your OpenAI API key and try again later")
+        print("\n❌ EXITING WITHOUT CHANGES")
         sys.exit(0)  # Exit without changes
     
+    print(f"\n🗑️  FILTERING OLD CONTENT (24+ hours):")
     # Filter out content older than 24 hours
     filtered_cyber = [s for s in existing_cyber if not is_older_than_24_hours(s.get('date', ''))]
     filtered_ai = [s for s in existing_ai if not is_older_than_24_hours(s.get('date', ''))]
@@ -211,19 +267,19 @@ def update_shorts():
     removed_cyber = len(existing_cyber) - len(filtered_cyber)
     removed_ai = len(existing_ai) - len(filtered_ai)
     
-    if removed_cyber > 0 or removed_ai > 0:
-        print(f"🗑️  Removed {removed_cyber} cyber and {removed_ai} AI shorts (24+ hours old)")
-    else:
-        print(f"✅ No content older than 24 hours to remove")
+    print(f"\n   Removed {removed_cyber} cyber shorts")
+    print(f"   Removed {removed_ai} AI shorts")
+    print(f"   Kept {len(filtered_cyber)} cyber shorts")
+    print(f"   Kept {len(filtered_ai)} AI shorts")
     
     # ⚠️ SAFEGUARD: Keep at least some old content if filtering removes everything
     MIN_CONTENT = 3
     if len(filtered_cyber) < MIN_CONTENT and len(existing_cyber) > 0:
-        print(f"⚠️  Keeping {MIN_CONTENT} most recent cyber shorts as backup")
+        print(f"\n⚠️  Applying backup: keeping {MIN_CONTENT} most recent cyber shorts")
         filtered_cyber = existing_cyber[:MIN_CONTENT]
     
     if len(filtered_ai) < MIN_CONTENT and len(existing_ai) > 0:
-        print(f"⚠️  Keeping {MIN_CONTENT} most recent AI shorts as backup")
+        print(f"⚠️  Applying backup: keeping {MIN_CONTENT} most recent AI shorts")
         filtered_ai = existing_ai[:MIN_CONTENT]
     
     # Combine new and remaining old shorts (new ones first)
@@ -234,20 +290,33 @@ def update_shorts():
     data['cyberShorts'] = data['cyberShorts'][:15]
     data['aiShorts'] = data['aiShorts'][:15]
     
+    print(f"\n📝 COMBINED CONTENT:")
+    print(f"   Total cyber shorts: {len(data['cyberShorts'])}")
+    print(f"   Total AI shorts: {len(data['aiShorts'])}")
+    
     # ⚠️ FINAL SAFEGUARD: Don't write if we'd end up with no content
     if len(data['cyberShorts']) == 0 or len(data['aiShorts']) == 0:
-        print("\n⚠️  ERROR: Would result in empty content sections!")
-        print("⚠️  Aborting update to prevent data loss")
+        print("\n❌ ERROR: Would result in empty content sections!")
+        print("❌ Aborting update to prevent data loss")
         sys.exit(1)
     
     # Write back to file
     write_content_js(data)
     
-    print(f"\n✅ Successfully updated content.js")
-    print(f"📝 Final count: {len(data['cyberShorts'])} cyber, {len(data['aiShorts'])} AI shorts")
-    print(f"📅 Content mix: new + recent (24hr window)")
-    print(f"\n{'='*60}\n")
+    print(f"\n{'='*60}")
+    print(f"✅ SUCCESS: Updated content.js")
+    print(f"📊 Final count: {len(data['cyberShorts'])} cyber, {len(data['aiShorts'])} AI shorts")
+    print(f"📅 Content mix: new + recent (within rolling window)")
+    print(f"{'='*60}\n")
 
 
 if __name__ == "__main__":
-    update_shorts()
+    try:
+        update_shorts()
+    except Exception as e:
+        print(f"\n❌ FATAL ERROR: {e}")
+        print(f"   Error type: {type(e).__name__}")
+        import traceback
+        print("\n📋 Full traceback:")
+        traceback.print_exc()
+        sys.exit(1)
