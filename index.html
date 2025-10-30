@@ -4,12 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TheHGTech - Cybersecurity & AI News</title>
-    
-    <!-- Security Headers -->
-    <meta http-equiv="X-Frame-Options" content="DENY">
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta name="referrer" content="strict-origin-when-cross-origin">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:;">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -1485,10 +1479,6 @@
     </div>
 
     <!-- Load Content -->
-    <!-- Add DOMPurify for XSS protection -->
-    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.6/dist/purify.min.js" 
-            crossorigin="anonymous"></script>
-    
     <script src="content.js"></script>
     <script src="archives-content.js"></script>
     
@@ -1524,7 +1514,7 @@
                     🔗 Source: ${short.source}
                 </a>` : '';
             
-            card.innerHTML = DOMPurify.sanitize(`
+            card.innerHTML = `
                 <div class="short-meta">
                     <span class="short-date">${short.date}</span>
                     <span class="short-category">${category}</span>
@@ -1541,7 +1531,7 @@
                         Next →
                     </button>
                 </div>
-            `);
+            `;
         }
         
         // Navigate shorts
@@ -1621,7 +1611,7 @@
                         <span class="read-more">Read more →</span>
                     </div>
                 `;
-                container.innerHTML += DOMPurify.sanitize(articleHtml);
+                container.innerHTML += articleHtml;
             });
         }
         
@@ -1638,7 +1628,7 @@
                         <p>${feature.description}</p>
                     </div>
                 `;
-                container.innerHTML += DOMPurify.sanitize(featureHtml);
+                container.innerHTML += featureHtml;
             });
         }
         
@@ -1675,16 +1665,16 @@
                             <span class="read-more">Read more →</span>
                         </div>
                     `;
-                    container.innerHTML += DOMPurify.sanitize(archiveHtml);
+                    container.innerHTML += archiveHtml;
                 });
             } else {
-                container.innerHTML = DOMPurify.sanitize(`
+                container.innerHTML = `
                     <div class="empty-archives">
                         <div class="empty-archives-icon">📁</div>
                         <h3>Nothing in Archives</h3>
                         <p>There are no archived articles yet.</p>
                     </div>
-                `);
+                `;
             }
         }
         
@@ -1712,11 +1702,11 @@
                 const article = archiveContent.archivedArticleContent[archiveId];
                 
                 document.getElementById('articleTitle').textContent = article.title;
-                document.getElementById('articleContent').innerHTML = DOMPurify.sanitize(article.content);
+                document.getElementById('articleContent').innerHTML = article.content;
                 
                 const authorEl = document.getElementById('articleAuthor');
                 if (article.author) {
-                    authorEl.innerHTML = DOMPurify.sanitize('By <strong>' + article.author + '</strong> • ' + article.date);
+                    authorEl.innerHTML = 'By <strong>' + article.author + '</strong> • ' + article.date;
                     authorEl.style.display = 'block';
                 } else {
                     authorEl.style.display = 'none';
@@ -1735,11 +1725,11 @@
             if (!article) return;
             
             document.getElementById('articleTitle').textContent = article.title;
-            document.getElementById('articleContent').innerHTML = DOMPurify.sanitize(article.content);
+            document.getElementById('articleContent').innerHTML = article.content;
             
             const authorEl = document.getElementById('articleAuthor');
             if (article.author) {
-                authorEl.innerHTML = DOMPurify.sanitize('By <strong>' + article.author + '</strong> • ' + article.date);
+                authorEl.innerHTML = 'By <strong>' + article.author + '</strong> • ' + article.date;
                 authorEl.style.display = 'block';
             } else {
                 authorEl.style.display = 'none';
@@ -1797,12 +1787,12 @@
             const modal = document.createElement('div');
             modal.className = 'modal-overlay';
             modal.style.display = 'flex';
-            modal.innerHTML = DOMPurify.sanitize(`
+            modal.innerHTML = `
                 <div class="modal-content" onclick="event.stopPropagation()">
                     <div class="modal-close" onclick="closeModal(this)">&times;</div>
                     <div>${content}</div>
                 </div>
-            `);
+            `;
             document.body.appendChild(modal);
             document.body.style.overflow = 'hidden';
         }
