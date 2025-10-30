@@ -43,14 +43,14 @@ var websiteContent = {
             "title": "Malicious NPM Packages Target Multiple Operating Systems with Infostealer",
             "content": "A recent discovery has unveiled ten malicious npm packages that impersonate legitimate software projects to infiltrate Windows, Linux, and macOS systems with an information-stealing component. These packages, found in the npm registry, are engineered to collect sensitive data, posing a significant threat to developers and organizations relying on npm for software dependencies. The capability of these packages to operate across multiple operating systems highlights the sophistication of modern cyber threats. Cybersecurity professionals are advised to scrutinize dependencies closely, verify package authenticity, and employ automated tools to detect and mitigate potential threats. This incident underscores the critical need for enhanced security practices in software development and the importance of maintaining vigilance against supply chain attacks.",
             "source": "BleepingComputer",
-            "sourceUrl": "[https://www.bleepingcomputer.com/news/security/malicious-npm-packages-fetch-infostealer-for-windows-linux-macos/](https://www.bleepingcomputer.com/news/security/malicious-npm-packages-fetch-infostealer-for-windows-linux-macos/)"
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/malicious-npm-packages-fetch-infostealer-for-windows-linux-macos/"
         },
         {
             "date": "Oct 29 2025",
             "title": "Vulnerability in WordPress Plugin Risks Data Exposure",
             "content": "The Anti-Malware Security and Brute-Force Firewall plugin, a popular security solution for WordPress with over 100,000 installations, has been found to contain a vulnerability that allows site subscribers to access any file on the server. This flaw could lead to unauthorized exposure of private data, posing a severe risk to website owners and users. The vulnerability emphasizes the importance of regular security audits and updates for plugins, which can be a weak link in website security. Site administrators are urged to apply patches promptly and consider additional security measures, such as restricting user permissions and using file integrity monitoring solutions, to protect sensitive information from unauthorized access.",
             "source": "BleepingComputer",
-            "sourceUrl": "[https://www.bleepingcomputer.com/news/security/wordpress-security-plugin-exposes-private-data-to-site-subscribers/](https://www.bleepingcomputer.com/news/security/wordpress-security-plugin-exposes-private-data-to-site-subscribers/)"
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/wordpress-security-plugin-exposes-private-data-to-site-subscribers/"
         }
     ],
     "aiShorts": [
