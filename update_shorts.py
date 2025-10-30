@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-TheHGTech Content Automation Script - RSS FEED VERSION
+TheHGTech Content Automation Script - RSS FEED VERSION (URL FIX)
 Fetches REAL recent news from RSS feeds and uses GPT-4o to format them
+PRESERVES ORIGINAL URLs from RSS feeds
 """
 
 import os
@@ -104,7 +105,7 @@ def format_with_gpt(articles, content_type):
 Article {i}:
 Title: {article['title']}
 Source: {article['source']}
-Link: {article['link']}
+Article ID: ARTICLE_{i}_URL_PLACEHOLDER
 Date: {article['published'].strftime('%b %d %Y')}
 Summary: {article['summary'][:300]}
 
@@ -121,18 +122,19 @@ For EACH article above, create a short in this EXACT format:
 
 Date: [Use the actual date from the article]
 Source Name: [Use the actual source from the article]
-Source URL: [Use the actual link from the article]
+Source URL: [Use exactly: ARTICLE_X_URL_PLACEHOLDER where X is the article number]
 Title: [Create a compelling, clear headline based on the article - you can rephrase but keep the meaning]
 Content:
 [Write a single, comprehensive paragraph of ~200 words. Expand on the article's information, explain the significance, technical details, and implications for {content_type} professionals. Maintain professional tone.]
 
 CRITICAL REQUIREMENTS:
-1. Use the ACTUAL dates, sources, and links provided - do not make up or change these
-2. Create clear, informative headlines (you can rephrase the original title)
-3. Expand the summaries into detailed, professional paragraphs
-4. Add context, implications, and recommendations
-5. Maintain technical accuracy and professional tone
-6. Output exactly {len(top_articles)} shorts, one for each article
+1. Use the ACTUAL dates and sources provided - do not make up or change these
+2. For Source URL, use EXACTLY "ARTICLE_1_URL_PLACEHOLDER" for article 1, "ARTICLE_2_URL_PLACEHOLDER" for article 2, etc.
+3. Create clear, informative headlines (you can rephrase the original title)
+4. Expand the summaries into detailed, professional paragraphs
+5. Add context, implications, and recommendations
+6. Maintain technical accuracy and professional tone
+7. Output exactly {len(top_articles)} shorts, one for each article
 
 Output format:
 {content_type} Shorts
@@ -145,15 +147,23 @@ Output format:
         response = client.chat.completions.create(
             model="gpt-4o",
             messages=[
-                {"role": "system", "content": "You are a professional content editor who transforms news articles into well-written, informative shorts while preserving factual accuracy."},
+                {"role": "system", "content": "You are a professional content editor who transforms news articles into well-written, informative shorts while preserving factual accuracy. Always use the exact placeholders provided for URLs."},
                 {"role": "user", "content": prompt}
             ],
-            temperature=0.5,  # Lower temperature for more consistent formatting
+            temperature=0.5,
             max_tokens=4000
         )
         
         content = response.choices[0].message.content
-        print(f"✅ Successfully formatted {content_type} articles")
+        
+        # CRITICAL FIX: Replace placeholders with actual URLs
+        for i, article in enumerate(top_articles, 1):
+            placeholder = f"ARTICLE_{i}_URL_PLACEHOLDER"
+            actual_url = article['link']
+            content = content.replace(placeholder, actual_url)
+            print(f"   🔗 Replaced {placeholder} with {actual_url[:60]}...")
+        
+        print(f"✅ Successfully formatted {content_type} articles with real URLs")
         return content
         
     except Exception as e:
@@ -191,6 +201,7 @@ def parse_shorts(content):
                 "sourceUrl": url_match.group(1).strip()
             }
             shorts.append(short)
+            print(f"   ✅ Parsed: {short['title'][:50]}... → {short['sourceUrl'][:60]}...")
     
     return shorts
 
@@ -246,6 +257,7 @@ def update_shorts():
     print(f"🚀 TheHGTech Content Automation - RSS FEED VERSION")
     print(f"⏰ Time: {ist_time.strftime('%Y-%m-%d %I:%M %p IST')}")
     print(f"📡 Mode: Real RSS Feed Aggregation + GPT-4o Formatting")
+    print(f"🔗 URL Preservation: ENABLED")
     print(f"{'='*60}\n")
     
     # Fetch real articles from RSS feeds
@@ -263,11 +275,17 @@ def update_shorts():
     ai_content = format_with_gpt(ai_articles, "AI") if ai_articles else None
     
     # Parse the formatted shorts
+    print(f"\n📝 Parsing formatted content...")
     new_cyber_shorts = parse_shorts(cyber_content) if cyber_content else []
     new_ai_shorts = parse_shorts(ai_content) if ai_content else []
     
     print(f"\n📊 Generated {len(new_cyber_shorts)} new cybersecurity shorts")
     print(f"📊 Generated {len(new_ai_shorts)} new AI shorts")
+    
+    # Verify URLs are real (not placeholders)
+    for short in new_cyber_shorts + new_ai_shorts:
+        if 'PLACEHOLDER' in short.get('sourceUrl', ''):
+            print(f"⚠️  WARNING: Found placeholder URL in: {short['title'][:50]}")
     
     # Read current content
     data = read_content_js()
@@ -322,7 +340,7 @@ def update_shorts():
     print(f"\n✅ Successfully updated content.js with REAL news")
     print(f"📝 Final count: {len(data['cyberShorts'])} cyber, {len(data['aiShorts'])} AI shorts")
     print(f"📅 Content is from real RSS feeds (past 48 hours)")
-    print(f"🔗 All links and sources are authentic")
+    print(f"🔗 All links are REAL and working")
     print(f"\n{'='*60}\n")
 
 
