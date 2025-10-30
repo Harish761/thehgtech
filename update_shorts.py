@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-TheHGTech Content Automation Script
+TheHGTech Content Automation Script - FIXED VERSION
 Generates and updates cybersecurity and AI shorts using OpenAI API
+WITH SAFEGUARDS TO PREVENT CONTENT LOSS
 """
 
 import os
@@ -106,11 +107,14 @@ def generate_content(prompt, content_type):
         
     except Exception as e:
         print(f"❌ Error generating {content_type} content: {e}")
-        sys.exit(1)
+        return None  # Return None instead of exiting
 
 
 def parse_shorts(content):
     """Parse the generated content into structured shorts"""
+    if not content:
+        return []
+    
     shorts = []
     
     # Split by "Date:" to get individual shorts
@@ -172,26 +176,33 @@ def update_shorts():
     print(f"\n{'='*60}")
     print(f"🚀 TheHGTech Content Automation")
     print(f"⏰ Time: {ist_time.strftime('%Y-%m-%d %I:%M %p IST')}")
-    print(f"🔄 Mode: 24-Hour Rolling Window")
+    print(f"🔄 Mode: 24-Hour Rolling Window with Safeguards")
     print(f"{'='*60}\n")
+    
+    # Read current content FIRST
+    data = read_content_js()
+    existing_cyber = data.get('cyberShorts', [])
+    existing_ai = data.get('aiShorts', [])
+    
+    print(f"📚 Existing: {len(existing_cyber)} cyber, {len(existing_ai)} AI shorts")
     
     # Generate new content
     cyber_content = generate_content(CYBER_PROMPT, "Cybersecurity")
     ai_content = generate_content(AI_PROMPT, "AI")
     
-    # Parse the shorts
+    # Parse the shorts (will return empty list if generation failed)
     new_cyber_shorts = parse_shorts(cyber_content)
     new_ai_shorts = parse_shorts(ai_content)
     
     print(f"\n📊 Generated {len(new_cyber_shorts)} new cybersecurity shorts")
     print(f"📊 Generated {len(new_ai_shorts)} new AI shorts")
     
-    # Read current content
-    data = read_content_js()
-    existing_cyber = data.get('cyberShorts', [])
-    existing_ai = data.get('aiShorts', [])
-    
-    print(f"📚 Existing: {len(existing_cyber)} cyber, {len(existing_ai)} AI shorts")
+    # ⚠️ SAFEGUARD: If no new content was generated, don't delete old content!
+    if len(new_cyber_shorts) == 0 and len(new_ai_shorts) == 0:
+        print("\n⚠️  WARNING: No new content generated!")
+        print("⚠️  Keeping existing content to prevent data loss")
+        print("⚠️  Check your OpenAI API key and try again later")
+        sys.exit(0)  # Exit without changes
     
     # Filter out content older than 24 hours
     filtered_cyber = [s for s in existing_cyber if not is_older_than_24_hours(s.get('date', ''))]
@@ -205,6 +216,16 @@ def update_shorts():
     else:
         print(f"✅ No content older than 24 hours to remove")
     
+    # ⚠️ SAFEGUARD: Keep at least some old content if filtering removes everything
+    MIN_CONTENT = 3
+    if len(filtered_cyber) < MIN_CONTENT and len(existing_cyber) > 0:
+        print(f"⚠️  Keeping {MIN_CONTENT} most recent cyber shorts as backup")
+        filtered_cyber = existing_cyber[:MIN_CONTENT]
+    
+    if len(filtered_ai) < MIN_CONTENT and len(existing_ai) > 0:
+        print(f"⚠️  Keeping {MIN_CONTENT} most recent AI shorts as backup")
+        filtered_ai = existing_ai[:MIN_CONTENT]
+    
     # Combine new and remaining old shorts (new ones first)
     data['cyberShorts'] = new_cyber_shorts + filtered_cyber
     data['aiShorts'] = new_ai_shorts + filtered_ai
@@ -213,12 +234,18 @@ def update_shorts():
     data['cyberShorts'] = data['cyberShorts'][:15]
     data['aiShorts'] = data['aiShorts'][:15]
     
+    # ⚠️ FINAL SAFEGUARD: Don't write if we'd end up with no content
+    if len(data['cyberShorts']) == 0 or len(data['aiShorts']) == 0:
+        print("\n⚠️  ERROR: Would result in empty content sections!")
+        print("⚠️  Aborting update to prevent data loss")
+        sys.exit(1)
+    
     # Write back to file
     write_content_js(data)
     
     print(f"\n✅ Successfully updated content.js")
     print(f"📝 Final count: {len(data['cyberShorts'])} cyber, {len(data['aiShorts'])} AI shorts")
-    print(f"📅 All content is from the last 24 hours")
+    print(f"📅 Content mix: new + recent (24hr window)")
     print(f"\n{'='*60}\n")
 
 
