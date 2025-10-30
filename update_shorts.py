@@ -3,6 +3,13 @@
 TheHGTech Content Automation Script - RSS FEED VERSION (DUPLICATE PREVENTION)
 Fetches REAL recent news from RSS feeds and uses GPT-4o to format them
 PRESERVES ORIGINAL URLs + PREVENTS DUPLICATES
+
+SECURITY FEATURES:
+- Content Sanitization: All RSS content is sanitized to prevent XSS attacks
+- HTML Escaping: Special characters are escaped before writing to JSON
+- Script Removal: JavaScript and dangerous patterns are removed
+- URL Validation: Only http/https URLs are allowed
+- Multi-layer Defense: Sanitization applied at multiple points in the pipeline
 """
 
 import os
@@ -13,10 +20,64 @@ from datetime import datetime, timedelta
 import pytz
 from openai import OpenAI
 import feedparser
-from html import unescape
+from html import unescape, escape
 
 # Initialize OpenAI client
 client = OpenAI(api_key=os.environ.get('OPENAI_API_KEY'))
+
+
+def sanitize_content(text):
+    """
+    Sanitize content for safe HTML rendering
+    Prevents XSS attacks by removing/escaping dangerous content
+    """
+    if not text:
+        return ""
+    
+    # 1. Unescape HTML entities first
+    text = unescape(text)
+    
+    # 2. Remove ALL HTML tags (including script, style, etc.)
+    text = re.sub(r'<[^>]*>', '', text)
+    
+    # 3. Escape special HTML characters
+    text = escape(text)
+    
+    # 4. Remove script-like patterns (extra safety layer)
+    text = re.sub(r'javascript:', '', text, flags=re.IGNORECASE)
+    text = re.sub(r'on\w+\s*=', '', text, flags=re.IGNORECASE)
+    
+    # 5. Remove any data: or vbscript: URIs
+    text = re.sub(r'data:', '', text, flags=re.IGNORECASE)
+    text = re.sub(r'vbscript:', '', text, flags=re.IGNORECASE)
+    
+    # 6. Strip excessive whitespace
+    text = ' '.join(text.split())
+    
+    return text.strip()
+
+
+def validate_url(url):
+    """
+    Validate and sanitize URLs
+    Only allows http:// and https:// URLs
+    """
+    if not url:
+        return ""
+    
+    url = url.strip()
+    
+    # Only allow http and https protocols
+    if not (url.startswith('http://') or url.startswith('https://')):
+        return ""
+    
+    # Remove any javascript: or other dangerous patterns
+    dangerous_patterns = ['javascript:', 'data:', 'vbscript:', 'file:']
+    for pattern in dangerous_patterns:
+        if pattern in url.lower():
+            return ""
+    
+    return url
 
 # RSS Feed Sources for Cybersecurity News
 CYBER_FEEDS = [
@@ -64,17 +125,26 @@ def fetch_recent_articles(feeds, hours_back=48):
                 
                 # Only include recent articles
                 if pub_date and pub_date > cutoff_time:
-                    # Clean up HTML from summary
-                    summary = unescape(entry.get('summary', entry.get('description', '')))
-                    summary = re.sub(r'<[^>]+>', '', summary)  # Remove HTML tags
-                    summary = summary.strip()[:500]  # Limit length
+                    # Clean up and SANITIZE content from RSS feed
+                    summary = entry.get('summary', entry.get('description', ''))
+                    summary = sanitize_content(summary)
+                    summary = summary[:500]  # Limit length after sanitization
+                    
+                    # Sanitize title and source as well
+                    title = sanitize_content(entry.get('title', 'No title'))
+                    source = sanitize_content(feed.feed.get('title', 'Unknown Source'))
+                    link = validate_url(entry.get('link', ''))
+                    
+                    # Skip articles with invalid URLs
+                    if not link:
+                        continue
                     
                     articles.append({
-                        'title': entry.get('title', 'No title'),
-                        'link': entry.get('link', ''),
+                        'title': title,
+                        'link': link,
                         'summary': summary,
                         'published': pub_date,
-                        'source': feed.feed.get('title', 'Unknown Source')
+                        'source': source
                     })
             
             print(f"      ✅ Found {len([a for a in articles if a['source'] == feed.feed.get('title', '')])} recent articles")
@@ -212,12 +282,19 @@ def parse_shorts(content):
         content_match = re.search(r'Content:\s*(.+)', item, re.DOTALL)
         
         if all([date_match, source_match, url_match, title_match, content_match]):
+            source_url = validate_url(url_match.group(1).strip())
+            
+            # Skip shorts with invalid URLs
+            if not source_url:
+                print(f"   ⚠️ Skipping short with invalid URL: {title_match.group(1)[:50]}")
+                continue
+            
             short = {
-                "date": date_match.group(1).strip(),
-                "title": title_match.group(1).strip(),
-                "content": content_match.group(1).strip(),
-                "source": source_match.group(1).strip(),
-                "sourceUrl": url_match.group(1).strip()
+                "date": sanitize_content(date_match.group(1).strip()),
+                "title": sanitize_content(title_match.group(1).strip()),
+                "content": sanitize_content(content_match.group(1).strip()),
+                "source": sanitize_content(source_match.group(1).strip()),
+                "sourceUrl": source_url
             }
             shorts.append(short)
     
