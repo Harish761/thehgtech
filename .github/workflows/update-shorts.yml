@@ -1,0 +1,61 @@
+name: Update TheHGTech Shorts
+
+on:
+  schedule:
+    # Morning run: 6 AM IST = 0:30 UTC (IST is UTC+5:30)
+    - cron: '30 0 * * *'
+    # Evening run: 6 PM IST = 12:30 UTC
+    - cron: '30 12 * * *'
+  
+  # Allow manual trigger from GitHub Actions tab
+  workflow_dispatch:
+
+jobs:
+  update-content:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install openai pytz
+      
+      - name: Run content update script
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python update_shorts.py
+      
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          # Check if there are changes
+          if git diff --quiet content.js; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          
+          # Commit with timestamp
+          git add content.js
+          git commit -m "🤖 Auto-update: TheHGTech shorts (24hr window) - $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
+      
+      - name: Summary
+        if: always()
+        run: |
+          echo "### 🎉 TheHGTech Content Update Complete" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Mode**: 24-hour rolling window" >> $GITHUB_STEP_SUMMARY
+          echo "- **Time**: $(date -u +'%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
+          echo "- **Status**: ✅ Success" >> $GITHUB_STEP_SUMMARY
