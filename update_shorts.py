@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-TheHGTech Content Automation Script - RSS FEED VERSION (URL FIX)
+TheHGTech Content Automation Script - RSS FEED VERSION (DUPLICATE PREVENTION)
 Fetches REAL recent news from RSS feeds and uses GPT-4o to format them
-PRESERVES ORIGINAL URLs from RSS feeds
+PRESERVES ORIGINAL URLs + PREVENTS DUPLICATES
 """
 
 import os
@@ -88,6 +88,25 @@ def fetch_recent_articles(feeds, hours_back=48):
     print(f"\n📊 Total articles fetched: {len(articles)}")
     
     return articles
+
+
+def filter_existing_urls(articles, existing_shorts):
+    """Remove articles that already exist in content (by URL)"""
+    existing_urls = {short.get('sourceUrl', '') for short in existing_shorts}
+    
+    filtered = []
+    duplicates = 0
+    
+    for article in articles:
+        if article['link'] not in existing_urls:
+            filtered.append(article)
+        else:
+            duplicates += 1
+    
+    if duplicates > 0:
+        print(f"   🔄 Skipped {duplicates} duplicate articles (already in content)")
+    
+    return filtered
 
 
 def format_with_gpt(articles, content_type):
@@ -201,7 +220,6 @@ def parse_shorts(content):
                 "sourceUrl": url_match.group(1).strip()
             }
             shorts.append(short)
-            print(f"   ✅ Parsed: {short['title'][:50]}... → {short['sourceUrl'][:60]}...")
     
     return shorts
 
@@ -258,7 +276,15 @@ def update_shorts():
     print(f"⏰ Time: {ist_time.strftime('%Y-%m-%d %I:%M %p IST')}")
     print(f"📡 Mode: Real RSS Feed Aggregation + GPT-4o Formatting")
     print(f"🔗 URL Preservation: ENABLED")
+    print(f"🔄 Duplicate Detection: ENABLED")
     print(f"{'='*60}\n")
+    
+    # Read current content FIRST (to check for duplicates)
+    data = read_content_js()
+    existing_cyber = data.get('cyberShorts', [])
+    existing_ai = data.get('aiShorts', [])
+    
+    print(f"📚 Current content: {len(existing_cyber)} cyber, {len(existing_ai)} AI shorts")
     
     # Fetch real articles from RSS feeds
     cyber_articles = fetch_recent_articles(CYBER_FEEDS, hours_back=48)
@@ -270,37 +296,39 @@ def update_shorts():
         print("⚠️  Keeping existing content to prevent data loss")
         sys.exit(0)
     
-    # Format articles using GPT-4o
-    cyber_content = format_with_gpt(cyber_articles, "Cybersecurity") if cyber_articles else None
-    ai_content = format_with_gpt(ai_articles, "AI") if ai_articles else None
+    # CRITICAL: Filter out articles that already exist (by URL)
+    print(f"\n🔍 Checking for duplicates...")
+    cyber_articles_new = filter_existing_urls(cyber_articles, existing_cyber)
+    ai_articles_new = filter_existing_urls(ai_articles, existing_ai)
+    
+    print(f"✨ New articles to add: {len(cyber_articles_new)} cyber, {len(ai_articles_new)} AI")
+    
+    # If no new articles, keep existing content
+    if not cyber_articles_new and not ai_articles_new:
+        print("\n✅ No new articles found (all are duplicates)")
+        print("✅ Content is already up to date!")
+        print("✅ No changes needed")
+        sys.exit(0)
+    
+    # Format NEW articles using GPT-4o
+    cyber_content = format_with_gpt(cyber_articles_new, "Cybersecurity") if cyber_articles_new else None
+    ai_content = format_with_gpt(ai_articles_new, "AI") if ai_articles_new else None
     
     # Parse the formatted shorts
     print(f"\n📝 Parsing formatted content...")
     new_cyber_shorts = parse_shorts(cyber_content) if cyber_content else []
     new_ai_shorts = parse_shorts(ai_content) if ai_content else []
     
-    print(f"\n📊 Generated {len(new_cyber_shorts)} new cybersecurity shorts")
-    print(f"📊 Generated {len(new_ai_shorts)} new AI shorts")
+    print(f"\n📊 Parsed {len(new_cyber_shorts)} new cybersecurity shorts")
+    print(f"📊 Parsed {len(new_ai_shorts)} new AI shorts")
     
     # Verify URLs are real (not placeholders)
     for short in new_cyber_shorts + new_ai_shorts:
         if 'PLACEHOLDER' in short.get('sourceUrl', ''):
             print(f"⚠️  WARNING: Found placeholder URL in: {short['title'][:50]}")
     
-    # Read current content
-    data = read_content_js()
-    existing_cyber = data.get('cyberShorts', [])
-    existing_ai = data.get('aiShorts', [])
-    
-    print(f"📚 Existing: {len(existing_cyber)} cyber, {len(existing_ai)} AI shorts")
-    
-    # ⚠️ SAFEGUARD: If no new content was generated, don't delete old content!
-    if len(new_cyber_shorts) == 0 and len(new_ai_shorts) == 0:
-        print("\n⚠️  WARNING: No new content generated!")
-        print("⚠️  Keeping existing content to prevent data loss")
-        sys.exit(0)
-    
-    # Filter out content older than 24 hours
+    # Filter out OLD content (older than 24 hours)
+    print(f"\n🗑️  Filtering old content (24+ hours)...")
     filtered_cyber = [s for s in existing_cyber if not is_older_than_24_hours(s.get('date', ''))]
     filtered_ai = [s for s in existing_ai if not is_older_than_24_hours(s.get('date', ''))]
     
@@ -308,19 +336,11 @@ def update_shorts():
     removed_ai = len(existing_ai) - len(filtered_ai)
     
     if removed_cyber > 0 or removed_ai > 0:
-        print(f"🗑️  Removed {removed_cyber} cyber and {removed_ai} AI shorts (24+ hours old)")
+        print(f"   Removed {removed_cyber} cyber and {removed_ai} AI shorts")
+    else:
+        print(f"   No old content to remove")
     
-    # ⚠️ SAFEGUARD: Keep at least some old content if filtering removes everything
-    MIN_CONTENT = 2
-    if len(filtered_cyber) < MIN_CONTENT and len(existing_cyber) > 0:
-        print(f"⚠️  Keeping {MIN_CONTENT} most recent cyber shorts as backup")
-        filtered_cyber = existing_cyber[:MIN_CONTENT]
-    
-    if len(filtered_ai) < MIN_CONTENT and len(existing_ai) > 0:
-        print(f"⚠️  Keeping {MIN_CONTENT} most recent AI shorts as backup")
-        filtered_ai = existing_ai[:MIN_CONTENT]
-    
-    # Combine new and remaining old shorts (new ones first)
+    # Combine NEW shorts with REMAINING old shorts (new ones first)
     data['cyberShorts'] = new_cyber_shorts + filtered_cyber
     data['aiShorts'] = new_ai_shorts + filtered_ai
     
@@ -328,7 +348,16 @@ def update_shorts():
     data['cyberShorts'] = data['cyberShorts'][:15]
     data['aiShorts'] = data['aiShorts'][:15]
     
-    # ⚠️ FINAL SAFEGUARD: Don't write if we'd end up with no content
+    # ⚠️ FINAL SAFEGUARD: Ensure we have content
+    MIN_CONTENT = 2
+    if len(data['cyberShorts']) < MIN_CONTENT and len(existing_cyber) > 0:
+        print(f"⚠️  Keeping {MIN_CONTENT} most recent cyber shorts as backup")
+        data['cyberShorts'] = existing_cyber[:MIN_CONTENT]
+    
+    if len(data['aiShorts']) < MIN_CONTENT and len(existing_ai) > 0:
+        print(f"⚠️  Keeping {MIN_CONTENT} most recent AI shorts as backup")
+        data['aiShorts'] = existing_ai[:MIN_CONTENT]
+    
     if len(data['cyberShorts']) == 0 or len(data['aiShorts']) == 0:
         print("\n⚠️  ERROR: Would result in empty content sections!")
         print("⚠️  Aborting update to prevent data loss")
@@ -339,8 +368,11 @@ def update_shorts():
     
     print(f"\n✅ Successfully updated content.js with REAL news")
     print(f"📝 Final count: {len(data['cyberShorts'])} cyber, {len(data['aiShorts'])} AI shorts")
-    print(f"📅 Content is from real RSS feeds (past 48 hours)")
+    print(f"   New: {len(new_cyber_shorts)} cyber, {len(new_ai_shorts)} AI")
+    print(f"   Kept: {len(filtered_cyber)} cyber, {len(filtered_ai)} AI")
+    print(f"📅 All content is from past 24-48 hours")
     print(f"🔗 All links are REAL and working")
+    print(f"🎯 No duplicates!")
     print(f"\n{'='*60}\n")
 
 
