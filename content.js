@@ -4,6 +4,41 @@
 var websiteContent = {
     "cyberShorts": [
         {
+            "date": "Oct 29 2025",
+            "title": "Malicious NPM Packages Target Multiple Operating Systems with Infostealer",
+            "content": "A recent discovery has unveiled ten malicious npm packages that impersonate legitimate software projects to infiltrate Windows, Linux, and macOS systems with an information-stealing component. These packages, found in the npm registry, are engineered to collect sensitive data, posing a significant threat to developers and organizations relying on npm for software dependencies. The capability of these packages to operate across multiple operating systems highlights the sophistication of modern cyber threats. Cybersecurity professionals are advised to scrutinize dependencies closely, verify package authenticity, and employ automated tools to detect and mitigate potential threats. This incident underscores the critical need for enhanced security practices in software development and the importance of maintaining vigilance against supply chain attacks.",
+            "source": "BleepingComputer",
+            "sourceUrl": "[https://www.bleepingcomputer.com/news/security/malicious-npm-packages-fetch-infostealer-for-windows-linux-macos/](https://www.bleepingcomputer.com/news/security/malicious-npm-packages-fetch-infostealer-for-windows-linux-macos/)"
+        },
+        {
+            "date": "Oct 29 2025",
+            "title": "Vulnerability in WordPress Plugin Risks Data Exposure",
+            "content": "The Anti-Malware Security and Brute-Force Firewall plugin, a popular security solution for WordPress with over 100,000 installations, has been found to contain a vulnerability that allows site subscribers to access any file on the server. This flaw could lead to unauthorized exposure of private data, posing a severe risk to website owners and users. The vulnerability emphasizes the importance of regular security audits and updates for plugins, which can be a weak link in website security. Site administrators are urged to apply patches promptly and consider additional security measures, such as restricting user permissions and using file integrity monitoring solutions, to protect sensitive information from unauthorized access.",
+            "source": "BleepingComputer",
+            "sourceUrl": "[https://www.bleepingcomputer.com/news/security/wordpress-security-plugin-exposes-private-data-to-site-subscribers/](https://www.bleepingcomputer.com/news/security/wordpress-security-plugin-exposes-private-data-to-site-subscribers/)"
+        },
+        {
+            "date": "Oct 29 2025",
+            "title": "'PhantomRaven' Campaign Uses Stealthy NPM Packages to Evade Detection",
+            "content": "The \"PhantomRaven\" campaign has been identified as a significant threat, with threat actors publishing 126 malicious npm packages that have collectively amassed 86,000 downloads. These packages utilize 'invisible' dependencies to avoid detection, making them particularly insidious. The campaign highlights the evolving tactics of cybercriminals who exploit the open-source ecosystem to distribute malicious code. For cybersecurity professionals, this serves as a reminder of the importance of comprehensive security measures, including dependency scanning and verification, to safeguard against such threats. Organizations should prioritize implementing robust monitoring systems to detect unusual activity and ensure the integrity of their software supply chains.",
+            "source": "darkreading",
+            "sourceUrl": "[https://www.darkreading.com/application-security/malicious-npm-packages-invisible-dependencies](https://www.darkreading.com/application-security/malicious-npm-packages-invisible-dependencies)"
+        },
+        {
+            "date": "Oct 29 2025",
+            "title": "AI Search Engines Vulnerable to Deceptive Content",
+            "content": "Recent research has revealed that AI-based search tools such as Perplexity, Atlas, and ChatGPT are susceptible to manipulation through fake content. This vulnerability poses a significant challenge as these tools become increasingly integrated into various applications and decision-making processes. The ease with which these AI systems can be deceived underscores the necessity for developing more robust algorithms capable of distinguishing between authentic and fraudulent information. Cybersecurity experts should focus on enhancing AI training datasets and implementing advanced verification protocols to mitigate the risks associated with misinformation. As AI continues to evolve, it is crucial to address these vulnerabilities to maintain trust and reliability in AI-driven systems.",
+            "source": "darkreading",
+            "sourceUrl": "[https://www.darkreading.com/cyber-risk/ai-search-tools-easily-fooled-by-fake-content](https://www.darkreading.com/cyber-risk/ai-search-tools-easily-fooled-by-fake-content)"
+        },
+        {
+            "date": "Oct 29 2025",
+            "title": "Data Breach at Dentsu Subsidiary Compromises Employee Information",
+            "content": "A data breach at a subsidiary of Dentsu, a leading Japanese marketing and PR firm, has resulted in the theft of sensitive employee data by unidentified threat actors. The breach highlights the persistent threat of cyberattacks faced by large organizations and the critical need for robust data protection strategies. Companies are urged to enhance their cybersecurity frameworks, focusing on employee awareness, incident response planning, and the deployment of advanced security technologies. This incident serves as a reminder of the importance of safeguarding personal data and the potential consequences of security lapses. Organizations must remain vigilant and proactive in their efforts to protect against data breaches and maintain the trust of their stakeholders.",
+            "source": "darkreading",
+            "sourceUrl": "[https://www.darkreading.com/cyberattacks-data-breaches/dentsu-subsidiary-breached-employee-data-stolen](https://www.darkreading.com/cyberattacks-data-breaches/dentsu-subsidiary-breached-employee-data-stolen)"
+        },
+        {
             "date": "Oct 28 2025",
             "title": "APT Group “MuddyWater” Targets 100+ Government Entities with Phoenix Backdoor",
             "content": "The advanced persistent threat group known as MuddyWater has launched a large-scale phishing campaign targeting more than 100 government entities across multiple regions. The campaign deploys a previously undocumented backdoor, dubbed “Phoenix”, which establishes persistent access and exfiltration capability after initial compromise. The attack chain begins with spear-phishing emails crafted to government officials, followed by dropper installation, privilege escalation and lateral movement across networks. Once the dropper is active, Phoenix communicates with its command-and-control infrastructure and begins data collection tasks. For nations and government agencies this represents a serious escalation: multiple targets, advanced tooling and extended dwell times. Immediate actions: identify possible phishing attempts, segment networks to limit lateral spread, monitor for known Phoenix indicators (e.g., custom-named processes, anomalous outbound traffic), and assume potential compromise. The campaign illustrates that nation-state-style tooling is increasingly used in broad campaigns rather than narrow espionage only.",
@@ -16,23 +51,44 @@ var websiteContent = {
             "content": "New research from Barracuda Networks shows organisations that take longer than nine hours to respond to an email security breach are 79% more likely to suffer a follow-on ransomware incident. The Email Security Breach Report 2025 found 78% of surveyed organisations experienced an email breach in the past year; the average cost of recovery is quoted as US $217,068. Smaller companies (50-100 employees) incurred average costs of about US $1,946 per employee. The survey highlights that despite increased threat attention, many businesses lack rapid detection and response capabilities for email threats such as phishing, business email compromise, and malicious attachments. The key message for security teams: email threats are not just “phishing” matters but gateway vectors for ransomware. Strategies should emphasise: deploy rapid detection mechanisms, automate incident-response, run tabletop simulations, segment email infrastructure, and ensure tight logging for post-event audit. Organisations that delay response are significantly more exposed.",
             "source": "PR Newswire",
             "sourceUrl": "https://www.prnewswire.com/news-releases/organizations-that-delay-responding-to-email-breaches-are-79-more-likely-to-suffer-a-ransomware-hit-302596812.html?utm_source=chatgpt.com"
-        },
-        {
-            "date": "Oct 28 2025",
-            "title": "Millions of Airport Passengers’ Data Exposed via Supplier Breach",
-            "content": "A third-party supplier to Dublin Airport Authority and Cork Airport has disclosed a data breach that may have exposed boarding-pass details, names and frequent-flyer numbers of millions of passengers who travelled through August 2025. The supplier, Collins Aerospace, experienced unauthorized access to customer data which a cyber-criminal group publicly released online. While airport operations remain unaffected, the scale of the exposure is significant given the volume of travellers and personal identifiers involved. Passengers are advised to monitor for identity-theft or fraudulent activity. For organisations this underscores the persistent risk posed by vendor and third-party ecosystems: even if primary systems remain isolated, adjacent systems can become entry vectors. Mitigation steps include conducting vendor-risk assessments, verifying vendor breach-response readiness, monitoring vendor logs, and requiring tighter contracts around data-handling practices. In travel and mobility sectors where personal identifiers are abundant, the consequences of supply-chain data leakage are heightened.",
-            "source": "TechRadar",
-            "sourceUrl": "https://www.techradar.com/pro/security/millions-of-passengers-possibly-affected-by-cyber-breach-at-dublin-airport-supplier?utm_source=chatgpt.com"
-        },
-        {
-            "date": "Oct 28 2025",
-            "title": "Critical Windows Server Service Under Active Exploitation: CVE-2025-59287",
-            "content": "A newly disclosed vulnerability in Microsoft’s Windows Server Update Service (WSUS) — tracked as CVE-2025-59287 — is being actively exploited by a threat actor identified as UNC6512, according to Google Threat Intelligence Group. Researchers at Cybersecurity Dive say the campaign involves reconnaissance and data exfiltration following exploitation of the WSUS service in multiple victim environments. The attacks accelerated after a proof-of-concept emerged last week. Organisations running WSUS should treat this as a critical priority: patch immediately, review any WSUS-connected systems, detect unusual host communications, and conduct forensic review for signs of lateral movement. The incident emphasises that infrastructure services often considered “maintenance” vectors are increasingly targeted. With the actor already in multiple environments, defenders must assume compromise happened and operate accordingly: isolate affected hosts, strengthen monitoring, verify integrity of update mechanisms and audit WSUS logs. Supply-chain trust in patch­deployment services cannot substitute for realtime detection and mitigation.",
-            "source": "Cybersecurity Dive",
-            "sourceUrl": "https://www.cybersecuritydive.com/news/google-threat-researchers-probe-exploitation-critical-cve-wsus/803985/?utm_source=chatgpt.com"
         }
     ],
     "aiShorts": [
+        {
+            "date": "Oct 30 2025",
+            "title": "Cluely's Roy Lee Advocates Viral Marketing for Startups",
+            "content": "Roy Lee of Cluely is urging startup founders to rethink their marketing strategies by embracing the power of viral content. During a recent discussion, Lee emphasized the importance of creating shareable, emotionally charged content—often referred to as \"ragebait\"—to capture audience attention in an increasingly competitive market. By leveraging social media platforms and understanding audience psychology, startups can significantly enhance their visibility and engagement. This approach is not without its critics, who argue that it can lead to sensationalism over substance. However, Lee believes that when executed thoughtfully, viral marketing can be a powerful tool for startups looking to disrupt their industries. For AI professionals, this strategy highlights the intersection of technology and human behavior, emphasizing the need for data-driven insights to craft compelling narratives that resonate with target audiences.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/10/29/cluelys-roy-lee-on-the-ragebait-strategy-for-startup-marketing/"
+        },
+        {
+            "date": "Oct 29 2025",
+            "title": "Solana's Yakovenko Embraces Agentic Coding in Development",
+            "content": "Anatoly Yakovenko, co-founder of Solana, expressed his growing enthusiasm for agentic coding during his speech at TechCrunch Disrupt. Agentic coding refers to the practice of allowing software agents to autonomously handle development tasks, thereby reducing human intervention in routine coding processes. Yakovenko's endorsement of this approach signals a shift in software development paradigms, where developers can focus on higher-level strategic tasks while agents handle the execution details. This transition is particularly relevant in the AI field, where efficiency and scalability are paramount. For AI professionals, embracing agentic coding could mean rethinking traditional development workflows and investing in training for designing and managing autonomous agents. This evolution promises to enhance productivity and innovation, allowing teams to tackle more complex challenges with greater agility.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/10/29/solana-co-founder-anatoly-yakovenko-is-a-big-fan-of-agentic-coding/"
+        },
+        {
+            "date": "Oct 29 2025",
+            "title": "Anysphere Unveils Composer LLM for Faster Coding with Cursor 2.0",
+            "content": "Anysphere's latest update to its vibe coding platform, Cursor 2.0, features the introduction of Composer, the company's first proprietary large language model (LLM) designed to revolutionize coding efficiency. Composer promises a fourfold increase in speed for executing coding tasks, making it a significant advancement for production-scale environments. This development underscores Anysphere's commitment to enhancing developer productivity by integrating AI-powered tools that streamline the coding process. For AI professionals, Composer represents a leap forward in leveraging LLMs for practical applications, offering a glimpse into the future of AI-driven software development. As the demand for rapid development cycles grows, tools like Composer will be instrumental in meeting industry needs, enabling developers to deliver high-quality software solutions with unprecedented speed and accuracy.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/ai/vibe-coding-platform-cursor-releases-first-in-house-llm-composer-promising"
+        },
+        {
+            "date": "Oct 29 2025",
+            "title": "Box CEO Aaron Levie on AI's Impact on Enterprise SaaS",
+            "content": "Aaron Levie, CEO of Box, shared insights into how artificial intelligence is reshaping the enterprise Software as a Service (SaaS) landscape. Levie envisions a future where SaaS platforms serve as the backbone of core business workflows, with AI agents augmenting these systems to enhance efficiency and decision-making. This integration of AI into SaaS solutions is expected to drive innovation, streamline operations, and provide businesses with a competitive edge. For AI professionals, this trend highlights the necessity of developing AI capabilities that can seamlessly integrate with existing SaaS platforms, ensuring they enhance rather than disrupt business processes. As AI continues to evolve, its role in enterprise software will likely expand, offering new opportunities for AI-driven insights and automation across industries.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/10/29/box-ceo-aaron-levie-on-how-ai-is-changing-the-enterprise-saas-landscape/"
+        },
+        {
+            "date": "Oct 29 2025",
+            "title": "Cursor 2.0 Introduces Multi-Agent AI and Composer Model",
+            "content": "Cursor's latest platform iteration, Cursor 2.0, marks a pivotal shift towards multi-agent AI coding with the introduction of the Composer model. Described as a \"frontier model,\" Composer is engineered to outperform other models of similar intelligence, boasting a fourfold increase in processing speed. This advancement positions Cursor at the forefront of AI software development, offering a robust solution for complex coding tasks. The multi-agent interface allows for a more dynamic and collaborative coding environment, where AI agents can autonomously manage different aspects of software development. For AI professionals, this development signifies a transformative step in AI-driven coding, emphasizing the need for skills in managing and optimizing multi-agent systems. As the industry moves towards more autonomous and efficient coding practices, tools like Cursor 2.0 will be crucial in shaping the future of software development.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/cursor-2-pivots-multi-agent-ai-coding-debuts-composer-model/"
+        },
         {
             "date": "Oct 28 2025",
             "title": "Nvidia’s GTC 2025 Keynote Unveils Free Models & SDKs for Startups",
@@ -44,20 +100,6 @@ var websiteContent = {
             "content": "Microsoft and OpenAI announced a new definitive agreement under which Microsoft will hold an investment valued at approximately US $135 billion (≈ 27 % on a converted basis) in OpenAI’s newly formed public-benefit corporation (PBC). The restructured partnership preserves Microsoft’s exclusive Azure API rights and IP support for OpenAI models while allowing both entities to independently pursue innovation and growth. The move signals maturation of the AI ecosystem: foundational model providers and cloud platforms are formalising long-term strategic alignments and structuring for scale. For organisations building on large-language models or agent systems the message is clear: platform risk, governance and operational control will matter more than tools alone. Teams must review vendor contracts, IP assignments, cloud-model access terms and governance frameworks as AI deployments become foundational to product strategy.",
             "source": "OpenAI Blog",
             "sourceUrl": "https://openai.com/index/next-chapter-of-microsoft-openai-partnership/?utm_source=chatgpt.com"
-        },
-        {
-            "date": "Oct 28 2025",
-            "title": "Eli Lilly & Nvidia Collaborate on Pharma’s Largest AI Supercomputer",
-            "content": "Pharmaceutical company Eli Lilly and Nvidia announced a partnership to build what they call the most powerful AI supercomputer owned and operated by a pharmaceutical company. The investment is aimed at advancing drug-discovery pipelines using generative AI, large-model training and simulation of molecular interactions. Nvidia’s health-care lead described the project as part of ensuring the U.S. remains at the forefront of the AI-and-biomedicine race. For biotech teams this underscores that AI compute is no longer the preserve of hyperscalers: industry verticals such as pharma will embed GPU/AI supercomputers into their core R&D workflows. Organisations should consider how AI infrastructure aligns with domain-specific workflows, how to secure model pipelines (data, compute, governance) and how to build talent around AI-augmented research beyond proof-of-concept.",
-            "source": "STAT",
-            "sourceUrl": "https://www.statnews.com/2025/10/28/eli-lilly-nvidia-pharma-ai-supercomputer/?utm_source=chatgpt.com"
-        },
-        {
-            "date": "Oct 28 2025",
-            "title": "Nvidia to Build Seven AI Supercomputers for US Energy Dept., $500 B in Bookings",
-            "content": "Nvidia announced that it will build seven new supercomputers for the U.S. Department of Energy (DOE) and reported approximately US $500 billion in bookings for its AI chip portfolio over the next five quarters. The supercomputers will support critical missions ranging from nuclear weapons development to alternative-energy research such as nuclear fusion. Nvidia CEO Jensen Huang also revealed a new product line that will better integrate AI chips with quantum-computing systems. The announcement signals that AI infrastructure investment is scaling dramatically and is now part of national-level strategy. For enterprise and academic AI teams this raises the bar: access to world-class compute will be critical to stay competitive. The implications extend to chip supply chains, export controls (especially concerning China) and geopolitical competition. Organisations should assess compute capacity, partner strategy, and data-pipeline readiness if they want to leverage this compute wave.",
-            "source": "Reuters",
-            "sourceUrl": "https://www.reuters.com/world/asia-pacific/nvidias-huang-speak-washington-investors-look-hints-china-2025-10-28/?utm_source=chatgpt.com"
         }
     ],
     "articles": {
