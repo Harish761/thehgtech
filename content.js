@@ -16,27 +16,6 @@ var websiteContent = {
             "content": "Ribbon Communications, a major US telecom company, has disclosed a breach believed to be orchestrated by nation-state actors, who reportedly infiltrated its network as early as December last year. While the extent of data compromise remains uncertain, the breach raises significant concerns about the security of telecom infrastructure, which is critical for national security and economic stability. This incident serves as a stark reminder for telecom companies to enhance their cybersecurity defenses, conduct thorough audits, and implement advanced threat detection mechanisms. As attackers increasingly target telecom networks, it is imperative for organizations to adopt a proactive security posture to safeguard sensitive data and maintain public trust.",
             "source": "darkreading",
             "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/ribbon-communications-breach-latest-telecom-attack"
-        },
-        {
-            "date": "Oct 31 2025",
-            "title": "University of Pennsylvania Faces Data Breach Threats in Offensive Emails",
-            "content": "The University of Pennsylvania is grappling with a cybersecurity incident after students and alumni received threatening emails from compromised university email accounts. The emails claim that a data breach has occurred, with threats to leak sensitive information. This incident highlights the critical need for educational institutions to secure their communication channels and protect personal data. Cybersecurity experts recommend implementing multi-factor authentication and regular security audits to prevent unauthorized access. The university must also focus on educating its community about recognizing phishing attempts and responding appropriately to potential security threats. The situation underscores the broader challenges faced by academic institutions in safeguarding their digital environments against increasingly sophisticated cyber threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/offensive-we-got-hacked-emails-sent-in-penn-security-incident/"
-        },
-        {
-            "date": "Oct 31 2025",
-            "title": "OpenAI Launches Aardvark: AI Tool for Automatic Code Flaw Detection",
-            "content": "OpenAI has unveiled Aardvark, an innovative &quot;agentic security researcher&quot; powered by its GPT-5 large language model. Aardvark is designed to autonomously identify and fix code vulnerabilities, mimicking the capabilities of a human security expert. This AI tool represents a significant advancement in automated cybersecurity solutions, promising to enhance the efficiency and accuracy of vulnerability management. By automating the process of scanning and patching code, Aardvark could significantly reduce the time and resources required to address security flaws, allowing cybersecurity professionals to focus on more complex tasks. However, the deployment of such AI tools also necessitates careful oversight to ensure they function as intended and do not introduce new risks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/10/openai-unveils-aardvark-gpt-5-agent.html"
-        },
-        {
-            "date": "Oct 31 2025",
-            "title": "Microsoft Edge Introduces Scareware Sensor for Enhanced Scam Detection",
-            "content": "Microsoft is enhancing its Edge browser with a new scareware sensor aimed at improving the detection of scam websites. This feature is designed to work in conjunction with Defender SmartScreen, enabling quicker identification and blocking of deceptive web pages. The introduction of this sensor is a proactive step towards protecting users from online scams, which are becoming increasingly sophisticated. For cybersecurity professionals, the development signifies the importance of integrating advanced threat detection technologies into everyday tools to provide users with a safer online experience. Organizations should consider similar enhancements to their security frameworks to protect against emerging threats and secure their digital ecosystems.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-edge-gets-scareware-sensor-for-faster-scam-detection/"
         }
     ],
     "aiShorts": [
@@ -53,27 +32,6 @@ var websiteContent = {
             "content": "Amazon Web Services (AWS) has outperformed Wall Street expectations, driven by an increasing demand for cloud infrastructure, particularly in the AI domain. As organizations across industries integrate AI technologies, the necessity for robust, scalable cloud solutions has surged. AWS, a leader in cloud services, benefits significantly from this trend, providing the backbone for AI applications that require vast computational resources and data storage. This growth highlights the critical role of cloud infrastructure in enabling AI advancements and the strategic importance of AWS&#x27;s offerings in supporting innovation. For AI professionals, this trend underscores the importance of leveraging cloud platforms to enhance scalability and efficiency in AI deployments. As AI continues to permeate various sectors, the reliance on cloud services like AWS is expected to deepen, reinforcing the symbiotic relationship between AI development and cloud infrastructure.",
             "source": "AI News &amp; Artificial Intelligence | TechCrunch",
             "sourceUrl": "https://techcrunch.com/2025/10/31/aws-exceeds-wall-streets-expectations-as-demand-for-cloud-infra-remains-high/"
-        },
-        {
-            "date": "Oct 31 2025",
-            "title": "LeapXpert Harnesses AI for Enhanced Business Messaging Control",
-            "content": "LeapXpert is at the forefront of transforming business communications by using AI to bring order and oversight to the complex world of messaging. As AI reshapes workplace communication, it simultaneously introduces challenges in managing and controlling the vast amounts of data exchanged daily through chat apps and collaboration tools. LeapXpert addresses these challenges by deploying AI solutions that ensure regulatory compliance and enhance data security in business messaging. The company&#x27;s technology provides organizations with the ability to monitor, archive, and analyze communications, thereby mitigating risks associated with data breaches and non-compliance. For AI professionals, this development highlights the growing need for AI-driven solutions that not only enhance communication efficiency but also ensure robust governance and oversight. LeapXpert&#x27;s approach exemplifies how AI can be leveraged to maintain control over digital interactions in an increasingly connected business environment.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/how-leapxpert-uses-ai-to-bring-order-and-oversight-to-business-messaging/"
-        },
-        {
-            "date": "Oct 31 2025",
-            "title": "Perplexity and Getty Images Forge Licensing Agreement Amid Controversy",
-            "content": "Perplexity AI has secured a multi-year licensing deal with Getty Images, a move that appears to address previous controversies over the startup&#x27;s use of stock photos. Last year, Perplexity faced plagiarism accusations from several news organizations, prompting scrutiny over its practices. This agreement with Getty Images signifies a step towards legitimizing Perplexity&#x27;s operations and ensuring proper usage rights for visual content. For AI professionals, this development underscores the importance of ethical content use and the necessity of securing appropriate licenses, especially in AI-generated media. The deal not only resolves past disputes but also sets a precedent for other AI companies navigating the complexities of intellectual property in the digital age. By aligning with Getty Images, Perplexity demonstrates a commitment to transparency and legal compliance, reinforcing the value of ethical practices in AI development.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/10/31/perplexity-strikes-multi-year-licensing-deal-with-getty-images/"
-        },
-        {
-            "date": "Oct 31 2025",
-            "title": "Lumana Advances AI in Video Surveillance with Contextual Understanding",
-            "content": "Lumana is redefining the role of artificial intelligence in video surveillance by addressing the critical challenge of contextual understanding. Despite advancements in AI, many existing video security systems struggle to interpret real-world conditions effectively, often capturing footage without comprehending the context. Lumana&#x27;s innovative approach focuses on enhancing AI&#x27;s ability to recognize and analyze contextual details within video feeds, thereby improving the accuracy and reliability of surveillance systems. This development is particularly significant for smart city planners and security professionals who require intelligent systems capable of proactive threat detection and response. By advancing AI&#x27;s contextual awareness, Lumana is setting a new standard for video surveillance technology, highlighting the potential for AI to transform security infrastructure. For AI professionals, this signifies an opportunity to explore and implement more sophisticated AI models that can effectively interpret complex environments, thereby enhancing security measures across various applications.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/how-lumana-is-redefining-ais-role-in-video-surveillance/"
         }
     ],
     "articles": {
