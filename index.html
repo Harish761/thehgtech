@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TheHGTech - Cybersecurity & AI News</title>
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -1107,16 +1114,92 @@
             border: 2px solid rgba(224, 31, 61, 0.3);
             border-radius: 20px;
             padding: 40px;
-            max-width: 600px;
+            max-width: 700px;
             width: 90%;
             max-height: 80vh;
             overflow-y: auto;
             position: relative;
             color: #E5E5E5;
+            font-size: 16px;
+            line-height: 1.8;
         }
         
         body.light-mode .modal-content {
             background: rgba(255, 255, 255, 0.95);
+            color: #1A1A1A;
+        }
+        
+        /* Modal Content Typography */
+        .modal-content h2 {
+            color: #FFFFFF;
+            font-size: 32px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        body.light-mode .modal-content h2 {
+            color: #1A1A1A;
+        }
+        
+        .modal-content h3 {
+            color: #E01F3D;
+            font-size: 22px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .modal-content p {
+            margin-bottom: 18px;
+            color: #E5E5E5;
+        }
+        
+        body.light-mode .modal-content p {
+            color: #1A1A1A;
+        }
+        
+        .modal-content em {
+            color: #B0B0B0;
+            font-style: italic;
+        }
+        
+        body.light-mode .modal-content em {
+            color: #666666;
+        }
+        
+        /* Red Bullet Points for Modals */
+        .modal-content ul {
+            margin: 20px 0;
+            padding-left: 0;
+            list-style: none;
+        }
+        
+        .modal-content ul li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 12px;
+            color: #E5E5E5;
+        }
+        
+        body.light-mode .modal-content ul li {
+            color: #1A1A1A;
+        }
+        
+        .modal-content ul li::before {
+            content: "●";
+            position: absolute;
+            left: 0;
+            color: #E01F3D;
+            font-size: 20px;
+            line-height: 1.4;
+        }
+        
+        .modal-content ul li strong {
+            color: #FFFFFF;
+            font-weight: 700;
+        }
+        
+        body.light-mode .modal-content ul li strong {
             color: #1A1A1A;
         }
         
@@ -1483,6 +1566,73 @@
     <script src="archives-content.js"></script>
     
     <script>
+        // ========== SECURITY: HTML Sanitization Functions ==========
+        /**
+         * Decode HTML entities properly
+         */
+        function decodeHTMLEntities(text) {
+            const textarea = document.createElement('textarea');
+            textarea.innerHTML = text;
+            return textarea.value;
+        }
+        
+        /**
+         * Sanitize HTML content to prevent XSS attacks
+         * This function properly decodes HTML entities while removing dangerous content
+         */
+        function sanitizeHTML(html) {
+            if (!html) return '';
+            
+            // First decode HTML entities (e.g., &quot; becomes ")
+            const decoded = decodeHTMLEntities(html);
+            
+            // Then escape it back for safe display (prevents XSS)
+            const temp = document.createElement('div');
+            temp.textContent = decoded;
+            const sanitized = temp.innerHTML;
+            
+            // Additional check: Remove any remaining script-like content
+            return sanitized
+                .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '')
+                .replace(/javascript:/gi, '')
+                .replace(/on\w+\s*=/gi, '');
+        }
+        
+        /**
+         * Safely set innerHTML with sanitization
+         * Use this instead of element.innerHTML = content
+         */
+        function safeSetHTML(element, html) {
+            if (!element) return;
+            
+            // For trusted content (like our modals), we still sanitize
+            // but allow common HTML tags
+            const temp = document.createElement('div');
+            temp.innerHTML = html;
+            
+            // Remove script tags and event handlers
+            const scripts = temp.querySelectorAll('script');
+            scripts.forEach(script => script.remove());
+            
+            const allElements = temp.querySelectorAll('*');
+            allElements.forEach(el => {
+                // Remove event handler attributes
+                Array.from(el.attributes).forEach(attr => {
+                    if (attr.name.startsWith('on')) {
+                        el.removeAttribute(attr.name);
+                    }
+                    // Check for javascript: in href/src
+                    if ((attr.name === 'href' || attr.name === 'src') && 
+                        attr.value.toLowerCase().includes('javascript:')) {
+                        el.removeAttribute(attr.name);
+                    }
+                });
+            });
+            
+            element.innerHTML = temp.innerHTML;
+        }
+        // ========== END SECURITY FUNCTIONS ==========
+        
         // Logo management based on theme
         function updateLogo() {
             const logoImg = document.getElementById('logoImg');
@@ -1501,6 +1651,7 @@
         var currentAiIndex = 0;
         
         // Render short card
+        // Render short card with XSS protection
         function renderShortCard(type, index) {
             const shorts = type === 'cyber' ? websiteContent.cyberShorts : websiteContent.aiShorts;
             const cardId = type === 'cyber' ? 'cyberShortCard' : 'aiShortCard';
@@ -1508,19 +1659,26 @@
             const short = shorts[index];
             const category = type === 'cyber' ? 'Cybersecurity Short' : 'AI Short';
             
+            // Sanitize all text content
+            const sanitizedDate = sanitizeHTML(short.date);
+            const sanitizedTitle = sanitizeHTML(short.title);
+            const sanitizedContent = sanitizeHTML(short.content);
+            const sanitizedSource = short.source ? sanitizeHTML(short.source) : '';
+            const sanitizedSourceUrl = short.sourceUrl || '#';
+            
             // Build source link HTML if source exists
             const sourceHtml = short.source ? 
-                `<a href="${short.sourceUrl || '#'}" target="_blank" rel="noopener noreferrer" class="short-source-link">
-                    🔗 Source: ${short.source}
+                `<a href="${sanitizedSourceUrl}" target="_blank" rel="noopener noreferrer" class="short-source-link">
+                    🔗 Source: ${sanitizedSource}
                 </a>` : '';
             
             card.innerHTML = `
                 <div class="short-meta">
-                    <span class="short-date">${short.date}</span>
+                    <span class="short-date">${sanitizedDate}</span>
                     <span class="short-category">${category}</span>
                 </div>
-                <h3 class="short-title">${short.title}</h3>
-                <p class="short-content-text">${short.content}</p>
+                <h3 class="short-title">${sanitizedTitle}</h3>
+                <p class="short-content-text">${sanitizedContent}</p>
                 ${sourceHtml}
                 <div class="short-navigation">
                     <button class="nav-btn" onclick="navigateShort('${type}', -1)" ${index === 0 ? 'disabled' : ''}>
@@ -1697,16 +1855,32 @@
         }
         
         // Open archive article
+        // Open archive article with XSS protection
         function openArchive(archiveId) {
             if (typeof archiveContent !== 'undefined' && archiveContent.archivedArticleContent && archiveContent.archivedArticleContent[archiveId]) {
                 const article = archiveContent.archivedArticleContent[archiveId];
                 
                 document.getElementById('articleTitle').textContent = article.title;
-                document.getElementById('articleContent').innerHTML = article.content;
+                
+                // Use safe HTML insertion for article content
+                const articleContent = document.getElementById('articleContent');
+                safeSetHTML(articleContent, article.content);
                 
                 const authorEl = document.getElementById('articleAuthor');
                 if (article.author) {
-                    authorEl.innerHTML = 'By <strong>' + article.author + '</strong> • ' + article.date;
+                    // Sanitize author and date before inserting
+                    const sanitizedAuthor = sanitizeHTML(article.author);
+                    const sanitizedDate = sanitizeHTML(article.date);
+                    authorEl.textContent = ''; // Clear first
+                    
+                    const byText = document.createTextNode('By ');
+                    const strongEl = document.createElement('strong');
+                    strongEl.textContent = sanitizedAuthor;
+                    const separator = document.createTextNode(' • ' + sanitizedDate);
+                    
+                    authorEl.appendChild(byText);
+                    authorEl.appendChild(strongEl);
+                    authorEl.appendChild(separator);
                     authorEl.style.display = 'block';
                 } else {
                     authorEl.style.display = 'none';
@@ -1720,16 +1894,32 @@
         }
         
         // Open article
+        // Open article with XSS protection
         function openArticle(articleId) {
             const article = websiteContent.articles[articleId];
             if (!article) return;
             
             document.getElementById('articleTitle').textContent = article.title;
-            document.getElementById('articleContent').innerHTML = article.content;
+            
+            // Use safe HTML insertion for article content
+            const articleContent = document.getElementById('articleContent');
+            safeSetHTML(articleContent, article.content);
             
             const authorEl = document.getElementById('articleAuthor');
             if (article.author) {
-                authorEl.innerHTML = 'By <strong>' + article.author + '</strong> • ' + article.date;
+                // Sanitize author and date before inserting
+                const sanitizedAuthor = sanitizeHTML(article.author);
+                const sanitizedDate = sanitizeHTML(article.date);
+                authorEl.textContent = ''; // Clear first
+                
+                const byText = document.createTextNode('By ');
+                const strongEl = document.createElement('strong');
+                strongEl.textContent = sanitizedAuthor;
+                const separator = document.createTextNode(' • ' + sanitizedDate);
+                
+                authorEl.appendChild(byText);
+                authorEl.appendChild(strongEl);
+                authorEl.appendChild(separator);
                 authorEl.style.display = 'block';
             } else {
                 authorEl.style.display = 'none';
@@ -1779,20 +1969,42 @@
             updateLogo();
         }
         
-        // Open modal
+        // Open modal with XSS protection
         function openModal(type) {
             const content = websiteContent.modals[type];
-            if (!content) return;
+            if (!content) {
+                console.warn('Modal content not found for type:', type);
+                return;
+            }
             
             const modal = document.createElement('div');
             modal.className = 'modal-overlay';
             modal.style.display = 'flex';
-            modal.innerHTML = `
-                <div class="modal-content" onclick="event.stopPropagation()">
-                    <div class="modal-close" onclick="closeModal(this)">&times;</div>
-                    <div>${content}</div>
-                </div>
-            `;
+            
+            // Create modal content container
+            const modalContent = document.createElement('div');
+            modalContent.className = 'modal-content';
+            modalContent.onclick = (e) => e.stopPropagation();
+            
+            // Create close button
+            const closeButton = document.createElement('div');
+            closeButton.className = 'modal-close';
+            closeButton.textContent = '×';
+            closeButton.onclick = function() { closeModal(this); };
+            
+            // Create content container
+            const contentDiv = document.createElement('div');
+            // Use safe HTML insertion for modal content
+            safeSetHTML(contentDiv, content);
+            
+            // Assemble modal
+            modalContent.appendChild(closeButton);
+            modalContent.appendChild(contentDiv);
+            modal.appendChild(modalContent);
+            
+            // Add click handler to overlay for closing
+            modal.onclick = function() { closeModal(this); };
+            
             document.body.appendChild(modal);
             document.body.style.overflow = 'hidden';
         }
