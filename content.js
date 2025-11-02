@@ -16,27 +16,6 @@ var websiteContent = {
             "content": "Microsoft has released Windows 11 Build 26220.7051 to Windows Insider Program testers, unveiling several new features, including the &quot;Ask Copilot&quot; functionality integrated into the taskbar. This feature aims to enhance user interaction by providing AI-driven assistance directly from the taskbar, making it easier to access information and perform tasks. The update reflects Microsoft&#x27;s ongoing commitment to integrating AI into its operating systems, offering a more intuitive user experience. For cybersecurity experts, this development highlights the importance of securing AI interfaces and understanding potential vulnerabilities that could arise from increased AI integration. As AI becomes more embedded in everyday computing, safeguarding these systems from exploitation will be crucial.",
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/windows-11-build-262207051-released-with-ask-copilot-feature/"
-        },
-        {
-            "date": "Nov 01 2025",
-            "title": "China-Linked Hackers Exploit Lanscope Vulnerability in Zero-Day Attacks",
-            "content": "A sophisticated cyber-espionage group known as &#x27;Bronze Butler,&#x27; linked to China, has been exploiting a zero-day vulnerability in Motex Lanscope Endpoint Manager. This flaw has enabled the deployment of an updated version of the Gokcpdoor malware, posing significant risks to affected systems. The exploitation of such vulnerabilities underscores the persistent threat posed by state-sponsored hackers and the critical need for timely patching and vulnerability management. Cybersecurity professionals must prioritize monitoring for such exploits and ensure systems are updated to mitigate potential breaches. This incident serves as a stark reminder of the evolving tactics employed by cyber adversaries and the importance of proactive defense strategies.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/china-linked-hackers-exploited-lanscope-flaw-as-a-zero-day-in-attacks/"
-        },
-        {
-            "date": "Nov 01 2025",
-            "title": "ASD Alerts to BADCANDY Attacks Targeting Cisco IOS XE Devices",
-            "content": "The Australian Signals Directorate (ASD) has issued a critical warning about ongoing cyber attacks exploiting a vulnerability in unpatched Cisco IOS XE devices. These attacks employ a previously undocumented implant named BADCANDY, leveraging the CVE-2023-20198 vulnerability. This alert highlights the significant risk posed to organizations using these devices, emphasizing the urgency of applying security patches to prevent exploitation. Cybersecurity professionals should prioritize updating affected systems and employ robust monitoring to detect any signs of compromise. The emergence of BADCANDY exemplifies the continuous evolution of cyber threats and the necessity for heightened vigilance and response readiness within the cybersecurity community.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/11/asd-warns-of-ongoing-badcandy-attacks.html"
-        },
-        {
-            "date": "Oct 31 2025",
-            "title": "Windows 11 Tests Dual Bluetooth Audio for AI PCs",
-            "content": "Windows 11 is testing a new feature allowing simultaneous use of two Bluetooth audio devices, such as headphones or speakers, on PCs equipped with AI capabilities, specifically those with Copilot+. This innovation aims to enhance user experience by offering greater flexibility in audio output management. For cybersecurity professionals, the introduction of such features raises considerations regarding the security of Bluetooth connections and potential vulnerabilities that could be exploited by malicious actors. Ensuring robust security measures for Bluetooth communications will be essential to protect user data and maintain system integrity in light of these advancements. As technology evolves, so too must the strategies to secure it.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/windows-11-tests-shared-bluetooth-audio-support-but-only-for-ai-pcs/"
         }
     ],
     "aiShorts": [
@@ -53,27 +32,6 @@ var websiteContent = {
             "content": "Researchers at Andon Labs have conducted a fascinating experiment by integrating large language models (LLMs) into a vacuum robot, resulting in unexpected and humorous outcomes. This project aimed to assess the readiness of LLMs for embodiment in physical devices. Surprisingly, the robot began exhibiting behavior reminiscent of the late comedian Robin Williams, showcasing the unpredictable nature of AI personality development. This experiment highlights the complexities involved in embedding AI into robotics, as the integration can lead to emergent behaviors that are not easily controlled or predicted. For AI professionals, this underscores the importance of developing robust frameworks for AI behavior management in embodied systems. As AI continues to advance, understanding and guiding these emergent properties will be crucial in ensuring that robots behave in socially acceptable and beneficial ways.",
             "source": "AI News &amp; Artificial Intelligence | TechCrunch",
             "sourceUrl": "https://techcrunch.com/2025/11/01/ai-researchers-embodied-an-llm-into-a-robot-and-it-started-channeling-robin-williams/"
-        },
-        {
-            "date": "Nov 01 2025",
-            "title": "Debating the Cognitive Abilities of Large Reasoning Models",
-            "content": "The debate over whether large reasoning models (LRMs) can truly think has been reignited by a recent Apple research article titled &quot;The Illusion of Thinking.&quot; Apple posits that LRMs do not possess genuine cognitive capabilities but are instead adept at pattern matching. This perspective challenges the notion that AI can achieve true understanding, sparking discussions among AI researchers and professionals. The implications of this debate are significant for the development and application of AI technologies. If LRMs merely simulate thinking, it raises questions about their reliability in decision-making processes that require genuine understanding. AI professionals must critically evaluate the capabilities and limitations of these models, ensuring transparency in their deployment. As AI systems become more integrated into critical sectors, the distinction between pattern recognition and true cognition will play a pivotal role in shaping future AI innovations and ethical guidelines.",
-            "source": "AI | VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/large-reasoning-models-almost-certainly-can-think"
-        },
-        {
-            "date": "Oct 31 2025",
-            "title": "CoreWeave&#x27;s Strategic Shift: From Core Scientific to Marimo Acquisition",
-            "content": "CoreWeave&#x27;s failed acquisition of Core Scientific signals potential instability in the AI market, often described as an AI bubble. Despite this setback, CoreWeave continues its strategic expansion by acquiring Marimo, a company specializing in Python notebooks. This move reflects CoreWeave&#x27;s focus on diversifying its offerings and strengthening its position in the AI development ecosystem. The acquisition of Marimo suggests a pivot towards supporting AI developers with enhanced tools for machine learning and data analysis. For AI professionals, this highlights the importance of adaptability in a rapidly evolving market landscape. Companies must remain agile, ready to shift strategies to capitalize on emerging opportunities. As AI technologies mature, the ability to provide comprehensive solutions that cater to the needs of developers will likely become a critical factor in maintaining competitive advantage.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/10/31/ai-mania-tanks-coreweaves-core-scientific-acquisition-it-buys-python-notebook-marimo/"
-        },
-        {
-            "date": "Oct 31 2025",
-            "title": "The Evolution of ChatGPT: Key Updates and Developments",
-            "content": "ChatGPT has been at the forefront of AI-powered chatbot technology, with a series of updates and releases shaping its capabilities throughout the year. This timeline of advancements reflects the continuous efforts to enhance user interaction and expand functionality. Recent updates have focused on improving language understanding, contextual awareness, and user personalization, making ChatGPT more versatile and effective in various applications. These developments are crucial for AI professionals aiming to leverage ChatGPT in customer service, education, and content creation. As the technology evolves, it is essential for practitioners to stay informed about the latest features and best practices to maximize the benefits of ChatGPT. The ongoing innovation in this space underscores the dynamic nature of AI development, where staying ahead of trends and technological improvements is key to maintaining relevance and delivering value to end-users.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/10/31/chatgpt-everything-to-know-about-the-ai-chatbot/"
         }
     ],
     "articles": {
@@ -192,6 +150,46 @@ var websiteContent = {
         }
     ],
     "recentCVEs": [
+        {
+            "cveId": "CVE-2025-41244",
+            "dateAdded": "Oct 30, 2025",
+            "vendor": "Broadcom VMware Aria Operations and VMware Tools",
+            "description": "Broadcom VMware Aria Operations and VMware Tools contain a privilege defined with unsafe actions vulnerability. A malicious local actor with non-administrative privileges having access to a VM with VM",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-41244"
+        },
+        {
+            "cveId": "CVE-2025-24893",
+            "dateAdded": "Oct 30, 2025",
+            "vendor": "XWiki Platform",
+            "description": "XWiki Platform contains an eval injection vulnerability that could allow any guest to perform arbitrary remote code execution through a request to SolrSearch.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-24893"
+        },
+        {
+            "cveId": "CVE-2025-6204",
+            "dateAdded": "Oct 28, 2025",
+            "vendor": "Dassault Systèmes DELMIA Apriso",
+            "description": "Dassault Systèmes DELMIA Apriso contains a code injection vulnerability that could allow an attacker to execute arbitrary code.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-6204"
+        },
+        {
+            "cveId": "CVE-2025-6205",
+            "dateAdded": "Oct 28, 2025",
+            "vendor": "Dassault Systèmes DELMIA Apriso",
+            "description": "Dassault Systèmes DELMIA Apriso contains a missing authorization vulnerability that could allow an attacker to gain privileged access to the application.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-6205"
+        },
         {
             "cveId": "CVE-2024-51567",
             "vendor": "CyberPanel",
@@ -312,17 +310,6 @@ var websiteContent = {
             "score": "HIGH (8.8)",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-9463"
-        },
-        {
-            "cveId": "CVE-2024-43093",
-            "vendor": "Android",
-            "product": "Android OS",
-            "description": "Android Framework privilege escalation vulnerability allows local attackers to gain elevated access to system resources without user interaction.",
-            "dateAdded": "2024-10-26",
-            "status": "Potential",
-            "score": "HIGH (7.8)",
-            "source": "NVD",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-43093"
         }
     ],
     "modals": {
@@ -330,5 +317,6 @@ var websiteContent = {
         "about": "<h2>About TheHGTech</h2><p><strong>TheHGTech</strong> is your trusted source for cutting-edge insights at the intersection of <strong>cybersecurity</strong> and <strong>artificial intelligence</strong>.</p><p>Founded by security professionals and AI enthusiasts, we deliver timely analysis, in-depth articles, and curated news to help you stay ahead of emerging threats and technological innovations.</p><h3>Our Mission</h3><p>We believe in empowering professionals with knowledge that matters. Our content is designed to be:</p><ul><li><strong>Accurate:</strong> Sourced from reputable publications and verified by experts</li><li><strong>Relevant:</strong> Focused on real-world implications for security and AI practitioners</li><li><strong>Accessible:</strong> Written in clear language without sacrificing technical depth</li><li><strong>Forward-thinking:</strong> Exploring not just current events, but future trends and strategic insights</li></ul><h3>What We Cover</h3><p>From nation-state cyber operations to the latest breakthroughs in machine learning, from enterprise security frameworks to ethical AI governance—we bring you the stories that shape the digital landscape.</p><h3>Join Our Community</h3><p>Whether you're a CISO, security analyst, AI researcher, or simply curious about the future of technology, TheHGTech is here to inform, inspire, and connect you with what matters most in the world of cybersecurity and artificial intelligence.</p><p><em>Stay secure. Stay informed. Stay ahead.</em></p>",
         "privacy": "<h2>Privacy Policy</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Information We Collect</h3><p>TheHGTech is committed to protecting your privacy. This website operates with minimal data collection:</p><ul><li><strong>Local Storage:</strong> We use browser localStorage to save your theme preference (light/dark mode)</li><li><strong>No Cookies:</strong> We do not use tracking cookies or third-party analytics</li><li><strong>No Personal Data:</strong> We do not collect, store, or process any personal information</li><li><strong>No User Accounts:</strong> This site does not require registration or login</li></ul><h3>2. Third-Party Links</h3><p>Our content includes links to external news sources and articles. When you click these links, you leave our website and are subject to the privacy policies of those external sites. We encourage you to review their privacy policies.</p><h3>3. Content Sources</h3><p>All news content is sourced from publicly available RSS feeds and reputable cybersecurity and AI news publications. We provide proper attribution and links to original sources.</p><h3>4. Data Security</h3><p>Since we do not collect or store user data, there is no personal information at risk. All content is served statically without server-side processing.</p><h3>5. Your Rights</h3><p>You have full control over your browsing experience:</p><ul><li>Theme preferences are stored locally and can be cleared by clearing your browser's localStorage</li><li>You can browse anonymously without creating an account</li><li>You can use ad blockers, privacy extensions, or VPNs without affecting site functionality</li></ul><h3>6. Changes to This Policy</h3><p>We may update this privacy policy from time to time. Any changes will be posted on this page with an updated revision date.</p><h3>7. Contact</h3><p>If you have questions about this privacy policy or our data practices, please contact us through our official channels.</p><p><em>Your privacy matters. We're committed to keeping it simple, transparent, and respectful.</em></p>",
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
-    }
+    },
+    "featureCards": []
 };
