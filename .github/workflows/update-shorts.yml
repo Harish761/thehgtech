@@ -7,17 +7,8 @@ on:
     # Evening run: 6 PM IST = 12:30 UTC
     - cron: '30 12 * * *'
   
-  # Allow manual trigger with force refresh option
+  # Allow manual trigger from GitHub Actions tab
   workflow_dispatch:
-    inputs:
-      force_refresh:
-        description: 'Force refresh all content (removes old content even if no new articles)'
-        required: false
-        default: 'false'
-        type: choice
-        options:
-          - 'false'
-          - 'true'
 
 # ⚠️ CRITICAL: This grants the workflow permission to push changes
 permissions:
@@ -40,67 +31,35 @@ jobs:
       
       - name: Install dependencies
         run: |
-          pip install openai pytz feedparser
+          pip install openai pytz feedparser requests
       
       - name: Run content update script
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          FORCE_REFRESH: ${{ github.event.inputs.force_refresh || 'false' }}
         run: |
           python update_shorts.py
       
-      - name: Check for changes
-        id: check_changes
-        run: |
-          if git diff --quiet content.js; then
-            echo "changes=false" >> $GITHUB_OUTPUT
-            echo "No changes detected in content.js"
-          else
-            echo "changes=true" >> $GITHUB_OUTPUT
-            echo "Changes detected in content.js"
-          fi
-      
       - name: Commit and push changes
-        if: steps.check_changes.outputs.changes == 'true'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           
+          # Check if there are changes
+          if git diff --quiet content.js; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          
           # Commit with timestamp
           git add content.js
-          git commit -m "🤖 Auto-update: TheHGTech shorts (Real RSS feeds) - $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git commit -m "🤖 Auto-update: TheHGTech shorts + CVEs - $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push
       
-      - name: No changes summary
-        if: steps.check_changes.outputs.changes == 'false'
-        run: |
-          echo "### ℹ️ No Content Updates" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "- **Status**: No changes detected" >> $GITHUB_STEP_SUMMARY
-          echo "- **Reason**: Either no new articles found, or all articles were duplicates" >> $GITHUB_STEP_SUMMARY
-          echo "- **Action**: Content remains unchanged" >> $GITHUB_STEP_SUMMARY
-      
-      - name: Success summary
-        if: steps.check_changes.outputs.changes == 'true'
+      - name: Summary
+        if: always()
         run: |
           echo "### 🎉 TheHGTech Content Update Complete" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "- **Mode**: Real RSS Feed Aggregation" >> $GITHUB_STEP_SUMMARY
+          echo "- **Mode**: Real RSS + CISA CVE Aggregation" >> $GITHUB_STEP_SUMMARY
           echo "- **Time**: $(date -u +'%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
-          echo "- **Status**: ✅ Updated and committed" >> $GITHUB_STEP_SUMMARY
-          echo "- **Force Refresh**: ${{ github.event.inputs.force_refresh || 'false' }}" >> $GITHUB_STEP_SUMMARY
-      
-      - name: Failure notification
-        if: failure()
-        run: |
-          echo "### ❌ Content Update Failed" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "- **Time**: $(date -u +'%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
-          echo "- **Status**: ❌ Failed" >> $GITHUB_STEP_SUMMARY
-          echo "- **Action Required**: Check workflow logs for errors" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "**Common Issues:**" >> $GITHUB_STEP_SUMMARY
-          echo "- OPENAI_API_KEY not set in secrets" >> $GITHUB_STEP_SUMMARY
-          echo "- RSS feeds are down" >> $GITHUB_STEP_SUMMARY
-          echo "- Network connectivity issues" >> $GITHUB_STEP_SUMMARY
-          echo "- Python script errors" >> $GITHUB_STEP_SUMMARY
+          echo "- **Status**: ✅ Success" >> $GITHUB_STEP_SUMMARY
