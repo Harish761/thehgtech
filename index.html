@@ -226,6 +226,39 @@
             color: #4A4A4A;
         }
         
+        /* ========== WHAT'S NEW BUTTON ========== */
+        .whats-new-button {
+            background: linear-gradient(135deg, #28a745, #20c997);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3);
+        }
+        
+        .whats-new-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(40, 167, 69, 0.4);
+        }
+        
+        .whats-new-button .icon {
+            font-size: 14px;
+            animation: sparkle 2s ease-in-out infinite;
+        }
+        
+        @keyframes sparkle {
+            0%, 100% { transform: scale(1) rotate(0deg); }
+            25% { transform: scale(1.1) rotate(-10deg); }
+            50% { transform: scale(1) rotate(0deg); }
+            75% { transform: scale(1.1) rotate(10deg); }
+        }
         /* Quick Insights Section */
         .quick-insights {
             margin: 40px 0;
@@ -1405,6 +1438,350 @@
         .article-author-icon {
             font-size: 14px;
         }
+        
+        /* ========== CVE TRACKER STYLES ========== */
+        .cve-tracker {
+            padding: 40px 0 60px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cve-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .cve-title {
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        body.light-mode .cve-title {
+            color: #1A1A1A;
+        }
+        
+        .cve-title-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #E01F3D, #C81E3A);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 18px;
+            color: #FFFFFF;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(224, 31, 61, 0.3);
+        }
+        
+        body.light-mode .cve-title-icon {
+            background: linear-gradient(135deg, #E01F3D, #C81E3A);
+            color: #FFFFFF;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        .cve-subtitle {
+            font-size: 14px;
+            color: #909090;
+            margin-top: 5px;
+            font-weight: 400;
+        }
+        
+        body.light-mode .cve-subtitle {
+            color: #666666;
+        }
+        
+        .cve-carousel-container {
+            position: relative;
+            overflow: hidden;
+            padding: 10px 0;
+        }
+        
+        .cve-carousel {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            padding: 10px 0;
+        }
+        
+        .cve-carousel::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .cve-card {
+            flex: 0 0 auto;
+            width: 320px;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(224, 31, 61, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            scroll-snap-align: start;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        body.light-mode .cve-card {
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(224, 31, 61, 0.2);
+        }
+        
+        .cve-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, #E01F3D, #FF4D6D);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        
+        .cve-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(224, 31, 61, 0.2);
+            border-color: rgba(224, 31, 61, 0.5);
+        }
+        
+        .cve-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .cve-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            gap: 10px;
+        }
+        
+        .cve-id {
+            font-size: 18px;
+            font-weight: 700;
+            color: #E01F3D;
+            font-family: 'Space Grotesk', monospace;
+        }
+        
+        .cve-status-badge {
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+        }
+        
+        .cve-status-confirmed {
+            background: rgba(224, 31, 61, 0.2);
+            color: #FF4D6D;
+            border: 1px solid rgba(224, 31, 61, 0.3);
+        }
+        
+        .cve-status-potential {
+            background: rgba(255, 165, 0, 0.2);
+            color: #FFA500;
+            border: 1px solid rgba(255, 165, 0, 0.3);
+        }
+        
+        .cve-score {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+        
+        .cve-score-badge {
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        
+        .cve-score-critical {
+            background: rgba(220, 38, 38, 0.2);
+            color: #EF4444;
+            border: 1px solid rgba(220, 38, 38, 0.3);
+        }
+        
+        .cve-score-high {
+            background: rgba(234, 88, 12, 0.2);
+            color: #F97316;
+            border: 1px solid rgba(234, 88, 12, 0.3);
+        }
+        
+        .cve-score-medium {
+            background: rgba(234, 179, 8, 0.2);
+            color: #EAB308;
+            border: 1px solid rgba(234, 179, 8, 0.3);
+        }
+        
+        .cve-vendor {
+            font-size: 14px;
+            color: #B0B0B0;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        body.light-mode .cve-vendor {
+            color: #666666;
+        }
+        
+        .cve-vendor-icon {
+            color: #E01F3D;
+            margin-right: 5px;
+        }
+        
+        .cve-description {
+            font-size: 13px;
+            color: #E5E5E5;
+            line-height: 1.5;
+            margin-bottom: 15px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        
+        body.light-mode .cve-description {
+            color: #1A1A1A;
+        }
+        
+        .cve-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 15px;
+            border-top: 1px solid rgba(224, 31, 61, 0.2);
+        }
+        
+        .cve-date {
+            font-size: 11px;
+            color: #909090;
+        }
+        
+        body.light-mode .cve-date {
+            color: #666666;
+        }
+        
+        .cve-source {
+            font-size: 11px;
+            color: #E01F3D;
+            font-weight: 600;
+        }
+        
+        .cve-source-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 10px 16px;
+            margin-top: 15px;
+            background: rgba(224, 31, 61, 0.15);
+            border: 1px solid rgba(224, 31, 61, 0.3);
+            border-radius: 8px;
+            color: #E01F3D;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 13px;
+            transition: all 0.3s ease;
+            width: 100%;
+            justify-content: center;
+        }
+        
+        .cve-source-link:hover {
+            background: rgba(224, 31, 61, 0.25);
+            border-color: rgba(224, 31, 61, 0.5);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(224, 31, 61, 0.3);
+        }
+        
+        body.light-mode .cve-source-link {
+            background: rgba(224, 31, 61, 0.1);
+            color: #E01F3D;
+        }
+        
+        body.light-mode .cve-source-link:hover {
+            background: rgba(224, 31, 61, 0.2);
+        }
+        
+        .cve-nav-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .cve-nav-button {
+            background: rgba(224, 31, 61, 0.2);
+            color: #E01F3D;
+            border: 1px solid rgba(224, 31, 61, 0.3);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 18px;
+        }
+        
+        .cve-nav-button:hover {
+            background: rgba(224, 31, 61, 0.3);
+            transform: scale(1.1);
+        }
+        
+        .cve-nav-button:active {
+            transform: scale(0.95);
+        }
+        
+        .cve-empty {
+            text-align: center;
+            padding: 60px 20px;
+            color: #909090;
+        }
+        
+        body.light-mode .cve-empty {
+            color: #666666;
+        }
+        
+        .cve-empty-icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            opacity: 0.5;
+        }
+        
+        @media (max-width: 768px) {
+            .cve-card {
+                width: 280px;
+            }
+            
+            .cve-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .cve-nav-buttons {
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
@@ -1418,12 +1795,18 @@
                     </div>
                     <div class="logo">TheHGTech</div>
                 </div>
-                <div class="theme-toggle-container">
-                    <span class="theme-icon">🌙</span>
-                    <div class="theme-toggle" onclick="toggleTheme()">
-                        <div class="theme-toggle-slider"></div>
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <button class="whats-new-button" onclick="openModal('whatsNew')">
+                        <span class="icon">✨</span>
+                        What's New
+                    </button>
+                    <div class="theme-toggle-container">
+                        <span class="theme-icon">🌙</span>
+                        <div class="theme-toggle" onclick="toggleTheme()">
+                            <div class="theme-toggle-slider"></div>
+                        </div>
+                        <span class="theme-icon">☀️</span>
                     </div>
-                    <span class="theme-icon">☀️</span>
                 </div>
             </div>
         </div>
@@ -1472,6 +1855,28 @@
                 <div id="aiInsights" class="insights-content">
                     <div class="short-card" id="aiShortCard">
                         <!-- Dynamic content will be loaded here -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- CVE Tracker Section -->
+            <section class="cve-tracker">
+                <div class="cve-header">
+                    <div>
+                        <h2 class="cve-title">
+                            <span class="cve-title-icon">CVE</span>
+                            Recent CVEs (Last 7 Days)
+                        </h2>
+                        <p class="cve-subtitle">From Official Sources: CISA KEV & NVD</p>
+                    </div>
+                    <div class="cve-nav-buttons">
+                        <button class="cve-nav-button" onclick="scrollCVECarousel('left')" aria-label="Scroll left">‹</button>
+                        <button class="cve-nav-button" onclick="scrollCVECarousel('right')" aria-label="Scroll right">›</button>
+                    </div>
+                </div>
+                <div class="cve-carousel-container">
+                    <div class="cve-carousel" id="cveCarousel">
+                        <!-- Dynamic CVE cards will be loaded here -->
                     </div>
                 </div>
             </section>
@@ -1812,6 +2217,112 @@
             });
         }
         
+        // Render CVE cards
+        function renderCVEs() {
+            const container = document.getElementById('cveCarousel');
+            container.innerHTML = '';
+            
+            if (websiteContent.recentCVEs && websiteContent.recentCVEs.length > 0) {
+                websiteContent.recentCVEs.forEach(cve => {
+                    // Determine score class based on severity
+                    let scoreClass = 'cve-score-medium';
+                    const scoreText = cve.score.toUpperCase();
+                    if (scoreText.includes('CRITICAL')) {
+                        scoreClass = 'cve-score-critical';
+                    } else if (scoreText.includes('HIGH')) {
+                        scoreClass = 'cve-score-high';
+                    }
+                    
+                    // Determine status class
+                    const statusClass = cve.status === 'Confirmed' ? 'cve-status-confirmed' : 'cve-status-potential';
+                    
+                    const cveHtml = `
+                        <div class="cve-card">
+                            <div class="cve-card-header">
+                                <div class="cve-id">${cve.cveId}</div>
+                                <div class="cve-status-badge ${statusClass}">${cve.status}</div>
+                            </div>
+                            <div class="cve-score">
+                                <div class="cve-score-badge ${scoreClass}">${cve.score}</div>
+                            </div>
+                            <div class="cve-vendor">
+                                <span class="cve-vendor-icon">🏢</span> ${cve.vendor}
+                            </div>
+                            <div class="cve-description">
+                                ${cve.description}
+                            </div>
+                            <div class="cve-footer">
+                                <div class="cve-date">📅 ${cve.dateAdded}</div>
+                                <div class="cve-source">${cve.source}</div>
+                            </div>
+                            <a href="${cve.url}" target="_blank" rel="noopener noreferrer" class="cve-source-link" onclick="event.stopPropagation()">
+                                🔗 View Official Source
+                            </a>
+                        </div>
+                    `;
+                    container.innerHTML += cveHtml;
+                });
+                
+                // Start auto-scroll
+                startCVEAutoScroll();
+            } else {
+                container.innerHTML = `
+                    <div class="cve-empty">
+                        <div class="cve-empty-icon">🔒</div>
+                        <h3>No Recent CVEs</h3>
+                        <p>No critical vulnerabilities in the past 7 days.</p>
+                    </div>
+                `;
+            }
+        }
+        
+        // CVE Carousel Navigation
+        function scrollCVECarousel(direction) {
+            const carousel = document.getElementById('cveCarousel');
+            const scrollAmount = 340; // card width + gap
+            
+            if (direction === 'left') {
+                carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            } else {
+                carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            }
+        }
+        
+        // Auto-scroll CVE carousel
+        let cveAutoScrollInterval;
+        function startCVEAutoScroll() {
+            // Clear any existing interval
+            if (cveAutoScrollInterval) {
+                clearInterval(cveAutoScrollInterval);
+            }
+            
+            const carousel = document.getElementById('cveCarousel');
+            if (!carousel || carousel.children.length === 0) return;
+            
+            // Auto-scroll every 5 seconds
+            cveAutoScrollInterval = setInterval(() => {
+                const maxScroll = carousel.scrollWidth - carousel.clientWidth;
+                const currentScroll = carousel.scrollLeft;
+                
+                if (currentScroll >= maxScroll - 10) {
+                    // Reset to beginning
+                    carousel.scrollTo({ left: 0, behavior: 'smooth' });
+                } else {
+                    // Scroll one card width
+                    carousel.scrollBy({ left: 340, behavior: 'smooth' });
+                }
+            }, 5000);
+            
+            // Pause auto-scroll on hover
+            carousel.addEventListener('mouseenter', () => {
+                clearInterval(cveAutoScrollInterval);
+            });
+            
+            carousel.addEventListener('mouseleave', () => {
+                startCVEAutoScroll();
+            });
+        }
+        
         // Render archives page
         function renderArchivesPage() {
             const container = document.getElementById('archivesGrid');
@@ -2043,6 +2554,7 @@
         // Initialize on page load
         document.addEventListener('DOMContentLoaded', function() {
             loadTheme();
+            renderCVEs();  // Render CVE cards
             renderShortCard('cyber', 0);
             renderShortCard('ai', 0);
             renderArticles();
