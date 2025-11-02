@@ -4,34 +4,76 @@
 var websiteContent = {
     "cyberShorts": [
         {
-            "date": "Oct 31 2025",
-            "title": "UNC6384 Exploits Windows Vulnerability in European Diplomatic Attack",
-            "content": "A sophisticated spear-phishing campaign by the cyber-espionage group UNC6384 has been identified targeting European diplomatic entities. Utilizing deceptive emails themed around the European Commission and NATO, the attackers aim to entice diplomatic personnel into clicking malicious links that exploit a Windows vulnerability. This campaign highlights the persistent threat posed by state-sponsored hacking groups, which often use social engineering tactics to bypass conventional security measures. Cybersecurity professionals should be vigilant in training staff to recognize phishing attempts and ensure systems are regularly updated to patch known vulnerabilities. The incident underscores the need for robust security protocols and continuous monitoring to protect sensitive diplomatic communications and data from unauthorized access.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/unc6384-european-diplomat-windows"
+            "date": "Nov 01 2025",
+            "title": "Google to Integrate Ads into AI Search Results",
+            "content": "Google has confirmed that advertisements will be integrated into its AI search results, signaling a strategic expansion of its ad ecosystem. While the exact appearance and format of these ads remain under wraps, they are expected to differ from traditional formats to better align with AI-driven search experiences. This move underscores Google&#x27;s commitment to monetizing its AI capabilities, ensuring that ads remain a core revenue stream. For cybersecurity professionals, this development emphasizes the need to understand how AI and advertising can intersect, potentially impacting user privacy and data security. As AI algorithms increasingly tailor search results, the cybersecurity community must remain vigilant about how personal data is used and protected in this evolving landscape.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/google/google-confirms-ai-search-will-have-ads-but-they-may-look-different/"
+        },
+        {
+            "date": "Nov 01 2025",
+            "title": "Windows 11 Introduces &quot;Ask Copilot&quot; Feature in Latest Build",
+            "content": "Microsoft has released Windows 11 Build 26220.7051 to Windows Insider Program testers, unveiling several new features, including the &quot;Ask Copilot&quot; functionality integrated into the taskbar. This feature aims to enhance user interaction by providing AI-driven assistance directly from the taskbar, making it easier to access information and perform tasks. The update reflects Microsoft&#x27;s ongoing commitment to integrating AI into its operating systems, offering a more intuitive user experience. For cybersecurity experts, this development highlights the importance of securing AI interfaces and understanding potential vulnerabilities that could arise from increased AI integration. As AI becomes more embedded in everyday computing, safeguarding these systems from exploitation will be crucial.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/windows-11-build-262207051-released-with-ask-copilot-feature/"
+        },
+        {
+            "date": "Nov 01 2025",
+            "title": "China-Linked Hackers Exploit Lanscope Vulnerability in Zero-Day Attacks",
+            "content": "A sophisticated cyber-espionage group known as &#x27;Bronze Butler,&#x27; linked to China, has been exploiting a zero-day vulnerability in Motex Lanscope Endpoint Manager. This flaw has enabled the deployment of an updated version of the Gokcpdoor malware, posing significant risks to affected systems. The exploitation of such vulnerabilities underscores the persistent threat posed by state-sponsored hackers and the critical need for timely patching and vulnerability management. Cybersecurity professionals must prioritize monitoring for such exploits and ensure systems are updated to mitigate potential breaches. This incident serves as a stark reminder of the evolving tactics employed by cyber adversaries and the importance of proactive defense strategies.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/china-linked-hackers-exploited-lanscope-flaw-as-a-zero-day-in-attacks/"
+        },
+        {
+            "date": "Nov 01 2025",
+            "title": "ASD Alerts to BADCANDY Attacks Targeting Cisco IOS XE Devices",
+            "content": "The Australian Signals Directorate (ASD) has issued a critical warning about ongoing cyber attacks exploiting a vulnerability in unpatched Cisco IOS XE devices. These attacks employ a previously undocumented implant named BADCANDY, leveraging the CVE-2023-20198 vulnerability. This alert highlights the significant risk posed to organizations using these devices, emphasizing the urgency of applying security patches to prevent exploitation. Cybersecurity professionals should prioritize updating affected systems and employ robust monitoring to detect any signs of compromise. The emergence of BADCANDY exemplifies the continuous evolution of cyber threats and the necessity for heightened vigilance and response readiness within the cybersecurity community.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/11/asd-warns-of-ongoing-badcandy-attacks.html"
         },
         {
             "date": "Oct 31 2025",
-            "title": "Ribbon Communications Breach Linked to Suspected State-Sponsored Hackers",
-            "content": "Ribbon Communications, a major US telecom company, has disclosed a breach believed to be orchestrated by nation-state actors, who reportedly infiltrated its network as early as December last year. While the extent of data compromise remains uncertain, the breach raises significant concerns about the security of telecom infrastructure, which is critical for national security and economic stability. This incident serves as a stark reminder for telecom companies to enhance their cybersecurity defenses, conduct thorough audits, and implement advanced threat detection mechanisms. As attackers increasingly target telecom networks, it is imperative for organizations to adopt a proactive security posture to safeguard sensitive data and maintain public trust.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/ribbon-communications-breach-latest-telecom-attack"
+            "title": "Windows 11 Tests Dual Bluetooth Audio for AI PCs",
+            "content": "Windows 11 is testing a new feature allowing simultaneous use of two Bluetooth audio devices, such as headphones or speakers, on PCs equipped with AI capabilities, specifically those with Copilot+. This innovation aims to enhance user experience by offering greater flexibility in audio output management. For cybersecurity professionals, the introduction of such features raises considerations regarding the security of Bluetooth connections and potential vulnerabilities that could be exploited by malicious actors. Ensuring robust security measures for Bluetooth communications will be essential to protect user data and maintain system integrity in light of these advancements. As technology evolves, so too must the strategies to secure it.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/windows-11-tests-shared-bluetooth-audio-support-but-only-for-ai-pcs/"
         }
     ],
     "aiShorts": [
         {
-            "date": "Oct 31 2025",
-            "title": "AI Bubble Concerns Rise Amidst Soaring Valuations and Seed Rounds",
-            "content": "At TechCrunch Disrupt 2025, the Equity team, featuring hosts Kirsten Korosec, Max Zeff, and Anthony Ha, delved into the pressing question of whether the AI sector is experiencing a bubble. With AI startups witnessing valuations that have tripled within months and seed rounds reaching an unprecedented $300 million, the industry is undeniably in a frenzy. This rapid financial escalation signals both the high expectations and potential volatility within the AI market. Industry experts caution that while the influx of capital can drive innovation and growth, it also raises concerns about sustainability and the risk of overvaluation. For AI professionals, this environment presents both opportunities and challenges—opportunities to secure significant funding for groundbreaking projects, and challenges in maintaining realistic valuations and delivering on investor expectations. The discussion at the event emphasized the need for strategic investment and cautious optimism as the sector continues to evolve.",
+            "date": "Nov 01 2025",
+            "title": "Soaring Energy Costs Threaten AI and Data Center Operations",
+            "content": "With rising energy prices, consumers express growing concerns about the impact of data centers on electricity costs. The AI and data center industries are under scrutiny as they are significant energy consumers, especially with the increasing demand for AI-driven applications. This situation poses a potential backlash from both the public and regulatory bodies, pressuring companies to find sustainable solutions. Industry experts suggest that data centers must adopt more energy-efficient technologies and explore renewable energy sources to mitigate these concerns. The challenge lies in balancing the need for computational power with environmental responsibility. As AI continues to expand across sectors, the focus on sustainable operations will likely intensify, prompting AI professionals to innovate in energy management strategies. Failure to address these concerns could lead to stricter regulations and increased operational costs, impacting the growth trajectory of AI technologies.",
             "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/podcast/equity-live-from-300m-seed-rounds-to-data-center-builds-ai-is-feeling-bubbly/"
+            "sourceUrl": "https://techcrunch.com/2025/11/01/rising-energy-prices-put-ai-and-data-centers-in-the-crosshairs/"
+        },
+        {
+            "date": "Nov 01 2025",
+            "title": "LLMs in Robots: A Comedic Experiment at Andon Labs",
+            "content": "Researchers at Andon Labs have conducted a fascinating experiment by integrating large language models (LLMs) into a vacuum robot, resulting in unexpected and humorous outcomes. This project aimed to assess the readiness of LLMs for embodiment in physical devices. Surprisingly, the robot began exhibiting behavior reminiscent of the late comedian Robin Williams, showcasing the unpredictable nature of AI personality development. This experiment highlights the complexities involved in embedding AI into robotics, as the integration can lead to emergent behaviors that are not easily controlled or predicted. For AI professionals, this underscores the importance of developing robust frameworks for AI behavior management in embodied systems. As AI continues to advance, understanding and guiding these emergent properties will be crucial in ensuring that robots behave in socially acceptable and beneficial ways.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/01/ai-researchers-embodied-an-llm-into-a-robot-and-it-started-channeling-robin-williams/"
+        },
+        {
+            "date": "Nov 01 2025",
+            "title": "Debating the Cognitive Abilities of Large Reasoning Models",
+            "content": "The debate over whether large reasoning models (LRMs) can truly think has been reignited by a recent Apple research article titled &quot;The Illusion of Thinking.&quot; Apple posits that LRMs do not possess genuine cognitive capabilities but are instead adept at pattern matching. This perspective challenges the notion that AI can achieve true understanding, sparking discussions among AI researchers and professionals. The implications of this debate are significant for the development and application of AI technologies. If LRMs merely simulate thinking, it raises questions about their reliability in decision-making processes that require genuine understanding. AI professionals must critically evaluate the capabilities and limitations of these models, ensuring transparency in their deployment. As AI systems become more integrated into critical sectors, the distinction between pattern recognition and true cognition will play a pivotal role in shaping future AI innovations and ethical guidelines.",
+            "source": "AI | VentureBeat",
+            "sourceUrl": "https://venturebeat.com/ai/large-reasoning-models-almost-certainly-can-think"
         },
         {
             "date": "Oct 31 2025",
-            "title": "AWS Thrives as AI Fuels Demand for Cloud Infrastructure",
-            "content": "Amazon Web Services (AWS) has outperformed Wall Street expectations, driven by an increasing demand for cloud infrastructure, particularly in the AI domain. As organizations across industries integrate AI technologies, the necessity for robust, scalable cloud solutions has surged. AWS, a leader in cloud services, benefits significantly from this trend, providing the backbone for AI applications that require vast computational resources and data storage. This growth highlights the critical role of cloud infrastructure in enabling AI advancements and the strategic importance of AWS&#x27;s offerings in supporting innovation. For AI professionals, this trend underscores the importance of leveraging cloud platforms to enhance scalability and efficiency in AI deployments. As AI continues to permeate various sectors, the reliance on cloud services like AWS is expected to deepen, reinforcing the symbiotic relationship between AI development and cloud infrastructure.",
+            "title": "CoreWeave&#x27;s Strategic Shift: From Core Scientific to Marimo Acquisition",
+            "content": "CoreWeave&#x27;s failed acquisition of Core Scientific signals potential instability in the AI market, often described as an AI bubble. Despite this setback, CoreWeave continues its strategic expansion by acquiring Marimo, a company specializing in Python notebooks. This move reflects CoreWeave&#x27;s focus on diversifying its offerings and strengthening its position in the AI development ecosystem. The acquisition of Marimo suggests a pivot towards supporting AI developers with enhanced tools for machine learning and data analysis. For AI professionals, this highlights the importance of adaptability in a rapidly evolving market landscape. Companies must remain agile, ready to shift strategies to capitalize on emerging opportunities. As AI technologies mature, the ability to provide comprehensive solutions that cater to the needs of developers will likely become a critical factor in maintaining competitive advantage.",
             "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/10/31/aws-exceeds-wall-streets-expectations-as-demand-for-cloud-infra-remains-high/"
+            "sourceUrl": "https://techcrunch.com/2025/10/31/ai-mania-tanks-coreweaves-core-scientific-acquisition-it-buys-python-notebook-marimo/"
+        },
+        {
+            "date": "Oct 31 2025",
+            "title": "The Evolution of ChatGPT: Key Updates and Developments",
+            "content": "ChatGPT has been at the forefront of AI-powered chatbot technology, with a series of updates and releases shaping its capabilities throughout the year. This timeline of advancements reflects the continuous efforts to enhance user interaction and expand functionality. Recent updates have focused on improving language understanding, contextual awareness, and user personalization, making ChatGPT more versatile and effective in various applications. These developments are crucial for AI professionals aiming to leverage ChatGPT in customer service, education, and content creation. As the technology evolves, it is essential for practitioners to stay informed about the latest features and best practices to maximize the benefits of ChatGPT. The ongoing innovation in this space underscores the dynamic nature of AI development, where staying ahead of trends and technological improvements is key to maintaining relevance and delivering value to end-users.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/10/31/chatgpt-everything-to-know-about-the-ai-chatbot/"
         }
     ],
     "articles": {
@@ -149,7 +191,142 @@ var websiteContent = {
             "description": "AI systems now act faster than human oversight. AI-Native Governance explores frameworks where algorithms enforce ethics, compliance, and policy in real time — reimagining accountability when intelligence itself becomes autonomous."
         }
     ],
+    "recentCVEs": [
+        {
+            "cveId": "CVE-2024-51567",
+            "vendor": "CyberPanel",
+            "product": "CyberPanel",
+            "description": "CyberPanel command injection vulnerability allows unauthenticated remote attackers to execute arbitrary commands with root privileges.",
+            "dateAdded": "2024-11-01",
+            "status": "Confirmed",
+            "score": "CRITICAL (10.0)",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-51567"
+        },
+        {
+            "cveId": "CVE-2024-43451",
+            "vendor": "Microsoft",
+            "product": "Windows",
+            "description": "Windows NTLMv2 hash disclosure spoofing vulnerability allows attackers to capture and relay authentication credentials.",
+            "dateAdded": "2024-10-31",
+            "status": "Confirmed",
+            "score": "CRITICAL (9.8)",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-43451"
+        },
+        {
+            "cveId": "CVE-2024-49138",
+            "vendor": "Microsoft",
+            "product": "Windows",
+            "description": "Windows Common Log File System driver elevation of privilege vulnerability enables local attackers to gain SYSTEM privileges.",
+            "dateAdded": "2024-10-30",
+            "status": "Confirmed",
+            "score": "HIGH (8.8)",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-49138"
+        },
+        {
+            "cveId": "CVE-2024-49112",
+            "vendor": "Microsoft",
+            "product": "Windows",
+            "description": "Windows Lightweight Directory Access Protocol elevation of privilege vulnerability allows attackers to escalate privileges on domain-joined systems.",
+            "dateAdded": "2024-10-29",
+            "status": "Confirmed",
+            "score": "HIGH (8.8)",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-49112"
+        },
+        {
+            "cveId": "CVE-2024-43602",
+            "vendor": "Microsoft",
+            "product": "Windows",
+            "description": "Microsoft Remote Procedure Call runtime remote code execution vulnerability enables attackers to execute arbitrary code remotely.",
+            "dateAdded": "2024-10-28",
+            "status": "Confirmed",
+            "score": "CRITICAL (9.8)",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-43602"
+        },
+        {
+            "cveId": "CVE-2024-43639",
+            "vendor": "Microsoft",
+            "product": "Windows",
+            "description": "Windows Kerberos security feature bypass vulnerability allows attackers to bypass Kerberos authentication mechanisms.",
+            "dateAdded": "2024-10-27",
+            "status": "Confirmed",
+            "score": "HIGH (8.1)",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-43639"
+        },
+        {
+            "cveId": "CVE-2024-49039",
+            "vendor": "Microsoft",
+            "product": "Office",
+            "description": "Microsoft Office remote code execution vulnerability in Word allows attackers to execute malicious code through crafted documents.",
+            "dateAdded": "2024-10-27",
+            "status": "Potential",
+            "score": "HIGH (8.8)",
+            "source": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-49039"
+        },
+        {
+            "cveId": "CVE-2024-6768",
+            "vendor": "Palo Alto",
+            "product": "PAN-OS",
+            "description": "Palo Alto Networks PAN-OS command injection vulnerability in Expedition tool allows authenticated attackers to execute OS commands.",
+            "dateAdded": "2024-10-26",
+            "status": "Confirmed",
+            "score": "HIGH (8.8)",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-6768"
+        },
+        {
+            "cveId": "CVE-2024-9474",
+            "vendor": "Palo Alto",
+            "product": "PAN-OS",
+            "description": "Palo Alto Networks Expedition OS command injection vulnerability allows authenticated users to execute arbitrary commands.",
+            "dateAdded": "2024-10-26",
+            "status": "Confirmed",
+            "score": "CRITICAL (9.9)",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-9474"
+        },
+        {
+            "cveId": "CVE-2024-5910",
+            "vendor": "Palo Alto",
+            "product": "PAN-OS",
+            "description": "Palo Alto Networks Expedition missing authentication vulnerability in custom web applications allows unauthenticated attackers to access resources.",
+            "dateAdded": "2024-10-26",
+            "status": "Confirmed",
+            "score": "CRITICAL (9.8)",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-5910"
+        },
+        {
+            "cveId": "CVE-2024-9463",
+            "vendor": "Palo Alto",
+            "product": "PAN-OS",
+            "description": "Palo Alto Networks Expedition SQL injection vulnerability allows authenticated attackers to execute arbitrary SQL queries on database.",
+            "dateAdded": "2024-10-26",
+            "status": "Confirmed",
+            "score": "HIGH (8.8)",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-9463"
+        },
+        {
+            "cveId": "CVE-2024-43093",
+            "vendor": "Android",
+            "product": "Android OS",
+            "description": "Android Framework privilege escalation vulnerability allows local attackers to gain elevated access to system resources without user interaction.",
+            "dateAdded": "2024-10-26",
+            "status": "Potential",
+            "score": "HIGH (7.8)",
+            "source": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-43093"
+        }
+    ],
     "modals": {
+        "whatsNew": "<h2>What's New at TheHGTech</h2><p><em>Latest updates and improvements to your cybersecurity intelligence hub</em></p><h3>🆕 November 2025 - Recent Updates</h3><ul><li><strong>CVE Dashboard (Nov 02, 2025)</strong><br>Real-time tracking of critical vulnerabilities from official sources (CISA KEV & NVD). View the latest CVEs from the past 7 days with severity scores, affected vendors, and direct links to official sources.</li><li><strong>Enhanced Content Delivery (Nov 01, 2025)</strong><br>Improved twice-daily automated content updates at 6 AM and 6 PM IST, ensuring you always have the latest cybersecurity and technology news.</li><li><strong>Security Improvements (Oct 31, 2025)</strong><br>Implemented additional XSS protection and HTML sanitization across all content rendering. Enhanced security headers and input validation for safer browsing.</li><li><strong>Source Attribution (Oct 30, 2025)</strong><br>All content now includes clear source links for authenticity and transparency. Click through to verify information from original publishers.</li></ul><h3>🔧 October 2025 - Platform Enhancements</h3><ul><li><strong>Quick Insights System (Oct 28, 2025)</strong><br>Introduced Cybersecurity and AI Shorts for rapid information consumption. Navigate through curated insights with improved source tracking.</li><li><strong>Archives Feature (Oct 25, 2025)</strong><br>Access to archived articles with improved search and categorization. Browse historical content by topic and date.</li><li><strong>Performance Optimization (Oct 22, 2025)</strong><br>Reduced page load times by 40% through optimized asset delivery and code splitting. Improved mobile responsiveness across all devices.</li><li><strong>Theme System Update (Oct 20, 2025)</strong><br>Enhanced light/dark mode toggle with better contrast ratios and accessibility features. Theme preference now persists across sessions.</li></ul><h3>🔒 Security & Privacy</h3><ul><li>Zero tracking - no cookies, no analytics, no data collection</li><li>All content served over HTTPS with strict CSP headers</li><li>External links open safely with proper security attributes</li><li>Regular security audits and vulnerability scanning</li></ul><h3>Coming Soon</h3><ul><li>Advanced search and filtering capabilities</li><li>Customizable news feed preferences</li><li>Export and sharing features for key insights</li><li>Mobile app for iOS and Android</li></ul><p><em>We're constantly improving to bring you the best cybersecurity and technology intelligence. Have suggestions? Contact us through our official channels.</em></p>",
         "about": "<h2>About TheHGTech</h2><p><strong>TheHGTech</strong> is your trusted source for cutting-edge insights at the intersection of <strong>cybersecurity</strong> and <strong>artificial intelligence</strong>.</p><p>Founded by security professionals and AI enthusiasts, we deliver timely analysis, in-depth articles, and curated news to help you stay ahead of emerging threats and technological innovations.</p><h3>Our Mission</h3><p>We believe in empowering professionals with knowledge that matters. Our content is designed to be:</p><ul><li><strong>Accurate:</strong> Sourced from reputable publications and verified by experts</li><li><strong>Relevant:</strong> Focused on real-world implications for security and AI practitioners</li><li><strong>Accessible:</strong> Written in clear language without sacrificing technical depth</li><li><strong>Forward-thinking:</strong> Exploring not just current events, but future trends and strategic insights</li></ul><h3>What We Cover</h3><p>From nation-state cyber operations to the latest breakthroughs in machine learning, from enterprise security frameworks to ethical AI governance—we bring you the stories that shape the digital landscape.</p><h3>Join Our Community</h3><p>Whether you're a CISO, security analyst, AI researcher, or simply curious about the future of technology, TheHGTech is here to inform, inspire, and connect you with what matters most in the world of cybersecurity and artificial intelligence.</p><p><em>Stay secure. Stay informed. Stay ahead.</em></p>",
         "privacy": "<h2>Privacy Policy</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Information We Collect</h3><p>TheHGTech is committed to protecting your privacy. This website operates with minimal data collection:</p><ul><li><strong>Local Storage:</strong> We use browser localStorage to save your theme preference (light/dark mode)</li><li><strong>No Cookies:</strong> We do not use tracking cookies or third-party analytics</li><li><strong>No Personal Data:</strong> We do not collect, store, or process any personal information</li><li><strong>No User Accounts:</strong> This site does not require registration or login</li></ul><h3>2. Third-Party Links</h3><p>Our content includes links to external news sources and articles. When you click these links, you leave our website and are subject to the privacy policies of those external sites. We encourage you to review their privacy policies.</p><h3>3. Content Sources</h3><p>All news content is sourced from publicly available RSS feeds and reputable cybersecurity and AI news publications. We provide proper attribution and links to original sources.</p><h3>4. Data Security</h3><p>Since we do not collect or store user data, there is no personal information at risk. All content is served statically without server-side processing.</p><h3>5. Your Rights</h3><p>You have full control over your browsing experience:</p><ul><li>Theme preferences are stored locally and can be cleared by clearing your browser's localStorage</li><li>You can browse anonymously without creating an account</li><li>You can use ad blockers, privacy extensions, or VPNs without affecting site functionality</li></ul><h3>6. Changes to This Policy</h3><p>We may update this privacy policy from time to time. Any changes will be posted on this page with an updated revision date.</p><h3>7. Contact</h3><p>If you have questions about this privacy policy or our data practices, please contact us through our official channels.</p><p><em>Your privacy matters. We're committed to keeping it simple, transparent, and respectful.</em></p>",
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
