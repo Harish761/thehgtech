@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """
-TheHGTech Content Automation Script - FULLY FIXED VERSION
+TheHGTech Content Automation Script - FINAL VERSION v2.0
 ✅ Fixed: GPT markdown formatting issue (** breaking URLs)
 ✅ Fixed: CVE date filter (now handles both date formats)
-Now includes CISA KEV CVE fetching
+✅ Expanded: RSS feeds to 19 sources (10 cyber + 9 AI)
+Includes CISA KEV CVE fetching with 7-day filtering
 """
 
 import os
@@ -64,20 +65,36 @@ def validate_url(url):
     
     return url
 
-# RSS Feed Sources
+# RSS Feed Sources - EXPANDED for better coverage
 CYBER_FEEDS = [
+    # ===== TIER 1 - Original Sources (5) =====
     'https://www.bleepingcomputer.com/feed/',
     'https://feeds.feedburner.com/TheHackersNews',
     'https://www.darkreading.com/rss.xml',
     'https://www.securityweek.com/feed/',
     'https://www.cisa.gov/cybersecurity-advisories/all.xml',
+    
+    # ===== PHASE 1 EXPANSION - Top Quality Sources (5) =====
+    'https://krebsonsecurity.com/feed/',                        # Krebs - Best investigative journalism
+    'https://threatpost.com/feed/',                             # Threatpost - Fast breaking news  
+    'https://isc.sans.edu/rssfeed.xml',                         # SANS - Threat intelligence
+    'https://www.recordedfuture.com/feed',                      # Recorded Future - Professional research
+    'https://feeds.arstechnica.com/arstechnica/security',       # Ars Technica - Technical depth
 ]
 
 AI_FEEDS = [
+    # ===== TIER 1 - Original Sources (4) =====
     'https://techcrunch.com/category/artificial-intelligence/feed/',
     'https://www.theverge.com/ai-artificial-intelligence/rss/index.xml',
     'https://venturebeat.com/category/ai/feed/',
     'https://www.artificialintelligence-news.com/feed/',
+    
+    # ===== PHASE 1 EXPANSION - Top Quality Sources (5) =====
+    'https://www.technologyreview.com/topic/artificial-intelligence/feed',  # MIT - Academic rigor
+    'https://ai.googleblog.com/feeds/posts/default',            # Google AI - Authoritative
+    'https://openai.com/blog/rss.xml',                          # OpenAI - GPT updates
+    'https://www.anthropic.com/index/rss.xml',                  # Anthropic - Claude updates
+    'https://deepmind.google/blog/rss.xml',                     # DeepMind - Research
 ]
 
 
@@ -463,9 +480,10 @@ def update_shorts():
     ist_time = get_current_time_ist()
     
     print(f"\n{'='*60}")
-    print(f"🚀 TheHGTech Content Automation - FULLY FIXED VERSION")
+    print(f"🚀 TheHGTech Content Automation - FINAL VERSION v2.0")
     print(f"⏰ Time: {ist_time.strftime('%Y-%m-%d %I:%M %p IST')}")
     print(f"📡 Mode: Real RSS Feed Aggregation + GPT-4o Formatting")
+    print(f"📊 Sources: 19 RSS feeds (10 cyber + 9 AI)")
     print(f"🔗 URL Preservation: ENABLED")
     print(f"🔄 Duplicate Detection: ENABLED")
     print(f"🗑️  Old Content Removal: IMPROVED")
