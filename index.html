@@ -228,7 +228,7 @@
         
         /* ========== WHAT'S NEW BUTTON ========== */
         .whats-new-button {
-            background: linear-gradient(135deg, #28a745, #20c997);
+            background: linear-gradient(135deg, #E01F3D, #C81E3A);
             color: white;
             border: none;
             padding: 8px 16px;
@@ -240,24 +240,13 @@
             display: flex;
             align-items: center;
             gap: 6px;
-            box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3);
+            box-shadow: 0 2px 8px rgba(224, 31, 61, 0.3);
         }
         
         .whats-new-button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(40, 167, 69, 0.4);
-        }
-        
-        .whats-new-button .icon {
-            font-size: 14px;
-            animation: sparkle 2s ease-in-out infinite;
-        }
-        
-        @keyframes sparkle {
-            0%, 100% { transform: scale(1) rotate(0deg); }
-            25% { transform: scale(1.1) rotate(-10deg); }
-            50% { transform: scale(1) rotate(0deg); }
-            75% { transform: scale(1.1) rotate(10deg); }
+            box-shadow: 0 4px 12px rgba(224, 31, 61, 0.4);
+            background: linear-gradient(135deg, #F02545, #E01F3D);
         }
         /* Quick Insights Section */
         .quick-insights {
@@ -1797,7 +1786,6 @@
                 </div>
                 <div style="display: flex; align-items: center; gap: 15px;">
                     <button class="whats-new-button" onclick="openModal('whatsNew')">
-                        <span class="icon">✨</span>
                         What's New
                     </button>
                     <div class="theme-toggle-container">
