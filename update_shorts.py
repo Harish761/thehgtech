@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-TheHGTech Content Automation Script - FIXED VERSION
-Fixes the duplicate detection + old content removal logic
+TheHGTech Content Automation Script - FULLY FIXED VERSION
+✅ Fixed: GPT markdown formatting issue (** breaking URLs)
+✅ Fixed: CVE date filter (now handles both date formats)
 Now includes CISA KEV CVE fetching
 """
 
@@ -204,13 +205,20 @@ Important guidelines:
 - Include relevant technical details where appropriate
 - Explain significance for professionals in the field
 
+CRITICAL FORMATTING RULES:
+- DO NOT use any markdown formatting (no **, no __, no # headers, no * bullets)
+- Write in plain text only
+- Do not add bold, italic, or any other formatting
+- Keep the exact format shown above with labeled sections
+- The Source URL must be EXACTLY "ARTICLE_X_URL_PLACEHOLDER" - do not modify it
+
 Create a short for EACH of the {len(top_articles)} articles above."""
     
     try:
         response = client.chat.completions.create(
             model="gpt-4o",
             messages=[
-                {"role": "system", "content": "You are a professional tech journalist specializing in cybersecurity and AI."},
+                {"role": "system", "content": "You are a professional tech journalist specializing in cybersecurity and AI. You write in plain text without any markdown formatting."},
                 {"role": "user", "content": prompt}
             ],
             temperature=0.5,
@@ -375,7 +383,10 @@ def deduplicate_cves(cves):
 
 
 def filter_old_cves(cves, days=7):
-    """Remove CVEs older than specified days"""
+    """
+    Remove CVEs older than specified days
+    ✅ FIXED: Now handles BOTH date formats
+    """
     if not cves:
         return []
     
@@ -385,14 +396,39 @@ def filter_old_cves(cves, days=7):
     for cve in cves:
         try:
             date_str = cve.get('dateAdded', '')
-            # Parse format: "Nov 02, 2025"
-            date_obj = datetime.strptime(date_str, '%b %d, %Y')
-            date_obj = date_obj.replace(tzinfo=pytz.UTC)
             
-            if date_obj >= cutoff:
+            # Try multiple date formats
+            date_obj = None
+            
+            # Format 1: "Nov 02, 2025" (display format)
+            try:
+                date_obj = datetime.strptime(date_str, '%b %d, %Y')
+                date_obj = date_obj.replace(tzinfo=pytz.UTC)
+            except:
+                pass
+            
+            # Format 2: "2024-10-26" (YYYY-MM-DD - old format)
+            if not date_obj:
+                try:
+                    date_obj = datetime.strptime(date_str, '%Y-%m-%d')
+                    date_obj = date_obj.replace(tzinfo=pytz.UTC)
+                except:
+                    pass
+            
+            # If we successfully parsed the date, check if it's recent
+            if date_obj:
+                if date_obj >= cutoff:
+                    filtered.append(cve)
+                else:
+                    print(f"   🗑️ Filtered old CVE: {cve.get('cveId', 'Unknown')} from {date_str}")
+            else:
+                # If parsing fails, keep the CVE (safer) but warn
+                print(f"   ⚠️ Could not parse date for {cve.get('cveId', 'Unknown')}: {date_str}")
                 filtered.append(cve)
-        except:
-            # If parsing fails, keep the CVE (safer)
+                
+        except Exception as e:
+            print(f"   ⚠️ Error filtering CVE: {e}")
+            # If error, keep the CVE (safer)
             filtered.append(cve)
     
     return filtered
@@ -427,7 +463,7 @@ def update_shorts():
     ist_time = get_current_time_ist()
     
     print(f"\n{'='*60}")
-    print(f"🚀 TheHGTech Content Automation - FIXED VERSION")
+    print(f"🚀 TheHGTech Content Automation - FULLY FIXED VERSION")
     print(f"⏰ Time: {ist_time.strftime('%Y-%m-%d %I:%M %p IST')}")
     print(f"📡 Mode: Real RSS Feed Aggregation + GPT-4o Formatting")
     print(f"🔗 URL Preservation: ENABLED")
@@ -435,6 +471,8 @@ def update_shorts():
     print(f"🗑️  Old Content Removal: IMPROVED")
     print(f"🔒 Modals Preservation: ENABLED")
     print(f"🔒 CVE Auto-Update: ENABLED (CISA KEV)")
+    print(f"✅ GPT Markdown Fix: ENABLED")
+    print(f"✅ CVE Date Filter Fix: ENABLED")
     print(f"{'='*60}\n")
     
     # Check for force refresh mode
