@@ -4,34 +4,76 @@
 var websiteContent = {
     "cyberShorts": [
         {
-            "date": "Nov 01 2025",
-            "title": "Google to Integrate Ads into AI Search Results",
-            "content": "Google has confirmed that advertisements will be integrated into its AI search results, signaling a strategic expansion of its ad ecosystem. While the exact appearance and format of these ads remain under wraps, they are expected to differ from traditional formats to better align with AI-driven search experiences. This move underscores Google&#x27;s commitment to monetizing its AI capabilities, ensuring that ads remain a core revenue stream. For cybersecurity professionals, this development emphasizes the need to understand how AI and advertising can intersect, potentially impacting user privacy and data security. As AI algorithms increasingly tailor search results, the cybersecurity community must remain vigilant about how personal data is used and protected in this evolving landscape.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/google/google-confirms-ai-search-will-have-ads-but-they-may-look-different/"
+            "date": "Nov 03 2025",
+            "title": "Weekly Update: Lazarus Targets Web3, Intel/AMD Security Breach, and Dark Web Tools",
+            "content": "This week, the cybersecurity landscape witnessed a series of sophisticated attacks. The notorious Lazarus Group targeted Web3 technologies, exploiting vulnerabilities with increased precision. Meanwhile, security researchers revealed that trusted execution environments (TEEs) of major chipmakers Intel and AMD were compromised, highlighting the urgent need for enhanced security measures. Additionally, new tools emerged on the dark web, facilitating faster exploitation of newly discovered vulnerabilities. These developments underscore the escalating complexity of cyber threats, posing significant challenges for security professionals striving to protect sensitive data and systems.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/11/weekly-recap-lazarus-hits-web3-intelamd.html"
         },
         {
-            "date": "Nov 01 2025",
-            "title": "Windows 11 Introduces &quot;Ask Copilot&quot; Feature in Latest Build",
-            "content": "Microsoft has released Windows 11 Build 26220.7051 to Windows Insider Program testers, unveiling several new features, including the &quot;Ask Copilot&quot; functionality integrated into the taskbar. This feature aims to enhance user interaction by providing AI-driven assistance directly from the taskbar, making it easier to access information and perform tasks. The update reflects Microsoft&#x27;s ongoing commitment to integrating AI into its operating systems, offering a more intuitive user experience. For cybersecurity experts, this development highlights the importance of securing AI interfaces and understanding potential vulnerabilities that could arise from increased AI integration. As AI becomes more embedded in everyday computing, safeguarding these systems from exploitation will be crucial.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/windows-11-build-262207051-released-with-ask-copilot-feature/"
+            "date": "Nov 03 2025",
+            "title": "October 2025 Cybersecurity M&amp;A: 45 Major Deals Announced",
+            "content": "The cybersecurity sector saw a flurry of merger and acquisition activity in October 2025, with 45 significant deals announced. Major players like Jamf, LevelBlue, Ping Identity, Twilio, and Veeam Software were at the forefront, indicating a robust market consolidation trend. These strategic acquisitions are expected to enhance the capabilities and market reach of the involved companies, potentially leading to more integrated and comprehensive security solutions. For cybersecurity professionals, these developments highlight the dynamic nature of the industry and the importance of staying informed about market shifts that could impact security strategies and technology adoption.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/cybersecurity-ma-roundup-45-deals-announced-in-october-2025/"
+        },
+        {
+            "date": "Nov 03 2025",
+            "title": "Ensuring Security in AI-Driven Code: Five Essential Checkpoints",
+            "content": "As AI becomes increasingly integrated into software development, ensuring the security of AI-generated code is paramount. Developers must treat AI as a collaborative tool, rather than an autonomous coder, to maintain robust security standards. Experts emphasize five critical checkpoints for human oversight: input validation, error handling, authentication, data protection, and compliance with security standards. This approach is vital for preventing vulnerabilities that could be exploited by malicious actors. For developers and security teams, understanding these checkpoints is crucial for leveraging AI&#x27;s potential while safeguarding applications against emerging threats.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/application-security/ai-code-security-checkpoints"
+        },
+        {
+            "date": "Nov 03 2025",
+            "title": "Transforming SOC Operations with Continuous Exposure Management",
+            "content": "Security Operations Centers (SOCs) are evolving to address the overwhelming volume of alerts they face daily. Continuous Exposure Management (CEM) is emerging as a transformative approach, enabling SOCs to prioritize threats more effectively by integrating real-time threat intelligence and environmental context. This shift helps analysts focus on genuine threats, reducing the time spent on false positives and improving response times. For security professionals, adopting CEM represents a strategic advancement in operational efficiency, allowing for a more proactive and informed defense against cyber threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/11/the-evolution-of-soc-operations-how.html"
+        },
+        {
+            "date": "Nov 03 2025",
+            "title": "Discovery of BankBot-YNRK and DeliveryRAT: New Android Threats",
+            "content": "Cybersecurity researchers have identified two new Android trojans, BankBot-YNRK and DeliveryRAT, which are designed to steal sensitive financial data from infected devices. Analyzed by CYFIRMA, BankBot-YNRK is equipped with features that enable it to silently siphon information, posing a significant risk to users&#x27; financial security. These findings underscore the ongoing threat posed by mobile malware, which continues to evolve in sophistication and impact. For security practitioners, understanding these threats is critical for developing effective countermeasures and protecting mobile users from potential data breaches.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/11/researchers-uncover-bankbot-ynrk-and.html"
         }
     ],
     "aiShorts": [
         {
-            "date": "Nov 01 2025",
-            "title": "Soaring Energy Costs Threaten AI and Data Center Operations",
-            "content": "With rising energy prices, consumers express growing concerns about the impact of data centers on electricity costs. The AI and data center industries are under scrutiny as they are significant energy consumers, especially with the increasing demand for AI-driven applications. This situation poses a potential backlash from both the public and regulatory bodies, pressuring companies to find sustainable solutions. Industry experts suggest that data centers must adopt more energy-efficient technologies and explore renewable energy sources to mitigate these concerns. The challenge lies in balancing the need for computational power with environmental responsibility. As AI continues to expand across sectors, the focus on sustainable operations will likely intensify, prompting AI professionals to innovate in energy management strategies. Failure to address these concerns could lead to stricter regulations and increased operational costs, impacting the growth trajectory of AI technologies.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/01/rising-energy-prices-put-ai-and-data-centers-in-the-crosshairs/"
+            "date": "Nov 03 2025",
+            "title": "UK Executives Push for Measurable AI Returns",
+            "content": "In the UK, AI investment has shifted from experimental to essential, with executives now under pressure to provide tangible evidence of AI&#x27;s impact. Boards are increasingly demanding proof of efficiency gains, revenue growth, or risk reduction from AI initiatives. Pete Smyth, CEO of Leading Resolutions, observes that many SMEs still view AI as a novelty rather than a strategic asset. This trend underscores a critical need for businesses to develop robust frameworks for measuring AI&#x27;s return on investment. For AI professionals, this highlights the importance of aligning AI projects with clear business objectives and performance metrics. As AI becomes more integrated into core business strategies, the ability to quantify its benefits will be crucial for sustaining investment and support.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/quantifying-ai-roi-leading-resolutions/"
         },
         {
-            "date": "Nov 01 2025",
-            "title": "LLMs in Robots: A Comedic Experiment at Andon Labs",
-            "content": "Researchers at Andon Labs have conducted a fascinating experiment by integrating large language models (LLMs) into a vacuum robot, resulting in unexpected and humorous outcomes. This project aimed to assess the readiness of LLMs for embodiment in physical devices. Surprisingly, the robot began exhibiting behavior reminiscent of the late comedian Robin Williams, showcasing the unpredictable nature of AI personality development. This experiment highlights the complexities involved in embedding AI into robotics, as the integration can lead to emergent behaviors that are not easily controlled or predicted. For AI professionals, this underscores the importance of developing robust frameworks for AI behavior management in embodied systems. As AI continues to advance, understanding and guiding these emergent properties will be crucial in ensuring that robots behave in socially acceptable and beneficial ways.",
+            "date": "Nov 03 2025",
+            "title": "Navigating AI in Continuous Deployment Pipelines",
+            "content": "The integration of AI into continuous development and deployment pipelines is increasingly unavoidable for software development leaders. However, deploying AI at scale presents unique challenges that require careful consideration of various elements. These challenges include managing complex data flows, ensuring model accuracy, and maintaining system reliability. For decision-makers, understanding these factors is essential to effectively leverage AI in DevOps environments. This development is significant for AI and software professionals as it calls for new strategies and tools to optimize AI deployment processes. By addressing these challenges, organizations can enhance their AI capabilities and drive innovation in software development.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/devops-for-ai-continuous-deployment-pipelines-for-machine-learning-systems/"
+        },
+        {
+            "date": "Nov 03 2025",
+            "title": "NVIDIA and South Korea Collaborate on Sovereign AI Infrastructure",
+            "content": "NVIDIA announced its collaboration with South Korean public agencies and private companies to establish sovereign AI infrastructure during the APEC CEO Summit. The initiative involves deploying hundreds of thousands of NVIDIA GPUs across sovereign clouds and AI factories, focusing on sectors like automotive, manufacturing, and telecommunications. This partnership aims to bolster South Korea&#x27;s AI capabilities and drive innovation across key industries. For AI professionals, this collaboration underscores the growing importance of sovereign AI solutions in maintaining data privacy and national security. It also highlights the strategic role of AI infrastructure in advancing technological competitiveness on a global scale.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/nvidia-and-south-korea-align-on-sovereign-ai-at-apec-summit/"
+        },
+        {
+            "date": "Nov 03 2025",
+            "title": "Qualcomm Enters AI Data Center Chip Market",
+            "content": "Qualcomm has made a significant move into the AI data center chip market, challenging industry leader NVIDIA. Known for its dominance in smartphone processors, Qualcomm&#x27;s entry into this market aims to capitalize on the lucrative opportunities in AI inference workloads. This development is noteworthy for AI and data center professionals as it introduces new competition and potential innovations in AI chip technology. Qualcomm&#x27;s strategy could lead to advancements in performance and efficiency, impacting how AI models are deployed and scaled in data centers. As the demand for AI processing power grows, this move could reshape market dynamics and drive further innovation in AI hardware.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/qualcomm-ai-data-centre-chips-ai200-ai250/"
+        },
+        {
+            "date": "Nov 03 2025",
+            "title": "Evaluating AI Hardware: The Kevin Rose Test",
+            "content": "Investor Kevin Rose proposes a unique test for evaluating AI hardware: considering whether it provokes a negative emotional response from others. This perspective emphasizes not only technical performance but also the social and emotional impact of AI devices. For AI hardware developers and investors, this approach highlights the importance of user experience and societal acceptance in product design. As AI technologies become more integrated into daily life, understanding their emotional and social implications is crucial for widespread adoption. This test serves as a reminder that successful AI hardware must balance innovation with human-centric design principles.",
             "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/01/ai-researchers-embodied-an-llm-into-a-robot-and-it-started-channeling-robin-williams/"
+            "sourceUrl": "https://techcrunch.com/2025/11/02/kevin-roses-simple-test-for-ai-hardware-would-you-want-to-punch-someone-in-the-face-whos-wearing-it/"
         }
     ],
     "articles": {
@@ -189,127 +231,6 @@ var websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-6205"
-        },
-        {
-            "cveId": "CVE-2024-51567",
-            "vendor": "CyberPanel",
-            "product": "CyberPanel",
-            "description": "CyberPanel command injection vulnerability allows unauthenticated remote attackers to execute arbitrary commands with root privileges.",
-            "dateAdded": "2024-11-01",
-            "status": "Confirmed",
-            "score": "CRITICAL (10.0)",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-51567"
-        },
-        {
-            "cveId": "CVE-2024-43451",
-            "vendor": "Microsoft",
-            "product": "Windows",
-            "description": "Windows NTLMv2 hash disclosure spoofing vulnerability allows attackers to capture and relay authentication credentials.",
-            "dateAdded": "2024-10-31",
-            "status": "Confirmed",
-            "score": "CRITICAL (9.8)",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-43451"
-        },
-        {
-            "cveId": "CVE-2024-49138",
-            "vendor": "Microsoft",
-            "product": "Windows",
-            "description": "Windows Common Log File System driver elevation of privilege vulnerability enables local attackers to gain SYSTEM privileges.",
-            "dateAdded": "2024-10-30",
-            "status": "Confirmed",
-            "score": "HIGH (8.8)",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-49138"
-        },
-        {
-            "cveId": "CVE-2024-49112",
-            "vendor": "Microsoft",
-            "product": "Windows",
-            "description": "Windows Lightweight Directory Access Protocol elevation of privilege vulnerability allows attackers to escalate privileges on domain-joined systems.",
-            "dateAdded": "2024-10-29",
-            "status": "Confirmed",
-            "score": "HIGH (8.8)",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-49112"
-        },
-        {
-            "cveId": "CVE-2024-43602",
-            "vendor": "Microsoft",
-            "product": "Windows",
-            "description": "Microsoft Remote Procedure Call runtime remote code execution vulnerability enables attackers to execute arbitrary code remotely.",
-            "dateAdded": "2024-10-28",
-            "status": "Confirmed",
-            "score": "CRITICAL (9.8)",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-43602"
-        },
-        {
-            "cveId": "CVE-2024-43639",
-            "vendor": "Microsoft",
-            "product": "Windows",
-            "description": "Windows Kerberos security feature bypass vulnerability allows attackers to bypass Kerberos authentication mechanisms.",
-            "dateAdded": "2024-10-27",
-            "status": "Confirmed",
-            "score": "HIGH (8.1)",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-43639"
-        },
-        {
-            "cveId": "CVE-2024-49039",
-            "vendor": "Microsoft",
-            "product": "Office",
-            "description": "Microsoft Office remote code execution vulnerability in Word allows attackers to execute malicious code through crafted documents.",
-            "dateAdded": "2024-10-27",
-            "status": "Potential",
-            "score": "HIGH (8.8)",
-            "source": "NVD",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-49039"
-        },
-        {
-            "cveId": "CVE-2024-6768",
-            "vendor": "Palo Alto",
-            "product": "PAN-OS",
-            "description": "Palo Alto Networks PAN-OS command injection vulnerability in Expedition tool allows authenticated attackers to execute OS commands.",
-            "dateAdded": "2024-10-26",
-            "status": "Confirmed",
-            "score": "HIGH (8.8)",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-6768"
-        },
-        {
-            "cveId": "CVE-2024-9474",
-            "vendor": "Palo Alto",
-            "product": "PAN-OS",
-            "description": "Palo Alto Networks Expedition OS command injection vulnerability allows authenticated users to execute arbitrary commands.",
-            "dateAdded": "2024-10-26",
-            "status": "Confirmed",
-            "score": "CRITICAL (9.9)",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-9474"
-        },
-        {
-            "cveId": "CVE-2024-5910",
-            "vendor": "Palo Alto",
-            "product": "PAN-OS",
-            "description": "Palo Alto Networks Expedition missing authentication vulnerability in custom web applications allows unauthenticated attackers to access resources.",
-            "dateAdded": "2024-10-26",
-            "status": "Confirmed",
-            "score": "CRITICAL (9.8)",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-5910"
-        },
-        {
-            "cveId": "CVE-2024-9463",
-            "vendor": "Palo Alto",
-            "product": "PAN-OS",
-            "description": "Palo Alto Networks Expedition SQL injection vulnerability allows authenticated attackers to execute arbitrary SQL queries on database.",
-            "dateAdded": "2024-10-26",
-            "status": "Confirmed",
-            "score": "HIGH (8.8)",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-9463"
         }
     ],
     "modals": {
