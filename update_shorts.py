@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """
-TheHGTech Content Automation Script - FINAL VERSION v2.0
+TheHGTech Content Automation Script - FINAL VERSION v2.1
 ✅ Fixed: GPT markdown formatting issue (** breaking URLs)
 ✅ Fixed: CVE date filter (now handles both date formats)
+✅ NEW: Promotional content filtering (blocks tool/product promotions)
 ✅ Expanded: RSS feeds to 19 sources (10 cyber + 9 AI)
 Includes CISA KEV CVE fetching with 7-day filtering
 """
@@ -65,6 +66,135 @@ def validate_url(url):
     
     return url
 
+
+def is_promotional_content(title, summary, source=""):
+    """
+    Detect promotional/marketing content using keyword analysis
+    Returns True if content appears promotional
+    """
+    # Combine title and summary for analysis
+    text = f"{title} {summary}".lower()
+    
+    # PROMOTIONAL KEYWORDS - Tools/Products/Platforms being promoted
+    promotional_keywords = [
+        # Direct promotional language
+        'offers a robust solution',
+        'offers a', 'solution for',
+        'provides comprehensive',
+        'enables organizations',
+        'platform offers',
+        'tool enables',
+        'best solution',
+        'leading platform',
+        'premier solution',
+        
+        # Marketing language
+        'revolutionize',
+        'game-changer',
+        'cutting-edge platform',
+        'innovative solution',
+        'unlock the power',
+        'transform your',
+        'enhance your defense',
+        'streamline your',
+        
+        # Call-to-action indicators
+        'learn more about',
+        'discover how',
+        'get started with',
+        'try it today',
+        'sign up for',
+        'request a demo',
+        
+        # Product-focused (not news-focused)
+        'feature highlights',
+        'key features include',
+        'benefits include',
+        'why choose',
+        
+        # Sponsored content indicators
+        'sponsored by',
+        'in partnership with',
+        'powered by',
+        'brought to you by',
+    ]
+    
+    # TOOL/PLATFORM NAMES that are commonly promoted
+    # (Only flag if they're the MAIN subject, not just mentioned)
+    tool_promotion_patterns = [
+        'wazuh open source platform',
+        'introducing [a-z]+ platform',
+        'announcing [a-z]+ tool',
+        'new release of [a-z]+ ',
+    ]
+    
+    # Check for promotional keywords
+    promo_score = 0
+    matched_keywords = []
+    
+    for keyword in promotional_keywords:
+        if keyword in text:
+            promo_score += 1
+            matched_keywords.append(keyword)
+    
+    # Check for tool promotion patterns
+    for pattern in tool_promotion_patterns:
+        if re.search(pattern, text, re.IGNORECASE):
+            promo_score += 2
+            matched_keywords.append(f"pattern: {pattern}")
+    
+    # Title-specific checks (promotional titles are usually benefits-focused)
+    if any(phrase in title.lower() for phrase in [
+        'how to', 'why you should', 'benefits of', 'guide to using',
+        'best practices for', 'getting started with'
+    ]):
+        # Only flag if it's about a specific tool/product
+        if any(word in title.lower() for word in ['platform', 'tool', 'solution', 'software']):
+            promo_score += 1
+            matched_keywords.append("how-to for specific tool")
+    
+    # Decision threshold
+    is_promo = promo_score >= 2
+    
+    if is_promo:
+        print(f"      🚫 PROMOTIONAL DETECTED: {title[:60]}...")
+        print(f"         Matched keywords: {', '.join(matched_keywords[:3])}")
+    
+    return is_promo
+
+
+def filter_promotional_content(articles):
+    """
+    Filter out promotional/marketing articles
+    Returns only genuine news articles
+    """
+    if not articles:
+        return articles
+    
+    print(f"\n🔍 Filtering promotional content...")
+    
+    filtered = []
+    promotional_count = 0
+    
+    for article in articles:
+        if not is_promotional_content(
+            article.get('title', ''),
+            article.get('summary', ''),
+            article.get('source', '')
+        ):
+            filtered.append(article)
+        else:
+            promotional_count += 1
+    
+    if promotional_count > 0:
+        print(f"   🚫 Removed {promotional_count} promotional articles")
+    else:
+        print(f"   ✅ No promotional content detected")
+    
+    print(f"   📊 Remaining articles: {len(filtered)}")
+    
+    return filtered
+
 # RSS Feed Sources - EXPANDED for better coverage
 CYBER_FEEDS = [
     # ===== TIER 1 - Original Sources (5) =====
@@ -97,6 +227,14 @@ AI_FEEDS = [
     'https://deepmind.google/blog/rss.xml',                     # DeepMind - Research
 ]
 
+# ===== OPTIONAL: RSS FEED BLACKLIST =====
+# If certain feeds consistently produce promotional content, add them here
+# These feeds will be completely skipped
+BLACKLISTED_FEEDS = [
+    # Example: 'https://example.com/feed/',
+    # Add problematic feeds here if keyword filtering isn't enough
+]
+
 
 def get_current_time_ist():
     """Get current time in IST"""
@@ -112,6 +250,11 @@ def fetch_recent_articles(feeds, hours_back=72):  # INCREASED FROM 48 to 72
     print(f"📡 Fetching articles from {len(feeds)} feeds (past {hours_back} hours)...")
     
     for feed_url in feeds:
+        # Skip blacklisted feeds
+        if feed_url in BLACKLISTED_FEEDS:
+            print(f"   ⛔ SKIPPED (blacklisted): {feed_url}")
+            continue
+            
         try:
             print(f"   → Fetching: {feed_url}")
             feed = feedparser.parse(feed_url)
@@ -480,12 +623,13 @@ def update_shorts():
     ist_time = get_current_time_ist()
     
     print(f"\n{'='*60}")
-    print(f"🚀 TheHGTech Content Automation - FINAL VERSION v2.0")
+    print(f"🚀 TheHGTech Content Automation - FINAL VERSION v2.1")
     print(f"⏰ Time: {ist_time.strftime('%Y-%m-%d %I:%M %p IST')}")
     print(f"📡 Mode: Real RSS Feed Aggregation + GPT-4o Formatting")
     print(f"📊 Sources: 19 RSS feeds (10 cyber + 9 AI)")
     print(f"🔗 URL Preservation: ENABLED")
     print(f"🔄 Duplicate Detection: ENABLED")
+    print(f"🚫 Promotional Filter: ENABLED")  # NEW
     print(f"🗑️  Old Content Removal: IMPROVED")
     print(f"🔒 Modals Preservation: ENABLED")
     print(f"🔒 CVE Auto-Update: ENABLED (CISA KEV)")
@@ -520,6 +664,10 @@ def update_shorts():
     # Fetch real articles from RSS feeds
     cyber_articles = fetch_recent_articles(CYBER_FEEDS, hours_back=72)
     ai_articles = fetch_recent_articles(AI_FEEDS, hours_back=72)
+    
+    # ✨ NEW: Filter out promotional content BEFORE processing
+    cyber_articles = filter_promotional_content(cyber_articles)
+    ai_articles = filter_promotional_content(ai_articles)
     
     # Fetch CVEs from CISA KEV
     new_cves = fetch_cisa_cves()
