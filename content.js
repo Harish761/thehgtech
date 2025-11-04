@@ -4,146 +4,76 @@
 var websiteContent = {
     "cyberShorts": [
         {
-            "date": "Nov 03 2025",
-            "title": "Vulnerability in Claude AI APIs Allows Data Exfiltration",
-            "content": "A vulnerability in Claude AI&#x27;s APIs has been discovered, allowing attackers to inject indirect prompts that manipulate the AI model into collecting and exfiltrating user data to the attacker&#x27;s account. This security flaw poses a significant risk as it can be exploited to access sensitive information without the user&#x27;s knowledge. The issue highlights the importance of robust security measures in AI systems to prevent unauthorized data access. For cybersecurity professionals, this development underscores the need for continuous monitoring and updating of AI systems to safeguard against such vulnerabilities. Ensuring data integrity and privacy remains a top priority in the deployment of AI technologies.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/claude-ai-apis-can-be-abused-for-data-exfiltration/"
+            "date": "Nov 04 2025",
+            "title": "ISC Stormcast Highlights Key Cybersecurity Trends",
+            "content": "The latest ISC Stormcast podcast for November 4th, 2025, provides a comprehensive overview of current cybersecurity trends and challenges. The episode discusses emerging threats and vulnerabilities that organizations need to be aware of, emphasizing the importance of proactive security measures. With the InfoCON status at green, the podcast suggests a stable threat environment but warns against complacency. Cybersecurity professionals are encouraged to stay informed about evolving tactics used by threat actors. The episode also covers recent incidents and provides insights into mitigating risks. This information is crucial for maintaining robust security postures in an ever-changing digital landscape.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32446"
         },
         {
             "date": "Nov 03 2025",
-            "title": "Kimsuky Group Deploys HttpTroy Backdoor in South Korea Cyberattack",
-            "content": "The North Korea-affiliated cyber group, Kimsuky, has launched a targeted cyberattack against a victim in South Korea using a new backdoor named HttpTroy. Disguised as a VPN invoice, this malware is part of a spear-phishing campaign aimed at infiltrating systems and gaining unauthorized access. The attack&#x27;s sophistication indicates a strategic approach to compromise specific targets, raising concerns about the evolving tactics of state-sponsored cyber threats. For cybersecurity experts, this incident emphasizes the need for heightened vigilance and advanced threat detection capabilities to counteract such targeted attacks effectively.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/11/new-httptroy-backdoor-poses-as-vpn.html"
-        },
-        {
-            "date": "Nov 03 2025",
-            "title": "Airstalk Malware Exploits AirWatch API in Supply Chain Attacks",
-            "content": "A Chinese advanced persistent threat (APT) group has been identified using a new malware strain named &#x27;Airstalk&#x27; in supply chain attacks. This malware utilizes PowerShell and .NET variants to exploit AirWatch&#x27;s Mobile Device Management (MDM) API, establishing a command and control communication channel. Such attacks highlight the vulnerabilities in supply chain networks, where malware can infiltrate and disrupt operations. For security professionals, this incident underscores the critical need for comprehensive security protocols and regular audits of third-party integrations to prevent exploitation by sophisticated threat actors.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/chinese-apt-uses-airstalk-malware-in-supply-chain-attacks/"
-        },
-        {
-            "date": "Nov 03 2025",
-            "title": "Windows 11 Task Manager Issue Arises After Recent Update",
-            "content": "Microsoft has acknowledged a bug affecting Windows 11 users, where the Task Manager fails to close after installing the October 2025 optional update (KB5067036). This issue presents a challenge for users attempting to manage system processes efficiently. While Microsoft is working on a resolution, the problem highlights the potential for software updates to inadvertently introduce new issues. For IT professionals, this situation serves as a reminder of the importance of testing updates in controlled environments before widespread deployment to mitigate operational disruptions.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-task-manager-wont-quit-after-kb5067036-update/"
-        },
-        {
-            "date": "Nov 03 2025",
-            "title": "Google Awards $100,000 for Discovering Chrome Vulnerabilities",
-            "content": "Google has paid out $100,000 in rewards for identifying two high-severity vulnerabilities in Chrome&#x27;s V8 JavaScript engine. These issues involve type confusion and inappropriate implementation, which could potentially be exploited to compromise user security. The substantial reward reflects Google&#x27;s commitment to enhancing browser security through its bug bounty program. For security professionals, this serves as a reminder of the critical role that vulnerability research plays in maintaining the integrity of widely-used software platforms, and the importance of collaborative efforts in identifying and addressing security flaws.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/google-pays-100000-in-rewards-for-two-chrome-vulnerabilities/"
-        },
-        {
-            "date": "Nov 03 2025",
-            "title": "Weekly Update: Lazarus Targets Web3, Intel/AMD Security Breach, and Dark Web Tools",
-            "content": "This week, the cybersecurity landscape witnessed a series of sophisticated attacks. The notorious Lazarus Group targeted Web3 technologies, exploiting vulnerabilities with increased precision. Meanwhile, security researchers revealed that trusted execution environments (TEEs) of major chipmakers Intel and AMD were compromised, highlighting the urgent need for enhanced security measures. Additionally, new tools emerged on the dark web, facilitating faster exploitation of newly discovered vulnerabilities. These developments underscore the escalating complexity of cyber threats, posing significant challenges for security professionals striving to protect sensitive data and systems.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/11/weekly-recap-lazarus-hits-web3-intelamd.html"
-        },
-        {
-            "date": "Nov 03 2025",
-            "title": "October 2025 Cybersecurity M&amp;A: 45 Major Deals Announced",
-            "content": "The cybersecurity sector saw a flurry of merger and acquisition activity in October 2025, with 45 significant deals announced. Major players like Jamf, LevelBlue, Ping Identity, Twilio, and Veeam Software were at the forefront, indicating a robust market consolidation trend. These strategic acquisitions are expected to enhance the capabilities and market reach of the involved companies, potentially leading to more integrated and comprehensive security solutions. For cybersecurity professionals, these developments highlight the dynamic nature of the industry and the importance of staying informed about market shifts that could impact security strategies and technology adoption.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/cybersecurity-ma-roundup-45-deals-announced-in-october-2025/"
-        },
-        {
-            "date": "Nov 03 2025",
-            "title": "Ensuring Security in AI-Driven Code: Five Essential Checkpoints",
-            "content": "As AI becomes increasingly integrated into software development, ensuring the security of AI-generated code is paramount. Developers must treat AI as a collaborative tool, rather than an autonomous coder, to maintain robust security standards. Experts emphasize five critical checkpoints for human oversight: input validation, error handling, authentication, data protection, and compliance with security standards. This approach is vital for preventing vulnerabilities that could be exploited by malicious actors. For developers and security teams, understanding these checkpoints is crucial for leveraging AI&#x27;s potential while safeguarding applications against emerging threats.",
+            "title": "Android Malware Targets Crypto Wallets in Indonesia",
+            "content": "A new strain of Android malware, identified as Android/BankBot-YNRK, is actively targeting users in Indonesia by posing as legitimate applications. This malicious software mutes alerts and drains cryptocurrency wallets, posing a significant threat to mobile users in the region. The malware&#x27;s ability to disguise itself as trusted apps highlights the need for enhanced security measures on mobile devices. For security professionals, this underscores the importance of educating users about the risks of downloading apps from unverified sources. This incident serves as a reminder of the growing sophistication of mobile threats and the need for vigilance in protecting sensitive financial information.",
             "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/application-security/ai-code-security-checkpoints"
+            "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/android-malware-mutes-alerts-drains-crypto-wallets"
         },
         {
             "date": "Nov 03 2025",
-            "title": "Transforming SOC Operations with Continuous Exposure Management",
-            "content": "Security Operations Centers (SOCs) are evolving to address the overwhelming volume of alerts they face daily. Continuous Exposure Management (CEM) is emerging as a transformative approach, enabling SOCs to prioritize threats more effectively by integrating real-time threat intelligence and environmental context. This shift helps analysts focus on genuine threats, reducing the time spent on false positives and improving response times. For security professionals, adopting CEM represents a strategic advancement in operational efficiency, allowing for a more proactive and informed defense against cyber threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/11/the-evolution-of-soc-operations-how.html"
+            "title": "Balancer DeFi Protocol Suffers $128 Million Hack",
+            "content": "The Balancer Protocol, a decentralized finance (DeFi) platform, has suffered a significant breach with hackers exploiting its v2 pools to steal over $128 million. This attack highlights the vulnerabilities inherent in DeFi systems, which, despite their decentralized nature, remain attractive targets for cybercriminals. The incident raises concerns about the security of smart contracts and the potential financial losses for investors. Security professionals in the blockchain and cryptocurrency sectors must prioritize the development of more secure protocols to protect against such exploits. This event underscores the critical need for rigorous security audits and continuous monitoring of DeFi platforms.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/cryptocurrency/hacker-steals-over-120-million-from-balancer-defi-crypto-protocol/"
         },
         {
             "date": "Nov 03 2025",
-            "title": "Discovery of BankBot-YNRK and DeliveryRAT: New Android Threats",
-            "content": "Cybersecurity researchers have identified two new Android trojans, BankBot-YNRK and DeliveryRAT, which are designed to steal sensitive financial data from infected devices. Analyzed by CYFIRMA, BankBot-YNRK is equipped with features that enable it to silently siphon information, posing a significant risk to users&#x27; financial security. These findings underscore the ongoing threat posed by mobile malware, which continues to evolve in sophistication and impact. For security practitioners, understanding these threats is critical for developing effective countermeasures and protecting mobile users from potential data breaches.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/11/researchers-uncover-bankbot-ynrk-and.html"
+            "title": "Malicious Solidity Extension Backdoors Developers",
+            "content": "A fake Solidity VSCode extension on the Open VSX registry has been discovered to contain a remote access trojan named SleepyDuck. This malicious extension uses an Ethereum smart contract to establish a communication channel with attackers, compromising developers who unknowingly install it. The incident highlights the risks associated with open-source software repositories and the importance of verifying the authenticity of extensions. Security professionals must be vigilant in monitoring and securing development environments to prevent unauthorized access and data breaches. This case emphasizes the need for robust security practices in the software development lifecycle.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/fake-solidity-vscode-extension-on-open-vsx-backdoors-developers/"
+        },
+        {
+            "date": "Nov 03 2025",
+            "title": "Cybercriminals Exploit RMM Tools to Hijack Cargo",
+            "content": "Researchers have uncovered a new threat campaign where attackers use remote monitoring and management (RMM) tools to hijack physical cargo shipments. This sophisticated operation involves manipulating logistics systems to divert and steal goods from the supply chain. The use of legitimate RMM tools for malicious purposes demonstrates the evolving tactics of cybercriminals and the vulnerabilities in supply chain security. For security professionals, this highlights the need for comprehensive security measures that include monitoring for unusual activities in logistics and transportation systems. This incident serves as a wake-up call for industries reliant on secure and efficient supply chain operations.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/identity-access-management-security/hackers-weaponize-remote-tools-hijack-cargo-freight"
         }
     ],
     "aiShorts": [
         {
-            "date": "Nov 02 2025",
-            "title": "Google Withdraws Gemma from AI Studio Amid Defamation Allegations",
-            "content": "Google has removed its AI model, Gemma, from the AI Studio platform following accusations of defamation by Senator Martha Blackburn. The senator criticized Gemma’s erroneous outputs, labeling them as more than mere &quot;hallucinations&quot; and instead describing them as defamatory acts. This incident raises significant concerns about the potential legal liabilities of AI-generated content, especially when produced by models owned by major tech companies like Google. The case highlights the challenges in managing AI outputs and the importance of implementing robust safeguards to prevent misinformation. AI professionals must consider the implications of this case for future AI deployments and the legal frameworks that might be necessary. The removal of Gemma underscores the ongoing debate over accountability and the ethical responsibilities of AI developers.",
+            "date": "Nov 03 2025",
+            "title": "Studio Ghibli and Japanese Publishers Challenge OpenAI&#x27;s Use of Copyrighted Works",
+            "content": "Studio Ghibli, along with other Japanese publishers, is raising concerns over OpenAI&#x27;s use of their copyrighted content for AI training without explicit permission. OpenAI&#x27;s current strategy seems to prioritize using content first and addressing permissions later, a move that could lead to significant legal and ethical challenges. This development highlights a growing tension between AI companies and content creators over intellectual property rights. For professionals in the AI field, this situation underscores the importance of navigating copyright laws and ethical considerations in AI training. As AI models increasingly rely on vast amounts of data, ensuring compliance with copyright regulations becomes crucial. The outcome of this conflict could set important precedents for how AI companies interact with copyrighted materials.",
             "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/02/google-pulls-gemma-from-ai-studio-after-senator-blackburn-accuses-model-of-defamation/"
-        },
-        {
-            "date": "Nov 02 2025",
-            "title": "OpenAI&#x27;s Revenue Probed as Altman Defends Financial Strategy",
-            "content": "OpenAI CEO Sam Altman recently addressed inquiries regarding the company&#x27;s financial performance, revealing that OpenAI is generating over $13 billion in annual revenue. Altman expressed a degree of frustration when questioned about how the company plans to finance its extensive spending commitments. This disclosure is significant for professionals in the AI sector, as it provides insight into the financial health and strategic priorities of one of the industry&#x27;s leading organizations. The conversation around OpenAI&#x27;s revenue and expenditure strategies reflects broader concerns about sustainability and growth in the AI industry. Understanding these financial dynamics is crucial for stakeholders looking to navigate the competitive landscape of AI development and deployment.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/02/sam-altman-says-enough-to-questions-about-openais-revenue/"
-        },
-        {
-            "date": "Nov 02 2025",
-            "title": "Meta&#x27;s AI Investments Cause Concern Among Investors",
-            "content": "Meta&#x27;s significant investments in AI technology are beginning to unsettle Wall Street, as investors express concern over the company&#x27;s financial strategy. The apprehension stems from the substantial resources Meta is allocating towards AI projects, which some fear may not yield the expected returns. This situation is pivotal for AI professionals as it underscores the risks and uncertainties associated with large-scale AI investments. The pressure from investors highlights the need for tech companies to balance innovation with fiscal responsibility. As Meta navigates these challenges, the outcomes could influence investment trends and strategic decisions across the AI industry.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/02/meta-has-an-ai-product-problem/"
-        },
-        {
-            "date": "Nov 02 2025",
-            "title": "The Shift to Deterministic CPUs for Reliable AI Performance",
-            "content": "The evolution of CPU technology is taking a new turn with the focus shifting from speculative execution to deterministic processing to ensure predictable AI performance. Speculative execution, a staple since the 1990s, has been instrumental in enhancing CPU efficiency but has also introduced vulnerabilities. The move towards deterministic CPUs aims to eliminate these risks by providing more consistent and secure processing capabilities. This development is critical for AI professionals seeking to optimize performance and reliability in AI applications. By adopting deterministic CPUs, developers can achieve greater control over AI processing, paving the way for more secure and dependable AI solutions.",
-            "source": "AI | VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/moving-past-speculation-how-deterministic-cpus-deliver-predictable-ai"
-        },
-        {
-            "date": "Nov 01 2025",
-            "title": "Energy Costs Threaten AI and Data Center Operations",
-            "content": "Rising energy prices are becoming a significant concern for the AI industry, with data centers facing scrutiny for their substantial electricity consumption. Consumers are increasingly worried about the impact of data center operations on energy costs, prompting discussions about sustainability and efficiency in AI infrastructure. This issue is crucial for AI and data center professionals as it highlights the need for innovative solutions to manage energy usage. The potential backlash from consumers could drive the industry to adopt greener technologies and more efficient energy management practices. As energy costs continue to rise, the focus on sustainable operations will likely shape the future of AI and data center development.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/01/rising-energy-prices-put-ai-and-data-centers-in-the-crosshairs/"
+            "sourceUrl": "https://techcrunch.com/2025/11/03/studio-ghibli-and-other-japanese-publishers-want-openai-to-stop-training-on-their-work/"
         },
         {
             "date": "Nov 03 2025",
-            "title": "UK Executives Push for Measurable AI Returns",
-            "content": "In the UK, AI investment has shifted from experimental to essential, with executives now under pressure to provide tangible evidence of AI&#x27;s impact. Boards are increasingly demanding proof of efficiency gains, revenue growth, or risk reduction from AI initiatives. Pete Smyth, CEO of Leading Resolutions, observes that many SMEs still view AI as a novelty rather than a strategic asset. This trend underscores a critical need for businesses to develop robust frameworks for measuring AI&#x27;s return on investment. For AI professionals, this highlights the importance of aligning AI projects with clear business objectives and performance metrics. As AI becomes more integrated into core business strategies, the ability to quantify its benefits will be crucial for sustaining investment and support.",
+            "title": "AI&#x27;s Growing Power Demands Create Uncertainty for OpenAI and Microsoft",
+            "content": "OpenAI&#x27;s Sam Altman and Microsoft&#x27;s Satya Nadella are grappling with the escalating power demands of AI technologies. As AI systems become more advanced, their energy consumption is expected to rise, but the exact future requirements remain uncertain. This uncertainty poses a challenge for investors who are wary of the potential financial implications. For AI and tech professionals, the situation emphasizes the need for sustainable energy solutions and efficient AI architectures. Understanding and planning for AI&#x27;s energy needs are critical as the industry continues to expand. The decisions made by these tech giants could influence how the sector addresses energy consumption challenges in the future.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/03/altman-and-nadella-need-more-power-for-ai-but-theyre-not-sure-how-much/"
+        },
+        {
+            "date": "Nov 03 2025",
+            "title": "Lambda Partners with Microsoft in Major AI Infrastructure Agreement",
+            "content": "Lambda has secured a multibillion-dollar deal with Microsoft to enhance its AI infrastructure capabilities. This announcement follows closely on the heels of Microsoft&#x27;s $9.7 billion agreement with Australian data center company IREN. The partnership with Lambda represents a strategic move to bolster Microsoft&#x27;s AI infrastructure offerings. For professionals in the AI and tech sectors, this deal highlights the ongoing investment in AI infrastructure as companies strive to meet growing computational demands. The collaboration underscores the importance of robust infrastructure in supporting AI advancements and maintaining competitive advantage in the rapidly evolving tech landscape.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/03/lambda-inks-multi-billion-dollar-ai-infrastructure-deal-with-microsoft/"
+        },
+        {
+            "date": "Nov 03 2025",
+            "title": "Dia&#x27;s AI Browser Integrates Popular Features from Arc",
+            "content": "Dia has begun integrating features from the Arc browser into its AI-powered browser, enhancing its appeal to consumers. By leveraging insights from Arc&#x27;s successful features, Dia aims to improve user experience and functionality. This development is significant for AI professionals as it demonstrates the potential for AI to innovate in the browser space, a field traditionally dominated by established players. The move could lead to increased competition and innovation in browser technology, driven by AI capabilities. For tech developers, understanding consumer preferences and integrating successful features will be key to staying competitive.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/03/dias-ai-browser-starts-adding-arcs-greatest-hits-to-its-feature-set/"
+        },
+        {
+            "date": "Nov 03 2025",
+            "title": "OpenAI Diversifies Cloud AI Investments Across Major Providers",
+            "content": "OpenAI is diversifying its cloud AI investments by spreading a $600 billion bet across multiple providers, including AWS, Oracle, and Microsoft. This strategy marks a shift from its previous exclusive partnership with Microsoft, reallocating $250 billion back to Microsoft and $300 billion to AWS. For AI professionals, this move highlights the importance of a multi-cloud strategy in securing a reliable AI compute supply chain. As AI demands increase, ensuring access to diverse cloud resources becomes critical for scalability and resilience. This strategic approach may influence how other AI companies manage their cloud infrastructure partnerships.",
             "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/quantifying-ai-roi-leading-resolutions/"
-        },
-        {
-            "date": "Nov 03 2025",
-            "title": "Navigating AI in Continuous Deployment Pipelines",
-            "content": "The integration of AI into continuous development and deployment pipelines is increasingly unavoidable for software development leaders. However, deploying AI at scale presents unique challenges that require careful consideration of various elements. These challenges include managing complex data flows, ensuring model accuracy, and maintaining system reliability. For decision-makers, understanding these factors is essential to effectively leverage AI in DevOps environments. This development is significant for AI and software professionals as it calls for new strategies and tools to optimize AI deployment processes. By addressing these challenges, organizations can enhance their AI capabilities and drive innovation in software development.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/devops-for-ai-continuous-deployment-pipelines-for-machine-learning-systems/"
-        },
-        {
-            "date": "Nov 03 2025",
-            "title": "NVIDIA and South Korea Collaborate on Sovereign AI Infrastructure",
-            "content": "NVIDIA announced its collaboration with South Korean public agencies and private companies to establish sovereign AI infrastructure during the APEC CEO Summit. The initiative involves deploying hundreds of thousands of NVIDIA GPUs across sovereign clouds and AI factories, focusing on sectors like automotive, manufacturing, and telecommunications. This partnership aims to bolster South Korea&#x27;s AI capabilities and drive innovation across key industries. For AI professionals, this collaboration underscores the growing importance of sovereign AI solutions in maintaining data privacy and national security. It also highlights the strategic role of AI infrastructure in advancing technological competitiveness on a global scale.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/nvidia-and-south-korea-align-on-sovereign-ai-at-apec-summit/"
-        },
-        {
-            "date": "Nov 03 2025",
-            "title": "Qualcomm Enters AI Data Center Chip Market",
-            "content": "Qualcomm has made a significant move into the AI data center chip market, challenging industry leader NVIDIA. Known for its dominance in smartphone processors, Qualcomm&#x27;s entry into this market aims to capitalize on the lucrative opportunities in AI inference workloads. This development is noteworthy for AI and data center professionals as it introduces new competition and potential innovations in AI chip technology. Qualcomm&#x27;s strategy could lead to advancements in performance and efficiency, impacting how AI models are deployed and scaled in data centers. As the demand for AI processing power grows, this move could reshape market dynamics and drive further innovation in AI hardware.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/qualcomm-ai-data-centre-chips-ai200-ai250/"
-        },
-        {
-            "date": "Nov 03 2025",
-            "title": "Evaluating AI Hardware: The Kevin Rose Test",
-            "content": "Investor Kevin Rose proposes a unique test for evaluating AI hardware: considering whether it provokes a negative emotional response from others. This perspective emphasizes not only technical performance but also the social and emotional impact of AI devices. For AI hardware developers and investors, this approach highlights the importance of user experience and societal acceptance in product design. As AI technologies become more integrated into daily life, understanding their emotional and social implications is crucial for widespread adoption. This test serves as a reminder that successful AI hardware must balance innovation with human-centric design principles.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/02/kevin-roses-simple-test-for-ai-hardware-would-you-want-to-punch-someone-in-the-face-whos-wearing-it/"
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/openai-spreads-600b-cloud-ai-bet-aws-oracle-microsoft/"
         }
     ],
     "articles": {
@@ -281,26 +211,6 @@ var websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-24893"
-        },
-        {
-            "cveId": "CVE-2025-6204",
-            "dateAdded": "Oct 28, 2025",
-            "vendor": "Dassault Systèmes DELMIA Apriso",
-            "description": "Dassault Systèmes DELMIA Apriso contains a code injection vulnerability that could allow an attacker to execute arbitrary code.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-6204"
-        },
-        {
-            "cveId": "CVE-2025-6205",
-            "dateAdded": "Oct 28, 2025",
-            "vendor": "Dassault Systèmes DELMIA Apriso",
-            "description": "Dassault Systèmes DELMIA Apriso contains a missing authorization vulnerability that could allow an attacker to gain privileged access to the application.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-6205"
         }
     ],
     "modals": {
