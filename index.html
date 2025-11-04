@@ -6,6 +6,7 @@
     <title>TheHGTech - Cybersecurity & AI News</title>
     
     <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self';">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="DENY">
     <meta http-equiv="X-XSS-Protection" content="1; mode=block">
@@ -248,6 +249,52 @@
             box-shadow: 0 4px 12px rgba(224, 31, 61, 0.4);
             background: linear-gradient(135deg, #F02545, #E01F3D);
         }
+        
+        /* ========== SECTION IMPROVEMENTS ========== */
+        /* Section Divider */
+        .section-divider {
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(224, 31, 61, 0.5), transparent);
+            margin: 60px 0;
+            box-shadow: 0 0 20px rgba(224, 31, 61, 0.3);
+            position: relative;
+        }
+        
+        .section-divider::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 5px;
+            background: linear-gradient(90deg, #E01F3D, #FF4D6D, #E01F3D);
+            border-radius: 10px;
+            filter: blur(2px);
+        }
+        
+        /* Alternating Section Backgrounds */
+        .section-alt-light {
+            background: rgba(255, 255, 255, 0.01);
+            padding: 60px 0;
+            position: relative;
+        }
+        
+        .section-alt-dark {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 60px 0;
+            position: relative;
+        }
+        
+        body.light-mode .section-alt-light {
+            background: rgba(255, 255, 255, 0.5);
+        }
+        
+        body.light-mode .section-alt-dark {
+            background: rgba(0, 0, 0, 0.02);
+        }
+        
         /* Quick Insights Section */
         .quick-insights {
             margin: 40px 0;
@@ -630,6 +677,31 @@
             transform: scaleX(1);
         }
         
+        /* Category-Specific Card Accents */
+        .article-card[data-category="Cybersecurity"]::before {
+            background: linear-gradient(90deg, #E01F3D, #FF4D6D);
+        }
+        
+        .article-card[data-category="Cybersecurity"]:hover {
+            box-shadow: 0 12px 30px rgba(224, 31, 61, 0.25);
+        }
+        
+        .article-card[data-category="AI"]::before {
+            background: linear-gradient(90deg, #C81E3A, #E01F3D);
+        }
+        
+        .article-card[data-category="AI"]:hover {
+            box-shadow: 0 12px 30px rgba(200, 30, 58, 0.25);
+        }
+        
+        .article-card[data-category="Technology"]::before {
+            background: linear-gradient(90deg, #FF4D6D, #FF6B83);
+        }
+        
+        .article-card[data-category="Technology"]:hover {
+            box-shadow: 0 12px 30px rgba(255, 77, 109, 0.2);
+        }
+        
         .article-meta {
             display: flex;
             gap: 15px;
@@ -874,6 +946,31 @@
         
         .archive-card:hover::before {
             transform: scaleX(1);
+        }
+        
+        /* Category-Specific Archive Card Accents */
+        .archive-card[data-category="Cybersecurity"]::before {
+            background: linear-gradient(90deg, #E01F3D, #FF4D6D);
+        }
+        
+        .archive-card[data-category="Cybersecurity"]:hover {
+            box-shadow: 0 12px 30px rgba(224, 31, 61, 0.25);
+        }
+        
+        .archive-card[data-category="AI"]::before {
+            background: linear-gradient(90deg, #C81E3A, #E01F3D);
+        }
+        
+        .archive-card[data-category="AI"]:hover {
+            box-shadow: 0 12px 30px rgba(200, 30, 58, 0.25);
+        }
+        
+        .archive-card[data-category="Technology"]::before {
+            background: linear-gradient(90deg, #FF4D6D, #FF6B83);
+        }
+        
+        .archive-card[data-category="Technology"]:hover {
+            box-shadow: 0 12px 30px rgba(255, 77, 109, 0.2);
         }
         
         .archive-badge {
@@ -1318,23 +1415,32 @@
         .article-tag {
             display: inline-flex;
             align-items: center;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 11px;
+            padding: 6px 14px;
+            border-radius: 14px;
+            font-size: 12px;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.5px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .article-tag:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
         }
         
         .tag-new {
-            background: linear-gradient(135deg, #28a745, #20c997);
+            background: linear-gradient(135deg, #E01F3D, #FF4D6D);
             color: white;
+            box-shadow: 0 3px 10px rgba(224, 31, 61, 0.4);
         }
         
         .tag-trending {
-            background: linear-gradient(135deg, #ff4d6d, #ff758f);
+            background: linear-gradient(135deg, #FF4D6D, #FF758F);
             color: white;
             animation: pulse 2s ease-in-out infinite;
+            box-shadow: 0 3px 10px rgba(255, 77, 109, 0.4);
         }
         
         @keyframes pulse {
@@ -1343,38 +1449,47 @@
         }
         
         .tag-must-read {
-            background: linear-gradient(135deg, #e01f3d, #ff4d6d);
+            background: linear-gradient(135deg, #C81E3A, #E01F3D);
             color: white;
+            box-shadow: 0 3px 10px rgba(200, 30, 58, 0.4);
         }
         
         .tag-authors-choice {
-            background: linear-gradient(135deg, #764ba2, #667eea);
+            background: linear-gradient(135deg, #B71C1C, #C81E3A);
             color: white;
+            box-shadow: 0 3px 10px rgba(183, 28, 28, 0.4);
         }
         
         .tag-featured {
-            background: linear-gradient(135deg, #ffc107, #ff9800);
-            color: #000;
+            background: linear-gradient(135deg, #E01F3D, #C81E3A);
+            color: white;
+            box-shadow: 0 3px 10px rgba(224, 31, 61, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
         
         .tag-analysis {
-            background: linear-gradient(135deg, #17a2b8, #138496);
+            background: linear-gradient(135deg, #FF6B83, #FF4D6D);
             color: white;
+            box-shadow: 0 3px 10px rgba(255, 107, 131, 0.4);
         }
         
         .tag-breaking {
-            background: linear-gradient(135deg, #dc3545, #c82333);
+            background: linear-gradient(135deg, #DC143C, #E01F3D);
             color: white;
+            animation: pulse 2s ease-in-out infinite;
+            box-shadow: 0 3px 10px rgba(220, 20, 60, 0.5);
         }
         
         .tag-opinion {
-            background: linear-gradient(135deg, #6c757d, #495057);
+            background: linear-gradient(135deg, #A01830, #C81E3A);
             color: white;
+            box-shadow: 0 3px 10px rgba(160, 24, 48, 0.4);
         }
         
         .tag-custom {
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg, #E01F3D, #FF758F);
             color: white;
+            box-shadow: 0 3px 10px rgba(224, 31, 61, 0.3);
         }
         
         /* Source Link Styles */
@@ -1607,21 +1722,24 @@
         }
         
         .cve-score-critical {
-            background: rgba(220, 38, 38, 0.2);
-            color: #EF4444;
-            border: 1px solid rgba(220, 38, 38, 0.3);
+            background: rgba(224, 31, 61, 0.3);
+            color: #FF4D6D;
+            border: 1px solid rgba(224, 31, 61, 0.5);
+            box-shadow: 0 4px 12px rgba(224, 31, 61, 0.4);
         }
         
         .cve-score-high {
-            background: rgba(234, 88, 12, 0.2);
-            color: #F97316;
-            border: 1px solid rgba(234, 88, 12, 0.3);
+            background: rgba(224, 31, 61, 0.2);
+            color: #E01F3D;
+            border: 1px solid rgba(224, 31, 61, 0.4);
+            box-shadow: 0 3px 10px rgba(224, 31, 61, 0.25);
         }
         
         .cve-score-medium {
-            background: rgba(234, 179, 8, 0.2);
-            color: #EAB308;
-            border: 1px solid rgba(234, 179, 8, 0.3);
+            background: rgba(224, 31, 61, 0.1);
+            color: #C81E3A;
+            border: 1px solid rgba(224, 31, 61, 0.3);
+            box-shadow: 0 2px 8px rgba(224, 31, 61, 0.15);
         }
         
         .cve-vendor {
@@ -1812,10 +1930,15 @@
                 </div>
             </section>
 
+            <!-- Section Divider -->
+            <div class="section-divider"></div>
+
             <!-- Quick Insights Section -->
-            <section class="quick-insights">
-                <h2 class="section-title">Quick Insights</h2>
-                <div class="insights-tabs">
+            <div class="section-alt-light">
+                <div class="container">
+                    <section class="quick-insights">
+                        <h2 class="section-title">Quick Insights</h2>
+                        <div class="insights-tabs">
                     <div class="insights-tab active" onclick="switchInsightTab('cyber')">
                         <div class="icon-box">CS</div>
                         <div class="tab-label">
@@ -1846,16 +1969,23 @@
                     </div>
                 </div>
             </section>
+                </div>
+            </div>
+
+            <!-- Section Divider -->
+            <div class="section-divider"></div>
 
             <!-- CVE Tracker Section -->
-            <section class="cve-tracker">
+            <div class="section-alt-dark">
+                <div class="container">
+                    <section class="cve-tracker">
                 <div class="cve-header">
                     <div>
                         <h2 class="cve-title">
                             <span class="cve-title-icon">CVE</span>
                             Recent CVEs (Last 7 Days)
                         </h2>
-                        <p class="cve-subtitle">From Official Sources: CISA KEV & NVD</p>
+                        <p class="cve-subtitle">From CISA Known Exploited Vulnerabilities Catalog</p>
                     </div>
                     <div class="cve-nav-buttons">
                         <button class="cve-nav-button" onclick="scrollCVECarousel('left')" aria-label="Scroll left">‹</button>
@@ -1868,9 +1998,16 @@
                     </div>
                 </div>
             </section>
+                </div>
+            </div>
+
+            <!-- Section Divider -->
+            <div class="section-divider"></div>
 
             <!-- Split Layout: Latest Articles + Feature Insights -->
-            <div class="split-container">
+            <div class="section-alt-light">
+                <div class="container">
+                    <div class="split-container">
                 <!-- Latest Articles (60%) -->
                 <section class="latest-articles">
                     <h2 class="section-header">Latest Articles</h2>
@@ -1886,6 +2023,8 @@
                         <!-- Dynamic feature cards will be loaded here -->
                     </div>
                 </aside>
+            </div>
+                </div>
             </div>
 
             <!-- Archives Button -->
@@ -1982,6 +2121,39 @@
     
     <script>
         // ========== SECURITY: HTML Sanitization Functions ==========
+        /**
+         * Escape HTML to prevent XSS attacks
+         * Use this for ALL user-controllable content
+         */
+        function escapeHTML(str) {
+            if (!str) return '';
+            const div = document.createElement('div');
+            div.textContent = str;
+            return div.innerHTML;
+        }
+        
+        /**
+         * Escape HTML attributes (for use in onclick, data-*, etc.)
+         */
+        function escapeAttribute(str) {
+            if (!str) return '';
+            return String(str)
+                .replace(/&/g, '&amp;')
+                .replace(/'/g, '&#39;')
+                .replace(/"/g, '&quot;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;');
+        }
+        
+        /**
+         * Validate and sanitize ID strings
+         * Only allow alphanumeric, dash, underscore
+         */
+        function sanitizeID(id) {
+            if (!id) return '';
+            return String(id).replace(/[^a-zA-Z0-9_-]/g, '');
+        }
+        
         /**
          * Decode HTML entities properly
          */
@@ -2154,6 +2326,7 @@
             return tagMap[tagLower] || 'tag-custom';
         }
         
+        // Render articles with XSS protection
         function renderArticles() {
             const container = document.getElementById('articlesContainer');
             container.innerHTML = '';
@@ -2161,26 +2334,35 @@
             websiteContent.articleCards.forEach(card => {
                 const article = websiteContent.articles[card.id];
                 
-                // Build tags HTML if tags exist
+                // Sanitize and escape ALL user-controllable data
+                const safeId = sanitizeID(card.id);
+                const safeCategory = escapeAttribute(card.category);
+                const safeDate = escapeHTML(card.date);
+                const safeCategoryDisplay = escapeHTML(card.category);
+                const safeTitle = escapeHTML(card.title);
+                const safeExcerpt = escapeHTML(card.excerpt);
+                const safeAuthor = article.author ? escapeHTML(article.author) : '';
+                
+                // Build tags HTML if tags exist (with sanitization)
                 const tagsHtml = article.tags && article.tags.length > 0 ? 
                     `<div class="article-tags">
-                        ${article.tags.map(tag => `<span class="article-tag ${getTagClass(tag)}">${tag}</span>`).join('')}
+                        ${article.tags.map(tag => `<span class="article-tag ${getTagClass(escapeHTML(tag))}">${escapeHTML(tag)}</span>`).join('')}
                     </div>` : '';
                 
                 // Build author HTML if author exists
                 const authorHtml = article.author ? 
-                    `<span class="article-author"><span class="article-author-icon">✍️</span> ${article.author}</span>` : '';
+                    `<span class="article-author"><span class="article-author-icon">✍️</span> ${safeAuthor}</span>` : '';
                 
                 const articleHtml = `
-                    <div class="article-card" onclick="openArticle('${card.id}')">
+                    <div class="article-card" data-category="${safeCategory}" onclick="openArticle('${safeId}')">
                         ${tagsHtml}
                         <div class="article-meta">
-                            <span class="article-date">${card.date}</span>
-                            <span class="article-category">${card.category}</span>
+                            <span class="article-date">${safeDate}</span>
+                            <span class="article-category">${safeCategoryDisplay}</span>
                             ${authorHtml}
                         </div>
-                        <h3>${card.title}</h3>
-                        <p class="article-excerpt">${card.excerpt}</p>
+                        <h3>${safeTitle}</h3>
+                        <p class="article-excerpt">${safeExcerpt}</p>
                         <span class="read-more">Read more →</span>
                     </div>
                 `;
@@ -2188,33 +2370,47 @@
             });
         }
         
-        // Render feature insights
+        // Render feature insights with XSS protection
         function renderFeatures() {
             const container = document.getElementById('featureContainer');
             container.innerHTML = '';
             
             websiteContent.featureInsights.forEach(feature => {
+                const safeIcon = escapeHTML(feature.icon);
+                const safeTitle = escapeHTML(feature.title);
+                const safeDescription = escapeHTML(feature.description);
+                
                 const featureHtml = `
                     <div class="feature-card">
-                        <span class="feature-icon">${feature.icon}</span>
-                        <h4>${feature.title}</h4>
-                        <p>${feature.description}</p>
+                        <span class="feature-icon">${safeIcon}</span>
+                        <h4>${safeTitle}</h4>
+                        <p>${safeDescription}</p>
                     </div>
                 `;
                 container.innerHTML += featureHtml;
             });
         }
         
-        // Render CVE cards
+        // Render CVE cards with XSS protection
         function renderCVEs() {
             const container = document.getElementById('cveCarousel');
             container.innerHTML = '';
             
             if (websiteContent.recentCVEs && websiteContent.recentCVEs.length > 0) {
                 websiteContent.recentCVEs.forEach(cve => {
+                    // Sanitize ALL CVE data
+                    const safeCveId = escapeHTML(cve.cveId);
+                    const safeStatus = escapeHTML(cve.status);
+                    const safeScore = escapeHTML(cve.score);
+                    const safeVendor = escapeHTML(cve.vendor);
+                    const safeDescription = escapeHTML(cve.description);
+                    const safeDateAdded = escapeHTML(cve.dateAdded);
+                    const safeSource = escapeHTML(cve.source);
+                    const safeUrl = escapeAttribute(cve.url);
+                    
                     // Determine score class based on severity
                     let scoreClass = 'cve-score-medium';
-                    const scoreText = cve.score.toUpperCase();
+                    const scoreText = safeScore.toUpperCase();
                     if (scoreText.includes('CRITICAL')) {
                         scoreClass = 'cve-score-critical';
                     } else if (scoreText.includes('HIGH')) {
@@ -2222,28 +2418,28 @@
                     }
                     
                     // Determine status class
-                    const statusClass = cve.status === 'Confirmed' ? 'cve-status-confirmed' : 'cve-status-potential';
+                    const statusClass = safeStatus === 'Confirmed' ? 'cve-status-confirmed' : 'cve-status-potential';
                     
                     const cveHtml = `
                         <div class="cve-card">
                             <div class="cve-card-header">
-                                <div class="cve-id">${cve.cveId}</div>
-                                <div class="cve-status-badge ${statusClass}">${cve.status}</div>
+                                <div class="cve-id">${safeCveId}</div>
+                                <div class="cve-status-badge ${statusClass}">${safeStatus}</div>
                             </div>
                             <div class="cve-score">
-                                <div class="cve-score-badge ${scoreClass}">${cve.score}</div>
+                                <div class="cve-score-badge ${scoreClass}">${safeScore}</div>
                             </div>
                             <div class="cve-vendor">
-                                <span class="cve-vendor-icon">🏢</span> ${cve.vendor}
+                                <span class="cve-vendor-icon">🏢</span> ${safeVendor}
                             </div>
                             <div class="cve-description">
-                                ${cve.description}
+                                ${safeDescription}
                             </div>
                             <div class="cve-footer">
-                                <div class="cve-date">📅 ${cve.dateAdded}</div>
-                                <div class="cve-source">${cve.source}</div>
+                                <div class="cve-date">📅 ${safeDateAdded}</div>
+                                <div class="cve-source">${safeSource}</div>
                             </div>
-                            <a href="${cve.url}" target="_blank" rel="noopener noreferrer" class="cve-source-link" onclick="event.stopPropagation()">
+                            <a href="${safeUrl}" target="_blank" rel="noopener noreferrer" class="cve-source-link" onclick="event.stopPropagation()">
                                 🔗 View Official Source
                             </a>
                         </div>
@@ -2312,6 +2508,7 @@
         }
         
         // Render archives page
+        // Render archives page with XSS protection
         function renderArchivesPage() {
             const container = document.getElementById('archivesGrid');
             container.innerHTML = '';
@@ -2320,27 +2517,36 @@
                 archiveContent.archivedArticles.forEach(card => {
                     const article = archiveContent.archivedArticleContent[card.id];
                     
-                    // Build tags HTML if tags exist
+                    // Sanitize and escape ALL archive data
+                    const safeId = sanitizeID(card.id);
+                    const safeCategory = escapeAttribute(card.category);
+                    const safeDate = escapeHTML(card.date);
+                    const safeCategoryDisplay = escapeHTML(card.category);
+                    const safeTitle = escapeHTML(card.title);
+                    const safeExcerpt = escapeHTML(card.excerpt);
+                    const safeAuthor = article.author ? escapeHTML(article.author) : '';
+                    
+                    // Build tags HTML if tags exist (with sanitization)
                     const tagsHtml = article.tags && article.tags.length > 0 ? 
                         `<div class="article-tags">
-                            ${article.tags.map(tag => `<span class="article-tag ${getTagClass(tag)}">${tag}</span>`).join('')}
+                            ${article.tags.map(tag => `<span class="article-tag ${getTagClass(escapeHTML(tag))}">${escapeHTML(tag)}</span>`).join('')}
                         </div>` : '';
                     
                     // Build author HTML if author exists
                     const authorHtml = article.author ? 
-                        `<span class="article-author"><span class="article-author-icon">✍️</span> ${article.author}</span>` : '';
+                        `<span class="article-author"><span class="article-author-icon">✍️</span> ${safeAuthor}</span>` : '';
                     
                     const archiveHtml = `
-                        <div class="archive-card" onclick="openArchive('${card.id}')">
+                        <div class="archive-card" data-category="${safeCategory}" onclick="openArchive('${safeId}')">
                             <span class="archive-badge">ARCHIVED</span>
                             ${tagsHtml}
                             <div class="article-meta">
-                                <span class="article-date">${card.date}</span>
-                                <span class="article-category">${card.category}</span>
+                                <span class="article-date">${safeDate}</span>
+                                <span class="article-category">${safeCategoryDisplay}</span>
                                 ${authorHtml}
                             </div>
-                            <h3>${card.title}</h3>
-                            <p class="article-excerpt">${card.excerpt}</p>
+                            <h3>${safeTitle}</h3>
+                            <p class="article-excerpt">${safeExcerpt}</p>
                             <span class="read-more">Read more →</span>
                         </div>
                     `;
@@ -2577,19 +2783,42 @@
             
             const ctx = canvas.getContext('2d');
             let particles = [];
-            const particleCount = 40;
+            let particleCount = 40;
             const maxDistance = 120;
             let animationFrame;
+            let animationSpeed = 1;
+            let isMobile = window.innerWidth <= 768;
+            
+            // Adjust particle count based on device
+            function updateParticleCount() {
+                isMobile = window.innerWidth <= 768;
+                particleCount = isMobile ? 60 : 40; // Denser on mobile
+            }
             
             function resizeCanvas() {
                 const hero = document.querySelector('.hero');
                 if (!hero) return;
                 canvas.width = hero.offsetWidth;
                 canvas.height = hero.offsetHeight;
+                updateParticleCount();
+                initParticles();
             }
             
             window.addEventListener('resize', resizeCanvas);
             resizeCanvas();
+            
+            // Slow down animation on mobile when scrolling
+            let scrollTimeout;
+            window.addEventListener('scroll', function() {
+                if (isMobile) {
+                    animationSpeed = 0.3; // Slow down during scroll
+                    
+                    clearTimeout(scrollTimeout);
+                    scrollTimeout = setTimeout(function() {
+                        animationSpeed = 1; // Return to normal speed
+                    }, 150);
+                }
+            });
             
             function initParticles() {
                 particles = [];
@@ -2614,8 +2843,8 @@
                 
                 // Update and draw particles
                 for (let p of particles) {
-                    p.x += p.vx;
-                    p.y += p.vy;
+                    p.x += p.vx * animationSpeed;
+                    p.y += p.vy * animationSpeed;
                     
                     // Bounce off edges
                     if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
