@@ -4,83 +4,76 @@
 var websiteContent = {
     "cyberShorts": [
         {
-            "date": "Nov 04 2025",
-            "title": "Apple Releases Security Updates Addressing 110 Vulnerabilities",
-            "content": "Apple has rolled out a new set of operating system updates that include fixes for 110 security vulnerabilities. While these updates are part of a minor feature upgrade, they are crucial as many of the vulnerabilities affect multiple Apple operating systems. None of the vulnerabilities have been reported as actively exploited, which is a relief for users. This update underscores Apple&#x27;s ongoing commitment to security, ensuring that their devices remain protected against potential threats. For cybersecurity professionals, staying updated with these patches is essential to safeguard systems and maintain operational integrity. The widespread nature of these vulnerabilities means that enterprises using Apple products should prioritize these updates to mitigate potential risks.",
+            "date": "Nov 05 2025",
+            "title": "ISC Stormcast Highlights Cybersecurity Developments for Early November",
+            "content": "The SANS Internet Storm Center&#x27;s Stormcast podcast for November 5, 2025, provides a comprehensive overview of current cybersecurity threats and trends. The InfoCON level remains at green, indicating a stable but vigilant cybersecurity environment. This podcast is a valuable resource for professionals looking to stay informed about the latest security challenges and defenses. By summarizing significant incidents and emerging threats, the Stormcast helps organizations and individuals prepare for potential cyber risks. Staying updated through such briefings is crucial as the threat landscape continuously evolves, impacting global networks and data integrity.",
             "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32448"
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32450"
+        },
+        {
+            "date": "Nov 05 2025",
+            "title": "North Korean Group Kimsuky Enhances HTTPTroy Backdoor Capabilities",
+            "content": "The notorious North Korean cyber threat group Kimsuky has introduced new obfuscation and anti-analysis features to its HTTPTroy backdoor, targeting South Korean users. This development signifies an ongoing effort to refine their attack methodologies, making detection and analysis more challenging for cybersecurity professionals. By improving their toolchain, Kimsuky demonstrates a sophisticated understanding of evasion techniques, posing a heightened threat to targeted organizations. For security experts, this underscores the importance of advanced threat detection and response strategies. Staying ahead of such evolving tactics is critical to safeguarding sensitive information and maintaining operational security.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/kimsuky-httptroy-backdoor-south-korea-users"
         },
         {
             "date": "Nov 04 2025",
-            "title": "Apple Addresses Critical WebKit Vulnerabilities in Latest Updates",
-            "content": "In its latest updates, Apple has patched over 100 vulnerabilities, including 19 critical flaws in WebKit, with the release of iOS 26.1 and macOS Tahoe 26.1. These updates are significant as WebKit is a core component of Apple&#x27;s web browsers, and vulnerabilities here could allow attackers to execute arbitrary code. For security professionals, this highlights the importance of timely updates to prevent potential exploitation. The patching of these vulnerabilities is crucial in maintaining secure browsing experiences for users and protecting sensitive data from being compromised. Apple&#x27;s proactive approach in addressing these flaws demonstrates its commitment to user security and privacy.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/apple-patches-19-webkit-vulnerabilities/"
+            "title": "WordPress Plugin Vulnerability Allows Admin Account Hijacking",
+            "content": "A critical vulnerability in the Post SMTP plugin, used by over 400,000 WordPress sites, is being actively exploited by threat actors to hijack administrator accounts. This flaw enables attackers to gain complete control of affected websites, posing significant risks to site integrity and user data. For website administrators and security professionals, this highlights the urgent need for patching and implementing robust security measures. The widespread use of WordPress amplifies the potential impact of such vulnerabilities, making it imperative for users to remain vigilant and proactive in their security practices. Addressing these vulnerabilities promptly is essential to prevent unauthorized access and data breaches.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-wordpress-plugin-post-smtp-to-hijack-admin-accounts/"
         },
         {
             "date": "Nov 04 2025",
-            "title": "Strengthening Ransomware Defense with Wazuh Open Source Platform",
-            "content": "Ransomware remains one of the most pervasive threats in the cybersecurity landscape, affecting a wide range of targets from individuals to critical infrastructure. The Wazuh open source platform offers a robust solution for defending against such attacks. By providing comprehensive monitoring and alerting capabilities, Wazuh enables organizations to detect and respond to ransomware threats effectively. For cybersecurity professionals, leveraging open source tools like Wazuh can enhance their defense strategies without incurring significant costs. As ransomware tactics continue to evolve, staying informed and equipped with the right tools is essential for minimizing damage and ensuring data protection.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/11/ransomware-defense-using-wazuh-open.html"
+            "title": "Pro-Russian Hackers Employ Linux VMs to Conceal Activities in Windows",
+            "content": "The cyber group &quot;Curly COMrades&quot; is leveraging Linux virtual machines (VMs) to mask their presence within Windows environments while conducting activities aligned with Russian interests. This tactic allows them to evade detection by traditional Windows-based security tools, presenting a significant challenge for cybersecurity teams. The use of cross-platform strategies highlights the adaptive nature of threat actors and the need for comprehensive security solutions. For IT professionals, understanding and countering such sophisticated techniques is crucial to maintaining secure networks. This development emphasizes the importance of cross-platform threat detection and the continuous evolution of cybersecurity defenses.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/endpoint-security/pro-russian-hackers-linux-vms-hide-windows"
         },
         {
             "date": "Nov 04 2025",
-            "title": "Operation SkyCloak: New Malware Campaign Targets Defense Sectors",
-            "content": "A sophisticated malware campaign, dubbed Operation SkyCloak, is targeting the defense sectors in Russia and Belarus through phishing emails containing weaponized attachments. The campaign deploys a Tor-enabled OpenSSH backdoor, allowing threat actors to maintain persistent access to compromised systems. This development is concerning for cybersecurity experts, as it highlights the increasing complexity and targeted nature of cyber threats facing critical sectors. The use of Tor technology in the malware enhances its stealth capabilities, making detection and mitigation more challenging. Security professionals in the defense industry must remain vigilant and adopt advanced threat detection and response strategies to protect sensitive information and infrastructure.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/11/operation-skycloak-deploys-tor-enabled.html"
-        },
-        {
-            "date": "Nov 04 2025",
-            "title": "Zscaler Expands Zero Trust Platform with SPLX Acquisition",
-            "content": "Zscaler has announced the acquisition of SPLX, a company known for its AI-driven security solutions, including red teaming, asset management, and threat inspection technologies. This acquisition is set to enhance Zscaler&#x27;s Zero Trust Exchange platform, offering more robust security capabilities to its clients. For professionals in the cybersecurity field, this move signifies Zscaler&#x27;s commitment to integrating advanced AI technologies to improve threat detection and response. The integration of SPLX&#x27;s technologies will likely provide Zscaler&#x27;s customers with enhanced visibility and control over their security environments. As cyber threats continue to grow in complexity, the adoption of AI-driven solutions is becoming increasingly vital for maintaining secure and resilient infrastructures.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/zscaler-acquires-ai-security-company-splx/"
-        },
-        {
-            "date": "Nov 04 2025",
-            "title": "ISC Stormcast Highlights Key Cybersecurity Trends",
-            "content": "The latest ISC Stormcast podcast for November 4th, 2025, provides a comprehensive overview of current cybersecurity trends and challenges. The episode discusses emerging threats and vulnerabilities that organizations need to be aware of, emphasizing the importance of proactive security measures. With the InfoCON status at green, the podcast suggests a stable threat environment but warns against complacency. Cybersecurity professionals are encouraged to stay informed about evolving tactics used by threat actors. The episode also covers recent incidents and provides insights into mitigating risks. This information is crucial for maintaining robust security postures in an ever-changing digital landscape.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32446"
+            "title": "Apache OpenOffice Denies Ransomware Data Breach Allegations",
+            "content": "The Apache Software Foundation has refuted claims by a ransomware group that its OpenOffice project suffered a data breach involving 23 GB of stolen corporate documents. Despite the group&#x27;s assertions, Apache maintains that no such breach occurred, highlighting the complexities of verifying cyberattack claims. This incident underscores the challenges organizations face in managing public perceptions and maintaining trust amid unverified threats. For cybersecurity professionals, it serves as a reminder of the importance of robust incident response plans and transparent communication strategies. Ensuring accurate information dissemination is vital to preserving organizational reputation and stakeholder confidence.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/apache-openoffice-disputes-data-breach-claims-by-ransomware-gang/"
         }
     ],
     "aiShorts": [
         {
             "date": "Nov 04 2025",
-            "title": "Align Technology Launches AI-Driven ClinCheck Live Plan for Invisalign",
-            "content": "Align Technology has introduced ClinCheck Live Plan, an innovative feature enhancing its Invisalign digital dental treatment planning. This new tool leverages AI to optimize the planning process for clear aligners, potentially improving outcomes for patients and streamlining workflows for dental professionals. ClinCheck Live Plan integrates with Align&#x27;s existing suite of products, including exocad CAD/CAM software and iTero intra-oral scanners. For AI and healthcare technology professionals, this development underscores the growing role of AI in personalized medical treatments. The advancement highlights how AI can enhance precision and efficiency in dental care, offering a glimpse into the future of AI-driven medical solutions.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/clincheck-live-brings-ai-planning-to-invisalign-dental-treatments/"
+            "title": "Amazon Challenges Perplexity&#x27;s Agentic Browsing Practices",
+            "content": "Amazon has issued legal warnings to Perplexity over its agentic browsing activities on Amazon&#x27;s platform. The e-commerce giant insists that any automated agents must clearly identify themselves, a requirement Perplexity has not met to Amazon&#x27;s satisfaction. This move highlights Amazon&#x27;s stringent policies on automated interactions, aiming to protect its data and maintain control over user interactions. For AI professionals, this underscores the ongoing tension between automation and compliance, emphasizing the importance of transparency in agent operations. The outcome of this dispute could set a precedent for how AI agents interact with major online platforms, impacting future developments in agent technology.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/04/amazon-sends-legal-threats-to-perplexity-over-agentic-browsing/"
         },
         {
-            "date": "Nov 03 2025",
-            "title": "Japanese Publishers Urge OpenAI to Halt Training on Copyrighted Works",
-            "content": "Studio Ghibli and other Japanese publishers have called on OpenAI to cease using their copyrighted content for training its AI models. This request highlights ongoing tensions between AI developers and content creators regarding intellectual property rights. OpenAI&#x27;s current approach of asking forgiveness rather than permission has sparked debate over ethical AI practices. For AI professionals, this situation emphasizes the importance of navigating copyright laws and fostering cooperation with content owners. It also raises questions about the sustainability of current AI training methodologies and the need for clearer guidelines in the use of copyrighted material.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/03/studio-ghibli-and-other-japanese-publishers-want-openai-to-stop-training-on-their-work/"
+            "date": "Nov 04 2025",
+            "title": "People Inc. Partners with Microsoft Amidst Declining Google Traffic",
+            "content": "People Inc. has entered into a licensing agreement with Microsoft to integrate its media content into Microsoft&#x27;s Copilot AI. This strategic move comes as People Inc. experiences a downturn in traffic from Google, prompting a diversification of its distribution channels. The partnership allows Microsoft to enhance its AI capabilities with high-quality content, while People Inc. gains a new avenue for content exposure. For AI professionals, this deal illustrates the shifting dynamics in content distribution and AI integration, highlighting the importance of strategic partnerships in maintaining relevance in the digital ecosystem.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/04/people-inc-forges-ai-licensing-deal-with-microsoft-as-google-traffic-drops/"
         },
         {
-            "date": "Nov 03 2025",
-            "title": "OpenAI and Microsoft CEOs Contemplate Power Needs for AI Expansion",
-            "content": "The leaders of OpenAI and Microsoft, Sam Altman and Satya Nadella, have expressed uncertainty about the future energy demands of AI technologies. As AI systems grow more complex, their energy consumption is expected to rise significantly, posing challenges for sustainability and resource allocation. This uncertainty could impact investors and stakeholders in the AI industry, who may face risks associated with scaling AI infrastructures. For AI and tech professionals, this highlights the need for innovative solutions to manage energy consumption and ensure the responsible growth of AI technologies. The conversation underscores the broader implications of AI&#x27;s environmental footprint.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/03/altman-and-nadella-need-more-power-for-ai-but-theyre-not-sure-how-much/"
+            "date": "Nov 04 2025",
+            "title": "Rivian Launches Mind Robotics in Latest Spinoff Initiative",
+            "content": "Rivian has announced the creation of Mind Robotics, marking its second spinoff this year following the launch of micromobility startup Also in March. Mind Robotics will focus on developing advanced robotic technologies, expanding Rivian&#x27;s footprint in the tech industry beyond its core automotive business. This move signals Rivian&#x27;s commitment to innovation and diversification, positioning itself as a key player in the robotics sector. For professionals in AI and robotics, this development highlights the increasing convergence of automotive and robotics technologies, offering new opportunities for collaboration and technological advancement.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/04/rivian-creates-another-spinoff-company-called-mind-robotics/"
         },
         {
-            "date": "Nov 03 2025",
-            "title": "OpenAI Launches IndQA for Evaluating AI in Indian Languages",
-            "content": "OpenAI has unveiled IndQA, a new benchmark designed to assess AI systems&#x27; capabilities in Indian languages. Developed with input from domain experts, IndQA evaluates cultural understanding and reasoning across 12 languages and 10 knowledge areas. This initiative reflects OpenAI&#x27;s commitment to enhancing AI inclusivity and performance in diverse linguistic contexts. For AI professionals, IndQA offers a valuable tool for testing and improving AI systems&#x27; multilingual and multicultural competencies. The benchmark&#x27;s introduction is significant for advancing AI&#x27;s applicability in regions with rich linguistic diversity, promoting more equitable AI development.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/introducing-indqa"
+            "date": "Nov 04 2025",
+            "title": "Google Enhances AI Mode with New Event and Appointment Booking Features",
+            "content": "Google has upgraded its AI Mode with new capabilities that allow users to book event tickets and beauty appointments through agentic interactions. By processing natural language requests, such as finding affordable concert tickets, AI Mode can search multiple platforms to provide real-time options tailored to user preferences. This enhancement reflects Google&#x27;s ongoing efforts to integrate AI more deeply into everyday tasks, improving user convenience and engagement. For AI professionals, these advancements underscore the growing role of AI in personal assistance applications, emphasizing the importance of refining natural language processing and real-time data integration.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/04/googles-ai-mode-gets-new-agentic-capabilities-to-help-book-event-tickets-and-beauty-appointments/"
         },
         {
-            "date": "Nov 03 2025",
-            "title": "Lambda Secures Major AI Infrastructure Deal with Microsoft",
-            "content": "Lambda has announced a multibillion-dollar agreement with Microsoft to enhance AI infrastructure capabilities. This collaboration follows Microsoft&#x27;s recent $9.7 billion deal with Australian data center company IREN, underscoring Microsoft&#x27;s aggressive expansion in AI infrastructure. For AI and tech professionals, this partnership signifies a substantial investment in scaling AI capabilities and infrastructure robustness. The deal highlights the competitive landscape of AI technology companies seeking to bolster their infrastructure to support future AI advancements. This move is poised to drive innovation and efficiency in AI deployment on a global scale.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/03/lambda-inks-multi-billion-dollar-ai-infrastructure-deal-with-microsoft/"
+            "date": "Nov 04 2025",
+            "title": "Databricks Study Highlights Human Factor in AI Evaluation Challenges",
+            "content": "A recent study by Databricks reveals that the main obstacle in deploying AI judges is not the technical capability of AI models, but rather the difficulty in defining and measuring quality standards. AI judges, which are systems designed to evaluate other AI models, face challenges due to the lack of clear criteria and human oversight in assessment processes. This finding is crucial for AI professionals as it emphasizes the need for developing standardized evaluation metrics and incorporating human judgment in AI assessments. The study highlights the importance of collaboration between technical and human factors in advancing AI deployment in enterprises.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/ai/databricks-research-reveals-that-building-better-ai-judges-isnt-just-a"
         }
     ],
     "articles": {
@@ -218,6 +211,26 @@ var websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-24893"
+        },
+        {
+            "cveId": "CVE-2025-48703",
+            "dateAdded": "Nov 04, 2025",
+            "vendor": "CWP Control Web Panel",
+            "description": "CWP Control Web Panel (formerly CentOS Web Panel) contains an OS command Injection vulnerability that allows unauthenticated remote code execution via shell metacharacters in the t_total parameter in",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-48703"
+        },
+        {
+            "cveId": "CVE-2025-11371",
+            "dateAdded": "Nov 04, 2025",
+            "vendor": "Gladinet CentreStack and Triofox",
+            "description": "Gladinet CentreStack and Triofox contains a files or directories accessible to external parties vulnerability that allows unintended disclosure of system files.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-11371"
         }
     ],
     "modals": {
