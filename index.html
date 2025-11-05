@@ -882,10 +882,71 @@
             pointer-events: all;
         }
         
+        /* Page Animation Canvas - Gradient Fade Effect */
+        .page-animation {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            /* Gradient mask - prominent at top, fades down */
+            mask-image: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 1) 0%,
+                rgba(0, 0, 0, 0.8) 20%,
+                rgba(0, 0, 0, 0.5) 50%,
+                rgba(0, 0, 0, 0.2) 80%,
+                rgba(0, 0, 0, 0) 100%
+            );
+            -webkit-mask-image: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 1) 0%,
+                rgba(0, 0, 0, 0.8) 20%,
+                rgba(0, 0, 0, 0.5) 50%,
+                rgba(0, 0, 0, 0.2) 80%,
+                rgba(0, 0, 0, 0) 100%
+            );
+        }
+        
+        /* Retention Notice */
+        .retention-notice {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: rgba(224, 31, 61, 0.1);
+            border: 1px solid rgba(224, 31, 61, 0.3);
+            border-radius: 12px;
+            padding: 12px 20px;
+            margin: 20px auto 0;
+            max-width: 700px;
+            color: #FF6B83;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        
+        body.light-mode .retention-notice {
+            background: rgba(224, 31, 61, 0.05);
+            color: #E01F3D;
+        }
+        
+        .retention-notice svg {
+            flex-shrink: 0;
+            color: #E01F3D;
+        }
+        
+        .retention-notice span {
+            text-align: center;
+        }
+        
         .archives-container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 100px 20px 60px;
+            position: relative;
+            z-index: 1;
         }
         
         .archives-header {
@@ -1055,6 +1116,8 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 100px 20px 60px;
+            position: relative;
+            z-index: 1;
         }
         
         .back-button {
@@ -1401,6 +1464,17 @@
             
             .archives-grid {
                 grid-template-columns: 1fr;
+            }
+            
+            .retention-notice {
+                flex-direction: column;
+                text-align: center;
+                padding: 15px;
+                font-size: 13px;
+            }
+            
+            .retention-notice svg {
+                margin-bottom: 5px;
             }
         }
         
@@ -1889,6 +1963,135 @@
                 display: none;
             }
         }
+        
+        /* ========== BUY ME A COFFEE FLOATING BUTTON ========== */
+        .buy-coffee-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #E01F3D 0%, #C81E3A 100%);
+            color: #FFFFFF;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 15px;
+            box-shadow: 
+                0 4px 15px rgba(224, 31, 61, 0.4),
+                0 2px 8px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 999;
+            cursor: pointer;
+            white-space: nowrap;
+            animation: pulse 3s ease-in-out infinite;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+        }
+        
+        /* Pulse animation for attention */
+        @keyframes pulse {
+            0%, 100% {
+                box-shadow: 
+                    0 4px 15px rgba(224, 31, 61, 0.4),
+                    0 2px 8px rgba(0, 0, 0, 0.3);
+            }
+            50% {
+                box-shadow: 
+                    0 4px 25px rgba(224, 31, 61, 0.6),
+                    0 2px 12px rgba(0, 0, 0, 0.4),
+                    0 0 30px rgba(224, 31, 61, 0.3);
+            }
+        }
+        
+        /* Hover effect */
+        .buy-coffee-btn:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 
+                0 8px 25px rgba(224, 31, 61, 0.6),
+                0 4px 15px rgba(0, 0, 0, 0.4),
+                0 0 40px rgba(224, 31, 61, 0.4);
+            background: linear-gradient(135deg, #FF4D6D 0%, #E01F3D 100%);
+        }
+        
+        /* Active/click effect */
+        .buy-coffee-btn:active {
+            transform: translateY(-1px) scale(1.02);
+        }
+        
+        /* Coffee icon styling */
+        .buy-coffee-btn svg {
+            width: 22px;
+            height: 22px;
+            flex-shrink: 0;
+            filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
+        }
+        
+        /* Button text */
+        .buy-coffee-text {
+            font-family: 'Inter', sans-serif;
+            letter-spacing: 0.3px;
+        }
+        
+        /* Light mode adjustments */
+        body.light-mode .buy-coffee-btn {
+            background: linear-gradient(135deg, #E01F3D 0%, #C81E3A 100%);
+            box-shadow: 
+                0 4px 15px rgba(224, 31, 61, 0.3),
+                0 2px 8px rgba(0, 0, 0, 0.15);
+            border: 2px solid rgba(255, 255, 255, 0.5);
+        }
+        
+        body.light-mode .buy-coffee-btn:hover {
+            box-shadow: 
+                0 8px 25px rgba(224, 31, 61, 0.5),
+                0 4px 15px rgba(0, 0, 0, 0.25),
+                0 0 40px rgba(224, 31, 61, 0.3);
+        }
+        
+        /* Mobile responsive - icon only below 768px */
+        @media (max-width: 768px) {
+            .buy-coffee-btn {
+                width: 50px;
+                height: 50px;
+                padding: 0;
+                border-radius: 50%;
+                gap: 0;
+                bottom: 15px;
+                right: 15px;
+            }
+            
+            .buy-coffee-text {
+                display: none;
+            }
+            
+            .buy-coffee-btn svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+        
+        /* Smaller screens adjustment */
+        @media (max-width: 480px) {
+            .buy-coffee-btn {
+                bottom: 12px;
+                right: 12px;
+                width: 48px;
+                height: 48px;
+            }
+        }
+        
+        /* Ensure button doesn't interfere with footer on small screens */
+        @media (max-height: 600px) {
+            .buy-coffee-btn {
+                bottom: 10px;
+                right: 10px;
+            }
+        }
+        /* ========== END BUY ME A COFFEE BUTTON ========== */
     </style>
 </head>
 <body>
@@ -2090,10 +2293,21 @@
 
     <!-- Archives Page -->
     <div id="archivesPage" class="archives-page">
+        <!-- Particle Animation Background -->
+        <canvas id="archives-animation" class="page-animation"></canvas>
+        
         <div class="archives-container">
             <button class="back-button" onclick="closeArchivesPage()">← Back to Home</button>
             <div class="archives-header">
                 <h1 class="archives-title">Archives</h1>
+                <div class="retention-notice">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="12"></line>
+                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                    </svg>
+                    <span>Articles older than 30 days are automatically removed to keep content fresh and relevant</span>
+                </div>
             </div>
             <div class="archives-grid" id="archivesGrid">
                 <!-- Dynamic archive cards will be loaded here -->
@@ -2103,6 +2317,9 @@
 
     <!-- Article Page -->
     <div id="articlePage" class="article-page">
+        <!-- Particle Animation Background -->
+        <canvas id="article-animation" class="page-animation"></canvas>
+        
         <div class="article-container">
             <button class="back-button" onclick="goHome()">← Back to Home</button>
             <div class="article-header">
@@ -2571,6 +2788,15 @@
             document.getElementById('articlePage').classList.remove('active');
             window.scrollTo({ top: 0, behavior: 'smooth' });
             history.pushState({ page: 'archives' }, 'Archives - TheHGTech', '#archives');
+            
+            // Start archives animation
+            if (window.startArchivesAnimation) {
+                window.startArchivesAnimation();
+            }
+            // Stop article animation if running
+            if (window.stopArticleAnimation) {
+                window.stopArticleAnimation();
+            }
         }
         
         // Close archives page
@@ -2579,6 +2805,11 @@
             document.getElementById('mainContent').classList.remove('hidden');
             window.scrollTo({ top: 0, behavior: 'smooth' });
             history.pushState({ page: 'home' }, 'TheHGTech', '/');
+            
+            // Stop archives animation
+            if (window.stopArchivesAnimation) {
+                window.stopArchivesAnimation();
+            }
         }
         
         // Open archive article
@@ -2617,6 +2848,15 @@
                 document.getElementById('articlePage').classList.add('active');
                 window.scrollTo({ top: 0, behavior: 'smooth' });
                 history.pushState({ page: 'archive', id: archiveId }, article.title, '#archive-' + archiveId);
+                
+                // Start article animation
+                if (window.startArticleAnimation) {
+                    window.startArticleAnimation();
+                }
+                // Stop archives animation if running
+                if (window.stopArchivesAnimation) {
+                    window.stopArchivesAnimation();
+                }
             }
         }
         
@@ -2656,6 +2896,11 @@
             document.getElementById('articlePage').classList.add('active');
             window.scrollTo({ top: 0, behavior: 'smooth' });
             history.pushState({ page: 'article', id: articleId }, article.title, '#article-' + articleId);
+            
+            // Start article animation
+            if (window.startArticleAnimation) {
+                window.startArticleAnimation();
+            }
         }
         
         // Go home
@@ -2665,6 +2910,14 @@
             document.getElementById('mainContent').classList.remove('hidden');
             window.scrollTo({ top: 0, behavior: 'smooth' });
             history.pushState({ page: 'home' }, 'TheHGTech', '/');
+            
+            // Stop all page animations
+            if (window.stopArticleAnimation) {
+                window.stopArticleAnimation();
+            }
+            if (window.stopArchivesAnimation) {
+                window.stopArchivesAnimation();
+            }
         }
         
         // Handle browser back/forward
@@ -2892,6 +3145,242 @@
             });
         })();
         // ========== END HERO PARTICLE ANIMATION ==========
+        
+        // ========== ARCHIVES PAGE PARTICLE ANIMATION ==========
+        (function() {
+            const canvas = document.getElementById('archives-animation');
+            if (!canvas) return;
+            
+            const ctx = canvas.getContext('2d');
+            let particles = [];
+            let particleCount = 50; // More particles for fullscreen effect
+            const maxDistance = 120;
+            let animationFrame = null;
+            let isActive = false;
+            
+            function resizeCanvas() {
+                const archivesPage = document.getElementById('archivesPage');
+                if (!archivesPage) return;
+                canvas.width = window.innerWidth;
+                canvas.height = archivesPage.scrollHeight;
+                initParticles();
+            }
+            
+            function initParticles() {
+                particles = [];
+                for (let i = 0; i < particleCount; i++) {
+                    particles.push({
+                        x: Math.random() * canvas.width,
+                        y: Math.random() * canvas.height,
+                        vx: (Math.random() - 0.5) * 0.3,
+                        vy: (Math.random() - 0.5) * 0.3,
+                    });
+                }
+            }
+            
+            function drawParticles() {
+                if (!isActive) return;
+                
+                const isLightMode = document.body.classList.contains('light-mode');
+                const particleColor = isLightMode ? 'rgba(224, 31, 61, 0.5)' : 'rgba(255, 77, 109, 0.5)';
+                const lineColor = isLightMode ? 'rgba(224, 31, 61, 0.3)' : 'rgba(255, 77, 109, 0.35)';
+                
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                
+                // Update and draw particles
+                for (let p of particles) {
+                    p.x += p.vx;
+                    p.y += p.vy;
+                    
+                    // Bounce off edges
+                    if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+                    if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+                    
+                    // Keep particles in bounds
+                    p.x = Math.max(0, Math.min(canvas.width, p.x));
+                    p.y = Math.max(0, Math.min(canvas.height, p.y));
+                    
+                    // Draw particle
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, 2, 0, Math.PI * 2);
+                    ctx.fillStyle = particleColor;
+                    ctx.fill();
+                }
+                
+                // Draw connections
+                for (let i = 0; i < particleCount; i++) {
+                    for (let j = i + 1; j < particleCount; j++) {
+                        const dx = particles[i].x - particles[j].x;
+                        const dy = particles[i].y - particles[j].y;
+                        const distance = Math.sqrt(dx * dx + dy * dy);
+                        
+                        if (distance < maxDistance) {
+                            ctx.beginPath();
+                            ctx.strokeStyle = lineColor;
+                            ctx.globalAlpha = 1 - (distance / maxDistance);
+                            ctx.lineWidth = 0.5;
+                            ctx.moveTo(particles[i].x, particles[i].y);
+                            ctx.lineTo(particles[j].x, particles[j].y);
+                            ctx.stroke();
+                        }
+                    }
+                }
+                
+                ctx.globalAlpha = 1;
+                animationFrame = requestAnimationFrame(drawParticles);
+            }
+            
+            // Start animation when archives page opens
+            window.startArchivesAnimation = function() {
+                isActive = true;
+                resizeCanvas();
+                drawParticles();
+            };
+            
+            // Stop animation when archives page closes
+            window.stopArchivesAnimation = function() {
+                isActive = false;
+                if (animationFrame) {
+                    cancelAnimationFrame(animationFrame);
+                    animationFrame = null;
+                }
+            };
+            
+            window.addEventListener('resize', function() {
+                if (isActive) resizeCanvas();
+            });
+        })();
+        // ========== END ARCHIVES PAGE PARTICLE ANIMATION ==========
+        
+        // ========== ARTICLE PAGE PARTICLE ANIMATION ==========
+        (function() {
+            const canvas = document.getElementById('article-animation');
+            if (!canvas) return;
+            
+            const ctx = canvas.getContext('2d');
+            let particles = [];
+            let particleCount = 50; // More particles for fullscreen effect
+            const maxDistance = 120;
+            let animationFrame = null;
+            let isActive = false;
+            
+            function resizeCanvas() {
+                const articlePage = document.getElementById('articlePage');
+                if (!articlePage) return;
+                canvas.width = window.innerWidth;
+                canvas.height = articlePage.scrollHeight;
+                initParticles();
+            }
+            
+            function initParticles() {
+                particles = [];
+                for (let i = 0; i < particleCount; i++) {
+                    particles.push({
+                        x: Math.random() * canvas.width,
+                        y: Math.random() * canvas.height,
+                        vx: (Math.random() - 0.5) * 0.3,
+                        vy: (Math.random() - 0.5) * 0.3,
+                    });
+                }
+            }
+            
+            function drawParticles() {
+                if (!isActive) return;
+                
+                const isLightMode = document.body.classList.contains('light-mode');
+                const particleColor = isLightMode ? 'rgba(224, 31, 61, 0.5)' : 'rgba(255, 77, 109, 0.5)';
+                const lineColor = isLightMode ? 'rgba(224, 31, 61, 0.3)' : 'rgba(255, 77, 109, 0.35)';
+                
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                
+                // Update and draw particles
+                for (let p of particles) {
+                    p.x += p.vx;
+                    p.y += p.vy;
+                    
+                    // Bounce off edges
+                    if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+                    if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+                    
+                    // Keep particles in bounds
+                    p.x = Math.max(0, Math.min(canvas.width, p.x));
+                    p.y = Math.max(0, Math.min(canvas.height, p.y));
+                    
+                    // Draw particle
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, 2, 0, Math.PI * 2);
+                    ctx.fillStyle = particleColor;
+                    ctx.fill();
+                }
+                
+                // Draw connections
+                for (let i = 0; i < particleCount; i++) {
+                    for (let j = i + 1; j < particleCount; j++) {
+                        const dx = particles[i].x - particles[j].x;
+                        const dy = particles[i].y - particles[j].y;
+                        const distance = Math.sqrt(dx * dx + dy * dy);
+                        
+                        if (distance < maxDistance) {
+                            ctx.beginPath();
+                            ctx.strokeStyle = lineColor;
+                            ctx.globalAlpha = 1 - (distance / maxDistance);
+                            ctx.lineWidth = 0.5;
+                            ctx.moveTo(particles[i].x, particles[i].y);
+                            ctx.lineTo(particles[j].x, particles[j].y);
+                            ctx.stroke();
+                        }
+                    }
+                }
+                
+                ctx.globalAlpha = 1;
+                animationFrame = requestAnimationFrame(drawParticles);
+            }
+            
+            // Start animation when article page opens
+            window.startArticleAnimation = function() {
+                isActive = true;
+                resizeCanvas();
+                drawParticles();
+            };
+            
+            // Stop animation when article page closes
+            window.stopArticleAnimation = function() {
+                isActive = false;
+                if (animationFrame) {
+                    cancelAnimationFrame(animationFrame);
+                    animationFrame = null;
+                }
+            };
+            
+            window.addEventListener('resize', function() {
+                if (isActive) resizeCanvas();
+            });
+        })();
+        // ========== END ARTICLE PAGE PARTICLE ANIMATION ==========
     </script>
+    
+    <!-- Buy Me a Coffee Floating Button -->
+    <a href="https://buymeacoffee.com/thehgtech" target="_blank" rel="noopener noreferrer" class="buy-coffee-btn" aria-label="Buy me a coffee">
+        <svg viewBox="0 0 884 1279" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M791.109 297.518L790.231 297.002L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518Z" fill="currentColor"/>
+            <path d="M803.896 388.891L802.916 389.166L803.896 388.891Z" fill="currentColor"/>
+            <path d="M791.484 297.377C791.359 297.361 791.237 297.332 791.118 297.29C791.111 297.371 791.111 297.453 791.118 297.534C791.252 297.516 791.368 297.462 791.484 297.377Z" fill="currentColor"/>
+            <path d="M791.113 297.529H791.244V297.447L791.113 297.529Z" fill="currentColor"/>
+            <path d="M803.111 388.726L804.591 387.883L803.111 388.726Z" fill="currentColor"/>
+            <path d="M791.484 297.377C791.359 297.361 791.237 297.332 791.118 297.29C791.111 297.371 791.111 297.453 791.118 297.534C791.252 297.516 791.368 297.462 791.484 297.377Z" fill="currentColor"/>
+            <path d="M803.111 388.726L804.591 387.883L803.111 388.726Z" fill="currentColor"/>
+            <path d="M791.113 297.529H791.244V297.447L791.113 297.529Z" fill="currentColor"/>
+            <path d="M842.039 631.312L845.764 631.312L845.764 630.89C845.764 628.286 843.643 626.165 841.039 626.165L841.039 629.89C841.039 630.442 841.487 630.89 842.039 630.89V631.312Z" fill="currentColor"/>
+            <path d="M803.896 388.891L802.916 389.166L803.896 388.891Z" fill="currentColor"/>
+            <path d="M842.039 631.312L845.764 631.312L845.764 630.89C845.764 628.286 843.643 626.165 841.039 626.165L841.039 629.89C841.039 630.442 841.487 630.89 842.039 630.89V631.312Z" fill="currentColor"/>
+            <path d="M803.111 388.726L804.591 387.883L803.111 388.726Z" fill="currentColor"/>
+            <path d="M791.484 297.377C791.359 297.361 791.237 297.332 791.118 297.29C791.111 297.371 791.111 297.453 791.118 297.534C791.252 297.516 791.368 297.462 791.484 297.377Z" fill="currentColor"/>
+            <path d="M791.113 297.529H791.244V297.447L791.113 297.529Z" fill="currentColor"/>
+            <path d="M803.896 388.891L802.916 389.166L803.896 388.891Z" fill="currentColor"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M445.061 164.506C433.648 164.506 424.38 173.774 424.38 185.187V274.193C424.38 285.606 433.648 294.874 445.061 294.874H808.364C819.777 294.874 829.045 285.606 829.045 274.193V185.187C829.045 173.774 819.777 164.506 808.364 164.506H445.061ZM427.905 185.187C427.905 175.723 435.597 168.031 445.061 168.031H808.364C817.828 168.031 825.52 175.723 825.52 185.187V274.193C825.52 283.657 817.828 291.349 808.364 291.349H445.061C435.597 291.349 427.905 283.657 427.905 274.193V185.187Z" fill="currentColor"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M464.402 171.143C452.949 171.143 443.659 180.433 443.659 191.886V267.494C443.659 278.947 452.949 288.237 464.402 288.237H789.023C800.476 288.237 809.766 278.947 809.766 267.494V191.886C809.766 180.433 800.476 171.143 789.023 171.143H464.402ZM447.184 191.886C447.184 182.382 454.898 174.668 464.402 174.668H789.023C798.527 174.668 806.241 182.382 806.241 191.886V267.494C806.241 277.998 798.527 285.712 789.023 285.712H464.402C454.898 285.712 447.184 277.998 447.184 267.494V191.886Z" fill="currentColor"/>
+        </svg>
+        <span class="buy-coffee-text">Buy me a coffee</span>
+    </a>
 </body>
 </html>
