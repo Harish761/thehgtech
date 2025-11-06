@@ -4,90 +4,76 @@
 var websiteContent = {
     "cyberShorts": [
         {
-            "date": "Nov 05 2025",
-            "title": "Malanta Secures $10 Million to Predict Cyber Threats",
-            "content": "Malanta has emerged from stealth mode with a $10 million seed funding round aimed at advancing its innovative cybersecurity solutions. The company specializes in collecting and analyzing digital traces left by cyber attackers to predict potential threats. This approach allows organizations to anticipate and mitigate risks before they escalate into full-scale attacks. The funding will be used to enhance Malanta&#x27;s technology and expand its market reach. For cybersecurity professionals, this development represents a significant step forward in proactive threat management. By understanding the patterns and behaviors of attackers, Malanta aims to provide a strategic advantage in the ongoing battle against cybercrime.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/malanta-emerges-from-stealth-with-10-million-seed-funding/"
+            "date": "Nov 06 2025",
+            "title": "Cloudflare Removes Aisuru Botnet from Top Domains Ranking",
+            "content": "Cloudflare has taken decisive action against the Aisuru botnet by removing its associated domains from the company&#x27;s public ranking of the most frequently requested websites. For the past week, domains linked to Aisuru had surpassed major entities like Amazon, Apple, Google, and Microsoft in web traffic rankings. The decision to redact these domains underscores the botnet&#x27;s significant impact on internet traffic. This move is crucial for cybersecurity professionals as it highlights the ongoing battle against large-scale botnets that can disrupt internet services and skew web analytics. Cloudflare&#x27;s intervention is a reminder of the importance of maintaining accurate and secure network data, ensuring that legitimate traffic is not overshadowed by malicious activity.",
+            "source": "Krebs on Security",
+            "sourceUrl": "https://krebsonsecurity.com/2025/11/cloudflare-scrubs-aisuru-botnet-from-top-domains-list/"
         },
         {
-            "date": "Nov 05 2025",
-            "title": "ConductorOne Secures $79 Million to Enhance Identity Management",
-            "content": "ConductorOne has successfully raised $79 million in Series B funding to further develop its AI-driven identity management platform. The platform is designed to secure and manage a vast array of identities, including human, non-human, and AI entities, across various systems. This funding will enable ConductorOne to enhance its capabilities and scale its operations to meet growing demand. As organizations increasingly rely on digital identities, ensuring their security becomes paramount. This investment underscores the critical importance of identity management in safeguarding sensitive information and maintaining trust in digital interactions. For security professionals, ConductorOne&#x27;s advancements offer robust solutions to complex identity challenges.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/conductorone-raises-79-million-in-series-b-funding/"
-        },
-        {
-            "date": "Nov 05 2025",
-            "title": "Global Operation Dismantles Major Credit Card Fraud Networks",
-            "content": "In a significant international operation, authorities have dismantled three large-scale credit card fraud and money laundering networks. These criminal organizations were responsible for losses exceeding €300 million ($344 million) and affected over 4.3 million cardholders in 193 countries. The coordinated effort involved multiple law enforcement agencies and highlights the global nature of cybercrime. For cybersecurity experts, this operation serves as a reminder of the persistent threats posed by organized crime in the digital space. The success of this bust demonstrates the effectiveness of international cooperation in combating financial fraud and protecting consumers worldwide.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/europol-credit-card-fraud-rings-stole-eur-300-million-from-43-million-cardholders/"
-        },
-        {
-            "date": "Nov 05 2025",
-            "title": "Samsung Knox Enhances Security for Android Ecosystem",
-            "content": "Samsung Knox is addressing long-standing security concerns associated with the open Android ecosystem by providing robust security solutions. Despite misconceptions about Android&#x27;s vulnerability, devices like the Samsung Galaxy offer advanced security features that protect critical work data. Samsung Knox&#x27;s integration into Android devices helps IT administrators manage security risks while enabling new ways of working. This development is crucial for businesses looking to leverage Android&#x27;s flexibility without compromising on security. For IT professionals, Samsung Knox represents a reliable tool in safeguarding enterprise data and maintaining operational integrity in a mobile-first world.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/11/securing-open-android-ecosystem-with.html"
-        },
-        {
-            "date": "Nov 05 2025",
-            "title": "Critical WordPress Plugin Flaw Exposes Sites to Takeover",
-            "content": "A critical vulnerability in the &#x27;Post SMTP&#x27; plugin for WordPress has been identified, allowing attackers to read arbitrary emails, including sensitive password reset messages. This flaw poses a significant risk to WordPress site administrators, as it could lead to unauthorized access and potential site takeovers. The vulnerability highlights the importance of regular plugin updates and security audits for WordPress sites. For cybersecurity professionals, this serves as a reminder of the ongoing need for vigilance in managing third-party software components. Addressing such vulnerabilities promptly is essential to maintaining the security and integrity of online platforms.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/exploited-post-smtp-plugin-flaw-exposes-wordpress-sites-to-takeover/"
-        },
-        {
-            "date": "Nov 05 2025",
-            "title": "ISC Stormcast Highlights Cybersecurity Developments for Early November",
-            "content": "The SANS Internet Storm Center&#x27;s Stormcast podcast for November 5, 2025, provides a comprehensive overview of current cybersecurity threats and trends. The InfoCON level remains at green, indicating a stable but vigilant cybersecurity environment. This podcast is a valuable resource for professionals looking to stay informed about the latest security challenges and defenses. By summarizing significant incidents and emerging threats, the Stormcast helps organizations and individuals prepare for potential cyber risks. Staying updated through such briefings is crucial as the threat landscape continuously evolves, impacting global networks and data integrity.",
+            "date": "Nov 06 2025",
+            "title": "ISC Stormcast Highlights Latest Cyber Threats",
+            "content": "The SANS Internet Storm Center has released its latest Stormcast, providing updates on current cybersecurity threats and trends. As of November 6, 2025, the InfoCON remains at green, indicating a stable threat level. This update is essential for cybersecurity professionals who rely on timely information to protect their networks and systems. The Stormcast covers a range of topics, including emerging vulnerabilities and attack vectors, offering valuable insights into the evolving landscape of cyber threats. Staying informed through such updates helps organizations anticipate and mitigate potential risks, ensuring robust security postures.",
             "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32450"
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32456"
+        },
+        {
+            "date": "Nov 06 2025",
+            "title": "Bronze Butler APT Exploits Zero-Day in Japanese Firms",
+            "content": "A sophisticated cyber espionage group known as Bronze Butler has exploited a zero-day vulnerability (CVE-2025-61932) in a widely used endpoint management system to infiltrate Japanese organizations. This critical security flaw has allowed the Chinese state-sponsored attackers to establish backdoors, posing a significant threat to affected businesses. The incident underscores the persistent risk posed by advanced persistent threats (APTs) and the importance of timely vulnerability management. For security professionals, this highlights the need for vigilant monitoring and rapid patch deployment to defend against such high-level attacks. The breach serves as a stark reminder of the geopolitical dimensions of cybersecurity threats.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/application-security/bronze-butler-apt-exploits-zero-day-vuln-root-japan"
         },
         {
             "date": "Nov 05 2025",
-            "title": "North Korean Group Kimsuky Enhances HTTPTroy Backdoor Capabilities",
-            "content": "The notorious North Korean cyber threat group Kimsuky has introduced new obfuscation and anti-analysis features to its HTTPTroy backdoor, targeting South Korean users. This development signifies an ongoing effort to refine their attack methodologies, making detection and analysis more challenging for cybersecurity professionals. By improving their toolchain, Kimsuky demonstrates a sophisticated understanding of evasion techniques, posing a heightened threat to targeted organizations. For security experts, this underscores the importance of advanced threat detection and response strategies. Staying ahead of such evolving tactics is critical to safeguarding sensitive information and maintaining operational security.",
+            "title": "Nikkei Data Breach via Slack Account Compromise",
+            "content": "Japanese media giant Nikkei has reported a data breach affecting thousands of employees and business partners, following a compromise of Slack account data and chat histories. This incident highlights the vulnerabilities associated with third-party communication platforms, which are increasingly targeted by cybercriminals. The breach has significant implications for data privacy and organizational security, emphasizing the need for robust access controls and regular security audits. For cybersecurity professionals, this serves as a cautionary tale about the risks of relying on cloud-based collaboration tools without adequate security measures. The breach also stresses the importance of employee training on recognizing and preventing phishing attacks.",
             "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/kimsuky-httptroy-backdoor-south-korea-users"
+            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/nikkei-suffers-breach-slack-compromise"
+        },
+        {
+            "date": "Nov 05 2025",
+            "title": "Gootloader Malware Resurfaces with New Tactics",
+            "content": "After a seven-month hiatus, the Gootloader malware operation has re-emerged, employing new tactics such as SEO poisoning to distribute malicious software via fake websites. This resurgence is concerning for cybersecurity professionals due to Gootloader&#x27;s history of delivering ransomware and other harmful payloads. The malware&#x27;s return with enhanced distribution methods highlights the evolving nature of cyber threats and the need for continuous vigilance. Organizations must prioritize threat intelligence and employ advanced detection techniques to mitigate the risks posed by such malware campaigns. This development serves as a reminder of the persistent threat landscape and the importance of proactive cybersecurity measures.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/gootloader-malware-is-back-with-new-tricks-after-7-month-break/"
         }
     ],
     "aiShorts": [
         {
             "date": "Nov 05 2025",
-            "title": "Former Meta Employees Introduce Innovative Voice-Controlled Ring",
-            "content": "Two former Meta employees have launched a new voice-controlled ring designed to manage voice notes and control music. This innovation adds to a growing market of voice-based hardware, including various card-shaped devices, pendants, and wristbands from other companies. The ring aims to enhance user productivity and personal growth by providing a hands-free, voice-activated interface. For AI professionals, this development highlights the ongoing evolution and diversification of voice-activated technology in consumer electronics. The introduction of such devices underscores the demand for seamless integration of AI into everyday life, offering new opportunities for developers and designers in the field. As voice-controlled devices become more prevalent, they present both opportunities and challenges in terms of data privacy and user security.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/05/former-meta-employees-launch-a-ring-to-take-voice-notes-and-control-music/"
+            "title": "CRED Leverages AI to Enhance Customer Experience in India",
+            "content": "CRED is utilizing OpenAI&#x27;s GPT-powered tools to elevate customer experiences in India. The integration of AI technology is aimed at increasing support accuracy, shortening response times, and enhancing overall customer satisfaction. This move is part of CRED&#x27;s strategy to offer premium services by harnessing advanced AI capabilities. For AI professionals, this development underscores the growing trend of AI adoption in customer service sectors, emphasizing the potential for AI to transform user interactions. The use of AI in this context highlights its ability to handle complex queries and provide personalized responses, setting a new standard for customer engagement.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/cred-swamy-seetharaman"
         },
         {
             "date": "Nov 05 2025",
-            "title": "Goldman Sachs Invests Further in MoEngage for Global Expansion",
-            "content": "Goldman Sachs has increased its investment in MoEngage, a customer engagement platform, to support its global expansion efforts. With a presence in 75 countries, MoEngage&#x27;s growth is primarily driven by its success in North America. This investment signals confidence in MoEngage&#x27;s ability to scale and innovate within the competitive landscape of customer engagement solutions. For AI and tech professionals, this move highlights the strategic importance of AI-driven customer engagement tools in today&#x27;s digital economy. The funding will likely accelerate MoEngage&#x27;s ability to enhance its AI capabilities, offering more sophisticated solutions for businesses worldwide. As AI continues to transform customer interaction, such investments underscore the critical role of AI in shaping future business strategies.",
+            "title": "Apple Considers $1B Annual Deal with Google to Boost Siri",
+            "content": "Apple is reportedly close to finalizing a deal with Google to pay $1 billion annually for technology enhancements to Siri. This partnership aims to revamp Siri&#x27;s capabilities and introduce new features for the voice assistant. The collaboration signifies a strategic move by Apple to leverage Google&#x27;s advanced AI technologies to maintain competitiveness in the voice assistant market. For AI professionals, this potential deal highlights the importance of cross-company collaborations in advancing AI technologies. It also points to the significant investments required to keep voice assistants at the forefront of innovation.",
             "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/04/goldman-sachs-doubles-down-on-moengage-in-100m-round-to-fuel-global-expansion/"
+            "sourceUrl": "https://techcrunch.com/2025/11/05/apple-nears-deal-to-pay-google-1b-annually-to-power-new-siri-report-says/"
         },
         {
             "date": "Nov 05 2025",
-            "title": "U.S. and Indian VCs Collaborate to Boost India&#x27;s Deep-Tech Startups",
-            "content": "NVIDIA and Qualcomm have joined forces with six Indian venture capital firms to inject over $850 million into India&#x27;s burgeoning deep-tech ecosystem. This collaboration aims to foster the growth of startups specializing in advanced technologies, including AI and machine learning. For AI professionals, this initiative represents a significant opportunity for innovation and collaboration between U.S. and Indian tech sectors. The investment is poised to accelerate the development of cutting-edge technologies, potentially positioning India as a global leader in deep-tech innovation. This partnership also underscores the importance of international cooperation in advancing AI research and development, offering new avenues for collaboration and knowledge exchange.",
+            "title": "Pinterest Embraces Open Source AI for Cost Efficiency",
+            "content": "Pinterest CEO Bill Ready has praised the company&#x27;s adoption of open source AI, citing significant cost reductions and performance improvements, particularly in visual search functionalities. The move to open source AI aligns with a broader industry trend towards more cost-effective and flexible AI solutions. For AI professionals, Pinterest&#x27;s strategy highlights the potential benefits of open source AI, including reduced dependency on proprietary technologies and enhanced customization capabilities. This approach can serve as a model for other companies looking to optimize their AI operations while managing expenses.",
             "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/04/nvidia-qualcomm-join-u-s-indian-vcs-to-help-build-indias-next-deep-tech-startups/"
+            "sourceUrl": "https://techcrunch.com/2025/11/05/pinterest-ceo-touts-open-source-ai-tremendous-performance-with-reduced-costs/"
         },
         {
-            "date": "Nov 04 2025",
-            "title": "New AI Model Challenges the &quot;Attention Is All You Need&quot; Paradigm",
-            "content": "A new variant of the Qwen3 model, Brumby-14B-Base, introduces the Power Retention technique, challenging the long-held belief that &quot;attention is all you need&quot; in AI models. Since the introduction of the transformer architecture in 2017, attention mechanisms have been central to the development of large language models. This new approach suggests alternative methods for enhancing AI performance, potentially leading to more efficient and robust models. For AI researchers and developers, this represents a pivotal shift in AI architecture design, encouraging exploration of new methodologies beyond traditional attention-based models. The implications for AI development are significant, as it opens up possibilities for more diverse and effective AI solutions, impacting various applications from natural language processing to machine learning.",
+            "date": "Nov 05 2025",
+            "title": "Tinder Experiments with AI to Enhance User Profiles",
+            "content": "Tinder is trialing a new feature named Chemistry, which uses AI to better understand users by asking questions and, with consent, accessing their Camera Roll photos. This initiative is designed to gain deeper insights into users&#x27; interests and personalities, potentially leading to more accurate matchmaking. For AI professionals, this experiment illustrates the innovative use of AI in personalizing user experiences in the dating app industry. It also raises important discussions about privacy and data usage, emphasizing the need for transparent user consent mechanisms.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/05/tinder-to-use-ai-to-get-to-know-users-tap-into-their-camera-roll-photos/"
+        },
+        {
+            "date": "Nov 05 2025",
+            "title": "Google Cloud Enhances AI Agent Builder with New Features",
+            "content": "Google Cloud has announced significant updates to its AI Agent Builder on the Vertex AI platform, introducing an observability dashboard and faster build-and-deploy tools. These enhancements aim to streamline the development and deployment process of AI agents for enterprise use cases. For AI developers, the new features offer improved governance tools and expanded capabilities for designing and managing AI agents. This update reflects Google Cloud&#x27;s commitment to providing comprehensive solutions that support the entire AI development lifecycle, highlighting the platform&#x27;s role in advancing enterprise AI applications.",
             "source": "AI | VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/attention-isnt-all-you-need-new-qwen3-variant-brumby-14b-base-leverages"
-        },
-        {
-            "date": "Nov 04 2025",
-            "title": "Sora&#x27;s Android Launch Expands Its Global Reach",
-            "content": "The Android version of Sora, a popular application, is now available in the U.S., Canada, and other regions, maintaining all features of its iOS counterpart. Notably, it includes the &quot;Cameos&quot; feature, allowing users to generate personalized videos using their own likeness. This expansion is significant for AI professionals as it demonstrates the increasing demand for cross-platform AI applications. The availability on Android broadens Sora&#x27;s user base, offering more data and insights for developers to refine and enhance the app&#x27;s AI-driven features. As AI applications continue to expand across platforms, this trend highlights the importance of developing versatile and scalable AI solutions that cater to diverse user needs globally.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/04/sora-is-now-available-on-android-in-the-us-canada-and-other-regions/"
+            "sourceUrl": "https://venturebeat.com/ai/the-agent-builder-arms-race-continues-as-google-cloud-pushes-deeper-into"
         }
     ],
     "articles": {
@@ -206,26 +192,6 @@ var websiteContent = {
         }
     ],
     "recentCVEs": [
-        {
-            "cveId": "CVE-2025-41244",
-            "dateAdded": "Oct 30, 2025",
-            "vendor": "Broadcom VMware Aria Operations and VMware Tools",
-            "description": "Broadcom VMware Aria Operations and VMware Tools contain a privilege defined with unsafe actions vulnerability. A malicious local actor with non-administrative privileges having access to a VM with VM",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-41244"
-        },
-        {
-            "cveId": "CVE-2025-24893",
-            "dateAdded": "Oct 30, 2025",
-            "vendor": "XWiki Platform",
-            "description": "XWiki Platform contains an eval injection vulnerability that could allow any guest to perform arbitrary remote code execution through a request to SolrSearch.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-24893"
-        },
         {
             "cveId": "CVE-2025-48703",
             "dateAdded": "Nov 04, 2025",
