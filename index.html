@@ -51,7 +51,8 @@
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
     
     <!-- ========== SECURITY HEADERS ========== -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com;">
+    <!-- CSP temporarily disabled for local testing. Re-enable when deploying to production! -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com;"> -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="DENY">
     <meta http-equiv="X-XSS-Protection" content="1; mode=block">
@@ -110,14 +111,6 @@
       "publisher": {
         "@type": "Organization",
         "name": "TheHGTech"
-      },
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://thehgtech.com/search?q={search_term_string}"
-        },
-        "query-input": "required name=search_term_string"
       }
     }
     </script>
@@ -160,6 +153,7 @@
         h1, h2, h3, h4, h5, h6 {
             font-family: 'Space Grotesk', sans-serif;
             font-weight: 700;
+            text-decoration: none;
         }
         
         body::before {
@@ -192,38 +186,53 @@
             z-index: 1;
         }
         
-        /* Header Styles */
+        /* Header Styles - Centered Floating Pill */
         header {
             padding: 20px 0;
-            background: rgba(0, 0, 0, 0.95);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(224, 31, 61, 0.2);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        
-        body.light-mode header {
-            background: rgba(255, 255, 255, 0.95);
-            border-bottom: 1px solid rgba(224, 31, 61, 0.2);
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            width: auto;
+            max-width: 95%;
         }
         
         .header-content {
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            gap: 30px;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(20px);
+            padding: 12px 30px;
+            border-radius: 50px;
+            border: 1px solid rgba(224, 31, 61, 0.3);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        body.light-mode .header-content {
+            background: rgba(255, 255, 255, 0.85);
+            border: 1px solid rgba(224, 31, 61, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.05);
         }
         
         .header-left {
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 10px;
             cursor: pointer;
+            transition: opacity 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .header-left:hover {
+            opacity: 0.8;
         }
         
         .logo-icon {
-            width: 50px;
-            height: 50px;
+            width: 32px;
+            height: 32px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -236,13 +245,268 @@
         }
         
         .logo {
-            font-size: 24px;
-            font-weight: 800;
-            color: #FFFFFF;
+            font-size: 1.8rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #E01F3D 0%, #FF6B6B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.5px;
+            font-family: 'Space Grotesk', sans-serif;
+            margin: 0;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 1.4rem;
+            }
         }
         
         body.light-mode .logo {
+            background: linear-gradient(135deg, #E01F3D 0%, #FF6B6B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        /* Navigation Menu */
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 35px;
+        }
+        
+        .nav-item {
+            position: relative;
+        }
+        
+        .nav-link, .nav-btn {
+            color: #E5E5E5;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            padding: 5px 0;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            background: none;
+            border: none;
+            white-space: nowrap;
+            position: relative;
+        }
+        
+        body.light-mode .nav-link,
+        body.light-mode .nav-btn {
             color: #1A1A1A;
+        }
+        
+        .nav-link::after,
+        .nav-btn::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #E01F3D, #FF6B6B);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after,
+        .nav-btn:hover::after {
+            width: 100%;
+        }
+        
+        .nav-link:hover,
+        .nav-btn:hover {
+            color: #E01F3D;
+        }
+        
+        @media (max-width: 968px) {
+            .nav-menu {
+                gap: 20px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-menu {
+                gap: 15px;
+            }
+            
+            .nav-link,
+            .nav-btn {
+                font-size: 13px;
+            }
+        }
+        
+        
+        /* Dropdown Arrow */
+        .dropdown-arrow {
+            font-size: 10px;
+            transition: transform 0.3s ease;
+        }
+        
+        .nav-item:hover .dropdown-arrow {
+            transform: rotate(180deg);
+        }
+        
+        /* Dropdown Menu */
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            margin-top: 8px;
+            background: rgba(0, 0, 0, 0.98);
+            border: 1px solid rgba(224, 31, 61, 0.3);
+            border-radius: 8px;
+            min-width: 180px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(10px);
+        }
+        
+        body.light-mode .dropdown-menu {
+            background: rgba(255, 255, 255, 0.98);
+            border: 1px solid rgba(224, 31, 61, 0.3);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-item:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .dropdown-item {
+            padding: 12px 20px;
+            color: #E5E5E5;
+            text-decoration: none;
+            display: block;
+            font-size: 14px;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+        
+        body.light-mode .dropdown-item {
+            color: #1A1A1A;
+        }
+        
+        .dropdown-item:hover {
+            background: rgba(224, 31, 61, 0.1);
+            color: #E01F3D;
+            padding-left: 24px;
+        }
+        
+        .dropdown-item:first-child {
+            border-radius: 8px 8px 0 0;
+        }
+        
+        .dropdown-item:last-child {
+            border-radius: 0 0 8px 8px;
+        }
+        
+        /* Right Side Controls */
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        /* Mobile Menu Toggle */
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 8px;
+        }
+        
+        .mobile-menu-toggle span {
+            width: 24px;
+            height: 2px;
+            background: #E5E5E5;
+            transition: all 0.3s ease;
+        }
+        
+        body.light-mode .mobile-menu-toggle span {
+            background: #1A1A1A;
+        }
+        
+        /* Body padding for fixed header */
+        body {
+            padding-top: 80px;
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 280px;
+                height: calc(100vh - 80px);
+                background: rgba(0, 0, 0, 0.98);
+                backdrop-filter: blur(10px);
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 20px;
+                gap: 0;
+                margin: 0;
+                transition: left 0.3s ease;
+                border-right: 1px solid rgba(224, 31, 61, 0.2);
+                overflow-y: auto;
+            }
+            
+            body.light-mode .nav-menu {
+                background: rgba(255, 255, 255, 0.98);
+            }
+            
+            .nav-menu.active {
+                left: 0;
+            }
+            
+            .nav-item {
+                width: 100%;
+                border-bottom: 1px solid rgba(224, 31, 61, 0.1);
+            }
+            
+            .nav-link {
+                width: 100%;
+                padding: 15px 0;
+            }
+            
+            .dropdown-menu {
+                position: static;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+                margin: 0;
+                border: none;
+                background: transparent;
+                box-shadow: none;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease;
+            }
+            
+            .nav-item.active .dropdown-menu {
+                max-height: 300px;
+            }
+            
+            .dropdown-item {
+                padding-left: 20px;
+            }
+            
+            .mobile-menu-toggle {
+                display: flex;
+            }
+            
+            .whats-new-button {
+                display: none;
+            }
         }
         
         /* Theme Toggle Switch */
@@ -285,6 +549,44 @@
         
         .theme-icon {
             font-size: 18px;
+        }
+        
+        /* Theme Toggle Button */
+        .theme-toggle-btn {
+            background: rgba(224, 31, 61, 0.1);
+            border: 1px solid rgba(224, 31, 61, 0.3);
+            color: #E01F3D;
+            padding: 10px 18px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            font-size: 14px;
+            white-space: nowrap;
+        }
+        
+        .theme-toggle-btn:hover {
+            background: rgba(224, 31, 61, 0.2);
+            border-color: #E01F3D;
+            transform: translateY(-2px);
+        }
+        
+        body.light-mode .theme-toggle-btn {
+            background: rgba(224, 31, 61, 0.1);
+            color: #E01F3D;
+            border-color: rgba(224, 31, 61, 0.3);
+        }
+        
+        body.light-mode .theme-toggle-btn:hover {
+            background: rgba(224, 31, 61, 0.2);
+            border-color: #E01F3D;
+        }
+        
+        @media (max-width: 768px) {
+            .theme-toggle-btn {
+                padding: 8px 14px;
+                font-size: 12px;
+            }
         }
         
         /* Hero Section */
@@ -371,12 +673,12 @@
         }
         
         /* ========== SECTION IMPROVEMENTS ========== */
-        /* Section Divider */
+        /* Section Divider - 40% less spacing */
         .section-divider {
             width: 100%;
             height: 1px;
             background: linear-gradient(90deg, transparent, rgba(224, 31, 61, 0.5), transparent);
-            margin: 60px 0;
+            margin: 36px 0;
             box-shadow: 0 0 20px rgba(224, 31, 61, 0.3);
             position: relative;
         }
@@ -394,16 +696,16 @@
             filter: blur(2px);
         }
         
-        /* Alternating Section Backgrounds */
+        /* Alternating Section Backgrounds - 40% less padding */
         .section-alt-light {
             background: rgba(255, 255, 255, 0.01);
-            padding: 60px 0;
+            padding: 36px 0;
             position: relative;
         }
         
         .section-alt-dark {
             background: rgba(0, 0, 0, 0.2);
-            padding: 60px 0;
+            padding: 36px 0;
             position: relative;
         }
         
@@ -415,9 +717,9 @@
             background: rgba(0, 0, 0, 0.02);
         }
         
-        /* Quick Insights Section */
+        /* Quick Insights Section - 40% less margin */
         .quick-insights {
-            margin: 40px 0;
+            margin: 24px 0;
         }
         
         .section-title {
@@ -1064,9 +1366,9 @@
         .archives-container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 100px 20px 60px;
+            padding: 120px 20px 60px;
             position: relative;
-            z-index: 1;
+            z-index: 201;
         }
         
         .archives-header {
@@ -1235,9 +1537,9 @@
         .article-container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 100px 20px 60px;
+            padding: 120px 20px 60px;
             position: relative;
-            z-index: 1;
+            z-index: 201;
         }
         
         .back-button {
@@ -1253,6 +1555,8 @@
             display: inline-flex;
             align-items: center;
             gap: 8px;
+            position: relative;
+            z-index: 201;
         }
         
         .back-button:hover {
@@ -1388,18 +1692,40 @@
         .social-icon {
             display: inline-flex;
             align-items: center;
-            gap: 8px;
-        }
-        
-        .social-icon svg {
-            width: 18px;
-            height: 18px;
-            fill: currentColor;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: rgba(224, 31, 61, 0.1);
+            border: 2px solid rgba(224, 31, 61, 0.3);
             transition: all 0.3s ease;
         }
         
-        .footer-section ul li a:hover svg {
+        .social-icon:hover {
+            background: rgba(224, 31, 61, 0.2);
+            border-color: rgba(224, 31, 61, 0.6);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(224, 31, 61, 0.3);
+        }
+        
+        .social-icon svg {
+            width: 20px;
+            height: 20px;
+            fill: #E01F3D;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover svg {
             transform: scale(1.1);
+        }
+        
+        body.light-mode .social-icon {
+            background: rgba(224, 31, 61, 0.05);
+            border-color: rgba(224, 31, 61, 0.2);
+        }
+        
+        body.light-mode .social-icon svg {
+            fill: #E01F3D;
         }
         
         .footer-bottom {
@@ -2094,47 +2420,29 @@
             justify-content: center;
             gap: 10px;
             padding: 12px 24px;
-            background: linear-gradient(135deg, #E01F3D 0%, #C81E3A 100%);
-            color: #FFFFFF;
+            background: linear-gradient(135deg, #FFDD00 0%, #FDB913 100%);
+            color: #000000;
             text-decoration: none;
             border-radius: 50px;
-            font-weight: 600;
+            font-weight: 700;
             font-size: 15px;
             box-shadow: 
-                0 4px 15px rgba(224, 31, 61, 0.4),
+                0 4px 15px rgba(255, 221, 0, 0.4),
                 0 2px 8px rgba(0, 0, 0, 0.3);
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             z-index: 999;
             cursor: pointer;
             white-space: nowrap;
-            animation: pulse 3s ease-in-out infinite;
-            border: 2px solid rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(10px);
-        }
-        
-        /* Pulse animation for attention */
-        @keyframes pulse {
-            0%, 100% {
-                box-shadow: 
-                    0 4px 15px rgba(224, 31, 61, 0.4),
-                    0 2px 8px rgba(0, 0, 0, 0.3);
-            }
-            50% {
-                box-shadow: 
-                    0 4px 25px rgba(224, 31, 61, 0.6),
-                    0 2px 12px rgba(0, 0, 0, 0.4),
-                    0 0 30px rgba(224, 31, 61, 0.3);
-            }
+            border: 2px solid rgba(0, 0, 0, 0.1);
         }
         
         /* Hover effect */
         .buy-coffee-btn:hover {
             transform: translateY(-3px) scale(1.05);
             box-shadow: 
-                0 8px 25px rgba(224, 31, 61, 0.6),
-                0 4px 15px rgba(0, 0, 0, 0.4),
-                0 0 40px rgba(224, 31, 61, 0.4);
-            background: linear-gradient(135deg, #FF4D6D 0%, #E01F3D 100%);
+                0 8px 25px rgba(255, 221, 0, 0.6),
+                0 4px 15px rgba(0, 0, 0, 0.4);
+            background: linear-gradient(135deg, #FFE74C 0%, #FFDD00 100%);
         }
         
         /* Active/click effect */
@@ -2144,8 +2452,8 @@
         
         /* Coffee icon styling */
         .buy-coffee-btn svg {
-            width: 22px;
-            height: 22px;
+            width: 20px;
+            height: 20px;
             flex-shrink: 0;
             filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
         }
@@ -2158,18 +2466,17 @@
         
         /* Light mode adjustments */
         body.light-mode .buy-coffee-btn {
-            background: linear-gradient(135deg, #E01F3D 0%, #C81E3A 100%);
+            background: linear-gradient(135deg, #FFDD00 0%, #FDB913 100%);
+            color: #000000;
             box-shadow: 
-                0 4px 15px rgba(224, 31, 61, 0.3),
-                0 2px 8px rgba(0, 0, 0, 0.15);
-            border: 2px solid rgba(255, 255, 255, 0.5);
+                0 4px 15px rgba(255, 221, 0, 0.3),
+                0 2px 8px rgba(0, 0, 0, 0.2);
         }
         
         body.light-mode .buy-coffee-btn:hover {
             box-shadow: 
-                0 8px 25px rgba(224, 31, 61, 0.5),
-                0 4px 15px rgba(0, 0, 0, 0.25),
-                0 0 40px rgba(224, 31, 61, 0.3);
+                0 8px 25px rgba(255, 221, 0, 0.5),
+                0 4px 15px rgba(0, 0, 0, 0.3);
         }
         
         /* Mobile responsive - icon only below 768px */
@@ -2211,6 +2518,91 @@
                 right: 10px;
             }
         }
+        
+        
+        /* ========== ROLLING FEATURE CARDS ========== */
+        .rolling-cards-section {
+            padding: 40px 0;
+            overflow: hidden;
+        }
+        
+        .rolling-cards-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .rolling-cards-title {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #E5E5E5;
+        }
+        
+        body.light-mode .rolling-cards-title {
+            color: #1A1A1A;
+        }
+        
+        .rolling-cards-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            height: 200px;
+            perspective: 1000px;
+        }
+        
+        .rolling-card {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(224, 31, 61, 0.1), rgba(200, 30, 58, 0.1));
+            border: 1px solid rgba(224, 31, 61, 0.3);
+            border-radius: 20px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            opacity: 0;
+            transform: translateX(100%) rotateY(20deg);
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .rolling-card.active {
+            opacity: 1;
+            transform: translateX(0) rotateY(0);
+            z-index: 2;
+        }
+        
+        .rolling-card.exiting {
+            opacity: 0;
+            transform: translateX(-100%) rotateY(-20deg);
+            z-index: 1;
+        }
+        
+        .rolling-card-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        
+        .rolling-card-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #E01F3D;
+            margin-bottom: 10px;
+        }
+        
+        .rolling-card-description {
+            font-size: 15px;
+            color: #CCC;
+            line-height: 1.6;
+        }
+        
+        body.light-mode .rolling-card-description {
+            color: #666;
+        }
+        
         /* ========== END BUY ME A COFFEE BUTTON ========== */
     </style>
 </head>
@@ -2219,27 +2611,32 @@
     <header>
         <div class="container">
             <div class="header-content">
+                <!-- Logo -->
                 <div class="header-left" onclick="goHome()">
                     <div class="logo-icon">
                         <img id="logoImg" src="logo-dark.png" alt="TheHGTech Logo - Cybersecurity and AI News Platform" onerror="this.style.display='none'">
                     </div>
                     <h1 class="logo">TheHGTech</h1>
                 </div>
-                <div style="display: flex; align-items: center; gap: 15px;">
-                    <button class="whats-new-button" onclick="openModal('whatsNew')">
-                        What's New
-                    </button>
-                    <div class="theme-toggle-container">
-                        <span class="theme-icon">🌙</span>
-                        <div class="theme-toggle" onclick="toggleTheme()">
-                            <div class="theme-toggle-slider"></div>
-                        </div>
-                        <span class="theme-icon">☀️</span>
-                    </div>
-                </div>
+                
+                <!-- Navigation Menu -->
+                <nav class="nav-menu" id="navMenu">
+                    <a href="#latest-articles" class="nav-link" onclick="scrollToSection('latest-articles'); return false;">Articles</a>
+                    <a href="#cyber-insights" class="nav-link" onclick="scrollToSection('cyber-insights'); return false;">Insights</a>
+                    <a href="#cve-section" class="nav-link" onclick="scrollToSection('cve-section'); return false;">CVE</a>
+                    <a href="#" class="nav-link" onclick="openArchivesPage(); return false;">Archives</a>
+                    <a href="#" class="nav-link" onclick="openModal('about'); return false;">About</a>
+                    <a href="#" class="nav-link" onclick="openModal('contact'); return false;">Contact</a>
+                </nav>
+                
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle-btn" id="themeToggleBtn" onclick="toggleTheme()">
+                    Light Mode
+                </button>
             </div>
         </div>
     </header>
+    
 
     <!-- Main Content -->
     <div id="mainContent">
@@ -2257,7 +2654,7 @@
             <div class="section-divider"></div>
 
             <!-- Quick Insights Section -->
-            <div class="section-alt-light">
+            <div class="section-alt-light" id="cyber-insights">
                 <div class="container">
                     <section class="quick-insights">
                         <h2 class="section-title">Quick Insights</h2>
@@ -2269,7 +2666,7 @@
                             <div class="tab-subtitle">Latest threats & vulnerabilities</div>
                         </div>
                     </div>
-                    <div class="insights-tab" onclick="switchInsightTab('ai')">
+                    <div class="insights-tab" onclick="switchInsightTab('ai')" id="ai-insights-tab">
                         <div class="icon-box">AI</div>
                         <div class="tab-label">
                             <div class="tab-title">AI News</div>
@@ -2286,7 +2683,7 @@
                 </div>
 
                 <!-- AI Shorts -->
-                <div id="aiInsights" class="insights-content">
+                <div id="aiInsights" class="insights-content" data-section="ai-insights">
                     <div class="short-card" id="aiShortCard">
                         <!-- Dynamic content will be loaded here -->
                     </div>
@@ -2299,7 +2696,7 @@
             <div class="section-divider"></div>
 
             <!-- CVE Tracker Section -->
-            <div class="section-alt-dark">
+            <div class="section-alt-dark" id="cve-section">
                 <div class="container">
                     <section class="cve-tracker">
                 <div class="cve-header">
@@ -2327,26 +2724,15 @@
             <!-- Section Divider -->
             <div class="section-divider"></div>
 
-            <!-- Split Layout: Latest Articles + Feature Insights -->
+            <!-- Latest Articles Section -->
             <div class="section-alt-light">
                 <div class="container">
-                    <div class="split-container">
-                <!-- Latest Articles (60%) -->
-                <section class="latest-articles">
+                <section class="latest-articles" id="latest-articles">
                     <h2 class="section-header">Latest Articles</h2>
                     <div id="articlesContainer">
                         <!-- Dynamic article cards will be loaded here -->
                     </div>
                 </section>
-
-                <!-- Feature Insights (40%) -->
-                <aside class="feature-insights">
-                    <h2 class="section-header">Feature Insights</h2>
-                    <div id="featureContainer">
-                        <!-- Dynamic feature cards will be loaded here -->
-                    </div>
-                </aside>
-            </div>
                 </div>
             </div>
 
@@ -2355,6 +2741,18 @@
                 <button class="archives-button" onclick="openArchivesPage()">
                     View Archives
                 </button>
+            </section>
+            
+            <!-- Rolling Feature Cards -->
+            <section class="rolling-cards-section">
+                <div class="container">
+                    <div class="rolling-cards-header">
+                        <h2 class="rolling-cards-title">Feature Insights</h2>
+                    </div>
+                    <div class="rolling-cards-container" id="rollingCards">
+                        <!-- Cards will be dynamically inserted here -->
+                    </div>
+                </div>
             </section>
         </div>
 
@@ -2374,36 +2772,39 @@
                             <li><a href="#" onclick="openModal('terms'); return false;">Terms of Service</a></li>
                         </ul>
                     </div>
-                    <div class="footer-section">
-                        <h3>Connect</h3>
-                        <ul>
-                            <li>
-                                <a href="https://www.facebook.com/profile.php?id=61582408623186" target="_blank" rel="noopener noreferrer" class="social-icon">
-                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                                    </svg>
-                                    Facebook
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/harish-g-2216955b/" target="_blank" rel="noopener noreferrer" class="social-icon">
-                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                                    </svg>
-                                    LinkedIn
-                                </a>
-                            </li>
-                            <li>
-                                <a href="mailto:harish@thehgtech.com" class="social-icon">
-                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                                    </svg>
-                                    Email
-                                </a>
-                            </li>
-                        </ul>
+                </div>
+                
+                <!-- Centered Social Links - Icons Only -->
+                <div style="text-align: center; margin: 40px 0 20px 0;">
+                    <div style="display: inline-flex; gap: 25px; align-items: center;">
+                        <a href="mailto:harish@thehgtech.com" class="social-icon" title="Email">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/harish-g-2216955b/" target="_blank" rel="noopener noreferrer" class="social-icon" title="LinkedIn">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com/thehgtech" target="_blank" rel="noopener noreferrer" class="social-icon" title="X (Twitter)">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61582408623186" target="_blank" rel="noopener noreferrer" class="social-icon" title="Facebook">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="https://youtube.com/@thehgtech" target="_blank" rel="noopener noreferrer" class="social-icon" title="YouTube">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
+                
                 <div class="footer-bottom">
                     <p>&copy; 2025 TheHGTech. All rights reserved.</p>
                 </div>
@@ -2441,7 +2842,7 @@
         <canvas id="article-animation" class="page-animation"></canvas>
         
         <div class="article-container">
-            <button class="back-button" onclick="goHome()">← Back to Home</button>
+            <button class="back-button" id="articleBackButton" onclick="goBack();">← Back to Articles</button>
             <div class="article-header">
                 <h1 class="article-title" id="articleTitle">Article Title</h1>
                 <div class="article-author" id="articleAuthor"></div>
@@ -2556,6 +2957,93 @@
             element.innerHTML = temp.innerHTML;
         }
         // ========== END SECURITY FUNCTIONS ==========
+        
+        // ========== ROLLING FEATURE CARDS ==========
+        const featureCards = [
+            {
+                icon: '🛡️',
+                title: 'Real-Time Threat Intelligence',
+                description: 'Stay ahead of emerging cybersecurity threats with our curated intelligence feed'
+            },
+            {
+                icon: '🤖',
+                title: 'AI Innovation Updates',
+                description: 'Latest breakthroughs in artificial intelligence and machine learning technologies'
+            },
+            {
+                icon: '📊',
+                title: 'CVE Tracking',
+                description: 'Monitor critical vulnerabilities and exposures affecting your infrastructure'
+            },
+            {
+                icon: '📰',
+                title: 'Expert Analysis',
+                description: 'In-depth articles from cybersecurity and AI industry professionals'
+            },
+            {
+                icon: '🔔',
+                title: 'Daily Updates',
+                description: 'Twice-daily automated content updates at 6 AM and 6 PM IST'
+            }
+        ];
+        
+        let currentCardIndex = 0;
+        let cardRotationInterval;
+        
+        function initRollingCards() {
+            const container = document.getElementById('rollingCards');
+            if (!container) return;
+            
+            // Create all cards
+            featureCards.forEach((card, index) => {
+                const cardElement = document.createElement('div');
+                cardElement.className = 'rolling-card';
+                if (index === 0) cardElement.classList.add('active');
+                
+                cardElement.innerHTML = `
+                    <div class="rolling-card-icon">${card.icon}</div>
+                    <div class="rolling-card-title">${card.title}</div>
+                    <div class="rolling-card-description">${card.description}</div>
+                `;
+                
+                container.appendChild(cardElement);
+            });
+            
+            // Start auto-rotation
+            cardRotationInterval = setInterval(rotateCard, 4000);
+        }
+        
+        function rotateCard() {
+            const cards = document.querySelectorAll('.rolling-card');
+            if (cards.length === 0) return;
+            
+            const currentCard = cards[currentCardIndex];
+            currentCard.classList.remove('active');
+            currentCard.classList.add('exiting');
+            
+            setTimeout(() => {
+                currentCard.classList.remove('exiting');
+            }, 600);
+            
+            currentCardIndex = (currentCardIndex + 1) % featureCards.length;
+            
+            setTimeout(() => {
+                cards[currentCardIndex].classList.add('active');
+            }, 300);
+        }
+        
+        // Initialize rolling cards when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            initRollingCards();
+        });
+        
+        // Initialize on page load if DOMContentLoaded already fired
+        if (document.readyState === 'loading') {
+            // Still loading
+        } else {
+            initRollingCards();
+        }
+        // ========== END ROLLING CARDS ==========
         
         // Logo management based on theme
         function updateLogo() {
@@ -2964,6 +3452,13 @@
                     authorEl.style.display = 'none';
                 }
                 
+                // Update back button to show we came from archives
+                const backBtn = document.getElementById('articleBackButton');
+                if (backBtn) {
+                    backBtn.textContent = '← Back to Archives';
+                    backBtn.dataset.returnTo = 'archives';
+                }
+                
                 document.getElementById('archivesPage').classList.remove('active');
                 document.getElementById('articlePage').classList.add('active');
                 window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -3012,6 +3507,13 @@
                 authorEl.style.display = 'none';
             }
             
+            // Update back button to show we came from main page
+            const backBtn = document.getElementById('articleBackButton');
+            if (backBtn) {
+                backBtn.textContent = '← Back to Articles';
+                backBtn.dataset.returnTo = 'home';
+            }
+            
             document.getElementById('mainContent').classList.add('hidden');
             document.getElementById('articlePage').classList.add('active');
             window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -3040,6 +3542,74 @@
             }
         }
         
+        // Go back to previous page (archives or home)
+        function goBack() {
+            const backBtn = document.getElementById('articleBackButton');
+            const returnTo = backBtn ? backBtn.dataset.returnTo : 'home';
+            
+            if (returnTo === 'archives') {
+                // Return to archives page
+                document.getElementById('articlePage').classList.remove('active');
+                document.getElementById('archivesPage').classList.add('active');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                history.pushState({ page: 'archives' }, 'Archives - TheHGTech', '#archives');
+                
+                // Stop article animation
+                if (window.stopArticleAnimation) {
+                    window.stopArticleAnimation();
+                }
+                // Start archives animation
+                if (window.startArchivesAnimation) {
+                    window.startArchivesAnimation();
+                }
+            } else {
+                // Return to home and scroll to articles section
+                goHome();
+                setTimeout(() => scrollToSection('latest-articles'), 300);
+            }
+        }
+        
+        // Smooth scroll to section
+        function scrollToSection(sectionId) {
+            // Make sure we're on the main page
+            if (document.getElementById('articlePage').classList.contains('active') || 
+                document.getElementById('archivesPage').classList.contains('active')) {
+                goHome();
+                // Wait for page transition
+                setTimeout(() => scrollToSectionDirect(sectionId), 300);
+            } else {
+                scrollToSectionDirect(sectionId);
+            }
+        }
+        
+        function scrollToSectionDirect(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                const headerHeight = document.querySelector('header').offsetHeight;
+                const sectionTop = section.getBoundingClientRect().top + window.pageYOffset;
+                window.scrollTo({
+                    top: sectionTop - headerHeight - 20,
+                    behavior: 'smooth'
+                });
+            }
+        }
+        
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+        
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const navMenu = document.getElementById('navMenu');
+            const mobileToggle = document.querySelector('.mobile-menu-toggle');
+            
+            if (navMenu && mobileToggle && !navMenu.contains(event.target) && !mobileToggle.contains(event.target)) {
+                navMenu.classList.remove('active');
+            }
+        });
+        
         // Handle browser back/forward
         window.addEventListener('popstate', function(event) {
             if (event.state && event.state.page === 'article') {
@@ -3057,7 +3627,16 @@
         function toggleTheme() {
             document.body.classList.toggle('light-mode');
             updateLogo();
+            updateThemeButtonText();
             localStorage.setItem('theme', document.body.classList.contains('light-mode') ? 'light' : 'dark');
+        }
+        
+        // Update theme button text
+        function updateThemeButtonText() {
+            const themeBtn = document.getElementById('themeToggleBtn');
+            if (themeBtn) {
+                themeBtn.textContent = document.body.classList.contains('light-mode') ? 'Dark Mode' : 'Light Mode';
+            }
         }
         
         // Load saved theme
@@ -3067,10 +3646,85 @@
                 document.body.classList.add('light-mode');
             }
             updateLogo();
+            updateThemeButtonText();
         }
         
         // Open modal with XSS protection
         function openModal(type) {
+            // Special handling for contact modal
+            if (type === 'contact') {
+                const modal = document.createElement('div');
+                modal.className = 'modal-overlay';
+                modal.style.display = 'flex';
+                
+                const modalContent = document.createElement('div');
+                modalContent.className = 'modal-content';
+                modalContent.onclick = (e) => e.stopPropagation();
+                
+                const closeButton = document.createElement('div');
+                closeButton.className = 'modal-close';
+                closeButton.textContent = '×';
+                closeButton.onclick = function() { closeModal(this); };
+                
+                const contentDiv = document.createElement('div');
+                contentDiv.innerHTML = `
+                    <h2 style="color: #E01F3D; font-size: 32px; margin-bottom: 20px;">Contact Us</h2>
+                    <p style="color: #E5E5E5; margin-bottom: 25px; line-height: 1.6;">
+                        We'd love to hear from you! Whether you have questions, feedback, or collaboration opportunities, feel free to reach out.
+                    </p>
+                    <div style="margin-bottom: 25px;">
+                        <p style="color: #E5E5E5; font-size: 16px; margin-bottom: 8px;">
+                            <strong style="color: #E01F3D;">Email:</strong> 
+                            <a href="mailto:harish@thehgtech.com" style="color: #E01F3D; text-decoration: none;">harish@thehgtech.com</a>
+                        </p>
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <p style="color: #E5E5E5; font-size: 16px; margin-bottom: 15px;">
+                            <strong style="color: #E01F3D;">Follow us on social media:</strong>
+                        </p>
+                        <div style="display: flex; flex-direction: column; gap: 12px;">
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <div style="width: 40px; height: 40px; background: rgba(224, 31, 61, 0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                    <span style="font-size: 20px;">𝕏</span>
+                                </div>
+                                <a href="https://twitter.com/thehgtech" target="_blank" rel="noopener noreferrer" style="color: #E01F3D; text-decoration: none; font-weight: 500;">X (Twitter)</a>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <div style="width: 40px; height: 40px; background: rgba(224, 31, 61, 0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                    <span style="font-size: 20px;">in</span>
+                                </div>
+                                <a href="https://www.linkedin.com/in/harish-g-2216955b/" target="_blank" rel="noopener noreferrer" style="color: #E01F3D; text-decoration: none; font-weight: 500;">LinkedIn</a>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <div style="width: 40px; height: 40px; background: rgba(224, 31, 61, 0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                    <span style="font-size: 20px;">f</span>
+                                </div>
+                                <a href="https://www.facebook.com/profile.php?id=61582408623186" target="_blank" rel="noopener noreferrer" style="color: #E01F3D; text-decoration: none; font-weight: 500;">Facebook</a>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <div style="width: 40px; height: 40px; background: rgba(224, 31, 61, 0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                    <span style="font-size: 20px;">▶</span>
+                                </div>
+                                <a href="https://youtube.com/@thehgtech" target="_blank" rel="noopener noreferrer" style="color: #E01F3D; text-decoration: none; font-weight: 500;">YouTube</a>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="color: #909090; margin-top: 25px; font-size: 14px; font-style: italic;">
+                        For media inquiries and partnerships, please use the email above.
+                    </p>
+                `;
+                
+                modalContent.appendChild(closeButton);
+                modalContent.appendChild(contentDiv);
+                modal.appendChild(modalContent);
+                modal.onclick = function() { closeModal(this); };
+                
+                document.body.appendChild(modal);
+                document.body.style.overflow = 'hidden';
+                return;
+            }
+            
+            // Original modal handling for other types
             const content = websiteContent.modals[type];
             if (!content) {
                 console.warn('Modal content not found for type:', type);
