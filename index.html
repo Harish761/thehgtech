@@ -57,7 +57,7 @@
     <meta http-equiv="X-XSS-Protection" content="1; mode=block">
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
     <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     
     <!-- ========== PERFORMANCE OPTIMIZATION ========== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -3309,25 +3309,6 @@
         }
         
         // Render feature insights with XSS protection
-        function renderFeatures() {
-            const container = document.getElementById('featureContainer');
-            container.innerHTML = '';
-            
-            websiteContent.featureInsights.forEach(feature => {
-                const safeIcon = escapeHTML(feature.icon);
-                const safeTitle = escapeHTML(feature.title);
-                const safeDescription = escapeHTML(feature.description);
-                
-                const featureHtml = `
-                    <div class="feature-card">
-                        <span class="feature-icon">${safeIcon}</span>
-                        <h4>${safeTitle}</h4>
-                        <p>${safeDescription}</p>
-                    </div>
-                `;
-                container.innerHTML += featureHtml;
-            });
-        }
         
         // Render CVE cards with XSS protection
         function renderCVEs() {
@@ -3896,7 +3877,6 @@
             renderShortCard('cyber', 0);
             renderShortCard('ai', 0);
             renderArticles();
-            renderFeatures();
         });
         
         // Keyboard navigation
