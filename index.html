@@ -51,13 +51,13 @@
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
     
     <!-- ========== SECURITY HEADERS ========== -->
-    <!-- CSP temporarily disabled for local testing. Re-enable when deploying to production! -->
-    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com;"> -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="DENY">
     <meta http-equiv="X-XSS-Protection" content="1; mode=block">
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
     <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">>
     
     <!-- ========== PERFORMANCE OPTIMIZATION ========== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1645,7 +1645,7 @@
             background: rgba(0, 0, 0, 0.5);
             backdrop-filter: blur(10px);
             border-top: 1px solid rgba(224, 31, 61, 0.2);
-            padding: 40px 0 20px;
+            padding: 60px 0 30px;
             margin-top: 80px;
         }
         
@@ -1655,15 +1655,47 @@
         
         .footer-content {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-            margin-bottom: 30px;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 80px;
+            margin-bottom: 50px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        @media (max-width: 768px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                text-align: center;
+            }
+            
+            .footer-section ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
         }
         
         .footer-section h3 {
             color: #E01F3D;
-            margin-bottom: 15px;
-            font-size: 18px;
+            margin-bottom: 20px;
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        
+        .footer-section p {
+            line-height: 1.8;
+            max-width: 450px;
+            font-size: 15px;
+        }
+        
+        @media (max-width: 768px) {
+            .footer-section p {
+                max-width: 100%;
+                margin: 0 auto;
+            }
         }
         
         .footer-section ul {
@@ -1671,13 +1703,14 @@
         }
         
         .footer-section ul li {
-            margin-bottom: 10px;
+            margin-bottom: 14px;
         }
         
         .footer-section ul li a, .footer-section p {
             color: #B0B0B0;
             text-decoration: none;
             transition: color 0.3s ease;
+            font-size: 15px;
         }
         
         body.light-mode .footer-section ul li a, 
@@ -1730,7 +1763,7 @@
         
         .footer-bottom {
             text-align: center;
-            padding-top: 20px;
+            padding-top: 30px;
             border-top: 1px solid rgba(224, 31, 61, 0.1);
             color: #909090;
             font-size: 14px;
@@ -2582,8 +2615,23 @@
         }
         
         .rolling-card-icon {
-            font-size: 48px;
-            margin-bottom: 15px;
+            width: 55px;
+            height: 55px;
+            background: rgba(224, 31, 61, 0.2);
+            border-radius: 12px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 18px;
+            color: #E01F3D;
+            margin: 0 auto 20px;
+            transition: all 0.3s ease;
+        }
+        
+        body.light-mode .rolling-card-icon {
+            background: rgba(224, 31, 61, 0.15);
+            color: #E01F3D;
         }
         
         .rolling-card-title {
@@ -2628,6 +2676,13 @@
                     <a href="#" class="nav-link" onclick="openModal('about'); return false;">About</a>
                     <a href="#" class="nav-link" onclick="openModal('contact'); return false;">Contact</a>
                 </nav>
+                
+                <!-- Mobile Menu Toggle -->
+                <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 
                 <!-- Theme Toggle Button -->
                 <button class="theme-toggle-btn" id="themeToggleBtn" onclick="toggleTheme()">
@@ -2775,8 +2830,8 @@
                 </div>
                 
                 <!-- Centered Social Links - Icons Only -->
-                <div style="text-align: center; margin: 40px 0 20px 0;">
-                    <div style="display: inline-flex; gap: 25px; align-items: center;">
+                <div style="text-align: center; margin: 50px 0 30px 0;">
+                    <div style="display: inline-flex; gap: 30px; align-items: center; flex-wrap: wrap; justify-content: center;">
                         <a href="mailto:harish@thehgtech.com" class="social-icon" title="Email">
                             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
@@ -2961,27 +3016,27 @@
         // ========== ROLLING FEATURE CARDS ==========
         const featureCards = [
             {
-                icon: '🛡️',
+                icon: 'TI',
                 title: 'Real-Time Threat Intelligence',
                 description: 'Stay ahead of emerging cybersecurity threats with our curated intelligence feed'
             },
             {
-                icon: '🤖',
+                icon: 'AI',
                 title: 'AI Innovation Updates',
                 description: 'Latest breakthroughs in artificial intelligence and machine learning technologies'
             },
             {
-                icon: '📊',
+                icon: 'CVE',
                 title: 'CVE Tracking',
                 description: 'Monitor critical vulnerabilities and exposures affecting your infrastructure'
             },
             {
-                icon: '📰',
+                icon: 'EA',
                 title: 'Expert Analysis',
                 description: 'In-depth articles from cybersecurity and AI industry professionals'
             },
             {
-                icon: '🔔',
+                icon: 'UP',
                 title: 'Daily Updates',
                 description: 'Twice-daily automated content updates at 6 AM and 6 PM IST'
             }
@@ -3081,7 +3136,7 @@
             // Build source link HTML if source exists
             const sourceHtml = short.source ? 
                 `<a href="${sanitizedSourceUrl}" target="_blank" rel="noopener noreferrer" class="short-source-link">
-                    🔗 Source: ${sanitizedSource}
+                    Source: ${sanitizedSource}
                 </a>` : '';
             
             card.innerHTML = `
@@ -3176,7 +3231,7 @@
                 
                 // Build author HTML if author exists
                 const authorHtml = article.author ? 
-                    `<span class="article-author"><span class="article-author-icon">✍️</span> ${safeAuthor}</span>` : '';
+                    `<span class="article-author"><span class="article-author-icon">By</span> ${safeAuthor}</span>` : '';
                 
                 const articleHtml = `
                     <div class="article-card" data-category="${safeCategory}" onclick="openArticle('${safeId}')">
@@ -3255,17 +3310,17 @@
                                 <div class="cve-score-badge ${scoreClass}">${safeScore}</div>
                             </div>
                             <div class="cve-vendor">
-                                <span class="cve-vendor-icon">🏢</span> ${safeVendor}
+                                <span class="cve-vendor-icon">Vendor:</span> ${safeVendor}
                             </div>
                             <div class="cve-description">
                                 ${safeDescription}
                             </div>
                             <div class="cve-footer">
-                                <div class="cve-date">📅 ${safeDateAdded}</div>
+                                <div class="cve-date">Added: ${safeDateAdded}</div>
                                 <div class="cve-source">${safeSource}</div>
                             </div>
                             <a href="${safeUrl}" target="_blank" rel="noopener noreferrer" class="cve-source-link" onclick="event.stopPropagation()">
-                                🔗 View Official Source
+                                View Official Source →
                             </a>
                         </div>
                     `;
@@ -3359,7 +3414,7 @@
                     
                     // Build author HTML if author exists
                     const authorHtml = article.author ? 
-                        `<span class="article-author"><span class="article-author-icon">✍️</span> ${safeAuthor}</span>` : '';
+                        `<span class="article-author"><span class="article-author-icon">By</span> ${safeAuthor}</span>` : '';
                     
                     const archiveHtml = `
                         <div class="archive-card" data-category="${safeCategory}" onclick="openArchive('${safeId}')">
@@ -3666,20 +3721,24 @@
                 closeButton.textContent = '×';
                 closeButton.onclick = function() { closeModal(this); };
                 
+                const isLightMode = document.body.classList.contains('light-mode');
+                const textColor = isLightMode ? '#1A1A1A' : '#E5E5E5';
+                const subtleTextColor = isLightMode ? '#666666' : '#909090';
+                
                 const contentDiv = document.createElement('div');
                 contentDiv.innerHTML = `
                     <h2 style="color: #E01F3D; font-size: 32px; margin-bottom: 20px;">Contact Us</h2>
-                    <p style="color: #E5E5E5; margin-bottom: 25px; line-height: 1.6;">
+                    <p style="color: ${textColor}; margin-bottom: 25px; line-height: 1.6;">
                         We'd love to hear from you! Whether you have questions, feedback, or collaboration opportunities, feel free to reach out.
                     </p>
                     <div style="margin-bottom: 25px;">
-                        <p style="color: #E5E5E5; font-size: 16px; margin-bottom: 8px;">
+                        <p style="color: ${textColor}; font-size: 16px; margin-bottom: 8px;">
                             <strong style="color: #E01F3D;">Email:</strong> 
                             <a href="mailto:harish@thehgtech.com" style="color: #E01F3D; text-decoration: none;">harish@thehgtech.com</a>
                         </p>
                     </div>
                     <div style="margin-bottom: 15px;">
-                        <p style="color: #E5E5E5; font-size: 16px; margin-bottom: 15px;">
+                        <p style="color: ${textColor}; font-size: 16px; margin-bottom: 15px;">
                             <strong style="color: #E01F3D;">Follow us on social media:</strong>
                         </p>
                         <div style="display: flex; flex-direction: column; gap: 12px;">
@@ -3709,7 +3768,7 @@
                             </div>
                         </div>
                     </div>
-                    <p style="color: #909090; margin-top: 25px; font-size: 14px; font-style: italic;">
+                    <p style="color: ${subtleTextColor}; margin-top: 25px; font-size: 14px; font-style: italic;">
                         For media inquiries and partnerships, please use the email above.
                     </p>
                 `;
