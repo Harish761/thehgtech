@@ -223,19 +223,107 @@
             display: flex;
             align-items: center;
             gap: 30px;
-            background: rgba(0, 0, 0, 0.85);
-            backdrop-filter: blur(20px);
+            background: linear-gradient(
+                135deg,
+                rgba(0, 0, 0, 0.5) 0%,
+                rgba(20, 20, 20, 0.6) 50%,
+                rgba(0, 0, 0, 0.5) 100%
+            );
+            backdrop-filter: blur(30px) saturate(200%) contrast(120%);
+            -webkit-backdrop-filter: blur(30px) saturate(200%) contrast(120%);
             padding: 12px 30px;
             border-radius: 50px;
-            border: 1px solid rgba(224, 31, 61, 0.3);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.4),
+                0 2px 8px rgba(224, 31, 61, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.15),
+                inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+            position: relative;
             transition: all 0.3s ease;
+            overflow: hidden;
+        }
+        
+        /* Liquid glass refraction overlay */
+        .header-content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(
+                135deg,
+                rgba(255, 255, 255, 0.15) 0%,
+                rgba(255, 255, 255, 0) 20%,
+                rgba(255, 255, 255, 0) 80%,
+                rgba(255, 255, 255, 0.1) 100%
+            );
+            border-radius: 50px;
+            pointer-events: none;
+        }
+        
+        /* Glass shine effect */
+        .header-content::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                45deg,
+                transparent 30%,
+                rgba(255, 255, 255, 0.1) 50%,
+                transparent 70%
+            );
+            animation: glassShine 8s ease-in-out infinite;
+            pointer-events: none;
+        }
+        
+        @keyframes glassShine {
+            0%, 100% {
+                transform: translate(-100%, -100%) rotate(45deg);
+            }
+            50% {
+                transform: translate(100%, 100%) rotate(45deg);
+            }
         }
         
         body.light-mode .header-content {
-            background: rgba(255, 255, 255, 0.85);
-            border: 1px solid rgba(224, 31, 61, 0.2);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.05);
+            background: linear-gradient(
+                135deg,
+                rgba(255, 255, 255, 0.55) 0%,
+                rgba(245, 245, 245, 0.65) 50%,
+                rgba(255, 255, 255, 0.55) 100%
+            );
+            backdrop-filter: blur(30px) saturate(200%) contrast(110%);
+            -webkit-backdrop-filter: blur(30px) saturate(200%) contrast(110%);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.12),
+                0 2px 8px rgba(224, 31, 61, 0.15),
+                inset 0 1px 0 rgba(255, 255, 255, 0.8),
+                inset 0 -1px 0 rgba(0, 0, 0, 0.05);
+        }
+        
+        body.light-mode .header-content::before {
+            background: linear-gradient(
+                135deg,
+                rgba(255, 255, 255, 0.4) 0%,
+                rgba(255, 255, 255, 0.1) 20%,
+                rgba(255, 255, 255, 0.1) 80%,
+                rgba(255, 255, 255, 0.3) 100%
+            );
+        }
+        
+        body.light-mode .header-content::after {
+            background: linear-gradient(
+                45deg,
+                transparent 30%,
+                rgba(255, 255, 255, 0.3) 50%,
+                transparent 70%
+            );
         }
         
         .header-left {
@@ -245,6 +333,8 @@
             cursor: pointer;
             transition: opacity 0.3s ease;
             text-decoration: none;
+            position: relative;
+            z-index: 1;
         }
         
         .header-left:hover {
@@ -327,6 +417,8 @@
             display: flex;
             align-items: center;
             gap: 35px;
+            position: relative;
+            z-index: 1;
         }
         
         .nav-item {
@@ -474,6 +566,8 @@
             gap: 5px;
             cursor: pointer;
             padding: 8px;
+            position: relative;
+            z-index: 1;
         }
         
         .mobile-menu-toggle span {
@@ -621,6 +715,8 @@
             font-weight: 600;
             font-size: 14px;
             white-space: nowrap;
+            position: relative;
+            z-index: 1;
         }
         
         .theme-toggle-btn:hover {
@@ -2511,29 +2607,30 @@
             justify-content: center;
             gap: 10px;
             padding: 12px 24px;
-            background: linear-gradient(135deg, #FFDD00 0%, #FDB913 100%);
-            color: #000000;
+            background: #000000;
+            color: #FFFFFF;
             text-decoration: none;
             border-radius: 50px;
             font-weight: 700;
             font-size: 15px;
             box-shadow: 
-                0 4px 15px rgba(255, 221, 0, 0.4),
+                0 4px 15px rgba(0, 0, 0, 0.4),
                 0 2px 8px rgba(0, 0, 0, 0.3);
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             z-index: 999;
             cursor: pointer;
             white-space: nowrap;
-            border: 2px solid rgba(0, 0, 0, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.1);
         }
         
         /* Hover effect */
         .buy-coffee-btn:hover {
             transform: translateY(-3px) scale(1.05);
             box-shadow: 
-                0 8px 25px rgba(255, 221, 0, 0.6),
+                0 8px 25px rgba(0, 0, 0, 0.6),
                 0 4px 15px rgba(0, 0, 0, 0.4);
-            background: linear-gradient(135deg, #FFE74C 0%, #FFDD00 100%);
+            background: #1A1A1A;
+            border-color: rgba(255, 255, 255, 0.2);
         }
         
         /* Active/click effect */
@@ -2546,7 +2643,6 @@
             width: 20px;
             height: 20px;
             flex-shrink: 0;
-            filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
         }
         
         /* Button text */
@@ -2557,16 +2653,17 @@
         
         /* Light mode adjustments */
         body.light-mode .buy-coffee-btn {
-            background: linear-gradient(135deg, #FFDD00 0%, #FDB913 100%);
-            color: #000000;
+            background: #000000;
+            color: #FFFFFF;
             box-shadow: 
-                0 4px 15px rgba(255, 221, 0, 0.3),
+                0 4px 15px rgba(0, 0, 0, 0.3),
                 0 2px 8px rgba(0, 0, 0, 0.2);
         }
         
         body.light-mode .buy-coffee-btn:hover {
+            background: #1A1A1A;
             box-shadow: 
-                0 8px 25px rgba(255, 221, 0, 0.5),
+                0 8px 25px rgba(0, 0, 0, 0.5),
                 0 4px 15px rgba(0, 0, 0, 0.3);
         }
         
@@ -2890,7 +2987,7 @@
                 <!-- Centered Social Links - Icons Only -->
                 <div style="text-align: center; margin: 50px 0 30px 0;">
                     <div style="display: inline-flex; gap: 30px; align-items: center; flex-wrap: wrap; justify-content: center;">
-                        <a href="mailto:harish@thehgtech.com" class="social-icon" title="Email">
+                        <a href="/cdn-cgi/l/email-protection#4a222b382339220a3e222f222d3e2f292264292527" class="social-icon" title="Email">
                             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                             </svg>
@@ -2967,7 +3064,7 @@
     </div>
 
     <!-- Load Content -->
-    <script src="content.js"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="content.js"></script>
     <script src="archives-content.js"></script>
     
     <script>
@@ -3694,6 +3791,12 @@
             navMenu.classList.toggle('active');
         }
         
+        // Close mobile menu function
+        function closeMobileMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.remove('active');
+        }
+        
         // Close mobile menu when clicking outside
         document.addEventListener('click', function(event) {
             const navMenu = document.getElementById('navMenu');
@@ -3702,6 +3805,16 @@
             if (navMenu && mobileToggle && !navMenu.contains(event.target) && !mobileToggle.contains(event.target)) {
                 navMenu.classList.remove('active');
             }
+        });
+        
+        // Close mobile menu when clicking any navigation link
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    closeMobileMenu();
+                });
+            });
         });
         
         // Handle browser back/forward
@@ -4232,24 +4345,9 @@
     
     <!-- Buy Me a Coffee Floating Button -->
     <a href="https://buymeacoffee.com/thehgtech" target="_blank" rel="noopener noreferrer" class="buy-coffee-btn" aria-label="Buy me a coffee">
-        <svg viewBox="0 0 884 1279" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M791.109 297.518L790.231 297.002L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518Z" fill="currentColor"/>
-            <path d="M803.896 388.891L802.916 389.166L803.896 388.891Z" fill="currentColor"/>
-            <path d="M791.484 297.377C791.359 297.361 791.237 297.332 791.118 297.29C791.111 297.371 791.111 297.453 791.118 297.534C791.252 297.516 791.368 297.462 791.484 297.377Z" fill="currentColor"/>
-            <path d="M791.113 297.529H791.244V297.447L791.113 297.529Z" fill="currentColor"/>
-            <path d="M803.111 388.726L804.591 387.883L803.111 388.726Z" fill="currentColor"/>
-            <path d="M791.484 297.377C791.359 297.361 791.237 297.332 791.118 297.29C791.111 297.371 791.111 297.453 791.118 297.534C791.252 297.516 791.368 297.462 791.484 297.377Z" fill="currentColor"/>
-            <path d="M803.111 388.726L804.591 387.883L803.111 388.726Z" fill="currentColor"/>
-            <path d="M791.113 297.529H791.244V297.447L791.113 297.529Z" fill="currentColor"/>
-            <path d="M842.039 631.312L845.764 631.312L845.764 630.89C845.764 628.286 843.643 626.165 841.039 626.165L841.039 629.89C841.039 630.442 841.487 630.89 842.039 630.89V631.312Z" fill="currentColor"/>
-            <path d="M803.896 388.891L802.916 389.166L803.896 388.891Z" fill="currentColor"/>
-            <path d="M842.039 631.312L845.764 631.312L845.764 630.89C845.764 628.286 843.643 626.165 841.039 626.165L841.039 629.89C841.039 630.442 841.487 630.89 842.039 630.89V631.312Z" fill="currentColor"/>
-            <path d="M803.111 388.726L804.591 387.883L803.111 388.726Z" fill="currentColor"/>
-            <path d="M791.484 297.377C791.359 297.361 791.237 297.332 791.118 297.29C791.111 297.371 791.111 297.453 791.118 297.534C791.252 297.516 791.368 297.462 791.484 297.377Z" fill="currentColor"/>
-            <path d="M791.113 297.529H791.244V297.447L791.113 297.529Z" fill="currentColor"/>
-            <path d="M803.896 388.891L802.916 389.166L803.896 388.891Z" fill="currentColor"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M445.061 164.506C433.648 164.506 424.38 173.774 424.38 185.187V274.193C424.38 285.606 433.648 294.874 445.061 294.874H808.364C819.777 294.874 829.045 285.606 829.045 274.193V185.187C829.045 173.774 819.777 164.506 808.364 164.506H445.061ZM427.905 185.187C427.905 175.723 435.597 168.031 445.061 168.031H808.364C817.828 168.031 825.52 175.723 825.52 185.187V274.193C825.52 283.657 817.828 291.349 808.364 291.349H445.061C435.597 291.349 427.905 283.657 427.905 274.193V185.187Z" fill="currentColor"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M464.402 171.143C452.949 171.143 443.659 180.433 443.659 191.886V267.494C443.659 278.947 452.949 288.237 464.402 288.237H789.023C800.476 288.237 809.766 278.947 809.766 267.494V191.886C809.766 180.433 800.476 171.143 789.023 171.143H464.402ZM447.184 191.886C447.184 182.382 454.898 174.668 464.402 174.668H789.023C798.527 174.668 806.241 182.382 806.241 191.886V267.494C806.241 277.998 798.527 285.712 789.023 285.712H464.402C454.898 285.712 447.184 277.998 447.184 267.494V191.886Z" fill="currentColor"/>
+        <!-- Official Buy Me a Coffee Icon -->
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.216 6.415l-.132-.666c-.119-.598-.388-1.163-1.001-1.379-.197-.069-.42-.098-.57-.241-.152-.143-.196-.366-.231-.572-.065-.378-.125-.756-.192-1.133-.057-.325-.102-.69-.25-.987-.195-.4-.597-.634-.996-.788a5.723 5.723 0 00-.626-.194c-1-.263-2.05-.36-3.077-.416a25.834 25.834 0 00-3.7.062c-.915.083-1.88.184-2.75.5-.318.116-.646.256-.888.501-.297.302-.393.77-.177 1.146.154.267.415.456.692.58.36.162.737.284 1.123.366 1.075.238 2.189.331 3.287.37 1.218.05 2.437.01 3.65-.118.299-.033.598-.073.896-.119.352-.054.578-.513.474-.834-.124-.383-.457-.531-.834-.473-.466.074-.96.108-1.382.146-1.177.08-2.358.082-3.536.006a22.228 22.228 0 01-1.157-.107c-.086-.01-.18-.025-.258-.036-.243-.036-.484-.08-.724-.13-.111-.027-.111-.185 0-.212h.005c.277-.06.557-.108.838-.147h.002c.131-.009.263-.032.394-.048a25.076 25.076 0 013.426-.12c.674.019 1.347.067 2.017.144l.228.031c.267.04.533.088.798.145.392.085.895.113 1.07.542.055.137.08.288.111.431l.319 1.484a.237.237 0 01-.199.284h-.003c-.037.006-.075.01-.112.015a36.704 36.704 0 01-4.743.295 37.059 37.059 0 01-4.699-.304c-.14-.017-.293-.042-.417-.06-.326-.048-.649-.108-.973-.161-.393-.065-.768-.032-1.123.161-.29.16-.527.404-.675.701-.154.316-.199.66-.267 1-.069.34-.176.707-.135 1.056.087.753.613 1.365 1.37 1.502a39.69 39.69 0 0011.343.376.483.483 0 01.535.53l-.071.697-1.018 9.907c-.041.41-.047.832-.125 1.237-.122.637-.553 1.028-1.182 1.171-.577.131-1.165.2-1.756.205-.656.004-1.31-.025-1.966-.022-.699.004-1.556-.06-2.095-.58-.475-.458-.54-1.174-.605-1.793l-.731-7.013-.322-3.094c-.037-.351-.286-.695-.678-.678-.336.015-.718.3-.678.679l.228 2.185.949 9.112c.147 1.344 1.174 2.068 2.446 2.272.742.12 1.503.144 2.257.156.966.016 1.942.053 2.892-.122 1.408-.258 2.465-1.198 2.616-2.657.34-3.332.683-6.663 1.024-9.995l.215-2.087a.484.484 0 01.39-.426c.402-.078.787-.212 1.074-.518.455-.488.546-1.124.385-1.766zm-1.478.772c-.145.137-.363.201-.578.233-2.416.359-4.866.54-7.308.46-1.748-.06-3.477-.254-5.207-.498-.17-.024-.353-.055-.47-.18-.22-.236-.111-.71-.054-.995.052-.26.152-.609.463-.646.484-.057 1.046.148 1.526.22.577.088 1.156.159 1.737.212 2.48.226 5.002.19 7.472-.14.45-.06.899-.13 1.345-.21.399-.072.84-.206 1.08.206.166.281.188.657.162.974a.544.544 0 01-.169.364z" fill="#FFFFFF"/>
         </svg>
         <span class="buy-coffee-text">Buy me a coffee</span>
     </a>
