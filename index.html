@@ -261,6 +261,7 @@
             );
             border-radius: 50px;
             pointer-events: none;
+            z-index: 0;
         }
         
         /* Glass shine effect */
@@ -279,6 +280,7 @@
             );
             animation: glassShine 8s ease-in-out infinite;
             pointer-events: none;
+            z-index: 0;
         }
         
         @keyframes glassShine {
@@ -334,7 +336,7 @@
             transition: opacity 0.3s ease;
             text-decoration: none;
             position: relative;
-            z-index: 1;
+            z-index: 10;
         }
         
         .header-left:hover {
@@ -418,7 +420,7 @@
             align-items: center;
             gap: 35px;
             position: relative;
-            z-index: 1;
+            z-index: 10;
         }
         
         .nav-item {
@@ -557,6 +559,8 @@
             display: flex;
             align-items: center;
             gap: 15px;
+            position: relative;
+            z-index: 10;
         }
         
         /* Mobile Menu Toggle */
@@ -567,7 +571,7 @@
             cursor: pointer;
             padding: 8px;
             position: relative;
-            z-index: 1;
+            z-index: 10;
         }
         
         .mobile-menu-toggle span {
@@ -716,7 +720,7 @@
             font-size: 14px;
             white-space: nowrap;
             position: relative;
-            z-index: 1;
+            z-index: 10;
         }
         
         .theme-toggle-btn:hover {
