@@ -4,83 +4,76 @@
 var websiteContent = {
     "cyberShorts": [
         {
-            "date": "Nov 10 2025",
-            "title": "Cyber Threats Evolve: Hyper-V Malware and AI Exploits Lead the Charge",
-            "content": "Last week, the cybersecurity landscape saw a surge in sophisticated threats, with attackers leveraging advanced techniques to compromise systems. Notably, malware was found concealed within Hyper-V virtual machines, posing a significant challenge for detection and mitigation. Additionally, side-channel leaks have become a new vector for exposing sensitive AI chat data, raising concerns about privacy and data integrity. Android devices are also under siege from spyware, indicating a broadening scope of attack vectors. These developments underscore the increasing complexity of cyber threats, emphasizing the need for robust security measures. Security professionals must stay vigilant and adapt to these evolving tactics to protect their organizations effectively.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/11/weekly-recap-hyper-v-malware-malicious.html"
-        },
-        {
-            "date": "Nov 10 2025",
-            "title": "GlassWorm Malware Infiltrates VS Code Extensions and GitHub Repositories",
-            "content": "The GlassWorm malware has resurfaced, infecting three more VS Code extensions and spreading to GitHub repositories, posing a significant threat to developers and organizations relying on these platforms. This resurgence highlights the persistent danger of supply chain attacks, where malicious code is introduced into widely-used software components. The infiltration of popular development environments like VS Code could lead to widespread compromise, as developers unknowingly propagate the malware through their projects. For security professionals, this incident underscores the critical need for rigorous code review and supply chain security measures to mitigate the risk of such attacks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/glassworm-malware-returns-to-open-vsx-emerges-on-github/"
-        },
-        {
-            "date": "Nov 10 2025",
-            "title": "Browser Security Report Highlights Convergence of Identity and AI Risks",
-            "content": "The 2025 Browser Security Report reveals a concerning trend: the convergence of identity, SaaS, and AI-related risks within users&#x27; browsers. Traditional security controls such as Data Loss Prevention (DLP), Endpoint Detection and Response (EDR), and Secure Service Edge (SSE) are failing to address these risks effectively, as they operate at a lower layer than where these threats manifest. This oversight creates a significant blindspot in enterprise security strategies, potentially exposing sensitive data and systems to exploitation. Security professionals must reevaluate their approaches, incorporating browser-level protections to safeguard against these emerging threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/11/new-browser-security-report-reveals.html"
-        },
-        {
-            "date": "Nov 10 2025",
-            "title": "Cl0p Ransomware Group Lists Oracle EBS Hack Victims",
-            "content": "The Cl0p ransomware group has publicly named nearly 30 organizations as victims of an Oracle E-Business Suite (EBS) hack, including high-profile entities like Logitech, The Washington Post, and Cox Enterprises. This disclosure on the Cl0p website serves as a stark reminder of the persistent threat posed by ransomware attacks, which continue to target major corporations and critical infrastructure. The incident highlights the importance of robust cybersecurity defenses and incident response plans to mitigate the impact of such breaches. For security professionals, this case emphasizes the need for vigilance and proactive measures to protect sensitive enterprise systems.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/nearly-30-alleged-victims-of-oracle-ebs-hack-named-on-cl0p-ransomware-site/"
-        },
-        {
-            "date": "Nov 10 2025",
-            "title": "QNAP Addresses Critical Vulnerabilities Exposed at Pwn2Own",
-            "content": "QNAP has released patches for multiple vulnerabilities discovered during the Pwn2Own Ireland competition, which could have led to remote code execution, information disclosure, and denial-of-service conditions. These vulnerabilities affected various products within QNAP&#x27;s portfolio, highlighting the ongoing challenge of securing network-attached storage (NAS) devices. The swift response from QNAP underscores the importance of timely patch management in mitigating potential security risks. For security professionals, this incident serves as a reminder of the critical role that vulnerability management plays in maintaining the integrity and security of enterprise networks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/qnap-patches-vulnerabilities-exploited-at-pwn2own-ireland/"
-        },
-        {
-            "date": "Nov 10 2025",
-            "title": "ISC Stormcast Highlights Key Cybersecurity Trends",
-            "content": "The SANS Internet Storm Center has released its latest Stormcast, providing insights into current cybersecurity threats and trends. With an InfoCON status of green, the report highlights an overall stable threat landscape but warns of emerging vulnerabilities that require attention. The podcast, dated November 10, 2025, discusses recent developments in malware tactics and the importance of proactive defense strategies. Security professionals are encouraged to stay informed about these evolving threats to better protect their networks. This update is crucial for maintaining a robust security posture in the face of dynamic cyber risks.",
+            "date": "Nov 11 2025",
+            "title": "Daily Cybersecurity Insights from ISC Stormcast",
+            "content": "The SANS Internet Storm Center has released its latest Stormcast for November 11, 2025, providing cybersecurity professionals with crucial insights into the current threat landscape. The InfoCON level remains green, indicating a stable threat environment. These daily updates are vital for security teams to stay informed about emerging threats and vulnerabilities. The Stormcast podcast delivers expert analysis and actionable intelligence, enabling organizations to enhance their defensive strategies. As cyber threats continue to evolve, staying updated with such briefings is essential for maintaining robust security postures. Security professionals are encouraged to integrate these insights into their daily operations to mitigate potential risks effectively.",
             "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32462"
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32466"
+        },
+        {
+            "date": "Nov 11 2025",
+            "title": "North Korean Hackers Exploit Google Find Hub in Android Attacks",
+            "content": "Cybersecurity researchers have identified that APT37, a North Korean hacking group, is leveraging Google&#x27;s Find Hub tool to conduct sophisticated cyberattacks on Android devices. The hackers are using this tool to track the GPS locations of their targets and initiate remote factory resets, effectively wiping data from the devices. This tactic highlights the increasing complexity and resourcefulness of state-sponsored cyber threats. For security professionals, this development underscores the need for enhanced security measures and monitoring of mobile devices, particularly those used in sensitive environments. Organizations should review their mobile device management policies and ensure that adequate protections are in place to safeguard against such advanced attacks.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/apt37-hackers-abuse-google-find-hub-in-android-data-wiping-attacks/"
+        },
+        {
+            "date": "Nov 10 2025",
+            "title": "Firefox 145 Introduces Enhanced Anti-Fingerprinting Features",
+            "content": "Mozilla has unveiled a significant privacy enhancement in Firefox 145, aimed at reducing users&#x27; susceptibility to digital fingerprinting. This update introduces new defenses that make it harder for websites to track users&#x27; online activities without their consent. Digital fingerprinting is a growing concern for privacy advocates, as it allows for the identification and tracking of users across different sites. For cybersecurity professionals, the update represents a crucial advancement in protecting user privacy and maintaining data security. Organizations should consider encouraging the use of such privacy-focused browsers to minimize the risk of unauthorized tracking and data collection.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/mozilla-firefox-gets-new-anti-fingerprinting-defenses/"
+        },
+        {
+            "date": "Nov 10 2025",
+            "title": "OWASP&#x27;s New Top 10 List Highlights Rising Supply Chain Risks",
+            "content": "The Open Web Application Security Project (OWASP) has released its latest Top 10 list, drawing attention to the growing risks associated with supply chain vulnerabilities. Notably, security misconfiguration has risen to the second spot, while traditional injection vulnerabilities have seen a decline due to improved defenses. This shift indicates a changing landscape where supply chain threats are becoming more prominent. For security professionals, understanding these evolving risks is critical for safeguarding applications and infrastructure. The OWASP Top 10 serves as a valuable resource for identifying and addressing the most pressing security challenges facing organizations today.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/application-security/owasp-highlights-supply-chain-risks-new-top-10"
+        },
+        {
+            "date": "Nov 10 2025",
+            "title": "GlassWorm Malware Resurfaces, Targeting VS Code Extensions",
+            "content": "GlassWorm, a self-propagating malware initially discovered in the Open VSX marketplace, is making a comeback by infecting Visual Studio Code extensions. This malware poses a significant threat to developers worldwide, as it can spread rapidly across devices used for software development. The resurgence of GlassWorm highlights the vulnerabilities within popular development tools and the need for stringent security measures. Security professionals must ensure that development environments are protected with robust security protocols to prevent such infections. Regularly updating and auditing extensions can help mitigate the risk posed by this persistent threat.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/glassworm-returns-vs-code-extensions"
         }
     ],
     "aiShorts": [
         {
             "date": "Nov 10 2025",
-            "title": "Tesla-Intel Partnership Promises AI Chips at a Fraction of Nvidia&#x27;s Cost",
-            "content": "Tesla and Intel are reportedly exploring a partnership that could revolutionize the AI chip market by offering solutions at just 10% of the cost of current Nvidia chips. This revelation, announced by Tesla CEO Elon Musk, underscores a potential shift in AI infrastructure affordability and accessibility. For enterprise technology leaders, this development could mean significant cost savings and enhanced performance capabilities. The collaboration aims to combine Tesla&#x27;s advanced AI capabilities with Intel&#x27;s chip manufacturing prowess. If successful, this partnership might disrupt Nvidia&#x27;s dominance in the AI chip sector. The implications for AI-driven industries are profound, potentially accelerating innovation and adoption across various sectors.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/tesla-intel-chip-partnership-nvidia-cost/"
+            "title": "Lovable Nears 8 Million Users as AI Coding Startup Targets Corporate Expansion",
+            "content": "Lovable, a year-old AI coding platform, is rapidly approaching 8 million users, attracting a diverse user base that includes more than half of the Fortune 500 companies. The platform is being leveraged to enhance creativity in corporate environments, according to Osika, who emphasizes the platform&#x27;s strong retention rates. This growth highlights the increasing reliance on AI tools to boost productivity and innovation in large enterprises. For AI professionals, Lovable&#x27;s success underscores the importance of developing user-friendly and effective AI solutions that can seamlessly integrate into existing workflows. As the platform continues to expand, it could set new standards for AI adoption in the corporate sector.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/10/lovable-says-its-nearing-8-million-users-as-the-year-old-ai-coding-startup-eyes-more-corporate-employees/"
         },
         {
             "date": "Nov 10 2025",
-            "title": "OpenAI Offers Free ChatGPT Plus to Support U.S. Veterans Transitioning to Civilian Life",
-            "content": "OpenAI has announced a new initiative to support U.S. servicemembers and veterans transitioning to civilian life by offering a free year of ChatGPT Plus. This program is available to those within 12 months of retirement or separation, aiming to assist with resumes, interviews, and educational planning. By providing access to advanced AI tools, OpenAI seeks to ease the transition process, helping veterans navigate new career paths and opportunities. This initiative highlights the potential of AI to offer practical support in real-world scenarios. For AI professionals, this represents a meaningful application of technology to address societal challenges.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/chatgpt-for-veterans"
-        },
-        {
-            "date": "Nov 08 2025",
-            "title": "The Risks of Replacing Engineers with AI in Enterprises",
-            "content": "The rapid advancement of AI coding tools, including vibe coding and agentic swarm technologies, is reshaping the market, now valued at $4.8 billion with a projected 23% annual growth rate. Enterprises are increasingly considering AI solutions to replace human coders, driven by cost and efficiency pressures. However, this shift raises concerns about the potential loss of human oversight and creativity in software development. The debate centers on balancing AI&#x27;s capabilities with the irreplaceable insights of skilled engineers. For AI and security professionals, understanding the implications of this trend is crucial, as it could redefine workforce dynamics and project management strategies.",
-            "source": "AI | VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/what-could-possibly-go-wrong-if-an-enterprise-replaces-all-its-engineers"
-        },
-        {
-            "date": "Nov 07 2025",
-            "title": "Terminal-Bench 2.0 and Harbor Framework Enhance AI Agent Testing",
-            "content": "The release of Terminal-Bench 2.0, alongside the new Harbor framework, marks a significant advancement in evaluating and optimizing autonomous AI agents. Terminal-Bench provides a benchmark suite for real-world terminal-based tasks, while Harbor offers a framework for testing AI agents in containerized environments. This dual release is designed to improve the performance and reliability of AI agents, crucial for their deployment in complex settings. For AI professionals, these tools represent valuable resources for enhancing agent capabilities and ensuring robust performance. The introduction of these frameworks highlights the ongoing evolution of AI testing and optimization methodologies.",
-            "source": "AI | VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/terminal-bench-2-0-launches-alongside-harbor-a-new-framework-for-testing"
-        },
-        {
-            "date": "Nov 07 2025",
-            "title": "OpenAI Faces Legal Challenges Over ChatGPT&#x27;s Alleged Role in Suicides",
-            "content": "OpenAI is facing lawsuits from seven more families alleging that ChatGPT played a role in incidents of suicide and delusion, including a case involving a prolonged conversation with a 23-year-old named Zane Shamblin. These legal challenges raise critical questions about the ethical responsibilities of AI developers and the potential psychological impacts of AI interactions. The lawsuits underscore the need for robust safeguards and ethical guidelines in AI deployment. For AI and security professionals, these cases highlight the importance of developing AI systems that prioritize user safety and ethical considerations. The outcomes could influence future regulations and industry standards.",
+            "title": "SoftBank and OpenAI Form Joint Venture to Expand AI Tools in Japan",
+            "content": "SoftBank and OpenAI have announced a new joint venture, Crystal Intelligence, aimed at selling enterprise AI tools in Japan. This 50-50 partnership represents a strategic international expansion for both companies. However, the deal has sparked discussions about SoftBank&#x27;s dual role as both an investor in and partner of OpenAI. For AI professionals, this venture could signal increased competition in the AI market, particularly in Asia, and raise questions about the dynamics of investment-driven partnerships. The collaboration may also influence how AI tools are developed and marketed in different regions.",
             "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/07/seven-more-families-are-now-suing-openai-over-chatgpts-role-in-suicides-delusions/"
+            "sourceUrl": "https://techcrunch.com/video/the-circular-money-problem-at-the-heart-of-ais-biggest-deals/"
+        },
+        {
+            "date": "Nov 10 2025",
+            "title": "Rethinking the AI Bubble: Balancing Risks and Opportunities",
+            "content": "The concept of an AI bubble is being revisited as industry experts caution against viewing AI investments as all-or-nothing propositions. While AI offers significant potential, even well-considered investments can falter if not approached with careful analysis and strategy. For AI professionals, this perspective is crucial as it emphasizes the need for balanced risk assessment and informed decision-making in AI ventures. Understanding market dynamics and technological capabilities can help mitigate risks and maximize returns in this rapidly evolving field. The discussion encourages a more nuanced approach to AI investment and development.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/10/a-better-way-of-thinking-about-the-ai-bubble/"
+        },
+        {
+            "date": "Nov 10 2025",
+            "title": "Kaltura Acquires AI Avatar Startup eSelf for $27M",
+            "content": "Kaltura has acquired eSelf, an AI avatar startup founded by the creator of Snap&#x27;s AI, in a $27 million deal. This acquisition aims to integrate generative AI into Kaltura&#x27;s enterprise video and learning tools, enhancing their functionality and appeal. For AI and tech professionals, this move highlights the growing importance of generative AI in multimedia and educational technology sectors. The acquisition could lead to more sophisticated and interactive content delivery solutions, potentially transforming how organizations approach digital learning and communication.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/10/kaltura-acquires-eself-founded-by-creator-of-snaps-ai-in-27m-deal/"
+        },
+        {
+            "date": "Nov 10 2025",
+            "title": "Meta Launches Omnilingual ASR Models Supporting Over 1,600 Languages",
+            "content": "Meta has introduced a new multilingual automatic speech recognition (ASR) system capable of transcribing over 1,600 languages, significantly surpassing the capabilities of OpenAI&#x27;s Whisper model. This development is particularly noteworthy for its potential to expand language accessibility and support in AI applications. The system&#x27;s architecture allows developers to extend support to even more languages, offering a robust tool for global communication. For AI professionals, Meta&#x27;s advancement in ASR technology presents new opportunities for innovation in multilingual AI solutions, facilitating broader reach and inclusivity in digital interactions.",
+            "source": "AI | VentureBeat",
+            "sourceUrl": "https://venturebeat.com/ai/meta-returns-to-open-source-ai-with-omnilingual-asr-models-that-can"
         }
     ],
     "articles": {
@@ -261,24 +254,14 @@ var websiteContent = {
     },
     "recentCVEs": [
         {
-            "cveId": "CVE-2025-48703",
-            "dateAdded": "Nov 04, 2025",
-            "vendor": "CWP Control Web Panel",
-            "description": "CWP Control Web Panel (formerly CentOS Web Panel) contains an OS command Injection vulnerability that allows unauthenticated remote code execution via shell metacharacters in the t_total parameter in",
+            "cveId": "CVE-2025-21042",
+            "dateAdded": "Nov 10, 2025",
+            "vendor": "Samsung Mobile Devices",
+            "description": "Samsung mobile devices contain an out-of-bounds write vulnerability in libimagecodec.quram.so. This vulnerability could allow remote attackers to execute arbitrary code.",
             "score": "HIGH",
             "status": "Confirmed",
             "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-48703"
-        },
-        {
-            "cveId": "CVE-2025-11371",
-            "dateAdded": "Nov 04, 2025",
-            "vendor": "Gladinet CentreStack and Triofox",
-            "description": "Gladinet CentreStack and Triofox contains a files or directories accessible to external parties vulnerability that allows unintended disclosure of system files.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-11371"
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-21042"
         }
     ],
     "featureCards": []
