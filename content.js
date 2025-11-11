@@ -5,6 +5,41 @@ var websiteContent = {
     "cyberShorts": [
         {
             "date": "Nov 11 2025",
+            "title": "Celebrating Veterans&#x27; Contributions to Cybersecurity",
+            "content": "In recognition of Veterans Day, SecurityWeek extends gratitude to its veteran readers whose service, teamwork, and resilience contribute significantly to the cybersecurity industry. Veterans often bring unique skills and perspectives that are invaluable in combating cyber threats. Their experience in high-pressure environments and dedication to mission success align closely with the demands of cybersecurity roles. This recognition highlights the ongoing contributions of veterans to maintaining the integrity and security of digital infrastructures. For the cybersecurity community, acknowledging these contributions underscores the importance of diverse backgrounds and experiences in strengthening defenses against cyber threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/honoring-our-veteran-readers-thank-you-for-your-service/"
+        },
+        {
+            "date": "Nov 11 2025",
+            "title": "&#x27;Whisper Leak&#x27; Attack Exposes Chatbot Conversations",
+            "content": "A newly identified side-channel attack, dubbed &#x27;Whisper Leak,&#x27; allows attackers to infer the topics of user prompts in chatbot conversations despite the use of end-to-end encryption. By intercepting network traffic, malicious actors can deduce conversation subjects, posing a significant privacy risk. This attack highlights vulnerabilities in encrypted communication channels and the need for enhanced security measures. For cybersecurity professionals, understanding and mitigating such threats is crucial as reliance on AI-driven communication tools grows. The discovery of &#x27;Whisper Leak&#x27; serves as a reminder of the persistent challenges in securing digital interactions.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/whisper-leak-llm-side-channel-attack-infers-user-prompt-topics/"
+        },
+        {
+            "date": "Nov 11 2025",
+            "title": "Surge in AI-Driven Supply Chain Attacks Demands New CISO Strategies",
+            "content": "AI-enabled supply chain attacks have surged by 156% in the past year, presenting a formidable challenge to traditional cybersecurity defenses. These sophisticated attacks exploit vulnerabilities in the supply chain, often bypassing conventional security measures. The rise in such incidents underscores the urgent need for CISOs to adopt innovative strategies to protect their organizations. A comprehensive guide offers insights into why existing defenses are failing and outlines proactive measures for mitigating risks. For security leaders, staying informed and adapting to the evolving threat landscape is essential to safeguard critical assets.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/11/cisos-expert-guide-to-ai-supply-chain.html"
+        },
+        {
+            "date": "Nov 11 2025",
+            "title": "Malicious npm Package Targets GitHub Repositories",
+            "content": "Researchers have uncovered a malicious npm package named &quot;@acitons/artifact,&quot; designed to target GitHub-owned repositories through typosquatting. This package mimics the legitimate &quot;@actions/artifact&quot; package, intending to execute malicious scripts during builds. Such attacks exploit developer trust and underscore the risks associated with third-party dependencies. For developers and security professionals, this discovery emphasizes the importance of vigilance and verification in managing software dependencies. Ensuring the integrity of open-source packages is crucial to prevent unauthorized access and potential data breaches.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/11/researchers-detect-malicious-npm.html"
+        },
+        {
+            "date": "Nov 11 2025",
+            "title": "Fantasy Hub Malware Exploits Telegram for Cyber Espionage",
+            "content": "A new Android remote access trojan (RAT) named Fantasy Hub has been disclosed, operating under a Malware-as-a-Service model on Russian-speaking Telegram channels. This malware provides threat actors with capabilities for device control and espionage, turning Telegram into a hub for illicit activities. The emergence of Fantasy Hub highlights the evolving landscape of mobile threats and the role of communication platforms in facilitating cybercrime. For cybersecurity experts, this development underscores the need for robust mobile security strategies and monitoring of emerging threats. Understanding the mechanisms of such malware is critical for developing effective countermeasures.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/11/android-trojan-fantasy-hub-malware.html"
+        },
+        {
+            "date": "Nov 11 2025",
             "title": "Daily Cybersecurity Insights from ISC Stormcast",
             "content": "The SANS Internet Storm Center has released its latest Stormcast for November 11, 2025, providing cybersecurity professionals with crucial insights into the current threat landscape. The InfoCON level remains green, indicating a stable threat environment. These daily updates are vital for security teams to stay informed about emerging threats and vulnerabilities. The Stormcast podcast delivers expert analysis and actionable intelligence, enabling organizations to enhance their defensive strategies. As cyber threats continue to evolve, staying updated with such briefings is essential for maintaining robust security postures. Security professionals are encouraged to integrate these insights into their daily operations to mitigate potential risks effectively.",
             "source": "SANS Internet Storm Center",
@@ -16,64 +51,43 @@ var websiteContent = {
             "content": "Cybersecurity researchers have identified that APT37, a North Korean hacking group, is leveraging Google&#x27;s Find Hub tool to conduct sophisticated cyberattacks on Android devices. The hackers are using this tool to track the GPS locations of their targets and initiate remote factory resets, effectively wiping data from the devices. This tactic highlights the increasing complexity and resourcefulness of state-sponsored cyber threats. For security professionals, this development underscores the need for enhanced security measures and monitoring of mobile devices, particularly those used in sensitive environments. Organizations should review their mobile device management policies and ensure that adequate protections are in place to safeguard against such advanced attacks.",
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/apt37-hackers-abuse-google-find-hub-in-android-data-wiping-attacks/"
-        },
-        {
-            "date": "Nov 10 2025",
-            "title": "Firefox 145 Introduces Enhanced Anti-Fingerprinting Features",
-            "content": "Mozilla has unveiled a significant privacy enhancement in Firefox 145, aimed at reducing users&#x27; susceptibility to digital fingerprinting. This update introduces new defenses that make it harder for websites to track users&#x27; online activities without their consent. Digital fingerprinting is a growing concern for privacy advocates, as it allows for the identification and tracking of users across different sites. For cybersecurity professionals, the update represents a crucial advancement in protecting user privacy and maintaining data security. Organizations should consider encouraging the use of such privacy-focused browsers to minimize the risk of unauthorized tracking and data collection.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/mozilla-firefox-gets-new-anti-fingerprinting-defenses/"
-        },
-        {
-            "date": "Nov 10 2025",
-            "title": "OWASP&#x27;s New Top 10 List Highlights Rising Supply Chain Risks",
-            "content": "The Open Web Application Security Project (OWASP) has released its latest Top 10 list, drawing attention to the growing risks associated with supply chain vulnerabilities. Notably, security misconfiguration has risen to the second spot, while traditional injection vulnerabilities have seen a decline due to improved defenses. This shift indicates a changing landscape where supply chain threats are becoming more prominent. For security professionals, understanding these evolving risks is critical for safeguarding applications and infrastructure. The OWASP Top 10 serves as a valuable resource for identifying and addressing the most pressing security challenges facing organizations today.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/application-security/owasp-highlights-supply-chain-risks-new-top-10"
-        },
-        {
-            "date": "Nov 10 2025",
-            "title": "GlassWorm Malware Resurfaces, Targeting VS Code Extensions",
-            "content": "GlassWorm, a self-propagating malware initially discovered in the Open VSX marketplace, is making a comeback by infecting Visual Studio Code extensions. This malware poses a significant threat to developers worldwide, as it can spread rapidly across devices used for software development. The resurgence of GlassWorm highlights the vulnerabilities within popular development tools and the need for stringent security measures. Security professionals must ensure that development environments are protected with robust security protocols to prevent such infections. Regularly updating and auditing extensions can help mitigate the risk posed by this persistent threat.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/glassworm-returns-vs-code-extensions"
         }
     ],
     "aiShorts": [
         {
-            "date": "Nov 10 2025",
-            "title": "Lovable Nears 8 Million Users as AI Coding Startup Targets Corporate Expansion",
-            "content": "Lovable, a year-old AI coding platform, is rapidly approaching 8 million users, attracting a diverse user base that includes more than half of the Fortune 500 companies. The platform is being leveraged to enhance creativity in corporate environments, according to Osika, who emphasizes the platform&#x27;s strong retention rates. This growth highlights the increasing reliance on AI tools to boost productivity and innovation in large enterprises. For AI professionals, Lovable&#x27;s success underscores the importance of developing user-friendly and effective AI solutions that can seamlessly integrate into existing workflows. As the platform continues to expand, it could set new standards for AI adoption in the corporate sector.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/10/lovable-says-its-nearing-8-million-users-as-the-year-old-ai-coding-startup-eyes-more-corporate-employees/"
+            "date": "Nov 11 2025",
+            "title": "Chinese Startup Moonshot Surpasses GPT-5 in AI Benchmarks",
+            "content": "Chinese AI startup Moonshot has made headlines by surpassing OpenAI&#x27;s GPT-5 and Anthropic&#x27;s Claude Sonnet 4.5 in multiple performance benchmarks with its Kimi K2 Thinking model. This unexpected achievement has stirred discussions about the shifting landscape of AI dominance, traditionally led by American companies. Moonshot&#x27;s success highlights the rapid advancements in AI technology coming from China, challenging the notion of Western supremacy in the field. For AI professionals, this development underscores the importance of monitoring global innovation trends and adapting strategies accordingly. The implications of such breakthroughs are significant, potentially influencing future AI research and investment dynamics.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/moonshot-ai-gpt-5-claude-comparison-china-breakthrough/"
         },
         {
             "date": "Nov 10 2025",
-            "title": "SoftBank and OpenAI Form Joint Venture to Expand AI Tools in Japan",
-            "content": "SoftBank and OpenAI have announced a new joint venture, Crystal Intelligence, aimed at selling enterprise AI tools in Japan. This 50-50 partnership represents a strategic international expansion for both companies. However, the deal has sparked discussions about SoftBank&#x27;s dual role as both an investor in and partner of OpenAI. For AI professionals, this venture could signal increased competition in the AI market, particularly in Asia, and raise questions about the dynamics of investment-driven partnerships. The collaboration may also influence how AI tools are developed and marketed in different regions.",
+            "title": "Google Integrates Gemini AI into Google TV Streamer for Enhanced Voice Control",
+            "content": "Google has integrated its Gemini AI into the Google TV Streamer, aiming to enhance the naturalness of voice interactions for users. This update is set to improve how consumers access content, making voice commands more intuitive and effective. The move reflects Google&#x27;s ongoing efforts to embed advanced AI capabilities into its consumer products, enhancing user experience and accessibility. For AI professionals, this integration is a testament to the growing trend of AI-driven interfaces in consumer electronics, which could lead to broader adoption and innovation in AI applications. The development also raises considerations around data privacy and the ethical use of AI in personal devices.",
             "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/video/the-circular-money-problem-at-the-heart-of-ais-biggest-deals/"
+            "sourceUrl": "https://techcrunch.com/2025/11/10/google-brings-gemini-to-the-google-tv-streamer/"
         },
         {
             "date": "Nov 10 2025",
-            "title": "Rethinking the AI Bubble: Balancing Risks and Opportunities",
-            "content": "The concept of an AI bubble is being revisited as industry experts caution against viewing AI investments as all-or-nothing propositions. While AI offers significant potential, even well-considered investments can falter if not approached with careful analysis and strategy. For AI professionals, this perspective is crucial as it emphasizes the need for balanced risk assessment and informed decision-making in AI ventures. Understanding market dynamics and technological capabilities can help mitigate risks and maximize returns in this rapidly evolving field. The discussion encourages a more nuanced approach to AI investment and development.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/10/a-better-way-of-thinking-about-the-ai-bubble/"
-        },
-        {
-            "date": "Nov 10 2025",
-            "title": "Kaltura Acquires AI Avatar Startup eSelf for $27M",
-            "content": "Kaltura has acquired eSelf, an AI avatar startup founded by the creator of Snap&#x27;s AI, in a $27 million deal. This acquisition aims to integrate generative AI into Kaltura&#x27;s enterprise video and learning tools, enhancing their functionality and appeal. For AI and tech professionals, this move highlights the growing importance of generative AI in multimedia and educational technology sectors. The acquisition could lead to more sophisticated and interactive content delivery solutions, potentially transforming how organizations approach digital learning and communication.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/10/kaltura-acquires-eself-founded-by-creator-of-snaps-ai-in-27m-deal/"
-        },
-        {
-            "date": "Nov 10 2025",
-            "title": "Meta Launches Omnilingual ASR Models Supporting Over 1,600 Languages",
-            "content": "Meta has introduced a new multilingual automatic speech recognition (ASR) system capable of transcribing over 1,600 languages, significantly surpassing the capabilities of OpenAI&#x27;s Whisper model. This development is particularly noteworthy for its potential to expand language accessibility and support in AI applications. The system&#x27;s architecture allows developers to extend support to even more languages, offering a robust tool for global communication. For AI professionals, Meta&#x27;s advancement in ASR technology presents new opportunities for innovation in multilingual AI solutions, facilitating broader reach and inclusivity in digital interactions.",
+            "title": "Chronosphere Introduces AI-Guided Troubleshooting to Compete with Datadog",
+            "content": "Chronosphere, a New York-based observability startup valued at $1.6 billion, has announced the launch of its AI-Guided Troubleshooting capabilities. This new feature is designed to help engineers diagnose and resolve software production failures more effectively, addressing a critical challenge in the era of complex AI tools. The innovation positions Chronosphere as a strong competitor to Datadog, offering solutions that not only detect outages but also provide explanatory insights. For cybersecurity and AI professionals, this advancement highlights the importance of transparency and interpretability in AI systems, which can significantly enhance operational efficiency and reliability.",
             "source": "AI | VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/meta-returns-to-open-source-ai-with-omnilingual-asr-models-that-can"
+            "sourceUrl": "https://venturebeat.com/ai/chronosphere-takes-on-datadog-with-ai-that-explains-itself-not-just-outages"
+        },
+        {
+            "date": "Nov 10 2025",
+            "title": "Wikipedia Encourages AI Firms to Use Its Paid API Instead of Scraping",
+            "content": "Wikipedia has issued a call to AI companies to utilize its paid API service rather than relying on web scraping, aiming to ensure sustainable support for its platform. This initiative comes as the nonprofit encyclopedia faces declining traffic in the AI-driven era. Wikipedia&#x27;s approach is designed to maintain the quality and reliability of its content while securing necessary funding. For AI professionals, this development is a reminder of the ethical considerations in data usage and the potential impacts on open-source resources. The move could set a precedent for how other content providers negotiate with AI firms in the future.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/10/wikipedia-urges-ai-companies-to-use-its-paid-api-and-stop-scraping/"
+        },
+        {
+            "date": "Nov 10 2025",
+            "title": "Google Maps Launches AI Tools for Creating Interactive Projects",
+            "content": "Google Maps has unveiled new AI tools that allow users to create interactive projects by generating code automatically. This feature empowers developers and non-developers alike to build customized map-based applications, expanding the platform&#x27;s versatility. By simplifying the coding process, Google aims to foster innovation and creativity in how maps are used across various industries. For AI and tech professionals, this development represents a significant step towards democratizing AI technology, making it more accessible and practical for a wider audience. The introduction of these tools could lead to new opportunities and applications in fields ranging from education to urban planning.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/10/google-maps-releases-new-ai-tools-to-let-you-create-interactive-projects/"
         }
     ],
     "articles": {
