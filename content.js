@@ -4,90 +4,76 @@
 var websiteContent = {
     "cyberShorts": [
         {
-            "date": "Nov 11 2025",
-            "title": "Celebrating Veterans&#x27; Contributions to Cybersecurity",
-            "content": "In recognition of Veterans Day, SecurityWeek extends gratitude to its veteran readers whose service, teamwork, and resilience contribute significantly to the cybersecurity industry. Veterans often bring unique skills and perspectives that are invaluable in combating cyber threats. Their experience in high-pressure environments and dedication to mission success align closely with the demands of cybersecurity roles. This recognition highlights the ongoing contributions of veterans to maintaining the integrity and security of digital infrastructures. For the cybersecurity community, acknowledging these contributions underscores the importance of diverse backgrounds and experiences in strengthening defenses against cyber threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/honoring-our-veteran-readers-thank-you-for-your-service/"
-        },
-        {
-            "date": "Nov 11 2025",
-            "title": "&#x27;Whisper Leak&#x27; Attack Exposes Chatbot Conversations",
-            "content": "A newly identified side-channel attack, dubbed &#x27;Whisper Leak,&#x27; allows attackers to infer the topics of user prompts in chatbot conversations despite the use of end-to-end encryption. By intercepting network traffic, malicious actors can deduce conversation subjects, posing a significant privacy risk. This attack highlights vulnerabilities in encrypted communication channels and the need for enhanced security measures. For cybersecurity professionals, understanding and mitigating such threats is crucial as reliance on AI-driven communication tools grows. The discovery of &#x27;Whisper Leak&#x27; serves as a reminder of the persistent challenges in securing digital interactions.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/whisper-leak-llm-side-channel-attack-infers-user-prompt-topics/"
-        },
-        {
-            "date": "Nov 11 2025",
-            "title": "Surge in AI-Driven Supply Chain Attacks Demands New CISO Strategies",
-            "content": "AI-enabled supply chain attacks have surged by 156% in the past year, presenting a formidable challenge to traditional cybersecurity defenses. These sophisticated attacks exploit vulnerabilities in the supply chain, often bypassing conventional security measures. The rise in such incidents underscores the urgent need for CISOs to adopt innovative strategies to protect their organizations. A comprehensive guide offers insights into why existing defenses are failing and outlines proactive measures for mitigating risks. For security leaders, staying informed and adapting to the evolving threat landscape is essential to safeguard critical assets.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/11/cisos-expert-guide-to-ai-supply-chain.html"
-        },
-        {
-            "date": "Nov 11 2025",
-            "title": "Malicious npm Package Targets GitHub Repositories",
-            "content": "Researchers have uncovered a malicious npm package named &quot;@acitons/artifact,&quot; designed to target GitHub-owned repositories through typosquatting. This package mimics the legitimate &quot;@actions/artifact&quot; package, intending to execute malicious scripts during builds. Such attacks exploit developer trust and underscore the risks associated with third-party dependencies. For developers and security professionals, this discovery emphasizes the importance of vigilance and verification in managing software dependencies. Ensuring the integrity of open-source packages is crucial to prevent unauthorized access and potential data breaches.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/11/researchers-detect-malicious-npm.html"
-        },
-        {
-            "date": "Nov 11 2025",
-            "title": "Fantasy Hub Malware Exploits Telegram for Cyber Espionage",
-            "content": "A new Android remote access trojan (RAT) named Fantasy Hub has been disclosed, operating under a Malware-as-a-Service model on Russian-speaking Telegram channels. This malware provides threat actors with capabilities for device control and espionage, turning Telegram into a hub for illicit activities. The emergence of Fantasy Hub highlights the evolving landscape of mobile threats and the role of communication platforms in facilitating cybercrime. For cybersecurity experts, this development underscores the need for robust mobile security strategies and monitoring of emerging threats. Understanding the mechanisms of such malware is critical for developing effective countermeasures.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/11/android-trojan-fantasy-hub-malware.html"
-        },
-        {
-            "date": "Nov 11 2025",
-            "title": "Daily Cybersecurity Insights from ISC Stormcast",
-            "content": "The SANS Internet Storm Center has released its latest Stormcast for November 11, 2025, providing cybersecurity professionals with crucial insights into the current threat landscape. The InfoCON level remains green, indicating a stable threat environment. These daily updates are vital for security teams to stay informed about emerging threats and vulnerabilities. The Stormcast podcast delivers expert analysis and actionable intelligence, enabling organizations to enhance their defensive strategies. As cyber threats continue to evolve, staying updated with such briefings is essential for maintaining robust security postures. Security professionals are encouraged to integrate these insights into their daily operations to mitigate potential risks effectively.",
+            "date": "Nov 12 2025",
+            "title": "Latest ISC Stormcast Highlights Emerging Cyber Threats",
+            "content": "The SANS Internet Storm Center has released its latest Stormcast podcast, providing insights into emerging cyber threats and security trends. This episode, dated November 12, 2025, continues to offer valuable analysis for cybersecurity professionals. The InfoCON remains at green, indicating a stable threat level. However, the podcast discusses various vulnerabilities and exploits that are gaining traction. Staying informed through such updates is crucial for IT security teams to anticipate potential threats and safeguard their systems. As cyber threats evolve, timely information becomes an essential tool for effective cybersecurity defense strategies.",
             "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32466"
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32470"
+        },
+        {
+            "date": "Nov 12 2025",
+            "title": "Rhadamanthys Infostealer Operation Disrupted by Server Access Loss",
+            "content": "The Rhadamanthys infostealer operation has faced a significant disruption as many users of the malware-as-a-service have lost access to their servers. This development marks a setback for cybercriminals who rely on Rhadamanthys for data theft and other malicious activities. The disruption suggests potential internal issues or external interventions, impacting the service&#x27;s reliability. For cybersecurity professionals, this highlights the importance of monitoring such disruptions as they can lead to shifts in cybercriminal tactics. Understanding these dynamics helps in anticipating future threats and improving defensive measures against infostealers and similar threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/rhadamanthys-infostealer-disrupted-as-cybercriminals-lose-server-access/"
         },
         {
             "date": "Nov 11 2025",
-            "title": "North Korean Hackers Exploit Google Find Hub in Android Attacks",
-            "content": "Cybersecurity researchers have identified that APT37, a North Korean hacking group, is leveraging Google&#x27;s Find Hub tool to conduct sophisticated cyberattacks on Android devices. The hackers are using this tool to track the GPS locations of their targets and initiate remote factory resets, effectively wiping data from the devices. This tactic highlights the increasing complexity and resourcefulness of state-sponsored cyber threats. For security professionals, this development underscores the need for enhanced security measures and monitoring of mobile devices, particularly those used in sensitive environments. Organizations should review their mobile device management policies and ensure that adequate protections are in place to safeguard against such advanced attacks.",
+            "title": "Synology Addresses Critical RCE Vulnerability in BeeStation",
+            "content": "Synology has released patches for a critical remote code execution vulnerability in its BeeStation products, demonstrated at the Pwn2Own Ireland hacking competition. The vulnerability, if exploited, could allow attackers to execute arbitrary code remotely, posing significant risks to data integrity and system security. This prompt response by Synology underscores the importance of addressing zero-day vulnerabilities swiftly to protect users. For security professionals, this incident highlights the need for vigilance and the timely application of patches to mitigate potential threats. Staying updated with vendor patches is crucial in maintaining a robust security posture.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/apt37-hackers-abuse-google-find-hub-in-android-data-wiping-attacks/"
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/synology-fixes-beestation-zero-days-demoed-at-pwn2own-ireland/"
+        },
+        {
+            "date": "Nov 11 2025",
+            "title": "Adobe Releases Patches for 29 Vulnerabilities Across Multiple Products",
+            "content": "Adobe has issued patches for 29 vulnerabilities affecting several of its products, including InDesign, InCopy, Photoshop, Illustrator, and others. These vulnerabilities, if left unpatched, could be exploited to compromise system security and user data. The comprehensive update reflects Adobe&#x27;s commitment to maintaining the security of its software ecosystem. For IT and security professionals, applying these patches is essential to protect against potential exploits. Regular updates and patch management are critical components of an effective cybersecurity strategy, ensuring that software vulnerabilities are addressed promptly to prevent exploitation.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/adobe-patches-29-vulnerabilities/"
+        },
+        {
+            "date": "Nov 11 2025",
+            "title": "Microsoft Addresses Critical Windows Kernel Zero-Day Exploit",
+            "content": "Microsoft&#x27;s latest Patch Tuesday release includes fixes for over 60 vulnerabilities, notably addressing an actively exploited zero-day in the Windows kernel. This zero-day posed a significant risk as attackers could exploit it to gain elevated privileges and execute arbitrary code. The update underscores the critical nature of timely patch deployment to protect systems from active threats. For security professionals, this highlights the importance of staying current with vendor updates and understanding the implications of zero-day vulnerabilities. Vigilance in applying security patches is a key defense strategy in mitigating risks posed by such exploits.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/microsoft-patches-actively-exploited-windows-kernel-zero-day/"
         }
     ],
     "aiShorts": [
         {
-            "date": "Nov 11 2025",
-            "title": "Chinese Startup Moonshot Surpasses GPT-5 in AI Benchmarks",
-            "content": "Chinese AI startup Moonshot has made headlines by surpassing OpenAI&#x27;s GPT-5 and Anthropic&#x27;s Claude Sonnet 4.5 in multiple performance benchmarks with its Kimi K2 Thinking model. This unexpected achievement has stirred discussions about the shifting landscape of AI dominance, traditionally led by American companies. Moonshot&#x27;s success highlights the rapid advancements in AI technology coming from China, challenging the notion of Western supremacy in the field. For AI professionals, this development underscores the importance of monitoring global innovation trends and adapting strategies accordingly. The implications of such breakthroughs are significant, potentially influencing future AI research and investment dynamics.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/moonshot-ai-gpt-5-claude-comparison-china-breakthrough/"
-        },
-        {
-            "date": "Nov 10 2025",
-            "title": "Google Integrates Gemini AI into Google TV Streamer for Enhanced Voice Control",
-            "content": "Google has integrated its Gemini AI into the Google TV Streamer, aiming to enhance the naturalness of voice interactions for users. This update is set to improve how consumers access content, making voice commands more intuitive and effective. The move reflects Google&#x27;s ongoing efforts to embed advanced AI capabilities into its consumer products, enhancing user experience and accessibility. For AI professionals, this integration is a testament to the growing trend of AI-driven interfaces in consumer electronics, which could lead to broader adoption and innovation in AI applications. The development also raises considerations around data privacy and the ethical use of AI in personal devices.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/10/google-brings-gemini-to-the-google-tv-streamer/"
-        },
-        {
-            "date": "Nov 10 2025",
-            "title": "Chronosphere Introduces AI-Guided Troubleshooting to Compete with Datadog",
-            "content": "Chronosphere, a New York-based observability startup valued at $1.6 billion, has announced the launch of its AI-Guided Troubleshooting capabilities. This new feature is designed to help engineers diagnose and resolve software production failures more effectively, addressing a critical challenge in the era of complex AI tools. The innovation positions Chronosphere as a strong competitor to Datadog, offering solutions that not only detect outages but also provide explanatory insights. For cybersecurity and AI professionals, this advancement highlights the importance of transparency and interpretability in AI systems, which can significantly enhance operational efficiency and reliability.",
+            "date": "Nov 12 2025",
+            "title": "Baidu&#x27;s New AI Model Claims to Surpass GPT-5 and Gemini",
+            "content": "Baidu Inc., China&#x27;s leading search engine company, has unveiled a new artificial intelligence model that it claims outperforms Google&#x27;s and OpenAI&#x27;s latest offerings in vision-related benchmarks. This development is significant as Baidu&#x27;s model reportedly achieves superior performance using fewer computational resources. For AI professionals, this could signal a shift in the competitive landscape, highlighting the potential for more efficient AI models. The implications for industries relying on AI for vision tasks are substantial, potentially reducing costs and increasing accessibility. As AI continues to evolve, innovations like Baidu&#x27;s model could redefine benchmarks for performance and efficiency in the field.",
             "source": "AI | VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/chronosphere-takes-on-datadog-with-ai-that-explains-itself-not-just-outages"
+            "sourceUrl": "https://venturebeat.com/ai/baidu-just-dropped-an-open-source-multimodal-ai-that-it-claims-beats-gpt-5"
         },
         {
-            "date": "Nov 10 2025",
-            "title": "Wikipedia Encourages AI Firms to Use Its Paid API Instead of Scraping",
-            "content": "Wikipedia has issued a call to AI companies to utilize its paid API service rather than relying on web scraping, aiming to ensure sustainable support for its platform. This initiative comes as the nonprofit encyclopedia faces declining traffic in the AI-driven era. Wikipedia&#x27;s approach is designed to maintain the quality and reliability of its content while securing necessary funding. For AI professionals, this development is a reminder of the ethical considerations in data usage and the potential impacts on open-source resources. The move could set a precedent for how other content providers negotiate with AI firms in the future.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/10/wikipedia-urges-ai-companies-to-use-its-paid-api-and-stop-scraping/"
+            "date": "Nov 11 2025",
+            "title": "Meta Introduces SPICE Framework for Self-Improving AI",
+            "content": "Researchers from Meta FAIR and the National University of Singapore have introduced a novel reinforcement learning framework known as Self-Play In Corpus Environments (SPICE). This framework allows AI systems to self-improve by creating their own challenges through pitting two AI agents against each other. Such a method enables AI to develop reasoning capabilities autonomously, which is a critical advancement for AI professionals focused on developing more intelligent and adaptable systems. The SPICE framework could lead to breakthroughs in AI&#x27;s ability to handle complex problem-solving tasks, offering new possibilities for research and application in various fields.",
+            "source": "AI | VentureBeat",
+            "sourceUrl": "https://venturebeat.com/ai/metas-spice-framework-lets-ai-systems-teach-themselves-to-reason"
         },
         {
-            "date": "Nov 10 2025",
-            "title": "Google Maps Launches AI Tools for Creating Interactive Projects",
-            "content": "Google Maps has unveiled new AI tools that allow users to create interactive projects by generating code automatically. This feature empowers developers and non-developers alike to build customized map-based applications, expanding the platform&#x27;s versatility. By simplifying the coding process, Google aims to foster innovation and creativity in how maps are used across various industries. For AI and tech professionals, this development represents a significant step towards democratizing AI technology, making it more accessible and practical for a wider audience. The introduction of these tools could lead to new opportunities and applications in fields ranging from education to urban planning.",
+            "date": "Nov 11 2025",
+            "title": "SoftBank&#x27;s Nvidia Stake Sale Raises Industry Concerns",
+            "content": "SoftBank&#x27;s recent decision to sell its stake in Nvidia has caused a stir in the financial markets, prompting speculation about the motivations behind the sale. This move by SoftBank CEO Masayoshi Son has led to questions about whether there are underlying concerns about Nvidia&#x27;s future prospects. For AI and tech industry professionals, this development is noteworthy as it could influence market dynamics and investment strategies within the sector. Nvidia, a key player in AI hardware, is integral to the industry&#x27;s infrastructure, and any shifts in its market position could have wide-reaching implications for technology development and deployment.",
             "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/10/google-maps-releases-new-ai-tools-to-let-you-create-interactive-projects/"
+            "sourceUrl": "https://techcrunch.com/2025/11/11/softbanks-nvidia-sale-rattles-market-raises-questions/"
+        },
+        {
+            "date": "Nov 11 2025",
+            "title": "Survey Reveals Developers Skeptical of AI Code Without Oversight",
+            "content": "According to a recent BairesDev survey, only 9% of developers believe that AI-generated code can be used without human oversight. This finding highlights a significant level of caution among senior software developers as AI becomes increasingly integrated into their workflows. The survey, part of BairesDev&#x27;s Dev Barometer report, suggests that while AI has the potential to transform software development, professionals remain wary of its limitations and the need for human intervention. For those in the AI and software development fields, understanding these perceptions is crucial for navigating the evolving landscape and ensuring responsible AI deployment.",
+            "source": "AI | VentureBeat",
+            "sourceUrl": "https://venturebeat.com/ai/only-9-of-developers-think-ai-code-can-be-used-without-human-oversight"
+        },
+        {
+            "date": "Nov 11 2025",
+            "title": "Eternos Secures Funding for Personal AI Development",
+            "content": "Immortality startup Eternos has secured $10.3 million in seed funding, led by Mayfield and Boldstart Ventures, to pivot towards developing personal AI that mimics individual speech patterns. This funding will enable Eternos to advance its technology aimed at creating AI that can replicate a person&#x27;s voice and conversational style, offering new possibilities in personalized digital interactions. For AI professionals, this represents a step forward in the personalization and humanization of AI systems, potentially influencing how AI is integrated into daily life and communication. The implications for privacy and ethical considerations in AI development are significant, warranting careful attention from industry stakeholders.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/11/immortality-startup-eternos-pivots-to-a-personal-ai-that-sounds-like-you/"
         }
     ],
     "articles": {
