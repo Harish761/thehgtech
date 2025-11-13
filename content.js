@@ -5,75 +5,89 @@ var websiteContent = {
     "cyberShorts": [
         {
             "date": "Nov 13 2025",
+            "title": "Android-Based Digital Frames Found Downloading Malware",
+            "content": "Android-based digital picture frames from Uhale have been discovered to contain critical security vulnerabilities that allow them to download and execute malware upon booting. These vulnerabilities pose a significant threat as they can be exploited remotely without user interaction. The issue highlights the ongoing challenges in securing Internet of Things (IoT) devices, which are often overlooked in cybersecurity planning. For security professionals, this incident underscores the importance of robust security measures and regular updates for all connected devices. The vulnerabilities in these frames could potentially lead to unauthorized access and data breaches, emphasizing the need for vigilance in device management and network security.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/popular-android-based-photo-frames-download-malware-on-boot/"
+        },
+        {
+            "date": "Nov 13 2025",
+            "title": "NHS Probes Possible Oracle EBS Breach Amid Hacker Claims",
+            "content": "The UK&#x27;s National Health Service (NHS) is currently investigating claims of a hack involving Oracle E-Business Suite (EBS), with hackers naming over 40 alleged victims. The NHS is collaborating with the National Cyber Security Centre to assess the situation and mitigate any potential risks. This incident is part of a broader trend of cyberattacks targeting critical infrastructure and sensitive data, highlighting the vulnerabilities within large and complex IT systems. For cybersecurity experts, this serves as a reminder of the importance of comprehensive security audits and incident response plans. The potential breach could have serious implications for data privacy and operational continuity within the healthcare sector.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/nhs-investigating-oracle-ebs-hack-claims-as-hackers-name-over-40-alleged-victims/"
+        },
+        {
+            "date": "Nov 13 2025",
+            "title": "High-Risk Vulnerability in WatchGuard Firebox Actively Exploited",
+            "content": "A critical vulnerability, identified as CVE-2025-9242, has been found in WatchGuard Firebox devices, allowing for unauthenticated remote code execution. With a CVSS score of 9.3, this flaw is being actively exploited in the wild, posing a significant risk to organizations using these firewalls. The vulnerability highlights the urgent need for immediate patching and vigilant security practices to prevent unauthorized access and potential data breaches. For IT security professionals, this incident emphasizes the importance of staying informed about vulnerabilities and implementing timely updates. The exploitation of such vulnerabilities can lead to severe consequences, including network compromise and data theft.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/critical-watchguard-firebox-vulnerability-exploited-in-attacks/"
+        },
+        {
+            "date": "Nov 13 2025",
+            "title": "CISA Urges Federal Agencies to Patch Cisco Vulnerabilities",
+            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has issued a warning to federal agencies to urgently patch two critical vulnerabilities in Cisco Adaptive Security Appliances (ASA) and Firepower devices. These vulnerabilities are being actively exploited, increasing the risk of unauthorized access and potential network breaches. The advisory underscores the critical nature of timely patch management in maintaining secure IT environments. For cybersecurity professionals, this highlights the importance of proactive vulnerability management and the need for continuous monitoring of security advisories. The exploitation of these flaws poses a threat to the integrity and security of federal networks, necessitating immediate action.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-warns-feds-to-fully-patch-actively-exploited-cisco-flaws/"
+        },
+        {
+            "date": "Nov 13 2025",
+            "title": "Accelerating Threats Demand Machine-Speed Security in 2026",
+            "content": "As we approach 2026, the pace of cyber threats is outstripping the speed of traditional patching processes, with 50 to 61 percent of newly disclosed vulnerabilities being exploited within 48 hours. This rapid weaponization of vulnerabilities demands a shift towards machine-speed security solutions. The trend is driven by the increasing sophistication of cyberattacks and the sheer volume of vulnerabilities, as evidenced by the CISA Known Exploited Vulnerabilities Catalog. For security professionals, this means adopting advanced technologies like AI and automation to enhance threat detection and response capabilities. The evolving landscape necessitates a proactive approach to cybersecurity, focusing on resilience and rapid adaptation to emerging threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/11/when-attacks-come-faster-than-patches.html"
+        },
+        {
+            "date": "Nov 13 2025",
             "title": "ISC Stormcast Highlights Cybersecurity Developments",
             "content": "The SANS Internet Storm Center&#x27;s latest Stormcast for November 13, 2025, provides a comprehensive overview of recent cybersecurity incidents and trends. The podcast covers various topics, including the latest vulnerabilities and patches, threat intelligence updates, and insights into ongoing cyber campaigns. This resource is crucial for cybersecurity professionals seeking to stay informed about the evolving threat landscape. The InfoCON level remains at green, indicating a stable threat environment. Regular updates like these are essential for maintaining awareness and preparedness against potential cyber threats. The Stormcast serves as a valuable tool for both proactive defense strategies and reactive incident response planning.",
             "source": "SANS Internet Storm Center",
             "sourceUrl": "https://isc.sans.edu/diary/rss/32476"
-        },
-        {
-            "date": "Nov 12 2025",
-            "title": "CitrixBleed 2 Zero-Day Bug Exploited by APT",
-            "content": "A newly identified zero-day vulnerability, dubbed &#x27;CitrixBleed 2,&#x27; is causing significant concern as it is actively exploited by an advanced persistent threat (APT) group. The vulnerability affects Citrix NetScaler (CVE-2025-5777) and the Cisco Identity Service Engine (CVE-2025-20337), highlighting a growing adversary interest in identity and access management systems. This development underscores the critical need for organizations to prioritize patch management and vulnerability assessment to protect sensitive data. The exploitation of these bugs could lead to unauthorized access and potentially devastating data breaches. Cybersecurity professionals must remain vigilant and ensure that all systems are up-to-date with the latest security patches.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/citrixbleed-2-cisco-zero-day-bugs"
-        },
-        {
-            "date": "Nov 12 2025",
-            "title": "Google Targets &#x27;Lighthouse&#x27; Phishing-as-a-Service Operation",
-            "content": "Google is taking decisive action against the &#x27;Lighthouse&#x27; phishing-as-a-service operation, which has been linked to widespread smishing campaigns. Operated by a group known as the &quot;Smishing Triad,&quot; this phishing kit has been used to send fraudulent unpaid toll and package tracking text messages. The scale and sophistication of these attacks highlight the increasing threat posed by phishing-as-a-service platforms. For cybersecurity professionals, this case emphasizes the importance of robust email and SMS filtering solutions to protect users from such scams. Google&#x27;s intervention aims to disrupt the infrastructure supporting these cybercriminal activities, reducing the risk to potential victims.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/threat-intelligence/google-dim-lighthouse-phishing-as-a-service"
-        },
-        {
-            "date": "Nov 12 2025",
-            "title": "SmartApeSG Campaign Utilizes ClickFix for Malware Distribution",
-            "content": "The SmartApeSG campaign is leveraging a ClickFix page to distribute the NetSupport RAT, a remote access tool used for malicious purposes. This campaign is part of a broader trend where cybercriminals exploit legitimate services to deliver malware. The use of ClickFix pages illustrates the evolving tactics employed by threat actors to bypass traditional security measures. For cybersecurity experts, understanding these tactics is crucial for developing effective countermeasures. The campaign&#x27;s success in spreading the NetSupport RAT highlights the need for continuous monitoring and advanced threat detection capabilities within organizations. Staying informed about such campaigns can aid in preemptive defense strategies.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32474"
-        },
-        {
-            "date": "Nov 12 2025",
-            "title": "Google Sues to Dismantle &#x27;Lighthouse&#x27; Phishing Platform",
-            "content": "Google has filed a lawsuit aimed at dismantling the &#x27;Lighthouse&#x27; phishing-as-a-service platform, which has been implicated in SMS phishing attacks targeting U.S. toll systems and the Postal Service. This platform has facilitated the theft of credit card information by impersonating legitimate entities, posing a significant threat to consumers and businesses alike. The legal action taken by Google reflects a broader effort to combat cybercrime by targeting the infrastructure that supports these illicit activities. For security professionals, the case underscores the importance of cross-industry collaboration in tackling phishing and other cyber threats. Google&#x27;s proactive approach may set a precedent for future actions against similar platforms.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/google-sues-to-dismantle-chinese-phishing-platform-behind-us-toll-scams/"
         }
     ],
     "aiShorts": [
+        {
+            "date": "Nov 13 2025",
+            "title": "Microsoft Leverages OpenAI to Tackle Chip Shortages",
+            "content": "Microsoft is addressing its chip shortage issues by collaborating with OpenAI, leveraging the latter&#x27;s expertise in AI-driven solutions. This partnership aims to optimize chip production processes, potentially reducing reliance on traditional supply chains. For AI professionals, this move highlights the increasing intersection between AI capabilities and hardware manufacturing. The collaboration is expected to enhance efficiency in chip production, which is crucial for sustaining the growth of AI applications. This strategic decision underscores the importance of innovative solutions in overcoming industry-wide challenges.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/13/microsofts-plan-to-fix-its-chip-problem-is-partly-to-let-openai-do-the-heavy-lifting/"
+        },
+        {
+            "date": "Nov 13 2025",
+            "title": "Milestone Secures $10M to Align AI with Engineering Metrics",
+            "content": "Israeli startup Milestone has successfully raised $10 million in seed funding to develop tools that align AI usage with engineering metrics such as code quality. This funding will enable Milestone to create solutions that provide tangible ROI from AI investments, a critical concern for many businesses. For AI practitioners, this initiative represents a significant step towards quantifying the impact of AI on engineering processes. The focus on metrics and quality assurance could lead to more efficient development cycles and better resource allocation in tech projects.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/13/milestone-raises-10m-to-make-sure-ai-rhymes-with-roi/"
+        },
+        {
+            "date": "Nov 13 2025",
+            "title": "Anthropic Expands US Presence with $50B Data Center Investment",
+            "content": "Anthropic is embarking on its largest US expansion to date with a $50 billion investment in new data centers located in Texas and New York. These facilities, developed in partnership with Fluidstack, will be tailored to meet the demands of advanced AI workloads, emphasizing power efficiency and computational capacity. For AI professionals, this expansion signifies a substantial increase in available resources for AI research and development. The investment reflects the growing need for robust infrastructure to support cutting-edge AI applications and underscores the strategic importance of US-based data centers.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/new-data-centre-projects-mark-anthropic-biggest-us-expansion/"
+        },
+        {
+            "date": "Nov 12 2025",
+            "title": "Baidu&#x27;s ERNIE Model Outperforms GPT and Gemini in Key Benchmarks",
+            "content": "Baidu&#x27;s latest ERNIE model has surpassed GPT and Gemini in several critical benchmarks, showcasing its efficiency in handling multimodal data. This model targets enterprise data sources often overlooked by text-centric AI, including engineering schematics and medical scans. For AI and enterprise professionals, ERNIE&#x27;s performance highlights the potential for AI models to unlock insights from complex data types. The success of ERNIE underscores the importance of developing AI systems capable of processing diverse data inputs, which can lead to more comprehensive and actionable business insights.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/baidu-ernie-multimodal-ai-gpt-and-gemini-benchmarks/"
+        },
+        {
+            "date": "Nov 12 2025",
+            "title": "WisdomAI Secures $50M for Advanced Data Analytics Solutions",
+            "content": "WisdomAI has raised $50 million in funding, led by Kleiner and Nvidia, to advance its AI-driven data analytics platform. This platform is designed to extract business insights from structured, unstructured, and &quot;dirty&quot; data, which includes data with errors or inconsistencies. For data scientists and AI professionals, WisdomAI&#x27;s approach offers a powerful tool for deriving value from imperfect datasets. The investment reflects a growing demand for analytics solutions that can handle real-world data challenges, emphasizing the need for flexible and robust AI tools in data-driven decision-making processes.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/12/ai-data-startup-wisdomai-has-raised-another-50m-led-by-kleiner-nvidia/"
+        },
         {
             "date": "Nov 13 2025",
             "title": "Y Combinator Backs &#x27;Chad: The Brainrot IDE&#x27; for Vibe Coding Enthusiasts",
             "content": "A new product called &#x27;Chad: The Brainrot IDE&#x27; has emerged from the Y Combinator startup accelerator, combining vibe coding with unconventional activities like gambling, Tinder, and gaming. Initially perceived as a hoax due to its unique concept, the tool aims to integrate leisure activities with coding tasks, potentially altering the way developers engage with their work. The product&#x27;s launch underscores the growing trend of blending entertainment with productivity in tech development. For AI professionals, this represents a shift towards more personalized and engaging coding environments. It also raises questions about the future of developer tools and their role in balancing work and play.",
             "source": "AI News &amp; Artificial Intelligence | TechCrunch",
             "sourceUrl": "https://techcrunch.com/2025/11/12/chad-the-brainrot-ide-is-a-new-y-combinator-backed-product-so-wild-people-thought-it-was-fake/"
-        },
-        {
-            "date": "Nov 12 2025",
-            "title": "ElevenLabs Partners with Celebrities for AI-Generated Voices",
-            "content": "ElevenLabs has reached agreements with actors Michael Caine and Matthew McConaughey to create AI-generated versions of their voices. This collaboration marks a significant step in the use of artificial intelligence for entertainment purposes, allowing for the replication of celebrity voices in various media forms. The development highlights the increasing sophistication of AI audio technologies and their potential impact on the entertainment industry. For AI professionals, this partnership exemplifies the growing demand for AI-driven content creation and the ethical considerations surrounding voice replication. It also indicates a broader acceptance of AI in creative fields.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/12/elevenlabs-strike-deals-with-celebs-to-create-ai-audio/"
-        },
-        {
-            "date": "Nov 12 2025",
-            "title": "Weibo&#x27;s VibeThinker-1.5B Surpasses DeepSeek-R1 with Cost-Effective AI Model",
-            "content": "Weibo&#x27;s AI division has unveiled VibeThinker-1.5B, a 1.5 billion parameter large language model that has outperformed DeepSeek-R1 on a modest $7,800 post-training budget. This open-source AI model demonstrates China&#x27;s advancements in developing cost-efficient yet powerful AI technologies. For professionals in the AI sector, this achievement showcases the potential for high-performance models that do not require extensive financial resources, making advanced AI more accessible. It also emphasizes the competitive landscape of AI development, where efficiency and scalability are key factors.",
-            "source": "AI | VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/weibos-new-open-source-ai-model-vibethinker-1-5b-outperforms-deepseek-r1-on"
-        },
-        {
-            "date": "Nov 12 2025",
-            "title": "German Court Finds OpenAI&#x27;s ChatGPT in Violation of Copyright Law",
-            "content": "A German court has ruled that OpenAI&#x27;s ChatGPT infringed on the nation&#x27;s copyright laws by utilizing licensed musical works for training without obtaining permission. This legal decision mandates OpenAI to pay damages, highlighting the ongoing challenges AI companies face regarding intellectual property rights. For AI professionals, this case underscores the importance of developing ethical AI models that respect copyright laws and the potential legal ramifications of failing to do so. It also signals the need for clearer guidelines and frameworks in the use of copyrighted material in AI training.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/12/court-rules-that-openai-violated-german-copyright-law-ordered-it-to-pay-damages/"
-        },
-        {
-            "date": "Nov 12 2025",
-            "title": "Startups Seek Rapid Innovation with OpenAI&#x27;s Support",
-            "content": "OpenAI&#x27;s head of startups, Marc Manara, notes that AI-native companies are achieving significant growth, with some reaching $200 million in annual recurring revenue. The acceleration of product cycles from weeks to days illustrates the fast-paced evolution of AI technologies. OpenAI&#x27;s involvement is pivotal in this transformation, providing the tools and support necessary for startups to thrive. For AI professionals, this trend highlights the need for agility and adaptability in developing AI solutions. It also points to the increasing influence of AI in driving business innovation and the strategic role of partnerships in fostering growth.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/podcast/what-startups-want-from-openai/"
         }
     ],
     "articles": {
