@@ -4,97 +4,76 @@
 var websiteContent = {
     "cyberShorts": [
         {
-            "date": "Nov 12 2025",
-            "title": "Google Targets &#x27;Lighthouse&#x27; Phishing Kit in Legal Battle Against Chinese Cybercriminals",
-            "content": "Google has initiated legal proceedings against the Smishing Triad, a Chinese cybercriminal group responsible for deploying the &#x27;Lighthouse&#x27; phishing kit. This group orchestrated a widespread campaign using over 194,000 malicious domains to deceive users and harvest sensitive information. The lawsuit marks a significant step in Google&#x27;s efforts to combat phishing attacks and protect its users&#x27; data. For cybersecurity professionals, this case underscores the importance of vigilance against sophisticated phishing operations that exploit technological vulnerabilities. The outcome of this lawsuit could set a precedent for how tech companies can legally address large-scale cyber threats. This development highlights the ongoing battle between tech giants and cybercriminals, emphasizing the need for robust security measures.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/google-sues-chinese-cybercriminals-behind-lighthouse-phishing-kit/"
-        },
-        {
-            "date": "Nov 12 2025",
-            "title": "Synnovis Alerts Healthcare Providers of Data Breach Post-Ransomware Attack",
-            "content": "Synnovis, a prominent UK pathology services provider, has informed healthcare providers about a data breach resulting from a ransomware attack in June 2024. The cyberattack led to the theft of sensitive patient data, raising concerns about data protection within healthcare systems. This breach highlights the vulnerabilities in medical data management and the critical need for enhanced cybersecurity protocols. For professionals in the field, it underscores the importance of implementing robust security measures to safeguard patient information. The incident serves as a reminder of the persistent threat posed by ransomware attacks and the potential impact on sensitive sectors like healthcare.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/synnovis-notifies-of-data-breach-after-2024-ransomware-attack/"
-        },
-        {
-            "date": "Nov 12 2025",
-            "title": "Ivanti and Zoom Patch Critical Security Vulnerabilities",
-            "content": "Ivanti and Zoom have addressed high-severity vulnerabilities in their software, which could have led to arbitrary file writes, privilege escalation, code execution, and information disclosure. These security flaws posed significant risks to users, potentially allowing malicious actors to exploit the vulnerabilities for unauthorized access and data manipulation. The timely patching of these issues is a crucial step in maintaining the integrity and security of their platforms. For security professionals, this development underscores the importance of staying informed about software vulnerabilities and applying patches promptly. The proactive measures taken by Ivanti and Zoom highlight the ongoing commitment to user security and the necessity of continuous vigilance in software maintenance.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/high-severity-vulnerabilities-patched-by-ivanti-and-zoom/"
-        },
-        {
-            "date": "Nov 12 2025",
-            "title": "Webinar Explores Reducing Attack Surface Exposure with DASR",
-            "content": "A new webinar hosted by The Hacker News focuses on strategies employed by leading security teams to minimize attack surface exposure using Dynamic Attack Surface Reduction (DASR). Security professionals face the constant challenge of managing numerous risks and alerts, often feeling overwhelmed by the pace of threats. The webinar aims to provide insights into effective methods for staying ahead of cyber threats without adding undue stress or workload. For those in the cybersecurity field, this session offers valuable knowledge on optimizing security operations and reducing vulnerabilities. The discussion is particularly relevant as organizations seek innovative solutions to enhance their defensive strategies in an ever-evolving threat landscape.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/11/webinar-learn-how-leading-security.html"
-        },
-        {
-            "date": "Nov 12 2025",
-            "title": "Google Awards $458,000 for Bug Discoveries at Live Hacking Event",
-            "content": "At the bugSWAT hacking event during the ESCAL8 conference in New Mexico, Google awarded researchers a total of $458,000 for identifying 107 bugs. This live hacking event showcases Google&#x27;s commitment to improving its security posture by incentivizing researchers to uncover and report vulnerabilities. The substantial payout reflects the importance of collaboration between tech companies and the cybersecurity community in identifying and mitigating potential threats. For security experts, this event highlights the value of bug bounty programs in fostering a proactive approach to cybersecurity. By engaging with the research community, Google continues to enhance the security of its platforms and protect its user base from emerging threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/google-paid-out-458000-at-live-hacking-event/"
-        },
-        {
-            "date": "Nov 12 2025",
-            "title": "Latest ISC Stormcast Highlights Emerging Cyber Threats",
-            "content": "The SANS Internet Storm Center has released its latest Stormcast podcast, providing insights into emerging cyber threats and security trends. This episode, dated November 12, 2025, continues to offer valuable analysis for cybersecurity professionals. The InfoCON remains at green, indicating a stable threat level. However, the podcast discusses various vulnerabilities and exploits that are gaining traction. Staying informed through such updates is crucial for IT security teams to anticipate potential threats and safeguard their systems. As cyber threats evolve, timely information becomes an essential tool for effective cybersecurity defense strategies.",
+            "date": "Nov 13 2025",
+            "title": "ISC Stormcast Highlights Cybersecurity Developments",
+            "content": "The SANS Internet Storm Center&#x27;s latest Stormcast for November 13, 2025, provides a comprehensive overview of recent cybersecurity incidents and trends. The podcast covers various topics, including the latest vulnerabilities and patches, threat intelligence updates, and insights into ongoing cyber campaigns. This resource is crucial for cybersecurity professionals seeking to stay informed about the evolving threat landscape. The InfoCON level remains at green, indicating a stable threat environment. Regular updates like these are essential for maintaining awareness and preparedness against potential cyber threats. The Stormcast serves as a valuable tool for both proactive defense strategies and reactive incident response planning.",
             "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32470"
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32476"
         },
         {
             "date": "Nov 12 2025",
-            "title": "Rhadamanthys Infostealer Operation Disrupted by Server Access Loss",
-            "content": "The Rhadamanthys infostealer operation has faced a significant disruption as many users of the malware-as-a-service have lost access to their servers. This development marks a setback for cybercriminals who rely on Rhadamanthys for data theft and other malicious activities. The disruption suggests potential internal issues or external interventions, impacting the service&#x27;s reliability. For cybersecurity professionals, this highlights the importance of monitoring such disruptions as they can lead to shifts in cybercriminal tactics. Understanding these dynamics helps in anticipating future threats and improving defensive measures against infostealers and similar threats.",
+            "title": "CitrixBleed 2 Zero-Day Bug Exploited by APT",
+            "content": "A newly identified zero-day vulnerability, dubbed &#x27;CitrixBleed 2,&#x27; is causing significant concern as it is actively exploited by an advanced persistent threat (APT) group. The vulnerability affects Citrix NetScaler (CVE-2025-5777) and the Cisco Identity Service Engine (CVE-2025-20337), highlighting a growing adversary interest in identity and access management systems. This development underscores the critical need for organizations to prioritize patch management and vulnerability assessment to protect sensitive data. The exploitation of these bugs could lead to unauthorized access and potentially devastating data breaches. Cybersecurity professionals must remain vigilant and ensure that all systems are up-to-date with the latest security patches.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/citrixbleed-2-cisco-zero-day-bugs"
+        },
+        {
+            "date": "Nov 12 2025",
+            "title": "Google Targets &#x27;Lighthouse&#x27; Phishing-as-a-Service Operation",
+            "content": "Google is taking decisive action against the &#x27;Lighthouse&#x27; phishing-as-a-service operation, which has been linked to widespread smishing campaigns. Operated by a group known as the &quot;Smishing Triad,&quot; this phishing kit has been used to send fraudulent unpaid toll and package tracking text messages. The scale and sophistication of these attacks highlight the increasing threat posed by phishing-as-a-service platforms. For cybersecurity professionals, this case emphasizes the importance of robust email and SMS filtering solutions to protect users from such scams. Google&#x27;s intervention aims to disrupt the infrastructure supporting these cybercriminal activities, reducing the risk to potential victims.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/threat-intelligence/google-dim-lighthouse-phishing-as-a-service"
+        },
+        {
+            "date": "Nov 12 2025",
+            "title": "SmartApeSG Campaign Utilizes ClickFix for Malware Distribution",
+            "content": "The SmartApeSG campaign is leveraging a ClickFix page to distribute the NetSupport RAT, a remote access tool used for malicious purposes. This campaign is part of a broader trend where cybercriminals exploit legitimate services to deliver malware. The use of ClickFix pages illustrates the evolving tactics employed by threat actors to bypass traditional security measures. For cybersecurity experts, understanding these tactics is crucial for developing effective countermeasures. The campaign&#x27;s success in spreading the NetSupport RAT highlights the need for continuous monitoring and advanced threat detection capabilities within organizations. Staying informed about such campaigns can aid in preemptive defense strategies.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32474"
+        },
+        {
+            "date": "Nov 12 2025",
+            "title": "Google Sues to Dismantle &#x27;Lighthouse&#x27; Phishing Platform",
+            "content": "Google has filed a lawsuit aimed at dismantling the &#x27;Lighthouse&#x27; phishing-as-a-service platform, which has been implicated in SMS phishing attacks targeting U.S. toll systems and the Postal Service. This platform has facilitated the theft of credit card information by impersonating legitimate entities, posing a significant threat to consumers and businesses alike. The legal action taken by Google reflects a broader effort to combat cybercrime by targeting the infrastructure that supports these illicit activities. For security professionals, the case underscores the importance of cross-industry collaboration in tackling phishing and other cyber threats. Google&#x27;s proactive approach may set a precedent for future actions against similar platforms.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/rhadamanthys-infostealer-disrupted-as-cybercriminals-lose-server-access/"
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/google-sues-to-dismantle-chinese-phishing-platform-behind-us-toll-scams/"
         }
     ],
     "aiShorts": [
         {
-            "date": "Nov 12 2025",
-            "title": "VEIR Leverages Superconductor Technology for Data Center Innovation",
-            "content": "Massachusetts-based startup VEIR, backed by Microsoft, is introducing superconductor technology originally developed for long-distance transmission lines to address challenges in data center design. By applying this technology, VEIR aims to enhance efficiency and performance, a critical need as data centers face increasing demands. This innovation could significantly reduce energy consumption and cooling requirements, offering a more sustainable solution for the growing data infrastructure. For AI and security professionals, this development signals a shift towards more advanced and efficient data handling capabilities. As data centers are pivotal in AI processing and storage, improvements in their design have far-reaching implications for the entire tech industry.",
+            "date": "Nov 13 2025",
+            "title": "Y Combinator Backs &#x27;Chad: The Brainrot IDE&#x27; for Vibe Coding Enthusiasts",
+            "content": "A new product called &#x27;Chad: The Brainrot IDE&#x27; has emerged from the Y Combinator startup accelerator, combining vibe coding with unconventional activities like gambling, Tinder, and gaming. Initially perceived as a hoax due to its unique concept, the tool aims to integrate leisure activities with coding tasks, potentially altering the way developers engage with their work. The product&#x27;s launch underscores the growing trend of blending entertainment with productivity in tech development. For AI professionals, this represents a shift towards more personalized and engaging coding environments. It also raises questions about the future of developer tools and their role in balancing work and play.",
             "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/12/microsoft-backed-veir-targets-data-centers-for-its-megawatt-class-superconductors/"
+            "sourceUrl": "https://techcrunch.com/2025/11/12/chad-the-brainrot-ide-is-a-new-y-combinator-backed-product-so-wild-people-thought-it-was-fake/"
         },
         {
             "date": "Nov 12 2025",
-            "title": "AI-Driven Solutions Simplify VMware Cloud Migrations",
-            "content": "The landscape of VMware-to-cloud migrations is evolving with the integration of agentic AI, providing a more streamlined approach for enterprise IT teams. Historically, these migrations posed challenges due to the complexity of mapping dependencies and updating legacy applications. However, AI now assists in automating these processes, reducing the workload and risk for CIOs. This advancement is particularly significant for businesses seeking to modernize their IT infrastructure without extensive manual intervention. For AI professionals, this represents a growing trend of AI applications in optimizing enterprise operations, potentially leading to more efficient and cost-effective IT solutions.",
-            "source": "Artificial intelligence – MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2025/11/12/1124919/improving-vmware-migration-workflows-with-agentic-ai/"
-        },
-        {
-            "date": "Nov 12 2025",
-            "title": "Figma Expands Presence in India to Tap Developer Market",
-            "content": "Design platform Figma has opened a new office in Bengaluru, India, as part of its strategy to strengthen ties with the Indian market and attract more developers. This expansion reflects Figma&#x27;s ambition to grow beyond its traditional design roots and engage with a broader tech audience. By establishing a presence in one of the world&#x27;s fastest-growing tech hubs, Figma aims to leverage local talent and innovation. For professionals in AI and design, this move underscores the importance of regional markets in global tech strategies, highlighting opportunities for collaboration and growth in emerging economies.",
+            "title": "ElevenLabs Partners with Celebrities for AI-Generated Voices",
+            "content": "ElevenLabs has reached agreements with actors Michael Caine and Matthew McConaughey to create AI-generated versions of their voices. This collaboration marks a significant step in the use of artificial intelligence for entertainment purposes, allowing for the replication of celebrity voices in various media forms. The development highlights the increasing sophistication of AI audio technologies and their potential impact on the entertainment industry. For AI professionals, this partnership exemplifies the growing demand for AI-driven content creation and the ethical considerations surrounding voice replication. It also indicates a broader acceptance of AI in creative fields.",
             "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/12/figma-bets-on-india-to-expand-beyond-design/"
+            "sourceUrl": "https://techcrunch.com/2025/11/12/elevenlabs-strike-deals-with-celebs-to-create-ai-audio/"
         },
         {
             "date": "Nov 12 2025",
-            "title": "Google Launches Private AI Compute for Enhanced Cloud Privacy",
-            "content": "Google has unveiled Private AI Compute, a cloud-based system designed to offer the privacy benefits of on-device AI while maintaining cloud capabilities. This new platform uses advanced Gemini models and robust security measures to deliver faster and more secure AI experiences. By ensuring data privacy without sacrificing performance, Google addresses a critical concern for businesses and individuals alike. For AI and security experts, this development highlights the ongoing efforts to balance privacy with technological advancement, a key consideration in the deployment of AI solutions.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/google-reveals-its-own-version-of-apple-ai-cloud/"
-        },
-        {
-            "date": "Nov 12 2025",
-            "title": "U.S. Leads in AI Model Funding, But Application Layer Competition Heats Up",
-            "content": "According to Accel&#x27;s 2025 Globalscape report, the U.S. maintains a significant lead over Europe in funding large AI models. However, the competition is more balanced at the application layer, where global interest and investment are rising. This dynamic suggests a shift in focus towards developing practical applications of AI, rather than just foundational models. For AI professionals, this trend indicates a growing need for expertise in application development and deployment. Understanding these market shifts can help professionals and organizations strategically position themselves in the evolving AI landscape.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/11/the-global-race-for-the-ai-app-layer-is-still-on/"
-        },
-        {
-            "date": "Nov 12 2025",
-            "title": "Baidu&#x27;s New AI Model Claims to Surpass GPT-5 and Gemini",
-            "content": "Baidu Inc., China&#x27;s leading search engine company, has unveiled a new artificial intelligence model that it claims outperforms Google&#x27;s and OpenAI&#x27;s latest offerings in vision-related benchmarks. This development is significant as Baidu&#x27;s model reportedly achieves superior performance using fewer computational resources. For AI professionals, this could signal a shift in the competitive landscape, highlighting the potential for more efficient AI models. The implications for industries relying on AI for vision tasks are substantial, potentially reducing costs and increasing accessibility. As AI continues to evolve, innovations like Baidu&#x27;s model could redefine benchmarks for performance and efficiency in the field.",
+            "title": "Weibo&#x27;s VibeThinker-1.5B Surpasses DeepSeek-R1 with Cost-Effective AI Model",
+            "content": "Weibo&#x27;s AI division has unveiled VibeThinker-1.5B, a 1.5 billion parameter large language model that has outperformed DeepSeek-R1 on a modest $7,800 post-training budget. This open-source AI model demonstrates China&#x27;s advancements in developing cost-efficient yet powerful AI technologies. For professionals in the AI sector, this achievement showcases the potential for high-performance models that do not require extensive financial resources, making advanced AI more accessible. It also emphasizes the competitive landscape of AI development, where efficiency and scalability are key factors.",
             "source": "AI | VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/baidu-just-dropped-an-open-source-multimodal-ai-that-it-claims-beats-gpt-5"
+            "sourceUrl": "https://venturebeat.com/ai/weibos-new-open-source-ai-model-vibethinker-1-5b-outperforms-deepseek-r1-on"
+        },
+        {
+            "date": "Nov 12 2025",
+            "title": "German Court Finds OpenAI&#x27;s ChatGPT in Violation of Copyright Law",
+            "content": "A German court has ruled that OpenAI&#x27;s ChatGPT infringed on the nation&#x27;s copyright laws by utilizing licensed musical works for training without obtaining permission. This legal decision mandates OpenAI to pay damages, highlighting the ongoing challenges AI companies face regarding intellectual property rights. For AI professionals, this case underscores the importance of developing ethical AI models that respect copyright laws and the potential legal ramifications of failing to do so. It also signals the need for clearer guidelines and frameworks in the use of copyrighted material in AI training.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/12/court-rules-that-openai-violated-german-copyright-law-ordered-it-to-pay-damages/"
+        },
+        {
+            "date": "Nov 12 2025",
+            "title": "Startups Seek Rapid Innovation with OpenAI&#x27;s Support",
+            "content": "OpenAI&#x27;s head of startups, Marc Manara, notes that AI-native companies are achieving significant growth, with some reaching $200 million in annual recurring revenue. The acceleration of product cycles from weeks to days illustrates the fast-paced evolution of AI technologies. OpenAI&#x27;s involvement is pivotal in this transformation, providing the tools and support necessary for startups to thrive. For AI professionals, this trend highlights the need for agility and adaptability in developing AI solutions. It also points to the increasing influence of AI in driving business innovation and the strategic role of partnerships in fostering growth.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/podcast/what-startups-want-from-openai/"
         }
     ],
     "articles": {
@@ -274,6 +253,36 @@ var websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2025-12480",
+            "dateAdded": "Nov 12, 2025",
+            "vendor": "Gladinet Triofox",
+            "description": "Gladinet Triofox contains an improper access control vulnerability that allows access to initial setup pages even after setup is complete.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-12480"
+        },
+        {
+            "cveId": "CVE-2025-62215",
+            "dateAdded": "Nov 12, 2025",
+            "vendor": "Microsoft Windows",
+            "description": "Microsoft Windows Kernel contains a race condition vulnerability that allows a local attacker with low-level privileges to escalate privileges. Successful exploitation of this vulnerability could enab",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-62215"
+        },
+        {
+            "cveId": "CVE-2025-9242",
+            "dateAdded": "Nov 12, 2025",
+            "vendor": "WatchGuard Firebox",
+            "description": "WatchGuard Firebox contains an out-of-bounds write vulnerability in the OS iked process that may allow a remote unauthenticated attacker to execute arbitrary code.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-9242"
+        },
         {
             "cveId": "CVE-2025-21042",
             "dateAdded": "Nov 10, 2025",
