@@ -4,90 +4,76 @@
 var websiteContent = {
     "cyberShorts": [
         {
-            "date": "Nov 13 2025",
-            "title": "Android-Based Digital Frames Found Downloading Malware",
-            "content": "Android-based digital picture frames from Uhale have been discovered to contain critical security vulnerabilities that allow them to download and execute malware upon booting. These vulnerabilities pose a significant threat as they can be exploited remotely without user interaction. The issue highlights the ongoing challenges in securing Internet of Things (IoT) devices, which are often overlooked in cybersecurity planning. For security professionals, this incident underscores the importance of robust security measures and regular updates for all connected devices. The vulnerabilities in these frames could potentially lead to unauthorized access and data breaches, emphasizing the need for vigilance in device management and network security.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/popular-android-based-photo-frames-download-malware-on-boot/"
+            "date": "Dec 03 2025",
+            "title": "Cybersecurity Predictions: What to Expect by 2026",
+            "content": "The Dark Reading Virtual Event offers a forward-looking perspective on the cybersecurity landscape for 2026. Experts discussed potential threats, emerging technologies, and strategic defenses that organizations should prepare for in the coming years. The event highlighted the increasing sophistication of cyber threats and the necessity for adaptive security measures. As digital transformation accelerates, security professionals are urged to focus on cloud security, AI-driven defenses, and zero-trust architectures. The insights shared are crucial for professionals aiming to stay ahead of evolving cyber risks and to safeguard critical infrastructures.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/events/dark-reading-virtual-event-cybersecurity-outlook-2026"
         },
         {
-            "date": "Nov 13 2025",
-            "title": "NHS Probes Possible Oracle EBS Breach Amid Hacker Claims",
-            "content": "The UK&#x27;s National Health Service (NHS) is currently investigating claims of a hack involving Oracle E-Business Suite (EBS), with hackers naming over 40 alleged victims. The NHS is collaborating with the National Cyber Security Centre to assess the situation and mitigate any potential risks. This incident is part of a broader trend of cyberattacks targeting critical infrastructure and sensitive data, highlighting the vulnerabilities within large and complex IT systems. For cybersecurity experts, this serves as a reminder of the importance of comprehensive security audits and incident response plans. The potential breach could have serious implications for data privacy and operational continuity within the healthcare sector.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/nhs-investigating-oracle-ebs-hack-claims-as-hackers-name-over-40-alleged-victims/"
-        },
-        {
-            "date": "Nov 13 2025",
-            "title": "High-Risk Vulnerability in WatchGuard Firebox Actively Exploited",
-            "content": "A critical vulnerability, identified as CVE-2025-9242, has been found in WatchGuard Firebox devices, allowing for unauthenticated remote code execution. With a CVSS score of 9.3, this flaw is being actively exploited in the wild, posing a significant risk to organizations using these firewalls. The vulnerability highlights the urgent need for immediate patching and vigilant security practices to prevent unauthorized access and potential data breaches. For IT security professionals, this incident emphasizes the importance of staying informed about vulnerabilities and implementing timely updates. The exploitation of such vulnerabilities can lead to severe consequences, including network compromise and data theft.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/critical-watchguard-firebox-vulnerability-exploited-in-attacks/"
-        },
-        {
-            "date": "Nov 13 2025",
-            "title": "CISA Urges Federal Agencies to Patch Cisco Vulnerabilities",
-            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has issued a warning to federal agencies to urgently patch two critical vulnerabilities in Cisco Adaptive Security Appliances (ASA) and Firepower devices. These vulnerabilities are being actively exploited, increasing the risk of unauthorized access and potential network breaches. The advisory underscores the critical nature of timely patch management in maintaining secure IT environments. For cybersecurity professionals, this highlights the importance of proactive vulnerability management and the need for continuous monitoring of security advisories. The exploitation of these flaws poses a threat to the integrity and security of federal networks, necessitating immediate action.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-warns-feds-to-fully-patch-actively-exploited-cisco-flaws/"
-        },
-        {
-            "date": "Nov 13 2025",
-            "title": "Accelerating Threats Demand Machine-Speed Security in 2026",
-            "content": "As we approach 2026, the pace of cyber threats is outstripping the speed of traditional patching processes, with 50 to 61 percent of newly disclosed vulnerabilities being exploited within 48 hours. This rapid weaponization of vulnerabilities demands a shift towards machine-speed security solutions. The trend is driven by the increasing sophistication of cyberattacks and the sheer volume of vulnerabilities, as evidenced by the CISA Known Exploited Vulnerabilities Catalog. For security professionals, this means adopting advanced technologies like AI and automation to enhance threat detection and response capabilities. The evolving landscape necessitates a proactive approach to cybersecurity, focusing on resilience and rapid adaptation to emerging threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/11/when-attacks-come-faster-than-patches.html"
-        },
-        {
-            "date": "Nov 13 2025",
-            "title": "ISC Stormcast Highlights Cybersecurity Developments",
-            "content": "The SANS Internet Storm Center&#x27;s latest Stormcast for November 13, 2025, provides a comprehensive overview of recent cybersecurity incidents and trends. The podcast covers various topics, including the latest vulnerabilities and patches, threat intelligence updates, and insights into ongoing cyber campaigns. This resource is crucial for cybersecurity professionals seeking to stay informed about the evolving threat landscape. The InfoCON level remains at green, indicating a stable threat environment. Regular updates like these are essential for maintaining awareness and preparedness against potential cyber threats. The Stormcast serves as a valuable tool for both proactive defense strategies and reactive incident response planning.",
+            "date": "Nov 14 2025",
+            "title": "ISC Stormcast Highlights Cybersecurity Developments and Threats",
+            "content": "The SANS Internet Storm Center&#x27;s Stormcast for November 14th provides an overview of recent cybersecurity trends and incidents. The podcast covers diverse topics, including the latest vulnerabilities, threat actor activities, and defensive strategies. It serves as a valuable resource for security professionals seeking to understand the current threat landscape and to enhance their defensive capabilities. With InfoCON at green, the update indicates a stable threat level, but vigilance remains essential. The insights offered help organizations anticipate potential risks and refine their security postures accordingly.",
             "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32476"
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32482"
+        },
+        {
+            "date": "Nov 13 2025",
+            "title": "Akira Ransomware Targets Nutanix VMs with Linux Encryptor",
+            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has issued a warning about the Akira ransomware operation, which is now targeting Nutanix AHV virtual machines using a Linux encryptor. This development marks a significant escalation in the ransomware&#x27;s capabilities, potentially impacting organizations relying on Nutanix for virtualization. Security professionals are advised to implement robust backup strategies and to apply patches to mitigate this threat. This alert underscores the importance of securing virtual environments against evolving ransomware tactics, which pose a substantial risk to business continuity and data integrity.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-akira-ransomware-linux-encryptor-targeting-nutanix-vms/"
+        },
+        {
+            "date": "Nov 13 2025",
+            "title": "IndonesianFoods Worm Overwhelms npm with Massive Package Spam",
+            "content": "A new worm, dubbed &#x27;IndonesianFoods,&#x27; is wreaking havoc on the npm registry by generating new packages every seven seconds, leading to over 100,000 spam packages. This self-propagating threat exploits npm&#x27;s package creation system, overwhelming the platform with junk data. Security professionals and developers are urged to be cautious when downloading packages and to verify the integrity of dependencies. The incident highlights the vulnerabilities within open-source ecosystems and the need for enhanced security measures to protect against such disruptive attacks. This serves as a reminder of the importance of maintaining vigilance in software supply chain security.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-indonesianfoods-worm-floods-npm-with-100-000-packages/"
+        },
+        {
+            "date": "Nov 13 2025",
+            "title": "Russian Hackers Exploit Fake Travel Sites to Steal Payment Data",
+            "content": "A sophisticated phishing campaign by Russian hackers has resulted in the creation of over 4,300 fake travel websites aimed at stealing payment data from hotel guests. This operation, identified by Netcraft, targets the hospitality industry by mimicking legitimate booking platforms. Security experts emphasize the need for enhanced awareness and verification processes among consumers to avoid falling victim to such scams. For security professionals, this attack underscores the importance of robust anti-phishing measures and the continuous monitoring of domain registrations. The campaign highlights the persistent threat posed by phishing in the digital economy, particularly in sectors handling sensitive customer data.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/11/russian-hackers-create-4300-fake-travel.html"
         }
     ],
     "aiShorts": [
         {
             "date": "Nov 13 2025",
-            "title": "Microsoft Leverages OpenAI to Tackle Chip Shortages",
-            "content": "Microsoft is addressing its chip shortage issues by collaborating with OpenAI, leveraging the latter&#x27;s expertise in AI-driven solutions. This partnership aims to optimize chip production processes, potentially reducing reliance on traditional supply chains. For AI professionals, this move highlights the increasing intersection between AI capabilities and hardware manufacturing. The collaboration is expected to enhance efficiency in chip production, which is crucial for sustaining the growth of AI applications. This strategic decision underscores the importance of innovative solutions in overcoming industry-wide challenges.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/13/microsofts-plan-to-fix-its-chip-problem-is-partly-to-let-openai-do-the-heavy-lifting/"
+            "title": "Venture Capitalists Shift Investment Strategies in AI Startups",
+            "content": "The landscape for AI startup investments is undergoing significant changes as venture capitalists adjust their strategies. Traditional metrics such as growth rates and product features are being reevaluated, reflecting a more flexible approach to funding. This shift is crucial for AI professionals as it indicates a broader acceptance of innovative and unconventional ideas in the AI sector. The evolving criteria may encourage startups to focus on groundbreaking technologies rather than conforming to established norms. As a result, AI entrepreneurs might find new opportunities for funding, fostering a more dynamic and diverse technological ecosystem.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/13/vcs-abandon-old-rules-for-a-funky-time-of-investing-in-ai-startups/"
         },
         {
             "date": "Nov 13 2025",
-            "title": "Milestone Secures $10M to Align AI with Engineering Metrics",
-            "content": "Israeli startup Milestone has successfully raised $10 million in seed funding to develop tools that align AI usage with engineering metrics such as code quality. This funding will enable Milestone to create solutions that provide tangible ROI from AI investments, a critical concern for many businesses. For AI practitioners, this initiative represents a significant step towards quantifying the impact of AI on engineering processes. The focus on metrics and quality assurance could lead to more efficient development cycles and better resource allocation in tech projects.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/13/milestone-raises-10m-to-make-sure-ai-rhymes-with-roi/"
+            "title": "Apple Tightens App Store Guidelines to Protect User Data from AI",
+            "content": "In a significant move to enhance user privacy, Apple has updated its App Store guidelines to restrict apps from sharing personal data with third-party AI systems without explicit user consent. This change underscores Apple&#x27;s commitment to data privacy and security, a critical concern for both developers and users. For AI professionals, this development highlights the increasing regulatory scrutiny on data handling practices, emphasizing the importance of transparency and user trust. Developers will need to adapt their applications to comply with these new rules, which could influence the design and functionality of AI-driven apps.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/13/apples-new-app-review-guidelines-clamp-down-on-apps-sharing-personal-data-with-third-party-ai/"
         },
         {
             "date": "Nov 13 2025",
-            "title": "Anthropic Expands US Presence with $50B Data Center Investment",
-            "content": "Anthropic is embarking on its largest US expansion to date with a $50 billion investment in new data centers located in Texas and New York. These facilities, developed in partnership with Fluidstack, will be tailored to meet the demands of advanced AI workloads, emphasizing power efficiency and computational capacity. For AI professionals, this expansion signifies a substantial increase in available resources for AI research and development. The investment reflects the growing need for robust infrastructure to support cutting-edge AI applications and underscores the strategic importance of US-based data centers.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/new-data-centre-projects-mark-anthropic-biggest-us-expansion/"
-        },
-        {
-            "date": "Nov 12 2025",
-            "title": "Baidu&#x27;s ERNIE Model Outperforms GPT and Gemini in Key Benchmarks",
-            "content": "Baidu&#x27;s latest ERNIE model has surpassed GPT and Gemini in several critical benchmarks, showcasing its efficiency in handling multimodal data. This model targets enterprise data sources often overlooked by text-centric AI, including engineering schematics and medical scans. For AI and enterprise professionals, ERNIE&#x27;s performance highlights the potential for AI models to unlock insights from complex data types. The success of ERNIE underscores the importance of developing AI systems capable of processing diverse data inputs, which can lead to more comprehensive and actionable business insights.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/baidu-ernie-multimodal-ai-gpt-and-gemini-benchmarks/"
-        },
-        {
-            "date": "Nov 12 2025",
-            "title": "WisdomAI Secures $50M for Advanced Data Analytics Solutions",
-            "content": "WisdomAI has raised $50 million in funding, led by Kleiner and Nvidia, to advance its AI-driven data analytics platform. This platform is designed to extract business insights from structured, unstructured, and &quot;dirty&quot; data, which includes data with errors or inconsistencies. For data scientists and AI professionals, WisdomAI&#x27;s approach offers a powerful tool for deriving value from imperfect datasets. The investment reflects a growing demand for analytics solutions that can handle real-world data challenges, emphasizing the need for flexible and robust AI tools in data-driven decision-making processes.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/12/ai-data-startup-wisdomai-has-raised-another-50m-led-by-kleiner-nvidia/"
+            "title": "Baidu&#x27;s ERNIE 5 Surpasses GPT-5 in AI Performance Metrics",
+            "content": "Baidu has introduced its latest AI model, ERNIE 5, which outperforms OpenAI&#x27;s GPT-5 in several key areas, including document understanding. This unveiling comes shortly after OpenAI&#x27;s update to GPT-5.1, which focused on improving efficiency and user interaction. For AI professionals, Baidu&#x27;s advancements represent a significant competitive development in the AI landscape, particularly in the realm of natural language processing. The performance of ERNIE 5 could influence the direction of future AI research and applications, potentially setting new standards for AI capabilities and driving further innovation in the field.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/ai/baidu-unveils-proprietary-ernie-5-beating-gpt-5-performance-on-charts"
         },
         {
             "date": "Nov 13 2025",
-            "title": "Y Combinator Backs &#x27;Chad: The Brainrot IDE&#x27; for Vibe Coding Enthusiasts",
-            "content": "A new product called &#x27;Chad: The Brainrot IDE&#x27; has emerged from the Y Combinator startup accelerator, combining vibe coding with unconventional activities like gambling, Tinder, and gaming. Initially perceived as a hoax due to its unique concept, the tool aims to integrate leisure activities with coding tasks, potentially altering the way developers engage with their work. The product&#x27;s launch underscores the growing trend of blending entertainment with productivity in tech development. For AI professionals, this represents a shift towards more personalized and engaging coding environments. It also raises questions about the future of developer tools and their role in balancing work and play.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/12/chad-the-brainrot-ide-is-a-new-y-combinator-backed-product-so-wild-people-thought-it-was-fake/"
+            "title": "Upwork Study Reveals AI Agents Need Human Collaboration to Succeed",
+            "content": "A recent study by Upwork has found that AI agents, even those powered by advanced language models, struggle to complete professional tasks independently. However, when paired with human collaborators, these AI agents perform significantly better. This finding is crucial for AI professionals as it emphasizes the importance of human-AI collaboration in achieving optimal results. The study suggests that while AI technology continues to advance, human oversight and interaction remain vital components in leveraging AI&#x27;s full potential. This insight could guide future development and deployment strategies, ensuring AI tools are used effectively in professional settings.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/ai/upwork-study-shows-ai-agents-excel-with-human-partners-but-fail"
+        },
+        {
+            "date": "Nov 13 2025",
+            "title": "OpenAI&#x27;s New Model Offers Transparency into AI Operations",
+            "content": "OpenAI has developed an experimental large language model designed to be more transparent, addressing the common issue of AI models functioning as &quot;black boxes.&quot; This innovation is significant as it provides insights into the inner workings of AI, which have traditionally been opaque. For AI researchers and developers, this transparency could facilitate a better understanding of model behavior, leading to improved AI systems and more informed decision-making. By shedding light on AI processes, OpenAI&#x27;s model may also help build trust in AI technologies, encouraging broader adoption and integration across various industries.",
+            "source": "MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2025/11/13/1127914/openais-new-llm-exposes-the-secrets-of-how-ai-really-works/"
         }
     ],
     "articles": {
