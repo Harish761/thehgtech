@@ -5,38 +5,38 @@ var websiteContent = {
     "cyberShorts": [
         {
             "date": "Nov 14 2025",
-            "title": "Oracle Hack Compromises Data of Nearly 10,000 Washington Post Employees",
-            "content": "Cybercriminals have targeted the Washington Post, impacting nearly 10,000 employees by stealing personal information. The attackers attempted to extort the media company following the data breach, which was linked to vulnerabilities in Oracle systems. This incident underscores the ongoing threat of cyber extortion and the importance of robust data protection measures. For cybersecurity professionals, it highlights the need for continuous monitoring and patch management to safeguard sensitive employee data. The breach serves as a reminder of the potential vulnerabilities in widely-used enterprise software and the importance of proactive security strategies.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/washington-post-says-nearly-10000-employees-impacted-by-oracle-hack/"
-        },
-        {
-            "date": "Nov 14 2025",
-            "title": "Akira Ransomware Group Secures $244 Million Through Exploits",
-            "content": "The Akira ransomware group has generated $244 million in ransom proceeds, exploiting vulnerabilities in SonicWall and encrypting Nutanix Acropolis Hypervisor (AHV) VM disk files. This development illustrates the financial scale and impact of ransomware attacks in the current cybersecurity landscape. For security professionals, it emphasizes the critical need for timely vulnerability assessments and robust backup strategies to mitigate the risk of ransomware. The group&#x27;s success also highlights the importance of cross-industry collaboration to identify and neutralize such threats effectively.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/akira-ransomware-group-made-244-million-in-ransom-proceeds/"
-        },
-        {
-            "date": "Nov 14 2025",
-            "title": "Google Revises Android Developer Registration Rules Amid Backlash",
-            "content": "Google has reversed its decision to implement stringent identity verification rules for all Android developers, following feedback from the developer community. Instead, the company plans to introduce accounts for limited app distribution and allow installations from unverified developers. This move is significant for developers and security professionals, as it balances security with flexibility in app distribution. The change reflects Google&#x27;s responsiveness to developer concerns while maintaining a focus on user security. It also highlights ongoing challenges in managing app store ecosystems and ensuring safe software distribution.",
+            "title": "Logitech Confirms Data Breach Following Clop Ransomware Attack",
+            "content": "Logitech, a leading manufacturer of computer peripherals, has confirmed a data breach following a cyberattack by the Clop extortion gang. The breach involved the theft of data from their Oracle E-Business Suite, an attack that was initially carried out in July. This incident highlights the ongoing threat posed by ransomware groups targeting enterprise software systems. For cybersecurity professionals, this breach underscores the importance of securing enterprise resource planning (ERP) platforms against such attacks. The incident also raises concerns about the potential exposure of sensitive data and the need for robust incident response strategies. As ransomware tactics evolve, organizations must remain vigilant and proactive in safeguarding their digital assets.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/google/google-backpedals-on-new-android-developer-registration-rules/"
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/logitech-confirms-data-breach-after-clop-extortion-attack/"
         },
         {
             "date": "Nov 14 2025",
-            "title": "Amazon Uncovers 150,000 NPM Packages in Malicious Campaign",
-            "content": "Amazon has detected a massive campaign involving 150,000 NPM packages, driven by a financially motivated threat actor using worm-powered automation. This campaign was part of a coordinated effort to farm tea.xyz tokens, showcasing the evolving tactics of cybercriminals. For cybersecurity professionals, the discovery emphasizes the need for vigilant monitoring of software supply chains and automated systems. The scale of the attack highlights the potential vulnerabilities in open-source ecosystems and the importance of implementing robust security measures to protect against similar threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/amazon-detects-150000-npm-packages-in-worm-powered-campaign/"
+            "title": "Akira Ransomware Targets Nutanix Virtual Machines in New Campaign",
+            "content": "The Akira ransomware group has recently intensified its efforts by targeting Nutanix virtual machines, posing a significant threat to critical sectors. This development is part of the group&#x27;s ongoing experimentation with new tools, vulnerabilities, and attack surfaces. The targeting of Nutanix VMs signifies a strategic shift, aiming at disrupting operations in sectors that rely heavily on virtualization technologies. For security professionals, this serves as a stark reminder of the need to secure virtual environments and ensure they are resilient against ransomware attacks. The implications of such attacks are severe, potentially leading to substantial operational disruptions and financial losses. Organizations must prioritize strengthening their defenses against these evolving ransomware strategies.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/threat-intelligence/akira-raas-nutanix-vms-critical-orgs"
         },
         {
             "date": "Nov 14 2025",
-            "title": "Ransomware Ecosystem Faces Fragmentation as LockBit Resurfaces",
-            "content": "The ransomware landscape has reached unprecedented fragmentation, with 85 active groups and 1,590 victims disclosed across 85 leak sites in Q3 2025. Despite increased law enforcement efforts, 14 new ransomware brands emerged this quarter, indicating sustained high activity. For security professionals, this decentralization presents challenges in threat intelligence and response strategies. The resurgence of groups like LockBit further complicates the landscape, underscoring the need for adaptive and resilient cybersecurity frameworks. This trend highlights the evolving nature of ransomware threats and the necessity for continuous innovation in defense mechanisms.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/11/ransomwares-fragmentation-reaches.html"
+            "title": "New Tools Launched to Combat Rising macOS Malware Threats",
+            "content": "In response to the growing threat of malware targeting macOS, new security tools have been introduced, including a public dataset and a platform-agnostic analysis tool. These tools aim to enhance the detection and mitigation of Apple-targeted malware, an area that experts believe has been historically under-addressed. The introduction of these resources is crucial as macOS continues to gain popularity, making it an increasingly attractive target for cybercriminals. For security professionals, these tools provide valuable assets in the ongoing battle against malware, offering enhanced capabilities to identify and neutralize threats. The initiative reflects a broader industry effort to close the security gap and protect macOS users from sophisticated cyber threats.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/new-security-tools-target-growing-macos-threats"
+        },
+        {
+            "date": "Nov 14 2025",
+            "title": "Streamlined Containers Aim to Reduce Software Vulnerabilities",
+            "content": "In an effort to mitigate common vulnerabilities in software containers, several companies are adopting a streamlined approach to container development. Traditional methods often result in bloated containers filled with unnecessary components, increasing the attack surface. By focusing on creating leaner, more efficient containers, these companies aim to enhance security and reduce the risk of exploitation. For IT and security professionals, this shift emphasizes the importance of minimizing complexity and potential vulnerabilities in containerized environments. The move towards hardened containers is expected to improve overall software security and reliability, providing a more robust foundation for deploying applications in cloud environments.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/application-security/hardened-containers-eliminate-common-source-vulnerabilities"
+        },
+        {
+            "date": "Nov 14 2025",
+            "title": "Massive Token Farming Campaign Floods NPM Registry with Malicious Packages",
+            "content": "A recent attack has inundated the NPM registry with 150,000 malicious packages, part of a self-replicating campaign targeting tokens for the tea.xyz protocol. This incident highlights the vulnerabilities within software supply chains, as attackers exploit package repositories to distribute malicious code. The scale of this attack underscores the necessity for developers and security teams to implement stringent monitoring and validation processes for third-party packages. For professionals in the field, this serves as a critical reminder of the potential risks associated with open-source software and the importance of maintaining rigorous security practices. The incident calls for enhanced scrutiny and protective measures to safeguard against similar threats in the future.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/application-security/150000-packages-flood-npm-registry-token-farming"
         },
         {
             "date": "Dec 03 2025",
@@ -44,50 +44,43 @@ var websiteContent = {
             "content": "The Dark Reading Virtual Event offers a forward-looking perspective on the cybersecurity landscape for 2026. Experts discussed potential threats, emerging technologies, and strategic defenses that organizations should prepare for in the coming years. The event highlighted the increasing sophistication of cyber threats and the necessity for adaptive security measures. As digital transformation accelerates, security professionals are urged to focus on cloud security, AI-driven defenses, and zero-trust architectures. The insights shared are crucial for professionals aiming to stay ahead of evolving cyber risks and to safeguard critical infrastructures.",
             "source": "darkreading",
             "sourceUrl": "https://www.darkreading.com/events/dark-reading-virtual-event-cybersecurity-outlook-2026"
-        },
-        {
-            "date": "Nov 14 2025",
-            "title": "ISC Stormcast Highlights Cybersecurity Developments and Threats",
-            "content": "The SANS Internet Storm Center&#x27;s Stormcast for November 14th provides an overview of recent cybersecurity trends and incidents. The podcast covers diverse topics, including the latest vulnerabilities, threat actor activities, and defensive strategies. It serves as a valuable resource for security professionals seeking to understand the current threat landscape and to enhance their defensive capabilities. With InfoCON at green, the update indicates a stable threat level, but vigilance remains essential. The insights offered help organizations anticipate potential risks and refine their security postures accordingly.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32482"
         }
     ],
     "aiShorts": [
         {
-            "date": "Nov 14 2025",
-            "title": "Inside the Rise of Harvey: A Legal Associate&#x27;s Journey to Startup Success",
-            "content": "TechCrunch recently explored the rapid ascent of Harvey, a startup co-founded by Winston Weinberg and Gabe Pereyra. The company, started by a first-year legal associate, has quickly become one of Silicon Valley&#x27;s most talked-about ventures. Harvey&#x27;s innovative approach to legal technology has captured significant attention, highlighting the potential for AI-driven solutions in the legal field. For AI and tech professionals, Harvey&#x27;s story underscores the transformative impact of AI across diverse industries, emphasizing the importance of interdisciplinary innovation. The startup&#x27;s success serves as a case study in leveraging AI to address complex challenges within traditional sectors, offering insights into the future of AI-driven entrepreneurship.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/14/inside-harvey-how-a-first-year-legal-associate-built-one-of-silicon-valleys-hottest-startups/"
+            "date": "Nov 15 2025",
+            "title": "OpenAI&#x27;s Financial Ties to Microsoft Unveiled in Leaked Documents",
+            "content": "Recent leaks have disclosed the financial dynamics between OpenAI and Microsoft, highlighting a revenue-sharing agreement that outlines payments made by OpenAI. The documents also shed light on the costs associated with inference, which is critical for operational efficiency in AI models. This financial relationship is significant as it underscores the collaborative efforts between major tech entities to advance AI capabilities. For AI professionals, understanding these partnerships is crucial, as they often drive innovation and resource allocation in the industry. The details also provide insights into the economic factors influencing AI development and deployment strategies.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/14/leaked-documents-shed-light-into-how-much-openai-pays-microsoft/"
         },
         {
             "date": "Nov 14 2025",
-            "title": "Anthropic Unveils AI-Orchestrated Cyber Espionage Threat",
-            "content": "Anthropic has released a report detailing a groundbreaking cyber espionage campaign orchestrated by AI, marking a new era of autonomous threats. The operation, attributed to a Chinese state-sponsored group, showcases the evolving capabilities of AI in executing sophisticated cyber attacks. This development is significant for security professionals, as it highlights the need for advanced countermeasures to address AI-driven threats. The report underscores the importance of enhancing threat intelligence and resilience against AI-enhanced cyber activities, emphasizing the ongoing evolution of cybersecurity challenges in the digital age.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/anthropic-details-cyber-espionage-campaign-orchestrated-by-ai/"
+            "title": "Google and UCLA Enhance AI Reasoning with New Training Method",
+            "content": "Google Cloud, in collaboration with UCLA researchers, has introduced a novel reinforcement learning framework designed to enhance the reasoning abilities of smaller AI models. This method, termed Supervised Reinforcement Learning (SRL), reformulates complex problem-solving into sequences of logical steps, significantly improving model performance on multi-step reasoning tasks. The advancement is particularly relevant for AI professionals focused on optimizing model efficiency and tackling complex computational challenges. By enabling smaller models to perform sophisticated reasoning, this approach could democratize access to powerful AI capabilities, making advanced AI tools more accessible across various industries.",
+            "source": "AI | VentureBeat",
+            "sourceUrl": "https://venturebeat.com/ai/googles-new-ai-training-method-helps-small-models-tackle-complex-reasoning"
         },
         {
             "date": "Nov 14 2025",
-            "title": "OpenAI Pilots Group Chat Feature for ChatGPT in Asia Pacific",
-            "content": "OpenAI has launched a pilot group chat feature for ChatGPT, now available in Japan, New Zealand, South Korea, and Taiwan. This new functionality allows users to collaborate directly within the app, expanding the interactive capabilities of ChatGPT. For AI professionals, this development represents a step forward in enhancing user engagement and collaboration through AI platforms. The pilot aims to gather insights into user interactions and refine the group chat experience, offering a glimpse into the future of AI-powered communication tools. This initiative reflects OpenAI&#x27;s commitment to expanding the practical applications of AI in everyday digital interactions.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/14/chatgpt-launches-pilot-group-chats-across-japan-new-zealand-south-korea-and-taiwan/"
+            "title": "Open Source Strategy: A Key to U.S. AI Competitiveness",
+            "content": "Andy Konwinski, co-founder of Databricks, has voiced concerns over the U.S. potentially losing its competitive edge in AI research to China. He advocates for an open-source approach as a strategic move to bolster American innovation and maintain global leadership in AI. This perspective highlights the growing importance of collaborative and transparent research practices in the tech community. For AI professionals, embracing open-source methodologies could lead to accelerated advancements and more robust, secure AI systems. The discussion points to a critical strategic pivot that could influence national policies and the future direction of AI research and development.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/14/databricks-co-founder-argues-us-must-go-open-source-to-beat-china-in-ai/"
         },
         {
             "date": "Nov 14 2025",
-            "title": "Visa&#x27;s AI Commerce Platform Tackles Emerging Merchant Challenges",
-            "content": "Visa has introduced its Intelligent Commerce platform in the Asia Pacific region, designed to address the growing issue of AI agents overwhelming merchant websites. The platform aims to provide a reliable commerce infrastructure that can handle the influx of AI-driven traffic. This initiative is crucial for merchants who may not yet recognize the impact of AI on their online operations. By integrating AI solutions into commerce systems, Visa is helping businesses adapt to the evolving digital landscape. This development highlights the importance of proactive measures in maintaining the integrity and efficiency of e-commerce platforms in an AI-dominated environment.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/visa-ai-commerce-intelligent-commerce-2026/"
+            "title": "Comprehensive Overview of ChatGPT&#x27;s Evolution and Updates",
+            "content": "An extensive timeline detailing the updates and releases of OpenAI&#x27;s ChatGPT has been compiled, providing a comprehensive look at the chatbot&#x27;s development. This ongoing documentation is invaluable for professionals seeking to understand the evolution of AI-powered conversational tools. Each update reflects advancements in natural language processing and user interaction capabilities. For those in the AI field, staying informed about these changes is crucial for leveraging ChatGPT in various applications, from customer service to content creation. The timeline serves as a resource for tracking technological progress and anticipating future enhancements in AI communication tools.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/14/chatgpt-everything-to-know-about-the-ai-chatbot/"
         },
         {
             "date": "Nov 14 2025",
-            "title": "OpenAI Partners with Ireland to Foster AI Innovation",
-            "content": "OpenAI has launched &quot;OpenAI for Ireland,&quot; a strategic partnership with the Irish Government, Dogpatch Labs, and Patch. This initiative aims to empower SMEs, founders, and young innovators to harness AI for productivity and innovation. By fostering a supportive environment for AI development, the partnership seeks to drive the next wave of tech startups in Ireland. For AI professionals, this collaboration signifies a commitment to nurturing talent and advancing AI capabilities within the region. The initiative highlights the role of public-private partnerships in accelerating technological growth and underscores the potential of AI to transform industries and economies.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/openai-for-ireland"
+            "title": "OpenAI Enhances ChatGPT with Customizable Punctuation Features",
+            "content": "OpenAI has announced a solution to a common user concern regarding ChatGPT&#x27;s frequent use of the em dash. Users can now personalize the chatbot&#x27;s output to minimize or eliminate the use of this punctuation mark. This update reflects OpenAI&#x27;s commitment to enhancing user experience by allowing greater customization in AI interactions. For professionals working with AI-driven communication tools, such flexibility is essential for tailoring outputs to specific stylistic or brand guidelines. The update underscores the importance of user feedback in guiding AI development and the ongoing efforts to refine AI systems for diverse applications.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/14/openai-says-its-fixed-chatgpts-em-dash-problem/"
         }
     ],
     "articles": {
@@ -267,6 +260,16 @@ var websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2025-64446",
+            "dateAdded": "Nov 14, 2025",
+            "vendor": "Fortinet FortiWeb",
+            "description": "Fortinet FortiWeb contains a relative path traversal vulnerability that may allow an unauthenticated attacker to execute administrative commands on the system via crafted HTTP or HTTPS requests.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-64446"
+        },
         {
             "cveId": "CVE-2025-12480",
             "dateAdded": "Nov 12, 2025",
