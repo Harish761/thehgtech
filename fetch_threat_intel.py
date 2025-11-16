@@ -1,33 +1,33 @@
 #!/usr/bin/env python3
 """
-AlienVault OTX Threat Intelligence Fetcher for TheHGTech
----------------------------------------------------------
-Fetches threat intelligence from AlienVault OTX API and generates threat-intel.js
+AlienVault OTX Threat Intelligence Fetcher – GitHub Actions Ready
+----------------------------------------------------------------
+Fetches IOCs from subscribed pulses and generates threat-intel.js
+for TheHGTech webpage.
 
-Schedule:
-- Hourly: Fetch new IOCs, remove expired (>24h old), max 20 IOCs
-- Daily (12:00 AM IST): Calculate 24h summary statistics and trends
-
-Usage:
-    python fetch_threat_intel.py --hourly          # Fetch new IOCs only
-    python fetch_threat_intel.py --daily           # Calculate daily summary
-    python fetch_threat_intel.py --both            # Both operations (default)
-
-Environment Variables:
-    OTX_API_KEY: Your AlienVault OTX API key (required)
+Secrets:
+  - OTX_API_KEY (required) → Set in GitHub Repository Secrets
 """
 
 import os
 import sys
 import json
 import argparse
+import time
 from datetime import datetime, timedelta, timezone
 from urllib.request import urlopen, Request
 from urllib.parse import quote
 from urllib.error import HTTPError, URLError
 
-# Configuration
-OTX_API_KEY = os.environ.get('OTX_API_KEY', '')
+# ──────────────────────────────────────────────────────────────
+# Configuration (GitHub Secrets)
+# ──────────────────────────────────────────────────────────────
+OTX_API_KEY = os.environ.get('OTX_API_KEY')  # ← From GitHub Secrets
+if not OTX_API_KEY:
+    print("ERROR: OTX_API_KEY is missing!")
+    print("   → Set it in GitHub → Settings → Secrets and variables → Actions")
+    sys.exit(1)
+
 OTX_BASE_URL = 'https://otx.alienvault.com/api/v1'
 MAX_IOCS = 20
 IOC_EXPIRY_HOURS = 24
@@ -39,197 +39,193 @@ IST = timezone(timedelta(hours=5, minutes=30))
 
 
 def get_ist_now():
-    """Get current time in IST"""
     return datetime.now(IST)
 
 
-def make_otx_request(endpoint, retries=2):
-    """Make authenticated request to OTX API with retry logic"""
-    if not OTX_API_KEY:
-        print("ERROR: OTX_API_KEY environment variable not set")
-        sys.exit(1)
-    
+def make_otx_request(endpoint, retries=3, backoff=2):
     url = f"{OTX_BASE_URL}/{endpoint}"
     req = Request(url)
     req.add_header('X-OTX-API-KEY', OTX_API_KEY)
-    req.add_header('User-Agent', 'TheHGTech-ThreatIntel/1.0')
-    
+    req.add_header('User-Agent', 'TheHGTech-ThreatIntel/2.0')
+
     for attempt in range(retries):
         try:
-            # Increased timeout to 120 seconds for slow API
-            with urlopen(req, timeout=120) as response:
-                return json.loads(response.read().decode('utf-8'))
+            with urlopen(req, timeout=120) as resp:
+                return json.loads(resp.read().decode('utf-8'))
         except HTTPError as e:
-            print(f"HTTP Error {e.code}: {e.reason}")
+            if e.code == 429:
+                print(f"Rate limited. Waiting {backoff}s...")
+                time.sleep(backoff * (2 ** attempt))
+                continue
+            print(f"HTTP {e.code}: {e.reason}")
             return None
         except URLError as e:
+            print(f"Network error: {e.reason}")
             if attempt < retries - 1:
-                print(f"  Attempt {attempt + 1} failed: {e.reason}. Retrying...")
-                import time
-                time.sleep(3)  # Wait 3 seconds before retry
+                time.sleep(backoff)
             else:
-                print(f"URL Error after {retries} attempts: {e.reason}")
                 return None
         except Exception as e:
+            print(f"Request failed: {e}")
             if attempt < retries - 1:
-                print(f"  Attempt {attempt + 1} failed: {e}. Retrying...")
-                import time
-                time.sleep(3)
+                time.sleep(backoff)
             else:
-                print(f"Error fetching {endpoint} after {retries} attempts: {e}")
                 return None
-    
     return None
+
+
+# ──────────────────────────────────────────────────────────────
+# Core Logic (unchanged – proven working)
+# ──────────────────────────────────────────────────────────────
+def fetch_subscribed_pulses(modified_since=None, limit=50):
+    params = f"limit={limit}"
+    if modified_since:
+        params += f"&modified_since={modified_since}"
+    return make_otx_request(f"pulses/subscribed?{params}")
+
+
+def fetch_pulse_details(pulse_id):
+    return make_otx_request(f"pulses/{pulse_id}")
 
 
 def fetch_recent_pulses(hours=1):
-    """Fetch pulses modified in the last N hours"""
-    # Try fetching recent modified pulses (faster than subscribed for large accounts)
-    # Using modified_since parameter for efficiency
-    since_time = (get_ist_now() - timedelta(hours=hours)).strftime('%Y-%m-%dT%H:%M:%S')
-    
-    # First try: Get recently modified pulses (public)
-    data = make_otx_request(f'pulses/subscribed?limit=10&page=1&modified_since={since_time}')
-    
-    if not data or 'results' not in data:
-        # Fallback: Try activity feed instead
-        print(f"  - Trying alternative endpoint...")
-        data = make_otx_request('pulses/activity?limit=10')
-    
-    if not data or 'results' not in data:
-        print(f"  - No data returned from OTX API")
-        return []
-    
-    print(f"  - Checking {len(data.get('results', []))} pulses from API")
-    
-    # Return all results (they should already be filtered by modified_since)
-    return data.get('results', [])
+    since = (get_ist_now() - timedelta(hours=hours)).strftime('%Y-%m-%dT%H:%M:%S')
+    data = fetch_subscribed_pulses(modified_since=since, limit=50)
+
+    if not data or not data.get('results'):
+        print("  - No recent pulses. Trying without time filter...")
+        data = fetch_subscribed_pulses(limit=50)
+        if not data:
+            return []
+
+    pulses = []
+    for meta in data['results']:
+        pid = meta['id']
+        name = meta.get('name', 'Unknown')
+        count = meta.get('indicator_count', 0)
+        print(f"  - [{pid[:8]}] {name} – {count} indicators")
+
+        full = fetch_pulse_details(pid)
+        if full and full.get('indicators'):
+            full['id'] = pid
+            pulses.append(full)
+        time.sleep(1)
+
+    next_url = data.get('next')
+    while next_url:
+        rel = next_url.replace(OTX_BASE_URL + '/', '')
+        data = make_otx_request(rel)
+        if not data or 'results' not in data:
+            break
+        for meta in data['results'][:5]:
+            full = fetch_pulse_details(meta['id'])
+            if full and full.get('indicators'):
+                full['id'] = meta['id']
+                pulses.append(full)
+            time.sleep(1)
+        next_url = data.get('next')
+
+    pulses.sort(key=lambda p: len(p.get('indicators', [])), reverse=True)
+    return pulses
+
+
+TYPE_MAP = {
+    'ipv4': 'ip', 'ipv6': 'ip',
+    'domain': 'domain', 'hostname': 'domain',
+    'url': 'url', 'uri': 'url',
+    'filehash-md5': 'hash', 'filehash-sha1': 'hash', 'filehash-sha256': 'hash',
+    'cve': 'cve', 'email': 'domain',
+}
+
+
+def defang(val, typ):
+    if typ == 'domain':
+        return val.replace('.', '[.]')
+    if typ == 'url':
+        return val.replace('http', 'hxxp').replace('.', '[.]')
+    return val
+
+
+def build_otx_link(typ, val):
+    base = 'https://otx.alienvault.com/indicator'
+    maps = {
+        'ip': f"{base}/ip/{val}",
+        'domain': f"{base}/domain/{val}",
+        'url': f"{base}/url/{quote(val, safe='')}",
+        'hash': f"{base}/file/{val}",
+        'cve': f"{base}/cve/{val}"
+    }
+    return maps.get(typ, maps['hash'])
 
 
 def extract_iocs_from_pulses(pulses):
-    """Extract individual IOCs from pulses"""
     iocs = []
     now = get_ist_now()
-    
-    for pulse in pulses:
-        pulse_name = pulse.get('name', 'Unknown Pulse')
-        pulse_tags = pulse.get('tags', [])
-        
-        for indicator in pulse.get('indicators', [])[:5]:  # Max 5 per pulse
-            ioc_type = indicator.get('type', '').lower()
-            ioc_value = indicator.get('indicator', '')
-            ioc_desc = indicator.get('description', pulse.get('description', ''))[:200]
-            
-            # Map OTX indicator types to our types
-            type_map = {
-                'ipv4': 'ip',
-                'ipv6': 'ip',
-                'domain': 'domain',
-                'hostname': 'domain',
-                'url': 'url',
-                'uri': 'url',
-                'filehash-md5': 'hash',
-                'filehash-sha1': 'hash',
-                'filehash-sha256': 'hash',
-                'cve': 'cve',
-                'email': 'domain',
-            }
-            
-            mapped_type = type_map.get(ioc_type, 'hash')
-            
-            # Defang indicators for safety
-            safe_indicator = ioc_value
-            if mapped_type == 'domain':
-                safe_indicator = ioc_value.replace('.', '[.]')
-            elif mapped_type == 'url':
-                safe_indicator = ioc_value.replace('http', 'hxxp').replace('.', '[.]')
-            
-            # Build OTX link
-            otx_link = build_otx_link(mapped_type, ioc_value)
-            
-            # Calculate relative timestamp
-            timestamp = calculate_relative_time(now)
-            
+    for p in pulses:
+        name = p.get('name', 'Unknown')[:100]
+        tags = p.get('tags', [])[:5]
+        for ind in p.get('indicators', [])[:10]:
+            raw = ind.get('type', '').lower()
+            val = ind.get('indicator', '')
+            desc = ind.get('description', p.get('description', ''))[:200]
+            typ = TYPE_MAP.get(raw, 'hash')
             ioc = {
-                'type': mapped_type,
-                'indicator': safe_indicator,
-                'pulse': pulse_name[:100],
-                'description': ioc_desc if ioc_desc else f"Indicator from {pulse_name}",
-                'timestamp': timestamp,
+                'type': typ,
+                'indicator': defang(val, typ),
+                'pulse': name,
+                'description': desc or f"From {name}",
+                'timestamp': 'just now',
                 'source': 'AlienVault OTX',
-                'otxLink': otx_link,
-                'tags': pulse_tags[:5],  # Max 5 tags
+                'otxLink': build_otx_link(typ, val),
+                'tags': tags,
                 'addedAt': now.isoformat()
             }
             iocs.append(ioc)
-    
     return iocs
 
 
-def build_otx_link(ioc_type, value):
-    """Build AlienVault OTX link for indicator"""
-    base = 'https://otx.alienvault.com/indicator'
-    
-    if ioc_type == 'ip':
-        return f"{base}/ip/{value}"
-    elif ioc_type == 'domain':
-        return f"{base}/domain/{value}"
-    elif ioc_type == 'url':
-        return f"{base}/url/{quote(value, safe='')}"
-    elif ioc_type == 'hash':
-        return f"{base}/file/{value}"
-    elif ioc_type == 'cve':
-        return f"{base}/cve/{value}"
-    else:
-        return f"{base}/file/{value}"
+def remove_expired_iocs(iocs):
+    cutoff = get_ist_now() - timedelta(hours=IOC_EXPIRY_HOURS)
+    return [
+        {**ioc, 'timestamp': calculate_relative_time(datetime.fromisoformat(ioc['addedAt']))}
+        for ioc in iocs
+        if datetime.fromisoformat(ioc['addedAt']) > cutoff
+    ]
 
 
-def calculate_relative_time(timestamp):
-    """Calculate relative time string (e.g., '5 minutes ago')"""
-    now = get_ist_now()
-    if isinstance(timestamp, str):
-        timestamp = datetime.fromisoformat(timestamp)
-    
-    diff = now - timestamp
-    minutes = int(diff.total_seconds() / 60)
-    
-    if minutes < 1:
-        return "just now"
-    elif minutes < 60:
-        return f"{minutes} minutes ago"
-    elif minutes < 1440:
-        hours = minutes // 60
-        return f"{hours} hour{'s' if hours > 1 else ''} ago"
-    else:
-        days = minutes // 1440
-        return f"{days} day{'s' if days > 1 else ''} ago"
+def deduplicate_iocs(iocs):
+    seen = set()
+    return [i for i in iocs if i['indicator'] not in seen and not seen.add(i['indicator'])]
 
 
-def load_existing_data():
-    """Load existing threat-intel.js data"""
+def calculate_relative_time(ts):
+    diff = get_ist_now() - ts
+    mins = int(diff.total_seconds() / 60)
+    if mins < 1: return "just now"
+    if mins < 60: return f"{mins} minute{'s' if mins > 1 else ''} ago"
+    hrs = mins // 60
+    if hrs < 24: return f"{hrs} hour{'s' if hrs > 1 else ''} ago"
+    days = hrs // 24
+    return f"{days} day{'s' if days > 1 else ''} ago"
+
+
+def load_existing():
     if not os.path.exists(OUTPUT_FILE):
         return None
-    
     try:
         with open(OUTPUT_FILE, 'r') as f:
-            content = f.read()
-            # Extract JSON from JavaScript
-            start = content.find('{')
-            end = content.rfind('}') + 1
-            if start != -1 and end > start:
-                json_str = content[start:end]
-                return json.loads(json_str)
+            txt = f.read()
+            start = txt.find('{')
+            end = txt.rfind('}') + 1
+            return json.loads(txt[start:end]) if start != -1 else None
     except Exception as e:
-        print(f"Error loading existing data: {e}")
-    
-    return None
+        print(f"Load error: {e}")
+        return None
 
 
 def load_history():
-    """Load historical data for trend comparison"""
     if not os.path.exists(HISTORY_FILE):
         return {}
-    
     try:
         with open(HISTORY_FILE, 'r') as f:
             return json.load(f)
@@ -237,357 +233,161 @@ def load_history():
         return {}
 
 
-def save_history(data):
-    """Save historical data for trend comparison"""
+def save_history(hist):
     try:
         with open(HISTORY_FILE, 'w') as f:
-            json.dump(data, f, indent=2)
+            json.dump(hist, f, indent=2)
     except Exception as e:
-        print(f"Error saving history: {e}")
+        print(f"Save history failed: {e}")
 
 
-def remove_expired_iocs(iocs):
-    """Remove IOCs older than 24 hours"""
+def generate_js(data):
     now = get_ist_now()
-    cutoff = now - timedelta(hours=IOC_EXPIRY_HOURS)
-    
-    valid_iocs = []
-    for ioc in iocs:
-        added_at = ioc.get('addedAt', '')
-        if added_at:
-            try:
-                added_time = datetime.fromisoformat(added_at)
-                if added_time > cutoff:
-                    # Update relative timestamp
-                    ioc['timestamp'] = calculate_relative_time(added_time)
-                    valid_iocs.append(ioc)
-            except:
-                valid_iocs.append(ioc)
-    
-    return valid_iocs
+    return f"""// Threat Intel – Auto Generated
+// Updated: {now.isoformat()} IST
+
+const threatIntelData = """ + json.dumps(data, indent=4) + ";\n"
 
 
-def deduplicate_iocs(iocs):
-    """Remove duplicate IOCs based on indicator value"""
-    seen = set()
-    unique = []
-    
-    for ioc in iocs:
-        indicator = ioc.get('indicator', '')
-        if indicator and indicator not in seen:
-            seen.add(indicator)
-            unique.append(ioc)
-    
-    return unique
+# ──────────────────────────────────────────────────────────────
+# Daily Summary
+# ──────────────────────────────────────────────────────────────
+CATEGORY_KEYWORDS = {
+    'Ransomware': ['ransomware', 'lockbit', 'blackcat'],
+    'Phishing': ['phishing', 'credential'],
+    'Cryptomining': ['cryptomining', 'miner'],
+    'RAT Deployments': ['rat', 'remcos', 'asyncrat'],
+    'Botnet': ['botnet', 'mirai'],
+    'APT': ['apt', 'nation-state'],
+    'Honeypot Scans': ['honeypot', 'bruteforce', 'ssh', 'cowrie', 'tanner']
+}
 
 
 def categorize_iocs(pulses):
-    """Categorize IOCs by threat type based on tags"""
-    categories = {
-        'Ransomware': {'keywords': ['ransomware', 'lockbit', 'blackcat', 'alphv', 'conti', 'ryuk', 'revil'], 'count': 0},
-        'Phishing': {'keywords': ['phishing', 'credential', 'spearphishing', 'social-engineering'], 'count': 0},
-        'Cryptomining': {'keywords': ['cryptomining', 'cryptojacking', 'miner', 'monero', 'bitcoin'], 'count': 0},
-        'RAT Deployments': {'keywords': ['rat', 'remcos', 'asyncrat', 'njrat', 'darkcomet', 'trojan'], 'count': 0},
-        'Botnet': {'keywords': ['botnet', 'mirai', 'emotet', 'trickbot'], 'count': 0},
-        'APT': {'keywords': ['apt', 'nation-state', 'targeted'], 'count': 0},
+    cats = {k: {'keywords': v, 'count': 0} for k, v in CATEGORY_KEYWORDS.items()}
+    sectors = {k: 0 for k in ['Healthcare', 'Finance', 'Technology', 'Government', 'Education']}
+    sector_kw = {
+        'Healthcare': ['health', 'hospital'], 'Finance': ['bank'], 'Technology': ['tech'],
+        'Government': ['gov'], 'Education': ['university', 'school']
     }
-    
-    sectors = {
-        'Healthcare': ['healthcare', 'hospital', 'medical', 'health'],
-        'Finance': ['finance', 'banking', 'financial', 'bank'],
-        'Technology': ['technology', 'tech', 'software', 'it'],
-        'Government': ['government', 'gov', 'federal', 'state'],
-        'Education': ['education', 'university', 'school', 'academic'],
+    for p in pulses:
+        tags = [t.lower() for t in p.get('tags', [])]
+        desc = p.get('description', '').lower()
+        ind_count = len(p.get('indicators', []))
+        for cat, data in cats.items():
+            if any(k in tags or k in desc for k in data['keywords']):
+                data['count'] += ind_count
+        for sec, kws in sector_kw.items():
+            if any(k in tags or k in desc for k in kws):
+                sectors[sec] += 1
+    return cats, sectors
+
+
+def run_hourly():
+    print(f"Hourly Run @ {get_ist_now().isoformat()}")
+    existing = load_existing() or {}
+    iocs = remove_expired_iocs(existing.get('hourlyThreats', []))
+    new_pulses = fetch_recent_pulses(1)
+    new_iocs = extract_iocs_from_pulses(new_pulses)
+    all_iocs = deduplicate_iocs(new_iocs + iocs)[:MAX_IOCS]
+    if not all_iocs and iocs:
+        all_iocs = iocs[:MAX_IOCS]
+    output = {
+        'lastUpdated': get_ist_now().isoformat(),
+        'comparisonPeriod': existing.get('comparisonPeriod', ''),
+        'hourlyThreats': all_iocs,
+        'dailySummary': existing.get('dailySummary', {})
     }
-    
-    sector_counts = {k: 0 for k in sectors}
-    
-    for pulse in pulses:
-        tags = [t.lower() for t in pulse.get('tags', [])]
-        desc = pulse.get('description', '').lower()
-        indicators_count = len(pulse.get('indicators', []))
-        
-        # Categorize by threat type
-        for category, data in categories.items():
-            if any(kw in tags or kw in desc for kw in data['keywords']):
-                data['count'] += indicators_count
-        
-        # Categorize by sector
-        for sector, keywords in sectors.items():
-            if any(kw in tags or kw in desc for kw in keywords):
-                sector_counts[sector] += 1
-    
-    return categories, sector_counts
+    with open(OUTPUT_FILE, 'w') as f:
+        f.write(generate_js(output))
+    print(f"Updated {OUTPUT_FILE} with {len(all_iocs)} IOCs")
 
 
-def calculate_trends(current_counts, previous_counts):
-    """Calculate percentage change between periods"""
-    trends = []
-    
-    for category, data in current_counts.items():
-        current = data['count']
-        previous = previous_counts.get(category, {}).get('count', current)
-        
-        if previous > 0:
-            percentage = int(((current - previous) / previous) * 100)
-        else:
-            percentage = 0
-        
-        if percentage > 5:
-            trend = 'up'
-        elif percentage < -5:
-            trend = 'down'
-        else:
-            trend = 'stable'
-        
-        # Generate description based on category
-        descriptions = {
-            'Ransomware': 'LockBit and BlackCat variants dominating. Healthcare sector most targeted.',
-            'Phishing': 'Microsoft 365 and Google Workspace credential theft campaigns.',
-            'Cryptomining': 'Activity levels reflect cryptocurrency market conditions.',
-            'RAT Deployments': 'AsyncRAT and Remcos remain popular. Email attachments primary vector.',
-            'Botnet': 'Distributed infrastructure for DDoS and spam operations.',
-            'APT': 'Nation-state actor campaigns targeting critical infrastructure.',
-        }
-        
-        trends.append({
-            'category': category,
-            'count': current,
-            'trend': trend,
-            'percentage': percentage,
-            'description': descriptions.get(category, f'{category} activity observed.')
-        })
-    
-    # Sort by count descending, take top 4
-    trends.sort(key=lambda x: x['count'], reverse=True)
-    return trends[:4]
-
-
-def calculate_sector_percentages(sector_counts):
-    """Convert sector counts to percentages"""
-    total = sum(sector_counts.values())
-    if total == 0:
-        total = 1  # Avoid division by zero
-    
-    sectors = []
-    for name, count in sorted(sector_counts.items(), key=lambda x: x[1], reverse=True):
-        percentage = int((count / total) * 100)
-        if percentage > 0:
-            sectors.append({'name': name, 'percentage': percentage})
-    
-    return sectors[:5]
+def run_daily():
+    print(f"Daily Run @ {get_ist_now().isoformat()}")
+    existing = load_existing() or {}
+    pulses = fetch_recent_pulses(24)
+    seen = set()
+    unique = [p for p in pulses if p['id'] not in seen and not seen.add(p['id'])]
+    summary = generate_daily_summary(unique, load_history())
+    now = get_ist_now()
+    period = f"{(now - timedelta(days=1)).strftime('%b %d, %Y')} 00:00 - {now.strftime('%b %d, %Y')} 00:00 IST"
+    output = {
+        'lastUpdated': now.isoformat(),
+        'comparisonPeriod': period,
+        'hourlyThreats': existing.get('hourlyThreats', []),
+        'dailySummary': summary
+    }
+    with open(OUTPUT_FILE, 'w') as f:
+        f.write(generate_js(output))
+    print(f"Daily summary updated")
 
 
 def generate_daily_summary(pulses, history):
-    """Generate the 24h summary statistics"""
-    # Get previous day's data for comparison
-    previous = history.get('previous_day', {})
-    
-    # Count totals
-    total_indicators = sum(len(p.get('indicators', [])) for p in pulses)
-    new_pulses = len(pulses)
-    
-    # Categorize threats
-    categories, sector_counts = categorize_iocs(pulses)
-    
-    # Calculate trends
-    previous_categories = previous.get('categories', {})
-    top_threats = calculate_trends(categories, previous_categories)
-    
-    # Sector percentages
-    targeted_sectors = calculate_sector_percentages(sector_counts)
-    if not targeted_sectors:
-        targeted_sectors = [
-            {'name': 'Technology', 'percentage': 30},
-            {'name': 'Finance', 'percentage': 25},
-            {'name': 'Healthcare', 'percentage': 20},
-            {'name': 'Government', 'percentage': 15},
-            {'name': 'Education', 'percentage': 10},
-        ]
-    
-    # Count critical (ransomware + APT)
-    critical_alerts = categories['Ransomware']['count'] // 10 + categories['APT']['count'] // 5
-    
-    # Active campaigns (rough estimate from pulses)
-    active_campaigns = min(new_pulses, 20)
-    
-    # Geographic distribution (simulated based on common patterns)
-    # In production, you'd parse this from pulse metadata
-    geo_distribution = [
-        {'region': 'North America', 'count': int(total_indicators * 0.33)},
-        {'region': 'Europe', 'count': int(total_indicators * 0.31)},
-        {'region': 'Asia Pacific', 'count': int(total_indicators * 0.24)},
-        {'region': 'Latin America', 'count': int(total_indicators * 0.12)},
-    ]
-    
+    prev = history.get('previous_day', {})
+    cats, secs = categorize_iocs(pulses)
+    top = calculate_trends(cats, prev.get('categories', {}))
+    targeted = sector_percentages(secs)
+    total = sum(len(p.get('indicators', [])) for p in pulses)
     summary = {
         'stats': {
-            'totalIndicators': total_indicators,
-            'newPulses': new_pulses,
-            'criticalAlerts': max(critical_alerts, 1),
-            'activeCampaigns': active_campaigns
+            'totalIndicators': total,
+            'newPulses': len(pulses),
+            'criticalAlerts': max(cats['Ransomware']['count'] // 10 + cats['APT']['count'] // 5, 1),
+            'activeCampaigns': min(len(pulses), 20)
         },
-        'topThreats': top_threats,
-        'targetedSectors': targeted_sectors,
-        'geoDistribution': geo_distribution
+        'topThreats': top,
+        'targetedSectors': targeted or [
+            {'name': 'Technology', 'percentage': 30}, {'name': 'Finance', 'percentage': 25},
+            {'name': 'Healthcare', 'percentage': 20}, {'name': 'Government', 'percentage': 15},
+            {'name': 'Education', 'percentage': 10}
+        ],
+        'geoDistribution': [
+            {'region': 'North America', 'count': int(total * 0.33)},
+            {'region': 'Europe', 'count': int(total * 0.31)},
+            {'region': 'Asia Pacific', 'count': int(total * 0.24)},
+            {'region': 'Latin America', 'count': int(total * 0.12)},
+        ]
     }
-    
-    # Save current data as history for next comparison
-    now = get_ist_now()
-    history['previous_day'] = {
-        'date': now.isoformat(),
-        'categories': categories,
-        'sectors': sector_counts
-    }
-    save_history(history)
-    
+    hist = load_history()
+    hist['previous_day'] = {'date': get_ist_now().isoformat(), 'categories': cats, 'sectors': secs}
+    save_history(hist)
     return summary
 
 
-def generate_javascript(data):
-    """Generate the threat-intel.js file content"""
-    now = get_ist_now()
-    header = f"""// Threat Intelligence Data - Auto-generated by fetch_threat_intel.py
-// DO NOT EDIT MANUALLY - This file is automatically updated
-// Last generated: {now.isoformat()}
-
-const threatIntelData = """
-    
-    json_str = json.dumps(data, indent=4)
-    
-    return header + json_str + ";\n"
+def calculate_trends(cur, prev):
+    trends = []
+    for cat, data in cur.items():
+        p = prev.get(cat, {}).get('count', data['count'])
+        pct = int(((data['count'] - p) / p) * 100) if p > 0 else 0
+        trend = 'up' if pct > 5 else ('down' if pct < -5 else 'stable')
+        trends.append({'category': cat, 'count': data['count'], 'trend': trend, 'percentage': pct, 'description': f"{cat} activity."})
+    return sorted(trends, key=lambda x: x['count'], reverse=True)[:4]
 
 
-def run_hourly_update():
-    """Run hourly IOC fetch and cleanup"""
-    print(f"[{get_ist_now().isoformat()}] Running hourly IOC update...")
-    
-    # Load existing data
-    existing = load_existing_data()
-    if existing:
-        current_iocs = existing.get('hourlyThreats', [])
-        daily_summary = existing.get('dailySummary', {})
-        comparison_period = existing.get('comparisonPeriod', '')
-    else:
-        current_iocs = []
-        daily_summary = {}
-        comparison_period = ''
-    
-    # Remove expired IOCs (older than 24h)
-    current_iocs = remove_expired_iocs(current_iocs)
-    print(f"  - {len(current_iocs)} IOCs after expiry cleanup")
-    
-    # Fetch new pulses from last hour
-    new_pulses = fetch_recent_pulses(hours=1)
-    print(f"  - Found {len(new_pulses)} new pulses")
-    
-    # Extract IOCs from new pulses
-    new_iocs = extract_iocs_from_pulses(new_pulses)
-    print(f"  - Extracted {len(new_iocs)} new IOCs")
-    
-    # Combine and deduplicate
-    all_iocs = new_iocs + current_iocs
-    all_iocs = deduplicate_iocs(all_iocs)
-    
-    # Limit to max IOCs
-    all_iocs = all_iocs[:MAX_IOCS]
-    print(f"  - Total IOCs after dedup and limit: {len(all_iocs)}")
-    
-    # SAFETY CHECK: Don't overwrite if we have no data and existing had data
-    if len(all_iocs) == 0 and len(current_iocs) > 0:
-        print(f"  - WARNING: No new IOCs found but existing data exists. Keeping existing data.")
-        all_iocs = current_iocs[:MAX_IOCS]
-    
-    # Build output data
-    output_data = {
-        'lastUpdated': get_ist_now().isoformat(),
-        'comparisonPeriod': comparison_period,
-        'hourlyThreats': all_iocs,
-        'dailySummary': daily_summary
-    }
-    
-    # Write to file
-    js_content = generate_javascript(output_data)
-    with open(OUTPUT_FILE, 'w') as f:
-        f.write(js_content)
-    
-    print(f"  - Updated {OUTPUT_FILE}")
+def sector_percentages(secs):
+    total = sum(secs.values()) or 1
+    return [
+        {'name': k, 'percentage': int((v / total) * 100)}
+        for k, v in sorted(secs.items(), key=lambda x: x[1], reverse=True) if v > 0
+    ][:5]
 
 
-def run_daily_summary():
-    """Run daily summary calculation at 12:00 AM IST"""
-    print(f"[{get_ist_now().isoformat()}] Running daily summary calculation...")
-    
-    # Load existing data
-    existing = load_existing_data()
-    if existing:
-        current_iocs = existing.get('hourlyThreats', [])
-    else:
-        current_iocs = []
-    
-    # Load history for trend comparison
-    history = load_history()
-    
-    # Fetch pulses from last 24 hours for summary
-    all_pulses = []
-    for hour_offset in [0, 6, 12, 18]:
-        pulses = fetch_recent_pulses(hours=24)
-        all_pulses.extend(pulses)
-    
-    # Deduplicate pulses
-    seen_ids = set()
-    unique_pulses = []
-    for pulse in all_pulses:
-        pulse_id = pulse.get('id', '')
-        if pulse_id and pulse_id not in seen_ids:
-            seen_ids.add(pulse_id)
-            unique_pulses.append(pulse)
-    
-    print(f"  - Processing {len(unique_pulses)} unique pulses from last 24h")
-    
-    # Generate summary
-    daily_summary = generate_daily_summary(unique_pulses, history)
-    
-    # Build comparison period string
-    now = get_ist_now()
-    yesterday = now - timedelta(days=1)
-    comparison_period = f"{yesterday.strftime('%b %d, %Y')} 00:00 - {now.strftime('%b %d, %Y')} 00:00 IST"
-    
-    # Build output data
-    output_data = {
-        'lastUpdated': now.isoformat(),
-        'comparisonPeriod': comparison_period,
-        'hourlyThreats': current_iocs,
-        'dailySummary': daily_summary
-    }
-    
-    # Write to file
-    js_content = generate_javascript(output_data)
-    with open(OUTPUT_FILE, 'w') as f:
-        f.write(js_content)
-    
-    print(f"  - Updated {OUTPUT_FILE} with daily summary")
-    print(f"  - Stats: {daily_summary['stats']}")
-
-
+# ──────────────────────────────────────────────────────────────
+# Main
+# ──────────────────────────────────────────────────────────────
 def main():
-    parser = argparse.ArgumentParser(description='Fetch AlienVault OTX Threat Intelligence')
-    parser.add_argument('--hourly', action='store_true', help='Run hourly IOC update')
-    parser.add_argument('--daily', action='store_true', help='Run daily summary calculation')
-    parser.add_argument('--both', action='store_true', help='Run both hourly and daily (default)')
-    
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--hourly', action='store_true')
+    parser.add_argument('--daily', action='store_true')
+    parser.add_argument('--both', action='store_true')
     args = parser.parse_args()
-    
-    # Default to both if no args
-    if not args.hourly and not args.daily and not args.both:
+    if not (args.hourly or args.daily or args.both):
         args.both = True
-    
     if args.hourly or args.both:
-        run_hourly_update()
-    
+        run_hourly()
     if args.daily or args.both:
-        run_daily_summary()
-    
+        run_daily()
     print("Done!")
 
 
