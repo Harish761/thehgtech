@@ -1966,7 +1966,7 @@
     <!-- Load Content Files -->
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="content.js"></script>
     <script src="archives-content.js"></script>
-    <script src="threat-intel.js"></script>
+    <script src="threat-intel.js" onerror="console.log('threat-intel.js not found - using fallback')"></script>
 
     <!-- Main JavaScript -->
     <script>
@@ -2535,10 +2535,21 @@
 
         // Load Threat Intelligence (data loaded from external threat-intel.js file)
         function loadThreatIntel() {
+            // Check if threat intel data is loaded, provide fallback if not
             if (typeof threatIntelData === 'undefined') {
-                console.log('threatIntelData not loaded from threat-intel.js');
-                document.getElementById('hourlyThreats').innerHTML = '<p style="color: var(--text-muted);">Threat intelligence data not available. Please ensure threat-intel.js is loaded.</p>';
-                return;
+                console.log('threatIntelData not loaded from threat-intel.js - using fallback');
+                // Provide empty fallback so page still works
+                window.threatIntelData = {
+                    lastUpdated: new Date().toISOString(),
+                    comparisonPeriod: 'No data available',
+                    hourlyThreats: [],
+                    dailySummary: {
+                        stats: { totalIndicators: 0, newPulses: 0, criticalAlerts: 0, activeCampaigns: 0 },
+                        topThreats: [],
+                        targetedSectors: [],
+                        geoDistribution: []
+                    }
+                };
             }
             
             const hourlyContainer = document.getElementById('hourlyThreats');
@@ -2555,6 +2566,11 @@
             // Update comparison note if available
             if (comparisonNoteEl && threatIntelData.comparisonPeriod) {
                 comparisonNoteEl.textContent = `Trends compared to: ${threatIntelData.comparisonPeriod}`;
+            }
+            
+            // Show message if no data
+            if (threatIntelData.hourlyThreats.length === 0) {
+                hourlyContainer.innerHTML = '<p style="color: var(--text-muted); grid-column: 1/-1; text-align: center; padding: 2rem;">No threat intelligence data available. Please ensure threat-intel.js is configured and the automation is running.</p>';
             }
             
             // Render hourly threats (Individual IOCs)
@@ -2586,35 +2602,41 @@
                 `;
             }).join('');
             
-            hourlyContainer.innerHTML = hourlyHTML;
+            hourlyContainer.innerHTML = hourlyHTML || hourlyContainer.innerHTML;
             
             // Render daily summary (Aggregated Statistics)
-            const summary = threatIntelData.dailySummary;
+            const summary = threatIntelData.dailySummary || {};
+            
+            // Check if we have valid summary data
+            if (!summary.stats || Object.keys(summary).length === 0) {
+                dailyContainer.innerHTML = '<p style="color: var(--text-muted); text-align: center; padding: 2rem;">Daily summary data not yet available. Will be calculated at 12:00 AM IST.</p>';
+                return;
+            }
             
             // Stats overview
             const statsHTML = `
                 <div class="summary-stats">
                     <div class="stat-card">
-                        <div class="stat-number">${summary.stats.totalIndicators.toLocaleString()}</div>
+                        <div class="stat-number">${(summary.stats.totalIndicators || 0).toLocaleString()}</div>
                         <div class="stat-label">Total Indicators</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number">${summary.stats.newPulses}</div>
+                        <div class="stat-number">${summary.stats.newPulses || 0}</div>
                         <div class="stat-label">New Pulses</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number">${summary.stats.criticalAlerts}</div>
+                        <div class="stat-number">${summary.stats.criticalAlerts || 0}</div>
                         <div class="stat-label">Critical Alerts</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number">${summary.stats.activeCampaigns}</div>
+                        <div class="stat-number">${summary.stats.activeCampaigns || 0}</div>
                         <div class="stat-label">Active Campaigns</div>
                     </div>
                 </div>
             `;
             
             // Top threats by category
-            const trendsHTML = summary.topThreats.map(threat => {
+            const trendsHTML = (summary.topThreats || []).map(threat => {
                 const trendClass = threat.trend === 'up' ? 'trend-up' : threat.trend === 'down' ? 'trend-down' : 'trend-stable';
                 const trendIcon = threat.trend === 'up' ? '↑' : threat.trend === 'down' ? '↓' : '→';
                 const trendText = threat.percentage > 0 ? `+${threat.percentage}%` : `${threat.percentage}%`;
@@ -2632,7 +2654,7 @@
             }).join('');
             
             // Targeted sectors
-            const sectorsHTML = `
+            const sectorsHTML = (summary.targetedSectors && summary.targetedSectors.length > 0) ? `
                 <div class="trend-card">
                     <div class="trend-category" style="margin-bottom: 0.75rem;">Top Targeted Sectors</div>
                     <div class="sector-list">
@@ -2647,10 +2669,10 @@
                         `).join('')}
                     </div>
                 </div>
-            `;
+            ` : '';
             
             // Geographic distribution
-            const geoHTML = `
+            const geoHTML = (summary.geoDistribution && summary.geoDistribution.length > 0) ? `
                 <div class="trend-card">
                     <div class="trend-category" style="margin-bottom: 0.75rem;">Geographic Distribution</div>
                     <div class="sector-list">
@@ -2669,7 +2691,7 @@
                         }).join('')}
                     </div>
                 </div>
-            `;
+            ` : '';
             
             dailyContainer.innerHTML = statsHTML + `<div class="threat-grid" style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));">${trendsHTML}${sectorsHTML}${geoHTML}</div>`;
         }
