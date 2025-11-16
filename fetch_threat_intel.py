@@ -43,8 +43,8 @@ def get_ist_now():
     return datetime.now(IST)
 
 
-def make_otx_request(endpoint):
-    """Make authenticated request to OTX API"""
+def make_otx_request(endpoint, retries=3):
+    """Make authenticated request to OTX API with retry logic"""
     if not OTX_API_KEY:
         print("ERROR: OTX_API_KEY environment variable not set")
         sys.exit(1)
@@ -53,29 +53,46 @@ def make_otx_request(endpoint):
     req = Request(url)
     req.add_header('X-OTX-API-KEY', OTX_API_KEY)
     
-    try:
-        with urlopen(req, timeout=30) as response:
-            return json.loads(response.read().decode('utf-8'))
-    except HTTPError as e:
-        print(f"HTTP Error {e.code}: {e.reason}")
-        return None
-    except URLError as e:
-        print(f"URL Error: {e.reason}")
-        return None
-    except Exception as e:
-        print(f"Error fetching {endpoint}: {e}")
-        return None
+    for attempt in range(retries):
+        try:
+            # Increased timeout to 60 seconds
+            with urlopen(req, timeout=60) as response:
+                return json.loads(response.read().decode('utf-8'))
+        except HTTPError as e:
+            print(f"HTTP Error {e.code}: {e.reason}")
+            return None
+        except URLError as e:
+            if attempt < retries - 1:
+                print(f"  Attempt {attempt + 1} failed: {e.reason}. Retrying...")
+                import time
+                time.sleep(5)  # Wait 5 seconds before retry
+            else:
+                print(f"URL Error after {retries} attempts: {e.reason}")
+                return None
+        except Exception as e:
+            if attempt < retries - 1:
+                print(f"  Attempt {attempt + 1} failed: {e}. Retrying...")
+                import time
+                time.sleep(5)
+            else:
+                print(f"Error fetching {endpoint} after {retries} attempts: {e}")
+                return None
+    
+    return None
 
 
 def fetch_recent_pulses(hours=1):
     """Fetch pulses modified in the last N hours"""
-    # Get pulses from subscribed feeds
-    data = make_otx_request('pulses/subscribed?limit=50&page=1')
+    # Get pulses from subscribed feeds - reduced limit for faster response
+    data = make_otx_request('pulses/subscribed?limit=20&page=1')
     if not data or 'results' not in data:
+        print(f"  - No data returned from OTX API")
         return []
     
     cutoff_time = get_ist_now() - timedelta(hours=hours)
     recent_pulses = []
+    
+    print(f"  - Checking {len(data.get('results', []))} pulses from API")
     
     for pulse in data.get('results', []):
         # Parse pulse modified time
@@ -85,8 +102,9 @@ def fetch_recent_pulses(hours=1):
                 modified_time = datetime.fromisoformat(modified_str.replace('Z', '+00:00'))
                 if modified_time > cutoff_time.astimezone(timezone.utc):
                     recent_pulses.append(pulse)
-            except:
-                pass
+            except Exception as e:
+                # If we can't parse the date, include it anyway
+                recent_pulses.append(pulse)
     
     return recent_pulses
 
@@ -477,6 +495,11 @@ def run_hourly_update():
     # Limit to max IOCs
     all_iocs = all_iocs[:MAX_IOCS]
     print(f"  - Total IOCs after dedup and limit: {len(all_iocs)}")
+    
+    # SAFETY CHECK: Don't overwrite if we have no data and existing had data
+    if len(all_iocs) == 0 and len(current_iocs) > 0:
+        print(f"  - WARNING: No new IOCs found but existing data exists. Keeping existing data.")
+        all_iocs = current_iocs[:MAX_IOCS]
     
     # Build output data
     output_data = {
