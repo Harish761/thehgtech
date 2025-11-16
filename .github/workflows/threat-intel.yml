@@ -1,106 +1,47 @@
 # .github/workflows/threat-intel.yml
-# Automated Threat Intelligence Feed from AlienVault OTX
-# 
-# Schedule:
-# - Hourly: Fetch new IOCs, clean expired ones (max 20 IOCs, 24h rolling window)
-# - Daily at 12:00 AM IST (6:30 PM UTC): Calculate 24h summary statistics
-
-name: Update Threat Intelligence
+name: Update Threat Intel
 
 on:
   schedule:
-    # Run hourly at minute 0
-    - cron: '0 * * * *'
-    # Run daily at 6:30 PM UTC (12:00 AM IST next day)
-    - cron: '30 18 * * *'
-  workflow_dispatch:
-    inputs:
-      run_type:
-        description: 'Type of update to run'
-        required: true
-        default: 'hourly'
-        type: choice
-        options:
-          - hourly
-          - daily
-          - both
+    # Hourly at minute 5
+    - cron: '5 * * * *'
+    # Daily at 00:05 IST (UTC 18:35 previous day)
+    - cron: '35 18 * * *'
+  workflow_dispatch:      # Allows manual trigger
 
 jobs:
-  update-threat-intel:
+  update:
     runs-on: ubuntu-latest
-    
+    permissions:
+      contents: write     # Needed to push commits
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-      
+          fetch-depth: 0   # Full history for clean diffs
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      
-      - name: Determine run type
-        id: run_type
+
+      - name: Install dependencies (if any)
         run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            echo "type=${{ github.event.inputs.run_type }}" >> $GITHUB_OUTPUT
-          elif [ "${{ github.event.schedule }}" = "30 18 * * *" ]; then
-            echo "type=daily" >> $GITHUB_OUTPUT
-          else
-            echo "type=hourly" >> $GITHUB_OUTPUT
-          fi
-      
-      - name: Run threat intel update
+          python -m pip install --upgrade pip
+          # Add any pip packages here if needed in future
+
+      - name: Run threat-intel fetcher
         env:
           OTX_API_KEY: ${{ secrets.OTX_API_KEY }}
         run: |
-          if [ "${{ steps.run_type.outputs.type }}" = "hourly" ]; then
-            python fetch_threat_intel.py --hourly
-          elif [ "${{ steps.run_type.outputs.type }}" = "daily" ]; then
-            python fetch_threat_intel.py --daily
-          else
-            python fetch_threat_intel.py --both
-          fi
-      
-      - name: Check for changes
-        id: git_status
+          python fetch_threat_intel.py --both
+
+      - name: Commit & push changes
         run: |
-          if git diff --quiet threat-intel.js; then
-            echo "changed=false" >> $GITHUB_OUTPUT
-          else
-            echo "changed=true" >> $GITHUB_OUTPUT
-          fi
-      
-      - name: Commit and push changes
-        if: steps.git_status.outputs.changed == 'true'
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          
-          git add threat-intel.js
-          
-          # Also add history file if it exists
-          if [ -f "threat-intel-history.json" ]; then
-            git add threat-intel-history.json
-          fi
-          
-          TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
-          RUN_TYPE="${{ steps.run_type.outputs.type }}"
-          
-          git commit -m "🔒 Update threat intel ($RUN_TYPE) - $TIMESTAMP"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add threat-intel.js threat-intel-history.json
+          git diff --quiet && git diff --staged --quiet || \
+            git commit -m "Auto-update threat intel [$(date -u '+%Y-%m-%d %H:%M')] UTC"
           git push
-      
-      - name: Summary
-        run: |
-          echo "## Threat Intelligence Update Summary" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "- **Run Type:** ${{ steps.run_type.outputs.type }}" >> $GITHUB_STEP_SUMMARY
-          echo "- **Timestamp:** $(date -u +"%Y-%m-%d %H:%M UTC")" >> $GITHUB_STEP_SUMMARY
-          echo "- **Changes Committed:** ${{ steps.git_status.outputs.changed }}" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          
-          if [ -f "threat-intel.js" ]; then
-            IOC_COUNT=$(grep -c '"indicator":' threat-intel.js || echo "0")
-            echo "- **Current IOC Count:** $IOC_COUNT" >> $GITHUB_STEP_SUMMARY
-          fi
