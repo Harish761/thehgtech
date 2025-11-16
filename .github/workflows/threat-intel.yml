@@ -1,9 +1,9 @@
-name: Update Threat Intel
+name: RSS Threat Intel Update
 
 on:
   schedule:
-    - cron: '5 * * * *'      # Hourly at :05
-    - cron: '35 18 * * *'    # 00:05 IST
+    - cron: '5 * * * *'      # Every hour at :05
+    - cron: '35 18 * * *'    # Daily at 00:05 IST
   workflow_dispatch:
 
 jobs:
@@ -19,24 +19,11 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install cloudflared
-        run: |
-          wget -q https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb
-          sudo dpkg -i cloudflared-linux-amd64.deb
+      - name: Install dependencies
+        run: pip install feedparser requests
 
-      - name: Start Cloudflare Tunnel
-        env:
-          TUNNEL_TOKEN: ${{ secrets.CLOUDFLARE_TUNNEL_TOKEN }}
-        run: |
-          nohup cloudflared tunnel --no-autoupdate run --token $TUNNEL_TOKEN > /dev/null 2>&1 &
-          sleep 10
-          echo "Tunnel active (India PoP)"
-
-      - name: Run OTX Fetcher
-        env:
-          OTX_API_KEY: ${{ secrets.OTX_API_KEY }}
-        run: |
-          python fetch_threat_intel.py --both
+      - name: Run RSS Fetcher
+        run: python fetch_threat_intel.py --both
 
       - name: Commit & Push
         run: |
@@ -44,5 +31,5 @@ jobs:
           git config user.email "actions@github.com"
           git add threat-intel.js threat-intel-history.json
           git diff --quiet && git diff --staged --quiet || \
-            git commit -m "Update threat intel [$(date -u '+%Y-%m-%d %H:%M')] UTC"
+            git commit -m "RSS IOC update [$(date -u '+%Y-%m-%d %H:%M')] UTC"
           git push
