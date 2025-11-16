@@ -43,7 +43,7 @@ def get_ist_now():
     return datetime.now(IST)
 
 
-def make_otx_request(endpoint, retries=3):
+def make_otx_request(endpoint, retries=2):
     """Make authenticated request to OTX API with retry logic"""
     if not OTX_API_KEY:
         print("ERROR: OTX_API_KEY environment variable not set")
@@ -52,11 +52,12 @@ def make_otx_request(endpoint, retries=3):
     url = f"{OTX_BASE_URL}/{endpoint}"
     req = Request(url)
     req.add_header('X-OTX-API-KEY', OTX_API_KEY)
+    req.add_header('User-Agent', 'TheHGTech-ThreatIntel/1.0')
     
     for attempt in range(retries):
         try:
-            # Increased timeout to 60 seconds
-            with urlopen(req, timeout=60) as response:
+            # Increased timeout to 120 seconds for slow API
+            with urlopen(req, timeout=120) as response:
                 return json.loads(response.read().decode('utf-8'))
         except HTTPError as e:
             print(f"HTTP Error {e.code}: {e.reason}")
@@ -65,7 +66,7 @@ def make_otx_request(endpoint, retries=3):
             if attempt < retries - 1:
                 print(f"  Attempt {attempt + 1} failed: {e.reason}. Retrying...")
                 import time
-                time.sleep(5)  # Wait 5 seconds before retry
+                time.sleep(3)  # Wait 3 seconds before retry
             else:
                 print(f"URL Error after {retries} attempts: {e.reason}")
                 return None
@@ -73,7 +74,7 @@ def make_otx_request(endpoint, retries=3):
             if attempt < retries - 1:
                 print(f"  Attempt {attempt + 1} failed: {e}. Retrying...")
                 import time
-                time.sleep(5)
+                time.sleep(3)
             else:
                 print(f"Error fetching {endpoint} after {retries} attempts: {e}")
                 return None
@@ -83,30 +84,26 @@ def make_otx_request(endpoint, retries=3):
 
 def fetch_recent_pulses(hours=1):
     """Fetch pulses modified in the last N hours"""
-    # Get pulses from subscribed feeds - reduced limit for faster response
-    data = make_otx_request('pulses/subscribed?limit=20&page=1')
+    # Try fetching recent modified pulses (faster than subscribed for large accounts)
+    # Using modified_since parameter for efficiency
+    since_time = (get_ist_now() - timedelta(hours=hours)).strftime('%Y-%m-%dT%H:%M:%S')
+    
+    # First try: Get recently modified pulses (public)
+    data = make_otx_request(f'pulses/subscribed?limit=10&page=1&modified_since={since_time}')
+    
+    if not data or 'results' not in data:
+        # Fallback: Try activity feed instead
+        print(f"  - Trying alternative endpoint...")
+        data = make_otx_request('pulses/activity?limit=10')
+    
     if not data or 'results' not in data:
         print(f"  - No data returned from OTX API")
         return []
     
-    cutoff_time = get_ist_now() - timedelta(hours=hours)
-    recent_pulses = []
-    
     print(f"  - Checking {len(data.get('results', []))} pulses from API")
     
-    for pulse in data.get('results', []):
-        # Parse pulse modified time
-        modified_str = pulse.get('modified', pulse.get('created', ''))
-        if modified_str:
-            try:
-                modified_time = datetime.fromisoformat(modified_str.replace('Z', '+00:00'))
-                if modified_time > cutoff_time.astimezone(timezone.utc):
-                    recent_pulses.append(pulse)
-            except Exception as e:
-                # If we can't parse the date, include it anyway
-                recent_pulses.append(pulse)
-    
-    return recent_pulses
+    # Return all results (they should already be filtered by modified_since)
+    return data.get('results', [])
 
 
 def extract_iocs_from_pulses(pulses):
