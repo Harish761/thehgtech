@@ -1,8 +1,8 @@
 // Threat Intel – Auto Generated
-// Updated: 2025-11-16T23:09:46.916795+05:30 IST
+// Updated: 2025-11-16T23:48:41.417115+05:30 IST
 
 const threatIntelData = {
-    "lastUpdated": "2025-11-16T23:09:46.916714+05:30",
+    "lastUpdated": "2025-11-16T23:48:41.417046+05:30",
     "comparisonPeriod": "Nov 15, 2025 00:00 - Nov 16, 2025 00:00 IST",
     "hourlyThreats": [],
     "dailySummary": {
