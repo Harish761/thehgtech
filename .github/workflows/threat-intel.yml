@@ -1,47 +1,48 @@
-# .github/workflows/threat-intel.yml
 name: Update Threat Intel
 
 on:
   schedule:
-    # Hourly at minute 5
-    - cron: '5 * * * *'
-    # Daily at 00:05 IST (UTC 18:35 previous day)
-    - cron: '35 18 * * *'
-  workflow_dispatch:      # Allows manual trigger
+    - cron: '5 * * * *'      # Hourly at :05
+    - cron: '35 18 * * *'    # 00:05 IST
+  workflow_dispatch:
 
 jobs:
   update:
     runs-on: ubuntu-latest
     permissions:
-      contents: write     # Needed to push commits
+      contents: write
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0   # Full history for clean diffs
+      - uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: Install dependencies (if any)
+      - name: Install cloudflared
         run: |
-          python -m pip install --upgrade pip
-          # Add any pip packages here if needed in future
+          wget -q https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb
+          sudo dpkg -i cloudflared-linux-amd64.deb
 
-      - name: Run threat-intel fetcher
+      - name: Start Cloudflare Tunnel
+        env:
+          TUNNEL_TOKEN: ${{ secrets.CLOUDFLARE_TUNNEL_TOKEN }}
+        run: |
+          nohup cloudflared tunnel --no-autoupdate run --token $TUNNEL_TOKEN > /dev/null 2>&1 &
+          sleep 10
+          echo "Tunnel active (India PoP)"
+
+      - name: Run OTX Fetcher
         env:
           OTX_API_KEY: ${{ secrets.OTX_API_KEY }}
         run: |
           python fetch_threat_intel.py --both
 
-      - name: Commit & push changes
+      - name: Commit & Push
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
           git add threat-intel.js threat-intel-history.json
           git diff --quiet && git diff --staged --quiet || \
-            git commit -m "Auto-update threat intel [$(date -u '+%Y-%m-%d %H:%M')] UTC"
+            git commit -m "Update threat intel [$(date -u '+%Y-%m-%d %H:%M')] UTC"
           git push
