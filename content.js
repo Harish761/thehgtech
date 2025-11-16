@@ -4,76 +4,76 @@
 var websiteContent = {
     "cyberShorts": [
         {
-            "date": "Nov 15 2025",
-            "title": "Microsoft Investigates Windows 10 Update Installation Failures",
-            "content": "Microsoft is currently investigating an issue affecting the installation of the Windows 10 KB5068781 extended security update. The problem manifests as a 0x800f0922 error, specifically impacting devices with corporate licensing. This bug is significant because it can leave systems vulnerable by preventing the application of critical security patches. The issue underscores the complexities involved in maintaining and updating enterprise-level software environments. Microsoft has not yet provided a timeline for a fix, leaving IT administrators on edge as they seek to secure their networks. This situation highlights the importance of robust update mechanisms and contingency planning in corporate IT strategies.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-10-kb5068781-esu-update-may-fail-with-0x800f0922-errors/"
+            "date": "Dec 03 2025",
+            "title": "Cybersecurity Outlook 2026: Key Trends and Predictions",
+            "content": "The Dark Reading Virtual Event has spotlighted the future of cybersecurity, projecting trends up to 2026. Industry experts discussed emerging threats and technological advancements that are set to shape the cybersecurity landscape. With the rapid evolution of AI and machine learning, new vulnerabilities are expected to surface, demanding innovative defense strategies. The event emphasized the importance of proactive measures and continuous adaptation in safeguarding digital infrastructures. For security professionals, understanding these trends is crucial to staying ahead of cybercriminals. The discussions also highlighted the growing need for collaboration across industries to strengthen defenses. This outlook serves as a critical guide for organizations preparing for future challenges.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/events/dark-reading-virtual-event-cybersecurity-outlook-2026"
+        },
+        {
+            "date": "Nov 16 2025",
+            "title": "Finger.exe Command Exploited in ClickFix Attacks",
+            "content": "Recent reports from the SANS Internet Storm Center reveal that the finger.exe command is being leveraged in ClickFix attacks. These attacks exploit the command to gather user information, posing a significant threat to systems still utilizing this legacy tool. The use of finger.exe in cyberattacks highlights the risks associated with outdated software components. Security professionals are urged to assess their systems for potential vulnerabilities linked to such legacy commands. The incidents underscore the importance of regular system audits and updates to mitigate exploitation risks. Understanding and addressing these vulnerabilities is vital to maintaining robust security postures.",
+            "source": "SANS Internet Storm Center, InfoCON: green",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32492"
+        },
+        {
+            "date": "Nov 16 2025",
+            "title": "SANS Holiday Hack Challenge 2025 Now Open for Participation",
+            "content": "The SANS Internet Storm Center has announced the launch of the SANS Holiday Hack Challenge 2025. This annual event invites cybersecurity enthusiasts and professionals to test their skills in a series of complex challenges. Participants will tackle real-world scenarios, enhancing their problem-solving abilities and technical expertise. The challenge serves as an excellent training ground for both seasoned professionals and newcomers to the field. Engaging in such events is crucial for staying up-to-date with the latest cybersecurity techniques and threats. The challenge fosters a community of learning and collaboration, essential for advancing the field of cybersecurity.",
+            "source": "SANS Internet Storm Center, InfoCON: green",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32488"
         },
         {
             "date": "Nov 15 2025",
-            "title": "ClickFix Malware Exploits Legacy &#x27;Finger&#x27; Protocol",
-            "content": "The ClickFix malware campaign is leveraging the outdated &quot;finger&quot; protocol to execute remote commands on Windows devices. Originally designed for querying user information on remote systems, the protocol is being repurposed by threat actors to bypass modern security measures. This development is particularly concerning for cybersecurity professionals, as it demonstrates how legacy protocols can be exploited to compromise current systems. The resurgence of such an old protocol in modern attacks highlights the need for continuous reevaluation of network security policies and the potential risks posed by outdated technologies. Organizations are urged to disable unnecessary services and protocols to mitigate such vulnerabilities.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/decades-old-finger-protocol-abused-in-clickfix-malware-attacks/"
-        },
-        {
-            "date": "Nov 15 2025",
-            "title": "RondoDox Botnet Targets Vulnerable XWiki Servers",
-            "content": "The RondoDox botnet is actively exploiting a critical vulnerability in unpatched XWiki servers, identified as CVE-2025-24893. This flaw, with a CVSS score of 9.8, allows for arbitrary code execution through an eval injection bug. The attack targets organizations that have not yet updated their XWiki instances, potentially expanding the botnet&#x27;s reach. For security professionals, this incident underscores the critical need for timely patch management and the dangers posed by unpatched software. The exploitation of such high-severity vulnerabilities can lead to significant disruptions and data breaches, emphasizing the importance of maintaining up-to-date security protocols.",
+            "title": "Five Individuals Plead Guilty to Assisting North Korean IT Worker Fraud",
+            "content": "The U.S. Department of Justice has announced that five individuals have pleaded guilty to aiding North Korean IT workers in infiltrating 136 companies. This scheme was part of a broader effort to generate illicit revenue for North Korea, violating international sanctions. The individuals facilitated fraudulent activities by enabling the unauthorized employment of North Korean IT experts. This case highlights the persistent threat posed by nation-state actors exploiting global IT networks. For cybersecurity professionals, it underscores the need for vigilant monitoring and verification processes to prevent such infiltrations. The incident serves as a reminder of the geopolitical dimensions of cybersecurity threats.",
             "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/11/rondodox-exploits-unpatched-xwiki.html"
+            "sourceUrl": "https://thehackernews.com/2025/11/five-us-citizens-plead-guilty-to.html"
         },
         {
             "date": "Nov 15 2025",
-            "title": "Cyberattack Costs Jaguar Land Rover Over $220 Million",
-            "content": "Jaguar Land Rover has reported a staggering financial impact from a recent cyberattack, amounting to £196 million ($220 million) in losses for the quarter. This incident highlights the severe financial repercussions that can result from cybersecurity breaches, affecting both company operations and shareholder confidence. The attack serves as a stark reminder for organizations across industries to prioritize cybersecurity investments and incident response planning. As cyber threats continue to evolve, the automotive sector, like many others, must remain vigilant and proactive in safeguarding its digital assets. The financial toll of such attacks emphasizes the critical need for comprehensive security strategies.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/jaguar-land-rover-cyberattack-cost-the-company-over-220-million/"
-        },
-        {
-            "date": "Nov 14 2025",
-            "title": "Logitech Confirms Data Breach Following Clop Extortion Attack",
-            "content": "Logitech has confirmed a data breach resulting from a cyberattack by the Clop extortion gang, which targeted the company&#x27;s Oracle E-Business Suite in July. This breach highlights the persistent threat posed by ransomware and extortion groups, which continue to evolve their tactics to exploit vulnerabilities in enterprise systems. For cybersecurity professionals, this incident underscores the importance of robust data protection measures and the need for vigilant monitoring of third-party software. The attack on a major hardware accessory company like Logitech illustrates the widespread nature of such threats and the necessity for comprehensive security protocols to protect sensitive corporate data.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/logitech-confirms-data-breach-after-clop-extortion-attack/"
+            "title": "FortiWeb CVE-2025-64446 Exploits Detected in Honeypots",
+            "content": "The SANS Internet Storm Center has observed exploit attempts for CVE-2025-64446 in its honeypots, mirroring reports from other sources. This vulnerability in FortiWeb devices is being actively targeted, posing significant risks to unpatched systems. The exploitation attempts demonstrate the persistent threat landscape that security teams must navigate. It is imperative for organizations using FortiWeb to apply patches promptly to protect against potential breaches. This case highlights the critical importance of timely vulnerability management and patch deployment. Staying informed about such exploits is essential for maintaining robust security defenses in an ever-evolving threat environment.",
+            "source": "SANS Internet Storm Center, InfoCON: green",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32486"
         }
     ],
     "aiShorts": [
         {
-            "date": "Nov 14 2025",
-            "title": "Google Develops New AI Training Method to Enhance Small Model Reasoning",
-            "content": "Researchers from Google Cloud and UCLA have introduced a novel reinforcement learning framework aimed at boosting the reasoning capabilities of smaller language models. This method, termed Supervised Reinforcement Learning (SRL), redefines problem-solving into a series of logical steps, allowing models to tackle complex, multi-step reasoning tasks more effectively. This advancement is significant for AI professionals as it enables smaller, less resource-intensive models to perform tasks previously reserved for larger, more computationally expensive systems. By improving the efficiency and capability of smaller models, this approach could democratize access to advanced AI technologies, making them more accessible to a wider range of applications and industries.",
-            "source": "AI | VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/googles-new-ai-training-method-helps-small-models-tackle-complex-reasoning"
+            "date": "Nov 15 2025",
+            "title": "Leaked Documents Reveal OpenAI&#x27;s Financial Dealings with Microsoft",
+            "content": "Recently leaked documents have disclosed the financial terms between OpenAI and Microsoft, revealing a revenue-sharing agreement. The documents highlight the costs associated with inference, providing a glimpse into the financial mechanics behind AI operations. This revelation is significant for AI professionals as it underscores the economic dynamics of large-scale AI deployments. Understanding these costs is crucial for companies considering similar partnerships or investments in AI infrastructure. The transparency brought by these leaks may influence future negotiations and pricing strategies in the AI industry.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/14/leaked-documents-shed-light-into-how-much-openai-pays-microsoft/"
         },
         {
             "date": "Nov 14 2025",
-            "title": "Databricks Co-Founder Advocates for Open Source to Maintain US AI Leadership",
-            "content": "Andy Konwinski, a co-founder of Databricks, has raised concerns about the United States losing its edge in AI research to China. He argues that adopting an open-source approach could be crucial for the U.S. to regain its leadership in the AI sector. Konwinski suggests that open-source collaboration could accelerate innovation and development, providing a competitive advantage over China&#x27;s more centralized and government-driven AI initiatives. This perspective is vital for AI professionals as it highlights the strategic importance of open-source contributions in fostering a robust and dynamic AI ecosystem. The call for open-source adoption underscores the need for collaborative efforts to drive technological advancements and maintain global competitiveness.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/14/databricks-co-founder-argues-us-must-go-open-source-to-beat-china-in-ai/"
+            "title": "OpenAI Introduces ChatGPT Group Chats in Limited Release",
+            "content": "OpenAI has officially announced the introduction of Group Chats for ChatGPT, a feature previously hinted at through leaked code and discussions by AI influencers. This new functionality allows multiple users to participate in a single ChatGPT conversation, interacting both with each other and the AI model. While currently limited in availability, this feature could transform collaborative AI interactions, offering new possibilities for teamwork and communication. For AI professionals, this development highlights the evolving capabilities of conversational models and their potential applications in various sectors. The feature&#x27;s rollout will likely be closely monitored for its impact on user engagement and AI utility.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/ai/chatgpt-group-chats-are-here-but-not-for-everyone-yet"
         },
         {
             "date": "Nov 14 2025",
-            "title": "Comprehensive Overview of ChatGPT Updates and Features",
-            "content": "The article provides a detailed timeline of updates and releases for ChatGPT, the AI-powered chatbot developed by OpenAI. This ongoing documentation includes the latest enhancements and improvements made throughout the year, offering insights into the evolution of this popular AI tool. For AI professionals, staying informed about these updates is crucial as they reflect the continuous advancements in natural language processing and AI capabilities. Understanding the changes in ChatGPT can help developers and businesses leverage its features more effectively, enhancing user experiences and expanding the potential applications of conversational AI technologies.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/14/chatgpt-everything-to-know-about-the-ai-chatbot/"
+            "title": "The Rise of Harvey: A Legal Tech Startup&#x27;s Journey",
+            "content": "TechCrunch recently interviewed Winston Weinberg, CEO and co-founder of Harvey, a rapidly growing startup in Silicon Valley. Founded by Weinberg and Gabe Pereyra, Harvey has quickly gained attention for its innovative approach to legal technology. The company&#x27;s journey reflects the increasing intersection of AI and legal services, offering tools that could streamline legal processes and enhance efficiency. For AI and legal professionals, Harvey&#x27;s success story serves as a case study in leveraging AI to address industry-specific challenges. The startup&#x27;s trajectory may inspire further exploration of AI applications in the legal sector.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/14/inside-harvey-how-a-first-year-legal-associate-built-one-of-silicon-valleys-hottest-startups/"
         },
         {
             "date": "Nov 14 2025",
-            "title": "OpenAI Resolves ChatGPT&#x27;s Em Dash Usage Issue",
-            "content": "OpenAI has announced a fix for a known issue with ChatGPT regarding its frequent use of the em dash in text output. Users now have the option to personalize the chatbot to reduce or eliminate the use of em dashes, addressing a common user complaint. This update is significant for AI developers and users as it demonstrates OpenAI&#x27;s responsiveness to user feedback and commitment to improving the usability of its products. By allowing customization of output formatting, OpenAI enhances the flexibility and user-friendliness of ChatGPT, making it more adaptable to diverse user preferences and requirements.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/14/openai-says-its-fixed-chatgpts-em-dash-problem/"
+            "title": "Anthropic Unveils AI-Driven Cyber Espionage Campaign",
+            "content": "Anthropic has released a report detailing a sophisticated cyber espionage campaign orchestrated by AI, marking a new era of autonomous threats. The operation, attributed to a Chinese state-sponsored group, represents a significant advancement in the use of AI for cyber warfare. For security professionals, this revelation underscores the urgent need to develop defenses against AI-driven threats. The report highlights the complexity and potential impact of AI in cyber espionage, prompting a reevaluation of current security strategies. As AI continues to evolve, its role in cybersecurity will become increasingly critical.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/anthropic-details-cyber-espionage-campaign-orchestrated-by-ai/"
         },
         {
             "date": "Nov 14 2025",
-            "title": "OpenAI Explores Sparse Models for Enhanced Neural Network Debugging",
-            "content": "OpenAI is experimenting with sparse models as a new approach to designing neural networks, aiming to simplify the understanding, debugging, and governance of AI models. Sparse models, which utilize fewer parameters, could offer enterprises greater insight into the decision-making processes of AI systems. This initiative is crucial for AI professionals as it addresses the growing need for transparency and interpretability in AI models. By making it easier to understand how models reach decisions, sparse models can help developers identify and rectify errors more efficiently, ultimately leading to more reliable and trustworthy AI applications.",
-            "source": "AI | VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/openai-experiment-finds-that-sparse-models-could-give-ai-builders-the-tools"
+            "title": "ChatGPT Launches Pilot Group Chats in Select Regions",
+            "content": "OpenAI has launched a pilot program for ChatGPT Group Chats in Japan, New Zealand, South Korea, and Taiwan. Described as a &quot;small first step,&quot; this initiative aims to create a more communal experience within the app. The feature allows for private, invitation-only group interactions, with personal ChatGPT memory remaining secure. For AI professionals, this pilot represents a move towards more interactive and shared AI experiences, potentially reshaping user engagement. The regional rollout will provide valuable insights into user behavior and the scalability of such features in global markets.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/14/chatgpt-launches-pilot-group-chats-across-japan-new-zealand-south-korea-and-taiwan/"
         }
     ],
     "articles": {
@@ -374,5 +374,6 @@ var websiteContent = {
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-21042"
         }
-    ]
+    ],
+    "featureCards": []
 };
