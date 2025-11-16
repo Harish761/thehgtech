@@ -1,0 +1,68 @@
+{
+  "previous_day": {
+    "date": "2025-11-16T23:09:46.916176+05:30",
+    "categories": {
+      "Ransomware": {
+        "keywords": [
+          "ransomware",
+          "lockbit",
+          "blackcat"
+        ],
+        "count": 0
+      },
+      "Phishing": {
+        "keywords": [
+          "phishing",
+          "credential"
+        ],
+        "count": 0
+      },
+      "Cryptomining": {
+        "keywords": [
+          "cryptomining",
+          "miner"
+        ],
+        "count": 0
+      },
+      "RAT Deployments": {
+        "keywords": [
+          "rat",
+          "remcos",
+          "asyncrat"
+        ],
+        "count": 0
+      },
+      "Botnet": {
+        "keywords": [
+          "botnet",
+          "mirai"
+        ],
+        "count": 0
+      },
+      "APT": {
+        "keywords": [
+          "apt",
+          "nation-state"
+        ],
+        "count": 0
+      },
+      "Honeypot Scans": {
+        "keywords": [
+          "honeypot",
+          "bruteforce",
+          "ssh",
+          "cowrie",
+          "tanner"
+        ],
+        "count": 0
+      }
+    },
+    "sectors": {
+      "Healthcare": 0,
+      "Finance": 0,
+      "Technology": 0,
+      "Government": 0,
+      "Education": 0
+    }
+  }
+}
