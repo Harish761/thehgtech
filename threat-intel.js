@@ -1,9 +1,9 @@
 // Auto-Generated Threat Intel (RSS Feeds)
-// Updated: 2025-11-17T16:54:26.041194+05:30 IST
+// Updated: 2025-11-17T18:27:11.467250+05:30 IST
 // Sources: URLhaus, OpenPhish, Malware Traffic Analysis, ThreatFox
 
 const threatIntelData = {
-    "lastUpdated": "2025-11-17T16:54:26.041152+05:30",
+    "lastUpdated": "2025-11-17T18:27:11.467176+05:30",
     "comparisonPeriod": "Nov 16 \u2013 Nov 17, 2025",
     "hourlyThreats": [
         {
@@ -14,12 +14,12 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Malware Traffic Analysis",
             "sourceUrl": "https://www.malware-traffic-analysis.net/2025/10/08/index.html",
-            "analysisTime": "2025-11-17 16:54 IST",
+            "analysisTime": "2025-11-17 18:27 IST",
             "tags": [
                 "live",
                 "malware-traffic-analysis"
             ],
-            "addedAt": "2025-11-17T16:54:20.620827+05:30",
+            "addedAt": "2025-11-17T18:27:05.792441+05:30",
             "campaign": "Unknown"
         },
         {
@@ -30,13 +30,13 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Malware Traffic Analysis",
             "sourceUrl": "https://www.malware-traffic-analysis.net/2025/10/06/index.html",
-            "analysisTime": "2025-11-17 16:54 IST",
+            "analysisTime": "2025-11-17 18:27 IST",
             "tags": [
                 "live",
                 "malware-traffic-analysis",
                 "phishing"
             ],
-            "addedAt": "2025-11-17T16:54:20.620827+05:30",
+            "addedAt": "2025-11-17T18:27:05.792441+05:30",
             "campaign": "Generic Phishing"
         },
         {
@@ -47,13 +47,13 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Malware Traffic Analysis",
             "sourceUrl": "https://www.malware-traffic-analysis.net/2025/10/02/index.html",
-            "analysisTime": "2025-11-17 16:54 IST",
+            "analysisTime": "2025-11-17 18:27 IST",
             "tags": [
                 "live",
                 "malware-traffic-analysis",
                 "malware"
             ],
-            "addedAt": "2025-11-17T16:54:20.620827+05:30",
+            "addedAt": "2025-11-17T18:27:05.792441+05:30",
             "campaign": "Unknown"
         },
         {
@@ -64,12 +64,12 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Malware Traffic Analysis",
             "sourceUrl": "https://www.malware-traffic-analysis.net/2025/10/01/index.html",
-            "analysisTime": "2025-11-17 16:54 IST",
+            "analysisTime": "2025-11-17 18:27 IST",
             "tags": [
                 "live",
                 "malware-traffic-analysis"
             ],
-            "addedAt": "2025-11-17T16:54:20.620827+05:30",
+            "addedAt": "2025-11-17T18:27:05.792441+05:30",
             "campaign": "Unknown"
         },
         {
@@ -80,13 +80,183 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Malware Traffic Analysis",
             "sourceUrl": "https://www.malware-traffic-analysis.net/2025/09/24/index.html",
-            "analysisTime": "2025-11-17 16:54 IST",
+            "analysisTime": "2025-11-17 18:27 IST",
             "tags": [
                 "live",
                 "malware-traffic-analysis",
                 "malware"
             ],
-            "addedAt": "2025-11-17T16:54:20.620827+05:30",
+            "addedAt": "2025-11-17T18:27:05.792441+05:30",
+            "campaign": "Unknown"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://waplsapp[.]com/es/",
+            "pulse": "OpenPhish",
+            "description": "Active phishing URL",
+            "timestamp": "just now",
+            "source": "OpenPhish",
+            "sourceUrl": "https://openphish.com/",
+            "analysisTime": "2025-11-17 18:27 IST",
+            "tags": [
+                "phishing",
+                "live",
+                "automated"
+            ],
+            "addedAt": "2025-11-17T18:27:05.792441+05:30",
+            "campaign": "Unknown"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://waplsapp[.]com/es/sobre-nosotras/",
+            "pulse": "OpenPhish",
+            "description": "Active phishing URL",
+            "timestamp": "just now",
+            "source": "OpenPhish",
+            "sourceUrl": "https://openphish.com/",
+            "analysisTime": "2025-11-17 18:27 IST",
+            "tags": [
+                "phishing",
+                "live",
+                "automated"
+            ],
+            "addedAt": "2025-11-17T18:27:05.792441+05:30",
+            "campaign": "Unknown"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://waplsapp[.]com/es/contacte-con-nosotros/",
+            "pulse": "OpenPhish",
+            "description": "Active phishing URL",
+            "timestamp": "just now",
+            "source": "OpenPhish",
+            "sourceUrl": "https://openphish.com/",
+            "analysisTime": "2025-11-17 18:27 IST",
+            "tags": [
+                "phishing",
+                "live",
+                "automated"
+            ],
+            "addedAt": "2025-11-17T18:27:05.792441+05:30",
+            "campaign": "Unknown"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://waplsapp[.]com/es/descargo-de-responsabilidad-de-la-dmca/",
+            "pulse": "OpenPhish",
+            "description": "Active phishing URL",
+            "timestamp": "just now",
+            "source": "OpenPhish",
+            "sourceUrl": "https://openphish.com/",
+            "analysisTime": "2025-11-17 18:27 IST",
+            "tags": [
+                "phishing",
+                "live",
+                "automated"
+            ],
+            "addedAt": "2025-11-17T18:27:05.792441+05:30",
+            "campaign": "Unknown"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://waplsapp[.]com/es/politica-de-privacidad/",
+            "pulse": "OpenPhish",
+            "description": "Active phishing URL",
+            "timestamp": "just now",
+            "source": "OpenPhish",
+            "sourceUrl": "https://openphish.com/",
+            "analysisTime": "2025-11-17 18:27 IST",
+            "tags": [
+                "phishing",
+                "live",
+                "automated"
+            ],
+            "addedAt": "2025-11-17T18:27:05.792441+05:30",
+            "campaign": "Unknown"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxp://meta-venrok-krayth-syrol[.]pages[.]dev/",
+            "pulse": "OpenPhish",
+            "description": "Active phishing URL",
+            "timestamp": "just now",
+            "source": "OpenPhish",
+            "sourceUrl": "https://openphish.com/",
+            "analysisTime": "2025-11-17 18:27 IST",
+            "tags": [
+                "phishing",
+                "live",
+                "automated"
+            ],
+            "addedAt": "2025-11-17T18:27:05.792441+05:30",
+            "campaign": "Unknown"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxp://tk-store-13[.]top/start[.]html",
+            "pulse": "OpenPhish",
+            "description": "Active phishing URL",
+            "timestamp": "just now",
+            "source": "OpenPhish",
+            "sourceUrl": "https://openphish.com/",
+            "analysisTime": "2025-11-17 18:27 IST",
+            "tags": [
+                "phishing",
+                "live",
+                "automated"
+            ],
+            "addedAt": "2025-11-17T18:27:05.792441+05:30",
+            "campaign": "Unknown"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://www[.]tk-store[.]shop/start[.]html",
+            "pulse": "OpenPhish",
+            "description": "Active phishing URL",
+            "timestamp": "just now",
+            "source": "OpenPhish",
+            "sourceUrl": "https://openphish.com/",
+            "analysisTime": "2025-11-17 18:27 IST",
+            "tags": [
+                "phishing",
+                "live",
+                "automated"
+            ],
+            "addedAt": "2025-11-17T18:27:05.792441+05:30",
+            "campaign": "Unknown"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://tk-store-12[.]top/start[.]html",
+            "pulse": "OpenPhish",
+            "description": "Active phishing URL",
+            "timestamp": "just now",
+            "source": "OpenPhish",
+            "sourceUrl": "https://openphish.com/",
+            "analysisTime": "2025-11-17 18:27 IST",
+            "tags": [
+                "phishing",
+                "live",
+                "automated"
+            ],
+            "addedAt": "2025-11-17T18:27:05.792441+05:30",
+            "campaign": "Unknown"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://waplsapp[.]com/",
+            "pulse": "OpenPhish",
+            "description": "Active phishing URL",
+            "timestamp": "just now",
+            "source": "OpenPhish",
+            "sourceUrl": "https://openphish.com/",
+            "analysisTime": "2025-11-17 18:27 IST",
+            "tags": [
+                "phishing",
+                "live",
+                "automated"
+            ],
+            "addedAt": "2025-11-17T18:27:05.792441+05:30",
             "campaign": "Unknown"
         },
         {
@@ -94,7 +264,7 @@ const threatIntelData = {
             "indicator": "hxxp://wyra-hold[.]pages[.]dev/",
             "pulse": "OpenPhish",
             "description": "Active phishing URL",
-            "timestamp": "just now",
+            "timestamp": "1h ago",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
             "analysisTime": "2025-11-17 16:54 IST",
@@ -111,7 +281,7 @@ const threatIntelData = {
             "indicator": "hxxp://meta-gateway-6st[.]pages[.]dev/",
             "pulse": "OpenPhish",
             "description": "Active phishing URL",
-            "timestamp": "just now",
+            "timestamp": "1h ago",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
             "analysisTime": "2025-11-17 16:54 IST",
@@ -128,7 +298,7 @@ const threatIntelData = {
             "indicator": "hxxps://uu[.]edu[.]et/CH/Identifizierung/CSS/",
             "pulse": "OpenPhish",
             "description": "Active phishing URL",
-            "timestamp": "just now",
+            "timestamp": "1h ago",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
             "analysisTime": "2025-11-17 16:54 IST",
@@ -145,7 +315,7 @@ const threatIntelData = {
             "indicator": "hxxp://io[.]projectconsultant[.]be/",
             "pulse": "OpenPhish",
             "description": "Active phishing URL",
-            "timestamp": "just now",
+            "timestamp": "1h ago",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
             "analysisTime": "2025-11-17 16:54 IST",
@@ -162,7 +332,7 @@ const threatIntelData = {
             "indicator": "hxxps://www[.]io[.]projectconsultant[.]be/",
             "pulse": "OpenPhish",
             "description": "Active phishing URL",
-            "timestamp": "just now",
+            "timestamp": "1h ago",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
             "analysisTime": "2025-11-17 16:54 IST",
@@ -173,199 +343,27 @@ const threatIntelData = {
             ],
             "addedAt": "2025-11-17T16:54:20.620827+05:30",
             "campaign": "Unknown"
-        },
-        {
-            "type": "url",
-            "indicator": "hxxp://www[.]im[.]routinecoach[.]be/",
-            "pulse": "OpenPhish",
-            "description": "Active phishing URL",
-            "timestamp": "just now",
-            "source": "OpenPhish",
-            "sourceUrl": "https://openphish.com/",
-            "analysisTime": "2025-11-17 16:54 IST",
-            "tags": [
-                "phishing",
-                "live",
-                "automated"
-            ],
-            "addedAt": "2025-11-17T16:54:20.620827+05:30",
-            "campaign": "Unknown"
-        },
-        {
-            "type": "url",
-            "indicator": "hxxp://netprotocolq-ca17ve11gid-authnotion[.]pages[.]dev/",
-            "pulse": "OpenPhish",
-            "description": "Active phishing URL",
-            "timestamp": "just now",
-            "source": "OpenPhish",
-            "sourceUrl": "https://openphish.com/",
-            "analysisTime": "2025-11-17 16:54 IST",
-            "tags": [
-                "phishing",
-                "live",
-                "automated"
-            ],
-            "addedAt": "2025-11-17T16:54:20.620827+05:30",
-            "campaign": "Unknown"
-        },
-        {
-            "type": "url",
-            "indicator": "hxxp://cyberprotecm-cag17z11id-advercanoni[.]pages[.]dev/",
-            "pulse": "OpenPhish",
-            "description": "Active phishing URL",
-            "timestamp": "just now",
-            "source": "OpenPhish",
-            "sourceUrl": "https://openphish.com/",
-            "analysisTime": "2025-11-17 16:54 IST",
-            "tags": [
-                "phishing",
-                "live",
-                "automated"
-            ],
-            "addedAt": "2025-11-17T16:54:20.620827+05:30",
-            "campaign": "Unknown"
-        },
-        {
-            "type": "url",
-            "indicator": "hxxp://requrections-bussinese-c1711p-infosecurexq[.]pages[.]dev/",
-            "pulse": "OpenPhish",
-            "description": "Active phishing URL",
-            "timestamp": "just now",
-            "source": "OpenPhish",
-            "sourceUrl": "https://openphish.com/",
-            "analysisTime": "2025-11-17 16:54 IST",
-            "tags": [
-                "phishing",
-                "live",
-                "automated"
-            ],
-            "addedAt": "2025-11-17T16:54:20.620827+05:30",
-            "campaign": "Unknown"
-        },
-        {
-            "type": "url",
-            "indicator": "hxxp://ffgarenafreefireredofgicualredeemsite[.]blogspot[.]co[.]za/",
-            "pulse": "OpenPhish",
-            "description": "Active phishing URL",
-            "timestamp": "just now",
-            "source": "OpenPhish",
-            "sourceUrl": "https://openphish.com/",
-            "analysisTime": "2025-11-17 16:54 IST",
-            "tags": [
-                "phishing",
-                "live",
-                "automated"
-            ],
-            "addedAt": "2025-11-17T16:54:20.620827+05:30",
-            "campaign": "Unknown"
-        },
-        {
-            "type": "url",
-            "indicator": "hxxps://www3-vpass[.]kqccn[.]cn/?convert=dzjbeufde0p91e2btkqe8sp2",
-            "pulse": "OpenPhish",
-            "description": "Active phishing URL",
-            "timestamp": "6h ago",
-            "source": "OpenPhish",
-            "sourceUrl": "https://openphish.com/",
-            "analysisTime": "2025-11-17 12:00 IST",
-            "tags": [
-                "phishing",
-                "live",
-                "automated"
-            ],
-            "addedAt": "2025-11-17T10:00:22.758600+05:30",
-            "campaign": "Generic Phishing"
-        },
-        {
-            "type": "url",
-            "indicator": "hxxps://vpass-jp[.]zsukc[.]cn/?reward=urcfwusra61bloxtodi26rcw",
-            "pulse": "OpenPhish",
-            "description": "Active phishing URL",
-            "timestamp": "6h ago",
-            "source": "OpenPhish",
-            "sourceUrl": "https://openphish.com/",
-            "analysisTime": "2025-11-17 12:00 IST",
-            "tags": [
-                "phishing",
-                "live",
-                "automated"
-            ],
-            "addedAt": "2025-11-17T10:00:22.758600+05:30",
-            "campaign": "Generic Phishing"
-        },
-        {
-            "type": "url",
-            "indicator": "hxxps://indiaiiposptgov[.]icu/in/",
-            "pulse": "OpenPhish",
-            "description": "Active phishing URL",
-            "timestamp": "7h ago",
-            "source": "OpenPhish",
-            "sourceUrl": "https://openphish.com/",
-            "analysisTime": "2025-11-17 12:00 IST",
-            "tags": [
-                "phishing",
-                "live",
-                "automated"
-            ],
-            "addedAt": "2025-11-17T09:00:22.758600+05:30",
-            "campaign": "Generic Phishing"
-        },
-        {
-            "type": "domain",
-            "indicator": "emotet[.]malware-tracker[.]net",
-            "pulse": "ThreatFox",
-            "description": "Emotet - botnet_cc",
-            "timestamp": "8h ago",
-            "source": "ThreatFox (abuse.ch)",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2025-11-17 12:00 IST",
-            "tags": [
-                "malware",
-                "live",
-                "threatfox",
-                "c2"
-            ],
-            "addedAt": "2025-11-17T08:00:22.758600+05:30",
-            "campaign": "Emotet"
-        },
-        {
-            "type": "ip",
-            "indicator": "185[.]215[.]113[.]66",
-            "pulse": "ThreatFox",
-            "description": "QakBot - botnet_cc",
-            "timestamp": "9h ago",
-            "source": "ThreatFox (abuse.ch)",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2025-11-17 12:00 IST",
-            "tags": [
-                "malware",
-                "live",
-                "threatfox",
-                "c2"
-            ],
-            "addedAt": "2025-11-17T07:00:22.758600+05:30",
-            "campaign": "QakBot"
         }
     ],
     "dailySummary": {
         "stats": {
             "totalIndicators": 20,
-            "newReports": 3,
-            "criticalAlerts": 6,
-            "activeCampaigns": 4
+            "newReports": 2,
+            "criticalAlerts": 4,
+            "activeCampaigns": 2
         },
         "topThreats": [
             {
                 "category": "Phishing",
-                "count": 14,
-                "trend": "stable",
-                "percentage": 0
+                "count": 16,
+                "trend": "up",
+                "percentage": 14
             },
             {
                 "category": "Malware",
-                "count": 6,
-                "trend": "stable",
-                "percentage": 0
+                "count": 4,
+                "trend": "down",
+                "percentage": -33
             },
             {
                 "category": "C2",
@@ -383,11 +381,7 @@ const threatIntelData = {
         "targetedSectors": [
             {
                 "name": "General",
-                "percentage": 95
-            },
-            {
-                "name": "Government",
-                "percentage": 5
+                "percentage": 100
             }
         ],
         "geoDistribution": [
@@ -411,7 +405,7 @@ const threatIntelData = {
         "campaigns": [
             {
                 "name": "Unknown",
-                "count": 14,
+                "count": 19,
                 "types": [
                     "url"
                 ],
@@ -423,47 +417,22 @@ const threatIntelData = {
             },
             {
                 "name": "Generic Phishing",
-                "count": 4,
+                "count": 1,
                 "types": [
                     "url"
                 ],
                 "sampleIndicators": [
-                    "Japanese phishing emails",
-                    "hxxps://www3-vpass[.]kqccn[.]cn/?convert=dzjbeufde0p91e2btkqe8sp2",
-                    "hxxps://vpass-jp[.]zsukc[.]cn/?reward=urcfwusra61bloxtodi26rcw"
-                ]
-            },
-            {
-                "name": "Emotet",
-                "count": 1,
-                "types": [
-                    "domain"
-                ],
-                "sampleIndicators": [
-                    "emotet[.]malware-tracker[.]net"
-                ]
-            },
-            {
-                "name": "QakBot",
-                "count": 1,
-                "types": [
-                    "ip"
-                ],
-                "sampleIndicators": [
-                    "185[.]215[.]113[.]66"
+                    "Japanese phishing emails"
                 ]
             }
         ],
         "indicatorBreakdown": {
             "byType": {
-                "url": 18,
-                "domain": 1,
-                "ip": 1
+                "url": 20
             },
             "bySource": {
                 "Malware Traffic Analysis": 5,
-                "OpenPhish": 13,
-                "ThreatFox (abuse.ch)": 2
+                "OpenPhish": 15
             }
         }
     }
