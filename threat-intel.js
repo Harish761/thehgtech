@@ -1,9 +1,9 @@
 // Auto-Generated Threat Intel (RSS Feeds)
-// Updated: 2025-11-17T18:27:11.467250+05:30 IST
+// Updated: 2025-11-17T19:08:15.463438+05:30 IST
 // Sources: URLhaus, OpenPhish, Malware Traffic Analysis, ThreatFox
 
 const threatIntelData = {
-    "lastUpdated": "2025-11-17T18:27:11.467176+05:30",
+    "lastUpdated": "2025-11-17T19:08:15.463377+05:30",
     "comparisonPeriod": "Nov 16 \u2013 Nov 17, 2025",
     "hourlyThreats": [
         {
@@ -14,12 +14,12 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Malware Traffic Analysis",
             "sourceUrl": "https://www.malware-traffic-analysis.net/2025/10/08/index.html",
-            "analysisTime": "2025-11-17 18:27 IST",
+            "analysisTime": "2025-11-17 19:08 IST",
             "tags": [
                 "live",
                 "malware-traffic-analysis"
             ],
-            "addedAt": "2025-11-17T18:27:05.792441+05:30",
+            "addedAt": "2025-11-17T19:08:09.971440+05:30",
             "campaign": "Unknown"
         },
         {
@@ -30,13 +30,13 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Malware Traffic Analysis",
             "sourceUrl": "https://www.malware-traffic-analysis.net/2025/10/06/index.html",
-            "analysisTime": "2025-11-17 18:27 IST",
+            "analysisTime": "2025-11-17 19:08 IST",
             "tags": [
                 "live",
                 "malware-traffic-analysis",
                 "phishing"
             ],
-            "addedAt": "2025-11-17T18:27:05.792441+05:30",
+            "addedAt": "2025-11-17T19:08:09.971440+05:30",
             "campaign": "Generic Phishing"
         },
         {
@@ -47,13 +47,13 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Malware Traffic Analysis",
             "sourceUrl": "https://www.malware-traffic-analysis.net/2025/10/02/index.html",
-            "analysisTime": "2025-11-17 18:27 IST",
+            "analysisTime": "2025-11-17 19:08 IST",
             "tags": [
                 "live",
                 "malware-traffic-analysis",
                 "malware"
             ],
-            "addedAt": "2025-11-17T18:27:05.792441+05:30",
+            "addedAt": "2025-11-17T19:08:09.971440+05:30",
             "campaign": "Unknown"
         },
         {
@@ -64,12 +64,12 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Malware Traffic Analysis",
             "sourceUrl": "https://www.malware-traffic-analysis.net/2025/10/01/index.html",
-            "analysisTime": "2025-11-17 18:27 IST",
+            "analysisTime": "2025-11-17 19:08 IST",
             "tags": [
                 "live",
                 "malware-traffic-analysis"
             ],
-            "addedAt": "2025-11-17T18:27:05.792441+05:30",
+            "addedAt": "2025-11-17T19:08:09.971440+05:30",
             "campaign": "Unknown"
         },
         {
@@ -80,13 +80,13 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Malware Traffic Analysis",
             "sourceUrl": "https://www.malware-traffic-analysis.net/2025/09/24/index.html",
-            "analysisTime": "2025-11-17 18:27 IST",
+            "analysisTime": "2025-11-17 19:08 IST",
             "tags": [
                 "live",
                 "malware-traffic-analysis",
                 "malware"
             ],
-            "addedAt": "2025-11-17T18:27:05.792441+05:30",
+            "addedAt": "2025-11-17T19:08:09.971440+05:30",
             "campaign": "Unknown"
         },
         {
@@ -97,13 +97,13 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
-            "analysisTime": "2025-11-17 18:27 IST",
+            "analysisTime": "2025-11-17 19:08 IST",
             "tags": [
                 "phishing",
                 "live",
                 "automated"
             ],
-            "addedAt": "2025-11-17T18:27:05.792441+05:30",
+            "addedAt": "2025-11-17T19:08:09.971440+05:30",
             "campaign": "Unknown"
         },
         {
@@ -114,13 +114,13 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
-            "analysisTime": "2025-11-17 18:27 IST",
+            "analysisTime": "2025-11-17 19:08 IST",
             "tags": [
                 "phishing",
                 "live",
                 "automated"
             ],
-            "addedAt": "2025-11-17T18:27:05.792441+05:30",
+            "addedAt": "2025-11-17T19:08:09.971440+05:30",
             "campaign": "Unknown"
         },
         {
@@ -131,13 +131,13 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
-            "analysisTime": "2025-11-17 18:27 IST",
+            "analysisTime": "2025-11-17 19:08 IST",
             "tags": [
                 "phishing",
                 "live",
                 "automated"
             ],
-            "addedAt": "2025-11-17T18:27:05.792441+05:30",
+            "addedAt": "2025-11-17T19:08:09.971440+05:30",
             "campaign": "Unknown"
         },
         {
@@ -148,13 +148,13 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
-            "analysisTime": "2025-11-17 18:27 IST",
+            "analysisTime": "2025-11-17 19:08 IST",
             "tags": [
                 "phishing",
                 "live",
                 "automated"
             ],
-            "addedAt": "2025-11-17T18:27:05.792441+05:30",
+            "addedAt": "2025-11-17T19:08:09.971440+05:30",
             "campaign": "Unknown"
         },
         {
@@ -165,13 +165,13 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
-            "analysisTime": "2025-11-17 18:27 IST",
+            "analysisTime": "2025-11-17 19:08 IST",
             "tags": [
                 "phishing",
                 "live",
                 "automated"
             ],
-            "addedAt": "2025-11-17T18:27:05.792441+05:30",
+            "addedAt": "2025-11-17T19:08:09.971440+05:30",
             "campaign": "Unknown"
         },
         {
@@ -182,13 +182,13 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
-            "analysisTime": "2025-11-17 18:27 IST",
+            "analysisTime": "2025-11-17 19:08 IST",
             "tags": [
                 "phishing",
                 "live",
                 "automated"
             ],
-            "addedAt": "2025-11-17T18:27:05.792441+05:30",
+            "addedAt": "2025-11-17T19:08:09.971440+05:30",
             "campaign": "Unknown"
         },
         {
@@ -199,13 +199,13 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
-            "analysisTime": "2025-11-17 18:27 IST",
+            "analysisTime": "2025-11-17 19:08 IST",
             "tags": [
                 "phishing",
                 "live",
                 "automated"
             ],
-            "addedAt": "2025-11-17T18:27:05.792441+05:30",
+            "addedAt": "2025-11-17T19:08:09.971440+05:30",
             "campaign": "Unknown"
         },
         {
@@ -216,13 +216,13 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
-            "analysisTime": "2025-11-17 18:27 IST",
+            "analysisTime": "2025-11-17 19:08 IST",
             "tags": [
                 "phishing",
                 "live",
                 "automated"
             ],
-            "addedAt": "2025-11-17T18:27:05.792441+05:30",
+            "addedAt": "2025-11-17T19:08:09.971440+05:30",
             "campaign": "Unknown"
         },
         {
@@ -233,13 +233,13 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
-            "analysisTime": "2025-11-17 18:27 IST",
+            "analysisTime": "2025-11-17 19:08 IST",
             "tags": [
                 "phishing",
                 "live",
                 "automated"
             ],
-            "addedAt": "2025-11-17T18:27:05.792441+05:30",
+            "addedAt": "2025-11-17T19:08:09.971440+05:30",
             "campaign": "Unknown"
         },
         {
@@ -250,13 +250,13 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
-            "analysisTime": "2025-11-17 18:27 IST",
+            "analysisTime": "2025-11-17 19:08 IST",
             "tags": [
                 "phishing",
                 "live",
                 "automated"
             ],
-            "addedAt": "2025-11-17T18:27:05.792441+05:30",
+            "addedAt": "2025-11-17T19:08:09.971440+05:30",
             "campaign": "Unknown"
         },
         {
@@ -264,7 +264,7 @@ const threatIntelData = {
             "indicator": "hxxp://wyra-hold[.]pages[.]dev/",
             "pulse": "OpenPhish",
             "description": "Active phishing URL",
-            "timestamp": "1h ago",
+            "timestamp": "2h ago",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
             "analysisTime": "2025-11-17 16:54 IST",
@@ -281,7 +281,7 @@ const threatIntelData = {
             "indicator": "hxxp://meta-gateway-6st[.]pages[.]dev/",
             "pulse": "OpenPhish",
             "description": "Active phishing URL",
-            "timestamp": "1h ago",
+            "timestamp": "2h ago",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
             "analysisTime": "2025-11-17 16:54 IST",
@@ -298,7 +298,7 @@ const threatIntelData = {
             "indicator": "hxxps://uu[.]edu[.]et/CH/Identifizierung/CSS/",
             "pulse": "OpenPhish",
             "description": "Active phishing URL",
-            "timestamp": "1h ago",
+            "timestamp": "2h ago",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
             "analysisTime": "2025-11-17 16:54 IST",
@@ -315,7 +315,7 @@ const threatIntelData = {
             "indicator": "hxxp://io[.]projectconsultant[.]be/",
             "pulse": "OpenPhish",
             "description": "Active phishing URL",
-            "timestamp": "1h ago",
+            "timestamp": "2h ago",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
             "analysisTime": "2025-11-17 16:54 IST",
@@ -332,7 +332,7 @@ const threatIntelData = {
             "indicator": "hxxps://www[.]io[.]projectconsultant[.]be/",
             "pulse": "OpenPhish",
             "description": "Active phishing URL",
-            "timestamp": "1h ago",
+            "timestamp": "2h ago",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
             "analysisTime": "2025-11-17 16:54 IST",
@@ -356,14 +356,14 @@ const threatIntelData = {
             {
                 "category": "Phishing",
                 "count": 16,
-                "trend": "up",
-                "percentage": 14
+                "trend": "stable",
+                "percentage": 0
             },
             {
                 "category": "Malware",
                 "count": 4,
-                "trend": "down",
-                "percentage": -33
+                "trend": "stable",
+                "percentage": 0
             },
             {
                 "category": "C2",
