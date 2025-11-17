@@ -2,8 +2,8 @@
   "previous_day": {
     "date": "2025-11-17",
     "categories": {
-      "Phishing": 16,
-      "Malware": 4,
+      "Phishing": 10,
+      "Malware": 0,
       "C2": 0,
       "Botnet": 0
     }
