@@ -8,6 +8,8 @@ Updates threat-intel.js with:
   • Hourly: 20 fresh IOCs (defanged, with source attribution)
   • Daily: Stats, trends, sectors, geo, campaign tracking
 No API keys. No timeouts. Pure RSS.
+
+FIXED: Now extracts actual IOCs (URLs/IPs) from content, not blog titles
 """
 
 import os
@@ -37,12 +39,6 @@ RSS_FEEDS = {
         "type": "rss",
         "description": "Malicious URL database by abuse.ch",
         "website": "https://urlhaus.abuse.ch/"
-    },
-    "Malware Traffic Analysis": {
-        "url": "https://www.malware-traffic-analysis.net/blog-entries.rss",
-        "type": "rss",
-        "description": "Network traffic analysis by Brad Duncan",
-        "website": "https://www.malware-traffic-analysis.net/"
     },
     "OpenPhish": {
         "url": "https://openphish.com/feed.txt",
@@ -87,9 +83,9 @@ def fetch_rss_iocs():
                         ioc = parse_threatfox(item, now, config)
                         if ioc:
                             iocs.append(ioc)
-            else:
+            else:  # RSS type
                 feed = feedparser.parse(config["url"])
-                for entry in feed.entries[:8]:
+                for entry in feed.entries[:10]:
                     ioc = extract_ioc_from_entry(entry, name, now, config)
                     if ioc:
                         iocs.append(ioc)
@@ -119,9 +115,13 @@ def parse_threatfox(item, now, config):
     malware = item.get('malware', 'Unknown')
     threat_type = item.get('threat_type', '')
     
+    # For IP:port, extract just the IP
+    if ':' in ioc_value and ioc_type == 'ip':
+        ioc_value = ioc_value.split(':')[0]
+    
     return {
         'type': ioc_type,
-        'indicator': defang_indicator(ioc_value.split(':')[0] if ':' in ioc_value and ioc_type == 'ip' else ioc_value, ioc_type),
+        'indicator': defang_indicator(ioc_value, ioc_type),
         'pulse': 'ThreatFox',
         'description': f"{malware} - {threat_type}" if threat_type else malware,
         'timestamp': 'just now',
@@ -146,30 +146,84 @@ def parse_openphish(url, now, config):
         'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
         'tags': ['phishing', 'live', 'automated'],
         'addedAt': now.isoformat(),
-        'campaign': detect_campaign(url, '')
+        'campaign': detect_campaign(url, 'phishing')
     }
 
 def extract_ioc_from_entry(entry, feed_name, now, config):
-    """Extract IOC from RSS entry"""
+    """Extract ACTUAL IOC from RSS entry (URLs, IPs, domains - not blog titles!)"""
     title = entry.get('title', '').strip()
     link = entry.get('link', '')
     desc = entry.get('description', '') or entry.get('summary', '')
     
-    # Extract primary indicator
-    indicator = extract_indicator_from_text(title, desc)
-    if not indicator or len(indicator) < 4:
+    # Combine all text to search for IOCs
+    all_text = title + ' ' + desc
+    
+    # URLhaus RSS typically has the malicious URL directly
+    if feed_name == "URLhaus":
+        # Look for the malicious URL in the entry
+        url_match = re.search(r'https?://[^\s<>"\']+', all_text)
+        if url_match:
+            indicator = url_match.group(0).rstrip('.,;:)')
+            ioc_type = 'url'
+            
+            # Clean up description
+            clean_desc = clean_html(desc)[:150] if desc else "Malicious URL"
+            
+            return {
+                'type': ioc_type,
+                'indicator': defang_indicator(indicator, ioc_type),
+                'pulse': feed_name,
+                'description': clean_desc,
+                'timestamp': 'just now',
+                'source': feed_name,
+                'sourceUrl': link or config['website'],
+                'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
+                'tags': generate_tags(ioc_type, clean_desc, feed_name),
+                'addedAt': now.isoformat(),
+                'campaign': detect_campaign(indicator, clean_desc)
+            }
         return None
-
-    ioc_type = detect_ioc_type(indicator)
+    
+    # For other RSS feeds, try to extract actual IOCs
+    # Priority: URL > IP > Domain
+    
+    # 1. Try to find URLs (most specific)
+    url_matches = re.findall(r'https?://[^\s<>"\']+', all_text)
+    if url_matches:
+        indicator = url_matches[0].rstrip('.,;:)')
+        ioc_type = 'url'
+    else:
+        # 2. Try to find IPs
+        ip_matches = re.findall(r'\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b', all_text)
+        if ip_matches:
+            indicator = ip_matches[0]
+            ioc_type = 'ip'
+        else:
+            # 3. Try to find domains (more careful regex)
+            domain_matches = re.findall(r'\b(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.)+(?:com|net|org|info|biz|ru|cn|xyz|top|pw|cc|ws|tk|ml|ga|cf|gq)\b', all_text)
+            if domain_matches:
+                indicator = domain_matches[0]
+                ioc_type = 'domain'
+            else:
+                # No valid IOC found - skip this entry
+                return None
+    
+    # Validate that we got an actual IOC, not just text
+    if ioc_type == 'url' and len(indicator) < 10:
+        return None
+    if ioc_type == 'ip' and not re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$', indicator):
+        return None
+    if ioc_type == 'domain' and '.' not in indicator:
+        return None
     
     # Defang the indicator
     safe = defang_indicator(indicator, ioc_type)
     
-    # Clean description
-    clean_desc = clean_html(desc)[:200] if desc else title[:150]
+    # Use title as description (it's more meaningful)
+    clean_desc = clean_html(title)[:200] if title else clean_html(desc)[:150]
     
     # Detect campaign/malware family
-    campaign = detect_campaign(indicator, clean_desc + ' ' + title)
+    campaign = detect_campaign(indicator, clean_desc)
 
     return {
         'type': ioc_type,
@@ -184,26 +238,6 @@ def extract_ioc_from_entry(entry, feed_name, now, config):
         'addedAt': now.isoformat(),
         'campaign': campaign
     }
-
-def extract_indicator_from_text(title, desc):
-    """Extract IOC indicator from title or description"""
-    # Try to find URL first
-    url_match = re.search(r'https?://[^\s<>"]+', title + ' ' + desc)
-    if url_match:
-        return url_match.group(0).rstrip('.,;:)')
-    
-    # Try to find IP
-    ip_match = re.search(r'\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b', title + ' ' + desc)
-    if ip_match:
-        return ip_match.group(0)
-    
-    # Try to find domain
-    domain_match = re.search(r'\b[a-zA-Z0-9][-a-zA-Z0-9]*\.[a-zA-Z]{2,}(?:\.[a-zA-Z]{2,})?\b', title)
-    if domain_match and '.' in domain_match.group(0):
-        return domain_match.group(0)
-    
-    # Fallback to first part of title
-    return title.split(' - ')[0].split(': ')[-1].strip()
 
 def detect_ioc_type(indicator):
     """Detect the type of IOC"""
@@ -236,7 +270,7 @@ def generate_tags(ioc_type, desc, feed_name):
     desc_lower = desc.lower()
     if any(x in desc_lower for x in ['phish', 'credential', 'login', 'bank']):
         tags.append('phishing')
-    if any(x in desc_lower for x in ['malware', 'trojan', 'ransomware', 'emotet', 'qakbot', 'icedid']):
+    if any(x in desc_lower for x in ['malware', 'trojan', 'ransomware', 'emotet', 'qakbot', 'icedid', 'lumma', 'stealer']):
         tags.append('malware')
     if any(x in desc_lower for x in ['c2', 'command', 'beacon', 'cobalt']):
         tags.append('c2')
@@ -259,6 +293,10 @@ def detect_campaign(indicator, desc):
         'AsyncRAT': ['asyncrat'],
         'NjRAT': ['njrat'],
         'Cobalt Strike': ['cobalt', 'beacon'],
+        'Lumma Stealer': ['lumma', 'lummastealer'],
+        'Rhadamanthys': ['rhadamanthys'],
+        'Vidar': ['vidar'],
+        'Raccoon': ['raccoon'],
         'Generic Phishing': ['phish', 'credential', 'bank', 'paypal', 'microsoft', 'office365']
     }
     
@@ -346,7 +384,7 @@ def generate_js(data):
     now = get_ist_now()
     return f"""// Auto-Generated Threat Intel (RSS Feeds)
 // Updated: {now.isoformat()} IST
-// Sources: URLhaus, OpenPhish, Malware Traffic Analysis, ThreatFox
+// Sources: URLhaus, OpenPhish, ThreatFox (abuse.ch)
 
 const threatIntelData = """ + json.dumps(data, indent=4) + ";\n"
 
@@ -355,7 +393,7 @@ const threatIntelData = """ + json.dumps(data, indent=4) + ";\n"
 # ──────────────────────────────────────────────────────────────
 CATEGORIES = {
     'Phishing': ['phish', 'credential', 'bank', 'login'],
-    'Malware': ['malware', 'trojan', 'ransomware', 'emotet', 'qakbot', 'icedid', 'formbook'],
+    'Malware': ['malware', 'trojan', 'ransomware', 'emotet', 'qakbot', 'icedid', 'formbook', 'lumma', 'stealer'],
     'C2': ['c2', 'command', 'beacon', 'cobalt'],
     'Botnet': ['botnet', 'ddos', 'bot']
 }
