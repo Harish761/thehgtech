@@ -1,9 +1,9 @@
 // Auto-Generated Threat Intel (RSS Feeds)
-// Updated: 2025-11-18T19:07:59.875400+05:30 IST
+// Updated: 2025-11-18T19:59:08.044565+05:30 IST
 // Sources: URLhaus, OpenPhish, ThreatFox (abuse.ch)
 
 const threatIntelData = {
-    "lastUpdated": "2025-11-18T19:07:59.875310+05:30",
+    "lastUpdated": "2025-11-18T19:59:08.044504+05:30",
     "comparisonPeriod": "Nov 17 \u2013 Nov 18, 2025",
     "hourlyThreats": [
         {
@@ -14,13 +14,13 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
-            "analysisTime": "2025-11-18 19:07 IST",
+            "analysisTime": "2025-11-18 19:59 IST",
             "tags": [
                 "phishing",
                 "live",
                 "automated"
             ],
-            "addedAt": "2025-11-18T19:07:55.515266+05:30",
+            "addedAt": "2025-11-18T19:59:03.537901+05:30",
             "campaign": "Generic Phishing"
         },
         {
@@ -31,13 +31,13 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
-            "analysisTime": "2025-11-18 19:07 IST",
+            "analysisTime": "2025-11-18 19:59 IST",
             "tags": [
                 "phishing",
                 "live",
                 "automated"
             ],
-            "addedAt": "2025-11-18T19:07:55.515266+05:30",
+            "addedAt": "2025-11-18T19:59:03.537901+05:30",
             "campaign": "Generic Phishing"
         },
         {
@@ -48,13 +48,13 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
-            "analysisTime": "2025-11-18 19:07 IST",
+            "analysisTime": "2025-11-18 19:59 IST",
             "tags": [
                 "phishing",
                 "live",
                 "automated"
             ],
-            "addedAt": "2025-11-18T19:07:55.515266+05:30",
+            "addedAt": "2025-11-18T19:59:03.537901+05:30",
             "campaign": "Generic Phishing"
         },
         {
@@ -65,13 +65,13 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
-            "analysisTime": "2025-11-18 19:07 IST",
+            "analysisTime": "2025-11-18 19:59 IST",
             "tags": [
                 "phishing",
                 "live",
                 "automated"
             ],
-            "addedAt": "2025-11-18T19:07:55.515266+05:30",
+            "addedAt": "2025-11-18T19:59:03.537901+05:30",
             "campaign": "Generic Phishing"
         },
         {
@@ -82,13 +82,13 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
-            "analysisTime": "2025-11-18 19:07 IST",
+            "analysisTime": "2025-11-18 19:59 IST",
             "tags": [
                 "phishing",
                 "live",
                 "automated"
             ],
-            "addedAt": "2025-11-18T19:07:55.515266+05:30",
+            "addedAt": "2025-11-18T19:59:03.537901+05:30",
             "campaign": "Generic Phishing"
         },
         {
@@ -99,13 +99,13 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
-            "analysisTime": "2025-11-18 19:07 IST",
+            "analysisTime": "2025-11-18 19:59 IST",
             "tags": [
                 "phishing",
                 "live",
                 "automated"
             ],
-            "addedAt": "2025-11-18T19:07:55.515266+05:30",
+            "addedAt": "2025-11-18T19:59:03.537901+05:30",
             "campaign": "Generic Phishing"
         },
         {
@@ -116,13 +116,13 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
-            "analysisTime": "2025-11-18 19:07 IST",
+            "analysisTime": "2025-11-18 19:59 IST",
             "tags": [
                 "phishing",
                 "live",
                 "automated"
             ],
-            "addedAt": "2025-11-18T19:07:55.515266+05:30",
+            "addedAt": "2025-11-18T19:59:03.537901+05:30",
             "campaign": "Generic Phishing"
         },
         {
@@ -133,13 +133,13 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
-            "analysisTime": "2025-11-18 19:07 IST",
+            "analysisTime": "2025-11-18 19:59 IST",
             "tags": [
                 "phishing",
                 "live",
                 "automated"
             ],
-            "addedAt": "2025-11-18T19:07:55.515266+05:30",
+            "addedAt": "2025-11-18T19:59:03.537901+05:30",
             "campaign": "Generic Phishing"
         },
         {
@@ -150,13 +150,13 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
-            "analysisTime": "2025-11-18 19:07 IST",
+            "analysisTime": "2025-11-18 19:59 IST",
             "tags": [
                 "phishing",
                 "live",
                 "automated"
             ],
-            "addedAt": "2025-11-18T19:07:55.515266+05:30",
+            "addedAt": "2025-11-18T19:59:03.537901+05:30",
             "campaign": "Generic Phishing"
         },
         {
@@ -167,13 +167,13 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
-            "analysisTime": "2025-11-18 19:07 IST",
+            "analysisTime": "2025-11-18 19:59 IST",
             "tags": [
                 "phishing",
                 "live",
                 "automated"
             ],
-            "addedAt": "2025-11-18T19:07:55.515266+05:30",
+            "addedAt": "2025-11-18T19:59:03.537901+05:30",
             "campaign": "Generic Phishing"
         },
         {
@@ -181,7 +181,7 @@ const threatIntelData = {
             "indicator": "hxxps://id-app-isoporte[.]com/icloud-archivos/code2022esp[.]php/",
             "pulse": "OpenPhish",
             "description": "Active phishing URL",
-            "timestamp": "2h ago",
+            "timestamp": "3h ago",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
             "analysisTime": "2025-11-18 16:55 IST",
@@ -198,7 +198,7 @@ const threatIntelData = {
             "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(ebe3554squ00gob4fgte4raq))/Main/Login",
             "pulse": "OpenPhish",
             "description": "Active phishing URL",
-            "timestamp": "2h ago",
+            "timestamp": "3h ago",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
             "analysisTime": "2025-11-18 16:55 IST",
@@ -215,7 +215,7 @@ const threatIntelData = {
             "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(ihoime0yxhgybtjtlduqnwa1))/Main/Login",
             "pulse": "OpenPhish",
             "description": "Active phishing URL",
-            "timestamp": "2h ago",
+            "timestamp": "3h ago",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
             "analysisTime": "2025-11-18 16:55 IST",
@@ -232,7 +232,7 @@ const threatIntelData = {
             "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(nafzrgv4s0tvx120xeann1ru))/Main/Login",
             "pulse": "OpenPhish",
             "description": "Active phishing URL",
-            "timestamp": "2h ago",
+            "timestamp": "3h ago",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
             "analysisTime": "2025-11-18 16:55 IST",
@@ -249,7 +249,7 @@ const threatIntelData = {
             "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(lvmflgsk4thjclxgy4kiomsx))/Main/Login",
             "pulse": "OpenPhish",
             "description": "Active phishing URL",
-            "timestamp": "2h ago",
+            "timestamp": "3h ago",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
             "analysisTime": "2025-11-18 16:55 IST",
@@ -266,7 +266,7 @@ const threatIntelData = {
             "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(yqdqb34tzs53hn1qo4s5ivsq))/Main/Login",
             "pulse": "OpenPhish",
             "description": "Active phishing URL",
-            "timestamp": "2h ago",
+            "timestamp": "3h ago",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
             "analysisTime": "2025-11-18 16:55 IST",
@@ -283,7 +283,7 @@ const threatIntelData = {
             "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(pivivix4auvfmpayho2l4ppc))/Main/Login",
             "pulse": "OpenPhish",
             "description": "Active phishing URL",
-            "timestamp": "2h ago",
+            "timestamp": "3h ago",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
             "analysisTime": "2025-11-18 16:55 IST",
@@ -300,7 +300,7 @@ const threatIntelData = {
             "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(3ojsml3lsvgclajoybh5dcsq))/Main/Login",
             "pulse": "OpenPhish",
             "description": "Active phishing URL",
-            "timestamp": "2h ago",
+            "timestamp": "3h ago",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
             "analysisTime": "2025-11-18 16:55 IST",
@@ -317,7 +317,7 @@ const threatIntelData = {
             "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(2fxxmqonvrt5epzih3xlj5if))/Main/Login",
             "pulse": "OpenPhish",
             "description": "Active phishing URL",
-            "timestamp": "2h ago",
+            "timestamp": "3h ago",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
             "analysisTime": "2025-11-18 16:55 IST",
@@ -334,7 +334,7 @@ const threatIntelData = {
             "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(anqrfgtcrnuu4ljqw5efwcup))/Main/Login",
             "pulse": "OpenPhish",
             "description": "Active phishing URL",
-            "timestamp": "2h ago",
+            "timestamp": "3h ago",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
             "analysisTime": "2025-11-18 16:55 IST",
