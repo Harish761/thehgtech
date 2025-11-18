@@ -4,46 +4,39 @@
 var websiteContent = {
     "cyberShorts": [
         {
-            "date": "Nov 17 2025",
-            "title": "DoorDash Data Breach Compromises Personal Information",
-            "content": "DoorDash has disclosed a data breach resulting from a successful social engineering attack on one of its employees. This breach led to the exposure of customers&#x27; names, addresses, email addresses, and phone numbers. Such incidents highlight the vulnerability of personal data to social engineering, a tactic that remains a potent threat despite advancements in cybersecurity measures. For security professionals, this breach underscores the importance of ongoing employee training in recognizing and responding to social engineering attempts. The incident also raises concerns about data protection practices and the robustness of security protocols in place to safeguard sensitive information.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/doordash-says-personal-information-stolen-in-data-breach/"
+            "date": "Nov 18 2025",
+            "title": "ISC Stormcast Discusses Latest Cybersecurity Trends and Threats",
+            "content": "The SANS Internet Storm Center has released its latest Stormcast podcast, providing insights into current cybersecurity trends and threats. This episode covers a range of topics relevant to IT security professionals, offering analysis on recent vulnerabilities and cyber incidents. The podcast serves as a valuable resource for staying informed about emerging threats and best practices in cybersecurity. It emphasizes the importance of vigilance and preparedness in the face of evolving cyber risks. The InfoCON status remains green, indicating a stable threat level, but listeners are encouraged to remain proactive in their security measures. This resource is essential for professionals looking to maintain robust security postures.",
+            "source": "SANS Internet Storm Center, InfoCON: green",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32496"
+        },
+        {
+            "date": "Nov 18 2025",
+            "title": "Microsoft Releases Emergency Update to Fix Windows 10 ESU Errors",
+            "content": "Microsoft has issued an out-of-band update, KB5072653, for Windows 10 to address installation issues with the November extended security updates. This emergency patch aims to resolve problems that have prevented some users from successfully installing critical security updates. The update is particularly significant for organizations relying on Extended Security Updates (ESU) to maintain protection against vulnerabilities. IT administrators are advised to apply this patch promptly to ensure their systems remain secure and up-to-date. The swift release underscores Microsoft&#x27;s commitment to maintaining system integrity and addressing user concerns promptly. This fix is crucial for maintaining operational security in enterprise environments.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-10-kb5072653-oob-update-fixes-esu-install-errors/"
         },
         {
             "date": "Nov 17 2025",
-            "title": "Five Individuals Admit to Aiding North Korean IT Workers in Fraud Scheme",
-            "content": "In a significant legal development, five individuals—Audricus Phagnasay, Jason Salazar, Alexander Paul Travis, Erick Ntekereze, and Oleksandr Didenko—have pleaded guilty to charges related to assisting North Korean IT workers. These workers were involved in fraudulent activities aimed at evading U.S. sanctions. The case sheds light on the complex networks that enable cybercriminal activities and the role of intermediaries in facilitating such operations. For cybersecurity experts, this case emphasizes the need for vigilance in monitoring and disrupting illicit cyber activities that may have geopolitical implications. It also highlights the challenges in enforcing international cybersecurity laws.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/5-plead-guilty-in-us-to-helping-north-korean-it-workers/"
+            "title": "Malicious NPM Packages Exploit Adspect to Evade Detection",
+            "content": "Security researchers have identified seven malicious packages on the Node Package Manager (npm) registry that exploit the Adspect service to redirect users to harmful sites. These packages employ Adspect to differentiate between researchers and potential victims, effectively evading security measures and leading unsuspecting users to malicious destinations. This tactic highlights the ongoing challenge of securing open-source ecosystems against sophisticated threats. Developers and security teams are urged to scrutinize npm packages carefully and employ robust security practices to mitigate risks. The incident underscores the importance of vigilance in managing dependencies and protecting software supply chains from exploitation.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/malicious-npm-packages-abuse-adspect-redirects-to-evade-security/"
         },
         {
             "date": "Nov 17 2025",
-            "title": "Weekly Cybersecurity Recap: Exploits, AI Hacks, and Criminal Networks",
-            "content": "This week&#x27;s cybersecurity landscape was marked by a series of alarming events, including the exploitation of Fortinet systems and sophisticated AI-driven hacks originating from China. Additionally, the fall of a prominent Phishing-as-a-Service (PhaaS) empire was reported. These developments illustrate the rapidly evolving tactics employed by cybercriminals, who are increasingly leveraging trusted technologies like AI and VPNs to conduct their operations stealthily. For professionals in the field, these incidents underscore the importance of continuous monitoring and the need for adaptive security strategies. The ability to anticipate and respond to such diverse threats is crucial in maintaining robust cybersecurity defenses.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/11/weekly-recap-fortinet-exploited-chinas.html"
+            "title": "xAI Unveils Grok 4.1 with Enhanced Performance and Accessibility",
+            "content": "Elon Musk&#x27;s xAI has launched Grok 4.1, an updated version of its AI model, offering improved quality and speed. This latest iteration builds on the existing Grok 4 framework, providing incremental enhancements that boost performance and user experience. The rollout is significant for AI professionals seeking cutting-edge tools for research and development. By offering these improvements for free, xAI aims to democratize access to advanced AI capabilities, fostering innovation across various sectors. The release is a testament to the rapid evolution of AI technologies and their growing impact on industries worldwide. Professionals are encouraged to explore Grok 4.1&#x27;s capabilities to enhance their AI projects.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/xais-grok-41-rolls-out-with-improved-quality-and-speed-for-free/"
         },
         {
             "date": "Nov 17 2025",
-            "title": "LinkedIn Emerges as a Prime Target for Phishing Attacks",
-            "content": "Phishing attacks are increasingly shifting away from traditional email channels, with LinkedIn becoming a prominent target. One in three phishing attacks now occur over platforms like social media and messaging apps. LinkedIn&#x27;s professional networking environment provides attackers with opportunities to execute sophisticated phishing schemes. For cybersecurity professionals, this trend highlights the necessity of extending phishing awareness and prevention strategies beyond email. Understanding the dynamics of social media-based phishing is critical for safeguarding users and organizations against these evolving threats, which exploit the trust inherent in professional networks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/11/5-reasons-why-attackers-are-phishing.html"
-        },
-        {
-            "date": "Nov 17 2025",
-            "title": "Dragon Breath Utilizes RONINGLOADER for Advanced Malware Deployment",
-            "content": "The cyber threat entity known as Dragon Breath has been observed using a multi-stage loader named RONINGLOADER to deploy a modified version of the Gh0st RAT malware. This campaign primarily targets Chinese-speaking users by utilizing trojanized NSIS installers disguised as legitimate software. The sophisticated use of RONINGLOADER to disable security tools before deploying malware signifies a concerning advancement in threat actors&#x27; capabilities. For cybersecurity experts, this highlights the importance of developing robust defenses against multi-stage attacks and underscores the need for vigilance in monitoring software integrity to prevent such intrusions.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/11/dragon-breath-uses-roningloader-to.html"
-        },
-        {
-            "date": "Nov 17 2025",
-            "title": "ISC Stormcast Highlights Cybersecurity Trends and Threats",
-            "content": "The SANS Internet Storm Center&#x27;s latest Stormcast for November 17th, 2025, offers insights into current cybersecurity threats and trends. This update is crucial for professionals in the field as it provides timely information on emerging vulnerabilities and attack vectors. The InfoCON status remains green, indicating a stable threat level, but vigilance is advised. Cybersecurity experts should leverage these insights to enhance their defensive strategies and stay ahead of potential threats. The Stormcast serves as a valuable resource for understanding the dynamic landscape of cybersecurity risks.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32494"
+            "title": "RondoDox Botnet Exploits XWiki Vulnerability for Server Attacks",
+            "content": "The RondoDox botnet has been observed exploiting a critical remote code execution vulnerability in the XWiki Platform, identified as CVE-2025-24893. This flaw allows attackers to gain unauthorized access to servers, posing a significant threat to organizations using XWiki. Security professionals are urged to apply patches and implement mitigation strategies to protect their systems from potential exploitation. The incident highlights the persistent risk of unpatched vulnerabilities being leveraged by malicious actors to compromise systems. It serves as a reminder of the importance of timely software updates and vigilant security practices in safeguarding digital infrastructures. Organizations must prioritize vulnerability management to defend against such threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/rondodox-botnet-malware-now-hacks-servers-using-xwiki-flaw/"
         },
         {
             "date": "Dec 03 2025",
@@ -55,39 +48,39 @@ var websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Nov 17 2025",
-            "title": "Bone AI Secures $12M to Innovate AI-Powered Defense Robotics in Asia",
-            "content": "Bone AI, a South Korean startup, has successfully raised $12 million to advance its development of AI-powered robotics for the defense sector. This funding positions Bone AI to directly compete with established defense industry leaders in Asia by leveraging cutting-edge AI and manufacturing techniques. The startup aims to create next-generation robotics that could potentially reshape regional defense strategies. This development is significant for AI professionals focused on defense applications, as it highlights the growing trend of integrating AI with traditional manufacturing to enhance military capabilities. The investment underscores the increasing importance of AI-driven technologies in national defense, a sector historically dominated by a few large players. As Bone AI progresses, it could set new standards for innovation and efficiency in defense robotics.",
+            "date": "Nov 18 2025",
+            "title": "Super PAC Targets AI Regulation Advocate in New York",
+            "content": "A super PAC backed by tech giants like Andreessen Horowitz and OpenAI has launched an attack on New York Assembly member Alex Bores, who is known for his support of AI regulation. This marks the first time the super PAC has targeted a lawmaker for their stance on AI safety. The move highlights the growing tension between tech industry leaders and policymakers pushing for stricter AI regulations. Bores, who is running for Congress, remains undeterred, welcoming the challenge as part of his campaign. This development underscores the contentious debate over AI safety and regulation, a critical issue for AI professionals concerned about ethical and secure AI deployment. The outcome of this confrontation could set a precedent for future interactions between tech companies and regulators.",
             "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/17/bone-ai-raises-funding-to-challenge-asias-defense-giants-with-next-gen-ai-powered-robotics/"
+            "sourceUrl": "https://techcrunch.com/2025/11/17/a16z-backed-super-pac-is-targeting-alex-bores-sponsor-of-new-yorks-ai-safety-bill-he-says-bring-it-on/"
         },
         {
             "date": "Nov 17 2025",
-            "title": "Sakana AI Raises $135M to Expand AI Model Development in Japan",
-            "content": "Sakana AI has successfully closed a $135 million Series B funding round, elevating its valuation to $2.65 billion. This funding round marks one of the largest in Japan this year, reflecting the company&#x27;s strong position in the AI sector. Sakana AI is focused on developing sophisticated AI models tailored for the Japanese market, which requires nuanced understanding of local languages and cultural contexts. For AI professionals, this move highlights the growing demand and investment in AI technologies that cater to specific regional needs. The significant valuation and funding round indicate investor confidence in Sakana AI&#x27;s potential to lead in the AI space within Japan. As the company continues to innovate, it could pave the way for more localized AI solutions in the region.",
+            "title": "Google Expands AI-Powered &#x27;Flight Deals&#x27; Tool Globally",
+            "content": "Google has globally launched its AI-driven &#x27;Flight Deals&#x27; tool, enhancing its travel-related offerings in Search. Users can now input their travel preferences, such as destination, timing, and travel style, and the tool will utilize AI to present the best available flight bargains. This expansion is part of Google&#x27;s strategy to integrate AI into everyday tools, making travel planning more efficient and personalized. For AI professionals, this development illustrates the increasing application of AI in consumer services, showcasing how machine learning can optimize decision-making processes. The tool&#x27;s global rollout could influence how travel agencies and competitors leverage AI to enhance customer experiences.",
             "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/17/sakana-ai-raises-135m-series-b-at-a-2-65b-valuation-to-continue-building-ai-models-for-japan/"
+            "sourceUrl": "https://techcrunch.com/2025/11/17/google-rolls-out-its-ai-flight-deals-tool-globally-adds-new-travel-features-in-search/"
         },
         {
-            "date": "Nov 15 2025",
-            "title": "OpenAI&#x27;s Financial Ties with Microsoft Revealed Through Leaked Documents",
-            "content": "Recently leaked documents have unveiled the financial arrangements between OpenAI and Microsoft, detailing the revenue-sharing agreement between the two tech giants. These documents provide insights into the costs associated with AI inference, a critical aspect of deploying AI models at scale. For professionals in the AI field, understanding these financial dynamics is crucial as they reflect the economic realities of AI development and deployment. The revelations underscore the substantial investments required to sustain AI operations, particularly in partnerships with major technology companies. This information could influence future negotiations and collaborations between AI startups and larger tech firms. The leak also raises questions about transparency and the financial sustainability of AI innovations.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/14/leaked-documents-shed-light-into-how-much-openai-pays-microsoft/"
+            "date": "Nov 17 2025",
+            "title": "The Transformative Impact of AI on Warfare",
+            "content": "In a collaborative series between the Financial Times and MIT Technology Review, experts explore how AI is set to revolutionize warfare. The discussion delves into the generative AI technologies reshaping global military strategies and power dynamics. As AI becomes more integrated into defense systems, the implications for national security and international relations are profound. This ongoing dialogue offers AI professionals insights into the ethical and strategic challenges posed by AI in military applications. The series aims to inform policymakers and technologists about the potential risks and opportunities AI presents in the context of global security.",
+            "source": "Artificial intelligence – MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2025/11/17/1127514/the-state-of-ai-the-new-rules-of-war/"
         },
         {
-            "date": "Nov 14 2025",
-            "title": "Comprehensive Overview of ChatGPT&#x27;s Evolution and Updates",
-            "content": "An updated timeline of ChatGPT&#x27;s product developments offers a detailed look into the AI chatbot&#x27;s evolution throughout the year. This timeline is a valuable resource for AI professionals interested in the progressive enhancements and new features introduced in ChatGPT. Understanding these updates is crucial for those integrating AI chatbots into their systems, as it highlights the latest capabilities and improvements. The timeline reflects OpenAI&#x27;s commitment to refining ChatGPT&#x27;s performance and user experience. For technical audiences, staying informed about these changes ensures they can leverage the most current functionalities in their applications. This ongoing documentation of updates provides a roadmap for future developments in AI-powered conversational tools.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/14/chatgpt-everything-to-know-about-the-ai-chatbot/"
+            "date": "Nov 17 2025",
+            "title": "Balancing AI Performance and Data Security in Programmatic Advertising",
+            "content": "Olga Zharuk, CPO of Teqblaze, discusses the critical balance between performance and data security in AI-driven programmatic advertising. She highlights the risks associated with third-party AI services accessing proprietary bidstream data, often flagged in internal security audits. Maintaining control over AI models while ensuring data security is paramount for businesses in this space. This issue is crucial for AI professionals focused on safeguarding sensitive data while optimizing ad performance. The article provides valuable insights into managing AI applications securely, an ongoing challenge for companies leveraging AI in their advertising strategies.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/local-ai-models-how-to-keep-control-of-the-bidstream-without-losing-your-data/"
         },
         {
-            "date": "Nov 14 2025",
-            "title": "OpenAI Addresses ChatGPT&#x27;s Em Dash Customization Issue",
-            "content": "OpenAI has announced a fix for a previously reported issue involving the use of em dashes in ChatGPT&#x27;s outputs. Users now have the option to personalize the chatbot to avoid using em dashes, which had been a point of contention for some. This update is part of OpenAI&#x27;s broader effort to enhance user customization and satisfaction. For AI professionals, this adjustment underscores the importance of user feedback in refining AI-generated content. The ability to tailor output formats is critical for integrating AI tools into diverse applications where specific formatting may be required. This development highlights OpenAI&#x27;s responsiveness to user needs and the ongoing evolution of AI tools to meet diverse user preferences.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/14/openai-says-its-fixed-chatgpts-em-dash-problem/"
+            "date": "Nov 17 2025",
+            "title": "Levi Strauss Integrates AI to Enhance Consumer Experience",
+            "content": "Levi Strauss is adopting AI and cloud platforms to support its direct-to-consumer (DTC) business model, utilizing Microsoft technologies to modernize operations. The nearly 175-year-old apparel company aims to enhance consumer experiences and boost internal productivity through AI-driven solutions. This strategic move reflects a broader trend of traditional companies embracing AI to remain competitive in the digital age. For AI professionals, Levi Strauss&#x27;s initiative demonstrates the transformative potential of AI in retail, offering insights into how technology can streamline operations and improve customer engagement. The integration of AI into core business processes is a significant step for companies looking to innovate and adapt.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/how-levi-strauss-is-using-ai-for-dtc-first-business-model/"
         }
     ],
     "articles": {
