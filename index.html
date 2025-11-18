@@ -11,7 +11,14 @@
     <meta name="keywords" content="cybersecurity, AI, artificial intelligence, machine learning, data security, cyber threats, tech news, privacy, malware, ransomware, deep learning, neural networks, threat intelligence">
     <meta name="author" content="TheHGTech Editorial Team">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="1 days">
+    <meta name="rating" content="General">
+    <meta name="distribution" content="global">
+    <meta name="coverage" content="Worldwide">
     <link rel="canonical" href="https://thehgtech.com/">
+    <link rel="alternate" hreflang="en" href="https://thehgtech.com/">
+    <link rel="alternate" hreflang="x-default" href="https://thehgtech.com/">
     
     <!-- ========== OPEN GRAPH / FACEBOOK ========== -->
     <meta property="og:type" content="website">
@@ -51,18 +58,22 @@
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
     
     <!-- ========== SECURITY HEADERS ========== -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://t.fullres.net https://cdn.carbonads.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.carbonads.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://srv.carbonads.net https://t.fullres.net; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="DENY">
     <meta http-equiv="X-XSS-Protection" content="1; mode=block">
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
     <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
+    <meta name="format-detection" content="telephone=no, email=no, address=no">
     
     <!-- ========== PERFORMANCE OPTIMIZATION ========== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="dns-prefetch" href="//www.google-analytics.com">
+    <link rel="preload" href="content.js" as="script">
+    <link rel="preload" href="threat-intel.js" as="script">
     
     <!-- ========== FONTS ========== -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -127,6 +138,50 @@
       }]
     }
     </script>
+    
+    <!-- ========== STRUCTURED DATA - WEBPAGE ========== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "TheHGTech - Cybersecurity & AI News",
+      "description": "Expert cybersecurity news, AI innovations, threat intelligence, and CVE alerts",
+      "url": "https://thehgtech.com",
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Cybersecurity News",
+            "url": "https://thehgtech.com/#news"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Threat Intelligence",
+            "url": "https://thehgtech.com/#threat"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "CVE Alerts",
+            "url": "https://thehgtech.com/#cve"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Expert Articles",
+            "url": "https://thehgtech.com/#articles"
+          }
+        ]
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".hero h1", ".section-title"]
+      }
+    }
+    </script>
 
     <style>
         * {
@@ -170,6 +225,116 @@
 
         body.light-mode .mobile-menu {
             background: rgba(255, 255, 255, 0.95);
+        }
+
+        /* Light mode threat intelligence improvements */
+        body.light-mode .threat-indicator {
+            color: #0066cc;
+            background: rgba(0, 102, 204, 0.1);
+            border: 1px solid rgba(0, 102, 204, 0.3);
+        }
+
+        body.light-mode .threat-source {
+            color: #0066cc;
+        }
+
+        body.light-mode .threat-card {
+            background: rgba(0, 0, 0, 0.02);
+            border: 1px solid rgba(0, 0, 0, 0.15);
+        }
+
+        body.light-mode .threat-card:hover {
+            border-color: #0066cc;
+            box-shadow: 0 15px 30px rgba(0, 102, 204, 0.15);
+        }
+
+        body.light-mode .type-malware {
+            background: rgba(255, 61, 61, 0.15);
+            color: #d32f2f;
+        }
+
+        body.light-mode .type-ip {
+            background: rgba(255, 149, 0, 0.15);
+            color: #e65100;
+        }
+
+        body.light-mode .type-domain {
+            background: rgba(147, 51, 234, 0.15);
+            color: #7b1fa2;
+        }
+
+        body.light-mode .type-url {
+            background: rgba(59, 130, 246, 0.15);
+            color: #1565c0;
+        }
+
+        body.light-mode .type-hash {
+            background: rgba(16, 185, 129, 0.15);
+            color: #00796b;
+        }
+
+        body.light-mode .type-cve {
+            background: rgba(236, 72, 153, 0.15);
+            color: #c2185b;
+        }
+
+        body.light-mode .campaign-card {
+            background: rgba(0, 0, 0, 0.02);
+            border: 1px solid rgba(0, 0, 0, 0.15);
+        }
+
+        body.light-mode .threat-source-link {
+            color: #0066cc;
+        }
+
+        body.light-mode .threat-source-link:hover {
+            color: #004499;
+        }
+
+        /* Light mode CVE severity improvements */
+        body.light-mode .severity-critical {
+            background: rgba(255, 61, 61, 0.15);
+            color: #d32f2f;
+        }
+
+        body.light-mode .severity-high {
+            background: rgba(255, 149, 0, 0.15);
+            color: #e65100;
+        }
+
+        body.light-mode .severity-medium {
+            background: rgba(59, 130, 246, 0.15);
+            color: #1565c0;
+        }
+
+        /* Light mode article and news card improvements */
+        body.light-mode .article-category {
+            background: rgba(255, 61, 61, 0.12);
+            color: #d32f2f;
+        }
+
+        body.light-mode .news-card,
+        body.light-mode .article-card,
+        body.light-mode .cve-card,
+        body.light-mode .archive-card {
+            background: rgba(0, 0, 0, 0.02);
+            border: 1px solid rgba(0, 0, 0, 0.12);
+        }
+
+        body.light-mode .news-card:hover,
+        body.light-mode .article-card:hover,
+        body.light-mode .cve-card:hover,
+        body.light-mode .archive-card:hover {
+            border-color: rgba(0, 0, 0, 0.25);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        body.light-mode a[href]:not(.modal-close) {
+            color: #0066cc;
+        }
+
+        body.light-mode a[href]:hover:not(.modal-close) {
+            color: #004499;
         }
 
         body {
@@ -1851,6 +2016,30 @@
             display: block;
         }
 
+        .mobile-theme-toggle {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 1rem;
+            border-radius: 10px;
+            color: var(--text-primary);
+            width: 100%;
+            text-align: left;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-theme-toggle:hover {
+            background: var(--accent);
+            color: white;
+            border-color: var(--accent);
+        }
+
         .mobile-menu a {
             display: block;
             color: var(--text-secondary);
@@ -1918,6 +2107,17 @@
     </style>
 </head>
 <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link" style="position: absolute; top: -100px; left: 0; background: var(--accent); color: white; padding: 1rem; z-index: 100000; transition: top 0.3s;">Skip to main content</a>
+    <style>.skip-link:focus { top: 0; }</style>
+    
+    <!-- Noscript fallback -->
+    <noscript>
+        <div style="background: #FF3D3D; color: white; padding: 1rem; text-align: center; font-weight: 600;">
+            JavaScript is required for full functionality. Please enable JavaScript to view threat intelligence data and interactive features.
+        </div>
+    </noscript>
+    
     <!-- Background Orbs -->
     <div class="bg-orbs">
         <div class="orb orb-1"></div>
@@ -1926,7 +2126,7 @@
     </div>
 
     <!-- Header -->
-    <header class="header">
+    <header class="header" role="banner">
         <div class="header-content">
             <div class="logo">TheHGTech</div>
             <nav class="nav">
@@ -1947,12 +2147,15 @@
                     </button>
                 </div>
             </nav>
-            <button class="hamburger" onclick="toggleMobileMenu()">☰</button>
+            <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Open navigation menu" aria-expanded="false">☰</button>
         </div>
     </header>
 
     <!-- Mobile Menu -->
-    <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+        <button class="mobile-theme-toggle" onclick="toggleTheme();" aria-label="Toggle dark or light theme">
+            <span id="mobileThemeIcon">🌙</span> Toggle Dark/Light Mode
+        </button>
         <a href="#news" onclick="closeMobileMenu()">News</a>
         <a href="#cve" onclick="closeMobileMenu()">CVE</a>
         <a href="#articles" onclick="closeMobileMenu()">Articles</a>
@@ -1962,7 +2165,7 @@
     </div>
 
     <!-- Main Content -->
-    <main class="main">
+    <main class="main" id="main-content" role="main">
         <div class="container">
             <!-- Hero Section -->
             <section class="hero">
@@ -2032,7 +2235,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-grid">
                 <div>
@@ -2107,7 +2310,62 @@
     <div class="modal" id="privacyModal">
         <div class="modal-content">
             <button class="modal-close" onclick="closeModal('privacy')">&times;</button>
-            <div id="privacyContent"></div>
+            <div id="privacyContent">
+                <h2>Privacy Policy</h2>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 2rem;">Last Updated: November 18, 2025</p>
+                
+                <h3>Information We Collect</h3>
+                <p>TheHGTech is committed to protecting your privacy. We collect minimal information necessary to provide our services:</p>
+                <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
+                    <li>Usage data (pages visited, time spent, browser type) via Google Analytics</li>
+                    <li>Cookies for theme preferences and site functionality</li>
+                </ul>
+
+                <h3>Third-Party Services</h3>
+                <p>We use the following third-party services that may collect data:</p>
+                <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
+                    <li><strong>Google Analytics:</strong> For anonymous traffic analysis</li>
+                    <li><strong>Carbon Ads (via Fullres):</strong> For displaying privacy-friendly advertisements</li>
+                </ul>
+
+                <h3>Advertising</h3>
+                <p>We display advertisements through Carbon Ads, a privacy-focused ad network. Carbon Ads:</p>
+                <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
+                    <li>Does NOT use cookies for tracking</li>
+                    <li>Does NOT collect personal information</li>
+                    <li>Only uses contextual targeting based on page content</li>
+                    <li>Serves ads from ethical, vetted technology companies</li>
+                </ul>
+                <p>Learn more: <a href="https://www.carbonads.net/privacy" target="_blank" rel="noopener noreferrer" style="color: var(--accent);">Carbon Ads Privacy Policy</a></p>
+
+                <h3>Cookies</h3>
+                <p>We use minimal cookies for:</p>
+                <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
+                    <li>Remembering your dark/light theme preference</li>
+                    <li>Tracking cookie consent (if accepted)</li>
+                </ul>
+
+                <h3>Data Security</h3>
+                <p>We implement industry-standard security measures including HTTPS, Content Security Policy (CSP), and HSTS to protect your information.</p>
+
+                <h3>Your Rights</h3>
+                <p>You have the right to:</p>
+                <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
+                    <li>Access any personal data we hold about you</li>
+                    <li>Request deletion of your data</li>
+                    <li>Opt-out of analytics by using browser privacy settings</li>
+                    <li>Use ad blockers to prevent ad display</li>
+                </ul>
+
+                <h3>External Links</h3>
+                <p>Our site contains links to external websites. We are not responsible for the privacy practices of these sites.</p>
+
+                <h3>Changes to Policy</h3>
+                <p>We may update this policy periodically. The "Last Updated" date will reflect any changes.</p>
+
+                <h3>Contact</h3>
+                <p>For privacy concerns, contact us at: <a href="#" onclick="this.href='mai'+'lto:'+'harish'+'@'+'thehgtech'+'.com'" style="color: var(--accent);"><span class="__cf_email__" data-cfemail="8ce4edfee5ffe4ccf8e4e9e4ebf8e9efe4a2efe3e1">[email&#160;protected]</span></a></p>
+            </div>
         </div>
     </div>
 
@@ -2182,8 +2440,18 @@
         Buy me a coffee
     </a>
 
+    <!-- Carbon Ads via Fullres -->
+    <script>
+      (function(){
+        var fullres = document.createElement('script');
+        fullres.async = true;
+        fullres.src = 'https://t.fullres.net/thehgtech.js?'+(new Date()-new Date()%43200000);
+        document.head.appendChild(fullres);
+      })();
+    </script>
+
     <!-- Load Content Files -->
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="content.js"></script>
+    <script src="content.js"></script>
     <script src="archives-content.js"></script>
     <script src="threat-intel.js" onerror="console.log('threat-intel.js not found - using fallback')"></script>
 
@@ -3102,6 +3370,9 @@
         }
 
         // Load Modal Content with XSS protection
+        // Load Modal Content with XSS protection
+        // Note: Inline HTML content in modals serves as fallback
+        // If content.js has websiteContent.modals.privacy, it will override the inline content
         function loadModalContent() {
             if (typeof websiteContent === 'undefined' || !websiteContent.modals) return;
             
@@ -3208,6 +3479,16 @@
             if (modal) {
                 modal.classList.add('active');
                 document.body.style.overflow = 'hidden';
+                
+                // Add click-outside-to-close functionality
+                setTimeout(() => {
+                    modal.addEventListener('click', function(e) {
+                        // Close if clicking on the modal backdrop (not the content)
+                        if (e.target === modal) {
+                            closeModal(type);
+                        }
+                    });
+                }, 100);
             }
         }
 
@@ -3222,32 +3503,53 @@
         // Theme toggle
         function toggleTheme() {
             const body = document.body;
+            const mobileIcon = document.getElementById('mobileThemeIcon');
             
             if (body.classList.contains('light-mode')) {
                 body.classList.remove('light-mode');
                 localStorage.setItem('theme', 'dark');
+                if (mobileIcon) mobileIcon.textContent = '🌙';
             } else {
                 body.classList.add('light-mode');
                 localStorage.setItem('theme', 'light');
+                if (mobileIcon) mobileIcon.textContent = '☀️';
             }
         }
 
         // Load theme preference
         function loadThemePreference() {
             const savedTheme = localStorage.getItem('theme');
+            const mobileIcon = document.getElementById('mobileThemeIcon');
             
             if (savedTheme === 'light') {
                 document.body.classList.add('light-mode');
+                if (mobileIcon) mobileIcon.textContent = '☀️';
+            } else {
+                if (mobileIcon) mobileIcon.textContent = '🌙';
             }
         }
 
         // Mobile menu
         function toggleMobileMenu() {
-            document.getElementById('mobileMenu').classList.toggle('active');
+            const menu = document.getElementById('mobileMenu');
+            const hamburger = document.querySelector('.hamburger');
+            menu.classList.toggle('active');
+            
+            // Update aria-expanded for accessibility
+            const isExpanded = menu.classList.contains('active');
+            if (hamburger) {
+                hamburger.setAttribute('aria-expanded', isExpanded);
+            }
         }
 
         function closeMobileMenu() {
-            document.getElementById('mobileMenu').classList.remove('active');
+            const menu = document.getElementById('mobileMenu');
+            const hamburger = document.querySelector('.hamburger');
+            menu.classList.remove('active');
+            
+            if (hamburger) {
+                hamburger.setAttribute('aria-expanded', 'false');
+            }
         }
 
 
@@ -3262,7 +3564,7 @@
             if (e.key === 'Escape') {
                 // Close all modals
                 document.querySelectorAll('.modal').forEach(modal => {
-                                      modal.classList.remove('active');
+                    modal.classList.remove('active');
                 });
                 // Close article overlay
                 closeArticleOverlay();
@@ -3270,8 +3572,7 @@
                 closeArchives();
                 // Close mobile menu
                 closeMobileMenu();
-                // Close threat detail modal
-                closeThreatDetailModal();
+                // Reset body overflow
                 document.body.style.overflow = '';
             }
         });
