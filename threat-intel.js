@@ -1,9 +1,9 @@
 // Auto-Generated Threat Intel (RSS Feeds)
-// Updated: 2025-11-18T16:02:28.395823+05:30 IST
+// Updated: 2025-11-18T16:55:25.052978+05:30 IST
 // Sources: URLhaus, OpenPhish, ThreatFox (abuse.ch)
 
 const threatIntelData = {
-    "lastUpdated": "2025-11-18T16:02:28.395757+05:30",
+    "lastUpdated": "2025-11-18T16:55:25.052916+05:30",
     "comparisonPeriod": "Nov 17 \u2013 Nov 18, 2025",
     "hourlyThreats": [
         {
@@ -14,13 +14,13 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
-            "analysisTime": "2025-11-18 16:02 IST",
+            "analysisTime": "2025-11-18 16:55 IST",
             "tags": [
                 "phishing",
                 "live",
                 "automated"
             ],
-            "addedAt": "2025-11-18T16:02:24.272271+05:30",
+            "addedAt": "2025-11-18T16:55:20.792527+05:30",
             "campaign": "Generic Phishing"
         },
         {
@@ -31,13 +31,13 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
-            "analysisTime": "2025-11-18 16:02 IST",
+            "analysisTime": "2025-11-18 16:55 IST",
             "tags": [
                 "phishing",
                 "live",
                 "automated"
             ],
-            "addedAt": "2025-11-18T16:02:24.272271+05:30",
+            "addedAt": "2025-11-18T16:55:20.792527+05:30",
             "campaign": "Generic Phishing"
         },
         {
@@ -48,13 +48,13 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
-            "analysisTime": "2025-11-18 16:02 IST",
+            "analysisTime": "2025-11-18 16:55 IST",
             "tags": [
                 "phishing",
                 "live",
                 "automated"
             ],
-            "addedAt": "2025-11-18T16:02:24.272271+05:30",
+            "addedAt": "2025-11-18T16:55:20.792527+05:30",
             "campaign": "Generic Phishing"
         },
         {
@@ -65,13 +65,13 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
-            "analysisTime": "2025-11-18 16:02 IST",
+            "analysisTime": "2025-11-18 16:55 IST",
             "tags": [
                 "phishing",
                 "live",
                 "automated"
             ],
-            "addedAt": "2025-11-18T16:02:24.272271+05:30",
+            "addedAt": "2025-11-18T16:55:20.792527+05:30",
             "campaign": "Generic Phishing"
         },
         {
@@ -82,13 +82,13 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
-            "analysisTime": "2025-11-18 16:02 IST",
+            "analysisTime": "2025-11-18 16:55 IST",
             "tags": [
                 "phishing",
                 "live",
                 "automated"
             ],
-            "addedAt": "2025-11-18T16:02:24.272271+05:30",
+            "addedAt": "2025-11-18T16:55:20.792527+05:30",
             "campaign": "Generic Phishing"
         },
         {
@@ -99,13 +99,13 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
-            "analysisTime": "2025-11-18 16:02 IST",
+            "analysisTime": "2025-11-18 16:55 IST",
             "tags": [
                 "phishing",
                 "live",
                 "automated"
             ],
-            "addedAt": "2025-11-18T16:02:24.272271+05:30",
+            "addedAt": "2025-11-18T16:55:20.792527+05:30",
             "campaign": "Generic Phishing"
         },
         {
@@ -116,13 +116,13 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
-            "analysisTime": "2025-11-18 16:02 IST",
+            "analysisTime": "2025-11-18 16:55 IST",
             "tags": [
                 "phishing",
                 "live",
                 "automated"
             ],
-            "addedAt": "2025-11-18T16:02:24.272271+05:30",
+            "addedAt": "2025-11-18T16:55:20.792527+05:30",
             "campaign": "Generic Phishing"
         },
         {
@@ -133,13 +133,13 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
-            "analysisTime": "2025-11-18 16:02 IST",
+            "analysisTime": "2025-11-18 16:55 IST",
             "tags": [
                 "phishing",
                 "live",
                 "automated"
             ],
-            "addedAt": "2025-11-18T16:02:24.272271+05:30",
+            "addedAt": "2025-11-18T16:55:20.792527+05:30",
             "campaign": "Generic Phishing"
         },
         {
@@ -150,13 +150,13 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
-            "analysisTime": "2025-11-18 16:02 IST",
+            "analysisTime": "2025-11-18 16:55 IST",
             "tags": [
                 "phishing",
                 "live",
                 "automated"
             ],
-            "addedAt": "2025-11-18T16:02:24.272271+05:30",
+            "addedAt": "2025-11-18T16:55:20.792527+05:30",
             "campaign": "Generic Phishing"
         },
         {
@@ -167,13 +167,13 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "OpenPhish",
             "sourceUrl": "https://openphish.com/",
-            "analysisTime": "2025-11-18 16:02 IST",
+            "analysisTime": "2025-11-18 16:55 IST",
             "tags": [
                 "phishing",
                 "live",
                 "automated"
             ],
-            "addedAt": "2025-11-18T16:02:24.272271+05:30",
+            "addedAt": "2025-11-18T16:55:20.792527+05:30",
             "campaign": "Generic Phishing"
         },
         {
