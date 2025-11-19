@@ -993,6 +993,285 @@
             display: block;
         }
 
+
+/* Threat Intel Vendor Tabs */
+.threat-intel-tabs {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) var(--bg-card);
+    padding-bottom: 0.5rem;
+}
+
+.threat-intel-tabs::-webkit-scrollbar {
+    height: 6px;
+}
+
+.threat-intel-tabs::-webkit-scrollbar-track {
+    background: var(--bg-card);
+    border-radius: 3px;
+}
+
+.threat-intel-tabs::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: 3px;
+}
+
+.threat-vendor-tab {
+    background: var(--glass);
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.threat-vendor-tab .tab-count {
+    display: inline-block;
+    margin-left: 0.5rem;
+    padding: 0.15rem 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.threat-vendor-tab::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 61, 61, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.threat-vendor-tab:hover::before {
+    left: 100%;
+}
+
+.threat-vendor-tab:hover {
+    background: rgba(255, 61, 61, 0.1);
+    border-color: var(--accent);
+    color: var(--text-primary);
+    transform: translateY(-2px);
+}
+
+.threat-vendor-tab.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: white;
+    box-shadow: 0 4px 20px rgba(255, 61, 61, 0.4);
+}
+
+.threat-vendor-tab.active .tab-count {
+    background: rgba(255, 255, 255, 0.25);
+    font-weight: 800;
+}
+
+.threat-vendor-tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* Vendor Content Containers */
+.threat-vendor-content {
+    display: none;
+    animation: fadeInUp 0.4s ease;
+}
+
+.threat-vendor-content.active {
+    display: block;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Vendor Header (Description) */
+.vendor-info-header {
+    background: var(--glass);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.vendor-info-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #00d4ff, var(--accent));
+}
+
+.vendor-info-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.vendor-info-stats {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.vendor-stat {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.vendor-stat-value {
+    font-weight: 700;
+    color: #00d4ff;
+}
+
+.vendor-info-desc {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-top: 0.75rem;
+}
+
+.vendor-update-freq {
+    display: inline-block;
+    margin-left: 0.5rem;
+    padding: 0.2rem 0.6rem;
+    background: rgba(0, 212, 255, 0.15);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    border-radius: 50px;
+    font-size: 0.75rem;
+    color: #00d4ff;
+    font-weight: 600;
+}
+
+/* IOC Status Tags */
+.ioc-status {
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.ioc-status.new {
+    background: rgba(0, 255, 136, 0.2);
+    color: #00ff88;
+    border: 1px solid rgba(0, 255, 136, 0.4);
+    animation: pulseGlow 2s infinite;
+}
+
+.ioc-status.recent {
+    background: rgba(255, 193, 7, 0.2);
+    color: #ffc107;
+    border: 1px solid rgba(255, 193, 7, 0.4);
+}
+
+@keyframes pulseGlow {
+    0%, 100% {
+        box-shadow: 0 0 5px rgba(0, 255, 136, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(0, 255, 136, 0.8);
+    }
+}
+
+/* Enhanced Threat Cards */
+.threat-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+}
+
+.threat-age {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+/* Empty State */
+.threat-empty-state {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: var(--text-muted);
+}
+
+.threat-empty-state svg {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1rem;
+    opacity: 0.3;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .threat-intel-tabs {
+        gap: 0.5rem;
+    }
+    
+    .threat-vendor-tab {
+        padding: 0.6rem 1rem;
+        font-size: 0.85rem;
+    }
+    
+    .threat-vendor-tab .tab-count {
+        font-size: 0.7rem;
+        padding: 0.1rem 0.4rem;
+    }
+    
+    .vendor-info-header {
+        padding: 1rem;
+    }
+    
+    .vendor-info-stats {
+        gap: 1rem;
+    }
+    
+    .threat-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
         .threat-subsection {
             margin-bottom: 2rem;
         }
@@ -2196,19 +2475,87 @@
                 </div>
                 <div id="cyberNews" class="news-grid"></div>
                 <div id="aiNews" class="news-grid" style="display: none;"></div>
-                <div id="threatIntel" class="threat-intel-container">
-                    <div class="last-updated-badge" id="threatLastUpdated">Last updated: Loading...</div>
-                    
-                    <div class="threat-subsection">
-                        <h3 class="threat-subsection-title">Hourly Updates</h3>
-                        <div class="threat-grid" id="hourlyThreats"></div>
-                    </div>
-                    
-                    <div class="threat-subsection">
-                        <h3 class="threat-subsection-title">Last 24 Hours Summary</h3>
-                        <div class="comparison-note" id="comparisonNote" style="color: var(--text-muted); font-size: 0.8rem; margin-bottom: 1rem; font-style: italic;">Comparing to previous 24 hours</div>
-                        <div id="dailyThreats"></div>
-                    </div>
+
+<div id="threatIntel" class="threat-intel-container">
+    <div class="subsection-header">
+        <h3 style="display: flex; align-items: center; gap: 0.75rem;">
+            Live Threat Intelligence
+            <span style="font-size: 0.7rem; font-weight: 500; color: var(--text-muted); padding: 0.3rem 0.8rem; background: var(--glass); border: 1px solid var(--border); border-radius: 50px;">Multi-Vendor</span>
+        </h3>
+        <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 0.25rem;">
+            <div id="threatLastUpdated" style="font-size: 0.85rem; color: var(--text-muted);">Loading...</div>
+            <div id="comparisonNote" style="font-size: 0.75rem; color: var(--text-muted); font-style: italic;"></div>
+        </div>
+    </div>
+
+    <!-- Vendor Tabs -->
+    <div class="threat-intel-tabs" id="vendorTabs">
+        <button class="threat-vendor-tab active" onclick="switchVendorTab('overview')">
+            Overview <span class="tab-count">-</span>
+        </button>
+        <button class="threat-vendor-tab" onclick="switchVendorTab('OpenPhish')">
+            OpenPhish <span class="tab-count">-</span>
+        </button>
+        <button class="threat-vendor-tab" onclick="switchVendorTab('URLhaus')">
+            URLhaus <span class="tab-count">-</span>
+        </button>
+        <button class="threat-vendor-tab" onclick="switchVendorTab('ThreatFox')">
+            ThreatFox <span class="tab-count">-</span>
+        </button>
+        <button class="threat-vendor-tab" onclick="switchVendorTab('Feodo Tracker')">
+            Feodo Tracker <span class="tab-count">-</span>
+        </button>
+        <button class="threat-vendor-tab" onclick="switchVendorTab('Blocklist.de')">
+            Blocklist.de <span class="tab-count">-</span>
+        </button>
+        <button class="threat-vendor-tab" onclick="switchVendorTab('SSL Blacklist')">
+            SSL Blacklist <span class="tab-count">-</span>
+        </button>
+    </div>
+
+    <!-- Overview Tab Content -->
+    <div id="vendor-overview" class="threat-vendor-content active">
+        <div class="vendor-info-header">
+            <div class="vendor-info-title">
+                Latest Threats Across All Sources
+            </div>
+            <div class="vendor-info-desc">
+                Real-time view of the 20 most recent indicators from all active threat intelligence sources. This aggregated feed provides immediate visibility into emerging threats across phishing, malware, botnets, and infrastructure attacks.
+            </div>
+            <div class="vendor-info-stats" id="overviewStats">
+                <div class="vendor-stat">
+                    <span>Total IOCs:</span>
+                    <span class="vendor-stat-value">-</span>
+                </div>
+                <div class="vendor-stat">
+                    <span>Active Sources:</span>
+                    <span class="vendor-stat-value">-</span>
+                </div>
+                <div class="vendor-stat">
+                    <span>Critical Alerts:</span>
+                    <span class="vendor-stat-value">-</span>
+                </div>
+            </div>
+        </div>
+        <div class="threat-grid" id="overviewGrid"></div>
+    </div>
+
+    <!-- Individual Vendor Tab Contents (will be populated by JS) -->
+    <div id="vendor-OpenPhish" class="threat-vendor-content"></div>
+    <div id="vendor-URLhaus" class="threat-vendor-content"></div>
+    <div id="vendor-ThreatFox" class="threat-vendor-content"></div>
+    <div id="vendor-Feodo Tracker" class="threat-vendor-content"></div>
+    <div id="vendor-Blocklist.de" class="threat-vendor-content"></div>
+    <div id="vendor-SSL Blacklist" class="threat-vendor-content"></div>
+
+    <!-- Daily Analytics Section -->
+    <div class="threat-subsection" style="margin-top: 3rem;">
+        <div class="threat-subsection-title">Daily Analytics & Trends</div>
+        <div id="dailyThreats"></div>
+    </div>
+</div>
+
+
                 </div>
             </section>
 
@@ -3021,285 +3368,361 @@
         }
 
         // Load Threat Intelligence (data loaded from external threat-intel.js file)
-        function loadThreatIntel() {
-            // Check if threat intel data is loaded, provide fallback if not
-            if (typeof threatIntelData === 'undefined') {
-                console.log('threatIntelData not loaded from threat-intel.js - using fallback');
-                // Provide empty fallback so page still works
-                window.threatIntelData = {
-                    lastUpdated: new Date().toISOString(),
-                    comparisonPeriod: 'No data available',
-                    hourlyThreats: [],
-                    dailySummary: {
-                        stats: { totalIndicators: 0, newReports: 0, criticalAlerts: 0, activeCampaigns: 0 },
-                        topThreats: [],
-                        targetedSectors: [],
-                        geoDistribution: [],
-                        campaigns: [],
-                        indicatorBreakdown: { byType: {}, bySource: {} }
-                    }
-                };
+
+// Switch vendor tabs
+function switchVendorTab(vendorName) {
+    // Update tab active states
+    const tabs = document.querySelectorAll('.threat-vendor-tab');
+    tabs.forEach(tab => {
+        tab.classList.remove('active');
+        if (tab.textContent.trim().startsWith(vendorName)) {
+            tab.classList.add('active');
+        }
+    });
+    
+    // Update content visibility
+    const contents = document.querySelectorAll('.threat-vendor-content');
+    contents.forEach(content => {
+        content.classList.remove('active');
+    });
+    
+    const activeContent = document.getElementById(`vendor-${vendorName}`);
+    if (activeContent) {
+        activeContent.classList.add('active');
+    }
+}
+
+// Calculate time ago
+function getTimeAgo(timestamp) {
+    try {
+        const now = new Date();
+        const added = new Date(timestamp);
+        const seconds = Math.floor((now - added) / 1000);
+        
+        if (seconds < 60) return 'just now';
+        if (seconds < 3600) return `${Math.floor(seconds / 60)}m ago`;
+        if (seconds < 86400) return `${Math.floor(seconds / 3600)}h ago`;
+        return `${Math.floor(seconds / 86400)}d ago`;
+    } catch {
+        return 'unknown';
+    }
+}
+
+// Check if IOC is NEW (< 1 hour)
+function isNew(timestamp) {
+    try {
+        const now = new Date();
+        const added = new Date(timestamp);
+        return (now - added) < 3600000; // 1 hour in ms
+    } catch {
+        return false;
+    }
+}
+
+// Check if IOC is RECENT (1-6 hours)
+function isRecent(timestamp) {
+    try {
+        const now = new Date();
+        const added = new Date(timestamp);
+        const diff = now - added;
+        return diff >= 3600000 && diff < 21600000; // 1-6 hours
+    } catch {
+        return false;
+    }
+}
+
+// Render IOC card
+function renderIOCCard(ioc) {
+    const safeType = escapeHTML(ioc.type || '');
+    const safeIndicator = escapeHTML(ioc.indicator || '');
+    const safeDesc = escapeHTML(ioc.description || '');
+    const safeSource = escapeHTML(ioc.source || '');
+    const safeSourceUrl = isValidURL(ioc.sourceUrl) ? ioc.sourceUrl : '#';
+    const tags = ioc.tags || [];
+    
+    // Determine status badge
+    let statusBadge = '';
+    if (isNew(ioc.addedAt)) {
+        statusBadge = '<span class="ioc-status new">NEW</span>';
+    } else if (isRecent(ioc.addedAt)) {
+        statusBadge = '<span class="ioc-status recent">RECENT</span>';
+    }
+    
+    const timeAgo = getTimeAgo(ioc.addedAt);
+    const tagsHTML = tags.map(tag => `<span class="threat-tag">${escapeHTML(tag)}</span>`).join('');
+    
+    return `
+        <div class="threat-card">
+            <div class="threat-card-header">
+                <span class="threat-type type-${safeType}">${safeType.toUpperCase()}</span>
+                ${statusBadge}
+            </div>
+            <div class="threat-indicator">${safeIndicator}</div>
+            <div class="threat-desc">${safeDesc}</div>
+            <div class="threat-meta">
+                <span class="threat-age">${timeAgo}</span>
+                <span class="threat-source">${safeSource}</span>
+            </div>
+            <div class="threat-tags">${tagsHTML}</div>
+            ${safeSourceUrl !== '#' ? `<a href="${safeSourceUrl}" class="threat-source-link" target="_blank" rel="noopener noreferrer">View Source</a>` : ''}
+        </div>
+    `;
+}
+
+// Load Threat Intelligence Data
+function loadThreatIntel() {
+    // Check if data is loaded
+    if (typeof threatIntelData === 'undefined') {
+        console.log('threatIntelData not loaded from threat-intel.js');
+        document.getElementById('overviewGrid').innerHTML = 
+            '<div class="threat-empty-state">Threat intelligence data not available. Please ensure the automation is running.</div>';
+        return;
+    }
+    
+    const data = threatIntelData;
+    
+    // Update last updated timestamp
+    const updateTime = new Date(data.lastUpdated);
+    const formattedTime = updateTime.toLocaleDateString('en-US', {
+        month: 'short',
+        day: 'numeric',
+        year: 'numeric'
+    }) + ' at ' + updateTime.toLocaleTimeString('en-US', {
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: true
+    }) + ' IST';
+    document.getElementById('threatLastUpdated').textContent = `Last updated: ${formattedTime}`;
+    
+    if (data.comparisonPeriod) {
+        document.getElementById('comparisonNote').textContent = `Trends: ${data.comparisonPeriod}`;
+    }
+    
+    // Render Overview Tab
+    if (data.overview && data.overview.length > 0) {
+        const overviewHTML = data.overview.map(ioc => renderIOCCard(ioc)).join('');
+        document.getElementById('overviewGrid').innerHTML = overviewHTML;
+        
+        // Update overview stats
+        const summary = data.dailySummary?.stats || {};
+        document.getElementById('overviewStats').innerHTML = `
+            <div class="vendor-stat">
+                <span>Total IOCs:</span>
+                <span class="vendor-stat-value">${summary.totalIndicators || 0}</span>
+            </div>
+            <div class="vendor-stat">
+                <span>Active Sources:</span>
+                <span class="vendor-stat-value">${summary.activeSources || 0}</span>
+            </div>
+            <div class="vendor-stat">
+                <span>Critical Alerts:</span>
+                <span class="vendor-stat-value">${summary.criticalAlerts || 0}</span>
+            </div>
+        `;
+    } else {
+        document.getElementById('overviewGrid').innerHTML = 
+            '<div class="threat-empty-state">No threat data available yet. Check back soon.</div>';
+    }
+    
+    // Update tab counts
+    const tabs = document.querySelectorAll('.threat-vendor-tab');
+    tabs[0].querySelector('.tab-count').textContent = data.overview?.length || 0;
+    
+    // Render Individual Vendor Tabs
+    if (data.vendors) {
+        let tabIndex = 1; // Start after overview tab
+        for (const [vendorName, vendorData] of Object.entries(data.vendors)) {
+            const container = document.getElementById(`vendor-${vendorName}`);
+            if (!container) continue;
+            
+            // Update tab count
+            if (tabs[tabIndex]) {
+                tabs[tabIndex].querySelector('.tab-count').textContent = vendorData.stats?.total || 0;
             }
+            tabIndex++;
             
-            const hourlyContainer = document.getElementById('hourlyThreats');
-            const dailyContainer = document.getElementById('dailyThreats');
-            const lastUpdatedEl = document.getElementById('threatLastUpdated');
-            const comparisonNoteEl = document.getElementById('comparisonNote');
-            
-            if (!hourlyContainer || !dailyContainer) return;
-            
-            // Update last updated timestamp
-            const updateTime = new Date(threatIntelData.lastUpdated);
-            const formattedTime = updateTime.toLocaleDateString('en-US', {
-                month: 'short',
-                day: 'numeric',
-                year: 'numeric'
-            }) + ' at ' + updateTime.toLocaleTimeString('en-US', {
-                hour: '2-digit',
-                minute: '2-digit',
-                hour12: true
-            }) + ' IST';
-            lastUpdatedEl.textContent = `Last updated: ${formattedTime}`;
-            
-            // Update comparison note if available
-            if (comparisonNoteEl && threatIntelData.comparisonPeriod) {
-                comparisonNoteEl.textContent = `Trends compared to: ${threatIntelData.comparisonPeriod}`;
-            }
-            
-            // Show message if no data
-            if (threatIntelData.hourlyThreats.length === 0) {
-                hourlyContainer.innerHTML = '<p style="color: var(--text-muted); grid-column: 1/-1; text-align: center; padding: 2rem;">No threat intelligence data available. Please ensure threat-intel.js is configured and the automation is running.</p>';
-            }
-            
-            // Render hourly threats (Individual IOCs) - NON-CLICKABLE INDICATORS
-            const hourlyHTML = threatIntelData.hourlyThreats.map(threat => {
-                const safeType = escapeHTML(threat.type || '');
-                const safeIndicator = escapeHTML(threat.indicator || '');
-                const safePulse = escapeHTML(threat.pulse || '');
-                const safeDesc = escapeHTML(threat.description || '');
-                const safeTime = escapeHTML(threat.timestamp || '');
-                const safeSource = escapeHTML(threat.source || '');
-                const safeSourceUrl = isValidURL(threat.sourceUrl) ? threat.sourceUrl : '#';
-                const safeAnalysisTime = escapeHTML(threat.analysisTime || '');
-                const tags = threat.tags || [];
-                
-                const tagsHTML = tags.map(tag => `<span class="threat-tag">${escapeHTML(tag)}</span>`).join('');
-                
-                return `
-                    <div class="threat-card">
-                        <span class="threat-type type-${safeType}">${safeType.toUpperCase()}</span>
-                        <div class="threat-indicator">${safeIndicator}</div>
-                        <div class="threat-pulse">${safePulse}</div>
-                        <div class="threat-desc">${safeDesc}</div>
-                        <div class="threat-meta">
-                            <span class="threat-time">${safeTime}</span>
-                            <span class="threat-source">${safeSource}</span>
+            // Render vendor info header
+            const headerHTML = `
+                <div class="vendor-info-header">
+                    <div class="vendor-info-title">
+                        ${escapeHTML(vendorName)}
+                        <span class="vendor-update-freq">${escapeHTML(vendorData.updateFrequency || '')}</span>
+                    </div>
+                    <div class="vendor-info-desc">${escapeHTML(vendorData.description || '')}</div>
+                    <div class="vendor-info-stats">
+                        <div class="vendor-stat">
+                            <span>Total IOCs:</span>
+                            <span class="vendor-stat-value">${vendorData.stats?.total || 0}</span>
                         </div>
-                        <div class="threat-tags">${tagsHTML}</div>
-                        ${safeSourceUrl !== '#' ? `<a href="${safeSourceUrl}" class="threat-source-link" target="_blank" rel="noopener noreferrer">View Source</a>` : ''}
-                        ${safeAnalysisTime ? `<div class="analysis-time">Analyzed: ${safeAnalysisTime}</div>` : ''}
-                    </div>
-                `;
-            }).join('');
-            
-            hourlyContainer.innerHTML = hourlyHTML || hourlyContainer.innerHTML;
-            
-            // Render daily summary (Aggregated Statistics)
-            const summary = threatIntelData.dailySummary || {};
-            
-            // Check if we have valid summary data
-            if (!summary.stats || Object.keys(summary).length === 0) {
-                dailyContainer.innerHTML = '<p style="color: var(--text-muted); text-align: center; padding: 2rem;">Daily summary data not yet available. Will be calculated at 12:00 AM IST.</p>';
-                return;
-            }
-            
-            // Stats overview with CLICKABLE cards
-            const statsHTML = `
-                <div class="summary-stats">
-                    <div class="stat-card clickable" onclick="showIndicatorBreakdown()">
-                        <div class="stat-number">${(summary.stats.totalIndicators || 0).toLocaleString()}</div>
-                        <div class="stat-label">Total Indicators</div>
-                    </div>
-                    <div class="stat-card clickable" onclick="showSourceBreakdown()">
-                        <div class="stat-number">${summary.stats.newReports || 0}</div>
-                        <div class="stat-label">Sources</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">${summary.stats.criticalAlerts || 0}</div>
-                        <div class="stat-label">Critical Alerts</div>
-                    </div>
-                    <div class="stat-card clickable" onclick="showCampaignDetails()">
-                        <div class="stat-number">${summary.stats.activeCampaigns || 0}</div>
-                        <div class="stat-label">Active Campaigns</div>
+                        <div class="vendor-stat">
+                            <span>New (1h):</span>
+                            <span class="vendor-stat-value">${vendorData.stats?.newInLastHour || 0}</span>
+                        </div>
+                        <div class="vendor-stat">
+                            <span>Last Update:</span>
+                            <span class="vendor-stat-value">${vendorData.stats?.lastUpdate || 'unknown'}</span>
+                        </div>
                     </div>
                 </div>
             `;
             
-            // Top threats by category (FIXED: removed undefined description reference)
-            const trendsHTML = (summary.topThreats || []).map(threat => {
-                const trendClass = threat.trend === 'up' ? 'trend-up' : threat.trend === 'down' ? 'trend-down' : 'trend-stable';
-                const trendIcon = threat.trend === 'up' ? '↑' : threat.trend === 'down' ? '↓' : '→';
-                const trendText = threat.percentage > 0 ? `+${threat.percentage}%` : `${threat.percentage}%`;
-                
-                return `
-                    <div class="trend-card">
-                        <div class="trend-header">
-                            <span class="trend-category">${escapeHTML(threat.category)}</span>
-                            <span class="trend-indicator ${trendClass}">${trendIcon} ${trendText}</span>
-                        </div>
-                        <div class="trend-count">${threat.count} indicators</div>
-                    </div>
-                `;
-            }).join('');
-            
-            // Targeted sectors
-            const sectorsHTML = (summary.targetedSectors && summary.targetedSectors.length > 0) ? `
-                <div class="trend-card">
-                    <div class="trend-category" style="margin-bottom: 0.75rem;">Top Targeted Sectors</div>
-                    <div class="sector-list">
-                        ${summary.targetedSectors.map(sector => `
-                            <div class="sector-item">
-                                <span class="sector-name">${escapeHTML(sector.name)}</span>
-                                <div class="sector-bar-container">
-                                    <div class="sector-bar" style="width: ${sector.percentage}%"></div>
-                                </div>
-                                <span class="sector-percentage">${sector.percentage}%</span>
-                            </div>
-                        `).join('')}
-                    </div>
-                </div>
-            ` : '';
-            
-            // Geographic distribution
-            const geoHTML = (summary.geoDistribution && summary.geoDistribution.length > 0) ? `
-                <div class="trend-card">
-                    <div class="trend-category" style="margin-bottom: 0.75rem;">Geographic Distribution</div>
-                    <div class="sector-list">
-                        ${summary.geoDistribution.map(geo => {
-                            const maxCount = Math.max(...summary.geoDistribution.map(g => g.count));
-                            const percentage = Math.round((geo.count / maxCount) * 100);
-                            return `
-                                <div class="sector-item">
-                                    <span class="sector-name">${escapeHTML(geo.region)}</span>
-                                    <div class="sector-bar-container">
-                                        <div class="sector-bar" style="width: ${percentage}%"></div>
-                                    </div>
-                                    <span class="sector-percentage">${geo.count}</span>
-                                </div>
-                            `;
-                        }).join('')}
-                    </div>
-                </div>
-            ` : '';
-            
-            dailyContainer.innerHTML = statsHTML + `<div class="threat-grid" style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));">${trendsHTML}${sectorsHTML}${geoHTML}</div>`;
-        }
-
-        // Threat Intel Detail Modal Functions
-        function openThreatDetailModal(title, content) {
-            document.getElementById('threatDetailTitle').textContent = title;
-            document.getElementById('threatDetailBody').innerHTML = content;
-            document.getElementById('threatDetailModal').classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeThreatDetailModal() {
-            document.getElementById('threatDetailModal').classList.remove('active');
-            document.body.style.overflow = '';
-        }
-
-        function showIndicatorBreakdown() {
-            if (typeof threatIntelData === 'undefined') return;
-            
-            const threats = threatIntelData.hourlyThreats || [];
-            const breakdown = threatIntelData.dailySummary?.indicatorBreakdown?.byType || {};
-            
-            let content = '<h4 style="color: var(--text-primary); margin-bottom: 1rem;">Breakdown by Type</h4>';
-            
-            // Show type counts
-            for (const [type, count] of Object.entries(breakdown)) {
-                content += `
-                    <div style="display: flex; justify-content: space-between; padding: 0.5rem; background: var(--bg-card); border-radius: 6px; margin-bottom: 0.5rem;">
-                        <span style="text-transform: uppercase; font-weight: 600;">${escapeHTML(type)}</span>
-                        <span style="color: #00d4ff;">${count}</span>
-                    </div>
-                `;
-            }
-            
-            content += '<h4 style="color: var(--text-primary); margin: 1.5rem 0 1rem;">All Indicators</h4>';
-            content += '<ul class="threat-detail-list">';
-            
-            threats.forEach(threat => {
-                content += `
-                    <li class="threat-detail-item">
-                        <div class="threat-detail-indicator">${escapeHTML(threat.indicator)}</div>
-                        <div class="threat-detail-meta">
-                            <span class="threat-detail-badge">${escapeHTML(threat.type).toUpperCase()}</span>
-                            <span class="threat-detail-badge">${escapeHTML(threat.source)}</span>
-                            <span class="threat-detail-badge">${escapeHTML(threat.timestamp)}</span>
-                        </div>
-                    </li>
-                `;
-            });
-            
-            content += '</ul>';
-            openThreatDetailModal('Indicator Breakdown', content);
-        }
-
-        function showSourceBreakdown() {
-            if (typeof threatIntelData === 'undefined') return;
-            
-            const breakdown = threatIntelData.dailySummary?.indicatorBreakdown?.bySource || {};
-            
-            let content = '<h4 style="color: var(--text-primary); margin-bottom: 1rem;">IOCs by Source</h4>';
-            
-            for (const [source, count] of Object.entries(breakdown)) {
-                content += `
-                    <div style="display: flex; justify-content: space-between; padding: 0.75rem; background: var(--bg-card); border-radius: 8px; margin-bottom: 0.5rem; border: 1px solid var(--border);">
-                        <span style="font-weight: 600;">${escapeHTML(source)}</span>
-                        <span style="color: #00d4ff; font-weight: 600;">${count} IOCs</span>
-                    </div>
-                `;
-            }
-            
-            openThreatDetailModal('Source Breakdown', content);
-        }
-
-        function showCampaignDetails() {
-            if (typeof threatIntelData === 'undefined') return;
-            
-            const campaigns = threatIntelData.dailySummary?.campaigns || [];
-            
-            let content = '<h4 style="color: var(--text-primary); margin-bottom: 1rem;">Active Threat Campaigns</h4>';
-            
-            if (campaigns.length === 0) {
-                content += '<p style="color: var(--text-muted);">No specific campaigns identified in current indicators.</p>';
+            // Render IOCs grid
+            let iocsHTML = '';
+            if (vendorData.iocs && vendorData.iocs.length > 0) {
+                iocsHTML = '<div class="threat-grid">' + 
+                    vendorData.iocs.map(ioc => renderIOCCard(ioc)).join('') + 
+                    '</div>';
             } else {
-                campaigns.forEach(campaign => {
-                    content += `
-                        <div class="campaign-card">
-                            <div class="campaign-header">
-                                <span class="campaign-name">${escapeHTML(campaign.name)}</span>
-                                <span class="campaign-count">${campaign.count} IOCs</span>
-                            </div>
-                            <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem;">
-                                Types: ${campaign.types.map(t => t.toUpperCase()).join(', ')}
-                            </div>
-                            ${campaign.sampleIndicators && campaign.sampleIndicators.length > 0 ? `
-                                <div class="campaign-indicators">
-                                    <div style="margin-bottom: 0.3rem; font-size: 0.7rem; color: var(--text-muted);">Sample Indicators:</div>
-                                    ${campaign.sampleIndicators.map(ind => escapeHTML(ind)).join('<br>')}
-                                </div>
-                            ` : ''}
-                        </div>
-                    `;
-                });
+                iocsHTML = '<div class="threat-empty-state">No indicators available from this source.</div>';
             }
             
-            openThreatDetailModal('Campaign Details', content);
+            container.innerHTML = headerHTML + iocsHTML;
         }
+    }
+    
+    // Render Daily Summary (keep existing code)
+    renderDailySummary(data.dailySummary || {});
+}
 
-        // Load Articles with XSS protection
+// Render Daily Summary
+function renderDailySummary(summary) {
+    const dailyContainer = document.getElementById('dailyThreats');
+    if (!dailyContainer) return;
+    
+    if (!summary.stats || Object.keys(summary).length === 0) {
+        dailyContainer.innerHTML = '<p style="color: var(--text-muted); text-align: center; padding: 2rem;">Daily analytics will be calculated at midnight IST.</p>';
+        return;
+    }
+    
+    // Stats overview with clickable cards
+    const statsHTML = `
+        <div class="summary-stats">
+            <div class="stat-card clickable" onclick="showIndicatorBreakdown()">
+                <div class="stat-number">${(summary.stats.totalIndicators || 0).toLocaleString()}</div>
+                <div class="stat-label">Total Indicators</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">${summary.stats.activeSources || 0}</div>
+                <div class="stat-label">Active Sources</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">${summary.stats.criticalAlerts || 0}</div>
+                <div class="stat-label">Critical Alerts</div>
+            </div>
+            <div class="stat-card clickable" onclick="showCampaignDetails()">
+                <div class="stat-number">${summary.stats.activeCampaigns || 0}</div>
+                <div class="stat-label">Active Campaigns</div>
+            </div>
+        </div>
+    `;
+    
+    // Top threats by category
+    const trendsHTML = (summary.topThreats || []).map(threat => {
+        const trendClass = threat.trend === 'up' ? 'trend-up' : threat.trend === 'down' ? 'trend-down' : 'trend-stable';
+        const trendIcon = threat.trend === 'up' ? '↑' : threat.trend === 'down' ? '↓' : '→';
+        const trendText = threat.percentage > 0 ? `+${threat.percentage}%` : `${threat.percentage}%`;
+        
+        return `
+            <div class="trend-card">
+                <div class="trend-header">
+                    <span class="trend-category">${escapeHTML(threat.category)}</span>
+                    <span class="trend-indicator ${trendClass}">${trendIcon} ${trendText}</span>
+                </div>
+                <div class="trend-count">${threat.count} indicators</div>
+            </div>
+        `;
+    }).join('');
+    
+    // Targeted sectors
+    const sectorsHTML = (summary.targetedSectors && summary.targetedSectors.length > 0) ? `
+        <div class="trend-card">
+            <div class="trend-category" style="margin-bottom: 0.75rem;">Top Targeted Sectors</div>
+            <div class="sector-list">
+                ${summary.targetedSectors.map(sector => `
+                    <div class="sector-item">
+                        <span class="sector-name">${escapeHTML(sector.name)}</span>
+                        <div class="sector-bar-container">
+                            <div class="sector-bar" style="width: ${sector.percentage}%"></div>
+                        </div>
+                        <span class="sector-percentage">${sector.percentage}%</span>
+                    </div>
+                `).join('')}
+            </div>
+        </div>
+    ` : '';
+    
+    dailyContainer.innerHTML = statsHTML + `<div class="threat-grid" style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));">${trendsHTML}${sectorsHTML}</div>`;
+}
+
+// Modal functions (keep existing showIndicatorBreakdown, showCampaignDetails, etc.)
+function showIndicatorBreakdown() {
+    if (typeof threatIntelData === 'undefined') return;
+    
+    const vendors = threatIntelData.vendors || {};
+    let content = '<h4 style="color: var(--text-primary); margin-bottom: 1rem;">Indicators by Vendor</h4>';
+    
+    for (const [vendor, data] of Object.entries(vendors)) {
+        content += `
+            <div style="display: flex; justify-content: space-between; padding: 0.75rem; background: var(--bg-card); border-radius: 8px; margin-bottom: 0.5rem; border: 1px solid var(--border);">
+                <span style="font-weight: 600;">${escapeHTML(vendor)}</span>
+                <span style="color: #00d4ff; font-weight: 600;">${data.stats?.total || 0} IOCs</span>
+            </div>
+        `;
+    }
+    
+    openThreatDetailModal('Indicator Breakdown', content);
+}
+
+function showCampaignDetails() {
+    if (typeof threatIntelData === 'undefined') return;
+    
+    const campaigns = threatIntelData.dailySummary?.campaigns || [];
+    
+    let content = '<h4 style="color: var(--text-primary); margin-bottom: 1rem;">Active Threat Campaigns</h4>';
+    
+    if (campaigns.length === 0) {
+        content += '<p style="color: var(--text-muted);">No specific campaigns identified in current indicators.</p>';
+    } else {
+        campaigns.forEach(campaign => {
+            content += `
+                <div class="campaign-card">
+                    <div class="campaign-header">
+                        <span class="campaign-name">${escapeHTML(campaign.name)}</span>
+                        <span class="campaign-count">${campaign.count} IOCs</span>
+                    </div>
+                    <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem;">
+                        Types: ${campaign.types.map(t => t.toUpperCase()).join(', ')}
+                    </div>
+                    ${campaign.sampleIndicators && campaign.sampleIndicators.length > 0 ? `
+                        <div class="campaign-indicators">
+                            <div style="margin-bottom: 0.3rem; font-size: 0.7rem; color: var(--text-muted);">Sample Indicators:</div>
+                            ${campaign.sampleIndicators.map(ind => escapeHTML(ind)).join('<br>')}
+                        </div>
+                    ` : ''}
+                </div>
+            `;
+        });
+    }
+    
+    openThreatDetailModal('Campaign Details', content);
+}
+
+function openThreatDetailModal(title, content) {
+    document.getElementById('threatDetailTitle').textContent = title;
+    document.getElementById('threatDetailBody').innerHTML = content;
+    document.getElementById('threatDetailModal').classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeThreatDetailModal() {
+    document.getElementById('threatDetailModal').classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+// Load on page ready
+document.addEventListener('DOMContentLoaded', function() {
+    loadThreatIntel();
+});
         function loadArticles() {
             const container = document.getElementById('articlesGrid');
             if (!container || typeof websiteContent === 'undefined' || !websiteContent.articles) return;
