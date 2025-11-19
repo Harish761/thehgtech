@@ -1179,7 +1179,7 @@
                 const daily = insights.dailySummary;
                 insightsHTML += `
                     <div style="background: rgba(0, 217, 255, 0.05); border: 1px solid rgba(0, 217, 255, 0.2); border-radius: 12px; padding: 1.5rem;">
-                        <h4 style="margin: 0 0 1rem 0; color: var(--accent-cyan);">🤖 AI Daily Summary</h4>
+                        <h4 style="margin: 0 0 1rem 0; color: var(--accent-cyan);">AI Daily Summary</h4>
                         <p style="margin: 0 0 1rem 0; line-height: 1.6;">${daily.summary}</p>
                         <div style="font-size: 0.85rem; color: var(--text-muted);">Generated: ${new Date(daily.generatedAt).toLocaleString()}</div>
                     </div>
@@ -1191,7 +1191,7 @@
                 const weekly = insights.weeklySummary;
                 insightsHTML += `
                     <div style="background: rgba(255, 76, 76, 0.05); border: 1px solid rgba(255, 76, 76, 0.2); border-radius: 12px; padding: 1.5rem;">
-                        <h4 style="margin: 0 0 1rem 0; color: var(--accent-red);">📊 AI Weekly Analysis</h4>
+                        <h4 style="margin: 0 0 1rem 0; color: var(--accent-red);">AI Weekly Analysis</h4>
                         ${weekly.trends ? `<p><strong>Trends:</strong> ${weekly.trends.join(', ')}</p>` : ''}
                         ${weekly.anomalies ? `<p><strong>Anomalies:</strong> ${weekly.anomalies.join(', ')}</p>` : ''}
                         ${weekly.recommendations ? `<p><strong>Recommendations:</strong> ${weekly.recommendations.join(', ')}</p>` : ''}
