@@ -615,6 +615,26 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        /* Light Mode Styles */
+        body.light-mode {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f5f5f5;
+            --text-primary: #1a1a1a;
+            --text-secondary: #4a4a4a;
+            --text-muted: #6b7280;
+            --border: rgba(0, 0, 0, 0.1);
+            --glass: rgba(255, 255, 255, 0.9);
+        }
+
+        body.light-mode .header {
+            background: rgba(255, 255, 255, 0.95);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        body.light-mode .ti-hero {
+            background: linear-gradient(135deg, #e0f2fe 0%, #dbeafe 100%);
+        }
     </style>
 </head>
 
@@ -628,6 +648,9 @@
                 <a href="threat-intel.html" class="active">Threat Intelligence</a>
                 <a href="index.html#news">News</a>
                 <a href="index.html#articles">Articles</a>
+                <button onclick="toggleTheme()"
+                    style="background: none; border: 1px solid var(--border); color: var(--text-primary); padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-size: 1.2rem; margin-left: 1rem;"
+                    aria-label="Toggle dark or light theme" id="themeToggle">🌙</button>
             </nav>
         </div>
     </header>
@@ -702,6 +725,15 @@
                 <div class="auto-refresh-indicator">
                     <span class="countdown">Next refresh in <span id="countdown">60</span>s</span>
                     <button class="refresh-btn" onclick="refreshData()">Refresh Now</button>
+                </div>
+            </div>
+
+            <!-- AI Insights Section (Prominent Display) -->
+            <div id="aiInsightsSidebar"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin: 2rem 0; padding: 1.5rem; background: rgba(255, 255, 255, 0.02); border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.05);">
+                <!-- AI insights will be loaded here -->
+                <div style="text-align: center; color: var(--text-muted); grid-column: 1 / -1;">
+                    <p>Loading AI insights...</p>
                 </div>
             </div>
 
@@ -1207,12 +1239,76 @@
             }
         }
 
-        // Load trend charts and AI insights after page loads
+        // Load AI Insights in Sidebar (Desktop) / Cards (Mobile)
+        function loadAIInsightsSidebar() {
+            if (typeof threatIntelHistory === 'undefined' || !threatIntelHistory.aiInsights) {
+                console.log('No AI insights available for sidebar');
+                return;
+            }
+
+            const insights = threatIntelHistory.aiInsights;
+            const container = document.getElementById('aiInsightsSidebar');
+            if (!container) return;
+
+            let insightsHTML = '';
+
+            // Daily Summary
+            if (insights.dailySummary) {
+                const daily = insights.dailySummary;
+                insightsHTML += `
+                    <div class="ai-insight-card" style="background: rgba(0, 217, 255, 0.05); border: 1px solid rgba(0, 217, 255, 0.2); border-radius: 12px; padding: 1.25rem; margin-bottom: 1rem;">
+                        <h4 style="margin: 0 0 0.75rem 0; color: var(--accent-cyan); font-size: 1rem;">AI Daily Summary</h4>
+                        <p style="margin: 0 0 0.75rem 0; line-height: 1.5; font-size: 0.9rem;">${daily.summary}</p>
+                        <div style="font-size: 0.75rem; color: var(--text-muted);">Generated: ${new Date(daily.generatedAt).toLocaleDateString()}</div>
+                    </div>
+                `;
+            }
+
+            // Weekly Analysis
+            if (insights.weeklySummary) {
+                const weekly = insights.weeklySummary;
+                insightsHTML += `
+                    <div class="ai-insight-card" style="background: rgba(255, 76, 76, 0.05); border: 1px solid rgba(255, 76, 76, 0.2); border-radius: 12px; padding: 1.25rem;">
+                        <h4 style="margin: 0 0 0.75rem 0; color: var(--accent-red); font-size: 1rem;">AI Weekly Analysis</h4>
+                        ${weekly.trends ? `<p style="font-size: 0.85rem; margin-bottom: 0.5rem;"><strong>Trends:</strong> ${weekly.trends.slice(0, 2).join(', ')}</p>` : ''}
+                        ${weekly.recommendations ? `<p style="font-size: 0.85rem; margin: 0;"><strong>Rec:</strong> ${weekly.recommendations[0]}</p>` : ''}
+                        <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.75rem;">Week: ${weekly.weekStart} to ${weekly.weekEnd}</div>
+                    </div>
+                `;
+            }
+
+            if (insightsHTML) {
+                container.innerHTML = insightsHTML;
+                console.log('✓ Loaded AI insights in sidebar');
+            }
+        }
+
+        // Dark/Light Mode Toggle
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+            const isLightMode = document.body.classList.contains('light-mode');
+            localStorage.setItem('theme', isLightMode ? 'light' : 'dark');
+            document.getElementById('themeToggle').textContent = isLightMode ? '☀️' : '🌙';
+        }
+
+        function loadThemePreference() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'light') {
+                document.body.classList.add('light-mode');
+                if (document.getElementById('themeToggle')) {
+                    document.getElementById('themeToggle').textContent = '☀️';
+                }
+            }
+        }
+
+        // Load everything on page load
         window.addEventListener('load', function () {
             setTimeout(() => {
                 loadTrendCharts();
-                loadAIInsights();
+                loadAIInsights(); // Keep for Analytics tab
+                loadAIInsightsSidebar(); // New sidebar version
             }, 500);
+            loadThemePreference();
         });
     </script>
 
