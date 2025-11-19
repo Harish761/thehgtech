@@ -1,9 +1,9 @@
 // Auto-Generated Threat Intel (Multi-Vendor Dashboard)
-// Updated: 2025-11-19T16:54:18.761350+05:30 IST
+// Updated: 2025-11-19T18:27:35.794293+05:30 IST
 // Sources: OpenPhish, URLhaus, ThreatFox, Feodo Tracker, Blocklist.de, SSL Blacklist
 
 const threatIntelData = {
-    "lastUpdated": "2025-11-19T16:54:18.757799+05:30",
+    "lastUpdated": "2025-11-19T18:27:35.790713+05:30",
     "comparisonPeriod": "Nov 18 \u2013 Nov 19, 2025",
     "vendors": {
         "OpenPhish": {
@@ -13,752 +13,752 @@ const threatIntelData = {
             "iocs": [
                 {
                     "type": "url",
-                    "indicator": "hxxps://viralbyte[.]shop/",
+                    "indicator": "hxxps://postnnord-no[.]sbs/",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://dhlbs[.]vip/",
+                    "indicator": "hxxps://suavino[.]cfd/",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://mobileorange5[.]godaddysites[.]com/",
+                    "indicator": "hxxps://roblox[.]com[.]ge/users/3322604459/profile",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://www[.]mobileorange5[.]godaddysites[.]com/",
+                    "indicator": "hxxps://dbs-vn[.]club/index/login",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://dpd-ptsv[.]shop/",
+                    "indicator": "hxxps://owamos[.]ru/?rid=X0aJlRA",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxp://www[.]btcjys6[.]xin/",
+                    "indicator": "hxxps://dbs-vn[.]club/",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(uzjhpzwmbmvso5jku2htbi4m))/Main/Login",
+                    "indicator": "hxxps://217-154-167-160[.]cprapid[.]com/ch/update[.]php",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(aw45tc3puam5xcs31dr5qkzw))/Main/Login",
+                    "indicator": "hxxps://ipfs[.]io/ipfs/bafkreifkzcg6giux3m3h3jtkovgrmr75oxjvv2zqoxmawag4vaur53qeeu",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(p21r5dmhs4eoita1xwl5lph4))/Main/Login",
+                    "indicator": "hxxps://tokiyebasvurdum[.]top/giris[.]php/",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(h3sny0yc2ruh41j4h4seqdbo))/Main/Login",
+                    "indicator": "hxxp://117c5u334v29lhx[.]duckdns[.]org/en/main",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(smznahzxhjraohzpfqoht0zz))/Main/Login",
+                    "indicator": "hxxp://files[.]securebankinggroup[.]org/s/63BZGFSVBWSFCDX7Y9/584dd8/90eab167-7429-489f-99f6-ce86e8d0d81a",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
+                    "campaign": "Financial Phishing"
+                },
+                {
+                    "type": "url",
+                    "indicator": "hxxps://securityawareness[.]cc/landing/form/72d4da34-6205-4542-b2c4-bf727676cb57/",
+                    "description": "Active phishing URL",
+                    "timestamp": "just now",
+                    "source": "OpenPhish",
+                    "sourceUrl": "https://openphish.com/",
+                    "analysisTime": "2025-11-19 18:27 IST",
+                    "tags": [
+                        "phishing",
+                        "live"
+                    ],
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(suwv2iianfo2ps5fqyan3zpc))/Main/Login",
+                    "indicator": "hxxps://securityawareness[.]cc/landing/form/3f3ca6c1-c884-4c94-b902-1061b90e098e/",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(fzoamv33w4a1uttjydvoc5dj))/Main/Login",
+                    "indicator": "hxxps://securityawareness[.]cc/landing/form/3d75d0a4-25f4-4718-824a-f9daaa964f50/",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(q0bbcvjmpkikqjw1gd1mpqpz))/Main/Login",
+                    "indicator": "hxxps://hodting[.]shop/cashycashy/",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://secureresverify[.]com/271202164237",
+                    "indicator": "hxxp://pub-e2f6341451ca4b26ac23c6bea7b95d1d[.]r2[.]dev/index[.]html",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(k5s5hqz2tgin2utbqb2nq1q2))/Main/Login",
+                    "indicator": "hxxps://thecodeofrohan[.]github[.]io/Netflix-Site-Clone-by-Rohan-/",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(idz1gcya0blvhvptk1olsnll))/Main/Login",
+                    "indicator": "hxxps://meta-wavex[.]pages[.]dev/",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(qplkdtllmhzzayascyfepxzy))/Main/Login",
+                    "indicator": "hxxps://jenish7005[.]github[.]io/netflixclone/",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(s2cu1bg4vi355rinlwnuvwsb))/Main/Login",
+                    "indicator": "hxxps://suryank7[.]github[.]io/netflix-ui-clone/",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(xeoksstfzprkif03m50ze0pw))/Main/Login",
+                    "indicator": "hxxps://meta-device[.]pages[.]dev/",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(xiyz435lsc4viqevtahlgqi0))/Main/Login",
+                    "indicator": "hxxps://meta-support-tagid[.]pages[.]dev/",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(zdgcgmr312eu0fafu154uxpv))/Main/Login",
+                    "indicator": "hxxps://data-center-strike-data[.]pages[.]dev/",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(4iwhqyymi5re0zgauxtf0u4v))/Main/Login",
+                    "indicator": "hxxps://data-center-trademark-transparency[.]pages[.]dev/",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(in2guqcsy5lfcff1gvanotiy))/Main/Login",
+                    "indicator": "hxxps://cosmic-bay[.]pages[.]dev/",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(bkvkfor3o5alvbdep3kygny3))/Main/Login",
+                    "indicator": "hxxps://booking[.]confirmation-id417113[.]com/79VGT7XT",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
+                    "campaign": "Booking.com Phishing"
+                },
+                {
+                    "type": "url",
+                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(u3mdf4pyzoawkcr2utscmbk0))/Main/Login",
+                    "description": "Active phishing URL",
+                    "timestamp": "just now",
+                    "source": "OpenPhish",
+                    "sourceUrl": "https://openphish.com/",
+                    "analysisTime": "2025-11-19 18:27 IST",
+                    "tags": [
+                        "phishing",
+                        "live"
+                    ],
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(13zlikblpsluxabs41qmjsla))/Main/Login",
+                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(44r4c43h1usxcxieatvnbsye))/Main/Login",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(sqd4i0xwiphivvsrpfygatma))/Main/Login",
+                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(vsh3iibuee1xfdhqjvoyr1b4))/Main/Login",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(4x0ukzlczba3cw1srwjvkrw2))/Main/Login",
+                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(pjxoas325anx1mozptvwc0vb))/Main/Login",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(h0eemarpnzpjis0iljpwm0gw))/Main/Login",
+                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(adujjirzhzqaoct53ihunhg0))/Main/Login",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(d4oorpfyjyysl4ponynlppft))/Main/Login",
+                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(asgug2modqkfb2sewottkz0b))/Main/Login",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(lw4ptcd3qr4bbkp0mk1spktm))/Main/Login",
+                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(iphu40qk4kpkrvlop4fb1q1p))/Main/Login",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(jsn4yapsv1qhalc3i2fj5jd4))/Main/Login",
+                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(vl40rjygvx5jwyiymjoc5xya))/Main/Login",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(1i42fqs3qyqhc5yaomm2b4iv))/Main/Login",
+                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(er01pexrtbtbrcqqgfspzbaj))/Main/Login",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(eifmuaf4wiawfaxqj0mib22q))/Main/Login",
+                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(fld2ir5s1anadu1biwkrjtap))/Main/Login",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(mdkxs4kjjshlli40atlvcptf))/Main/Login",
+                    "indicator": "hxxps://www[.]roblox[.]com[.]ml/users/8213464971/profile",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(mrxucain5ryyryauuhuq1ect))/Main/Login",
+                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(ovq3xrysxf4nhexbpugai2pe))/Main/Login",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(xjv0r25esr5bpwq5oh1ljovj))/Main/Login",
+                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(n3gf3vb2qd3x4pl45kef4mn5))/Main/Login",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(wdt0i00tef1ze5nmfd4rmhqa))/Main/Login",
+                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(1mx2kjnhustzvoehnmxcpapx))/Main/Login",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(bpkid2ltrrmztz2xbzh0auxw))/Main/Login",
+                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(kkskt1y2fczlk3ybc40idui0))/Main/Login",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(ln2jzse2epycp0e2vrq5kj4u))/Main/Login",
+                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(k0i1qbziszsbt1jo451fzhqs))/Main/Login",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(3l2x0rjokovquntj0mdlyx3i))/Main/Login",
+                    "indicator": "hxxps://meta-jet[.]pages[.]dev/",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(yxjpyppqrkcsj5kp3ufosxxu))/Main/Login",
+                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(lm42at5uu5l0ejemit5lb4ya))/Main/Login",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(3svv55fhwhy2nspcxv3zv14y))/Main/Login",
+                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(cwk5nfftgolju4m3fbmmp4v5))/Main/Login",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(a0iukafs0vhx3zodm3skp4i2))/Main/Login",
+                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(hpw2rn5re1difgkxlcgnds1j))/Main/Login",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(bd3nlop2pr1yt4lnqsxi1xwd))/Main/Login",
+                    "indicator": "hxxps://meta-support-subscriber[.]pages[.]dev/",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://onthidanhgianangluc[.]vn/wp-includes/LinnkkCp[.]html",
+                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(cvsbdtu2qzhr5l0ykugpdp4g))/Main/Login",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxps://orange-service[.]godaddysites[.]com/",
+                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(cqgyclesazejzhjrpddslcav))/Main/Login",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
                     "type": "url",
-                    "indicator": "hxxp://www[.]orange-service[.]godaddysites[.]com/",
+                    "indicator": "hxxps://rbfcu-star[.]azurewebsites[.]net/(S(feuc5fa5nrjgsv3k3zrtdy0j))/Main/Login",
                     "description": "Active phishing URL",
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
-                    "campaign": "Generic Phishing"
-                },
-                {
-                    "type": "url",
-                    "indicator": "hxxps://impressionsofayan[.]com/wp-includes/pvocpp395ne3pag[.]html",
-                    "description": "Active phishing URL",
-                    "timestamp": "just now",
-                    "source": "OpenPhish",
-                    "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
-                    "tags": [
-                        "phishing",
-                        "live"
-                    ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
-                    "campaign": "Generic Phishing"
-                },
-                {
-                    "type": "url",
-                    "indicator": "hxxp://meta-zorvin-feedback-chain[.]pages[.]dev/meta_for_business",
-                    "description": "Active phishing URL",
-                    "timestamp": "just now",
-                    "source": "OpenPhish",
-                    "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-19 16:54 IST",
-                    "tags": [
-                        "phishing",
-                        "live"
-                    ],
-                    "addedAt": "2025-11-19T16:54:10.932443+05:30",
+                    "addedAt": "2025-11-19T18:27:27.997326+05:30",
                     "campaign": "Generic Phishing"
                 }
             ],
@@ -813,12 +813,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -828,12 +828,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -843,12 +843,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -858,27 +858,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
-                    "campaign": "SSH Attacks"
-                },
-                {
-                    "type": "ip",
-                    "indicator": "1[.]15[.]114[.]102",
-                    "description": "SSH brute force attacker",
-                    "timestamp": "just now",
-                    "source": "Blocklist.de",
-                    "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
-                    "tags": [
-                        "brute-force",
-                        "ssh"
-                    ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -888,12 +873,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -903,12 +888,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -918,12 +903,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -933,12 +918,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -948,12 +933,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -963,12 +948,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -978,27 +963,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
-                    "campaign": "SSH Attacks"
-                },
-                {
-                    "type": "ip",
-                    "indicator": "1[.]246[.]220[.]152",
-                    "description": "SSH brute force attacker",
-                    "timestamp": "just now",
-                    "source": "Blocklist.de",
-                    "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
-                    "tags": [
-                        "brute-force",
-                        "ssh"
-                    ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -1008,12 +978,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -1023,12 +993,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -1038,12 +1008,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -1053,27 +1023,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
-                    "campaign": "SSH Attacks"
-                },
-                {
-                    "type": "ip",
-                    "indicator": "1[.]4[.]203[.]104",
-                    "description": "SSH brute force attacker",
-                    "timestamp": "just now",
-                    "source": "Blocklist.de",
-                    "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
-                    "tags": [
-                        "brute-force",
-                        "ssh"
-                    ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -1083,12 +1038,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -1098,12 +1053,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -1113,12 +1068,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -1128,12 +1083,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -1143,12 +1098,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -1158,12 +1113,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -1173,12 +1128,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -1188,12 +1143,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -1203,12 +1158,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -1218,12 +1173,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -1233,12 +1188,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -1248,12 +1203,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -1263,12 +1218,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -1278,12 +1233,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -1293,12 +1248,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -1308,12 +1263,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -1323,12 +1278,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -1338,12 +1293,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -1353,12 +1308,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -1368,12 +1323,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -1383,12 +1338,27 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
+                    "campaign": "SSH Attacks"
+                },
+                {
+                    "type": "ip",
+                    "indicator": "101[.]126[.]143[.]71",
+                    "description": "SSH brute force attacker",
+                    "timestamp": "just now",
+                    "source": "Blocklist.de",
+                    "sourceUrl": "https://www.blocklist.de/",
+                    "analysisTime": "2025-11-19 18:27 IST",
+                    "tags": [
+                        "brute-force",
+                        "ssh"
+                    ],
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -1398,12 +1368,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -1413,12 +1383,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -1428,12 +1398,27 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
+                    "campaign": "SSH Attacks"
+                },
+                {
+                    "type": "ip",
+                    "indicator": "101[.]126[.]155[.]161",
+                    "description": "SSH brute force attacker",
+                    "timestamp": "just now",
+                    "source": "Blocklist.de",
+                    "sourceUrl": "https://www.blocklist.de/",
+                    "analysisTime": "2025-11-19 18:27 IST",
+                    "tags": [
+                        "brute-force",
+                        "ssh"
+                    ],
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -1443,12 +1428,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -1458,12 +1443,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -1473,12 +1458,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -1488,12 +1473,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -1503,12 +1488,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -1518,12 +1503,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -1533,12 +1518,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -1548,12 +1533,27 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-19 16:54 IST",
+                    "analysisTime": "2025-11-19 18:27 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-19T16:54:15.877786+05:30",
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
+                    "campaign": "SSH Attacks"
+                },
+                {
+                    "type": "ip",
+                    "indicator": "101[.]126[.]4[.]215",
+                    "description": "SSH brute force attacker",
+                    "timestamp": "just now",
+                    "source": "Blocklist.de",
+                    "sourceUrl": "https://www.blocklist.de/",
+                    "analysisTime": "2025-11-19 18:27 IST",
+                    "tags": [
+                        "brute-force",
+                        "ssh"
+                    ],
+                    "addedAt": "2025-11-19T18:27:33.086704+05:30",
                     "campaign": "SSH Attacks"
                 }
             ],
@@ -1583,12 +1583,12 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2025-11-19 16:54 IST",
+            "analysisTime": "2025-11-19 18:27 IST",
             "tags": [
                 "brute-force",
                 "ssh"
             ],
-            "addedAt": "2025-11-19T16:54:15.877786+05:30",
+            "addedAt": "2025-11-19T18:27:33.086704+05:30",
             "campaign": "SSH Attacks"
         },
         {
@@ -1598,12 +1598,12 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2025-11-19 16:54 IST",
+            "analysisTime": "2025-11-19 18:27 IST",
             "tags": [
                 "brute-force",
                 "ssh"
             ],
-            "addedAt": "2025-11-19T16:54:15.877786+05:30",
+            "addedAt": "2025-11-19T18:27:33.086704+05:30",
             "campaign": "SSH Attacks"
         },
         {
@@ -1613,12 +1613,12 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2025-11-19 16:54 IST",
+            "analysisTime": "2025-11-19 18:27 IST",
             "tags": [
                 "brute-force",
                 "ssh"
             ],
-            "addedAt": "2025-11-19T16:54:15.877786+05:30",
+            "addedAt": "2025-11-19T18:27:33.086704+05:30",
             "campaign": "SSH Attacks"
         },
         {
@@ -1628,27 +1628,12 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2025-11-19 16:54 IST",
+            "analysisTime": "2025-11-19 18:27 IST",
             "tags": [
                 "brute-force",
                 "ssh"
             ],
-            "addedAt": "2025-11-19T16:54:15.877786+05:30",
-            "campaign": "SSH Attacks"
-        },
-        {
-            "type": "ip",
-            "indicator": "1[.]15[.]114[.]102",
-            "description": "SSH brute force attacker",
-            "timestamp": "just now",
-            "source": "Blocklist.de",
-            "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2025-11-19 16:54 IST",
-            "tags": [
-                "brute-force",
-                "ssh"
-            ],
-            "addedAt": "2025-11-19T16:54:15.877786+05:30",
+            "addedAt": "2025-11-19T18:27:33.086704+05:30",
             "campaign": "SSH Attacks"
         },
         {
@@ -1658,12 +1643,12 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2025-11-19 16:54 IST",
+            "analysisTime": "2025-11-19 18:27 IST",
             "tags": [
                 "brute-force",
                 "ssh"
             ],
-            "addedAt": "2025-11-19T16:54:15.877786+05:30",
+            "addedAt": "2025-11-19T18:27:33.086704+05:30",
             "campaign": "SSH Attacks"
         },
         {
@@ -1673,12 +1658,12 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2025-11-19 16:54 IST",
+            "analysisTime": "2025-11-19 18:27 IST",
             "tags": [
                 "brute-force",
                 "ssh"
             ],
-            "addedAt": "2025-11-19T16:54:15.877786+05:30",
+            "addedAt": "2025-11-19T18:27:33.086704+05:30",
             "campaign": "SSH Attacks"
         },
         {
@@ -1688,12 +1673,12 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2025-11-19 16:54 IST",
+            "analysisTime": "2025-11-19 18:27 IST",
             "tags": [
                 "brute-force",
                 "ssh"
             ],
-            "addedAt": "2025-11-19T16:54:15.877786+05:30",
+            "addedAt": "2025-11-19T18:27:33.086704+05:30",
             "campaign": "SSH Attacks"
         },
         {
@@ -1703,12 +1688,12 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2025-11-19 16:54 IST",
+            "analysisTime": "2025-11-19 18:27 IST",
             "tags": [
                 "brute-force",
                 "ssh"
             ],
-            "addedAt": "2025-11-19T16:54:15.877786+05:30",
+            "addedAt": "2025-11-19T18:27:33.086704+05:30",
             "campaign": "SSH Attacks"
         },
         {
@@ -1718,12 +1703,12 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2025-11-19 16:54 IST",
+            "analysisTime": "2025-11-19 18:27 IST",
             "tags": [
                 "brute-force",
                 "ssh"
             ],
-            "addedAt": "2025-11-19T16:54:15.877786+05:30",
+            "addedAt": "2025-11-19T18:27:33.086704+05:30",
             "campaign": "SSH Attacks"
         },
         {
@@ -1733,12 +1718,12 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2025-11-19 16:54 IST",
+            "analysisTime": "2025-11-19 18:27 IST",
             "tags": [
                 "brute-force",
                 "ssh"
             ],
-            "addedAt": "2025-11-19T16:54:15.877786+05:30",
+            "addedAt": "2025-11-19T18:27:33.086704+05:30",
             "campaign": "SSH Attacks"
         },
         {
@@ -1748,27 +1733,12 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2025-11-19 16:54 IST",
+            "analysisTime": "2025-11-19 18:27 IST",
             "tags": [
                 "brute-force",
                 "ssh"
             ],
-            "addedAt": "2025-11-19T16:54:15.877786+05:30",
-            "campaign": "SSH Attacks"
-        },
-        {
-            "type": "ip",
-            "indicator": "1[.]246[.]220[.]152",
-            "description": "SSH brute force attacker",
-            "timestamp": "just now",
-            "source": "Blocklist.de",
-            "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2025-11-19 16:54 IST",
-            "tags": [
-                "brute-force",
-                "ssh"
-            ],
-            "addedAt": "2025-11-19T16:54:15.877786+05:30",
+            "addedAt": "2025-11-19T18:27:33.086704+05:30",
             "campaign": "SSH Attacks"
         },
         {
@@ -1778,12 +1748,12 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2025-11-19 16:54 IST",
+            "analysisTime": "2025-11-19 18:27 IST",
             "tags": [
                 "brute-force",
                 "ssh"
             ],
-            "addedAt": "2025-11-19T16:54:15.877786+05:30",
+            "addedAt": "2025-11-19T18:27:33.086704+05:30",
             "campaign": "SSH Attacks"
         },
         {
@@ -1793,12 +1763,12 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2025-11-19 16:54 IST",
+            "analysisTime": "2025-11-19 18:27 IST",
             "tags": [
                 "brute-force",
                 "ssh"
             ],
-            "addedAt": "2025-11-19T16:54:15.877786+05:30",
+            "addedAt": "2025-11-19T18:27:33.086704+05:30",
             "campaign": "SSH Attacks"
         },
         {
@@ -1808,12 +1778,12 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2025-11-19 16:54 IST",
+            "analysisTime": "2025-11-19 18:27 IST",
             "tags": [
                 "brute-force",
                 "ssh"
             ],
-            "addedAt": "2025-11-19T16:54:15.877786+05:30",
+            "addedAt": "2025-11-19T18:27:33.086704+05:30",
             "campaign": "SSH Attacks"
         },
         {
@@ -1823,27 +1793,12 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2025-11-19 16:54 IST",
+            "analysisTime": "2025-11-19 18:27 IST",
             "tags": [
                 "brute-force",
                 "ssh"
             ],
-            "addedAt": "2025-11-19T16:54:15.877786+05:30",
-            "campaign": "SSH Attacks"
-        },
-        {
-            "type": "ip",
-            "indicator": "1[.]4[.]203[.]104",
-            "description": "SSH brute force attacker",
-            "timestamp": "just now",
-            "source": "Blocklist.de",
-            "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2025-11-19 16:54 IST",
-            "tags": [
-                "brute-force",
-                "ssh"
-            ],
-            "addedAt": "2025-11-19T16:54:15.877786+05:30",
+            "addedAt": "2025-11-19T18:27:33.086704+05:30",
             "campaign": "SSH Attacks"
         },
         {
@@ -1853,12 +1808,12 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2025-11-19 16:54 IST",
+            "analysisTime": "2025-11-19 18:27 IST",
             "tags": [
                 "brute-force",
                 "ssh"
             ],
-            "addedAt": "2025-11-19T16:54:15.877786+05:30",
+            "addedAt": "2025-11-19T18:27:33.086704+05:30",
             "campaign": "SSH Attacks"
         },
         {
@@ -1868,12 +1823,57 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2025-11-19 16:54 IST",
+            "analysisTime": "2025-11-19 18:27 IST",
             "tags": [
                 "brute-force",
                 "ssh"
             ],
-            "addedAt": "2025-11-19T16:54:15.877786+05:30",
+            "addedAt": "2025-11-19T18:27:33.086704+05:30",
+            "campaign": "SSH Attacks"
+        },
+        {
+            "type": "ip",
+            "indicator": "1[.]83[.]154[.]136",
+            "description": "SSH brute force attacker",
+            "timestamp": "just now",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2025-11-19 18:27 IST",
+            "tags": [
+                "brute-force",
+                "ssh"
+            ],
+            "addedAt": "2025-11-19T18:27:33.086704+05:30",
+            "campaign": "SSH Attacks"
+        },
+        {
+            "type": "ip",
+            "indicator": "1[.]83[.]154[.]173",
+            "description": "SSH brute force attacker",
+            "timestamp": "just now",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2025-11-19 18:27 IST",
+            "tags": [
+                "brute-force",
+                "ssh"
+            ],
+            "addedAt": "2025-11-19T18:27:33.086704+05:30",
+            "campaign": "SSH Attacks"
+        },
+        {
+            "type": "ip",
+            "indicator": "1[.]94[.]123[.]200",
+            "description": "SSH brute force attacker",
+            "timestamp": "just now",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2025-11-19 18:27 IST",
+            "tags": [
+                "brute-force",
+                "ssh"
+            ],
+            "addedAt": "2025-11-19T18:27:33.086704+05:30",
             "campaign": "SSH Attacks"
         }
     ],
@@ -1913,26 +1913,18 @@ const threatIntelData = {
         "targetedSectors": [
             {
                 "name": "General",
-                "percentage": 62
+                "percentage": 78
             },
             {
                 "name": "Tech",
-                "percentage": 38
+                "percentage": 21
+            },
+            {
+                "name": "Finance",
+                "percentage": 1
             }
         ],
         "campaigns": [
-            {
-                "name": "Generic Phishing",
-                "count": 50,
-                "types": [
-                    "url"
-                ],
-                "sampleIndicators": [
-                    "hxxps://viralbyte[.]shop/",
-                    "hxxps://dhlbs[.]vip/",
-                    "hxxps://mobileorange5[.]godaddysites[.]com/"
-                ]
-            },
             {
                 "name": "SSH Attacks",
                 "count": 50,
@@ -1943,6 +1935,18 @@ const threatIntelData = {
                     "1[.]116[.]180[.]98",
                     "1[.]117[.]227[.]101",
                     "1[.]13[.]79[.]144"
+                ]
+            },
+            {
+                "name": "Generic Phishing",
+                "count": 48,
+                "types": [
+                    "url"
+                ],
+                "sampleIndicators": [
+                    "hxxps://postnnord-no[.]sbs/",
+                    "hxxps://suavino[.]cfd/",
+                    "hxxps://roblox[.]com[.]ge/users/3322604459/profile"
                 ]
             }
         ]
