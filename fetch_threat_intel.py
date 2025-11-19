@@ -1,15 +1,21 @@
 #!/usr/bin/env python3
 """
-RSS-Based Threat Intel Automation – Live IOCs Every Hour
--------------------------------------------------------
-Pulls from reputable security sources: URLhaus, OpenPhish,
-Malware Traffic Analysis, ThreatFox (abuse.ch)
-Updates threat-intel.js with:
-  • Hourly: 20 fresh IOCs (defanged, with source attribution)
-  • Daily: Stats, trends, sectors, geo, campaign tracking
-No API keys. No timeouts. Pure RSS.
+Enhanced Threat Intel Automation - Multi-Vendor Dashboard
+---------------------------------------------------------
+Pulls from 6 reputable security sources with per-vendor tracking:
+  • OpenPhish (phishing URLs)
+  • URLhaus (malware distribution URLs)
+  • ThreatFox (mixed IOCs - URLs, IPs, hashes)
+  • Feodo Tracker (botnet C2 IPs)
+  • Blocklist.de (SSH/brute force attackers)
+  • SSL Blacklist (malicious SSL certs)
 
-FIXED: Now extracts actual IOCs (URLs/IPs) from content, not blog titles
+Features:
+  • 50 IOCs per vendor (300 total)
+  • NEW tag for IOCs added in last hour
+  • RECENT tag for IOCs 1-6 hours old
+  • Hourly data updates, daily analytics
+  • Overview tab with aggregated view
 """
 
 import os
@@ -24,7 +30,7 @@ import re
 # ──────────────────────────────────────────────────────────────
 # Config
 # ──────────────────────────────────────────────────────────────
-MAX_IOCS = 20
+MAX_IOCS_PER_VENDOR = 50
 IOC_EXPIRY_HOURS = 24
 OUTPUT_FILE = 'threat-intel.js'
 HISTORY_FILE = 'threat-intel-history.json'
@@ -32,25 +38,52 @@ HISTORY_FILE = 'threat-intel-history.json'
 # IST Timezone
 IST = timezone(timedelta(hours=5, minutes=30))
 
-# Reputable RSS Feeds (All are well-known threat intel sources)
+# Threat Categories
+CATEGORIES = ['Phishing', 'Malware', 'C2', 'Botnet']
+
+# Enhanced RSS Feeds (6 vendors)
 RSS_FEEDS = {
-    "URLhaus": {
-        "url": "https://urlhaus.abuse.ch/feeds/rss/",
-        "type": "rss",
-        "description": "Malicious URL database by abuse.ch",
-        "website": "https://urlhaus.abuse.ch/"
-    },
     "OpenPhish": {
         "url": "https://openphish.com/feed.txt",
         "type": "text",
-        "description": "Automated phishing intelligence",
-        "website": "https://openphish.com/"
+        "description": "Real-time phishing URL feed updated every 15 minutes. Tracks active phishing sites targeting major brands and financial institutions.",
+        "website": "https://openphish.com/",
+        "updateFrequency": "Every 15 minutes"
     },
-    "Abuse.ch ThreatFox": {
+    "URLhaus": {
+        "url": "https://urlhaus.abuse.ch/feeds/rss/",
+        "type": "rss",
+        "description": "Malicious URL database by abuse.ch. Tracks URLs used for malware distribution including ransomware, trojans, and botnets.",
+        "website": "https://urlhaus.abuse.ch/",
+        "updateFrequency": "Real-time"
+    },
+    "ThreatFox": {
         "url": "https://threatfox.abuse.ch/export/json/recent/",
         "type": "threatfox",
-        "description": "IOC sharing platform by abuse.ch",
-        "website": "https://threatfox.abuse.ch/"
+        "description": "IOC sharing platform by abuse.ch. Includes URLs, IPs, domains, and hashes associated with active malware campaigns.",
+        "website": "https://threatfox.abuse.ch/",
+        "updateFrequency": "Real-time"
+    },
+    "Feodo Tracker": {
+        "url": "https://feodotracker.abuse.ch/downloads/ipblocklist_recommended.txt",
+        "type": "text",
+        "description": "Tracks Feodo/Emotet/Dridex botnet C2 servers. Lists IP addresses of active command and control infrastructure.",
+        "website": "https://feodotracker.abuse.ch/",
+        "updateFrequency": "Every 5 minutes"
+    },
+    "Blocklist.de": {
+        "url": "https://lists.blocklist.de/lists/ssh.txt",
+        "type": "text",
+        "description": "SSH brute force attackers. Lists IP addresses that have been reported for SSH login attacks and unauthorized access attempts.",
+        "website": "https://www.blocklist.de/",
+        "updateFrequency": "Every 30 minutes"
+    },
+    "SSL Blacklist": {
+        "url": "https://sslbl.abuse.ch/blacklist/sslipblacklist.csv",
+        "type": "text",
+        "description": "Malicious SSL certificates and associated IPs. Tracks SSL certs used by malware C2 servers and phishing sites.",
+        "website": "https://sslbl.abuse.ch/",
+        "updateFrequency": "Real-time"
     }
 }
 
@@ -58,43 +91,137 @@ def get_ist_now():
     return datetime.now(IST)
 
 # ──────────────────────────────────────────────────────────────
-# RSS Fetching & IOC Extraction
+# IOC Fetching & Parsing
 # ──────────────────────────────────────────────────────────────
-def fetch_rss_iocs():
+def fetch_vendor_iocs(vendor_name, config):
+    """Fetch IOCs from a single vendor"""
     iocs = []
     now = get_ist_now()
-
-    for name, config in RSS_FEEDS.items():
-        print(f"  - Fetching {name}...")
-        try:
-            if config["type"] == "text":
-                import requests
-                resp = requests.get(config["url"], timeout=15, headers={'User-Agent': 'TheHGTech-ThreatIntel/1.0'})
-                lines = resp.text.strip().split('\n')
-                for line in lines[:10]:
+    
+    print(f"  - Fetching {vendor_name}...")
+    try:
+        if config["type"] == "text":
+            import requests
+            resp = requests.get(config["url"], timeout=15, headers={'User-Agent': 'TheHGTech-ThreatIntel/2.0'})
+            lines = resp.text.strip().split('\n')
+            
+            # Skip header lines (comments, CSV headers, etc)
+            clean_lines = [l.strip() for l in lines if l.strip() and not l.startswith('#') and not l.startswith('//')]
+            
+            # Parse based on vendor
+            if vendor_name == "OpenPhish":
+                for line in clean_lines[:MAX_IOCS_PER_VENDOR]:
                     if line.startswith('http'):
-                        iocs.append(parse_openphish(line, now, config))
-            elif config["type"] == "threatfox":
-                import requests
-                resp = requests.get(config["url"], timeout=15, headers={'User-Agent': 'TheHGTech-ThreatIntel/1.0'})
-                data = resp.json()
-                if 'data' in data:
-                    for item in list(data['data'].values())[:8]:
-                        ioc = parse_threatfox(item, now, config)
-                        if ioc:
-                            iocs.append(ioc)
-            else:  # RSS type
-                feed = feedparser.parse(config["url"])
-                for entry in feed.entries[:10]:
-                    ioc = extract_ioc_from_entry(entry, name, now, config)
+                        iocs.append(parse_openphish(line, now, config, vendor_name))
+            
+            elif vendor_name == "Feodo Tracker":
+                for line in clean_lines[:MAX_IOCS_PER_VENDOR]:
+                    if re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}', line):
+                        ip = line.split(',')[0] if ',' in line else line
+                        iocs.append(parse_feodo(ip, now, config, vendor_name))
+            
+            elif vendor_name == "Blocklist.de":
+                for line in clean_lines[:MAX_IOCS_PER_VENDOR]:
+                    if re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$', line):
+                        iocs.append(parse_blocklist(line, now, config, vendor_name))
+            
+            elif vendor_name == "SSL Blacklist":
+                for line in clean_lines[:MAX_IOCS_PER_VENDOR]:
+                    if ',' in line:
+                        parts = line.split(',')
+                        if len(parts) >= 2 and re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}', parts[1]):
+                            iocs.append(parse_ssl_blacklist(parts, now, config, vendor_name))
+        
+        elif config["type"] == "threatfox":
+            import requests
+            resp = requests.get(config["url"], timeout=15, headers={'User-Agent': 'TheHGTech-ThreatIntel/2.0'})
+            data = resp.json()
+            if 'data' in data:
+                for item in list(data['data'].values())[:MAX_IOCS_PER_VENDOR]:
+                    ioc = parse_threatfox(item, now, config, vendor_name)
                     if ioc:
                         iocs.append(ioc)
-            time.sleep(1)
-        except Exception as e:
-            print(f"    → Failed {name}: {e}")
+        
+        else:  # RSS type
+            feed = feedparser.parse(config["url"])
+            for entry in feed.entries[:MAX_IOCS_PER_VENDOR]:
+                ioc = extract_ioc_from_entry(entry, vendor_name, now, config)
+                if ioc:
+                    iocs.append(ioc)
+        
+        print(f"    ✓ Got {len(iocs)} IOCs from {vendor_name}")
+        time.sleep(1)  # Rate limiting
+        
+    except Exception as e:
+        print(f"    ✗ Failed {vendor_name}: {e}")
+    
     return iocs
 
-def parse_threatfox(item, now, config):
+def parse_openphish(url, now, config, vendor):
+    """Parse OpenPhish URL"""
+    return {
+        'type': 'url',
+        'indicator': defang_indicator(url, 'url'),
+        'description': 'Active phishing URL',
+        'timestamp': format_timestamp(now),
+        'source': vendor,
+        'sourceUrl': config['website'],
+        'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
+        'tags': ['phishing', 'live'],
+        'addedAt': now.isoformat(),
+        'campaign': detect_campaign(url, 'phishing')
+    }
+
+def parse_feodo(ip, now, config, vendor):
+    """Parse Feodo Tracker IP"""
+    return {
+        'type': 'ip',
+        'indicator': defang_indicator(ip, 'ip'),
+        'description': 'Feodo/Emotet botnet C2 server',
+        'timestamp': format_timestamp(now),
+        'source': vendor,
+        'sourceUrl': config['website'],
+        'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
+        'tags': ['botnet', 'c2', 'feodo'],
+        'addedAt': now.isoformat(),
+        'campaign': 'Feodo/Emotet'
+    }
+
+def parse_blocklist(ip, now, config, vendor):
+    """Parse Blocklist.de IP"""
+    return {
+        'type': 'ip',
+        'indicator': defang_indicator(ip, 'ip'),
+        'description': 'SSH brute force attacker',
+        'timestamp': format_timestamp(now),
+        'source': vendor,
+        'sourceUrl': config['website'],
+        'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
+        'tags': ['brute-force', 'ssh'],
+        'addedAt': now.isoformat(),
+        'campaign': 'SSH Attacks'
+    }
+
+def parse_ssl_blacklist(parts, now, config, vendor):
+    """Parse SSL Blacklist CSV"""
+    timestamp_val = parts[0] if len(parts) > 0 else ''
+    ip = parts[1] if len(parts) > 1 else ''
+    port = parts[2] if len(parts) > 2 else ''
+    
+    return {
+        'type': 'ip',
+        'indicator': defang_indicator(ip, 'ip'),
+        'description': f'Malicious SSL cert (port {port})' if port else 'Malicious SSL certificate',
+        'timestamp': format_timestamp(now),
+        'source': vendor,
+        'sourceUrl': config['website'],
+        'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
+        'tags': ['ssl', 'c2'],
+        'addedAt': now.isoformat(),
+        'campaign': 'SSL C2 Infrastructure'
+    }
+
+def parse_threatfox(item, now, config, vendor):
     """Parse ThreatFox JSON entry"""
     if not item:
         return None
@@ -122,247 +249,139 @@ def parse_threatfox(item, now, config):
     return {
         'type': ioc_type,
         'indicator': defang_indicator(ioc_value, ioc_type),
-        'pulse': 'ThreatFox',
         'description': f"{malware} - {threat_type}" if threat_type else malware,
-        'timestamp': 'just now',
-        'source': 'ThreatFox (abuse.ch)',
+        'timestamp': format_timestamp(now),
+        'source': vendor,
         'sourceUrl': config['website'],
         'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
-        'tags': generate_tags(ioc_type, malware + ' ' + threat_type, 'ThreatFox'),
+        'tags': generate_tags(ioc_type, malware + ' ' + threat_type, vendor),
         'addedAt': now.isoformat(),
         'campaign': malware if malware != 'Unknown' else detect_campaign(ioc_value, threat_type)
     }
 
-def parse_openphish(url, now, config):
-    """Parse OpenPhish text feed"""
-    return {
-        'type': 'url',
-        'indicator': defang_indicator(url, 'url'),
-        'pulse': 'OpenPhish',
-        'description': 'Active phishing URL',
-        'timestamp': 'just now',
-        'source': 'OpenPhish',
-        'sourceUrl': config['website'],
-        'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
-        'tags': ['phishing', 'live', 'automated'],
-        'addedAt': now.isoformat(),
-        'campaign': detect_campaign(url, 'phishing')
-    }
-
 def extract_ioc_from_entry(entry, feed_name, now, config):
-    """Extract ACTUAL IOC from RSS entry (URLs, IPs, domains - not blog titles!)"""
+    """Extract IOC from RSS entry (URLhaus)"""
     title = entry.get('title', '').strip()
     link = entry.get('link', '')
     desc = entry.get('description', '') or entry.get('summary', '')
     
-    # Combine all text to search for IOCs
     all_text = title + ' ' + desc
     
     # URLhaus RSS typically has the malicious URL directly
-    if feed_name == "URLhaus":
-        # Look for the malicious URL in the entry
-        url_match = re.search(r'https?://[^\s<>"\']+', all_text)
-        if url_match:
-            indicator = url_match.group(0).rstrip('.,;:)')
-            ioc_type = 'url'
-            
-            # Clean up description
-            clean_desc = clean_html(desc)[:150] if desc else "Malicious URL"
-            
-            return {
-                'type': ioc_type,
-                'indicator': defang_indicator(indicator, ioc_type),
-                'pulse': feed_name,
-                'description': clean_desc,
-                'timestamp': 'just now',
-                'source': feed_name,
-                'sourceUrl': link or config['website'],
-                'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
-                'tags': generate_tags(ioc_type, clean_desc, feed_name),
-                'addedAt': now.isoformat(),
-                'campaign': detect_campaign(indicator, clean_desc)
-            }
-        return None
-    
-    # For other RSS feeds, try to extract actual IOCs
-    # Priority: URL > IP > Domain
-    
-    # 1. Try to find URLs (most specific)
-    url_matches = re.findall(r'https?://[^\s<>"\']+', all_text)
-    if url_matches:
-        indicator = url_matches[0].rstrip('.,;:)')
-        ioc_type = 'url'
-    else:
-        # 2. Try to find IPs
-        ip_matches = re.findall(r'\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b', all_text)
-        if ip_matches:
-            indicator = ip_matches[0]
-            ioc_type = 'ip'
-        else:
-            # 3. Try to find domains (more careful regex)
-            domain_matches = re.findall(r'\b(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.)+(?:com|net|org|info|biz|ru|cn|xyz|top|pw|cc|ws|tk|ml|ga|cf|gq)\b', all_text)
-            if domain_matches:
-                indicator = domain_matches[0]
-                ioc_type = 'domain'
-            else:
-                # No valid IOC found - skip this entry
-                return None
-    
-    # Validate that we got an actual IOC, not just text
-    if ioc_type == 'url' and len(indicator) < 10:
-        return None
-    if ioc_type == 'ip' and not re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$', indicator):
-        return None
-    if ioc_type == 'domain' and '.' not in indicator:
-        return None
-    
-    # Defang the indicator
-    safe = defang_indicator(indicator, ioc_type)
-    
-    # Use title as description (it's more meaningful)
-    clean_desc = clean_html(title)[:200] if title else clean_html(desc)[:150]
-    
-    # Detect campaign/malware family
-    campaign = detect_campaign(indicator, clean_desc)
+    url_match = re.search(r'https?://[^\s<>"\']+', all_text)
+    if url_match:
+        indicator = url_match.group(0).rstrip('.,;:)')
+        clean_desc = clean_html(desc)[:150] if desc else "Malicious URL"
+        
+        return {
+            'type': 'url',
+            'indicator': defang_indicator(indicator, 'url'),
+            'description': clean_desc,
+            'timestamp': format_timestamp(now),
+            'source': feed_name,
+            'sourceUrl': link or config['website'],
+            'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
+            'tags': generate_tags('url', clean_desc, feed_name),
+            'addedAt': now.isoformat(),
+            'campaign': detect_campaign(indicator, clean_desc)
+        }
+    return None
 
-    return {
-        'type': ioc_type,
-        'indicator': safe,
-        'pulse': feed_name,
-        'description': clean_desc,
-        'timestamp': 'just now',
-        'source': feed_name,
-        'sourceUrl': link or config['website'],
-        'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
-        'tags': generate_tags(ioc_type, clean_desc, feed_name),
-        'addedAt': now.isoformat(),
-        'campaign': campaign
-    }
-
-def detect_ioc_type(indicator):
-    """Detect the type of IOC"""
-    if indicator.startswith('http'):
-        return 'url'
-    if re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$', indicator):
-        return 'ip'
-    if re.match(r'^[a-fA-F0-9]{32,64}$', indicator):
-        return 'hash'
-    if '.' in indicator and not indicator.startswith('http'):
-        return 'domain'
-    return 'url'
+# ──────────────────────────────────────────────────────────────
+# Helper Functions
+# ──────────────────────────────────────────────────────────────
+def format_timestamp(dt):
+    """Format timestamp relative to now"""
+    return 'just now'  # JavaScript will handle relative time display
 
 def defang_indicator(indicator, ioc_type):
-    """Defang indicator for safe display"""
-    if ioc_type in ['url', 'domain']:
+    """Defang IOC to prevent accidental clicks"""
+    if ioc_type == 'url':
         return indicator.replace('http://', 'hxxp://').replace('https://', 'hxxps://').replace('.', '[.]')
     elif ioc_type == 'ip':
+        return indicator.replace('.', '[.]')
+    elif ioc_type == 'domain':
         return indicator.replace('.', '[.]')
     return indicator
 
 def clean_html(text):
     """Remove HTML tags from text"""
+    import re
     return re.sub(r'<[^>]+>', '', text).strip()
 
-def generate_tags(ioc_type, desc, feed_name):
-    """Generate relevant tags"""
-    tags = ['live', feed_name.lower().replace(' ', '-').replace('(', '').replace(')', '')]
+def generate_tags(ioc_type, description, source):
+    """Generate relevant tags for IOC"""
+    tags = []
+    desc_lower = description.lower()
     
-    desc_lower = desc.lower()
-    if any(x in desc_lower for x in ['phish', 'credential', 'login', 'bank']):
-        tags.append('phishing')
-    if any(x in desc_lower for x in ['malware', 'trojan', 'ransomware', 'emotet', 'qakbot', 'icedid', 'lumma', 'stealer']):
-        tags.append('malware')
-    if any(x in desc_lower for x in ['c2', 'command', 'beacon', 'cobalt']):
-        tags.append('c2')
-    if any(x in desc_lower for x in ['botnet', 'ddos']):
-        tags.append('botnet')
+    # Type-based tags
+    if ioc_type in ['url', 'domain']:
+        if 'phish' in desc_lower:
+            tags.append('phishing')
+        if 'malware' in desc_lower or 'trojan' in desc_lower:
+            tags.append('malware')
+    elif ioc_type == 'ip':
+        if 'c2' in desc_lower or 'command' in desc_lower:
+            tags.append('c2')
+        if 'bot' in desc_lower:
+            tags.append('botnet')
     
-    return tags[:5]
+    # Add live tag
+    tags.append('live')
+    
+    return tags[:4]  # Max 4 tags
 
-def detect_campaign(indicator, desc):
-    """Detect malware campaign/family"""
-    text = (indicator + ' ' + desc).lower()
+def detect_campaign(indicator, description):
+    """Detect campaign/malware family"""
+    desc_lower = (indicator + ' ' + description).lower()
     
-    campaigns = {
-        'Emotet': ['emotet'],
-        'QakBot': ['qakbot', 'qbot'],
-        'IcedID': ['icedid', 'bokbot'],
-        'Formbook': ['formbook'],
-        'AgentTesla': ['agenttesla', 'agent tesla'],
-        'RedLine': ['redline'],
-        'AsyncRAT': ['asyncrat'],
-        'NjRAT': ['njrat'],
-        'Cobalt Strike': ['cobalt', 'beacon'],
-        'Lumma Stealer': ['lumma', 'lummastealer'],
-        'Rhadamanthys': ['rhadamanthys'],
-        'Vidar': ['vidar'],
-        'Raccoon': ['raccoon'],
-        'Generic Phishing': ['phish', 'credential', 'bank', 'paypal', 'microsoft', 'office365']
-    }
+    # Known malware families
+    malware_families = [
+        'emotet', 'trickbot', 'qakbot', 'cobalt strike', 'dridex',
+        'icedid', 'hancitor', 'ursnif', 'formbook', 'agenttesla',
+        'remcos', 'njrat', 'asyncrat', 'redline', 'vidar', 'raccoon'
+    ]
     
-    for campaign, keywords in campaigns.items():
-        if any(kw in text for kw in keywords):
-            return campaign
+    for family in malware_families:
+        if family in desc_lower:
+            return family.title()
     
-    return 'Unknown'
-
-# ──────────────────────────────────────────────────────────────
-# IOC Management
-# ──────────────────────────────────────────────────────────────
-def remove_expired_iocs(iocs):
-    """Remove IOCs older than expiry window"""
-    cutoff = get_ist_now() - timedelta(hours=IOC_EXPIRY_HOURS)
-    valid = []
-    for ioc in iocs:
-        try:
-            added = datetime.fromisoformat(ioc['addedAt'].replace('Z', '+00:00'))
-            if added > cutoff:
-                ioc['timestamp'] = calculate_relative_time(added)
-                valid.append(ioc)
-        except:
-            valid.append(ioc)
-    return valid
-
-def deduplicate_iocs(iocs):
-    """Remove duplicate IOCs"""
-    seen = set()
-    uniq = []
-    for ioc in iocs:
-        key = ioc['indicator']
-        if key not in seen:
-            seen.add(key)
-            uniq.append(ioc)
-    return uniq
-
-def calculate_relative_time(ts):
-    """Calculate human-readable relative time"""
-    diff = get_ist_now() - ts
-    mins = int(diff.total_seconds() / 60)
-    if mins < 1: return "just now"
-    if mins < 60: return f"{mins}m ago"
-    hrs = mins // 60
-    if hrs < 24: return f"{hrs}h ago"
-    return f"{hrs//24}d ago"
+    # Generic categorization
+    if 'phish' in desc_lower:
+        if 'booking' in desc_lower:
+            return 'Booking.com Phishing'
+        elif 'bank' in desc_lower or 'paypal' in desc_lower:
+            return 'Financial Phishing'
+        return 'Generic Phishing'
+    elif 'bot' in desc_lower:
+        return 'Botnet Activity'
+    elif 'ssh' in desc_lower:
+        return 'SSH Attacks'
+    elif 'ssl' in desc_lower or 'cert' in desc_lower:
+        return 'SSL C2 Infrastructure'
+    
+    return 'Unknown Campaign'
 
 # ──────────────────────────────────────────────────────────────
-# File I/O
+# File Management
 # ──────────────────────────────────────────────────────────────
 def load_existing():
-    """Load existing threat intel data"""
+    """Load existing threat-intel.js data"""
     if not os.path.exists(OUTPUT_FILE):
         return None
     try:
         with open(OUTPUT_FILE, 'r') as f:
-            txt = f.read()
-            start = txt.find('{')
-            end = txt.rfind('}') + 1
-            return json.loads(txt[start:end]) if start != -1 else None
+            content = f.read()
+            # Extract JSON from JS file
+            match = re.search(r'const threatIntelData = ({.*?});', content, re.DOTALL)
+            if match:
+                return json.loads(match.group(1))
     except Exception as e:
-        print(f"Load error: {e}")
-        return None
+        print(f"Error loading existing data: {e}")
+    return None
 
 def load_history():
-    """Load historical data for trends"""
+    """Load historical data"""
     if not os.path.exists(HISTORY_FILE):
         return {}
     try:
@@ -371,66 +390,86 @@ def load_history():
     except:
         return {}
 
-def save_history(hist):
+def save_history(data):
     """Save historical data"""
-    try:
-        with open(HISTORY_FILE, 'w') as f:
-            json.dump(hist, f, indent=2)
-    except Exception as e:
-        print(f"Save history failed: {e}")
+    with open(HISTORY_FILE, 'w') as f:
+        json.dump(data, f, indent=2)
 
 def generate_js(data):
-    """Generate JavaScript output file"""
+    """Generate JavaScript file with data"""
+    js_content = f"""// Auto-Generated Threat Intel (Multi-Vendor Dashboard)
+// Updated: {get_ist_now().isoformat()} IST
+// Sources: {', '.join(RSS_FEEDS.keys())}
+
+const threatIntelData = {json.dumps(data, indent=4)};
+"""
+    return js_content
+
+# ──────────────────────────────────────────────────────────────
+# Data Processing
+# ──────────────────────────────────────────────────────────────
+def remove_expired_iocs(iocs):
+    """Remove IOCs older than 24 hours"""
     now = get_ist_now()
-    return f"""// Auto-Generated Threat Intel (RSS Feeds)
-// Updated: {now.isoformat()} IST
-// Sources: URLhaus, OpenPhish, ThreatFox (abuse.ch)
+    cutoff = now - timedelta(hours=IOC_EXPIRY_HOURS)
+    
+    filtered = []
+    for ioc in iocs:
+        try:
+            added = datetime.fromisoformat(ioc['addedAt'].replace('Z', '+00:00'))
+            if added > cutoff:
+                filtered.append(ioc)
+        except:
+            pass
+    
+    return filtered
 
-const threatIntelData = """ + json.dumps(data, indent=4) + ";\n"
-
-# ──────────────────────────────────────────────────────────────
-# Daily Summary & Trends
-# ──────────────────────────────────────────────────────────────
-CATEGORIES = {
-    'Phishing': ['phish', 'credential', 'bank', 'login'],
-    'Malware': ['malware', 'trojan', 'ransomware', 'emotet', 'qakbot', 'icedid', 'formbook', 'lumma', 'stealer'],
-    'C2': ['c2', 'command', 'beacon', 'cobalt'],
-    'Botnet': ['botnet', 'ddos', 'bot']
-}
+def deduplicate_iocs(iocs):
+    """Remove duplicate IOCs, keeping newest"""
+    seen = {}
+    for ioc in iocs:
+        indicator = ioc.get('indicator', '')
+        if indicator not in seen:
+            seen[indicator] = ioc
+        else:
+            # Keep newer one
+            existing_time = seen[indicator].get('addedAt', '')
+            new_time = ioc.get('addedAt', '')
+            if new_time > existing_time:
+                seen[indicator] = ioc
+    
+    return list(seen.values())
 
 def categorize_iocs(iocs):
-    """Categorize IOCs by threat type and sector"""
-    cats = {k: 0 for k in CATEGORIES}
-    sectors = {'Finance': 0, 'Healthcare': 0, 'Tech': 0, 'Government': 0, 'General': 0}
+    """Categorize IOCs by type"""
+    cats = {cat: 0 for cat in CATEGORIES}
+    sectors = {'Finance': 0, 'Tech': 0, 'Government': 0, 'General': 0}
     
     for ioc in iocs:
-        desc = (ioc.get('description', '') + ' ' + ' '.join(ioc.get('tags', []))).lower()
+        tags = ioc.get('tags', [])
+        desc = ioc.get('description', '').lower()
         indicator = ioc.get('indicator', '').lower()
         
-        # Categorize by threat type
-        categorized = False
-        for cat, kws in CATEGORIES.items():
-            if any(kw in desc or kw in indicator for kw in kws):
-                cats[cat] += 1
-                categorized = True
-                break
-        
-        # Default to phishing for uncategorized URLs
-        if not categorized and ioc.get('type') == 'url':
+        # Categorize
+        if 'phishing' in tags or 'phish' in desc:
             cats['Phishing'] += 1
+        elif 'malware' in tags or 'trojan' in desc or 'ransomware' in desc:
+            cats['Malware'] += 1
+        elif 'c2' in tags or 'command' in desc:
+            cats['C2'] += 1
+        elif 'botnet' in tags or 'bot' in desc:
+            cats['Botnet'] += 1
         
-        # Sector detection
-        if any(x in desc or x in indicator for x in ['bank', 'finance', 'paypal', 'crypto', 'wallet']):
+        # Sectors
+        if any(x in desc or x in indicator for x in ['bank', 'paypal', 'visa', 'mastercard', 'finance']):
             sectors['Finance'] += 1
-        elif any(x in desc or x in indicator for x in ['health', 'hospital', 'medical', 'pharma']):
-            sectors['Healthcare'] += 1
-        elif any(x in desc or x in indicator for x in ['gov', '.gov', 'nic.in', 'government']):
+        elif any(x in desc or x in indicator for x in ['.gov', 'government', 'federal']):
             sectors['Government'] += 1
         elif any(x in desc or x in indicator for x in ['cloud', 'aws', 'azure', 'microsoft', 'google', 'tech']):
             sectors['Tech'] += 1
         else:
             sectors['General'] += 1
-            
+    
     return cats, sectors
 
 def detect_campaigns(iocs):
@@ -443,15 +482,14 @@ def detect_campaigns(iocs):
                 'name': campaign,
                 'count': 0,
                 'types': set(),
-                'first_seen': ioc.get('addedAt', ''),
                 'indicators': []
             }
         campaigns[campaign]['count'] += 1
         campaigns[campaign]['types'].add(ioc.get('type', 'unknown'))
-        if len(campaigns[campaign]['indicators']) < 5:
+        if len(campaigns[campaign]['indicators']) < 3:
             campaigns[campaign]['indicators'].append(ioc.get('indicator', ''))
     
-    # Convert sets to lists for JSON serialization
+    # Convert sets to lists
     for camp in campaigns.values():
         camp['types'] = list(camp['types'])
     
@@ -468,14 +506,14 @@ def calculate_trends(current, previous):
             pct = int(((cur - prev) / prev) * 100)
         else:
             pct = 100 if cur > 0 else 0
-            
+        
         if pct > 10:
             trend = 'up'
         elif pct < -10:
             trend = 'down'
         else:
             trend = 'stable'
-            
+        
         trends.append({
             'category': cat,
             'count': cur,
@@ -485,52 +523,51 @@ def calculate_trends(current, previous):
     
     return sorted(trends, key=lambda x: x['count'], reverse=True)
 
-def generate_daily_summary(iocs, history):
-    """Generate comprehensive daily summary"""
+def generate_daily_summary(all_vendors_data, history):
+    """Generate daily analytics (calculated at midnight)"""
+    # Combine all IOCs for analysis
+    all_iocs = []
+    for vendor_data in all_vendors_data.values():
+        all_iocs.extend(vendor_data['iocs'])
+    
     prev = history.get('previous_day', {})
-    cats, secs = categorize_iocs(iocs)
+    cats, secs = categorize_iocs(all_iocs)
     top = calculate_trends(cats, prev.get('categories', {}))
-    campaigns = detect_campaigns(iocs)
-    total = len(iocs)
+    campaigns = detect_campaigns(all_iocs)
     
     # Count unique sources
-    sources = set(i.get('source', '') for i in iocs)
+    sources = set(i.get('source', '') for i in all_iocs)
     
-    # Count critical (malware + C2)
+    # Critical alerts
     critical = cats.get('Malware', 0) + cats.get('C2', 0)
     
-    # Active campaigns (campaigns with 1+ IOCs)
-    active_campaigns = [c for c in campaigns.values() if c['count'] >= 1]
+    # Active campaigns
+    active_campaigns = [c for c in campaigns.values() if c['count'] >= 2]
     
     summary = {
         'stats': {
-            'totalIndicators': total,
-            'newReports': len(sources),
+            'totalIndicators': len(all_iocs),
+            'activeSources': len(sources),
             'criticalAlerts': critical,
             'activeCampaigns': len(active_campaigns)
         },
         'topThreats': top,
         'targetedSectors': [
-            {'name': k, 'percentage': int((v/max(total, 1))*100)} 
+            {'name': k, 'percentage': int((v/max(len(all_iocs), 1))*100)} 
             for k, v in sorted(secs.items(), key=lambda x: x[1], reverse=True) if v > 0
         ][:5],
-        'geoDistribution': generate_geo_distribution(iocs),
         'campaigns': [
             {
                 'name': c['name'],
                 'count': c['count'],
                 'types': c['types'],
-                'sampleIndicators': c['indicators'][:3]
+                'sampleIndicators': c['indicators']
             }
             for c in sorted(active_campaigns, key=lambda x: x['count'], reverse=True)[:10]
-        ],
-        'indicatorBreakdown': {
-            'byType': count_by_type(iocs),
-            'bySource': count_by_source(iocs)
-        }
+        ]
     }
-
-    # Save history for next comparison
+    
+    # Update history
     hist = load_history()
     hist['previous_day'] = {
         'date': get_ist_now().strftime('%Y-%m-%d'),
@@ -540,100 +577,113 @@ def generate_daily_summary(iocs, history):
     
     return summary
 
-def count_by_type(iocs):
-    """Count IOCs by type"""
-    types = {}
-    for ioc in iocs:
-        t = ioc.get('type', 'unknown')
-        types[t] = types.get(t, 0) + 1
-    return types
-
-def count_by_source(iocs):
-    """Count IOCs by source"""
-    sources = {}
-    for ioc in iocs:
-        s = ioc.get('source', 'unknown')
-        sources[s] = sources.get(s, 0) + 1
-    return sources
-
-def generate_geo_distribution(iocs):
-    """Generate geographic distribution based on TLD/domain analysis"""
-    geo_count = {'Asia': 0, 'Europe': 0, 'North America': 0, 'Others': 0}
-    
-    asia_tlds = ['.cn', '.jp', '.kr', '.in', '.sg', '.th', '.vn', '.id']
-    europe_tlds = ['.uk', '.de', '.fr', '.ru', '.nl', '.pl', '.es', '.it', '.eu']
-    na_tlds = ['.us', '.ca', '.mx']
-    
-    for ioc in iocs:
-        indicator = ioc.get('indicator', '').lower()
-        
-        if any(tld in indicator for tld in asia_tlds):
-            geo_count['Asia'] += 1
-        elif any(tld in indicator for tld in europe_tlds):
-            geo_count['Europe'] += 1
-        elif any(tld in indicator for tld in na_tlds):
-            geo_count['North America'] += 1
-        else:
-            geo_count['Others'] += 1
-    
-    # Redistribute "Others" proportionally if too many
-    total = sum(geo_count.values())
-    if geo_count['Others'] > total * 0.5 and total > 0:
-        others = geo_count['Others']
-        geo_count['Asia'] += int(others * 0.4)
-        geo_count['Europe'] += int(others * 0.3)
-        geo_count['North America'] += int(others * 0.2)
-        geo_count['Others'] = int(others * 0.1)
-    
-    return [
-        {'region': region, 'count': count}
-        for region, count in sorted(geo_count.items(), key=lambda x: x[1], reverse=True)
-        if count > 0
-    ]
-
 # ──────────────────────────────────────────────────────────────
 # Runners
 # ──────────────────────────────────────────────────────────────
 def run_hourly():
-    """Hourly update - fetch fresh IOCs"""
-    print(f"[{get_ist_now().isoformat()}] Hourly RSS Update")
+    """Hourly update - fetch fresh IOCs from all vendors"""
+    print(f"\n[{get_ist_now().isoformat()}] Hourly Multi-Vendor Update")
+    print("="*60)
+    
     existing = load_existing() or {}
-    current_iocs = remove_expired_iocs(existing.get('hourlyThreats', []))
-
-    new_iocs = fetch_rss_iocs()
-    all_iocs = deduplicate_iocs(new_iocs + current_iocs)[:MAX_IOCS]
-
-    output = {
-        'lastUpdated': get_ist_now().isoformat(),
-        'comparisonPeriod': existing.get('comparisonPeriod', ''),
-        'hourlyThreats': all_iocs,
-        'dailySummary': existing.get('dailySummary', {})
-    }
-
-    with open(OUTPUT_FILE, 'w') as f:
-        f.write(generate_js(output))
-    print(f"  → {len(all_iocs)} IOCs in threat-intel.js")
-
-def run_daily():
-    """Daily update - generate summary statistics"""
-    print(f"[{get_ist_now().isoformat()}] Daily Summary")
-    existing = load_existing() or {}
-    all_iocs = existing.get('hourlyThreats', [])
-
-    summary = generate_daily_summary(all_iocs, load_history())
+    vendors_data = {}
+    
+    # Fetch from each vendor
+    for vendor_name, config in RSS_FEEDS.items():
+        # Load existing IOCs for this vendor
+        existing_vendor = existing.get('vendors', {}).get(vendor_name, {})
+        current_iocs = remove_expired_iocs(existing_vendor.get('iocs', []))
+        
+        # Fetch new IOCs
+        new_iocs = fetch_vendor_iocs(vendor_name, config)
+        
+        # Combine and deduplicate
+        all_iocs = deduplicate_iocs(new_iocs + current_iocs)[:MAX_IOCS_PER_VENDOR]
+        
+        # Store vendor data
+        vendors_data[vendor_name] = {
+            'description': config['description'],
+            'website': config['website'],
+            'updateFrequency': config['updateFrequency'],
+            'iocs': all_iocs,
+            'stats': {
+                'total': len(all_iocs),
+                'newInLastHour': len([i for i in all_iocs if is_new(i['addedAt'])]),
+                'lastUpdate': format_timestamp(get_ist_now())
+            }
+        }
+    
+    # Generate overview (top 20 most recent across all vendors)
+    all_iocs_for_overview = []
+    for vendor_data in vendors_data.values():
+        all_iocs_for_overview.extend(vendor_data['iocs'])
+    
+    # Sort by addedAt timestamp and take top 20
+    all_iocs_for_overview.sort(key=lambda x: x['addedAt'], reverse=True)
+    overview = all_iocs_for_overview[:20]
+    
+    # Keep existing daily summary or create empty one
+    daily_summary = existing.get('dailySummary', {
+        'stats': {'totalIndicators': 0, 'activeSources': 0, 'criticalAlerts': 0, 'activeCampaigns': 0},
+        'topThreats': [],
+        'targetedSectors': [],
+        'campaigns': []
+    })
+    
     now = get_ist_now()
-    period = f"{(now - timedelta(days=1)).strftime('%b %d')} – {now.strftime('%b %d, %Y')}"
-
+    period = f"{(now - timedelta(hours=24)).strftime('%b %d')} – {now.strftime('%b %d, %Y')}"
+    
     output = {
         'lastUpdated': now.isoformat(),
         'comparisonPeriod': period,
-        'hourlyThreats': existing.get('hourlyThreats', []),
-        'dailySummary': summary
+        'vendors': vendors_data,
+        'overview': overview,
+        'dailySummary': daily_summary
     }
-
+    
     with open(OUTPUT_FILE, 'w') as f:
         f.write(generate_js(output))
-    print("  → Daily summary updated")
+    
+    total_iocs = sum(v['stats']['total'] for v in vendors_data.values())
+    print("="*60)
+    print(f"✓ Update complete - {total_iocs} total IOCs across {len(vendors_data)} vendors")
+    print(f"  Output: {OUTPUT_FILE}")
+
+def run_daily():
+    """Daily update - calculate analytics at midnight"""
+    print(f"\n[{get_ist_now().isoformat()}] Daily Analytics Calculation")
+    print("="*60)
+    
+    existing = load_existing()
+    if not existing or 'vendors' not in existing:
+        print("  ✗ No existing data to calculate analytics from")
+        return
+    
+    # Calculate daily summary
+    summary = generate_daily_summary(existing['vendors'], load_history())
+    
+    # Update existing data with new summary
+    existing['dailySummary'] = summary
+    existing['comparisonPeriod'] = f"{(get_ist_now() - timedelta(days=1)).strftime('%b %d')} – {get_ist_now().strftime('%b %d, %Y')}"
+    
+    with open(OUTPUT_FILE, 'w') as f:
+        f.write(generate_js(existing))
+    
+    print("="*60)
+    print("✓ Daily analytics updated")
+    print(f"  Total Indicators: {summary['stats']['totalIndicators']}")
+    print(f"  Active Sources: {summary['stats']['activeSources']}")
+    print(f"  Critical Alerts: {summary['stats']['criticalAlerts']}")
+    print(f"  Active Campaigns: {summary['stats']['activeCampaigns']}")
+
+def is_new(added_at_str):
+    """Check if IOC was added in the last hour"""
+    try:
+        added = datetime.fromisoformat(added_at_str.replace('Z', '+00:00'))
+        now = get_ist_now()
+        return (now - added).total_seconds() < 3600
+    except:
+        return False
 
 # ──────────────────────────────────────────────────────────────
 # Main
@@ -641,19 +691,20 @@ def run_daily():
 def main():
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument('--hourly', action='store_true')
-    parser.add_argument('--daily', action='store_true')
-    parser.add_argument('--both', action='store_true')
+    parser.add_argument('--hourly', action='store_true', help='Run hourly data fetch')
+    parser.add_argument('--daily', action='store_true', help='Run daily analytics calculation')
+    parser.add_argument('--both', action='store_true', help='Run both hourly and daily')
     args = parser.parse_args()
-
+    
     if not (args.hourly or args.daily or args.both):
         args.both = True
-
+    
     if args.hourly or args.both:
         run_hourly()
     if args.daily or args.both:
         run_daily()
-    print("Done!")
+    
+    print("\n✓ All done!")
 
 if __name__ == '__main__':
     main()
