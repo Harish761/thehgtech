@@ -2567,119 +2567,81 @@
             </section>
 
             <!-- Today's Threat Snapshot Section -->
-            <section class="section" id="snapshot" style="padding: 3rem 0;">
-                <div class="section-header">
-                    <h2 class="section-title">Today's Threat Snapshot</h2>
+            <section class="section" id="snapshot" style="padding: 1.5rem 0;">
+                <div class="section-header" style="margin-bottom: 1rem;">
+                    <h2 class="section-title" style="font-size: 1.5rem;">Professional Threat Intelligence</h2>
+                    <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.25rem;">294+ live IOCs • 6
+                        vendors • AI analysis • Search & export</p>
                 </div>
-                <div id="snapshotCards" class="snapshot-grid"
-                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
-                    <!-- Snapshot cards will be loaded here -->
-                    <div style="text-align: center; padding: 2rem; color: var(--text-muted);">Loading snapshot
-                        metrics...</div>
-                </div>
+                <!-- Hidden snapshot cards for JS -->
+                <div id="snapshotCards" style="display: none;"></div>
 
-                <!-- Integrated Platform Features -->
-                <div style="margin-top: 2rem;">
-                    <div style="text-align: center; margin-bottom: 1.5rem;">
-                        <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--accent-cyan);">Professional
-                            Threat Intelligence Platform</h3>
-                        <p style="color: var(--text-muted); font-size: 0.9rem;">Real-time IOCs from 6 vendors •
-                            AI-powered analysis • Search, filter & export tools</p>
-                    </div>
+                <!-- Compact Feature Cards -->
+                <div style="margin-top: 0.5rem;">
 
-                    <!-- Compact Feature Cards -->
                     <div
-                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-bottom: 1.5rem;">
-                        <!-- Live Feeds -->
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.75rem; margin-bottom: 0.75rem;">
                         <div
-                            style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 10px; padding: 1.25rem; transition: all 0.3s ease;">
-                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.75rem;">
-                                <div style="font-size: 2rem;">🔴</div>
+                            style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 8px; padding: 0.9rem;">
+                            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                <div style="font-size: 1.5rem;">🔴</div>
                                 <div>
-                                    <h3 style="color: var(--accent-cyan); margin: 0; font-size: 1.1rem;">294+ Live IOCs
+                                    <h3 style="color: var(--accent-cyan); margin: 0; font-size: 0.95rem;">294+ Live IOCs
                                     </h3>
-                                    <p style="color: var(--text-muted); margin: 0; font-size: 0.85rem;">6 security
-                                        vendors</p>
-                                </div>
-                            </div>
-                            <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5; margin: 0;">
-                                Phishing URLs, malware hashes, malicious IPs, hijacked ranges - updated hourly</p>
-                        </div>
-
-                        <!-- AI Insights -->
-                        <div
-                            style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 10px; padding: 1.25rem; transition: all 0.3s ease;">
-                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.75rem;">
-                                <div style="font-size: 2rem;">🧠</div>
-                                <div>
-                                    <h3 style="color: var(--accent-cyan); margin: 0; font-size: 1.1rem;">AI Analysis
-                                    </h3>
-                                    <p style="color: var(--text-muted); margin: 0; font-size: 0.85rem;">GPT-4o powered
+                                    <p style="color: var(--text-muted); margin: 0; font-size: 0.75rem;">Updated hourly
                                     </p>
                                 </div>
                             </div>
-                            <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5; margin: 0;">
-                                Daily summaries, weekly reports, campaign detection, trend predictions</p>
                         </div>
 
-                        <!-- Professional Tools -->
                         <div
-                            style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 10px; padding: 1.25rem; transition: all 0.3s ease;">
-                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.75rem;">
-                                <div style="font-size: 2rem;">🛠️</div>
+                            style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 8px; padding: 0.9rem;">
+                            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                <div style="font-size: 1.5rem;">🧠</div>
                                 <div>
-                                    <h3 style="color: var(--accent-cyan); margin: 0; font-size: 1.1rem;">Pro Tools</h3>
-                                    <p style="color: var(--text-muted); margin: 0; font-size: 0.85rem;">Search & export
+                                    <h3 style="color: var(--accent-cyan); margin: 0; font-size: 0.95rem;">AI Insights
+                                    </h3>
+                                    <p style="color: var(--text-muted); margin: 0; font-size: 0.75rem;">Daily summaries
                                     </p>
                                 </div>
                             </div>
-                            <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5; margin: 0;">
-                                Filter IOCs, export CSV/JSON, VirusTotal links, 7-day trends</p>
+                        </div>
+
+                        <div
+                            style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 8px; padding: 0.9rem;">
+                            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                <div style="font-size: 1.5rem;">🛠️</div>
+                                <div>
+                                    <h3 style="color: var(--accent-cyan); margin: 0; font-size: 0.95rem;">Pro Tools</h3>
+                                    <p style="color: var(--text-muted); margin: 0; font-size: 0.75rem;">Search & export
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- CTA Button -->
+                        <div
+                            style="background: linear-gradient(135deg, rgba(0, 217, 255, 0.1), rgba(0, 217, 255, 0.05)); border: 1px solid rgba(0, 217, 255, 0.2); border-radius: 8px; padding: 0.9rem; display: flex; align-items: center; justify-content: center;">
+                            <a href="threat-intel.html"
+                                style="padding: 0.5rem 1.25rem; background: var(--accent-cyan); color: var(--bg-primary); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.85rem; white-space: nowrap;">
+                                View Dashboard →
+                            </a>
                         </div>
                     </div>
-
-                    <!-- Quick Stats Bar -->
-                    <div
-                        style="background: linear-gradient(135deg, rgba(0, 217, 255, 0.08), rgba(0, 217, 255, 0.03)); border: 1px solid rgba(0, 217, 255, 0.15); border-radius: 10px; padding: 1rem; display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 1rem;">
-                        <div style="text-align: center;">
-                            <div style="font-size: 1.5rem; font-weight: 700; color: var(--accent-cyan);">294+</div>
-                            <div style="font-size: 0.8rem; color: var(--text-muted);">IOCs</div>
-                        </div>
-                        <div style="text-align: center;">
-                            <div style="font-size: 1.5rem; font-weight: 700; color: var(--accent-cyan);">6</div>
-                            <div style="font-size: 0.8rem; color: var(--text-muted);">Vendors</div>
-                        </div>
-                        <div style="text-align: center;">
-                            <div style="font-size: 1.5rem; font-weight: 700; color: var(--accent-cyan);">24/7</div>
-                            <div style="font-size: 0.8rem; color: var(--text-muted);">Updates</div>
-                        </div>
-                        <div style="text-align: center;">
-                            <div style="font-size: 1.5rem; font-weight: 700; color: var(--accent-cyan);">100%</div>
-                            <div style="font-size: 0.8rem; color: var(--text-muted);">Free</div>
-                        </div>
-                        <a href="threat-intel.html"
-                            style="padding: 0.6rem 1.5rem; background: var(--accent-cyan); color: var(--bg-primary); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.9rem; transition: all 0.3s ease; white-space: nowrap;">
-                            View Dashboard →
-                        </a>
+                </div>
+                <section class="section" id="news">
+                    <div class="section-header">
+                        <h2 class="section-title">Latest Intelligence</h2>
                     </div>
-                </div>
-            </section>
-
-            <!-- News Section -->
-            <section class="section" id="news">
-                <div class="section-header">
-                    <h2 class="section-title">Latest Intelligence</h2>
-                </div>
-                <div class="tabs">
-                    <button class="tab active" onclick="switchTab('cyber')">
-                        Cybersecurity
-                    </button>
-                    <button class="tab" onclick="switchTab('ai')">
-                        AI & ML
-                    </button>
-                </div>
-                <div id="cyberNews" class="news-grid"></div>
-                <div id="aiNews" class="news-grid" style="display: none;"></div>
+                    <div class="tabs">
+                        <button class="tab active" onclick="switchTab('cyber')">
+                            Cybersecurity
+                        </button>
+                        <button class="tab" onclick="switchTab('ai')">
+                            AI & ML
+                        </button>
+                    </div>
+                    <div id="cyberNews" class="news-grid"></div>
+                    <div id="aiNews" class="news-grid" style="display: none;"></div>
 
 
         </div>
