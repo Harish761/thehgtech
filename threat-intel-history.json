@@ -10,10 +10,11 @@
   },
   "previous_hour_campaigns": {
     "Generic Phishing": 92,
-    " \"n/a": 13,
+    " \"Mirai": 36,
+    " \"n/a": 11,
+    " \"Formbook": 1,
     " \"RedLineStealer": 1,
     " \"a310Logger": 1,
-    " \"Mirai": 35,
     "Spamhaus DROP List": 46,
     "CINS Threat List": 50,
     "SSH Attacks": 50,
