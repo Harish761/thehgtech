@@ -2,17 +2,20 @@
   "previous_day": {
     "date": "2025-11-20",
     "categories": {
-      "Phishing": 50,
-      "Malware": 0,
+      "Phishing": 98,
+      "Malware": 50,
       "C2": 0,
       "Botnet": 0
     }
   },
   "previous_hour_campaigns": {
-    "Generic Phishing": 48,
-    "Financial Phishing": 1,
-    "Booking.com Phishing": 1,
-    "SSH Attacks": 50
+    "Generic Phishing": 92,
+    " \"Mirai": 40,
+    " \"n/a": 10,
+    "Spamhaus DROP List": 46,
+    "CINS Threat List": 50,
+    "SSH Attacks": 50,
+    "Financial Phishing": 6
   },
   "dailySnapshots": [
     {
