@@ -197,7 +197,7 @@ def parse_malware_bazaar(csv_line, now, config, vendor):
             
         return {
             'type': 'hash',
-            'indicator': sha256[:16] + '...',  # Truncate for display
+            'indicator': sha256,  # Full hash for VirusTotal/analysis
             'description': f'{signature} ({file_type})',
             'timestamp': format_timestamp(now),
             'source': vendor,

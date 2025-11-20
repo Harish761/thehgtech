@@ -381,6 +381,28 @@
             color: var(--accent-cyan);
         }
 
+        /* Interactive Stat Cards */
+        .interactive-stat-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(0, 217, 255, 0.2);
+        }
+
+        .stat-card-expanded {
+            animation: slideDown 0.3s ease;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
         .vendor-info p {
             color: var(--text-secondary);
             margin-bottom: 1rem;
@@ -620,10 +642,13 @@
         body.light-mode {
             --bg-primary: #ffffff;
             --bg-secondary: #f5f5f5;
-            --text-primary: #1a1a1a;
-            --text-secondary: #4a4a4a;
-            --text-muted: #6b7280;
+            --text-primary: #000000;
+            --text-secondary: #555555;
+            --text-muted: #888888;
             --border: rgba(0, 0, 0, 0.1);
+            /* Accessible cyan for light mode - meets WCAG AA (4.5:1 contrast) */
+            --accent-cyan: #0077AA;
+            --glow-cyan: rgba(0, 119, 170, 0.3);
             --glass: rgba(255, 255, 255, 0.9);
         }
 
@@ -812,32 +837,99 @@
             <!-- Statistics Dashboard -->
             <div class="stats-dashboard"
                 style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
-                <div class="stat-card"
-                    style="background: linear-gradient(135deg, rgba(0, 217, 255, 0.1), rgba(0, 217, 255, 0.05)); border: 1px solid rgba(0, 217, 255, 0.2); border-radius: 12px; padding: 1.5rem; text-align: center;">
-                    <h3 style="margin: 0 0 0.5rem 0; color: var(--text-muted); font-size: 0.9rem; font-weight: 600;">
-                        Total IOCs</h3>
-                    <div class="stat-value" id="totalIOCs"
-                        style="font-size: 2.5rem; font-weight: 700; color: var(--accent-cyan);">0</div>
+                <div class="stat-card interactive-stat-card" onclick="toggleStatCard('totalIOCsCard')"
+                    style="background: linear-gradient(135deg, rgba(0, 217, 255, 0.1), rgba(0, 217, 255, 0.05)); border: 1px solid rgba(0, 217, 255, 0.2); border-radius: 12px; padding: 1.5rem; cursor: pointer; transition: all 0.3s ease;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div style="text-align: left;">
+                            <h3
+                                style="margin: 0 0 0.5rem 0; color: var(--text-muted); font-size: 0.9rem; font-weight: 600;">
+                                Total IOCs</h3>
+                            <div class="stat-value" id="totalIOCs"
+                                style="font-size: 2.5rem; font-weight: 700; color: var(--accent-cyan);">0</div>
+                        </div>
+                        <div class="expand-icon"
+                            style="font-size: 1.5rem; color: var(--accent-cyan); transition: transform 0.3s ease;">▼
+                        </div>
+                    </div>
+                    <div id="totalIOCsCard" class="stat-card-expanded" onclick="event.stopPropagation()"
+                        style="display: none; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0, 217, 255, 0.2);">
+                        <input type="text" id="totalIOCsSearch" placeholder="🔍 Search all IOCs..."
+                            onkeyup="filterStatCard('totalIOCsCard')"
+                            style="width: 100%; padding: 0.75rem; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(0, 217, 255, 0.3); border-radius: 8px; color: var(--text-primary); margin-bottom: 1rem; font-size: 0.9rem;">
+                        <div id="totalIOCsList" style="max-height: 300px; overflow-y: auto; text-align: left;">
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">Loading...</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="stat-card"
-                    style="background: linear-gradient(135deg, rgba(255, 76, 76, 0.1), rgba(255, 76, 76, 0.05)); border: 1px solid rgba(255, 76, 76, 0.2); border-radius: 12px; padding: 1.5rem; text-align: center;">
-                    <h3 style="margin: 0 0 0.5rem 0; color: var(--text-muted); font-size: 0.9rem; font-weight: 600;">New
-                        (Last Hour)</h3>
-                    <div class="stat-value" id="newIOCs"
-                        style="font-size: 2.5rem; font-weight: 700; color: var(--accent-red);">0</div>
+                <div class="stat-card interactive-stat-card" onclick="toggleStatCard('newIOCsCard')"
+                    style="background: linear-gradient(135deg, rgba(255, 76, 76, 0.1), rgba(255, 76, 76, 0.05)); border: 1px solid rgba(255, 76, 76, 0.2); border-radius: 12px; padding: 1.5rem; cursor: pointer; transition: all 0.3s ease;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div style="text-align: left;">
+                            <h3
+                                style="margin: 0 0 0.5rem 0; color: var(--text-muted); font-size: 0.9rem; font-weight: 600;">
+                                New (Last Hour)</h3>
+                            <div class="stat-value" id="newIOCs"
+                                style="font-size: 2.5rem; font-weight: 700; color: var(--accent-red);">0</div>
+                        </div>
+                        <div class="expand-icon"
+                            style="font-size: 1.5rem; color: var(--accent-red); transition: transform 0.3s ease;">▼
+                        </div>
+                    </div>
+                    <div id="newIOCsCard" class="stat-card-expanded" onclick="event.stopPropagation()"
+                        style="display: none; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(255, 76, 76, 0.2);">
+                        <input type="text" id="newIOCsSearch" placeholder="🔍 Search new IOCs..."
+                            onkeyup="filterStatCard('newIOCsCard')"
+                            style="width: 100%; padding: 0.75rem; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 76, 76, 0.3); border-radius: 8px; color: var(--text-primary); margin-bottom: 1rem; font-size: 0.9rem;">
+                        <div id="newIOCsList" style="max-height: 300px; overflow-y: auto; text-align: left;">
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">No new IOCs in the last hour</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="stat-card"
-                    style="background: linear-gradient(135deg, rgba(0, 255, 136, 0.1), rgba(0, 255, 136, 0.05)); border: 1px solid rgba(0, 255, 136, 0.2); border-radius: 12px; padding: 1.5rem; text-align: center;">
-                    <h3 style="margin: 0 0 0.5rem 0; color: var(--text-muted); font-size: 0.9rem; font-weight: 600;">
-                        Active Campaigns</h3>
-                    <div class="stat-value" id="activeCampaigns"
-                        style="font-size: 2.5rem; font-weight: 700; color: var(--accent-green);">0</div>
+                <div class="stat-card interactive-stat-card" onclick="toggleStatCard('campaignsCard')"
+                    style="background: linear-gradient(135deg, rgba(0, 255, 136, 0.1), rgba(0, 255, 136, 0.05)); border: 1px solid rgba(0, 255, 136, 0.2); border-radius: 12px; padding: 1.5rem; cursor: pointer; transition: all 0.3s ease;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div style="text-align: left;">
+                            <h3
+                                style="margin: 0 0 0.5rem 0; color: var(--text-muted); font-size: 0.9rem; font-weight: 600;">
+                                Active Campaigns</h3>
+                            <div class="stat-value" id="activeCampaigns"
+                                style="font-size: 2.5rem; font-weight: 700; color: #00ff88;">0</div>
+                        </div>
+                        <div class="expand-icon"
+                            style="font-size: 1.5rem; color: #00ff88; transition: transform 0.3s ease;">▼</div>
+                    </div>
+                    <div id="campaignsCard" class="stat-card-expanded" onclick="event.stopPropagation()"
+                        style="display: none; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0, 255, 136, 0.2);">
+                        <input type="text" id="campaignsSearch" placeholder="🔍 Search campaigns..."
+                            onkeyup="filterStatCard('campaignsCard')"
+                            style="width: 100%; padding: 0.75rem; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(0, 255, 136, 0.3); border-radius: 8px; color: var(--text-primary); margin-bottom: 1rem; font-size: 0.9rem;">
+                        <div id="campaignsList" style="max-height: 300px; overflow-y: auto; text-align: left;">
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">Loading campaigns...</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="stat-card"
-                    style="background: linear-gradient(135deg, rgba(255, 165, 0, 0.1), rgba(255, 165, 0, 0.05)); border: 1px solid rgba(255, 165, 0, 0.2); border-radius: 12px; padding: 1.5rem; text-align: center;">
-                    <h3 style="margin: 0 0 0.5rem 0; color: var(--text-muted); font-size: 0.9rem; font-weight: 600;">
-                        Vendors Active</h3>
-                    <div class="stat-value" style="font-size: 2.5rem; font-weight: 700; color: #ffa500;">6/6</div>
+                <div class="stat-card interactive-stat-card" onclick="toggleStatCard('vendorsCard')"
+                    style="background: linear-gradient(135deg, rgba(255, 165, 0, 0.1), rgba(255, 165, 0, 0.05)); border: 1px solid rgba(255, 165, 0, 0.2); border-radius: 12px; padding: 1.5rem; cursor: pointer; transition: all 0.3s ease;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div style="text-align: left;">
+                            <h3
+                                style="margin: 0 0 0.5rem 0; color: var(--text-muted); font-size: 0.9rem; font-weight: 600;">
+                                Vendors Active</h3>
+                            <div class="stat-value" style="font-size: 2.5rem; font-weight: 700; color: #ffa500;">6/6
+                            </div>
+                        </div>
+                        <div class="expand-icon"
+                            style="font-size: 1.5rem; color: #ffa500; transition: transform 0.3s ease;">▼</div>
+                    </div>
+                    <div id="vendorsCard" class="stat-card-expanded" onclick="event.stopPropagation()"
+                        style="display: none; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(255, 165, 0, 0.2);">
+                        <input type="text" id="vendorsSearch" placeholder="🔍 Search vendors..."
+                            onkeyup="filterStatCard('vendorsCard')"
+                            style="width: 100%; padding: 0.75rem; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 165, 0, 0.3); border-radius: 8px; color: var(--text-primary); margin-bottom: 1rem; font-size: 0.9rem;">
+                        <div id="vendorsList" style="max-height: 300px; overflow-y: auto; text-align: left;">
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">Loading vendors...</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -892,7 +984,7 @@
 
     <!-- IOC Details Modal -->
     <div id="iocModal"
-        style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); overflow: auto;">
+        style="display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.9); overflow: auto;">
         <div
             style="background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end)); margin: 5% auto; padding: 0; border: 1px solid var(--accent-cyan); border-radius: 12px; width: 90%; max-width: 600px; box-shadow: 0 10px 40px rgba(0, 217, 255, 0.3);">
             <div
@@ -913,6 +1005,35 @@
                 <a id="abuseLink" target="_blank"
                     style="flex: 1; min-width: 120px; padding: 0.75rem 1.5rem; background: var(--glass); border: 1px solid var(--border); border-radius: 8px; color: var(--text-primary); font-weight: 600; text-align: center; text-decoration: none; transition: all 0.3s;">🚨
                     AbuseIPDB</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Statistics Modal -->
+    <div id="statsModal" class="modal"
+        style="display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(10px);">
+        <div class="modal-content"
+            style="background: var(--bg-secondary); margin: 2% auto; padding: 0; border-radius: 16px; max-width: 900px; max-height: 90vh; border: 1px solid var(--border); box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5); display: flex; flex-direction: column;">
+            <!-- Modal Header -->
+            <div
+                style="padding: 2rem; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center;">
+                <h2 id="statsModalTitle" style="margin: 0; color: var(--accent-cyan); font-size: 1.5rem;"></h2>
+                <button onclick="closeStatsModal()"
+                    style="background: none; border: none; color: var(--text-muted); font-size: 2rem; cursor: pointer; padding: 0; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: all 0.3s ease;">&times;</button>
+            </div>
+
+            <!-- Search Box -->
+            <div style="padding: 1.5rem; border-bottom: 1px solid var(--border);">
+                <input type="text" id="statsModalSearch" placeholder="🔍 Start typing to filter..."
+                    onkeyup="filterStatsModal()"
+                    style="width: 100%; padding: 1rem; background: rgba(255, 255, 255, 0.05); border: 1px solid var(--border); border-radius: 8px; color: var(--text-primary); font-size: 1rem;">
+                <div id="statsModalCount" style="margin-top: 0.75rem; color: var(--text-muted); font-size: 0.9rem;">
+                </div>
+            </div>
+
+            <!-- Scrollable Content -->
+            <div id="statsModalContent" style="padding: 1.5rem; overflow-y: auto; flex: 1;">
+                <p style="color: var(--text-muted);">Loading...</p>
             </div>
         </div>
     </div>
@@ -1263,7 +1384,10 @@
             modalBody.innerHTML = `
                 <div style="margin-bottom: 1.5rem;">
                     <h3 style="color: var(--accent-cyan); margin: 0 0 0.5rem 0; font-size: 1.1rem;">Indicator</h3>
-                    <p style="margin: 0; color: var(--text-primary); font-family: monospace; font-size: 1.1rem; word-break: break-all;">${ioc.indicator || 'N/A'}</p>
+                    <div onclick="selectIndicatorText()" style="padding: 1rem; background: rgba(0, 217, 255, 0.05); border: 1px solid rgba(0, 217, 255, 0.2); border-radius: 8px; cursor: text;">
+                        <p id="indicatorText" style="margin: 0; color: var(--text-primary); font-family: monospace; font-size: 0.95rem; word-break: break-all; user-select: all; -webkit-user-select: all; -moz-user-select: all; line-height: 1.6;">${ioc.indicator || 'N/A'}</p>
+                        <div style="margin-top: 0.5rem; color: var(--text-muted); font-size: 0.75rem;">Click to select • Use Copy button below</div>
+                    </div>
                 </div>
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1.5rem;">
                     <div>
@@ -1297,10 +1421,29 @@
                 </div>
             `;
 
-            // Set external links
-            const cleanIndicator = (ioc.indicator || '').replace(/\[|\]|\./g, '');
-            document.getElementById('vtLink').href = `https://www.virustotal.com/gui/search/${encodeURIComponent(cleanIndicator)}`;
-            document.getElementById('abuseLink').href = `https://www.abuseipdb.com/check/${encodeURIComponent(cleanIndicator)}`;
+            // Set external links with full indicator
+            const indicator = ioc.indicator || '';
+            const iocType = (ioc.type || '').toLowerCase();
+
+            // For URLs, encode properly; for hashes/IPs, use as-is
+            if (iocType.includes('url')) {
+                // For URLs, use the full URL
+                document.getElementById('vtLink').href = `https://www.virustotal.com/gui/url/${btoa(indicator).replace(/=/g, '')}/detection`;
+            } else {
+                // For hashes, IPs, domains - use search
+                document.getElementById('vtLink').href = `https://www.virustotal.com/gui/search/${encodeURIComponent(indicator)}`;
+            }
+
+            // AbuseIPDB only works with IPs
+            const abuseLink = document.getElementById('abuseLink');
+            if (iocType.includes('ip')) {
+                abuseLink.href = `https://www.abuseipdb.com/check/${encodeURIComponent(indicator)}`;
+                abuseLink.style.display = 'block';
+            } else {
+                // Hide for non-IPs
+                abuseLink.style.display = 'none';
+            }
+
 
             modal.style.display = 'block';
         }
@@ -1308,6 +1451,17 @@
         function closeModal() {
             document.getElementById('iocModal').style.display = 'none';
             currentModalIOC = null;
+        }
+
+        function selectIndicatorText() {
+            const textElement = document.getElementById('indicatorText');
+            if (textElement) {
+                const range = document.createRange();
+                range.selectNodeContents(textElement);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+            }
         }
 
         function copyIOC() {
@@ -1327,6 +1481,216 @@
                 closeModal();
             }
         }
+
+        // ========== STATISTICS MODAL FUNCTIONS ==========
+
+        function toggleStatCard(cardType) {
+            // Open modal instead of inline expansion
+            openStatsModal(cardType);
+        }
+
+        function openStatsModal(cardType) {
+            const modal = document.getElementById('statsModal');
+            const title = document.getElementById('statsModalTitle');
+            const content = document.getElementById('statsModalContent');
+            const searchInput = document.getElementById('statsModalSearch');
+            const countDiv = document.getElementById('statsModalCount');
+
+            // Clear search
+            searchInput.value = '';
+
+            // Set title and populate content based on card type
+            if (cardType === 'totalIOCsCard') {
+                title.textContent = 'All IOCs (294+)';
+                let html = '';
+                let totalCount = 0;
+
+                if (threatIntelData && threatIntelData.vendors) {
+                    Object.entries(threatIntelData.vendors).forEach(([vendor, data]) => {
+                        if (data.iocs && data.iocs.length > 0) {
+                            html += `<div style="margin-bottom: 2rem;">`;
+                            html += `<h3 style="color: var(--accent-cyan); font-size: 1.1rem; margin-bottom: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;">${vendor} (${data.iocs.length} IOCs)</h3>`;
+                            data.iocs.forEach(ioc => {
+                                html += `<div class="modal-stat-item" style="padding: 0.75rem; background: rgba(255, 255, 255, 0.02); border-radius: 6px; margin-bottom: 0.5rem; font-size: 0.9rem; word-break: break-all; border-left: 3px solid var(--accent-cyan);">`;
+                                html += `<div style="color: var(--text-primary); font-weight: 500;">${ioc.indicator}</div>`;
+                                html += `<div style="color: var(--text-muted); font-size: 0.8rem; margin-top: 0.25rem;">Type: ${ioc.type} | Source: ${vendor}</div>`;
+                                html += `</div>`;
+                                totalCount++;
+                            });
+                            html += `</div>`;
+                        }
+                    });
+                }
+                content.innerHTML = html || '<p style="color: var(--text-muted);">No IOCs available</p>';
+                countDiv.textContent = `Showing ${totalCount} IOCs`;
+
+            } else if (cardType === 'newIOCsCard') {
+                title.textContent = 'New IOCs (Last Hour)';
+                const oneHourAgo = Date.now() - (60 * 60 * 1000);
+                let html = '';
+                let totalCount = 0;
+                if (threatIntelData && threatIntelData.vendors) {
+                    Object.entries(threatIntelData.vendors).forEach(([vendor, data]) => {
+                        if (data.iocs) {
+                            const newIOCs = data.iocs.filter(ioc => {
+                                const iocTime = new Date(ioc.first_seen || ioc.timestamp || 0).getTime();
+                                return iocTime > oneHourAgo;
+                            });
+
+                            if (newIOCs.length > 0) {
+                                html += `<div style="margin-bottom: 2rem;">`;
+                                html += `<h3 style="color: var(--accent-red); font-size: 1.1rem; margin-bottom: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;">${vendor} (${newIOCs.length} new)</h3>`;
+                                newIOCs.forEach(ioc => {
+                                    html += `<div class="modal-stat-item" style="padding: 0.75rem; background: rgba(255, 76, 76, 0.05); border-radius: 6px; margin-bottom: 0.5rem; font-size: 0.9rem; word-break: break-all; border-left: 3px solid var(--accent-red);">`;
+                                    html += `<div style="color: var(--text-primary); font-weight: 500;">${ioc.indicator}</div>`;
+                                    html += `<div style="color: var(--text-muted); font-size: 0.8rem; margin-top: 0.25rem;">Type: ${ioc.type}</div>`;
+                                    html += `</div>`;
+                                    totalCount++;
+                                });
+                                html += `</div>`;
+                            }
+                        }
+                    });
+                }
+                content.innerHTML = html || '<p style="color: var(--text-muted);">No new IOCs in the last hour</p>';
+                countDiv.textContent = totalCount > 0 ? `Showing ${totalCount} new IOCs` : 'No new IOCs';
+
+            } else if (cardType === 'campaignsCard') {
+                title.textContent = 'Active Campaigns';
+                let html = '';
+                const campaigns = new Set();
+
+                if (threatIntelData && threatIntelData.vendors) {
+                    Object.values(threatIntelData.vendors).forEach(data => {
+                        if (data.iocs) {
+                            data.iocs.forEach(ioc => {
+                                if (ioc.campaign) campaigns.add(ioc.campaign);
+                            });
+                        }
+                    });
+                }
+
+                if (campaigns.size > 0) {
+                    Array.from(campaigns).forEach(campaign => {
+                        html += `<div class="modal-stat-item" style="padding: 1.25rem; background: rgba(0, 255, 136, 0.05); border-radius: 8px; margin-bottom: 1rem; border-left: 3px solid #00ff88;">`;
+                        html += `<div style="color: #00ff88; font-weight: 600; font-size: 1.1rem; margin-bottom: 0.5rem;">${campaign}</div>`;
+                        html += `<div style="color: var(--text-muted); font-size: 0.9rem;">Active threat campaign</div>`;
+                        html += `</div>`;
+                    });
+                } else {
+                    html = '<p style="color: var(--text-muted);">No active campaigns detected</p>';
+                }
+
+                content.innerHTML = html;
+                countDiv.textContent = `${campaigns.size} active campaigns`;
+
+            } else if (cardType === 'vendorsCard') {
+                title.textContent = 'Vendor Status';
+                let html = '';
+                let activeCount = 0;
+                if (threatIntelData && threatIntelData.vendors) {
+                    Object.entries(threatIntelData.vendors).forEach(([vendor, data]) => {
+                        const iocCount = data.iocs ? data.iocs.length : 0;
+                        const status = iocCount > 0 ? 'Active' : 'Inactive';
+                        const statusColor = iocCount > 0 ? '#00ff88' : '#ff4c4c';
+                        if (iocCount > 0) activeCount++;
+
+                        html += `<div class="modal-stat-item" style="padding: 1.25rem; background: rgba(255, 165, 0, 0.05); border-radius: 8px; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; border-left: 3px solid #ffa500;">`;
+                        html += `<div>`;
+                        html += `<div style="color: #ffa500; font-weight: 600; font-size: 1.1rem;">${vendor}</div>`;
+                        html += `<div style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.25rem;">${iocCount} IOCs collected</div>`;
+                        html += `</div>`;
+                        html += `<div style="padding: 0.5rem 1rem; background: ${statusColor}22; border-radius: 6px; color: ${statusColor}; font-size: 0.9rem; font-weight: 600;">${status}</div>`;
+                        html += `</div>`;
+                    });
+                }
+
+                content.innerHTML = html || '<p style="color: var(--text-muted);">No vendors available</p>';
+                countDiv.textContent = `${activeCount} active vendors`;
+            }
+
+            // Show modal
+            modal.style.display = 'block';
+        }
+
+        function closeStatsModal() {
+            document.getElementById('statsModal').style.display = 'none';
+        }
+
+        function filterStatsModal() {
+            const searchInput = document.getElementById('statsModalSearch');
+            const content = document.getElementById('statsModalContent');
+            const countDiv = document.getElementById('statsModalCount');
+            const searchTerm = searchInput.value.toLowerCase();
+
+            const items = content.querySelectorAll('.modal-stat-item');
+            let visibleCount = 0;
+            let totalCount = items.length;
+
+            items.forEach(item => {
+                const text = item.textContent.toLowerCase();
+                if (text.includes(searchTerm)) {
+                    item.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+
+            if (searchTerm) {
+                countDiv.textContent = `Found ${visibleCount} of ${totalCount} items`;
+            } else {
+                countDiv.textContent = `Showing ${totalCount} items`;
+            }
+        }
+
+        // Close modal on outside click
+        window.onclick = function (event) {
+            const modal = document.getElementById('iocModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+            const statsModal = document.getElementById('statsModal');
+            if (event.target === statsModal) {
+                closeStatsModal();
+            }
+        }
+
+        // ========== DEEP LINKING NAVIGATION FUNCTIONS ==========
+
+        function navigateToIOC(iocIndex) {
+            // Get IOC data from global array
+            const iocData = window.modalIOCs[iocIndex];
+            if (!iocData) return;
+
+            // Close the stats modal
+            closeStatsModal();
+
+            // Small delay to let modal close smoothly
+            setTimeout(() => {
+                // Open the IOC details modal with the data
+                openModal(iocData);
+            }, 200);
+        }
+
+        function navigateToVendor(vendorName) {
+            // Close the stats modal
+            closeStatsModal();
+
+            // Small delay to let modal close smoothly
+            setTimeout(() => {
+                // Switch to the vendor tab
+                switchTab(vendorName);
+
+                // Scroll to vendor content area
+                const vendorContent = document.getElementById('vendorContent');
+                if (vendorContent) {
+                    vendorContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }, 200);
+        }
+
+        // ========== INTERACTIVE STATISTICS CARDS ==========
 
         // Statistics Dashboard
         function generateStatistics() {
