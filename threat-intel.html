@@ -635,6 +635,35 @@
         body.light-mode .ti-hero {
             background: linear-gradient(135deg, #e0f2fe 0%, #dbeafe 100%);
         }
+
+        body.light-mode .main {
+            background: #ffffff;
+        }
+
+        body.light-mode .vendor-tab {
+            background: rgba(0, 0, 0, 0.05);
+            color: #1a1a1a;
+        }
+
+        body.light-mode .vendor-tab.active {
+            background: #00d9ff;
+            color: #ffffff;
+        }
+
+        body.light-mode .ioc-card {
+            background: #ffffff;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        body.light-mode .analytics-card {
+            background: #ffffff;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        body.light-mode .footer {
+            background: rgba(255, 255, 255, 0.95);
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 
@@ -654,6 +683,29 @@
             </nav>
         </div>
     </header>
+
+    <!-- SEO Fallback for Search Engines -->
+    <noscript>
+        <div
+            style="max-width: 1200px; margin: 2rem auto; padding: 2rem; background: rgba(255, 255, 255, 0.05); border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.1);">
+            <h2 style="color: #00d9ff; margin-bottom: 1rem;">Live Threat Intelligence Dashboard</h2>
+            <p style="margin-bottom: 1rem;">This page displays real-time threat intelligence from 6 trusted security
+                sources:</p>
+            <ul style="margin-left: 2rem; line-height: 1.8;">
+                <li>OpenPhish - Phishing URL feed</li>
+                <li>URLhaus - Malware distribution URLs</li>
+                <li>ThreatFox - Mixed IOCs (URLs, IPs, hashes)</li>
+                <li>Feodo Tracker - Botnet C2 IPs</li>
+                <li>Blocklist.de - SSH/brute force attackers</li>
+                <li>SSL Blacklist - Malicious SSL certificates</li>
+            </ul>
+            <p style="margin-top: 1rem;"><strong>Note:</strong> This page requires JavaScript to display interactive
+                threat intelligence data. For raw data access, visit our <a
+                    href="https://github.com/Harish761/thehgtech/blob/main/threat-intel.js"
+                    style="color: #00d9ff;">GitHub repository</a>.</p>
+            <p style="margin-top: 1rem;">Updated hourly with AI-powered insights and 7-day trend analysis.</p>
+        </div>
+    </noscript>
 
     <!-- Hero Section -->
     <section class="ti-hero">
