@@ -1,11 +1,11 @@
 // Auto-Generated Threat Intel (Multi-Vendor Dashboard)
-// Updated: 2025-11-20T22:52:49.797286+05:30 IST
+// Updated: 2025-11-21T00:09:36.833106+05:30 IST
 // Sources: OpenPhish, Malware Bazaar, Spamhaus DROP, CINS Army, Blocklist.de, Phishing Database
 
 const threatIntelData = {
-    "lastUpdated": "2025-11-20T22:52:49.789218+05:30",
-    "lastUpdatedFormatted": "Nov 20, 2025 at 10:52 PM IST",
-    "comparisonPeriod": "Nov 19 \u2013 Nov 20, 2025",
+    "lastUpdated": "2025-11-21T00:09:36.825283+05:30",
+    "lastUpdatedFormatted": "Nov 21, 2025 at 12:09 AM IST",
+    "comparisonPeriod": "Nov 20 \u2013 Nov 21, 2025",
     "vendors": {
         "OpenPhish": {
             "description": "Real-time phishing URL feed updated every 15 minutes. Tracks active phishing sites targeting major brands and financial institutions.",
@@ -19,12 +19,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -34,12 +34,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -49,12 +49,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -64,12 +64,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -79,12 +79,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -94,12 +94,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -109,12 +109,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -124,12 +124,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -139,12 +139,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -154,12 +154,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -169,12 +169,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -184,12 +184,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -199,12 +199,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -214,12 +214,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -229,12 +229,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -244,12 +244,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -259,12 +259,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -274,12 +274,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -289,12 +289,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -304,12 +304,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -319,12 +319,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -334,12 +334,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -349,12 +349,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -364,12 +364,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -379,12 +379,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -394,12 +394,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -409,12 +409,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -424,12 +424,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -439,12 +439,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -454,12 +454,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -469,12 +469,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -484,12 +484,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -499,12 +499,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -514,12 +514,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -529,12 +529,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -544,12 +544,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -559,12 +559,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -574,12 +574,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -589,12 +589,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -604,12 +604,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -619,12 +619,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -634,12 +634,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -649,12 +649,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -664,12 +664,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -679,12 +679,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -694,12 +694,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -709,12 +709,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -724,12 +724,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -739,12 +739,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -754,12 +754,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "OpenPhish",
                     "sourceUrl": "https://openphish.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:36.897226+05:30",
+                    "addedAt": "2025-11-21T00:09:20.688336+05:30",
                     "campaign": "Generic Phishing"
                 }
             ],
@@ -776,753 +776,753 @@ const threatIntelData = {
             "iocs": [
                 {
                     "type": "hash",
-                    "indicator": " \"f537de2f844b1e24a1f29744ff459850a99ce22f1e5eeeeb09de99f7bdddb3a3",
-                    "description": " \"n/a ( \"exe)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"n/a"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"ff58b3aaea6828a067ab0fea61998e92e0b54f310e22992a84fdcd7f87e93f88",
-                    "description": " \"AgentTesla ( \"exe)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"AgentTesla"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"cad4d42f774b7f16affee2ce0114194426150c2c2a11bb47868cd60f73b70335",
-                    "description": " \"Mirai ( \"elf)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"Mirai"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"f1ea87a7014f0d4b2e4cbf05bf567cacff710e68d748eb7bd3de6e1333d8b6de",
-                    "description": " \"Mirai ( \"elf)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"Mirai"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"1e4fbfd2d0e55900fa186a07514f75b7acfb7fc04d25fb9f61ba133fc49a49c7",
-                    "description": " \"n/a ( \"exe)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"n/a"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"3e1cf5e7f30776bab5520876166d5359bbf5468e9d385cc4b076f302726ab0d6",
-                    "description": " \"n/a ( \"exe)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"n/a"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"3afa1d4d51f28ed901f77025aec67c94bdc54f09d88a82293d3a62112049c4e7",
-                    "description": " \"n/a ( \"exe)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"n/a"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"027512cd6d80b101272a64b60a372eaaec2221566479a3302ae90a8183db838d",
-                    "description": " \"Mirai ( \"elf)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"Mirai"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"5e94bf35eb2cf31f491f26f3b83827c0dace3156bbc2e8aed5600c2d7cf86e1f",
-                    "description": " \"Mirai ( \"elf)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"Mirai"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"5ef2e67b2e822f0156c21159ff6473993c11f96001faff88a6f1dc0a2c7f8c3f",
-                    "description": " \"Mirai ( \"elf)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"Mirai"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"9707195aa5d3cf79109ac84e2c32ad91a27c0e7b6b0240f1aea37616f5982bc5",
-                    "description": " \"Mirai ( \"elf)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"Mirai"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"f92da5518c6fc856a44242a4c9fcd7f9c924f88869a7136756e5479ee6898432",
-                    "description": " \"Mirai ( \"elf)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"Mirai"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"3eaefcceeee830ccbd4bce11477ccb5555b03a4402b129d0f0618b4937e3a765",
-                    "description": " \"n/a ( \"apk)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"n/a"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"83eb14fdd6344c1bdef36f27e97d830ece066f6ad3aad6bfc067c452c87aed77",
-                    "description": " \"Mirai ( \"elf)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"Mirai"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"ca7ee3e8e4abb2476d9821b8dc946a3efd9196e7dd098315cea7611ab98f9c0a",
-                    "description": " \"n/a ( \"msi)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"n/a"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"1782201e352ed4ec9635cf085eefa70060627d9d9bd53ea4f16e587fa149ca39",
-                    "description": " \"n/a ( \"exe)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"n/a"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"c743ac8eeb089864bb8638c46adc1e0eee48ea917e2eb8c8192b2783f9db82d4",
-                    "description": " \"GoToResolve ( \"msi)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"GoToResolve"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"6e52b8f78f9042d01bba28b277e0779e78478ce27560a814b539eed77867ff38",
-                    "description": " \"n/a ( \"apk)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"n/a"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"f5748dfb71ebd394c5e2ebdc301703e9037839c9fab2b80d5a5322459d8fb9c2",
-                    "description": " \"n/a ( \"apk)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"n/a"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"36b7574ed8d60e593da8b0ce5de4e1dc5bc19904b68b262e06ff43872c6a297e",
-                    "description": " \"ConnectWise ( \"msi)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"ConnectWise"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"371849109d64a72f05d42573890d1c6826bf6921b961ced32caf4b038eccbdde",
-                    "description": " \"n/a ( \"apk)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"n/a"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"db2766c60af33b3e2cc100014b4d2df8d815d45f46a8c9d012e676efc9d902e2",
-                    "description": " \"n/a ( \"apk)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"n/a"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"9b03e4637db188820db5a30ae59f0a753a3e86b8a26c791f2ebee521357f229d",
-                    "description": " \"n/a ( \"apk)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"n/a"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"47bf1ef40059de8b646212def8744968eafa7c806c2f5043d87e695768bf2224",
-                    "description": " \"n/a ( \"apk)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"n/a"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"dc34175b45f57791641459d653af0b2ab1ce4387e8b15f914d33de443e1bbea7",
-                    "description": " \"ConnectWise ( \"msi)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"ConnectWise"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"3f9abffd3050fea4494ea58d6c15b4fcd1a0430cd3c7d9c8f633379a70f16417",
-                    "description": " \"n/a ( \"hta)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"n/a"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"8d1cf0eff5e73d4c5b9fda82268c436dae8dcd2166a86f76374afd537ad2962f",
-                    "description": " \"n/a ( \"apk)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"n/a"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"e60c1fa0f6bab0e263aea34dcc196d81e90a965d9fa825ba0e996c9cdaa83243",
-                    "description": " \"n/a ( \"vbs)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"n/a"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"07c828b77889643d7d676cb69d16bf81e6934ec0e449ef5e598c5656fb9a34c3",
-                    "description": " \"n/a ( \"msi)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"n/a"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"58b2d3d5d53877494e8ebcc07fe3b5bb0b50e3501e6aa46c8e84ccdacab1d818",
-                    "description": " \"ValleyRAT ( \"exe)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"ValleyRAT"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"06d443a444285a6d63de6286277008ac8154cfaed3a444f3ddc2a5e1df319333",
-                    "description": " \"n/a ( \"hta)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"n/a"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"3715b37a8d14be2c63e57b34d805e61e89841a1cc03c9ccfd5e057e8726e7cb0",
-                    "description": " \"n/a ( \"hta)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"n/a"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"c9692d6605b476a8374ef44f1938d247116e040c086796dfcfd4e74052430e6b",
-                    "description": " \"Mirai ( \"elf)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"Mirai"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"9a7ba3d568290f269f71d3d300d72e89cf5136d21eacbbf5c007948ac9b9de7f",
-                    "description": " \"Mirai ( \"elf)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"Mirai"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"5c3f861261d8fc789378f7b7cf04e7fb344d9cffcc075e45c5d2f388826b24d1",
-                    "description": " \"n/a ( \"js)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"n/a"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"820e6a6a8ba13032f6b1ad9de83d5e383d6e162f56a5578f1d1b9600f4c00891",
-                    "description": " \"n/a ( \"js)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"n/a"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"d10c91a4b00977f82018c3a7a1c910e38b11d94f12fe64f802108b29165a95f9",
-                    "description": " \"n/a ( \"tar)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"n/a"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"1c3b78df22f115b0cfdbd97acb8f45441c84b4dd2ea8168beaba96a2d5e26bbe",
+                    "indicator": " \"b6e9c0397a42fd116e7af45a99af2cc5ff23e48e429e04dd411bea39e9fbb6c9",
                     "description": " \"n/a ( \"doc)",
                     "timestamp": "just now",
                     "source": "Malware Bazaar",
                     "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malware",
                         "hash"
                     ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
                     "campaign": " \"n/a"
                 },
                 {
                     "type": "hash",
-                    "indicator": " \"c8aa42d3080017d34543f5ca21cd87ceb4ec2aedacebe2f898d43aa88e8008fb",
+                    "indicator": " \"9d6d82d3abe564e3c53479810dc64a25a9406b7c2daee450f63d2591485ed5b5",
                     "description": " \"n/a ( \"exe)",
                     "timestamp": "just now",
                     "source": "Malware Bazaar",
                     "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malware",
                         "hash"
                     ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
                     "campaign": " \"n/a"
                 },
                 {
                     "type": "hash",
-                    "indicator": " \"ac3fafd299eea87360037b6f682e370f252db4e41f26bdc0b6a63b0de94e20f0",
-                    "description": " \"n/a ( \"js)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"n/a"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"bb44b165f197753247cd2d4525789ff88397045ee966a6463b68d07f9fbe4470",
-                    "description": " \"MaskGramStealer ( \"exe)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"MaskGramStealer"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"22181ae0b2b08c7fd4ac5150b91a5670262ee8449c939631f7410c7bde91b28c",
-                    "description": " \"n/a ( \"exe)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"n/a"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"af3bf0af39c484086efb44eef2f4805c15330c04922723975613c8740be30ff2",
+                    "indicator": " \"2fc9d598df29de6d42f1cf1ce23a703deccdee4760f9b55ce5ec270eaf32c080",
                     "description": " \"Formbook ( \"exe)",
                     "timestamp": "just now",
                     "source": "Malware Bazaar",
                     "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malware",
                         "hash"
                     ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
                     "campaign": " \"Formbook"
                 },
                 {
                     "type": "hash",
-                    "indicator": " \"c376c4e61cc12233ee7a86336078c76ddb2f5029a54b0153253e90e66f7414f3",
+                    "indicator": " \"358d06a51a4b49be6fdf7c2684cff3ca2c1ed6b1b161de7fa8a93085d46e6257",
                     "description": " \"Formbook ( \"exe)",
                     "timestamp": "just now",
                     "source": "Malware Bazaar",
                     "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malware",
                         "hash"
                     ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
                     "campaign": " \"Formbook"
                 },
                 {
                     "type": "hash",
-                    "indicator": " \"221f0dfce9d3d8c7aa9489cf39a02fedbeed7837120338cdf77f3c5168bc021d",
-                    "description": " \"Formbook ( \"rtf)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"Formbook"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"6c570d1e755b28bd8d2a9ec5c181a539e68e69bb56e354e4c6cece5c7aab027d",
-                    "description": " \"n/a ( \"apk)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"n/a"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"968605accef9bd3d2629e948f50b1fc438e849d6557172eb19cfeafcd925d84e",
-                    "description": " \"ValleyRAT ( \"exe)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"ValleyRAT"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"4a3ad3f30d96182e122e6e985494fbb391939d31226779c345b965f592254c9c",
-                    "description": " \"Fuery ( \"exe)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"Fuery"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"9cbb04ee362eeb3f191b7a707385b770118f4fe4fa5c3f2d0be6430089b77334",
-                    "description": " \"n/a ( \"exe)",
-                    "timestamp": "just now",
-                    "source": "Malware Bazaar",
-                    "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malware",
-                        "hash"
-                    ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
-                    "campaign": " \"n/a"
-                },
-                {
-                    "type": "hash",
-                    "indicator": " \"0a133d4b96fc7b750a7b2ac14c152b61befd8dfa670e1fcd99661e531b49886e",
+                    "indicator": " \"f7529ff0fed047ced5b5c9d4615c5a9d4df1219ec773a5b23a6f274135f38536",
                     "description": " \"n/a ( \"js)",
                     "timestamp": "just now",
                     "source": "Malware Bazaar",
                     "sourceUrl": "https://bazaar.abuse.ch/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malware",
                         "hash"
                     ],
-                    "addedAt": "2025-11-20T22:52:38.510201+05:30",
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
                     "campaign": " \"n/a"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"80c9a8df3155346edf2d313ed55a6aa4f2c878833fb3131def58e3915821ae24",
+                    "description": " \"Mirai ( \"elf)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"Mirai"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"3099a76e043a4999cf46a2750ebfe9a179bc174c60d8d07ebeddcc09144be477",
+                    "description": " \"Mirai ( \"elf)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"Mirai"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"32581131bd793fae1fb46656307be55c3ce26a243bd9e618746525e63bc63e13",
+                    "description": " \"QuasarRAT ( \"exe)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"QuasarRAT"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"ca6762c497c4eb066ddfb37d9649bd5a9f341aa4ec0a23280fa02465f46efc5c",
+                    "description": " \"Mirai ( \"elf)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"Mirai"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"ed0fcfe41679e33e2052c78bf67c62ac2104537e6addace03fba25244c3a3ea3",
+                    "description": " \"Mirai ( \"elf)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"Mirai"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"86382faa73928ee75896907fa3a5ff0e369d30b9445c57ed1e4cd10e4d44ee08",
+                    "description": " \"Mirai ( \"sh)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"Mirai"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"736018c8aa2729c0a7182ee58c76935fd9c8f7909475fc2db2d54e66814ccf61",
+                    "description": " \"n/a ( \"elf)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"n/a"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"63556748e8e14e485cbd2ee62c7eb01afd7fec0da2a4bec563014959e1404788",
+                    "description": " \"n/a ( \"sh)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"n/a"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"711b98df48b443a4badb996b6d801bd6de9e5948b316ff2170dcf7a67cad0aec",
+                    "description": " \"Mirai ( \"sh)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"Mirai"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"47ed7ef889184b0682bf34dc6941f2b448ea5e37bf2cf22203dfb670198515ad",
+                    "description": " \"Mirai ( \"elf)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"Mirai"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"d773b7588664d8ab20bb6c3a2f5eca225f20598305747290494ead3891ecbefa",
+                    "description": " \"Mirai ( \"elf)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"Mirai"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"e4fb13d2b1039326615b6ea97cc2418b73d3dc532aeaa2273a191d3433f9f3f6",
+                    "description": " \"Mirai ( \"elf)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"Mirai"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"3cb48d24602d099c3d56eb628427e45e14d98d714e8640faadb04b2be719748a",
+                    "description": " \"Mirai ( \"elf)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"Mirai"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"a6d331329e20d8b21c5dadfb92da75d046f1ac0d128dea8e58272e11043a83cc",
+                    "description": " \"Mirai ( \"elf)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"Mirai"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"e98c44022da8a4afc48ea24a230ea40be76d513f58d71a8b79309b65e04ec26e",
+                    "description": " \"Mirai ( \"elf)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"Mirai"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"c9770700473e61efe1b891c2c772bb8bff904125a4b778cb4e8b6c4da4821460",
+                    "description": " \"Mirai ( \"elf)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"Mirai"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"d47da28f6c64455362ba2341d0b2ef873bdcff4c74058597ecd48fa456d8ee99",
+                    "description": " \"Mirai ( \"elf)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"Mirai"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"be48f184b850f49cd10c831ad5eca756c666dd25425c1b1317ce2ee72f2a7c8d",
+                    "description": " \"Mirai ( \"elf)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"Mirai"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"df8e012a89c12990d5e3438ae046355bce2779ef719b2dacdb16058aafbf470f",
+                    "description": " \"Mirai ( \"elf)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"Mirai"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"bdcbf7540c231db545bd4be38c66a53ee8a17d3cb6f1537ce08d16c5ea46fee1",
+                    "description": " \"Mirai ( \"elf)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"Mirai"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"d59800a7dd1a47cacc46561679547f2f320ee9e9f84ba5c4c600a97c9a345f08",
+                    "description": " \"Mirai ( \"elf)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"Mirai"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"9121f3dee5b3920b03070f61844194823ce3240fb9185c22e9ab3553be6e998f",
+                    "description": " \"Mirai ( \"elf)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"Mirai"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"91ae20264564c7c1b3801bf2e27d1dfd4c9892a905174ab8ac43198463f0eb43",
+                    "description": " \"Mirai ( \"elf)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"Mirai"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"77c95a977bc212cfc3c0c5e918a94b1925df9a086e291e7f84f315573f901577",
+                    "description": " \"Mirai ( \"elf)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"Mirai"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"c9a0db8b4b1a657625526fd09ffd9773c757a76d2fa465b10f751ca11abb36b7",
+                    "description": " \"Mirai ( \"elf)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"Mirai"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"49b987b7e71921dbeaa61d49dfd8f5f4b9e5fddd3c347925ae42763657960e75",
+                    "description": " \"Mirai ( \"elf)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"Mirai"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"83e12a989f190473be130ff7fa6f5ae86e2eabbe6aa789f643c2b80add1596f0",
+                    "description": " \"Mirai ( \"elf)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"Mirai"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"5a4f236030744f7284ea200a1eb67ac8e041f7bb6bfa32513d8a3af3b44dc46a",
+                    "description": " \"Mirai ( \"elf)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"Mirai"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"fce2a09a5e4f12d48fd9c2232cac167069ee072a9613a1462fe0c0893156b00c",
+                    "description": " \"Mirai ( \"elf)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"Mirai"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"fe81c5cd324b6e4214cd4508a03a773e4a5f8a94bdc7fb8b124d48c818c738d1",
+                    "description": " \"Mirai ( \"elf)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"Mirai"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"53cba7b7b7422150ad2cc731342ebea9d4e294d1e36d008b45d21f6c21e02c87",
+                    "description": " \"n/a ( \"sh)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"n/a"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"3d404058829b47f37e70e35e2835ef6033dc61254cca44318056ad755008ec41",
+                    "description": " \"Mirai ( \"elf)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"Mirai"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"e8d3cf36f0a1d65447fad7d8da173f2f9f9767b9ed96443f86eae34e60c4be5b",
+                    "description": " \"Mirai ( \"elf)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"Mirai"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"ea59147e911f1056f8bae2e426054ad996f4b7ff053a8917fe02bb5c5eab74f9",
+                    "description": " \"Mirai ( \"elf)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"Mirai"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"2c435aa90ca3e34078572097627afd1610f64fcec5e8cc08dad41df8762ef2e3",
+                    "description": " \"Mirai ( \"elf)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"Mirai"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"1b35c8cef7f7236167c49528db35e476103c6d46cf1d791489d6b057d48996b2",
+                    "description": " \"Mirai ( \"elf)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"Mirai"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"097c5d1150cdc2ca2e1382f7ac7181eb0384f453b7a0bf5910995c1dee7d9527",
+                    "description": " \"Gafgyt ( \"elf)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"Gafgyt"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"9d88b51e5dc6fafa0ccc39af328eb13799178c7ddff1dceb108c071d9462da26",
+                    "description": " \"n/a ( \"sh)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"n/a"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"a26f6601ed352204ac89323007b476494e66994e51fcfa74d154e45b7a65830d",
+                    "description": " \"Gafgyt ( \"elf)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"Gafgyt"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"407eb17af12c371aea97cf9469ed35873ff390bfd8852cb884fa9b0694ed8887",
+                    "description": " \"Gafgyt ( \"elf)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"Gafgyt"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"8743e4fd218f0e46c608b94b45eafef939e04fb83045b4dcf16bd3143232aa91",
+                    "description": " \"Mirai ( \"sh)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"Mirai"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"0d79aff189ecf7b6b343f9879ffb46feb07b24373b28a798ac25cca3c7bb13a6",
+                    "description": " \"Mirai ( \"elf)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"Mirai"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"245b76cd0f470c884cf9f04f2d6a1f742582370457457fb27ae95c5c7c2f6251",
+                    "description": " \"Mirai ( \"elf)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"Mirai"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"4a0e51173859b29a9a271aef5a20263cd44c6adff26447f4ca7d73a7e5663390",
+                    "description": " \"Mirai ( \"elf)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"Mirai"
+                },
+                {
+                    "type": "hash",
+                    "indicator": " \"7668adc811c84d9908322e3fc97ede67b6e8909a9b10f3a50bd0cfa118f069d8",
+                    "description": " \"Mirai ( \"elf)",
+                    "timestamp": "just now",
+                    "source": "Malware Bazaar",
+                    "sourceUrl": "https://bazaar.abuse.ch/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malware",
+                        "hash"
+                    ],
+                    "addedAt": "2025-11-21T00:09:22.213669+05:30",
+                    "campaign": " \"Mirai"
                 }
             ],
             "stats": {
@@ -1543,12 +1543,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -1558,12 +1558,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -1573,12 +1573,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -1588,12 +1588,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -1603,12 +1603,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -1618,12 +1618,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -1633,12 +1633,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -1648,12 +1648,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -1663,12 +1663,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -1678,12 +1678,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -1693,12 +1693,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -1708,12 +1708,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -1723,12 +1723,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -1738,12 +1738,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -1753,12 +1753,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -1768,12 +1768,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -1783,12 +1783,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -1798,12 +1798,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -1813,12 +1813,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -1828,12 +1828,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -1843,12 +1843,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -1858,12 +1858,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -1873,12 +1873,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -1888,12 +1888,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -1903,12 +1903,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -1918,12 +1918,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -1933,12 +1933,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -1948,12 +1948,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -1963,12 +1963,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -1978,12 +1978,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -1993,12 +1993,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -2008,12 +2008,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -2023,12 +2023,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -2038,12 +2038,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -2053,12 +2053,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -2068,12 +2068,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -2083,12 +2083,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -2098,12 +2098,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -2113,12 +2113,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -2128,12 +2128,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -2143,12 +2143,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -2158,12 +2158,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -2173,12 +2173,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -2188,12 +2188,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -2203,12 +2203,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 },
                 {
@@ -2218,12 +2218,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Spamhaus DROP",
                     "sourceUrl": "https://www.spamhaus.org/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "hijacked",
                         "criminal-network"
                     ],
-                    "addedAt": "2025-11-20T22:52:39.695938+05:30",
+                    "addedAt": "2025-11-21T00:09:23.341064+05:30",
                     "campaign": "Spamhaus DROP List"
                 }
             ],
@@ -2245,12 +2245,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2260,12 +2260,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2275,12 +2275,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2290,27 +2290,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
-                    "campaign": "CINS Threat List"
-                },
-                {
-                    "type": "ip",
-                    "indicator": "1[.]14[.]3[.]240",
-                    "description": "Confirmed malicious IP",
-                    "timestamp": "just now",
-                    "source": "CINS Army",
-                    "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malicious-ip",
-                        "attacker"
-                    ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2320,12 +2305,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2335,12 +2320,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2350,12 +2335,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2365,12 +2350,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2380,12 +2365,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2395,12 +2380,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2410,12 +2395,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2425,12 +2410,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2440,12 +2425,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2455,12 +2440,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2470,12 +2455,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2485,12 +2470,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2500,12 +2485,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2515,12 +2500,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2530,12 +2515,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2545,12 +2530,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2560,12 +2545,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2575,12 +2560,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2590,12 +2575,27 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
+                    "campaign": "CINS Threat List"
+                },
+                {
+                    "type": "ip",
+                    "indicator": "1[.]215[.]119[.]36",
+                    "description": "Confirmed malicious IP",
+                    "timestamp": "just now",
+                    "source": "CINS Army",
+                    "sourceUrl": "http://cinsscore.com/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malicious-ip",
+                        "attacker"
+                    ],
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2605,12 +2605,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2620,12 +2620,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2635,27 +2635,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
-                    "campaign": "CINS Threat List"
-                },
-                {
-                    "type": "ip",
-                    "indicator": "1[.]239[.]134[.]116",
-                    "description": "Confirmed malicious IP",
-                    "timestamp": "just now",
-                    "source": "CINS Army",
-                    "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "malicious-ip",
-                        "attacker"
-                    ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2665,12 +2650,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2680,12 +2665,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2695,12 +2680,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2710,12 +2695,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2725,12 +2710,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2740,12 +2725,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2755,12 +2740,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2770,12 +2755,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2785,12 +2770,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2800,12 +2785,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2815,12 +2800,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2830,12 +2815,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2845,12 +2830,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2860,12 +2845,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2875,12 +2860,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2890,12 +2875,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2905,12 +2890,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2920,12 +2905,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2935,12 +2920,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2950,12 +2935,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2965,12 +2950,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 },
                 {
@@ -2980,12 +2965,27 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "CINS Army",
                     "sourceUrl": "http://cinsscore.com/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "malicious-ip",
                         "attacker"
                     ],
-                    "addedAt": "2025-11-20T22:52:40.795437+05:30",
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
+                    "campaign": "CINS Threat List"
+                },
+                {
+                    "type": "ip",
+                    "indicator": "1[.]24[.]16[.]204",
+                    "description": "Confirmed malicious IP",
+                    "timestamp": "just now",
+                    "source": "CINS Army",
+                    "sourceUrl": "http://cinsscore.com/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "malicious-ip",
+                        "attacker"
+                    ],
+                    "addedAt": "2025-11-21T00:09:24.425630+05:30",
                     "campaign": "CINS Threat List"
                 }
             ],
@@ -3007,12 +3007,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3022,12 +3022,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3037,12 +3037,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3052,12 +3052,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3067,12 +3067,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3082,12 +3082,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3097,12 +3097,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3112,12 +3112,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3127,12 +3127,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3142,12 +3142,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3157,12 +3157,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3172,12 +3172,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3187,12 +3187,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3202,12 +3202,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3217,27 +3217,27 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
                     "type": "ip",
-                    "indicator": "1[.]94[.]123[.]200",
+                    "indicator": "1[.]58[.]94[.]127",
                     "description": "SSH brute force attacker",
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3247,12 +3247,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3262,12 +3262,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3277,12 +3277,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3292,12 +3292,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3307,12 +3307,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3322,12 +3322,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3337,12 +3337,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3352,12 +3352,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3367,12 +3367,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3382,12 +3382,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3397,12 +3397,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3412,12 +3412,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3427,12 +3427,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3442,12 +3442,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3457,12 +3457,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3472,12 +3472,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3487,12 +3487,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3502,12 +3502,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3517,12 +3517,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3532,12 +3532,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3547,12 +3547,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3562,12 +3562,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3577,12 +3577,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3592,12 +3592,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3607,12 +3607,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3622,12 +3622,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3637,12 +3637,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3652,27 +3652,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
-                    "campaign": "SSH Attacks"
-                },
-                {
-                    "type": "ip",
-                    "indicator": "101[.]126[.]55[.]179",
-                    "description": "SSH brute force attacker",
-                    "timestamp": "just now",
-                    "source": "Blocklist.de",
-                    "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
-                    "tags": [
-                        "brute-force",
-                        "ssh"
-                    ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3682,12 +3667,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3697,12 +3682,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3712,12 +3697,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3727,12 +3712,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 },
                 {
@@ -3742,12 +3727,27 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Blocklist.de",
                     "sourceUrl": "https://www.blocklist.de/",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "brute-force",
                         "ssh"
                     ],
-                    "addedAt": "2025-11-20T22:52:42.044978+05:30",
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
+                    "campaign": "SSH Attacks"
+                },
+                {
+                    "type": "ip",
+                    "indicator": "101[.]126[.]77[.]228",
+                    "description": "SSH brute force attacker",
+                    "timestamp": "just now",
+                    "source": "Blocklist.de",
+                    "sourceUrl": "https://www.blocklist.de/",
+                    "analysisTime": "2025-11-21 00:09 IST",
+                    "tags": [
+                        "brute-force",
+                        "ssh"
+                    ],
+                    "addedAt": "2025-11-21T00:09:25.652904+05:30",
                     "campaign": "SSH Attacks"
                 }
             ],
@@ -3769,12 +3769,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -3784,12 +3784,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -3799,12 +3799,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -3814,12 +3814,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -3829,12 +3829,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -3844,12 +3844,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -3859,12 +3859,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -3874,12 +3874,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -3889,12 +3889,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -3904,12 +3904,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -3919,12 +3919,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Financial Phishing"
                 },
                 {
@@ -3934,12 +3934,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Financial Phishing"
                 },
                 {
@@ -3949,12 +3949,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Financial Phishing"
                 },
                 {
@@ -3964,12 +3964,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Financial Phishing"
                 },
                 {
@@ -3979,12 +3979,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Financial Phishing"
                 },
                 {
@@ -3994,12 +3994,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Financial Phishing"
                 },
                 {
@@ -4009,12 +4009,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -4024,12 +4024,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -4039,12 +4039,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -4054,12 +4054,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -4069,12 +4069,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -4084,12 +4084,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -4099,12 +4099,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -4114,12 +4114,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -4129,12 +4129,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -4144,12 +4144,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -4159,12 +4159,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -4174,12 +4174,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -4189,12 +4189,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -4204,12 +4204,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -4219,12 +4219,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -4234,12 +4234,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -4249,12 +4249,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -4264,12 +4264,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -4279,12 +4279,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -4294,12 +4294,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -4309,12 +4309,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -4324,12 +4324,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -4339,12 +4339,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -4354,12 +4354,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -4369,12 +4369,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -4384,12 +4384,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -4399,12 +4399,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -4414,12 +4414,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -4429,12 +4429,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -4444,12 +4444,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -4459,12 +4459,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 },
                 {
@@ -4474,12 +4474,12 @@ const threatIntelData = {
                     "timestamp": "just now",
                     "source": "Phishing Database",
                     "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-                    "analysisTime": "2025-11-20 22:52 IST",
+                    "analysisTime": "2025-11-21 00:09 IST",
                     "tags": [
                         "phishing",
                         "live"
                     ],
-                    "addedAt": "2025-11-20T22:52:43.648508+05:30",
+                    "addedAt": "2025-11-21T00:09:27.256945+05:30",
                     "campaign": "Generic Phishing"
                 }
             ],
@@ -4498,12 +4498,12 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Phishing Database",
             "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-            "analysisTime": "2025-11-20 22:52 IST",
+            "analysisTime": "2025-11-21 00:09 IST",
             "tags": [
                 "phishing",
                 "live"
             ],
-            "addedAt": "2025-11-20T22:52:43.648508+05:30",
+            "addedAt": "2025-11-21T00:09:27.256945+05:30",
             "campaign": "Generic Phishing"
         },
         {
@@ -4513,12 +4513,12 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Phishing Database",
             "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-            "analysisTime": "2025-11-20 22:52 IST",
+            "analysisTime": "2025-11-21 00:09 IST",
             "tags": [
                 "phishing",
                 "live"
             ],
-            "addedAt": "2025-11-20T22:52:43.648508+05:30",
+            "addedAt": "2025-11-21T00:09:27.256945+05:30",
             "campaign": "Generic Phishing"
         },
         {
@@ -4528,12 +4528,12 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Phishing Database",
             "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-            "analysisTime": "2025-11-20 22:52 IST",
+            "analysisTime": "2025-11-21 00:09 IST",
             "tags": [
                 "phishing",
                 "live"
             ],
-            "addedAt": "2025-11-20T22:52:43.648508+05:30",
+            "addedAt": "2025-11-21T00:09:27.256945+05:30",
             "campaign": "Generic Phishing"
         },
         {
@@ -4543,12 +4543,12 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Phishing Database",
             "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-            "analysisTime": "2025-11-20 22:52 IST",
+            "analysisTime": "2025-11-21 00:09 IST",
             "tags": [
                 "phishing",
                 "live"
             ],
-            "addedAt": "2025-11-20T22:52:43.648508+05:30",
+            "addedAt": "2025-11-21T00:09:27.256945+05:30",
             "campaign": "Generic Phishing"
         },
         {
@@ -4558,12 +4558,12 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Phishing Database",
             "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-            "analysisTime": "2025-11-20 22:52 IST",
+            "analysisTime": "2025-11-21 00:09 IST",
             "tags": [
                 "phishing",
                 "live"
             ],
-            "addedAt": "2025-11-20T22:52:43.648508+05:30",
+            "addedAt": "2025-11-21T00:09:27.256945+05:30",
             "campaign": "Generic Phishing"
         },
         {
@@ -4573,12 +4573,12 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Phishing Database",
             "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-            "analysisTime": "2025-11-20 22:52 IST",
+            "analysisTime": "2025-11-21 00:09 IST",
             "tags": [
                 "phishing",
                 "live"
             ],
-            "addedAt": "2025-11-20T22:52:43.648508+05:30",
+            "addedAt": "2025-11-21T00:09:27.256945+05:30",
             "campaign": "Generic Phishing"
         },
         {
@@ -4588,12 +4588,12 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Phishing Database",
             "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-            "analysisTime": "2025-11-20 22:52 IST",
+            "analysisTime": "2025-11-21 00:09 IST",
             "tags": [
                 "phishing",
                 "live"
             ],
-            "addedAt": "2025-11-20T22:52:43.648508+05:30",
+            "addedAt": "2025-11-21T00:09:27.256945+05:30",
             "campaign": "Generic Phishing"
         },
         {
@@ -4603,12 +4603,12 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Phishing Database",
             "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-            "analysisTime": "2025-11-20 22:52 IST",
+            "analysisTime": "2025-11-21 00:09 IST",
             "tags": [
                 "phishing",
                 "live"
             ],
-            "addedAt": "2025-11-20T22:52:43.648508+05:30",
+            "addedAt": "2025-11-21T00:09:27.256945+05:30",
             "campaign": "Generic Phishing"
         },
         {
@@ -4618,12 +4618,12 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Phishing Database",
             "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-            "analysisTime": "2025-11-20 22:52 IST",
+            "analysisTime": "2025-11-21 00:09 IST",
             "tags": [
                 "phishing",
                 "live"
             ],
-            "addedAt": "2025-11-20T22:52:43.648508+05:30",
+            "addedAt": "2025-11-21T00:09:27.256945+05:30",
             "campaign": "Generic Phishing"
         },
         {
@@ -4633,12 +4633,12 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Phishing Database",
             "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-            "analysisTime": "2025-11-20 22:52 IST",
+            "analysisTime": "2025-11-21 00:09 IST",
             "tags": [
                 "phishing",
                 "live"
             ],
-            "addedAt": "2025-11-20T22:52:43.648508+05:30",
+            "addedAt": "2025-11-21T00:09:27.256945+05:30",
             "campaign": "Generic Phishing"
         },
         {
@@ -4648,12 +4648,12 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Phishing Database",
             "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-            "analysisTime": "2025-11-20 22:52 IST",
+            "analysisTime": "2025-11-21 00:09 IST",
             "tags": [
                 "phishing",
                 "live"
             ],
-            "addedAt": "2025-11-20T22:52:43.648508+05:30",
+            "addedAt": "2025-11-21T00:09:27.256945+05:30",
             "campaign": "Financial Phishing"
         },
         {
@@ -4663,12 +4663,12 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Phishing Database",
             "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-            "analysisTime": "2025-11-20 22:52 IST",
+            "analysisTime": "2025-11-21 00:09 IST",
             "tags": [
                 "phishing",
                 "live"
             ],
-            "addedAt": "2025-11-20T22:52:43.648508+05:30",
+            "addedAt": "2025-11-21T00:09:27.256945+05:30",
             "campaign": "Financial Phishing"
         },
         {
@@ -4678,12 +4678,12 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Phishing Database",
             "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-            "analysisTime": "2025-11-20 22:52 IST",
+            "analysisTime": "2025-11-21 00:09 IST",
             "tags": [
                 "phishing",
                 "live"
             ],
-            "addedAt": "2025-11-20T22:52:43.648508+05:30",
+            "addedAt": "2025-11-21T00:09:27.256945+05:30",
             "campaign": "Financial Phishing"
         },
         {
@@ -4693,12 +4693,12 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Phishing Database",
             "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-            "analysisTime": "2025-11-20 22:52 IST",
+            "analysisTime": "2025-11-21 00:09 IST",
             "tags": [
                 "phishing",
                 "live"
             ],
-            "addedAt": "2025-11-20T22:52:43.648508+05:30",
+            "addedAt": "2025-11-21T00:09:27.256945+05:30",
             "campaign": "Financial Phishing"
         },
         {
@@ -4708,12 +4708,12 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Phishing Database",
             "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-            "analysisTime": "2025-11-20 22:52 IST",
+            "analysisTime": "2025-11-21 00:09 IST",
             "tags": [
                 "phishing",
                 "live"
             ],
-            "addedAt": "2025-11-20T22:52:43.648508+05:30",
+            "addedAt": "2025-11-21T00:09:27.256945+05:30",
             "campaign": "Financial Phishing"
         },
         {
@@ -4723,12 +4723,12 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Phishing Database",
             "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-            "analysisTime": "2025-11-20 22:52 IST",
+            "analysisTime": "2025-11-21 00:09 IST",
             "tags": [
                 "phishing",
                 "live"
             ],
-            "addedAt": "2025-11-20T22:52:43.648508+05:30",
+            "addedAt": "2025-11-21T00:09:27.256945+05:30",
             "campaign": "Financial Phishing"
         },
         {
@@ -4738,12 +4738,12 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Phishing Database",
             "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-            "analysisTime": "2025-11-20 22:52 IST",
+            "analysisTime": "2025-11-21 00:09 IST",
             "tags": [
                 "phishing",
                 "live"
             ],
-            "addedAt": "2025-11-20T22:52:43.648508+05:30",
+            "addedAt": "2025-11-21T00:09:27.256945+05:30",
             "campaign": "Generic Phishing"
         },
         {
@@ -4753,12 +4753,12 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Phishing Database",
             "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-            "analysisTime": "2025-11-20 22:52 IST",
+            "analysisTime": "2025-11-21 00:09 IST",
             "tags": [
                 "phishing",
                 "live"
             ],
-            "addedAt": "2025-11-20T22:52:43.648508+05:30",
+            "addedAt": "2025-11-21T00:09:27.256945+05:30",
             "campaign": "Generic Phishing"
         },
         {
@@ -4768,12 +4768,12 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Phishing Database",
             "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-            "analysisTime": "2025-11-20 22:52 IST",
+            "analysisTime": "2025-11-21 00:09 IST",
             "tags": [
                 "phishing",
                 "live"
             ],
-            "addedAt": "2025-11-20T22:52:43.648508+05:30",
+            "addedAt": "2025-11-21T00:09:27.256945+05:30",
             "campaign": "Generic Phishing"
         },
         {
@@ -4783,12 +4783,12 @@ const threatIntelData = {
             "timestamp": "just now",
             "source": "Phishing Database",
             "sourceUrl": "https://github.com/mitchellkrogza/Phishing.Database",
-            "analysisTime": "2025-11-20 22:52 IST",
+            "analysisTime": "2025-11-21 00:09 IST",
             "tags": [
                 "phishing",
                 "live"
             ],
-            "addedAt": "2025-11-20T22:52:43.648508+05:30",
+            "addedAt": "2025-11-21T00:09:27.256945+05:30",
             "campaign": "Generic Phishing"
         }
     ],
@@ -4797,7 +4797,7 @@ const threatIntelData = {
             "totalIndicators": 294,
             "activeSources": 6,
             "criticalAlerts": 50,
-            "activeCampaigns": 10
+            "activeCampaigns": 9
         },
         "topThreats": [
             {
@@ -4889,27 +4889,27 @@ const threatIntelData = {
                 ]
             },
             {
-                "name": " \"n/a",
-                "count": 29,
+                "name": " \"Mirai",
+                "count": 37,
                 "types": [
                     "hash"
                 ],
                 "sampleIndicators": [
-                    " \"f537de2f844b1e24a1f29744ff459850a99ce22f1e5eeeeb09de99f7bdddb3a3",
-                    " \"1e4fbfd2d0e55900fa186a07514f75b7acfb7fc04d25fb9f61ba133fc49a49c7",
-                    " \"3e1cf5e7f30776bab5520876166d5359bbf5468e9d385cc4b076f302726ab0d6"
+                    " \"80c9a8df3155346edf2d313ed55a6aa4f2c878833fb3131def58e3915821ae24",
+                    " \"3099a76e043a4999cf46a2750ebfe9a179bc174c60d8d07ebeddcc09144be477",
+                    " \"ca6762c497c4eb066ddfb37d9649bd5a9f341aa4ec0a23280fa02465f46efc5c"
                 ]
             },
             {
-                "name": " \"Mirai",
-                "count": 10,
+                "name": " \"n/a",
+                "count": 7,
                 "types": [
                     "hash"
                 ],
                 "sampleIndicators": [
-                    " \"cad4d42f774b7f16affee2ce0114194426150c2c2a11bb47868cd60f73b70335",
-                    " \"f1ea87a7014f0d4b2e4cbf05bf567cacff710e68d748eb7bd3de6e1333d8b6de",
-                    " \"027512cd6d80b101272a64b60a372eaaec2221566479a3302ae90a8183db838d"
+                    " \"b6e9c0397a42fd116e7af45a99af2cc5ff23e48e429e04dd411bea39e9fbb6c9",
+                    " \"9d6d82d3abe564e3c53479810dc64a25a9406b7c2daee450f63d2591485ed5b5",
+                    " \"f7529ff0fed047ced5b5c9d4615c5a9d4df1219ec773a5b23a6f274135f38536"
                 ]
             },
             {
@@ -4925,37 +4925,26 @@ const threatIntelData = {
                 ]
             },
             {
-                "name": " \"Formbook",
+                "name": " \"Gafgyt",
                 "count": 3,
                 "types": [
                     "hash"
                 ],
                 "sampleIndicators": [
-                    " \"af3bf0af39c484086efb44eef2f4805c15330c04922723975613c8740be30ff2",
-                    " \"c376c4e61cc12233ee7a86336078c76ddb2f5029a54b0153253e90e66f7414f3",
-                    " \"221f0dfce9d3d8c7aa9489cf39a02fedbeed7837120338cdf77f3c5168bc021d"
+                    " \"097c5d1150cdc2ca2e1382f7ac7181eb0384f453b7a0bf5910995c1dee7d9527",
+                    " \"a26f6601ed352204ac89323007b476494e66994e51fcfa74d154e45b7a65830d",
+                    " \"407eb17af12c371aea97cf9469ed35873ff390bfd8852cb884fa9b0694ed8887"
                 ]
             },
             {
-                "name": " \"ConnectWise",
+                "name": " \"Formbook",
                 "count": 2,
                 "types": [
                     "hash"
                 ],
                 "sampleIndicators": [
-                    " \"36b7574ed8d60e593da8b0ce5de4e1dc5bc19904b68b262e06ff43872c6a297e",
-                    " \"dc34175b45f57791641459d653af0b2ab1ce4387e8b15f914d33de443e1bbea7"
-                ]
-            },
-            {
-                "name": " \"ValleyRAT",
-                "count": 2,
-                "types": [
-                    "hash"
-                ],
-                "sampleIndicators": [
-                    " \"58b2d3d5d53877494e8ebcc07fe3b5bb0b50e3501e6aa46c8e84ccdacab1d818",
-                    " \"968605accef9bd3d2629e948f50b1fc438e849d6557172eb19cfeafcd925d84e"
+                    " \"2fc9d598df29de6d42f1cf1ce23a703deccdee4760f9b55ce5ec270eaf32c080",
+                    " \"358d06a51a4b49be6fdf7c2684cff3ca2c1ed6b1b161de7fa8a93085d46e6257"
                 ]
             }
         ]
@@ -4963,8 +4952,8 @@ const threatIntelData = {
     "snapshotMetrics": {
         "topAttackVector": "Malicious IPs",
         "mostTargetedRegion": "North America",
-        "fastestRisingThreat": "No significant changes",
+        "fastestRisingThreat": " \"Mirai",
         "totalAttacksThisHour": 294,
-        "lastCalculated": "2025-11-20 22:52 IST"
+        "lastCalculated": "2025-11-21 00:09 IST"
     }
 };
