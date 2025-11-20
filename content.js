@@ -4,83 +4,76 @@
 var websiteContent = {
     "cyberShorts": [
         {
-            "date": "Nov 19 2025",
-            "title": "California Resident Pleads Guilty in $230M Crypto Laundering Case",
-            "content": "A 45-year-old man from Irvine, California, has admitted to laundering $25 million as part of a massive $230 million cryptocurrency heist. The individual was involved in converting stolen digital assets into legitimate funds, complicating efforts to trace the illicit gains. This case highlights the ongoing challenges in tracking and prosecuting cryptocurrency-related crimes, which often involve complex international networks. For cybersecurity professionals, this incident underscores the importance of robust blockchain analysis tools and international cooperation in combating financial cybercrime. The case also serves as a reminder of the vulnerabilities inherent in digital currencies, prompting a reevaluation of security measures in crypto exchanges.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/california-man-admits-to-laundering-crypto-stolen-in-230m-heist/"
-        },
-        {
-            "date": "Nov 19 2025",
-            "title": "Combating AI-Enhanced Phishing Threats",
-            "content": "The integration of artificial intelligence into phishing schemes has significantly increased the sophistication and scale of cyberattacks. Cybercriminals now operate with the efficiency of large marketing firms, focusing on account takeovers, data theft, and identity fraud. This development poses a serious threat to organizations, necessitating advanced security strategies to detect and mitigate AI-driven phishing attempts. Security professionals are advised to enhance their defenses by employing AI-based detection systems and training employees to recognize sophisticated phishing tactics. The rise of AI in cybercrime emphasizes the need for continuous innovation in cybersecurity measures to protect sensitive information and maintain trust.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/ai-is-supercharging-phishing-heres-how-to-fight-back/"
-        },
-        {
-            "date": "Nov 19 2025",
-            "title": "Enhancing Security with Application Ringfencing",
-            "content": "Security leaders are facing the daunting task of securing environments where failure is not an option. Traditional security measures like Endpoint Detection and Response (EDR) are proving insufficient as they react to threats after they infiltrate networks. Application ringfencing offers a proactive approach by preventing the weaponization of trusted software, thus enhancing overall security posture. This method involves restricting applications to perform only expected actions, reducing the risk of exploitation. For cybersecurity professionals, adopting ringfencing can significantly minimize attack surfaces and enhance resilience against sophisticated threats, making it a crucial strategy in modern security frameworks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/11/application-containment-how-to-use.html"
-        },
-        {
-            "date": "Nov 19 2025",
-            "title": "Aisuru Botnet Fuels Record-Breaking Azure DDoS Attack",
-            "content": "Microsoft has reported a record-breaking Distributed Denial of Service (DDoS) attack targeting an endpoint in Australia, powered by the Aisuru Botnet. The attack reached a staggering 15.72 Tbps and 3.64 Bpps, marking it as the largest ever recorded on the Azure platform. This incident highlights the growing threat of botnets and the need for robust DDoS protection measures. For IT and security professionals, it underscores the importance of implementing comprehensive threat detection and mitigation strategies to safeguard critical infrastructure. The attack&#x27;s scale serves as a stark reminder of the evolving capabilities of cybercriminals and the necessity for continuous adaptation in defense mechanisms.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/largest-azure-ddos-attack-powered-by-aisuru-botnet/"
-        },
-        {
-            "date": "Nov 19 2025",
-            "title": "Database Issues Trigger Major Cloudflare Outage",
-            "content": "Cloudflare suffered its most significant outage in six years, affecting numerous websites and online platforms for nearly six hours. The disruption was caused by a change in database access controls, which led to a cascading failure across its Global Network. This incident highlights the critical role of proper configuration management and the potential impact of minor changes on large-scale networks. For IT professionals, the outage serves as a cautionary tale about the importance of rigorous testing and validation of changes in network infrastructure. It also emphasizes the need for robust incident response plans to quickly address and mitigate the effects of such widespread disruptions.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/technology/cloudflare-blames-this-weeks-massive-outage-on-database-issues/"
-        },
-        {
-            "date": "Nov 19 2025",
-            "title": "ISC Stormcast Highlights Key Cybersecurity Developments",
-            "content": "The latest ISC Stormcast podcast for November 19th, 2025, provides insights into recent cybersecurity trends and threats. Hosted by the SANS Internet Storm Center, the podcast offers updates on vulnerability disclosures, emerging threats, and security best practices. The InfoCON level remains green, indicating a stable threat environment. This resource is crucial for cybersecurity professionals seeking to stay informed about potential risks and defensive strategies. The podcast&#x27;s comprehensive analysis helps organizations prepare for and mitigate cyber threats effectively. Regular updates from ISC are essential for maintaining robust cybersecurity postures in an ever-evolving landscape.",
+            "date": "Nov 20 2025",
+            "title": "November 20th ISC Stormcast Highlights Latest Cyber Threats",
+            "content": "The SANS Internet Storm Center&#x27;s latest Stormcast for November 20th provides an overview of current cybersecurity threats and trends. Known for its concise yet comprehensive updates, the Stormcast covers a range of issues including emerging vulnerabilities, malware developments, and shifts in attacker tactics. This regular update serves as a crucial resource for IT professionals seeking to stay informed about the evolving threat landscape. By highlighting real-time data and expert analysis, it offers actionable insights to help organizations bolster their defenses. The InfoCON remains at green, indicating a relatively stable threat environment, but vigilance is advised.",
             "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32500"
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32504"
+        },
+        {
+            "date": "Nov 19 2025",
+            "title": "Fortinet Faces Scrutiny Over New WAF Zero-Day Vulnerability",
+            "content": "Fortinet&#x27;s web application firewall (WAF) products are under fire once again as a second zero-day vulnerability has been identified and exploited in the wild. This revelation raises significant concerns about Fortinet&#x27;s vulnerability disclosure practices and the security of their products. The flaw allows attackers to bypass security measures, posing a substantial risk to organizations relying on these firewalls for protection. Security professionals are urged to monitor Fortinet&#x27;s updates closely and implement any available patches to mitigate potential threats. This incident underscores the critical need for transparency and swift action in vulnerability management to protect enterprise networks.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/fortinet-woes-continue-another-waf-zero-day-flaw"
+        },
+        {
+            "date": "Nov 19 2025",
+            "title": "Global Data Laws Pose Cybersecurity Challenges for Corporations",
+            "content": "The complexity of navigating international data laws is presenting cybersecurity challenges for large organizations. As companies operate across borders, they must comply with a patchwork of regulations, which can lead to fragmented and potentially vulnerable systems. This issue is particularly pressing as inconsistent legal requirements may force organizations to adopt disparate security measures, increasing the risk of cyber incidents. Security professionals need to develop strategies that harmonize compliance efforts while ensuring robust protection against threats. Understanding the interplay between legal obligations and cybersecurity is crucial for safeguarding sensitive data in a globalized business environment.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/national-data-laws-cyber-risks-large-orgs"
+        },
+        {
+            "date": "Nov 19 2025",
+            "title": "Sneaky2FA PhaaS Kit Incorporates Advanced Browser-in-the-Browser Attacks",
+            "content": "The Sneaky2FA phishing-as-a-service (PhaaS) kit has been upgraded to include Browser-in-the-Browser (BitB) attack capabilities, enhancing its deception techniques. This addition allows cybercriminals to create highly convincing fake browser windows, tricking users into revealing sensitive information. The integration of BitB attacks makes Sneaky2FA a more potent tool for executing phishing campaigns, posing a heightened threat to online security. Security professionals need to be aware of these advanced tactics and educate users about recognizing such sophisticated phishing attempts. The evolution of PhaaS kits like Sneaky2FA highlights the continuous innovation in cybercriminal methods, necessitating proactive defense strategies.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/sneaky2fa-phaas-kit-now-uses-redteamers-browser-in-the-browser-attack/"
+        },
+        {
+            "date": "Nov 19 2025",
+            "title": "AI Agents: A New Frontier in Cybersecurity Risks",
+            "content": "Recent research has exposed vulnerabilities in agentic AI systems, revealing how they can be hijacked to subvert intended goals and compromise entire networks. The study highlights how malicious actors can manipulate AI agent interactions, posing a significant threat to organizations that rely on these technologies. As AI becomes more integrated into business operations, understanding and mitigating these risks is crucial for maintaining security. This development calls for enhanced security protocols and monitoring to protect AI systems from being exploited. For cybersecurity professionals, the findings underscore the importance of staying ahead of emerging threats in the AI landscape.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/application-security/ai-attack-surface-agents-cyber-stakes"
         }
     ],
     "aiShorts": [
         {
             "date": "Nov 19 2025",
-            "title": "Lovable&#x27;s European Roots Fuel $200M ARR Milestone",
-            "content": "Lovable, an AI coding company, has reached an impressive $200 million in annual recurring revenue (ARR). CEO Anton Osika attributes this success to the company&#x27;s decision to remain headquartered in Europe, despite advice to relocate to Silicon Valley. By staying in Europe, Lovable has been able to foster a unique company culture and tap into a diverse talent pool, which Osika believes has been instrumental in its growth. This decision highlights the potential for AI companies to thrive outside of traditional tech hubs. For AI professionals, Lovable&#x27;s success story underscores the importance of strategic location choices and cultural alignment in scaling tech ventures.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/19/as-lovable-hits-200m-arr-its-ceo-credits-staying-in-europe-for-its-success/"
+            "title": "Nvidia&#x27;s $57B Revenue Boosts Confidence in AI Market",
+            "content": "Nvidia has reported a record-breaking $57 billion in revenue, largely driven by its data center business, which has become a cornerstone of its financial success. This impressive performance has helped quell concerns about a potential AI bubble, as the company continues to demonstrate strong demand for its AI and data processing capabilities. The results highlight Nvidia&#x27;s pivotal role in powering AI technologies across various sectors, reinforcing its position as a leader in the industry. For AI professionals, this underscores the growing importance of robust data center infrastructures to support AI workloads. Nvidia&#x27;s success also reflects the broader trend of increasing investment in AI technologies, which is likely to spur further innovation and development in the field.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/19/nvidias-record-57b-revenue-and-upbeat-forecast-quiets-ai-bubble-talk/"
         },
         {
             "date": "Nov 19 2025",
-            "title": "Quantum Physicists Unveil Uncensored DeepSeek R1 Model",
-            "content": "A team of quantum physicists from Multiverse Computing has developed a modified version of the DeepSeek R1 AI model, which removes the original censorship imposed by its Chinese creators. This Spanish firm, known for its quantum-inspired AI techniques, aims to provide a more transparent and versatile tool for reasoning tasks. By stripping away the censorship, the new model could offer enhanced flexibility and application potential across various domains. This development is significant for AI professionals seeking more adaptable models that adhere to open-source principles. It also raises important discussions on the balance between control and freedom in AI technology.",
-            "source": "Artificial intelligence – MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2025/11/19/1128119/quantum-physicists-compress-and-deconsor-deepseekr1/"
+            "title": "VC Insights: Standing Out in the Crowded AI Market",
+            "content": "Venture capitalist Jennifer Neundorfer offers insights into how startup founders can distinguish themselves in the increasingly saturated AI market. Her firm, January Ventures, is exploring AI applications to enhance their operational efficiency, including due diligence processes for market and competition analysis. This approach highlights the dual role AI plays in both product development and operational strategy for startups. For AI professionals and entrepreneurs, Neundorfer&#x27;s perspective emphasizes the importance of integrating AI not just in products but also in business processes to gain a competitive edge. As the AI landscape becomes more competitive, leveraging AI for strategic advantage becomes crucial for success.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/19/vc-jennifer-neundorfer-explains-how-founders-can-stand-out-in-a-crowded-ai-market/"
         },
         {
             "date": "Nov 19 2025",
-            "title": "Gartner Summit Highlights AI&#x27;s Growing Role in Business Decisions",
-            "content": "The Gartner Data &amp; Analytics Summit has announced an expanded AI agenda for 2026, emphasizing the increasing role of AI in business decision-making. By 2027, it is projected that AI agents will augment or automate half of all business decisions, marking a substantial shift in organizational operations. AI leaders are now tasked with navigating this complexity, driving innovation, and guiding teams through these changes. For professionals in the field, this evolution underscores the need to develop robust AI strategies that align with business objectives. The summit serves as a critical platform for discussing these trends and preparing for the future of AI in business.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/gartner-data-analytics-summit-unveils-expanded-ai-agenda-for-2026/"
+            "title": "Function Health Secures $298M to Transform Health Data Utilization",
+            "content": "Function Health has successfully raised $298 million in a Series B funding round, valuing the company at $2.5 billion. The company aims to revolutionize how health data, from electronic records to wearable device outputs, is utilized to improve personal health outcomes. This funding injection will support Function Health&#x27;s mission to bridge the gap between data generation and actionable health insights. For AI and health tech professionals, this development signifies the growing importance of AI in making sense of vast amounts of health data. As the healthcare industry continues to digitize, the ability to effectively analyze and apply data-driven insights will be a key differentiator.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/19/function-health-closes-298m-series-b-at-a-2-5b-valuation-launches-medical-intelligence/"
         },
         {
             "date": "Nov 19 2025",
-            "title": "OpenAI and Target Collaborate on AI-Enhanced Shopping Experiences",
-            "content": "OpenAI and Target have announced a partnership to integrate new AI-powered features into Target&#x27;s shopping app via ChatGPT. This collaboration will offer personalized shopping experiences and streamline the checkout process. Additionally, Target plans to expand its use of ChatGPT Enterprise to improve productivity and enhance guest interactions. For AI and retail professionals, this partnership exemplifies the transformative potential of AI in consumer engagement and operational efficiency. It highlights the growing trend of leveraging AI to provide tailored services and optimize business processes, setting a precedent for future collaborations in the retail sector.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/target-partnership"
+            "title": "Warner Music Partners with Udio for AI-Driven Music Platform",
+            "content": "Warner Music has reached a settlement with Udio over a copyright lawsuit and signed a deal to collaborate on an AI music platform. This platform will enable users to create remixes, covers, and new songs using the voices of participating artists and the compositions of songwriters. This agreement marks a significant step in integrating AI with creative processes in the music industry. For AI and music professionals, this development highlights the potential of AI to transform music creation and distribution. The collaboration also raises important considerations around intellectual property rights and the ethical use of AI in creative industries.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/19/warner-music-settles-copyright-lawsuit-with-udio-signs-deal-for-ai-music-platform/"
         },
         {
             "date": "Nov 19 2025",
-            "title": "TikTok Introduces User Control Over AI-Generated Content",
-            "content": "TikTok has launched a new feature allowing users to adjust their exposure to AI-generated content. This update provides users with the flexibility to either increase or decrease the amount of AI-driven content they see, catering to diverse user preferences. For AI professionals, this development is noteworthy as it reflects the growing consumer demand for personalized content experiences. It also raises considerations about user autonomy and the ethical implications of AI in content curation. By offering this control, TikTok is responding to the need for transparency and user empowerment in digital content consumption.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/18/tiktok-now-lets-you-choose-how-much-ai-generated-content-you-want-to-see/"
+            "title": "OpenAI Unveils Advanced GPT‑5.1-Codex-Max for Software Engineering",
+            "content": "OpenAI has launched GPT‑5.1-Codex-Max, an advanced coding model designed to enhance AI-assisted software development. This new model offers improved long-horizon reasoning, efficiency, and real-time interactive capabilities within the Codex developer environment. The release represents a significant advancement in AI&#x27;s role in software engineering, providing developers with powerful tools to streamline coding tasks. For software engineers and AI professionals, GPT‑5.1-Codex-Max promises to boost productivity and innovation by automating complex coding processes. This development underscores the growing influence of AI in transforming traditional software development practices and enhancing the capabilities of developers.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/ai/openai-debuts-gpt-5-1-codex-max-coding-model-and-it-already-completed-a-24"
         }
     ],
     "articles": {
@@ -357,6 +350,16 @@ var websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2025-13223",
+            "dateAdded": "Nov 19, 2025",
+            "vendor": "Google Chromium V8",
+            "description": "Google Chromium V8 contains a type confusion vulnerability that allows for heap corruption.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-13223"
+        },
         {
             "cveId": "CVE-2025-58034",
             "dateAdded": "Nov 18, 2025",
