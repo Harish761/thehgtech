@@ -789,6 +789,58 @@
                 </div>
             </div>
 
+            <!-- Search & Filter Controls -->
+            <div class="search-controls"
+                style="margin: 2rem 0; padding: 1.5rem; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 12px;">
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
+                    <input type="text" id="iocSearch" placeholder="🔍 Search IOCs (URL, IP, hash, campaign...)"
+                        style="flex: 1; min-width: 300px; padding: 0.75rem 1rem; background: var(--glass); border: 1px solid var(--border); border-radius: 8px; color: var(--text-primary); font-size: 0.95rem;">
+                    <div class="filter-chips" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <button class="filter-chip active" data-filter="all" onclick="setFilter('all')"
+                            style="padding: 0.5rem 1rem; background: var(--accent-cyan); border: none; border-radius: 6px; color: white; cursor: pointer; font-weight: 600; font-size: 0.85rem;">All</button>
+                        <button class="filter-chip" data-filter="url" onclick="setFilter('url')"
+                            style="padding: 0.5rem 1rem; background: var(--glass); border: 1px solid var(--border); border-radius: 6px; color: var(--text-secondary); cursor: pointer; font-weight: 600; font-size: 0.85rem;">URLs</button>
+                        <button class="filter-chip" data-filter="ip" onclick="setFilter('ip')"
+                            style="padding: 0.5rem 1rem; background: var(--glass); border: 1px solid var(--border); border-radius: 6px; color: var(--text-secondary); cursor: pointer; font-weight: 600; font-size: 0.85rem;">IPs</button>
+                        <button class="filter-chip" data-filter="hash" onclick="setFilter('hash')"
+                            style="padding: 0.5rem 1rem; background: var(--glass); border: 1px solid var(--border); border-radius: 6px; color: var(--text-secondary); cursor: pointer; font-weight: 600; font-size: 0.85rem;">Hashes</button>
+                    </div>
+                    <div id="searchResults" style="color: var(--text-muted); font-size: 0.9rem;"></div>
+                </div>
+            </div>
+
+            <!-- Statistics Dashboard -->
+            <div class="stats-dashboard"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+                <div class="stat-card"
+                    style="background: linear-gradient(135deg, rgba(0, 217, 255, 0.1), rgba(0, 217, 255, 0.05)); border: 1px solid rgba(0, 217, 255, 0.2); border-radius: 12px; padding: 1.5rem; text-align: center;">
+                    <h3 style="margin: 0 0 0.5rem 0; color: var(--text-muted); font-size: 0.9rem; font-weight: 600;">
+                        Total IOCs</h3>
+                    <div class="stat-value" id="totalIOCs"
+                        style="font-size: 2.5rem; font-weight: 700; color: var(--accent-cyan);">0</div>
+                </div>
+                <div class="stat-card"
+                    style="background: linear-gradient(135deg, rgba(255, 76, 76, 0.1), rgba(255, 76, 76, 0.05)); border: 1px solid rgba(255, 76, 76, 0.2); border-radius: 12px; padding: 1.5rem; text-align: center;">
+                    <h3 style="margin: 0 0 0.5rem 0; color: var(--text-muted); font-size: 0.9rem; font-weight: 600;">New
+                        (Last Hour)</h3>
+                    <div class="stat-value" id="newIOCs"
+                        style="font-size: 2.5rem; font-weight: 700; color: var(--accent-red);">0</div>
+                </div>
+                <div class="stat-card"
+                    style="background: linear-gradient(135deg, rgba(0, 255, 136, 0.1), rgba(0, 255, 136, 0.05)); border: 1px solid rgba(0, 255, 136, 0.2); border-radius: 12px; padding: 1.5rem; text-align: center;">
+                    <h3 style="margin: 0 0 0.5rem 0; color: var(--text-muted); font-size: 0.9rem; font-weight: 600;">
+                        Active Campaigns</h3>
+                    <div class="stat-value" id="activeCampaigns"
+                        style="font-size: 2.5rem; font-weight: 700; color: var(--accent-green);">0</div>
+                </div>
+                <div class="stat-card"
+                    style="background: linear-gradient(135deg, rgba(255, 165, 0, 0.1), rgba(255, 165, 0, 0.05)); border: 1px solid rgba(255, 165, 0, 0.2); border-radius: 12px; padding: 1.5rem; text-align: center;">
+                    <h3 style="margin: 0 0 0.5rem 0; color: var(--text-muted); font-size: 0.9rem; font-weight: 600;">
+                        Vendors Active</h3>
+                    <div class="stat-value" style="font-size: 2.5rem; font-weight: 700; color: #ffa500;">6/6</div>
+                </div>
+            </div>
+
             <!-- Static Snapshot Container (SEO-friendly, loads first) -->
             <div id="staticSnapshotContainer" style="margin: 2rem 0;">
                 <!-- This will be populated with static HTML from ti-snapshot.html -->
@@ -837,6 +889,33 @@
             </div>
         </div>
     </main>
+
+    <!-- IOC Details Modal -->
+    <div id="iocModal"
+        style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); overflow: auto;">
+        <div
+            style="background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end)); margin: 5% auto; padding: 0; border: 1px solid var(--accent-cyan); border-radius: 12px; width: 90%; max-width: 600px; box-shadow: 0 10px 40px rgba(0, 217, 255, 0.3);">
+            <div
+                style="padding: 1.5rem; border-bottom: 1px solid rgba(255, 255, 255, 0.1); display: flex; justify-content: space-between; align-items: center;">
+                <h2 style="margin: 0; color: var(--accent-cyan); font-size: 1.3rem;">IOC Details</h2>
+                <span onclick="closeModal()"
+                    style="color: var(--text-muted); font-size: 2rem; font-weight: bold; cursor: pointer; transition: color 0.3s;">&times;</span>
+            </div>
+            <div id="modalBody" style="padding: 2rem;"></div>
+            <div
+                style="padding: 1.5rem; border-top: 1px solid rgba(255, 255, 255, 0.1); display: flex; gap: 1rem; flex-wrap: wrap;">
+                <button onclick="copyIOC()"
+                    style="flex: 1; min-width: 120px; padding: 0.75rem 1.5rem; background: var(--accent-cyan); border: none; border-radius: 8px; color: white; font-weight: 600; cursor: pointer; transition: all 0.3s;">📋
+                    Copy</button>
+                <a id="vtLink" target="_blank"
+                    style="flex: 1; min-width: 120px; padding: 0.75rem 1.5rem; background: var(--glass); border: 1px solid var(--border); border-radius: 8px; color: var(--text-primary); font-weight: 600; text-align: center; text-decoration: none; transition: all 0.3s;">🔍
+                    VirusTotal</a>
+                <a id="abuseLink" target="_blank"
+                    style="flex: 1; min-width: 120px; padding: 0.75rem 1.5rem; background: var(--glass); border: 1px solid var(--border); border-radius: 8px; color: var(--text-primary); font-weight: 600; text-align: center; text-decoration: none; transition: all 0.3s;">🚨
+                    AbuseIPDB</a>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -908,6 +987,9 @@
 
             // Load analytics
             loadAnalytics(data);
+
+            // Generate statistics for dashboard
+            generateStatistics();
         }
 
         // Create vendor tabs
@@ -1002,8 +1084,16 @@
 
             let html = `
                 <div class="vendor-info">
-                    <h3>${vendorName}</h3>
-                    <p>${vendorData.description || ''}</p>
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                        <div>
+                            <h3>${vendorName}</h3>
+                            <p>${vendorData.description || ''}</p>
+                        </div>
+                        <div style="display: flex; gap: 0.5rem;">
+                            <button onclick="exportVendorData('${vendorName}', 'csv')" style="padding: 0.5rem 1rem; background: var(--accent-cyan); border: none; border-radius: 6px; color: white; font-weight: 600; cursor: pointer; font-size: 0.85rem; transition: all 0.3s;">📥 CSV</button>
+                            <button onclick="exportVendorData('${vendorName}', 'json')" style="padding: 0.5rem 1rem; background: var(--glass); border: 1px solid var(--border); border-radius: 6px; color: var(--text-primary); font-weight: 600; cursor: pointer; font-size: 0.85rem; transition: all 0.3s;">📥 JSON</button>
+                        </div>
+                    </div>
                     <div class="vendor-stats">
                         <div class="vendor-stat">
                             <span class="vendor-stat-value">${stats.total || 0}</span>
@@ -1047,6 +1137,235 @@
                 </div>
             `;
         }
+
+        // ========================================
+        // QUICK WIN FEATURES
+        // ========================================
+
+        // Global variables for search/filter
+        let currentSearchTerm = '';
+        let currentTypeFilter = 'all';
+        let currentModalIOC = null;
+
+        // Search/Filter functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchInput = document.getElementById('iocSearch');
+            if (searchInput) {
+                searchInput.addEventListener('input', (e) => {
+                    currentSearchTerm = e.target.value;
+                    applyFilters();
+                });
+            }
+        });
+
+        function setFilter(type) {
+            currentTypeFilter = type;
+
+            // Update button styles
+            document.querySelectorAll('.filter-chip').forEach(btn => {
+                btn.classList.remove('active');
+                btn.style.background = 'var(--glass)';
+                btn.style.border = '1px solid var(--border)';
+                btn.style.color = 'var(--text-secondary)';
+            });
+
+            event.target.classList.add('active');
+            event.target.style.background = 'var(--accent-cyan)';
+            event.target.style.border = 'none';
+            event.target.style.color = 'white';
+
+            applyFilters();
+        }
+
+        function applyFilters() {
+            const cards = document.querySelectorAll('.ioc-card');
+            let visibleCount = 0;
+
+            cards.forEach(card => {
+                const text = card.textContent.toLowerCase();
+                const typeSpan = card.querySelector('.ioc-type');
+                const type = typeSpan ? typeSpan.textContent.toLowerCase() : '';
+
+                const matchesSearch = !currentSearchTerm || text.includes(currentSearchTerm.toLowerCase());
+                const matchesType = currentTypeFilter === 'all' || type.includes(currentTypeFilter);
+
+                if (matchesSearch && matchesType) {
+                    card.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            // Update search results count
+            const resultsDiv = document.getElementById('searchResults');
+            if (resultsDiv) {
+                resultsDiv.textContent = `Showing ${visibleCount} of ${cards.length} IOCs`;
+            }
+        }
+
+        // Export functionality
+        function exportVendorData(vendor, format) {
+            if (!threatIntelData || !threatIntelData.vendors || !threatIntelData.vendors[vendor]) {
+                alert('No data available for ' + vendor);
+                return;
+            }
+
+            const data = threatIntelData.vendors[vendor].iocs;
+
+            if (format === 'csv') {
+                const csv = convertToCSV(data);
+                downloadFile(csv, `${vendor}_IOCs_${new Date().toISOString().split('T')[0]}.csv`, 'text/csv');
+            } else if (format === 'json') {
+                const json = JSON.stringify(data, null, 2);
+                downloadFile(json, `${vendor}_IOCs_${new Date().toISOString().split('T')[0]}.json`, 'application/json');
+            }
+        }
+
+        function convertToCSV(iocs) {
+            const headers = ['Type', 'Indicator', 'Description', 'Timestamp', 'Source', 'Tags', 'Campaign'];
+            const rows = iocs.map(ioc => [
+                ioc.type || '',
+                ioc.indicator || '',
+                (ioc.description || '').replace(/,/g, ';'),
+                ioc.timestamp || '',
+                ioc.source || '',
+                (ioc.tags || []).join(';'),
+                (ioc.campaign || '').replace(/,/g, ';')
+            ]);
+
+            const csvContent = [
+                headers.join(','),
+                ...rows.map(row => row.map(cell => `"${cell}"`).join(','))
+            ].join('\n');
+
+            return csvContent;
+        }
+
+        function downloadFile(content, filename, mimeType) {
+            const blob = new Blob([content], { type: mimeType });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        // IOC Details Modal
+        function showIOCDetails(ioc) {
+            currentModalIOC = ioc;
+            const modal = document.getElementById('iocModal');
+            const modalBody = document.getElementById('modalBody');
+
+            modalBody.innerHTML = `
+                <div style="margin-bottom: 1.5rem;">
+                    <h3 style="color: var(--accent-cyan); margin: 0 0 0.5rem 0; font-size: 1.1rem;">Indicator</h3>
+                    <p style="margin: 0; color: var(--text-primary); font-family: monospace; font-size: 1.1rem; word-break: break-all;">${ioc.indicator || 'N/A'}</p>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1.5rem;">
+                    <div>
+                        <h4 style="color: var(--text-muted); margin: 0 0 0.5rem 0; font-size: 0.9rem;">Type</h4>
+                        <p style="margin: 0; color: var(--text-primary);">${ioc.type || 'Unknown'}</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--text-muted); margin: 0 0 0.5rem 0; font-size: 0.9rem;">Source</h4>
+                        <p style="margin: 0; color: var(--text-primary);">${ioc.source || 'Unknown'}</p>
+                    </div>
+                </div>
+                <div style="margin-bottom: 1.5rem;">
+                    <h4 style="color: var(--text-muted); margin: 0 0 0.5rem 0; font-size: 0.9rem;">Description</h4>
+                    <p style="margin: 0; color: var(--text-primary);">${ioc.description || 'No description available'}</p>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin-bottom: 1.5rem;">
+                    <div>
+                        <h4 style="color: var(--text-muted); margin: 0 0 0.5rem 0; font-size: 0.9rem;">Timestamp</h4>
+                        <p style="margin: 0; color: var(--text-primary); font-size: 0.9rem;">${ioc.timestamp || 'Unknown'}</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--text-muted); margin: 0 0 0.5rem 0; font-size: 0.9rem;">Campaign</h4>
+                        <p style="margin: 0; color: var(--text-primary); font-size: 0.9rem;">${ioc.campaign || 'Unknown'}</p>
+                    </div>
+                </div>
+                <div>
+                    <h4 style="color: var(--text-muted); margin: 0 0 0.5rem 0; font-size: 0.9rem;">Tags</h4>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        ${(ioc.tags || []).map(tag => `<span style="padding: 0.25rem 0.75rem; background: rgba(0, 217, 255, 0.1); border: 1px solid rgba(0, 217, 255, 0.3); border-radius: 4px; color: var(--accent-cyan); font-size: 0.85rem;">${tag}</span>`).join('')}
+                    </div>
+                </div>
+            `;
+
+            // Set external links
+            const cleanIndicator = (ioc.indicator || '').replace(/\[|\]|\./g, '');
+            document.getElementById('vtLink').href = `https://www.virustotal.com/gui/search/${encodeURIComponent(cleanIndicator)}`;
+            document.getElementById('abuseLink').href = `https://www.abuseipdb.com/check/${encodeURIComponent(cleanIndicator)}`;
+
+            modal.style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('iocModal').style.display = 'none';
+            currentModalIOC = null;
+        }
+
+        function copyIOC() {
+            if (currentModalIOC && currentModalIOC.indicator) {
+                navigator.clipboard.writeText(currentModalIOC.indicator).then(() => {
+                    alert('IOC copied to clipboard!');
+                }).catch(err => {
+                    console.error('Failed to copy:', err);
+                });
+            }
+        }
+
+        // Close modal on outside click
+        window.onclick = function (event) {
+            const modal = document.getElementById('iocModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+
+        // Statistics Dashboard
+        function generateStatistics() {
+            if (!threatIntelData || !threatIntelData.vendors) return;
+
+            let totalIOCs = 0;
+            let newIOCs = 0;
+            const campaigns = new Set();
+
+            Object.values(threatIntelData.vendors).forEach(vendor => {
+                if (vendor.iocs) {
+                    vendor.iocs.forEach(ioc => {
+                        totalIOCs++;
+                        if (ioc.tags && (ioc.tags.includes('NEW') || ioc.tags.includes('new'))) {
+                            newIOCs++;
+                        }
+                        if (ioc.campaign) {
+                            campaigns.add(ioc.campaign);
+                        }
+                    });
+                }
+            });
+
+            document.getElementById('totalIOCs').textContent = totalIOCs.toLocaleString();
+            document.getElementById('newIOCs').textContent = newIOCs.toLocaleString();
+            document.getElementById('activeCampaigns').textContent = campaigns.size.toLocaleString();
+        }
+
+        // Update renderIOCCard to add click handler
+        const originalRenderIOCCard = renderIOCCard;
+        renderIOCCard = function (ioc) {
+            const cardHTML = originalRenderIOCCard(ioc);
+            // Add onclick to the card
+            return cardHTML.replace('<div class="ioc-card">', `<div class="ioc-card" onclick='showIOCDetails(${JSON.stringify(ioc).replace(/'/g, "\\'")})'  style="cursor: pointer;">`);
+        }
+
+        // ========================================
+        // END QUICK WIN FEATURES
+        // ========================================
 
         // Load analytics
         function loadAnalytics(data) {
