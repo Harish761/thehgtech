@@ -4,11 +4,11 @@ Enhanced Threat Intel Automation - Multi-Vendor Dashboard
 ---------------------------------------------------------
 Pulls from 6 reputable security sources with per-vendor tracking:
   • OpenPhish (phishing URLs)
-  • URLhaus (malware distribution URLs)
-  • ThreatFox (mixed IOCs - URLs, IPs, hashes)
-  • Feodo Tracker (botnet C2 IPs)
+  • Malware Bazaar (malware samples, hashes, URLs)
+  • Spamhaus DROP (hijacked IP ranges)
+  • CINS Army (malicious IPs)
   • Blocklist.de (SSH/brute force attackers)
-  • SSL Blacklist (malicious SSL certs)
+  • Phishing Database (active phishing URLs)
 
 Features:
   • 50 IOCs per vendor (300 total)
@@ -16,13 +16,13 @@ Features:
   • RECENT tag for IOCs 1-6 hours old
   • Hourly data updates, daily analytics
   • Overview tab with aggregated view
+  • All feeds work without API keys (GitHub Actions safe)
 """
 
 import os
 import sys
 import json
 import time
-import feedparser
 from datetime import datetime, timedelta, timezone
 from urllib.parse import urlparse
 import re
@@ -48,8 +48,8 @@ IST = timezone(timedelta(hours=5, minutes=30))
 # Threat Categories
 CATEGORIES = ['Phishing', 'Malware', 'C2', 'Botnet']
 
-# Enhanced RSS Feeds (6 vendors)
-RSS_FEEDS = {
+# Enhanced Threat Intel Feeds (6 vendors - all RSS/public, no API keys)
+VENDORS = {
     "OpenPhish": {
         "url": "https://openphish.com/feed.txt",
         "type": "text",
@@ -57,40 +57,40 @@ RSS_FEEDS = {
         "website": "https://openphish.com/",
         "updateFrequency": "Every 15 minutes"
     },
-    "URLhaus": {
-        "url": "https://urlhaus.abuse.ch/feeds/rss/",
-        "type": "rss",
-        "description": "Malicious URL database by abuse.ch. Tracks URLs used for malware distribution including ransomware, trojans, and botnets.",
-        "website": "https://urlhaus.abuse.ch/",
+    "Malware Bazaar": {
+        "url": "https://bazaar.abuse.ch/export/csv/recent/",
+        "type": "csv",
+        "description": "Recent malware samples with hashes and URLs. Tracks active malware distribution from abuse.ch community.",
+        "website": "https://bazaar.abuse.ch/",
         "updateFrequency": "Real-time"
     },
-    "ThreatFox": {
-        "url": "https://threatfox.abuse.ch/export/json/recent/",
-        "type": "threatfox",
-        "description": "IOC sharing platform by abuse.ch. Includes URLs, IPs, domains, and hashes associated with active malware campaigns.",
-        "website": "https://threatfox.abuse.ch/",
-        "updateFrequency": "Real-time"
-    },
-    "Feodo Tracker": {
-        "url": "https://feodotracker.abuse.ch/downloads/ipblocklist_recommended.txt",
+    "Spamhaus DROP": {
+        "url": "https://www.spamhaus.org/drop/drop.txt",
         "type": "text",
-        "description": "Tracks Feodo/Emotet/Dridex botnet C2 servers. Lists IP addresses of active command and control infrastructure.",
-        "website": "https://feodotracker.abuse.ch/",
-        "updateFrequency": "Every 5 minutes"
+        "description": "Don't Route Or Peer - hijacked/leased IP ranges controlled by criminals. Industry-standard malicious IP blocklist.",
+        "website": "https://www.spamhaus.org/",
+        "updateFrequency": "Daily"
+    },
+    "CINS Army": {
+        "url": "http://cinsscore.com/list/ci-badguys.txt",
+        "type": "text",
+        "description": "Malicious IPs from CINS Army threat intelligence. Fast-updating list of confirmed attackers.",
+        "website": "http://cinsscore.com/",
+        "updateFrequency": "Every 15 minutes"
     },
     "Blocklist.de": {
         "url": "https://lists.blocklist.de/lists/ssh.txt",
         "type": "text",
-        "description": "SSH brute force attackers. Lists IP addresses that have been reported for SSH login attacks and unauthorized access attempts.",
+        "description": "IPs conducting SSH brute-force attacks. Community-reported attackers targeting SSH services.",
         "website": "https://www.blocklist.de/",
-        "updateFrequency": "Every 30 minutes"
+        "updateFrequency": "Hourly"
     },
-    "SSL Blacklist": {
-        "url": "https://sslbl.abuse.ch/blacklist/sslipblacklist.csv",
+    "Phishing Database": {
+        "url": "https://raw.githubusercontent.com/mitchellkrogza/Phishing.Database/master/phishing-links-ACTIVE.txt",
         "type": "text",
-        "description": "Malicious SSL certificates and associated IPs. Tracks SSL certs used by malware C2 servers and phishing sites.",
-        "website": "https://sslbl.abuse.ch/",
-        "updateFrequency": "Real-time"
+        "description": "Large database of active phishing URLs. Complements OpenPhish with additional phishing site coverage.",
+        "website": "https://github.com/mitchellkrogza/Phishing.Database",
+        "updateFrequency": "Hourly"
     }
 }
 
@@ -114,42 +114,43 @@ def fetch_vendor_iocs(vendor_name, config):
             
             # Skip header lines (comments, CSV headers, etc)
             clean_lines = [l.strip() for l in lines if l.strip() and not l.startswith('#') and not l.startswith('//')]
-            
             # Parse based on vendor
-            if vendor_name == "OpenPhish":
+            if vendor_name == "OpenPhish" or vendor_name == "Phishing Database":
                 for line in clean_lines[:MAX_IOCS_PER_VENDOR]:
                     if line.startswith('http'):
-                        iocs.append(parse_openphish(line, now, config, vendor_name))
+                        iocs.append(parse_phishing_url(line, now, config, vendor_name))
             
-            elif vendor_name == "Feodo Tracker":
+            elif vendor_name == "Spamhaus DROP":
                 for line in clean_lines[:MAX_IOCS_PER_VENDOR]:
-                    if re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}', line):
-                        ip = line.split(',')[0] if ',' in line else line
-                        iocs.append(parse_feodo(ip, now, config, vendor_name))
+                    # Spamhaus DROP format: CIDR ; SBL number
+                    if line and not line.startswith(';'):
+                        parts = line.split(';')
+                        if parts and '/' in parts[0]:  # CIDR notation
+                            iocs.append(parse_spamhaus(parts[0].strip(), now, config, vendor_name))
+            
+            elif vendor_name == "CINS Army":
+                for line in clean_lines[:MAX_IOCS_PER_VENDOR]:
+                    if re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$', line):
+                        iocs.append(parse_cins_army(line, now, config, vendor_name))
             
             elif vendor_name == "Blocklist.de":
                 for line in clean_lines[:MAX_IOCS_PER_VENDOR]:
                     if re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$', line):
                         iocs.append(parse_blocklist(line, now, config, vendor_name))
-            
-            elif vendor_name == "SSL Blacklist":
-                for line in clean_lines[:MAX_IOCS_PER_VENDOR]:
-                    if ',' in line:
-                        parts = line.split(',')
-                        if len(parts) >= 2 and re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}', parts[1]):
-                            iocs.append(parse_ssl_blacklist(parts, now, config, vendor_name))
         
-        elif config["type"] == "threatfox":
+        elif config["type"] == "csv":
+            # Malware Bazaar CSV format
             import requests
             resp = requests.get(config["url"], timeout=15, headers={'User-Agent': 'TheHGTech-ThreatIntel/2.0'})
-            data = resp.json()
-            if 'data' in data:
-                for item in list(data['data'].values())[:MAX_IOCS_PER_VENDOR]:
-                    ioc = parse_threatfox(item, now, config, vendor_name)
-                    if ioc:
-                        iocs.append(ioc)
+            lines = resp.text.strip().split('\n')
+            for line in lines[9:MAX_IOCS_PER_VENDOR+9]:  # Skip 9-line header
+                if line.startswith('#') or not line.strip():
+                    continue
+                ioc = parse_malware_bazaar(line, now, config, vendor_name)
+                if ioc:
+                    iocs.append(ioc)
         
-        else:  # RSS type
+        else:  # RSS type (if any remain)
             feed = feedparser.parse(config["url"])
             for entry in feed.entries[:MAX_IOCS_PER_VENDOR]:
                 ioc = extract_ioc_from_entry(entry, vendor_name, now, config)
@@ -164,8 +165,8 @@ def fetch_vendor_iocs(vendor_name, config):
     
     return iocs
 
-def parse_openphish(url, now, config, vendor):
-    """Parse OpenPhish URL"""
+def parse_phishing_url(url, now, config, vendor):
+    """Parse phishing URL (OpenPhish or Phishing Database)"""
     return {
         'type': 'url',
         'indicator': defang_indicator(url, 'url'),
@@ -179,19 +180,64 @@ def parse_openphish(url, now, config, vendor):
         'campaign': detect_campaign(url, 'phishing')
     }
 
-def parse_feodo(ip, now, config, vendor):
-    """Parse Feodo Tracker IP"""
+def parse_malware_bazaar(csv_line, now, config, vendor):
+    """Parse Malware Bazaar CSV line"""
+    try:
+        parts = csv_line.split(',')
+        if len(parts) < 8:
+            return None
+        
+        # CSV format: timestamp,sha256_hash,md5_hash,sha1_hash,reporter,file_name,file_type,mime_type,signature,clamav,vtpercent,imphash,ssdeep,tlsh
+        sha256 = parts[1].strip('"') if len(parts) > 1 else ''
+        file_type = parts[6].strip('"') if len(parts) > 6 else 'unknown'
+        signature = parts[8].strip('"') if len(parts) > 8 else 'Unknown malware'
+        
+        if not sha256:
+            return None
+            
+        return {
+            'type': 'hash',
+            'indicator': sha256[:16] + '...',  # Truncate for display
+            'description': f'{signature} ({file_type})',
+            'timestamp': format_timestamp(now),
+            'source': vendor,
+            'sourceUrl': config['website'],
+            'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
+            'tags': ['malware', 'hash'],
+            'addedAt': now.isoformat(),
+            'campaign': signature
+        }
+    except Exception as e:
+        return None
+
+def parse_spamhaus(cidr, now, config, vendor):
+    """Parse Spamhaus DROP CIDR range"""
     return {
-        'type': 'ip',
-        'indicator': defang_indicator(ip, 'ip'),
-        'description': 'Feodo/Emotet botnet C2 server',
+        'type': 'ip-range',
+        'indicator': cidr,
+        'description': 'Hijacked/leased IP range (criminal control)',
         'timestamp': format_timestamp(now),
         'source': vendor,
         'sourceUrl': config['website'],
         'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
-        'tags': ['botnet', 'c2', 'feodo'],
+        'tags': ['hijacked', 'criminal-network'],
         'addedAt': now.isoformat(),
-        'campaign': 'Feodo/Emotet'
+        'campaign': 'Spamhaus DROP List'
+    }
+
+def parse_cins_army(ip, now, config, vendor):
+    """Parse CINS Army malicious IP"""
+    return {
+        'type': 'ip',
+        'indicator': defang_indicator(ip, 'ip'),
+        'description': 'Confirmed malicious IP',
+        'timestamp': format_timestamp(now),
+        'source': vendor,
+        'sourceUrl': config['website'],
+        'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
+        'tags': ['malicious-ip', 'attacker'],
+        'addedAt': now.isoformat(),
+        'campaign': 'CINS Threat List'
     }
 
 def parse_blocklist(ip, now, config, vendor):
@@ -652,7 +698,7 @@ def generate_js(data):
     """Generate JavaScript file with data"""
     js_content = f"""// Auto-Generated Threat Intel (Multi-Vendor Dashboard)
 // Updated: {get_ist_now().isoformat()} IST
-// Sources: {', '.join(RSS_FEEDS.keys())}
+// Sources: {', '.join(VENDORS.keys())}
 
 const threatIntelData = {json.dumps(data, indent=4)};
 """
@@ -1012,7 +1058,7 @@ def run_hourly():
     vendors_data = {}
     
     # Fetch from each vendor
-    for vendor_name, config in RSS_FEEDS.items():
+    for vendor_name, config in VENDORS.items():
         # Load existing IOCs for this vendor
         existing_vendor = existing.get('vendors', {}).get(vendor_name, {})
         current_iocs = remove_expired_iocs(existing_vendor.get('iocs', []))
