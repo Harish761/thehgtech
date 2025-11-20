@@ -894,6 +894,12 @@
             // Hide loading
             document.getElementById('loadingIndicator').style.display = 'none';
 
+            // Hide static snapshot (SEO only, replace with interactive)
+            const staticSnapshot = document.getElementById('staticSnapshotContainer');
+            if (staticSnapshot) {
+                staticSnapshot.style.display = 'none';
+            }
+
             // Create vendor tabs
             createVendorTabs(data);
 
