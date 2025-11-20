@@ -924,6 +924,83 @@ def generate_daily_summary(all_vendors_data, history):
     return summary
 
 # ──────────────────────────────────────────────────────────────
+# Static HTML Snapshot Generation (for SEO)
+# ──────────────────────────────────────────────────────────────
+
+def generate_html_snapshot(threat_data):
+    """
+    Generate static HTML snapshot for search engine indexing.
+    This allows Google to see actual threat intelligence data.
+    """
+    html = []
+    html.append('<!-- Static Threat Intelligence Snapshot for SEO -->')
+    html.append('<div id="ti-static-snapshot" style="display: block;">')
+    
+    # Header
+    last_updated = threat_data.get('lastUpdatedFormatted', 'Recently')
+    html.append(f'<div style="margin-bottom: 2rem; padding: 1.5rem; background: rgba(255, 255, 255, 0.03); border-radius: 12px;">')
+    html.append(f'<p style="color: var(--text-muted); margin: 0;"><strong>Last Updated:</strong> {last_updated}</p>')
+    html.append(f'<p style="color: var(--text-muted); margin: 0.5rem 0 0 0;">Showing recent indicators of compromise from 6 security vendors</p>')
+    html.append('</div>')
+    
+    # Vendors
+    vendors = threat_data.get('vendors', {})
+    for vendor_name, vendor_data in vendors.items():
+        iocs = vendor_data.get('iocs', [])
+        if not iocs:
+            continue
+            
+        html.append(f'<div style="margin-bottom: 2rem; padding: 1.5rem; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 12px;">')
+        html.append(f'<h3 style="color: var(--accent-cyan); margin: 0 0 1rem 0; font-size: 1.2rem;">{vendor_name}</h3>')
+        html.append(f'<p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">{vendor_data.get("description", "")}</p>')
+        
+        # Show top 10 IOCs per vendor
+        html.append('<ul style="list-style: none; padding: 0; margin: 0;">')
+        for ioc in iocs[:10]:
+            indicator = ioc.get('indicator', 'N/A')
+            ioc_type = ioc.get('type', 'unknown')
+            timestamp = ioc.get('timestamp', '')
+            tags = ioc.get('tags', [])
+            
+            # Format tags
+            tag_html = ''
+            if 'NEW' in tags or 'new' in tags:
+                tag_html = '<span style="background: rgba(255, 76, 76, 0.2); color: #ff4c4c; padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.75rem; margin-left: 0.5rem;">NEW</span>'
+            elif 'RECENT' in tags or 'recent' in tags:
+                tag_html = '<span style="background: rgba(255, 165, 0, 0.2); color: #ffa500; padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.75rem; margin-left: 0.5rem;">RECENT</span>'
+            
+            html.append(f'<li style="padding: 0.75rem; margin-bottom: 0.5rem; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 8px;">')
+            html.append(f'<div style="display: flex; justify-content: space-between; align-items: center;">')
+            html.append(f'<div>')
+            html.append(f'<code style="color: var(--accent-cyan); font-size: 0.9rem;">{indicator}</code>{tag_html}')
+            html.append(f'<div style="color: var(--text-muted); font-size: 0.8rem; margin-top: 0.25rem;">Type: {ioc_type} | {timestamp}</div>')
+            html.append(f'</div>')
+            html.append(f'</div>')
+            html.append('</li>')
+        
+        if len(iocs) > 10:
+            html.append(f'<p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 1rem; text-align: center;">...and {len(iocs) - 10} more indicators</p>')
+        
+        html.append('</ul>')
+        html.append('</div>')
+    
+    html.append('</div>')
+    html.append('<!-- End Static Snapshot -->')
+    
+    snapshot_html = '\n'.join(html)
+    
+    # Save to file
+    snapshot_file = 'ti-snapshot.html'
+    try:
+        with open(snapshot_file, 'w', encoding='utf-8') as f:
+            f.write(snapshot_html)
+        print(f"✓ Generated HTML snapshot: {snapshot_file}")
+    except Exception as e:
+        print(f"✗ Error generating HTML snapshot: {e}")
+    
+    return snapshot_html
+
+# ──────────────────────────────────────────────────────────────
 # Runners
 # ──────────────────────────────────────────────────────────────
 def run_hourly():
@@ -1034,6 +1111,9 @@ def run_hourly():
     
     with open(OUTPUT_FILE, 'w') as f:
         f.write(generate_js(output))
+    
+    # Generate static HTML snapshot for SEO
+    generate_html_snapshot(output)
     
     total_iocs = sum(v['stats']['total'] for v in vendors_data.values())
     print("="*60)

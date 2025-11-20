@@ -789,6 +789,12 @@
                 </div>
             </div>
 
+            <!-- Static Snapshot Container (SEO-friendly, loads first) -->
+            <div id="staticSnapshotContainer" style="margin: 2rem 0;">
+                <!-- This will be populated with static HTML from ti-snapshot.html -->
+                <!-- JavaScript will replace this with interactive content -->
+            </div>
+
             <!-- Vendor Tabs -->
             <div class="vendor-tabs" id="vendorTabs">
                 <!-- Tabs will be loaded dynamically -->
@@ -1352,6 +1358,25 @@
                 }
             }
         }
+
+        // Load Static Snapshot for SEO (loads immediately, replaced by JS later)
+        function loadStaticSnapshot() {
+            fetch('ti-snapshot.html')
+                .then(response => response.text())
+                .then(html => {
+                    const container = document.getElementById('staticSnapshotContainer');
+                    if (container) {
+                        container.innerHTML = html;
+                        console.log('✓ Loaded static snapshot for SEO');
+                    }
+                })
+                .catch(error => {
+                    console.log('Static snapshot not yet available (will be generated on first run)');
+                });
+        }
+
+        // Load static snapshot immediately (before other content)
+        loadStaticSnapshot();
 
         // Load everything on page load
         window.addEventListener('load', function () {
