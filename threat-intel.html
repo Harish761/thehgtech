@@ -1300,6 +1300,9 @@
 
             // Update vendor tile counts
             updateVendorTileCounts();
+            // Add delayed retries to ensure counts display after DOM is fully ready
+            setTimeout(updateVendorTileCounts, 500);
+            setTimeout(updateVendorTileCounts, 1500);
         }
 
         // Switch vendor tab
