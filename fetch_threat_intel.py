@@ -443,7 +443,7 @@ def load_existing():
         with open(OUTPUT_FILE, 'r') as f:
             content = f.read()
             # Extract JSON from JS file
-            match = re.search(r'const threatIntelData = ({.*?});', content, re.DOTALL)
+            match = re.search(r'window\.threatIntelData = ({.*?});', content, re.DOTALL)
             if match:
                 return json.loads(match.group(1))
     except Exception as e:
@@ -775,7 +775,7 @@ def generate_js(data):
 // Updated: {get_ist_now().isoformat()} IST
 // Sources: {', '.join(VENDORS.keys())}
 
-const threatIntelData = {json.dumps(data, indent=4)};
+window.threatIntelData = {json.dumps(data, indent=4)};
 """
     return js_content
 
