@@ -262,34 +262,6 @@
             color: var(--text-primary);
         }
 
-        .auto-refresh-indicator {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .countdown {
-            font-size: 0.9rem;
-            color: var(--accent-cyan);
-            font-weight: 600;
-        }
-
-        .refresh-btn {
-            background: linear-gradient(135deg, var(--accent-cyan), #0099cc);
-            border: none;
-            color: white;
-            padding: 0.6rem 1.5rem;
-            border-radius: 8px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .refresh-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 20px var(--glow-cyan);
-        }
-
         /* Vendor Tabs */
         .vendor-tabs {
             display: flex;
@@ -402,6 +374,95 @@
                 transform: translateY(0);
             }
         }
+
+        /* Vendor Tiles Grid */
+        .vendor-tiles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .vendor-tile {
+            background: var(--glass);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .vendor-tile:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 217, 255, 0.2);
+            border-color: var(--accent-cyan);
+        }
+
+        .vendor-tile-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .vendor-tile-header h3 {
+            margin: 0;
+            font-size: 1.1rem;
+            color: var(--text-primary);
+        }
+
+        .vendor-icon {
+            font-size: 2rem;
+        }
+
+        .vendor-tile-count {
+            text-align: center;
+            margin: 1.5rem 0;
+        }
+
+        .vendor-tile-count span:first-child {
+            display: block;
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--accent-cyan);
+            line-height: 1;
+        }
+
+        .vendor-tile-label {
+            display: block;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-top: 0.5rem;
+        }
+
+        .vendor-tile-type {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .vendor-tile-arrow {
+            text-align: center;
+            color: var(--accent-cyan);
+            font-size: 1.2rem;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .vendor-tiles-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .vendor-tiles-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
 
         .vendor-info p {
             color: var(--text-secondary);
@@ -799,10 +860,6 @@
                 <div class="last-updated">
                     <strong>Last Updated:</strong> <span id="lastUpdatedTime">Loading...</span>
                 </div>
-                <div class="auto-refresh-indicator">
-                    <span class="countdown">Next refresh in <span id="countdown">60</span>s</span>
-                    <button class="refresh-btn" onclick="refreshData()">Refresh Now</button>
-                </div>
             </div>
 
             <!-- AI Insights Section (Prominent Display) -->
@@ -811,26 +868,6 @@
                 <!-- AI insights will be loaded here -->
                 <div style="text-align: center; color: var(--text-muted); grid-column: 1 / -1;">
                     <p>Loading AI insights...</p>
-                </div>
-            </div>
-
-            <!-- Search & Filter Controls -->
-            <div class="search-controls"
-                style="margin: 2rem 0; padding: 1.5rem; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 12px;">
-                <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
-                    <input type="text" id="iocSearch" placeholder="🔍 Search IOCs (URL, IP, hash, campaign...)"
-                        style="flex: 1; min-width: 300px; padding: 0.75rem 1rem; background: var(--glass); border: 1px solid var(--border); border-radius: 8px; color: var(--text-primary); font-size: 0.95rem;">
-                    <div class="filter-chips" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                        <button class="filter-chip active" data-filter="all" onclick="setFilter('all')"
-                            style="padding: 0.5rem 1rem; background: var(--accent-cyan); border: none; border-radius: 6px; color: white; cursor: pointer; font-weight: 600; font-size: 0.85rem;">All</button>
-                        <button class="filter-chip" data-filter="url" onclick="setFilter('url')"
-                            style="padding: 0.5rem 1rem; background: var(--glass); border: 1px solid var(--border); border-radius: 6px; color: var(--text-secondary); cursor: pointer; font-weight: 600; font-size: 0.85rem;">URLs</button>
-                        <button class="filter-chip" data-filter="ip" onclick="setFilter('ip')"
-                            style="padding: 0.5rem 1rem; background: var(--glass); border: 1px solid var(--border); border-radius: 6px; color: var(--text-secondary); cursor: pointer; font-weight: 600; font-size: 0.85rem;">IPs</button>
-                        <button class="filter-chip" data-filter="hash" onclick="setFilter('hash')"
-                            style="padding: 0.5rem 1rem; background: var(--glass); border: 1px solid var(--border); border-radius: 6px; color: var(--text-secondary); cursor: pointer; font-weight: 600; font-size: 0.85rem;">Hashes</button>
-                    </div>
-                    <div id="searchResults" style="color: var(--text-muted); font-size: 0.9rem;"></div>
                 </div>
             </div>
 
@@ -939,22 +976,126 @@
                 <!-- JavaScript will replace this with interactive content -->
             </div>
 
-            <!-- Vendor Tabs -->
-            <div class="vendor-tabs" id="vendorTabs">
-                <!-- Tabs will be loaded dynamically -->
-            </div>
+            <!-- Vendor Tiles Grid -->
+            <div class="vendor-tiles-grid" id="vendorTilesGrid">
+                <div class="vendor-tile" onclick="openVendorModal('OpenPhish')" data-vendor="OpenPhish">
+                    <div class="vendor-tile-header">
+                        <h3>OpenPhish</h3>
+                        <span class="vendor-icon">🎣</span>
+                    </div>
+                    <div class="vendor-tile-count">
+                        <span id="openPhishCount">0</span>
+                        <span class="vendor-tile-label">IOCs</span>
+                    </div>
+                    <div class="vendor-tile-type">Phishing URLs</div>
+                    <div class="vendor-tile-arrow">▼</div>
+                </div>
 
-            <!-- Vendor Content Areas -->
-            <div id="vendorContent">
-                <div class="loading" id="loadingIndicator">
-                    <div class="spinner"></div>
-                    <p>Loading threat intelligence data...</p>
+                <div class="vendor-tile" onclick="openVendorModal('Malware Bazaar')" data-vendor="Malware Bazaar">
+                    <div class="vendor-tile-header">
+                        <h3>Malware Bazaar</h3>
+                        <span class="vendor-icon">🦠</span>
+                    </div>
+                    <div class="vendor-tile-count">
+                        <span id="malwareBazaarCount">0</span>
+                        <span class="vendor-tile-label">IOCs</span>
+                    </div>
+                    <div class="vendor-tile-type">Malware Hashes</div>
+                    <div class="vendor-tile-arrow">▼</div>
+                </div>
+
+                <div class="vendor-tile" onclick="openVendorModal('Spamhaus DROP')" data-vendor="Spamhaus DROP">
+                    <div class="vendor-tile-header">
+                        <h3>Spamhaus DROP</h3>
+                        <span class="vendor-icon">🛡️</span>
+                    </div>
+                    <div class="vendor-tile-count">
+                        <span id="spamhausDROPCount">0</span>
+                        <span class="vendor-tile-label">IOCs</span>
+                    </div>
+                    <div class="vendor-tile-type">Hijacked IPs</div>
+                    <div class="vendor-tile-arrow">▼</div>
+                </div>
+
+                <div class="vendor-tile" onclick="openVendorModal('CINS Army')" data-vendor="CINS Army">
+                    <div class="vendor-tile-header">
+                        <h3>CINS Army</h3>
+                        <span class="vendor-icon">⚔️</span>
+                    </div>
+                    <div class="vendor-tile-count">
+                        <span id="cINSArmyCount">0</span>
+                        <span class="vendor-tile-label">IOCs</span>
+                    </div>
+                    <div class="vendor-tile-type">Malicious IPs</div>
+                    <div class="vendor-tile-arrow">▼</div>
+                </div>
+
+                <div class="vendor-tile" onclick="openVendorModal('Blocklist.de')" data-vendor="Blocklist.de">
+                    <div class="vendor-tile-header">
+                        <h3>Blocklist.de</h3>
+                        <span class="vendor-icon">🚫</span>
+                    </div>
+                    <div class="vendor-tile-count">
+                        <span id="blocklistDeCount">0</span>
+                        <span class="vendor-tile-label">IOCs</span>
+                    </div>
+                    <div class="vendor-tile-type">Attack IPs</div>
+                    <div class="vendor-tile-arrow">▼</div>
+                </div>
+
+                <div class="vendor-tile" onclick="openVendorModal('Phishing Database')" data-vendor="Phishing Database">
+                    <div class="vendor-tile-header">
+                        <h3>Phishing Database</h3>
+                        <span class="vendor-icon">🎯</span>
+                    </div>
+                    <div class="vendor-tile-count">
+                        <span id="phishingDatabaseCount">0</span>
+                        <span class="vendor-tile-label">IOCs</span>
+                    </div>
+                    <div class="vendor-tile-type">Active Phishing</div>
+                    <div class="vendor-tile-arrow">▼</div>
                 </div>
             </div>
 
             <!-- Daily Analytics -->
             <div class="analytics-section" id="analyticsSection" style="display: none;">
                 <h2>24-Hour Analytics & Trends</h2>
+
+                <!-- Analytics Metrics Row -->
+                <div
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+                    <div
+                        style="background: linear-gradient(135deg, rgba(0, 217, 255, 0.1), rgba(0, 217, 255, 0.05)); border: 1px solid rgba(0, 217, 255, 0.2); border-radius: 12px; padding: 1.5rem;">
+                        <h3
+                            style="margin: 0 0 0.5rem 0; color: var(--text-muted); font-size: 0.9rem; font-weight: 600;">
+                            Threat Velocity</h3>
+                        <div id="threatVelocity"
+                            style="font-size: 2.5rem; font-weight: 700; color: var(--accent-cyan);">0</div>
+                        <div style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.25rem;">IOCs/hour</div>
+                    </div>
+
+                    <div
+                        style="background: linear-gradient(135deg, rgba(48, 209, 88, 0.1), rgba(48, 209, 88, 0.05)); border: 1px solid rgba(48, 209, 88, 0.2); border-radius: 12px; padding: 1.5rem;">
+                        <h3
+                            style="margin: 0 0 0.5rem 0; color: var(--text-muted); font-size: 0.9rem; font-weight: 600;">
+                            Data Freshness</h3>
+                        <div id="dataFreshness" style="font-size: 2.5rem; font-weight: 700; color: #30D158;">0%</div>
+                        <div style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.25rem;">Last 24 hours
+                        </div>
+                    </div>
+
+                    <div
+                        style="background: linear-gradient(135deg, rgba(255, 76, 76, 0.1), rgba(255, 76, 76, 0.05)); border: 1px solid rgba(255, 76, 76, 0.2); border-radius: 12px; padding: 1.5rem;">
+                        <h3
+                            style="margin: 0 0 0.5rem 0; color: var(--text-muted); font-size: 0.9rem; font-weight: 600;">
+                            Critical Threats</h3>
+                        <div id="criticalThreats"
+                            style="font-size: 2.5rem; font-weight: 700; color: var(--accent-red);">0</div>
+                        <div style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.25rem;">Requires Action
+                        </div>
+                    </div>
+                </div>
+
                 <div class="analytics-grid" id="analyticsGrid">
                     <!-- Analytics cards will be loaded dynamically -->
                 </div>
@@ -1009,6 +1150,35 @@
         </div>
     </div>
 
+    <!-- Vendor Modal -->
+    <div id="vendorModal" class="modal"
+        style="display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(10px);">
+        <div class="modal-content"
+            style="background: var(--bg-secondary); margin: 2% auto; padding: 0; border-radius: 16px; max-width: 900px; max-height: 90vh; border: 1px solid var(--border); box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5); display: flex; flex-direction: column;">
+            <!-- Modal Header -->
+            <div
+                style="padding: 2rem; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center;">
+                <h2 id="vendorModalTitle" style="margin: 0; color: var(--accent-cyan); font-size: 1.5rem;"></h2>
+                <button onclick="closeVendorModal()"
+                    style="background: none; border: none; color: var(--text-muted); font-size: 2rem; cursor: pointer; padding: 0; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: all 0.3s ease;">&times;</button>
+            </div>
+
+            <!-- Search Box -->
+            <div style="padding: 1.5rem; border-bottom: 1px solid var(--border);">
+                <input type="text" id="vendorModalSearch" placeholder="🔍 Search IOCs (indicator, type, description)..."
+                    onkeyup="filterVendorModal()"
+                    style="width: 100%; padding: 1rem; background: rgba(255, 255, 255, 0.05); border: 1px solid var(--border); border-radius: 8px; color: var(--text-primary); font-size: 1rem;">
+                <div id="vendorModalCount" style="margin-top: 0.75rem; color: var(--text-muted); font-size: 0.9rem;">
+                </div>
+            </div>
+
+            <!-- Scrollable Content -->
+            <div id="vendorModalContent" style="padding: 1.5rem; overflow-y: auto; flex: 1;">
+                <p style="color: var(--text-muted);">Loading...</p>
+            </div>
+        </div>
+    </div>
+
     <!-- Statistics Modal -->
     <div id="statsModal" class="modal"
         style="display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(10px);">
@@ -1047,6 +1217,8 @@
 
     <!-- Load threat-intel.js -->
     <script src="threat-intel.js"></script>
+    <script src="vendor-modal.js"></script>
+    <script src="threat-analytics.js"></script>
 
     <script>
         let countdownInterval;
@@ -1056,8 +1228,9 @@
         // Initialize dashboard
         window.addEventListener('DOMContentLoaded', () => {
             loadThreatData();
-            startCountdown();
-            autoRefreshInterval = setInterval(refreshData, 60000);
+            // Auto-refresh disabled - data updates hourly via GitHub Actions
+            // autoRefreshInterval = setInterval(refreshData, 60000);
+            // startCountdown();
         });
 
         // Load threat intelligence data
@@ -1092,7 +1265,11 @@
             document.getElementById('lastUpdatedTime').textContent = lastUpdated;
 
             // Hide loading
-            document.getElementById('loadingIndicator').style.display = 'none';
+            const loadingIndicator = document.getElementById('loadingIndicator');
+            if (loadingIndicator) {
+                loadingIndicator.style.display = 'none';
+            }
+
 
             // Hide static snapshot (SEO only, replace with interactive)
             const staticSnapshot = document.getElementById('staticSnapshotContainer');
@@ -1100,41 +1277,29 @@
                 staticSnapshot.style.display = 'none';
             }
 
-            // Create vendor tabs
-            createVendorTabs(data);
+            // Create vendor tabs - DISABLED: Using new tile design instead
+            // createVendorTabs(data);
 
-            // Load overview by default
-            switchVendor('overview');
+            // Load overview by default - DISABLED: Using new tile design instead
+            // switchVendor('overview');
 
             // Load analytics
             loadAnalytics(data);
 
+            // Show analytics section and generate comprehensive analytics
+            const analyticsSection = document.getElementById('analyticsSection');
+            if (analyticsSection) {
+                analyticsSection.style.display = 'block';
+            }
+            if (typeof generateComprehensiveAnalytics === 'function') {
+                generateComprehensiveAnalytics();
+            }
+
             // Generate statistics for dashboard
             generateStatistics();
-        }
 
-        // Create vendor tabs
-        function createVendorTabs(data) {
-            const tabsContainer = document.getElementById('vendorTabs');
-            const vendors = data.vendors || {};
-
-            let tabsHTML = `
-                <button class="vendor-tab active" onclick="switchVendor('overview')">
-                    Overview <span class="tab-count">${data.overview?.length || 0}</span>
-                </button>
-            `;
-
-            Object.keys(vendors).forEach(vendorName => {
-                const vendor = vendors[vendorName];
-                const count = vendor.stats?.total || 0;
-                tabsHTML += `
-                    <button class="vendor-tab" onclick="switchVendor('${vendorName}')">
-                        ${vendorName} <span class="tab-count">${count}</span>
-                    </button>
-                `;
-            });
-
-            tabsContainer.innerHTML = tabsHTML;
+            // Update vendor tile counts
+            updateVendorTileCounts();
         }
 
         // Switch vendor tab
@@ -1694,19 +1859,28 @@
 
         // Statistics Dashboard
         function generateStatistics() {
-            if (!threatIntelData || !threatIntelData.vendors) return;
+            if (!window.threatIntelData || !window.threatIntelData.vendors) {
+                console.log('No threat data available for statistics');
+                return;
+            }
 
             let totalIOCs = 0;
             let newIOCs = 0;
             const campaigns = new Set();
 
-            Object.values(threatIntelData.vendors).forEach(vendor => {
+            Object.values(window.threatIntelData.vendors).forEach(vendor => {
                 if (vendor.iocs) {
+                    totalIOCs += vendor.iocs.length;
                     vendor.iocs.forEach(ioc => {
-                        totalIOCs++;
-                        if (ioc.tags && (ioc.tags.includes('NEW') || ioc.tags.includes('new'))) {
-                            newIOCs++;
+                        // Count new IOCs (added in last hour)
+                        if (ioc.addedAt) {
+                            const addedTime = new Date(ioc.addedAt);
+                            const hourAgo = new Date(Date.now() - 60 * 60 * 1000);
+                            if (addedTime > hourAgo) {
+                                newIOCs++;
+                            }
                         }
+                        // Collect campaigns
                         if (ioc.campaign) {
                             campaigns.add(ioc.campaign);
                         }
@@ -1714,10 +1888,40 @@
                 }
             });
 
-            document.getElementById('totalIOCs').textContent = totalIOCs.toLocaleString();
-            document.getElementById('newIOCs').textContent = newIOCs.toLocaleString();
-            document.getElementById('activeCampaigns').textContent = campaigns.size.toLocaleString();
+            const totalElement = document.getElementById('totalIOCs');
+            const newElement = document.getElementById('newIOCs');
+            const campaignsElement = document.getElementById('activeCampaigns');
+
+            console.log('Elements found:', {
+                totalElement: !!totalElement,
+                newElement: !!newElement,
+                campaignsElement: !!campaignsElement
+            });
+
+            if (totalElement) {
+                totalElement.textContent = totalIOCs.toLocaleString();
+                console.log('Updated totalIOCs to:', totalIOCs);
+            } else {
+                console.error('totalIOCs element not found!');
+            }
+
+            if (newElement) {
+                newElement.textContent = newIOCs.toLocaleString();
+                console.log('Updated newIOCs to:', newIOCs);
+            } else {
+                console.error('newIOCs element not found!');
+            }
+
+            if (campaignsElement) {
+                campaignsElement.textContent = campaigns.size.toLocaleString();
+                console.log('Updated activeCampaigns to:', campaigns.size);
+            } else {
+                console.error('activeCampaigns element not found!');
+            }
+
+            console.log(`Statistics updated: ${totalIOCs} total, ${newIOCs} new, ${campaigns.size} campaigns`);
         }
+
 
         // Update renderIOCCard to add click handler
         const originalRenderIOCCard = renderIOCCard;
@@ -1809,28 +2013,6 @@
             } catch {
                 return 'Unknown';
             }
-        }
-
-        // Auto-refresh countdown
-        function startCountdown() {
-            let seconds = 60;
-            const countdownEl = document.getElementById('countdown');
-
-            countdownInterval = setInterval(() => {
-                seconds--;
-                countdownEl.textContent = seconds;
-
-                if (seconds <= 0) {
-                    refreshData();
-                }
-            }, 1000);
-        }
-
-        // Refresh data
-        function refreshData() {
-            clearInterval(countdownInterval);
-            clearInterval(autoRefreshInterval);
-            window.location.reload();
         }
 
         // ========== 7-DAY TREND VISUALIZATION ==========

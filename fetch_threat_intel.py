@@ -37,7 +37,21 @@ except ImportError:
 # ──────────────────────────────────────────────────────────────
 # Config
 # ──────────────────────────────────────────────────────────────
-MAX_IOCS_PER_VENDOR = 50
+# Vendor-specific caps based on daily generation rates
+# Total: 2,100 IOCs (up from 300)
+VENDOR_CAPS = {
+    'Malware Bazaar': 500,      # ~2,246/day generation
+    'Phishing Database': 500,   # ~7,500/day generation
+    'Blocklist.de': 500,        # ~1,500/day generation
+    'CINS Army': 300,           # ~750/day generation
+    'OpenPhish': 200,           # ~450/day generation
+    'Spamhaus DROP': 100        # ~3/day (static list)
+}
+
+def get_vendor_cap(vendor_name):
+    """Get the IOC cap for a specific vendor"""
+    return VENDOR_CAPS.get(vendor_name, 50)  # Default to 50 if not found
+
 IOC_EXPIRY_HOURS = 24
 OUTPUT_FILE = 'threat-intel.js'
 HISTORY_FILE = 'threat-intel-history.json'
@@ -115,13 +129,14 @@ def fetch_vendor_iocs(vendor_name, config):
             # Skip header lines (comments, CSV headers, etc)
             clean_lines = [l.strip() for l in lines if l.strip() and not l.startswith('#') and not l.startswith('//')]
             # Parse based on vendor
+            vendor_cap = get_vendor_cap(vendor_name)
             if vendor_name == "OpenPhish" or vendor_name == "Phishing Database":
-                for line in clean_lines[:MAX_IOCS_PER_VENDOR]:
+                for line in clean_lines[:vendor_cap]:
                     if line.startswith('http'):
                         iocs.append(parse_phishing_url(line, now, config, vendor_name))
             
             elif vendor_name == "Spamhaus DROP":
-                for line in clean_lines[:MAX_IOCS_PER_VENDOR]:
+                for line in clean_lines[:vendor_cap]:
                     # Spamhaus DROP format: CIDR ; SBL number
                     if line and not line.startswith(';'):
                         parts = line.split(';')
@@ -129,12 +144,12 @@ def fetch_vendor_iocs(vendor_name, config):
                             iocs.append(parse_spamhaus(parts[0].strip(), now, config, vendor_name))
             
             elif vendor_name == "CINS Army":
-                for line in clean_lines[:MAX_IOCS_PER_VENDOR]:
+                for line in clean_lines[:vendor_cap]:
                     if re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$', line):
                         iocs.append(parse_cins_army(line, now, config, vendor_name))
             
             elif vendor_name == "Blocklist.de":
-                for line in clean_lines[:MAX_IOCS_PER_VENDOR]:
+                for line in clean_lines[:vendor_cap]:
                     if re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$', line):
                         iocs.append(parse_blocklist(line, now, config, vendor_name))
         
@@ -143,7 +158,8 @@ def fetch_vendor_iocs(vendor_name, config):
             import requests
             resp = requests.get(config["url"], timeout=15, headers={'User-Agent': 'TheHGTech-ThreatIntel/2.0'})
             lines = resp.text.strip().split('\n')
-            for line in lines[9:MAX_IOCS_PER_VENDOR+9]:  # Skip 9-line header
+            vendor_cap = get_vendor_cap(vendor_name)
+            for line in lines[9:vendor_cap+9]:  # Skip 9-line header
                 if line.startswith('#') or not line.strip():
                     continue
                 ioc = parse_malware_bazaar(line, now, config, vendor_name)
@@ -152,7 +168,8 @@ def fetch_vendor_iocs(vendor_name, config):
         
         else:  # RSS type (if any remain)
             feed = feedparser.parse(config["url"])
-            for entry in feed.entries[:MAX_IOCS_PER_VENDOR]:
+            vendor_cap = get_vendor_cap(vendor_name)
+            for entry in feed.entries[:vendor_cap]:
                 ioc = extract_ioc_from_entry(entry, vendor_name, now, config)
                 if ioc:
                     iocs.append(ioc)
@@ -572,18 +589,74 @@ def generate_daily_ai_summary(vendors_data, snapshot_metrics):
     for vendor_data in vendors_data.values():
         all_iocs.extend(vendor_data['iocs'])
     campaigns = detect_campaigns(all_iocs)
-    top_campaigns = sorted(campaigns.items(), key=lambda x: x[1]['count'], reverse=True)[:3]
-    campaign_str = ", ".join([f"{name} ({data['count']})" for name, data in top_campaigns])
+    top_campaigns = sorted(campaigns.items(), key=lambda x: x[1]['count'], reverse=True)[:5]
+    campaign_str = ", ".join([f"{name} ({data['count']} IOCs)" for name, data in top_campaigns])
     
-    prompt = f"""Analyze today's threat intelligence data and provide a concise summary (2-3 sentences).
+    # Calculate analytics metrics
+    # IOC Type Distribution
+    type_counts = {}
+    severity_counts = {'Critical': 0, 'High': 0, 'Medium': 0, 'Low': 0}
+    attack_vectors = {'Phishing': 0, 'Malware': 0, 'Network': 0, 'C2/Botnet': 0}
+    
+    for ioc in all_iocs:
+        ioc_type = ioc.get('type', 'unknown')
+        type_counts[ioc_type] = type_counts.get(ioc_type, 0) + 1
+        
+        # Severity based on source
+        source = ioc.get('source', '')
+        if 'Malware Bazaar' in source:
+            severity_counts['Critical'] += 1
+        elif source in ['Spamhaus DROP', 'CINS Army', 'Blocklist.de']:
+            severity_counts['High'] += 1
+        elif source in ['OpenPhish', 'Phishing Database']:
+            severity_counts['Medium'] += 1
+        else:
+            severity_counts['Low'] += 1
+        
+        # Attack vectors
+        if ioc_type == 'url':
+            attack_vectors['Phishing'] += 1
+        elif ioc_type == 'hash':
+            attack_vectors['Malware'] += 1
+        elif ioc_type in ['ip', 'cidr']:
+            attack_vectors['Network'] += 1
+    
+    # Calculate threat velocity (IOCs per hour)
+    threat_velocity = round(total_iocs / 24, 1)
+    
+    # Calculate data freshness (% from last 24h)
+    now = get_ist_now()
+    last_24h = now - timedelta(hours=24)
+    fresh_count = 0
+    for ioc in all_iocs:
+        try:
+            added = datetime.fromisoformat(ioc['addedAt'].replace('Z', '+00:00'))
+            if added >= last_24h:
+                fresh_count += 1
+        except:
+            pass
+    data_freshness = round((fresh_count / max(total_iocs, 1)) * 100, 1)
+    
+    # Format analytics for prompt
+    type_dist = ", ".join([f"{t}: {c}" for t, c in sorted(type_counts.items(), key=lambda x: x[1], reverse=True)])
+    severity_dist = ", ".join([f"{s}: {c}" for s, c in severity_counts.items() if c > 0])
+    vector_dist = ", ".join([f"{v}: {c}" for v, c in sorted(attack_vectors.items(), key=lambda x: x[1], reverse=True) if c > 0])
+    
+    prompt = f"""Analyze today's threat intelligence data and provide a concise, professional summary (3-4 sentences).
 
-Data:
-- Total IOCs: {total_iocs}
-- New IOCs Today: {new_iocs}
-- Top Attack Vector: {snapshot_metrics.get('topAttackVector', 'N/A')}
-- Top Campaigns: {campaign_str or 'None detected'}
+**Comprehensive Analytics:**
+- Total IOCs: {total_iocs} ({new_iocs} new in last hour)
+- Threat Velocity: {threat_velocity} IOCs/hour
+- Data Freshness: {data_freshness}% from last 24h
+- Critical Threats: {severity_counts['Critical']}
 
-Focus on: What's new, what's trending, any notable changes. Be specific and technical."""
+**IOC Type Distribution:** {type_dist}
+**Threat Severity:** {severity_dist}
+**Attack Vectors:** {vector_dist}
+**Top Campaigns:** {campaign_str or 'None detected'}
+**Primary Attack Vector:** {snapshot_metrics.get('topAttackVector', 'N/A')}
+
+Focus on: Key trends, notable threats, severity distribution, and actionable insights. Be specific and technical."""
     
     summary = call_openai_api(prompt, model="gpt-4o-mini")
     if summary:
@@ -591,9 +664,11 @@ Focus on: What's new, what's trending, any notable changes. Be specific and tech
             'date': get_ist_now().strftime('%Y-%m-%d'),
             'summary': summary.strip(),
             'keyFindings': [
-                f"{new_iocs} new IOCs detected",
+                f"{new_iocs} new IOCs detected (Velocity: {threat_velocity}/hr)",
                 f"Top vector: {snapshot_metrics.get('topAttackVector', 'N/A')}",
-                f"Active campaigns: {len(campaigns)}"
+                f"Active campaigns: {len(campaigns)}",
+                f"Critical threats: {severity_counts['Critical']}",
+                f"Data freshness: {data_freshness}%"
             ],
             'generatedAt': get_ist_now().isoformat()
         }
@@ -1067,7 +1142,9 @@ def run_hourly():
         new_iocs = fetch_vendor_iocs(vendor_name, config)
         
         # Combine and deduplicate
-        all_iocs = deduplicate_iocs(new_iocs + current_iocs)[:MAX_IOCS_PER_VENDOR]
+        vendor_cap = get_vendor_cap(vendor_name)
+        all_iocs = deduplicate_iocs(new_iocs + current_iocs)[:vendor_cap]
+
         
         # Store vendor data
         vendors_data[vendor_name] = {
