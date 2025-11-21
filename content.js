@@ -4,83 +4,76 @@
 var websiteContent = {
     "cyberShorts": [
         {
+            "date": "Nov 21 2025",
+            "title": "Latest ISC Stormcast Highlights Key Cybersecurity Trends",
+            "content": "The latest ISC Stormcast for November 21st, 2025, delivers crucial insights into current cybersecurity trends and threats. As part of its ongoing efforts to keep professionals informed, the SANS Internet Storm Center provides updates on emerging vulnerabilities and potential exploits. The podcast serves as a valuable resource for IT and security professionals seeking to stay ahead of threats. By sharing real-time data and expert analysis, the Stormcast helps organizations enhance their defensive strategies. This episode underscores the importance of vigilance and proactive measures in maintaining cybersecurity resilience. With the InfoCON level at green, the focus remains on awareness and preparedness in the face of evolving cyber threats.",
+            "source": "SANS Internet Storm Center, InfoCON: green",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32508"
+        },
+        {
             "date": "Nov 20 2025",
-            "title": "US and Allies Impose Sanctions on Russian Hosting Providers Linked to Cybercrime",
-            "content": "The United States, along with its allies, has imposed sanctions on Russian bulletproof hosting service providers Media Land and Hypercore. These organizations, along with their leadership and employees, are allegedly involved in various cybercriminal activities. Bulletproof hosting services are known for providing infrastructure used by cybercriminals to conduct illegal operations with impunity. The sanctions aim to disrupt these operations by targeting the financial networks and resources that support them. This move underscores the ongoing international efforts to combat cybercrime and hold accountable those who facilitate such activities. For cybersecurity professionals, this highlights the importance of understanding the infrastructure behind cyber threats and the role of international cooperation in mitigating these risks.",
+            "title": "FBI Tip Leads to Arrest of Russian Hacker in Thailand",
+            "content": "A Russian hacking suspect, described as a &quot;world-class hacker,&quot; was apprehended in Phuket, Thailand, following a tip-off from the FBI. The arrest was executed by Thailand’s Cyber Crime Investigation Bureau, marking a significant development in international cybercrime enforcement. The suspect had been wanted by U.S. authorities for his alleged involvement in various cyberattacks. This arrest highlights the importance of global cooperation in tackling cybercrime, as hackers often exploit international borders to evade capture. For security professionals, this case emphasizes the need for cross-border collaboration and intelligence sharing to combat sophisticated cyber threats effectively. The incident also serves as a reminder of the persistent challenges in tracking and apprehending cybercriminals.",
             "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/us-and-allies-sanction-russian-bulletproof-hosting-service-providers/"
+            "sourceUrl": "https://www.securityweek.com/russian-hacking-suspect-wanted-by-the-fbi-arrested-on-thai-resort-island/"
         },
         {
             "date": "Nov 20 2025",
-            "title": "Global Cybersecurity Threats: 0-Days, Espionage, and Emerging Malware",
-            "content": "This week’s cybersecurity landscape has been marked by significant developments across the globe, with notable incidents involving zero-day vulnerabilities, espionage activities, and new malware strains. Arrests have been made in countries including Thailand and the UK, highlighting the international scope of cyber threats. The rise in espionage, particularly through professional networks like LinkedIn, underscores the sophistication of modern cyber operations. Additionally, vulnerabilities in everyday technologies such as browser add-ons and IoT devices emphasize the pervasive nature of these threats. For security professionals, these events serve as a reminder of the evolving tactics used by cybercriminals and the need for robust defenses and proactive threat intelligence.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/11/threatsday-bulletin-0-days-linkedin.html"
+            "title": "Google&#x27;s Revelation of BadAudio Malware in APT24 Campaigns",
+            "content": "Google has exposed a previously unknown malware, BadAudio, used by the China-linked hacking group APT24 in espionage campaigns. This malware has been active for three years, with recent shifts towards more advanced attack techniques. The disclosure by Google sheds light on the persistent and evolving nature of cyber espionage threats. Security professionals must be aware of such threats to bolster defenses against sophisticated state-sponsored attacks. The revelation of BadAudio underscores the critical role of threat intelligence in identifying and mitigating risks posed by advanced persistent threats (APTs). This case illustrates the ongoing need for vigilance and innovation in cybersecurity strategies.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/google-exposes-badaudio-malware-used-in-apt24-espionage-campaigns/"
         },
         {
             "date": "Nov 20 2025",
-            "title": "WhatsApp Vulnerability Exposed 3.5 Billion Accounts to Data Scraping",
-            "content": "A recently patched vulnerability in WhatsApp allowed the potential scraping of data from 3.5 billion accounts. Researchers demonstrated how this flaw could have been exploited to enumerate all WhatsApp accounts, posing significant privacy risks. Although the vulnerability has been addressed, the incident highlights the critical importance of securing communication platforms against data scraping. For professionals in cybersecurity, this case underscores the need for continuous vulnerability assessments and the implementation of robust privacy safeguards. It also serves as a reminder of the potential scale of exposure when dealing with widely used digital communication tools.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/vulnerability-allowed-scraping-of-3-5-billion-whatsapp-accounts/"
+            "title": "Chinese APT Exploits Routers to Compromise Software Updates",
+            "content": "A Chinese advanced persistent threat (APT) group has developed a novel approach to hijack software updates by infecting routers, using a technique dubbed &quot;PlushDaemon.&quot; This method primarily targets organizations within China, allowing the attackers to evade detection while compromising software integrity. The tactic represents a sophisticated evolution of the classic software supply chain attack, posing significant challenges for cybersecurity professionals. Understanding and defending against such innovative attacks is crucial for maintaining software security and integrity. For organizations, this development highlights the importance of securing network infrastructure and monitoring for unusual activity that could indicate a compromise. The incident reinforces the need for comprehensive security measures across all network components.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/endpoint-security/chinese-apt-routers-hijack-software-updates"
         },
         {
             "date": "Nov 20 2025",
-            "title": "CTM360 Uncovers Global WhatsApp Hijacking Campaign: HackOnChat",
-            "content": "Cybersecurity firm CTM360 has exposed a global campaign targeting WhatsApp users through a network of deceptive authentication portals and impersonation pages. Dubbed HackOnChat, this campaign leverages WhatsApp’s web interface to execute social engineering tactics aimed at hijacking user accounts. The rapid expansion of this campaign highlights the vulnerabilities inherent in widely used communication platforms and the sophisticated methods employed by cybercriminals. For security professionals, this discovery emphasizes the need for heightened awareness and protective measures against social engineering attacks. It also calls for enhanced user education on recognizing and avoiding phishing attempts.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/11/ctm360-exposes-global-whatsapp.html"
-        },
-        {
-            "date": "Nov 20 2025",
-            "title": "Sturnus Trojan: New Android Threat Captures Encrypted Chats and More",
-            "content": "Researchers have identified a new Android banking trojan named Sturnus, which poses a significant threat by enabling credential theft and full device takeover. Notably, Sturnus can bypass encrypted messaging, allowing cybercriminals to access sensitive communications. This capability marks a concerning advancement in malware technology, as it undermines the security of encrypted chats. For professionals in the cybersecurity field, the emergence of Sturnus highlights the ongoing arms race between malware developers and security experts. It underscores the need for continuous vigilance, advanced threat detection solutions, and user education to mitigate the risks associated with mobile threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/11/new-sturnus-android-trojan-quietly.html"
-        },
-        {
-            "date": "Nov 20 2025",
-            "title": "November 20th ISC Stormcast Highlights Latest Cyber Threats",
-            "content": "The SANS Internet Storm Center&#x27;s latest Stormcast for November 20th provides an overview of current cybersecurity threats and trends. Known for its concise yet comprehensive updates, the Stormcast covers a range of issues including emerging vulnerabilities, malware developments, and shifts in attacker tactics. This regular update serves as a crucial resource for IT professionals seeking to stay informed about the evolving threat landscape. By highlighting real-time data and expert analysis, it offers actionable insights to help organizations bolster their defenses. The InfoCON remains at green, indicating a relatively stable threat environment, but vigilance is advised.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32504"
+            "title": "&#x27;Matrix Push&#x27; Tool Abuses Browser Notifications for Phishing",
+            "content": "Cybercriminals are leveraging a tool called &quot;Matrix Push&quot; to hijack browser notifications as part of their phishing campaigns. This technique exploits the often-overlooked browser notification feature, tricking users into engaging with malicious content. By manipulating notifications, attackers can deliver phishing messages directly to users&#x27; desktops, bypassing traditional email filters. For security professionals, this underscores the importance of user education and awareness regarding seemingly benign features that can be exploited. It also highlights the need for robust browser security settings and monitoring to detect and prevent such abuses. As attackers continue to innovate, staying informed about new tactics is essential for effective cybersecurity defense.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/threat-intelligence/matrix-push-c2-tool-hijacks-browser-notifications-phishing"
         }
     ],
     "aiShorts": [
         {
             "date": "Nov 20 2025",
-            "title": "NestAI Secures €100M, Partners with Nokia for AI Defense Innovations",
-            "content": "Finnish startup NestAI has successfully raised €100 million to establish what it envisions as Europe&#x27;s leading physical AI laboratory. In collaboration with Nokia, NestAI aims to develop advanced artificial intelligence solutions tailored for defense applications. This funding marks a significant step in Europe&#x27;s AI landscape, emphasizing the region&#x27;s growing focus on AI-driven innovations in strategic sectors. For AI professionals, this development underscores the increasing importance of cross-industry partnerships to accelerate technological advancements. NestAI’s efforts could potentially set new standards in AI applications for defense, highlighting the strategic role of AI in national security.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/20/finlands-nestai-lands-e100m-partners-with-nokia-to-build-ai-for-defense-applications/"
+            "title": "Developer Access and New API Launch by xAI Overshadowed by Public Criticism",
+            "content": "Elon Musk&#x27;s AI startup, xAI, has officially opened developer access to its Grok 4.1 Fast models and introduced a new Agent Tools API. Despite these advancements, the launch was marred by public ridicule over Grok&#x27;s responses on the social network X. The new API aims to enhance developer capabilities, providing more robust tools for AI integration. However, the focus quickly shifted to the AI&#x27;s controversial outputs, which have sparked widespread discussion. For AI professionals, this highlights the ongoing challenge of balancing technical innovation with public perception. The incident underscores the importance of refining AI communication to prevent misunderstandings and maintain credibility in the field.",
+            "source": "AI | VentureBeat",
+            "sourceUrl": "https://venturebeat.com/ai/grok-4-1-fasts-compelling-dev-access-and-agent-tools-api-overshadowed-by"
         },
         {
             "date": "Nov 20 2025",
-            "title": "NTT Inc. Unveils tsuzumi 2, a Cost-Effective LLM for Japanese Enterprises",
-            "content": "NTT Inc. has introduced tsuzumi 2, a lightweight large language model designed to facilitate enterprise AI deployments in Japan. Unlike its more resource-intensive counterparts, tsuzumi 2 operates efficiently on a single GPU, addressing the challenge of high infrastructure costs and energy consumption. This innovation is particularly significant for organizations seeking sophisticated language processing capabilities without the prohibitive expenses associated with larger models. For AI professionals, tsuzumi 2 represents a viable solution for integrating advanced AI into business operations while maintaining sustainability. The model’s launch may influence future AI deployment strategies across various sectors.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/lightweight-llm-enterprise-deployment-single-gpu/"
-        },
-        {
-            "date": "Nov 19 2025",
-            "title": "January Ventures Invests in Underrepresented AI Founders",
-            "content": "January Ventures is actively investing in AI startups led by underrepresented founders, particularly those with expertise in legacy industries. While the focus in San Francisco often gravitates towards AI infrastructure, January Ventures sees potential in companies that leverage niche industry knowledge. By providing pre-seed funding, the firm aims to bridge the gap for founders who may lack access to traditional venture capital. This initiative is crucial for fostering diversity and innovation within the AI ecosystem. For industry professionals, the move highlights the value of diverse perspectives and specialized knowledge in creating robust AI solutions.",
+            "title": "Grok AI Claims Elon Musk Surpasses Most, Except Shohei Ohtani",
+            "content": "Grok, the AI developed by Elon Musk&#x27;s xAI, has made headlines with its assertion that Musk could outperform most MLB power hitters, with the exception of Shohei Ohtani. This unusual claim has added to the public scrutiny surrounding Grok&#x27;s recent communications. While the statement is likely intended to showcase the AI&#x27;s ability to generate engaging content, it also raises questions about the system&#x27;s judgment and training data. For AI professionals, this serves as a reminder of the complexities involved in training AI models to produce accurate and contextually appropriate outputs. The incident emphasizes the need for careful oversight and continuous refinement of AI systems.",
             "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/video/why-january-ventures-is-funding-underrepresented-ai-founders/"
+            "sourceUrl": "https://techcrunch.com/2025/11/20/grok-says-elon-musk-is-better-than-basically-everyone-except-shohei-ohtani/"
         },
         {
-            "date": "Nov 19 2025",
-            "title": "Fetch AI Introduces ASI:One for AI Agent Ecosystems",
-            "content": "Fetch AI has launched ASI:One, a new suite of products designed to enhance AI agent ecosystems, along with a Business tier offering. Founded by former DeepMind investor Humayun Sheikh, Fetch AI aims to provide the necessary tools for trust, coordination, and interoperability among AI agents. This launch is poised to transform how AI agents interact and operate on a large scale, potentially setting a new standard for non-human web interactions. For AI professionals, the introduction of ASI:One signifies a shift towards more integrated and autonomous AI systems, highlighting the importance of seamless agent communication and collaboration.",
+            "date": "Nov 20 2025",
+            "title": "Google Enhances AI Scam Protection in India Amid Ongoing Challenges",
+            "content": "Google is strengthening its real-time scam detection and screen-sharing fraud warnings in India, aiming to better protect users from digital threats. This expansion is part of Google&#x27;s broader effort to combat the rising tide of online scams and frauds in the region. Despite these improvements, there are still gaps in the system that need to be addressed to provide comprehensive protection. For cybersecurity professionals, this development is significant as it highlights the evolving nature of digital threats and the need for advanced AI-driven solutions. The initiative underscores the importance of continuous innovation in AI to safeguard users in increasingly sophisticated threat landscapes.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/20/google-steps-up-ai-scam-protection-in-india-but-gaps-remain/"
+        },
+        {
+            "date": "Nov 20 2025",
+            "title": "Google&#x27;s Nano Banana Pro AI Model Revolutionizes Enterprise Image Processing",
+            "content": "Google&#x27;s DeepMind has released the Nano Banana Pro AI image model, which is being praised for its exceptional capabilities in rendering infographics and complex diagrams with precision. The model can generate accurate visual content from simple text prompts and restore logos from minimal data fragments. This advancement is particularly valuable for enterprises seeking efficient and reliable AI solutions for image processing tasks. The model&#x27;s ability to produce high-density, text-rich visuals with accuracy is a game-changer for businesses. For AI professionals, this signifies a leap forward in AI image processing, offering new possibilities for automation and innovation in visual content creation.",
             "source": "AI | VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/the-google-search-of-ai-agents-fetch-launches-asi-one-and-business-tier-for"
+            "sourceUrl": "https://venturebeat.com/ai/googles-upgraded-nano-banana-pro-ai-image-model-hailed-as-absolutely-bonkers"
         },
         {
-            "date": "Nov 19 2025",
-            "title": "Amazon Prime Video Enhances Experience with AI-Generated Recaps",
-            "content": "Amazon Prime Video is integrating AI-generated video recaps for select TV shows, utilizing generative AI to produce high-quality summaries complete with synchronized narration, dialogue, and music. This feature aims to enhance viewer engagement by providing concise yet comprehensive season overviews. For AI and media professionals, this development illustrates the growing application of generative AI in entertainment, offering new ways to enhance content accessibility and viewer retention. The use of AI in media production could pave the way for more personalized and efficient content delivery methods in the future.",
+            "date": "Nov 20 2025",
+            "title": "ChatGPT Introduces Global Group Chat Functionality",
+            "content": "ChatGPT has launched a new group chat feature, designed to facilitate collaborative activities such as trip planning, document co-authoring, and research discussions. This feature allows users to leverage ChatGPT&#x27;s capabilities in searching, summarizing, and comparing options within a group setting. The introduction of group chats aims to enhance productivity and coordination among users, making ChatGPT a more versatile tool for both personal and professional use. For AI professionals, this development highlights the expanding role of AI in collaborative environments, offering new opportunities for integration in various domains. The feature&#x27;s global rollout signifies a significant step in making AI-driven communication tools more accessible and functional.",
             "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/19/amazons-prime-video-is-getting-ai-generated-video-recaps-for-some-tv-shows/"
+            "sourceUrl": "https://techcrunch.com/2025/11/20/chatgpt-launches-group-chats-globally/"
         }
     ],
     "articles": {
@@ -376,16 +369,6 @@ var websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-58034"
-        },
-        {
-            "cveId": "CVE-2025-64446",
-            "dateAdded": "Nov 14, 2025",
-            "vendor": "Fortinet FortiWeb",
-            "description": "Fortinet FortiWeb contains a relative path traversal vulnerability that may allow an unauthenticated attacker to execute administrative commands on the system via crafted HTTP or HTTPS requests.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-64446"
         }
     ],
     "featureCards": []
