@@ -12,14 +12,14 @@
     "Generic Phishing": 666,
     "Financial Phishing": 28,
     "Booking.com Phishing": 4,
-    " \"Mirai": 200,
-    " \"n/a": 131,
+    " \"n/a": 133,
+    " \"QuasarRAT": 3,
+    " \"Mirai": 197,
     " \"DarkTortilla": 1,
     " \"PureLogsStealer": 8,
     " \"a310Logger": 8,
     " \"RemcosRAT": 9,
     " \"njrat": 1,
-    " \"QuasarRAT": 2,
     " \"AsyncRAT": 3,
     " \"ValleyRAT": 9,
     " \"SnakeKeylogger": 4,
@@ -53,7 +53,7 @@
     " \"RedLineStealer": 1,
     "Spamhaus DROP List": 96,
     "CINS Threat List": 300,
-    "SSH Attacks": 496
+    "SSH Attacks": 500
   },
   "dailySnapshots": [
     {
