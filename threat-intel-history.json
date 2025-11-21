@@ -9,16 +9,17 @@
     }
   },
   "previous_hour_campaigns": {
-    "Generic Phishing": 666,
-    "Financial Phishing": 28,
-    "Booking.com Phishing": 4,
+    "Generic Phishing": 671,
+    "Booking.com Phishing": 1,
+    " \"NanoCore": 1,
+    " \"n/a": 138,
     " \"Formbook": 26,
-    " \"n/a": 136,
     " \"ConnectWise": 6,
     " \"ValleyRAT": 10,
+    " \"Adware.Generic": 1,
     " \"Gafgyt": 10,
     " \"GuLoader": 2,
-    " \"Mirai": 216,
+    " \"Mirai": 214,
     " \"Amadey": 4,
     " \"njrat": 2,
     " \"Joker": 5,
@@ -41,7 +42,7 @@
     " \"Gh0stRAT": 1,
     " \"GoToResolve": 1,
     " \"Datzbro": 1,
-    " \"MaskGramStealer": 2,
+    " \"MaskGramStealer": 1,
     " \"Fuery": 2,
     " \"Gamaredon": 3,
     " \"XWorm": 5,
@@ -51,10 +52,10 @@
     " \"PhantomVAI": 2,
     " \"DarkCloud": 3,
     " \"Metamorfo": 2,
-    " \"VIPKeylogger": 1,
     "Spamhaus DROP List": 96,
     "CINS Threat List": 300,
-    "SSH Attacks": 500
+    "SSH Attacks": 500,
+    "Financial Phishing": 26
   },
   "dailySnapshots": [
     {
