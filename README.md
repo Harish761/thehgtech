@@ -1,2 +1,0 @@
-# thehgtech
-TheHGTech Newsletter Website
