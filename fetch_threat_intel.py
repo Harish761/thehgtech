@@ -774,7 +774,7 @@ def save_vendor_json_files(vendors_data):
     saved_files = []
     
     for vendor_name, vendor_data in vendors_data.items():
-        filename = f"{vendor_name.lower().replace(' ', '-')}.json"
+        filename = f"{vendor_name.lower().replace(' ', '-').replace('.', '-')}.json"
         iocs = vendor_data.get('iocs', [])
         
         data = {
