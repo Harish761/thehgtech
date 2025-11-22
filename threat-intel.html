@@ -976,6 +976,15 @@
                         'Phishing Database': '🗄️'
                     };
 
+                    const vendorUrls = {
+                        'OpenPhish': 'https://openphish.com/',
+                        'Malware Bazaar': 'https://bazaar.abuse.ch/',
+                        'Spamhaus DROP': 'https://www.spamhaus.org/drop/',
+                        'CINS Army': 'http://cinsscore.com/',
+                        'Blocklist.de': 'https://www.blocklist.de/',
+                        'Phishing Database': 'https://github.com/mitchellkrogza/Phishing.Database'
+                    };
+
                     const grid = document.getElementById('vendorStatusGrid');
                     if (!grid) return;
 
@@ -983,6 +992,7 @@
                     Object.entries(window.threatIntelData.vendors).forEach(([vendor, data]) => {
                         const icon = vendorIcons[vendor] || '🔷';
                         const count = (data.iocCount || 0).toLocaleString();
+                        const sourceUrl = vendorUrls[vendor] || '#';
 
                         html += '<div onclick="openVendorModal(\'' + vendor + '\')" style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 1.25rem; transition: all 0.3s ease; cursor: pointer; position: relative; overflow: hidden;" ' +
                             'onmouseover="this.style.transform=\'translateY(-4px)\'; this.style.borderColor=\'rgba(0, 217, 255, 0.4)\'; this.style.background=\'rgba(0, 217, 255, 0.05)\';" ' +
@@ -1003,6 +1013,9 @@
                             '<div style="text-align: center; padding-top: 0.75rem; border-top: 1px solid rgba(255, 255, 255, 0.05);">' +
                             '<div style="font-size: 1.5rem; font-weight: 700; color: var(--accent-cyan);">' + count + '</div>' +
                             '<div style="font-size: 0.7rem; color: var(--text-muted); margin-top: 0.25rem;">IOCs</div>' +
+                            '<a href="' + sourceUrl + '" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();" ' +
+                            'style="display: inline-block; margin-top: 0.5rem; font-size: 0.7rem; color: rgba(0, 217, 255, 0.8); text-decoration: none; transition: color 0.2s ease;" ' +
+                            'onmouseover="this.style.color=\'var(--accent-cyan)\';" onmouseout="this.style.color=\'rgba(0, 217, 255, 0.8)\';">🔗 Source</a>' +
                             '</div>' +
                             '</div>';
                     });
