@@ -775,21 +775,7 @@
 </head>
 
 <body>
-    <!-- Maintenance Banner -->
-    <div
-        style="background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%); color: white; padding: 1.5rem; text-align: center; position: sticky; top: 0; z-index: 10000; box-shadow: 0 2px 10px rgba(0,0,0,0.3); border-bottom: 3px solid #d63031;">
-        <div style="max-width: 1200px; margin: 0 auto;">
-            <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🔧 System Upgrade in Progress</div>
-            <div style="font-size: 1.1rem; opacity: 0.95;">
-                We're upgrading to <strong>unlimited IOC storage</strong> using GitHub Releases CDN.
-                This will increase coverage from 2,090 to <strong>12,000+ IOCs</strong> (6x more!) with faster page
-                loads.
-            </div>
-            <div style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.9;">
-                Expected completion: Within 24 hours | Current data is still being updated hourly
-            </div>
-        </div>
-    </div>
+
 
     <!-- Header -->
     <header class="header">
@@ -968,7 +954,8 @@
                 <h3 style="color: var(--text-primary); font-size: 1.1rem; margin-bottom: 1.5rem; font-weight: 600;">
                     🛡️ Active Threat Intelligence Sources
                 </h3>
-                <div id="vendorStatusGrid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem;">
+                <div id="vendorStatusGrid"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem;">
                     <!-- Vendors will be populated here -->
                 </div>
             </div>
@@ -996,9 +983,9 @@
                     Object.entries(window.threatIntelData.vendors).forEach(([vendor, data]) => {
                         const icon = vendorIcons[vendor] || '🔷';
                         const count = (data.iocCount || 0).toLocaleString();
-                        
-                        html += \`
-                            <div style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 1.25rem; transition: all 0.3s ease; cursor: pointer; position: relative; overflow: hidden;" 
+
+                        html += `
+                            <div onclick="openVendorModal('${vendor}')" style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 1.25rem; transition: all 0.3s ease; cursor: pointer; position: relative; overflow: hidden;" 
                                  onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='rgba(0, 217, 255, 0.4)'; this.style.background='rgba(0, 217, 255, 0.05)';" 
                                  onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='rgba(255, 255, 255, 0.1)'; this.style.background='rgba(255, 255, 255, 0.03)';">
                                 
@@ -1037,8 +1024,17 @@
 
             <style>
                 @keyframes pulse {
-                    0%, 100% { opacity: 1; transform: scale(1); }
-                    50% { opacity: 0.6; transform: scale(1.2); }
+
+                    0%,
+                    100% {
+                        opacity: 1;
+                        transform: scale(1);
+                    }
+
+                    50% {
+                        opacity: 0.6;
+                        transform: scale(1.2);
+                    }
                 }
             </style>
 
@@ -1402,7 +1398,7 @@
             const summary = data.dailySummary?.stats || {};
 
             let html = `
-                <div class="vendor-info">
+                            < div class="vendor-info" >
                     <h3>Latest Threats Across All Sources</h3>
                     <p>Real-time view of the most recent indicators from all active threat intelligence sources.</p>
                     <div class="vendor-stats">
@@ -1423,26 +1419,26 @@
                             <span class="vendor-stat-label">Active Campaigns</span>
                         </div>
                     </div>
-                </div>
-                <div class="ioc-grid">
-            `;
+                </div >
+                            <div class="ioc-grid">
+                                `;
 
             overview.slice(0, 20).forEach(ioc => {
-                html += renderIOCCard(ioc);
+                                    html += renderIOCCard(ioc);
             });
 
-            html += '</div>';
-            return html;
-        }
+                                html += '</div>';
+                        return html;
+                    }
 
         // Render vendor
         function renderVendor(vendorName, vendorData) {
-            if (!vendorData) return '<p>No data available for this vendor.</p>';
+                            if (!vendorData) return '<p>No data available for this vendor.</p>';
 
-            const iocs = vendorData.iocs || [];
-            const stats = vendorData.stats || {};
+                            const iocs = vendorData.iocs || [];
+                            const stats = vendorData.stats || {};
 
-            let html = `
+                            let html = `
                 <div class="vendor-info">
                     <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
                         <div>
@@ -1472,17 +1468,17 @@
                 <div class="ioc-grid">
             `;
 
-            iocs.slice(0, 50).forEach(ioc => {
-                html += renderIOCCard(ioc);
-            });
+                            iocs.slice(0, 50).forEach(ioc => {
+                                html += renderIOCCard(ioc);
+                            });
 
-            html += '</div>';
-            return html;
-        }
+                            html += '</div>';
+                            return html;
+                        }
 
         // Render IOC card
         function renderIOCCard(ioc) {
-            return `
+                            return `
                 <div class="ioc-card">
                     <div class="ioc-header">
                         <span class="ioc-type">${ioc.type || 'Unknown'}</span>
@@ -1496,7 +1492,7 @@
                     </div>
                 </div>
             `;
-        }
+                        }
 
         // ========================================
         // QUICK WIN FEATURES
@@ -1504,123 +1500,123 @@
 
         // Global variables for search/filter
         let currentSearchTerm = '';
-        let currentTypeFilter = 'all';
-        let currentModalIOC = null;
+            let currentTypeFilter = 'all';
+            let currentModalIOC = null;
 
-        // Search/Filter functionality
-        document.addEventListener('DOMContentLoaded', () => {
-            const searchInput = document.getElementById('iocSearch');
-            if (searchInput) {
-                searchInput.addEventListener('input', (e) => {
-                    currentSearchTerm = e.target.value;
-                    applyFilters();
-                });
-            }
-        });
-
-        function setFilter(type) {
-            currentTypeFilter = type;
-
-            // Update button styles
-            document.querySelectorAll('.filter-chip').forEach(btn => {
-                btn.classList.remove('active');
-                btn.style.background = 'var(--glass)';
-                btn.style.border = '1px solid var(--border)';
-                btn.style.color = 'var(--text-secondary)';
-            });
-
-            event.target.classList.add('active');
-            event.target.style.background = 'var(--accent-cyan)';
-            event.target.style.border = 'none';
-            event.target.style.color = 'white';
-
-            applyFilters();
-        }
-
-        function applyFilters() {
-            const cards = document.querySelectorAll('.ioc-card');
-            let visibleCount = 0;
-
-            cards.forEach(card => {
-                const text = card.textContent.toLowerCase();
-                const typeSpan = card.querySelector('.ioc-type');
-                const type = typeSpan ? typeSpan.textContent.toLowerCase() : '';
-
-                const matchesSearch = !currentSearchTerm || text.includes(currentSearchTerm.toLowerCase());
-                const matchesType = currentTypeFilter === 'all' || type.includes(currentTypeFilter);
-
-                if (matchesSearch && matchesType) {
-                    card.style.display = 'block';
-                    visibleCount++;
-                } else {
-                    card.style.display = 'none';
+            // Search/Filter functionality
+            document.addEventListener('DOMContentLoaded', () => {
+                const searchInput = document.getElementById('iocSearch');
+                if (searchInput) {
+                    searchInput.addEventListener('input', (e) => {
+                        currentSearchTerm = e.target.value;
+                        applyFilters();
+                    });
                 }
             });
 
-            // Update search results count
-            const resultsDiv = document.getElementById('searchResults');
-            if (resultsDiv) {
-                resultsDiv.textContent = `Showing ${visibleCount} of ${cards.length} IOCs`;
+            function setFilter(type) {
+                currentTypeFilter = type;
+
+                // Update button styles
+                document.querySelectorAll('.filter-chip').forEach(btn => {
+                    btn.classList.remove('active');
+                    btn.style.background = 'var(--glass)';
+                    btn.style.border = '1px solid var(--border)';
+                    btn.style.color = 'var(--text-secondary)';
+                });
+
+                event.target.classList.add('active');
+                event.target.style.background = 'var(--accent-cyan)';
+                event.target.style.border = 'none';
+                event.target.style.color = 'white';
+
+                applyFilters();
             }
-        }
 
-        // Export functionality
-        function exportVendorData(vendor, format) {
-            if (!threatIntelData || !threatIntelData.vendors || !threatIntelData.vendors[vendor]) {
-                alert('No data available for ' + vendor);
-                return;
+            function applyFilters() {
+                const cards = document.querySelectorAll('.ioc-card');
+                let visibleCount = 0;
+
+                cards.forEach(card => {
+                    const text = card.textContent.toLowerCase();
+                    const typeSpan = card.querySelector('.ioc-type');
+                    const type = typeSpan ? typeSpan.textContent.toLowerCase() : '';
+
+                    const matchesSearch = !currentSearchTerm || text.includes(currentSearchTerm.toLowerCase());
+                    const matchesType = currentTypeFilter === 'all' || type.includes(currentTypeFilter);
+
+                    if (matchesSearch && matchesType) {
+                        card.style.display = 'block';
+                        visibleCount++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+
+                // Update search results count
+                const resultsDiv = document.getElementById('searchResults');
+                if (resultsDiv) {
+                    resultsDiv.textContent = `Showing ${visibleCount} of ${cards.length} IOCs`;
+                }
             }
 
-            const data = threatIntelData.vendors[vendor].iocs;
+            // Export functionality
+            function exportVendorData(vendor, format) {
+                if (!threatIntelData || !threatIntelData.vendors || !threatIntelData.vendors[vendor]) {
+                    alert('No data available for ' + vendor);
+                    return;
+                }
 
-            if (format === 'csv') {
-                const csv = convertToCSV(data);
-                downloadFile(csv, `${vendor}_IOCs_${new Date().toISOString().split('T')[0]}.csv`, 'text/csv');
-            } else if (format === 'json') {
-                const json = JSON.stringify(data, null, 2);
-                downloadFile(json, `${vendor}_IOCs_${new Date().toISOString().split('T')[0]}.json`, 'application/json');
+                const data = threatIntelData.vendors[vendor].iocs;
+
+                if (format === 'csv') {
+                    const csv = convertToCSV(data);
+                    downloadFile(csv, `${vendor}_IOCs_${new Date().toISOString().split('T')[0]}.csv`, 'text/csv');
+                } else if (format === 'json') {
+                    const json = JSON.stringify(data, null, 2);
+                    downloadFile(json, `${vendor}_IOCs_${new Date().toISOString().split('T')[0]}.json`, 'application/json');
+                }
             }
-        }
 
-        function convertToCSV(iocs) {
-            const headers = ['Type', 'Indicator', 'Description', 'Timestamp', 'Source', 'Tags', 'Campaign'];
-            const rows = iocs.map(ioc => [
-                ioc.type || '',
-                ioc.indicator || '',
-                (ioc.description || '').replace(/,/g, ';'),
-                ioc.timestamp || '',
-                ioc.source || '',
-                (ioc.tags || []).join(';'),
-                (ioc.campaign || '').replace(/,/g, ';')
-            ]);
+            function convertToCSV(iocs) {
+                const headers = ['Type', 'Indicator', 'Description', 'Timestamp', 'Source', 'Tags', 'Campaign'];
+                const rows = iocs.map(ioc => [
+                    ioc.type || '',
+                    ioc.indicator || '',
+                    (ioc.description || '').replace(/,/g, ';'),
+                    ioc.timestamp || '',
+                    ioc.source || '',
+                    (ioc.tags || []).join(';'),
+                    (ioc.campaign || '').replace(/,/g, ';')
+                ]);
 
-            const csvContent = [
-                headers.join(','),
-                ...rows.map(row => row.map(cell => `"${cell}"`).join(','))
-            ].join('\n');
+                const csvContent = [
+                    headers.join(','),
+                    ...rows.map(row => row.map(cell => `"${cell}"`).join(','))
+                ].join('\n');
 
-            return csvContent;
-        }
+                return csvContent;
+            }
 
-        function downloadFile(content, filename, mimeType) {
-            const blob = new Blob([content], { type: mimeType });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = filename;
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
-        }
+            function downloadFile(content, filename, mimeType) {
+                const blob = new Blob([content], { type: mimeType });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = filename;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+            }
 
-        // IOC Details Modal
-        function showIOCDetails(ioc) {
-            currentModalIOC = ioc;
-            const modal = document.getElementById('iocModal');
-            const modalBody = document.getElementById('modalBody');
+            // IOC Details Modal
+            function showIOCDetails(ioc) {
+                currentModalIOC = ioc;
+                const modal = document.getElementById('iocModal');
+                const modalBody = document.getElementById('modalBody');
 
-            modalBody.innerHTML = `
+                modalBody.innerHTML = `
                 <div style="margin-bottom: 1.5rem;">
                     <h3 style="color: var(--accent-cyan); margin: 0 0 0.5rem 0; font-size: 1.1rem;">Indicator</h3>
                     <div onclick="selectIndicatorText()" style="padding: 1rem; background: rgba(0, 217, 255, 0.05); border: 1px solid rgba(0, 217, 255, 0.2); border-radius: 8px; cursor: text;">
@@ -1660,366 +1656,366 @@
                 </div>
             `;
 
-            // Set external links with full indicator
-            const indicator = ioc.indicator || '';
-            const iocType = (ioc.type || '').toLowerCase();
+                // Set external links with full indicator
+                const indicator = ioc.indicator || '';
+                const iocType = (ioc.type || '').toLowerCase();
 
-            // For URLs, encode properly; for hashes/IPs, use as-is
-            if (iocType.includes('url')) {
-                // For URLs, use the full URL
-                document.getElementById('vtLink').href = `https://www.virustotal.com/gui/url/${btoa(indicator).replace(/=/g, '')}/detection`;
-            } else {
-                // For hashes, IPs, domains - use search
-                document.getElementById('vtLink').href = `https://www.virustotal.com/gui/search/${encodeURIComponent(indicator)}`;
+                // For URLs, encode properly; for hashes/IPs, use as-is
+                if (iocType.includes('url')) {
+                    // For URLs, use the full URL
+                    document.getElementById('vtLink').href = `https://www.virustotal.com/gui/url/${btoa(indicator).replace(/=/g, '')}/detection`;
+                } else {
+                    // For hashes, IPs, domains - use search
+                    document.getElementById('vtLink').href = `https://www.virustotal.com/gui/search/${encodeURIComponent(indicator)}`;
+                }
+
+                // AbuseIPDB only works with IPs
+                const abuseLink = document.getElementById('abuseLink');
+                if (iocType.includes('ip')) {
+                    abuseLink.href = `https://www.abuseipdb.com/check/${encodeURIComponent(indicator)}`;
+                    abuseLink.style.display = 'block';
+                } else {
+                    // Hide for non-IPs
+                    abuseLink.style.display = 'none';
+                }
+
+
+                modal.style.display = 'block';
             }
 
-            // AbuseIPDB only works with IPs
-            const abuseLink = document.getElementById('abuseLink');
-            if (iocType.includes('ip')) {
-                abuseLink.href = `https://www.abuseipdb.com/check/${encodeURIComponent(indicator)}`;
-                abuseLink.style.display = 'block';
-            } else {
-                // Hide for non-IPs
-                abuseLink.style.display = 'none';
+            function closeModal() {
+                document.getElementById('iocModal').style.display = 'none';
+                currentModalIOC = null;
             }
 
-
-            modal.style.display = 'block';
-        }
-
-        function closeModal() {
-            document.getElementById('iocModal').style.display = 'none';
-            currentModalIOC = null;
-        }
-
-        function selectIndicatorText() {
-            const textElement = document.getElementById('indicatorText');
-            if (textElement) {
-                const range = document.createRange();
-                range.selectNodeContents(textElement);
-                const selection = window.getSelection();
-                selection.removeAllRanges();
-                selection.addRange(range);
+            function selectIndicatorText() {
+                const textElement = document.getElementById('indicatorText');
+                if (textElement) {
+                    const range = document.createRange();
+                    range.selectNodeContents(textElement);
+                    const selection = window.getSelection();
+                    selection.removeAllRanges();
+                    selection.addRange(range);
+                }
             }
-        }
 
-        function copyIOC() {
-            if (currentModalIOC && currentModalIOC.indicator) {
-                navigator.clipboard.writeText(currentModalIOC.indicator).then(() => {
-                    alert('IOC copied to clipboard!');
-                }).catch(err => {
-                    console.error('Failed to copy:', err);
-                });
-            }
-        }
-
-        // Close modal on outside click
-        window.onclick = function (event) {
-            const modal = document.getElementById('iocModal');
-            if (event.target === modal) {
-                closeModal();
-            }
-        }
-
-        // ========== STATISTICS MODAL FUNCTIONS ==========
-
-        function toggleStatCard(cardType) {
-            // Open modal instead of inline expansion
-            openStatsModal(cardType);
-        }
-
-        function openStatsModal(cardType) {
-            const modal = document.getElementById('statsModal');
-            const title = document.getElementById('statsModalTitle');
-            const content = document.getElementById('statsModalContent');
-            const searchInput = document.getElementById('statsModalSearch');
-            const countDiv = document.getElementById('statsModalCount');
-
-            // Clear search
-            searchInput.value = '';
-
-            // Set title and populate content based on card type
-            if (cardType === 'totalIOCsCard') {
-                title.textContent = 'All IOCs (294+)';
-                let html = '';
-                let totalCount = 0;
-
-                if (threatIntelData && threatIntelData.vendors) {
-                    Object.entries(threatIntelData.vendors).forEach(([vendor, data]) => {
-                        if (data.iocs && data.iocs.length > 0) {
-                            html += `<div style="margin-bottom: 2rem;">`;
-                            html += `<h3 style="color: var(--accent-cyan); font-size: 1.1rem; margin-bottom: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;">${vendor} (${data.iocs.length} IOCs)</h3>`;
-                            data.iocs.forEach(ioc => {
-                                html += `<div class="modal-stat-item" style="padding: 0.75rem; background: rgba(255, 255, 255, 0.02); border-radius: 6px; margin-bottom: 0.5rem; font-size: 0.9rem; word-break: break-all; border-left: 3px solid var(--accent-cyan);">`;
-                                html += `<div style="color: var(--text-primary); font-weight: 500;">${ioc.indicator}</div>`;
-                                html += `<div style="color: var(--text-muted); font-size: 0.8rem; margin-top: 0.25rem;">Type: ${ioc.type} | Source: ${vendor}</div>`;
-                                html += `</div>`;
-                                totalCount++;
-                            });
-                            html += `</div>`;
-                        }
+            function copyIOC() {
+                if (currentModalIOC && currentModalIOC.indicator) {
+                    navigator.clipboard.writeText(currentModalIOC.indicator).then(() => {
+                        alert('IOC copied to clipboard!');
+                    }).catch(err => {
+                        console.error('Failed to copy:', err);
                     });
                 }
-                content.innerHTML = html || '<p style="color: var(--text-muted);">No IOCs available</p>';
-                countDiv.textContent = `Showing ${totalCount} IOCs`;
+            }
 
-            } else if (cardType === 'newIOCsCard') {
-                title.textContent = 'New IOCs (Last Hour)';
-                const oneHourAgo = Date.now() - (60 * 60 * 1000);
-                let html = '';
-                let totalCount = 0;
-                if (threatIntelData && threatIntelData.vendors) {
-                    Object.entries(threatIntelData.vendors).forEach(([vendor, data]) => {
-                        if (data.iocs) {
-                            const newIOCs = data.iocs.filter(ioc => {
-                                const iocTime = new Date(ioc.first_seen || ioc.timestamp || 0).getTime();
-                                return iocTime > oneHourAgo;
-                            });
+            // Close modal on outside click
+            window.onclick = function (event) {
+                const modal = document.getElementById('iocModal');
+                if (event.target === modal) {
+                    closeModal();
+                }
+            }
 
-                            if (newIOCs.length > 0) {
+            // ========== STATISTICS MODAL FUNCTIONS ==========
+
+            function toggleStatCard(cardType) {
+                // Open modal instead of inline expansion
+                openStatsModal(cardType);
+            }
+
+            function openStatsModal(cardType) {
+                const modal = document.getElementById('statsModal');
+                const title = document.getElementById('statsModalTitle');
+                const content = document.getElementById('statsModalContent');
+                const searchInput = document.getElementById('statsModalSearch');
+                const countDiv = document.getElementById('statsModalCount');
+
+                // Clear search
+                searchInput.value = '';
+
+                // Set title and populate content based on card type
+                if (cardType === 'totalIOCsCard') {
+                    title.textContent = 'All IOCs (294+)';
+                    let html = '';
+                    let totalCount = 0;
+
+                    if (threatIntelData && threatIntelData.vendors) {
+                        Object.entries(threatIntelData.vendors).forEach(([vendor, data]) => {
+                            if (data.iocs && data.iocs.length > 0) {
                                 html += `<div style="margin-bottom: 2rem;">`;
-                                html += `<h3 style="color: var(--accent-red); font-size: 1.1rem; margin-bottom: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;">${vendor} (${newIOCs.length} new)</h3>`;
-                                newIOCs.forEach(ioc => {
-                                    html += `<div class="modal-stat-item" style="padding: 0.75rem; background: rgba(255, 76, 76, 0.05); border-radius: 6px; margin-bottom: 0.5rem; font-size: 0.9rem; word-break: break-all; border-left: 3px solid var(--accent-red);">`;
+                                html += `<h3 style="color: var(--accent-cyan); font-size: 1.1rem; margin-bottom: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;">${vendor} (${data.iocs.length} IOCs)</h3>`;
+                                data.iocs.forEach(ioc => {
+                                    html += `<div class="modal-stat-item" style="padding: 0.75rem; background: rgba(255, 255, 255, 0.02); border-radius: 6px; margin-bottom: 0.5rem; font-size: 0.9rem; word-break: break-all; border-left: 3px solid var(--accent-cyan);">`;
                                     html += `<div style="color: var(--text-primary); font-weight: 500;">${ioc.indicator}</div>`;
-                                    html += `<div style="color: var(--text-muted); font-size: 0.8rem; margin-top: 0.25rem;">Type: ${ioc.type}</div>`;
+                                    html += `<div style="color: var(--text-muted); font-size: 0.8rem; margin-top: 0.25rem;">Type: ${ioc.type} | Source: ${vendor}</div>`;
                                     html += `</div>`;
                                     totalCount++;
                                 });
                                 html += `</div>`;
                             }
-                        }
-                    });
-                }
-                content.innerHTML = html || '<p style="color: var(--text-muted);">No new IOCs in the last hour</p>';
-                countDiv.textContent = totalCount > 0 ? `Showing ${totalCount} new IOCs` : 'No new IOCs';
+                        });
+                    }
+                    content.innerHTML = html || '<p style="color: var(--text-muted);">No IOCs available</p>';
+                    countDiv.textContent = `Showing ${totalCount} IOCs`;
 
-            } else if (cardType === 'campaignsCard') {
-                title.textContent = 'Active Campaigns';
-                let html = '';
+                } else if (cardType === 'newIOCsCard') {
+                    title.textContent = 'New IOCs (Last Hour)';
+                    const oneHourAgo = Date.now() - (60 * 60 * 1000);
+                    let html = '';
+                    let totalCount = 0;
+                    if (threatIntelData && threatIntelData.vendors) {
+                        Object.entries(threatIntelData.vendors).forEach(([vendor, data]) => {
+                            if (data.iocs) {
+                                const newIOCs = data.iocs.filter(ioc => {
+                                    const iocTime = new Date(ioc.first_seen || ioc.timestamp || 0).getTime();
+                                    return iocTime > oneHourAgo;
+                                });
+
+                                if (newIOCs.length > 0) {
+                                    html += `<div style="margin-bottom: 2rem;">`;
+                                    html += `<h3 style="color: var(--accent-red); font-size: 1.1rem; margin-bottom: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;">${vendor} (${newIOCs.length} new)</h3>`;
+                                    newIOCs.forEach(ioc => {
+                                        html += `<div class="modal-stat-item" style="padding: 0.75rem; background: rgba(255, 76, 76, 0.05); border-radius: 6px; margin-bottom: 0.5rem; font-size: 0.9rem; word-break: break-all; border-left: 3px solid var(--accent-red);">`;
+                                        html += `<div style="color: var(--text-primary); font-weight: 500;">${ioc.indicator}</div>`;
+                                        html += `<div style="color: var(--text-muted); font-size: 0.8rem; margin-top: 0.25rem;">Type: ${ioc.type}</div>`;
+                                        html += `</div>`;
+                                        totalCount++;
+                                    });
+                                    html += `</div>`;
+                                }
+                            }
+                        });
+                    }
+                    content.innerHTML = html || '<p style="color: var(--text-muted);">No new IOCs in the last hour</p>';
+                    countDiv.textContent = totalCount > 0 ? `Showing ${totalCount} new IOCs` : 'No new IOCs';
+
+                } else if (cardType === 'campaignsCard') {
+                    title.textContent = 'Active Campaigns';
+                    let html = '';
+                    const campaigns = new Set();
+
+                    if (threatIntelData && threatIntelData.vendors) {
+                        Object.values(threatIntelData.vendors).forEach(data => {
+                            if (data.iocs) {
+                                data.iocs.forEach(ioc => {
+                                    if (ioc.campaign) campaigns.add(ioc.campaign);
+                                });
+                            }
+                        });
+                    }
+
+                    if (campaigns.size > 0) {
+                        Array.from(campaigns).forEach(campaign => {
+                            html += `<div class="modal-stat-item" style="padding: 1.25rem; background: rgba(0, 255, 136, 0.05); border-radius: 8px; margin-bottom: 1rem; border-left: 3px solid #00ff88;">`;
+                            html += `<div style="color: #00ff88; font-weight: 600; font-size: 1.1rem; margin-bottom: 0.5rem;">${campaign}</div>`;
+                            html += `<div style="color: var(--text-muted); font-size: 0.9rem;">Active threat campaign</div>`;
+                            html += `</div>`;
+                        });
+                    } else {
+                        html = '<p style="color: var(--text-muted);">No active campaigns detected</p>';
+                    }
+
+                    content.innerHTML = html;
+                    countDiv.textContent = `${campaigns.size} active campaigns`;
+
+                } else if (cardType === 'vendorsCard') {
+                    title.textContent = 'Vendor Status';
+                    let html = '';
+                    let activeCount = 0;
+                    if (threatIntelData && threatIntelData.vendors) {
+                        Object.entries(threatIntelData.vendors).forEach(([vendor, data]) => {
+                            const iocCount = data.iocs ? data.iocs.length : 0;
+                            const status = iocCount > 0 ? 'Active' : 'Inactive';
+                            const statusColor = iocCount > 0 ? '#00ff88' : '#ff4c4c';
+                            if (iocCount > 0) activeCount++;
+
+                            html += `<div class="modal-stat-item" style="padding: 1.25rem; background: rgba(255, 165, 0, 0.05); border-radius: 8px; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; border-left: 3px solid #ffa500;">`;
+                            html += `<div>`;
+                            html += `<div style="color: #ffa500; font-weight: 600; font-size: 1.1rem;">${vendor}</div>`;
+                            html += `<div style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.25rem;">${iocCount} IOCs collected</div>`;
+                            html += `</div>`;
+                            html += `<div style="padding: 0.5rem 1rem; background: ${statusColor}22; border-radius: 6px; color: ${statusColor}; font-size: 0.9rem; font-weight: 600;">${status}</div>`;
+                            html += `</div>`;
+                        });
+                    }
+
+                    content.innerHTML = html || '<p style="color: var(--text-muted);">No vendors available</p>';
+                    countDiv.textContent = `${activeCount} active vendors`;
+                }
+
+                // Show modal
+                modal.style.display = 'block';
+            }
+
+            function closeStatsModal() {
+                document.getElementById('statsModal').style.display = 'none';
+            }
+
+            function filterStatsModal() {
+                const searchInput = document.getElementById('statsModalSearch');
+                const content = document.getElementById('statsModalContent');
+                const countDiv = document.getElementById('statsModalCount');
+                const searchTerm = searchInput.value.toLowerCase();
+
+                const items = content.querySelectorAll('.modal-stat-item');
+                let visibleCount = 0;
+                let totalCount = items.length;
+
+                items.forEach(item => {
+                    const text = item.textContent.toLowerCase();
+                    if (text.includes(searchTerm)) {
+                        item.style.display = 'block';
+                        visibleCount++;
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+
+                if (searchTerm) {
+                    countDiv.textContent = `Found ${visibleCount} of ${totalCount} items`;
+                } else {
+                    countDiv.textContent = `Showing ${totalCount} items`;
+                }
+            }
+
+            // Close modal on outside click
+            window.onclick = function (event) {
+                const modal = document.getElementById('iocModal');
+                if (event.target === modal) {
+                    closeModal();
+                }
+                const statsModal = document.getElementById('statsModal');
+                if (event.target === statsModal) {
+                    closeStatsModal();
+                }
+            }
+
+            // ========== DEEP LINKING NAVIGATION FUNCTIONS ==========
+
+            function navigateToIOC(iocIndex) {
+                // Get IOC data from global array
+                const iocData = window.modalIOCs[iocIndex];
+                if (!iocData) return;
+
+                // Close the stats modal
+                closeStatsModal();
+
+                // Small delay to let modal close smoothly
+                setTimeout(() => {
+                    // Open the IOC details modal with the data
+                    openModal(iocData);
+                }, 200);
+            }
+
+            function navigateToVendor(vendorName) {
+                // Close the stats modal
+                closeStatsModal();
+
+                // Small delay to let modal close smoothly
+                setTimeout(() => {
+                    // Switch to the vendor tab
+                    switchTab(vendorName);
+
+                    // Scroll to vendor content area
+                    const vendorContent = document.getElementById('vendorContent');
+                    if (vendorContent) {
+                        vendorContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                }, 200);
+            }
+
+            // ========== INTERACTIVE STATISTICS CARDS ==========
+
+            // Statistics Dashboard
+            function generateStatistics() {
+                if (!window.threatIntelData || !window.threatIntelData.vendors) {
+                    console.log('No threat data available for statistics');
+                    return;
+                }
+
+                let totalIOCs = 0;
+                let newIOCs = 0;
                 const campaigns = new Set();
 
-                if (threatIntelData && threatIntelData.vendors) {
-                    Object.values(threatIntelData.vendors).forEach(data => {
-                        if (data.iocs) {
-                            data.iocs.forEach(ioc => {
-                                if (ioc.campaign) campaigns.add(ioc.campaign);
-                            });
-                        }
-                    });
-                }
+                Object.values(window.threatIntelData.vendors).forEach(vendor => {
+                    // Use stats metadata instead of iocs array
+                    if (vendor.stats) {
+                        totalIOCs += vendor.stats.total || 0;
+                        newIOCs += vendor.stats.newInLastHour || 0;
+                    }
 
-                if (campaigns.size > 0) {
-                    Array.from(campaigns).forEach(campaign => {
-                        html += `<div class="modal-stat-item" style="padding: 1.25rem; background: rgba(0, 255, 136, 0.05); border-radius: 8px; margin-bottom: 1rem; border-left: 3px solid #00ff88;">`;
-                        html += `<div style="color: #00ff88; font-weight: 600; font-size: 1.1rem; margin-bottom: 0.5rem;">${campaign}</div>`;
-                        html += `<div style="color: var(--text-muted); font-size: 0.9rem;">Active threat campaign</div>`;
-                        html += `</div>`;
-                    });
+                    // Collect campaigns from sample indicators if available
+                    if (vendor.sampleIndicators) {
+                        vendor.sampleIndicators.forEach(indicator => {
+                            // Extract campaign from indicator if it's an object
+                            if (typeof indicator === 'object' && indicator.campaign) {
+                                campaigns.add(indicator.campaign);
+                            }
+                        });
+                    }
+                });
+
+                const totalElement = document.getElementById('totalIOCs');
+                const newElement = document.getElementById('newIOCs');
+                const campaignsElement = document.getElementById('activeCampaigns');
+
+                console.log('Elements found:', {
+                    totalElement: !!totalElement,
+                    newElement: !!newElement,
+                    campaignsElement: !!campaignsElement
+                });
+
+                if (totalElement) {
+                    totalElement.textContent = totalIOCs.toLocaleString();
+                    console.log('Updated totalIOCs to:', totalIOCs);
                 } else {
-                    html = '<p style="color: var(--text-muted);">No active campaigns detected</p>';
+                    console.error('totalIOCs element not found!');
                 }
 
-                content.innerHTML = html;
-                countDiv.textContent = `${campaigns.size} active campaigns`;
+                if (newElement) {
+                    newElement.textContent = newIOCs.toLocaleString();
+                    console.log('Updated newIOCs to:', newIOCs);
+                } else {
+                    console.error('newIOCs element not found!');
+                }
 
-            } else if (cardType === 'vendorsCard') {
-                title.textContent = 'Vendor Status';
+                if (campaignsElement) {
+                    campaignsElement.textContent = campaigns.size.toLocaleString();
+                    console.log('Updated activeCampaigns to:', campaigns.size);
+                } else {
+                    console.error('activeCampaigns element not found!');
+                }
+
+                console.log(`Statistics updated: ${totalIOCs} total, ${newIOCs} new, ${campaigns.size} campaigns`);
+            }
+
+
+            // Update renderIOCCard to add click handler
+            const originalRenderIOCCard = renderIOCCard;
+            renderIOCCard = function (ioc) {
+                const cardHTML = originalRenderIOCCard(ioc);
+                // Add onclick to the card
+                return cardHTML.replace('<div class="ioc-card">', `<div class="ioc-card" onclick='showIOCDetails(${JSON.stringify(ioc).replace(/'/g, "\\'")})'  style="cursor: pointer;">`);
+            }
+
+            // ========================================
+            // END QUICK WIN FEATURES
+            // ========================================
+
+            // Load analytics
+            function loadAnalytics(data) {
+                const summary = data.dailySummary;
+                if (!summary) return;
+
+                document.getElementById('analyticsSection').style.display = 'block';
+                const grid = document.getElementById('analyticsGrid');
+
                 let html = '';
-                let activeCount = 0;
-                if (threatIntelData && threatIntelData.vendors) {
-                    Object.entries(threatIntelData.vendors).forEach(([vendor, data]) => {
-                        const iocCount = data.iocs ? data.iocs.length : 0;
-                        const status = iocCount > 0 ? 'Active' : 'Inactive';
-                        const statusColor = iocCount > 0 ? '#00ff88' : '#ff4c4c';
-                        if (iocCount > 0) activeCount++;
 
-                        html += `<div class="modal-stat-item" style="padding: 1.25rem; background: rgba(255, 165, 0, 0.05); border-radius: 8px; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; border-left: 3px solid #ffa500;">`;
-                        html += `<div>`;
-                        html += `<div style="color: #ffa500; font-weight: 600; font-size: 1.1rem;">${vendor}</div>`;
-                        html += `<div style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.25rem;">${iocCount} IOCs collected</div>`;
-                        html += `</div>`;
-                        html += `<div style="padding: 0.5rem 1rem; background: ${statusColor}22; border-radius: 6px; color: ${statusColor}; font-size: 0.9rem; font-weight: 600;">${status}</div>`;
-                        html += `</div>`;
-                    });
-                }
-
-                content.innerHTML = html || '<p style="color: var(--text-muted);">No vendors available</p>';
-                countDiv.textContent = `${activeCount} active vendors`;
-            }
-
-            // Show modal
-            modal.style.display = 'block';
-        }
-
-        function closeStatsModal() {
-            document.getElementById('statsModal').style.display = 'none';
-        }
-
-        function filterStatsModal() {
-            const searchInput = document.getElementById('statsModalSearch');
-            const content = document.getElementById('statsModalContent');
-            const countDiv = document.getElementById('statsModalCount');
-            const searchTerm = searchInput.value.toLowerCase();
-
-            const items = content.querySelectorAll('.modal-stat-item');
-            let visibleCount = 0;
-            let totalCount = items.length;
-
-            items.forEach(item => {
-                const text = item.textContent.toLowerCase();
-                if (text.includes(searchTerm)) {
-                    item.style.display = 'block';
-                    visibleCount++;
-                } else {
-                    item.style.display = 'none';
-                }
-            });
-
-            if (searchTerm) {
-                countDiv.textContent = `Found ${visibleCount} of ${totalCount} items`;
-            } else {
-                countDiv.textContent = `Showing ${totalCount} items`;
-            }
-        }
-
-        // Close modal on outside click
-        window.onclick = function (event) {
-            const modal = document.getElementById('iocModal');
-            if (event.target === modal) {
-                closeModal();
-            }
-            const statsModal = document.getElementById('statsModal');
-            if (event.target === statsModal) {
-                closeStatsModal();
-            }
-        }
-
-        // ========== DEEP LINKING NAVIGATION FUNCTIONS ==========
-
-        function navigateToIOC(iocIndex) {
-            // Get IOC data from global array
-            const iocData = window.modalIOCs[iocIndex];
-            if (!iocData) return;
-
-            // Close the stats modal
-            closeStatsModal();
-
-            // Small delay to let modal close smoothly
-            setTimeout(() => {
-                // Open the IOC details modal with the data
-                openModal(iocData);
-            }, 200);
-        }
-
-        function navigateToVendor(vendorName) {
-            // Close the stats modal
-            closeStatsModal();
-
-            // Small delay to let modal close smoothly
-            setTimeout(() => {
-                // Switch to the vendor tab
-                switchTab(vendorName);
-
-                // Scroll to vendor content area
-                const vendorContent = document.getElementById('vendorContent');
-                if (vendorContent) {
-                    vendorContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            }, 200);
-        }
-
-        // ========== INTERACTIVE STATISTICS CARDS ==========
-
-        // Statistics Dashboard
-        function generateStatistics() {
-            if (!window.threatIntelData || !window.threatIntelData.vendors) {
-                console.log('No threat data available for statistics');
-                return;
-            }
-
-            let totalIOCs = 0;
-            let newIOCs = 0;
-            const campaigns = new Set();
-
-            Object.values(window.threatIntelData.vendors).forEach(vendor => {
-                // Use stats metadata instead of iocs array
-                if (vendor.stats) {
-                    totalIOCs += vendor.stats.total || 0;
-                    newIOCs += vendor.stats.newInLastHour || 0;
-                }
-
-                // Collect campaigns from sample indicators if available
-                if (vendor.sampleIndicators) {
-                    vendor.sampleIndicators.forEach(indicator => {
-                        // Extract campaign from indicator if it's an object
-                        if (typeof indicator === 'object' && indicator.campaign) {
-                            campaigns.add(indicator.campaign);
-                        }
-                    });
-                }
-            });
-
-            const totalElement = document.getElementById('totalIOCs');
-            const newElement = document.getElementById('newIOCs');
-            const campaignsElement = document.getElementById('activeCampaigns');
-
-            console.log('Elements found:', {
-                totalElement: !!totalElement,
-                newElement: !!newElement,
-                campaignsElement: !!campaignsElement
-            });
-
-            if (totalElement) {
-                totalElement.textContent = totalIOCs.toLocaleString();
-                console.log('Updated totalIOCs to:', totalIOCs);
-            } else {
-                console.error('totalIOCs element not found!');
-            }
-
-            if (newElement) {
-                newElement.textContent = newIOCs.toLocaleString();
-                console.log('Updated newIOCs to:', newIOCs);
-            } else {
-                console.error('newIOCs element not found!');
-            }
-
-            if (campaignsElement) {
-                campaignsElement.textContent = campaigns.size.toLocaleString();
-                console.log('Updated activeCampaigns to:', campaigns.size);
-            } else {
-                console.error('activeCampaigns element not found!');
-            }
-
-            console.log(`Statistics updated: ${totalIOCs} total, ${newIOCs} new, ${campaigns.size} campaigns`);
-        }
-
-
-        // Update renderIOCCard to add click handler
-        const originalRenderIOCCard = renderIOCCard;
-        renderIOCCard = function (ioc) {
-            const cardHTML = originalRenderIOCCard(ioc);
-            // Add onclick to the card
-            return cardHTML.replace('<div class="ioc-card">', `<div class="ioc-card" onclick='showIOCDetails(${JSON.stringify(ioc).replace(/'/g, "\\'")})'  style="cursor: pointer;">`);
-        }
-
-        // ========================================
-        // END QUICK WIN FEATURES
-        // ========================================
-
-        // Load analytics
-        function loadAnalytics(data) {
-            const summary = data.dailySummary;
-            if (!summary) return;
-
-            document.getElementById('analyticsSection').style.display = 'block';
-            const grid = document.getElementById('analyticsGrid');
-
-            let html = '';
-
-            // Top Threats
-            if (summary.topThreats && summary.topThreats.length > 0) {
-                html += `
+                // Top Threats
+                if (summary.topThreats && summary.topThreats.length > 0) {
+                    html += `
                     <div class="analytics-card">
                         <h3>Top Threats</h3>
                         <ul class="analytics-list">
@@ -2032,11 +2028,11 @@
                         </ul>
                     </div>
                 `;
-            }
+                }
 
-            // Targeted Sectors
-            if (summary.targetedSectors && summary.targetedSectors.length > 0) {
-                html += `
+                // Targeted Sectors
+                if (summary.targetedSectors && summary.targetedSectors.length > 0) {
+                    html += `
                     <div class="analytics-card">
                         <h3>Targeted Sectors</h3>
                         <ul class="analytics-list">
@@ -2049,11 +2045,11 @@
                         </ul>
                     </div>
                 `;
-            }
+                }
 
-            // Active Campaigns
-            if (summary.campaigns && summary.campaigns.length > 0) {
-                html += `
+                // Active Campaigns
+                if (summary.campaigns && summary.campaigns.length > 0) {
+                    html += `
                     <div class="analytics-card">
                         <h3>Active Campaigns</h3>
                         <ul class="analytics-list">
@@ -2066,163 +2062,163 @@
                         </ul>
                     </div>
                 `;
+                }
+
+                grid.innerHTML = html;
             }
 
-            grid.innerHTML = html;
-        }
+            // Format time
+            function formatTime(timestamp) {
+                if (!timestamp) return 'Unknown';
+                try {
+                    const date = new Date(timestamp);
+                    const now = new Date();
+                    const diff = Math.floor((now - date) / 1000 / 60); // minutes
 
-        // Format time
-        function formatTime(timestamp) {
-            if (!timestamp) return 'Unknown';
-            try {
-                const date = new Date(timestamp);
-                const now = new Date();
-                const diff = Math.floor((now - date) / 1000 / 60); // minutes
-
-                if (diff < 60) return `${diff}m ago`;
-                if (diff < 1440) return `${Math.floor(diff / 60)}h ago`;
-                return `${Math.floor(diff / 1440)}d ago`;
-            } catch {
-                return 'Unknown';
-            }
-        }
-
-        // ========== 7-DAY TREND VISUALIZATION ==========
-        // Load and render historical trend charts
-        function loadTrendCharts() {
-            // Check if history data is loaded
-            if (typeof threatIntelHistory === 'undefined' || !threatIntelHistory.dailySnapshots) {
-                console.log('No historical data available for trends');
-                return;
+                    if (diff < 60) return `${diff}m ago`;
+                    if (diff < 1440) return `${Math.floor(diff / 60)}h ago`;
+                    return `${Math.floor(diff / 1440)}d ago`;
+                } catch {
+                    return 'Unknown';
+                }
             }
 
-            const snapshots = threatIntelHistory.dailySnapshots;
-            if (snapshots.length === 0) {
-                console.log('No snapshots in history');
-                return;
-            }
+            // ========== 7-DAY TREND VISUALIZATION ==========
+            // Load and render historical trend charts
+            function loadTrendCharts() {
+                // Check if history data is loaded
+                if (typeof threatIntelHistory === 'undefined' || !threatIntelHistory.dailySnapshots) {
+                    console.log('No historical data available for trends');
+                    return;
+                }
 
-            // Sort by date ascending for charts
-            snapshots.sort((a, b) => a.date.localeCompare(b.date));
+                const snapshots = threatIntelHistory.dailySnapshots;
+                if (snapshots.length === 0) {
+                    console.log('No snapshots in history');
+                    return;
+                }
 
-            // Prepare data
-            const dates = snapshots.map(s => {
-                const d = new Date(s.date);
-                return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-            });
-            const totalIOCs = snapshots.map(s => s.metrics.totalIOCs);
-            const newIOCs = snapshots.map(s => s.metrics.newIOCs);
+                // Sort by date ascending for charts
+                snapshots.sort((a, b) => a.date.localeCompare(b.date));
 
-            // Chart.js default config
-            Chart.defaults.color = '#9CA3AF';
-            Chart.defaults.borderColor = 'rgba(255, 255, 255, 0.1)';
-            Chart.defaults.font.family = "'Inter', sans-serif";
-
-            // Total IOCs Trend (Line Chart)
-            const totalCtx = document.getElementById('totalIOCsChart');
-            if (totalCtx) {
-                new Chart(totalCtx, {
-                    type: 'line',
-                    data: {
-                        labels: dates,
-                        datasets: [{
-                            label: 'Total IOCs',
-                            data: totalIOCs,
-                            borderColor: '#00D9FF',
-                            backgroundColor: 'rgba(0, 217, 255, 0.1)',
-                            borderWidth: 2,
-                            fill: true,
-                            tension: 0.4
-                        }]
-                    },
-                    options: {
-                        responsive: true,
-                        maintainAspectRatio: false,
-                        plugins: {
-                            legend: { display: false },
-                            tooltip: {
-                                backgroundColor: 'rgba(0, 0, 0, 0.8)',
-                                titleColor: '#00D9FF',
-                                bodyColor: '#fff',
-                                borderColor: '#00D9FF',
-                                borderWidth: 1
-                            }
-                        },
-                        scales: {
-                            y: { beginAtZero: true, grid: { color: 'rgba(255, 255, 255, 0.05)' } },
-                            x: { grid: { display: false } }
-                        }
-                    }
+                // Prepare data
+                const dates = snapshots.map(s => {
+                    const d = new Date(s.date);
+                    return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
                 });
-            }
+                const totalIOCs = snapshots.map(s => s.metrics.totalIOCs);
+                const newIOCs = snapshots.map(s => s.metrics.newIOCs);
 
-            // New IOCs per Day (Bar Chart)
-            const newCtx = document.getElementById('newIOCsChart');
-            if (newCtx) {
-                new Chart(newCtx, {
-                    type: 'bar',
-                    data: {
-                        labels: dates,
-                        datasets: [{
-                            label: 'New IOCs',
-                            data: newIOCs,
-                            backgroundColor: '#FF4C4C',
-                            borderColor: '#FF4C4C',
-                            borderWidth: 1
-                        }]
-                    },
-                    options: {
-                        responsive: true,
-                        maintainAspectRatio: false,
-                        plugins: {
-                            legend: { display: false },
-                            tooltip: {
-                                backgroundColor: 'rgba(0, 0, 0, 0.8)',
-                                titleColor: '#FF4C4C',
-                                bodyColor: '#fff',
+                // Chart.js default config
+                Chart.defaults.color = '#9CA3AF';
+                Chart.defaults.borderColor = 'rgba(255, 255, 255, 0.1)';
+                Chart.defaults.font.family = "'Inter', sans-serif";
+
+                // Total IOCs Trend (Line Chart)
+                const totalCtx = document.getElementById('totalIOCsChart');
+                if (totalCtx) {
+                    new Chart(totalCtx, {
+                        type: 'line',
+                        data: {
+                            labels: dates,
+                            datasets: [{
+                                label: 'Total IOCs',
+                                data: totalIOCs,
+                                borderColor: '#00D9FF',
+                                backgroundColor: 'rgba(0, 217, 255, 0.1)',
+                                borderWidth: 2,
+                                fill: true,
+                                tension: 0.4
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            plugins: {
+                                legend: { display: false },
+                                tooltip: {
+                                    backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                                    titleColor: '#00D9FF',
+                                    bodyColor: '#fff',
+                                    borderColor: '#00D9FF',
+                                    borderWidth: 1
+                                }
+                            },
+                            scales: {
+                                y: { beginAtZero: true, grid: { color: 'rgba(255, 255, 255, 0.05)' } },
+                                x: { grid: { display: false } }
+                            }
+                        }
+                    });
+                }
+
+                // New IOCs per Day (Bar Chart)
+                const newCtx = document.getElementById('newIOCsChart');
+                if (newCtx) {
+                    new Chart(newCtx, {
+                        type: 'bar',
+                        data: {
+                            labels: dates,
+                            datasets: [{
+                                label: 'New IOCs',
+                                data: newIOCs,
+                                backgroundColor: '#FF4C4C',
                                 borderColor: '#FF4C4C',
                                 borderWidth: 1
-                            }
+                            }]
                         },
-                        scales: {
-                            y: { beginAtZero: true, grid: { color: 'rgba(255, 255, 255, 0.05)' } },
-                            x: { grid: { display: false } }
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            plugins: {
+                                legend: { display: false },
+                                tooltip: {
+                                    backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                                    titleColor: '#FF4C4C',
+                                    bodyColor: '#fff',
+                                    borderColor: '#FF4C4C',
+                                    borderWidth: 1
+                                }
+                            },
+                            scales: {
+                                y: { beginAtZero: true, grid: { color: 'rgba(255, 255, 255, 0.05)' } },
+                                x: { grid: { display: false } }
+                            }
                         }
-                    }
-                });
-                console.log(`✓ Loaded ${snapshots.length}-day trend charts`);
-            }
-        }
-
-        // Load AI insights
-        function loadAIInsights() {
-            if (typeof threatIntelHistory === 'undefined' || !threatIntelHistory.aiInsights) {
-                console.log('No AI insights available');
-                return;
+                    });
+                    console.log(`✓ Loaded ${snapshots.length}-day trend charts`);
+                }
             }
 
-            const insights = threatIntelHistory.aiInsights;
-            const container = document.getElementById('analyticsGrid');
-            if (!container) return;
+            // Load AI insights
+            function loadAIInsights() {
+                if (typeof threatIntelHistory === 'undefined' || !threatIntelHistory.aiInsights) {
+                    console.log('No AI insights available');
+                    return;
+                }
 
-            let insightsHTML = '';
+                const insights = threatIntelHistory.aiInsights;
+                const container = document.getElementById('analyticsGrid');
+                if (!container) return;
 
-            // Daily Summary
-            if (insights.dailySummary) {
-                const daily = insights.dailySummary;
-                insightsHTML += `
+                let insightsHTML = '';
+
+                // Daily Summary
+                if (insights.dailySummary) {
+                    const daily = insights.dailySummary;
+                    insightsHTML += `
                     <div style="background: rgba(0, 217, 255, 0.05); border: 1px solid rgba(0, 217, 255, 0.2); border-radius: 12px; padding: 1.5rem;">
                         <h4 style="margin: 0 0 1rem 0; color: var(--accent-cyan);">AI Daily Summary</h4>
                         <p style="margin: 0 0 1rem 0; line-height: 1.6;">${daily.summary}</p>
                         <div style="font-size: 0.85rem; color: var(--text-muted);">Generated: ${new Date(daily.generatedAt).toLocaleString()}</div>
                     </div>
                 `;
-            }
+                }
 
-            // Weekly Analysis
-            if (insights.weeklySummary) {
-                const weekly = insights.weeklySummary;
-                insightsHTML += `
+                // Weekly Analysis
+                if (insights.weeklySummary) {
+                    const weekly = insights.weeklySummary;
+                    insightsHTML += `
                     <div style="background: rgba(255, 76, 76, 0.05); border: 1px solid rgba(255, 76, 76, 0.2); border-radius: 12px; padding: 1.5rem;">
                         <h4 style="margin: 0 0 1rem 0; color: var(--accent-red);">AI Weekly Analysis</h4>
                         ${weekly.trends ? `<p><strong>Trends:</strong> ${weekly.trends.join(', ')}</p>` : ''}
@@ -2232,43 +2228,43 @@
                         <div style="font-size: 0.85rem; color: var(--text-muted); margin-top: 1rem;">Week: ${weekly.weekStart} to ${weekly.weekEnd}</div>
                     </div>
                 `;
+                }
+
+                if (insightsHTML) {
+                    container.innerHTML += insightsHTML;
+                    console.log('✓ Loaded AI insights');
+                }
             }
 
-            if (insightsHTML) {
-                container.innerHTML += insightsHTML;
-                console.log('✓ Loaded AI insights');
-            }
-        }
+            // Load AI Insights in Sidebar (Desktop) / Cards (Mobile)
+            function loadAIInsightsSidebar() {
+                if (typeof threatIntelHistory === 'undefined' || !threatIntelHistory.aiInsights) {
+                    console.log('No AI insights available for sidebar');
+                    return;
+                }
 
-        // Load AI Insights in Sidebar (Desktop) / Cards (Mobile)
-        function loadAIInsightsSidebar() {
-            if (typeof threatIntelHistory === 'undefined' || !threatIntelHistory.aiInsights) {
-                console.log('No AI insights available for sidebar');
-                return;
-            }
+                const insights = threatIntelHistory.aiInsights;
+                const container = document.getElementById('aiInsightsSidebar');
+                if (!container) return;
 
-            const insights = threatIntelHistory.aiInsights;
-            const container = document.getElementById('aiInsightsSidebar');
-            if (!container) return;
+                let insightsHTML = '';
 
-            let insightsHTML = '';
-
-            // Daily Summary
-            if (insights.dailySummary) {
-                const daily = insights.dailySummary;
-                insightsHTML += `
+                // Daily Summary
+                if (insights.dailySummary) {
+                    const daily = insights.dailySummary;
+                    insightsHTML += `
                     <div class="ai-insight-card" style="background: rgba(0, 217, 255, 0.05); border: 1px solid rgba(0, 217, 255, 0.2); border-radius: 12px; padding: 1.25rem; margin-bottom: 1rem;">
                         <h4 style="margin: 0 0 0.75rem 0; color: var(--accent-cyan); font-size: 1rem;">AI Daily Summary</h4>
                         <p style="margin: 0 0 0.75rem 0; line-height: 1.5; font-size: 0.9rem;">${daily.summary}</p>
                         <div style="font-size: 0.75rem; color: var(--text-muted);">Generated: ${new Date(daily.generatedAt).toLocaleDateString()}</div>
                     </div>
                 `;
-            }
+                }
 
-            // Weekly Analysis
-            if (insights.weeklySummary) {
-                const weekly = insights.weeklySummary;
-                insightsHTML += `
+                // Weekly Analysis
+                if (insights.weeklySummary) {
+                    const weekly = insights.weeklySummary;
+                    insightsHTML += `
                     <div class="ai-insight-card" style="background: rgba(255, 76, 76, 0.05); border: 1px solid rgba(255, 76, 76, 0.2); border-radius: 12px; padding: 1.25rem;">
                         <h4 style="margin: 0 0 0.75rem 0; color: var(--accent-red); font-size: 1rem;">AI Weekly Analysis</h4>
                         ${weekly.trends ? `<p style="font-size: 0.85rem; margin-bottom: 0.5rem;"><strong>Trends:</strong> ${weekly.trends.slice(0, 2).join(', ')}</p>` : ''}
@@ -2276,59 +2272,59 @@
                         <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.75rem;">Week: ${weekly.weekStart} to ${weekly.weekEnd}</div>
                     </div>
                 `;
-            }
+                }
 
-            if (insightsHTML) {
-                container.innerHTML = insightsHTML;
-                console.log('✓ Loaded AI insights in sidebar');
-            }
-        }
-
-        // Dark/Light Mode Toggle
-        function toggleTheme() {
-            document.body.classList.toggle('light-mode');
-            const isLightMode = document.body.classList.contains('light-mode');
-            localStorage.setItem('theme', isLightMode ? 'light' : 'dark');
-            document.getElementById('themeToggle').textContent = isLightMode ? '☀️' : '🌙';
-        }
-
-        function loadThemePreference() {
-            const savedTheme = localStorage.getItem('theme');
-            if (savedTheme === 'light') {
-                document.body.classList.add('light-mode');
-                if (document.getElementById('themeToggle')) {
-                    document.getElementById('themeToggle').textContent = '☀️';
+                if (insightsHTML) {
+                    container.innerHTML = insightsHTML;
+                    console.log('✓ Loaded AI insights in sidebar');
                 }
             }
-        }
 
-        // Load Static Snapshot for SEO (loads immediately, replaced by JS later)
-        function loadStaticSnapshot() {
-            fetch('ti-snapshot.html')
-                .then(response => response.text())
-                .then(html => {
-                    const container = document.getElementById('staticSnapshotContainer');
-                    if (container) {
-                        container.innerHTML = html;
-                        console.log('✓ Loaded static snapshot for SEO');
+            // Dark/Light Mode Toggle
+            function toggleTheme() {
+                document.body.classList.toggle('light-mode');
+                const isLightMode = document.body.classList.contains('light-mode');
+                localStorage.setItem('theme', isLightMode ? 'light' : 'dark');
+                document.getElementById('themeToggle').textContent = isLightMode ? '☀️' : '🌙';
+            }
+
+            function loadThemePreference() {
+                const savedTheme = localStorage.getItem('theme');
+                if (savedTheme === 'light') {
+                    document.body.classList.add('light-mode');
+                    if (document.getElementById('themeToggle')) {
+                        document.getElementById('themeToggle').textContent = '☀️';
                     }
-                })
-                .catch(error => {
-                    console.log('Static snapshot not yet available (will be generated on first run)');
-                });
-        }
+                }
+            }
 
-        // Load static snapshot immediately (before other content)
-        loadStaticSnapshot();
+            // Load Static Snapshot for SEO (loads immediately, replaced by JS later)
+            function loadStaticSnapshot() {
+                fetch('ti-snapshot.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        const container = document.getElementById('staticSnapshotContainer');
+                        if (container) {
+                            container.innerHTML = html;
+                            console.log('✓ Loaded static snapshot for SEO');
+                        }
+                    })
+                    .catch(error => {
+                        console.log('Static snapshot not yet available (will be generated on first run)');
+                    });
+            }
 
-        // Load everything on page load
-        window.addEventListener('load', function () {
-            setTimeout(() => {
-                loadTrendCharts();
-                loadAIInsightsSidebar(); // New sidebar version
-            }, 500);
-            loadThemePreference();
-        });
+            // Load static snapshot immediately (before other content)
+            loadStaticSnapshot();
+
+            // Load everything on page load
+            window.addEventListener('load', function () {
+                setTimeout(() => {
+                    loadTrendCharts();
+                    loadAIInsightsSidebar(); // New sidebar version
+                }, 500);
+                loadThemePreference();
+            });
     </script>
 
     <!-- Chart.js CDN -->
