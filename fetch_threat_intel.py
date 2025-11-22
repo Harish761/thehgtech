@@ -811,7 +811,7 @@ def generate_js(data):
             'description': vendor_data['description'],
             'website': vendor_data['website'],
             'updateFrequency': vendor_data['updateFrequency'],
-            'iocCount': len(vendor_data.get('iocs', [])),
+            'iocCount': vendor_data.get('stats', {}).get('total', 0),  # Use stats.total instead of len(iocs)
             'r2Url': vendor_data.get('r2Url'),
             'stats': vendor_data.get('stats', {}),
             'types': vendor_data.get('types', []),
