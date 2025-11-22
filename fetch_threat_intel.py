@@ -37,11 +37,15 @@ except ImportError:
 # ──────────────────────────────────────────────────────────────
 # Config
 # ──────────────────────────────────────────────────────────────
-# GitHub Raw Files Configuration (files committed to repo)
+# GitHub Pages Configuration (CORS-friendly static file hosting)
 GITHUB_REPO = 'Harish761/thehgtech'
-GITHUB_BRANCH = 'main'
-# Use GitHub raw URLs (CORS-friendly)
-GITHUB_RAW_URL = f'https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}'
+GITHUB_PAGES_URL = 'https://harish761.github.io/thehgtech'
+
+# IOC Display Caps (for file size management on GitHub Pages)
+IOC_DISPLAY_CAPS = {
+    'Phishing Database': 10000,  # Cap large dataset to most critical IOCs
+    # Other vendors: no cap (files are small enough)
+}
 
 # Vendor-specific caps - DISABLED for R2 storage (unlimited IOCs!)
 # With R2, we store ALL IOCs and load on-demand, so no caps needed
@@ -770,25 +774,94 @@ def should_run_weekly_ai(history):
     except:
         return True
 
+def smart_filter_iocs(iocs, vendor_name, max_count=10000):
+    """
+    Intelligently filter IOCs to most critical subset
+    Priority: Recent threats + High-profile targets + Active status
+    
+    Returns: (filtered_iocs, total_count, displayed_count)
+    """
+    if len(iocs) <= max_count:
+        return iocs, len(iocs), len(iocs)
+    
+    # High-profile keywords for phishing/malware targets
+    HIGH_PROFILE = [
+        'paypal', 'amazon', 'microsoft', 'apple', 'google', 
+        'bank', 'chase', 'wellsfargo', 'citibank', 'bofa',
+        'facebook', 'instagram', 'netflix', 'adobe', 'dropbox',
+        'linkedin', 'twitter', 'coinbase', 'binance', 'metamask'
+    ]
+    
+    scored_iocs = []
+    now = get_ist_now()
+    
+    for ioc in iocs:
+        score = 0
+        indicator = ioc.get('indicator', '').lower()
+        added_at = ioc.get('addedAt', '')
+        
+        # Recency score (0-100 points)
+        if added_at:
+            try:
+                added_time = datetime.fromisoformat(added_at.replace('Z', '+00:00'))
+                hours_old = (now - added_time).total_seconds() / 3600
+                
+                if hours_old < 24:
+                    score += 100  # Last 24 hours - highest priority
+                elif hours_old < 168:  # 7 days
+                    score += 50
+                elif hours_old < 720:  # 30 days
+                    score += 25
+            except:
+                pass
+        
+        # High-profile target score (0-100 points)
+        if any(keyword in indicator for keyword in HIGH_PROFILE):
+            score += 100
+        
+        # Active status bonus
+        if ioc.get('status') == 'active':
+            score += 25
+        
+        scored_iocs.append((score, ioc))
+    
+    # Sort by score (highest first) and take top N
+    scored_iocs.sort(reverse=True, key=lambda x: x[0])
+    filtered = [ioc for score, ioc in scored_iocs[:max_count]]
+    
+    return filtered, len(iocs), len(filtered)
+
 def save_vendor_json_files(vendors_data):
-    """Save each vendor's IOCs to separate JSON files for GitHub Releases"""
+    """Save each vendor's IOCs to separate JSON files for GitHub Pages"""
     saved_files = []
     
     for vendor_name, vendor_data in vendors_data.items():
         filename = f"{vendor_name.lower().replace(' ', '-').replace('.', '-')}.json"
         iocs = vendor_data.get('iocs', [])
         
+        # Smart filtering for large datasets
+        cap = IOC_DISPLAY_CAPS.get(vendor_name)
+        if cap and len(iocs) > cap:
+            filtered_iocs, total_count, displayed_count = smart_filter_iocs(iocs, vendor_name, cap)
+            print(f"    ⚠️  {vendor_name}: Filtered {total_count:,} → {displayed_count:,} (most critical)")
+        else:
+            filtered_iocs = iocs
+            total_count = displayed_count = len(iocs)
+        
         data = {
             'vendor': vendor_name,
             'lastUpdated': get_ist_now().isoformat(),
-            'iocCount': len(iocs),
-            'iocs': iocs
+            'totalCount': total_count,  # Full count for transparency
+            'displayedCount': displayed_count,  # Filtered count
+            'isCapped': total_count > displayed_count,
+            'cappingStrategy': 'Recent threats + High-profile targets' if total_count > displayed_count else None,
+            'iocs': filtered_iocs
         }
         
         try:
             with open(filename, 'w') as f:
                 json.dump(data, f, indent=2)
-            print(f"    ✓ Saved {filename} ({len(iocs)} IOCs)")
+            print(f"    ✓ Saved {filename} ({displayed_count:,} IOCs)")
             saved_files.append(filename)
         except Exception as e:
             print(f"    ✗ Failed to save {filename}: {e}")
@@ -1218,7 +1291,7 @@ def run_hourly():
             'types': list(set(ioc.get('type', 'unknown') for ioc in all_iocs)),
             'sampleIndicators': [ioc['indicator'] for ioc in all_iocs[:5]],
             # GitHub Release URL for lazy loading
-            'r2Url': f"{GITHUB_RAW_URL}/{vendor_name.lower().replace(' ', '-').replace('.', '-')}.json"
+            'r2Url': f"{GITHUB_PAGES_URL}/{vendor_name.lower().replace(' ', '-').replace('.', '-')}.json"
         }
     
     # Save vendor JSON files for GitHub Actions to upload as release assets
