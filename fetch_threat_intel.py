@@ -37,10 +37,11 @@ except ImportError:
 # ──────────────────────────────────────────────────────────────
 # Config
 # ──────────────────────────────────────────────────────────────
-# GitHub Releases Configuration
+# GitHub Releases Configuration (via jsDelivr CDN for CORS support)
 GITHUB_REPO = 'Harish761/thehgtech'
 GITHUB_RELEASE_TAG = 'iocs-latest'
-GITHUB_RELEASE_URL = f'https://github.com/{GITHUB_REPO}/releases/download/{GITHUB_RELEASE_TAG}'
+# Use jsDelivr CDN to bypass CORS restrictions
+GITHUB_RELEASE_URL = f'https://cdn.jsdelivr.net/gh/{GITHUB_REPO}@{GITHUB_RELEASE_TAG}'
 
 # Vendor-specific caps - DISABLED for R2 storage (unlimited IOCs!)
 # With R2, we store ALL IOCs and load on-demand, so no caps needed
