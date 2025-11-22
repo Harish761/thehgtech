@@ -1,11 +1,11 @@
 // Auto-Generated Threat Intel (Multi-Vendor Dashboard)
-// Updated: 2025-11-22T21:24:48.433375+05:30 IST
+// Updated: 2025-11-22T21:29:17.916407+05:30 IST
 // Sources: OpenPhish, Malware Bazaar, Spamhaus DROP, CINS Army, Blocklist.de, Phishing Database
 // NOTE: Full IOC lists are stored in Cloudflare R2 and loaded on-demand
 
 window.threatIntelData = {
-    "lastUpdated": "2025-11-22T21:24:48.056428+05:30",
-    "lastUpdatedFormatted": "Nov 22, 2025 at 09:24 PM IST",
+    "lastUpdated": "2025-11-22T21:29:17.535685+05:30",
+    "lastUpdatedFormatted": "Nov 22, 2025 at 09:29 PM IST",
     "comparisonPeriod": "Nov 21 \u2013 Nov 22, 2025",
     "vendors": {
         "OpenPhish": {
@@ -37,19 +37,19 @@ window.threatIntelData = {
             "iocCount": 0,
             "r2Url": "https://github.com/Harish761/thehgtech/releases/download/iocs-latest/malware-bazaar.json",
             "stats": {
-                "total": 680,
-                "newInLastHour": 680,
+                "total": 687,
+                "newInLastHour": 687,
                 "lastUpdate": "just now"
             },
             "types": [
                 "hash"
             ],
             "sampleIndicators": [
-                " \"f8b14e9a56f8c8cc53f58be19a76c615bcb23bf7d0ffa32ed2eff58404310d6b",
-                " \"9e169da4054cae5b459b7cce25e95d52e8f7658e09b4ee8f86fb9c14fff84c3a",
-                " \"a8e7980ed4dbea8bb5ceeca4b5fef3c8aa3a76d1b933ca94239af3efd5ba2a3e",
-                " \"97858b4df05b58b93a33bc63a3eaaec53e49ebaa6b59d4a1762593d3ab2ff0ae",
-                " \"e3d79adeb8632b2251a4af1cc344c879a5671efa2e22bc2e25eb82615ff56f10"
+                " \"658d3acfc7e71d6b3451973ab8c207dca57264f9b17fc9e37c8b7a1e46561489",
+                " \"8921c1bf22ea060348031a70153ee0953e764f9fffdd75d7a0cb0958a868b009",
+                " \"b705dbd06cd39f39a57fc53bcaae998e7412b24920ae84cce303f49c4d0dbd37",
+                " \"469e0027cb53e2ba2bfe66d4aac3ea456fe4e91efbd11b631db252a9a1b02a8e",
+                " \"17ffce435bf3055bdc807b0b062281493e136f02e8b14d85e3fd6b6c3098088e"
             ]
         },
         "Spamhaus DROP": {
@@ -181,8 +181,8 @@ window.threatIntelData = {
     "snapshotMetrics": {
         "topAttackVector": "Malicious URLs",
         "mostTargetedRegion": "North America",
-        "fastestRisingThreat": "No significant changes",
-        "totalAttacksThisHour": 1297294,
-        "lastCalculated": "2025-11-22 21:24 IST"
+        "fastestRisingThreat": " \"n/a",
+        "totalAttacksThisHour": 1297301,
+        "lastCalculated": "2025-11-22 21:29 IST"
     }
 };
