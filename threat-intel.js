@@ -1,11 +1,11 @@
 // Auto-Generated Threat Intel (Multi-Vendor Dashboard)
-// Updated: 2025-11-22T22:02:08.281897+05:30 IST
+// Updated: 2025-11-22T22:53:08.899321+05:30 IST
 // Sources: OpenPhish, Malware Bazaar, Spamhaus DROP, CINS Army, Blocklist.de, Phishing Database
 // NOTE: Full IOC lists are stored in Cloudflare R2 and loaded on-demand
 
 window.threatIntelData = {
-    "lastUpdated": "2025-11-22T22:02:07.838645+05:30",
-    "lastUpdatedFormatted": "Nov 22, 2025 at 10:02 PM IST",
+    "lastUpdated": "2025-11-22T22:53:08.520066+05:30",
+    "lastUpdatedFormatted": "Nov 22, 2025 at 10:53 PM IST",
     "comparisonPeriod": "Nov 21 \u2013 Nov 22, 2025",
     "vendors": {
         "OpenPhish": {
@@ -37,19 +37,19 @@ window.threatIntelData = {
             "iocCount": 0,
             "r2Url": "https://github.com/Harish761/thehgtech/releases/download/iocs-latest/malware-bazaar.json",
             "stats": {
-                "total": 687,
-                "newInLastHour": 687,
+                "total": 684,
+                "newInLastHour": 684,
                 "lastUpdate": "just now"
             },
             "types": [
                 "hash"
             ],
             "sampleIndicators": [
-                " \"658d3acfc7e71d6b3451973ab8c207dca57264f9b17fc9e37c8b7a1e46561489",
-                " \"8921c1bf22ea060348031a70153ee0953e764f9fffdd75d7a0cb0958a868b009",
-                " \"b705dbd06cd39f39a57fc53bcaae998e7412b24920ae84cce303f49c4d0dbd37",
-                " \"469e0027cb53e2ba2bfe66d4aac3ea456fe4e91efbd11b631db252a9a1b02a8e",
-                " \"17ffce435bf3055bdc807b0b062281493e136f02e8b14d85e3fd6b6c3098088e"
+                " \"3253d7555439a048f10a4072d4f0de847b01f6750871e996db7bf82f9f2116aa",
+                " \"4ef65aae2ff6c97894ab45f0ab3045d59ec407738490017f43e5650741461d67",
+                " \"6aec50d2ea7ae9ef6b50c0a4cbc5582bfa73a7464fe2748f8d7e5f762215da1d",
+                " \"3cd665d15d360ba78855df769cd183de96f4d86c443cd9f5bbcc1770721df058",
+                " \"297efded469493b1f8642672c6699b2d982c938346925544d6da592d5dd3197b"
             ]
         },
         "Spamhaus DROP": {
@@ -103,8 +103,8 @@ window.threatIntelData = {
             "iocCount": 0,
             "r2Url": "https://github.com/Harish761/thehgtech/releases/download/iocs-latest/blocklist.de.json",
             "stats": {
-                "total": 6517,
-                "newInLastHour": 6517,
+                "total": 6604,
+                "newInLastHour": 6604,
                 "lastUpdate": "just now"
             },
             "types": [
@@ -182,7 +182,7 @@ window.threatIntelData = {
         "topAttackVector": "Malicious URLs",
         "mostTargetedRegion": "North America",
         "fastestRisingThreat": "SSH Attacks",
-        "totalAttacksThisHour": 1297367,
-        "lastCalculated": "2025-11-22 22:02 IST"
+        "totalAttacksThisHour": 1297451,
+        "lastCalculated": "2025-11-22 22:53 IST"
     }
 };
