@@ -1909,20 +1909,18 @@
             const campaigns = new Set();
 
             Object.values(window.threatIntelData.vendors).forEach(vendor => {
-                if (vendor.iocs) {
-                    totalIOCs += vendor.iocs.length;
-                    vendor.iocs.forEach(ioc => {
-                        // Count new IOCs (added in last hour)
-                        if (ioc.addedAt) {
-                            const addedTime = new Date(ioc.addedAt);
-                            const hourAgo = new Date(Date.now() - 60 * 60 * 1000);
-                            if (addedTime > hourAgo) {
-                                newIOCs++;
-                            }
-                        }
-                        // Collect campaigns
-                        if (ioc.campaign) {
-                            campaigns.add(ioc.campaign);
+                // Use stats metadata instead of iocs array
+                if (vendor.stats) {
+                    totalIOCs += vendor.stats.total || 0;
+                    newIOCs += vendor.stats.newInLastHour || 0;
+                }
+
+                // Collect campaigns from sample indicators if available
+                if (vendor.sampleIndicators) {
+                    vendor.sampleIndicators.forEach(indicator => {
+                        // Extract campaign from indicator if it's an object
+                        if (typeof indicator === 'object' && indicator.campaign) {
+                            campaigns.add(indicator.campaign);
                         }
                     });
                 }
