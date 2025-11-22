@@ -1,11 +1,11 @@
 // Auto-Generated Threat Intel (Multi-Vendor Dashboard)
-// Updated: 2025-11-22T21:29:17.916407+05:30 IST
+// Updated: 2025-11-22T22:02:08.281897+05:30 IST
 // Sources: OpenPhish, Malware Bazaar, Spamhaus DROP, CINS Army, Blocklist.de, Phishing Database
 // NOTE: Full IOC lists are stored in Cloudflare R2 and loaded on-demand
 
 window.threatIntelData = {
-    "lastUpdated": "2025-11-22T21:29:17.535685+05:30",
-    "lastUpdatedFormatted": "Nov 22, 2025 at 09:29 PM IST",
+    "lastUpdated": "2025-11-22T22:02:07.838645+05:30",
+    "lastUpdatedFormatted": "Nov 22, 2025 at 10:02 PM IST",
     "comparisonPeriod": "Nov 21 \u2013 Nov 22, 2025",
     "vendors": {
         "OpenPhish": {
@@ -103,19 +103,19 @@ window.threatIntelData = {
             "iocCount": 0,
             "r2Url": "https://github.com/Harish761/thehgtech/releases/download/iocs-latest/blocklist.de.json",
             "stats": {
-                "total": 6451,
-                "newInLastHour": 6451,
+                "total": 6517,
+                "newInLastHour": 6517,
                 "lastUpdate": "just now"
             },
             "types": [
                 "ip"
             ],
             "sampleIndicators": [
+                "1[.]13[.]79[.]144",
                 "1[.]14[.]12[.]168",
                 "1[.]161[.]44[.]62",
                 "1[.]162[.]241[.]130",
-                "1[.]194[.]239[.]240",
-                "1[.]197[.]102[.]62"
+                "1[.]194[.]239[.]240"
             ]
         },
         "Phishing Database": {
@@ -181,8 +181,8 @@ window.threatIntelData = {
     "snapshotMetrics": {
         "topAttackVector": "Malicious URLs",
         "mostTargetedRegion": "North America",
-        "fastestRisingThreat": " \"n/a",
-        "totalAttacksThisHour": 1297301,
-        "lastCalculated": "2025-11-22 21:29 IST"
+        "fastestRisingThreat": "SSH Attacks",
+        "totalAttacksThisHour": 1297367,
+        "lastCalculated": "2025-11-22 22:02 IST"
     }
 };
