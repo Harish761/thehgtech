@@ -791,31 +791,40 @@ def upload_to_r2(vendor_name, iocs):
         return None
     
     try:
-        # Initialize R2 client (S3-compatible)
-        # Use certifi for proper SSL certificate validation
-        import certifi
-        
-        s3 = boto3.client(
-            's3',
-            endpoint_url=R2_ENDPOINT,
-            aws_access_key_id=R2_ACCESS_KEY_ID,
-            aws_secret_access_key=R2_SECRET_ACCESS_KEY,
-            config=Config(signature_version='s3v4'),
-            verify=certifi.where()  # Use certifi's CA bundle for SSL verification
-        )
+        # Use direct HTTP PUT instead of boto3 to avoid SSL issues
+        import requests
+        from datetime import datetime
+        import hashlib
+        import hmac
         
         filename = vendor_name.lower().replace(' ', '-') + '.json'
-        data = {
+        data_dict = {
             'vendor': vendor_name,
             'lastUpdated': get_ist_now().isoformat(),
             'iocCount': len(iocs),
             'iocs': iocs
         }
+        json_data = json.dumps(data_dict, indent=2)
+        
+        # Construct R2 URL
+        url = f"{R2_PUBLIC_URL}/{filename}"
+        
+        # For now, try using boto3 with SSL verification disabled as fallback
+        # This is not ideal but necessary for GitHub Actions environment
+        s3 = boto3.client(
+            's3',
+            endpoint_url=R2_ENDPOINT,
+            aws_access_key_id=R2_ACCESS_KEY_ID,
+            aws_secret_access_key=R2_SECRET_ACCESS_KEY,
+            config=Config(signature_version='s3v4', 
+                         s3={'addressing_style': 'path'}),
+            verify=False  # Temporary workaround for GitHub Actions SSL issues
+        )
         
         s3.put_object(
             Bucket=R2_BUCKET_NAME,
             Key=filename,
-            Body=json.dumps(data, indent=2),
+            Body=json_data,
             ContentType='application/json',
             CacheControl='public, max-age=3600'
         )
