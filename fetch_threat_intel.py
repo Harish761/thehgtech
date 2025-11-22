@@ -499,7 +499,7 @@ def save_daily_snapshot(all_vendors_data, snapshot_metrics):
     # Get campaign counts
     all_iocs = []
     for vendor_data in all_vendors_data.values():
-        all_iocs.extend(vendor_data['iocs'])
+        all_iocs.extend(vendor_data.get('iocs', []))
     
     campaigns = detect_campaigns(all_iocs)
     campaign_counts = {name: data['count'] for name, data in campaigns.items()}
@@ -598,7 +598,7 @@ def generate_daily_ai_summary(vendors_data, snapshot_metrics):
     # Get top campaigns
     all_iocs = []
     for vendor_data in vendors_data.values():
-        all_iocs.extend(vendor_data['iocs'])
+        all_iocs.extend(vendor_data.get('iocs', []))
     campaigns = detect_campaigns(all_iocs)
     top_campaigns = sorted(campaigns.items(), key=lambda x: x[1]['count'], reverse=True)[:5]
     campaign_str = ", ".join([f"{name} ({data['count']} IOCs)" for name, data in top_campaigns])
@@ -993,7 +993,7 @@ def generate_snapshot_metrics(all_vendors_data, history):
     # Combine all IOCs for analysis
     all_iocs = []
     for vendor_data in all_vendors_data.values():
-        all_iocs.extend(vendor_data['iocs'])
+        all_iocs.extend(vendor_data.get('iocs', []))
     
     # Filter IOCs from last hour only
     now = get_ist_now()
@@ -1083,7 +1083,7 @@ def generate_daily_summary(all_vendors_data, history):
     # Combine all IOCs for analysis
     all_iocs = []
     for vendor_data in all_vendors_data.values():
-        all_iocs.extend(vendor_data['iocs'])
+        all_iocs.extend(vendor_data.get('iocs', []))
     
     prev = history.get('previous_day', {})
     cats, secs = categorize_iocs(all_iocs)
