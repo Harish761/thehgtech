@@ -22,15 +22,30 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install feedparser requests openai boto3 certifi
+        run: pip install feedparser requests openai
 
       - name: Run RSS Threat Intel Fetcher
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
-          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
-          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
         run: python fetch_threat_intel.py --both
+
+      - name: Create/Update GitHub Release with IOC Data
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: iocs-latest
+          name: "Latest IOC Data"
+          body: "Automated IOC data update - Run #${{ github.run_number }}"
+          files: |
+            openphish.json
+            malware-bazaar.json
+            phishing-database.json
+            blocklist-de.json
+            cins-army.json
+            spamhaus-drop.json
+          prerelease: false
+          draft: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit & Push Changes
         run: |
