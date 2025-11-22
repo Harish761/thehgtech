@@ -140,15 +140,14 @@ def fetch_vendor_iocs(vendor_name, config):
             
             # Skip header lines (comments, CSV headers, etc)
             clean_lines = [l.strip() for l in lines if l.strip() and not l.startswith('#') and not l.startswith('//')]
-            # Parse based on vendor
-            vendor_cap = get_vendor_cap(vendor_name)
+            # No cap - store all IOCs for R2
             if vendor_name == "OpenPhish" or vendor_name == "Phishing Database":
-                for line in clean_lines[:vendor_cap]:
+                for line in clean_lines:
                     if line.startswith('http'):
                         iocs.append(parse_phishing_url(line, now, config, vendor_name))
             
             elif vendor_name == "Spamhaus DROP":
-                for line in clean_lines[:vendor_cap]:
+                for line in clean_lines:
                     # Spamhaus DROP format: CIDR ; SBL number
                     if line and not line.startswith(';'):
                         parts = line.split(';')
@@ -156,12 +155,12 @@ def fetch_vendor_iocs(vendor_name, config):
                             iocs.append(parse_spamhaus(parts[0].strip(), now, config, vendor_name))
             
             elif vendor_name == "CINS Army":
-                for line in clean_lines[:vendor_cap]:
+                for line in clean_lines:
                     if re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$', line):
                         iocs.append(parse_cins_army(line, now, config, vendor_name))
             
             elif vendor_name == "Blocklist.de":
-                for line in clean_lines[:vendor_cap]:
+                for line in clean_lines:
                     if re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$', line):
                         iocs.append(parse_blocklist(line, now, config, vendor_name))
         
@@ -170,8 +169,8 @@ def fetch_vendor_iocs(vendor_name, config):
             import requests
             resp = requests.get(config["url"], timeout=15, headers={'User-Agent': 'TheHGTech-ThreatIntel/2.0'})
             lines = resp.text.strip().split('\n')
-            vendor_cap = get_vendor_cap(vendor_name)
-            for line in lines[9:vendor_cap+9]:  # Skip 9-line header
+            # No cap - store all IOCs for R2
+            for line in lines[9:]:  # Skip 9-line header
                 if line.startswith('#') or not line.strip():
                     continue
                 ioc = parse_malware_bazaar(line, now, config, vendor_name)
@@ -180,8 +179,8 @@ def fetch_vendor_iocs(vendor_name, config):
         
         else:  # RSS type (if any remain)
             feed = feedparser.parse(config["url"])
-            vendor_cap = get_vendor_cap(vendor_name)
-            for entry in feed.entries[:vendor_cap]:
+            # No cap - store all IOCs for R2
+            for entry in feed.entries:
                 ioc = extract_ioc_from_entry(entry, vendor_name, now, config)
                 if ioc:
                     iocs.append(ioc)
@@ -797,7 +796,7 @@ def upload_to_r2(vendor_name, iocs):
             endpoint_url=R2_ENDPOINT,
             aws_access_key_id=R2_ACCESS_KEY_ID,
             aws_secret_access_key=R2_SECRET_ACCESS_KEY,
-            config=Config(signature_version='s3v4', region_name='auto')
+            config=Config(signature_version='s3v4')
         )
         
         filename = vendor_name.lower().replace(' ', '-') + '.json'
