@@ -37,11 +37,11 @@ except ImportError:
 # ──────────────────────────────────────────────────────────────
 # Config
 # ──────────────────────────────────────────────────────────────
-# GitHub Releases Configuration (via jsDelivr CDN for CORS support)
+# GitHub Raw Files Configuration (files committed to repo)
 GITHUB_REPO = 'Harish761/thehgtech'
-GITHUB_RELEASE_TAG = 'iocs-latest'
-# Use jsDelivr CDN to bypass CORS restrictions
-GITHUB_RELEASE_URL = f'https://cdn.jsdelivr.net/gh/{GITHUB_REPO}@{GITHUB_RELEASE_TAG}'
+GITHUB_BRANCH = 'main'
+# Use GitHub raw URLs (CORS-friendly)
+GITHUB_RAW_URL = f'https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}'
 
 # Vendor-specific caps - DISABLED for R2 storage (unlimited IOCs!)
 # With R2, we store ALL IOCs and load on-demand, so no caps needed
@@ -1218,7 +1218,7 @@ def run_hourly():
             'types': list(set(ioc.get('type', 'unknown') for ioc in all_iocs)),
             'sampleIndicators': [ioc['indicator'] for ioc in all_iocs[:5]],
             # GitHub Release URL for lazy loading
-            'r2Url': f"{GITHUB_RELEASE_URL}/{vendor_name.lower().replace(' ', '-')}.json"
+            'r2Url': f"{GITHUB_RAW_URL}/{vendor_name.lower().replace(' ', '-').replace('.', '-')}.json"
         }
     
     # Save vendor JSON files for GitHub Actions to upload as release assets
