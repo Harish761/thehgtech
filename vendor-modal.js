@@ -3,7 +3,7 @@
 // Cache for loaded vendor data
 const vendorDataCache = {};
 
-// Load vendor IOCs from Cloudflare R2
+// Load vendor IOCs from GitHub Pages
 async function loadVendorIOCs(vendorName) {
     if (vendorDataCache[vendorName]) {
         console.log(`✓ Using cached data for ${vendorName}`);
@@ -12,18 +12,18 @@ async function loadVendorIOCs(vendorName) {
 
     const vendorMeta = window.threatIntelData.vendors[vendorName];
     if (!vendorMeta || !vendorMeta.r2Url) {
-        console.error(`No R2 URL for ${vendorName}`);
+        console.error(`No URL for ${vendorName}`);
         return null;
     }
 
     try {
-        console.log(`Fetching ${vendorName} IOCs from R2...`);
+        console.log(`Fetching ${vendorName} IOCs from GitHub Pages...`);
         const response = await fetch(vendorMeta.r2Url);
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const data = await response.json();
-        vendorDataCache[vendorName] = data.iocs;
-        console.log(`✓ Loaded ${data.iocs.length} IOCs for ${vendorName}`);
-        return data.iocs;
+        vendorDataCache[vendorName] = data;  // Cache full response with metadata
+        console.log(`✓ Loaded ${data.displayedCount || data.iocs.length} IOCs for ${vendorName}`);
+        return data;
     } catch (error) {
         console.error(`Failed to load ${vendorName} IOCs:`, error);
         return null;
@@ -54,22 +54,38 @@ async function openVendorModal(vendorName) {
     content.innerHTML = `
         <div style="text-align: center; padding: 3rem; color: var(--text-muted);">
             <div class="loading-spinner"></div>
-            <p style="margin-top: 1rem;">Loading ${vendorMeta.iocCount.toLocaleString()} IOCs from Cloudflare R2...</p>
+            <p style="margin-top: 1rem;">Loading ${vendorMeta.iocCount.toLocaleString()} IOCs from GitHub Pages...</p>
         </div>
     `;
     countDiv.textContent = `${vendorMeta.iocCount.toLocaleString()} IOCs`;
     modal.style.display = 'block';
 
-    // Load IOCs from R2
-    const iocs = await loadVendorIOCs(vendorName);
-    if (!iocs || iocs.length === 0) {
+    // Load IOCs from GitHub Pages
+    const data = await loadVendorIOCs(vendorName);
+    if (!data || !data.iocs || data.iocs.length === 0) {
         content.innerHTML = '<p style="color: var(--accent-red);">Failed to load IOCs. Please try again.</p>';
         return;
     }
 
+    // Show capping notice if data is filtered
+    let cappingNotice = '';
+    if (data.isCapped) {
+        cappingNotice = `
+            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-left: 4px solid #ffd700; padding: 15px; margin-bottom: 20px; border-radius: 8px; display: flex; align-items: center; gap: 12px;">
+                <div style="font-size: 24px;">ℹ️</div>
+                <div style="flex: 1; color: #fff;">
+                    <strong style="display: block; margin-bottom: 4px;">Showing ${data.displayedCount.toLocaleString()} most critical IOCs</strong>
+                    <span style="opacity: 0.9;">${data.totalCount.toLocaleString()} total indicators tracked</span>
+                    <br>
+                    <small style="opacity: 0.9;">Displaying ${data.cappingStrategy || 'most recent and high-priority threats'} for optimal performance</small>
+                </div>
+            </div>
+        `;
+    }
+
     // Render IOCs
-    let html = '';
-    iocs.forEach((ioc) => {
+    let html = cappingNotice;
+    data.iocs.forEach((ioc) => {
         html += `<div class="modal-stat-item vendor-ioc-item" data-indicator="${ioc.indicator}" data-type="${ioc.type}"
             style="padding: 1rem; background: rgba(255, 255, 255, 0.02); border-radius: 8px; margin-bottom: 0.75rem; cursor: pointer; transition: all 0.2s ease; border-left: 3px solid var(--accent-cyan);"
             onmouseover="this.style.background='rgba(0, 217, 255, 0.1)'" 
@@ -84,7 +100,9 @@ async function openVendorModal(vendorName) {
     });
 
     content.innerHTML = html || '<p style="color: var(--text-muted);">No IOCs available</p>';
-    countDiv.textContent = `Showing ${iocs.length.toLocaleString()} IOCs`;
+    countDiv.textContent = data.isCapped
+        ? `Showing ${data.displayedCount.toLocaleString()} of ${data.totalCount.toLocaleString()} IOCs`
+        : `Showing ${data.iocs.length.toLocaleString()} IOCs`;
 }
 
 // Close vendor modal
