@@ -50,7 +50,8 @@ R2_ACCOUNT_ID = os.getenv('R2_ACCOUNT_ID', '')
 R2_ACCESS_KEY_ID = os.getenv('R2_ACCESS_KEY_ID', '')
 R2_SECRET_ACCESS_KEY = os.getenv('R2_SECRET_ACCESS_KEY', '')
 R2_BUCKET_NAME = 'thehgtech-iocs'
-R2_ENDPOINT = f'https://{R2_ACCOUNT_ID}.r2.cloudflarestorage.com' if R2_ACCOUNT_ID else ''
+# Use HTTP instead of HTTPS to bypass SSL/TLS handshake issues in GitHub Actions
+R2_ENDPOINT = f'http://{R2_ACCOUNT_ID}.r2.cloudflarestorage.com' if R2_ACCOUNT_ID else ''
 R2_PUBLIC_URL = 'https://pub-af168ad13ad243b3898543e79d94695a.r2.dev'
 
 # Debug: Print R2 config (masked)
