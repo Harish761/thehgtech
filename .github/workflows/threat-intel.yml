@@ -22,7 +22,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install feedparser requests openai boto3
+        run: pip install feedparser requests openai boto3 certifi
 
       - name: Run RSS Threat Intel Fetcher
         env:
