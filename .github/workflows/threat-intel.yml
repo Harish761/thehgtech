@@ -29,27 +29,18 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python fetch_threat_intel.py --both
 
-      - name: Prepare IOC files for GitHub Pages
+      - name: Prepare IOC files
         run: |
-          mkdir -p gh-pages-deploy
-          cp *.json gh-pages-deploy/ || true
-          rm -f gh-pages-deploy/threat-intel-history.json || true
-          echo "thehgtech.com" > gh-pages-deploy/CNAME
-          ls -lh gh-pages-deploy/
+          mkdir -p ioc-data
+          cp *.json ioc-data/ || true
+          rm -f ioc-data/threat-intel-history.json || true
+          ls -lh ioc-data/
 
-      - name: Deploy IOC Data to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./gh-pages-deploy
-          publish_branch: gh-pages
-          keep_files: false
-
-      - name: Commit & Push Metadata Files
+      - name: Commit & Push All Changes
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add threat-intel.js threat-intel-history.json threat-intel-history.js ti-snapshot.html
+          git add threat-intel.js threat-intel-history.json threat-intel-history.js ti-snapshot.html ioc-data/
           git diff --quiet && git diff --staged --quiet || \
             git commit -m "🛡️ Threat Intel update [$(date -u '+%Y-%m-%d %H:%M')] UTC"
           git push

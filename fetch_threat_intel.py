@@ -39,7 +39,7 @@ except ImportError:
 # ──────────────────────────────────────────────────────────────
 # GitHub Pages Configuration (CORS-friendly static file hosting)
 GITHUB_REPO = 'Harish761/thehgtech'
-GITHUB_PAGES_URL = 'https://thehgtech.com'  # Using custom domain
+GITHUB_PAGES_URL = 'https://thehgtech.com/ioc-data'  # Using subdirectory on main branch
 
 # IOC Display Caps (for file size management on GitHub Pages)
 IOC_DISPLAY_CAPS = {
