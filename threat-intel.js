@@ -1,18 +1,18 @@
 // Auto-Generated Threat Intel (Multi-Vendor Dashboard)
-// Updated: 2025-11-23T00:18:24.610728+05:30 IST
+// Updated: 2025-11-23T00:51:10.252261+05:30 IST
 // Sources: OpenPhish, Malware Bazaar, Spamhaus DROP, CINS Army, Blocklist.de, Phishing Database
 // NOTE: Full IOC lists are stored in Cloudflare R2 and loaded on-demand
 
 window.threatIntelData = {
-    "lastUpdated": "2025-11-23T00:18:24.243214+05:30",
-    "lastUpdatedFormatted": "Nov 23, 2025 at 12:18 AM IST",
+    "lastUpdated": "2025-11-23T00:51:09.856836+05:30",
+    "lastUpdatedFormatted": "Nov 23, 2025 at 12:51 AM IST",
     "comparisonPeriod": "Nov 22 \u2013 Nov 23, 2025",
     "vendors": {
         "OpenPhish": {
             "description": "Real-time phishing URL feed updated every 15 minutes. Tracks active phishing sites targeting major brands and financial institutions.",
             "website": "https://openphish.com/",
             "updateFrequency": "Every 15 minutes",
-            "iocCount": 0,
+            "iocCount": 300,
             "r2Url": "https://github.com/Harish761/thehgtech/releases/download/iocs-latest/openphish.json",
             "stats": {
                 "total": 300,
@@ -34,7 +34,7 @@ window.threatIntelData = {
             "description": "Recent malware samples with hashes and URLs. Tracks active malware distribution from abuse.ch community.",
             "website": "https://bazaar.abuse.ch/",
             "updateFrequency": "Real-time",
-            "iocCount": 0,
+            "iocCount": 661,
             "r2Url": "https://github.com/Harish761/thehgtech/releases/download/iocs-latest/malware-bazaar.json",
             "stats": {
                 "total": 661,
@@ -56,7 +56,7 @@ window.threatIntelData = {
             "description": "Don't Route Or Peer - hijacked/leased IP ranges controlled by criminals. Industry-standard malicious IP blocklist.",
             "website": "https://www.spamhaus.org/",
             "updateFrequency": "Daily",
-            "iocCount": 0,
+            "iocCount": 1450,
             "r2Url": "https://github.com/Harish761/thehgtech/releases/download/iocs-latest/spamhaus-drop.json",
             "stats": {
                 "total": 1450,
@@ -78,7 +78,7 @@ window.threatIntelData = {
             "description": "Malicious IPs from CINS Army threat intelligence. Fast-updating list of confirmed attackers.",
             "website": "http://cinsscore.com/",
             "updateFrequency": "Every 15 minutes",
-            "iocCount": 0,
+            "iocCount": 15000,
             "r2Url": "https://github.com/Harish761/thehgtech/releases/download/iocs-latest/cins-army.json",
             "stats": {
                 "total": 15000,
@@ -100,11 +100,11 @@ window.threatIntelData = {
             "description": "IPs conducting SSH brute-force attacks. Community-reported attackers targeting SSH services.",
             "website": "https://www.blocklist.de/",
             "updateFrequency": "Hourly",
-            "iocCount": 0,
+            "iocCount": 6574,
             "r2Url": "https://github.com/Harish761/thehgtech/releases/download/iocs-latest/blocklist.de.json",
             "stats": {
-                "total": 6538,
-                "newInLastHour": 6538,
+                "total": 6574,
+                "newInLastHour": 6574,
                 "lastUpdate": "just now"
             },
             "types": [
@@ -113,16 +113,16 @@ window.threatIntelData = {
             "sampleIndicators": [
                 "1[.]13[.]79[.]144",
                 "1[.]14[.]12[.]168",
+                "1[.]15[.]114[.]102",
                 "1[.]161[.]44[.]62",
-                "1[.]197[.]102[.]62",
-                "1[.]20[.]174[.]59"
+                "1[.]197[.]102[.]62"
             ]
         },
         "Phishing Database": {
             "description": "Large database of active phishing URLs. Complements OpenPhish with additional phishing site coverage.",
             "website": "https://github.com/mitchellkrogza/Phishing.Database",
             "updateFrequency": "Hourly",
-            "iocCount": 0,
+            "iocCount": 1273413,
             "r2Url": "https://github.com/Harish761/thehgtech/releases/download/iocs-latest/phishing-database.json",
             "stats": {
                 "total": 1273413,
@@ -182,7 +182,7 @@ window.threatIntelData = {
         "topAttackVector": "Malicious URLs",
         "mostTargetedRegion": "North America",
         "fastestRisingThreat": "SSH Attacks",
-        "totalAttacksThisHour": 1297362,
-        "lastCalculated": "2025-11-23 00:18 IST"
+        "totalAttacksThisHour": 1297398,
+        "lastCalculated": "2025-11-23 00:51 IST"
     }
 };
