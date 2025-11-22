@@ -53,6 +53,12 @@ R2_BUCKET_NAME = 'thehgtech-iocs'
 R2_ENDPOINT = f'https://{R2_ACCOUNT_ID}.r2.cloudflarestorage.com' if R2_ACCOUNT_ID else ''
 R2_PUBLIC_URL = 'https://pub-af168ad13ad243b3898543e79d94695a.r2.dev'
 
+# Debug: Print R2 config (masked)
+if R2_ACCOUNT_ID:
+    print(f"R2 Config: Account ID: {R2_ACCOUNT_ID[:8]}..., Endpoint: {R2_ENDPOINT}")
+else:
+    print("⚠️ WARNING: R2_ACCOUNT_ID not set!")
+
 # Vendor-specific caps - DISABLED for R2 storage (unlimited IOCs!)
 # With R2, we store ALL IOCs and load on-demand, so no caps needed
 # VENDOR_CAPS = {
@@ -788,14 +794,17 @@ def upload_to_r2(vendor_name, iocs):
         
     if not all([R2_ACCOUNT_ID, R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY]):
         print(f"  ⚠ R2 credentials not set, skipping R2 upload for {vendor_name}")
+        print(f"     Account ID set: {bool(R2_ACCOUNT_ID)}")
+        print(f"     Access Key set: {bool(R2_ACCESS_KEY_ID)}")
+        print(f"     Secret Key set: {bool(R2_SECRET_ACCESS_KEY)}")
         return None
     
     try:
-        # Use direct HTTP PUT instead of boto3 to avoid SSL issues
-        import requests
-        from datetime import datetime
-        import hashlib
-        import hmac
+        import ssl
+        import urllib3
+        
+        # Disable SSL warnings when verify=False
+        urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
         
         filename = vendor_name.lower().replace(' ', '-') + '.json'
         data_dict = {
@@ -806,19 +815,20 @@ def upload_to_r2(vendor_name, iocs):
         }
         json_data = json.dumps(data_dict, indent=2)
         
-        # Construct R2 URL
-        url = f"{R2_PUBLIC_URL}/{filename}"
+        print(f"    Attempting R2 upload: {filename} ({len(json_data)} bytes)")
+        print(f"    Endpoint: {R2_ENDPOINT}")
         
-        # For now, try using boto3 with SSL verification disabled as fallback
-        # This is not ideal but necessary for GitHub Actions environment
+        # Create boto3 client with SSL disabled
         s3 = boto3.client(
             's3',
             endpoint_url=R2_ENDPOINT,
             aws_access_key_id=R2_ACCESS_KEY_ID,
             aws_secret_access_key=R2_SECRET_ACCESS_KEY,
-            config=Config(signature_version='s3v4', 
-                         s3={'addressing_style': 'path'}),
-            verify=False  # Temporary workaround for GitHub Actions SSL issues
+            config=Config(
+                signature_version='s3v4',
+                s3={'addressing_style': 'path'}
+            ),
+            verify=False  # Disable SSL verification
         )
         
         s3.put_object(
@@ -834,7 +844,9 @@ def upload_to_r2(vendor_name, iocs):
         return public_url
         
     except Exception as e:
-        print(f"    ✗ R2 upload failed for {vendor_name}: {e}")
+        print(f"    ✗ R2 upload failed for {vendor_name}: {type(e).__name__}: {e}")
+        import traceback
+        print(f"    Traceback: {traceback.format_exc()}")
         return None
 
 def generate_js(data):
