@@ -1,11 +1,11 @@
 // Auto-Generated Threat Intel (Multi-Vendor Dashboard)
-// Updated: 2025-11-22T20:25:25.795770+05:30 IST
+// Updated: 2025-11-22T20:35:23.704622+05:30 IST
 // Sources: OpenPhish, Malware Bazaar, Spamhaus DROP, CINS Army, Blocklist.de, Phishing Database
 // NOTE: Full IOC lists are stored in Cloudflare R2 and loaded on-demand
 
 window.threatIntelData = {
-    "lastUpdated": "2025-11-22T20:25:25.637567+05:30",
-    "lastUpdatedFormatted": "Nov 22, 2025 at 08:25 PM IST",
+    "lastUpdated": "2025-11-22T20:35:23.559916+05:30",
+    "lastUpdatedFormatted": "Nov 22, 2025 at 08:35 PM IST",
     "comparisonPeriod": "Nov 21 \u2013 Nov 22, 2025",
     "vendors": {
         "OpenPhish": {
@@ -71,8 +71,8 @@ window.threatIntelData = {
             "iocCount": 0,
             "r2Url": null,
             "stats": {
-                "total": 6532,
-                "newInLastHour": 6532,
+                "total": 6531,
+                "newInLastHour": 6531,
                 "lastUpdate": "just now"
             },
             "types": [],
@@ -105,14 +105,14 @@ window.threatIntelData = {
             {
                 "category": "Phishing",
                 "count": 0,
-                "trend": "down",
-                "percentage": -100
+                "trend": "stable",
+                "percentage": 0
             },
             {
                 "category": "Malware",
                 "count": 0,
-                "trend": "down",
-                "percentage": -100
+                "trend": "stable",
+                "percentage": 0
             },
             {
                 "category": "C2",
@@ -133,8 +133,8 @@ window.threatIntelData = {
     "snapshotMetrics": {
         "topAttackVector": "Malicious URLs",
         "mostTargetedRegion": "North America",
-        "fastestRisingThreat": "Generic Phishing",
-        "totalAttacksThisHour": 1297372,
-        "lastCalculated": "2025-11-22 20:25 IST"
+        "fastestRisingThreat": "No significant changes",
+        "totalAttacksThisHour": 1297371,
+        "lastCalculated": "2025-11-22 20:35 IST"
     }
 };
