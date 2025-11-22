@@ -911,98 +911,51 @@
             <!-- Statistics Dashboard -->
             <div class="stats-dashboard"
                 style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
-                <div class="stat-card interactive-stat-card" onclick="toggleStatCard('totalIOCsCard')"
-                    style="background: linear-gradient(135deg, rgba(0, 217, 255, 0.1), rgba(0, 217, 255, 0.05)); border: 1px solid rgba(0, 217, 255, 0.2); border-radius: 12px; padding: 1.5rem; cursor: pointer; transition: all 0.3s ease;">
-                    <div style="display: flex; justify-content: space-between; align-items: center;">
-                        <div style="text-align: left;">
-                            <h3
-                                style="margin: 0 0 0.5rem 0; color: var(--text-muted); font-size: 0.9rem; font-weight: 600;">
-                                Total IOCs</h3>
-                            <div class="stat-value" id="totalIOCs"
-                                style="font-size: 2.5rem; font-weight: 700; color: var(--accent-cyan);">0</div>
-                        </div>
-                        <div class="expand-icon"
-                            style="font-size: 1.5rem; color: var(--accent-cyan); transition: transform 0.3s ease;">▼
-                        </div>
+                <div class="stat-card"
+                    style="background: linear-gradient(135deg, rgba(0, 217, 255, 0.1), rgba(0, 217, 255, 0.05)); border: 1px solid rgba(0, 217, 255, 0.2); border-radius: 12px; padding: 1.5rem; transition: all 0.3s ease;">
+                    <div style="text-align: left;">
+                        <h3
+                            style="margin: 0 0 0.5rem 0; color: var(--text-muted); font-size: 0.9rem; font-weight: 600;">
+                            Total IOCs</h3>
+                        <div class="stat-value" id="totalIOCs"
+                            style="font-size: 2.5rem; font-weight: 700; color: var(--accent-cyan);">0</div>
+                        <div style="color: var(--text-muted); font-size: 0.75rem; margin-top: 0.5rem;">Across all
+                            sources</div>
                     </div>
-                    <div id="totalIOCsCard" class="stat-card-expanded" onclick="event.stopPropagation()"
-                        style="display: none; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0, 217, 255, 0.2);">
-                        <input type="text" id="totalIOCsSearch" placeholder="🔍 Search all IOCs..."
-                            onkeyup="filterStatCard('totalIOCsCard')"
-                            style="width: 100%; padding: 0.75rem; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(0, 217, 255, 0.3); border-radius: 8px; color: var(--text-primary); margin-bottom: 1rem; font-size: 0.9rem;">
-                        <div id="totalIOCsList" style="max-height: 300px; overflow-y: auto; text-align: left;">
-                            <p style="color: var(--text-muted); font-size: 0.9rem;">Loading...</p>
+                </div>
+                <div class="stat-card"
+                    style="background: linear-gradient(135deg, rgba(255, 76, 76, 0.1), rgba(255, 76, 76, 0.05)); border: 1px solid rgba(255, 76, 76, 0.2); border-radius: 12px; padding: 1.5rem; transition: all 0.3s ease;">
+                    <div style="text-align: left;">
+                        <h3
+                            style="margin: 0 0 0.5rem 0; color: var(--text-muted); font-size: 0.9rem; font-weight: 600;">
+                            New (Last Hour)</h3>
+                        <div class="stat-value" id="newIOCs"
+                            style="font-size: 2.5rem; font-weight: 700; color: var(--accent-red);">0</div>
+                        <div style="color: var(--text-muted); font-size: 0.75rem; margin-top: 0.5rem;">Recent threats
                         </div>
                     </div>
                 </div>
-                <div class="stat-card interactive-stat-card" onclick="toggleStatCard('newIOCsCard')"
-                    style="background: linear-gradient(135deg, rgba(255, 76, 76, 0.1), rgba(255, 76, 76, 0.05)); border: 1px solid rgba(255, 76, 76, 0.2); border-radius: 12px; padding: 1.5rem; cursor: pointer; transition: all 0.3s ease;">
-                    <div style="display: flex; justify-content: space-between; align-items: center;">
-                        <div style="text-align: left;">
-                            <h3
-                                style="margin: 0 0 0.5rem 0; color: var(--text-muted); font-size: 0.9rem; font-weight: 600;">
-                                New (Last Hour)</h3>
-                            <div class="stat-value" id="newIOCs"
-                                style="font-size: 2.5rem; font-weight: 700; color: var(--accent-red);">0</div>
-                        </div>
-                        <div class="expand-icon"
-                            style="font-size: 1.5rem; color: var(--accent-red); transition: transform 0.3s ease;">▼
-                        </div>
-                    </div>
-                    <div id="newIOCsCard" class="stat-card-expanded" onclick="event.stopPropagation()"
-                        style="display: none; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(255, 76, 76, 0.2);">
-                        <input type="text" id="newIOCsSearch" placeholder="🔍 Search new IOCs..."
-                            onkeyup="filterStatCard('newIOCsCard')"
-                            style="width: 100%; padding: 0.75rem; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 76, 76, 0.3); border-radius: 8px; color: var(--text-primary); margin-bottom: 1rem; font-size: 0.9rem;">
-                        <div id="newIOCsList" style="max-height: 300px; overflow-y: auto; text-align: left;">
-                            <p style="color: var(--text-muted); font-size: 0.9rem;">No new IOCs in the last hour</p>
+                <div class="stat-card"
+                    style="background: linear-gradient(135deg, rgba(0, 255, 136, 0.1), rgba(0, 255, 136, 0.05)); border: 1px solid rgba(0, 255, 136, 0.2); border-radius: 12px; padding: 1.5rem; transition: all 0.3s ease;">
+                    <div style="text-align: left;">
+                        <h3
+                            style="margin: 0 0 0.5rem 0; color: var(--text-muted); font-size: 0.9rem; font-weight: 600;">
+                            Active Campaigns</h3>
+                        <div class="stat-value" id="activeCampaigns"
+                            style="font-size: 2.5rem; font-weight: 700; color: #00ff88;">0</div>
+                        <div style="color: var(--text-muted); font-size: 0.75rem; margin-top: 0.5rem;">Ongoing attacks
                         </div>
                     </div>
                 </div>
-                <div class="stat-card interactive-stat-card" onclick="toggleStatCard('campaignsCard')"
-                    style="background: linear-gradient(135deg, rgba(0, 255, 136, 0.1), rgba(0, 255, 136, 0.05)); border: 1px solid rgba(0, 255, 136, 0.2); border-radius: 12px; padding: 1.5rem; cursor: pointer; transition: all 0.3s ease;">
-                    <div style="display: flex; justify-content: space-between; align-items: center;">
-                        <div style="text-align: left;">
-                            <h3
-                                style="margin: 0 0 0.5rem 0; color: var(--text-muted); font-size: 0.9rem; font-weight: 600;">
-                                Active Campaigns</h3>
-                            <div class="stat-value" id="activeCampaigns"
-                                style="font-size: 2.5rem; font-weight: 700; color: #00ff88;">0</div>
-                        </div>
-                        <div class="expand-icon"
-                            style="font-size: 1.5rem; color: #00ff88; transition: transform 0.3s ease;">▼</div>
-                    </div>
-                    <div id="campaignsCard" class="stat-card-expanded" onclick="event.stopPropagation()"
-                        style="display: none; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0, 255, 136, 0.2);">
-                        <input type="text" id="campaignsSearch" placeholder="🔍 Search campaigns..."
-                            onkeyup="filterStatCard('campaignsCard')"
-                            style="width: 100%; padding: 0.75rem; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(0, 255, 136, 0.3); border-radius: 8px; color: var(--text-primary); margin-bottom: 1rem; font-size: 0.9rem;">
-                        <div id="campaignsList" style="max-height: 300px; overflow-y: auto; text-align: left;">
-                            <p style="color: var(--text-muted); font-size: 0.9rem;">Loading campaigns...</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="stat-card interactive-stat-card" onclick="toggleStatCard('vendorsCard')"
-                    style="background: linear-gradient(135deg, rgba(255, 165, 0, 0.1), rgba(255, 165, 0, 0.05)); border: 1px solid rgba(255, 165, 0, 0.2); border-radius: 12px; padding: 1.5rem; cursor: pointer; transition: all 0.3s ease;">
-                    <div style="display: flex; justify-content: space-between; align-items: center;">
-                        <div style="text-align: left;">
-                            <h3
-                                style="margin: 0 0 0.5rem 0; color: var(--text-muted); font-size: 0.9rem; font-weight: 600;">
-                                Vendors Active</h3>
-                            <div class="stat-value" style="font-size: 2.5rem; font-weight: 700; color: #ffa500;">6/6
-                            </div>
-                        </div>
-                        <div class="expand-icon"
-                            style="font-size: 1.5rem; color: #ffa500; transition: transform 0.3s ease;">▼</div>
-                    </div>
-                    <div id="vendorsCard" class="stat-card-expanded" onclick="event.stopPropagation()"
-                        style="display: none; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(255, 165, 0, 0.2);">
-                        <input type="text" id="vendorsSearch" placeholder="🔍 Search vendors..."
-                            onkeyup="filterStatCard('vendorsCard')"
-                            style="width: 100%; padding: 0.75rem; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 165, 0, 0.3); border-radius: 8px; color: var(--text-primary); margin-bottom: 1rem; font-size: 0.9rem;">
-                        <div id="vendorsList" style="max-height: 300px; overflow-y: auto; text-align: left;">
-                            <p style="color: var(--text-muted); font-size: 0.9rem;">Loading vendors...</p>
-                        </div>
+                <div class="stat-card"
+                    style="background: linear-gradient(135deg, rgba(255, 165, 0, 0.1), rgba(255, 165, 0, 0.05)); border: 1px solid rgba(255, 165, 0, 0.2); border-radius: 12px; padding: 1.5rem; transition: all 0.3s ease;">
+                    <div style="text-align: left;">
+                        <h3
+                            style="margin: 0 0 0.5rem 0; color: var(--text-muted); font-size: 0.9rem; font-weight: 600;">
+                            Vendors Active</h3>
+                        <div class="stat-value" style="font-size: 2.5rem; font-weight: 700; color: #ffa500;">6/6</div>
+                        <div style="color: var(--text-muted); font-size: 0.75rem; margin-top: 0.5rem;">All sources
+                            online</div>
                     </div>
                 </div>
             </div>
