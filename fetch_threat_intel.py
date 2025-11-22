@@ -1201,24 +1201,24 @@ def run_hourly():
         new_iocs = fetch_vendor_iocs(vendor_name, config)
         
         # Combine and deduplicate (NO CAP - store unlimited IOCs!)
-        iocs = fetch_vendor_data(vendor_name, config)
-        if iocs:
-            # Store all IOCs (no caps!)
-            vendors_data[vendor_name] = {
-                'description': config['description'],
-                'website': config['website'],
-                'updateFrequency': config['updateFrequency'],
-                'iocs': iocs,
-                'stats': {
-                    'total': len(iocs),
-                    'newInLastHour': sum(1 for ioc in iocs if is_new(ioc.get('addedAt', '')))
-                },
-                'types': list(set(ioc.get('type', 'unknown') for ioc in iocs)),
-                'sampleIndicators': [ioc['indicator'] for ioc in iocs[:5]],
-                # GitHub Release URL for lazy loading
-                'r2Url': f"{GITHUB_RELEASE_URL}/{vendor_name.lower().replace(' ', '-')}.json",
+        all_iocs = deduplicate_iocs(new_iocs + current_iocs)
+        
+        # Store vendor data
+        vendors_data[vendor_name] = {
+            'description': config['description'],
+            'website': config['website'],
+            'updateFrequency': config['updateFrequency'],
+            'iocs': all_iocs,
+            'stats': {
+                'total': len(all_iocs),
+                'newInLastHour': len([i for i in all_iocs if is_new(i['addedAt'])]),
                 'lastUpdate': format_timestamp(get_ist_now())
-            }
+            },
+            'types': list(set(ioc.get('type', 'unknown') for ioc in all_iocs)),
+            'sampleIndicators': [ioc['indicator'] for ioc in all_iocs[:5]],
+            # GitHub Release URL for lazy loading
+            'r2Url': f"{GITHUB_RELEASE_URL}/{vendor_name.lower().replace(' ', '-')}.json"
+        }
     
     # Save vendor JSON files for GitHub Actions to upload as release assets
     print("\nSaving vendor JSON files:")
