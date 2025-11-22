@@ -50,8 +50,8 @@ R2_ACCOUNT_ID = os.getenv('R2_ACCOUNT_ID', '')
 R2_ACCESS_KEY_ID = os.getenv('R2_ACCESS_KEY_ID', '')
 R2_SECRET_ACCESS_KEY = os.getenv('R2_SECRET_ACCESS_KEY', '')
 R2_BUCKET_NAME = 'thehgtech-iocs'
-# Use HTTP instead of HTTPS to bypass SSL/TLS handshake issues in GitHub Actions
-R2_ENDPOINT = f'http://{R2_ACCOUNT_ID}.r2.cloudflarestorage.com' if R2_ACCOUNT_ID else ''
+# Keep HTTPS endpoint but will use use_ssl=False in boto3 client
+R2_ENDPOINT = f'https://{R2_ACCOUNT_ID}.r2.cloudflarestorage.com' if R2_ACCOUNT_ID else ''
 R2_PUBLIC_URL = 'https://pub-af168ad13ad243b3898543e79d94695a.r2.dev'
 
 # Debug: Print R2 config (masked)
@@ -825,11 +825,12 @@ def upload_to_r2(vendor_name, iocs):
             endpoint_url=R2_ENDPOINT,
             aws_access_key_id=R2_ACCESS_KEY_ID,
             aws_secret_access_key=R2_SECRET_ACCESS_KEY,
+            use_ssl=False,  # Force HTTP transport (no SSL)
             config=Config(
                 signature_version='s3v4',
                 s3={'addressing_style': 'path'}
             ),
-            verify=False  # Disable SSL verification
+            verify=False  # Disable SSL verification (redundant with use_ssl=False)
         )
         
         s3.put_object(
