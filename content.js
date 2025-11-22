@@ -5,82 +5,75 @@ var websiteContent = {
     "cyberShorts": [
         {
             "date": "Nov 21 2025",
-            "title": "Google Integrates Ads into AI Mode, Transforming Answer Engine",
-            "content": "Google has initiated the integration of advertisements into its AI Mode, an innovative answer engine distinct from traditional search engines. This move marks a significant shift in how Google monetizes its AI capabilities, blending commercial content with AI-generated responses. The inclusion of ads in AI Mode is poised to alter user interaction by potentially influencing the information presented. For cybersecurity and AI professionals, this development raises questions about data privacy and the integrity of AI-generated content. The strategic decision underscores Google&#x27;s commitment to expanding its revenue streams through advanced AI technologies. As AI continues to evolve, the balance between commercial interests and unbiased information remains a critical focus for industry stakeholders.",
+            "title": "CISA Alerts on Active Exploitation of Oracle Identity Manager Flaw",
+            "content": "The U.S. Cybersecurity &amp; Infrastructure Security Agency (CISA) has issued an urgent warning to government agencies regarding a critical vulnerability in Oracle Identity Manager, identified as CVE-2025-61757. This flaw is reportedly being actively exploited in the wild, potentially as a zero-day vulnerability, underscoring the immediate need for patching. Oracle Identity Manager is widely used for identity management, making this flaw particularly significant for organizations relying on its security. The exploitation of this vulnerability could lead to unauthorized access and control over sensitive systems. Security professionals are advised to prioritize updates and monitor systems for any signs of compromise. This alert highlights the ongoing challenges in maintaining secure identity management infrastructures.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/google-begins-showing-ads-in-ai-mode-ai-answers/"
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-warns-oracle-identity-manager-rce-flaw-is-being-actively-exploited/"
         },
         {
             "date": "Nov 21 2025",
-            "title": "SonicWall Addresses Critical Security Flaws in Key Products",
-            "content": "SonicWall has released patches for high-severity vulnerabilities affecting its firewalls and email security appliances. These flaws could be leveraged by attackers to initiate denial-of-service attacks, execute arbitrary code, or gain unauthorized access to files and directories. The swift action by SonicWall highlights the ongoing need for vigilance in securing enterprise networks against evolving threats. For IT and cybersecurity professionals, the prompt application of these patches is crucial to safeguarding organizational infrastructure. The incident underscores the importance of regular software updates and proactive vulnerability management in maintaining robust cybersecurity defenses.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/sonicwall-patches-high-severity-flaws-in-firewalls-email-security-appliance/"
+            "title": "Salesforce Data Breach via Gainsight: A Recurring Threat",
+            "content": "Salesforce customers have once again fallen victim to data breaches, this time through a third-party application, Gainsight. The ShinyHunters extortion group, known for previous cyberattacks, has exploited vulnerabilities in Gainsight to access sensitive Salesforce data. This incident mirrors similar breaches from earlier in the year, emphasizing the persistent threat posed by third-party applications. The attack raises concerns about the security of integrated platforms and the need for robust third-party risk management. Organizations using Salesforce and similar platforms should reassess their security protocols to prevent data leakage through external applications. The recurrence of such breaches highlights the importance of vigilance and comprehensive security strategies.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/salesforce-customers-hacked-gainsight"
         },
         {
             "date": "Nov 21 2025",
-            "title": "APT24 Utilizes &#x27;BadAudio&#x27; Malware in Supply Chain Attacks",
-            "content": "Chinese cyber espionage group APT24 has been deploying the &#x27;BadAudio&#x27; malware through sophisticated supply chain attacks. The group employs various techniques to introduce the BadAudio downloader, which subsequently installs additional malicious payloads. This campaign highlights the persistent threat posed by state-sponsored actors targeting supply chains to infiltrate networks. Security professionals must remain vigilant, as such attacks can compromise entire ecosystems by exploiting trusted vendor relationships. The discovery of BadAudio emphasizes the critical need for comprehensive supply chain security strategies and robust monitoring solutions to detect and mitigate advanced persistent threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/chinese-cyberspies-deploy-badaudio-malware-via-supply-chain-attacks/"
+            "title": "Security Flaws in LINE Messaging App Expose Users to Espionage",
+            "content": "Security researchers have uncovered critical vulnerabilities in the LINE messaging app, which could potentially facilitate cyber espionage. The app&#x27;s custom protocol, designed for encrypted communication, has been found to allow message replays, impersonation attacks, and exposure of sensitive chat information. These flaws could be exploited by geopolitical adversaries, particularly affecting users in Asia where LINE is popular. The discovery underscores the importance of secure protocol design and thorough testing in messaging applications. For security professionals, this incident highlights the need to evaluate the security of communication tools, especially those used in sensitive environments. Addressing these vulnerabilities is crucial to safeguarding user privacy and maintaining trust in encrypted messaging platforms.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/application-security/line-messaging-bugs-asian-cyber-espionage"
         },
         {
             "date": "Nov 21 2025",
-            "title": "Dispute Arises Over Alleged Comet Browser Vulnerability",
-            "content": "A dispute has emerged between SquareX and Perplexity regarding a purported vulnerability in the Comet browser. SquareX claims to have discovered a method to exploit a concealed Comet API to execute local commands, while Perplexity dismisses the research as unfounded. This controversy underscores the challenges in vulnerability disclosure and the importance of rigorous verification processes. For cybersecurity experts, the situation highlights the need for transparency and collaboration in addressing potential security issues. The debate also serves as a reminder of the complexities involved in securing modern web browsers against emerging threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/squarex-and-perplexity-quarrel-over-alleged-comet-browser-vulnerability/"
+            "title": "Cloudflare Outage Exposes Risks of Centralized Internet Services",
+            "content": "A recent outage at Cloudflare has sparked a debate about the vulnerabilities of centralized internet services. Dr. David Utzke argues that even sophisticated systems like Cloudflare can become single points of failure, impacting the global digital economy. The incident serves as a cautionary tale for enterprises relying heavily on centralized platforms for their operations. It highlights the need for diversification and redundancy in digital infrastructure to mitigate such risks. Security and IT professionals should consider strategies to distribute their services to avoid dependency on a single provider. This event underscores the critical balance between convenience and resilience in modern digital ecosystems.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/cloudflares-one-stop-shop-convenience-global-digital-economy"
         },
         {
             "date": "Nov 21 2025",
-            "title": "Samsung&#x27;s Mobile Security Solutions Favored by IT Administrators",
-            "content": "IT administrators are increasingly opting for Samsung&#x27;s mobile security solutions to protect corporate data without hindering employee productivity. The balance between robust security measures and seamless user experience is crucial as mobile devices become integral to modern workplaces. Samsung&#x27;s offerings are designed to address the dual challenges of safeguarding sensitive information and enabling efficient workflows. For IT professionals, choosing the right mobile security platform is vital in mitigating risks associated with mobile device usage. This trend reflects the growing demand for comprehensive security solutions that align with the dynamic needs of enterprise environments.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/11/why-it-admins-choose-samsung-for-mobile.html"
-        },
-        {
-            "date": "Nov 21 2025",
-            "title": "Latest ISC Stormcast Highlights Key Cybersecurity Trends",
-            "content": "The latest ISC Stormcast for November 21st, 2025, delivers crucial insights into current cybersecurity trends and threats. As part of its ongoing efforts to keep professionals informed, the SANS Internet Storm Center provides updates on emerging vulnerabilities and potential exploits. The podcast serves as a valuable resource for IT and security professionals seeking to stay ahead of threats. By sharing real-time data and expert analysis, the Stormcast helps organizations enhance their defensive strategies. This episode underscores the importance of vigilance and proactive measures in maintaining cybersecurity resilience. With the InfoCON level at green, the focus remains on awareness and preparedness in the face of evolving cyber threats.",
-            "source": "SANS Internet Storm Center, InfoCON: green",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32508"
+            "title": "New Framework Aims to Outpace Evolving Cyber Attack Tactics",
+            "content": "In response to the evolving tactics of cyber attackers, a new security framework has been proposed to help organizations stay ahead of threats. This framework addresses the shift towards &quot;silent&quot; infiltration methods, where attackers exploit existing enterprise policies to gain access without detection. The approach emphasizes proactive security measures and continuous monitoring to identify and mitigate threats before they cause harm. For security professionals, this framework provides a strategic blueprint to enhance their defenses against increasingly sophisticated attacks. Implementing these guidelines can help organizations protect their assets and maintain operational integrity in the face of evolving threats. The initiative highlights the importance of adaptive security strategies in today&#x27;s dynamic threat landscape.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cyber-risk/hack-hackers-6-laws-staying-ahead-cyberattackers"
         }
     ],
     "aiShorts": [
         {
             "date": "Nov 21 2025",
-            "title": "OpenAI&#x27;s ChatGPT Introduces Group Chats for Enhanced Team Collaboration",
-            "content": "OpenAI has launched a new feature within ChatGPT that allows users to create group chats, enabling up to 20 participants to engage in a shared conversation with the AI chatbot. This development marks a shift from ChatGPT’s traditional one-on-one interaction model to a collaborative tool that can be integrated into team planning and discussions. The feature, now available to all logged-in users after a brief pilot phase, could transform how teams utilize AI in daily operations. For AI professionals, this enhancement underscores the growing trend of embedding AI into collaborative workflows, potentially improving efficiency and decision-making processes. The introduction of group chats could also lead to new use cases for AI in project management and team dynamics, offering a more interactive and inclusive approach to leveraging AI capabilities.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/chatgpt-group-chats-may-help-teams-bring-ai-into-daily-planning/"
-        },
-        {
-            "date": "Nov 20 2025",
-            "title": "Mixup App Revolutionizes AI Image Creation with Interactive Recipes",
-            "content": "A new app called Mixup has been unveiled, offering users a novel way to create AI-generated images using a Mad Libs-style approach. By employing Google&#x27;s Nano Banana technology, the app allows users to fill in blanks in AI &quot;recipes&quot; that can be shared and customized. This innovative method democratizes the creation of AI art, making it accessible to a broader audience, including those without technical expertise. For AI specialists, Mixup represents a shift towards more user-friendly AI tools that encourage creativity and experimentation. The app&#x27;s ability to blend photos, text, and doodles into cohesive images could inspire new applications in digital art and content creation, highlighting the potential for AI to enhance artistic expression.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/20/mixup-is-a-new-mad-libs-style-app-for-creating-ai-images-from-photos-text-and-doodles/"
-        },
-        {
-            "date": "Nov 20 2025",
-            "title": "Royal Navy Deploys AI Avatar Atlas to Streamline Recruitment",
-            "content": "The Royal Navy has implemented an AI avatar named Atlas to handle the initial stages of its recruitment process, particularly for prospective submariners. Powered by a large language model, Atlas is designed to answer questions in real-time, thus reducing the workload on human recruiters. This deployment illustrates the practical application of AI in automating routine tasks, allowing human resources to focus on more complex issues. For professionals in AI and defense sectors, this move highlights the potential for AI to enhance operational efficiency and improve recruitment processes. The use of AI avatars like Atlas could set a precedent for other military branches and large organizations seeking to optimize their recruitment strategies through technology.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/how-the-royal-navy-is-using-ai-to-cut-recruitment-workload/"
-        },
-        {
-            "date": "Nov 20 2025",
-            "title": "Google&#x27;s Gemini 3 AI Model Exhibits Quirky Behavior in Date Recognition",
-            "content": "AI researcher Andrej Karpathy experienced an unexpected behavior while testing Google&#x27;s latest AI model, Gemini 3, which humorously refused to acknowledge the current year as 2025. This incident reveals a &quot;model smell,&quot; a term used to describe anomalies in AI behavior that can arise from training data or model architecture. Such quirks, while amusing, are significant for AI developers as they highlight potential areas for improvement in model accuracy and reliability. For AI professionals, understanding and addressing these issues is crucial to advancing AI capabilities and ensuring robust performance. The incident serves as a reminder of the importance of thorough testing and validation in AI model development.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/20/gemini-3-refused-to-believe-it-was-2025-and-hilarity-ensued/"
-        },
-        {
-            "date": "Nov 20 2025",
-            "title": "ScaleOps Launches AI Infra Product to Halve GPU Costs for Enterprises",
-            "content": "ScaleOps has introduced a new AI Infra Product designed to reduce GPU costs by 50% for enterprises running self-hosted large language models (LLMs) and AI applications. This product expands the company&#x27;s cloud resource management platform, offering enhanced automation capabilities to meet the growing demand for efficient AI infrastructure. For enterprises, this development promises significant cost savings and improved resource allocation, making AI technologies more accessible and sustainable. AI professionals and IT managers can leverage this solution to optimize their AI deployments, ensuring scalability and performance while managing expenses. The launch underscores the industry&#x27;s focus on cost-effective AI solutions, crucial for the widespread adoption of advanced AI technologies.",
+            "title": "OpenAI to Discontinue GPT-4o API Access by February 2026",
+            "content": "OpenAI has announced the planned retirement of its popular GPT-4o model from the developer platform by mid-February 2026. The company has begun notifying API customers about the transition, with access scheduled to end on February 16, 2026. This move leaves developers with a three-month window to adapt their applications to other models. The decision highlights OpenAI&#x27;s strategy to streamline its offerings, possibly in favor of newer, more advanced models. For AI professionals, this change necessitates evaluating alternative solutions and planning for integration challenges. The phase-out underscores the dynamic nature of AI development, where rapid advancements can lead to the obsolescence of even well-regarded models. Staying informed on such transitions is crucial for maintaining competitive and functional AI applications.",
             "source": "AI | VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/scaleops-new-ai-infra-product-slashes-gpu-costs-for-self-hosted-enterprise"
+            "sourceUrl": "https://venturebeat.com/ai/openai-is-ending-api-access-to-fan-favorite-gpt-4o-model-in-february-2026"
+        },
+        {
+            "date": "Nov 21 2025",
+            "title": "Sierra Achieves $100M ARR Milestone in Under Two Years",
+            "content": "Sierra, the startup founded by Bret Taylor, has reached an impressive $100 million annual recurring revenue (ARR) in less than two years. This rapid growth reflects a strong demand for AI-driven solutions across enterprises. The company&#x27;s success indicates a significant trend of businesses integrating AI agents to streamline operations and enhance productivity. For AI professionals, Sierra&#x27;s achievement signals a growing market for AI services, emphasizing the importance of innovation and scalability in AI product development. The milestone also highlights the competitive landscape, where startups can quickly gain traction by addressing specific enterprise needs. As AI continues to evolve, staying ahead of market demands will be crucial for sustained growth and success.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/21/bret-taylors-sierra-reaches-100m-arr-in-under-two-years/"
+        },
+        {
+            "date": "Nov 21 2025",
+            "title": "Nvidia&#x27;s Data Center Revenue Surges Amidst AI Investment Boom",
+            "content": "Nvidia&#x27;s data center business has surged to nearly $50 billion in revenue, driven by substantial investments from AI companies in infrastructure. This growth raises questions about the sustainability of such rapid expansion and whether the current AI enthusiasm represents a bubble. For AI and tech professionals, Nvidia&#x27;s success underscores the critical role of robust infrastructure in supporting AI advancements. The company&#x27;s performance also reflects broader industry trends, where belief in AI&#x27;s potential fuels continuous investment. However, professionals should remain cautious, assessing the long-term viability of such growth and the potential risks associated with market fluctuations. Understanding these dynamics is essential for strategic planning and investment decisions in the AI sector.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/podcast/ai-mania-is-making-nvidia-a-lot-of-money/"
+        },
+        {
+            "date": "Nov 21 2025",
+            "title": "Top AI Wearables and Gadgets to Watch in 2025",
+            "content": "The latest AI wearables and gadgets are making waves, with innovative products like Bee, Friend, and Plaud leading the charge. These devices demonstrate the growing integration of AI into consumer electronics, offering enhanced functionality and user experiences. For tech professionals, the rise of AI wearables presents opportunities for innovation in design and application development. The trend also highlights the importance of understanding consumer needs and preferences in creating successful AI products. As the market for AI gadgets expands, staying informed about the latest advancements and potential use cases will be crucial for maintaining a competitive edge. This evolution in wearable technology underscores the broader impact of AI on everyday life and consumer technology.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/21/the-hottest-ai-wearables-and-gadgets-you-can-buy-right-now/"
+        },
+        {
+            "date": "Nov 21 2025",
+            "title": "Meta Unveils WorldGen for Interactive 3D World Creation",
+            "content": "Meta has introduced WorldGen, a generative AI system designed to create interactive 3D worlds, moving beyond static imagery. This innovation aims to enhance spatial computing experiences across various applications, including consumer gaming, industrial digital twins, and employee training simulations. For AI professionals, WorldGen represents a significant leap in leveraging AI for immersive environments, offering new possibilities in content creation and user engagement. The system addresses a major bottleneck in developing interactive 3D assets, potentially transforming how digital spaces are constructed and experienced. Understanding WorldGen&#x27;s capabilities and implications will be vital for those involved in 3D modeling, virtual reality, and AI-driven content creation, marking a new era in interactive technology.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/worldgen-meta-generative-ai-for-interactive-3d-worlds/"
         }
     ],
     "articles": {
@@ -357,6 +350,16 @@ var websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2025-61757",
+            "dateAdded": "Nov 21, 2025",
+            "vendor": "Oracle Fusion Middleware",
+            "description": "Oracle Fusion Middleware contains a missing authentication for critical function vulnerability, allowing unauthenticated remote attackers to take over Identity Manager.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61757"
+        },
         {
             "cveId": "CVE-2025-13223",
             "dateAdded": "Nov 19, 2025",
