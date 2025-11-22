@@ -29,17 +29,20 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python fetch_threat_intel.py --both
 
+      - name: Prepare IOC files for GitHub Pages
+        run: |
+          mkdir -p gh-pages-deploy
+          cp *.json gh-pages-deploy/ || true
+          rm -f gh-pages-deploy/threat-intel-history.json || true
+          ls -lh gh-pages-deploy/
+
       - name: Deploy IOC Data to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
+          publish_dir: ./gh-pages-deploy
           publish_branch: gh-pages
           keep_files: false
-          include_files: |
-            *.json
-          exclude_files: |
-            threat-intel-history.json
 
       - name: Commit & Push Metadata Files
         run: |
