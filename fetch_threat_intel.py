@@ -34,31 +34,13 @@ except ImportError:
     print("Warning: OpenAI library not installed. AI insights will be disabled.")
     OPENAI_AVAILABLE = False
 
-try:
-    import boto3
-    from botocore.client import Config
-    BOTO3_AVAILABLE = True
-except ImportError:
-    print("Warning: boto3 not installed. R2 uploads will be disabled.")
-    BOTO3_AVAILABLE = False
-
 # ──────────────────────────────────────────────────────────────
 # Config
 # ──────────────────────────────────────────────────────────────
-# Cloudflare R2 Configuration
-R2_ACCOUNT_ID = os.getenv('R2_ACCOUNT_ID', '')
-R2_ACCESS_KEY_ID = os.getenv('R2_ACCESS_KEY_ID', '')
-R2_SECRET_ACCESS_KEY = os.getenv('R2_SECRET_ACCESS_KEY', '')
-R2_BUCKET_NAME = 'thehgtech-iocs'
-# Keep HTTPS endpoint but will use use_ssl=False in boto3 client
-R2_ENDPOINT = f'https://{R2_ACCOUNT_ID}.r2.cloudflarestorage.com' if R2_ACCOUNT_ID else ''
-R2_PUBLIC_URL = 'https://pub-af168ad13ad243b3898543e79d94695a.r2.dev'
-
-# Debug: Print R2 config (masked)
-if R2_ACCOUNT_ID:
-    print(f"R2 Config: Account ID: {R2_ACCOUNT_ID[:8]}..., Endpoint: {R2_ENDPOINT}")
-else:
-    print("⚠️ WARNING: R2_ACCOUNT_ID not set!")
+# GitHub Releases Configuration
+GITHUB_REPO = 'Harish761/thehgtech'
+GITHUB_RELEASE_TAG = 'iocs-latest'
+GITHUB_RELEASE_URL = f'https://github.com/{GITHUB_REPO}/releases/download/{GITHUB_RELEASE_TAG}'
 
 # Vendor-specific caps - DISABLED for R2 storage (unlimited IOCs!)
 # With R2, we store ALL IOCs and load on-demand, so no caps needed
@@ -787,72 +769,33 @@ def should_run_weekly_ai(history):
     except:
         return True
 
-def upload_to_r2(vendor_name, iocs):
-    """Upload vendor IOCs to Cloudflare R2 storage"""
-    if not BOTO3_AVAILABLE:
-        print(f"  ⚠ boto3 not available, skipping R2 upload for {vendor_name}")
-        return None
-        
-    if not all([R2_ACCOUNT_ID, R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY]):
-        print(f"  ⚠ R2 credentials not set, skipping R2 upload for {vendor_name}")
-        print(f"     Account ID set: {bool(R2_ACCOUNT_ID)}")
-        print(f"     Access Key set: {bool(R2_ACCESS_KEY_ID)}")
-        print(f"     Secret Key set: {bool(R2_SECRET_ACCESS_KEY)}")
-        return None
+def save_vendor_json_files(vendors_data):
+    """Save each vendor's IOCs to separate JSON files for GitHub Releases"""
+    saved_files = []
     
-    try:
-        import ssl
-        import urllib3
+    for vendor_name, vendor_data in vendors_data.items():
+        filename = f"{vendor_name.lower().replace(' ', '-')}.json"
+        iocs = vendor_data.get('iocs', [])
         
-        # Disable SSL warnings when verify=False
-        urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-        
-        filename = vendor_name.lower().replace(' ', '-') + '.json'
-        data_dict = {
+        data = {
             'vendor': vendor_name,
             'lastUpdated': get_ist_now().isoformat(),
             'iocCount': len(iocs),
             'iocs': iocs
         }
-        json_data = json.dumps(data_dict, indent=2)
         
-        print(f"    Attempting R2 upload: {filename} ({len(json_data)} bytes)")
-        print(f"    Endpoint: {R2_ENDPOINT}")
-        
-        # Create boto3 client with SSL disabled
-        s3 = boto3.client(
-            's3',
-            endpoint_url=R2_ENDPOINT,
-            aws_access_key_id=R2_ACCESS_KEY_ID,
-            aws_secret_access_key=R2_SECRET_ACCESS_KEY,
-            use_ssl=False,  # Force HTTP transport (no SSL)
-            config=Config(
-                signature_version='s3v4',
-                s3={'addressing_style': 'path'}
-            ),
-            verify=False  # Disable SSL verification (redundant with use_ssl=False)
-        )
-        
-        s3.put_object(
-            Bucket=R2_BUCKET_NAME,
-            Key=filename,
-            Body=json_data,
-            ContentType='application/json',
-            CacheControl='public, max-age=3600'
-        )
-        
-        public_url = f"{R2_PUBLIC_URL}/{filename}"
-        print(f"    ✓ Uploaded {len(iocs)} IOCs to R2: {filename}")
-        return public_url
-        
-    except Exception as e:
-        print(f"    ✗ R2 upload failed for {vendor_name}: {type(e).__name__}: {e}")
-        import traceback
-        print(f"    Traceback: {traceback.format_exc()}")
-        return None
+        try:
+            with open(filename, 'w') as f:
+                json.dump(data, f, indent=2)
+            print(f"    ✓ Saved {filename} ({len(iocs)} IOCs)")
+            saved_files.append(filename)
+        except Exception as e:
+            print(f"    ✗ Failed to save {filename}: {e}")
+    
+    return saved_files
 
 def generate_js(data):
-    """Generate lightweight JavaScript file with metadata only (full IOCs in R2)"""
+    """Generate lightweight JavaScript file with metadata only (full IOCs in GitHub Releases)"""
     
     # Create lightweight version with metadata only
     lightweight_data = {
@@ -1258,25 +1201,29 @@ def run_hourly():
         new_iocs = fetch_vendor_iocs(vendor_name, config)
         
         # Combine and deduplicate (NO CAP - store unlimited IOCs!)
-        all_iocs = deduplicate_iocs(new_iocs + current_iocs)
-        
-        # Upload to R2
-        r2_url = upload_to_r2(vendor_name, all_iocs)
-
-        
-        # Store vendor data
-        vendors_data[vendor_name] = {
-            'description': config['description'],
-            'website': config['website'],
-            'updateFrequency': config['updateFrequency'],
-            'iocs': all_iocs,
-            'r2Url': r2_url,  # URL to fetch full IOCs from R2
-            'stats': {
-                'total': len(all_iocs),
-                'newInLastHour': len([i for i in all_iocs if is_new(i['addedAt'])]),
+        iocs = fetch_vendor_data(vendor_name, config)
+        if iocs:
+            # Store all IOCs (no caps!)
+            vendors_data[vendor_name] = {
+                'description': config['description'],
+                'website': config['website'],
+                'updateFrequency': config['updateFrequency'],
+                'iocs': iocs,
+                'stats': {
+                    'total': len(iocs),
+                    'newInLastHour': sum(1 for ioc in iocs if is_new(ioc.get('addedAt', '')))
+                },
+                'types': list(set(ioc.get('type', 'unknown') for ioc in iocs)),
+                'sampleIndicators': [ioc['indicator'] for ioc in iocs[:5]],
+                # GitHub Release URL for lazy loading
+                'r2Url': f"{GITHUB_RELEASE_URL}/{vendor_name.lower().replace(' ', '-')}.json",
                 'lastUpdate': format_timestamp(get_ist_now())
             }
-        }
+    
+    # Save vendor JSON files for GitHub Actions to upload as release assets
+    print("\nSaving vendor JSON files:")
+    saved_files = save_vendor_json_files(vendors_data)
+    print(f"  ✓ Saved {len(saved_files)} vendor JSON files")
     
     # Generate overview (top 20 most recent across all vendors)
     all_iocs_for_overview = []
