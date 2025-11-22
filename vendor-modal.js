@@ -1,7 +1,37 @@
 // Vendor Modal Functions for Threat Intelligence Dashboard
 
-// Open vendor modal with IOCs
-function openVendorModal(vendorName) {
+// Cache for loaded vendor data
+const vendorDataCache = {};
+
+// Load vendor IOCs from Cloudflare R2
+async function loadVendorIOCs(vendorName) {
+    if (vendorDataCache[vendorName]) {
+        console.log(`✓ Using cached data for ${vendorName}`);
+        return vendorDataCache[vendorName];
+    }
+
+    const vendorMeta = window.threatIntelData.vendors[vendorName];
+    if (!vendorMeta || !vendorMeta.r2Url) {
+        console.error(`No R2 URL for ${vendorName}`);
+        return null;
+    }
+
+    try {
+        console.log(`Fetching ${vendorName} IOCs from R2...`);
+        const response = await fetch(vendorMeta.r2Url);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const data = await response.json();
+        vendorDataCache[vendorName] = data.iocs;
+        console.log(`✓ Loaded ${data.iocs.length} IOCs for ${vendorName}`);
+        return data.iocs;
+    } catch (error) {
+        console.error(`Failed to load ${vendorName} IOCs:`, error);
+        return null;
+    }
+}
+
+// Open vendor modal with IOCs (loads from R2 on-demand)
+async function openVendorModal(vendorName) {
     const modal = document.getElementById('vendorModal');
     const title = document.getElementById('vendorModalTitle');
     const content = document.getElementById('vendorModalContent');
@@ -18,8 +48,24 @@ function openVendorModal(vendorName) {
         return;
     }
 
-    const vendorData = window.threatIntelData.vendors[vendorName];
-    const iocs = vendorData.iocs || [];
+    const vendorMeta = window.threatIntelData.vendors[vendorName];
+
+    // Show loading state
+    content.innerHTML = `
+        <div style="text-align: center; padding: 3rem; color: var(--text-muted);">
+            <div class="loading-spinner"></div>
+            <p style="margin-top: 1rem;">Loading ${vendorMeta.iocCount.toLocaleString()} IOCs from Cloudflare R2...</p>
+        </div>
+    `;
+    countDiv.textContent = `${vendorMeta.iocCount.toLocaleString()} IOCs`;
+    modal.style.display = 'block';
+
+    // Load IOCs from R2
+    const iocs = await loadVendorIOCs(vendorName);
+    if (!iocs || iocs.length === 0) {
+        content.innerHTML = '<p style="color: var(--accent-red);">Failed to load IOCs. Please try again.</p>';
+        return;
+    }
 
     // Render IOCs
     let html = '';
@@ -38,8 +84,7 @@ function openVendorModal(vendorName) {
     });
 
     content.innerHTML = html || '<p style="color: var(--text-muted);">No IOCs available</p>';
-    countDiv.textContent = `Showing ${iocs.length} IOCs`;
-    modal.style.display = 'block';
+    countDiv.textContent = `Showing ${iocs.length.toLocaleString()} IOCs`;
 }
 
 // Close vendor modal

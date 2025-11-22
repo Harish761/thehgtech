@@ -34,23 +34,35 @@ except ImportError:
     print("Warning: OpenAI library not installed. AI insights will be disabled.")
     OPENAI_AVAILABLE = False
 
+try:
+    import boto3
+    from botocore.client import Config
+    BOTO3_AVAILABLE = True
+except ImportError:
+    print("Warning: boto3 not installed. R2 uploads will be disabled.")
+    BOTO3_AVAILABLE = False
+
 # ──────────────────────────────────────────────────────────────
 # Config
 # ──────────────────────────────────────────────────────────────
-# Vendor-specific caps based on daily generation rates
-# Total: 2,100 IOCs (up from 300)
-VENDOR_CAPS = {
-    'Malware Bazaar': 500,      # ~2,246/day generation
-    'Phishing Database': 500,   # ~7,500/day generation
-    'Blocklist.de': 500,        # ~1,500/day generation
-    'CINS Army': 300,           # ~750/day generation
-    'OpenPhish': 200,           # ~450/day generation
-    'Spamhaus DROP': 100        # ~3/day (static list)
-}
+# Cloudflare R2 Configuration
+R2_ACCOUNT_ID = os.getenv('R2_ACCOUNT_ID', '')
+R2_ACCESS_KEY_ID = os.getenv('R2_ACCESS_KEY_ID', '')
+R2_SECRET_ACCESS_KEY = os.getenv('R2_SECRET_ACCESS_KEY', '')
+R2_BUCKET_NAME = 'thehgtech-iocs'
+R2_ENDPOINT = f'https://{R2_ACCOUNT_ID}.r2.cloudflarestorage.com' if R2_ACCOUNT_ID else ''
+R2_PUBLIC_URL = 'https://pub-af168ad13ad243b3898543e79d94695a.r2.dev'
 
-def get_vendor_cap(vendor_name):
-    """Get the IOC cap for a specific vendor"""
-    return VENDOR_CAPS.get(vendor_name, 50)  # Default to 50 if not found
+# Vendor-specific caps - DISABLED for R2 storage (unlimited IOCs!)
+# With R2, we store ALL IOCs and load on-demand, so no caps needed
+# VENDOR_CAPS = {
+#     'Malware Bazaar': 500,
+#     'Phishing Database': 500,
+#     'Blocklist.de': 500,
+#     'CINS Army': 300,
+#     'OpenPhish': 200,
+#     'Spamhaus DROP': 100
+# }
 
 IOC_EXPIRY_HOURS = 24
 OUTPUT_FILE = 'threat-intel.js'
@@ -769,13 +781,90 @@ def should_run_weekly_ai(history):
     except:
         return True
 
+def upload_to_r2(vendor_name, iocs):
+    """Upload vendor IOCs to Cloudflare R2 storage"""
+    if not BOTO3_AVAILABLE:
+        print(f"  ⚠ boto3 not available, skipping R2 upload for {vendor_name}")
+        return None
+        
+    if not all([R2_ACCOUNT_ID, R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY]):
+        print(f"  ⚠ R2 credentials not set, skipping R2 upload for {vendor_name}")
+        return None
+    
+    try:
+        s3 = boto3.client(
+            's3',
+            endpoint_url=R2_ENDPOINT,
+            aws_access_key_id=R2_ACCESS_KEY_ID,
+            aws_secret_access_key=R2_SECRET_ACCESS_KEY,
+            config=Config(signature_version='s3v4', region_name='auto')
+        )
+        
+        filename = vendor_name.lower().replace(' ', '-') + '.json'
+        data = {
+            'vendor': vendor_name,
+            'lastUpdated': get_ist_now().isoformat(),
+            'iocCount': len(iocs),
+            'iocs': iocs
+        }
+        
+        s3.put_object(
+            Bucket=R2_BUCKET_NAME,
+            Key=filename,
+            Body=json.dumps(data, indent=2),
+            ContentType='application/json',
+            CacheControl='public, max-age=3600'
+        )
+        
+        public_url = f"{R2_PUBLIC_URL}/{filename}"
+        print(f"    ✓ Uploaded {len(iocs)} IOCs to R2: {filename}")
+        return public_url
+        
+    except Exception as e:
+        print(f"    ✗ R2 upload failed for {vendor_name}: {e}")
+        return None
+
 def generate_js(data):
-    """Generate JavaScript file with data"""
+    """Generate lightweight JavaScript file with metadata only (full IOCs in R2)"""
+    
+    # Create lightweight version with metadata only
+    lightweight_data = {
+        'lastUpdated': data['lastUpdated'],
+        'lastUpdatedFormatted': data['lastUpdatedFormatted'],
+        'comparisonPeriod': data.get('comparisonPeriod', ''),
+        'vendors': {}
+    }
+    
+    # For each vendor, include metadata but NOT full IOC list
+    for vendor_name, vendor_data in data['vendors'].items():
+        lightweight_data['vendors'][vendor_name] = {
+            'description': vendor_data['description'],
+            'website': vendor_data['website'],
+            'updateFrequency': vendor_data['updateFrequency'],
+            'iocCount': len(vendor_data.get('iocs', [])),
+            'r2Url': vendor_data.get('r2Url'),
+            'stats': vendor_data.get('stats', {}),
+            'types': vendor_data.get('types', []),
+            'sampleIndicators': vendor_data.get('sampleIndicators', [])
+        }
+    
+    # Add overview with top 20 most recent IOCs (for homepage)
+    all_iocs = []
+    for vendor_data in data['vendors'].values():
+        all_iocs.extend(vendor_data.get('iocs', []))
+    all_iocs.sort(key=lambda x: x.get('addedAt', ''), reverse=True)
+    lightweight_data['overview'] = all_iocs[:20]
+    
+    # Add daily summary and snapshot metrics
+    lightweight_data['dailySummary'] = data.get('dailySummary', {})
+    lightweight_data['snapshotMetrics'] = data.get('snapshotMetrics', {})
+    
     js_content = f"""// Auto-Generated Threat Intel (Multi-Vendor Dashboard)
 // Updated: {get_ist_now().isoformat()} IST
-// Sources: {', '.join(VENDORS.keys())}
+// Sources: {', '.join(data['vendors'].keys())}
+// NOTE: Full IOC lists are stored in Cloudflare R2 and loaded on-demand
 
-window.threatIntelData = {json.dumps(data, indent=4)};
+window.threatIntelData = {json.dumps(lightweight_data, indent=4)};
 """
     return js_content
 
@@ -1141,9 +1230,11 @@ def run_hourly():
         # Fetch new IOCs
         new_iocs = fetch_vendor_iocs(vendor_name, config)
         
-        # Combine and deduplicate
-        vendor_cap = get_vendor_cap(vendor_name)
-        all_iocs = deduplicate_iocs(new_iocs + current_iocs)[:vendor_cap]
+        # Combine and deduplicate (NO CAP - store unlimited IOCs!)
+        all_iocs = deduplicate_iocs(new_iocs + current_iocs)
+        
+        # Upload to R2
+        r2_url = upload_to_r2(vendor_name, all_iocs)
 
         
         # Store vendor data
@@ -1152,6 +1243,7 @@ def run_hourly():
             'website': config['website'],
             'updateFrequency': config['updateFrequency'],
             'iocs': all_iocs,
+            'r2Url': r2_url,  # URL to fetch full IOCs from R2
             'stats': {
                 'total': len(all_iocs),
                 'newInLastHour': len([i for i in all_iocs if is_new(i['addedAt'])]),
