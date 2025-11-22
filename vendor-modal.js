@@ -178,13 +178,13 @@ function updateVendorTileCounts() {
 
     Object.entries(window.threatIntelData.vendors).forEach(([vendor, data]) => {
         const countId = vendorCountMap[vendor];
-        console.log(`Vendor: ${vendor}, CountId: ${countId}, IOCs: ${(data.iocs || []).length}`);
+        console.log(`Vendor: ${vendor}, CountId: ${countId}, IOCs: ${data.iocCount || 0}`);
         if (countId) {
             const element = document.getElementById(countId);
             if (element) {
-                const count = (data.iocs || []).length;
-                element.textContent = count;
-                console.log(`Updated ${countId} to ${count}`);
+                const count = data.iocCount || 0;  // Use iocCount from metadata
+                element.textContent = count.toLocaleString();
+                console.log(`Updated ${countId} to ${count.toLocaleString()}`);
             } else {
                 console.log(`Element ${countId} not found!`);
             }
