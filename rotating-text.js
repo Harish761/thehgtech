@@ -2,19 +2,19 @@
 const rotatingContent = [
     {
         title: "Threat Intelligence",
-        subtitle: "Global attack trends, threat vectors, and real-time telemetry powered by TheHGTech"
+        subtitle: "1.2M+ live IOCs from 6 trusted vendors, updated hourly with AI-powered analysis"
     },
     {
-        title: "Security Research",
-        subtitle: "Vulnerability analysis, exploit research, and defensive strategies"
+        title: "CVE Tracking",
+        subtitle: "CISA Known Exploited Vulnerabilities with vendor remediation links and zero-day detection"
     },
     {
-        title: "Automation & Tools",
-        subtitle: "Building security tools, scripts, and automation frameworks"
+        title: "AI-Powered Insights",
+        subtitle: "Daily threat summaries and weekly strategic analysis powered by GPT-4"
     },
     {
-        title: "Threat Hunting",
-        subtitle: "Advanced detection techniques and proactive threat discovery"
+        title: "Real-Time Updates",
+        subtitle: "Automated hourly feeds with trend tracking and interactive visualizations"
     }
 ];
 
