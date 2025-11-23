@@ -17,14 +17,14 @@ import json
 import re
 from datetime import datetime, timedelta
 import pytz
-import google.generativeai as genai
+from google import genai
+from google.genai import types
 import feedparser
 from html import unescape, escape
 import requests
 
 # Initialize Gemini client
-genai.configure(api_key=os.environ.get('GEMINI_API_KEY'))
-model = genai.GenerativeModel('gemini-1.5-flash')
+client = genai.Client(api_key=os.environ.get('GEMINI_API_KEY'))
 
 # CISA Known Exploited Vulnerabilities Catalog
 CISA_KEV_URL = 'https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json'
@@ -382,16 +382,21 @@ CRITICAL FORMATTING RULES:
 Create a short for EACH of the {len(top_articles)} articles above."""
     
     try:
-        # Enable Google Search grounding
-        tools = [{"google_search": {}}]
+        # Enable Google Search grounding (new SDK syntax)
+        grounding_tool = types.Tool(
+            google_search=types.GoogleSearch()
+        )
         
-        response = model.generate_content(
-            prompt,
-            tools=tools,  # This enables Google Search grounding!
-            generation_config={
-                "temperature": 0.3,
-                "max_output_tokens": 4000
-            }
+        config = types.GenerateContentConfig(
+            tools=[grounding_tool],
+            temperature=0.3,
+            max_output_tokens=4000
+        )
+        
+        response = client.models.generate_content(
+            model='gemini-1.5-flash',
+            contents=prompt,
+            config=config
         )
         
         content = response.text

@@ -31,7 +31,7 @@ jobs:
       
       - name: Install dependencies
         run: |
-          pip install google-generativeai pytz feedparser requests
+          pip install google-genai pytz feedparser requests
       
       - name: Run content update script
         env:
