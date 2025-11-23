@@ -31,11 +31,11 @@ jobs:
       
       - name: Install dependencies
         run: |
-          pip install openai pytz feedparser requests
+          pip install google-generativeai pytz feedparser requests
       
       - name: Run content update script
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           python update_shorts.py
       
@@ -60,6 +60,6 @@ jobs:
         run: |
           echo "### 🎉 TheHGTech Content Update Complete" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "- **Mode**: Real RSS + CISA CVE Aggregation" >> $GITHUB_STEP_SUMMARY
+          echo "- **Mode**: RSS + Gemini API (Google Search Grounding) + CISA CVE" >> $GITHUB_STEP_SUMMARY
           echo "- **Time**: $(date -u +'%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
           echo "- **Status**: ✅ Success" >> $GITHUB_STEP_SUMMARY

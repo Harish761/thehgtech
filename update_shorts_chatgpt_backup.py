@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
 """
-TheHGTech Content Automation Script - Gemini API Version v3.0
-✅ MIGRATED: From ChatGPT to Gemini API with Google Search grounding
-✅ NEW: Internet access via Google Search for fact verification
-✅ NEW: Source citations from Google Search
+TheHGTech Content Automation Script - FINAL VERSION v2.1
 ✅ Fixed: GPT markdown formatting issue (** breaking URLs)
 ✅ Fixed: CVE date filter (now handles both date formats)
 ✅ NEW: Promotional content filtering (blocks tool/product promotions)
@@ -17,14 +14,13 @@ import json
 import re
 from datetime import datetime, timedelta
 import pytz
-import google.generativeai as genai
+from openai import OpenAI
 import feedparser
 from html import unescape, escape
 import requests
 
-# Initialize Gemini client
-genai.configure(api_key=os.environ.get('GEMINI_API_KEY'))
-model = genai.GenerativeModel('gemini-1.5-flash')
+# Initialize OpenAI client
+client = OpenAI(api_key=os.environ.get('OPENAI_API_KEY'))
 
 # CISA Known Exploited Vulnerabilities Catalog
 CISA_KEV_URL = 'https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json'
@@ -321,8 +317,8 @@ def filter_existing_urls(articles, existing_shorts):
     return filtered
 
 
-def format_with_gemini(articles, content_type):
-    """Use Gemini 1.5 Flash with Google Search grounding to format articles into professional shorts"""
+def format_with_gpt(articles, content_type):
+    """Use GPT-4o to format articles into professional shorts"""
     if not articles:
         return None
     
@@ -347,8 +343,6 @@ I have fetched {len(top_articles)} REAL recent {content_type} news articles from
 Here are the real articles:
 {articles_text}
 
-IMPORTANT: Use Google Search to verify facts and get the latest updates for each article. This ensures accuracy and completeness.
-
 For EACH article above, create a short in this EXACT format:
 
 Date: [Use the actual date from the article]
@@ -358,7 +352,7 @@ Title: [Create a compelling, clear headline based on the article - you can rephr
 Content:
 [Write 5-7 sentences that:
 1. Clearly explain what happened
-2. Include relevant details and context (verified via Google Search)
+2. Include relevant details and context
 3. Explain why it matters to security/AI professionals
 4. Maintain professional, informative tone
 5. Are written for a technical audience but remain accessible]
@@ -370,7 +364,6 @@ Important guidelines:
 - Use clear, direct language
 - Include relevant technical details where appropriate
 - Explain significance for professionals in the field
-- Use Google Search to verify facts and get latest updates
 
 CRITICAL FORMATTING RULES:
 - DO NOT use any markdown formatting (no **, no __, no # headers, no * bullets)
@@ -382,19 +375,17 @@ CRITICAL FORMATTING RULES:
 Create a short for EACH of the {len(top_articles)} articles above."""
     
     try:
-        # Enable Google Search grounding
-        tools = [{"google_search": {}}]
-        
-        response = model.generate_content(
-            prompt,
-            tools=tools,  # This enables Google Search grounding!
-            generation_config={
-                "temperature": 0.3,
-                "max_output_tokens": 4000
-            }
+        response = client.chat.completions.create(
+            model="gpt-4o",
+            messages=[
+                {"role": "system", "content": "You are a professional tech journalist specializing in cybersecurity and AI. You write in plain text without any markdown formatting."},
+                {"role": "user", "content": prompt}
+            ],
+            temperature=0.5,
+            max_tokens=4000
         )
         
-        content = response.text
+        content = response.choices[0].message.content
         
         # Replace placeholders with actual URLs
         for i, article in enumerate(top_articles, 1):
@@ -403,7 +394,7 @@ Create a short for EACH of the {len(top_articles)} articles above."""
             content = content.replace(placeholder, actual_url)
             print(f"   🔗 Replaced {placeholder} with {actual_url[:60]}...")
         
-        print(f"✅ Successfully formatted {content_type} articles with Gemini + Google Search")
+        print(f"✅ Successfully formatted {content_type} articles with real URLs")
         return content
         
     except Exception as e:
@@ -758,10 +749,10 @@ def update_shorts():
             print(f"📝 Final count: {len(data['cyberShorts'])} cyber, {len(data['aiShorts'])} AI shorts, {len(data['recentCVEs'])} CVEs")
             sys.exit(0)
     
-    # Format NEW articles using Gemini 1.5 Flash with Google Search grounding
-    print(f"\n🤖 Formatting new articles with Gemini 1.5 Flash + Google Search...")
-    cyber_content = format_with_gemini(cyber_articles_new, "Cybersecurity") if cyber_articles_new else None
-    ai_content = format_with_gemini(ai_articles_new, "AI") if ai_articles_new else None
+    # Format NEW articles using GPT-4o
+    print(f"\n🤖 Formatting new articles with GPT-4o...")
+    cyber_content = format_with_gpt(cyber_articles_new, "Cybersecurity") if cyber_articles_new else None
+    ai_content = format_with_gpt(ai_articles_new, "AI") if ai_articles_new else None
     
     # Parse the formatted shorts
     print(f"\n📝 Parsing formatted content...")
