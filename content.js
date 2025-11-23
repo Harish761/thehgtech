@@ -4,76 +4,83 @@
 var websiteContent = {
     "cyberShorts": [
         {
-            "date": "Nov 22 2025",
-            "title": "Vulnerability in WhatsApp API Exposes 3.5 Billion User Accounts",
-            "content": "Researchers have uncovered a significant flaw in WhatsApp&#x27;s contact-discovery API, allowing them to compile a list of 3.5 billion mobile phone numbers and associated personal information. The vulnerability stems from the API&#x27;s lack of rate limiting, which enabled the large-scale scraping of data. This flaw raises serious privacy concerns, as it underscores the potential for unauthorized access to personal information on a massive scale. For security professionals, this incident highlights the critical importance of implementing robust rate-limiting measures to prevent such data exploitation. The breach serves as a stark reminder of the vulnerabilities inherent in widely used communication platforms and the need for continuous security assessments.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/whatsapp-api-flaw-let-researchers-scrape-35-billion-accounts/"
+            "date": "Nov 23 2025",
+            "title": "YARA-X 1.10.0 Update Introduces Command to Fix Warnings",
+            "content": "YARA-X has released version 1.10.0, introducing a new command specifically designed to fix warnings. This update aims to enhance the tool&#x27;s functionality by providing users with the ability to address warning messages more efficiently. YARA-X is a widely used tool for malware research and detection, and this update is expected to streamline the process of rule writing and debugging. The introduction of this feature reflects ongoing efforts to improve user experience and operational efficiency in cybersecurity practices. Security professionals relying on YARA-X can now expect a smoother workflow, which is crucial in maintaining robust security postures.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32514"
+        },
+        {
+            "date": "Nov 23 2025",
+            "title": "Wireshark 4.4.1 Fixes Vulnerabilities and Bugs",
+            "content": "The latest release of Wireshark, version 4.4.1, addresses two critical vulnerabilities and resolves 20 bugs. As a leading network protocol analyzer, Wireshark is essential for network troubleshooting, analysis, and development. The fixed vulnerabilities enhance the tool&#x27;s security, ensuring that users can safely analyze network traffic without risk of exploitation. This update is particularly significant for cybersecurity professionals who depend on Wireshark for monitoring and securing network infrastructures. By addressing these issues, Wireshark continues to uphold its reputation as a reliable tool in the cybersecurity arsenal.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32512"
         },
         {
             "date": "Nov 22 2025",
-            "title": "APT31 Targets Russian IT Sector with Stealthy Cloud-Based Attacks",
-            "content": "The advanced persistent threat group APT31, linked to China, has been implicated in a series of sophisticated cyberattacks on the Russian IT sector from 2024 to 2025. Utilizing cloud services to enhance stealth, APT31 managed to remain undetected for extended periods, posing a significant challenge to cybersecurity defenses. These attacks underscore the evolving tactics of nation-state actors, who increasingly leverage cloud infrastructures to mask their activities. For cybersecurity professionals, this development emphasizes the need for enhanced monitoring and threat detection capabilities that extend to cloud environments. The incident highlights the geopolitical dimensions of cyber warfare and the complexity of defending against state-sponsored threats.",
+            "title": "Matrix Push C2 Exploits Browser Notifications for Phishing",
+            "content": "Cybercriminals are utilizing a new command-and-control platform known as Matrix Push C2 to conduct fileless, cross-platform phishing attacks. This innovative approach leverages browser notifications to distribute malicious links, using push notifications, fake alerts, and link redirects. The technique allows attackers to bypass traditional security measures, posing a significant threat to organizations relying on browser-based applications. Security professionals must be aware of this evolving threat landscape and consider implementing additional safeguards to protect against these sophisticated phishing tactics. The emergence of Matrix Push C2 highlights the need for continuous vigilance and adaptation in cybersecurity strategies.",
             "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/11/china-linked-apt31-launches-stealthy.html"
+            "sourceUrl": "https://thehackernews.com/2025/11/matrix-push-c2-uses-browser.html"
         },
         {
             "date": "Nov 22 2025",
-            "title": "Cox Enterprises Reports Data Breach via Oracle E-Business Suite Exploit",
-            "content": "Cox Enterprises has disclosed a data breach affecting individuals whose personal data was exposed after attackers exploited a zero-day vulnerability in Oracle E-Business Suite. The breach underscores the ongoing risks associated with unpatched software vulnerabilities and the critical importance of timely security updates. For IT and security professionals, this incident serves as a reminder of the potential consequences of zero-day exploits and the necessity for robust incident response strategies. The breach also highlights the need for continuous monitoring and vulnerability management to protect sensitive data from unauthorized access.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cox-enterprises-discloses-oracle-e-business-suite-data-breach/"
-        },
-        {
-            "date": "Nov 22 2025",
-            "title": "Qilin Ransomware Attack Uncovered Through Endpoint Investigation",
-            "content": "Huntress analysts have successfully reconstructed a Qilin ransomware attack, beginning with a single endpoint and limited logs. Their investigation revealed unauthorized ScreenConnect access, attempted infostealer deployments, and the ransomware&#x27;s execution path. This case illustrates the value of validating multiple data sources to uncover malicious activities, even when initial visibility is limited. For cybersecurity professionals, the findings underscore the importance of comprehensive endpoint monitoring and the ability to piece together disparate data points to identify and mitigate threats. The investigation provides key insights into the tactics and techniques used by ransomware operators.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/piecing-together-the-puzzle-a-qilin-ransomware-investigation/"
+            "title": "CISA Alerts on Critical Zero-Day in Oracle Identity Manager",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has issued a warning about a critical zero-day vulnerability in Oracle Identity Manager, identified as CVE-2025-61757. With a CVSS score of 9.8, this flaw is actively exploited, prompting its addition to CISA&#x27;s Known Exploited Vulnerabilities catalog. Oracle Identity Manager is widely used for identity and access management, making this vulnerability particularly concerning for organizations relying on the software. Security teams should prioritize patching and mitigation strategies to protect against potential breaches. This alert underscores the importance of staying informed about vulnerabilities in critical infrastructure software.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/11/cisa-warns-of-actively-exploited.html"
         },
         {
             "date": "Nov 21 2025",
-            "title": "CISA Alerts Agencies to Critical Oracle Identity Manager Vulnerability",
-            "content": "The U.S. Cybersecurity &amp; Infrastructure Security Agency (CISA) has issued a warning to government agencies regarding a critical remote code execution flaw in Oracle Identity Manager, identified as CVE-2025-61757. This vulnerability is reportedly being actively exploited, potentially as a zero-day, highlighting the urgent need for patching. The alert serves as a critical reminder for IT and security teams to prioritize updates for identity management systems, which are often targeted due to their central role in user authentication and access control. The exploitation of such vulnerabilities can lead to significant security breaches, emphasizing the importance of proactive vulnerability management in safeguarding sensitive information.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-warns-oracle-identity-manager-rce-flaw-is-being-actively-exploited/"
+            "title": "Salesforce Data Breach Through Gainsight Repeats Summer Attacks",
+            "content": "In a concerning repeat of summer incidents, Salesforce customers have been targeted again via a third-party application, Gainsight. The ShinyHunters extortion group is behind this data breach, exploiting vulnerabilities to access sensitive Salesforce data. This attack highlights the ongoing risks associated with third-party applications and the need for stringent security measures. Organizations using Salesforce must reassess their security protocols and ensure third-party integrations are secure. The recurrence of such breaches emphasizes the importance of comprehensive security strategies that extend beyond primary systems to include all connected applications.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/salesforce-customers-hacked-gainsight"
         }
     ],
     "aiShorts": [
+        {
+            "date": "Nov 22 2025",
+            "title": "Young Founder Leverages Unique Background to Disrupt Industrial Tech",
+            "content": "Young, a young entrepreneur, is making waves in Silicon Valley by turning perceived disadvantages into strengths. Despite initial skepticism from older industry executives, his age and unconventional path have become assets in the industrial tech sector. By bringing fresh perspectives and innovative ideas, Young is challenging traditional norms and driving change. This development is significant for AI professionals as it highlights the importance of diversity and new viewpoints in tech innovation. Young&#x27;s success story could inspire more young entrepreneurs to enter established industries, potentially accelerating technological advancement and adoption.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/21/how-this-founders-unlikely-path-to-silicon-valley-could-become-an-edge-in-industrial-tech/"
+        },
+        {
+            "date": "Nov 21 2025",
+            "title": "Sierra Achieves $100M ARR, Reflecting AI Agents&#x27; Growing Market Acceptance",
+            "content": "Sierra, a startup founded by Bret Taylor, has reached an impressive $100 million annual recurring revenue in less than two years. This rapid growth underscores the increasing adoption of AI agents by enterprises, signaling a shift towards more automated and intelligent business operations. For AI professionals, this trend indicates a growing market demand for AI solutions that can enhance efficiency and decision-making processes. Sierra&#x27;s success exemplifies the potential for AI-driven startups to achieve significant market penetration quickly, influencing the competitive landscape and encouraging further innovation in AI technology.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/21/bret-taylors-sierra-reaches-100m-arr-in-under-two-years/"
+        },
+        {
+            "date": "Nov 21 2025",
+            "title": "Nvidia&#x27;s Data Center Profits Surge Amid AI Infrastructure Boom",
+            "content": "Nvidia&#x27;s data center business is now generating nearly $50 billion, driven by the massive infrastructure investments from AI companies. This surge raises questions about the sustainability of such growth and whether it represents a technological bubble. However, the belief in AI&#x27;s transformative potential is sustaining the industry&#x27;s momentum. For AI professionals, this trend highlights the critical role of hardware providers in supporting AI advancements and the potential volatility of the market. Understanding these dynamics is crucial for strategic planning and investment in AI technologies.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/podcast/ai-mania-is-making-nvidia-a-lot-of-money/"
+        },
+        {
+            "date": "Nov 21 2025",
+            "title": "Top AI Wearables and Gadgets Available Now",
+            "content": "A new compilation of the hottest AI wearables includes products like Bee, Friend, and Plaud, showcasing the latest advancements in consumer technology. These gadgets offer enhanced user experiences through AI-driven features, such as personalized health monitoring and smart interaction capabilities. For AI professionals, these developments reflect the growing integration of AI into everyday devices, expanding the market for consumer-focused AI applications. Staying informed about these trends is essential for those involved in AI product development and marketing, as consumer demand for intelligent gadgets continues to rise.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/21/the-hottest-ai-wearables-and-gadgets-you-can-buy-right-now/"
+        },
+        {
+            "date": "Nov 21 2025",
+            "title": "Meta&#x27;s WorldGen Transforms 3D World Creation with Generative AI",
+            "content": "Meta has unveiled WorldGen, a generative AI system designed to create fully interactive 3D worlds, moving beyond static imagery. This innovation addresses the challenge of developing immersive spatial computing experiences for various applications, including gaming, industrial digital twins, and training simulations. For AI professionals, WorldGen represents a significant leap in generative AI capabilities, offering new possibilities for creating dynamic and engaging virtual environments. The system&#x27;s potential to streamline 3D content creation could lead to broader adoption of AI in industries reliant on complex simulations and interactive media.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/worldgen-meta-generative-ai-for-interactive-3d-worlds/"
+        },
         {
             "date": "Nov 23 2025",
             "title": "Lean4: The New Competitive Edge in High-Stakes AI Applications",
             "content": "Large language models have impressed with their advanced capabilities but suffer from unpredictability and hallucinations, which is a significant drawback in critical areas like finance, medicine, and autonomous systems. Lean4, a theorem prover, is emerging as a solution to these issues by providing a more reliable and verifiable approach to AI. This technology is designed to ensure that AI systems can provide accurate and dependable results, reducing the risk of errors in sensitive applications. For AI professionals, Lean4 represents a potential shift towards more robust and trustworthy AI systems. Its integration into AI workflows could enhance decision-making processes, particularly in environments where precision and reliability are paramount. The development of Lean4 signifies a promising advancement in addressing the limitations of current large language models.",
             "source": "AI | VentureBeat",
             "sourceUrl": "https://venturebeat.com/ai/lean4-how-the-theorem-prover-works-and-why-its-the-new-competitive-edge-in"
-        },
-        {
-            "date": "Nov 22 2025",
-            "title": "Trump Administration Reconsiders Stance on State AI Regulations",
-            "content": "The Trump administration appears to be re-evaluating its position on opposing state-level AI regulations. An order that would have targeted these regulations is reportedly on hold, signaling a potential shift in federal policy. This development is significant for AI professionals as it may lead to a more fragmented regulatory landscape, with states having the autonomy to implement their own AI policies. Such a change could impact how AI technologies are developed and deployed across the United States. For companies and developers, navigating varying state regulations could introduce new challenges and compliance requirements. This reconsideration could influence the future of AI governance and innovation in the country.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/22/trump-administration-might-not-fight-state-ai-regulations-after-all/"
-        },
-        {
-            "date": "Nov 22 2025",
-            "title": "Waymo Expands Autonomous Driving Operations in California",
-            "content": "Waymo has received regulatory approval to extend its autonomous driving services across the Bay Area and Southern California. This expansion allows the company to operate its robotaxi services fully autonomously throughout more regions of California, marking a significant milestone in the deployment of self-driving technology. For AI and automotive professionals, Waymo&#x27;s expansion is a testament to the progress in autonomous vehicle technology and regulatory acceptance. It also highlights the increasing role of AI in transforming transportation systems. The move could accelerate the adoption of autonomous vehicles, offering insights into the challenges and opportunities of scaling such technologies in urban environments.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/22/waymo-gets-regulatory-approval-to-expand-across-bay-area-and-southern-california/"
-        },
-        {
-            "date": "Nov 22 2025",
-            "title": "Meta Ventures into Electricity Trading to Power Data Centers",
-            "content": "Meta is exploring the electricity trading business to support the energy needs of its data centers. This strategic move is aimed at accelerating the construction of new power plants, ensuring a stable energy supply for its expanding infrastructure. For professionals in the AI and energy sectors, Meta&#x27;s initiative underscores the growing intersection between technology companies and energy management. By entering the electricity market, Meta could influence energy pricing and availability, impacting both the tech industry and energy sector dynamics. This development highlights the importance of sustainable energy solutions in supporting the scalability of data-intensive operations like AI.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/22/meta-wants-to-get-into-the-electricity-trading-business/"
-        },
-        {
-            "date": "Nov 21 2025",
-            "title": "OpenAI to Retire GPT-4o API Access in February 2026",
-            "content": "OpenAI has announced the discontinuation of API access to its GPT-4o model, effective February 16, 2026. The decision affects developers who have integrated this model into their applications, providing a three-month transition period to adapt to alternative solutions. This move is significant for AI developers relying on GPT-4o&#x27;s capabilities, as they will need to adjust their systems to accommodate the change. OpenAI&#x27;s decision may reflect a strategic shift towards newer models or enhancements in their AI offerings. For professionals in the field, this underscores the importance of flexibility and adaptability in AI development, as well as the ongoing evolution of AI technologies and their applications.",
-            "source": "AI | VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/openai-is-ending-api-access-to-fan-favorite-gpt-4o-model-in-february-2026"
         }
     ],
     "articles": {
