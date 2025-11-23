@@ -84,7 +84,25 @@ async function openVendorModal(vendorName) {
     }
 
     // Render IOCs
-    let html = cappingNotice;
+
+    // Add export buttons
+    const exportButtons = `
+        <div style="display: flex; justify-content: flex-end; gap: 0.75rem; margin-bottom: 1.5rem; padding: 0 0.5rem;">
+            <button onclick="exportVendorDataFromModal('${vendorName}', 'csv')" 
+                style="padding: 0.6rem 1.2rem; background: linear-gradient(135deg, #00D9FF, #0099cc); border: none; border-radius: 8px; color: white; font-weight: 600; cursor: pointer; font-size: 0.9rem; transition: all 0.3s; box-shadow: 0 4px 15px rgba(0, 217, 255, 0.3); display: flex; align-items: center; gap: 0.5rem;"
+                onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(0, 217, 255, 0.4)';"
+                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0, 217, 255, 0.3)';">
+                <span>📥</span> Export CSV
+            </button>
+            <button onclick="exportVendorDataFromModal('${vendorName}', 'json')" 
+                style="padding: 0.6rem 1.2rem; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(0, 217, 255, 0.3); border-radius: 8px; color: var(--text-primary); font-weight: 600; cursor: pointer; font-size: 0.9rem; transition: all 0.3s; display: flex; align-items: center; gap: 0.5rem;"
+                onmouseover="this.style.background='rgba(0, 217, 255, 0.1)'; this.style.borderColor='rgba(0, 217, 255, 0.5)';"
+                onmouseout="this.style.background='rgba(255, 255, 255, 0.05)'; this.style.borderColor='rgba(0, 217, 255, 0.3)';">
+                <span>📥</span> Export JSON
+            </button>
+        </div>
+    `;
+    let html = cappingNotice + exportButtons;
     data.iocs.forEach((ioc) => {
         html += `<div class="modal-stat-item vendor-ioc-item" data-indicator="${ioc.indicator}" data-type="${ioc.type}"
             style="padding: 1rem; background: rgba(255, 255, 255, 0.02); border-radius: 8px; margin-bottom: 0.75rem; cursor: pointer; transition: all 0.2s ease; border-left: 3px solid var(--accent-cyan);"
@@ -206,3 +224,46 @@ window.addEventListener('click', function (event) {
         closeVendorModal();
     }
 });
+
+// Export vendor data from modal (works with cached data)
+function exportVendorDataFromModal(vendorName, format) {
+    const data = vendorDataCache[vendorName];
+    if (!data || !data.iocs) {
+        alert('No data available for export. Please open the vendor modal first.');
+        return;
+    }
+
+    const timestamp = new Date().toISOString().split('T')[0];
+    const filename = `${vendorName}_IOCs_${timestamp}`;
+
+    if (format === 'csv') {
+        const headers = ['Type', 'Indicator', 'Description', 'Timestamp', 'Source', 'Tags', 'Campaign'];
+        const rows = data.iocs.map(ioc => [
+            ioc.type || '',
+            ioc.indicator || '',
+            (ioc.description || '').replace(/,/g, ';'),
+            ioc.timestamp || '',
+            ioc.source || '',
+            (ioc.tags || []).join(';'),
+            ioc.campaign || ''
+        ]);
+        const csv = [headers.join(','), ...rows.map(r => r.join(','))].join('\n');
+        downloadFile(csv, `${filename}.csv`, 'text/csv');
+    } else if (format === 'json') {
+        const json = JSON.stringify(data.iocs, null, 2);
+        downloadFile(json, `${filename}.json`, 'application/json');
+    }
+}
+
+// Helper function to trigger file download
+function downloadFile(content, filename, mimeType) {
+    const blob = new Blob([content], { type: mimeType });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = filename;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+}
