@@ -83,6 +83,25 @@ def get_severity_from_description(description):
     else:
         return 'HIGH'  # Default to HIGH for KEV
 
+def is_zero_day(cve_data, description):
+    """Detect if CVE is a zero-day vulnerability"""
+    # Check for zero-day indicators in description
+    desc_lower = description.lower()
+    short_desc_lower = cve_data.get('shortDescription', '').lower()
+    
+    zero_day_keywords = [
+        'zero-day', 'zero day', '0-day', '0day',
+        'actively exploited', 'exploit in the wild',
+        'being exploited', 'under active exploitation'
+    ]
+    
+    # Check if any zero-day keyword is present
+    for keyword in zero_day_keywords:
+        if keyword in desc_lower or keyword in short_desc_lower:
+            return True
+    
+    return False
+
 def process_cves(cisa_cves, limit=20):
     """Process CVEs and enrich with NVD data"""
     print(f"\n🔄 Processing {min(limit, len(cisa_cves))} most recent CVEs...")
@@ -109,6 +128,7 @@ def process_cves(cisa_cves, limit=20):
             'description': cve.get('vulnerabilityName', ''),
             'shortDescription': cve.get('shortDescription', '')[:200],  # Truncate
             'severity': get_severity_from_description(cve.get('vulnerabilityName', '')),
+            'isZeroDay': is_zero_day(cve, cve.get('vulnerabilityName', '')),
             'requiredAction': cve.get('requiredAction', 'Apply vendor updates'),
             'dueDate': cve.get('dueDate', ''),
             'nvdUrl': f"https://nvd.nist.gov/vuln/detail/{cve['cveID']}",
