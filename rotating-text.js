@@ -26,6 +26,9 @@ function rotateText() {
 
     if (!titleEl || !subtextEl) return;
 
+    // Pause glitch effect during transition
+    titleEl.classList.add('no-glitch');
+
     titleEl.classList.add('rotating-text-fade-out');
     subtextEl.classList.add('rotating-text-fade-out');
 
@@ -42,6 +45,8 @@ function rotateText() {
         setTimeout(() => {
             titleEl.classList.remove('rotating-text-fade-in');
             subtextEl.classList.remove('rotating-text-fade-in');
+            // Resume glitch effect after transition completes
+            titleEl.classList.remove('no-glitch');
         }, 500);
     }, 500);
 }
