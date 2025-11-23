@@ -83,6 +83,7 @@
 
     <!-- ========== FONTS ========== -->
     <link rel="stylesheet" href="rotating-text.css?v=2">
+    <link rel="stylesheet" href="cve-display.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
@@ -2637,6 +2638,18 @@
                         </div>
                     </div>
                 </div>
+
+        <!-- CVE Section -->
+        <section id="cveSection">
+            <div id="cveContainer">
+                <!-- CVE content will be loaded dynamically by cve-display.js -->
+                <div style="text-align: center; padding: 3rem; color: var(--text-muted);">
+                    <div class="loading-spinner"></div>
+                    <p style="margin-top: 1rem;">Loading CVE data...</p>
+                </div>
+            </div>
+        </section>
+
                 <section class="section" id="news">
                     <div class="section-header">
                         <h2 class="section-title">Latest Intelligence</h2>
@@ -2940,6 +2953,7 @@
     <!-- Load Content Files -->
     <script src="content.js"></script>
     <script src="rotating-text.js?v=2"></script>
+    <script src="cve-display.js"></script>
     <script src="archives-content.js"></script>
     <script src="threat-intel.js" onerror="console.log('threat-intel.js not found - using fallback')"></script>
 
