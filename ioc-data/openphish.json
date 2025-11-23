@@ -1,6 +1,6 @@
 {
   "vendor": "OpenPhish",
-  "lastUpdated": "2025-11-23T16:51:34.102681+05:30",
+  "lastUpdated": "2025-11-23T18:59:30.705930+05:30",
   "totalCount": 300,
   "displayedCount": 300,
   "isCapped": false,
@@ -8,4502 +8,4502 @@
   "iocs": [
     {
       "type": "url",
-      "indicator": "hxxp://royal[.]midasbuy-page[.]com/",
+      "indicator": "hxxps://lvsclinic[.]ir/swisspass/index[.]html",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://roblox[.]com[.]py/users/5853697982/profile",
+      "indicator": "hxxps://largely-helpful-swift[.]global[.]ssl[.]fastly[.]net/OTQ0YTcwNWMxZjhjNDIwN2NjMjZlYg==/xhtq[.]php?profileid=780840778&auth=ZWY3MTMxZDllNzIyM2Q2OTEzZjVjNQ==",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/NIK7XYTXV",
+      "indicator": "hxxps://vvdt[.]net/#trap@trap[.]trap",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/8DFT64FK1",
+      "indicator": "hxxps://unfazed-akash[.]github[.]io/Netflix-clone-/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/AOGE97GBH",
+      "indicator": "hxxps://geatuawe[.]top/acc-overview/DghFtR/error[.]php/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/939P1FKHR",
+      "indicator": "hxxps://araujoautocenter[.]com/1414/office365x[.]html",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/A6SU6CDXK",
+      "indicator": "hxxps://www[.]imtorken[.]im/down[.]php",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/Z8YLCMOLB",
+      "indicator": "hxxps://roblox[.]al/games/99567941238278/Ink-Game?privateServerLinkCode=90631813262730331057510286960013",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/CAHNVMK8Y",
+      "indicator": "hxxps://roblox[.]gs/games/99567941238278/Ink-Game?privateServerLinkCode=90631813262730331057510286960013",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/TJITU356F",
+      "indicator": "hxxps://roblox[.]mq/games/99567941238278/Ink-Game?privateServerLinkCode=90631813262730331057510286960013",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/T9FRQSXAO",
+      "indicator": "hxxps://roblox[.]gf/games/99567941238278/Ink-Game?privateServerLinkCode=90631813262730331057510286960013",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/5FFXKRHBN",
+      "indicator": "hxxps://roblox[.]cd/games/99567941238278/Ink-Game?privateServerLinkCode=90631813262730331057510286960013",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/Y6HJ8MTUS",
+      "indicator": "hxxps://thehotelvalidate[.]com/FFX4VCSBT",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/K721P78R7",
+      "indicator": "hxxps://thehotelvalidate[.]com/CIIILZ11K",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/WED4ZVPCR",
+      "indicator": "hxxps://thehotelvalidate[.]com/2RZJGM8UF",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/GPT49WJJ2",
+      "indicator": "hxxps://thehotelvalidate[.]com/RDKEE46ZF",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/1KFKDBWHW",
+      "indicator": "hxxps://thehotelvalidate[.]com/R2PU3ZXJC",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/P1CD1SJKK",
+      "indicator": "hxxps://thehotelvalidate[.]com/OQPI2IS9L",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/WODEH9Y8L",
+      "indicator": "hxxps://thehotelvalidate[.]com/TWG8L8OEA",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/FJQD4BIB9",
+      "indicator": "hxxps://thehotelvalidate[.]com/CU3OHAGL2",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/OCSHDEOLB",
+      "indicator": "hxxps://thehotelvalidate[.]com/GM2Z4YV5P",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/IUI8V2I7K",
+      "indicator": "hxxps://thehotelvalidate[.]com/MXFS224AM",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/XGZYV5GZI",
+      "indicator": "hxxps://thehotelvalidate[.]com/6CP2AUOMW",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/7RV42U3MP",
+      "indicator": "hxxps://thehotelvalidate[.]com/IVLIXP69P",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/KZ5GCPN44",
+      "indicator": "hxxps://thehotelvalidate[.]com/GK55PJW5M",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/O8UX422DH",
+      "indicator": "hxxps://thehotelvalidate[.]com/KG2RMZ2BN",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/TB7G686JD",
+      "indicator": "hxxps://thehotelvalidate[.]com/VRQMSCXQQ",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/MLN9R4L2F",
+      "indicator": "hxxps://thehotelvalidate[.]com/95C4WEWNW",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/H25BEP5JO",
+      "indicator": "hxxps://thehotelvalidate[.]com/UCSXQMS8L",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/W2NGRYVH2",
+      "indicator": "hxxps://thehotelvalidate[.]com/1AJ8EZ4YA",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/TW7YQDSJG",
+      "indicator": "hxxps://thehotelvalidate[.]com/MF2H3JPXF",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/IN9FDCLWN",
+      "indicator": "hxxps://thehotelvalidate[.]com/D4VV9A5ME",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/HHU7DXPRM",
+      "indicator": "hxxps://thehotelvalidate[.]com/ZZB6FH3MO",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/RPBGODZK7",
+      "indicator": "hxxps://thehotelvalidate[.]com/DJRKKIG4X",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/MQDIDOXM6",
+      "indicator": "hxxps://roblox[.]com[.]py/games/99567941238278/Ink-Game?privateServerLinkCode=90631813262730331057510286960013",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/MRDHJTEJO",
+      "indicator": "hxxps://thehotelvalidate[.]com/B2RFR8AQA",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/1I5CTPM2I",
+      "indicator": "hxxps://thehotelvalidate[.]com/4PT4SQ3HS",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/S1DUQKEPI",
+      "indicator": "hxxps://thehotelvalidate[.]com/F6CAXJ1GO",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/I2PIHPFVC",
+      "indicator": "hxxps://thehotelvalidate[.]com/AKNZTBUIH",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/WRS2MZWI7",
+      "indicator": "hxxps://thehotelvalidate[.]com/FSZFJMPCD",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/AG1N8MXNM",
+      "indicator": "hxxps://thehotelvalidate[.]com/ZXE93AXPM",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/KVMP2WXH2",
+      "indicator": "hxxps://thehotelvalidate[.]com/5D5JRTPA3",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/HAELD5IC1",
+      "indicator": "hxxps://thehotelvalidate[.]com/4QBTEA18G",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/Z8SKY5LGN",
+      "indicator": "hxxps://thehotelvalidate[.]com/AOYORVMX4",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/JWKJ1JV52",
+      "indicator": "hxxps://thehotelvalidate[.]com/L1CA667CN",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/7BH33CUNL",
+      "indicator": "hxxps://thehotelvalidate[.]com/HXNIR92ZN",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/6VFELTI7A",
+      "indicator": "hxxps://thehotelvalidate[.]com/IBU48WMWS",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/7PJ1Y37WW",
+      "indicator": "hxxps://thehotelvalidate[.]com/NCVJTIU4S",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/82SSWRUF9",
+      "indicator": "hxxps://thehotelvalidate[.]com/8DOTMSRYX",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/5QMSDNW5G",
+      "indicator": "hxxps://thehotelvalidate[.]com/TDNUZ7I9V",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/1IGTCQGYM",
+      "indicator": "hxxps://thehotelvalidate[.]com/P48CSDIA5",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/UOZYNFNBK",
+      "indicator": "hxxps://thehotelvalidate[.]com/VQF2EGIPI",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://roblox[.]com[.]py/users/4439805428/profile",
+      "indicator": "hxxps://thehotelvalidate[.]com/B7BV2MWWJ",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]roblox[.]com[.]ml/communities/5771900249/Brainrot-Grtis",
+      "indicator": "hxxps://thehotelvalidate[.]com/R8AHATJ5U",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://proxysales[.]cc/go/y2a4u244/03a4/?rdr=1",
+      "indicator": "hxxps://thehotelvalidate[.]com/VOXRD6IXL",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://my---x--portal-io-docs[.]typedream[.]app/",
+      "indicator": "hxxps://thehotelvalidate[.]com/289IF28A8",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://tharudc[.]me/cgi-bin/home[.]ha",
+      "indicator": "hxxps://thehotelvalidate[.]com/BDVQALJRM",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://tharudc[.]me/",
+      "indicator": "hxxps://thehotelvalidate[.]com/C81QPTX9D",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://o365-support[.]com/oauth20_authorize_srfclient_id10fa57ef-4895-4ab2-872c-8c3613d4f7fb-scope-openid-profile-offline_access-state-CfDJ8LpX7AEm64lJqvovzonWFb7AU9T5UfzkxfAODlv6nUaUZmcQtiFrxRkEz06q7ZDsNpLlTm_ZNYRfm_P6fQCajWEUFcinWw0Mvr",
+      "indicator": "hxxps://thehotelvalidate[.]com/796OIMAZU",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://o365-support[.]com/oauth20_authorize_srfclient_id10fa57ef-4895-4ab2-872c-8c3613d4f7fb-scope-openid-profile-offline_access-state-CfDJ8LpX7AEm64lJqvovzonWFb7AU9T5UfzkxfAODlv6nUaUZmcQtiFrxRkEz06q7ZDsNpLlTm_ZNYRfm_P6fQCajWEUFcinWw0Mvr[.]php",
+      "indicator": "hxxps://thehotelvalidate[.]com/AXC6WXL1X",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://usafeowa[.]vercel[.]app/",
+      "indicator": "hxxps://thehotelvalidate[.]com/ZKYRMU69Z",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]usafeowa[.]vercel[.]app/",
+      "indicator": "hxxps://thehotelvalidate[.]com/RI1RFUILN",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://term-ez[.]com/",
+      "indicator": "hxxps://thehotelvalidate[.]com/2UFVZYK6M",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://logininfo[.]in/",
+      "indicator": "hxxps://www[.]imtorken[.]im/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]studious-disco-kkmi[.]vercel[.]app/",
+      "indicator": "hxxps://roblox[.]cam/discover/?Keyword=",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://facebook[.]logininfo[.]in/",
+      "indicator": "hxxp://getlowdown[.]com/product-reviews/B0FHGBKCGN/ref=acr_dp_hist_5?ie=UTF8&filterByStar=five_star&reviewerType=all_reviews",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://wefd-ye38l[.]kinsta[.]page/",
+      "indicator": "hxxp://getlowdown[.]com/hz/wishlist/ls?triggerElementID=createList&ref_=nav_ListFlyout_navFlyout_createList_lv_redirect",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://meros-grid[.]pages[.]dev/",
+      "indicator": "hxxp://getlowdown[.]com/gp/css/returns/homepage[.]html?ref_=footer_hy_f_4",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://business-for-leaders[.]pages[.]dev/",
+      "indicator": "hxxp://getlowdown[.]com/hz5/yourmembershipsandsubscriptions?ref_=nav_AccountFlyout_digital_subscriptions",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://robiox[.]com[.]am/communities/6896548074/WELCOME-TO-CHRISTMAS-EVENT",
+      "indicator": "hxxp://getlowdown[.]com/gp/customer-reviews/R92LDTDXZ026R",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://meta-drelo[.]pages[.]dev/",
+      "indicator": "hxxps://getlowdown[.]com/showroom?ref_=nav_ListFlyout_srm_your_desk_wl_in",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://meta-journo[.]pages[.]dev/",
+      "indicator": "hxxps://roblox[.]gf/games/121864768012064/Fish-It?privateServerLinkCode=61613236429038821791914502215248",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://meta-malvo[.]pages[.]dev/",
+      "indicator": "hxxps://ipfs[.]io/ipfs/bafybeig7mqt7tamca7klgoapwiu43xkzroqe55pe7a5cfnrttocntbxifu",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://business-for-skills[.]pages[.]dev/",
+      "indicator": "hxxps://mahakbharti[.]github[.]io/Amazonclone/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://meta-gate-4e4[.]pages[.]dev/",
+      "indicator": "hxxp://dg5lg9swi67wgqh[.]duckdns[.]org/en/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://meta-zyko[.]pages[.]dev/",
+      "indicator": "hxxps://meta-ferin[.]pages[.]dev/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://meta-lorin[.]pages[.]dev/",
+      "indicator": "hxxps://meta-centra[.]pages[.]dev/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://meta-plorin[.]pages[.]dev/",
+      "indicator": "hxxp://kysgo[.]pe/fr/am/infospage[.]php",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://meta-pyrin[.]pages[.]dev/",
+      "indicator": "hxxps://iman35[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://meta-file[.]pages[.]dev/",
+      "indicator": "hxxp://meta-chant[.]pages[.]dev/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://meta-display[.]pages[.]dev/",
+      "indicator": "hxxp://facebook-colon-one[.]vercel[.]app/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://meta-kavren[.]pages[.]dev/",
+      "indicator": "hxxps://kukoin-login[.]gitbook[.]io/kucoin/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://meta-zarvo[.]pages[.]dev/",
+      "indicator": "hxxp://kukoin-login[.]gitbook[.]io/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://meta-limex[.]pages[.]dev/",
+      "indicator": "hxxp://kysgo[.]pe/css/am/infospage[.]php/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://crip2card[.]com/",
+      "indicator": "hxxp://pub-ba929d2ab1f04e75869e394f6d120bba[.]r2[.]dev/index[.]html",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://grsuplementosonline[.]shop/",
+      "indicator": "hxxp://dub[.]sh/jP4RETJ",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://applymake[.]com/",
+      "indicator": "hxxp://pub-e7b64c658d8647888de66296dd65df4a[.]r2[.]dev/index[.]html",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://tiktok[.]wt62[.]com/wap/",
+      "indicator": "hxxps://theproperresponse[.]com/tom/mmimd[.]html",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://tiktokishopbuys-1330426662[.]pichk[.]myqcloud[.]com/index[.]html",
+      "indicator": "hxxp://latam[.]adobeexperience[.]com[.]br/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://manmcub[.]com/",
+      "indicator": "hxxp://www[.]roblox[.]tc/users/4063576166/profile",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://www[.]www_jdztsz_com[.]2hantao[.]com/",
+      "indicator": "hxxps://www[.]roblox[.]com[.]py/search/users?keyword=",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://mettumuskkkvlogue[.]godaddysites[.]com/",
+      "indicator": "hxxps://data-center-violation-violence[.]pages[.]dev/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]mettumuskkkvlogue[.]godaddysites[.]com/",
+      "indicator": "hxxps://business-for-logic[.]pages[.]dev/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://metamzaklojinn8[.]godaddysites[.]com/",
+      "indicator": "hxxps://business-for-advertisers-restriction-copyright[.]pages[.]dev/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]metamzaklojinn8[.]godaddysites[.]com/",
+      "indicator": "hxxps://data-center-bullying-harassment[.]pages[.]dev/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://attmessageattyahoomail[.]weeblysite[.]com/",
+      "indicator": "hxxps://business-for-advertisers-disablement-transparency[.]pages[.]dev/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://rbx-url[.]com/DAU-e0Dp",
+      "indicator": "hxxps://data-center-trademark-impersonation[.]pages[.]dev/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://discord[.]softorod[.]com/?yclid=2288269532522872831",
+      "indicator": "hxxps://data-center-trademark-guideline[.]pages[.]dev/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://roblox[.]kg/communities/3293115319/",
+      "indicator": "hxxps://data-center-violation-guideline[.]pages[.]dev/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]roblox[.]com[.]ml/games/85902359950304/Steal-vibe-2-vc-works?privateServerLinkCode=90607886763943966714147932385080",
+      "indicator": "hxxp://accshomecnfrm0log[.]github[.]io/confirm[.]html",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://netflix-dev[.]vercel[.]app/signup",
+      "indicator": "hxxp://ptwhatsappinc2017[.]blogspot[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://www[.]bet63ii[.]com/",
+      "indicator": "hxxp://ilanrubinmusic[.]com/wp-admin/user/outlook-uni-oldenburg[.]html",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://capitalonem[.]pages[.]dev/zec-wallet",
+      "indicator": "hxxp://sjkhfdf[.]carrd[.]co/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://bet73rr[.]com/",
+      "indicator": "hxxp://meta-domain-sss[.]pages[.]dev/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://getlowdown[.]com/https/getlowdown[.]com/format-your-slack-messageshttp/getlowdown[.]com/gp/customer-reviews/R3RCDGAZE8VDQQ",
+      "indicator": "hxxps://literate-happiness-six[.]vercel[.]app/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://scit4848[.]github[.]io/frontend48/login[.]html",
+      "indicator": "hxxps://www[.]literate-happiness-six[.]vercel[.]app/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://app-tkasiashop[.]shop/",
+      "indicator": "hxxp://pub-0984b38371af4d36a1743de1fe7f1917[.]r2[.]dev/index[.]html",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://msn-support-live-2025[.]ct[.]ws/",
+      "indicator": "hxxps://facebook-feed7r6h[.]rollout[.]site/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://phoenixdev100[.]github[.]io/amazon-clone",
+      "indicator": "hxxps://att-currrently-3435[.]weeblysite[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://ak[.]core-service[.]my[.]id/",
+      "indicator": "hxxps://thehotelvalidate[.]com/FIPHY1MEC",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://danaa-indonesiiaxx[.]vce[.]my[.]id/",
+      "indicator": "hxxps://thehotelvalidate[.]com/KTQCBWSXU",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://ghaaapaost[.]top/",
+      "indicator": "hxxps://thehotelvalidate[.]com/AIU3UDBEB",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://roblox[.]com[.]py/users/6956050505/profile",
+      "indicator": "hxxps://thehotelvalidate[.]com/CA8LB1NC2",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://shop[.]tkjsonlin[.]cc/",
+      "indicator": "hxxps://thehotelvalidate[.]com/DJHYER5MN",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://roblox[.]cam/users/3102227474/profile",
+      "indicator": "hxxps://thehotelvalidate[.]com/DG17T4HCP",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]bet73ff[.]com/",
+      "indicator": "hxxps://thehotelvalidate[.]com/H6JT8G46F",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://gravatar[.]com/crowneclectice95d4a7791",
+      "indicator": "hxxps://thehotelvalidate[.]com/3T73MEL4I",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://mobile[.]chse[.]xehrdps[.]com/?dispute=3DnKVz3ev9Ua0hkWSp",
+      "indicator": "hxxps://thehotelvalidate[.]com/P25AHOBAI",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://serviceleboncoin05[.]wixsite[.]com/leboncoin/",
+      "indicator": "hxxps://thehotelvalidate[.]com/1D455MPSI",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://www_jdztsz_com[.]2hantao[.]com/",
+      "indicator": "hxxps://thehotelvalidate[.]com/4PCWS4V1M",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/VDM8TK11Q",
+      "indicator": "hxxps://thehotelvalidate[.]com/XS2J5KKID",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://hotelbookingguard[.]com/IIHR0RWBO1",
+      "indicator": "hxxps://thehotelvalidate[.]com/FFPU7WMU7",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
-      "campaign": "Booking.com Phishing"
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
+      "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://tsq[.]xqj[.]mybluehost[.]me/infot/veniculacion/login[.]php",
+      "indicator": "hxxps://thehotelvalidate[.]com/XTRBEOJXG",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://clreedfvgrsa[.]fwh[.]is/?i=1",
+      "indicator": "hxxps://thehotelvalidate[.]com/8QS5KIJQX",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://fidelitysecurityalert[.]cyou/2fa/page[.]html",
+      "indicator": "hxxps://thehotelvalidate[.]com/XLFPW3CA3",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://fidelitysecurityalert[.]cyou/2fa",
+      "indicator": "hxxps://thehotelvalidate[.]com/5VXB1C27O",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://fidelitysecurityalert[.]top/2fa",
+      "indicator": "hxxps://thehotelvalidate[.]com/26RD7E15A",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://fidelitysecuritycm[.]com/2fa/page[.]html",
+      "indicator": "hxxps://thehotelvalidate[.]com/SWKPV6ZDB",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://fidelitysecurityalert[.]top/2fa/page[.]html",
+      "indicator": "hxxps://thehotelvalidate[.]com/XXDBERVXM",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://fidelitysecurityalert[.]click/2fa/",
+      "indicator": "hxxps://thehotelvalidate[.]com/I5654TE9T",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://fidelitysecurityalert[.]click/2fa/page[.]html",
+      "indicator": "hxxps://thehotelvalidate[.]com/NJ5BGW1T7",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://pub-8c1c14c3b0d64d0099312bb4670f2e23[.]r2[.]dev/hjokedd[.]html",
+      "indicator": "hxxps://thehotelvalidate[.]com/EIA27A9JG",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://pub-0ae50a4c573c409f93585499aeac650f[.]r2[.]dev/cvbnmkjh[.]html",
+      "indicator": "hxxps://thehotelvalidate[.]com/HBZIJ5TFW",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://pub-35312b95baf4482f8dd1d6c35e6943a1[.]r2[.]dev/mnbvasd[.]html",
+      "indicator": "hxxps://thehotelvalidate[.]com/BF8D7ZUFX",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://pub-a77375725cbe4ebebbbb725baa062262[.]r2[.]dev/aw[.]html",
+      "indicator": "hxxps://thehotelvalidate[.]com/35WFWTS33",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://pub-d69c77ba755745888f5f3bae287f77ec[.]r2[.]dev/qzindex[.]html",
+      "indicator": "hxxps://thehotelvalidate[.]com/AZCOXOVRU",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://pub-cfe3b618b25d4e3e9bfd6f4f7e843cca[.]r2[.]dev/owa-pageeee-owa[.]html",
+      "indicator": "hxxps://thehotelvalidate[.]com/G4JL1YONH",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://pub-6147d6c64e7f4407b7a87743ce02914f[.]r2[.]dev/owa-webapp-outlook[.]html",
+      "indicator": "hxxps://thehotelvalidate[.]com/R9UEM8BQG",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://pub-f7076e6b96664daf90ae8357ef8b9110[.]r2[.]dev/DF1[.]html",
+      "indicator": "hxxps://thehotelvalidate[.]com/N8AL8IF2C",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://tiktok[.]wt62[.]com/",
+      "indicator": "hxxps://thehotelvalidate[.]com/5MG4RTYNE",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://portal[.]flynashville[.]co/index1[.]html",
+      "indicator": "hxxps://thehotelvalidate[.]com/SM1DT1O75",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://e571tn-nu[.]myshopify[.]com/",
+      "indicator": "hxxps://thehotelvalidate[.]com/K3K5GD722",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://ldy[.]atsshoptess[.]com/",
+      "indicator": "hxxps://thehotelvalidate[.]com/NNXHCPO54",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://minhanauto[.]com/wp-includes/ccclinkks[.]html",
+      "indicator": "hxxps://thehotelvalidate[.]com/3OYW41DCB",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://account[.]neweventai[.]com/Verifyed-76379",
+      "indicator": "hxxps://thehotelvalidate[.]com/9H878JBZ5",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/ZJ9O6A64Q",
+      "indicator": "hxxps://thehotelvalidate[.]com/PGV8MTW66",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/95Q17WJOO",
+      "indicator": "hxxps://thehotelvalidate[.]com/QX8RSDOD8",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/IB5OMTFCE",
+      "indicator": "hxxps://thehotelvalidate[.]com/82FZ1S9AN",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/Q49CJEVE6",
+      "indicator": "hxxps://thehotelvalidate[.]com/1HPOX1E4W",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/PMSU5MZ8D",
+      "indicator": "hxxps://checkin-arrivals[.]com/Q5JFQ9XM6",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/HYXXQA6OR",
+      "indicator": "hxxps://checkin-arrivals[.]com/6AWET3VLR",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/UXGQ53A3G",
+      "indicator": "hxxps://checkin-arrivals[.]com/FERIWSGHZ",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/J5MB8ZEH5",
+      "indicator": "hxxps://checkin-arrivals[.]com/3N82XQJ38",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/IBGZ88NUP",
+      "indicator": "hxxps://checkin-arrivals[.]com/1JZWFYDRM",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/MN3JYUJOR",
+      "indicator": "hxxps://checkin-arrivals[.]com/D84CBXN5I",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/28IUMD9EJ",
+      "indicator": "hxxps://checkin-arrivals[.]com/VXI8H6ASV",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/1W66A7UMD",
+      "indicator": "hxxps://checkin-arrivals[.]com/Y95S1YUG8",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/OR24R8NR6",
+      "indicator": "hxxps://checkin-arrivals[.]com/6AS8SEE7K",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/ZWAQZNGKF",
+      "indicator": "hxxps://checkin-arrivals[.]com/6U1PN5BOX",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/Q2SNF1QUC",
+      "indicator": "hxxps://thehotelvalidate[.]com/QOGGUHO8J",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/KWRE6GMIX",
+      "indicator": "hxxps://checkin-arrivals[.]com/2JJ5TM2EV",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://interbankcompe[.]com/",
+      "indicator": "hxxps://checkin-arrivals[.]com/4Y143Y8JU",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
-      "campaign": "Financial Phishing"
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
+      "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/4RCSA6WAL",
+      "indicator": "hxxps://thehotelvalidate[.]com/74LEFOJPC",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/9D86MH2MD",
+      "indicator": "hxxps://thehotelvalidate[.]com/F46TET9R3",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/Y6PUUDCW3",
+      "indicator": "hxxps://thehotelvalidate[.]com/H4VSTLI7S",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/I2IPWNDSP",
+      "indicator": "hxxps://thehotelvalidate[.]com/CRPKY8E48",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/C31V4XE52",
+      "indicator": "hxxps://thehotelvalidate[.]com/4EGHGF27B",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/L62BYGBCZ",
+      "indicator": "hxxps://thehotelvalidate[.]com/Q5TF7W1AH",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/LX3QIHEJO",
+      "indicator": "hxxps://thehotelvalidate[.]com/68NL59GQR",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/RG69R12OY",
+      "indicator": "hxxps://thehotelvalidate[.]com/1G23Y9ZD3",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/1F55C82HE",
+      "indicator": "hxxps://thehotelvalidate[.]com/9BCSMUYEA",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/HUJB5RDXB",
+      "indicator": "hxxp://rubox4[.]netlify[.]app/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/86W7QQJXM",
+      "indicator": "hxxps://www[.]ca593836[.]tw1[.]ru/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/NU8135QN2",
+      "indicator": "hxxp://www[.]ct346110[.]tw1[.]ru/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/7NYZELIDD",
+      "indicator": "hxxp://astralix-haven[.]pages[.]dev/meta_for_business",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/3MPCTA3TF",
+      "indicator": "hxxps://yianwebin[.]cc/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/JT8B8Y1HG",
+      "indicator": "hxxp://www[.]sm[.]saipymes[.]soporte-virtual[.]es/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/I2NI2DXO3",
+      "indicator": "hxxp://getlowdown[.]com/gp/customer-reviews/R1SCZ04KBTH522",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/ZBDU8TFAA",
+      "indicator": "hxxp://getlowdown[.]com/ref=nav_logo",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/VTM8Q7XY7",
+      "indicator": "hxxps://suncoust[.]click/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/DWWTZZAR5",
+      "indicator": "hxxps://data-center-guideline-restriction[.]pages[.]dev/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/M5NAMVI9S",
+      "indicator": "hxxps://business-for-digitalhub[.]pages[.]dev/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/H387Q51RA",
+      "indicator": "hxxps://business-for-advertisers-takedown-copyright[.]pages[.]dev/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/3XYVPFHDI",
+      "indicator": "hxxps://data-center-reporting-violence[.]pages[.]dev/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/K37KYY7NX",
+      "indicator": "hxxps://data-center-takedown-transparency[.]pages[.]dev/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/DP5R5KSCE",
+      "indicator": "hxxps://business-for-independence[.]pages[.]dev/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/QR8JV5HXC",
+      "indicator": "hxxps://data-center-compliance-messaging[.]pages[.]dev/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/C7A15JPSS",
+      "indicator": "hxxps://data-center-strike-takedown[.]pages[.]dev/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/JWL6BM2QL",
+      "indicator": "hxxps://business-for-business-transformation-labs[.]pages[.]dev/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/NTJ8RMJPC",
+      "indicator": "hxxps://meta-compass[.]pages[.]dev/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/AUBTQPS1J",
+      "indicator": "hxxps://meta-dragon[.]pages[.]dev/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/X9LZ5PZN6",
+      "indicator": "hxxps://business-for-advertisers-trademark-suspension[.]pages[.]dev/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/LSVPX694J",
+      "indicator": "hxxps://kucoin_loggn[.]godaddysites[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/3OHUARQ8Y",
+      "indicator": "hxxps://prakharbelwal[.]github[.]io/netflix-homepage-clone",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/PSO11UT9N",
+      "indicator": "hxxps://data-center-assessment-harassment[.]pages[.]dev/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkin-arrivals[.]com/GKID34WG4",
+      "indicator": "hxxps://business-for-advertisers-privacy-impersonation[.]pages[.]dev/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/LJ1AHW9DY",
+      "indicator": "hxxp://s[.]webaccess-alerts[.]net/2513501/90c4fc/7be268e3-2fde-480a-a292-ba93ba214fb2?test=1",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/X9WIRDPMN",
+      "indicator": "hxxps://x68n[.]xyz/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/R2X8YPCIT",
+      "indicator": "hxxps://ziply[.]pk/roblox[.]com[.]user[.]32597809[.]profile",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/ZVMBUEAID",
+      "indicator": "hxxps://www[.]yourspotify[.]duckdns[.]org/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/U9XI9V48R",
+      "indicator": "hxxp://yourspotify[.]duckdns[.]org/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/AFVMY349V",
+      "indicator": "hxxps://airbnb-cloneuv6y[.]rollout[.]site/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/BJC7ZL54K",
+      "indicator": "hxxps://ssloutpostfinnn[.]jdevcloud[.]com/SSLOUT/pages/login[.]php",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/GR4R3A3BM",
+      "indicator": "hxxps://im[.]nbpublic[.]com/loading_page_cpl/amazon/amazon_cf_2/index[.]html?lptoken=174d63b3873566811195&cep=N4Igdgpg7g+gFgSwC4wQExALhAJgBwDsAhgCwDGJeAtAAwDMaARleQIzMCcNjZVArHTxEAbAVZ80JYSRAAaEADcEAZ2SoM2AGZkREYRFZUCOEjhY4OdKnkJW8ZSRzI4+ZTZtZzFKtUgQBbCGUkIn8AByxcGhcqVkMcOgAVGj5MVjpMOlYAOnw+AC0vJVUkAHsAJ3VI7jQ4nGEaFjwnFmFGDioiIgJGuhpyEhpNAjJGNCIvHXCiBABzMCrsYSEIbrQ8WogaVjIabfqIAzwZeTBStAhFkBovM4uYJABPMIhIgBkiMDQEMFnb88uZDgMzAWAA2tcQABdeRhcpBCAAGwgZCQEDQMDur0woCeL3en2+vy8IXKswgKHQkWWRFWPR6OAIeFYDX2HmiUn+9yp2BupwgAA8kFhcc9sSAAPLuCDlElEMkUq40unCPqM5ms1g4dkmMhcy4864wPngQXCzBgACuiMRAF9bfIgSCYGFSiUEKVQTiQGRLeV4WAkAA5AEASS+gqwNHkjHKnyB4e+ZCC4KhDpAKhg8O+8NRWCQ5UtEHkAEdlBFvWREQgyABrK7AKs1+voW2TeFEPwKA0aECNjtdntt+RENAKGBTMIzeYN0fjyfThat9urQeY0Li/urhDd9eBYcgS2Ww3AI/LkdjmClaWVE9zq839QH6+aGV7zcvt9gDcHojuBDVp2PaRMAf6aABCBAU+XjoJoEzYMAsFEAeSEwP4aB8CBqHoXwB6zDMvbAPh54gMRGI4SBZFoRhKGBAgWF0bREAINRmEIQEzGsb+XzlKU6CzjxfEYiRhK8fx/EUQholCeoXFeP4RB6ghClkAeKmsSB6k4c+BEgaUBE6RJGF6QRcnyJa8F9hZbbppmkBQFgcGIsoEC2kAA===",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/XNLXUED92",
+      "indicator": "hxxp://getlowdown[.]com/product-reviews/B0FHGBKCGN/ref=acr_dp_hist_1?ie=UTF8&filterByStar=one_star&reviewerType=all_reviews",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/WAYRMJK6B",
+      "indicator": "hxxp://getlowdown[.]com/now?ref=footer_amznow",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/9QZCZ6PN4",
+      "indicator": "hxxp://getlowdown[.]com/gp/primecentral?ref_=nav_AccountFlyout_prime",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/N8MOXUJXA",
+      "indicator": "hxxps://bet365ear[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/IDA8G2FF5",
+      "indicator": "hxxps://gestao[.]current-news-alerts[.]com/s/63BZGFSVBWSFCDX7Y9/584dd8/90eab167-7429-489f-99f6-ce86e8d0d81a",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/28E58O5KO",
+      "indicator": "hxxp://auth-maps-view[.]com/XST",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/GOUEBINJK",
+      "indicator": "hxxp://robllllrey[.]netlify[.]app/eventg[.]us/index[.]html",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/8G6WJ45PN",
+      "indicator": "hxxps://raphaeldubois103[.]wixsite[.]com/my-site-3",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/Y47CTN7J9",
+      "indicator": "hxxps://whatsappplus[.]com[.]pk/es/download/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/PLAHW9N99",
+      "indicator": "hxxps://checkin-arrivals[.]com/Y4WALGTUA",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/DL5E2OC5Y",
+      "indicator": "hxxps://checkin-arrivals[.]com/I1YU5CZ8X",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/H7MX38DM2",
+      "indicator": "hxxps://checkin-arrivals[.]com/X2F9L7U3T",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/U7JOW7R9I",
+      "indicator": "hxxps://checkin-arrivals[.]com/MBCZHX5K5",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/FJFQFPUOP",
+      "indicator": "hxxps://checkin-arrivals[.]com/NUQORC9V9",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/VMKQDR656",
+      "indicator": "hxxps://checkin-arrivals[.]com/RZGA4EOGY",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/T98CENICE",
+      "indicator": "hxxps://checkin-arrivals[.]com/CDFY6XJAF",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/VC2ETW7SB",
+      "indicator": "hxxps://checkin-arrivals[.]com/B8PYVVZII",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/TT6EFPOJ9",
+      "indicator": "hxxps://meta-code-g7d[.]pages[.]dev/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/GFHBKH1W6",
+      "indicator": "hxxps://meta-climbx[.]pages[.]dev/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/JH5LZ91FY",
+      "indicator": "hxxps://checkin-arrivals[.]com/A31MGAS52",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/LTPRDRTRD",
+      "indicator": "hxxps://checkin-arrivals[.]com/HAFWESDKC",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/SRVCPD9XW",
+      "indicator": "hxxps://checkin-arrivals[.]com/Y5MR58SKO",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/P4MERX67F",
+      "indicator": "hxxps://checkin-arrivals[.]com/ZCBMTBIZV",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/AO66VTOON",
+      "indicator": "hxxps://checkin-arrivals[.]com/3PH8VGSO8",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/B5CI83ZLF",
+      "indicator": "hxxps://checkin-arrivals[.]com/XJCF4KI7Y",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/UUJNZWWA5",
+      "indicator": "hxxps://checkin-arrivals[.]com/NL4ZS3YF6",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/DERD6BH78",
+      "indicator": "hxxps://checkin-arrivals[.]com/91GURVHVP",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/DPGP8ZXKI",
+      "indicator": "hxxps://checkin-arrivals[.]com/XOT8EMY83",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/AW245QN26",
+      "indicator": "hxxps://checkin-arrivals[.]com/Y2WY664KI",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/1AWH4WOSW",
+      "indicator": "hxxps://checkin-arrivals[.]com/BB9OSBF91",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/CT9V8UJU7",
+      "indicator": "hxxps://checkin-arrivals[.]com/RGVKMPY3M",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/KAJXIK1RN",
+      "indicator": "hxxps://checkin-arrivals[.]com/IGEN7TOM7",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/4BX9UZB4S",
+      "indicator": "hxxps://checkin-arrivals[.]com/DWYPFFCZX",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/34IZ3G6W5",
+      "indicator": "hxxps://checkin-arrivals[.]com/831XXA2LE",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/7UQZR5RO5",
+      "indicator": "hxxps://checkin-arrivals[.]com/DIPZKMZMH",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/WOQB6G5TI",
+      "indicator": "hxxps://thehotelvalidate[.]com/34E2HNVUR",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/YFD6G63EP",
+      "indicator": "hxxps://thehotelvalidate[.]com/RZJ8PLUJE",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/BAN24IP9W",
+      "indicator": "hxxps://thehotelvalidate[.]com/V8EN7QQ1E",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/6D7ULNNEX",
+      "indicator": "hxxps://thehotelvalidate[.]com/3YM8XS2KE",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/PZ9SXJUPW",
+      "indicator": "hxxps://thehotelvalidate[.]com/HGWNRGNB5",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/27M796RZQ",
+      "indicator": "hxxps://thehotelvalidate[.]com/RTX1CWD6E",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/Y3ODZYHKA",
+      "indicator": "hxxps://thehotelvalidate[.]com/YX9HHFT3Z",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://getlowdown[.]com/https:/getlowdown[.]com/format-your-slack-messageshttp:/getlowdown[.]com/gp/customer-reviews/R3RCDGAZE8VDQQ",
+      "indicator": "hxxps://thehotelvalidate[.]com/JUW9PIUBU",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://abjectvpm14zudp3ug1vdvhedtnl239kiyel1smarket[.]surge[.]sh/",
+      "indicator": "hxxps://checkin-arrivals[.]com/FITZ62SVV",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://airbnbd085[.]rollout[.]site/",
+      "indicator": "hxxps://checkin-arrivals[.]com/XHEEHXLPT",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://anroduni[.]github[.]io/myinsta/",
+      "indicator": "hxxps://thehotelvalidate[.]com/6R4YOGIQN",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]itaubenefisio[.]com[.]br/consulte-sua-fatura[.]php?cartoes=home&id=ZjFkNzU3ODI0YTI1ZmJmOWI0MjkxZWViNDI1ZWNkNDg=&the=theking",
+      "indicator": "hxxps://thehotelvalidate[.]com/M5SCVSGAM",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://amitkumarsahu1106[.]github[.]io/Netflix/",
+      "indicator": "hxxps://thehotelvalidate[.]com/XN938SUOU",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://www[.]roblox[.]com[.]py/users/4010614575/profile/",
+      "indicator": "hxxps://thehotelvalidate[.]com/QV69443JT",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://gemini-logoin[.]godaddysites[.]com/",
+      "indicator": "hxxps://thehotelvalidate[.]com/FUYW2YU6B",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://www[.]gemini-logoin[.]godaddysites[.]com/",
+      "indicator": "hxxps://thehotelvalidate[.]com/128VNXZP5",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]roblox[.]com[.]ml/communities/8950574520/Join-For-Dragon",
+      "indicator": "hxxps://thehotelvalidate[.]com/EPQ5ZZCUN",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://www[.]17000[.]vip/",
+      "indicator": "hxxps://thehotelvalidate[.]com/IWUMA19SM",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://www[.]maritimeaccounts[.]com/swisspass/index[.]html",
+      "indicator": "hxxps://thehotelvalidate[.]com/J5V57PRL2",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://entermediagrowth[.]com/wp-content/redection-ch[.]html",
+      "indicator": "hxxps://thehotelvalidate[.]com/I7BS7WD9Z",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://www[.]kinolartta[.]com/",
+      "indicator": "hxxps://thehotelvalidate[.]com/7N22VVKVH",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://maron-kerva-tyna[.]pages[.]dev/",
+      "indicator": "hxxps://thehotelvalidate[.]com/HSDLDT62Y",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://roblox[.]com[.]ml/communities/9785905526/MY-FREE-PETS-GROP",
+      "indicator": "hxxps://thehotelvalidate[.]com/S3ZBGYYB3",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://americansafe[.]wixsite[.]com/boa-login",
+      "indicator": "hxxps://thehotelvalidate[.]com/UNB5ICLIU",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]bet73ii[.]com/",
+      "indicator": "hxxps://thehotelvalidate[.]com/FX5BVS6ZQ",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://meatamnaskklogin[.]webflow[.]io/",
+      "indicator": "hxxps://thehotelvalidate[.]com/8HH5WR5H7",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://bet83080[.]com/casino",
+      "indicator": "hxxps://thehotelvalidate[.]com/19O88WSWG",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://yash8006[.]github[.]io/Clone2",
+      "indicator": "hxxps://thehotelvalidate[.]com/62IM63C7N",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]roblox[.]com[.]ml/users/5181095301/profile",
+      "indicator": "hxxps://thehotelvalidate[.]com/U3T4QL2ZG",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://roblox[.]com[.]ge/users/4238899810/profile",
+      "indicator": "hxxps://thehotelvalidate[.]com/D6ZEQU98M",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/EZIWJFSG7",
+      "indicator": "hxxps://thehotelvalidate[.]com/Y9ZWK8V9W",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/R1G8VY4WL",
+      "indicator": "hxxps://thehotelvalidate[.]com/ACIBTFG8V",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/1HCA88SXT",
+      "indicator": "hxxps://thehotelvalidate[.]com/5NLPS9FPK",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/ESUUIWG98",
+      "indicator": "hxxps://thehotelvalidate[.]com/HO66G448W",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/3LTK7GMLZ",
+      "indicator": "hxxps://checkin-arrivals[.]com/6OGXHONMM",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/BT4MNWPXB",
+      "indicator": "hxxps://checkin-arrivals[.]com/1TDJ6LXKI",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/43E5U7DR5",
+      "indicator": "hxxps://checkin-arrivals[.]com/TJC3VP73Z",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/RMFEWAQBF",
+      "indicator": "hxxps://checkin-arrivals[.]com/IHHPNZAWD",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/ZNEB857XW",
+      "indicator": "hxxps://checkin-arrivals[.]com/PUXPU9ZWL",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/MGP6V44G",
+      "indicator": "hxxps://checkin-arrivals[.]com/EMSVHN2RH",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/49DHFJYEN",
+      "indicator": "hxxps://thehotelvalidate[.]com/FS5TKP59J",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/8SK65TBLM",
+      "indicator": "hxxps://thehotelvalidate[.]com/15FZSC91O",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/IO5R7Z5GX",
+      "indicator": "hxxps://checkin-arrivals[.]com/CNX7MCJLZ",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/6XPTG4G87",
+      "indicator": "hxxps://checkin-arrivals[.]com/G7FVZWUQV",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/8QN5Y2WFP",
+      "indicator": "hxxps://checkin-arrivals[.]com/YC3RYIQQL",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/OT2TQCBSZ",
+      "indicator": "hxxps://checkin-arrivals[.]com/SS4QV9PKW",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/1XHO39URI",
+      "indicator": "hxxps://checkin-arrivals[.]com/Y2S9ZTZGU",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/S53JFYSSG",
+      "indicator": "hxxps://checkin-arrivals[.]com/T3TDA9KN5",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/SVZSFRITY",
+      "indicator": "hxxps://checkin-arrivals[.]com/LXRF8AMVJ",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/KUTPETI1R",
+      "indicator": "hxxps://checkin-arrivals[.]com/YDU2QLLUE",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/D45S112L7",
+      "indicator": "hxxps://checkin-arrivals[.]com/AT6C1UF2R",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/NBEKPQIS2",
+      "indicator": "hxxps://checkin-arrivals[.]com/41L81Y8OT",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/7XRIFXC35",
+      "indicator": "hxxps://checkin-arrivals[.]com/N9R3ZODCP",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/9HSG2GJ5O",
+      "indicator": "hxxps://checkin-arrivals[.]com/EH1M62QW6",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/QN8DXCXIH",
+      "indicator": "hxxps://checkin-arrivals[.]com/6TDZOX8WV",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/8BZ3DAHH5",
+      "indicator": "hxxps://checkin-arrivals[.]com/2MB6BQ8OT",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/HFFOU7EYK",
+      "indicator": "hxxps://checkin-arrivals[.]com/37B4Z4VP2",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/VHRO2Q82N",
+      "indicator": "hxxps://thehotelvalidate[.]com/LS2BTJPDS",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/MX1PE7V31",
+      "indicator": "hxxps://checkin-arrivals[.]com/XXHS9LH9W",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/ZDKYV3RHW",
+      "indicator": "hxxps://thehotelvalidate[.]com/YC1B3CIDV",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thehotelvalidate[.]com/2I8R32KOV",
+      "indicator": "hxxps://thehotelvalidate[.]com/7B9WYU2HS",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2025-11-23 16:51 IST",
+      "analysisTime": "2025-11-23 18:59 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2025-11-23T16:51:07.841865+05:30",
+      "addedAt": "2025-11-23T18:59:05.743942+05:30",
       "campaign": "Generic Phishing"
     }
   ]

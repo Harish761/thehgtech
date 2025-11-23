@@ -1,11 +1,11 @@
 // Auto-Generated Threat Intel (Multi-Vendor Dashboard)
-// Updated: 2025-11-23T16:51:42.967679+05:30 IST
+// Updated: 2025-11-23T18:59:39.817637+05:30 IST
 // Sources: OpenPhish, Malware Bazaar, Spamhaus DROP, CINS Army, Blocklist.de, Phishing Database
 // NOTE: Full IOC lists are stored in Cloudflare R2 and loaded on-demand
 
 window.threatIntelData = {
-    "lastUpdated": "2025-11-23T16:51:42.608831+05:30",
-    "lastUpdatedFormatted": "Nov 23, 2025 at 04:51 PM IST",
+    "lastUpdated": "2025-11-23T18:59:39.448258+05:30",
+    "lastUpdatedFormatted": "Nov 23, 2025 at 06:59 PM IST",
     "comparisonPeriod": "Nov 22 \u2013 Nov 23, 2025",
     "vendors": {
         "OpenPhish": {
@@ -23,33 +23,33 @@ window.threatIntelData = {
                 "url"
             ],
             "sampleIndicators": [
-                "hxxp://royal[.]midasbuy-page[.]com/",
-                "hxxps://roblox[.]com[.]py/users/5853697982/profile",
-                "hxxps://checkin-arrivals[.]com/NIK7XYTXV",
-                "hxxps://checkin-arrivals[.]com/8DFT64FK1",
-                "hxxps://checkin-arrivals[.]com/AOGE97GBH"
+                "hxxps://lvsclinic[.]ir/swisspass/index[.]html",
+                "hxxps://largely-helpful-swift[.]global[.]ssl[.]fastly[.]net/OTQ0YTcwNWMxZjhjNDIwN2NjMjZlYg==/xhtq[.]php?profileid=780840778&auth=ZWY3MTMxZDllNzIyM2Q2OTEzZjVjNQ==",
+                "hxxps://vvdt[.]net/#trap@trap[.]trap",
+                "hxxps://unfazed-akash[.]github[.]io/Netflix-clone-/",
+                "hxxps://geatuawe[.]top/acc-overview/DghFtR/error[.]php/"
             ]
         },
         "Malware Bazaar": {
             "description": "Recent malware samples with hashes and URLs. Tracks active malware distribution from abuse.ch community.",
             "website": "https://bazaar.abuse.ch/",
             "updateFrequency": "Real-time",
-            "iocCount": 2703,
+            "iocCount": 2736,
             "r2Url": "https://thehgtech.com/ioc-data/malware-bazaar.json",
             "stats": {
-                "total": 2703,
-                "newInLastHour": 2703,
+                "total": 2736,
+                "newInLastHour": 2736,
                 "lastUpdate": "just now"
             },
             "types": [
                 "hash"
             ],
             "sampleIndicators": [
-                " \"74f0c4bae0d78164912827c2dd7c8dbda9677ca300832636555615bc826de238",
-                " \"72be3242a795a9fc7330d2b1155238f93ff5fd80ad10c724cffad0e58d12383b",
-                " \"e103d6a72bdfd4a067eb470a84351a4421c4b3662b1759ff130c61dd22d72d55",
-                " \"780b831e855e4fb01ae9e8f467829c1b7cf1626691116ffa07a3e8ddb605aeaf",
-                " \"b31bb916545f13b37dea3ecb0dd9cc96972c821ea685f586efc6fa9d17280958"
+                " \"2d25bb861cbb3317609dea32488f08d39451042c955ea781e244a7c885adf31a",
+                " \"1253c77de47edfe92e3bbc2a3f33c4359dc9ca7f993a37e0448d96fa3dbe0ecf",
+                " \"e24cae8e8b3681fccfa3799f6fc181fe958274dff6d1ddd34ed2deefd6909e74",
+                " \"5616c49fc976c1b04c13abd1405119ea224691c257783a5df3436ffe4a4e9290",
+                " \"2d19814d33cf0770b925104b91418bf364c78e59b1d94a45a62a5fe6a2c157c1"
             ]
         },
         "Spamhaus DROP": {
@@ -100,11 +100,11 @@ window.threatIntelData = {
             "description": "IPs conducting SSH brute-force attacks. Community-reported attackers targeting SSH services.",
             "website": "https://www.blocklist.de/",
             "updateFrequency": "Hourly",
-            "iocCount": 6666,
+            "iocCount": 6685,
             "r2Url": "https://thehgtech.com/ioc-data/blocklist-de.json",
             "stats": {
-                "total": 6666,
-                "newInLastHour": 6666,
+                "total": 6685,
+                "newInLastHour": 6685,
                 "lastUpdate": "just now"
             },
             "types": [
@@ -181,8 +181,8 @@ window.threatIntelData = {
     "snapshotMetrics": {
         "topAttackVector": "Malicious URLs",
         "mostTargetedRegion": "North America",
-        "fastestRisingThreat": "SSH Attacks",
-        "totalAttacksThisHour": 1299532,
-        "lastCalculated": "2025-11-23 16:51 IST"
+        "fastestRisingThreat": " \"Simda",
+        "totalAttacksThisHour": 1299584,
+        "lastCalculated": "2025-11-23 18:59 IST"
     }
 };
