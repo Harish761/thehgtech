@@ -763,9 +763,15 @@ def update_shorts():
             print(f"📝 Final count: {len(data['cyberShorts'])} cyber, {len(data['aiShorts'])} AI shorts, {len(data['recentCVEs'])} CVEs")
             sys.exit(0)
     
-    # Format NEW articles using Gemini 1.5 Flash with Google Search grounding
-    print(f"\n🤖 Formatting new articles with Gemini 1.5 Flash + Google Search...")
+    # Format NEW articles using Gemini 2.0 Flash with Google Search grounding
+    print(f"\n🤖 Formatting new articles with Gemini 2.0 Flash + Google Search...")
     cyber_content = format_with_gemini(cyber_articles_new, "Cybersecurity") if cyber_articles_new else None
+    
+    # Add delay to avoid rate limits (free tier: 15 RPM)
+    if cyber_articles_new and ai_articles_new:
+        print(f"⏳ Waiting 60 seconds to avoid rate limit (free tier: 15 req/min)...")
+        time.sleep(60)
+    
     ai_content = format_with_gemini(ai_articles_new, "AI") if ai_articles_new else None
     
     # Parse the formatted shorts
