@@ -1029,8 +1029,19 @@
                     loadThreatData = function () {
                         originalLoadThreatData();
                         setTimeout(populateVendorGrid, 100);
+                        setTimeout(populateVendorGrid, 500);
                     };
                 }
+
+                // Fallback: Try when DOM is ready
+                document.addEventListener('DOMContentLoaded', function () {
+                    setTimeout(populateVendorGrid, 500);
+                });
+
+                // Fallback: Try when window loads
+                window.addEventListener('load', function () {
+                    setTimeout(populateVendorGrid, 1000);
+                });
             </script>
 
             <style>
