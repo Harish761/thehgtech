@@ -79,7 +79,6 @@
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="dns-prefetch" href="//www.google-analytics.com">
     <link rel="preload" href="content.js" as="script">
-    <script src="rotating-text.js"></script>
     <link rel="preload" href="threat-intel.js" as="script">
 
     <!-- ========== FONTS ========== -->
@@ -2992,7 +2991,6 @@
     <script src="content.js"></script>
     <script src="rotating-text.js"></script>
     <script src="archives-content.js"></script>
-    <script src="rotating-text.js"></script>
     <script src="threat-intel.js" onerror="console.log('threat-intel.js not found - using fallback')"></script>
 
     <!-- Main JavaScript -->
@@ -4025,7 +4023,6 @@
         // Load Modal Content with XSS protection
         // Note: Inline HTML content in modals serves as fallback
         // If content.js has websiteContent.modals.privacy, it will override the inline content
-    <script src="rotating-text.js"></script>
         function loadModalContent() {
             if (typeof websiteContent === 'undefined' || !websiteContent.modals) return;
 
@@ -4077,7 +4074,6 @@
         function openArchivedArticle(articleId) {
             if (typeof archiveContent === 'undefined' || !archiveContent.archivedArticleContent || !archiveContent.archivedArticleContent[articleId]) {
                 alert('Full article content not available in archives. This article may need to be added to archiveContent.archivedArticleContent in your archives-content.js file.');
-    <script src="rotating-text.js"></script>
                 return;
             }
 
