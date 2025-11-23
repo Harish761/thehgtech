@@ -1,11 +1,11 @@
 // Auto-Generated Threat Intel (Multi-Vendor Dashboard)
-// Updated: 2025-11-23T07:56:33.311128+05:30 IST
+// Updated: 2025-11-23T09:30:57.812304+05:30 IST
 // Sources: OpenPhish, Malware Bazaar, Spamhaus DROP, CINS Army, Blocklist.de, Phishing Database
 // NOTE: Full IOC lists are stored in Cloudflare R2 and loaded on-demand
 
 window.threatIntelData = {
-    "lastUpdated": "2025-11-23T07:56:32.933078+05:30",
-    "lastUpdatedFormatted": "Nov 23, 2025 at 07:56 AM IST",
+    "lastUpdated": "2025-11-23T09:30:57.430373+05:30",
+    "lastUpdatedFormatted": "Nov 23, 2025 at 09:30 AM IST",
     "comparisonPeriod": "Nov 22 \u2013 Nov 23, 2025",
     "vendors": {
         "OpenPhish": {
@@ -34,11 +34,11 @@ window.threatIntelData = {
             "description": "Recent malware samples with hashes and URLs. Tracks active malware distribution from abuse.ch community.",
             "website": "https://bazaar.abuse.ch/",
             "updateFrequency": "Real-time",
-            "iocCount": 1703,
+            "iocCount": 1689,
             "r2Url": "https://thehgtech.com/ioc-data/malware-bazaar.json",
             "stats": {
-                "total": 1703,
-                "newInLastHour": 1703,
+                "total": 1689,
+                "newInLastHour": 1689,
                 "lastUpdate": "just now"
             },
             "types": [
@@ -100,11 +100,11 @@ window.threatIntelData = {
             "description": "IPs conducting SSH brute-force attacks. Community-reported attackers targeting SSH services.",
             "website": "https://www.blocklist.de/",
             "updateFrequency": "Hourly",
-            "iocCount": 6642,
+            "iocCount": 6511,
             "r2Url": "https://thehgtech.com/ioc-data/blocklist-de.json",
             "stats": {
-                "total": 6642,
-                "newInLastHour": 6642,
+                "total": 6511,
+                "newInLastHour": 6511,
                 "lastUpdate": "just now"
             },
             "types": [
@@ -115,7 +115,7 @@ window.threatIntelData = {
                 "1[.]13[.]79[.]144",
                 "1[.]14[.]12[.]168",
                 "1[.]15[.]114[.]102",
-                "1[.]15[.]148[.]9"
+                "1[.]161[.]44[.]62"
             ]
         },
         "Phishing Database": {
@@ -181,8 +181,8 @@ window.threatIntelData = {
     "snapshotMetrics": {
         "topAttackVector": "Malicious URLs",
         "mostTargetedRegion": "North America",
-        "fastestRisingThreat": " \"n/a",
-        "totalAttacksThisHour": 1298508,
-        "lastCalculated": "2025-11-23 07:56 IST"
+        "fastestRisingThreat": " \"QuasarRAT",
+        "totalAttacksThisHour": 1298363,
+        "lastCalculated": "2025-11-23 09:30 IST"
     }
 };
