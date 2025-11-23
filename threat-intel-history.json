@@ -10,15 +10,17 @@
   },
   "previous_hour_campaigns": {
     "Generic Phishing": 1231555,
-    " \"n/a": 820,
-    " \"Mirai": 405,
+    " \"Mirai": 442,
+    " \"n/a": 785,
+    " \"PureLogsStealer": 3,
+    " \"DonutLoader": 6,
+    " \"Gamaredon": 11,
     " \"XWorm": 2,
     " \"Vidar": 24,
     " \"ACRStealer": 13,
+    " \"Efimer": 3,
     " \"PureHVNC": 2,
-    " \"Gamaredon": 9,
     " \"Stealc": 13,
-    " \"DonutLoader": 5,
     " \"MaskGramStealer": 6,
     " \"CoinMiner": 31,
     " \"Pony": 1,
@@ -29,12 +31,14 @@
     " \"SpyLoan": 2,
     " \"RemcosRAT": 4,
     " \"RondoDox": 1,
-    " \"Worm.Mofksys": 56,
-    " \"Simda": 247,
-    " \"SalatStealer": 9,
+    " \"Worm.Mofksys": 58,
+    " \"Simda": 271,
+    " \"SalatStealer": 12,
+    " \"DarkComet": 2,
     " \"Gafgyt": 32,
     " \"Miniduke": 36,
     " \"LokiLocker": 2,
+    " \"SheetRAT": 2,
     " \"RedLineStealer": 9,
     " \"CobaltStrike": 1,
     " \"UmbralStealer": 1,
@@ -49,11 +53,11 @@
     " \"Mofksys": 3,
     " \"QuasarRAT": 909,
     " \"BlackNET": 1,
-    " \"SheetRAT": 1,
+    " \"CosmicDuke": 1,
+    " \"Expiro": 1,
     " \"AgentTesla": 1,
-    " \"PureLogsStealer": 2,
     " \"Kamasers": 4,
-    " \"ValleyRAT": 4,
+    " \"ValleyRAT": 3,
     " \"DCRat": 2,
     " \"HakunaMatata": 1,
     " \"RustyStealer": 4,
@@ -63,7 +67,6 @@
     " \"DeerStealer": 1,
     " \"GCleaner": 1,
     " \"Rhadamanthys": 2,
-    " \"Efimer": 2,
     " \"PureCrypter": 4,
     " \"ConnectWise": 5,
     " \"Adware.Techsnab": 3,
@@ -78,7 +81,7 @@
     " \"Formbook": 1,
     "Spamhaus DROP List": 1450,
     "CINS Threat List": 15000,
-    "SSH Attacks": 6717,
+    "SSH Attacks": 6546,
     "Financial Phishing": 41239,
     "Booking.com Phishing": 866,
     "Raccoon": 8,
@@ -88,50 +91,6 @@
     "Njrat": 2
   },
   "dailySnapshots": [
-    {
-      "date": "2025-11-23",
-      "timestamp": "2025-11-23T00:06:29.475131+05:30",
-      "metrics": {
-        "totalIOCs": 1297351,
-        "newIOCs": 1297351,
-        "topAttackVector": "Malicious URLs",
-        "mostTargetedRegion": "North America",
-        "campaignCounts": {
-          "Generic Phishing": 1231550,
-          "Financial Phishing": 41243,
-          "Booking.com Phishing": 867,
-          "Spamhaus DROP List": 1450,
-          "CINS Threat List": 15000,
-          "SSH Attacks": 6495
-        },
-        "vendorStats": {
-          "OpenPhish": {
-            "total": 300,
-            "new": 300
-          },
-          "Malware Bazaar": {
-            "total": 693,
-            "new": 693
-          },
-          "Spamhaus DROP": {
-            "total": 1450,
-            "new": 1450
-          },
-          "CINS Army": {
-            "total": 15000,
-            "new": 15000
-          },
-          "Blocklist.de": {
-            "total": 6495,
-            "new": 6495
-          },
-          "Phishing Database": {
-            "total": 1273413,
-            "new": 1273413
-          }
-        }
-      }
-    },
     {
       "date": "2025-11-24",
       "timestamp": "2025-11-24T00:18:32.708781+05:30",
@@ -239,6 +198,50 @@
           "Blocklist.de": {
             "total": 6717,
             "new": 6717
+          },
+          "Phishing Database": {
+            "total": 1273413,
+            "new": 1273413
+          }
+        }
+      }
+    },
+    {
+      "date": "2025-11-23",
+      "timestamp": "2025-11-23T00:06:29.475131+05:30",
+      "metrics": {
+        "totalIOCs": 1297351,
+        "newIOCs": 1297351,
+        "topAttackVector": "Malicious URLs",
+        "mostTargetedRegion": "North America",
+        "campaignCounts": {
+          "Generic Phishing": 1231550,
+          "Financial Phishing": 41243,
+          "Booking.com Phishing": 867,
+          "Spamhaus DROP List": 1450,
+          "CINS Threat List": 15000,
+          "SSH Attacks": 6495
+        },
+        "vendorStats": {
+          "OpenPhish": {
+            "total": 300,
+            "new": 300
+          },
+          "Malware Bazaar": {
+            "total": 693,
+            "new": 693
+          },
+          "Spamhaus DROP": {
+            "total": 1450,
+            "new": 1450
+          },
+          "CINS Army": {
+            "total": 15000,
+            "new": 15000
+          },
+          "Blocklist.de": {
+            "total": 6495,
+            "new": 6495
           },
           "Phishing Database": {
             "total": 1273413,
