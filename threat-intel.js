@@ -1,11 +1,11 @@
 // Auto-Generated Threat Intel (Multi-Vendor Dashboard)
-// Updated: 2025-11-23T04:55:41.591049+05:30 IST
+// Updated: 2025-11-23T07:56:33.311128+05:30 IST
 // Sources: OpenPhish, Malware Bazaar, Spamhaus DROP, CINS Army, Blocklist.de, Phishing Database
 // NOTE: Full IOC lists are stored in Cloudflare R2 and loaded on-demand
 
 window.threatIntelData = {
-    "lastUpdated": "2025-11-23T04:55:41.196209+05:30",
-    "lastUpdatedFormatted": "Nov 23, 2025 at 04:55 AM IST",
+    "lastUpdated": "2025-11-23T07:56:32.933078+05:30",
+    "lastUpdatedFormatted": "Nov 23, 2025 at 07:56 AM IST",
     "comparisonPeriod": "Nov 22 \u2013 Nov 23, 2025",
     "vendors": {
         "OpenPhish": {
@@ -23,33 +23,33 @@ window.threatIntelData = {
                 "url"
             ],
             "sampleIndicators": [
-                "hxxps://serasa-feirao[.]github[.]io/2025/",
-                "hxxps://e571tn-nu[.]myshopify[.]com/password",
-                "hxxp://express[.]rakutenglobal[.]com/",
-                "hxxps://www[.]ti6ktopshop[.]com/",
-                "hxxp://view-location[.]app/A1A"
+                "hxxp://royal[.]midasbuy-page[.]com/",
+                "hxxps://roblox[.]com[.]py/users/5853697982/profile",
+                "hxxps://checkin-arrivals[.]com/NIK7XYTXV",
+                "hxxps://checkin-arrivals[.]com/8DFT64FK1",
+                "hxxps://checkin-arrivals[.]com/AOGE97GBH"
             ]
         },
         "Malware Bazaar": {
             "description": "Recent malware samples with hashes and URLs. Tracks active malware distribution from abuse.ch community.",
             "website": "https://bazaar.abuse.ch/",
             "updateFrequency": "Real-time",
-            "iocCount": 672,
+            "iocCount": 1703,
             "r2Url": "https://thehgtech.com/ioc-data/malware-bazaar.json",
             "stats": {
-                "total": 672,
-                "newInLastHour": 672,
+                "total": 1703,
+                "newInLastHour": 1703,
                 "lastUpdate": "just now"
             },
             "types": [
                 "hash"
             ],
             "sampleIndicators": [
-                " \"8cdc955d3b984ef389b30c4038a8961a379eff7a03372d0cd9954d3631f9d9bb",
-                " \"064b944fb5126462d5c3e544dedb304a1b4e711acf92f601392f8eefff950d24",
-                " \"0cf56f52467b3426d63eb770c1b0f2a3d3b932a3ee46c24d078895301fdf3094",
-                " \"2f5b745405c5d05d78e7833124f82c6c752e20607757be3603ce722eb9cbc057",
-                " \"ebea86c19048ad41e9ffd6d01fa6ba449857a761b56babd24b1c4bdf55a5c47f"
+                " \"bf97e6b72ce8503056dd5fdaf76e73f9d9d6a787c26d900ee053ad1ccf817508",
+                " \"232e47352a536344e627fe78fe4a21e75fd815a5007504bedc0ec4569e5da8b4",
+                " \"8a6a2984435a56b2af88e6f61271c18adea515bfd22aca0867d6d94187d6ea48",
+                " \"a28cbd466613185d33f058ddc77459e45b3b85b3113ca0eae16595f849f21aec",
+                " \"2f119e5940e3dc40f5a003db0af1620475f21e427cee12533b304288d1b861b3"
             ]
         },
         "Spamhaus DROP": {
@@ -100,11 +100,11 @@ window.threatIntelData = {
             "description": "IPs conducting SSH brute-force attacks. Community-reported attackers targeting SSH services.",
             "website": "https://www.blocklist.de/",
             "updateFrequency": "Hourly",
-            "iocCount": 6599,
+            "iocCount": 6642,
             "r2Url": "https://thehgtech.com/ioc-data/blocklist-de.json",
             "stats": {
-                "total": 6599,
-                "newInLastHour": 6599,
+                "total": 6642,
+                "newInLastHour": 6642,
                 "lastUpdate": "just now"
             },
             "types": [
@@ -181,8 +181,8 @@ window.threatIntelData = {
     "snapshotMetrics": {
         "topAttackVector": "Malicious URLs",
         "mostTargetedRegion": "North America",
-        "fastestRisingThreat": "SSH Attacks",
-        "totalAttacksThisHour": 1297434,
-        "lastCalculated": "2025-11-23 04:55 IST"
+        "fastestRisingThreat": " \"n/a",
+        "totalAttacksThisHour": 1298508,
+        "lastCalculated": "2025-11-23 07:56 IST"
     }
 };
