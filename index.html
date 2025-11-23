@@ -493,13 +493,32 @@
         }
 
         .logo {
-            font-size: 1.8rem;
-            font-weight: 800;
-            background: linear-gradient(135deg, #FF3D3D, #ff8c8c);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            letter-spacing: -0.5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-img {
+            height: 40px;
+            width: auto;
+            transition: opacity 0.3s ease;
+        }
+
+        /* Show dark logo by default (dark mode) */
+        .logo-dark {
+            display: block;
+        }
+
+        .logo-light {
+            display: none;
+        }
+
+        /* Switch to light logo in light mode */
+        body.light-mode .logo-dark {
+            display: none;
+        }
+
+        body.light-mode .logo-light {
+            display: block;
         }
 
         .nav {
@@ -2524,7 +2543,10 @@
     <!-- Header -->
     <header class="header" role="banner">
         <div class="header-content">
-            <div class="logo">TheHGTech</div>
+            <div class="logo">
+                <img src="logo-dark.png" alt="TheHGTech" class="logo-img logo-dark" height="40">
+                <img src="logo-light.png" alt="TheHGTech" class="logo-img logo-light" height="40">
+            </div>
             <nav class="nav">
                 <a href="#news">News</a>
                 <a href="threat-intel.html" style="color: #00D9FF; position: relative;">
