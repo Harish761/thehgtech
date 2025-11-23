@@ -97,6 +97,12 @@ function calculateThreatMetrics() {
 }
 
 function updateAnalyticsDisplay(metrics) {
+    // Show analytics section
+    const analyticsSection = document.getElementById('analyticsSection');
+    if (analyticsSection) {
+        analyticsSection.style.display = 'block';
+    }
+
     // Update metric cards
     updateMetricCard('threatVelocity', metrics.velocity, 'IOCs/hour');
     updateMetricCard('dataFreshness', metrics.freshnessPercent + '%', 'Last 24h');
