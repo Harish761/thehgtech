@@ -1,11 +1,11 @@
 // Auto-Generated Threat Intel (Multi-Vendor Dashboard)
-// Updated: 2025-11-23T12:08:42.905493+05:30 IST
+// Updated: 2025-11-23T12:55:42.899928+05:30 IST
 // Sources: OpenPhish, Malware Bazaar, Spamhaus DROP, CINS Army, Blocklist.de, Phishing Database
 // NOTE: Full IOC lists are stored in Cloudflare R2 and loaded on-demand
 
 window.threatIntelData = {
-    "lastUpdated": "2025-11-23T12:08:42.509998+05:30",
-    "lastUpdatedFormatted": "Nov 23, 2025 at 12:08 PM IST",
+    "lastUpdated": "2025-11-23T12:55:42.517471+05:30",
+    "lastUpdatedFormatted": "Nov 23, 2025 at 12:55 PM IST",
     "comparisonPeriod": "Nov 22 \u2013 Nov 23, 2025",
     "vendors": {
         "OpenPhish": {
@@ -34,11 +34,11 @@ window.threatIntelData = {
             "description": "Recent malware samples with hashes and URLs. Tracks active malware distribution from abuse.ch community.",
             "website": "https://bazaar.abuse.ch/",
             "updateFrequency": "Real-time",
-            "iocCount": 1690,
+            "iocCount": 1661,
             "r2Url": "https://thehgtech.com/ioc-data/malware-bazaar.json",
             "stats": {
-                "total": 1690,
-                "newInLastHour": 1690,
+                "total": 1661,
+                "newInLastHour": 1661,
                 "lastUpdate": "just now"
             },
             "types": [
@@ -100,11 +100,11 @@ window.threatIntelData = {
             "description": "IPs conducting SSH brute-force attacks. Community-reported attackers targeting SSH services.",
             "website": "https://www.blocklist.de/",
             "updateFrequency": "Hourly",
-            "iocCount": 6703,
+            "iocCount": 6518,
             "r2Url": "https://thehgtech.com/ioc-data/blocklist-de.json",
             "stats": {
-                "total": 6703,
-                "newInLastHour": 6703,
+                "total": 6518,
+                "newInLastHour": 6518,
                 "lastUpdate": "just now"
             },
             "types": [
@@ -181,8 +181,8 @@ window.threatIntelData = {
     "snapshotMetrics": {
         "topAttackVector": "Malicious URLs",
         "mostTargetedRegion": "North America",
-        "fastestRisingThreat": "SSH Attacks",
-        "totalAttacksThisHour": 1298556,
-        "lastCalculated": "2025-11-23 12:08 IST"
+        "fastestRisingThreat": " \"Gafgyt",
+        "totalAttacksThisHour": 1298342,
+        "lastCalculated": "2025-11-23 12:55 IST"
     }
 };
