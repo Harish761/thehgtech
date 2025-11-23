@@ -495,12 +495,23 @@
         .logo {
             display: flex;
             align-items: center;
+            gap: 0.75rem;
         }
 
         .logo-img {
             height: 40px;
             width: auto;
             transition: opacity 0.3s ease;
+        }
+
+        .logo-text {
+            font-size: 1.8rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #FF3D3D, #ff8c8c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.5px;
         }
 
         /* Show dark logo by default (dark mode) */
@@ -2544,8 +2555,9 @@
     <header class="header" role="banner">
         <div class="header-content">
             <div class="logo">
-                <img src="logo-dark.png" alt="TheHGTech" class="logo-img logo-dark" height="40">
-                <img src="logo-light.png" alt="TheHGTech" class="logo-img logo-light" height="40">
+                <img src="logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark" height="40">
+                <img src="logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light" height="40">
+                <span class="logo-text">TheHGTech</span>
             </div>
             <nav class="nav">
                 <a href="#news">News</a>
@@ -2613,8 +2625,8 @@
             <section class="section" id="snapshot" style="padding: 1.5rem 0;">
                 <div class="section-header" style="margin-bottom: 1rem;">
                     <h2 class="section-title" style="font-size: 1.5rem;">Professional Threat Intelligence</h2>
-                    <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.25rem;">1.2M+ live IOCs • 6
-                        vendors • AI analysis • Search & export</p>
+                    <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.25rem;"><span
+                            id="snapshotIocCount">1.2M+</span> live IOCs • 6 vendors • AI analysis • Search & export</p>
                 </div>
                 <!-- Hidden snapshot cards for JS -->
                 <div id="snapshotCards" style="display: none;"></div>
@@ -2628,8 +2640,8 @@
                             style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 8px; padding: 0.9rem; transition: all 0.3s ease;">
                             <div style="display: flex; align-items: center; gap: 0.75rem;">
                                 <div>
-                                    <h3 style="color: var(--accent-cyan); margin: 0; font-size: 0.95rem;">1.2M+ Live
-                                        IOCs
+                                    <h3 style="color: var(--accent-cyan); margin: 0; font-size: 0.95rem;"><span
+                                            id="heroIocCount">1.2M+</span> Live IOCs
                                     </h3>
                                     <p style="color: var(--text-muted); margin: 0; font-size: 0.75rem;">Updated hourly
                                     </p>
@@ -2985,6 +2997,7 @@
     <script src="cve-display.js"></script>
     <script src="archives-content.js"></script>
     <script src="threat-intel.js" onerror="console.log('threat-intel.js not found - using fallback')"></script>
+    <script src="update-ioc-counts.js"></script>
 
     <!-- Main JavaScript -->
     <script>
