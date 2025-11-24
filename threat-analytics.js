@@ -25,72 +25,47 @@ function calculateThreatMetrics() {
         totalIOCs: 0
     };
 
-    const now = Date.now();
-    const hour6 = 6 * 60 * 60 * 1000;
-    const hour12 = 12 * 60 * 60 * 1000;
-    const hour24 = 24 * 60 * 60 * 1000;
-
+    // Calculate from vendor stats (IOCs are in R2, not loaded here)
     Object.entries(data.vendors).forEach(([vendor, vendorData]) => {
-        metrics.vendors[vendor] = vendorData.iocs ? vendorData.iocs.length : 0;
+        const count = vendorData.stats?.total || vendorData.iocCount || 0;
+        const newInHour = vendorData.stats?.newInLastHour || 0;
 
-        if (vendorData.iocs) {
-            vendorData.iocs.forEach(ioc => {
-                metrics.totalIOCs++;
+        metrics.vendors[vendor] = count;
+        metrics.totalIOCs += count;
+        metrics.freshness.last24h += newInHour; // Approximate
 
-                // Type classification
-                const type = (ioc.type || '').toLowerCase();
-                if (type.includes('url')) {
-                    metrics.iocTypes.urls++;
-                    metrics.attackVectors.phishing++;
-                } else if (type.includes('hash')) {
-                    metrics.iocTypes.hashes++;
-                    metrics.attackVectors.malware++;
-                } else if (type.includes('ip')) {
-                    metrics.iocTypes.ips++;
-                    metrics.attackVectors.network++;
-                } else if (type.includes('network') || type.includes('cidr')) {
-                    metrics.iocTypes.networks++;
-                    metrics.attackVectors.c2++;
-                }
+        // Type classification based on vendor
+        const types = vendorData.types || [];
+        types.forEach(type => {
+            if (type === 'url') {
+                metrics.iocTypes.urls += count;
+                metrics.attackVectors.phishing += count;
+            } else if (type === 'hash') {
+                metrics.iocTypes.hashes += count;
+                metrics.attackVectors.malware += count;
+            } else if (type === 'ip') {
+                metrics.iocTypes.ips += count;
+                metrics.attackVectors.network += count;
+            } else if (type === 'ip-range' || type === 'network') {
+                metrics.iocTypes.networks += count;
+                metrics.attackVectors.c2 += count;
+            }
+        });
 
-                // Severity classification
-                if (vendor === 'Malware Bazaar') {
-                    metrics.severity.critical++;
-                } else if (vendor === 'Spamhaus DROP') {
-                    metrics.severity.high++;
-                } else if (vendor === 'CINS Army' || vendor === 'Blocklist.de') {
-                    metrics.severity.high++;
-                } else {
-                    metrics.severity.medium++;
-                }
-
-                // Freshness analysis
-                if (ioc.addedAt) {
-                    const age = now - new Date(ioc.addedAt).getTime();
-                    if (age < hour6) metrics.freshness.last6h++;
-                    if (age < hour12) metrics.freshness.last12h++;
-                    if (age < hour24) metrics.freshness.last24h++;
-                }
-
-                // Campaign tracking
-                if (ioc.campaign) {
-                    if (!metrics.campaigns[ioc.campaign]) {
-                        metrics.campaigns[ioc.campaign] = {
-                            count: 0,
-                            lastSeen: ioc.addedAt || new Date().toISOString(),
-                            severity: 'medium'
-                        };
-                    }
-                    metrics.campaigns[ioc.campaign].count++;
-                }
-            });
+        // Severity classification
+        if (vendor === 'Malware Bazaar') {
+            metrics.severity.critical += count;
+        } else if (vendor === 'Spamhaus DROP' || vendor === 'CINS Army' || vendor === 'Blocklist.de') {
+            metrics.severity.high += count;
+        } else {
+            metrics.severity.medium += count;
         }
     });
 
     // Calculate derived metrics
     metrics.velocity = metrics.totalIOCs > 0 ? (metrics.freshness.last24h / 24).toFixed(1) : 0;
     metrics.freshnessPercent = metrics.totalIOCs > 0 ?
-        Math.round((metrics.freshness.last24h / metrics.totalIOCs) * 100) : 0;
+        Math.round((metrics.freshness.last24h / metrics.totalIOCs) * 100) : 100; // Assume all fresh
 
     console.log('Analytics metrics calculated:', metrics);
     return metrics;
