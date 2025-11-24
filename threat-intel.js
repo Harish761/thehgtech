@@ -1,11 +1,11 @@
 // Auto-Generated Threat Intel (Multi-Vendor Dashboard)
-// Updated: 2025-11-24T12:11:53.336985+05:30 IST
+// Updated: 2025-11-24T12:58:01.386088+05:30 IST
 // Sources: OpenPhish, Malware Bazaar, Spamhaus DROP, CINS Army, Blocklist.de, Phishing Database
 // NOTE: Full IOC lists are stored in Cloudflare R2 and loaded on-demand
 
 window.threatIntelData = {
-    "lastUpdated": "2025-11-24T12:11:52.953065+05:30",
-    "lastUpdatedFormatted": "Nov 24, 2025 at 12:11 PM IST",
+    "lastUpdated": "2025-11-24T12:58:00.997036+05:30",
+    "lastUpdatedFormatted": "Nov 24, 2025 at 12:58 PM IST",
     "comparisonPeriod": "Nov 23 \u2013 Nov 24, 2025",
     "vendors": {
         "OpenPhish": {
@@ -34,22 +34,22 @@ window.threatIntelData = {
             "description": "Recent malware samples with hashes and URLs. Tracks active malware distribution from abuse.ch community.",
             "website": "https://bazaar.abuse.ch/",
             "updateFrequency": "Real-time",
-            "iocCount": 2725,
+            "iocCount": 2739,
             "r2Url": "https://thehgtech.com/ioc-data/malware-bazaar.json",
             "stats": {
-                "total": 2725,
-                "newInLastHour": 2725,
+                "total": 2739,
+                "newInLastHour": 2739,
                 "lastUpdate": "just now"
             },
             "types": [
                 "hash"
             ],
             "sampleIndicators": [
-                " \"c3cf2e5df514902123dcc416553959356abb4410745d6e05ae3a79d59c6dc0b1",
-                " \"8514d7da0ffea0ba8b52475760e4d51b90540de76d633d7cf643bfea16084d82",
-                " \"9c94d7bc8fd8b58409ffd6d4f5e50a0a97c33d2428bb8af6f347fdc6a0439494",
-                " \"8456ff3d9440d3294e272e5a4cb3b7f704fa1204f9ee7cf70251915859f7dd9f",
-                " \"01369873e05c50b832072a4e3d385595d13d607fb8eb26b4c6a202b4001f8d43"
+                " \"2c7812dfd74dda8febd532bd5e17041135b466167866b2c5a434788aceaa6ffc",
+                " \"8664c400cebaf48c72e25aebfc6e9d93012642f9b210c12cc48a4753f699260f",
+                " \"8d639338a77413e4607b8e2dbe74660129c83da1325a36bddf7833f7c30bf01a",
+                " \"727d1e42275c605e0f04aba98095c38a8e1e46def453cdffce42869428aa6743",
+                " \"7fe63d72d188ca85b1bc67a06a012c982f2e905d761d76c57d2be23ec851c7e8"
             ]
         },
         "Spamhaus DROP": {
@@ -92,19 +92,19 @@ window.threatIntelData = {
                 "1[.]119[.]194[.]226",
                 "1[.]123[.]65[.]64",
                 "1[.]14[.]3[.]240",
-                "1[.]145[.]110[.]55",
-                "1[.]15[.]100[.]2"
+                "1[.]15[.]100[.]2",
+                "1[.]15[.]140[.]49"
             ]
         },
         "Blocklist.de": {
             "description": "IPs conducting SSH brute-force attacks. Community-reported attackers targeting SSH services.",
             "website": "https://www.blocklist.de/",
             "updateFrequency": "Hourly",
-            "iocCount": 6699,
+            "iocCount": 6486,
             "r2Url": "https://thehgtech.com/ioc-data/blocklist-de.json",
             "stats": {
-                "total": 6699,
-                "newInLastHour": 6699,
+                "total": 6486,
+                "newInLastHour": 6486,
                 "lastUpdate": "just now"
             },
             "types": [
@@ -181,8 +181,8 @@ window.threatIntelData = {
     "snapshotMetrics": {
         "topAttackVector": "Malicious URLs",
         "mostTargetedRegion": "North America",
-        "fastestRisingThreat": "SSH Attacks",
-        "totalAttacksThisHour": 1299587,
-        "lastCalculated": "2025-11-24 12:11 IST"
+        "fastestRisingThreat": " \"n/a",
+        "totalAttacksThisHour": 1299388,
+        "lastCalculated": "2025-11-24 12:57 IST"
     }
 };
