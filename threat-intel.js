@@ -1,11 +1,11 @@
 // Auto-Generated Threat Intel (Multi-Vendor Dashboard)
-// Updated: 2025-11-24T14:09:29.538966+05:30 IST
+// Updated: 2025-11-24T15:04:38.416080+05:30 IST
 // Sources: OpenPhish, Malware Bazaar, Spamhaus DROP, CINS Army, Blocklist.de, Phishing Database
 // NOTE: Full IOC lists are stored in Cloudflare R2 and loaded on-demand
 
 window.threatIntelData = {
-    "lastUpdated": "2025-11-24T14:09:29.160504+05:30",
-    "lastUpdatedFormatted": "Nov 24, 2025 at 02:09 PM IST",
+    "lastUpdated": "2025-11-24T15:04:38.033891+05:30",
+    "lastUpdatedFormatted": "Nov 24, 2025 at 03:04 PM IST",
     "comparisonPeriod": "Nov 23 \u2013 Nov 24, 2025",
     "vendors": {
         "OpenPhish": {
@@ -93,18 +93,18 @@ window.threatIntelData = {
                 "1[.]123[.]65[.]64",
                 "1[.]14[.]3[.]240",
                 "1[.]15[.]100[.]2",
-                "1[.]15[.]140[.]49"
+                "1[.]15[.]118[.]23"
             ]
         },
         "Blocklist.de": {
             "description": "IPs conducting SSH brute-force attacks. Community-reported attackers targeting SSH services.",
             "website": "https://www.blocklist.de/",
             "updateFrequency": "Hourly",
-            "iocCount": 6437,
+            "iocCount": 6402,
             "r2Url": "https://thehgtech.com/ioc-data/blocklist-de.json",
             "stats": {
-                "total": 6437,
-                "newInLastHour": 6437,
+                "total": 6402,
+                "newInLastHour": 6402,
                 "lastUpdate": "just now"
             },
             "types": [
@@ -181,8 +181,8 @@ window.threatIntelData = {
     "snapshotMetrics": {
         "topAttackVector": "Malicious URLs",
         "mostTargetedRegion": "North America",
-        "fastestRisingThreat": " \"n/a",
-        "totalAttacksThisHour": 1299349,
-        "lastCalculated": "2025-11-24 14:09 IST"
+        "fastestRisingThreat": "No significant changes",
+        "totalAttacksThisHour": 1299314,
+        "lastCalculated": "2025-11-24 15:04 IST"
     }
 };
