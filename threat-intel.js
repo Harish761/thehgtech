@@ -1,11 +1,11 @@
 // Auto-Generated Threat Intel (Multi-Vendor Dashboard)
-// Updated: 2025-11-24T10:09:56.608882+05:30 IST
+// Updated: 2025-11-24T11:00:57.010640+05:30 IST
 // Sources: OpenPhish, Malware Bazaar, Spamhaus DROP, CINS Army, Blocklist.de, Phishing Database
 // NOTE: Full IOC lists are stored in Cloudflare R2 and loaded on-demand
 
 window.threatIntelData = {
-    "lastUpdated": "2025-11-24T10:09:56.224064+05:30",
-    "lastUpdatedFormatted": "Nov 24, 2025 at 10:09 AM IST",
+    "lastUpdated": "2025-11-24T11:00:56.612834+05:30",
+    "lastUpdatedFormatted": "Nov 24, 2025 at 11:00 AM IST",
     "comparisonPeriod": "Nov 23 \u2013 Nov 24, 2025",
     "vendors": {
         "OpenPhish": {
@@ -100,11 +100,11 @@ window.threatIntelData = {
             "description": "IPs conducting SSH brute-force attacks. Community-reported attackers targeting SSH services.",
             "website": "https://www.blocklist.de/",
             "updateFrequency": "Hourly",
-            "iocCount": 6441,
+            "iocCount": 6600,
             "r2Url": "https://thehgtech.com/ioc-data/blocklist-de.json",
             "stats": {
-                "total": 6441,
-                "newInLastHour": 6441,
+                "total": 6600,
+                "newInLastHour": 6600,
                 "lastUpdate": "just now"
             },
             "types": [
@@ -181,8 +181,8 @@ window.threatIntelData = {
     "snapshotMetrics": {
         "topAttackVector": "Malicious URLs",
         "mostTargetedRegion": "North America",
-        "fastestRisingThreat": " \"AsyncRAT",
-        "totalAttacksThisHour": 1299314,
-        "lastCalculated": "2025-11-24 10:09 IST"
+        "fastestRisingThreat": "SSH Attacks",
+        "totalAttacksThisHour": 1299473,
+        "lastCalculated": "2025-11-24 11:00 IST"
     }
 };
