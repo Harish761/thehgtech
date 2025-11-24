@@ -1,11 +1,11 @@
 // Auto-Generated Threat Intel (Multi-Vendor Dashboard)
-// Updated: 2025-11-24T04:55:31.343052+05:30 IST
+// Updated: 2025-11-24T07:50:26.438134+05:30 IST
 // Sources: OpenPhish, Malware Bazaar, Spamhaus DROP, CINS Army, Blocklist.de, Phishing Database
 // NOTE: Full IOC lists are stored in Cloudflare R2 and loaded on-demand
 
 window.threatIntelData = {
-    "lastUpdated": "2025-11-24T04:55:30.957352+05:30",
-    "lastUpdatedFormatted": "Nov 24, 2025 at 04:55 AM IST",
+    "lastUpdated": "2025-11-24T07:50:26.047614+05:30",
+    "lastUpdatedFormatted": "Nov 24, 2025 at 07:50 AM IST",
     "comparisonPeriod": "Nov 23 \u2013 Nov 24, 2025",
     "vendors": {
         "OpenPhish": {
@@ -23,33 +23,33 @@ window.threatIntelData = {
                 "url"
             ],
             "sampleIndicators": [
-                "hxxps://lvsclinic[.]ir/swisspass/index[.]html",
-                "hxxps://largely-helpful-swift[.]global[.]ssl[.]fastly[.]net/OTQ0YTcwNWMxZjhjNDIwN2NjMjZlYg==/xhtq[.]php?profileid=780840778&auth=ZWY3MTMxZDllNzIyM2Q2OTEzZjVjNQ==",
-                "hxxps://vvdt[.]net/#trap@trap[.]trap",
-                "hxxps://unfazed-akash[.]github[.]io/Netflix-clone-/",
-                "hxxps://geatuawe[.]top/acc-overview/DghFtR/error[.]php/"
+                "hxxps://localhost[.]gruporecuperabr[.]com/inicio/",
+                "hxxp://bafybeiathoymw2rgedvnedxgjyqulgq4iodqzgjprc2hwuczjg2qybnite[.]ipfs[.]dweb[.]link/64[.]html",
+                "hxxps://verify[.]aerix[.]com[.]de/WlD5x5TJQl3f@w3raDXLo1Q/",
+                "hxxp://meta-prime-egn[.]pages[.]dev/",
+                "hxxp://meta-summitx[.]pages[.]dev/"
             ]
         },
         "Malware Bazaar": {
             "description": "Recent malware samples with hashes and URLs. Tracks active malware distribution from abuse.ch community.",
             "website": "https://bazaar.abuse.ch/",
             "updateFrequency": "Real-time",
-            "iocCount": 2771,
+            "iocCount": 2723,
             "r2Url": "https://thehgtech.com/ioc-data/malware-bazaar.json",
             "stats": {
-                "total": 2771,
-                "newInLastHour": 2771,
+                "total": 2723,
+                "newInLastHour": 2723,
                 "lastUpdate": "just now"
             },
             "types": [
                 "hash"
             ],
             "sampleIndicators": [
-                " \"207c44dc24b64ccb863ffd5a2678512115891ec6645b18e74f3804d872f9d381",
-                " \"5563a5a7ddfa4ed29b594e9b1f0c7c528c1d6f398caf7bc80cfb4a883700dfe4",
-                " \"4591c54052c787376ea64aae9e4297bedf835551d9e1c7db3c2e5e3f90bff02a",
-                " \"1ad76c837935535dcab64e5b868e154ead29aab26fb6cb415d2a6d3574b61416",
-                " \"bd01008034661874e60f933eae3f615035b399696ec81bc9b6613d6864a95082"
+                " \"6c21b4dbc67419dba7f5c9d3c58dec81446dbeee9b6f95f89595b49145b464e5",
+                " \"02b818e2058a60b7e826d6187c970f6a3e377c00fcb650a2af867ee8fe10fee1",
+                " \"0418fd873b985dc519a55814dade5cc9bf9421ae0dbda9eba6995741fcdee668",
+                " \"55ffc58940a68ebd8ceb420c2f76ce0c6203a70a32c7eeefbc054c60a5b547ce",
+                " \"7c784b4c8da1e633611224bf67fea2760556564e3fa200d00a6c866a39767a9a"
             ]
         },
         "Spamhaus DROP": {
@@ -90,21 +90,21 @@ window.threatIntelData = {
             ],
             "sampleIndicators": [
                 "1[.]119[.]194[.]226",
+                "1[.]121[.]198[.]97",
                 "1[.]123[.]65[.]64",
                 "1[.]14[.]3[.]240",
-                "1[.]145[.]110[.]55",
-                "1[.]15[.]100[.]2"
+                "1[.]145[.]110[.]55"
             ]
         },
         "Blocklist.de": {
             "description": "IPs conducting SSH brute-force attacks. Community-reported attackers targeting SSH services.",
             "website": "https://www.blocklist.de/",
             "updateFrequency": "Hourly",
-            "iocCount": 6494,
+            "iocCount": 6470,
             "r2Url": "https://thehgtech.com/ioc-data/blocklist-de.json",
             "stats": {
-                "total": 6494,
-                "newInLastHour": 6494,
+                "total": 6470,
+                "newInLastHour": 6470,
                 "lastUpdate": "just now"
             },
             "types": [
@@ -115,7 +115,7 @@ window.threatIntelData = {
                 "1[.]117[.]227[.]101",
                 "1[.]12[.]64[.]80",
                 "1[.]13[.]19[.]219",
-                "1[.]13[.]79[.]144"
+                "1[.]14[.]12[.]168"
             ]
         },
         "Phishing Database": {
@@ -181,8 +181,8 @@ window.threatIntelData = {
     "snapshotMetrics": {
         "topAttackVector": "Malicious URLs",
         "mostTargetedRegion": "North America",
-        "fastestRisingThreat": " \"n/a",
-        "totalAttacksThisHour": 1299428,
-        "lastCalculated": "2025-11-24 04:55 IST"
+        "fastestRisingThreat": "Booking.com Phishing",
+        "totalAttacksThisHour": 1299356,
+        "lastCalculated": "2025-11-24 07:50 IST"
     }
 };
