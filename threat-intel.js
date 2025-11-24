@@ -1,11 +1,11 @@
 // Auto-Generated Threat Intel (Multi-Vendor Dashboard)
-// Updated: 2025-11-25T02:01:32.466868+05:30 IST
+// Updated: 2025-11-25T02:57:20.431663+05:30 IST
 // Sources: OpenPhish, Malware Bazaar, Spamhaus DROP, CINS Army, Blocklist.de, Phishing Database
 // NOTE: Full IOC lists are stored in Cloudflare R2 and loaded on-demand
 
 window.threatIntelData = {
-    "lastUpdated": "2025-11-25T02:01:32.067266+05:30",
-    "lastUpdatedFormatted": "Nov 25, 2025 at 02:01 AM IST",
+    "lastUpdated": "2025-11-25T02:57:20.036176+05:30",
+    "lastUpdatedFormatted": "Nov 25, 2025 at 02:57 AM IST",
     "comparisonPeriod": "Nov 24 \u2013 Nov 25, 2025",
     "vendors": {
         "OpenPhish": {
@@ -93,18 +93,18 @@ window.threatIntelData = {
                 "1[.]123[.]65[.]64",
                 "1[.]14[.]3[.]240",
                 "1[.]15[.]118[.]23",
-                "1[.]15[.]140[.]49"
+                "1[.]172[.]234[.]138"
             ]
         },
         "Blocklist.de": {
             "description": "IPs conducting SSH brute-force attacks. Community-reported attackers targeting SSH services.",
             "website": "https://www.blocklist.de/",
             "updateFrequency": "Hourly",
-            "iocCount": 5666,
+            "iocCount": 5605,
             "r2Url": "https://thehgtech.com/ioc-data/blocklist-de.json",
             "stats": {
-                "total": 5666,
-                "newInLastHour": 5666,
+                "total": 5605,
+                "newInLastHour": 5605,
                 "lastUpdate": "just now"
             },
             "types": [
@@ -181,8 +181,8 @@ window.threatIntelData = {
     "snapshotMetrics": {
         "topAttackVector": "Malicious URLs",
         "mostTargetedRegion": "North America",
-        "fastestRisingThreat": "Generic Phishing",
-        "totalAttacksThisHour": 1298603,
-        "lastCalculated": "2025-11-25 02:01 IST"
+        "fastestRisingThreat": "No significant changes",
+        "totalAttacksThisHour": 1298542,
+        "lastCalculated": "2025-11-25 02:57 IST"
     }
 };
