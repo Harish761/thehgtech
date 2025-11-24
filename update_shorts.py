@@ -247,9 +247,8 @@ CYBER_FEEDS = [
     'https://www.recordedfuture.com/feed',                      # Recorded Future - Professional research
     'https://feeds.arstechnica.com/arstechnica/security',       # Ars Technica - Technical depth
     
-    # ===== PHASE 2 EXPANSION - Premium Sources (5) =====
+    # ===== PHASE 2 EXPANSION - Premium Sources (4) =====
     'https://www.csoonline.com/feed/',                          # CSO - Enterprise/CISO perspective
-    'https://www.zdnet.com/topic/security/rss.xml',             # ZDNet - Balanced tech + business
     'https://www.cyberscoop.com/feed/',                         # Cyberscoop - Government/policy
     'https://grahamcluley.com/feed/',                           # Graham Cluley - Expert commentary
     'https://www.malwarebytes.com/blog/feed/index.xml',         # Malwarebytes - Malware research
