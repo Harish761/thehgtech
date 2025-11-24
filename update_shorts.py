@@ -457,6 +457,9 @@ Create a short for EACH of the {len(top_articles)} articles above."""
         
         content = response.choices[0].message.content
         
+        # Decode HTML entities (fix &#x27; → ')
+        content = unescape(content)
+        
         # Replace placeholders with actual URLs
         for i, article in enumerate(top_articles, 1):
             placeholder = f"ARTICLE_{i}_URL_PLACEHOLDER"
