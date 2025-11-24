@@ -519,6 +519,27 @@ def is_older_than_hours(date_string, hours=24):
         return False
 
 
+
+def is_zero_day(description):
+    """
+    Check if CVE description mentions zero-day
+    Returns True if zero-day patterns found (adjacent words only)
+    """
+    if not description:
+        return False
+    
+    text = description.lower()
+    
+    # Zero-day patterns (official terminology only)
+    zero_day_patterns = [
+        'zero-day',      # Most common in official docs
+        'zero day',      # Also common
+        'zeroday'        # Less common but used
+    ]
+    
+    return any(pattern in text for pattern in zero_day_patterns)
+
+
 def fetch_cisa_cves():
     """
     Fetch CVEs from CISA Known Exploited Vulnerabilities Catalog
@@ -567,7 +588,8 @@ def fetch_cisa_cves():
                         'score': 'HIGH',  # CISA KEV are all high-impact
                         'status': 'Confirmed',
                         'source': 'CISA KEV',
-                        'url': f"https://nvd.nist.gov/vuln/detail/{vuln.get('cveID', '')}"
+                        'url': f"https://nvd.nist.gov/vuln/detail/{vuln.get('cveID', '')}",
+                        'isZeroDay': is_zero_day(vuln.get('shortDescription', ''))
                     }
                     
                     recent_cves.append(cve_entry)
