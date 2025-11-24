@@ -135,6 +135,24 @@ def is_promotional_content(title, summary, source=""):
         'releases version',
         'now available',
         'now offering',
+        
+        # Consumer sales/deals (NOT cybersecurity news)
+        'black friday',
+        'cyber monday',
+        'deals',
+        'discounts',
+        'sale',
+        'offer',
+        'under $',
+        'up to % off',
+        'save up to',
+        'best deals',
+        'top deals',
+        'shopping',
+        'buy now',
+        'limited time',
+        'price drop',
+        'price cut',
     ]
     
     # TOOL/PLATFORM NAMES that are commonly promoted
