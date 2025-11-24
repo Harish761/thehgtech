@@ -235,6 +235,12 @@ CYBER_FEEDS = [
     'https://www.cyberscoop.com/feed/',                         # Cyberscoop - Government/policy
     'https://grahamcluley.com/feed/',                           # Graham Cluley - Expert commentary
     'https://www.malwarebytes.com/blog/feed/index.xml',         # Malwarebytes - Malware research
+    
+    # ===== PHASE 3 EXPANSION - Zero-Day Focused Sources (4) =====
+    'https://googleprojectzero.blogspot.com/feeds/posts/default',  # Project Zero - THE zero-day source
+    'https://www.zerodayinitiative.com/blog?format=rss',           # ZDI - Zero-day research
+    'https://blog.google/threat-analysis-group/rss/',              # Google TAG - APT campaigns
+    'https://msrc.microsoft.com/blog/feed',                        # Microsoft MSRC - Windows zero-days
 ]
 
 AI_FEEDS = [
@@ -353,7 +359,7 @@ def format_with_gpt(articles, content_type):
     if not articles:
         return None
     
-    top_articles = articles[:5]
+    top_articles = articles[:7]  # Increased from 5 to 7 for better coverage
     
     articles_text = ""
     for i, article in enumerate(top_articles, 1):
@@ -628,6 +634,54 @@ def deduplicate_cves(cves):
     return unique_cves
 
 
+def cross_reference_cves_with_news(news_content, cve_file='cve-data.json'):
+    """
+    Cross-reference CVEs with news content to detect zero-days
+    Updates CVE data if news mentions CVE + "zero-day"
+    """
+    if not news_content or not os.path.exists(cve_file):
+        return
+    
+    try:
+        # Load CVE data
+        with open(cve_file, 'r', encoding='utf-8') as f:
+            cve_data = json.load(f)
+        
+        updated_count = 0
+        news_lower = news_content.lower()
+        
+        # Check each CVE
+        for cve in cve_data.get('cves', []):
+            # Skip if already tagged
+            if cve.get('isZeroDay'):
+                continue
+            
+            cve_id = cve.get('cveId', '')
+            if not cve_id:
+                continue
+            
+            # Check if CVE is mentioned in news
+            if cve_id.lower() in news_lower:
+                # Check if article mentions "zero-day"
+                # Look for zero-day within 200 chars of CVE mention
+                cve_pos = news_lower.find(cve_id.lower())
+                context = news_lower[max(0, cve_pos-100):min(len(news_lower), cve_pos+100)]
+                
+                if any(pattern in context for pattern in ['zero-day', 'zero day', 'zeroday']):
+                    cve['isZeroDay'] = True
+                    updated_count += 1
+                    print(f"   ✓ Tagged {cve_id} as zero-day from news coverage")
+        
+        # Save updated CVE data if changes made
+        if updated_count > 0:
+            with open(cve_file, 'w', encoding='utf-8') as f:
+                json.dump(cve_data, f, indent=2)
+            print(f"   📊 Updated {updated_count} CVE(s) with zero-day tags from news")
+        
+    except Exception as e:
+        print(f"   ⚠️ Error cross-referencing CVEs: {e}")
+
+
 def filter_old_cves(cves, days=7):
     """
     Remove CVEs older than specified days
@@ -797,6 +851,13 @@ def update_shorts():
         print(f"   Removed {removed_cyber} cyber and {removed_ai} AI old shorts")
     else:
         print(f"   No old content to remove")
+    
+    # NEW: Cross-reference CVEs with news content for zero-day detection
+    if cyber_articles_new:
+        print(f"\n🔍 Cross-referencing CVEs with news content...")
+        combined_news = '\n'.join([s.get('content', '') for s in cyber_articles_new])
+        cross_reference_cves_with_news(combined_news)
+    
     
     # Handle case: No new articles, but old content was removed OR CVEs updated
     if not cyber_articles_new and not ai_articles_new:
