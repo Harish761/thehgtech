@@ -87,6 +87,8 @@ def is_promotional_content(title, summary, source=""):
         'best solution',
         'leading platform',
         'premier solution',
+        'delivers unparalleled',
+        'industry-leading',
         
         # Marketing language
         'revolutionize',
@@ -97,6 +99,8 @@ def is_promotional_content(title, summary, source=""):
         'transform your',
         'enhance your defense',
         'streamline your',
+        'empower your team',
+        'maximize your',
         
         # Call-to-action indicators
         'learn more about',
@@ -105,18 +109,32 @@ def is_promotional_content(title, summary, source=""):
         'try it today',
         'sign up for',
         'request a demo',
+        'schedule a demo',
+        'contact us to',
+        'visit our website',
         
         # Product-focused (not news-focused)
         'feature highlights',
         'key features include',
         'benefits include',
         'why choose',
+        'advantages of using',
+        'capabilities include',
         
         # Sponsored content indicators
         'sponsored by',
         'in partnership with',
         'powered by',
         'brought to you by',
+        'in collaboration with',
+        
+        # Vendor-specific promotional patterns
+        'announces new product',
+        'launches new solution',
+        'unveils new platform',
+        'releases version',
+        'now available',
+        'now offering',
     ]
     
     # TOOL/PLATFORM NAMES that are commonly promoted
@@ -210,6 +228,13 @@ CYBER_FEEDS = [
     'https://isc.sans.edu/rssfeed.xml',                         # SANS - Threat intelligence
     'https://www.recordedfuture.com/feed',                      # Recorded Future - Professional research
     'https://feeds.arstechnica.com/arstechnica/security',       # Ars Technica - Technical depth
+    
+    # ===== PHASE 2 EXPANSION - Premium Sources (5) =====
+    'https://www.csoonline.com/feed/',                          # CSO - Enterprise/CISO perspective
+    'https://www.zdnet.com/topic/security/rss.xml',             # ZDNet - Balanced tech + business
+    'https://www.cyberscoop.com/feed/',                         # Cyberscoop - Government/policy
+    'https://grahamcluley.com/feed/',                           # Graham Cluley - Expert commentary
+    'https://www.malwarebytes.com/blog/feed/index.xml',         # Malwarebytes - Malware research
 ]
 
 AI_FEEDS = [
@@ -225,6 +250,12 @@ AI_FEEDS = [
     'https://openai.com/blog/rss.xml',                          # OpenAI - GPT updates
     'https://www.anthropic.com/index/rss.xml',                  # Anthropic - Claude updates
     'https://deepmind.google/blog/rss.xml',                     # DeepMind - Research
+    
+    # ===== PHASE 2 EXPANSION - Premium Sources (4) =====
+    'https://huggingface.co/blog/feed.xml',                     # Hugging Face - Open-source AI
+    'https://paperswithcode.com/latest/rss.xml',                # Papers with Code - Research
+    'https://www.deeplearning.ai/the-batch/feed/',              # The Batch - Andrew Ng newsletter
+    'https://ai.meta.com/blog/rss/',                            # Meta AI - Llama updates
 ]
 
 # ===== OPTIONAL: RSS FEED BLACKLIST =====
