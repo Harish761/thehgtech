@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
 """
-TheHGTech Content Automation Script - Gemini API Version v3.0
-✅ MIGRATED: From ChatGPT to Gemini API with Google Search grounding
-✅ NEW: Internet access via Google Search for fact verification
-✅ NEW: Source citations from Google Search
+TheHGTech Content Automation Script - FINAL VERSION v2.1
 ✅ Fixed: GPT markdown formatting issue (** breaking URLs)
 ✅ Fixed: CVE date filter (now handles both date formats)
 ✅ NEW: Promotional content filtering (blocks tool/product promotions)
@@ -15,17 +12,15 @@ import os
 import sys
 import json
 import re
-import time
 from datetime import datetime, timedelta
 import pytz
-from google import genai
-from google.genai import types
+from openai import OpenAI
 import feedparser
 from html import unescape, escape
 import requests
 
-# Initialize Gemini client
-client = genai.Client(api_key=os.environ.get('GEMINI_API_KEY'))
+# Initialize OpenAI client
+client = OpenAI(api_key=os.environ.get('OPENAI_API_KEY'))
 
 # CISA Known Exploited Vulnerabilities Catalog
 CISA_KEV_URL = 'https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json'
@@ -322,8 +317,8 @@ def filter_existing_urls(articles, existing_shorts):
     return filtered
 
 
-def format_with_gemini(articles, content_type):
-    """Use Gemini 1.5 Flash with Google Search grounding to format articles into professional shorts"""
+def format_with_gpt(articles, content_type):
+    """Use GPT-4o to format articles into professional shorts"""
     if not articles:
         return None
     
@@ -341,37 +336,67 @@ Summary: {article['summary'][:300]}
 
 """
     
-    prompt = f"""You are a professional content editor for TheHGTech.com.
+    prompt = f"""You are a senior cybersecurity and AI news editor for TheHGTech.com, a professional publication read by security professionals, developers, and tech leaders.
 
-I have fetched {len(top_articles)} REAL recent {content_type} news articles from various sources. Your task is to rewrite each article as a professional news short following our exact format.
+I have fetched {len(top_articles)} REAL recent {content_type} news articles from trusted sources. Your task is to transform each article into a high-quality, professional news short.
 
-Here are the real articles:
+Here are the articles:
 {articles_text}
 
-IMPORTANT: Use Google Search to verify facts and get the latest updates for each article. This ensures accuracy and completeness.
-
-For EACH article above, create a short in this EXACT format:
+For EACH article, create a compelling news short in this EXACT format:
 
 Date: [Use the actual date from the article]
 Source Name: [Use the actual source from the article]
 Source URL: [Use exactly: ARTICLE_X_URL_PLACEHOLDER where X is the article number]
-Title: [Create a compelling, clear headline based on the article - you can rephrase but keep the meaning]
+Title: [Create a clear, compelling headline that captures the key development - you can rephrase for clarity and impact]
 Content:
-[Write 5-7 sentences that:
-1. Clearly explain what happened
-2. Include relevant details and context (verified via Google Search)
-3. Explain why it matters to security/AI professionals
-4. Maintain professional, informative tone
-5. Are written for a technical audience but remain accessible]
+[Write 5-7 well-crafted sentences that:
 
-Important guidelines:
+MUST INCLUDE:
+1. **What happened**: Lead with the most newsworthy development
+2. **Technical details**: Include specific versions, CVE IDs, affected systems, or model capabilities
+3. **Impact analysis**: Explain who is affected and how severely
+4. **Context**: Provide relevant background or trends
+5. **Action items**: What should readers do or know
+
+QUALITY STANDARDS:
+- Write for technical professionals but remain accessible
+- Use precise, specific language (avoid vague terms like "several" or "many")
+- Include numbers, percentages, or metrics when available
+- Explain acronyms on first use
+- Maintain an authoritative, informative tone
+- Make every sentence add value
+
+AVOID:
+- Marketing language or hype
+- Speculation without evidence
+- Redundant information
+- Passive voice where active is clearer
+- Jargon without explanation]
+
+CRITICAL FORMATTING RULES:
+1. Use PLAIN TEXT only - absolutely NO markdown, NO asterisks, NO formatting
+2. Write "Source URL:" not "Source:" for the URL line
+3. Keep URLs as ARTICLE_X_URL_PLACEHOLDER - do not modify
+4. Separate each short with exactly one blank line
+5. Do not number the shorts
+6. Do not add section headers or extra formatting
+
+EXAMPLE OF CORRECT OUTPUT:
+Date: Nov 23 2024
+Source Name: BleepingComputer
+Source URL: ARTICLE_1_URL_PLACEHOLDER
+Title: Critical Chrome Zero-Day Exploited in Targeted Attacks
+Content:
+Google has patched CVE-2024-12345, a critical use-after-free vulnerability in Chrome's V8 JavaScript engine that was actively exploited in targeted attacks. The flaw affects all Chrome versions prior to 120.0.6099.129 and allows remote code execution through specially crafted web pages. Security researchers at Kaspersky discovered the exploit being used against financial institutions and government agencies in Eastern Europe. Users should update immediately through Chrome's built-in updater or download version 120.0.6099.129 or later. This marks the eighth zero-day vulnerability patched in Chrome this year, highlighting the browser's continued targeting by sophisticated threat actors.
+
+Now generate {len(top_articles)} professional news shorts following these guidelines exactly:
 - Write in a professional, journalistic style
 - Focus on facts and implications, not sensationalism
 - Each short should be self-contained and informative
 - Use clear, direct language
 - Include relevant technical details where appropriate
 - Explain significance for professionals in the field
-- Use Google Search to verify facts and get latest updates
 
 CRITICAL FORMATTING RULES:
 - DO NOT use any markdown formatting (no **, no __, no # headers, no * bullets)
@@ -383,24 +408,17 @@ CRITICAL FORMATTING RULES:
 Create a short for EACH of the {len(top_articles)} articles above."""
     
     try:
-        # Enable Google Search grounding (new SDK syntax)
-        grounding_tool = types.Tool(
-            google_search=types.GoogleSearch()
+        response = client.chat.completions.create(
+            model="gpt-4o",
+            messages=[
+                {"role": "system", "content": "You are a professional tech journalist specializing in cybersecurity and AI. You write in plain text without any markdown formatting."},
+                {"role": "user", "content": prompt}
+            ],
+            temperature=0.5,
+            max_tokens=4000
         )
         
-        config = types.GenerateContentConfig(
-            tools=[grounding_tool],
-            temperature=0.3,
-            max_output_tokens=4000
-        )
-        
-        response = client.models.generate_content(
-            model='gemini-2.0-flash-exp',
-            contents=prompt,
-            config=config
-        )
-        
-        content = response.text
+        content = response.choices[0].message.content
         
         # Replace placeholders with actual URLs
         for i, article in enumerate(top_articles, 1):
@@ -409,7 +427,7 @@ Create a short for EACH of the {len(top_articles)} articles above."""
             content = content.replace(placeholder, actual_url)
             print(f"   🔗 Replaced {placeholder} with {actual_url[:60]}...")
         
-        print(f"✅ Successfully formatted {content_type} articles with Gemini + Google Search")
+        print(f"✅ Successfully formatted {content_type} articles with real URLs")
         return content
         
     except Exception as e:
@@ -764,16 +782,10 @@ def update_shorts():
             print(f"📝 Final count: {len(data['cyberShorts'])} cyber, {len(data['aiShorts'])} AI shorts, {len(data['recentCVEs'])} CVEs")
             sys.exit(0)
     
-    # Format NEW articles using Gemini 2.0 Flash with Google Search grounding
-    print(f"\n🤖 Formatting new articles with Gemini 2.0 Flash + Google Search...")
-    cyber_content = format_with_gemini(cyber_articles_new, "Cybersecurity") if cyber_articles_new else None
-    
-    # Add delay to avoid rate limits (free tier: 15 RPM)
-    if cyber_articles_new and ai_articles_new:
-        print(f"⏳ Waiting 60 seconds to avoid rate limit (free tier: 15 req/min)...")
-        time.sleep(60)
-    
-    ai_content = format_with_gemini(ai_articles_new, "AI") if ai_articles_new else None
+    # Format NEW articles using GPT-4o
+    print(f"\n🤖 Formatting new articles with GPT-4o...")
+    cyber_content = format_with_gpt(cyber_articles_new, "Cybersecurity") if cyber_articles_new else None
+    ai_content = format_with_gpt(ai_articles_new, "AI") if ai_articles_new else None
     
     # Parse the formatted shorts
     print(f"\n📝 Parsing formatted content...")
