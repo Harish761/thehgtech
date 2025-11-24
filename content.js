@@ -9,50 +9,7 @@ var websiteContent = {
             "content": "Security experts are raising alarms about the Superbox media streaming devices, which may be part of a botnet operation. These Android TV boxes, available at major retailers like BestBuy and Walmart, offer access to over 2,200 streaming services for a one-time fee, making them attractive to consumers. However, the devices are suspected of being compromised with malware that could enlist them into a botnet, potentially affecting thousands of users. This development highlights the ongoing issue of inadequately secured IoT devices being exploited for malicious purposes. Users of Superbox devices should monitor network activity for unusual behavior and consider alternative streaming solutions to mitigate risks.",
             "source": "Krebs on Security",
             "sourceUrl": "https://krebsonsecurity.com/2025/11/is-your-android-tv-streaming-box-part-of-a-botnet/"
-        },
-        {
-            "date": "Nov 24 2025",
-            "title": "Amazon Black Friday Deals Offer Tech Gadgets Under $25",
-            "content": "Amazon has launched its Black Friday deals, featuring a range of tech gadgets priced under $25. This sale includes items that are typically popular year-round but are now available at significantly reduced prices. The promotion is part of Amazon&#x27;s strategy to attract budget-conscious consumers during the holiday shopping season. These deals provide an opportunity for tech enthusiasts to acquire useful gadgets without breaking the bank. Shoppers should act quickly, as these offers are likely to sell out fast due to high demand.",
-            "source": "Latest news",
-            "sourceUrl": "https://www.zdnet.com/article/these-10-amazon-black-friday-deals-are-so-good-theyre-downright-steals-and-all-under-25/"
-        },
-        {
-            "date": "Nov 24 2025",
-            "title": "Amazon&#x27;s Black Friday Discounts: Up to 60% Off on Tech Favorites",
-            "content": "Amazon is rolling out its Black Friday discounts early, featuring savings of up to 60% on popular tech items. Among the highlighted deals is the Oura Ring 4, now available at a 30% discount. These early deals underscore Amazon&#x27;s aggressive pricing strategy to capture consumer attention ahead of the official Black Friday date. The significant markdowns provide an excellent opportunity for consumers to purchase high-demand tech products at lower prices. Interested buyers should leverage these deals promptly as inventory might not last long.",
-            "source": "Latest news",
-            "sourceUrl": "https://www.zdnet.com/article/best-black-friday-amazon-deals-2025-live-now/"
-        },
-        {
-            "date": "Nov 24 2025",
-            "title": "Top Robot Vacuum Deals to Grab This Black Friday",
-            "content": "As Black Friday approaches, consumers can find substantial discounts on robot vacuums, with over 25 deals currently available. These discounts come from various manufacturers known for producing reliable and efficient cleaning devices. The promotions are part of a broader trend where tech companies leverage Black Friday to boost sales of smart home devices. For consumers interested in upgrading their home cleaning technology, this is an opportune time to invest in a robot vacuum. Buyers should evaluate the features and reviews of different models to select the best option for their needs.",
-            "source": "Latest news",
-            "sourceUrl": "https://www.zdnet.com/article/best-black-friday-robot-vacuum-deals-2025/"
-        },
-        {
-            "date": "Nov 24 2025",
-            "title": "Major Retailers Slash Prices on Tech for Black Friday 2025",
-            "content": "With Black Friday just around the corner, major retailers are offering significant discounts on a wide array of tech products, including TVs, laptops, and streaming devices. This year&#x27;s sales event promises to deliver some of the most competitive pricing seen in recent years, with over 60 deals already announced. The trend reflects the growing importance of Black Friday as a critical period for tech sales. Consumers looking to upgrade their tech setups should take advantage of these deals, which are designed to move inventory quickly. It&#x27;s advisable to compare prices across different retailers to ensure the best possible savings.",
-            "source": "Latest news",
-            "sourceUrl": "https://www.zdnet.com/article/best-black-friday-deals-2025/"
-        },
-        {
-            "date": "Nov 24 2025",
-            "title": "Sam&#x27;s Club Unveils Early Black Friday Discounts on Tech and Appliances",
-            "content": "Sam&#x27;s Club has launched its early Black Friday deals, offering over 30 discounts on tech products and household appliances. This early rollout is part of a strategy to capture early holiday shoppers and reduce the last-minute rush. The deals include significant reductions on laptops, TVs, and other electronics, appealing to both tech enthusiasts and everyday consumers. As competition among retailers intensifies, early access to discounts can provide a competitive edge. Shoppers should check Sam&#x27;s Club&#x27;s offerings and consider membership benefits for additional savings.",
-            "source": "Latest news",
-            "sourceUrl": "https://www.zdnet.com/article/best-black-friday-sams-club-deals-2025/"
-        },
-        {
-            "date": "Nov 24 2025",
-            "title": "Target&#x27;s Black Friday Tech Deals Now Available",
-            "content": "Target has unveiled its Black Friday deals on tech gadgets, with over 15 discounts available during Cyber Week. The promotions include a variety of popular electronic devices, catering to the needs of tech-savvy consumers preparing for the holiday season. This initiative is part of Target&#x27;s broader strategy to enhance its competitive positioning in the retail market. Consumers are encouraged to explore these deals early, as high demand could lead to rapid sellouts. It&#x27;s a prime opportunity for buyers to secure tech gifts or personal upgrades at reduced prices.",
-            "source": "Latest news",
-            "sourceUrl": "https://www.zdnet.com/article/best-black-friday-target-deals-2025/"
-        }
-    ],
+        }],
     "aiShorts": [
         {
             "date": "Nov 24 2025",
