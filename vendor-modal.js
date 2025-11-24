@@ -18,7 +18,7 @@ async function loadVendorIOCs(vendorName) {
 
     try {
         console.log(`Fetching ${vendorName} IOCs from GitHub Pages...`);
-        const response = await fetch(vendorMeta.r2Url);
+        const response = await fetch(vendorMeta.r2Url + '?t=' + Date.now());
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const data = await response.json();
         vendorDataCache[vendorName] = data;  // Cache full response with metadata
