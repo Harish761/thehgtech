@@ -5,45 +5,10 @@ var websiteContent = {
     "cyberShorts": [
         {
             "date": "Nov 24 2025",
-            "title": "Anthropic Unveils Claude Opus 4.5, Promises Enhanced AI Capabilities",
-            "content": "Anthropic has launched Claude Opus 4.5, a new AI model designed to advance current capabilities and transform workplace efficiency. This release is part of Anthropic&#x27;s ongoing effort to enhance AI systems, offering improved natural language understanding and task automation. Claude Opus 4.5 is expected to compete with leading models such as OpenAI&#x27;s GPT-4 and Google&#x27;s Bard. Organizations leveraging AI for automation and data analysis stand to benefit significantly from this upgrade. The release underscores the rapid evolution of AI technology, with implications for industries ranging from finance to healthcare. Tech leaders should evaluate Claude Opus 4.5 for potential integration into their AI strategies.",
-            "source": "Latest news",
-            "sourceUrl": "https://www.zdnet.com/article/anthropic-just-released-claude-opus-4-5-heres-how-it-stacks-up-against-other-leading-models/"
-        },
-        {
-            "date": "Nov 24 2025",
-            "title": "Maximize Your iPhone Battery Life with iOS 26 Settings Tweaks",
-            "content": "iPhone users can extend their device&#x27;s battery life by adjusting 15 specific settings in iOS 26. These changes include optimizing background app refresh, disabling unnecessary location services, and adjusting screen brightness. As iPhone batteries naturally degrade over time, these tweaks offer a cost-effective alternative to immediate battery replacement or upgrading to a newer model. This guidance is particularly relevant as users seek to maximize device longevity amid rising smartphone costs. Apple users should explore these settings to enhance daily battery performance and delay hardware upgrades.",
-            "source": "Latest news",
-            "sourceUrl": "https://www.zdnet.com/article/own-an-iphone-i-changed-these-15-settings-on-ios-26-to-instantly-extend-the-battery-life/"
-        },
-        {
-            "date": "Nov 24 2025",
-            "title": "OpenAI Launches ChatGPT Shopping Tool for the Holiday Season",
-            "content": "OpenAI has introduced a new shopping research tool within ChatGPT, designed to assist users in finding products efficiently and effectively. This tool leverages ChatGPT&#x27;s natural language processing capabilities to provide personalized shopping recommendations and detailed product comparisons. As the holiday shopping season approaches, this feature aims to simplify the purchasing process for consumers, potentially reducing decision-making time and enhancing user satisfaction. The tool is available at no cost, positioning OpenAI as a competitive player in the e-commerce space. Users are encouraged to test this functionality to streamline their holiday shopping experience.",
-            "source": "Latest news",
-            "sourceUrl": "https://www.zdnet.com/article/chatgpts-new-shopping-research-tool-is-fast-fun-and-free-but-can-it-out-shop-me/"
-        },
-        {
-            "date": "Nov 24 2025",
-            "title": "Master File Compression in Windows 11 Without Extra Software",
-            "content": "Windows 11 users can efficiently compress files using built-in tools, negating the need for third-party applications. This process involves selecting files, right-clicking to access the context menu, and choosing the &#x27;Compress to ZIP file&#x27; option. File compression is essential for optimizing storage and organizing digital assets, especially as data volumes grow. Understanding these native capabilities can save time and enhance productivity for IT professionals managing large datasets. Users are advised to familiarize themselves with Windows 11&#x27;s compression features to maintain efficient data management practices.",
-            "source": "Latest news",
-            "sourceUrl": "https://www.zdnet.com/article/how-to-zip-files-in-windows-11-and-the-expert-way-to-do-it-to-save-time/"
-        },
-        {
-            "date": "Nov 24 2025",
             "title": "Call for Nominations: 2026 CSO Hall of Fame Honors Cybersecurity Leaders",
             "content": "Nominations are now open for the 2026 CSO Hall of Fame, which recognizes individuals and organizations that have made significant contributions to cybersecurity. This prestigious award highlights those driving innovative and effective strategies to protect digital assets and infrastructure. The nomination process is open to peers, teams, and clients, with a deadline of December 3. The initiative aims to celebrate achievements in an industry facing increasing threats and challenges. Cybersecurity professionals are encouraged to submit nominations to honor exemplary leadership and innovation in the field.",
             "source": "CSO Online",
             "sourceUrl": "https://www.csoonline.com/article/568125/cso-hall-of-fame-honorees.html"
-        },
-        {
-            "date": "Nov 24 2025",
-            "title": "Firefox Introduces Game-Changing Search Feature for Browsers",
-            "content": "Firefox has launched a new search feature that addresses a common frustration among web browser users, enhancing its competitive edge. This feature allows for more intuitive and efficient navigation, streamlining the search process within the browser. As web browsers play a critical role in daily internet use, improvements in search functionality can significantly impact user productivity and satisfaction. Firefox&#x27;s innovation sets a new standard, prompting other browsers to consider similar enhancements. Users should update to the latest version of Firefox to experience these improvements firsthand.",
-            "source": "Latest news",
-            "sourceUrl": "https://www.zdnet.com/article/firefox-just-fixed-my-biggest-annoyance-with-web-browsers-and-its-a-game-changer/"
         },
         {
             "date": "Nov 24 2025",
