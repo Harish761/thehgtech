@@ -4,34 +4,76 @@
 var websiteContent = {
     "cyberShorts": [
         {
-            "date": "Nov 23 2025",
-            "title": "YARA-X 1.10.0 Update Introduces Command to Fix Warnings",
-            "content": "YARA-X has released version 1.10.0, introducing a new command specifically designed to fix warnings. This update aims to enhance the tool&#x27;s functionality by providing users with the ability to address warning messages more efficiently. YARA-X is a widely used tool for malware research and detection, and this update is expected to streamline the process of rule writing and debugging. The introduction of this feature reflects ongoing efforts to improve user experience and operational efficiency in cybersecurity practices. Security professionals relying on YARA-X can now expect a smoother workflow, which is crucial in maintaining robust security postures.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32514"
+            "date": "Nov 24 2025",
+            "title": "Harvard University Data Breach Exposes Sensitive Alumni Information",
+            "content": "Harvard University has revealed a data breach affecting its Alumni Affairs and Development systems due to a voice phishing attack. The breach compromised personal information of students, alumni, donors, staff, and faculty members. This incident highlights the vulnerability of educational institutions to sophisticated phishing techniques that can bypass traditional security measures. The attack underscores the importance of implementing robust multi-factor authentication and regular security training for all users. Affected individuals are advised to monitor their personal accounts for suspicious activity and consider identity protection services. This breach adds to the growing list of higher education institutions targeted by cybercriminals in recent years.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/harvard-university-discloses-data-breach-affecting-alumni-donors/"
         },
         {
-            "date": "Nov 23 2025",
-            "title": "Wireshark 4.4.1 Fixes Vulnerabilities and Bugs",
-            "content": "The latest release of Wireshark, version 4.4.1, addresses two critical vulnerabilities and resolves 20 bugs. As a leading network protocol analyzer, Wireshark is essential for network troubleshooting, analysis, and development. The fixed vulnerabilities enhance the tool&#x27;s security, ensuring that users can safely analyze network traffic without risk of exploitation. This update is particularly significant for cybersecurity professionals who depend on Wireshark for monitoring and securing network infrastructures. By addressing these issues, Wireshark continues to uphold its reputation as a reliable tool in the cybersecurity arsenal.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32512"
+            "date": "Nov 24 2025",
+            "title": "Ransomware Groups Target Amazon S3 Buckets in New Attack Wave",
+            "content": "A recent report from Trend Micro highlights a shift in ransomware tactics, with attackers increasingly targeting Amazon S3 cloud storage services. These ransomware groups are leveraging cloud-native encryption capabilities to lock organizations out of their data stored in S3 buckets. This change in focus from traditional local targets to cloud services indicates an evolving threat landscape for companies relying on cloud infrastructure. Organizations using Amazon S3 should ensure they have strong access controls, regular backups, and monitoring in place to detect unauthorized activities. The report serves as a warning for businesses to reassess their cloud security strategies in light of these new threats.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4095199/aws-s3-buckets-im-visier-von-ransomware-banden.html"
+        },
+        {
+            "date": "Nov 24 2025",
+            "title": "The Silent Toll of Cybersecurity on Mental Health",
+            "content": "A new report explores the mental health challenges faced by cybersecurity professionals, who often endure high-stress environments to stay ahead of persistent threats. The constant pressure to prevent breaches and respond to incidents can lead to burnout and psychological strain. This issue is compounded by the 24/7 nature of cybersecurity work, where attackers never rest, creating a relentless cycle for defenders. Companies are encouraged to implement mental health support systems and promote work-life balance to mitigate these effects. Addressing the mental health of cybersecurity staff is crucial for maintaining an effective security posture and retaining talent in the industry.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4094657/invisible-battles-how-cybersecurity-work-erodes-mental-health-in-silence-and-what-we-can-do-about-it.html"
+        },
+        {
+            "date": "Nov 24 2025",
+            "title": "Microsoft Warns of Security Risks from New AI Agentic Features",
+            "content": "Microsoft has issued a warning about potential security risks associated with its new agentic AI features, which could be exploited for malicious purposes like data exfiltration and malware deployment. Without proper security controls, these AI agents might autonomously perform harmful actions, posing a significant threat to systems and data integrity. This warning comes as AI capabilities become more integrated into enterprise applications, necessitating a reevaluation of security frameworks to include AI-specific risks. Organizations should implement strict access controls and continuous monitoring to mitigate potential threats posed by AI agents. This development highlights the need for comprehensive AI governance and security protocols.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/microsoft-highlights-security-risks-introduced-by-new-agentic-ai-feature/"
+        },
+        {
+            "date": "Nov 24 2025",
+            "title": "Microsoft Tests File Explorer Preloading in Windows 11 for Speed Boost",
+            "content": "Microsoft is experimenting with a new feature in Windows 11 that preloads File Explorer in the background to enhance performance. This optional feature aims to reduce launch times, providing a more seamless user experience. By preloading File Explorer, Microsoft seeks to address user complaints about sluggish performance when accessing files. This initiative is part of broader efforts to optimize Windows 11&#x27;s efficiency and responsiveness. Users interested in testing this feature can enable it through the Windows Insider Program. The move reflects Microsoft&#x27;s ongoing commitment to improving the usability and speed of its flagship operating system.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-file-explorer-preloading-for-faster-launches/"
         }
     ],
     "aiShorts": [
         {
-            "date": "Nov 22 2025",
-            "title": "Young Founder Leverages Unique Background to Disrupt Industrial Tech",
-            "content": "Young, a young entrepreneur, is making waves in Silicon Valley by turning perceived disadvantages into strengths. Despite initial skepticism from older industry executives, his age and unconventional path have become assets in the industrial tech sector. By bringing fresh perspectives and innovative ideas, Young is challenging traditional norms and driving change. This development is significant for AI professionals as it highlights the importance of diversity and new viewpoints in tech innovation. Young&#x27;s success story could inspire more young entrepreneurs to enter established industries, potentially accelerating technological advancement and adoption.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/21/how-this-founders-unlikely-path-to-silicon-valley-could-become-an-edge-in-industrial-tech/"
+            "date": "Nov 24 2025",
+            "title": "Momentic Secures $15M to Revolutionize Software Testing with AI",
+            "content": "AI-driven software testing startup Momentic has successfully raised $15 million in a Series A funding round, spearheaded by Standard Capital with additional investments from Dropbox Ventures and existing backers like Y Combinator. Momentic aims to automate the labor-intensive process of software testing, potentially reducing time-to-market for software products. By leveraging advanced machine learning models, the company seeks to enhance test coverage and accuracy while minimizing human intervention. This funding round highlights the growing interest in AI applications that streamline traditional IT processes. For software developers and IT leaders, adopting such AI solutions could lead to significant cost savings and efficiency gains in development cycles.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/24/momentic-raises-15m-to-automate-software-testing/"
         },
         {
-            "date": "Nov 21 2025",
-            "title": "Sierra Achieves $100M ARR, Reflecting AI Agents&#x27; Growing Market Acceptance",
-            "content": "Sierra, a startup founded by Bret Taylor, has reached an impressive $100 million annual recurring revenue in less than two years. This rapid growth underscores the increasing adoption of AI agents by enterprises, signaling a shift towards more automated and intelligent business operations. For AI professionals, this trend indicates a growing market demand for AI solutions that can enhance efficiency and decision-making processes. Sierra&#x27;s success exemplifies the potential for AI-driven startups to achieve significant market penetration quickly, influencing the competitive landscape and encouraging further innovation in AI technology.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/21/bret-taylors-sierra-reaches-100m-arr-in-under-two-years/"
+            "date": "Nov 24 2025",
+            "title": "APAC Firms Shift AI Workloads to Edge Amid Rising Inference Costs",
+            "content": "Enterprises across the Asia Pacific (APAC) region are increasingly moving AI infrastructure to edge computing environments as the cost of running AI inference operations surges. Despite rising AI investments, many companies report challenges in achieving expected returns due to inadequacies in traditional data center setups. Edge computing offers a solution by enabling faster, localized data processing, reducing latency, and lowering operational costs. This trend reflects a broader shift towards decentralized computing models to support real-time AI applications. IT leaders in the region should consider edge solutions to optimize performance and cost-effectiveness of AI deployments.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/enterprises-are-rethinking-ai-infrastructure-as-inference-costs-rise/"
+        },
+        {
+            "date": "Nov 24 2025",
+            "title": "Students Favor Traditional Essay Services Over AI Tools",
+            "content": "Despite the prevalence of generative AI tools like ChatGPT among students, traditional essay writing services remain popular. Surveys indicate that a third of U.S. college students use AI for writing tasks monthly, yet many still prefer human-driven services for quality and reliability. The rise of AI in education has sparked debates about academic integrity and the evolving role of technology in learning. As generative AI tools improve, educators and developers must address ethical concerns and ensure these technologies complement rather than replace traditional learning methods. Stakeholders should focus on integrating AI responsibly to enhance educational outcomes.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/4-best-essay-writing-websites-students-choose-over-ai/"
+        },
+        {
+            "date": "Nov 24 2025",
+            "title": "Alibaba&#x27;s Qwen AI Achieves 10 Million Downloads in Record Time",
+            "content": "Alibaba&#x27;s Qwen AI app has achieved over 10 million downloads within just seven days of its public beta release, surpassing early adoption rates of competitors like ChatGPT. This rapid uptake signals a significant shift in the AI market, driven by Qwen AI&#x27;s promise of advanced natural language processing capabilities tailored for diverse applications. The app&#x27;s success underscores Alibaba&#x27;s strategic push into AI, aiming to capture market share in a competitive landscape. For tech leaders and developers, Qwen AI&#x27;s growth trajectory offers insights into consumer demand for versatile AI solutions and the potential for innovation in AI-driven services.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/alibaba-qwen-ai-app-10-million-downloads/"
+        },
+        {
+            "date": "Nov 23 2025",
+            "title": "Insurers Seek Exclusion of AI Liabilities Citing Unquantifiable Risks",
+            "content": "Major insurers, including AIG and Great American, have approached U.S. regulators to exclude AI-related liabilities from corporate insurance policies. The complexity and opacity of AI models, often described as &quot;black boxes,&quot; pose significant challenges in risk assessment. This move reflects growing concerns about the unpredictability of AI outputs and their potential impact on businesses. For companies developing or deploying AI technologies, this development highlights the need for robust risk management strategies and transparent AI practices. Industry stakeholders should engage with insurers to develop frameworks that balance innovation with accountability in AI deployments.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/23/ai-is-too-risky-to-insure-say-people-whose-job-is-insuring-risk/"
         }
     ],
     "articles": {
