@@ -1,11 +1,11 @@
 // Auto-Generated Threat Intel (Multi-Vendor Dashboard)
-// Updated: 2025-11-24T15:04:38.416080+05:30 IST
+// Updated: 2025-11-24T16:03:17.678063+05:30 IST
 // Sources: OpenPhish, Malware Bazaar, Spamhaus DROP, CINS Army, Blocklist.de, Phishing Database
 // NOTE: Full IOC lists are stored in Cloudflare R2 and loaded on-demand
 
 window.threatIntelData = {
-    "lastUpdated": "2025-11-24T15:04:38.033891+05:30",
-    "lastUpdatedFormatted": "Nov 24, 2025 at 03:04 PM IST",
+    "lastUpdated": "2025-11-24T16:03:17.294313+05:30",
+    "lastUpdatedFormatted": "Nov 24, 2025 at 04:03 PM IST",
     "comparisonPeriod": "Nov 23 \u2013 Nov 24, 2025",
     "vendors": {
         "OpenPhish": {
@@ -34,33 +34,33 @@ window.threatIntelData = {
             "description": "Recent malware samples with hashes and URLs. Tracks active malware distribution from abuse.ch community.",
             "website": "https://bazaar.abuse.ch/",
             "updateFrequency": "Real-time",
-            "iocCount": 2749,
+            "iocCount": 2760,
             "r2Url": "https://thehgtech.com/ioc-data/malware-bazaar.json",
             "stats": {
-                "total": 2749,
-                "newInLastHour": 2749,
+                "total": 2760,
+                "newInLastHour": 2760,
                 "lastUpdate": "just now"
             },
             "types": [
                 "hash"
             ],
             "sampleIndicators": [
-                " \"e8ae1cb2b9e35fa2c2d4ceb80b6212557cd86d33c186ce479e1cfa8111da328d",
-                " \"c29f2629f46f4bb1def74c6062f76b133da532daf579e61305a9d0377e058cab",
-                " \"5dbd2eb31e67ba7409afeddab9469d7345653022ec75e01f6728abf692ab5f37",
-                " \"54cbfcc5637007872d92c9ab591712e82c65eb12222579600b85ea5a1425a0f8",
-                " \"6a18a2fdbd3a21a5af6781b84d85ce741bf8088b91e9fe1191174f6581964d20"
+                " \"67b037dbae35e5cf8e46e76ac2e395ddcd604d6f73d08da7a854d4032dfde8e7",
+                " \"83322f93f2b3489c9414317e11e66927d35475ba77a537c012180f3b55a85e1c",
+                " \"72bf080ea70de278d35c3213557eb34a04a4ca5b8399e890738ecd43423cb5f4",
+                " \"72d3af0d29f01286c1f8f399fef566c693d6d391df11a3f9a0a502b09e793c55",
+                " \"d50e3b0e68d1cb34fd73549d6e4cbc6433c3c50ad834ca9e30b29e4146e0defa"
             ]
         },
         "Spamhaus DROP": {
             "description": "Don't Route Or Peer - hijacked/leased IP ranges controlled by criminals. Industry-standard malicious IP blocklist.",
             "website": "https://www.spamhaus.org/",
             "updateFrequency": "Daily",
-            "iocCount": 1450,
+            "iocCount": 1449,
             "r2Url": "https://thehgtech.com/ioc-data/spamhaus-drop.json",
             "stats": {
-                "total": 1450,
-                "newInLastHour": 1450,
+                "total": 1449,
+                "newInLastHour": 1449,
                 "lastUpdate": "just now"
             },
             "types": [
@@ -100,11 +100,11 @@ window.threatIntelData = {
             "description": "IPs conducting SSH brute-force attacks. Community-reported attackers targeting SSH services.",
             "website": "https://www.blocklist.de/",
             "updateFrequency": "Hourly",
-            "iocCount": 6402,
+            "iocCount": 6341,
             "r2Url": "https://thehgtech.com/ioc-data/blocklist-de.json",
             "stats": {
-                "total": 6402,
-                "newInLastHour": 6402,
+                "total": 6341,
+                "newInLastHour": 6341,
                 "lastUpdate": "just now"
             },
             "types": [
@@ -181,8 +181,8 @@ window.threatIntelData = {
     "snapshotMetrics": {
         "topAttackVector": "Malicious URLs",
         "mostTargetedRegion": "North America",
-        "fastestRisingThreat": "No significant changes",
-        "totalAttacksThisHour": 1299314,
-        "lastCalculated": "2025-11-24 15:04 IST"
+        "fastestRisingThreat": " \"n/a",
+        "totalAttacksThisHour": 1299263,
+        "lastCalculated": "2025-11-24 16:03 IST"
     }
 };
