@@ -5,75 +5,103 @@ var websiteContent = {
     "cyberShorts": [
         {
             "date": "Nov 24 2025",
-            "title": "Harvard University Data Breach Exposes Sensitive Alumni Information",
-            "content": "Harvard University has revealed a data breach affecting its Alumni Affairs and Development systems due to a voice phishing attack. The breach compromised personal information of students, alumni, donors, staff, and faculty members. This incident highlights the vulnerability of educational institutions to sophisticated phishing techniques that can bypass traditional security measures. The attack underscores the importance of implementing robust multi-factor authentication and regular security training for all users. Affected individuals are advised to monitor their personal accounts for suspicious activity and consider identity protection services. This breach adds to the growing list of higher education institutions targeted by cybercriminals in recent years.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/harvard-university-discloses-data-breach-affecting-alumni-donors/"
+            "title": "Android TV Boxes Potentially Compromised in Botnet Scheme",
+            "content": "Security experts are raising alarms about the Superbox media streaming devices, which may be part of a botnet operation. These Android TV boxes, available at major retailers like BestBuy and Walmart, offer access to over 2,200 streaming services for a one-time fee, making them attractive to consumers. However, the devices are suspected of being compromised with malware that could enlist them into a botnet, potentially affecting thousands of users. This development highlights the ongoing issue of inadequately secured IoT devices being exploited for malicious purposes. Users of Superbox devices should monitor network activity for unusual behavior and consider alternative streaming solutions to mitigate risks.",
+            "source": "Krebs on Security",
+            "sourceUrl": "https://krebsonsecurity.com/2025/11/is-your-android-tv-streaming-box-part-of-a-botnet/"
         },
         {
             "date": "Nov 24 2025",
-            "title": "Ransomware Groups Target Amazon S3 Buckets in New Attack Wave",
-            "content": "A recent report from Trend Micro highlights a shift in ransomware tactics, with attackers increasingly targeting Amazon S3 cloud storage services. These ransomware groups are leveraging cloud-native encryption capabilities to lock organizations out of their data stored in S3 buckets. This change in focus from traditional local targets to cloud services indicates an evolving threat landscape for companies relying on cloud infrastructure. Organizations using Amazon S3 should ensure they have strong access controls, regular backups, and monitoring in place to detect unauthorized activities. The report serves as a warning for businesses to reassess their cloud security strategies in light of these new threats.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4095199/aws-s3-buckets-im-visier-von-ransomware-banden.html"
+            "title": "Amazon Black Friday Deals Offer Tech Gadgets Under $25",
+            "content": "Amazon has launched its Black Friday deals, featuring a range of tech gadgets priced under $25. This sale includes items that are typically popular year-round but are now available at significantly reduced prices. The promotion is part of Amazon&#x27;s strategy to attract budget-conscious consumers during the holiday shopping season. These deals provide an opportunity for tech enthusiasts to acquire useful gadgets without breaking the bank. Shoppers should act quickly, as these offers are likely to sell out fast due to high demand.",
+            "source": "Latest news",
+            "sourceUrl": "https://www.zdnet.com/article/these-10-amazon-black-friday-deals-are-so-good-theyre-downright-steals-and-all-under-25/"
         },
         {
             "date": "Nov 24 2025",
-            "title": "The Silent Toll of Cybersecurity on Mental Health",
-            "content": "A new report explores the mental health challenges faced by cybersecurity professionals, who often endure high-stress environments to stay ahead of persistent threats. The constant pressure to prevent breaches and respond to incidents can lead to burnout and psychological strain. This issue is compounded by the 24/7 nature of cybersecurity work, where attackers never rest, creating a relentless cycle for defenders. Companies are encouraged to implement mental health support systems and promote work-life balance to mitigate these effects. Addressing the mental health of cybersecurity staff is crucial for maintaining an effective security posture and retaining talent in the industry.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4094657/invisible-battles-how-cybersecurity-work-erodes-mental-health-in-silence-and-what-we-can-do-about-it.html"
+            "title": "Amazon&#x27;s Black Friday Discounts: Up to 60% Off on Tech Favorites",
+            "content": "Amazon is rolling out its Black Friday discounts early, featuring savings of up to 60% on popular tech items. Among the highlighted deals is the Oura Ring 4, now available at a 30% discount. These early deals underscore Amazon&#x27;s aggressive pricing strategy to capture consumer attention ahead of the official Black Friday date. The significant markdowns provide an excellent opportunity for consumers to purchase high-demand tech products at lower prices. Interested buyers should leverage these deals promptly as inventory might not last long.",
+            "source": "Latest news",
+            "sourceUrl": "https://www.zdnet.com/article/best-black-friday-amazon-deals-2025-live-now/"
         },
         {
             "date": "Nov 24 2025",
-            "title": "Microsoft Warns of Security Risks from New AI Agentic Features",
-            "content": "Microsoft has issued a warning about potential security risks associated with its new agentic AI features, which could be exploited for malicious purposes like data exfiltration and malware deployment. Without proper security controls, these AI agents might autonomously perform harmful actions, posing a significant threat to systems and data integrity. This warning comes as AI capabilities become more integrated into enterprise applications, necessitating a reevaluation of security frameworks to include AI-specific risks. Organizations should implement strict access controls and continuous monitoring to mitigate potential threats posed by AI agents. This development highlights the need for comprehensive AI governance and security protocols.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/microsoft-highlights-security-risks-introduced-by-new-agentic-ai-feature/"
+            "title": "Top Robot Vacuum Deals to Grab This Black Friday",
+            "content": "As Black Friday approaches, consumers can find substantial discounts on robot vacuums, with over 25 deals currently available. These discounts come from various manufacturers known for producing reliable and efficient cleaning devices. The promotions are part of a broader trend where tech companies leverage Black Friday to boost sales of smart home devices. For consumers interested in upgrading their home cleaning technology, this is an opportune time to invest in a robot vacuum. Buyers should evaluate the features and reviews of different models to select the best option for their needs.",
+            "source": "Latest news",
+            "sourceUrl": "https://www.zdnet.com/article/best-black-friday-robot-vacuum-deals-2025/"
         },
         {
             "date": "Nov 24 2025",
-            "title": "Microsoft Tests File Explorer Preloading in Windows 11 for Speed Boost",
-            "content": "Microsoft is experimenting with a new feature in Windows 11 that preloads File Explorer in the background to enhance performance. This optional feature aims to reduce launch times, providing a more seamless user experience. By preloading File Explorer, Microsoft seeks to address user complaints about sluggish performance when accessing files. This initiative is part of broader efforts to optimize Windows 11&#x27;s efficiency and responsiveness. Users interested in testing this feature can enable it through the Windows Insider Program. The move reflects Microsoft&#x27;s ongoing commitment to improving the usability and speed of its flagship operating system.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-file-explorer-preloading-for-faster-launches/"
+            "title": "Major Retailers Slash Prices on Tech for Black Friday 2025",
+            "content": "With Black Friday just around the corner, major retailers are offering significant discounts on a wide array of tech products, including TVs, laptops, and streaming devices. This year&#x27;s sales event promises to deliver some of the most competitive pricing seen in recent years, with over 60 deals already announced. The trend reflects the growing importance of Black Friday as a critical period for tech sales. Consumers looking to upgrade their tech setups should take advantage of these deals, which are designed to move inventory quickly. It&#x27;s advisable to compare prices across different retailers to ensure the best possible savings.",
+            "source": "Latest news",
+            "sourceUrl": "https://www.zdnet.com/article/best-black-friday-deals-2025/"
+        },
+        {
+            "date": "Nov 24 2025",
+            "title": "Sam&#x27;s Club Unveils Early Black Friday Discounts on Tech and Appliances",
+            "content": "Sam&#x27;s Club has launched its early Black Friday deals, offering over 30 discounts on tech products and household appliances. This early rollout is part of a strategy to capture early holiday shoppers and reduce the last-minute rush. The deals include significant reductions on laptops, TVs, and other electronics, appealing to both tech enthusiasts and everyday consumers. As competition among retailers intensifies, early access to discounts can provide a competitive edge. Shoppers should check Sam&#x27;s Club&#x27;s offerings and consider membership benefits for additional savings.",
+            "source": "Latest news",
+            "sourceUrl": "https://www.zdnet.com/article/best-black-friday-sams-club-deals-2025/"
+        },
+        {
+            "date": "Nov 24 2025",
+            "title": "Target&#x27;s Black Friday Tech Deals Now Available",
+            "content": "Target has unveiled its Black Friday deals on tech gadgets, with over 15 discounts available during Cyber Week. The promotions include a variety of popular electronic devices, catering to the needs of tech-savvy consumers preparing for the holiday season. This initiative is part of Target&#x27;s broader strategy to enhance its competitive positioning in the retail market. Consumers are encouraged to explore these deals early, as high demand could lead to rapid sellouts. It&#x27;s a prime opportunity for buyers to secure tech gifts or personal upgrades at reduced prices.",
+            "source": "Latest news",
+            "sourceUrl": "https://www.zdnet.com/article/best-black-friday-target-deals-2025/"
         }
     ],
     "aiShorts": [
         {
             "date": "Nov 24 2025",
-            "title": "Momentic Secures $15M to Revolutionize Software Testing with AI",
-            "content": "AI-driven software testing startup Momentic has successfully raised $15 million in a Series A funding round, spearheaded by Standard Capital with additional investments from Dropbox Ventures and existing backers like Y Combinator. Momentic aims to automate the labor-intensive process of software testing, potentially reducing time-to-market for software products. By leveraging advanced machine learning models, the company seeks to enhance test coverage and accuracy while minimizing human intervention. This funding round highlights the growing interest in AI applications that streamline traditional IT processes. For software developers and IT leaders, adopting such AI solutions could lead to significant cost savings and efficiency gains in development cycles.",
+            "title": "The Rise of Chatbot Companions Sparks Privacy Concerns",
+            "content": "The increasing integration of chatbot companions in daily life is raising significant privacy concerns, as highlighted in a recent discussion by MIT Technology Review and the Financial Times. These AI-driven chatbots, designed for personal interaction, are becoming more sophisticated, storing vast amounts of personal data. This trend poses risks related to data security and user privacy, as these systems often lack robust safeguards. Professionals in the field are urged to prioritize privacy-by-design principles and ensure transparency in data handling. As the adoption of AI chatbots accelerates, understanding their implications on privacy is crucial for developers and tech leaders.",
+            "source": "MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2025/11/24/1128051/the-state-of-ai-chatbot-companions-and-the-future-of-our-privacy/"
+        },
+        {
+            "date": "Nov 24 2025",
+            "title": "AlphaFold&#x27;s Future Explored in DeepMind Interview with Nobel Laureate",
+            "content": "John Jumper, a key figure behind DeepMind&#x27;s AlphaFold, discussed the groundbreaking AI&#x27;s next steps in a recent interview. Initially developed to predict protein structures, AlphaFold has revolutionized computational biology and now aims to tackle more complex biological challenges. The AI&#x27;s ability to predict protein folding with high accuracy has significant implications for drug discovery and disease research. As AlphaFold continues to evolve, its impact on the scientific community and biotechnology sector is expected to grow. Researchers and developers should monitor these advancements to leverage AlphaFold&#x27;s potential in their own projects.",
+            "source": "MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2025/11/24/1128322/whats-next-for-alphafold-a-conversation-with-a-google-deepmind-nobel-laureate/"
+        },
+        {
+            "date": "Nov 24 2025",
+            "title": "New AI Benchmark Focuses on Human Wellbeing in Chatbots",
+            "content": "TechCrunch reports on the introduction of Humane Bench, a novel AI benchmark designed to evaluate chatbots&#x27; impact on human wellbeing. Unlike traditional benchmarks that assess intelligence and task performance, Humane Bench prioritizes psychological safety and user attention. This shift reflects a growing awareness of the ethical and societal implications of AI technologies. Developers are encouraged to adopt these new standards to ensure their AI systems promote human flourishing. As AI becomes more integrated into daily life, aligning technology with human values is essential for sustainable progress.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/24/momentic-raises-15m-to-automate-software-testing/"
+            "sourceUrl": "https://techcrunch.com/2025/11/24/a-new-ai-benchmark-tests-whether-chatbots-protect-human-wellbeing/"
         },
         {
             "date": "Nov 24 2025",
-            "title": "APAC Firms Shift AI Workloads to Edge Amid Rising Inference Costs",
-            "content": "Enterprises across the Asia Pacific (APAC) region are increasingly moving AI infrastructure to edge computing environments as the cost of running AI inference operations surges. Despite rising AI investments, many companies report challenges in achieving expected returns due to inadequacies in traditional data center setups. Edge computing offers a solution by enabling faster, localized data processing, reducing latency, and lowering operational costs. This trend reflects a broader shift towards decentralized computing models to support real-time AI applications. IT leaders in the region should consider edge solutions to optimize performance and cost-effectiveness of AI deployments.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/enterprises-are-rethinking-ai-infrastructure-as-inference-costs-rise/"
-        },
-        {
-            "date": "Nov 24 2025",
-            "title": "Students Favor Traditional Essay Services Over AI Tools",
-            "content": "Despite the prevalence of generative AI tools like ChatGPT among students, traditional essay writing services remain popular. Surveys indicate that a third of U.S. college students use AI for writing tasks monthly, yet many still prefer human-driven services for quality and reliability. The rise of AI in education has sparked debates about academic integrity and the evolving role of technology in learning. As generative AI tools improve, educators and developers must address ethical concerns and ensure these technologies complement rather than replace traditional learning methods. Stakeholders should focus on integrating AI responsibly to enhance educational outcomes.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/4-best-essay-writing-websites-students-choose-over-ai/"
-        },
-        {
-            "date": "Nov 24 2025",
-            "title": "Alibaba&#x27;s Qwen AI Achieves 10 Million Downloads in Record Time",
-            "content": "Alibaba&#x27;s Qwen AI app has achieved over 10 million downloads within just seven days of its public beta release, surpassing early adoption rates of competitors like ChatGPT. This rapid uptake signals a significant shift in the AI market, driven by Qwen AI&#x27;s promise of advanced natural language processing capabilities tailored for diverse applications. The app&#x27;s success underscores Alibaba&#x27;s strategic push into AI, aiming to capture market share in a competitive landscape. For tech leaders and developers, Qwen AI&#x27;s growth trajectory offers insights into consumer demand for versatile AI solutions and the potential for innovation in AI-driven services.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/alibaba-qwen-ai-app-10-million-downloads/"
-        },
-        {
-            "date": "Nov 23 2025",
-            "title": "Insurers Seek Exclusion of AI Liabilities Citing Unquantifiable Risks",
-            "content": "Major insurers, including AIG and Great American, have approached U.S. regulators to exclude AI-related liabilities from corporate insurance policies. The complexity and opacity of AI models, often described as &quot;black boxes,&quot; pose significant challenges in risk assessment. This move reflects growing concerns about the unpredictability of AI outputs and their potential impact on businesses. For companies developing or deploying AI technologies, this development highlights the need for robust risk management strategies and transparent AI practices. Industry stakeholders should engage with insurers to develop frameworks that balance innovation with accountability in AI deployments.",
+            "title": "Former MrBeast Strategist Develops AI Tool for Content Creators",
+            "content": "A former strategist for YouTube star MrBeast is launching Palo, an AI-driven tool aimed at enhancing the ideation and analytics capabilities of short-video creators. Palo provides insights into content performance, helping creators understand what resonates with audiences. This tool leverages AI to analyze trends and optimize content strategy, offering a competitive edge in the fast-paced digital media landscape. Content creators and marketers should consider integrating AI tools like Palo to refine their approach and maximize engagement. The rise of AI in content creation underscores the need for data-driven decision-making in digital strategy.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/23/ai-is-too-risky-to-insure-say-people-whose-job-is-insuring-risk/"
+            "sourceUrl": "https://techcrunch.com/2025/11/24/former-mrbeast-content-strategist-is-building-an-ai-tool-for-creator-ideation-and-analytics/"
+        },
+        {
+            "date": "Nov 24 2025",
+            "title": "Google Plans 1000x Expansion of AI Infrastructure",
+            "content": "Google has announced plans to increase its AI infrastructure capacity by 1000 times over the next four to five years. This ambitious expansion, disclosed by Amin Vahdat, head of Google&#x27;s AI infrastructure, involves doubling server capacity every six months to meet growing AI demands. The initiative highlights the escalating need for computational power to support advanced AI models and applications. Companies relying on Google&#x27;s cloud services should prepare for enhanced capabilities and potential cost implications. The expansion reflects the broader trend of scaling infrastructure to accommodate AI&#x27;s rapid evolution.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/google-commits-to-1000x-more-ai-infrastructure-in-next-4-5-years/"
+        },
+        {
+            "date": "Nov 24 2025",
+            "title": "Europe&#x27;s AI Potential Could Boost Economy by Trillions",
+            "content": "Europe stands on the brink of a €1.2 trillion economic boost through strategic AI development, according to a recent report. Despite often being overshadowed by the US and China, Europe possesses the talent and resources necessary to lead in AI innovation. By harnessing this potential, Europe could significantly enhance its economic standing and technological influence. Policymakers and industry leaders are urged to invest in AI education and infrastructure to capitalize on this opportunity. The focus on AI underscores its critical role in shaping future economic landscapes.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/how-europe-talent-can-secure-trillion-euro-ai-economic-injection/"
+        },
+        {
+            "date": "Nov 24 2025",
+            "title": "Avoiding the Pitfalls of Becoming an AI-First Company Without Substance",
+            "content": "VentureBeat highlights the challenges companies face when declaring an &quot;AI-first&quot; strategy without meaningful AI integration. Such declarations often stem from top-down mandates without clear implementation plans, leading to superficial AI adoption. To avoid this, organizations should focus on identifying specific areas where AI can add value and invest in the necessary skills and technologies. This approach ensures that AI initiatives are both strategic and effective. Tech leaders must balance ambition with practicality to achieve genuine AI transformation, avoiding the trap of AI in name only.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/ai/how-to-avoid-becoming-an-ai-first-company-with-zero-real-ai-usage"
         }
     ],
     "articles": {
@@ -358,7 +386,8 @@ var websiteContent = {
             "score": "HIGH",
             "status": "Confirmed",
             "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61757"
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61757",
+            "isZeroDay": false
         },
         {
             "cveId": "CVE-2025-13223",
@@ -368,7 +397,8 @@ var websiteContent = {
             "score": "HIGH",
             "status": "Confirmed",
             "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-13223"
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-13223",
+            "isZeroDay": false
         },
         {
             "cveId": "CVE-2025-58034",
@@ -378,7 +408,8 @@ var websiteContent = {
             "score": "HIGH",
             "status": "Confirmed",
             "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-58034"
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-58034",
+            "isZeroDay": false
         }
     ],
     "featureCards": []
