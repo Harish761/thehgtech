@@ -1,11 +1,11 @@
 // Auto-Generated Threat Intel (Multi-Vendor Dashboard)
-// Updated: 2025-11-25T14:02:30.740996+05:30 IST
+// Updated: 2025-11-25T14:03:42.668812+05:30 IST
 // Sources: OpenPhish, Malware Bazaar, Spamhaus DROP, CINS Army, Blocklist.de
 // NOTE: Full IOC lists are stored in Cloudflare R2 and loaded on-demand
 
 window.threatIntelData = {
-    "lastUpdated": "2025-11-25T14:02:30.740027+05:30",
-    "lastUpdatedFormatted": "Nov 25, 2025 at 02:02 PM IST",
+    "lastUpdated": "2025-11-25T14:03:42.667869+05:30",
+    "lastUpdatedFormatted": "Nov 25, 2025 at 02:03 PM IST",
     "comparisonPeriod": "Nov 24 \u2013 Nov 25, 2025",
     "vendors": {
         "OpenPhish": {
@@ -121,6 +121,6 @@ window.threatIntelData = {
         "mostTargetedRegion": "Global",
         "fastestRisingThreat": "No significant changes",
         "totalAttacksThisHour": 0,
-        "lastCalculated": "2025-11-25 14:02 IST"
+        "lastCalculated": "2025-11-25 14:03 IST"
     }
 };
