@@ -141,7 +141,7 @@ def fetch_vendor_iocs(vendor_name, config):
             if vendor_name == "OpenPhish" or vendor_name == "Phishing Database":
                 for line in clean_lines:
                     if line.startswith('http'):
-                        iocs.append(parse_phishing_url(line, now, config, vendor_name))
+                        iocs.append(parse_phishing_url(line, now, config, vendor_name, ioc_history))
             
             elif vendor_name == "Spamhaus DROP":
                 for line in clean_lines:
@@ -149,17 +149,17 @@ def fetch_vendor_iocs(vendor_name, config):
                     if line and not line.startswith(';'):
                         parts = line.split(';')
                         if parts and '/' in parts[0]:  # CIDR notation
-                            iocs.append(parse_spamhaus(parts[0].strip(), now, config, vendor_name))
+                            iocs.append(parse_spamhaus(parts[0].strip(), now, config, vendor_name, ioc_history))
             
             elif vendor_name == "CINS Army":
                 for line in clean_lines:
                     if re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$', line):
-                        iocs.append(parse_cins_army(line, now, config, vendor_name))
+                        iocs.append(parse_cins_army(line, now, config, vendor_name, ioc_history))
             
             elif vendor_name == "Blocklist.de":
                 for line in clean_lines:
                     if re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$', line):
-                        iocs.append(parse_blocklist(line, now, config, vendor_name))
+                        iocs.append(parse_blocklist(line, now, config, vendor_name, ioc_history))
         
         elif config["type"] == "csv":
             # Malware Bazaar CSV format
@@ -170,7 +170,7 @@ def fetch_vendor_iocs(vendor_name, config):
             for line in lines[9:]:  # Skip 9-line header
                 if line.startswith('#') or not line.strip():
                     continue
-                ioc = parse_malware_bazaar(line, now, config, vendor_name)
+                ioc = parse_malware_bazaar(line, now, config, vendor_name, ioc_history)
                 if ioc:
                     iocs.append(ioc)
         
@@ -194,7 +194,7 @@ def fetch_vendor_iocs(vendor_name, config):
     
     return iocs
 
-def parse_phishing_url(url, now, config, vendor):
+def parse_phishing_url(url, now, config, vendor, ioc_history):
     """Parse phishing URL (OpenPhish or Phishing Database)"""
     return {
         'type': 'url',
@@ -205,11 +205,11 @@ def parse_phishing_url(url, now, config, vendor):
         'sourceUrl': config['website'],
         'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
         'tags': ['phishing', 'live'],
-        'addedAt': get_added_at(url),
+        'addedAt': ioc_history.get(url, now.isoformat()),
         'campaign': detect_campaign(url, 'phishing')
     }
 
-def parse_malware_bazaar(csv_line, now, config, vendor):
+def parse_malware_bazaar(csv_line, now, config, vendor, ioc_history):
     """Parse Malware Bazaar CSV line"""
     try:
         parts = csv_line.split(',')
@@ -233,28 +233,28 @@ def parse_malware_bazaar(csv_line, now, config, vendor):
             'sourceUrl': config['website'],
             'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
             'tags': ['malware', 'hash'],
-            'addedAt': get_added_at(sha256),
+            'addedAt': ioc_history.get(sha256, now.isoformat()),
             'campaign': signature
         }
     except Exception as e:
         return None
 
-def parse_spamhaus(cidr, now, config, vendor):
+def parse_spamhaus(ip_range, now, config, vendor, ioc_history):
     """Parse Spamhaus DROP CIDR range"""
     return {
         'type': 'ip-range',
-        'indicator': cidr,
+        'indicator': ip_range,
         'description': 'Hijacked/leased IP range (criminal control)',
         'timestamp': format_timestamp(now),
         'source': vendor,
         'sourceUrl': config['website'],
         'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
         'tags': ['hijacked', 'criminal-network'],
-        'addedAt': get_added_at(ip_range),
+        'addedAt': ioc_history.get(ip_range, now.isoformat()),
         'campaign': 'Spamhaus DROP List'
     }
 
-def parse_cins_army(ip, now, config, vendor):
+def parse_cins_army(ip, now, config, vendor, ioc_history):
     """Parse CINS Army malicious IP"""
     return {
         'type': 'ip',
@@ -265,11 +265,11 @@ def parse_cins_army(ip, now, config, vendor):
         'sourceUrl': config['website'],
         'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
         'tags': ['malicious-ip', 'attacker'],
-        'addedAt': get_added_at(ip),
+        'addedAt': ioc_history.get(ip, now.isoformat()),
         'campaign': 'CINS Threat List'
     }
 
-def parse_blocklist(ip, now, config, vendor):
+def parse_blocklist(ip, now, config, vendor, ioc_history):
     """Parse Blocklist.de IP"""
     return {
         'type': 'ip',
@@ -280,7 +280,7 @@ def parse_blocklist(ip, now, config, vendor):
         'sourceUrl': config['website'],
         'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
         'tags': ['brute-force', 'ssh'],
-        'addedAt': get_added_at(ip),
+        'addedAt': ioc_history.get(ip, now.isoformat()),
         'campaign': 'SSH Attacks'
     }
 
