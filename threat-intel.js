@@ -1,11 +1,11 @@
 // Auto-Generated Threat Intel (Multi-Vendor Dashboard)
-// Updated: 2025-11-25T15:58:54.643319+05:30 IST
+// Updated: 2025-11-25T18:20:59.953176+05:30 IST
 // Sources: OpenPhish, Malware Bazaar, Spamhaus DROP, CINS Army, Blocklist.de
 // NOTE: Full IOC lists are stored in Cloudflare R2 and loaded on-demand
 
 window.threatIntelData = {
-    "lastUpdated": "2025-11-25T15:58:54.637667+05:30",
-    "lastUpdatedFormatted": "Nov 25, 2025 at 03:58 PM IST",
+    "lastUpdated": "2025-11-25T18:20:59.946794+05:30",
+    "lastUpdatedFormatted": "Nov 25, 2025 at 06:20 PM IST",
     "comparisonPeriod": "Nov 24 \u2013 Nov 25, 2025",
     "vendors": {
         "OpenPhish": {
@@ -23,44 +23,44 @@ window.threatIntelData = {
                 "url"
             ],
             "sampleIndicators": [
-                "hxxps://www[.]fs[.]hidravitalis[.]com/",
-                "hxxps://0426f7e[.]netsolhost[.]com/netsolutions[.]html",
-                "hxxps://bigthinkcapitals[.]biz/",
-                "hxxps://sachinbhauryal[.]github[.]io/Netflix_clone/",
-                "hxxp://sso--robinhood-com--aauthh[.]webflow[.]io/"
+                "hxxps://feiraolimpabrasil-afk[.]github[.]io/comecar/inicio/",
+                "hxxp://platform-usage-policies-and-accountability[.]pages[.]dev/",
+                "hxxp://platform-terms-and-accountability[.]pages[.]dev/",
+                "hxxp://live-mingiftin11[.]vercel[.]app/",
+                "hxxp://ondoislucky[.]com/wp-includes/cgi-ent/newwwaluzzyyyy[.]html"
             ]
         },
         "Malware Bazaar": {
             "description": "Recent malware samples with hashes and URLs. Tracks active malware distribution from abuse.ch community.",
             "website": "https://bazaar.abuse.ch/",
             "updateFrequency": "Real-time",
-            "iocCount": 1308,
+            "iocCount": 746,
             "r2Url": "https://thehgtech.com/ioc-data/malware-bazaar.json",
             "stats": {
-                "total": 1308,
-                "newInLastHour": 58,
+                "total": 746,
+                "newInLastHour": 28,
                 "lastUpdate": "just now"
             },
             "types": [
                 "hash"
             ],
             "sampleIndicators": [
-                " \"564563a318299291112c4a7679ef142132c0ba3688f9e1f7a7a3a813014d5267",
-                " \"12c343251c6d0c84148c3200aa347d917890302e23d245ad1c6ed76c85de70cd",
-                " \"0dc402ffa991f2119918edb5806450ceb51e8293e7bd67570f7fe87866dbeeef",
-                " \"5cf3923746a70cb2d2900de82774017bced5875185e49057839ee3985091f47e",
-                " \"be707c76f6113af36533ec59b50c72b545a9c43c6cf6cc07492449efeefcf02f"
+                " \"6fa2d60677477e0f48707a1f4c90bf871f41327c1f85369bcf7ef2729d94fe99",
+                " \"5b8b5bd3a52253dcc76ab78ae410cb5edc76f65506ab49446287f20139dfb59b",
+                " \"6fd99f61a7ad7f883e14d98990c6438b23e85b510296a8aaa65399c166bb16dd",
+                " \"da59569cf8855d3e4097975838da2969600f1b4489cc8215f856be4d87051133",
+                " \"302d786a68d133ca0d767590c241f6cd2b305070a3d0e2d2498ddffdedd10fa6"
             ]
         },
         "Spamhaus DROP": {
             "description": "Don't Route Or Peer - hijacked/leased IP ranges controlled by criminals. Industry-standard malicious IP blocklist.",
             "website": "https://www.spamhaus.org/",
             "updateFrequency": "Daily",
-            "iocCount": 1449,
+            "iocCount": 1446,
             "r2Url": "https://thehgtech.com/ioc-data/spamhaus-drop.json",
             "stats": {
-                "total": 1449,
-                "newInLastHour": 1,
+                "total": 1446,
+                "newInLastHour": 0,
                 "lastUpdate": "just now"
             },
             "types": [
@@ -92,19 +92,19 @@ window.threatIntelData = {
                 "1[.]13[.]197[.]76",
                 "1[.]15[.]118[.]23",
                 "1[.]172[.]234[.]138",
-                "1[.]181[.]69[.]174",
-                "1[.]212[.]55[.]221"
+                "1[.]176[.]134[.]238",
+                "1[.]181[.]69[.]174"
             ]
         },
         "Blocklist.de": {
             "description": "IPs conducting SSH brute-force attacks. Community-reported attackers targeting SSH services.",
             "website": "https://www.blocklist.de/",
             "updateFrequency": "Hourly",
-            "iocCount": 4040,
+            "iocCount": 4385,
             "r2Url": "https://thehgtech.com/ioc-data/blocklist-de.json",
             "stats": {
-                "total": 4040,
-                "newInLastHour": 4040,
+                "total": 4385,
+                "newInLastHour": 4385,
                 "lastUpdate": "just now"
             },
             "types": [
@@ -159,8 +159,8 @@ window.threatIntelData = {
     "snapshotMetrics": {
         "topAttackVector": "Malicious IPs",
         "mostTargetedRegion": "North America",
-        "fastestRisingThreat": " \"OceanLotus",
-        "totalAttacksThisHour": 19399,
-        "lastCalculated": "2025-11-25 15:58 IST"
+        "fastestRisingThreat": "SSH Attacks",
+        "totalAttacksThisHour": 19713,
+        "lastCalculated": "2025-11-25 18:20 IST"
     }
 };
