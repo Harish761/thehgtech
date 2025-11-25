@@ -9,12 +9,13 @@
     }
   },
   "previous_hour_campaigns": {
-    "Generic Phishing": 1231555,
+    "Generic Phishing": 300,
+    " \"n/a": 764,
+    " \"AgentTesla": 11,
     " \"AsyncRAT": 8,
     " \"DarkTortilla": 1,
     " \"Mirai": 295,
     " \"Grandoreiro": 1,
-    " \"n/a": 763,
     " \"SalatStealer": 9,
     " \"Adware.IObit": 1,
     " \"Socks5Systemz": 4,
@@ -26,7 +27,6 @@
     " \"a310Logger": 5,
     " \"Formbook": 15,
     " \"SnakeKeylogger": 3,
-    " \"AgentTesla": 10,
     " \"VIPKeylogger": 2,
     " \"RedLineStealer": 13,
     " \"CoinMiner": 28,
@@ -49,7 +49,7 @@
     " \"DBatLoader": 1,
     " \"Loki": 1,
     " \"Vjw0rm": 1,
-    " \"DCRat": 5,
+    " \"DCRat": 4,
     " \"PureLogsStealer": 3,
     " \"DonutLoader": 4,
     " \"Gamaredon": 11,
@@ -87,14 +87,7 @@
     " \"Kamasers": 1,
     "Spamhaus DROP List": 1448,
     "CINS Threat List": 15000,
-    "SSH Attacks": 5162,
-    "Financial Phishing": 41239,
-    "Booking.com Phishing": 866,
-    "Raccoon": 8,
-    "Emotet": 4,
-    "Redline": 18,
-    "Vidar": 21,
-    "Njrat": 2
+    "SSH Attacks": 5051
   },
   "dailySnapshots": [
     {
