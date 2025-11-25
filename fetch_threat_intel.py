@@ -104,13 +104,6 @@ VENDORS = {
         "description": "IPs conducting SSH brute-force attacks. Community-reported attackers targeting SSH services.",
         "website": "https://www.blocklist.de/",
         "updateFrequency": "Hourly"
-    },
-    "Phishing Database": {
-        "url": "https://raw.githubusercontent.com/mitchellkrogza/Phishing.Database/master/phishing-links-ACTIVE.txt",
-        "type": "text",
-        "description": "Large database of active phishing URLs. Complements OpenPhish with additional phishing site coverage.",
-        "website": "https://github.com/mitchellkrogza/Phishing.Database",
-        "updateFrequency": "Hourly"
     }
 }
 

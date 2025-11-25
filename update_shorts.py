@@ -629,8 +629,8 @@ def fetch_cisa_cves():
         # Sort by date (newest first)
         recent_cves.sort(key=lambda x: x['dateAdded'], reverse=True)
         
-        # Limit to top 10 most recent
-        return recent_cves[:10]
+        # Limit to top 20 most recent
+        return recent_cves[:20]
         
     except requests.exceptions.RequestException as e:
         print(f"   ⚠️ Error fetching CISA CVEs: {e}")
