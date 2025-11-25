@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Security Guides & Tutorials | TheHGTech</title>
+    <meta name="title" content="Security Guides & Tutorials | TheHGTech">
+    <meta name="description"
+        content="Comprehensive guides on cybersecurity, threat intelligence, vulnerability management, and security operations. Learn from expert tutorials and best practices.">
+    <meta name="keywords"
+        content="security guides, cybersecurity tutorials, threat intelligence guides, vulnerability management, SOC guides, security best practices">
+    <meta name="author" content="TheHGTech">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thehgtech.com/guides/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thehgtech.com/guides/">
+    <meta property="og:title" content="Security Guides & Tutorials | TheHGTech">
+    <meta property="og:description" content="Expert cybersecurity guides and tutorials for security professionals.">
+    <meta property="og:image" content="https://thehgtech.com/images/guides-og.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://thehgtech.com/guides/">
+    <meta name="twitter:title" content="Security Guides & Tutorials">
+    <meta name="twitter:description" content="Expert cybersecurity guides and tutorials.">
+    <meta name="twitter:image" content="https://thehgtech.com/images/guides-twitter.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF4C4C;
+            --glow-cyan: rgba(0, 217, 255, 0.5);
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+            --glass: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Header */
+        header {
+            padding: 3rem 0;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+        }
+
+        .breadcrumb {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .breadcrumb a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .breadcrumb a:hover {
+            color: var(--glow-cyan);
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 3rem;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-red));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Guides Grid */
+        .guides-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .guide-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .guide-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-cyan);
+            box-shadow: 0 10px 30px var(--glow-cyan);
+        }
+
+        .guide-tag {
+            display: inline-block;
+            padding: 0.3rem 0.8rem;
+            background: rgba(0, 217, 255, 0.1);
+            color: var(--accent-cyan);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .guide-card h2 {
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .guide-card p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .guide-meta {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        .guide-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .read-more {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: gap 0.3s;
+        }
+
+        .read-more:hover {
+            gap: 1rem;
+        }
+
+        /* Coming Soon */
+        .coming-soon {
+            opacity: 0.6;
+            pointer-events: none;
+        }
+
+        .coming-soon-badge {
+            background: rgba(255, 76, 76, 0.1);
+            color: var(--accent-red);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .guides-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="breadcrumb">
+                <a href="/">Home</a> / Guides
+            </div>
+            <h1>Security Guides & Tutorials</h1>
+            <p class="subtitle">
+                Expert guides on cybersecurity, threat intelligence, and security operations
+            </p>
+        </header>
+
+        <div class="guides-grid">
+            <!-- CISA KEV Guide -->
+            <a href="/guides/cisa-kev-tracker.html" style="text-decoration: none;">
+                <div class="guide-card">
+                    <span class="guide-tag">Vulnerability Management</span>
+                    <h2>CISA KEV Tracker Guide</h2>
+                    <p>
+                        Complete guide to tracking CISA Known Exploited Vulnerabilities. Learn how to monitor actively
+                        exploited CVEs and prioritize patching.
+                    </p>
+                    <div class="guide-meta">
+                        <span>📖 7 min read</span>
+                        <span>🎯 Beginner</span>
+                    </div>
+                    <span class="read-more">Read Guide →</span>
+                </div>
+            </a>
+
+            <!-- Coming Soon Guides -->
+            <div class="guide-card coming-soon">
+                <span class="guide-tag coming-soon-badge">Coming Soon</span>
+                <h2>Threat Intelligence for SOC Analysts</h2>
+                <p>
+                    Learn how to leverage threat intelligence feeds for security operations and incident response.
+                </p>
+                <div class="guide-meta">
+                    <span>📖 10 min read</span>
+                    <span>🎯 Intermediate</span>
+                </div>
+                <span class="read-more">Coming Soon</span>
+            </div>
+
+            <div class="guide-card coming-soon">
+                <span class="guide-tag coming-soon-badge">Coming Soon</span>
+                <h2>OpenPhish Feed Integration</h2>
+                <p>
+                    Deep dive into OpenPhish phishing URL feeds and how to integrate them into your security stack.
+                </p>
+                <div class="guide-meta">
+                    <span>📖 8 min read</span>
+                    <span>🎯 Advanced</span>
+                </div>
+                <span class="read-more">Coming Soon</span>
+            </div>
+
+            <div class="guide-card coming-soon">
+                <span class="guide-tag coming-soon-badge">Coming Soon</span>
+                <h2>Malware Hash Analysis</h2>
+                <p>
+                    Learn how to search and analyze malware hashes using threat intelligence databases.
+                </p>
+                <div class="guide-meta">
+                    <span>📖 12 min read</span>
+                    <span>🎯 Intermediate</span>
+                </div>
+                <span class="read-more">Coming Soon</span>
+            </div>
+
+            <div class="guide-card coming-soon">
+                <span class="guide-tag coming-soon-badge">Coming Soon</span>
+                <h2>Zero-Day Detection Methods</h2>
+                <p>
+                    Technical guide on detecting and responding to zero-day vulnerabilities in your environment.
+                </p>
+                <div class="guide-meta">
+                    <span>📖 15 min read</span>
+                    <span>🎯 Advanced</span>
+                </div>
+                <span class="read-more">Coming Soon</span>
+            </div>
+
+            <div class="guide-card coming-soon">
+                <span class="guide-tag coming-soon-badge">Coming Soon</span>
+                <h2>Threat Intelligence Feeds Comparison</h2>
+                <p>
+                    Compare different threat intelligence feeds and choose the right ones for your organization.
+                </p>
+                <div class="guide-meta">
+                    <span>📖 10 min read</span>
+                    <span>🎯 Beginner</span>
+                </div>
+                <span class="read-more">Coming Soon</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
