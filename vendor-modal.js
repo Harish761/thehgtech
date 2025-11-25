@@ -98,11 +98,12 @@ async function openVendorModal(vendorName) {
                 style="padding: 0.6rem 1.2rem; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(0, 217, 255, 0.3); border-radius: 8px; color: var(--text-primary); font-weight: 600; cursor: pointer; font-size: 0.9rem; transition: all 0.3s; display: flex; align-items: center; gap: 0.5rem;"
                 onmouseover="this.style.background='rgba(0, 217, 255, 0.1)'; this.style.borderColor='rgba(0, 217, 255, 0.5)';"
                 onmouseout="this.style.background='rgba(255, 255, 255, 0.05)'; this.style.borderColor='rgba(0, 217, 255, 0.3)';">
-                <span>📥</span> Export JSON
+                <span>📥</span> Export Filtered JSON
             </button>
         </div>
     `;
-    let html = cappingNotice + exportButtons;
+
+    let html = cappingNotice + filterControls + exportButtons;
     data.iocs.forEach((ioc) => {
         // Format timestamp - use addedAt if available, otherwise timestamp
         const timeStr = ioc.addedAt || ioc.timestamp;
@@ -135,7 +136,15 @@ async function openVendorModal(vendorName) {
             displayTime = 'just now';
         }
 
-        html += `<div class="modal-stat-item vendor-ioc-item" data-indicator="${ioc.indicator}" data-type="${ioc.type}"
+        // Store filter data as data attributes
+        const tagsStr = (ioc.tags || []).join(',');
+        const addedAtStr = ioc.addedAt || ioc.timestamp || '';
+
+        html += `<div class="modal-stat-item vendor-ioc-item" 
+            data-indicator="${ioc.indicator}" 
+            data-type="${ioc.type}"
+            data-tags="${tagsStr}"
+            data-added-at="${addedAtStr}"
             style="padding: 1rem; background: rgba(255, 255, 255, 0.02); border-radius: 8px; margin-bottom: 0.75rem; cursor: pointer; transition: all 0.2s ease; border-left: 3px solid var(--accent-cyan);"
             onmouseover="this.style.background='rgba(0, 217, 255, 0.1)'" 
             onmouseout="this.style.background='rgba(255, 255, 255, 0.02)'"
@@ -144,6 +153,7 @@ async function openVendorModal(vendorName) {
             <div style="color: var(--text-muted); font-size: 0.85rem;">
                 <span style="color: var(--accent-cyan);">Type:</span> ${ioc.type} | 
                 <span style="color: var(--accent-cyan);">Added:</span> ${displayTime}
+                ${tagsStr ? ` | <span style="color: var(--accent-cyan);">Tags:</span> ${tagsStr}` : ''}
             </div>
         </div>`;
     });
@@ -185,6 +195,106 @@ function filterVendorModal() {
     } else {
         countDiv.textContent = `Showing ${totalCount} IOCs`;
     }
+}
+
+// Apply advanced filters (Time + Type + Tags) with AND logic
+function applyVendorFilters() {
+    const timeFilter = document.getElementById('timeFilter')?.value || 'all';
+    const typeFilter = document.getElementById('typeFilter')?.value || 'all';
+    const tagFilter = document.getElementById('tagFilter')?.value || 'all';
+    const searchInput = document.getElementById('vendorModalSearch');
+    const searchTerm = searchInput?.value.toLowerCase() || '';
+
+    const content = document.getElementById('vendorModalContent');
+    const countDiv = document.getElementById('vendorModalCount');
+    const items = content.querySelectorAll('.vendor-ioc-item');
+    const totalCount = items.length;
+    let visibleCount = 0;
+
+    // Calculate time threshold
+    let timeThreshold = null;
+    if (timeFilter !== 'all') {
+        const now = new Date();
+        const thresholds = {
+            '1h': 60 * 60 * 1000,
+            '6h': 6 * 60 * 60 * 1000,
+            '24h': 24 * 60 * 60 * 1000,
+            '3d': 3 * 24 * 60 * 60 * 1000,
+            '7d': 7 * 24 * 60 * 60 * 1000
+        };
+        timeThreshold = new Date(now - thresholds[timeFilter]);
+    }
+
+    items.forEach(item => {
+        let show = true;
+
+        // Search filter
+        if (searchTerm && !item.textContent.toLowerCase().includes(searchTerm)) {
+            show = false;
+        }
+
+        // Time filter
+        if (show && timeThreshold) {
+            const addedAt = item.dataset.addedAt;
+            if (addedAt && addedAt !== 'just now' && addedAt !== 'Unknown') {
+                try {
+                    const iocDate = new Date(addedAt);
+                    if (iocDate < timeThreshold) {
+                        show = false;
+                    }
+                } catch (e) {
+                    show = false;
+                }
+            }
+        }
+
+        // Type filter
+        if (show && typeFilter !== 'all') {
+            if (item.dataset.type !== typeFilter) {
+                show = false;
+            }
+        }
+
+        // Tag filter
+        if (show && tagFilter !== 'all') {
+            const tags = item.dataset.tags || '';
+            if (!tags.split(',').includes(tagFilter)) {
+                show = false;
+            }
+        }
+
+        item.style.display = show ? 'block' : 'none';
+        if (show) visibleCount++;
+    });
+
+    // Update count display
+    const activeFilters = [];
+    if (timeFilter !== 'all') activeFilters.push(document.getElementById('timeFilter').options[document.getElementById('timeFilter').selectedIndex].text);
+    if (typeFilter !== 'all') activeFilters.push(typeFilter);
+    if (tagFilter !== 'all') activeFilters.push(tagFilter);
+
+    if (activeFilters.length > 0 || searchTerm) {
+        countDiv.textContent = `Showing ${visibleCount} of ${totalCount} IOCs (filtered)`;
+    } else {
+        countDiv.textContent = `Showing ${totalCount} IOCs`;
+    }
+}
+
+// Clear all filters
+function clearVendorFilters() {
+    // Reset filter dropdowns
+    const timeFilter = document.getElementById('timeFilter');
+    const typeFilter = document.getElementById('typeFilter');
+    const tagFilter = document.getElementById('tagFilter');
+    const searchInput = document.getElementById('vendorModalSearch');
+
+    if (timeFilter) timeFilter.value = 'all';
+    if (typeFilter) typeFilter.value = 'all';
+    if (tagFilter) tagFilter.value = 'all';
+    if (searchInput) searchInput.value = '';
+
+    // Reapply filters (which will show all)
+    applyVendorFilters();
 }
 
 // Open IOC details from vendor modal
@@ -256,7 +366,7 @@ window.addEventListener('click', function (event) {
     }
 });
 
-// Export vendor data from modal (works with cached data)
+// Export vendor data from modal (works with cached data and filters)
 function exportVendorDataFromModal(vendorName, format) {
     const data = vendorDataCache[vendorName];
     if (!data || !data.iocs) {
@@ -264,25 +374,46 @@ function exportVendorDataFromModal(vendorName, format) {
         return;
     }
 
+    // Get only visible IOCs (filtered)
+    const content = document.getElementById('vendorModalContent');
+    const visibleItems = Array.from(content.querySelectorAll('.vendor-ioc-item')).filter(item => item.style.display !== 'none');
+
+    // Extract indicators from visible items
+    const visibleIndicators = visibleItems.map(item => item.dataset.indicator);
+
+    // Filter IOCs to only include visible ones
+    const filteredIOCs = data.iocs.filter(ioc => visibleIndicators.includes(ioc.indicator));
+
+    if (filteredIOCs.length === 0) {
+        alert('No IOCs match the current filter. Please adjust your filters.');
+        return;
+    }
+
     const timestamp = new Date().toISOString().split('T')[0];
-    const filename = `${vendorName}_IOCs_${timestamp}`;
+    const filename = `${vendorName}_IOCs_${timestamp}_filtered`;
 
     if (format === 'csv') {
         const headers = ['Type', 'Indicator', 'Description', 'Timestamp', 'Source', 'Tags', 'Campaign'];
-        const rows = data.iocs.map(ioc => [
+        const rows = filteredIOCs.map(ioc => [
             ioc.type || '',
             ioc.indicator || '',
             (ioc.description || '').replace(/,/g, ';'),
-            ioc.timestamp || '',
+            ioc.addedAt || ioc.timestamp || '',
             ioc.source || '',
             (ioc.tags || []).join(';'),
             ioc.campaign || ''
         ]);
         const csv = [headers.join(','), ...rows.map(r => r.join(','))].join('\n');
         downloadFile(csv, `${filename}.csv`, 'text/csv');
+
+        // Show success message
+        alert(`Exported ${filteredIOCs.length} filtered IOCs to CSV`);
     } else if (format === 'json') {
-        const json = JSON.stringify(data.iocs, null, 2);
+        const json = JSON.stringify(filteredIOCs, null, 2);
         downloadFile(json, `${filename}.json`, 'application/json');
+
+        // Show success message
+        alert(`Exported ${filteredIOCs.length} filtered IOCs to JSON`);
     }
 }
 
