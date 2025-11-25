@@ -118,6 +118,16 @@ def fetch_vendor_iocs(vendor_name, config):
     iocs = []
     now = get_ist_now()
     
+    # Load previous IOC data for persistence (7-day retention)
+    previous_iocs = load_previous_ioc_data(vendor_name)
+    ioc_history = build_ioc_history(previous_iocs)
+    print(f"  - Loaded {len(ioc_history)} previous IOCs for {vendor_name}")
+    
+    # Helper function to get correct addedAt timestamp
+    def get_added_at(indicator):
+        """Get first-seen timestamp from history, or current time if new"""
+        return ioc_history.get(indicator, now.isoformat())
+    
     print(f"  - Fetching {vendor_name}...")
     try:
         if config["type"] == "text":
@@ -178,6 +188,10 @@ def fetch_vendor_iocs(vendor_name, config):
     except Exception as e:
         print(f"    ✗ Failed {vendor_name}: {e}")
     
+    # Prune IOCs older than 7 days before returning
+    iocs = prune_old_iocs(iocs, retention_days=7)
+    print(f"    ✓ Returning {len(iocs)} IOCs after 7-day retention pruning")
+    
     return iocs
 
 def parse_phishing_url(url, now, config, vendor):
@@ -191,7 +205,7 @@ def parse_phishing_url(url, now, config, vendor):
         'sourceUrl': config['website'],
         'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
         'tags': ['phishing', 'live'],
-        'addedAt': now.isoformat(),
+        'addedAt': get_added_at(url),
         'campaign': detect_campaign(url, 'phishing')
     }
 
@@ -219,7 +233,7 @@ def parse_malware_bazaar(csv_line, now, config, vendor):
             'sourceUrl': config['website'],
             'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
             'tags': ['malware', 'hash'],
-            'addedAt': now.isoformat(),
+            'addedAt': get_added_at(sha256),
             'campaign': signature
         }
     except Exception as e:
@@ -236,7 +250,7 @@ def parse_spamhaus(cidr, now, config, vendor):
         'sourceUrl': config['website'],
         'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
         'tags': ['hijacked', 'criminal-network'],
-        'addedAt': now.isoformat(),
+        'addedAt': get_added_at(ip_range),
         'campaign': 'Spamhaus DROP List'
     }
 
@@ -251,7 +265,7 @@ def parse_cins_army(ip, now, config, vendor):
         'sourceUrl': config['website'],
         'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
         'tags': ['malicious-ip', 'attacker'],
-        'addedAt': now.isoformat(),
+        'addedAt': get_added_at(ip),
         'campaign': 'CINS Threat List'
     }
 
@@ -266,7 +280,7 @@ def parse_blocklist(ip, now, config, vendor):
         'sourceUrl': config['website'],
         'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
         'tags': ['brute-force', 'ssh'],
-        'addedAt': now.isoformat(),
+        'addedAt': get_added_at(ip),
         'campaign': 'SSH Attacks'
     }
 
@@ -285,7 +299,7 @@ def parse_ssl_blacklist(parts, now, config, vendor):
         'sourceUrl': config['website'],
         'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
         'tags': ['ssl', 'c2'],
-        'addedAt': now.isoformat(),
+        'addedAt': get_added_at(url),
         'campaign': 'SSL C2 Infrastructure'
     }
 
@@ -323,7 +337,7 @@ def parse_threatfox(item, now, config, vendor):
         'sourceUrl': config['website'],
         'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
         'tags': generate_tags(ioc_type, malware + ' ' + threat_type, vendor),
-        'addedAt': now.isoformat(),
+        'addedAt': get_added_at(url),
         'campaign': malware if malware != 'Unknown' else detect_campaign(ioc_value, threat_type)
     }
 
@@ -350,10 +364,56 @@ def extract_ioc_from_entry(entry, feed_name, now, config):
             'sourceUrl': link or config['website'],
             'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
             'tags': generate_tags('url', clean_desc, feed_name),
-            'addedAt': now.isoformat(),
+            'addedAt': get_added_at(url),
             'campaign': detect_campaign(indicator, clean_desc)
         }
     return None
+
+# ──────────────────────────────────────────────────────────────
+# IOC Persistence Functions (7-Day Retention)
+# ──────────────────────────────────────────────────────────────
+
+def load_previous_ioc_data(vendor_name):
+    """Load previous IOC data for persistence tracking"""
+    filename = f"ioc-data/{vendor_name.lower().replace(' ', '-')}.json"
+    if os.path.exists(filename):
+        try:
+            with open(filename, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                return data.get('iocs', [])
+        except (json.JSONDecodeError, IOError) as e:
+            print(f"Warning: Could not load previous data for {vendor_name}: {e}")
+    return []
+
+def build_ioc_history(previous_iocs):
+    """Build lookup of indicator → first_seen timestamp for persistence"""
+    history = {}
+    for ioc in previous_iocs:
+        if 'indicator' in ioc and 'addedAt' in ioc:
+            history[ioc['indicator']] = ioc['addedAt']
+    return history
+
+def prune_old_iocs(iocs, retention_days=7):
+    """Remove IOCs older than retention period (default 7 days)"""
+    cutoff = datetime.now(timezone.utc) - timedelta(days=retention_days)
+    pruned = []
+    for ioc in iocs:
+        try:
+            added_at = ioc.get('addedAt', '')
+            if added_at:
+                # Parse ISO format timestamp
+                ioc_date = datetime.fromisoformat(added_at.replace('Z', '+00:00'))
+                if ioc_date > cutoff:
+                    pruned.append(ioc)
+        except (ValueError, AttributeError):
+            # If parsing fails, keep the IOC (better safe than sorry)
+            pruned.append(ioc)
+    
+    removed_count = len(iocs) - len(pruned)
+    if removed_count > 0:
+        print(f"  Pruned {removed_count} IOCs older than {retention_days} days")
+    
+    return pruned
 
 # ──────────────────────────────────────────────────────────────
 # Helper Functions
