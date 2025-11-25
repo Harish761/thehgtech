@@ -2,7 +2,7 @@
 const rotatingContent = [
     {
         title: "Threat Intelligence",
-        subtitle: "1.2M+ live IOCs from 6 trusted vendors, updated hourly with AI-powered analysis"
+        subtitle: "Live IOCs from 5 trusted vendors tracked over 7 days, updated every 2 hours with AI-powered analysis"
     },
     {
         title: "CVE Tracking",
@@ -14,7 +14,7 @@ const rotatingContent = [
     },
     {
         title: "Real-Time Updates",
-        subtitle: "Automated hourly feeds with trend tracking and interactive visualizations"
+        subtitle: "Automated feeds every 2 hours with 7-day trend tracking and interactive visualizations"
     }
 ];
 
