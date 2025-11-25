@@ -1,11 +1,11 @@
 // Auto-Generated Threat Intel (Multi-Vendor Dashboard)
-// Updated: 2025-11-25T04:56:22.091965+05:30 IST
+// Updated: 2025-11-25T07:37:40.978976+05:30 IST
 // Sources: OpenPhish, Malware Bazaar, Spamhaus DROP, CINS Army, Blocklist.de, Phishing Database
 // NOTE: Full IOC lists are stored in Cloudflare R2 and loaded on-demand
 
 window.threatIntelData = {
-    "lastUpdated": "2025-11-25T04:56:21.709969+05:30",
-    "lastUpdatedFormatted": "Nov 25, 2025 at 04:56 AM IST",
+    "lastUpdated": "2025-11-25T07:37:40.603029+05:30",
+    "lastUpdatedFormatted": "Nov 25, 2025 at 07:37 AM IST",
     "comparisonPeriod": "Nov 24 \u2013 Nov 25, 2025",
     "vendors": {
         "OpenPhish": {
@@ -23,33 +23,33 @@ window.threatIntelData = {
                 "url"
             ],
             "sampleIndicators": [
-                "hxxps://oficina-correos[.]strangled[.]net/cc/corr/login[.]php",
-                "hxxps://itsssl[.]com/lBJem",
-                "hxxp://www[.]whatsappplus[.]com[.]pk/",
-                "hxxp://facilprint[.]com/pencil[.]html",
-                "hxxp://meta-castle-c4d[.]pages[.]dev/"
+                "hxxps://www[.]fs[.]hidravitalis[.]com/",
+                "hxxps://0426f7e[.]netsolhost[.]com/netsolutions[.]html",
+                "hxxps://bigthinkcapitals[.]biz/",
+                "hxxps://sachinbhauryal[.]github[.]io/Netflix_clone/",
+                "hxxp://sso--robinhood-com--aauthh[.]webflow[.]io/"
             ]
         },
         "Malware Bazaar": {
             "description": "Recent malware samples with hashes and URLs. Tracks active malware distribution from abuse.ch community.",
             "website": "https://bazaar.abuse.ch/",
             "updateFrequency": "Real-time",
-            "iocCount": 2752,
+            "iocCount": 1717,
             "r2Url": "https://thehgtech.com/ioc-data/malware-bazaar.json",
             "stats": {
-                "total": 2752,
-                "newInLastHour": 2752,
+                "total": 1717,
+                "newInLastHour": 1717,
                 "lastUpdate": "just now"
             },
             "types": [
                 "hash"
             ],
             "sampleIndicators": [
-                " \"22586ca9f72e1dcb8c747326770cc240d52b4bbc9781158598905eaef9dab09e",
-                " \"284c708064162876e9f9a7dab75649fcf02c7b991bc296ee1f737428e940208f",
-                " \"555df942dde9ef9d3d777a1bf1de4f14a89cd67f0de1d5251e5b64d72d7ca910",
-                " \"0393f15ba1ef0dfd5eded00fa9e214b7ffc179950963829eb4fb66b808060641",
-                " \"df2af94093db69e06deef4e9b7796b4bab65b2d18f0f3fbc8eecd9b2db295fc7"
+                " \"5fc5368bad8a8b519f2c392b97c458d9425307b00d52aaadea20eba58e8eeb24",
+                " \"326b0eb2cdd03a3ab23d83774222769245b2bbe689ba22856273f4fa119b3054",
+                " \"175e87141ce633469d9ac58e3077c1072154edc598d2c8c4ee56410ebfc79609",
+                " \"6c7bfe62c28b02b1d1fed116cf6e7f11e39e9ada593ef346c67b03cfc512a328",
+                " \"6855a4e07a75695cac3b898afa8f321dcc9bf8d6d73b1095d39c43d1ae0f3318"
             ]
         },
         "Spamhaus DROP": {
@@ -89,10 +89,10 @@ window.threatIntelData = {
                 "ip"
             ],
             "sampleIndicators": [
-                "1[.]119[.]194[.]226",
-                "1[.]14[.]3[.]240",
+                "1[.]123[.]65[.]64",
+                "1[.]13[.]197[.]76",
                 "1[.]15[.]118[.]23",
-                "1[.]172[.]234[.]138",
+                "1[.]15[.]140[.]49",
                 "1[.]177[.]162[.]2"
             ]
         },
@@ -100,11 +100,11 @@ window.threatIntelData = {
             "description": "IPs conducting SSH brute-force attacks. Community-reported attackers targeting SSH services.",
             "website": "https://www.blocklist.de/",
             "updateFrequency": "Hourly",
-            "iocCount": 5361,
+            "iocCount": 5162,
             "r2Url": "https://thehgtech.com/ioc-data/blocklist-de.json",
             "stats": {
-                "total": 5361,
-                "newInLastHour": 5361,
+                "total": 5162,
+                "newInLastHour": 5162,
                 "lastUpdate": "just now"
             },
             "types": [
@@ -181,8 +181,8 @@ window.threatIntelData = {
     "snapshotMetrics": {
         "topAttackVector": "Malicious URLs",
         "mostTargetedRegion": "North America",
-        "fastestRisingThreat": " \"n/a",
-        "totalAttacksThisHour": 1298274,
-        "lastCalculated": "2025-11-25 04:56 IST"
+        "fastestRisingThreat": "Generic Phishing",
+        "totalAttacksThisHour": 1297040,
+        "lastCalculated": "2025-11-25 07:37 IST"
     }
 };
