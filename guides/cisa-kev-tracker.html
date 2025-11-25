@@ -108,7 +108,7 @@
         "name": "How can I track CISA KEV vulnerabilities?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "You can track CISA KEV vulnerabilities through TheHGTech's real-time dashboard at https://thehgtech.com, which provides automated updates, vendor remediation links, and integration capabilities with your existing security tools."
+          "text": "You can track CISA KEV vulnerabilities through TheHGTech's dashboard at https://thehgtech.com, which displays the latest CVE data updated twice daily with vendor remediation links."
         }
       }]
     }
@@ -154,20 +154,26 @@
         }
 
         :root {
-            --bg-dark: #0A0E27;
-            --bg-card: #1A1F3A;
-            --text-primary: #FFFFFF;
-            --text-muted: #94A3B8;
+            /* Match homepage color scheme exactly */
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
             --accent-cyan: #00D9FF;
-            --accent-purple: #667EEA;
-            --border-color: rgba(255, 255, 255, 0.1);
+            --accent-red: #FF4C4C;
+            --glow-cyan: rgba(0, 217, 255, 0.5);
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+            --glass: rgba(255, 255, 255, 0.05);
         }
 
         body {
             font-family: 'Inter', sans-serif;
-            background: var(--bg-dark);
+            background: var(--bg-primary);
             color: var(--text-primary);
-            line-height: 1.6;
+            line-height: 1.7;
+            font-size: 18px;
         }
 
         .container {
@@ -179,7 +185,7 @@
         /* Header */
         header {
             padding: 2rem 0;
-            border-bottom: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border);
             margin-bottom: 3rem;
         }
 
@@ -192,19 +198,22 @@
         .breadcrumb a {
             color: var(--accent-cyan);
             text-decoration: none;
+            transition: color 0.2s;
         }
 
         .breadcrumb a:hover {
+            color: var(--glow-cyan);
             text-decoration: underline;
         }
 
         h1 {
-            font-size: 2.5rem;
-            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+            font-size: 3rem;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-red));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             margin-bottom: 1rem;
+            line-height: 1.2;
         }
 
         .meta {
@@ -220,45 +229,55 @@
 
         .content h2 {
             color: var(--accent-cyan);
-            font-size: 1.8rem;
+            font-size: 2rem;
             margin: 3rem 0 1rem;
         }
 
         .content h3 {
-            color: var(--accent-purple);
-            font-size: 1.4rem;
+            color: var(--text-primary);
+            font-size: 1.5rem;
             margin: 2rem 0 1rem;
         }
 
         .content p {
             margin-bottom: 1.5rem;
+            color: var(--text-secondary);
         }
 
         .content ul,
         .content ol {
             margin: 1.5rem 0 1.5rem 2rem;
+            color: var(--text-secondary);
         }
 
         .content li {
             margin-bottom: 0.75rem;
         }
 
+        .content strong {
+            color: var(--text-primary);
+        }
+
         .content a {
             color: var(--accent-cyan);
             text-decoration: none;
+            transition: color 0.2s;
         }
 
         .content a:hover {
+            color: var(--glow-cyan);
             text-decoration: underline;
         }
 
-        /* Info Box */
+        /* Info Box - Glassmorphism */
         .info-box {
-            background: rgba(0, 217, 255, 0.1);
+            background: var(--glass);
+            border: 1px solid var(--border);
             border-left: 4px solid var(--accent-cyan);
             padding: 1.5rem;
             margin: 2rem 0;
             border-radius: 8px;
+            backdrop-filter: blur(10px);
         }
 
         .info-box strong {
@@ -272,10 +291,16 @@
 
         .faq-item {
             background: var(--bg-card);
+            border: 1px solid var(--border);
             padding: 1.5rem;
             margin-bottom: 1rem;
             border-radius: 8px;
-            border: 1px solid var(--border-color);
+            transition: border-color 0.3s, transform 0.2s;
+        }
+
+        .faq-item:hover {
+            border-color: var(--accent-cyan);
+            transform: translateY(-2px);
         }
 
         .faq-question {
@@ -286,24 +311,45 @@
         }
 
         .faq-answer {
-            color: var(--text-muted);
+            color: var(--text-secondary);
+            line-height: 1.6;
         }
 
         /* CTA Button */
         .cta-button {
             display: inline-block;
             padding: 1rem 2rem;
-            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-red));
             color: white;
             text-decoration: none;
             border-radius: 8px;
             font-weight: 600;
             margin: 2rem 0;
-            transition: transform 0.2s;
+            transition: transform 0.2s, box-shadow 0.3s;
         }
 
         .cta-button:hover {
             transform: translateY(-2px);
+            box-shadow: 0 10px 30px var(--glow-cyan);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .content h2 {
+                font-size: 1.5rem;
+            }
+
+            .content h3 {
+                font-size: 1.2rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
         }
     </style>
 </head>
@@ -330,9 +376,8 @@
             </p>
 
             <div class="info-box">
-                <strong>Quick Start:</strong> Access our real-time CISA KEV tracker at <a href="/">TheHGTech
-                    Dashboard</a>
-                for automated updates, vendor remediation links, and integration capabilities.
+                <strong>Quick Start:</strong> Access our CISA KEV tracker at <a href="/">TheHGTech Dashboard</a> for CVE
+                data updated twice daily with vendor remediation links.
             </div>
 
             <h2>What is the CISA KEV Catalog?</h2>
@@ -369,15 +414,15 @@
                 vulnerabilities:
             </p>
 
-            <h3>1. Automated Monitoring</h3>
+            <h3>1. Regular Monitoring</h3>
             <p>
-                Use automated tools to monitor the KEV catalog for updates. TheHGTech provides real-time tracking with:
+                Monitor the KEV catalog for updates regularly. TheHGTech provides CVE tracking with:
             </p>
             <ul>
-                <li>Instant notifications when new vulnerabilities are added</li>
+                <li>CVE data updated twice daily</li>
                 <li>Vendor remediation links for quick patching</li>
-                <li>Integration with your existing security tools</li>
-                <li>Historical trend analysis</li>
+                <li>Clear vulnerability descriptions</li>
+                <li>Easy-to-read dashboard interface</li>
             </ul>
 
             <h3>2. Prioritization Framework</h3>
@@ -403,23 +448,8 @@
                 <li>Document actions taken</li>
             </ol>
 
-            <h2>Integration with Security Operations</h2>
-            <p>
-                KEV tracking should be integrated into your broader security operations:
-            </p>
-
-            <h3>SIEM Integration</h3>
-            <p>
-                Connect KEV data to your Security Information and Event Management (SIEM) system to:
-            </p>
-            <ul>
-                <li>Correlate exploitation attempts with KEV additions</li>
-                <li>Trigger automated response workflows</li>
-                <li>Generate compliance reports</li>
-                <li>Track remediation progress</li>
-            </ul>
-
-            <h3>Vulnerability Management</h3>
+            <h2>Vulnerability Management Best Practices</h2>
+            <h3>Integrating KEV into Your Workflow</h3>
             <p>
                 Enhance your vulnerability management program by:
             </p>
@@ -505,10 +535,9 @@
                 <div class="faq-item">
                     <div class="faq-question">How can I track CISA KEV vulnerabilities?</div>
                     <div class="faq-answer">
-                        You can track CISA KEV vulnerabilities through TheHGTech's real-time dashboard at
-                        https://thehgtech.com, which provides automated updates, vendor remediation links, and
-                        integration
-                        capabilities with your existing security tools.
+                        You can track CISA KEV vulnerabilities through TheHGTech's dashboard at
+                        https://thehgtech.com, which displays CVE data updated twice daily with vendor remediation
+                        links.
                     </div>
                 </div>
             </div>
