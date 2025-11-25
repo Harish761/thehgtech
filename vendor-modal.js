@@ -104,6 +104,37 @@ async function openVendorModal(vendorName) {
     `;
     let html = cappingNotice + exportButtons;
     data.iocs.forEach((ioc) => {
+        // Format timestamp - use addedAt if available, otherwise timestamp
+        const timeStr = ioc.addedAt || ioc.timestamp;
+        let displayTime = 'Unknown';
+
+        if (timeStr && timeStr !== 'just now' && timeStr !== 'Unknown') {
+            try {
+                const iocDate = new Date(timeStr);
+                const now = new Date();
+                const diffMs = now - iocDate;
+                const diffMins = Math.floor(diffMs / 60000);
+                const diffHours = Math.floor(diffMs / 3600000);
+                const diffDays = Math.floor(diffMs / 86400000);
+
+                if (diffMins < 1) {
+                    displayTime = 'just now';
+                } else if (diffMins < 60) {
+                    displayTime = `${diffMins} min${diffMins > 1 ? 's' : ''} ago`;
+                } else if (diffHours < 24) {
+                    displayTime = `${diffHours} hour${diffHours > 1 ? 's' : ''} ago`;
+                } else if (diffDays < 7) {
+                    displayTime = `${diffDays} day${diffDays > 1 ? 's' : ''} ago`;
+                } else {
+                    displayTime = iocDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+                }
+            } catch (e) {
+                displayTime = timeStr;
+            }
+        } else if (timeStr === 'just now') {
+            displayTime = 'just now';
+        }
+
         html += `<div class="modal-stat-item vendor-ioc-item" data-indicator="${ioc.indicator}" data-type="${ioc.type}"
             style="padding: 1rem; background: rgba(255, 255, 255, 0.02); border-radius: 8px; margin-bottom: 0.75rem; cursor: pointer; transition: all 0.2s ease; border-left: 3px solid var(--accent-cyan);"
             onmouseover="this.style.background='rgba(0, 217, 255, 0.1)'" 
@@ -112,7 +143,7 @@ async function openVendorModal(vendorName) {
             <div style="color: var(--text-primary); font-weight: 500; font-family: monospace; word-break: break-all; margin-bottom: 0.5rem;">${ioc.indicator}</div>
             <div style="color: var(--text-muted); font-size: 0.85rem;">
                 <span style="color: var(--accent-cyan);">Type:</span> ${ioc.type} | 
-                <span style="color: var(--accent-cyan);">Added:</span> ${ioc.timestamp || 'Unknown'}
+                <span style="color: var(--accent-cyan);">Added:</span> ${displayTime}
             </div>
         </div>`;
     });
