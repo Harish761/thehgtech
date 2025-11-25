@@ -13,8 +13,16 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to update all IOC count displays
     function updateIocCounts() {
         // Check if threat intel data is loaded
-        if (typeof threatIntelData !== 'undefined' && threatIntelData.totalIOCs) {
-            const formattedCount = formatIocCount(threatIntelData.totalIOCs);
+        if (typeof threatIntelData !== 'undefined' && threatIntelData.vendors) {
+            // Calculate total IOCs from all vendors
+            let totalIOCs = 0;
+            for (const vendor in threatIntelData.vendors) {
+                if (threatIntelData.vendors[vendor].iocCount) {
+                    totalIOCs += threatIntelData.vendors[vendor].iocCount;
+                }
+            }
+
+            const formattedCount = formatIocCount(totalIOCs);
 
             // Update hero section
             const heroCount = document.getElementById('heroIocCount');
@@ -28,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 snapshotCount.textContent = formattedCount;
             }
 
-            console.log(`Updated IOC counts to: ${formattedCount} (${threatIntelData.totalIOCs} total)`);
+            console.log(`Updated IOC counts to: ${formattedCount} (${totalIOCs} total from ${Object.keys(threatIntelData.vendors).length} vendors)`);
         } else {
             // Retry after threat-intel.js loads
             setTimeout(updateIocCounts, 100);
