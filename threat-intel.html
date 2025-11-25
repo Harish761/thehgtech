@@ -9,7 +9,7 @@
     <title>Live Threat Intelligence with AI Insights & 7-Day Trends | TheHGTech</title>
     <meta name="title" content="Live Threat Intelligence with AI Insights & 7-Day Trends | TheHGTech">
     <meta name="description"
-        content="Real-time IOCs from 6 security vendors (OpenPhish, URLhaus, ThreatFox, Feodo, Blocklist.de, SSL Blacklist) with AI-powered daily summaries, weekly analysis, 7-day trend charts, and hourly updates. Free threat intelligence dashboard.">
+        content="Real-time IOCs from 6 security vendors (OpenPhish, URLhaus, ThreatFox, Feodo, Blocklist.de, SSL Blacklist) with AI-powered daily summaries, weekly analysis, 7-day trend charts, and updates every 2 hours. Free threat intelligence dashboard.">
     <meta name="keywords"
         content="threat intelligence, live IOCs, AI threat analysis, 7-day trends, OpenPhish, URLhaus, ThreatFox, Feodo Tracker, real-time threats, phishing detection, malware feeds, C2 tracking, threat dashboard, security intelligence, GPT-4 analysis">
     <meta name="author" content="TheHGTech">
@@ -846,7 +846,7 @@
                 threat intelligence data. For raw data access, visit our <a
                     href="https://github.com/Harish761/thehgtech/blob/main/threat-intel.js"
                     style="color: #00d9ff;">GitHub repository</a>.</p>
-            <p style="margin-top: 1rem;">Updated hourly with AI-powered insights and 7-day trend analysis.</p>
+            <p style="margin-top: 1rem;">Updated every 2 hours with AI-powered insights and 7-day trend analysis.</p>
         </div>
     </noscript>
 
@@ -901,7 +901,7 @@
         <div class="ti-hero-content">
             <div class="ti-badge">
                 <span class="pulse-dot"></span>
-                Updated Hourly
+                Updated Every 2 Hours
             </div>
             <h1>Live Cyber Threat <span>Intelligence Dashboard</span></h1>
             <p>Multi-vendor intelligence from 6 trusted security sources. Track malicious URLs, IPs, domains, and
@@ -1255,7 +1255,7 @@
     <footer class="footer">
         <p>&copy; 2024 TheHGTech. All rights reserved. | <a href="index.html">Home</a> | <a
                 href="threat-intel.html">Threat Intelligence</a></p>
-        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Live Cyber Threat Intelligence — Updated Hourly</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Live Cyber Threat Intelligence — Updated Every 2 Hours</p>
     </footer>
 
     <!-- Load threat-intel.js -->
@@ -1271,7 +1271,7 @@
         // Initialize dashboard
         window.addEventListener('DOMContentLoaded', () => {
             loadThreatData();
-            // Auto-refresh disabled - data updates hourly via GitHub Actions
+            // Auto-refresh disabled - data updates every 2 hours via GitHub Actions
             // autoRefreshInterval = setInterval(refreshData, 60000);
             // startCountdown();
         });
@@ -1436,7 +1436,7 @@
                             <span class="vendor-stat-label">New (Last Hour)</span>
                         </div>
                         <div class="vendor-stat">
-                            <span class="vendor-stat-value">${vendorData.updateFrequency || 'Hourly'}</span>
+                            <span class="vendor-stat-value">${vendorData.updateFrequency || 'Every 2 hours'}</span>
                             <span class="vendor-stat-label">Update Frequency</span>
                         </div>
                     </div>
