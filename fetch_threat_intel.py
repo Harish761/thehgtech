@@ -398,15 +398,22 @@ def prune_old_iocs(iocs, retention_days=7):
     cutoff = datetime.now(timezone.utc) - timedelta(days=retention_days)
     pruned = []
     for ioc in iocs:
+        # Default to keeping the IOC
+        keep = True
+        
         try:
             added_at = ioc.get('addedAt', '')
-            if added_at:
+            if added_at and added_at != '':
                 # Parse ISO format timestamp
                 ioc_date = datetime.fromisoformat(added_at.replace('Z', '+00:00'))
-                if ioc_date > cutoff:
-                    pruned.append(ioc)
-        except (ValueError, AttributeError):
+                # Only remove if timestamp is valid AND old
+                if ioc_date <= cutoff:
+                    keep = False
+        except (ValueError, AttributeError, TypeError) as e:
             # If parsing fails, keep the IOC (better safe than sorry)
+            keep = True
+        
+        if keep:
             pruned.append(ioc)
     
     removed_count = len(iocs) - len(pruned)
