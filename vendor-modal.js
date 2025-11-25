@@ -83,7 +83,46 @@ async function openVendorModal(vendorName) {
         `;
     }
 
-    // Render IOCs
+    // Extract unique types and tags from IOCs for filter dropdowns
+    const uniqueTypes = [...new Set(data.iocs.map(ioc => ioc.type))].sort();
+    const allTags = data.iocs.flatMap(ioc => ioc.tags || []);
+    const uniqueTags = [...new Set(allTags)].sort();
+
+    // Add advanced filter controls
+    const filterControls = `
+        <div style="background: rgba(255, 255, 255, 0.03); border-radius: 12px; padding: 1.25rem; margin-bottom: 1.5rem; border: 1px solid rgba(0, 217, 255, 0.1);">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1rem;">
+                <div>
+                    <label style="display: block; color: var(--accent-cyan); font-size: 0.85rem; margin-bottom: 0.5rem; font-weight: 600;">⏰ Time Range</label>
+                    <select id="timeFilter" onchange="applyVendorFilters()" style="width: 100%; padding: 0.6rem; background: rgba(0, 0, 0, 0.3); border: 1px solid rgba(0, 217, 255, 0.3); border-radius: 6px; color: var(--text-primary); font-size: 0.9rem; cursor: pointer;">
+                        <option value="all">All time</option>
+                        <option value="1h">Last hour</option>
+                        <option value="6h">Last 6 hours</option>
+                        <option value="24h">Last 24 hours</option>
+                        <option value="3d">Last 3 days</option>
+                        <option value="7d">Last 7 days</option>
+                    </select>
+                </div>
+                <div>
+                    <label style="display: block; color: var(--accent-cyan); font-size: 0.85rem; margin-bottom: 0.5rem; font-weight: 600;">🔍 IOC Type</label>
+                    <select id="typeFilter" onchange="applyVendorFilters()" style="width: 100%; padding: 0.6rem; background: rgba(0, 0, 0, 0.3); border: 1px solid rgba(0, 217, 255, 0.3); border-radius: 6px; color: var(--text-primary); font-size: 0.9rem; cursor: pointer;">
+                        <option value="all">All types</option>
+                        ${uniqueTypes.map(type => `<option value="${type}">${type}</option>`).join('')}
+                    </select>
+                </div>
+                <div>
+                    <label style="display: block; color: var(--accent-cyan); font-size: 0.85rem; margin-bottom: 0.5rem; font-weight: 600;">🏷️ Tags</label>
+                    <select id="tagFilter" onchange="applyVendorFilters()" style="width: 100%; padding: 0.6rem; background: rgba(0, 0, 0, 0.3); border: 1px solid rgba(0, 217, 255, 0.3); border-radius: 6px; color: var(--text-primary); font-size: 0.9rem; cursor: pointer;">
+                        <option value="all">All tags</option>
+                        ${uniqueTags.map(tag => `<option value="${tag}">${tag}</option>`).join('')}
+                    </select>
+                </div>
+            </div>
+            <button onclick="clearVendorFilters()" style="padding: 0.6rem 1.2rem; background: rgba(255, 59, 48, 0.1); border: 1px solid rgba(255, 59, 48, 0.3); border-radius: 6px; color: #ff3b30; font-weight: 600; cursor: pointer; font-size: 0.85rem; transition: all 0.2s; display: flex; align-items: center; gap: 0.5rem;" onmouseover="this.style.background='rgba(255, 59, 48, 0.2)'" onmouseout="this.style.background='rgba(255, 59, 48, 0.1)'">
+                <span>✕</span> Clear Filters
+            </button>
+        </div>
+    `;
 
     // Add export buttons
     const exportButtons = `
@@ -92,7 +131,7 @@ async function openVendorModal(vendorName) {
                 style="padding: 0.6rem 1.2rem; background: linear-gradient(135deg, #00D9FF, #0099cc); border: none; border-radius: 8px; color: white; font-weight: 600; cursor: pointer; font-size: 0.9rem; transition: all 0.3s; box-shadow: 0 4px 15px rgba(0, 217, 255, 0.3); display: flex; align-items: center; gap: 0.5rem;"
                 onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(0, 217, 255, 0.4)';"
                 onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0, 217, 255, 0.3)';">
-                <span>📥</span> Export CSV
+                <span>📥</span> Export Filtered CSV
             </button>
             <button onclick="exportVendorDataFromModal('${vendorName}', 'json')" 
                 style="padding: 0.6rem 1.2rem; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(0, 217, 255, 0.3); border-radius: 8px; color: var(--text-primary); font-weight: 600; cursor: pointer; font-size: 0.9rem; transition: all 0.3s; display: flex; align-items: center; gap: 0.5rem;"
