@@ -87,11 +87,136 @@
     " \"Kamasers": 1,
     "Spamhaus DROP List": 1448,
     "CINS Threat List": 15000,
-    "SSH Attacks": 5051
+    "SSH Attacks": 5039
   },
-  "dailySnapshots": [],
+  "dailySnapshots": [
+    {
+      "date": "2025-11-25",
+      "timestamp": "2025-11-25T09:32:36.579884+05:30",
+      "metrics": {
+        "totalIOCs": 23505,
+        "newIOCs": 23505,
+        "topAttackVector": "Malicious IPs",
+        "mostTargetedRegion": "North America",
+        "campaignCounts": {
+          "Generic Phishing": 300,
+          " \"n/a": 764,
+          " \"AgentTesla": 11,
+          " \"AsyncRAT": 8,
+          " \"DarkTortilla": 1,
+          " \"Mirai": 295,
+          " \"Grandoreiro": 1,
+          " \"SalatStealer": 9,
+          " \"Adware.IObit": 1,
+          " \"Socks5Systemz": 4,
+          " \"MaskGramStealer": 9,
+          " \"GuLoader": 4,
+          " \"RemcosRAT": 10,
+          " \"ValleyRAT": 7,
+          " \"NetWire": 1,
+          " \"a310Logger": 5,
+          " \"Formbook": 15,
+          " \"SnakeKeylogger": 3,
+          " \"VIPKeylogger": 2,
+          " \"RedLineStealer": 13,
+          " \"CoinMiner": 28,
+          " \"NetSupport": 1,
+          " \"PhantomStealer": 1,
+          " \"NanoCore": 4,
+          " \"application/x-dosexec": 1,
+          " \"AuraStealer": 1,
+          " \"MassLogger": 1,
+          " \"QuasarRAT": 5,
+          " \"Gafgyt": 20,
+          " \"Stealc": 9,
+          " \"XWorm": 3,
+          " \"FatalRAT": 1,
+          " \"Tofsee": 1,
+          " \"Vidar": 12,
+          " \"Adware.PushWare": 1,
+          " \"FRP": 1,
+          " \"ConnectWise": 1,
+          " \"DBatLoader": 1,
+          " \"Loki": 1,
+          " \"Vjw0rm": 1,
+          " \"DCRat": 4,
+          " \"PureLogsStealer": 3,
+          " \"DonutLoader": 4,
+          " \"Gamaredon": 11,
+          " \"ACRStealer": 5,
+          " \"Efimer": 1,
+          " \"PureHVNC": 2,
+          " \"RenPyLoader": 1,
+          " \"Pony": 1,
+          " \"AZORult": 1,
+          " \"njrat": 3,
+          " \"GenesisStealer": 1,
+          " \"SpyLoan": 1,
+          " \"RondoDox": 1,
+          " \"Worm.Mofksys": 61,
+          " \"Simda": 280,
+          " \"DarkComet": 2,
+          " \"Miniduke": 38,
+          " \"LokiLocker": 2,
+          " \"SheetRAT": 5,
+          " \"CobaltStrike": 1,
+          " \"UmbralStealer": 1,
+          " \"Shiz": 3,
+          " \"Backdoor.Shiz": 8,
+          " \"Mydoom": 3,
+          " \"Swisyn": 4,
+          " \"Sliver": 1,
+          " \"Blackmoon": 1,
+          " \"Meterpreter": 2,
+          " \"LummaStealer": 2,
+          " \"Mofksys": 3,
+          " \"MeshAgent": 1,
+          " \"BlackNET": 1,
+          " \"CosmicDuke": 1,
+          " \"Expiro": 1,
+          " \"Kamasers": 1,
+          "Spamhaus DROP List": 1448,
+          "CINS Threat List": 15000,
+          "SSH Attacks": 5039
+        },
+        "vendorStats": {
+          "OpenPhish": {
+            "total": 300,
+            "new": 300
+          },
+          "Malware Bazaar": {
+            "total": 1718,
+            "new": 1718
+          },
+          "Spamhaus DROP": {
+            "total": 1448,
+            "new": 1448
+          },
+          "CINS Army": {
+            "total": 15000,
+            "new": 15000
+          },
+          "Blocklist.de": {
+            "total": 5039,
+            "new": 5039
+          }
+        }
+      }
+    }
+  ],
   "aiInsights": {
-    "dailySummary": {},
+    "dailySummary": {
+      "date": "2025-11-25",
+      "summary": "Today's threat intelligence data indicates a significant influx of indicators of compromise (IOCs), with a total of 23,505 newly identified, reflecting a threat velocity of 979.4 IOCs per hour and maintaining 100% data freshness over the last 24 hours. The critical threats have surged to 1,718, primarily driven by malicious IPs, which represent a substantial portion of the attack vectors. High-severity threats dominate the landscape, with 21,487 IOCs classified as high severity, underscoring the urgent need for organizations to prioritize monitoring and mitigation strategies against these prevalent threats. The top campaigns, particularly the CINS Threat List and SSH attacks, should be closely monitored, as they present significant risks that could impact network integrity and security.",
+      "keyFindings": [
+        "23505 new IOCs detected (Velocity: 979.4/hr)",
+        "Top vector: Malicious IPs",
+        "Active campaigns: 79",
+        "Critical threats: 1718",
+        "Data freshness: 100.0%"
+      ],
+      "generatedAt": "2025-11-25T09:32:41.129340+05:30"
+    },
     "weeklySummary": {}
   }
 }
