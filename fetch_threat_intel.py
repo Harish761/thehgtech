@@ -191,6 +191,11 @@ def fetch_vendor_iocs(vendor_name, config):
                 for line in clean_lines:
                     if re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$', line):
                         iocs.append(parse_blocklist(line, now, config, vendor_name, ioc_history))
+            
+            elif vendor_name == "Feodo Tracker":
+                for line in clean_lines:
+                    if re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$', line):
+                        iocs.append(parse_feodo_tracker(line, now, config, vendor_name, ioc_history))
         
         elif config["type"] == "csv":
             # Malware Bazaar CSV format
@@ -198,12 +203,22 @@ def fetch_vendor_iocs(vendor_name, config):
             resp = requests.get(config["url"], timeout=15, headers={'User-Agent': 'TheHGTech-ThreatIntel/2.0'})
             lines = resp.text.strip().split('\n')
             # No cap - store all IOCs
-            for line in lines[9:]:  # Skip 9-line header
-                if line.startswith('#') or not line.strip():
-                    continue
-                ioc = parse_malware_bazaar(line, now, config, vendor_name, ioc_history)
-                if ioc:
-                    iocs.append(ioc)
+            if vendor_name == "SSL Blacklist":
+                # SSL Blacklist CSV format: Listingdate,SHA1,Listingreason
+                for line in lines:
+                    if line.startswith('#') or not line.strip() or line.startswith('Listingdate'):
+                        continue
+                    ioc = parse_ssl_blacklist(line, now, config, vendor_name, ioc_history)
+                    if ioc:
+                        iocs.append(ioc)
+            else:
+                # Malware Bazaar and other CSV feeds
+                for line in lines[9:]:  # Skip 9-line header
+                    if line.startswith('#') or not line.strip():
+                        continue
+                    ioc = parse_malware_bazaar(line, now, config, vendor_name, ioc_history)
+                    if ioc:
+                        iocs.append(ioc)
         
         else:  # RSS type (if any remain)
             feed = feedparser.parse(config["url"])
@@ -308,21 +323,62 @@ def parse_blocklist(ip, now, config, vendor, ioc_history):
     return {
         'type': 'ip',
         'indicator': defang_indicator(ip, 'ip'),
-        'description': 'SSH brute force attacker',
+        'description': 'SSH brute-force attacker',
         'timestamp': format_timestamp(now),
         'source': vendor,
         'sourceUrl': config['website'],
         'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
-        'tags': ['brute-force', 'ssh'],
+        'tags': ['ssh', 'brute-force'],
         'addedAt': ioc_history.get(ip, now.isoformat()),
         'campaign': 'SSH Attacks'
     }
 
-def parse_ssl_blacklist(parts, now, config, vendor):
-    """Parse SSL Blacklist CSV"""
-    timestamp_val = parts[0] if len(parts) > 0 else ''
-    ip = parts[1] if len(parts) > 1 else ''
-    port = parts[2] if len(parts) > 2 else ''
+if __name__ == '__main__':
+    main()
+
+def parse_feodo_tracker(ip, now, config, vendor, ioc_history):
+    """Parse Feodo Tracker botnet C2 IP"""
+    return {
+        'type': 'ip',
+        'indicator': defang_indicator(ip, 'ip'),
+        'description': 'Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)',
+        'timestamp': format_timestamp(now),
+        'source': vendor,
+        'sourceUrl': config['website'],
+        'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
+        'tags': ['botnet', 'c2', 'banking-trojan'],
+        'addedAt': ioc_history.get(ip, now.isoformat()),
+        'campaign': 'Banking Malware C2'
+    }
+
+def parse_ssl_blacklist(csv_line, now, config, vendor, ioc_history):
+    """Parse SSL Blacklist CSV line"""
+    try:
+        parts = csv_line.split(',')
+        if len(parts) < 3:
+            return None
+        
+        listing_date = parts[0].strip()
+        sha1_fingerprint = parts[1].strip()
+        reason = parts[2].strip() if len(parts) > 2 else 'Malicious SSL certificate'
+        
+        if not sha1_fingerprint:
+            return None
+            
+        return {
+            'type': 'ssl-cert',
+            'indicator': sha1_fingerprint,  # Don't defang SSL fingerprints
+            'description': f'Malicious SSL certificate - {reason}',
+            'timestamp': format_timestamp(now),
+            'source': vendor,
+            'sourceUrl': config['website'],
+            'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
+            'tags': ['ssl', 'certificate', 'c2'],
+            'addedAt': ioc_history.get(sha1_fingerprint, now.isoformat()),
+            'campaign': reason.split()[0] if reason else 'Unknown'  # Extract malware family
+        }
+
+
     
     return {
         'type': 'ip',
@@ -1534,5 +1590,4 @@ def main():
     
     print("\n✓ All done!")
 
-if __name__ == '__main__':
-    main()
+

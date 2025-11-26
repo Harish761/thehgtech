@@ -1,11 +1,11 @@
 // Auto-Generated Threat Intel (Multi-Vendor Dashboard)
-// Updated: 2025-11-27T01:55:49.232321+05:30 IST
+// Updated: 2025-11-27T02:20:59.221731+05:30 IST
 // Sources: OpenPhish, Malware Bazaar, Spamhaus DROP, CINS Army, Blocklist.de, URLhaus, ThreatFox, Feodo Tracker, SSL Blacklist
 // NOTE: Full IOC lists are stored in GitHub Pages (ioc-data/) and loaded on-demand
 
 window.threatIntelData = {
-    "lastUpdated": "2025-11-27T01:55:49.205049+05:30",
-    "lastUpdatedFormatted": "Nov 27, 2025 at 01:55 AM IST",
+    "lastUpdated": "2025-11-27T02:20:59.204993+05:30",
+    "lastUpdatedFormatted": "Nov 27, 2025 at 02:20 AM IST",
     "comparisonPeriod": "Nov 26 \u2013 Nov 27, 2025",
     "vendors": {
         "OpenPhish": {
@@ -100,11 +100,11 @@ window.threatIntelData = {
             "description": "IPs conducting SSH brute-force attacks. Community-reported attackers targeting SSH services.",
             "website": "https://www.blocklist.de/",
             "updateFrequency": "Hourly",
-            "iocCount": 5760,
+            "iocCount": 5835,
             "iocDataUrl": "https://thehgtech.com/ioc-data/blocklist-de.json",
             "stats": {
-                "total": 5760,
-                "newInLastHour": 5760,
+                "total": 5835,
+                "newInLastHour": 5835,
                 "lastUpdate": "just now"
             },
             "types": [
@@ -122,44 +122,44 @@ window.threatIntelData = {
             "description": "Malware distribution URLs from URLhaus. Tracks active malware hosting sites and payload delivery infrastructure.",
             "website": "https://urlhaus.abuse.ch/",
             "updateFrequency": "Real-time",
-            "iocCount": 18993,
+            "iocCount": 18998,
             "iocDataUrl": "https://thehgtech.com/ioc-data/urlhaus.json",
             "stats": {
-                "total": 18993,
-                "newInLastHour": 28,
+                "total": 18998,
+                "newInLastHour": 33,
                 "lastUpdate": "just now"
             },
             "types": [
                 "hash"
             ],
             "sampleIndicators": [
-                "2025-11-26 20:19:05",
-                "2025-11-26 20:15:06",
-                "2025-11-26 20:14:13",
-                "2025-11-26 20:08:07",
-                "2025-11-26 20:07:13"
+                "2025-11-26 20:44:09",
+                "2025-11-26 20:43:14",
+                "2025-11-26 20:42:08",
+                "2025-11-26 20:31:09",
+                "2025-11-26 20:28:14"
             ]
         },
         "ThreatFox": {
             "description": "Multi-type IOC feed from ThreatFox. Includes IPs, domains, URLs, and hashes with malware family attribution.",
             "website": "https://threatfox.abuse.ch/",
             "updateFrequency": "Real-time",
-            "iocCount": 1385,
+            "iocCount": 1387,
             "iocDataUrl": "https://thehgtech.com/ioc-data/threatfox.json",
             "stats": {
-                "total": 1385,
-                "newInLastHour": 38,
+                "total": 1387,
+                "newInLastHour": 42,
                 "lastUpdate": "just now"
             },
             "types": [
                 "hash"
             ],
             "sampleIndicators": [
-                " \"1651248",
-                " \"1651243",
-                " \"1651242",
-                " \"1651239",
-                " \"1651236"
+                " \"1651266",
+                " \"1651259",
+                " \"1651254",
+                " \"1651251",
+                " \"1651248"
             ]
         },
         "Feodo Tracker": {
@@ -231,8 +231,8 @@ window.threatIntelData = {
     "snapshotMetrics": {
         "topAttackVector": "Malicious IPs",
         "mostTargetedRegion": "North America",
-        "fastestRisingThreat": "mips",
-        "totalAttacksThisHour": 21138,
-        "lastCalculated": "2025-11-27 01:55 IST"
+        "fastestRisingThreat": "SSH Attacks",
+        "totalAttacksThisHour": 21222,
+        "lastCalculated": "2025-11-27 02:20 IST"
     }
 };
