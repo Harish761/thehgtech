@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Threat Intelligence for SOC Analysts | TheHGTech</title>
+    <meta name="title" content="Threat Intelligence for SOC Analysts | TheHGTech">
+    <meta name="description"
+        content="Complete guide to leveraging threat intelligence feeds for security operations and incident response. Learn how to integrate TI into your SOC workflow.">
+    <meta name="keywords"
+        content="threat intelligence, SOC, security operations, incident response, TI feeds, threat hunting, IOCs">
+    <meta name="author" content="TheHGTech">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thehgtech.com/guides/threat-intelligence-soc.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/guides/threat-intelligence-soc.html">
+    <meta property="og:title" content="Threat Intelligence for SOC Analysts">
+    <meta property="og:description"
+        content="Learn how to leverage threat intelligence for effective security operations.">
+    <meta property="og:image" content="https://thehgtech.com/images/ti-soc-og.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://thehgtech.com/guides/threat-intelligence-soc.html">
+    <meta name="twitter:title" content="Threat Intelligence for SOC Analysts">
+    <meta name="twitter:description" content="Complete guide to threat intelligence for security operations.">
+    <meta name="twitter:image" content="https://thehgtech.com/images/ti-soc-twitter.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF4C4C;
+            --accent-green: #00ff88;
+            --glow-cyan: rgba(0, 217, 255, 0.5);
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+            --glass: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Header */
+        header {
+            padding: 3rem 0;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+        }
+
+        .breadcrumb {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .breadcrumb a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .breadcrumb a:hover {
+            color: var(--glow-cyan);
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-red));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .meta {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+
+        /* Content */
+        .content {
+            color: var(--text-secondary);
+            line-height: 1.9;
+        }
+
+        .content h2 {
+            color: var(--accent-cyan);
+            font-size: 1.8rem;
+            margin: 2.5rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .content h3 {
+            color: var(--text-primary);
+            font-size: 1.4rem;
+            margin: 2rem 0 1rem;
+        }
+
+        .content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .content ul,
+        .content ol {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .content li {
+            margin-bottom: 0.8rem;
+        }
+
+        .content strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .content a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        .content a:hover {
+            border-bottom-color: var(--accent-cyan);
+        }
+
+        .content code {
+            background: var(--bg-card);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 0.9em;
+            color: var(--accent-green);
+        }
+
+        .content pre {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            overflow-x: auto;
+            margin-bottom: 1.5rem;
+        }
+
+        .content pre code {
+            background: none;
+            padding: 0;
+        }
+
+        .highlight-box {
+            background: rgba(0, 217, 255, 0.05);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .warning-box {
+            background: rgba(255, 76, 76, 0.05);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .success-box {
+            background: rgba(0, 255, 136, 0.05);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: rgba(0, 217, 255, 0.1);
+            color: var(--accent-cyan);
+            font-weight: 600;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .content h2 {
+                font-size: 1.5rem;
+            }
+
+            .meta {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="breadcrumb">
+                <a href="/">Home</a> / <a href="/guides/">Guides</a> / Threat Intelligence for SOC
+            </div>
+            <h1>Threat Intelligence for SOC Analysts</h1>
+            <div class="meta">
+                <span>📖 10 min read</span>
+                <span>🎯 Intermediate</span>
+                <span>📅 Updated: November 2025</span>
+            </div>
+        </header>
+
+        <div class="content">
+            <p>
+                Threat intelligence (TI) is one of the most powerful tools in a Security Operations Center (SOC)
+                analyst's arsenal. When properly integrated into your security workflow, TI transforms reactive incident
+                response into proactive threat hunting and defense. This guide will show you how to effectively leverage
+                threat intelligence feeds for security operations and incident response.
+            </p>
+
+            <h2>What is Threat Intelligence?</h2>
+            <p>
+                Threat intelligence is evidence-based knowledge about existing or emerging threats that can help you
+                make informed security decisions. It includes:
+            </p>
+            <ul>
+                <li><strong>Indicators of Compromise (IOCs)</strong> - IP addresses, domains, file hashes, URLs
+                    associated with malicious activity</li>
+                <li><strong>Tactics, Techniques, and Procedures (TTPs)</strong> - How threat actors operate</li>
+                <li><strong>Threat Actor Profiles</strong> - Information about specific groups and their motivations
+                </li>
+                <li><strong>Vulnerability Intelligence</strong> - Information about exploited vulnerabilities</li>
+                <li><strong>Contextual Information</strong> - Campaign details, attribution, and impact analysis</li>
+            </ul>
+
+            <h2>Types of Threat Intelligence</h2>
+
+            <h3>1. Strategic Intelligence</h3>
+            <p>
+                High-level intelligence for executive decision-making. Includes threat landscape trends, geopolitical
+                risks, and industry-specific threats. Useful for risk assessments and security strategy planning.
+            </p>
+
+            <h3>2. Tactical Intelligence</h3>
+            <p>
+                Information about threat actor TTPs. Helps security teams understand how attacks are conducted and how
+                to detect them. Essential for threat hunting and detection engineering.
+            </p>
+
+            <h3>3. Operational Intelligence</h3>
+            <p>
+                Details about specific attacks, campaigns, or threat actors. Includes information about ongoing threats
+                and their infrastructure. Critical for incident response and threat tracking.
+            </p>
+
+            <h3>4. Technical Intelligence</h3>
+            <p>
+                Specific IOCs like IP addresses, domains, file hashes, and malware signatures. Most commonly used by SOC
+                analysts for detection and blocking. Directly actionable in security tools.
+            </p>
+
+            <h2>Key Threat Intelligence Feeds</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feed</th>
+                        <th>Type</th>
+                        <th>Best For</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CISA KEV</td>
+                        <td>Vulnerability</td>
+                        <td>Patch prioritization</td>
+                    </tr>
+                    <tr>
+                        <td>AlienVault OTX</td>
+                        <td>IOCs</td>
+                        <td>Community-driven threat data</td>
+                    </tr>
+                    <tr>
+                        <td>Abuse.ch</td>
+                        <td>Malware</td>
+                        <td>Malware hashes, C2 servers</td>
+                    </tr>
+                    <tr>
+                        <td>OpenPhish</td>
+                        <td>Phishing</td>
+                        <td>Phishing URL detection</td>
+                    </tr>
+                    <tr>
+                        <td>MISP</td>
+                        <td>Multi-source</td>
+                        <td>Collaborative threat sharing</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Integrating TI into Your SOC Workflow</h2>
+
+            <h3>Step 1: Define Your Intelligence Requirements</h3>
+            <p>
+                Before consuming threat intelligence, identify what you actually need:
+            </p>
+            <ul>
+                <li>What threats are most relevant to your organization?</li>
+                <li>What industries or geographies do you operate in?</li>
+                <li>What assets are you trying to protect?</li>
+                <li>What detection capabilities do you already have?</li>
+            </ul>
+
+            <div class="highlight-box">
+                <strong>Pro Tip:</strong> Don't try to consume every threat feed available. Focus on high-quality,
+                relevant feeds that align with your organization's risk profile.
+            </div>
+
+            <h3>Step 2: Automate Feed Ingestion</h3>
+            <p>
+                Manual threat intelligence consumption doesn't scale. Automate feed ingestion into your security tools:
+            </p>
+            <ul>
+                <li><strong>SIEM Integration</strong> - Ingest IOCs for correlation with security events</li>
+                <li><strong>Firewall/IPS</strong> - Block malicious IPs and domains automatically</li>
+                <li><strong>EDR/XDR</strong> - Alert on file hash matches</li>
+                <li><strong>Email Gateway</strong> - Block phishing URLs and malicious attachments</li>
+                <li><strong>Threat Intelligence Platform (TIP)</strong> - Centralize and enrich all TI data</li>
+            </ul>
+
+            <h3>Step 3: Enrich and Contextualize</h3>
+            <p>
+                Raw IOCs are just data points. Add context to make them actionable:
+            </p>
+            <ul>
+                <li>Confidence scores (how reliable is this indicator?)</li>
+                <li>Threat severity (how dangerous is this threat?)</li>
+                <li>First/last seen dates (is this still active?)</li>
+                <li>Associated campaigns or threat actors</li>
+                <li>Recommended actions (block, alert, investigate)</li>
+            </ul>
+
+            <h3>Step 4: Operationalize in Detection</h3>
+            <p>
+                Use threat intelligence to improve your detection capabilities:
+            </p>
+
+            <pre><code># Example: SIEM correlation rule using threat intelligence
+# Alert when internal host communicates with known C2 server
+
+IF (network_connection.destination_ip IN threat_intel.malicious_ips)
+AND (network_connection.source_ip IN internal_networks)
+THEN
+    ALERT "Potential C2 Communication Detected"
+    SEVERITY: HIGH
+    RECOMMENDED_ACTION: Isolate host, investigate</code></pre>
+
+            <h3>Step 5: Enable Threat Hunting</h3>
+            <p>
+                Use TI to proactively hunt for threats in your environment:
+            </p>
+            <ul>
+                <li>Search historical logs for IOCs from recent campaigns</li>
+                <li>Look for TTPs associated with threat actors targeting your industry</li>
+                <li>Identify anomalies that match known attack patterns</li>
+                <li>Investigate suspicious activity that correlates with TI</li>
+            </ul>
+
+            <h2>Common Pitfalls and How to Avoid Them</h2>
+
+            <h3>1. Alert Fatigue from False Positives</h3>
+            <div class="warning-box">
+                <strong>Problem:</strong> Low-quality threat feeds generate too many false positives, overwhelming
+                analysts.
+                <br><br>
+                <strong>Solution:</strong> Implement confidence scoring, use reputable feeds, and tune detection rules
+                based on your environment.
+            </div>
+
+            <h3>2. Stale Intelligence</h3>
+            <p>
+                IOCs have a shelf life. An IP address that was malicious last year might now belong to a legitimate
+                organization.
+            </p>
+            <ul>
+                <li>Implement TTL (time-to-live) for IOCs</li>
+                <li>Regularly refresh threat feeds</li>
+                <li>Remove expired indicators from blocklists</li>
+            </ul>
+
+            <h3>3. Lack of Context</h3>
+            <p>
+                An IP address alone doesn't tell you much. Always ask:
+            </p>
+            <ul>
+                <li>Why is this indicator malicious?</li>
+                <li>What campaign is it associated with?</li>
+                <li>What should I do if I see it?</li>
+            </ul>
+
+            <h3>4. Over-Reliance on IOCs</h3>
+            <p>
+                Threat actors can easily change IOCs (new domains, IPs, file hashes). Focus on:
+            </p>
+            <ul>
+                <li><strong>Behavioral detection</strong> - Detect malicious behavior, not just known indicators</li>
+                <li><strong>TTP-based hunting</strong> - Look for attack techniques that are harder to change</li>
+                <li><strong>Anomaly detection</strong> - Identify deviations from normal behavior</li>
+            </ul>
+
+            <h2>Practical Workflow Example</h2>
+
+            <h3>Morning Threat Intelligence Review</h3>
+            <ol>
+                <li><strong>Check overnight TI alerts</strong> - Review any matches between your environment and new
+                    IOCs</li>
+                <li><strong>Review new campaigns</strong> - Read about emerging threats relevant to your industry</li>
+                <li><strong>Update detection rules</strong> - Add new TTPs to your detection logic</li>
+                <li><strong>Threat hunt</strong> - Search for historical evidence of new threats</li>
+                <li><strong>Share findings</strong> - Brief team on critical threats and recommended actions</li>
+            </ol>
+
+            <h3>Incident Response with TI</h3>
+            <p>
+                When investigating an incident:
+            </p>
+            <ol>
+                <li><strong>Extract IOCs</strong> - Pull IPs, domains, hashes from the incident</li>
+                <li><strong>Pivot on TI</strong> - Search threat feeds for related indicators</li>
+                <li><strong>Identify campaign</strong> - Determine if this is part of a known attack</li>
+                <li><strong>Understand TTPs</strong> - Learn how the threat actor operates</li>
+                <li><strong>Predict next steps</strong> - Anticipate what the attacker might do next</li>
+                <li><strong>Share intelligence</strong> - Contribute your findings back to the community</li>
+            </ol>
+
+            <h2>Tools for Threat Intelligence</h2>
+
+            <h3>Free/Open Source</h3>
+            <ul>
+                <li><strong>MISP</strong> - Open-source threat intelligence platform</li>
+                <li><strong>OpenCTI</strong> - Cyber threat intelligence platform</li>
+                <li><strong>TheHive</strong> - Security incident response platform with TI integration</li>
+                <li><strong>Yeti</strong> - Platform for organizing observables and IOCs</li>
+            </ul>
+
+            <h3>Commercial</h3>
+            <ul>
+                <li><strong>Recorded Future</strong> - Real-time threat intelligence</li>
+                <li><strong>ThreatConnect</strong> - Threat intelligence platform</li>
+                <li><strong>Anomali</strong> - ThreatStream platform</li>
+                <li><strong>CrowdStrike Falcon Intelligence</strong> - Integrated TI with EDR</li>
+            </ul>
+
+            <h2>Measuring TI Effectiveness</h2>
+
+            <p>
+                Track these metrics to evaluate your threat intelligence program:
+            </p>
+            <ul>
+                <li><strong>Detection Rate</strong> - How many threats were detected using TI?</li>
+                <li><strong>Time to Detection</strong> - How quickly did TI help identify threats?</li>
+                <li><strong>False Positive Rate</strong> - How many TI alerts were false positives?</li>
+                <li><strong>Coverage</strong> - What percentage of your attack surface is covered by TI?</li>
+                <li><strong>Actionability</strong> - What percentage of TI led to concrete actions?</li>
+            </ul>
+
+            <h2>Best Practices</h2>
+
+            <div class="success-box">
+                <ul style="margin: 0;">
+                    <li><strong>Start small</strong> - Begin with 2-3 high-quality feeds, expand gradually</li>
+                    <li><strong>Automate everything</strong> - Manual TI consumption doesn't scale</li>
+                    <li><strong>Add context</strong> - Raw IOCs are useless without context</li>
+                    <li><strong>Share intelligence</strong> - Contribute back to the community</li>
+                    <li><strong>Focus on TTPs</strong> - Behavioral detection beats IOC matching</li>
+                    <li><strong>Measure impact</strong> - Track how TI improves your security posture</li>
+                    <li><strong>Train your team</strong> - Ensure analysts know how to use TI effectively</li>
+                </ul>
+            </div>
+
+            <h2>Conclusion</h2>
+            <p>
+                Threat intelligence is not just about collecting IOCs—it's about understanding your adversaries and
+                using that knowledge to defend proactively. When properly integrated into your SOC workflow, TI
+                transforms security operations from reactive firefighting to strategic defense.
+            </p>
+            <p>
+                Start with clear intelligence requirements, automate feed ingestion, enrich data with context, and
+                operationalize it in your detection and response processes. Most importantly, remember that threat
+                intelligence is only as valuable as the actions it enables.
+            </p>
+
+            <div class="highlight-box">
+                <strong>Next Steps:</strong> Check out our <a href="/guides/openphish-integration.html">OpenPhish Feed
+                    Integration Guide</a> to learn how to integrate phishing intelligence into your security stack.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

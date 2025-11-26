@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>OpenPhish Feed Integration Guide | TheHGTech</title>
+    <meta name="title" content="OpenPhish Feed Integration Guide | TheHGTech">
+    <meta name="description"
+        content="Complete guide to integrating OpenPhish phishing URL feeds into your security stack. Learn how to automate phishing detection and response.">
+    <meta name="keywords"
+        content="OpenPhish, phishing detection, URL feeds, security automation, email security, phishing prevention">
+    <meta name="author" content="TheHGTech">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thehgtech.com/guides/openphish-integration.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/guides/openphish-integration.html">
+    <meta property="og:title" content="OpenPhish Feed Integration Guide">
+    <meta property="og:description" content="Learn how to integrate OpenPhish feeds into your security infrastructure.">
+    <meta property="og:image" content="https://thehgtech.com/images/openphish-og.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://thehgtech.com/guides/openphish-integration.html">
+    <meta name="twitter:title" content="OpenPhish Feed Integration Guide">
+    <meta name="twitter:description" content="Complete guide to OpenPhish phishing URL feed integration.">
+    <meta name="twitter:image" content="https://thehgtech.com/images/openphish-twitter.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF4C4C;
+            --accent-green: #00ff88;
+            --glow-cyan: rgba(0, 217, 255, 0.5);
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+            --glass: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Header */
+        header {
+            padding: 3rem 0;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+        }
+
+        .breadcrumb {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .breadcrumb a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .breadcrumb a:hover {
+            color: var(--glow-cyan);
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-red));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .meta {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+
+        /* Content */
+        .content {
+            color: var(--text-secondary);
+            line-height: 1.9;
+        }
+
+        .content h2 {
+            color: var(--accent-cyan);
+            font-size: 1.8rem;
+            margin: 2.5rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .content h3 {
+            color: var(--text-primary);
+            font-size: 1.4rem;
+            margin: 2rem 0 1rem;
+        }
+
+        .content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .content ul,
+        .content ol {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .content li {
+            margin-bottom: 0.8rem;
+        }
+
+        .content strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .content a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        .content a:hover {
+            border-bottom-color: var(--accent-cyan);
+        }
+
+        .content code {
+            background: var(--bg-card);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 0.9em;
+            color: var(--accent-green);
+        }
+
+        .content pre {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            overflow-x: auto;
+            margin-bottom: 1.5rem;
+        }
+
+        .content pre code {
+            background: none;
+            padding: 0;
+        }
+
+        .highlight-box {
+            background: rgba(0, 217, 255, 0.05);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .warning-box {
+            background: rgba(255, 76, 76, 0.05);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .success-box {
+            background: rgba(0, 255, 136, 0.05);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: rgba(0, 217, 255, 0.1);
+            color: var(--accent-cyan);
+            font-weight: 600;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .content h2 {
+                font-size: 1.5rem;
+            }
+
+            .meta {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="breadcrumb">
+                <a href="/">Home</a> / <a href="/guides/">Guides</a> / OpenPhish Integration
+            </div>
+            <h1>OpenPhish Feed Integration Guide</h1>
+            <div class="meta">
+                <span>📖 8 min read</span>
+                <span>🎯 Advanced</span>
+                <span>📅 Updated: November 2025</span>
+            </div>
+        </header>
+
+        <div class="content">
+            <p>
+                Phishing remains one of the most effective attack vectors, with over 90% of cyberattacks starting with a
+                phishing email. OpenPhish provides a free, real-time feed of active phishing URLs that you can integrate
+                into your security infrastructure to detect and block phishing attempts before they reach your users.
+            </p>
+
+            <h2>What is OpenPhish?</h2>
+            <p>
+                <a href="https://openphish.com" target="_blank">OpenPhish</a> is a fully automated platform that
+                identifies phishing sites using proprietary Artificial Intelligence algorithms. The service provides:
+            </p>
+            <ul>
+                <li><strong>Real-time phishing URL feed</strong> - Updated continuously with newly discovered phishing
+                    sites</li>
+                <li><strong>Free tier</strong> - Public feed with basic phishing URLs</li>
+                <li><strong>Premium tier</strong> - Enhanced feed with additional metadata and faster updates</li>
+                <li><strong>JSON and text formats</strong> - Easy integration into various security tools</li>
+            </ul>
+
+            <h2>Why Integrate OpenPhish?</h2>
+
+            <h3>Proactive Defense</h3>
+            <p>
+                Block phishing URLs before they reach your users' inboxes. Email gateways, web proxies, and DNS filters
+                can use OpenPhish data to prevent access to known phishing sites.
+            </p>
+
+            <h3>Incident Response</h3>
+            <p>
+                When investigating suspicious emails, quickly check if URLs are in the OpenPhish database. This helps
+                triage potential phishing incidents faster.
+            </p>
+
+            <h3>Threat Hunting</h3>
+            <p>
+                Search your proxy logs, email logs, and DNS logs for historical matches against OpenPhish URLs to
+                identify users who may have been targeted.
+            </p>
+
+            <h2>Understanding the OpenPhish Feed</h2>
+
+            <h3>Feed Format</h3>
+            <p>
+                OpenPhish provides feeds in two formats:
+            </p>
+
+            <h4>1. Text Format (Free Tier)</h4>
+            <pre><code>https://example-phishing-site.com/login
+https://another-phishing-page.net/verify
+https://fake-bank-login.com/account</code></pre>
+
+            <p>
+                Simple newline-separated list of phishing URLs. Easy to parse and integrate.
+            </p>
+
+            <h4>2. JSON Format (Premium Tier)</h4>
+            <pre><code>{
+  "url": "https://example-phishing-site.com/login",
+  "phish_detail_url": "https://openphish.com/phish/...",
+  "submission_time": "2025-11-26T12:34:56Z",
+  "verified": "yes",
+  "target": "PayPal",
+  "sector": "Financial Services"
+}</code></pre>
+
+            <p>
+                Enhanced format with metadata including target brand, verification status, and submission time.
+            </p>
+
+            <h2>Integration Methods</h2>
+
+            <h3>Method 1: Email Gateway Integration</h3>
+            <p>
+                Block phishing URLs at the email gateway level before they reach user inboxes.
+            </p>
+
+            <h4>Example: Proofpoint Integration</h4>
+            <pre><code># Python script to fetch OpenPhish feed and update Proofpoint blocklist
+
+import requests
+import json
+
+# Fetch OpenPhish feed
+response = requests.get('https://openphish.com/feed.txt')
+phishing_urls = response.text.strip().split('\n')
+
+# Extract domains from URLs
+domains = set()
+for url in phishing_urls:
+    domain = url.split('/')[2]  # Extract domain from URL
+    domains.add(domain)
+
+# Update Proofpoint blocklist via API
+for domain in domains:
+    # Add to Proofpoint blocklist
+    # (Actual API call would go here)
+    print(f"Blocking domain: {domain}")</code></pre>
+
+            <h3>Method 2: Web Proxy/Firewall Integration</h3>
+            <p>
+                Block access to phishing sites at the network perimeter.
+            </p>
+
+            <h4>Example: Palo Alto Firewall Integration</h4>
+            <pre><code># Script to create custom URL category in Palo Alto
+
+import requests
+import xml.etree.ElementTree as ET
+
+# Fetch OpenPhish feed
+response = requests.get('https://openphish.com/feed.txt')
+phishing_urls = response.text.strip().split('\n')
+
+# Create XML for custom URL category
+root = ET.Element('custom-url-category')
+ET.SubElement(root, 'name').text = 'OpenPhish-Blocklist'
+list_elem = ET.SubElement(root, 'list')
+
+for url in phishing_urls[:1000]:  # Limit to 1000 URLs
+    ET.SubElement(list_elem, 'member').text = url
+
+# Push to Palo Alto via API
+# (Actual API call would go here)</code></pre>
+
+            <h3>Method 3: SIEM Integration</h3>
+            <p>
+                Correlate OpenPhish data with security events to detect phishing attempts.
+            </p>
+
+            <h4>Example: Splunk Integration</h4>
+            <pre><code># Splunk search to correlate web proxy logs with OpenPhish feed
+
+index=proxy
+| lookup openphish_feed.csv url OUTPUT phishing_status
+| where phishing_status="phishing"
+| stats count by src_ip, url, user
+| where count > 0
+| table _time, src_ip, user, url
+| sort -_time</code></pre>
+
+            <div class="highlight-box">
+                <strong>Pro Tip:</strong> Schedule a daily job to fetch the OpenPhish feed and update your lookup table
+                in Splunk.
+            </div>
+
+            <h3>Method 4: DNS Filtering</h3>
+            <p>
+                Block phishing domains at the DNS level using services like Pi-hole or Cisco Umbrella.
+            </p>
+
+            <h4>Example: Pi-hole Integration</h4>
+            <pre><code>#!/bin/bash
+# Script to update Pi-hole blocklist with OpenPhish domains
+
+# Fetch OpenPhish feed
+curl -s https://openphish.com/feed.txt > /tmp/openphish.txt
+
+# Extract domains and create Pi-hole format
+cat /tmp/openphish.txt | \
+  awk -F/ '{print $3}' | \
+  sort -u | \
+  awk '{print "0.0.0.0 " $1}' > /etc/pihole/openphish-blocklist.txt
+
+# Reload Pi-hole
+pihole restartdns</code></pre>
+
+            <h2>Automation Script Example</h2>
+
+            <p>
+                Here's a complete Python script to fetch, parse, and integrate OpenPhish data:
+            </p>
+
+            <pre><code>#!/usr/bin/env python3
+"""
+OpenPhish Feed Integration Script
+Fetches OpenPhish feed and integrates with security tools
+"""
+
+import requests
+import json
+import sqlite3
+from datetime import datetime
+from urllib.parse import urlparse
+
+class OpenPhishIntegration:
+    def __init__(self, db_path='openphish.db'):
+        self.feed_url = 'https://openphish.com/feed.txt'
+        self.db_path = db_path
+        self.init_database()
+    
+    def init_database(self):
+        """Initialize SQLite database for storing phishing URLs"""
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+        cursor.execute('''
+            CREATE TABLE IF NOT EXISTS phishing_urls (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                url TEXT UNIQUE,
+                domain TEXT,
+                first_seen TIMESTAMP,
+                last_seen TIMESTAMP,
+                status TEXT DEFAULT 'active'
+            )
+        ''')
+        conn.commit()
+        conn.close()
+    
+    def fetch_feed(self):
+        """Fetch latest OpenPhish feed"""
+        try:
+            response = requests.get(self.feed_url, timeout=30)
+            response.raise_for_status()
+            return response.text.strip().split('\n')
+        except requests.exceptions.RequestException as e:
+            print(f"Error fetching feed: {e}")
+            return []
+    
+    def parse_url(self, url):
+        """Extract domain from URL"""
+        parsed = urlparse(url)
+        return parsed.netloc
+    
+    def update_database(self, urls):
+        """Update database with new phishing URLs"""
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+        now = datetime.now()
+        
+        for url in urls:
+            domain = self.parse_url(url)
+            cursor.execute('''
+                INSERT INTO phishing_urls (url, domain, first_seen, last_seen)
+                VALUES (?, ?, ?, ?)
+                ON CONFLICT(url) DO UPDATE SET last_seen = ?
+            ''', (url, domain, now, now, now))
+        
+        conn.commit()
+        conn.close()
+        print(f"Updated database with {len(urls)} URLs")
+    
+    def get_active_domains(self):
+        """Get list of active phishing domains"""
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+        cursor.execute('''
+            SELECT DISTINCT domain FROM phishing_urls
+            WHERE status = 'active'
+        ''')
+        domains = [row[0] for row in cursor.fetchall()]
+        conn.close()
+        return domains
+    
+    def check_url(self, url):
+        """Check if URL is in phishing database"""
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+        cursor.execute('''
+            SELECT url, first_seen FROM phishing_urls
+            WHERE url = ? AND status = 'active'
+        ''', (url,))
+        result = cursor.fetchone()
+        conn.close()
+        return result is not None
+    
+    def run(self):
+        """Main execution"""
+        print("Fetching OpenPhish feed...")
+        urls = self.fetch_feed()
+        
+        if urls:
+            print(f"Retrieved {len(urls)} phishing URLs")
+            self.update_database(urls)
+            
+            # Export for other tools
+            domains = self.get_active_domains()
+            with open('phishing_domains.txt', 'w') as f:
+                f.write('\n'.join(domains))
+            print(f"Exported {len(domains)} unique domains")
+        else:
+            print("No URLs retrieved")
+
+if __name__ == '__main__':
+    integrator = OpenPhishIntegration()
+    integrator.run()</code></pre>
+
+            <h2>Best Practices</h2>
+
+            <div class="success-box">
+                <ul style="margin: 0;">
+                    <li><strong>Update frequently</strong> - Fetch the feed every 30-60 minutes for fresh data</li>
+                    <li><strong>Implement TTL</strong> - Remove URLs older than 7 days (phishing sites are often
+                        short-lived)</li>
+                    <li><strong>Validate before blocking</strong> - Test URLs before adding to production blocklists
+                    </li>
+                    <li><strong>Monitor false positives</strong> - Track blocked URLs and investigate user complaints
+                    </li>
+                    <li><strong>Combine with other feeds</strong> - Use OpenPhish alongside PhishTank, URLhaus, etc.
+                    </li>
+                    <li><strong>Log everything</strong> - Keep records of blocked attempts for incident response</li>
+                </ul>
+            </div>
+
+            <h2>Common Pitfalls</h2>
+
+            <h3>1. Blocking Legitimate Sites</h3>
+            <div class="warning-box">
+                <strong>Problem:</strong> Occasionally, legitimate sites may be incorrectly flagged.
+                <br><br>
+                <strong>Solution:</strong> Implement a whitelist for known-good domains and provide users with a way to
+                report false positives.
+            </div>
+
+            <h3>2. Stale Data</h3>
+            <p>
+                Phishing sites are often taken down quickly. Blocking a URL that no longer exists wastes resources.
+            </p>
+            <ul>
+                <li>Implement automatic expiration for old URLs</li>
+                <li>Periodically verify if URLs are still active</li>
+                <li>Remove inactive URLs from blocklists</li>
+            </ul>
+
+            <h3>3. Performance Impact</h3>
+            <p>
+                Large blocklists can impact firewall/proxy performance.
+            </p>
+            <ul>
+                <li>Limit blocklist size (e.g., 10,000 most recent URLs)</li>
+                <li>Use domain-level blocking instead of full URLs when possible</li>
+                <li>Optimize database queries for fast lookups</li>
+            </ul>
+
+            <h2>Measuring Effectiveness</h2>
+
+            <p>
+                Track these metrics to evaluate your OpenPhish integration:
+            </p>
+            <ul>
+                <li><strong>Blocked Attempts</strong> - How many phishing attempts were blocked?</li>
+                <li><strong>User Reports</strong> - How many users reported blocked phishing emails?</li>
+                <li><strong>False Positives</strong> - How many legitimate sites were incorrectly blocked?</li>
+                <li><strong>Coverage</strong> - What percentage of phishing attempts are caught?</li>
+                <li><strong>Response Time</strong> - How quickly are new phishing URLs blocked?</li>
+            </ul>
+
+            <h2>Advanced: Premium Feed Features</h2>
+
+            <p>
+                The OpenPhish premium feed provides additional metadata:
+            </p>
+            <ul>
+                <li><strong>Target Brand</strong> - Which company/service is being impersonated</li>
+                <li><strong>Verification Status</strong> - Confidence level of phishing classification</li>
+                <li><strong>Sector Information</strong> - Industry being targeted</li>
+                <li><strong>Faster Updates</strong> - More frequent feed refreshes</li>
+                <li><strong>Historical Data</strong> - Access to past phishing campaigns</li>
+            </ul>
+
+            <p>
+                Premium feed enables more sophisticated detection rules:
+            </p>
+
+            <pre><code># Example: Alert on phishing targeting financial sector
+if phishing_url.sector == "Financial Services":
+    if user.department == "Finance":
+        alert_priority = "HIGH"
+        notify_security_team()
+    else:
+        alert_priority = "MEDIUM"</code></pre>
+
+            <h2>Integration Checklist</h2>
+
+            <ol>
+                <li>✅ Identify integration points (email gateway, proxy, firewall, SIEM)</li>
+                <li>✅ Set up automated feed fetching (cron job, scheduled task)</li>
+                <li>✅ Implement data storage (database, file, API)</li>
+                <li>✅ Configure blocklists in security tools</li>
+                <li>✅ Set up monitoring and alerting</li>
+                <li>✅ Create whitelist for false positive handling</li>
+                <li>✅ Implement TTL/expiration for old URLs</li>
+                <li>✅ Document integration for team reference</li>
+                <li>✅ Test with known phishing URLs</li>
+                <li>✅ Monitor effectiveness and tune as needed</li>
+            </ol>
+
+            <h2>Conclusion</h2>
+            <p>
+                OpenPhish provides a valuable, free resource for combating phishing attacks. By integrating this feed
+                into your email gateways, web proxies, firewalls, and SIEM systems, you can significantly reduce the
+                risk of successful phishing attacks against your organization.
+            </p>
+            <p>
+                Start with a simple integration—perhaps blocking at the email gateway level—and expand from there.
+                Monitor effectiveness, tune for false positives, and combine with other threat intelligence feeds for
+                comprehensive phishing protection.
+            </p>
+
+            <div class="highlight-box">
+                <strong>Next Steps:</strong> Check out our <a href="/guides/threat-intelligence-soc.html">Threat
+                    Intelligence for SOC Analysts Guide</a> to learn how to integrate OpenPhish with other threat
+                intelligence feeds.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
