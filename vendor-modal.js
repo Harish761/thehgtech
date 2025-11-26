@@ -11,14 +11,14 @@ async function loadVendorIOCs(vendorName) {
     }
 
     const vendorMeta = window.threatIntelData.vendors[vendorName];
-    if (!vendorMeta || !vendorMeta.r2Url) {
+    if (!vendorMeta || !vendorMeta.iocDataUrl) {
         console.error(`No URL for ${vendorName}`);
         return null;
     }
 
     try {
         console.log(`Fetching ${vendorName} IOCs from GitHub Pages...`);
-        const response = await fetch(vendorMeta.r2Url + '?t=' + Date.now());
+        const response = await fetch(vendorMeta.iocDataUrl + '?t=' + Date.now());
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const data = await response.json();
         vendorDataCache[vendorName] = data;  // Cache full response with metadata
