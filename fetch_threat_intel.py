@@ -2,13 +2,16 @@
 """
 Enhanced Threat Intel Automation - Multi-Vendor Dashboard
 ---------------------------------------------------------
-Pulls from 6 reputable security sources with per-vendor tracking:
+Pulls from 9 reputable security sources with per-vendor tracking:
   • OpenPhish (phishing URLs)
-  • Malware Bazaar (malware samples, hashes, URLs)
+  • Malware Bazaar (malware samples, hashes, URLs - abuse.ch)
   • Spamhaus DROP (hijacked IP ranges)
   • CINS Army (malicious IPs)
   • Blocklist.de (SSH/brute force attackers)
-  • AlienVault OTX (TAXII/STIX threat intelligence)
+  • URLhaus (malware distribution URLs - abuse.ch)
+  • ThreatFox (multi-type IOCs - abuse.ch)
+  • Feodo Tracker (botnet C2 IPs - abuse.ch)
+  • SSL Blacklist (malicious SSL certificates - abuse.ch)
 
 Features:
   • Unlimited IOCs per vendor (R2 storage)
@@ -16,7 +19,7 @@ Features:
   • RECENT tag for IOCs 1-6 hours old
   • Hourly data updates, daily analytics
   • Overview tab with aggregated view
-  • TAXII/STIX support for enriched threat intelligence
+  • Complete abuse.ch family integration (5 feeds)
 """
 
 import os
@@ -33,15 +36,6 @@ try:
 except ImportError:
     print("Warning: OpenAI library not installed. AI insights will be disabled.")
     OPENAI_AVAILABLE = False
-
-# TAXII/STIX imports for AlienVault OTX
-try:
-    from taxii2client.v21 import Server, as_pages
-    import stix2
-    TAXII_AVAILABLE = True
-except ImportError:
-    print("Warning: TAXII/STIX libraries not installed. AlienVault OTX will be disabled.")
-    TAXII_AVAILABLE = False
 
 # ──────────────────────────────────────────────────────────────
 # Config
@@ -114,12 +108,33 @@ VENDORS = {
         "website": "https://www.blocklist.de/",
         "updateFrequency": "Hourly"
     },
-    "AlienVault OTX": {
-        "url": "https://otx.alienvault.com/taxii2/",
-        "type": "taxii",
-        "description": "TAXII-based threat intelligence with STIX 2.1 format. Enriched IOCs with confidence scores, threat actors, and kill chain phases.",
-        "website": "https://otx.alienvault.com/",
+    "URLhaus": {
+        "url": "https://urlhaus.abuse.ch/downloads/csv_recent/",
+        "type": "csv",
+        "description": "Malware distribution URLs from URLhaus. Tracks active malware hosting sites and payload delivery infrastructure.",
+        "website": "https://urlhaus.abuse.ch/",
         "updateFrequency": "Real-time"
+    },
+    "ThreatFox": {
+        "url": "https://threatfox.abuse.ch/export/csv/recent/",
+        "type": "csv",
+        "description": "Multi-type IOC feed from ThreatFox. Includes IPs, domains, URLs, and hashes with malware family attribution.",
+        "website": "https://threatfox.abuse.ch/",
+        "updateFrequency": "Real-time"
+    },
+    "Feodo Tracker": {
+        "url": "https://feodotracker.abuse.ch/downloads/ipblocklist.txt",
+        "type": "text",
+        "description": "Botnet C2 server IPs from Feodo Tracker. Tracks Dridex, Emotet, TrickBot, QakBot, and BazarLoader.",
+        "website": "https://feodotracker.abuse.ch/",
+        "updateFrequency": "Hourly"
+    },
+    "SSL Blacklist": {
+        "url": "https://sslbl.abuse.ch/blacklist/sslblacklist.csv",
+        "type": "csv",
+        "description": "Malicious SSL certificates used by botnet C2 servers. Helps detect encrypted malware communications.",
+        "website": "https://sslbl.abuse.ch/",
+        "updateFrequency": "Daily"
     }
 }
 
@@ -190,13 +205,6 @@ def fetch_vendor_iocs(vendor_name, config):
                 if ioc:
                     iocs.append(ioc)
         
-        elif config["type"] == "taxii":
-            # TAXII/STIX feed (AlienVault OTX)
-            if not TAXII_AVAILABLE:
-                print(f"  - TAXII libraries not available, skipping {vendor_name}")
-                return []
-            iocs = fetch_taxii_stix(vendor_name, config, now, ioc_history)
-        
         else:  # RSS type (if any remain)
             feed = feedparser.parse(config["url"])
             # No cap - store all IOCs for R2
@@ -214,158 +222,6 @@ def fetch_vendor_iocs(vendor_name, config):
     # Prune IOCs older than 7 days before returning
     iocs = prune_old_iocs(iocs, retention_days=7)
     print(f"    ✓ Returning {len(iocs)} IOCs after 7-day retention pruning")
-    
-    return iocs
-
-# ──────────────────────────────────────────────────────────────
-# TAXII/STIX Parsing Functions
-# ──────────────────────────────────────────────────────────────
-
-def parse_stix_pattern(pattern):
-    """
-    Parse STIX pattern to extract IOC indicator
-    Examples:
-      [ipv4-addr:value = '1.2.3.4'] -> ('ip', '1.2.3.4')
-      [domain-name:value = 'evil.com'] -> ('domain', 'evil.com')
-      [url:value = 'http://phish.com'] -> ('url', 'http://phish.com')
-      [file:hashes.MD5 = 'abc123'] -> ('hash', 'abc123')
-    """
-    import re
-    
-    # IP address pattern
-    ip_match = re.search(r"ipv4-addr:value\s*=\s*'([^']+)'", pattern)
-    if ip_match:
-        return ('ip', ip_match.group(1))
-    
-    # Domain pattern
-    domain_match = re.search(r"domain-name:value\s*=\s*'([^']+)'", pattern)
-    if domain_match:
-        return ('domain', domain_match.group(1))
-    
-    # URL pattern
-    url_match = re.search(r"url:value\s*=\s*'([^']+)'", pattern)
-    if url_match:
-        return ('url', url_match.group(1))
-    
-    # File hash patterns (MD5, SHA256, SHA1)
-    hash_match = re.search(r"file:hashes\.(?:MD5|SHA256|SHA1)\s*=\s*'([^']+)'", pattern)
-    if hash_match:
-        return ('hash', hash_match.group(1))
-    
-    return (None, None)
-
-def fetch_taxii_stix(vendor_name, config, now, ioc_history):
-    """
-    Fetch IOCs from TAXII server with STIX 2.1 parsing
-    Uses AlienVault OTX as the TAXII source
-    """
-    iocs = []
-    
-    try:
-        # Get API key from environment (optional for public feeds)
-        api_key = os.environ.get('ALIENVAULT_API_KEY', '')
-        
-        print(f"  - Connecting to TAXII server: {config['url']}")
-        
-        # Connect to TAXII server
-        if api_key:
-            server = Server(config['url'], user=api_key, password='')
-        else:
-            # Try without authentication for public feeds
-            server = Server(config['url'])
-        
-        # Get the first API root
-        api_roots = server.api_roots
-        if not api_roots:
-            print(f"  - No API roots found on TAXII server")
-            return []
-        
-        api_root = api_roots[0]
-        print(f"  - Found API root: {api_root.title}")
-        
-        # Get collections
-        collections = api_root.collections
-        if not collections:
-            print(f"  - No collections found")
-            return []
-        
-        print(f"  - Found {len(collections)} collection(s)")
-        
-        # Fetch indicators from first collection (or "main" collection)
-        collection = collections[0]
-        print(f"  - Fetching from collection: {collection.title}")
-        
-        # Fetch STIX objects (paginated, limit to 500 for performance)
-        count = 0
-        max_indicators = 500  # Limit for performance
-        
-        for bundle in as_pages(collection.get_objects, per_request=100):
-            objects = bundle.get("objects", [])
-            
-            for obj in objects:
-                if count >= max_indicators:
-                    break
-                
-                if obj.get("type") != "indicator":
-                    continue
-                
-                # Parse STIX indicator
-                pattern = obj.get("pattern", "")
-                ioc_type, indicator = parse_stix_pattern(pattern)
-                
-                if not indicator or not ioc_type:
-                    continue
-                
-                # Extract metadata
-                confidence = obj.get("confidence", 50)
-                labels = obj.get("labels", [])
-                valid_from = obj.get("valid_from", now.isoformat())
-                description = obj.get("description", "TAXII/STIX threat indicator")
-                
-                # Extract threat actor if available
-                threat_actor = None
-                external_refs = obj.get("external_references", [])
-                for ref in external_refs:
-                    if "source_name" in ref:
-                        threat_actor = ref["source_name"]
-                        break
-                
-                # Determine tags from labels
-                tags = ['stix', 'taxii']
-                if labels:
-                    tags.extend(labels[:3])  # Limit tags
-                
-                # Build IOC object
-                ioc_obj = {
-                    'type': ioc_type,
-                    'indicator': defang_indicator(indicator, ioc_type),
-                    'description': description[:200],  # Limit length
-                    'timestamp': format_timestamp(now),
-                    'source': vendor_name,
-                    'sourceUrl': config['website'],
-                    'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
-                    'tags': tags,
-                    'addedAt': ioc_history.get(indicator, now.isoformat()),
-                    'confidence': confidence,
-                    'campaign': threat_actor or 'Unknown'
-                }
-                
-                # Add metadata if available
-                if threat_actor:
-                    ioc_obj['threatActor'] = threat_actor
-                
-                iocs.append(ioc_obj)
-                count += 1
-            
-            if count >= max_indicators:
-                break
-        
-        print(f"  - Fetched {len(iocs)} STIX indicators from TAXII")
-        
-    except Exception as e:
-        print(f"  - Error fetching TAXII/STIX data: {str(e)}")
-        # Return empty list on error (graceful degradation)
-        return []
     
     return iocs
 

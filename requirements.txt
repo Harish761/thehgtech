@@ -1,6 +1,4 @@
 requests
 openai
 boto3
-taxii2-client==2.3.0
-stix2==3.0.1
 feedparser
