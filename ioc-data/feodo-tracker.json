@@ -1,9 +1,58 @@
 {
   "vendor": "Feodo Tracker",
-  "lastUpdated": "2025-11-27T01:55:49.021390+05:30",
-  "totalCount": 0,
-  "displayedCount": 0,
+  "lastUpdated": "2025-11-27T02:34:26.278817+05:30",
+  "totalCount": 3,
+  "displayedCount": 3,
   "isCapped": false,
   "cappingStrategy": null,
-  "iocs": []
+  "iocs": [
+    {
+      "type": "ip",
+      "indicator": "152[.]89[.]239[.]34",
+      "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
+      "timestamp": "just now",
+      "source": "Feodo Tracker",
+      "sourceUrl": "https://feodotracker.abuse.ch/",
+      "analysisTime": "2025-11-27 02:34 IST",
+      "tags": [
+        "botnet",
+        "c2",
+        "banking-trojan"
+      ],
+      "addedAt": "2025-11-27T02:34:23.275037+05:30",
+      "campaign": "Banking Malware C2"
+    },
+    {
+      "type": "ip",
+      "indicator": "162[.]243[.]103[.]246",
+      "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
+      "timestamp": "just now",
+      "source": "Feodo Tracker",
+      "sourceUrl": "https://feodotracker.abuse.ch/",
+      "analysisTime": "2025-11-27 02:34 IST",
+      "tags": [
+        "botnet",
+        "c2",
+        "banking-trojan"
+      ],
+      "addedAt": "2025-11-27T02:34:23.275037+05:30",
+      "campaign": "Banking Malware C2"
+    },
+    {
+      "type": "ip",
+      "indicator": "51[.]210[.]96[.]48",
+      "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
+      "timestamp": "just now",
+      "source": "Feodo Tracker",
+      "sourceUrl": "https://feodotracker.abuse.ch/",
+      "analysisTime": "2025-11-27 02:34 IST",
+      "tags": [
+        "botnet",
+        "c2",
+        "banking-trojan"
+      ],
+      "addedAt": "2025-11-27T02:34:23.275037+05:30",
+      "campaign": "Banking Malware C2"
+    }
+  ]
 }
