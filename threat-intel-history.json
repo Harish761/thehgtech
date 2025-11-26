@@ -11,10 +11,10 @@
   "previous_hour_campaigns": {
     "Generic Phishing": 299,
     "Financial Phishing": 1,
-    " \"AsyncRAT": 8,
-    " \"Formbook": 24,
-    " \"n/a": 153,
-    " \"Mirai": 337,
+    " \"n/a": 155,
+    " \"AsyncRAT": 7,
+    " \"Formbook": 23,
+    " \"Mirai": 335,
     " \"Socks5Systemz": 4,
     " \"ValleyRAT": 7,
     " \"MaskGramStealer": 5,
@@ -80,7 +80,7 @@
     " \"Vjw0rm": 1,
     "Spamhaus DROP List": 1449,
     "CINS Threat List": 15000,
-    "SSH Attacks": 4963
+    "SSH Attacks": 5078
   },
   "dailySnapshots": [
     {
