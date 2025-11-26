@@ -14,7 +14,7 @@ Pulls from 9 reputable security sources with per-vendor tracking:
   • SSL Blacklist (malicious SSL certificates - abuse.ch)
 
 Features:
-  • Unlimited IOCs per vendor (R2 storage)
+  • Unlimited IOCs per vendor (stored in GitHub Pages)
   • NEW tag for IOCs added in last hour
   • RECENT tag for IOCs 1-6 hours old
   • Hourly data updates, daily analytics
@@ -50,8 +50,8 @@ IOC_DISPLAY_CAPS = {
     # Other vendors: no cap (files are small enough)
 }
 
-# Vendor-specific caps - DISABLED for R2 storage (unlimited IOCs!)
-# With R2, we store ALL IOCs and load on-demand, so no caps needed
+# Vendor-specific caps - DISABLED (unlimited IOCs!)
+# We store ALL IOCs in GitHub Pages and load on-demand, so no caps needed
 # VENDOR_CAPS = {
 #     'Malware Bazaar': 500,
 #     'Phishing Database': 500,
@@ -168,7 +168,7 @@ def fetch_vendor_iocs(vendor_name, config):
             
             # Skip header lines (comments, CSV headers, etc)
             clean_lines = [l.strip() for l in lines if l.strip() and not l.startswith('#') and not l.startswith('//')]
-            # No cap - store all IOCs for R2
+            # No cap - store all IOCs
             if vendor_name == "OpenPhish" or vendor_name == "Phishing Database":
                 for line in clean_lines:
                     if line.startswith('http'):
@@ -197,7 +197,7 @@ def fetch_vendor_iocs(vendor_name, config):
             import requests
             resp = requests.get(config["url"], timeout=15, headers={'User-Agent': 'TheHGTech-ThreatIntel/2.0'})
             lines = resp.text.strip().split('\n')
-            # No cap - store all IOCs for R2
+            # No cap - store all IOCs
             for line in lines[9:]:  # Skip 9-line header
                 if line.startswith('#') or not line.strip():
                     continue
@@ -207,7 +207,7 @@ def fetch_vendor_iocs(vendor_name, config):
         
         else:  # RSS type (if any remain)
             feed = feedparser.parse(config["url"])
-            # No cap - store all IOCs for R2
+            # No cap - store all IOCs
             for entry in feed.entries:
                 ioc = extract_ioc_from_entry(entry, vendor_name, now, config)
                 if ioc:
@@ -980,7 +980,7 @@ def generate_js(data):
             'website': vendor_data['website'],
             'updateFrequency': vendor_data['updateFrequency'],
             'iocCount': vendor_data.get('stats', {}).get('total', 0),  # Use stats.total instead of len(iocs)
-            'r2Url': vendor_data.get('r2Url'),
+            'iocDataUrl': vendor_data.get('iocDataUrl'),
             'stats': vendor_data.get('stats', {}),
             'types': vendor_data.get('types', []),
             'sampleIndicators': vendor_data.get('sampleIndicators', [])
@@ -1000,7 +1000,7 @@ def generate_js(data):
     js_content = f"""// Auto-Generated Threat Intel (Multi-Vendor Dashboard)
 // Updated: {get_ist_now().isoformat()} IST
 // Sources: {', '.join(data['vendors'].keys())}
-// NOTE: Full IOC lists are stored in Cloudflare R2 and loaded on-demand
+// NOTE: Full IOC lists are stored in GitHub Pages (ioc-data/) and loaded on-demand
 
 window.threatIntelData = {json.dumps(lightweight_data, indent=4)};
 """
@@ -1384,8 +1384,8 @@ def run_hourly():
             },
             'types': list(set(ioc.get('type', 'unknown') for ioc in all_iocs)),
             'sampleIndicators': [ioc['indicator'] for ioc in all_iocs[:5]],
-            # GitHub Release URL for lazy loading
-            'r2Url': f"{GITHUB_PAGES_URL}/{vendor_name.lower().replace(' ', '-').replace('.', '-')}.json"
+            # GitHub Pages URL for lazy loading
+            'iocDataUrl': f"{GITHUB_PAGES_URL}/{vendor_name.lower().replace(' ', '-').replace('.', '-')}.json"
         }
     
     # Save vendor JSON files for GitHub Actions to upload as release assets
