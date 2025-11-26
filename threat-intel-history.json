@@ -11,11 +11,12 @@
   "previous_hour_campaigns": {
     "Generic Phishing": 299,
     "Financial Phishing": 1,
+    " \"Formbook": 25,
     " \"n/a": 157,
     " \"Mirai": 334,
     " \"Socks5Systemz": 4,
     " \"ValleyRAT": 8,
-    " \"MaskGramStealer": 6,
+    " \"MaskGramStealer": 5,
     " \"Sliver": 1,
     " \"a310Logger": 8,
     " \"MimiKatz": 1,
@@ -30,7 +31,6 @@
     " \"Vidar": 7,
     " \"MassLogger": 3,
     " \"RemcosRAT": 15,
-    " \"Formbook": 24,
     " \"AsyncRAT": 7,
     " \"XWorm": 2,
     " \"SnakeKeylogger": 8,
@@ -78,10 +78,9 @@
     " \"FRP": 1,
     " \"Loki": 1,
     " \"Vjw0rm": 1,
-    " \"DCRat": 2,
     "Spamhaus DROP List": 1449,
     "CINS Threat List": 15000,
-    "SSH Attacks": 4983
+    "SSH Attacks": 5024
   },
   "dailySnapshots": [
     {
