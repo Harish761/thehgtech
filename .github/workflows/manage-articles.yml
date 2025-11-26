@@ -1,0 +1,53 @@
+name: Article Management
+
+on:
+  # Run daily at midnight IST (18:30 UTC)
+  schedule:
+    - cron: '30 18 * * *'
+  
+  # Allow manual trigger
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  manage-articles:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Run article management
+        run: |
+          python manage_articles.py
+      
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "actions@github.com"
+          
+          # Check if there are changes
+          if git diff --quiet articles.json archives-content.js; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          
+          git add articles.json archives-content.js
+          git commit -m "🗂️ Auto-archive: Manage articles - $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git pull --rebase origin main && git push
+      
+      - name: Summary
+        if: always()
+        run: |
+          echo "### 🗂️ Article Management Complete" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Archive cutoff**: 7 days" >> $GITHUB_STEP_SUMMARY
+          echo "- **Delete cutoff**: 30 days" >> $GITHUB_STEP_SUMMARY
+          echo "- **Time**: $(date -u '+%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
