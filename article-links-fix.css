@@ -1,0 +1,47 @@
+/* Article Link Styling Fix for Dark Mode Accessibility */
+
+/* Default dark mode - bright cyan links for visibility */
+article a {
+    color: #00d9ff !important;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+article a:hover {
+    color: #33e3ff !important;
+}
+
+/* Light mode - darker blue for contrast */
+body.light-mode article a {
+    color: #0066cc !important;
+}
+
+body.light-mode article a:hover {
+    color: #0044aa !important;
+}
+
+/* Additional selectors for dynamically loaded content */
+.article-content a,
+#article-content a,
+.content a {
+    color: #00d9ff !important;
+    text-decoration: underline;
+}
+
+.article-content a:hover,
+#article-content a:hover,
+.content a:hover {
+    color: #33e3ff !important;
+}
+
+body.light-mode .article-content a,
+body.light-mode #article-content a,
+body.light-mode .content a {
+    color: #0066cc !important;
+}
+
+body.light-mode .article-content a:hover,
+body.light-mode #article-content a:hover,
+body.light-mode .content a:hover {
+    color: #0044aa !important;
+}
