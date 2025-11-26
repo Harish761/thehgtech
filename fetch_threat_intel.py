@@ -333,8 +333,6 @@ def parse_blocklist(ip, now, config, vendor, ioc_history):
         'campaign': 'SSH Attacks'
     }
 
-if __name__ == '__main__':
-    main()
 
 def parse_feodo_tracker(ip, now, config, vendor, ioc_history):
     """Parse Feodo Tracker botnet C2 IP"""
@@ -380,6 +378,10 @@ def parse_ssl_blacklist(csv_line, now, config, vendor, ioc_history):
 
 
     
+    except Exception as e:
+        # print(f"Error parsing SSL Blacklist line: {e}")
+        return None
+
     return {
         'type': 'ip',
         'indicator': defang_indicator(ip, 'ip'),
@@ -1591,3 +1593,6 @@ def main():
     print("\n✓ All done!")
 
 
+
+if __name__ == '__main__':
+    main()
