@@ -2,8 +2,8 @@ name: Update Ransomware Data
 
 on:
   schedule:
-    # Run twice daily (06:00 and 18:00 UTC)
-    - cron: '0 6,18 * * *'
+    # Run once daily at 06:00 UTC
+    - cron: '0 6 * * *'
   
   # Allow manual trigger
   workflow_dispatch:
