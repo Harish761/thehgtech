@@ -795,6 +795,8 @@
         body.light-mode {
             --bg-primary: #f8f9fa;
             --bg-secondary: #ffffff;
+            --bg-gradient-start: #f8f9fa;
+            --bg-gradient-end: #e2e8f0;
             --text-primary: #1a1a1a;
             --text-secondary: #4a5568;
             --text-muted: #718096;
@@ -809,6 +811,19 @@
 
         body.light-mode .header {
             background: rgba(255, 255, 255, 0.95);
+        }
+
+        /* Seamless fade blend for hero section */
+        .ti-hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 150px;
+            background: linear-gradient(to bottom, transparent, var(--bg-primary));
+            z-index: 2;
+            pointer-events: none;
         }
 
         body.light-mode .ti-hero {
@@ -940,138 +955,103 @@
             <svg width="100%" height="100%" viewBox="0 0 1400 700" xmlns="http://www.w3.org/2000/svg"
                 preserveAspectRatio="xMidYMid slice">
                 <defs>
-                    <!-- Mesh Gradient Definitions -->
-                    <linearGradient id="meshGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" style="stop-color:var(--accent-cyan);stop-opacity:0.15">
-                            <animate attributeName="stop-opacity" values="0.15;0.25;0.15" dur="8s"
-                                repeatCount="indefinite" />
-                        </stop>
-                        <stop offset="100%" style="stop-color:var(--accent-red);stop-opacity:0.1">
-                            <animate attributeName="stop-opacity" values="0.1;0.2;0.1" dur="8s"
-                                repeatCount="indefinite" />
-                        </stop>
-                    </linearGradient>
-
-                    <linearGradient id="meshGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
-                        <stop offset="0%" style="stop-color:var(--accent-red);stop-opacity:0.12" />
-                        <stop offset="100%" style="stop-color:var(--accent-green);stop-opacity:0.08" />
-                    </linearGradient>
-
-                    <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
-                        <stop offset="0%" style="stop-color:var(--accent-cyan);stop-opacity:0.4" />
+                    <!-- Radar Gradient -->
+                    <linearGradient id="radar-sweep" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:var(--accent-cyan);stop-opacity:0" />
                         <stop offset="50%" style="stop-color:var(--accent-cyan);stop-opacity:0.1" />
-                        <stop offset="100%" style="stop-color:var(--accent-cyan);stop-opacity:0" />
-                    </radialGradient>
+                        <stop offset="100%" style="stop-color:var(--accent-cyan);stop-opacity:0.3" />
+                    </linearGradient>
 
-                    <!-- Blur filter for soft effects -->
-                    <filter id="glow">
-                        <feGaussianBlur stdDeviation="4" result="coloredBlur" />
+                    <!-- Threat Glow -->
+                    <filter id="threat-glow">
+                        <feGaussianBlur stdDeviation="2" result="coloredBlur" />
                         <feMerge>
                             <feMergeNode in="coloredBlur" />
                             <feMergeNode in="SourceGraphic" />
                         </feMerge>
                     </filter>
+
+                    <!-- Hexagon Pattern -->
+                    <pattern id="hex-grid" x="0" y="0" width="50" height="43.3" patternUnits="userSpaceOnUse">
+                        <path d="M25 0 L50 14.4 L50 43.3 L25 57.7 L0 43.3 L0 14.4 Z" fill="none"
+                            stroke="var(--accent-cyan)" stroke-width="0.5" opacity="0.1" />
+                    </pattern>
                 </defs>
 
-                <!-- Base mesh gradient layers -->
-                <rect width="100%" height="100%" fill="url(#meshGrad1)" opacity="0.6" />
+                <!-- Background Grid -->
+                <rect width="100%" height="100%" fill="url(#hex-grid)" opacity="0.3" />
 
-                <!-- Flowing wave shapes -->
-                <path d="M 0,350 Q 350,300 700,350 T 1400,350 L 1400,700 L 0,700 Z" fill="url(#meshGrad2)"
-                    opacity="0.3">
-                    <animate attributeName="d" values="M 0,350 Q 350,300 700,350 T 1400,350 L 1400,700 L 0,700 Z;
-                                     M 0,320 Q 350,370 700,320 T 1400,320 L 1400,700 L 0,700 Z;
-                                     M 0,350 Q 350,300 700,350 T 1400,350 L 1400,700 L 0,700 Z" dur="15s"
-                        repeatCount="indefinite" />
-                </path>
+                <!-- Scanning Radar Beam -->
+                <rect x="-200" y="0" width="200" height="700" fill="url(#radar-sweep)" opacity="0.5">
+                    <animate attributeName="x" from="-200" to="1400" dur="8s" repeatCount="indefinite" />
+                </rect>
 
-                <path d="M 0,250 Q 350,200 700,250 T 1400,250 L 1400,700 L 0,700 Z" fill="var(--accent-cyan)"
-                    opacity="0.05">
-                    <animate attributeName="d" values="M 0,250 Q 350,200 700,250 T 1400,250 L 1400,700 L 0,700 Z;
-                                     M 0,280 Q 350,230 700,280 T 1400,280 L 1400,700 L 0,700 Z;
-                                     M 0,250 Q 350,200 700,250 T 1400,250 L 1400,700 L 0,700 Z" dur="12s"
-                        repeatCount="indefinite" />
-                </path>
-
-                <!-- Floating orbs with glow -->
-                <g filter="url(#glow)">
-                    <circle cx="200" cy="200" r="80" fill="url(#glowGrad)" opacity="0.5">
-                        <animate attributeName="cx" values="200;280;200" dur="18s" repeatCount="indefinite" />
-                        <animate attributeName="cy" values="200;250;200" dur="12s" repeatCount="indefinite" />
-                        <animate attributeName="r" values="80;100;80" dur="10s" repeatCount="indefinite" />
+                <!-- Active Threat Nodes (Red) -->
+                <g filter="url(#threat-glow)">
+                    <circle cx="200" cy="300" r="4" fill="var(--accent-red)" opacity="0">
+                        <animate attributeName="opacity" values="0;1;0" dur="3s" begin="0s" repeatCount="indefinite" />
+                        <animate attributeName="r" values="4;15;4" dur="3s" begin="0s" repeatCount="indefinite" />
                     </circle>
-
-                    <circle cx="1200" cy="150" r="100" fill="var(--accent-red)" opacity="0.08">
-                        <animate attributeName="cx" values="1200;1120;1200" dur="20s" repeatCount="indefinite" />
-                        <animate attributeName="cy" values="150;200;150" dur="15s" repeatCount="indefinite" />
-                        <animate attributeName="r" values="100;120;100" dur="12s" repeatCount="indefinite" />
+                    <circle cx="800" cy="150" r="4" fill="var(--accent-red)" opacity="0">
+                        <animate attributeName="opacity" values="0;1;0" dur="4s" begin="1s" repeatCount="indefinite" />
+                        <animate attributeName="r" values="4;15;4" dur="4s" begin="1s" repeatCount="indefinite" />
                     </circle>
-
-                    <circle cx="700" cy="500" r="60" fill="var(--accent-green)" opacity="0.06">
-                        <animate attributeName="cx" values="700;750;700" dur="16s" repeatCount="indefinite" />
-                        <animate attributeName="cy" values="500;450;500" dur="14s" repeatCount="indefinite" />
+                    <circle cx="1100" cy="500" r="4" fill="var(--accent-red)" opacity="0">
+                        <animate attributeName="opacity" values="0;1;0" dur="3.5s" begin="2s"
+                            repeatCount="indefinite" />
+                        <animate attributeName="r" values="4;15;4" dur="3.5s" begin="2s" repeatCount="indefinite" />
+                    </circle>
+                    <circle cx="500" cy="600" r="4" fill="var(--accent-red)" opacity="0">
+                        <animate attributeName="opacity" values="0;1;0" dur="5s" begin="0.5s"
+                            repeatCount="indefinite" />
+                        <animate attributeName="r" values="4;15;4" dur="5s" begin="0.5s" repeatCount="indefinite" />
                     </circle>
                 </g>
 
-                <!-- Geometric grid pattern -->
-                <g stroke="var(--accent-cyan)" stroke-width="0.5" fill="none" opacity="0.15">
-                    <line x1="0" y1="200" x2="1400" y2="200">
-                        <animate attributeName="opacity" values="0.15;0.05;0.15" dur="6s" repeatCount="indefinite" />
-                    </line>
-                    <line x1="0" y1="400" x2="1400" y2="400">
-                        <animate attributeName="opacity" values="0.05;0.15;0.05" dur="6s" repeatCount="indefinite" />
-                    </line>
-                    <line x1="350" y1="0" x2="350" y2="700">
-                        <animate attributeName="opacity" values="0.15;0.05;0.15" dur="7s" repeatCount="indefinite" />
-                    </line>
-                    <line x1="700" y1="0" x2="700" y2="700">
-                        <animate attributeName="opacity" values="0.05;0.15;0.05" dur="7s" repeatCount="indefinite" />
-                    </line>
-                    <line x1="1050" y1="0" x2="1050" y2="700">
-                        <animate attributeName="opacity" values="0.15;0.05;0.15" dur="7s" repeatCount="indefinite" />
-                    </line>
-                </g>
-
-                <!-- Floating particles - small dots -->
-                <g opacity="0.6">
-                    <circle cx="150" cy="100" r="2" fill="var(--accent-cyan)">
-                        <animate attributeName="cy" values="100;650;100" dur="25s" repeatCount="indefinite" />
-                        <animate attributeName="opacity" values="0.6;0.2;0.6" dur="25s" repeatCount="indefinite" />
+                <!-- Secure Nodes (Green) -->
+                <g>
+                    <circle cx="400" cy="200" r="3" fill="var(--accent-green)" opacity="0.6">
+                        <animate attributeName="opacity" values="0.6;0.2;0.6" dur="4s" repeatCount="indefinite" />
                     </circle>
-                    <circle cx="400" cy="150" r="1.5" fill="var(--accent-red)">
-                        <animate attributeName="cy" values="150;600;150" dur="28s" repeatCount="indefinite" />
-                        <animate attributeName="opacity" values="0.5;0.2;0.5" dur="28s" repeatCount="indefinite" />
+                    <circle cx="900" cy="350" r="3" fill="var(--accent-green)" opacity="0.6">
+                        <animate attributeName="opacity" values="0.6;0.2;0.6" dur="5s" repeatCount="indefinite" />
                     </circle>
-                    <circle cx="650" cy="80" r="2" fill="var(--accent-cyan)">
-                        <animate attributeName="cy" values="80;620;80" dur="22s" repeatCount="indefinite" />
-                        <animate attributeName="opacity" values="0.7;0.2;0.7" dur="22s" repeatCount="indefinite" />
-                    </circle>
-                    <circle cx="900" cy="200" r="1.5" fill="var(--accent-green)">
-                        <animate attributeName="cy" values="200;650;200" dur="30s" repeatCount="indefinite" />
-                        <animate attributeName="opacity" values="0.5;0.2;0.5" dur="30s" repeatCount="indefinite" />
-                    </circle>
-                    <circle cx="1150" cy="120" r="2" fill="var(--accent-red)">
-                        <animate attributeName="cy" values="120;600;120" dur="26s" repeatCount="indefinite" />
-                        <animate attributeName="opacity" values="0.6;0.2;0.6" dur="26s" repeatCount="indefinite" />
-                    </circle>
-                    <circle cx="300" cy="400" r="1.5" fill="var(--accent-cyan)">
-                        <animate attributeName="cy" values="400;50;400" dur="24s" repeatCount="indefinite" />
-                        <animate attributeName="opacity" values="0.5;0.2;0.5" dur="24s" repeatCount="indefinite" />
-                    </circle>
-                    <circle cx="800" cy="450" r="2" fill="var(--accent-green)">
-                        <animate attributeName="cy" values="450;80;450" dur="27s" repeatCount="indefinite" />
-                        <animate attributeName="opacity" values="0.6;0.2;0.6" dur="27s" repeatCount="indefinite" />
-                    </circle>
-                    <circle cx="1100" cy="500" r="1.5" fill="var(--accent-red)">
-                        <animate attributeName="cy" values="500;100;500" dur="29s" repeatCount="indefinite" />
-                        <animate attributeName="opacity" values="0.5;0.2;0.5" dur="29s" repeatCount="indefinite" />
+                    <circle cx="1200" cy="100" r="3" fill="var(--accent-green)" opacity="0.6">
+                        <animate attributeName="opacity" values="0.6;0.2;0.6" dur="3s" repeatCount="indefinite" />
                     </circle>
                 </g>
 
-                <!-- Accent corner elements -->
-                <g opacity="0.1">
-                    <rect x="0" y="0" width="200" height="200" fill="url(#meshGrad1)" />
-                    <rect x="1200" y="500" width="200" height="200" fill="url(#meshGrad2)" />
+                <!-- Data Streams (Connecting Lines) -->
+                <g stroke="var(--accent-cyan)" stroke-width="1" fill="none" opacity="0.3">
+                    <path d="M 200,300 Q 400,200 800,150">
+                        <animate attributeName="stroke-dasharray" values="0,1000;1000,0" dur="3s"
+                            repeatCount="indefinite" />
+                    </path>
+                    <path d="M 800,150 Q 950,325 1100,500">
+                        <animate attributeName="stroke-dasharray" values="0,1000;1000,0" dur="3s" begin="1s"
+                            repeatCount="indefinite" />
+                    </path>
+                    <path d="M 400,200 Q 450,400 500,600">
+                        <animate attributeName="stroke-dasharray" values="0,1000;1000,0" dur="3s" begin="0.5s"
+                            repeatCount="indefinite" />
+                    </path>
+                </g>
+
+                <!-- Digital Noise / Glitch Effects -->
+                <g fill="var(--accent-cyan)" opacity="0.2">
+                    <rect x="100" y="100" width="20" height="2">
+                        <animate attributeName="opacity" values="0;1;0" dur="0.2s" begin="1s"
+                            repeatCount="indefinite" />
+                        <animate attributeName="x" values="100;120;100" dur="5s" repeatCount="indefinite" />
+                    </rect>
+                    <rect x="1200" y="600" width="30" height="2">
+                        <animate attributeName="opacity" values="0;1;0" dur="0.3s" begin="2s"
+                            repeatCount="indefinite" />
+                    </rect>
+                    <rect x="600" y="50" width="10" height="2">
+                        <animate attributeName="opacity" values="0;1;0" dur="0.5s" begin="3s"
+                            repeatCount="indefinite" />
+                    </rect>
                 </g>
             </svg>
         </div>
