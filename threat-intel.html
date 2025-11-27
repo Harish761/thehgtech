@@ -1410,6 +1410,80 @@
                     <!-- Analytics cards will be loaded dynamically -->
                 </div>
 
+                <!-- Threat Sources (Vendor Tiles) -->
+                <h3 style="margin-top: 3rem; margin-bottom: 1.5rem; color: var(--text-primary);">Threat Sources</h3>
+                <div class="vendor-grid"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
+                    <!-- OpenPhish -->
+                    <div class="vendor-tile" onclick="openVendorModal('OpenPhish')"
+                        style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 1.5rem; cursor: pointer; transition: all 0.3s ease;">
+                        <div
+                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                            <h4 style="margin: 0; color: var(--accent-cyan);">OpenPhish</h4>
+                            <span style="font-size: 1.2rem;">🎣</span>
+                        </div>
+                        <div id="openPhishCount"
+                            style="font-size: 1.8rem; font-weight: 700; color: var(--text-primary);">Loading...</div>
+                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.5rem;">Active Phishing
+                            URLs</div>
+                    </div>
+
+                    <!-- Malware Bazaar -->
+                    <div class="vendor-tile" onclick="openVendorModal('Malware Bazaar')"
+                        style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 1.5rem; cursor: pointer; transition: all 0.3s ease;">
+                        <div
+                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                            <h4 style="margin: 0; color: var(--accent-red);">Malware Bazaar</h4>
+                            <span style="font-size: 1.2rem;">🦠</span>
+                        </div>
+                        <div id="malwareBazaarCount"
+                            style="font-size: 1.8rem; font-weight: 700; color: var(--text-primary);">Loading...</div>
+                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.5rem;">Malware Samples
+                        </div>
+                    </div>
+
+                    <!-- Spamhaus DROP -->
+                    <div class="vendor-tile" onclick="openVendorModal('Spamhaus DROP')"
+                        style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 1.5rem; cursor: pointer; transition: all 0.3s ease;">
+                        <div
+                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                            <h4 style="margin: 0; color: var(--accent-green);">Spamhaus DROP</h4>
+                            <span style="font-size: 1.2rem;">🚫</span>
+                        </div>
+                        <div id="spamhausDROPCount"
+                            style="font-size: 1.8rem; font-weight: 700; color: var(--text-primary);">Loading...</div>
+                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.5rem;">Botnet IPs</div>
+                    </div>
+
+                    <!-- CINS Army -->
+                    <div class="vendor-tile" onclick="openVendorModal('CINS Army')"
+                        style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 1.5rem; cursor: pointer; transition: all 0.3s ease;">
+                        <div
+                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                            <h4 style="margin: 0; color: #f59e0b;">CINS Army</h4>
+                            <span style="font-size: 1.2rem;">🛡️</span>
+                        </div>
+                        <div id="cINSArmyCount"
+                            style="font-size: 1.8rem; font-weight: 700; color: var(--text-primary);">Loading...</div>
+                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.5rem;">Bad Reputation IPs
+                        </div>
+                    </div>
+
+                    <!-- Blocklist.de -->
+                    <div class="vendor-tile" onclick="openVendorModal('Blocklist.de')"
+                        style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 1.5rem; cursor: pointer; transition: all 0.3s ease;">
+                        <div
+                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                            <h4 style="margin: 0; color: #ec4899;">Blocklist.de</h4>
+                            <span style="font-size: 1.2rem;">🛑</span>
+                        </div>
+                        <div id="blocklistDeCount"
+                            style="font-size: 1.8rem; font-weight: 700; color: var(--text-primary);">Loading...</div>
+                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.5rem;">SSH/FTP Attacks
+                        </div>
+                    </div>
+                </div>
+
                 <!-- 7-Day Trend Charts -->
                 <h3 style="margin-top: 3rem; margin-bottom: 1.5rem; color: var(--text-primary);">7-Day Trends</h3>
                 <div class="chart-container" style="height: 400px; margin-bottom: 2rem;">
