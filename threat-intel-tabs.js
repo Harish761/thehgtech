@@ -43,8 +43,12 @@
         // Create dashboard tab
         const dashboardTab = createDashboardTab();
 
+        // Create ransomware tab
+        const ransomwareTab = createRansomwareTab();
+
         // Add tabs to container
         mainContainer.appendChild(dashboardTab);
+        mainContainer.appendChild(ransomwareTab);
         mainContainer.appendChild(threatsTab);
 
         // Set initial active tab
@@ -52,6 +56,9 @@
 
         // Load dashboard data
         loadDashboardData();
+
+        // Load ransomware data
+        loadRansomwareData();
     }
 
     function createTabNavigation() {
@@ -63,6 +70,9 @@
             </button>
             <button class="tab-btn" data-tab="threats">
                 All Threats
+            </button>
+            <button class="tab-btn" data-tab="ransomware">
+                🔐 Ransomware
             </button>
         `;
 
@@ -141,6 +151,33 @@
         return tab;
     }
 
+    function createRansomwareTab() {
+        const tab = document.createElement('div');
+        tab.id = 'ransomware-tab';
+        tab.className = 'tab-content';
+        tab.innerHTML = `
+            <div class="ransomware-stats-bar">
+                <div class="stat">
+                    <span class="value" id="totalRansomwareGroups">-</span>
+                    <span class="label">Active Groups</span>
+                </div>
+                <div class="stat">
+                    <span class="value" id="totalRansomwareVictims">-</span>
+                    <span class="label">Total Victims (7d)</span>
+                </div>
+            </div>
+            
+            <div class="ransomware-grid" id="ransomwareGrid">
+                <div class="ransomware-loading">
+                    <div class="spinner"></div>
+                    <p>Loading ransomware data...</p>
+                </div>
+            </div>
+        `;
+
+        return tab;
+    }
+
     async function loadDashboardData() {
         try {
             const dashboard = new ThreatDashboard();
@@ -155,6 +192,228 @@
         } catch (error) {
             console.error('Failed to load dashboard data:', error);
         }
+    }
+
+    async function loadRansomwareData() {
+        try {
+            const response = await fetch('ransomware-data.json');
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+
+            const data = await response.json();
+            renderRansomwareData(data);
+
+            console.log('✅ Ransomware data loaded:', data.total_groups, 'groups');
+        } catch (error) {
+            console.error('❌ Error loading ransomware data:', error);
+            renderRansomwareError();
+        }
+    }
+
+    function renderRansomwareData(data) {
+        // Update stats
+        const totalGroupsEl = document.getElementById('totalRansomwareGroups');
+        const totalVictimsEl = document.getElementById('totalRansomwareVictims');
+
+        if (totalGroupsEl) totalGroupsEl.textContent = data.total_groups || 0;
+        if (totalVictimsEl) totalVictimsEl.textContent = data.total_victims || 0;
+
+        // Render group cards
+        const container = document.getElementById('ransomwareGrid');
+        if (!container) return;
+
+        container.innerHTML = '';
+
+        if (!data.groups || data.groups.length === 0) {
+            container.innerHTML = '<p style="text-align: center; color: rgba(255,255,255,0.6);">No active ransomware campaigns in the last 7 days.</p>';
+            return;
+        }
+
+        data.groups.forEach(group => {
+            const card = createRansomwareCard(group);
+            container.appendChild(card);
+        });
+    }
+
+    function createRansomwareCard(group) {
+        const card = document.createElement('div');
+        card.className = 'ransomware-card';
+
+        const trendIcon = group.trend === 'up' ? '↑' :
+            group.trend === 'down' ? '↓' : '→';
+        const trendClass = group.trend || 'stable';
+        const trendText = group.trend === 'up' ? `+${group.trend_percentage}%` :
+            group.trend === 'down' ? `${group.trend_percentage}%` :
+                'Stable';
+
+        const industriesHTML = group.industries && group.industries.length > 0
+            ? `<div class="industries-list">
+                 ${group.industries.map(ind =>
+                `<span class="industry-tag">${escapeHtml(ind)}</span>`
+            ).join('')}
+               </div>`
+            : '';
+
+        card.innerHTML = `
+            <div class="ransomware-header">
+                <h3>${escapeHtml(group.name)}</h3>
+                <div class="victim-count">
+                    <span class="number">${group.count}</span>
+                    <span class="label">Victims</span>
+                </div>
+            </div>
+            
+            <div class="ransomware-stats">
+                <div class="ransomware-stat">
+                    <span class="stat-label">Trend (7d)</span>
+                    <span class="trend-indicator ${trendClass}">
+                        ${trendIcon} ${trendText}
+                    </span>
+                </div>
+                
+                ${group.industries && group.industries.length > 0 ? `
+                <div class="ransomware-stat">
+                    <span class="stat-label">Target Industries</span>
+                    <span class="stat-value">${group.industries.length}</span>
+                </div>
+                ` : ''}
+                
+                ${group.countries && group.countries.length > 0 ? `
+                <div class="ransomware-stat">
+                    <span class="stat-label">Countries</span>
+                    <span class="stat-value">${group.countries.length}</span>
+                </div>
+                ` : ''}
+            </div>
+            
+            ${industriesHTML}
+            
+            <button class="view-details-btn" data-group="${escapeHtml(group.name)}">
+                View Victims & Details
+            </button>
+        `;
+
+        // Add click handler for details button
+        const detailsBtn = card.querySelector('.view-details-btn');
+        detailsBtn.addEventListener('click', () => {
+            showRansomwareModal(group);
+        });
+
+        return card;
+    }
+
+    function showRansomwareModal(group) {
+        // Create modal if it doesn't exist
+        let modal = document.getElementById('ransomwareModal');
+        if (!modal) {
+            modal = createRansomwareModal();
+            document.body.appendChild(modal);
+        }
+
+        // Populate modal content
+        const modalTitle = modal.querySelector('#ransomwareModalTitle');
+        const modalContent = modal.querySelector('#ransomwareModalContent');
+
+        modalTitle.textContent = `${group.name} Ransomware Group`;
+
+        const victimsHTML = group.victims && group.victims.length > 0
+            ? group.victims.slice(0, 10).map(v => `
+                <div class="victim-item">
+                    <div class="victim-name">${escapeHtml(v.name)}</div>
+                    <div class="victim-date">${new Date(v.date).toLocaleDateString()}</div>
+                </div>
+              `).join('')
+            : '<p style="color: var(--text-muted);">No victim details available</p>';
+
+        modalContent.innerHTML = `
+            <div class="modal-stats-grid">
+                <div class="modal-stat">
+                    <div class="modal-stat-label">Total Victims (7d)</div>
+                    <div class="modal-stat-value">${group.count}</div>
+                </div>
+                <div class="modal-stat">
+                    <div class="modal-stat-label">Trend</div>
+                    <div class="modal-stat-value">${group.trend === 'up' ? '↑ Increasing' : group.trend === 'down' ? '↓ Decreasing' : '→ Stable'}</div>
+                </div>
+            </div>
+            
+            ${group.industries && group.industries.length > 0 ? `
+            <div class="modal-section">
+                <h4>🎯 Targeted Industries</h4>
+                <div class="industries-list">
+                    ${group.industries.map(i => `<span class="industry-tag">${escapeHtml(i)}</span>`).join('')}
+                </div>
+            </div>
+            ` : ''}
+            
+            ${group.countries && group.countries.length > 0 ? `
+            <div class="modal-section">
+                <h4>🌍 Countries</h4>
+                <div class="industries-list">
+                    ${group.countries.map(c => `<span class="industry-tag">${escapeHtml(c)}</span>`).join('')}
+                </div>
+            </div>
+            ` : ''}
+            
+            <div class="modal-section">
+                <h4>📋 Recent Victims</h4>
+                <div class="victims-list">
+                    ${victimsHTML}
+                </div>
+                ${group.victims && group.victims.length > 10 ? `
+                    <p style="color: var(--text-muted); margin-top: 1rem; text-align: center;">
+                        ... and ${group.victims.length - 10} more victims
+                    </p>
+                ` : ''}
+            </div>
+        `;
+
+        // Show modal
+        modal.style.display = 'flex';
+    }
+
+    function createRansomwareModal() {
+        const modal = document.createElement('div');
+        modal.id = 'ransomwareModal';
+        modal.className = 'ransomware-modal';
+        modal.innerHTML = `
+            <div class="ransomware-modal-content">
+                <div class="ransomware-modal-header">
+                    <h2 id="ransomwareModalTitle"></h2>
+                    <button class="ransomware-modal-close">&times;</button>
+                </div>
+                <div class="ransomware-modal-body" id="ransomwareModalContent">
+                </div>
+            </div>
+        `;
+
+        // Close button handler
+        const closeBtn = modal.querySelector('.ransomware-modal-close');
+        closeBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        // Click outside to close
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+
+        return modal;
+    }
+
+    function renderRansomwareError() {
+        const container = document.getElementById('ransomwareGrid');
+        if (!container) return;
+
+        container.innerHTML = `
+            <div class="ransomware-error">
+                <h3>⚠️ Unable to Load Ransomware Data</h3>
+                <p>Please try refreshing the page or check back later.</p>
+            </div>
+        `;
     }
 
     function renderLeaderboard(topMalware) {
