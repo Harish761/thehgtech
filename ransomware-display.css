@@ -251,13 +251,56 @@
 }
 
 /* Light mode */
+body.light-mode .ransomware-section {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+body.light-mode .ransomware-stats-bar {
+    background: rgba(220, 38, 38, 0.08);
+    border-color: rgba(220, 38, 38, 0.2);
+}
+
+body.light-mode .ransomware-stats-bar .stat .value {
+    color: #DC2626;
+}
+
+body.light-mode .ransomware-stats-bar .stat .label {
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 600;
+}
+
 body.light-mode .ransomware-card {
-    background: rgba(255, 255, 255, 0.9);
-    border-color: rgba(255, 76, 76, 0.3);
+    background: white;
+    border: 1px solid rgba(220, 38, 38, 0.2);
+    border-left: 4px solid #DC2626;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+body.light-mode .ransomware-card:hover {
+    box-shadow: 0 8px 24px rgba(220, 38, 38, 0.15);
+    border-color: #DC2626;
+}
+
+body.light-mode .ransomware-header h3 {
+    color: #DC2626;
+}
+
+body.light-mode .victim-count {
+    background: rgba(220, 38, 38, 0.1);
+    border-color: rgba(220, 38, 38, 0.3);
+}
+
+body.light-mode .victim-count .number {
+    color: #DC2626;
+}
+
+body.light-mode .victim-count .label {
+    color: rgba(0, 0, 0, 0.6);
 }
 
 body.light-mode .ransomware-stat {
-    background: rgba(0, 0, 0, 0.05);
+    background: rgba(0, 0, 0, 0.03);
+    border-color: rgba(0, 0, 0, 0.1);
 }
 
 body.light-mode .ransomware-stat .stat-label {
@@ -266,8 +309,47 @@ body.light-mode .ransomware-stat .stat-label {
 
 body.light-mode .ransomware-stat .stat-value {
     color: #000;
+    font-weight: 600;
 }
 
-body.light-mode .ransomware-stats-bar .stat .label {
+body.light-mode .trend-indicator.up {
+    background: rgba(220, 38, 38, 0.15);
+    color: #DC2626;
+}
+
+body.light-mode .trend-indicator.down {
+    background: rgba(16, 185, 129, 0.15);
+    color: #059669;
+}
+
+body.light-mode .trend-indicator.stable {
+    background: rgba(0, 0, 0, 0.08);
     color: rgba(0, 0, 0, 0.7);
+}
+
+body.light-mode .industry-tag {
+    background: rgba(0, 102, 204, 0.1);
+    border-color: rgba(0, 102, 204, 0.3);
+    color: #0066CC;
+}
+
+body.light-mode .view-details-btn {
+    background: rgba(220, 38, 38, 0.1);
+    border-color: rgba(220, 38, 38, 0.3);
+    color: #DC2626;
+}
+
+body.light-mode .view-details-btn:hover {
+    background: rgba(220, 38, 38, 0.2);
+    border-color: #DC2626;
+}
+
+body.light-mode .ransomware-loading {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+body.light-mode .ransomware-error {
+    background: rgba(220, 38, 38, 0.1);
+    border-color: rgba(220, 38, 38, 0.3);
+    color: #DC2626;
 }

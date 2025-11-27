@@ -212,3 +212,80 @@
 .ransomware-modal-body::-webkit-scrollbar-thumb:hover {
     background: rgba(255, 76, 76, 0.7);
 }
+
+/* Light mode support for modal */
+body.light-mode .ransomware-modal {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+body.light-mode .ransomware-modal-content {
+    background: white;
+    border-color: rgba(220, 38, 38, 0.3);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+body.light-mode .ransomware-modal-header {
+    background: rgba(220, 38, 38, 0.08);
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .ransomware-modal-header h2 {
+    color: #DC2626;
+}
+
+body.light-mode .ransomware-modal-close {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+body.light-mode .ransomware-modal-close:hover {
+    background: rgba(220, 38, 38, 0.15);
+    color: #DC2626;
+}
+
+body.light-mode .modal-stat {
+    background: rgba(0, 0, 0, 0.03);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .modal-stat-label {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+body.light-mode .modal-stat-value {
+    color: #DC2626;
+}
+
+body.light-mode .modal-section h4 {
+    color: rgba(0, 0, 0, 0.9);
+}
+
+body.light-mode .victim-item {
+    background: rgba(0, 0, 0, 0.03);
+    border-color: rgba(0, 0, 0, 0.1);
+    border-left-color: #DC2626;
+}
+
+body.light-mode .victim-item:hover {
+    background: rgba(0, 0, 0, 0.05);
+    border-left-color: #EF4444;
+}
+
+body.light-mode .victim-name {
+    color: rgba(0, 0, 0, 0.9);
+}
+
+body.light-mode .victim-date {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+body.light-mode .ransomware-modal-body::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+body.light-mode .ransomware-modal-body::-webkit-scrollbar-thumb {
+    background: rgba(220, 38, 38, 0.3);
+}
+
+body.light-mode .ransomware-modal-body::-webkit-scrollbar-thumb:hover {
+    background: rgba(220, 38, 38, 0.5);
+}

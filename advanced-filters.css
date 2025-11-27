@@ -269,19 +269,41 @@
 
 /* Light mode support */
 body.light-mode .filter-panel {
-    background: rgba(255, 255, 255, 0.9);
-    border-color: rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .filter-title {
+    color: #0066CC;
+}
+
+body.light-mode .filter-toggle {
+    background: rgba(0, 102, 204, 0.1);
+    border-color: rgba(0, 102, 204, 0.3);
+    color: #0066CC;
+}
+
+body.light-mode .filter-toggle:hover {
+    background: rgba(0, 102, 204, 0.2);
+    border-color: #0066CC;
 }
 
 body.light-mode .filter-search input,
 body.light-mode .filter-controls select {
     background: white;
-    border-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     color: #000;
 }
 
+body.light-mode .filter-search input:focus,
+body.light-mode .filter-controls select:focus {
+    border-color: #0066CC;
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+}
+
 body.light-mode .filter-search input::placeholder {
-    color: rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.5);
 }
 
 body.light-mode .filter-controls select option {
@@ -289,10 +311,59 @@ body.light-mode .filter-controls select option {
     color: #000;
 }
 
+body.light-mode .filter-controls select:hover {
+    border-color: #0066CC;
+}
+
+body.light-mode .search-btn {
+    background: rgba(0, 102, 204, 0.1);
+    border-color: rgba(0, 102, 204, 0.3);
+    color: #0066CC;
+}
+
+body.light-mode .search-btn:hover {
+    background: rgba(0, 102, 204, 0.2);
+    border-color: #0066CC;
+}
+
 body.light-mode .filter-label {
     color: rgba(0, 0, 0, 0.7);
+    font-weight: 600;
+}
+
+body.light-mode .result-count {
+    color: #0066CC;
 }
 
 body.light-mode .result-label {
     color: rgba(0, 0, 0, 0.6);
+}
+
+body.light-mode .clear-filters-btn {
+    background: rgba(220, 38, 38, 0.1);
+    border-color: rgba(220, 38, 38, 0.3);
+    color: #DC2626;
+}
+
+body.light-mode .clear-filters-btn:hover {
+    background: rgba(220, 38, 38, 0.2);
+    border-color: #DC2626;
+}
+
+body.light-mode .filter-badge {
+    background: rgba(0, 102, 204, 0.15);
+    border-color: rgba(0, 102, 204, 0.3);
+    color: #0066CC;
+}
+
+body.light-mode .filter-badge-remove {
+    color: #0066CC;
+}
+
+body.light-mode .filter-badge-remove:hover {
+    color: #DC2626;
+}
+
+body.light-mode .filter-actions {
+    border-top-color: rgba(0, 0, 0, 0.1);
 }
