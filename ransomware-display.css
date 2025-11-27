@@ -55,6 +55,10 @@
     cursor: pointer;
     position: relative;
     overflow: hidden;
+    /* Flex layout for equal height alignment */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .ransomware-card::before {
@@ -178,6 +182,8 @@
     flex-wrap: wrap;
     gap: 0.5rem;
     margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    /* Add spacing before button */
 }
 
 .industry-tag {
@@ -202,6 +208,8 @@
     font-weight: 600;
     cursor: pointer;
     transition: all 0.2s ease;
+    /* Push to bottom of flex container */
+    margin-top: auto;
 }
 
 .view-details-btn:hover {
