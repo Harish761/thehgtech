@@ -883,6 +883,20 @@
             .analytics-grid {
                 grid-template-columns: 1fr;
             }
+
+            #ransomwareWidget {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1.5rem;
+            }
+
+            #ransomwareWidget>div {
+                width: 100%;
+            }
+
+            #ransomwareWidget button {
+                width: 100%;
+            }
         }
 
         /* Light Mode Styles */
@@ -2681,15 +2695,13 @@
         });
     </script>
 
-    <!-- Chart.js CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
-
-    <!-- Load historical data -->
-    <script src="threat-intel-history.js?v=20251124"></script>
-
-    <!-- Advanced Filters -->
-    <script src="advanced-filters.js"></script>
-
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="dashboard.js?v=20251127-fix3"></script>
+    <script src="threat-intel.js?v=20251127-fix3"></script>
+    <script src="threat-intel-tabs.js?v=20251127-fix3"></script>
+    <script src="threat-analytics.js?v=20251127-fix3"></script>
+    <script src="ransomware-display.js?v=20251127-fix3"></script>
     <!-- Copy to Clipboard Utility -->
     <script src="copy-to-clipboard.js"></script>
 </body>
