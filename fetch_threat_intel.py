@@ -1573,38 +1573,7 @@ def run_hourly():
     history = save_daily_snapshot(vendors_data, snapshot_metrics)
     history = maintain_rolling_window(history)
     save_history(history)
-    generate_history_js(history)
-    
-    # Generate AI insights
-    print("\nAI-Powered Insights:")
-    if 'aiInsights' not in history:
-        history['aiInsights'] = {}
-    
-    # Daily AI Summary (GPT-4o-mini)
-    if should_run_daily_ai(history):
-        print("  → Generating daily AI summary (GPT-4o-mini)...")
-        daily_summary = generate_daily_ai_summary(vendors_data, snapshot_metrics)
-        if daily_summary:
-            history['aiInsights']['dailySummary'] = daily_summary
-            print(f"  ✓ Daily summary generated")
-        else:
-            print("  ⚠ Daily summary generation skipped")
-    else:
-        print("  ✓ Daily summary already exists for today")
-    
-    # Weekly AI Analysis (GPT-4o, Monday 12 AM IST)
-    if should_run_weekly_ai(history):
-        print("  → Generating weekly AI analysis (GPT-4o)...")
-        weekly_analysis = generate_weekly_ai_analysis(history)
-        if weekly_analysis:
-            history['aiInsights']['weeklySummary'] = weekly_analysis
-            print(f"  ✓ Weekly analysis generated")
-        else:
-            print("  ⚠ Weekly analysis generation skipped")
-    else:
-        print("  ✓ Weekly analysis not scheduled (runs Monday 12 AM IST)")
-    
-    # Save updated history with AI insights
+    # Save updated history (AI insights generation removed to reduce API costs)
     save_history(history)
     generate_history_js(history)
     

@@ -1187,14 +1187,6 @@
                 </div>
             </div>
 
-            <!-- AI Insights Section (Prominent Display) -->
-            <div id="aiInsightsSidebar"
-                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 1.5rem; margin: 2rem auto; padding: 0; max-width: 1400px;">
-                <!-- AI insights will be loaded here -->
-                <div id="aiInsightsContent" style="text-align: center; color: var(--text-muted); grid-column: 1 / -1;">
-                    <p>Loading AI insights...</p>
-                </div>
-            </div>
 
             <!-- Statistics Dashboard -->
             <div class="stats-dashboard"
@@ -2635,7 +2627,6 @@
         window.addEventListener('load', function () {
             setTimeout(() => {
                 loadTrendCharts();
-                loadAIInsightsSidebar(); // New sidebar version
             }, 500);
             loadThemePreference();
         });
