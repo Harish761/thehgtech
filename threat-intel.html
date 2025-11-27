@@ -1012,6 +1012,18 @@
 </head>
 
 <body>
+    <script>
+        // Apply theme immediately to prevent flash
+        if (typeof loadThemePreference === 'function') {
+            loadThemePreference();
+        } else {
+            // Fallback if function not yet defined (though it should be from head)
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'light') {
+                document.body.classList.add('light-mode');
+            }
+        }
+    </script>
 
 
     <!-- Header -->
@@ -2630,7 +2642,8 @@
 
         // Load static snapshot immediately (before other content)
         loadStaticSnapshot();
-        loadThemePreference(); // Run immediately to set body class
+        // Load static snapshot immediately (before other content)
+        loadStaticSnapshot();
 
         // Load everything on page load
         window.addEventListener('load', function () {
