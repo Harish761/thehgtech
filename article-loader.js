@@ -59,10 +59,21 @@ function renderArticleCards() {
 
 // Initialize articles on page load
 if (typeof window !== 'undefined') {
-    window.addEventListener('DOMContentLoaded', async () => {
-        const loadedArticles = await loadArticlesFromJSON();
-        if (loadedArticles) {
-            window.contentData.articles = { ...loadedArticles, ...window.contentData.articles };
+    // Wait for contentData to be defined (it's set by content.js)
+    function waitForContentData() {
+        if (window.contentData && window.contentData.articleCards) {
+            loadArticlesFromJSON();
+        } else {
+            // Check again in 100ms
+            setTimeout(waitForContentData, 100);
         }
-    });
+    }
+
+    // Start checking after DOM is ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', waitForContentData);
+    } else {
+        waitForContentData();
+    }
 }
+
