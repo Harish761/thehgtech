@@ -156,6 +156,10 @@
         tab.id = 'ransomware-tab';
         tab.className = 'tab-content';
         tab.innerHTML = `
+            <div class="section-header">
+                <h2><span class="icon">🔒</span> Ransomware Tracker</h2>
+                <p class="section-subtitle">Monitoring active ransomware campaigns from dark web leak sites (Last 7 Days). Data aggregated from Ransomware.live API & RSS feeds.</p>
+            </div>
             <div class="ransomware-stats-bar">
                 <div class="stat">
                     <span class="value" id="totalRansomwareGroups">-</span>

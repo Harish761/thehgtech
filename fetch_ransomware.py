@@ -123,7 +123,11 @@ def aggregate_by_group(victims):
     date_range = [(today - timedelta(days=i)).isoformat() for i in range(6, -1, -1)]
     
     for victim in victims:
-        group_name = victim.get('group_name', 'Unknown')
+        raw_group_name = victim.get('group_name', 'Unknown')
+        # Normalize group name for aggregation (lowercase)
+        group_key = raw_group_name.lower().strip()
+        # Create display name (Title Case)
+        display_name = raw_group_name.title() if raw_group_name.upper() != raw_group_name else raw_group_name
         
         # Parse discovery date
         discovered = victim.get('discovered', '')
@@ -144,17 +148,21 @@ def aggregate_by_group(victims):
             continue
         
         # Initialize group if new
-        if group_name not in groups:
-            groups[group_name]['daily_counts'] = {date: 0 for date in date_range}
+        if group_key not in groups:
+            groups[group_key]['daily_counts'] = {date: 0 for date in date_range}
+            groups[group_key]['name'] = display_name # Set initial display name
             
         # Update group data
-        groups[group_name]['name'] = group_name
-        groups[group_name]['count'] += 1
+        # Update display name if current one is "better" (e.g. not all lowercase if we have a title case version)
+        if groups[group_key]['name'].islower() and not display_name.islower():
+             groups[group_key]['name'] = display_name
+             
+        groups[group_key]['count'] += 1
         
         # Update daily count
         date_str = discovered_date.isoformat()
-        if date_str in groups[group_name]['daily_counts']:
-            groups[group_name]['daily_counts'][date_str] += 1
+        if date_str in groups[group_key]['daily_counts']:
+            groups[group_key]['daily_counts'][date_str] += 1
         
         # Add victim details
         victim_info = {
@@ -163,14 +171,14 @@ def aggregate_by_group(victims):
             'url': victim.get('post_url', ''),
             'discovered_date': discovered_dt.isoformat()
         }
-        groups[group_name]['victims'].append(victim_info)
+        groups[group_key]['victims'].append(victim_info)
         
         # Track industries and countries
         if 'activity' in victim and victim['activity']:
-            groups[group_name]['industries'].add(victim['activity'])
+            groups[group_key]['industries'].add(victim['activity'])
         
         if 'country' in victim and victim['country']:
-            groups[group_name]['countries'].add(victim['country'])
+            groups[group_key]['countries'].add(victim['country'])
     
     return groups
 
