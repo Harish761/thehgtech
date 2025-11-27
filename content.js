@@ -188,48 +188,6 @@ var websiteContent = {
             "category": "AI",
             "title": "Amazon's $50B AI Investment",
             "excerpt": "Amazon commits unprecedented capital toward government-focused AI."
-        },
-        {
-            "id": "article3",
-            "date": "November 16, 2025",
-            "category": "AI, Cloud Infrastructure, Europe, Digital Sovereignty, Governance",
-            "title": "Google's €5.5B Bet on Europe: The New Race for Cloud Sovereignty Has Begun",
-            "excerpt": "Google's €5.5 billion investment into Germany marks one of the largest cloud infrastructure expansions in European history. More than a datacenter rollout, the move signals a new geopolitical strategy: Europe is becoming the battleground for AI sovereignty, cloud dominance, and next-generation digital infrastructure. As EU regulations tighten and AI demand surges, Google's bold push positions it at the center of Europe's technological future."
-        },
-        {
-            "id": "article4",
-            "date": "November 16, 2025",
-            "category": "AI, Cloud Infrastructure, Hyperscale Compute, Google",
-            "title": "Ironwood Revealed: Inside Google's New AI Infrastructure Built for Trillion-Parameter Models",
-            "excerpt": "Google has unveiled Ironwood, its next-generation AI infrastructure designed to train and deploy trillion-parameter models with unprecedented efficiency. Combining custom silicon, ultra-dense datacenter engineering, and a new global orchestration fabric, Ironwood positions Google at the forefront of hyperscale AI computation."
-        },
-        {
-            "id": "article5",
-            "date": "November 16, 2025",
-            "category": "AI, Cloud Infrastructure, U.S. Strategy, Hyperscale Compute",
-            "title": "Microsoft's AI Superfactory: The United States Just Built the Next-Gen Computation Engine",
-            "excerpt": "Microsoft has unveiled the world's first multi-state \"AI Superfactory\" — a connected lattice of datacenters designed to operate as a single computational organism for training frontier models. This move marks the beginning of a new era where national AI strategy is defined not by models, but by massive, distributed compute fabrics built across entire regions of the United States."
-        },
-        {
-            "id": "article6",
-            "date": "November 16, 2025",
-            "category": "AI, Cloud Infrastructure, Cybersecurity, Governance",
-            "title": "Inside the $38B OpenAI–AWS Deal: How the Cloud Became the New AI Battlefield",
-            "excerpt": "A landmark $38B partnership between OpenAI and AWS has reshaped the global AI landscape. With AWS becoming the backbone for future GPT models and OpenAI gaining guaranteed hyperscale compute, the deal signals a new era where infrastructure — not models — determines who wins the AI race."
-        },
-        {
-            "id": "article7",
-            "date": "November 16, 2025",
-            "category": "Cybersecurity, Threat Intelligence, Law Enforcement, Cybercrime",
-            "title": "Operation Endgame: How Europol Dismantled the Global Malware Infrastructure Behind a Decade of Cybercrime",
-            "excerpt": "Europol's Operation Endgame is the largest coordinated cybercrime takedown ever executed, crippling the malware networks responsible for ransomware, financial fraud, botnet deployment, and data theft for over a decade. With arrests across multiple countries and a complete infrastructure seizure, the operation marks a turning point in global cyber enforcement — and a warning to threat groups operating at industrial scale."
-        },
-        {
-            "id": "article8",
-            "date": "November 16, 2025",
-            "category": "Cybersecurity, Supply Chain Security, Defence, Threat Intelligence",
-            "title": "The Elbit–MAYA Cyberattack: How a Supply-Chain Breach Exposed Global Defence Secrets",
-            "excerpt": "A sophisticated cyberattack on MAYA Technologies — a key supplier within the Elbit Systems defence ecosystem — exposed sensitive blueprints and classified schematics tied to multi-billion-dollar military programs across Israel and Australia. The breach highlights a critical global vulnerability: supply-chain partners are now the entry point to the most protected defence infrastructures on the planet."
         }
     ],
     "featureInsights": [
