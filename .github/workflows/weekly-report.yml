@@ -1,0 +1,35 @@
+name: Weekly Threat Report
+
+on:
+  schedule:
+    # Run at 09:00 UTC every Monday
+    - cron: '0 9 * * 1'
+  workflow_dispatch:  # Allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  generate-report:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+        
+    - name: Run Report Generator
+      run: |
+        python3 generate_weekly_report.py
+        
+    - name: Commit and Push Report
+      run: |
+        git config --global user.name 'TheHGTech Bot'
+        git config --global user.email 'bot@thehgtech.com'
+        git add articles.json
+        git commit -m "content: Auto-generated weekly threat report" || exit 0
+        git push
