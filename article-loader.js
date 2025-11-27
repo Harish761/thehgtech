@@ -13,14 +13,22 @@ async function loadArticlesFromJSON() {
             articlesData[article.id] = article;
         });
 
-        // Update articleCards
-        window.contentData.articleCards = data.articles.map(article => ({
-            id: article.id,
-            date: article.date,
-            category: article.category,
-            title: article.title.length > 50 ? article.title.substring(0, 47) + '...' : article.title,
-            excerpt: article.excerpt
-        }));
+        // Prepend articles from JSON to existing hardcoded articles
+        if (window.contentData && window.contentData.articleCards) {
+            const jsonArticles = data.articles.map(article => ({
+                id: article.id,
+                date: article.date,
+                category: article.category,
+                title: article.title.length > 50 ? article.title.substring(0, 47) + '...' : article.title,
+                excerpt: article.excerpt
+            }));
+
+            // Prepend JSON articles (they'll appear first)
+            window.contentData.articleCards = [...jsonArticles, ...window.contentData.articleCards];
+
+            // Trigger re-render of article cards
+            renderArticleCards();
+        }
 
         console.log('Articles loaded successfully from JSON');
         return articlesData;
@@ -31,12 +39,30 @@ async function loadArticlesFromJSON() {
     }
 }
 
+// Function to re-render article cards
+function renderArticleCards() {
+    const container = document.querySelector('.article-grid');
+    if (!container || !window.contentData || !window.contentData.articleCards) return;
+
+    container.innerHTML = window.contentData.articleCards.map(article => `
+        <div class="article-card" onclick="openArticleModal('${article.id}')">
+            <div class="article-category">${article.category}</div>
+            <h3>${article.title}</h3>
+            <p>${article.excerpt}</p>
+            <div class="article-meta">
+                <span>${article.date}</span>
+                <span class="read-more">Read Full Article →</span>
+            </div>
+        </div>
+    `).join('');
+}
+
 // Initialize articles on page load
 if (typeof window !== 'undefined') {
     window.addEventListener('DOMContentLoaded', async () => {
         const loadedArticles = await loadArticlesFromJSON();
         if (loadedArticles) {
-            window.contentData.articles = loadedArticles;
+            window.contentData.articles = { ...loadedArticles, ...window.contentData.articles };
         }
     });
 }
