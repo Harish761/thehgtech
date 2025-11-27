@@ -41,30 +41,45 @@ def aggregate_by_group(victims):
     # Get date 7 days ago for filtering
     seven_days_ago = datetime.now() - timedelta(days=7)
     
+    # Initialize daily counts for the last 7 days
+    today = datetime.now().date()
+    date_range = [(today - timedelta(days=i)).isoformat() for i in range(6, -1, -1)]
+    
     for victim in victims:
         group_name = victim.get('group_name', 'Unknown')
         
         # Parse discovery date
         discovered = victim.get('discovered', '')
         try:
-            discovered_date = datetime.fromisoformat(discovered.replace('Z', '+00:00'))
+            discovered_dt = datetime.fromisoformat(discovered.replace('Z', '+00:00'))
+            discovered_date = discovered_dt.date()
         except:
-            discovered_date = datetime.now()
+            discovered_dt = datetime.now()
+            discovered_date = discovered_dt.date()
         
         # Only include victims from last 7 days
-        if discovered_date < seven_days_ago:
+        if discovered_dt < seven_days_ago:
             continue
         
+        # Initialize group if new
+        if group_name not in groups:
+            groups[group_name]['daily_counts'] = {date: 0 for date in date_range}
+            
         # Update group data
         groups[group_name]['name'] = group_name
         groups[group_name]['count'] += 1
+        
+        # Update daily count
+        date_str = discovered_date.isoformat()
+        if date_str in groups[group_name]['daily_counts']:
+            groups[group_name]['daily_counts'][date_str] += 1
         
         # Add victim details
         victim_info = {
             'name': victim.get('post_title', 'Unknown'),
             'date': discovered,
             'url': victim.get('post_url', ''),
-            'discovered_date': discovered_date.isoformat()
+            'discovered_date': discovered_dt.isoformat()
         }
         groups[group_name]['victims'].append(victim_info)
         
@@ -109,7 +124,8 @@ def format_output(groups):
             'industries': sorted(list(data['industries']))[:5],  # Top 5
             'countries': sorted(list(data['countries']))[:5],  # Top 5
             'trend': data.get('trend', 'stable'),
-            'trend_percentage': data.get('trend_percentage', 0)
+            'trend_percentage': data.get('trend_percentage', 0),
+            'daily_counts': list(data.get('daily_counts', {}).values()) # List of counts for last 7 days
         }
         formatted_groups.append(formatted_group)
     

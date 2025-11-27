@@ -239,6 +239,26 @@
     color: #FF4C4C;
 }
 
+/* Attribution Footer */
+.ransomware-attribution {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ransomware-attribution p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+/* Trend Chart */
+.trend-chart-container {
+    position: relative;
+    width: 100%;
+}
+
 /* Mobile responsive */
 @media (max-width: 768px) {
     .ransomware-grid {
@@ -247,12 +267,30 @@
 
     .ransomware-stats-bar {
         grid-template-columns: repeat(2, 1fr);
+        /* Horizontal scroll for stats on mobile */
+        display: flex;
+        overflow-x: auto;
+        padding-bottom: 1rem;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .ransomware-stats-bar .stat {
+        min-width: 140px;
+        flex: 0 0 auto;
     }
 }
 
 /* Light mode */
 body.light-mode .ransomware-section {
     background: rgba(255, 255, 255, 0.5);
+}
+
+body.light-mode .ransomware-attribution {
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .ransomware-attribution p {
+    color: rgba(0, 0, 0, 0.5);
 }
 
 body.light-mode .ransomware-stats-bar {
