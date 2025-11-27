@@ -46,8 +46,7 @@ GITHUB_PAGES_URL = 'https://thehgtech.com/ioc-data'  # Using subdirectory on mai
 
 # IOC Display Caps (for file size management on GitHub Pages)
 IOC_DISPLAY_CAPS = {
-    'Phishing Database': 10000,  # Cap large dataset to most critical IOCs
-    # Other vendors: no cap (files are small enough)
+    # No caps - store all IOCs
 }
 
 # Vendor-specific caps - DISABLED (unlimited IOCs!)
@@ -169,7 +168,7 @@ def fetch_vendor_iocs(vendor_name, config):
             # Skip header lines (comments, CSV headers, etc)
             clean_lines = [l.strip() for l in lines if l.strip() and not l.startswith('#') and not l.startswith('//')]
             # No cap - store all IOCs
-            if vendor_name == "OpenPhish" or vendor_name == "Phishing Database":
+            if vendor_name == "OpenPhish":
                 for line in clean_lines:
                     if line.startswith('http'):
                         iocs.append(parse_phishing_url(line, now, config, vendor_name, ioc_history))
@@ -211,6 +210,25 @@ def fetch_vendor_iocs(vendor_name, config):
                     ioc = parse_ssl_blacklist(line, now, config, vendor_name, ioc_history)
                     if ioc:
                         iocs.append(ioc)
+            
+            elif vendor_name == "URLhaus":
+                # URLhaus CSV format
+                for line in lines[9:]:  # Skip header
+                    if line.startswith('#') or not line.strip():
+                        continue
+                    ioc = parse_urlhaus_csv(line, now, config, vendor_name, ioc_history)
+                    if ioc:
+                        iocs.append(ioc)
+                        
+            elif vendor_name == "ThreatFox":
+                # ThreatFox CSV format
+                for line in lines[9:]:  # Skip header
+                    if line.startswith('#') or not line.strip():
+                        continue
+                    ioc = parse_threatfox_csv(line, now, config, vendor_name, ioc_history)
+                    if ioc:
+                        iocs.append(ioc)
+                        
             else:
                 # Malware Bazaar and other CSV feeds
                 for line in lines[9:]:  # Skip 9-line header
@@ -244,7 +262,7 @@ def fetch_vendor_iocs(vendor_name, config):
 # Existing Parsing Functions
 # ──────────────────────────────────────────────────────────────
 def parse_phishing_url(url, now, config, vendor, ioc_history):
-    """Parse phishing URL (OpenPhish or Phishing Database)"""
+    """Parse phishing URL (OpenPhish)"""
     return {
         'type': 'url',
         'indicator': defang_indicator(url, 'url'),
@@ -394,6 +412,78 @@ def parse_ssl_blacklist(csv_line, now, config, vendor, ioc_history):
         'addedAt': get_added_at(url),
         'campaign': 'SSL C2 Infrastructure'
     }
+
+def parse_urlhaus_csv(csv_line, now, config, vendor, ioc_history):
+    """Parse URLhaus CSV line"""
+    try:
+        # CSV: id,dateadded,url,url_status,last_online,threat,tags,urlhaus_link,reporter
+        parts = csv_line.split(',')
+        if len(parts) < 3:
+            return None
+            
+        url = parts[2].strip('"')
+        if not url.startswith('http'):
+            return None
+            
+        tags = parts[6].strip('"').split(',') if len(parts) > 6 else []
+        threat = parts[5].strip('"') if len(parts) > 5 else 'malware_download'
+        
+        return {
+            'type': 'url',
+            'indicator': defang_indicator(url, 'url'),
+            'description': f'Malicious URL - {threat}',
+            'timestamp': format_timestamp(now),
+            'source': vendor,
+            'sourceUrl': config['website'],
+            'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
+            'tags': ['malware', 'url'] + [t for t in tags if t],
+            'addedAt': ioc_history.get(url, now.isoformat()),
+            'campaign': threat
+        }
+    except Exception:
+        return None
+
+def parse_threatfox_csv(csv_line, now, config, vendor, ioc_history):
+    """Parse ThreatFox CSV line"""
+    try:
+        # CSV: first_seen_utc,ioc_id,ioc_value,ioc_type,threat_type,fk_malware,malware_alias,malware_printable,last_seen_utc,confidence_level,reference,tags,anonymous,reporter
+        parts = csv_line.split(',')
+        if len(parts) < 4:
+            return None
+            
+        ioc_value = parts[2].strip('"')
+        ioc_type_raw = parts[3].strip('"')
+        threat_type = parts[4].strip('"')
+        malware = parts[5].strip('"')
+        
+        # Map ThreatFox types
+        type_map = {
+            'url': 'url',
+            'domain': 'domain',
+            'ip:port': 'ip',
+            'md5_hash': 'hash',
+            'sha256_hash': 'hash'
+        }
+        ioc_type = type_map.get(ioc_type_raw, 'url')
+        
+        # For IP:port, extract just the IP
+        if ':' in ioc_value and ioc_type == 'ip':
+            ioc_value = ioc_value.split(':')[0]
+            
+        return {
+            'type': ioc_type,
+            'indicator': defang_indicator(ioc_value, ioc_type),
+            'description': f"{malware} - {threat_type}" if threat_type else malware,
+            'timestamp': format_timestamp(now),
+            'source': vendor,
+            'sourceUrl': config['website'],
+            'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
+            'tags': generate_tags(ioc_type, malware + ' ' + threat_type, vendor),
+            'addedAt': ioc_history.get(ioc_value, now.isoformat()),
+            'campaign': malware if malware != 'Unknown' else detect_campaign(ioc_value, threat_type)
+        }
+    except Exception:
+        return None
 
 def parse_threatfox(item, now, config, vendor):
     """Parse ThreatFox JSON entry"""
@@ -765,7 +855,7 @@ def generate_daily_ai_summary(vendors_data, snapshot_metrics):
             severity_counts['Critical'] += 1
         elif source in ['Spamhaus DROP', 'CINS Army', 'Blocklist.de']:
             severity_counts['High'] += 1
-        elif source in ['OpenPhish', 'Phishing Database']:
+        elif source == 'OpenPhish':
             severity_counts['Medium'] += 1
         else:
             severity_counts['Low'] += 1
