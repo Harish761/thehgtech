@@ -1189,9 +1189,9 @@
 
             <!-- AI Insights Section (Prominent Display) -->
             <div id="aiInsightsSidebar"
-                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin: 2rem 0; padding: 1.5rem; background: rgba(255, 255, 255, 0.02); border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.05);">
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 1.5rem; margin: 2rem auto; padding: 0; max-width: 1400px;">
                 <!-- AI insights will be loaded here -->
-                <div style="text-align: center; color: var(--text-muted); grid-column: 1 / -1;">
+                <div id="aiInsightsContent" style="text-align: center; color: var(--text-muted); grid-column: 1 / -1;">
                     <p>Loading AI insights...</p>
                 </div>
             </div>
@@ -2643,6 +2643,7 @@
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="dashboard-data.js?v=20251128"></script>
     <script src="dashboard.js?v=20251127-fix3"></script>
     <script src="threat-intel.js?v=20251127-fix3"></script>
     <script src="threat-intel-tabs.js?v=20251127-fix3"></script>

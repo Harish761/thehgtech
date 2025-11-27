@@ -28,7 +28,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 function renderDashboard(stats) {
     // Update last updated timestamp
     const lastUpdated = new Date(stats.lastUpdated);
-    document.getElementById('lastUpdated').textContent = lastUpdated.toLocaleString();
+    const timeElement = document.getElementById('lastUpdatedTime') || document.getElementById('lastUpdated');
+    if (timeElement) {
+        timeElement.textContent = lastUpdated.toLocaleString();
+    }
 
     // Animate stat counters
     animateCounter('totalIOCs', stats.totalIOCs);
@@ -46,14 +49,25 @@ function renderDashboard(stats) {
 // Update dashboard with new data
 function updateDashboard(stats) {
     // Update counters
-    document.getElementById('totalIOCs').textContent = formatNumber(stats.totalIOCs);
-    document.getElementById('totalURLs').textContent = formatNumber(stats.byType.url || 0);
-    document.getElementById('totalHashes').textContent = formatNumber(stats.byType.hash || 0);
-    document.getElementById('totalIPs').textContent = formatNumber(stats.byType.ip || 0);
+    // Update counters
+    const totalIOCs = document.getElementById('totalIOCs');
+    if (totalIOCs) totalIOCs.textContent = formatNumber(stats.totalIOCs);
+
+    const totalURLs = document.getElementById('totalURLs');
+    if (totalURLs) totalURLs.textContent = formatNumber(stats.byType.url || 0);
+
+    const totalHashes = document.getElementById('totalHashes');
+    if (totalHashes) totalHashes.textContent = formatNumber(stats.byType.hash || 0);
+
+    const totalIPs = document.getElementById('totalIPs');
+    if (totalIPs) totalIPs.textContent = formatNumber(stats.byType.ip || 0);
 
     // Update timestamp
     const lastUpdated = new Date(stats.lastUpdated);
-    document.getElementById('lastUpdated').textContent = lastUpdated.toLocaleString();
+    const timeElement = document.getElementById('lastUpdatedTime') || document.getElementById('lastUpdated');
+    if (timeElement) {
+        timeElement.textContent = lastUpdated.toLocaleString();
+    }
 
     // Update charts
     updateCharts(stats);
@@ -62,6 +76,8 @@ function updateDashboard(stats) {
 // Animate number counter
 function animateCounter(elementId, target) {
     const element = document.getElementById(elementId);
+    if (!element) return; // Safety check
+
     const duration = 2000;
     const start = 0;
     const increment = target / (duration / 16);
@@ -73,7 +89,9 @@ function animateCounter(elementId, target) {
             current = target;
             clearInterval(timer);
         }
-        element.textContent = formatNumber(Math.floor(current));
+        if (element) {
+            element.textContent = formatNumber(Math.floor(current));
+        }
     }, 16);
 }
 

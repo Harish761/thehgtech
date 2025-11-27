@@ -19,6 +19,12 @@
             return;
         }
 
+        // Check if tabs already exist to prevent duplication
+        if (mainContainer.querySelector('.tab-navigation')) {
+            console.log('Tabs already initialized');
+            return;
+        }
+
         // Create tab navigation
         const tabNav = createTabNavigation();
 
@@ -46,10 +52,30 @@
         // Create ransomware tab
         const ransomwareTab = createRansomwareTab();
 
-        // Add tabs to container
-        mainContainer.appendChild(dashboardTab);
-        mainContainer.appendChild(ransomwareTab);
-        mainContainer.appendChild(threatsTab);
+        // Append tabs to the content wrapper
+        contentWrapper.appendChild(dashboardTab);
+        contentWrapper.appendChild(ransomwareTab);
+        contentWrapper.appendChild(threatsTab); // Append threatsTab to the contentWrapper
+
+        // Append the content wrapper to the main container
+        mainContainer.appendChild(contentWrapper);
+
+        // Initialize dashboard charts after DOM is ready
+        if (typeof ThreatDashboard !== 'undefined') {
+            const dashboard = new ThreatDashboard();
+            dashboard.loadAllData().then(stats => {
+                // Render leaderboard
+                const leaderboard = document.getElementById('threatLeaderboard');
+                if (leaderboard && stats.topMalware) {
+                    leaderboard.innerHTML = renderLeaderboard(stats.topMalware);
+                }
+
+                // Initialize charts
+                initializeCharts(stats, dashboard);
+            }).catch(err => {
+                console.error('Failed to load dashboard data:', err);
+            });
+        }
 
         // Set initial active tab
         showTab('dashboard');

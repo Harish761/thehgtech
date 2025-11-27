@@ -205,3 +205,113 @@ window.addEventListener('load', function () {
         }
     }, 1500);
 });
+
+// Load AI Insights Sidebar
+async function loadAIInsightsSidebar() {
+    const container = document.getElementById('aiInsightsContent');
+    if (!container) return;
+
+    try {
+        container.innerHTML = '<div class="loading-spinner"></div><p style="text-align:center; color:var(--text-muted);">Loading AI insights...</p>';
+
+        // Fetch history data which contains the AI summaries
+        const response = await fetch('threat-intel-history.json');
+        if (!response.ok) throw new Error('Failed to load history data');
+
+        const historyData = await response.json();
+        const snapshots = historyData.dailySnapshots || historyData.daily_snapshots;
+
+        if (!historyData || !snapshots) {
+            throw new Error('No history data available');
+        }
+
+        // Get latest snapshot
+        // If it's an array (dailySnapshots), get the last element
+        // If it's an object (daily_snapshots), get by key
+        let latest;
+        let latestDate;
+
+        if (Array.isArray(snapshots)) {
+            latest = snapshots[snapshots.length - 1];
+            latestDate = latest.date;
+        } else {
+            latestDate = Object.keys(snapshots).sort().pop();
+            latest = snapshots[latestDate];
+        }
+
+        // Try to get AI insights from top-level object (new structure) or snapshot (old structure)
+        let aiData = null;
+        let aiDate = latestDate;
+
+        if (historyData.aiInsights && historyData.aiInsights.dailySummary) {
+            aiData = historyData.aiInsights.dailySummary;
+            aiDate = aiData.date || latestDate;
+        } else if (latest && (latest.ai_summary || latest.aiSummary)) {
+            aiData = latest.ai_summary || latest.aiSummary;
+        }
+
+        if (!aiData) {
+            container.innerHTML = '<p style="text-align:center; color:var(--text-muted);">No AI insights available for today.</p>';
+            return;
+        }
+
+        // Extract content based on structure
+        const dailySummary = aiData.summary || aiData.daily_summary || 'No daily summary available.';
+
+        // Handle weekly trends or key findings
+        let secondaryTitle = 'Weekly Trends';
+        let secondaryContent = aiData.weekly_trend || 'No weekly trend analysis available.';
+
+        // If we have keyFindings (new structure), use that instead
+        if (aiData.keyFindings && Array.isArray(aiData.keyFindings)) {
+            secondaryTitle = 'Key Findings';
+            secondaryContent = '<ul>' + aiData.keyFindings.map(f => `<li>${f}</li>`).join('') + '</ul>';
+        }
+
+        // Generate HTML with Premium UI
+        let html = `
+            <div class="stat-card" style="background: linear-gradient(135deg, rgba(0, 217, 255, 0.08), rgba(0, 217, 255, 0.03)); border: 1px solid rgba(0, 217, 255, 0.3); border-radius: 10px; padding: 1.25rem; backdrop-filter: blur(10px); box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                <div class="insight-header" style="display: flex; align-items: center; gap: 8px; margin-bottom: 0.75rem; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(0, 217, 255, 0.2);">
+                    <span style="font-size: 1.3rem;">📅</span>
+                    <div style="flex: 1;">
+                        <div style="font-size: 0.95rem; font-weight: 600; color: var(--accent-cyan);">Daily Summary</div>
+                        <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">${aiDate}</div>
+                    </div>
+                </div>
+                <div class="insight-body" style="color: var(--text-primary); line-height: 1.5; font-size: 0.875rem;">
+                    ${formatAIContent(dailySummary)}
+                </div>
+            </div>
+            
+            <div class="stat-card" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.08), rgba(16, 185, 129, 0.03)); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 10px; padding: 1.25rem; backdrop-filter: blur(10px); box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                <div class="insight-header" style="display: flex; align-items: center; gap: 8px; margin-bottom: 0.75rem; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(16, 185, 129, 0.2);">
+                    <span style="font-size: 1.3rem;">📊</span>
+                    <div style="font-size: 0.95rem; font-weight: 600; color: #10b981;">${secondaryTitle}</div>
+                </div>
+                <div class="insight-body" style="color: var(--text-primary); font-size: 0.875rem;">
+                    ${secondaryTitle === 'Key Findings' ?
+                '<ul style="margin: 0; padding-left: 1.25rem; line-height: 1.6;">' + aiData.keyFindings.map(f => `<li style="margin-bottom: 0.4rem;">${f}</li>`).join('') + '</ul>'
+                : formatAIContent(secondaryContent)}
+                </div>
+            </div>
+        `;
+
+        container.innerHTML = html;
+
+    } catch (error) {
+        console.error('Error loading AI insights:', error);
+        container.innerHTML = `<p style="text-align:center; color:var(--accent-red);">Failed to load insights. <br><small>${error.message}</small></p>`;
+    }
+}
+
+// Helper to format AI content (convert markdown-like bullets to HTML)
+function formatAIContent(text) {
+    if (!text) return '';
+    return text
+        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') // Bold
+        .replace(/- (.*?)(?=\n|$)/g, '<li>$1</li>') // List items
+        .replace(/\n/g, '<br>'); // Line breaks
+}
+
+// Export for global use
+window.loadAIInsightsSidebar = loadAIInsightsSidebar;

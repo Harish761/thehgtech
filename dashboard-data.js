@@ -18,6 +18,9 @@ class ThreatDashboard {
                 .catch(() => ({ vendor, iocs: [], totalCount: 0 }))
         );
 
+        // Also load history data
+        this.loadHistoryData();
+
         const results = await Promise.all(promises);
         results.forEach(data => {
             this.data[data.vendor] = data;
@@ -25,6 +28,18 @@ class ThreatDashboard {
 
         this.calculateStats();
         return this.stats;
+    }
+
+    async loadHistoryData() {
+        try {
+            const response = await fetch('threat-intel-history.json');
+            if (!response.ok) throw new Error('Failed to load history');
+            const data = await response.json();
+            this.history = data.dailySnapshots || data.daily_snapshots || [];
+        } catch (e) {
+            console.warn('History data not available, using mock data for trends');
+            this.history = [];
+        }
     }
 
     calculateStats() {
@@ -97,10 +112,23 @@ class ThreatDashboard {
         };
     }
 
-    // Get 7-day trend data (mock for now, will need historical data)
+    // Get 7-day trend data
     get7DayTrend() {
-        // This would ideally come from threat-intel-history.json
-        // For now, generate sample trend
+        if (this.history && this.history.length > 0) {
+            // Use real history data
+            // Sort by date ascending
+            const sortedHistory = [...this.history].sort((a, b) => new Date(a.date) - new Date(b.date));
+
+            // Get last 7 days
+            const last7Days = sortedHistory.slice(-7);
+
+            return last7Days.map(snapshot => ({
+                date: new Date(snapshot.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
+                count: snapshot.metrics ? snapshot.metrics.totalIOCs : 0
+            }));
+        }
+
+        // Fallback to mock data if no history
         const days = 7;
         const trend = [];
         const today = new Date();
