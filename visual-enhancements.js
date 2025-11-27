@@ -185,8 +185,8 @@
 
     // ===== ENHANCE EXISTING ELEMENTS =====
     function enhanceExistingElements() {
-        // Add gradient text to main headings
-        document.querySelectorAll('h1, .section-title').forEach(heading => {
+        // Add gradient text to main headings (but not all h1s, be selective)
+        document.querySelectorAll('.section-title').forEach(heading => {
             if (!heading.classList.contains('gradient-text')) {
                 heading.classList.add('gradient-text');
             }
@@ -199,10 +199,12 @@
             }
         });
 
-        // Add scroll animations to sections
-        document.querySelectorAll('.section').forEach((section, index) => {
-            if (!section.classList.contains('fade-in')) {
-                section.classList.add('fade-in', `stagger-${Math.min(index + 1, 5)}`);
+        // DO NOT auto-add scroll animations to sections - let them be visible by default
+        // Only add animations to elements that explicitly have data-animate attribute
+        document.querySelectorAll('[data-animate]').forEach(element => {
+            const animationType = element.getAttribute('data-animate');
+            if (!element.classList.contains(animationType)) {
+                element.classList.add(animationType);
             }
         });
 
