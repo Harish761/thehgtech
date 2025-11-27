@@ -358,17 +358,23 @@ window.loadRansomwareWidget = async function () {
         if (!response.ok) throw new Error('Failed to load ransomware data');
 
         const data = await response.json();
-        if (!data || !data.length) return;
+        if (!data || !data.groups) return;
 
         // Calculate stats
-        const groups = new Set(data.map(item => item.group_name)).size;
+        const groups = data.groups.length;
 
         // Count victims in last 24 hours
         const oneDayAgo = new Date(Date.now() - 24 * 60 * 60 * 1000);
-        const victimsToday = data.filter(item => {
-            const date = new Date(item.published);
-            return date >= oneDayAgo;
-        }).length;
+        let victimsToday = 0;
+
+        data.groups.forEach(group => {
+            if (group.victims) {
+                victimsToday += group.victims.filter(victim => {
+                    const date = new Date(victim.discovered_date || victim.date);
+                    return date >= oneDayAgo;
+                }).length;
+            }
+        });
 
         // Update DOM
         const groupsEl = document.getElementById('rw-active-groups');

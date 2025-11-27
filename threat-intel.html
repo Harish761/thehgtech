@@ -2630,6 +2630,7 @@
 
         // Load static snapshot immediately (before other content)
         loadStaticSnapshot();
+        loadThemePreference(); // Run immediately to set body class
 
         // Load everything on page load
         window.addEventListener('load', function () {
@@ -2637,7 +2638,6 @@
                 loadTrendCharts();
                 loadAIInsightsSidebar(); // New sidebar version
             }, 500);
-            loadThemePreference();
         });
     </script>
 
