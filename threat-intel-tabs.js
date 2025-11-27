@@ -502,9 +502,14 @@
         }
 
         // 7-Day Trend
+        // 7-Day Trend
         const trendData = dashboard.get7DayTrend();
-        const trendCtx = document.getElementById('trendChart')?.getContext('2d');
-        if (trendCtx) {
+        const trendCanvas = document.getElementById('trendChart');
+        if (trendCanvas) {
+            const existingChart = Chart.getChart(trendCanvas);
+            if (existingChart) existingChart.destroy();
+
+            const trendCtx = trendCanvas.getContext('2d');
             new Chart(trendCtx, {
                 type: 'line',
                 data: {
