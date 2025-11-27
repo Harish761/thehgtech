@@ -21,7 +21,13 @@
 
         // Check if tabs already exist to prevent duplication
         if (mainContainer.querySelector('.tab-navigation')) {
-            console.log('Tabs already initialized');
+            console.log('Tabs already initialized, skipping...');
+            return;
+        }
+
+        // Also check if tab content already exists
+        if (document.getElementById('dashboard-tab')) {
+            console.log('Dashboard tab already exists, skipping...');
             return;
         }
 
@@ -52,13 +58,13 @@
         // Create ransomware tab
         const ransomwareTab = createRansomwareTab();
 
-        // Append tabs to the content wrapper
-        contentWrapper.appendChild(dashboardTab);
-        contentWrapper.appendChild(ransomwareTab);
-        contentWrapper.appendChild(threatsTab); // Append threatsTab to the contentWrapper
+        // Add tabs to container
+        mainContainer.appendChild(dashboardTab);
+        mainContainer.appendChild(ransomwareTab);
+        mainContainer.appendChild(threatsTab);
 
-        // Append the content wrapper to the main container
-        mainContainer.appendChild(contentWrapper);
+        // Set initial active tab
+        showTab('dashboard');
 
         // Initialize dashboard charts after DOM is ready
         if (typeof ThreatDashboard !== 'undefined') {
@@ -76,12 +82,6 @@
                 console.error('Failed to load dashboard data:', err);
             });
         }
-
-        // Set initial active tab
-        showTab('dashboard');
-
-        // Load dashboard data
-        loadDashboardData();
 
         // Load ransomware data
         loadRansomwareData();
