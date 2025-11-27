@@ -221,7 +221,7 @@ def save_data(groups):
         'period': 'Last 7 days',
         'total_groups': len(groups),
         'total_victims': total_victims,
-        'groups': groups[:12]  # Top 12 groups (increased from 10)
+        'groups': groups  # Save ALL groups, no limit
     }
     
     # Save to file
