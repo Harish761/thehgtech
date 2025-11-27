@@ -1458,6 +1458,28 @@
                         </button>
                     </div>
                 </div>
+
+                <!-- Fallback Script to ensure Widget Loads -->
+                <script>
+                    (async function () {
+                        try {
+                            const response = await fetch('ransomware-data.json');
+                            if (response.ok) {
+                                const data = await response.json();
+                                if (data && data.length) {
+                                    const groups = new Set(data.map(item => item.group_name)).size;
+                                    const oneDayAgo = new Date(Date.now() - 24 * 60 * 60 * 1000);
+                                    const victimsToday = data.filter(item => new Date(item.published) >= oneDayAgo).length;
+
+                                    const gEl = document.getElementById('rw-active-groups');
+                                    const vEl = document.getElementById('rw-victims-today');
+                                    if (gEl && gEl.innerText === '--') gEl.innerText = groups;
+                                    if (vEl && vEl.innerText === '--') vEl.innerText = victimsToday;
+                                }
+                            }
+                        } catch (e) { console.error('Widget fallback error', e); }
+                    })();
+                </script>
                 <div
                     style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
                     <div
