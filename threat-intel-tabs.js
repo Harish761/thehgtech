@@ -126,6 +126,46 @@
                     </div>
                 </div>
 
+                <!-- Ransomware Widget (New) -->
+                <div class="dashboard-card" id="ransomwareWidget" style="grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem; background: var(--glass); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem;">
+                    <div style="flex: 1; min-width: 250px;">
+                        <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
+                            <span style="font-size: 1.5rem;">🔒</span>
+                            <h4 style="margin: 0; font-size: 1.2rem; color: var(--text-primary);">Ransomware Activity</h4>
+                        </div>
+                        <p style="margin: 0; color: var(--text-secondary); font-size: 0.9rem;">
+                            Real-time tracking of active ransomware groups and victims.
+                        </p>
+                    </div>
+
+                    <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
+                        <div style="text-align: center;">
+                            <div id="rw-active-groups" style="font-size: 1.5rem; font-weight: 700; color: var(--accent-red);">--</div>
+                            <div style="font-size: 0.8rem; color: var(--text-muted);">Active Groups</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div id="rw-victims-today" style="font-size: 1.5rem; font-weight: 700; color: var(--accent-cyan);">--</div>
+                            <div style="font-size: 0.8rem; color: var(--text-muted);">Victims (24h)</div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button onclick="document.querySelector('[data-tab=\'ransomware\']').click()" style="
+                            background: rgba(255, 61, 61, 0.1);
+                            border: 1px solid var(--accent-red);
+                            color: var(--accent-red);
+                            padding: 0.6rem 1.2rem;
+                            border-radius: 6px;
+                            cursor: pointer;
+                            font-weight: 600;
+                            transition: all 0.3s ease;
+                        " onmouseover="this.style.background='var(--accent-red)'; this.style.color='white';"
+                          onmouseout="this.style.background='rgba(255, 61, 61, 0.1)'; this.style.color='var(--accent-red)';">
+                            View Full Tracker →
+                        </button>
+                    </div>
+                </div>
+
                 <!-- Threat Distribution -->
                 <div class="dashboard-card chart-card">
                     <div class="card-header">
@@ -197,6 +237,11 @@
 
             // Initialize charts
             initializeCharts(stats, dashboard);
+
+            // Load Ransomware Widget
+            if (window.loadRansomwareWidget) {
+                window.loadRansomwareWidget();
+            }
 
         } catch (error) {
             console.error('Failed to load dashboard data:', error);
