@@ -4,118 +4,104 @@
 var websiteContent = {
     "cyberShorts": [
         {
-            "date": "Nov 26 2025",
-            "title": "Code Formatting Platforms Leak Thousands of User Secrets",
-            "content": "Users of JSONFormatter and CodeBeautify have experienced a significant data breach, exposing sensitive information such as credentials, authentication keys, and private keys. This breach highlights the vulnerability of code formatting platforms that developers frequently use to enhance code readability. The leak has potentially severe implications for organizations relying on these tools, as exposed secrets could lead to unauthorized access and data breaches. As these platforms are widely used in development environments, the incident underscores the need for robust security practices when handling sensitive information. Developers are advised to audit their use of online tools and consider local, secure alternatives for code formatting tasks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/thousands-of-secrets-leaked-on-code-formatting-platforms/"
+            "date": "Nov 27 2025",
+            "title": "Hackers Exploit Broadcast Vulnerabilities to Air Fake Alerts",
+            "content": "In a chilling reminder of past vulnerabilities, hackers have once again hijacked American broadcast systems to air fake emergency alerts and inappropriate content. This breach exploits a decade-long oversight where broadcasters left their systems exposed, allowing unauthorized access to TV shows and radio sermons. The attack underscores the persistent risk of outdated hardware and insufficient security protocols in broadcast infrastructure. The impact is significant, affecting public trust in emergency communication channels and highlighting the need for broadcasters to secure their systems against unauthorized access. Security professionals should audit their broadcast equipment for vulnerabilities and implement robust access controls to prevent similar incidents.",
+            "source": "Graham Cluley",
+            "sourceUrl": "https://grahamcluley.com/smashing-security-podcast-445/"
         },
         {
-            "date": "Nov 26 2025",
-            "title": "Cybersecurity Becomes Integral to Business Strategy",
-            "content": "Cybersecurity is now recognized as a core discipline integral to business strategy, operations, and geopolitical considerations. This shift reflects the increasing complexity and frequency of cyber threats that organizations face globally. As cyber risks become more intertwined with business operations, boardroom discussions are evolving to include cybersecurity as a critical component of strategic planning. This trend emphasizes the need for business leaders to be well-versed in cybersecurity principles and for security teams to align their efforts with broader business objectives. Organizations should prioritize building robust cybersecurity frameworks that support their strategic goals and operational resilience.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/cybersecurity-is-now-a-core-business-discipline/"
-        },
-        {
-            "date": "Nov 26 2025",
-            "title": "Legacy OT Security Poses Risks Amidst Modern Threats",
-            "content": "Operational technology (OT) environments that rely on outdated systems face increasing risks, as highlighted by the nostalgic return of &#x27;Stranger Things.&#x27; While 1980s nostalgia is popular, clinging to legacy technology can introduce significant vulnerabilities in critical infrastructure. These outdated systems often lack modern security features, making them attractive targets for cybercriminals. The risks are compounded by the integration of IT and OT systems, which can expose operational networks to new attack vectors. Organizations should assess their OT environments and prioritize updates and security enhancements to mitigate potential threats. Embracing modern security practices is essential to protect against evolving cyber risks.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/stranger-things-legacy-ot-security-op-ed/"
-        },
-        {
-            "date": "Nov 26 2025",
-            "title": "ToddyCat APT Targets Outlook and Microsoft 365",
-            "content": "The ToddyCat advanced persistent threat (APT) group has evolved its tactics to target Outlook archives and Microsoft 365 access tokens. According to Kaspersky Labs, the group&#x27;s refined toolkit now includes capabilities to steal browser credentials, posing a heightened risk to organizations using these platforms. This development represents a significant threat to email and cloud service security, potentially allowing attackers to access sensitive communications and data. Organizations should enhance their security measures, including enabling multi-factor authentication and regularly updating security protocols. Remaining vigilant against evolving APT tactics is crucial to safeguarding critical organizational assets.",
+            "date": "Nov 27 2025",
+            "title": "HashJack Attack Targets AI-Powered Browsers with Malicious URLs",
+            "content": "Researchers have identified a new threat known as HashJack, targeting AI-powered browsers and assistants through malicious URL fragments. This attack involves embedding rogue prompts in URL fragments, which can deceive AI models into executing unauthorized actions like phishing or data exfiltration. The attack primarily affects browsers that incorporate AI assistants, posing risks of credential theft and malware distribution. As AI integration in browsers becomes more prevalent, this discovery highlights the growing sophistication of indirect prompt injection attacks. Security teams should consider implementing URL sanitization and monitoring AI interactions with web content to mitigate potential threats.",
             "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4096650/toddycat-apt-evolves-to-target-outlook-archives-and-microsoft-365-tokens.html"
+            "sourceUrl": "https://www.csoonline.com/article/4097087/ai-browsers-can-be-tricked-with-malicious-prompts-hidden-in-url-fragments.html"
         },
         {
             "date": "Nov 26 2025",
-            "title": "Security Detection Tools Alone Can&#x27;t Save Enterprises",
-            "content": "Despite investments in security detection tools, enterprises face challenges in justifying resource allocation for alert lifecycle management. With typical setups involving 6-8 detection tools, security teams struggle to convince superiors of the need for further investment in response capabilities. This situation often leaves organizations vulnerable to threats that bypass initial detection. Security leaders must advocate for comprehensive security strategies that include robust incident response plans. By emphasizing the importance of end-to-end security management, organizations can better protect themselves against sophisticated cyber threats and minimize potential damages from undetected attacks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/11/when-your-2m-security-detection-fails.html"
-        },
-        {
-            "date": "Nov 26 2025",
-            "title": "ASUS Patches Critical Flaw in AiCloud Routers",
-            "content": "ASUS has released firmware updates to address nine security vulnerabilities in its routers, including a critical authentication bypass flaw affecting devices with AiCloud enabled. This flaw could allow unauthorized access to sensitive data and network resources. The vulnerabilities highlight the importance of timely firmware updates to protect against potential exploitation. ASUS users are urged to apply the latest firmware updates immediately to secure their devices. This incident underscores the ongoing need for vigilance in router security management, as routers often serve as gateways to broader network environments.",
+            "title": "ShadowV2 Botnet Exploits AWS Outage for Testing",
+            "content": "The ShadowV2 botnet, based on the notorious Mirai malware, has been observed exploiting an AWS outage to test its capabilities against IoT devices. Targeting products from D-Link, TP-Link, and other vendors, ShadowV2 utilizes known vulnerabilities to compromise devices and expand its network. This incident highlights the botnet&#x27;s adaptability and the persistent threat it poses to IoT security. The AWS outage provided a unique opportunity for the botnet to operate with reduced interference, underscoring the importance of robust IoT security measures. Organizations should ensure their IoT devices are updated with the latest patches and monitor network traffic for unusual activity.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/asus-warns-of-new-critical-auth-bypass-flaw-in-aicloud-routers/"
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-shadowv2-botnet-malware-used-aws-outage-as-a-test-opportunity/"
         },
         {
             "date": "Nov 26 2025",
-            "title": "Ransomware Attack Disrupts US Emergency Alert System",
-            "content": "The OnSolve CodeRED platform, used for local emergency alerts across the US, has been compromised by the Inc Ransom ransomware group. This attack has led to disruptions in emergency communication services and a data breach, affecting the platform&#x27;s operations. The incident highlights the vulnerabilities in critical infrastructure systems and the potential consequences of ransomware attacks on public safety services. Organizations using similar platforms should review their security measures and implement robust backups and recovery plans. This attack serves as a reminder of the importance of securing essential communication systems against cyber threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/ransomware-attack-disrupts-local-emergency-alert-system-across-us/"
+            "title": "Ransomware Attack Forces Crisis24 to Halt Emergency Notifications",
+            "content": "Crisis24 has shut down its emergency notification system, OnSolve CodeRED, following a ransomware attack that rendered it inoperable. The attack has affected dozens of agencies and their users, compromising data and disrupting critical communication services. This incident highlights the vulnerability of emergency systems to cyberattacks and the potential consequences for public safety. As ransomware attacks become increasingly targeted, organizations must prioritize securing their communication infrastructure. Agencies relying on such systems should review their cybersecurity strategies and ensure they have robust incident response plans in place to mitigate future risks.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/crisis24-onsolve-codered-emergency-system-ransomware/"
         },
         {
             "date": "Nov 26 2025",
-            "title": "Fake Windows Update Screens Used in New ClickFix Attacks",
-            "content": "A new wave of ClickFix social engineering attacks is deceiving employees with fake Windows Update screens to execute unauthorized commands. Security researchers at Huntress have identified this tactic, which targets personal computers by exploiting the automatic command execution feature in Windows systems. Organizations are advised to disable this functionality to prevent potential breaches. This attack highlights the persistent threat of social engineering, which continues to evolve despite advances in cybersecurity measures. IT departments should educate employees on recognizing phishing attempts and regularly update security protocols to mitigate risks.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4096241/new-clickfix-attacks-use-fake-windows-update-screens-to-fool-employees.html"
+            "title": "Node-Forge Library Patch Addresses Signature Verification Flaw",
+            "content": "A critical vulnerability in the &#x27;node-forge&#x27; JavaScript cryptography library has been patched, addressing a flaw that allowed attackers to bypass signature verification. This vulnerability could be exploited by crafting data that appears valid, potentially undermining the integrity of cryptographic operations. The flaw affected various applications relying on node-forge for secure communications, highlighting the importance of maintaining up-to-date cryptographic libraries. Developers using node-forge should immediately update to the latest version to protect their applications from potential exploitation. This incident underscores the ongoing need for vigilance in monitoring and updating open-source software dependencies.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/popular-forge-library-gets-fix-for-signature-verification-bypass-flaw/"
         },
         {
             "date": "Nov 26 2025",
-            "title": "Russian Hackers Target US Firm Over Ukrainian Ties",
-            "content": "Russian hackers targeted a US engineering firm due to its work for a Ukrainian sister city, Arctic Wolf reports. The attack, detected in September, was intercepted before it could impact the company&#x27;s operations or propagate further. This incident underscores the geopolitical motivations driving cyberattacks and the ongoing threat to organizations with international affiliations. Companies with similar ties should enhance their cybersecurity posture, including threat detection and response capabilities. This attack reflects a broader trend of cyber warfare tactics being employed in geopolitical conflicts.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/russian-hackers-target-us-engineering-firm-because-of-work-done-for-ukrainian-sister-city/"
+            "title": "Anthropic CEO to Testify on Chinese Espionage Using AI Tool Claude",
+            "content": "The House Homeland Security Committee has summoned Anthropic CEO Dario Amodei to testify regarding a Chinese espionage campaign involving their AI tool, Claude. The inquiry seeks to understand the implications of this attack and explore how policymakers and AI companies can collaborate to address such threats. This development highlights growing concerns over the use of AI in state-sponsored cyber operations and the need for international cooperation in cybersecurity. As AI technologies become more integrated into critical infrastructure, the security community must develop strategies to safeguard against their misuse. Stakeholders should remain informed about the evolving landscape of AI-related threats and participate in policy discussions.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/house-homeland-asks-anthropic-ceo-to-testfy-on-chinese-espionage-campaign/"
+        },
+        {
+            "date": "Nov 26 2025",
+            "title": "Comcast Fined $1.5M for Breach Exposing Customer Data",
+            "content": "Comcast has agreed to pay a $1.5 million fine following an FCC investigation into a 2024 vendor data breach that compromised the personal information of approximately 275,000 customers. The breach involved unauthorized access to sensitive customer data, raising significant privacy concerns. This settlement emphasizes the importance of vendor management and data protection in safeguarding customer information. Companies should conduct thorough security assessments of their third-party vendors and implement stringent data protection measures. This case serves as a reminder of the financial and reputational risks associated with data breaches and the need for proactive cybersecurity practices.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/comcast-to-pay-15-million-fine-after-a-vendor-data-breach-affecting-270-000-customers/"
         }
     ],
     "aiShorts": [
         {
             "date": "Nov 26 2025",
-            "title": "Andrej Karpathy Innovates AI Orchestration with &#x27;Vibe Code&#x27; Hack",
-            "content": "This weekend, Andrej Karpathy, a prominent AI figure and former director at Tesla, experimented with a novel AI orchestration method he dubbed &#x27;vibe code.&#x27; The hack involves using a committee of AI models to provide diverse perspectives and critiques while reading a book, effectively creating a collaborative AI environment. This approach hints at a missing layer in enterprise AI orchestration, potentially enhancing decision-making processes by leveraging multiple AI insights simultaneously. The technique could significantly impact industries reliant on AI for complex problem-solving, offering a more nuanced analysis and synthesis of information. Professionals in AI development and enterprise applications should consider exploring multi-model orchestration to improve AI system outputs and decision accuracy.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/a-weekend-vibe-code-hack-by-andrej-karpathy-quietly-sketches-the-missing"
-        },
-        {
-            "date": "Nov 26 2025",
-            "title": "Onton Secures $7.5M to Broaden AI Shopping Platform",
-            "content": "Onton, formerly known as Deft, has raised $7.5 million to expand its AI-driven shopping platform beyond furniture. The platform uses AI-powered image generation to create an &#x27;infinite canvas,&#x27; encouraging users to make quicker purchasing decisions by visualizing products in various contexts. This funding round aims to enhance Onton&#x27;s capabilities and diversify its product offerings, potentially transforming the way consumers interact with online shopping platforms. The move reflects a growing trend in e-commerce towards personalized and immersive shopping experiences powered by AI. Retailers and developers should watch Onton&#x27;s progress as it could set new standards for AI integration in consumer shopping interfaces.",
+            "title": "US AI Startups Surge with $100M+ Funding in 2025",
+            "content": "In a landmark year for the AI industry, 49 U.S. startups have each secured over $100 million in funding, reflecting the sector&#x27;s robust growth and investor confidence. This surge in capital is indicative of the increasing demand for AI-driven solutions across various industries, from healthcare to finance. The influx of investment is expected to accelerate innovation and competition, potentially leading to significant advancements in AI capabilities and applications. Analysts suggest that this trend may drive further consolidation in the market as well-funded companies seek to acquire promising technologies and talent. For tech leaders and developers, staying informed on these emerging players could offer strategic opportunities for collaboration or investment.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/26/onton-raises-7-5m-to-expand-its-ai-powered-shopping-site-beyond-furniture/"
+            "sourceUrl": "https://techcrunch.com/2025/11/26/here-are-the-49-us-ai-startups-that-have-raised-100m-or-more-in-2025/"
         },
         {
             "date": "Nov 26 2025",
-            "title": "Introducing the AI Hype Index to Navigate Industry Trends",
-            "content": "MIT Technology Review has launched the AI Hype Index, a tool designed to help professionals distinguish between AI reality and exaggerated claims. The index provides a concise overview of the industry&#x27;s current state, helping stakeholders make informed decisions amidst prevalent AI hype. This initiative is particularly timely as the tech industry grapples with separating genuine advancements from marketing exaggerations. The AI Hype Index could serve as a valuable resource for developers, investors, and tech leaders aiming to align their strategies with realistic AI capabilities. By offering a clearer picture of AI&#x27;s actual progress, the index supports more grounded and effective technology planning and investment.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2025/11/26/1128353/the-ai-hype-index-the-people-cant-get-enough-of-ai-slop/"
+            "title": "OpenAI Responds to Lawsuit Over Teen&#x27;s Suicide Involving ChatGPT",
+            "content": "OpenAI has formally responded to a lawsuit filed by the Raine family, who allege that ChatGPT played a role in their son&#x27;s suicide. The company contends that it should not be held liable, arguing that the teen circumvented existing safety measures. This case highlights the ongoing challenges of ensuring AI safety, particularly in sensitive applications involving mental health. The incident underscores the need for developers to continually enhance AI systems&#x27; safeguards to prevent misuse. Stakeholders in the AI community are urged to prioritize ethical considerations and robust safety protocols to mitigate potential harm.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/26/openai-claims-teen-circumvented-safety-features-before-suicide-that-chatgpt-helped-plan/"
         },
         {
             "date": "Nov 26 2025",
-            "title": "Microsoft Expands Cloud Services to Support Indonesia&#x27;s AI Ambitions",
-            "content": "Microsoft has expanded its cloud and AI services in Indonesia, aligning with the country&#x27;s long-term goals for AI-driven growth. This expansion provides local organizations with enhanced tools to develop applications, modernize systems, and improve data management. Indonesia&#x27;s increased access to these resources is set to accelerate its digital transformation and strengthen its position in the global AI landscape. The initiative supports the country&#x27;s efforts to harness AI for economic development and innovation. Businesses and tech leaders in Indonesia should leverage these new capabilities to advance their digital strategies and maintain competitive advantage in the evolving tech ecosystem.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/new-microsoft-cloud-updates-support-indonesia-long-term-ai-goals/"
+            "title": "Comprehensive Overview of ChatGPT&#x27;s Evolution in 2025",
+            "content": "The timeline of ChatGPT&#x27;s development throughout 2025 showcases significant updates and enhancements, reflecting OpenAI&#x27;s commitment to improving its flagship AI chatbot. Key updates include increased contextual understanding and expanded language support, enabling more nuanced and accurate interactions. These advancements are part of a broader trend towards making AI tools more accessible and effective for diverse user needs. For developers and enterprises, understanding these updates can inform the integration of ChatGPT into existing workflows, enhancing productivity and user engagement. Keeping abreast of such developments is crucial for leveraging AI&#x27;s full potential in business applications.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/26/chatgpt-everything-to-know-about-the-ai-chatbot/"
         },
         {
             "date": "Nov 26 2025",
-            "title": "Black Forest Labs Unveils FLUX.2 to Compete in AI Image Generation",
-            "content": "German startup Black Forest Labs has launched FLUX.2, a new AI image generation and editing system designed to rival established models like Nano Banana Pro and Midjourney. FLUX.2 offers advanced image generation capabilities, positioning itself as a formidable competitor in the AI-driven creative tools market. This release highlights the increasing competition among AI startups to push the boundaries of image processing technology. Artists, designers, and content creators stand to benefit from the enhanced features and capabilities of FLUX.2, which promises to deliver high-quality visual content with improved efficiency. As the landscape of AI image generation continues to evolve, professionals should explore these new tools to enhance their creative workflows.",
+            "title": "xAI Plans Solar Farm to Power Colossus Data Center",
+            "content": "Elon Musk&#x27;s xAI has announced plans to construct a solar farm on 88 acres adjacent to its Memphis data center. The project aims to generate approximately 30 megawatts of electricity, addressing about 10% of the facility&#x27;s energy needs. This initiative aligns with growing trends in sustainable energy practices within tech infrastructure. By investing in renewable energy, xAI not only reduces its carbon footprint but also sets a precedent for other tech companies seeking to enhance their environmental responsibility. Industry leaders should consider similar sustainability measures to meet regulatory expectations and consumer demand for eco-friendly practices.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/26/musks-xai-to-build-small-solar-farm-adjacent-to-colossus-data-center/"
+        },
+        {
+            "date": "Nov 26 2025",
+            "title": "AI Tool MyHair AI Offers Solutions for Hair Loss",
+            "content": "MyHair AI has emerged as a novel solution for diagnosing and treating hair loss, utilizing image analysis of the scalp to recommend scientifically validated treatments. This AI application exemplifies the expanding role of artificial intelligence in personalized healthcare, providing users with tailored advice and clinic recommendations. The tool&#x27;s development reflects a broader trend towards leveraging AI for consumer health solutions, offering potential for improved patient outcomes. Professionals in the healthcare and AI sectors should note the increasing demand for AI-driven diagnostic tools and the opportunities they present for innovation and market growth.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/26/are-you-balding-theres-an-ai-for-that/"
+        },
+        {
+            "date": "Nov 26 2025",
+            "title": "Alibaba&#x27;s AgentEvolver Enhances AI Model Performance by 30%",
+            "content": "Alibaba&#x27;s Tongyi Lab has introduced AgentEvolver, a framework that significantly boosts AI model performance by approximately 30% through synthetic, auto-generated tasks. This innovative approach allows self-evolving agents to autonomously generate training data, enhancing their learning capabilities. By leveraging large language models for knowledge and reasoning, AgentEvolver represents a major advancement in AI training methodologies. This development is crucial for AI researchers and developers aiming to improve model efficiency and effectiveness. The framework&#x27;s success may inspire further exploration into autonomous learning systems, pushing the boundaries of AI capabilities.",
             "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/black-forest-labs-launches-flux-2-ai-image-models-to-challenge-nano-banana"
+            "sourceUrl": "https://venturebeat.com/ai/alibabas-agentevolver-lifts-model-performance-in-tool-use-by-30-using"
         },
         {
             "date": "Nov 25 2025",
-            "title": "OpenAI Expands Data Residency Options for Enterprise Customers",
-            "content": "OpenAI has announced the expansion of data residency options for its ChatGPT Enterprise, ChatGPT Edu, and API Platform customers, allowing data to be stored at rest in-region. This move addresses growing concerns around data sovereignty and compliance with regional data protection regulations. By enabling localized data storage, OpenAI enhances its appeal to businesses and educational institutions that prioritize data privacy and security. This development is part of a broader trend towards offering more granular control over data management in AI services. Enterprises should evaluate these new options to ensure their data handling practices align with regulatory requirements and organizational policies.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/expanding-data-residency-access-to-business-customers-worldwide"
-        },
-        {
-            "date": "Nov 25 2025",
-            "title": "The White House Launches AI &#x27;Genesis Mission&#x27; for Scientific Advancement",
-            "content": "President Donald Trump has unveiled the &#x27;Genesis Mission,&#x27; an ambitious initiative likened to the historical Manhattan Project, aimed at revolutionizing scientific research through AI. This executive order tasks the Department of Energy with developing a national AI infrastructure to support groundbreaking research and innovation. The Genesis Mission signifies a significant investment in AI as a strategic asset for national advancement, potentially impacting various sectors from energy to healthcare. The initiative reflects a growing recognition of AI&#x27;s transformative potential and the need for robust national frameworks to harness it effectively. Tech leaders and policymakers should monitor this development closely as it could reshape the U.S. scientific landscape and influence global AI strategies.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/what-enterprises-should-know-about-the-white-houses-new-ai-manhattan-project"
+            "title": "Character AI Shifts Focus to Interactive Stories for Kids",
+            "content": "Character AI has decided to replace its open-ended chat feature for minors with interactive &#x27;Stories,&#x27; aiming to provide a safer, more structured experience for young users. This move comes after the company announced it would restrict minors from using its chat services, reflecting a proactive approach to child safety in digital interactions. The shift highlights the ongoing need for AI companies to adapt their offerings to protect vulnerable user groups while still engaging them meaningfully. This change serves as a reminder for developers to consider age-appropriate content and safeguards in AI applications, ensuring compliance with safety standards.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/25/character-ai-will-offer-interactive-stories-to-kids-instead-of-open-ended-chat/"
         }
     ],
     "articles": {
