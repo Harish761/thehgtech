@@ -6,26 +6,102 @@ Fetches active ransomware campaigns from Ransomware.live API
 
 import requests
 import json
+import re
+import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta
 from collections import defaultdict
+from email.utils import parsedate_to_datetime
 
-def fetch_ransomware_live():
-    """Fetch recent victims from Ransomware.live API"""
-    print("🔐 Fetching ransomware data from Ransomware.live...")
+def fetch_ransomware_live_api():
+    """Fetch recent victims from Ransomware.live API (Limited to 100)"""
+    print("🔐 Fetching ransomware data from API...")
     
     try:
-        # Fetch recent victims
         url = 'https://api.ransomware.live/recentvictims'
         response = requests.get(url, timeout=30)
         response.raise_for_status()
         victims = response.json()
         
-        print(f"✅ Fetched {len(victims)} recent victims")
+        print(f"✅ API: Fetched {len(victims)} recent victims")
         return victims
     
-    except requests.exceptions.RequestException as e:
-        print(f"❌ Error fetching data: {e}")
+    except Exception as e:
+        print(f"❌ API Error: {e}")
         return []
+
+def fetch_ransomware_live_rss():
+    """Fetch recent victims from Ransomware.live RSS Feed (More items)"""
+    print("📡 Fetching ransomware data from RSS feed...")
+    
+    try:
+        url = 'https://www.ransomware.live/rss.xml'
+        response = requests.get(url, timeout=30)
+        response.raise_for_status()
+        
+        root = ET.fromstring(response.content)
+        items = root.findall('.//item')
+        
+        victims = []
+        for item in items:
+            title = item.find('title').text
+            # Parse title: "🏴‍☠️ Group has just published a new victim : Victim Name"
+            match = re.search(r'🏴‍☠️ (.*?) has just published a new victim : (.*)', title)
+            if not match:
+                continue
+                
+            group_name = match.group(1).strip()
+            victim_name = match.group(2).strip()
+            
+            pub_date_str = item.find('pubDate').text
+            try:
+                dt = parsedate_to_datetime(pub_date_str)
+                # Convert to ISO format
+                discovered = dt.isoformat()
+            except:
+                discovered = datetime.now().isoformat()
+            
+            link = item.find('link').text
+            
+            # Extract country from category if available (RSS uses category for country code sometimes)
+            country = item.find('category').text if item.find('category') is not None else None
+            
+            victims.append({
+                'group_name': group_name,
+                'post_title': victim_name,
+                'discovered': discovered,
+                'post_url': link,
+                'country': country, # RSS often has country code in category
+                'activity': None,   # RSS description is unstructured, hard to parse industry
+                'source': 'rss'
+            })
+            
+        print(f"✅ RSS: Fetched {len(victims)} recent victims")
+        return victims
+        
+    except Exception as e:
+        print(f"❌ RSS Error: {e}")
+        return []
+
+def merge_data(api_data, rss_data):
+    """Merge API and RSS data, preferring API for metadata"""
+    merged = {}
+    
+    # Process API data first (higher quality)
+    for v in api_data:
+        key = f"{v.get('group_name')}|{v.get('post_title')}"
+        v['source'] = 'api'
+        merged[key] = v
+        
+    # Process RSS data (fill gaps)
+    added_count = 0
+    for v in rss_data:
+        key = f"{v.get('group_name')}|{v.get('post_title')}"
+        if key not in merged:
+            merged[key] = v
+            added_count += 1
+            
+    print(f"🔀 Merged: Added {added_count} unique victims from RSS")
+    return list(merged.values())
 
 def aggregate_by_group(victims):
     """Aggregate victims by ransomware group"""
@@ -35,7 +111,8 @@ def aggregate_by_group(victims):
         'count': 0,
         'industries': set(),
         'countries': set(),
-        'recent_activity': []
+        'recent_activity': [],
+        'daily_counts': {}
     })
     
     # Get date 7 days ago for filtering
@@ -51,14 +128,19 @@ def aggregate_by_group(victims):
         # Parse discovery date
         discovered = victim.get('discovered', '')
         try:
-            discovered_dt = datetime.fromisoformat(discovered.replace('Z', '+00:00'))
+            # Handle both Z and +00:00 formats
+            if 'Z' in discovered:
+                discovered_dt = datetime.fromisoformat(discovered.replace('Z', '+00:00'))
+            else:
+                discovered_dt = datetime.fromisoformat(discovered)
             discovered_date = discovered_dt.date()
         except:
             discovered_dt = datetime.now()
             discovered_date = discovered_dt.date()
         
         # Only include victims from last 7 days
-        if discovered_dt < seven_days_ago:
+        # Convert seven_days_ago to date for comparison if needed, or keep as datetime
+        if discovered_dt.replace(tzinfo=None) < seven_days_ago.replace(tzinfo=None):
             continue
         
         # Initialize group if new
@@ -94,14 +176,11 @@ def aggregate_by_group(victims):
 
 def calculate_trends(groups):
     """Calculate week-over-week trends for each group"""
-    # For now, we'll just mark groups as trending
-    # In future, we can compare with historical data
-    
     for group_name, data in groups.items():
-        # Simple trend: groups with >10 victims are "trending up"
+        # Simple trend logic
         if data['count'] > 10:
             data['trend'] = 'up'
-            data['trend_percentage'] = 15  # Placeholder
+            data['trend_percentage'] = 15
         elif data['count'] > 5:
             data['trend'] = 'stable'
             data['trend_percentage'] = 0
@@ -113,7 +192,6 @@ def calculate_trends(groups):
 
 def format_output(groups):
     """Format data for JSON output"""
-    # Convert sets to lists for JSON serialization
     formatted_groups = []
     
     for group_name, data in groups.items():
@@ -125,7 +203,7 @@ def format_output(groups):
             'countries': sorted(list(data['countries']))[:5],  # Top 5
             'trend': data.get('trend', 'stable'),
             'trend_percentage': data.get('trend_percentage', 0),
-            'daily_counts': list(data.get('daily_counts', {}).values()) # List of counts for last 7 days
+            'daily_counts': list(data.get('daily_counts', {}).values())
         }
         formatted_groups.append(formatted_group)
     
@@ -143,7 +221,7 @@ def save_data(groups):
         'period': 'Last 7 days',
         'total_groups': len(groups),
         'total_victims': total_victims,
-        'groups': groups[:10]  # Top 10 groups
+        'groups': groups[:12]  # Top 12 groups (increased from 10)
     }
     
     # Save to file
@@ -153,18 +231,23 @@ def save_data(groups):
     print(f"✅ Saved ransomware data:")
     print(f"   - Total groups: {len(groups)}")
     print(f"   - Total victims (7d): {total_victims}")
-    print(f"   - Top group: {groups[0]['name']} ({groups[0]['count']} victims)")
+    if groups:
+        print(f"   - Top group: {groups[0]['name']} ({groups[0]['count']} victims)")
     
     return output
 
 def main():
     """Main execution"""
     print("=" * 60)
-    print("🔐 Ransomware Tracker Data Fetcher")
+    print("🔐 Ransomware Tracker Data Fetcher (Hybrid API + RSS)")
     print("=" * 60)
     
-    # Fetch data
-    victims = fetch_ransomware_live()
+    # Fetch data from both sources
+    api_victims = fetch_ransomware_live_api()
+    rss_victims = fetch_ransomware_live_rss()
+    
+    # Merge data
+    victims = merge_data(api_victims, rss_victims)
     
     if not victims:
         print("⚠️  No data fetched, using empty dataset")
@@ -175,7 +258,6 @@ def main():
     
     if not groups:
         print("⚠️  No groups found in last 7 days")
-        # Create minimal output
         output = {
             'last_updated': datetime.now().isoformat(),
             'period': 'Last 7 days',
