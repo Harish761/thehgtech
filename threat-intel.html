@@ -106,10 +106,10 @@
         }
 
         :root {
-            --bg-primary: #0D0D0D;
-            --bg-secondary: #1a1a1a;
-            --bg-gradient-start: #0D0D0D;
-            --bg-gradient-end: #1a1a1a;
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-gradient-start: #000000;
+            --bg-gradient-end: #0a0a0a;
             --text-primary: #ffffff;
             --text-secondary: #b0b0b0;
             --text-muted: #888888;
@@ -125,11 +125,105 @@
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
+            background: var(--bg-primary);
             color: var(--text-primary);
             line-height: 1.6;
             min-height: 100vh;
             overflow-x: hidden;
+        }
+
+        /* Theme Toggle - Creative Animated Switch */
+        .theme-toggle-wrapper {
+            position: relative;
+            width: 70px;
+            height: 36px;
+        }
+
+        .theme-toggle {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            border: 2px solid var(--border);
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow: hidden;
+            padding: 0;
+        }
+
+        .theme-toggle::before {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 26px;
+            height: 26px;
+            background: linear-gradient(135deg, #ffd93d, #ff9500);
+            border-radius: 50%;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 0 10px rgba(255, 217, 61, 0.5);
+            z-index: 2;
+        }
+
+        .toggle-stars {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .star {
+            position: absolute;
+            background: #fff;
+            border-radius: 50%;
+            animation: twinkle 2s infinite;
+        }
+
+        .star:nth-child(1) {
+            top: 10px;
+            left: 10px;
+            width: 2px;
+            height: 2px;
+        }
+
+        .star:nth-child(2) {
+            top: 20px;
+            left: 25px;
+            width: 1px;
+            height: 1px;
+            animation-delay: 0.5s;
+        }
+
+        .star:nth-child(3) {
+            top: 15px;
+            left: 35px;
+            width: 2px;
+            height: 2px;
+            animation-delay: 1s;
+        }
+
+        .star:nth-child(4) {
+            top: 8px;
+            left: 45px;
+            width: 1px;
+            height: 1px;
+            animation-delay: 1.5s;
+        }
+
+        body.light-mode .theme-toggle {
+            background: linear-gradient(135deg, #87CEEB, #E0F7FA);
+            border-color: rgba(0, 0, 0, 0.1);
+        }
+
+        body.light-mode .theme-toggle::before {
+            transform: translateX(34px);
+            background: linear-gradient(135deg, #FDB813, #FF8C00);
+            box-shadow: 0 0 10px rgba(255, 140, 0, 0.5);
         }
 
         /* Header */
@@ -915,13 +1009,31 @@
                 <span class="logo-text">TheHGTech</span>
             </a>
             <nav class="nav">
-                <a href="index.html">Home</a>
-                <a href="threat-intel.html" class="active">Threat Intelligence</a>
                 <a href="index.html#news">News</a>
+                <a href="#" style="color: #00D9FF; position: relative;">
+                    Threat Intelligence
+                    <span
+                        style="font-size: 0.65rem; background: #FF4C4C; padding: 0.15rem 0.4rem; border-radius: 3px; margin-left: 0.3rem; animation: pulse 2s infinite;">LIVE</span>
+                </a>
+                <a href="index.html#cve">CVE</a>
+                <a href="/guides/">Guides</a>
                 <a href="index.html#articles">Articles</a>
-                <button onclick="toggleTheme()"
-                    style="background: none; border: 1px solid var(--border); color: var(--text-primary); padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-size: 1.2rem; margin-left: 1rem;"
-                    aria-label="Toggle dark or light theme" id="themeToggle">🌙</button>
+                <a href="index.html"
+                    onclick="alert('Please visit the home page to access Archives.'); return true;">Archives</a>
+                <a href="index.html"
+                    onclick="alert('Please visit the home page to access About.'); return true;">About</a>
+                <a href="index.html"
+                    onclick="alert('Please visit the home page to Contact us.'); return true;">Contact</a>
+                <div class="theme-toggle-wrapper">
+                    <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle theme">
+                        <div class="toggle-stars">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                    </button>
+                </div>
             </nav>
         </div>
     </header>
