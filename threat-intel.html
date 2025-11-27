@@ -955,104 +955,142 @@
             <svg width="100%" height="100%" viewBox="0 0 1400 700" xmlns="http://www.w3.org/2000/svg"
                 preserveAspectRatio="xMidYMid slice">
                 <defs>
-                    <!-- Radar Gradient -->
-                    <linearGradient id="radar-sweep" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <!-- Hologram Gradient -->
+                    <linearGradient id="holo-grad" x1="0%" y1="0%" x2="0%" y2="100%">
                         <stop offset="0%" style="stop-color:var(--accent-cyan);stop-opacity:0" />
-                        <stop offset="50%" style="stop-color:var(--accent-cyan);stop-opacity:0.1" />
-                        <stop offset="100%" style="stop-color:var(--accent-cyan);stop-opacity:0.3" />
+                        <stop offset="50%" style="stop-color:var(--accent-cyan);stop-opacity:0.2" />
+                        <stop offset="100%" style="stop-color:var(--accent-cyan);stop-opacity:0" />
                     </linearGradient>
 
-                    <!-- Threat Glow -->
-                    <filter id="threat-glow">
-                        <feGaussianBlur stdDeviation="2" result="coloredBlur" />
+                    <!-- Glow Filter -->
+                    <filter id="holo-glow">
+                        <feGaussianBlur stdDeviation="2.5" result="coloredBlur" />
                         <feMerge>
                             <feMergeNode in="coloredBlur" />
                             <feMergeNode in="SourceGraphic" />
                         </feMerge>
                     </filter>
-
-                    <!-- Hexagon Pattern -->
-                    <pattern id="hex-grid" x="0" y="0" width="50" height="43.3" patternUnits="userSpaceOnUse">
-                        <path d="M25 0 L50 14.4 L50 43.3 L25 57.7 L0 43.3 L0 14.4 Z" fill="none"
-                            stroke="var(--accent-cyan)" stroke-width="0.5" opacity="0.1" />
-                    </pattern>
                 </defs>
 
-                <!-- Background Grid -->
-                <rect width="100%" height="100%" fill="url(#hex-grid)" opacity="0.3" />
+                <!-- Background Grid Floor -->
+                <g transform="perspective(500px) rotateX(60deg) translate(0, -200)">
+                    <path d="M 0,600 L 1400,600" stroke="var(--accent-cyan)" stroke-width="1" opacity="0.2" />
+                    <path d="M 0,650 L 1400,650" stroke="var(--accent-cyan)" stroke-width="1" opacity="0.15" />
+                    <path d="M 0,700 L 1400,700" stroke="var(--accent-cyan)" stroke-width="1" opacity="0.1" />
+                    <path d="M 0,550 L 1400,550" stroke="var(--accent-cyan)" stroke-width="1" opacity="0.15" />
 
-                <!-- Scanning Radar Beam -->
-                <rect x="-200" y="0" width="200" height="700" fill="url(#radar-sweep)" opacity="0.5">
-                    <animate attributeName="x" from="-200" to="1400" dur="8s" repeatCount="indefinite" />
-                </rect>
-
-                <!-- Active Threat Nodes (Red) -->
-                <g filter="url(#threat-glow)">
-                    <circle cx="200" cy="300" r="4" fill="var(--accent-red)" opacity="0">
-                        <animate attributeName="opacity" values="0;1;0" dur="3s" begin="0s" repeatCount="indefinite" />
-                        <animate attributeName="r" values="4;15;4" dur="3s" begin="0s" repeatCount="indefinite" />
-                    </circle>
-                    <circle cx="800" cy="150" r="4" fill="var(--accent-red)" opacity="0">
-                        <animate attributeName="opacity" values="0;1;0" dur="4s" begin="1s" repeatCount="indefinite" />
-                        <animate attributeName="r" values="4;15;4" dur="4s" begin="1s" repeatCount="indefinite" />
-                    </circle>
-                    <circle cx="1100" cy="500" r="4" fill="var(--accent-red)" opacity="0">
-                        <animate attributeName="opacity" values="0;1;0" dur="3.5s" begin="2s"
-                            repeatCount="indefinite" />
-                        <animate attributeName="r" values="4;15;4" dur="3.5s" begin="2s" repeatCount="indefinite" />
-                    </circle>
-                    <circle cx="500" cy="600" r="4" fill="var(--accent-red)" opacity="0">
-                        <animate attributeName="opacity" values="0;1;0" dur="5s" begin="0.5s"
-                            repeatCount="indefinite" />
-                        <animate attributeName="r" values="4;15;4" dur="5s" begin="0.5s" repeatCount="indefinite" />
-                    </circle>
+                    <line x1="700" y1="400" x2="700" y2="800" stroke="var(--accent-cyan)" stroke-width="1"
+                        opacity="0.2" />
+                    <line x1="500" y1="400" x2="300" y2="800" stroke="var(--accent-cyan)" stroke-width="1"
+                        opacity="0.1" />
+                    <line x1="900" y1="400" x2="1100" y2="800" stroke="var(--accent-cyan)" stroke-width="1"
+                        opacity="0.1" />
                 </g>
 
-                <!-- Secure Nodes (Green) -->
-                <g>
-                    <circle cx="400" cy="200" r="3" fill="var(--accent-green)" opacity="0.6">
-                        <animate attributeName="opacity" values="0.6;0.2;0.6" dur="4s" repeatCount="indefinite" />
-                    </circle>
-                    <circle cx="900" cy="350" r="3" fill="var(--accent-green)" opacity="0.6">
-                        <animate attributeName="opacity" values="0.6;0.2;0.6" dur="5s" repeatCount="indefinite" />
-                    </circle>
-                    <circle cx="1200" cy="100" r="3" fill="var(--accent-green)" opacity="0.6">
-                        <animate attributeName="opacity" values="0.6;0.2;0.6" dur="3s" repeatCount="indefinite" />
-                    </circle>
-                </g>
+                <!-- Central Holographic Globe Group -->
+                <g transform="translate(700, 350)" filter="url(#holo-glow)">
+                    <!-- Vertical Axis -->
+                    <line x1="0" y1="-200" x2="0" y2="200" stroke="var(--accent-cyan)" stroke-width="1" opacity="0.3"
+                        stroke-dasharray="5,5" />
 
-                <!-- Data Streams (Connecting Lines) -->
-                <g stroke="var(--accent-cyan)" stroke-width="1" fill="none" opacity="0.3">
-                    <path d="M 200,300 Q 400,200 800,150">
-                        <animate attributeName="stroke-dasharray" values="0,1000;1000,0" dur="3s"
+                    <!-- Rotating Wireframe Sphere -->
+                    <g>
+                        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="60s"
                             repeatCount="indefinite" />
-                    </path>
-                    <path d="M 800,150 Q 950,325 1100,500">
-                        <animate attributeName="stroke-dasharray" values="0,1000;1000,0" dur="3s" begin="1s"
-                            repeatCount="indefinite" />
-                    </path>
-                    <path d="M 400,200 Q 450,400 500,600">
-                        <animate attributeName="stroke-dasharray" values="0,1000;1000,0" dur="3s" begin="0.5s"
-                            repeatCount="indefinite" />
-                    </path>
-                </g>
 
-                <!-- Digital Noise / Glitch Effects -->
-                <g fill="var(--accent-cyan)" opacity="0.2">
-                    <rect x="100" y="100" width="20" height="2">
-                        <animate attributeName="opacity" values="0;1;0" dur="0.2s" begin="1s"
+                        <!-- Longitude Lines -->
+                        <ellipse cx="0" cy="0" rx="150" ry="150" fill="none" stroke="var(--accent-cyan)"
+                            stroke-width="1" opacity="0.1" />
+                        <ellipse cx="0" cy="0" rx="100" ry="150" fill="none" stroke="var(--accent-cyan)"
+                            stroke-width="1" opacity="0.15" />
+                        <ellipse cx="0" cy="0" rx="50" ry="150" fill="none" stroke="var(--accent-cyan)" stroke-width="1"
+                            opacity="0.15" />
+                        <line x1="0" y1="-150" x2="0" y2="150" stroke="var(--accent-cyan)" stroke-width="1"
+                            opacity="0.2" />
+
+                        <!-- Latitude Lines -->
+                        <ellipse cx="0" cy="0" rx="150" ry="50" fill="none" stroke="var(--accent-cyan)" stroke-width="1"
+                            opacity="0.15" />
+                        <ellipse cx="0" cy="0" rx="150" ry="100" fill="none" stroke="var(--accent-cyan)"
+                            stroke-width="1" opacity="0.15" />
+                        <line x1="-150" y1="0" x2="150" y2="0" stroke="var(--accent-cyan)" stroke-width="1"
+                            opacity="0.2" />
+                    </g>
+
+                    <!-- Orbiting Rings -->
+                    <g>
+                        <animateTransform attributeName="transform" type="rotate" from="360 0 0" to="0 0 0" dur="20s"
                             repeatCount="indefinite" />
-                        <animate attributeName="x" values="100;120;100" dur="5s" repeatCount="indefinite" />
+                        <ellipse cx="0" cy="0" rx="200" ry="60" fill="none" stroke="var(--accent-red)" stroke-width="1"
+                            opacity="0.4" stroke-dasharray="20,40">
+                            <animate attributeName="opacity" values="0.4;0.1;0.4" dur="4s" repeatCount="indefinite" />
+                        </ellipse>
+                    </g>
+                    <g transform="rotate(45)">
+                        <animateTransform attributeName="transform" type="rotate" from="45 0 0" to="405 0 0" dur="25s"
+                            repeatCount="indefinite" />
+                        <ellipse cx="0" cy="0" rx="220" ry="40" fill="none" stroke="var(--accent-cyan)" stroke-width="1"
+                            opacity="0.3" stroke-dasharray="10,20" />
+                    </g>
+
+                    <!-- Scanning Laser -->
+                    <rect x="-200" y="-10" width="400" height="2" fill="var(--accent-green)" opacity="0.6">
+                        <animate attributeName="y" values="-150;150;-150" dur="6s" repeatCount="indefinite" />
+                        <animate attributeName="opacity" values="0.6;0.2;0.6" dur="6s" repeatCount="indefinite" />
                     </rect>
-                    <rect x="1200" y="600" width="30" height="2">
-                        <animate attributeName="opacity" values="0;1;0" dur="0.3s" begin="2s"
-                            repeatCount="indefinite" />
-                    </rect>
-                    <rect x="600" y="50" width="10" height="2">
-                        <animate attributeName="opacity" values="0;1;0" dur="0.5s" begin="3s"
-                            repeatCount="indefinite" />
-                    </rect>
+
+                    <!-- Core Pulse -->
+                    <circle cx="0" cy="0" r="10" fill="var(--accent-cyan)" opacity="0.5">
+                        <animate attributeName="r" values="10;140;10" dur="4s" repeatCount="indefinite" />
+                        <animate attributeName="opacity" values="0.5;0;0.5" dur="4s" repeatCount="indefinite" />
+                    </circle>
                 </g>
+
+                <!-- HUD Elements (Left) -->
+                <g transform="translate(100, 200)" opacity="0.6">
+                    <rect x="0" y="0" width="200" height="300" fill="none" stroke="var(--accent-cyan)" stroke-width="1"
+                        stroke-dasharray="10,5" opacity="0.3" />
+                    <text x="10" y="30" fill="var(--accent-cyan)" font-family="monospace" font-size="12">SYSTEM STATUS:
+                        ONLINE</text>
+                    <text x="10" y="50" fill="var(--accent-cyan)" font-family="monospace" font-size="12">THREAT LEVEL:
+                        MODERATE</text>
+                    <rect x="10" y="70" width="100" height="5" fill="var(--accent-cyan)" opacity="0.2" />
+                    <rect x="10" y="70" width="60" height="5" fill="var(--accent-cyan)">
+                        <animate attributeName="width" values="60;90;60" dur="2s" repeatCount="indefinite" />
+                    </rect>
+
+                    <!-- Scrolling Data -->
+                    <text x="10" y="120" fill="var(--accent-cyan)" font-family="monospace" font-size="10" opacity="0.7">
+                        SCANNING PORT 443...
+                        <animate attributeName="opacity" values="0.7;0.2;0.7" dur="1s" repeatCount="indefinite" />
+                    </text>
+                    <text x="10" y="140" fill="var(--accent-cyan)" font-family="monospace" font-size="10"
+                        opacity="0.5">ANALYZING PACKETS...</text>
+                    <text x="10" y="160" fill="var(--accent-cyan)" font-family="monospace" font-size="10"
+                        opacity="0.3">UPDATING SIGNATURES...</text>
+                </g>
+
+                <!-- HUD Elements (Right) -->
+                <g transform="translate(1100, 200)" opacity="0.6">
+                    <path d="M 0,0 L 20,0 L 20,20" fill="none" stroke="var(--accent-red)" stroke-width="2" />
+                    <path d="M 180,0 L 200,0 L 200,20" fill="none" stroke="var(--accent-red)" stroke-width="2" />
+                    <path d="M 0,300 L 20,300 L 0,280" fill="none" stroke="var(--accent-red)" stroke-width="2" />
+                    <path d="M 200,300 L 180,300 L 200,280" fill="none" stroke="var(--accent-red)" stroke-width="2" />
+
+                    <text x="50" y="150" fill="var(--accent-red)" font-family="monospace" font-size="14"
+                        text-anchor="middle">ACTIVE THREATS</text>
+                    <text x="100" y="180" fill="var(--accent-red)" font-family="monospace" font-size="30"
+                        text-anchor="middle">
+                        21
+                        <animate attributeName="opacity" values="1;0.5;1" dur="1s" repeatCount="indefinite" />
+                    </text>
+                </g>
+
+                <!-- Connecting Lines -->
+                <path d="M 300,350 L 550,350" stroke="var(--accent-cyan)" stroke-width="1" opacity="0.2"
+                    stroke-dasharray="5,5" />
+                <path d="M 850,350 L 1100,350" stroke="var(--accent-cyan)" stroke-width="1" opacity="0.2"
+                    stroke-dasharray="5,5" />
             </svg>
         </div>
 
