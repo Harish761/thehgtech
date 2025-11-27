@@ -227,55 +227,60 @@ function initializeCharts(stats) {
                 }
             }
         }
-    });
-
-    // Vendor Contribution Bar Chart
-    const vendorCtx = document.getElementById('vendorChart').getContext('2d');
-    const vendorData = Object.entries(stats.byVendor)
-        .sort((a, b) => b[1] - a[1])
-        .slice(0, 8);
-
-    charts.vendor = new Chart(vendorCtx, {
-        type: 'bar',
-        data: {
-            labels: vendorData.map(v => v[0]),
-            datasets: [{
-                label: 'IOCs',
-                data: vendorData.map(v => v[1]),
-                backgroundColor: 'rgba(255, 61, 61, 0.8)',
-                borderColor: '#FF3D3D',
-                borderWidth: 1,
-                borderRadius: 8
-            }]
-        },
-        options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            indexAxis: 'y',
-            plugins: {
-                legend: { display: false },
-                tooltip: {
-                    backgroundColor: 'rgba(21, 25, 50, 0.9)',
-                    titleColor: '#fff',
-                    bodyColor: '#fff',
-                    borderColor: 'rgba(255, 255, 255, 0.1)',
-                    borderWidth: 1,
-                    padding: 12
-                }
-            },
-            scales: {
-                x: {
-                    beginAtZero: true,
-                    grid: { color: 'rgba(255, 255, 255, 0.05)' },
-                    ticks: { color: 'rgba(255, 255, 255, 0.5)' }
-                },
-                y: {
-                    grid: { display: false },
-                    ticks: { color: 'rgba(255, 255, 255, 0.5)' }
-                }
+                    position: 'right',
+        labels: { color: colors.text, padding: 20, font: { size: 12 } }
+    },
+        tooltip: {
+        backgroundColor: colors.tooltipBg,
+        titleColor: colors.tooltipText,
+        bodyColor: colors.tooltipText,
+        borderColor: colors.tooltipBorder,
+        borderWidth: 1
+    }
             }
         }
     });
+
+// Vendor Chart
+const vendorCtx = document.getElementById('vendorChart').getContext('2d');
+charts.vendor = new Chart(vendorCtx, {
+    type: 'bar',
+    data: {
+        labels: [],
+        datasets: [{
+            label: 'IOCs Contributed',
+            data: [],
+            backgroundColor: 'rgba(0, 217, 255, 0.2)',
+            borderColor: '#00D9FF',
+            borderWidth: 1
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: { display: false },
+            tooltip: {
+                backgroundColor: colors.tooltipBg,
+                titleColor: colors.tooltipText,
+                bodyColor: colors.tooltipText,
+                borderColor: colors.tooltipBorder,
+                borderWidth: 1
+            }
+        },
+        scales: {
+            y: {
+                beginAtZero: true,
+                grid: { color: colors.grid },
+                ticks: { color: colors.text }
+            },
+            x: {
+                grid: { display: false },
+                ticks: { color: colors.text }
+            }
+        }
+    }
+});
 }
 
 // Update charts with new data
