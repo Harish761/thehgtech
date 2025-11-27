@@ -165,7 +165,7 @@
 
 .trend-indicator.down {
     background: rgba(0, 255, 136, 0.2);
-    color: #00ff88;
+    color: var(--accent-green, #00ff88);
 }
 
 .trend-indicator.stable {
@@ -187,7 +187,7 @@
     border: 1px solid rgba(0, 217, 255, 0.3);
     border-radius: 12px;
     font-size: 0.75rem;
-    color: #00D9FF;
+    color: var(--accent-cyan, #00D9FF);
     font-weight: 500;
 }
 
