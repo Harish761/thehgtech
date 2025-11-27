@@ -1,11 +1,11 @@
 // Auto-Generated Threat Intel (Multi-Vendor Dashboard)
-// Updated: 2025-11-27T08:45:00.089595+05:30 IST
+// Updated: 2025-11-27T09:59:52.171994+05:30 IST
 // Sources: OpenPhish, Malware Bazaar, Spamhaus DROP, CINS Army, Blocklist.de, URLhaus, ThreatFox, Feodo Tracker, SSL Blacklist
 // NOTE: Full IOC lists are stored in GitHub Pages (ioc-data/) and loaded on-demand
 
 window.threatIntelData = {
-    "lastUpdated": "2025-11-27T08:45:00.057121+05:30",
-    "lastUpdatedFormatted": "Nov 27, 2025 at 08:45 AM IST",
+    "lastUpdated": "2025-11-27T09:59:52.143855+05:30",
+    "lastUpdatedFormatted": "Nov 27, 2025 at 09:59 AM IST",
     "comparisonPeriod": "Nov 26 \u2013 Nov 27, 2025",
     "vendors": {
         "OpenPhish": {
@@ -34,22 +34,22 @@ window.threatIntelData = {
             "description": "Recent malware samples with hashes and URLs. Tracks active malware distribution from abuse.ch community.",
             "website": "https://bazaar.abuse.ch/",
             "updateFrequency": "Real-time",
-            "iocCount": 729,
+            "iocCount": 722,
             "iocDataUrl": "https://thehgtech.com/ioc-data/malware-bazaar.json",
             "stats": {
-                "total": 729,
-                "newInLastHour": 2,
+                "total": 722,
+                "newInLastHour": 1,
                 "lastUpdate": "just now"
             },
             "types": [
                 "hash"
             ],
             "sampleIndicators": [
+                " \"cdefe4487062cf4feeee912c4842224c9f9ee066574205d31efa87aee71f2073",
                 " \"1e5d38b9abc8b13463e988fc005b83b34f7f52c5f0923c79561f61a57e4fcfb0",
                 " \"2c8552ce73d9c383418a8f6f597a26ce5c7e0d6176aa8c36fd417af234dc3fdc",
                 " \"9f20c60560560d263d3487e6a18c99ba1a7740dcc81130133a5e14829e4c00a0",
-                " \"d508929946b9ae3d643d900983435230eedb2549b8d30690b516bd5a70ee67c4",
-                " \"93758fd869e2a4529e2db4768eb1c9bb94b972e6ee9656b1fe80e23c53ff6e84"
+                " \"d508929946b9ae3d643d900983435230eedb2549b8d30690b516bd5a70ee67c4"
             ]
         },
         "Spamhaus DROP": {
@@ -90,7 +90,7 @@ window.threatIntelData = {
             ],
             "sampleIndicators": [
                 "1[.]1[.]176[.]58",
-                "1[.]116[.]180[.]98",
+                "1[.]119[.]194[.]226",
                 "1[.]13[.]197[.]76",
                 "1[.]14[.]3[.]240",
                 "1[.]15[.]118[.]23"
@@ -100,11 +100,11 @@ window.threatIntelData = {
             "description": "IPs conducting SSH brute-force attacks. Community-reported attackers targeting SSH services.",
             "website": "https://www.blocklist.de/",
             "updateFrequency": "Hourly",
-            "iocCount": 5879,
+            "iocCount": 6083,
             "iocDataUrl": "https://thehgtech.com/ioc-data/blocklist-de.json",
             "stats": {
-                "total": 5879,
-                "newInLastHour": 5879,
+                "total": 6083,
+                "newInLastHour": 6083,
                 "lastUpdate": "just now"
             },
             "types": [
@@ -122,44 +122,44 @@ window.threatIntelData = {
             "description": "Malware distribution URLs from URLhaus. Tracks active malware hosting sites and payload delivery infrastructure.",
             "website": "https://urlhaus.abuse.ch/",
             "updateFrequency": "Real-time",
-            "iocCount": 18420,
+            "iocCount": 28406,
             "iocDataUrl": "https://thehgtech.com/ioc-data/urlhaus.json",
             "stats": {
-                "total": 18420,
-                "newInLastHour": 29,
+                "total": 28406,
+                "newInLastHour": 28406,
                 "lastUpdate": "just now"
             },
             "types": [
-                "hash"
+                "url"
             ],
             "sampleIndicators": [
-                "2025-11-27 02:48:07",
-                "2025-11-27 02:45:16",
-                "2025-11-27 02:44:08",
-                "2025-11-27 02:36:16",
-                "2025-11-27 02:35:14"
+                "hxxp://110[.]36[.]0[.]129:59535/i",
+                "hxxps://wink3l[.]sprucewinkel[.]ru/03xv13pi",
+                "hxxp://125[.]46[.]197[.]172:34419/bin[.]sh",
+                "hxxp://42[.]179[.]211[.]179:46328/bin[.]sh",
+                "hxxp://110[.]39[.]238[.]168:46370/i"
             ]
         },
         "ThreatFox": {
             "description": "Multi-type IOC feed from ThreatFox. Includes IPs, domains, URLs, and hashes with malware family attribution.",
             "website": "https://threatfox.abuse.ch/",
             "updateFrequency": "Real-time",
-            "iocCount": 1374,
+            "iocCount": 1382,
             "iocDataUrl": "https://thehgtech.com/ioc-data/threatfox.json",
             "stats": {
-                "total": 1374,
-                "newInLastHour": 14,
+                "total": 1382,
+                "newInLastHour": 1382,
                 "lastUpdate": "just now"
             },
             "types": [
-                "hash"
+                "url"
             ],
             "sampleIndicators": [
-                " \"1651362",
-                " \"1651361",
-                " \"1651360",
-                " \"1651359",
-                " \"1651358"
+                " \"wink3l[.]sprucewinkel[.]ru\"",
+                " \"spruc5[.]sprucewinkel[.]ru\"",
+                " \"89[.]110[.]93[.]218:8443\"",
+                " \"fluss8[.]nebeltal[.]ru\"",
+                " \"168[.]245[.]201[.]142:3790\""
             ]
         },
         "Feodo Tracker": {
@@ -243,10 +243,10 @@ window.threatIntelData = {
         "campaigns": []
     },
     "snapshotMetrics": {
-        "topAttackVector": "Malicious IPs",
+        "topAttackVector": "Malicious URLs",
         "mostTargetedRegion": "North America",
-        "fastestRisingThreat": "mips",
-        "totalAttacksThisHour": 21227,
-        "lastCalculated": "2025-11-27 08:44 IST"
+        "fastestRisingThreat": "malware_download",
+        "totalAttacksThisHour": 51175,
+        "lastCalculated": "2025-11-27 09:59 IST"
     }
 };
