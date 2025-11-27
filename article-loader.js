@@ -16,8 +16,8 @@ async function loadArticlesFromJSON() {
         });
 
         // Prepend articles from JSON to existing hardcoded articles
-        if (window.contentData && window.contentData.articleCards) {
-            console.log('[article-loader] contentData.articleCards found:', window.contentData.articleCards.length, 'articles');
+        if (websiteContent && websiteContent.articleCards) {
+            console.log('[article-loader] contentData.articleCards found:', websiteContent.articleCards.length, 'articles');
             const jsonArticles = data.articles.map(article => ({
                 id: article.id,
                 date: article.date,
@@ -27,14 +27,14 @@ async function loadArticlesFromJSON() {
             }));
 
             // Prepend JSON articles (they'll appear first)
-            window.contentData.articleCards = [...jsonArticles, ...window.contentData.articleCards];
-            console.log('[article-loader] Merged articles. Total now:', window.contentData.articleCards.length);
+            websiteContent.articleCards = [...jsonArticles, ...websiteContent.articleCards];
+            console.log('[article-loader] Merged articles. Total now:', websiteContent.articleCards.length);
 
             // Trigger re-render of article cards
             renderArticleCards();
             console.log('[article-loader] Articles rendered to DOM');
         } else {
-            console.error('[article-loader] ERROR: window.contentData or articleCards not found!');
+            console.error('[article-loader] ERROR: websiteContent or articleCards not found!');
         }
 
         console.log('[article-loader] Articles loaded successfully from JSON');
@@ -49,9 +49,9 @@ async function loadArticlesFromJSON() {
 // Function to re-render article cards
 function renderArticleCards() {
     const container = document.querySelector('#articlesGrid');
-    if (!container || !window.contentData || !window.contentData.articleCards) return;
+    if (!container || !websiteContent || !websiteContent.articleCards) return;
 
-    container.innerHTML = window.contentData.articleCards.map(article => `
+    container.innerHTML = websiteContent.articleCards.map(article => `
         <div class="article-card" onclick="openArticleModal('${article.id}')">
             <div class="article-category">${article.category}</div>
             <h3>${article.title}</h3>
@@ -69,7 +69,7 @@ if (typeof window !== 'undefined') {
     console.log('[article-loader] Script loaded');
     // Wait for contentData to be defined (it's set by content.js)
     function waitForContentData() {
-        if (window.contentData && window.contentData.articleCards) {
+        if (websiteContent && websiteContent.articleCards) {
             console.log('[article-loader] contentData found! Loading articles...');
             loadArticlesFromJSON();
         } else {
