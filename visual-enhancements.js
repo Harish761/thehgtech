@@ -208,8 +208,9 @@
             }
         });
 
-        // Add ripple to buttons
-        document.querySelectorAll('button, .btn').forEach(btn => {
+        // Add ripple effects to buttons (excluding tabs which have their own ::after styling)
+        const buttons = document.querySelectorAll('button:not(.tab):not(.tab-btn):not(.threat-vendor-tab), .cta-button, .btn-primary');
+        buttons.forEach(btn => {
             if (!btn.classList.contains('ripple')) {
                 btn.classList.add('ripple');
             }
