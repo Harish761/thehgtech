@@ -1,0 +1,55 @@
+name: Update Ransomware Data
+
+on:
+  schedule:
+    # Run every 6 hours
+    - cron: '0 */6 * * *'
+  
+  # Allow manual trigger
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-ransomware:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: pip install requests
+      
+      - name: Fetch ransomware data
+        run: python3 fetch_ransomware.py
+      
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "actions@github.com"
+          
+          # Check if there are changes
+          if git diff --quiet ransomware-data.json; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          
+          git add ransomware-data.json
+          git commit -m "🔐 Update ransomware data - $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git pull --rebase origin main && git push
+      
+      - name: Summary
+        if: always()
+        run: |
+          echo "### 🔐 Ransomware Data Update Complete" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Source**: Ransomware.live API" >> $GITHUB_STEP_SUMMARY
+          echo "- **Time**: $(date -u '+%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
+          echo "- **Status**: ✅ Success" >> $GITHUB_STEP_SUMMARY
