@@ -144,6 +144,8 @@ function initializeCharts(stats) {
     // 7-Day Trend Chart
     const trendData = dashboard.get7DayTrend();
     const trendCtx = document.getElementById('trendChart').getContext('2d');
+    const colors = getThemeColors();
+
     charts.trend = new Chart(trendCtx, {
         type: 'line',
         data: {
@@ -166,10 +168,10 @@ function initializeCharts(stats) {
             plugins: {
                 legend: { display: false },
                 tooltip: {
-                    backgroundColor: 'rgba(21, 25, 50, 0.9)',
-                    titleColor: '#fff',
-                    bodyColor: '#fff',
-                    borderColor: 'rgba(255, 255, 255, 0.1)',
+                    backgroundColor: colors.tooltipBg,
+                    titleColor: colors.tooltipText,
+                    bodyColor: colors.tooltipText,
+                    borderColor: colors.tooltipBorder,
                     borderWidth: 1,
                     padding: 12,
                     displayColors: false
@@ -178,12 +180,12 @@ function initializeCharts(stats) {
             scales: {
                 y: {
                     beginAtZero: true,
-                    grid: { color: 'rgba(255, 255, 255, 0.05)' },
-                    ticks: { color: 'rgba(255, 255, 255, 0.5)' }
+                    grid: { color: colors.grid },
+                    ticks: { color: colors.text }
                 },
                 x: {
                     grid: { display: false },
-                    ticks: { color: 'rgba(255, 255, 255, 0.5)' }
+                    ticks: { color: colors.text }
                 }
             }
         }
@@ -304,3 +306,80 @@ function escapeHtml(text) {
     div.textContent = text;
     return div.innerHTML;
 }
+
+// Dynamic Theme Colors (Matches threat-intel.html)
+function getThemeColors() {
+    const isLight = document.body.classList.contains('light-mode');
+    return {
+        text: isLight ? '#4B5563' : 'rgba(255, 255, 255, 0.5)',
+        grid: isLight ? 'rgba(0, 0, 0, 0.05)' : 'rgba(255, 255, 255, 0.05)',
+        tooltipBg: isLight ? 'rgba(255, 255, 255, 0.95)' : 'rgba(21, 25, 50, 0.9)',
+        tooltipText: isLight ? '#1F2937' : '#fff',
+        tooltipBorder: isLight ? 'rgba(0, 0, 0, 0.1)' : 'rgba(255, 255, 255, 0.1)'
+    };
+}
+
+// Update charts when theme changes (Global function called by toggleTheme)
+window.updateDashboardChartsTheme = function () {
+    const colors = getThemeColors();
+
+    Object.values(charts).forEach(chart => {
+        if (!chart) return;
+
+        if (chart.options.scales.y) {
+            chart.options.scales.y.grid.color = colors.grid;
+            chart.options.scales.y.ticks.color = colors.text;
+        }
+        if (chart.options.scales.x) {
+            chart.options.scales.x.ticks.color = colors.text;
+        }
+        if (chart.options.plugins.tooltip) {
+            chart.options.plugins.tooltip.backgroundColor = colors.tooltipBg;
+            chart.options.plugins.tooltip.titleColor = colors.tooltipText;
+            chart.options.plugins.tooltip.bodyColor = colors.tooltipText;
+            chart.options.plugins.tooltip.borderColor = colors.tooltipBorder;
+        }
+        if (chart.options.plugins.legend && chart.options.plugins.legend.labels) {
+            chart.options.plugins.legend.labels.color = colors.text;
+        }
+        chart.update('none');
+    });
+};
+
+// Load Ransomware Widget Data
+window.loadRansomwareWidget = async function () {
+    try {
+        const response = await fetch('ransomware-data.json');
+        if (!response.ok) throw new Error('Failed to load ransomware data');
+
+        const data = await response.json();
+        if (!data || !data.length) return;
+
+        // Calculate stats
+        const groups = new Set(data.map(item => item.group_name)).size;
+
+        // Count victims in last 24 hours
+        const oneDayAgo = new Date(Date.now() - 24 * 60 * 60 * 1000);
+        const victimsToday = data.filter(item => {
+            const date = new Date(item.published);
+            return date >= oneDayAgo;
+        }).length;
+
+        // Update DOM
+        const groupsEl = document.getElementById('rw-active-groups');
+        const victimsEl = document.getElementById('rw-victims-today');
+
+        if (groupsEl) groupsEl.textContent = groups;
+        if (victimsEl) victimsEl.textContent = victimsToday;
+
+    } catch (error) {
+        console.error('Error loading ransomware widget:', error);
+    }
+};
+
+// Call widget load when dashboard initializes
+document.addEventListener('DOMContentLoaded', () => {
+    if (window.loadRansomwareWidget) {
+        window.loadRansomwareWidget();
+    }
+});
