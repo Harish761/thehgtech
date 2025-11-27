@@ -786,16 +786,14 @@
 
         /* Light Mode Styles */
         body.light-mode {
-            --bg-primary: #ffffff;
-            --bg-secondary: #f5f5f5;
-            --text-primary: #000000;
-            --text-secondary: #555555;
-            --text-muted: #888888;
+            --bg-primary: #f8f9fa;
+            --bg-secondary: #ffffff;
+            --text-primary: #1a1a1a;
+            --text-secondary: #4a5568;
+            --text-muted: #718096;
             --border: rgba(0, 0, 0, 0.1);
-            /* Accessible cyan for light mode - meets WCAG AA (4.5:1 contrast) */
-            --accent-cyan: #0077AA;
-            --glow-cyan: rgba(0, 119, 170, 0.3);
-            --glass: rgba(255, 255, 255, 0.9);
+            --accent-cyan: #0066CC;
+            --accent-red: #DC2626;
         }
 
         body.light-mode .header {
@@ -804,11 +802,32 @@
         }
 
         body.light-mode .ti-hero {
-            background: linear-gradient(135deg, #e0f2fe 0%, #dbeafe 100%);
+            background: linear-gradient(135deg, #e0f2fe 0%, #fce7f3 100%);
+        }
+
+        /* Fix green badge in light mode */
+        body.light-mode .ti-badge {
+            background: rgba(5, 150, 105, 0.15);
+            border: 1px solid rgba(5, 150, 105, 0.4);
+            color: #047857;
+            box-shadow: 0 0 20px rgba(5, 150, 105, 0.2);
+        }
+
+        body.light-mode .pulse-dot {
+            background: #047857;
+            box-shadow: 0 0 10px rgba(5, 150, 105, 0.4);
+        }
+
+        /* Fix blue gradient text in light mode */
+        body.light-mode .ti-hero h1 span {
+            background: linear-gradient(135deg, #0066CC, #DC2626);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         body.light-mode .main {
-            background: #ffffff;
+            background: #f8f9fa;
         }
 
         body.light-mode .vendor-tab {
@@ -817,18 +836,18 @@
         }
 
         body.light-mode .vendor-tab.active {
-            background: #00d9ff;
-            color: #ffffff;
+            background: #0066CC;
+            color: white;
         }
 
         body.light-mode .ioc-card {
-            background: #ffffff;
-            border: 1px solid rgba(0, 0, 0, 0.1);
+            background: white;
+            border-color: rgba(0, 0, 0, 0.1);
         }
 
         body.light-mode .analytics-card {
-            background: #ffffff;
-            border: 1px solid rgba(0, 0, 0, 0.1);
+            background: white;
+            border-color: rgba(0, 0, 0, 0.1);
         }
 
         body.light-mode .footer {
