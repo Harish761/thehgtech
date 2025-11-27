@@ -1014,12 +1014,6 @@
                     </circle>
                 </g>
 
-                <!-- Subtle Scanning Line -->
-                <line x1="0" y1="0" x2="1400" y2="0" stroke="var(--accent-cyan)" stroke-width="1" opacity="0.3">
-                    <animate attributeName="y1" from="0" to="700" dur="10s" repeatCount="indefinite" />
-                    <animate attributeName="y2" from="0" to="700" dur="10s" repeatCount="indefinite" />
-                    <animate attributeName="opacity" values="0;0.3;0" dur="10s" repeatCount="indefinite" />
-                </line>
             </svg>
         </div>
 
@@ -2220,14 +2214,32 @@
             const totalIOCs = snapshots.map(s => s.metrics.totalIOCs);
             const newIOCs = snapshots.map(s => s.metrics.newIOCs);
 
+            // Dynamic Theme Colors
+            function getThemeColors() {
+                const isLight = document.body.classList.contains('light-mode');
+                return {
+                    text: isLight ? '#4B5563' : '#9CA3AF', // Gray-600 vs Gray-400
+                    grid: isLight ? 'rgba(0, 0, 0, 0.05)' : 'rgba(255, 255, 255, 0.05)',
+                    tooltipBg: isLight ? 'rgba(255, 255, 255, 0.95)' : 'rgba(0, 0, 0, 0.8)',
+                    tooltipText: isLight ? '#1F2937' : '#fff',
+                    tooltipBorder: isLight ? 'rgba(0, 0, 0, 0.1)' : 'rgba(255, 255, 255, 0.1)'
+                };
+            }
+
+            const colors = getThemeColors();
+
             // Chart.js default config
-            Chart.defaults.color = '#9CA3AF';
-            Chart.defaults.borderColor = 'rgba(255, 255, 255, 0.1)';
+            Chart.defaults.color = colors.text;
+            Chart.defaults.borderColor = colors.grid;
             Chart.defaults.font.family = "'Inter', sans-serif";
 
             // Total IOCs Trend (Line Chart)
             const totalCtx = document.getElementById('totalIOCsChart');
             if (totalCtx) {
+                // Destroy existing chart if it exists to prevent memory leaks/duplicates
+                const existingChart = Chart.getChart(totalCtx);
+                if (existingChart) existingChart.destroy();
+
                 new Chart(totalCtx, {
                     type: 'line',
                     data: {
@@ -2248,16 +2260,26 @@
                         plugins: {
                             legend: { display: false },
                             tooltip: {
-                                backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                                backgroundColor: colors.tooltipBg,
                                 titleColor: '#00D9FF',
-                                bodyColor: '#fff',
+                                bodyColor: colors.tooltipText,
                                 borderColor: '#00D9FF',
-                                borderWidth: 1
+                                borderWidth: 1,
+                                titleFont: { weight: 'bold' },
+                                padding: 10,
+                                displayColors: false
                             }
                         },
                         scales: {
-                            y: { beginAtZero: true, grid: { color: 'rgba(255, 255, 255, 0.05)' } },
-                            x: { grid: { display: false } }
+                            y: {
+                                beginAtZero: true,
+                                grid: { color: colors.grid },
+                                ticks: { color: colors.text }
+                            },
+                            x: {
+                                grid: { display: false },
+                                ticks: { color: colors.text }
+                            }
                         }
                     }
                 });
@@ -2266,6 +2288,10 @@
             // New IOCs per Day (Bar Chart)
             const newCtx = document.getElementById('newIOCsChart');
             if (newCtx) {
+                // Destroy existing chart if it exists
+                const existingChart = Chart.getChart(newCtx);
+                if (existingChart) existingChart.destroy();
+
                 new Chart(newCtx, {
                     type: 'bar',
                     data: {
@@ -2284,16 +2310,26 @@
                         plugins: {
                             legend: { display: false },
                             tooltip: {
-                                backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                                backgroundColor: colors.tooltipBg,
                                 titleColor: '#FF4C4C',
-                                bodyColor: '#fff',
+                                bodyColor: colors.tooltipText,
                                 borderColor: '#FF4C4C',
-                                borderWidth: 1
+                                borderWidth: 1,
+                                titleFont: { weight: 'bold' },
+                                padding: 10,
+                                displayColors: false
                             }
                         },
                         scales: {
-                            y: { beginAtZero: true, grid: { color: 'rgba(255, 255, 255, 0.05)' } },
-                            x: { grid: { display: false } }
+                            y: {
+                                beginAtZero: true,
+                                grid: { color: colors.grid },
+                                ticks: { color: colors.text }
+                            },
+                            x: {
+                                grid: { display: false },
+                                ticks: { color: colors.text }
+                            }
                         }
                     }
                 });
