@@ -26,6 +26,9 @@ def get_top_malware_families(limit=10):
     
     # ThreatFox
     threatfox_data = load_json_file(os.path.join(IOC_DATA_DIR, 'threatfox.json'))
+    if isinstance(threatfox_data, dict) and 'iocs' in threatfox_data:
+        threatfox_data = threatfox_data['iocs']
+        
     for item in threatfox_data:
         if 'tags' in item:
             # Tags often contain family names
@@ -35,12 +38,15 @@ def get_top_malware_families(limit=10):
 
     # URLhaus
     urlhaus_data = load_json_file(os.path.join(IOC_DATA_DIR, 'urlhaus.json'))
+    if isinstance(urlhaus_data, dict) and 'iocs' in urlhaus_data:
+        urlhaus_data = urlhaus_data['iocs']
+        
     for item in urlhaus_data:
         if 'tags' in item:
             families.extend(item['tags'])
             
     # Filter out generic tags
-    generic_tags = ['malware', 'url', 'exe', 'elf', 'zip', 'dll', 'doc', 'docx', 'xls', 'xlsx', 'apk', 'unknown']
+    generic_tags = ['malware', 'url', 'exe', 'elf', 'zip', 'dll', 'doc', 'docx', 'xls', 'xlsx', 'apk', 'unknown', 'hash', 'botnet', 'c2', 'banking-trojan', 'ssl', 'certificate', 'ip-address']
     filtered_families = [f for f in families if f.lower() not in generic_tags and len(f) > 2]
     
     return Counter(filtered_families).most_common(limit)
@@ -48,26 +54,40 @@ def get_top_malware_families(limit=10):
 def get_botnet_c2_stats():
     """Get Botnet C2 stats from Feodo Tracker"""
     feodo_data = load_json_file(os.path.join(IOC_DATA_DIR, 'feodo-tracker.json'))
+    if isinstance(feodo_data, dict) and 'iocs' in feodo_data:
+        feodo_data = feodo_data['iocs']
+        
     families = []
     for item in feodo_data:
         if 'malware' in item:
             families.append(item['malware'])
         elif 'tags' in item:
              families.extend(item['tags'])
+    
+    # Filter generic tags
+    generic_tags = ['botnet', 'c2', 'banking-trojan', 'malware', 'ip-address']
+    filtered_families = [f for f in families if f.lower() not in generic_tags]
              
-    return Counter(families).most_common(5)
+    return Counter(filtered_families).most_common(5)
 
 def get_ssl_stats():
     """Get SSL Blacklist stats"""
     ssl_data = load_json_file(os.path.join(IOC_DATA_DIR, 'ssl-blacklist.json'))
+    if isinstance(ssl_data, dict) and 'iocs' in ssl_data:
+        ssl_data = ssl_data['iocs']
+        
     reasons = []
     for item in ssl_data:
         if 'listing_reason' in item:
             reasons.append(item['listing_reason'])
         elif 'tags' in item:
              reasons.extend(item['tags'])
+    
+    # Filter generic tags
+    generic_tags = ['ssl', 'certificate', 'c2', 'botnet', 'malware']
+    filtered_reasons = [r for r in reasons if r.lower() not in generic_tags]
              
-    return len(ssl_data), Counter(reasons).most_common(5)
+    return len(ssl_data), Counter(filtered_reasons).most_common(5)
 
 def generate_html_content(date_str, top_families, botnet_stats, ssl_count, ssl_reasons):
     """Generate HTML content for the article"""

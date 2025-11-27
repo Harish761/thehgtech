@@ -25,6 +25,7 @@ Features:
 import os
 import sys
 import json
+import csv
 import time
 from datetime import datetime, timedelta, timezone
 from urllib.parse import urlparse
@@ -417,16 +418,18 @@ def parse_urlhaus_csv(csv_line, now, config, vendor, ioc_history):
     """Parse URLhaus CSV line"""
     try:
         # CSV: id,dateadded,url,url_status,last_online,threat,tags,urlhaus_link,reporter
-        parts = csv_line.split(',')
+        reader = csv.reader([csv_line])
+        parts = next(reader)
+        
         if len(parts) < 3:
             return None
             
-        url = parts[2].strip('"')
+        url = parts[2]
         if not url.startswith('http'):
             return None
             
-        tags = parts[6].strip('"').split(',') if len(parts) > 6 else []
-        threat = parts[5].strip('"') if len(parts) > 5 else 'malware_download'
+        tags = parts[6].split(',') if len(parts) > 6 and parts[6] else []
+        threat = parts[5] if len(parts) > 5 else 'malware_download'
         
         return {
             'type': 'url',
@@ -447,14 +450,18 @@ def parse_threatfox_csv(csv_line, now, config, vendor, ioc_history):
     """Parse ThreatFox CSV line"""
     try:
         # CSV: first_seen_utc,ioc_id,ioc_value,ioc_type,threat_type,fk_malware,malware_alias,malware_printable,last_seen_utc,confidence_level,reference,tags,anonymous,reporter
-        parts = csv_line.split(',')
+        reader = csv.reader([csv_line])
+        parts = next(reader)
+        
         if len(parts) < 4:
             return None
             
-        ioc_value = parts[2].strip('"')
-        ioc_type_raw = parts[3].strip('"')
-        threat_type = parts[4].strip('"')
-        malware = parts[5].strip('"')
+        ioc_value = parts[2]
+        ioc_type_raw = parts[3]
+        threat_type = parts[4]
+        malware = parts[5]
+        malware_printable = parts[7] if len(parts) > 7 else malware
+        tags = parts[11].split(',') if len(parts) > 11 and parts[11] else []
         
         # Map ThreatFox types
         type_map = {
