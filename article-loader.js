@@ -41,7 +41,7 @@ async function loadArticlesFromJSON() {
 
 // Function to re-render article cards
 function renderArticleCards() {
-    const container = document.querySelector('.article-grid');
+    const container = document.querySelector('#articlesGrid');
     if (!container || !window.contentData || !window.contentData.articleCards) return;
 
     container.innerHTML = window.contentData.articleCards.map(article => `
