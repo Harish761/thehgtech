@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>API Security Best Practices | TheHGTech</title>
+    <meta name="title" content="API Security Best Practices | TheHGTech">
+    <meta name="description"
+        content="Comprehensive guide to securing REST APIs, authentication, authorization, and preventing common vulnerabilities. Learn OAuth 2.0, rate limiting, and API gateway security.">
+    <meta name="keywords"
+        content="API security, REST API, OAuth 2.0, API authentication, rate limiting, API gateway, input validation, OWASP API">
+    <meta name="author" content="TheHGTech">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thehgtech.com/guides/api-security-best-practices.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/guides/api-security-best-practices.html">
+    <meta property="og:title" content="API Security Best Practices">
+    <meta property="og:description"
+        content="Master API security with this comprehensive guide to authentication, authorization, and vulnerability prevention.">
+    <meta property="og:image" content="https://thehgtech.com/images/api-security-og.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://thehgtech.com/guides/api-security-best-practices.html">
+    <meta name="twitter:title" content="API Security Best Practices">
+    <meta name="twitter:description" content="Learn how to secure your REST APIs effectively.">
+    <meta name="twitter:image" content="https://thehgtech.com/images/api-security-twitter.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF4C4C;
+            --accent-green: #00ff88;
+            --glow-cyan: rgba(0, 217, 255, 0.5);
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+            --glass: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Header */
+        header {
+            padding: 3rem 0;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+        }
+
+        .breadcrumb {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .breadcrumb a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .breadcrumb a:hover {
+            color: var(--glow-cyan);
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-red));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .meta {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+
+        /* Content */
+        .content {
+            color: var(--text-secondary);
+            line-height: 1.9;
+        }
+
+        .content h2 {
+            color: var(--accent-cyan);
+            font-size: 1.8rem;
+            margin: 2.5rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .content h3 {
+            color: var(--text-primary);
+            font-size: 1.4rem;
+            margin: 2rem 0 1rem;
+        }
+
+        .content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .content ul,
+        .content ol {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .content li {
+            margin-bottom: 0.8rem;
+        }
+
+        .content strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .content a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        .content a:hover {
+            border-bottom-color: var(--accent-cyan);
+        }
+
+        .content code {
+            background: var(--bg-card);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 0.9em;
+            color: var(--accent-green);
+        }
+
+        .content pre {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            overflow-x: auto;
+            margin-bottom: 1.5rem;
+        }
+
+        .content pre code {
+            background: none;
+            padding: 0;
+        }
+
+        .highlight-box {
+            background: rgba(0, 217, 255, 0.05);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .warning-box {
+            background: rgba(255, 76, 76, 0.05);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .success-box {
+            background: rgba(0, 255, 136, 0.05);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: rgba(0, 217, 255, 0.1);
+            color: var(--accent-cyan);
+            font-weight: 600;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .content h2 {
+                font-size: 1.5rem;
+            }
+
+            .meta {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="breadcrumb">
+                <a href="/">Home</a> / <a href="/guides/">Guides</a> / API Security Best Practices
+            </div>
+            <h1>API Security Best Practices</h1>
+            <div class="meta">
+                <span>📖 10 min read</span>
+                <span>🎯 Intermediate</span>
+                <span>📅 Updated: November 2025</span>
+            </div>
+        </header>
+
+        <div class="content">
+            <p>
+                APIs (Application Programming Interfaces) are the backbone of modern applications, enabling
+                communication between services, mobile apps, and third-party integrations. However, insecure APIs are a
+                major attack vector. This guide covers essential security best practices for designing, implementing,
+                and maintaining secure REST APIs.
+            </p>
+
+            <h2>OWASP API Security Top 10 (2023)</h2>
+            <p>
+                The OWASP API Security Top 10 identifies the most critical API security risks:
+            </p>
+            <ol>
+                <li><strong>Broken Object Level Authorization</strong> - Accessing objects without proper authorization
+                </li>
+                <li><strong>Broken Authentication</strong> - Weak or missing authentication mechanisms</li>
+                <li><strong>Broken Object Property Level Authorization</strong> - Exposing sensitive data properties
+                </li>
+                <li><strong>Unrestricted Resource Consumption</strong> - Lack of rate limiting</li>
+                <li><strong>Broken Function Level Authorization</strong> - Missing authorization checks on functions
+                </li>
+                <li><strong>Unrestricted Access to Sensitive Business Flows</strong> - Abuse of legitimate workflows
+                </li>
+                <li><strong>Server Side Request Forgery (SSRF)</strong> - Exploiting server-side requests</li>
+                <li><strong>Security Misconfiguration</strong> - Improper security settings</li>
+                <li><strong>Improper Inventory Management</strong> - Lack of API documentation and versioning</li>
+                <li><strong>Unsafe Consumption of APIs</strong> - Trusting third-party APIs without validation</li>
+            </ol>
+
+            <h2>Authentication & Authorization</h2>
+
+            <h3>1. Use OAuth 2.0 for Authorization</h3>
+            <p>
+                OAuth 2.0 is the industry standard for API authorization. It provides secure delegated access without
+                sharing credentials.
+            </p>
+
+            <pre><code># OAuth 2.0 Authorization Code Flow
+1. Client redirects user to authorization server
+2. User authenticates and grants permission
+3. Authorization server returns authorization code
+4. Client exchanges code for access token
+5. Client uses access token to call API</code></pre>
+
+            <div class="highlight-box">
+                <strong>Best Practice:</strong> Use the Authorization Code flow with PKCE (Proof Key for Code Exchange)
+                for mobile and single-page applications to prevent authorization code interception.
+            </div>
+
+            <h3>2. Implement JWT Tokens Securely</h3>
+            <p>
+                JSON Web Tokens (JWT) are commonly used for API authentication. Secure implementation requires:
+            </p>
+            <ul>
+                <li><strong>Use strong signing algorithms</strong> - RS256 (RSA) or ES256 (ECDSA), avoid HS256 with weak
+                    secrets</li>
+                <li><strong>Set short expiration times</strong> - 15-30 minutes for access tokens</li>
+                <li><strong>Validate all claims</strong> - Verify issuer, audience, expiration, and signature</li>
+                <li><strong>Use refresh tokens</strong> - Long-lived tokens stored securely for obtaining new access
+                    tokens</li>
+                <li><strong>Never store sensitive data</strong> - JWTs are base64-encoded, not encrypted</li>
+            </ul>
+
+            <pre><code># Example JWT validation (Python)
+import jwt
+
+def validate_token(token):
+    try:
+        payload = jwt.decode(
+            token,
+            public_key,
+            algorithms=['RS256'],
+            audience='your-api',
+            issuer='your-auth-server'
+        )
+        return payload
+    except jwt.ExpiredSignatureError:
+        raise Unauthorized('Token expired')
+    except jwt.InvalidTokenError:
+        raise Unauthorized('Invalid token')</code></pre>
+
+            <h3>3. Implement API Keys for Service-to-Service Communication</h3>
+            <ul>
+                <li>Generate cryptographically random API keys (minimum 32 characters)</li>
+                <li>Store hashed versions in the database (never plaintext)</li>
+                <li>Rotate keys regularly</li>
+                <li>Implement key revocation mechanisms</li>
+                <li>Use different keys for different environments (dev, staging, prod)</li>
+            </ul>
+
+            <h2>Input Validation & Sanitization</h2>
+
+            <h3>1. Validate All Input</h3>
+            <div class="warning-box">
+                <strong>Never trust user input!</strong> Always validate data type, format, length, and range.
+            </div>
+
+            <pre><code># Example input validation (Node.js with Joi)
+const Joi = require('joi');
+
+const userSchema = Joi.object({
+    email: Joi.string().email().required(),
+    age: Joi.number().integer().min(18).max(120),
+    username: Joi.string().alphanum().min(3).max(30).required()
+});
+
+// Validate request body
+const { error, value } = userSchema.validate(req.body);
+if (error) {
+    return res.status(400).json({ error: error.details[0].message });
+}</code></pre>
+
+            <h3>2. Prevent Injection Attacks</h3>
+            <ul>
+                <li><strong>SQL Injection</strong> - Use parameterized queries or ORMs</li>
+                <li><strong>NoSQL Injection</strong> - Validate and sanitize MongoDB queries</li>
+                <li><strong>Command Injection</strong> - Never pass user input to system commands</li>
+                <li><strong>LDAP Injection</strong> - Escape special characters in LDAP queries</li>
+            </ul>
+
+            <pre><code># Secure SQL query with parameterization
+# BAD - Vulnerable to SQL injection
+query = f"SELECT * FROM users WHERE email = '{user_email}'"
+
+# GOOD - Parameterized query
+query = "SELECT * FROM users WHERE email = ?"
+cursor.execute(query, (user_email,))</code></pre>
+
+            <h2>Rate Limiting & Throttling</h2>
+
+            <h3>Why Rate Limiting Matters</h3>
+            <ul>
+                <li>Prevents brute force attacks</li>
+                <li>Protects against DDoS</li>
+                <li>Prevents resource exhaustion</li>
+                <li>Ensures fair usage across clients</li>
+            </ul>
+
+            <h3>Implementation Strategies</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Strategy</th>
+                        <th>Description</th>
+                        <th>Use Case</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fixed Window</td>
+                        <td>X requests per time window</td>
+                        <td>Simple rate limiting</td>
+                    </tr>
+                    <tr>
+                        <td>Sliding Window</td>
+                        <td>Smooth rate limiting over time</td>
+                        <td>More accurate limiting</td>
+                    </tr>
+                    <tr>
+                        <td>Token Bucket</td>
+                        <td>Tokens replenish over time</td>
+                        <td>Burst traffic handling</td>
+                    </tr>
+                    <tr>
+                        <td>Leaky Bucket</td>
+                        <td>Constant output rate</td>
+                        <td>Traffic shaping</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <pre><code># Example rate limiting with Redis (Python)
+import redis
+from datetime import timedelta
+
+def check_rate_limit(user_id, limit=100, window=60):
+    key = f"rate_limit:{user_id}"
+    current = redis_client.get(key)
+    
+    if current and int(current) >= limit:
+        return False  # Rate limit exceeded
+    
+    pipe = redis_client.pipeline()
+    pipe.incr(key)
+    pipe.expire(key, window)
+    pipe.execute()
+    
+    return True  # Request allowed</code></pre>
+
+            <h3>Rate Limit Headers</h3>
+            <p>
+                Always return rate limit information in response headers:
+            </p>
+            <pre><code>X-RateLimit-Limit: 100
+X-RateLimit-Remaining: 87
+X-RateLimit-Reset: 1638360000
+Retry-After: 45</code></pre>
+
+            <h2>API Gateway Security</h2>
+
+            <h3>Benefits of API Gateways</h3>
+            <ul>
+                <li><strong>Centralized authentication</strong> - Single point for auth enforcement</li>
+                <li><strong>Rate limiting</strong> - Protect backend services</li>
+                <li><strong>Request/response transformation</strong> - Normalize data formats</li>
+                <li><strong>Logging & monitoring</strong> - Centralized observability</li>
+                <li><strong>SSL/TLS termination</strong> - Offload encryption from backend</li>
+                <li><strong>IP whitelisting</strong> - Restrict access by IP</li>
+            </ul>
+
+            <h3>Popular API Gateways</h3>
+            <ul>
+                <li><strong>Kong</strong> - Open-source, plugin-based</li>
+                <li><strong>AWS API Gateway</strong> - Managed service</li>
+                <li><strong>Azure API Management</strong> - Enterprise features</li>
+                <li><strong>Google Cloud Apigee</strong> - Advanced analytics</li>
+                <li><strong>NGINX</strong> - High-performance reverse proxy</li>
+                <li><strong>Traefik</strong> - Cloud-native, Kubernetes-friendly</li>
+            </ul>
+
+            <h2>HTTPS & Transport Security</h2>
+
+            <div class="warning-box">
+                <strong>ALWAYS use HTTPS for APIs!</strong> HTTP transmits data in plaintext, exposing sensitive
+                information to eavesdropping and man-in-the-middle attacks.
+            </div>
+
+            <h3>TLS Best Practices</h3>
+            <ul>
+                <li>Use TLS 1.2 or higher (disable TLS 1.0 and 1.1)</li>
+                <li>Use strong cipher suites (AES-GCM, ChaCha20)</li>
+                <li>Implement HSTS (HTTP Strict Transport Security)</li>
+                <li>Use certificate pinning for mobile apps</li>
+                <li>Regularly renew SSL/TLS certificates</li>
+            </ul>
+
+            <pre><code># HSTS Header
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload</code></pre>
+
+            <h2>Error Handling & Logging</h2>
+
+            <h3>Secure Error Messages</h3>
+            <div class="warning-box">
+                <strong>Never expose sensitive information in error messages!</strong> Stack traces, database errors,
+                and internal paths can help attackers.
+            </div>
+
+            <pre><code># BAD - Exposes internal details
+{
+    "error": "SQL Error: Table 'users' doesn't exist at /var/www/api/db.php:42"
+}
+
+# GOOD - Generic error message
+{
+    "error": "Internal server error",
+    "error_id": "ERR-2024-1234",
+    "message": "An unexpected error occurred. Please contact support."
+}</code></pre>
+
+            <h3>Comprehensive Logging</h3>
+            <p>
+                Log security-relevant events:
+            </p>
+            <ul>
+                <li>Authentication attempts (success and failure)</li>
+                <li>Authorization failures</li>
+                <li>Input validation errors</li>
+                <li>Rate limit violations</li>
+                <li>Suspicious patterns (SQL injection attempts, etc.)</li>
+                <li>API key usage and rotation</li>
+            </ul>
+
+            <div class="highlight-box">
+                <strong>Important:</strong> Never log sensitive data like passwords, API keys, credit card numbers, or
+                PII in plaintext.
+            </div>
+
+            <h2>CORS (Cross-Origin Resource Sharing)</h2>
+
+            <h3>Configure CORS Securely</h3>
+            <pre><code># Secure CORS configuration
+Access-Control-Allow-Origin: https://trusted-domain.com
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE
+Access-Control-Allow-Headers: Content-Type, Authorization
+Access-Control-Allow-Credentials: true
+Access-Control-Max-Age: 3600
+
+# AVOID wildcard in production
+Access-Control-Allow-Origin: *  # ❌ Insecure!</code></pre>
+
+            <h2>API Versioning</h2>
+
+            <h3>Why Version Your API?</h3>
+            <ul>
+                <li>Maintain backward compatibility</li>
+                <li>Allow gradual migration</li>
+                <li>Deprecate old endpoints safely</li>
+                <li>Communicate breaking changes</li>
+            </ul>
+
+            <h3>Versioning Strategies</h3>
+            <pre><code># URL Path Versioning
+https://api.example.com/v1/users
+https://api.example.com/v2/users
+
+# Header Versioning
+GET /users
+Accept: application/vnd.example.v1+json
+
+# Query Parameter Versioning
+https://api.example.com/users?version=1</code></pre>
+
+            <h2>Security Testing</h2>
+
+            <h3>Automated Security Scanning</h3>
+            <ul>
+                <li><strong>OWASP ZAP</strong> - Automated vulnerability scanner</li>
+                <li><strong>Burp Suite</strong> - Web application security testing</li>
+                <li><strong>Postman</strong> - API testing with security checks</li>
+                <li><strong>SonarQube</strong> - Static code analysis</li>
+                <li><strong>Snyk</strong> - Dependency vulnerability scanning</li>
+            </ul>
+
+            <h3>Manual Testing Checklist</h3>
+            <ul>
+                <li>Test authentication bypass attempts</li>
+                <li>Verify authorization on all endpoints</li>
+                <li>Test input validation with malicious payloads</li>
+                <li>Check for information disclosure in errors</li>
+                <li>Verify rate limiting effectiveness</li>
+                <li>Test CORS configuration</li>
+                <li>Validate JWT token handling</li>
+            </ul>
+
+            <h2>Best Practices Summary</h2>
+
+            <div class="success-box">
+                <ul style="margin: 0;">
+                    <li>✅ <strong>Always use HTTPS</strong> - No exceptions</li>
+                    <li>✅ <strong>Implement strong authentication</strong> - OAuth 2.0, JWT, API keys</li>
+                    <li>✅ <strong>Validate all input</strong> - Never trust user data</li>
+                    <li>✅ <strong>Use rate limiting</strong> - Protect against abuse</li>
+                    <li>✅ <strong>Implement proper authorization</strong> - Check permissions on every request</li>
+                    <li>✅ <strong>Log security events</strong> - Monitor for suspicious activity</li>
+                    <li>✅ <strong>Keep dependencies updated</strong> - Patch vulnerabilities promptly</li>
+                    <li>✅ <strong>Use API gateways</strong> - Centralize security controls</li>
+                    <li>✅ <strong>Version your API</strong> - Maintain backward compatibility</li>
+                    <li>✅ <strong>Test regularly</strong> - Automated and manual security testing</li>
+                </ul>
+            </div>
+
+            <h2>Conclusion</h2>
+            <p>
+                API security is not a one-time effort—it requires continuous attention and improvement. By following
+                these best practices, you can significantly reduce the risk of API-related security breaches. Remember
+                that security is a shared responsibility across development, operations, and security teams.
+            </p>
+
+            <div class="highlight-box">
+                <strong>Next Steps:</strong> Check out our <a href="/guides/siem-log-analysis.html">SIEM Log Analysis
+                    Guide</a> to learn how to monitor API security events in your SIEM platform.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

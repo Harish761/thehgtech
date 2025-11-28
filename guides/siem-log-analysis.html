@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>SIEM Log Analysis for Beginners | TheHGTech</title>
+    <meta name="title" content="SIEM Log Analysis for Beginners | TheHGTech">
+    <meta name="description"
+        content="Learn how to analyze security logs in SIEM platforms and detect suspicious activities. Beginner-friendly guide to log sources, correlation rules, and alert triage.">
+    <meta name="keywords"
+        content="SIEM, log analysis, security operations, SOC, log correlation, alert triage, security monitoring">
+    <meta name="author" content="TheHGTech">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thehgtech.com/guides/siem-log-analysis.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/guides/siem-log-analysis.html">
+    <meta property="og:title" content="SIEM Log Analysis for Beginners">
+    <meta property="og:description" content="Master SIEM log analysis with this comprehensive beginner's guide.">
+    <meta property="og:image" content="https://thehgtech.com/images/siem-og.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://thehgtech.com/guides/siem-log-analysis.html">
+    <meta name="twitter:title" content="SIEM Log Analysis for Beginners">
+    <meta name="twitter:description" content="Learn SIEM log analysis from scratch.">
+    <meta name="twitter:image" content="https://thehgtech.com/images/siem-twitter.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF4C4C;
+            --accent-green: #00ff88;
+            --glow-cyan: rgba(0, 217, 255, 0.5);
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+            --glass: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Header */
+        header {
+            padding: 3rem 0;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+        }
+
+        .breadcrumb {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .breadcrumb a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .breadcrumb a:hover {
+            color: var(--glow-cyan);
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-red));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .meta {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+
+        /* Content */
+        .content {
+            color: var(--text-secondary);
+            line-height: 1.9;
+        }
+
+        .content h2 {
+            color: var(--accent-cyan);
+            font-size: 1.8rem;
+            margin: 2.5rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .content h3 {
+            color: var(--text-primary);
+            font-size: 1.4rem;
+            margin: 2rem 0 1rem;
+        }
+
+        .content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .content ul,
+        .content ol {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .content li {
+            margin-bottom: 0.8rem;
+        }
+
+        .content strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .content a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        .content a:hover {
+            border-bottom-color: var(--accent-cyan);
+        }
+
+        .content code {
+            background: var(--bg-card);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 0.9em;
+            color: var(--accent-green);
+        }
+
+        .content pre {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            overflow-x: auto;
+            margin-bottom: 1.5rem;
+        }
+
+        .content pre code {
+            background: none;
+            padding: 0;
+        }
+
+        .highlight-box {
+            background: rgba(0, 217, 255, 0.05);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .warning-box {
+            background: rgba(255, 76, 76, 0.05);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .success-box {
+            background: rgba(0, 255, 136, 0.05);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: rgba(0, 217, 255, 0.1);
+            color: var(--accent-cyan);
+            font-weight: 600;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .content h2 {
+                font-size: 1.5rem;
+            }
+
+            .meta {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="breadcrumb">
+                <a href="/">Home</a> / <a href="/guides/">Guides</a> / SIEM Log Analysis
+            </div>
+            <h1>SIEM Log Analysis for Beginners</h1>
+            <div class="meta">
+                <span>📖 12 min read</span>
+                <span>🎯 Beginner</span>
+                <span>📅 Updated: November 2025</span>
+            </div>
+        </header>
+
+        <div class="content">
+            <p>
+                Security Information and Event Management (SIEM) platforms are the backbone of modern security
+                operations. They collect, normalize, and analyze logs from across your IT infrastructure to detect
+                security threats. This guide will teach you the fundamentals of SIEM log analysis, from understanding
+                log sources to triaging alerts effectively.
+            </p>
+
+            <h2>What is a SIEM?</h2>
+            <p>
+                A SIEM is a centralized platform that:
+            </p>
+            <ul>
+                <li><strong>Collects logs</strong> from firewalls, servers, endpoints, applications, and cloud services
+                </li>
+                <li><strong>Normalizes data</strong> into a common format for analysis</li>
+                <li><strong>Correlates events</strong> to identify suspicious patterns</li>
+                <li><strong>Generates alerts</strong> when security rules are triggered</li>
+                <li><strong>Provides dashboards</strong> for real-time monitoring</li>
+                <li><strong>Enables threat hunting</strong> through historical log searches</li>
+            </ul>
+
+            <div class="highlight-box">
+                <strong>Popular SIEM Platforms:</strong> Splunk, IBM QRadar, Microsoft Sentinel, Elastic Security,
+                LogRhythm, ArcSight, Sumo Logic, Chronicle
+            </div>
+
+            <h2>Common Log Sources</h2>
+
+            <h3>1. Network Devices</h3>
+            <ul>
+                <li><strong>Firewalls</strong> - Connection attempts, blocked traffic, rule hits</li>
+                <li><strong>IDS/IPS</strong> - Intrusion attempts, signature matches, anomalies</li>
+                <li><strong>Proxies</strong> - Web traffic, URL filtering, user activity</li>
+                <li><strong>VPN</strong> - Remote access sessions, authentication events</li>
+                <li><strong>Routers/Switches</strong> - Network topology changes, port status</li>
+            </ul>
+
+            <h3>2. Endpoints</h3>
+            <ul>
+                <li><strong>Windows Event Logs</strong> - Logons, process creation, registry changes</li>
+                <li><strong>Linux Syslog</strong> - System events, authentication, sudo commands</li>
+                <li><strong>EDR/Antivirus</strong> - Malware detections, suspicious behavior</li>
+                <li><strong>Application Logs</strong> - Errors, crashes, user actions</li>
+            </ul>
+
+            <h3>3. Identity & Access</h3>
+            <ul>
+                <li><strong>Active Directory</strong> - User/group changes, password resets, lockouts</li>
+                <li><strong>LDAP</strong> - Authentication events, directory queries</li>
+                <li><strong>SSO/IAM</strong> - Login attempts, MFA events, privilege escalation</li>
+            </ul>
+
+            <h3>4. Cloud Services</h3>
+            <ul>
+                <li><strong>AWS CloudTrail</strong> - API calls, resource changes, access logs</li>
+                <li><strong>Azure Activity Logs</strong> - Subscription changes, resource modifications</li>
+                <li><strong>GCP Audit Logs</strong> - Admin activity, data access, system events</li>
+                <li><strong>Office 365</strong> - Email activity, file sharing, admin actions</li>
+            </ul>
+
+            <h2>Understanding Log Formats</h2>
+
+            <h3>Syslog Example</h3>
+            <pre><code>Nov 28 10:15:32 webserver01 sshd[1234]: Failed password for admin from 192.168.1.100 port 22 ssh2</code></pre>
+            <p>
+                <strong>Breakdown:</strong>
+            </p>
+            <ul>
+                <li><code>Nov 28 10:15:32</code> - Timestamp</li>
+                <li><code>webserver01</code> - Hostname</li>
+                <li><code>sshd[1234]</code> - Process name and PID</li>
+                <li><code>Failed password...</code> - Event description</li>
+            </ul>
+
+            <h3>Windows Event Log Example</h3>
+            <pre><code>EventID: 4625
+Source: Microsoft-Windows-Security-Auditing
+Account Name: john.doe
+Failure Reason: Unknown user name or bad password
+Workstation Name: DESKTOP-ABC123
+Source Network Address: 10.0.0.50</code></pre>
+
+            <h2>Log Correlation Rules</h2>
+            <p>
+                Correlation rules combine multiple log events to detect complex attack patterns. Here are common
+                examples:
+            </p>
+
+            <h3>1. Brute Force Attack Detection</h3>
+            <pre><code># Rule: Detect 5+ failed logins from same IP within 5 minutes
+IF (event.type == "failed_login")
+AND (count(source_ip) >= 5)
+WITHIN (5 minutes)
+THEN
+    ALERT "Brute Force Attack Detected"
+    SEVERITY: HIGH</code></pre>
+
+            <h3>2. Lateral Movement Detection</h3>
+            <pre><code># Rule: Detect same user logging into 10+ different systems in 1 hour
+IF (event.type == "successful_login")
+AND (count(DISTINCT destination_host) >= 10)
+BY (username)
+WITHIN (1 hour)
+THEN
+    ALERT "Potential Lateral Movement"
+    SEVERITY: CRITICAL</code></pre>
+
+            <h3>3. Data Exfiltration Detection</h3>
+            <pre><code># Rule: Detect large outbound data transfer to external IP
+IF (network.direction == "outbound")
+AND (destination_ip NOT IN internal_networks)
+AND (bytes_transferred > 1GB)
+THEN
+    ALERT "Potential Data Exfiltration"
+    SEVERITY: HIGH</code></pre>
+
+            <h2>Alert Triage Process</h2>
+
+            <h3>Step 1: Validate the Alert</h3>
+            <ul>
+                <li>Is this a true positive or false positive?</li>
+                <li>What triggered the alert?</li>
+                <li>Is the activity expected or anomalous?</li>
+            </ul>
+
+            <h3>Step 2: Gather Context</h3>
+            <ul>
+                <li><strong>Who?</strong> - Which user or system is involved?</li>
+                <li><strong>What?</strong> - What action was performed?</li>
+                <li><strong>When?</strong> - When did it occur?</li>
+                <li><strong>Where?</strong> - Which systems/networks are affected?</li>
+                <li><strong>Why?</strong> - Is there a legitimate business reason?</li>
+            </ul>
+
+            <h3>Step 3: Investigate</h3>
+            <ul>
+                <li>Search for related events before and after the alert</li>
+                <li>Check if the user/system has a history of similar activity</li>
+                <li>Correlate with threat intelligence (known bad IPs, domains)</li>
+                <li>Review user behavior analytics for anomalies</li>
+            </ul>
+
+            <h3>Step 4: Determine Severity</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Severity</th>
+                        <th>Criteria</th>
+                        <th>Response Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Critical</td>
+                        <td>Active breach, data loss, system compromise</td>
+                        <td>Immediate</td>
+                    </tr>
+                    <tr>
+                        <td>High</td>
+                        <td>Attempted breach, malware detected, privilege escalation</td>
+                        <td>
+                            < 1 hour</td>
+                    </tr>
+                    <tr>
+                        <td>Medium</td>
+                        <td>Policy violation, suspicious activity, failed attack</td>
+                        <td>
+                            < 4 hours</td>
+                    </tr>
+                    <tr>
+                        <td>Low</td>
+                        <td>Informational, minor policy violation</td>
+                        <td>
+                            < 24 hours</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Step 5: Take Action</h3>
+            <ul>
+                <li><strong>Escalate</strong> - Forward to incident response team if confirmed threat</li>
+                <li><strong>Contain</strong> - Isolate affected systems, block malicious IPs</li>
+                <li><strong>Document</strong> - Record findings, actions taken, and timeline</li>
+                <li><strong>Close</strong> - Mark as false positive or resolved</li>
+            </ul>
+
+            <h2>Common Attack Patterns to Look For</h2>
+
+            <h3>1. Reconnaissance</h3>
+            <ul>
+                <li>Port scans from external IPs</li>
+                <li>Excessive DNS queries</li>
+                <li>Directory enumeration attempts</li>
+                <li>Vulnerability scanning activity</li>
+            </ul>
+
+            <h3>2. Initial Access</h3>
+            <ul>
+                <li>Brute force login attempts</li>
+                <li>Phishing email delivery</li>
+                <li>Exploitation of public-facing applications</li>
+                <li>Drive-by downloads</li>
+            </ul>
+
+            <h3>3. Persistence</h3>
+            <ul>
+                <li>New scheduled tasks created</li>
+                <li>Registry run keys modified</li>
+                <li>New user accounts created</li>
+                <li>Service installations</li>
+            </ul>
+
+            <h3>4. Privilege Escalation</h3>
+            <ul>
+                <li>Unusual privilege changes</li>
+                <li>Exploitation of vulnerabilities</li>
+                <li>Credential dumping attempts</li>
+                <li>Token manipulation</li>
+            </ul>
+
+            <h3>5. Lateral Movement</h3>
+            <ul>
+                <li>Pass-the-hash attacks</li>
+                <li>Remote desktop connections</li>
+                <li>PsExec usage</li>
+                <li>WMI/PowerShell remoting</li>
+            </ul>
+
+            <h2>Best Practices</h2>
+
+            <div class="success-box">
+                <ul style="margin: 0;">
+                    <li><strong>Normalize timestamps</strong> - Ensure all logs use the same timezone</li>
+                    <li><strong>Enrich with context</strong> - Add asset info, user details, threat intel</li>
+                    <li><strong>Tune rules regularly</strong> - Reduce false positives, improve detection</li>
+                    <li><strong>Document everything</strong> - Keep investigation notes and playbooks</li>
+                    <li><strong>Automate responses</strong> - Use SOAR for common actions</li>
+                    <li><strong>Review dashboards daily</strong> - Monitor trends and anomalies</li>
+                    <li><strong>Test your rules</strong> - Validate detection logic with simulations</li>
+                </ul>
+            </div>
+
+            <h2>Common Mistakes to Avoid</h2>
+
+            <div class="warning-box">
+                <ul style="margin: 0;">
+                    <li><strong>Alert fatigue</strong> - Too many low-quality alerts overwhelm analysts</li>
+                    <li><strong>Ignoring context</strong> - Alerts without context are hard to triage</li>
+                    <li><strong>Poor log retention</strong> - Insufficient historical data limits investigations</li>
+                    <li><strong>Lack of documentation</strong> - Undocumented rules are hard to maintain</li>
+                    <li><strong>No baseline</strong> - Without normal behavior, everything looks suspicious</li>
+                </ul>
+            </div>
+
+            <h2>Practical Exercise</h2>
+
+            <h3>Scenario: Suspicious Login Activity</h3>
+            <p>
+                You receive an alert: "Multiple failed logins followed by successful login from unusual location"
+            </p>
+
+            <p><strong>Investigation Steps:</strong></p>
+            <ol>
+                <li>Check the user's normal login patterns (location, time, device)</li>
+                <li>Review the failed login attempts (how many, from where)</li>
+                <li>Examine the successful login (IP geolocation, user agent)</li>
+                <li>Search for post-login activity (file access, privilege changes)</li>
+                <li>Contact the user to verify if login was legitimate</li>
+                <li>If malicious: Reset password, revoke sessions, investigate further</li>
+            </ol>
+
+            <h2>Conclusion</h2>
+            <p>
+                SIEM log analysis is a critical skill for SOC analysts. By understanding log sources, correlation rules,
+                and alert triage processes, you can effectively detect and respond to security threats. Remember that
+                SIEM is a tool—its effectiveness depends on proper configuration, tuning, and skilled analysts.
+            </p>
+
+            <div class="highlight-box">
+                <strong>Next Steps:</strong> Check out our <a href="/guides/threat-intelligence-soc.html">Threat
+                    Intelligence for SOC Analysts</a> guide to learn how to integrate threat intelligence into your SIEM
+                workflow.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

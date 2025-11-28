@@ -30,4 +30,16 @@
     <priority>0.8</priority>
     <lastmod>2025-11-25</lastmod>
   </url>
+  <url>
+    <loc>https://thehgtech.com/guides/siem-log-analysis.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2025-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/api-security-best-practices.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2025-11-28</lastmod>
+  </url>
 </urlset>
