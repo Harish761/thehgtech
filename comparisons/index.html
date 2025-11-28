@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Security Tools Comparisons | TheHGTech</title>
+    <meta name="title" content="Security Tools Comparisons | TheHGTech">
+    <meta name="description"
+        content="Data-driven comparisons of cybersecurity tools based on expert reviews, user feedback, and industry research. SIEM, EDR, SOAR, and more.">
+    <meta name="keywords"
+        content="security tools comparison, SIEM comparison, EDR comparison, cybersecurity tools, Splunk vs Elastic, CrowdStrike vs SentinelOne">
+    <meta name="author" content="TheHGTech">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thehgtech.com/comparisons/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thehgtech.com/comparisons/">
+    <meta property="og:title" content="Security Tools Comparisons">
+    <meta property="og:description" content="Data-driven comparisons of cybersecurity tools">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF4C4C;
+            --accent-green: #00ff88;
+            --accent-purple: #9D4EDD;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 4rem 0 3rem;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+        }
+
+        .breadcrumb {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .breadcrumb a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: 3rem;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Methodology Badge */
+        .methodology-badge {
+            display: inline-block;
+            background: rgba(0, 217, 255, 0.1);
+            border: 1px solid var(--accent-cyan);
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            margin-top: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--accent-cyan);
+        }
+
+        /* Categories Grid */
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .category-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-cyan);
+            box-shadow: 0 10px 30px rgba(0, 217, 255, 0.2);
+        }
+
+        .category-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .category-card h3 {
+            color: var(--accent-cyan);
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .category-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .comparison-count {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        /* Comparisons List */
+        .comparisons-section {
+            margin-top: 4rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: var(--text-primary);
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .comparison-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: block;
+        }
+
+        .comparison-card:hover {
+            border-color: var(--accent-cyan);
+            transform: translateX(10px);
+        }
+
+        .comparison-title {
+            font-size: 1.5rem;
+            color: var(--text-primary);
+            margin-bottom: 0.75rem;
+        }
+
+        .comparison-meta {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .comparison-description {
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        .coming-soon {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .coming-soon:hover {
+            transform: none;
+            border-color: var(--border);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .badge-new {
+            background: rgba(0, 255, 136, 0.2);
+            color: var(--accent-green);
+        }
+
+        .badge-coming-soon {
+            background: rgba(255, 76, 76, 0.2);
+            color: var(--accent-red);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .categories {
+                grid-template-columns: 1fr;
+            }
+
+            .comparison-meta {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="breadcrumb">
+                <a href="/">Home</a> / Comparisons
+            </div>
+            <h1>Security Tools Comparisons</h1>
+            <p class="subtitle">
+                Data-driven analysis of cybersecurity tools based on expert reviews, user feedback, and industry
+                research. We do the research so you can make informed decisions.
+            </p>
+            <div class="methodology-badge">
+                📊 Research-Based • 🔍 Fact-Checked • 📈 Regularly Updated
+            </div>
+        </header>
+
+        <!-- Categories -->
+        <div class="categories">
+            <div class="category-card">
+                <div class="category-icon">🛡️</div>
+                <h3>SIEM Platforms</h3>
+                <p>Compare security information and event management solutions</p>
+                <span class="comparison-count">1 comparison available</span>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🔒</div>
+                <h3>EDR/XDR Solutions</h3>
+                <p>Endpoint detection and response platform comparisons</p>
+                <span class="comparison-count">Coming soon</span>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🔍</div>
+                <h3>Vulnerability Scanners</h3>
+                <p>Compare vulnerability assessment and management tools</p>
+                <span class="comparison-count">Coming soon</span>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🤖</div>
+                <h3>SOAR Platforms</h3>
+                <p>Security orchestration, automation, and response solutions</p>
+                <span class="comparison-count">Coming soon</span>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">☁️</div>
+                <h3>Cloud Security</h3>
+                <p>Cloud security posture management and CWPP tools</p>
+                <span class="comparison-count">Coming soon</span>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🌐</div>
+                <h3>API Security</h3>
+                <p>API security testing and protection platforms</p>
+                <span class="comparison-count">Coming soon</span>
+            </div>
+        </div>
+
+        <!-- Latest Comparisons -->
+        <section class="comparisons-section">
+            <h2 class="section-title">Latest Comparisons</h2>
+
+            <a href="/comparisons/splunk-vs-elastic-security-vs-logrhythm.html" class="comparison-card">
+                <span class="badge badge-new">New</span>
+                <h3 class="comparison-title">Splunk vs Elastic Security vs LogRhythm: SIEM Showdown 2025</h3>
+                <div class="comparison-meta">
+                    <span>📖 18 min read</span>
+                    <span>📊 Based on 1,300+ reviews</span>
+                    <span>📅 Updated: November 2025</span>
+                </div>
+                <p class="comparison-description">
+                    Comprehensive three-way comparison of leading SIEM platforms. Analysis based on Gartner reports,
+                    1,300+ G2 reviews, and community feedback. Includes on-prem vs cloud deployment, feature matrix,
+                    pricing breakdown, and use case recommendations.
+                </p>
+            </a>
+
+            <div class="comparison-card coming-soon">
+                <span class="badge badge-coming-soon">Coming Soon</span>
+                <h3 class="comparison-title">CrowdStrike Falcon vs SentinelOne: EDR Battle</h3>
+                <div class="comparison-meta">
+                    <span>📖 12 min read</span>
+                    <span>📊 Analysis in progress</span>
+                </div>
+                <p class="comparison-description">
+                    Head-to-head comparison of leading EDR platforms. Detection capabilities, performance impact, and
+                    pricing analysis.
+                </p>
+            </div>
+
+            <div class="comparison-card coming-soon">
+                <span class="badge badge-coming-soon">Coming Soon</span>
+                <h3 class="comparison-title">Nessus vs Qualys vs Rapid7: Vulnerability Scanner Comparison</h3>
+                <div class="comparison-meta">
+                    <span>📖 14 min read</span>
+                    <span>📊 Analysis in progress</span>
+                </div>
+                <p class="comparison-description">
+                    Three-way comparison of popular vulnerability scanners. Coverage, accuracy, and ease of use
+                    analysis.
+                </p>
+            </div>
+        </section>
+
+        <!-- Methodology Section -->
+        <section class="comparisons-section">
+            <h2 class="section-title">Our Methodology</h2>
+            <div class="comparison-card">
+                <h3 class="comparison-title">How We Create Comparisons</h3>
+                <p class="comparison-description" style="margin-bottom: 1rem;">
+                    Our comparisons are research-based and data-driven. We don't claim hands-on testing of every tool,
+                    but we do extensive research to provide you with accurate, actionable insights.
+                </p>
+                <p class="comparison-description" style="margin-bottom: 1rem;">
+                    <strong>Our research includes:</strong>
+                </p>
+                <ul style="color: var(--text-secondary); margin-left: 2rem; line-height: 1.8;">
+                    <li>Analysis of 500+ verified user reviews from G2, Gartner Peer Insights, and TrustRadius</li>
+                    <li>Gartner Magic Quadrant and Forrester Wave reports</li>
+                    <li>Official vendor documentation and specifications</li>
+                    <li>Community feedback from Reddit, Stack Overflow, and security forums</li>
+                    <li>Published performance benchmarks and case studies</li>
+                    <li>Pricing information from vendor websites and user reports</li>
+                </ul>
+                <p class="comparison-description" style="margin-top: 1rem;">
+                    All claims are cited with sources. We update comparisons quarterly to ensure accuracy.
+                </p>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
