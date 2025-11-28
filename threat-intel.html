@@ -1555,22 +1555,27 @@
 
             const data = threatIntelData;
 
-            // Update last updated time - format the ISO timestamp
+            // Update last updated time - use pre-formatted timestamp to avoid timezone issues
             let lastUpdated = 'Unknown';
             if (data.lastUpdatedFormatted) {
+                // Use the pre-formatted timestamp (already in IST)
                 lastUpdated = data.lastUpdatedFormatted;
             } else if (data.lastUpdated) {
+                // Fallback: parse ISO timestamp but keep it in IST
                 try {
-                    const date = new Date(data.lastUpdated);
-                    lastUpdated = date.toLocaleDateString('en-US', {
-                        month: 'short',
-                        day: 'numeric',
-                        year: 'numeric'
-                    }) + ' at ' + date.toLocaleTimeString('en-US', {
-                        hour: '2-digit',
-                        minute: '2-digit',
-                        hour12: true
-                    }) + ' IST';
+                    // The timestamp is already in IST format, just display it
+                    const timestamp = data.lastUpdated;
+                    const date = timestamp.split('T')[0]; // 2025-11-28
+                    const time = timestamp.split('T')[1].split('.')[0]; // 12:06:58
+
+                    const [year, month, day] = date.split('-');
+                    const [hour, minute] = time.split(':');
+
+                    const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                    const hour12 = hour % 12 || 12;
+                    const ampm = hour >= 12 ? 'PM' : 'AM';
+
+                    lastUpdated = `${monthNames[parseInt(month) - 1]} ${parseInt(day)}, ${year} at ${hour12}:${minute} ${ampm} IST`;
                 } catch (e) {
                     lastUpdated = 'Unknown';
                 }
