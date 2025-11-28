@@ -319,13 +319,13 @@ function escapeHtml(text) {
 
 // Dynamic Theme Colors (Matches threat-intel.html)
 function getThemeColors() {
-    const isDark = document.body.classList.contains('dark-theme');
+    const isLight = document.body.classList.contains('light-mode');
     return {
-        text: isDark ? 'rgba(255, 255, 255, 0.7)' : '#333',
-        grid: isDark ? 'rgba(255, 255, 255, 0.1)' : '#ddd',
-        tooltipBg: isDark ? 'rgba(0, 0, 0, 0.8)' : 'rgba(255, 255, 255, 0.95)',
-        tooltipText: isDark ? 'rgba(255, 255, 255, 0.9)' : '#333',
-        tooltipBorder: isDark ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)'
+        text: '#777', // Universal gray that works in both light and dark modes
+        grid: isLight ? '#ddd' : 'rgba(255, 255, 255, 0.1)',
+        tooltipBg: isLight ? 'rgba(255, 255, 255, 0.95)' : 'rgba(0, 0, 0, 0.8)',
+        tooltipText: isLight ? '#333' : 'rgba(255, 255, 255, 0.9)',
+        tooltipBorder: isLight ? 'rgba(0, 0, 0, 0.1)' : 'rgba(255, 255, 255, 0.1)'
     };
 }
 

@@ -2539,7 +2539,7 @@
         function getThemeColors() {
             const isLight = document.body.classList.contains('light-mode');
             return {
-                text: isLight ? '#333' : 'rgba(255, 255, 255, 0.7)',
+                text: '#777', // Universal gray that works in both light and dark modes
                 grid: isLight ? '#ddd' : 'rgba(255, 255, 255, 0.1)',
                 tooltipBg: isLight ? 'rgba(255, 255, 255, 0.95)' : 'rgba(0, 0, 0, 0.8)',
                 tooltipText: isLight ? '#333' : 'rgba(255, 255, 255, 0.9)',
