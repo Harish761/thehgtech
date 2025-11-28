@@ -162,68 +162,90 @@
             background: linear-gradient(135deg, #ffd93d, #ff9500);
             border-radius: 50%;
             transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-            box-shadow: 0 0 10px rgba(255, 217, 61, 0.5);
+            box-shadow: 0 0 20px rgba(255, 217, 61, 0.6);
             z-index: 2;
         }
 
-        .toggle-stars {
+        .theme-toggle::after {
+            content: '✦';
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.6);
+            transition: all 0.5s ease;
+        }
+
+        .theme-toggle .toggle-stars {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             pointer-events: none;
-            opacity: 0;
-            transition: opacity 0.3s ease;
         }
 
-        .star {
+        .theme-toggle .star {
             position: absolute;
-            background: #fff;
+            width: 3px;
+            height: 3px;
+            background: white;
             border-radius: 50%;
-            animation: twinkle 2s infinite;
+            opacity: 0.7;
+            transition: opacity 0.5s ease;
         }
 
-        .star:nth-child(1) {
-            top: 10px;
-            left: 10px;
-            width: 2px;
-            height: 2px;
-        }
-
-        .star:nth-child(2) {
-            top: 20px;
-            left: 25px;
-            width: 1px;
-            height: 1px;
-            animation-delay: 0.5s;
-        }
-
-        .star:nth-child(3) {
-            top: 15px;
-            left: 35px;
-            width: 2px;
-            height: 2px;
-            animation-delay: 1s;
-        }
-
-        .star:nth-child(4) {
+        .theme-toggle .star:nth-child(1) {
             top: 8px;
-            left: 45px;
-            width: 1px;
-            height: 1px;
-            animation-delay: 1.5s;
+            right: 12px;
+        }
+
+        .theme-toggle .star:nth-child(2) {
+            top: 18px;
+            right: 20px;
+        }
+
+        .theme-toggle .star:nth-child(3) {
+            top: 12px;
+            right: 28px;
+        }
+
+        .theme-toggle .star:nth-child(4) {
+            top: 22px;
+            right: 15px;
         }
 
         body.light-mode .theme-toggle {
-            background: linear-gradient(135deg, #87CEEB, #E0F7FA);
-            border-color: rgba(0, 0, 0, 0.1);
+            background: linear-gradient(135deg, #87CEEB, #98d9f0);
+            border-color: rgba(135, 206, 235, 0.5);
         }
 
         body.light-mode .theme-toggle::before {
             transform: translateX(34px);
-            background: linear-gradient(135deg, #FDB813, #FF8C00);
-            box-shadow: 0 0 10px rgba(255, 140, 0, 0.5);
+            background: linear-gradient(135deg, #ffd93d, #ffb347);
+            box-shadow: 0 0 25px rgba(255, 179, 71, 0.8);
+        }
+
+        body.light-mode .theme-toggle::after {
+            content: '☁️';
+            left: 10px;
+            right: auto;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        body.light-mode .theme-toggle .star {
+            opacity: 0;
+        }
+
+        .theme-toggle:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(255, 61, 61, 0.3);
+        }
+
+        .theme-toggle:active {
+            transform: scale(0.95);
         }
 
         /* Header */
