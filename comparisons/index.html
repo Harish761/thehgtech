@@ -231,6 +231,13 @@
             color: var(--accent-red);
         }
 
+        .category-card.active {
+            border-color: var(--accent-cyan);
+            background: rgba(0, 217, 255, 0.1);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 217, 255, 0.3);
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             h1 {
@@ -247,6 +254,67 @@
             }
         }
     </style>
+
+    <script>
+        // Category filtering system
+        let activeCategory = 'all';
+
+        function filterByCategory(category) {
+            activeCategory = category;
+
+            // Update active state on category cards
+            document.querySelectorAll('.category-card').forEach(card => {
+                card.classList.remove('active');
+            });
+
+            if (category !== 'all') {
+                event.target.closest('.category-card').classList.add('active');
+            }
+
+            // Filter comparison cards
+            const comparisons = document.querySelectorAll('.comparison-card');
+            comparisons.forEach(card => {
+                if (category === 'all' || card.dataset.category === category) {
+                    card.style.display = 'block';
+                    card.style.animation = 'fadeIn 0.3s ease';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            // Update section title
+            const sectionTitle = document.querySelector('.section-title');
+            if (category === 'all') {
+                sectionTitle.textContent = 'Latest Tool Comparisons';
+            } else {
+                const categoryNames = {
+                    'siem': 'SIEM Platform Comparisons',
+                    'edr': 'EDR/XDR Solution Comparisons',
+                    'vuln': 'Vulnerability Scanner Comparisons',
+                    'soar': 'SOAR Platform Comparisons',
+                    'cloud': 'Cloud Security Comparisons',
+                    'api': 'API Security Comparisons'
+                };
+                sectionTitle.textContent = categoryNames[category] || 'Tool Comparisons';
+            }
+
+            // Smooth scroll to comparisons section
+            document.querySelector('.comparisons-section').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+
+        // Add fadeIn animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(10px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
 </head>
 
 <body>
@@ -267,42 +335,49 @@
 
         <!-- Categories -->
         <div class="categories">
-            <div class="category-card">
+            <div class="category-card" onclick="filterByCategory('all')" style="cursor: pointer;">
+                <div class="category-icon">🔍</div>
+                <h3>All Categories</h3>
+                <p>View all available tool comparisons</p>
+                <span class="comparison-count">Click to view all</span>
+            </div>
+
+            <div class="category-card" onclick="filterByCategory('siem')" style="cursor: pointer;">
                 <div class="category-icon">🛡️</div>
                 <h3>SIEM Platforms</h3>
                 <p>Compare security information and event management solutions</p>
                 <span class="comparison-count">1 comparison available</span>
             </div>
 
-            <div class="category-card">
+            <div class="category-card" onclick="filterByCategory('edr')" style="cursor: pointer;">
                 <div class="category-icon">🔒</div>
                 <h3>EDR/XDR Solutions</h3>
                 <p>Endpoint detection and response platform comparisons</p>
                 <span class="comparison-count">Coming soon</span>
             </div>
 
-            <div class="category-card">
+            <div class="category-card" onclick="filterByCategory('vuln')" style="cursor: pointer;">
                 <div class="category-icon">🔍</div>
                 <h3>Vulnerability Scanners</h3>
                 <p>Compare vulnerability assessment and management tools</p>
                 <span class="comparison-count">Coming soon</span>
             </div>
 
-            <div class="category-card">
+            <div class="category-card" onclick="filterByCategory('soar')" style="cursor: pointer;">
                 <div class="category-icon">🤖</div>
                 <h3>SOAR Platforms</h3>
                 <p>Security orchestration, automation, and response solutions</p>
                 <span class="comparison-count">Coming soon</span>
             </div>
 
-            <div class="category-card">
+            <div class="category-card" onclick="filterByCategory('cloud')" style="cursor: pointer;">
                 <div class="category-icon">☁️</div>
                 <h3>Cloud Security</h3>
                 <p>Cloud security posture management and CWPP tools</p>
                 <span class="comparison-count">Coming soon</span>
             </div>
 
-            <div class="category-card">
+            <div class="category-card" onclick="filterByCategory('api')" style="cursor: pointer;">
                 <div class="category-icon">🌐</div>
                 <h3>API Security</h3>
                 <p>API security testing and protection platforms</p>
@@ -314,7 +389,8 @@
         <section class="comparisons-section">
             <h2 class="section-title">Latest Tool Comparisons</h2>
 
-            <a href="/comparisons/splunk-vs-elastic-security-vs-logrhythm.html" class="comparison-card">
+            <a href="/comparisons/splunk-vs-elastic-security-vs-logrhythm.html" class="comparison-card"
+                data-category="siem">
                 <span class="badge badge-new">New</span>
                 <h3 class="comparison-title">Splunk vs Elastic Security vs LogRhythm: SIEM Showdown 2025</h3>
                 <div class="comparison-meta">
@@ -329,7 +405,7 @@
                 </p>
             </a>
 
-            <div class="comparison-card coming-soon">
+            <div class="comparison-card coming-soon" data-category="edr">
                 <span class="badge badge-coming-soon">Coming Soon</span>
                 <h3 class="comparison-title">CrowdStrike Falcon vs SentinelOne: EDR Battle</h3>
                 <div class="comparison-meta">
@@ -342,7 +418,7 @@
                 </p>
             </div>
 
-            <div class="comparison-card coming-soon">
+            <div class="comparison-card coming-soon" data-category="vuln">
                 <span class="badge badge-coming-soon">Coming Soon</span>
                 <h3 class="comparison-title">Nessus vs Qualys vs Rapid7: Vulnerability Scanner Comparison</h3>
                 <div class="comparison-meta">
