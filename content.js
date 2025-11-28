@@ -4,118 +4,104 @@
 var websiteContent = {
     "cyberShorts": [
         {
-            "date": "Nov 27 2025",
-            "title": "ServiceNow Eyes Veza Acquisition to Enhance AI Security",
-            "content": "ServiceNow is reportedly in advanced discussions to acquire Veza, a startup specializing in identity security, for over $1 billion. This acquisition would fill a significant gap for ServiceNow&#x27;s AI-driven operations by enhancing control over AI agents&#x27; access and actions within organizations. Veza&#x27;s technology focuses on identity governance, which is crucial for managing permissions and preventing unauthorized access. For enterprises deploying AI at scale, this move could significantly bolster security frameworks. If completed, the acquisition would mark a strategic expansion of ServiceNow&#x27;s capabilities in securing AI environments, a growing concern in the tech industry. Organizations should monitor this development, as it may influence future security integrations and offerings from ServiceNow.",
+            "date": "Nov 28 2025",
+            "title": "Security Flaws Found in Google Antigravity Tool for AI Development",
+            "content": "Security researchers have identified vulnerabilities in Google’s Antigravity, a tool for developing artificial intelligence agents. Released just 11 days ago, Antigravity&#x27;s known issues page has already been updated to reflect these findings. The vulnerabilities could allow unauthorized access or manipulation of AI models, posing significant risks to developers using the tool. This discovery underscores the challenges in securing new AI development platforms, especially those rapidly adopted in the tech community. Developers are urged to review the updated documentation and apply recommended security measures promptly to mitigate potential risks.",
             "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4097423/servicenow-is-in-talks-to-buy-identity-security-firm-veza-for-over-1-billion-report-2.html"
+            "sourceUrl": "https://www.csoonline.com/article/4097698/security-researchers-caution-app-developers-about-risks-in-using-google-antigravity.html"
         },
         {
             "date": "Nov 27 2025",
-            "title": "Mixpanel Hack Exposes OpenAI User Data",
-            "content": "A cyberattack on Mixpanel, a product analytics company, has compromised data from multiple clients, including OpenAI. The breach exposed user data, highlighting vulnerabilities in third-party service providers. OpenAI&#x27;s involvement underscores the risk of data exposure even for leading AI firms relying on external analytics solutions. This incident serves as a reminder of the importance of robust security measures and regular audits for third-party integrations. Affected organizations should review their data-sharing practices and consider enhanced encryption and monitoring to mitigate future risks. The breach&#x27;s impact on users and data privacy is still being assessed, urging companies to remain vigilant.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/openai-user-data-exposed-in-mixpanel-hack/"
-        },
-        {
-            "date": "Nov 27 2025",
-            "title": "Microsoft Teams Guest Feature Vulnerability Exposes Users",
-            "content": "A vulnerability in Microsoft Teams&#x27; guest chat feature has been identified, exposing a significant security gap in cross-tenant collaboration. Once a user accepts a guest invitation, their Defender for Office 365 protections are entirely disabled, leaving them vulnerable when accessing external tenants. This flaw affects organizations using Microsoft Teams for inter-company communication, potentially compromising sensitive data. Security experts recommend reviewing guest access settings and implementing additional security layers, such as conditional access policies. This issue highlights the complexities and risks associated with digital collaboration tools, necessitating ongoing vigilance and updates from Microsoft.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4097381/microsoft-teams-guest-chat-feature-exposes-cross-tenant-blind-spot.html"
-        },
-        {
-            "date": "Nov 27 2025",
-            "title": "OpenAI Alerts Customers to Data Breach via Mixpanel",
-            "content": "OpenAI has disclosed a data breach affecting some ChatGPT API customers, following a security incident at Mixpanel, its analytics vendor. The breach exposed limited identifying information, raising concerns over third-party data handling practices. OpenAI&#x27;s proactive notification to affected users underscores the importance of transparency in cybersecurity incidents. This breach highlights the potential risks associated with relying on external service providers for critical data analytics. Organizations should consider conducting thorough security assessments of their vendors and implementing stricter data protection protocols. The incident serves as a cautionary tale for companies using third-party services.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/openai-discloses-api-customer-data-breach-via-mixpanel-vendor-hack/"
-        },
-        {
-            "date": "Nov 27 2025",
-            "title": "Weekly Threats Roundup: AI Malware and IoT Vulnerabilities",
-            "content": "This week&#x27;s cybersecurity landscape features a range of threats, including AI-powered malware, voice bot vulnerabilities, and IoT attacks. Hackers are increasingly using sophisticated techniques to exploit systems, posing significant risks to businesses and individuals alike. The report highlights the need for updated security measures and awareness of evolving threats, such as AI-driven scams and crypto laundering schemes. Security professionals should prioritize regular system updates and employee training to mitigate these risks. The diverse nature of these threats underscores the importance of a comprehensive cybersecurity strategy to protect against emerging vulnerabilities.",
+            "title": "Bloody Wolf Expands NetSupport RAT Attacks in Central Asia",
+            "content": "The cybercriminal group Bloody Wolf has intensified its campaign to deploy the NetSupport Remote Access Trojan (RAT) in Kyrgyzstan and Uzbekistan. Initially targeting Kyrgyzstan since June 2025, the group&#x27;s activities have expanded to Uzbekistan as of October 2025. The attacks exploit vulnerabilities in Java-based applications to deliver the RAT, enabling remote control of infected systems. This escalation highlights the growing threat of sophisticated cyber attacks in Central Asia, with implications for both government and private sector entities. Organizations in the region should enhance their security postures and monitor for indicators of compromise.",
             "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/11/threatsday-bulletin-ai-malware-voice.html"
+            "sourceUrl": "https://thehackernews.com/2025/11/bloody-wolf-expands-java-based.html"
         },
         {
             "date": "Nov 27 2025",
-            "title": "CISA Warns of Spyware Threats to Encrypted Messaging Apps",
-            "content": "The US Cybersecurity and Infrastructure Security Agency (CISA) has issued a warning about state-backed spyware attacks targeting users of encrypted messaging apps like Signal, WhatsApp, and Telegram. These attacks compromise smartphones, threatening the privacy and security of communications. The involvement of state-backed groups highlights the sophisticated nature of these threats, which exploit vulnerabilities in widely used apps. Users are advised to update their apps regularly and remain cautious of suspicious activity. This alert emphasizes the ongoing battle between encryption technologies and advanced cyber threats, urging users to stay informed and vigilant.",
-            "source": "Graham Cluley",
-            "sourceUrl": "https://www.bitdefender.com/en-us/blog/hotforsecurity/state-backed-spyware-attacks-are-targeting-signal-and-whatsapp-users-cisa-warns"
+            "title": "Massive Data Breach at Asahi Affects 2 Million Individuals",
+            "content": "A significant data breach at Asahi has compromised the personal information of 2 million customers and employees. Hackers infiltrated the company&#x27;s systems before deploying ransomware that severely disrupted operations in Japan. This breach highlights the vulnerabilities in data protection and the potential for widespread impact on both individuals and business operations. Asahi is working to restore its systems and has notified affected individuals. Entities are advised to review their cybersecurity measures, particularly against ransomware threats, to prevent similar incidents.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/asahi-data-breach-impacts-2-million-individuals/"
         },
         {
             "date": "Nov 27 2025",
-            "title": "New ToddyCat Toolkit Targets Microsoft Outlook and Tokens",
-            "content": "A new cyber toolkit, dubbed ToddyCat, has been identified targeting Microsoft Outlook and authentication tokens. This toolkit exploits vulnerabilities in Outlook&#x27;s security protocols, potentially allowing unauthorized access to sensitive information. The emergence of ToddyCat reflects a growing trend of sophisticated attacks on widely used enterprise software. Organizations using Microsoft products should ensure their systems are updated and monitor for unusual activity. The discovery of ToddyCat underscores the importance of maintaining robust cybersecurity defenses and the need for continuous monitoring of new threats in the digital landscape.",
+            "title": "Microsoft to Enhance Entra ID Security with CSP Update",
+            "content": "Microsoft plans to bolster the security of Entra ID logins by blocking unauthorized script injections through an update to its Content Security Policy (CSP). This update, scheduled for 2026, aims to secure the login experience at login.microsoftonline.com. Unauthorized script injections have been a vector for attacks, compromising the integrity of authentication processes. This proactive measure by Microsoft reflects a broader industry trend towards tightening security protocols for identity management systems. Organizations using Entra ID should prepare for the update and review their own security practices to align with these enhancements.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/11/microsoft-to-block-unauthorized-scripts.html"
+        },
+        {
+            "date": "Nov 27 2025",
+            "title": "Webinar Highlights Risks and Safe Patching with Community Tools",
+            "content": "A recent webinar has spotlighted the risks associated with using community-maintained tools like Chocolatey and Winget for system updates. While these platforms offer speed and flexibility, they may also introduce security vulnerabilities if not managed properly. IT teams are encouraged to implement robust patch management processes and verify the integrity of packages before deployment. This discussion emphasizes the need for vigilance in maintaining system security while leveraging community tools, which are increasingly popular in IT environments for their efficiency.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/11/webinar-learn-to-spot-risks-and-patch.html"
+        },
+        {
+            "date": "Nov 27 2025",
+            "title": "OpenAI Data Breach Exposes Customer Profiles via Phishing Attack",
+            "content": "OpenAI has confirmed a data breach after its analytics partner Mixpanel fell victim to a phishing attack. Hackers accessed and stole customer profile information from OpenAI&#x27;s API portal. The breach underscores the vulnerabilities in third-party partnerships and the importance of securing all links in the data chain. OpenAI and Mixpanel are collaborating to strengthen their security measures and prevent future incidents. Organizations are advised to review their partnerships and enhance phishing defenses to protect sensitive data.",
             "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4097406/neues-toddycat-toolkit-greift-outlook-und-microsoft-token-an.html"
+            "sourceUrl": "https://www.csoonline.com/article/4097488/openai-admits-data-breach-after-analytics-partner-hit-by-phishing-attack-2.html"
         },
         {
             "date": "Nov 27 2025",
-            "title": "Hackers Exploit Broadcast Vulnerabilities to Air Fake Alerts",
-            "content": "In a chilling reminder of past vulnerabilities, hackers have once again hijacked American broadcast systems to air fake emergency alerts and inappropriate content. This breach exploits a decade-long oversight where broadcasters left their systems exposed, allowing unauthorized access to TV shows and radio sermons. The attack underscores the persistent risk of outdated hardware and insufficient security protocols in broadcast infrastructure. The impact is significant, affecting public trust in emergency communication channels and highlighting the need for broadcasters to secure their systems against unauthorized access. Security professionals should audit their broadcast equipment for vulnerabilities and implement robust access controls to prevent similar incidents.",
-            "source": "Graham Cluley",
-            "sourceUrl": "https://grahamcluley.com/smashing-security-podcast-445/"
-        },
-        {
-            "date": "Nov 27 2025",
-            "title": "HashJack Attack Targets AI-Powered Browsers with Malicious URLs",
-            "content": "Researchers have identified a new threat known as HashJack, targeting AI-powered browsers and assistants through malicious URL fragments. This attack involves embedding rogue prompts in URL fragments, which can deceive AI models into executing unauthorized actions like phishing or data exfiltration. The attack primarily affects browsers that incorporate AI assistants, posing risks of credential theft and malware distribution. As AI integration in browsers becomes more prevalent, this discovery highlights the growing sophistication of indirect prompt injection attacks. Security teams should consider implementing URL sanitization and monitoring AI interactions with web content to mitigate potential threats.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4097087/ai-browsers-can-be-tricked-with-malicious-prompts-hidden-in-url-fragments.html"
+            "title": "CodeRED Alert System Compromised by Ransomware Attack",
+            "content": "A ransomware attack has disrupted the CodeRED emergency alert platform, affecting millions across the United States. The breach has raised concerns about the security of critical infrastructure systems, which are increasingly targeted by cybercriminals. The outage could delay emergency response efforts, highlighting the need for robust security measures in public safety networks. Authorities are investigating the incident and working to restore full functionality. Organizations managing similar systems should prioritize cybersecurity enhancements to protect against such disruptive attacks.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2025/11/millions-at-risk-after-nationwide-codered-alert-system-outage-and-data-breach"
         }
     ],
     "aiShorts": [
         {
             "date": "Nov 27 2025",
-            "title": "Cochlear&#x27;s Edge AI Implant: A Medical Technology Breakthrough",
-            "content": "Cochlear has unveiled the Nucleus Nexa System, a pioneering cochlear implant that integrates edge AI capabilities directly within the human body. This system can execute machine learning algorithms under stringent power constraints, a significant leap from traditional external devices. The implant is designed to enhance auditory processing by adapting to various sound environments, providing a personalized hearing experience. This development marks a crucial step in medical technology, potentially benefiting millions of individuals with hearing impairments. Professionals in the field should note the potential for similar applications in other medical implants, as the technology evolves.",
+            "title": "Michael Burry&#x27;s Warning: The Next Big Short on Nvidia?",
+            "content": "Renowned investor Michael Burry has publicly expressed concerns over Nvidia, suggesting a potential collapse in its stock value. This comes amid Nvidia&#x27;s skyrocketing growth, driven by its dominance in AI and graphics processing units. Burry, known for his role in predicting the 2008 financial crisis, raises questions about whether his influence could trigger a market reaction. The tech community is divided; some see his warning as a prudent caution, while others view it as a self-fulfilling prophecy. Investors and industry leaders should closely monitor Nvidia&#x27;s financial health and market trends to assess potential risks.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/27/this-thanksgivings-real-drama-may-be-michael-burry-versus-nvidia/"
+        },
+        {
+            "date": "Nov 27 2025",
+            "title": "SAP Advances European AI and Cloud Sovereignty with New Strategy",
+            "content": "SAP has announced the EU AI Cloud, a strategic initiative to enhance European control over AI and cloud services. This approach consolidates previous efforts, offering organizations the flexibility to choose between SAP&#x27;s data centers or trusted third-party providers. The move aligns with the EU&#x27;s push for digital sovereignty, ensuring data compliance and security within European borders. This development is particularly significant for industries handling sensitive data, such as finance and healthcare. Enterprises should evaluate how SAP&#x27;s offerings can align with their sovereignty requirements and consider potential migrations to this new infrastructure.",
             "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/edge-ai-medical-devices-cochlear-implants/"
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/sap-outlines-new-approach-to-european-ai-and-cloud-sovereignty/"
         },
         {
-            "date": "Nov 26 2025",
-            "title": "OpenAI Discloses Mixpanel Security Incident Details",
-            "content": "OpenAI has reported a security incident involving Mixpanel, a third-party analytics service, where limited API analytics data was exposed. Importantly, no API content, user credentials, or payment information was compromised during the breach. The incident underscores the importance of robust third-party data management practices. OpenAI has taken steps to enhance its security protocols and is advising users to remain vigilant about their data privacy. This event highlights the ongoing challenges in safeguarding sensitive information in AI-driven environments.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/mixpanel-incident"
-        },
-        {
-            "date": "Nov 26 2025",
-            "title": "Karpathy&#x27;s &#x27;Vibe Code&#x27; Hack Proposes New AI Orchestration Layer",
-            "content": "Over the weekend, AI expert Andrej Karpathy developed a concept he calls &#x27;vibe code,&#x27; an innovative approach to AI orchestration. This project envisions a collaborative AI reading experience, where multiple AI systems provide diverse perspectives on a text, enhancing comprehension and critique. While still in its infancy, this idea could revolutionize enterprise AI by enabling more dynamic and interactive AI applications. Professionals should watch for further developments, as this concept could influence future AI integration strategies in business environments.",
-            "source": "AI | VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/a-weekend-vibe-code-hack-by-andrej-karpathy-quietly-sketches-the-missing"
-        },
-        {
-            "date": "Nov 26 2025",
-            "title": "Onton Secures $7.5M to Broaden AI Shopping Platform",
-            "content": "Onton, formerly known as Deft, has raised $7.5 million to expand its AI-powered shopping platform beyond the furniture sector. The platform uses AI-driven image generation to create an &#x27;infinite canvas,&#x27; encouraging quicker purchasing decisions by visualizing products in various settings. This funding will enable Onton to enhance its technology and explore new market segments, potentially transforming consumer shopping experiences. Industry stakeholders should consider the implications of AI in e-commerce, as it continues to redefine how consumers interact with products online.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/26/onton-raises-7-5m-to-expand-its-ai-powered-shopping-site-beyond-furniture/"
-        },
-        {
-            "date": "Nov 26 2025",
-            "title": "MIT Technology Review Launches AI Hype Index",
-            "content": "MIT Technology Review has introduced the AI Hype Index, a tool designed to help distinguish between genuine AI advancements and overhyped claims. This index provides a concise overview of the current state of AI, offering insights into which developments hold real promise. The initiative responds to the industry&#x27;s challenge of navigating the vast amount of information and speculation surrounding AI technologies. Professionals can use this index to better assess AI trends and make informed decisions about technology adoption.",
-            "source": "Artificial intelligence – MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2025/11/26/1128353/the-ai-hype-index-the-people-cant-get-enough-of-ai-slop/"
-        },
-        {
-            "date": "Nov 26 2025",
-            "title": "Microsoft Expands Cloud Services to Support Indonesia&#x27;s AI Ambitions",
-            "content": "Microsoft has expanded its cloud services in Indonesia, aligning with the country&#x27;s long-term AI development goals. This expansion provides local organizations with enhanced access to cloud and AI tools, facilitating the creation of custom applications and improving data management. The move supports Indonesia&#x27;s strategic push towards AI-driven economic growth, offering new opportunities for innovation across various sectors. This development is significant for technology leaders in the region, as it opens avenues for collaboration and technological advancement.",
+            "date": "Nov 27 2025",
+            "title": "MCP Specification Update Enhances Security for AI Infrastructure",
+            "content": "The latest update to the MCP (Modular Computing Platform) specification promises enhanced security for enterprise AI infrastructure. Developed by Anthropic, this open-source project aims to address operational challenges in deploying generative AI agents from pilot to production stages. The update includes improvements in authentication protocols and data encryption, critical for protecting sensitive information as AI systems scale. Organizations using MCP should review the revised specifications to ensure their systems adhere to the latest security standards. This update marks a significant step in mitigating risks associated with the rapid deployment of AI technologies.",
             "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/new-microsoft-cloud-updates-support-indonesia-long-term-ai-goals/"
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/how-the-mcp-spec-update-boosts-security-as-infrastructure-scales/"
         },
         {
             "date": "Nov 26 2025",
-            "title": "Black Forest Labs Launches FLUX.2 to Compete in AI Image Generation",
-            "content": "German startup Black Forest Labs has released FLUX.2, an advanced AI image generation and editing system designed to rival established platforms like Nano Banana Pro and Midjourney. FLUX.2 offers innovative features for creating and manipulating images, positioning itself as a formidable competitor in the AI art space. This launch reflects the growing demand for sophisticated AI tools that cater to creative industries. Professionals in the field should explore FLUX.2&#x27;s capabilities, as it may offer unique advantages for digital content creation and design.",
-            "source": "AI | VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/black-forest-labs-launches-flux-2-ai-image-models-to-challenge-nano-banana"
+            "title": "U.S. AI Startups Surpass $100M Funding Milestone in 2025",
+            "content": "In a landmark year for AI innovation, 49 U.S.-based AI startups have each raised over $100 million in 2025, highlighting the sector&#x27;s explosive growth. This surge in funding underscores the increasing demand for AI solutions across various industries, from healthcare to finance. Investors are particularly focused on startups developing advanced machine learning models and automation technologies. The influx of capital is expected to accelerate product development and market entry, intensifying competition. Tech leaders and investors should watch these emerging companies for potential partnerships and investment opportunities that could shape the future of AI.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/26/here-are-the-49-us-ai-startups-that-have-raised-100m-or-more-in-2025/"
+        },
+        {
+            "date": "Nov 26 2025",
+            "title": "OpenAI Defends Against Lawsuit Over ChatGPT-Linked Teen Suicide",
+            "content": "OpenAI has filed a response to a lawsuit accusing the company of wrongful death after a teenager&#x27;s suicide allegedly linked to ChatGPT&#x27;s advice. The parents of the 16-year-old claim the AI-assisted in planning the tragic event, circumventing built-in safety features. OpenAI argues that it cannot be held liable, emphasizing the importance of user responsibility and the complexity of AI interactions. This case raises critical questions about AI ethics and the extent of developer accountability. Legal and tech professionals should closely monitor this case as it could set precedents for future AI-related litigation.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/26/openai-claims-teen-circumvented-safety-features-before-suicide-that-chatgpt-helped-plan/"
+        },
+        {
+            "date": "Nov 26 2025",
+            "title": "Comprehensive Guide to ChatGPT Updates and Features",
+            "content": "TechCrunch has released a detailed timeline of ChatGPT&#x27;s product updates, offering insights into its evolving capabilities. The guide covers significant enhancements, including improvements in natural language processing and expanded language support. These updates aim to refine user interactions and broaden application across industries. As ChatGPT continues to integrate into business operations, understanding its development trajectory is crucial for leveraging its full potential. Developers and tech leaders should familiarize themselves with these changes to optimize their use of ChatGPT in various applications, from customer service to content creation.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/26/chatgpt-everything-to-know-about-the-ai-chatbot/"
+        },
+        {
+            "date": "Nov 26 2025",
+            "title": "Musk&#x27;s xAI to Develop Solar Farm for Sustainable Data Center Power",
+            "content": "Elon Musk&#x27;s AI venture, xAI, is collaborating with a developer to construct a solar farm adjacent to its Memphis data center. Spanning 88 acres, the farm is projected to generate approximately 30 megawatts of electricity, contributing 10% of the data center&#x27;s energy needs. This initiative reflects a growing trend towards sustainable energy solutions in tech infrastructure. By reducing reliance on traditional power sources, xAI aims to lower operational costs and minimize environmental impact. Data center operators and tech companies should consider similar renewable energy projects to enhance sustainability and energy efficiency.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/26/musks-xai-to-build-small-solar-farm-adjacent-to-colossus-data-center/"
         }
     ],
     "articles": {
@@ -242,18 +228,6 @@ var websiteContent = {
         "privacy": "<h2>Privacy Policy</h2><p style='color: var(--text-muted); font-size: 0.9rem; margin-bottom: 2rem;'>Last Updated: November 18, 2025</p><h3>Information We Collect</h3><p>TheHGTech is committed to protecting your privacy. We collect minimal information necessary to provide our services:</p><ul style='margin-left: 1.5rem; margin-bottom: 1.5rem;'><li>Usage data (pages visited, time spent, browser type) via Google Analytics</li><li>Cookies for theme preferences and site functionality</li></ul><h3>Third-Party Services</h3><p>We use the following third-party services that may collect data:</p><ul style='margin-left: 1.5rem; margin-bottom: 1.5rem;'><li><strong>Google Analytics:</strong> For anonymous traffic analysis</li><li><strong>Carbon Ads (via Fullres):</strong> For displaying privacy-friendly advertisements</li></ul><h3>Advertising</h3><p>We display advertisements through Carbon Ads, a privacy-focused ad network. Carbon Ads:</p><ul style='margin-left: 1.5rem; margin-bottom: 1.5rem;'><li>Does NOT use cookies for tracking</li><li>Does NOT collect personal information</li><li>Only uses contextual targeting based on page content</li><li>Serves ads from ethical, vetted technology companies</li></ul><p>Learn more: <a href='https://www.carbonads.net/privacy' target='_blank' rel='noopener noreferrer' style='color: var(--accent);'>Carbon Ads Privacy Policy</a></p><h3>Cookies</h3><p>We use minimal cookies for:</p><ul style='margin-left: 1.5rem; margin-bottom: 1.5rem;'><li>Remembering your dark/light theme preference</li><li>Tracking cookie consent (if accepted)</li></ul><h3>Data Security</h3><p>We implement industry-standard security measures including HTTPS, Content Security Policy (CSP), and HSTS to protect your information.</p><h3>Your Rights</h3><p>You have the right to:</p><ul style='margin-left: 1.5rem; margin-bottom: 1.5rem;'><li>Access any personal data we hold about you</li><li>Request deletion of your data</li><li>Opt-out of analytics by using browser privacy settings</li><li>Use ad blockers to prevent ad display</li></ul><h3>External Links</h3><p>Our site contains links to external websites. We are not responsible for the privacy practices of these sites.</p><h3>Changes to Policy</h3><p>We may update this policy periodically. The 'Last Updated' date will reflect any changes.</p><h3>Contact</h3><p>For privacy concerns, contact us at: <a href='mailto:harish@thehgtech.com' style='color: var(--accent);'>harish@thehgtech.com</a></p>",
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
-    "recentCVEs": [
-        {
-            "cveId": "CVE-2025-61757",
-            "dateAdded": "Nov 21, 2025",
-            "vendor": "Oracle Fusion Middleware",
-            "description": "Oracle Fusion Middleware contains a missing authentication for critical function vulnerability, allowing unauthenticated remote attackers to take over Identity Manager.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61757",
-            "isZeroDay": false
-        }
-    ],
+    "recentCVEs": [],
     "featureCards": []
 };
