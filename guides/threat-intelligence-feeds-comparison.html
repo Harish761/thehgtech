@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Threat Intelligence Feeds Comparison | TheHGTech</title>
+    <meta name="title" content="Threat Intelligence Feeds Comparison | TheHGTech">
+    <meta name="description"
+        content="Compare different threat intelligence feeds and choose the right ones for your organization. Comprehensive guide to free and commercial TI feeds.">
+    <meta name="keywords"
+        content="threat intelligence feeds, TI feeds comparison, OSINT feeds, commercial TI, AlienVault OTX, Abuse.ch, MISP, threat feeds">
+    <meta name="author" content="TheHGTech">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thehgtech.com/guides/threat-intelligence-feeds-comparison.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/guides/threat-intelligence-feeds-comparison.html">
+    <meta property="og:title" content="Threat Intelligence Feeds Comparison">
+    <meta property="og:description"
+        content="Choose the right threat intelligence feeds for your organization with this comprehensive comparison guide.">
+    <meta property="og:image" content="https://thehgtech.com/images/ti-feeds-og.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://thehgtech.com/guides/threat-intelligence-feeds-comparison.html">
+    <meta name="twitter:title" content="Threat Intelligence Feeds Comparison">
+    <meta name="twitter:description" content="Compare and choose the best threat intelligence feeds.">
+    <meta name="twitter:image" content="https://thehgtech.com/images/ti-feeds-twitter.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF4C4C;
+            --accent-green: #00ff88;
+            --glow-cyan: rgba(0, 217, 255, 0.5);
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+            --glass: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Header */
+        header {
+            padding: 3rem 0;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+        }
+
+        .breadcrumb {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .breadcrumb a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .breadcrumb a:hover {
+            color: var(--glow-cyan);
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-red));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .meta {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+
+        /* Content */
+        .content {
+            color: var(--text-secondary);
+            line-height: 1.9;
+        }
+
+        .content h2 {
+            color: var(--accent-cyan);
+            font-size: 1.8rem;
+            margin: 2.5rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .content h3 {
+            color: var(--text-primary);
+            font-size: 1.4rem;
+            margin: 2rem 0 1rem;
+        }
+
+        .content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .content ul,
+        .content ol {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .content li {
+            margin-bottom: 0.8rem;
+        }
+
+        .content strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .content a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        .content a:hover {
+            border-bottom-color: var(--accent-cyan);
+        }
+
+        .content code {
+            background: var(--bg-card);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 0.9em;
+            color: var(--accent-green);
+        }
+
+        .highlight-box {
+            background: rgba(0, 217, 255, 0.05);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .warning-box {
+            background: rgba(255, 76, 76, 0.05);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .success-box {
+            background: rgba(0, 255, 136, 0.05);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: rgba(0, 217, 255, 0.1);
+            color: var(--accent-cyan);
+            font-weight: 600;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .content h2 {
+                font-size: 1.5rem;
+            }
+
+            .meta {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            table {
+                font-size: 0.85rem;
+            }
+
+            th,
+            td {
+                padding: 0.75rem 0.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="breadcrumb">
+                <a href="/">Home</a> / <a href="/guides/">Guides</a> / Threat Intelligence Feeds Comparison
+            </div>
+            <h1>Threat Intelligence Feeds Comparison</h1>
+            <div class="meta">
+                <span>📖 10 min read</span>
+                <span>🎯 Beginner</span>
+                <span>📅 Updated: November 2025</span>
+            </div>
+        </header>
+
+        <div class="content">
+            <p>
+                Choosing the right threat intelligence feeds is crucial for effective security operations. With dozens
+                of free and commercial options available, it can be overwhelming to decide which feeds provide the best
+                value for your organization. This guide compares popular threat intelligence feeds to help you make
+                informed decisions.
+            </p>
+
+            <h2>Free & Open Source Threat Intelligence Feeds</h2>
+
+            <h3>1. AlienVault OTX (Open Threat Exchange)</h3>
+            <table>
+                <tr>
+                    <th>Feature</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td><strong>Type</strong></td>
+                    <td>Community-driven, multi-source IOCs</td>
+                </tr>
+                <tr>
+                    <td><strong>Cost</strong></td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Data Types</strong></td>
+                    <td>IPs, domains, URLs, file hashes, CVEs</td>
+                </tr>
+                <tr>
+                    <td><strong>Update Frequency</strong></td>
+                    <td>Real-time</td>
+                </tr>
+                <tr>
+                    <td><strong>API Access</strong></td>
+                    <td>Yes (free API key required)</td>
+                </tr>
+                <tr>
+                    <td><strong>Best For</strong></td>
+                    <td>General threat intelligence, community insights</td>
+                </tr>
+                <tr>
+                    <td><strong>Pros</strong></td>
+                    <td>Large community, diverse data sources, good API</td>
+                </tr>
+                <tr>
+                    <td><strong>Cons</strong></td>
+                    <td>Variable quality, potential false positives</td>
+                </tr>
+            </table>
+
+            <h3>2. Abuse.ch Feeds</h3>
+            <p>
+                Abuse.ch operates multiple specialized threat feeds:
+            </p>
+            <ul>
+                <li><strong>URLhaus</strong> - Malicious URLs and malware download sites</li>
+                <li><strong>MalwareBazaar</strong> - Malware samples and file hashes</li>
+                <li><strong>ThreatFox</strong> - IOCs associated with malware campaigns</li>
+                <li><strong>Feodo Tracker</strong> - Botnet C2 servers</li>
+                <li><strong>SSL Blacklist</strong> - Malicious SSL certificates</li>
+            </ul>
+
+            <table>
+                <tr>
+                    <th>Feature</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td><strong>Cost</strong></td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Quality</strong></td>
+                    <td>High (curated by security researchers)</td>
+                </tr>
+                <tr>
+                    <td><strong>Update Frequency</strong></td>
+                    <td>Multiple times daily</td>
+                </tr>
+                <tr>
+                    <td><strong>Formats</strong></td>
+                    <td>CSV, JSON, TXT</td>
+                </tr>
+                <tr>
+                    <td><strong>Best For</strong></td>
+                    <td>Malware-focused threat intelligence</td>
+                </tr>
+            </table>
+
+            <h3>3. OpenPhish</h3>
+            <table>
+                <tr>
+                    <th>Feature</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td><strong>Type</strong></td>
+                    <td>Phishing URL feed</td>
+                </tr>
+                <tr>
+                    <td><strong>Cost</strong></td>
+                    <td>Free (premium available)</td>
+                </tr>
+                <tr>
+                    <td><strong>Data Types</strong></td>
+                    <td>Phishing URLs</td>
+                </tr>
+                <tr>
+                    <td><strong>Update Frequency</strong></td>
+                    <td>Hourly</td>
+                </tr>
+                <tr>
+                    <td><strong>Free Tier Limit</strong></td>
+                    <td>Last 48 hours of data</td>
+                </tr>
+                <tr>
+                    <td><strong>Best For</strong></td>
+                    <td>Email security, web filtering</td>
+                </tr>
+            </table>
+
+            <h3>4. CISA KEV (Known Exploited Vulnerabilities)</h3>
+            <table>
+                <tr>
+                    <th>Feature</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td><strong>Type</strong></td>
+                    <td>Actively exploited CVEs</td>
+                </tr>
+                <tr>
+                    <td><strong>Cost</strong></td>
+                    <td>Free (US Government)</td>
+                </tr>
+                <tr>
+                    <td><strong>Update Frequency</strong></td>
+                    <td>Daily</td>
+                </tr>
+                <tr>
+                    <td><strong>Quality</strong></td>
+                    <td>Extremely high</td>
+                </tr>
+                <tr>
+                    <td><strong>Best For</strong></td>
+                    <td>Patch prioritization, vulnerability management</td>
+                </tr>
+            </table>
+
+            <h3>5. Spamhaus</h3>
+            <ul>
+                <li><strong>DROP</strong> - Don't Route Or Peer (hijacked/malicious netblocks)</li>
+                <li><strong>EDROP</strong> - Extended DROP list</li>
+                <li><strong>ASN-DROP</strong> - Malicious ASNs</li>
+            </ul>
+
+            <table>
+                <tr>
+                    <th>Feature</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td><strong>Cost</strong></td>
+                    <td>Free for non-commercial use</td>
+                </tr>
+                <tr>
+                    <td><strong>Best For</strong></td>
+                    <td>Network-level blocking, firewall rules</td>
+                </tr>
+                <tr>
+                    <td><strong>False Positive Rate</strong></td>
+                    <td>Very low</td>
+                </tr>
+            </table>
+
+            <h3>6. MISP (Malware Information Sharing Platform)</h3>
+            <table>
+                <tr>
+                    <th>Feature</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td><strong>Type</strong></td>
+                    <td>Collaborative threat sharing platform</td>
+                </tr>
+                <tr>
+                    <td><strong>Cost</strong></td>
+                    <td>Free (open source)</td>
+                </tr>
+                <tr>
+                    <td><strong>Deployment</strong></td>
+                    <td>Self-hosted or cloud</td>
+                </tr>
+                <tr>
+                    <td><strong>Best For</strong></td>
+                    <td>Organizations wanting to share/receive TI within communities</td>
+                </tr>
+                <tr>
+                    <td><strong>Features</strong></td>
+                    <td>Correlation, enrichment, automation, feeds aggregation</td>
+                </tr>
+            </table>
+
+            <h2>Commercial Threat Intelligence Platforms</h2>
+
+            <h3>1. Recorded Future</h3>
+            <table>
+                <tr>
+                    <th>Feature</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td><strong>Type</strong></td>
+                    <td>Real-time threat intelligence platform</td>
+                </tr>
+                <tr>
+                    <td><strong>Cost</strong></td>
+                    <td>Enterprise pricing (contact sales)</td>
+                </tr>
+                <tr>
+                    <td><strong>Data Sources</strong></td>
+                    <td>1000+ sources (open, dark web, technical)</td>
+                </tr>
+                <tr>
+                    <td><strong>Key Features</strong></td>
+                    <td>AI-powered analysis, risk scoring, predictive intelligence</td>
+                </tr>
+                <tr>
+                    <td><strong>Best For</strong></td>
+                    <td>Large enterprises, advanced threat hunting</td>
+                </tr>
+            </table>
+
+            <h3>2. CrowdStrike Falcon Intelligence</h3>
+            <table>
+                <tr>
+                    <th>Feature</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td><strong>Type</strong></td>
+                    <td>Integrated TI with EDR platform</td>
+                </tr>
+                <tr>
+                    <td><strong>Strength</strong></td>
+                    <td>Adversary intelligence, attribution</td>
+                </tr>
+                <tr>
+                    <td><strong>Key Features</strong></td>
+                    <td>Threat actor profiles, malware analysis, indicators</td>
+                </tr>
+                <tr>
+                    <td><strong>Best For</strong></td>
+                    <td>CrowdStrike customers, APT tracking</td>
+                </tr>
+            </table>
+
+            <h3>3. Anomali ThreatStream</h3>
+            <table>
+                <tr>
+                    <th>Feature</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td><strong>Type</strong></td>
+                    <td>Threat intelligence platform (TIP)</td>
+                </tr>
+                <tr>
+                    <td><strong>Key Features</strong></td>
+                    <td>Feed aggregation, enrichment, SOAR integration</td>
+                </tr>
+                <tr>
+                    <td><strong>Integrations</strong></td>
+                    <td>100+ security tools</td>
+                </tr>
+                <tr>
+                    <td><strong>Best For</strong></td>
+                    <td>Centralizing multiple TI feeds</td>
+                </tr>
+            </table>
+
+            <h3>4. Mandiant Threat Intelligence</h3>
+            <table>
+                <tr>
+                    <th>Feature</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td><strong>Type</strong></td>
+                    <td>Premium threat intelligence (Google Cloud)</td>
+                </tr>
+                <tr>
+                    <td><strong>Strength</strong></td>
+                    <td>Incident response insights, APT research</td>
+                </tr>
+                <tr>
+                    <td><strong>Best For</strong></td>
+                    <td>High-value targets, critical infrastructure</td>
+                </tr>
+            </table>
+
+            <h2>Feed Comparison Matrix</h2>
+
+            <table>
+                <tr>
+                    <th>Feed</th>
+                    <th>Cost</th>
+                    <th>Quality</th>
+                    <th>Volume</th>
+                    <th>Ease of Use</th>
+                    <th>Best Use Case</th>
+                </tr>
+                <tr>
+                    <td>AlienVault OTX</td>
+                    <td>Free</td>
+                    <td>Medium</td>
+                    <td>High</td>
+                    <td>Easy</td>
+                    <td>General purpose</td>
+                </tr>
+                <tr>
+                    <td>Abuse.ch</td>
+                    <td>Free</td>
+                    <td>High</td>
+                    <td>Medium</td>
+                    <td>Easy</td>
+                    <td>Malware focus</td>
+                </tr>
+                <tr>
+                    <td>OpenPhish</td>
+                    <td>Free/Paid</td>
+                    <td>High</td>
+                    <td>Medium</td>
+                    <td>Easy</td>
+                    <td>Phishing detection</td>
+                </tr>
+                <tr>
+                    <td>CISA KEV</td>
+                    <td>Free</td>
+                    <td>Very High</td>
+                    <td>Low</td>
+                    <td>Easy</td>
+                    <td>Vuln management</td>
+                </tr>
+                <tr>
+                    <td>Spamhaus</td>
+                    <td>Free</td>
+                    <td>Very High</td>
+                    <td>Low</td>
+                    <td>Easy</td>
+                    <td>Network blocking</td>
+                </tr>
+                <tr>
+                    <td>MISP</td>
+                    <td>Free</td>
+                    <td>Variable</td>
+                    <td>Variable</td>
+                    <td>Complex</td>
+                    <td>Community sharing</td>
+                </tr>
+                <tr>
+                    <td>Recorded Future</td>
+                    <td>$$$$</td>
+                    <td>Very High</td>
+                    <td>Very High</td>
+                    <td>Medium</td>
+                    <td>Enterprise TI</td>
+                </tr>
+                <tr>
+                    <td>CrowdStrike</td>
+                    <td>$$$</td>
+                    <td>Very High</td>
+                    <td>High</td>
+                    <td>Easy</td>
+                    <td>APT tracking</td>
+                </tr>
+            </table>
+
+            <h2>How to Choose the Right Feeds</h2>
+
+            <h3>1. Define Your Requirements</h3>
+            <ul>
+                <li><strong>Threat landscape</strong> - What threats target your industry?</li>
+                <li><strong>Use cases</strong> - Detection, blocking, hunting, or all three?</li>
+                <li><strong>Integration</strong> - What security tools need TI feeds?</li>
+                <li><strong>Resources</strong> - Do you have analysts to triage alerts?</li>
+                <li><strong>Budget</strong> - Free, commercial, or hybrid approach?</li>
+            </ul>
+
+            <h3>2. Start with Free Feeds</h3>
+            <div class="success-box">
+                <strong>Recommended Starter Pack (Free):</strong>
+                <ul style="margin: 1rem 0 0 0;">
+                    <li>Abuse.ch (URLhaus + ThreatFox) - Malware IOCs</li>
+                    <li>OpenPhish - Phishing URLs</li>
+                    <li>CISA KEV - Vulnerability prioritization</li>
+                    <li>Spamhaus DROP - Network-level blocking</li>
+                </ul>
+            </div>
+
+            <h3>3. Evaluate Feed Quality</h3>
+            <p>
+                Test feeds before full deployment:
+            </p>
+            <ul>
+                <li><strong>False positive rate</strong> - How many alerts are false?</li>
+                <li><strong>Timeliness</strong> - How quickly are new threats added?</li>
+                <li><strong>Coverage</strong> - Does it cover your threat landscape?</li>
+                <li><strong>Actionability</strong> - Can you act on the intelligence?</li>
+                <li><strong>Context</strong> - Does it provide enough detail?</li>
+            </ul>
+
+            <h3>4. Consider Commercial Feeds If...</h3>
+            <ul>
+                <li>You're a high-value target (finance, healthcare, critical infrastructure)</li>
+                <li>You need advanced threat actor intelligence</li>
+                <li>You require 24/7 analyst support</li>
+                <li>You want predictive/proactive intelligence</li>
+                <li>You need industry-specific threat intelligence</li>
+            </ul>
+
+            <h2>Integration Best Practices</h2>
+
+            <h3>1. Use a Threat Intelligence Platform (TIP)</h3>
+            <p>
+                A TIP helps you:
+            </p>
+            <ul>
+                <li>Aggregate multiple feeds in one place</li>
+                <li>Normalize data formats</li>
+                <li>Enrich IOCs with context</li>
+                <li>Distribute intelligence to security tools</li>
+                <li>Track feed performance</li>
+            </ul>
+
+            <h3>2. Implement Confidence Scoring</h3>
+            <p>
+                Not all IOCs are equal. Assign confidence scores based on:
+            </p>
+            <ul>
+                <li>Feed reputation</li>
+                <li>Number of sources reporting the IOC</li>
+                <li>Age of the indicator</li>
+                <li>Historical accuracy</li>
+            </ul>
+
+            <h3>3. Set TTL (Time to Live)</h3>
+            <div class="warning-box">
+                <strong>Important:</strong> IOCs expire! An IP address malicious today might be legitimate tomorrow.
+                Implement TTL to automatically remove stale indicators.
+            </div>
+
+            <h2>Cost Considerations</h2>
+
+            <table>
+                <tr>
+                    <th>Organization Size</th>
+                    <th>Recommended Approach</th>
+                    <th>Estimated Annual Cost</th>
+                </tr>
+                <tr>
+                    <td>Small (< 500 employees)</td>
+                    <td>Free feeds only</td>
+                    <td>$0</td>
+                </tr>
+                <tr>
+                    <td>Medium (500-5000)</td>
+                    <td>Free feeds + 1 commercial</td>
+                    <td>$10K - $50K</td>
+                </tr>
+                <tr>
+                    <td>Large (5000+)</td>
+                    <td>Multiple commercial + free</td>
+                    <td>$100K - $500K+</td>
+                </tr>
+                <tr>
+                    <td>Enterprise/Critical</td>
+                    <td>Premium TI platform</td>
+                    <td>$500K - $2M+</td>
+                </tr>
+            </table>
+
+            <h2>Common Mistakes to Avoid</h2>
+
+            <div class="warning-box">
+                <ul style="margin: 0;">
+                    <li><strong>Feed overload</strong> - More feeds ≠ better security. Quality > quantity</li>
+                    <li><strong>No tuning</strong> - Feeds need tuning for your environment</li>
+                    <li><strong>Ignoring false positives</strong> - High FP rate causes alert fatigue</li>
+                    <li><strong>No deduplication</strong> - Same IOC from multiple feeds wastes resources</li>
+                    <li><strong>Static configuration</strong> - Feeds need regular review and updates</li>
+                </ul>
+            </div>
+
+            <h2>Conclusion</h2>
+            <p>
+                The right threat intelligence feeds depend on your organization's size, industry, budget, and threat
+                landscape. Start with high-quality free feeds, measure their effectiveness, and gradually add commercial
+                feeds if needed. Remember that threat intelligence is only valuable if you can act on it—focus on feeds
+                that integrate well with your security tools and provide actionable intelligence.
+            </p>
+
+            <div class="highlight-box">
+                <strong>Next Steps:</strong> Check out our <a href="/guides/threat-intelligence-soc.html">Threat
+                    Intelligence for SOC Analysts</a> guide to learn how to operationalize these feeds in your security
+                operations.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
