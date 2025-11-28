@@ -1,6 +1,6 @@
 {
   "vendor": "Feodo Tracker",
-  "lastUpdated": "2025-11-28T18:19:35.237040+05:30",
+  "lastUpdated": "2025-11-28T19:53:41.548934+05:30",
   "totalCount": 4,
   "displayedCount": 4,
   "isCapped": false,
@@ -13,13 +13,13 @@
       "timestamp": "just now",
       "source": "Feodo Tracker",
       "sourceUrl": "https://feodotracker.abuse.ch/",
-      "analysisTime": "2025-11-28 18:19 IST",
+      "analysisTime": "2025-11-28 19:53 IST",
       "tags": [
         "botnet",
         "c2",
         "banking-trojan"
       ],
-      "addedAt": "2025-11-28T18:19:32.029894+05:30",
+      "addedAt": "2025-11-28T19:53:38.613451+05:30",
       "campaign": "Banking Malware C2"
     },
     {
@@ -29,13 +29,13 @@
       "timestamp": "just now",
       "source": "Feodo Tracker",
       "sourceUrl": "https://feodotracker.abuse.ch/",
-      "analysisTime": "2025-11-28 18:19 IST",
+      "analysisTime": "2025-11-28 19:53 IST",
       "tags": [
         "botnet",
         "c2",
         "banking-trojan"
       ],
-      "addedAt": "2025-11-28T18:19:32.029894+05:30",
+      "addedAt": "2025-11-28T19:53:38.613451+05:30",
       "campaign": "Banking Malware C2"
     },
     {
@@ -45,13 +45,13 @@
       "timestamp": "just now",
       "source": "Feodo Tracker",
       "sourceUrl": "https://feodotracker.abuse.ch/",
-      "analysisTime": "2025-11-28 18:19 IST",
+      "analysisTime": "2025-11-28 19:53 IST",
       "tags": [
         "botnet",
         "c2",
         "banking-trojan"
       ],
-      "addedAt": "2025-11-28T18:19:32.029894+05:30",
+      "addedAt": "2025-11-28T19:53:38.613451+05:30",
       "campaign": "Banking Malware C2"
     },
     {
@@ -61,13 +61,13 @@
       "timestamp": "just now",
       "source": "Feodo Tracker",
       "sourceUrl": "https://feodotracker.abuse.ch/",
-      "analysisTime": "2025-11-28 18:19 IST",
+      "analysisTime": "2025-11-28 19:53 IST",
       "tags": [
         "botnet",
         "c2",
         "banking-trojan"
       ],
-      "addedAt": "2025-11-28T18:19:32.029894+05:30",
+      "addedAt": "2025-11-28T19:53:38.613451+05:30",
       "campaign": "Banking Malware C2"
     }
   ]
