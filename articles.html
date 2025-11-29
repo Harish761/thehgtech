@@ -568,33 +568,220 @@
         // Initialize
         loadArticles();
 
-        // Make openArticleModal available globally (from article-modal.js)
+        // Make openArticleModal open article in full-page view (like guides)
         window.openArticleModal = function (articleId) {
-            // This will be handled by article-modal.js
-            // We need to make articles data available
-            if (typeof window.openArticle === 'function') {
-                window.openArticle(articleId);
-            } else {
-                // Fallback: convert articles array to object format
-                const articlesObj = {};
-                allArticles.forEach(article => {
-                    articlesObj[article.id] = article;
-                });
+            const article = allArticles.find(a => a.id === articleId);
+            if (!article) {
+                console.error('Article not found:', articleId);
+                return;
+            }
 
-                // Create modal manually if needed
-                const article = articlesObj[articleId];
-                if (article) {
-                    const modal = document.createElement('div');
-                    modal.className = 'article-modal';
-                    modal.innerHTML = `
-                        <div class="article-modal-content">
-                            <button class="article-modal-close" onclick="this.parentElement.parentElement.remove()">×</button>
-                            ${article.content}
-                        </div>
-                    `;
-                    document.body.appendChild(modal);
-                    modal.style.display = 'flex';
-                }
+            // Calculate reading time (average 200 words per minute)
+            const wordCount = article.content.replace(/<[^>]*>/g, '').split(/\s+/).length;
+            const readingTime = Math.ceil(wordCount / 200);
+
+            // Create full-page article view
+            const articlePage = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>${article.title} | TheHGTech</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF4C4C;
+            --glow-cyan: rgba(0, 217, 255, 0.5);
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+            --glass: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+        }
+
+        .breadcrumb {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .breadcrumb a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .breadcrumb a:hover {
+            color: var(--glow-cyan);
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 3rem;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-red));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .meta {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .content h2 {
+            color: var(--accent-cyan);
+            font-size: 2rem;
+            margin: 3rem 0 1rem;
+        }
+
+        .content h3 {
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem;
+        }
+
+        .content p {
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        .content ul,
+        .content ol {
+            margin: 1.5rem 0 1.5rem 2rem;
+            color: var(--text-secondary);
+        }
+
+        .content li {
+            margin-bottom: 0.75rem;
+        }
+
+        .content strong {
+            color: var(--text-primary);
+        }
+
+        .content a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            border-bottom: 1px solid rgba(0, 217, 255, 0.3);
+            transition: all 0.2s;
+        }
+
+        .content a:hover {
+            color: var(--glow-cyan);
+            border-bottom-color: var(--accent-cyan);
+            text-shadow: 0 0 8px rgba(0, 217, 255, 0.3);
+        }
+
+        .info-box {
+            background: var(--glass);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+        }
+
+        .category-badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: rgba(0, 217, 255, 0.1);
+            color: var(--accent-cyan);
+            border: 1px solid rgba(0, 217, 255, 0.3);
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .content h2 {
+                font-size: 1.5rem;
+            }
+
+            .content h3 {
+                font-size: 1.2rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / <a href="articles.html">Articles</a> / ${article.category}
+            </div>
+            <div class="category-badge">${article.category}</div>
+            <h1>${article.title}</h1>
+            <div class="meta">
+                Published: ${article.date} | Reading time: ${readingTime} minute${readingTime !== 1 ? 's' : ''} | Author: ${article.author || 'Harish G'}
+            </div>
+        </header>
+
+        <article class="content">
+            ${article.content}
+        </article>
+    </div>
+</body>
+</html>
+            `;
+
+            // Open in new window/tab
+            const newWindow = window.open('', '_blank');
+            if (newWindow) {
+                newWindow.document.write(articlePage);
+                newWindow.document.close();
+            } else {
+                alert('Please allow popups to view articles');
             }
         };
     </script>
