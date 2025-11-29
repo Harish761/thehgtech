@@ -610,6 +610,7 @@
     <title>${article.title} | TheHGTech</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="header.css">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         :root {
@@ -633,7 +634,7 @@
             font-size: 18px;
         }
         .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
-        header { padding: 2rem 0; border-bottom: 1px solid var(--border); margin-bottom: 3rem; }
+        .page-header { padding: 2rem 0; border-bottom: 1px solid var(--border); margin-bottom: 3rem; margin-top: 60px; }
         .breadcrumb { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem; }
         .breadcrumb a { color: var(--accent-cyan); text-decoration: none; transition: color 0.2s; }
         .breadcrumb a:hover { color: var(--glow-cyan); text-decoration: underline; }
@@ -722,8 +723,64 @@
     </style>
 </head>
 <body>
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="logo.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+
+            <nav class="nav" role="navigation">
+                <a href="index.html#news">News</a>
+                <a href="threat-intel.html">Threat Intelligence <span class="live-badge">LIVE</span></a>
+                <a href="index.html#cve">CVE</a>
+                <a href="guides/">Guides</a>
+                <a href="comparisons/">Tool Comparisons</a>
+                <a href="articles.html">Articles</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#contact">Contact</a>
+                
+                <div class="theme-toggle-wrapper">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                        <div class="toggle-icon sun">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <div class="toggle-icon moon">
+                            <i class="fas fa-moon"></i>
+                        </div>
+                    </button>
+                </div>
+            </nav>
+
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-theme-toggle" id="mobileThemeToggle">
+            <i class="fas fa-adjust"></i> Switch Theme
+        </div>
+        <a href="index.html#news">News</a>
+        <a href="threat-intel.html">Threat Intelligence</a>
+        <a href="index.html#cve">CVE</a>
+        <a href="guides/">Guides</a>
+        <a href="comparisons/">Tool Comparisons</a>
+        <a href="articles.html">Articles</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+    </div>
+
     <div class="container">
-        <header>
+        <div class="page-header">
             <div class="breadcrumb">
                 <a href="articles.html">Articles</a> / ${article.category}
             </div>
@@ -732,7 +789,7 @@
             <div class="meta">
                 Published: ${article.date} | Reading time: ${readingTime} minute${readingTime !== 1 ? 's' : ''} | Author: ${article.author || 'Harish G'}
             </div>
-        </header>
+        </div>
 
         <article class="content">
             ${cleanContent}
@@ -759,6 +816,54 @@
     </div>
 
     <script>
+        // Header Functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            // Theme Toggle
+            const themeToggle = document.getElementById('themeToggle');
+            const mobileThemeToggle = document.getElementById('mobileThemeToggle');
+            const body = document.body;
+            
+            // Check local storage
+            if (localStorage.getItem('theme') === 'light') {
+                body.classList.add('light-mode');
+            }
+
+            function toggleTheme() {
+                body.classList.toggle('light-mode');
+                if (body.classList.contains('light-mode')) {
+                    localStorage.setItem('theme', 'light');
+                } else {
+                    localStorage.setItem('theme', 'dark');
+                }
+            }
+
+            if (themeToggle) themeToggle.addEventListener('click', toggleTheme);
+            if (mobileThemeToggle) mobileThemeToggle.addEventListener('click', toggleTheme);
+
+            // Mobile Menu
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('active');
+                    mobileMenuBtn.classList.toggle('active');
+                    
+                    // Animate hamburger
+                    const spans = mobileMenuBtn.querySelectorAll('span');
+                    if (mobileMenu.classList.contains('active')) {
+                        spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+                        spans[1].style.opacity = '0';
+                        spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
+                    } else {
+                        spans[0].style.transform = 'none';
+                        spans[1].style.opacity = '1';
+                        spans[2].style.transform = 'none';
+                    }
+                });
+            }
+        });
+
         // Like Functionality
         const articleId = "${article.id}";
         const likeBtn = document.getElementById('likeBtn');
