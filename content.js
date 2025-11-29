@@ -5,110 +5,103 @@ var websiteContent = {
     "cyberShorts": [
         {
             "date": "Nov 28 2025",
-            "title": "Understanding CVSS v4.0: Enhancements in Vulnerability Scoring",
-            "content": "The Common Vulnerability Scoring System (CVSS) has been updated to version 4.0, introducing significant changes in how vulnerabilities are characterized and scored. This update aims to improve the precision and consistency of vulnerability assessments across diverse IT environments. CVSS v4.0 includes new metrics and scoring adjustments that provide a more nuanced view of potential impacts and exploitability. Organizations relying on vulnerability management tools should ensure compatibility with this latest version to maintain accurate risk assessments. The update reflects a broader trend towards more dynamic and context-aware security frameworks, essential for managing modern threat landscapes.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2025/11/how-cvss-v4-0-works-characterizing-and-scoring-vulnerabilities"
+            "title": "Man Sentenced for In-Flight Evil Twin WiFi Attacks in Australia",
+            "content": "A 44-year-old man has been sentenced to seven years and four months in prison for orchestrating &quot;evil twin&quot; WiFi attacks at airports across Australia. These attacks involved creating fake WiFi networks to intercept and steal data from unsuspecting travelers. The perpetrator targeted various airports, exploiting the public&#x27;s need for internet access while traveling. This case underscores the ongoing risk of public WiFi networks being used for malicious activities. Travelers are advised to use VPNs and avoid accessing sensitive information on public networks to protect against such threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/man-behind-in-flight-evil-twin-wifi-attacks-gets-7-years-in-prison/"
         },
         {
             "date": "Nov 28 2025",
-            "title": "RomCom Targets Ukraine-Linked US Firms with Malicious Software Updates",
-            "content": "The Russia-aligned RomCom group has launched a campaign against US firms involved in Ukraine-support projects by deploying fake software updates to install the Mythic Agent malware. Arctic Wolf Labs first detected this activity in September 2025, targeting a US engineering firm. The Mythic Agent is used for espionage, data exfiltration, and disruption, posing a severe threat to affected organizations. This attack underscores the persistent risk of state-sponsored cyber operations amid geopolitical tensions. Companies engaged in international projects should bolster their defenses, particularly around software supply chains and update mechanisms.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4097944/romcom-tries-dropping-a-not-so-romantic-payload-on-ukraine-linked-us-firms.html"
+            "title": "Windows 11 Updates Hide Password Login Option",
+            "content": "Microsoft has alerted users that recent Windows 11 updates may cause the password sign-in option to become invisible on the lock screen, though it remains functional. This issue has been affecting users since updates released in August, potentially causing confusion and access issues. The problem does not affect other sign-in methods such as PIN or biometric authentication. Users are advised to ensure their systems are fully updated and to utilize alternative login methods if needed. Microsoft is working on a fix to resolve the visibility issue in upcoming updates.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-updates-hide-password-icon-on-lock-screen/"
         },
         {
             "date": "Nov 28 2025",
-            "title": "Rise of Remote Privileged Access Management Amid Hybrid Work Trends",
-            "content": "As hybrid and remote work environments become standard, organizations are increasingly adopting Remote Privileged Access Management (RPAM) solutions. Traditional perimeter-based security models and on-premises Privileged Access Management (PAM) systems are proving inadequate for distributed IT infrastructures. RPAM offers secure, scalable access controls for IT administrators, contractors, and third-party vendors, mitigating risks associated with remote access. This shift reflects a broader move towards zero-trust architectures, emphasizing the need for robust identity and access management strategies. Companies should evaluate their current access controls to ensure they meet the demands of modern work environments.",
+            "title": "Over 17,000 Secrets Found in Public GitLab Repositories",
+            "content": "A security engineer has discovered more than 17,000 exposed secrets across 5.6 million public repositories on GitLab Cloud. These secrets, which include API keys and credentials, were found across over 2,800 unique domains. Such exposure poses significant security risks, potentially allowing unauthorized access to sensitive systems and data. This incident highlights the critical need for developers to implement secret management practices and regularly audit their code for exposed credentials. Organizations should consider using automated tools to detect and remediate such vulnerabilities.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/public-gitlab-repositories-exposed-more-than-17-000-secrets/"
+        },
+        {
+            "date": "Nov 28 2025",
+            "title": "Vulnerable Python Scripts Pose Domain-Takeover Risk on PyPI",
+            "content": "Cybersecurity researchers have identified legacy Python bootstrap scripts that could allow attackers to perform domain takeover attacks on the Python Package Index (PyPI). The vulnerable code, found in several outdated packages, could lead to a supply chain compromise if exploited. ReversingLabs, a software supply chain security company, reported these findings, emphasizing the need for developers to update and secure their packages. This discovery underscores the importance of maintaining current versions and monitoring dependencies for vulnerabilities to protect against potential threats.",
             "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/11/why-organizations-are-turning-to-rpam.html"
+            "sourceUrl": "https://thehackernews.com/2025/11/legacy-python-bootstrap-scripts-create.html"
         },
         {
             "date": "Nov 28 2025",
-            "title": "Key Cybersecurity Developments: HashJack Attack and More",
-            "content": "Recent cybersecurity incidents include the HashJack AI Browser Attack, a Charming Kitten data leak, and the unmasking of a hacker, alongside legal actions such as TP-Link&#x27;s lawsuit against Netgear. These events highlight ongoing challenges in cybersecurity, from AI-driven threats to insider risks and corporate disputes. The HashJack attack, in particular, demonstrates the evolving tactics of cybercriminals leveraging AI to exploit browser vulnerabilities. Organizations should remain vigilant, updating their security protocols and staying informed about emerging threats. Legal and regulatory developments also underscore the importance of compliance and proactive risk management.",
+            "title": "North Korean Hackers Use npm Packages to Spread Malware",
+            "content": "North Korean threat actors have deployed 197 malicious npm packages to distribute an updated version of the OtterCookie malware. These packages, linked to the Contagious Interview campaign, have been downloaded over 31,000 times. The malware is designed to steal sensitive data and compromise systems, posing a significant threat to developers and organizations using npm. Security firm Socket has highlighted the need for vigilance when integrating third-party packages. Developers should verify the integrity of packages and consider using security tools to detect malicious code within their software supply chains.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/11/north-korean-hackers-deploy-197-npm.html"
+        },
+        {
+            "date": "Nov 28 2025",
+            "title": "French Football Federation Reveals Data Breach",
+            "content": "The French Football Federation (FFF) has disclosed a data breach following a cyberattack that exploited a compromised account to access administrative management software. This breach potentially exposed sensitive data related to football clubs and their operations. The FFF has begun an investigation and is working to enhance its cybersecurity measures to prevent future incidents. This attack highlights the vulnerabilities within sports organizations and the need for robust security protocols. Affected parties are advised to monitor their accounts for suspicious activity and update their security practices.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/french-football-federation-fff-discloses-data-breach-after-cyberattack/"
+        },
+        {
+            "date": "Nov 28 2025",
+            "title": "Cyberattack on French Soccer Federation Exposes Member Data",
+            "content": "The French Soccer Federation has confirmed a cyberattack that led to unauthorized access to member data through a compromised account. This incident has raised concerns about data security within sports organizations. The federation is currently assessing the extent of the breach and implementing measures to safeguard its systems. This attack serves as a reminder of the importance of securing access credentials and monitoring for unauthorized activities. Members are encouraged to stay vigilant and review their personal security settings to mitigate potential risks.",
             "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/in-other-news-hashjack-ai-browser-attack-charming-kitten-leak-hacker-unmasked/"
-        },
-        {
-            "date": "Nov 28 2025",
-            "title": "Scattered Lapsus$ Hunters Exploit Fake Domains to Target Zendesk Users",
-            "content": "The cybercrime group Scattered Lapsus$ Hunters has been using over 40 fake domains to target Zendesk users, aiming to steal credentials and deploy malware. These domains mimic legitimate services, a tactic previously seen in their August attack on Salesforce users. This campaign highlights the persistent threat of phishing and social engineering attacks, particularly against SaaS platforms. Affected users face risks of data breaches and unauthorized access. Organizations should enhance their phishing defenses and educate employees on recognizing suspicious domains and communications to mitigate these threats effectively.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4097846/scattered-lapsus-hunters-target-zendesk-users-with-fake-domains.html"
-        },
-        {
-            "date": "Nov 28 2025",
-            "title": "Leveraging Multicloud Strategies for Enhanced Enterprise Agility",
-            "content": "The December 2025 issue of the Enterprise Spotlight focuses on optimizing multicloud environments for improved business agility and resilience. As organizations increasingly adopt multicloud strategies, they face challenges in managing diverse platforms and ensuring seamless integration. The issue covers best practices for leveraging multicloud solutions to enhance flexibility, reduce vendor lock-in, and improve disaster recovery capabilities. IT leaders should consider these insights to maximize the benefits of multicloud deployments, aligning their cloud strategies with business objectives and technological advancements.",
-            "source": "CSO Online",
-            "sourceUrl": "https://us.resources.csoonline.com/resources/form?placement_id=7f710e0d-983c-4952-b7e2-d5221eb5d1a6&brand_id=32&locale_id=1"
-        },
-        {
-            "date": "Nov 28 2025",
-            "title": "Microsoft Teams Guest Access Reveals Security Gap in Defender Protection",
-            "content": "Researchers have identified a vulnerability in Microsoft Teams&#x27; guest access feature that allows attackers to bypass Microsoft Defender for Office 365 protections. When users join external tenants as guests, their security settings are dictated by the host organization, potentially leaving them exposed to threats. This cross-tenant blind spot could be exploited for data breaches or malware distribution. Organizations using Microsoft Teams should review their guest access policies and consider additional security measures to protect against this vulnerability. This finding highlights the need for comprehensive security strategies that account for cross-tenant interactions.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/11/ms-teams-guest-access-can-remove.html"
-        },
-        {
-            "date": "Nov 28 2025",
-            "title": "Security Flaws Found in Google Antigravity Tool for AI Development",
-            "content": "Security researchers have identified vulnerabilities in Google’s Antigravity, a tool for developing artificial intelligence agents. Released just 11 days ago, Antigravity&#x27;s known issues page has already been updated to reflect these findings. The vulnerabilities could allow unauthorized access or manipulation of AI models, posing significant risks to developers using the tool. This discovery underscores the challenges in securing new AI development platforms, especially those rapidly adopted in the tech community. Developers are urged to review the updated documentation and apply recommended security measures promptly to mitigate potential risks.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4097698/security-researchers-caution-app-developers-about-risks-in-using-google-antigravity.html"
+            "sourceUrl": "https://www.securityweek.com/french-soccer-federation-hit-by-cyberattack-member-data-stolen/"
         }
     ],
     "aiShorts": [
         {
             "date": "Nov 28 2025",
-            "title": "Backend AI Systems Drive Operational Resilience and ROI",
-            "content": "Enterprise leaders often focus on customer-facing AI tools like chatbots, but the real value lies in backend AI systems enhancing operational resilience. These systems, operating quietly behind the scenes, optimize supply chains, manage data flows, and improve predictive maintenance. By integrating AI into core processes, companies can significantly increase efficiency and reduce downtime, leading to a visible return on investment. This trend underscores the importance of not only implementing AI but strategically deploying it where it can have the most substantial impact. Organizations should assess their backend operations for AI integration opportunities to maximize performance and cost savings.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/how-background-ai-builds-operational-resilience-visible-roi/"
-        },
-        {
-            "date": "Nov 27 2025",
-            "title": "Cochlear&#x27;s Edge AI Implant Revolutionizes Hearing Aids",
-            "content": "Cochlear has unveiled the Nucleus Nexa System, the first cochlear implant capable of running machine learning algorithms internally. This breakthrough allows the device to adapt to the user&#x27;s auditory environment in real-time while managing extreme power constraints. The system can store personalized hearing profiles, enhancing user experience and device efficiency. This innovation represents a significant leap in medical devices, moving beyond external wearables to implants that offer sophisticated, personalized care. Healthcare professionals should consider the potential of such devices to transform treatment plans for patients with hearing impairments.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/edge-ai-medical-devices-cochlear-implants/"
-        },
-        {
-            "date": "Nov 26 2025",
-            "title": "Mixpanel Security Incident: OpenAI Users Reassured",
-            "content": "OpenAI has disclosed a security incident involving Mixpanel, where limited API analytics data was potentially exposed. Importantly, no API content, credentials, or payment information were compromised. This incident highlights the ongoing challenges in securing data analytics platforms. OpenAI has taken steps to enhance its security posture, ensuring user data remains protected. Users are advised to remain vigilant and review any unusual activity in their accounts. This event serves as a reminder of the importance of robust security measures in safeguarding sensitive information.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/mixpanel-incident"
-        },
-        {
-            "date": "Nov 26 2025",
-            "title": "MyHair AI Offers New Hope for Hair Loss Diagnosis",
-            "content": "MyHair AI has developed an innovative tool that examines scalp photos to diagnose hair loss and recommend scientifically validated treatments. The AI analyzes images to identify patterns of thinning or balding, providing users with personalized treatment options and clinic recommendations. This tool leverages advanced image recognition algorithms to offer precise assessments, potentially transforming the approach to hair loss treatment. Individuals concerned about hair loss can use this AI to gain insights into their condition and explore effective solutions. As AI continues to advance in healthcare, such applications are poised to enhance diagnostic accuracy and patient outcomes.",
+            "title": "Supabase Reaches $5B Valuation by Rejecting Lucrative Contracts",
+            "content": "Supabase, an open-source database platform, has reached a $5 billion valuation by strategically turning down million-dollar contracts to focus on its core mission. The company, which supports the burgeoning trend of &quot;vibe coding,&quot; has become a preferred backend choice for developers seeking robust infrastructure solutions. By prioritizing sustainable growth over short-term gains, Supabase has positioned itself as a key player in the tech industry. This decision reflects a broader trend among startups prioritizing long-term value creation. Developers and tech companies should note Supabase&#x27;s approach as a case study in strategic business development.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/26/are-you-balding-theres-an-ai-for-that/"
+            "sourceUrl": "https://techcrunch.com/video/supabase-hit-5b-by-turning-down-million-dollar-contracts-heres-why/"
         },
         {
-            "date": "Nov 26 2025",
-            "title": "Karpathy&#x27;s &#x27;Vibe Code&#x27; Hack Explores AI Orchestration",
-            "content": "Andrej Karpathy, a prominent AI expert, has introduced a novel concept called &#x27;vibe code&#x27; during a weekend hackathon. This approach involves using multiple AI models to provide diverse perspectives on a single task, such as reading a book. The experiment aimed to explore how AI can collaboratively enhance understanding and decision-making processes. Such orchestration could be pivotal in enterprise environments, where integrating various AI insights can lead to more informed strategies. Professionals should consider how multi-model AI systems could be applied to complex problem-solving scenarios in their organizations.",
+            "date": "Nov 28 2025",
+            "title": "Anthropic Tackles AI Agent Memory with New Claude SDK",
+            "content": "Anthropic has introduced a solution to the persistent issue of AI agent memory with its new multi-session Claude SDK. This development addresses the problem of agents forgetting instructions or conversations over time by implementing a two-fold solution that enhances continuity across different context windows. The improvement is significant for enterprises relying on AI agents for extended interactions, as it enhances reliability and efficiency. This advancement marks a crucial step in refining AI agent capabilities, offering a more seamless experience for users. Companies utilizing AI agents should consider integrating this SDK to optimize their operations.",
             "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/a-weekend-vibe-code-hack-by-andrej-karpathy-quietly-sketches-the-missing"
+            "sourceUrl": "https://venturebeat.com/ai/anthropic-says-it-solved-the-long-running-ai-agent-problem-with-a-new-multi"
         },
         {
-            "date": "Nov 26 2025",
-            "title": "Onton Secures $7.5M to Expand AI Shopping Platform",
-            "content": "Onton, formerly known as Deft, has raised $7.5 million to expand its AI-powered shopping platform beyond furniture. The platform uses AI-generated imagery to create an &#x27;infinite canvas&#x27; that helps users visualize products in their spaces, enhancing decision-making. This funding will support Onton&#x27;s efforts to broaden its product offerings and improve user experience. As e-commerce continues to grow, AI-driven visualization tools are becoming essential for retailers looking to engage customers effectively. Businesses should explore integrating similar technologies to stay competitive in the evolving digital marketplace.",
+            "date": "Nov 28 2025",
+            "title": "Supabase CEO Discusses Strategic Decisions Behind $5B Success",
+            "content": "Supabase&#x27;s CEO has opened up about the &quot;painful&quot; choices that helped the company achieve a $5 billion valuation, highlighting the importance of strategic focus in the rapidly evolving tech landscape. As the open-source database platform gains traction among developers engaged in &quot;vibe coding,&quot; the company has prioritized long-term growth over immediate financial gains. This approach underscores a broader industry shift towards sustainable business practices. The success of Supabase serves as a model for startups aiming to balance innovation with financial stability. Industry leaders should take note of these insights for strategic planning.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/26/onton-raises-7-5m-to-expand-its-ai-powered-shopping-site-beyond-furniture/"
+            "sourceUrl": "https://techcrunch.com/podcast/supabase-ceo-on-the-painful-decisions-that-built-a-5b-company/"
         },
         {
-            "date": "Nov 26 2025",
-            "title": "New AI Hype Index Aims to Demystify Industry Trends",
-            "content": "MIT Technology Review has launched the AI Hype Index, a tool designed to help professionals differentiate between AI reality and exaggerated claims. This index provides a concise overview of current AI developments, offering insights into what is genuinely transformative versus what is overhyped. The initiative responds to growing confusion in the market as AI technologies proliferate. By providing a clear, evidence-based analysis, the index aims to guide decision-makers in making informed investments and strategic choices. As AI continues to evolve rapidly, staying informed about its true capabilities is crucial for industry leaders.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2025/11/26/1128353/the-ai-hype-index-the-people-cant-get-enough-of-ai-slop/"
+            "date": "Nov 28 2025",
+            "title": "Reflecting on AI&#x27;s Transformative Year in 2025",
+            "content": "As 2025 draws to a close, the AI industry reflects on a year marked by rapid advancements and groundbreaking developments. The pace of innovation has been relentless, with new models and frameworks emerging weekly, transforming the landscape of artificial intelligence. This year has seen AI technologies become more integrated into everyday applications, offering unprecedented capabilities. Professionals in the field should stay informed about these developments to leverage new opportunities. The continuous evolution of AI underscores the need for ongoing education and adaptation in this dynamic sector.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/ai/what-to-be-thankful-for-in-ai-in-2025"
+        },
+        {
+            "date": "Nov 28 2025",
+            "title": "AI&#x27;s Impact on Modern Go-to-Market Strategies Explored",
+            "content": "OpenAI and Google have shared insights on how AI is reshaping go-to-market strategies for startups and investors. At TechCrunch Disrupt, experts discussed the transformative role of AI in market analysis, customer engagement, and product development. The integration of AI tools enables more precise targeting and efficient resource allocation, offering competitive advantages. This shift highlights the necessity for companies to adopt AI-driven strategies to remain relevant in the market. Business leaders should consider these insights to refine their approaches and capitalize on AI&#x27;s potential.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/28/how-openai-and-google-see-ai-changing-go-to-market-strategies/"
+        },
+        {
+            "date": "Nov 28 2025",
+            "title": "Federal vs State Tensions Rise Over AI Regulation",
+            "content": "The debate over AI regulation has intensified into a showdown between federal and state authorities, with implications for consumers and businesses alike. The core issue revolves around who will set the rules governing AI technologies, impacting everything from privacy to innovation. This regulatory tug-of-war highlights the complexities of governing rapidly advancing technologies and the need for coherent policies. Stakeholders in the tech industry should closely monitor these developments, as the outcomes will shape the future regulatory landscape. Companies may need to prepare for varying compliance requirements depending on jurisdiction.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/28/the-race-to-regulate-ai-has-sparked-a-federal-vs-state-showdown/"
+        },
+        {
+            "date": "Nov 28 2025",
+            "title": "New RL Framework Advances Training for Complex LLM Tasks",
+            "content": "Researchers at the University of Science and Technology of China have developed Agent-R1, a new reinforcement learning framework designed to train large language models (LLMs) for complex real-world tasks. Unlike traditional models focused on well-defined problems like math and coding, Agent-R1 extends capabilities to more nuanced applications. This framework is compatible with popular LLMs, enhancing their utility in diverse environments. The development represents a significant step forward in AI training methodologies, offering potential for more adaptive and intelligent agents. AI researchers and developers should explore Agent-R1&#x27;s capabilities to enhance their projects.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/ai/beyond-math-and-coding-new-rl-framework-helps-train-llm-agents-for-complex"
         }
     ],
     "articles": {
@@ -235,6 +228,18 @@ var websiteContent = {
         "privacy": "<h2>Privacy Policy</h2><p style='color: var(--text-muted); font-size: 0.9rem; margin-bottom: 2rem;'>Last Updated: November 18, 2025</p><h3>Information We Collect</h3><p>TheHGTech is committed to protecting your privacy. We collect minimal information necessary to provide our services:</p><ul style='margin-left: 1.5rem; margin-bottom: 1.5rem;'><li>Usage data (pages visited, time spent, browser type) via Google Analytics</li><li>Cookies for theme preferences and site functionality</li></ul><h3>Third-Party Services</h3><p>We use the following third-party services that may collect data:</p><ul style='margin-left: 1.5rem; margin-bottom: 1.5rem;'><li><strong>Google Analytics:</strong> For anonymous traffic analysis</li><li><strong>Carbon Ads (via Fullres):</strong> For displaying privacy-friendly advertisements</li></ul><h3>Advertising</h3><p>We display advertisements through Carbon Ads, a privacy-focused ad network. Carbon Ads:</p><ul style='margin-left: 1.5rem; margin-bottom: 1.5rem;'><li>Does NOT use cookies for tracking</li><li>Does NOT collect personal information</li><li>Only uses contextual targeting based on page content</li><li>Serves ads from ethical, vetted technology companies</li></ul><p>Learn more: <a href='https://www.carbonads.net/privacy' target='_blank' rel='noopener noreferrer' style='color: var(--accent);'>Carbon Ads Privacy Policy</a></p><h3>Cookies</h3><p>We use minimal cookies for:</p><ul style='margin-left: 1.5rem; margin-bottom: 1.5rem;'><li>Remembering your dark/light theme preference</li><li>Tracking cookie consent (if accepted)</li></ul><h3>Data Security</h3><p>We implement industry-standard security measures including HTTPS, Content Security Policy (CSP), and HSTS to protect your information.</p><h3>Your Rights</h3><p>You have the right to:</p><ul style='margin-left: 1.5rem; margin-bottom: 1.5rem;'><li>Access any personal data we hold about you</li><li>Request deletion of your data</li><li>Opt-out of analytics by using browser privacy settings</li><li>Use ad blockers to prevent ad display</li></ul><h3>External Links</h3><p>Our site contains links to external websites. We are not responsible for the privacy practices of these sites.</p><h3>Changes to Policy</h3><p>We may update this policy periodically. The 'Last Updated' date will reflect any changes.</p><h3>Contact</h3><p>For privacy concerns, contact us at: <a href='mailto:harish@thehgtech.com' style='color: var(--accent);'>harish@thehgtech.com</a></p>",
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
-    "recentCVEs": [],
+    "recentCVEs": [
+        {
+            "cveId": "CVE-2021-26829",
+            "dateAdded": "Nov 28, 2025",
+            "vendor": "OpenPLC ScadaBR",
+            "description": "OpenPLC ScadaBR contains a cross-site scripting vulnerability via system_settings.shtm.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-26829",
+            "isZeroDay": false
+        }
+    ],
     "featureCards": []
 };
