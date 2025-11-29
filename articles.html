@@ -472,8 +472,24 @@
                 const data = await response.json();
                 allArticles = data.articles;
                 filteredArticles = [...allArticles];
-                renderArticles();
-                updateResultsCount();
+
+                // Check for Article ID in URL
+                const urlParams = new URLSearchParams(window.location.search);
+                const articleId = urlParams.get('id');
+
+                if (articleId) {
+                    const article = allArticles.find(a => a.id === articleId);
+                    if (article) {
+                        renderFullArticle(article);
+                    } else {
+                        // Article not found, show error or redirect
+                        console.error('Article not found:', articleId);
+                        renderArticles(); // Fallback to list
+                    }
+                } else {
+                    renderArticles();
+                    updateResultsCount();
+                }
             } catch (error) {
                 console.error('Error loading articles:', error);
                 document.getElementById('articlesGrid').innerHTML = `
@@ -486,7 +502,7 @@
             }
         }
 
-        // Render articles
+        // Render articles grid
         function renderArticles() {
             const grid = document.getElementById('articlesGrid');
 
@@ -501,16 +517,19 @@
                 return;
             }
 
+            // Use anchor tags for SEO and "Open in New Tab" behavior
             grid.innerHTML = filteredArticles.map(article => `
-                <div class="article-card" onclick="openArticleModal('${article.id}')">
-                    <div class="article-category">${article.category}</div>
-                    <h3>${article.title}</h3>
-                    <p class="article-excerpt">${article.excerpt}</p>
-                    <div class="article-meta">
-                        <span>${article.date}</span>
-                        <span class="read-more">Read Article</span>
+                <a href="articles.html?id=${article.id}" target="_blank" class="article-card-link" style="text-decoration: none; color: inherit; display: block;">
+                    <div class="article-card">
+                        <div class="article-category">${article.category}</div>
+                        <h3>${article.title}</h3>
+                        <p class="article-excerpt">${article.excerpt}</p>
+                        <div class="article-meta">
+                            <span>${article.date}</span>
+                            <span class="read-more">Read Article</span>
+                        </div>
                     </div>
-                </div>
+                </a>
             `).join('');
         }
 
@@ -565,36 +584,20 @@
         document.getElementById('categoryFilter').addEventListener('change', applyFilters);
         document.getElementById('sortSelect').addEventListener('change', applyFilters);
 
-        // Initialize
-        loadArticles();
-
-        // Make openArticleModal open article in full-page view (like guides)
-        window.openArticleModal = function (articleId) {
-            const article = allArticles.find(a => a.id === articleId);
-            if (!article) {
-                console.error('Article not found:', articleId);
-                return;
-            }
-
-            // Calculate reading time (average 200 words per minute)
+        // Render Full Article View (Replaces current page content)
+        function renderFullArticle(article) {
+            // Calculate reading time
             const wordCount = article.content.replace(/<[^>]*>/g, '').split(/\s+/).length;
             const readingTime = Math.ceil(wordCount / 200);
 
-            // Strip the article's internal header/h1 to avoid duplication
-            // Remove <header>...</header> and standalone <h1>...</h1> from article content
+            // Clean content
             let cleanContent = article.content;
-
-            // Remove header tag and its contents
             cleanContent = cleanContent.replace(/<header>[\s\S]*?<\/header>/gi, '');
-
-            // Remove the first h1 tag (article title) if it exists
             cleanContent = cleanContent.replace(/<h1[^>]*>[\s\S]*?<\/h1>/i, '');
-
-            // Remove opening <article> tag if exists, but keep the content
             cleanContent = cleanContent.replace(/<article[^>]*>/gi, '');
             cleanContent = cleanContent.replace(/<\/article>/gi, '');
 
-            // Create full-page article view
+            // Full Page Template
             const articlePage = `
 <!DOCTYPE html>
 <html lang="en">
@@ -653,7 +656,6 @@
         .info-box { background: var(--glass); border: 1px solid var(--border); border-left: 4px solid var(--accent-cyan); padding: 1.5rem; margin: 2rem 0; border-radius: 8px; backdrop-filter: blur(10px); }
         .category-badge { display: inline-block; padding: 0.5rem 1rem; background: rgba(0, 217, 255, 0.1); color: var(--accent-cyan); border: 1px solid rgba(0, 217, 255, 0.3); border-radius: 6px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 1rem; }
         
-        /* Interaction Section */
         .interaction-bar {
             display: flex;
             justify-content: space-between;
@@ -708,7 +710,6 @@
         .like-btn i { transition: transform 0.2s; }
         .like-btn.liked i { transform: scale(1.2); }
 
-        /* Comments Placeholder */
         .comments-section { margin-top: 3rem; }
         .comments-title { font-size: 1.5rem; color: var(--text-primary); margin-bottom: 1.5rem; }
         .giscus-frame { width: 100%; min-height: 150px; border: 1px solid var(--border); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--text-muted); background: var(--bg-card); }
@@ -723,7 +724,7 @@
     <div class="container">
         <header>
             <div class="breadcrumb">
-                <a href="index.html">Home</a> / <a href="articles.html">Articles</a> / ${article.category}
+                <a href="articles.html">Articles</a> / ${article.category}
             </div>
             <div class="category-badge">${article.category}</div>
             <h1>${article.title}</h1>
@@ -758,8 +759,21 @@
         <div class="comments-section">
             <h3 class="comments-title">Discussion</h3>
             <div class="giscus-frame">
-                <!-- Giscus or Comment System will go here -->
-                <p><i>Comments are currently disabled for this preview.</i></p>
+                <script src="https://giscus.app/client.js"
+                    data-repo="Harish761/thehgtech"
+                    data-repo-id="R_kgDONN9h_Q"
+                    data-category="General"
+                    data-category-id="DIC_kwDONN9h_c4CkK_z"
+                    data-mapping="pathname"
+                    data-strict="0"
+                    data-reactions-enabled="1"
+                    data-emit-metadata="0"
+                    data-input-position="bottom"
+                    data-theme="dark"
+                    data-lang="en"
+                    crossorigin="anonymous"
+                    async>
+                <\/script>
             </div>
         </div>
     </div>
@@ -771,7 +785,6 @@
         const likeIcon = likeBtn.querySelector('i');
         const likeText = document.getElementById('likeText');
         
-        // Check local storage
         if (localStorage.getItem('liked_' + articleId)) {
             likeBtn.classList.add('liked');
             likeIcon.classList.remove('far');
@@ -781,27 +794,23 @@
 
         function toggleLike() {
             if (likeBtn.classList.contains('liked')) {
-                // Unlike
                 likeBtn.classList.remove('liked');
                 likeIcon.classList.remove('fas');
                 likeIcon.classList.add('far');
                 likeText.innerText = 'Like this article';
                 localStorage.removeItem('liked_' + articleId);
             } else {
-                // Like
                 likeBtn.classList.add('liked');
                 likeIcon.classList.remove('far');
                 likeIcon.classList.add('fas');
                 likeText.innerText = 'Liked';
                 localStorage.setItem('liked_' + articleId, 'true');
                 
-                // Confetti effect (optional simplified version)
                 likeBtn.style.transform = 'scale(1.1)';
                 setTimeout(() => likeBtn.style.transform = 'scale(1)', 200);
             }
         }
 
-        // Copy Link Functionality
         function copyLink() {
             navigator.clipboard.writeText(window.location.href).then(() => {
                 const btn = document.querySelector('button[title="Copy Link"]');
@@ -814,19 +823,22 @@
         }
     <\/script>
 </body>
-
 </html>
-`;
+            `;
 
-            // Open in new window/tab
-            const newWindow = window.open('', '_blank');
-            if (newWindow) {
-                newWindow.document.write(articlePage);
-                newWindow.document.close();
-            } else {
-                alert('Please allow popups to view articles');
+            // Replace current page content with article view
+            document.open();
+            document.write(articlePage);
+            document.close();
+
+            // Update URL if not already there (for direct calls)
+            if (!window.location.search.includes(article.id)) {
+                window.history.pushState({ id: article.id }, article.title, '?id=' + article.id);
             }
-        };
+        }
+
+        // Initialize
+        loadArticles();
     </script>
 </body>
 
