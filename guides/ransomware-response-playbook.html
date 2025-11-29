@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Ransomware Response Playbook | TheHGTech Security Guides</title>
+    <meta name="title" content="Ransomware Response Playbook | TheHGTech">
+    <meta name="description"
+        content="Comprehensive step-by-step playbook for responding to ransomware incidents. Learn containment, eradication, recovery strategies, and post-incident analysis.">
+    <meta name="keywords"
+        content="ransomware response, incident response, ransomware playbook, cyber attack response, ransomware recovery, incident containment, ransomware mitigation">
+    <meta name="author" content="TheHGTech">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thehgtech.com/guides/ransomware-response-playbook.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/guides/ransomware-response-playbook.html">
+    <meta property="og:title" content="Ransomware Response Playbook">
+    <meta property="og:description"
+        content="Step-by-step guide for responding to ransomware incidents and minimizing damage.">
+    <meta property="og:image" content="https://thehgtech.com/images/ransomware-og.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://thehgtech.com/guides/ransomware-response-playbook.html">
+    <meta name="twitter:title" content="Ransomware Response Playbook">
+    <meta name="twitter:description" content="Comprehensive ransomware incident response guide.">
+    <meta name="twitter:image" content="https://thehgtech.com/images/ransomware-twitter.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/header.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF4C4C;
+            --accent-orange: #FF9500;
+            --accent-green: #30D158;
+            --glow-cyan: rgba(0, 217, 255, 0.5);
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+            --glass: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Page Header */
+        .page-header {
+            padding: 3rem 0;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+            margin-top: 60px;
+        }
+
+        .breadcrumb {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .breadcrumb a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .breadcrumb a:hover {
+            color: var(--text-primary);
+        }
+
+        .page-header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-red));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .page-meta {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Content */
+        .content {
+            margin-bottom: 4rem;
+        }
+
+        .content h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 2.5rem 0 1rem 0;
+            color: var(--accent-cyan);
+        }
+
+        .content h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 2rem 0 1rem 0;
+            color: var(--text-primary);
+        }
+
+        .content p {
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        .content ul,
+        .content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+            color: var(--text-secondary);
+        }
+
+        .content li {
+            margin-bottom: 0.75rem;
+        }
+
+        .content strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        /* Alert Boxes */
+        .alert {
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border-left: 4px solid;
+        }
+
+        .alert-critical {
+            background: rgba(255, 76, 76, 0.1);
+            border-color: var(--accent-red);
+        }
+
+        .alert-warning {
+            background: rgba(255, 149, 0, 0.1);
+            border-color: var(--accent-orange);
+        }
+
+        .alert-info {
+            background: rgba(0, 217, 255, 0.1);
+            border-color: var(--accent-cyan);
+        }
+
+        .alert-success {
+            background: rgba(48, 209, 88, 0.1);
+            border-color: var(--accent-green);
+        }
+
+        .alert-title {
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Code Blocks */
+        .code-block {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            overflow-x: auto;
+        }
+
+        .code-block code {
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            color: var(--accent-cyan);
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+            margin: 2rem 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--accent-cyan);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2rem;
+            padding-left: 2rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2rem;
+            top: 0.5rem;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--accent-cyan);
+            border: 2px solid var(--bg-primary);
+        }
+
+        .timeline-title {
+            font-weight: 700;
+            color: var(--accent-cyan);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Checklist */
+        .checklist {
+            list-style: none;
+            padding: 0;
+        }
+
+        .checklist li {
+            padding-left: 2rem;
+            position: relative;
+            margin-bottom: 1rem;
+        }
+
+        .checklist li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--accent-green);
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+        }
+
+        th,
+        td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: var(--glass);
+            color: var(--accent-cyan);
+            font-weight: 600;
+        }
+
+        td {
+            color: var(--text-secondary);
+        }
+
+        /* Navigation */
+        .guide-nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem 0;
+            border-top: 1px solid var(--border);
+            margin-top: 4rem;
+        }
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-cyan);
+            text-decoration: none;
+            transition: all 0.3s;
+            padding: 1rem;
+            border-radius: 8px;
+            background: var(--glass);
+        }
+
+        .nav-link:hover {
+            background: var(--bg-card);
+            transform: translateX(5px);
+        }
+
+        .nav-link.prev:hover {
+            transform: translateX(-5px);
+        }
+
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 2rem;
+            }
+
+            .page-meta {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .content h2 {
+                font-size: 1.5rem;
+            }
+
+            .content h3 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header (from header.js) -->
+    <div id="header-placeholder"></div>
+
+    <div class="container">
+        <div class="page-header">
+            <div class="breadcrumb">
+                <a href="/">Home</a> / <a href="/guides/">Guides</a> / Ransomware Response Playbook
+            </div>
+            <h1>🛡️ Ransomware Response Playbook</h1>
+            <div class="page-meta">
+                <span>📖 15 min read</span>
+                <span>🎯 Advanced</span>
+                <span>📅 November 29, 2025</span>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="alert alert-critical">
+                <div class="alert-title">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    Critical: Time is Everything
+                </div>
+                <p>
+                    In a ransomware incident, every minute counts. This playbook provides a structured, step-by-step
+                    response framework to minimize damage, contain the threat, and restore operations. Print this guide
+                    and keep it accessible for your incident response team.
+                </p>
+            </div>
+
+            <h2>Executive Summary</h2>
+            <p>
+                Ransomware attacks have evolved from opportunistic malware to sophisticated, targeted campaigns
+                orchestrated by organized cybercrime groups. Modern ransomware employs <strong>double
+                    extortion</strong> (encryption + data theft), <strong>lateral movement</strong>, and
+                <strong>credential harvesting</strong> to maximize impact and ransom demands.
+            </p>
+            <p>
+                This playbook covers the complete incident response lifecycle: <strong>Preparation</strong>,
+                <strong>Detection</strong>, <strong>Containment</strong>, <strong>Eradication</strong>,
+                <strong>Recovery</strong>, and <strong>Post-Incident Analysis</strong>.
+            </p>
+
+            <h2>Phase 1: Immediate Response (0-1 Hour)</h2>
+
+            <div class="alert alert-warning">
+                <div class="alert-title">
+                    <i class="fas fa-clock"></i>
+                    Golden Hour: First 60 Minutes
+                </div>
+                <p>
+                    The first hour determines the scope of damage. Rapid containment can prevent ransomware from
+                    spreading to backups, domain controllers, and critical systems.
+                </p>
+            </div>
+
+            <h3>Step 1: Activate Incident Response Team</h3>
+            <ul class="checklist">
+                <li><strong>Notify IR Team Lead:</strong> Immediately alert the designated incident commander</li>
+                <li><strong>Assemble Core Team:</strong> Security analysts, network engineers, system administrators,
+                    legal counsel</li>
+                <li><strong>Establish War Room:</strong> Set up a dedicated communication channel (Slack, Teams, or
+                    conference bridge)</li>
+                <li><strong>Document Everything:</strong> Start an incident log with timestamps for all actions taken
+                </li>
+            </ul>
+
+            <h3>Step 2: Isolate Affected Systems</h3>
+            <p>
+                <strong>Do NOT power off systems immediately</strong> — this can destroy volatile memory evidence and
+                encryption keys. Instead:
+            </p>
+            <ul>
+                <li><strong>Network Isolation:</strong> Disconnect affected systems from the network (disable Wi-Fi,
+                    unplug Ethernet)</li>
+                <li><strong>Disable Remote Access:</strong> Block VPN, RDP, SSH access to prevent lateral movement</li>
+                <li><strong>Segment Networks:</strong> Use firewall rules to isolate infected VLANs/subnets</li>
+                <li><strong>Preserve Evidence:</strong> Take memory dumps and disk images before any remediation</li>
+            </ul>
+
+            <div class="code-block">
+                <code>
+# Emergency network isolation (Linux)<br>
+sudo iptables -A INPUT -j DROP<br>
+sudo iptables -A OUTPUT -j DROP<br>
+<br>
+# Emergency network isolation (Windows PowerShell)<br>
+Disable-NetAdapter -Name "Ethernet" -Confirm:$false<br>
+Disable-NetAdapter -Name "Wi-Fi" -Confirm:$false
+                </code>
+            </div>
+
+            <h3>Step 3: Identify Ransomware Variant</h3>
+            <p>
+                Identifying the ransomware family helps determine:
+            </p>
+            <ul>
+                <li>Whether decryption tools exist (e.g., from No More Ransom Project)</li>
+                <li>Known TTPs (Tactics, Techniques, and Procedures)</li>
+                <li>Threat actor attribution and typical ransom demands</li>
+            </ul>
+
+            <p><strong>Identification Methods:</strong></p>
+            <ul>
+                <li>Check ransom note file name and extension (e.g., <code>.lockbit</code>, <code>.conti</code>)</li>
+                <li>Upload ransom note to <a href="https://id-ransomware.malwarehunterteam.com/"
+                        style="color: var(--accent-cyan);">ID Ransomware</a></li>
+                <li>Analyze file encryption patterns and extensions</li>
+                <li>Review process names and registry modifications</li>
+            </ul>
+
+            <h2>Phase 2: Containment (1-4 Hours)</h2>
+
+            <h3>Step 4: Prevent Lateral Movement</h3>
+            <ul>
+                <li><strong>Disable Domain Admin Accounts:</strong> Temporarily disable high-privilege accounts</li>
+                <li><strong>Reset Credentials:</strong> Force password resets for all service accounts and admin
+                    accounts</li>
+                <li><strong>Block C2 Communication:</strong> Identify and block command-and-control (C2) IP addresses
+                    and domains</li>
+                <li><strong>Monitor Network Traffic:</strong> Use IDS/IPS to detect anomalous outbound connections</li>
+            </ul>
+
+            <h3>Step 5: Protect Backups</h3>
+            <div class="alert alert-critical">
+                <div class="alert-title">
+                    <i class="fas fa-database"></i>
+                    Critical: Backup Protection
+                </div>
+                <p>
+                    Modern ransomware actively targets backups. If backups are encrypted, recovery becomes impossible.
+                </p>
+            </div>
+
+            <ul class="checklist">
+                <li><strong>Disconnect Backup Systems:</strong> Immediately isolate backup servers and NAS devices</li>
+                <li><strong>Verify Backup Integrity:</strong> Check that recent backups are unencrypted and accessible
+                </li>
+                <li><strong>Enable Immutable Backups:</strong> If using cloud backups, enable object lock/versioning
+                </li>
+                <li><strong>Test Restore Capability:</strong> Verify you can restore from backups before proceeding
+                </li>
+            </ul>
+
+            <h3>Step 6: Assess Scope of Compromise</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>System Type</th>
+                        <th>Priority</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Domain Controllers</td>
+                        <td>🔴 Critical</td>
+                        <td>Isolate immediately, verify integrity</td>
+                    </tr>
+                    <tr>
+                        <td>Backup Servers</td>
+                        <td>🔴 Critical</td>
+                        <td>Disconnect, verify backups</td>
+                    </tr>
+                    <tr>
+                        <td>File Servers</td>
+                        <td>🟠 High</td>
+                        <td>Isolate, assess encryption status</td>
+                    </tr>
+                    <tr>
+                        <td>Databases</td>
+                        <td>🟠 High</td>
+                        <td>Check for data exfiltration</td>
+                    </tr>
+                    <tr>
+                        <td>Workstations</td>
+                        <td>🟡 Medium</td>
+                        <td>Isolate infected endpoints</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Phase 3: Eradication (4-24 Hours)</h2>
+
+            <h3>Step 7: Remove Malware</h3>
+            <ul>
+                <li><strong>Boot into Safe Mode:</strong> Prevents ransomware from executing on startup</li>
+                <li><strong>Run Anti-Malware Scans:</strong> Use multiple tools (Malwarebytes, ESET, Kaspersky)</li>
+                <li><strong>Delete Persistence Mechanisms:</strong> Remove registry keys, scheduled tasks, startup
+                    entries</li>
+                <li><strong>Rebuild Compromised Systems:</strong> For critical systems, rebuild from clean images</li>
+            </ul>
+
+            <div class="code-block">
+                <code>
+# Check for scheduled tasks (Windows PowerShell)<br>
+Get-ScheduledTask | Where-Object {$_.TaskPath -notlike "\Microsoft*"}<br>
+<br>
+# Check for suspicious registry run keys<br>
+reg query HKLM\Software\Microsoft\Windows\CurrentVersion\Run<br>
+reg query HKCU\Software\Microsoft\Windows\CurrentVersion\Run
+                </code>
+            </div>
+
+            <h3>Step 8: Patch Vulnerabilities</h3>
+            <p>
+                Ransomware often exploits known vulnerabilities. Ensure all systems are patched:
+            </p>
+            <ul class="checklist">
+                <li>Apply Windows security updates (especially for SMB, RDP vulnerabilities)</li>
+                <li>Update VPN appliances (Fortinet, Pulse Secure, Palo Alto)</li>
+                <li>Patch web applications and CMS platforms</li>
+                <li>Update endpoint protection software</li>
+            </ul>
+
+            <h2>Phase 4: Recovery (24-72 Hours)</h2>
+
+            <h3>Step 9: Restore from Backups</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-title">1. Verify Backup Integrity</div>
+                    <p>Test restore on isolated systems first. Verify data is not corrupted or encrypted.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-title">2. Restore Critical Systems First</div>
+                    <p>Prioritize: Domain controllers → File servers → Databases → Applications → Workstations</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-title">3. Validate Restored Data</div>
+                    <p>Check file integrity, application functionality, and database consistency.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-title">4. Monitor for Re-Infection</div>
+                    <p>Use EDR tools to detect any signs of malware re-execution.</p>
+                </div>
+            </div>
+
+            <h3>Step 10: Rebuild Compromised Systems</h3>
+            <p>
+                For systems that cannot be reliably cleaned, perform a full rebuild:
+            </p>
+            <ul>
+                <li>Reformat drives and reinstall OS from trusted media</li>
+                <li>Apply all security patches before connecting to network</li>
+                <li>Restore data from verified clean backups</li>
+                <li>Reinstall applications from official sources</li>
+            </ul>
+
+            <h2>Phase 5: Post-Incident Analysis</h2>
+
+            <h3>Step 11: Conduct Forensic Investigation</h3>
+            <div class="alert alert-info">
+                <div class="alert-title">
+                    <i class="fas fa-search"></i>
+                    Forensic Analysis Goals
+                </div>
+                <ul style="margin-bottom: 0;">
+                    <li>Determine initial infection vector (phishing, RDP brute force, vulnerability exploit)</li>
+                    <li>Identify dwell time (how long attackers had access before deploying ransomware)</li>
+                    <li>Map lateral movement and compromised accounts</li>
+                    <li>Assess data exfiltration (for double-extortion scenarios)</li>
+                </ul>
+            </div>
+
+            <h3>Step 12: Regulatory and Legal Obligations</h3>
+            <ul>
+                <li><strong>Notify Law Enforcement:</strong> Report to FBI IC3 or local cybercrime unit</li>
+                <li><strong>Regulatory Reporting:</strong> Comply with GDPR, HIPAA, or other data breach notification
+                    laws</li>
+                <li><strong>Cyber Insurance:</strong> File claim with cyber insurance provider</li>
+                <li><strong>Customer Notification:</strong> If PII was compromised, notify affected individuals</li>
+            </ul>
+
+            <h3>Step 13: Implement Lessons Learned</h3>
+            <ul class="checklist">
+                <li>Update incident response plan based on gaps identified</li>
+                <li>Enhance monitoring and detection capabilities</li>
+                <li>Conduct tabletop exercises to test new procedures</li>
+                <li>Implement additional security controls (MFA, network segmentation, EDR)</li>
+            </ul>
+
+            <h2>Ransom Payment Decision Framework</h2>
+
+            <div class="alert alert-warning">
+                <div class="alert-title">
+                    <i class="fas fa-balance-scale"></i>
+                    To Pay or Not to Pay?
+                </div>
+                <p>
+                    The FBI and CISA recommend <strong>NOT paying ransoms</strong>, as it funds criminal operations and
+                    does not guarantee data recovery. However, some organizations face impossible choices.
+                </p>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Factor</th>
+                        <th>Consider Payment If...</th>
+                        <th>Avoid Payment If...</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Backups</td>
+                        <td>No viable backups exist</td>
+                        <td>Clean backups are available</td>
+                    </tr>
+                    <tr>
+                        <td>Business Impact</td>
+                        <td>Downtime threatens survival</td>
+                        <td>Operations can continue</td>
+                    </tr>
+                    <tr>
+                        <td>Data Sensitivity</td>
+                        <td>Exfiltrated data is highly sensitive</td>
+                        <td>No data was stolen</td>
+                    </tr>
+                    <tr>
+                        <td>Decryption Tools</td>
+                        <td>No free decryptor available</td>
+                        <td>Free decryptor exists</td>
+                    </tr>
+                    <tr>
+                        <td>Legal Constraints</td>
+                        <td>Payment is legally permissible</td>
+                        <td>Sanctioned threat actor (OFAC)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>
+                <strong>If payment is considered:</strong> Engage a professional ransomware negotiation firm. They can
+                reduce ransom demands by 50-70% and verify decryption key validity before payment.
+            </p>
+
+            <h2>Prevention: Building Ransomware Resilience</h2>
+
+            <h3>Technical Controls</h3>
+            <ul>
+                <li><strong>Endpoint Detection and Response (EDR):</strong> Deploy behavioral detection (CrowdStrike,
+                    SentinelOne, Microsoft Defender)</li>
+                <li><strong>Email Security:</strong> Use advanced email filtering to block phishing (Proofpoint,
+                    Mimecast)</li>
+                <li><strong>Network Segmentation:</strong> Isolate critical systems from general network</li>
+                <li><strong>MFA Everywhere:</strong> Enforce multi-factor authentication on all remote access</li>
+                <li><strong>Disable RDP:</strong> Or restrict to VPN-only access with MFA</li>
+                <li><strong>Application Whitelisting:</strong> Prevent unauthorized executables from running</li>
+            </ul>
+
+            <h3>Backup Strategy (3-2-1-1-0 Rule)</h3>
+            <ul>
+                <li><strong>3</strong> copies of data</li>
+                <li><strong>2</strong> different media types</li>
+                <li><strong>1</strong> copy offsite</li>
+                <li><strong>1</strong> copy offline (air-gapped)</li>
+                <li><strong>0</strong> errors in backup verification</li>
+            </ul>
+
+            <h3>User Awareness Training</h3>
+            <ul>
+                <li>Conduct quarterly phishing simulations</li>
+                <li>Train users to recognize social engineering tactics</li>
+                <li>Establish clear reporting procedures for suspicious emails</li>
+            </ul>
+
+            <h2>Conclusion</h2>
+            <p>
+                Ransomware incidents are no longer a matter of "if" but "when." Organizations that prepare in advance —
+                with robust backups, tested incident response plans, and layered security controls — can recover quickly
+                and minimize damage. This playbook provides a battle-tested framework, but it must be adapted to your
+                organization's specific environment and regularly updated as threats evolve.
+            </p>
+
+            <div class="alert alert-success">
+                <div class="alert-title">
+                    <i class="fas fa-check-circle"></i>
+                    Next Steps
+                </div>
+                <ul style="margin-bottom: 0;">
+                    <li>Print this playbook and distribute to your IR team</li>
+                    <li>Conduct a tabletop exercise simulating a ransomware attack</li>
+                    <li>Verify your backups are tested and restorable</li>
+                    <li>Review and update your incident response plan</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="guide-nav">
+            <a href="/guides/" class="nav-link prev">
+                <i class="fas fa-arrow-left"></i>
+                Back to Guides
+            </a>
+            <a href="/guides/incident-response-automation.html" class="nav-link">
+                Next Guide: Incident Response Automation
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Load Header -->
+    <script src="/header.js"></script>
+</body>
+
+</html>
