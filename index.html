@@ -781,27 +781,29 @@
         }
 
 
-        0%,
-        90%,
-        100% {
-            transform: translate(0);
-        }
+        @keyframes glitch-anim {
 
-        91% {
-            transform: translate(3px, -1px);
-        }
+            0%,
+            90%,
+            100% {
+                transform: translate(0);
+            }
 
-        93% {
-            transform: translate(-3px, 1px);
-        }
+            91% {
+                transform: translate(3px, -1px);
+            }
 
-        95% {
-            transform: translate(2px, 0);
-        }
+            93% {
+                transform: translate(-3px, 1px);
+            }
 
-        97% {
-            transform: translate(-2px, -1px);
-        }
+            95% {
+                transform: translate(2px, 0);
+            }
+
+            97% {
+                transform: translate(-2px, -1px);
+            }
         }
 
         /* Magnetic Tilt Cards */
@@ -4333,6 +4335,14 @@
                 closeMobileMenu();
                 // Reset body overflow
                 document.body.style.overflow = '';
+            }
+        });
+
+        // Check hash on load to open modals
+        document.addEventListener('DOMContentLoaded', function () {
+            const hash = window.location.hash.substring(1);
+            if (['about', 'privacy', 'terms', 'contact'].includes(hash)) {
+                openModal(hash);
             }
         });
 
