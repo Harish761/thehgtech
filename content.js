@@ -188,6 +188,20 @@ var websiteContent = {
             "category": "AI",
             "title": "Amazon's $50B AI Investment",
             "excerpt": "Amazon commits unprecedented capital toward government-focused AI."
+        },
+        {
+            "id": "article3",
+            "date": "November 26, 2025",
+            "category": "Cybersecurity",
+            "title": "Palo Alto Acquires Chronosphere for $3.35B",
+            "excerpt": "Security and observability converge in landmark acquisition for autonomous operations."
+        },
+        {
+            "id": "article4",
+            "date": "November 26, 2025",
+            "category": "Policy",
+            "title": "FCC Repeals Telecom Security Mandates",
+            "excerpt": "Critical infrastructure protection rolled back despite ongoing nation-state threats."
         }
     ],
     "featureInsights": [
