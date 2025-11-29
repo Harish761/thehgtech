@@ -26,11 +26,11 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 // Render initial dashboard
 function renderDashboard(stats) {
-    // Update last updated timestamp
-    const lastUpdated = new Date(stats.lastUpdated);
+    // Update last updated timestamp - use pre-formatted IST time
     const timeElement = document.getElementById('lastUpdatedTime') || document.getElementById('lastUpdated');
-    if (timeElement) {
-        timeElement.textContent = lastUpdated.toLocaleString();
+    if (timeElement && stats.lastUpdatedFormatted) {
+        // Use pre-formatted timestamp to avoid timezone conversion
+        timeElement.textContent = stats.lastUpdatedFormatted;
     }
 
     // Animate stat counters

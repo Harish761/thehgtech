@@ -1336,15 +1336,7 @@
                     };
                 }
 
-                // Fallback: Try when DOM is ready
-                document.addEventListener('DOMContentLoaded', function () {
-                    setTimeout(populateVendorGrid, 500);
-                });
-
-                // Fallback: Try when window loads
-                window.addEventListener('load', function () {
-                    setTimeout(populateVendorGrid, 1000);
-                });
+                // Vendor grid population is now handled by consolidated initializeApp()
             </script>
 
             <style>
@@ -1538,13 +1530,45 @@
         let autoRefreshInterval;
         let currentVendor = 'overview';
 
-        // Initialize dashboard
-        window.addEventListener('DOMContentLoaded', () => {
+        // ===== CONSOLIDATED INITIALIZATION =====
+        // Single DOMContentLoaded listener to prevent race conditions
+        let isInitialized = false;
+
+        function initializeApp() {
+            if (isInitialized) return;
+            isInitialized = true;
+
+            console.log('Initializing Threat Intelligence Dashboard...');
+
+            // 1. Load threat data
             loadThreatData();
-            // Auto-refresh disabled - data updates every 2 hours via GitHub Actions
-            // autoRefreshInterval = setInterval(refreshData, 60000);
-            // startCountdown();
-        });
+
+            // 2. Initialize search functionality
+            const searchInput = document.getElementById('iocSearch');
+            if (searchInput) {
+                searchInput.addEventListener('input', (e) => {
+                    currentSearchTerm = e.target.value;
+                    applyFilters();
+                });
+            }
+
+            // 3. Populate vendor grid (with delay to ensure data is loaded)
+            setTimeout(() => {
+                if (typeof populateVendorGrid === 'function') {
+                    populateVendorGrid();
+                }
+            }, 300);
+
+            console.log('Dashboard initialized successfully');
+        }
+
+        // Initialize when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initializeApp);
+        } else {
+            // DOM already loaded
+            initializeApp();
+        }
 
         // Load threat intelligence data
         function loadThreatData() {
@@ -1754,16 +1778,7 @@
         let currentTypeFilter = 'all';
         let currentModalIOC = null;
 
-        // Search/Filter functionality
-        document.addEventListener('DOMContentLoaded', () => {
-            const searchInput = document.getElementById('iocSearch');
-            if (searchInput) {
-                searchInput.addEventListener('input', (e) => {
-                    currentSearchTerm = e.target.value;
-                    applyFilters();
-                });
-            }
-        });
+        // Search/Filter functionality is now initialized in consolidated initializeApp()
 
         function setFilter(type) {
             currentTypeFilter = type;
