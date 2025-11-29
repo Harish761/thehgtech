@@ -2,7 +2,7 @@ name: RSS Threat Intel Update
 
 on:
   schedule:
-    - cron: '5 */2 * * *'    # Every 2 hours at :05 (fetches fresh IOCs)
+    - cron: '5 */4 * * *'    # Every 4 hours at :05 (optimized for lower Git load)
     - cron: '35 18 * * *'    # Daily at 00:05 IST (generates daily summary)
   workflow_dispatch:         # Manual trigger option
 
