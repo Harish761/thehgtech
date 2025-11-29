@@ -1168,7 +1168,7 @@
         <div class="ti-hero-content">
             <div class="ti-badge">
                 <span class="pulse-dot"></span>
-                Updated Every 2 Hours
+                Automated Data Collection - Updated Every 4 Hours
             </div>
             <h1>Live Cyber Threat <span>Intelligence Dashboard</span></h1>
             <p>Multi-vendor intelligence from 9 trusted security sources. Track malicious URLs, IPs, domains, and
@@ -1186,246 +1186,261 @@
                 </div>
             </div>
 
-            <!-- 7-Day IOC Retention Notice -->
+            <!-- Automation & Data Policy Disclosure -->
             <div
                 style="background: linear-gradient(135deg, rgba(0, 217, 255, 0.1), rgba(102, 126, 234, 0.1)); border-left: 4px solid var(--accent-cyan); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(0, 217, 255, 0.2); margin-bottom: 2rem;">
                 <div style="display: flex; align-items: start; gap: 1rem;">
-                    <div style="font-size: 24px;">ℹ️</div>
+                    <div style="font-size: 20px; color: var(--accent-cyan);">&#9432;</div>
                     <div style="flex: 1;">
-                        <h3 style="color: var(--accent-cyan); margin: 0 0 0.5rem 0; font-size: 1.1rem;">7-Day IOC
-                            Retention Policy</h3>
-                        <p style="color: var(--text-muted); margin: 0; font-size: 0.95rem; line-height: 1.6;">
-                            IOCs are tracked from <strong>first appearance</strong> and retained for <strong>7
-                                days</strong>.
-                            This enables meaningful time-based filtering while keeping data fresh and file sizes
-                            manageable.
-                            Timestamps show when each IOC was <strong>first seen</strong>, not when it was last updated.
-                        </p>
-                        <p style="color: var(--text-muted); margin: 0.5rem 0 0 0; font-size: 0.85rem;">
-                            <strong>Data Refresh:</strong> Every 2 hours • <strong>Auto-Pruning:</strong> IOCs older
-                            than 7 days are automatically removed
-                        </p>
-                    </div>
-                </div>
-            </div>
+                        <h3 style="color: var(--accent-cyan); margin: 0 0 0.75rem 0; font-size: 1.1rem;">Automated Data
+                            Collection & Retention Policy</h3>
 
+                        <div style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">
+                            <p style="margin: 0 0 0.75rem 0;">
+                                <strong>Data Source:</strong> Automatically aggregated from 9 trusted security vendors
+                                (OpenPhish, Malware Bazaar, Spamhaus, CINS Army, Blocklist.de, URLhaus, ThreatFox, Feodo
+                                Tracker, SSL Blacklist)
+                            </p>
 
-            <!-- Statistics Dashboard -->
-            <div class="stats-dashboard"
-                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
-                <div class="stat-card"
-                    style="background: linear-gradient(135deg, rgba(0, 217, 255, 0.1), rgba(0, 217, 255, 0.05)); border: 1px solid rgba(0, 217, 255, 0.2); border-radius: 12px; padding: 1.5rem; transition: all 0.3s ease;">
-                    <div style="text-align: left;">
-                        <h3
-                            style="margin: 0 0 0.5rem 0; color: var(--text-muted); font-size: 0.9rem; font-weight: 600;">
-                            Total IOCs</h3>
-                        <div class="stat-value" id="totalIOCs"
-                            style="font-size: 2.5rem; font-weight: 700; color: var(--accent-cyan);">0</div>
-                        <div style="color: var(--text-muted); font-size: 0.75rem; margin-top: 0.5rem;">Across all
-                            sources</div>
-                    </div>
-                </div>
-                <div class="stat-card"
-                    style="background: linear-gradient(135deg, rgba(255, 76, 76, 0.1), rgba(255, 76, 76, 0.05)); border: 1px solid rgba(255, 76, 76, 0.2); border-radius: 12px; padding: 1.5rem; transition: all 0.3s ease;">
-                    <div style="text-align: left;">
-                        <h3
-                            style="margin: 0 0 0.5rem 0; color: var(--text-muted); font-size: 0.9rem; font-weight: 600;">
-                            New (Last Hour)</h3>
-                        <div class="stat-value" id="newIOCs"
-                            style="font-size: 2.5rem; font-weight: 700; color: var(--accent-red);">0</div>
-                        <div style="color: var(--text-muted); font-size: 0.75rem; margin-top: 0.5rem;">Recent threats
+                            <p style="margin: 0 0 0.75rem 0;">
+                                <strong>Update Frequency:</strong> Every 4 hours via automated collection<br>
+                                <strong>Retention Period:</strong> 7 days from first appearance<br>
+                                <strong>Auto-Pruning:</strong> IOCs older than 7 days are automatically removed
+                            </p>
+
+                            <p style="margin: 0; font-size: 0.9rem; opacity: 0.9;">
+                                All data is collected automatically without manual intervention. Timestamps indicate
+                                when each IOC was first detected, not when it was last updated. This enables meaningful
+                                time-based analysis while maintaining data freshness and manageable file sizes.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="stat-card"
-                    style="background: linear-gradient(135deg, rgba(0, 255, 136, 0.1), rgba(0, 255, 136, 0.05)); border: 1px solid rgba(0, 255, 136, 0.2); border-radius: 12px; padding: 1.5rem; transition: all 0.3s ease;">
-                    <div style="text-align: left;">
-                        <h3
-                            style="margin: 0 0 0.5rem 0; color: var(--text-muted); font-size: 0.9rem; font-weight: 600;">
-                            Active Campaigns</h3>
-                        <div class="stat-value" id="activeCampaigns"
-                            style="font-size: 2.5rem; font-weight: 700; color: #00ff88;">0</div>
-                        <div style="color: var(--text-muted); font-size: 0.75rem; margin-top: 0.5rem;">Ongoing attacks
+
+
+                <!-- Statistics Dashboard -->
+                <div class="stats-dashboard"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+                    <div class="stat-card"
+                        style="background: linear-gradient(135deg, rgba(0, 217, 255, 0.1), rgba(0, 217, 255, 0.05)); border: 1px solid rgba(0, 217, 255, 0.2); border-radius: 12px; padding: 1.5rem; transition: all 0.3s ease;">
+                        <div style="text-align: left;">
+                            <h3
+                                style="margin: 0 0 0.5rem 0; color: var(--text-muted); font-size: 0.9rem; font-weight: 600;">
+                                Total IOCs</h3>
+                            <div class="stat-value" id="totalIOCs"
+                                style="font-size: 2.5rem; font-weight: 700; color: var(--accent-cyan);">0</div>
+                            <div style="color: var(--text-muted); font-size: 0.75rem; margin-top: 0.5rem;">Across all
+                                sources</div>
+                        </div>
+                    </div>
+                    <div class="stat-card"
+                        style="background: linear-gradient(135deg, rgba(255, 76, 76, 0.1), rgba(255, 76, 76, 0.05)); border: 1px solid rgba(255, 76, 76, 0.2); border-radius: 12px; padding: 1.5rem; transition: all 0.3s ease;">
+                        <div style="text-align: left;">
+                            <h3
+                                style="margin: 0 0 0.5rem 0; color: var(--text-muted); font-size: 0.9rem; font-weight: 600;">
+                                New (Last Hour)</h3>
+                            <div class="stat-value" id="newIOCs"
+                                style="font-size: 2.5rem; font-weight: 700; color: var(--accent-red);">0</div>
+                            <div style="color: var(--text-muted); font-size: 0.75rem; margin-top: 0.5rem;">Recent
+                                threats
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stat-card"
+                        style="background: linear-gradient(135deg, rgba(0, 255, 136, 0.1), rgba(0, 255, 136, 0.05)); border: 1px solid rgba(0, 255, 136, 0.2); border-radius: 12px; padding: 1.5rem; transition: all 0.3s ease;">
+                        <div style="text-align: left;">
+                            <h3
+                                style="margin: 0 0 0.5rem 0; color: var(--text-muted); font-size: 0.9rem; font-weight: 600;">
+                                Active Campaigns</h3>
+                            <div class="stat-value" id="activeCampaigns"
+                                style="font-size: 2.5rem; font-weight: 700; color: #00ff88;">0</div>
+                            <div style="color: var(--text-muted); font-size: 0.75rem; margin-top: 0.5rem;">Ongoing
+                                attacks
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stat-card"
+                        style="background: linear-gradient(135deg, rgba(255, 165, 0, 0.1), rgba(255, 165, 0, 0.05)); border: 1px solid rgba(255, 165, 0, 0.2); border-radius: 12px; padding: 1.5rem; transition: all 0.3s ease;">
+                        <div style="text-align: left;">
+                            <h3
+                                style="margin: 0 0 0.5rem 0; color: var(--text-muted); font-size: 0.9rem; font-weight: 600;">
+                                Vendors Active</h3>
+                            <div class="stat-value" style="font-size: 2.5rem; font-weight: 700; color: #ffa500;">9/9
+                            </div>
+                            <div style="color: var(--text-muted); font-size: 0.75rem; margin-top: 0.5rem;">All sources
+                                online</div>
                         </div>
                     </div>
                 </div>
-                <div class="stat-card"
-                    style="background: linear-gradient(135deg, rgba(255, 165, 0, 0.1), rgba(255, 165, 0, 0.05)); border: 1px solid rgba(255, 165, 0, 0.2); border-radius: 12px; padding: 1.5rem; transition: all 0.3s ease;">
-                    <div style="text-align: left;">
-                        <h3
-                            style="margin: 0 0 0.5rem 0; color: var(--text-muted); font-size: 0.9rem; font-weight: 600;">
-                            Vendors Active</h3>
-                        <div class="stat-value" style="font-size: 2.5rem; font-weight: 700; color: #ffa500;">9/9</div>
-                        <div style="color: var(--text-muted); font-size: 0.75rem; margin-top: 0.5rem;">All sources
-                            online</div>
+
+
+                <!-- Static Snapshot Container (SEO-friendly, loads first) -->
+
+                <!-- Vendor Status Grid -->
+                <div style="margin: 2rem 0;">
+                    <h3 style="color: var(--text-primary); font-size: 1.1rem; margin-bottom: 1.5rem; font-weight: 600;">
+                        🛡️ Active Threat Intelligence Sources
+                    </h3>
+                    <div id="vendorStatusGrid"
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem;">
+                        <!-- Vendors will be populated here -->
                     </div>
                 </div>
-            </div>
 
+                <script>
+                    // Populate vendor status grid
+                    function populateVendorGrid() {
+                        if (!window.threatIntelData || !window.threatIntelData.vendors) {
+                            return;
+                        }
 
-            <!-- Static Snapshot Container (SEO-friendly, loads first) -->
+                        const vendorUrls = {
+                            'OpenPhish': 'https://openphish.com/',
+                            'Malware Bazaar': 'https://bazaar.abuse.ch/',
+                            'Spamhaus DROP': 'https://www.spamhaus.org/drop/',
+                            'CINS Army': 'http://cinsscore.com/',
+                            'Blocklist.de': 'https://www.blocklist.de/',
+                            'URLhaus': 'https://urlhaus.abuse.ch/',
+                            'ThreatFox': 'https://threatfox.abuse.ch/',
+                            'Feodo Tracker': 'https://feodotracker.abuse.ch/',
+                            'SSL Blacklist': 'https://sslbl.abuse.ch/'
+                        };
 
-            <!-- Vendor Status Grid -->
-            <div style="margin: 2rem 0;">
-                <h3 style="color: var(--text-primary); font-size: 1.1rem; margin-bottom: 1.5rem; font-weight: 600;">
-                    🛡️ Active Threat Intelligence Sources
-                </h3>
-                <div id="vendorStatusGrid"
-                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem;">
-                    <!-- Vendors will be populated here -->
-                </div>
-            </div>
+                        const grid = document.getElementById('vendorStatusGrid');
+                        if (!grid) return;
 
-            <script>
-                // Populate vendor status grid
-                function populateVendorGrid() {
-                    if (!window.threatIntelData || !window.threatIntelData.vendors) {
-                        return;
+                        let html = '';
+                        Object.entries(window.threatIntelData.vendors).forEach(([vendor, data]) => {
+                            const count = (data.iocCount || 0).toLocaleString();
+                            const sourceUrl = vendorUrls[vendor] || '#';
+
+                            html += '<div onclick="openVendorModal(\'' + vendor + '\')" style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 1.5rem; transition: all 0.3s ease; cursor: pointer; position: relative; overflow: hidden; display: flex; flex-direction: column; align-items: center; text-align: center;" ' +
+                                'onmouseover="this.style.transform=\'translateY(-4px)\'; this.style.borderColor=\'rgba(0, 217, 255, 0.4)\'; this.style.background=\'rgba(0, 217, 255, 0.05)\'; this.querySelector(\'.vendor-name\').style.color=\'var(--accent-cyan)\';"' +
+                                'onmouseout="this.style.transform=\'translateY(0)\'; this.style.borderColor=\'rgba(255, 255, 255, 0.1)\'; this.style.background=\'rgba(255, 255, 255, 0.03)\'; this.querySelector(\'.vendor-name\').style.color=\'var(--text-primary)\';">' +
+
+                                '<div style="position: absolute; top: 0.75rem; right: 0.75rem;">' +
+                                '<div style="width: 8px; height: 8px; background: #00ff88; border-radius: 50%; box-shadow: 0 0 10px #00ff88; animation: pulse 2s ease-in-out infinite;"></div>' +
+                                '</div>' +
+
+                                '<div class="vendor-name" style="font-size: 1.1rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem; transition: color 0.3s ease;">' + vendor + '</div>' +
+                                '<div style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 1px;">Active Source</div>' +
+
+                                '<div style="font-size: 2rem; font-weight: 800; color: var(--accent-cyan); line-height: 1; margin-bottom: 0.5rem;">' + count + '</div>' +
+                                '<div style="font-size: 0.8rem; color: var(--text-muted);">IOCs</div>' +
+
+                                '<a href="' + sourceUrl + '" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();" ' +
+                                'style="display: inline-block; margin-top: 1rem; font-size: 0.75rem; color: rgba(0, 217, 255, 0.6); text-decoration: none; border-bottom: 1px dotted rgba(0, 217, 255, 0.3); transition: all 0.2s ease;" ' +
+                                'onmouseover="this.style.color=\'var(--accent-cyan)\'; this.style.borderBottomColor=\'var(--accent-cyan)\';" onmouseout="this.style.color=\'rgba(0, 217, 255, 0.6)\'; this.style.borderBottomColor=\'rgba(0, 217, 255, 0.3)\';">View Source</a>' +
+                                '</div>';
+                        });
+
+                        grid.innerHTML = html;
                     }
 
-                    const vendorUrls = {
-                        'OpenPhish': 'https://openphish.com/',
-                        'Malware Bazaar': 'https://bazaar.abuse.ch/',
-                        'Spamhaus DROP': 'https://www.spamhaus.org/drop/',
-                        'CINS Army': 'http://cinsscore.com/',
-                        'Blocklist.de': 'https://www.blocklist.de/',
-                        'URLhaus': 'https://urlhaus.abuse.ch/',
-                        'ThreatFox': 'https://threatfox.abuse.ch/',
-                        'Feodo Tracker': 'https://feodotracker.abuse.ch/',
-                        'SSL Blacklist': 'https://sslbl.abuse.ch/'
-                    };
-
-                    const grid = document.getElementById('vendorStatusGrid');
-                    if (!grid) return;
-
-                    let html = '';
-                    Object.entries(window.threatIntelData.vendors).forEach(([vendor, data]) => {
-                        const count = (data.iocCount || 0).toLocaleString();
-                        const sourceUrl = vendorUrls[vendor] || '#';
-
-                        html += '<div onclick="openVendorModal(\'' + vendor + '\')" style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 1.5rem; transition: all 0.3s ease; cursor: pointer; position: relative; overflow: hidden; display: flex; flex-direction: column; align-items: center; text-align: center;" ' +
-                            'onmouseover="this.style.transform=\'translateY(-4px)\'; this.style.borderColor=\'rgba(0, 217, 255, 0.4)\'; this.style.background=\'rgba(0, 217, 255, 0.05)\'; this.querySelector(\'.vendor-name\').style.color=\'var(--accent-cyan)\';"' +
-                            'onmouseout="this.style.transform=\'translateY(0)\'; this.style.borderColor=\'rgba(255, 255, 255, 0.1)\'; this.style.background=\'rgba(255, 255, 255, 0.03)\'; this.querySelector(\'.vendor-name\').style.color=\'var(--text-primary)\';">' +
-
-                            '<div style="position: absolute; top: 0.75rem; right: 0.75rem;">' +
-                            '<div style="width: 8px; height: 8px; background: #00ff88; border-radius: 50%; box-shadow: 0 0 10px #00ff88; animation: pulse 2s ease-in-out infinite;"></div>' +
-                            '</div>' +
-
-                            '<div class="vendor-name" style="font-size: 1.1rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem; transition: color 0.3s ease;">' + vendor + '</div>' +
-                            '<div style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 1px;">Active Source</div>' +
-
-                            '<div style="font-size: 2rem; font-weight: 800; color: var(--accent-cyan); line-height: 1; margin-bottom: 0.5rem;">' + count + '</div>' +
-                            '<div style="font-size: 0.8rem; color: var(--text-muted);">IOCs</div>' +
-
-                            '<a href="' + sourceUrl + '" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();" ' +
-                            'style="display: inline-block; margin-top: 1rem; font-size: 0.75rem; color: rgba(0, 217, 255, 0.6); text-decoration: none; border-bottom: 1px dotted rgba(0, 217, 255, 0.3); transition: all 0.2s ease;" ' +
-                            'onmouseover="this.style.color=\'var(--accent-cyan)\'; this.style.borderBottomColor=\'var(--accent-cyan)\';" onmouseout="this.style.color=\'rgba(0, 217, 255, 0.6)\'; this.style.borderBottomColor=\'rgba(0, 217, 255, 0.3)\';">View Source</a>' +
-                            '</div>';
-                    });
-
-                    grid.innerHTML = html;
-                }
-
-                // Call after data loads
-                if (typeof loadThreatData !== 'undefined') {
-                    const originalLoadThreatData = loadThreatData;
-                    loadThreatData = function () {
-                        originalLoadThreatData();
-                        setTimeout(populateVendorGrid, 100);
-                        setTimeout(populateVendorGrid, 500);
-                    };
-                }
-
-                // Vendor grid population is now handled by consolidated initializeApp()
-            </script>
-
-            <style>
-                @keyframes pulse {
-
-                    0%,
-                    100% {
-                        opacity: 1;
-                        transform: scale(1);
+                    // Call after data loads
+                    if (typeof loadThreatData !== 'undefined') {
+                        const originalLoadThreatData = loadThreatData;
+                        loadThreatData = function () {
+                            originalLoadThreatData();
+                            setTimeout(populateVendorGrid, 100);
+                            setTimeout(populateVendorGrid, 500);
+                        };
                     }
 
-                    50% {
-                        opacity: 0.6;
-                        transform: scale(1.2);
+                    // Vendor grid population is now handled by consolidated initializeApp()
+                </script>
+
+                <style>
+                    @keyframes pulse {
+
+                        0%,
+                        100% {
+                            opacity: 1;
+                            transform: scale(1);
+                        }
+
+                        50% {
+                            opacity: 0.6;
+                            transform: scale(1.2);
+                        }
                     }
-                }
-            </style>
+                </style>
 
-            <div id="staticSnapshotContainer" style="margin: 2rem 0;">
-                <!-- This will be populated with static HTML from ti-snapshot.html -->
-                <!-- JavaScript will replace this with interactive content -->
-            </div>
-
-
-            <!-- Daily Analytics -->
-            <div class="analytics-section" id="analyticsSection" style="display: none;">
-                <h2>24-Hour Analytics & Trends</h2>
-
-                <!-- Analytics Metrics Row -->
-                <div
-                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
-                    <div
-                        style="background: linear-gradient(135deg, rgba(0, 217, 255, 0.1), rgba(0, 217, 255, 0.05)); border: 1px solid rgba(0, 217, 255, 0.2); border-radius: 12px; padding: 1.5rem;">
-                        <h3
-                            style="margin: 0 0 0.5rem 0; color: var(--text-muted); font-size: 0.9rem; font-weight: 600;">
-                            Threat Velocity</h3>
-                        <div id="threatVelocity"
-                            style="font-size: 2.5rem; font-weight: 700; color: var(--accent-cyan);">0</div>
-                        <div style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.25rem;">IOCs/hour</div>
-                    </div>
-
-                    <div
-                        style="background: linear-gradient(135deg, rgba(48, 209, 88, 0.1), rgba(48, 209, 88, 0.05)); border: 1px solid rgba(48, 209, 88, 0.2); border-radius: 12px; padding: 1.5rem;">
-                        <h3
-                            style="margin: 0 0 0.5rem 0; color: var(--text-muted); font-size: 0.9rem; font-weight: 600;">
-                            Data Freshness</h3>
-                        <div id="dataFreshness" style="font-size: 2.5rem; font-weight: 700; color: #30D158;">0%</div>
-                        <div style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.25rem;">Last 24 hours
-                        </div>
-                    </div>
-
-                    <div
-                        style="background: linear-gradient(135deg, rgba(255, 76, 76, 0.1), rgba(255, 76, 76, 0.05)); border: 1px solid rgba(255, 76, 76, 0.2); border-radius: 12px; padding: 1.5rem;">
-                        <h3
-                            style="margin: 0 0 0.5rem 0; color: var(--text-muted); font-size: 0.9rem; font-weight: 600;">
-                            Critical Threats</h3>
-                        <div id="criticalThreats"
-                            style="font-size: 2.5rem; font-weight: 700; color: var(--accent-red);">0</div>
-                        <div style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.25rem;">Requires Action
-                        </div>
-                    </div>
+                <div id="staticSnapshotContainer" style="margin: 2rem 0;">
+                    <!-- This will be populated with static HTML from ti-snapshot.html -->
+                    <!-- JavaScript will replace this with interactive content -->
                 </div>
 
-                <div class="analytics-grid" id="analyticsGrid">
-                    <!-- Analytics cards will be loaded dynamically -->
-                </div>
 
-                <!-- 7-Day Trend Charts -->
-                <h3 style="margin-top: 1rem; margin-bottom: 1.5rem; color: var(--text-primary);">7-Day Trends</h3>
+                <!-- Daily Analytics -->
+                <div class="analytics-section" id="analyticsSection" style="display: none;">
+                    <h2>24-Hour Analytics & Trends</h2>
 
-                <div
-                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+                    <!-- Analytics Metrics Row -->
                     <div
-                        style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 1.5rem;">
-                        <h4 style="margin: 0 0 1rem 0; color: var(--accent-cyan);">Total IOCs Trend</h4>
-                        <div style="height: 250px;">
-                            <canvas id="totalIOCsChart"></canvas>
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+                        <div
+                            style="background: linear-gradient(135deg, rgba(0, 217, 255, 0.1), rgba(0, 217, 255, 0.05)); border: 1px solid rgba(0, 217, 255, 0.2); border-radius: 12px; padding: 1.5rem;">
+                            <h3
+                                style="margin: 0 0 0.5rem 0; color: var(--text-muted); font-size: 0.9rem; font-weight: 600;">
+                                Threat Velocity</h3>
+                            <div id="threatVelocity"
+                                style="font-size: 2.5rem; font-weight: 700; color: var(--accent-cyan);">0</div>
+                            <div style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.25rem;">IOCs/hour
+                            </div>
+                        </div>
+
+                        <div
+                            style="background: linear-gradient(135deg, rgba(48, 209, 88, 0.1), rgba(48, 209, 88, 0.05)); border: 1px solid rgba(48, 209, 88, 0.2); border-radius: 12px; padding: 1.5rem;">
+                            <h3
+                                style="margin: 0 0 0.5rem 0; color: var(--text-muted); font-size: 0.9rem; font-weight: 600;">
+                                Data Freshness</h3>
+                            <div id="dataFreshness" style="font-size: 2.5rem; font-weight: 700; color: #30D158;">0%
+                            </div>
+                            <div style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.25rem;">Last 24
+                                hours
+                            </div>
+                        </div>
+
+                        <div
+                            style="background: linear-gradient(135deg, rgba(255, 76, 76, 0.1), rgba(255, 76, 76, 0.05)); border: 1px solid rgba(255, 76, 76, 0.2); border-radius: 12px; padding: 1.5rem;">
+                            <h3
+                                style="margin: 0 0 0.5rem 0; color: var(--text-muted); font-size: 0.9rem; font-weight: 600;">
+                                Critical Threats</h3>
+                            <div id="criticalThreats"
+                                style="font-size: 2.5rem; font-weight: 700; color: var(--accent-red);">0</div>
+                            <div style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.25rem;">Requires
+                                Action
+                            </div>
                         </div>
                     </div>
+
+                    <div class="analytics-grid" id="analyticsGrid">
+                        <!-- Analytics cards will be loaded dynamically -->
+                    </div>
+
+                    <!-- 7-Day Trend Charts -->
+                    <h3 style="margin-top: 1rem; margin-bottom: 1.5rem; color: var(--text-primary);">7-Day Trends</h3>
+
                     <div
-                        style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 1.5rem;">
-                        <h4 style="margin: 0 0 1rem 0; color: var(--accent-red);">New IOCs per Day</h4>
-                        <div style="height: 250px;">
-                            <canvas id="newIOCsChart"></canvas>
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+                        <div
+                            style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 1.5rem;">
+                            <h4 style="margin: 0 0 1rem 0; color: var(--accent-cyan);">Total IOCs Trend</h4>
+                            <div style="height: 250px;">
+                                <canvas id="totalIOCsChart"></canvas>
+                            </div>
+                        </div>
+                        <div
+                            style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 1.5rem;">
+                            <h4 style="margin: 0 0 1rem 0; color: var(--accent-red);">New IOCs per Day</h4>
+                            <div style="height: 250px;">
+                                <canvas id="newIOCsChart"></canvas>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </main>
 
     <!-- IOC Details Modal -->
@@ -1517,7 +1532,8 @@
     <footer class="footer">
         <p>&copy; 2024 TheHGTech. All rights reserved. | <a href="index.html">Home</a> | <a
                 href="threat-intel.html">Threat Intelligence</a></p>
-        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Live Cyber Threat Intelligence — Updated Every 2 Hours</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Live Cyber Threat Intelligence — Automated Collection Every 4
+            Hours</p>
     </footer>
 
     <!-- Load threat-intel.js -->
