@@ -95,6 +95,7 @@
     <link rel="stylesheet" href="advanced-filters.css">
     <link rel="stylesheet" href="ransomware-display.css">
     <link rel="stylesheet" href="ransomware-modal.css">
+    <link rel="stylesheet" href="header.css">
     <script src="dashboard-data.js" defer></script>
     <script src="threat-intel-tabs.js?v=20251127" defer></script>
 
@@ -132,206 +133,7 @@
             overflow-x: hidden;
         }
 
-        /* Theme Toggle - Creative Animated Switch */
-        .theme-toggle-wrapper {
-            position: relative;
-            width: 70px;
-            height: 36px;
-        }
-
-        .theme-toggle {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, #1a1a2e, #16213e);
-            border: 2px solid var(--border);
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-            overflow: hidden;
-            padding: 0;
-        }
-
-        .theme-toggle::before {
-            content: '';
-            position: absolute;
-            top: 3px;
-            left: 3px;
-            width: 26px;
-            height: 26px;
-            background: linear-gradient(135deg, #ffd93d, #ff9500);
-            border-radius: 50%;
-            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-            box-shadow: 0 0 20px rgba(255, 217, 61, 0.6);
-            z-index: 2;
-        }
-
-        .theme-toggle::after {
-            content: '✦';
-            position: absolute;
-            top: 50%;
-            right: 10px;
-            transform: translateY(-50%);
-            font-size: 0.8rem;
-            color: rgba(255, 255, 255, 0.6);
-            transition: all 0.5s ease;
-        }
-
-        .theme-toggle .toggle-stars {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-        }
-
-        .theme-toggle .star {
-            position: absolute;
-            width: 3px;
-            height: 3px;
-            background: white;
-            border-radius: 50%;
-            opacity: 0.7;
-            transition: opacity 0.5s ease;
-        }
-
-        .theme-toggle .star:nth-child(1) {
-            top: 8px;
-            right: 12px;
-        }
-
-        .theme-toggle .star:nth-child(2) {
-            top: 18px;
-            right: 20px;
-        }
-
-        .theme-toggle .star:nth-child(3) {
-            top: 12px;
-            right: 28px;
-        }
-
-        .theme-toggle .star:nth-child(4) {
-            top: 22px;
-            right: 15px;
-        }
-
-        body.light-mode .theme-toggle {
-            background: linear-gradient(135deg, #87CEEB, #98d9f0);
-            border-color: rgba(135, 206, 235, 0.5);
-        }
-
-        body.light-mode .theme-toggle::before {
-            transform: translateX(34px);
-            background: linear-gradient(135deg, #ffd93d, #ffb347);
-            box-shadow: 0 0 25px rgba(255, 179, 71, 0.8);
-        }
-
-        body.light-mode .theme-toggle::after {
-            content: '☁️';
-            left: 10px;
-            right: auto;
-            font-size: 0.9rem;
-            opacity: 0.8;
-        }
-
-        body.light-mode .theme-toggle .star {
-            opacity: 0;
-        }
-
-        .theme-toggle:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 20px rgba(255, 61, 61, 0.3);
-        }
-
-        .theme-toggle:active {
-            transform: scale(0.95);
-        }
-
-        /* Header */
-        .header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-            background: rgba(13, 13, 13, 0.95);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            padding: 1rem 0;
-        }
-
-        .header-content {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            text-decoration: none;
-        }
-
-        .logo-img {
-            height: 40px;
-            width: auto;
-            transition: opacity 0.3s ease;
-        }
-
-        .logo-text {
-            font-size: 1.8rem;
-            font-weight: 800;
-            background: linear-gradient(135deg, #FF3D3D, #ff8c8c);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            letter-spacing: -0.5px;
-        }
-
-        /* Show dark logo by default (dark mode) */
-        .logo-dark {
-            display: block;
-        }
-
-        .logo-light {
-            display: none;
-        }
-
-        /* Switch to light logo in light mode */
-        body.light-mode .logo-dark {
-            display: none;
-        }
-
-        body.light-mode .logo-light {
-            display: block;
-        }
-
-        .nav {
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-        }
-
-        .nav a {
-            color: var(--text-secondary);
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.95rem;
-            transition: all 0.3s ease;
-        }
-
-        .nav a:hover {
-            color: var(--text-primary);
-        }
-
-        .nav a.active {
-            color: var(--accent-cyan);
-        }
+        /* Header CSS moved to header.css */
 
         /* Hero Section */
         .ti-hero {
@@ -1037,42 +839,61 @@
 
 
     <!-- Header -->
-    <header class="header">
+    <!-- Header -->
+    <header class="header" role="banner">
         <div class="header-content">
-            <a href="index.html" class="logo">
-                <img src="logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark" height="40">
-                <img src="logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light" height="40">
-                <span class="logo-text">TheHGTech</span>
-            </a>
-            <nav class="nav">
-                <a href="index.html#news">News</a>
-                <a href="#" style="color: #00D9FF; position: relative;">
-                    Threat Intelligence
-                    <span
-                        style="font-size: 0.65rem; background: #FF4C4C; padding: 0.15rem 0.4rem; border-radius: 3px; margin-left: 0.3rem; animation: pulse 2s infinite;">LIVE</span>
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="logo.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
                 </a>
+            </div>
+
+            <nav class="nav" role="navigation">
+                <a href="index.html#news">News</a>
+                <a href="threat-intel.html">Threat Intelligence <span class="live-badge">LIVE</span></a>
                 <a href="index.html#cve">CVE</a>
-                <a href="/guides/">Guides</a>
-                <a href="index.html#articles">Articles</a>
-                <a href="index.html"
-                    onclick="alert('Please visit the home page to access Archives.'); return true;">Archives</a>
-                <a href="index.html"
-                    onclick="alert('Please visit the home page to access About.'); return true;">About</a>
-                <a href="index.html"
-                    onclick="alert('Please visit the home page to Contact us.'); return true;">Contact</a>
+                <a href="guides/">Guides</a>
+                <a href="comparisons/">Tool Comparisons</a>
+                <a href="articles.html">Articles</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#contact">Contact</a>
+
                 <div class="theme-toggle-wrapper">
-                    <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle theme">
-                        <div class="toggle-stars">
-                            <div class="star"></div>
-                            <div class="star"></div>
-                            <div class="star"></div>
-                            <div class="star"></div>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                        <div class="toggle-icon sun">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <div class="toggle-icon moon">
+                            <i class="fas fa-moon"></i>
                         </div>
                     </button>
                 </div>
             </nav>
+
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-theme-toggle" id="mobileThemeToggle">
+            <i class="fas fa-adjust"></i> Switch Theme
+        </div>
+        <a href="index.html#news">News</a>
+        <a href="threat-intel.html">Threat Intelligence</a>
+        <a href="index.html#cve">CVE</a>
+        <a href="guides/">Guides</a>
+        <a href="comparisons/">Tool Comparisons</a>
+        <a href="articles.html">Articles</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+    </div>
 
     <!-- SEO Fallback for Search Engines -->
     <noscript>
@@ -2636,28 +2457,60 @@
         }
 
         // Dark/Light Mode Toggle
-        function toggleTheme() {
-            document.body.classList.toggle('light-mode');
-            const isLightMode = document.body.classList.contains('light-mode');
-            localStorage.setItem('theme', isLightMode ? 'light' : 'dark');
-            document.getElementById('themeToggle').textContent = isLightMode ? '☀️' : '🌙';
+        // Header Functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            // Theme Toggle
+            const themeToggle = document.getElementById('themeToggle');
+            const mobileThemeToggle = document.getElementById('mobileThemeToggle');
+            const body = document.body;
 
-            // Update charts
-            updateChartsTheme();
-            if (window.updateDashboardChartsTheme) {
-                window.updateDashboardChartsTheme();
+            // Check local storage
+            if (localStorage.getItem('theme') === 'light') {
+                body.classList.add('light-mode');
+                if (typeof updateChartsTheme === 'function') updateChartsTheme();
             }
-        }
 
-        function loadThemePreference() {
-            const savedTheme = localStorage.getItem('theme');
-            if (savedTheme === 'light') {
-                document.body.classList.add('light-mode');
-                if (document.getElementById('themeToggle')) {
-                    document.getElementById('themeToggle').textContent = '☀️';
+            function toggleTheme() {
+                body.classList.toggle('light-mode');
+                const isLightMode = body.classList.contains('light-mode');
+
+                if (isLightMode) {
+                    localStorage.setItem('theme', 'light');
+                } else {
+                    localStorage.setItem('theme', 'dark');
                 }
+
+                // Update charts
+                if (typeof updateChartsTheme === 'function') updateChartsTheme();
+                if (window.updateDashboardChartsTheme) window.updateDashboardChartsTheme();
             }
-        }
+
+            if (themeToggle) themeToggle.addEventListener('click', toggleTheme);
+            if (mobileThemeToggle) mobileThemeToggle.addEventListener('click', toggleTheme);
+
+            // Mobile Menu
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const mobileMenu = document.querySelector('.mobile-menu');
+
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('active');
+                    mobileMenuBtn.classList.toggle('active');
+
+                    // Animate hamburger
+                    const spans = mobileMenuBtn.querySelectorAll('span');
+                    if (mobileMenu.classList.contains('active')) {
+                        spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+                        spans[1].style.opacity = '0';
+                        spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
+                    } else {
+                        spans[0].style.transform = 'none';
+                        spans[1].style.opacity = '1';
+                        spans[2].style.transform = 'none';
+                    }
+                });
+            }
+        });
 
         // Load Static Snapshot for SEO (loads immediately, replaced by JS later)
         function loadStaticSnapshot() {

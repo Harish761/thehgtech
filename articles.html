@@ -39,6 +39,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="article-modal.css">
     <link rel="stylesheet" href="article-links-fix.css">
+    <link rel="stylesheet" href="header.css">
 
     <!-- ========== STRUCTURED DATA ========== -->
     <script type="application/ld+json">
@@ -83,52 +84,7 @@
             min-height: 100vh;
         }
 
-        /* Header */
-        .header {
-            background: var(--bg-secondary);
-            border-bottom: 1px solid var(--border);
-            padding: 1.5rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            backdrop-filter: blur(10px);
-        }
-
-        .header-content {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .logo-accent {
-            color: var(--accent);
-        }
-
-        .nav-link {
-            color: var(--text-secondary);
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            border-radius: 6px;
-            transition: all 0.3s ease;
-        }
-
-        .nav-link:hover {
-            color: var(--text-primary);
-            background: var(--bg-tertiary);
-        }
+        /* Header CSS moved to header.css */
 
         /* Hero Section */
         .hero {
@@ -402,14 +358,61 @@
 
 <body>
     <!-- Header -->
-    <header class="header">
+    <!-- Header -->
+    <header class="header" role="banner">
         <div class="header-content">
-            <a href="index.html" class="logo">
-                <img src="logo-dark.png" alt="TheHGTech" style="height: 40px; width: auto;">
-            </a>
-            <a href="index.html" class="nav-link">← Back to Home</a>
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="logo.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+
+            <nav class="nav" role="navigation">
+                <a href="index.html#news">News</a>
+                <a href="threat-intel.html">Threat Intelligence <span class="live-badge">LIVE</span></a>
+                <a href="index.html#cve">CVE</a>
+                <a href="guides/">Guides</a>
+                <a href="comparisons/">Tool Comparisons</a>
+                <a href="articles.html">Articles</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#contact">Contact</a>
+
+                <div class="theme-toggle-wrapper">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                        <div class="toggle-icon sun">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <div class="toggle-icon moon">
+                            <i class="fas fa-moon"></i>
+                        </div>
+                    </button>
+                </div>
+            </nav>
+
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-theme-toggle" id="mobileThemeToggle">
+            <i class="fas fa-adjust"></i> Switch Theme
+        </div>
+        <a href="index.html#news">News</a>
+        <a href="threat-intel.html">Threat Intelligence</a>
+        <a href="index.html#cve">CVE</a>
+        <a href="guides/">Guides</a>
+        <a href="comparisons/">Tool Comparisons</a>
+        <a href="articles.html">Articles</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+    </div>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -816,6 +819,55 @@
 
         // Initialize
         loadArticles();
+    </script>
+    <script>
+        // Header Functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            // Theme Toggle
+            const themeToggle = document.getElementById('themeToggle');
+            const mobileThemeToggle = document.getElementById('mobileThemeToggle');
+            const body = document.body;
+
+            // Check local storage
+            if (localStorage.getItem('theme') === 'light') {
+                body.classList.add('light-mode');
+            }
+
+            function toggleTheme() {
+                body.classList.toggle('light-mode');
+                if (body.classList.contains('light-mode')) {
+                    localStorage.setItem('theme', 'light');
+                } else {
+                    localStorage.setItem('theme', 'dark');
+                }
+            }
+
+            if (themeToggle) themeToggle.addEventListener('click', toggleTheme);
+            if (mobileThemeToggle) mobileThemeToggle.addEventListener('click', toggleTheme);
+
+            // Mobile Menu
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const mobileMenu = document.querySelector('.mobile-menu');
+
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('active');
+                    mobileMenuBtn.classList.toggle('active');
+
+                    // Animate hamburger
+                    const spans = mobileMenuBtn.querySelectorAll('span');
+                    if (mobileMenu.classList.contains('active')) {
+                        spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+                        spans[1].style.opacity = '0';
+                        spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
+                    } else {
+                        spans[0].style.transform = 'none';
+                        spans[1].style.opacity = '1';
+                        spans[2].style.transform = 'none';
+                    }
+                });
+            }
+        });
     </script>
 </body>
 
