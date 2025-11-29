@@ -128,8 +128,9 @@ function createAnalyticsSummary(metrics) {
     ]);
     container.appendChild(vectorCard);
 
-    // Top Campaigns
-    const campaignCard = createCampaignsCard(metrics.campaigns);
+    // Top Campaigns (get from dailySummary instead of metrics)
+    const campaigns = window.threatIntelData.dailySummary?.campaigns || [];
+    const campaignCard = createCampaignsCard(campaigns);
     container.appendChild(campaignCard);
 }
 
@@ -166,9 +167,10 @@ function createCampaignsCard(campaigns) {
     card.className = 'analytics-card';
     card.style.cssText = 'background: var(--glass); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem;';
 
-    const sortedCampaigns = Object.entries(campaigns)
-        .sort((a, b) => b[1].count - a[1].count)
-        .slice(0, 5);
+    // campaigns is now an array of objects with {name, count, types, sampleIndicators}
+    const sortedCampaigns = Array.isArray(campaigns) ?
+        campaigns.slice(0, 5) : // Already sorted by Python script
+        [];
 
     let html = `<h3 style="margin: 0 0 1rem 0; color: var(--text-primary); font-size: 1.1rem;">Top Threat Campaigns</h3>`;
 
@@ -176,16 +178,21 @@ function createCampaignsCard(campaigns) {
         html += `<p style="color: var(--text-muted); font-size: 0.9rem;">No campaign data available</p>`;
     } else {
         html += `<div style="overflow-x: auto;">`;
-        sortedCampaigns.forEach(([name, data], index) => {
+        sortedCampaigns.forEach((campaign, index) => {
             const badge = index === 0 ? '🥇' : index === 1 ? '🥈' : index === 2 ? '🥉' : '•';
+            const name = campaign.name || 'Unknown';
+            const count = campaign.count || 0;
+            const types = campaign.types ? campaign.types.join(', ') : 'unknown';
+
             html += `
                 <div style="padding: 0.75rem; background: rgba(255, 255, 255, 0.02); border-radius: 8px; margin-bottom: 0.5rem; border-left: 3px solid var(--accent-cyan);">
                     <div style="display: flex; justify-content: space-between; align-items: center;">
                         <div>
                             <span style="margin-right: 0.5rem;">${badge}</span>
                             <span style="color: var(--text-primary); font-weight: 500;">${name}</span>
+                            <div style="color: var(--text-muted); font-size: 0.75rem; margin-top: 0.25rem; margin-left: 1.5rem;">Types: ${types}</div>
                         </div>
-                        <span style="color: var(--accent-cyan); font-weight: 600;">${data.count} IOCs</span>
+                        <span style="color: var(--accent-cyan); font-weight: 600;">${count} IOCs</span>
                     </div>
                 </div>
             `;

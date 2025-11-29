@@ -2040,7 +2040,7 @@
 
             let totalIOCs = 0;
             let newIOCs = 0;
-            const campaigns = new Set();
+            let activeCampaigns = 0;
 
             Object.values(window.threatIntelData.vendors).forEach(vendor => {
                 // Use stats metadata instead of iocs array
@@ -2048,17 +2048,12 @@
                     totalIOCs += vendor.stats.total || 0;
                     newIOCs += vendor.stats.newInLastHour || 0;
                 }
-
-                // Collect campaigns from sample indicators if available
-                if (vendor.sampleIndicators) {
-                    vendor.sampleIndicators.forEach(indicator => {
-                        // Extract campaign from indicator if it's an object
-                        if (typeof indicator === 'object' && indicator.campaign) {
-                            campaigns.add(indicator.campaign);
-                        }
-                    });
-                }
             });
+
+            // Get active campaigns from dailySummary (calculated by Python script)
+            if (window.threatIntelData.dailySummary && window.threatIntelData.dailySummary.stats) {
+                activeCampaigns = window.threatIntelData.dailySummary.stats.activeCampaigns || 0;
+            }
 
             const totalElement = document.getElementById('totalIOCs');
             const newElement = document.getElementById('newIOCs');
@@ -2085,13 +2080,13 @@
             }
 
             if (campaignsElement) {
-                campaignsElement.textContent = campaigns.size.toLocaleString();
-                console.log('Updated activeCampaigns to:', campaigns.size);
+                campaignsElement.textContent = activeCampaigns.toLocaleString();
+                console.log('Updated activeCampaigns to:', activeCampaigns);
             } else {
                 console.error('activeCampaigns element not found!');
             }
 
-            console.log(`Statistics updated: ${totalIOCs} total, ${newIOCs} new, ${campaigns.size} campaigns`);
+            console.log(`Statistics updated: ${totalIOCs} total, ${newIOCs} new, ${activeCampaigns} campaigns`);
         }
 
 
