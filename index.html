@@ -2235,18 +2235,28 @@
 
         .modal-close {
             position: absolute;
-            top: 1rem;
-            right: 1rem;
-            background: none;
-            border: none;
-            color: var(--text-secondary);
-            font-size: 1.5rem;
+            top: 1.5rem;
+            right: 1.5rem;
+            background: rgba(255, 61, 61, 0.1);
+            border: 1px solid rgba(255, 61, 61, 0.3);
+            color: #FF3D3D;
+            font-size: 2rem;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
             cursor: pointer;
-            transition: color 0.3s ease;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+            z-index: 10;
         }
 
         .modal-close:hover {
-            color: var(--accent);
+            background: rgba(255, 61, 61, 0.2);
+            border-color: #FF3D3D;
+            transform: rotate(90deg);
         }
 
         .modal-content h2 {
@@ -2907,25 +2917,83 @@
     <div class="modal" id="contactModal">
         <div class="modal-content">
             <button class="modal-close" onclick="closeModal('contact')">&times;</button>
-            <h2>Contact Us</h2>
-            <p>We'd love to hear from you! Reach out through any of the following channels:</p>
-            <h3>Email</h3>
-            <p><a href="/cdn-cgi/l/email-protection#c4aca5b6adb7ac84b0aca1aca3b0a1a7aceaa7aba9"
-                    style="color: var(--accent);"><span class="__cf_email__"
-                        data-cfemail="1d757c6f746e755d697578757a69787e75337e7270">[email&#160;protected]</span></a></p>
-            <h3>Social Media</h3>
-            <ul>
-                <li><a href="https://twitter.com/thehgtech" target="_blank" rel="noopener noreferrer"
-                        style="color: var(--accent);">Twitter/X: @thehgtech</a></li>
-                <li><a href="https://www.linkedin.com/in/harish-g-2216955b/" target="_blank" rel="noopener noreferrer"
-                        style="color: var(--accent);">LinkedIn: Harish G</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=61582408623186" target="_blank"
-                        rel="noopener noreferrer" style="color: var(--accent);">Facebook: TheHGTech</a></li>
-                <li><a href="https://youtube.com/@thehgtech" target="_blank" rel="noopener noreferrer"
-                        style="color: var(--accent);">YouTube: @thehgtech</a></li>
-            </ul>
-            <p>For business inquiries, partnerships, or press requests, please use the email above with a clear subject
-                line.</p>
+            <div style='padding: 0.5rem;'>
+                <div style='text-align: center; margin-bottom: 2.5rem;'>
+                    <h2
+                        style='font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; background: linear-gradient(135deg, #FF3D3D, #00D9FF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;'>
+                        Contact Us</h2>
+                    <p
+                        style='font-size: 1.15rem; color: var(--text-secondary); line-height: 1.7; max-width: 700px; margin: 0 auto;'>
+                        We'd love to hear from you! Reach out through any of the following channels.</p>
+                </div>
+
+                <div
+                    style='background: linear-gradient(135deg, rgba(255, 61, 61, 0.05), rgba(0, 217, 255, 0.05)); border: 1px solid rgba(255, 61, 61, 0.2); border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem;'>
+                    <h3 style='color: #FF3D3D; font-size: 1.6rem; margin-bottom: 1.25rem; font-weight: 700;'>Email</h3>
+                    <p style='color: var(--text-secondary); line-height: 1.9; font-size: 1.1rem;'>
+                        <a href="/cdn-cgi/l/email-protection#c4aca5b6adb7ac84b0aca1aca3b0a1a7aceaa7aba9"
+                            style="color: #00D9FF; text-decoration: none; font-weight: 600; font-size: 1.2rem;">
+                            <span class="__cf_email__"
+                                data-cfemail="1d757c6f746e755d697578757a69787e75337e7270">[email&#160;protected]</span>
+                        </a>
+                    </p>
+                </div>
+
+                <div
+                    style='display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 2rem;'>
+                    <div
+                        style='background: rgba(255, 61, 61, 0.05); border-left: 4px solid #FF3D3D; border-radius: 8px; padding: 2rem;'>
+                        <h4 style='color: #FF3D3D; font-size: 1.3rem; margin-bottom: 0.75rem; font-weight: 700;'>Twitter
+                            / X</h4>
+                        <p style='color: var(--text-secondary); font-size: 1rem; line-height: 1.7;'>
+                            <a href="https://twitter.com/thehgtech" target="_blank" rel="noopener noreferrer"
+                                style="color: #00D9FF; text-decoration: none; font-weight: 500;">@thehgtech</a>
+                        </p>
+                    </div>
+
+                    <div
+                        style='background: rgba(0, 217, 255, 0.05); border-left: 4px solid #00D9FF; border-radius: 8px; padding: 2rem;'>
+                        <h4 style='color: #00D9FF; font-size: 1.3rem; margin-bottom: 0.75rem; font-weight: 700;'>
+                            LinkedIn</h4>
+                        <p style='color: var(--text-secondary); font-size: 1rem; line-height: 1.7;'>
+                            <a href="https://www.linkedin.com/in/harish-g-2216955b/" target="_blank"
+                                rel="noopener noreferrer"
+                                style="color: #00D9FF; text-decoration: none; font-weight: 500;">Harish G</a>
+                        </p>
+                    </div>
+
+                    <div
+                        style='background: rgba(255, 61, 61, 0.05); border-left: 4px solid #FF3D3D; border-radius: 8px; padding: 2rem;'>
+                        <h4 style='color: #FF3D3D; font-size: 1.3rem; margin-bottom: 0.75rem; font-weight: 700;'>
+                            Facebook</h4>
+                        <p style='color: var(--text-secondary); font-size: 1rem; line-height: 1.7;'>
+                            <a href="https://www.facebook.com/profile.php?id=61582408623186" target="_blank"
+                                rel="noopener noreferrer"
+                                style="color: #00D9FF; text-decoration: none; font-weight: 500;">TheHGTech</a>
+                        </p>
+                    </div>
+
+                    <div
+                        style='background: rgba(0, 217, 255, 0.05); border-left: 4px solid #00D9FF; border-radius: 8px; padding: 2rem;'>
+                        <h4 style='color: #00D9FF; font-size: 1.3rem; margin-bottom: 0.75rem; font-weight: 700;'>YouTube
+                        </h4>
+                        <p style='color: var(--text-secondary); font-size: 1rem; line-height: 1.7;'>
+                            <a href="https://youtube.com/@thehgtech" target="_blank" rel="noopener noreferrer"
+                                style="color: #00D9FF; text-decoration: none; font-weight: 500;">@thehgtech</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    style='background: linear-gradient(135deg, rgba(255, 61, 61, 0.08), rgba(0, 217, 255, 0.08)); border: 1px solid rgba(255, 61, 61, 0.25); border-radius: 16px; padding: 2.5rem; text-align: center;'>
+                    <p style='color: var(--text-secondary); line-height: 1.8; font-size: 1.05rem;'>
+                        For <strong style='color: var(--text-primary);'>business inquiries</strong>, <strong
+                            style='color: var(--text-primary);'>partnerships</strong>, or <strong
+                            style='color: var(--text-primary);'>press requests</strong>, please use the email above with
+                        a clear subject line.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 
