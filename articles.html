@@ -580,6 +580,20 @@
             const wordCount = article.content.replace(/<[^>]*>/g, '').split(/\s+/).length;
             const readingTime = Math.ceil(wordCount / 200);
 
+            // Strip the article's internal header/h1 to avoid duplication
+            // Remove <header>...</header> and standalone <h1>...</h1> from article content
+            let cleanContent = article.content;
+
+            // Remove header tag and its contents
+            cleanContent = cleanContent.replace(/<header>[\s\S]*?<\/header>/gi, '');
+
+            // Remove the first h1 tag (article title) if it exists
+            cleanContent = cleanContent.replace(/<h1[^>]*>[\s\S]*?<\/h1>/i, '');
+
+            // Remove opening <article> tag if exists, but keep the content
+            cleanContent = cleanContent.replace(/<article[^>]*>/gi, '');
+            cleanContent = cleanContent.replace(/<\/article>/gi, '');
+
             // Create full-page article view
             const articlePage = `
 <!DOCTYPE html>
@@ -768,7 +782,7 @@
         </header>
 
         <article class="content">
-            ${article.content}
+            ${cleanContent}
         </article>
     </div>
 </body>
