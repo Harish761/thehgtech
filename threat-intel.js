@@ -1,5 +1,5 @@
 // Auto-Generated Threat Intel (Multi-Vendor Dashboard)
-// Updated: 2025-11-30T08:19:37.801546+05:30 IST
+// Updated: 2025-11-30T08:50:00.935805+05:30 IST
 // Sources: OpenPhish, Malware Bazaar, Spamhaus DROP, CINS Army, Blocklist.de, URLhaus, ThreatFox, Feodo Tracker, SSL Blacklist
 // NOTE: Full IOC lists are stored in GitHub Pages (ioc-data/) and loaded on-demand
 
@@ -209,39 +209,177 @@ window.threatIntelData = {
     "overview": [],
     "dailySummary": {
         "stats": {
-            "totalIndicators": 0,
-            "activeSources": 0,
-            "criticalAlerts": 0,
-            "activeCampaigns": 0
+            "totalIndicators": 66593,
+            "activeSources": 8,
+            "criticalAlerts": 38736,
+            "activeCampaigns": 214
         },
         "topThreats": [
             {
-                "category": "Phishing",
-                "count": 0,
-                "trend": "stable",
-                "percentage": 0
-            },
-            {
                 "category": "Malware",
-                "count": 0,
-                "trend": "stable",
-                "percentage": 0
-            },
-            {
-                "category": "C2",
-                "count": 0,
-                "trend": "stable",
-                "percentage": 0
+                "count": 30237,
+                "trend": "up",
+                "percentage": 100
             },
             {
                 "category": "Botnet",
-                "count": 0,
-                "trend": "stable",
+                "count": 10587,
+                "trend": "up",
+                "percentage": 100
+            },
+            {
+                "category": "C2",
+                "count": 8499,
+                "trend": "up",
+                "percentage": 100
+            },
+            {
+                "category": "Phishing",
+                "count": 300,
+                "trend": "up",
+                "percentage": 100
+            }
+        ],
+        "targetedSectors": [
+            {
+                "name": "General",
+                "percentage": 98
+            },
+            {
+                "name": "Tech",
+                "percentage": 1
+            },
+            {
+                "name": "Finance",
+                "percentage": 0
+            },
+            {
+                "name": "Government",
                 "percentage": 0
             }
         ],
-        "targetedSectors": [],
-        "campaigns": []
+        "campaigns": [
+            {
+                "name": "malware_download",
+                "count": 29238,
+                "types": [
+                    "url"
+                ],
+                "sampleIndicators": [
+                    "hxxps://snd7go[.]soundg0[.]ru/zq657l9b",
+                    "hxxp://115[.]56[.]151[.]40:55952/i",
+                    "hxxp://182[.]117[.]24[.]148:48369/bin[.]sh"
+                ]
+            },
+            {
+                "name": "CINS Threat List",
+                "count": 15000,
+                "types": [
+                    "ip"
+                ],
+                "sampleIndicators": [
+                    "1[.]1[.]176[.]58",
+                    "1[.]117[.]17[.]128",
+                    "1[.]119[.]194[.]226"
+                ]
+            },
+            {
+                "name": " \"js.clearfake\"",
+                "count": 10184,
+                "types": [
+                    "url"
+                ],
+                "sampleIndicators": [
+                    " \"snd7go[.]soundg0[.]ru\"",
+                    " \"c4lmly[.]windzero[.]ru\"",
+                    " \"breez9[.]windzero[.]ru\""
+                ]
+            },
+            {
+                "name": "Spamhaus DROP List",
+                "count": 1458,
+                "types": [
+                    "ip-range"
+                ],
+                "sampleIndicators": [
+                    "1.10.16.0/20",
+                    "1.19.0.0/16",
+                    "1.32.128.0/18"
+                ]
+            },
+            {
+                "name": "AsyncRAT",
+                "count": 1352,
+                "types": [
+                    "ssl-cert"
+                ],
+                "sampleIndicators": [
+                    "6137c89b82c858af9f0101ebc77af7d262ce5b73",
+                    "6f6c70df3fd9f7a5f984e44b63720d670ea7ee0f",
+                    "c342706c95a15711fd6d9d6e3f4a543957b85a76"
+                ]
+            },
+            {
+                "name": "Dridex",
+                "count": 737,
+                "types": [
+                    "ssl-cert"
+                ],
+                "sampleIndicators": [
+                    "550e1cde5c59d03b6f3b9bd3ebfc4af6c7dbec48",
+                    "38ecc7c543c90d25571eae05fbd1948a310761b7",
+                    "6c1cd5f3b4f1a6da97a199397b1bae8226aac7bc"
+                ]
+            },
+            {
+                "name": " \"Mirai",
+                "count": 619,
+                "types": [
+                    "hash"
+                ],
+                "sampleIndicators": [
+                    " \"0768380847fec204052caea7d521b23d739ee8fedbc23831bf2549bae3fb03de",
+                    " \"5a7827d9681297873e4fbc739522260acd2734824add84af2744248acf661a60",
+                    " \"893cd4107f8be6a0f86d1dbf376352a029700c64b41a6cb69b47e4289d11bca1"
+                ]
+            },
+            {
+                "name": "QuasarRAT",
+                "count": 590,
+                "types": [
+                    "ssl-cert"
+                ],
+                "sampleIndicators": [
+                    "3100a40b0b16050f4befdffd447a5a16c7bb23de",
+                    "ec1ed7b8bd2ed1362b76197ba2c662c51b8761de",
+                    "7e14ce629dff54a5b6a7b65ecdfe3f45e17bb135"
+                ]
+            },
+            {
+                "name": "LummaStealer",
+                "count": 533,
+                "types": [
+                    "ssl-cert"
+                ],
+                "sampleIndicators": [
+                    "1d28cc6dca52e95f859739c39a04d794671f66d9",
+                    "7b7c48a7d10c11ab988801fec68db41f6935ecf4",
+                    "b57cc0f34294222d350c45d62c735547c8882195"
+                ]
+            },
+            {
+                "name": "Rhadamanthys",
+                "count": 355,
+                "types": [
+                    "ssl-cert"
+                ],
+                "sampleIndicators": [
+                    "f999c0da0e983becc1c935444c5e609be26b0bcf",
+                    "4101579ae950c954fc1096adf43bdefcf0364cfd",
+                    "0c3ee8188ce35b6bb11d5b12a0e1e28310188b4e"
+                ]
+            }
+        ]
     },
     "snapshotMetrics": {
         "topAttackVector": "Malicious URLs",

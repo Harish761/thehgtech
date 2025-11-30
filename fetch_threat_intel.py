@@ -1611,8 +1611,27 @@ def run_daily():
         print("  ✗ No existing data to calculate analytics from")
         return
     
-    # Calculate daily summary
-    summary = generate_daily_summary(existing['vendors'], load_history())
+    # Load IOC data from ioc-data files
+    vendors_with_iocs = {}
+    for vendor_name in existing['vendors'].keys():
+        ioc_file = f"ioc-data/{vendor_name.lower().replace(' ', '-')}.json"
+        if os.path.exists(ioc_file):
+            try:
+                with open(ioc_file, 'r') as f:
+                    ioc_data = json.load(f)
+                    vendors_with_iocs[vendor_name] = {
+                        **existing['vendors'][vendor_name],
+                        'iocs': ioc_data.get('iocs', [])
+                    }
+                    print(f"  ✓ Loaded {len(ioc_data.get('iocs', []))} IOCs from {vendor_name}")
+            except Exception as e:
+                print(f"  ✗ Error loading {ioc_file}: {e}")
+                vendors_with_iocs[vendor_name] = existing['vendors'][vendor_name]
+        else:
+            vendors_with_iocs[vendor_name] = existing['vendors'][vendor_name]
+    
+    # Calculate daily summary with loaded IOC data
+    summary = generate_daily_summary(vendors_with_iocs, load_history())
     
     # Update existing data with new summary
     existing['dailySummary'] = summary
