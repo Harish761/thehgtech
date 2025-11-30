@@ -195,6 +195,146 @@ Make titles specific and actionable (e.g., "Microsoft Security Update", "Cisco P
     return remediation_links
 
 
+def detect_zero_day(nvd_data: Dict, cisa_vuln: Dict, remediation_links: List[Dict], vendor: str, product: str) -> bool:
+    """
+    Enhanced zero-day detection using multiple factors:
+    1. Timeline analysis (publication vs exploitation)
+    2. Patch availability when added to CISA KEV
+    3. Description keywords (optional AI analysis)
+    4. Vendor response time
+    """
+    
+    if not nvd_data:
+        return False
+    
+    # Factor 1: Timeline Analysis
+    # True zero-days are exploited within days of disclosure (or before)
+    published = nvd_data.get('published', '')
+    if not published:
+        return False
+    
+    try:
+        pub_date = datetime.fromisoformat(published.replace('Z', '+00:00'))
+        added_date = datetime.fromisoformat(cisa_vuln['dateAdded'])
+        days_diff = (added_date - pub_date).days
+        
+        # If exploited before publication or within 3 days = likely zero-day
+        timeline_score = 0
+        if days_diff < 0:
+            # Exploited BEFORE CVE published = definite zero-day
+            timeline_score = 3
+        elif days_diff <= 3:
+            # Exploited within 3 days = very likely zero-day
+            timeline_score = 2
+        elif days_diff <= 7:
+            # Exploited within 7 days = possibly zero-day
+            timeline_score = 1
+        else:
+            # Exploited after 7+ days = unlikely zero-day
+            timeline_score = 0
+    except:
+        timeline_score = 0
+    
+    # Factor 2: Patch Availability
+    # True zero-days often have no patch when first exploited
+    patch_score = 0
+    if not remediation_links or len(remediation_links) == 0:
+        # No patches available = higher zero-day likelihood
+        patch_score = 2
+    elif len(remediation_links) <= 1:
+        # Very few patches = moderate likelihood
+        patch_score = 1
+    else:
+        # Multiple patches available = lower likelihood
+        patch_score = 0
+    
+    # Factor 3: Description Keywords
+    # Check for zero-day indicators in CVE description
+    description = cisa_vuln.get('vulnerabilityName', '').lower()
+    short_desc = cisa_vuln.get('shortDescription', '').lower()
+    combined_desc = f"{description} {short_desc}"
+    
+    zero_day_keywords = [
+        'zero-day', 'zero day', '0-day', '0day',
+        'in the wild', 'actively exploited',
+        'no patch', 'unpatched', 'unknown vulnerability',
+        'before disclosure', 'prior to patch'
+    ]
+    
+    keyword_score = 0
+    for keyword in zero_day_keywords:
+        if keyword in combined_desc:
+            keyword_score = 2
+            break
+    
+    # Factor 4: Optional AI Verification (if OpenAI key available)
+    ai_score = 0
+    if OPENAI_API_KEY and timeline_score >= 1:
+        ai_score = verify_zero_day_with_ai(cisa_vuln['cveID'], combined_desc, days_diff)
+    
+    # Calculate total score
+    total_score = timeline_score + patch_score + keyword_score + ai_score
+    
+    # Scoring thresholds:
+    # 6+: Definite zero-day
+    # 4-5: Very likely zero-day
+    # 2-3: Possible zero-day
+    # 0-1: Unlikely zero-day
+    
+    is_zero_day = total_score >= 4
+    
+    # Debug logging
+    if is_zero_day:
+        print(f"    🚨 Zero-day detected! Score: {total_score} (timeline:{timeline_score}, patch:{patch_score}, keyword:{keyword_score}, ai:{ai_score})")
+    
+    return is_zero_day
+
+
+def verify_zero_day_with_ai(cve_id: str, description: str, days_diff: int) -> int:
+    """Use AI to verify if CVE is likely a zero-day based on description"""
+    if not OPENAI_API_KEY:
+        return 0
+    
+    try:
+        prompt = f"""Analyze if {cve_id} is a zero-day vulnerability.
+
+Description: {description[:500]}
+Time to exploitation: {days_diff} days after publication
+
+A zero-day is exploited before or shortly after disclosure, with no patch available.
+
+Answer with just: "YES" (definite zero-day), "LIKELY" (probable), or "NO" (not zero-day)."""
+
+        response = requests.post(
+            'https://api.openai.com/v1/chat/completions',
+            headers={
+                'Authorization': f'Bearer {OPENAI_API_KEY}',
+                'Content-Type': 'application/json'
+            },
+            json={
+                'model': 'gpt-4o-mini',
+                'messages': [{'role': 'user', 'content': prompt}],
+                'temperature': 0.1,
+                'max_tokens': 10
+            },
+            timeout=10
+        )
+        
+        if response.status_code == 200:
+            result = response.json()
+            answer = result['choices'][0]['message']['content'].strip().upper()
+            
+            if 'YES' in answer or 'DEFINITE' in answer:
+                return 2  # High confidence
+            elif 'LIKELY' in answer or 'PROBABLE' in answer:
+                return 1  # Moderate confidence
+        
+    except Exception as e:
+        print(f"    ⚠️  AI zero-day verification failed: {e}")
+    
+    return 0
+
+
 def determine_severity(nvd_data: Dict) -> str:
     """Determine severity from NVD CVSS scores"""
     if not nvd_data:
@@ -249,15 +389,14 @@ def process_cve(cisa_vuln: Dict) -> Dict:
     # Determine severity
     severity = determine_severity(nvd_data)
     
-    # Check if zero-day (published date close to date added)
-    is_zero_day = False
-    if nvd_data:
-        published = nvd_data.get('published', '')
-        if published:
-            pub_date = datetime.fromisoformat(published.replace('Z', '+00:00'))
-            added_date = datetime.fromisoformat(cisa_vuln['dateAdded'])
-            days_diff = (added_date - pub_date).days
-            is_zero_day = days_diff < 7  # Published within 7 days of being added to KEV
+    # Enhanced zero-day detection
+    is_zero_day = detect_zero_day(
+        nvd_data=nvd_data,
+        cisa_vuln=cisa_vuln,
+        remediation_links=remediation_links,
+        vendor=vendor,
+        product=product
+    )
     
     cve_entry = {
         'cveId': cve_id,
