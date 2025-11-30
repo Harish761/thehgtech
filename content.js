@@ -1,104 +1,107 @@
+// TheHGTech Website Content
+// Update this file to change website content
+
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Nov 30 2025",
+            "title": "CISA Identifies Active Exploitation of OpenPLC ScadaBR XSS Vulnerability",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added CVE-2021-26829 to its Known Exploited Vulnerabilities (KEV) catalog due to active exploitation. This cross-site scripting (XSS) vulnerability affects OpenPLC ScadaBR, a popular open-source platform used in industrial control systems. With a CVSS score of 5.4, the flaw allows attackers to execute arbitrary scripts in the context of the user&#x27;s browser, posing a significant risk to affected systems. The inclusion of this vulnerability in the KEV catalog underscores the ongoing threat to critical infrastructure from web-based attacks. Organizations using OpenPLC ScadaBR should apply patches or mitigations promptly to safeguard their systems.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/11/cisa-adds-actively-exploited-xss-bug.html"
+        },
+        {
             "date": "Nov 29 2025",
-            "title": "Asahi Group's Cyberattack Affects 1.9 Million Individuals",
-            "content": "Asahi Group Holdings has concluded its investigation into a cyberattack from September, revealing that up to 1.9 million individuals were affected. The breach involved unauthorized access to personal data, though the company has not specified the exact nature of the compromised information. This incident highlights the vulnerability of large consumer brands to sophisticated cyber threats. Asahi has since implemented additional security measures to prevent future breaches. Customers are advised to monitor their accounts for suspicious activity and change any potentially compromised passwords. The attack underscores the growing threat landscape facing multinational corporations.",
+            "title": "OpenAI Tests In-ChatGPT Ads, Signaling Shift in Web Economy",
+            "content": "OpenAI is reportedly testing advertisements within its ChatGPT platform, a move that could significantly alter the digital advertising landscape. The internal testing phase aims to explore how ads can be integrated without disrupting user experience. This development comes as AI-driven platforms increasingly seek monetization strategies beyond subscription models. The introduction of ads in ChatGPT could set a precedent for other AI services, influencing how digital content is funded and consumed. Stakeholders in the tech industry should monitor these developments closely, as they may impact advertising strategies and user engagement metrics.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/japanese-beer-giant-asahi-says-data-breach-hit-15-million-people/"
+            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/leak-confirms-openai-is-preparing-ads-on-chatgpt-for-public-roll-out/"
         },
         {
             "date": "Nov 28 2025",
-            "title": "Seven-Year Sentence for Operator of In-Flight Evil Twin WiFi Scheme",
-            "content": "A 44-year-old man has been sentenced to over seven years in prison for running an \"evil twin\" WiFi network to steal travelers' data at Australian airports. This technique involves setting up a WiFi network that mimics legitimate airport networks, tricking users into connecting and exposing their personal information. The conviction serves as a warning about the risks of unsecured public WiFi networks. Travelers should use VPNs and verify network authenticity before connecting. This case highlights the ongoing need for heightened security measures in public spaces to protect against increasingly sophisticated cybercriminal techniques.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/man-behind-in-flight-evil-twin-wifi-attacks-gets-7-years-in-prison/"
+            "title": "Cyberattack on French Soccer Federation Compromises Member Data",
+            "content": "The French Soccer Federation has suffered a cyberattack resulting in unauthorized access to member data through a compromised account. The breach highlights the vulnerability of sports organizations to cyber threats, especially those involving personal and sensitive information. The federation is currently assessing the extent of the data stolen and has initiated measures to secure its systems. This incident serves as a reminder of the importance of robust cybersecurity practices, particularly in safeguarding access credentials. Affected members should be vigilant for any signs of identity theft or fraud and consider changing their passwords.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/french-soccer-federation-hit-by-cyberattack-member-data-stolen/"
         },
         {
             "date": "Nov 28 2025",
-            "title": "Windows 11 Update Causes Password Login Option to Disappear",
-            "content": "Microsoft has issued a warning that recent Windows 11 updates may cause the password login option to become invisible on the lock screen, though it remains functional. This issue has been occurring with updates released since August, affecting users' ability to access their systems easily. Microsoft is working on a fix and advises users to utilize alternative sign-in methods like PINs or biometric options in the meantime. This development highlights the importance of robust testing for software updates to prevent user disruption. IT departments should prepare for potential support calls related to this issue.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-updates-hide-password-icon-on-lock-screen/"
+            "title": "Vulnerability in Google&#x27;s Antigravity Tool Poses Security Risks",
+            "content": "Researchers have identified a critical vulnerability in Google&#x27;s AI-powered coding tool, Antigravity, which allows attackers to inject malicious code. Discovered by security firm Mindgard, the flaw was found just 24 hours after the tool&#x27;s launch. This vulnerability poses a significant risk to developers using Antigravity, as it could lead to unauthorized code execution and potential system compromise. Google&#x27;s rapid response to patch the vulnerability highlights the challenges of securing AI-driven tools. Developers using Antigravity should apply the latest updates and review code for any unauthorized changes.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4097974/google-antigravity-lucke-ki-coding-tool-anfallig-fur-angriffe.html"
         },
         {
             "date": "Nov 28 2025",
-            "title": "Over 17,000 Secrets Found in Public GitLab Repositories",
-            "content": "A security engineer has discovered more than 17,000 exposed secrets in over 2,800 unique domains after scanning 5.6 million public repositories on GitLab Cloud. These secrets include API keys, passwords, and other sensitive information that could be exploited by malicious actors. The exposure underscores the critical need for developers to implement secure coding practices and regularly audit their code for vulnerabilities. Organizations using GitLab should review their repositories for exposed credentials and consider using automated tools to detect sensitive information. This incident highlights the persistent challenge of securing open-source software development environments.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/public-gitlab-repositories-exposed-more-than-17-000-secrets/"
+            "title": "Understanding CVSS v4.0: Enhancements in Vulnerability Scoring",
+            "content": "The Common Vulnerability Scoring System (CVSS) has introduced version 4.0, refining how vulnerabilities are characterized and scored. This update aims to provide a more accurate assessment of risk by incorporating new metrics and improving the granularity of scores. CVSS v4.0 includes adjustments for environmental factors and temporal metrics, offering a comprehensive view of potential impacts. Security professionals should familiarize themselves with these changes to enhance their vulnerability management processes. Understanding CVSS v4.0 is crucial for accurately prioritizing and addressing security threats in dynamic environments.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2025/11/how-cvss-v4-0-works-characterizing-and-scoring-vulnerabilities"
         },
         {
             "date": "Nov 28 2025",
-            "title": "Vulnerable Python Scripts Pose Supply Chain Risk in PyPI",
-            "content": "Researchers have identified vulnerabilities in legacy Python packages that could allow for domain takeover attacks on the Python Package Index (PyPI). These vulnerabilities stem from outdated bootstrap scripts that fail to verify domain ownership, potentially enabling attackers to compromise the software supply chain. The security firm ReversingLabs has highlighted the need for developers to update their packages and verify domain integrity. This discovery emphasizes the importance of maintaining up-to-date dependencies and monitoring for security advisories. Developers are urged to audit their packages and apply necessary patches to mitigate the risk of supply chain attacks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/11/legacy-python-bootstrap-scripts-create.html"
+            "title": "RomCom Group Targets Ukraine-Linked US Firms with Malware",
+            "content": "The Russia-aligned RomCom group is targeting US firms involved in Ukraine-related projects by deploying the Mythic Agent malware through fake software updates. Arctic Wolf Labs identified the campaign in September 2025, specifically targeting a US engineering firm. This tactic involves sophisticated social engineering to convince users to install malicious updates, leading to potential data breaches and system disruptions. Organizations with ties to Ukraine should enhance their cybersecurity measures and verify the authenticity of software updates. Awareness and vigilance are key to mitigating the risks posed by such targeted attacks.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4097944/romcom-tries-dropping-a-not-so-romantic-payload-on-ukraine-linked-us-firms.html"
         },
         {
             "date": "Nov 28 2025",
-            "title": "North Korean Hackers Use npm Packages to Spread Malware",
-            "content": "North Korean threat actors have deployed 197 malicious npm packages to distribute a new variant of the OtterCookie malware. These packages, part of the ongoing Contagious Interview campaign, have been downloaded over 31,000 times, targeting developers and organizations using npm. The malware is designed to exfiltrate sensitive data, posing a significant threat to software supply chains. Security firm Socket advises developers to scrutinize npm packages for suspicious activity and use security tools to detect anomalies. This incident highlights the growing use of package repositories as vectors for cyberattacks, necessitating increased vigilance in software development practices.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/11/north-korean-hackers-deploy-197-npm.html"
-        },
-        {
-            "date": "Nov 28 2025",
-            "title": "French Football Federation Reports Data Breach from Cyberattack",
-            "content": "The French Football Federation (FFF) has disclosed a data breach resulting from a cyberattack that compromised an administrative management software account. This breach potentially impacts various football clubs, as the attackers accessed sensitive data used in club operations. The FFF is currently assessing the full extent of the breach and working to secure its systems. Football clubs are urged to review their security protocols and ensure robust access controls are in place. This incident reflects the increasing targeting of sports organizations by cybercriminals, highlighting the need for comprehensive cybersecurity measures in the sector.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/french-football-federation-fff-discloses-data-breach-after-cyberattack/"
+            "title": "CISA Highlights Exploited Vulnerability in OpenPLC ScadaBR",
+            "content": "CISA has added CVE-2021-26829, a cross-site scripting vulnerability in OpenPLC ScadaBR, to its Known Exploited Vulnerabilities catalog. This vulnerability is actively exploited by cyber actors, leveraging XSS attacks to compromise industrial control systems. With a CVSS score of 5.4, the flaw poses a significant threat to organizations using OpenPLC ScadaBR, potentially leading to unauthorized access and data manipulation. The inclusion in the KEV catalog emphasizes the need for immediate action to patch and secure affected systems. Organizations should prioritize updates and review security protocols to protect against this prevalent attack vector.",
+            "source": "All CISA Advisories",
+            "sourceUrl": "https://www.cisa.gov/news-events/alerts/2025/11/28/cisa-adds-one-known-exploited-vulnerability-catalog"
         }
     ],
     "aiShorts": [
         {
-            "date": "Nov 29 2025",
-            "title": "Black Friday Online Spending Hits Record $11.8 Billion",
-            "content": "Adobe Analytics reports that American consumers spent a record $11.8 billion online during Black Friday 2025. This milestone reflects a significant increase in digital shopping, with Adobe tracking over 1 trillion visits to U.S. retail websites. The surge in online spending underscores the growing reliance on e-commerce, likely driven by competitive deals and the convenience of online shopping. Retailers are increasingly leveraging AI-driven analytics to optimize sales strategies and personalize customer experiences. Businesses should prepare for sustained digital engagement and ensure their online platforms can handle increased traffic during peak shopping periods.",
+            "date": "Nov 28 2025",
+            "title": "AI Reshapes Go-To-Market Strategies for Startups and Investors",
+            "content": "At TechCrunch Disrupt, experts from OpenAI and Google discussed how artificial intelligence is revolutionizing go-to-market strategies for startups and investors. AI tools are increasingly used to analyze market trends and customer behavior, enabling more precise targeting and efficient resource allocation. This shift is particularly impactful for early-stage companies seeking to maximize limited budgets and gain a competitive edge. The integration of AI in market strategies is expected to enhance decision-making processes and reduce time to market. Startups and investors should consider leveraging AI-driven insights to refine their approaches and achieve better outcomes in competitive markets.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/29/black-friday-sets-online-spending-record-of-11-8b-adobe-says/"
+            "sourceUrl": "https://techcrunch.com/2025/11/28/how-openai-and-google-see-ai-changing-go-to-market-strategies/"
         },
         {
-            "date": "Nov 29 2025",
-            "title": "Observability: The Key to Reliable Large Language Models in Enterprises",
-            "content": "As enterprises deploy large language models (LLMs) in production, the need for reliable and auditable systems becomes paramount. Observability offers a solution by providing insights into model behaviors and performance, ensuring governance and trustworthiness. This approach allows for continuous monitoring and auditing, transforming LLMs into dependable enterprise tools. Companies adopting LLMs should integrate observability practices to mitigate risks and enhance system reliability. This trend reflects a broader industry shift towards more accountable AI deployment in business environments.",
+            "date": "Nov 28 2025",
+            "title": "Federal vs. State Battle Over AI Regulation Intensifies",
+            "content": "The ongoing debate over AI regulation in the United States has escalated into a conflict between federal and state authorities. The core issue is whether Washington or individual states will set the rules governing AI technologies, with significant implications for consumers and companies. This jurisdictional tug-of-war could lead to a fragmented regulatory landscape, complicating compliance for businesses operating across multiple states. The outcome of this power struggle will shape the future of AI governance and consumer protection. Stakeholders are advised to monitor legislative developments closely and prepare for potential regulatory changes.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/28/the-race-to-regulate-ai-has-sparked-a-federal-vs-state-showdown/"
+        },
+        {
+            "date": "Nov 28 2025",
+            "title": "Backend AI Systems Drive Operational Resilience and ROI",
+            "content": "Enterprise leaders often focus on front-end AI tools like chatbots, but the real value lies in backend systems that enhance operational resilience and deliver significant ROI. These AI systems optimize supply chains, improve data analytics, and streamline internal processes, providing a quieter yet more impactful contribution to business success. Companies that invest in backend AI solutions can expect increased efficiency and reduced operational costs. As AI technologies continue to evolve, businesses should prioritize integrating robust backend systems to maintain competitiveness and ensure sustainable growth.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/how-background-ai-builds-operational-resilience-visible-roi/"
+        },
+        {
+            "date": "Nov 28 2025",
+            "title": "New RL Framework Advances Training of LLM Agents for Complex Tasks",
+            "content": "Researchers at the University of Science and Technology of China have introduced Agent-R1, a new reinforcement learning (RL) framework designed to train large language models (LLMs) for complex real-world tasks beyond traditional math and coding problems. Agent-R1 is compatible with popular LLMs and enhances their ability to perform agentic tasks, expanding their application potential. This development is significant for industries seeking AI solutions that can handle dynamic and less structured environments. Organizations should explore integrating this framework to leverage LLMs for more sophisticated and adaptable AI applications.",
             "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/why-observable-ai-is-the-missing-sre-layer-enterprises-need-for-reliable"
+            "sourceUrl": "https://venturebeat.com/ai/beyond-math-and-coding-new-rl-framework-helps-train-llm-agents-for-complex"
         },
         {
-            "date": "Nov 29 2025",
-            "title": "Implicit Bias in AI: The Challenge of Hidden Prejudices in Language Models",
-            "content": "Research indicates that large language models (LLMs), while not explicitly biased, may infer demographic data and exhibit implicit biases. This presents challenges for developers seeking to create fair and unbiased AI systems. The subtle nature of these biases complicates efforts to mitigate them, as they often go unnoticed during model training and deployment. Organizations using LLMs should implement regular bias audits and refine their models to address these issues. This highlights the ongoing need for transparency and ethical considerations in AI development.",
+            "date": "Nov 27 2025",
+            "title": "Michael Burry&#x27;s Warning: A Looming Challenge for Nvidia?",
+            "content": "Investor Michael Burry&#x27;s recent critique of Nvidia has sparked debate about the company&#x27;s future prospects. Burry, known for predicting the 2008 financial crisis, suggests that Nvidia may face significant challenges, potentially warning of a broader market correction. His comments come amid Nvidia&#x27;s rapid growth and dominance in AI hardware. The tech community is divided, with some viewing Burry&#x27;s insights as a cautionary signal, while others see them as potentially self-fulfilling due to his influence. Industry stakeholders should closely monitor Nvidia&#x27;s performance and market trends to assess potential risks.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/29/no-you-cant-get-your-ai-to-admit-to-being-sexist-but-it-probably-is/"
+            "sourceUrl": "https://techcrunch.com/2025/11/27/this-thanksgivings-real-drama-may-be-michael-burry-versus-nvidia/"
         },
         {
-            "date": "Nov 28 2025",
-            "title": "Supabase Reaches $5 Billion Valuation by Forgoing Lucrative Contracts",
-            "content": "Supabase, an open-source database platform, has achieved a $5 billion valuation by strategically turning down million-dollar contracts. The company focuses on supporting the burgeoning \"vibe coding\" movement, providing essential backend infrastructure. This decision reflects a commitment to long-term growth over short-term gains, aligning with the needs of innovative startups. Supabase's approach underscores the importance of strategic focus and market alignment in achieving substantial growth. Developers and tech leaders should consider how prioritizing core values and market fit can drive success.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/video/supabase-hit-5b-by-turning-down-million-dollar-contracts-heres-why/"
+            "date": "Nov 27 2025",
+            "title": "SAP Advances European AI and Cloud Sovereignty with EU AI Cloud",
+            "content": "SAP has unveiled its EU AI Cloud initiative, aimed at enhancing AI and cloud sovereignty for European organizations. This new approach seeks to provide businesses with greater control over their data and AI operations, aligning with regional regulatory requirements. The EU AI Cloud is designed to support SAP&#x27;s data management solutions, offering a unified framework for compliance and innovation. European enterprises are encouraged to consider this platform to ensure regulatory adherence and leverage SAP&#x27;s technological capabilities for business growth.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/sap-outlines-new-approach-to-european-ai-and-cloud-sovereignty/"
         },
         {
-            "date": "Nov 28 2025",
-            "title": "Anthropic Addresses AI Agent Memory with New Multi-Session Claude SDK",
-            "content": "Anthropic has introduced a new multi-session Claude SDK to tackle the persistent problem of AI agent memory retention. The two-fold solution enhances agents' ability to maintain instructions and conversations across different context windows. This advancement is crucial for enterprises relying on AI agents for extended and complex interactions. By improving memory retention, the Claude SDK enhances the reliability and functionality of AI systems in business applications. Organizations should evaluate this SDK to improve their AI deployments and ensure consistent performance.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/anthropic-says-it-solved-the-long-running-ai-agent-problem-with-a-new-multi"
-        },
-        {
-            "date": "Nov 28 2025",
-            "title": "Supabase CEO Discusses Strategic Decisions Behind $5 Billion Success",
-            "content": "The CEO of Supabase has shared insights into the \"painful\" strategic decisions that propelled the company to a $5 billion valuation. By focusing on supporting the vibe coding trend, Supabase has become a preferred backend platform for innovative startups. The company's success highlights the importance of difficult choices in achieving long-term growth and market leadership. Entrepreneurs and tech leaders can learn from Supabase's approach to strategic alignment and value-driven decision-making. This case study emphasizes the significance of prioritizing core competencies and market needs.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/podcast/supabase-ceo-on-the-painful-decisions-that-built-a-5b-company/"
-        },
-        {
-            "date": "Nov 28 2025",
-            "title": "Reflecting on AI's Transformative Year: 2025's Innovations and Challenges",
-            "content": "As 2025 draws to a close, the AI industry reflects on a year marked by rapid innovation and transformative developments. New models, agent frameworks, and groundbreaking demos have redefined the landscape, making AI more accessible and impactful. This year has seen AI technologies integrate more deeply into various sectors, driving efficiency and innovation. However, the pace of change also presents challenges, requiring ongoing adaptation and learning. Professionals in the field should stay informed about emerging trends and be prepared to leverage new opportunities while addressing ethical and technical challenges.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/what-to-be-thankful-for-in-ai-in-2025"
+            "date": "Nov 27 2025",
+            "title": "MCP Spec Update Enhances Security for Scaling Infrastructure",
+            "content": "The latest update to the MCP (Model Control Protocol) specification significantly bolsters security for enterprise infrastructure as AI agents transition from pilot projects to full-scale production. Developed by Anthropic, this open-source project addresses operational challenges that have hindered the deployment of generative AI agents. The revised spec introduces enhanced security measures to protect against potential vulnerabilities in scaling environments. Organizations adopting AI technologies should implement the updated MCP spec to safeguard their infrastructure and ensure secure, efficient operations as they expand their AI capabilities.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/how-the-mcp-spec-update-boosts-security-as-infrastructure-scales/"
         }
     ],
     "articles": {
