@@ -1,13 +1,19 @@
 {
-  "last_updated": "2025-11-30T01:49:25.588357",
+  "last_updated": "2025-11-30T12:38:14.577972",
   "period": "Last 7 days",
   "total_groups": 30,
-  "total_victims": 264,
+  "total_victims": 265,
   "groups": [
     {
       "name": "Qilin",
-      "count": 70,
+      "count": 69,
       "victims": [
+        {
+          "name": "Battaglioli",
+          "date": "2025-11-30 08:21:30.684702",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=fa1557cb-0588-3004-890e-6b87b6697283",
+          "discovered_date": "2025-11-30T08:21:30.684702"
+        },
         {
           "name": "Asia Condominium Association",
           "date": "2025-11-29 20:09:33.033688",
@@ -61,12 +67,6 @@
           "date": "2025-11-27 22:11:09.334605",
           "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=687736e8-6bbb-3ee1-9518-c31418e543f3",
           "discovered_date": "2025-11-27T22:11:09.334605"
-        },
-        {
-          "name": "ERR Raumplaner",
-          "date": "2025-11-27 17:28:52.408728",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=354f105e-9e00-3556-a75d-3c7e95822e0a",
-          "discovered_date": "2025-11-27T17:28:52.408728"
         }
       ],
       "industries": [
@@ -87,12 +87,12 @@
       "trend_percentage": 15,
       "daily_counts": [
         2,
-        13,
+        11,
         18,
         12,
         8,
         10,
-        0
+        2
       ]
     },
     {
@@ -627,6 +627,92 @@
       ]
     },
     {
+      "name": "Dragonforce",
+      "count": 10,
+      "victims": [
+        {
+          "name": "Division 10",
+          "date": "2025-11-30 06:44:15.160120",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=fe1d8a54-a42d-46fa-bcd4-8e3d2aa48372",
+          "discovered_date": "2025-11-30T06:44:15.160120"
+        },
+        {
+          "name": "Enerre Pharma Lda",
+          "date": "2025-11-27 08:48:25.332101",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=fd82aab3-62b6-4b02-848a-025a0c9324a9",
+          "discovered_date": "2025-11-27T08:48:25.332101"
+        },
+        {
+          "name": "Shelbra International",
+          "date": "2025-11-26 20:14:04.278242",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=c0e9a262-b5be-40b6-9da5-37fbf4532b99",
+          "discovered_date": "2025-11-26T20:14:04.278242"
+        },
+        {
+          "name": "Healthcare Retroactive Audits",
+          "date": "2025-11-26 16:14:01.836314",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=bb3ec11a-0828-4d77-b6ef-0e9f20e7b368",
+          "discovered_date": "2025-11-26T16:14:01.836314"
+        },
+        {
+          "name": "Emond Publishing",
+          "date": "2025-11-26 10:24:28.918883",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=17200368-aed9-48f4-9b9b-4a881236f01c",
+          "discovered_date": "2025-11-26T10:24:28.918883"
+        },
+        {
+          "name": "Division 10",
+          "date": "2025-11-30T06:44:15+00:00",
+          "url": "https://www.ransomware.live/id/RGl2aXNpb24gMTBAZHJhZ29uZm9yY2U=",
+          "discovered_date": "2025-11-30T06:44:15+00:00"
+        },
+        {
+          "name": "Enerre Pharma Lda",
+          "date": "2025-11-27T08:48:25+00:00",
+          "url": "https://www.ransomware.live/id/RW5lcnJlIFBoYXJtYSBMZGFAZHJhZ29uZm9yY2U=",
+          "discovered_date": "2025-11-27T08:48:25+00:00"
+        },
+        {
+          "name": "Shelbra International",
+          "date": "2025-11-26T20:14:04+00:00",
+          "url": "https://www.ransomware.live/id/U2hlbGJyYSBJbnRlcm5hdGlvbmFsQGRyYWdvbmZvcmNl",
+          "discovered_date": "2025-11-26T20:14:04+00:00"
+        },
+        {
+          "name": "Healthcare Retroactive Audits",
+          "date": "2025-11-26T16:14:01+00:00",
+          "url": "https://www.ransomware.live/id/SGVhbHRoY2FyZSBSZXRyb2FjdGl2ZSBBdWRpdHNAZHJhZ29uZm9yY2U=",
+          "discovered_date": "2025-11-26T16:14:01+00:00"
+        },
+        {
+          "name": "Emond Publishing",
+          "date": "2025-11-26T10:24:28+00:00",
+          "url": "https://www.ransomware.live/id/RW1vbmQgUHVibGlzaGluZ0BkcmFnb25mb3JjZQ==",
+          "discovered_date": "2025-11-26T10:24:28+00:00"
+        }
+      ],
+      "industries": [
+        "Healthcare",
+        "Not Found"
+      ],
+      "countries": [
+        "CA",
+        "N/A",
+        "PT"
+      ],
+      "trend": "stable",
+      "trend_percentage": 0,
+      "daily_counts": [
+        0,
+        0,
+        6,
+        2,
+        0,
+        0,
+        2
+      ]
+    },
+    {
       "name": "Benzona",
       "count": 10,
       "victims": [
@@ -706,80 +792,6 @@
         0,
         10,
         0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Dragonforce",
-      "count": 8,
-      "victims": [
-        {
-          "name": "Enerre Pharma Lda",
-          "date": "2025-11-27 08:48:25.332101",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=fd82aab3-62b6-4b02-848a-025a0c9324a9",
-          "discovered_date": "2025-11-27T08:48:25.332101"
-        },
-        {
-          "name": "Shelbra International",
-          "date": "2025-11-26 20:14:04.278242",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=c0e9a262-b5be-40b6-9da5-37fbf4532b99",
-          "discovered_date": "2025-11-26T20:14:04.278242"
-        },
-        {
-          "name": "Healthcare Retroactive Audits",
-          "date": "2025-11-26 16:14:01.836314",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=bb3ec11a-0828-4d77-b6ef-0e9f20e7b368",
-          "discovered_date": "2025-11-26T16:14:01.836314"
-        },
-        {
-          "name": "Emond Publishing",
-          "date": "2025-11-26 10:24:28.918883",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=17200368-aed9-48f4-9b9b-4a881236f01c",
-          "discovered_date": "2025-11-26T10:24:28.918883"
-        },
-        {
-          "name": "Enerre Pharma Lda",
-          "date": "2025-11-27T08:48:25+00:00",
-          "url": "https://www.ransomware.live/id/RW5lcnJlIFBoYXJtYSBMZGFAZHJhZ29uZm9yY2U=",
-          "discovered_date": "2025-11-27T08:48:25+00:00"
-        },
-        {
-          "name": "Shelbra International",
-          "date": "2025-11-26T20:14:04+00:00",
-          "url": "https://www.ransomware.live/id/U2hlbGJyYSBJbnRlcm5hdGlvbmFsQGRyYWdvbmZvcmNl",
-          "discovered_date": "2025-11-26T20:14:04+00:00"
-        },
-        {
-          "name": "Healthcare Retroactive Audits",
-          "date": "2025-11-26T16:14:01+00:00",
-          "url": "https://www.ransomware.live/id/SGVhbHRoY2FyZSBSZXRyb2FjdGl2ZSBBdWRpdHNAZHJhZ29uZm9yY2U=",
-          "discovered_date": "2025-11-26T16:14:01+00:00"
-        },
-        {
-          "name": "Emond Publishing",
-          "date": "2025-11-26T10:24:28+00:00",
-          "url": "https://www.ransomware.live/id/RW1vbmQgUHVibGlzaGluZ0BkcmFnb25mb3JjZQ==",
-          "discovered_date": "2025-11-26T10:24:28+00:00"
-        }
-      ],
-      "industries": [
-        "Healthcare",
-        "Not Found"
-      ],
-      "countries": [
-        "CA",
-        "N/A",
-        "PT"
-      ],
-      "trend": "stable",
-      "trend_percentage": 0,
-      "daily_counts": [
-        0,
-        0,
-        6,
-        2,
         0,
         0,
         0
