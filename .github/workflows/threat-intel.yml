@@ -34,8 +34,11 @@ jobs:
           rm -f ioc-data/threat-intel-history.json || true
           ls -lh ioc-data/
 
-      - name: Fetch CVE Data
-        run: python fetch_cve_data.py
+      - name: Enrich CVE Data with Patches
+        env:
+          NVD_API_KEY: ${{ secrets.NVD_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python enrich_cve_patches.py
 
       - name: Commit & Push All Changes
         run: |
