@@ -1,4 +1,4 @@
-const content = {
+const websiteContent = {
     "cyberShorts": [
         {
             "date": "Nov 29 2025",
