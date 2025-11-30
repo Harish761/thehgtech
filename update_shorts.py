@@ -759,7 +759,7 @@ def read_content_js():
     with open('content.js', 'r', encoding='utf-8') as f:
         content = f.read()
     
-    match = re.search(r'var websiteContent = ({.*?});', content, re.DOTALL)
+    match = re.search(r'const websiteContent = ({.*?});', content, re.DOTALL)
     if not match:
         print("❌ Could not parse content.js")
         sys.exit(1)
@@ -772,7 +772,7 @@ def write_content_js(data):
     js_content = f"""// TheHGTech Website Content
 // Update this file to change website content
 
-var websiteContent = {json.dumps(data, indent=4, ensure_ascii=False)};"""
+const websiteContent = {json.dumps(data, indent=4, ensure_ascii=False)};"""
     
     with open('content.js', 'w', encoding='utf-8') as f:
         f.write(js_content)
