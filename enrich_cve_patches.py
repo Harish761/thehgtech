@@ -305,14 +305,14 @@ def main():
         print("✗ No CVE data to process")
         return
     
-    # Filter to last 7 days
-    seven_days_ago = (datetime.now() - timedelta(days=7)).strftime('%Y-%m-%d')
+    # Filter to last 30 days (instead of 7 to show more CVEs)
+    thirty_days_ago = (datetime.now() - timedelta(days=30)).strftime('%Y-%m-%d')
     recent_vulns = [
         v for v in kev_data['vulnerabilities']
-        if v['dateAdded'] >= seven_days_ago
+        if v['dateAdded'] >= thirty_days_ago
     ]
     
-    print(f"\n📊 Processing {len(recent_vulns)} CVEs from last 7 days...")
+    print(f"\n📊 Processing {len(recent_vulns)} CVEs from last 30 days...")
     print(f"⏱️  Estimated time: {len(recent_vulns) * NVD_RATE_LIMIT / 60:.1f} minutes\n")
     
     # Process each CVE
