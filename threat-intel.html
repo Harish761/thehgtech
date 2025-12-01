@@ -1146,7 +1146,10 @@
 
                                 '<div class="vendor-name" style="font-size: 1.1rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem; transition: color 0.3s ease;">' + vendor + '</div>' +
                                 '<div style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.25rem; text-transform: uppercase; letter-spacing: 1px;">Active Source</div>' +
-                                '<div style="font-size: 0.75rem; color: var(--accent-cyan); margin-bottom: 1rem; font-style: italic; opacity: 0.8;">Updates: ' + (data.updateFrequency || 'Unknown') + '</div>' +
+                                '<div style="font-size: 0.75rem; color: var(--accent-cyan); margin-bottom: 1rem; opacity: 0.9; background: rgba(0, 217, 255, 0.05); padding: 6px 10px; border-radius: 6px; border: 1px solid rgba(0, 217, 255, 0.1);">' +
+                                '<div style="margin-bottom: 2px;">Vendor: ' + (data.updateFrequency || 'Unknown') + '</div>' +
+                                '<div style="color: var(--text-muted); font-size: 0.7rem;">Sync: Every 4 hours</div>' +
+                                '</div>' +
 
                                 '<div style="font-size: 2rem; font-weight: 800; color: var(--accent-cyan); line-height: 1; margin-bottom: 0.5rem;">' + count + '</div>' +
                                 '<div style="font-size: 0.8rem; color: var(--text-muted);">IOCs</div>' +
