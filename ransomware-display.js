@@ -221,7 +221,9 @@
                             <span class="victim-name">${this.escapeHtml(v.name)}</span>
                             <span class="victim-date">${new Date(v.date).toLocaleDateString()}</span>
                         </div>
-                        ${v.url ? `<a href="${v.url}" target="_blank" class="victim-link">View Source ↗</a>` : ''}
+                        <a href="https://www.ransomware.live/" target="_blank" class="victim-link" style="font-size: 0.85rem; color: rgba(0,217,255,0.8);">
+                            Source: Ransomware.live ↗
+                        </a>
                     </div>
                 `).join('');
 
