@@ -248,10 +248,10 @@
                         
                         <div class="modal-actions">
                             <p style="margin: 0 0 1rem 0; color: rgba(255,255,255,0.7); font-size: 0.9rem; text-align: center;">
-                                Search threat intelligence database for malicious IPs, domains, and file hashes associated with this ransomware group
+                                Search global threat feeds for potential IOCs (IPs, hashes) related to this group
                             </p>
                             <button class="action-btn primary" onclick="window.ransomwareDisplay.findIOCs('${group.name.replace(/'/g, "\\'")}')">
-                                🔍 Find IOCs for ${this.escapeHtml(group.name)}
+                                🔍 Search Related IOCs for ${this.escapeHtml(group.name)}
                             </button>
                         </div>
 
@@ -286,20 +286,64 @@
             if (modal) modal.remove();
 
             // Switch to All Threats tab
-            const allThreatsTab = document.querySelector('.nav-btn[data-tab="all-threats"]');
-            if (allThreatsTab) allThreatsTab.click();
+            // Try both selectors to be safe
+            const allThreatsTab = document.querySelector('.tab-btn[data-tab="threats"]') ||
+                document.querySelector('.nav-btn[data-tab="all-threats"]');
+
+            if (allThreatsTab) {
+                allThreatsTab.click();
+            } else {
+                console.error('Could not find All Threats tab');
+            }
 
             // Set search input
-            const searchInput = document.getElementById('searchInput');
+            // Try both IDs
+            const searchInput = document.getElementById('iocSearch') || document.getElementById('searchInput');
+
             if (searchInput) {
                 searchInput.value = groupName;
                 // Trigger search event
-                searchInput.dispatchEvent(new Event('input'));
+                searchInput.dispatchEvent(new Event('input', { bubbles: true }));
+                searchInput.focus();
+
+                // Show feedback toast
+                this.showToast(`Searching for "${groupName}" in global threat feeds...`);
+            } else {
+                console.error('Could not find search input');
             }
 
-            // Scroll to filters
-            const filters = document.querySelector('.advanced-filters');
-            if (filters) filters.scrollIntoView({ behavior: 'smooth' });
+            // Scroll to filters/search area
+            const filters = document.querySelector('.advanced-filters') || document.querySelector('.search-container');
+            if (filters) {
+                filters.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        }
+
+        showToast(message) {
+            const toast = document.createElement('div');
+            toast.style.cssText = `
+                position: fixed;
+                bottom: 2rem;
+                right: 2rem;
+                background: rgba(0, 217, 255, 0.1);
+                border: 1px solid #00D9FF;
+                color: #00D9FF;
+                padding: 1rem 1.5rem;
+                border-radius: 8px;
+                z-index: 10001;
+                font-weight: 500;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+                animation: slideIn 0.3s ease-out;
+            `;
+            toast.textContent = message;
+            document.body.appendChild(toast);
+
+            setTimeout(() => {
+                toast.style.opacity = '0';
+                toast.style.transform = 'translateY(20px)';
+                toast.style.transition = 'all 0.3s ease';
+                setTimeout(() => toast.remove(), 300);
+            }, 3000);
         }
 
         renderError() {
