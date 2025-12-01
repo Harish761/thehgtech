@@ -4,104 +4,104 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Nov 30 2025",
-            "title": "CISA Identifies Active Exploitation of OpenPLC ScadaBR XSS Vulnerability",
-            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added CVE-2021-26829 to its Known Exploited Vulnerabilities (KEV) catalog due to active exploitation. This cross-site scripting (XSS) vulnerability affects OpenPLC ScadaBR, a popular open-source platform used in industrial control systems. With a CVSS score of 5.4, the flaw allows attackers to execute arbitrary scripts in the context of the user&#x27;s browser, posing a significant risk to affected systems. The inclusion of this vulnerability in the KEV catalog underscores the ongoing threat to critical infrastructure from web-based attacks. Organizations using OpenPLC ScadaBR should apply patches or mitigations promptly to safeguard their systems.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/11/cisa-adds-actively-exploited-xss-bug.html"
+            "date": "Dec 01 2025",
+            "title": "ISC Stormcast Warns of Emerging Cyber Threats",
+            "content": "The SANS Internet Storm Center&#x27;s latest Stormcast highlights emerging cybersecurity threats, maintaining an InfoCON status of green. This indicates a relatively stable threat environment, though professionals should remain vigilant. The podcast covers recent vulnerabilities, including those affecting widely used software and systems. Security practitioners are advised to review their current defenses and stay informed about potential exploits. The Stormcast serves as a critical resource for security teams to anticipate and mitigate risks effectively. Regular updates from the SANS Internet Storm Center are essential for maintaining robust cybersecurity postures.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32526"
         },
         {
             "date": "Nov 29 2025",
-            "title": "OpenAI Tests In-ChatGPT Ads, Signaling Shift in Web Economy",
-            "content": "OpenAI is reportedly testing advertisements within its ChatGPT platform, a move that could significantly alter the digital advertising landscape. The internal testing phase aims to explore how ads can be integrated without disrupting user experience. This development comes as AI-driven platforms increasingly seek monetization strategies beyond subscription models. The introduction of ads in ChatGPT could set a precedent for other AI services, influencing how digital content is funded and consumed. Stakeholders in the tech industry should monitor these developments closely, as they may impact advertising strategies and user engagement metrics.",
+            "title": "Asahi Data Breach Exposes 1.9 Million Individuals&#x27; Information",
+            "content": "Asahi Group Holdings has completed its investigation into a cyberattack that compromised the personal data of up to 1.9 million individuals. The breach involved unauthorized access to customer information, potentially affecting names, addresses, and contact details. Asahi, Japan&#x27;s largest beer producer, initially detected the breach in September. The company is working with cybersecurity experts to strengthen its defenses and prevent future incidents. Impacted individuals are advised to monitor their accounts for suspicious activity and consider credit monitoring services. This breach underscores the increasing risks faced by large enterprises in safeguarding sensitive data.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/leak-confirms-openai-is-preparing-ads-on-chatgpt-for-public-roll-out/"
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/japanese-beer-giant-asahi-says-data-breach-hit-15-million-people/"
         },
         {
             "date": "Nov 28 2025",
-            "title": "Cyberattack on French Soccer Federation Compromises Member Data",
-            "content": "The French Soccer Federation has suffered a cyberattack resulting in unauthorized access to member data through a compromised account. The breach highlights the vulnerability of sports organizations to cyber threats, especially those involving personal and sensitive information. The federation is currently assessing the extent of the data stolen and has initiated measures to secure its systems. This incident serves as a reminder of the importance of robust cybersecurity practices, particularly in safeguarding access credentials. Affected members should be vigilant for any signs of identity theft or fraud and consider changing their passwords.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/french-soccer-federation-hit-by-cyberattack-member-data-stolen/"
+            "title": "Australian Man Sentenced for In-Flight Evil Twin WiFi Attacks",
+            "content": "A 44-year-old Australian man received a seven-year and four-month prison sentence for orchestrating &quot;evil twin&quot; WiFi attacks at airports. By setting up rogue networks that mimicked legitimate WiFi services, he intercepted sensitive data from unsuspecting travelers. The attacks targeted various airports across Australia, exploiting travelers&#x27; trust in free public WiFi. Law enforcement agencies emphasize the importance of using VPNs (Virtual Private Networks) and verifying network authenticity to protect personal information. This case highlights the ongoing threat posed by cybercriminals exploiting public WiFi vulnerabilities.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/man-behind-in-flight-evil-twin-wifi-attacks-gets-7-years-in-prison/"
         },
         {
             "date": "Nov 28 2025",
-            "title": "Vulnerability in Google&#x27;s Antigravity Tool Poses Security Risks",
-            "content": "Researchers have identified a critical vulnerability in Google&#x27;s AI-powered coding tool, Antigravity, which allows attackers to inject malicious code. Discovered by security firm Mindgard, the flaw was found just 24 hours after the tool&#x27;s launch. This vulnerability poses a significant risk to developers using Antigravity, as it could lead to unauthorized code execution and potential system compromise. Google&#x27;s rapid response to patch the vulnerability highlights the challenges of securing AI-driven tools. Developers using Antigravity should apply the latest updates and review code for any unauthorized changes.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4097974/google-antigravity-lucke-ki-coding-tool-anfallig-fur-angriffe.html"
+            "title": "Windows 11 Update Causes Password Login Issues",
+            "content": "Microsoft has issued a warning regarding a bug in recent Windows 11 updates that causes the password sign-in option to become invisible on the lock screen. Despite the button&#x27;s disappearance, the functionality remains intact, allowing users to log in if they are aware of the issue. The bug affects updates released since August, potentially impacting user access and system management. Microsoft is actively working on a fix and advises users to utilize alternative sign-in methods, such as PIN or biometric authentication, until the issue is resolved. This incident highlights the need for thorough testing of updates before release.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-updates-hide-password-icon-on-lock-screen/"
         },
         {
             "date": "Nov 28 2025",
-            "title": "Understanding CVSS v4.0: Enhancements in Vulnerability Scoring",
-            "content": "The Common Vulnerability Scoring System (CVSS) has introduced version 4.0, refining how vulnerabilities are characterized and scored. This update aims to provide a more accurate assessment of risk by incorporating new metrics and improving the granularity of scores. CVSS v4.0 includes adjustments for environmental factors and temporal metrics, offering a comprehensive view of potential impacts. Security professionals should familiarize themselves with these changes to enhance their vulnerability management processes. Understanding CVSS v4.0 is crucial for accurately prioritizing and addressing security threats in dynamic environments.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2025/11/how-cvss-v4-0-works-characterizing-and-scoring-vulnerabilities"
+            "title": "Over 17,000 Secrets Exposed in Public GitLab Repositories",
+            "content": "A security engineer&#x27;s scan of 5.6 million public GitLab Cloud repositories uncovered more than 17,000 exposed secrets, including API keys and passwords. These secrets were found across over 2,800 unique domains, posing significant security risks. Exposed credentials can lead to unauthorized access and data breaches, affecting both individual developers and organizations. This discovery highlights the critical need for developers to implement secret management solutions and regularly audit their code repositories. GitLab users should review their repositories for exposed information and adopt best practices for securing sensitive data.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/public-gitlab-repositories-exposed-more-than-17-000-secrets/"
         },
         {
             "date": "Nov 28 2025",
-            "title": "RomCom Group Targets Ukraine-Linked US Firms with Malware",
-            "content": "The Russia-aligned RomCom group is targeting US firms involved in Ukraine-related projects by deploying the Mythic Agent malware through fake software updates. Arctic Wolf Labs identified the campaign in September 2025, specifically targeting a US engineering firm. This tactic involves sophisticated social engineering to convince users to install malicious updates, leading to potential data breaches and system disruptions. Organizations with ties to Ukraine should enhance their cybersecurity measures and verify the authenticity of software updates. Awareness and vigilance are key to mitigating the risks posed by such targeted attacks.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4097944/romcom-tries-dropping-a-not-so-romantic-payload-on-ukraine-linked-us-firms.html"
+            "title": "Vulnerable Python Scripts Pose Domain-Takeover Risk on PyPI",
+            "content": "Cybersecurity researchers have identified vulnerabilities in legacy Python bootstrap scripts that could enable domain takeover attacks on the Python Package Index (PyPI). The flaws were found in older packages, potentially allowing attackers to compromise the software supply chain. ReversingLabs, a software supply chain security company, discovered these vulnerabilities, emphasizing the need for developers to update and secure their packages. The risk of domain takeovers underscores the importance of maintaining modern, secure coding practices. Developers are urged to review their Python packages for outdated scripts and apply necessary updates to mitigate potential threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/11/legacy-python-bootstrap-scripts-create.html"
         },
         {
             "date": "Nov 28 2025",
-            "title": "CISA Highlights Exploited Vulnerability in OpenPLC ScadaBR",
-            "content": "CISA has added CVE-2021-26829, a cross-site scripting vulnerability in OpenPLC ScadaBR, to its Known Exploited Vulnerabilities catalog. This vulnerability is actively exploited by cyber actors, leveraging XSS attacks to compromise industrial control systems. With a CVSS score of 5.4, the flaw poses a significant threat to organizations using OpenPLC ScadaBR, potentially leading to unauthorized access and data manipulation. The inclusion in the KEV catalog emphasizes the need for immediate action to patch and secure affected systems. Organizations should prioritize updates and review security protocols to protect against this prevalent attack vector.",
-            "source": "All CISA Advisories",
-            "sourceUrl": "https://www.cisa.gov/news-events/alerts/2025/11/28/cisa-adds-one-known-exploited-vulnerability-catalog"
+            "title": "North Korean Hackers Use npm Packages to Spread Malware",
+            "content": "North Korean threat actors have deployed 197 malicious npm packages to distribute an updated version of the OtterCookie malware. These packages, part of the Contagious Interview campaign, have been downloaded over 31,000 times, targeting developers and organizations using the npm registry. The malware is designed to exfiltrate sensitive data and compromise systems. Security firm Socket highlights the need for developers to scrutinize third-party packages and implement security measures to detect malicious activity. This campaign reflects the ongoing threat posed by state-sponsored actors leveraging software repositories to disseminate malware.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/11/north-korean-hackers-deploy-197-npm.html"
         }
     ],
     "aiShorts": [
         {
-            "date": "Nov 28 2025",
-            "title": "AI Reshapes Go-To-Market Strategies for Startups and Investors",
-            "content": "At TechCrunch Disrupt, experts from OpenAI and Google discussed how artificial intelligence is revolutionizing go-to-market strategies for startups and investors. AI tools are increasingly used to analyze market trends and customer behavior, enabling more precise targeting and efficient resource allocation. This shift is particularly impactful for early-stage companies seeking to maximize limited budgets and gain a competitive edge. The integration of AI in market strategies is expected to enhance decision-making processes and reduce time to market. Startups and investors should consider leveraging AI-driven insights to refine their approaches and achieve better outcomes in competitive markets.",
+            "date": "Nov 30 2025",
+            "title": "James Cameron Criticizes Generative AI as &quot;Horrifying&quot;",
+            "content": "James Cameron, renowned for his innovative use of visual effects in films like &quot;Avatar,&quot; has expressed strong concerns about generative AI technology. Despite his history of embracing cutting-edge visual technologies, Cameron finds the implications of AI-generated content alarming. His comments reflect a broader unease in the creative industry, where AI&#x27;s ability to mimic human creativity raises ethical and legal questions. This sentiment is echoed by other filmmakers and artists worried about AI&#x27;s role in content creation. Professionals in the field should consider the ethical dimensions of deploying generative AI in creative processes.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/28/how-openai-and-google-see-ai-changing-go-to-market-strategies/"
+            "sourceUrl": "https://techcrunch.com/2025/11/30/avatar-director-james-cameron-says-generative-ai-is-horrifying/"
         },
         {
-            "date": "Nov 28 2025",
-            "title": "Federal vs. State Battle Over AI Regulation Intensifies",
-            "content": "The ongoing debate over AI regulation in the United States has escalated into a conflict between federal and state authorities. The core issue is whether Washington or individual states will set the rules governing AI technologies, with significant implications for consumers and companies. This jurisdictional tug-of-war could lead to a fragmented regulatory landscape, complicating compliance for businesses operating across multiple states. The outcome of this power struggle will shape the future of AI governance and consumer protection. Stakeholders are advised to monitor legislative developments closely and prepare for potential regulatory changes.",
+            "date": "Nov 30 2025",
+            "title": "David Sacks&#x27; Trump Administration Role Sparks Controversy Over Potential Profits",
+            "content": "A new report scrutinizes David Sacks&#x27; position as the AI and crypto czar under President Donald Trump, suggesting potential conflicts of interest with his investments. The report implies that Sacks could benefit financially from policies he influences, though he dismisses these claims as unfounded. This development highlights the ongoing debate over transparency and conflict of interest in government roles related to technology and finance. The situation underscores the need for clear ethical guidelines and oversight in public-private sector intersections, especially as AI and cryptocurrency continue to gain prominence.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/28/the-race-to-regulate-ai-has-sparked-a-federal-vs-state-showdown/"
+            "sourceUrl": "https://techcrunch.com/2025/11/30/new-report-examines-how-david-sacks-might-profit-from-trump-administration-role/"
         },
         {
-            "date": "Nov 28 2025",
-            "title": "Backend AI Systems Drive Operational Resilience and ROI",
-            "content": "Enterprise leaders often focus on front-end AI tools like chatbots, but the real value lies in backend systems that enhance operational resilience and deliver significant ROI. These AI systems optimize supply chains, improve data analytics, and streamline internal processes, providing a quieter yet more impactful contribution to business success. Companies that invest in backend AI solutions can expect increased efficiency and reduced operational costs. As AI technologies continue to evolve, businesses should prioritize integrating robust backend systems to maintain competitiveness and ensure sustainable growth.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/how-background-ai-builds-operational-resilience-visible-roi/"
+            "date": "Nov 30 2025",
+            "title": "Celebrating Three Years of ChatGPT&#x27;s Transformative Impact",
+            "content": "Three years after its launch, ChatGPT has significantly reshaped business and technology landscapes. The AI model, known for its conversational abilities, has been integrated into numerous applications, enhancing customer service, content creation, and more. Its influence extends across industries, driving innovation in how businesses interact with customers and manage operations. However, this transformation also raises questions about AI governance and ethical use, as organizations must balance technological benefits with potential biases and data privacy concerns. Stakeholders should continue to monitor AI advancements and their implications on industry standards.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/30/chatgpt-launched-three-years-ago-today/"
         },
         {
-            "date": "Nov 28 2025",
-            "title": "New RL Framework Advances Training of LLM Agents for Complex Tasks",
-            "content": "Researchers at the University of Science and Technology of China have introduced Agent-R1, a new reinforcement learning (RL) framework designed to train large language models (LLMs) for complex real-world tasks beyond traditional math and coding problems. Agent-R1 is compatible with popular LLMs and enhances their ability to perform agentic tasks, expanding their application potential. This development is significant for industries seeking AI solutions that can handle dynamic and less structured environments. Organizations should explore integrating this framework to leverage LLMs for more sophisticated and adaptable AI applications.",
+            "date": "Nov 30 2025",
+            "title": "Ontology: A Key to Effective AI Agent Deployment in Business",
+            "content": "A recent analysis emphasizes the importance of ontology in deploying AI agents effectively within enterprises. Despite significant investments in AI infrastructure, many businesses struggle with AI agents that fail to accurately understand complex business data and processes. Ontology, which involves the explicit specification of business concepts and relationships, is identified as a crucial component in overcoming these challenges. By implementing robust ontological frameworks, companies can enhance AI comprehension and application, leading to more successful digital transformations. Professionals should prioritize ontology development to maximize AI&#x27;s potential in business operations.",
             "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/beyond-math-and-coding-new-rl-framework-helps-train-llm-agents-for-complex"
+            "sourceUrl": "https://venturebeat.com/ai/ontology-is-the-real-guardrail-how-to-stop-ai-agents-from-misunderstanding"
         },
         {
-            "date": "Nov 27 2025",
-            "title": "Michael Burry&#x27;s Warning: A Looming Challenge for Nvidia?",
-            "content": "Investor Michael Burry&#x27;s recent critique of Nvidia has sparked debate about the company&#x27;s future prospects. Burry, known for predicting the 2008 financial crisis, suggests that Nvidia may face significant challenges, potentially warning of a broader market correction. His comments come amid Nvidia&#x27;s rapid growth and dominance in AI hardware. The tech community is divided, with some viewing Burry&#x27;s insights as a cautionary signal, while others see them as potentially self-fulfilling due to his influence. Industry stakeholders should closely monitor Nvidia&#x27;s performance and market trends to assess potential risks.",
+            "date": "Nov 29 2025",
+            "title": "Black Friday Online Sales Reach Record $11.8 Billion",
+            "content": "Adobe Analytics reports a record-setting $11.8 billion in online spending for Black Friday 2025, reflecting a robust consumer shift towards e-commerce. The data, derived from tracking over 1 trillion visits to U.S. retail websites, highlights significant growth in digital shopping trends. This surge is attributed to increased consumer confidence and the convenience of online deals. Retailers and tech professionals should note the growing importance of digital platforms and consider enhancing their online infrastructures to capitalize on future shopping events. The trend underscores the need for scalable, secure e-commerce solutions.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/27/this-thanksgivings-real-drama-may-be-michael-burry-versus-nvidia/"
+            "sourceUrl": "https://techcrunch.com/2025/11/29/black-friday-sets-online-spending-record-of-11-8b-adobe-says/"
         },
         {
-            "date": "Nov 27 2025",
-            "title": "SAP Advances European AI and Cloud Sovereignty with EU AI Cloud",
-            "content": "SAP has unveiled its EU AI Cloud initiative, aimed at enhancing AI and cloud sovereignty for European organizations. This new approach seeks to provide businesses with greater control over their data and AI operations, aligning with regional regulatory requirements. The EU AI Cloud is designed to support SAP&#x27;s data management solutions, offering a unified framework for compliance and innovation. European enterprises are encouraged to consider this platform to ensure regulatory adherence and leverage SAP&#x27;s technological capabilities for business growth.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/sap-outlines-new-approach-to-european-ai-and-cloud-sovereignty/"
+            "date": "Nov 29 2025",
+            "title": "Observability: Essential for Reliable Large Language Models in Enterprises",
+            "content": "The integration of large language models (LLMs) into enterprise systems demands reliable observability to ensure performance and trustworthiness. As LLMs become central to business operations, enterprises face challenges in maintaining governance and accountability. Observability tools provide critical insights into model behavior, enabling real-time monitoring and troubleshooting. This capability is essential for aligning AI outputs with business objectives and regulatory requirements. Enterprises should invest in robust observability frameworks to ensure their AI systems remain auditable and reliable, thus securing the future of AI-driven business processes.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/ai/why-observable-ai-is-the-missing-sre-layer-enterprises-need-for-reliable"
         },
         {
-            "date": "Nov 27 2025",
-            "title": "MCP Spec Update Enhances Security for Scaling Infrastructure",
-            "content": "The latest update to the MCP (Model Control Protocol) specification significantly bolsters security for enterprise infrastructure as AI agents transition from pilot projects to full-scale production. Developed by Anthropic, this open-source project addresses operational challenges that have hindered the deployment of generative AI agents. The revised spec introduces enhanced security measures to protect against potential vulnerabilities in scaling environments. Organizations adopting AI technologies should implement the updated MCP spec to safeguard their infrastructure and ensure secure, efficient operations as they expand their AI capabilities.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/how-the-mcp-spec-update-boosts-security-as-infrastructure-scales/"
+            "date": "Nov 29 2025",
+            "title": "Implicit Bias in AI: The Challenge of Addressing LLMs&#x27; Subtle Prejudices",
+            "content": "Researchers highlight the challenge of implicit bias within large language models (LLMs), which may infer demographic data and exhibit subtle prejudices. Despite not using overtly biased language, these AI systems can perpetuate stereotypes, impacting decision-making processes. This issue underscores the need for rigorous bias detection and mitigation strategies in AI development. Professionals in AI and machine learning should prioritize transparency and fairness, ensuring that LLMs are trained on diverse datasets and subject to continuous evaluation. Addressing these biases is crucial for ethical AI deployment in sensitive applications.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/11/29/no-you-cant-get-your-ai-to-admit-to-being-sexist-but-it-probably-is/"
         }
     ],
     "articles": {
