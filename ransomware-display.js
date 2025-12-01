@@ -144,7 +144,8 @@
                     </div>
                     
                     <!-- Trend Chart Container -->
-                    <div class="trend-chart-container" style="height: 40px; margin: 5px 0;">
+                    <div class="trend-chart-container" style="height: 40px; margin: 10px 0;">
+                        <div style="font-size: 0.75rem; color: rgba(255,255,255,0.5); margin-bottom: 3px;">Victim Trend (7 days)</div>
                         <canvas id="chart_${safeId}"></canvas>
                     </div>
                     
@@ -158,7 +159,7 @@
                 
                 ${industriesHTML}
                 
-                <button class="view-details-btn" onclick="window.ransomwareDisplay.showDetails('${this.escapeHtml(group.name)}')">
+                <button class="view-details-btn" onclick="event.stopPropagation(); window.ransomwareDisplay.showDetails('${group.name.replace(/'/g, "\\'")}')">
                     View Victims & Details
                 </button>
             `;
@@ -236,7 +237,7 @@
                         </div>
                         
                         <div class="modal-actions">
-                            <button class="action-btn primary" onclick="window.ransomwareDisplay.findIOCs('${this.escapeHtml(group.name)}')">
+                            <button class="action-btn primary" onclick="window.ransomwareDisplay.findIOCs('${group.name.replace(/'/g, "\\'")}')">
                                 🔍 Find IOCs for ${this.escapeHtml(group.name)}
                             </button>
                         </div>
