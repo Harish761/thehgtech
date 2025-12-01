@@ -245,6 +245,9 @@
                         </div>
                         
                         <div class="modal-actions">
+                            <p style="margin: 0 0 1rem 0; color: rgba(255,255,255,0.7); font-size: 0.9rem; text-align: center;">
+                                Search threat intelligence database for malicious IPs, domains, and file hashes associated with this ransomware group
+                            </p>
                             <button class="action-btn primary" onclick="window.ransomwareDisplay.findIOCs('${group.name.replace(/'/g, "\\'")}')">
                                 🔍 Find IOCs for ${this.escapeHtml(group.name)}
                             </button>
