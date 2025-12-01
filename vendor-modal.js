@@ -417,13 +417,25 @@ function exportVendorDataFromModal(vendorName, format, applyFilters = true) {
     if (applyFilters) {
         // Export Filtered - Get only visible IOCs (filtered)
         const content = document.getElementById('vendorModalContent');
-        const visibleItems = Array.from(content.querySelectorAll('.vendor-ioc-item')).filter(item => item.style.display !== 'none');
+        const allItems = content.querySelectorAll('.vendor-ioc-item');
+
+        // Filter to only visible items (check both inline style and computed style)
+        const visibleItems = Array.from(allItems).filter(item => {
+            const display = item.style.display;
+            // Item is visible if display is not explicitly set to 'none'
+            // Empty string or undefined means visible (default state)
+            return display !== 'none';
+        });
+
+        console.log(`Total IOC items: ${allItems.length}, Visible items: ${visibleItems.length}`);
 
         // Extract indicators from visible items
         const visibleIndicators = visibleItems.map(item => item.dataset.indicator);
 
         // Filter IOCs to only include visible ones
         filteredIOCs = data.iocs.filter(ioc => visibleIndicators.includes(ioc.indicator));
+
+        console.log(`Filtered IOCs to export: ${filteredIOCs.length}`);
 
         if (filteredIOCs.length === 0) {
             alert('No IOCs match the current filter. Please adjust your filters or use "Export All" to download all data.');
