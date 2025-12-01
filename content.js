@@ -5,103 +5,110 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Dec 01 2025",
+            "title": "Weekly Cybersecurity Recap: Critical Vulnerabilities and Threats",
+            "content": "The latest cybersecurity threats include critical vulnerabilities and exploits that leverage everyday tools such as code packages and cloud accounts. Notably, the resurgence of an npm worm and a remote code execution (RCE) flaw in Firefox have been highlighted. These vulnerabilities can potentially expose sensitive information and compromise systems if not addressed promptly. Organizations must be vigilant about their software supply chains and vendor relationships, as a single weak link can lead to widespread breaches. Security teams are advised to review their defenses and ensure all software is up to date with the latest patches to mitigate these risks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/12/weekly-recap-hot-cves-npm-worm-returns.html"
+        },
+        {
+            "date": "Dec 01 2025",
+            "title": "Google Faces Backlash for Alleged Use of Stolen Content in AI Promotion",
+            "content": "Google has removed a post from its social media platform X after being accused of using a food blogger&#x27;s infographic without proper credit in a promotional campaign for its NotebookLM. The incident has sparked criticism over intellectual property rights and the ethical use of AI-generated content. This highlights ongoing challenges tech companies face in balancing innovation with respecting creators&#x27; rights. Google has not yet commented on the specifics of the incident, but the controversy underscores the importance of transparency and accountability in AI content generation. Professionals should remain aware of the legal implications of using AI tools in content creation.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/google-deletes-x-post-after-getting-caught-using-a-stolen-ai-recipe-infographic/"
+        },
+        {
+            "date": "Dec 01 2025",
+            "title": "AI Browsers Pose New Security Challenges for Enterprises",
+            "content": "The emergence of AI-powered browsers is introducing significant security concerns for enterprises. Unlike traditional browsers, these AI browsers actively interact with web content, potentially exposing sensitive data to new attack vectors. The &quot;Agentic&quot; Trojan Horse, a recent threat, exemplifies how these browsers can be exploited to bypass traditional security measures. Organizations must adapt their security strategies to address these evolving threats, focusing on robust endpoint protection and user education. As AI continues to reshape the digital landscape, security teams must stay informed about the latest developments to safeguard their networks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/12/webinar-agentic-trojan-horse-why-new-ai.html"
+        },
+        {
+            "date": "Dec 01 2025",
+            "title": "International Operation Shuts Down Cryptocurrency Money Laundering Platform",
+            "content": "Authorities in Germany and Switzerland have dismantled the cryptomixer.io platform, a major player in cryptocurrency money laundering. This operation, known as Operation Olympia, involved shutting down the platform&#x27;s server infrastructure and arresting key individuals involved. Cryptomixer.io was allegedly used to launder illicit funds, posing significant challenges to financial crime enforcement. The takedown marks a significant victory in the fight against online money laundering, emphasizing the need for international cooperation in tackling cybercrime. Financial institutions and cryptocurrency users should remain vigilant and report suspicious activities to authorities.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4098495/ermittler-zerschlagen-plattform-fur-online-geldwasche.html"
+        },
+        {
+            "date": "Dec 01 2025",
+            "title": "CISA Alerts on ScadaBR Vulnerability Following Hacktivist Attack",
+            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has issued a warning about CVE-2021-26829, a vulnerability in the ScadaBR industrial control system software. This alert follows a hacktivist attack that exploited the flaw, highlighting the susceptibility of critical infrastructure to cyber threats. The vulnerability allows unauthorized access and control over affected systems, posing severe risks to industrial operations. Organizations using ScadaBR should prioritize applying patches and reviewing their security protocols to prevent potential disruptions. This incident underscores the importance of securing industrial control systems against emerging cyber threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/cisa-warns-of-scadabr-vulnerability-after-hacktivist-ics-attack/"
+        },
+        {
+            "date": "Dec 01 2025",
+            "title": "Australian Hacker Sentenced for Wi-Fi Attacks on Airports and Flights",
+            "content": "Michael Clapsis has been sentenced to over seven years in prison for conducting Wi-Fi attacks targeting airports and in-flight networks. These attacks involved stealing sensitive information from unsuspecting users, raising significant concerns about the security of public Wi-Fi networks. The case highlights the vulnerabilities associated with wireless networks in public spaces, emphasizing the need for enhanced security measures. Travelers are advised to use virtual private networks (VPNs) and avoid accessing sensitive information over public Wi-Fi to mitigate risks. This sentencing serves as a deterrent and a reminder of the legal consequences of cybercrime.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/australian-man-sentenced-to-prison-for-wi-fi-attacks-at-airports-and-on-flights/"
+        },
+        {
+            "date": "Dec 01 2025",
+            "title": "Law Enforcement Dismantles Cryptomixer Service Used for Money Laundering",
+            "content": "In a coordinated effort, law enforcement agencies from Switzerland and Germany have successfully taken down the Cryptomixer service, a tool used by cybercriminals to launder stolen cryptocurrency. The operation involved seizing the platform&#x27;s infrastructure and detaining individuals responsible for its operation. Cryptomixer was a critical enabler for cybercriminals seeking to obfuscate the origins of illicit funds, posing a significant challenge to financial transparency. This takedown is part of broader efforts to combat cryptocurrency-related crime, highlighting the importance of international collaboration. Users of cryptocurrency should exercise due diligence and comply with regulatory guidelines to avoid involvement in illegal activities.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/police-takes-down-cryptomixer-cryptocurrency-mixing-service/"
+        },
+        {
+            "date": "Dec 01 2025",
             "title": "ISC Stormcast Warns of Emerging Cyber Threats",
             "content": "The SANS Internet Storm Center&#x27;s latest Stormcast highlights emerging cybersecurity threats, maintaining an InfoCON status of green. This indicates a relatively stable threat environment, though professionals should remain vigilant. The podcast covers recent vulnerabilities, including those affecting widely used software and systems. Security practitioners are advised to review their current defenses and stay informed about potential exploits. The Stormcast serves as a critical resource for security teams to anticipate and mitigate risks effectively. Regular updates from the SANS Internet Storm Center are essential for maintaining robust cybersecurity postures.",
             "source": "SANS Internet Storm Center",
             "sourceUrl": "https://isc.sans.edu/diary/rss/32526"
-        },
-        {
-            "date": "Nov 29 2025",
-            "title": "Asahi Data Breach Exposes 1.9 Million Individuals&#x27; Information",
-            "content": "Asahi Group Holdings has completed its investigation into a cyberattack that compromised the personal data of up to 1.9 million individuals. The breach involved unauthorized access to customer information, potentially affecting names, addresses, and contact details. Asahi, Japan&#x27;s largest beer producer, initially detected the breach in September. The company is working with cybersecurity experts to strengthen its defenses and prevent future incidents. Impacted individuals are advised to monitor their accounts for suspicious activity and consider credit monitoring services. This breach underscores the increasing risks faced by large enterprises in safeguarding sensitive data.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/japanese-beer-giant-asahi-says-data-breach-hit-15-million-people/"
-        },
-        {
-            "date": "Nov 28 2025",
-            "title": "Australian Man Sentenced for In-Flight Evil Twin WiFi Attacks",
-            "content": "A 44-year-old Australian man received a seven-year and four-month prison sentence for orchestrating &quot;evil twin&quot; WiFi attacks at airports. By setting up rogue networks that mimicked legitimate WiFi services, he intercepted sensitive data from unsuspecting travelers. The attacks targeted various airports across Australia, exploiting travelers&#x27; trust in free public WiFi. Law enforcement agencies emphasize the importance of using VPNs (Virtual Private Networks) and verifying network authenticity to protect personal information. This case highlights the ongoing threat posed by cybercriminals exploiting public WiFi vulnerabilities.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/man-behind-in-flight-evil-twin-wifi-attacks-gets-7-years-in-prison/"
-        },
-        {
-            "date": "Nov 28 2025",
-            "title": "Windows 11 Update Causes Password Login Issues",
-            "content": "Microsoft has issued a warning regarding a bug in recent Windows 11 updates that causes the password sign-in option to become invisible on the lock screen. Despite the button&#x27;s disappearance, the functionality remains intact, allowing users to log in if they are aware of the issue. The bug affects updates released since August, potentially impacting user access and system management. Microsoft is actively working on a fix and advises users to utilize alternative sign-in methods, such as PIN or biometric authentication, until the issue is resolved. This incident highlights the need for thorough testing of updates before release.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-updates-hide-password-icon-on-lock-screen/"
-        },
-        {
-            "date": "Nov 28 2025",
-            "title": "Over 17,000 Secrets Exposed in Public GitLab Repositories",
-            "content": "A security engineer&#x27;s scan of 5.6 million public GitLab Cloud repositories uncovered more than 17,000 exposed secrets, including API keys and passwords. These secrets were found across over 2,800 unique domains, posing significant security risks. Exposed credentials can lead to unauthorized access and data breaches, affecting both individual developers and organizations. This discovery highlights the critical need for developers to implement secret management solutions and regularly audit their code repositories. GitLab users should review their repositories for exposed information and adopt best practices for securing sensitive data.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/public-gitlab-repositories-exposed-more-than-17-000-secrets/"
-        },
-        {
-            "date": "Nov 28 2025",
-            "title": "Vulnerable Python Scripts Pose Domain-Takeover Risk on PyPI",
-            "content": "Cybersecurity researchers have identified vulnerabilities in legacy Python bootstrap scripts that could enable domain takeover attacks on the Python Package Index (PyPI). The flaws were found in older packages, potentially allowing attackers to compromise the software supply chain. ReversingLabs, a software supply chain security company, discovered these vulnerabilities, emphasizing the need for developers to update and secure their packages. The risk of domain takeovers underscores the importance of maintaining modern, secure coding practices. Developers are urged to review their Python packages for outdated scripts and apply necessary updates to mitigate potential threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/11/legacy-python-bootstrap-scripts-create.html"
-        },
-        {
-            "date": "Nov 28 2025",
-            "title": "North Korean Hackers Use npm Packages to Spread Malware",
-            "content": "North Korean threat actors have deployed 197 malicious npm packages to distribute an updated version of the OtterCookie malware. These packages, part of the Contagious Interview campaign, have been downloaded over 31,000 times, targeting developers and organizations using the npm registry. The malware is designed to exfiltrate sensitive data and compromise systems. Security firm Socket highlights the need for developers to scrutinize third-party packages and implement security measures to detect malicious activity. This campaign reflects the ongoing threat posed by state-sponsored actors leveraging software repositories to disseminate malware.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/11/north-korean-hackers-deploy-197-npm.html"
         }
     ],
     "aiShorts": [
         {
-            "date": "Nov 30 2025",
-            "title": "James Cameron Criticizes Generative AI as &quot;Horrifying&quot;",
-            "content": "James Cameron, renowned for his innovative use of visual effects in films like &quot;Avatar,&quot; has expressed strong concerns about generative AI technology. Despite his history of embracing cutting-edge visual technologies, Cameron finds the implications of AI-generated content alarming. His comments reflect a broader unease in the creative industry, where AI&#x27;s ability to mimic human creativity raises ethical and legal questions. This sentiment is echoed by other filmmakers and artists worried about AI&#x27;s role in content creation. Professionals in the field should consider the ethical dimensions of deploying generative AI in creative processes.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/30/avatar-director-james-cameron-says-generative-ai-is-horrifying/"
+            "date": "Dec 01 2025",
+            "title": "AI Monitors Prison Calls to Predict and Prevent Crimes",
+            "content": "Securus Technologies has developed an AI model trained on years of inmates&#x27; phone and video calls to predict and prevent criminal activities. This system is currently being piloted to scan calls, texts, and emails within prison environments. The AI aims to identify patterns that may indicate planned crimes, providing authorities with a proactive tool for crime prevention. While this technology could enhance security, it raises significant privacy concerns and ethical questions about surveillance. The initiative reflects a growing trend of using AI to enhance security measures, but it also necessitates robust oversight to balance safety and privacy.",
+            "source": "MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2025/12/01/1128591/an-ai-model-trained-on-prison-phone-calls-is-now-being-used-to-surveil-inmates/"
+        },
+        {
+            "date": "Dec 01 2025",
+            "title": "Accenture Partners with OpenAI to Deploy 40,000 ChatGPT Enterprise Licenses",
+            "content": "Accenture has announced a strategic partnership with OpenAI, deploying 40,000 ChatGPT Enterprise licenses to enhance AI capabilities across its operations. This move designates OpenAI as Accenture&#x27;s primary intelligence partner, aiming to upskill teams and drive AI-driven client outcomes. The integration of ChatGPT into enterprise workflows is expected to streamline processes and improve decision-making speed and accuracy. This partnership highlights the increasing adoption of AI tools in large-scale business environments, underscoring the need for ongoing training and adaptation to fully leverage AI&#x27;s potential. Organizations should consider similar partnerships to remain competitive in the AI-driven market.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/accenture-partnership"
         },
         {
             "date": "Nov 30 2025",
-            "title": "David Sacks&#x27; Trump Administration Role Sparks Controversy Over Potential Profits",
-            "content": "A new report scrutinizes David Sacks&#x27; position as the AI and crypto czar under President Donald Trump, suggesting potential conflicts of interest with his investments. The report implies that Sacks could benefit financially from policies he influences, though he dismisses these claims as unfounded. This development highlights the ongoing debate over transparency and conflict of interest in government roles related to technology and finance. The situation underscores the need for clear ethical guidelines and oversight in public-private sector intersections, especially as AI and cryptocurrency continue to gain prominence.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/30/new-report-examines-how-david-sacks-might-profit-from-trump-administration-role/"
-        },
-        {
-            "date": "Nov 30 2025",
-            "title": "Celebrating Three Years of ChatGPT&#x27;s Transformative Impact",
-            "content": "Three years after its launch, ChatGPT has significantly reshaped business and technology landscapes. The AI model, known for its conversational abilities, has been integrated into numerous applications, enhancing customer service, content creation, and more. Its influence extends across industries, driving innovation in how businesses interact with customers and manage operations. However, this transformation also raises questions about AI governance and ethical use, as organizations must balance technological benefits with potential biases and data privacy concerns. Stakeholders should continue to monitor AI advancements and their implications on industry standards.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/30/chatgpt-launched-three-years-ago-today/"
-        },
-        {
-            "date": "Nov 30 2025",
-            "title": "Ontology: A Key to Effective AI Agent Deployment in Business",
-            "content": "A recent analysis emphasizes the importance of ontology in deploying AI agents effectively within enterprises. Despite significant investments in AI infrastructure, many businesses struggle with AI agents that fail to accurately understand complex business data and processes. Ontology, which involves the explicit specification of business concepts and relationships, is identified as a crucial component in overcoming these challenges. By implementing robust ontological frameworks, companies can enhance AI comprehension and application, leading to more successful digital transformations. Professionals should prioritize ontology development to maximize AI&#x27;s potential in business operations.",
+            "title": "Rebuilding Hybrid Cloud Security for AI-Driven Threats",
+            "content": "The advent of AI-driven cyberattacks has exposed the inadequacies of traditional hybrid cloud security systems. These systems, originally designed before the rise of automated, machine-based threats, struggle to defend against attacks that execute in milliseconds. Enterprises relying on outdated batch-based detection and siloed tools face increased vulnerability. As AI continues to evolve, integrating real-time monitoring and adaptive security measures becomes imperative. Organizations must reassess and upgrade their security architectures to combat this new generation of cyber threats effectively. Failure to do so could lead to significant operational disruptions and data breaches.",
             "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/ontology-is-the-real-guardrail-how-to-stop-ai-agents-from-misunderstanding"
+            "sourceUrl": "https://venturebeat.com/security/hybrid-cloud-security-reinvented-ai-era"
         },
         {
-            "date": "Nov 29 2025",
-            "title": "Black Friday Online Sales Reach Record $11.8 Billion",
-            "content": "Adobe Analytics reports a record-setting $11.8 billion in online spending for Black Friday 2025, reflecting a robust consumer shift towards e-commerce. The data, derived from tracking over 1 trillion visits to U.S. retail websites, highlights significant growth in digital shopping trends. This surge is attributed to increased consumer confidence and the convenience of online deals. Retailers and tech professionals should note the growing importance of digital platforms and consider enhancing their online infrastructures to capitalize on future shopping events. The trend underscores the need for scalable, secure e-commerce solutions.",
+            "date": "Nov 28 2025",
+            "title": "Supabase Reaches $5B Valuation by Prioritizing Strategic Growth",
+            "content": "Supabase has achieved a $5 billion valuation by strategically opting out of lucrative contracts that did not align with its long-term vision. The open-source database platform has become a preferred backend solution for the rapidly growing vibe-coding sector. By focusing on sustainable growth and core product development, Supabase has positioned itself as a key player in the tech infrastructure space. This approach highlights the importance of aligning business decisions with strategic goals, even at the cost of immediate financial gain. Other startups might consider similar strategies to build resilient and scalable businesses.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/29/black-friday-sets-online-spending-record-of-11-8b-adobe-says/"
+            "sourceUrl": "https://techcrunch.com/video/supabase-hit-5b-by-turning-down-million-dollar-contracts-heres-why/"
         },
         {
-            "date": "Nov 29 2025",
-            "title": "Observability: Essential for Reliable Large Language Models in Enterprises",
-            "content": "The integration of large language models (LLMs) into enterprise systems demands reliable observability to ensure performance and trustworthiness. As LLMs become central to business operations, enterprises face challenges in maintaining governance and accountability. Observability tools provide critical insights into model behavior, enabling real-time monitoring and troubleshooting. This capability is essential for aligning AI outputs with business objectives and regulatory requirements. Enterprises should invest in robust observability frameworks to ensure their AI systems remain auditable and reliable, thus securing the future of AI-driven business processes.",
+            "date": "Nov 28 2025",
+            "title": "Anthropic Advances AI Agent Memory with New Claude SDK",
+            "content": "Anthropic has introduced a new multi-session Claude SDK, addressing the persistent issue of AI agent memory. The innovation allows agents to maintain context across different sessions, enhancing their ability to follow instructions and recall past interactions. This two-fold solution is expected to improve the reliability and efficiency of AI agents in enterprise applications. By solving the memory problem, Anthropic is setting a new standard for AI agent capabilities, which could lead to more widespread adoption in various sectors. Enterprises should explore integrating such advanced AI solutions to enhance operational efficiency.",
             "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/why-observable-ai-is-the-missing-sre-layer-enterprises-need-for-reliable"
+            "sourceUrl": "https://venturebeat.com/ai/anthropic-says-it-solved-the-long-running-ai-agent-problem-with-a-new-multi"
         },
         {
-            "date": "Nov 29 2025",
-            "title": "Implicit Bias in AI: The Challenge of Addressing LLMs&#x27; Subtle Prejudices",
-            "content": "Researchers highlight the challenge of implicit bias within large language models (LLMs), which may infer demographic data and exhibit subtle prejudices. Despite not using overtly biased language, these AI systems can perpetuate stereotypes, impacting decision-making processes. This issue underscores the need for rigorous bias detection and mitigation strategies in AI development. Professionals in AI and machine learning should prioritize transparency and fairness, ensuring that LLMs are trained on diverse datasets and subject to continuous evaluation. Addressing these biases is crucial for ethical AI deployment in sensitive applications.",
+            "date": "Nov 28 2025",
+            "title": "Supabase CEO Discusses Strategic Choices Behind $5B Success",
+            "content": "Supabase&#x27;s CEO has opened up about the challenging decisions that propelled the company to a $5 billion valuation. By declining million-dollar contracts that did not align with its strategic goals, Supabase focused on building a robust open-source database platform for the vibe-coding community. This disciplined approach allowed the company to strengthen its market position and foster sustainable growth. The story underscores the importance of strategic alignment in business decision-making, offering valuable insights for startups aiming to achieve long-term success. Companies should evaluate their growth strategies to ensure they support their overarching objectives.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/11/29/no-you-cant-get-your-ai-to-admit-to-being-sexist-but-it-probably-is/"
+            "sourceUrl": "https://techcrunch.com/podcast/supabase-ceo-on-the-painful-decisions-that-built-a-5b-company/"
+        },
+        {
+            "date": "Nov 28 2025",
+            "title": "Reflecting on AI&#x27;s Transformative Year in 2025",
+            "content": "As 2025 draws to a close, the AI landscape has experienced unprecedented growth and innovation. This year has been marked by a constant stream of new models, frameworks, and groundbreaking demonstrations, often feeling like a continuous DevDay event. Despite the overwhelming pace, AI has finally begun to deliver on its transformative potential, impacting industries from healthcare to finance. Professionals in the field should stay informed about these rapid advancements to leverage AI&#x27;s capabilities fully. As AI continues to evolve, maintaining a balance between innovation and ethical considerations will be crucial for sustainable progress.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/ai/what-to-be-thankful-for-in-ai-in-2025"
         }
     ],
     "articles": {
