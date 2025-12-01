@@ -88,7 +88,7 @@ async function openVendorModal(vendorName) {
     const allTags = data.iocs.flatMap(ioc => ioc.tags || []);
     const uniqueTags = [...new Set(allTags)].sort();
 
-    // Add advanced filter controls
+    // Add advanced filter controls (removed Tags - not useful)
     const filterControls = `
         <div style="background: rgba(255, 255, 255, 0.03); border-radius: 12px; padding: 1.25rem; margin-bottom: 1.5rem; border: 1px solid rgba(0, 217, 255, 0.1);">
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1rem;">
@@ -110,13 +110,6 @@ async function openVendorModal(vendorName) {
                         ${uniqueTypes.map(type => `<option value="${type}">${type}</option>`).join('')}
                     </select>
                 </div>
-                <div>
-                    <label style="display: block; color: var(--accent-cyan); font-size: 0.85rem; margin-bottom: 0.5rem; font-weight: 600;">🏷️ Tags</label>
-                    <select id="tagFilter" onchange="applyVendorFilters()" style="width: 100%; padding: 0.6rem; background: rgba(0, 0, 0, 0.3); border: 1px solid rgba(0, 217, 255, 0.3); border-radius: 6px; color: var(--text-primary); font-size: 0.9rem; cursor: pointer;">
-                        <option value="all">All tags</option>
-                        ${uniqueTags.map(tag => `<option value="${tag}">${tag}</option>`).join('')}
-                    </select>
-                </div>
             </div>
             <button onclick="clearVendorFilters()" style="padding: 0.6rem 1.2rem; background: rgba(255, 59, 48, 0.1); border: 1px solid rgba(255, 59, 48, 0.3); border-radius: 6px; color: #ff3b30; font-weight: 600; cursor: pointer; font-size: 0.85rem; transition: all 0.2s; display: flex; align-items: center; gap: 0.5rem;" onmouseover="this.style.background='rgba(255, 59, 48, 0.2)'" onmouseout="this.style.background='rgba(255, 59, 48, 0.1)'">
                 <span>✕</span> Clear Filters
@@ -124,23 +117,41 @@ async function openVendorModal(vendorName) {
         </div>
     `;
 
-    // Add export buttons
+
+    // Add export buttons (All + Filtered)
     const exportButtons = `
-        <div style="display: flex; justify-content: flex-end; gap: 0.75rem; margin-bottom: 1.5rem; padding: 0 0.5rem;">
-            <button onclick="exportVendorDataFromModal('${vendorName}', 'csv')" 
-                style="padding: 0.6rem 1.2rem; background: linear-gradient(135deg, #00D9FF, #0099cc); border: none; border-radius: 8px; color: white; font-weight: 600; cursor: pointer; font-size: 0.9rem; transition: all 0.3s; box-shadow: 0 4px 15px rgba(0, 217, 255, 0.3); display: flex; align-items: center; gap: 0.5rem;"
-                onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(0, 217, 255, 0.4)';"
-                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0, 217, 255, 0.3)';">
-                <span>📥</span> Export Filtered CSV
-            </button>
-            <button onclick="exportVendorDataFromModal('${vendorName}', 'json')" 
-                style="padding: 0.6rem 1.2rem; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(0, 217, 255, 0.3); border-radius: 8px; color: var(--text-primary); font-weight: 600; cursor: pointer; font-size: 0.9rem; transition: all 0.3s; display: flex; align-items: center; gap: 0.5rem;"
-                onmouseover="this.style.background='rgba(0, 217, 255, 0.1)'; this.style.borderColor='rgba(0, 217, 255, 0.5)';"
-                onmouseout="this.style.background='rgba(255, 255, 255, 0.05)'; this.style.borderColor='rgba(0, 217, 255, 0.3)';">
-                <span>📥</span> Export Filtered JSON
-            </button>
+        <div style="display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: 1.5rem; padding: 0 0.5rem; flex-wrap: wrap;">
+            <div style="display: flex; gap: 0.75rem;">
+                <button onclick="exportVendorDataFromModal('${vendorName}', 'csv', false)" 
+                    style="padding: 0.6rem 1.2rem; background: linear-gradient(135deg, #667eea, #764ba2); border: none; border-radius: 8px; color: white; font-weight: 600; cursor: pointer; font-size: 0.9rem; transition: all 0.3s; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3); display: flex; align-items: center; gap: 0.5rem;"
+                    onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(102, 126, 234, 0.4)';"
+                    onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(102, 126, 234, 0.3)';">
+                    <span>📥</span> Export All CSV
+                </button>
+                <button onclick="exportVendorDataFromModal('${vendorName}', 'json', false)" 
+                    style="padding: 0.6rem 1.2rem; background: rgba(102, 126, 234, 0.1); border: 1px solid rgba(102, 126, 234, 0.3); border-radius: 8px; color: var(--accent-purple); font-weight: 600; cursor: pointer; font-size: 0.9rem; transition: all 0.3s; display: flex; align-items: center; gap: 0.5rem;"
+                    onmouseover="this.style.background='rgba(102, 126, 234, 0.2)'; this.style.borderColor='rgba(102, 126, 234, 0.5)';"
+                    onmouseout="this.style.background='rgba(102, 126, 234, 0.1)'; this.style.borderColor='rgba(102, 126, 234, 0.3)';">
+                    <span>📥</span> Export All JSON
+                </button>
+            </div>
+            <div style="display: flex; gap: 0.75rem;">
+                <button onclick="exportVendorDataFromModal('${vendorName}', 'csv', true)" 
+                    style="padding: 0.6rem 1.2rem; background: linear-gradient(135deg, #00D9FF, #0099cc); border: none; border-radius: 8px; color: white; font-weight: 600; cursor: pointer; font-size: 0.9rem; transition: all 0.3s; box-shadow: 0 4px 15px rgba(0, 217, 255, 0.3); display: flex; align-items: center; gap: 0.5rem;"
+                    onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(0, 217, 255, 0.4)';"
+                    onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0, 217, 255, 0.3)';">
+                    <span>🔍</span> Export Filtered CSV
+                </button>
+                <button onclick="exportVendorDataFromModal('${vendorName}', 'json', true)" 
+                    style="padding: 0.6rem 1.2rem; background: rgba(0, 217, 255, 0.1); border: 1px solid rgba(0, 217, 255, 0.3); border-radius: 8px; color: var(--accent-cyan); font-weight: 600; cursor: pointer; font-size: 0.9rem; transition: all 0.3s; display: flex; align-items: center; gap: 0.5rem;"
+                    onmouseover="this.style.background='rgba(0, 217, 255, 0.15)'; this.style.borderColor='rgba(0, 217, 255, 0.5)';"
+                    onmouseout="this.style.background='rgba(0, 217, 255, 0.1)'; this.style.borderColor='rgba(0, 217, 255, 0.3)';">
+                    <span>🔍</span> Export Filtered JSON
+                </button>
+            </div>
         </div>
     `;
+
 
     let html = cappingNotice + filterControls + exportButtons;
     data.iocs.forEach((ioc) => {
@@ -236,11 +247,10 @@ function filterVendorModal() {
     }
 }
 
-// Apply advanced filters (Time + Type + Tags) with AND logic
+// Apply advanced filters (Time + Type + Search) with AND logic
 function applyVendorFilters() {
     const timeFilter = document.getElementById('timeFilter')?.value || 'all';
     const typeFilter = document.getElementById('typeFilter')?.value || 'all';
-    const tagFilter = document.getElementById('tagFilter')?.value || 'all';
     const searchInput = document.getElementById('vendorModalSearch');
     const searchTerm = searchInput?.value.toLowerCase() || '';
 
@@ -294,14 +304,6 @@ function applyVendorFilters() {
             }
         }
 
-        // Tag filter
-        if (show && tagFilter !== 'all') {
-            const tags = item.dataset.tags || '';
-            if (!tags.split(',').includes(tagFilter)) {
-                show = false;
-            }
-        }
-
         item.style.display = show ? 'block' : 'none';
         if (show) visibleCount++;
     });
@@ -310,7 +312,6 @@ function applyVendorFilters() {
     const activeFilters = [];
     if (timeFilter !== 'all') activeFilters.push(document.getElementById('timeFilter').options[document.getElementById('timeFilter').selectedIndex].text);
     if (typeFilter !== 'all') activeFilters.push(typeFilter);
-    if (tagFilter !== 'all') activeFilters.push(tagFilter);
 
     if (activeFilters.length > 0 || searchTerm) {
         countDiv.textContent = `Showing ${visibleCount} of ${totalCount} IOCs (filtered)`;
@@ -324,12 +325,10 @@ function clearVendorFilters() {
     // Reset filter dropdowns
     const timeFilter = document.getElementById('timeFilter');
     const typeFilter = document.getElementById('typeFilter');
-    const tagFilter = document.getElementById('tagFilter');
     const searchInput = document.getElementById('vendorModalSearch');
 
     if (timeFilter) timeFilter.value = 'all';
     if (typeFilter) typeFilter.value = 'all';
-    if (tagFilter) tagFilter.value = 'all';
     if (searchInput) searchInput.value = '';
 
     // Reapply filters (which will show all)
@@ -406,30 +405,38 @@ window.addEventListener('click', function (event) {
 });
 
 // Export vendor data from modal (works with cached data and filters)
-function exportVendorDataFromModal(vendorName, format) {
+function exportVendorDataFromModal(vendorName, format, applyFilters = true) {
     const data = vendorDataCache[vendorName];
     if (!data || !data.iocs) {
         alert('No data available for export. Please open the vendor modal first.');
         return;
     }
 
-    // Get only visible IOCs (filtered)
-    const content = document.getElementById('vendorModalContent');
-    const visibleItems = Array.from(content.querySelectorAll('.vendor-ioc-item')).filter(item => item.style.display !== 'none');
+    let filteredIOCs;
 
-    // Extract indicators from visible items
-    const visibleIndicators = visibleItems.map(item => item.dataset.indicator);
+    if (applyFilters) {
+        // Export Filtered - Get only visible IOCs (filtered)
+        const content = document.getElementById('vendorModalContent');
+        const visibleItems = Array.from(content.querySelectorAll('.vendor-ioc-item')).filter(item => item.style.display !== 'none');
 
-    // Filter IOCs to only include visible ones
-    const filteredIOCs = data.iocs.filter(ioc => visibleIndicators.includes(ioc.indicator));
+        // Extract indicators from visible items
+        const visibleIndicators = visibleItems.map(item => item.dataset.indicator);
 
-    if (filteredIOCs.length === 0) {
-        alert('No IOCs match the current filter. Please adjust your filters.');
-        return;
+        // Filter IOCs to only include visible ones
+        filteredIOCs = data.iocs.filter(ioc => visibleIndicators.includes(ioc.indicator));
+
+        if (filteredIOCs.length === 0) {
+            alert('No IOCs match the current filter. Please adjust your filters or use "Export All" to download all data.');
+            return;
+        }
+    } else {
+        // Export All - Use all IOCs (ignore filters)
+        filteredIOCs = data.iocs;
     }
 
     const timestamp = new Date().toISOString().split('T')[0];
-    const filename = `${vendorName}_IOCs_${timestamp}_filtered`;
+    const filterSuffix = applyFilters ? '_filtered' : '_all';
+    const filename = `${vendorName}_IOCs_${timestamp}${filterSuffix}`;
 
     if (format === 'csv') {
         const headers = ['Type', 'Indicator', 'Description', 'Timestamp', 'Source', 'Tags', 'Campaign'];
@@ -446,13 +453,19 @@ function exportVendorDataFromModal(vendorName, format) {
         downloadFile(csv, `${filename}.csv`, 'text/csv');
 
         // Show success message
-        alert(`Exported ${filteredIOCs.length} filtered IOCs to CSV`);
+        const message = applyFilters
+            ? `Exported ${filteredIOCs.length} filtered IOCs to CSV`
+            : `Exported ${filteredIOCs.length} IOCs to CSV (all data)`;
+        alert(message);
     } else if (format === 'json') {
         const json = JSON.stringify(filteredIOCs, null, 2);
         downloadFile(json, `${filename}.json`, 'application/json');
 
         // Show success message
-        alert(`Exported ${filteredIOCs.length} filtered IOCs to JSON`);
+        const message = applyFilters
+            ? `Exported ${filteredIOCs.length} filtered IOCs to JSON`
+            : `Exported ${filteredIOCs.length} IOCs to JSON (all data)`;
+        alert(message);
     }
 }
 

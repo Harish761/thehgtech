@@ -61,7 +61,7 @@ IOC_DISPLAY_CAPS = {
 #     'Spamhaus DROP': 100
 # }
 
-IOC_EXPIRY_HOURS = 24
+IOC_EXPIRY_HOURS = 168  # 7 days retention
 OUTPUT_FILE = 'threat-intel.js'
 HISTORY_FILE = 'threat-intel-history.json'
 
@@ -1165,7 +1165,7 @@ window.threatIntelData = {json.dumps(lightweight_data, indent=4)};
 # Data Processing
 # ──────────────────────────────────────────────────────────────
 def remove_expired_iocs(iocs):
-    """Remove IOCs older than 24 hours"""
+    """Remove IOCs older than 7 days"""
     now = get_ist_now()
     cutoff = now - timedelta(hours=IOC_EXPIRY_HOURS)
     
