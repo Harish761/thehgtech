@@ -199,8 +199,16 @@
         }
 
         showDetails(groupName) {
+            console.log('showDetails called with:', groupName);
+            console.log('Available groups:', this.data?.groups?.map(g => g.name));
+
             const group = this.data.groups.find(g => g.name === groupName);
-            if (!group) return;
+            if (!group) {
+                console.error('Group not found:', groupName);
+                return;
+            }
+
+            console.log('Found group:', group.name, 'with', group.victims?.length, 'victims');
 
             // Create modal
             const modal = document.createElement('div');
