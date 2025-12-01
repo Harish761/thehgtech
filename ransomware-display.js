@@ -227,20 +227,20 @@
 
             modal.innerHTML = `
                 <div class="ransomware-modal">
-                    <div class="modal-header">
+                    <div class="ransomware-modal-header">
                         <h2>🔐 ${this.escapeHtml(group.name)}</h2>
-                        <button class="close-modal" onclick="this.closest('.ransomware-modal-overlay').remove()">×</button>
+                        <button class="ransomware-modal-close" onclick="this.closest('.ransomware-modal-overlay').remove()">×</button>
                     </div>
                     
-                    <div class="modal-content">
+                    <div class="ransomware-modal-body">
                         <div class="modal-stats-grid">
                             <div class="modal-stat">
-                                <span class="label">Total Victims (7d)</span>
-                                <span class="value">${group.count}</span>
+                                <span class="modal-stat-label">Total Victims (7d)</span>
+                                <span class="modal-stat-value">${group.count}</span>
                             </div>
                             <div class="modal-stat">
-                                <span class="label">Trend</span>
-                                <span class="value ${group.trend}">${group.trend === 'up' ? '↑ Increasing' : '→ Stable'}</span>
+                                <span class="modal-stat-label">Trend</span>
+                                <span class="modal-stat-value ${group.trend}">${group.trend === 'up' ? '↑ Increasing' : '→ Stable'}</span>
                             </div>
                         </div>
                         
