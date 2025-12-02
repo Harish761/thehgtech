@@ -139,6 +139,15 @@
         .category-icon {
             font-size: 2.5rem;
             margin-bottom: 1rem;
+            color: var(--accent-cyan);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background: rgba(0, 217, 255, 0.1);
+            border-radius: 12px;
+            border: 1px solid rgba(0, 217, 255, 0.3);
         }
 
         .category-card h3 {
@@ -396,49 +405,49 @@
         <!-- Categories -->
         <div class="categories">
             <div class="category-card" onclick="filterByCategory('all')" style="cursor: pointer;">
-                <div class="category-icon">🔍</div>
+                <div class="category-icon"><i class="fas fa-th-large"></i></div>
                 <h3>All Categories</h3>
                 <p>View all available tool comparisons</p>
                 <span class="comparison-count">Click to view all</span>
             </div>
 
             <div class="category-card" onclick="filterByCategory('siem')" style="cursor: pointer;">
-                <div class="category-icon">🛡️</div>
+                <div class="category-icon"><i class="fas fa-shield-alt"></i></div>
                 <h3>SIEM Platforms</h3>
                 <p>Compare security information and event management solutions</p>
                 <span class="comparison-count">1 comparison available</span>
             </div>
 
             <div class="category-card" onclick="filterByCategory('edr')" style="cursor: pointer;">
-                <div class="category-icon">🔒</div>
+                <div class="category-icon"><i class="fas fa-laptop-code"></i></div>
                 <h3>EDR/XDR Solutions</h3>
                 <p>Endpoint detection and response platform comparisons</p>
                 <span class="comparison-count">Coming soon</span>
             </div>
 
             <div class="category-card" onclick="filterByCategory('vuln')" style="cursor: pointer;">
-                <div class="category-icon">🔍</div>
+                <div class="category-icon"><i class="fas fa-bug"></i></div>
                 <h3>Vulnerability Scanners</h3>
                 <p>Compare vulnerability assessment and management tools</p>
                 <span class="comparison-count">Coming soon</span>
             </div>
 
             <div class="category-card" onclick="filterByCategory('soar')" style="cursor: pointer;">
-                <div class="category-icon">🤖</div>
+                <div class="category-icon"><i class="fas fa-robot"></i></div>
                 <h3>SOAR Platforms</h3>
                 <p>Security orchestration, automation, and response solutions</p>
                 <span class="comparison-count">Coming soon</span>
             </div>
 
             <div class="category-card" onclick="filterByCategory('cloud')" style="cursor: pointer;">
-                <div class="category-icon">☁️</div>
+                <div class="category-icon"><i class="fas fa-cloud"></i></div>
                 <h3>Cloud Security</h3>
                 <p>Cloud security posture management and CWPP tools</p>
                 <span class="comparison-count">Coming soon</span>
             </div>
 
             <div class="category-card" onclick="filterByCategory('api')" style="cursor: pointer;">
-                <div class="category-icon">🌐</div>
+                <div class="category-icon"><i class="fas fa-code"></i></div>
                 <h3>API Security</h3>
                 <p>API security testing and protection platforms</p>
                 <span class="comparison-count">Coming soon</span>
