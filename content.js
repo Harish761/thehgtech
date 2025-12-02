@@ -5,55 +5,111 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Dec 02 2025",
+            "title": "University of Pennsylvania Confirms Data Breach Following Oracle Hack",
+            "content": "The University of Pennsylvania has disclosed a data breach after attackers accessed its Oracle E-Business Suite servers in August, resulting in the theft of documents containing personal information. The breach potentially affects students, faculty, and staff whose data was stored on these servers. This incident underscores the vulnerabilities in enterprise resource planning systems, which are increasingly being targeted by cybercriminals. Organizations using Oracle systems should review their security protocols and ensure that patches and updates are applied promptly. Affected individuals are advised to monitor their accounts for any unusual activity and consider credit monitoring services.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/university-of-pennsylvania-confirms-data-theft-after-oracle-ebs-hack/"
+        },
+        {
+            "date": "Dec 02 2025",
+            "title": "Saporo Secures $8 Million to Expand Identity Security Platform",
+            "content": "Swiss cybersecurity firm Saporo has raised $8 million to enhance its identity security platform, focusing on expanding its research and development, sales, and marketing teams across Europe. This investment highlights the growing importance of identity security as organizations face increasing threats from identity-based attacks. The funding will enable Saporo to accelerate the development of its platform, which helps businesses manage and secure digital identities. Companies are advised to prioritize identity security solutions as part of their broader cybersecurity strategies to mitigate risks associated with unauthorized access and identity theft.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/saporo-raises-8-million-for-identity-security-platform/"
+        },
+        {
+            "date": "Dec 02 2025",
+            "title": "OpenAI Coding Agent Vulnerability Poses Risk to Developers",
+            "content": "A critical vulnerability identified as CVE-2025-61260 has been discovered in OpenAI&#x27;s Codex Command Line Interface (CLI), which could be exploited for command execution attacks. This vulnerability poses significant risks to developers using the tool, potentially allowing attackers to execute arbitrary commands on affected systems. As AI tools become integral to software development, ensuring their security is paramount to prevent exploitation. Developers using the Codex CLI should apply available patches immediately and review their systems for any signs of compromise. This incident highlights the need for rigorous security assessments of AI-driven development tools.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/vulnerability-in-openai-coding-agent-could-facilitate-attacks-on-developers/"
+        },
+        {
+            "date": "Dec 02 2025",
+            "title": "AI Adoption Outpaces Governance, Increasing Shadow Identity Risks",
+            "content": "The 2025 State of AI Data Security Report reveals a stark contrast between widespread AI adoption and limited governance, with 83% of organizations using AI but only 13% having strong oversight. This gap raises concerns about shadow identities—unmonitored AI systems that can introduce security vulnerabilities. As AI becomes ubiquitous in daily operations, businesses must enhance their governance frameworks to manage these risks effectively. Organizations are urged to implement comprehensive AI oversight strategies to ensure security and compliance, addressing the potential for unauthorized data access and manipulation.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4099211/ai-adoption-surges-while-governance-lags-report-warns-of-growing-shadow-identity-risk.html"
+        },
+        {
+            "date": "Dec 02 2025",
+            "title": "Google Addresses Actively Exploited Android Vulnerabilities",
+            "content": "Google&#x27;s December security update addresses 107 Android vulnerabilities, including two critical flaws that are currently being exploited in the wild. These vulnerabilities could allow attackers to gain unauthorized access to devices or execute malicious code. Users are strongly advised to update their devices immediately to protect against potential threats. The rapid exploitation of these vulnerabilities underscores the importance of timely patch management in mobile security. Organizations should ensure that all Android devices within their networks are updated promptly to mitigate these risks.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2025/12/google-patches-107-android-flaws"
+        },
+        {
+            "date": "Dec 02 2025",
+            "title": "SecAlerts Enhances Vulnerability Tracking with Smarter Solutions",
+            "content": "SecAlerts has introduced a new approach to vulnerability management, offering a streamlined way to track and prioritize security alerts. This solution addresses the challenge of managing numerous software vulnerabilities across large IT environments, helping organizations focus on the most critical threats. By reducing the noise in vulnerability notifications, SecAlerts enables security teams to allocate resources more effectively and respond to threats faster. Businesses are encouraged to adopt such solutions to enhance their cybersecurity posture and improve their response to emerging vulnerabilities.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/12/secalerts-cuts-through-noise-with.html"
+        },
+        {
+            "date": "Dec 02 2025",
+            "title": "Microsoft Fixes File Explorer and Search Issues in Windows 11 Update",
+            "content": "Microsoft has released the KB5070311 preview cumulative update for Windows 11, addressing 49 issues including File Explorer freezes and search functionality problems. This update is part of Microsoft&#x27;s ongoing efforts to enhance system stability and user experience. Users experiencing these issues are advised to install the update to improve system performance. The release highlights the importance of regular system updates to address software bugs and vulnerabilities. IT departments should ensure that all Windows 11 systems are updated to maintain optimal functionality and security.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5070311-update-fixes-file-explorer-freezes-search-issues/"
+        },
+        {
+            "date": "Dec 02 2025",
             "title": "ISC Stormcast Highlights Emerging Cyber Threats",
             "content": "The SANS Internet Storm Center&#x27;s latest Stormcast podcast highlights emerging cyber threats for December 2, 2025. The discussion centers on new vulnerabilities and attack vectors identified by cybersecurity experts. Key topics include recent malware campaigns and the importance of timely patch management. The podcast emphasizes the need for organizations to stay vigilant and update their security practices in response to evolving threats. Listeners are encouraged to review their security protocols and ensure all systems are up to date to mitigate potential risks.",
             "source": "SANS Internet Storm Center",
             "sourceUrl": "https://isc.sans.edu/diary/rss/32528"
-        },
-        {
-            "date": "Dec 01 2025",
-            "title": "SharePoint In-Memory Payloads: A New Cybersecurity Challenge",
-            "content": "James Woodworth, an intern at the SANS Internet Storm Center, reports on the discovery of in-memory ToolShell payloads affecting SharePoint servers. These payloads, which evade traditional detection methods, pose a significant risk to organizations using SharePoint for collaboration and data management. The report underscores the importance of monitoring in-memory activities and utilizing advanced threat detection tools. Organizations are advised to implement robust security measures and conduct regular audits to identify and mitigate these sophisticated threats. Woodworth&#x27;s findings highlight the ongoing need for skilled cybersecurity professionals to address emerging challenges.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32524"
-        },
-        {
-            "date": "Dec 01 2025",
-            "title": "Google Patches 107 Android Vulnerabilities, Including Two Zero-Days",
-            "content": "Google&#x27;s latest security update addresses 107 vulnerabilities in the Android operating system, including two critical zero-day exploits. This update represents the second-highest number of patches issued by Google this year, underscoring the ongoing vulnerability landscape in mobile operating systems. The vulnerabilities affect various Android versions, posing risks to millions of users worldwide. Google urges users to install the update promptly to protect against potential exploitation. This proactive approach highlights the importance of regular updates and security awareness in the mobile ecosystem.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/android-security-update-december-2025/"
-        },
-        {
-            "date": "Dec 01 2025",
-            "title": "Tomiris Group Launches Advanced Cyber-Espionage Campaign",
-            "content": "The Tomiris cyber-espionage group, known for its Russian-speaking members, is actively targeting government and diplomatic entities in CIS (Commonwealth of Independent States) member states and Central Asia. Utilizing new tools and tactics, the group aims to gather intelligence and disrupt operations. The campaign&#x27;s focus on high-value targets highlights the persistent threat posed by nation-state actors. Organizations in the affected regions are advised to enhance their cybersecurity defenses and remain vigilant against potential intrusions. This development underscores the need for international cooperation in combating cyber-espionage.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/tomiris-unleashes-havoc-new-tools-tactics"
-        },
-        {
-            "date": "Dec 01 2025",
-            "title": "CodeRED Emergency Alert System Compromised by Ransomware Attack",
-            "content": "The CodeRED emergency alert platform has been shut down following a ransomware attack by the Inc gang, which claimed responsibility for stealing sensitive subscriber data. The attack raises concerns about the security of critical infrastructure systems and the potential impact on public safety. Organizations using similar platforms are urged to review their security measures and ensure robust defenses against ransomware threats. This incident highlights the increasing sophistication of ransomware attacks and the need for comprehensive cybersecurity strategies to protect vital services.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/codered-emergency-alert-platform-shut-down-cyberattack"
-        },
-        {
-            "date": "Dec 01 2025",
-            "title": "Glassworm Malware Campaign Targets VS Code Users in New Wave",
-            "content": "The Glassworm malware campaign has resurfaced with a third wave of malicious packages targeting users of Visual Studio Code. The campaign, which first appeared in October, has added 24 new packages to the OpenVSX and Microsoft Visual Studio marketplaces. These packages are designed to compromise developer environments and steal sensitive information. Developers are advised to verify the integrity of packages before installation and employ security tools to detect malicious activity. This ongoing threat underscores the importance of securing software development environments against emerging malware threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/glassworm-malware-returns-in-third-wave-of-malicious-vs-code-packages/"
-        },
-        {
-            "date": "Dec 01 2025",
-            "title": "European Police Dismantle Cryptomixer, Seizing Millions in Cryptocurrency",
-            "content": "European law enforcement agencies have successfully disrupted Cryptomixer, a service allegedly used by cybercriminals to launder proceeds from ransomware and other cyber activities. The operation resulted in the seizure of millions in cryptocurrency, striking a significant blow against cybercrime networks. This action demonstrates the effectiveness of international collaboration in combating illicit financial activities in the digital realm. Organizations are reminded to remain vigilant against money laundering schemes and ensure compliance with anti-money laundering regulations. The takedown of Cryptomixer highlights the ongoing battle against cybercrime and the need for continued vigilance.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/police-disrupt-cryptomixer-seize-millions-crypto"
         }
     ],
     "aiShorts": [
+        {
+            "date": "Dec 02 2025",
+            "title": "Gradium Secures $70M Seed Funding to Revolutionize AI Voice Technology",
+            "content": "Paris-based AI voice startup Gradium has emerged from stealth with a substantial $70 million seed funding round. Founded out of the French AI lab Kyutai, which is supported by telecom magnate Xavier Niel, Gradium aims to redefine voice technology with its innovative AI solutions. The funding will accelerate the development of their proprietary voice models, positioning them to compete with global leaders in AI-driven voice applications. This investment underscores the growing interest in voice AI as a transformative technology across industries. Stakeholders in the AI sector should monitor Gradium&#x27;s progress as it seeks to disrupt the market with its cutting-edge capabilities.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/02/paris-based-ai-voice-startup-gradium-nabs-70m-seed/"
+        },
+        {
+            "date": "Dec 02 2025",
+            "title": "DeepSeek V3.2 Achieves AI Milestone with Minimal Computing Resources",
+            "content": "China&#x27;s DeepSeek has unveiled its V3.2 AI model, which matches the performance of OpenAI&#x27;s GPT-5 on reasoning benchmarks using significantly fewer training floating point operations per second (FLOPs). This achievement highlights DeepSeek&#x27;s strategic approach to AI development, emphasizing efficiency over sheer computational power. By optimizing their training processes, DeepSeek has set a new standard for cost-effective AI model training. This development is particularly impactful for organizations with limited computational budgets, offering a viable path to achieving high-performance AI capabilities without exorbitant resource demands. The AI community should take note of this shift towards more sustainable AI practices.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/deepseek-v3-2-matches-gpt-5-lower-training-costs/"
+        },
+        {
+            "date": "Dec 02 2025",
+            "title": "OpenAI Partners with Thrive to Pioneer Enterprise AI Integration",
+            "content": "OpenAI is collaborating with Thrive Holdings to modernize accounting and IT services by integrating AI-driven solutions. As part of this partnership, OpenAI will acquire an ownership stake in Thrive and embed its specialists within the company. This initiative aims to create a new enterprise AI model that combines capital investment with sector-specific expertise. The collaboration represents a strategic move to leverage AI for operational efficiency and innovation in enterprise settings. Industry leaders should consider the implications of such partnerships, which could redefine competitive dynamics by embedding AI deeper into business processes.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/how-openai-and-thrive-are-testing-a-new-enterprise-ai-model/"
+        },
+        {
+            "date": "Dec 02 2025",
+            "title": "U.S. Government Becomes Major Shareholder in Chip Startup xLight",
+            "content": "Chip startup xLight is facing new dynamics as the U.S. government becomes one of its largest shareholders. This unusual ownership arrangement raises questions about the influence of government interests in the tech sector, particularly in Silicon Valley, where a libertarian ethos prevails. The involvement of a major government entity could impact xLight’s strategic decisions and innovation trajectory. This development highlights the broader trend of increasing government interest and investment in critical technology sectors. Stakeholders should assess how such relationships may affect market competition and innovation.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/01/what-does-it-mean-when-uncle-sam-is-one-of-your-biggest-shareholders-chip-startup-xlight-is-about-to-find-out/"
+        },
+        {
+            "date": "Dec 02 2025",
+            "title": "Arcee Launches Trinity Models to Revitalize U.S. Open Source AI",
+            "content": "Arcee has released its new Trinity models under the Apache 2.0 license, aiming to reinvigorate U.S. open source AI development. This move comes as Chinese research labs have dominated the field with advanced open Mixture-of-Experts models. Arcee&#x27;s Trinity models are designed to foster innovation and collaboration within the U.S. AI community, providing a robust alternative to proprietary solutions. This initiative is crucial for maintaining competitive parity in the global AI landscape, where open source contributions are increasingly pivotal. Developers and tech leaders should consider integrating these models to leverage open source advantages.",
+            "source": "AI | VentureBeat",
+            "sourceUrl": "https://venturebeat.com/ai/arcee-aims-to-reboot-u-s-open-source-ai-with-new-trinity-models-released"
+        },
+        {
+            "date": "Dec 01 2025",
+            "title": "Mirakl Unveils AI-Driven Commerce Strategy with ChatGPT Enterprise",
+            "content": "Mirakl is advancing its commerce strategy by leveraging AI agents and ChatGPT Enterprise to enhance customer support and documentation processes. The company&#x27;s Mirakl Nexus platform is at the forefront of this transformation, aiming to establish an agent-native commerce ecosystem. By integrating AI, Mirakl seeks to streamline operations and provide smarter, faster service solutions. This initiative reflects the broader trend of AI integration in commerce, offering businesses the potential to improve efficiency and customer satisfaction. Companies should explore similar AI-driven strategies to remain competitive in an evolving market landscape.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/mirakl"
+        },
+        {
+            "date": "Dec 01 2025",
+            "title": "Liquid AI Introduces Framework for Efficient Small-Model Training",
+            "content": "Liquid AI, an MIT spin-off, has released a blueprint for enterprise-grade small-model training, leveraging its Liquid Foundation Models series 2 (LFM2). These models are designed to deliver high performance on-device, utilizing a novel &quot;liquid&quot; architecture that optimizes training and deployment efficiency. This approach addresses the growing demand for scalable AI solutions that do not require extensive computational resources. By focusing on small-model efficiency, Liquid AI provides enterprises with a practical solution for deploying AI capabilities at scale. Tech professionals should consider adopting these models to enhance their AI infrastructure without incurring significant resource costs.",
+            "source": "AI | VentureBeat",
+            "sourceUrl": "https://venturebeat.com/ai/mit-offshoot-liquid-ai-releases-blueprint-for-enterprise-grade-small-model"
+        },
         {
             "date": "Dec 02 2025",
             "title": "Apple Appoints New AI Chief with Google and Microsoft Experience",
@@ -67,41 +123,6 @@ const websiteContent = {
             "content": "Google&#x27;s AI systems are using extensive user data to provide personalized services, raising concerns about privacy and surveillance. The AI&#x27;s ability to tailor responses and suggestions based on individual user behavior is both a technological advantage and a potential privacy risk. This duality highlights the growing tension between personalization and user data protection. As Google continues to enhance its AI capabilities, developers and tech leaders should consider the implications of data usage and privacy regulations. It is crucial for companies to balance AI advancements with ethical data practices to maintain user trust.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2025/12/01/one-of-googles-biggest-ai-advantages-is-what-it-already-knows-about-you/"
-        },
-        {
-            "date": "Dec 01 2025",
-            "title": "Nvidia Launches New AI Models for Autonomous Driving",
-            "content": "Nvidia has unveiled new open AI models and tools designed to advance autonomous driving research. These include a sophisticated reasoning world model that enhances decision-making capabilities for self-driving cars. The release underscores Nvidia&#x27;s commitment to leading the physical AI domain, particularly in automotive applications. By providing these tools, Nvidia aims to accelerate innovation in autonomous vehicle technologies and improve safety and efficiency. Researchers and developers in the autonomous driving sector should explore these new resources to stay at the forefront of technological advancements.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/01/nvidia-announces-new-open-ai-models-and-tools-for-autonomous-driving-research/"
-        },
-        {
-            "date": "Dec 01 2025",
-            "title": "AWS re:Invent 2025: Keynotes and Events to Watch Live",
-            "content": "Amazon Web Services&#x27; annual re:Invent conference is underway in Las Vegas, featuring live keynotes and sessions on cloud computing innovations. The event is expected to showcase AWS&#x27;s latest advancements in AI, machine learning, and cloud infrastructure. Professionals attending or following the event can gain insights into AWS&#x27;s strategic direction and technological developments. Key announcements may include updates to AWS&#x27;s AI and machine learning services, impacting cloud computing strategies for businesses. Attendees and viewers should stay informed through live streams and updates to leverage new AWS offerings effectively.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/01/aws-reinvent-2025-how-to-watch-and-follow-along-live/"
-        },
-        {
-            "date": "Dec 01 2025",
-            "title": "AI Boom Creates New Opportunities for Construction Workers",
-            "content": "The AI industry surge is providing lucrative opportunities for construction workers, particularly in data center development. A 51-year-old supervisor overseeing 200 workers at a data center site highlights the sector&#x27;s growth and demand for skilled labor. This trend reflects the broader impact of AI infrastructure expansion on traditional industries, offering new career paths and economic benefits. Construction professionals should consider the AI sector&#x27;s growth as a viable avenue for employment and career advancement. The continuing demand for data centers suggests sustained job creation in construction and related fields.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/01/construction-workers-are-cashing-in-on-the-ai-boom/"
-        },
-        {
-            "date": "Dec 01 2025",
-            "title": "Data Center Energy Demand Set to Triple by 2035",
-            "content": "Energy consumption by data centers is projected to increase by nearly 300% by 2035, driven by the expansion of AI and cloud services. This surge in demand is contributing to rising electricity prices, according to a grid monitor report. The growth underscores the need for sustainable energy solutions and efficient data center designs to mitigate environmental impacts. Industry leaders and policymakers must address these challenges to ensure energy sustainability in the face of technological advancements. Companies should prioritize energy-efficient technologies and explore renewable energy options to manage future energy needs.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/01/data-center-energy-demand-forecasted-to-soar-nearly-300-through-2035/"
-        },
-        {
-            "date": "Dec 01 2025",
-            "title": "DeepSeek Releases AI Models Rivaling GPT-5 for Free",
-            "content": "Chinese startup DeepSeek has launched two new AI models that claim to surpass the capabilities of OpenAI&#x27;s GPT-5 and Google&#x27;s Gemini-3.0-Pro. These models, offered at no cost, could significantly alter the competitive dynamics among major tech companies. By providing powerful AI tools without charge, DeepSeek is challenging established players and democratizing access to advanced AI technologies. This development may accelerate innovation and lower entry barriers for AI research and application. AI professionals and organizations should evaluate these models for potential integration into their projects and consider the implications for the AI ecosystem.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/deepseek-just-dropped-two-insanely-powerful-ai-models-that-rival-gpt-5-and"
         }
     ],
     "articles": {
