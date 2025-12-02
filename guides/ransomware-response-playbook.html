@@ -40,6 +40,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/print.css">
 
     <style>
         * {
@@ -752,6 +753,12 @@ reg query HKCU\Software\Microsoft\Windows\CurrentVersion\Run
 
     <!-- Load Header -->
     <script src="/header.js"></script>
+  <!-- Print Button -->
+  <button class="print-button" onclick="window.print()" aria-label="Print or save as PDF">
+    <i class="fas fa-print"></i>
+    Print / PDF
+  </button>
+
 </body>
 
 </html>
