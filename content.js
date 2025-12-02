@@ -4,111 +4,104 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Dec 01 2025",
-            "title": "Weekly Cybersecurity Recap: Critical Vulnerabilities and Threats",
-            "content": "The latest cybersecurity threats include critical vulnerabilities and exploits that leverage everyday tools such as code packages and cloud accounts. Notably, the resurgence of an npm worm and a remote code execution (RCE) flaw in Firefox have been highlighted. These vulnerabilities can potentially expose sensitive information and compromise systems if not addressed promptly. Organizations must be vigilant about their software supply chains and vendor relationships, as a single weak link can lead to widespread breaches. Security teams are advised to review their defenses and ensure all software is up to date with the latest patches to mitigate these risks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/12/weekly-recap-hot-cves-npm-worm-returns.html"
-        },
-        {
-            "date": "Dec 01 2025",
-            "title": "Google Faces Backlash for Alleged Use of Stolen Content in AI Promotion",
-            "content": "Google has removed a post from its social media platform X after being accused of using a food blogger&#x27;s infographic without proper credit in a promotional campaign for its NotebookLM. The incident has sparked criticism over intellectual property rights and the ethical use of AI-generated content. This highlights ongoing challenges tech companies face in balancing innovation with respecting creators&#x27; rights. Google has not yet commented on the specifics of the incident, but the controversy underscores the importance of transparency and accountability in AI content generation. Professionals should remain aware of the legal implications of using AI tools in content creation.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/google-deletes-x-post-after-getting-caught-using-a-stolen-ai-recipe-infographic/"
-        },
-        {
-            "date": "Dec 01 2025",
-            "title": "AI Browsers Pose New Security Challenges for Enterprises",
-            "content": "The emergence of AI-powered browsers is introducing significant security concerns for enterprises. Unlike traditional browsers, these AI browsers actively interact with web content, potentially exposing sensitive data to new attack vectors. The &quot;Agentic&quot; Trojan Horse, a recent threat, exemplifies how these browsers can be exploited to bypass traditional security measures. Organizations must adapt their security strategies to address these evolving threats, focusing on robust endpoint protection and user education. As AI continues to reshape the digital landscape, security teams must stay informed about the latest developments to safeguard their networks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/12/webinar-agentic-trojan-horse-why-new-ai.html"
-        },
-        {
-            "date": "Dec 01 2025",
-            "title": "International Operation Shuts Down Cryptocurrency Money Laundering Platform",
-            "content": "Authorities in Germany and Switzerland have dismantled the cryptomixer.io platform, a major player in cryptocurrency money laundering. This operation, known as Operation Olympia, involved shutting down the platform&#x27;s server infrastructure and arresting key individuals involved. Cryptomixer.io was allegedly used to launder illicit funds, posing significant challenges to financial crime enforcement. The takedown marks a significant victory in the fight against online money laundering, emphasizing the need for international cooperation in tackling cybercrime. Financial institutions and cryptocurrency users should remain vigilant and report suspicious activities to authorities.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4098495/ermittler-zerschlagen-plattform-fur-online-geldwasche.html"
-        },
-        {
-            "date": "Dec 01 2025",
-            "title": "CISA Alerts on ScadaBR Vulnerability Following Hacktivist Attack",
-            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has issued a warning about CVE-2021-26829, a vulnerability in the ScadaBR industrial control system software. This alert follows a hacktivist attack that exploited the flaw, highlighting the susceptibility of critical infrastructure to cyber threats. The vulnerability allows unauthorized access and control over affected systems, posing severe risks to industrial operations. Organizations using ScadaBR should prioritize applying patches and reviewing their security protocols to prevent potential disruptions. This incident underscores the importance of securing industrial control systems against emerging cyber threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/cisa-warns-of-scadabr-vulnerability-after-hacktivist-ics-attack/"
-        },
-        {
-            "date": "Dec 01 2025",
-            "title": "Australian Hacker Sentenced for Wi-Fi Attacks on Airports and Flights",
-            "content": "Michael Clapsis has been sentenced to over seven years in prison for conducting Wi-Fi attacks targeting airports and in-flight networks. These attacks involved stealing sensitive information from unsuspecting users, raising significant concerns about the security of public Wi-Fi networks. The case highlights the vulnerabilities associated with wireless networks in public spaces, emphasizing the need for enhanced security measures. Travelers are advised to use virtual private networks (VPNs) and avoid accessing sensitive information over public Wi-Fi to mitigate risks. This sentencing serves as a deterrent and a reminder of the legal consequences of cybercrime.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/australian-man-sentenced-to-prison-for-wi-fi-attacks-at-airports-and-on-flights/"
-        },
-        {
-            "date": "Dec 01 2025",
-            "title": "Law Enforcement Dismantles Cryptomixer Service Used for Money Laundering",
-            "content": "In a coordinated effort, law enforcement agencies from Switzerland and Germany have successfully taken down the Cryptomixer service, a tool used by cybercriminals to launder stolen cryptocurrency. The operation involved seizing the platform&#x27;s infrastructure and detaining individuals responsible for its operation. Cryptomixer was a critical enabler for cybercriminals seeking to obfuscate the origins of illicit funds, posing a significant challenge to financial transparency. This takedown is part of broader efforts to combat cryptocurrency-related crime, highlighting the importance of international collaboration. Users of cryptocurrency should exercise due diligence and comply with regulatory guidelines to avoid involvement in illegal activities.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/police-takes-down-cryptomixer-cryptocurrency-mixing-service/"
-        },
-        {
-            "date": "Dec 01 2025",
-            "title": "ISC Stormcast Warns of Emerging Cyber Threats",
-            "content": "The SANS Internet Storm Center&#x27;s latest Stormcast highlights emerging cybersecurity threats, maintaining an InfoCON status of green. This indicates a relatively stable threat environment, though professionals should remain vigilant. The podcast covers recent vulnerabilities, including those affecting widely used software and systems. Security practitioners are advised to review their current defenses and stay informed about potential exploits. The Stormcast serves as a critical resource for security teams to anticipate and mitigate risks effectively. Regular updates from the SANS Internet Storm Center are essential for maintaining robust cybersecurity postures.",
+            "date": "Dec 02 2025",
+            "title": "ISC Stormcast Highlights Emerging Cyber Threats",
+            "content": "The SANS Internet Storm Center&#x27;s latest Stormcast podcast highlights emerging cyber threats for December 2, 2025. The discussion centers on new vulnerabilities and attack vectors identified by cybersecurity experts. Key topics include recent malware campaigns and the importance of timely patch management. The podcast emphasizes the need for organizations to stay vigilant and update their security practices in response to evolving threats. Listeners are encouraged to review their security protocols and ensure all systems are up to date to mitigate potential risks.",
             "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32526"
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32528"
+        },
+        {
+            "date": "Dec 01 2025",
+            "title": "SharePoint In-Memory Payloads: A New Cybersecurity Challenge",
+            "content": "James Woodworth, an intern at the SANS Internet Storm Center, reports on the discovery of in-memory ToolShell payloads affecting SharePoint servers. These payloads, which evade traditional detection methods, pose a significant risk to organizations using SharePoint for collaboration and data management. The report underscores the importance of monitoring in-memory activities and utilizing advanced threat detection tools. Organizations are advised to implement robust security measures and conduct regular audits to identify and mitigate these sophisticated threats. Woodworth&#x27;s findings highlight the ongoing need for skilled cybersecurity professionals to address emerging challenges.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32524"
+        },
+        {
+            "date": "Dec 01 2025",
+            "title": "Google Patches 107 Android Vulnerabilities, Including Two Zero-Days",
+            "content": "Google&#x27;s latest security update addresses 107 vulnerabilities in the Android operating system, including two critical zero-day exploits. This update represents the second-highest number of patches issued by Google this year, underscoring the ongoing vulnerability landscape in mobile operating systems. The vulnerabilities affect various Android versions, posing risks to millions of users worldwide. Google urges users to install the update promptly to protect against potential exploitation. This proactive approach highlights the importance of regular updates and security awareness in the mobile ecosystem.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/android-security-update-december-2025/"
+        },
+        {
+            "date": "Dec 01 2025",
+            "title": "Tomiris Group Launches Advanced Cyber-Espionage Campaign",
+            "content": "The Tomiris cyber-espionage group, known for its Russian-speaking members, is actively targeting government and diplomatic entities in CIS (Commonwealth of Independent States) member states and Central Asia. Utilizing new tools and tactics, the group aims to gather intelligence and disrupt operations. The campaign&#x27;s focus on high-value targets highlights the persistent threat posed by nation-state actors. Organizations in the affected regions are advised to enhance their cybersecurity defenses and remain vigilant against potential intrusions. This development underscores the need for international cooperation in combating cyber-espionage.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/tomiris-unleashes-havoc-new-tools-tactics"
+        },
+        {
+            "date": "Dec 01 2025",
+            "title": "CodeRED Emergency Alert System Compromised by Ransomware Attack",
+            "content": "The CodeRED emergency alert platform has been shut down following a ransomware attack by the Inc gang, which claimed responsibility for stealing sensitive subscriber data. The attack raises concerns about the security of critical infrastructure systems and the potential impact on public safety. Organizations using similar platforms are urged to review their security measures and ensure robust defenses against ransomware threats. This incident highlights the increasing sophistication of ransomware attacks and the need for comprehensive cybersecurity strategies to protect vital services.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/codered-emergency-alert-platform-shut-down-cyberattack"
+        },
+        {
+            "date": "Dec 01 2025",
+            "title": "Glassworm Malware Campaign Targets VS Code Users in New Wave",
+            "content": "The Glassworm malware campaign has resurfaced with a third wave of malicious packages targeting users of Visual Studio Code. The campaign, which first appeared in October, has added 24 new packages to the OpenVSX and Microsoft Visual Studio marketplaces. These packages are designed to compromise developer environments and steal sensitive information. Developers are advised to verify the integrity of packages before installation and employ security tools to detect malicious activity. This ongoing threat underscores the importance of securing software development environments against emerging malware threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/glassworm-malware-returns-in-third-wave-of-malicious-vs-code-packages/"
+        },
+        {
+            "date": "Dec 01 2025",
+            "title": "European Police Dismantle Cryptomixer, Seizing Millions in Cryptocurrency",
+            "content": "European law enforcement agencies have successfully disrupted Cryptomixer, a service allegedly used by cybercriminals to launder proceeds from ransomware and other cyber activities. The operation resulted in the seizure of millions in cryptocurrency, striking a significant blow against cybercrime networks. This action demonstrates the effectiveness of international collaboration in combating illicit financial activities in the digital realm. Organizations are reminded to remain vigilant against money laundering schemes and ensure compliance with anti-money laundering regulations. The takedown of Cryptomixer highlights the ongoing battle against cybercrime and the need for continued vigilance.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/police-disrupt-cryptomixer-seize-millions-crypto"
         }
     ],
     "aiShorts": [
         {
-            "date": "Dec 01 2025",
-            "title": "AI Monitors Prison Calls to Predict and Prevent Crimes",
-            "content": "Securus Technologies has developed an AI model trained on years of inmates&#x27; phone and video calls to predict and prevent criminal activities. This system is currently being piloted to scan calls, texts, and emails within prison environments. The AI aims to identify patterns that may indicate planned crimes, providing authorities with a proactive tool for crime prevention. While this technology could enhance security, it raises significant privacy concerns and ethical questions about surveillance. The initiative reflects a growing trend of using AI to enhance security measures, but it also necessitates robust oversight to balance safety and privacy.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2025/12/01/1128591/an-ai-model-trained-on-prison-phone-calls-is-now-being-used-to-surveil-inmates/"
-        },
-        {
-            "date": "Dec 01 2025",
-            "title": "Accenture Partners with OpenAI to Deploy 40,000 ChatGPT Enterprise Licenses",
-            "content": "Accenture has announced a strategic partnership with OpenAI, deploying 40,000 ChatGPT Enterprise licenses to enhance AI capabilities across its operations. This move designates OpenAI as Accenture&#x27;s primary intelligence partner, aiming to upskill teams and drive AI-driven client outcomes. The integration of ChatGPT into enterprise workflows is expected to streamline processes and improve decision-making speed and accuracy. This partnership highlights the increasing adoption of AI tools in large-scale business environments, underscoring the need for ongoing training and adaptation to fully leverage AI&#x27;s potential. Organizations should consider similar partnerships to remain competitive in the AI-driven market.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/accenture-partnership"
-        },
-        {
-            "date": "Nov 30 2025",
-            "title": "Rebuilding Hybrid Cloud Security for AI-Driven Threats",
-            "content": "The advent of AI-driven cyberattacks has exposed the inadequacies of traditional hybrid cloud security systems. These systems, originally designed before the rise of automated, machine-based threats, struggle to defend against attacks that execute in milliseconds. Enterprises relying on outdated batch-based detection and siloed tools face increased vulnerability. As AI continues to evolve, integrating real-time monitoring and adaptive security measures becomes imperative. Organizations must reassess and upgrade their security architectures to combat this new generation of cyber threats effectively. Failure to do so could lead to significant operational disruptions and data breaches.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/security/hybrid-cloud-security-reinvented-ai-era"
-        },
-        {
-            "date": "Nov 28 2025",
-            "title": "Supabase Reaches $5B Valuation by Prioritizing Strategic Growth",
-            "content": "Supabase has achieved a $5 billion valuation by strategically opting out of lucrative contracts that did not align with its long-term vision. The open-source database platform has become a preferred backend solution for the rapidly growing vibe-coding sector. By focusing on sustainable growth and core product development, Supabase has positioned itself as a key player in the tech infrastructure space. This approach highlights the importance of aligning business decisions with strategic goals, even at the cost of immediate financial gain. Other startups might consider similar strategies to build resilient and scalable businesses.",
+            "date": "Dec 02 2025",
+            "title": "Apple Appoints New AI Chief with Google and Microsoft Experience",
+            "content": "Apple has appointed a new head of artificial intelligence, replacing John Giannandrea, who is stepping down after revamping the company&#x27;s AI strategy. The new chief brings experience from both Google and Microsoft, indicating a strategic shift towards leveraging broader industry expertise. This leadership change is seen as a natural progression in Apple&#x27;s AI evolution, aiming to enhance its competitive edge in the AI sector. The move could impact Apple&#x27;s AI initiatives, including Siri and its machine learning frameworks, by introducing new perspectives and technologies. Professionals in AI development should monitor how this change influences Apple&#x27;s AI product offerings and integration strategies.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/video/supabase-hit-5b-by-turning-down-million-dollar-contracts-heres-why/"
+            "sourceUrl": "https://techcrunch.com/2025/12/01/apple-just-named-a-new-ai-chief-with-google-and-microsoft-expertise-as-john-giannandrea-steps-down/"
         },
         {
-            "date": "Nov 28 2025",
-            "title": "Anthropic Advances AI Agent Memory with New Claude SDK",
-            "content": "Anthropic has introduced a new multi-session Claude SDK, addressing the persistent issue of AI agent memory. The innovation allows agents to maintain context across different sessions, enhancing their ability to follow instructions and recall past interactions. This two-fold solution is expected to improve the reliability and efficiency of AI agents in enterprise applications. By solving the memory problem, Anthropic is setting a new standard for AI agent capabilities, which could lead to more widespread adoption in various sectors. Enterprises should explore integrating such advanced AI solutions to enhance operational efficiency.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/anthropic-says-it-solved-the-long-running-ai-agent-problem-with-a-new-multi"
-        },
-        {
-            "date": "Nov 28 2025",
-            "title": "Supabase CEO Discusses Strategic Choices Behind $5B Success",
-            "content": "Supabase&#x27;s CEO has opened up about the challenging decisions that propelled the company to a $5 billion valuation. By declining million-dollar contracts that did not align with its strategic goals, Supabase focused on building a robust open-source database platform for the vibe-coding community. This disciplined approach allowed the company to strengthen its market position and foster sustainable growth. The story underscores the importance of strategic alignment in business decision-making, offering valuable insights for startups aiming to achieve long-term success. Companies should evaluate their growth strategies to ensure they support their overarching objectives.",
+            "date": "Dec 02 2025",
+            "title": "Google&#x27;s AI Leverages User Data for Enhanced Personalization",
+            "content": "Google&#x27;s AI systems are using extensive user data to provide personalized services, raising concerns about privacy and surveillance. The AI&#x27;s ability to tailor responses and suggestions based on individual user behavior is both a technological advantage and a potential privacy risk. This duality highlights the growing tension between personalization and user data protection. As Google continues to enhance its AI capabilities, developers and tech leaders should consider the implications of data usage and privacy regulations. It is crucial for companies to balance AI advancements with ethical data practices to maintain user trust.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/podcast/supabase-ceo-on-the-painful-decisions-that-built-a-5b-company/"
+            "sourceUrl": "https://techcrunch.com/2025/12/01/one-of-googles-biggest-ai-advantages-is-what-it-already-knows-about-you/"
         },
         {
-            "date": "Nov 28 2025",
-            "title": "Reflecting on AI&#x27;s Transformative Year in 2025",
-            "content": "As 2025 draws to a close, the AI landscape has experienced unprecedented growth and innovation. This year has been marked by a constant stream of new models, frameworks, and groundbreaking demonstrations, often feeling like a continuous DevDay event. Despite the overwhelming pace, AI has finally begun to deliver on its transformative potential, impacting industries from healthcare to finance. Professionals in the field should stay informed about these rapid advancements to leverage AI&#x27;s capabilities fully. As AI continues to evolve, maintaining a balance between innovation and ethical considerations will be crucial for sustainable progress.",
+            "date": "Dec 01 2025",
+            "title": "Nvidia Launches New AI Models for Autonomous Driving",
+            "content": "Nvidia has unveiled new open AI models and tools designed to advance autonomous driving research. These include a sophisticated reasoning world model that enhances decision-making capabilities for self-driving cars. The release underscores Nvidia&#x27;s commitment to leading the physical AI domain, particularly in automotive applications. By providing these tools, Nvidia aims to accelerate innovation in autonomous vehicle technologies and improve safety and efficiency. Researchers and developers in the autonomous driving sector should explore these new resources to stay at the forefront of technological advancements.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/01/nvidia-announces-new-open-ai-models-and-tools-for-autonomous-driving-research/"
+        },
+        {
+            "date": "Dec 01 2025",
+            "title": "AWS re:Invent 2025: Keynotes and Events to Watch Live",
+            "content": "Amazon Web Services&#x27; annual re:Invent conference is underway in Las Vegas, featuring live keynotes and sessions on cloud computing innovations. The event is expected to showcase AWS&#x27;s latest advancements in AI, machine learning, and cloud infrastructure. Professionals attending or following the event can gain insights into AWS&#x27;s strategic direction and technological developments. Key announcements may include updates to AWS&#x27;s AI and machine learning services, impacting cloud computing strategies for businesses. Attendees and viewers should stay informed through live streams and updates to leverage new AWS offerings effectively.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/01/aws-reinvent-2025-how-to-watch-and-follow-along-live/"
+        },
+        {
+            "date": "Dec 01 2025",
+            "title": "AI Boom Creates New Opportunities for Construction Workers",
+            "content": "The AI industry surge is providing lucrative opportunities for construction workers, particularly in data center development. A 51-year-old supervisor overseeing 200 workers at a data center site highlights the sector&#x27;s growth and demand for skilled labor. This trend reflects the broader impact of AI infrastructure expansion on traditional industries, offering new career paths and economic benefits. Construction professionals should consider the AI sector&#x27;s growth as a viable avenue for employment and career advancement. The continuing demand for data centers suggests sustained job creation in construction and related fields.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/01/construction-workers-are-cashing-in-on-the-ai-boom/"
+        },
+        {
+            "date": "Dec 01 2025",
+            "title": "Data Center Energy Demand Set to Triple by 2035",
+            "content": "Energy consumption by data centers is projected to increase by nearly 300% by 2035, driven by the expansion of AI and cloud services. This surge in demand is contributing to rising electricity prices, according to a grid monitor report. The growth underscores the need for sustainable energy solutions and efficient data center designs to mitigate environmental impacts. Industry leaders and policymakers must address these challenges to ensure energy sustainability in the face of technological advancements. Companies should prioritize energy-efficient technologies and explore renewable energy options to manage future energy needs.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/01/data-center-energy-demand-forecasted-to-soar-nearly-300-through-2035/"
+        },
+        {
+            "date": "Dec 01 2025",
+            "title": "DeepSeek Releases AI Models Rivaling GPT-5 for Free",
+            "content": "Chinese startup DeepSeek has launched two new AI models that claim to surpass the capabilities of OpenAI&#x27;s GPT-5 and Google&#x27;s Gemini-3.0-Pro. These models, offered at no cost, could significantly alter the competitive dynamics among major tech companies. By providing powerful AI tools without charge, DeepSeek is challenging established players and democratizing access to advanced AI technologies. This development may accelerate innovation and lower entry barriers for AI research and application. AI professionals and organizations should evaluate these models for potential integration into their projects and consider the implications for the AI ecosystem.",
             "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/what-to-be-thankful-for-in-ai-in-2025"
+            "sourceUrl": "https://venturebeat.com/ai/deepseek-just-dropped-two-insanely-powerful-ai-models-that-rival-gpt-5-and"
         }
     ],
     "articles": {
