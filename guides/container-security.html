@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container Security: Docker & Kubernetes Guide | TheHGTech</title>
+    <meta name="description"
+        content="Comprehensive guide to securing containerized applications with Docker and Kubernetes best practices.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/header.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF4C4C;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .guide-header {
+            padding: 3rem 0 2rem;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+            margin-top: 60px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-red));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            color: var(--accent-cyan);
+            margin: 2rem 0 1rem;
+            font-size: 1.8rem;
+        }
+
+        h3 {
+            color: var(--text-primary);
+            margin: 1.5rem 0 1rem;
+            font-size: 1.3rem;
+        }
+
+        h4 {
+            color: var(--text-secondary);
+            margin: 1rem 0 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        ul,
+        ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .info-box {
+            background: rgba(0, 217, 255, 0.05);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .warning-box {
+            background: rgba(255, 76, 76, 0.05);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        code {
+            background: var(--bg-card);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: var(--accent-cyan);
+            font-size: 0.9em;
+        }
+
+        pre {
+            background: var(--bg-card);
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 1rem 0;
+            border: 1px solid var(--border);
+        }
+
+        pre code {
+            padding: 0;
+            background: none;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <a href="../index.html"
+                    style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="../logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="../logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+            <nav class="nav" role="navigation">
+                <a href="../index.html#news">News</a>
+                <a href="../threat-intel.html">Threat Intelligence <span class="live-badge">LIVE</span></a>
+                <a href="../index.html#cve">CVE</a>
+                <a href="../guides/">Guides</a>
+                <a href="../comparisons/">Tool Comparisons</a>
+                <a href="../articles.html">Articles</a>
+                <a href="../index.html#about">About</a>
+                <a href="../index.html#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <a href="/guides/" class="back-link">← Back to Guides</a>
+
+        <div class="guide-header">
+            <h1>Container Security: Docker & Kubernetes</h1>
+            <p style="color: var(--text-muted); font-size: 1.1rem;">Secure containerized applications with best
+                practices for Docker, Kubernetes, and container registries</p>
+            <div style="margin-top: 1rem; color: var(--text-muted);">
+                <span>📖 18 min read</span> • <span>🎯 Advanced</span> • <span>📅 December 2025</span>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <strong>💡 Why Container Security Matters:</strong> 75% of organizations use containers in production, but
+            60% have experienced container security incidents. Misconfigurations, vulnerable images, and runtime attacks
+            are the top threats.
+        </div>
+
+        <h2>Understanding Container Security</h2>
+
+        <p>Containers revolutionized application deployment, but they also introduced new security challenges. Unlike
+            traditional VMs, containers share the host kernel, making isolation critical. A compromised container can
+            potentially escape to the host or attack other containers.</p>
+
+        <img src="/images/container_security_architecture.png" alt="Container Security Architecture"
+            style="width:100%; border-radius:8px; margin:2rem 0; border: 1px solid var(--border);">
+
+        <h3>The Container Security Stack</h3>
+        <p>Container security requires a defense-in-depth approach across multiple layers:</p>
+        <ol>
+            <li><strong>Host Security:</strong> Secure the underlying infrastructure</li>
+            <li><strong>Container Runtime:</strong> Harden Docker/containerd/CRI-O</li>
+            <li><strong>Image Security:</strong> Scan and sign container images</li>
+            <li><strong>Registry Security:</strong> Secure image storage and distribution</li>
+            <li><strong>Orchestration Security:</strong> Kubernetes RBAC, network policies, pod security</li>
+            <li><strong>Runtime Security:</strong> Monitor and protect running containers</li>
+            <li><strong>Application Security:</strong> Secure code and dependencies</li>
+        </ol>
+
+        <h2>Part 1: Docker Security Best Practices</h2>
+
+        <h3>1. Image Security</h3>
+
+        <h4>Use Minimal Base Images</h4>
+        <p>Reduce attack surface by using minimal base images:</p>
+        <pre><code># ❌ Bad: Full OS image (1GB+, hundreds of packages)
+FROM ubuntu:latest
+
+# ✅ Good: Minimal distroless image (20MB, no shell)
+FROM gcr.io/distroless/static-debian11
+
+# ✅ Better: Alpine Linux (5MB, minimal packages)
+FROM alpine:3.18</code></pre>
+
+        <p><strong>Why?</strong> Fewer packages = fewer vulnerabilities. Distroless images contain only your application
+            and runtime dependencies—no shell, no package managers.</p>
+
+        <h4>Scan Images for Vulnerabilities</h4>
+        <p>Integrate vulnerability scanning into your CI/CD pipeline:</p>
+        <pre><code># Scan with Trivy
+trivy image myapp:latest
+
+# Scan with Grype
+grype myapp:latest
+
+# Scan with Docker Scout
+docker scout cves myapp:latest
+
+# Fail build if critical vulnerabilities found
+trivy image --severity CRITICAL --exit-code 1 myapp:latest</code></pre>
+
+        <p><strong>Tools:</strong></p>
+        <ul>
+            <li><strong>Trivy:</strong> Fast, comprehensive, supports multiple formats</li>
+            <li><strong>Grype:</strong> Anchore's open-source scanner</li>
+            <li><strong>Snyk:</strong> Developer-friendly, integrates with IDEs</li>
+            <li><strong>Clair:</strong> Static analysis for container vulnerabilities</li>
+        </ul>
+
+        <h4>Sign and Verify Images</h4>
+        <p>Ensure image integrity and authenticity:</p>
+        <pre><code># Sign image with Docker Content Trust
+export DOCKER_CONTENT_TRUST=1
+docker push myregistry.com/myapp:v1.0
+
+# Sign with Cosign (Sigstore)
+cosign sign myregistry.com/myapp:v1.0
+
+# Verify signature
+cosign verify myregistry.com/myapp:v1.0</code></pre>
+
+        <h4>Use Multi-Stage Builds</h4>
+        <p>Separate build and runtime environments:</p>
+        <pre><code># Multi-stage Dockerfile
+# Stage 1: Build
+FROM golang:1.21 AS builder
+WORKDIR /app
+COPY . .
+RUN go build -o myapp
+
+# Stage 2: Runtime (only contains compiled binary)
+FROM gcr.io/distroless/static-debian11
+COPY --from=builder /app/myapp /
+CMD ["/myapp"]</code></pre>
+
+        <p><strong>Benefits:</strong> Build tools and source code never make it to production image, reducing size and
+            attack surface.</p>
+
+        <h3>2. Runtime Security</h3>
+
+        <h4>Run as Non-Root User</h4>
+        <p>Never run containers as root:</p>
+        <pre><code># In Dockerfile
+RUN addgroup -S appgroup && adduser -S appuser -G appgroup
+USER appuser
+
+# Or specify in docker run
+docker run --user 1000:1000 myapp:latest</code></pre>
+
+        <h4>Use Read-Only Filesystems</h4>
+        <p>Prevent runtime modifications:</p>
+        <pre><code>docker run --read-only \
+  --tmpfs /tmp \
+  --tmpfs /var/run \
+  myapp:latest</code></pre>
+
+        <h4>Drop Unnecessary Capabilities</h4>
+        <p>Linux capabilities provide fine-grained privilege control:</p>
+        <pre><code># Drop all capabilities, add only what's needed
+docker run \
+  --cap-drop=ALL \
+  --cap-add=NET_BIND_SERVICE \
+  myapp:latest</code></pre>
+
+        <h4>Enable Security Profiles</h4>
+        <p>Use AppArmor or SELinux:</p>
+        <pre><code># AppArmor
+docker run --security-opt apparmor=docker-default myapp:latest
+
+# SELinux
+docker run --security-opt label=type:container_runtime_t myapp:latest
+
+# Seccomp (restrict syscalls)
+docker run --security-opt seccomp=seccomp-profile.json myapp:latest</code></pre>
+
+        <h4>Limit Resources</h4>
+        <p>Prevent resource exhaustion attacks:</p>
+        <pre><code>docker run \
+  --memory="512m" \
+  --memory-swap="512m" \
+  --cpus="1.0" \
+  --pids-limit=100 \
+  myapp:latest</code></pre>
+
+        <h3>3. Network Security</h3>
+
+        <h4>Use Custom Networks</h4>
+        <p>Isolate containers with custom networks:</p>
+        <pre><code># Create isolated network
+docker network create --driver bridge app-network
+
+# Run containers on custom network
+docker run --network=app-network myapp:latest</code></pre>
+
+        <h4>Disable Inter-Container Communication</h4>
+        <pre><code># Create network with ICC disabled
+docker network create --driver bridge --opt com.docker.network.bridge.enable_icc=false secure-network</code></pre>
+
+        <h3>4. Secrets Management</h3>
+
+        <h4>Never Hardcode Secrets</h4>
+        <p>❌ <strong>Bad:</strong></p>
+        <pre><code>ENV DATABASE_PASSWORD=supersecret123</code></pre>
+
+        <p>✅ <strong>Good:</strong> Use Docker Secrets or external vaults:</p>
+        <pre><code># Docker Swarm Secrets
+echo "supersecret123" | docker secret create db_password -
+
+# Use in service
+docker service create \
+  --secret db_password \
+  --env DB_PASSWORD_FILE=/run/secrets/db_password \
+  myapp:latest</code></pre>
+
+        <p><strong>Better:</strong> Use external secret managers:</p>
+        <ul>
+            <li><strong>HashiCorp Vault:</strong> Dynamic secrets, encryption as a service</li>
+            <li><strong>AWS Secrets Manager:</strong> Integrated with AWS services</li>
+            <li><strong>Azure Key Vault:</strong> Integrated with Azure</li>
+            <li><strong>Google Secret Manager:</strong> Integrated with GCP</li>
+        </ul>
+
+        <h2>Part 2: Kubernetes Security</h2>
+
+        <h3>5. Pod Security</h3>
+
+        <h4>Use Pod Security Standards</h4>
+        <p>Kubernetes defines three security levels: Privileged, Baseline, Restricted.</p>
+
+        <p><strong>Restricted Pod Security (Most Secure):</strong></p>
+        <pre><code>apiVersion: v1
+kind: Pod
+metadata:
+  name: secure-pod
+spec:
+  securityContext:
+    runAsNonRoot: true
+    runAsUser: 1000
+    fsGroup: 2000
+    seccompProfile:
+      type: RuntimeDefault
+  containers:
+  - name: app
+    image: myapp:latest
+    securityContext:
+      allowPrivilegeEscalation: false
+      readOnlyRootFilesystem: true
+      capabilities:
+        drop:
+        - ALL
+    volumeMounts:
+    - name: tmp
+      mountPath: /tmp
+  volumes:
+  - name: tmp
+    emptyDir: {}</code></pre>
+
+        <h4>Enforce Pod Security with Admission Controllers</h4>
+        <p>Use Pod Security Admission (PSA) or OPA Gatekeeper:</p>
+        <pre><code># Enable Pod Security Admission
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: production
+  labels:
+    pod-security.kubernetes.io/enforce: restricted
+    pod-security.kubernetes.io/audit: restricted
+    pod-security.kubernetes.io/warn: restricted</code></pre>
+
+        <h3>6. RBAC (Role-Based Access Control)</h3>
+
+        <h4>Principle of Least Privilege</h4>
+        <p>Grant minimum necessary permissions:</p>
+        <pre><code>apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: pod-reader
+  namespace: production
+rules:
+- apiGroups: [""]
+  resources: ["pods"]
+  verbs: ["get", "list", "watch"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: read-pods
+  namespace: production
+subjects:
+- kind: ServiceAccount
+  name: myapp-sa
+  namespace: production
+roleRef:
+  kind: Role
+  name: pod-reader
+  apiGroup: rbac.authorization.k8s.io</code></pre>
+
+        <h4>Audit RBAC Permissions</h4>
+        <pre><code># List all ClusterRoleBindings
+kubectl get clusterrolebindings
+
+# Check what a service account can do
+kubectl auth can-i --list --as=system:serviceaccount:default:myapp-sa
+
+# Use rbac-lookup for easier auditing
+kubectl rbac-lookup myapp-sa</code></pre>
+
+        <h3>7. Network Policies</h3>
+
+        <h4>Default Deny All Traffic</h4>
+        <pre><code>apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: default-deny-all
+  namespace: production
+spec:
+  podSelector: {}
+  policyTypes:
+  - Ingress
+  - Egress</code></pre>
+
+        <h4>Allow Only Necessary Traffic</h4>
+        <pre><code>apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-frontend-to-backend
+  namespace: production
+spec:
+  podSelector:
+    matchLabels:
+      app: backend
+  policyTypes:
+  - Ingress
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: frontend
+    ports:
+    - protocol: TCP
+      port: 8080</code></pre>
+
+        <h3>8. Secrets Management in Kubernetes</h3>
+
+        <h4>Encrypt Secrets at Rest</h4>
+        <p>Enable encryption in <code>kube-apiserver</code>:</p>
+        <pre><code># /etc/kubernetes/encryption-config.yaml
+apiVersion: apiserver.config.k8s.io/v1
+kind: EncryptionConfiguration
+resources:
+  - resources:
+    - secrets
+    providers:
+    - aescbc:
+        keys:
+        - name: key1
+          secret: <base64-encoded-32-byte-key>
+    - identity: {}</code></pre>
+
+        <h4>Use External Secrets Operator</h4>
+        <p>Sync secrets from external vaults:</p>
+        <pre><code>apiVersion: external-secrets.io/v1beta1
+kind: ExternalSecret
+metadata:
+  name: db-credentials
+spec:
+  refreshInterval: 1h
+  secretStoreRef:
+    name: vault-backend
+    kind: SecretStore
+  target:
+    name: db-secret
+  data:
+  - secretKey: password
+    remoteRef:
+      key: database/prod
+      property: password</code></pre>
+
+        <h3>9. Image Security in Kubernetes</h3>
+
+        <h4>Use Image Pull Policies</h4>
+        <pre><code>spec:
+  containers:
+  - name: app
+    image: myregistry.com/myapp:v1.0
+    imagePullPolicy: Always  # Always pull, never use cached</code></pre>
+
+        <h4>Enforce Image Signing with Admission Controllers</h4>
+        <p>Use Kyverno or OPA to enforce signed images:</p>
+        <pre><code>apiVersion: kyverno.io/v1
+kind: ClusterPolicy
+metadata:
+  name: verify-image-signature
+spec:
+  validationFailureAction: enforce
+  rules:
+  - name: verify-signature
+    match:
+      resources:
+        kinds:
+        - Pod
+    verifyImages:
+    - imageReferences:
+      - "myregistry.com/*"
+      attestors:
+      - count: 1
+        entries:
+        - keys:
+            publicKeys: |-
+              -----BEGIN PUBLIC KEY-----
+              ...
+              -----END PUBLIC KEY-----</code></pre>
+
+        <h3>10. Runtime Security</h3>
+
+        <h4>Deploy Runtime Security Tools</h4>
+        <p>Monitor container behavior at runtime:</p>
+        <ul>
+            <li><strong>Falco:</strong> Detects anomalous activity (unexpected syscalls, file access, network
+                connections)</li>
+            <li><strong>Sysdig:</strong> Container visibility and forensics</li>
+            <li><strong>Aqua Security:</strong> Full-stack container security platform</li>
+            <li><strong>Prisma Cloud (Twistlock):</strong> Palo Alto's container security</li>
+        </ul>
+
+        <p><strong>Example Falco Rule:</strong></p>
+        <pre><code>- rule: Unauthorized Process in Container
+  desc: Detect unexpected process execution
+  condition: >
+    spawned_process and container and
+    not proc.name in (allowed_processes)
+  output: >
+    Unexpected process started in container
+    (user=%user.name command=%proc.cmdline container=%container.name)
+  priority: WARNING</code></pre>
+
+        <h2>Part 3: Container Registry Security</h2>
+
+        <h3>11. Secure Your Registry</h3>
+
+        <h4>Use Private Registries</h4>
+        <p>Don't rely on public Docker Hub for production:</p>
+        <ul>
+            <li><strong>Harbor:</strong> Open-source, vulnerability scanning, RBAC</li>
+            <li><strong>AWS ECR:</strong> Integrated with AWS, automatic scanning</li>
+            <li><strong>Azure ACR:</strong> Integrated with Azure, geo-replication</li>
+            <li><strong>Google GCR/Artifact Registry:</strong> Integrated with GCP</li>
+        </ul>
+
+        <h4>Enable Vulnerability Scanning</h4>
+        <pre><code># AWS ECR - Enable scan on push
+aws ecr put-image-scanning-configuration \
+  --repository-name myapp \
+  --image-scanning-configuration scanOnPush=true
+
+# Harbor - Automatic scanning
+# Configure in Harbor UI: Projects → myproject → Configuration → Automatically scan images on push</code></pre>
+
+        <h4>Implement Image Retention Policies</h4>
+        <p>Remove old, vulnerable images:</p>
+        <pre><code># Harbor retention policy
+# Keep last 10 tags, delete untagged images older than 30 days</code></pre>
+
+        <h2>Part 4: CI/CD Pipeline Security</h2>
+
+        <h3>12. Shift-Left Security</h3>
+
+        <h4>Integrate Security Scanning Early</h4>
+        <p>Example GitHub Actions workflow:</p>
+        <pre><code>name: Container Security Scan
+on: [push, pull_request]
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Build image
+        run: docker build -t myapp:${{ github.sha }} .
+      
+      - name: Run Trivy vulnerability scanner
+        uses: aquasecurity/trivy-action@master
+        with:
+          image-ref: myapp:${{ github.sha }}
+          format: 'sarif'
+          output: 'trivy-results.sarif'
+          severity: 'CRITICAL,HIGH'
+          exit-code: '1'  # Fail build on vulnerabilities
+      
+      - name: Upload results to GitHub Security
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: 'trivy-results.sarif'</code></pre>
+
+        <h3>13. Supply Chain Security</h3>
+
+        <h4>Generate SBOMs (Software Bill of Materials)</h4>
+        <pre><code># Generate SBOM with Syft
+syft myapp:latest -o spdx-json > sbom.json
+
+# Scan SBOM for vulnerabilities
+grype sbom:./sbom.json</code></pre>
+
+        <h4>Use SLSA Framework</h4>
+        <p>Implement Supply-chain Levels for Software Artifacts (SLSA) to ensure build integrity.</p>
+
+        <h2>Common Vulnerabilities and Mitigations</h2>
+
+        <h3>Container Escape</h3>
+        <p><strong>Risk:</strong> Attacker breaks out of container to host.</p>
+        <p><strong>Mitigation:</strong></p>
+        <ul>
+            <li>Run as non-root</li>
+            <li>Drop all capabilities</li>
+            <li>Use seccomp/AppArmor profiles</li>
+            <li>Keep kernel updated</li>
+            <li>Use gVisor or Kata Containers for stronger isolation</li>
+        </ul>
+
+        <h3>Vulnerable Base Images</h3>
+        <p><strong>Risk:</strong> Outdated packages with known CVEs.</p>
+        <p><strong>Mitigation:</strong></p>
+        <ul>
+            <li>Use minimal base images (distroless, Alpine)</li>
+            <li>Scan images in CI/CD</li>
+            <li>Regularly rebuild images with updated packages</li>
+            <li>Use automated image updates (Renovate, Dependabot)</li>
+        </ul>
+
+        <h3>Exposed Secrets</h3>
+        <p><strong>Risk:</strong> Hardcoded credentials in images or environment variables.</p>
+        <p><strong>Mitigation:</strong></p>
+        <ul>
+            <li>Use secret managers (Vault, AWS Secrets Manager)</li>
+            <li>Never commit secrets to Git</li>
+            <li>Scan for secrets with tools like TruffleHog, GitGuardian</li>
+            <li>Use Kubernetes External Secrets Operator</li>
+        </ul>
+
+        <h3>Privilege Escalation</h3>
+        <p><strong>Risk:</strong> Container gains root privileges.</p>
+        <p><strong>Mitigation:</strong></p>
+        <ul>
+            <li>Set <code>allowPrivilegeEscalation: false</code></li>
+            <li>Use Pod Security Standards (Restricted)</li>
+            <li>Enforce with admission controllers</li>
+        </ul>
+
+        <h2>Security Checklist</h2>
+
+        <div class="info-box">
+            <h3 style="margin-top: 0;">✅ Container Security Checklist</h3>
+            <p><strong>Images:</strong></p>
+            <ul>
+                <li>☐ Use minimal base images (distroless/Alpine)</li>
+                <li>☐ Scan images for vulnerabilities</li>
+                <li>☐ Sign and verify images</li>
+                <li>☐ Use multi-stage builds</li>
+                <li>☐ Don't run as root</li>
+            </ul>
+            <p><strong>Runtime:</strong></p>
+            <ul>
+                <li>☐ Read-only root filesystem</li>
+                <li>☐ Drop all capabilities</li>
+                <li>☐ Enable security profiles (seccomp/AppArmor)</li>
+                <li>☐ Limit resources (CPU/memory)</li>
+                <li>☐ Use runtime security monitoring (Falco)</li>
+            </ul>
+            <p><strong>Kubernetes:</strong></p>
+            <ul>
+                <li>☐ Enforce Pod Security Standards</li>
+                <li>☐ Implement RBAC with least privilege</li>
+                <li>☐ Deploy network policies (default deny)</li>
+                <li>☐ Encrypt secrets at rest</li>
+                <li>☐ Enable audit logging</li>
+            </ul>
+            <p><strong>CI/CD:</strong></p>
+            <ul>
+                <li>☐ Scan images in pipeline</li>
+                <li>☐ Fail builds on critical vulnerabilities</li>
+                <li>☐ Generate and scan SBOMs</li>
+                <li>☐ Enforce image signing</li>
+            </ul>
+        </div>
+
+        <h2>Recommended Tools</h2>
+
+        <h3>Vulnerability Scanning</h3>
+        <ul>
+            <li><strong>Trivy:</strong> Fast, accurate, supports multiple formats</li>
+            <li><strong>Grype:</strong> Anchore's scanner, good SBOM support</li>
+            <li><strong>Snyk:</strong> Developer-friendly, IDE integration</li>
+        </ul>
+
+        <h3>Runtime Security</h3>
+        <ul>
+            <li><strong>Falco:</strong> CNCF project, behavioral monitoring</li>
+            <li><strong>Sysdig:</strong> Commercial platform, deep visibility</li>
+            <li><strong>Aqua Security:</strong> Full-stack container security</li>
+        </ul>
+
+        <h3>Policy Enforcement</h3>
+        <ul>
+            <li><strong>OPA Gatekeeper:</strong> Policy as code for Kubernetes</li>
+            <li><strong>Kyverno:</strong> Kubernetes-native policy engine</li>
+            <li><strong>Kubewarden:</strong> WebAssembly-based policies</li>
+        </ul>
+
+        <h3>Secret Management</h3>
+        <ul>
+            <li><strong>HashiCorp Vault:</strong> Industry standard, dynamic secrets</li>
+            <li><strong>External Secrets Operator:</strong> Sync from external vaults to K8s</li>
+            <li><strong>Sealed Secrets:</strong> Encrypt secrets in Git</li>
+        </ul>
+
+        <h2>Conclusion</h2>
+
+        <p>Container security is not a single tool or practice—it's a comprehensive approach spanning the entire
+            container lifecycle from build to runtime. By implementing the practices in this guide, you can
+            significantly reduce your attack surface and protect your containerized applications.</p>
+
+        <p><strong>Key Takeaways:</strong></p>
+        <ul>
+            <li>Use minimal, scanned, and signed images</li>
+            <li>Never run as root, drop capabilities, use read-only filesystems</li>
+            <li>Implement Kubernetes RBAC, network policies, and Pod Security Standards</li>
+            <li>Encrypt secrets and use external secret managers</li>
+            <li>Deploy runtime security monitoring</li>
+            <li>Shift security left into your CI/CD pipeline</li>
+        </ul>
+
+        <p>Container security is an ongoing process. Continuously monitor, audit, and improve your security posture as
+            new threats emerge.</p>
+
+        <div class="info-box">
+            <strong>🔗 Related Resources:</strong>
+            <ul style="margin-top: 1rem;">
+                <li><a href="/guides/incident-response-automation.html" style="color: var(--accent-cyan);">Incident
+                        Response Automation Guide</a></li>
+                <li><a href="/guides/zero-day-detection.html" style="color: var(--accent-cyan);">Zero-Day Detection
+                        Methods</a></li>
+                <li><a href="/guides/api-security-best-practices.html" style="color: var(--accent-cyan);">API Security
+                        Best Practices</a></li>
+            </ul>
+        </div>
+
+        <p style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); color: var(--text-muted);">
+            <strong>Author:</strong> TheHGTech Security Team<br>
+            <strong>Last Updated:</strong> December 2025<br>
+            <strong>Reading Time:</strong> 18 minutes
+        </p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const body = document.body;
+            if (localStorage.getItem('theme') === 'light') {
+                body.classList.add('light-mode');
+            }
+        });
+    </script>
+</body>
+
+</html>
