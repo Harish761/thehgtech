@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insider Threat Detection Program Guide | TheHGTech</title>
+    <meta name="description"
+        content="Build a comprehensive insider threat detection program with behavioral analytics, monitoring, and response procedures.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/header.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF4C4C;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .guide-header {
+            padding: 3rem 0 2rem;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+            margin-top: 60px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-red));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            color: var(--accent-cyan);
+            margin: 2rem 0 1rem;
+            font-size: 1.8rem;
+        }
+
+        h3 {
+            color: var(--text-primary);
+            margin: 1.5rem 0 1rem;
+            font-size: 1.3rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        ul,
+        ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .info-box {
+            background: rgba(0, 217, 255, 0.05);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .warning-box {
+            background: rgba(255, 76, 76, 0.05);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        code {
+            background: var(--bg-card);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: var(--accent-cyan);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header (same as other pages) -->
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <a href="../index.html"
+                    style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="../logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="../logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+            <nav class="nav" role="navigation">
+                <a href="../index.html#news">News</a>
+                <a href="../threat-intel.html">Threat Intelligence <span class="live-badge">LIVE</span></a>
+                <a href="../index.html#cve">CVE</a>
+                <a href="../guides/">Guides</a>
+                <a href="../comparisons/">Tool Comparisons</a>
+                <a href="../articles.html">Articles</a>
+                <a href="../index.html#about">About</a>
+                <a href="../index.html#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <a href="/guides/" class="back-link">← Back to Guides</a>
+
+        <div class="guide-header">
+            <h1>Insider Threat Detection Program</h1>
+            <p style="color: var(--text-muted); font-size: 1.1rem;">Build a comprehensive insider threat detection
+                program with behavioral analytics and monitoring</p>
+            <div style="margin-top: 1rem; color: var(--text-muted);">
+                <span>📖 16 min read</span> • <span>🎯 Advanced</span> • <span>📅 December 2025</span>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <strong>💡 Why This Matters:</strong> Insider threats account for 60% of data breaches and cost an average
+            of $15.38 million per incident. Recent breaches like Coupang (33.7M users exposed by former developer)
+            demonstrate the critical need for insider threat programs.
+        </div>
+
+        <h2>What is an Insider Threat?</h2>
+        <p>An <strong>insider threat</strong> is a security risk that originates from within an organization. This
+            includes current or former employees, contractors, business partners, or anyone with authorized access to
+            systems and data who misuses that access—either maliciously or negligently.</p>
+
+        <h3>Types of Insider Threats</h3>
+        <ol>
+            <li><strong>Malicious Insiders:</strong> Deliberately steal data, sabotage systems, or commit fraud (e.g.,
+                Coupang breach)</li>
+            <li><strong>Negligent Insiders:</strong> Accidentally expose data through poor security hygiene (e.g.,
+                clicking phishing links)</li>
+            <li><strong>Compromised Insiders:</strong> Legitimate accounts taken over by external attackers</li>
+            <li><strong>Third-Party Insiders:</strong> Vendors, contractors, or partners with excessive access</li>
+        </ol>
+
+        <h2>Building Your Insider Threat Program: The Framework</h2>
+
+        <h3>Phase 1: Establish Governance (Weeks 1-2)</h3>
+
+        <h4>1. Form a Cross-Functional Team</h4>
+        <p>An effective insider threat program requires collaboration across departments:</p>
+        <ul>
+            <li><strong>Security Team:</strong> Technical monitoring and detection</li>
+            <li><strong>HR:</strong> Employee lifecycle management and behavioral indicators</li>
+            <li><strong>Legal:</strong> Compliance, privacy, and investigation procedures</li>
+            <li><strong>IT:</strong> Access controls and system administration</li>
+            <li><strong>Executive Sponsor:</strong> Budget approval and organizational support</li>
+        </ul>
+
+        <h4>2. Define Program Scope</h4>
+        <p>Clearly document what your program will cover:</p>
+        <ul>
+            <li>Which assets are in scope? (databases, source code, customer data, IP)</li>
+            <li>Which user populations? (employees, contractors, privileged users)</li>
+            <li>What behaviors will be monitored? (data exfiltration, privilege abuse, policy violations)</li>
+            <li>What are the legal and privacy boundaries? (employee monitoring laws vary by jurisdiction)</li>
+        </ul>
+
+        <h4>3. Create Policies and Procedures</h4>
+        <p>Document the following:</p>
+        <ul>
+            <li><strong>Acceptable Use Policy:</strong> What employees can and cannot do with company systems</li>
+            <li><strong>Monitoring Disclosure:</strong> Inform employees that their activity may be monitored</li>
+            <li><strong>Investigation Procedures:</strong> Step-by-step process for investigating suspected insiders
+            </li>
+            <li><strong>Escalation Matrix:</strong> Who to contact for different severity levels</li>
+        </ul>
+
+        <div class="warning-box">
+            <strong>⚠️ Legal Compliance:</strong> Consult with legal counsel before implementing monitoring. Laws like
+            GDPR (EU), CCPA (California), and various labor laws impose strict requirements on employee monitoring and
+            data privacy.
+        </div>
+
+        <h3>Phase 2: Implement Technical Controls (Weeks 3-8)</h3>
+
+        <h4>4. Deploy User and Entity Behavior Analytics (UEBA)</h4>
+        <p>UEBA tools establish baselines of normal behavior and alert on anomalies:</p>
+        <ul>
+            <li><strong>Tools:</strong> Splunk UBA, Microsoft Sentinel, Exabeam, Securonix</li>
+            <li><strong>Capabilities:</strong>
+                <ul>
+                    <li>Baseline normal access patterns (time of day, locations, data accessed)</li>
+                    <li>Detect deviations (off-hours access, unusual data volume, new geographies)</li>
+                    <li>Peer group analysis (compare user to similar roles)</li>
+                    <li>Risk scoring (assign risk scores based on multiple factors)</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h4>5. Implement Data Loss Prevention (DLP)</h4>
+        <p>Prevent unauthorized data exfiltration:</p>
+        <ul>
+            <li><strong>Endpoint DLP:</strong> Monitor file transfers, USB usage, cloud uploads</li>
+            <li><strong>Network DLP:</strong> Inspect email attachments, web uploads, FTP transfers</li>
+            <li><strong>Cloud DLP:</strong> Monitor SaaS applications (Google Drive, Dropbox, OneDrive)</li>
+            <li><strong>Database Activity Monitoring:</strong> Alert on bulk queries or unusual data access</li>
+        </ul>
+
+        <p><strong>Example DLP Rules:</strong></p>
+        <ul>
+            <li>Block emails containing >100 customer records</li>
+            <li>Alert on uploads to personal cloud storage</li>
+            <li>Prevent USB transfers of files tagged as "Confidential"</li>
+            <li>Watermark sensitive documents to trace leaks</li>
+        </ul>
+
+        <h4>6. Enforce Privileged Access Management (PAM)</h4>
+        <p>Control and monitor privileged accounts:</p>
+        <ul>
+            <li><strong>Just-in-Time (JIT) Access:</strong> Grant admin rights only when needed, for limited time</li>
+            <li><strong>Session Recording:</strong> Record all privileged sessions for audit</li>
+            <li><strong>Password Vaulting:</strong> Store privileged credentials in secure vault (CyberArk, BeyondTrust)
+            </li>
+            <li><strong>Approval Workflows:</strong> Require manager approval for sensitive actions</li>
+        </ul>
+
+        <h4>7. Implement Automated Deprovisioning</h4>
+        <p>Revoke access immediately upon employee departure:</p>
+        <ul>
+            <li>Integrate HR systems (Workday, BambooHR) with IAM platforms (Okta, Azure AD)</li>
+            <li>Trigger automated workflows when employee status changes to "terminated"</li>
+            <li>Revoke all access within 1 hour (not 1 day, not 1 week)</li>
+            <li>Include API tokens, SSH keys, VPN access, application credentials</li>
+        </ul>
+
+        <div class="info-box">
+            <strong>📊 Key Metric:</strong> Track "Time to Deprovision" - the time between HR termination and complete
+            access revocation. Target: <1 hour. </div>
+
+                <h3>Phase 3: Define Behavioral Indicators (Weeks 9-10)</h3>
+
+                <h4>8. Technical Indicators of Compromise (TICs)</h4>
+                <p>Automated alerts for suspicious technical behavior:</p>
+                <ul>
+                    <li>Access from unusual geographic locations (impossible travel)</li>
+                    <li>Off-hours access (2 AM logins from non-IT staff)</li>
+                    <li>Bulk data downloads (>10,000 records in single query)</li>
+                    <li>Privilege escalation attempts</li>
+                    <li>Disabled security controls (EDR, logging)</li>
+                    <li>Use of unauthorized tools (Tor, encryption software)</li>
+                    <li>Access to unrelated systems (HR accessing source code)</li>
+                </ul>
+
+                <h4>9. Behavioral Indicators (Human Factors)</h4>
+                <p>Non-technical warning signs that require human judgment:</p>
+                <ul>
+                    <li><strong>Disgruntlement:</strong> Recent negative performance review, demotion, or disciplinary
+                        action</li>
+                    <li><strong>Financial Stress:</strong> Sudden lifestyle changes, debt, gambling</li>
+                    <li><strong>Policy Violations:</strong> Repeated violations of security policies</li>
+                    <li><strong>Pre-Departure Behavior:</strong> Downloading large amounts of data before resignation
+                    </li>
+                    <li><strong>Unusual Interest:</strong> Accessing data outside job responsibilities</li>
+                    <li><strong>Social Engineering:</strong> Attempting to manipulate colleagues for access</li>
+                </ul>
+
+                <div class="warning-box">
+                    <strong>⚠️ Privacy Consideration:</strong> Behavioral monitoring must respect employee privacy.
+                    Focus on work-related activities, not personal communications. Document clear policies and obtain
+                    legal approval.
+                </div>
+
+                <h3>Phase 4: Establish Detection and Response (Weeks 11-12)</h3>
+
+                <h4>10. Create a Risk Scoring Model</h4>
+                <p>Assign risk scores based on multiple factors:</p>
+                <ul>
+                    <li><strong>Low Risk (1-3):</strong> Minor policy violation, single anomaly</li>
+                    <li><strong>Medium Risk (4-6):</strong> Multiple anomalies, access to sensitive data</li>
+                    <li><strong>High Risk (7-8):</strong> Bulk data exfiltration, privilege abuse</li>
+                    <li><strong>Critical Risk (9-10):</strong> Active data theft, sabotage attempt</li>
+                </ul>
+
+                <p><strong>Example Scoring:</strong></p>
+                <ul>
+                    <li>Off-hours access: +2 points</li>
+                    <li>Foreign IP address: +3 points</li>
+                    <li>Bulk download: +4 points</li>
+                    <li>Recent termination notice: +5 points</li>
+                    <li>Disabled security tool: +6 points</li>
+                </ul>
+
+                <h4>11. Define Response Playbooks</h4>
+                <p>Create step-by-step procedures for each risk level:</p>
+
+                <p><strong>Low Risk Response:</strong></p>
+                <ol>
+                    <li>Automated alert to SOC analyst</li>
+                    <li>Review user activity logs</li>
+                    <li>Document findings</li>
+                    <li>No immediate action unless pattern emerges</li>
+                </ol>
+
+                <p><strong>Medium Risk Response:</strong></p>
+                <ol>
+                    <li>Escalate to insider threat team</li>
+                    <li>Conduct deeper investigation (email, file access, network traffic)</li>
+                    <li>Interview manager for context</li>
+                    <li>Increase monitoring on user</li>
+                    <li>Consider restricting access to sensitive systems</li>
+                </ol>
+
+                <p><strong>High/Critical Risk Response:</strong></p>
+                <ol>
+                    <li>Immediately notify insider threat team + legal + HR</li>
+                    <li>Preserve evidence (logs, emails, files)</li>
+                    <li>Consider immediate account suspension</li>
+                    <li>Conduct forensic investigation</li>
+                    <li>Involve law enforcement if criminal activity suspected</li>
+                    <li>Prepare for potential litigation</li>
+                </ol>
+
+                <h4>12. Establish Reporting Mechanisms</h4>
+                <p>Encourage employees to report suspicious behavior:</p>
+                <ul>
+                    <li><strong>Anonymous Hotline:</strong> Allow employees to report concerns without fear of
+                        retaliation</li>
+                    <li><strong>Security Awareness Training:</strong> Educate employees on what to report</li>
+                    <li><strong>Whistleblower Protection:</strong> Ensure legal protections for reporters</li>
+                </ul>
+
+                <h2>Ongoing Operations</h2>
+
+                <h3>13. Continuous Monitoring</h3>
+                <p>Insider threat detection is not a one-time project—it's an ongoing program:</p>
+                <ul>
+                    <li><strong>Daily:</strong> Review UEBA alerts, DLP incidents</li>
+                    <li><strong>Weekly:</strong> Analyze trends, update risk scores</li>
+                    <li><strong>Monthly:</strong> Review access certifications, audit privileged accounts</li>
+                    <li><strong>Quarterly:</strong> Conduct tabletop exercises, update policies</li>
+                    <li><strong>Annually:</strong> Program assessment, executive briefing</li>
+                </ul>
+
+                <h3>14. Metrics and KPIs</h3>
+                <p>Track program effectiveness:</p>
+                <ul>
+                    <li><strong>Time to Detect:</strong> How long from malicious activity to detection?</li>
+                    <li><strong>Time to Respond:</strong> How long from detection to containment?</li>
+                    <li><strong>False Positive Rate:</strong> % of alerts that are benign</li>
+                    <li><strong>Coverage:</strong> % of critical assets monitored</li>
+                    <li><strong>Deprovisioning Time:</strong> Time to revoke access after termination</li>
+                    <li><strong>Incidents Prevented:</strong> Number of potential breaches stopped</li>
+                </ul>
+
+                <h3>15. Training and Awareness</h3>
+                <p>Educate the organization:</p>
+                <ul>
+                    <li><strong>General Employees:</strong> Annual security awareness training on insider threats</li>
+                    <li><strong>Managers:</strong> Training on recognizing behavioral warning signs</li>
+                    <li><strong>IT/Security:</strong> Technical training on UEBA, DLP, PAM tools</li>
+                    <li><strong>Executives:</strong> Briefings on program status and risk posture</li>
+                </ul>
+
+                <h2>Tools and Technologies</h2>
+
+                <h3>UEBA Platforms</h3>
+                <ul>
+                    <li><strong>Splunk UBA:</strong> Machine learning-based anomaly detection</li>
+                    <li><strong>Microsoft Sentinel:</strong> Cloud-native SIEM with UEBA capabilities</li>
+                    <li><strong>Exabeam:</strong> Behavioral analytics with timeline analysis</li>
+                    <li><strong>Securonix:</strong> SIEM + UEBA combined platform</li>
+                </ul>
+
+                <h3>DLP Solutions</h3>
+                <ul>
+                    <li><strong>Symantec DLP:</strong> Comprehensive endpoint, network, and cloud DLP</li>
+                    <li><strong>Microsoft Purview:</strong> Integrated with Microsoft 365</li>
+                    <li><strong>Forcepoint DLP:</strong> Advanced content inspection</li>
+                    <li><strong>Digital Guardian:</strong> Endpoint-focused DLP with classification</li>
+                </ul>
+
+                <h3>PAM Tools</h3>
+                <ul>
+                    <li><strong>CyberArk:</strong> Enterprise-grade privileged access management</li>
+                    <li><strong>BeyondTrust:</strong> PAM + vulnerability management</li>
+                    <li><strong>Delinea (Thycotic):</strong> Cloud-first PAM solution</li>
+                    <li><strong>HashiCorp Vault:</strong> Secrets management for DevOps</li>
+                </ul>
+
+                <h2>Case Study: Preventing a Coupang-Style Breach</h2>
+
+                <p>Let's apply this framework to prevent a breach like Coupang (former developer with unrevoked tokens):
+                </p>
+
+                <h3>What Went Wrong at Coupang</h3>
+                <ul>
+                    <li>❌ No automated deprovisioning of API tokens</li>
+                    <li>❌ No geographic access controls (overseas access not flagged)</li>
+                    <li>❌ No UEBA to detect anomalous database queries</li>
+                    <li>❌ No DLP to alert on bulk data exfiltration</li>
+                    <li>❌ 5-month detection gap</li>
+                </ul>
+
+                <h3>How This Program Would Have Prevented It</h3>
+                <ul>
+                    <li>✅ <strong>Automated Deprovisioning:</strong> API tokens revoked within 1 hour of termination
+                    </li>
+                    <li>✅ <strong>Geographic Controls:</strong> Alert on access from China (developer's location)</li>
+                    <li>✅ <strong>UEBA:</strong> Detect database queries by departed employee's token</li>
+                    <li>✅ <strong>DLP:</strong> Alert on 33.7M records being accessed over 5 months</li>
+                    <li>✅ <strong>Detection Time:</strong> Hours instead of months</li>
+                </ul>
+
+                <h2>Common Pitfalls to Avoid</h2>
+
+                <ol>
+                    <li><strong>Technology-Only Approach:</strong> Tools alone won't work—you need people, process, and
+                        governance</li>
+                    <li><strong>Ignoring Privacy Laws:</strong> Violating employee privacy can lead to lawsuits and
+                        regulatory fines</li>
+                    <li><strong>Alert Fatigue:</strong> Too many false positives will cause analysts to ignore alerts
+                    </li>
+                    <li><strong>Lack of Executive Support:</strong> Without C-level buy-in, the program will fail</li>
+                    <li><strong>Siloed Operations:</strong> Security, HR, and Legal must work together</li>
+                    <li><strong>No Testing:</strong> Conduct simulations to validate detection capabilities</li>
+                </ol>
+
+                <h2>Conclusion</h2>
+
+                <p>Insider threats are one of the most challenging security risks because they exploit legitimate
+                    access. Building an effective insider threat detection program requires a combination of technology,
+                    process, and people working together.</p>
+
+                <p>The Coupang breach—and countless others—demonstrate that the cost of <em>not</em> having an insider
+                    threat program far exceeds the investment required to build one. With 60% of breaches involving
+                    insiders and an average cost of $15.38 million, the ROI is clear.</p>
+
+                <p>Start small, iterate, and continuously improve. Even basic controls like automated deprovisioning and
+                    UEBA can prevent the majority of insider incidents.</p>
+
+                <div class="info-box">
+                    <strong>🔗 Related Resources:</strong>
+                    <ul style="margin-top: 1rem;">
+                        <li><a href="/articles.html?id=article-coupang-breach" style="color: var(--accent-cyan);">The
+                                Coupang Catastrophe: 33.7M User Breach</a></li>
+                        <li><a href="/guides/incident-response-automation.html"
+                                style="color: var(--accent-cyan);">Incident Response Automation Guide</a></li>
+                        <li><a href="/guides/siem-log-analysis.html" style="color: var(--accent-cyan);">SIEM Log
+                                Analysis for Beginners</a></li>
+                        <li><a href="/comparisons/splunk-vs-elastic-security-vs-logrhythm.html"
+                                style="color: var(--accent-cyan);">SIEM Platform Comparison</a></li>
+                    </ul>
+                </div>
+
+                <p
+                    style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); color: var(--text-muted);">
+                    <strong>Author:</strong> TheHGTech Security Team<br>
+                    <strong>Last Updated:</strong> December 2025<br>
+                    <strong>Reading Time:</strong> 16 minutes
+                </p>
+        </div>
+
+        <script>
+            // Theme toggle functionality (same as other pages)
+            document.addEventListener('DOMContentLoaded', () => {
+                const body = document.body;
+                if (localStorage.getItem('theme') === 'light') {
+                    body.classList.add('light-mode');
+                }
+            });
+        </script>
+</body>
+
+</html>
