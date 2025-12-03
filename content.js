@@ -4,125 +4,104 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Dec 03 2025",
+            "title": "China Explores Drone Swarms to Disrupt Satellite Internet",
+            "content": "Chinese researchers have developed a strategy using swarms of 2,000 drones to disrupt satellite internet communications over areas as large as Taiwan. This approach targets resilient satellite constellations like Starlink, aiming to sever regional connectivity. The study highlights the potential for drones to interfere with satellite signals, posing significant risks to regions reliant on such networks for critical infrastructure. As satellite internet becomes increasingly vital for global communication, this development underscores the need for enhanced security measures. Organizations utilizing satellite internet should assess their vulnerability to such disruptions and consider implementing countermeasures.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/china-researches-ways-disrupt-satellite-internet"
+        },
+        {
             "date": "Dec 02 2025",
-            "title": "University of Pennsylvania Confirms Data Breach Following Oracle Hack",
-            "content": "The University of Pennsylvania has disclosed a data breach after attackers accessed its Oracle E-Business Suite servers in August, resulting in the theft of documents containing personal information. The breach potentially affects students, faculty, and staff whose data was stored on these servers. This incident underscores the vulnerabilities in enterprise resource planning systems, which are increasingly being targeted by cybercriminals. Organizations using Oracle systems should review their security protocols and ensure that patches and updates are applied promptly. Affected individuals are advised to monitor their accounts for any unusual activity and consider credit monitoring services.",
+            "title": "The AI Fix Discusses Gemini 3 and AI Poetry Jailbreaks",
+            "content": "In the latest episode of The AI Fix, the hosts explore the capabilities of Gemini 3, which has outperformed competitors and even posed challenges to Nvidia. An intriguing segment reveals how poetic prompts can significantly increase the success rate of AI model jailbreaks, jumping from 8% to 43%. This episode also delves into philosophical questions about the necessity of safe robots. The discussion provides insights into the vulnerabilities of large language models (LLMs) and encourages developers to consider unconventional attack vectors. AI professionals should evaluate the security of their models against creative input methods like poetry.",
+            "source": "Graham Cluley",
+            "sourceUrl": "https://grahamcluley.com/the-ai-fix-79/"
+        },
+        {
+            "date": "Dec 02 2025",
+            "title": "Arrests Made in Korea for Selling Footage from Hacked Cameras",
+            "content": "The Korean National Police have apprehended four suspects accused of hacking over 120,000 IP cameras and selling the illicit footage to an overseas adult website. The breach highlights significant privacy and security vulnerabilities in IoT devices, particularly those with inadequate safeguards. The suspects allegedly exploited weak passwords and outdated firmware to gain unauthorized access. This incident underscores the importance of securing IP cameras with strong, unique passwords and regular firmware updates. Users and organizations should audit their IoT devices and ensure robust security measures are in place to prevent similar breaches.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/university-of-pennsylvania-confirms-data-theft-after-oracle-ebs-hack/"
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/korea-arrests-suspects-selling-intimate-videos-from-hacked-ip-cameras/"
         },
         {
             "date": "Dec 02 2025",
-            "title": "Saporo Secures $8 Million to Expand Identity Security Platform",
-            "content": "Swiss cybersecurity firm Saporo has raised $8 million to enhance its identity security platform, focusing on expanding its research and development, sales, and marketing teams across Europe. This investment highlights the growing importance of identity security as organizations face increasing threats from identity-based attacks. The funding will enable Saporo to accelerate the development of its platform, which helps businesses manage and secure digital identities. Companies are advised to prioritize identity security solutions as part of their broader cybersecurity strategies to mitigate risks associated with unauthorized access and identity theft.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/saporo-raises-8-million-for-identity-security-platform/"
+            "title": "MuddyWater APT Enhances Tactics with New MuddyViper Backdoor",
+            "content": "Iranian threat actor MuddyWater has upgraded its espionage capabilities with the introduction of the MuddyViper backdoor, employing new Fooder loader and memory-only tactics. This evolution marks a shift from their previously noisy operations to more stealthy and sophisticated espionage activities. The group&#x27;s enhanced capabilities pose a greater threat to targeted sectors, including government and critical infrastructure. Security professionals should be aware of these developments and update their threat detection systems to identify and mitigate such advanced persistent threats (APTs). The use of memory-only techniques highlights the need for comprehensive endpoint security solutions.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/irans-muddywater-levels-up-muddyviper-backdoor"
         },
         {
             "date": "Dec 02 2025",
-            "title": "OpenAI Coding Agent Vulnerability Poses Risk to Developers",
-            "content": "A critical vulnerability identified as CVE-2025-61260 has been discovered in OpenAI&#x27;s Codex Command Line Interface (CLI), which could be exploited for command execution attacks. This vulnerability poses significant risks to developers using the tool, potentially allowing attackers to execute arbitrary commands on affected systems. As AI tools become integral to software development, ensuring their security is paramount to prevent exploitation. Developers using the Codex CLI should apply available patches immediately and review their systems for any signs of compromise. This incident highlights the need for rigorous security assessments of AI-driven development tools.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/vulnerability-in-openai-coding-agent-could-facilitate-attacks-on-developers/"
-        },
-        {
-            "date": "Dec 02 2025",
-            "title": "AI Adoption Outpaces Governance, Increasing Shadow Identity Risks",
-            "content": "The 2025 State of AI Data Security Report reveals a stark contrast between widespread AI adoption and limited governance, with 83% of organizations using AI but only 13% having strong oversight. This gap raises concerns about shadow identities—unmonitored AI systems that can introduce security vulnerabilities. As AI becomes ubiquitous in daily operations, businesses must enhance their governance frameworks to manage these risks effectively. Organizations are urged to implement comprehensive AI oversight strategies to ensure security and compliance, addressing the potential for unauthorized data access and manipulation.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4099211/ai-adoption-surges-while-governance-lags-report-warns-of-growing-shadow-identity-risk.html"
-        },
-        {
-            "date": "Dec 02 2025",
-            "title": "Google Addresses Actively Exploited Android Vulnerabilities",
-            "content": "Google&#x27;s December security update addresses 107 Android vulnerabilities, including two critical flaws that are currently being exploited in the wild. These vulnerabilities could allow attackers to gain unauthorized access to devices or execute malicious code. Users are strongly advised to update their devices immediately to protect against potential threats. The rapid exploitation of these vulnerabilities underscores the importance of timely patch management in mobile security. Organizations should ensure that all Android devices within their networks are updated promptly to mitigate these risks.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2025/12/google-patches-107-android-flaws"
-        },
-        {
-            "date": "Dec 02 2025",
-            "title": "SecAlerts Enhances Vulnerability Tracking with Smarter Solutions",
-            "content": "SecAlerts has introduced a new approach to vulnerability management, offering a streamlined way to track and prioritize security alerts. This solution addresses the challenge of managing numerous software vulnerabilities across large IT environments, helping organizations focus on the most critical threats. By reducing the noise in vulnerability notifications, SecAlerts enables security teams to allocate resources more effectively and respond to threats faster. Businesses are encouraged to adopt such solutions to enhance their cybersecurity posture and improve their response to emerging vulnerabilities.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/12/secalerts-cuts-through-noise-with.html"
-        },
-        {
-            "date": "Dec 02 2025",
-            "title": "Microsoft Fixes File Explorer and Search Issues in Windows 11 Update",
-            "content": "Microsoft has released the KB5070311 preview cumulative update for Windows 11, addressing 49 issues including File Explorer freezes and search functionality problems. This update is part of Microsoft&#x27;s ongoing efforts to enhance system stability and user experience. Users experiencing these issues are advised to install the update to improve system performance. The release highlights the importance of regular system updates to address software bugs and vulnerabilities. IT departments should ensure that all Windows 11 systems are updated to maintain optimal functionality and security.",
+            "title": "FTC Mandates Illuminate to Improve Data Practices",
+            "content": "The Federal Trade Commission (FTC) has reached a settlement with Illuminate Education, requiring the deletion of unnecessary student data and enhancements to their security framework. This action follows a 2021 incident where the personal information of 10 million students was exposed. The settlement emphasizes the importance of data minimization and robust security protocols in educational technology. Schools and edtech providers should review their data handling and security practices to ensure compliance with regulatory standards and protect student information. This case serves as a reminder of the potential consequences of inadequate data protection measures.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5070311-update-fixes-file-explorer-freezes-search-issues/"
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/ftc-settlement-requires-illuminate-to-delete-unnecessary-student-data/"
         },
         {
             "date": "Dec 02 2025",
-            "title": "ISC Stormcast Highlights Emerging Cyber Threats",
-            "content": "The SANS Internet Storm Center&#x27;s latest Stormcast podcast highlights emerging cyber threats for December 2, 2025. The discussion centers on new vulnerabilities and attack vectors identified by cybersecurity experts. Key topics include recent malware campaigns and the importance of timely patch management. The podcast emphasizes the need for organizations to stay vigilant and update their security practices in response to evolving threats. Listeners are encouraged to review their security protocols and ensure all systems are up to date to mitigate potential risks.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32528"
+            "title": "Poetry Proves Effective in AI Model Jailbreak Attempts",
+            "content": "Researchers have discovered that using poetic prompts instead of prose can significantly increase the success rate of AI model jailbreaks, with attacks succeeding 43% of the time compared to 8% with standard prompts. This finding reveals a novel vulnerability in large language models (LLMs) that could be exploited by adversaries. The study suggests that the structure and creativity of poetry bypass some of the models&#x27; restrictive measures. AI developers should consider this unconventional attack vector and strengthen their models&#x27; defenses against diverse input formats. This research highlights the need for continuous evaluation of AI model security.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/threat-intelligence/researchers-use-poetry-to-jailbreak-ai-models"
+        },
+        {
+            "date": "Dec 02 2025",
+            "title": "Global Outage Affects OpenAI&#x27;s ChatGPT Service",
+            "content": "OpenAI&#x27;s popular AI service, ChatGPT, experienced a worldwide outage, leaving users unable to access their conversations. The disruption has raised concerns about the reliability of AI-driven communication platforms. No official explanation has been provided for the outage, which has affected users across various sectors relying on ChatGPT for customer service, content generation, and more. This incident highlights the importance of having contingency plans and backup systems in place for critical AI services. Organizations should evaluate their dependency on single AI solutions and consider diversifying their technology stack to mitigate the impact of such outages.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/chatgpt-is-down-worldwide-conversations-dissapeared-for-users/"
         }
     ],
     "aiShorts": [
         {
-            "date": "Dec 02 2025",
-            "title": "Gradium Secures $70M Seed Funding to Revolutionize AI Voice Technology",
-            "content": "Paris-based AI voice startup Gradium has emerged from stealth with a substantial $70 million seed funding round. Founded out of the French AI lab Kyutai, which is supported by telecom magnate Xavier Niel, Gradium aims to redefine voice technology with its innovative AI solutions. The funding will accelerate the development of their proprietary voice models, positioning them to compete with global leaders in AI-driven voice applications. This investment underscores the growing interest in voice AI as a transformative technology across industries. Stakeholders in the AI sector should monitor Gradium&#x27;s progress as it seeks to disrupt the market with its cutting-edge capabilities.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/02/paris-based-ai-voice-startup-gradium-nabs-70m-seed/"
-        },
-        {
-            "date": "Dec 02 2025",
-            "title": "DeepSeek V3.2 Achieves AI Milestone with Minimal Computing Resources",
-            "content": "China&#x27;s DeepSeek has unveiled its V3.2 AI model, which matches the performance of OpenAI&#x27;s GPT-5 on reasoning benchmarks using significantly fewer training floating point operations per second (FLOPs). This achievement highlights DeepSeek&#x27;s strategic approach to AI development, emphasizing efficiency over sheer computational power. By optimizing their training processes, DeepSeek has set a new standard for cost-effective AI model training. This development is particularly impactful for organizations with limited computational budgets, offering a viable path to achieving high-performance AI capabilities without exorbitant resource demands. The AI community should take note of this shift towards more sustainable AI practices.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/deepseek-v3-2-matches-gpt-5-lower-training-costs/"
-        },
-        {
-            "date": "Dec 02 2025",
-            "title": "OpenAI Partners with Thrive to Pioneer Enterprise AI Integration",
-            "content": "OpenAI is collaborating with Thrive Holdings to modernize accounting and IT services by integrating AI-driven solutions. As part of this partnership, OpenAI will acquire an ownership stake in Thrive and embed its specialists within the company. This initiative aims to create a new enterprise AI model that combines capital investment with sector-specific expertise. The collaboration represents a strategic move to leverage AI for operational efficiency and innovation in enterprise settings. Industry leaders should consider the implications of such partnerships, which could redefine competitive dynamics by embedding AI deeper into business processes.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/how-openai-and-thrive-are-testing-a-new-enterprise-ai-model/"
-        },
-        {
-            "date": "Dec 02 2025",
-            "title": "U.S. Government Becomes Major Shareholder in Chip Startup xLight",
-            "content": "Chip startup xLight is facing new dynamics as the U.S. government becomes one of its largest shareholders. This unusual ownership arrangement raises questions about the influence of government interests in the tech sector, particularly in Silicon Valley, where a libertarian ethos prevails. The involvement of a major government entity could impact xLight’s strategic decisions and innovation trajectory. This development highlights the broader trend of increasing government interest and investment in critical technology sectors. Stakeholders should assess how such relationships may affect market competition and innovation.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/01/what-does-it-mean-when-uncle-sam-is-one-of-your-biggest-shareholders-chip-startup-xlight-is-about-to-find-out/"
-        },
-        {
-            "date": "Dec 02 2025",
-            "title": "Arcee Launches Trinity Models to Revitalize U.S. Open Source AI",
-            "content": "Arcee has released its new Trinity models under the Apache 2.0 license, aiming to reinvigorate U.S. open source AI development. This move comes as Chinese research labs have dominated the field with advanced open Mixture-of-Experts models. Arcee&#x27;s Trinity models are designed to foster innovation and collaboration within the U.S. AI community, providing a robust alternative to proprietary solutions. This initiative is crucial for maintaining competitive parity in the global AI landscape, where open source contributions are increasingly pivotal. Developers and tech leaders should consider integrating these models to leverage open source advantages.",
-            "source": "AI | VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/arcee-aims-to-reboot-u-s-open-source-ai-with-new-trinity-models-released"
-        },
-        {
-            "date": "Dec 01 2025",
-            "title": "Mirakl Unveils AI-Driven Commerce Strategy with ChatGPT Enterprise",
-            "content": "Mirakl is advancing its commerce strategy by leveraging AI agents and ChatGPT Enterprise to enhance customer support and documentation processes. The company&#x27;s Mirakl Nexus platform is at the forefront of this transformation, aiming to establish an agent-native commerce ecosystem. By integrating AI, Mirakl seeks to streamline operations and provide smarter, faster service solutions. This initiative reflects the broader trend of AI integration in commerce, offering businesses the potential to improve efficiency and customer satisfaction. Companies should explore similar AI-driven strategies to remain competitive in an evolving market landscape.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/mirakl"
-        },
-        {
-            "date": "Dec 01 2025",
-            "title": "Liquid AI Introduces Framework for Efficient Small-Model Training",
-            "content": "Liquid AI, an MIT spin-off, has released a blueprint for enterprise-grade small-model training, leveraging its Liquid Foundation Models series 2 (LFM2). These models are designed to deliver high performance on-device, utilizing a novel &quot;liquid&quot; architecture that optimizes training and deployment efficiency. This approach addresses the growing demand for scalable AI solutions that do not require extensive computational resources. By focusing on small-model efficiency, Liquid AI provides enterprises with a practical solution for deploying AI capabilities at scale. Tech professionals should consider adopting these models to enhance their AI infrastructure without incurring significant resource costs.",
-            "source": "AI | VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/mit-offshoot-liquid-ai-releases-blueprint-for-enterprise-grade-small-model"
-        },
-        {
-            "date": "Dec 02 2025",
-            "title": "Apple Appoints New AI Chief with Google and Microsoft Experience",
-            "content": "Apple has appointed a new head of artificial intelligence, replacing John Giannandrea, who is stepping down after revamping the company&#x27;s AI strategy. The new chief brings experience from both Google and Microsoft, indicating a strategic shift towards leveraging broader industry expertise. This leadership change is seen as a natural progression in Apple&#x27;s AI evolution, aiming to enhance its competitive edge in the AI sector. The move could impact Apple&#x27;s AI initiatives, including Siri and its machine learning frameworks, by introducing new perspectives and technologies. Professionals in AI development should monitor how this change influences Apple&#x27;s AI product offerings and integration strategies.",
+            "date": "Dec 03 2025",
+            "title": "AWS re:Invent 2025 Unveils Major AI and Chip Innovations",
+            "content": "Amazon Web Services&#x27; annual re:Invent conference is showcasing significant technological advancements, including new AI services and chip innovations. AWS is introducing updates to its AI product suite and unveiling new custom chips aimed at enhancing performance and efficiency. These developments are expected to impact a broad range of industries by offering more powerful and cost-effective cloud computing solutions. The conference highlights AWS&#x27;s commitment to maintaining its leadership in the cloud market amid increasing competition. Attendees are advised to explore the new offerings to leverage AWS&#x27;s latest capabilities for their business needs.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/01/apple-just-named-a-new-ai-chief-with-google-and-microsoft-expertise-as-john-giannandrea-steps-down/"
+            "sourceUrl": "https://techcrunch.com/2025/12/02/all-the-biggest-news-from-aws-big-tech-show-reinvent-2025/"
+        },
+        {
+            "date": "Dec 03 2025",
+            "title": "Amazon and Nvidia Collaborate on On-Premises AI Factories",
+            "content": "Amazon Web Services has teamed up with Nvidia to launch on-premises AI Factories, combining AWS&#x27;s cloud infrastructure with Nvidia&#x27;s advanced chip technology. These AI Factories are designed to provide scalable, high-performance computing environments for AI development. The collaboration aims to challenge existing competitors by offering a robust solution for enterprises requiring powerful on-site AI capabilities. This move reflects an industry trend towards hybrid cloud solutions that balance cloud flexibility with on-premises control. Organizations interested in deploying AI at scale should consider this new offering to enhance their computational resources.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/02/amazon-challenges-competitors-with-on-premises-nvidia-ai-factories/"
         },
         {
             "date": "Dec 02 2025",
-            "title": "Google&#x27;s AI Leverages User Data for Enhanced Personalization",
-            "content": "Google&#x27;s AI systems are using extensive user data to provide personalized services, raising concerns about privacy and surveillance. The AI&#x27;s ability to tailor responses and suggestions based on individual user behavior is both a technological advantage and a potential privacy risk. This duality highlights the growing tension between personalization and user data protection. As Google continues to enhance its AI capabilities, developers and tech leaders should consider the implications of data usage and privacy regulations. It is crucial for companies to balance AI advancements with ethical data practices to maintain user trust.",
+            "title": "Google Experiments with Integrating AI Overviews and AI Mode",
+            "content": "Google is conducting global tests to integrate AI Overviews with AI Mode, aiming to streamline the transition from traditional search to AI-driven interactions. This integration seeks to enhance user experience by providing more seamless and intuitive access to AI chat functionalities directly from search results. The test reflects Google&#x27;s ongoing efforts to innovate in the AI space and improve user engagement through advanced AI technologies. Users and developers should monitor these developments to understand potential changes in search and AI interaction paradigms. Feedback from these tests will likely influence the future direction of Google&#x27;s AI offerings.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/01/one-of-googles-biggest-ai-advantages-is-what-it-already-knows-about-you/"
+            "sourceUrl": "https://techcrunch.com/2025/12/02/google-tests-merging-ai-overviews-with-ai-mode/"
+        },
+        {
+            "date": "Dec 02 2025",
+            "title": "AWS Introduces Frontier AI Agents for Coding and DevOps",
+            "content": "Amazon Web Services has unveiled three new AI agents, known as &quot;Frontier agents,&quot; designed to automate tasks in coding, security, and DevOps. Among them is &quot;Kiro,&quot; an AI capable of autonomously coding for extended periods, potentially transforming software development processes. These agents aim to enhance productivity by reducing manual intervention in routine tasks, offering significant time and cost savings for developers. AWS&#x27;s introduction of these agents highlights the growing trend of AI-driven automation in IT operations. Developers and IT professionals should explore these tools to optimize workflow and resource management.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/02/amazon-previews-3-ai-agents-including-kiro-that-can-code-on-its-own-for-days/"
+        },
+        {
+            "date": "Dec 02 2025",
+            "title": "Android 16 Enhances User Experience with AI and Customization",
+            "content": "The release of Android 16 introduces AI notification summaries and advanced customization options, initially available on Pixel devices. This update marks a shift in Android&#x27;s release strategy, moving from annual updates to more frequent feature rollouts. The AI-powered notification summaries are designed to improve user productivity by prioritizing critical information. This change reflects a broader industry trend towards more dynamic and responsive software development cycles. Android users, particularly developers, should prepare for more regular updates and consider how these new features can be leveraged in app development and user engagement strategies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/02/android-16-adds-ai-notification-summaries-new-customization-options-and-more/"
+        },
+        {
+            "date": "Dec 02 2025",
+            "title": "ChatGPT Boosts Retail App Engagement with Increased Referrals",
+            "content": "A recent report indicates a 28% year-over-year increase in ChatGPT referrals to retailers&#x27; apps during Black Friday, with major beneficiaries including Walmart and Amazon. This surge underscores the growing influence of AI-driven interactions in consumer engagement and sales. Retailers leveraging ChatGPT have seen significant boosts in app traffic, highlighting the importance of AI in driving customer interactions. As AI continues to reshape the retail landscape, businesses should consider integrating conversational AI tools to enhance customer experience and increase sales. Monitoring AI-driven referral metrics can provide valuable insights into consumer behavior trends.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/02/chatgpt-referrals-to-retailers-apps-increased-28-year-over-year-says-report/"
+        },
+        {
+            "date": "Dec 02 2025",
+            "title": "AWS Expands AI Portfolio with New Nova Models and Control Service",
+            "content": "Amazon Web Services has expanded its AI offerings with the launch of four new models in its Nova family, alongside a frontier model service providing enhanced customer control. These new models are designed to offer improved performance and customization options for AI applications across various industries. AWS&#x27;s latest additions aim to address the growing demand for tailored AI solutions that meet specific business needs. The introduction of these models signifies AWS&#x27;s strategic focus on providing versatile and scalable AI tools. Organizations seeking to harness AI for competitive advantage should explore these new offerings to optimize their operations.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/02/aws-launches-new-nova-ai-models-and-a-service-that-gives-customers-more-control/"
         }
     ],
     "articles": {
@@ -244,6 +223,28 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-26829",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2025-48633",
+            "dateAdded": "Dec 02, 2025",
+            "vendor": "Android Framework",
+            "description": "Android Framework contains an unspecified vulnerability that allows for information disclosure.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-48633",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2025-48572",
+            "dateAdded": "Dec 02, 2025",
+            "vendor": "Android Framework",
+            "description": "Android Framework contains an unspecified vulnerability that allows for privilege escalation.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-48572",
             "isZeroDay": false
         }
     ],
