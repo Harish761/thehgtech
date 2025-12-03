@@ -1,6 +1,40 @@
 /* Light Mode Styles for Guides, Comparisons, and Articles */
 /* Ensures WCAG AA compliance with proper contrast ratios */
 
+/* ========== HEADER LIGHT MODE ========== */
+body.light-mode .header {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .mobile-menu {
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .mobile-menu a {
+    color: var(--text-secondary);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .mobile-menu a:hover {
+    color: var(--accent-cyan);
+}
+
+body.light-mode .mobile-theme-toggle {
+    color: var(--text-secondary);
+}
+
+body.light-mode .mobile-menu-btn span {
+    background-color: var(--text-primary);
+}
+
+/* ========== MAIN CONTENT ========== */
+
+
 body.light-mode {
     /* Background colors */
     --bg-primary: #ffffff;
@@ -258,4 +292,74 @@ body.light-mode *:focus:not(:focus-visible) {
 body.light-mode *:focus-visible {
     outline: 2px solid var(--accent-cyan);
     outline-offset: 2px;
+}
+
+/* ========== SPECIFIC OVERRIDES FOR PAGES WITH INLINE STYLES ========== */
+/* These use !important to override inline :root styles in articles.html and comparisons */
+
+body.light-mode .container,
+body.light-mode .content,
+body.light-mode .article-card,
+body.light-mode .article-grid,
+body.light-mode .categories,
+body.light-mode .comparisons-section,
+body.light-mode .page-header {
+    background-color: #ffffff !important;
+}
+
+/* Article cards */
+body.light-mode .article-card {
+    background: rgba(0, 0, 0, 0.03) !important;
+    border: 1px solid rgba(0, 0, 0, 0.12) !important;
+}
+
+body.light-mode .article-card:hover {
+    border-color: #0099cc !important;
+    box-shadow: 0 4px 12px rgba(0, 153, 204, 0.15) !important;
+}
+
+/* Article titles and text */
+body.light-mode .article-title {
+    color: #1a1a1a !important;
+}
+
+body.light-mode .article-excerpt,
+body.light-mode .article-meta {
+    color: #4a4a4a !important;
+}
+
+/* Breadcrumb */
+body.light-mode .breadcrumb {
+    color: #6a6a6a !important;
+}
+
+body.light-mode .breadcrumb a {
+    color: #0099cc !important;
+}
+
+/* Subtitle */
+body.light-mode .subtitle {
+    color: #4a4a4a !important;
+}
+
+/* Comparison description */
+body.light-mode .comparison-description {
+    color: #4a4a4a !important;
+}
+
+/* Comparison title */
+body.light-mode .comparison-title {
+    color: #1a1a1a !important;
+}
+
+/* Highlight boxes for articles */
+body.light-mode .highlight-box,
+body.light-mode .success-box {
+    background: rgba(0, 153, 204, 0.08) !important;
+    color: #1a1a1a !important;
+}
+
+/* Meta information */
+body.light-mode .meta span {
+    color: #6a6a6a !important;
 }
