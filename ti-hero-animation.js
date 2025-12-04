@@ -75,9 +75,9 @@ class ThreatIntelHero {
         if (!typingElement) return;
 
         const phrases = [
-            'Real-time IOCs from 6 vendors',
+            'Real-time IOCs from 9 vendors',
             'AI-powered threat analysis',
-            'Updated every 2 hours',
+            'Updated every 4 hours',
             '7-day trend visualization',
             'Live threat intelligence'
         ];
