@@ -27,8 +27,9 @@
     overflow: hidden;
     perspective: 1000px;
     background: linear-gradient(135deg, #0a0e27 0%, #1a1a2e 50%, #16213e 100%);
-    padding-top: 120px;
-    /* Prevent header overlap - increased */
+    padding-top: 150px;
+    /* Increased to prevent header overlap */
+    padding-bottom: 60px;
 }
 
 /* ============================================
@@ -428,6 +429,8 @@
     text-align: center;
     max-width: 900px;
     padding: 2rem;
+    margin-top: 40px;
+    /* Extra spacing from header */
     animation: fadeInUp 1s ease-out;
 }
 
