@@ -3,9 +3,9 @@
     "date": "2025-12-04",
     "categories": {
       "Phishing": 300,
-      "Malware": 30682,
+      "Malware": 30744,
       "C2": 8533,
-      "Botnet": 537
+      "Botnet": 539
     }
   },
   "previous_hour_campaigns": {

@@ -1,11 +1,11 @@
 // Auto-Generated Threat Intel (Multi-Vendor Dashboard)
-// Updated: 2025-12-04T22:10:51.182752+05:30 IST
+// Updated: 2025-12-04T22:12:02.866886+05:30 IST
 // Sources: OpenPhish, Malware Bazaar, Spamhaus DROP, CINS Army, Blocklist.de, URLhaus, ThreatFox, Feodo Tracker, SSL Blacklist
 // NOTE: Full IOC lists are stored in GitHub Pages (ioc-data/) and loaded on-demand
 
 window.threatIntelData = {
-    "lastUpdated": "2025-12-04T22:10:50.823779+05:30",
-    "lastUpdatedFormatted": "Dec 04, 2025 at 10:10 PM IST",
+    "lastUpdated": "2025-12-04T22:12:02.490918+05:30",
+    "lastUpdatedFormatted": "Dec 04, 2025 at 10:12 PM IST",
     "comparisonPeriod": "Dec 03 \u2013 Dec 04, 2025",
     "vendors": {
         "OpenPhish": {
@@ -209,15 +209,15 @@ window.threatIntelData = {
     "overview": [],
     "dailySummary": {
         "stats": {
-            "totalIndicators": 57487,
+            "totalIndicators": 57569,
             "activeSources": 8,
-            "criticalAlerts": 39215,
-            "activeCampaigns": 238
+            "criticalAlerts": 39277,
+            "activeCampaigns": 244
         },
         "topThreats": [
             {
                 "category": "Malware",
-                "count": 30682,
+                "count": 30744,
                 "trend": "stable",
                 "percentage": 0
             },
@@ -229,9 +229,9 @@ window.threatIntelData = {
             },
             {
                 "category": "Botnet",
-                "count": 537,
+                "count": 539,
                 "trend": "stable",
-                "percentage": -5
+                "percentage": 0
             },
             {
                 "category": "Phishing",
@@ -257,14 +257,14 @@ window.threatIntelData = {
         "campaigns": [
             {
                 "name": "malware_download",
-                "count": 29591,
+                "count": 29654,
                 "types": [
                     "url"
                 ],
                 "sampleIndicators": [
-                    "hxxp://95[.]163[.]83[.]87/mips",
-                    "hxxp://95[.]163[.]83[.]87/arm4",
-                    "hxxp://95[.]163[.]83[.]87/arm5"
+                    "hxxp://115[.]49[.]81[.]139:45505/bin[.]sh",
+                    "hxxp://221[.]14[.]207[.]87:53766/bin[.]sh",
+                    "hxxp://61[.]53[.]148[.]236:59446/bin[.]sh"
                 ]
             },
             {
@@ -281,7 +281,7 @@ window.threatIntelData = {
             },
             {
                 "name": "Spamhaus DROP List",
-                "count": 1458,
+                "count": 1470,
                 "types": [
                     "ip-range"
                 ],
@@ -328,18 +328,6 @@ window.threatIntelData = {
                 ]
             },
             {
-                "name": " \"Mirai",
-                "count": 553,
-                "types": [
-                    "hash"
-                ],
-                "sampleIndicators": [
-                    " \"1ba51b481413f35cda4b682af825344686c521fb4da6709a13b85ff2ac6b3637",
-                    " \"140a2cb988322c573e748f9f80ccb977768a2622e3ab82aca468ad5e2f8feb86",
-                    " \"7a61638f572191d6c51bd207a6be4feb0258a6b63653b72d0da9aafbcb695dc4"
-                ]
-            },
-            {
                 "name": "LummaStealer",
                 "count": 533,
                 "types": [
@@ -349,6 +337,18 @@ window.threatIntelData = {
                     "1d28cc6dca52e95f859739c39a04d794671f66d9",
                     "7b7c48a7d10c11ab988801fec68db41f6935ecf4",
                     "b57cc0f34294222d350c45d62c735547c8882195"
+                ]
+            },
+            {
+                "name": " \"Mirai",
+                "count": 513,
+                "types": [
+                    "hash"
+                ],
+                "sampleIndicators": [
+                    " \"657de15a852f5c0e19920bf2523f75d7608aabf41dd1a49f42cabacf2ab1d7b4",
+                    " \"00ff3c9b845f57259d8a8245d61f9cfe0ee7a1153f2bd582039f9471dd5d3bf9",
+                    " \"259acbf6cbc016bc1708b9112af4ac62c2e82a147c5181d39bafae8cec1b6459"
                 ]
             },
             {
@@ -380,8 +380,8 @@ window.threatIntelData = {
     "snapshotMetrics": {
         "topAttackVector": "Malicious URLs",
         "mostTargetedRegion": "North America",
-        "fastestRisingThreat": "malware_download",
+        "fastestRisingThreat": "No significant changes",
         "totalAttacksThisHour": 51362,
-        "lastCalculated": "2025-12-04 22:10 IST"
+        "lastCalculated": "2025-12-04 22:12 IST"
     }
 };
