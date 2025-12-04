@@ -4,6 +4,55 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Dec 04 2025",
+            "title": "Microsoft 365 Bug Blocks Desktop App Downloads",
+            "content": "Microsoft is actively investigating a bug that prevents users from downloading Microsoft 365 desktop applications directly from the Microsoft 365 homepage. This issue affects users attempting to access essential productivity tools, potentially disrupting business operations. While the exact cause remains under investigation, Microsoft has acknowledged the problem and is working on a resolution. This incident highlights the critical need for robust software deployment processes, especially for widely used applications like Microsoft 365. Users are advised to monitor Microsoft&#x27;s official channels for updates and potential workarounds.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-bug-in-microsoft-365-license-checks-blocks-desktop-app-downloads/"
+        },
+        {
+            "date": "Dec 04 2025",
+            "title": "Global Cyber Agencies Release AI Security Guidance for Critical Infrastructure",
+            "content": "A consortium of global cyber agencies has issued a comprehensive 25-page document outlining security principles for integrating artificial intelligence (AI) with operational technology (OT) in critical infrastructure. The guidance emphasizes four key principles: secure design, risk management, supply chain security, and continuous monitoring. This initiative aims to mitigate risks associated with AI deployment in sectors like energy and transportation, where security breaches could have severe consequences. The document provides actionable insights for organizations looking to enhance their OT security posture. Stakeholders are encouraged to review the guidelines and implement recommended practices to safeguard critical systems.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/global-cyber-agencies-issue-ai-security-guidance-for-critical-infrastructure-ot/"
+        },
+        {
+            "date": "Dec 04 2025",
+            "title": "Google Chrome Update Fixes 13 Security Flaws",
+            "content": "Google has released an update for Chrome that addresses 13 security vulnerabilities, including a high-severity flaw in Digital Credentials. This update affects billions of users worldwide, underscoring the importance of timely patch management. The vulnerabilities, which range in severity, could potentially allow attackers to execute arbitrary code or access sensitive information. Users are urged to update to the latest Chrome version immediately to protect against possible exploitation. This update is part of Google&#x27;s ongoing efforts to enhance browser security and protect user data from emerging threats.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2025/12/google-fixes-13-security-issues-affecting-billions"
+        },
+        {
+            "date": "Dec 04 2025",
+            "title": "Freedom Mobile Data Breach Exposes Customer Information",
+            "content": "Freedom Mobile has confirmed a data breach that resulted in unauthorized access to customer personal information via its account management platform. The breach compromised sensitive data, including names, addresses, and contact details, raising concerns about identity theft and fraud. Freedom Mobile is currently investigating the incident and has notified affected customers. This breach highlights the critical importance of securing customer data and implementing robust cybersecurity measures. Customers are advised to monitor their accounts for suspicious activity and consider changing passwords as a precautionary measure.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/personal-information-compromised-in-freedom-mobile-data-breach/"
+        },
+        {
+            "date": "Dec 04 2025",
+            "title": "Weekly Cybersecurity Roundup: Wi-Fi Hacks and More",
+            "content": "This week&#x27;s cybersecurity roundup reveals a series of alarming incidents, including Wi-Fi vulnerabilities, an npm worm, and a significant DeFi (Decentralized Finance) theft. These events demonstrate the ongoing battle between hackers and security professionals, with each side striving to outpace the other. The vulnerabilities in Wi-Fi networks could potentially expose millions of users to unauthorized access and data theft. Meanwhile, the npm worm underscores the risks associated with software supply chains. Security professionals are urged to stay informed about these developments and apply necessary patches and updates to mitigate risks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/12/threatsday-bulletin-wi-fi-hack-npm-worm.html"
+        },
+        {
+            "date": "Dec 04 2025",
+            "title": "Top 5 Web Security Threats of 2025",
+            "content": "As the year 2025 concludes, cybersecurity experts are reflecting on the most significant threats that reshaped web security. Key challenges include AI-powered attacks, advanced injection techniques, and widespread supply chain compromises impacting hundreds of thousands of websites. These threats have rendered traditional security strategies obsolete, prompting a reevaluation of defensive measures. Organizations must adapt by implementing advanced threat detection and response systems to protect against evolving cyber threats. This year serves as a stark reminder of the dynamic nature of cybersecurity and the need for continuous innovation in defense strategies.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/12/5-threats-that-reshaped-web-security.html"
+        },
+        {
+            "date": "Dec 04 2025",
+            "title": "Marquis Data Breach Affects Over 780,000 Individuals",
+            "content": "A significant data breach at Marquis has compromised the personal and financial information of more than 780,000 individuals. The stolen data includes names, addresses, Social Security numbers, and credit card details, posing a severe risk of identity theft and financial fraud. Marquis is currently investigating the breach and has begun notifying affected individuals. This incident underscores the critical need for organizations to implement stringent data protection measures and regularly assess their security posture. Affected individuals are advised to monitor their financial accounts for unusual activity and consider enrolling in credit monitoring services.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/marquis-data-breach-impacts-over-780000-people/"
+        },
+        {
             "date": "May 05 2026",
             "title": "GISEC GLOBAL 2026 Unveils Cybersecurity Innovations in Middle East and Africa",
             "content": "GISEC GLOBAL 2026, the largest cybersecurity event in the Middle East and Africa, has kicked off, showcasing the latest advancements in cybersecurity technology and strategy. The event serves as a platform for industry leaders to discuss emerging threats and innovative solutions. This year&#x27;s focus includes AI-driven security tools, advanced threat detection systems, and new compliance frameworks. Professionals from various sectors, including government and private enterprises, are attending to gain insights into protecting critical infrastructure. The event highlights the region&#x27;s growing importance in the global cybersecurity landscape, emphasizing collaboration and knowledge sharing. Attendees are encouraged to engage with workshops and panels to stay ahead of evolving cyber threats.",
@@ -30,78 +79,57 @@ const websiteContent = {
             "content": "Developers are urgently advised to update their applications using React 19 and Next.js due to a critical vulnerability that could allow remote code execution. Researchers at Wiz identified the flaw, which can be easily exploited by attackers to run arbitrary code on affected systems. This vulnerability poses a significant risk to applications relying on these popular JavaScript libraries, potentially impacting millions of users. Developers should immediately upgrade to the latest versions to mitigate this threat. The incident highlights the need for continuous vigilance and prompt patch management in software development to maintain security integrity.",
             "source": "CSO Online",
             "sourceUrl": "https://www.csoonline.com/article/4100653/developers-urged-to-immediately-upgrade-react-next-js-2.html"
-        },
-        {
-            "date": "Dec 03 2025",
-            "title": "Notorious Twins Charged in Insider Breach of Federal Agencies",
-            "content": "Muneeb and Sohaib Akhter, twins with a history of cybercrimes including hacking into the State Department, have been charged with an insider data breach affecting multiple federal agencies. The breach underscores vulnerabilities within government systems and the persistent threat of insider attacks. This case highlights the importance of robust insider threat programs and continuous monitoring of access to sensitive data. Federal agencies are urged to review their security protocols and enhance employee training to prevent similar incidents. The Akhter brothers&#x27; actions serve as a stark reminder of the need for vigilance against both external and internal threats.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/muneeb-sohaib-akhter-government-contractors-insider-attack/"
-        },
-        {
-            "date": "Dec 03 2025",
-            "title": "Remote Code Execution Flaw Discovered in OpenAI&#x27;s Codex CLI",
-            "content": "A serious remote code execution (RCE) vulnerability has been discovered in OpenAI&#x27;s Codex CLI, a widely used large language model-powered coding assistant. This flaw allows attackers to execute code remotely without detection, posing significant risks to development environments. Researchers emphasize the importance of securing AI tools as they expand the attack surface for cyber threats. Developers using Codex CLI should apply available patches and review security settings to mitigate potential exploitation. The discovery highlights the need for ongoing security assessments of AI-driven tools to protect against emerging vulnerabilities.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4100632/rce-flaw-in-openais-codex-cli-highlights-new-risks-to-dev-environments.html"
-        },
-        {
-            "date": "Dec 03 2025",
-            "title": "ShadyPanda Hackers Exploit Browser Extensions to Spy on Users",
-            "content": "The China-based cyber-threat group known as ShadyPanda has been deploying malicious extensions on Google Chrome and Microsoft Edge to spy on millions of users. These extensions covertly collect sensitive information, highlighting the risks associated with third-party browser add-ons. Users are advised to regularly audit installed extensions and remove any suspicious or unnecessary ones. The incident underscores the need for enhanced scrutiny of extensions in official marketplaces to prevent malicious activities. Security professionals should educate users on recognizing potential threats and maintaining secure browsing practices to protect personal and organizational data.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/endpoint-security/shadypanda-hackers-weaponize-browsers"
         }
     ],
     "aiShorts": [
         {
-            "date": "Dec 03 2025",
-            "title": "AWS re:Invent 2025 Unveils Major AI and Chip Advancements",
-            "content": "Amazon Web Services&#x27; annual re:Invent conference has kicked off with significant announcements in AI and chip technology. AWS introduced new AI services designed to enhance cloud computing capabilities, alongside advanced chip offerings that promise improved performance and efficiency. These developments are poised to impact industries leveraging AWS for scalable AI solutions. The conference highlights Amazon&#x27;s ongoing commitment to innovation in AI and cloud infrastructure, competing with major players like Microsoft and Google. Attendees are encouraged to explore these new tools to optimize their cloud strategies and stay ahead in the competitive tech landscape.",
+            "date": "Dec 04 2025",
+            "title": "Nexus Venture Partners Reserves $350M for Indian Startups Amidst AI Boom",
+            "content": "Nexus Venture Partners has announced a strategic allocation of $350 million from its new $700 million fund specifically for Indian startups, reflecting a balanced approach amid the global AI investment surge. Managing $3.2 billion in capital, Nexus has invested in over 130 companies, indicating a robust portfolio. The decision to allocate half of the new fund to Indian ventures underscores the country&#x27;s growing tech ecosystem and Nexus&#x27;s commitment to fostering innovation beyond AI. This move could significantly impact emerging Indian tech sectors, providing much-needed capital to scale operations and drive technological advancements. Investors and entrepreneurs should note this strategic focus on India, which may signal broader investment trends in the region.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/03/all-the-biggest-news-from-aws-big-tech-show-reinvent-2025/"
+            "sourceUrl": "https://techcrunch.com/2025/12/04/nexus-isnt-going-all-in-on-ai-keeping-its-new-700m-fund-balanced-with-india-bets/"
+        },
+        {
+            "date": "Dec 04 2025",
+            "title": "Micron Technology&#x27;s Shift Reflects AI Memory Demand Impacting Semiconductor Industry",
+            "content": "Micron Technology, founded in 1978 by four engineers in Boise, Idaho, is pivoting away from consumer markets due to the increasing demand for AI-driven memory solutions. As AI applications grow, the need for advanced memory technologies has reshaped semiconductor economics, prompting Micron to focus on high-performance memory for AI workloads. This strategic shift highlights the broader industry trend of reallocating resources towards AI-related developments. The impact is significant for consumer electronics, which may face reduced supply and innovation in memory components. Stakeholders should monitor how this transition affects market dynamics and consider the implications for future semiconductor investments.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/ai-memory-hunger-micron-consumer-exit/"
+        },
+        {
+            "date": "Dec 04 2025",
+            "title": "Claude Successfully Fine-Tunes Open Source Language Model",
+            "content": "Researchers at Hugging Face have achieved a milestone by using Claude to fine-tune an open-source large language model (LLM), showcasing the potential of collaborative AI development. This advancement leverages Claude&#x27;s capabilities to enhance the performance and adaptability of open-source models, offering improved outcomes for various applications. The fine-tuning process demonstrates the synergy between proprietary AI tools and open-source initiatives, broadening the scope for innovation. Developers and AI practitioners should explore these methodologies to optimize model performance and facilitate more robust AI solutions. This achievement underscores the importance of collaborative efforts in advancing AI technologies.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/hf-skills-training"
         },
         {
             "date": "Dec 03 2025",
-            "title": "Meta Hires Apple Design Veteran Alan Dye to Lead UI Innovation",
-            "content": "Meta has successfully recruited Alan Dye, a key figure behind Apple&#x27;s user interface design, to spearhead its own UI efforts. Dye&#x27;s decade-long experience at Apple, where he led the design of iconic products, is expected to infuse Meta’s platforms with fresh design perspectives. This move underscores Meta&#x27;s strategic focus on enhancing user experience across its ecosystem, including virtual reality and social media platforms. Industry observers anticipate this could accelerate Meta&#x27;s innovation in creating more intuitive and engaging user interfaces. Companies should monitor Meta&#x27;s design evolution for potential shifts in UI trends.",
+            "title": "Meta Recruits Apple Design Veteran Alan Dye for Creative Leadership in Reality Labs",
+            "content": "Meta has announced the hiring of Alan Dye, a former Apple executive who led the user interface team for a decade, to head its new creative studio within Reality Labs. This strategic move aims to enhance Meta&#x27;s design capabilities in the expanding field of virtual and augmented reality. Dye&#x27;s experience at Apple, known for its design excellence, is expected to drive innovation and elevate Meta&#x27;s product offerings. This recruitment reflects Meta&#x27;s commitment to strengthening its position in the competitive VR/AR market. Industry professionals should watch for potential design innovations emerging from Meta&#x27;s Reality Labs under Dye&#x27;s leadership.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/03/meta-poaches-apple-design-exec-alan-dye/"
+            "sourceUrl": "https://techcrunch.com/2025/12/03/meta-poaches-apple-design-exec-alan-dye-to-lead-new-creative-studio-in-reality-labs/"
         },
         {
             "date": "Dec 03 2025",
-            "title": "Amazon&#x27;s AI Chip Business Reaches Multibillion-Dollar Milestone",
-            "content": "Amazon CEO Andy Jassy announced that the company&#x27;s AI chip business, aimed at challenging Nvidia&#x27;s dominance, has become a multibillion-dollar operation. This rapid growth highlights Amazon&#x27;s strategic investments in developing custom silicon to power AI workloads on its cloud platform. The chips are designed to deliver enhanced performance for machine learning tasks, offering an alternative to Nvidia&#x27;s GPUs. As demand for AI processing power surges, Amazon&#x27;s success in this domain could reshape the competitive landscape, providing customers with diverse hardware options. Enterprises should evaluate these new chips for potential cost and performance benefits.",
+            "title": "Anthropic Engages Legal Counsel as It Prepares for Landmark IPO",
+            "content": "Anthropic, an AI research company, has engaged the law firm Wilson Sonsini to assist with its initial public offering (IPO) preparations. This step is part of an internal checklist aimed at readying the company for what could be one of the largest IPOs in the tech sector. The move signals Anthropic&#x27;s readiness to scale its operations and expand its market presence. The IPO is anticipated to attract significant investor interest, given the company&#x27;s focus on AI safety and innovation. Stakeholders should prepare for potential market shifts and investment opportunities as Anthropic moves closer to going public.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/03/andy-jassy-says-amazons-nvidia-competitor-chip-is-already-a-multi-billion-dollar-business/"
+            "sourceUrl": "https://techcrunch.com/2025/12/03/anthropic-hires-lawyers-as-it-preps-for-ipo/"
         },
         {
             "date": "Dec 03 2025",
-            "title": "Google Gemini 3 Pro Achieves 69% Trust in Real-World Testing",
-            "content": "Google&#x27;s Gemini 3 Pro model has achieved a 69% trust score in a vendor-neutral evaluation by Prolific, a significant increase from the 16% trust score of its predecessor, Gemini 2.5. This improvement emphasizes the importance of assessing AI models based on real-world trust rather than solely on vendor-provided benchmarks. The findings suggest that Gemini 3 Pro offers more reliable performance in practical applications, which could influence its adoption across industries. Organizations should consider these results when selecting AI models, prioritizing those with proven trust metrics to ensure dependable outcomes.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/gemini-3-pro-scores-69-trust-in-blinded-testing-up-from-16-for-gemini-2-5"
-        },
-        {
-            "date": "Dec 03 2025",
-            "title": "WordPress&#x27;s Telex Experiment Proves Practical in Real-World Applications",
-            "content": "WordPress&#x27;s experimental vibe-coding software, Telex, is already being utilized to construct actual websites, despite its ongoing development status. Telex allows developers to create user interfaces through intuitive, emotion-driven coding, potentially transforming web design processes. This early adoption indicates the tool&#x27;s potential to simplify and innovate website creation, appealing to both seasoned developers and newcomers. As Telex continues to evolve, web professionals should explore its capabilities to enhance their design workflows and stay competitive in the rapidly changing digital landscape.",
+            "title": "AWS Enhances Custom LLM Development with New Features in Bedrock and SageMaker",
+            "content": "Amazon Web Services (AWS) has announced new capabilities in its Amazon Bedrock and Amazon SageMaker platforms, aimed at simplifying the creation of custom large language models (LLMs). These enhancements are designed to streamline model development processes, making it easier for businesses to tailor AI solutions to their specific needs. The updates include improved tools for model training and deployment, reflecting AWS&#x27;s commitment to supporting enterprise AI applications. This development is crucial for organizations seeking to leverage AI for competitive advantage. Technical teams should explore these new features to optimize their AI strategies and model performance.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/03/wordpresss-vibe-coding-experiment-telex-has-already-been-put-to-real-world-use/"
+            "sourceUrl": "https://techcrunch.com/2025/12/03/aws-doubles-down-on-custom-llms-with-features-meant-to-simplify-model-creation/"
         },
         {
             "date": "Dec 03 2025",
-            "title": "Venture Capitalists Intensify &#x27;Kingmaking&#x27; Strategy in AI Investments",
-            "content": "Venture capitalists are increasingly deploying a &#x27;kingmaking&#x27; strategy, investing heavily in nascent AI companies to establish early market leaders. This approach involves significant funding and resources to propel startups to the forefront of the AI sector. By focusing on potential category winners, VCs aim to shape the industry&#x27;s future landscape and secure substantial returns. This trend highlights the competitive nature of AI investment, where early backing can determine a company&#x27;s trajectory. Tech entrepreneurs should be aware of this strategy, as securing VC support could be pivotal for growth and market positioning.",
+            "title": "Effort to Block State AI Regulations Removed from Defense Bill",
+            "content": "A Republican-led initiative to prohibit state-level AI regulations was recently removed from a defense bill following bipartisan opposition. This decision highlights ongoing tensions between the tech industry&#x27;s desire for uniform federal regulations and concerns over consumer protection. The removal reflects a pushback against attempts to preempt state authority, aligning with former President Trump&#x27;s advocacy for federal oversight. The outcome suggests that state governments will continue to play a role in regulating AI technologies. Industry professionals should remain informed about regulatory developments, as these could impact compliance requirements and operational strategies in the AI sector.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/03/vcs-deploy-kingmaking-strategy-to-crown-ai-winners-in-their-infancy/"
-        },
-        {
-            "date": "Dec 03 2025",
-            "title": "OpenAI Develops LLMs Capable of Confessing to Missteps",
-            "content": "OpenAI has introduced a novel training method for its large language models (LLMs), enabling them to generate &#x27;confessions&#x27; that explain their decision-making processes and acknowledge errors. This transparency initiative aims to enhance trust and accountability in AI systems by making their operations more understandable to users. By revealing how tasks are executed and admitting to any misbehavior, these models could improve user confidence and facilitate better oversight. Organizations utilizing LLMs should consider integrating such transparent AI solutions to bolster trust and ensure ethical AI deployment.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2025/12/03/1128740/openai-has-trained-its-llm-to-confess-to-bad-behavior/"
+            "sourceUrl": "https://techcrunch.com/2025/12/03/another-bid-to-block-state-ai-regulation-has-failedfor-now/"
         }
     ],
     "articles": {
