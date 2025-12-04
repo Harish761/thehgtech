@@ -4,125 +4,104 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Dec 03 2025",
-            "title": "Arizona Sues Temu Over Alleged Customer Data Theft",
-            "content": "The Arizona Attorney General has filed a lawsuit against Chinese online retailer Temu and its parent company PDD Holdings, accusing them of illegally collecting and exploiting customer data. The lawsuit claims that Temu engaged in deceptive practices to access sensitive information without user consent. This legal action follows similar lawsuits by other states, reflecting growing concerns over data privacy and security in the digital marketplace. The implications for Temu could be significant, potentially impacting its operations and customer trust in the U.S. market. Businesses are advised to review their data handling practices to ensure compliance with privacy regulations and to avoid similar legal challenges.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/arizona-attorney-general-sues-chinese-online-retailer-temu-over-data-theft-claims/"
-        },
-        {
-            "date": "Dec 03 2025",
-            "title": "ServiceNow Set to Acquire Veza in $1 Billion Identity Security Deal",
-            "content": "ServiceNow has announced plans to acquire identity security firm Veza in a deal reportedly valued at $1 billion. Veza, which specializes in identity governance and access management, was recently appraised at over $800 million following a successful Series D funding round. This acquisition is expected to enhance ServiceNow&#x27;s capabilities in securing user identities and managing access across complex IT environments. The deal underscores the increasing importance of identity security as organizations face growing threats from cybercriminals exploiting identity vulnerabilities. Industry professionals should watch for potential integrations and enhancements in ServiceNow&#x27;s security offerings post-acquisition.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/servicenow-to-acquire-identity-security-firm-veza-in-reported-1-billion-deal/"
-        },
-        {
-            "date": "Dec 03 2025",
-            "title": "AI Tools Empowering a New Wave of Cybercrime",
-            "content": "A recent webinar highlights the alarming rise of AI-powered tools enabling sophisticated cybercrime campaigns. Unlike traditional phishing attempts marked by obvious errors, modern attacks leverage AI to create highly convincing fake communications. This evolution means that even individuals with minimal technical skills can launch attacks that mimic those of state-sponsored hackers. The threat landscape is rapidly changing, with AI tools lowering the barrier to entry for cybercriminals. Security professionals are urged to enhance their defenses against AI-driven threats by adopting advanced detection technologies and training staff to recognize these more subtle attacks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/12/discover-ai-tools-fueling-next.html"
-        },
-        {
-            "date": "Dec 03 2025",
-            "title": "Data Breach at Penn and Phoenix Universities Linked to Oracle Hack",
-            "content": "The University of Pennsylvania and the University of Phoenix have disclosed data breaches following a hacking campaign targeting Oracle&#x27;s E-Business Suite (EBS). The universities confirmed that sensitive data was compromised as a result of vulnerabilities exploited in the widely used enterprise software. This breach highlights the risks associated with relying on third-party software and the importance of timely patch management. Affected institutions are advised to conduct thorough security assessments and implement stronger data protection measures. This incident serves as a reminder of the critical need for vigilance in securing academic and administrative systems.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/penn-and-phoenix-universities-disclose-data-breach-after-oracle-hack/"
-        },
-        {
-            "date": "Dec 03 2025",
-            "title": "AWS and Security Vendors Introduce New Innovations at re:Invent 2025",
-            "content": "At the re:Invent 2025 conference, Amazon Web Services (AWS) and various cybersecurity vendors announced a range of new products and enhancements aimed at bolstering cloud security. These innovations include advanced threat detection capabilities, improved identity and access management tools, and enhanced data protection solutions. The announcements reflect a broader industry trend towards integrating security features directly into cloud platforms to address emerging threats. Organizations leveraging AWS are encouraged to explore these new offerings to enhance their security posture and protect against increasingly sophisticated cyber attacks. Staying updated with the latest security tools is crucial in the evolving threat landscape.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/reinvent-2025-aws-and-security-vendors-unveil-new-products-and-capabilities/"
-        },
-        {
-            "date": "Dec 03 2025",
-            "title": "Microsoft Quietly Addresses Exploited LNK Vulnerability",
-            "content": "Microsoft has issued a silent update to mitigate a vulnerability in Windows LNK files that was actively exploited by attackers. The update now displays critical information in the properties tab of LNK files, helping users identify potentially malicious code. This vulnerability allowed attackers to execute arbitrary code via specially crafted shortcut files, posing a significant risk to users. Security experts recommend that Windows users ensure their systems are updated to the latest version to protect against this and other vulnerabilities. This update highlights the ongoing need for vigilance and prompt patching in maintaining secure systems.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/microsoft-silently-mitigated-exploited-lnk-vulnerability/"
-        },
-        {
-            "date": "Dec 03 2025",
-            "title": "AI and Automation: Key to Cybersecurity in 2026",
-            "content": "As 2025 concludes, the cybersecurity landscape is increasingly dominated by the use of artificial intelligence (AI), automation, and integration to combat sophisticated threats. Cybercriminals are leveraging AI to execute rapid and precise attacks, outpacing traditional security measures. This shift has led to a surge in autonomous ransomware and phishing attacks, exploiting gaps between security and backup systems. Organizations are urged to adopt AI-driven security solutions and integrate their cybersecurity and IT operations to enhance resilience. The coming year will likely see further advancements in AI-based defenses as the industry seeks to stay ahead of evolving cyber threats.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4099360/ai-automation-and-integration-the-foundation-for-cyber-protection-in-2026.html"
-        },
-        {
-            "date": "Dec 03 2025",
-            "title": "China Explores Drone Swarms to Disrupt Satellite Internet",
-            "content": "Chinese researchers have developed a strategy using swarms of 2,000 drones to disrupt satellite internet communications over areas as large as Taiwan. This approach targets resilient satellite constellations like Starlink, aiming to sever regional connectivity. The study highlights the potential for drones to interfere with satellite signals, posing significant risks to regions reliant on such networks for critical infrastructure. As satellite internet becomes increasingly vital for global communication, this development underscores the need for enhanced security measures. Organizations utilizing satellite internet should assess their vulnerability to such disruptions and consider implementing countermeasures.",
+            "date": "May 05 2026",
+            "title": "GISEC GLOBAL 2026 Unveils Cybersecurity Innovations in Middle East and Africa",
+            "content": "GISEC GLOBAL 2026, the largest cybersecurity event in the Middle East and Africa, has kicked off, showcasing the latest advancements in cybersecurity technology and strategy. The event serves as a platform for industry leaders to discuss emerging threats and innovative solutions. This year&#x27;s focus includes AI-driven security tools, advanced threat detection systems, and new compliance frameworks. Professionals from various sectors, including government and private enterprises, are attending to gain insights into protecting critical infrastructure. The event highlights the region&#x27;s growing importance in the global cybersecurity landscape, emphasizing collaboration and knowledge sharing. Attendees are encouraged to engage with workshops and panels to stay ahead of evolving cyber threats.",
             "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/china-researches-ways-disrupt-satellite-internet"
+            "sourceUrl": "https://www.darkreading.com/events/gisec-global"
+        },
+        {
+            "date": "Dec 04 2025",
+            "title": "Investigating Nation-State Attacks and Government Compromises",
+            "content": "In a guest diary entry, Jackie Nguyen from the SANS.edu BACS program explores the complexities of distinguishing between nation-state cyberattacks and compromised government entities. The discussion highlights recent incidents where attribution remains challenging due to sophisticated obfuscation techniques. Governments and organizations are urged to enhance their threat intelligence capabilities to better identify and respond to such threats. The analysis underscores the importance of collaboration between international cybersecurity agencies to address these challenges. Security professionals are advised to stay informed about the latest attack vectors and invest in advanced detection technologies to mitigate risks.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32536"
+        },
+        {
+            "date": "Dec 04 2025",
+            "title": "Teenage Hacker Exposes Identity While Mocking Scammer",
+            "content": "A teenage hacker inadvertently revealed his identity by posting a screenshot intended to mock a sextortion scammer, highlighting the risks of social engineering-as-a-service. The incident underscores the growing trend of cybercriminals leveraging stolen data as a key resource for malicious activities. As we approach 2026, experts warn that the use of personal data in cybercrime will likely intensify, posing increased risks to individuals and organizations. Security professionals should prioritize data protection measures and educate users on recognizing social engineering tactics. The case serves as a reminder of the potential pitfalls of online anonymity and the importance of operational security.",
+            "source": "Graham Cluley",
+            "sourceUrl": "https://grahamcluley.com/smashing-security-podcast-446/"
+        },
+        {
+            "date": "Dec 04 2025",
+            "title": "Critical Vulnerability Prompts Urgent React and Next.js Updates",
+            "content": "Developers are urgently advised to update their applications using React 19 and Next.js due to a critical vulnerability that could allow remote code execution. Researchers at Wiz identified the flaw, which can be easily exploited by attackers to run arbitrary code on affected systems. This vulnerability poses a significant risk to applications relying on these popular JavaScript libraries, potentially impacting millions of users. Developers should immediately upgrade to the latest versions to mitigate this threat. The incident highlights the need for continuous vigilance and prompt patch management in software development to maintain security integrity.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4100653/developers-urged-to-immediately-upgrade-react-next-js-2.html"
+        },
+        {
+            "date": "Dec 03 2025",
+            "title": "Notorious Twins Charged in Insider Breach of Federal Agencies",
+            "content": "Muneeb and Sohaib Akhter, twins with a history of cybercrimes including hacking into the State Department, have been charged with an insider data breach affecting multiple federal agencies. The breach underscores vulnerabilities within government systems and the persistent threat of insider attacks. This case highlights the importance of robust insider threat programs and continuous monitoring of access to sensitive data. Federal agencies are urged to review their security protocols and enhance employee training to prevent similar incidents. The Akhter brothers&#x27; actions serve as a stark reminder of the need for vigilance against both external and internal threats.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/muneeb-sohaib-akhter-government-contractors-insider-attack/"
+        },
+        {
+            "date": "Dec 03 2025",
+            "title": "Remote Code Execution Flaw Discovered in OpenAI&#x27;s Codex CLI",
+            "content": "A serious remote code execution (RCE) vulnerability has been discovered in OpenAI&#x27;s Codex CLI, a widely used large language model-powered coding assistant. This flaw allows attackers to execute code remotely without detection, posing significant risks to development environments. Researchers emphasize the importance of securing AI tools as they expand the attack surface for cyber threats. Developers using Codex CLI should apply available patches and review security settings to mitigate potential exploitation. The discovery highlights the need for ongoing security assessments of AI-driven tools to protect against emerging vulnerabilities.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4100632/rce-flaw-in-openais-codex-cli-highlights-new-risks-to-dev-environments.html"
+        },
+        {
+            "date": "Dec 03 2025",
+            "title": "ShadyPanda Hackers Exploit Browser Extensions to Spy on Users",
+            "content": "The China-based cyber-threat group known as ShadyPanda has been deploying malicious extensions on Google Chrome and Microsoft Edge to spy on millions of users. These extensions covertly collect sensitive information, highlighting the risks associated with third-party browser add-ons. Users are advised to regularly audit installed extensions and remove any suspicious or unnecessary ones. The incident underscores the need for enhanced scrutiny of extensions in official marketplaces to prevent malicious activities. Security professionals should educate users on recognizing potential threats and maintaining secure browsing practices to protect personal and organizational data.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/endpoint-security/shadypanda-hackers-weaponize-browsers"
         }
     ],
     "aiShorts": [
         {
             "date": "Dec 03 2025",
-            "title": "EY and NVIDIA Partner to Advance Physical AI Deployments",
-            "content": "EY is collaborating with NVIDIA to enhance how companies deploy physical AI systems such as robots and drones. This partnership introduces a physical AI platform utilizing NVIDIA’s advanced tools, alongside the launch of a new EY.ai Lab in Georgia. The initiative is aimed at providing a structured framework for enterprises to integrate smart devices into their operations. By doing so, EY hopes to streamline the deployment of AI in the physical world, addressing common barriers like scalability and integration. Companies interested in leveraging physical AI technologies should consider engaging with the new EY.ai Lab for guidance and support.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/ey-and-nvidia-to-help-companies-test-and-deploy-physical-ai/"
-        },
-        {
-            "date": "Dec 03 2025",
-            "title": "Anthropic Unveils AI-Driven Cyberattack Mechanisms",
-            "content": "Anthropic has disclosed findings on AI-orchestrated cyberattacks, marking a significant development in cybersecurity threats. The investigation revealed a Chinese state-sponsored operation utilizing AI to autonomously execute cyberattacks, a first in documented cases. This advancement raises concerns about the potential for AI to function as an autonomous attacker, moving beyond its traditional advisory role. Enterprises must now consider the implications of AI-driven threats, which could increase the frequency and sophistication of cyberattacks. Organizations are advised to enhance their cybersecurity strategies to counteract these emerging AI capabilities and protect sensitive data.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/ai-orchestrated-cyberattacks-anthropic-discovery/"
-        },
-        {
-            "date": "Dec 03 2025",
-            "title": "China&#x27;s Chip Stacking Strategy Aims to Rival Nvidia’s AI Leadership",
-            "content": "China is exploring chip stacking as a strategic response to U.S. semiconductor restrictions, challenging Nvidia’s dominance in AI hardware. This innovative approach involves layering chips to increase processing power and efficiency, potentially narrowing the performance gap with Nvidia’s GPUs. As the U.S. tightens export controls on chipmaking technology, Chinese researchers are intensifying efforts to develop competitive alternatives. The success of this strategy could significantly alter the global semiconductor market, impacting companies reliant on Nvidia&#x27;s technology. Stakeholders in AI and semiconductor industries should monitor these developments closely for potential shifts in market dynamics.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/china-chip-stacking-strategy-nvidia/"
-        },
-        {
-            "date": "Dec 02 2025",
-            "title": "Enhancing AI Application Safety with Custom Policy Enforcement",
-            "content": "Hugging Face has introduced a new approach to AI application development through custom policy enforcement with reasoning capabilities. This method aims to create AI systems that are not only faster but also safer by embedding reasoning into policy enforcement processes. By doing so, developers can ensure AI applications adhere to predefined safety protocols and operational guidelines. This advancement is particularly relevant for industries where safety and compliance are critical. Developers should consider integrating these capabilities into their AI projects to enhance reliability and trustworthiness.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/nvidia/custom-policy-reasoning-nemotron-content-safety"
-        },
-        {
-            "date": "Dec 02 2025",
-            "title": "Amazon Unveils AI Systems Capable of Autonomous Coding",
-            "content": "Amazon Web Services has announced a new line of AI systems, termed &quot;frontier agents,&quot; capable of autonomously coding for extended periods. These systems can operate independently for hours or even days, representing a significant leap towards automating the software development lifecycle. This development could impact software engineers by shifting their roles towards oversight and strategic planning rather than routine coding tasks. While this promises increased efficiency, it also raises questions about job displacement and the future of software engineering careers. Engineers should prepare to adapt to these changes by focusing on skills that complement AI capabilities.",
-            "source": "AI | VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/amazons-new-ai-can-code-for-days-without-human-help-what-does-that-mean-for"
-        },
-        {
-            "date": "Dec 02 2025",
-            "title": "OpenAI Clarifies Misunderstood App Suggestion Feature",
-            "content": "OpenAI has faced criticism over a feature that suggested apps during user interactions, which many perceived as advertisements. The organization clarified that the feature was intended as an app discovery tool, not a marketing ploy. This misunderstanding highlights the challenges of integrating new functionalities into AI systems without compromising user trust. OpenAI&#x27;s experience serves as a cautionary tale for developers seeking to enhance user engagement without crossing into perceived commercial exploitation. Developers should ensure transparency and clear communication when introducing similar features to avoid user backlash.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/02/openai-slammed-for-app-suggestions-that-looked-like-ads/"
-        },
-        {
-            "date": "Dec 02 2025",
-            "title": "New AI Research Lab Tackles Enterprise Deployment Challenges",
-            "content": "Thomson Reuters and Imperial College London have launched a frontier AI research lab to address enterprise deployment challenges. This initiative focuses on overcoming issues related to trust, accuracy, and data lineage, which are critical for successful AI integration in business environments. The lab seeks to develop solutions that facilitate the reliable and scalable deployment of AI technologies. By addressing these core challenges, the lab aims to accelerate the adoption of AI in enterprise settings, ensuring that AI solutions meet the stringent demands of corporate users. Enterprises should consider collaborating with research institutions to enhance their AI deployment strategies.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/frontier-ai-research-lab-tackles-enterprise-deployment-challenges/"
-        },
-        {
-            "date": "Dec 03 2025",
-            "title": "AWS re:Invent 2025 Unveils Major AI and Chip Innovations",
-            "content": "Amazon Web Services&#x27; annual re:Invent conference is showcasing significant technological advancements, including new AI services and chip innovations. AWS is introducing updates to its AI product suite and unveiling new custom chips aimed at enhancing performance and efficiency. These developments are expected to impact a broad range of industries by offering more powerful and cost-effective cloud computing solutions. The conference highlights AWS&#x27;s commitment to maintaining its leadership in the cloud market amid increasing competition. Attendees are advised to explore the new offerings to leverage AWS&#x27;s latest capabilities for their business needs.",
+            "title": "AWS re:Invent 2025 Unveils Major AI and Chip Advancements",
+            "content": "Amazon Web Services&#x27; annual re:Invent conference has kicked off with significant announcements in AI and chip technology. AWS introduced new AI services designed to enhance cloud computing capabilities, alongside advanced chip offerings that promise improved performance and efficiency. These developments are poised to impact industries leveraging AWS for scalable AI solutions. The conference highlights Amazon&#x27;s ongoing commitment to innovation in AI and cloud infrastructure, competing with major players like Microsoft and Google. Attendees are encouraged to explore these new tools to optimize their cloud strategies and stay ahead in the competitive tech landscape.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/02/all-the-biggest-news-from-aws-big-tech-show-reinvent-2025/"
+            "sourceUrl": "https://techcrunch.com/2025/12/03/all-the-biggest-news-from-aws-big-tech-show-reinvent-2025/"
         },
         {
             "date": "Dec 03 2025",
-            "title": "Amazon and Nvidia Collaborate on On-Premises AI Factories",
-            "content": "Amazon Web Services has teamed up with Nvidia to launch on-premises AI Factories, combining AWS&#x27;s cloud infrastructure with Nvidia&#x27;s advanced chip technology. These AI Factories are designed to provide scalable, high-performance computing environments for AI development. The collaboration aims to challenge existing competitors by offering a robust solution for enterprises requiring powerful on-site AI capabilities. This move reflects an industry trend towards hybrid cloud solutions that balance cloud flexibility with on-premises control. Organizations interested in deploying AI at scale should consider this new offering to enhance their computational resources.",
+            "title": "Meta Hires Apple Design Veteran Alan Dye to Lead UI Innovation",
+            "content": "Meta has successfully recruited Alan Dye, a key figure behind Apple&#x27;s user interface design, to spearhead its own UI efforts. Dye&#x27;s decade-long experience at Apple, where he led the design of iconic products, is expected to infuse Meta’s platforms with fresh design perspectives. This move underscores Meta&#x27;s strategic focus on enhancing user experience across its ecosystem, including virtual reality and social media platforms. Industry observers anticipate this could accelerate Meta&#x27;s innovation in creating more intuitive and engaging user interfaces. Companies should monitor Meta&#x27;s design evolution for potential shifts in UI trends.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/02/amazon-challenges-competitors-with-on-premises-nvidia-ai-factories/"
+            "sourceUrl": "https://techcrunch.com/2025/12/03/meta-poaches-apple-design-exec-alan-dye/"
+        },
+        {
+            "date": "Dec 03 2025",
+            "title": "Amazon&#x27;s AI Chip Business Reaches Multibillion-Dollar Milestone",
+            "content": "Amazon CEO Andy Jassy announced that the company&#x27;s AI chip business, aimed at challenging Nvidia&#x27;s dominance, has become a multibillion-dollar operation. This rapid growth highlights Amazon&#x27;s strategic investments in developing custom silicon to power AI workloads on its cloud platform. The chips are designed to deliver enhanced performance for machine learning tasks, offering an alternative to Nvidia&#x27;s GPUs. As demand for AI processing power surges, Amazon&#x27;s success in this domain could reshape the competitive landscape, providing customers with diverse hardware options. Enterprises should evaluate these new chips for potential cost and performance benefits.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/03/andy-jassy-says-amazons-nvidia-competitor-chip-is-already-a-multi-billion-dollar-business/"
+        },
+        {
+            "date": "Dec 03 2025",
+            "title": "Google Gemini 3 Pro Achieves 69% Trust in Real-World Testing",
+            "content": "Google&#x27;s Gemini 3 Pro model has achieved a 69% trust score in a vendor-neutral evaluation by Prolific, a significant increase from the 16% trust score of its predecessor, Gemini 2.5. This improvement emphasizes the importance of assessing AI models based on real-world trust rather than solely on vendor-provided benchmarks. The findings suggest that Gemini 3 Pro offers more reliable performance in practical applications, which could influence its adoption across industries. Organizations should consider these results when selecting AI models, prioritizing those with proven trust metrics to ensure dependable outcomes.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/ai/gemini-3-pro-scores-69-trust-in-blinded-testing-up-from-16-for-gemini-2-5"
+        },
+        {
+            "date": "Dec 03 2025",
+            "title": "WordPress&#x27;s Telex Experiment Proves Practical in Real-World Applications",
+            "content": "WordPress&#x27;s experimental vibe-coding software, Telex, is already being utilized to construct actual websites, despite its ongoing development status. Telex allows developers to create user interfaces through intuitive, emotion-driven coding, potentially transforming web design processes. This early adoption indicates the tool&#x27;s potential to simplify and innovate website creation, appealing to both seasoned developers and newcomers. As Telex continues to evolve, web professionals should explore its capabilities to enhance their design workflows and stay competitive in the rapidly changing digital landscape.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/03/wordpresss-vibe-coding-experiment-telex-has-already-been-put-to-real-world-use/"
+        },
+        {
+            "date": "Dec 03 2025",
+            "title": "Venture Capitalists Intensify &#x27;Kingmaking&#x27; Strategy in AI Investments",
+            "content": "Venture capitalists are increasingly deploying a &#x27;kingmaking&#x27; strategy, investing heavily in nascent AI companies to establish early market leaders. This approach involves significant funding and resources to propel startups to the forefront of the AI sector. By focusing on potential category winners, VCs aim to shape the industry&#x27;s future landscape and secure substantial returns. This trend highlights the competitive nature of AI investment, where early backing can determine a company&#x27;s trajectory. Tech entrepreneurs should be aware of this strategy, as securing VC support could be pivotal for growth and market positioning.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/03/vcs-deploy-kingmaking-strategy-to-crown-ai-winners-in-their-infancy/"
+        },
+        {
+            "date": "Dec 03 2025",
+            "title": "OpenAI Develops LLMs Capable of Confessing to Missteps",
+            "content": "OpenAI has introduced a novel training method for its large language models (LLMs), enabling them to generate &#x27;confessions&#x27; that explain their decision-making processes and acknowledge errors. This transparency initiative aims to enhance trust and accountability in AI systems by making their operations more understandable to users. By revealing how tasks are executed and admitting to any misbehavior, these models could improve user confidence and facilitate better oversight. Organizations utilizing LLMs should consider integrating such transparent AI solutions to bolster trust and ensure ethical AI deployment.",
+            "source": "MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2025/12/03/1128740/openai-has-trained-its-llm-to-confess-to-bad-behavior/"
         }
     ],
     "articles": {
@@ -244,6 +223,17 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-26829",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2021-26828",
+            "dateAdded": "Dec 03, 2025",
+            "vendor": "OpenPLC ScadaBR",
+            "description": "OpenPLC ScadaBR contains an unrestricted upload of file with dangerous type vulnerability that allows remote authenticated users to upload and execute arbitrary JSP files via view_edit.shtm.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-26828",
             "isZeroDay": false
         },
         {
