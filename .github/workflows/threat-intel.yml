@@ -34,11 +34,11 @@ jobs:
           rm -f ioc-data/threat-intel-history.json || true
           ls -lh ioc-data/
 
-      - name: Enrich CVE Data with Patches
+      - name: Enrich CVE Data (Dual Source - CISA KEV + NVD Critical)
         env:
           NVD_API_KEY: ${{ secrets.NVD_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: python enrich_cve_patches.py
+        run: python enrich_cve_dual_source.py
 
       - name: Commit & Push All Changes
         run: |
