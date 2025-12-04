@@ -123,6 +123,26 @@ class ThreatIntelHero {
         const counters = document.querySelectorAll('.stat-number');
         if (!counters.length) return;
 
+        // Try to get real IOC count from dashboard
+        const updateRealCount = async () => {
+            try {
+                if (window.ThreatDashboard) {
+                    const dashboard = new window.ThreatDashboard();
+                    const stats = await dashboard.loadAllData();
+
+                    // Update the first counter (Active IOCs) with real data
+                    const iocCounter = counters[0];
+                    if (iocCounter && stats.totalIOCs) {
+                        iocCounter.setAttribute('data-target', stats.totalIOCs);
+                    }
+                }
+            } catch (e) {
+                console.log('Using default IOC count');
+            }
+        };
+
+        updateRealCount();
+
         const animateCounter = (element, target) => {
             const duration = 2000; // 2 seconds
             const start = 0;
@@ -151,7 +171,10 @@ class ThreatIntelHero {
             });
         }, { threshold: 0.5 });
 
-        counters.forEach(counter => observer.observe(counter));
+        // Wait a bit for real count to load, then start animation
+        setTimeout(() => {
+            counters.forEach(counter => observer.observe(counter));
+        }, 500);
     }
 
     // ============================================
