@@ -27,8 +27,8 @@
     overflow: hidden;
     perspective: 1000px;
     background: linear-gradient(135deg, #0a0e27 0%, #1a1a2e 50%, #16213e 100%);
-    padding-top: 80px;
-    /* Prevent header overlap */
+    padding-top: 120px;
+    /* Prevent header overlap - increased */
 }
 
 /* ============================================
@@ -803,6 +803,7 @@
         transition-duration: 0.01ms !important;
     }
 }
+
 /* ============================================
    LIGHT MODE SUPPORT - WCAG AA COMPLIANT
    ============================================ */
@@ -810,43 +811,43 @@
     .ti-hero {
         background: linear-gradient(135deg, #f0f4f8 0%, #e2e8f0 50%, #cbd5e1 100%);
     }
-    
+
     .ti-hero::before {
         opacity: 0.08;
     }
-    
+
     .glitch-title {
         background: linear-gradient(135deg, #0891b2 0%, #6b21a8 50%, #be123c 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
     }
-    
+
     .typing-subtitle {
         color: rgba(0, 0, 0, 0.7);
     }
-    
+
     .hero-content p {
         color: rgba(0, 0, 0, 0.6) !important;
     }
-    
+
     .stat-item {
         background: rgba(0, 217, 255, 0.08);
         border: 1px solid rgba(0, 217, 255, 0.3);
     }
-    
+
     .stat-label {
         color: rgba(0, 0, 0, 0.6);
     }
-    
+
     .threat-level-badge {
         background: rgba(255, 0, 110, 0.15);
     }
-    
+
     .threat-text {
         color: #1e293b;
     }
-    
+
     .typing-text {
         border-right-color: #0891b2;
     }
