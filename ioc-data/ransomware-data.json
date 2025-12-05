@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-12-05T01:42:23.965233",
+  "last_updated": "2025-12-05T12:42:49.989836",
   "period": "Last 7 days",
   "total_groups": 32,
   "total_victims": 264,
@@ -97,7 +97,7 @@
     },
     {
       "name": "Akira",
-      "count": 47,
+      "count": 46,
       "victims": [
         {
           "name": "The Minor Firm",
@@ -177,7 +177,7 @@
       "daily_counts": [
         0,
         0,
-        9,
+        8,
         8,
         18,
         4,
@@ -705,88 +705,6 @@
       ]
     },
     {
-      "name": "Ransomhouse",
-      "count": 9,
-      "victims": [
-        {
-          "name": "Armis Group",
-          "date": "2025-12-03 12:51:12.530242",
-          "url": "http://zohlm7ahjwegcedoz7lrdrti7bvpofymcayotp744qhx6gjmxbuo2yid.onion/r/5a74c257d2eff7518c2bddc1285b1f7521b82d3f",
-          "discovered_date": "2025-12-03T12:51:12.530242"
-        },
-        {
-          "name": "Industrial Steam",
-          "date": "2025-12-01 18:15:38.265090",
-          "url": "http://zohlm7ahjwegcedoz7lrdrti7bvpofymcayotp744qhx6gjmxbuo2yid.onion/r/113dfe9fb59c2b9b877cf7a7de13f2c604ea44cb",
-          "discovered_date": "2025-12-01T18:15:38.265090"
-        },
-        {
-          "name": "Astrofein",
-          "date": "2025-12-01 15:18:04.120055",
-          "url": "http://zohlm7ahjwegcedoz7lrdrti7bvpofymcayotp744qhx6gjmxbuo2yid.onion/r/3886ede81e320833ef491aad76b9dc007e96c052",
-          "discovered_date": "2025-12-01T15:18:04.120055"
-        },
-        {
-          "name": "[EVIDENCE PACK 3]ASKUL",
-          "date": "2025-12-02 13:36:24.344096",
-          "url": "http://zohlm7ahjwegcedoz7lrdrti7bvpofymcayotp744qhx6gjmxbuo2yid.onion/r/9fb785f05b8dca8f1ce206fe1db3a0a3a0583fbc",
-          "discovered_date": "2025-12-02T13:36:24.344096"
-        },
-        {
-          "name": "Armis Group",
-          "date": "2025-12-03T12:51:12+00:00",
-          "url": "https://www.ransomware.live/id/QXJtaXMgR3JvdXBAcmFuc29taG91c2U=",
-          "discovered_date": "2025-12-03T12:51:12+00:00"
-        },
-        {
-          "name": "[EVIDENCE PACK 3]ASKUL",
-          "date": "2025-12-02T13:36:24+00:00",
-          "url": "https://www.ransomware.live/id/W0VWSURFTkNFIFBBQ0sgM11BU0tVTEByYW5zb21ob3VzZQ==",
-          "discovered_date": "2025-12-02T13:36:24+00:00"
-        },
-        {
-          "name": "Industrial Steam",
-          "date": "2025-12-01T18:15:38+00:00",
-          "url": "https://www.ransomware.live/id/SW5kdXN0cmlhbCBTdGVhbUByYW5zb21ob3VzZQ==",
-          "discovered_date": "2025-12-01T18:15:38+00:00"
-        },
-        {
-          "name": "Astrofein",
-          "date": "2025-12-01T15:18:04+00:00",
-          "url": "https://www.ransomware.live/id/QXN0cm9mZWluQHJhbnNvbWhvdXNl",
-          "discovered_date": "2025-12-01T15:18:04+00:00"
-        },
-        {
-          "name": "Soderstrom Architects, LTD",
-          "date": "2025-12-01T07:37:08+00:00",
-          "url": "https://www.ransomware.live/id/U29kZXJzdHJvbSBBcmNoaXRlY3RzLCBMVERAcmFuc29taG91c2U=",
-          "discovered_date": "2025-12-01T07:37:08+00:00"
-        }
-      ],
-      "industries": [
-        "Business Services",
-        "Manufacturing",
-        "Not Found"
-      ],
-      "countries": [
-        "DE",
-        "JP",
-        "PT",
-        "US"
-      ],
-      "trend": "stable",
-      "trend_percentage": 0,
-      "daily_counts": [
-        0,
-        0,
-        5,
-        2,
-        2,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Everest",
       "count": 8,
       "victims": [
@@ -857,6 +775,82 @@
         0,
         8,
         0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Ransomhouse",
+      "count": 8,
+      "victims": [
+        {
+          "name": "Armis Group",
+          "date": "2025-12-03 12:51:12.530242",
+          "url": "http://zohlm7ahjwegcedoz7lrdrti7bvpofymcayotp744qhx6gjmxbuo2yid.onion/r/5a74c257d2eff7518c2bddc1285b1f7521b82d3f",
+          "discovered_date": "2025-12-03T12:51:12.530242"
+        },
+        {
+          "name": "Industrial Steam",
+          "date": "2025-12-01 18:15:38.265090",
+          "url": "http://zohlm7ahjwegcedoz7lrdrti7bvpofymcayotp744qhx6gjmxbuo2yid.onion/r/113dfe9fb59c2b9b877cf7a7de13f2c604ea44cb",
+          "discovered_date": "2025-12-01T18:15:38.265090"
+        },
+        {
+          "name": "[EVIDENCE PACK 3]ASKUL",
+          "date": "2025-12-02 13:36:24.344096",
+          "url": "http://zohlm7ahjwegcedoz7lrdrti7bvpofymcayotp744qhx6gjmxbuo2yid.onion/r/9fb785f05b8dca8f1ce206fe1db3a0a3a0583fbc",
+          "discovered_date": "2025-12-02T13:36:24.344096"
+        },
+        {
+          "name": "Armis Group",
+          "date": "2025-12-03T12:51:12+00:00",
+          "url": "https://www.ransomware.live/id/QXJtaXMgR3JvdXBAcmFuc29taG91c2U=",
+          "discovered_date": "2025-12-03T12:51:12+00:00"
+        },
+        {
+          "name": "[EVIDENCE PACK 3]ASKUL",
+          "date": "2025-12-02T13:36:24+00:00",
+          "url": "https://www.ransomware.live/id/W0VWSURFTkNFIFBBQ0sgM11BU0tVTEByYW5zb21ob3VzZQ==",
+          "discovered_date": "2025-12-02T13:36:24+00:00"
+        },
+        {
+          "name": "Industrial Steam",
+          "date": "2025-12-01T18:15:38+00:00",
+          "url": "https://www.ransomware.live/id/SW5kdXN0cmlhbCBTdGVhbUByYW5zb21ob3VzZQ==",
+          "discovered_date": "2025-12-01T18:15:38+00:00"
+        },
+        {
+          "name": "Astrofein",
+          "date": "2025-12-01T15:18:04+00:00",
+          "url": "https://www.ransomware.live/id/QXN0cm9mZWluQHJhbnNvbWhvdXNl",
+          "discovered_date": "2025-12-01T15:18:04+00:00"
+        },
+        {
+          "name": "Soderstrom Architects, LTD",
+          "date": "2025-12-01T07:37:08+00:00",
+          "url": "https://www.ransomware.live/id/U29kZXJzdHJvbSBBcmNoaXRlY3RzLCBMVERAcmFuc29taG91c2U=",
+          "discovered_date": "2025-12-01T07:37:08+00:00"
+        }
+      ],
+      "industries": [
+        "Business Services",
+        "Manufacturing",
+        "Not Found"
+      ],
+      "countries": [
+        "DE",
+        "JP",
+        "PT",
+        "US"
+      ],
+      "trend": "stable",
+      "trend_percentage": 0,
+      "daily_counts": [
+        0,
+        0,
+        4,
+        2,
+        2,
         0,
         0
       ]
@@ -962,51 +956,50 @@
       ]
     },
     {
-      "name": "Anubis",
+      "name": "Spacebears",
       "count": 4,
       "victims": [
         {
-          "name": "Smith Fire Systems",
-          "date": "2025-12-04 23:48:41.781424",
-          "url": "http://om6q4a6cyipxvt7ioudxt24cw4oqu4yodmqzl25mqd2hgllymrgu4aqd.onion/r/itiMNEaqIzF+TztOO2DcLoFm3nyiKvNtShcERTuMGp9UP7dVuEOqRN4UpOUqZvb0pBslovBGfrPQhZo80mdIMGxWemZh",
-          "discovered_date": "2025-12-04T23:48:41.781424"
+          "name": "Slimsoft",
+          "date": "2025-12-05 05:31:43.035430",
+          "url": "http://5butbkrljkaorg5maepuca25oma7eiwo6a2rlhvkblb4v6mf3ki2ovid.onion/companies/101/slimsoft",
+          "discovered_date": "2025-12-05T05:31:43.035430"
         },
         {
-          "name": "Smith Fire Systems",
-          "date": "2025-12-04T23:48:41+00:00",
-          "url": "https://www.ransomware.live/id/U21pdGggRmlyZSBTeXN0ZW1zQGFudWJpcw==",
-          "discovered_date": "2025-12-04T23:48:41+00:00"
+          "name": "Quasar Inc",
+          "date": "2025-12-04 04:58:16.746257",
+          "url": "http://5butbkrljkaorg5maepuca25oma7eiwo6a2rlhvkblb4v6mf3ki2ovid.onion/companies/100/quasar-inc",
+          "discovered_date": "2025-12-04T04:58:16.746257"
         },
         {
-          "name": "Fun For Less Tours",
-          "date": "2025-12-01T00:45:54+00:00",
-          "url": "https://www.ransomware.live/id/RnVuIEZvciBMZXNzIFRvdXJzQGFudWJpcw==",
-          "discovered_date": "2025-12-01T00:45:54+00:00"
+          "name": "Slimsoft",
+          "date": "2025-12-05T05:31:43+00:00",
+          "url": "https://www.ransomware.live/id/U2xpbXNvZnRAc3BhY2ViZWFycw==",
+          "discovered_date": "2025-12-05T05:31:43+00:00"
         },
         {
-          "name": "Mid South Pulmonary & Sleep Specialists",
-          "date": "2025-11-28T12:19:44+00:00",
-          "url": "https://www.ransomware.live/id/TWlkIFNvdXRoIFB1bG1vbmFyeSAmIFNsZWVwIFNwZWNpYWxpc3RzQGFudWJpcw==",
-          "discovered_date": "2025-11-28T12:19:44+00:00"
+          "name": "Quasar Inc",
+          "date": "2025-12-04T04:58:16+00:00",
+          "url": "https://www.ransomware.live/id/UXVhc2FyIEluY0BzcGFjZWJlYXJz",
+          "discovered_date": "2025-12-04T04:58:16+00:00"
         }
       ],
       "industries": [
-        "Manufacturing"
+        "Not Found"
       ],
       "countries": [
-        "N/A",
-        "US"
+        "N/A"
       ],
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
         0,
         0,
-        1,
+        0,
         0,
         0,
         2,
-        0
+        2
       ]
     },
     {
@@ -1155,6 +1148,48 @@
       ]
     },
     {
+      "name": "Anubis",
+      "count": 3,
+      "victims": [
+        {
+          "name": "Smith Fire Systems",
+          "date": "2025-12-04 23:48:41.781424",
+          "url": "http://om6q4a6cyipxvt7ioudxt24cw4oqu4yodmqzl25mqd2hgllymrgu4aqd.onion/r/itiMNEaqIzF+TztOO2DcLoFm3nyiKvNtShcERTuMGp9UP7dVuEOqRN4UpOUqZvb0pBslovBGfrPQhZo80mdIMGxWemZh",
+          "discovered_date": "2025-12-04T23:48:41.781424"
+        },
+        {
+          "name": "Smith Fire Systems",
+          "date": "2025-12-04T23:48:41+00:00",
+          "url": "https://www.ransomware.live/id/U21pdGggRmlyZSBTeXN0ZW1zQGFudWJpcw==",
+          "discovered_date": "2025-12-04T23:48:41+00:00"
+        },
+        {
+          "name": "Fun For Less Tours",
+          "date": "2025-12-01T00:45:54+00:00",
+          "url": "https://www.ransomware.live/id/RnVuIEZvciBMZXNzIFRvdXJzQGFudWJpcw==",
+          "discovered_date": "2025-12-01T00:45:54+00:00"
+        }
+      ],
+      "industries": [
+        "Manufacturing"
+      ],
+      "countries": [
+        "N/A",
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        2,
+        0
+      ]
+    },
+    {
       "name": "Medusa",
       "count": 3,
       "victims": [
@@ -1192,6 +1227,41 @@
         0,
         0,
         0
+      ]
+    },
+    {
+      "name": "Lockbit3",
+      "count": 2,
+      "victims": [
+        {
+          "name": "new blog domain lockbit 5.0",
+          "date": "2025-12-05 11:08:54.370480",
+          "url": "http://lockbit3g3ohd3katajf6zaehxz4h4cnhmz5t735zpltywhwpc6oy3id.onion/post/Z4TENkdajdrO2dbx6932b0f72d10f",
+          "discovered_date": "2025-12-05T11:08:54.370480"
+        },
+        {
+          "name": "new blog domain lockbit 5.0",
+          "date": "2025-12-05T11:08:54+00:00",
+          "url": "https://www.ransomware.live/id/bmV3IGJsb2cgZG9tYWluIGxvY2tiaXQgNS4wQGxvY2tiaXQz",
+          "discovered_date": "2025-12-05T11:08:54+00:00"
+        }
+      ],
+      "industries": [
+        "Not Found"
+      ],
+      "countries": [
+        "N/A"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
       ]
     },
     {
@@ -1440,41 +1510,6 @@
       ]
     },
     {
-      "name": "Spacebears",
-      "count": 2,
-      "victims": [
-        {
-          "name": "Quasar Inc",
-          "date": "2025-12-04 04:58:16.746257",
-          "url": "http://5butbkrljkaorg5maepuca25oma7eiwo6a2rlhvkblb4v6mf3ki2ovid.onion/companies/100/quasar-inc",
-          "discovered_date": "2025-12-04T04:58:16.746257"
-        },
-        {
-          "name": "Quasar Inc",
-          "date": "2025-12-04T04:58:16+00:00",
-          "url": "https://www.ransomware.live/id/UXVhc2FyIEluY0BzcGFjZWJlYXJz",
-          "discovered_date": "2025-12-04T04:58:16+00:00"
-        }
-      ],
-      "industries": [
-        "Not Found"
-      ],
-      "countries": [
-        "N/A"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        0
-      ]
-    },
-    {
       "name": "Blackshrantac",
       "count": 2,
       "victims": [
@@ -1643,33 +1678,6 @@
       "industries": [],
       "countries": [
         "DE"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Worldleaks",
-      "count": 1,
-      "victims": [
-        {
-          "name": "Family Farm and Home",
-          "date": "2025-11-28T10:06:09+00:00",
-          "url": "https://www.ransomware.live/id/RmFtaWx5IEZhcm0gYW5kIEhvbWVAd29ybGRsZWFrcw==",
-          "discovered_date": "2025-11-28T10:06:09+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "US"
       ],
       "trend": "down",
       "trend_percentage": -5,
