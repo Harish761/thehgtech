@@ -4,53 +4,53 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Dec 05 2025",
+            "title": "Weekly ISC Stormcast Highlights Emerging Cyber Threats",
+            "content": "The SANS Internet Storm Center released its latest Stormcast, highlighting recent cybersecurity threats and vulnerabilities. This week&#x27;s report emphasizes the importance of monitoring network traffic for unusual patterns that could indicate early stages of an attack. The InfoCON level remains at green, suggesting a stable threat environment, but vigilance is advised. Security professionals are encouraged to review their current defenses and ensure that all systems are updated with the latest patches. The report serves as a reminder of the dynamic nature of cyber threats and the need for continuous monitoring and adaptation.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32540"
+        },
+        {
+            "date": "Dec 05 2025",
+            "title": "Experts Warn of New Probing Techniques Targeting CDNs",
+            "content": "Security experts have observed suspicious traffic patterns that suggest testing of content delivery network (CDN) evasion techniques. Johannes Ullrich of the SANS Institute warns that organizations relying on CDNs instead of web application firewalls (WAFs) may be at increased risk. This activity could indicate a new phase of reconnaissance by threat actors aiming to bypass traditional security measures. Network administrators and security officers are advised to enhance their monitoring of CDN traffic and consider integrating WAFs for additional protection. This development underscores the evolving tactics used by attackers to exploit network vulnerabilities.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4101395/suspicious-traffic-could-be-testing-cdn-evasion-says-expert.html"
+        },
+        {
             "date": "Dec 04 2025",
-            "title": "Microsoft 365 Bug Blocks Desktop App Downloads",
-            "content": "Microsoft is actively investigating a bug that prevents users from downloading Microsoft 365 desktop applications directly from the Microsoft 365 homepage. This issue affects users attempting to access essential productivity tools, potentially disrupting business operations. While the exact cause remains under investigation, Microsoft has acknowledged the problem and is working on a resolution. This incident highlights the critical need for robust software deployment processes, especially for widely used applications like Microsoft 365. Users are advised to monitor Microsoft&#x27;s official channels for updates and potential workarounds.",
+            "title": "Agentic AI Revolutionizes Cyber Defense Strategies",
+            "content": "Muhammad Ali Paracha, head of cyber defense at Transurban, shared insights on leveraging agentic AI to enhance cybersecurity measures at the Black Hat Middle East conference. His team employs AI to automate the triaging and scoring of security threats, significantly improving response times. This approach allows for the efficient management of vast amounts of data, enabling quicker identification and mitigation of potential threats. The use of AI in cybersecurity is becoming increasingly critical as organizations face more sophisticated attacks. Cybersecurity professionals should consider incorporating AI-driven solutions to bolster their defense capabilities.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cybersecurity-analytics/how-agentic-ai-can-boost-cyber-defense"
+        },
+        {
+            "date": "Dec 04 2025",
+            "title": "Critical ArrayOS AG VPN Vulnerability Exploited by Hackers",
+            "content": "Hackers are actively exploiting a command injection vulnerability in Array AG Series VPN devices, identified as a critical flaw allowing remote code execution. This vulnerability enables attackers to plant webshells and create unauthorized user accounts, compromising network security. Organizations using these VPN devices should prioritize patching and review system logs for signs of exploitation. The exploitation of this flaw highlights the importance of maintaining up-to-date security patches and monitoring for unusual activity. Immediate action is necessary to prevent unauthorized access and potential data breaches.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-bug-in-microsoft-365-license-checks-blocks-desktop-app-downloads/"
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-are-exploiting-arrayos-ag-vpn-flaw-to-plant-webshells/"
         },
         {
             "date": "Dec 04 2025",
-            "title": "Global Cyber Agencies Release AI Security Guidance for Critical Infrastructure",
-            "content": "A consortium of global cyber agencies has issued a comprehensive 25-page document outlining security principles for integrating artificial intelligence (AI) with operational technology (OT) in critical infrastructure. The guidance emphasizes four key principles: secure design, risk management, supply chain security, and continuous monitoring. This initiative aims to mitigate risks associated with AI deployment in sectors like energy and transportation, where security breaches could have severe consequences. The document provides actionable insights for organizations looking to enhance their OT security posture. Stakeholders are encouraged to review the guidelines and implement recommended practices to safeguard critical systems.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/global-cyber-agencies-issue-ai-security-guidance-for-critical-infrastructure-ot/"
+            "title": "Intellexa Investigation Uncovers Remote Access to Spyware Systems",
+            "content": "An investigation into Intellexa, a spyware vendor, has revealed unauthorized remote access to customer systems using Predator spyware. This discovery is part of a series of reports that detail the extent of infections and unauthorized surveillance activities. Organizations using Intellexa&#x27;s products should conduct thorough security audits and consider alternative solutions. The findings raise significant concerns about the security and ethical implications of commercial spyware. This case highlights the need for stringent oversight and regulation of spyware vendors to protect user privacy and data integrity.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/intellexa-remotely-accessed-predator-spyware-customer-systems-investigation-finds/"
         },
         {
             "date": "Dec 04 2025",
-            "title": "Google Chrome Update Fixes 13 Security Flaws",
-            "content": "Google has released an update for Chrome that addresses 13 security vulnerabilities, including a high-severity flaw in Digital Credentials. This update affects billions of users worldwide, underscoring the importance of timely patch management. The vulnerabilities, which range in severity, could potentially allow attackers to execute arbitrary code or access sensitive information. Users are urged to update to the latest Chrome version immediately to protect against possible exploitation. This update is part of Google&#x27;s ongoing efforts to enhance browser security and protect user data from emerging threats.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2025/12/google-fixes-13-security-issues-affecting-billions"
+            "title": "NCSC Launches Proactive Notifications to Alert on Device Vulnerabilities",
+            "content": "The UK&#x27;s National Cyber Security Center (NCSC) has initiated the testing phase of its Proactive Notifications service. This service aims to alert organizations to vulnerabilities in their exposed devices, enhancing their ability to address security gaps promptly. By identifying at-risk systems, the NCSC hopes to reduce the window of opportunity for attackers. Organizations are encouraged to participate in the testing phase and provide feedback to refine the service. This initiative represents a proactive approach to cybersecurity, emphasizing the importance of early detection and response to potential threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/ncscs-proactive-notifications-warns-orgs-of-flaws-in-exposed-devices/"
         },
         {
             "date": "Dec 04 2025",
-            "title": "Freedom Mobile Data Breach Exposes Customer Information",
-            "content": "Freedom Mobile has confirmed a data breach that resulted in unauthorized access to customer personal information via its account management platform. The breach compromised sensitive data, including names, addresses, and contact details, raising concerns about identity theft and fraud. Freedom Mobile is currently investigating the incident and has notified affected customers. This breach highlights the critical importance of securing customer data and implementing robust cybersecurity measures. Customers are advised to monitor their accounts for suspicious activity and consider changing passwords as a precautionary measure.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/personal-information-compromised-in-freedom-mobile-data-breach/"
-        },
-        {
-            "date": "Dec 04 2025",
-            "title": "Weekly Cybersecurity Roundup: Wi-Fi Hacks and More",
-            "content": "This week&#x27;s cybersecurity roundup reveals a series of alarming incidents, including Wi-Fi vulnerabilities, an npm worm, and a significant DeFi (Decentralized Finance) theft. These events demonstrate the ongoing battle between hackers and security professionals, with each side striving to outpace the other. The vulnerabilities in Wi-Fi networks could potentially expose millions of users to unauthorized access and data theft. Meanwhile, the npm worm underscores the risks associated with software supply chains. Security professionals are urged to stay informed about these developments and apply necessary patches and updates to mitigate risks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/12/threatsday-bulletin-wi-fi-hack-npm-worm.html"
-        },
-        {
-            "date": "Dec 04 2025",
-            "title": "Top 5 Web Security Threats of 2025",
-            "content": "As the year 2025 concludes, cybersecurity experts are reflecting on the most significant threats that reshaped web security. Key challenges include AI-powered attacks, advanced injection techniques, and widespread supply chain compromises impacting hundreds of thousands of websites. These threats have rendered traditional security strategies obsolete, prompting a reevaluation of defensive measures. Organizations must adapt by implementing advanced threat detection and response systems to protect against evolving cyber threats. This year serves as a stark reminder of the dynamic nature of cybersecurity and the need for continuous innovation in defense strategies.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/12/5-threats-that-reshaped-web-security.html"
-        },
-        {
-            "date": "Dec 04 2025",
-            "title": "Marquis Data Breach Affects Over 780,000 Individuals",
-            "content": "A significant data breach at Marquis has compromised the personal and financial information of more than 780,000 individuals. The stolen data includes names, addresses, Social Security numbers, and credit card details, posing a severe risk of identity theft and financial fraud. Marquis is currently investigating the breach and has begun notifying affected individuals. This incident underscores the critical need for organizations to implement stringent data protection measures and regularly assess their security posture. Affected individuals are advised to monitor their financial accounts for unusual activity and consider enrolling in credit monitoring services.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/marquis-data-breach-impacts-over-780000-people/"
+            "title": "Ongoing China Espionage Threat Linked to Brickstorm Malware",
+            "content": "Officials have issued warnings about an expansive espionage campaign attributed to Chinese threat actors, utilizing Brickstorm malware. This campaign has affected dozens of organizations over the past three years, with each intrusion lasting an average of 393 days. The recent findings underscore the persistent nature of state-sponsored cyber espionage efforts. Organizations are advised to strengthen their cybersecurity frameworks and conduct regular threat assessments. This situation highlights the critical need for international cooperation and advanced threat intelligence to combat sophisticated cyber threats effectively.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/china-brickstorm-malware-cyber-espionage-campaign-cisa-dhs-alert/"
         },
         {
             "date": "May 05 2026",
@@ -58,78 +58,57 @@ const websiteContent = {
             "content": "GISEC GLOBAL 2026, the largest cybersecurity event in the Middle East and Africa, has kicked off, showcasing the latest advancements in cybersecurity technology and strategy. The event serves as a platform for industry leaders to discuss emerging threats and innovative solutions. This year&#x27;s focus includes AI-driven security tools, advanced threat detection systems, and new compliance frameworks. Professionals from various sectors, including government and private enterprises, are attending to gain insights into protecting critical infrastructure. The event highlights the region&#x27;s growing importance in the global cybersecurity landscape, emphasizing collaboration and knowledge sharing. Attendees are encouraged to engage with workshops and panels to stay ahead of evolving cyber threats.",
             "source": "darkreading",
             "sourceUrl": "https://www.darkreading.com/events/gisec-global"
-        },
-        {
-            "date": "Dec 04 2025",
-            "title": "Investigating Nation-State Attacks and Government Compromises",
-            "content": "In a guest diary entry, Jackie Nguyen from the SANS.edu BACS program explores the complexities of distinguishing between nation-state cyberattacks and compromised government entities. The discussion highlights recent incidents where attribution remains challenging due to sophisticated obfuscation techniques. Governments and organizations are urged to enhance their threat intelligence capabilities to better identify and respond to such threats. The analysis underscores the importance of collaboration between international cybersecurity agencies to address these challenges. Security professionals are advised to stay informed about the latest attack vectors and invest in advanced detection technologies to mitigate risks.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32536"
-        },
-        {
-            "date": "Dec 04 2025",
-            "title": "Teenage Hacker Exposes Identity While Mocking Scammer",
-            "content": "A teenage hacker inadvertently revealed his identity by posting a screenshot intended to mock a sextortion scammer, highlighting the risks of social engineering-as-a-service. The incident underscores the growing trend of cybercriminals leveraging stolen data as a key resource for malicious activities. As we approach 2026, experts warn that the use of personal data in cybercrime will likely intensify, posing increased risks to individuals and organizations. Security professionals should prioritize data protection measures and educate users on recognizing social engineering tactics. The case serves as a reminder of the potential pitfalls of online anonymity and the importance of operational security.",
-            "source": "Graham Cluley",
-            "sourceUrl": "https://grahamcluley.com/smashing-security-podcast-446/"
-        },
-        {
-            "date": "Dec 04 2025",
-            "title": "Critical Vulnerability Prompts Urgent React and Next.js Updates",
-            "content": "Developers are urgently advised to update their applications using React 19 and Next.js due to a critical vulnerability that could allow remote code execution. Researchers at Wiz identified the flaw, which can be easily exploited by attackers to run arbitrary code on affected systems. This vulnerability poses a significant risk to applications relying on these popular JavaScript libraries, potentially impacting millions of users. Developers should immediately upgrade to the latest versions to mitigate this threat. The incident highlights the need for continuous vigilance and prompt patch management in software development to maintain security integrity.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4100653/developers-urged-to-immediately-upgrade-react-next-js-2.html"
         }
     ],
     "aiShorts": [
         {
+            "date": "Dec 05 2025",
+            "title": "Chicago Tribune Sues Perplexity Over Alleged Copyright Infringement",
+            "content": "The Chicago Tribune has filed a lawsuit against Perplexity, accusing the company of copyright infringement through its Retrieval Augmented Generation (RAG) technology. The newspaper claims that Perplexity&#x27;s AI system improperly uses its content without authorization, potentially impacting the Tribune&#x27;s intellectual property rights. This legal action highlights ongoing tensions between traditional media outlets and AI companies over content usage. The case could set a precedent for how AI firms must handle copyrighted material. Media organizations and AI developers should closely monitor this case as it may influence future licensing and content use agreements.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/04/chicago-tribune-sues-perplexity/"
+        },
+        {
+            "date": "Dec 05 2025",
+            "title": "AWS re:Invent 2025 Unveils Major Advances in AI and Chip Technology",
+            "content": "Amazon Web Services&#x27; re:Invent 2025 conference has unveiled significant advancements in AI and chip technology. Key announcements include new AI services designed to enhance machine learning capabilities and the introduction of custom silicon chips aimed at boosting computational efficiency. These developments are expected to impact cloud computing and AI deployment strategies for businesses globally. AWS continues to position itself as a leader in cloud innovation, with these new offerings potentially reducing costs and increasing performance for enterprise clients. Attendees are encouraged to explore these new tools to leverage AWS&#x27;s expanding technology ecosystem.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/04/all-the-biggest-news-from-aws-big-tech-show-reinvent-2025/"
+        },
+        {
             "date": "Dec 04 2025",
-            "title": "Nexus Venture Partners Reserves $350M for Indian Startups Amidst AI Boom",
-            "content": "Nexus Venture Partners has announced a strategic allocation of $350 million from its new $700 million fund specifically for Indian startups, reflecting a balanced approach amid the global AI investment surge. Managing $3.2 billion in capital, Nexus has invested in over 130 companies, indicating a robust portfolio. The decision to allocate half of the new fund to Indian ventures underscores the country&#x27;s growing tech ecosystem and Nexus&#x27;s commitment to fostering innovation beyond AI. This move could significantly impact emerging Indian tech sectors, providing much-needed capital to scale operations and drive technological advancements. Investors and entrepreneurs should note this strategic focus on India, which may signal broader investment trends in the region.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/04/nexus-isnt-going-all-in-on-ai-keeping-its-new-700m-fund-balanced-with-india-bets/"
+            "title": "OpenAI Introduces &quot;Truth Serum&quot; Technique to Enhance AI Transparency",
+            "content": "OpenAI has developed a new training method called &quot;confessions,&quot; which acts as a &quot;truth serum&quot; for large language models (LLMs). This approach compels AI systems to self-report errors, hallucinations, and policy violations, addressing a critical concern in enterprise AI deployment. The technique aims to improve trust and reliability in AI outputs by making models more transparent about their limitations. Organizations using AI for decision-making processes could benefit from adopting this method to mitigate risks associated with AI misbehavior. OpenAI&#x27;s innovation may set a new standard for ethical AI development practices.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/ai/the-truth-serum-for-ai-openais-new-method-for-training-models-to-confess"
         },
         {
             "date": "Dec 04 2025",
-            "title": "Micron Technology&#x27;s Shift Reflects AI Memory Demand Impacting Semiconductor Industry",
-            "content": "Micron Technology, founded in 1978 by four engineers in Boise, Idaho, is pivoting away from consumer markets due to the increasing demand for AI-driven memory solutions. As AI applications grow, the need for advanced memory technologies has reshaped semiconductor economics, prompting Micron to focus on high-performance memory for AI workloads. This strategic shift highlights the broader industry trend of reallocating resources towards AI-related developments. The impact is significant for consumer electronics, which may face reduced supply and innovation in memory components. Stakeholders should monitor how this transition affects market dynamics and consider the implications for future semiconductor investments.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/ai-memory-hunger-micron-consumer-exit/"
+            "title": "Micro1&#x27;s Revenue Soars to $100M ARR, Challenging Scale AI",
+            "content": "Micro1 has announced a remarkable increase in its annual recurring revenue (ARR), reaching over $100 million from just $7 million at the start of the year. This growth positions Micro1 as a formidable competitor to Scale AI in the data labeling and AI training sector. The company&#x27;s aggressive expansion strategy and focus on scalable solutions have contributed to its rapid financial success. This development underscores the growing demand for efficient AI model training services. Industry players should consider the competitive landscape shifts and potential collaborations with emerging leaders like Micro1.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/04/micro1-a-scale-ai-competitor-touts-crossing-100m-arr/"
         },
         {
             "date": "Dec 04 2025",
-            "title": "Claude Successfully Fine-Tunes Open Source Language Model",
-            "content": "Researchers at Hugging Face have achieved a milestone by using Claude to fine-tune an open-source large language model (LLM), showcasing the potential of collaborative AI development. This advancement leverages Claude&#x27;s capabilities to enhance the performance and adaptability of open-source models, offering improved outcomes for various applications. The fine-tuning process demonstrates the synergy between proprietary AI tools and open-source initiatives, broadening the scope for innovation. Developers and AI practitioners should explore these methodologies to optimize model performance and facilitate more robust AI solutions. This achievement underscores the importance of collaborative efforts in advancing AI technologies.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/hf-skills-training"
+            "title": "Anthropic CEO Discusses AI Market Dynamics and Competitor Risk-Taking",
+            "content": "The CEO of Anthropic has commented on the current state of the AI market, addressing concerns about an AI bubble and competitor risk-taking behaviors. He noted that some companies are engaging in &quot;YOLO-ing&quot; or reckless spending, which may not be sustainable long-term. This observation highlights the volatility and rapid investment influx within the AI sector. Businesses are advised to adopt cautious financial strategies and evaluate the long-term viability of their AI investments. Anthropic&#x27;s insights provide a critical perspective on maintaining stability amid rapid technological advancements.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/04/anthropic-ceo-weighs-in-on-ai-bubble-talk-and-risk-taking-among-competitors/"
         },
         {
-            "date": "Dec 03 2025",
-            "title": "Meta Recruits Apple Design Veteran Alan Dye for Creative Leadership in Reality Labs",
-            "content": "Meta has announced the hiring of Alan Dye, a former Apple executive who led the user interface team for a decade, to head its new creative studio within Reality Labs. This strategic move aims to enhance Meta&#x27;s design capabilities in the expanding field of virtual and augmented reality. Dye&#x27;s experience at Apple, known for its design excellence, is expected to drive innovation and elevate Meta&#x27;s product offerings. This recruitment reflects Meta&#x27;s commitment to strengthening its position in the competitive VR/AR market. Industry professionals should watch for potential design innovations emerging from Meta&#x27;s Reality Labs under Dye&#x27;s leadership.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/03/meta-poaches-apple-design-exec-alan-dye-to-lead-new-creative-studio-in-reality-labs/"
+            "date": "Dec 04 2025",
+            "title": "AI Chatbots Outperform Political Ads in Voter Engagement",
+            "content": "In a recent political campaign, AI chatbots demonstrated superior effectiveness in engaging voters compared to traditional political advertisements. Shamaine Daniels, a Democratic congressional candidate in Pennsylvania, utilized an AI chatbot named Ashley to conduct personalized voter outreach. This innovative approach allowed for interactive and meaningful conversations, potentially influencing voter decision-making more effectively than standard ads. The success of AI-driven engagement strategies may prompt political campaigns to increasingly adopt AI tools for outreach. Political strategists should consider integrating AI technologies to enhance voter interaction and campaign efficiency.",
+            "source": "MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2025/12/04/1128824/ai-chatbots-can-sway-voters-better-than-political-advertisements/"
         },
         {
-            "date": "Dec 03 2025",
-            "title": "Anthropic Engages Legal Counsel as It Prepares for Landmark IPO",
-            "content": "Anthropic, an AI research company, has engaged the law firm Wilson Sonsini to assist with its initial public offering (IPO) preparations. This step is part of an internal checklist aimed at readying the company for what could be one of the largest IPOs in the tech sector. The move signals Anthropic&#x27;s readiness to scale its operations and expand its market presence. The IPO is anticipated to attract significant investor interest, given the company&#x27;s focus on AI safety and innovation. Stakeholders should prepare for potential market shifts and investment opportunities as Anthropic moves closer to going public.",
+            "date": "Dec 04 2025",
+            "title": "Meta Enhances User Support with Centralized Hub and AI Assistant",
+            "content": "Meta has announced the centralization of support services for Facebook and Instagram, introducing a new hub that integrates security tools, account recovery options, and an AI support assistant. This initiative aims to streamline user support and improve the overall user experience by providing comprehensive assistance in one location. The AI assistant is designed to efficiently address common user issues, potentially reducing response times and enhancing satisfaction. Users are encouraged to utilize this new support system to resolve account-related concerns swiftly. Meta&#x27;s efforts reflect a broader trend of leveraging AI to optimize customer service operations.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/03/anthropic-hires-lawyers-as-it-preps-for-ipo/"
-        },
-        {
-            "date": "Dec 03 2025",
-            "title": "AWS Enhances Custom LLM Development with New Features in Bedrock and SageMaker",
-            "content": "Amazon Web Services (AWS) has announced new capabilities in its Amazon Bedrock and Amazon SageMaker platforms, aimed at simplifying the creation of custom large language models (LLMs). These enhancements are designed to streamline model development processes, making it easier for businesses to tailor AI solutions to their specific needs. The updates include improved tools for model training and deployment, reflecting AWS&#x27;s commitment to supporting enterprise AI applications. This development is crucial for organizations seeking to leverage AI for competitive advantage. Technical teams should explore these new features to optimize their AI strategies and model performance.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/03/aws-doubles-down-on-custom-llms-with-features-meant-to-simplify-model-creation/"
-        },
-        {
-            "date": "Dec 03 2025",
-            "title": "Effort to Block State AI Regulations Removed from Defense Bill",
-            "content": "A Republican-led initiative to prohibit state-level AI regulations was recently removed from a defense bill following bipartisan opposition. This decision highlights ongoing tensions between the tech industry&#x27;s desire for uniform federal regulations and concerns over consumer protection. The removal reflects a pushback against attempts to preempt state authority, aligning with former President Trump&#x27;s advocacy for federal oversight. The outcome suggests that state governments will continue to play a role in regulating AI technologies. Industry professionals should remain informed about regulatory developments, as these could impact compliance requirements and operational strategies in the AI sector.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/03/another-bid-to-block-state-ai-regulation-has-failedfor-now/"
+            "sourceUrl": "https://techcrunch.com/2025/12/04/meta-centralizes-facebook-and-instagram-support-tests-ai-support-assistant/"
         }
     ],
     "articles": {
@@ -242,17 +221,6 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
-        {
-            "cveId": "CVE-2021-26829",
-            "dateAdded": "Nov 28, 2025",
-            "vendor": "OpenPLC ScadaBR",
-            "description": "OpenPLC ScadaBR contains a cross-site scripting vulnerability via system_settings.shtm.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-26829",
-            "isZeroDay": false
-        },
         {
             "cveId": "CVE-2021-26828",
             "dateAdded": "Dec 03, 2025",
