@@ -182,6 +182,7 @@ def fetch_nvd_critical_cves(days=7, max_results=50) -> List[Dict]:
                 'shortDescription': description[:100] + "..." if len(description) > 100 else description,
                 'severity': severity,
                 'cvssScore': cvss_score,
+                'cvssVersion': cvss_version,  # NEW: Track CVSS version for badges
                 'isZeroDay': False,  # NVD doesn't track this explicitly
                 'requiredAction': f"Apply security updates per vendor instructions for {vendor} {product}",
                 'dueDate': due_date,
