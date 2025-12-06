@@ -795,25 +795,6 @@
         <article class="content">
             ${cleanContent}
         </article>
-
-        <div class="interaction-bar">
-            <div class="like-section">
-                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
-                    <i class="far fa-heart"></i> <span id="likeText">Like this article</span>
-                </button>
-            </div>
-            <div class="share-buttons">
-                <a href="https://twitter.com/intent/tweet?text=${encodeURIComponent(article.title)}&url=${encodeURIComponent(window.location.href)}" target="_blank" class="share-btn" title="Share on Twitter">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}" target="_blank" class="share-btn" title="Share on LinkedIn">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <button onclick="copyLink()" class="share-btn" title="Copy Link">
-                    <i class="fas fa-link"></i>
-                </button>
-            </div>
-        </div>
     </div>
 
     <script>
