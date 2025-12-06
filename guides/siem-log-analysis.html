@@ -264,6 +264,7 @@
     </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251206">
 
     <!-- Interaction Bar Styles -->
     <style>
@@ -629,99 +630,35 @@ THEN
         </div>
     </div>
 
-        <!-- Interaction Bar -->
+                <!-- Interaction Bar -->
         <div class="interaction-bar">
             <div class="like-section">
                 <button class="like-btn" id="likeBtn" onclick="toggleLike()">
                     <i class="far fa-heart"></i> <span id="likeText">Like this article</span>
                 </button>
             </div>
-            <div class="share-buttons">
-                <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <button onclick="copyLink()" class="share-btn" title="Copy Link">
-                    <i class="fas fa-link"></i>
+            <div class="action-buttons">
+                <div class="share-buttons">
+                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter" aria-label="Share on Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn" aria-label="Share on LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link">
+                        <i class="fas fa-link"></i>
+                    </button>
+                </div>
+                <div class="button-separator"></div>
+                <button onclick="printArticle()" class="print-btn" title="Print Article" aria-label="Print Article">
+                    <i class="fas fa-print"></i>
                 </button>
             </div>
         </div>
     
 
-    <!-- Interaction Logic -->
-    <script>
-        // Like Functionality
-        // Generate a unique ID for the page based on path
-        const pageId = window.location.pathname.split('/').pop().replace('.html', '');
-        const likeBtn = document.getElementById('likeBtn');
-        const likeIcon = likeBtn.querySelector('i');
-        const likeText = document.getElementById('likeText');
-        
-        // Check local storage
-        if (localStorage.getItem('liked_' + pageId)) {
-            likeBtn.classList.add('liked');
-            likeIcon.classList.remove('far');
-            likeIcon.classList.add('fas');
-            likeText.innerText = 'Liked';
-        }
-
-        function toggleLike() {
-            if (likeBtn.classList.contains('liked')) {
-                // Unlike
-                likeBtn.classList.remove('liked');
-                likeIcon.classList.remove('fas');
-                likeIcon.classList.add('far');
-                likeText.innerText = 'Like this article';
-                localStorage.removeItem('liked_' + pageId);
-            } else {
-                // Like
-                likeBtn.classList.add('liked');
-                likeIcon.classList.remove('far');
-                likeIcon.classList.add('fas');
-                likeText.innerText = 'Liked';
-                localStorage.setItem('liked_' + pageId, 'true');
-                
-                // Animation
-                likeBtn.style.transform = 'scale(1.1)';
-                setTimeout(() => likeBtn.style.transform = 'scale(1)', 200);
-            }
-        }
-
-        // Copy Link Functionality
-        function copyLink() {
-            navigator.clipboard.writeText(window.location.href).then(() => {
-                const btn = document.querySelector('button[title="Copy Link"]');
-                const originalIcon = btn.innerHTML;
-                btn.innerHTML = '<i class="fas fa-check"></i>';
-                setTimeout(() => {
-                    btn.innerHTML = originalIcon;
-                }, 2000);
-            });
-        }
-    
-        function shareTwitter(e) {
-            e.preventDefault();
-            const text = document.title;
-            const url = window.location.href;
-            window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`, '_blank');
-        }
-        
-        function shareLinkedIn(e) {
-            e.preventDefault();
-            const url = window.location.href;
-            window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`, '_blank');
-        }
-    </script>
-  <!-- Print Button -->
-  <button class="print-button" onclick="window.print()" aria-label="Print or save as PDF">
-    <i class="fas fa-print"></i>
-    Print / PDF
-  </button>
-
-    
-
-</body>
+    <!-- Interaction Bar Script -->
+    <script src="/interaction-bar.js?v=20251206"></script>
+  </body>
 
 </html>
