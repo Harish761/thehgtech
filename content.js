@@ -4,53 +4,53 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Dec 05 2025",
-            "title": "Immediate Action Required: React2Shell Vulnerability Exploited in the Wild",
-            "content": "The React2Shell vulnerability affecting open-source React server and Next.js is being actively exploited by threat actors, according to researchers at Greynoise. This vulnerability is being targeted through automated exploitation attempts, emphasizing the urgent need for patching. React2Shell compromises server environments, potentially leading to unauthorized access and data breaches. Organizations using these platforms should prioritize updating to the latest versions and apply available security patches immediately. This development underscores the growing trend of attackers focusing on open-source software vulnerabilities to gain entry into IT systems.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4101890/warning-react2shell-vulnerability-already-being-exploited-by-threat-actors.html"
+            "date": "Dec 06 2025",
+            "title": "React2Shell Vulnerability Added to CISA&#x27;s Exploited List Amid Active Attacks",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a critical security vulnerability in React Server Components to its Known Exploited Vulnerabilities catalog. Identified as CVE-2025-55182, this flaw is actively being exploited in the wild. The vulnerability allows attackers to execute arbitrary code, posing a significant threat to systems utilizing React Server Components. Organizations using affected versions should prioritize patching to mitigate potential risks. This development underscores the increasing targeting of popular web frameworks by cybercriminals. React developers are urged to review security advisories and apply updates promptly to safeguard their applications.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/12/critical-react2shell-flaw-added-to-cisa.html"
         },
         {
             "date": "Dec 05 2025",
-            "title": "Dispute Over React Defect Exploitation Hinders Response Efforts",
-            "content": "A contentious debate among cybersecurity researchers is complicating the response to a React defect, with some experts claiming to have observed working proof of concept exploits while others dispute the evidence of active attacks. This disagreement is creating uncertainty around the urgency and nature of the threat. The defect in question could potentially allow attackers to execute arbitrary code on affected systems. Organizations using React should remain vigilant, monitor for unusual activity, and apply any security updates as they become available. The situation highlights the challenges in cybersecurity where proof of exploitation is not always clear-cut.",
+            "title": "Bipartisan Bill Aims to Bolster Healthcare Cybersecurity",
+            "content": "A bipartisan bill reintroduced in Congress aims to address a wide range of cybersecurity issues in the healthcare sector. The legislation proposes new regulations, enhanced training programs, and funding grants to strengthen defenses against cyber threats. This initiative comes amid rising cyberattacks on healthcare institutions, which have been frequent targets due to their critical nature and sensitive data. The bill&#x27;s comprehensive approach seeks to improve incident response and resilience across the sector. Healthcare organizations should monitor legislative developments and prepare for potential changes in compliance requirements. This move reflects a growing recognition of the need for robust cybersecurity measures in protecting patient data and healthcare services.",
             "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/attackers-exploit-react-server-vulnerability/"
+            "sourceUrl": "https://cyberscoop.com/bipartisan-health-care-cybersecurity-legislation-returns-to-address-a-cornucopia-of-issues/"
         },
         {
             "date": "Dec 05 2025",
-            "title": "Senate Report Highlights Risky Use of Signal in Defense Department",
-            "content": "A Senate report has revealed that the misuse of the Signal messaging app within the Department of Defense is indicative of a broader issue of unapproved app usage. The investigation was triggered by the Signalgate scandal involving US Secretary of Defense Pete Hegseth. The report suggests that reliance on non-sanctioned communication tools could pose significant security risks, potentially exposing sensitive information. The Department of Defense is urged to enforce stricter controls and ensure compliance with approved communication protocols. This finding stresses the importance of adhering to established security guidelines in government operations.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4101859/insecure-use-of-signal-app-part-of-wider-department-of-defense-problem-suggests-senate-report.html"
+            "title": "Zero-Click Attack Threatens Google Drive Data via Agentic Browser",
+            "content": "Security researchers at Straiker STAR Labs have uncovered a zero-click attack targeting the Perplexity Comet browser, capable of erasing entire Google Drive contents. This attack leverages crafted emails to execute a destructive sequence without user interaction. The technique exploits vulnerabilities in the browser to bypass security measures and initiate data deletion. Users of affected systems face severe data loss risks, highlighting the need for enhanced email filtering and browser security. This discovery emphasizes the growing sophistication of browser-based attacks and the importance of maintaining up-to-date security configurations. Organizations are advised to review their browser settings and consider implementing additional protective measures.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/12/zero-click-agentic-browser-attack-can.html"
         },
         {
             "date": "Dec 05 2025",
-            "title": "Chinese Cyberspies Exploit VMware vSphere for Persistent Access",
-            "content": "Chinese state-sponsored threat actors are leveraging a backdoor in VMware vCenter and VMware ESXi servers using malware written in the Go programming language. This tactic allows them to maintain long-term persistence in compromised networks, posing a significant threat to organizations relying on VMware infrastructure. The US Cybersecurity and Infrastructure Security Agency (CISA) and other national cybersecurity bodies have issued warnings about this ongoing campaign. Affected organizations should conduct thorough security audits and apply the latest patches to mitigate potential intrusions. This incident underscores the strategic targeting of virtualization platforms by advanced persistent threat groups.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4101866/chinese-cyberspies-target-vmware-vsphere-for-long-term-persistence.html"
-        },
-        {
-            "date": "Dec 05 2025",
-            "title": "AI Coding Tools Found Vulnerable to Malicious Prompt Injection",
-            "content": "Research by Aikido has uncovered that AI coding tools from major providers such as Google, Anthropic, and OpenAI are susceptible to embedding untrusted prompts in software workflows. This vulnerability could allow attackers to manipulate AI-generated code, leading to potential security breaches. Developers using these AI tools should be aware of the risks and implement additional validation and monitoring processes to safeguard their software development environments. This discovery highlights the need for enhanced security measures in AI-assisted coding tools to prevent exploitation by malicious actors.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/ai-coding-tools-can-be-turned-against-you-aikido-github-prompt-injection/"
-        },
-        {
-            "date": "Dec 05 2025",
-            "title": "India Reverses Mandatory Cybersecurity App Rollout Amid Privacy Concerns",
-            "content": "India has decided to roll back its plan to mandate a cybersecurity app for all citizens following widespread privacy and surveillance concerns. The initiative drew comparisons to Apple&#x27;s controversial automatic U2 album download, sparking public backlash over government overreach. Critics argued that the app posed significant privacy risks and lacked transparency regarding data collection practices. This reversal highlights the delicate balance between national security measures and individual privacy rights. Policymakers are urged to engage with stakeholders to develop solutions that respect citizens&#x27; privacy while enhancing cybersecurity.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/india-app-mandate-surveillance-concerns"
-        },
-        {
-            "date": "Dec 05 2025",
-            "title": "Barts Health NHS Data Breach Linked to Oracle Zero-Day Exploit",
-            "content": "Barts Health NHS Trust has disclosed a data breach involving the theft of files by Clop ransomware actors, who exploited a zero-day vulnerability in Oracle&#x27;s E-business Suite software. This breach underscores the critical importance of timely patch management and monitoring for unusual activity in healthcare systems. The affected systems were compromised, potentially exposing sensitive patient data. Organizations using Oracle software should ensure they apply the latest security patches and review their cybersecurity defenses. This incident highlights the ongoing threat posed by ransomware groups targeting vulnerabilities in widely-used enterprise software.",
+            "title": "FBI Alerts Public to Virtual Kidnapping Scams Using Altered Photos",
+            "content": "The FBI has issued a warning about virtual kidnapping scams that utilize altered social media images as fake proof of life. Criminals modify photos shared online to extort ransom payments from victims&#x27; families. This scam underscores the dangers of oversharing personal images on social media platforms. The FBI advises individuals to be cautious about the content they post and to verify any ransom claims through direct contact with the alleged victim. This trend highlights the evolving tactics of cybercriminals in leveraging digital media for fraudulent schemes. Awareness and vigilance are key in preventing financial loss and emotional distress from such scams.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/barts-health-nhs-discloses-data-breach-after-oracle-zero-day-hack/"
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-warns-of-virtual-kidnapping-ransom-scams-using-altered-social-media-photos/"
+        },
+        {
+            "date": "Dec 05 2025",
+            "title": "Urgent Patch Required for Critical XXE Flaw in Apache Tika",
+            "content": "A critical XML External Entity (XXE) injection vulnerability, CVE-2025-66516, has been identified in Apache Tika, prompting an urgent call for patches. This flaw, rated a maximum severity of 10.0 on the CVSS scale, affects Tika versions from 1.13 to 3.2.1. Successful exploitation could lead to unauthorized data access or remote code execution. Organizations relying on Apache Tika for document processing should immediately apply the latest security updates to mitigate this risk. This vulnerability highlights the ongoing challenges in securing open-source software components. Regular updates and security audits are essential to protect against such high-impact threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/12/critical-xxe-bug-cve-2025-66516-cvss.html"
+        },
+        {
+            "date": "Dec 05 2025",
+            "title": "Embracing Zero-Trust Security to Combat Modern Threats",
+            "content": "The transition from traditional perimeter-based security to zero-trust models is becoming crucial in the fight against modern cyber threats. The outdated &quot;castle-and-moat&quot; approach, which assumes implicit trust within the network, has proven inadequate against cloud-based and remote work environments. Zero-trust architecture requires strict verification for all devices and users, regardless of location. This shift is driven by the need to address vulnerabilities exposed by remote work and bring-your-own-device (BYOD) policies. Security professionals are encouraged to adopt zero-trust principles to enhance their organization&#x27;s security posture. Implementing robust identity verification and continuous monitoring can significantly reduce the risk of breaches.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4101173/hardening-browser-security-with-zero-trust-controls.html"
+        },
+        {
+            "date": "Dec 05 2025",
+            "title": "Key Developments: X Fined, Array Flaw Exploited, Iranian Backdoor Detected",
+            "content": "In recent cybersecurity news, the social media platform X has been fined €120 million for data protection violations, highlighting the financial risks of non-compliance with privacy regulations. Additionally, Akamai has patched an HTTP smuggling vulnerability, addressing a critical flaw that could enable unauthorized data access. Meanwhile, a new Iranian backdoor has been detected, indicating ongoing cyber espionage activities targeting sensitive data. These developments underscore the diverse and persistent nature of cyber threats facing organizations today. Security teams should remain vigilant and proactive in applying patches and monitoring for unusual network activity to safeguard their systems against emerging threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/in-other-news-x-fined-e120-million-array-flaw-exploited-new-iranian-backdoor/"
         },
         {
             "date": "May 05 2026",
@@ -63,52 +63,52 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Dec 05 2025",
-            "title": "Yoodli&#x27;s Valuation Surges to Over $300 Million with AI That Enhances Human Capability",
-            "content": "Yoodli, an AI startup founded by a former Google employee, has seen its valuation more than triple to over $300 million. The company develops AI tools designed to assist rather than replace human workers, attracting high-profile clients such as Google, Snowflake, and Databricks. Yoodli&#x27;s technology focuses on enhancing human interaction and productivity, leveraging machine learning to provide real-time feedback and suggestions. This approach contrasts with the trend of AI replacing human jobs, offering a collaborative model instead. Businesses looking to improve efficiency without reducing headcount may find Yoodli&#x27;s solutions particularly appealing. The company&#x27;s growth underscores a shift in AI development towards augmentative rather than disruptive technologies.",
+            "title": "The New York Times Sues Perplexity Over Copyright Infringement",
+            "content": "The New York Times has taken legal action against Perplexity, alleging copyright infringement as part of a broader strategy to compel AI companies into licensing agreements. This lawsuit joins a growing list of publishers seeking financial compensation for the use of their content by AI platforms. The legal battle underscores the tension between content creators and AI firms that utilize large datasets for training models. The outcome of this case could set a precedent for how AI companies negotiate content rights and could influence future licensing deals. Media outlets and AI developers should monitor this case closely, as it could impact operational costs and data usage policies.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/05/ex-googlers-yoodli-triples-valuation-to-300m-with-ai-built-to-assist-not-replace-people/"
+            "sourceUrl": "https://techcrunch.com/2025/12/05/the-new-york-times-is-suing-perplexity-for-copyright-infringement/"
         },
         {
             "date": "Dec 05 2025",
-            "title": "Aaru Achieves $1 Billion Valuation with Innovative Synthetic Research",
-            "content": "Aaru, a startup specializing in AI-driven synthetic research, has raised a Series A funding round valuing the company at $1 billion. The one-year-old company conducts market research using simulated populations, providing insights that traditional methods may overlook. This innovative approach allows for more comprehensive and diverse data analysis, appealing to industries seeking detailed consumer insights. Aaru&#x27;s multi-tier valuation round reflects growing investor confidence in synthetic data&#x27;s potential to revolutionize market research. Companies aiming to harness AI for market analysis may consider exploring Aaru&#x27;s cutting-edge technologies. The startup&#x27;s rapid valuation growth highlights the increasing importance of synthetic data in strategic business decisions.",
+            "title": "Meta Secures AI Data Agreements with Major News Publishers",
+            "content": "Meta has announced new commercial agreements with prominent news publishers, including CNN, Fox News, and Le Monde Group, to deliver real-time news content through its Meta AI platform. This move aims to enhance the platform&#x27;s information accuracy and timeliness by leveraging direct data feeds from these sources. The partnerships reflect a growing trend of tech companies formalizing relationships with content providers to ensure quality data for AI applications. These agreements are likely to benefit Meta&#x27;s AI users by providing more reliable news content while offering publishers a new revenue stream. Companies utilizing AI for news aggregation should consider similar partnerships to enhance data quality.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/05/ai-synthetic-research-startup-aaru-raised-a-series-a-at-a-1b-headline-valuation/"
+            "sourceUrl": "https://techcrunch.com/2025/12/05/meta-signs-commercial-ai-data-agreements-with-publishers-to-offer-real-time-news-on-meta-ai/"
         },
         {
             "date": "Dec 05 2025",
-            "title": "AWS Unveils New AI Agent Tools Amidst Competitive Pressure",
-            "content": "At re:Invent 2025, AWS announced a suite of new AI agent tools, aiming to solidify its position in the competitive AI landscape. The release includes a third-generation AI chip and discounted database services, designed to attract developers and enterprise clients. Despite these advancements, AWS faces challenges in matching the capabilities of leading AI firms. The cloud giant&#x27;s strategy focuses on enterprise AI, leveraging its robust infrastructure to deliver scalable solutions. However, the market&#x27;s response remains mixed, with some questioning AWS&#x27;s ability to compete with more established AI leaders. Organizations considering AWS for AI solutions should evaluate the new tools&#x27; potential impact on their operations and strategy.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/video/aws-needs-you-to-believe-in-ai-agents/"
+            "title": "Corporate AI Strategy Shifts from Pilots to Production",
+            "content": "Organizations are increasingly moving beyond AI pilot projects to full-scale production, marking a significant shift in corporate AI strategy over the past year. Despite high levels of investment, many enterprises face challenges in transitioning from experimentation to operational deployment. Reports indicate that approximately 75% of companies are struggling with this transition. This trend highlights the need for robust AI roadmaps that incorporate human-AI collaboration to overcome technical and strategic hurdles. Enterprises should focus on developing clear implementation strategies and investing in workforce training to successfully integrate AI solutions into their business processes.",
+            "source": "MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2025/12/05/1128730/harnessing-human-ai-collaboration-for-an-ai-roadmap-that-moves-beyond-pilots/"
         },
         {
             "date": "Dec 05 2025",
-            "title": "Meta Acquires Limitless to Advance Personal Superintelligence",
-            "content": "Meta has acquired Limitless, an AI device startup, to further its vision of personal superintelligence. Limitless develops AI technologies that aim to enhance individual cognitive capabilities, aligning with Meta&#x27;s goal of democratizing advanced AI access. This acquisition signals Meta&#x27;s commitment to integrating AI into everyday life, making sophisticated technologies more accessible to the general public. The move is expected to accelerate the development of AI tools that empower users with enhanced decision-making and problem-solving abilities. Companies and developers interested in AI for personal enhancement may find new opportunities in this expanding market. Meta&#x27;s strategic acquisition highlights the growing trend of integrating AI into personal devices.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/05/meta-acquires-ai-device-startup-limitless/"
+            "title": "AI Denial Poses Growing Risk to Enterprises",
+            "content": "Despite the initial excitement surrounding AI technologies like ChatGPT, public sentiment has become increasingly skeptical, particularly following the release of GPT-5. Critics have labeled the new model&#x27;s improvements as incremental, contributing to a negative perception of AI advancements. This skepticism, if left unchecked, could lead to enterprises underestimating the potential of AI technologies, missing out on significant capability gains. Businesses should remain informed about AI developments and assess the true value of updates and innovations. Keeping a balanced perspective on AI&#x27;s capabilities versus its perceived shortcomings is crucial for leveraging its full potential.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/ai/ai-denial-is-becoming-an-enterprise-risk-why-dismissing-slop-obscures-real"
         },
         {
             "date": "Dec 05 2025",
-            "title": "ChatGPT&#x27;s User Growth Stagnates as Competition Intensifies",
-            "content": "A recent report reveals that ChatGPT&#x27;s global monthly active users grew by only 5% from August to November, signaling a slowdown in its user acquisition. In contrast, its competitor Gemini saw a 30% increase in users during the same period. This stagnation may be attributed to increased competition and market saturation in the conversational AI space. OpenAI, the developer of ChatGPT, faces the challenge of maintaining its market position amidst evolving user preferences and technological advancements. Organizations relying on ChatGPT for customer interaction should monitor these trends and explore alternative solutions to remain competitive. The report underscores the dynamic nature of the AI market and the importance of innovation.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/05/chatgpts-user-growth-has-slowed-report-finds/"
+            "title": "UK and Germany Collaborate to Advance Quantum Supercomputing",
+            "content": "The UK and Germany have announced plans to jointly commercialize quantum supercomputing technology, aiming to bridge the gap between research and enterprise applications. This initiative, revealed during the German president&#x27;s state visit, seeks to enhance computing, sensing, and communication capabilities. The collaboration will focus on integrating scientific expertise from both nations to accelerate technological advancements. This strategic partnership is expected to boost innovation in quantum technologies and create new economic opportunities. Companies in the tech sector should prepare for potential disruptions and opportunities arising from advancements in quantum computing.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/uk-and-germany-plan-to-commercialise-quantum-supercomputing/"
         },
         {
             "date": "Dec 05 2025",
-            "title": "AWS Pushes for Trust in AI with New Agent Tools Amidst Skepticism",
-            "content": "AWS&#x27;s latest announcement at re:Invent 2025 introduces a range of AI agent tools, aiming to build trust with enterprise clients. Despite these efforts, AWS is still working to overcome skepticism regarding its ability to compete with established AI leaders. The new tools include a third-generation AI chip and competitive pricing strategies, designed to attract developers and foster innovation. AWS&#x27;s focus on enterprise AI solutions reflects its strategy to leverage existing cloud infrastructure to deliver scalable and reliable services. However, the effectiveness of these tools in gaining market share remains uncertain. Enterprises considering AWS for AI deployment should assess the potential benefits and limitations of these new offerings.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/podcast/nothing-wants-your-money-aws-wants-your-trust-and-spotify-wants-your-data/"
+            "title": "Aluminium OS: The AI-Powered Evolution Beyond ChromeOS",
+            "content": "Aluminium OS has emerged as the AI-driven successor to ChromeOS, representing a significant step in the convergence of mobile and desktop operating systems. This new platform aims to seamlessly integrate AI capabilities into the user experience, offering enhanced functionality and adaptability. Unlike previous attempts by major tech companies, Aluminium OS seeks to bridge the gap between different device ecosystems more effectively. The development reflects ongoing efforts to create more unified and intelligent operating systems. Developers and tech leaders should explore the potential applications of Aluminium OS in both consumer and enterprise environments.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/aluminium-os-is-the-next-iteration-for-the-chromebook-range-chromeos-chrome-os/"
         },
         {
             "date": "Dec 05 2025",
-            "title": "AWS&#x27;s AI Ambitions Face Hurdles as Customers Hesitate",
-            "content": "AWS&#x27;s all-in approach to AI at re:Invent 2025 showcases its commitment to expanding its AI capabilities, but customer readiness remains a concern. The company introduced several new AI technologies, including advanced agent tools and a third-generation AI chip, aimed at enterprise clients. Despite these innovations, AWS must convince its customers of the practical benefits and integration potential of these technologies. The hesitation among enterprises may stem from the complexity of AI adoption and the need for clear ROI. Businesses evaluating AWS&#x27;s AI offerings should consider their readiness for integration and the potential impact on their operations. AWS&#x27;s challenge highlights the broader issue of aligning AI innovation with customer needs and expectations.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/05/aws-reinvent-was-an-all-in-pitch-for-ai-customers-might-not-be-ready/"
+            "title": "AI-Driven Persuasion Set to Transform Election Campaigns",
+            "content": "The use of AI-generated content in political campaigns is poised to revolutionize election strategies, as demonstrated by an AI-generated call mimicking Joe Biden during the 2024 New Hampshire primary. This technology enables the creation of highly convincing synthetic media, raising concerns about misinformation and manipulation. The increasing sophistication of AI in crafting persuasive messages could significantly impact voter perceptions and behaviors. Election officials and political strategists must develop new safeguards and ethical guidelines to address these challenges. Awareness and education about AI&#x27;s role in elections are crucial for maintaining democratic processes.",
+            "source": "MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2025/12/05/1128837/the-era-of-ai-persuasion-in-elections-is-about-to-begin/"
         }
     ],
     "articles": {
