@@ -5,7 +5,7 @@ let articlesData = {};
 async function loadArticlesFromJSON() {
     try {
         console.log('[article-loader] Starting to load articles.json...');
-        const response = await fetch('articles.json?v=20251206-2341');
+        const response = await fetch('articles.json?v=20251206-2352');
         const data = await response.json();
         console.log('[article-loader] Loaded articles.json:', data.articles.length, 'articles');
 
