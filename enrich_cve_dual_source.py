@@ -25,7 +25,7 @@ NVD_RATE_LIMIT = 0.6 if NVD_API_KEY else 6  # seconds between requests
 # (fetch_nvd_cve_details, extract_remediation_links, etc.)
 
 def fetch_nvd_critical_cves(days=7, max_results=50) -> List[Dict]:
-    """Fetch critical CVEs from NVD (CVSS >= 9.0)"""
+    """Fetch critical CVEs from NVD (CVSS >= 9.0) - supports both v3.x and v4.0"""
     print(f"\n📥 Fetching NVD Critical CVEs (last {days} days)...")
     
     end_date = datetime.now()
@@ -38,19 +38,65 @@ def fetch_nvd_critical_cves(days=7, max_results=50) -> List[Dict]:
     if NVD_API_KEY:
         headers['apiKey'] = NVD_API_KEY
     
+    all_vulnerabilities = []
+    
     try:
-        # Query for CRITICAL severity CVEs
-        url = f"{NVD_BASE_URL}?pubStartDate={start_str}&pubEndDate={end_str}&cvssV3Severity=CRITICAL"
+        # Query 1: CVSS v3.x CRITICAL CVEs
+        print("  Querying CVSS v3.x CRITICAL...")
+        url_v3 = f"{NVD_BASE_URL}?pubStartDate={start_str}&pubEndDate={end_str}&cvssV3Severity=CRITICAL"
         
-        response = requests.get(url, headers=headers, timeout=30)
-        response.raise_for_status()
-        data = response.json()
+        response_v3 = requests.get(url_v3, headers=headers, timeout=30)
+        response_v3.raise_for_status()
+        data_v3 = response_v3.json()
         
-        total_results = data.get('totalResults', 0)
-        vulnerabilities = data.get('vulnerabilities', [])
+        v3_results = data_v3.get('totalResults', 0)
+        v3_vulns = data_v3.get('vulnerabilities', [])
+        print(f"    ✓ Found {v3_results} CVSS v3.x critical CVEs")
+        all_vulnerabilities.extend(v3_vulns)
         
-        print(f"✓ Found {total_results} critical CVEs")
-        print(f"  Fetching top {min(max_results, total_results)} for display")
+        # Query 2: Fetch ALL CVEs to catch v4.0 scored ones (NVD API doesn't support cvssV4Severity filter yet)
+        print("  Querying for CVSS v4.0 CVEs (no API filter available, checking manually)...")
+        url_all = f"{NVD_BASE_URL}?pubStartDate={start_str}&pubEndDate={end_str}"
+        
+        # Rate limiting: wait 1 second between requests if no API key
+        if not NVD_API_KEY:
+            import time
+            time.sleep(1)
+        
+        response_all = requests.get(url_all, headers=headers, timeout=30)
+        response_all.raise_for_status()
+        data_all = response_all.json()
+        
+        all_cves = data_all.get('vulnerabilities', [])
+        
+        # Filter for v4.0 CRITICAL CVEs manually
+        v4_vulns = []
+        for vuln in all_cves:
+            metrics = vuln['cve'].get('metrics', {})
+            if metrics.get('cvssMetricV40'):
+                v4_score = metrics['cvssMetricV40'][0]['cvssData'].get('baseScore', 0)
+                v4_severity = metrics['cvssMetricV40'][0]['cvssData'].get('baseSeverity', '')
+                if v4_severity == 'CRITICAL' or v4_score >= 9.0:
+                    v4_vulns.append(vuln)
+        
+        v4_results = len(v4_vulns)
+        print(f"    ✓ Found {v4_results} CVSS v4.0 critical CVEs (score >= 9.0)")
+        all_vulnerabilities.extend(v4_vulns)
+        
+        # Deduplicate by CVE ID (in case a CVE has both v3 and v4 scores)
+        seen_cves = set()
+        unique_vulnerabilities = []
+        for vuln in all_vulnerabilities:
+            cve_id = vuln['cve']['id']
+            if cve_id not in seen_cves:
+                seen_cves.add(cve_id)
+                unique_vulnerabilities.append(vuln)
+        
+        total_unique = len(unique_vulnerabilities)
+        print(f"✓ Total unique critical CVEs: {total_unique} (v3: {v3_results}, v4: {v4_results})")
+        print(f"  Fetching top {min(max_results, total_unique)} for display")
+        
+        vulnerabilities = unique_vulnerabilities
         
         # Convert NVD format to our format
         critical_cves = []
@@ -76,15 +122,33 @@ def fetch_nvd_critical_cves(days=7, max_results=50) -> List[Dict]:
             descriptions = cve_data.get('descriptions', [])
             description = descriptions[0]['value'] if descriptions else "No description available"
             
-            # Get CVSS score
+            # Get CVSS score (check v4.0 first, then v3.1, then v3.0, then v2.0)
             metrics = cve_data.get('metrics', {})
             cvss_score = 9.0  # Default for CRITICAL
             severity = "CRITICAL"
+            cvss_version = "Unknown"
             
-            if metrics.get('cvssMetricV31'):
+            # Priority: v4.0 > v3.1 > v3.0 > v2.0
+            if metrics.get('cvssMetricV40'):
+                cvss_data = metrics['cvssMetricV40'][0]['cvssData']
+                cvss_score = cvss_data['baseScore']
+                severity = cvss_data['baseSeverity']
+                cvss_version = "4.0"
+            elif metrics.get('cvssMetricV31'):
                 cvss_data = metrics['cvssMetricV31'][0]['cvssData']
                 cvss_score = cvss_data['baseScore']
                 severity = cvss_data['baseSeverity']
+                cvss_version = "3.1"
+            elif metrics.get('cvssMetricV30'):
+                cvss_data = metrics['cvssMetricV30'][0]['cvssData']
+                cvss_score = cvss_data['baseScore']
+                severity = cvss_data['baseSeverity']
+                cvss_version = "3.0"
+            elif metrics.get('cvssMetricV2'):
+                cvss_data = metrics['cvssMetricV2'][0]['cvssData']
+                cvss_score = cvss_data['baseScore']
+                severity = cvss_data['baseSeverity'] if 'baseSeverity' in cvss_data else "HIGH"
+                cvss_version = "2.0"
             
             # Get published date
             published = cve_data.get('published', '')
@@ -181,7 +245,7 @@ def main_dual_source():
     print("\n📊 Source 2: NVD Critical (CVSS >= 9.0)")
     print("-" * 70)
     
-    nvd_cves = fetch_nvd_critical_cves(days=7, max_results=30)
+    nvd_cves = fetch_nvd_critical_cves(days=7, max_results=50)
     
     # Combine and deduplicate
     all_cves = cisa_cves + nvd_cves
