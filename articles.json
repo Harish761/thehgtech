@@ -16,7 +16,25 @@
         "Cryptographic Keys",
         "China"
       ],
-      "author": "Harish G"
+      "author": "Harish G",
+      "image": "images/coupang-breach-insider.png",
+      "relatedGuides": [
+        {
+          "title": "Insider Threat Detection",
+          "url": "guides/insider-threat-detection.html",
+          "description": "Comprehensive guide to detecting and preventing insider threats"
+        },
+        {
+          "title": "Network Segmentation & Zero Trust",
+          "url": "guides/network-segmentation-zero-trust.html",
+          "description": "Implementing zero-trust architecture and network segmentation"
+        },
+        {
+          "title": "Incident Response Automation",
+          "url": "guides/incident-response-automation.html",
+          "description": "Automating incident detection and response workflows"
+        }
+      ]
     },
     {
       "id": "article-barts-health-nhs-clop-breach",
@@ -34,7 +52,25 @@
         "CVE-2025-61882",
         "Data Breach"
       ],
-      "author": "Harish G"
+      "author": "Harish G",
+      "image": "images/nhs-healthcare-breach.png",
+      "relatedGuides": [
+        {
+          "title": "Ransomware Response Playbook",
+          "url": "guides/ransomware-response-playbook.html",
+          "description": "Step-by-step guide to responding to ransomware attacks"
+        },
+        {
+          "title": "Zero-Day Detection",
+          "url": "guides/zero-day-detection.html",
+          "description": "Detecting and responding to zero-day vulnerabilities"
+        },
+        {
+          "title": "SIEM Log Analysis",
+          "url": "guides/siem-log-analysis.html",
+          "description": "Advanced log analysis techniques for threat detection"
+        }
+      ]
     },
     {
       "id": "article-apache-tika-xxe-cve-2025-66516",
@@ -411,6 +447,6 @@
       "author": "Harish G"
     }
   ],
-  "version": "20251207-1235",
+  "version": "20251207-1241",
   "lastUpdated": "2025-12-07T07:09:14Z"
 }
