@@ -17,6 +17,7 @@
         "China"
       ],
       "author": "Harish G",
+      "excerpt": "South Korea's largest e-commerce data breach exposes 33.7 million users after a former Chinese employee exploited unrevoked cryptographic keys for five months, highlighting critical failures in access control and offboarding procedures.",
       "image": "images/coupang-breach-insider.png",
       "relatedGuides": [
         {
@@ -53,6 +54,7 @@
         "Data Breach"
       ],
       "author": "Harish G",
+      "excerpt": "Barts Health NHS Trust confirms data breach after Clop ransomware group exploited an Oracle E-Business Suite zero-day vulnerability (CVE-2025-61882) for three months, exposing patient and employee invoice data in a sophisticated healthcare attack.",
       "image": "images/nhs-healthcare-breach.png",
       "relatedGuides": [
         {
@@ -447,6 +449,6 @@
       "author": "Harish G"
     }
   ],
-  "version": "20251207-1241",
+  "version": "20251207-1246",
   "lastUpdated": "2025-12-07T07:09:14Z"
 }
