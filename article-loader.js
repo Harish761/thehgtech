@@ -51,17 +51,28 @@ function renderArticleCards() {
     const container = document.querySelector('#articlesGrid');
     if (!container || !websiteContent || !websiteContent.articleCards) return;
 
-    container.innerHTML = websiteContent.articleCards.map(article => `
-        <div class="article-card" onclick="openArticleModal('${article.id}')">
-            <div class="article-category">${article.category}</div>
-            <h3>${article.title}</h3>
-            <p>${article.excerpt}</p>
-            <div class="article-meta">
-                <span>${article.date}</span>
-                <span class="read-more">Read Full Article →</span>
+    container.innerHTML = websiteContent.articleCards.map(article => {
+        // Get the full article data to access the image
+        const fullArticle = articlesData[article.id];
+        const imageHTML = fullArticle && fullArticle.image
+            ? `<div class="article-image" style="background-image: url('${fullArticle.image}');"></div>`
+            : '';
+
+        return `
+            <div class="article-card" onclick="openArticleModal('${article.id}')">
+                ${imageHTML}
+                <div class="article-content">
+                    <div class="article-category">${article.category}</div>
+                    <h3>${article.title}</h3>
+                    <p>${article.excerpt}</p>
+                    <div class="article-meta">
+                        <span>${article.date}</span>
+                        <span class="read-more">Read Full Article →</span>
+                    </div>
+                </div>
             </div>
-        </div>
-    `).join('');
+        `;
+    }).join('');
 }
 
 // Initialize articles on page load
