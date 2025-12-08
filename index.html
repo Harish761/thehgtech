@@ -934,74 +934,220 @@
         }
 
         .news-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 1.5rem;
-            transition: all 0.3s ease;
+            position: relative;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 0;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             cursor: pointer;
         }
 
+        .news-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #ff006e 0%, #00d9ff 50%, #667eea 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .news-card:hover::before {
+            opacity: 1;
+        }
+
         .news-card:hover {
-            transform: translateY(-6px);
-            border-color: var(--accent-cyan);
-            box-shadow: 0 15px 40px rgba(0, 217, 255, 0.25);
+            transform: translateY(-8px) scale(1.02);
+            border-color: rgba(0, 217, 255, 0.3);
+            box-shadow:
+                0 20px 60px rgba(0, 217, 255, 0.15),
+                0 0 0 1px rgba(0, 217, 255, 0.1),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+        }
+
+        .news-card-header {
+            padding: 1.5rem;
+            padding-bottom: 1rem;
         }
 
         .news-meta {
             display: flex;
             align-items: center;
-            gap: 1rem;
+            gap: 0.75rem;
             margin-bottom: 1rem;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
+            flex-wrap: wrap;
         }
 
         .news-source {
-            color: var(--accent);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.35rem 0.85rem;
+            background: linear-gradient(135deg, rgba(255, 0, 110, 0.15) 0%, rgba(255, 0, 110, 0.05) 100%);
+            border: 1px solid rgba(255, 0, 110, 0.2);
+            border-radius: 20px;
+            color: #ff006e;
             font-weight: 600;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .news-source::before {
+            content: '●';
+            font-size: 0.6rem;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
         }
 
         .news-date {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
             color: var(--text-muted);
+            font-size: 0.8rem;
+        }
+
+        .news-date::before {
+            content: '📅';
+            font-size: 0.9rem;
+        }
+
+        .news-reading-time {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            margin-left: auto;
+        }
+
+        .news-reading-time::before {
+            content: '⏱️';
+            font-size: 0.9rem;
         }
 
         .news-title {
-            font-size: 1.1rem;
-            font-weight: 600;
-            margin-bottom: 0.75rem;
-            line-height: 1.4;
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 0;
+            line-height: 1.5;
+            color: var(--text-primary);
+            background: linear-gradient(135deg, #ffffff 0%, rgba(255, 255, 255, 0.8) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            transition: all 0.3s ease;
+        }
+
+        .news-card:hover .news-title {
+            background: linear-gradient(135deg, #00d9ff 0%, #ffffff 50%, #ff006e 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         .news-content {
-            display: none;
+            max-height: 0;
+            overflow: hidden;
             color: var(--text-secondary);
             font-size: 0.95rem;
-            margin-bottom: 1rem;
-            line-height: 1.7;
+            line-height: 1.8;
+            padding: 0 1.5rem;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            opacity: 0;
         }
 
         .news-content.expanded {
-            display: block;
+            max-height: 1000px;
+            padding: 0 1.5rem 1rem 1.5rem;
+            opacity: 1;
+            margin-top: 1rem;
+        }
+
+        .news-card-footer {
+            padding: 1rem 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            background: rgba(0, 0, 0, 0.2);
         }
 
         .news-toggle {
-            color: var(--accent);
-            font-weight: 500;
-            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-cyan);
+            font-weight: 600;
+            font-size: 0.85rem;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            background: rgba(0, 217, 255, 0.1);
+            border: 1px solid rgba(0, 217, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .news-toggle:hover {
+            background: rgba(0, 217, 255, 0.2);
+            transform: translateX(4px);
+        }
+
+        .news-toggle-icon {
+            transition: transform 0.3s ease;
+            display: inline-block;
+        }
+
+        .news-content.expanded~.news-card-footer .news-toggle-icon {
+            transform: rotate(180deg);
         }
 
         .news-link {
-            display: inline-block;
-            margin-top: 1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
             color: var(--accent);
             text-decoration: none;
-            font-weight: 500;
-            font-size: 0.9rem;
+            font-weight: 600;
+            font-size: 0.85rem;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            background: linear-gradient(135deg, rgba(255, 0, 110, 0.1) 0%, rgba(255, 0, 110, 0.05) 100%);
+            border: 1px solid rgba(255, 0, 110, 0.2);
             transition: all 0.3s ease;
         }
 
         .news-link:hover {
-            text-decoration: underline;
+            background: linear-gradient(135deg, rgba(255, 0, 110, 0.2) 0%, rgba(255, 0, 110, 0.1) 100%);
+            transform: translateX(4px);
+            box-shadow: 0 4px 12px rgba(255, 0, 110, 0.2);
+        }
+
+        .news-link::after {
+            content: '→';
+            transition: transform 0.3s ease;
+        }
+
+        .news-link:hover::after {
+            transform: translateX(4px);
         }
 
         /* CVE Section */
@@ -3783,16 +3929,30 @@
                 const safeContent = sanitizeHTML(item.content || '');
                 const safeUrl = isValidURL(item.sourceUrl) ? item.sourceUrl : '#';
 
+                // Calculate reading time (rough estimate: 200 words per minute)
+                const wordCount = safeContent.replace(/<[^>]*>/g, '').split(/\s+/).length;
+                const readingTime = Math.max(1, Math.ceil(wordCount / 200));
+
                 return `
                     <div class="news-card" onclick="toggleNewsContent(this)">
-                        <div class="news-meta">
-                            <span class="news-source">${safeSource}</span>
-                            <span class="news-date">${safeDate}</span>
+                        <div class="news-card-header">
+                            <div class="news-meta">
+                                <span class="news-source">${safeSource}</span>
+                                <span class="news-date">${safeDate}</span>
+                                <span class="news-reading-time">${readingTime} min read</span>
+                            </div>
+                            <h3 class="news-title">${safeTitle}</h3>
                         </div>
-                        <h3 class="news-title">${safeTitle}</h3>
                         <div class="news-content">${safeContent}</div>
-                        <div class="news-toggle">Read More ↓</div>
-                        <a href="${safeUrl}" class="news-link" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">View Original Source →</a>
+                        <div class="news-card-footer">
+                            <div class="news-toggle">
+                                <span>Read More</span>
+                                <span class="news-toggle-icon">↓</span>
+                            </div>
+                            <a href="${safeUrl}" class="news-link" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+                                <span>View Source</span>
+                            </a>
+                        </div>
                     </div>
                 `;
             }).join('');
@@ -3812,16 +3972,30 @@
                 const safeContent = sanitizeHTML(item.content || '');
                 const safeUrl = isValidURL(item.sourceUrl) ? item.sourceUrl : '#';
 
+                // Calculate reading time
+                const wordCount = safeContent.replace(/<[^>]*>/g, '').split(/\s+/).length;
+                const readingTime = Math.max(1, Math.ceil(wordCount / 200));
+
                 return `
                     <div class="news-card" onclick="toggleNewsContent(this)">
-                        <div class="news-meta">
-                            <span class="news-source">${safeSource}</span>
-                            <span class="news-date">${safeDate}</span>
+                        <div class="news-card-header">
+                            <div class="news-meta">
+                                <span class="news-source">${safeSource}</span>
+                                <span class="news-date">${safeDate}</span>
+                                <span class="news-reading-time">${readingTime} min read</span>
+                            </div>
+                            <h3 class="news-title">${safeTitle}</h3>
                         </div>
-                        <h3 class="news-title">${safeTitle}</h3>
                         <div class="news-content">${safeContent}</div>
-                        <div class="news-toggle">Read More ↓</div>
-                        <a href="${safeUrl}" class="news-link" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">View Original Source →</a>
+                        <div class="news-card-footer">
+                            <div class="news-toggle">
+                                <span>Read More</span>
+                                <span class="news-toggle-icon">↓</span>
+                            </div>
+                            <a href="${safeUrl}" class="news-link" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+                                <span>View Source</span>
+                            </a>
+                        </div>
                     </div>
                 `;
             }).join('');
@@ -3833,9 +4007,19 @@
         function toggleNewsContent(card) {
             const content = card.querySelector('.news-content');
             const toggle = card.querySelector('.news-toggle');
+            const toggleText = toggle?.querySelector('span:first-child');
+            const toggleIcon = toggle?.querySelector('.news-toggle-icon');
+
             if (content && toggle) {
                 content.classList.toggle('expanded');
-                toggle.textContent = content.classList.contains('expanded') ? 'Show Less ↑' : 'Read More ↓';
+                const isExpanded = content.classList.contains('expanded');
+
+                if (toggleText) {
+                    toggleText.textContent = isExpanded ? 'Show Less' : 'Read More';
+                }
+                if (toggleIcon) {
+                    toggleIcon.textContent = isExpanded ? '↑' : '↓';
+                }
             }
         }
 
