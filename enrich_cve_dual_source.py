@@ -184,7 +184,17 @@ def fetch_nvd_critical_cves(days=7, max_results=50) -> List[Dict]:
                 'cvssScore': cvss_score,
                 'cvssVersion': cvss_version,  # NEW: Track CVSS version for badges
                 'isZeroDay': False,  # NVD doesn't track this explicitly
-                'requiredAction': f"Apply security updates per vendor instructions for {vendor} {product}",
+                # Create better requiredAction text
+                if vendor == "Unknown" and product == "Unknown":
+                    required_action = "Apply security updates per vendor instructions"
+                elif vendor == "Unknown":
+                    required_action = f"Apply security updates for {product}"
+                elif product == "Unknown":
+                    required_action = f"Apply {vendor} security updates per vendor instructions"
+                else:
+                    required_action = f"Apply security updates per vendor instructions for {vendor} {product}"
+                
+                'requiredAction': required_action,
                 'dueDate': due_date,
                 'nvdUrl': f"https://nvd.nist.gov/vuln/detail/{cve_id}",
                 'cisaUrl': None,  # Not in CISA KEV
