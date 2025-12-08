@@ -4,53 +4,53 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Dec 06 2025",
-            "title": "Russian University Tied to $25M Academic Cheating Network",
-            "content": "A sprawling academic cheating network linked to Russia&#x27;s largest private university has generated nearly $25 million in revenue, leveraging Google Ads to boost its reach. The network&#x27;s connections to a Kremlin-linked oligarch are raising concerns, especially as the university is also involved in drone production for Russia&#x27;s military efforts in Ukraine. This revelation highlights the intersection of cyber operations and academic integrity issues, with significant implications for educational institutions worldwide. The university&#x27;s dual role in both education and military technology underscores the complex web of influence and operations. Institutions should review their cybersecurity measures to prevent such exploitation and ensure academic standards are upheld.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2025/12/drones-to-diplomas-how-russias-largest-private-university-is-linked-to-a-25m-essay-mill/"
+            "date": "Dec 08 2025",
+            "title": "ISC Stormcast Highlights Emerging Cyber Threats",
+            "content": "The latest ISC Stormcast podcast from the SANS Internet Storm Center provides an overview of current cyber threats, maintaining an InfoCON status of green. The discussion covers recent vulnerabilities and attack vectors that security professionals need to monitor. Although the InfoCON status remains stable, the podcast emphasizes the importance of vigilance in the face of evolving threats. Listeners are encouraged to stay informed on the latest security updates and patches to safeguard their systems. This resource serves as a crucial touchpoint for cybersecurity experts aiming to keep abreast of potential risks in the digital landscape.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32546"
         },
         {
-            "date": "Dec 06 2025",
-            "title": "React2Shell Vulnerability Actively Exploited, Added to CISA KEV",
-            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a critical vulnerability affecting React Server Components (RSC) to its Known Exploited Vulnerabilities (KEV) catalog. Identified as CVE-2025-55182, this flaw has seen active exploitation in the wild. The vulnerability allows attackers to execute arbitrary code on affected systems, posing significant risks to organizations using React. The inclusion in the KEV list underscores the urgency for developers and IT departments to apply patches and mitigate potential breaches. This development highlights the ongoing challenges in securing web applications and the need for vigilance in monitoring and updating software components.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/12/critical-react2shell-flaw-added-to-cisa.html"
-        },
-        {
-            "date": "Dec 05 2025",
-            "title": "Chinese Cyberspies Exploit VMware vSphere for Persistent Access",
-            "content": "Chinese state-sponsored hackers are targeting VMware vCenter and ESXi servers using a Go-based malware to establish long-term persistence in networks. This campaign, detailed in a joint report by the U.S. Cybersecurity and Infrastructure Security Agency (CISA), poses a significant threat to organizations relying on VMware&#x27;s virtualization technology. The malware allows attackers to maintain a foothold in compromised systems, potentially leading to data exfiltration and other malicious activities. Organizations using VMware should prioritize security updates and monitor for unusual activity to mitigate these risks. This incident reflects broader trends in nation-state cyber operations targeting critical infrastructure.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4101866/chinese-cyberspies-target-vmware-vsphere-for-long-term-persistence.html"
-        },
-        {
-            "date": "Dec 05 2025",
-            "title": "AI Coding Tools Embed Untrusted Prompts, Raising Security Concerns",
-            "content": "Aikido has found that AI coding tools from major providers like Google, Anthropic, and OpenAI are embedding untrusted prompts into software development workflows. This practice can potentially expose developers to security risks, as malicious prompts could alter code execution or introduce vulnerabilities. The findings highlight the need for developers to critically evaluate AI-generated suggestions and maintain robust code review processes. As AI tools become integral to software development, understanding their limitations and risks is crucial for maintaining secure coding standards. This report adds to growing concerns about the security implications of AI in development environments.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/ai-coding-tools-can-be-turned-against-you-aikido-github-prompt-injection/"
-        },
-        {
-            "date": "Dec 05 2025",
-            "title": "India Reverses Cybersecurity App Mandate Amid Privacy Concerns",
-            "content": "India has reversed its decision to mandate a cybersecurity app for all citizens following widespread privacy and surveillance concerns. The initiative, reminiscent of Apple&#x27;s controversial automatic U2 album download, faced backlash over potential government overreach and data privacy issues. This rollback reflects the ongoing global debate about balancing cybersecurity measures with individual privacy rights. Citizens and privacy advocates have welcomed the decision, emphasizing the importance of transparent and consensual security practices. The incident serves as a reminder for governments to carefully consider the implications of digital mandates on privacy and civil liberties.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/india-app-mandate-surveillance-concerns"
-        },
-        {
-            "date": "Dec 05 2025",
-            "title": "Barts Health NHS Suffers Data Breach via Oracle Zero-Day Exploit",
-            "content": "Barts Health NHS Trust has disclosed a data breach after Clop ransomware actors exploited a zero-day vulnerability in Oracle&#x27;s E-business Suite software. The breach resulted in unauthorized access to sensitive files, underscoring the critical nature of timely patch management. Oracle users are urged to apply security updates immediately to protect against similar exploits. This incident highlights the persistent threat of ransomware groups targeting healthcare institutions, which often hold valuable personal and medical data. Organizations should enhance their cybersecurity frameworks to guard against such vulnerabilities and ensure patient data protection.",
+            "date": "Dec 07 2025",
+            "title": "OpenAI Clarifies ChatGPT App Recommendations, Not Ads",
+            "content": "OpenAI has addressed concerns regarding the appearance of what seemed like advertisements to users of its ChatGPT Plus subscription, priced at $20. The company clarified that these were not traditional ads but rather app recommendations based on user interactions. This feature aims to enhance user experience by suggesting useful applications, distinguishing it from conventional advertising. OpenAI&#x27;s move reflects a broader trend of integrating AI-driven personalization into services, though it raises questions about transparency and user consent. Subscribers should understand that these recommendations are part of their service package and not a separate ad placement.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/barts-health-nhs-discloses-data-breach-after-oracle-zero-day-hack/"
+            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-denies-rolling-out-ads-on-chatgpt-paid-plans/"
+        },
+        {
+            "date": "Dec 07 2025",
+            "title": "Portugal Revises Cybercrime Law to Protect Security Researchers",
+            "content": "Portugal has updated its cybercrime legislation to protect security researchers operating in good faith, creating a legal safe harbor for their activities. This change means that hacking will not be punishable under certain strict conditions, fostering an environment where researchers can explore vulnerabilities without fear of prosecution. The amendment aligns Portugal with other nations encouraging responsible disclosure and collaboration between researchers and organizations. This legal protection is crucial for advancing cybersecurity research and improving defenses against cyber threats. Security professionals in Portugal should familiarize themselves with the new law to ensure compliance and take advantage of its protections.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/portugal-updates-cybercrime-law-to-exempt-security-researchers/"
+        },
+        {
+            "date": "Dec 06 2025",
+            "title": "React2Shell Exploit Hits 30 Organizations, 77k IPs at Risk",
+            "content": "A critical vulnerability known as React2Shell (CVE-2025-55182) has been exploited, affecting over 77,000 Internet-exposed IP addresses. Attackers have already breached more than 30 organizations across various sectors, leveraging this remote code execution flaw. The vulnerability highlights the urgent need for organizations using affected systems to apply patches and strengthen their security posture. This incident underscores the persistent threat posed by unpatched software and the importance of proactive vulnerability management. Security teams should prioritize identifying and securing systems susceptible to React2Shell to mitigate potential damage.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/react2shell-flaw-exploited-to-breach-30-orgs-77k-ip-addresses-vulnerable/"
+        },
+        {
+            "date": "Dec 06 2025",
+            "title": "AI Coding Tools Expose Over 30 Flaws Enabling Data Theft",
+            "content": "Researchers have uncovered more than 30 vulnerabilities in AI-powered Integrated Development Environments (IDEs), which could lead to data theft and remote code execution. These flaws exploit prompt injection primitives, blending them with legitimate IDE features to compromise security. The findings reveal significant risks for developers using these tools, emphasizing the need for robust security measures in AI development environments. As AI integration in coding tools grows, this discovery highlights the critical need for comprehensive security assessments and updates. Developers should review and apply security patches to affected IDEs to protect against potential exploits.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/12/researchers-uncover-30-flaws-in-ai.html"
+        },
+        {
+            "date": "Dec 06 2025",
+            "title": "Palo Alto GlobalProtect Portals Targeted in VPN Login Attempts",
+            "content": "A new wave of cyber attacks is targeting Palo Alto GlobalProtect portals, focusing on unauthorized login attempts and scanning SonicWall SonicOS API endpoints. This campaign indicates a concerted effort to exploit vulnerabilities in popular VPN solutions, potentially compromising sensitive corporate networks. Organizations using these systems should enhance their security measures, including implementing multi-factor authentication and monitoring for unusual activity. The trend of targeting VPN infrastructures underscores the importance of securing remote access solutions as part of a comprehensive cybersecurity strategy. Security teams should remain vigilant and apply necessary updates to mitigate these threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-wave-of-vpn-login-attempts-targets-palo-alto-globalprotect-portals/"
         },
         {
             "date": "Dec 05 2025",
-            "title": "Bipartisan Bill Reintroduces Comprehensive Health Care Cybersecurity Measures",
-            "content": "A bipartisan bill addressing a wide range of healthcare cybersecurity issues has been reintroduced, aiming to enhance regulations, training, and grant allocations. Originally proposed last year, the legislation seeks to fortify the cybersecurity posture of healthcare systems, which are frequent targets for cyberattacks. The bill emphasizes the need for improved security standards, awareness, and resources to protect sensitive health data. Stakeholders in the healthcare sector should monitor the progress of this legislation, which could lead to significant changes in cybersecurity practices. This initiative reflects a growing recognition of the critical importance of securing healthcare infrastructure against evolving cyber threats.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/bipartisan-health-care-cybersecurity-legislation-returns-to-address-a-cornucopia-of-issues/"
+            "title": "React2Shell Vulnerability Actively Exploited, Urgent Patching Needed",
+            "content": "The React2Shell vulnerability in open-source React server and Next.js environments is under active exploitation by threat actors, according to researchers at Greynoise. They report seeing widespread, automated attempts to exploit this flaw, emphasizing the critical need for immediate patching. Organizations using these platforms should prioritize deploying security updates to prevent unauthorized access and potential data breaches. This development highlights the ongoing risk posed by unpatched software and the necessity for timely vulnerability management. Security professionals must act swiftly to mitigate the impact of this exploit and safeguard their IT environments.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4101890/warning-react2shell-vulnerability-already-being-exploited-by-threat-actors.html"
         },
         {
             "date": "May 05 2026",
@@ -62,60 +62,53 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Dec 05 2025",
-            "title": "AWS Unveils New AI Technologies Amid Customer Readiness Concerns",
-            "content": "Amazon Web Services (AWS) has unveiled a suite of advanced AI technologies at its annual re:Invent conference. These offerings include enhancements to its machine learning platform and AI-driven analytics tools. However, there is skepticism about whether enterprise customers are prepared to integrate these innovations into their existing infrastructures. The AI tools are designed to streamline operations and enhance data processing capabilities, yet many organizations are still grappling with foundational AI adoption. This disconnect highlights a broader industry challenge where technological advancements outpace enterprise readiness. Companies should evaluate their current AI strategies and infrastructure to leverage AWS’s new tools effectively.",
+            "date": "Dec 07 2025",
+            "title": "OpenAI Disables App Suggestions Amid Ad Concerns",
+            "content": "OpenAI has deactivated recent app suggestions in ChatGPT that users perceived as advertisements, despite the company&#x27;s insistence that no ads are currently implemented or tested within the platform. The move follows feedback from users and an acknowledgment by OpenAI&#x27;s chief research officer that the promotional messages fell short of expectations. This development highlights the delicate balance AI companies must maintain between user experience and monetization strategies. While OpenAI has yet to introduce formal advertising, the incident underscores the challenges of maintaining transparency and user trust in AI-driven applications. Users are advised to stay informed about updates in app functionalities and company policies.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/05/aws-reinvent-was-an-all-in-pitch-for-ai-customers-might-not-be-ready/"
-        },
-        {
-            "date": "Dec 05 2025",
-            "title": "The New York Times Sues Perplexity Over Copyright Infringement",
-            "content": "The New York Times has initiated a copyright infringement lawsuit against the AI company Perplexity. This legal action reflects a growing trend among publishers seeking compensation from AI firms that utilize their content without proper licensing. The lawsuit underscores the tension between content creators and AI developers, as publishers demand fair compensation for the use of their intellectual property. This case could set a precedent for future legal battles in the AI industry. Companies using AI for content generation should review their licensing agreements and ensure compliance to avoid similar legal challenges.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/05/the-new-york-times-is-suing-perplexity-for-copyright-infringement/"
-        },
-        {
-            "date": "Dec 05 2025",
-            "title": "Meta Partners with Major Publishers for Real-Time News on Meta AI",
-            "content": "Meta has announced new commercial agreements with several prominent publishers, including CNN, Fox News, and USA Today, to provide real-time news on its Meta AI platform. This collaboration aims to enhance the platform&#x27;s news delivery capabilities by integrating diverse and timely content. The agreements signify Meta&#x27;s commitment to responsible AI development by ensuring access to verified news sources. This move could reshape how users interact with news on digital platforms, emphasizing the importance of credible information. Businesses should consider the implications of such partnerships on their content distribution strategies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/05/meta-signs-commercial-ai-data-agreements-with-publishers-to-offer-real-time-news-on-meta-ai/"
-        },
-        {
-            "date": "Dec 05 2025",
-            "title": "Overcoming AI Pilot Challenges for Enterprise Integration",
-            "content": "Organizations are increasingly focusing on transitioning AI projects from pilot phases to full-scale production. Despite significant investments, many enterprises struggle to integrate AI solutions effectively. This challenge stems from complex realities such as data quality issues and the need for robust AI governance frameworks. With three-quarters of companies facing these hurdles, there is a pressing need for strategic roadmaps that prioritize human-AI collaboration. Businesses should assess their AI maturity levels and invest in training to bridge the gap between experimentation and operational deployment.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2025/12/05/1128730/harnessing-human-ai-collaboration-for-an-ai-roadmap-that-moves-beyond-pilots/"
-        },
-        {
-            "date": "Dec 05 2025",
-            "title": "AI Denial Poses New Risks for Enterprises",
-            "content": "The initial excitement surrounding AI technologies like ChatGPT has given way to skepticism, as organizations grapple with the complexities of AI integration. The release of GPT-5 by OpenAI received mixed reviews, highlighting the challenges in meeting heightened expectations. Dismissing AI as mere &quot;slop&quot; overlooks the substantial capability gains achieved in recent years. Enterprises that fail to recognize AI’s potential risk falling behind in innovation. It is crucial for businesses to adopt a balanced approach, acknowledging both AI’s limitations and its transformative potential, to remain competitive.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/ai-denial-is-becoming-an-enterprise-risk-why-dismissing-slop-obscures-real"
-        },
-        {
-            "date": "Dec 05 2025",
-            "title": "UK and Germany Collaborate to Advance Quantum Supercomputing",
-            "content": "The UK and Germany have announced plans to collaborate on the commercialization of quantum supercomputing. This initiative aims to bridge the gap between research and enterprise applications, accelerating advancements in computing and sensitive data processing. The partnership was formalized during the German president’s state visit, highlighting the strategic importance of international cooperation in quantum technology. As quantum computing promises to revolutionize industries, businesses should prepare for its impact by investing in quantum literacy and exploring potential applications within their sectors.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/uk-and-germany-plan-to-commercialise-quantum-supercomputing/"
-        },
-        {
-            "date": "Dec 05 2025",
-            "title": "Aluminium OS Emerges as AI-Powered Successor to ChromeOS",
-            "content": "The tech industry is witnessing the emergence of Aluminium OS, an AI-powered operating system designed to succeed ChromeOS. This development marks a significant step towards the convergence of mobile and desktop operating systems, a goal that has eluded major tech firms for years. Aluminium OS integrates AI to enhance user experience and streamline cross-platform functionality. As this new OS gains traction, it could redefine user interactions with devices, offering seamless integration across various platforms. Organizations should monitor this evolution to assess its potential impact on their IT ecosystems.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/aluminium-os-is-the-next-iteration-for-the-chromebook-range-chromeos-chrome-os/"
+            "sourceUrl": "https://techcrunch.com/2025/12/07/openai-says-its-turned-off-app-suggestions-that-look-like-ads/"
         },
         {
             "date": "Dec 07 2025",
-            "title": "Intel Aims to Revive Moore&#x27;s Law with Federal Assistance",
-            "content": "Intel CEO Pat Gelsinger has announced plans to produce its first silicon wafers by 2028, with an operational commercial system expected by 2029. This ambitious timeline is part of Intel&#x27;s strategy to reinvigorate Moore&#x27;s Law, the prediction that the number of transistors on a chip doubles approximately every two years. The initiative seeks federal support to accelerate research and development. If successful, this could significantly impact chip manufacturing and computational power, benefiting industries reliant on advanced processing capabilities. Professionals in the semiconductor field should monitor this development as it may influence future technology standards and competitive dynamics.",
+            "title": "Challenges Persist for AI Coding Agents in Production Environments",
+            "content": "AI coding agents are struggling to become production-ready due to brittle context windows, broken refactors, and a lack of operational awareness. These issues hinder the seamless integration of AI-generated code into real-world applications, despite the ease of code generation offered by large language models (LLMs). The limitations highlight the gap between AI&#x27;s potential and practical application, affecting developers who rely on these tools for efficient coding solutions. As AI continues to evolve, developers must remain cautious and critically assess the output of AI coding agents. The industry needs robust solutions to address these shortcomings, ensuring reliable and efficient software development processes.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/ai/why-ai-coding-agents-arent-production-ready-brittle-context-windows-broken"
+        },
+        {
+            "date": "Dec 05 2025",
+            "title": "Yoodli Valuation Surges to $300M+ with AI Focused on Human Assistance",
+            "content": "Yoodli, a startup founded by a former Google employee, has seen its valuation triple to over $300 million, driven by its AI technology designed to assist rather than replace human capabilities. The company counts major tech firms like Google, Snowflake, and Databricks among its clients, underscoring the demand for AI solutions that enhance human productivity. Yoodli&#x27;s approach reflects a growing trend in the AI industry, where the focus is shifting towards collaborative tools that empower users. This development highlights the potential for AI to augment human skills across various sectors, offering opportunities for businesses to integrate AI in a supportive role.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/06/pat-gelsinger-wants-to-save-moores-law-with-a-little-help-from-the-feds/"
+            "sourceUrl": "https://techcrunch.com/2025/12/05/ex-googlers-yoodli-triples-valuation-to-300m-with-ai-built-to-assist-not-replace-people/"
+        },
+        {
+            "date": "Dec 05 2025",
+            "title": "Aaru Achieves $1B Valuation with Series A Funding for AI Synthetic Research",
+            "content": "Aaru, a startup specializing in AI-driven synthetic market research, has raised a Series A funding round, achieving a headline valuation of $1 billion. The company, which simulates populations to conduct market research, has experienced rapid growth within its first year of operation. This milestone reflects the increasing interest in AI solutions that provide insights through simulated environments, offering businesses a novel approach to understanding consumer behavior. As AI continues to transform market research, companies like Aaru are poised to lead the way in developing innovative methodologies. Stakeholders should monitor developments in synthetic research to leverage these insights for strategic decision-making.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/05/ai-synthetic-research-startup-aaru-raised-a-series-a-at-a-1b-headline-valuation/"
+        },
+        {
+            "date": "Dec 05 2025",
+            "title": "AWS Unveils New AI Agent Tools Amid Competitive Pressure",
+            "content": "Amazon Web Services (AWS) announced a suite of new AI agent tools at its re:Invent 2025 conference, aiming to solidify its position in the enterprise AI market. Despite the launch of a third-generation chip and attractive database discounts, AWS faces stiff competition from established AI leaders. The cloud giant&#x27;s strategy underscores its commitment to expanding beyond infrastructure services into AI-driven solutions. This move is crucial for AWS as it seeks to capture a larger share of the AI market, which is rapidly evolving with advancements in machine learning and automation. Enterprises should evaluate AWS&#x27;s offerings in the context of their AI strategy to maximize potential benefits.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/video/aws-needs-you-to-believe-in-ai-agents/"
+        },
+        {
+            "date": "Dec 05 2025",
+            "title": "Meta Acquires Limitless to Advance AI-Powered Personal Devices",
+            "content": "Meta has acquired Limitless, an AI device startup, to further its mission of bringing personal superintelligence to consumers. Limitless shares Meta&#x27;s vision of integrating AI into everyday devices, enhancing user experiences with intelligent, personalized interactions. This acquisition is part of Meta&#x27;s broader strategy to lead in the AI space, focusing on innovative hardware that complements its software ecosystem. The deal signals a growing trend of tech giants investing in AI startups to accelerate the development of next-generation consumer technologies. Industry professionals should watch for new product releases and partnerships resulting from this acquisition, which could reshape the landscape of AI-powered devices.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/05/meta-acquires-ai-device-startup-limitless/"
+        },
+        {
+            "date": "Dec 05 2025",
+            "title": "ChatGPT User Growth Slows as Competition Intensifies",
+            "content": "A recent report indicates that ChatGPT&#x27;s global monthly active users grew by only 5% from August to November, compared to a 30% growth for its competitor, Gemini. This slowdown in user acquisition highlights the increasing competition in the AI chatbot market, where new entrants are rapidly gaining traction. The data suggests that while ChatGPT remains popular, its dominance is being challenged by alternatives offering unique features or improved user experiences. For developers and businesses leveraging AI chatbots, staying informed about market dynamics and emerging competitors is crucial. Adapting to user preferences and technological advancements will be key to maintaining relevance in this competitive landscape.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/05/chatgpts-user-growth-has-slowed-report-finds/"
         }
     ],
     "articles": {},
