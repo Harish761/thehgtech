@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Security Metrics & KPIs Dashboard Guide | TheHGTech</title>
+    <meta name="title" content="Security Metrics & KPIs Dashboard Guide | TheHGTech">
+    <meta name="description"
+        content="Comprehensive guide to building effective security metrics dashboards. Learn key performance indicators, visualization techniques, and executive reporting for cybersecurity programs.">
+    <meta name="keywords"
+        content="security metrics, KPIs, cybersecurity dashboard, security analytics, CISO metrics, executive reporting, security program effectiveness, risk metrics">
+    <meta name="author" content="TheHGTech">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thehgtech.com/guides/security-metrics-kpis-dashboard.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/guides/security-metrics-kpis-dashboard.html">
+    <meta property="og:title" content="Security Metrics & KPIs Dashboard Guide">
+    <meta property="og:description"
+        content="Master security metrics and KPI dashboards for effective cybersecurity program management.">
+    <meta property="og:image" content="https://thehgtech.com/guides/images/security-metrics-dashboard.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://thehgtech.com/guides/security-metrics-kpis-dashboard.html">
+    <meta name="twitter:title" content="Security Metrics & KPIs Dashboard Guide">
+    <meta name="twitter:description" content="Comprehensive guide to building effective security metrics dashboards.">
+    <meta name="twitter:image" content="https://thehgtech.com/guides/images/security-metrics-dashboard.png">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Security Metrics & KPIs Dashboard Guide",
+      "description": "Track and visualize security program effectiveness with meaningful metrics and executive dashboards",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://thehgtech.com/guides/images/security-metrics-dashboard.png",
+        "width": 1200,
+        "height": 630
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "TheHGTech",
+        "url": "https://thehgtech.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TheHGTech",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://thehgtech.com/logo.png",
+          "width": 600,
+          "height": 60
+        }
+      },
+      "datePublished": "2025-12-08",
+      "dateModified": "2025-12-08",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://thehgtech.com/guides/security-metrics-kpis-dashboard.html"
+      },
+      "keywords": "security metrics, KPIs, cybersecurity dashboard, security analytics",
+      "articleSection": "Security Guides",
+      "inLanguage": "en-US",
+      "wordCount": 4200
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-pink: #FF006E;
+            --accent-purple: #667eea;
+            --text-primary: #ffffff;
+            --text-secondary: rgba(255, 255, 255, 0.8);
+            --text-muted: rgba(255, 255, 255, 0.5);
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-secondary);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-cyan);
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            transform: translateX(-4px);
+        }
+
+        .guide-header {
+            margin-bottom: 3rem;
+        }
+
+        .guide-meta {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .difficulty-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: linear-gradient(135deg, rgba(255, 149, 0, 0.15) 0%, rgba(255, 149, 0, 0.05) 100%);
+            border: 1px solid rgba(255, 149, 0, 0.2);
+            border-radius: 20px;
+            color: #ff9500;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .read-time {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--accent-cyan) 0%, var(--text-primary) 50%, var(--accent-pink) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .guide-description {
+            font-size: 1.15rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .hero-image {
+            width: 100%;
+            border-radius: 16px;
+            margin: 2rem 0 3rem 0;
+            box-shadow: 0 20px 60px rgba(0, 217, 255, 0.2);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 3rem 0 1.5rem 0;
+            color: var(--text-primary);
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin: 2rem 0 1rem 0;
+            color: var(--text-primary);
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+        }
+
+        ul,
+        ol {
+            margin: 1.5rem 0;
+            padding-left: 2rem;
+        }
+
+        li {
+            margin-bottom: 0.75rem;
+        }
+
+        .info-box {
+            background: linear-gradient(135deg, rgba(0, 217, 255, 0.1) 0%, rgba(0, 217, 255, 0.05) 100%);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .warning-box {
+            background: linear-gradient(135deg, rgba(255, 149, 0, 0.1) 0%, rgba(255, 149, 0, 0.05) 100%);
+            border-left: 4px solid #ff9500;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .code-block {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+        }
+
+        .section-image {
+            width: 100%;
+            border-radius: 12px;
+            margin: 2rem 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .metric-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .metric-card h4 {
+            color: var(--accent-cyan);
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .container {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="../guides/" class="back-link">← Back to Guides</a>
+
+        <div class="guide-header">
+            <div class="guide-meta">
+                <span class="difficulty-badge">🎯 Intermediate</span>
+                <span class="read-time">📖 12 min read</span>
+            </div>
+            <h1>Security Metrics & KPIs Dashboard</h1>
+            <p class="guide-description">
+                Track and visualize security program effectiveness with meaningful metrics and executive dashboards.
+                Learn how to measure what matters, communicate security posture to leadership, and drive continuous
+                improvement through data-driven insights.
+            </p>
+        </div>
+
+        <img src="images/security-metrics-dashboard.png" alt="Security Metrics Dashboard" class="hero-image">
+
+        <h2>📊 Why Security Metrics Matter</h2>
+        <p>
+            In the modern cybersecurity landscape, "what gets measured gets managed." Security metrics and KPIs (Key
+            Performance Indicators) are essential for:
+        </p>
+        <ul>
+            <li><strong>Demonstrating Value:</strong> Prove the ROI of security investments to executives and
+                stakeholders</li>
+            <li><strong>Identifying Gaps:</strong> Pinpoint weaknesses in your security posture before they're exploited
+            </li>
+            <li><strong>Tracking Progress:</strong> Monitor improvement over time and validate security initiatives</li>
+            <li><strong>Resource Allocation:</strong> Make data-driven decisions about where to invest time and budget
+            </li>
+            <li><strong>Compliance:</strong> Meet regulatory requirements and demonstrate due diligence</li>
+            <li><strong>Benchmarking:</strong> Compare your security posture against industry standards</li>
+        </ul>
+
+        <div class="info-box">
+            <strong>💡 Key Principle:</strong> The best security metrics are actionable, measurable, and aligned with
+            business objectives. Avoid vanity metrics that look good but don't drive meaningful improvements.
+        </div>
+
+        <h2>🎯 Essential Security KPIs</h2>
+
+        <h3>1. Vulnerability Management Metrics</h3>
+        <div class="metric-card">
+            <h4>Mean Time to Detect (MTTD)</h4>
+            <p>Average time from vulnerability disclosure to detection in your environment.</p>
+            <p><strong>Target:</strong>
+                < 24 hours for critical vulnerabilities</p>
+                    <p><strong>Formula:</strong> Total detection time / Number of vulnerabilities</p>
+        </div>
+
+        <div class="metric-card">
+            <h4>Mean Time to Remediate (MTTR)</h4>
+            <p>Average time from vulnerability detection to successful remediation.</p>
+            <p><strong>Target:</strong>
+                < 7 days for critical, < 30 days for high</p>
+                    <p><strong>Formula:</strong> Total remediation time / Number of vulnerabilities</p>
+        </div>
+
+        <div class="metric-card">
+            <h4>Vulnerability Backlog</h4>
+            <p>Number of unpatched vulnerabilities by severity level.</p>
+            <p><strong>Target:</strong> 0 critical, < 10 high-severity vulnerabilities</p>
+                    <p><strong>Trend:</strong> Should decrease over time</p>
+        </div>
+
+        <img src="images/kpi-tracking.png" alt="KPI Tracking Visualization" class="section-image">
+
+        <h3>2. Incident Response Metrics</h3>
+        <div class="metric-card">
+            <h4>Mean Time to Acknowledge (MTTA)</h4>
+            <p>Average time from alert generation to analyst acknowledgment.</p>
+            <p><strong>Target:</strong>
+                < 15 minutes for critical alerts</p>
+        </div>
+
+        <div class="metric-card">
+            <h4>Mean Time to Contain (MTTC)</h4>
+            <p>Average time from incident detection to containment.</p>
+            <p><strong>Target:</strong>
+                < 1 hour for critical incidents</p>
+        </div>
+
+        <div class="metric-card">
+            <h4>Incident Volume by Severity</h4>
+            <p>Number of security incidents categorized by severity level.</p>
+            <p><strong>Trend:</strong> Critical incidents should decrease over time</p>
+        </div>
+
+        <h3>3. Security Awareness Metrics</h3>
+        <ul>
+            <li><strong>Phishing Simulation Click Rate:</strong> Percentage of employees who click phishing links
+                (Target: < 5%)</li>
+            <li><strong>Training Completion Rate:</strong> Percentage of employees completing security training (Target:
+                > 95%)</li>
+            <li><strong>Security Incident Reporting Rate:</strong> Number of user-reported security incidents (Higher is
+                better)</li>
+            <li><strong>Password Policy Compliance:</strong> Percentage of users following password best practices
+                (Target: > 90%)</li>
+        </ul>
+
+        <h3>4. Access Control Metrics</h3>
+        <ul>
+            <li><strong>Privileged Account Usage:</strong> Number and frequency of privileged account access</li>
+            <li><strong>Access Review Completion:</strong> Percentage of access reviews completed on time (Target: 100%)
+            </li>
+            <li><strong>Orphaned Accounts:</strong> Number of accounts belonging to terminated employees (Target: 0)
+            </li>
+            <li><strong>MFA Adoption Rate:</strong> Percentage of users with multi-factor authentication enabled
+                (Target: 100%)</li>
+        </ul>
+
+        <h3>5. Compliance Metrics</h3>
+        <ul>
+            <li><strong>Policy Compliance Rate:</strong> Percentage of systems compliant with security policies</li>
+            <li><strong>Audit Findings:</strong> Number of audit findings by severity</li>
+            <li><strong>Control Effectiveness:</strong> Percentage of security controls operating effectively</li>
+            <li><strong>Regulatory Violations:</strong> Number of compliance violations (Target: 0)</li>
+        </ul>
+
+        <h2>📈 Building Effective Dashboards</h2>
+
+        <h3>Executive Dashboard (C-Level)</h3>
+        <p>Focus on high-level business impact and risk posture:</p>
+        <ul>
+            <li><strong>Overall Security Posture Score:</strong> Single metric (0-100) representing overall security
+                health</li>
+            <li><strong>Risk Exposure:</strong> Total number of critical/high-risk vulnerabilities</li>
+            <li><strong>Incident Trends:</strong> Month-over-month incident volume and severity</li>
+            <li><strong>Compliance Status:</strong> Percentage of compliance requirements met</li>
+            <li><strong>Security Investment ROI:</strong> Cost savings from prevented incidents</li>
+        </ul>
+
+        <img src="images/executive-report.png" alt="Executive Security Report" class="section-image">
+
+        <div class="info-box">
+            <strong>💡 Executive Dashboard Tip:</strong> Use traffic light indicators (red/yellow/green) and trend
+            arrows. Executives need to understand security posture at a glance without deep technical knowledge.
+        </div>
+
+        <h3>Operational Dashboard (Security Team)</h3>
+        <p>Detailed metrics for day-to-day security operations:</p>
+        <ul>
+            <li><strong>Real-time Alert Queue:</strong> Current number of unresolved security alerts</li>
+            <li><strong>Vulnerability Scan Results:</strong> Latest scan findings with remediation status</li>
+            <li><strong>Threat Intelligence Feed:</strong> Recent threat indicators and IOCs</li>
+            <li><strong>System Health Monitoring:</strong> Status of security tools and controls</li>
+            <li><strong>User Activity Anomalies:</strong> Suspicious user behaviors requiring investigation</li>
+        </ul>
+
+        <h3>Tactical Dashboard (Analysts)</h3>
+        <p>Granular data for security analysts and incident responders:</p>
+        <ul>
+            <li><strong>SIEM Event Correlation:</strong> Security events grouped by attack patterns</li>
+            <li><strong>Endpoint Detection Status:</strong> EDR coverage and detection rates</li>
+            <li><strong>Network Traffic Analysis:</strong> Anomalous network connections and data exfiltration attempts
+            </li>
+            <li><strong>Investigation Workbench:</strong> Active investigations with timeline and evidence</li>
+        </ul>
+
+        <h2>🛠️ Implementation Best Practices</h2>
+
+        <h3>1. Start with Business Objectives</h3>
+        <p>
+            Don't measure metrics just because you can. Start by understanding what your organization cares about:
+        </p>
+        <ul>
+            <li>What are the biggest security risks to the business?</li>
+            <li>What compliance requirements must be met?</li>
+            <li>What security incidents would have the most business impact?</li>
+            <li>How can security enable business growth?</li>
+        </ul>
+
+        <h3>2. Automate Data Collection</h3>
+        <p>
+            Manual metric collection is time-consuming and error-prone. Leverage automation:
+        </p>
+        <ul>
+            <li><strong>SIEM Integration:</strong> Automatically collect security event data</li>
+            <li><strong>Vulnerability Scanner APIs:</strong> Pull vulnerability data programmatically</li>
+            <li><strong>Ticketing System Integration:</strong> Track incident response metrics automatically</li>
+            <li><strong>Cloud Security Posture Management:</strong> Continuous compliance monitoring</li>
+        </ul>
+
+        <div class="code-block">
+            # Example: Python script to collect vulnerability metrics
+            import requests
+            import json
+
+            def get_vulnerability_metrics():
+            # Connect to vulnerability scanner API
+            api_url = "https://scanner.company.com/api/v1/vulnerabilities"
+            headers = {"Authorization": "Bearer YOUR_API_TOKEN"}
+
+            response = requests.get(api_url, headers=headers)
+            vulns = response.json()
+
+            # Calculate metrics
+            critical_count = len([v for v in vulns if v['severity'] == 'critical'])
+            high_count = len([v for v in vulns if v['severity'] == 'high'])
+            avg_age = sum([v['days_open'] for v in vulns]) / len(vulns)
+
+            return {
+            "critical_vulnerabilities": critical_count,
+            "high_vulnerabilities": high_count,
+            "average_age_days": avg_age
+            }
+        </div>
+
+        <h3>3. Visualize Trends, Not Just Snapshots</h3>
+        <p>
+            A single data point tells you where you are. A trend tells you where you're going:
+        </p>
+        <ul>
+            <li>Show month-over-month and year-over-year comparisons</li>
+            <li>Use line graphs to visualize improvement or degradation</li>
+            <li>Highlight significant changes with annotations</li>
+            <li>Set baseline metrics to measure progress against</li>
+        </ul>
+
+        <h3>4. Establish Baselines and Targets</h3>
+        <p>
+            Metrics without context are meaningless. For each KPI:
+        </p>
+        <ul>
+            <li><strong>Baseline:</strong> Where you are today</li>
+            <li><strong>Target:</strong> Where you want to be</li>
+            <li><strong>Industry Benchmark:</strong> How you compare to peers</li>
+            <li><strong>Threshold:</strong> When to escalate or take action</li>
+        </ul>
+
+        <div class="warning-box">
+            <strong>⚠️ Common Pitfall:</strong> Avoid "metric gaming" where teams optimize for the metric instead of
+            actual security improvement. For example, closing tickets quickly without proper remediation just to improve
+            MTTR.
+        </div>
+
+        <h3>5. Review and Refine Regularly</h3>
+        <p>
+            Your metrics should evolve as your security program matures:
+        </p>
+        <ul>
+            <li>Quarterly review of metric relevance and accuracy</li>
+            <li>Retire metrics that no longer provide value</li>
+            <li>Add new metrics as threats and priorities change</li>
+            <li>Solicit feedback from stakeholders on dashboard usefulness</li>
+        </ul>
+
+        <h2>📊 Dashboard Tools and Technologies</h2>
+
+        <h3>Commercial Solutions</h3>
+        <ul>
+            <li><strong>Splunk:</strong> Comprehensive SIEM with powerful dashboarding capabilities</li>
+            <li><strong>Tableau:</strong> Advanced data visualization for security analytics</li>
+            <li><strong>Power BI:</strong> Microsoft's business intelligence platform with security integrations</li>
+            <li><strong>Domo:</strong> Cloud-based BI platform with real-time dashboards</li>
+        </ul>
+
+        <h3>Open Source Options</h3>
+        <ul>
+            <li><strong>Grafana:</strong> Popular open-source dashboarding tool with extensive plugin ecosystem</li>
+            <li><strong>Kibana:</strong> Visualization layer for Elasticsearch (ELK stack)</li>
+            <li><strong>Apache Superset:</strong> Modern data exploration and visualization platform</li>
+            <li><strong>Metabase:</strong> Simple, open-source business intelligence tool</li>
+        </ul>
+
+        <h3>Custom Development</h3>
+        <ul>
+            <li><strong>Python + Plotly:</strong> Build interactive dashboards with Python</li>
+            <li><strong>React + D3.js:</strong> Create custom web-based security dashboards</li>
+            <li><strong>Jupyter Notebooks:</strong> Ad-hoc analysis and metric exploration</li>
+        </ul>
+
+        <h2>🎯 Measuring Success</h2>
+
+        <p>
+            Your security metrics program is successful when:
+        </p>
+        <ul>
+            <li><strong>Executives understand security posture</strong> without needing technical translation</li>
+            <li><strong>Security team makes data-driven decisions</strong> about priorities and resource allocation</li>
+            <li><strong>Trends show continuous improvement</strong> in key security areas</li>
+            <li><strong>Metrics drive action</strong> rather than just reporting status</li>
+            <li><strong>Stakeholders trust the data</strong> and use it for decision-making</li>
+        </ul>
+
+        <div class="info-box">
+            <strong>💡 Remember:</strong> The goal isn't perfect metrics—it's actionable insights that improve security
+            posture. Start simple, measure what matters, and iterate based on feedback.
+        </div>
+
+        <h2>🚀 Getting Started Checklist</h2>
+
+        <ol>
+            <li>Identify 3-5 critical business risks that security should address</li>
+            <li>Select 10-15 KPIs that align with those risks</li>
+            <li>Establish baseline measurements for each KPI</li>
+            <li>Set realistic targets for improvement (3-6 month timeline)</li>
+            <li>Automate data collection where possible</li>
+            <li>Build a simple executive dashboard with 5-7 key metrics</li>
+            <li>Schedule monthly metric review meetings with stakeholders</li>
+            <li>Iterate and refine based on feedback</li>
+        </ol>
+
+        <div class="warning-box">
+            <strong>⚠️ Final Warning:</strong> Don't let perfect be the enemy of good. Start with imperfect metrics and
+            improve them over time. The worst dashboard is the one that never gets built because you're waiting for
+            perfect data.
+        </div>
+
+        <h2>📚 Additional Resources</h2>
+        <ul>
+            <li><a href="https://www.cisecurity.org/insights/white-papers/security-metrics" target="_blank"
+                    style="color: var(--accent-cyan);">CIS Security Metrics Guide</a></li>
+            <li><a href="https://www.sans.org/white-papers/security-metrics/" target="_blank"
+                    style="color: var(--accent-cyan);">SANS Security Metrics</a></li>
+            <li><a href="https://nvlpubs.nist.gov/nistpubs/ir/2016/NIST.IR.8011-1.pdf" target="_blank"
+                    style="color: var(--accent-cyan);">NIST Cybersecurity Metrics</a></li>
+        </ul>
+
+        <div style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--border);">
+            <p style="color: var(--text-muted); text-align: center;">
+                Last updated: December 8, 2025 | <a href="../guides/" style="color: var(--accent-cyan);">← Back to All
+                    Guides</a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
