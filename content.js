@@ -5,6 +5,55 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Dec 09 2025",
+            "title": "U.S. Offers $10 Million Bounty for Iranian Hackers",
+            "content": "The U.S. government has announced a $10 million reward for information leading to the capture of Mohammad Bagher Shirinkar, the leader of the Iranian hacking group Emennet Pasargad, and Fatemeh Sedighian Kashi, a long-term employee. This group is accused of engaging in disruptive cyber activities that threaten U.S. national security. The bounty underscores the ongoing geopolitical tensions and the U.S.&#x27;s commitment to countering state-sponsored cyber threats. Security professionals should remain vigilant against potential retaliatory cyber activities from Iranian groups. Organizations are advised to review their cybersecurity measures and ensure robust defenses against state-sponsored attacks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/us-posts-10-million-bounty-for-iranian-hackers/"
+        },
+        {
+            "date": "Dec 09 2025",
+            "title": "Proofpoint Finalizes $1.8 Billion Acquisition of Hornetsecurity",
+            "content": "Proofpoint, a major player in enterprise cybersecurity, has completed its acquisition of Hornetsecurity, a German company specializing in Microsoft 365 security solutions, for $1.8 billion. This strategic move is expected to enhance Proofpoint&#x27;s capabilities in securing cloud-based environments, particularly for Microsoft 365 users. The acquisition reflects the growing demand for comprehensive security solutions as organizations increasingly rely on cloud services. Cybersecurity professionals should anticipate new integrations and features aimed at bolstering email and data security. Companies using Microsoft 365 are encouraged to stay informed about upcoming changes and improvements to their security frameworks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/proofpoint-completes-1-8-billion-acquisition-of-hornetsecurity/"
+        },
+        {
+            "date": "Dec 09 2025",
+            "title": "Rise of Deepfakes and AI Resumes Threatens Hiring Processes",
+            "content": "Cybercriminals are exploiting deepfake technology and AI-generated resumes to infiltrate organizations, posing significant risks to hiring processes. By combining automation, impersonation, and social engineering, attackers create convincing fake applicants to gain unauthorized access to sensitive company information. This trend highlights the importance of robust identity verification measures during recruitment. HR and security teams should collaborate to implement advanced screening techniques, such as biometric verification and AI-driven background checks, to detect fraudulent applications. Organizations must remain vigilant and update their protocols to prevent such sophisticated infiltration attempts.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/inside-malwarebytes/2025/12/deepfakes-ai-resumes-and-the-growing-threat-of-fake-applicants"
+        },
+        {
+            "date": "Dec 09 2025",
+            "title": "Microsoft Works to Resolve Copilot Outage in Europe",
+            "content": "Microsoft is addressing an ongoing outage affecting its AI-powered Copilot digital assistant, which has left users across Europe unable to access the service. The disruption highlights the challenges of maintaining reliable AI services at scale, particularly in geographically diverse regions. The outage impacts businesses relying on Copilot for productivity enhancements, emphasizing the need for contingency plans in AI-dependent workflows. Microsoft is actively investigating the issue and working on a resolution to restore service. Users are advised to monitor Microsoft&#x27;s status updates and consider alternative tools for critical tasks during the downtime.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-investigates-copilot-outage-affecting-users-in-europe/"
+        },
+        {
+            "date": "Dec 09 2025",
+            "title": "New &#x27;Broadside&#x27; Botnet Targets Shipping Industry",
+            "content": "A newly identified botnet, dubbed &#x27;Broadside,&#x27; poses a significant threat to shipping companies by targeting TBK DVR devices. The botnet is designed to steal credentials and leverage infected devices to launch Distributed Denial-of-Service (DDoS) attacks, potentially disrupting maritime operations. This development underscores the vulnerability of IoT devices in critical infrastructure sectors. Shipping companies are urged to secure their DVR devices by applying firmware updates and implementing network segmentation. The emergence of Broadside highlights the ongoing need for robust cybersecurity measures in the maritime industry to safeguard against evolving threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/new-broadside-botnet-poses-risk-to-shipping-companies/"
+        },
+        {
+            "date": "Dec 09 2025",
+            "title": "Streamlining Zero Trust with the Shared Signals Framework",
+            "content": "Implementing Zero Trust architecture remains challenging for many organizations, with 88% reporting significant difficulties, often due to unreliable signal sharing between security tools. The Shared Signals Framework offers a solution by enabling better interoperability and communication between disparate security systems. By adopting this framework, organizations can more effectively reduce their attack surface and respond swiftly to emerging threats. Security leaders are encouraged to evaluate their current Zero Trust implementations and consider integrating shared signal capabilities to enhance their security posture. This approach is vital for organizations aiming to stay ahead of sophisticated cyber threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/12/how-to-streamline-zero-trust-using.html"
+        },
+        {
+            "date": "Dec 09 2025",
+            "title": "Google Enhances Chrome Security Against Indirect Prompt Injection",
+            "content": "Google has introduced new layered security defenses in its Chrome browser to combat indirect prompt injection threats, coinciding with the integration of agentic AI capabilities. These updates aim to prevent malicious actors from exploiting vulnerabilities that could lead to unauthorized actions within the browser. The enhancements reflect Google&#x27;s ongoing commitment to securing its browser against emerging threats as AI functionalities become more prevalent. Chrome users should ensure their browsers are updated to benefit from these new protections. Security professionals should remain aware of evolving threat vectors associated with AI and web browsers to safeguard user data effectively.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/12/google-adds-layered-defenses-to-chrome.html"
+        },
+        {
+            "date": "Dec 09 2025",
             "title": "ISC Stormcast Highlights Emerging Cyber Threats and Trends",
             "content": "The latest ISC Stormcast podcast for December 9, 2025, from the SANS Internet Storm Center provides insights into the current cyber threat landscape. This episode emphasizes the importance of staying vigilant as attackers continuously adapt their methods to exploit vulnerabilities. The InfoCON status remains at green, indicating a stable threat environment, but experts warn that organizations should not become complacent. The podcast discusses recent trends in ransomware, phishing, and emerging vulnerabilities that could impact enterprise security. Security professionals are encouraged to keep systems updated and maintain robust incident response plans to mitigate potential threats effectively.",
             "source": "SANS Internet Storm Center",
@@ -18,41 +67,6 @@ const websiteContent = {
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/ransomware-gangs-turn-to-shanya-exe-packer-to-hide-edr-killers/"
         },
         {
-            "date": "Dec 08 2025",
-            "title": "Malicious VSCode Extensions Compromise Developer Systems",
-            "content": "Two malicious extensions on Microsoft&#x27;s Visual Studio Code Marketplace have been found to deliver information-stealing malware to developers&#x27; machines. These extensions can capture screenshots, steal credentials, and hijack browser sessions, posing a severe threat to developers and their projects. The extensions exploit the trust developers place in the VSCode ecosystem, highlighting the need for rigorous vetting processes. Affected users should immediately remove these extensions and conduct a thorough security audit of their systems. Developers are advised to only install extensions from reputable sources and regularly review permissions to prevent such compromises.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/malicious-vscode-extensions-on-microsofts-registry-drop-infostealers/"
-        },
-        {
-            "date": "Dec 08 2025",
-            "title": "Apache Releases Urgent Update for Critical Tika Vulnerability",
-            "content": "The Apache Software Foundation has issued an updated advisory for a critical flaw in Apache Tika, after an initial patch failed to address the full scope of the vulnerability. This flaw, now identified in a new CVE, could allow attackers to execute arbitrary code by exploiting the content analysis framework. Organizations using Apache Tika are urged to apply the latest patch immediately to mitigate potential exploitation risks. This incident underscores the importance of thorough vulnerability assessments and the need for organizations to stay updated on security advisories. Regular patch management is essential to safeguard against evolving threats.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/application-security/apache-max-severity-tika-cve-patch-miss"
-        },
-        {
-            "date": "Dec 08 2025",
-            "title": "$10M Reward Offered for Information on IRGC-Linked Cyber Leaders",
-            "content": "U.S. officials have announced a $10 million reward for information leading to the arrest of Mohammad Bagher Shirinkar and Fatemeh Sedighian Kashi, who are linked to the Iranian Revolutionary Guard Corps (IRGC). These individuals are accused of orchestrating cyberattacks that serve Iranian government interests, posing a significant threat to international cybersecurity. The reward aims to disrupt their operations and gather intelligence on their activities. This move highlights ongoing efforts to combat state-sponsored cyber threats and protect critical infrastructure. Security professionals are encouraged to report any relevant information to authorities to aid in these efforts.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/shahid-shushtari-iran-cyber-electronic-command-10m-reward/"
-        },
-        {
-            "date": "Dec 08 2025",
-            "title": "Surge in Exploitation of React2Shell Vulnerability",
-            "content": "The React2Shell vulnerability, identified as CVE-2025-55182, is experiencing increased exploitation activity following its public disclosure. Threat actors are actively targeting this flaw, which allows for remote code execution on vulnerable systems. Organizations using affected versions of React are at heightened risk and should prioritize applying available patches to secure their environments. This trend underscores the rapid weaponization of newly disclosed vulnerabilities by cybercriminals. Security teams must remain vigilant, ensuring timely updates and employing robust security measures to protect against exploitation attempts.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/exploitation-activity-ramps-react2shell"
-        },
-        {
-            "date": "Dec 08 2025",
-            "title": "Ransomware Gangs Extracted Over $2.1 Billion Between 2022 and 2024",
-            "content": "A report from the Financial Crimes Enforcement Network (FinCEN) reveals that ransomware gangs extorted over $2.1 billion from victims between 2022 and 2024. The report notes a peak in activity during 2023, attributed to the operations of ALPHV/BlackCat and LockBit groups, before a decline in 2024 following law enforcement actions. This data highlights the significant financial impact of ransomware on global businesses and the importance of continued efforts to disrupt these criminal networks. Organizations are advised to enhance their cybersecurity posture, including regular data backups and employee training, to mitigate the risk of ransomware attacks.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/fincen-says-ransomware-gangs-extorted-over-21b-from-2022-to-2024/"
-        },
-        {
             "date": "May 05 2026",
             "title": "GISEC GLOBAL 2026 Unveils Cybersecurity Innovations in Middle East and Africa",
             "content": "GISEC GLOBAL 2026, the largest cybersecurity event in the Middle East and Africa, has kicked off, showcasing the latest advancements in cybersecurity technology and strategy. The event serves as a platform for industry leaders to discuss emerging threats and innovative solutions. This year&#x27;s focus includes AI-driven security tools, advanced threat detection systems, and new compliance frameworks. Professionals from various sectors, including government and private enterprises, are attending to gain insights into protecting critical infrastructure. The event highlights the region&#x27;s growing importance in the global cybersecurity landscape, emphasizing collaboration and knowledge sharing. Attendees are encouraged to engage with workshops and panels to stay ahead of evolving cyber threats.",
@@ -63,52 +77,59 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Dec 09 2025",
+            "title": "AI Usage Patterns Diverge from Expected Productivity Gains",
+            "content": "A comprehensive study by O reveals unexpected trends in AI usage, challenging the narrative that AI is primarily boosting productivity through tasks like email writing and code generation. Analysis of billions of interactions indicates a significant portion of AI usage centers around entertainment and casual inquiries. This shift suggests that while AI tools are available for professional productivity, users are gravitating towards more leisurely applications. The findings highlight a potential disconnect between AI developers&#x27; intentions and actual consumer behavior. Organizations aiming to integrate AI into workflows should consider these usage patterns to better align their offerings with user interests.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/how-people-really-use-ai-the-surprising-truth-from-analysing-billions-of-interactions/"
+        },
+        {
+            "date": "Dec 09 2025",
+            "title": "Publishers Face Challenges in AI-Driven Information Landscape",
+            "content": "The integration of AI into information creation and delivery is reshaping the publishing industry, as detailed in a new report. AI-generated content summaries are becoming prevalent, reducing direct user engagement with original articles. Large language models are training on vast amounts of scraped content, raising concerns about intellectual property rights and content monetization. Publishers must adapt to these changes by developing AI-resilient strategies to maintain revenue streams and audience engagement. As AI continues to evolve, the industry faces the challenge of balancing innovation with sustainable business practices.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/newsweek-building-ai-resilience-for-the-next-era-of-information/"
+        },
+        {
+            "date": "Dec 09 2025",
+            "title": "OpenAI and Deutsche Telekom Partner to Enhance AI Accessibility in Europe",
+            "content": "OpenAI has announced a strategic partnership with Deutsche Telekom to deploy advanced multilingual AI capabilities across Europe. This collaboration will see the rollout of ChatGPT Enterprise to improve operational workflows and drive innovation within Deutsche Telekom. The initiative aims to make sophisticated AI tools more accessible to a broader European audience, leveraging Deutsche Telekom&#x27;s extensive network. By integrating AI into daily operations, the partnership seeks to enhance efficiency and foster a culture of innovation. Businesses across Europe are encouraged to explore similar collaborations to harness AI&#x27;s potential in transforming their operations.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/deutsche-telekom-collaboration"
+        },
+        {
+            "date": "Dec 08 2025",
+            "title": "The State of AI: Envisioning the World in 2030",
+            "content": "The final edition of The State of AI series, a collaboration between the Financial Times and MIT Technology Review, explores the transformative impact of generative AI by 2030. The discussion highlights the potential of AI to reshape global power dynamics, economic structures, and societal norms. Experts predict that AI will drive significant advancements in automation, healthcare, and environmental management. However, these changes come with challenges, including ethical considerations and regulatory frameworks. Stakeholders are urged to engage in proactive dialogue to ensure AI&#x27;s benefits are maximized while mitigating potential risks.",
+            "source": "MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2025/12/08/1128922/the-state-of-ai-a-vision-of-the-world-in-2030/"
+        },
+        {
+            "date": "Dec 08 2025",
+            "title": "Trump Announces Executive Order to Block State AI Regulations",
+            "content": "Former President Donald Trump has declared his intention to sign an executive order preventing states from enacting individual AI regulations. The &quot;ONE RULE&quot; Executive Order aims to streamline AI-related approvals by eliminating the need for companies to navigate multiple state-level regulations. This move has sparked bipartisan criticism, with concerns about federal overreach and the potential stifling of state innovation. The tech industry is closely monitoring the situation, as the order could significantly impact AI development and deployment strategies across the United States. Companies should prepare for potential regulatory changes and consider their implications on business operations.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/08/one-rule-trump-says-hell-sign-an-executive-order-blocking-state-ai-laws-despite-bipartisan-pushback/"
+        },
+        {
+            "date": "Dec 08 2025",
+            "title": "Booking.com Leverages AI for Enhanced Customer Recommendations",
+            "content": "Booking.com has successfully implemented a disciplined, modular AI strategy to improve its conversational recommendation system, achieving a twofold increase in accuracy. The company&#x27;s early exploration into agentic behaviors has allowed it to refine its AI infrastructure without succumbing to industry hype. By focusing on practical applications, Booking.com has enhanced its customer service capabilities, providing more accurate and personalized recommendations. This approach underscores the importance of strategic AI integration in achieving tangible business outcomes. Other enterprises are encouraged to adopt a similar methodical approach to AI deployment to maximize benefits.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/ai/booking-coms-agent-strategy-disciplined-modular-and-already-delivering-2"
+        },
+        {
+            "date": "Dec 08 2025",
+            "title": "Enterprise AI Shifts from Pilot Projects to Deep Workflow Integration",
+            "content": "OpenAI reports a significant shift in enterprise AI usage from experimental pilots to comprehensive workflow integrations. Businesses are increasingly assigning complex, multi-step processes to AI models, moving beyond simple text summarization tasks. This trend reflects growing confidence in AI&#x27;s capabilities to enhance operational efficiency and decision-making. The data indicates that firms are realizing substantial benefits from deeper AI integration, including improved productivity and innovation. Organizations are advised to assess their AI strategies and consider expanding their use of AI to optimize business processes and maintain competitive advantage.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/openai-enterprise-users-swap-ai-pilots-for-deep-integrations/"
+        },
+        {
+            "date": "Dec 09 2025",
             "title": "Z.ai Launches Open Source GLM-4.6V Vision-Language Models",
             "content": "Chinese AI startup Zhipu AI, also known as Z.ai, has unveiled its GLM-4.6V series of open-source vision-language models (VLMs), designed for multimodal reasoning and frontend automation. The series includes models in both &quot;large&quot; and &quot;small&quot; sizes, optimized for high-efficiency deployment in various applications. This release positions Z.ai as a significant player in the field of VLMs, potentially impacting industries reliant on visual and textual data integration. As open-source models, GLM-4.6V offers developers and researchers the flexibility to adapt and enhance capabilities for specific use cases. The introduction of these models reflects the growing trend of open-source contributions in AI, fostering innovation and collaboration across global tech communities.",
             "source": "VentureBeat",
             "sourceUrl": "https://venturebeat.com/ai/z-ai-debuts-open-source-glm-4-6v-a-native-tool-calling-vision-model-for"
-        },
-        {
-            "date": "Dec 08 2025",
-            "title": "U.S. Commerce Department Approves Nvidia H200 Chip Exports to China",
-            "content": "The U.S. Department of Commerce has approved the export of Nvidia&#x27;s H200 chips to China, despite recent legislative efforts aimed at restricting such transactions. This decision allows Nvidia to continue supplying its advanced H200 chips, which are crucial for AI and machine learning applications, to the Chinese market. The approval comes amid ongoing geopolitical tensions and debates over technology transfer and national security. The H200 chips, known for their high-performance capabilities, are likely to bolster AI development and deployment in China. Industry stakeholders should monitor potential legislative changes that could impact future exports and consider the broader implications for global supply chains and technology partnerships.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/08/department-of-commerce-may-approve-nvidia-h200-chip-exports-to-china/"
-        },
-        {
-            "date": "Dec 08 2025",
-            "title": "Google Enhances AI Try-On App Doppl with Shoppable Discovery Feed",
-            "content": "Google has updated its AI-powered try-on app, Doppl, by adding a shoppable discovery feed that provides users with personalized recommendations. This new feature allows users to virtually try on items and purchase them directly through links to merchants, streamlining the shopping experience. Doppl&#x27;s integration of AI-driven recommendations aims to enhance user engagement and conversion rates in the e-commerce sector. This development highlights the increasing use of AI in personalizing retail experiences and the potential for AI to drive sales by connecting consumers directly with products. Retailers and developers should explore opportunities to leverage similar AI technologies to improve customer interactions and sales processes.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/08/googles-ai-try-on-app-doppl-adds-a-shoppable-discovery-feed/"
-        },
-        {
-            "date": "Dec 08 2025",
-            "title": "Anthropic&#x27;s Claude Code Expands to Slack, Transforming Development Workflows",
-            "content": "Anthropic has introduced Claude Code to Slack, enabling developers to assign coding tasks directly from chat threads. This integration marks a significant shift towards AI-embedded collaboration tools that could revolutionize software development workflows. By allowing developers to delegate tasks without leaving Slack, Claude Code enhances productivity and streamlines communication within development teams. This trend toward AI-enhanced collaboration tools reflects a broader movement in the industry to integrate AI capabilities into everyday work environments. Organizations should consider adopting such tools to improve efficiency and foster seamless collaboration across teams.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/08/claude-code-is-coming-to-slack-and-thats-a-bigger-deal-than-it-sounds/"
-        },
-        {
-            "date": "Dec 08 2025",
-            "title": "Claude Code Beta Integration with Slack Enhances Developer Efficiency",
-            "content": "Anthropic has launched a beta integration of its Claude Code programming agent with Slack, allowing software engineers to perform coding tasks within the messaging platform. This integration facilitates seamless task delegation and enhances workflow efficiency by keeping development activities within a single communication hub. The move underscores the growing trend of embedding AI tools directly into workplace communication platforms, aiming to streamline processes and reduce context-switching. Developers and IT managers should evaluate the potential productivity gains from such integrations and consider incorporating AI-driven tools into their existing workflows to optimize team performance.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/anthropics-claude-code-can-now-read-your-slack-messages-and-write-code-for"
-        },
-        {
-            "date": "Dec 08 2025",
-            "title": "Google Outlines Security Measures for Chrome&#x27;s New Agentic Features",
-            "content": "Google has detailed the security measures it is implementing ahead of the rollout of agentic capabilities in its Chrome browser. These features are designed to enhance user interactions by automating certain tasks, but they also raise potential security concerns. Google&#x27;s approach includes robust guardrails to mitigate risks associated with increased automation, ensuring user data privacy and security. The introduction of agentic features in Chrome reflects the broader industry trend of integrating AI-driven automation into consumer software. Users and IT administrators should stay informed about these changes to understand the potential impact on security and user experience.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/08/google-details-security-measures-for-chromes-agentic-features/"
-        },
-        {
-            "date": "Dec 08 2025",
-            "title": "Instacart Partners with ChatGPT for Seamless Grocery Shopping Experience",
-            "content": "Instacart has partnered with ChatGPT to enable users to plan recipes and purchase groceries without leaving the ChatGPT interface. This integration allows shoppers to transition smoothly from meal planning to checkout, streamlining the online grocery shopping process. By embedding shopping capabilities within ChatGPT, Instacart aims to enhance user convenience and engagement, potentially increasing customer retention. This development is part of a broader trend of integrating AI tools into e-commerce platforms to improve user experience. Retailers should explore similar partnerships to leverage AI technologies for enhancing customer interactions and driving sales growth.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/08/you-can-buy-your-instacart-groceries-without-leaving-chatgpt/"
         }
     ],
     "articles": {},
