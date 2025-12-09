@@ -1,72 +1,72 @@
 {
-  "last_updated": "2025-12-09T01:41:56.162155",
+  "last_updated": "2025-12-09T12:45:39.992816",
   "period": "Last 7 days",
-  "total_groups": 33,
+  "total_groups": 32,
   "total_victims": 300,
   "groups": [
     {
       "name": "Lockbit5",
-      "count": 71,
+      "count": 54,
       "victims": [
         {
-          "name": "elundini.gov.za",
-          "date": "2025-12-07 10:20:20.530685",
-          "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/e4e9c141c3778e0682649895d671ade5",
-          "discovered_date": "2025-12-07T10:20:20.530685"
+          "name": "brumfieldconstructioninc.com",
+          "date": "2025-12-07 10:29:18.289250",
+          "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/7bb3a35016c6ea5e28171f39411336b0",
+          "discovered_date": "2025-12-07T10:29:18.289250"
         },
         {
-          "name": "chmsbc.org.br",
-          "date": "2025-12-07 10:20:54.539960",
-          "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/d9f5fec189ae435693a722687bd92d33",
-          "discovered_date": "2025-12-07T10:20:54.539960"
+          "name": "rjwalker.com",
+          "date": "2025-12-07 10:30:52.975390",
+          "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/1f41679b03549c0395ec05e85b743f6c",
+          "discovered_date": "2025-12-07T10:30:52.975390"
         },
         {
-          "name": "tracsa.com.mx",
-          "date": "2025-12-07 10:21:30.098135",
-          "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/23496089a378eda352f17221684bc14b",
-          "discovered_date": "2025-12-07T10:21:30.098135"
+          "name": "jobberswarehouse.com",
+          "date": "2025-12-07 10:31:27.129194",
+          "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/dc0c401fa207237aca2d8869a685a2f1",
+          "discovered_date": "2025-12-07T10:31:27.129194"
         },
         {
-          "name": "iscot.it",
-          "date": "2025-12-07 10:22:04.478374",
-          "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/076a2d5299eedb0ced261209a3e494d5",
-          "discovered_date": "2025-12-07T10:22:04.478374"
+          "name": "insightchicago.com",
+          "date": "2025-12-07 10:32:00.314875",
+          "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/8eb1c05270a2344e365ddd37e80724c3",
+          "discovered_date": "2025-12-07T10:32:00.314875"
         },
         {
-          "name": "four-points.marriott.com",
-          "date": "2025-12-07 10:22:38.654238",
-          "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/35599fc65600804f1482dcdd78a566ab",
-          "discovered_date": "2025-12-07T10:22:38.654238"
+          "name": "terracaribbean.com",
+          "date": "2025-12-07 10:29:31.673791",
+          "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/5d17c1944ad8b610ccb6c6367afe624c",
+          "discovered_date": "2025-12-07T10:29:31.673791"
         },
         {
-          "name": "marriott.com",
-          "date": "2025-12-07 10:23:12.598949",
-          "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/321419375900c748c99c82d3e9c7dd6a",
-          "discovered_date": "2025-12-07T10:23:12.598949"
+          "name": "kll-law.com",
+          "date": "2025-12-07 10:28:02.702905",
+          "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/34d190899e1903f83b7ce9a8d0983cbc",
+          "discovered_date": "2025-12-07T10:28:02.702905"
         },
         {
-          "name": "cadopt.com",
-          "date": "2025-12-07 10:23:46.289372",
-          "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/e525cbe07714b5858f36bbaa3346e0b1",
-          "discovered_date": "2025-12-07T10:23:46.289372"
+          "name": "ehlers-inc.com",
+          "date": "2025-12-07 10:27:34.329241",
+          "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/1fd378cced6831fbf1c786dbe753cd81",
+          "discovered_date": "2025-12-07T10:27:34.329241"
         },
         {
-          "name": "kap.co.th",
-          "date": "2025-12-07 10:24:19.675627",
-          "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/51b3790678889df57c0f99983c39f57a",
-          "discovered_date": "2025-12-07T10:24:19.675627"
+          "name": "crystal-d.com",
+          "date": "2025-12-07 10:28:32.017494",
+          "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/ffeb161b487066d9a1adc1b018620d43",
+          "discovered_date": "2025-12-07T10:28:32.017494"
         },
         {
-          "name": "milanoristorazione.it",
-          "date": "2025-12-07 10:24:33.220053",
-          "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/df39afcee761dd8dfa18aeca8fc85ce3",
-          "discovered_date": "2025-12-07T10:24:33.220053"
+          "name": "asiapacificex.com",
+          "date": "2025-12-07 10:28:45.186559",
+          "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/1e330681cd0168c796f3123c95301506",
+          "discovered_date": "2025-12-07T10:28:45.186559"
         },
         {
-          "name": "montaury.com.br",
-          "date": "2025-12-07 10:25:06.880567",
-          "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/f3566f293699314dae52df206ac35a1b",
-          "discovered_date": "2025-12-07T10:25:06.880567"
+          "name": "graphiquedefrance.com",
+          "date": "2025-12-07 10:27:21.006871",
+          "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/02ef99c6ca541b47336fdd2546d07702",
+          "discovered_date": "2025-12-07T10:27:21.006871"
         }
       ],
       "industries": [
@@ -74,7 +74,7 @@
         "Education",
         "Financial Services",
         "Healthcare",
-        "Hospitality and Tourism"
+        "Not Found"
       ],
       "countries": [
         "AR",
@@ -90,7 +90,7 @@
         0,
         0,
         0,
-        71,
+        54,
         0,
         0
       ]
@@ -99,6 +99,12 @@
       "name": "Qilin",
       "count": 48,
       "victims": [
+        {
+          "name": "Serratelli Hat",
+          "date": "2025-12-09 06:47:57.250394",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=26755ccc-fc21-37b8-afe2-8ef296c36043",
+          "discovered_date": "2025-12-09T06:47:57.250394"
+        },
         {
           "name": "Seipi",
           "date": "2025-12-08 17:43:31.652455",
@@ -124,6 +130,12 @@
           "discovered_date": "2025-12-08T17:42:53.818497"
         },
         {
+          "name": "Cagayan Appliance Center",
+          "date": "2025-12-09 06:47:21.913016",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=fedebdda-502f-374d-9c49-89958f4a685a",
+          "discovered_date": "2025-12-09T06:47:21.913016"
+        },
+        {
           "name": "David M. Schwarz Architects",
           "date": "2025-12-07 15:42:59.253760",
           "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=c0a207bf-2f8f-3326-b931-f8ab5a35fc8e",
@@ -146,18 +158,6 @@
           "date": "2025-12-07 13:53:23.415984",
           "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=c585c090-3411-3bd9-bf12-ad7817638fdf",
           "discovered_date": "2025-12-07T13:53:23.415984"
-        },
-        {
-          "name": "Marta Montserrat Areny Guerrero ABOGADO",
-          "date": "2025-12-07 11:24:00.729805",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=26bd6415-113f-3e2a-9a59-59de5ac6a8b1",
-          "discovered_date": "2025-12-07T11:24:00.729805"
-        },
-        {
-          "name": "Sanko Air Conditioning Co., Ltd.",
-          "date": "2025-12-07 11:23:17.417345",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=04517761-332b-3c4e-8b01-d69201d7c720",
-          "discovered_date": "2025-12-07T11:23:17.417345"
         }
       ],
       "industries": [
@@ -177,18 +177,107 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        11,
+        7,
         9,
         2,
         6,
         12,
         8,
-        0
+        4
+      ]
+    },
+    {
+      "name": "Coinbasecartel",
+      "count": 23,
+      "victims": [
+        {
+          "name": "Acu Trans Solutions",
+          "date": "2025-12-09 05:18:03.556789",
+          "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/acutrans",
+          "discovered_date": "2025-12-09T05:18:03.556789"
+        },
+        {
+          "name": "Arabian Escapes",
+          "date": "2025-12-09 05:17:30.540791",
+          "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/arabianescapes",
+          "discovered_date": "2025-12-09T05:17:30.540791"
+        },
+        {
+          "name": "Homes 4 Life",
+          "date": "2025-12-09 05:16:57.576857",
+          "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/homes4life",
+          "discovered_date": "2025-12-09T05:16:57.576857"
+        },
+        {
+          "name": "Elysian Real Estate",
+          "date": "2025-12-09 05:16:24.347700",
+          "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/elysian",
+          "discovered_date": "2025-12-09T05:16:24.347700"
+        },
+        {
+          "name": "Harbor Real Estate",
+          "date": "2025-12-09 05:15:51.401487",
+          "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/harbor",
+          "discovered_date": "2025-12-09T05:15:51.401487"
+        },
+        {
+          "name": "Savills Middle East/Cluttons",
+          "date": "2025-12-09 05:15:18.003176",
+          "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/savills",
+          "discovered_date": "2025-12-09T05:15:18.003176"
+        },
+        {
+          "name": "Betterhomes",
+          "date": "2025-12-09 05:14:43.641825",
+          "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/bhomes",
+          "discovered_date": "2025-12-09T05:14:43.641825"
+        },
+        {
+          "name": "Hunt & Harris Real Estate",
+          "date": "2025-12-09 05:14:09.567018",
+          "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/hunt",
+          "discovered_date": "2025-12-09T05:14:09.567018"
+        },
+        {
+          "name": "Coldwell Banker UAE",
+          "date": "2025-12-09 05:13:36.390275",
+          "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/coldwell",
+          "discovered_date": "2025-12-09T05:13:36.390275"
+        },
+        {
+          "name": "One Broker Group",
+          "date": "2025-12-09 05:13:01.779406",
+          "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/obg",
+          "discovered_date": "2025-12-09T05:13:01.779406"
+        }
+      ],
+      "industries": [
+        "Business Services",
+        "Consumer Services",
+        "Financial Services",
+        "Hospitality and Tourism",
+        "Not Found"
+      ],
+      "countries": [
+        "AE",
+        "JP",
+        "US"
+      ],
+      "trend": "up",
+      "trend_percentage": 15,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        22
       ]
     },
     {
       "name": "Akira",
-      "count": 30,
+      "count": 21,
       "victims": [
         {
           "name": "Nickman, DHK Architects, Profondia, Talbot & Associates, Fishbowl Solutions.",
@@ -267,7 +356,7 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        9,
+        0,
         2,
         5,
         0,
@@ -456,6 +545,95 @@
       ]
     },
     {
+      "name": "Worldleaks",
+      "count": 12,
+      "victims": [
+        {
+          "name": "Empresas Maggi",
+          "date": "2025-12-09 08:55:06.622864",
+          "url": "https://worldleaksartrjm3c6vasllvgacbi5u3mgzkluehrzhk2jz4taufuid.onion/companies/0015405778",
+          "discovered_date": "2025-12-09T08:55:06.622864"
+        },
+        {
+          "name": "The Wardlaw-Hartridge School",
+          "date": "2025-12-09 08:56:02.205919",
+          "url": "https://worldleaksartrjm3c6vasllvgacbi5u3mgzkluehrzhk2jz4taufuid.onion/companies/3054173859",
+          "discovered_date": "2025-12-09T08:56:02.205919"
+        },
+        {
+          "name": "Municipality of North Perth (Canada)",
+          "date": "2025-12-09 08:54:20.883543",
+          "url": "https://worldleaksartrjm3c6vasllvgacbi5u3mgzkluehrzhk2jz4taufuid.onion/companies/1873078212",
+          "discovered_date": "2025-12-09T08:54:20.883543"
+        },
+        {
+          "name": "Granjas 4 Irmãos SA - Agropecuária, Indústria e Comércio",
+          "date": "2025-12-08 07:15:49.537429",
+          "url": "https://worldleaksartrjm3c6vasllvgacbi5u3mgzkluehrzhk2jz4taufuid.onion/companies/5809412419",
+          "discovered_date": "2025-12-08T07:15:49.537429"
+        },
+        {
+          "name": "Big Lar",
+          "date": "2025-12-08 07:16:30.496032",
+          "url": "https://worldleaksartrjm3c6vasllvgacbi5u3mgzkluehrzhk2jz4taufuid.onion/companies/2278362856",
+          "discovered_date": "2025-12-08T07:16:30.496032"
+        },
+        {
+          "name": "Ernest Käslin",
+          "date": "2025-12-08 07:17:13.207774",
+          "url": "https://worldleaksartrjm3c6vasllvgacbi5u3mgzkluehrzhk2jz4taufuid.onion/companies/2526422872",
+          "discovered_date": "2025-12-08T07:17:13.207774"
+        },
+        {
+          "name": "The Wardlaw-Hartridge School",
+          "date": "2025-12-09T08:56:02+00:00",
+          "url": "https://www.ransomware.live/id/VGhlIFdhcmRsYXctSGFydHJpZGdlIFNjaG9vbEB3b3JsZGxlYWtz",
+          "discovered_date": "2025-12-09T08:56:02+00:00"
+        },
+        {
+          "name": "Empresas Maggi",
+          "date": "2025-12-09T08:55:06+00:00",
+          "url": "https://www.ransomware.live/id/RW1wcmVzYXMgTWFnZ2lAd29ybGRsZWFrcw==",
+          "discovered_date": "2025-12-09T08:55:06+00:00"
+        },
+        {
+          "name": "Municipality of North Perth (Canada)",
+          "date": "2025-12-09T08:54:20+00:00",
+          "url": "https://www.ransomware.live/id/TXVuaWNpcGFsaXR5IG9mIE5vcnRoIFBlcnRoIChDYW5hZGEpQHdvcmxkbGVha3M=",
+          "discovered_date": "2025-12-09T08:54:20+00:00"
+        },
+        {
+          "name": "Ernest Käslin",
+          "date": "2025-12-08T07:17:13+00:00",
+          "url": "https://www.ransomware.live/id/RXJuZXN0IEvDpHNsaW5Ad29ybGRsZWFrcw==",
+          "discovered_date": "2025-12-08T07:17:13+00:00"
+        }
+      ],
+      "industries": [
+        "Agriculture and Food Production",
+        "Education",
+        "Not Found",
+        "Public Sector"
+      ],
+      "countries": [
+        "BR",
+        "CA",
+        "CH",
+        "US"
+      ],
+      "trend": "up",
+      "trend_percentage": 15,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        6,
+        6
+      ]
+    },
+    {
       "name": "Dragonforce",
       "count": 12,
       "victims": [
@@ -540,6 +718,92 @@
         0,
         8,
         0
+      ]
+    },
+    {
+      "name": "Safepay",
+      "count": 11,
+      "victims": [
+        {
+          "name": "chemstress.com",
+          "date": "2025-12-09 08:49:10.030097",
+          "url": "http://safepaypfxntwixwjrlcscft433ggemlhgkkdupi2ynhtcmvdgubmoyd.onion/blog/post/chemstresscom/",
+          "discovered_date": "2025-12-09T08:49:10.030097"
+        },
+        {
+          "name": "chemstress.com",
+          "date": "2025-12-09T08:49:10+00:00",
+          "url": "https://www.ransomware.live/id/Y2hlbXN0cmVzcy5jb21Ac2FmZXBheQ==",
+          "discovered_date": "2025-12-09T08:49:10+00:00"
+        },
+        {
+          "name": "mmc.de",
+          "date": "2025-12-05T21:47:03+00:00",
+          "url": "https://www.ransomware.live/id/bW1jLmRlQHNhZmVwYXk=",
+          "discovered_date": "2025-12-05T21:47:03+00:00"
+        },
+        {
+          "name": "juliuskoch.com",
+          "date": "2025-12-05T20:00:14+00:00",
+          "url": "https://www.ransomware.live/id/anVsaXVza29jaC5jb21Ac2FmZXBheQ==",
+          "discovered_date": "2025-12-05T20:00:14+00:00"
+        },
+        {
+          "name": "untereisesheim.de",
+          "date": "2025-12-05T19:59:39+00:00",
+          "url": "https://www.ransomware.live/id/dW50ZXJlaXNlc2hlaW0uZGVAc2FmZXBheQ==",
+          "discovered_date": "2025-12-05T19:59:39+00:00"
+        },
+        {
+          "name": "steuerberater-scheerer.de",
+          "date": "2025-12-05T19:59:24+00:00",
+          "url": "https://www.ransomware.live/id/c3RldWVyYmVyYXRlci1zY2hlZXJlci5kZUBzYWZlcGF5",
+          "discovered_date": "2025-12-05T19:59:24+00:00"
+        },
+        {
+          "name": "mactavishco.ca",
+          "date": "2025-12-05T19:58:50+00:00",
+          "url": "https://www.ransomware.live/id/bWFjdGF2aXNoY28uY2FAc2FmZXBheQ==",
+          "discovered_date": "2025-12-05T19:58:50+00:00"
+        },
+        {
+          "name": "barnet.com.au",
+          "date": "2025-12-05T19:58:12+00:00",
+          "url": "https://www.ransomware.live/id/YmFybmV0LmNvbS5hdUBzYWZlcGF5",
+          "discovered_date": "2025-12-05T19:58:12+00:00"
+        },
+        {
+          "name": "wachtmann.eu",
+          "date": "2025-12-05T18:50:24+00:00",
+          "url": "https://www.ransomware.live/id/d2FjaHRtYW5uLmV1QHNhZmVwYXk=",
+          "discovered_date": "2025-12-05T18:50:24+00:00"
+        },
+        {
+          "name": "becksgroup.au",
+          "date": "2025-12-05T18:49:48+00:00",
+          "url": "https://www.ransomware.live/id/YmVja3Nncm91cC5hdUBzYWZlcGF5",
+          "discovered_date": "2025-12-05T18:49:48+00:00"
+        }
+      ],
+      "industries": [
+        "Energy"
+      ],
+      "countries": [
+        "AU",
+        "CA",
+        "DE",
+        "US"
+      ],
+      "trend": "up",
+      "trend_percentage": 15,
+      "daily_counts": [
+        0,
+        0,
+        9,
+        0,
+        0,
+        0,
+        2
       ]
     },
     {
@@ -802,83 +1066,6 @@
       ]
     },
     {
-      "name": "Safepay",
-      "count": 9,
-      "victims": [
-        {
-          "name": "mmc.de",
-          "date": "2025-12-05T21:47:03+00:00",
-          "url": "https://www.ransomware.live/id/bW1jLmRlQHNhZmVwYXk=",
-          "discovered_date": "2025-12-05T21:47:03+00:00"
-        },
-        {
-          "name": "juliuskoch.com",
-          "date": "2025-12-05T20:00:14+00:00",
-          "url": "https://www.ransomware.live/id/anVsaXVza29jaC5jb21Ac2FmZXBheQ==",
-          "discovered_date": "2025-12-05T20:00:14+00:00"
-        },
-        {
-          "name": "untereisesheim.de",
-          "date": "2025-12-05T19:59:39+00:00",
-          "url": "https://www.ransomware.live/id/dW50ZXJlaXNlc2hlaW0uZGVAc2FmZXBheQ==",
-          "discovered_date": "2025-12-05T19:59:39+00:00"
-        },
-        {
-          "name": "steuerberater-scheerer.de",
-          "date": "2025-12-05T19:59:24+00:00",
-          "url": "https://www.ransomware.live/id/c3RldWVyYmVyYXRlci1zY2hlZXJlci5kZUBzYWZlcGF5",
-          "discovered_date": "2025-12-05T19:59:24+00:00"
-        },
-        {
-          "name": "mactavishco.ca",
-          "date": "2025-12-05T19:58:50+00:00",
-          "url": "https://www.ransomware.live/id/bWFjdGF2aXNoY28uY2FAc2FmZXBheQ==",
-          "discovered_date": "2025-12-05T19:58:50+00:00"
-        },
-        {
-          "name": "barnet.com.au",
-          "date": "2025-12-05T19:58:12+00:00",
-          "url": "https://www.ransomware.live/id/YmFybmV0LmNvbS5hdUBzYWZlcGF5",
-          "discovered_date": "2025-12-05T19:58:12+00:00"
-        },
-        {
-          "name": "wachtmann.eu",
-          "date": "2025-12-05T18:50:24+00:00",
-          "url": "https://www.ransomware.live/id/d2FjaHRtYW5uLmV1QHNhZmVwYXk=",
-          "discovered_date": "2025-12-05T18:50:24+00:00"
-        },
-        {
-          "name": "becksgroup.au",
-          "date": "2025-12-05T18:49:48+00:00",
-          "url": "https://www.ransomware.live/id/YmVja3Nncm91cC5hdUBzYWZlcGF5",
-          "discovered_date": "2025-12-05T18:49:48+00:00"
-        },
-        {
-          "name": "hyperdomemedicalcentre.com.au",
-          "date": "2025-12-05T18:49:11+00:00",
-          "url": "https://www.ransomware.live/id/aHlwZXJkb21lbWVkaWNhbGNlbnRyZS5jb20uYXVAc2FmZXBheQ==",
-          "discovered_date": "2025-12-05T18:49:11+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "AU",
-        "CA",
-        "DE"
-      ],
-      "trend": "stable",
-      "trend_percentage": 0,
-      "daily_counts": [
-        0,
-        0,
-        9,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Stormous",
       "count": 8,
       "victims": [
@@ -952,67 +1139,6 @@
         0,
         0,
         8,
-        0
-      ]
-    },
-    {
-      "name": "Worldleaks",
-      "count": 6,
-      "victims": [
-        {
-          "name": "Granjas 4 Irmãos SA - Agropecuária, Indústria e Comércio",
-          "date": "2025-12-08 07:15:49.537429",
-          "url": "https://worldleaksartrjm3c6vasllvgacbi5u3mgzkluehrzhk2jz4taufuid.onion/companies/5809412419",
-          "discovered_date": "2025-12-08T07:15:49.537429"
-        },
-        {
-          "name": "Big Lar",
-          "date": "2025-12-08 07:16:30.496032",
-          "url": "https://worldleaksartrjm3c6vasllvgacbi5u3mgzkluehrzhk2jz4taufuid.onion/companies/2278362856",
-          "discovered_date": "2025-12-08T07:16:30.496032"
-        },
-        {
-          "name": "Ernest Käslin",
-          "date": "2025-12-08 07:17:13.207774",
-          "url": "https://worldleaksartrjm3c6vasllvgacbi5u3mgzkluehrzhk2jz4taufuid.onion/companies/2526422872",
-          "discovered_date": "2025-12-08T07:17:13.207774"
-        },
-        {
-          "name": "Ernest Käslin",
-          "date": "2025-12-08T07:17:13+00:00",
-          "url": "https://www.ransomware.live/id/RXJuZXN0IEvDpHNsaW5Ad29ybGRsZWFrcw==",
-          "discovered_date": "2025-12-08T07:17:13+00:00"
-        },
-        {
-          "name": "Big Lar",
-          "date": "2025-12-08T07:16:30+00:00",
-          "url": "https://www.ransomware.live/id/QmlnIExhckB3b3JsZGxlYWtz",
-          "discovered_date": "2025-12-08T07:16:30+00:00"
-        },
-        {
-          "name": "Granjas 4 Irmãos SA - Agropecuária, Indústria e Comércio",
-          "date": "2025-12-08T07:15:49+00:00",
-          "url": "https://www.ransomware.live/id/R3JhbmphcyA0IElybcOjb3MgU0EgLSBBZ3JvcGVjdcOhcmlhLCBJbmTDunN0cmlhIGUgQ29tw6lyY2lvQHdvcmxkbGVha3M=",
-          "discovered_date": "2025-12-08T07:15:49+00:00"
-        }
-      ],
-      "industries": [
-        "Agriculture and Food Production",
-        "Not Found"
-      ],
-      "countries": [
-        "BR",
-        "CH"
-      ],
-      "trend": "stable",
-      "trend_percentage": 0,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        6,
         0
       ]
     },
@@ -1121,54 +1247,6 @@
       ]
     },
     {
-      "name": "Rhysida",
-      "count": 4,
-      "victims": [
-        {
-          "name": "Kane's Furniture",
-          "date": "2025-12-07 12:30:39.903784",
-          "url": "",
-          "discovered_date": "2025-12-07T12:30:39.903784"
-        },
-        {
-          "name": "Kane's Furniture",
-          "date": "2025-12-07T12:30:39+00:00",
-          "url": "https://www.ransomware.live/id/S2FuZSdzIEZ1cm5pdHVyZUByaHlzaWRh",
-          "discovered_date": "2025-12-07T12:30:39+00:00"
-        },
-        {
-          "name": "SODISE",
-          "date": "2025-12-06T08:51:26+00:00",
-          "url": "https://www.ransomware.live/id/U09ESVNFQHJoeXNpZGE=",
-          "discovered_date": "2025-12-06T08:51:26+00:00"
-        },
-        {
-          "name": "Bo Beuckman Ford",
-          "date": "2025-12-03T13:53:35+00:00",
-          "url": "https://www.ransomware.live/id/Qm8gQmV1Y2ttYW4gRm9yZEByaHlzaWRh",
-          "discovered_date": "2025-12-03T13:53:35+00:00"
-        }
-      ],
-      "industries": [
-        "Consumer Services"
-      ],
-      "countries": [
-        "FR",
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        1,
-        0,
-        0,
-        1,
-        2,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Spacebears",
       "count": 4,
       "victims": [
@@ -1255,6 +1333,48 @@
         1,
         0,
         2,
+        0
+      ]
+    },
+    {
+      "name": "Rhysida",
+      "count": 3,
+      "victims": [
+        {
+          "name": "Kane's Furniture",
+          "date": "2025-12-07 12:30:39.903784",
+          "url": "",
+          "discovered_date": "2025-12-07T12:30:39.903784"
+        },
+        {
+          "name": "Kane's Furniture",
+          "date": "2025-12-07T12:30:39+00:00",
+          "url": "https://www.ransomware.live/id/S2FuZSdzIEZ1cm5pdHVyZUByaHlzaWRh",
+          "discovered_date": "2025-12-07T12:30:39+00:00"
+        },
+        {
+          "name": "SODISE",
+          "date": "2025-12-06T08:51:26+00:00",
+          "url": "https://www.ransomware.live/id/U09ESVNFQHJoeXNpZGE=",
+          "discovered_date": "2025-12-06T08:51:26+00:00"
+        }
+      ],
+      "industries": [
+        "Consumer Services"
+      ],
+      "countries": [
+        "FR",
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        1,
+        2,
+        0,
         0
       ]
     },
@@ -1485,73 +1605,6 @@
       ]
     },
     {
-      "name": "Benzona",
-      "count": 2,
-      "victims": [
-        {
-          "name": "platinumone.in",
-          "date": "2025-12-06T13:19:29+00:00",
-          "url": "https://www.ransomware.live/id/cGxhdGludW1vbmUuaW5AYmVuem9uYQ==",
-          "discovered_date": "2025-12-06T13:19:29+00:00"
-        },
-        {
-          "name": "SUNNYGO.COM.TW",
-          "date": "2025-12-03T15:13:49+00:00",
-          "url": "https://www.ransomware.live/id/U1VOTllHTy5DT00uVFdAYmVuem9uYQ==",
-          "discovered_date": "2025-12-03T15:13:49+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "IN",
-        "TW"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        1,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Nitrogen",
-      "count": 2,
-      "victims": [
-        {
-          "name": "AvtechTyee",
-          "date": "2025-12-05T16:53:51+00:00",
-          "url": "https://www.ransomware.live/id/QXZ0ZWNoVHllZUBuaXRyb2dlbg==",
-          "discovered_date": "2025-12-05T16:53:51+00:00"
-        },
-        {
-          "name": "Golden Artist Colors",
-          "date": "2025-12-03T15:48:03+00:00",
-          "url": "https://www.ransomware.live/id/R29sZGVuIEFydGlzdCBDb2xvcnNAbml0cm9nZW4=",
-          "discovered_date": "2025-12-03T15:48:03+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        1,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Interlock",
       "count": 2,
       "victims": [
@@ -1640,19 +1693,19 @@
       ]
     },
     {
-      "name": "Handala",
+      "name": "Benzona",
       "count": 1,
       "victims": [
         {
-          "name": "From Shield to Shame",
-          "date": "2025-12-06T11:20:33+00:00",
-          "url": "https://www.ransomware.live/id/RnJvbSBTaGllbGQgdG8gU2hhbWVAaGFuZGFsYQ==",
-          "discovered_date": "2025-12-06T11:20:33+00:00"
+          "name": "platinumone.in",
+          "date": "2025-12-06T13:19:29+00:00",
+          "url": "https://www.ransomware.live/id/cGxhdGludW1vbmUuaW5AYmVuem9uYQ==",
+          "discovered_date": "2025-12-06T13:19:29+00:00"
         }
       ],
       "industries": [],
       "countries": [
-        "N/A"
+        "IN"
       ],
       "trend": "down",
       "trend_percentage": -5,
@@ -1667,19 +1720,19 @@
       ]
     },
     {
-      "name": "Coinbasecartel",
+      "name": "Handala",
       "count": 1,
       "victims": [
         {
-          "name": "Renesas Electronics",
-          "date": "2025-12-06T09:16:11+00:00",
-          "url": "https://www.ransomware.live/id/UmVuZXNhcyBFbGVjdHJvbmljc0Bjb2luYmFzZWNhcnRlbA==",
-          "discovered_date": "2025-12-06T09:16:11+00:00"
+          "name": "From Shield to Shame",
+          "date": "2025-12-06T11:20:33+00:00",
+          "url": "https://www.ransomware.live/id/RnJvbSBTaGllbGQgdG8gU2hhbWVAaGFuZGFsYQ==",
+          "discovered_date": "2025-12-06T11:20:33+00:00"
         }
       ],
       "industries": [],
       "countries": [
-        "JP"
+        "N/A"
       ],
       "trend": "down",
       "trend_percentage": -5,
@@ -1721,6 +1774,33 @@
       ]
     },
     {
+      "name": "Nitrogen",
+      "count": 1,
+      "victims": [
+        {
+          "name": "AvtechTyee",
+          "date": "2025-12-05T16:53:51+00:00",
+          "url": "https://www.ransomware.live/id/QXZ0ZWNoVHllZUBuaXRyb2dlbg==",
+          "discovered_date": "2025-12-05T16:53:51+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
       "name": "Lockbit3",
       "count": 1,
       "victims": [
@@ -1741,33 +1821,6 @@
         0,
         0,
         1,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Ransomhouse",
-      "count": 1,
-      "victims": [
-        {
-          "name": "Armis Group",
-          "date": "2025-12-03T12:51:12+00:00",
-          "url": "https://www.ransomware.live/id/QXJtaXMgR3JvdXBAcmFuc29taG91c2U=",
-          "discovered_date": "2025-12-03T12:51:12+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "PT"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        1,
-        0,
-        0,
         0,
         0,
         0,
