@@ -133,7 +133,21 @@ const websiteContent = {
         }
     ],
     "articles": {},
-    "articleCards": [],
+    "articleCards": [
+        {
+            "id": "7zip-critical-vulnerability",
+            "title": "Critical 7-Zip Vulnerability: What You Need to Know Right Now",
+            "summary": "CVE-2025-11001 is being actively exploited in the wild. Learn what this critical RCE vulnerability means for your organization and how to protect yourself immediately.",
+            "description": "Active exploitation of a critical remote code execution vulnerability in 7-Zip. NHS England issued urgent advisory. Immediate action required.",
+            "url": "/articles/7zip-critical-vulnerability.html",
+            "date": "December 9, 2025",
+            "readTime": "8 min read",
+            "category": "Vulnerability Management",
+            "tags": ["CVE-2025-11001", "7-Zip", "RCE", "Active Exploitation", "Patch Management"],
+            "featured": true,
+            "severity": "critical"
+        }
+    ],
     "featureInsights": [
         {
             "icon": "🧩",
