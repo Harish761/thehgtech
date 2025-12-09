@@ -4,60 +4,53 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Dec 08 2025",
-            "title": "Tri-Century Eye Care Breach Exposes Data of 200,000 Patients",
-            "content": "Tri-Century Eye Care has suffered a significant data breach orchestrated by the Pear ransomware group, which claims to have stolen over 3 terabytes of sensitive data. This breach has affected approximately 200,000 individuals, compromising personal and potentially medical information. The healthcare sector has been increasingly targeted by cybercriminals, with ransomware attacks posing a substantial threat to patient privacy and institutional operations. Organizations are urged to enhance their cybersecurity measures, including regular data backups and employee training, to mitigate such risks. Affected individuals should monitor their accounts for suspicious activity and consider identity protection services.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/tri-century-eye-care-data-breach-impacts-200000-individuals/"
+            "date": "Dec 09 2025",
+            "title": "ISC Stormcast Highlights Emerging Cyber Threats and Trends",
+            "content": "The latest ISC Stormcast podcast for December 9, 2025, from the SANS Internet Storm Center provides insights into the current cyber threat landscape. This episode emphasizes the importance of staying vigilant as attackers continuously adapt their methods to exploit vulnerabilities. The InfoCON status remains at green, indicating a stable threat environment, but experts warn that organizations should not become complacent. The podcast discusses recent trends in ransomware, phishing, and emerging vulnerabilities that could impact enterprise security. Security professionals are encouraged to keep systems updated and maintain robust incident response plans to mitigate potential threats effectively.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32548"
+        },
+        {
+            "date": "Dec 09 2025",
+            "title": "Ransomware Groups Leverage Shanya EXE Packer to Evade Detection",
+            "content": "Ransomware gangs are increasingly using the Shanya packer-as-a-service (PaaS) to conceal EDR (endpoint detection and response) killers within their malware. Shanya enables these threat actors to obfuscate malicious payloads, making it difficult for security solutions to detect and neutralize threats. This tactic poses a significant risk to organizations as it enhances the stealth capabilities of ransomware, potentially leading to more successful attacks. Security teams are advised to enhance their detection mechanisms by incorporating behavioral analysis techniques and regularly updating their EDR solutions. Staying informed about the latest evasion techniques is crucial for maintaining robust cybersecurity defenses.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/ransomware-gangs-turn-to-shanya-exe-packer-to-hide-edr-killers/"
         },
         {
             "date": "Dec 08 2025",
-            "title": "US Treasury Reports Ransomware Payments Exceed $4.5 Billion",
-            "content": "The US Treasury has reported that ransomware payments surpassed $4.5 billion, with 2023 alone seeing $1.1 billion paid across 1,512 incidents. This marks a record high, illustrating the growing financial impact of ransomware on organizations worldwide. The data highlights a concerning trend where businesses continue to fall victim to increasingly sophisticated ransomware operations. Companies are advised to invest in robust cybersecurity defenses, including advanced threat detection and incident response plans, to avoid costly payouts. The escalating figures underscore the need for international cooperation in combating ransomware threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/ransomware-payments-surpassed-4-5-billion-us-treasury/"
+            "title": "Malicious VSCode Extensions Compromise Developer Systems",
+            "content": "Two malicious extensions on Microsoft&#x27;s Visual Studio Code Marketplace have been found to deliver information-stealing malware to developers&#x27; machines. These extensions can capture screenshots, steal credentials, and hijack browser sessions, posing a severe threat to developers and their projects. The extensions exploit the trust developers place in the VSCode ecosystem, highlighting the need for rigorous vetting processes. Affected users should immediately remove these extensions and conduct a thorough security audit of their systems. Developers are advised to only install extensions from reputable sources and regularly review permissions to prevent such compromises.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/malicious-vscode-extensions-on-microsofts-registry-drop-infostealers/"
         },
         {
             "date": "Dec 08 2025",
-            "title": "New Mirai Variant &#x27;Broadside&#x27; Targets Maritime Logistics",
-            "content": "A new variant of the Mirai botnet, dubbed &#x27;Broadside,&#x27; is exploiting a critical vulnerability in DVR systems to perform command injection attacks. These attacks enable the botnet to hijack devices, maintain persistence, and facilitate lateral movement across networks. The maritime logistics sector, a critical component of global trade, is particularly at risk due to its reliance on such systems. Organizations in this sector should prioritize patching vulnerable systems and implementing network segmentation to prevent potential disruptions. The emergence of &#x27;Broadside&#x27; reflects the ongoing evolution of IoT-targeted malware.",
+            "title": "Apache Releases Urgent Update for Critical Tika Vulnerability",
+            "content": "The Apache Software Foundation has issued an updated advisory for a critical flaw in Apache Tika, after an initial patch failed to address the full scope of the vulnerability. This flaw, now identified in a new CVE, could allow attackers to execute arbitrary code by exploiting the content analysis framework. Organizations using Apache Tika are urged to apply the latest patch immediately to mitigate potential exploitation risks. This incident underscores the importance of thorough vulnerability assessments and the need for organizations to stay updated on security advisories. Regular patch management is essential to safeguard against evolving threats.",
             "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/threat-intelligence/broadside-mirai-variant-maritime-logistics"
+            "sourceUrl": "https://www.darkreading.com/application-security/apache-max-severity-tika-cve-patch-miss"
         },
         {
             "date": "Dec 08 2025",
-            "title": "Enhanced Data Theft Capabilities Found in New Android Malware",
-            "content": "Researchers have uncovered two new Android malware families, FvncBot and SeedSnatcher, alongside an upgraded version of the existing ClayRat malware. FvncBot masquerades as a security application to deceive users, while SeedSnatcher focuses on data exfiltration. These malicious programs are equipped with advanced data theft capabilities, posing a significant threat to Android users. The findings from Intel 471, CYFIRMA, and Zimperium highlight the need for users to exercise caution when downloading apps and to rely on trusted sources. Regular updates and the use of mobile security solutions are recommended to protect against these evolving threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/12/android-malware-fvncbot-seedsnatcher.html"
-        },
-        {
-            "date": "Dec 08 2025",
-            "title": "Apache Tika Vulnerability Enables XXE Injection Attacks",
-            "content": "A critical vulnerability in Apache Tika has been identified, allowing attackers to execute XML External Entity (XXE) injection attacks via crafted XFA files embedded in PDFs. This flaw could enable unauthorized access to sensitive data and system compromise. Apache Tika users are advised to apply the latest security updates to mitigate this risk. The vulnerability underscores the importance of securing document processing systems, especially those handling untrusted content. Organizations should review their document handling procedures to prevent exploitation.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/critical-apache-tika-vulnerability-leads-to-xxe-injection/"
+            "title": "$10M Reward Offered for Information on IRGC-Linked Cyber Leaders",
+            "content": "U.S. officials have announced a $10 million reward for information leading to the arrest of Mohammad Bagher Shirinkar and Fatemeh Sedighian Kashi, who are linked to the Iranian Revolutionary Guard Corps (IRGC). These individuals are accused of orchestrating cyberattacks that serve Iranian government interests, posing a significant threat to international cybersecurity. The reward aims to disrupt their operations and gather intelligence on their activities. This move highlights ongoing efforts to combat state-sponsored cyber threats and protect critical infrastructure. Security professionals are encouraged to report any relevant information to authorities to aid in these efforts.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/shahid-shushtari-iran-cyber-electronic-command-10m-reward/"
         },
         {
             "date": "Dec 08 2025",
             "title": "Surge in Exploitation of React2Shell Vulnerability",
-            "content": "Security researchers have observed a significant increase in attempts to exploit the React2Shell vulnerability, identified as CVE-2025-55182. This flaw affects React applications, allowing attackers to execute arbitrary code remotely. With the growing adoption of React in web development, this vulnerability poses a substantial risk to numerous applications. Developers are urged to update their React libraries to the latest versions and to implement security best practices, such as input validation and regular code audits, to safeguard against potential attacks. The trend highlights the critical need for continuous security monitoring in web development environments.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/exploitation-of-react2shell-surges/"
+            "content": "The React2Shell vulnerability, identified as CVE-2025-55182, is experiencing increased exploitation activity following its public disclosure. Threat actors are actively targeting this flaw, which allows for remote code execution on vulnerable systems. Organizations using affected versions of React are at heightened risk and should prioritize applying available patches to secure their environments. This trend underscores the rapid weaponization of newly disclosed vulnerabilities by cybercriminals. Security teams must remain vigilant, ensuring timely updates and employing robust security measures to protect against exploitation attempts.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/exploitation-activity-ramps-react2shell"
         },
         {
             "date": "Dec 08 2025",
-            "title": "Sneeit WordPress Plugin RCE Vulnerability Actively Exploited",
-            "content": "A severe remote code execution vulnerability, CVE-2025-6389, has been discovered in the Sneeit Framework plugin for WordPress, affecting all versions up to 8.3. This flaw, which has a CVSS score of 9.8, is being actively exploited in the wild, according to data from Wordfence. WordPress site administrators using the Sneeit plugin should immediately update to the latest version to prevent unauthorized access and potential site compromise. This incident highlights the critical importance of keeping WordPress plugins updated and regularly reviewing site security configurations. The ongoing exploitation underscores the persistent threats facing content management systems.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/12/sneeit-wordpress-rce-exploited-in-wild.html"
-        },
-        {
-            "date": "Dec 08 2025",
-            "title": "ISC Stormcast Highlights Emerging Cyber Threats",
-            "content": "The latest ISC Stormcast podcast from the SANS Internet Storm Center provides an overview of current cyber threats, maintaining an InfoCON status of green. The discussion covers recent vulnerabilities and attack vectors that security professionals need to monitor. Although the InfoCON status remains stable, the podcast emphasizes the importance of vigilance in the face of evolving threats. Listeners are encouraged to stay informed on the latest security updates and patches to safeguard their systems. This resource serves as a crucial touchpoint for cybersecurity experts aiming to keep abreast of potential risks in the digital landscape.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32546"
+            "title": "Ransomware Gangs Extracted Over $2.1 Billion Between 2022 and 2024",
+            "content": "A report from the Financial Crimes Enforcement Network (FinCEN) reveals that ransomware gangs extorted over $2.1 billion from victims between 2022 and 2024. The report notes a peak in activity during 2023, attributed to the operations of ALPHV/BlackCat and LockBit groups, before a decline in 2024 following law enforcement actions. This data highlights the significant financial impact of ransomware on global businesses and the importance of continued efforts to disrupt these criminal networks. Organizations are advised to enhance their cybersecurity posture, including regular data backups and employee training, to mitigate the risk of ransomware attacks.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/fincen-says-ransomware-gangs-extorted-over-21b-from-2022-to-2024/"
         },
         {
             "date": "May 05 2026",
@@ -69,53 +62,53 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Dec 08 2025",
-            "title": "OpenAI&#x27;s ChatGPT Enterprise Sees 8x Growth Amid Competitive Pressures",
-            "content": "OpenAI has reported an eightfold increase in the usage of ChatGPT Enterprise over the past year, with users saving an average of one hour per day. Despite this growth, OpenAI faces mounting competition from Anthropic and questions about the sustainability of its pricing model. The rapid adoption underscores a broader trend of AI integration in enterprise environments, where efficiency gains are increasingly sought. However, the competitive landscape is intensifying, with rivals offering alternative AI solutions that could challenge OpenAI&#x27;s market position. Enterprises are advised to evaluate AI offerings based on both cost and capability to ensure optimal outcomes.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/08/openai-boasts-enterprise-win-days-after-internal-code-red-on-google-threat/"
+            "date": "Dec 09 2025",
+            "title": "Z.ai Launches Open Source GLM-4.6V Vision-Language Models",
+            "content": "Chinese AI startup Zhipu AI, also known as Z.ai, has unveiled its GLM-4.6V series of open-source vision-language models (VLMs), designed for multimodal reasoning and frontend automation. The series includes models in both &quot;large&quot; and &quot;small&quot; sizes, optimized for high-efficiency deployment in various applications. This release positions Z.ai as a significant player in the field of VLMs, potentially impacting industries reliant on visual and textual data integration. As open-source models, GLM-4.6V offers developers and researchers the flexibility to adapt and enhance capabilities for specific use cases. The introduction of these models reflects the growing trend of open-source contributions in AI, fostering innovation and collaboration across global tech communities.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/ai/z-ai-debuts-open-source-glm-4-6v-a-native-tool-calling-vision-model-for"
         },
         {
             "date": "Dec 08 2025",
-            "title": "ByteDance&#x27;s AI Smartphone Prototype Sparks Privacy Debate",
-            "content": "ByteDance&#x27;s recent unveiling of an AI-enabled smartphone prototype in collaboration with ZTE has generated significant consumer interest but also raised privacy concerns. The device, launched on December 2, leverages agentic AI capabilities to enhance user interaction but has faced criticism over potential data security issues. The initial enthusiasm led to a rapid sell-out, yet the company was compelled to scale back certain features following public scrutiny. This development highlights the ongoing tension between innovation in AI technology and the need for robust privacy safeguards. Stakeholders should remain vigilant about data protection measures when adopting new AI-driven devices.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/agentic-ai-smartphones-enterprise-adoption/"
+            "title": "U.S. Commerce Department Approves Nvidia H200 Chip Exports to China",
+            "content": "The U.S. Department of Commerce has approved the export of Nvidia&#x27;s H200 chips to China, despite recent legislative efforts aimed at restricting such transactions. This decision allows Nvidia to continue supplying its advanced H200 chips, which are crucial for AI and machine learning applications, to the Chinese market. The approval comes amid ongoing geopolitical tensions and debates over technology transfer and national security. The H200 chips, known for their high-performance capabilities, are likely to bolster AI development and deployment in China. Industry stakeholders should monitor potential legislative changes that could impact future exports and consider the broader implications for global supply chains and technology partnerships.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/08/department-of-commerce-may-approve-nvidia-h200-chip-exports-to-china/"
         },
         {
             "date": "Dec 08 2025",
-            "title": "OpenAI Reports Accelerated AI Adoption in Enterprises for 2025",
-            "content": "OpenAI&#x27;s latest enterprise data reveals a significant acceleration in AI adoption across various industries throughout 2025. The findings indicate deeper AI integration and notable productivity improvements, with organizations leveraging AI to streamline operations and enhance decision-making. This trend reflects a growing recognition of AI&#x27;s potential to drive business efficiencies and competitive advantage. However, enterprises must navigate challenges related to implementation complexity and workforce adaptation. As AI becomes more entrenched in corporate strategies, businesses are encouraged to invest in training and infrastructure to fully harness AI&#x27;s capabilities.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/the-state-of-enterprise-ai-2025-report"
+            "title": "Google Enhances AI Try-On App Doppl with Shoppable Discovery Feed",
+            "content": "Google has updated its AI-powered try-on app, Doppl, by adding a shoppable discovery feed that provides users with personalized recommendations. This new feature allows users to virtually try on items and purchase them directly through links to merchants, streamlining the shopping experience. Doppl&#x27;s integration of AI-driven recommendations aims to enhance user engagement and conversion rates in the e-commerce sector. This development highlights the increasing use of AI in personalizing retail experiences and the potential for AI to drive sales by connecting consumers directly with products. Retailers and developers should explore opportunities to leverage similar AI technologies to improve customer interactions and sales processes.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/08/googles-ai-try-on-app-doppl-adds-a-shoppable-discovery-feed/"
         },
         {
-            "date": "Dec 07 2025",
-            "title": "Intel&#x27;s Pat Gelsinger Seeks Federal Support to Revive Moore&#x27;s Law",
-            "content": "Intel CEO Pat Gelsinger is advocating for federal assistance to sustain Moore&#x27;s Law, with plans to produce its first silicon wafers by 2028 and commercial systems by 2029. The initiative aims to advance semiconductor technology, crucial for maintaining the pace of innovation in computing power. As the industry faces physical limitations in chip scaling, Intel&#x27;s strategy involves collaboration with government entities to secure necessary resources and funding. This effort is pivotal for the tech sector, which relies on continuous advancements in processing capabilities. Industry professionals should monitor developments in semiconductor research and policy support.",
+            "date": "Dec 08 2025",
+            "title": "Anthropic&#x27;s Claude Code Expands to Slack, Transforming Development Workflows",
+            "content": "Anthropic has introduced Claude Code to Slack, enabling developers to assign coding tasks directly from chat threads. This integration marks a significant shift towards AI-embedded collaboration tools that could revolutionize software development workflows. By allowing developers to delegate tasks without leaving Slack, Claude Code enhances productivity and streamlines communication within development teams. This trend toward AI-enhanced collaboration tools reflects a broader movement in the industry to integrate AI capabilities into everyday work environments. Organizations should consider adopting such tools to improve efficiency and foster seamless collaboration across teams.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/06/pat-gelsinger-wants-to-save-moores-law-with-a-little-help-from-the-feds/"
+            "sourceUrl": "https://techcrunch.com/2025/12/08/claude-code-is-coming-to-slack-and-thats-a-bigger-deal-than-it-sounds/"
         },
         {
-            "date": "Dec 05 2025",
-            "title": "AWS Unveils New AI Tools Amidst Competitive Cloud Landscape",
-            "content": "At re:Invent 2025, Amazon Web Services (AWS) introduced a suite of new AI agent tools, aiming to strengthen its position in the competitive cloud market. The launch includes third-generation chips and database discounts designed to attract developers and enterprises. Despite these advancements, AWS faces challenges in proving its AI capabilities against established leaders in the field. The cloud giant is betting on enterprise AI adoption to drive growth, but it must demonstrate the effectiveness and reliability of its offerings. Organizations considering AWS&#x27;s new tools should assess their alignment with existing infrastructure and strategic goals.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/podcast/nothing-wants-your-money-aws-wants-your-trust-and-spotify-wants-your-data/"
+            "date": "Dec 08 2025",
+            "title": "Claude Code Beta Integration with Slack Enhances Developer Efficiency",
+            "content": "Anthropic has launched a beta integration of its Claude Code programming agent with Slack, allowing software engineers to perform coding tasks within the messaging platform. This integration facilitates seamless task delegation and enhances workflow efficiency by keeping development activities within a single communication hub. The move underscores the growing trend of embedding AI tools directly into workplace communication platforms, aiming to streamline processes and reduce context-switching. Developers and IT managers should evaluate the potential productivity gains from such integrations and consider incorporating AI-driven tools into their existing workflows to optimize team performance.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/ai/anthropics-claude-code-can-now-read-your-slack-messages-and-write-code-for"
         },
         {
-            "date": "Dec 05 2025",
-            "title": "AWS&#x27;s Aggressive AI Push Faces Readiness Hurdles in Enterprises",
-            "content": "Amazon Web Services (AWS) is aggressively rolling out new AI technologies, yet many enterprise customers may not be prepared to implement these innovations. The announcements at re:Invent 2025 highlight AWS&#x27;s commitment to AI, but the readiness of businesses to adopt such technologies remains uncertain. The gap between AWS&#x27;s offerings and enterprise capabilities could hinder the adoption rate, as organizations grapple with integration and skillset challenges. To capitalize on AWS&#x27;s AI advancements, enterprises should evaluate their readiness and invest in necessary training and infrastructure upgrades. This strategic alignment is crucial for leveraging AI&#x27;s full potential.",
+            "date": "Dec 08 2025",
+            "title": "Google Outlines Security Measures for Chrome&#x27;s New Agentic Features",
+            "content": "Google has detailed the security measures it is implementing ahead of the rollout of agentic capabilities in its Chrome browser. These features are designed to enhance user interactions by automating certain tasks, but they also raise potential security concerns. Google&#x27;s approach includes robust guardrails to mitigate risks associated with increased automation, ensuring user data privacy and security. The introduction of agentic features in Chrome reflects the broader industry trend of integrating AI-driven automation into consumer software. Users and IT administrators should stay informed about these changes to understand the potential impact on security and user experience.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/05/aws-reinvent-was-an-all-in-pitch-for-ai-customers-might-not-be-ready/"
+            "sourceUrl": "https://techcrunch.com/2025/12/08/google-details-security-measures-for-chromes-agentic-features/"
         },
         {
-            "date": "Dec 05 2025",
-            "title": "The New York Times Sues Perplexity Over Copyright Infringement",
-            "content": "The New York Times has filed a copyright lawsuit against AI company Perplexity, joining a growing list of publishers seeking legal recourse to enforce licensing deals. The lawsuit underscores the tension between content creators and AI firms over the use of copyrighted material in AI models. This legal action aims to ensure that publishers are compensated for the use of their content, a critical issue as AI technology increasingly relies on vast datasets. The outcome of this case could set a precedent for future negotiations between media companies and AI developers. Stakeholders in the AI industry should closely monitor legal developments that may impact content usage policies.",
+            "date": "Dec 08 2025",
+            "title": "Instacart Partners with ChatGPT for Seamless Grocery Shopping Experience",
+            "content": "Instacart has partnered with ChatGPT to enable users to plan recipes and purchase groceries without leaving the ChatGPT interface. This integration allows shoppers to transition smoothly from meal planning to checkout, streamlining the online grocery shopping process. By embedding shopping capabilities within ChatGPT, Instacart aims to enhance user convenience and engagement, potentially increasing customer retention. This development is part of a broader trend of integrating AI tools into e-commerce platforms to improve user experience. Retailers should explore similar partnerships to leverage AI technologies for enhancing customer interactions and driving sales growth.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/05/the-new-york-times-is-suing-perplexity-for-copyright-infringement/"
+            "sourceUrl": "https://techcrunch.com/2025/12/08/you-can-buy-your-instacart-groceries-without-leaving-chatgpt/"
         }
     ],
     "articles": {},
@@ -160,6 +153,28 @@ const websiteContent = {
     },
     "recentCVEs": [
         {
+            "cveId": "CVE-2022-37055",
+            "dateAdded": "Dec 08, 2025",
+            "vendor": "D-Link Routers",
+            "description": "D-Link Routers contains a buffer overflow vulnerability that has a high impact on confidentiality, integrity, and availability. The impacted products could be end-of-life (EoL) and/or end-of-service (",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-37055",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2025-66644",
+            "dateAdded": "Dec 08, 2025",
+            "vendor": "Array Networks ArrayOS AG",
+            "description": "Array Networks ArrayOS AG contains an OS command injection vulnerability that could allow an attacker to execute arbitrary commands.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-66644",
+            "isZeroDay": false
+        },
+        {
             "cveId": "CVE-2025-55182",
             "dateAdded": "Dec 05, 2025",
             "vendor": "Meta React Server Components",
@@ -179,28 +194,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-26828",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-48633",
-            "dateAdded": "Dec 02, 2025",
-            "vendor": "Android Framework",
-            "description": "Android Framework contains an unspecified vulnerability that allows for information disclosure.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-48633",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-48572",
-            "dateAdded": "Dec 02, 2025",
-            "vendor": "Android Framework",
-            "description": "Android Framework contains an unspecified vulnerability that allows for privilege escalation.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-48572",
             "isZeroDay": false
         }
     ],
