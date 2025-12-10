@@ -4,67 +4,53 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Dec 09 2025",
-            "title": "U.S. Offers $10 Million Bounty for Iranian Hackers",
-            "content": "The U.S. government has announced a $10 million reward for information leading to the capture of Mohammad Bagher Shirinkar, the leader of the Iranian hacking group Emennet Pasargad, and Fatemeh Sedighian Kashi, a long-term employee. This group is accused of engaging in disruptive cyber activities that threaten U.S. national security. The bounty underscores the ongoing geopolitical tensions and the U.S.&#x27;s commitment to countering state-sponsored cyber threats. Security professionals should remain vigilant against potential retaliatory cyber activities from Iranian groups. Organizations are advised to review their cybersecurity measures and ensure robust defenses against state-sponsored attacks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/us-posts-10-million-bounty-for-iranian-hackers/"
+            "date": "Dec 10 2025",
+            "title": "GitHub Action Secrets Vulnerability Exposes Cloud Environments",
+            "content": "A new vulnerability in GitHub Action Secrets has been discovered, allowing attackers to access sensitive information stored in private repositories. This flaw exposes Personal Access Tokens (PATs), which are critical for securing CI/CD workflows. Enterprises relying on GitHub for secure storage of credentials and API keys are at risk, as attackers can exploit these tokens to gain unauthorized access to cloud environments. The breach underscores the importance of reevaluating security practices around GitHub repositories. Organizations should immediately audit their secrets management and consider additional layers of security to protect against unauthorized access.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4103717/github-action-secrets-arent-secret-anymore-exposed-pats-now-a-direct-path-into-cloud-environments-2.html"
         },
         {
-            "date": "Dec 09 2025",
-            "title": "Proofpoint Finalizes $1.8 Billion Acquisition of Hornetsecurity",
-            "content": "Proofpoint, a major player in enterprise cybersecurity, has completed its acquisition of Hornetsecurity, a German company specializing in Microsoft 365 security solutions, for $1.8 billion. This strategic move is expected to enhance Proofpoint&#x27;s capabilities in securing cloud-based environments, particularly for Microsoft 365 users. The acquisition reflects the growing demand for comprehensive security solutions as organizations increasingly rely on cloud services. Cybersecurity professionals should anticipate new integrations and features aimed at bolstering email and data security. Companies using Microsoft 365 are encouraged to stay informed about upcoming changes and improvements to their security frameworks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/proofpoint-completes-1-8-billion-acquisition-of-hornetsecurity/"
+            "date": "Dec 10 2025",
+            "title": "Zero-Day Exploit Targets Windows Cloud Files Mini Filter Driver",
+            "content": "Microsoft&#x27;s December Patch Tuesday revealed a zero-day vulnerability within the Windows Cloud Files Mini Filter Driver, identified as CVE-2025-XXXXX. This escalation of privilege vulnerability is actively being exploited, posing a significant threat to systems running affected Windows versions. The vulnerability allows attackers to gain elevated access, which could lead to further system compromises. Microsoft has released a patch, and it is crucial for organizations to apply it immediately to mitigate potential exploitation. This marks a critical reminder of the importance of timely patch management in maintaining system security.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4103681/december-patch-tuesday-windows-cloud-files-mini-filter-driver-hole-already-being-exploited.html"
         },
         {
-            "date": "Dec 09 2025",
-            "title": "Rise of Deepfakes and AI Resumes Threatens Hiring Processes",
-            "content": "Cybercriminals are exploiting deepfake technology and AI-generated resumes to infiltrate organizations, posing significant risks to hiring processes. By combining automation, impersonation, and social engineering, attackers create convincing fake applicants to gain unauthorized access to sensitive company information. This trend highlights the importance of robust identity verification measures during recruitment. HR and security teams should collaborate to implement advanced screening techniques, such as biometric verification and AI-driven background checks, to detect fraudulent applications. Organizations must remain vigilant and update their protocols to prevent such sophisticated infiltration attempts.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/inside-malwarebytes/2025/12/deepfakes-ai-resumes-and-the-growing-threat-of-fake-applicants"
-        },
-        {
-            "date": "Dec 09 2025",
-            "title": "Microsoft Works to Resolve Copilot Outage in Europe",
-            "content": "Microsoft is addressing an ongoing outage affecting its AI-powered Copilot digital assistant, which has left users across Europe unable to access the service. The disruption highlights the challenges of maintaining reliable AI services at scale, particularly in geographically diverse regions. The outage impacts businesses relying on Copilot for productivity enhancements, emphasizing the need for contingency plans in AI-dependent workflows. Microsoft is actively investigating the issue and working on a resolution to restore service. Users are advised to monitor Microsoft&#x27;s status updates and consider alternative tools for critical tasks during the downtime.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-investigates-copilot-outage-affecting-users-in-europe/"
-        },
-        {
-            "date": "Dec 09 2025",
-            "title": "New &#x27;Broadside&#x27; Botnet Targets Shipping Industry",
-            "content": "A newly identified botnet, dubbed &#x27;Broadside,&#x27; poses a significant threat to shipping companies by targeting TBK DVR devices. The botnet is designed to steal credentials and leverage infected devices to launch Distributed Denial-of-Service (DDoS) attacks, potentially disrupting maritime operations. This development underscores the vulnerability of IoT devices in critical infrastructure sectors. Shipping companies are urged to secure their DVR devices by applying firmware updates and implementing network segmentation. The emergence of Broadside highlights the ongoing need for robust cybersecurity measures in the maritime industry to safeguard against evolving threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/new-broadside-botnet-poses-risk-to-shipping-companies/"
-        },
-        {
-            "date": "Dec 09 2025",
-            "title": "Streamlining Zero Trust with the Shared Signals Framework",
-            "content": "Implementing Zero Trust architecture remains challenging for many organizations, with 88% reporting significant difficulties, often due to unreliable signal sharing between security tools. The Shared Signals Framework offers a solution by enabling better interoperability and communication between disparate security systems. By adopting this framework, organizations can more effectively reduce their attack surface and respond swiftly to emerging threats. Security leaders are encouraged to evaluate their current Zero Trust implementations and consider integrating shared signal capabilities to enhance their security posture. This approach is vital for organizations aiming to stay ahead of sophisticated cyber threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/12/how-to-streamline-zero-trust-using.html"
-        },
-        {
-            "date": "Dec 09 2025",
-            "title": "Google Enhances Chrome Security Against Indirect Prompt Injection",
-            "content": "Google has introduced new layered security defenses in its Chrome browser to combat indirect prompt injection threats, coinciding with the integration of agentic AI capabilities. These updates aim to prevent malicious actors from exploiting vulnerabilities that could lead to unauthorized actions within the browser. The enhancements reflect Google&#x27;s ongoing commitment to securing its browser against emerging threats as AI functionalities become more prevalent. Chrome users should ensure their browsers are updated to benefit from these new protections. Security professionals should remain aware of evolving threat vectors associated with AI and web browsers to safeguard user data effectively.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/12/google-adds-layered-defenses-to-chrome.html"
-        },
-        {
-            "date": "Dec 09 2025",
-            "title": "ISC Stormcast Highlights Emerging Cyber Threats and Trends",
-            "content": "The latest ISC Stormcast podcast for December 9, 2025, from the SANS Internet Storm Center provides insights into the current cyber threat landscape. This episode emphasizes the importance of staying vigilant as attackers continuously adapt their methods to exploit vulnerabilities. The InfoCON status remains at green, indicating a stable threat environment, but experts warn that organizations should not become complacent. The podcast discusses recent trends in ransomware, phishing, and emerging vulnerabilities that could impact enterprise security. Security professionals are encouraged to keep systems updated and maintain robust incident response plans to mitigate potential threats effectively.",
+            "date": "Dec 10 2025",
+            "title": "ISC Stormcast Highlights Emerging Cybersecurity Threats",
+            "content": "The latest ISC Stormcast podcast provides insights into emerging cybersecurity threats, with a focus on recent vulnerabilities and attack patterns. The discussion highlights the growing sophistication of threat actors and the need for adaptive defense strategies. Security professionals are urged to stay informed about the latest threat intelligence to better protect their networks. The podcast serves as a valuable resource for understanding current cyber risks and implementing effective security measures. Listeners are encouraged to regularly tune in to keep abreast of the evolving cybersecurity landscape.",
             "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32548"
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32552"
+        },
+        {
+            "date": "Dec 10 2025",
+            "title": "Ransomware Aftermath Continues to Impact Japanese Firms",
+            "content": "Japanese companies are experiencing prolonged recovery periods following ransomware attacks targeting manufacturers, retailers, and government entities. The attacks have caused significant operational disruptions, with recovery efforts stretching over several months. This trend highlights the persistent threat of ransomware and its ability to inflict long-term damage on affected organizations. Security experts emphasize the importance of robust backup solutions and incident response plans to mitigate the impact of such attacks. Organizations are advised to strengthen their cybersecurity posture to reduce the likelihood of future incidents.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/japanese-firms-suffer-long-tail-ransomware-damage"
         },
         {
             "date": "Dec 09 2025",
-            "title": "Ransomware Groups Leverage Shanya EXE Packer to Evade Detection",
-            "content": "Ransomware gangs are increasingly using the Shanya packer-as-a-service (PaaS) to conceal EDR (endpoint detection and response) killers within their malware. Shanya enables these threat actors to obfuscate malicious payloads, making it difficult for security solutions to detect and neutralize threats. This tactic poses a significant risk to organizations as it enhances the stealth capabilities of ransomware, potentially leading to more successful attacks. Security teams are advised to enhance their detection mechanisms by incorporating behavioral analysis techniques and regularly updating their EDR solutions. Staying informed about the latest evasion techniques is crucial for maintaining robust cybersecurity defenses.",
+            "title": "Microsoft Patches 56 Security Flaws in December Update",
+            "content": "Microsoft&#x27;s final Patch Tuesday of 2025 addresses 56 security vulnerabilities across its Windows operating systems and supported software. Among these, a zero-day flaw that has already seen active exploitation has been patched, along with two publicly disclosed vulnerabilities. The updates are critical for maintaining system security and protecting against potential exploits. Organizations are urged to prioritize these patches to safeguard their networks against emerging threats. This update concludes a year of over 1,150 vulnerabilities patched by Microsoft, reflecting the ongoing challenges in software security.",
+            "source": "Krebs on Security",
+            "sourceUrl": "https://krebsonsecurity.com/2025/12/microsoft-patch-tuesday-december-2025-edition/"
+        },
+        {
+            "date": "Dec 09 2025",
+            "title": "SAP Releases Patches for Critical Vulnerabilities",
+            "content": "SAP has issued its December security updates, addressing 14 vulnerabilities in various products, including three critical-severity flaws. These vulnerabilities could potentially allow attackers to execute arbitrary code or access sensitive data. SAP users are strongly encouraged to apply the patches to prevent exploitation. The updates are part of SAP&#x27;s regular security maintenance to protect its extensive product suite from known threats. Organizations using SAP products should review the updates and implement them promptly to maintain secure operations.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/ransomware-gangs-turn-to-shanya-exe-packer-to-hide-edr-killers/"
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/sap-fixes-three-critical-vulnerabilities-across-multiple-products/"
+        },
+        {
+            "date": "Dec 09 2025",
+            "title": "Microsoft Addresses Exploited Zero-Day in December Patches",
+            "content": "In a relatively light Patch Tuesday, Microsoft has addressed a zero-day vulnerability that was being actively exploited. Additionally, proof-of-concept exploit code for two other vulnerabilities is publicly available, raising concerns about potential attacks. The company has issued patches for over 1,150 flaws throughout the year, underscoring the importance of regular updates. Security professionals should prioritize these patches to protect against the most pressing threats. This update serves as a reminder of the critical role patch management plays in cybersecurity defense strategies.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/application-security/microsoft-fixes-exploited-zero-day-light-patch-tuesday"
         },
         {
             "date": "May 05 2026",
@@ -76,60 +62,53 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Dec 09 2025",
-            "title": "AI Usage Patterns Diverge from Expected Productivity Gains",
-            "content": "A comprehensive study by O reveals unexpected trends in AI usage, challenging the narrative that AI is primarily boosting productivity through tasks like email writing and code generation. Analysis of billions of interactions indicates a significant portion of AI usage centers around entertainment and casual inquiries. This shift suggests that while AI tools are available for professional productivity, users are gravitating towards more leisurely applications. The findings highlight a potential disconnect between AI developers&#x27; intentions and actual consumer behavior. Organizations aiming to integrate AI into workflows should consider these usage patterns to better align their offerings with user interests.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/how-people-really-use-ai-the-surprising-truth-from-analysing-billions-of-interactions/"
+            "date": "Dec 10 2025",
+            "title": "SAP&#x27;s AI Co-Pilot Achieves 95% Accuracy in Consultant Experiment",
+            "content": "SAP conducted an internal experiment using its AI co-pilot, Joule for Consultants, to validate over 1,000 business requirements, achieving an impressive 95% accuracy before participants realized the responses were generated by AI. This experiment highlights the potential for AI to handle complex business tasks traditionally managed by human consultants. The AI&#x27;s performance underscores its capability to streamline operations, potentially reducing the need for human intervention in similar tasks. While this development showcases AI&#x27;s growing role in business environments, it also raises questions about the future of consultancy roles and the ethical implications of AI in decision-making processes. Organizations should consider integrating AI solutions like SAP&#x27;s Joule to enhance efficiency but remain vigilant about maintaining transparency and ethical standards.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/ai/the-ai-that-scored-95-until-consultants-learned-it-was-ai"
         },
         {
-            "date": "Dec 09 2025",
-            "title": "Publishers Face Challenges in AI-Driven Information Landscape",
-            "content": "The integration of AI into information creation and delivery is reshaping the publishing industry, as detailed in a new report. AI-generated content summaries are becoming prevalent, reducing direct user engagement with original articles. Large language models are training on vast amounts of scraped content, raising concerns about intellectual property rights and content monetization. Publishers must adapt to these changes by developing AI-resilient strategies to maintain revenue streams and audience engagement. As AI continues to evolve, the industry faces the challenge of balancing innovation with sustainable business practices.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/newsweek-building-ai-resilience-for-the-next-era-of-information/"
-        },
-        {
-            "date": "Dec 09 2025",
-            "title": "OpenAI and Deutsche Telekom Partner to Enhance AI Accessibility in Europe",
-            "content": "OpenAI has announced a strategic partnership with Deutsche Telekom to deploy advanced multilingual AI capabilities across Europe. This collaboration will see the rollout of ChatGPT Enterprise to improve operational workflows and drive innovation within Deutsche Telekom. The initiative aims to make sophisticated AI tools more accessible to a broader European audience, leveraging Deutsche Telekom&#x27;s extensive network. By integrating AI into daily operations, the partnership seeks to enhance efficiency and foster a culture of innovation. Businesses across Europe are encouraged to explore similar collaborations to harness AI&#x27;s potential in transforming their operations.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/deutsche-telekom-collaboration"
-        },
-        {
-            "date": "Dec 08 2025",
-            "title": "The State of AI: Envisioning the World in 2030",
-            "content": "The final edition of The State of AI series, a collaboration between the Financial Times and MIT Technology Review, explores the transformative impact of generative AI by 2030. The discussion highlights the potential of AI to reshape global power dynamics, economic structures, and societal norms. Experts predict that AI will drive significant advancements in automation, healthcare, and environmental management. However, these changes come with challenges, including ethical considerations and regulatory frameworks. Stakeholders are urged to engage in proactive dialogue to ensure AI&#x27;s benefits are maximized while mitigating potential risks.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2025/12/08/1128922/the-state-of-ai-a-vision-of-the-world-in-2030/"
-        },
-        {
-            "date": "Dec 08 2025",
-            "title": "Trump Announces Executive Order to Block State AI Regulations",
-            "content": "Former President Donald Trump has declared his intention to sign an executive order preventing states from enacting individual AI regulations. The &quot;ONE RULE&quot; Executive Order aims to streamline AI-related approvals by eliminating the need for companies to navigate multiple state-level regulations. This move has sparked bipartisan criticism, with concerns about federal overreach and the potential stifling of state innovation. The tech industry is closely monitoring the situation, as the order could significantly impact AI development and deployment strategies across the United States. Companies should prepare for potential regulatory changes and consider their implications on business operations.",
+            "date": "Dec 10 2025",
+            "title": "Coreweave CEO Justifies AI Circular Deals Amid Market Volatility",
+            "content": "The CEO of Coreweave, an AI data center provider with ties to Nvidia, defended the company&#x27;s circular deals as a strategic response to what he termed a &quot;violent change&quot; in market demand. These deals involve complex agreements where Nvidia acts as both investor and supplier, raising concerns about potential conflicts of interest. The CEO&#x27;s remarks aim to reassure stakeholders that these arrangements are mutual collaborations rather than monopolistic practices. As demand for AI infrastructure surges, companies like Coreweave are navigating a rapidly evolving landscape that requires innovative business models. Industry professionals should monitor these developments to understand how such partnerships might influence market dynamics and competition.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/08/one-rule-trump-says-hell-sign-an-executive-order-blocking-state-ai-laws-despite-bipartisan-pushback/"
+            "sourceUrl": "https://techcrunch.com/2025/12/09/coreweave-ceo-defends-ai-circular-deals-as-working-together/"
         },
         {
-            "date": "Dec 08 2025",
-            "title": "Booking.com Leverages AI for Enhanced Customer Recommendations",
-            "content": "Booking.com has successfully implemented a disciplined, modular AI strategy to improve its conversational recommendation system, achieving a twofold increase in accuracy. The company&#x27;s early exploration into agentic behaviors has allowed it to refine its AI infrastructure without succumbing to industry hype. By focusing on practical applications, Booking.com has enhanced its customer service capabilities, providing more accurate and personalized recommendations. This approach underscores the importance of strategic AI integration in achieving tangible business outcomes. Other enterprises are encouraged to adopt a similar methodical approach to AI deployment to maximize benefits.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/booking-coms-agent-strategy-disciplined-modular-and-already-delivering-2"
-        },
-        {
-            "date": "Dec 08 2025",
-            "title": "Enterprise AI Shifts from Pilot Projects to Deep Workflow Integration",
-            "content": "OpenAI reports a significant shift in enterprise AI usage from experimental pilots to comprehensive workflow integrations. Businesses are increasingly assigning complex, multi-step processes to AI models, moving beyond simple text summarization tasks. This trend reflects growing confidence in AI&#x27;s capabilities to enhance operational efficiency and decision-making. The data indicates that firms are realizing substantial benefits from deeper AI integration, including improved productivity and innovation. Organizations are advised to assess their AI strategies and consider expanding their use of AI to optimize business processes and maintain competitive advantage.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/openai-enterprise-users-swap-ai-pilots-for-deep-integrations/"
+            "date": "Dec 10 2025",
+            "title": "Unconventional AI Secures $475M Seed Round, Valued at $4.5 Billion",
+            "content": "Unconventional AI, a hardware startup led by former Databricks AI head Naveen Rao, has confirmed a massive $475 million seed funding round, valuing the company at $4.5 billion. This substantial investment reflects strong confidence in the startup&#x27;s potential to disrupt the AI hardware market. Unconventional AI is reportedly focused on developing cutting-edge hardware solutions to enhance AI processing capabilities, a critical area as demand for more efficient AI systems grows. The funding will accelerate product development and market entry, positioning the company as a significant player in the AI hardware sector. Stakeholders should watch for upcoming product announcements and potential impacts on existing AI hardware providers.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/09/unconventional-ai-confirms-its-massive-475m-seed-round/"
         },
         {
             "date": "Dec 09 2025",
-            "title": "Z.ai Launches Open Source GLM-4.6V Vision-Language Models",
-            "content": "Chinese AI startup Zhipu AI, also known as Z.ai, has unveiled its GLM-4.6V series of open-source vision-language models (VLMs), designed for multimodal reasoning and frontend automation. The series includes models in both &quot;large&quot; and &quot;small&quot; sizes, optimized for high-efficiency deployment in various applications. This release positions Z.ai as a significant player in the field of VLMs, potentially impacting industries reliant on visual and textual data integration. As open-source models, GLM-4.6V offers developers and researchers the flexibility to adapt and enhance capabilities for specific use cases. The introduction of these models reflects the growing trend of open-source contributions in AI, fostering innovation and collaboration across global tech communities.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/z-ai-debuts-open-source-glm-4-6v-a-native-tool-calling-vision-model-for"
+            "title": "Cashew Research Targets $90B Market Research Industry with AI Automation",
+            "content": "Cashew Research is leveraging AI to revolutionize the $90 billion market research industry by automating data collection and analysis processes. The company integrates AI technology to streamline operations while maintaining the accuracy of real-world data sourced from human inputs. This approach promises to reduce the time and cost associated with traditional market research methodologies, offering clients faster insights and more agile decision-making capabilities. As AI continues to transform various industries, Cashew Research&#x27;s model exemplifies how automation can enhance efficiency without compromising data integrity. Businesses in the market research sector should explore AI integration to remain competitive and responsive to client needs.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/09/cashew-research-is-going-after-the-90b-market-research-industry-with-ai/"
+        },
+        {
+            "date": "Dec 09 2025",
+            "title": "Max Hodak Prioritizes Twitter Concerns Over Brain-Computer Interface Security",
+            "content": "Max Hodak, founder of Science Corp and former Neuralink president, expressed more concern about Twitter&#x27;s influence than potential hacking of brain-computer interfaces during a recent interview. Despite significant advancements in brain-computer technology, which Hodak claims are arriving faster than anticipated, he believes societal impacts from platforms like Twitter pose a greater immediate risk. Science Corp recently achieved a major breakthrough in the field, underscoring the rapid pace of innovation. Hodak&#x27;s perspective suggests that while technology progresses, the societal and ethical implications of digital platforms warrant closer scrutiny. Stakeholders should balance technological optimism with awareness of broader societal challenges.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/podcast/max-hodak-is-more-worried-about-twitter-than-brain-computer-interface-hacking/"
+        },
+        {
+            "date": "Dec 09 2025",
+            "title": "B Capital&#x27;s Kabir Narang Launches New Tech-Focused Investment Platform",
+            "content": "Kabir Narang, a founding partner of B Capital, is launching a new investment platform aimed at capitalizing on the intersection of technology, AI, and global capital flows. Slated for a 2026 debut, the platform will focus on &quot;compounding&quot; opportunities that leverage these dynamic sectors. Narang&#x27;s departure from B Capital to pursue this venture indicates a strategic shift towards specialized investment strategies in emerging tech markets. The initiative reflects a growing trend among investors to target niche areas within the tech industry that promise significant returns. Investors and tech leaders should anticipate new opportunities as this platform takes shape, potentially influencing investment patterns in the tech sector.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/09/b-capital-founding-partner-kabir-narang-leaves-to-launch-new-investment-platform/"
+        },
+        {
+            "date": "Dec 09 2025",
+            "title": "Cursor&#x27;s CEO Confident in Startup&#x27;s Resilience Against OpenAI, Anthropic",
+            "content": "Michael Truell, CEO of Anysphere, the parent company of Cursor, expressed confidence that his startup can withstand competition from AI giants OpenAI and Anthropic. After achieving $1 billion in annualized revenue, Truell outlined the unique features and innovations Cursor is developing to differentiate itself in the crowded AI market. Cursor&#x27;s strategic focus includes enhancing user experience and expanding its product offerings to maintain a competitive edge. This assertion of resilience highlights the competitive nature of the AI industry, where smaller firms must continually innovate to survive against larger competitors. Industry observers should monitor Cursor&#x27;s progress and potential impacts on the broader AI landscape.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/09/why-cursors-ceo-believes-openai-anthropic-competition-wont-crush-his-startup/"
         }
     ],
     "articles": {},
@@ -143,7 +122,13 @@ const websiteContent = {
             "date": "December 9, 2025",
             "readTime": "8 min read",
             "category": "Vulnerability Management",
-            "tags": ["CVE-2025-11001", "7-Zip", "RCE", "Active Exploitation", "Patch Management"],
+            "tags": [
+                "CVE-2025-11001",
+                "7-Zip",
+                "RCE",
+                "Active Exploitation",
+                "Patch Management"
+            ],
             "featured": true,
             "severity": "critical"
         }
@@ -188,6 +173,28 @@ const websiteContent = {
     },
     "recentCVEs": [
         {
+            "cveId": "CVE-2025-6218",
+            "dateAdded": "Dec 09, 2025",
+            "vendor": "RARLAB WinRAR",
+            "description": "RARLAB WinRAR contains a path traversal vulnerability allowing an attacker to execute code in the context of the current user.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-6218",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2025-62221",
+            "dateAdded": "Dec 09, 2025",
+            "vendor": "Microsoft Windows",
+            "description": "Microsoft Windows Cloud Files Mini Filter Driver contains a use after free vulnerability that can allow an authorized attacker to elevate privileges locally.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-62221",
+            "isZeroDay": false
+        },
+        {
             "cveId": "CVE-2022-37055",
             "dateAdded": "Dec 08, 2025",
             "vendor": "D-Link Routers",
@@ -218,17 +225,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-55182",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2021-26828",
-            "dateAdded": "Dec 03, 2025",
-            "vendor": "OpenPLC ScadaBR",
-            "description": "OpenPLC ScadaBR contains an unrestricted upload of file with dangerous type vulnerability that allows remote authenticated users to upload and execute arbitrary JSP files via view_edit.shtm.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-26828",
             "isZeroDay": false
         }
     ],
