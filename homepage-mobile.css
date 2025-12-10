@@ -1,0 +1,486 @@
+/* ============================================
+   HOMEPAGE MOBILE OPTIMIZATIONS
+   Specific styles for homepage on mobile
+   ============================================ */
+
+@media (max-width: 768px) {
+
+    /* ========== HERO SECTION (MOBILE) ========== */
+    .hero {
+        min-height: 50vh !important;
+        /* 50% of desktop */
+        padding: calc(var(--mobile-header-height) + 30px) var(--mobile-padding) 40px !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+    }
+
+    .hero-canvas {
+        opacity: 0.3 !important;
+        /* Reduce for mobile performance */
+    }
+
+    .hero-badge {
+        font-size: 0.75rem !important;
+        padding: 8px 16px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .hero h1 {
+        font-size: 2rem !important;
+        /* Reduced from 3.5rem */
+        line-height: 1.2 !important;
+        margin-bottom: 16px !important;
+        padding: 0 10px;
+    }
+
+    .hero p {
+        font-size: 1rem !important;
+        /* Reduced from 1.2rem */
+        line-height: 1.5 !important;
+        margin-bottom: 24px !important;
+        padding: 0 20px;
+        max-width: 100%;
+    }
+
+    .view-dashboard-btn {
+        width: calc(100% - 40px) !important;
+        max-width: 300px !important;
+        padding: 16px 24px !important;
+        font-size: 1rem !important;
+        margin-top: 1.5rem !important;
+        min-height: var(--touch-target-comfortable);
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* ========== SNAPSHOT SECTION (MOBILE) ========== */
+    .section#snapshot {
+        padding: var(--mobile-padding) !important;
+    }
+
+    .section-header {
+        margin-bottom: 16px !important;
+    }
+
+    .section-title {
+        font-size: 1.5rem !important;
+        margin-bottom: 8px !important;
+    }
+
+    /* Info tiles - Single column on small screens */
+    .section#snapshot>div>div {
+        grid-template-columns: 1fr !important;
+        /* Single column */
+        gap: 12px !important;
+    }
+
+    .info-tile {
+        padding: 16px !important;
+        cursor: pointer;
+        transition: all 0.2s ease !important;
+    }
+
+    .info-tile:active {
+        transform: scale(0.98);
+        background: rgba(255, 255, 255, 0.05) !important;
+    }
+
+    .info-tile h3 {
+        font-size: 1.1rem !important;
+    }
+
+    .info-tile p {
+        font-size: 0.85rem !important;
+    }
+
+    /* ========== TABS (MOBILE) ========== */
+    .tabs {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 20px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        padding: 0 var(--mobile-padding);
+        margin: 0 calc(-1 * var(--mobile-padding)) 20px;
+    }
+
+    .tabs::-webkit-scrollbar {
+        display: none;
+    }
+
+    .tab {
+        min-height: var(--touch-target-min);
+        padding: 12px 24px;
+        white-space: nowrap;
+        font-size: 0.95rem;
+        flex-shrink: 0;
+    }
+
+    /* ========== NEWS GRID (MOBILE) ========== */
+    .news-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 16px !important;
+        padding: 0 var(--mobile-padding);
+    }
+
+    /* News cards - Mobile optimized */
+    .news-card {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 16px;
+        transition: transform 0.2s ease;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .news-card:active {
+        transform: scale(0.98);
+    }
+
+    .news-card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .news-card-category {
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        padding: 4px 12px;
+        border-radius: 12px;
+        background: rgba(0, 217, 255, 0.1);
+        color: var(--accent-cyan);
+    }
+
+    .news-card-time {
+        font-size: 0.75rem;
+        color: var(--text-muted);
+    }
+
+    .news-card-title {
+        font-size: 1.1rem;
+        font-weight: 700;
+        line-height: 1.4;
+        color: var(--text-primary);
+        margin: 0;
+    }
+
+    .news-card-excerpt {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        color: var(--text-secondary);
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .news-card-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 12px;
+        border-top: 1px solid var(--border);
+    }
+
+    .news-card-read-more {
+        color: var(--accent-cyan);
+        font-weight: 600;
+        font-size: 0.9rem;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .news-card-share {
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        color: var(--text-muted);
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+
+    .news-card-share:active {
+        background: var(--bg-card);
+        color: var(--accent-cyan);
+    }
+
+    /* ========== CVE SECTION (MOBILE) ========== */
+    .cveSection {
+        padding: 40px var(--mobile-padding) !important;
+    }
+
+    #cveContainer {
+        max-width: 100% !important;
+    }
+
+    /* CVE cards will be styled separately in cve-display-mobile.css */
+
+    /* ========== RANSOMWARE SECTION (MOBILE) ========== */
+    .ransomwareSection {
+        padding: 40px var(--mobile-padding) !important;
+    }
+
+    /* ========== SWIPEABLE NEWS CAROUSEL ========== */
+    .news-carousel-mobile {
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        display: flex;
+        gap: 16px;
+        padding: 0 var(--mobile-padding);
+        margin: 0 calc(-1 * var(--mobile-padding));
+    }
+
+    .news-carousel-mobile::-webkit-scrollbar {
+        display: none;
+    }
+
+    .news-carousel-mobile .news-card {
+        flex: 0 0 85%;
+        scroll-snap-align: start;
+        max-width: 320px;
+    }
+
+    /* ========== SECTION SPACING (MOBILE) ========== */
+    .section {
+        padding: 40px var(--mobile-padding) !important;
+        margin: 0 !important;
+    }
+
+    .section+.section {
+        padding-top: 20px !important;
+    }
+
+    /* ========== LOADING STATES (MOBILE) ========== */
+    .loading-spinner {
+        width: 40px;
+        height: 40px;
+        border: 3px solid var(--border);
+        border-top-color: var(--accent-cyan);
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin: 0 auto;
+    }
+
+    /* ========== SKELETON SCREENS (MOBILE) ========== */
+    .skeleton-news-card {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 16px;
+        margin-bottom: 16px;
+    }
+
+    .skeleton-news-card .skeleton-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 12px;
+    }
+
+    .skeleton-news-card .skeleton-category {
+        width: 80px;
+        height: 20px;
+        background: var(--bg-secondary);
+        border-radius: 12px;
+        animation: shimmer 1.5s infinite;
+    }
+
+    .skeleton-news-card .skeleton-time {
+        width: 60px;
+        height: 16px;
+        background: var(--bg-secondary);
+        border-radius: 4px;
+        animation: shimmer 1.5s infinite;
+    }
+
+    .skeleton-news-card .skeleton-title {
+        width: 100%;
+        height: 24px;
+        background: var(--bg-secondary);
+        border-radius: 4px;
+        margin-bottom: 12px;
+        animation: shimmer 1.5s infinite;
+    }
+
+    .skeleton-news-card .skeleton-excerpt {
+        width: 100%;
+        height: 16px;
+        background: var(--bg-secondary);
+        border-radius: 4px;
+        margin-bottom: 8px;
+        animation: shimmer 1.5s infinite;
+    }
+
+    .skeleton-news-card .skeleton-excerpt:last-of-type {
+        width: 70%;
+    }
+
+    /* ========== QUICK ACTIONS (MOBILE) ========== */
+    .mobile-quick-actions {
+        position: fixed;
+        bottom: calc(var(--mobile-bottom-nav-height) + 80px);
+        right: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        z-index: 997;
+    }
+
+    .quick-action-btn {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        color: var(--text-primary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        transition: all 0.2s;
+    }
+
+    .quick-action-btn:active {
+        transform: scale(0.9);
+        background: var(--accent-cyan);
+        color: white;
+    }
+
+    /* ========== STICKY SECTION HEADERS (MOBILE) ========== */
+    .section-header.sticky {
+        position: sticky;
+        top: var(--mobile-header-height);
+        background: var(--bg-primary);
+        z-index: 10;
+        padding: 12px var(--mobile-padding);
+        margin: 0 calc(-1 * var(--mobile-padding));
+        border-bottom: 1px solid var(--border);
+    }
+
+    /* ========== INFINITE SCROLL LOADER (MOBILE) ========== */
+    .infinite-scroll-loader {
+        display: flex;
+        justify-content: center;
+        padding: 40px 20px;
+    }
+
+    .infinite-scroll-loader .loading-spinner {
+        width: 32px;
+        height: 32px;
+    }
+
+    /* ========== EMPTY STATES (MOBILE) ========== */
+    .empty-state-mobile {
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .empty-state-mobile .empty-icon {
+        font-size: 4rem;
+        margin-bottom: 20px;
+        opacity: 0.5;
+    }
+
+    .empty-state-mobile h3 {
+        font-size: 1.3rem;
+        margin-bottom: 12px;
+        color: var(--text-primary);
+    }
+
+    .empty-state-mobile p {
+        font-size: 0.95rem;
+        color: var(--text-secondary);
+        margin-bottom: 24px;
+    }
+
+    /* ========== PERFORMANCE OPTIMIZATIONS ========== */
+    /* Reduce animations on mobile for better performance */
+    @media (max-width: 768px) and (prefers-reduced-motion: no-preference) {
+        * {
+            animation-duration: 0.3s !important;
+        }
+    }
+
+    /* Disable hover effects on mobile (they don't work well) */
+    @media (hover: none) {
+
+        .news-card:hover,
+        .info-tile:hover,
+        .tab:hover {
+            transform: none !important;
+            box-shadow: none !important;
+        }
+    }
+
+    /* ========== ACCESSIBILITY (MOBILE) ========== */
+    /* Larger focus indicators for mobile */
+    *:focus-visible {
+        outline: 3px solid var(--accent-cyan);
+        outline-offset: 2px;
+    }
+
+    /* ========== DARK MODE SPECIFIC (MOBILE) ========== */
+    @media (prefers-color-scheme: dark) {
+        .news-card {
+            background: rgba(255, 255, 255, 0.03);
+        }
+
+        .info-tile {
+            background: rgba(255, 255, 255, 0.02) !important;
+        }
+    }
+}
+
+/* ========== SMALL PHONES (< 375px) ========== */
+@media (max-width: 374px) {
+    .hero h1 {
+        font-size: 1.75rem !important;
+    }
+
+    .hero p {
+        font-size: 0.9rem !important;
+    }
+
+    .news-card-title {
+        font-size: 1rem !important;
+    }
+
+    .section-title {
+        font-size: 1.3rem !important;
+    }
+}
+
+/* ========== LARGE PHONES (> 414px) ========== */
+@media (min-width: 415px) and (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.2rem !important;
+    }
+
+    .news-carousel-mobile .news-card {
+        flex: 0 0 80%;
+        max-width: 360px;
+    }
+}
