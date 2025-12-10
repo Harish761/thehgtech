@@ -181,6 +181,17 @@
         max-width: 100%;
     }
 
+    /* ========== HIDE BMC BUTTON ON MOBILE ========== */
+    .coffee-btn {
+        display: none !important;
+    }
+
+    /* ========== ENSURE BOTTOM NAV IS ON TOP ========== */
+    .mobile-bottom-nav {
+        z-index: 10000 !important;
+        /* Higher than BMC button */
+    }
+
     /* ========== HAMBURGER MENU ========== */
     .mobile-menu-overlay {
         position: fixed;
