@@ -5,6 +5,55 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Dec 10 2025",
+            "title": "Quantum and AI Converge to Form New Cybersecurity Challenges",
+            "content": "The convergence of quantum computing and artificial intelligence (AI) is emerging as a formidable challenge in cybersecurity. As AI technologies become more pervasive, their integration with quantum computing capabilities threatens to outpace current security measures. This new battleground poses risks to data encryption and system integrity across various sectors, potentially rendering traditional defenses obsolete. The rapid development in these fields underscores the urgency for cybersecurity professionals to innovate protective strategies. Organizations must invest in quantum-resistant encryption and AI-driven security solutions to safeguard against these evolving threats.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4103288/quantum-meets-ai-the-next-cybersecurity-battleground.html"
+        },
+        {
+            "date": "Dec 10 2025",
+            "title": "Google Fixes Critical GeminiJack Vulnerability in Enterprise Systems",
+            "content": "Google has patched a critical vulnerability known as GeminiJack, which posed a significant threat to corporate data security. This zero-click exploit could be triggered through crafted emails, calendar invites, or documents, affecting Google’s Gemini Enterprise services. The vulnerability had the potential to expose sensitive corporate information without user interaction. Organizations using these services are advised to apply the latest updates immediately to mitigate any risks. This incident highlights the ongoing challenges in securing enterprise communication platforms against sophisticated cyber threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/google-patches-gemini-enterprise-vulnerability-exposing-corporate-data/"
+        },
+        {
+            "date": "Dec 10 2025",
+            "title": "GhostFrame Phishing Kit Exploits Dynamic Subdomains in Mass Attacks",
+            "content": "The GhostFrame phishing kit is facilitating widespread cyberattacks by leveraging dynamic subdomains and hidden iframes. These techniques enable attackers to bypass basic security tools, posing a threat to millions of users globally. GhostFrame&#x27;s ability to adapt and mask its presence makes it particularly challenging to detect and neutralize. Security teams should enhance their monitoring capabilities and employ advanced threat detection systems to counteract these sophisticated phishing tactics. The rise of such kits underscores the need for continuous vigilance and adaptive security measures.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2025/12/ghostframe-phishing-kit-fuels-widespread-attacks-against-millions"
+        },
+        {
+            "date": "Dec 10 2025",
+            "title": "Fortinet Addresses Critical Authentication Bypass in Multiple Products",
+            "content": "Fortinet has released patches for critical authentication bypass vulnerabilities affecting FortiOS, FortiWeb, FortiProxy, and FortiSwitchManager. These flaws are present in systems with FortiCloud Single Sign-On (SSO) login authentication enabled, potentially allowing unauthorized access. Organizations using these products should prioritize updating to the latest versions to secure their networks. The vulnerabilities highlight the importance of maintaining robust authentication mechanisms and regular patch management practices. Fortinet&#x27;s swift response is a reminder of the ongoing need for vigilance in safeguarding network infrastructures.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/fortinet-patches-critical-authentication-bypass-vulnerabilities/"
+        },
+        {
+            "date": "Dec 10 2025",
+            "title": "Ukrainian Hacker Charged for Aiding Russian Cyberattacks",
+            "content": "U.S. prosecutors have charged a Ukrainian national with assisting Russian state-backed hacktivist groups in cyberattacks targeting critical infrastructure worldwide. The alleged activities include compromising U.S. water systems, election systems, and nuclear facilities. This case underscores the persistent threat posed by state-sponsored cyber actors and the complex geopolitical dynamics in cyber warfare. Organizations in critical sectors should enhance their security postures and collaborate with international agencies to counteract such threats. The charges reflect increasing efforts to hold individuals accountable for cybercrimes on a global scale.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/ukrainian-hacker-charged-with-helping-russian-hacktivist-groups/"
+        },
+        {
+            "date": "Dec 10 2025",
+            "title": "AI-Powered Browsers Pose New Risks to Corporate Security",
+            "content": "The rise of AI-powered browsers is introducing new vulnerabilities in corporate environments. These browsers, while offering enhanced user experiences, can inadvertently expose sensitive data through AI-driven features. As organizations increasingly adopt AI technologies, they must remain vigilant about potential security implications. Implementing comprehensive security policies and conducting regular audits can help mitigate these risks. The trend highlights the need for balancing innovation with security to protect corporate assets in an evolving digital landscape.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4103972/ki-browser-gefahrden-unternehmen.html"
+        },
+        {
+            "date": "Dec 10 2025",
+            "title": "Irish Health Service Offers Compensation Post-Ransomware Attack",
+            "content": "Four years after a ransomware attack on the Irish Health Service, victims are set to receive €750 in compensation for data exposure. The notorious attack in May 2021 disrupted healthcare services and compromised sensitive patient information. This compensation marks a significant step in addressing the impact on affected individuals. The incident serves as a stark reminder of the long-term consequences of ransomware attacks on public services. Organizations should bolster their defenses and have robust incident response plans to prevent similar occurrences.",
+            "source": "Graham Cluley",
+            "sourceUrl": "https://www.bitdefender.com/en-us/blog/hotforsecurity/four-years-later-irish-health-service-offers-eu750-to-victims-of-ransomware-attack"
+        },
+        {
+            "date": "Dec 10 2025",
             "title": "GitHub Action Secrets Vulnerability Exposes Cloud Environments",
             "content": "A new vulnerability in GitHub Action Secrets has been discovered, allowing attackers to access sensitive information stored in private repositories. This flaw exposes Personal Access Tokens (PATs), which are critical for securing CI/CD workflows. Enterprises relying on GitHub for secure storage of credentials and API keys are at risk, as attackers can exploit these tokens to gain unauthorized access to cloud environments. The breach underscores the importance of reevaluating security practices around GitHub repositories. Organizations should immediately audit their secrets management and consider additional layers of security to protect against unauthorized access.",
             "source": "CSO Online",
@@ -32,27 +81,6 @@ const websiteContent = {
             "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/japanese-firms-suffer-long-tail-ransomware-damage"
         },
         {
-            "date": "Dec 09 2025",
-            "title": "Microsoft Patches 56 Security Flaws in December Update",
-            "content": "Microsoft&#x27;s final Patch Tuesday of 2025 addresses 56 security vulnerabilities across its Windows operating systems and supported software. Among these, a zero-day flaw that has already seen active exploitation has been patched, along with two publicly disclosed vulnerabilities. The updates are critical for maintaining system security and protecting against potential exploits. Organizations are urged to prioritize these patches to safeguard their networks against emerging threats. This update concludes a year of over 1,150 vulnerabilities patched by Microsoft, reflecting the ongoing challenges in software security.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2025/12/microsoft-patch-tuesday-december-2025-edition/"
-        },
-        {
-            "date": "Dec 09 2025",
-            "title": "SAP Releases Patches for Critical Vulnerabilities",
-            "content": "SAP has issued its December security updates, addressing 14 vulnerabilities in various products, including three critical-severity flaws. These vulnerabilities could potentially allow attackers to execute arbitrary code or access sensitive data. SAP users are strongly encouraged to apply the patches to prevent exploitation. The updates are part of SAP&#x27;s regular security maintenance to protect its extensive product suite from known threats. Organizations using SAP products should review the updates and implement them promptly to maintain secure operations.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/sap-fixes-three-critical-vulnerabilities-across-multiple-products/"
-        },
-        {
-            "date": "Dec 09 2025",
-            "title": "Microsoft Addresses Exploited Zero-Day in December Patches",
-            "content": "In a relatively light Patch Tuesday, Microsoft has addressed a zero-day vulnerability that was being actively exploited. Additionally, proof-of-concept exploit code for two other vulnerabilities is publicly available, raising concerns about potential attacks. The company has issued patches for over 1,150 flaws throughout the year, underscoring the importance of regular updates. Security professionals should prioritize these patches to protect against the most pressing threats. This update serves as a reminder of the critical role patch management plays in cybersecurity defense strategies.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/application-security/microsoft-fixes-exploited-zero-day-light-patch-tuesday"
-        },
-        {
             "date": "May 05 2026",
             "title": "GISEC GLOBAL 2026 Unveils Cybersecurity Innovations in Middle East and Africa",
             "content": "GISEC GLOBAL 2026, the largest cybersecurity event in the Middle East and Africa, has kicked off, showcasing the latest advancements in cybersecurity technology and strategy. The event serves as a platform for industry leaders to discuss emerging threats and innovative solutions. This year&#x27;s focus includes AI-driven security tools, advanced threat detection systems, and new compliance frameworks. Professionals from various sectors, including government and private enterprises, are attending to gain insights into protecting critical infrastructure. The event highlights the region&#x27;s growing importance in the global cybersecurity landscape, emphasizing collaboration and knowledge sharing. Attendees are encouraged to engage with workshops and panels to stay ahead of evolving cyber threats.",
@@ -61,6 +89,55 @@ const websiteContent = {
         }
     ],
     "aiShorts": [
+        {
+            "date": "Dec 10 2025",
+            "title": "Perplexity AI Agents Transform Enterprise Task Management",
+            "content": "Perplexity has released new adoption data showcasing how AI agents are enhancing workflow efficiency by taking over complex enterprise tasks. This development marks a significant shift in the technology sector, where generative AI is evolving beyond mere conversation to actionable task management. Enterprises implementing these AI agents are witnessing substantial gains in operational efficiency. The move reflects a broader trend of AI integration into business processes, aiming to automate and streamline complex tasks. Organizations should evaluate their current workflows to identify opportunities where AI agents could introduce similar efficiencies. This advancement underscores the growing role of AI in transforming traditional business operations.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/perplexity-ai-agents-taking-over-complex-enterprise-tasks/"
+        },
+        {
+            "date": "Dec 10 2025",
+            "title": "NTT DATA Reveals Playbook for AI Success in Business",
+            "content": "NTT DATA&#x27;s latest research identifies key strategies employed by companies successfully leveraging AI, distinguishing them as industry leaders. These &quot;AI leaders&quot; are characterized by robust planning, decisive strategy execution, and a disciplined approach to AI integration. The report highlights that while many companies are still experimenting with AI, those with clear, actionable plans are reaping significant benefits. This insight is crucial for businesses aiming to enhance their competitive edge through AI. Companies should consider adopting similar strategic frameworks to maximize AI&#x27;s potential in driving innovation and efficiency.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/inside-the-playbook-of-companies-winning-with-ai/"
+        },
+        {
+            "date": "Dec 09 2025",
+            "title": "Rivian to Unveil AI Assistant at Upcoming AI &amp; Autonomy Day",
+            "content": "Electric vehicle manufacturer Rivian is set to reveal details about its proprietary AI assistant at the upcoming AI &amp; Autonomy Day on December 11. This announcement signals Rivian&#x27;s commitment to integrating advanced AI capabilities into its vehicles, potentially enhancing user experience and vehicle functionality. The AI assistant is expected to offer features that could improve navigation, vehicle maintenance, and driver safety. As the automotive industry increasingly embraces AI, Rivian&#x27;s move underscores the competitive push towards smarter, more autonomous vehicles. Stakeholders should monitor this development for potential impacts on the EV market and consumer adoption trends.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/09/rivian-is-building-its-own-ai-assistant/"
+        },
+        {
+            "date": "Dec 09 2025",
+            "title": "Apriel-1.6-15b-Thinker: A Cost-Efficient Multimodal AI Model",
+            "content": "Hugging Face has introduced Apriel-1.6-15b-Thinker, a new multimodal AI model designed for cost-efficient performance across various applications. This model promises enhanced capabilities in processing and understanding both text and visual data, offering businesses a versatile tool for complex data tasks. The development represents a significant step in making advanced AI more accessible and affordable for enterprises of all sizes. Companies looking to integrate AI into their operations can benefit from Apriel-1.6-15b-Thinker&#x27;s efficiency and adaptability. This launch emphasizes the ongoing evolution of AI models to meet diverse business needs with a focus on cost-effectiveness.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/ServiceNow-AI/apriel-1p6-15b-thinker"
+        },
+        {
+            "date": "Dec 09 2025",
+            "title": "Rising AI Chatbot Usage Among US Teens Raises Safety Concerns",
+            "content": "A new report reveals that 30% of US teenagers are using AI chatbots daily, raising concerns about potential addiction and safety. Initially used for answering basic questions, these chatbots are becoming integral to teens&#x27; daily interactions. The growing reliance on AI chatbots highlights the need for enhanced safety measures and parental guidance to mitigate risks. As AI becomes more embedded in everyday life, the implications for mental health and privacy warrant careful consideration. Parents and educators should be aware of these trends and actively engage with teens about responsible AI usage.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/09/three-in-ten-u-s-teens-use-ai-chatbots-every-day-but-safety-concerns-are-growing/"
+        },
+        {
+            "date": "Dec 09 2025",
+            "title": "Mistral Unveils Devstral 2: A New Era for AI Coding Models",
+            "content": "French AI startup Mistral has launched Devstral 2, a powerful coding model that includes an open-source, laptop-friendly version, catering to both enterprise and independent developers. Following a challenging period of scrutiny, Mistral has emerged with new models that promise to democratize AI development. The Devstral 2 model is designed to enhance coding efficiency and accessibility, offering robust tools for developers across various platforms. This release aligns with Mistral&#x27;s commitment to providing versatile AI solutions that support diverse development environments. Developers are encouraged to explore Devstral 2 to leverage its capabilities for innovative coding projects.",
+            "source": "AI | VentureBeat",
+            "sourceUrl": "https://venturebeat.com/ai/mistral-launches-powerful-devstral-2-coding-model-including-open-source"
+        },
+        {
+            "date": "Dec 09 2025",
+            "title": "Slack CEO Denise Dresser Joins OpenAI as Chief Revenue Officer",
+            "content": "OpenAI has appointed Denise Dresser, former CEO of Slack, as its new Chief Revenue Officer, tasked with leading the company&#x27;s revenue strategy and enhancing enterprise customer success. This strategic hire underscores OpenAI&#x27;s focus on expanding its commercial reach and strengthening its position in the enterprise AI market. Dresser&#x27;s experience in scaling tech companies will be instrumental in driving OpenAI&#x27;s growth initiatives. The move reflects OpenAI&#x27;s commitment to aligning its business strategies with its technological advancements. Industry observers should watch for potential shifts in OpenAI&#x27;s market approach under Dresser&#x27;s leadership.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/09/slack-ceo-denise-dresser-to-join-openai-as-chief-revenue-officer/"
+        },
         {
             "date": "Dec 10 2025",
             "title": "SAP&#x27;s AI Co-Pilot Achieves 95% Accuracy in Consultant Experiment",
@@ -81,34 +158,6 @@ const websiteContent = {
             "content": "Unconventional AI, a hardware startup led by former Databricks AI head Naveen Rao, has confirmed a massive $475 million seed funding round, valuing the company at $4.5 billion. This substantial investment reflects strong confidence in the startup&#x27;s potential to disrupt the AI hardware market. Unconventional AI is reportedly focused on developing cutting-edge hardware solutions to enhance AI processing capabilities, a critical area as demand for more efficient AI systems grows. The funding will accelerate product development and market entry, positioning the company as a significant player in the AI hardware sector. Stakeholders should watch for upcoming product announcements and potential impacts on existing AI hardware providers.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2025/12/09/unconventional-ai-confirms-its-massive-475m-seed-round/"
-        },
-        {
-            "date": "Dec 09 2025",
-            "title": "Cashew Research Targets $90B Market Research Industry with AI Automation",
-            "content": "Cashew Research is leveraging AI to revolutionize the $90 billion market research industry by automating data collection and analysis processes. The company integrates AI technology to streamline operations while maintaining the accuracy of real-world data sourced from human inputs. This approach promises to reduce the time and cost associated with traditional market research methodologies, offering clients faster insights and more agile decision-making capabilities. As AI continues to transform various industries, Cashew Research&#x27;s model exemplifies how automation can enhance efficiency without compromising data integrity. Businesses in the market research sector should explore AI integration to remain competitive and responsive to client needs.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/09/cashew-research-is-going-after-the-90b-market-research-industry-with-ai/"
-        },
-        {
-            "date": "Dec 09 2025",
-            "title": "Max Hodak Prioritizes Twitter Concerns Over Brain-Computer Interface Security",
-            "content": "Max Hodak, founder of Science Corp and former Neuralink president, expressed more concern about Twitter&#x27;s influence than potential hacking of brain-computer interfaces during a recent interview. Despite significant advancements in brain-computer technology, which Hodak claims are arriving faster than anticipated, he believes societal impacts from platforms like Twitter pose a greater immediate risk. Science Corp recently achieved a major breakthrough in the field, underscoring the rapid pace of innovation. Hodak&#x27;s perspective suggests that while technology progresses, the societal and ethical implications of digital platforms warrant closer scrutiny. Stakeholders should balance technological optimism with awareness of broader societal challenges.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/podcast/max-hodak-is-more-worried-about-twitter-than-brain-computer-interface-hacking/"
-        },
-        {
-            "date": "Dec 09 2025",
-            "title": "B Capital&#x27;s Kabir Narang Launches New Tech-Focused Investment Platform",
-            "content": "Kabir Narang, a founding partner of B Capital, is launching a new investment platform aimed at capitalizing on the intersection of technology, AI, and global capital flows. Slated for a 2026 debut, the platform will focus on &quot;compounding&quot; opportunities that leverage these dynamic sectors. Narang&#x27;s departure from B Capital to pursue this venture indicates a strategic shift towards specialized investment strategies in emerging tech markets. The initiative reflects a growing trend among investors to target niche areas within the tech industry that promise significant returns. Investors and tech leaders should anticipate new opportunities as this platform takes shape, potentially influencing investment patterns in the tech sector.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/09/b-capital-founding-partner-kabir-narang-leaves-to-launch-new-investment-platform/"
-        },
-        {
-            "date": "Dec 09 2025",
-            "title": "Cursor&#x27;s CEO Confident in Startup&#x27;s Resilience Against OpenAI, Anthropic",
-            "content": "Michael Truell, CEO of Anysphere, the parent company of Cursor, expressed confidence that his startup can withstand competition from AI giants OpenAI and Anthropic. After achieving $1 billion in annualized revenue, Truell outlined the unique features and innovations Cursor is developing to differentiate itself in the crowded AI market. Cursor&#x27;s strategic focus includes enhancing user experience and expanding its product offerings to maintain a competitive edge. This assertion of resilience highlights the competitive nature of the AI industry, where smaller firms must continually innovate to survive against larger competitors. Industry observers should monitor Cursor&#x27;s progress and potential impacts on the broader AI landscape.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/09/why-cursors-ceo-believes-openai-anthropic-competition-wont-crush-his-startup/"
         }
     ],
     "articles": {},
