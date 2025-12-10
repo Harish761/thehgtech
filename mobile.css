@@ -140,6 +140,13 @@
         color: var(--accent-cyan);
     }
 
+    .mobile-nav-item.active .mobile-nav-icon {
+        background: linear-gradient(135deg, var(--accent-cyan), var(--accent-red));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
     .mobile-nav-item.active::before {
         content: '';
         position: absolute;
@@ -153,11 +160,16 @@
     }
 
     .mobile-nav-icon {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
+        transition: all var(--transition-fast);
+    }
+
+    .mobile-nav-item:active .mobile-nav-icon {
+        transform: scale(1.1);
     }
 
     .mobile-nav-label {
-        font-size: 0.75rem;
+        font-size: 0.7rem;
         font-weight: 500;
     }
 
