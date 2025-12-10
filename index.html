@@ -2990,33 +2990,46 @@
     </header>
 
     <!-- Mobile Bottom Navigation -->
-    <nav class="mobile-bottom-nav mobile-only" aria-label="Mobile Navigation"
-        style="position: fixed; bottom: 0; left: 0; right: 0; height: 64px; background: #1a1a1a; border-top: 1px solid rgba(255,255,255,0.1); display: grid; grid-template-columns: repeat(5, 1fr); align-items: center; padding: 4px 0; z-index: 10000; box-shadow: 0 -4px 12px rgba(0,0,0,0.3); width: 100%;">
+    <style>
+        @media (max-width: 768px) {
+            #mobile-bottom-nav-bar {
+                display: grid !important;
+            }
+        }
+
+        @media (min-width: 769px) {
+            #mobile-bottom-nav-bar {
+                display: none !important;
+            }
+        }
+    </style>
+    <nav id="mobile-bottom-nav-bar" aria-label="Mobile Navigation"
+        style="position: fixed; bottom: 0; left: 0; right: 0; height: 64px; background: #1a1a1a; border-top: 1px solid rgba(255,255,255,0.1); display: grid; grid-template-columns: repeat(5, 1fr); align-items: center; padding: 4px 0; z-index: 10000; box-shadow: 0 -4px 12px rgba(0,0,0,0.3); width: 100%; margin: 0;">
         <a href="/" class="mobile-nav-item active"
             style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; width: 100%; height: 100%; color: rgba(255,255,255,0.5); text-decoration: none; padding: 4px 0;">
-            <i class="mobile-nav-icon fas fa-home"
+            <i class="fas fa-home"
                 style="font-size: 1.2rem; background: linear-gradient(135deg, #00D9FF, #FF4C4C); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i>
-            <span class="mobile-nav-label" style="font-size: 0.65rem; font-weight: 500; color: #00D9FF;">Home</span>
+            <span style="font-size: 0.65rem; font-weight: 500; color: #00D9FF;">Home</span>
         </a>
         <a href="/articles.html" class="mobile-nav-item"
             style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; width: 100%; height: 100%; color: rgba(255,255,255,0.5); text-decoration: none; padding: 4px 0;">
-            <i class="mobile-nav-icon fas fa-newspaper" style="font-size: 1.2rem;"></i>
-            <span class="mobile-nav-label" style="font-size: 0.65rem; font-weight: 500;">News</span>
+            <i class="fas fa-newspaper" style="font-size: 1.2rem;"></i>
+            <span style="font-size: 0.65rem; font-weight: 500;">News</span>
         </a>
         <a href="/threat-intel.html" class="mobile-nav-item"
             style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; width: 100%; height: 100%; color: rgba(255,255,255,0.5); text-decoration: none; padding: 4px 0;">
-            <i class="mobile-nav-icon fas fa-shield-alt" style="font-size: 1.2rem;"></i>
-            <span class="mobile-nav-label" style="font-size: 0.65rem; font-weight: 500;">Intel</span>
+            <i class="fas fa-shield-alt" style="font-size: 1.2rem;"></i>
+            <span style="font-size: 0.65rem; font-weight: 500;">Intel</span>
         </a>
         <a href="/cve-tracker.html" class="mobile-nav-item"
             style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; width: 100%; height: 100%; color: rgba(255,255,255,0.5); text-decoration: none; padding: 4px 0;">
-            <i class="mobile-nav-icon fas fa-exclamation-triangle" style="font-size: 1.2rem;"></i>
-            <span class="mobile-nav-label" style="font-size: 0.65rem; font-weight: 500;">CVEs</span>
+            <i class="fas fa-exclamation-triangle" style="font-size: 1.2rem;"></i>
+            <span style="font-size: 0.65rem; font-weight: 500;">CVEs</span>
         </a>
         <a href="/guides/" class="mobile-nav-item"
             style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; width: 100%; height: 100%; color: rgba(255,255,255,0.5); text-decoration: none; padding: 4px 0;">
-            <i class="mobile-nav-icon fas fa-book" style="font-size: 1.2rem;"></i>
-            <span class="mobile-nav-label" style="font-size: 0.65rem; font-weight: 500;">Guides</span>
+            <i class="fas fa-book" style="font-size: 1.2rem;"></i>
+            <span style="font-size: 0.65rem; font-weight: 500;">Guides</span>
         </a>
     </nav>
 
