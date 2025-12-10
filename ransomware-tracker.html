@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Free Ransomware Tracker - Live Ransomware Victims & Groups | TheHGTech</title>
+    <meta name="description"
+        content="FREE ransomware tracker with live victim data. Track ransomware groups, victims, and trends. Updated twice daily from Ransomware.live. No signup required. Monitor LockBit, ALPHV, BlackCat, and more.">
+    <meta name="keywords"
+        content="ransomware tracker, ransomware victims, ransomware groups, LockBit tracker, ALPHV tracker, BlackCat ransomware, ransomware statistics, free ransomware tracker, ransomware monitoring">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Free Ransomware Tracker - Live Victim Data">
+    <meta property="og:description"
+        content="Track ransomware victims and groups in real-time. Updated twice daily. Free, no signup.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thehgtech.com/ransomware-tracker.html">
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="light-mode.css">
+    <link rel="stylesheet" href="ransomware-display.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF4C4C;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .hero {
+            max-width: 1400px;
+            margin: 100px auto 40px;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--accent-red), #ff6b6b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+
+        .alert-banner {
+            background: rgba(255, 76, 76, 0.1);
+            border: 1px solid var(--accent-red);
+            border-radius: 8px;
+            padding: 1rem 2rem;
+            margin: 2rem auto;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .alert-banner strong {
+            color: var(--accent-red);
+        }
+
+        .stats-bar {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin: 3rem auto;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--accent-red);
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .features {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s;
+        }
+
+        .feature-card:hover {
+            border-color: var(--accent-red);
+            transform: translateY(-4px);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--accent-red);
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .cta-section {
+            text-align: center;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1.2rem 3rem;
+            background: linear-gradient(135deg, var(--accent-red), #ff6b6b);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(255, 76, 76, 0.3);
+        }
+
+        .content-section {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .industry-stats {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 2rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+        }
+
+        .industry-stats h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .industry-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .industry-item {
+            text-align: center;
+            padding: 1rem;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+        }
+
+        .industry-item .number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent-red);
+        }
+
+        .industry-item .label {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-top: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .stats-bar {
+                gap: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+
+            <nav class="nav" role="navigation">
+                <a href="index.html#news">News</a>
+                <a href="threat-intel.html">Threat Intelligence <span class="live-badge">LIVE</span></a>
+                <a href="index.html#cve">CVE</a>
+                <a href="guides/">Guides</a>
+                <a href="comparisons/">Tool Comparisons</a>
+                <a href="articles.html">Articles</a>
+
+                <div class="theme-toggle-wrapper">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                        <div class="toggle-icon sun"><i class="fas fa-sun"></i></div>
+                        <div class="toggle-icon moon"><i class="fas fa-moon"></i></div>
+                    </button>
+                </div>
+            </nav>
+
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>🔐 Ransomware Tracker</h1>
+        <p>Track ransomware victims and active ransomware groups in real-time. Data updated twice daily from
+            Ransomware.live. Monitor trends, identify targeted industries, and stay informed about the latest attacks.
+        </p>
+
+        <div class="alert-banner">
+            <strong>⚠️ Live Data:</strong> This tracker shows real ransomware victims. Data is sourced from public
+            ransomware leak sites and updated twice daily.
+        </div>
+
+        <div class="stats-bar">
+            <div class="stat">
+                <div class="stat-number" id="totalVictims">Loading...</div>
+                <div class="stat-label">Total Victims Tracked</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number" id="activeGroups">Loading...</div>
+                <div class="stat-label">Active Groups</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number" id="thisWeek">Loading...</div>
+                <div class="stat-label">Victims This Week</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-users"></i></div>
+            <h3>Victim Tracking</h3>
+            <p>Monitor ransomware victims across all major groups. See company names, industries, countries, and attack
+                dates.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-skull-crossbones"></i></div>
+            <h3>Ransomware Groups</h3>
+            <p>Track active ransomware groups including LockBit, ALPHV/BlackCat, Play, Cl0p, and 50+ others.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+            <h3>Trend Analysis</h3>
+            <p>Identify patterns in ransomware attacks. See which industries are most targeted and track group activity
+                over time.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-sync-alt"></i></div>
+            <h3>Twice Daily Updates</h3>
+            <p>Data refreshed at midnight and noon UTC via automated scraping of ransomware leak sites.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-globe"></i></div>
+            <h3>Global Coverage</h3>
+            <p>Track ransomware victims worldwide. Filter by country, industry, or ransomware group.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-bell"></i></div>
+            <h3>Early Warning</h3>
+            <p>See which industries and regions are being targeted. Use this intelligence to strengthen your defenses.
+            </p>
+        </div>
+    </section>
+
+    <!-- Industry Stats -->
+    <section class="industry-stats">
+        <h3>Most Targeted Industries</h3>
+        <div class="industry-grid" id="industryGrid">
+            <div class="industry-item">
+                <div class="number">Loading...</div>
+                <div class="label">Loading...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <h2 style="font-size: 2rem; margin-bottom: 1rem;">View Live Ransomware Data</h2>
+        <p style="color: var(--text-secondary); margin-bottom: 2rem;">No signup. No credit card. No BS.</p>
+        <a href="index.html#ransomware" class="cta-button">View Ransomware Dashboard →</a>
+    </section>
+
+    <!-- Ransomware Display Section -->
+    <section class="content-section">
+        <h2 style="font-size: 2.5rem; margin-bottom: 2rem; text-align: center;">Latest Ransomware Victims</h2>
+        <div id="ransomwareContainer"></div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="ransomware-display.js"></script>
+    <script>
+        // Load ransomware stats
+        async function loadStats() {
+            try {
+                const response = await fetch('ransomware-data.json');
+                const data = await response.json();
+                const victims = data.victims || [];
+
+                // Total victims
+                document.getElementById('totalVictims').textContent = victims.length;
+
+                // Active groups (unique)
+                const groups = new Set(victims.map(v => v.group));
+                document.getElementById('activeGroups').textContent = groups.size;
+
+                // Victims this week
+                const oneWeekAgo = new Date();
+                oneWeekAgo.setDate(oneWeekAgo.getDate() - 7);
+                const thisWeek = victims.filter(v => {
+                    const victimDate = new Date(v.discovered);
+                    return victimDate >= oneWeekAgo;
+                }).length;
+                document.getElementById('thisWeek').textContent = thisWeek;
+
+                // Industry stats
+                const industries = {};
+                victims.forEach(v => {
+                    const industry = v.activity || 'Unknown';
+                    industries[industry] = (industries[industry] || 0) + 1;
+                });
+
+                // Sort and get top 6
+                const topIndustries = Object.entries(industries)
+                    .sort((a, b) => b[1] - a[1])
+                    .slice(0, 6);
+
+                const industryGrid = document.getElementById('industryGrid');
+                industryGrid.innerHTML = topIndustries.map(([industry, count]) => `
+                    <div class="industry-item">
+                        <div class="number">${count}</div>
+                        <div class="label">${industry}</div>
+                    </div>
+                `).join('');
+
+            } catch (error) {
+                console.error('Error loading stats:', error);
+            }
+        }
+
+        loadStats();
+
+        // Theme toggle
+        const themeToggle = document.getElementById('themeToggle');
+        if (localStorage.getItem('theme') === 'light') {
+            document.body.classList.add('light-mode');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('light-mode');
+            localStorage.setItem('theme', document.body.classList.contains('light-mode') ? 'light' : 'dark');
+        });
+
+        // Mobile menu
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const nav = document.querySelector('.nav');
+        mobileMenuBtn.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
