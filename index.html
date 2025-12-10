@@ -2995,6 +2995,13 @@
             #mobile-bottom-nav-bar {
                 display: grid !important;
             }
+
+            /* Ensure cookie banner is below bottom nav */
+            .cookie-banner {
+                z-index: 9999 !important;
+                bottom: 70px !important;
+                /* Above bottom nav */
+            }
         }
 
         @media (min-width: 769px) {
