@@ -45,7 +45,7 @@
     <link rel="stylesheet" href="interaction-bar.css?v=20251207-0041">
 
     <!-- ========== MOBILE OPTIMIZATION (Fresh Start v3.0) ========== -->
-    <link rel="stylesheet" href="m-core.css?v=3.0">
+    <link rel="stylesheet" href="m-core.css?v=3.1">
     <link rel="stylesheet" href="m-layout.css?v=3.1">
     <link rel="stylesheet" href="m-components.css?v=3.0">
     <script src="m-app.js?v=3.1" defer></script>
@@ -414,106 +414,60 @@
         </div>
     </header>
 
+    <!-- ========== NEW MOBILE NAVIGATION (v3.1) ========== -->
+
     <!-- Mobile Header -->
-    <header class="mobile-header mobile-only">
-        <div class="mobile-header-logo">TheHGTech</div>
-        <div class="mobile-header-actions">
-            <button class="mobile-header-btn mobile-theme-toggle" aria-label="Toggle Theme" onclick="toggleTheme()">
-                <i class="fas fa-moon" id="theme-icon"></i>
+    <header class="m-header m-only">
+        <div class="m-header__logo">TheHGTech</div>
+        <div class="m-header__actions">
+            <!-- Premium Theme Toggle -->
+            <button class="m-theme-toggle" onclick="mToggleTheme()" aria-label="Toggle Theme">
+                <span class="m-theme-toggle__thumb"></span>
+                <span class="m-theme-toggle__stars">
+                    <span class="m-theme-toggle__star"></span>
+                    <span class="m-theme-toggle__star"></span>
+                </span>
             </button>
-            <button class="mobile-header-btn mobile-search-btn" aria-label="Search">
+            <!-- Search Button -->
+            <button class="m-header__btn m-header__btn--search" data-action="search" aria-label="Search">
                 <i class="fas fa-search"></i>
-            </button>
-            <button class="mobile-header-btn mobile-sidebar-btn" aria-label="Menu">
-                <i class="fas fa-bars"></i>
             </button>
         </div>
     </header>
 
-    <!-- Mobile Bottom Navigation -->
-    <nav id="mobile-bottom-nav-bar" aria-label="Mobile Navigation" class="mobile-only"
-        style="position: fixed; bottom: 0; left: 0; right: 0; height: 64px; background: #1a1a1a; border-top: 1px solid rgba(255,255,255,0.1); display: flex; flex-direction: row; justify-content: space-evenly; align-items: center; padding: 4px 0; z-index: 10000; box-shadow: 0 -4px 12px rgba(0,0,0,0.3); width: 100%; margin: 0;">
-        <a href="/" class="mobile-nav-item"
-            style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; flex: 1; height: 100%; color: rgba(255,255,255,0.5); text-decoration: none; padding: 4px 0;">
-            <i class="fas fa-home" style="font-size: 1.2rem;"></i>
-            <span style="font-size: 0.65rem; font-weight: 500;">Home</span>
+    <!-- Bottom Navigation (5 items: Home, CVE, Intel, Articles, Guides) -->
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
         </a>
-        <a href="/index.html#news" class="mobile-nav-item"
-            style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; width: 100%; height: 100%; color: rgba(255,255,255,0.5); text-decoration: none; padding: 4px 0;">
-            <i class="fas fa-newspaper" style="font-size: 1.2rem;"></i>
-            <span style="font-size: 0.65rem; font-weight: 500;">News</span>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item">
+            <i class="fas fa-bug"></i>
+            <span>CVE</span>
         </a>
-        <a href="/threat-intel.html" class="mobile-nav-item"
-            style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; width: 100%; height: 100%; color: rgba(255,255,255,0.5); text-decoration: none; padding: 4px 0;">
-            <i class="fas fa-shield-alt" style="font-size: 1.2rem;"></i>
-            <span style="font-size: 0.65rem; font-weight: 500;">Intel</span>
+        <a href="/threat-intel.html" class="m-bottom-nav__item">
+            <i class="fas fa-shield-alt"></i>
+            <span>Intel</span>
         </a>
-        <a href="/cve-tracker.html" class="mobile-nav-item"
-            style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; width: 100%; height: 100%; color: rgba(255,255,255,0.5); text-decoration: none; padding: 4px 0;">
-            <i class="fas fa-exclamation-triangle" style="font-size: 1.2rem;"></i>
-            <span style="font-size: 0.65rem; font-weight: 500;">CVEs</span>
+        <a href="/articles.html" class="m-bottom-nav__item">
+            <i class="fas fa-newspaper"></i>
+            <span>Articles</span>
         </a>
-        <a href="/articles.html" class="mobile-nav-item active"
-            style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; flex: 1; height: 100%; color: rgba(255,255,255,0.5); text-decoration: none; padding: 4px 0;">
-            <i class="fas fa-newspaper"
-                style="font-size: 1.2rem; background: linear-gradient(135deg, #00D9FF, #FF4C4C); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i>
-            <span style="font-size: 0.65rem; font-weight: 500; color: #00D9FF;">Articles</span>
+        <a href="/guides/" class="m-bottom-nav__item">
+            <i class="fas fa-book"></i>
+            <span>Guides</span>
         </a>
     </nav>
 
-    <!-- Mobile Menu Overlay -->
-    <div class="mobile-sidebar-overlay mobile-only"></div>
-
-    <!-- Mobile Menu -->
-    <aside class="mobile-sidebar mobile-only">
-        <div class="mobile-sidebar-header">
-            <div class="mobile-header-logo">TheHGTech</div>
-            <button class="mobile-sidebar-close" aria-label="Close Menu" type="button"
-                onclick="closeMobileSidebar(event)">
-                <i class="fas fa-times"></i>
-            </button>
+    <!-- Search Overlay -->
+    <div class="m-search-overlay m-only">
+        <div class="m-search-overlay__header">
+            <input type="text" class="m-search-overlay__input" placeholder="Search news, CVEs, guides...">
+            <button class="m-search-overlay__cancel">Cancel</button>
         </div>
-        <nav class="mobile-sidebar-items">
-            <a href="/" class="mobile-sidebar-item">
-                <i class="fas fa-home"></i>
-                <span>Home</span>
-            </a>
-            <a href="/articles.html" class="mobile-sidebar-item">
-                <i class="fas fa-newspaper"></i>
-                <span>Articles</span>
-            </a>
-            <a href="/threat-intel.html" class="mobile-sidebar-item">
-                <i class="fas fa-shield-alt"></i>
-                <span>Threat Intelligence</span>
-            </a>
-            <a href="/cve-tracker.html" class="mobile-sidebar-item">
-                <i class="fas fa-exclamation-triangle"></i>
-                <span>CVE Tracker</span>
-            </a>
-            <a href="/ransomware-tracker.html" class="mobile-sidebar-item">
-                <i class="fas fa-lock"></i>
-                <span>Ransomware Tracker</span>
-            </a>
-            <a href="/guides/" class="mobile-sidebar-item">
-                <i class="fas fa-book"></i>
-                <span>Guides</span>
-            </a>
-            <a href="/comparisons/" class="mobile-sidebar-item">
-                <i class="fas fa-balance-scale"></i>
-                <span>Tool Comparisons</span>
-            </a>
-            <a href="#" class="mobile-sidebar-item"
-                onclick="openModal('about'); closeMobileSidebar(event); return false;">
-                <i class="fas fa-info-circle"></i>
-                <span>About</span>
-            </a>
-            <a href="#" class="mobile-sidebar-item"
-                onclick="openModal('contact'); closeMobileSidebar(event); return false;">
-                <i class="fas fa-envelope"></i>
-                <span>Contact</span>
-            </a>
-        </nav>
-    </aside>
+        <div class="m-search-overlay__results"></div>
+    </div>
+
     <!-- Hero Section -->
     <section class="hero">
         <h1>Articles</h1>

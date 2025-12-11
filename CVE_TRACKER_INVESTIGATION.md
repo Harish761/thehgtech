@@ -1,4 +1,4 @@
-# CVE Tracker Investigation: Why CVE-2025-66516 is Missing
+q# CVE Tracker Investigation: Why CVE-2025-66516 is Missing
 
 ## Summary
 CVE-2025-66516 (Apache Tika XXE, CVSS 10.0) is not appearing in the CVE tracker despite being published in NVD.

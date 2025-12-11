@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="ransomware-display.css">
 
     <!-- Mobile Optimization (v3.0) -->
-    <link rel="stylesheet" href="m-core.css?v=3.0">
+    <link rel="stylesheet" href="m-core.css?v=3.1">
     <link rel="stylesheet" href="m-layout.css?v=3.1">
     <link rel="stylesheet" href="m-components.css?v=3.0">
     <script src="m-app.js?v=3.1" defer></script>
@@ -244,86 +244,62 @@
 </head>
 
 <body>
-<!-- ========== NEW MOBILE NAVIGATION (v3.0) ========== -->
+    <!-- ========== NEW MOBILE NAVIGATION (v3.0) ========== -->
+    <!-- ========== NEW MOBILE NAVIGATION (v3.1) ========== -->
 
-<!-- Mobile Header -->
-<header class="m-header m-only">
-    <div class="m-header__logo">TheHGTech</div>
-    <div class="m-header__actions">
-        <button class="m-header__btn m-header__btn--theme" data-action="theme" onclick="mToggleTheme()"
-            aria-label="Toggle Theme">
-            <i class="fas fa-moon"></i>
-            <i class="fas fa-sun"></i>
-        </button>
-        <button class="m-header__btn" data-action="search" aria-label="Search">
-            <i class="fas fa-search"></i>
-        </button>
+    <!-- Mobile Header -->
+    <header class="m-header m-only">
+        <div class="m-header__logo">TheHGTech</div>
+        <div class="m-header__actions">
+            <!-- Premium Theme Toggle -->
+            <button class="m-theme-toggle" onclick="mToggleTheme()" aria-label="Toggle Theme">
+                <span class="m-theme-toggle__thumb"></span>
+                <span class="m-theme-toggle__stars">
+                    <span class="m-theme-toggle__star"></span>
+                    <span class="m-theme-toggle__star"></span>
+                </span>
+            </button>
+            <!-- Search Button -->
+            <button class="m-header__btn m-header__btn--search" data-action="search" aria-label="Search">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Bottom Navigation (5 items: Home, CVE, Intel, Articles, Guides) -->
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item">
+            <i class="fas fa-bug"></i>
+            <span>CVE</span>
+        </a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item">
+            <i class="fas fa-shield-alt"></i>
+            <span>Intel</span>
+        </a>
+        <a href="/articles.html" class="m-bottom-nav__item">
+            <i class="fas fa-newspaper"></i>
+            <span>Articles</span>
+        </a>
+        <a href="/guides/" class="m-bottom-nav__item">
+            <i class="fas fa-book"></i>
+            <span>Guides</span>
+        </a>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="m-search-overlay m-only">
+        <div class="m-search-overlay__header">
+            <input type="text" class="m-search-overlay__input" placeholder="Search news, CVEs, guides...">
+            <button class="m-search-overlay__cancel">Cancel</button>
+        </div>
+        <div class="m-search-overlay__results"></div>
     </div>
-</header>
 
-<!-- Bottom Navigation (Persistent) -->
-<nav class="m-bottom-nav m-only">
-    <a href="/" class="m-bottom-nav__item active">
-        <i class="fas fa-home"></i>
-        <span>Home</span>
-    </a>
-    <a href="/articles.html" class="m-bottom-nav__item">
-        <i class="fas fa-newspaper"></i>
-        <span>News</span>
-    </a>
-    <a href="/threat-intel.html" class="m-bottom-nav__item">
-        <i class="fas fa-shield-alt"></i>
-        <span>Intel</span>
-    </a>
-    <a href="/cve-tracker.html" class="m-bottom-nav__item">
-        <i class="fas fa-bug"></i>
-        <span>CVE</span>
-    </a>
-    <a href="#" class="m-bottom-nav__item" data-action="more">
-        <i class="fas fa-ellipsis-h"></i>
-        <span>More</span>
-    </a>
-</nav>
-
-<!-- More Panel (Slide-up) -->
-<div class="m-more-overlay m-only"></div>
-<div class="m-more-panel m-only">
-    <div class="m-more-panel__handle"></div>
-    <a href="/ransomware-tracker.html" class="m-more-panel__item">
-        <i class="fas fa-user-secret"></i>
-        <span>Ransomware Tracker</span>
-    </a>
-    <a href="/guides/" class="m-more-panel__item">
-        <i class="fas fa-book"></i>
-        <span>Security Guides</span>
-    </a>
-    <a href="/comparisons/" class="m-more-panel__item">
-        <i class="fas fa-balance-scale"></i>
-        <span>Tool Comparisons</span>
-    </a>
-    <a href="#about" class="m-more-panel__item" onclick="openModal('about'); mCloseMorePanel(); return false;">
-        <i class="fas fa-info-circle"></i>
-        <span>About</span>
-    </a>
-    <a href="#contact" class="m-more-panel__item" onclick="openModal('contact'); mCloseMorePanel(); return false;">
-        <i class="fas fa-envelope"></i>
-        <span>Contact</span>
-    </a>
-</div>
-
-<!-- Search Overlay -->
-<div class="m-search-overlay m-only">
-    <div class="m-search-overlay__header">
-        <input type="text" class="m-search-overlay__input" placeholder="Search news, CVEs, guides...">
-        <button class="m-search-overlay__cancel">Cancel</button>
-    </div>
-    <div class="m-search-overlay__results"></div>
-</div>
-
-<!-- Pull to Refresh Indicator -->
-<div class="m-pull-indicator m-only">
-    <i class="fas fa-sync-alt"></i>
-</div>    <!-- Header -->
+    <!-- Header -->
     <header class="header" role="banner">
         <div class="header-content">
             <div class="logo">
