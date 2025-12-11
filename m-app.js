@@ -553,19 +553,20 @@
             
             .m-news-modal__close {
                 position: absolute;
-                top: 16px;
-                right: 16px;
-                width: 36px;
-                height: 36px;
+                top: 20px;
+                right: 20px;
+                width: 40px;
+                height: 40px;
                 border-radius: 50%;
-                background: rgba(255, 255, 255, 0.1);
-                border: none;
+                background: rgba(255, 255, 255, 0.15);
+                border: 1px solid rgba(255, 255, 255, 0.2);
                 color: #fff;
-                font-size: 1rem;
+                font-size: 1.1rem;
                 cursor: pointer;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                z-index: 10;
             }
             
             .m-news-modal__close:active {
@@ -577,6 +578,7 @@
                 align-items: center;
                 gap: 12px;
                 margin-bottom: 16px;
+                padding-right: 50px;
             }
             
             .m-news-modal__source {
