@@ -3055,7 +3055,7 @@
     <aside class="mobile-menu mobile-only">
         <div class="mobile-menu-header">
             <div class="mobile-header-logo">TheHGTech</div>
-            <button class="mobile-menu-close" aria-label="Close Menu">
+            <button class="mobile-menu-close" aria-label="Close Menu" onclick="closeMobileMenu()">
                 <i class="fas fa-times"></i>
             </button>
         </div>
@@ -5055,6 +5055,16 @@
             const isExpanded = menu.classList.contains('active');
             if (hamburger) {
                 hamburger.setAttribute('aria-expanded', isExpanded);
+            }
+        }
+
+        function closeMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const hamburger = document.querySelector('.hamburger');
+            menu.classList.remove('active');
+
+            if (hamburger) {
+                hamburger.setAttribute('aria-expanded', 'false');
             }
         }
 

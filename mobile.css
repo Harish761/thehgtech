@@ -96,11 +96,15 @@
     .mobile-header-actions {
         display: flex;
         gap: 8px;
+        align-items: center;
+        flex-shrink: 0;
     }
 
     .mobile-header-btn {
         width: var(--touch-target-min);
         height: var(--touch-target-min);
+        min-width: var(--touch-target-min);
+        max-width: var(--touch-target-min);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -110,6 +114,7 @@
         cursor: pointer;
         border-radius: 8px;
         transition: background var(--transition-fast);
+        flex-shrink: 0;
     }
 
     .mobile-header-btn:active {
