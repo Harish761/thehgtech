@@ -280,12 +280,76 @@
         z-index: -99999 !important;
     }
 
-    /* ========== COOKIE BANNER FIX ========== */
+    /* ========== MOBILE COOKIE BANNER ========== */
     .cookie-banner,
     .cookie-consent,
-    [class*="cookie"] {
+    #cookieBanner {
+        position: fixed !important;
         bottom: 80px !important;
-        z-index: 9998 !important;
+        left: 12px !important;
+        right: 12px !important;
+        width: auto !important;
+        max-width: calc(100% - 24px) !important;
+        background: rgba(28, 28, 30, 0.98) !important;
+        backdrop-filter: blur(20px) !important;
+        -webkit-backdrop-filter: blur(20px) !important;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        border-radius: 16px !important;
+        padding: 16px !important;
+        z-index: 99998 !important;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4) !important;
+    }
+
+    .cookie-banner.active,
+    #cookieBanner.active {
+        bottom: 80px !important;
+    }
+
+    .cookie-content {
+        flex-direction: column !important;
+        gap: 12px !important;
+        text-align: center !important;
+    }
+
+    .cookie-text {
+        font-size: 0.85rem !important;
+        line-height: 1.4 !important;
+        color: rgba(255, 255, 255, 0.8) !important;
+    }
+
+    .cookie-btn {
+        width: 100% !important;
+        padding: 12px 24px !important;
+        font-size: 0.95rem !important;
+        font-weight: 600 !important;
+        border-radius: 12px !important;
+        background: linear-gradient(135deg, #00D9FF, #0099cc) !important;
+        color: #000 !important;
+        border: none !important;
+        cursor: pointer !important;
+        transition: all 0.2s ease !important;
+    }
+
+    .cookie-btn:active {
+        transform: scale(0.98) !important;
+        opacity: 0.9 !important;
+    }
+
+    /* Light mode cookie banner */
+    .light-mode .cookie-banner,
+    .light-mode #cookieBanner {
+        background: rgba(255, 255, 255, 0.98) !important;
+        border-color: rgba(0, 0, 0, 0.1) !important;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15) !important;
+    }
+
+    .light-mode .cookie-text {
+        color: rgba(0, 0, 0, 0.7) !important;
+    }
+
+    /* Also hide the coffee button on mobile */
+    .coffee-btn {
+        display: none !important;
     }
 
     /* ========== MORE MENU (Slide-up Panel) ========== */
