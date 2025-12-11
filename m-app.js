@@ -269,6 +269,114 @@
     window.openNewsDetail = openNewsDetail;
     window.closeNewsDetail = closeNewsDetail;
 
+    // ========== QUICK ACCESS BAR ==========
+    function renderQuickAccessBar() {
+        // Only on homepage
+        if (!document.body.classList.contains('home-page') &&
+            !window.location.pathname.endsWith('index.html') &&
+            window.location.pathname !== '/') return;
+
+        const newsSection = document.querySelector('.mobile-only');
+        if (!newsSection) return;
+
+        // Check if already rendered
+        if (document.querySelector('.m-quick-nav')) return;
+
+        const quickNav = document.createElement('div');
+        quickNav.className = 'm-quick-nav m-only';
+        quickNav.innerHTML = `
+            <a href="cve-tracker.html" class="m-quick-nav__item m-quick-nav__item--alert">
+                <i class="fas fa-shield-virus m-quick-nav__icon"></i>
+                <span>CVE Tracker</span>
+            </a>
+            <a href="threat-intel.html" class="m-quick-nav__item">
+                <i class="fas fa-radar m-quick-nav__icon"></i>
+                <span>Threat Intel</span>
+            </a>
+            <a href="articles.html" class="m-quick-nav__item">
+                <i class="fas fa-newspaper m-quick-nav__icon"></i>
+                <span>Articles</span>
+            </a>
+            <a href="guides/index.html" class="m-quick-nav__item">
+                <i class="fas fa-book m-quick-nav__icon"></i>
+                <span>Guides</span>
+            </a>
+        `;
+
+        newsSection.parentNode.insertBefore(quickNav, newsSection);
+    }
+
+    // ========== CVE PREVIEW CARD ==========
+    function renderCVEPreview() {
+        // Only on homepage
+        if (!document.body.classList.contains('home-page') &&
+            !window.location.pathname.endsWith('index.html') &&
+            window.location.pathname !== '/') return;
+
+        // Check if already rendered
+        if (document.querySelector('.m-cve-preview')) return;
+
+        // Find position to insert (after news section)
+        const newsSection = document.querySelector('.mobile-only');
+        if (!newsSection) return;
+
+        const preview = document.createElement('div');
+        preview.className = 'm-cve-preview m-only';
+        preview.innerHTML = `
+            <div class="m-cve-preview__header">
+                <div class="m-cve-preview__icon">
+                    <i class="fas fa-shield-virus"></i>
+                </div>
+                <div>
+                    <div class="m-cve-preview__title">Critical Vulnerabilities</div>
+                    <div class="m-cve-preview__subtitle">CISA KEV + NVD Critical</div>
+                </div>
+            </div>
+            <div class="m-cve-preview__stats">
+                <div class="m-cve-preview__stat">
+                    <div class="m-cve-preview__stat-value" id="mCveActive">--</div>
+                    <div class="m-cve-preview__stat-label">Active</div>
+                </div>
+                <div class="m-cve-preview__stat">
+                    <div class="m-cve-preview__stat-value" id="mCveCritical">--</div>
+                    <div class="m-cve-preview__stat-label">Critical</div>
+                </div>
+                <div class="m-cve-preview__stat">
+                    <div class="m-cve-preview__stat-value" id="mCveZeroDay">--</div>
+                    <div class="m-cve-preview__stat-label">Zero-Day</div>
+                </div>
+            </div>
+            <a href="cve-tracker.html" class="m-cve-preview__btn">
+                <i class="fas fa-arrow-right"></i>
+                View CVE Tracker
+            </a>
+        `;
+
+        // Insert after news section
+        newsSection.parentNode.insertBefore(preview, newsSection.nextSibling);
+
+        // Load CVE stats
+        loadCVEStats();
+    }
+
+    // Load CVE stats for preview
+    async function loadCVEStats() {
+        try {
+            const response = await fetch('cve-data.json?t=' + Date.now());
+            const data = await response.json();
+
+            const activeEl = document.getElementById('mCveActive');
+            const criticalEl = document.getElementById('mCveCritical');
+            const zeroEl = document.getElementById('mCveZeroDay');
+
+            if (activeEl) activeEl.textContent = data.cves ? data.cves.length : '0';
+            if (criticalEl) criticalEl.textContent = data.cves ? data.cves.filter(c => c.severity === 'CRITICAL').length : '0';
+            if (zeroEl) zeroEl.textContent = data.cves ? data.cves.filter(c => c.isZeroDay).length : '0';
+        } catch (e) {
+            console.log('Could not load CVE stats');
+        }
+    }
+
     // ========== INIT ON DOM READY ==========
     function init() {
         // Skip on desktop
@@ -283,13 +391,19 @@
             renderMobileNews('cyber');
         }, 500);
 
+        // Render quick access bar and CVE preview
+        setTimeout(() => {
+            renderQuickAccessBar();
+            renderCVEPreview();
+        }, 600);
+
         // Setup nav controls
         setTimeout(() => {
             const prevBtn = document.querySelector('.news-nav-btn.prev');
             const nextBtn = document.querySelector('.news-nav-btn.next');
             if (prevBtn) prevBtn.addEventListener('click', () => navigateNews('prev'));
             if (nextBtn) nextBtn.addEventListener('click', () => navigateNews('next'));
-        }, 600);
+        }, 700);
 
         // Keep hiding BMC periodically (it loads async)
         setTimeout(hideBMC, 500);

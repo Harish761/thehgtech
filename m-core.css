@@ -591,7 +591,162 @@
         display: block !important;
     }
 
-    /* ========== CVE SECTION MOBILE OPTIMIZATION ========== */
+    /* ========== HIDE FULL CVE ON HOMEPAGE - Show Preview Only ========== */
+
+    /* Hide the full CVE section on homepage */
+    body:not(.cve-tracker-page) #cve,
+    body:not(.cve-tracker-page) .cveSection,
+    body:not(.cve-tracker-page) #cveContainer {
+        display: none !important;
+    }
+
+    /* ========== QUICK ACCESS BAR ========== */
+    .m-quick-nav {
+        display: flex;
+        gap: 10px;
+        padding: 16px;
+        overflow-x: auto;
+        scrollbar-width: none;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+    }
+
+    .m-quick-nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    .m-quick-nav__item {
+        flex: 0 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        padding: 12px 20px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 14px;
+        color: var(--m-text-secondary);
+        text-decoration: none;
+        font-size: 0.75rem;
+        font-weight: 500;
+        min-width: 80px;
+        text-align: center;
+        transition: all 0.2s ease;
+    }
+
+    .m-quick-nav__item:active {
+        background: rgba(0, 217, 255, 0.15);
+        border-color: rgba(0, 217, 255, 0.3);
+        transform: scale(0.95);
+    }
+
+    .m-quick-nav__icon {
+        font-size: 1.2rem;
+        color: var(--m-accent-primary);
+    }
+
+    .m-quick-nav__item--alert .m-quick-nav__icon {
+        color: #FF3D3D;
+    }
+
+    /* ========== CVE PREVIEW CARD (Homepage) ========== */
+    .m-cve-preview {
+        margin: 16px;
+        padding: 20px;
+        background: linear-gradient(135deg, rgba(255, 61, 61, 0.1), rgba(0, 0, 0, 0.3));
+        border: 1px solid rgba(255, 61, 61, 0.2);
+        border-radius: 16px;
+    }
+
+    .m-cve-preview__header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 12px;
+    }
+
+    .m-cve-preview__icon {
+        width: 40px;
+        height: 40px;
+        background: linear-gradient(135deg, #FF3D3D, #C41E3A);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 1.1rem;
+    }
+
+    .m-cve-preview__title {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #fff;
+    }
+
+    .m-cve-preview__subtitle {
+        font-size: 0.75rem;
+        color: var(--m-text-tertiary);
+    }
+
+    .m-cve-preview__stats {
+        display: flex;
+        gap: 12px;
+        margin-bottom: 16px;
+    }
+
+    .m-cve-preview__stat {
+        flex: 1;
+        text-align: center;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+    }
+
+    .m-cve-preview__stat-value {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #FF3D3D;
+    }
+
+    .m-cve-preview__stat-label {
+        font-size: 0.65rem;
+        color: var(--m-text-tertiary);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .m-cve-preview__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+        padding: 14px;
+        background: linear-gradient(135deg, #FF3D3D, #C41E3A);
+        border: none;
+        border-radius: 12px;
+        color: #fff;
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .m-cve-preview__btn:active {
+        opacity: 0.9;
+        transform: scale(0.98);
+    }
+
+    /* Light mode quick nav */
+    .light-mode .m-quick-nav__item {
+        background: rgba(0, 0, 0, 0.03);
+        border-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .light-mode .m-cve-preview {
+        background: linear-gradient(135deg, rgba(255, 61, 61, 0.08), rgba(0, 0, 0, 0.02));
+    }
+
+    /* ========== CVE SECTION MOBILE OPTIMIZATION (for CVE Tracker page) ========== */
 
     /* CVE Header */
     .cve-header {
