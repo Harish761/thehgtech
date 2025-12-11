@@ -453,6 +453,31 @@ document.addEventListener('DOMContentLoaded', () => {
         // Initialize mobile app
         window.mobileApp = new MobileApp();
 
+        // Make functions globally available
+        // Global Close Menu Function (Aggressive)
+        window.closeMobileMenu = function (event) {
+            if (event) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+
+            // Close ALL mobile menus to ensure it works
+            const menus = document.querySelectorAll('.mobile-menu');
+            const overlay = document.querySelector('.mobile-menu-overlay');
+
+            menus.forEach(function (menu) {
+                menu.classList.remove('active');
+                menu.style.right = '';
+            });
+
+            if (overlay) {
+                overlay.classList.remove('active');
+            }
+
+            document.body.style.overflow = '';
+            document.body.style.position = '';
+        };
+
         // Initialize collapsibles
         document.querySelectorAll('.mobile-collapsible').forEach(element => {
             new MobileCollapsible(element);
