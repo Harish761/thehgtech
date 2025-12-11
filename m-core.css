@@ -442,8 +442,133 @@
     .site-header,
     .desktop-nav,
     .desktop-only,
-    .hero-cta-container,
     .main-footer {
         display: none !important;
+    }
+
+    /* ========== MOBILE HERO OPTIMIZATION ========== */
+    /* Compact hero - get content visible faster */
+    .hero {
+        padding: 1.5rem 1rem 1rem !important;
+        min-height: auto !important;
+        max-height: none !important;
+    }
+
+    .hero h1 {
+        font-size: 1.75rem !important;
+        margin-bottom: 0.5rem !important;
+        line-height: 1.2 !important;
+    }
+
+    .hero p {
+        font-size: 0.9rem !important;
+        margin-bottom: 0.75rem !important;
+        line-height: 1.4 !important;
+    }
+
+    .hero-badge {
+        padding: 0.35rem 0.75rem !important;
+        font-size: 0.7rem !important;
+        margin-bottom: 0.75rem !important;
+    }
+
+    .hero-canvas {
+        opacity: 0.3 !important;
+    }
+
+    /* Hide the view dashboard button on mobile - nav handles this */
+    .view-dashboard-btn {
+        display: none !important;
+    }
+
+    /* Compact sections */
+    .section {
+        padding: 1rem 0 !important;
+    }
+
+    .section-header {
+        margin-bottom: 0.75rem !important;
+    }
+
+    .section-title {
+        font-size: 1.1rem !important;
+    }
+
+    /* ========== QUICK ACCESS BAR ========== */
+    .m-quick-access {
+        display: flex;
+        gap: 8px;
+        padding: 12px 16px;
+        overflow-x: auto;
+        scrollbar-width: none;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, transparent 100%);
+        margin-top: -8px;
+    }
+
+    .m-quick-access::-webkit-scrollbar {
+        display: none;
+    }
+
+    .m-quick-chip {
+        flex: 0 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        padding: 8px 14px;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        color: var(--m-text-secondary);
+        font-size: 0.8rem;
+        font-weight: 500;
+        text-decoration: none;
+        white-space: nowrap;
+        transition: all 0.2s ease;
+    }
+
+    .m-quick-chip:active {
+        background: rgba(0, 217, 255, 0.15);
+        border-color: rgba(0, 217, 255, 0.3);
+        transform: scale(0.95);
+    }
+
+    .m-quick-chip i {
+        font-size: 0.9rem;
+        color: var(--m-accent-primary);
+    }
+
+    /* Light mode quick chips */
+    .light-mode .m-quick-chip {
+        background: rgba(0, 0, 0, 0.05);
+        border-color: rgba(0, 0, 0, 0.1);
+    }
+
+    /* ========== HIDE DESKTOP-HEAVY SECTIONS ========== */
+    /* Snapshot section - hide detailed version */
+    .threat-snapshot-section .info-tiles {
+        display: none !important;
+    }
+
+    /* Simplify tabs */
+    .tabs {
+        gap: 0.5rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .tab {
+        padding: 0.5rem 0.75rem !important;
+        font-size: 0.75rem !important;
+    }
+
+    /* Hide news grid, show mobile cards instead */
+    .news-grid,
+    .cve-grid,
+    .threat-intel-container {
+        display: none !important;
+    }
+
+    /* Mobile news cards section */
+    .mobile-only {
+        display: block !important;
     }
 }
