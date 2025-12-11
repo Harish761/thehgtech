@@ -285,28 +285,29 @@
     }
 
     .mobile-menu-close {
-        width: var(--touch-target-min);
-        height: var(--touch-target-min);
-        min-width: var(--touch-target-min);
-        max-width: var(--touch-target-min);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: transparent;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        color: var(--text-primary);
-        font-size: 1.25rem;
-        cursor: pointer;
-        border-radius: 12px;
-        transition: all var(--transition-fast) ease;
-        flex-shrink: 0;
-        outline: none;
+        width: var(--touch-target-min) !important;
+        height: var(--touch-target-min) !important;
+        min-width: var(--touch-target-min) !important;
+        max-width: var(--touch-target-min) !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        background: transparent !important;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        color: var(--text-primary) !important;
+        font-size: 1.25rem !important;
+        cursor: pointer !important;
+        border-radius: 12px !important;
+        transition: all var(--transition-fast) ease !important;
+        flex-shrink: 0 !important;
+        outline: none !important;
         -webkit-tap-highlight-color: transparent;
+        box-shadow: none !important;
     }
 
     .mobile-menu-close:active {
-        background: rgba(255, 255, 255, 0.1);
-        transform: scale(0.92);
+        background: rgba(255, 255, 255, 0.1) !important;
+        transform: scale(0.92) !important;
     }
 
     .mobile-menu-items {

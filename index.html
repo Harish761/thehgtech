@@ -107,12 +107,12 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <!-- ========== MOBILE OPTIMIZATION ========== -->
-    <link rel="stylesheet" href="mobile.css">
-    <link rel="stylesheet" href="homepage-mobile.css">
-    <link rel="stylesheet" href="mobile-typography.css">
-    <link rel="stylesheet" href="news-cards.css">
-    <script src="mobile.js" defer></script>
-    <script src="news-cards.js" defer></script>
+    <link rel="stylesheet" href="mobile.css?v=1.1">
+    <link rel="stylesheet" href="homepage-mobile.css?v=1.1">
+    <link rel="stylesheet" href="mobile-typography.css?v=1.1">
+    <link rel="stylesheet" href="news-cards.css?v=1.1">
+    <script src="mobile.js?v=1.1" defer></script>
+    <script src="news-cards.js?v=1.1" defer></script>
     <script src="news-cards-data.js" defer></script>
 
     <!-- ========== STRUCTURED DATA - ORGANIZATION ========== -->
@@ -5062,6 +5062,7 @@
         }
 
         function closeMobileMenu(event) {
+            console.log('Close button clicked');
             if (event) {
                 event.preventDefault();
                 event.stopPropagation();
@@ -5071,8 +5072,13 @@
             const menus = document.querySelectorAll('.mobile-menu');
             const overlay = document.querySelector('.mobile-menu-overlay');
 
+            console.log(`Found ${menus.length} menus`);
+
             menus.forEach(function (menu) {
+                console.log('Closing menu:', menu);
                 menu.classList.remove('active');
+                // Force reset style in case of JS conflicts
+                menu.style.right = '';
             });
 
             if (overlay) {
