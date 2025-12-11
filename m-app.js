@@ -233,7 +233,7 @@
         modal.innerHTML = `
             <div class="m-news-modal__backdrop" onclick="closeNewsDetail()"></div>
             <div class="m-news-modal__content">
-                <button class="m-news-modal__close" onclick="closeNewsDetail()">
+                <button class="m-news-modal__close" onclick="closeNewsDetail()" style="position:absolute;top:20px;right:20px;left:auto;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.2);color:#fff;font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:10;">
                     <i class="fas fa-times"></i>
                 </button>
                 <div class="m-news-modal__header">
