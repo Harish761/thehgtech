@@ -74,10 +74,10 @@ function populateNewsCards(category = 'cyber') {
     let newsData = [];
 
     if (typeof websiteContent !== 'undefined') {
-        if (category === 'cyber' && websiteContent.cyberNews) {
-            newsData = websiteContent.cyberNews;
-        } else if (category === 'ai' && websiteContent.aiNews) {
-            newsData = websiteContent.aiNews;
+        if (category === 'cyber') {
+            newsData = websiteContent.cyberShorts || websiteContent.cyberNews || [];
+        } else if (category === 'ai') {
+            newsData = websiteContent.aiShorts || websiteContent.aiNews || [];
         }
     }
 
