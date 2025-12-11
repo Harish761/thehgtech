@@ -287,14 +287,26 @@
     .mobile-menu-close {
         width: var(--touch-target-min);
         height: var(--touch-target-min);
+        min-width: var(--touch-target-min);
+        max-width: var(--touch-target-min);
         display: flex;
         align-items: center;
         justify-content: center;
         background: transparent;
-        border: none;
+        border: 1px solid rgba(255, 255, 255, 0.1);
         color: var(--text-primary);
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         cursor: pointer;
+        border-radius: 12px;
+        transition: all var(--transition-fast) ease;
+        flex-shrink: 0;
+        outline: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .mobile-menu-close:active {
+        background: rgba(255, 255, 255, 0.1);
+        transform: scale(0.92);
     }
 
     .mobile-menu-items {

@@ -3055,7 +3055,7 @@
     <aside class="mobile-menu mobile-only">
         <div class="mobile-menu-header">
             <div class="mobile-header-logo">TheHGTech</div>
-            <button class="mobile-menu-close" aria-label="Close Menu" onclick="closeMobileMenu()">
+            <button class="mobile-menu-close" aria-label="Close Menu" type="button" onclick="closeMobileMenu(event)">
                 <i class="fas fa-times"></i>
             </button>
         </div>
@@ -5058,7 +5058,12 @@
             }
         }
 
-        function closeMobileMenu() {
+        function closeMobileMenu(event) {
+            if (event) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+
             // Close ALL mobile menus to ensure it works
             const menus = document.querySelectorAll('.mobile-menu');
             const overlay = document.querySelector('.mobile-menu-overlay');
