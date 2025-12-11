@@ -1,188 +1,155 @@
 /* ================================================
    M-APP.JS - Mobile App Core JavaScript
-   Navigation, Theme, Gestures, Cards
+   Navigation, Theme, Gestures
+   v3.1 - Fixed theme toggle
    ================================================ */
 
+// Execute immediately, not in IIFE
 (function () {
     'use strict';
 
-    // Only run on mobile
-    if (window.innerWidth > 768) return;
+    // ========== THEME TOGGLE (Global) ==========
+    function toggleTheme() {
+        const body = document.body;
+        const html = document.documentElement;
+        const isLight = body.classList.contains('light-mode');
 
-    // ========== THEME MANAGEMENT ==========
-    const Theme = {
-        init() {
-            // Check localStorage first
-            const saved = localStorage.getItem('theme');
-            if (saved === 'light') {
-                document.documentElement.setAttribute('data-theme', 'light');
-                document.body.classList.add('light-mode');
-            } else {
-                document.documentElement.setAttribute('data-theme', 'dark');
-                document.body.classList.remove('light-mode');
-            }
-            this.updateIcon();
-        },
-
-        toggle() {
-            const isLight = document.body.classList.contains('light-mode');
-
-            if (isLight) {
-                // Switch to dark
-                document.documentElement.setAttribute('data-theme', 'dark');
-                document.body.classList.remove('light-mode');
-                localStorage.setItem('theme', 'dark');
-            } else {
-                // Switch to light
-                document.documentElement.setAttribute('data-theme', 'light');
-                document.body.classList.add('light-mode');
-                localStorage.setItem('theme', 'light');
-            }
-
-            this.updateIcon();
-
-            // Haptic feedback
-            if (navigator.vibrate) {
-                navigator.vibrate(10);
-            }
-        },
-
-        updateIcon() {
-            const isLight = document.body.classList.contains('light-mode');
-            const btn = document.querySelector('.m-header__btn--theme');
-            if (btn) {
-                const moonIcon = btn.querySelector('.fa-moon');
-                const sunIcon = btn.querySelector('.fa-sun');
-                if (moonIcon) moonIcon.style.display = isLight ? 'none' : 'block';
-                if (sunIcon) sunIcon.style.display = isLight ? 'block' : 'none';
-            }
+        if (isLight) {
+            // Switch to dark
+            html.setAttribute('data-theme', 'dark');
+            body.classList.remove('light-mode');
+            localStorage.setItem('theme', 'dark');
+            console.log('Switched to dark mode');
+        } else {
+            // Switch to light
+            html.setAttribute('data-theme', 'light');
+            body.classList.add('light-mode');
+            localStorage.setItem('theme', 'light');
+            console.log('Switched to light mode');
         }
-    };
 
-    // ========== BOTTOM NAV ==========
-    const BottomNav = {
-        init() {
-            this.highlightCurrent();
-            this.addTouchFeedback();
-        },
+        updateThemeIcon();
+    }
 
-        highlightCurrent() {
-            const path = window.location.pathname;
-            const items = document.querySelectorAll('.m-bottom-nav__item');
+    function updateThemeIcon() {
+        const isLight = document.body.classList.contains('light-mode');
+        const moonIcons = document.querySelectorAll('.m-header__btn--theme .fa-moon');
+        const sunIcons = document.querySelectorAll('.m-header__btn--theme .fa-sun');
 
-            items.forEach(item => {
-                item.classList.remove('active');
-                const href = item.getAttribute('href');
+        moonIcons.forEach(icon => {
+            icon.style.display = isLight ? 'none' : 'inline-block';
+        });
+        sunIcons.forEach(icon => {
+            icon.style.display = isLight ? 'inline-block' : 'none';
+        });
+    }
 
-                // Exact match or contains match
-                if (path === '/' || path === '/index.html' || path.endsWith('/index.html')) {
-                    if (href === '/' || href === '/index.html') {
-                        item.classList.add('active');
-                    }
-                } else if (href && href !== '/' && path.includes(href.replace(/^\//, ''))) {
-                    item.classList.add('active');
-                }
-            });
-        },
-
-        addTouchFeedback() {
-            const items = document.querySelectorAll('.m-bottom-nav__item');
-            items.forEach(item => {
-                item.addEventListener('touchstart', function () {
-                    this.style.transform = 'scale(0.9)';
-                }, { passive: true });
-
-                item.addEventListener('touchend', function () {
-                    this.style.transform = '';
-                }, { passive: true });
-            });
+    function initTheme() {
+        const saved = localStorage.getItem('theme');
+        if (saved === 'light') {
+            document.documentElement.setAttribute('data-theme', 'light');
+            document.body.classList.add('light-mode');
+        } else {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            document.body.classList.remove('light-mode');
         }
-    };
+        updateThemeIcon();
+    }
 
-    // ========== SEARCH OVERLAY ==========
-    const SearchOverlay = {
-        overlay: null,
-        input: null,
+    // Expose globally IMMEDIATELY
+    window.mToggleTheme = toggleTheme;
 
-        init() {
-            this.overlay = document.querySelector('.m-search-overlay');
-            this.input = document.querySelector('.m-search-overlay__input');
-
-            const searchBtn = document.querySelector('[data-action="search"]');
-            if (searchBtn) {
-                searchBtn.addEventListener('click', () => this.open());
-            }
-
-            const cancelBtn = document.querySelector('.m-search-overlay__cancel');
-            if (cancelBtn) {
-                cancelBtn.addEventListener('click', () => this.close());
-            }
-        },
-
-        open() {
-            if (this.overlay) {
-                this.overlay.classList.add('active');
-                document.body.style.overflow = 'hidden';
-                setTimeout(() => this.input?.focus(), 100);
-            }
-        },
-
-        close() {
-            if (this.overlay) {
-                this.overlay.classList.remove('active');
-                document.body.style.overflow = '';
-            }
-        }
-    };
-
-    // ========== HIDE INTERFERING ELEMENTS ==========
-    function hideInterferingElements() {
-        // Hide Buy Me Coffee and similar floating elements
-        const selectors = [
+    // ========== HIDE BMC WIDGET ==========
+    function hideBMC() {
+        const bmcSelectors = [
+            '#bmc-wbtn',
             '.bmc-btn-container',
             '.bmc-btn',
-            '[class*="buymeacoffee"]',
-            '[class*="bmc"]',
-            '.floating-action',
-            '#bmc-wbtn'
+            'script[src*="buymeacoffee"]',
+            'div[class*="bmc"]',
+            'a[href*="buymeacoffee"]'
         ];
 
-        selectors.forEach(sel => {
-            const el = document.querySelector(sel);
-            if (el) {
-                el.style.display = 'none';
-            }
+        bmcSelectors.forEach(sel => {
+            const elements = document.querySelectorAll(sel);
+            elements.forEach(el => {
+                el.style.cssText = 'display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important; position: absolute !important; left: -9999px !important;';
+            });
         });
 
-        // Also target by iframe
-        const iframes = document.querySelectorAll('iframe');
-        iframes.forEach(iframe => {
-            if (iframe.src && iframe.src.includes('buymeacoffee')) {
-                iframe.style.display = 'none';
+        // Target by ID more aggressively
+        const bmcWidget = document.getElementById('bmc-wbtn');
+        if (bmcWidget) {
+            bmcWidget.remove();
+        }
+    }
+
+    // ========== BOTTOM NAV ==========
+    function initBottomNav() {
+        const path = window.location.pathname;
+        const items = document.querySelectorAll('.m-bottom-nav__item');
+
+        items.forEach(item => {
+            item.classList.remove('active');
+            const href = item.getAttribute('href');
+
+            if (path === '/' || path === '/index.html' || path.endsWith('/index.html')) {
+                if (href === '/' || href === '/index.html') {
+                    item.classList.add('active');
+                }
+            } else if (href && href !== '/' && path.includes(href.replace(/^\//, ''))) {
+                item.classList.add('active');
             }
         });
     }
 
-    // ========== INITIALIZE ==========
+    // ========== INIT ON DOM READY ==========
     function init() {
-        Theme.init();
-        BottomNav.init();
-        SearchOverlay.init();
-        hideInterferingElements();
+        // Skip on desktop
+        if (window.innerWidth > 768) return;
 
-        // Expose theme toggle globally
-        window.mToggleTheme = Theme.toggle.bind(Theme);
+        initTheme();
+        initBottomNav();
+        hideBMC();
+
+        // Keep hiding BMC periodically (it loads async)
+        setTimeout(hideBMC, 500);
+        setTimeout(hideBMC, 1000);
+        setTimeout(hideBMC, 2000);
+        setTimeout(hideBMC, 5000);
     }
 
-    // Run on DOM ready
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init);
     } else {
         init();
     }
 
-    // Also run after a short delay to catch dynamically loaded elements
-    setTimeout(hideInterferingElements, 1000);
-    setTimeout(hideInterferingElements, 3000);
+})();
 
+// Also add CSS to forcefully hide BMC
+(function () {
+    if (window.innerWidth > 768) return;
+
+    const style = document.createElement('style');
+    style.textContent = `
+        @media (max-width: 768px) {
+            #bmc-wbtn,
+            .bmc-btn-container,
+            .bmc-btn,
+            [class*="buymeacoffee"],
+            [id*="bmc"],
+            div[style*="buymeacoffee"] {
+                display: none !important;
+                visibility: hidden !important;
+                opacity: 0 !important;
+                pointer-events: none !important;
+                position: absolute !important;
+                left: -9999px !important;
+                width: 0 !important;
+                height: 0 !important;
+            }
+        }
+    `;
+    document.head.appendChild(style);
 })();

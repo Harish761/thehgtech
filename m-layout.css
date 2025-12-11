@@ -181,19 +181,28 @@
         box-shadow: 0 0 8px #00D9FF !important;
     }
 
-    /* ========== HIDE INTERFERING ELEMENTS ========== */
+    /* ========== HIDE BMC WIDGET COMPLETELY ========== */
+    #bmc-wbtn,
     .bmc-btn-container,
     .bmc-btn,
     [class*="buymeacoffee"],
-    [class*="bmc-"],
-    #bmc-wbtn,
+    [class*="bmc"],
+    [id*="bmc"],
     iframe[src*="buymeacoffee"],
     .floating-cta,
-    .floating-action-btn {
+    .floating-action-btn,
+    div[style*="position: fixed"][style*="bottom"] {
         display: none !important;
         visibility: hidden !important;
         opacity: 0 !important;
         pointer-events: none !important;
+        position: absolute !important;
+        left: -99999px !important;
+        top: -99999px !important;
+        width: 0 !important;
+        height: 0 !important;
+        overflow: hidden !important;
+        z-index: -99999 !important;
     }
 
     /* ========== COOKIE BANNER FIX ========== */
