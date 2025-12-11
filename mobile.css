@@ -112,13 +112,43 @@
         border: none;
         color: var(--text-primary);
         cursor: pointer;
-        border-radius: 8px;
-        transition: background var(--transition-fast);
+        border-radius: 12px;
+        transition: all var(--transition-fast) ease;
         flex-shrink: 0;
     }
 
+    .mobile-header-btn i {
+        font-size: 1.25rem;
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
+
     .mobile-header-btn:active {
-        background: var(--bg-card);
+        background: rgba(0, 217, 255, 0.1);
+        transform: scale(0.92);
+    }
+
+    /* Theme Toggle Button - Premium Styling */
+    .mobile-theme-toggle {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .mobile-theme-toggle i {
+        color: var(--accent-cyan);
+    }
+
+    .mobile-theme-toggle:active i {
+        transform: rotate(180deg);
+    }
+
+    /* Light mode adjustments */
+    .light-mode .mobile-theme-toggle {
+        background: rgba(0, 0, 0, 0.05);
+        border-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .light-mode .mobile-theme-toggle i {
+        color: #FF9500;
     }
 
     /* ========== BOTTOM NAVIGATION ========== */
