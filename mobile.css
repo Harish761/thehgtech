@@ -48,6 +48,7 @@
     }
 
     body {
+        padding-top: var(--mobile-header-height);
         padding-bottom: var(--mobile-bottom-nav-height);
         overflow-x: hidden;
         -webkit-overflow-scrolling: touch;
@@ -66,7 +67,7 @@
         align-items: center;
         justify-content: space-between;
         padding: 0 var(--mobile-padding);
-        z-index: 1000;
+        z-index: 10001;
         transition: transform var(--transition-normal) ease;
     }
 
