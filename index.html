@@ -3359,6 +3359,54 @@
                     <div id="cyberNews" class="news-grid"></div>
                     <div id="aiNews" class="news-grid" style="display: none;"></div>
 
+                    <!-- Mobile Swipeable News Cards (Tinder-style) -->
+                    <div class="mobile-only" style="margin-top: 2rem;">
+                        <!-- Tab Switcher -->
+                        <div class="news-tab-switcher">
+                            <button class="news-tab active" data-category="cyber" onclick="switchNewsCategory('cyber')">
+                                <i class="fas fa-shield-alt"></i> Cybersecurity
+                            </button>
+                            <button class="news-tab" data-category="ai" onclick="switchNewsCategory('ai')">
+                                <i class="fas fa-brain"></i> AI & ML
+                            </button>
+                        </div>
+
+                        <!-- News Card Stack Container -->
+                        <div class="news-stack-container" id="newsStackContainer">
+                            <!-- Cards will be dynamically inserted here -->
+                            <div class="news-empty-state" id="newsEmptyState">
+                                <div class="news-empty-icon">
+                                    <i class="fas fa-newspaper"></i>
+                                </div>
+                                <div class="news-empty-title">Loading News...</div>
+                                <div class="news-empty-text">Please wait while we fetch the latest updates</div>
+                            </div>
+                        </div>
+
+                        <!-- Progress Indicator -->
+                        <div class="news-progress" id="newsProgress" style="display: none;">
+                            <div class="news-progress-dots" id="newsProgressDots"></div>
+                            <span class="news-progress-counter" id="newsProgressCounter">1 of 10</span>
+                        </div>
+
+                        <!-- Navigation Controls -->
+                        <div class="news-nav-controls" id="newsNavControls" style="display: none;">
+                            <button class="news-nav-btn prev" aria-label="Previous news">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="news-nav-btn next" aria-label="Next news">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+
+                        <!-- Swipe Hint -->
+                        <div class="news-swipe-hint" id="newsSwipeHint">
+                            <i class="fas fa-hand-pointer"></i>
+                            Swipe to navigate
+                            <i class="fas fa-arrows-alt-h"></i>
+                        </div>
+                    </div>
+
 
         </div>
         </section>
