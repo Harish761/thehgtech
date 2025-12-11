@@ -107,12 +107,12 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <!-- ========== MOBILE OPTIMIZATION ========== -->
-    <link rel="stylesheet" href="mobile.css?v=1.1">
-    <link rel="stylesheet" href="homepage-mobile.css?v=1.1">
-    <link rel="stylesheet" href="mobile-typography.css?v=1.1">
-    <link rel="stylesheet" href="news-cards.css?v=1.1">
-    <script src="mobile.js?v=1.1" defer></script>
-    <script src="news-cards.js?v=1.1" defer></script>
+    <link rel="stylesheet" href="mobile.css?v=2.0">
+    <link rel="stylesheet" href="homepage-mobile.css?v=2.0">
+    <link rel="stylesheet" href="mobile-typography.css?v=2.0">
+    <link rel="stylesheet" href="news-cards.css?v=2.0">
+    <script src="mobile.js?v=2.0" defer></script>
+    <script src="news-cards.js?v=2.0" defer></script>
     <script src="news-cards-data.js" defer></script>
 
     <!-- ========== STRUCTURED DATA - ORGANIZATION ========== -->
@@ -322,7 +322,7 @@
             background: rgba(255, 255, 255, 0.7);
         }
 
-        body.light-mode .mobile-menu {
+        body.light-mode .mobile-sidebar {
             background: rgba(255, 255, 255, 0.95);
         }
 
@@ -2757,7 +2757,7 @@
         }
 
         /* Mobile Menu */
-        .mobile-menu {
+        .mobile-sidebar {
             display: none;
             position: fixed;
             top: 70px;
@@ -2771,7 +2771,7 @@
             transition: background 0.3s ease;
         }
 
-        .mobile-menu.active {
+        .mobile-sidebar.active {
             display: block;
         }
 
@@ -2799,7 +2799,7 @@
             border-color: var(--accent);
         }
 
-        .mobile-menu a {
+        .mobile-sidebar a {
             display: block;
             color: var(--text-secondary);
             text-decoration: none;
@@ -2808,7 +2808,7 @@
             border-bottom: 1px solid var(--border);
         }
 
-        .mobile-menu a:hover {
+        .mobile-sidebar a:hover {
             color: var(--accent);
         }
 
@@ -2990,7 +2990,7 @@
             <button class="mobile-header-btn mobile-search-btn" aria-label="Search">
                 <i class="fas fa-search"></i>
             </button>
-            <button class="mobile-header-btn mobile-menu-btn" aria-label="Menu">
+            <button class="mobile-header-btn mobile-sidebar-btn" aria-label="Menu">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
@@ -3051,48 +3051,48 @@
 
 
     <!-- Mobile Hamburger Menu -->
-    <div class="mobile-menu-overlay mobile-only"></div>
-    <aside class="mobile-menu mobile-only">
-        <div class="mobile-menu-header">
+    <div class="mobile-sidebar-overlay mobile-only"></div>
+    <aside class="mobile-sidebar mobile-only">
+        <div class="mobile-sidebar-header">
             <div class="mobile-header-logo">TheHGTech</div>
-            <button class="mobile-menu-close" aria-label="Close Menu" type="button" onclick="closeMobileMenu(event)">
+            <button class="mobile-sidebar-close" aria-label="Close Menu" type="button" onclick="closeMobileSidebar(event)">
                 <i class="fas fa-times"></i>
             </button>
         </div>
-        <nav class="mobile-menu-items">
-            <a href="/" class="mobile-menu-item">
+        <nav class="mobile-sidebar-items">
+            <a href="/" class="mobile-sidebar-item">
                 <i class="fas fa-home"></i>
                 <span>Home</span>
             </a>
-            <a href="/articles.html" class="mobile-menu-item">
+            <a href="/articles.html" class="mobile-sidebar-item">
                 <i class="fas fa-newspaper"></i>
                 <span>Articles</span>
             </a>
-            <a href="/threat-intel.html" class="mobile-menu-item">
+            <a href="/threat-intel.html" class="mobile-sidebar-item">
                 <i class="fas fa-shield-alt"></i>
                 <span>Threat Intelligence</span>
             </a>
-            <a href="/cve-tracker.html" class="mobile-menu-item">
+            <a href="/cve-tracker.html" class="mobile-sidebar-item">
                 <i class="fas fa-exclamation-triangle"></i>
                 <span>CVE Tracker</span>
             </a>
-            <a href="/ransomware-tracker.html" class="mobile-menu-item">
+            <a href="/ransomware-tracker.html" class="mobile-sidebar-item">
                 <i class="fas fa-lock"></i>
                 <span>Ransomware Tracker</span>
             </a>
-            <a href="/guides/" class="mobile-menu-item">
+            <a href="/guides/" class="mobile-sidebar-item">
                 <i class="fas fa-book"></i>
                 <span>Guides</span>
             </a>
-            <a href="/comparisons/" class="mobile-menu-item">
+            <a href="/comparisons/" class="mobile-sidebar-item">
                 <i class="fas fa-balance-scale"></i>
                 <span>Tool Comparisons</span>
             </a>
-            <a href="#" class="mobile-menu-item" onclick="openModal('about'); closeMobileMenu(event); return false;">
+            <a href="#" class="mobile-sidebar-item" onclick="openModal('about'); closeMobileSidebar(event); return false;">
                 <i class="fas fa-info-circle"></i>
                 <span>About</span>
             </a>
-            <a href="#" class="mobile-menu-item" onclick="openModal('contact'); closeMobileMenu(event); return false;">
+            <a href="#" class="mobile-sidebar-item" onclick="openModal('contact'); closeMobileSidebar(event); return false;">
                 <i class="fas fa-envelope"></i>
                 <span>Contact</span>
             </a>
@@ -5043,8 +5043,8 @@
 
         // Mobile menu
         function toggleMobileMenu() {
-            const menu = document.querySelector('.mobile-menu');
-            const overlay = document.querySelector('.mobile-menu-overlay');
+            const menu = document.querySelector('.mobile-sidebar');
+            const overlay = document.querySelector('.mobile-sidebar-overlay');
 
             if (menu) {
                 menu.classList.toggle('active');
@@ -5061,7 +5061,7 @@
             }
         }
 
-        function closeMobileMenu(event) {
+        function closeMobileSidebar(event) {
             console.log('Close button clicked');
             if (event) {
                 event.preventDefault();
@@ -5069,8 +5069,8 @@
             }
 
             // Close ALL mobile menus to ensure it works
-            const menus = document.querySelectorAll('.mobile-menu');
-            const overlay = document.querySelector('.mobile-menu-overlay');
+            const menus = document.querySelectorAll('.mobile-sidebar');
+            const overlay = document.querySelector('.mobile-sidebar-overlay');
 
             console.log(`Found ${menus.length} menus`);
 
@@ -5147,7 +5147,7 @@
                 // Close archives
                 closeArchives();
                 // Close mobile menu
-                closeMobileMenu();
+                closeMobileSidebar();
                 // Reset body overflow
                 document.body.style.overflow = '';
             }

@@ -53,10 +53,10 @@ class MobileApp {
 
     // ========== HAMBURGER MENU ==========
     setupHamburgerMenu() {
-        const menuBtn = document.querySelector('.mobile-menu-btn');
-        const menu = document.querySelector('.mobile-menu');
-        const overlay = document.querySelector('.mobile-menu-overlay');
-        const closeBtn = document.querySelector('.mobile-menu-close');
+        const menuBtn = document.querySelector('.mobile-sidebar-btn');
+        const menu = document.querySelector('.mobile-sidebar');
+        const overlay = document.querySelector('.mobile-sidebar-overlay');
+        const closeBtn = document.querySelector('.mobile-sidebar-close');
 
         if (!menuBtn || !menu) return;
 
@@ -218,7 +218,7 @@ class MobileApp {
     // ========== BOTTOM SHEETS ==========
     setupBottomSheets() {
         const triggers = document.querySelectorAll('[data-bottom-sheet]');
-        const overlay = document.querySelector('.mobile-menu-overlay');
+        const overlay = document.querySelector('.mobile-sidebar-overlay');
 
         triggers.forEach(trigger => {
             trigger.addEventListener('click', () => {
@@ -267,14 +267,14 @@ class MobileApp {
 
     openBottomSheet(sheet) {
         sheet.classList.add('active');
-        document.querySelector('.mobile-menu-overlay')?.classList.add('active');
+        document.querySelector('.mobile-sidebar-overlay')?.classList.add('active');
         document.body.style.overflow = 'hidden';
     }
 
     closeBottomSheet(sheet) {
         sheet.classList.remove('active');
         sheet.style.transform = '';
-        document.querySelector('.mobile-menu-overlay')?.classList.remove('active');
+        document.querySelector('.mobile-sidebar-overlay')?.classList.remove('active');
         document.body.style.overflow = '';
     }
 
@@ -455,15 +455,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Make functions globally available
         // Global Close Menu Function (Aggressive)
-        window.closeMobileMenu = function (event) {
+        window.closeMobileSidebar = function (event) {
             if (event) {
                 event.preventDefault();
                 event.stopPropagation();
             }
 
             // Close ALL mobile menus to ensure it works
-            const menus = document.querySelectorAll('.mobile-menu');
-            const overlay = document.querySelector('.mobile-menu-overlay');
+            const menus = document.querySelectorAll('.mobile-sidebar');
+            const overlay = document.querySelector('.mobile-sidebar-overlay');
 
             menus.forEach(function (menu) {
                 menu.classList.remove('active');

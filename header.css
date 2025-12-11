@@ -243,7 +243,7 @@ body.light-mode .theme-toggle .star {
 }
 
 /* Mobile Menu Button */
-.mobile-menu-btn {
+.mobile-sidebar-btn {
     display: none;
     background: none;
     border: none;
@@ -253,7 +253,7 @@ body.light-mode .theme-toggle .star {
     gap: 5px;
 }
 
-.mobile-menu-btn span {
+.mobile-sidebar-btn span {
     display: block;
     width: 25px;
     height: 2px;
@@ -262,7 +262,7 @@ body.light-mode .theme-toggle .star {
 }
 
 /* Mobile Menu */
-.mobile-menu {
+.mobile-sidebar {
     display: none;
     position: fixed;
     top: 70px;
@@ -276,11 +276,11 @@ body.light-mode .theme-toggle .star {
     transition: background 0.3s ease;
 }
 
-.mobile-menu.active {
+.mobile-sidebar.active {
     display: block;
 }
 
-.mobile-menu a {
+.mobile-sidebar a {
     display: block;
     color: var(--text-secondary);
     text-decoration: none;
@@ -289,7 +289,7 @@ body.light-mode .theme-toggle .star {
     border-bottom: 1px solid var(--border);
 }
 
-.mobile-menu a:hover {
+.mobile-sidebar a:hover {
     color: var(--accent);
 }
 
@@ -299,7 +299,7 @@ body.light-mode .theme-toggle .star {
         display: none;
     }
 
-    .mobile-menu-btn {
+    .mobile-sidebar-btn {
         display: flex;
     }
 }

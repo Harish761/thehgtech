@@ -45,9 +45,9 @@
     <link rel="stylesheet" href="interaction-bar.css?v=20251207-0041">
 
     <!-- ========== MOBILE OPTIMIZATION ========== -->
-    <link rel="stylesheet" href="mobile.css?v=1.1">
-    <link rel="stylesheet" href="mobile-typography.css?v=1.1">
-    <script src="mobile.js?v=1.1" defer></script>
+    <link rel="stylesheet" href="mobile.css?v=2.0">
+    <link rel="stylesheet" href="mobile-typography.css?v=2.0">
+    <script src="mobile.js?v=2.0" defer></script>
 
     <script src="interaction-bar.js?v=20251207-0041" defer></script>
 
@@ -404,7 +404,7 @@
                 </div>
             </nav>
 
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
+            <button class="mobile-sidebar-btn" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -422,7 +422,7 @@
             <button class="mobile-header-btn mobile-search-btn" aria-label="Search">
                 <i class="fas fa-search"></i>
             </button>
-            <button class="mobile-header-btn mobile-menu-btn" aria-label="Menu">
+            <button class="mobile-header-btn mobile-sidebar-btn" aria-label="Menu">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
@@ -460,50 +460,50 @@
     </nav>
 
     <!-- Mobile Menu Overlay -->
-    <div class="mobile-menu-overlay mobile-only"></div>
+    <div class="mobile-sidebar-overlay mobile-only"></div>
 
     <!-- Mobile Menu -->
-    <aside class="mobile-menu mobile-only">
-        <div class="mobile-menu-header">
+    <aside class="mobile-sidebar mobile-only">
+        <div class="mobile-sidebar-header">
             <div class="mobile-header-logo">TheHGTech</div>
-            <button class="mobile-menu-close" aria-label="Close Menu" type="button" onclick="closeMobileMenu(event)">
+            <button class="mobile-sidebar-close" aria-label="Close Menu" type="button" onclick="closeMobileSidebar(event)">
                 <i class="fas fa-times"></i>
             </button>
         </div>
-        <nav class="mobile-menu-items">
-            <a href="/" class="mobile-menu-item">
+        <nav class="mobile-sidebar-items">
+            <a href="/" class="mobile-sidebar-item">
                 <i class="fas fa-home"></i>
                 <span>Home</span>
             </a>
-            <a href="/articles.html" class="mobile-menu-item">
+            <a href="/articles.html" class="mobile-sidebar-item">
                 <i class="fas fa-newspaper"></i>
                 <span>Articles</span>
             </a>
-            <a href="/threat-intel.html" class="mobile-menu-item">
+            <a href="/threat-intel.html" class="mobile-sidebar-item">
                 <i class="fas fa-shield-alt"></i>
                 <span>Threat Intelligence</span>
             </a>
-            <a href="/cve-tracker.html" class="mobile-menu-item">
+            <a href="/cve-tracker.html" class="mobile-sidebar-item">
                 <i class="fas fa-exclamation-triangle"></i>
                 <span>CVE Tracker</span>
             </a>
-            <a href="/ransomware-tracker.html" class="mobile-menu-item">
+            <a href="/ransomware-tracker.html" class="mobile-sidebar-item">
                 <i class="fas fa-lock"></i>
                 <span>Ransomware Tracker</span>
             </a>
-            <a href="/guides/" class="mobile-menu-item">
+            <a href="/guides/" class="mobile-sidebar-item">
                 <i class="fas fa-book"></i>
                 <span>Guides</span>
             </a>
-            <a href="/comparisons/" class="mobile-menu-item">
+            <a href="/comparisons/" class="mobile-sidebar-item">
                 <i class="fas fa-balance-scale"></i>
                 <span>Tool Comparisons</span>
             </a>
-            <a href="#" class="mobile-menu-item" onclick="openModal('about'); closeMobileMenu(event); return false;">
+            <a href="#" class="mobile-sidebar-item" onclick="openModal('about'); closeMobileSidebar(event); return false;">
                 <i class="fas fa-info-circle"></i>
                 <span>About</span>
             </a>
-            <a href="#" class="mobile-menu-item" onclick="openModal('contact'); closeMobileMenu(event); return false;">
+            <a href="#" class="mobile-sidebar-item" onclick="openModal('contact'); closeMobileSidebar(event); return false;">
                 <i class="fas fa-envelope"></i>
                 <span>Contact</span>
             </a>
@@ -706,9 +706,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="stylesheet" href="header.css">
-<link rel="stylesheet" href="mobile.css?v=1.1">
-<link rel="stylesheet" href="mobile-typography.css?v=1.1">
-<script src="mobile.js?v=1.1" defer></script>
+<link rel="stylesheet" href="mobile.css?v=2.0">
+<link rel="stylesheet" href="mobile-typography.css?v=2.0">
+<script src="mobile.js?v=2.0" defer></script>
     <style>
         * {
             margin: 0;
@@ -984,7 +984,7 @@
                     </div>
                 </nav>
 
-                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <button class="mobile-sidebar-btn" aria-label="Toggle menu">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -1002,7 +1002,7 @@
                 <button class="mobile-header-btn mobile-search-btn" aria-label="Search">
                     <i class="fas fa-search"></i>
                 </button>
-                <button class="mobile-header-btn mobile-menu-btn" aria-label="Menu">
+                <button class="mobile-header-btn mobile-sidebar-btn" aria-label="Menu">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
@@ -1040,53 +1040,53 @@
         </nav>
 
         <!-- Mobile Menu Overlay -->
-        <div class="mobile-menu-overlay mobile-only"></div>
+        <div class="mobile-sidebar-overlay mobile-only"></div>
 
         <!-- Mobile Menu -->
-        <aside class="mobile-menu mobile-only">
-            <div class="mobile-menu-header">
+        <aside class="mobile-sidebar mobile-only">
+            <div class="mobile-sidebar-header">
                 <div class="mobile-header-logo">TheHGTech</div>
-                <button class="mobile-menu-close" aria-label="Close Menu" type="button"
-                    onclick="closeMobileMenu(event)">
+                <button class="mobile-sidebar-close" aria-label="Close Menu" type="button"
+                    onclick="closeMobileSidebar(event)">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
-            <nav class="mobile-menu-items">
-                <a href="/" class="mobile-menu-item">
+            <nav class="mobile-sidebar-items">
+                <a href="/" class="mobile-sidebar-item">
                     <i class="fas fa-home"></i>
                     <span>Home</span>
                 </a>
-                <a href="/articles.html" class="mobile-menu-item">
+                <a href="/articles.html" class="mobile-sidebar-item">
                     <i class="fas fa-newspaper"></i>
                     <span>Articles</span>
                 </a>
-                <a href="/threat-intel.html" class="mobile-menu-item">
+                <a href="/threat-intel.html" class="mobile-sidebar-item">
                     <i class="fas fa-shield-alt"></i>
                     <span>Threat Intelligence</span>
                 </a>
-                <a href="/cve-tracker.html" class="mobile-menu-item">
+                <a href="/cve-tracker.html" class="mobile-sidebar-item">
                     <i class="fas fa-exclamation-triangle"></i>
                     <span>CVE Tracker</span>
                 </a>
-                <a href="/ransomware-tracker.html" class="mobile-menu-item">
+                <a href="/ransomware-tracker.html" class="mobile-sidebar-item">
                     <i class="fas fa-lock"></i>
                     <span>Ransomware Tracker</span>
                 </a>
-                <a href="/guides/" class="mobile-menu-item">
+                <a href="/guides/" class="mobile-sidebar-item">
                     <i class="fas fa-book"></i>
                     <span>Guides</span>
                 </a>
-                <a href="/comparisons/" class="mobile-menu-item">
+                <a href="/comparisons/" class="mobile-sidebar-item">
                     <i class="fas fa-balance-scale"></i>
                     <span>Tool Comparisons</span>
                 </a>
-                <a href="#" class="mobile-menu-item"
-                    onclick="openModal('about'); closeMobileMenu(event); return false;">
+                <a href="#" class="mobile-sidebar-item"
+                    onclick="openModal('about'); closeMobileSidebar(event); return false;">
                     <i class="fas fa-info-circle"></i>
                     <span>About</span>
                 </a>
-                <a href="#" class="mobile-menu-item"
-                    onclick="openModal('contact'); closeMobileMenu(event); return false;">
+                <a href="#" class="mobile-sidebar-item"
+                    onclick="openModal('contact'); closeMobileSidebar(event); return false;">
                     <i class="fas fa-envelope"></i>
                     <span>Contact</span>
                 </a>
@@ -1136,8 +1136,8 @@
             if (mobileThemeToggle) mobileThemeToggle.addEventListener('click', toggleTheme);
 
             // Mobile Menu
-            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-            const mobileMenu = document.querySelector('.mobile-menu');
+            const mobileMenuBtn = document.querySelector('.mobile-sidebar-btn');
+            const mobileMenu = document.querySelector('.mobile-sidebar');
 
             if (mobileMenuBtn && mobileMenu) {
                 mobileMenuBtn.addEventListener('click', () => {
@@ -1246,8 +1246,8 @@
                 if (mobileThemeToggle) mobileThemeToggle.addEventListener('click', toggleTheme);
 
                 // Mobile Menu
-                const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-                const mobileMenu = document.querySelector('.mobile-menu');
+                const mobileMenuBtn = document.querySelector('.mobile-sidebar-btn');
+                const mobileMenu = document.querySelector('.mobile-sidebar');
 
                 if (mobileMenuBtn && mobileMenu) {
                     mobileMenuBtn.addEventListener('click', () => {

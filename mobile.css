@@ -239,7 +239,7 @@
     }
 
     /* ========== HAMBURGER MENU ========== */
-    .mobile-menu-overlay {
+    .mobile-sidebar-overlay {
         position: fixed;
         top: 0;
         left: 0;
@@ -253,12 +253,12 @@
         transition: opacity var(--transition-normal);
     }
 
-    .mobile-menu-overlay.active {
+    .mobile-sidebar-overlay.active {
         opacity: 1;
         pointer-events: auto;
     }
 
-    .mobile-menu {
+    .mobile-sidebar {
         position: fixed;
         top: 0;
         right: -100%;
@@ -272,11 +272,11 @@
         -webkit-overflow-scrolling: touch;
     }
 
-    .mobile-menu.active {
+    .mobile-sidebar.active {
         right: 0;
     }
 
-    .mobile-menu-header {
+    .mobile-sidebar-header {
         padding: var(--mobile-padding);
         border-bottom: 1px solid var(--border);
         display: flex;
@@ -284,7 +284,7 @@
         align-items: center;
     }
 
-    .mobile-menu-close {
+    .mobile-sidebar-close {
         width: var(--touch-target-min) !important;
         height: var(--touch-target-min) !important;
         min-width: var(--touch-target-min) !important;
@@ -305,16 +305,16 @@
         box-shadow: none !important;
     }
 
-    .mobile-menu-close:active {
+    .mobile-sidebar-close:active {
         background: rgba(255, 255, 255, 0.1) !important;
         transform: scale(0.92) !important;
     }
 
-    .mobile-menu-items {
+    .mobile-sidebar-items {
         padding: var(--mobile-padding);
     }
 
-    .mobile-menu-item {
+    .mobile-sidebar-item {
         display: flex;
         align-items: center;
         gap: 12px;
@@ -326,7 +326,7 @@
         margin-bottom: 8px;
     }
 
-    .mobile-menu-item:active {
+    .mobile-sidebar-item:active {
         background: var(--bg-card);
     }
 
@@ -756,7 +756,7 @@
     .mobile-only,
     .mobile-header,
     .mobile-bottom-nav,
-    .mobile-menu,
+    .mobile-sidebar,
     .mobile-fab {
         display: none !important;
     }
