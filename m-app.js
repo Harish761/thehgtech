@@ -269,43 +269,6 @@
     window.openNewsDetail = openNewsDetail;
     window.closeNewsDetail = closeNewsDetail;
 
-    // ========== QUICK ACCESS BAR ==========
-    function renderQuickAccessBar() {
-        // Only on homepage
-        if (!document.body.classList.contains('home-page') &&
-            !window.location.pathname.endsWith('index.html') &&
-            window.location.pathname !== '/') return;
-
-        const newsSection = document.querySelector('.mobile-only');
-        if (!newsSection) return;
-
-        // Check if already rendered
-        if (document.querySelector('.m-quick-nav')) return;
-
-        const quickNav = document.createElement('div');
-        quickNav.className = 'm-quick-nav m-only';
-        quickNav.innerHTML = `
-            <a href="cve-tracker.html" class="m-quick-nav__item m-quick-nav__item--alert">
-                <i class="fas fa-shield-virus m-quick-nav__icon"></i>
-                <span>CVE Tracker</span>
-            </a>
-            <a href="threat-intel.html" class="m-quick-nav__item">
-                <i class="fas fa-radar m-quick-nav__icon"></i>
-                <span>Threat Intel</span>
-            </a>
-            <a href="articles.html" class="m-quick-nav__item">
-                <i class="fas fa-newspaper m-quick-nav__icon"></i>
-                <span>Articles</span>
-            </a>
-            <a href="guides/index.html" class="m-quick-nav__item">
-                <i class="fas fa-book m-quick-nav__icon"></i>
-                <span>Guides</span>
-            </a>
-        `;
-
-        newsSection.parentNode.insertBefore(quickNav, newsSection);
-    }
-
     // ========== CVE PREVIEW CARD ==========
     function renderCVEPreview() {
         // Only on homepage
@@ -391,9 +354,8 @@
             renderMobileNews('cyber');
         }, 500);
 
-        // Render quick access bar and CVE preview
+        // Render CVE preview card only (no quick access - bottom nav handles that)
         setTimeout(() => {
-            renderQuickAccessBar();
             renderCVEPreview();
         }, 600);
 
