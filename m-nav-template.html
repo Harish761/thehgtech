@@ -1,14 +1,19 @@
-<!-- ========== NEW MOBILE NAVIGATION (v3.0) ========== -->
+<!-- ========== NEW MOBILE NAVIGATION (v3.1) ========== -->
 
 <!-- Mobile Header -->
 <header class="m-header m-only">
     <div class="m-header__logo">TheHGTech</div>
     <div class="m-header__actions">
-        <button class="m-header__btn m-header__btn--theme" onclick="mToggleTheme()" aria-label="Toggle Theme">
-            <i class="fas fa-moon"></i>
-            <i class="fas fa-sun"></i>
+        <!-- Premium Theme Toggle -->
+        <button class="m-theme-toggle" onclick="mToggleTheme()" aria-label="Toggle Theme">
+            <span class="m-theme-toggle__thumb"></span>
+            <span class="m-theme-toggle__stars">
+                <span class="m-theme-toggle__star"></span>
+                <span class="m-theme-toggle__star"></span>
+            </span>
         </button>
-        <button class="m-header__btn" data-action="search" aria-label="Search">
+        <!-- Search Button -->
+        <button class="m-header__btn m-header__btn--search" data-action="search" aria-label="Search">
             <i class="fas fa-search"></i>
         </button>
     </div>
