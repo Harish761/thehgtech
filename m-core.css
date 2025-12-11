@@ -543,16 +543,41 @@
         border-color: rgba(0, 0, 0, 0.1);
     }
 
-    /* ========== HIDE DESKTOP-HEAVY SECTIONS ========== */
-    /* Snapshot section - hide detailed version */
-    .threat-snapshot-section .info-tiles {
+    /* ========== HIDE DESKTOP-HEAVY SECTIONS ON MOBILE ========== */
+
+    /* Hide the info-tiles (63K IOCs, AI Insights, Pro Tools, CISA KEV boxes) */
+    .info-tile,
+    .info-tiles,
+    [style*="grid-template-columns: repeat(auto-fit, minmax(220px"] {
         display: none !important;
+    }
+
+    /* Hide snapshot section title on mobile (keep the grey text inline) */
+    #snapshot .section-header .section-title {
+        display: none !important;
+    }
+
+    /* Compact the snapshot section */
+    #snapshot {
+        padding: 0.5rem 0 !important;
+    }
+
+    #snapshot .section-header {
+        padding: 0 1rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+
+    #snapshot .section-header p {
+        font-size: 0.85rem !important;
+        color: var(--m-text-secondary) !important;
+        margin: 0 !important;
     }
 
     /* Simplify tabs */
     .tabs {
         gap: 0.5rem !important;
         margin-bottom: 1rem !important;
+        padding: 0 1rem !important;
     }
 
     .tab {
@@ -560,15 +585,23 @@
         font-size: 0.75rem !important;
     }
 
-    /* Hide news grid, show mobile cards instead */
-    .news-grid,
-    .cve-grid,
-    .threat-intel-container {
+    /* Hide news grid on desktop, we use mobile swipeable cards */
+    .news-grid {
         display: none !important;
     }
 
-    /* Mobile news cards section */
+    /* But SHOW the mobile cards section */
     .mobile-only {
         display: block !important;
+    }
+
+    /* Keep CVE section visible for now */
+    #cve {
+        display: block !important;
+    }
+
+    /* Keep tabs visible for news switching */
+    #news .tabs {
+        display: flex !important;
     }
 }
