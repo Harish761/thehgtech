@@ -3088,6 +3088,14 @@
                 <i class="fas fa-balance-scale"></i>
                 <span>Tool Comparisons</span>
             </a>
+            <a href="#" class="mobile-menu-item" onclick="openModal('about'); closeMobileMenu(event); return false;">
+                <i class="fas fa-info-circle"></i>
+                <span>About</span>
+            </a>
+            <a href="#" class="mobile-menu-item" onclick="openModal('contact'); closeMobileMenu(event); return false;">
+                <i class="fas fa-envelope"></i>
+                <span>Contact</span>
+            </a>
         </nav>
     </aside>
 
@@ -3245,18 +3253,6 @@
         </div>
     </header>
 
-    <!-- Mobile Menu -->
-    <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
-        <a href="#news" onclick="closeMobileMenu()">News</a>
-        <a href="threat-intel.html" style="color: var(--accent-cyan);" onclick="closeMobileMenu()">Threat Intelligence
-            (LIVE)</a>
-        <a href="#cve" onclick="closeMobileMenu()">CVE</a>
-        <a href="/guides/" onclick="closeMobileMenu()">Guides</a>
-
-        <a href="articles.html" onclick="closeMobileMenu()">Articles</a>
-        <a href="#" onclick="openModal('about'); closeMobileMenu(); return false;">About</a>
-        <a href="#" onclick="openModal('contact'); closeMobileMenu(); return false;">Contact</a>
-    </div>
 
     <!-- Main Content -->
     <main class="main" id="main-content" role="main">
@@ -5047,14 +5043,21 @@
 
         // Mobile menu
         function toggleMobileMenu() {
-            const menu = document.getElementById('mobileMenu');
-            const hamburger = document.querySelector('.hamburger');
-            menu.classList.toggle('active');
+            const menu = document.querySelector('.mobile-menu');
+            const overlay = document.querySelector('.mobile-menu-overlay');
 
-            // Update aria-expanded for accessibility
-            const isExpanded = menu.classList.contains('active');
-            if (hamburger) {
-                hamburger.setAttribute('aria-expanded', isExpanded);
+            if (menu) {
+                menu.classList.toggle('active');
+            }
+            if (overlay) {
+                overlay.classList.toggle('active');
+            }
+
+            // Lock body scroll if active
+            if (menu && menu.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
             }
         }
 
