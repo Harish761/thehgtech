@@ -5059,23 +5059,17 @@
         }
 
         function closeMobileMenu() {
-            const menu = document.getElementById('mobileMenu');
-            const hamburger = document.querySelector('.hamburger');
-            menu.classList.remove('active');
+            // Target the NEW mobile menu (aside.mobile-menu)
+            const menu = document.querySelector('aside.mobile-menu');
+            const overlay = document.querySelector('.mobile-menu-overlay');
 
-            if (hamburger) {
-                hamburger.setAttribute('aria-expanded', 'false');
+            if (menu) {
+                menu.classList.remove('active');
             }
-        }
-
-        function closeMobileMenu() {
-            const menu = document.getElementById('mobileMenu');
-            const hamburger = document.querySelector('.hamburger');
-            menu.classList.remove('active');
-
-            if (hamburger) {
-                hamburger.setAttribute('aria-expanded', 'false');
+            if (overlay) {
+                overlay.classList.remove('active');
             }
+            document.body.style.overflow = '';
         }
 
 
