@@ -2980,6 +2980,9 @@
     <header class="mobile-header mobile-only">
         <div class="mobile-header-logo">TheHGTech</div>
         <div class="mobile-header-actions">
+            <button class="mobile-header-btn mobile-theme-toggle" aria-label="Toggle Theme" onclick="toggleTheme()">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </button>
             <button class="mobile-header-btn mobile-search-btn" aria-label="Search">
                 <i class="fas fa-search"></i>
             </button>
@@ -5027,6 +5030,40 @@
                 banner.style.display = 'none';
             }, 500); // Wait for animation to complete
         }
+
+        // Dark/Light Mode Toggle
+        function toggleTheme() {
+            const body = document.body;
+            const themeIcon = document.getElementById('theme-icon');
+
+            if (body.classList.contains('light-mode')) {
+                // Switch to dark mode
+                body.classList.remove('light-mode');
+                themeIcon.classList.remove('fa-sun');
+                themeIcon.classList.add('fa-moon');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                // Switch to light mode
+                body.classList.add('light-mode');
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        // Load saved theme on page load
+        document.addEventListener('DOMContentLoaded', function () {
+            const savedTheme = localStorage.getItem('theme');
+            const themeIcon = document.getElementById('theme-icon');
+
+            if (savedTheme === 'light') {
+                document.body.classList.add('light-mode');
+                if (themeIcon) {
+                    themeIcon.classList.remove('fa-moon');
+                    themeIcon.classList.add('fa-sun');
+                }
+            }
+        });
 
         // Keyboard shortcuts
         document.addEventListener('keydown', function (e) {
