@@ -142,16 +142,17 @@
             ).join('');
         }
 
-        // Build cards
+        // Build cards - make them clickable to show full content
         container.innerHTML = newsData.slice(0, 10).map((item, i) => `
-            <div class="mobile-news-card ${i === 0 ? 'active' : ''}" data-index="${i}" style="${i > 0 ? 'display:none;' : ''}">
+            <div class="mobile-news-card ${i === 0 ? 'active' : ''}" data-index="${i}" style="${i > 0 ? 'display:none;' : ''}" onclick="openNewsDetail(${i}, '${currentCategory}')">
                 <div class="mobile-news-card__source">${escapeHTMLBasic(item.source || 'News')}</div>
                 <div class="mobile-news-card__date">${escapeHTMLBasic(item.date || '')}</div>
                 <h3 class="mobile-news-card__title">${escapeHTMLBasic(item.title || '')}</h3>
-                <p class="mobile-news-card__excerpt">${escapeHTMLBasic((item.content || '').substring(0, 180))}...</p>
-                <a href="${item.sourceUrl || '#'}" target="_blank" rel="noopener" class="mobile-news-card__link">
-                    Read Full Story <i class="fas fa-external-link-alt"></i>
-                </a>
+                <p class="mobile-news-card__excerpt">${escapeHTMLBasic((item.content || '').substring(0, 150))}...</p>
+                <div class="mobile-news-card__cta">
+                    <span>Tap to read full story</span>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
             </div>
         `).join('');
 
@@ -210,9 +211,63 @@
             .replace(/"/g, '&quot;');
     }
 
+    // ========== NEWS DETAIL MODAL ==========
+    function openNewsDetail(index, category) {
+        const newsData = category === 'cyber'
+            ? (websiteContent.cyberShorts || [])
+            : (websiteContent.aiShorts || []);
+
+        if (!newsData[index]) return;
+
+        const item = newsData[index];
+
+        // Create modal if it doesn't exist
+        let modal = document.getElementById('mNewsDetailModal');
+        if (!modal) {
+            modal = document.createElement('div');
+            modal.id = 'mNewsDetailModal';
+            modal.className = 'm-news-modal';
+            document.body.appendChild(modal);
+        }
+
+        modal.innerHTML = `
+            <div class="m-news-modal__backdrop" onclick="closeNewsDetail()"></div>
+            <div class="m-news-modal__content">
+                <button class="m-news-modal__close" onclick="closeNewsDetail()">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="m-news-modal__header">
+                    <span class="m-news-modal__source">${escapeHTMLBasic(item.source || 'News')}</span>
+                    <span class="m-news-modal__date">${escapeHTMLBasic(item.date || '')}</span>
+                </div>
+                <h2 class="m-news-modal__title">${escapeHTMLBasic(item.title || '')}</h2>
+                <div class="m-news-modal__body">
+                    <p>${escapeHTMLBasic(item.content || '')}</p>
+                </div>
+                <a href="${item.sourceUrl || '#'}" target="_blank" rel="noopener" class="m-news-modal__link">
+                    <i class="fas fa-external-link-alt"></i>
+                    Read on ${escapeHTMLBasic(item.source || 'Source')}
+                </a>
+            </div>
+        `;
+
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeNewsDetail() {
+        const modal = document.getElementById('mNewsDetailModal');
+        if (modal) {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    }
+
     // Expose globally
     window.switchNewsCategory = switchNewsCategory;
     window.navigateNews = navigateNews;
+    window.openNewsDetail = openNewsDetail;
+    window.closeNewsDetail = closeNewsDetail;
 
     // ========== INIT ON DOM READY ==========
     function init() {
@@ -439,6 +494,160 @@
             .news-empty-text {
                 color: var(--m-text-secondary, #aaa);
                 font-size: 0.9rem;
+            }
+            
+            /* Card CTA */
+            .mobile-news-card__cta {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-top: 16px;
+                border-top: 1px solid rgba(255,255,255,0.1);
+                margin-top: 12px;
+                color: var(--m-accent-primary, #00D9FF);
+                font-weight: 600;
+                font-size: 0.9rem;
+            }
+            
+            /* ========== NEWS DETAIL MODAL ========== */
+            .m-news-modal {
+                position: fixed;
+                inset: 0;
+                z-index: 999999;
+                display: none;
+            }
+            
+            .m-news-modal.active {
+                display: block;
+            }
+            
+            .m-news-modal__backdrop {
+                position: absolute;
+                inset: 0;
+                background: rgba(0, 0, 0, 0.85);
+                backdrop-filter: blur(8px);
+                -webkit-backdrop-filter: blur(8px);
+            }
+            
+            .m-news-modal__content {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                max-height: 85vh;
+                background: #1a1a1a;
+                border-radius: 24px 24px 0 0;
+                padding: 24px 20px 100px 20px;
+                overflow-y: auto;
+                animation: slideUp 0.3s ease;
+            }
+            
+            @keyframes slideUp {
+                from {
+                    transform: translateY(100%);
+                }
+                to {
+                    transform: translateY(0);
+                }
+            }
+            
+            .m-news-modal__close {
+                position: absolute;
+                top: 16px;
+                right: 16px;
+                width: 36px;
+                height: 36px;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.1);
+                border: none;
+                color: #fff;
+                font-size: 1rem;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .m-news-modal__close:active {
+                background: rgba(255, 255, 255, 0.2);
+            }
+            
+            .m-news-modal__header {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                margin-bottom: 16px;
+            }
+            
+            .m-news-modal__source {
+                color: var(--m-accent-primary, #00D9FF);
+                font-size: 0.8rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
+            
+            .m-news-modal__date {
+                color: #666;
+                font-size: 0.8rem;
+            }
+            
+            .m-news-modal__title {
+                font-size: 1.5rem;
+                font-weight: 700;
+                line-height: 1.3;
+                margin-bottom: 20px;
+                color: #fff;
+            }
+            
+            .m-news-modal__body {
+                color: #bbb;
+                font-size: 1rem;
+                line-height: 1.7;
+                margin-bottom: 24px;
+            }
+            
+            .m-news-modal__body p {
+                margin-bottom: 16px;
+            }
+            
+            .m-news-modal__link {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                width: 100%;
+                padding: 16px 24px;
+                background: linear-gradient(135deg, #00D9FF, #0099cc);
+                color: #000;
+                font-weight: 600;
+                font-size: 1rem;
+                text-decoration: none;
+                border-radius: 14px;
+                margin-bottom: 20px;
+            }
+            
+            .m-news-modal__link:active {
+                opacity: 0.9;
+                transform: scale(0.98);
+            }
+            
+            /* Light mode modal */
+            .light-mode .m-news-modal__content {
+                background: #fff;
+            }
+            
+            .light-mode .m-news-modal__title {
+                color: #111;
+            }
+            
+            .light-mode .m-news-modal__body {
+                color: #444;
+            }
+            
+            .light-mode .m-news-modal__close {
+                background: rgba(0, 0, 0, 0.1);
+                color: #333;
             }
         }
     `;

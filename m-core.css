@@ -573,16 +573,12 @@
         margin: 0 !important;
     }
 
-    /* Simplify tabs */
-    .tabs {
-        gap: 0.5rem !important;
-        margin-bottom: 1rem !important;
-        padding: 0 1rem !important;
-    }
-
-    .tab {
-        padding: 0.5rem 0.75rem !important;
-        font-size: 0.75rem !important;
+    /* HIDE desktop tabs on mobile - we use the mobile tab switcher */
+    .tabs,
+    .tab,
+    #news>.section-header,
+    #news .tabs {
+        display: none !important;
     }
 
     /* Hide news grid on desktop, we use mobile swipeable cards */
