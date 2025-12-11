@@ -70,8 +70,9 @@
     --m-border-radius-full: 9999px;
 }
 
-/* Light Theme */
-[data-theme="light"] {
+/* Light Theme - supports both data-theme and class */
+[data-theme="light"],
+.light-mode {
     --m-bg-primary: #f2f2f7;
     --m-bg-secondary: #ffffff;
     --m-bg-tertiary: #e5e5ea;
@@ -135,7 +136,8 @@
         -moz-osx-font-smoothing: grayscale;
         overflow-x: hidden;
         padding-top: var(--m-header-height);
-        padding-bottom: calc(var(--m-bottom-nav-height) + var(--m-safe-area-bottom));
+        padding-bottom: 80px;
+        /* 70px nav + safe area */
     }
 
     * {
