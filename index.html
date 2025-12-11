@@ -5020,7 +5020,12 @@
         // Cookie consent
         function acceptCookies() {
             localStorage.setItem('cookiesAccepted', 'true');
-            document.getElementById('cookieBanner').classList.remove('active');
+            const banner = document.getElementById('cookieBanner');
+            banner.classList.remove('active');
+            // Also hide immediately
+            setTimeout(() => {
+                banner.style.display = 'none';
+            }, 500); // Wait for animation to complete
         }
 
         // Keyboard shortcuts
