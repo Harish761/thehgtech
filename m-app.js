@@ -292,13 +292,13 @@
                 </div>
                 <div>
                     <div class="m-cve-preview__title">Critical Vulnerabilities</div>
-                    <div class="m-cve-preview__subtitle">CISA KEV + NVD Critical</div>
+                    <div class="m-cve-preview__subtitle">Top 20 from CISA KEV + NVD</div>
                 </div>
             </div>
             <div class="m-cve-preview__stats">
                 <div class="m-cve-preview__stat">
-                    <div class="m-cve-preview__stat-value" id="mCveActive">--</div>
-                    <div class="m-cve-preview__stat-label">Active</div>
+                    <div class="m-cve-preview__stat-value" id="mCveActive">20</div>
+                    <div class="m-cve-preview__stat-label">Top CVEs</div>
                 </div>
                 <div class="m-cve-preview__stat">
                     <div class="m-cve-preview__stat-value" id="mCveCritical">--</div>

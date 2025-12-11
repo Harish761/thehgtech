@@ -110,7 +110,7 @@
     <link rel="stylesheet" href="m-core.css?v=4.1">
     <link rel="stylesheet" href="m-layout.css?v=3.2">
     <link rel="stylesheet" href="m-components.css?v=3.0">
-    <script src="m-app.js?v=4.1" defer></script>
+    <script src="m-app.js?v=4.2" defer></script>
 
     <!-- ========== STRUCTURED DATA - ORGANIZATION ========== -->
     <script type="application/ld+json">
@@ -3328,17 +3328,62 @@
         </div>
         </section>
 
-        <!-- CVE Section -->
-        <!-- Articles Section -->
+        <!-- CVE Preview Section (links to full CVE Tracker) -->
+        <section id="cve" class="cveSection" style="max-width: 1200px; margin: 3rem auto; padding: 0 2rem;">
+            <div class="cve-preview-card"
+                style="background: linear-gradient(135deg, rgba(255, 61, 61, 0.08), rgba(0, 0, 0, 0.3)); border: 1px solid rgba(255, 61, 61, 0.15); border-radius: 20px; padding: 2.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 2rem;">
 
-        <!-- CVE Section -->
-        <section id="cve" class="cveSection">
-            <div id="cveContainer">
-                <!-- CVE content will be loaded dynamically by cve-display.js -->
-                <div style="text-align: center; padding: 3rem; color: var(--text-muted);">
-                    <div class="loading-spinner"></div>
-                    <p style="margin-top: 1rem;">Loading CVE data...</p>
+                <div style="flex: 1; min-width: 280px;">
+                    <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 1rem;">
+                        <div
+                            style="width: 56px; height: 56px; background: linear-gradient(135deg, #FF3D3D, #C41E3A); border-radius: 14px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-shield-virus" style="color: #fff; font-size: 1.5rem;"></i>
+                        </div>
+                        <div>
+                            <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin: 0;">Critical
+                                Vulnerabilities</h3>
+                            <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">CISA KEV + NVD Critical
+                                CVEs</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">
+                        Top 20 actively exploited vulnerabilities from CISA Known Exploited Vulnerabilities catalog and
+                        critical CVEs (CVSS 9.0+) from NVD. Updated every 4 hours.
+                    </p>
                 </div>
+
+                <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+                    <div style="display: flex; gap: 12px;">
+                        <div
+                            style="text-align: center; padding: 16px 24px; background: rgba(0,0,0,0.4); border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
+                            <div id="homeCveCount" style="font-size: 2rem; font-weight: 700; color: #FF3D3D;">20</div>
+                            <div
+                                style="font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;">
+                                Top CVEs</div>
+                        </div>
+                        <div
+                            style="text-align: center; padding: 16px 24px; background: rgba(0,0,0,0.4); border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
+                            <div id="homeCveCritical" style="font-size: 2rem; font-weight: 700; color: #FF3D3D;">--
+                            </div>
+                            <div
+                                style="font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;">
+                                Critical</div>
+                        </div>
+                        <div
+                            style="text-align: center; padding: 16px 24px; background: rgba(0,0,0,0.4); border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
+                            <div id="homeCveZero" style="font-size: 2rem; font-weight: 700; color: #FF3D3D;">--</div>
+                            <div
+                                style="font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;">
+                                Zero-Day</div>
+                        </div>
+                    </div>
+                    <a href="cve-tracker.html"
+                        style="display: inline-flex; align-items: center; gap: 10px; padding: 16px 32px; background: linear-gradient(135deg, #FF3D3D, #C41E3A); color: #fff; text-decoration: none; border-radius: 12px; font-weight: 600; font-size: 1rem; transition: all 0.3s ease;">
+                        <i class="fas fa-arrow-right"></i>
+                        View CVE Tracker
+                    </a>
+                </div>
+
             </div>
         </section>
 
@@ -3684,6 +3729,26 @@
     <script src="visual-enhancements.js"></script>
     <script src="rotating-text.js?v=4"></script>
     <script src="cve-display.js?v=20251125"></script>
+    <script>
+        // Load CVE stats for homepage preview
+        (async function () {
+            try {
+                const response = await fetch('cve-data.json?t=' + Date.now());
+                const data = await response.json();
+                const cves = (data.cves || []).slice(0, 20);
+
+                const countEl = document.getElementById('homeCveCount');
+                const criticalEl = document.getElementById('homeCveCritical');
+                const zeroEl = document.getElementById('homeCveZero');
+
+                if (countEl) countEl.textContent = cves.length;
+                if (criticalEl) criticalEl.textContent = cves.filter(c => c.severity === 'CRITICAL').length;
+                if (zeroEl) zeroEl.textContent = cves.filter(c => c.isZeroDay).length;
+            } catch (e) {
+                console.log('Could not load homepage CVE stats');
+            }
+        })();
+    </script>
     <script src="archives-content.js?v=20251130"></script>
     <script src="threat-intel.js?v=20251125"
         onerror="console.log('threat-intel.js not found - using fallback')"></script>
