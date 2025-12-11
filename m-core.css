@@ -90,6 +90,63 @@
     --m-shadow-elevated: 0 8px 32px rgba(0, 0, 0, 0.15);
 }
 
+/* ========== MOBILE LIGHT MODE OVERRIDES ========== */
+@media (max-width: 768px) {
+
+    /* Full page background override for light mode */
+    body.light-mode,
+    [data-theme="light"] body,
+    html[data-theme="light"] body {
+        background: #f8f9fa !important;
+        background-color: #f8f9fa !important;
+        color: #1a1a1a !important;
+    }
+
+    /* Override all dark backgrounds */
+    body.light-mode *,
+    [data-theme="light"] * {
+        --bg-primary: #ffffff;
+        --bg-secondary: #f8f9fa;
+    }
+
+    /* Hero section in light mode */
+    body.light-mode .hero,
+    body.light-mode .ti-hero,
+    body.light-mode [class*="hero"] {
+        background: linear-gradient(135deg, #e8f4fc 0%, #fef3f6 100%) !important;
+    }
+
+    /* Sections and containers */
+    body.light-mode section,
+    body.light-mode .section,
+    body.light-mode .container,
+    body.light-mode main,
+    body.light-mode .main {
+        background-color: #f8f9fa !important;
+    }
+
+    /* Cards in light mode */
+    body.light-mode .card,
+    body.light-mode [class*="-card"],
+    body.light-mode [class*="_card"] {
+        background: #ffffff !important;
+        border-color: rgba(0, 0, 0, 0.1) !important;
+    }
+
+    /* Text colors */
+    body.light-mode h1,
+    body.light-mode h2,
+    body.light-mode h3 {
+        color: #1a1a1a !important;
+    }
+
+    body.light-mode p,
+    body.light-mode span:not(.m-bottom-nav__item span),
+    body.light-mode li {
+        color: #4a4a4a !important;
+    }
+}
+
 /* ========== MOBILE-ONLY VISIBILITY ========== */
 .m-only {
     display: none !important;
