@@ -554,7 +554,8 @@
             .m-news-modal__close {
                 position: absolute;
                 top: 20px;
-                right: 20px;
+                left: auto !important;
+                right: 20px !important;
                 width: 40px;
                 height: 40px;
                 border-radius: 50%;
