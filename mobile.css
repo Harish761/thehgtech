@@ -31,8 +31,18 @@
     --transition-normal: 250ms;
 }
 
+/* ========== HIDE MOBILE ELEMENTS BY DEFAULT ========== */
+.mobile-only {
+    display: none !important;
+}
+
 /* ========== MOBILE-FIRST BASE STYLES ========== */
 @media (max-width: 768px) {
+
+    /* Show mobile-only elements */
+    .mobile-only {
+        display: block !important;
+    }
 
     /* Reset and optimize for mobile */
     * {
@@ -674,11 +684,6 @@
     /* ========== HIDE DESKTOP-ONLY ELEMENTS ========== */
     .desktop-only {
         display: none !important;
-    }
-
-    /* ========== MOBILE-ONLY ELEMENTS ========== */
-    .mobile-only {
-        display: block;
     }
 }
 
