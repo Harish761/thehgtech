@@ -41,6 +41,12 @@
     <link rel="stylesheet" href="/header.css">
     <link rel="stylesheet" href="/light-mode.css">
 
+    <!-- Mobile Optimization (v3.0) -->
+    <link rel="stylesheet" href="/m-core.css?v=3.0">
+    <link rel="stylesheet" href="/m-layout.css?v=3.0">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <script src="/m-app.js?v=3.0" defer></script>
+
     <style>
         * {
             margin: 0;
@@ -224,7 +230,54 @@
 </head>
 
 <body>
-    <!-- Header -->
+<!-- ========== NEW MOBILE NAVIGATION (v3.0) ========== -->
+
+<!-- Mobile Header -->
+<header class="m-header m-only">
+    <div class="m-header__logo">TheHGTech</div>
+    <div class="m-header__actions">
+        <button class="m-header__btn m-header__btn--theme" onclick="mToggleTheme()" aria-label="Toggle Theme">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+        </button>
+        <button class="m-header__btn" data-action="search" aria-label="Search">
+            <i class="fas fa-search"></i>
+        </button>
+    </div>
+</header>
+
+<!-- Bottom Navigation (5 items: Home, CVE, TI, Articles, Guides) -->
+<nav class="m-bottom-nav m-only">
+    <a href="/" class="m-bottom-nav__item">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+    </a>
+    <a href="/cve-tracker.html" class="m-bottom-nav__item">
+        <i class="fas fa-bug"></i>
+        <span>CVE</span>
+    </a>
+    <a href="/threat-intel.html" class="m-bottom-nav__item">
+        <i class="fas fa-shield-alt"></i>
+        <span>Intel</span>
+    </a>
+    <a href="/articles.html" class="m-bottom-nav__item">
+        <i class="fas fa-newspaper"></i>
+        <span>Articles</span>
+    </a>
+    <a href="/guides/" class="m-bottom-nav__item">
+        <i class="fas fa-book"></i>
+        <span>Guides</span>
+    </a>
+</nav>
+
+<!-- Search Overlay -->
+<div class="m-search-overlay m-only">
+    <div class="m-search-overlay__header">
+        <input type="text" class="m-search-overlay__input" placeholder="Search news, CVEs, guides...">
+        <button class="m-search-overlay__cancel">Cancel</button>
+    </div>
+    <div class="m-search-overlay__results"></div>
+</div>    <!-- Header -->
     <header class="header" role="banner">
         <div class="header-content">
             <div class="logo">

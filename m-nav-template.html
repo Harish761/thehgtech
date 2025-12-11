@@ -4,8 +4,7 @@
 <header class="m-header m-only">
     <div class="m-header__logo">TheHGTech</div>
     <div class="m-header__actions">
-        <button class="m-header__btn m-header__btn--theme" data-action="theme" onclick="mToggleTheme()"
-            aria-label="Toggle Theme">
+        <button class="m-header__btn m-header__btn--theme" onclick="mToggleTheme()" aria-label="Toggle Theme">
             <i class="fas fa-moon"></i>
             <i class="fas fa-sun"></i>
         </button>
@@ -15,55 +14,29 @@
     </div>
 </header>
 
-<!-- Bottom Navigation (Persistent) -->
+<!-- Bottom Navigation (5 items: Home, CVE, TI, Articles, Guides) -->
 <nav class="m-bottom-nav m-only">
-    <a href="/" class="m-bottom-nav__item active">
+    <a href="/" class="m-bottom-nav__item">
         <i class="fas fa-home"></i>
         <span>Home</span>
-    </a>
-    <a href="/articles.html" class="m-bottom-nav__item">
-        <i class="fas fa-newspaper"></i>
-        <span>News</span>
-    </a>
-    <a href="/threat-intel.html" class="m-bottom-nav__item">
-        <i class="fas fa-shield-alt"></i>
-        <span>Intel</span>
     </a>
     <a href="/cve-tracker.html" class="m-bottom-nav__item">
         <i class="fas fa-bug"></i>
         <span>CVE</span>
     </a>
-    <a href="#" class="m-bottom-nav__item" data-action="more">
-        <i class="fas fa-ellipsis-h"></i>
-        <span>More</span>
+    <a href="/threat-intel.html" class="m-bottom-nav__item">
+        <i class="fas fa-shield-alt"></i>
+        <span>Intel</span>
+    </a>
+    <a href="/articles.html" class="m-bottom-nav__item">
+        <i class="fas fa-newspaper"></i>
+        <span>Articles</span>
+    </a>
+    <a href="/guides/" class="m-bottom-nav__item">
+        <i class="fas fa-book"></i>
+        <span>Guides</span>
     </a>
 </nav>
-
-<!-- More Panel (Slide-up) -->
-<div class="m-more-overlay m-only"></div>
-<div class="m-more-panel m-only">
-    <div class="m-more-panel__handle"></div>
-    <a href="/ransomware-tracker.html" class="m-more-panel__item">
-        <i class="fas fa-user-secret"></i>
-        <span>Ransomware Tracker</span>
-    </a>
-    <a href="/guides/" class="m-more-panel__item">
-        <i class="fas fa-book"></i>
-        <span>Security Guides</span>
-    </a>
-    <a href="/comparisons/" class="m-more-panel__item">
-        <i class="fas fa-balance-scale"></i>
-        <span>Tool Comparisons</span>
-    </a>
-    <a href="#about" class="m-more-panel__item" onclick="openModal('about'); mCloseMorePanel(); return false;">
-        <i class="fas fa-info-circle"></i>
-        <span>About</span>
-    </a>
-    <a href="#contact" class="m-more-panel__item" onclick="openModal('contact'); mCloseMorePanel(); return false;">
-        <i class="fas fa-envelope"></i>
-        <span>Contact</span>
-    </a>
-</div>
 
 <!-- Search Overlay -->
 <div class="m-search-overlay m-only">
@@ -72,9 +45,4 @@
         <button class="m-search-overlay__cancel">Cancel</button>
     </div>
     <div class="m-search-overlay__results"></div>
-</div>
-
-<!-- Pull to Refresh Indicator -->
-<div class="m-pull-indicator m-only">
-    <i class="fas fa-sync-alt"></i>
 </div>
