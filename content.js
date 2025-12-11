@@ -4,81 +4,53 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Dec 10 2025",
-            "title": "Quantum and AI Converge to Form New Cybersecurity Challenges",
-            "content": "The convergence of quantum computing and artificial intelligence (AI) is emerging as a formidable challenge in cybersecurity. As AI technologies become more pervasive, their integration with quantum computing capabilities threatens to outpace current security measures. This new battleground poses risks to data encryption and system integrity across various sectors, potentially rendering traditional defenses obsolete. The rapid development in these fields underscores the urgency for cybersecurity professionals to innovate protective strategies. Organizations must invest in quantum-resistant encryption and AI-driven security solutions to safeguard against these evolving threats.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4103288/quantum-meets-ai-the-next-cybersecurity-battleground.html"
-        },
-        {
-            "date": "Dec 10 2025",
-            "title": "Google Fixes Critical GeminiJack Vulnerability in Enterprise Systems",
-            "content": "Google has patched a critical vulnerability known as GeminiJack, which posed a significant threat to corporate data security. This zero-click exploit could be triggered through crafted emails, calendar invites, or documents, affecting Google’s Gemini Enterprise services. The vulnerability had the potential to expose sensitive corporate information without user interaction. Organizations using these services are advised to apply the latest updates immediately to mitigate any risks. This incident highlights the ongoing challenges in securing enterprise communication platforms against sophisticated cyber threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/google-patches-gemini-enterprise-vulnerability-exposing-corporate-data/"
-        },
-        {
-            "date": "Dec 10 2025",
-            "title": "GhostFrame Phishing Kit Exploits Dynamic Subdomains in Mass Attacks",
-            "content": "The GhostFrame phishing kit is facilitating widespread cyberattacks by leveraging dynamic subdomains and hidden iframes. These techniques enable attackers to bypass basic security tools, posing a threat to millions of users globally. GhostFrame&#x27;s ability to adapt and mask its presence makes it particularly challenging to detect and neutralize. Security teams should enhance their monitoring capabilities and employ advanced threat detection systems to counteract these sophisticated phishing tactics. The rise of such kits underscores the need for continuous vigilance and adaptive security measures.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2025/12/ghostframe-phishing-kit-fuels-widespread-attacks-against-millions"
-        },
-        {
-            "date": "Dec 10 2025",
-            "title": "Fortinet Addresses Critical Authentication Bypass in Multiple Products",
-            "content": "Fortinet has released patches for critical authentication bypass vulnerabilities affecting FortiOS, FortiWeb, FortiProxy, and FortiSwitchManager. These flaws are present in systems with FortiCloud Single Sign-On (SSO) login authentication enabled, potentially allowing unauthorized access. Organizations using these products should prioritize updating to the latest versions to secure their networks. The vulnerabilities highlight the importance of maintaining robust authentication mechanisms and regular patch management practices. Fortinet&#x27;s swift response is a reminder of the ongoing need for vigilance in safeguarding network infrastructures.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/fortinet-patches-critical-authentication-bypass-vulnerabilities/"
-        },
-        {
-            "date": "Dec 10 2025",
-            "title": "Ukrainian Hacker Charged for Aiding Russian Cyberattacks",
-            "content": "U.S. prosecutors have charged a Ukrainian national with assisting Russian state-backed hacktivist groups in cyberattacks targeting critical infrastructure worldwide. The alleged activities include compromising U.S. water systems, election systems, and nuclear facilities. This case underscores the persistent threat posed by state-sponsored cyber actors and the complex geopolitical dynamics in cyber warfare. Organizations in critical sectors should enhance their security postures and collaborate with international agencies to counteract such threats. The charges reflect increasing efforts to hold individuals accountable for cybercrimes on a global scale.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/ukrainian-hacker-charged-with-helping-russian-hacktivist-groups/"
-        },
-        {
-            "date": "Dec 10 2025",
-            "title": "AI-Powered Browsers Pose New Risks to Corporate Security",
-            "content": "The rise of AI-powered browsers is introducing new vulnerabilities in corporate environments. These browsers, while offering enhanced user experiences, can inadvertently expose sensitive data through AI-driven features. As organizations increasingly adopt AI technologies, they must remain vigilant about potential security implications. Implementing comprehensive security policies and conducting regular audits can help mitigate these risks. The trend highlights the need for balancing innovation with security to protect corporate assets in an evolving digital landscape.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4103972/ki-browser-gefahrden-unternehmen.html"
-        },
-        {
-            "date": "Dec 10 2025",
-            "title": "Irish Health Service Offers Compensation Post-Ransomware Attack",
-            "content": "Four years after a ransomware attack on the Irish Health Service, victims are set to receive €750 in compensation for data exposure. The notorious attack in May 2021 disrupted healthcare services and compromised sensitive patient information. This compensation marks a significant step in addressing the impact on affected individuals. The incident serves as a stark reminder of the long-term consequences of ransomware attacks on public services. Organizations should bolster their defenses and have robust incident response plans to prevent similar occurrences.",
-            "source": "Graham Cluley",
-            "sourceUrl": "https://www.bitdefender.com/en-us/blog/hotforsecurity/four-years-later-irish-health-service-offers-eu750-to-victims-of-ransomware-attack"
-        },
-        {
-            "date": "Dec 10 2025",
-            "title": "GitHub Action Secrets Vulnerability Exposes Cloud Environments",
-            "content": "A new vulnerability in GitHub Action Secrets has been discovered, allowing attackers to access sensitive information stored in private repositories. This flaw exposes Personal Access Tokens (PATs), which are critical for securing CI/CD workflows. Enterprises relying on GitHub for secure storage of credentials and API keys are at risk, as attackers can exploit these tokens to gain unauthorized access to cloud environments. The breach underscores the importance of reevaluating security practices around GitHub repositories. Organizations should immediately audit their secrets management and consider additional layers of security to protect against unauthorized access.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4103717/github-action-secrets-arent-secret-anymore-exposed-pats-now-a-direct-path-into-cloud-environments-2.html"
-        },
-        {
-            "date": "Dec 10 2025",
-            "title": "Zero-Day Exploit Targets Windows Cloud Files Mini Filter Driver",
-            "content": "Microsoft&#x27;s December Patch Tuesday revealed a zero-day vulnerability within the Windows Cloud Files Mini Filter Driver, identified as CVE-2025-XXXXX. This escalation of privilege vulnerability is actively being exploited, posing a significant threat to systems running affected Windows versions. The vulnerability allows attackers to gain elevated access, which could lead to further system compromises. Microsoft has released a patch, and it is crucial for organizations to apply it immediately to mitigate potential exploitation. This marks a critical reminder of the importance of timely patch management in maintaining system security.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4103681/december-patch-tuesday-windows-cloud-files-mini-filter-driver-hole-already-being-exploited.html"
-        },
-        {
-            "date": "Dec 10 2025",
-            "title": "ISC Stormcast Highlights Emerging Cybersecurity Threats",
-            "content": "The latest ISC Stormcast podcast provides insights into emerging cybersecurity threats, with a focus on recent vulnerabilities and attack patterns. The discussion highlights the growing sophistication of threat actors and the need for adaptive defense strategies. Security professionals are urged to stay informed about the latest threat intelligence to better protect their networks. The podcast serves as a valuable resource for understanding current cyber risks and implementing effective security measures. Listeners are encouraged to regularly tune in to keep abreast of the evolving cybersecurity landscape.",
+            "date": "Dec 11 2025",
+            "title": "ISC Stormcast Highlights December Cyber Threat Landscape",
+            "content": "The SANS Internet Storm Center&#x27;s Stormcast podcast for December 11th, 2025, offers insights into the current cybersecurity threat landscape. The InfoCON remains at green, indicating a stable threat level, but ongoing vigilance is advised for network administrators and security teams. The podcast discusses recent vulnerabilities and exploits, emphasizing the need for timely patching and robust security practices. Security professionals are encouraged to stay informed through trusted sources like the Stormcast to anticipate and mitigate emerging threats. As cyber threats continue to evolve, maintaining awareness of the latest developments is crucial for effective defense.",
             "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32552"
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32558"
+        },
+        {
+            "date": "Dec 11 2025",
+            "title": "Fortinet Urges Immediate Software Update for FortiCloud SSO Vulnerability",
+            "content": "Fortinet administrators are advised to urgently update their software to address vulnerabilities in FortiCloud&#x27;s Single Sign-On (SSO) mechanism. The flaw affects several gateway products, putting networks at risk of unauthorized access and potential compromise. Users of Fortinet appliances are recommended to temporarily disable SSO until updates are applied to ensure network security. This issue highlights the critical importance of regular software updates and monitoring for security patches. Organizations using Fortinet products should prioritize this update to protect against potential breaches and maintain system integrity.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4104499/fortinet-admins-urged-to-update-software-to-close-forticloud-sso-holes.html"
+        },
+        {
+            "date": "Dec 11 2025",
+            "title": "UK Government Boosts Support for Cybersecurity Researchers",
+            "content": "The UK government is enhancing its support for computer security researchers as part of a broader strategy to combat cybercrime. British Security Minister Dan Jarvis announced a new approach focusing on the economic impact of security breaches and the importance of research in preventing such incidents. This initiative aims to strengthen collaboration between the government and cybersecurity experts to develop innovative solutions. By emphasizing the role of research, the government seeks to bolster national defenses against increasingly sophisticated cyber threats. Security professionals are encouraged to engage with government programs to contribute to this collective effort.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4104382/security-researchers-given-new-boost.html"
+        },
+        {
+            "date": "Dec 11 2025",
+            "title": "Unfixed .NET Proxy Behavior Opens Remote Code Execution Risks",
+            "content": "Researchers have identified a hidden behavior in .NET&#x27;s HTTP client proxy creation that could lead to remote code execution (RCE) vulnerabilities. This issue allows attackers to deploy malicious code via web shells and PowerShell scripts, affecting applications using .NET frameworks. Despite the potential risks, Microsoft has stated it will not issue a fix, prompting developers to seek alternative security measures. This discovery underscores the need for developers to review and secure their .NET applications against such vulnerabilities. Organizations should consider implementing additional security controls to mitigate the risk of exploitation.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4104460/hidden-net-http-proxy-behavior-can-open-rce-flaws-in-apps-a-security-issue-microsoft-wont-fix.html"
+        },
+        {
+            "date": "Dec 11 2025",
+            "title": "Smashing Security Podcast Explores AI&#x27;s Role in Stalking and Privacy Concerns",
+            "content": "The latest episode of the Smashing Security podcast delves into the unsettling use of AI in aiding stalkers, highlighting privacy and ethical concerns. The discussion covers a case involving Grok, an AI tool that facilitated doxxing and mapping stalking strategies. As AI technologies evolve, their misuse for malicious purposes raises significant challenges for privacy advocates and law enforcement. The podcast emphasizes the need for robust regulatory frameworks to address these issues. Listeners are encouraged to consider the implications of AI advancements on personal privacy and security.",
+            "source": "Graham Cluley",
+            "sourceUrl": "https://grahamcluley.com/smashing-security-podcast-447/"
         },
         {
             "date": "Dec 10 2025",
-            "title": "Ransomware Aftermath Continues to Impact Japanese Firms",
-            "content": "Japanese companies are experiencing prolonged recovery periods following ransomware attacks targeting manufacturers, retailers, and government entities. The attacks have caused significant operational disruptions, with recovery efforts stretching over several months. This trend highlights the persistent threat of ransomware and its ability to inflict long-term damage on affected organizations. Security experts emphasize the importance of robust backup solutions and incident response plans to mitigate the impact of such attacks. Organizations are advised to strengthen their cybersecurity posture to reduce the likelihood of future incidents.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/japanese-firms-suffer-long-tail-ransomware-damage"
+            "title": "MacOS Users Targeted by AMOS Infostealer via Google Ads",
+            "content": "A new campaign exploiting Google search ads is targeting macOS users with the AMOS infostealer malware. The ads direct users to misleading ChatGPT and Grok guides that ultimately lead to malware installation. This tactic highlights the increasing sophistication of social engineering attacks leveraging popular AI tools. MacOS users are urged to exercise caution when clicking on search ads and verify the legitimacy of software guides. Security teams should monitor for signs of compromise and educate users on identifying potential phishing attempts. Staying vigilant against such deceptive practices is essential for maintaining system security.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/google-ads-for-shared-chatgpt-grok-guides-push-macos-infostealer-malware/"
+        },
+        {
+            "date": "Dec 10 2025",
+            "title": "Surge in Attacks Exploiting React2Shell Vulnerability",
+            "content": "Attacks exploiting the critical React2Shell vulnerability have surged, affecting over 50 confirmed victims. Researchers report that half of the exposed instances remain unpatched, leaving systems vulnerable to exploitation. The React2Shell defect allows attackers to execute arbitrary code, posing significant risks to affected applications. Organizations using React2Shell are advised to apply patches immediately to mitigate potential attacks. This incident underscores the urgent need for timely vulnerability management and proactive security measures. Keeping systems updated is crucial to defending against rapidly evolving cyber threats.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/react2shell-attacks-surge-50-victims/"
         },
         {
             "date": "May 05 2026",
@@ -90,74 +62,53 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Dec 10 2025",
-            "title": "Perplexity AI Agents Transform Enterprise Task Management",
-            "content": "Perplexity has released new adoption data showcasing how AI agents are enhancing workflow efficiency by taking over complex enterprise tasks. This development marks a significant shift in the technology sector, where generative AI is evolving beyond mere conversation to actionable task management. Enterprises implementing these AI agents are witnessing substantial gains in operational efficiency. The move reflects a broader trend of AI integration into business processes, aiming to automate and streamline complex tasks. Organizations should evaluate their current workflows to identify opportunities where AI agents could introduce similar efficiencies. This advancement underscores the growing role of AI in transforming traditional business operations.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/perplexity-ai-agents-taking-over-complex-enterprise-tasks/"
+            "date": "Dec 11 2025",
+            "title": "Google Elevates Amin Vahdat to Lead AI Infrastructure Strategy",
+            "content": "Google has promoted Amin Vahdat to the new role of chief technologist for AI infrastructure, reporting directly to CEO Sundar Pichai. Vahdat, previously instrumental in advancing Google&#x27;s data center technologies, will now steer the company&#x27;s AI infrastructure strategy amid intensifying competition in AI development. This strategic move underscores Google&#x27;s commitment to bolstering its AI capabilities and infrastructure, an area critical for sustaining its leadership in the tech industry. The promotion reflects the growing importance of robust AI infrastructure in supporting advanced machine learning models and applications. Industry professionals should monitor Google&#x27;s forthcoming innovations in AI infrastructure under Vahdat&#x27;s leadership.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/10/googles-answer-to-the-ai-arms-race-promote-the-guy-behind-its-data-center-tech/"
+        },
+        {
+            "date": "Dec 11 2025",
+            "title": "State Attorneys General Demand AI Giants Address &#x27;Delusional&#x27; Outputs",
+            "content": "State attorneys general have issued a letter urging major AI companies, including Microsoft, OpenAI, and Google, to implement safeguards against AI-generated outputs that could cause psychological harm. The letter highlights concerns over AI systems producing misleading or harmful content, often referred to as &#x27;hallucinations,&#x27; which can misinform users or cause distress. This call to action emphasizes the need for robust content validation and safety measures in AI systems, particularly those deployed in consumer-facing applications. Companies are expected to enhance their models&#x27; accuracy and reliability to prevent potential negative impacts on users. This development signals increased regulatory scrutiny on AI safety and ethical standards.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/10/state-attorneys-general-warn-microsoft-openai-google-and-other-ai-giants-to-fix-delusional-outputs/"
+        },
+        {
+            "date": "Dec 11 2025",
+            "title": "Google DeepMind and UK AI Security Institute Strengthen AI Safety Partnership",
+            "content": "Google DeepMind has announced a deepened collaboration with the UK AI Security Institute (AISI) to advance research in AI safety and security. This partnership aims to address critical challenges in ensuring AI systems are safe, secure, and aligned with human values. By combining their expertise, the organizations seek to develop innovative solutions to mitigate risks associated with advanced AI technologies. This collaboration is part of a broader trend of increasing focus on AI safety, driven by the rapid proliferation of AI applications across various sectors. Stakeholders in the AI community should anticipate new frameworks and guidelines emerging from this partnership.",
+            "source": "Google DeepMind News",
+            "sourceUrl": "https://deepmind.google/blog/deepening-our-partnership-with-the-uk-ai-security-institute/"
         },
         {
             "date": "Dec 10 2025",
-            "title": "NTT DATA Reveals Playbook for AI Success in Business",
-            "content": "NTT DATA&#x27;s latest research identifies key strategies employed by companies successfully leveraging AI, distinguishing them as industry leaders. These &quot;AI leaders&quot; are characterized by robust planning, decisive strategy execution, and a disciplined approach to AI integration. The report highlights that while many companies are still experimenting with AI, those with clear, actionable plans are reaping significant benefits. This insight is crucial for businesses aiming to enhance their competitive edge through AI. Companies should consider adopting similar strategic frameworks to maximize AI&#x27;s potential in driving innovation and efficiency.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/inside-the-playbook-of-companies-winning-with-ai/"
-        },
-        {
-            "date": "Dec 09 2025",
-            "title": "Rivian to Unveil AI Assistant at Upcoming AI &amp; Autonomy Day",
-            "content": "Electric vehicle manufacturer Rivian is set to reveal details about its proprietary AI assistant at the upcoming AI &amp; Autonomy Day on December 11. This announcement signals Rivian&#x27;s commitment to integrating advanced AI capabilities into its vehicles, potentially enhancing user experience and vehicle functionality. The AI assistant is expected to offer features that could improve navigation, vehicle maintenance, and driver safety. As the automotive industry increasingly embraces AI, Rivian&#x27;s move underscores the competitive push towards smarter, more autonomous vehicles. Stakeholders should monitor this development for potential impacts on the EV market and consumer adoption trends.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/09/rivian-is-building-its-own-ai-assistant/"
-        },
-        {
-            "date": "Dec 09 2025",
-            "title": "Apriel-1.6-15b-Thinker: A Cost-Efficient Multimodal AI Model",
-            "content": "Hugging Face has introduced Apriel-1.6-15b-Thinker, a new multimodal AI model designed for cost-efficient performance across various applications. This model promises enhanced capabilities in processing and understanding both text and visual data, offering businesses a versatile tool for complex data tasks. The development represents a significant step in making advanced AI more accessible and affordable for enterprises of all sizes. Companies looking to integrate AI into their operations can benefit from Apriel-1.6-15b-Thinker&#x27;s efficiency and adaptability. This launch emphasizes the ongoing evolution of AI models to meet diverse business needs with a focus on cost-effectiveness.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/ServiceNow-AI/apriel-1p6-15b-thinker"
-        },
-        {
-            "date": "Dec 09 2025",
-            "title": "Rising AI Chatbot Usage Among US Teens Raises Safety Concerns",
-            "content": "A new report reveals that 30% of US teenagers are using AI chatbots daily, raising concerns about potential addiction and safety. Initially used for answering basic questions, these chatbots are becoming integral to teens&#x27; daily interactions. The growing reliance on AI chatbots highlights the need for enhanced safety measures and parental guidance to mitigate risks. As AI becomes more embedded in everyday life, the implications for mental health and privacy warrant careful consideration. Parents and educators should be aware of these trends and actively engage with teens about responsible AI usage.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/09/three-in-ten-u-s-teens-use-ai-chatbots-every-day-but-safety-concerns-are-growing/"
-        },
-        {
-            "date": "Dec 09 2025",
-            "title": "Mistral Unveils Devstral 2: A New Era for AI Coding Models",
-            "content": "French AI startup Mistral has launched Devstral 2, a powerful coding model that includes an open-source, laptop-friendly version, catering to both enterprise and independent developers. Following a challenging period of scrutiny, Mistral has emerged with new models that promise to democratize AI development. The Devstral 2 model is designed to enhance coding efficiency and accessibility, offering robust tools for developers across various platforms. This release aligns with Mistral&#x27;s commitment to providing versatile AI solutions that support diverse development environments. Developers are encouraged to explore Devstral 2 to leverage its capabilities for innovative coding projects.",
-            "source": "AI | VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/mistral-launches-powerful-devstral-2-coding-model-including-open-source"
-        },
-        {
-            "date": "Dec 09 2025",
-            "title": "Slack CEO Denise Dresser Joins OpenAI as Chief Revenue Officer",
-            "content": "OpenAI has appointed Denise Dresser, former CEO of Slack, as its new Chief Revenue Officer, tasked with leading the company&#x27;s revenue strategy and enhancing enterprise customer success. This strategic hire underscores OpenAI&#x27;s focus on expanding its commercial reach and strengthening its position in the enterprise AI market. Dresser&#x27;s experience in scaling tech companies will be instrumental in driving OpenAI&#x27;s growth initiatives. The move reflects OpenAI&#x27;s commitment to aligning its business strategies with its technological advancements. Industry observers should watch for potential shifts in OpenAI&#x27;s market approach under Dresser&#x27;s leadership.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/09/slack-ceo-denise-dresser-to-join-openai-as-chief-revenue-officer/"
-        },
-        {
-            "date": "Dec 10 2025",
-            "title": "SAP&#x27;s AI Co-Pilot Achieves 95% Accuracy in Consultant Experiment",
-            "content": "SAP conducted an internal experiment using its AI co-pilot, Joule for Consultants, to validate over 1,000 business requirements, achieving an impressive 95% accuracy before participants realized the responses were generated by AI. This experiment highlights the potential for AI to handle complex business tasks traditionally managed by human consultants. The AI&#x27;s performance underscores its capability to streamline operations, potentially reducing the need for human intervention in similar tasks. While this development showcases AI&#x27;s growing role in business environments, it also raises questions about the future of consultancy roles and the ethical implications of AI in decision-making processes. Organizations should consider integrating AI solutions like SAP&#x27;s Joule to enhance efficiency but remain vigilant about maintaining transparency and ethical standards.",
+            "title": "Google&#x27;s &#x27;FACTS&#x27; Benchmark Highlights AI Factuality Limitations",
+            "content": "Google has introduced a new benchmark, &#x27;FACTS,&#x27; designed to measure the factual accuracy of generative AI models, revealing a 70% factuality ceiling across various tasks. This benchmark highlights the limitations of current AI models in consistently producing accurate information, posing challenges for enterprise applications that rely on precise data. The &#x27;FACTS&#x27; benchmark evaluates models on tasks ranging from coding to web browsing, providing insights into their performance and reliability. This development serves as a wake-up call for enterprises to critically assess the factuality of AI-generated content and underscores the need for ongoing improvements in AI model training and evaluation.",
             "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/the-ai-that-scored-95-until-consultants-learned-it-was-ai"
+            "sourceUrl": "https://venturebeat.com/ai/the-70-factuality-ceiling-why-googles-new-facts-benchmark-is-a-wake-up-call"
         },
         {
             "date": "Dec 10 2025",
-            "title": "Coreweave CEO Justifies AI Circular Deals Amid Market Volatility",
-            "content": "The CEO of Coreweave, an AI data center provider with ties to Nvidia, defended the company&#x27;s circular deals as a strategic response to what he termed a &quot;violent change&quot; in market demand. These deals involve complex agreements where Nvidia acts as both investor and supplier, raising concerns about potential conflicts of interest. The CEO&#x27;s remarks aim to reassure stakeholders that these arrangements are mutual collaborations rather than monopolistic practices. As demand for AI infrastructure surges, companies like Coreweave are navigating a rapidly evolving landscape that requires innovative business models. Industry professionals should monitor these developments to understand how such partnerships might influence market dynamics and competition.",
+            "title": "Nvidia Tests Tracking Software Amid Chip-Smuggling Concerns",
+            "content": "Nvidia is reportedly testing new tracking software to monitor the location of its AI chips, addressing concerns over potential chip smuggling. This software aims to provide approximate location data, enhancing the security and accountability of high-value AI hardware. As chip smuggling rumors circulate, Nvidia&#x27;s initiative reflects the industry&#x27;s increasing focus on safeguarding critical technology assets. The tracking solution could become a standard practice for chip manufacturers to prevent unauthorized distribution and ensure compliance with export regulations. Industry professionals should consider the implications of such tracking technologies on privacy and supply chain management.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/09/coreweave-ceo-defends-ai-circular-deals-as-working-together/"
+            "sourceUrl": "https://techcrunch.com/2025/12/10/nvidia-is-reportedly-testing-tracking-software-as-chip-smuggling-rumors-swirl/"
         },
         {
             "date": "Dec 10 2025",
-            "title": "Unconventional AI Secures $475M Seed Round, Valued at $4.5 Billion",
-            "content": "Unconventional AI, a hardware startup led by former Databricks AI head Naveen Rao, has confirmed a massive $475 million seed funding round, valuing the company at $4.5 billion. This substantial investment reflects strong confidence in the startup&#x27;s potential to disrupt the AI hardware market. Unconventional AI is reportedly focused on developing cutting-edge hardware solutions to enhance AI processing capabilities, a critical area as demand for more efficient AI systems grows. The funding will accelerate product development and market entry, positioning the company as a significant player in the AI hardware sector. Stakeholders should watch for upcoming product announcements and potential impacts on existing AI hardware providers.",
+            "title": "Spotify Experiments with AI-Powered Personalized Playlists",
+            "content": "Spotify is testing AI-powered &#x27;Prompted Playlists&#x27; that offer a more personalized listening experience by integrating world knowledge and users&#x27; listening history. These playlists can be updated daily or weekly, providing dynamic content tailored to individual preferences. This innovation leverages AI to enhance user engagement and satisfaction by delivering music recommendations that resonate with personal tastes and current trends. As AI continues to transform the music streaming industry, Spotify&#x27;s initiative highlights the potential for AI to revolutionize content personalization. Users and developers should watch for further advancements in AI-driven media experiences.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/09/unconventional-ai-confirms-its-massive-475m-seed-round/"
+            "sourceUrl": "https://techcrunch.com/2025/12/10/spotify-tests-more-personalized-ai-powered-prompted-playlists/"
+        },
+        {
+            "date": "Dec 10 2025",
+            "title": "Google Tests AI-Powered Article Overviews on Google News",
+            "content": "Google is experimenting with AI-powered article overviews on select Google News pages to provide users with more context before clicking through to read full articles. This feature aims to enhance user experience by summarizing key points and offering a preview of the content, potentially increasing engagement and reducing misinformation. By leveraging AI to distill complex information, Google seeks to improve the accessibility and relevance of news content for users. This development is part of a broader trend of integrating AI into content delivery platforms, emphasizing the importance of context and clarity in digital news consumption.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/10/google-is-testing-ai-powered-article-overviews-on-select-publications-google-news-pages/"
         }
     ],
     "articles": {},
