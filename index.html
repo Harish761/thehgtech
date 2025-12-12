@@ -5159,15 +5159,25 @@
 
 
         // Cookie consent
-        function acceptCookies() {
-            localStorage.setItem('cookiesAccepted', 'true');
-            const banner = document.getElementById('cookieBanner');
-            banner.classList.remove('active');
-            // Also hide immediately
-            setTimeout(() => {
-                banner.style.display = 'none';
-            }, 500); // Wait for animation to complete
-        }
+        // Cookie consent
+        window.acceptCookies = function () {
+            try {
+                localStorage.setItem('cookiesAccepted', 'true');
+                const banner = document.getElementById('cookieBanner');
+                if (banner) {
+                    banner.classList.remove('active');
+                    // Also hide immediately
+                    setTimeout(() => {
+                        banner.style.display = 'none';
+                    }, 500); // Wait for animation to complete
+                }
+            } catch (e) {
+                console.warn('Cookie storage failed:', e);
+                // Still hide banner visually
+                const banner = document.getElementById('cookieBanner');
+                if (banner) banner.classList.remove('active');
+            }
+        };
 
         // Dark/Light Mode Toggle
         function toggleTheme() {
