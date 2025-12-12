@@ -944,7 +944,7 @@
                 <a href="index.html#contact">Contact</a>
 
                 <div class="theme-toggle-wrapper">
-                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle theme">
                         <div class="toggle-stars">
                             <div class="star"></div>
                             <div class="star"></div>
@@ -2507,37 +2507,25 @@
             updateChart('newIOCsChart');
         }
 
-        // Dark/Light Mode Toggle
+        // Dark/Light Mode Toggle - Global function for onclick
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+            const isLightMode = document.body.classList.contains('light-mode');
+            localStorage.setItem('theme', isLightMode ? 'light' : 'dark');
+            // Update charts
+            if (typeof updateChartsTheme === 'function') updateChartsTheme();
+            if (window.updateDashboardChartsTheme) window.updateDashboardChartsTheme();
+        }
+
+        // Initialize theme immediately to prevent flash
+        if (localStorage.getItem('theme') === 'light') {
+            document.body.classList.add('light-mode');
+        }
+
         // Header Functionality
         document.addEventListener('DOMContentLoaded', () => {
-            // Theme Toggle
-            const themeToggle = document.getElementById('themeToggle');
-            const mobileThemeToggle = document.getElementById('mobileThemeToggle');
-            const body = document.body;
-
-            // Check local storage
-            if (localStorage.getItem('theme') === 'light') {
-                body.classList.add('light-mode');
-                if (typeof updateChartsTheme === 'function') updateChartsTheme();
-            }
-
-            function toggleTheme() {
-                body.classList.toggle('light-mode');
-                const isLightMode = body.classList.contains('light-mode');
-
-                if (isLightMode) {
-                    localStorage.setItem('theme', 'light');
-                } else {
-                    localStorage.setItem('theme', 'dark');
-                }
-
-                // Update charts
-                if (typeof updateChartsTheme === 'function') updateChartsTheme();
-                if (window.updateDashboardChartsTheme) window.updateDashboardChartsTheme();
-            }
-
-            if (themeToggle) themeToggle.addEventListener('click', toggleTheme);
-            if (mobileThemeToggle) mobileThemeToggle.addEventListener('click', toggleTheme);
+            // Theme already initialized above
+            if (typeof updateChartsTheme === 'function') updateChartsTheme();
 
             // Mobile Menu
             const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
