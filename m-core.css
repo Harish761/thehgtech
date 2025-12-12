@@ -462,6 +462,17 @@
     .ti-hero p {
         font-size: 0.85rem !important;
         margin-bottom: 1rem !important;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8) !important;
+        color: rgba(255, 255, 255, 0.9) !important;
+    }
+
+    /* TI Hero text background for readability */
+    .ti-hero .hero-content,
+    .ti-hero>div {
+        background: rgba(0, 0, 0, 0.5) !important;
+        border-radius: 16px !important;
+        padding: 1rem !important;
+        backdrop-filter: blur(10px) !important;
     }
 
     /* Horizontal stats row */
