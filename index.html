@@ -2599,45 +2599,131 @@
             transform: rotate(180deg);
         }
 
-        .faq-answer {
+        /* FAQ Modal Popup */
+        .faq-modal-overlay {
             display: none;
-            opacity: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
         }
 
-        .faq-item.active .faq-answer {
-            display: block;
-            opacity: 1;
-            animation: faqFadeIn 0.25s ease-out;
+        .faq-modal-overlay.active {
+            display: flex;
+            animation: fadeIn 0.2s ease-out;
         }
 
-        @keyframes faqFadeIn {
+        .faq-modal {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            max-width: 600px;
+            width: 100%;
+            max-height: 80vh;
+            overflow-y: auto;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            animation: modalSlideIn 0.25s ease-out;
+        }
+
+        @keyframes fadeIn {
             from {
                 opacity: 0;
-                transform: translateY(-8px);
             }
 
             to {
                 opacity: 1;
-                transform: translateY(0);
             }
         }
 
-        .faq-answer-inner {
-            /* Wrapper for structure */
+        @keyframes modalSlideIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95) translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
         }
 
-        .faq-answer p {
-            padding: 0.5rem 1.5rem 1.5rem;
-            color: var(--text-secondary);
-            line-height: 1.7;
+        .faq-modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .faq-modal-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-primary);
             margin: 0;
+            line-height: 1.4;
         }
 
-        .faq-answer strong {
+        .faq-modal-close {
+            background: transparent;
+            border: none;
+            color: var(--text-secondary);
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0;
+            line-height: 1;
+            transition: color 0.2s ease;
+            flex-shrink: 0;
+        }
+
+        .faq-modal-close:hover {
             color: var(--accent);
         }
 
-        /* Light Mode FAQ */
+        .faq-modal-body {
+            padding: 1.5rem;
+        }
+
+        .faq-modal-body p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        .faq-modal-body strong {
+            color: var(--accent);
+        }
+
+        /* Hide old answer div */
+        .faq-answer {
+            display: none !important;
+        }
+
+        /* Light Mode Modal */
+        body.light-mode .faq-modal {
+            background: #fff;
+            border-color: rgba(0, 0, 0, 0.1);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        body.light-mode .faq-modal-header {
+            border-color: rgba(0, 0, 0, 0.1);
+        }
+
+        body.light-mode .faq-modal-body p {
+            color: #444;
+        }
+
+        /* Light Mode FAQ Items */
         body.light-mode .faq-item {
             background: rgba(0, 0, 0, 0.02);
             border-color: rgba(0, 0, 0, 0.1);
@@ -2652,10 +2738,6 @@
             color: var(--text-primary);
         }
 
-        body.light-mode .faq-answer p {
-            color: #444;
-        }
-
         /* Mobile FAQ */
         @media (max-width: 768px) {
             .faq-section {
@@ -2667,9 +2749,21 @@
                 font-size: 0.95rem;
             }
 
-            .faq-answer p {
-                padding: 0 1.25rem 1.25rem;
-                font-size: 0.9rem;
+            .faq-modal {
+                max-height: 90vh;
+                margin: 0.5rem;
+            }
+
+            .faq-modal-header {
+                padding: 1.25rem;
+            }
+
+            .faq-modal-body {
+                padding: 1.25rem;
+            }
+
+            .faq-modal-title {
+                font-size: 1rem;
             }
         }
 
@@ -3808,6 +3902,19 @@
         </div>
     </section>
 
+    <!-- FAQ Modal Overlay -->
+    <div class="faq-modal-overlay" id="faqModal">
+        <div class="faq-modal">
+            <div class="faq-modal-header">
+                <h3 class="faq-modal-title" id="faqModalTitle">Question</h3>
+                <button class="faq-modal-close" id="faqModalClose" aria-label="Close">&times;</button>
+            </div>
+            <div class="faq-modal-body">
+                <p id="faqModalAnswer">Answer</p>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
 
     <footer class="footer" role="contentinfo">
@@ -4603,25 +4710,51 @@
         // ========== INITIALIZATION ==========
 
         document.addEventListener('DOMContentLoaded', function () {
-            // ========== FAQ ACCORDION ==========
-            const faqQuestions = document.querySelectorAll('.faq-question');
-            faqQuestions.forEach(question => {
+            // ========== FAQ MODAL ==========
+            const faqModal = document.getElementById('faqModal');
+            const faqModalTitle = document.getElementById('faqModalTitle');
+            const faqModalAnswer = document.getElementById('faqModalAnswer');
+            const faqModalClose = document.getElementById('faqModalClose');
+
+            // Open modal when clicking FAQ question
+            document.querySelectorAll('.faq-question').forEach(question => {
                 question.addEventListener('click', () => {
                     const faqItem = question.parentElement;
-                    const isActive = faqItem.classList.contains('active');
+                    const questionText = question.querySelector('[itemprop="name"]').textContent;
+                    const answerElement = faqItem.querySelector('.faq-answer p');
+                    const answerHTML = answerElement ? answerElement.innerHTML : '';
 
-                    // Close all other FAQs (optional - remove for multi-open)
-                    document.querySelectorAll('.faq-item.active').forEach(item => {
-                        if (item !== faqItem) {
-                            item.classList.remove('active');
-                            item.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
-                        }
-                    });
-
-                    // Toggle current FAQ
-                    faqItem.classList.toggle('active');
-                    question.setAttribute('aria-expanded', !isActive);
+                    faqModalTitle.textContent = questionText;
+                    faqModalAnswer.innerHTML = answerHTML;
+                    faqModal.classList.add('active');
+                    document.body.style.overflow = 'hidden'; // Prevent background scroll
                 });
+            });
+
+            // Close modal on X button
+            if (faqModalClose) {
+                faqModalClose.addEventListener('click', () => {
+                    faqModal.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            }
+
+            // Close modal on backdrop click
+            if (faqModal) {
+                faqModal.addEventListener('click', (e) => {
+                    if (e.target === faqModal) {
+                        faqModal.classList.remove('active');
+                        document.body.style.overflow = '';
+                    }
+                });
+            }
+
+            // Close modal on Escape key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && faqModal && faqModal.classList.contains('active')) {
+                    faqModal.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
             });
 
             // ========== STICKY HEADER AUTO-HIDE ==========
