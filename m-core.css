@@ -442,8 +442,85 @@
     .site-header,
     .desktop-nav,
     .desktop-only,
-    .main-footer {
+    .main-footer,
+    .mobile-menu {
         display: none !important;
+    }
+
+    /* ========== THREAT INTEL PAGE MOBILE OPTIMIZATION ========== */
+    /* Compact TI hero */
+    .ti-hero {
+        padding: 60px 1rem 20px !important;
+        min-height: auto !important;
+    }
+
+    .ti-hero h1 {
+        font-size: 1.5rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+
+    .ti-hero p {
+        font-size: 0.85rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    /* Horizontal stats row */
+    .live-stats {
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 8px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .stat-item {
+        flex: 1 !important;
+        padding: 12px 8px !important;
+        min-width: unset !important;
+        background: rgba(255, 255, 255, 0.05) !important;
+        border-radius: 12px !important;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    }
+
+    .stat-number {
+        font-size: 1.3rem !important;
+    }
+
+    .stat-label {
+        font-size: 0.6rem !important;
+    }
+
+    /* Hide animated elements on mobile for performance */
+    .threat-particles,
+    .data-stream,
+    .cyber-grid {
+        display: none !important;
+    }
+
+    /* Horizontal tabs */
+    .dashboard-tabs,
+    .tab-navigation {
+        display: flex !important;
+        flex-direction: row !important;
+        overflow-x: auto !important;
+        gap: 8px !important;
+        padding: 0 1rem !important;
+        scrollbar-width: none !important;
+    }
+
+    .dashboard-tabs::-webkit-scrollbar,
+    .tab-navigation::-webkit-scrollbar {
+        display: none !important;
+    }
+
+    .dashboard-tabs button,
+    .tab-navigation button,
+    .tab-btn {
+        flex: 0 0 auto !important;
+        padding: 10px 16px !important;
+        font-size: 0.85rem !important;
+        white-space: nowrap !important;
+        border-radius: 20px !important;
     }
 
     /* ========== MOBILE HERO OPTIMIZATION ========== */
