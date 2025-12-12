@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+
+  <!-- Dynamic content pages for Google News consideration -->
+  <url>
+    <loc>https://thehgtech.com/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-12</news:publication_date>
+      <news:title>Real-Time Threat Intelligence, CVE Tracking, and Cybersecurity News</news:title>
+      <news:keywords>cybersecurity, threat intelligence, CVE, ransomware, malware, AI news</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-12</news:publication_date>
+      <news:title>Cybersecurity Analysis and Expert Articles</news:title>
+      <news:keywords>cybersecurity articles, security analysis, threat research</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/cve-tracker.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-12</news:publication_date>
+      <news:title>CVE Vulnerability Tracker - CISA KEV Real-Time Dashboard</news:title>
+      <news:keywords>CVE tracker, vulnerability database, CISA KEV, security vulnerabilities</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/ransomware-tracker.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-12</news:publication_date>
+      <news:title>Ransomware Attack Tracker - Live Incident Monitoring</news:title>
+      <news:keywords>ransomware tracker, ransomware attacks, cyber attacks, ransomware groups</news:keywords>
+    </news:news>
+  </url>
+
+</urlset>

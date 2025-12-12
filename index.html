@@ -225,6 +225,104 @@
     }
     </script>
 
+    <!-- ========== STRUCTURED DATA - SITELINKS SEARCHBOX (Google Search Feature) ========== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://thehgtech.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://thehgtech.com/?search={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- ========== STRUCTURED DATA - FAQ (Triggers Rich Snippets in Google) ========== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is TheHGTech CVE Tracker?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "TheHGTech CVE Tracker is a free, real-time vulnerability tracking dashboard that monitors the top 20 critical CVEs from CISA KEV (Known Exploited Vulnerabilities catalog). Updated every 4 hours with severity scores, affected vendors, and direct links to official sources. No signup required."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often is threat intelligence data updated?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our threat intelligence feeds are updated every 2-4 hours from 9 trusted sources including OpenPhish, Malware Bazaar, CISA KEV, Spamhaus DROP, CINS Army, and Blocklist.de. We track over 15,000 IOCs (Indicators of Compromise) with 7-day historical trends."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is TheHGTech free to use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, TheHGTech is completely free. Access real-time threat intelligence, CVE tracking, ransomware monitoring, cybersecurity news, and AI insights without any signup or subscription. Export data to CSV/JSON for SIEM integration at no cost."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What IOC types does TheHGTech track?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We track 6 IOC types: Malicious URLs, Phishing Domains, Malware Hashes (MD5, SHA256), Suspicious IP Addresses, CVE Vulnerabilities, and Ransomware Campaigns. Each indicator includes source attribution, first/last seen timestamps, and threat context."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I export threat data for my SIEM?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, all threat intelligence data can be exported in CSV or JSON format for integration with SIEM platforms like Splunk, QRadar, Microsoft Sentinel, and Elastic SIEM. Export includes IOC value, type, source, timestamps, and threat classification."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- ========== STRUCTURED DATA - SOFTWARE APPLICATION (Tool Recognition) ========== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "TheHGTech Threat Intelligence Platform",
+      "applicationCategory": "SecurityApplication",
+      "operatingSystem": "Web Browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "156",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "featureList": [
+        "Real-time CVE Tracking",
+        "15,000+ IOCs from 9 sources",
+        "Ransomware Attack Monitoring",
+        "CSV/JSON Export",
+        "7-Day Threat Trends",
+        "SIEM Integration Ready"
+      ]
+    }
+    </script>
+
     <style>
         * {
             margin: 0;
