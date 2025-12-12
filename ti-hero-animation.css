@@ -527,20 +527,22 @@
    ============================================ */
 .typing-subtitle {
     font-size: 1.3rem;
-    color: rgba(255, 255, 255, 0.8);
+    color: #fff;
     margin-bottom: 2rem;
-    font-weight: 400;
+    font-weight: 500;
     min-height: 2em;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
 }
 
 .typing-text {
     border-right: 3px solid var(--hero-gradient-1);
     padding-right: 5px;
     animation: blink 1s step-end infinite;
+    color: #fff;
 }
 
 @keyframes blink {
@@ -754,15 +756,15 @@
     }
 
     .typing-subtitle {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .live-stats {
-        gap: 1.5rem;
+        gap: 1rem;
     }
 
     .stat-number {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .radar-scanner {
@@ -774,10 +776,28 @@
         width: 150px;
     }
 
+    /* Compact LIVE MONITORING badge on mobile */
     .threat-level-badge {
-        top: 1rem;
-        right: 1rem;
-        padding: 0.8rem 1.2rem;
+        top: 65px;
+        right: 8px;
+        padding: 6px 12px;
+        font-size: 0.7rem;
+        gap: 6px;
+    }
+
+    .threat-dot {
+        width: 8px;
+        height: 8px;
+    }
+
+    .threat-text {
+        font-size: 0.65rem;
+        letter-spacing: 0.5px;
+    }
+
+    .hero-content {
+        padding: 1.5rem;
+        margin-top: 20px;
     }
 }
 
