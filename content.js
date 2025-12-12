@@ -5,6 +5,55 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Dec 12 2025",
+            "title": "Attackers Exploit GeoServer Vulnerability Due to Inadequate Input Sanitization",
+            "content": "A critical vulnerability in GeoServer has been exploited due to insufficient sanitization of user inputs, allowing attackers to define external entities within XML requests. This flaw affects versions prior to 2.21.3, potentially enabling remote code execution or data theft. Organizations utilizing GeoServer, particularly in sectors like geospatial data services, are at risk. This vulnerability underscores the ongoing challenges in securing XML parsers against well-known attack vectors. Users are advised to upgrade to the latest version immediately and review their XML parsing configurations to prevent similar exploits.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/recent-geoserver-vulnerability-exploited-in-attacks/"
+        },
+        {
+            "date": "Dec 12 2025",
+            "title": "XSS Tops MITRE&#x27;s 2025 List of Most Dangerous Software Vulnerabilities",
+            "content": "MITRE has released its 2025 list of the top 25 most dangerous software vulnerabilities, with Cross-Site Scripting (XSS) leading the list. Other critical vulnerabilities include SQL injection and Cross-Site Request Forgery (CSRF), as well as buffer overflow issues and improper access control. This list reflects the persistent challenges developers face in securing web applications against these common attack vectors. Security professionals should prioritize mitigating these vulnerabilities through robust input validation, regular code reviews, and employing automated security testing tools. Staying informed about these prevalent threats is crucial for maintaining secure software environments.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/mitre-releases-2025-list-of-top-25-most-dangerous-software-vulnerabilities/"
+        },
+        {
+            "date": "Dec 12 2025",
+            "title": "Unofficial Patches Released for Windows RasMan Zero-Day Vulnerability",
+            "content": "A new zero-day vulnerability in Windows&#x27; Remote Access Connection Manager (RasMan) service has been identified, allowing attackers to crash the service. Unofficial patches have been made available by 0patch to address this issue, affecting Windows 10 and Windows Server 2019 systems. This vulnerability could disrupt VPN connections and other remote access services, posing a significant risk to organizations relying on remote work infrastructure. While Microsoft has yet to release an official fix, users are encouraged to apply the unofficial patch and monitor for updates. This incident highlights the importance of timely patch management in maintaining system security.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/new-windows-rasman-zero-day-flaw-gets-free-unofficial-patches/"
+        },
+        {
+            "date": "Dec 12 2025",
+            "title": "Microsoft Expands Bug Bounty Program to Include Third-Party Code",
+            "content": "Microsoft has announced an expansion of its bug bounty program to include critical vulnerabilities in third-party and open-source code that impact Microsoft services. This move aims to enhance the security of its ecosystem by incentivizing researchers to identify and report flaws beyond Microsoft&#x27;s proprietary software. The program covers a wide range of vulnerabilities, offering rewards for issues that could compromise service integrity. Security researchers are encouraged to participate, as this initiative underscores Microsoft&#x27;s commitment to collaborative cybersecurity efforts. This expansion may lead to increased scrutiny and improved security across integrated software solutions.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/microsoft-bug-bounty-program-expanded-to-third-party-code/"
+        },
+        {
+            "date": "Dec 12 2025",
+            "title": "Notepad++ Fixes Updater Vulnerability After Traffic Hijacking Reports",
+            "content": "Notepad++ has patched a critical vulnerability in its software updater, which failed to authenticate update files, potentially allowing attackers to hijack traffic. This flaw could have led to the installation of malicious updates, compromising user systems. The vulnerability affected all versions prior to 8.5.2, and users are strongly advised to update to the latest version immediately. This incident highlights the importance of secure update mechanisms in software distribution. Developers and IT administrators should ensure their applications employ robust update authentication processes to prevent similar security lapses.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/notepad-patches-updater-flaw-after-reports-of-traffic-hijacking/"
+        },
+        {
+            "date": "Dec 12 2025",
+            "title": "Evaluating VPN Privacy: Key Insights for Users",
+            "content": "An in-depth analysis of VPN services reveals significant privacy concerns that users should be aware of. Despite the common belief that VPNs ensure complete anonymity, many services may log user data or lack strong encryption protocols. These findings are based on years of testing across various VPNs, highlighting the need for users to scrutinize privacy policies and technical specifications. Privacy-focused individuals and organizations should select VPNs that offer no-log policies and robust encryption standards. Understanding the limitations and capabilities of VPN services is essential for maintaining online privacy and security.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/inside-malwarebytes/2025/12/how-private-is-your-vpn"
+        },
+        {
+            "date": "Dec 12 2025",
+            "title": "Effective Strategies for Securing GenAI in Enterprise Browsers",
+            "content": "As generative AI (GenAI) becomes increasingly integrated into enterprise browsers, securing these applications is paramount. From web-based large language models (LLMs) to GenAI-powered extensions, enterprises are leveraging these tools for tasks like drafting emails and analyzing data. However, this widespread use raises security concerns, necessitating robust policy enforcement, isolation techniques, and data controls. Organizations should implement comprehensive security frameworks to manage GenAI usage and protect sensitive information. This trend reflects the growing need for tailored security solutions as AI technologies permeate enterprise environments.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/12/securing-genai-in-browser-policy.html"
+        },
+        {
+            "date": "Dec 12 2025",
             "title": "ISC Stormcast Highlights Low Cyber Threat Levels",
             "content": "The SANS Internet Storm Center&#x27;s latest Stormcast podcast for December 12, 2025, reports a stable cyber threat environment with an InfoCON status of green. This indicates a low level of malicious cyber activity, allowing organizations to maintain standard security operations without heightened alert. The podcast serves as a regular update providing cybersecurity professionals with insights on current threats and vulnerabilities. Listeners are encouraged to stay informed through these updates to ensure they are prepared for any potential changes in threat levels. As always, maintaining robust security hygiene is recommended to safeguard against emerging threats.",
             "source": "SANS Internet Storm Center",
@@ -25,34 +74,6 @@ const websiteContent = {
             "sourceUrl": "https://www.csoonline.com/article/4105230/meet-consentfix-a-new-twist-on-the-clickfix-phishing-attack.html"
         },
         {
-            "date": "Dec 11 2025",
-            "title": "Brave Browser Tests AI-Driven Automation with Leo Assistant",
-            "content": "Brave has launched a trial of its new AI browsing feature, incorporating Leo, a privacy-focused AI assistant, to automate user tasks. This agentic AI mode is designed to enhance user experience by performing tasks such as data retrieval and form filling while maintaining privacy. Brave&#x27;s initiative reflects the growing trend of integrating AI into web browsers to improve functionality and user convenience. Users interested in testing this feature can participate in the trial phase, providing feedback on its performance and privacy implications. The development underscores the balance between innovation and privacy in AI applications.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/brave-browser-starts-testing-agentic-ai-mode-for-automated-tasks/"
-        },
-        {
-            "date": "Dec 11 2025",
-            "title": "Grey Market SIM Cards Fuel Cyber Manipulation Schemes",
-            "content": "A study from the University of Cambridge reveals that grey market SIM cards are being used extensively for online manipulation and fraud. These SIM cards, sourced from international markets, enable the creation of virtual bot armies that facilitate large-scale internet scams. The research highlights the need for stricter regulations on SIM card distribution to curb their misuse in cybercrime. Organizations should be aware of the potential threats posed by bot-driven manipulation and ensure their security measures are robust against such tactics. This finding points to the ongoing challenges in controlling digital fraud mechanisms.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4104620/wie-im-netz-gezielt-manipuliert-wird.html"
-        },
-        {
-            "date": "Dec 11 2025",
-            "title": "Undocumented Flaw in CentreStack Exploited for Remote Code Execution",
-            "content": "Hackers have exploited an undocumented cryptographic vulnerability in Gladinet&#x27;s CentreStack and Triofox products, leading to remote code execution attacks. This flaw affects systems that rely on these products for secure remote file access and sharing, posing a significant security risk. Organizations using CentreStack or Triofox should prioritize patching and review their cryptographic implementations to prevent exploitation. This incident highlights the critical importance of regular security audits and updates in maintaining the integrity of secure file-sharing solutions. Staying informed on emerging vulnerabilities is essential for effective cybersecurity management.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-gladinet-centrestack-cryptographic-flaw-in-rce-attacks/"
-        },
-        {
-            "date": "Dec 11 2025",
-            "title": "Notepad++ Update Addresses Malicious Update File Vulnerability",
-            "content": "Notepad++ has released version 8.8.9 to fix a vulnerability in its WinGUp update tool that allowed attackers to push malicious executables. This security flaw was reported by researchers and users who experienced compromised update processes. The update ensures that the WinGUp tool retrieves legitimate update packages, safeguarding users from potential malware infections. Users are urged to update to the latest version to protect their systems from this vulnerability. This incident underscores the importance of secure update mechanisms in software distribution to prevent exploitation by malicious actors.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/notepad-plus-plus-fixes-flaw-that-let-attackers-push-malicious-update-files/"
-        },
-        {
             "date": "May 05 2026",
             "title": "GISEC GLOBAL 2026 Unveils Cybersecurity Innovations in Middle East and Africa",
             "content": "GISEC GLOBAL 2026, the largest cybersecurity event in the Middle East and Africa, has kicked off, showcasing the latest advancements in cybersecurity technology and strategy. The event serves as a platform for industry leaders to discuss emerging threats and innovative solutions. This year&#x27;s focus includes AI-driven security tools, advanced threat detection systems, and new compliance frameworks. Professionals from various sectors, including government and private enterprises, are attending to gain insights into protecting critical infrastructure. The event highlights the region&#x27;s growing importance in the global cybersecurity landscape, emphasizing collaboration and knowledge sharing. Attendees are encouraged to engage with workshops and panels to stay ahead of evolving cyber threats.",
@@ -63,52 +84,59 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Dec 12 2025",
+            "title": "BBVA Integrates ChatGPT Enterprise into Banking Workflows",
+            "content": "BBVA is revolutionizing its banking operations by embedding ChatGPT Enterprise into its core workflows. This integration aims to enhance risk assessment and customer service, addressing the banking sector&#x27;s challenge of extracting value from generative AI. By directly incorporating OpenAI&#x27;s platform, BBVA seeks to streamline operations and improve efficiency. The move reflects a growing trend in the financial industry to leverage AI for operational excellence. Banking professionals should monitor developments in AI integration to stay competitive and ensure compliance with emerging standards.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/bbva-embeds-ai-into-banking-workflows-using-chatgpt-enterprise/"
+        },
+        {
+            "date": "Dec 12 2025",
+            "title": "Microsoft&#x27;s Copilot Usage Reveals Late-Night Philosophy Trend",
+            "content": "Microsoft&#x27;s analysis of Copilot usage has uncovered a notable trend of late-night philosophical inquiries, echoing F. Scott Fitzgerald&#x27;s musings on existential contemplation. The data indicates a rise in religion and philosophy-related conversations during the early morning hours, suggesting users turn to AI for deep reflections. This trend underscores the role of AI in facilitating intellectual exploration and personal introspection. Developers and tech leaders should consider the implications of AI&#x27;s influence on cognitive and emotional processes. Understanding user behavior can guide the development of more intuitive AI systems.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/copilot-usage-analysis-2am-philosophy-questions/"
+        },
+        {
+            "date": "Dec 12 2025",
+            "title": "BBVA and OpenAI Partner for AI-Driven Banking Transformation",
+            "content": "BBVA is expanding its collaboration with OpenAI through a multi-year initiative to implement ChatGPT Enterprise across its 120,000 employees. This strategic partnership aims to develop AI solutions that enhance customer interactions and streamline banking operations. The initiative is part of a broader effort to create an AI-native banking experience, positioning BBVA at the forefront of digital transformation in finance. Financial institutions should assess the benefits of AI integration to improve service delivery and operational efficiency. This partnership exemplifies the potential of AI in reshaping industry landscapes.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/bbva-collaboration-expansion"
+        },
+        {
+            "date": "Dec 11 2025",
+            "title": "Google Launches &#x27;Disco&#x27; for Web App Creation from Browser Tabs",
+            "content": "Google Labs has introduced &#x27;Disco,&#x27; a new tool powered by its Gemini AI, designed to transform browser tabs into web applications. This innovative product aims to simplify the process of web app development, making it accessible to a broader audience. By leveraging AI capabilities, &#x27;Disco&#x27; automates the conversion of web content into functional applications, potentially revolutionizing web development workflows. Developers should explore this tool to enhance productivity and streamline app creation. The launch of &#x27;Disco&#x27; reflects Google&#x27;s commitment to advancing AI-driven solutions in the tech industry.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/11/google-debuts-disco-a-gemini-powered-tool-for-making-web-apps-from-browser-tabs/"
+        },
+        {
+            "date": "Dec 11 2025",
+            "title": "Runway Introduces Physics-Aware World Model for AI Applications",
+            "content": "Runway has released its first physics-aware world model, designed to simulate reality for training AI agents. This model supports applications in video, robotics, and avatars, providing a more accurate representation of physical environments. The inclusion of native audio in its latest video model enhances the realism and versatility of AI-generated content. This development is significant for professionals working with AI in creative and technical fields, offering new opportunities for innovation. Companies should consider integrating these models to improve the fidelity and effectiveness of their AI solutions.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/11/runway-releases-its-first-world-model-adds-native-audio-to-latest-video-model/"
+        },
+        {
+            "date": "Dec 11 2025",
+            "title": "Llama.cpp Introduces Advanced Model Management Features",
+            "content": "The latest update to llama.cpp introduces enhanced model management capabilities, streamlining the deployment and operation of AI models. These new features allow for more efficient handling of model versions and configurations, catering to the needs of developers and researchers. By improving model management, llama.cpp aims to facilitate the integration of AI into various applications, promoting scalability and flexibility. Professionals in AI development should explore these features to optimize their workflows and maintain competitive advantage. This update highlights the ongoing evolution of tools supporting AI innovation.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/ggml-org/model-management-in-llamacpp"
+        },
+        {
+            "date": "Dec 11 2025",
+            "title": "Disney Partners with OpenAI for AI-Generated Character Videos",
+            "content": "Disney has signed an agreement with OpenAI to utilize its Sora platform for generating AI-driven videos featuring iconic Disney characters. This collaboration will see Disney becoming a major customer of OpenAI, leveraging its APIs to create new products and experiences, including content for Disney+. The partnership represents a significant step in integrating AI into entertainment, offering fans innovative ways to engage with beloved characters. Content creators and entertainment professionals should watch this development for insights into the future of AI in media production. This deal underscores the transformative potential of AI in storytelling and audience engagement.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/11/disney-signs-deal-with-openai-to-allow-sora-to-generate-ai-videos-featuring-its-characters/"
+        },
+        {
+            "date": "Dec 12 2025",
             "title": "Google Unveils Deep Research Tool Based on Gemini 3 Pro",
             "content": "Google has launched its most advanced AI research tool yet, based on the Gemini 3 Pro model, allowing developers to integrate it into their applications. This release enables enhanced capabilities in natural language processing and machine learning tasks, providing developers with a robust tool for creating more intelligent applications. The introduction of this tool comes on the same day as OpenAI&#x27;s release of GPT-5.2, highlighting the competitive landscape in AI advancements. This development is particularly significant for businesses looking to leverage AI for complex problem-solving and automation. Developers should explore integration possibilities to enhance their app functionalities with cutting-edge AI capabilities.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2025/12/11/google-launched-its-deepest-ai-research-agent-yet-on-the-same-day-openai-dropped-gpt-5-2/"
-        },
-        {
-            "date": "Dec 11 2025",
-            "title": "OpenAI&#x27;s GPT-5.2 Impresses with Enhanced Business Task Capabilities",
-            "content": "OpenAI has officially released GPT-5.2, a powerful update that excels in business tasks and workflow automation. Early testers report significant improvements in deep, autonomous reasoning and coding, positioning it as a substantial upgrade over previous models. This release is poised to impact industries heavily reliant on AI for operational efficiencies, such as finance and logistics. The model&#x27;s enhanced capabilities could lead to more streamlined processes and innovative applications across sectors. Enterprises should evaluate GPT-5.2 for potential integration into their systems to maximize productivity and innovation.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/gpt-5-2-first-impressions-a-powerful-update-especially-for-business-tasks"
-        },
-        {
-            "date": "Dec 11 2025",
-            "title": "1X&#x27;s Neo Robots Transition from Home to Industrial Use",
-            "content": "1X has struck a deal to deploy its Neo humanoid robots in factories and warehouses, marking a shift from their original design for home use. These robots are set to enhance automation in industrial settings, offering capabilities such as material handling and quality control. This transition reflects a growing trend of repurposing consumer-focused robotics for industrial applications, driven by increasing demand for automation in manufacturing and logistics. Companies in these sectors should consider the potential benefits of integrating humanoid robots into their operations to improve efficiency and reduce labor costs.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/11/1x-struck-a-deal-to-send-its-home-humanoids-to-factories-and-warehouses/"
-        },
-        {
-            "date": "Dec 11 2025",
-            "title": "Disney Accuses Google of Copyright Infringement via Gemini AI",
-            "content": "Disney has issued a cease-and-desist order against Google, alleging unauthorized distribution of its copyrighted characters through Google&#x27;s Gemini AI. The accusation centers on the AI&#x27;s ability to generate content that includes Disney&#x27;s intellectual property without permission. This legal move highlights the ongoing challenges of copyright infringement in AI-generated content, as companies navigate the complexities of intellectual property rights in the digital age. Organizations using AI for content creation should ensure compliance with copyright laws to avoid potential legal disputes.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/11/disney-hits-google-with-cease-and-desist-claiming-massive-copyright-infringement/"
-        },
-        {
-            "date": "Dec 11 2025",
-            "title": "OpenAI&#x27;s GPT-5.2 Release Marks New Era for Enterprise AI",
-            "content": "OpenAI has unveiled GPT-5.2, a new large language model that promises to revolutionize enterprise AI applications. This release comes at a critical time as OpenAI faces competition from Google&#x27;s Gemini 3, which recently topped performance benchmarks. GPT-5.2 offers enhanced reasoning and coding capabilities, making it particularly valuable for businesses seeking to automate complex processes and improve decision-making. Enterprises should consider the strategic advantages of adopting GPT-5.2 to stay competitive in an increasingly AI-driven market. Evaluating integration opportunities could yield significant gains in efficiency and innovation.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/openais-gpt-5-2-is-here-what-enterprises-need-to-know"
-        },
-        {
-            "date": "Dec 11 2025",
-            "title": "Google&#x27;s AI Try-On Feature Simplifies with Selfie Integration",
-            "content": "Google has updated its AI-powered virtual try-on feature, allowing users to generate a full-body digital version of themselves using just a selfie. This enhancement, powered by the Nano Banana tool, simplifies the process of virtually trying on clothes, making it more accessible and user-friendly. The update reflects a broader trend in AI-driven personalization in e-commerce, as retailers seek to enhance the online shopping experience. Businesses in the fashion and retail sectors should explore integrating such AI features to attract tech-savvy consumers and improve customer engagement.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/11/googles-ai-try-on-feature-for-clothes-now-works-with-just-a-selfie/"
-        },
-        {
-            "date": "Dec 11 2025",
-            "title": "OpenAI Launches GPT-5.2 Amidst Intense Competition with Google",
-            "content": "OpenAI has released GPT-5.2, a frontier model targeting developers and professionals, amid fierce competition with Google&#x27;s Gemini 3. The new model sets benchmarks in reasoning and coding, addressing the growing demand for sophisticated AI tools in various industries. This release follows a &#x27;code red&#x27; memo from Google, underscoring the high stakes in the AI race. As compute costs remain a challenge, OpenAI&#x27;s latest model aims to deliver enhanced performance while managing resource efficiency. Developers and enterprises should assess GPT-5.2&#x27;s potential to drive innovation and efficiency in their AI applications.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/11/openai-fires-back-at-google-with-gpt-5-2-after-code-red-memo/"
         }
     ],
     "articles": {},
