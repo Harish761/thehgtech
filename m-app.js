@@ -365,6 +365,9 @@
             const nextBtn = document.querySelector('.news-nav-btn.next');
             if (prevBtn) prevBtn.addEventListener('click', () => navigateNews('prev'));
             if (nextBtn) nextBtn.addEventListener('click', () => navigateNews('next'));
+
+            // Setup swipe gestures for news cards
+            initNewsSwipe();
         }, 700);
 
         // Keep hiding BMC periodically (it loads async)
@@ -372,6 +375,52 @@
         setTimeout(hideBMC, 1000);
         setTimeout(hideBMC, 2000);
         setTimeout(hideBMC, 5000);
+    }
+
+    // ========== SWIPE GESTURE HANDLING ==========
+    function initNewsSwipe() {
+        const container = document.getElementById('newsStackContainer');
+        if (!container) return;
+
+        let touchStartX = 0;
+        let touchStartY = 0;
+        let touchEndX = 0;
+        let touchEndY = 0;
+        const minSwipeDistance = 50; // Minimum swipe distance in pixels
+
+        container.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+            touchStartY = e.changedTouches[0].screenY;
+        }, { passive: true });
+
+        container.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            touchEndY = e.changedTouches[0].screenY;
+            handleSwipe();
+        }, { passive: true });
+
+        function handleSwipe() {
+            const diffX = touchStartX - touchEndX;
+            const diffY = touchStartY - touchEndY;
+
+            // Only register horizontal swipes (not vertical scrolling)
+            if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > minSwipeDistance) {
+                if (diffX > 0) {
+                    // Swiped left -> next card
+                    navigateNews('next');
+                } else {
+                    // Swiped right -> previous card
+                    navigateNews('prev');
+                }
+
+                // Hide swipe hint after first successful swipe
+                const hint = document.getElementById('newsSwipeHint');
+                if (hint) {
+                    hint.style.opacity = '0';
+                    setTimeout(() => hint.style.display = 'none', 300);
+                }
+            }
+        }
     }
 
     if (document.readyState === 'loading') {
