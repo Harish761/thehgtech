@@ -2541,6 +2541,121 @@
         }
 
 
+
+
+        /* ========== FAQ SECTION ========== */
+        .faq-section {
+            padding: 5rem 0;
+            background: linear-gradient(180deg, transparent 0%, rgba(255, 61, 61, 0.02) 50%, transparent 100%);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--glass);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            border-color: var(--accent);
+            box-shadow: 0 4px 20px rgba(255, 61, 61, 0.15);
+        }
+
+        .faq-question {
+            width: 100%;
+            padding: 1.25rem 1.5rem;
+            background: transparent;
+            border: none;
+            color: var(--text-primary);
+            font-size: 1.05rem;
+            font-weight: 600;
+            text-align: left;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .faq-question:hover {
+            color: var(--accent);
+        }
+
+        .faq-icon {
+            color: var(--accent);
+            transition: transform 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.3s ease;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+
+        .faq-answer p {
+            padding: 0 1.5rem 1.5rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        .faq-answer strong {
+            color: var(--accent);
+        }
+
+        /* Light Mode FAQ */
+        body.light-mode .faq-item {
+            background: rgba(0, 0, 0, 0.02);
+            border-color: rgba(0, 0, 0, 0.1);
+        }
+
+        body.light-mode .faq-item:hover {
+            background: rgba(255, 61, 61, 0.03);
+            border-color: var(--accent);
+        }
+
+        body.light-mode .faq-question {
+            color: var(--text-primary);
+        }
+
+        body.light-mode .faq-answer p {
+            color: #444;
+        }
+
+        /* Mobile FAQ */
+        @media (max-width: 768px) {
+            .faq-section {
+                padding: 3rem 0;
+            }
+
+            .faq-question {
+                padding: 1rem 1.25rem;
+                font-size: 0.95rem;
+            }
+
+            .faq-answer p {
+                padding: 0 1.25rem 1.25rem;
+                font-size: 0.9rem;
+            }
+        }
+
         /* Footer */
         .footer {
             background: var(--bg-secondary);
@@ -3572,7 +3687,100 @@
         </div>
     </main>
 
+    <!-- ========== FAQ SECTION (SEO + User Value) ========== -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section-header" style="justify-content: center; margin-bottom: 3rem;">
+                <h2 class="section-title" style="text-align: center;">
+                    <i class="fas fa-question-circle" style="color: var(--accent); margin-right: 0.5rem;"></i>
+                    Frequently Asked Questions
+                </h2>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <button class="faq-question" aria-expanded="false">
+                        <span itemprop="name">What is TheHGTech CVE Tracker?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <p itemprop="text">TheHGTech CVE Tracker is a <strong>free, real-time vulnerability tracking
+                                dashboard</strong> that monitors the top 20 critical CVEs from CISA KEV (Known Exploited
+                            Vulnerabilities catalog). Updated every 4 hours with severity scores, affected vendors, and
+                            direct links to official sources. <strong>No signup required.</strong></p>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <button class="faq-question" aria-expanded="false">
+                        <span itemprop="name">How often is threat intelligence data updated?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <p itemprop="text">Our threat intelligence feeds are updated <strong>every 2-4 hours</strong>
+                            from 9 trusted sources including OpenPhish, Malware Bazaar, CISA KEV, Spamhaus DROP, CINS
+                            Army, and Blocklist.de. We track over <strong>15,000 IOCs</strong> (Indicators of
+                            Compromise) with 7-day historical trends.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <button class="faq-question" aria-expanded="false">
+                        <span itemprop="name">Is TheHGTech free to use?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <p itemprop="text"><strong>Yes, TheHGTech is completely free.</strong> Access real-time threat
+                            intelligence, CVE tracking, ransomware monitoring, cybersecurity news, and AI insights
+                            without any signup or subscription. Export data to CSV/JSON for SIEM integration at no cost.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <button class="faq-question" aria-expanded="false">
+                        <span itemprop="name">What IOC types does TheHGTech track?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <p itemprop="text">We track <strong>6 IOC types</strong>: Malicious URLs, Phishing Domains,
+                            Malware Hashes (MD5, SHA256), Suspicious IP Addresses, CVE Vulnerabilities, and Ransomware
+                            Campaigns. Each indicator includes source attribution, first/last seen timestamps, and
+                            threat context.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <button class="faq-question" aria-expanded="false">
+                        <span itemprop="name">Can I export threat data for my SIEM?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <p itemprop="text">Yes! All threat intelligence data can be <strong>exported in CSV or JSON
+                                format</strong> for integration with SIEM platforms like Splunk, QRadar, Microsoft
+                            Sentinel, and Elastic SIEM. Export includes IOC value, type, source, timestamps, and threat
+                            classification.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <button class="faq-question" aria-expanded="false">
+                        <span itemprop="name">Who provides the threat intelligence data?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <p itemprop="text">We aggregate data from <strong>9 trusted security vendors</strong>:
+                            OpenPhish, URLhaus (Malware Bazaar), CISA KEV (US Government), Spamhaus DROP, CINS Army,
+                            Blocklist.de, Phishing Database, Ransomware.live, and our curated research. All sources are
+                            verified and regularly audited for accuracy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
+
     <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-grid">
@@ -4366,6 +4574,27 @@
         // ========== INITIALIZATION ==========
 
         document.addEventListener('DOMContentLoaded', function () {
+            // ========== FAQ ACCORDION ==========
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const faqItem = question.parentElement;
+                    const isActive = faqItem.classList.contains('active');
+
+                    // Close all other FAQs (optional - remove for multi-open)
+                    document.querySelectorAll('.faq-item.active').forEach(item => {
+                        if (item !== faqItem) {
+                            item.classList.remove('active');
+                            item.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                        }
+                    });
+
+                    // Toggle current FAQ
+                    faqItem.classList.toggle('active');
+                    question.setAttribute('aria-expanded', !isActive);
+                });
+            });
+
             // ========== STICKY HEADER AUTO-HIDE ==========
             let lastScrollTop = 0;
             const header = document.querySelector('.header');
