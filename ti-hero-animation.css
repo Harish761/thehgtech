@@ -1,666 +1,46 @@
 /* ============================================
-   THREAT INTELLIGENCE HERO - ULTIMATE ANIMATION
-   The most epic, professional, eye-catching hero
-   animation you've ever seen. Period.
+   THREAT INTELLIGENCE HERO - PREMIUM DESIGN v2.0
+   Clean, Modern, Readable - Works in Dark Mode
    ============================================ */
 
 :root {
-    --hero-gradient-1: #00d9ff;
-    --hero-gradient-2: #7b2cbf;
-    --hero-gradient-3: #ff006e;
-    --hero-gradient-4: #00f5ff;
-    --particle-cyan: rgba(0, 217, 255, 0.6);
-    --particle-purple: rgba(123, 44, 191, 0.6);
-    --particle-red: rgba(255, 0, 110, 0.6);
-    --scan-line: rgba(0, 217, 255, 0.1);
+    --hero-accent: #00d9ff;
+    --hero-accent-2: #ff006e;
+    --hero-accent-3: #7b2cbf;
+    --hero-dark-bg: #0a0a0f;
 }
 
 /* ============================================
-   HERO CONTAINER - 3D PERSPECTIVE SETUP
+   HERO CONTAINER - CLEAN DARK DESIGN
    ============================================ */
 .ti-hero {
     position: relative;
-    min-height: 70vh;
+    min-height: 75vh;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    perspective: 1000px;
-    background: linear-gradient(135deg, #0a0e27 0%, #1a1a2e 50%, #16213e 100%);
-    padding-top: 150px;
-    /* Increased to prevent header overlap */
-    padding-bottom: 60px;
+    background: linear-gradient(180deg, #000 0%, #0a0a12 50%, #0d0d18 100%);
+    padding: 120px 2rem 60px;
 }
 
-/* ============================================
-   ANIMATED BACKGROUND LAYERS
-   ============================================ */
-
-/* Layer 1: Animated Gradient Mesh */
+/* Subtle gradient orbs - very subtle, not distracting */
 .ti-hero::before {
     content: '';
     position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background:
-        radial-gradient(circle at 20% 50%, var(--hero-gradient-1) 0%, transparent 50%),
-        radial-gradient(circle at 80% 80%, var(--hero-gradient-2) 0%, transparent 50%),
-        radial-gradient(circle at 40% 20%, var(--hero-gradient-3) 0%, transparent 50%);
-    opacity: 0.15;
-    animation: gradientShift 20s ease-in-out infinite;
-    filter: blur(60px);
+        radial-gradient(ellipse at 20% 20%, rgba(0, 217, 255, 0.08) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 80%, rgba(123, 44, 191, 0.06) 0%, transparent 50%),
+        radial-gradient(ellipse at 50% 50%, rgba(255, 0, 110, 0.04) 0%, transparent 40%);
+    animation: subtleShift 20s ease-in-out infinite;
     z-index: 1;
 }
 
-@keyframes gradientShift {
-
-    0%,
-    100% {
-        transform: translate(0, 0) rotate(0deg);
-    }
-
-    33% {
-        transform: translate(-10%, 10%) rotate(120deg);
-    }
-
-    66% {
-        transform: translate(10%, -10%) rotate(240deg);
-    }
-}
-
-/* Layer 2: Matrix-Style Falling Code */
-.ti-hero::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image:
-        repeating-linear-gradient(0deg,
-            transparent,
-            transparent 2px,
-            var(--scan-line) 2px,
-            var(--scan-line) 4px);
-    opacity: 0.03;
-    animation: scanlines 8s linear infinite;
-    z-index: 1;
-    pointer-events: none;
-}
-
-@keyframes scanlines {
-    0% {
-        transform: translateY(0);
-    }
-
-    100% {
-        transform: translateY(50px);
-    }
-}
-
-/* ============================================
-   PARTICLE SYSTEM - FLOATING THREAT INDICATORS
-   ============================================ */
-.threat-particles {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: 2;
-    pointer-events: none;
-}
-
-.particle {
-    position: absolute;
-    width: 4px;
-    height: 4px;
-    background: var(--particle-cyan);
-    border-radius: 50%;
-    box-shadow: 0 0 10px currentColor;
-    animation: floatParticle 15s linear infinite;
-    opacity: 0;
-}
-
-/* Create 30 particles with random positions and delays */
-.particle:nth-child(1) {
-    left: 10%;
-    animation-delay: 0s;
-    animation-duration: 12s;
-}
-
-.particle:nth-child(2) {
-    left: 20%;
-    animation-delay: 1s;
-    animation-duration: 15s;
-    background: var(--particle-purple);
-}
-
-.particle:nth-child(3) {
-    left: 30%;
-    animation-delay: 2s;
-    animation-duration: 13s;
-}
-
-.particle:nth-child(4) {
-    left: 40%;
-    animation-delay: 0.5s;
-    animation-duration: 14s;
-    background: var(--particle-red);
-}
-
-.particle:nth-child(5) {
-    left: 50%;
-    animation-delay: 1.5s;
-    animation-duration: 16s;
-}
-
-.particle:nth-child(6) {
-    left: 60%;
-    animation-delay: 2.5s;
-    animation-duration: 11s;
-    background: var(--particle-cyan);
-}
-
-.particle:nth-child(7) {
-    left: 70%;
-    animation-delay: 0.8s;
-    animation-duration: 17s;
-}
-
-.particle:nth-child(8) {
-    left: 80%;
-    animation-delay: 1.8s;
-    animation-duration: 12s;
-    background: var(--particle-purple);
-}
-
-.particle:nth-child(9) {
-    left: 90%;
-    animation-delay: 2.8s;
-    animation-duration: 14s;
-}
-
-.particle:nth-child(10) {
-    left: 15%;
-    animation-delay: 3s;
-    animation-duration: 13s;
-    background: var(--particle-red);
-}
-
-.particle:nth-child(11) {
-    left: 25%;
-    animation-delay: 0.3s;
-    animation-duration: 15s;
-}
-
-.particle:nth-child(12) {
-    left: 35%;
-    animation-delay: 1.3s;
-    animation-duration: 16s;
-    background: var(--particle-cyan);
-}
-
-.particle:nth-child(13) {
-    left: 45%;
-    animation-delay: 2.3s;
-    animation-duration: 11s;
-}
-
-.particle:nth-child(14) {
-    left: 55%;
-    animation-delay: 0.6s;
-    animation-duration: 14s;
-    background: var(--particle-purple);
-}
-
-.particle:nth-child(15) {
-    left: 65%;
-    animation-delay: 1.6s;
-    animation-duration: 17s;
-}
-
-.particle:nth-child(16) {
-    left: 75%;
-    animation-delay: 2.6s;
-    animation-duration: 12s;
-    background: var(--particle-red);
-}
-
-.particle:nth-child(17) {
-    left: 85%;
-    animation-delay: 0.9s;
-    animation-duration: 13s;
-}
-
-.particle:nth-child(18) {
-    left: 95%;
-    animation-delay: 1.9s;
-    animation-duration: 15s;
-    background: var(--particle-cyan);
-}
-
-.particle:nth-child(19) {
-    left: 12%;
-    animation-delay: 2.9s;
-    animation-duration: 14s;
-}
-
-.particle:nth-child(20) {
-    left: 22%;
-    animation-delay: 0.2s;
-    animation-duration: 16s;
-    background: var(--particle-purple);
-}
-
-.particle:nth-child(21) {
-    left: 32%;
-    animation-delay: 1.2s;
-    animation-duration: 11s;
-}
-
-.particle:nth-child(22) {
-    left: 42%;
-    animation-delay: 2.2s;
-    animation-duration: 17s;
-    background: var(--particle-red);
-}
-
-.particle:nth-child(23) {
-    left: 52%;
-    animation-delay: 0.4s;
-    animation-duration: 12s;
-}
-
-.particle:nth-child(24) {
-    left: 62%;
-    animation-delay: 1.4s;
-    animation-duration: 13s;
-    background: var(--particle-cyan);
-}
-
-.particle:nth-child(25) {
-    left: 72%;
-    animation-delay: 2.4s;
-    animation-duration: 15s;
-}
-
-.particle:nth-child(26) {
-    left: 82%;
-    animation-delay: 0.7s;
-    animation-duration: 14s;
-    background: var(--particle-purple);
-}
-
-.particle:nth-child(27) {
-    left: 92%;
-    animation-delay: 1.7s;
-    animation-duration: 16s;
-}
-
-.particle:nth-child(28) {
-    left: 18%;
-    animation-delay: 2.7s;
-    animation-duration: 11s;
-    background: var(--particle-red);
-}
-
-.particle:nth-child(29) {
-    left: 38%;
-    animation-delay: 0.1s;
-    animation-duration: 17s;
-}
-
-.particle:nth-child(30) {
-    left: 58%;
-    animation-delay: 1.1s;
-    animation-duration: 12s;
-    background: var(--particle-cyan);
-}
-
-@keyframes floatParticle {
-    0% {
-        transform: translateY(100vh) translateX(0) scale(0);
-        opacity: 0;
-    }
-
-    10% {
-        opacity: 1;
-    }
-
-    90% {
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateY(-100px) translateX(100px) scale(1);
-        opacity: 0;
-    }
-}
-
-/* ============================================
-   RADAR SCANNER EFFECT
-   ============================================ */
-.radar-scanner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 600px;
-    height: 600px;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    pointer-events: none;
-}
-
-.radar-circle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 2px solid var(--hero-gradient-1);
-    border-radius: 50%;
-    opacity: 0;
-    animation: radarPulse 4s ease-out infinite;
-}
-
-.radar-circle:nth-child(1) {
-    animation-delay: 0s;
-}
-
-.radar-circle:nth-child(2) {
-    animation-delay: 1s;
-}
-
-.radar-circle:nth-child(3) {
-    animation-delay: 2s;
-}
-
-.radar-circle:nth-child(4) {
-    animation-delay: 3s;
-}
-
-@keyframes radarPulse {
-    0% {
-        width: 0;
-        height: 0;
-        opacity: 1;
-    }
-
-    100% {
-        width: 600px;
-        height: 600px;
-        opacity: 0;
-    }
-}
-
-.radar-sweep {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 300px;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, var(--hero-gradient-1), transparent);
-    transform-origin: left center;
-    animation: radarSweep 4s linear infinite;
-    filter: blur(1px);
-}
-
-@keyframes radarSweep {
-    0% {
-        transform: translate(-50%, -50%) rotate(0deg);
-        opacity: 0.8;
-    }
-
-    100% {
-        transform: translate(-50%, -50%) rotate(360deg);
-        opacity: 0.8;
-    }
-}
-
-/* ============================================
-   GLITCH EFFECT FOR TITLE
-   ============================================ */
-.hero-content {
-    position: relative;
-    z-index: 10;
-    text-align: center;
-    max-width: 900px;
-    padding: 2.5rem 3rem;
-    margin-top: 40px;
-    /* Extra spacing from header */
-    animation: fadeInUp 1s ease-out;
-    /* Dark blur background for text readability */
-    background: rgba(0, 0, 0, 0.6);
-    border-radius: 24px;
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.glitch-title {
-    position: relative;
-    font-size: 4.5rem;
-    font-weight: 900;
-    letter-spacing: -3px;
-    line-height: 1.1;
-    margin-bottom: 1.5rem;
-    background: linear-gradient(135deg, #00d9ff 0%, #7b2cbf 50%, #ff006e 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    animation: titleGlow 3s ease-in-out infinite;
-}
-
-@keyframes titleGlow {
-
-    0%,
-    100% {
-        filter: drop-shadow(0 0 20px rgba(0, 217, 255, 0.5));
-    }
-
-    50% {
-        filter: drop-shadow(0 0 40px rgba(123, 44, 191, 0.8));
-    }
-}
-
-/* Glitch effect on hover - DISABLED to prevent text duplication */
-.glitch-title::before,
-.glitch-title::after {
-    display: none;
-    /* Disabled - was causing overlapping text */
-}
-
-@keyframes glitch1 {
-
-    0%,
-    100% {
-        transform: translate(0);
-        opacity: 0;
-    }
-
-    33% {
-        transform: translate(-2px, 2px);
-        opacity: 0.8;
-    }
-
-    66% {
-        transform: translate(2px, -2px);
-        opacity: 0.8;
-    }
-}
-
-@keyframes glitch2 {
-
-    0%,
-    100% {
-        transform: translate(0);
-        opacity: 0;
-    }
-
-    33% {
-        transform: translate(2px, -2px);
-        opacity: 0.6;
-    }
-
-    66% {
-        transform: translate(-2px, 2px);
-        opacity: 0.6;
-    }
-}
-
-/* ============================================
-   TYPING ANIMATION FOR SUBTITLE
-   ============================================ */
-.typing-subtitle {
-    font-size: 1.3rem;
-    color: #fff;
-    margin-bottom: 2rem;
-    font-weight: 500;
-    min-height: 2em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
-}
-
-.typing-text {
-    border-right: 3px solid var(--hero-gradient-1);
-    padding-right: 5px;
-    animation: blink 1s step-end infinite;
-    color: #fff;
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
-}
-
-/* ============================================
-   LIVE STATS COUNTER - ANIMATED NUMBERS
-   ============================================ */
-.live-stats {
-    display: flex;
-    gap: 3rem;
-    justify-content: center;
-    margin-top: 2rem;
-    flex-wrap: wrap;
-}
-
-.stat-item {
-    text-align: center;
-    padding: 1.5rem 2rem;
-    background: rgba(0, 217, 255, 0.05);
-    border: 1px solid rgba(0, 217, 255, 0.2);
-    border-radius: 12px;
-    backdrop-filter: blur(10px);
-    transition: all 0.3s ease;
-    animation: statFadeIn 0.8s ease-out backwards;
-}
-
-.stat-item:nth-child(1) {
-    animation-delay: 0.2s;
-}
-
-.stat-item:nth-child(2) {
-    animation-delay: 0.4s;
-}
-
-.stat-item:nth-child(3) {
-    animation-delay: 0.6s;
-}
-
-@keyframes statFadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px) scale(0.9);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-}
-
-.stat-item:hover {
-    transform: translateY(-5px) scale(1.05);
-    border-color: var(--hero-gradient-1);
-    box-shadow: 0 10px 30px rgba(0, 217, 255, 0.3);
-}
-
-.stat-number {
-    font-size: 2.5rem;
-    font-weight: 800;
-    background: linear-gradient(135deg, var(--hero-gradient-1), var(--hero-gradient-4));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    display: block;
-    margin-bottom: 0.5rem;
-    font-variant-numeric: tabular-nums;
-}
-
-.stat-label {
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.6);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-/* ============================================
-   THREAT LEVEL INDICATOR - PULSING BADGE
-   ============================================ */
-.threat-level-badge {
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    padding: 1rem 1.5rem;
-    background: rgba(255, 0, 110, 0.1);
-    border: 2px solid var(--hero-gradient-3);
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-    animation: badgePulse 2s ease-in-out infinite;
-    z-index: 10;
-}
-
-@keyframes badgePulse {
-
-    0%,
-    100% {
-        box-shadow: 0 0 20px rgba(255, 0, 110, 0.5);
-    }
-
-    50% {
-        box-shadow: 0 0 40px rgba(255, 0, 110, 0.8);
-    }
-}
-
-.threat-dot {
-    width: 12px;
-    height: 12px;
-    background: var(--hero-gradient-3);
-    border-radius: 50%;
-    animation: dotPulse 1.5s ease-in-out infinite;
-}
-
-@keyframes dotPulse {
+@keyframes subtleShift {
 
     0%,
     100% {
@@ -669,136 +49,332 @@
     }
 
     50% {
-        transform: scale(1.5);
-        opacity: 0.7;
+        transform: scale(1.1);
+        opacity: 0.8;
     }
 }
 
-.threat-text {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-/* ============================================
-   DATA STREAM VISUALIZATION
-   ============================================ */
-.data-streams {
+/* Grid pattern overlay */
+.ti-hero::after {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 60px 60px;
     z-index: 1;
     pointer-events: none;
 }
 
-.data-line {
-    position: absolute;
-    width: 2px;
-    height: 100px;
-    background: linear-gradient(180deg, transparent, var(--hero-gradient-1), transparent);
-    opacity: 0.3;
-    animation: dataFlow 3s linear infinite;
+/* ============================================
+   HERO CONTENT - GLASSMORPHISM CARD
+   ============================================ */
+.hero-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    max-width: 850px;
+    padding: 3rem 4rem;
+    background: rgba(15, 15, 25, 0.7);
+    backdrop-filter: blur(30px);
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow:
+        0 25px 50px rgba(0, 0, 0, 0.5),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    animation: fadeInScale 0.8s ease-out;
 }
 
-.data-line:nth-child(1) {
-    left: 10%;
-    animation-delay: 0s;
-}
-
-.data-line:nth-child(2) {
-    left: 30%;
-    animation-delay: 0.5s;
-}
-
-.data-line:nth-child(3) {
-    left: 50%;
-    animation-delay: 1s;
-}
-
-.data-line:nth-child(4) {
-    left: 70%;
-    animation-delay: 1.5s;
-}
-
-.data-line:nth-child(5) {
-    left: 90%;
-    animation-delay: 2s;
-}
-
-@keyframes dataFlow {
-    0% {
-        transform: translateY(-100px);
+@keyframes fadeInScale {
+    from {
         opacity: 0;
+        transform: scale(0.95) translateY(20px);
     }
 
-    50% {
-        opacity: 0.3;
-    }
-
-    100% {
-        transform: translateY(100vh);
-        opacity: 0;
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
     }
 }
 
 /* ============================================
-   RESPONSIVE DESIGN
+   LIVE INDICATOR - COMPACT PILL
+   ============================================ */
+.threat-level-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: rgba(255, 0, 110, 0.15);
+    border: 1px solid rgba(255, 0, 110, 0.4);
+    border-radius: 50px;
+    margin-bottom: 1.5rem;
+    animation: badgeGlow 2s ease-in-out infinite;
+}
+
+@keyframes badgeGlow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 15px rgba(255, 0, 110, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 0 25px rgba(255, 0, 110, 0.5);
+    }
+}
+
+.threat-dot {
+    width: 8px;
+    height: 8px;
+    background: #ff006e;
+    border-radius: 50%;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.3);
+        opacity: 0.7;
+    }
+}
+
+.threat-text {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #ff006e;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* ============================================
+   TITLE - GRADIENT TEXT
+   ============================================ */
+.glitch-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: -2px;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #fff 0%, var(--hero-accent) 50%, var(--hero-accent-2) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ============================================
+   TYPING SUBTITLE - CLEAN WHITE
+   ============================================ */
+.typing-subtitle {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    min-height: 1.5em;
+}
+
+.typing-text {
+    color: rgba(255, 255, 255, 0.7);
+    border-right: 2px solid var(--hero-accent);
+    padding-right: 4px;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Description text */
+.ti-hero p:not(.typing-subtitle) {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.7;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+/* ============================================
+   STATS ROW - HORIZONTAL CARDS
+   ============================================ */
+.live-stats {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 1.25rem 2rem;
+    background: rgba(0, 217, 255, 0.05);
+    border: 1px solid rgba(0, 217, 255, 0.15);
+    border-radius: 16px;
+    min-width: 140px;
+    transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-4px);
+    border-color: var(--hero-accent);
+    box-shadow: 0 10px 30px rgba(0, 217, 255, 0.15);
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--hero-accent);
+    display: block;
+    margin-bottom: 4px;
+}
+
+.stat-label {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ============================================
+   HIDE COMPLEX ANIMATIONS - CLEAN LOOK
+   ============================================ */
+.threat-particles,
+.data-streams,
+.radar-scanner {
+    display: none;
+}
+
+/* ============================================
+   MOBILE RESPONSIVE
    ============================================ */
 @media (max-width: 768px) {
-    .glitch-title {
-        font-size: 2.5rem;
-        letter-spacing: -1px;
-    }
-
-    .typing-subtitle {
-        font-size: 0.9rem;
-    }
-
-    .live-stats {
-        gap: 1rem;
-    }
-
-    .stat-number {
-        font-size: 1.5rem;
-    }
-
-    .radar-scanner {
-        width: 300px;
-        height: 300px;
-    }
-
-    .radar-sweep {
-        width: 150px;
-    }
-
-    /* Compact LIVE MONITORING badge on mobile */
-    .threat-level-badge {
-        top: 65px;
-        right: 8px;
-        padding: 6px 12px;
-        font-size: 0.7rem;
-        gap: 6px;
-    }
-
-    .threat-dot {
-        width: 8px;
-        height: 8px;
-    }
-
-    .threat-text {
-        font-size: 0.65rem;
-        letter-spacing: 0.5px;
+    .ti-hero {
+        min-height: auto;
+        padding: 80px 1rem 40px;
     }
 
     .hero-content {
         padding: 1.5rem;
-        margin-top: 20px;
+        border-radius: 20px;
+        margin: 0 0.5rem;
     }
+
+    /* Compact LIVE badge */
+    .threat-level-badge {
+        padding: 6px 12px;
+        gap: 6px;
+        margin-bottom: 1rem;
+    }
+
+    .threat-dot {
+        width: 6px;
+        height: 6px;
+    }
+
+    .threat-text {
+        font-size: 0.6rem;
+        letter-spacing: 1px;
+    }
+
+    .glitch-title {
+        font-size: 1.75rem;
+        letter-spacing: -1px;
+    }
+
+    .typing-subtitle {
+        font-size: 0.85rem;
+        margin-bottom: 1rem;
+    }
+
+    .ti-hero p:not(.typing-subtitle) {
+        font-size: 0.85rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .live-stats {
+        gap: 8px;
+    }
+
+    .stat-item {
+        flex: 1;
+        min-width: unset;
+        padding: 1rem 0.75rem;
+        border-radius: 12px;
+    }
+
+    .stat-number {
+        font-size: 1.4rem;
+    }
+
+    .stat-label {
+        font-size: 0.55rem;
+    }
+}
+
+/* ============================================
+   LIGHT MODE SUPPORT
+   ============================================ */
+.light-mode .ti-hero {
+    background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.light-mode .ti-hero::before {
+    background:
+        radial-gradient(ellipse at 20% 20%, rgba(0, 217, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 80%, rgba(123, 44, 191, 0.08) 0%, transparent 50%);
+}
+
+.light-mode .ti-hero::after {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+}
+
+.light-mode .hero-content {
+    background: rgba(255, 255, 255, 0.8);
+    border-color: rgba(0, 0, 0, 0.08);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .glitch-title {
+    background: linear-gradient(135deg, #1a1a2e 0%, var(--hero-accent) 50%, var(--hero-accent-2) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.light-mode .typing-subtitle,
+.light-mode .typing-text {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.light-mode .ti-hero p:not(.typing-subtitle) {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.light-mode .stat-item {
+    background: rgba(0, 217, 255, 0.08);
+    border-color: rgba(0, 217, 255, 0.2);
+}
+
+.light-mode .stat-number {
+    color: #0077aa;
+}
+
+.light-mode .stat-label {
+    color: rgba(0, 0, 0, 0.5);
 }
 
 /* ============================================
@@ -811,118 +387,5 @@
     *::after {
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
     }
-}
-
-/* ============================================
-   LIGHT MODE SUPPORT - WCAG AA COMPLIANT
-   ============================================ */
-@media (prefers-color-scheme: light) {
-    .ti-hero {
-        background: linear-gradient(135deg, #f0f4f8 0%, #e2e8f0 50%, #cbd5e1 100%);
-    }
-
-    .ti-hero::before {
-        opacity: 0.08;
-    }
-
-    .glitch-title {
-        background: linear-gradient(135deg, #0369a1 0%, #581c87 50%, #9f1239 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-    }
-
-    .typing-subtitle {
-        color: #1e293b;
-    }
-
-    .typing-text {
-        color: #1e293b;
-        border-right-color: #0369a1;
-    }
-
-    .hero-content p {
-        color: #334155 !important;
-    }
-
-    .stat-item {
-        background: rgba(3, 105, 161, 0.1);
-        border: 1px solid rgba(3, 105, 161, 0.3);
-    }
-
-    .stat-number {
-        background: linear-gradient(135deg, #0369a1 0%, #0891b2 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-    }
-
-    .stat-label {
-        color: #475569;
-    }
-
-    .threat-level-badge {
-        background: rgba(159, 18, 57, 0.15);
-        border-color: #9f1239;
-    }
-
-    .threat-text {
-        color: #1e293b;
-    }
-}
-
-/* Force light mode when body has light-mode class */
-body.light-mode .ti-hero {
-    background: linear-gradient(135deg, #f0f4f8 0%, #e2e8f0 50%, #cbd5e1 100%);
-}
-
-body.light-mode .ti-hero::before {
-    opacity: 0.08;
-}
-
-body.light-mode .glitch-title {
-    background: linear-gradient(135deg, #0369a1 0%, #581c87 50%, #9f1239 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-body.light-mode .typing-subtitle {
-    color: #1e293b;
-}
-
-body.light-mode .typing-text {
-    color: #1e293b;
-    border-right-color: #0369a1;
-}
-
-body.light-mode .hero-content p {
-    color: #334155 !important;
-}
-
-body.light-mode .stat-item {
-    background: rgba(3, 105, 161, 0.1);
-    border: 1px solid rgba(3, 105, 161, 0.3);
-}
-
-body.light-mode .stat-number {
-    background: linear-gradient(135deg, #0369a1 0%, #0891b2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-body.light-mode .stat-label {
-    color: #475569;
-}
-
-body.light-mode .threat-level-badge {
-    background: rgba(159, 18, 57, 0.15);
-    border-color: #9f1239;
-}
-
-body.light-mode .threat-text {
-    color: #1e293b;
 }
