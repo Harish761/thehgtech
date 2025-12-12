@@ -217,8 +217,14 @@
 
 /* Mobile responsive */
 @media (max-width: 768px) {
+    .ransomware-modal-overlay {
+        padding: 1rem;
+        align-items: center;
+    }
+
     .ransomware-modal {
         padding: 1rem;
+        width: 100%;
     }
 
     .ransomware-modal-content {
@@ -269,7 +275,9 @@
 
 /* Light mode support for modal */
 body.light-mode .ransomware-modal {
-    background: rgba(0, 0, 0, 0.7);
+    background: #ffffff;
+    border-color: rgba(220, 38, 38, 0.2);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
 }
 
 body.light-mode .ransomware-modal-content {
@@ -277,6 +285,18 @@ body.light-mode .ransomware-modal-content {
     border-color: rgba(220, 38, 38, 0.3);
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
 }
+
+/* Fix inline white text from JS usually found in modal-actions */
+body.light-mode .ransomware-modal p[style*="color: rgba(255,255,255"],
+body.light-mode .modal-actions p[style] {
+    color: rgba(0, 0, 0, 0.7) !important;
+}
+
+body.light-mode .ransomware-modal h3,
+body.light-mode .ransomware-modal h2 {
+    color: #1a1a1a;
+}
+
 
 body.light-mode .ransomware-modal-header {
     background: rgba(220, 38, 38, 0.08);
@@ -342,4 +362,9 @@ body.light-mode .ransomware-modal-body::-webkit-scrollbar-thumb {
 
 body.light-mode .ransomware-modal-body::-webkit-scrollbar-thumb:hover {
     background: rgba(220, 38, 38, 0.5);
+}
+
+/* Fix link visibility in light mode */
+body.light-mode .victim-link[style] {
+    color: #0088cc !important;
 }
