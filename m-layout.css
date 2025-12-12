@@ -30,13 +30,20 @@
     }
 
     .m-header__logo {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        flex-shrink: 0;
+        text-decoration: none;
+    }
+
+    .m-header__logo span {
         font-size: 1.125rem;
         font-weight: 700;
         background: var(--m-accent-gradient);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        flex-shrink: 0;
     }
 
     .m-header__actions {
@@ -45,6 +52,28 @@
         align-items: center !important;
         gap: 12px !important;
         flex-shrink: 0;
+    }
+
+    /* Logo Theme Toggling */
+    .logo-dark {
+        display: block;
+    }
+
+    .logo-light {
+        display: none;
+    }
+
+    body.light-mode .logo-dark {
+        display: none;
+    }
+
+    body.light-mode .logo-light {
+        display: block;
+    }
+
+    .m-logo-img {
+        height: 28px;
+        width: auto;
     }
 
     /* Search Button - More Visible */
