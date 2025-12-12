@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- UPDATE THESE FOR EACH NEW ARTICLE -->
+    <title>ARTICLE TITLE | TheHGTech</title>
+    <meta name="description" content="ARTICLE DESCRIPTION">
+    <meta name="keywords" content="KEYWORDS">
+    <meta name="author" content="Harish G">
+    <link rel="canonical" href="https://thehgtech.com/article-SLUG.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/article-SLUG.html">
+    <meta property="og:title" content="ARTICLE TITLE">
+    <meta property="og:description" content="ARTICLE DESCRIPTION">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Mobile Navigation CSS -->
+    <link rel="stylesheet" href="m-core.css?v=4.2">
+    <link rel="stylesheet" href="m-layout.css?v=3.2">
+    <link rel="stylesheet" href="m-components.css?v=3.0">
+    <link rel="stylesheet" href="light-mode.css">
+    <link rel="stylesheet" href="interaction-bar.css">
+    <script src="m-app.js?v=4.3" defer></script>
+    <script src="interaction-bar.js" defer></script>
+
+    <style>
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #121212;
+            --text-primary: #fff;
+            --text-secondary: #aaa;
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF4C4C;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+
+        .article-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 80px 1.5rem 120px;
+        }
+
+        .article-header {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .article-header h1 {
+            font-size: 2rem;
+            background: linear-gradient(135deg, var(--accent-cyan), #ff006e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .article-meta {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .article-content h2 {
+            color: var(--accent-cyan);
+            margin: 2rem 0 1rem;
+            font-size: 1.5rem;
+        }
+
+        .article-content h3 {
+            color: var(--text-primary);
+            margin: 1.5rem 0 0.75rem;
+            font-size: 1.25rem;
+        }
+
+        .article-content p {
+            color: var(--text-secondary);
+            margin-bottom: 1.25rem;
+        }
+
+        .article-content ul,
+        .article-content ol {
+            color: var(--text-secondary);
+            margin-left: 1.5rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .article-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .article-content strong {
+            color: var(--text-primary);
+        }
+
+        .article-content a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+
+        .article-content a:hover {
+            text-decoration: underline;
+        }
+
+        .article-content blockquote {
+            border-left: 4px solid var(--accent-cyan);
+            padding-left: 1rem;
+            margin: 1.5rem 0;
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+
+        .article-content code {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Monaco', monospace;
+            font-size: 0.9em;
+        }
+
+        .article-content pre {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+
+        .article-content pre code {
+            background: none;
+            padding: 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .article-header h1 {
+                font-size: 1.5rem;
+            }
+
+            .article-content h2 {
+                font-size: 1.3rem;
+            }
+
+            .article-meta {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+
+        /* Light mode */
+        .light-mode body {
+            background: #fff;
+            color: #1a1a1a;
+        }
+
+        .light-mode .article-content p {
+            color: #555;
+        }
+
+        .light-mode .article-header h1 {
+            background: linear-gradient(135deg, #0077aa, #c41e3a);
+            -webkit-background-clip: text;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Mobile Header -->
+    <header class="m-header m-only">
+        <div class="m-header__logo">TheHGTech</div>
+        <div class="m-header__actions">
+            <!-- Premium Theme Toggle -->
+            <button class="m-theme-toggle" onclick="mToggleTheme()" aria-label="Toggle Theme">
+                <span class="m-theme-toggle__thumb"></span>
+                <span class="m-theme-toggle__stars">
+                    <span class="m-theme-toggle__star"></span>
+                    <span class="m-theme-toggle__star"></span>
+                </span>
+            </button>
+            <!-- Search Button -->
+            <button class="m-header__btn m-header__btn--search" data-action="search" aria-label="Search">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Bottom Navigation -->
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="cve-tracker.html" class="m-bottom-nav__item">
+            <i class="fas fa-bug"></i>
+            <span>CVE</span>
+        </a>
+        <a href="threat-intel.html" class="m-bottom-nav__item">
+            <i class="fas fa-shield-alt"></i>
+            <span>Intel</span>
+        </a>
+        <a href="articles.html" class="m-bottom-nav__item active">
+            <i class="fas fa-newspaper"></i>
+            <span>Articles</span>
+        </a>
+        <a href="guides/" class="m-bottom-nav__item">
+            <i class="fas fa-book"></i>
+            <span>Guides</span>
+        </a>
+    </nav>
+
+    <!-- Article Content -->
+    <div class="article-container">
+        <header class="article-header">
+            <h1>ARTICLE TITLE GOES HERE</h1>
+            <div class="article-meta">
+                <span><i class="fas fa-user"></i> Harish G</span>
+                <span><i class="fas fa-calendar"></i> December XX, 2025</span>
+                <span><i class="fas fa-clock"></i> X min read</span>
+            </div>
+        </header>
+
+        <div class="article-content">
+            <!-- YOUR ARTICLE CONTENT STARTS HERE -->
+
+            <p>Introduction paragraph goes here...</p>
+
+            <h2>First Section</h2>
+            <p>Section content...</p>
+
+            <h3>Subsection</h3>
+            <p>Subsection content...</p>
+
+            <ul>
+                <li>List item 1</li>
+                <li>List item 2</li>
+            </ul>
+
+            <h2>Second Section</h2>
+            <p>More content...</p>
+
+            <h2>Conclusion</h2>
+            <p>Conclusion paragraph...</p>
+
+            <!-- YOUR ARTICLE CONTENT ENDS HERE -->
+        </div>
+
+        <!-- Interaction Bar -->
+        <div class="interaction-bar">
+            <div class="like-section">
+                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                    <i class="far fa-heart"></i> <span id="likeText">Like this article</span>
+                </button>
+            </div>
+            <div class="action-buttons">
+                <div class="share-buttons">
+                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <button onclick="copyLink()" class="share-btn" title="Copy Link">
+                        <i class="fas fa-link"></i>
+                    </button>
+                </div>
+                <button onclick="printArticle()" class="print-btn" title="Print Article">
+                    <i class="fas fa-print"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

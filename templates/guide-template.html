@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- UPDATE THESE FOR EACH NEW GUIDE -->
+    <title>GUIDE TITLE | TheHGTech</title>
+    <meta name="description" content="GUIDE DESCRIPTION">
+    <meta name="keywords" content="KEYWORDS">
+    <meta name="author" content="TheHGTech">
+    <link rel="canonical" href="https://thehgtech.com/guides/SLUG.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/guides/SLUG.html">
+    <meta property="og:title" content="GUIDE TITLE">
+    <meta property="og:description" content="GUIDE DESCRIPTION">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Mobile Navigation CSS -->
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/interaction-bar.css">
+    <script src="/m-app.js?v=4.3" defer></script>
+    <script src="/interaction-bar.js" defer></script>
+
+    <style>
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF4C4C;
+            --accent-green: #00ff88;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 80px 2rem 120px;
+        }
+
+        /* Header */
+        .guide-header {
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+        }
+
+        .breadcrumb {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .breadcrumb a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-red));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .meta {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        /* Content */
+        .content {
+            color: var(--text-secondary);
+            line-height: 1.9;
+        }
+
+        .content h2 {
+            color: var(--accent-cyan);
+            font-size: 1.8rem;
+            margin: 2.5rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .content h3 {
+            color: var(--text-primary);
+            font-size: 1.4rem;
+            margin: 2rem 0 1rem;
+        }
+
+        .content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .content ul,
+        .content ol {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .content li {
+            margin-bottom: 0.8rem;
+        }
+
+        .content strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .content a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+
+        .content a:hover {
+            text-decoration: underline;
+        }
+
+        .content code {
+            background: var(--bg-card);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 0.9em;
+            color: var(--accent-green);
+        }
+
+        .content pre {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            overflow-x: auto;
+            margin-bottom: 1.5rem;
+        }
+
+        .content pre code {
+            background: none;
+            padding: 0;
+        }
+
+        .highlight-box {
+            background: rgba(0, 217, 255, 0.05);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .warning-box {
+            background: rgba(255, 76, 76, 0.05);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .success-box {
+            background: rgba(0, 255, 136, 0.05);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .content h2 {
+                font-size: 1.5rem;
+            }
+
+            .meta {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .container {
+                padding: 80px 1rem 120px;
+            }
+        }
+
+        /* Light mode */
+        .light-mode body {
+            background: #fff;
+        }
+
+        .light-mode .content p {
+            color: #555;
+        }
+
+        .light-mode h1 {
+            background: linear-gradient(135deg, #0077aa, #c41e3a);
+            -webkit-background-clip: text;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Mobile Header -->
+    <header class="m-header m-only">
+        <div class="m-header__logo">TheHGTech</div>
+        <div class="m-header__actions">
+            <!-- Premium Theme Toggle -->
+            <button class="m-theme-toggle" onclick="mToggleTheme()" aria-label="Toggle Theme">
+                <span class="m-theme-toggle__thumb"></span>
+                <span class="m-theme-toggle__stars">
+                    <span class="m-theme-toggle__star"></span>
+                    <span class="m-theme-toggle__star"></span>
+                </span>
+            </button>
+            <!-- Search Button -->
+            <button class="m-header__btn m-header__btn--search" data-action="search" aria-label="Search">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Bottom Navigation -->
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item">
+            <i class="fas fa-bug"></i>
+            <span>CVE</span>
+        </a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item">
+            <i class="fas fa-shield-alt"></i>
+            <span>Intel</span>
+        </a>
+        <a href="/articles.html" class="m-bottom-nav__item">
+            <i class="fas fa-newspaper"></i>
+            <span>Articles</span>
+        </a>
+        <a href="/guides/" class="m-bottom-nav__item active">
+            <i class="fas fa-book"></i>
+            <span>Guides</span>
+        </a>
+    </nav>
+
+    <div class="container">
+        <header class="guide-header">
+            <div class="breadcrumb">
+                <a href="/">Home</a> / <a href="/guides/">Guides</a> / GUIDE TITLE
+            </div>
+            <h1>GUIDE TITLE</h1>
+            <div class="meta">
+                <span>📖 XX min read</span>
+                <span>🎯 Beginner/Intermediate/Advanced</span>
+                <span>📅 Updated: Month 2025</span>
+            </div>
+        </header>
+
+        <div class="content">
+            <!-- YOUR GUIDE CONTENT STARTS HERE -->
+
+            <p>
+                Introduction paragraph describing what this guide covers and who it's for.
+            </p>
+
+            <h2>Prerequisites</h2>
+            <p>What the reader needs to know or have before starting.</p>
+
+            <h2>Section 1: Getting Started</h2>
+            <p>First major section content...</p>
+
+            <h3>Step 1: First Step</h3>
+            <p>Detailed instructions...</p>
+
+            <div class="highlight-box">
+                <strong>Tip:</strong> Important information or best practice.
+            </div>
+
+            <h3>Step 2: Second Step</h3>
+            <p>More instructions...</p>
+
+            <pre><code># Example code block
+command --option value</code></pre>
+
+            <h2>Section 2: Advanced Topics</h2>
+            <p>More advanced content...</p>
+
+            <div class="warning-box">
+                <strong>Warning:</strong> Something to be careful about.
+            </div>
+
+            <h2>Conclusion</h2>
+            <p>Summary and next steps...</p>
+
+            <div class="success-box">
+                <strong>Next Steps:</strong> Check out related guides:
+                <ul style="margin: 0.5rem 0 0 1.5rem;">
+                    <li><a href="/guides/related-guide.html">Related Guide Title</a></li>
+                </ul>
+            </div>
+
+            <!-- YOUR GUIDE CONTENT ENDS HERE -->
+        </div>
+
+        <!-- Interaction Bar -->
+        <div class="interaction-bar">
+            <div class="like-section">
+                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                    <i class="far fa-heart"></i> <span id="likeText">Like this guide</span>
+                </button>
+            </div>
+            <div class="action-buttons">
+                <div class="share-buttons">
+                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <button onclick="copyLink()" class="share-btn" title="Copy Link">
+                        <i class="fas fa-link"></i>
+                    </button>
+                </div>
+                <button onclick="printArticle()" class="print-btn" title="Print">
+                    <i class="fas fa-print"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
