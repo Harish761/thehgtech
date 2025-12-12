@@ -148,7 +148,11 @@
 }
 
 /* ========== MOBILE-ONLY VISIBILITY ========== */
-.m-only {
+/* Hide all mobile elements by default (on desktop) */
+.m-only,
+.m-header,
+.m-bottom-nav,
+.m-search-overlay {
     display: none !important;
 }
 
