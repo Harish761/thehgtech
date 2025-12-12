@@ -360,6 +360,25 @@
             --transition-slow: 500ms var(--ease-out);
         }
 
+        /* ========== RESPONSIVE UTILITY CLASSES ========== */
+        .mobile-only {
+            display: none !important;
+        }
+
+        .desktop-only {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-only {
+                display: block !important;
+            }
+
+            .desktop-only {
+                display: none !important;
+            }
+        }
+
         /* ========== SMOOTH SCROLLING ========== */
         html {
             scroll-behavior: smooth;
