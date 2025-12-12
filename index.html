@@ -2600,22 +2600,34 @@
         }
 
         .faq-answer {
-            display: grid;
-            grid-template-rows: 0fr;
-            overflow: hidden;
-            transition: grid-template-rows 0.35s ease-out;
+            display: none;
+            opacity: 0;
         }
 
         .faq-item.active .faq-answer {
-            grid-template-rows: 1fr;
+            display: block;
+            opacity: 1;
+            animation: faqFadeIn 0.25s ease-out;
+        }
+
+        @keyframes faqFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-8px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .faq-answer-inner {
-            overflow: hidden;
+            /* Wrapper for structure */
         }
 
         .faq-answer p {
-            padding: 0 1.5rem 1.5rem;
+            padding: 0.5rem 1.5rem 1.5rem;
             color: var(--text-secondary);
             line-height: 1.7;
             margin: 0;
