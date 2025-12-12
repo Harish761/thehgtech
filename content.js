@@ -4,88 +4,53 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Dec 11 2025",
-            "title": "Unpatched Gogs Zero-Day Breach Affects 700 Servers",
-            "content": "A zero-day vulnerability in Gogs, a widely used self-hosted Git service, has been exploited by attackers to gain remote code execution on over 700 Internet-facing servers. The flaw, which remains unpatched, allows malicious actors to overwrite files outside of the repository, leading to system compromise. This vulnerability affects all versions of Gogs that have not applied a security patch, posing a significant risk to organizations using this service. The breach underscores the importance of timely patch management, as unpatched systems remain vulnerable to exploitation. Organizations using Gogs should prioritize monitoring for unusual activity and apply any available updates as soon as they are released.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/unpatched-gogs-zero-day-rce-flaw-actively-exploited-in-attacks/"
-        },
-        {
-            "date": "Dec 11 2025",
-            "title": "Critical Vulnerability Found in Ivanti EPM Systems",
-            "content": "Ivanti has disclosed a critical security flaw in its Endpoint Management (EPM) systems, which allows unauthorized access to admin sessions without authentication. This vulnerability could be exploited by attackers to gain control over affected systems, posing a severe threat to enterprise security. Organizations using Ivanti EPM systems are advised to apply patches immediately to mitigate potential exploitation. The discovery of this flaw highlights the ongoing challenges in securing enterprise management platforms, which are often targeted due to their critical role in IT infrastructure. Prompt action is essential to protect sensitive data and maintain system integrity.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4104812/ivantis-epm-systeme-anfallig-fur-angriffe.html"
-        },
-        {
-            "date": "Dec 11 2025",
-            "title": "Pierce County Library Data Breach Exposes 340,000 Records",
-            "content": "A data breach at Pierce County Library has compromised the personal information of 340,000 patrons, employees, and their families. The breach, which occurred in April 2025, involved unauthorized access to sensitive data, including names, addresses, and potentially other personal identifiers. This incident highlights the vulnerabilities in public sector data management and the critical need for robust cybersecurity measures. Affected individuals should monitor their accounts for unusual activity and consider identity protection services. The library is working with cybersecurity experts to strengthen its defenses and prevent future breaches.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/pierce-county-library-data-breach-impacts-340000/"
-        },
-        {
-            "date": "Dec 11 2025",
-            "title": "React2Shell Attacks Deliver Diverse Malware Payloads",
-            "content": "Security researchers have identified a surge in React2Shell attacks delivering a wide array of malware, including cryptocurrency miners, Linux backdoors, and botnet malware. These attacks exploit vulnerabilities in web applications to execute malicious code, posing a significant threat to organizations using vulnerable systems. The diversity of malware payloads indicates a sophisticated threat landscape where attackers can tailor their campaigns to specific targets. Organizations are urged to conduct thorough security audits and apply necessary patches to mitigate these threats. The trend of exploiting web application vulnerabilities continues to be a major concern for cybersecurity professionals.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/wide-range-of-malware-delivered-in-react2shell-attacks/"
-        },
-        {
-            "date": "Dec 11 2025",
-            "title": "Gogs Zero-Day Exploited for Months Without Patch",
-            "content": "An unpatched zero-day vulnerability in Gogs has been actively exploited for months, allowing attackers to overwrite files and execute remote code. This vulnerability, affecting all unpatched versions of the self-hosted Git service, has led to the compromise of numerous systems. The prolonged exploitation period emphasizes the critical need for organizations to stay vigilant and apply security updates promptly. The ongoing attacks serve as a reminder of the persistent threats posed by unpatched software in the digital ecosystem. Organizations using Gogs should enhance monitoring and prepare for rapid response to any signs of breach.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/unpatched-gogs-zero-day-exploited-for-months/"
-        },
-        {
-            "date": "Dec 11 2025",
-            "title": "New Guidance Integrates AI into Critical Infrastructure Security",
-            "content": "New cybersecurity guidance has been released to integrate artificial intelligence (AI) into the protection of critical infrastructure, providing operators with a clearer roadmap for enhancing resilience. The guidance emphasizes the synergy between human expertise and machine learning, suggesting that a collaborative approach can significantly bolster security defenses. This development is part of a broader trend towards leveraging AI to address complex security challenges in critical sectors. Organizations are encouraged to explore AI-driven solutions to enhance their security posture while maintaining human oversight. The guidance marks a pivotal step in modernizing infrastructure protection strategies.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/ai-cybersecurity-guidance-critical-infrastructure-op-ed/"
-        },
-        {
-            "date": "Dec 11 2025",
-            "title": "Urgent Update: New Chrome Zero-Day Exploited in the Wild",
-            "content": "A new zero-day vulnerability in Google Chrome&#x27;s V8 JavaScript engine is being actively exploited, prompting urgent updates to close this security gap. The flaw involves a type-confusion issue that allows attackers to execute arbitrary code on vulnerable systems. This marks yet another zero-day incident for Chrome in 2025, underscoring the browser&#x27;s frequent targeting by threat actors. Users should update to the latest Chrome version immediately to protect against potential exploitation. The ongoing wave of zero-day vulnerabilities highlights the critical need for constant vigilance and prompt action in browser security management.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2025/12/another-chrome-zero-day-under-attack-update-now"
-        },
-        {
-            "date": "Dec 11 2025",
-            "title": "ISC Stormcast Highlights December Cyber Threat Landscape",
-            "content": "The SANS Internet Storm Center&#x27;s Stormcast podcast for December 11th, 2025, offers insights into the current cybersecurity threat landscape. The InfoCON remains at green, indicating a stable threat level, but ongoing vigilance is advised for network administrators and security teams. The podcast discusses recent vulnerabilities and exploits, emphasizing the need for timely patching and robust security practices. Security professionals are encouraged to stay informed through trusted sources like the Stormcast to anticipate and mitigate emerging threats. As cyber threats continue to evolve, maintaining awareness of the latest developments is crucial for effective defense.",
+            "date": "Dec 12 2025",
+            "title": "ISC Stormcast Highlights Low Cyber Threat Levels",
+            "content": "The SANS Internet Storm Center&#x27;s latest Stormcast podcast for December 12, 2025, reports a stable cyber threat environment with an InfoCON status of green. This indicates a low level of malicious cyber activity, allowing organizations to maintain standard security operations without heightened alert. The podcast serves as a regular update providing cybersecurity professionals with insights on current threats and vulnerabilities. Listeners are encouraged to stay informed through these updates to ensure they are prepared for any potential changes in threat levels. As always, maintaining robust security hygiene is recommended to safeguard against emerging threats.",
             "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32558"
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32560"
         },
         {
-            "date": "Dec 11 2025",
-            "title": "Fortinet Urges Immediate Software Update for FortiCloud SSO Vulnerability",
-            "content": "Fortinet administrators are advised to urgently update their software to address vulnerabilities in FortiCloud&#x27;s Single Sign-On (SSO) mechanism. The flaw affects several gateway products, putting networks at risk of unauthorized access and potential compromise. Users of Fortinet appliances are recommended to temporarily disable SSO until updates are applied to ensure network security. This issue highlights the critical importance of regular software updates and monitoring for security patches. Organizations using Fortinet products should prioritize this update to protect against potential breaches and maintain system integrity.",
+            "date": "Dec 12 2025",
+            "title": "OpenAI Strengthens Security to Prevent AI-Powered Cyberattacks",
+            "content": "OpenAI has enhanced its &#x27;defense in depth&#x27; security measures to prevent the misuse of its AI models in cyberattacks. The company anticipates that threat actors might exploit its advanced AI capabilities to develop zero-day remote exploits. OpenAI&#x27;s blog outlines the potential for these models to be used in sophisticated cyber threats, emphasizing the need for robust security protocols. Organizations using AI technologies should assess their security frameworks to mitigate risks associated with AI-driven attacks. This proactive approach by OpenAI highlights the growing concern over AI&#x27;s dual-use potential in cybersecurity.",
             "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4104499/fortinet-admins-urged-to-update-software-to-close-forticloud-sso-holes.html"
+            "sourceUrl": "https://www.csoonline.com/article/4105279/openai-expands-defense-in-depth-security-to-stop-hackers-using-its-ai-models-to-launch-cyberattacks.html"
         },
         {
-            "date": "Dec 11 2025",
-            "title": "UK Government Boosts Support for Cybersecurity Researchers",
-            "content": "The UK government is enhancing its support for computer security researchers as part of a broader strategy to combat cybercrime. British Security Minister Dan Jarvis announced a new approach focusing on the economic impact of security breaches and the importance of research in preventing such incidents. This initiative aims to strengthen collaboration between the government and cybersecurity experts to develop innovative solutions. By emphasizing the role of research, the government seeks to bolster national defenses against increasingly sophisticated cyber threats. Security professionals are encouraged to engage with government programs to contribute to this collective effort.",
+            "date": "Dec 12 2025",
+            "title": "ConsentFix: A New Threat in OAuth Phishing Attacks",
+            "content": "Researchers at Push Security have identified a new phishing tactic called ConsentFix, which targets Microsoft OAuth authentication tokens. This evolution of the ClickFix scam aims to bypass traditional phishing defenses by capturing tokens used for Microsoft logins. The tactic poses a significant risk to organizations relying on OAuth for authentication, potentially leading to unauthorized access to sensitive data. Security teams are advised to review their OAuth token management and implement additional security measures to protect against such phishing attacks. Staying vigilant against evolving phishing techniques is crucial for maintaining secure authentication processes.",
             "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4104382/security-researchers-given-new-boost.html"
+            "sourceUrl": "https://www.csoonline.com/article/4105230/meet-consentfix-a-new-twist-on-the-clickfix-phishing-attack.html"
         },
         {
             "date": "Dec 11 2025",
-            "title": "Unfixed .NET Proxy Behavior Opens Remote Code Execution Risks",
-            "content": "Researchers have identified a hidden behavior in .NET&#x27;s HTTP client proxy creation that could lead to remote code execution (RCE) vulnerabilities. This issue allows attackers to deploy malicious code via web shells and PowerShell scripts, affecting applications using .NET frameworks. Despite the potential risks, Microsoft has stated it will not issue a fix, prompting developers to seek alternative security measures. This discovery underscores the need for developers to review and secure their .NET applications against such vulnerabilities. Organizations should consider implementing additional security controls to mitigate the risk of exploitation.",
+            "title": "Brave Browser Tests AI-Driven Automation with Leo Assistant",
+            "content": "Brave has launched a trial of its new AI browsing feature, incorporating Leo, a privacy-focused AI assistant, to automate user tasks. This agentic AI mode is designed to enhance user experience by performing tasks such as data retrieval and form filling while maintaining privacy. Brave&#x27;s initiative reflects the growing trend of integrating AI into web browsers to improve functionality and user convenience. Users interested in testing this feature can participate in the trial phase, providing feedback on its performance and privacy implications. The development underscores the balance between innovation and privacy in AI applications.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/brave-browser-starts-testing-agentic-ai-mode-for-automated-tasks/"
+        },
+        {
+            "date": "Dec 11 2025",
+            "title": "Grey Market SIM Cards Fuel Cyber Manipulation Schemes",
+            "content": "A study from the University of Cambridge reveals that grey market SIM cards are being used extensively for online manipulation and fraud. These SIM cards, sourced from international markets, enable the creation of virtual bot armies that facilitate large-scale internet scams. The research highlights the need for stricter regulations on SIM card distribution to curb their misuse in cybercrime. Organizations should be aware of the potential threats posed by bot-driven manipulation and ensure their security measures are robust against such tactics. This finding points to the ongoing challenges in controlling digital fraud mechanisms.",
             "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4104460/hidden-net-http-proxy-behavior-can-open-rce-flaws-in-apps-a-security-issue-microsoft-wont-fix.html"
+            "sourceUrl": "https://www.csoonline.com/article/4104620/wie-im-netz-gezielt-manipuliert-wird.html"
         },
         {
             "date": "Dec 11 2025",
-            "title": "Smashing Security Podcast Explores AI&#x27;s Role in Stalking and Privacy Concerns",
-            "content": "The latest episode of the Smashing Security podcast delves into the unsettling use of AI in aiding stalkers, highlighting privacy and ethical concerns. The discussion covers a case involving Grok, an AI tool that facilitated doxxing and mapping stalking strategies. As AI technologies evolve, their misuse for malicious purposes raises significant challenges for privacy advocates and law enforcement. The podcast emphasizes the need for robust regulatory frameworks to address these issues. Listeners are encouraged to consider the implications of AI advancements on personal privacy and security.",
-            "source": "Graham Cluley",
-            "sourceUrl": "https://grahamcluley.com/smashing-security-podcast-447/"
+            "title": "Undocumented Flaw in CentreStack Exploited for Remote Code Execution",
+            "content": "Hackers have exploited an undocumented cryptographic vulnerability in Gladinet&#x27;s CentreStack and Triofox products, leading to remote code execution attacks. This flaw affects systems that rely on these products for secure remote file access and sharing, posing a significant security risk. Organizations using CentreStack or Triofox should prioritize patching and review their cryptographic implementations to prevent exploitation. This incident highlights the critical importance of regular security audits and updates in maintaining the integrity of secure file-sharing solutions. Staying informed on emerging vulnerabilities is essential for effective cybersecurity management.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-gladinet-centrestack-cryptographic-flaw-in-rce-attacks/"
+        },
+        {
+            "date": "Dec 11 2025",
+            "title": "Notepad++ Update Addresses Malicious Update File Vulnerability",
+            "content": "Notepad++ has released version 8.8.9 to fix a vulnerability in its WinGUp update tool that allowed attackers to push malicious executables. This security flaw was reported by researchers and users who experienced compromised update processes. The update ensures that the WinGUp tool retrieves legitimate update packages, safeguarding users from potential malware infections. Users are urged to update to the latest version to protect their systems from this vulnerability. This incident underscores the importance of secure update mechanisms in software distribution to prevent exploitation by malicious actors.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/notepad-plus-plus-fixes-flaw-that-let-attackers-push-malicious-update-files/"
         },
         {
             "date": "May 05 2026",
@@ -97,74 +62,53 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Dec 11 2025",
-            "title": "Opera Launches AI-Powered Neon Browser with $20 Monthly Subscription",
-            "content": "Opera has officially released its AI-enhanced browser, Neon, after a period of testing, now available to the public for a $19.90 monthly fee. Neon integrates advanced AI features designed to enhance user experience through personalized browsing and smart content recommendations. This move positions Opera as a competitor in the AI-driven browser market, potentially impacting users who prioritize cutting-edge technology in their web navigation tools. The subscription model suggests a shift towards monetizing AI capabilities, reflecting broader industry trends where companies are leveraging AI to create premium offerings. Users interested in AI-enhanced browsing should evaluate the cost against the benefits of Neon&#x27;s features.",
+            "date": "Dec 12 2025",
+            "title": "Google Unveils Deep Research Tool Based on Gemini 3 Pro",
+            "content": "Google has launched its most advanced AI research tool yet, based on the Gemini 3 Pro model, allowing developers to integrate it into their applications. This release enables enhanced capabilities in natural language processing and machine learning tasks, providing developers with a robust tool for creating more intelligent applications. The introduction of this tool comes on the same day as OpenAI&#x27;s release of GPT-5.2, highlighting the competitive landscape in AI advancements. This development is particularly significant for businesses looking to leverage AI for complex problem-solving and automation. Developers should explore integration possibilities to enhance their app functionalities with cutting-edge AI capabilities.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/11/opera-wants-you-to-pay-20-a-month-to-use-its-ai-powered-browser-neon/"
+            "sourceUrl": "https://techcrunch.com/2025/12/11/google-launched-its-deepest-ai-research-agent-yet-on-the-same-day-openai-dropped-gpt-5-2/"
         },
         {
             "date": "Dec 11 2025",
-            "title": "Spoor&#x27;s AI Software Gains Traction in Bird Monitoring for Wind Farms",
-            "content": "Spoor&#x27;s AI-driven computer vision software is gaining significant interest for its ability to monitor bird populations and migration patterns, particularly in wind farm operations. The software utilizes advanced algorithms to track avian movements, providing crucial data to minimize ecological impacts and enhance environmental compliance. This technology is critical for industries where bird strikes pose operational and environmental challenges, offering a solution that aligns with growing regulatory pressures and sustainability goals. The rising adoption of Spoor&#x27;s software signifies a broader trend towards AI applications in environmental monitoring, highlighting the potential for AI to contribute to ecological conservation efforts.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/11/interest-in-spoors-bird-monitoring-ai-software-is-soaring/"
-        },
-        {
-            "date": "Dec 11 2025",
-            "title": "Harness Secures $240M to Address AI&#x27;s Post-Deployment Challenges",
-            "content": "Harness has raised $240 million in a Series E funding round led by Goldman Sachs, achieving a valuation of $5.5 billion. The funding will accelerate the development of solutions aimed at bridging the &#x27;after-code&#x27; gap in AI deployment, focusing on post-production management and optimization. Investors such as IVP, Menlo Ventures, and Unusual Ventures participated, underscoring confidence in Harness&#x27;s approach to enhancing AI lifecycle management. This initiative addresses a critical need for organizations deploying AI models at scale, ensuring sustained performance and efficiency. Industry professionals should monitor Harness&#x27;s advancements as they may redefine AI operations and management standards.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/11/harness-hits-5-5b-valuation-with-240m-to-automate-ais-after-code-gap/"
-        },
-        {
-            "date": "Dec 11 2025",
-            "title": "NetSuite Introduces AI Transparency with New &#x27;Glass Box&#x27; Initiative",
-            "content": "At SuiteWorld 2025, Oracle NetSuite unveiled its latest product release, emphasizing transparency in AI systems through its &#x27;glass box&#x27; initiative. This development aims to build trust by making AI decision-making processes more understandable and accessible to users. With AI&#x27;s increasing role in business operations, the move reflects a growing demand for explainability and accountability in AI applications. NetSuite&#x27;s approach could set a precedent for other companies seeking to balance innovation with ethical AI practices. Professionals in the field should consider the implications of this shift towards transparent AI, particularly in sectors where regulatory scrutiny is intensifying.",
+            "title": "OpenAI&#x27;s GPT-5.2 Impresses with Enhanced Business Task Capabilities",
+            "content": "OpenAI has officially released GPT-5.2, a powerful update that excels in business tasks and workflow automation. Early testers report significant improvements in deep, autonomous reasoning and coding, positioning it as a substantial upgrade over previous models. This release is poised to impact industries heavily reliant on AI for operational efficiencies, such as finance and logistics. The model&#x27;s enhanced capabilities could lead to more streamlined processes and innovative applications across sectors. Enterprises should evaluate GPT-5.2 for potential integration into their systems to maximize productivity and innovation.",
             "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/creating-a-glass-box-how-netsuite-is-engineering-trust-into-ai"
+            "sourceUrl": "https://venturebeat.com/ai/gpt-5-2-first-impressions-a-powerful-update-especially-for-business-tasks"
         },
         {
             "date": "Dec 11 2025",
-            "title": "Codex Releases AI Models as Open Source to Foster Innovation",
-            "content": "Codex has announced the open-sourcing of its AI models, a move aimed at encouraging innovation and collaboration within the AI community. By making these models publicly available, Codex seeks to accelerate research and development in AI, enabling developers and researchers to build upon existing work. This decision aligns with a broader industry trend towards open-source initiatives, which are seen as pivotal in driving technological advancements and democratizing access to cutting-edge AI tools. Stakeholders in AI development should explore these models to leverage new capabilities and contribute to the evolving landscape of AI technology.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/hf-skills-training-codex"
-        },
-        {
-            "date": "Dec 10 2025",
-            "title": "ElevenLabs Valued at $6.6B as It Shifts Focus Beyond AI Voice Technology",
-            "content": "ElevenLabs, renowned for its realistic AI voice technology, has reached a valuation of $6.6 billion, doubling its worth in just nine months. The company, led by two Polish engineers, has expanded its focus beyond voice applications, seeking new growth areas in the AI sector. A recent $100 million tender offer reflects investor confidence in ElevenLabs&#x27; strategic pivot and potential for innovation. This shift highlights a broader industry trend where companies are diversifying their AI portfolios to capture emerging opportunities. Professionals should watch ElevenLabs&#x27; trajectory as it may influence future developments in AI applications beyond voice technology.",
+            "title": "1X&#x27;s Neo Robots Transition from Home to Industrial Use",
+            "content": "1X has struck a deal to deploy its Neo humanoid robots in factories and warehouses, marking a shift from their original design for home use. These robots are set to enhance automation in industrial settings, offering capabilities such as material handling and quality control. This transition reflects a growing trend of repurposing consumer-focused robotics for industrial applications, driven by increasing demand for automation in manufacturing and logistics. Companies in these sectors should consider the potential benefits of integrating humanoid robots into their operations to improve efficiency and reduce labor costs.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/podcast/elevenlabs-just-hit-a-6-6b-valuation-its-ceo-says-the-real-money-isnt-in-voice-anymore/"
-        },
-        {
-            "date": "Dec 10 2025",
-            "title": "ChatGPT Tops 2025 U.S. App Store Downloads",
-            "content": "ChatGPT has become the most downloaded app on the U.S. App Store for 2025, marking its first appearance at the top of the charts. This achievement underscores the growing demand for conversational AI tools, as users increasingly integrate AI-driven solutions into their daily routines. The app&#x27;s popularity reflects broader consumer trends towards AI-enhanced productivity and communication applications. As AI technology continues to evolve, developers and tech leaders should consider the potential for conversational AI to reshape user interactions and drive innovation in app development. This milestone highlights ChatGPT&#x27;s impact on the AI landscape and its influence on future app trends.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/10/chatgpt-is-apples-most-downloaded-app-of-2025-in-the-us/"
+            "sourceUrl": "https://techcrunch.com/2025/12/11/1x-struck-a-deal-to-send-its-home-humanoids-to-factories-and-warehouses/"
         },
         {
             "date": "Dec 11 2025",
-            "title": "Google Elevates Amin Vahdat to Lead AI Infrastructure Strategy",
-            "content": "Google has promoted Amin Vahdat to the new role of chief technologist for AI infrastructure, reporting directly to CEO Sundar Pichai. Vahdat, previously instrumental in advancing Google&#x27;s data center technologies, will now steer the company&#x27;s AI infrastructure strategy amid intensifying competition in AI development. This strategic move underscores Google&#x27;s commitment to bolstering its AI capabilities and infrastructure, an area critical for sustaining its leadership in the tech industry. The promotion reflects the growing importance of robust AI infrastructure in supporting advanced machine learning models and applications. Industry professionals should monitor Google&#x27;s forthcoming innovations in AI infrastructure under Vahdat&#x27;s leadership.",
+            "title": "Disney Accuses Google of Copyright Infringement via Gemini AI",
+            "content": "Disney has issued a cease-and-desist order against Google, alleging unauthorized distribution of its copyrighted characters through Google&#x27;s Gemini AI. The accusation centers on the AI&#x27;s ability to generate content that includes Disney&#x27;s intellectual property without permission. This legal move highlights the ongoing challenges of copyright infringement in AI-generated content, as companies navigate the complexities of intellectual property rights in the digital age. Organizations using AI for content creation should ensure compliance with copyright laws to avoid potential legal disputes.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/10/googles-answer-to-the-ai-arms-race-promote-the-guy-behind-its-data-center-tech/"
+            "sourceUrl": "https://techcrunch.com/2025/12/11/disney-hits-google-with-cease-and-desist-claiming-massive-copyright-infringement/"
         },
         {
             "date": "Dec 11 2025",
-            "title": "State Attorneys General Demand AI Giants Address &#x27;Delusional&#x27; Outputs",
-            "content": "State attorneys general have issued a letter urging major AI companies, including Microsoft, OpenAI, and Google, to implement safeguards against AI-generated outputs that could cause psychological harm. The letter highlights concerns over AI systems producing misleading or harmful content, often referred to as &#x27;hallucinations,&#x27; which can misinform users or cause distress. This call to action emphasizes the need for robust content validation and safety measures in AI systems, particularly those deployed in consumer-facing applications. Companies are expected to enhance their models&#x27; accuracy and reliability to prevent potential negative impacts on users. This development signals increased regulatory scrutiny on AI safety and ethical standards.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/10/state-attorneys-general-warn-microsoft-openai-google-and-other-ai-giants-to-fix-delusional-outputs/"
+            "title": "OpenAI&#x27;s GPT-5.2 Release Marks New Era for Enterprise AI",
+            "content": "OpenAI has unveiled GPT-5.2, a new large language model that promises to revolutionize enterprise AI applications. This release comes at a critical time as OpenAI faces competition from Google&#x27;s Gemini 3, which recently topped performance benchmarks. GPT-5.2 offers enhanced reasoning and coding capabilities, making it particularly valuable for businesses seeking to automate complex processes and improve decision-making. Enterprises should consider the strategic advantages of adopting GPT-5.2 to stay competitive in an increasingly AI-driven market. Evaluating integration opportunities could yield significant gains in efficiency and innovation.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/ai/openais-gpt-5-2-is-here-what-enterprises-need-to-know"
         },
         {
             "date": "Dec 11 2025",
-            "title": "Google DeepMind and UK AI Security Institute Strengthen AI Safety Partnership",
-            "content": "Google DeepMind has announced a deepened collaboration with the UK AI Security Institute (AISI) to advance research in AI safety and security. This partnership aims to address critical challenges in ensuring AI systems are safe, secure, and aligned with human values. By combining their expertise, the organizations seek to develop innovative solutions to mitigate risks associated with advanced AI technologies. This collaboration is part of a broader trend of increasing focus on AI safety, driven by the rapid proliferation of AI applications across various sectors. Stakeholders in the AI community should anticipate new frameworks and guidelines emerging from this partnership.",
-            "source": "Google DeepMind News",
-            "sourceUrl": "https://deepmind.google/blog/deepening-our-partnership-with-the-uk-ai-security-institute/"
+            "title": "Google&#x27;s AI Try-On Feature Simplifies with Selfie Integration",
+            "content": "Google has updated its AI-powered virtual try-on feature, allowing users to generate a full-body digital version of themselves using just a selfie. This enhancement, powered by the Nano Banana tool, simplifies the process of virtually trying on clothes, making it more accessible and user-friendly. The update reflects a broader trend in AI-driven personalization in e-commerce, as retailers seek to enhance the online shopping experience. Businesses in the fashion and retail sectors should explore integrating such AI features to attract tech-savvy consumers and improve customer engagement.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/11/googles-ai-try-on-feature-for-clothes-now-works-with-just-a-selfie/"
+        },
+        {
+            "date": "Dec 11 2025",
+            "title": "OpenAI Launches GPT-5.2 Amidst Intense Competition with Google",
+            "content": "OpenAI has released GPT-5.2, a frontier model targeting developers and professionals, amid fierce competition with Google&#x27;s Gemini 3. The new model sets benchmarks in reasoning and coding, addressing the growing demand for sophisticated AI tools in various industries. This release follows a &#x27;code red&#x27; memo from Google, underscoring the high stakes in the AI race. As compute costs remain a challenge, OpenAI&#x27;s latest model aims to deliver enhanced performance while managing resource efficiency. Developers and enterprises should assess GPT-5.2&#x27;s potential to drive innovation and efficiency in their AI applications.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/11/openai-fires-back-at-google-with-gpt-5-2-after-code-red-memo/"
         }
     ],
     "articles": {},
@@ -229,6 +173,17 @@ const websiteContent = {
     },
     "recentCVEs": [
         {
+            "cveId": "CVE-2025-58360",
+            "dateAdded": "Dec 11, 2025",
+            "vendor": "OSGeo GeoServer",
+            "description": "OSGeo GeoServer contains an improper restriction of XML external entity reference vulnerability that occurs when the application accepts XML input through a specific endpoint /geoserver/wms operation",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-58360",
+            "isZeroDay": false
+        },
+        {
             "cveId": "CVE-2025-6218",
             "dateAdded": "Dec 09, 2025",
             "vendor": "RARLAB WinRAR",
@@ -270,17 +225,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-66644",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-55182",
-            "dateAdded": "Dec 05, 2025",
-            "vendor": "Meta React Server Components",
-            "description": "Meta React Server Components contains a remote code execution vulnerability that could allow unauthenticated remote code execution by exploiting a flaw in how React decodes payloads sent to React Serv",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-55182",
             "isZeroDay": false
         }
     ],
