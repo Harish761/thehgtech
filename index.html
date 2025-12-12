@@ -2599,6 +2599,71 @@
             margin: 1.5rem 0 0.75rem;
         }
 
+        /* Mobile Modal Optimizations */
+        @media (max-width: 768px) {
+            .modal {
+                padding: 0.5rem !important;
+                align-items: flex-end;
+                /* Slide up feel or just bottom alignment? Center is fine too, but maybe less padding */
+            }
+
+            .modal-content {
+                padding: 1.25rem !important;
+                max-height: 85vh;
+                border-radius: 16px 16px 0 0;
+                /* Sheet-like on very small? Or just rounded */
+                border-radius: 12px;
+                width: 95% !important;
+            }
+
+            /* Override inline styles from content.js */
+            .modal-content h2[style] {
+                font-size: 1.75rem !important;
+                margin-bottom: 0.75rem !important;
+            }
+
+            .modal-content h3[style] {
+                font-size: 1.3rem !important;
+                margin-bottom: 0.75rem !important;
+            }
+
+            .modal-content h4[style] {
+                font-size: 1.1rem !important;
+            }
+
+            .modal-content p[style] {
+                font-size: 0.95rem !important;
+                line-height: 1.5 !important;
+                max-width: 100% !important;
+            }
+
+            /* Fix layout grids */
+            .modal-content div[style*="grid-template-columns"] {
+                grid-template-columns: 1fr !important;
+                gap: 1rem !important;
+            }
+
+            /* Reduce internal card padding */
+            .modal-content div[style*="padding: 2.5rem"],
+            .modal-content div[style*="padding: 2rem"] {
+                padding: 1.25rem !important;
+                margin-bottom: 1rem !important;
+            }
+
+            /* Compact header spacing */
+            .modal-content div[style*="margin-bottom: 2.5rem"] {
+                margin-bottom: 1.5rem !important;
+            }
+
+            .modal-close {
+                top: 0.75rem;
+                right: 0.75rem;
+                width: 32px;
+                height: 32px;
+                font-size: 1.5rem;
+            }
+        }
+
         .modal-content p {
             color: var(--text-secondary);
             margin-bottom: 1rem;
