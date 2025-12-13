@@ -1,4 +1,4 @@
-/* SEARCH MODAL STYLES */
+/* SEARCH MODAL STYLES - GPU Optimized */
 .search-modal-overlay {
     position: fixed;
     top: 0;
@@ -9,18 +9,23 @@
     backdrop-filter: blur(15px);
     z-index: 100000;
     opacity: 0;
-    visibility: hidden;
-    transition: all 0.2s ease;
+    pointer-events: none;
+    /* Use instead of visibility for GPU acceleration */
+    transition: opacity 0.2s ease;
+    /* Specific property instead of 'all' */
     display: flex;
     justify-content: center;
     align-items: flex-start;
     padding-top: 10vh;
+    will-change: opacity;
+    /* Hint for GPU layer */
 }
 
 .search-modal-overlay.active {
     opacity: 1;
-    visibility: visible;
+    pointer-events: auto;
 }
+
 
 .search-modal {
     width: 100%;
