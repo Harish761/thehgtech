@@ -156,8 +156,44 @@
                 padding-top: 56px;
                 padding-bottom: 80px
             }
+
+            /* CLS Prevention - Reserve space for dynamic content */
+            .news-stack-container {
+                min-height: 400px;
+            }
+
+            .mobile-news-card {
+                min-height: 350px;
+            }
+        }
+
+        /* CLS Prevention - Search Modal */
+        .search-modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 9999;
+        }
+
+        .search-modal {
+            min-height: 300px;
+            contain: layout style;
+        }
+
+        /* CLS Prevention - FAQ Section */
+        .faq-section {
+            min-height: 200px;
+        }
+
+        /* Content containment for better rendering */
+        .news-stack-container,
+        .faq-section {
+            contain: layout style;
         }
     </style>
+
 
     <!-- Google Fonts with display=swap (non-blocking) -->
     <link rel="preload" as="style"
@@ -4334,22 +4370,22 @@
         })();
     </script>
 
-    <!-- Load Content Files -->
-    <script src="content.js?v=20251130"></script>
-    <script src="article-loader.js?v=20251207-1255"></script>
-    <link rel="stylesheet" href="article-modal.css">
-    <script src="article-modal.js"></script>
-    <link rel="stylesheet" href="interaction-bar.css?v=20251207-0041">
-    <script src="interaction-bar.js?v=20251206"></script>
+    <!-- Load Content Files (deferred to prevent render blocking) -->
+    <script src="content.js?v=20251130" defer></script>
+    <script src="article-loader.js?v=20251207-1255" defer></script>
+    <link rel="stylesheet" href="article-modal.css" media="print" onload="this.media='all'">
+    <script src="article-modal.js" defer></script>
+    <link rel="stylesheet" href="interaction-bar.css?v=20251207-0041" media="print" onload="this.media='all'">
+    <script src="interaction-bar.js?v=20251206" defer></script>
 
-    <!-- Visual Enhancements -->
-    <link rel="stylesheet" href="visual-enhancements.css">
-    <script src="visual-enhancements.js"></script>
-    <script src="rotating-text.js?v=4"></script>
-    <script src="cve-display.js?v=20251125"></script>
-    <script>
+    <!-- Visual Enhancements (deferred) -->
+    <link rel="stylesheet" href="visual-enhancements.css" media="print" onload="this.media='all'">
+    <script src="visual-enhancements.js" defer></script>
+    <script src="rotating-text.js?v=4" defer></script>
+    <script src="cve-display.js?v=20251125" defer></script>
+    <script defer>
         // Load CVE stats for homepage preview
-        (async function () {
+        document.addEventListener('DOMContentLoaded', async function () {
             try {
                 const response = await fetch('cve-data.json?t=' + Date.now());
                 const data = await response.json();
@@ -4365,13 +4401,14 @@
             } catch (e) {
                 console.log('Could not load homepage CVE stats');
             }
-        })();
+        });
     </script>
-    <script src="archives-content.js?v=20251130"></script>
-    <script src="threat-intel.js?v=20251125"
+    <script src="archives-content.js?v=20251130" defer></script>
+    <script src="threat-intel.js?v=20251125" defer
         onerror="console.log('threat-intel.js not found - using fallback')"></script>
-    <script src="update-ioc-counts.js?v=20251125d"></script>
-    <script src="seo-enhancements.js?v=20251125"></script>
+    <script src="update-ioc-counts.js?v=20251125d" defer></script>
+    <script src="seo-enhancements.js?v=20251125" defer></script>
+
 
     <!-- Main JavaScript -->
     <script>
