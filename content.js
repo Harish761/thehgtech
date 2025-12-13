@@ -4,74 +4,53 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Dec 12 2025",
-            "title": "Attackers Exploit GeoServer Vulnerability Due to Inadequate Input Sanitization",
-            "content": "A critical vulnerability in GeoServer has been exploited due to insufficient sanitization of user inputs, allowing attackers to define external entities within XML requests. This flaw affects versions prior to 2.21.3, potentially enabling remote code execution or data theft. Organizations utilizing GeoServer, particularly in sectors like geospatial data services, are at risk. This vulnerability underscores the ongoing challenges in securing XML parsers against well-known attack vectors. Users are advised to upgrade to the latest version immediately and review their XML parsing configurations to prevent similar exploits.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/recent-geoserver-vulnerability-exploited-in-attacks/"
+            "date": "Dec 13 2025",
+            "title": "Microsoft Expands Bug Bounty Scope to All Vulnerabilities",
+            "content": "Microsoft has announced a strategic shift in its cybersecurity approach, introducing an &#x27;In Scope by Default&#x27; policy for its bug bounty program. This new policy means that any critical vulnerability found in Microsoft products or services is now eligible for bug bounties, regardless of the specific scope previously outlined. This change reflects the growing threat landscape where AI-enabled attackers exploit vulnerabilities indiscriminately. The policy aims to encourage researchers to uncover and report flaws, thereby enhancing security across Microsoft&#x27;s ecosystem. Security professionals should be aware of this expanded scope, as it may influence vulnerability research and reporting practices.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4105950/microsoft-flips-security-script-in-scope-by-default-makes-all-vulnerabilities-fair-game-for-bug-bounties.html"
+        },
+        {
+            "date": "Dec 13 2025",
+            "title": "Home Depot Exposes Internal Systems Due to Leaked Credentials",
+            "content": "Home Depot faced a significant security lapse after a private GitHub access token was mistakenly published by an employee, exposing internal systems for nearly a year. Security researcher Ben Zimmermann discovered the issue, noting that the token granted unauthorized access to sensitive systems when tested. This incident highlights the risks associated with poor credential management and accidental exposure in code repositories. Organizations should enforce strict access controls and regularly audit their code repositories to prevent similar breaches. This serves as a reminder of the critical need for comprehensive security hygiene practices.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4105940/leaked-home-depot-credential-exposed-internal-systems-for-a-year.html"
         },
         {
             "date": "Dec 12 2025",
-            "title": "XSS Tops MITRE&#x27;s 2025 List of Most Dangerous Software Vulnerabilities",
-            "content": "MITRE has released its 2025 list of the top 25 most dangerous software vulnerabilities, with Cross-Site Scripting (XSS) leading the list. Other critical vulnerabilities include SQL injection and Cross-Site Request Forgery (CSRF), as well as buffer overflow issues and improper access control. This list reflects the persistent challenges developers face in securing web applications against these common attack vectors. Security professionals should prioritize mitigating these vulnerabilities through robust input validation, regular code reviews, and employing automated security testing tools. Staying informed about these prevalent threats is crucial for maintaining secure software environments.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/mitre-releases-2025-list-of-top-25-most-dangerous-software-vulnerabilities/"
-        },
-        {
-            "date": "Dec 12 2025",
-            "title": "Unofficial Patches Released for Windows RasMan Zero-Day Vulnerability",
-            "content": "A new zero-day vulnerability in Windows&#x27; Remote Access Connection Manager (RasMan) service has been identified, allowing attackers to crash the service. Unofficial patches have been made available by 0patch to address this issue, affecting Windows 10 and Windows Server 2019 systems. This vulnerability could disrupt VPN connections and other remote access services, posing a significant risk to organizations relying on remote work infrastructure. While Microsoft has yet to release an official fix, users are encouraged to apply the unofficial patch and monitor for updates. This incident highlights the importance of timely patch management in maintaining system security.",
+            "title": "Apple Patches Zero-Day Vulnerabilities in Targeted Attacks",
+            "content": "Apple has issued emergency updates to address two zero-day vulnerabilities exploited in highly sophisticated attacks targeting specific individuals. While details of the flaws remain limited, such vulnerabilities typically allow attackers to execute arbitrary code or gain elevated privileges on affected devices. These patches underscore the importance of keeping devices updated to protect against evolving threats. Users are urged to install the latest updates immediately to mitigate potential risks. This incident highlights the ongoing challenges in securing widely used platforms against advanced persistent threats.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/new-windows-rasman-zero-day-flaw-gets-free-unofficial-patches/"
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/apple-fixes-two-zero-day-flaws-exploited-in-sophisticated-attacks/"
         },
         {
             "date": "Dec 12 2025",
-            "title": "Microsoft Expands Bug Bounty Program to Include Third-Party Code",
-            "content": "Microsoft has announced an expansion of its bug bounty program to include critical vulnerabilities in third-party and open-source code that impact Microsoft services. This move aims to enhance the security of its ecosystem by incentivizing researchers to identify and report flaws beyond Microsoft&#x27;s proprietary software. The program covers a wide range of vulnerabilities, offering rewards for issues that could compromise service integrity. Security researchers are encouraged to participate, as this initiative underscores Microsoft&#x27;s commitment to collaborative cybersecurity efforts. This expansion may lead to increased scrutiny and improved security across integrated software solutions.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/microsoft-bug-bounty-program-expanded-to-third-party-code/"
+            "title": "Strengthening CISO-COO Partnerships for Cyber Resilience",
+            "content": "As digital transformation continues to integrate cybersecurity into operational resilience, the partnership between Chief Information Security Officers (CISOs) and Chief Operating Officers (COOs) becomes increasingly vital. This collaboration ensures that cybersecurity measures align with operational goals, enhancing the organization&#x27;s overall resilience. The evolving threat landscape necessitates a unified approach to protect critical infrastructure and maintain business continuity. Organizations should encourage cross-departmental communication and strategic planning between CISOs and COOs to safeguard against disruptions. This shift reflects a broader trend of embedding cybersecurity into the core operational fabric of modern enterprises.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/the-ciso-coo-partnership-protecting-operational-excellence"
         },
         {
             "date": "Dec 12 2025",
-            "title": "Notepad++ Fixes Updater Vulnerability After Traffic Hijacking Reports",
-            "content": "Notepad++ has patched a critical vulnerability in its software updater, which failed to authenticate update files, potentially allowing attackers to hijack traffic. This flaw could have led to the installation of malicious updates, compromising user systems. The vulnerability affected all versions prior to 8.5.2, and users are strongly advised to update to the latest version immediately. This incident highlights the importance of secure update mechanisms in software distribution. Developers and IT administrators should ensure their applications employ robust update authentication processes to prevent similar security lapses.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/notepad-patches-updater-flaw-after-reports-of-traffic-hijacking/"
+            "title": "DOJ Files Lawsuit Over Fulton County Voter Data Handling",
+            "content": "The Department of Justice (DOJ) has initiated legal action against Fulton County, alleging mishandling of voter data from the 2020 election. This lawsuit comes amidst ongoing debates about election security and data integrity. Republican Secretary of State Brad Raffensperger has consistently defended the state&#x27;s election processes as secure and fair. The legal proceedings could have implications for how election data is managed and protected in the future. Election officials and cybersecurity teams should closely monitor developments, as they may influence regulatory requirements and best practices for safeguarding electoral data.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/doj-sues-fulton-county-georgia-over-2020-voter-data/"
         },
         {
             "date": "Dec 12 2025",
-            "title": "Evaluating VPN Privacy: Key Insights for Users",
-            "content": "An in-depth analysis of VPN services reveals significant privacy concerns that users should be aware of. Despite the common belief that VPNs ensure complete anonymity, many services may log user data or lack strong encryption protocols. These findings are based on years of testing across various VPNs, highlighting the need for users to scrutinize privacy policies and technical specifications. Privacy-focused individuals and organizations should select VPNs that offer no-log policies and robust encryption standards. Understanding the limitations and capabilities of VPN services is essential for maintaining online privacy and security.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/inside-malwarebytes/2025/12/how-private-is-your-vpn"
+            "title": "React2Shell Exploits Surge with Firewall Bypasses",
+            "content": "Exploitation of the CVE-2025-55182 vulnerability, known as React2Shell, is on the rise, with attackers deploying proof-of-concept exploits that bypass web application firewall (WAF) rules. This vulnerability affects numerous web applications, allowing remote code execution and potentially leading to data breaches. Security researchers are observing increased attack activity, highlighting the need for robust security measures. Organizations should patch affected systems promptly and review WAF configurations to mitigate these exploits. This situation underscores the importance of staying vigilant against emerging threats and ensuring that security defenses are up to date.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/threat-intelligence/react2shell-exploits-flood-internet-attacks-continue"
         },
         {
             "date": "Dec 12 2025",
-            "title": "Effective Strategies for Securing GenAI in Enterprise Browsers",
-            "content": "As generative AI (GenAI) becomes increasingly integrated into enterprise browsers, securing these applications is paramount. From web-based large language models (LLMs) to GenAI-powered extensions, enterprises are leveraging these tools for tasks like drafting emails and analyzing data. However, this widespread use raises security concerns, necessitating robust policy enforcement, isolation techniques, and data controls. Organizations should implement comprehensive security frameworks to manage GenAI usage and protect sensitive information. This trend reflects the growing need for tailored security solutions as AI technologies permeate enterprise environments.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/12/securing-genai-in-browser-policy.html"
-        },
-        {
-            "date": "Dec 12 2025",
-            "title": "ISC Stormcast Highlights Low Cyber Threat Levels",
-            "content": "The SANS Internet Storm Center&#x27;s latest Stormcast podcast for December 12, 2025, reports a stable cyber threat environment with an InfoCON status of green. This indicates a low level of malicious cyber activity, allowing organizations to maintain standard security operations without heightened alert. The podcast serves as a regular update providing cybersecurity professionals with insights on current threats and vulnerabilities. Listeners are encouraged to stay informed through these updates to ensure they are prepared for any potential changes in threat levels. As always, maintaining robust security hygiene is recommended to safeguard against emerging threats.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32560"
-        },
-        {
-            "date": "Dec 12 2025",
-            "title": "OpenAI Strengthens Security to Prevent AI-Powered Cyberattacks",
-            "content": "OpenAI has enhanced its &#x27;defense in depth&#x27; security measures to prevent the misuse of its AI models in cyberattacks. The company anticipates that threat actors might exploit its advanced AI capabilities to develop zero-day remote exploits. OpenAI&#x27;s blog outlines the potential for these models to be used in sophisticated cyber threats, emphasizing the need for robust security protocols. Organizations using AI technologies should assess their security frameworks to mitigate risks associated with AI-driven attacks. This proactive approach by OpenAI highlights the growing concern over AI&#x27;s dual-use potential in cybersecurity.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4105279/openai-expands-defense-in-depth-security-to-stop-hackers-using-its-ai-models-to-launch-cyberattacks.html"
-        },
-        {
-            "date": "Dec 12 2025",
-            "title": "ConsentFix: A New Threat in OAuth Phishing Attacks",
-            "content": "Researchers at Push Security have identified a new phishing tactic called ConsentFix, which targets Microsoft OAuth authentication tokens. This evolution of the ClickFix scam aims to bypass traditional phishing defenses by capturing tokens used for Microsoft logins. The tactic poses a significant risk to organizations relying on OAuth for authentication, potentially leading to unauthorized access to sensitive data. Security teams are advised to review their OAuth token management and implement additional security measures to protect against such phishing attacks. Staying vigilant against evolving phishing techniques is crucial for maintaining secure authentication processes.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4105230/meet-consentfix-a-new-twist-on-the-clickfix-phishing-attack.html"
+            "title": "Vibe Coding Raises Cybersecurity Concerns",
+            "content": "The concept of Vibe Coding, which promotes unmanaged coding practices, is gaining traction but also raising significant cybersecurity concerns. Constantine, a cybersecurity expert, warns that while the approach encourages innovation, it can lead to vulnerabilities and security risks if not properly managed. Unmanaged code can introduce flaws that are difficult to detect and exploit by attackers, potentially compromising systems. Developers and organizations should balance creativity with security, implementing code reviews and automated testing to detect and rectify vulnerabilities early. This highlights the ongoing tension between innovation and security in software development.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/application-security/vibe-coding-innovation-demands-vigilance"
         },
         {
             "date": "May 05 2026",
@@ -84,59 +63,52 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Dec 12 2025",
-            "title": "BBVA Integrates ChatGPT Enterprise into Banking Workflows",
-            "content": "BBVA is revolutionizing its banking operations by embedding ChatGPT Enterprise into its core workflows. This integration aims to enhance risk assessment and customer service, addressing the banking sector&#x27;s challenge of extracting value from generative AI. By directly incorporating OpenAI&#x27;s platform, BBVA seeks to streamline operations and improve efficiency. The move reflects a growing trend in the financial industry to leverage AI for operational excellence. Banking professionals should monitor developments in AI integration to stay competitive and ensure compliance with emerging standards.",
+            "title": "LinkedIn Algorithm Accused of Gender Bias Amid Complexity Concerns",
+            "content": "A group of women conducted an experiment suggesting LinkedIn&#x27;s new algorithm may exhibit gender bias. The findings have sparked debate among experts who caution that the situation is more complex than it appears. The algorithm&#x27;s behavior has raised concerns about potential systemic bias in professional networking platforms. LinkedIn&#x27;s algorithm, which influences job visibility and networking opportunities, plays a critical role for professionals worldwide. Experts urge further investigation into the algorithm&#x27;s design and impact to ensure fairness. Users are advised to stay informed about algorithmic updates and their potential implications. This incident underscores the ongoing challenge of addressing bias in AI systems.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/12/ok-whats-going-on-with-linkedins-algo/"
+        },
+        {
+            "date": "Dec 12 2025",
+            "title": "DeepMind&#x27;s Gemini Audio Models Enhance Voice Experience",
+            "content": "Google DeepMind has unveiled improved Gemini audio models designed to deliver more powerful voice experiences. These models aim to enhance the clarity and naturalness of synthesized speech, catering to applications in virtual assistants and accessibility tools. The Gemini models leverage advanced neural network architectures to achieve this improved performance. As voice interfaces become increasingly prevalent, these advancements could significantly impact user interaction with AI technologies. Developers and companies utilizing voice technologies should explore integrating these models to enhance user experience. The release highlights DeepMind&#x27;s ongoing efforts to push the boundaries of AI in audio processing.",
+            "source": "Google DeepMind News",
+            "sourceUrl": "https://deepmind.google/blog/improved-gemini-audio-models-for-powerful-voice-experiences/"
+        },
+        {
+            "date": "Dec 12 2025",
+            "title": "AI Executive Order by Trump Sparks Legal Uncertainty for Startups",
+            "content": "Former President Trump has signed an executive order intended to create a unified national regulatory framework for AI, superseding state laws. While the order aims to simplify compliance, critics argue it may lead to prolonged legal battles and uncertainty for startups. The executive order promises a &quot;one rulebook&quot; approach, but its implementation could face challenges as Congress debates comprehensive federal AI regulations. Startups operating in the AI space are advised to monitor developments closely and prepare for potential regulatory changes. This move highlights the complexities of balancing innovation with regulation in the rapidly evolving AI industry.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/12/trumps-ai-executive-order-promises-one-rulebook-startups-may-get-legal-limbo-instead/"
+        },
+        {
+            "date": "Dec 12 2025",
+            "title": "Google Translate Introduces Real-Time Headphone Translations",
+            "content": "Google Translate has launched a new feature allowing users to hear real-time translations through headphones. This development maintains the original speaker&#x27;s tone, emphasis, and cadence, making conversations easier to follow. The feature leverages advanced AI to provide seamless translation experiences, enhancing communication across language barriers. Users can now participate in multilingual conversations with greater clarity and understanding. This innovation is part of Google&#x27;s broader efforts to integrate AI into everyday tools, improving accessibility and connectivity. Users are encouraged to update their Google Translate app to access this feature and explore its capabilities.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/12/google-translate-now-lets-you-hear-real-time-translations-in-your-headphones/"
+        },
+        {
+            "date": "Dec 12 2025",
+            "title": "Autonomous Systems Set to Rise as Experimental AI Phase Concludes",
+            "content": "The year 2026 will mark a shift from experimental generative AI to the rise of autonomous systems capable of independent action. This transition emphasizes agency, energy efficiency, and the ability to navigate complex industrial environments. As focus moves away from model parameters, the development of AI technologies will prioritize practical applications and real-world impact. Industry professionals should prepare for this shift by exploring opportunities in autonomous system deployment. This evolution reflects the maturation of AI technologies and their increasing integration into various sectors. Stakeholders are advised to stay informed about advancements and potential implications for their industries.",
             "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/bbva-embeds-ai-into-banking-workflows-using-chatgpt-enterprise/"
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/ai-in-2026-experimental-ai-concludes-autonomous-systems-rise/"
         },
         {
             "date": "Dec 12 2025",
-            "title": "Microsoft&#x27;s Copilot Usage Reveals Late-Night Philosophy Trend",
-            "content": "Microsoft&#x27;s analysis of Copilot usage has uncovered a notable trend of late-night philosophical inquiries, echoing F. Scott Fitzgerald&#x27;s musings on existential contemplation. The data indicates a rise in religion and philosophy-related conversations during the early morning hours, suggesting users turn to AI for deep reflections. This trend underscores the role of AI in facilitating intellectual exploration and personal introspection. Developers and tech leaders should consider the implications of AI&#x27;s influence on cognitive and emotional processes. Understanding user behavior can guide the development of more intuitive AI systems.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/copilot-usage-analysis-2am-philosophy-questions/"
+            "title": "Comprehensive Overview of ChatGPT&#x27;s 2025 Product Updates",
+            "content": "TechCrunch has released a detailed timeline of ChatGPT&#x27;s product updates and releases throughout 2025. This comprehensive overview includes significant enhancements and new features introduced in the AI-powered chatbot. The timeline serves as a valuable resource for developers and businesses leveraging ChatGPT for customer interaction and support. As AI chatbots become integral to digital communication strategies, staying updated on their capabilities is crucial. Readers are encouraged to review the timeline to understand the evolution and potential applications of ChatGPT. This resource underscores the rapid pace of innovation in conversational AI technologies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/12/chatgpt-everything-to-know-about-the-ai-chatbot/"
         },
         {
             "date": "Dec 12 2025",
-            "title": "BBVA and OpenAI Partner for AI-Driven Banking Transformation",
-            "content": "BBVA is expanding its collaboration with OpenAI through a multi-year initiative to implement ChatGPT Enterprise across its 120,000 employees. This strategic partnership aims to develop AI solutions that enhance customer interactions and streamline banking operations. The initiative is part of a broader effort to create an AI-native banking experience, positioning BBVA at the forefront of digital transformation in finance. Financial institutions should assess the benefits of AI integration to improve service delivery and operational efficiency. This partnership exemplifies the potential of AI in reshaping industry landscapes.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/bbva-collaboration-expansion"
-        },
-        {
-            "date": "Dec 11 2025",
-            "title": "Google Launches &#x27;Disco&#x27; for Web App Creation from Browser Tabs",
-            "content": "Google Labs has introduced &#x27;Disco,&#x27; a new tool powered by its Gemini AI, designed to transform browser tabs into web applications. This innovative product aims to simplify the process of web app development, making it accessible to a broader audience. By leveraging AI capabilities, &#x27;Disco&#x27; automates the conversion of web content into functional applications, potentially revolutionizing web development workflows. Developers should explore this tool to enhance productivity and streamline app creation. The launch of &#x27;Disco&#x27; reflects Google&#x27;s commitment to advancing AI-driven solutions in the tech industry.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/11/google-debuts-disco-a-gemini-powered-tool-for-making-web-apps-from-browser-tabs/"
-        },
-        {
-            "date": "Dec 11 2025",
-            "title": "Runway Introduces Physics-Aware World Model for AI Applications",
-            "content": "Runway has released its first physics-aware world model, designed to simulate reality for training AI agents. This model supports applications in video, robotics, and avatars, providing a more accurate representation of physical environments. The inclusion of native audio in its latest video model enhances the realism and versatility of AI-generated content. This development is significant for professionals working with AI in creative and technical fields, offering new opportunities for innovation. Companies should consider integrating these models to improve the fidelity and effectiveness of their AI solutions.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/11/runway-releases-its-first-world-model-adds-native-audio-to-latest-video-model/"
-        },
-        {
-            "date": "Dec 11 2025",
-            "title": "Llama.cpp Introduces Advanced Model Management Features",
-            "content": "The latest update to llama.cpp introduces enhanced model management capabilities, streamlining the deployment and operation of AI models. These new features allow for more efficient handling of model versions and configurations, catering to the needs of developers and researchers. By improving model management, llama.cpp aims to facilitate the integration of AI into various applications, promoting scalability and flexibility. Professionals in AI development should explore these features to optimize their workflows and maintain competitive advantage. This update highlights the ongoing evolution of tools supporting AI innovation.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/ggml-org/model-management-in-llamacpp"
-        },
-        {
-            "date": "Dec 11 2025",
-            "title": "Disney Partners with OpenAI for AI-Generated Character Videos",
-            "content": "Disney has signed an agreement with OpenAI to utilize its Sora platform for generating AI-driven videos featuring iconic Disney characters. This collaboration will see Disney becoming a major customer of OpenAI, leveraging its APIs to create new products and experiences, including content for Disney+. The partnership represents a significant step in integrating AI into entertainment, offering fans innovative ways to engage with beloved characters. Content creators and entertainment professionals should watch this development for insights into the future of AI in media production. This deal underscores the transformative potential of AI in storytelling and audience engagement.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/11/disney-signs-deal-with-openai-to-allow-sora-to-generate-ai-videos-featuring-its-characters/"
-        },
-        {
-            "date": "Dec 12 2025",
-            "title": "Google Unveils Deep Research Tool Based on Gemini 3 Pro",
-            "content": "Google has launched its most advanced AI research tool yet, based on the Gemini 3 Pro model, allowing developers to integrate it into their applications. This release enables enhanced capabilities in natural language processing and machine learning tasks, providing developers with a robust tool for creating more intelligent applications. The introduction of this tool comes on the same day as OpenAI&#x27;s release of GPT-5.2, highlighting the competitive landscape in AI advancements. This development is particularly significant for businesses looking to leverage AI for complex problem-solving and automation. Developers should explore integration possibilities to enhance their app functionalities with cutting-edge AI capabilities.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/11/google-launched-its-deepest-ai-research-agent-yet-on-the-same-day-openai-dropped-gpt-5-2/"
+            "title": "Ai2&#x27;s Olmo 3.1 Models Enhance Reinforcement Learning Capabilities",
+            "content": "The Allen Institute for AI (Ai2) has announced the release of Olmo 3.1, an enhancement of its Olmo 3 model family, focusing on reinforcement learning (RL). Olmo 3.1 emphasizes efficiency, transparency, and control, setting new benchmarks in reasoning capabilities. The iterative development of these models aims to advance RL applications in various domains. Researchers and developers working with RL systems are encouraged to explore Olmo 3.1&#x27;s capabilities for improved performance. This release highlights Ai2&#x27;s commitment to pushing the boundaries of AI research and application. Stakeholders should assess the potential impact of these models on their projects and strategies.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/ai/ai2s-new-olmo-3-1-extends-reinforcement-learning-training-for-stronger"
         }
     ],
     "articles": {},
@@ -200,6 +172,28 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2018-4063",
+            "dateAdded": "Dec 12, 2025",
+            "vendor": "Sierra Wireless AirLink ALEOS",
+            "description": "Sierra Wireless AirLink ALEOS contains an unrestricted upload of file with dangerous type vulnerability. A specially crafted HTTP request can upload a file, resulting in executable code being uploaded",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-4063",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2025-14174",
+            "dateAdded": "Dec 12, 2025",
+            "vendor": "Google Chromium",
+            "description": "Google Chromium contains an out of bounds memory access vulnerability in ANGLE that could allow a remote attacker to perform out of bounds memory access via a crafted HTML page. This vulnerability cou",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-14174",
+            "isZeroDay": false
+        },
         {
             "cveId": "CVE-2025-58360",
             "dateAdded": "Dec 11, 2025",
