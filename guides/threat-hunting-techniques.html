@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Threat Hunting Techniques & Methodologies: Proactive Security Guide | TheHGTech</title>
+    <meta name="title" content="Threat Hunting Techniques & Methodologies: Proactive Security Guide | TheHGTech">
+    <meta name="description"
+        content="Master proactive threat hunting with hypothesis-driven approaches, MITRE ATT&CK mapping, behavioral analysis, and advanced detection techniques. Go beyond reactive alerting.">
+    <meta name="keywords"
+        content="threat hunting, MITRE ATT&CK, hypothesis hunting, behavioral analysis, proactive security, threat detection, cyber threat hunting, hunt team, IOC hunting, TTP hunting">
+    <meta name="author" content="TheHGTech">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thehgtech.com/guides/threat-hunting-techniques.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/guides/threat-hunting-techniques.html">
+    <meta property="og:title" content="Threat Hunting Techniques & Methodologies">
+    <meta property="og:description"
+        content="Master proactive threat hunting with hypothesis-driven approaches and MITRE ATT&CK mapping.">
+    <meta property="og:image" content="https://thehgtech.com/images/guides/threat-hunting-techniques.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://thehgtech.com/guides/threat-hunting-techniques.html">
+    <meta name="twitter:title" content="Threat Hunting Techniques & Methodologies">
+    <meta name="twitter:description" content="Master proactive threat hunting with hypothesis-driven approaches.">
+    <meta name="twitter:image" content="https://thehgtech.com/images/guides/threat-hunting-techniques.png">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Threat Hunting Techniques & Methodologies",
+      "description": "Proactive threat hunting using hypothesis-driven approaches and MITRE ATT&CK mapping",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://thehgtech.com/images/guides/threat-hunting-techniques.png",
+        "width": 1200,
+        "height": 630
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "TheHGTech",
+        "url": "https://thehgtech.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TheHGTech",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://thehgtech.com/logo.png",
+          "width": 600,
+          "height": 60
+        }
+      },
+      "datePublished": "2025-12-13",
+      "dateModified": "2025-12-13",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://thehgtech.com/guides/threat-hunting-techniques.html"
+      },
+      "keywords": "threat hunting, MITRE ATT&CK, hypothesis hunting, behavioral analysis",
+      "articleSection": "Security Guides",
+      "inLanguage": "en-US",
+      "wordCount": 5200
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF4C4C;
+            --accent-green: #00FF88;
+            --accent-orange: #FF9500;
+            --accent-purple: #A855F7;
+            --glow-cyan: rgba(0, 217, 255, 0.5);
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+            --glass: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .new-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent-purple), var(--accent-cyan));
+            color: #000;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            margin-left: 1rem;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.8;
+                transform: scale(1.05);
+            }
+        }
+
+        header {
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+        }
+
+        .breadcrumb {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .breadcrumb a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(to right, #fff, #a0a0a0);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+
+        .meta {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            flex-wrap: wrap;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .featured-image {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin: 2rem 0;
+            box-shadow: 0 10px 40px rgba(168, 85, 247, 0.2);
+            border: 1px solid var(--border);
+        }
+
+        .content h2 {
+            font-size: 1.8rem;
+            color: var(--accent-purple);
+            margin: 3rem 0 1.5rem;
+        }
+
+        .content h3 {
+            font-size: 1.4rem;
+            color: #fff;
+            margin: 2rem 0 1rem;
+        }
+
+        .content h4 {
+            font-size: 1.2rem;
+            color: var(--accent-cyan);
+            margin: 1.5rem 0 1rem;
+        }
+
+        .content p {
+            margin-bottom: 1.5rem;
+            color: #d0d0d0;
+        }
+
+        .content ul,
+        .content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+            color: #d0d0d0;
+        }
+
+        .content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .content strong {
+            color: #fff;
+        }
+
+        .content code {
+            background: var(--bg-card);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: var(--accent-cyan);
+            font-size: 0.9em;
+        }
+
+        .callout {
+            background: var(--bg-card);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .callout.info {
+            border-left-color: var(--accent-cyan);
+        }
+
+        .callout.success {
+            border-left-color: var(--accent-green);
+        }
+
+        .callout.warning {
+            border-left-color: var(--accent-orange);
+        }
+
+        .callout.purple {
+            border-left-color: var(--accent-purple);
+        }
+
+        pre {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+            color: #d0d0d0;
+        }
+
+        /* Hunt Hypothesis Box */
+        .hunt-box {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(0, 217, 255, 0.05));
+            border: 1px solid var(--accent-purple);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .hunt-box h5 {
+            color: var(--accent-purple);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* MITRE Tactic Box */
+        .mitre-tactic {
+            display: inline-block;
+            background: rgba(168, 85, 247, 0.15);
+            color: var(--accent-purple);
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .mitre-technique {
+            display: inline-block;
+            background: rgba(0, 217, 255, 0.15);
+            color: var(--accent-cyan);
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.3rem;
+        }
+
+        /* Process Diagram */
+        .process-flow {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            align-items: center;
+            margin: 1.5rem 0;
+        }
+
+        .process-step {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 0.8rem 1.2rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .process-step.active {
+            border-color: var(--accent-purple);
+            box-shadow: 0 0 15px rgba(168, 85, 247, 0.3);
+        }
+
+        .process-arrow {
+            color: var(--accent-purple);
+            font-size: 1.5rem;
+        }
+
+        footer {
+            margin-top: 5rem;
+            padding-top: 3rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.8rem 1.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-back:hover {
+            border-color: var(--accent-cyan);
+            color: var(--accent-cyan);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .content h2 {
+                font-size: 1.5rem;
+            }
+
+            .content h3 {
+                font-size: 1.2rem;
+            }
+
+            .process-flow {
+                flex-direction: column;
+            }
+
+            .process-arrow {
+                transform: rotate(90deg);
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <script src="/m-app.js?v=4.3" defer></script>
+</head>
+
+<body>
+    <!-- Mobile Header -->
+    <header class="m-header m-only">
+        <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark"
+                style="height: 28px; width: auto; margin: 0;">
+            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light"
+                style="height: 28px; width: auto; margin: 0;">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+        </div>
+        <div class="m-header__actions">
+            <button class="m-theme-toggle" onclick="mToggleTheme()" aria-label="Toggle Theme">
+                <span class="m-theme-toggle__thumb"></span>
+                <span class="m-theme-toggle__stars">
+                    <span class="m-theme-toggle__star"></span>
+                    <span class="m-theme-toggle__star"></span>
+                </span>
+            </button>
+            <button class="m-header__btn m-header__btn--search" data-action="search" aria-label="Search">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Bottom Navigation -->
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item"><i class="fas fa-bug"></i><span>CVE</span></a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item"><i class="fas fa-shield-alt"></i><span>Intel</span></a>
+        <a href="/articles.html" class="m-bottom-nav__item"><i class="fas fa-newspaper"></i><span>Articles</span></a>
+        <a href="/guides/" class="m-bottom-nav__item active"><i class="fas fa-book"></i><span>Guides</span></a>
+    </nav>
+
+    <div class="container">
+        <header>
+            <div class="breadcrumb">
+                <a href="/">Home</a> / <a href="/guides/">Guides</a> / Threat Hunting Techniques
+            </div>
+            <h1>Threat Hunting Techniques<span class="new-badge">NEW</span></h1>
+            <div class="meta">
+                <div class="meta-item">📅 Published: Dec 13, 2025</div>
+                <div class="meta-item">⏱️ 20 min read</div>
+                <div class="meta-item">🏷️ Advanced</div>
+            </div>
+        </header>
+
+        <article class="content">
+            <img src="/images/guides/threat-hunting-techniques.png"
+                alt="Threat Hunting Techniques & Methodologies Guide" class="featured-image">
+
+            <p>Threat hunting is where security gets proactive. Instead of waiting for alerts to fire, you go looking
+                for adversaries who have already bypassed your defenses. It's detective work—forming hypotheses,
+                collecting evidence, and finding what others missed.</p>
+
+            <p>I've spent countless hours hunting through logs, and here's what I've learned: <strong>the best threat
+                    hunters aren't the ones with the most tools—they're the ones who think like attackers and understand
+                    their environment deeply.</strong></p>
+
+            <div class="callout purple">
+                <strong>Threat Hunting vs. Incident Response:</strong> IR is reactive—you respond to alerts. Hunting is
+                proactive—you assume you're already compromised and search for evidence. The goal is to find threats
+                that evaded detection.
+            </div>
+
+            <h2>1. The Threat Hunting Process</h2>
+
+            <div class="process-flow">
+                <div class="process-step active">Hypothesis</div>
+                <span class="process-arrow">→</span>
+                <div class="process-step">Data Collection</div>
+                <span class="process-arrow">→</span>
+                <div class="process-step">Analysis</div>
+                <span class="process-arrow">→</span>
+                <div class="process-step">Findings</div>
+                <span class="process-arrow">→</span>
+                <div class="process-step">Improve Defenses</div>
+            </div>
+
+            <h3>Step 1: Form a Hypothesis</h3>
+            <p>Every hunt starts with a question. Good hypotheses are:</p>
+            <ul>
+                <li><strong>Specific:</strong> "Attackers may be using PowerShell to download malware" vs. "There might
+                    be malware"</li>
+                <li><strong>Testable:</strong> Can be proven or disproven with available data</li>
+                <li><strong>Threat-informed:</strong> Based on real TTPs used by adversaries</li>
+            </ul>
+
+            <h3>Step 2: Collect Data</h3>
+            <p>Identify what data sources you need:</p>
+            <ul>
+                <li><strong>Endpoint:</strong> Process execution, file creation, registry changes</li>
+                <li><strong>Network:</strong> DNS queries, HTTP requests, flow data</li>
+                <li><strong>Authentication:</strong> Logon events, privilege usage</li>
+                <li><strong>Application:</strong> Web server logs, database queries</li>
+            </ul>
+
+            <h3>Step 3: Analyze</h3>
+            <p>Look for patterns, anomalies, and indicators:</p>
+            <ul>
+                <li>Statistical outliers (rare processes, unusual connections)</li>
+                <li>Known-bad indicators (IOCs)</li>
+                <li>Behavioral patterns (sequences of actions)</li>
+            </ul>
+
+            <h3>Step 4: Document Findings</h3>
+            <p>Whether you find a threat or not, document:</p>
+            <ul>
+                <li>The hypothesis tested</li>
+                <li>Data sources and queries used</li>
+                <li>Findings (true positive, false positive, or inconclusive)</li>
+                <li>Recommendations</li>
+            </ul>
+
+            <h3>Step 5: Improve Defenses</h3>
+            <p>Turn hunts into detections:</p>
+            <ul>
+                <li>Create automated alerts for confirmed TTPs</li>
+                <li>Update detection rules</li>
+                <li>Identify visibility gaps</li>
+            </ul>
+
+            <h2>2. Hypothesis Generation Sources</h2>
+
+            <p>Where do good hunting hypotheses come from?</p>
+
+            <h3>Threat Intelligence</h3>
+            <ul>
+                <li><strong>APT reports:</strong> What TTPs are threat groups using?</li>
+                <li><strong>Industry-specific threats:</strong> What's targeting your sector?</li>
+                <li><strong>Emerging threats:</strong> New malware, zero-days, attack techniques</li>
+            </ul>
+
+            <h3>MITRE ATT&CK Framework</h3>
+            <p>The ATT&CK framework is a threat hunter's best friend. It catalogs adversary tactics and techniques with
+                real-world examples.</p>
+
+            <div class="callout info">
+                <strong>ATT&CK Tactics (Kill Chain):</strong>
+                <p style="margin-top: 0.5rem;">
+                    <span class="mitre-tactic">Reconnaissance</span>
+                    <span class="mitre-tactic">Initial Access</span>
+                    <span class="mitre-tactic">Execution</span>
+                    <span class="mitre-tactic">Persistence</span>
+                    <span class="mitre-tactic">Privilege Escalation</span>
+                    <span class="mitre-tactic">Defense Evasion</span>
+                    <span class="mitre-tactic">Credential Access</span>
+                    <span class="mitre-tactic">Discovery</span>
+                    <span class="mitre-tactic">Lateral Movement</span>
+                    <span class="mitre-tactic">Collection</span>
+                    <span class="mitre-tactic">Exfiltration</span>
+                    <span class="mitre-tactic">Command & Control</span>
+                </p>
+            </div>
+
+            <h3>Environmental Knowledge</h3>
+            <ul>
+                <li><strong>What's normal?</strong> Baseline behaviors for your environment</li>
+                <li><strong>What's valuable?</strong> Crown jewels that attract attackers</li>
+                <li><strong>What's vulnerable?</strong> Known weaknesses, unpatched systems</li>
+            </ul>
+
+            <h3>Past Incidents</h3>
+            <ul>
+                <li>How did past attackers get in?</li>
+                <li>What TTPs were used?</li>
+                <li>Are there similar patterns still occurring?</li>
+            </ul>
+
+            <h2>3. Hunting Techniques</h2>
+
+            <h3>Technique 1: IOC-Based Hunting</h3>
+            <p>Search for known-bad indicators—hashes, IPs, domains, file names.</p>
+
+            <div class="hunt-box">
+                <h5>🎯 Hunt: Known Malware Hashes</h5>
+                <p><strong>Hypothesis:</strong> Malware from recent APT campaign may be present in our environment.</p>
+                <pre><code># Splunk - Search for known bad hashes
+index=endpoint (hash=e99a18c428cb38d5f260853678922e03 OR 
+               hash=5d41402abc4b2a76b9719d911017c592)
+| table _time, host, file_path, hash, user</code></pre>
+            </div>
+
+            <p><strong>Pros:</strong> Quick, easy, specific<br>
+                <strong>Cons:</strong> Only finds known threats; attackers can change IOCs easily
+            </p>
+
+            <h3>Technique 2: TTP-Based Hunting</h3>
+            <p>Search for adversary behaviors rather than specific indicators.</p>
+
+            <div class="hunt-box">
+                <h5>🎯 Hunt: PowerShell Download Cradles</h5>
+                <p><strong>Hypothesis:</strong> Attackers may use PowerShell to download and execute payloads.</p>
+                <p><span class="mitre-tactic">Execution</span> <span class="mitre-technique">T1059.001 -
+                        PowerShell</span></p>
+                <pre><code># Splunk - PowerShell download patterns
+index=windows EventCode=4688 
+    New_Process_Name="*powershell.exe*"
+    (Process_Command_Line="*downloadstring*" OR
+     Process_Command_Line="*downloadfile*" OR
+     Process_Command_Line="*invoke-webrequest*" OR
+     Process_Command_Line="*wget*" OR
+     Process_Command_Line="*curl*" OR
+     Process_Command_Line="*Net.WebClient*")
+| table _time, host, user, Process_Command_Line</code></pre>
+            </div>
+
+            <div class="hunt-box">
+                <h5>🎯 Hunt: Suspicious Parent-Child Process Relationships</h5>
+                <p><strong>Hypothesis:</strong> Malicious documents spawn unexpected child processes.</p>
+                <p><span class="mitre-tactic">Execution</span> <span class="mitre-technique">T1204 - User
+                        Execution</span></p>
+                <pre><code># Splunk - Office spawning suspicious children
+index=windows EventCode=4688
+    (Parent_Process_Name="*WINWORD.EXE*" OR 
+     Parent_Process_Name="*EXCEL.EXE*" OR
+     Parent_Process_Name="*OUTLOOK.EXE*")
+    (New_Process_Name="*cmd.exe*" OR
+     New_Process_Name="*powershell.exe*" OR
+     New_Process_Name="*wscript.exe*" OR
+     New_Process_Name="*mshta.exe*" OR
+     New_Process_Name="*certutil.exe*")
+| table _time, host, user, Parent_Process_Name, New_Process_Name, Process_Command_Line</code></pre>
+            </div>
+
+            <h3>Technique 3: Anomaly-Based Hunting</h3>
+            <p>Find statistical outliers—things that deviate from normal.</p>
+
+            <div class="hunt-box">
+                <h5>🎯 Hunt: Rare Processes</h5>
+                <p><strong>Hypothesis:</strong> Malware often uses unusual process names that are rare in the
+                    environment.</p>
+                <pre><code># Splunk - Find rare processes
+index=windows EventCode=4688
+| stats count by New_Process_Name
+| where count < 5
+| sort count
+| head 50</code></pre>
+            </div>
+
+            <div class="hunt-box">
+                <h5>🎯 Hunt: Beaconing Detection</h5>
+                <p><strong>Hypothesis:</strong> C2 beacons maintain regular check-in intervals.</p>
+                <p><span class="mitre-tactic">Command & Control</span> <span class="mitre-technique">T1071 - Application
+                        Layer Protocol</span></p>
+                <pre><code># Splunk - Detect regular connection intervals
+index=network
+| bin _time span=1m
+| stats count by src_ip, dest_ip, _time
+| streamstats window=60 stdev(count) as std, avg(count) as avg by src_ip, dest_ip
+| where std < 2 AND count > 50  # Low variance = beaconing
+| table src_ip, dest_ip, std, avg, count</code></pre>
+            </div>
+
+            <h3>Technique 4: Baseline Comparison</h3>
+            <p>Compare current activity against known-good baselines.</p>
+
+            <div class="hunt-box">
+                <h5>🎯 Hunt: New Scheduled Tasks</h5>
+                <p><strong>Hypothesis:</strong> Attackers create scheduled tasks for persistence.</p>
+                <p><span class="mitre-tactic">Persistence</span> <span class="mitre-technique">T1053.005 - Scheduled
+                        Task</span></p>
+                <pre><code># Splunk - New scheduled tasks in last 24h
+index=windows EventCode=4698
+| where _time > relative_time(now(), "-24h")
+| table _time, host, TaskName, user, Task_Content
+| outputlookup known_scheduled_tasks.csv
+
+# Compare against baseline
+| inputlookup known_scheduled_tasks_baseline.csv
+| append [search index=windows EventCode=4698 | where _time > relative_time(now(), "-24h")]
+| stats count by TaskName
+| where count == 1  # New tasks only</code></pre>
+            </div>
+
+            <h2>4. High-Value Hunting Areas</h2>
+
+            <p>Focus your hunts where attackers commonly operate:</p>
+
+            <h3>Persistence Mechanisms</h3>
+            <ul>
+                <li><strong>Scheduled Tasks:</strong> <code>schtasks</code>, Task Scheduler events</li>
+                <li><strong>Services:</strong> New service creation (Event ID 7045)</li>
+                <li><strong>Registry Run Keys:</strong> <code>HKCU\Software\Microsoft\Windows\CurrentVersion\Run</code>
+                </li>
+                <li><strong>Startup Folder:</strong>
+                    <code>%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup</code></li>
+                <li><strong>WMI Subscriptions:</strong> Permanent event consumers</li>
+            </ul>
+
+            <h3>Credential Access</h3>
+            <ul>
+                <li><strong>LSASS Access:</strong> Processes reading LSASS memory (Mimikatz)</li>
+                <li><strong>SAM/NTDS.dit Access:</strong> Credential database theft</li>
+                <li><strong>Kerberoasting:</strong> Unusual TGS requests</li>
+                <li><strong>DCSync:</strong> Replication requests from non-DCs</li>
+            </ul>
+
+            <h3>Lateral Movement</h3>
+            <ul>
+                <li><strong>PsExec/SMB:</strong> Remote service creation, admin share access</li>
+                <li><strong>WMI:</strong> Remote process creation via WMI</li>
+                <li><strong>RDP:</strong> Unusual RDP connections, especially internal</li>
+                <li><strong>Pass-the-Hash:</strong> Type 3 logons with NTLMv2</li>
+            </ul>
+
+            <h3>Data Exfiltration</h3>
+            <ul>
+                <li><strong>Large Transfers:</strong> Unusual bytes out to external IPs</li>
+                <li><strong>Cloud Storage:</strong> Connections to Dropbox, Google Drive, Mega</li>
+                <li><strong>DNS Tunneling:</strong> Long DNS queries, high query volume</li>
+                <li><strong>Archive Creation:</strong> RAR, ZIP creation in sensitive directories</li>
+            </ul>
+
+            <h2>5. Building a Hunting Program</h2>
+
+            <h3>Prerequisites</h3>
+            <p>You can't hunt without visibility:</p>
+            <ul>
+                <li><strong>Log collection:</strong> Endpoint, network, authentication, application</li>
+                <li><strong>Centralized SIEM:</strong> Searchable, fast, with sufficient retention</li>
+                <li><strong>Baseline knowledge:</strong> What's normal in your environment</li>
+                <li><strong>Threat intelligence:</strong> Current threat landscape awareness</li>
+            </ul>
+
+            <h3>Hunt Cadence</h3>
+            <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
+                <tr style="background: var(--bg-card);">
+                    <th style="padding: 1rem; border: 1px solid var(--border); color: var(--accent-purple);">Frequency
+                    </th>
+                    <th style="padding: 1rem; border: 1px solid var(--border); color: var(--accent-purple);">Hunt Type
+                    </th>
+                    <th style="padding: 1rem; border: 1px solid var(--border); color: var(--accent-purple);">Example
+                    </th>
+                </tr>
+                <tr>
+                    <td style="padding: 1rem; border: 1px solid var(--border);">Daily</td>
+                    <td style="padding: 1rem; border: 1px solid var(--border);">IOC sweeps</td>
+                    <td style="padding: 1rem; border: 1px solid var(--border);">New threat intel indicators</td>
+                </tr>
+                <tr style="background: var(--bg-card);">
+                    <td style="padding: 1rem; border: 1px solid var(--border);">Weekly</td>
+                    <td style="padding: 1rem; border: 1px solid var(--border);">TTP-based hunts</td>
+                    <td style="padding: 1rem; border: 1px solid var(--border);">PowerShell abuse, persistence</td>
+                </tr>
+                <tr>
+                    <td style="padding: 1rem; border: 1px solid var(--border);">Monthly</td>
+                    <td style="padding: 1rem; border: 1px solid var(--border);">Deep dives</td>
+                    <td style="padding: 1rem; border: 1px solid var(--border);">Full ATT&CK technique coverage</td>
+                </tr>
+                <tr style="background: var(--bg-card);">
+                    <td style="padding: 1rem; border: 1px solid var(--border);">Ad-hoc</td>
+                    <td style="padding: 1rem; border: 1px solid var(--border);">Incident-driven</td>
+                    <td style="padding: 1rem; border: 1px solid var(--border);">Similar TTPs after a breach</td>
+                </tr>
+            </table>
+
+            <h3>Hunt Documentation Template</h3>
+            <pre><code>HUNT: [Descriptive Name]
+DATE: [Date]
+HUNTER: [Analyst Name]
+ATT&CK: [Tactic] / [Technique ID]
+
+HYPOTHESIS:
+[Clear statement of what you're looking for and why]
+
+DATA SOURCES:
+- [Source 1]
+- [Source 2]
+
+QUERIES:
+[Include all queries used]
+
+FINDINGS:
+☐ True Positive - [Description]
+☐ False Positive - [Why it triggered, tuning needed]
+☐ No Findings - [Hypothesis not supported]
+
+RECOMMENDATIONS:
+- [Detection rule improvements]
+- [Visibility gaps identified]
+- [Follow-up hunts needed]</code></pre>
+
+            <h2>6. Tools for Threat Hunting</h2>
+
+            <h3>Data Analysis</h3>
+            <ul>
+                <li><strong>Splunk:</strong> Enterprise SIEM with powerful SPL</li>
+                <li><strong>Elastic Stack:</strong> Open-source, flexible</li>
+                <li><strong>Microsoft Sentinel:</strong> Cloud-native, KQL queries</li>
+                <li><strong>Jupyter Notebooks:</strong> Python-based analysis</li>
+            </ul>
+
+            <h3>Hunting Platforms</h3>
+            <ul>
+                <li><strong>HELK:</strong> Hunting ELK with Kafka, great for labs</li>
+                <li><strong>Velociraptor:</strong> Endpoint visibility and hunting</li>
+                <li><strong>OSQuery:</strong> SQL-like queries against endpoints</li>
+                <li><strong>Chainsaw:</strong> Windows event log analysis</li>
+            </ul>
+
+            <h3>Threat Intelligence</h3>
+            <ul>
+                <li><strong>MITRE ATT&CK Navigator:</strong> Visualize technique coverage</li>
+                <li><strong>MISP:</strong> Threat intel platform</li>
+                <li><strong>OpenCTI:</strong> Open-source cyber threat intelligence</li>
+            </ul>
+
+            <h2>7. My Hunting Tips</h2>
+
+            <div class="callout success">
+                <strong>💡 Lessons from the Hunt:</strong>
+                <ol>
+                    <li><strong>Start with what you know.</strong> Hunt in areas where you have good visibility.</li>
+                    <li><strong>Document everything.</strong> Even "no findings" is valuable data.</li>
+                    <li><strong>Think like an attacker.</strong> What would you do after getting initial access?</li>
+                    <li><strong>Baseline first.</strong> You can't find anomalies without knowing normal.</li>
+                    <li><strong>Automate your wins.</strong> Turn successful hunts into detection rules.</li>
+                    <li><strong>Collaborate.</strong> Share findings with your team and the community.</li>
+                    <li><strong>Don't get discouraged.</strong> Most hunts find nothing—that's expected.</li>
+                    <li><strong>Stay curious.</strong> The best hunters never stop learning.</li>
+                </ol>
+            </div>
+
+            <h2>Conclusion</h2>
+
+            <p>Threat hunting is the evolution of security from passive defense to active pursuit. It requires deep
+                technical skills, creative thinking, and relentless curiosity. Not every hunt will find a threat, but
+                every hunt makes you a better defender.</p>
+
+            <p><strong>The adversaries are already in your network. Go find them.</strong></p>
+
+            <p><strong>Related Guides:</strong></p>
+            <ul>
+                <li><a href="/guides/soc-analyst-fundamentals.html">SOC Analyst Fundamentals</a></li>
+                <li><a href="/guides/siem-log-analysis.html">SIEM Log Analysis Guide</a></li>
+                <li><a href="/guides/insider-threat-detection.html">Insider Threat Detection Program</a></li>
+            </ul>
+
+            <a href="/guides/" class="btn-back">← Back to Guides</a>
+        </article>
+
+        <!-- Interaction Bar -->
+        <div class="interaction-bar">
+            <div class="like-section">
+                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                    <i class="far fa-heart"></i> <span id="likeText">Like this guide</span>
+                </button>
+            </div>
+            <div class="action-buttons">
+                <div class="share-buttons">
+                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"
+                        aria-label="Share on Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"
+                        aria-label="Share on LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link">
+                        <i class="fas fa-link"></i>
+                    </button>
+                </div>
+                <div class="button-separator"></div>
+                <button onclick="printArticle()" class="print-btn" title="Print Guide" aria-label="Print Guide">
+                    <i class="fas fa-print"></i>
+                </button>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025 TheHGTech. All rights reserved.</p>
+            <a href="/guides/" class="btn-back">← Back to All Guides</a>
+        </footer>
+    </div>
+
+    <script src="/interaction-bar.js?v=20251207-0041"></script>
+</body>
+
+</html>

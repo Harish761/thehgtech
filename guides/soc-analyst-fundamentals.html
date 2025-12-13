@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>SOC Analyst Fundamentals: Complete Security Operations Guide | TheHGTech</title>
+    <meta name="title" content="SOC Analyst Fundamentals: Complete Security Operations Guide | TheHGTech">
+    <meta name="description"
+        content="Essential skills for Security Operations Center analysts. Learn alert triage, investigation techniques, incident escalation, SIEM analysis, and threat detection fundamentals.">
+    <meta name="keywords"
+        content="SOC analyst, security operations center, SIEM, alert triage, incident response, security monitoring, threat detection, cybersecurity analyst, security analyst training, SOC tier 1">
+    <meta name="author" content="TheHGTech">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thehgtech.com/guides/soc-analyst-fundamentals.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/guides/soc-analyst-fundamentals.html">
+    <meta property="og:title" content="SOC Analyst Fundamentals: Complete Security Operations Guide">
+    <meta property="og:description"
+        content="Essential skills for Security Operations Center analysts. Master alert triage, SIEM analysis, and incident response.">
+    <meta property="og:image" content="https://thehgtech.com/images/guides/soc-analyst-fundamentals.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://thehgtech.com/guides/soc-analyst-fundamentals.html">
+    <meta name="twitter:title" content="SOC Analyst Fundamentals: Complete Security Operations Guide">
+    <meta name="twitter:description" content="Essential skills for Security Operations Center analysts.">
+    <meta name="twitter:image" content="https://thehgtech.com/images/guides/soc-analyst-fundamentals.png">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "SOC Analyst Fundamentals: Complete Security Operations Guide",
+      "description": "Essential skills for Security Operations Center analysts",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://thehgtech.com/images/guides/soc-analyst-fundamentals.png",
+        "width": 1200,
+        "height": 630
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "TheHGTech",
+        "url": "https://thehgtech.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TheHGTech",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://thehgtech.com/logo.png",
+          "width": 600,
+          "height": 60
+        }
+      },
+      "datePublished": "2025-12-13",
+      "dateModified": "2025-12-13",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://thehgtech.com/guides/soc-analyst-fundamentals.html"
+      },
+      "keywords": "SOC analyst, security operations, SIEM, alert triage, incident response",
+      "articleSection": "Security Guides",
+      "inLanguage": "en-US",
+      "wordCount": 4800
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF4C4C;
+            --accent-green: #00FF88;
+            --accent-orange: #FF9500;
+            --accent-purple: #A855F7;
+            --glow-cyan: rgba(0, 217, 255, 0.5);
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+            --glass: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .new-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-green));
+            color: #000;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            margin-left: 1rem;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.8;
+                transform: scale(1.05);
+            }
+        }
+
+        header {
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+        }
+
+        .breadcrumb {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .breadcrumb a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(to right, #fff, #a0a0a0);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+
+        .meta {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            flex-wrap: wrap;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .featured-image {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin: 2rem 0;
+            box-shadow: 0 10px 40px rgba(0, 255, 136, 0.2);
+            border: 1px solid var(--border);
+        }
+
+        .content h2 {
+            font-size: 1.8rem;
+            color: var(--accent-green);
+            margin: 3rem 0 1.5rem;
+        }
+
+        .content h3 {
+            font-size: 1.4rem;
+            color: #fff;
+            margin: 2rem 0 1rem;
+        }
+
+        .content h4 {
+            font-size: 1.2rem;
+            color: var(--accent-cyan);
+            margin: 1.5rem 0 1rem;
+        }
+
+        .content p {
+            margin-bottom: 1.5rem;
+            color: #d0d0d0;
+        }
+
+        .content ul,
+        .content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+            color: #d0d0d0;
+        }
+
+        .content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .content strong {
+            color: #fff;
+        }
+
+        .content code {
+            background: var(--bg-card);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: var(--accent-cyan);
+            font-size: 0.9em;
+        }
+
+        .callout {
+            background: var(--bg-card);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .callout.info {
+            border-left-color: var(--accent-cyan);
+        }
+
+        .callout.success {
+            border-left-color: var(--accent-green);
+        }
+
+        .callout.warning {
+            border-left-color: var(--accent-orange);
+        }
+
+        pre {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+            color: #d0d0d0;
+        }
+
+        /* Tier Boxes */
+        .tier-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .tier-box.tier1 {
+            border-left: 4px solid var(--accent-green);
+        }
+
+        .tier-box.tier2 {
+            border-left: 4px solid var(--accent-cyan);
+        }
+
+        .tier-box.tier3 {
+            border-left: 4px solid var(--accent-purple);
+        }
+
+        .tier-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .tier-badge {
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .tier1 .tier-badge {
+            background: rgba(0, 255, 136, 0.15);
+            color: var(--accent-green);
+        }
+
+        .tier2 .tier-badge {
+            background: rgba(0, 217, 255, 0.15);
+            color: var(--accent-cyan);
+        }
+
+        .tier3 .tier-badge {
+            background: rgba(168, 85, 247, 0.15);
+            color: var(--accent-purple);
+        }
+
+        /* Severity Table */
+        .severity-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+
+        .severity-table th,
+        .severity-table td {
+            padding: 1rem;
+            border: 1px solid var(--border);
+            text-align: left;
+        }
+
+        .severity-table th {
+            background: var(--bg-card);
+            color: var(--accent-cyan);
+        }
+
+        .severity-critical {
+            color: #FF4C4C;
+            font-weight: 600;
+        }
+
+        .severity-high {
+            color: #FF9500;
+            font-weight: 600;
+        }
+
+        .severity-medium {
+            color: #FFD60A;
+            font-weight: 600;
+        }
+
+        .severity-low {
+            color: #00D9FF;
+            font-weight: 600;
+        }
+
+        footer {
+            margin-top: 5rem;
+            padding-top: 3rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.8rem 1.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-back:hover {
+            border-color: var(--accent-cyan);
+            color: var(--accent-cyan);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .content h2 {
+                font-size: 1.5rem;
+            }
+
+            .content h3 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <script src="/m-app.js?v=4.3" defer></script>
+</head>
+
+<body>
+    <!-- Mobile Header -->
+    <header class="m-header m-only">
+        <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark"
+                style="height: 28px; width: auto; margin: 0;">
+            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light"
+                style="height: 28px; width: auto; margin: 0;">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+        </div>
+        <div class="m-header__actions">
+            <button class="m-theme-toggle" onclick="mToggleTheme()" aria-label="Toggle Theme">
+                <span class="m-theme-toggle__thumb"></span>
+                <span class="m-theme-toggle__stars">
+                    <span class="m-theme-toggle__star"></span>
+                    <span class="m-theme-toggle__star"></span>
+                </span>
+            </button>
+            <button class="m-header__btn m-header__btn--search" data-action="search" aria-label="Search">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Bottom Navigation -->
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item"><i class="fas fa-bug"></i><span>CVE</span></a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item"><i class="fas fa-shield-alt"></i><span>Intel</span></a>
+        <a href="/articles.html" class="m-bottom-nav__item"><i class="fas fa-newspaper"></i><span>Articles</span></a>
+        <a href="/guides/" class="m-bottom-nav__item active"><i class="fas fa-book"></i><span>Guides</span></a>
+    </nav>
+
+    <div class="container">
+        <header>
+            <div class="breadcrumb">
+                <a href="/">Home</a> / <a href="/guides/">Guides</a> / SOC Analyst Fundamentals
+            </div>
+            <h1>SOC Analyst Fundamentals<span class="new-badge">NEW</span></h1>
+            <div class="meta">
+                <div class="meta-item">📅 Published: Dec 13, 2025</div>
+                <div class="meta-item">⏱️ 25 min read</div>
+                <div class="meta-item">🏷️ Beginner</div>
+            </div>
+        </header>
+
+        <article class="content">
+            <img src="/images/guides/soc-analyst-fundamentals.png"
+                alt="SOC Analyst Fundamentals - Security Operations Center Guide" class="featured-image">
+
+            <p>I still remember my first day in a Security Operations Center. The wall of monitors, the cascade of
+                alerts, the constant pressure—it was overwhelming. But over time, I learned that being a good SOC
+                analyst isn't about memorizing every attack technique. It's about <strong>developing a methodology,
+                    understanding context, and knowing when to escalate</strong>.</p>
+
+            <p>This guide covers everything you need to know to succeed as a SOC analyst, whether you're just starting
+                out or looking to sharpen your skills. We'll cover the SOC structure, alert triage, investigation
+                techniques, and the soft skills that separate good analysts from great ones.</p>
+
+            <div class="callout info">
+                <strong>What is a SOC?</strong> A Security Operations Center is a centralized unit that monitors,
+                detects, investigates, and responds to cybersecurity incidents 24/7. Think of it as the nerve center of
+                an organization's security posture.
+            </div>
+
+            <h2>1. Understanding the SOC Structure</h2>
+
+            <p>Most SOCs are organized into tiers, each with different responsibilities and skill requirements:</p>
+
+            <div class="tier-box tier1">
+                <div class="tier-header">
+                    <span class="tier-badge">Tier 1</span>
+                    <strong>Alert Analyst / Monitor</strong>
+                </div>
+                <ul>
+                    <li><strong>Focus:</strong> Initial alert triage and monitoring</li>
+                    <li><strong>Skills:</strong> Basic networking, security fundamentals, SIEM navigation</li>
+                    <li><strong>Actions:</strong> First look at alerts, filter false positives, escalate true positives
+                    </li>
+                    <li><strong>Time per alert:</strong> 5-15 minutes</li>
+                </ul>
+            </div>
+
+            <div class="tier-box tier2">
+                <div class="tier-header">
+                    <span class="tier-badge">Tier 2</span>
+                    <strong>Incident Responder</strong>
+                </div>
+                <ul>
+                    <li><strong>Focus:</strong> Deep investigation and incident response</li>
+                    <li><strong>Skills:</strong> Advanced analysis, forensics basics, malware understanding</li>
+                    <li><strong>Actions:</strong> Investigate escalated alerts, contain threats, coordinate response
+                    </li>
+                    <li><strong>Time per incident:</strong> Hours to days</li>
+                </ul>
+            </div>
+
+            <div class="tier-box tier3">
+                <div class="tier-header">
+                    <span class="tier-badge">Tier 3</span>
+                    <strong>Threat Hunter / SME</strong>
+                </div>
+                <ul>
+                    <li><strong>Focus:</strong> Proactive hunting and advanced analysis</li>
+                    <li><strong>Skills:</strong> Threat intelligence, malware reverse engineering, advanced forensics
+                    </li>
+                    <li><strong>Actions:</strong> Hunt for unknown threats, develop detection rules, mentor junior
+                        analysts</li>
+                    <li><strong>Approach:</strong> Hypothesis-driven, research-oriented</li>
+                </ul>
+            </div>
+
+            <h2>2. The Alert Triage Process</h2>
+
+            <p>Alert triage is the core skill of a SOC analyst. You'll see hundreds of alerts per shift—your job is to
+                quickly determine which need investigation and which are noise.</p>
+
+            <h3>The 5-Minute Triage Framework</h3>
+            <p>When an alert hits your queue, answer these questions:</p>
+
+            <ol>
+                <li><strong>What triggered the alert?</strong> (Rule name, detection logic)</li>
+                <li><strong>What asset is involved?</strong> (Server, workstation, user account)</li>
+                <li><strong>Is this expected behavior?</strong> (Context from asset owner, time of day)</li>
+                <li><strong>What's the potential impact?</strong> (Critical server vs. test machine)</li>
+                <li><strong>Have we seen this before?</strong> (Historical alerts, known false positives)</li>
+            </ol>
+
+            <div class="callout success">
+                <strong>Pro Tip:</strong> Keep a "false positive journal." Document every confirmed false positive with
+                the context that helped you identify it. This becomes invaluable for training and tuning detection
+                rules.
+            </div>
+
+            <h3>Alert Severity Classification</h3>
+
+            <table class="severity-table">
+                <tr>
+                    <th>Severity</th>
+                    <th>Criteria</th>
+                    <th>Response Time</th>
+                    <th>Example</th>
+                </tr>
+                <tr>
+                    <td class="severity-critical">Critical</td>
+                    <td>Active breach, data exfiltration, critical system compromise</td>
+                    <td>Immediate (&lt;15 min)</td>
+                    <td>Ransomware encryption detected</td>
+                </tr>
+                <tr>
+                    <td class="severity-high">High</td>
+                    <td>Successful exploitation, malware execution, privilege escalation</td>
+                    <td>&lt;1 hour</td>
+                    <td>Cobalt Strike beacon detected</td>
+                </tr>
+                <tr>
+                    <td class="severity-medium">Medium</td>
+                    <td>Suspicious activity, policy violations, failed attacks</td>
+                    <td>&lt;4 hours</td>
+                    <td>Multiple failed login attempts</td>
+                </tr>
+                <tr>
+                    <td class="severity-low">Low</td>
+                    <td>Informational, configuration issues, minor policy violations</td>
+                    <td>&lt;24 hours</td>
+                    <td>Outdated software detected</td>
+                </tr>
+            </table>
+
+            <h2>3. Essential SIEM Skills</h2>
+
+            <p>Your SIEM (Security Information and Event Management) is your primary tool. Mastering it is
+                non-negotiable.</p>
+
+            <h3>Common SIEM Platforms</h3>
+            <ul>
+                <li><strong>Splunk:</strong> Industry leader, powerful SPL query language</li>
+                <li><strong>Microsoft Sentinel:</strong> Cloud-native, great for Azure environments</li>
+                <li><strong>Elastic Security:</strong> Open-source friendly, flexible</li>
+                <li><strong>IBM QRadar:</strong> Enterprise-focused, strong out-of-box detection</li>
+                <li><strong>CrowdStrike Falcon LogScale:</strong> High-performance, streaming architecture</li>
+            </ul>
+
+            <h3>Query Examples (Splunk SPL)</h3>
+
+            <pre><code># Find failed login attempts for a user
+index=windows EventCode=4625 
+| stats count by Account_Name, Source_Network_Address 
+| where count > 10
+
+# Detect PowerShell encoded commands
+index=windows EventCode=4688 New_Process_Name="*powershell.exe*" 
+| search Process_Command_Line="*-enc*" OR Process_Command_Line="*-encoded*"
+
+# Identify network connections to known bad IPs
+index=network dest_ip IN (192.168.1.100, 10.0.0.50) 
+| table _time, src_ip, dest_ip, dest_port, bytes_out
+
+# Hunt for lateral movement (PsExec)
+index=windows EventCode=7045 Service_Name="PSEXESVC" 
+| table _time, ComputerName, Service_Name, Account_Name</code></pre>
+
+            <h3>Building Effective Searches</h3>
+            <p>Start broad, then narrow down:</p>
+            <ol>
+                <li><strong>Time range:</strong> Start with the alert timestamp, expand if needed</li>
+                <li><strong>Source identifier:</strong> IP, hostname, username</li>
+                <li><strong>Add context:</strong> Related events, parent processes, network connections</li>
+                <li><strong>Pivot:</strong> Use findings to search for related activity</li>
+            </ol>
+
+            <h2>4. Investigation Methodology</h2>
+
+            <p>When you've confirmed an alert is worth investigating, follow a structured approach:</p>
+
+            <h3>The Investigation Framework</h3>
+
+            <h4>Step 1: Gather Context</h4>
+            <ul>
+                <li>What's the affected asset? (Role, owner, criticality)</li>
+                <li>What's normal for this asset? (Typical activity patterns)</li>
+                <li>Any recent changes? (Patches, deployments, user changes)</li>
+            </ul>
+
+            <h4>Step 2: Timeline Construction</h4>
+            <p>Build a timeline of events before, during, and after the alert:</p>
+            <pre><code>Timeline Example:
+09:15:00 - User john.doe logs in from corporate VPN
+09:17:23 - PowerShell execution with encoded command
+09:17:45 - Connection to external IP 45.33.32.156
+09:18:02 - Creation of scheduled task "WindowsUpdate"
+09:18:30 - Alert triggered: Suspicious PowerShell Activity</code></pre>
+
+            <h4>Step 3: Identify Indicators</h4>
+            <p>Extract IOCs (Indicators of Compromise):</p>
+            <ul>
+                <li><strong>Network:</strong> IPs, domains, URLs</li>
+                <li><strong>Host:</strong> File hashes, file paths, registry keys</li>
+                <li><strong>Behavioral:</strong> Unusual processes, scheduled tasks, services</li>
+            </ul>
+
+            <h4>Step 4: Correlate and Pivot</h4>
+            <ul>
+                <li>Search for IOCs across other systems</li>
+                <li>Check threat intelligence for known associations</li>
+                <li>Identify scope of compromise</li>
+            </ul>
+
+            <h4>Step 5: Document and Escalate</h4>
+            <ul>
+                <li>Document all findings with evidence</li>
+                <li>Determine severity and business impact</li>
+                <li>Escalate to Tier 2/3 or Incident Response as needed</li>
+            </ul>
+
+            <h2>5. Common Attack Patterns to Recognize</h2>
+
+            <p>As a SOC analyst, you'll see certain patterns repeatedly. Learn to recognize them:</p>
+
+            <h3>Phishing/Initial Access</h3>
+            <ul>
+                <li>Email with attachment → Office macro execution → PowerShell download</li>
+                <li>Link click → Credential harvesting page → Compromised credentials</li>
+                <li><strong>Key Indicators:</strong> Unusual sender, suspicious attachments, encoded URLs</li>
+            </ul>
+
+            <h3>Malware Execution</h3>
+            <ul>
+                <li>Child process spawned from Office applications</li>
+                <li>PowerShell with encoded commands</li>
+                <li>Execution from temp/download directories</li>
+                <li><strong>Key Indicators:</strong> LOLBins (Living off the Land Binaries), script interpreters</li>
+            </ul>
+
+            <h3>Lateral Movement</h3>
+            <ul>
+                <li>Remote service creation (PsExec, WMI)</li>
+                <li>RDP connections from unusual sources</li>
+                <li>Admin share access (C$, ADMIN$)</li>
+                <li><strong>Key Indicators:</strong> Type 3 logons, new service installations, scheduled tasks</li>
+            </ul>
+
+            <h3>Data Exfiltration</h3>
+            <ul>
+                <li>Large data transfers to external IPs</li>
+                <li>Connections to cloud storage services</li>
+                <li>DNS tunneling (unusually long DNS queries)</li>
+                <li><strong>Key Indicators:</strong> Unusual protocols, high bytes out, connections to rare destinations
+                </li>
+            </ul>
+
+            <div class="callout warning">
+                <strong>MITRE ATT&CK Framework:</strong> Learn it. Love it. Use it. The ATT&CK framework maps adversary
+                tactics and techniques—invaluable for understanding attacks and organizing your detection coverage.
+            </div>
+
+            <h2>6. Essential Tools for SOC Analysts</h2>
+
+            <h3>Investigation Tools</h3>
+            <ul>
+                <li><strong>VirusTotal:</strong> Hash/URL/IP reputation checking</li>
+                <li><strong>AbuseIPDB:</strong> IP reputation database</li>
+                <li><strong>URLScan.io:</strong> Safe URL analysis</li>
+                <li><strong>Hybrid Analysis:</strong> Malware sandbox</li>
+                <li><strong>WHOIS/DNS tools:</strong> Domain investigation</li>
+            </ul>
+
+            <h3>Enrichment & Threat Intel</h3>
+            <ul>
+                <li><strong>AlienVault OTX:</strong> Open threat exchange</li>
+                <li><strong>MISP:</strong> Threat intelligence platform</li>
+                <li><strong>Shodan:</strong> Internet-facing asset intelligence</li>
+                <li><strong>GreyNoise:</strong> Internet noise vs. targeted attacks</li>
+            </ul>
+
+            <h3>Analysis Tools</h3>
+            <ul>
+                <li><strong>CyberChef:</strong> Data encoding/decoding (essential!)</li>
+                <li><strong>Wireshark:</strong> Packet analysis</li>
+                <li><strong>Process Monitor:</strong> Windows system monitoring</li>
+                <li><strong>Autoruns:</strong> Persistence mechanism analysis</li>
+            </ul>
+
+            <h2>7. Soft Skills That Matter</h2>
+
+            <p>Technical skills get you hired. Soft skills get you promoted.</p>
+
+            <h3>Communication</h3>
+            <ul>
+                <li><strong>Write clear tickets:</strong> Summary, findings, evidence, recommended actions</li>
+                <li><strong>Explain to non-technical stakeholders:</strong> "What does this mean for the business?"</li>
+                <li><strong>Escalation discipline:</strong> Know when and how to escalate</li>
+            </ul>
+
+            <h3>Time Management</h3>
+            <ul>
+                <li><strong>Prioritize:</strong> Not all alerts are equal—focus on impact</li>
+                <li><strong>Timebox investigations:</strong> Don't go down rabbit holes without check-ins</li>
+                <li><strong>Document as you go:</strong> Don't save it for the end</li>
+            </ul>
+
+            <h3>Continuous Learning</h3>
+            <ul>
+                <li><strong>Stay current:</strong> Follow threat intel sources, security news</li>
+                <li><strong>Practice:</strong> CTFs, labs, home labs</li>
+                <li><strong>Share knowledge:</strong> Document learnings, mentor others</li>
+            </ul>
+
+            <h2>8. Career Progression</h2>
+
+            <p>SOC analyst is a great starting point, but where do you go from here?</p>
+
+            <h3>Career Paths</h3>
+            <ul>
+                <li><strong>Incident Response:</strong> Tier 2/3 → IR Lead → IR Manager</li>
+                <li><strong>Threat Intelligence:</strong> Analyst → Senior Analyst → TI Manager</li>
+                <li><strong>Threat Hunting:</strong> Hunter → Senior Hunter → Hunt Team Lead</li>
+                <li><strong>Security Engineering:</strong> Detection Engineer → Security Architect</li>
+                <li><strong>Management:</strong> SOC Lead → SOC Manager → Security Director</li>
+            </ul>
+
+            <h3>Recommended Certifications</h3>
+            <ul>
+                <li><strong>Entry Level:</strong> CompTIA Security+, CySA+</li>
+                <li><strong>SOC Focused:</strong> GCIA, GCIH, BTL1</li>
+                <li><strong>Advanced:</strong> GCFA, GREM, OSCP</li>
+            </ul>
+
+            <h2>9. My Personal Advice for New SOC Analysts</h2>
+
+            <div class="callout success">
+                <strong>💡 Lessons from the Trenches:</strong>
+                <ol>
+                    <li><strong>Ask questions.</strong> No one expects you to know everything on day one.</li>
+                    <li><strong>Build relationships with IT.</strong> They have context you don't.</li>
+                    <li><strong>Trust your gut.</strong> If something feels off, investigate deeper.</li>
+                    <li><strong>False positives are learning opportunities.</strong> Understand why the detection fired.
+                    </li>
+                    <li><strong>Take breaks.</strong> Alert fatigue is real. Step away when needed.</li>
+                    <li><strong>Celebrate wins.</strong> Caught a phish? Blocked malware? That matters.</li>
+                    <li><strong>The attackers are human too.</strong> They make mistakes. Look for them.</li>
+                </ol>
+            </div>
+
+            <h2>Conclusion</h2>
+
+            <p>Being a SOC analyst is challenging but incredibly rewarding. You're on the front lines of cybersecurity,
+                defending organizations against real threats every day. It's not about being perfect—it's about being
+                curious, methodical, and always learning.</p>
+
+            <p><strong>Welcome to the SOC. The alerts are waiting.</strong></p>
+
+            <p><strong>Related Guides:</strong></p>
+            <ul>
+                <li><a href="/guides/siem-log-analysis.html">SIEM Log Analysis Guide</a></li>
+                <li><a href="/guides/incident-response-automation.html">Incident Response Automation</a></li>
+                <li><a href="/guides/threat-hunting-techniques.html">Threat Hunting Techniques & Methodologies</a></li>
+            </ul>
+
+            <a href="/guides/" class="btn-back">← Back to Guides</a>
+        </article>
+
+        <!-- Interaction Bar -->
+        <div class="interaction-bar">
+            <div class="like-section">
+                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                    <i class="far fa-heart"></i> <span id="likeText">Like this guide</span>
+                </button>
+            </div>
+            <div class="action-buttons">
+                <div class="share-buttons">
+                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"
+                        aria-label="Share on Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"
+                        aria-label="Share on LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link">
+                        <i class="fas fa-link"></i>
+                    </button>
+                </div>
+                <div class="button-separator"></div>
+                <button onclick="printArticle()" class="print-btn" title="Print Guide" aria-label="Print Guide">
+                    <i class="fas fa-print"></i>
+                </button>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025 TheHGTech. All rights reserved.</p>
+            <a href="/guides/" class="btn-back">← Back to All Guides</a>
+        </footer>
+    </div>
+
+    <script src="/interaction-bar.js?v=20251207-0041"></script>
+</body>
+
+</html>
