@@ -4,9 +4,8 @@
 User-agent: *
 Allow: /
 
-# Sitemaps - Multiple for different content types
+# Sitemaps
 Sitemap: https://thehgtech.com/sitemap.xml
-Sitemap: https://thehgtech.com/news-sitemap.xml
 
 # Priority pages - Hint to crawlers
 # Homepage, Trackers, and Guides are most important
