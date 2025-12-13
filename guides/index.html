@@ -212,6 +212,81 @@
             color: var(--accent-red);
         }
 
+        /* Filter Bar */
+        .filter-bar {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 1.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            margin-top: 2rem;
+        }
+
+        .search-box {
+            position: relative;
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 0.875rem 1rem 0.875rem 2.5rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-size: 0.95rem;
+            transition: border-color 0.3s;
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: var(--accent-cyan);
+        }
+
+        .search-box i {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-muted);
+        }
+
+        .filter-select,
+        .sort-select {
+            padding: 0.875rem 2.5rem 0.875rem 1rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-size: 0.95rem;
+            cursor: pointer;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2300D9FF' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            transition: all 0.3s ease;
+        }
+
+        .filter-select:hover,
+        .sort-select:hover {
+            border-color: var(--accent-cyan);
+        }
+
+        .results-count {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-left: auto;
+        }
+
+        /* Hide guides that don't match filter */
+        .guide-card.hidden {
+            display: none;
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             h1 {
@@ -225,63 +300,85 @@
             .container {
                 padding: 1rem;
             }
+
+            .filter-bar {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .search-box {
+                width: 100%;
+            }
+
+            .filter-select,
+            .sort-select {
+                width: 100%;
+            }
+
+            .results-count {
+                margin-left: 0;
+                text-align: center;
+            }
         }
     </style>
 </head>
 
 <body>
-<!-- ========== NEW MOBILE NAVIGATION (v3.0) ========== -->
+    <!-- ========== NEW MOBILE NAVIGATION (v3.0) ========== -->
 
-<!-- Mobile Header -->
-<header class="m-header m-only">
-    <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
-    <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
-    <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0;">
-    <span style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
-</div>
-    <div class="m-header__actions">
-        <button class="m-header__btn m-header__btn--theme" onclick="mToggleTheme()" aria-label="Toggle Theme">
-            <i class="fas fa-moon"></i>
-            <i class="fas fa-sun"></i>
-        </button>
-        <button class="m-header__btn" data-action="search" aria-label="Search">
-            <i class="fas fa-search"></i>
-        </button>
-    </div>
-</header>
+    <!-- Mobile Header -->
+    <header class="m-header m-only">
+        <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark"
+                style="height: 28px; width: auto; margin: 0;">
+            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light"
+                style="height: 28px; width: auto; margin: 0;">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+        </div>
+        <div class="m-header__actions">
+            <button class="m-header__btn m-header__btn--theme" onclick="mToggleTheme()" aria-label="Toggle Theme">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </button>
+            <button class="m-header__btn" data-action="search" aria-label="Search">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </header>
 
-<!-- Bottom Navigation (5 items: Home, CVE, TI, Articles, Guides) -->
-<nav class="m-bottom-nav m-only">
-    <a href="/" class="m-bottom-nav__item">
-        <i class="fas fa-home"></i>
-        <span>Home</span>
-    </a>
-    <a href="/cve-tracker.html" class="m-bottom-nav__item">
-        <i class="fas fa-bug"></i>
-        <span>CVE</span>
-    </a>
-    <a href="/threat-intel.html" class="m-bottom-nav__item">
-        <i class="fas fa-shield-alt"></i>
-        <span>Intel</span>
-    </a>
-    <a href="/articles.html" class="m-bottom-nav__item">
-        <i class="fas fa-newspaper"></i>
-        <span>Articles</span>
-    </a>
-    <a href="/guides/" class="m-bottom-nav__item">
-        <i class="fas fa-book"></i>
-        <span>Guides</span>
-    </a>
-</nav>
+    <!-- Bottom Navigation (5 items: Home, CVE, TI, Articles, Guides) -->
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item">
+            <i class="fas fa-bug"></i>
+            <span>CVE</span>
+        </a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item">
+            <i class="fas fa-shield-alt"></i>
+            <span>Intel</span>
+        </a>
+        <a href="/articles.html" class="m-bottom-nav__item">
+            <i class="fas fa-newspaper"></i>
+            <span>Articles</span>
+        </a>
+        <a href="/guides/" class="m-bottom-nav__item">
+            <i class="fas fa-book"></i>
+            <span>Guides</span>
+        </a>
+    </nav>
 
-<!-- Search Overlay -->
-<div class="m-search-overlay m-only">
-    <div class="m-search-overlay__header">
-        <input type="text" class="m-search-overlay__input" placeholder="Search news, CVEs, guides...">
-        <button class="m-search-overlay__cancel">Cancel</button>
-    </div>
-    <div class="m-search-overlay__results"></div>
-</div>    <!-- Header -->
+    <!-- Search Overlay -->
+    <div class="m-search-overlay m-only">
+        <div class="m-search-overlay__header">
+            <input type="text" class="m-search-overlay__input" placeholder="Search news, CVEs, guides...">
+            <button class="m-search-overlay__cancel">Cancel</button>
+        </div>
+        <div class="m-search-overlay__results"></div>
+    </div> <!-- Header -->
     <header class="header" role="banner">
         <div class="header-content">
             <div class="logo">
@@ -348,7 +445,33 @@
             </p>
         </div>
 
-        <div class="guides-grid">
+        <!-- Filter Bar -->
+        <div class="filter-bar">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Search guides...">
+            </div>
+            <select id="categoryFilter" class="filter-select">
+                <option value="all">All Categories</option>
+                <option value="Security Operations">Security Operations</option>
+                <option value="Threat Intelligence">Threat Intelligence</option>
+                <option value="Vulnerability Management">Vulnerability Management</option>
+                <option value="Incident Response">Incident Response</option>
+                <option value="Application Security">Application Security</option>
+                <option value="Zero Trust">Zero Trust</option>
+                <option value="Training">Training</option>
+                <option value="Analytics">Analytics</option>
+            </select>
+            <select id="sortSelect" class="sort-select">
+                <option value="date-desc">Newest First</option>
+                <option value="date-asc">Oldest First</option>
+                <option value="title-asc">Title (A-Z)</option>
+                <option value="title-desc">Title (Z-A)</option>
+            </select>
+            <span class="results-count" id="resultsCount">Loading...</span>
+        </div>
+
+        <div class="guides-grid" id="guidesGrid">
             <!-- Network Segmentation for Zero Trust (Dec 4, 2025) - NEWEST! -->
             <a href="/guides/network-segmentation-zero-trust.html" style="text-decoration: none;">
                 <div class="guide-card" style="border: 2px solid #00D9FF; box-shadow: 0 0 20px rgba(0, 217, 255, 0.3);">
@@ -618,20 +741,6 @@
 
 
 
-            <!-- Network Segmentation (Coming Soon) -->
-            <div class="guide-card coming-soon">
-                <span class="guide-tag coming-soon-badge">Coming Soon</span>
-                <h2>Network Segmentation for Zero Trust</h2>
-                <p>
-                    Implement micro-segmentation and zero trust network architecture to limit lateral movement.
-                </p>
-                <div class="guide-meta">
-                    <span>📖 15 min read</span>
-                    <span>🎯 Advanced</span>
-                </div>
-                <span class="read-more">Coming Soon</span>
-            </div>
-
             <!-- Blockchain Forensics (Coming Soon) -->
             <div class="guide-card coming-soon">
                 <span class="guide-tag coming-soon-badge">Coming Soon</span>
@@ -695,25 +804,20 @@
 </div>
 
 <script>
-    // Header Functionality
+    // Theme + Mobile Menu Functionality
     document.addEventListener('DOMContentLoaded', () => {
         // Theme Toggle
         const themeToggle = document.getElementById('themeToggle');
         const mobileThemeToggle = document.getElementById('mobileThemeToggle');
         const body = document.body;
 
-        // Check local storage
         if (localStorage.getItem('theme') === 'light') {
             body.classList.add('light-mode');
         }
 
         function toggleTheme() {
             body.classList.toggle('light-mode');
-            if (body.classList.contains('light-mode')) {
-                localStorage.setItem('theme', 'light');
-            } else {
-                localStorage.setItem('theme', 'dark');
-            }
+            localStorage.setItem('theme', body.classList.contains('light-mode') ? 'light' : 'dark');
         }
 
         if (themeToggle) themeToggle.addEventListener('click', toggleTheme);
@@ -727,20 +831,145 @@
             mobileMenuBtn.addEventListener('click', () => {
                 mobileMenu.classList.toggle('active');
                 mobileMenuBtn.classList.toggle('active');
-
-                // Animate hamburger
                 const spans = mobileMenuBtn.querySelectorAll('span');
                 if (mobileMenu.classList.contains('active')) {
                     spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
                     spans[1].style.opacity = '0';
                     spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
                 } else {
-                    spans[0].style.transform = 'none';
-                    spans[1].style.opacity = '1';
-                    spans[2].style.transform = 'none';
+                    spans.forEach(s => { s.style.transform = 'none'; s.style.opacity = '1'; });
                 }
             });
         }
+
+        // ===== GUIDES FILTERING & SORTING =====
+        const guidesGrid = document.getElementById('guidesGrid');
+        const searchInput = document.getElementById('searchInput');
+        const categoryFilter = document.getElementById('categoryFilter');
+        const sortSelect = document.getElementById('sortSelect');
+        const resultsCount = document.getElementById('resultsCount');
+
+        // Get all guide items (both links with cards and standalone cards for coming soon)
+        const allGuideItems = Array.from(guidesGrid.children);
+
+        // Parse date from guide meta (e.g., "Dec 4, 2025" or "November 2025")
+        function parseGuideDate(dateStr) {
+            if (!dateStr) return new Date('1970-01-01');
+
+            // Handle "Nov 29, 2025" or "Dec 4, 2025" format
+            const fullDateMatch = dateStr.match(/(\w+)\s+(\d+),\s+(\d+)/);
+            if (fullDateMatch) {
+                return new Date(dateStr);
+            }
+
+            // Handle "November 2025" format - default to 1st of month
+            const monthYearMatch = dateStr.match(/(\w+)\s+(\d+)/);
+            if (monthYearMatch) {
+                return new Date(`${monthYearMatch[1]} 1, ${monthYearMatch[2]}`);
+            }
+
+            return new Date('1970-01-01'); // For "Coming Soon" items with no date
+        }
+
+        // Extract guide data from DOM elements
+        function getGuideData(item) {
+            const card = item.classList.contains('guide-card') ? item : item.querySelector('.guide-card');
+            if (!card) return null;
+
+            const title = card.querySelector('h2')?.textContent.trim() || '';
+            const description = card.querySelector('p')?.textContent.trim() || '';
+            const tagEl = card.querySelector('.guide-tag');
+            const category = tagEl ? tagEl.textContent.trim().replace('✨', '').replace('New', '').trim() : '';
+
+            // Get date from meta section
+            const metaSpans = card.querySelectorAll('.guide-meta span');
+            let dateStr = '';
+            metaSpans.forEach(span => {
+                if (span.textContent.includes('📅')) {
+                    dateStr = span.textContent.replace('📅', '').trim();
+                }
+            });
+
+            const isComingSoon = card.classList.contains('coming-soon');
+            const date = parseGuideDate(dateStr);
+
+            return { title, description, category, date, dateStr, isComingSoon, element: item };
+        }
+
+        // Get all guide data
+        let guidesData = allGuideItems.map(getGuideData).filter(g => g !== null);
+
+        // Initial sort by newest
+        function sortGuides() {
+            const sortBy = sortSelect.value;
+            const searchTerm = searchInput.value.toLowerCase();
+            const selectedCategory = categoryFilter.value;
+
+            // Filter
+            let filtered = guidesData.filter(guide => {
+                const matchesSearch = !searchTerm ||
+                    guide.title.toLowerCase().includes(searchTerm) ||
+                    guide.description.toLowerCase().includes(searchTerm) ||
+                    guide.category.toLowerCase().includes(searchTerm);
+
+                const matchesCategory = selectedCategory === 'all' ||
+                    guide.category.toLowerCase().includes(selectedCategory.toLowerCase());
+
+                return matchesSearch && matchesCategory;
+            });
+
+            // Sort
+            filtered.sort((a, b) => {
+                // Coming Soon items always go to the end
+                if (a.isComingSoon && !b.isComingSoon) return 1;
+                if (!a.isComingSoon && b.isComingSoon) return -1;
+
+                switch (sortBy) {
+                    case 'date-desc':
+                        return b.date - a.date;
+                    case 'date-asc':
+                        return a.date - b.date;
+                    case 'title-asc':
+                        return a.title.localeCompare(b.title);
+                    case 'title-desc':
+                        return b.title.localeCompare(a.title);
+                    default:
+                        return 0;
+                }
+            });
+
+            // Re-order DOM
+            filtered.forEach(guide => {
+                guide.element.classList.remove('hidden');
+                guidesGrid.appendChild(guide.element);
+            });
+
+            // Hide non-matching
+            guidesData.forEach(guide => {
+                if (!filtered.includes(guide)) {
+                    guide.element.classList.add('hidden');
+                }
+            });
+
+            // Update count
+            const visibleCount = filtered.filter(g => !g.isComingSoon).length;
+            const totalCount = guidesData.filter(g => !g.isComingSoon).length;
+            const comingSoonCount = filtered.filter(g => g.isComingSoon).length;
+
+            if (visibleCount === totalCount) {
+                resultsCount.textContent = `${totalCount} guides` + (comingSoonCount > 0 ? ` + ${comingSoonCount} coming soon` : '');
+            } else {
+                resultsCount.textContent = `${visibleCount} of ${totalCount} guides`;
+            }
+        }
+
+        // Event listeners
+        searchInput.addEventListener('input', sortGuides);
+        categoryFilter.addEventListener('change', sortGuides);
+        sortSelect.addEventListener('change', sortGuides);
+
+        // Initial sort (newest first)
+        sortGuides();
     });
 </script>
 </body>
