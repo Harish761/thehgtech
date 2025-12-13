@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Cloud Security Hardening: AWS, Azure & GCP Best Practices | TheHGTech</title>
+    <meta name="title" content="Cloud Security Hardening: AWS, Azure & GCP Best Practices | TheHGTech">
+    <meta name="description"
+        content="Comprehensive guide to hardening cloud infrastructure across AWS, Azure, and GCP. Learn IAM best practices, network security, encryption, logging, and compliance frameworks.">
+    <meta name="keywords"
+        content="cloud security, AWS security, Azure security, GCP security, cloud hardening, IAM best practices, cloud compliance, CSPM, cloud security posture management, multi-cloud security">
+    <meta name="author" content="TheHGTech">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thehgtech.com/guides/cloud-security-hardening.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/guides/cloud-security-hardening.html">
+    <meta property="og:title" content="Cloud Security Hardening: AWS, Azure & GCP Best Practices">
+    <meta property="og:description"
+        content="Master cloud security across AWS, Azure, and GCP with this comprehensive hardening guide.">
+    <meta property="og:image" content="https://thehgtech.com/images/guides/cloud-security-hardening.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://thehgtech.com/guides/cloud-security-hardening.html">
+    <meta name="twitter:title" content="Cloud Security Hardening: AWS, Azure & GCP Best Practices">
+    <meta name="twitter:description"
+        content="Comprehensive guide to hardening cloud infrastructure across major cloud providers.">
+    <meta name="twitter:image" content="https://thehgtech.com/images/guides/cloud-security-hardening.png">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Cloud Security Hardening: AWS, Azure & GCP Best Practices",
+      "description": "Comprehensive guide to hardening cloud infrastructure across AWS, Azure, and GCP",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://thehgtech.com/images/guides/cloud-security-hardening.png",
+        "width": 1200,
+        "height": 630
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "TheHGTech",
+        "url": "https://thehgtech.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TheHGTech",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://thehgtech.com/logo.png",
+          "width": 600,
+          "height": 60
+        }
+      },
+      "datePublished": "2025-12-13",
+      "dateModified": "2025-12-13",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://thehgtech.com/guides/cloud-security-hardening.html"
+      },
+      "keywords": "cloud security, AWS security, Azure security, GCP security, cloud hardening",
+      "articleSection": "Security Guides",
+      "inLanguage": "en-US",
+      "wordCount": 4500
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF4C4C;
+            --accent-green: #00FF88;
+            --accent-orange: #FF9500;
+            --accent-purple: #A855F7;
+            --glow-cyan: rgba(0, 217, 255, 0.5);
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+            --glass: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* New Badge */
+        .new-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-green));
+            color: #000;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            margin-left: 1rem;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.8;
+                transform: scale(1.05);
+            }
+        }
+
+        /* Header */
+        header {
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+        }
+
+        .breadcrumb {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .breadcrumb a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(to right, #fff, #a0a0a0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+
+        .meta {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            flex-wrap: wrap;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Featured Image */
+        .featured-image {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin: 2rem 0;
+            box-shadow: 0 10px 40px rgba(0, 217, 255, 0.2);
+            border: 1px solid var(--border);
+        }
+
+        /* Content */
+        .content h2 {
+            font-size: 1.8rem;
+            color: var(--accent-cyan);
+            margin: 3rem 0 1.5rem;
+        }
+
+        .content h3 {
+            font-size: 1.4rem;
+            color: #fff;
+            margin: 2rem 0 1rem;
+        }
+
+        .content h4 {
+            font-size: 1.2rem;
+            color: var(--accent-green);
+            margin: 1.5rem 0 1rem;
+        }
+
+        .content p {
+            margin-bottom: 1.5rem;
+            color: #d0d0d0;
+        }
+
+        .content ul,
+        .content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+            color: #d0d0d0;
+        }
+
+        .content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .content strong {
+            color: #fff;
+        }
+
+        .content code {
+            background: var(--bg-card);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: var(--accent-cyan);
+            font-size: 0.9em;
+        }
+
+        .callout {
+            background: var(--bg-card);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .callout.info {
+            border-left-color: var(--accent-cyan);
+        }
+
+        .callout.success {
+            border-left-color: var(--accent-green);
+        }
+
+        .callout.warning {
+            border-left-color: var(--accent-orange);
+        }
+
+        /* Code Blocks */
+        pre {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+            color: #d0d0d0;
+        }
+
+        /* Cloud Provider Badges */
+        .provider-badge {
+            display: inline-block;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-right: 0.5rem;
+        }
+
+        .provider-badge.aws {
+            background: #FF9900;
+            color: #000;
+        }
+
+        .provider-badge.azure {
+            background: #0089D6;
+            color: #fff;
+        }
+
+        .provider-badge.gcp {
+            background: #4285F4;
+            color: #fff;
+        }
+
+        /* Comparison Table */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 1rem;
+            border: 1px solid var(--border);
+            text-align: left;
+        }
+
+        .comparison-table th {
+            background: var(--bg-card);
+            color: var(--accent-cyan);
+        }
+
+        .comparison-table tr:nth-child(even) {
+            background: var(--bg-card);
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 5rem;
+            padding-top: 3rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.8rem 1.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-back:hover {
+            border-color: var(--accent-cyan);
+            color: var(--accent-cyan);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .content h2 {
+                font-size: 1.5rem;
+            }
+
+            .content h3 {
+                font-size: 1.2rem;
+            }
+
+            .comparison-table {
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+
+    <!-- Mobile Navigation CSS -->
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <script src="/m-app.js?v=4.3" defer></script>
+</head>
+
+<body>
+    <!-- Mobile Header -->
+    <header class="m-header m-only">
+        <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark"
+                style="height: 28px; width: auto; margin: 0;">
+            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light"
+                style="height: 28px; width: auto; margin: 0;">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+        </div>
+        <div class="m-header__actions">
+            <button class="m-theme-toggle" onclick="mToggleTheme()" aria-label="Toggle Theme">
+                <span class="m-theme-toggle__thumb"></span>
+                <span class="m-theme-toggle__stars">
+                    <span class="m-theme-toggle__star"></span>
+                    <span class="m-theme-toggle__star"></span>
+                </span>
+            </button>
+            <button class="m-header__btn m-header__btn--search" data-action="search" aria-label="Search">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Bottom Navigation -->
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item"><i class="fas fa-bug"></i><span>CVE</span></a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item"><i class="fas fa-shield-alt"></i><span>Intel</span></a>
+        <a href="/articles.html" class="m-bottom-nav__item"><i class="fas fa-newspaper"></i><span>Articles</span></a>
+        <a href="/guides/" class="m-bottom-nav__item active"><i class="fas fa-book"></i><span>Guides</span></a>
+    </nav>
+
+    <div class="container">
+        <header>
+            <div class="breadcrumb">
+                <a href="/">Home</a> / <a href="/guides/">Guides</a> / Cloud Security Hardening
+            </div>
+            <h1>Cloud Security Hardening<span class="new-badge">NEW</span></h1>
+            <div class="meta">
+                <div class="meta-item">📅 Published: Dec 13, 2025</div>
+                <div class="meta-item">⏱️ 18 min read</div>
+                <div class="meta-item">🏷️ Intermediate</div>
+            </div>
+        </header>
+
+        <article class="content">
+            <img src="/images/guides/cloud-security-hardening.png"
+                alt="Cloud Security Hardening Guide - AWS, Azure, GCP" class="featured-image">
+
+            <p>There's a saying in cloud security that I've come to appreciate deeply: <strong>"The cloud is someone
+                    else's computer, but it's still your responsibility."</strong> After years of helping organizations
+                migrate to and secure cloud environments, I've seen the same mistakes repeated—and the same attacks
+                succeed—because teams underestimate how different cloud security is from traditional on-premises
+                security.</p>
+
+            <p>This guide covers the essential hardening practices across <span class="provider-badge aws">AWS</span>
+                <span class="provider-badge azure">Azure</span> <span class="provider-badge gcp">GCP</span> that every
+                security team should implement. Whether you're running a single-cloud or multi-cloud environment, these
+                principles apply.</p>
+
+            <div class="callout info">
+                <strong>The Shared Responsibility Model:</strong> Cloud providers secure the infrastructure <em>of</em>
+                the cloud. You secure everything <em>in</em> the cloud—your data, applications, identities, and
+                configurations. Most cloud breaches happen in the customer's domain.
+            </div>
+
+            <h2>1. Identity and Access Management (IAM)</h2>
+
+            <p>If I had to choose one area to focus on for cloud security, it would be IAM. Over 80% of cloud breaches
+                involve compromised credentials or excessive permissions. Get IAM right, and you've addressed the
+                majority of your risk.</p>
+
+            <h3>The Principle of Least Privilege</h3>
+            <p>Every user, service, and application should have the minimum permissions required to do their job—nothing
+                more.</p>
+
+            <h4>Common IAM Mistakes I've Seen:</h4>
+            <ul>
+                <li><strong>Wildcard permissions:</strong> Policies with <code>"Action": "*"</code> or
+                    <code>"Resource": "*"</code></li>
+                <li><strong>Admin for everyone:</strong> Developers with full admin access "for convenience"</li>
+                <li><strong>Stale accounts:</strong> Former employees or unused service accounts still active</li>
+                <li><strong>Long-lived credentials:</strong> API keys that haven't been rotated in years</li>
+                <li><strong>No MFA:</strong> Root/admin accounts without multi-factor authentication</li>
+            </ul>
+
+            <h4>IAM Hardening Checklist:</h4>
+            <div class="callout success">
+                <strong>✅ Mandatory IAM Controls:</strong>
+                <ul>
+                    <li>Enable MFA for all human users (especially root/admin)</li>
+                    <li>Use role-based access control (RBAC) with predefined permission sets</li>
+                    <li>Implement Just-In-Time (JIT) access for privileged operations</li>
+                    <li>Rotate credentials every 90 days (or use short-lived tokens)</li>
+                    <li>Review access quarterly and remove unused permissions</li>
+                    <li>Use service accounts with scoped permissions for applications</li>
+                </ul>
+            </div>
+
+            <h3>Cross-Cloud IAM Comparison</h3>
+            <table class="comparison-table">
+                <tr>
+                    <th>Feature</th>
+                    <th><span class="provider-badge aws">AWS</span></th>
+                    <th><span class="provider-badge azure">Azure</span></th>
+                    <th><span class="provider-badge gcp">GCP</span></th>
+                </tr>
+                <tr>
+                    <td>Identity Service</td>
+                    <td>IAM + Organizations</td>
+                    <td>Azure AD / Entra ID</td>
+                    <td>Cloud Identity</td>
+                </tr>
+                <tr>
+                    <td>Permission Model</td>
+                    <td>Policies (JSON)</td>
+                    <td>RBAC Roles</td>
+                    <td>IAM Roles + Permissions</td>
+                </tr>
+                <tr>
+                    <td>Privileged Access</td>
+                    <td>AWS SSO + Permission Sets</td>
+                    <td>Privileged Identity Management (PIM)</td>
+                    <td>PAM + IAM Conditions</td>
+                </tr>
+                <tr>
+                    <td>Service Accounts</td>
+                    <td>IAM Roles for Services</td>
+                    <td>Managed Identities</td>
+                    <td>Service Accounts</td>
+                </tr>
+            </table>
+
+            <h3>Eliminating Long-Lived Credentials</h3>
+            <p>One of the biggest wins for cloud security is moving away from long-lived API keys to temporary
+                credentials:</p>
+
+            <pre><code># AWS: Use IAM Roles instead of access keys
+# Instead of hardcoding credentials:
+# aws_access_key_id = "AKIAIOSFODNN7EXAMPLE"  ❌ BAD
+# aws_secret_access_key = "wJalrXUtnFEMI..."   ❌ BAD
+
+# Use instance profiles or assume role:
+aws sts assume-role --role-arn arn:aws:iam::123456789:role/MyRole  ✅ GOOD
+
+# Azure: Use Managed Identities
+# Resources automatically get identity—no secrets needed
+az vm identity assign --name myVM --resource-group myRG
+
+# GCP: Use Workload Identity
+gcloud iam service-accounts add-iam-policy-binding \
+    --role roles/iam.workloadIdentityUser \
+    --member "serviceAccount:PROJECT.svc.id.goog[NAMESPACE/KSA_NAME]" \
+    GSA_NAME@PROJECT_ID.iam.gserviceaccount.com</code></pre>
+
+            <h2>2. Network Security</h2>
+
+            <p>The cloud provides incredible flexibility for network architecture, but that flexibility can become a
+                liability if not properly configured. I've seen production databases exposed to the internet because
+                someone misconfigured a security group—and didn't notice for months.</p>
+
+            <h3>Defense in Depth Network Architecture</h3>
+            <p>Apply multiple layers of network security:</p>
+
+            <h4>Layer 1: VPC/VNet Isolation</h4>
+            <ul>
+                <li><strong>Separate environments:</strong> Production, staging, and development in different VPCs</li>
+                <li><strong>Private subnets:</strong> Keep databases and internal services in private subnets with no
+                    internet access</li>
+                <li><strong>VPC peering/Transit Gateway:</strong> Connect VPCs securely without traversing the internet
+                </li>
+            </ul>
+
+            <h4>Layer 2: Security Groups / Network Security Groups</h4>
+            <pre><code># Example: Restrictive security group (AWS)
+{
+  "SecurityGroupIngress": [
+    {
+      "IpProtocol": "tcp",
+      "FromPort": 443,
+      "ToPort": 443,
+      "CidrIp": "10.0.0.0/8"  # Internal only
+    },
+    {
+      "IpProtocol": "tcp",
+      "FromPort": 22,
+      "ToPort": 22,
+      "SourceSecurityGroupId": "sg-bastion"  # Jump box only
+    }
+  ]
+  # DEFAULT: Deny all inbound not explicitly allowed
+}</code></pre>
+
+            <h4>Layer 3: Web Application Firewall (WAF)</h4>
+            <p>Protect public-facing applications from OWASP Top 10 attacks:</p>
+            <ul>
+                <li><strong>AWS WAF:</strong> Integrates with CloudFront, ALB, API Gateway</li>
+                <li><strong>Azure WAF:</strong> Part of Application Gateway and Front Door</li>
+                <li><strong>Cloud Armor (GCP):</strong> DDoS protection + WAF for load balancers</li>
+            </ul>
+
+            <div class="callout warning">
+                <strong>⚠️ Common Network Mistakes:</strong>
+                <ul>
+                    <li>Security groups with <code>0.0.0.0/0</code> (open to the world) for SSH/RDP</li>
+                    <li>Public S3 buckets or storage blobs (hello, data breach)</li>
+                    <li>No network segmentation between tiers</li>
+                    <li>Relying solely on security groups without monitoring</li>
+                </ul>
+            </div>
+
+            <h3>Zero Trust Networking in Cloud</h3>
+            <p>The cloud makes Zero Trust easier to implement. Instead of trusting network location, verify identity for
+                every connection:</p>
+            <ul>
+                <li><strong>Private Link/Private Endpoint:</strong> Access cloud services without traversing the
+                    internet</li>
+                <li><strong>Identity-Aware Proxy:</strong> Authenticate before accessing applications</li>
+                <li><strong>Micro-segmentation:</strong> Use cloud-native firewalls to isolate workloads</li>
+            </ul>
+
+            <h2>3. Data Encryption</h2>
+
+            <p>Encryption is table stakes for cloud security. The good news: cloud providers make it easy. The bad news:
+                you still have to configure it correctly.</p>
+
+            <h3>Encryption at Rest</h3>
+            <p>All data stored in the cloud should be encrypted:</p>
+
+            <table class="comparison-table">
+                <tr>
+                    <th>Service Type</th>
+                    <th>Encryption Option</th>
+                    <th>Best Practice</th>
+                </tr>
+                <tr>
+                    <td>Object Storage</td>
+                    <td>SSE-S3, SSE-KMS, SSE-C</td>
+                    <td>Use KMS with customer-managed keys</td>
+                </tr>
+                <tr>
+                    <td>Block Storage</td>
+                    <td>Volume encryption</td>
+                    <td>Enable by default for all volumes</td>
+                </tr>
+                <tr>
+                    <td>Databases</td>
+                    <td>TDE, encryption at rest</td>
+                    <td>Use KMS, enable automated backups encryption</td>
+                </tr>
+                <tr>
+                    <td>Secrets</td>
+                    <td>Secrets Manager, Key Vault</td>
+                    <td>Never store secrets in code or config files</td>
+                </tr>
+            </table>
+
+            <h3>Encryption in Transit</h3>
+            <p>All data moving through the network should be encrypted:</p>
+            <ul>
+                <li><strong>TLS 1.2+ minimum:</strong> Disable older protocols</li>
+                <li><strong>Certificate management:</strong> Use ACM (AWS), Key Vault (Azure), or Certificate Manager
+                    (GCP)</li>
+                <li><strong>Internal traffic:</strong> Use VPC internal endpoints—traffic never leaves the cloud
+                    provider's network</li>
+            </ul>
+
+            <h3>Key Management Best Practices</h3>
+            <pre><code># AWS KMS Key Policy Example (Least Privilege)
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowAdminAccess",
+      "Effect": "Allow",
+      "Principal": {"AWS": "arn:aws:iam::123456789:role/SecurityAdmin"},
+      "Action": ["kms:Create*", "kms:Describe*", "kms:Enable*", "kms:List*"],
+      "Resource": "*"
+    },
+    {
+      "Sid": "AllowUseOfKey",
+      "Effect": "Allow",
+      "Principal": {"AWS": "arn:aws:iam::123456789:role/AppRole"},
+      "Action": ["kms:Encrypt", "kms:Decrypt", "kms:GenerateDataKey"],
+      "Resource": "*"
+    }
+  ]
+}</code></pre>
+
+            <h2>4. Logging, Monitoring & Detection</h2>
+
+            <p>You can't secure what you can't see. Cloud providers offer extensive logging capabilities, but they're
+                often not enabled by default.</p>
+
+            <h3>Essential Logs to Enable</h3>
+            <ul>
+                <li><span class="provider-badge aws">AWS</span> <strong>CloudTrail:</strong> API activity (who did what,
+                    when)</li>
+                <li><span class="provider-badge aws">AWS</span> <strong>VPC Flow Logs:</strong> Network traffic metadata
+                </li>
+                <li><span class="provider-badge aws">AWS</span> <strong>GuardDuty:</strong> Threat detection (malicious
+                    activity, anomalies)</li>
+                <li><span class="provider-badge azure">Azure</span> <strong>Activity Log:</strong> Subscription-level
+                    events</li>
+                <li><span class="provider-badge azure">Azure</span> <strong>NSG Flow Logs:</strong> Network traffic</li>
+                <li><span class="provider-badge azure">Azure</span> <strong>Defender for Cloud:</strong> Unified
+                    security management</li>
+                <li><span class="provider-badge gcp">GCP</span> <strong>Cloud Audit Logs:</strong> Admin activity, data
+                    access</li>
+                <li><span class="provider-badge gcp">GCP</span> <strong>VPC Flow Logs:</strong> Network traffic</li>
+                <li><span class="provider-badge gcp">GCP</span> <strong>Security Command Center:</strong> Security
+                    findings</li>
+            </ul>
+
+            <div class="callout info">
+                <strong>Pro Tip:</strong> Send all logs to a centralized, immutable location (like a locked-down S3
+                bucket or separate logging account). Attackers often try to delete logs to cover their tracks.
+            </div>
+
+            <h3>Detection Rules to Implement</h3>
+            <p>At minimum, alert on these high-severity events:</p>
+            <ol>
+                <li><strong>Root account usage:</strong> Any activity from the root user</li>
+                <li><strong>IAM changes:</strong> New users, roles, or policy modifications</li>
+                <li><strong>Security group changes:</strong> Opening ports to 0.0.0.0/0</li>
+                <li><strong>S3 bucket policy changes:</strong> Making buckets public</li>
+                <li><strong>KMS key deletion:</strong> Potential data destruction</li>
+                <li><strong>Failed logins:</strong> Brute force attempts</li>
+                <li><strong>API calls from unusual IPs:</strong> Geographic anomalies</li>
+            </ol>
+
+            <h2>5. Compliance & Security Posture Management</h2>
+
+            <p>Managing security across hundreds of cloud resources is impossible without automation. Cloud Security
+                Posture Management (CSPM) tools continuously scan your environment for misconfigurations.</p>
+
+            <h3>Native CSPM Tools</h3>
+            <ul>
+                <li><span class="provider-badge aws">AWS</span> <strong>Security Hub:</strong> Aggregates findings,
+                    supports CIS/PCI-DSS benchmarks</li>
+                <li><span class="provider-badge azure">Azure</span> <strong>Defender for Cloud:</strong> Secure score,
+                    compliance dashboard</li>
+                <li><span class="provider-badge gcp">GCP</span> <strong>Security Command Center:</strong> Asset
+                    discovery, vulnerability findings</li>
+            </ul>
+
+            <h3>Common Compliance Frameworks</h3>
+            <table class="comparison-table">
+                <tr>
+                    <th>Framework</th>
+                    <th>Focus</th>
+                    <th>Cloud Support</th>
+                </tr>
+                <tr>
+                    <td>CIS Benchmarks</td>
+                    <td>Technical hardening</td>
+                    <td>AWS, Azure, GCP specific benchmarks</td>
+                </tr>
+                <tr>
+                    <td>SOC 2</td>
+                    <td>Security/availability controls</td>
+                    <td>All major providers certified</td>
+                </tr>
+                <tr>
+                    <td>PCI-DSS</td>
+                    <td>Payment card data</td>
+                    <td>Shared responsibility applies</td>
+                </tr>
+                <tr>
+                    <td>HIPAA</td>
+                    <td>Healthcare data</td>
+                    <td>BAA required with provider</td>
+                </tr>
+                <tr>
+                    <td>ISO 27001</td>
+                    <td>Information security</td>
+                    <td>All major providers certified</td>
+                </tr>
+            </table>
+
+            <h2>6. Container & Kubernetes Security</h2>
+
+            <p>If you're running containers in the cloud (and most organizations are), you need container-specific
+                security controls.</p>
+
+            <h3>Container Security Essentials</h3>
+            <ul>
+                <li><strong>Image scanning:</strong> Scan container images for vulnerabilities before deployment</li>
+                <li><strong>Base image hygiene:</strong> Use minimal, trusted base images (distroless, Alpine)</li>
+                <li><strong>No root:</strong> Run containers as non-root users</li>
+                <li><strong>Read-only filesystems:</strong> Prevent runtime modifications</li>
+                <li><strong>Resource limits:</strong> Prevent resource exhaustion attacks</li>
+            </ul>
+
+            <h3>Kubernetes-Specific Hardening</h3>
+            <pre><code># Example: Secure Pod Security Policy (Kubernetes)
+apiVersion: policy/v1beta1
+kind: PodSecurityPolicy
+metadata:
+  name: restricted
+spec:
+  privileged: false
+  runAsUser:
+    rule: MustRunAsNonRoot
+  fsGroup:
+    rule: RunAsAny
+  volumes:
+    - 'configMap'
+    - 'secret'
+    - 'persistentVolumeClaim'
+  readOnlyRootFilesystem: true
+  allowPrivilegeEscalation: false</code></pre>
+
+            <h2>7. My Personal Cloud Security Checklist</h2>
+
+            <p>After years of cloud security assessments, here's my personal checklist that I run through for every
+                environment:</p>
+
+            <div class="callout success">
+                <strong>🔒 Cloud Security Quick Wins:</strong>
+                <ol>
+                    <li><strong>Enable MFA everywhere</strong> - especially root accounts</li>
+                    <li><strong>Encrypt by default</strong> - storage, databases, backups</li>
+                    <li><strong>No public resources</strong> - unless explicitly needed</li>
+                    <li><strong>Enable logging</strong> - CloudTrail, VPC Flow Logs, etc.</li>
+                    <li><strong>Use managed secrets</strong> - never hardcode credentials</li>
+                    <li><strong>Review IAM quarterly</strong> - remove unused access</li>
+                    <li><strong>Automate compliance</strong> - use CSPM tools</li>
+                    <li><strong>Test your backups</strong> - restore regularly</li>
+                </ol>
+            </div>
+
+            <h2>Conclusion: Cloud Security is a Journey</h2>
+
+            <p>Cloud security isn't a destination—it's a continuous process of assessment, hardening, and monitoring.
+                The cloud gives you powerful tools to build secure systems, but those tools require intentional
+                configuration.</p>
+
+            <p>Start with the fundamentals: IAM, encryption, network security, and logging. Build automation to catch
+                misconfigurations before they become breaches. And remember: the shared responsibility model means your
+                security team owns the configuration—not the cloud provider.</p>
+
+            <p><strong>The organizations that succeed in cloud security treat it as a core competency, not an
+                    afterthought.</strong></p>
+
+            <p><strong>Related Guides:</strong></p>
+            <ul>
+                <li><a href="/guides/container-security.html">Container Security: Docker & Kubernetes</a></li>
+                <li><a href="/guides/network-segmentation-zero-trust.html">Network Segmentation for Zero Trust</a></li>
+                <li><a href="/guides/siem-log-analysis.html">SIEM Log Analysis Guide</a></li>
+            </ul>
+
+            <a href="/guides/" class="btn-back">← Back to Guides</a>
+        </article>
+
+        <!-- Interaction Bar -->
+        <div class="interaction-bar">
+            <div class="like-section">
+                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                    <i class="far fa-heart"></i> <span id="likeText">Like this guide</span>
+                </button>
+            </div>
+            <div class="action-buttons">
+                <div class="share-buttons">
+                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"
+                        aria-label="Share on Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"
+                        aria-label="Share on LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link">
+                        <i class="fas fa-link"></i>
+                    </button>
+                </div>
+                <div class="button-separator"></div>
+                <button onclick="printArticle()" class="print-btn" title="Print Guide" aria-label="Print Guide">
+                    <i class="fas fa-print"></i>
+                </button>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025 TheHGTech. All rights reserved.</p>
+            <a href="/guides/" class="btn-back">← Back to All Guides</a>
+        </footer>
+    </div>
+
+    <script src="/interaction-bar.js?v=20251207-0041"></script>
+</body>
+
+</html>
