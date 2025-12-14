@@ -268,17 +268,13 @@
             crossorigin="anonymous" referrerpolicy="no-referrer">
     </noscript>
 
-    <!-- ========== MOBILE OPTIMIZATION (Fresh Start v3.0) ========== -->
-    <!-- Mobile CSS - Non-render-blocking async load -->
-    <link rel="stylesheet" href="m-core.css?v=4.3" media="print" onload="this.media='(max-width: 768px)'">
-    <link rel="stylesheet" href="m-layout.css?v=3.4" media="print" onload="this.media='(max-width: 768px)'">
-    <link rel="stylesheet" href="m-components.css?v=3.1" media="print" onload="this.media='(max-width: 768px)'">
-    <noscript>
-        <link rel="stylesheet" href="m-core.css?v=4.3" media="(max-width: 768px)">
-        <link rel="stylesheet" href="m-layout.css?v=3.4" media="(max-width: 768px)">
-        <link rel="stylesheet" href="m-components.css?v=3.1" media="(max-width: 768px)">
-    </noscript>
-    <script src="m-app.js?v=4.4" defer></script>
+    <!-- ========== MOBILE OPTIMIZATION ========== -->
+    <!-- Mobile CSS - Sync load required to prevent CLS (layout shifts) -->
+    <!-- Note: Async loading caused CLS 0.766 - reverting to stable approach -->
+    <link rel="stylesheet" href="m-core.css?v=4.4" media="(max-width: 768px)">
+    <link rel="stylesheet" href="m-layout.css?v=3.5" media="(max-width: 768px)">
+    <link rel="stylesheet" href="m-components.css?v=3.2" media="(max-width: 768px)">
+    <script src="m-app.js?v=4.5" defer></script>
 
 
 
