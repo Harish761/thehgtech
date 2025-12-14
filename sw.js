@@ -3,22 +3,20 @@
  * Provides offline support and performance caching
  */
 
-const CACHE_VERSION = 'thehgtech-v1.0.0';
+const CACHE_VERSION = 'thehgtech-v2.0.0'; // Bumped version to invalidate old caches
 const CACHE_STATIC = `${CACHE_VERSION}-static`;
 const CACHE_DYNAMIC = `${CACHE_VERSION}-dynamic`;
 const CACHE_IMAGES = `${CACHE_VERSION}-images`;
 
-// Static assets to cache immediately
+// Static assets to cache immediately - using minified versions
 const STATIC_ASSETS = [
     '/',
     '/index.html',
-    '/mobile.css',
-    '/mobile.js',
+    '/m-core.min.css',
+    '/m-layout.min.css',
+    '/m-components.min.css',
+    '/m-app.js',
     '/content.js',
-    '/threat-intel.js',
-    '/rotating-text.css',
-    '/cve-display.css',
-    '/ransomware-display.css',
     '/offline.html' // Fallback page
 ];
 
