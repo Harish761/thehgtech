@@ -5,52 +5,52 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Dec 13 2025",
-            "title": "ClickFix Attacks Persist with New Tactics",
-            "content": "ClickFix attacks continue to exploit user interaction vulnerabilities, maintaining their effectiveness by leveraging social engineering techniques. Despite ongoing efforts to mitigate these threats, attackers have adapted by employing more sophisticated phishing strategies that target human error. Organizations remain at risk, especially where security training is lacking, as these attacks can lead to unauthorized access or data breaches. The persistence of ClickFix highlights the need for continuous user education and robust security policies. Companies should regularly update their security protocols and conduct phishing simulations to better prepare their employees against such threats.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32566"
+            "title": "CISA Flags Exploited Sierra Wireless Router Vulnerability",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a critical vulnerability in Sierra Wireless AirLink ALEOS routers to its Known Exploited Vulnerabilities catalog. Identified as CVE-2018-4063, this flaw carries a CVSS score of 8.8/9.9 and allows remote code execution, which has been actively exploited. Organizations using these routers are at risk of unauthorized access and control by attackers. This inclusion underscores the ongoing threat landscape where older vulnerabilities remain attractive targets for cybercriminals. CISA advises immediate patching and network monitoring to mitigate potential breaches.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/12/cisa-adds-actively-exploited-sierra.html"
+        },
+        {
+            "date": "Dec 13 2025",
+            "title": "Apple Releases Urgent Security Updates for WebKit Flaws",
+            "content": "Apple has issued security updates for several of its operating systems, including iOS, iPadOS, macOS, and watchOS, to address two critical WebKit vulnerabilities. These flaws, which were also targeted in Google&#x27;s Chrome browser earlier this week, have been actively exploited in the wild. The vulnerabilities could allow attackers to execute arbitrary code on affected devices, posing significant risks to users. Apple users are advised to update their devices immediately to protect against potential exploitation. This incident highlights the persistent threat of zero-day vulnerabilities in widely used software.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/12/apple-issues-security-updates-after-two.html"
+        },
+        {
+            "date": "Dec 13 2025",
+            "title": "Microsoft Expands Bug Bounty Scope to Include All Vulnerabilities",
+            "content": "Microsoft has announced a shift in its cybersecurity strategy with the introduction of the &#x27;In Scope by Default&#x27; policy for its bug bounty program. This change means that all vulnerabilities, regardless of their initial classification, are now eligible for bug bounties. The move is a response to the evolving threat landscape, where AI-enabled attackers exploit vulnerabilities across diverse platforms. By broadening the scope, Microsoft aims to incentivize researchers to uncover and report security flaws more comprehensively. Security professionals are encouraged to participate in this expanded program to enhance overall software security.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4105950/microsoft-flips-security-script-in-scope-by-default-makes-all-vulnerabilities-fair-game-for-bug-bounties.html"
+        },
+        {
+            "date": "Dec 13 2025",
+            "title": "Home Depot&#x27;s Internal Systems Exposed Due to Credential Leak",
+            "content": "A leaked GitHub access token exposed Home Depot&#x27;s internal systems for nearly a year, according to security researcher Ben Zimmermann. The token, accidentally published by an employee in early 2024, granted unauthorized access to sensitive systems. This incident highlights the critical need for stringent access management and monitoring practices to prevent accidental exposure of credentials. Home Depot is likely undertaking a comprehensive review of its security protocols to prevent future breaches. Organizations are reminded to regularly audit access tokens and implement strict controls to safeguard internal resources.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4105940/leaked-home-depot-credential-exposed-internal-systems-for-a-year.html"
         },
         {
             "date": "Dec 12 2025",
-            "title": "Apple Patches Critical Zero-Day Vulnerabilities in Emergency Update",
-            "content": "Apple has released urgent patches for two zero-day vulnerabilities, CVE-2025-12345 and CVE-2025-12346, following their exploitation in highly sophisticated attacks. These flaws affected iOS versions prior to 16.5.1 and macOS versions before 13.3.1, allowing attackers to execute arbitrary code with kernel privileges. The vulnerabilities were reportedly used in targeted attacks against high-profile individuals, emphasizing the severity and precision of the threat. Users are strongly advised to update their devices immediately to mitigate potential risks. This incident underscores the importance of maintaining up-to-date systems and the ongoing challenge of defending against advanced persistent threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/apple-fixes-two-zero-day-flaws-exploited-in-sophisticated-attacks/"
-        },
-        {
-            "date": "Dec 12 2025",
-            "title": "Strengthening Cybersecurity through CISO-COO Collaboration",
-            "content": "The evolving landscape of digital transformation has necessitated a closer partnership between Chief Information Security Officers (CISOs) and Chief Operating Officers (COOs) to ensure operational resilience. As cybersecurity becomes integral to business operations, this collaboration aims to align security strategies with business objectives, enhancing both protection and efficiency. Organizations that foster strong CISO-COO relationships are better equipped to anticipate and mitigate cyber threats while maintaining operational excellence. This trend highlights the strategic importance of integrating cybersecurity considerations into the core business processes. Companies should encourage cross-departmental communication to strengthen their security posture.",
+            "title": "Microsoft Integrates Security Copilot with M365 Enterprise",
+            "content": "Microsoft is set to bundle its Security Copilot tool with Microsoft 365 Enterprise licenses, a move announced at the recent Ignite conference. This integration includes the launch of 12 new agents designed to enhance threat detection and response capabilities within enterprise environments. Security Copilot leverages AI to provide real-time insights and automate security tasks, aiming to bolster organizational defenses against sophisticated cyber threats. Enterprises using Microsoft 365 are encouraged to explore these new capabilities to strengthen their cybersecurity posture. This strategic expansion reflects Microsoft&#x27;s commitment to integrated security solutions.",
             "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/the-ciso-coo-partnership-protecting-operational-excellence"
+            "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/microsoft-bundle-security-copilot-m365-enterprise-license"
         },
         {
             "date": "Dec 12 2025",
-            "title": "DOJ Takes Legal Action Over 2020 Voter Data Breach",
-            "content": "The Department of Justice has filed a lawsuit against Fulton County, alleging mishandling of voter data during the 2020 elections. This legal action comes despite assurances from Georgia&#x27;s Secretary of State, Brad Raffensperger, that the election results were secure and valid. The lawsuit aims to address potential vulnerabilities in election data management and ensure accountability. This development serves as a reminder of the critical importance of securing electoral systems against cyber threats. Election officials are urged to review and strengthen their data protection measures to prevent future breaches and maintain public trust in the electoral process.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/doj-sues-fulton-county-georgia-over-2020-voter-data/"
+            "title": "PyStoreRAT Malware Distributed via Fake GitHub Repositories",
+            "content": "Cybersecurity researchers have identified a new malware campaign utilizing GitHub-hosted Python repositories to spread PyStoreRAT, a JavaScript-based Remote Access Trojan. These repositories are disguised as development utilities or open-source intelligence (OSINT) tools, deceiving users into downloading malicious code. PyStoreRAT enables attackers to gain unauthorized access and control over compromised systems. Developers and security professionals are urged to scrutinize repository authenticity and implement robust security practices to avoid such threats. This campaign underscores the growing risk of malware distribution through trusted platforms like GitHub.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/12/fake-osint-and-gpt-utility-github-repos.html"
         },
         {
             "date": "Dec 12 2025",
-            "title": "React2Shell Exploits Surge Amid WAF Bypass Discoveries",
-            "content": "Exploitation of the React2Shell vulnerability, identified as CVE-2025-55182, is intensifying, with attackers developing methods to bypass web application firewall (WAF) protections. This vulnerability affects web applications using certain versions of the React framework, enabling remote code execution. The surge in exploit activity poses a significant risk to organizations relying on vulnerable systems, potentially leading to data breaches or service disruptions. Security experts recommend immediate patching and reviewing WAF configurations to ensure they can effectively block these advanced exploits. This situation underscores the ongoing arms race between attackers and defenders in the cybersecurity landscape.",
+            "title": "Surge in Supply Chain Attacks on GitHub Actions in 2025",
+            "content": "At the Black Hat Europe conference, researchers highlighted a significant increase in supply chain attacks targeting GitHub Actions in 2025. These attacks exploit vulnerabilities in the automation workflows of open-source projects, underscoring the need for a shared responsibility model in software security. Developers are encouraged to adopt best practices and not rely solely on GitHub for security measures. This trend reflects the broader challenge of securing the software supply chain, which remains a prime target for attackers seeking to compromise widely used tools and platforms.",
             "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/threat-intelligence/react2shell-exploits-flood-internet-attacks-continue"
-        },
-        {
-            "date": "Dec 12 2025",
-            "title": "Vibe Coding: Balancing Innovation with Cybersecurity",
-            "content": "The concept of &quot;vibe coding,&quot; which emphasizes creative freedom and rapid development, is gaining traction but also raises significant cybersecurity concerns. This approach can lead to unmanaged code that introduces vulnerabilities and increases the attack surface. Security expert Constantine warns that while innovation is crucial, it must be balanced with rigorous security practices to prevent potential breaches. Organizations adopting vibe coding should implement strict code review processes and security testing to mitigate risks. This trend highlights the need for developers to remain vigilant and integrate security into the development lifecycle.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/application-security/vibe-coding-innovation-demands-vigilance"
-        },
-        {
-            "date": "Dec 12 2025",
-            "title": "Android Exploit Discovered in ITW DNG Files",
-            "content": "An investigation by Google&#x27;s Threat Intelligence Group has uncovered an Android exploit embedded in suspicious DNG image files. These files, uploaded to VirusTotal between July 2024 and February 2025, were initially flagged by Meta&#x27;s security team. The exploit leverages a vulnerability in certain Android versions, allowing attackers to execute code remotely. This discovery highlights the ongoing threat of malicious file uploads and the importance of robust file scanning mechanisms. Android users and developers should ensure their systems are updated and employ comprehensive security tools to detect and prevent such exploits. This case underscores the necessity of cross-industry collaboration in identifying and mitigating emerging threats.",
-            "source": "Project Zero",
-            "sourceUrl": "https://googleprojectzero.blogspot.com/2025/12/a-look-at-android-itw-dng-exploit.html"
+            "sourceUrl": "https://www.darkreading.com/application-security/supply-chain-attacks-targeting-github-actions-increased-in-2025"
         },
         {
             "date": "May 05 2026",
@@ -62,53 +62,53 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Dec 13 2025",
-            "title": "Enterprise AI Coding Pilots Struggle Despite Advanced Models",
-            "content": "The latest developments in generative AI for software engineering have introduced agentic coding, where AI systems autonomously plan, execute, and iterate coding tasks. Despite these advancements, many enterprise deployments fail to meet expectations. The challenges lie not in the models themselves but in integrating these complex systems into existing workflows and aligning them with human processes. This underperformance affects companies investing heavily in AI-driven software development, potentially delaying expected productivity gains. Industry leaders should assess their implementation strategies, ensuring that AI tools complement rather than disrupt current operations. Understanding the operational context and setting realistic goals are crucial for maximizing AI&#x27;s potential in coding environments.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/why-most-enterprise-ai-coding-pilots-underperform-hint-its-not-the-model"
-        },
-        {
-            "date": "Dec 13 2025",
-            "title": "AI Data Center Expansion Threatens Traditional Infrastructure Projects",
-            "content": "The rapid expansion of AI data centers is drawing resources away from traditional infrastructure projects like roads and bridges. As demand for data processing and storage increases, construction of these facilities is accelerating, potentially sidelining public infrastructure improvements. This shift in focus could impact communities relying on federal and state funding for essential infrastructure upgrades. Policymakers and urban planners must balance technological advancements with public needs, ensuring that critical infrastructure does not fall into disrepair. Stakeholders should advocate for integrated planning strategies that consider the long-term implications of prioritizing data centers over essential public works.",
+            "date": "Dec 12 2025",
+            "title": "Comprehensive Timeline of ChatGPT&#x27;s Evolution Throughout 2025",
+            "content": "TechCrunch has released an updated timeline detailing the significant updates and releases of ChatGPT over the past year. This comprehensive overview highlights the progressive enhancements made to the AI-powered chatbot, showcasing its evolving capabilities and integration into various applications. The timeline serves as a valuable resource for developers and businesses leveraging ChatGPT, providing insights into its development trajectory and potential future applications. As ChatGPT continues to evolve, understanding its updates is crucial for maximizing its utility in different sectors. Professionals are encouraged to review the timeline to stay informed about the latest advancements and prepare for future integrations.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/13/ai-data-center-boom-could-be-bad-news-for-other-infrastructure-projects/"
+            "sourceUrl": "https://techcrunch.com/2025/12/12/chatgpt-everything-to-know-about-the-ai-chatbot/"
         },
         {
             "date": "Dec 12 2025",
-            "title": "LinkedIn Algorithm Faces Scrutiny Over Gender Bias Concerns",
-            "content": "Recent experiments by female LinkedIn users suggest potential gender bias in the platform&#x27;s new algorithm, sparking debate among experts. While initial findings indicated discriminatory patterns, further analysis reveals a more complex scenario involving multiple algorithmic factors. LinkedIn&#x27;s algorithm, designed to enhance user engagement, may inadvertently amplify existing biases if not carefully managed. This development raises concerns for professionals relying on the platform for networking and career advancement. LinkedIn users and developers should remain vigilant, advocating for transparency and fairness in algorithmic design. Continuous monitoring and adjustments are essential to ensure equitable outcomes across all demographics.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/12/ok-whats-going-on-with-linkedins-algo/"
-        },
-        {
-            "date": "Dec 12 2025",
-            "title": "Google DeepMind Enhances Gemini Audio Models for Superior Voice Interaction",
-            "content": "Google DeepMind has announced improvements to its Gemini audio models, enhancing voice interaction capabilities. These upgrades promise more natural and responsive voice experiences, crucial for applications in virtual assistants and customer service automation. The enhanced models leverage advanced neural network architectures to better understand and generate human-like speech. This advancement is poised to impact industries reliant on voice technology, offering more efficient and engaging user interactions. Developers should explore integrating these models into their systems to capitalize on improved voice recognition and synthesis. Staying updated with the latest model releases ensures competitive advantage in voice-enabled applications.",
-            "source": "Google DeepMind News",
-            "sourceUrl": "https://deepmind.google/blog/improved-gemini-audio-models-for-powerful-voice-experiences/"
-        },
-        {
-            "date": "Dec 12 2025",
-            "title": "Trump&#x27;s AI Executive Order Sparks Legal Uncertainty for Startups",
-            "content": "President Trump has signed an executive order aiming to unify AI regulations under a single national framework, superseding state laws. While intended to streamline compliance, critics warn this move could lead to prolonged legal battles and uncertainty, particularly for startups navigating the evolving regulatory landscape. The order&#x27;s broad scope may conflict with existing state regulations, creating a complex legal environment. Startups should closely monitor developments and consult legal experts to mitigate potential risks. Engaging in industry discussions and advocacy can help shape a more stable regulatory future as Congress deliberates on comprehensive federal AI legislation.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/12/trumps-ai-executive-order-promises-one-rulebook-startups-may-get-legal-limbo-instead/"
-        },
-        {
-            "date": "Dec 12 2025",
-            "title": "Google Translate Introduces Real-Time Audio Translation in Headphones",
-            "content": "Google Translate has launched a new feature allowing users to hear real-time translations directly through their headphones. This innovation preserves each speaker&#x27;s tone, emphasis, and cadence, enhancing conversational clarity. The feature leverages Google&#x27;s advanced language processing capabilities to facilitate seamless multilingual communication. This development is significant for global businesses and travelers, enabling more effective cross-language interactions. Users should update their Google Translate app to access this feature, ensuring compatibility with supported headphone models. Embracing this technology can improve communication efficiency in diverse linguistic environments.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/12/google-translate-now-lets-you-hear-real-time-translations-in-your-headphones/"
-        },
-        {
-            "date": "Dec 12 2025",
-            "title": "Autonomous AI Systems Set to Transform Industry in 2026",
-            "content": "The transition from experimental generative AI to autonomous systems is expected to redefine the AI landscape in 2026. These systems will move beyond summarization to actively perform tasks, emphasizing agency and energy efficiency. Industries such as manufacturing and logistics stand to benefit from AI&#x27;s ability to navigate complex environments autonomously. This shift requires organizations to rethink their AI strategies, focusing on integration and operational impact. Professionals should prepare for this evolution by enhancing their understanding of autonomous system capabilities and potential applications. Staying informed about these advancements is crucial for maintaining competitive advantage in rapidly changing sectors.",
+            "title": "BBVA Integrates ChatGPT Enterprise to Revolutionize Banking Workflows",
+            "content": "BBVA has announced the integration of ChatGPT Enterprise into its core banking workflows, aiming to enhance risk management and customer service. This strategic move addresses the challenge of extracting value from generative AI in the banking industry, focusing on practical applications rather than mere adoption. By embedding OpenAI&#x27;s platform, BBVA seeks to streamline operations and improve service delivery, potentially setting a new standard for AI use in financial services. The integration highlights a growing trend of leveraging AI to transform traditional banking processes. Industry professionals should consider the implications of AI-driven efficiency and explore similar opportunities for innovation.",
             "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/ai-in-2026-experimental-ai-concludes-autonomous-systems-rise/"
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/bbva-embeds-ai-into-banking-workflows-using-chatgpt-enterprise/"
+        },
+        {
+            "date": "Dec 12 2025",
+            "title": "Microsoft Copilot Usage Reveals Late-Night Philosophical Queries",
+            "content": "Microsoft&#x27;s analysis of Copilot usage has uncovered a notable trend of users engaging in philosophical and religious discussions during late-night hours. This &quot;2am philosophy question&quot; phenomenon suggests that AI tools are becoming a companion for existential contemplation, echoing F. Scott Fitzgerald&#x27;s musings on nighttime introspection. The data indicates a rise in such conversations, reflecting the evolving relationship between humans and AI in exploring complex topics. For developers and tech leaders, this trend underscores the importance of designing AI systems that can handle nuanced inquiries effectively. Understanding user behavior can inform future AI development and user experience enhancements.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/copilot-usage-analysis-2am-philosophy-questions/"
+        },
+        {
+            "date": "Dec 12 2025",
+            "title": "Ai2 Enhances Reinforcement Learning with Olmo 3.1 for Superior Reasoning",
+            "content": "The Allen Institute for AI (Ai2) has released Olmo 3.1, the latest iteration of its reinforcement learning models, which promises improved efficiency, transparency, and control. Building on the Olmo 3 family, this update extends training to achieve stronger reasoning benchmarks, positioning it as a powerful tool for AI research and applications. The enhancements are expected to benefit sectors requiring advanced reasoning capabilities, such as autonomous systems and complex decision-making processes. Researchers and developers should explore Olmo 3.1&#x27;s potential to enhance AI models and consider its implications for future AI developments. The release marks a significant step in reinforcement learning advancements.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/ai/ai2s-new-olmo-3-1-extends-reinforcement-learning-training-for-stronger"
+        },
+        {
+            "date": "Dec 12 2025",
+            "title": "Google Unveils Deepest AI Research Tool as OpenAI Launches GPT-5.2",
+            "content": "Google has launched its most advanced AI research agent, based on Gemini 3 Pro, allowing developers to embed this tool into their applications. This release coincides with OpenAI&#x27;s announcement of GPT-5.2, highlighting a competitive landscape in AI advancements. The Deep Research tool aims to provide developers with unprecedented access to Google&#x27;s cutting-edge AI capabilities, fostering innovation across various domains. This development represents a significant opportunity for developers to enhance their applications with robust AI features. Industry professionals should evaluate the potential of integrating Google&#x27;s tool to leverage its deep learning capabilities effectively.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/11/google-launched-its-deepest-ai-research-agent-yet-on-the-same-day-openai-dropped-gpt-5-2/"
+        },
+        {
+            "date": "Dec 12 2025",
+            "title": "Google and UC Santa Barbara Develop Efficient AI Compute Framework",
+            "content": "Researchers from Google and UC Santa Barbara have introduced a new framework designed to optimize tool and compute budgets for large language model (LLM) agents. The framework includes techniques such as the &quot;Budget Tracker,&quot; which improves the efficiency of AI operations. This development addresses the growing need for cost-effective AI deployments, ensuring that resources are utilized wisely without compromising performance. The framework&#x27;s introduction is timely, given the increasing demand for scalable AI solutions. AI professionals should consider adopting these techniques to enhance the efficiency and sustainability of their AI projects, aligning with industry trends towards resource optimization.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/ai/googles-new-framework-helps-ai-agents-spend-their-compute-and-tool-budget"
+        },
+        {
+            "date": "Dec 12 2025",
+            "title": "BBVA and OpenAI Expand Partnership for AI-Driven Banking Transformation",
+            "content": "BBVA is deepening its collaboration with OpenAI through a multi-year program to implement AI solutions across its global operations. By deploying ChatGPT Enterprise to all 120,000 employees, the initiative aims to enhance customer interactions and streamline operations, creating an AI-native banking experience. This partnership reflects a significant shift towards integrating AI into financial services, promising to transform traditional banking models. The collaboration underscores the potential of AI to drive efficiency and innovation in the sector. Financial institutions should observe this development closely and consider similar partnerships to remain competitive in an increasingly AI-driven market.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/bbva-collaboration-expansion"
         }
     ],
     "articles": {},
