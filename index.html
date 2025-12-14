@@ -73,15 +73,26 @@
     <meta name="format-detection" content="telephone=no, email=no, address=no">
 
 
-
-    <!-- ========== GOOGLE ANALYTICS 4 ========== -->
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2"></script>
+    <!-- ========== GOOGLE ANALYTICS 4 (Deferred for Performance) ========== -->
+    <!-- GA loads after page becomes interactive to improve LCP/FCP -->
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-XL6RCXZJE2');
+        // Defer GA loading until after window.onload for better PageSpeed
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                var gtmScript = document.createElement('script');
+                gtmScript.async = true;
+                gtmScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2';
+                document.head.appendChild(gtmScript);
+
+                gtmScript.onload = function () {
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag() { dataLayer.push(arguments); }
+                    window.gtag = gtag;
+                    gtag('js', new Date());
+                    gtag('config', 'G-XL6RCXZJE2');
+                };
+            }, 100); // Small delay after load event
+        });
     </script>
 
     <!-- ========== PERFORMANCE OPTIMIZATION ========== -->
@@ -261,16 +272,25 @@
     <link rel="stylesheet" href="ransomware-display.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="article-links-fix.css" media="print" onload="this.media='all'">
 
-    <!-- Font Awesome for Icons (Non-blocking) -->
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style"
-        onload="this.onload=null;this.rel='stylesheet'"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Font Awesome (Deferred until after page load for performance) -->
+    <script>
+        // Load Font Awesome after page becomes interactive
+        window.addEventListener('load', function () {
+            var fa = document.createElement('link');
+            fa.rel = 'stylesheet';
+            fa.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css';
+            fa.integrity = 'sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==';
+            fa.crossOrigin = 'anonymous';
+            fa.referrerPolicy = 'no-referrer';
+            document.head.appendChild(fa);
+        });
+    </script>
     <noscript>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
             integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
             crossorigin="anonymous" referrerpolicy="no-referrer">
     </noscript>
+
 
     <!-- ========== MOBILE OPTIMIZATION ========== -->
     <!-- Mobile CSS - Sync load required to prevent CLS (layout shifts) -->
