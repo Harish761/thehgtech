@@ -291,14 +291,18 @@
             crossorigin="anonymous" referrerpolicy="no-referrer">
     </noscript>
 
-
     <!-- ========== MOBILE OPTIMIZATION ========== -->
+    <!-- Preload mobile CSS for faster loading (while keeping sync to prevent CLS) -->
+    <link rel="preload" href="m-core.min.css?v=1" as="style" media="(max-width: 768px)">
+    <link rel="preload" href="m-layout.min.css?v=1" as="style" media="(max-width: 768px)">
+    <link rel="preload" href="m-components.min.css?v=1" as="style" media="(max-width: 768px)">
     <!-- Mobile CSS - Sync load required to prevent CLS (layout shifts) -->
-    <!-- Note: Async loading caused CLS 0.766 - reverting to stable approach -->
-    <link rel="stylesheet" href="m-core.css?v=4.4" media="(max-width: 768px)">
-    <link rel="stylesheet" href="m-layout.css?v=3.5" media="(max-width: 768px)">
-    <link rel="stylesheet" href="m-components.css?v=3.2" media="(max-width: 768px)">
-    <script src="m-app.js?v=4.5" defer></script>
+    <link rel="stylesheet" href="m-core.min.css?v=1" media="(max-width: 768px)">
+    <link rel="stylesheet" href="m-layout.min.css?v=1" media="(max-width: 768px)">
+    <link rel="stylesheet" href="m-components.min.css?v=1" media="(max-width: 768px)">
+    <script src="m-app.js?v=4.6" defer></script>
+
+
 
 
 
