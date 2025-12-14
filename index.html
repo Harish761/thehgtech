@@ -96,6 +96,10 @@
     <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
     <link rel="dns-prefetch" href="//t.fullres.net">
 
+    <!-- Preload critical resources for mobile -->
+    <link rel="preload" href="logo-dark.png" as="image" media="(max-width: 768px)">
+    <link rel="preload" href="m-core.css?v=4.4" as="style" media="(max-width: 768px)">
+
     <!-- Critical CSS - Inline for faster FCP -->
     <style>
         /* Critical above-the-fold styles for faster FCP/LCP */
@@ -3556,7 +3560,7 @@
     <header class="m-header m-only">
         <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
             <img src="logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" width="28" height="28"
-                style="height: 28px; width: 28px; margin: 0; object-fit: contain;">
+                style="height: 28px; width: 28px; margin: 0; object-fit: contain;" fetchpriority="high">
             <img src="logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" width="28" height="28"
                 style="height: 28px; width: 28px; margin: 0; object-fit: contain;">
             <span
@@ -3874,8 +3878,29 @@
 
                         <!-- News Card Stack Container -->
                         <div class="news-stack-container" id="newsStackContainer">
-                            <!-- Cards will be dynamically inserted here -->
-                            <div class="news-empty-state" id="newsEmptyState">
+                            <!-- Static LCP placeholder - replaced by JS -->
+                            <div class="mobile-news-card active" id="staticNewsPlaceholder"
+                                style="background: var(--m-bg-card, #1a1a1a); border: 1px solid var(--m-border, rgba(255,255,255,0.1)); border-radius: 16px; padding: 20px; margin: 0 16px;">
+                                <div class="mobile-news-card__source"
+                                    style="color: #00D9FF; font-size: 0.75rem; font-weight: 600; text-transform: uppercase;">
+                                    Cybersecurity</div>
+                                <div class="mobile-news-card__date"
+                                    style="color: #666; font-size: 0.75rem; margin-top: 4px;">Latest Updates</div>
+                                <h2 class="mobile-news-card__title"
+                                    style="font-size: 1.25rem; font-weight: 700; line-height: 1.3; margin: 12px 0; color: #fff;">
+                                    Live Cyber Threat Intelligence Dashboard</h2>
+                                <p class="mobile-news-card__excerpt"
+                                    style="color: #aaa; font-size: 0.95rem; line-height: 1.5; margin-bottom: 16px;">Stay
+                                    ahead with real-time cybersecurity news, CVE alerts, and threat intelligence.
+                                    Automated updates every 4 hours from trusted sources...</p>
+                                <div class="mobile-news-card__cta"
+                                    style="display: flex; align-items: center; justify-content: space-between; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 12px; color: #00D9FF; font-weight: 600; font-size: 0.9rem;">
+                                    <span>Loading latest news...</span>
+                                    <i class="fas fa-spinner fa-spin"></i>
+                                </div>
+                            </div>
+                            <!-- Dynamic cards will be inserted here -->
+                            <div class="news-empty-state" id="newsEmptyState" style="display: none;">
                                 <div class="news-empty-icon">
                                     <i class="fas fa-newspaper"></i>
                                 </div>

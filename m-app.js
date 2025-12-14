@@ -115,12 +115,16 @@
         const progressCounter = document.getElementById('newsProgressCounter');
         const navControls = document.getElementById('newsNavControls');
         const swipeHint = document.getElementById('newsSwipeHint');
+        const staticPlaceholder = document.getElementById('staticNewsPlaceholder');
 
         if (!container || typeof websiteContent === 'undefined') return;
 
         const newsData = category === 'cyber'
             ? (websiteContent.cyberShorts || [])
             : (websiteContent.aiShorts || []);
+
+        // Remove static LCP placeholder when real content loads
+        if (staticPlaceholder) staticPlaceholder.remove();
 
         if (newsData.length === 0) {
             if (emptyState) emptyState.style.display = 'flex';
