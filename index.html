@@ -168,6 +168,50 @@
             .mobile-news-card {
                 min-height: 350px;
             }
+
+            /* Critical mobile nav styles to prevent FOUC */
+            .m-header {
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 16px;
+                background: #000;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            .m-bottom-nav {
+                align-items: stretch;
+                justify-content: space-around;
+                background: linear-gradient(to top, #1c1c1e 0%, #1c1c1e 100%);
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+                padding-bottom: env(safe-area-inset-bottom, 0);
+            }
+
+            .m-bottom-nav__item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                flex: 1;
+                padding: 8px 4px;
+                color: rgba(255, 255, 255, 0.6);
+                text-decoration: none;
+                font-size: 0.65rem;
+            }
+
+            .m-bottom-nav__item i {
+                font-size: 1.25rem;
+                margin-bottom: 4px;
+            }
+
+            .m-bottom-nav__item.active {
+                color: #00D9FF;
+            }
+
+            /* Hide desktop elements on mobile */
+            .desktop-only,
+            .main-footer {
+                display: none !important;
+            }
         }
 
         /* CLS Prevention - Search Modal */
@@ -225,11 +269,16 @@
     </noscript>
 
     <!-- ========== MOBILE OPTIMIZATION (Fresh Start v3.0) ========== -->
-    <!-- Mobile CSS - Load async for desktop, immediate for mobile -->
-    <link rel="stylesheet" href="m-core.css?v=4.2" media="(max-width: 768px)">
-    <link rel="stylesheet" href="m-layout.css?v=3.3" media="(max-width: 768px)">
-    <link rel="stylesheet" href="m-components.css?v=3.0" media="(max-width: 768px)">
-    <script src="m-app.js?v=4.3" defer></script>
+    <!-- Mobile CSS - Non-render-blocking async load -->
+    <link rel="stylesheet" href="m-core.css?v=4.3" media="print" onload="this.media='(max-width: 768px)'">
+    <link rel="stylesheet" href="m-layout.css?v=3.4" media="print" onload="this.media='(max-width: 768px)'">
+    <link rel="stylesheet" href="m-components.css?v=3.1" media="print" onload="this.media='(max-width: 768px)'">
+    <noscript>
+        <link rel="stylesheet" href="m-core.css?v=4.3" media="(max-width: 768px)">
+        <link rel="stylesheet" href="m-layout.css?v=3.4" media="(max-width: 768px)">
+        <link rel="stylesheet" href="m-components.css?v=3.1" media="(max-width: 768px)">
+    </noscript>
+    <script src="m-app.js?v=4.4" defer></script>
 
 
 
@@ -6022,11 +6071,9 @@
     <!-- Back to Top Button -->
     <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
 
-    <!-- Ransomware Display -->
-    <script src="ransomware-display.js"></script>
-
-    <!-- Copy to Clipboard Utility -->
-    <script src="copy-to-clipboard.js"></script>
+    <!-- Non-critical scripts (deferred) -->
+    <script src="ransomware-display.js" defer></script>
+    <script src="copy-to-clipboard.js" defer></script>
 
 </body>
 
