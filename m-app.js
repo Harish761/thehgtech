@@ -29,6 +29,11 @@
         }
 
         updateThemeIcon();
+
+        // Dispatch custom event for other scripts (e.g. charts)
+        window.dispatchEvent(new CustomEvent('themeChanged', {
+            detail: { theme: isLight ? 'dark' : 'light' }
+        }));
     }
 
     function updateThemeIcon() {

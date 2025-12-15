@@ -944,7 +944,7 @@
                 <a href="index.html#contact">Contact</a>
 
                 <div class="theme-toggle-wrapper">
-                    <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle theme">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
                         <div class="toggle-stars">
                             <div class="star"></div>
                             <div class="star"></div>
@@ -2507,20 +2507,11 @@
             updateChart('newIOCsChart');
         }
 
-        // Dark/Light Mode Toggle - Global function for onclick
-        function toggleTheme() {
-            document.body.classList.toggle('light-mode');
-            const isLightMode = document.body.classList.contains('light-mode');
-            localStorage.setItem('theme', isLightMode ? 'light' : 'dark');
-            // Update charts
+        // Listen for theme changes to update charts
+        window.addEventListener('themeChanged', function () {
             if (typeof updateChartsTheme === 'function') updateChartsTheme();
             if (window.updateDashboardChartsTheme) window.updateDashboardChartsTheme();
-        }
-
-        // Initialize theme immediately to prevent flash
-        if (localStorage.getItem('theme') === 'light') {
-            document.body.classList.add('light-mode');
-        }
+        });
 
         // Header Functionality
         document.addEventListener('DOMContentLoaded', () => {

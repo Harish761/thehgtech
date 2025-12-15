@@ -590,7 +590,7 @@
                 <a href="index.html#contact">Contact</a>
 
                 <div class="theme-toggle-wrapper">
-                    <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle theme">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
                         <div class="toggle-stars">
                             <div class="star"></div>
                             <div class="star"></div>
@@ -934,7 +934,9 @@
 <link rel="stylesheet" href="m-layout.css?v=3.2">
 <link rel="stylesheet" href="m-components.css?v=3.0">
 <link rel="stylesheet" href="light-mode.css">
+<link rel="stylesheet" href="theme-toggle.css">
 <script src="m-app.js?v=4.3" defer><\/script>
+<script src="theme-toggle.js" defer><\/script>
     <style>
         * {
             margin: 0;
@@ -1199,12 +1201,12 @@
                     <a href="index.html#contact">Contact</a>
 
                     <div class="theme-toggle-wrapper">
-                        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-                            <div class="toggle-icon sun">
-                                <i class="fas fa-sun"></i>
-                            </div>
-                            <div class="toggle-icon moon">
-                                <i class="fas fa-moon"></i>
+                        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                            <div class="toggle-stars">
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
                             </div>
                         </button>
                     </div>
@@ -1392,30 +1394,8 @@
         loadArticles();
     </script>
     <script>
-        // Header Functionality
+        // Header Functionality (Mobile Menu Only - Theme handled by theme-toggle.js)
         document.addEventListener('DOMContentLoaded', () => {
-            // Theme Toggle
-            const themeToggle = document.getElementById('themeToggle');
-            const mobileThemeToggle = document.getElementById('mobileThemeToggle');
-            const body = document.body;
-
-            // Check local storage
-            if (localStorage.getItem('theme') === 'light') {
-                body.classList.add('light-mode');
-            }
-
-            window.toggleTheme = function toggleTheme() {
-                body.classList.toggle('light-mode');
-                if (body.classList.contains('light-mode')) {
-                    localStorage.setItem('theme', 'light');
-                } else {
-                    localStorage.setItem('theme', 'dark');
-                }
-            }
-
-            if (themeToggle) themeToggle.addEventListener('click', toggleTheme);
-            if (mobileThemeToggle) mobileThemeToggle.addEventListener('click', toggleTheme);
-
             // Mobile Menu
             const mobileMenuBtn = document.querySelector('.mobile-sidebar-btn');
             const mobileMenu = document.querySelector('.mobile-sidebar');

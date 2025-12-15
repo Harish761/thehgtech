@@ -1,47 +1,32 @@
 /* ========== THEME TOGGLE - GLOBAL ========== */
-/* Hardcoded theme toggle functionality for all pages */
+/* Baseline theme toggle - same as index.html */
 
+// Initialize theme immediately to prevent flash
 (function () {
-    'use strict';
-
-    // Initialize theme from localStorage on page load
-    function initTheme() {
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme === 'light') {
-            document.body.classList.add('light-mode');
-        } else {
-            document.body.classList.remove('light-mode');
-        }
+    if (localStorage.getItem('theme') === 'light') {
+        document.body.classList.add('light-mode');
     }
-
-    // Toggle theme function - exposed globally
-    window.toggleTheme = function () {
-        document.body.classList.toggle('light-mode');
-        const isLight = document.body.classList.contains('light-mode');
-        localStorage.setItem('theme', isLight ? 'light' : 'dark');
-    };
-
-    // Run on DOM ready
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', function () {
-            initTheme();
-
-            // Attach click handler to theme toggle button
-            const themeToggle = document.getElementById('themeToggle');
-            if (themeToggle) {
-                themeToggle.addEventListener('click', window.toggleTheme);
-            }
-        });
-    } else {
-        initTheme();
-
-        // Attach click handler to theme toggle button
-        const themeToggle = document.getElementById('themeToggle');
-        if (themeToggle) {
-            themeToggle.addEventListener('click', window.toggleTheme);
-        }
-    }
-
-    // Also run immediately to prevent flash
-    initTheme();
 })();
+
+// Global toggle function
+function toggleTheme() {
+    document.body.classList.toggle('light-mode');
+    const isLight = document.body.classList.contains('light-mode');
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+
+    // Dispatch event for charts/other components
+    window.dispatchEvent(new CustomEvent('themeChanged', {
+        detail: { theme: isLight ? 'light' : 'dark' }
+    }));
+}
+
+// Attach click listener when DOM is ready
+document.addEventListener('DOMContentLoaded', function () {
+    const btn = document.getElementById('themeToggle');
+    if (btn) {
+        btn.addEventListener('click', toggleTheme);
+        console.log('[theme-toggle.js] ✓ Attached to #themeToggle');
+    } else {
+        console.warn('[theme-toggle.js] ✗ #themeToggle not found');
+    }
+});

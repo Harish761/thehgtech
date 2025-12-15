@@ -298,6 +298,7 @@
     <link rel="stylesheet" href="m-layout.min.css?v=1" media="(max-width: 768px)">
     <link rel="stylesheet" href="m-components.min.css?v=1" media="(max-width: 768px)">
     <script src="m-app.js?v=4.6" defer></script>
+    <script src="theme-toggle.js" defer></script>
 
 
 
@@ -3824,7 +3825,7 @@
                 <a href="#" onclick="openModal('about'); return false;">About</a>
                 <a href="#" onclick="openModal('contact'); return false;">Contact</a>
                 <div class="theme-toggle-wrapper">
-                    <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle theme">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
                         <div class="toggle-stars">
                             <div class="star"></div>
                             <div class="star"></div>
@@ -5876,34 +5877,7 @@
             }
         }
 
-        // Theme toggle
-        function toggleTheme() {
-            const body = document.body;
-            const mobileIcon = document.getElementById('mobileThemeIcon');
 
-            if (body.classList.contains('light-mode')) {
-                body.classList.remove('light-mode');
-                localStorage.setItem('theme', 'dark');
-                if (mobileIcon) mobileIcon.textContent = '🌙';
-            } else {
-                body.classList.add('light-mode');
-                localStorage.setItem('theme', 'light');
-                if (mobileIcon) mobileIcon.textContent = '☀️';
-            }
-        }
-
-        // Load theme preference
-        function loadThemePreference() {
-            const savedTheme = localStorage.getItem('theme');
-            const mobileIcon = document.getElementById('mobileThemeIcon');
-
-            if (savedTheme === 'light') {
-                document.body.classList.add('light-mode');
-                if (mobileIcon) mobileIcon.textContent = '☀️';
-            } else {
-                if (mobileIcon) mobileIcon.textContent = '🌙';
-            }
-        }
 
         // Mobile menu
         function toggleMobileMenu() {
@@ -5975,25 +5949,7 @@
             }
         };
 
-        // Dark/Light Mode Toggle
-        function toggleTheme() {
-            const body = document.body;
-            const themeIcon = document.getElementById('theme-icon');
 
-            if (body.classList.contains('light-mode')) {
-                // Switch to dark mode
-                body.classList.remove('light-mode');
-                themeIcon.classList.remove('fa-sun');
-                themeIcon.classList.add('fa-moon');
-                localStorage.setItem('theme', 'dark');
-            } else {
-                // Switch to light mode
-                body.classList.add('light-mode');
-                themeIcon.classList.remove('fa-moon');
-                themeIcon.classList.add('fa-sun');
-                localStorage.setItem('theme', 'light');
-            }
-        }
 
         // Load saved theme on page load
         document.addEventListener('DOMContentLoaded', function () {

@@ -328,7 +328,7 @@
                 <a href="articles.html">Articles</a>
 
                 <div class="theme-toggle-wrapper">
-                    <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle theme">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
                         <div class="toggle-stars">
                             <div class="star"></div>
                             <div class="star"></div>
@@ -494,16 +494,7 @@
 
         loadStats();
 
-        // Theme toggle function
-        function toggleTheme() {
-            document.body.classList.toggle('light-mode');
-            localStorage.setItem('theme', document.body.classList.contains('light-mode') ? 'light' : 'dark');
-        }
 
-        // Initialize theme on load
-        if (localStorage.getItem('theme') === 'light') {
-            document.body.classList.add('light-mode');
-        }
 
         // Mobile menu
         const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
