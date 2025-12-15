@@ -1,0 +1,1530 @@
+{
+  "incidents": [
+    {
+      "id": "AIID-817",
+      "incident_id": 817,
+      "title": "Purportedly AI-Generated Images Reportedly Spread Misinformation During Hurricane Helene Response",
+      "date": "2025-12-13",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1232",
+      "incident_id": 1232,
+      "title": "Reportedly Fatal Xiaomi SU7 Ultra Crash in Chengdu Purportedly Involves Automated Driving Failure an",
+      "date": "2025-12-13",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1294",
+      "incident_id": 1294,
+      "title": "The New York Times Sued Perplexity for Allegedly Using Copyrighted Content and Generating False Attr",
+      "date": "2025-12-13",
+      "category": "misinformation",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-347",
+      "incident_id": 347,
+      "title": "Waymo Self-Driving Taxi Reportedly Behaved Unexpectedly, Driving away from Support Crew",
+      "date": "2025-12-12",
+      "category": "autonomous_vehicle",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-640",
+      "incident_id": 640,
+      "title": "Waymo Software Flaw Reportedly Leads to Double Collision with Tow Truck",
+      "date": "2025-12-12",
+      "category": "autonomous_vehicle",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-647",
+      "incident_id": 647,
+      "title": "A Self-Driving Waymo Robotaxi Reportedly Collided with a Bicyclist",
+      "date": "2025-12-12",
+      "category": "autonomous_vehicle",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-794",
+      "incident_id": 794,
+      "title": "Reported Glitch in Waymo Self-Driving Cars Purportedly Triggers Regular All-Night Honking in San Fra",
+      "date": "2025-12-12",
+      "category": "autonomous_vehicle",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-853",
+      "incident_id": 853,
+      "title": "Two Passengers Report Feeling Trapped in Waymo Car During Sensor Obstruction",
+      "date": "2025-12-12",
+      "category": "autonomous_vehicle",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-854",
+      "incident_id": 854,
+      "title": "Waymo Driverless Taxi Allegedly Stalled During Pedestrian Harassment Incident in San Francisco",
+      "date": "2025-12-12",
+      "category": "autonomous_vehicle",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-881",
+      "incident_id": 881,
+      "title": "Waymo Robotaxi Allegedly Collides With Serve Robotics Delivery Bot in Los Angeles",
+      "date": "2025-12-12",
+      "category": "autonomous_vehicle",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-903",
+      "incident_id": 903,
+      "title": "Northern Ireland MLA Cara Hunter Allegedly Targeted by Deepfake Pornography Ahead of May 2022 Assemb",
+      "date": "2025-12-12",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1269",
+      "incident_id": 1269,
+      "title": "Waymo Autonomous Vehicle Reportedly Ran Over and Killed a Cat in San Francisco",
+      "date": "2025-12-12",
+      "category": "autonomous_vehicle",
+      "severity": "critical"
+    },
+    {
+      "id": "AIID-1297",
+      "incident_id": 1297,
+      "title": "Blogger Milagro Gramz Allegedly Promoted AI-Generated Pornographic Deepfake Targeting Megan Thee Sta",
+      "date": "2025-12-12",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1298",
+      "incident_id": 1298,
+      "title": "Perplexity AI Reportedly Accused in Federal Lawsuit of Purported Copyright Infringement and False At",
+      "date": "2025-12-12",
+      "category": "misinformation",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1299",
+      "incident_id": 1299,
+      "title": "Bodycam Footage Reportedly Contradicted Purportedly ChatGPT-Generated Use-of-Force Narrative by Immi",
+      "date": "2025-12-12",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1300",
+      "incident_id": 1300,
+      "title": "Waymo Self-Driving Vehicles Reportedly Passed Stopped School Buses at Least 19 Times, Prompting NHTS",
+      "date": "2025-12-12",
+      "category": "prompt_injection",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1301",
+      "incident_id": 1301,
+      "title": "Purported AI-Generated Sexual Deepfakes Allegedly Deployed in Transnational Harassment Campaign Targ",
+      "date": "2025-12-12",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1302",
+      "incident_id": 1302,
+      "title": "Reported Viral AI-Generated Photo Purportedly Shows Donald Trump Using a Walker",
+      "date": "2025-12-12",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1303",
+      "incident_id": 1303,
+      "title": "USGS ShakeAlert System Reportedly Generated False Earthquake Alert Affecting Nevada and California",
+      "date": "2025-12-12",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1304",
+      "incident_id": 1304,
+      "title": "Whirlpool Reportedly Used AI-Altered Footage of North Carolina State Senator DeAndrea Salvador in Br",
+      "date": "2025-12-12",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1305",
+      "incident_id": 1305,
+      "title": "UK Facial Recognition System Reportedly Exhibits Higher False Positive Rates for Black and Asian Sub",
+      "date": "2025-12-12",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-995",
+      "incident_id": 995,
+      "title": "The New York Times Reportedly Sues OpenAI and Microsoft Over Alleged Unauthorized AI Training on Its",
+      "date": "2025-12-06",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1291",
+      "incident_id": 1291,
+      "title": "South Korean Fraud Ring Allegedly Used Deepfake Identities to Traffic Victims into Cambodia Scam Ope",
+      "date": "2025-12-06",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1292",
+      "incident_id": 1292,
+      "title": "Glasgow Man Allegedly Used AI Tool to Create and Share Non-Consensual Deepfake Nude Images of Former",
+      "date": "2025-12-06",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1293",
+      "incident_id": 1293,
+      "title": "Purported Deepfake Impersonating Cyprus President Nikos Christodoulides Reportedly Defrauded Citizen",
+      "date": "2025-12-06",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1295",
+      "incident_id": 1295,
+      "title": "Japanese Teen Allegedly Uses AI-Generated Program to Breach Kaikatsu Frontier and Leak Data of 7.3 M",
+      "date": "2025-12-06",
+      "category": "data_leak",
+      "severity": "critical"
+    },
+    {
+      "id": "AIID-1296",
+      "incident_id": 1296,
+      "title": "Attacker Reportedly Bypasses AI Safety Filters to Obtain Guidance for Non-Fatal Hammer Assault in De",
+      "date": "2025-12-06",
+      "category": "prompt_injection",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-715",
+      "incident_id": 715,
+      "title": "Over 400 Purportedly AI-Driven Scams Reportedly Led to $8M Loss for Australians in 2023",
+      "date": "2025-12-02",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-721",
+      "incident_id": 721,
+      "title": "Reported Use of Purportedly AI-Generated Student Accounts in Online College Courses",
+      "date": "2025-12-02",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-839",
+      "incident_id": 839,
+      "title": "Purportedly AI-Driven Phishing Scam Uses Spoofed Google Call to Attempt Gmail Breach of Security Exp",
+      "date": "2025-12-02",
+      "category": "data_leak",
+      "severity": "critical"
+    },
+    {
+      "id": "AIID-1290",
+      "incident_id": 1290,
+      "title": "Alleged Fabricated News Sites and Deepfakes Impersonated Maltese Ministers, Financial Experts, and M",
+      "date": "2025-11-30",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-935",
+      "incident_id": 935,
+      "title": "Reported Deepfake of Maltese Prime Minister Robert Abela and Journalist Mark Laurence Zammit Used to",
+      "date": "2025-11-29",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1285",
+      "incident_id": 1285,
+      "title": "Purportedly AI-Generated Jason Momoa Deepfake Used in Romance Scam Reportedly Defrauding British Wid",
+      "date": "2025-11-29",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1286",
+      "incident_id": 1286,
+      "title": "Purportedly AI-Assisted Citation Errors Allegedly Found in Newfoundland and Labrador's 2025 Health W",
+      "date": "2025-11-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1287",
+      "incident_id": 1287,
+      "title": "Purported Deepfake-Based Facebook Impersonation Reportedly Targets Daughter of Scot in Coma",
+      "date": "2025-11-29",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1288",
+      "incident_id": 1288,
+      "title": "Purported Deepfake Video and Fake News Articles Allegedly Used to Impersonate Guernsey's Chief Minis",
+      "date": "2025-11-29",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1289",
+      "incident_id": 1289,
+      "title": "Malta's Prime Minister Robert Abela Reportedly Deepfaked by a Ukrainian National in Cryptocurrency F",
+      "date": "2025-11-29",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-634",
+      "incident_id": 634,
+      "title": "Alleged Deepfake CFO Scam Reportedly Costs Multinational Engineering Firm Arup $25 Million",
+      "date": "2025-11-26",
+      "category": "deepfake",
+      "severity": "critical"
+    },
+    {
+      "id": "AIID-1128",
+      "incident_id": 1128,
+      "title": "Philippine Officials Reportedly Share Veo 3-Generated Video to Support Vice President Sara Duterte D",
+      "date": "2025-11-26",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1284",
+      "incident_id": 1284,
+      "title": "Secret Desires AI Platform Reportedly Exposed Nearly Two Million Sensitive Images in Cloud Storage L",
+      "date": "2025-11-25",
+      "category": "data_leak",
+      "severity": "critical"
+    },
+    {
+      "id": "AIID-1117",
+      "incident_id": 1117,
+      "title": "North Korea-Linked Actors Allegedly Use AI Executive Deepfakes in Zoom Phishing Targeting Web3 Emplo",
+      "date": "2025-11-24",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1201",
+      "incident_id": 1201,
+      "title": "Anthropic Reportedly Identifies AI Misuse in Extortion Campaigns, North Korean IT Schemes, and Ranso",
+      "date": "2025-11-24",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1208",
+      "incident_id": 1208,
+      "title": "North Korea's Kimsuky Group Reportedly Uses AI-Generated Military ID Deepfakes in Phishing Campaign",
+      "date": "2025-11-24",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1032",
+      "incident_id": 1032,
+      "title": "Reported Doctored Video of Nigerian President Bola Tinubu Claims Naira Will Be Replaced by U.S. Doll",
+      "date": "2025-11-23",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1087",
+      "incident_id": 1087,
+      "title": "Campaign Featuring Purported AI-Generated Audio Attributed to Omar al-Bashir Spreads During Sudanese",
+      "date": "2025-11-23",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1088",
+      "incident_id": 1088,
+      "title": "Purported AI-Generated Audio Disinformation Reportedly Attributed to U.S. Ambassador John Godfrey Ci",
+      "date": "2025-11-23",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1089",
+      "incident_id": 1089,
+      "title": "Purported AI-Generated Content Circulates Widely in Sudan Amid Civil Conflict and Information Vacuum",
+      "date": "2025-11-23",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1091",
+      "incident_id": 1091,
+      "title": "Purported Synthesia Avatars Used in Alleged Pro-Junta Deepfake Video Supporting Ibrahim Traor\u00e9 in Bu",
+      "date": "2025-11-23",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1094",
+      "incident_id": 1094,
+      "title": "At Least 294 Purported AI-Generated Music Videos Portray Celebrities Praising Burkina Faso's Ibrahim",
+      "date": "2025-11-23",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1095",
+      "incident_id": 1095,
+      "title": "Alleged Russian-Linked Deepfake Campaign Misattributes Infrastructure Projects to Burkina Faso's Ibr",
+      "date": "2025-11-23",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1096",
+      "incident_id": 1096,
+      "title": "Purported AI-Generated Video Depicts Ibrahim Traor\u00e9 of Burkina Faso Delivering Speech on Western Exp",
+      "date": "2025-11-23",
+      "category": "other",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1166",
+      "incident_id": 1166,
+      "title": "ChatGPT Reportedly Suggests Sodium Bromide as Chloride Substitute, Leading to Bromism and Hospitaliz",
+      "date": "2025-11-23",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1226",
+      "incident_id": 1226,
+      "title": "Old Mutual Reportedly Warns of Purported Deepfake Videos Impersonating Chairman Trevor Manuel in Inv",
+      "date": "2025-11-23",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1236",
+      "incident_id": 1236,
+      "title": "Quantum AI Scam Reportedly Used AI-Generated Celebrity Endorsements and Spoofed Media Sites to Solic",
+      "date": "2025-11-23",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1276",
+      "incident_id": 1276,
+      "title": "Ottawa Couple Reportedly Loses CA$177,023 After Purported Deepfake Elon Musk Investment Scam",
+      "date": "2025-11-23",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1277",
+      "incident_id": 1277,
+      "title": "Alleged Harmful Outputs and Data Exposure in Children's AI Products by FoloToy, Miko, and Character.",
+      "date": "2025-11-23",
+      "category": "data_leak",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1278",
+      "incident_id": 1278,
+      "title": "ChatGPT Reportedly Found to Reproduce Protected German Lyrics in Copyright Case",
+      "date": "2025-11-23",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1279",
+      "incident_id": 1279,
+      "title": "Prominent AI Chatbots Allegedly Produced Incorrect UK Financial and ISA Guidance",
+      "date": "2025-11-23",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1280",
+      "incident_id": 1280,
+      "title": "Reported Use of AI Voice and Identity Manipulation in the Ongoing 'Phantom Hacker' Fraud Scheme",
+      "date": "2025-11-23",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1281",
+      "incident_id": 1281,
+      "title": "Alleged Harmful Health Outcomes Following Reported Use of Purported ChatGPT-Generated Medical Advice",
+      "date": "2025-11-23",
+      "category": "content_moderation",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1282",
+      "incident_id": 1282,
+      "title": "Reported Disqualification of Two Books from the Ockham New Zealand Book Awards Due to Alleged AI-Gen",
+      "date": "2025-11-23",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1283",
+      "incident_id": 1283,
+      "title": "Purported AI-Enabled Pro-Russian Influence Campaign Centered on Burkina Faso's Ibrahim Traor\u00e9 and Di",
+      "date": "2025-11-23",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-597",
+      "incident_id": 597,
+      "title": "Female Students at Westfield High School in New Jersey Reportedly Targeted with Deepfake Nudes",
+      "date": "2025-11-19",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-799",
+      "incident_id": 799,
+      "title": "Aledo High School Student Allegedly Generates and Distributes Deepfake Nudes of Seven Female Classma",
+      "date": "2025-11-19",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1048",
+      "incident_id": 1048,
+      "title": "Tennessee Meteorologist's Likeness Reportedly Used in Sextortion Campaign Involving Purported AI-Gen",
+      "date": "2025-11-19",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1275",
+      "incident_id": 1275,
+      "title": "Purportedly AI-Enhanced Phishing Campaign Allegedly Impersonates Australian Government Services in L",
+      "date": "2025-11-19",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1054",
+      "incident_id": 1054,
+      "title": "Anthropic Report Details Claude Misuse for Influence Operations, Credential Stuffing, Recruitment Fr",
+      "date": "2025-11-18",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-137",
+      "incident_id": 137,
+      "title": "Israeli Tax Authority Reportedly Used an Opaque Automated System to Issue a Fine, Declining to Expla",
+      "date": "2025-11-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-543",
+      "incident_id": 543,
+      "title": "Purported AI-Generated Image of Explosion Near Pentagon Reportedly Triggers Brief Market Dip and Pub",
+      "date": "2025-11-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-643",
+      "incident_id": 643,
+      "title": "Purported Deepfake Video Allegedly Claims Kyiv's Assassination Plan Against President Emmanuel Macro",
+      "date": "2025-11-17",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-602",
+      "incident_id": 602,
+      "title": "Russia Reportedly Using Artificial Intelligence in Disinformation Campaigns to Erode Western Support",
+      "date": "2025-11-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-656",
+      "incident_id": 656,
+      "title": "Purported Deepfake Disinformation Aired on Russian State TV Allegedly Linking Ukraine to Moscow Atta",
+      "date": "2025-11-17",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-659",
+      "incident_id": 659,
+      "title": "Mass Facial Recognition Program in Gaza Reportedly Used by Israeli Forces to Identify Palestinians",
+      "date": "2025-11-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-666",
+      "incident_id": 666,
+      "title": "Presidency of Moldova Reportedly Refutes Purported Deepfake Video Slandering President Maia Sandu",
+      "date": "2025-11-17",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-671",
+      "incident_id": 671,
+      "title": "Many Purported Political Deepfakes Reportedly Circulating in Run-up to 2024 Pakistani General Electi",
+      "date": "2025-11-17",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-672",
+      "incident_id": 672,
+      "title": "'Lavender' and 'The Gospel' AI Systems Reportedly Used in Gaza Targeting Operations with Civilian Ha",
+      "date": "2025-11-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-682",
+      "incident_id": 682,
+      "title": "GOP Pollster Reportedly Shares Purportedly AI-Generated Images to Fabricate Appearance of Black Vote",
+      "date": "2025-11-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-694",
+      "incident_id": 694,
+      "title": "Purported Republican AI Ad Reportedly Depicts Dystopian Future After Biden Reelection Announcement",
+      "date": "2025-11-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-697",
+      "incident_id": 697,
+      "title": "Purported Deepfake Image Allegedly Circulating of Donald Trump with Underage Girl at Jeffrey Epstein",
+      "date": "2025-11-17",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-713",
+      "incident_id": 713,
+      "title": "Purported Deepfake Video Falsely Depicts Biden Announcing National Draft for Ukraine",
+      "date": "2025-11-17",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-731",
+      "incident_id": 731,
+      "title": "Purportedly Hallucinated Software Packages with Potential Malware Reportedly Downloaded Thousands of",
+      "date": "2025-11-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-739",
+      "incident_id": 739,
+      "title": "Scammers Allegedly Use Deepfake of Hong Kong Entertainer Andy Lau to Steal NT$2.64 Million from Fan",
+      "date": "2025-11-17",
+      "category": "deepfake",
+      "severity": "critical"
+    },
+    {
+      "id": "AIID-755",
+      "incident_id": 755,
+      "title": "Purported Deepfake Targets Olena Zelenska in Alleged Russian Disinformation Campaign",
+      "date": "2025-11-17",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-766",
+      "incident_id": 766,
+      "title": "Trump Reportedly Shares Purportedly AI-Generated Images Falsely Suggesting Taylor Swift Endorsement",
+      "date": "2025-11-17",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-774",
+      "incident_id": 774,
+      "title": "Covert AI Influence Operations Linked to Russia, China, Iran, and Israel, OpenAI Reports",
+      "date": "2025-11-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-802",
+      "incident_id": 802,
+      "title": "Purported Deepfake of Brian May Allegedly Exploited in Scam Offering Fake Queen Backstage Tickets",
+      "date": "2025-11-17",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-805",
+      "incident_id": 805,
+      "title": "Senator Ben Cardin Reportedly Received a Purported Deepfake Zoom Call Impersonating Former Ukrainian",
+      "date": "2025-11-17",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-912",
+      "incident_id": 912,
+      "title": "Yahoo Boys and Scammers from Morocco Allegedly Target U.S. Widows and Vulnerable Individuals with 'A",
+      "date": "2025-11-17",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-920",
+      "incident_id": 920,
+      "title": "Alleged Deepfake Scam Reportedly Promoted Trump Golden Eagles Project as Investment Opportunity",
+      "date": "2025-11-17",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-968",
+      "incident_id": 968,
+      "title": "'Pravda' Network, Successor to 'Portal Kombat,' Allegedly Seeding AI Models with Kremlin Disinformat",
+      "date": "2025-11-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-969",
+      "incident_id": 969,
+      "title": "Russian Disinformation Campaign Allegedly Used Fake News Site 'KBSF-San Francisco News' and Deepfake",
+      "date": "2025-11-17",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-974",
+      "incident_id": 974,
+      "title": "Purported Deepfake Audio Allegedly Impersonates U.S. Secretary of State Marco Rubio in Starlink Disi",
+      "date": "2025-11-17",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1028",
+      "incident_id": 1028,
+      "title": "OpenAI's Operator Agent Reportedly Executed Unauthorized $31.43 Transaction Despite Safety Protocol",
+      "date": "2025-11-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1060",
+      "incident_id": 1060,
+      "title": "Institute for Strategic Dialogue Reports Russian-Aligned Operation Overload Using Purported AI-Gener",
+      "date": "2025-11-17",
+      "category": "fraud",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1069",
+      "incident_id": 1069,
+      "title": "Purported Graphite Spyware Linked to Paragon Solutions Allegedly Deployed Against Journalists and Ci",
+      "date": "2025-11-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1098",
+      "incident_id": 1098,
+      "title": "Image Purporting to Show President Paul Kagame of Rwanda in M23 Uniform Reportedly AI-Generated",
+      "date": "2025-11-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1116",
+      "incident_id": 1116,
+      "title": "Alleged Deepfake Video Depicts Former Malaysian Inspector-General of Police Tan Sri Acryl Sani Abdul",
+      "date": "2025-11-17",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1118",
+      "incident_id": 1118,
+      "title": "Ongoing Purported AI-Assisted Identity Fraud Enables Unauthorized Access to Western Companies by Nor",
+      "date": "2025-11-17",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1127",
+      "incident_id": 1127,
+      "title": "Purported AI-Generated Audio Clip Allegedly Portrays Cambodian Senate President Hun Sen Raising Mone",
+      "date": "2025-11-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1129",
+      "incident_id": 1129,
+      "title": "Purported AI-Generated Video Depicting Philippine President Ferdinand Marcos Jr. Using Drugs Shared ",
+      "date": "2025-11-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1133",
+      "incident_id": 1133,
+      "title": "Reported AI-Generated Audio of Ukrainian Commander Andriy Biletsky Used in Russian Disinformation Ca",
+      "date": "2025-11-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1134",
+      "incident_id": 1134,
+      "title": "Reported Deepfakes of Ukrainian Deputy PM Olha Stefanishyna Allegedly Supporting Fictional Mobilizat",
+      "date": "2025-11-17",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1141",
+      "incident_id": 1141,
+      "title": "Purported AI Voice Cloning Used to Impersonate Secretary of State Marco Rubio",
+      "date": "2025-11-17",
+      "category": "fraud",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1152",
+      "incident_id": 1152,
+      "title": "LLM-Driven Replit Agent Reportedly Executed Unauthorized Destructive Commands During Code Freeze, Le",
+      "date": "2025-11-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1168",
+      "incident_id": 1168,
+      "title": "Purportedly AI-Generated Image of British Army Colonels Captured in Ukraine Reportedly Circulates in",
+      "date": "2025-11-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1195",
+      "incident_id": 1195,
+      "title": "Nigeria-Based YouTube Network Allegedly Uses AI Voiceovers and Anchors to Amplify Pro-Kremlin Narrat",
+      "date": "2025-11-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1202",
+      "incident_id": 1202,
+      "title": "Russian Disinformation Campaign Reportedly Used AI-Generated Posts and Videos to Target 2025 Moldova",
+      "date": "2025-11-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1220",
+      "incident_id": 1220,
+      "title": "LAMEHUG Malware Reportedly Integrates Large Language Model for Real-Time Command Generation in a Pur",
+      "date": "2025-11-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1221",
+      "incident_id": 1221,
+      "title": "Alleged AI-Enabled PRISONBREAK Influence Operation on X Reportedly Synchronizes Deepfake of Evin Pri",
+      "date": "2025-11-17",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1262",
+      "incident_id": 1262,
+      "title": "YouTube Channel Reportedly Posts Purported Deepfake Video of Rajat Sharma Announcing India-Banglades",
+      "date": "2025-11-17",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1263",
+      "incident_id": 1263,
+      "title": "Chinese State-Linked Operator (GTG-1002) Reportedly Uses Claude Code for Autonomous Cyber Espionage",
+      "date": "2025-11-17",
+      "category": "autonomous_vehicle",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1273",
+      "incident_id": 1273,
+      "title": "Purportedly AI-Generated Fake Videos of Louvre Heist Reportedly Circulated Widely Online",
+      "date": "2025-11-17",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1274",
+      "incident_id": 1274,
+      "title": "AI-Powered Taco Bell Drive-Thru Reportedly Disrupted by Viral Prank Ordering 18,000 Water Cups",
+      "date": "2025-11-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1225",
+      "incident_id": 1225,
+      "title": "Purportedly AI-Generated 'Home Invasion Prank' Images Reportedly Circulate in Ireland, Causing Panic",
+      "date": "2025-11-15",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1250",
+      "incident_id": 1250,
+      "title": "Alleged False Positive by Omnilert AI Gun Detection System Prompts Police Search at Baltimore County",
+      "date": "2025-11-15",
+      "category": "prompt_injection",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1265",
+      "incident_id": 1265,
+      "title": "NTB Report on Telenor Security Findings Was Withdrawn After AI Tool Allegedly Introduced Fabricated ",
+      "date": "2025-11-15",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1266",
+      "incident_id": 1266,
+      "title": "Purportedly AI-Generated Sexual Images of At Least 400 Minors at Zacatecas School Were Reportedly Cr",
+      "date": "2025-11-15",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1267",
+      "incident_id": 1267,
+      "title": "Omnilert AI Reportedly Triggered False Gun Alert at Parkville High, Prompting Student Relocation",
+      "date": "2025-11-15",
+      "category": "prompt_injection",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1268",
+      "incident_id": 1268,
+      "title": "Meta's Automated Ad and Targeting Systems Reportedly Enabled Large-Scale Fraud Revenue",
+      "date": "2025-11-15",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1270",
+      "incident_id": 1270,
+      "title": "Multiple Purported AI-Assisted Cheating Incidents Reported Across South Korea's SKY Universities Dur",
+      "date": "2025-11-15",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1271",
+      "incident_id": 1271,
+      "title": "Purported Deepfake of Greek Finance Minister Kyriakos Pierrakakis Reportedly Used in Facebook Invest",
+      "date": "2025-11-15",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1272",
+      "incident_id": 1272,
+      "title": "Purportedly AI-Generated Home Intruder Videos Allegedly Prompt Dozens of Dutch Police Call-Outs",
+      "date": "2025-11-15",
+      "category": "prompt_injection",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1264",
+      "incident_id": 1264,
+      "title": "Rep. Mike Collins's Campaign Allegedly Produced Deepfake of Sen. Jon Ossoff Supporting the Governmen",
+      "date": "2025-11-14",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-6",
+      "incident_id": 6,
+      "title": "Microsoft's TayBot Allegedly Posts Racist, Sexist, and Anti-Semitic Content to Twitter",
+      "date": "2025-11-12",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-40",
+      "incident_id": 40,
+      "title": "COMPAS Algorithm Reportedly Performs Poorly in Crime Recidivism Prediction",
+      "date": "2025-11-12",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1253",
+      "incident_id": 1253,
+      "title": "Large-Scale Mental Health Crises Allegedly Associated with ChatGPT Interactions",
+      "date": "2025-11-08",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1256",
+      "incident_id": 1256,
+      "title": "Purportedly AI-Generated Deepfake Investment Ads Defrauded 5,000 Swedish Investors of 500 Million SE",
+      "date": "2025-11-08",
+      "category": "deepfake",
+      "severity": "critical"
+    },
+    {
+      "id": "AIID-1257",
+      "incident_id": 1257,
+      "title": "Argentine Court Reportedly Annuls Criminal Conviction After Judge Allegedly Used ChatGPT to Draft Ru",
+      "date": "2025-11-08",
+      "category": "other",
+      "severity": "critical"
+    },
+    {
+      "id": "AIID-1258",
+      "incident_id": 1258,
+      "title": "Purported Deepfake Mimicking RT\u00c9 Broadcast Falsely Announced Irish Presidential Candidate Catherine ",
+      "date": "2025-11-08",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1259",
+      "incident_id": 1259,
+      "title": "ChatGPT Allegedly Encouraged 23-Year-Old Texas User's Suicide During Extended Conversations",
+      "date": "2025-11-08",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1260",
+      "incident_id": 1260,
+      "title": "AI-Generated Deepfake of Andrew Forrest Used to Promote Fraudulent 'Quantum AI' Crypto Platform on F",
+      "date": "2025-11-08",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1261",
+      "incident_id": 1261,
+      "title": "Alleged AI-Generated Deepfake of Western Australia Premier Roger Cook Used in YouTube Investment Sca",
+      "date": "2025-11-08",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1254",
+      "incident_id": 1254,
+      "title": "Purported AI Deepfake Reportedly Impersonated Thai PBS World Anchor and Miss Universe CEO in Fraudul",
+      "date": "2025-11-06",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1255",
+      "incident_id": 1255,
+      "title": "Purported Deepfake Reportedly Circulated on Facebook Impersonating Thai PBS World Anchors and Busine",
+      "date": "2025-11-06",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1214",
+      "incident_id": 1214,
+      "title": "Donald Trump Reportedly Posts Purported AI-Modified Video of Chuck Schumer and Hakeem Jeffries Durin",
+      "date": "2025-11-02",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-124",
+      "incident_id": 124,
+      "title": "Optum Algorithmic Health Risk Scores Reportedly Underestimated Black Patients' Needs",
+      "date": "2025-11-01",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-465",
+      "incident_id": 465,
+      "title": "Generative Models Reportedly Trained on Dataset Containing Private Medical Photos",
+      "date": "2025-11-01",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-700",
+      "incident_id": 700,
+      "title": "Meta's AI Chatbots Are Reportedly Entering Online Support Communities Uninvited",
+      "date": "2025-11-01",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-708",
+      "incident_id": 708,
+      "title": "Reportedly Faulty AI Transcription Threatens Integrity of Genoa Bribery Probe",
+      "date": "2025-11-01",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1159",
+      "incident_id": 1159,
+      "title": "Government\u2011Backed AI4Peat Mapping Tool Allegedly Misidentifies Granite Outcrops and Quarries as Peat",
+      "date": "2025-10-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1251",
+      "incident_id": 1251,
+      "title": "Purportedly AI-Generated Hunting Regulation Errors Reportedly Lead to Idaho Citation and Multi-State",
+      "date": "2025-10-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1252",
+      "incident_id": 1252,
+      "title": "Judges in New Jersey and Mississippi Admit AI Tools Produced Erroneous Federal Court Filings",
+      "date": "2025-10-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1009",
+      "incident_id": 1009,
+      "title": "Purportedly AI-Assisted Report by Troms\u00f8 Officials Allegedly Cited Non-Existent Sources in School Cl",
+      "date": "2025-10-22",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1245",
+      "incident_id": 1245,
+      "title": "Norwegian Student Reportedly Used AI-Generated Deepfake Videos in Spanish Coursework at University o",
+      "date": "2025-10-22",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1246",
+      "incident_id": 1246,
+      "title": "Purportedly AI-Generated Deepfake Reportedly Used to Impersonate DNB Bank CFO and CEO in Live Teams ",
+      "date": "2025-10-22",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1247",
+      "incident_id": 1247,
+      "title": "Meta AI Reportedly Generated Purportedly False Claims Linking Activist Robby Starbuck to January 6th",
+      "date": "2025-10-22",
+      "category": "prompt_injection",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1248",
+      "incident_id": 1248,
+      "title": "Google's Bard, Gemini, and Gemma AI Systems Allegedly Generated Defamatory Claims About Activist Rob",
+      "date": "2025-10-22",
+      "category": "prompt_injection",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1249",
+      "incident_id": 1249,
+      "title": "Virginia Candidate John Reid Reportedly Used AI-Generated Deepfake of Opponent Ghazala Hashmi in Sim",
+      "date": "2025-10-22",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1242",
+      "incident_id": 1242,
+      "title": "Purported AI-Generated Deepfake Videos Reportedly Used in Swedish Scam Campaign Impersonating Doctor",
+      "date": "2025-10-21",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1243",
+      "incident_id": 1243,
+      "title": "AWS Outage Reportedly Caused AI-Enabled Eight Sleep Smart Beds to Overheat and Malfunction",
+      "date": "2025-10-21",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1244",
+      "incident_id": 1244,
+      "title": "Purportedly AI-Generated 'King Trump' Fighter Jet Video Allegedly Posted by President Depicts Defeca",
+      "date": "2025-10-21",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1238",
+      "incident_id": 1238,
+      "title": "OpenAI ChatGPT Models Reportedly Jailbroken to Provide Chemical, Biological, and Nuclear Weapons Ins",
+      "date": "2025-10-20",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1239",
+      "incident_id": 1239,
+      "title": "Purported AI-Generated Deepfake of Steven Bartlett Reportedly Used to Promote Fake WhatsApp Investme",
+      "date": "2025-10-19",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1240",
+      "incident_id": 1240,
+      "title": "Purported AI-Generated Deepfake of Infosys Co-Founder N. R. Narayana Murthy Used in Investment Scam ",
+      "date": "2025-10-19",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1241",
+      "incident_id": 1241,
+      "title": "Purported AI-Generated Video Reportedly Used in RM5,800 (~$1,400) Sextortion Attempt Targeting Malay",
+      "date": "2025-10-19",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-807",
+      "incident_id": 807,
+      "title": "ChatGPT Reportedly Introduces Errors in Critical Child Protection Court Report",
+      "date": "2025-10-18",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1207",
+      "incident_id": 1207,
+      "title": "Purported AI-Generated Deepfake of Irish Fine Gael Presidential Candidate Heather Humphreys Used in ",
+      "date": "2025-10-18",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1231",
+      "incident_id": 1231,
+      "title": "Purported AI-Generated Deepfake Video Reportedly Depicts Senator Chuck Schumer Endorsing Government ",
+      "date": "2025-10-18",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1233",
+      "incident_id": 1233,
+      "title": "Purported Deepfake Video Allegedly Shows Conservative MP George Freeman Leaving Party for Reform UK",
+      "date": "2025-10-18",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1234",
+      "incident_id": 1234,
+      "title": "Purported AI-Generated Explicit Deepfakes of Sydney High School Students Reportedly Circulated Onlin",
+      "date": "2025-10-18",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1235",
+      "incident_id": 1235,
+      "title": "Chinese-Backed Operation Reportedly Used AI-Generated Deepfake Videos of Indian Stock Experts in Inv",
+      "date": "2025-10-18",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1237",
+      "incident_id": 1237,
+      "title": "Alleged Deepfake Video of Anthony Albanese Promotes Fake AUFIRST 'Tax Dividend' Trading Platform",
+      "date": "2025-10-18",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1229",
+      "incident_id": 1229,
+      "title": "Gold Coast Man Reportedly Ordered to Pay $343,500 After Posting Purported Deepfake Pornographic Imag",
+      "date": "2025-10-11",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1230",
+      "incident_id": 1230,
+      "title": "Suspect in Palisades Fire Allegedly Consulted ChatGPT for Arson Tips and Legal Advice Before Blaze T",
+      "date": "2025-10-11",
+      "category": "other",
+      "severity": "critical"
+    },
+    {
+      "id": "AIID-403",
+      "incident_id": 403,
+      "title": "Gmail\u2019s Inbox Sorting System Reportedly Reduced Visibility of Political Emails and Campaign Calls-to",
+      "date": "2025-10-06",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-679",
+      "incident_id": 679,
+      "title": "A Purported Deepfake of Senator Elizabeth Warren Circulates Allegedly Saying Republicans Should Not ",
+      "date": "2025-10-06",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-703",
+      "incident_id": 703,
+      "title": "Purported Deepfake Audio Reportedly Sparks False Claims of Biden Threatening Texas with F-15s",
+      "date": "2025-10-06",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-710",
+      "incident_id": 710,
+      "title": "Facebook AI Reportedly Mislabels Auschwitz Photos as 'Bullying' and 'Nudity'",
+      "date": "2025-10-06",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-818",
+      "incident_id": 818,
+      "title": "Jennifer Aniston\u2019s Likeness Allegedly Exploited in Purported Deepfake Collagen Supplement Promotion",
+      "date": "2025-10-06",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-926",
+      "incident_id": 926,
+      "title": "Giorgia Meloni Reportedly Targeted by Deepfake Pornography",
+      "date": "2025-10-06",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1164",
+      "incident_id": 1164,
+      "title": "Google Healthcare AI Model Med\u2011Gemini Allegedly Produces Non\u2011Existent 'Basilar Ganglia' Term in Publ",
+      "date": "2025-10-06",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1193",
+      "incident_id": 1193,
+      "title": "Purportedly Taxpayer-Funded Deloitte Report for Australian Government Contains Alleged AI-Generated ",
+      "date": "2025-10-06",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1227",
+      "incident_id": 1227,
+      "title": "New Zealand Financial Markets Authority (FMA), Te Mana T\u0101tai Hokohoko, Reportedly Flags Purported De",
+      "date": "2025-10-06",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1228",
+      "incident_id": 1228,
+      "title": "Alleged ChatGPT Misuse by Contractor Leads to Reported Data Exposure in New South Wales Resilient Ho",
+      "date": "2025-10-06",
+      "category": "data_leak",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1223",
+      "incident_id": 1223,
+      "title": "Purportedly AI-Generated Deepfake Ads on Facebook Reportedly Impersonate Trump, Musk, Ocasio-Cortez,",
+      "date": "2025-10-05",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1224",
+      "incident_id": 1224,
+      "title": "Purportedly AI-Generated Deepfake Ads on Instagram Impersonate Gisele B\u00fcndchen and Other Celebrities",
+      "date": "2025-10-05",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-735",
+      "incident_id": 735,
+      "title": "AI-Enabled Fraud Schemes Reportedly Increasing Consumer Harm and Challenging Detection",
+      "date": "2025-10-04",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1213",
+      "incident_id": 1213,
+      "title": "Gaggle AI Monitoring at Lawrence, Kansas High School Reportedly Misflags Student Content and Blocks ",
+      "date": "2025-10-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1215",
+      "incident_id": 1215,
+      "title": "Gaggle Alert Reportedly Leads to Arrest of 15-Year-Old in Volusia County, Florida, for School Threat",
+      "date": "2025-10-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1216",
+      "incident_id": 1216,
+      "title": "ChatGPT Reportedly Misleads Users About Soundslice Features, Allegedly Prompting Unplanned Product D",
+      "date": "2025-10-04",
+      "category": "prompt_injection",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1217",
+      "incident_id": 1217,
+      "title": "Purportedly AI-Cloned Voice of Daughter Used in Elaborate Bond Scam Targeting Retired Couple in Hill",
+      "date": "2025-10-04",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1218",
+      "incident_id": 1218,
+      "title": "Microsoft 365 Copilot Vulnerability Allegedly Allowed File Access Without Audit Log Entry",
+      "date": "2025-10-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1219",
+      "incident_id": 1219,
+      "title": "Meta Platforms Users Report Being Wrongfully Locked Out After Purported AI Moderation Flags Accounts",
+      "date": "2025-10-04",
+      "category": "content_moderation",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1222",
+      "incident_id": 1222,
+      "title": "CFPB Reportedly Finds Hello Digit's Automated Savings Algorithm Caused Overdrafts and Orders Redress",
+      "date": "2025-10-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-248",
+      "incident_id": 248,
+      "title": "Reported Automated License Plate Reader Alert on Previously Stolen Rental Car Leads to Alleged Wrong",
+      "date": "2025-10-01",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-329",
+      "incident_id": 329,
+      "title": "Amazon Reportedly Recommends Explosive-Producing Ingredients as 'Frequently Bought Together' Items f",
+      "date": "2025-10-01",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-832",
+      "incident_id": 832,
+      "title": "Reportedly Viral AI-Generated Song about 'Diddy Party' Allegedly Mimics Justin Bieber",
+      "date": "2025-10-01",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1018",
+      "incident_id": 1018,
+      "title": "OpenAI's 4o Model Allegedly Used to Generate Fake Receipts and Prescriptions",
+      "date": "2025-09-30",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1041",
+      "incident_id": 1041,
+      "title": "Nomi Chatbots Reportedly Encouraged Suicide, Sexual Violence, Terrorism, and Hate Speech",
+      "date": "2025-09-22",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1212",
+      "incident_id": 1212,
+      "title": "Nomi AI Companion Allegedly Directs Australian User to Stab Father and Engages in Harmful Role-Play",
+      "date": "2025-09-22",
+      "category": "content_moderation",
+      "severity": "medium"
+    }
+  ],
+  "stats": {
+    "total": 190,
+    "last7Days": 21,
+    "last30Days": 122
+  },
+  "lastUpdated": "2025-12-15T22:56:12.628886+05:30"
+}

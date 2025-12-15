@@ -22,10 +22,13 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install feedparser requests beautifulsoup4
+        run: pip install feedparser requests beautifulsoup4 pyyaml
 
       - name: Run RSS Threat Intel Fetcher
         run: python fetch_threat_intel.py --both
+
+      - name: Run AI Security Data Fetcher
+        run: python fetch_ai_security.py --output ioc-data
 
       - name: Prepare IOC files
         run: |

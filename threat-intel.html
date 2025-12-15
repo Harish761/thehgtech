@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <title>Live Threat Intelligence with AI Insights & 7-Day Trends | TheHGTech</title>
-    <meta name="title" content="Live Threat Intelligence with AI Insights & 7-Day Trends | TheHGTech">
+    <title>Live Threat Intelligence + AI Security Dashboard | MITRE ATLAS, AIID, OWASP LLM | TheHGTech</title>
+    <meta name="title"
+        content="Live Threat Intelligence + AI Security Dashboard | MITRE ATLAS, AIID, OWASP LLM | TheHGTech">
     <meta name="description"
-        content="Real-time IOCs from 9 security vendors (OpenPhish, URLhaus, ThreatFox, Feodo, Blocklist.de, SSL Blacklist, Malware Bazaar, Spamhaus, CINS Army) with AI-powered daily summaries, weekly analysis, 7-day trend charts, and updates every 4 hours. Free threat intelligence dashboard.">
+        content="Unified cybersecurity + AI security dashboard. Real-time IOCs from 9 vendors, MITRE ATLAS AI attack techniques, AI Incident Database tracking, OWASP LLM Top 10 vulnerabilities. Prompt injection, deepfake, and LLM security monitoring. Updated every 4 hours.">
     <meta name="keywords"
-        content="threat intelligence, live IOCs, AI threat analysis, 7-day trends, OpenPhish, URLhaus, ThreatFox, Feodo Tracker, real-time threats, phishing detection, malware feeds, C2 tracking, threat dashboard, security intelligence, GPT-4 analysis">
+        content="threat intelligence, live IOCs, AI security, MITRE ATLAS, AI Incident Database, OWASP LLM Top 10, prompt injection, deepfake detection, LLM vulnerabilities, AI attack techniques, OpenPhish, URLhaus, ThreatFox, malware feeds, security dashboard, AI threat analysis">
     <meta name="author" content="TheHGTech">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://thehgtech.com/threat-intel.html">
@@ -101,6 +102,7 @@
     <link rel="stylesheet" href="advanced-filters.css">
     <link rel="stylesheet" href="ransomware-display.css">
     <link rel="stylesheet" href="ransomware-modal.css">
+    <link rel="stylesheet" href="ai-security-display.css">
 
     <!-- Non-blocking FontAwesome -->
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style"
@@ -114,6 +116,7 @@
     <script src="dashboard-data.js" defer></script>
     <script src="threat-intel-tabs.js?v=20251127" defer></script>
     <script src="ti-hero-animation.js" defer></script>
+    <script src="ai-security-display.js" defer></script>
 
     <!-- Mobile Optimization (v3.0) -->
     <link rel="stylesheet" href="m-core.css?v=4.2">
@@ -1146,6 +1149,131 @@
                     </div>
                 </div>
 
+
+                <!-- ═══════════════════════════════════════════════════════════════
+                     AI SECURITY SECTION - Unified AI Threat Intelligence
+                     ═══════════════════════════════════════════════════════════════ -->
+                <div id="ai-security-section" style="margin: 3rem 0;">
+                    <!-- Section Header -->
+                    <div
+                        style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 2rem;">
+                        <div>
+                            <h2
+                                style="color: var(--text-primary); font-size: 1.5rem; font-weight: 700; margin: 0; display: flex; align-items: center; gap: 0.75rem;">
+                                <span
+                                    style="background: linear-gradient(135deg, #9d4edd, #ff006e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                                    🤖 AI Security Intelligence
+                                </span>
+                            </h2>
+                            <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem;">
+                                Real-time AI threats from MITRE ATLAS, AI Incident Database & OWASP LLM Top 10
+                            </p>
+                        </div>
+                        <span
+                            style="background: linear-gradient(135deg, rgba(157, 78, 221, 0.2), rgba(255, 0, 110, 0.1)); border: 1px solid rgba(157, 78, 221, 0.3); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.8rem; color: #9d4edd; font-weight: 600;">
+                            ✨ NEW
+                        </span>
+                    </div>
+
+                    <!-- AI Stats Cards -->
+                    <div id="ai-stats-container" class="ai-stats-grid">
+                        <!-- Stats loaded dynamically by ai-security-display.js -->
+                        <div class="ai-loading">
+                            <div class="ai-loading-spinner"></div>
+                            <p>Loading AI Security data...</p>
+                        </div>
+                    </div>
+
+                    <!-- Top Threats Today -->
+                    <div class="top-threats-section">
+                        <div class="section-header">
+                            <h3><i class="fas fa-fire-alt"></i> Top Threats Today</h3>
+                            <span style="font-size: 0.8rem; color: var(--text-muted);">Combined AI + Cyber
+                                threats</span>
+                        </div>
+                        <div id="top-threats-container" class="threat-list">
+                            <!-- Top threats loaded dynamically -->
+                        </div>
+                    </div>
+
+                    <!-- AI Tabs Navigation -->
+                    <div class="ai-tabs-nav">
+                        <button class="ai-tab-btn active" data-tab="atlas">
+                            <i class="fas fa-crosshairs"></i>
+                            MITRE ATLAS
+                            <span class="ai-tab-badge" id="atlas-count">0</span>
+                        </button>
+                        <button class="ai-tab-btn" data-tab="incidents">
+                            <i class="fas fa-robot"></i>
+                            AI Incidents
+                            <span class="ai-tab-badge" id="incidents-count">0</span>
+                        </button>
+                        <button class="ai-tab-btn" data-tab="owasp">
+                            <i class="fas fa-shield-alt"></i>
+                            OWASP LLM Top 10
+                        </button>
+                    </div>
+
+                    <!-- MITRE ATLAS Tab Content -->
+                    <div class="ai-tab-content active" data-tab="atlas">
+                        <div class="atlas-section">
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                                <h3 style="color: var(--text-primary); font-size: 1.1rem; font-weight: 600; margin: 0;">
+                                    🎯 AI Attack Techniques
+                                </h3>
+                                <a href="https://atlas.mitre.org/" target="_blank" rel="noopener"
+                                    style="font-size: 0.8rem; color: #9d4edd; text-decoration: none;">
+                                    View Full Framework →
+                                </a>
+                            </div>
+                            <div id="atlas-container">
+                                <!-- ATLAS techniques loaded dynamically -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI Incidents Tab Content -->
+                    <div class="ai-tab-content" data-tab="incidents">
+                        <div class="incidents-section">
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                                <h3 style="color: var(--text-primary); font-size: 1.1rem; font-weight: 600; margin: 0;">
+                                    📋 Recent AI Security Incidents
+                                </h3>
+                                <a href="https://incidentdatabase.ai/" target="_blank" rel="noopener"
+                                    style="font-size: 0.8rem; color: #ff9500; text-decoration: none;">
+                                    Browse Full Database →
+                                </a>
+                            </div>
+                            <div id="incidents-container">
+                                <!-- Incidents loaded dynamically -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- OWASP LLM Top 10 Tab Content -->
+                    <div class="ai-tab-content" data-tab="owasp">
+                        <div class="owasp-section">
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                                <h3 style="color: var(--text-primary); font-size: 1.1rem; font-weight: 600; margin: 0;">
+                                    🔐 OWASP LLM Top 10 (2025)
+                                </h3>
+                                <a href="https://owasp.org/www-project-top-10-for-large-language-model-applications/"
+                                    target="_blank" rel="noopener"
+                                    style="font-size: 0.8rem; color: #3a86ff; text-decoration: none;">
+                                    Official OWASP Project →
+                                </a>
+                            </div>
+                            <div id="owasp-container">
+                                <!-- OWASP vulnerabilities loaded dynamically -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ═══════════════════════════════════════════════════════════════ -->
 
                 <!-- Static Snapshot Container (SEO-friendly, loads first) -->
 

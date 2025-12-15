@@ -1,0 +1,708 @@
+/* ===============================================
+   AI SECURITY DISPLAY - Unified Dashboard Styles
+   =============================================== */
+
+:root {
+    --ai-purple: #9d4edd;
+    --ai-orange: #ff9500;
+    --ai-pink: #ff006e;
+    --ai-blue: #3a86ff;
+    --glow-purple: rgba(157, 78, 221, 0.4);
+    --glow-orange: rgba(255, 149, 0, 0.4);
+}
+
+/* ─────────────────────────────────────────────
+   AI SECURITY TAB CONTENT
+   ───────────────────────────────────────────── */
+.ai-security-content {
+    display: none;
+}
+
+.ai-security-content.active {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ─────────────────────────────────────────────
+   AI STATS GRID
+   ───────────────────────────────────────────── */
+.ai-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.ai-stat-card {
+    background: linear-gradient(135deg, rgba(157, 78, 221, 0.1), rgba(255, 149, 0, 0.05));
+    border: 1px solid rgba(157, 78, 221, 0.3);
+    border-radius: 16px;
+    padding: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.ai-stat-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--ai-purple), var(--ai-orange));
+}
+
+.ai-stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(157, 78, 221, 0.2);
+    border-color: var(--ai-purple);
+}
+
+.ai-stat-card .stat-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.ai-stat-card .stat-icon.atlas {
+    background: linear-gradient(135deg, var(--ai-purple), var(--ai-pink));
+}
+
+.ai-stat-card .stat-icon.aiid {
+    background: linear-gradient(135deg, var(--ai-orange), #ff6b6b);
+}
+
+.ai-stat-card .stat-icon.owasp {
+    background: linear-gradient(135deg, var(--ai-blue), #00d4ff);
+}
+
+.ai-stat-card .stat-icon.correlation {
+    background: linear-gradient(135deg, #00ff88, #00d9ff);
+}
+
+.ai-stat-card .stat-value {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #fff, rgba(255, 255, 255, 0.7));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.ai-stat-card .stat-label {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.25rem;
+}
+
+.ai-stat-card .stat-sublabel {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+/* ─────────────────────────────────────────────
+   TOP THREATS TODAY SECTION
+   ───────────────────────────────────────────── */
+.top-threats-section {
+    background: var(--glass);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.section-header h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.section-header h3 i {
+    color: var(--accent-red);
+}
+
+.threat-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.threat-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.threat-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--accent-cyan);
+    transform: translateX(5px);
+}
+
+.threat-rank {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.threat-rank.critical {
+    background: linear-gradient(135deg, #ff4c4c, #ff0066);
+    color: white;
+}
+
+.threat-rank.high {
+    background: linear-gradient(135deg, #ff9500, #ff6b00);
+    color: white;
+}
+
+.threat-rank.medium {
+    background: linear-gradient(135deg, #ffd000, #ffaa00);
+    color: #000;
+}
+
+.threat-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+.threat-icon.campaign {
+    background: rgba(255, 76, 76, 0.2);
+    color: #ff4c4c;
+}
+
+.threat-icon.ai_incident {
+    background: rgba(157, 78, 221, 0.2);
+    color: var(--ai-purple);
+}
+
+.threat-icon.ai_technique {
+    background: rgba(255, 149, 0, 0.2);
+    color: var(--ai-orange);
+}
+
+.threat-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.threat-name {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0.25rem;
+}
+
+.threat-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.threat-source {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.threat-source i {
+    font-size: 0.7rem;
+}
+
+/* ─────────────────────────────────────────────
+   MITRE ATLAS SECTION
+   ───────────────────────────────────────────── */
+.atlas-section {
+    margin-bottom: 2rem;
+}
+
+.atlas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+.atlas-card {
+    background: linear-gradient(135deg, rgba(157, 78, 221, 0.05), rgba(58, 134, 255, 0.02));
+    border: 1px solid rgba(157, 78, 221, 0.2);
+    border-radius: 12px;
+    padding: 1.25rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.atlas-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(157, 78, 221, 0.15);
+    border-color: var(--ai-purple);
+}
+
+.atlas-card-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+}
+
+.atlas-id {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.75rem;
+    color: var(--ai-purple);
+    background: rgba(157, 78, 221, 0.15);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+}
+
+.atlas-severity {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.atlas-severity.high {
+    background: rgba(255, 76, 76, 0.2);
+    color: #ff6b6b;
+}
+
+.atlas-severity.medium {
+    background: rgba(255, 200, 0, 0.2);
+    color: #ffd000;
+}
+
+.atlas-severity.low {
+    background: rgba(0, 217, 255, 0.2);
+    color: var(--accent-cyan);
+}
+
+.atlas-name {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.atlas-desc {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* ─────────────────────────────────────────────
+   AI INCIDENTS SECTION
+   ───────────────────────────────────────────── */
+.incidents-section {
+    margin-bottom: 2rem;
+}
+
+.incidents-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.incidents-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.incidents-list::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 4px;
+}
+
+.incidents-list::-webkit-scrollbar-thumb {
+    background: var(--ai-purple);
+    border-radius: 4px;
+}
+
+.incident-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    background: rgba(255, 149, 0, 0.03);
+    border: 1px solid rgba(255, 149, 0, 0.15);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.incident-card:hover {
+    background: rgba(255, 149, 0, 0.08);
+    border-color: var(--ai-orange);
+}
+
+.incident-id {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.7rem;
+    color: var(--ai-orange);
+    background: rgba(255, 149, 0, 0.15);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+.incident-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.incident-title {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.incident-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.incident-category {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+}
+
+.incident-severity {
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.incident-severity.critical {
+    background: rgba(255, 0, 60, 0.2);
+    color: #ff4c4c;
+}
+
+.incident-severity.high {
+    background: rgba(255, 149, 0, 0.2);
+    color: var(--ai-orange);
+}
+
+.incident-severity.medium {
+    background: rgba(0, 217, 255, 0.2);
+    color: var(--accent-cyan);
+}
+
+/* ─────────────────────────────────────────────
+   OWASP LLM TOP 10 SECTION
+   ───────────────────────────────────────────── */
+.owasp-section {
+    margin-bottom: 2rem;
+}
+
+.owasp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.owasp-card {
+    background: linear-gradient(135deg, rgba(58, 134, 255, 0.05), rgba(0, 212, 255, 0.02));
+    border: 1px solid rgba(58, 134, 255, 0.2);
+    border-radius: 12px;
+    padding: 1.25rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.owasp-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--ai-blue), var(--accent-cyan));
+}
+
+.owasp-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(58, 134, 255, 0.15);
+}
+
+.owasp-rank {
+    font-size: 2rem;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+}
+
+.owasp-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.owasp-id {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.75rem;
+    color: var(--ai-blue);
+    background: rgba(58, 134, 255, 0.15);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+}
+
+.owasp-severity {
+    font-size: 0.65rem;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.owasp-severity.critical {
+    background: rgba(255, 76, 76, 0.2);
+    color: #ff6b6b;
+}
+
+.owasp-severity.high {
+    background: rgba(255, 149, 0, 0.2);
+    color: var(--ai-orange);
+}
+
+.owasp-severity.medium {
+    background: rgba(0, 217, 255, 0.2);
+    color: var(--accent-cyan);
+}
+
+.owasp-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.owasp-desc {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.owasp-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+    font-size: 0.8rem;
+    color: var(--ai-blue);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.owasp-link:hover {
+    color: var(--accent-cyan);
+}
+
+/* ─────────────────────────────────────────────
+   AI TABS NAVIGATION
+   ───────────────────────────────────────────── */
+.ai-tabs-nav {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+    background: var(--glass);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    overflow-x: auto;
+}
+
+.ai-tab-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.ai-tab-btn:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-primary);
+}
+
+.ai-tab-btn.active {
+    background: linear-gradient(135deg, var(--ai-purple), var(--ai-pink));
+    border-color: transparent;
+    color: white;
+    box-shadow: 0 4px 15px rgba(157, 78, 221, 0.3);
+}
+
+.ai-tab-btn i {
+    font-size: 1rem;
+}
+
+.ai-tab-badge {
+    font-size: 0.7rem;
+    padding: 0.15rem 0.4rem;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* ─────────────────────────────────────────────
+   RESPONSIVE DESIGN
+   ───────────────────────────────────────────── */
+@media (max-width: 1200px) {
+    .ai-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .ai-stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ai-stat-card .stat-value {
+        font-size: 2rem;
+    }
+
+    .threat-item {
+        flex-wrap: wrap;
+    }
+
+    .threat-info {
+        width: 100%;
+        order: 3;
+        margin-top: 0.5rem;
+    }
+
+    .ai-tabs-nav {
+        padding: 0.25rem;
+    }
+
+    .ai-tab-btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    .atlas-grid,
+    .owasp-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ─────────────────────────────────────────────
+   LOADING STATES
+   ───────────────────────────────────────────── */
+.ai-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    color: var(--text-muted);
+}
+
+.ai-loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(157, 78, 221, 0.3);
+    border-top-color: var(--ai-purple);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ─────────────────────────────────────────────
+   EMPTY STATES
+   ───────────────────────────────────────────── */
+.ai-empty {
+    text-align: center;
+    padding: 3rem;
+    color: var(--text-muted);
+}
+
+.ai-empty i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: rgba(157, 78, 221, 0.3);
+}
