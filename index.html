@@ -741,6 +741,63 @@
             color: #004499;
         }
 
+        /* ACCESSIBILITY FIX: News card titles in light mode */
+        body.light-mode .news-title {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        body.light-mode .news-card:hover .news-title {
+            background: linear-gradient(135deg, #d32f2f 0%, #1a1a2e 50%, #0066cc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        body.light-mode .news-excerpt {
+            color: #4a4a4a;
+        }
+
+        body.light-mode .news-source {
+            color: #d32f2f;
+        }
+
+        body.light-mode .news-date,
+        body.light-mode .news-reading-time {
+            color: #666666;
+        }
+
+        /* More light mode text fixes for accessibility */
+        body.light-mode .section-title {
+            color: #1a1a2e;
+        }
+
+        body.light-mode h1,
+        body.light-mode h2,
+        body.light-mode h3,
+        body.light-mode h4 {
+            color: #1a1a2e;
+        }
+
+        body.light-mode p,
+        body.light-mode span:not(.badge):not(.severity-badge) {
+            color: #333333;
+        }
+
+        body.light-mode .archive-card__title,
+        body.light-mode .article-card h3,
+        body.light-mode .cve-card h3 {
+            color: #1a1a2e !important;
+        }
+
+        body.light-mode .archive-card__excerpt,
+        body.light-mode .article-card p,
+        body.light-mode .cve-card p {
+            color: #4a4a4a !important;
+        }
+
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             background: var(--bg-primary);
