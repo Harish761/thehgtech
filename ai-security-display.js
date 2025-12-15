@@ -1,9 +1,16 @@
 /**
- * AI Security Display - Unified Threat Intelligence Dashboard
+ * AI Security Display v2.0 - Unified Threat Intelligence Dashboard
+ * ═══════════════════════════════════════════════════════════════════
  * Handles loading and rendering AI security data from:
  * - MITRE ATLAS (AI attack techniques)
  * - AI Incident Database (real-world AI incidents)
  * - OWASP LLM Top 10 (2025 vulnerabilities)
+ * 
+ * Features:
+ * - Beautiful icons and emojis
+ * - Clickable cards with external links
+ * - Proper tab switching
+ * - Category icons for incidents
  */
 
 (function () {
@@ -17,6 +24,33 @@
         owasp: 'owasp-llm-top10.json'
     };
 
+    // Category Icons Map
+    const CATEGORY_ICONS = {
+        'deepfake': '🎭',
+        'prompt_injection': '💉',
+        'data_leak': '🔓',
+        'misinformation': '📰',
+        'bias': '⚖️',
+        'autonomous_vehicle': '🚗',
+        'content_moderation': '🛡️',
+        'fraud': '💸',
+        'other': '🤖'
+    };
+
+    // OWASP Vulnerability Icons
+    const OWASP_ICONS = {
+        'LLM01': '💉', // Prompt Injection
+        'LLM02': '🔐', // Sensitive Info Disclosure
+        'LLM03': '📦', // Supply Chain
+        'LLM04': '☠️', // Data Poisoning
+        'LLM05': '📤', // Improper Output
+        'LLM06': '🤖', // Excessive Agency
+        'LLM07': '🔍', // System Prompt Leakage
+        'LLM08': '📊', // Vector Weaknesses
+        'LLM09': '🗣️', // Misinformation
+        'LLM10': '💰'  // Unbounded Consumption
+    };
+
     // State
     let aiData = {
         atlas: null,
@@ -25,9 +59,9 @@
         loaded: false
     };
 
-    // ──────────────────────────────────────────────────────────────
+    // ══════════════════════════════════════════════════════════════════
     // Data Loading
-    // ──────────────────────────────────────────────────────────────
+    // ══════════════════════════════════════════════════════════════════
     async function loadAIData() {
         console.log('[AI Security] Loading AI data...');
 
@@ -36,12 +70,12 @@
                 const response = await fetch(`${AI_DATA_BASE}/${filename}`);
                 if (response.ok) {
                     aiData[key] = await response.json();
-                    console.log(`[AI Security] Loaded ${key}:`, aiData[key]);
+                    console.log(`[AI Security] ✓ Loaded ${key}:`, aiData[key]);
                 } else {
-                    console.warn(`[AI Security] Failed to load ${filename}: ${response.status}`);
+                    console.warn(`[AI Security] ✗ Failed to load ${filename}: ${response.status}`);
                 }
             } catch (error) {
-                console.error(`[AI Security] Error loading ${filename}:`, error);
+                console.error(`[AI Security] ✗ Error loading ${filename}:`, error);
             }
         });
 
@@ -52,10 +86,12 @@
         renderAIDashboard();
     }
 
-    // ──────────────────────────────────────────────────────────────
-    // Rendering Functions
-    // ──────────────────────────────────────────────────────────────
+    // ══════════════════════════════════════════════════════════════════
+    // Main Rendering
+    // ══════════════════════════════════════════════════════════════════
     function renderAIDashboard() {
+        console.log('[AI Security] Rendering dashboard...');
+
         // Render AI Stats Cards
         renderAIStats();
 
@@ -76,6 +112,8 @@
 
         // Initialize tab switching
         initAITabs();
+
+        console.log('[AI Security] ✓ Dashboard render complete');
     }
 
     function updateTabBadges() {
@@ -90,85 +128,95 @@
         }
     }
 
+    // ══════════════════════════════════════════════════════════════════
+    // Stats Cards
+    // ══════════════════════════════════════════════════════════════════
     function renderAIStats() {
         const container = document.getElementById('ai-stats-container');
-        if (!container) return;
+        if (!container) {
+            console.warn('[AI Security] Stats container not found');
+            return;
+        }
 
         const stats = {
             techniques: aiData.atlas?.stats?.totalTechniques || 0,
             tactics: aiData.atlas?.stats?.totalTactics || 0,
+            caseStudies: aiData.atlas?.stats?.totalCaseStudies || 0,
             incidents: aiData.aiid?.stats?.total || 0,
             incidentsRecent: aiData.aiid?.stats?.last7Days || 0,
-            owaspVersion: aiData.owasp?.version || 'N/A'
+            owaspCritical: aiData.owasp?.stats?.critical || 3
         };
 
         container.innerHTML = `
-            <div class="ai-stat-card">
+            <div class="ai-stat-card" onclick="document.querySelector('[data-tab=atlas]').click()">
                 <div class="stat-icon atlas">
-                    <i class="fas fa-crosshairs"></i>
+                    🎯
                 </div>
                 <div class="stat-value">${stats.techniques}</div>
                 <div class="stat-label">AI Attack Techniques</div>
-                <div class="stat-sublabel">MITRE ATLAS v${aiData.atlas?.version || '5.1'}</div>
+                <div class="stat-sublabel">MITRE ATLAS Framework</div>
             </div>
             
-            <div class="ai-stat-card">
+            <div class="ai-stat-card" onclick="document.querySelector('[data-tab=incidents]').click()">
                 <div class="stat-icon aiid">
-                    <i class="fas fa-robot"></i>
+                    🤖
                 </div>
                 <div class="stat-value">${stats.incidents}</div>
-                <div class="stat-label">AI Incidents (90 days)</div>
-                <div class="stat-sublabel">${stats.incidentsRecent} in last 7 days</div>
+                <div class="stat-label">AI Incidents</div>
+                <div class="stat-sublabel">${stats.incidentsRecent} new in last 7 days</div>
             </div>
             
-            <div class="ai-stat-card">
+            <div class="ai-stat-card" onclick="document.querySelector('[data-tab=owasp]').click()">
                 <div class="stat-icon owasp">
-                    <i class="fas fa-shield-alt"></i>
+                    🛡️
                 </div>
                 <div class="stat-value">10</div>
                 <div class="stat-label">OWASP LLM Top 10</div>
-                <div class="stat-sublabel">Version ${stats.owaspVersion} (2025)</div>
+                <div class="stat-sublabel">${stats.owaspCritical} Critical vulnerabilities</div>
             </div>
             
             <div class="ai-stat-card">
                 <div class="stat-icon correlation">
-                    <i class="fas fa-link"></i>
+                    📊
                 </div>
-                <div class="stat-value">${stats.tactics}</div>
-                <div class="stat-label">Attack Tactics</div>
-                <div class="stat-sublabel">AI + Traditional vectors</div>
+                <div class="stat-value">${stats.caseStudies}</div>
+                <div class="stat-label">Case Studies</div>
+                <div class="stat-sublabel">Real-world AI attacks</div>
             </div>
         `;
     }
 
+    // ══════════════════════════════════════════════════════════════════
+    // Top Threats Today
+    // ══════════════════════════════════════════════════════════════════
     function renderTopThreats() {
         const container = document.getElementById('top-threats-container');
         if (!container) return;
 
-        // Generate top threats from available data
         const threats = generateTopThreats();
 
         if (threats.length === 0) {
-            container.innerHTML = '<div class="ai-empty"><i class="fas fa-shield-check"></i><p>No top threats to display</p></div>';
+            container.innerHTML = '<div class="ai-empty">🛡️<p>No top threats to display</p></div>';
             return;
         }
 
         const html = threats.map((threat, index) => `
-            <div class="threat-item" data-type="${threat.type}">
+            <a href="${threat.url}" target="_blank" rel="noopener" class="threat-item" data-type="${threat.type}">
                 <div class="threat-rank ${threat.severity}">${index + 1}</div>
                 <div class="threat-icon ${threat.type}">
-                    <i class="fas fa-${threat.icon}"></i>
+                    ${threat.emoji}
                 </div>
                 <div class="threat-info">
                     <div class="threat-name">${escapeHtml(threat.name)}</div>
                     <div class="threat-meta">
                         <span class="threat-source">
-                            <i class="fas fa-database"></i> ${threat.source}
+                            ${threat.sourceEmoji} ${threat.source}
                         </span>
-                        <span>${threat.details}</span>
+                        <span>📅 ${threat.details}</span>
                     </div>
                 </div>
-            </div>
+                <div class="threat-arrow">→</div>
+            </a>
         `).join('');
 
         container.innerHTML = html;
@@ -180,19 +228,22 @@
         // Add top AI incidents
         if (aiData.aiid?.incidents) {
             aiData.aiid.incidents.slice(0, 3).forEach(incident => {
+                const categoryIcon = CATEGORY_ICONS[incident.category] || CATEGORY_ICONS['other'];
                 threats.push({
                     type: 'ai_incident',
                     name: incident.title,
                     source: 'AI Incident DB',
+                    sourceEmoji: '📋',
                     details: incident.date,
                     severity: incident.severity || 'medium',
-                    icon: 'robot',
+                    emoji: categoryIcon,
+                    url: `https://incidentdatabase.ai/cite/${incident.incident_id}`,
                     score: incident.severity === 'critical' ? 150 : incident.severity === 'high' ? 100 : 50
                 });
             });
         }
 
-        // Add trending ATLAS technique (Prompt Injection always relevant)
+        // Add trending ATLAS technique
         if (aiData.atlas?.techniques) {
             const promptInjection = aiData.atlas.techniques.find(t =>
                 t.name.toLowerCase().includes('prompt') || t.name.toLowerCase().includes('injection')
@@ -202,9 +253,11 @@
                     type: 'ai_technique',
                     name: `${promptInjection.id}: ${promptInjection.name}`,
                     source: 'MITRE ATLAS',
-                    details: 'Most exploited AI technique',
+                    sourceEmoji: '🎯',
+                    details: 'Most exploited technique',
                     severity: 'critical',
-                    icon: 'crosshairs',
+                    emoji: '💉',
+                    url: `https://atlas.mitre.org/techniques/${promptInjection.id}`,
                     score: 180
                 });
             }
@@ -218,9 +271,11 @@
                     type: 'ai_technique',
                     name: `${topVuln.id}: ${topVuln.name}`,
                     source: 'OWASP LLM',
+                    sourceEmoji: '🛡️',
                     details: '2025 Top 10 #1',
                     severity: 'critical',
-                    icon: 'shield-alt',
+                    emoji: OWASP_ICONS[topVuln.id] || '🔒',
+                    url: topVuln.sourceUrl || 'https://owasp.org/www-project-top-10-for-large-language-model-applications/',
                     score: 170
                 });
             }
@@ -230,14 +285,25 @@
         return threats.sort((a, b) => b.score - a.score).slice(0, 5);
     }
 
+    // ══════════════════════════════════════════════════════════════════
+    // MITRE ATLAS Section
+    // ══════════════════════════════════════════════════════════════════
     function renderATLAS() {
         const container = document.getElementById('atlas-container');
-        if (!container || !aiData.atlas) return;
+        if (!container) {
+            console.warn('[AI Security] ATLAS container not found');
+            return;
+        }
+
+        if (!aiData.atlas) {
+            container.innerHTML = '<div class="ai-empty">🎯<p>Loading ATLAS techniques...</p></div>';
+            return;
+        }
 
         const techniques = aiData.atlas.techniques || [];
 
         if (techniques.length === 0) {
-            container.innerHTML = '<div class="ai-empty"><i class="fas fa-crosshairs"></i><p>No ATLAS techniques loaded</p></div>';
+            container.innerHTML = '<div class="ai-empty">🎯<p>No ATLAS techniques loaded</p></div>';
             return;
         }
 
@@ -250,61 +316,23 @@
         const html = `
             <div class="atlas-grid">
                 ${sortedTechniques.map(tech => `
-                    <div class="atlas-card" data-id="${tech.id}">
+                    <a href="https://atlas.mitre.org/techniques/${tech.id}" target="_blank" rel="noopener" 
+                       class="atlas-card" data-id="${tech.id}">
                         <div class="atlas-card-header">
-                            <span class="atlas-id">${tech.id}</span>
-                            <span class="atlas-severity ${tech.severity || 'low'}">${tech.severity || 'low'}</span>
+                            <span class="atlas-id">🎯 ${tech.id}</span>
+                            <span class="atlas-severity ${tech.severity || 'low'}">${(tech.severity || 'low').toUpperCase()}</span>
                         </div>
                         <div class="atlas-name">${escapeHtml(tech.name)}</div>
-                        <div class="atlas-desc">${escapeHtml(tech.description || 'No description available')}</div>
-                    </div>
-                `).join('')}
-            </div>
-            <div style="text-align: center; margin-top: 1rem;">
-                <a href="https://atlas.mitre.org/matrices/ATLAS" target="_blank" rel="noopener" 
-                   style="color: var(--ai-purple); text-decoration: none; font-size: 0.9rem;">
-                    View all ${techniques.length} techniques on MITRE ATLAS →
-                </a>
-            </div>
-        `;
-
-        container.innerHTML = html;
-    }
-
-    function renderIncidents() {
-        const container = document.getElementById('incidents-container');
-        if (!container || !aiData.aiid) return;
-
-        const incidents = aiData.aiid.incidents || [];
-
-        if (incidents.length === 0) {
-            container.innerHTML = '<div class="ai-empty"><i class="fas fa-robot"></i><p>No AI incidents loaded</p></div>';
-            return;
-        }
-
-        // Show first 20 incidents
-        const html = `
-            <div class="incidents-list">
-                ${incidents.slice(0, 20).map(incident => `
-                    <a href="https://incidentdatabase.ai/cite/${incident.incident_id}" target="_blank" rel="noopener" class="incident-card">
-                        <span class="incident-id">${incident.id}</span>
-                        <div class="incident-content">
-                            <div class="incident-title">${escapeHtml(incident.title)}</div>
-                            <div class="incident-meta">
-                                <span class="incident-category">
-                                    <i class="fas fa-tag"></i> ${formatCategory(incident.category)}
-                                </span>
-                                <span class="incident-severity ${incident.severity}">${incident.severity}</span>
-                                <span><i class="fas fa-calendar"></i> ${incident.date}</span>
-                            </div>
+                        <div class="atlas-desc">${escapeHtml(tech.description || 'Click to view details on MITRE ATLAS')}</div>
+                        <div class="atlas-footer">
+                            <span class="atlas-link">View Details →</span>
                         </div>
                     </a>
                 `).join('')}
             </div>
-            <div style="text-align: center; margin-top: 1rem;">
-                <a href="https://incidentdatabase.ai/apps/discover/" target="_blank" rel="noopener" 
-                   style="color: var(--ai-orange); text-decoration: none; font-size: 0.9rem;">
-                    Explore all ${incidents.length} incidents on AIID →
+            <div class="view-all-link">
+                <a href="https://atlas.mitre.org/matrices/ATLAS" target="_blank" rel="noopener">
+                    🎯 View all ${techniques.length} techniques on MITRE ATLAS →
                 </a>
             </div>
         `;
@@ -312,51 +340,128 @@
         container.innerHTML = html;
     }
 
+    // ══════════════════════════════════════════════════════════════════
+    // AI Incidents Section
+    // ══════════════════════════════════════════════════════════════════
+    function renderIncidents() {
+        const container = document.getElementById('incidents-container');
+        if (!container) {
+            console.warn('[AI Security] Incidents container not found');
+            return;
+        }
+
+        if (!aiData.aiid) {
+            container.innerHTML = '<div class="ai-empty">🤖<p>Loading AI incidents...</p></div>';
+            return;
+        }
+
+        const incidents = aiData.aiid.incidents || [];
+
+        if (incidents.length === 0) {
+            container.innerHTML = '<div class="ai-empty">🤖<p>No AI incidents loaded</p></div>';
+            return;
+        }
+
+        // Show first 15 incidents
+        const html = `
+            <div class="incidents-list">
+                ${incidents.slice(0, 15).map(incident => {
+            const categoryIcon = CATEGORY_ICONS[incident.category] || CATEGORY_ICONS['other'];
+            return `
+                    <a href="https://incidentdatabase.ai/cite/${incident.incident_id}" target="_blank" rel="noopener" class="incident-card">
+                        <span class="incident-emoji">${categoryIcon}</span>
+                        <div class="incident-content">
+                            <div class="incident-id-badge">${incident.id}</div>
+                            <div class="incident-title">${escapeHtml(incident.title)}</div>
+                            <div class="incident-meta">
+                                <span class="incident-category">
+                                    🏷️ ${formatCategory(incident.category)}
+                                </span>
+                                <span class="incident-severity ${incident.severity}">${incident.severity.toUpperCase()}</span>
+                                <span class="incident-date">📅 ${incident.date}</span>
+                            </div>
+                        </div>
+                        <span class="incident-arrow">→</span>
+                    </a>
+                `}).join('')}
+            </div>
+            <div class="view-all-link">
+                <a href="https://incidentdatabase.ai/apps/discover/" target="_blank" rel="noopener">
+                    🤖 Explore all ${incidents.length} incidents on AI Incident Database →
+                </a>
+            </div>
+        `;
+
+        container.innerHTML = html;
+    }
+
+    // ══════════════════════════════════════════════════════════════════
+    // OWASP LLM Top 10 Section
+    // ══════════════════════════════════════════════════════════════════
     function renderOWASP() {
         const container = document.getElementById('owasp-container');
-        if (!container || !aiData.owasp) return;
+        if (!container) {
+            console.warn('[AI Security] OWASP container not found');
+            return;
+        }
+
+        if (!aiData.owasp) {
+            container.innerHTML = '<div class="ai-empty">🛡️<p>Loading OWASP vulnerabilities...</p></div>';
+            return;
+        }
 
         const vulns = aiData.owasp.vulnerabilities || [];
 
         if (vulns.length === 0) {
-            container.innerHTML = '<div class="ai-empty"><i class="fas fa-shield-alt"></i><p>No OWASP vulnerabilities loaded</p></div>';
+            container.innerHTML = '<div class="ai-empty">🛡️<p>No OWASP vulnerabilities loaded</p></div>';
             return;
         }
 
         const html = `
             <div class="owasp-grid">
-                ${vulns.map(vuln => `
-                    <div class="owasp-card">
-                        <span class="owasp-rank">#${vuln.rank}</span>
+                ${vulns.map(vuln => {
+            const icon = OWASP_ICONS[vuln.id] || '🔒';
+            const linkUrl = vuln.sourceUrl || 'https://owasp.org/www-project-top-10-for-large-language-model-applications/';
+            return `
+                    <a href="${linkUrl}" target="_blank" rel="noopener" class="owasp-card">
+                        <div class="owasp-emoji">${icon}</div>
+                        <div class="owasp-rank-badge">#${vuln.rank}</div>
                         <div class="owasp-header">
                             <span class="owasp-id">${vuln.id}:2025</span>
-                            <span class="owasp-severity ${vuln.severity}">${vuln.severity}</span>
+                            <span class="owasp-severity ${vuln.severity}">${vuln.severity.toUpperCase()}</span>
                         </div>
                         <div class="owasp-name">${escapeHtml(vuln.name)}</div>
-                        <div class="owasp-desc">${escapeHtml(vuln.description || 'No description available')}</div>
-                        ${vuln.sourceUrl ? `
-                            <a href="${vuln.sourceUrl}" target="_blank" rel="noopener" class="owasp-link">
-                                <i class="fas fa-external-link-alt"></i> Learn more
-                            </a>
-                        ` : ''}
-                    </div>
-                `).join('')}
+                        <div class="owasp-desc">${escapeHtml(vuln.description || 'Click to view details')}</div>
+                        <div class="owasp-footer">
+                            <span class="owasp-link">Learn More →</span>
+                        </div>
+                    </a>
+                `}).join('')}
+            </div>
+            <div class="view-all-link owasp-link-color">
+                <a href="https://owasp.org/www-project-top-10-for-large-language-model-applications/" target="_blank" rel="noopener">
+                    🛡️ View Official OWASP LLM Top 10 Project →
+                </a>
             </div>
         `;
 
         container.innerHTML = html;
     }
 
-    // ──────────────────────────────────────────────────────────────
+    // ══════════════════════════════════════════════════════════════════
     // Tab Navigation
-    // ──────────────────────────────────────────────────────────────
+    // ══════════════════════════════════════════════════════════════════
     function initAITabs() {
         const tabButtons = document.querySelectorAll('.ai-tab-btn');
         const tabContents = document.querySelectorAll('.ai-tab-content');
 
+        console.log('[AI Security] Initializing tabs:', tabButtons.length, 'buttons,', tabContents.length, 'contents');
+
         tabButtons.forEach(btn => {
-            btn.addEventListener('click', () => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
                 const targetTab = btn.getAttribute('data-tab');
+                console.log('[AI Security] Tab clicked:', targetTab);
 
                 // Update button states
                 tabButtons.forEach(b => b.classList.remove('active'));
@@ -364,18 +469,32 @@
 
                 // Update content visibility
                 tabContents.forEach(content => {
-                    content.classList.remove('active');
-                    if (content.getAttribute('data-tab') === targetTab) {
+                    const contentTab = content.getAttribute('data-tab');
+                    if (contentTab === targetTab) {
                         content.classList.add('active');
+                        content.style.display = 'block';
+                    } else {
+                        content.classList.remove('active');
+                        content.style.display = 'none';
                     }
                 });
             });
         });
+
+        // Ensure first tab content is visible
+        if (tabContents.length > 0) {
+            tabContents[0].classList.add('active');
+            tabContents[0].style.display = 'block';
+            for (let i = 1; i < tabContents.length; i++) {
+                tabContents[i].classList.remove('active');
+                tabContents[i].style.display = 'none';
+            }
+        }
     }
 
-    // ──────────────────────────────────────────────────────────────
+    // ══════════════════════════════════════════════════════════════════
     // Utility Functions
-    // ──────────────────────────────────────────────────────────────
+    // ══════════════════════════════════════════════════════════════════
     function escapeHtml(text) {
         if (!text) return '';
         const div = document.createElement('div');
@@ -391,9 +510,9 @@
             .join(' ');
     }
 
-    // ──────────────────────────────────────────────────────────────
+    // ══════════════════════════════════════════════════════════════════
     // Public API
-    // ──────────────────────────────────────────────────────────────
+    // ══════════════════════════════════════════════════════════════════
     window.AISecurityDisplay = {
         load: loadAIData,
         getData: () => aiData,
@@ -407,7 +526,8 @@
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', loadAIData);
     } else {
-        loadAIData();
+        // Small delay to ensure all HTML elements are ready
+        setTimeout(loadAIData, 100);
     }
 
 })();

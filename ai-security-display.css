@@ -1,5 +1,5 @@
 /* ===============================================
-   AI SECURITY DISPLAY - Unified Dashboard Styles
+   AI SECURITY DISPLAY v2.0 - Unified Dashboard Styles
    =============================================== */
 
 :root {
@@ -12,13 +12,13 @@
 }
 
 /* ─────────────────────────────────────────────
-   AI SECURITY TAB CONTENT
+   AI TAB CONTENT - FIXED TAB SWITCHING
    ───────────────────────────────────────────── */
-.ai-security-content {
+.ai-tab-content {
     display: none;
 }
 
-.ai-security-content.active {
+.ai-tab-content.active {
     display: block;
     animation: fadeIn 0.3s ease;
 }
@@ -53,6 +53,7 @@
     position: relative;
     overflow: hidden;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .ai-stat-card::before {
@@ -72,30 +73,8 @@
 }
 
 .ai-stat-card .stat-icon {
-    width: 50px;
-    height: 50px;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-}
-
-.ai-stat-card .stat-icon.atlas {
-    background: linear-gradient(135deg, var(--ai-purple), var(--ai-pink));
-}
-
-.ai-stat-card .stat-icon.aiid {
-    background: linear-gradient(135deg, var(--ai-orange), #ff6b6b);
-}
-
-.ai-stat-card .stat-icon.owasp {
-    background: linear-gradient(135deg, var(--ai-blue), #00d4ff);
-}
-
-.ai-stat-card .stat-icon.correlation {
-    background: linear-gradient(135deg, #00ff88, #00d9ff);
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
 }
 
 .ai-stat-card .stat-value {
@@ -167,6 +146,8 @@
     border-radius: 12px;
     transition: all 0.3s ease;
     cursor: pointer;
+    text-decoration: none;
+    color: inherit;
 }
 
 .threat-item:hover {
@@ -184,6 +165,7 @@
     justify-content: center;
     font-weight: 700;
     font-size: 0.9rem;
+    flex-shrink: 0;
 }
 
 .threat-rank.critical {
@@ -202,28 +184,26 @@
 }
 
 .threat-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
+    flex-shrink: 0;
 }
 
 .threat-icon.campaign {
     background: rgba(255, 76, 76, 0.2);
-    color: #ff4c4c;
 }
 
 .threat-icon.ai_incident {
     background: rgba(157, 78, 221, 0.2);
-    color: var(--ai-purple);
 }
 
 .threat-icon.ai_technique {
     background: rgba(255, 149, 0, 0.2);
-    color: var(--ai-orange);
 }
 
 .threat-info {
@@ -255,8 +235,16 @@
     gap: 0.5rem;
 }
 
-.threat-source i {
-    font-size: 0.7rem;
+.threat-arrow {
+    font-size: 1.2rem;
+    color: var(--accent-cyan);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.threat-item:hover .threat-arrow {
+    opacity: 1;
+    transform: translateX(5px);
 }
 
 /* ─────────────────────────────────────────────
@@ -273,18 +261,22 @@
 }
 
 .atlas-card {
-    background: linear-gradient(135deg, rgba(157, 78, 221, 0.05), rgba(58, 134, 255, 0.02));
-    border: 1px solid rgba(157, 78, 221, 0.2);
+    background: linear-gradient(135deg, rgba(157, 78, 221, 0.08), rgba(58, 134, 255, 0.03));
+    border: 1px solid rgba(157, 78, 221, 0.25);
     border-radius: 12px;
     padding: 1.25rem;
     transition: all 0.3s ease;
     cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 .atlas-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(157, 78, 221, 0.15);
+    box-shadow: 0 10px 30px rgba(157, 78, 221, 0.2);
     border-color: var(--ai-purple);
+    background: linear-gradient(135deg, rgba(157, 78, 221, 0.15), rgba(58, 134, 255, 0.08));
 }
 
 .atlas-card-header {
@@ -295,20 +287,21 @@
 }
 
 .atlas-id {
-    font-family: 'Fira Code', monospace;
-    font-size: 0.75rem;
+    font-family: 'Fira Code', 'SF Mono', monospace;
+    font-size: 0.8rem;
     color: var(--ai-purple);
     background: rgba(157, 78, 221, 0.15);
-    padding: 0.25rem 0.5rem;
-    border-radius: 4px;
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
 }
 
 .atlas-severity {
-    font-size: 0.7rem;
-    padding: 0.2rem 0.5rem;
+    font-size: 0.65rem;
+    padding: 0.25rem 0.6rem;
     border-radius: 4px;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .atlas-severity.high {
@@ -327,10 +320,11 @@
 }
 
 .atlas-name {
-    font-size: 0.95rem;
+    font-size: 1rem;
     font-weight: 600;
     color: var(--text-primary);
     margin-bottom: 0.5rem;
+    line-height: 1.3;
 }
 
 .atlas-desc {
@@ -338,9 +332,25 @@
     color: var(--text-muted);
     line-height: 1.5;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    margin-bottom: 0.75rem;
+}
+
+.atlas-footer {
+    padding-top: 0.75rem;
+    border-top: 1px solid rgba(157, 78, 221, 0.15);
+}
+
+.atlas-link {
+    font-size: 0.8rem;
+    color: var(--ai-purple);
+    font-weight: 500;
+}
+
+.atlas-card:hover .atlas-link {
+    text-decoration: underline;
 }
 
 /* ─────────────────────────────────────────────
@@ -354,7 +364,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
-    max-height: 500px;
+    max-height: 600px;
     overflow-y: auto;
 }
 
@@ -368,34 +378,43 @@
 }
 
 .incidents-list::-webkit-scrollbar-thumb {
-    background: var(--ai-purple);
+    background: var(--ai-orange);
     border-radius: 4px;
 }
 
 .incident-card {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 1rem;
-    padding: 1rem;
+    padding: 1rem 1.25rem;
     background: rgba(255, 149, 0, 0.03);
     border: 1px solid rgba(255, 149, 0, 0.15);
     border-radius: 12px;
     transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
 }
 
 .incident-card:hover {
-    background: rgba(255, 149, 0, 0.08);
+    background: rgba(255, 149, 0, 0.1);
     border-color: var(--ai-orange);
+    transform: translateX(5px);
 }
 
-.incident-id {
-    font-family: 'Fira Code', monospace;
+.incident-emoji {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.incident-id-badge {
+    font-family: 'Fira Code', 'SF Mono', monospace;
     font-size: 0.7rem;
     color: var(--ai-orange);
     background: rgba(255, 149, 0, 0.15);
-    padding: 0.25rem 0.5rem;
+    padding: 0.2rem 0.5rem;
     border-radius: 4px;
-    white-space: nowrap;
+    display: inline-block;
+    margin-bottom: 0.3rem;
 }
 
 .incident-content {
@@ -409,30 +428,33 @@
     color: var(--text-primary);
     margin-bottom: 0.5rem;
     line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .incident-meta {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.75rem;
     font-size: 0.75rem;
     color: var(--text-muted);
+    flex-wrap: wrap;
 }
 
 .incident-category {
     display: flex;
     align-items: center;
     gap: 0.25rem;
-    background: rgba(255, 255, 255, 0.05);
-    padding: 0.2rem 0.5rem;
-    border-radius: 4px;
 }
 
 .incident-severity {
-    padding: 0.2rem 0.5rem;
+    padding: 0.15rem 0.4rem;
     border-radius: 4px;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
+    font-size: 0.65rem;
 }
 
 .incident-severity.critical {
@@ -450,6 +472,19 @@
     color: var(--accent-cyan);
 }
 
+.incident-arrow {
+    font-size: 1.2rem;
+    color: var(--ai-orange);
+    opacity: 0;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.incident-card:hover .incident-arrow {
+    opacity: 1;
+    transform: translateX(5px);
+}
+
 /* ─────────────────────────────────────────────
    OWASP LLM TOP 10 SECTION
    ───────────────────────────────────────────── */
@@ -459,18 +494,21 @@
 
 .owasp-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 1rem;
 }
 
 .owasp-card {
-    background: linear-gradient(135deg, rgba(58, 134, 255, 0.05), rgba(0, 212, 255, 0.02));
-    border: 1px solid rgba(58, 134, 255, 0.2);
+    background: linear-gradient(135deg, rgba(58, 134, 255, 0.08), rgba(0, 212, 255, 0.03));
+    border: 1px solid rgba(58, 134, 255, 0.25);
     border-radius: 12px;
     padding: 1.25rem;
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 .owasp-card::before {
@@ -485,16 +523,23 @@
 
 .owasp-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(58, 134, 255, 0.15);
+    box-shadow: 0 10px 30px rgba(58, 134, 255, 0.2);
+    border-color: var(--ai-blue);
+    background: linear-gradient(135deg, rgba(58, 134, 255, 0.15), rgba(0, 212, 255, 0.08));
 }
 
-.owasp-rank {
+.owasp-emoji {
     font-size: 2rem;
-    font-weight: 900;
-    color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 0.75rem;
+}
+
+.owasp-rank-badge {
     position: absolute;
-    top: 0.5rem;
-    right: 1rem;
+    top: 0.75rem;
+    right: 0.75rem;
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.08);
 }
 
 .owasp-header {
@@ -505,7 +550,7 @@
 }
 
 .owasp-id {
-    font-family: 'Fira Code', monospace;
+    font-family: 'Fira Code', 'SF Mono', monospace;
     font-size: 0.75rem;
     color: var(--ai-blue);
     background: rgba(58, 134, 255, 0.15);
@@ -514,7 +559,7 @@
 }
 
 .owasp-severity {
-    font-size: 0.65rem;
+    font-size: 0.6rem;
     padding: 0.2rem 0.4rem;
     border-radius: 3px;
     font-weight: 700;
@@ -541,6 +586,7 @@
     font-weight: 600;
     color: var(--text-primary);
     margin-bottom: 0.5rem;
+    line-height: 1.3;
 }
 
 .owasp-desc {
@@ -548,24 +594,67 @@
     color: var(--text-muted);
     line-height: 1.5;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    margin-bottom: 0.75rem;
+}
+
+.owasp-footer {
+    padding-top: 0.75rem;
+    border-top: 1px solid rgba(58, 134, 255, 0.15);
 }
 
 .owasp-link {
+    font-size: 0.8rem;
+    color: var(--ai-blue);
+    font-weight: 500;
+}
+
+.owasp-card:hover .owasp-link {
+    text-decoration: underline;
+}
+
+/* ─────────────────────────────────────────────
+   VIEW ALL LINKS
+   ───────────────────────────────────────────── */
+.view-all-link {
+    text-align: center;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+}
+
+.view-all-link a {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    margin-top: 0.75rem;
-    font-size: 0.8rem;
-    color: var(--ai-blue);
+    color: var(--ai-purple);
     text-decoration: none;
-    transition: color 0.3s ease;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    background: rgba(157, 78, 221, 0.1);
+    border: 1px solid rgba(157, 78, 221, 0.2);
+    transition: all 0.3s ease;
 }
 
-.owasp-link:hover {
-    color: var(--accent-cyan);
+.view-all-link a:hover {
+    background: rgba(157, 78, 221, 0.2);
+    border-color: var(--ai-purple);
+    transform: translateY(-2px);
+}
+
+.view-all-link.owasp-link-color a {
+    color: var(--ai-blue);
+    background: rgba(58, 134, 255, 0.1);
+    border-color: rgba(58, 134, 255, 0.2);
+}
+
+.view-all-link.owasp-link-color a:hover {
+    background: rgba(58, 134, 255, 0.2);
+    border-color: var(--ai-blue);
 }
 
 /* ─────────────────────────────────────────────
@@ -619,6 +708,7 @@
     padding: 0.15rem 0.4rem;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.2);
+    font-weight: 600;
 }
 
 /* ─────────────────────────────────────────────
@@ -662,6 +752,12 @@
     .owasp-grid {
         grid-template-columns: 1fr;
     }
+
+    .incident-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
 }
 
 /* ─────────────────────────────────────────────
@@ -699,10 +795,38 @@
     text-align: center;
     padding: 3rem;
     color: var(--text-muted);
+    font-size: 1rem;
 }
 
-.ai-empty i {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    color: rgba(157, 78, 221, 0.3);
+.ai-empty p {
+    margin-top: 0.5rem;
+}
+
+/* ─────────────────────────────────────────────
+   LIGHT MODE SUPPORT
+   ───────────────────────────────────────────── */
+body.light-mode .ai-stat-card {
+    background: linear-gradient(135deg, rgba(157, 78, 221, 0.08), rgba(255, 149, 0, 0.03));
+    border-color: rgba(157, 78, 221, 0.2);
+}
+
+body.light-mode .ai-stat-card .stat-value {
+    background: linear-gradient(135deg, #333, #666);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+body.light-mode .atlas-card,
+body.light-mode .owasp-card,
+body.light-mode .incident-card,
+body.light-mode .threat-item {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+body.light-mode .atlas-name,
+body.light-mode .owasp-name,
+body.light-mode .incident-title,
+body.light-mode .threat-name {
+    color: #1a1a1a;
 }
