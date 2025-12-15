@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gentlemen Ransomware: The "Polite" Threat Ripping Through Corporate Networks | TheHGTech</title>
+    <meta name="description"
+        content="The Gentlemen ransomware gang has hit 17 countries using advanced BYOVD and GPO attacks. Here's what makes them different and how to defend your organization.">
+    <meta name="keywords"
+        content="Gentlemen ransomware, BYOVD attack, ransomware 2025, GPO manipulation, double extortion, cybersecurity">
+    <link rel="canonical" href="https://thehgtech.com/articles/gentlemen-ransomware-threat-2025.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Gentlemen Ransomware: The Sophisticated Threat You Need to Know About">
+    <meta property="og:description"
+        content="17 countries hit, advanced evasion techniques, and a double extortion model. Here's the full breakdown.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/articles/gentlemen-ransomware-threat-2025.html">
+
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/theme-toggle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="/theme-toggle.js" defer></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF4C4C;
+            --accent-purple: #9D4EDD;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        .article-container {
+            max-width: 800px;
+            margin: 80px auto 0;
+            padding: 2rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-cyan);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: var(--text-primary);
+        }
+
+        .article-header {
+            margin-bottom: 3rem;
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            flex-wrap: wrap;
+        }
+
+        .article-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .article-title {
+            font-size: 3rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--accent-red), var(--accent-purple));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .article-subtitle {
+            font-size: 1.3rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(135deg, rgba(255, 76, 76, 0.15), rgba(157, 78, 221, 0.15));
+            border-radius: 12px;
+            margin: 2rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--border);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: repeating-linear-gradient(0deg,
+                    transparent,
+                    transparent 2px,
+                    rgba(255, 76, 76, 0.03) 2px,
+                    rgba(255, 76, 76, 0.03) 4px);
+        }
+
+        .hero-image i {
+            font-size: 6rem;
+            color: var(--accent-red);
+            text-shadow: 0 0 60px rgba(255, 76, 76, 0.5);
+        }
+
+        .article-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .article-content h2 {
+            font-size: 2rem;
+            margin: 3rem 0 1.5rem;
+            color: var(--text-primary);
+        }
+
+        .article-content h3 {
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem;
+            color: var(--accent-cyan);
+        }
+
+        .article-content p {
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        .article-content strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .article-content ul,
+        .article-content ol {
+            margin: 1.5rem 0;
+            padding-left: 2rem;
+        }
+
+        .article-content li {
+            margin-bottom: 0.75rem;
+            color: var(--text-secondary);
+        }
+
+        .alert-box {
+            background: rgba(255, 76, 76, 0.1);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .alert-box strong {
+            color: var(--accent-red);
+        }
+
+        .info-box {
+            background: rgba(0, 217, 255, 0.1);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .purple-box {
+            background: rgba(157, 78, 221, 0.1);
+            border-left: 4px solid var(--accent-purple);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .stat-card .number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--accent-red);
+            line-height: 1;
+        }
+
+        .stat-card .label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 0.5rem;
+        }
+
+        .technique-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .technique-card h4 {
+            color: var(--accent-purple);
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .code-block {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+        }
+
+        .guide-link {
+            display: inline-block;
+            background: linear-gradient(135deg, rgba(0, 217, 255, 0.1), rgba(102, 126, 234, 0.1));
+            border: 1px solid var(--accent-cyan);
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            color: var(--accent-cyan);
+            text-decoration: none;
+            margin: 0.5rem 0.5rem 0.5rem 0;
+            transition: all 0.3s;
+        }
+
+        .guide-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 217, 255, 0.3);
+        }
+
+        .comparison-link {
+            display: inline-block;
+            background: linear-gradient(135deg, rgba(255, 76, 76, 0.1), rgba(157, 78, 221, 0.1));
+            border: 1px solid var(--accent-red);
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            color: var(--accent-red);
+            text-decoration: none;
+            margin: 0.5rem 0.5rem 0.5rem 0;
+            transition: all 0.3s;
+        }
+
+        .comparison-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 76, 76, 0.3);
+        }
+
+        .related-guides {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 3rem 0;
+        }
+
+        .related-guides h3 {
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+        }
+
+        .timeline {
+            border-left: 2px solid var(--accent-purple);
+            padding-left: 2rem;
+            margin: 2rem 0;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 1.5rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2.35rem;
+            top: 0.5rem;
+            width: 12px;
+            height: 12px;
+            background: var(--accent-purple);
+            border-radius: 50%;
+        }
+
+        .timeline-item .date {
+            font-size: 0.85rem;
+            color: var(--accent-purple);
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .article-title {
+                font-size: 2rem;
+            }
+
+            .article-container {
+                padding: 1rem;
+            }
+
+            .hero-image {
+                height: 250px;
+            }
+
+            .hero-image i {
+                font-size: 4rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="article-container">
+        <a href="/articles.html" class="back-link">
+            <i class="fas fa-arrow-left"></i> Back to Articles
+        </a>
+
+        <div class="article-header">
+            <div class="article-meta">
+                <span><i class="far fa-calendar"></i> December 15, 2025</span>
+                <span><i class="far fa-clock"></i> 10 min read</span>
+                <span><i class="fas fa-tag"></i> Ransomware</span>
+                <span><i class="fas fa-globe"></i> 17 Countries Affected</span>
+            </div>
+
+            <h1 class="article-title">Gentlemen Ransomware: The "Polite" Threat Ripping Through Corporate Networks</h1>
+            <p class="article-subtitle">Don't let the name fool you—this Go-based ransomware variant is anything but
+                courteous. With BYOVD attacks, GPO manipulation, and a growing victim count across 17 countries, here's
+                what you need to know.</p>
+        </div>
+
+        <div class="hero-image">
+            <i class="fas fa-user-secret"></i>
+        </div>
+
+        <div class="article-content">
+            <div class="alert-box">
+                <strong>🚨 ACTIVE THREAT:</strong> Gentlemen ransomware is actively targeting organizations worldwide.
+                If you haven't reviewed your EDR configurations and driver policies recently, now is the time.
+            </div>
+
+            <h2>When Ransomware Gets "Sophisticated"</h2>
+            <p>I've been tracking ransomware groups for years, and every once in a while, a new player emerges that
+                makes you pause and take notice. The Gentlemen ransomware gang—first spotted in August 2025—is one of
+                those groups.</p>
+
+            <p>The irony of the name isn't lost on me. There's nothing gentlemanly about stealing your data, killing
+                your security tools, and then demanding ransom while threatening to leak everything publicly. But I
+                suppose even cybercriminals appreciate a bit of dark humor.</p>
+
+            <p>What sets this group apart isn't their audacity—it's their technical sophistication. This isn't a script
+                kiddie operation. These are skilled operators using advanced techniques that would make many red teamers
+                envious.</p>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="number">17</div>
+                    <div class="label">Countries Hit</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">BYOVD</div>
+                    <div class="label">Attack Method</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">Go</div>
+                    <div class="label">Language</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">2x</div>
+                    <div class="label">Extortion Model</div>
+                </div>
+            </div>
+
+            <h2>The Technical Arsenal</h2>
+            <p>What makes Gentlemen particularly dangerous is their combination of techniques. Let's break down what
+                they're working with:</p>
+
+            <div class="technique-card">
+                <h4><i class="fas fa-microchip"></i> BYOVD - Bring Your Own Vulnerable Driver</h4>
+                <p style="color: var(--text-secondary); margin: 0;">This is the big one. The attackers deploy legitimate
+                    but vulnerable signed drivers onto victim systems. Because these drivers are properly signed by
+                    trusted vendors, most security tools let them through. Once loaded, these drivers are exploited to
+                    disable EDR agents, antivirus software, and other security controls. Your expensive endpoint
+                    protection? Neutralized before the encryption even starts.</p>
+            </div>
+
+            <div class="technique-card">
+                <h4><i class="fas fa-sitemap"></i> GPO Manipulation</h4>
+                <p style="color: var(--text-secondary); margin: 0;">Instead of manually spreading through the network,
+                    Gentlemen leverages Active Directory Group Policy Objects to deploy their ransomware at scale. One
+                    compromised domain controller, and suddenly every machine in your environment is executing their
+                    payload on the next policy refresh. It's efficient, it's fast, and it's devastating.</p>
+            </div>
+
+            <div class="technique-card">
+                <h4><i class="fas fa-file-export"></i> Double Extortion Model</h4>
+                <p style="color: var(--text-secondary); margin: 0;">Before encrypting anything, Gentlemen exfiltrates
+                    your sensitive data. This means even if you have perfect backups and can restore without paying,
+                    they still have leverage. "Pay us, or we publish your customer data, intellectual property, and
+                    financial records." It's a business model that works, unfortunately.</p>
+            </div>
+
+            <h2>Why I'm Particularly Concerned About This One</h2>
+
+            <p>I've seen a lot of ransomware variants over the years. Most follow predictable patterns. But Gentlemen
+                concerns me for several reasons:</p>
+
+            <h3>1. The BYOVD Problem Is Getting Worse</h3>
+            <p>The security industry has known about vulnerable drivers for years, but we still haven't solved the
+                problem. Microsoft's HVCI and driver blocklist help, but they're not universally deployed. Most
+                organizations I've worked with don't have driver allowlisting policies. Until we collectively address
+                this gap, BYOVD attacks will remain highly effective.</p>
+
+            <h3>2. They're Targeting Diverse Industries</h3>
+            <p>This isn't a group focused solely on healthcare or finance. The 17-country spread suggests opportunistic
+                targeting—they're hitting whoever they can compromise. That means everyone is potentially in scope.</p>
+
+            <h3>3. The Go Language Choice Is Strategic</h3>
+            <p>Writing ransomware in Go provides several advantages: easy cross-compilation for different platforms,
+                good performance, and—here's the kicker—many security tools have less mature detection for Go binaries
+                compared to traditional C/C++ malware. It's a smart technical choice.</p>
+
+            <div class="purple-box">
+                <h3 style="color: var(--accent-purple); margin-top: 0;">The Timeline So Far</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="date">August 2025</div>
+                        <p style="color: var(--text-secondary); margin: 0.5rem 0 0 0;">First samples of Gentlemen
+                            ransomware identified in the wild</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="date">October 2025</div>
+                        <p style="color: var(--text-secondary); margin: 0.5rem 0 0 0;">Expansion to multiple countries,
+                            BYOVD techniques confirmed</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="date">December 2025</div>
+                        <p style="color: var(--text-secondary); margin: 0.5rem 0 0 0;">17 countries affected, continued
+                            active campaigns reported</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Defending Against Gentlemen (and Similar Threats)</h2>
+
+            <p>So what can you actually do? Here's my practical guidance based on their known TTPs:</p>
+
+            <h3>Immediate Actions</h3>
+            <ul>
+                <li><strong>Review your driver policies:</strong> Enable HVCI (Hypervisor-Protected Code Integrity)
+                    where possible. Deploy Microsoft's recommended driver blocklist. Consider driver allowlisting for
+                    critical systems.</li>
+                <li><strong>Harden Active Directory:</strong> Audit GPO creation and modification rights. Implement
+                    tiered administration. Monitor for suspicious policy changes.</li>
+                <li><strong>Protect your EDR:</strong> Enable tamper protection features. Ensure your EDR can detect
+                    driver-based attacks. Test whether vulnerable drivers can be loaded in your environment.</li>
+            </ul>
+
+            <h3>Detection Opportunities</h3>
+            <ul>
+                <li><strong>Driver loading events:</strong> Monitor for unusual kernel driver installations, especially
+                    from temp directories or unusual paths</li>
+                <li><strong>GPO modifications:</strong> Alert on Group Policy Object changes outside of approved change
+                    windows</li>
+                <li><strong>Large data transfers:</strong> The exfiltration phase is your window to catch them before
+                    encryption—monitor for unusual outbound data volumes</li>
+                <li><strong>EDR agent health:</strong> If your endpoint agents suddenly stop reporting, that's a major
+                    red flag</li>
+            </ul>
+
+            <div class="info-box">
+                <h3 style="color: var(--accent-cyan); margin-top: 0;"><i class="fas fa-shield-alt"></i> EDR
+                    Considerations</h3>
+                <p style="margin-bottom: 0;">If you're evaluating or reconsidering your EDR solution, this is exactly
+                    the type of threat that separates good platforms from great ones. The ability to detect and prevent
+                    BYOVD attacks, resist tampering, and maintain visibility even under attack is crucial. Check out our
+                    <a href="/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html"
+                        style="color: var(--accent-cyan);">EDR/XDR comparison</a> for an in-depth look at how major
+                    platforms stack up.
+                </p>
+            </div>
+
+            <h2>The Bigger Picture: Why Ransomware Keeps Winning</h2>
+
+            <p>Every time I write about a new ransomware variant, I'm reminded of a fundamental truth: <strong>we're
+                    losing this battle</strong>. Not because we lack the tools or the knowledge, but because we lack the
+                consistency in applying them.</p>
+
+            <p>Think about it:</p>
+            <ul>
+                <li>We've known about BYOVD for years—most organizations haven't addressed it</li>
+                <li>We know GPO can be weaponized—most organizations don't monitor it closely</li>
+                <li>We know data exfiltration precedes encryption—most organizations can't detect it</li>
+            </ul>
+
+            <p>The Gentlemen gang isn't using zero-days or nation-state level capabilities. They're using known
+                techniques against known gaps. And they're succeeding because those gaps persist.</p>
+
+            <h2>What I'm Watching Next</h2>
+
+            <p>A few things I'm monitoring as this threat evolves:</p>
+
+            <ul>
+                <li><strong>Vulnerable driver identification:</strong> Security researchers are continuously discovering
+                    new vulnerable drivers. Expect BYOVD attacks to incorporate newer drivers as they're found.</li>
+                <li><strong>Affiliate expansion:</strong> Many ransomware operations run affiliate programs. If
+                    Gentlemen follows this model, we could see rapid expansion in attack volume.</li>
+                <li><strong>Industry targeting patterns:</strong> As more victim data emerges, we'll get a clearer
+                    picture of whether certain industries are being specifically targeted.</li>
+            </ul>
+
+            <div class="related-guides">
+                <h3>Essential Resources for Ransomware Defense</h3>
+                <p style="color: var(--text-secondary);">These guides will help you strengthen your defenses against
+                    Gentlemen and similar threats:</p>
+
+                <a href="/guides/ransomware-response-playbook.html" class="guide-link">
+                    <i class="fas fa-file-medical-alt"></i> Ransomware Response Playbook
+                </a>
+
+                <a href="/guides/threat-hunting-techniques.html" class="guide-link">
+                    <i class="fas fa-search"></i> Threat Hunting Techniques
+                </a>
+
+                <a href="/guides/incident-response-automation.html" class="guide-link">
+                    <i class="fas fa-robot"></i> Incident Response Automation
+                </a>
+
+                <a href="/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html" class="comparison-link">
+                    <i class="fas fa-balance-scale"></i> EDR/XDR Comparison 2025
+                </a>
+            </div>
+
+            <h2>Final Thoughts</h2>
+
+            <p>The Gentlemen ransomware gang represents the continuing evolution of ransomware threats. They're
+                technically capable, operationally sophisticated, and clearly well-resourced. The combination of BYOVD,
+                GPO manipulation, and double extortion makes them a formidable adversary.</p>
+
+            <p>But here's the thing—<strong>everything they're doing is preventable</strong>. Every technique they use
+                has corresponding defenses. The question is whether we implement those defenses before we become
+                victims.</p>
+
+            <p>I'll continue tracking this group and will update this article as we learn more. In the meantime, take a
+                hard look at your driver policies, your AD security, and your data loss prevention capabilities. The
+                Gentlemen are actively hunting, and they're not as polite as their name suggests.</p>
+
+            <div class="alert-box">
+                <p><strong>Stay vigilant. Stay prepared. And whatever you do, don't assume it won't happen to
+                        you.</strong></p>
+                <p style="margin-top: 1rem; margin-bottom: 0;"><em>Have you seen indicators of Gentlemen ransomware in
+                        your environment? Dealing with a BYOVD attack? The security community benefits when we share
+                        intelligence—responsibly, of course.</em></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

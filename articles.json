@@ -1,6 +1,41 @@
 {
   "articles": [
     {
+      "id": "article-gentlemen-ransomware-2025",
+      "title": "Gentlemen Ransomware: The 'Polite' Threat Ripping Through Corporate Networks",
+      "date": "December 15, 2025",
+      "category": "Ransomware",
+      "excerpt": "Don't let the name fool you—this Go-based ransomware variant is anything but courteous. With BYOVD attacks, GPO manipulation, and 17 countries affected, here's what you need to know about this sophisticated threat.",
+      "tags": [
+        "Ransomware",
+        "BYOVD",
+        "Gentlemen",
+        "GPO Manipulation",
+        "Double Extortion",
+        "EDR Evasion",
+        "Active Threat"
+      ],
+      "author": "Harish G",
+      "content": "<article><header><h1>Gentlemen Ransomware: The 'Polite' Threat Ripping Through Corporate Networks</h1><p><strong>Author:</strong> Harish G</p><p><strong>Published:</strong> December 15, 2025</p></header><div style=\"background: rgba(255, 76, 76, 0.1); border-left: 4px solid #FF4C4C; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;\"><p style=\"margin: 0;\"><strong>🚨 ACTIVE THREAT:</strong> Gentlemen ransomware is actively targeting organizations worldwide. If you haven't reviewed your EDR configurations and driver policies recently, now is the time.</p></div><h2>When Ransomware Gets 'Sophisticated'</h2><p>I've been tracking ransomware groups for years, and every once in a while, a new player emerges that makes you pause and take notice. The Gentlemen ransomware gang—first spotted in August 2025—is one of those groups.</p><p>The irony of the name isn't lost on me. There's nothing gentlemanly about stealing your data, killing your security tools, and then demanding ransom while threatening to leak everything publicly. But I suppose even cybercriminals appreciate a bit of dark humor.</p><p>What sets this group apart isn't their audacity—it's their technical sophistication. This isn't a script kiddie operation. These are skilled operators using advanced techniques that would make many red teamers envious.</p><h2>The Stats</h2><ul><li><strong>17 Countries:</strong> Global reach across multiple continents</li><li><strong>BYOVD Attacks:</strong> Bring Your Own Vulnerable Driver to disable security tools</li><li><strong>Go Language:</strong> Cross-platform capability and evasion</li><li><strong>Double Extortion:</strong> Steal first, encrypt second</li></ul><h2>The Technical Arsenal</h2><h3>BYOVD - Bring Your Own Vulnerable Driver</h3><p>This is the big one. The attackers deploy legitimate but vulnerable signed drivers onto victim systems. Because these drivers are properly signed by trusted vendors, most security tools let them through. Once loaded, these drivers are exploited to disable EDR agents, antivirus software, and other security controls.</p><h3>GPO Manipulation</h3><p>Instead of manually spreading through the network, Gentlemen leverages Active Directory Group Policy Objects to deploy their ransomware at scale. One compromised domain controller, and suddenly every machine in your environment is executing their payload.</p><h3>Double Extortion Model</h3><p>Before encrypting anything, Gentlemen exfiltrates your sensitive data. This means even if you have perfect backups and can restore without paying, they still have leverage.</p><h2>Defending Against Gentlemen</h2><h3>Immediate Actions</h3><ul><li><strong>Review driver policies:</strong> Enable HVCI where possible. Deploy Microsoft's recommended driver blocklist.</li><li><strong>Harden Active Directory:</strong> Audit GPO creation and modification rights.</li><li><strong>Protect your EDR:</strong> Enable tamper protection features.</li></ul><h3>Detection Opportunities</h3><ul><li><strong>Driver loading events:</strong> Monitor for unusual kernel driver installations</li><li><strong>GPO modifications:</strong> Alert on Group Policy Object changes outside approved windows</li><li><strong>Large data transfers:</strong> Monitor for unusual outbound data volumes</li><li><strong>EDR agent health:</strong> If agents stop reporting, that's a major red flag</li></ul><div style=\"background: rgba(0, 217, 255, 0.05); border-left: 4px solid #00D9FF; padding: 1.5rem; border-radius: 8px; margin: 2rem 0;\"><h3 style=\"margin-top: 0; color: #00D9FF;\">Related Resources</h3><ul style=\"margin-bottom: 0;\"><li><a href=\"/guides/ransomware-response-playbook.html\">Ransomware Response Playbook</a></li><li><a href=\"/guides/threat-hunting-techniques.html\">Threat Hunting Techniques</a></li><li><a href=\"/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html\">EDR/XDR Comparison 2025</a></li></ul></div><p>The Gentlemen ransomware gang represents the continuing evolution of ransomware threats. But here's the thing—<strong>everything they're doing is preventable</strong>. Every technique they use has corresponding defenses. The question is whether we implement those defenses before we become victims.</p></article>",
+      "relatedGuides": [
+        {
+          "title": "Ransomware Response Playbook",
+          "url": "guides/ransomware-response-playbook.html",
+          "description": "Step-by-step guide to responding to ransomware attacks"
+        },
+        {
+          "title": "Threat Hunting Techniques",
+          "url": "guides/threat-hunting-techniques.html",
+          "description": "Proactive threat detection methodologies"
+        },
+        {
+          "title": "EDR/XDR Comparison 2025",
+          "url": "comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
+          "description": "Compare leading endpoint protection platforms"
+        }
+      ]
+    },
+    {
       "id": "report-20251215",
       "title": "Weekly Threat Report: December 15, 2025",
       "date": "December 15, 2025",
