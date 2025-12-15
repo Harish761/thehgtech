@@ -1,11 +1,11 @@
 // Auto-Generated Threat Intel (Multi-Vendor Dashboard)
-// Updated: 2025-12-15T02:01:14.060705+05:30 IST
+// Updated: 2025-12-15T07:55:25.248313+05:30 IST
 // Sources: OpenPhish, Malware Bazaar, Spamhaus DROP, CINS Army, Blocklist.de, URLhaus, ThreatFox, Feodo Tracker, SSL Blacklist
 // NOTE: Full IOC lists are stored in GitHub Pages (ioc-data/) and loaded on-demand
 
 window.threatIntelData = {
-    "lastUpdated": "2025-12-15T02:01:13.709513+05:30",
-    "lastUpdatedFormatted": "Dec 15, 2025 at 02:01 AM IST",
+    "lastUpdated": "2025-12-15T07:55:24.892331+05:30",
+    "lastUpdatedFormatted": "Dec 15, 2025 at 07:55 AM IST",
     "comparisonPeriod": "Dec 14 \u2013 Dec 15, 2025",
     "vendors": {
         "OpenPhish": {
@@ -23,33 +23,33 @@ window.threatIntelData = {
                 "url"
             ],
             "sampleIndicators": [
-                "hxxps://mathlearning[.]2004416[.]workers[.]dev/uadmin/uadmin[.]php/",
-                "hxxps://gateway[.]ipfs[.]io/ipfs/QmTWMzrfTk1HEzSV1eXBT8JCfCfnVjvzzQ3f2HQSPfhGgf/",
-                "hxxps://si[.]team-su[.]com/p/fhtb-mrgw/nwjrmgwv/",
-                "hxxps://dpd-ptzzet[.]cfd/ptr",
-                "hxxps://encrypt[.]wallet-connect-6pp[.]pages[.]dev/assets/assets/formtojson[.]js/"
+                "hxxp://www[.]domainfortesting[.]space/",
+                "hxxps://betww[.]cm/",
+                "hxxps://www[.]betqq[.]cm/",
+                "hxxp://www[.]betuu[.]cm/",
+                "hxxp://fatmaciba-cpu[.]github[.]io/javascript-search-filter"
             ]
         },
         "Malware Bazaar": {
             "description": "Recent malware samples with hashes and URLs. Tracks active malware distribution from abuse.ch community.",
             "website": "https://bazaar.abuse.ch/",
             "updateFrequency": "Real-time",
-            "iocCount": 946,
+            "iocCount": 972,
             "iocDataUrl": "https://thehgtech.com/ioc-data/malware-bazaar.json",
             "stats": {
-                "total": 946,
-                "newInLastHour": 31,
+                "total": 972,
+                "newInLastHour": 70,
                 "lastUpdate": "just now"
             },
             "types": [
                 "hash"
             ],
             "sampleIndicators": [
-                " \"b7bbc5e217162c0d2a5799c78b105037e0707de7eda04a0103a1161d8d604102",
-                " \"6e2fb508779859da86754cea3a2a4b15e90d0df1f9695422080611b54826dc08",
-                " \"92147d07877a45ff6462b0bfb22bbbe49466f1d6c3a853c36426acde59ca35da",
-                " \"d3de098276976dc4d0986f947e8470bfd42c59e4c422b64a159e11b238d553f3",
-                " \"27ac0a02c0cd622e7440a20a7307843f13285ff77b1f9666280affe8dd3e6076"
+                " \"498b13a70b86ee9795e6816ba67cc9a695ffc893543040a8bf9ebdc9abadc8a0",
+                " \"82b37045ee07d9fd77cf6c07c3a9c2cc1e422d9a74cf3ba4539e81695d0b5655",
+                " \"7ca4f4457b03b4a4aaf6f464d6d6e7f4515b0c0634106367bb7b8b6eb726bd82",
+                " \"485bdbde3aed7821f2d7007ef36a5e267a6b3bea805b85558b784da37c15df04",
+                " \"de69c5effd95d1ae64ac8e49fb0b3c162dd95cfb8d6d7502fc71135baaa012ce"
             ]
         },
         "Spamhaus DROP": {
@@ -89,32 +89,32 @@ window.threatIntelData = {
                 "ip"
             ],
             "sampleIndicators": [
-                "1[.]10[.]214[.]65",
                 "1[.]1[.]179[.]25",
                 "1[.]123[.]20[.]64",
-                "1[.]15[.]118[.]23",
-                "1[.]161[.]61[.]55"
+                "1[.]161[.]61[.]55",
+                "1[.]181[.]114[.]38",
+                "1[.]193[.]63[.]133"
             ]
         },
         "Blocklist.de": {
             "description": "IPs conducting SSH brute-force attacks. Community-reported attackers targeting SSH services.",
             "website": "https://www.blocklist.de/",
             "updateFrequency": "Hourly",
-            "iocCount": 5635,
+            "iocCount": 5825,
             "iocDataUrl": "https://thehgtech.com/ioc-data/blocklist-de.json",
             "stats": {
-                "total": 5635,
-                "newInLastHour": 5635,
+                "total": 5825,
+                "newInLastHour": 5825,
                 "lastUpdate": "just now"
             },
             "types": [
                 "ip"
             ],
             "sampleIndicators": [
+                "1[.]1[.]179[.]25",
                 "1[.]13[.]175[.]150",
                 "1[.]162[.]231[.]97",
                 "1[.]194[.]200[.]251",
-                "1[.]20[.]220[.]158",
                 "1[.]214[.]197[.]163"
             ]
         },
@@ -122,44 +122,44 @@ window.threatIntelData = {
             "description": "Malware distribution URLs from URLhaus. Tracks active malware hosting sites and payload delivery infrastructure.",
             "website": "https://urlhaus.abuse.ch/",
             "updateFrequency": "Real-time",
-            "iocCount": 28788,
+            "iocCount": 25091,
             "iocDataUrl": "https://thehgtech.com/ioc-data/urlhaus.json",
             "stats": {
-                "total": 28788,
-                "newInLastHour": 28788,
+                "total": 25091,
+                "newInLastHour": 25091,
                 "lastUpdate": "just now"
             },
             "types": [
                 "url"
             ],
             "sampleIndicators": [
-                "hxxps://shade[.]darkp1xel[.]ru/5mzm1jy7",
-                "hxxps://shade[.]darkp1xel[.]ru/rzasofy1",
-                "hxxps://delta5[.]darkp1xel[.]ru/wt6s3q95",
-                "hxxps://delta5[.]darkp1xel[.]ru/ccupap02",
-                "hxxps://gamma[.]darkp1xel[.]ru/rnc0xn6v"
+                "hxxps://zenith[.]cl0udcrest[.]ru/fdlnyz3v",
+                "hxxps://alto3[.]cl0udcrest[.]ru/q7ui2qqp",
+                "hxxps://alto3[.]cl0udcrest[.]ru/83h4gysc",
+                "hxxps://apex[.]cl0udcrest[.]ru/b9ccqq3s",
+                "hxxps://apex[.]cl0udcrest[.]ru/4a2a5la5"
             ]
         },
         "ThreatFox": {
             "description": "Multi-type IOC feed from ThreatFox. Includes IPs, domains, URLs, and hashes with malware family attribution.",
             "website": "https://threatfox.abuse.ch/",
             "updateFrequency": "Real-time",
-            "iocCount": 859,
+            "iocCount": 865,
             "iocDataUrl": "https://thehgtech.com/ioc-data/threatfox.json",
             "stats": {
-                "total": 859,
-                "newInLastHour": 858,
+                "total": 865,
+                "newInLastHour": 864,
                 "lastUpdate": "just now"
             },
             "types": [
                 "url"
             ],
             "sampleIndicators": [
-                " \"shade[.]darkp1xel[.]ru\"",
-                " \"delta5[.]darkp1xel[.]ru\"",
-                " \"216[.]92[.]60[.]88:443\"",
-                " \"156[.]234[.]152[.]176:9812\"",
-                " \"23[.]235[.]163[.]209:9812\""
+                " \"zenith[.]cl0udcrest[.]ru\"",
+                " \"alto3[.]cl0udcrest[.]ru\"",
+                " \"apex[.]cl0udcrest[.]ru\"",
+                " \"loam[.]s0ftcliff[.]ru\"",
+                " \"cush[.]s0ftcliff[.]ru\""
             ]
         },
         "Feodo Tracker": {
@@ -187,11 +187,11 @@ window.threatIntelData = {
             "description": "Malicious SSL certificates used by botnet C2 servers. Helps detect encrypted malware communications.",
             "website": "https://sslbl.abuse.ch/",
             "updateFrequency": "Daily",
-            "iocCount": 8629,
+            "iocCount": 8631,
             "iocDataUrl": "https://thehgtech.com/ioc-data/ssl-blacklist.json",
             "stats": {
-                "total": 8629,
-                "newInLastHour": 1,
+                "total": 8631,
+                "newInLastHour": 2,
                 "lastUpdate": "just now"
             },
             "types": [
@@ -209,29 +209,29 @@ window.threatIntelData = {
     "overview": [],
     "dailySummary": {
         "stats": {
-            "totalIndicators": 56063,
+            "totalIndicators": 56021,
             "activeSources": 8,
-            "criticalAlerts": 38386,
-            "activeCampaigns": 179
+            "criticalAlerts": 38366,
+            "activeCampaigns": 178
         },
         "topThreats": [
             {
                 "category": "Malware",
-                "count": 29779,
+                "count": 29760,
                 "trend": "stable",
                 "percentage": 0
             },
             {
                 "category": "C2",
-                "count": 8607,
+                "count": 8606,
                 "trend": "stable",
                 "percentage": 0
             },
             {
                 "category": "Botnet",
-                "count": 573,
+                "count": 551,
                 "trend": "stable",
-                "percentage": -1
+                "percentage": -3
             },
             {
                 "category": "Phishing",
@@ -257,14 +257,14 @@ window.threatIntelData = {
         "campaigns": [
             {
                 "name": "malware_download",
-                "count": 28768,
+                "count": 28788,
                 "types": [
                     "url"
                 ],
                 "sampleIndicators": [
-                    "hxxps://rime[.]frostc0re[.]ru/ik7unbt7",
-                    "hxxps://rime[.]frostc0re[.]ru/0375zezs",
-                    "hxxps://satin[.]softdr1ve[.]ru/kfa84i35"
+                    "hxxps://shade[.]darkp1xel[.]ru/5mzm1jy7",
+                    "hxxps://shade[.]darkp1xel[.]ru/rzasofy1",
+                    "hxxps://delta5[.]darkp1xel[.]ru/wt6s3q95"
                 ]
             },
             {
@@ -341,14 +341,14 @@ window.threatIntelData = {
             },
             {
                 "name": " \"Mirai",
-                "count": 504,
+                "count": 487,
                 "types": [
                     "hash"
                 ],
                 "sampleIndicators": [
-                    " \"6106a9316d7d294bc75cc57eeae832ef836d4a00395240e702fc168dccb93adb",
-                    " \"60974d37ba4aceba633c9ffee55439a95a6d9099ccdf247df6186ebb82a7b8c3",
-                    " \"2f0aeb866f29dcaff2f8b0554aeaf90cecd37c6bec22cd2de8005c28e515bba0"
+                    " \"92147d07877a45ff6462b0bfb22bbbe49466f1d6c3a853c36426acde59ca35da",
+                    " \"d3de098276976dc4d0986f947e8470bfd42c59e4c422b64a159e11b238d553f3",
+                    " \"42236ccd58eaccaa256fe206f482af645cb6c0bc5fc1711cba176c612f287c90"
                 ]
             },
             {
@@ -381,7 +381,7 @@ window.threatIntelData = {
         "topAttackVector": "Malicious URLs",
         "mostTargetedRegion": "North America",
         "fastestRisingThreat": "SSH Attacks",
-        "totalAttacksThisHour": 50617,
-        "lastCalculated": "2025-12-15 02:01 IST"
+        "totalAttacksThisHour": 47156,
+        "lastCalculated": "2025-12-15 07:55 IST"
     }
 };
