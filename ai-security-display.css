@@ -130,6 +130,67 @@
     color: var(--accent-red);
 }
 
+/* Threats Tabs (AI vs IOC) */
+.threats-tabs {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 4px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 10px;
+    border: 1px solid var(--border);
+}
+
+.threats-tab-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.threats-tab-btn:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-primary);
+}
+
+.threats-tab-btn.active[data-threats-tab="ai"] {
+    background: linear-gradient(135deg, var(--ai-purple), var(--ai-pink));
+    color: white;
+    box-shadow: 0 4px 15px rgba(157, 78, 221, 0.3);
+}
+
+.threats-tab-btn.active[data-threats-tab="ioc"] {
+    background: linear-gradient(135deg, var(--accent-cyan), #0066ff);
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 217, 255, 0.3);
+}
+
+.threats-tab-count {
+    font-size: 0.75rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.threats-content {
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.threats-content.active {
+    display: block;
+}
+
 .threat-list {
     display: flex;
     flex-direction: column;

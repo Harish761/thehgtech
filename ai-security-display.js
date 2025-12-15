@@ -187,20 +187,48 @@
     }
 
     // ══════════════════════════════════════════════════════════════════
-    // Top Threats Today
+    // Top Threats Today - With AI and IOC Tabs
     // ══════════════════════════════════════════════════════════════════
     function renderTopThreats() {
         const container = document.getElementById('top-threats-container');
         if (!container) return;
 
-        const threats = generateTopThreats();
+        const aiThreats = generateAIThreats();
+        const iocThreats = generateIOCThreats();
 
-        if (threats.length === 0) {
-            container.innerHTML = '<div class="ai-empty">🛡️<p>No top threats to display</p></div>';
-            return;
-        }
+        const html = `
+            <div class="threats-tabs">
+                <button class="threats-tab-btn active" data-threats-tab="ai">
+                    🤖 AI Threats <span class="threats-tab-count">${aiThreats.length}</span>
+                </button>
+                <button class="threats-tab-btn" data-threats-tab="ioc">
+                    🛡️ Traditional IOCs <span class="threats-tab-count">${iocThreats.length}</span>
+                </button>
+            </div>
+            
+            <div class="threats-content active" data-threats-tab="ai">
+                ${aiThreats.length === 0 ?
+                '<div class="ai-empty">🤖<p>No AI threats detected</p></div>' :
+                aiThreats.map((threat, index) => renderThreatItem(threat, index)).join('')
+            }
+            </div>
+            
+            <div class="threats-content" data-threats-tab="ioc" style="display: none;">
+                ${iocThreats.length === 0 ?
+                '<div class="ai-empty">🛡️<p>No IOC threats detected</p></div>' :
+                iocThreats.map((threat, index) => renderThreatItem(threat, index)).join('')
+            }
+            </div>
+        `;
 
-        const html = threats.map((threat, index) => `
+        container.innerHTML = html;
+
+        // Initialize threat tabs
+        initThreatTabs();
+    }
+
+    function renderThreatItem(threat, index) {
+        return `
             <a href="${threat.url}" target="_blank" rel="noopener" class="threat-item" data-type="${threat.type}">
                 <div class="threat-rank ${threat.severity}">${index + 1}</div>
                 <div class="threat-icon ${threat.type}">
@@ -217,12 +245,37 @@
                 </div>
                 <div class="threat-arrow">→</div>
             </a>
-        `).join('');
-
-        container.innerHTML = html;
+        `;
     }
 
-    function generateTopThreats() {
+    function initThreatTabs() {
+        const tabButtons = document.querySelectorAll('.threats-tab-btn');
+        const tabContents = document.querySelectorAll('.threats-content');
+
+        tabButtons.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetTab = btn.getAttribute('data-threats-tab');
+
+                // Update button states
+                tabButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                // Update content visibility
+                tabContents.forEach(content => {
+                    if (content.getAttribute('data-threats-tab') === targetTab) {
+                        content.classList.add('active');
+                        content.style.display = 'block';
+                    } else {
+                        content.classList.remove('active');
+                        content.style.display = 'none';
+                    }
+                });
+            });
+        });
+    }
+
+    function generateAIThreats() {
         const threats = [];
 
         // Add top AI incidents
@@ -283,6 +336,93 @@
 
         // Sort by score and return top 5
         return threats.sort((a, b) => b.score - a.score).slice(0, 5);
+    }
+
+    function generateIOCThreats() {
+        const threats = [];
+
+        // Get IOC data from the main threat intel data object
+        const threatData = window.threatIntelData;
+
+        if (threatData?.campaigns && Array.isArray(threatData.campaigns)) {
+            threatData.campaigns.slice(0, 5).forEach(campaign => {
+                threats.push({
+                    type: 'campaign',
+                    name: campaign.name || campaign.campaign || 'Unknown Campaign',
+                    source: campaign.vendor || 'IOC Feed',
+                    sourceEmoji: '🔍',
+                    details: `${campaign.count || 0} IOCs detected`,
+                    severity: campaign.severity || 'high',
+                    emoji: getCampaignEmoji(campaign.name || campaign.campaign),
+                    url: getVendorUrl(campaign.vendor),
+                    score: campaign.count || 0
+                });
+            });
+        }
+
+        // If no campaigns, try to get from vendor data
+        if (threats.length === 0 && threatData?.vendors) {
+            Object.entries(threatData.vendors).slice(0, 5).forEach(([vendor, data]) => {
+                if (data.iocCount > 0) {
+                    threats.push({
+                        type: 'campaign',
+                        name: `${vendor} Active Threats`,
+                        source: vendor,
+                        sourceEmoji: '📊',
+                        details: `${data.iocCount.toLocaleString()} IOCs`,
+                        severity: data.iocCount > 1000 ? 'critical' : data.iocCount > 100 ? 'high' : 'medium',
+                        emoji: getVendorEmoji(vendor),
+                        url: getVendorUrl(vendor),
+                        score: data.iocCount
+                    });
+                }
+            });
+        }
+
+        // Sort by score and return top 5
+        return threats.sort((a, b) => b.score - a.score).slice(0, 5);
+    }
+
+    function getCampaignEmoji(name) {
+        if (!name) return '⚠️';
+        const lowerName = name.toLowerCase();
+        if (lowerName.includes('phish')) return '🎣';
+        if (lowerName.includes('malware') || lowerName.includes('trojan')) return '🦠';
+        if (lowerName.includes('ransom')) return '💀';
+        if (lowerName.includes('botnet') || lowerName.includes('c2')) return '🤖';
+        if (lowerName.includes('emotet')) return '👹';
+        if (lowerName.includes('spam')) return '📧';
+        return '⚠️';
+    }
+
+    function getVendorEmoji(vendor) {
+        const emojiMap = {
+            'OpenPhish': '🎣',
+            'URLhaus': '🔗',
+            'ThreatFox': '🦊',
+            'Feodo Tracker': '🤖',
+            'Blocklist.de': '🚫',
+            'SSL Blacklist': '🔐',
+            'Malware Bazaar': '🦠',
+            'Spamhaus DROP': '🛑',
+            'CINS Army': '⚔️'
+        };
+        return emojiMap[vendor] || '🛡️';
+    }
+
+    function getVendorUrl(vendor) {
+        const urlMap = {
+            'OpenPhish': 'https://openphish.com/',
+            'URLhaus': 'https://urlhaus.abuse.ch/',
+            'ThreatFox': 'https://threatfox.abuse.ch/',
+            'Feodo Tracker': 'https://feodotracker.abuse.ch/',
+            'Blocklist.de': 'https://www.blocklist.de/',
+            'SSL Blacklist': 'https://sslbl.abuse.ch/',
+            'Malware Bazaar': 'https://bazaar.abuse.ch/',
+            'Spamhaus DROP': 'https://www.spamhaus.org/drop/',
+            'CINS Army': 'http://cinsscore.com/'
+        };
+        return urlMap[vendor] || '#';
     }
 
     // ══════════════════════════════════════════════════════════════════
