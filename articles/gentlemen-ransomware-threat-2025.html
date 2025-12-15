@@ -162,6 +162,12 @@
             color: var(--accent-cyan);
         }
 
+        .article-content h4 {
+            font-size: 1.2rem;
+            margin: 1.5rem 0 0.75rem;
+            color: var(--text-primary);
+        }
+
         .article-content p {
             margin-bottom: 1.5rem;
             color: var(--text-secondary);
@@ -264,6 +270,7 @@
             overflow-x: auto;
             font-family: 'Courier New', monospace;
             font-size: 0.9rem;
+            color: var(--accent-cyan);
         }
 
         .guide-link {
@@ -341,6 +348,33 @@
             font-weight: 600;
         }
 
+        .checklist {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .checklist h3 {
+            margin-top: 0;
+            color: var(--accent-cyan);
+        }
+
+        .checklist li {
+            list-style: none;
+            padding-left: 2rem;
+            position: relative;
+        }
+
+        .checklist li:before {
+            content: "☐";
+            position: absolute;
+            left: 0;
+            color: var(--accent-cyan);
+            font-size: 1.2rem;
+        }
+
         @media (max-width: 768px) {
             .article-title {
                 font-size: 2rem;
@@ -374,7 +408,7 @@
         <div class="article-header">
             <div class="article-meta">
                 <span><i class="far fa-calendar"></i> December 15, 2025</span>
-                <span><i class="far fa-clock"></i> 10 min read</span>
+                <span><i class="far fa-clock"></i> 12 min read</span>
                 <span><i class="fas fa-tag"></i> Ransomware</span>
                 <span><i class="fas fa-globe"></i> 17 Countries Affected</span>
             </div>
@@ -382,7 +416,7 @@
             <h1 class="article-title">Gentlemen Ransomware: The "Polite" Threat Ripping Through Corporate Networks</h1>
             <p class="article-subtitle">Don't let the name fool you—this Go-based ransomware variant is anything but
                 courteous. With BYOVD attacks, GPO manipulation, and a growing victim count across 17 countries, here's
-                what you need to know.</p>
+                what you need to know about this sophisticated threat actor.</p>
         </div>
 
         <div class="hero-image">
@@ -391,22 +425,26 @@
 
         <div class="article-content">
             <div class="alert-box">
-                <strong>🚨 ACTIVE THREAT:</strong> Gentlemen ransomware is actively targeting organizations worldwide.
-                If you haven't reviewed your EDR configurations and driver policies recently, now is the time.
+                <strong>🚨 ACTIVE THREAT:</strong> Gentlemen ransomware is actively targeting organizations worldwide as
+                of December 2025. If you haven't reviewed your EDR configurations, driver policies, and Active Directory
+                security recently, consider this your wake-up call.
             </div>
 
             <h2>When Ransomware Gets "Sophisticated"</h2>
-            <p>I've been tracking ransomware groups for years, and every once in a while, a new player emerges that
-                makes you pause and take notice. The Gentlemen ransomware gang—first spotted in August 2025—is one of
-                those groups.</p>
+            <p>I've been tracking ransomware groups for years now, and every once in a while, a new player emerges that
+                makes you pause and take notice. The <strong>Gentlemen ransomware gang</strong>—first identified in
+                August 2025—is one of those groups that demands attention.</p>
 
             <p>The irony of the name isn't lost on me. There's nothing gentlemanly about stealing your data, killing
                 your security tools, and then demanding ransom while threatening to leak everything publicly. But I
-                suppose even cybercriminals appreciate a bit of dark humor.</p>
+                suppose even cybercriminals appreciate a bit of dark humor. Or maybe it's a psychological play—who
+                wouldn't want to negotiate with a "gentleman"?</p>
 
-            <p>What sets this group apart isn't their audacity—it's their technical sophistication. This isn't a script
-                kiddie operation. These are skilled operators using advanced techniques that would make many red teamers
-                envious.</p>
+            <p>What sets this group apart isn't their audacity—it's their <strong>technical sophistication</strong>.
+                This isn't a script kiddie operation buying ransomware-as-a-service and hoping for the best. These are
+                skilled operators using advanced techniques that would make many red teamers envious. The combination of
+                BYOVD attacks, GPO manipulation, and a Go-based payload shows a level of operational maturity that's
+                concerning.</p>
 
             <div class="stats-grid">
                 <div class="stat-card">
@@ -427,114 +465,335 @@
                 </div>
             </div>
 
-            <h2>The Technical Arsenal</h2>
-            <p>What makes Gentlemen particularly dangerous is their combination of techniques. Let's break down what
-                they're working with:</p>
+            <h2>The Technical Arsenal: A Deep Dive</h2>
+            <p>What makes Gentlemen particularly dangerous is their combination of techniques. Each one is effective on
+                its own, but together they create a formidable attack chain that's difficult to detect and even harder
+                to stop once it's in motion. Let's break down what they're working with:</p>
 
             <div class="technique-card">
                 <h4><i class="fas fa-microchip"></i> BYOVD - Bring Your Own Vulnerable Driver</h4>
-                <p style="color: var(--text-secondary); margin: 0;">This is the big one. The attackers deploy legitimate
-                    but vulnerable signed drivers onto victim systems. Because these drivers are properly signed by
-                    trusted vendors, most security tools let them through. Once loaded, these drivers are exploited to
-                    disable EDR agents, antivirus software, and other security controls. Your expensive endpoint
-                    protection? Neutralized before the encryption even starts.</p>
+                <p style="color: var(--text-secondary); margin: 0;">This is the cornerstone of their attack chain. The
+                    attackers deploy legitimate but vulnerable signed drivers onto victim systems. Because these drivers
+                    are properly signed by trusted vendors like Gigabyte, MSI, or ASUS, most security tools let them
+                    through without question.</p>
+                <p style="color: var(--text-secondary); margin: 1rem 0 0 0;">Once loaded into the kernel (Ring 0), these
+                    vulnerable drivers are exploited to terminate EDR agents, antivirus processes, and backup services.
+                    Your expensive CrowdStrike or SentinelOne deployment? Neutralized before the encryption even starts.
+                </p>
             </div>
 
+            <h3>How BYOVD Works: Step by Step</h3>
+            <p>Understanding the BYOVD attack chain is crucial for defenders. Here's exactly how Gentlemen executes
+                this technique:</p>
+
+            <ol>
+                <li><strong>Driver Deployment:</strong> The attackers drop a legitimate but vulnerable signed driver
+                    (commonly <code>gdrv.sys</code> from Gigabyte or <code>AsIO.sys</code> from ASUS) to the target
+                    system. Because these drivers are properly signed by trusted hardware vendors, Windows allows them
+                    to load.</li>
+                <li><strong>Kernel-Level Access:</strong> The vulnerable driver contains flaws that allow arbitrary
+                    read/write to kernel memory. This gives the attacker Ring 0 (kernel) privileges—the highest level of
+                    access on a Windows system.</li>
+                <li><strong>Security Tool Termination:</strong> Using kernel-level access, Gentlemen systematically
+                    terminates security processes by patching their memory, killing threads, or unloading their drivers.
+                    Even "tamper-protected" EDR solutions can be defeated at the kernel level.</li>
+                <li><strong>Ransomware Deployment:</strong> With security controls disabled, the ransomware payload
+                    executes without interference, encrypting files and exfiltrating data.</li>
+            </ol>
+
+            <div class="code-block">
+                # Example vulnerable drivers commonly used in BYOVD attacks:
+                gdrv.sys (Gigabyte) - CVE-2018-19320
+                AsIO.sys (ASUS) - Arbitrary read/write
+                dbutil_2_3.sys (Dell) - CVE-2021-21551
+                RTCore64.sys (MSI) - CVE-2019-16098
+                WinRing0x64.sys - Multiple hardware vendors
+            </div>
+
+            <p><strong>Why is this so effective?</strong> Traditional security tools operate in user mode (Ring 3) while
+                these vulnerable drivers operate in kernel mode (Ring 0). It's like trying to fight someone who has the
+                high ground—you're at a fundamental disadvantage.</p>
+
             <div class="technique-card">
-                <h4><i class="fas fa-sitemap"></i> GPO Manipulation</h4>
-                <p style="color: var(--text-secondary); margin: 0;">Instead of manually spreading through the network,
-                    Gentlemen leverages Active Directory Group Policy Objects to deploy their ransomware at scale. One
-                    compromised domain controller, and suddenly every machine in your environment is executing their
-                    payload on the next policy refresh. It's efficient, it's fast, and it's devastating.</p>
+                <h4><i class="fas fa-sitemap"></i> GPO Manipulation for Mass Deployment</h4>
+                <p style="color: var(--text-secondary); margin: 0;">Instead of manually spreading through the network
+                    machine by machine (which is slow and increases detection risk), Gentlemen leverages Active
+                    Directory
+                    Group Policy Objects to deploy their ransomware at scale.</p>
+                <p style="color: var(--text-secondary); margin: 1rem 0 0 0;">Once they compromise a domain controller—or
+                    even just an account with GPO modification rights—they create or modify a Group Policy that executes
+                    their payload on every domain-joined machine during the next policy refresh. One click, thousands of
+                    encrypted endpoints.</p>
+            </div>
+
+            <h3>The GPO Attack Chain</h3>
+            <p>The abuse of Group Policy is elegant in its simplicity:</p>
+
+            <ol>
+                <li><strong>Domain Compromise:</strong> After initial access (often via phishing or VPN credential
+                    theft), attackers escalate privileges until they have Domain Admin or equivalent rights.</li>
+                <li><strong>GPO Creation/Modification:</strong> A new GPO is created or an existing one is modified to
+                    include a startup script or scheduled task that executes the ransomware binary.</li>
+                <li><strong>Staging the Payload:</strong> The ransomware binary is placed in SYSVOL (which replicates to
+                    all domain controllers) or a network share accessible by all machines.</li>
+                <li><strong>Mass Execution:</strong> On the next Group Policy refresh (by default, every 90 minutes for
+                    computers), every domain-joined machine executes the ransomware. Alternatively, attackers can force
+                    an immediate refresh using <code>gpupdate /force</code> or invoke-gpupdate via PowerShell.</li>
+            </ol>
+
+            <div class="code-block">
+                # PowerShell: Force GPO update on all domain computers
+                Get-ADComputer -Filter * | ForEach-Object {
+                Invoke-Command -ComputerName $_.Name -ScriptBlock { gpupdate /force }
+                }
+
+                # This single command can trigger ransomware on every machine in minutes
             </div>
 
             <div class="technique-card">
                 <h4><i class="fas fa-file-export"></i> Double Extortion Model</h4>
                 <p style="color: var(--text-secondary); margin: 0;">Before encrypting anything, Gentlemen exfiltrates
-                    your sensitive data. This means even if you have perfect backups and can restore without paying,
-                    they still have leverage. "Pay us, or we publish your customer data, intellectual property, and
-                    financial records." It's a business model that works, unfortunately.</p>
+                    your sensitive data to their infrastructure. This means even if you have perfect backups and can
+                    restore without paying a dime, they still have leverage.</p>
+                <p style="color: var(--text-secondary); margin: 1rem 0 0 0;">"Pay us, or we publish your customer data,
+                    intellectual property, financial records, and employee information." It's a business model that
+                    works, unfortunately. And with regulatory fines for data breaches often exceeding ransom demands,
+                    many organizations calculate that paying is the cheaper option.</p>
             </div>
 
-            <h2>Why I'm Particularly Concerned About This One</h2>
+            <h3>Exfiltration Techniques</h3>
+            <p>Gentlemen's data exfiltration is designed to evade detection:</p>
+            <ul>
+                <li><strong>Cloud Storage Abuse:</strong> Uploading to legitimate services like Mega, pCloud, or even
+                    Azure Blob storage to blend with normal traffic</li>
+                <li><strong>Slow and Steady:</strong> Throttling transfer speeds to avoid triggering DLP alerts or
+                    bandwidth anomalies</li>
+                <li><strong>Compression and Encryption:</strong> Data is compressed and encrypted before transfer,
+                    making content inspection impossible</li>
+                <li><strong>Off-Hours Timing:</strong> Exfiltration often occurs during nights and weekends when
+                    monitoring is reduced</li>
+            </ul>
 
-            <p>I've seen a lot of ransomware variants over the years. Most follow predictable patterns. But Gentlemen
-                concerns me for several reasons:</p>
+            <h2>Why Gentlemen Concerns Me More Than Most</h2>
 
-            <h3>1. The BYOVD Problem Is Getting Worse</h3>
-            <p>The security industry has known about vulnerable drivers for years, but we still haven't solved the
-                problem. Microsoft's HVCI and driver blocklist help, but they're not universally deployed. Most
-                organizations I've worked with don't have driver allowlisting policies. Until we collectively address
-                this gap, BYOVD attacks will remain highly effective.</p>
+            <p>I've analyzed dozens of ransomware variants over the years. Most follow predictable patterns and
+                exploitable weaknesses. But Gentlemen concerns me for several specific reasons:</p>
+
+            <h3>1. The BYOVD Problem Is Getting Worse, Not Better</h3>
+            <p>The security industry has known about vulnerable drivers for years. Microsoft maintains a driver
+                blocklist. HVCI (Hypervisor-Protected Code Integrity) can prevent many BYOVD attacks. But here's the
+                uncomfortable truth: most organizations haven't implemented these controls.</p>
+
+            <p>In my experience consulting with enterprises, I'd estimate fewer than 20% have HVCI enabled, and even
+                fewer maintain updated driver blocklists. The gap between what's possible and what's deployed is vast—
+                and Gentlemen is exploiting that gap ruthlessly.</p>
 
             <h3>2. They're Targeting Diverse Industries</h3>
-            <p>This isn't a group focused solely on healthcare or finance. The 17-country spread suggests opportunistic
-                targeting—they're hitting whoever they can compromise. That means everyone is potentially in scope.</p>
+            <p>Unlike ransomware groups that focus on healthcare (for urgency) or law firms (for confidentiality),
+                Gentlemen appears to be <strong>opportunistic</strong>. The 17-country spread suggests they're hitting
+                whoever they can compromise, whenever they can compromise them.</p>
+
+            <p>Reported victim industries include:</p>
+            <ul>
+                <li>Manufacturing and industrial</li>
+                <li>Professional services (accounting, legal)</li>
+                <li>Technology and software</li>
+                <li>Healthcare (predictably)</li>
+                <li>Financial services</li>
+                <li>Education and research</li>
+            </ul>
+
+            <p>If you're connected to the internet and have data worth stealing, you're in scope.</p>
 
             <h3>3. The Go Language Choice Is Strategic</h3>
-            <p>Writing ransomware in Go provides several advantages: easy cross-compilation for different platforms,
-                good performance, and—here's the kicker—many security tools have less mature detection for Go binaries
-                compared to traditional C/C++ malware. It's a smart technical choice.</p>
+            <p>Writing ransomware in Go (Golang) provides several operational advantages that make Gentlemen harder to
+                detect:</p>
+
+            <ul>
+                <li><strong>Cross-Platform Compilation:</strong> A single codebase can target Windows, Linux, and macOS
+                    with minimal changes</li>
+                <li><strong>Static Compilation:</strong> Go binaries are self-contained, reducing dependencies and
+                    making deployment simpler</li>
+                <li><strong>Detection Evasion:</strong> Many security tools have less mature detection signatures for
+                    Go binaries compared to traditional C/C++ malware</li>
+                <li><strong>Reverse Engineering Difficulty:</strong> Go binaries are notoriously difficult to reverse
+                    engineer, slowing down security research</li>
+            </ul>
+
+            <h3>4. Professional Operations Indicate Resources</h3>
+            <p>The sophistication of Gentlemen's operations suggests this isn't a few hackers in a basement. They have:
+            </p>
+            <ul>
+                <li>Dedicated infrastructure for command and control</li>
+                <li>A leak site for publishing victim data</li>
+                <li>What appears to be a negotiation team (based on victim reports)</li>
+                <li>Ongoing development of their payload (version updates observed)</li>
+            </ul>
+            <p>This level of organization typically indicates either a well-funded criminal enterprise or potential
+                nation-state backing. Neither scenario is comforting.</p>
 
             <div class="purple-box">
-                <h3 style="color: var(--accent-purple); margin-top: 0;">The Timeline So Far</h3>
+                <h3 style="color: var(--accent-purple); margin-top: 0;">Timeline: The Gentlemen Campaign</h3>
                 <div class="timeline">
                     <div class="timeline-item">
                         <div class="date">August 2025</div>
                         <p style="color: var(--text-secondary); margin: 0.5rem 0 0 0;">First samples of Gentlemen
-                            ransomware identified in the wild</p>
+                            ransomware identified in the wild. Initial victims in Western Europe.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="date">September 2025</div>
+                        <p style="color: var(--text-secondary); margin: 0.5rem 0 0 0;">BYOVD techniques confirmed by
+                            multiple security researchers. First public leak of victim data.</p>
                     </div>
                     <div class="timeline-item">
                         <div class="date">October 2025</div>
-                        <p style="color: var(--text-secondary); margin: 0.5rem 0 0 0;">Expansion to multiple countries,
-                            BYOVD techniques confirmed</p>
+                        <p style="color: var(--text-secondary); margin: 0.5rem 0 0 0;">Expansion to North America and
+                            Asia. GPO manipulation technique documented.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="date">November 2025</div>
+                        <p style="color: var(--text-secondary); margin: 0.5rem 0 0 0;">Victim count reaches double
+                            digits. Ransom demands reportedly range from $500K to $5M.</p>
                     </div>
                     <div class="timeline-item">
                         <div class="date">December 2025</div>
-                        <p style="color: var(--text-secondary); margin: 0.5rem 0 0 0;">17 countries affected, continued
-                            active campaigns reported</p>
+                        <p style="color: var(--text-secondary); margin: 0.5rem 0 0 0;">17 countries confirmed affected.
+                            Security vendors release detection updates and IOCs.</p>
                     </div>
                 </div>
             </div>
 
-            <h2>Defending Against Gentlemen (and Similar Threats)</h2>
+            <h2>Defending Against Gentlemen: A Practical Playbook</h2>
 
-            <p>So what can you actually do? Here's my practical guidance based on their known TTPs:</p>
+            <p>Enough doom and gloom—let's talk about what you can actually do. Here's my practical guidance based on
+                Gentlemen's known TTPs, organized by implementation priority:</p>
 
-            <h3>Immediate Actions</h3>
-            <ul>
-                <li><strong>Review your driver policies:</strong> Enable HVCI (Hypervisor-Protected Code Integrity)
-                    where possible. Deploy Microsoft's recommended driver blocklist. Consider driver allowlisting for
-                    critical systems.</li>
-                <li><strong>Harden Active Directory:</strong> Audit GPO creation and modification rights. Implement
-                    tiered administration. Monitor for suspicious policy changes.</li>
-                <li><strong>Protect your EDR:</strong> Enable tamper protection features. Ensure your EDR can detect
-                    driver-based attacks. Test whether vulnerable drivers can be loaded in your environment.</li>
-            </ul>
+            <div class="checklist">
+                <h3>Immediate Actions (This Week)</h3>
+                <ul>
+                    <li><strong>Enable HVCI:</strong> Hypervisor-Protected Code Integrity prevents most BYOVD attacks by
+                        validating driver integrity at the hypervisor level</li>
+                    <li><strong>Deploy Microsoft's Vulnerable Driver Blocklist:</strong> Via WDAC or Group Policy</li>
+                    <li><strong>Audit GPO Permissions:</strong> Who can create or modify Group Policy Objects? This list
+                        should be extremely small</li>
+                    <li><strong>Enable EDR Tamper Protection:</strong> Most modern EDR solutions have this—verify it's
+                        actually enabled</li>
+                    <li><strong>Review Domain Admin Usage:</strong> Domain Admin credentials should never be used on
+                        regular workstations</li>
+                </ul>
+
+                <h3>Short-Term Actions (This Month)</h3>
+                <ul>
+                    <li><strong>Implement Driver Allowlisting:</strong> Only permit known-good drivers to load</li>
+                    <li><strong>Deploy GPO Change Monitoring:</strong> Alert on any Group Policy modifications</li>
+                    <li><strong>Segment Privileged Access:</strong> Use PAWs (Privileged Access Workstations) for admin
+                        tasks</li>
+                    <li><strong>Review Backup Isolation:</strong> Can ransomware reach your backups? If yes, fix it</li>
+                    <li><strong>Test Restoration Procedures:</strong> Backups are worthless if you can't restore from
+                        them</li>
+                </ul>
+
+                <h3>Long-Term Hardening (This Quarter)</h3>
+                <ul>
+                    <li><strong>Implement Windows Credential Guard:</strong> Protects against credential theft</li>
+                    <li><strong>Deploy Application Control:</strong> WDAC or AppLocker to prevent unauthorized
+                        executables</li>
+                    <li><strong>Establish Threat Hunting Program:</strong> Proactively look for BYOVD and lateral
+                        movement indicators</li>
+                    <li><strong>Conduct Purple Team Exercises:</strong> Test your detection of BYOVD and GPO abuse</li>
+                </ul>
+            </div>
 
             <h3>Detection Opportunities</h3>
+            <p>While Gentlemen is sophisticated, they're not invisible. Here's what to monitor for:</p>
+
+            <h4>Driver Loading Events</h4>
             <ul>
-                <li><strong>Driver loading events:</strong> Monitor for unusual kernel driver installations, especially
-                    from temp directories or unusual paths</li>
-                <li><strong>GPO modifications:</strong> Alert on Group Policy Object changes outside of approved change
-                    windows</li>
-                <li><strong>Large data transfers:</strong> The exfiltration phase is your window to catch them before
-                    encryption—monitor for unusual outbound data volumes</li>
-                <li><strong>EDR agent health:</strong> If your endpoint agents suddenly stop reporting, that's a major
-                    red flag</li>
+                <li>Monitor Windows Event ID 7045 (New Service Installation) for driver installations</li>
+                <li>Alert on drivers loaded from unusual paths (%TEMP%, user directories)</li>
+                <li>Maintain a baseline of expected drivers and alert on anomalies</li>
+            </ul>
+
+            <div class="code-block">
+                # Splunk Query: Detect Suspicious Driver Loading
+                index=windows EventCode=7045 ServiceType="kernel mode driver"
+                | where NOT match(ServiceFile, "(?i)system32\\drivers")
+                | stats count by Computer, ServiceName, ServiceFile
+            </div>
+
+            <h4>GPO Modification Monitoring</h4>
+            <ul>
+                <li>Monitor Event IDs 5136/5137 for Active Directory object modifications</li>
+                <li>Alert on GPO changes outside approved change windows</li>
+                <li>Track changes to SYSVOL (where GPO files are stored)</li>
+            </ul>
+
+            <div class="code-block">
+                # Splunk Query: Detect GPO Modifications
+                index=windows EventCode IN (5136, 5137)
+                | where ObjectClass="groupPolicyContainer"
+                | stats count by SubjectUserName, ObjectDN, OperationType
+                | where NOT SubjectUserName IN ("approved_admin_list")
+            </div>
+
+            <h4>EDR Health Monitoring</h4>
+            <ul>
+                <li>Alert when endpoints stop reporting to your EDR console</li>
+                <li>Monitor for EDR service termination events</li>
+                <li>Track process termination of known security tool processes</li>
+            </ul>
+
+            <h4>Data Exfiltration Indicators</h4>
+            <ul>
+                <li>Unusual outbound data volumes, especially to cloud storage</li>
+                <li>Large file uploads during off-hours</li>
+                <li>Connections to known file-sharing services from servers that shouldn't use them</li>
             </ul>
 
             <div class="info-box">
                 <h3 style="color: var(--accent-cyan); margin-top: 0;"><i class="fas fa-shield-alt"></i> EDR
                     Considerations</h3>
-                <p style="margin-bottom: 0;">If you're evaluating or reconsidering your EDR solution, this is exactly
-                    the type of threat that separates good platforms from great ones. The ability to detect and prevent
-                    BYOVD attacks, resist tampering, and maintain visibility even under attack is crucial. Check out our
-                    <a href="/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html"
-                        style="color: var(--accent-cyan);">EDR/XDR comparison</a> for an in-depth look at how major
-                    platforms stack up.
-                </p>
+                <p>If you're evaluating or reconsidering your EDR solution, this is exactly the type of threat that
+                    separates good platforms from great ones. The ability to:</p>
+                <ul style="margin-bottom: 0;">
+                    <li>Detect and prevent BYOVD attacks before driver loading</li>
+                    <li>Resist kernel-level tampering attempts</li>
+                    <li>Maintain visibility even when under attack</li>
+                    <li>Provide actionable alerts with context</li>
+                </ul>
+                <p style="margin-bottom: 0; margin-top: 1rem;">Check out our <a
+                        href="/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html"
+                        style="color: var(--accent-cyan);">EDR/XDR Comparison</a> for an in-depth look at how major
+                    platforms stack up against BYOVD and other advanced techniques.</p>
             </div>
+
+            <h2>Incident Response: If You're Already Compromised</h2>
+
+            <p>If you suspect a Gentlemen compromise (or any ransomware with similar TTPs), here's the critical first
+                response:</p>
+
+            <h3>Immediate Containment</h3>
+            <ol>
+                <li><strong>Isolate Affected Systems:</strong> Network isolation, not shutdown (preserve memory
+                    evidence)</li>
+                <li><strong>Disable Compromised Accounts:</strong> Especially any Domain Admin accounts that may be
+                    compromised</li>
+                <li><strong>Block Attacker C2:</strong> If you have indicators, block them at the perimeter</li>
+                <li><strong>Protect Domain Controllers:</strong> If not yet affected, isolate them immediately</li>
+                <li><strong>Preserve Evidence:</strong> Memory dumps and disk images before any remediation</li>
+            </ol>
+
+            <h3>Investigation Focus Areas</h3>
+            <ul>
+                <li>How did initial access occur? (VPN? Phishing? Exposed service?)</li>
+                <li>What accounts are compromised? (Check for new accounts, password resets)</li>
+                <li>What GPOs were modified? (Compare current state to known-good baseline)</li>
+                <li>What data was exfiltrated? (Check network logs, cloud service logs)</li>
+                <li>Are backups intact? (Verify before relying on them)</li>
+            </ul>
+
+            <p>For detailed response procedures, see our <a href="/guides/ransomware-response-playbook.html"
+                    style="color: var(--accent-cyan);">Ransomware Response Playbook</a>.</p>
 
             <h2>The Bigger Picture: Why Ransomware Keeps Winning</h2>
 
@@ -544,25 +803,37 @@
 
             <p>Think about it:</p>
             <ul>
-                <li>We've known about BYOVD for years—most organizations haven't addressed it</li>
-                <li>We know GPO can be weaponized—most organizations don't monitor it closely</li>
-                <li>We know data exfiltration precedes encryption—most organizations can't detect it</li>
+                <li>HVCI has existed since Windows 10—most organizations haven't enabled it</li>
+                <li>Driver blocklists are free—most organizations don't deploy them</li>
+                <li>GPO monitoring is built into Windows—most organizations don't alert on it</li>
+                <li>Immutable backups are available—most organizations don't use them</li>
+                <li>We know credential theft enables lateral movement—Domain Admins still log into workstations</li>
             </ul>
 
-            <p>The Gentlemen gang isn't using zero-days or nation-state level capabilities. They're using known
-                techniques against known gaps. And they're succeeding because those gaps persist.</p>
+            <p>The Gentlemen gang isn't using zero-days or nation-state level capabilities. They're using
+                <strong>known techniques against known gaps</strong>. And they're succeeding because those gaps persist
+                year after year.
+            </p>
+
+            <p>The uncomfortable question every security leader should ask: "If Gentlemen targeted us tomorrow, would
+                we detect them? Would we stop them? Or would we be calling our incident response retainer and cyber
+                insurance carrier?"</p>
 
             <h2>What I'm Watching Next</h2>
 
             <p>A few things I'm monitoring as this threat evolves:</p>
 
             <ul>
-                <li><strong>Vulnerable driver identification:</strong> Security researchers are continuously discovering
-                    new vulnerable drivers. Expect BYOVD attacks to incorporate newer drivers as they're found.</li>
-                <li><strong>Affiliate expansion:</strong> Many ransomware operations run affiliate programs. If
-                    Gentlemen follows this model, we could see rapid expansion in attack volume.</li>
-                <li><strong>Industry targeting patterns:</strong> As more victim data emerges, we'll get a clearer
-                    picture of whether certain industries are being specifically targeted.</li>
+                <li><strong>Vulnerable Driver Discovery:</strong> Security researchers continuously find new vulnerable
+                    drivers. Expect BYOVD attacks to incorporate newer drivers as they're discovered. Microsoft's
+                    blocklist will always be playing catch-up.</li>
+                <li><strong>Affiliate Model Expansion:</strong> Many ransomware operations run affiliate programs,
+                    recruiting other criminals to deploy their ransomware in exchange for a cut. If Gentlemen adopts
+                    this model, attack volume could increase dramatically.</li>
+                <li><strong>Linux Variants:</strong> Given their Go-based codebase, a Linux variant is trivial to
+                    produce. Organizations with mixed Windows/Linux environments should prepare for both.</li>
+                <li><strong>Targeting Patterns:</strong> As more victim data emerges, we'll understand whether certain
+                    industries or regions are being specifically targeted or if this remains opportunistic.</li>
             </ul>
 
             <div class="related-guides">
@@ -582,6 +853,10 @@
                     <i class="fas fa-robot"></i> Incident Response Automation
                 </a>
 
+                <a href="/guides/siem-log-analysis.html" class="guide-link">
+                    <i class="fas fa-chart-bar"></i> SIEM Log Analysis
+                </a>
+
                 <a href="/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html" class="comparison-link">
                     <i class="fas fa-balance-scale"></i> EDR/XDR Comparison 2025
                 </a>
@@ -593,20 +868,26 @@
                 technically capable, operationally sophisticated, and clearly well-resourced. The combination of BYOVD,
                 GPO manipulation, and double extortion makes them a formidable adversary.</p>
 
-            <p>But here's the thing—<strong>everything they're doing is preventable</strong>. Every technique they use
-                has corresponding defenses. The question is whether we implement those defenses before we become
-                victims.</p>
+            <p>But here's what I keep coming back to—<strong>everything they're doing is preventable</strong>. Every
+                technique they use has corresponding defenses. The BYOVD attacks fail against HVCI-enabled systems. The
+                GPO abuse fails if privileged access is properly controlled. The exfiltration fails if proper DLP and
+                network segmentation are in place.</p>
 
-            <p>I'll continue tracking this group and will update this article as we learn more. In the meantime, take a
-                hard look at your driver policies, your AD security, and your data loss prevention capabilities. The
-                Gentlemen are actively hunting, and they're not as polite as their name suggests.</p>
+            <p>The question isn't whether we know how to defend against these attacks. The question is whether we have
+                the organizational will to implement those defenses before we become victims.</p>
+
+            <p>I'll continue tracking this group and will update this article as we learn more. In the meantime, take
+                a hard look at your driver policies, your AD security, and your data loss prevention capabilities. The
+                Gentlemen are actively hunting, and despite their ironic name, they're not going to be polite about it.
+            </p>
 
             <div class="alert-box">
                 <p><strong>Stay vigilant. Stay prepared. And whatever you do, don't assume it won't happen to
                         you.</strong></p>
                 <p style="margin-top: 1rem; margin-bottom: 0;"><em>Have you seen indicators of Gentlemen ransomware in
                         your environment? Dealing with a BYOVD attack? The security community benefits when we share
-                        intelligence—responsibly, of course.</em></p>
+                        intelligence—responsibly, of course. The more we understand about how these attacks unfold in
+                        the real world, the better we can defend against them.</em></p>
             </div>
         </div>
     </div>
