@@ -1284,30 +1284,8 @@
         </div>
 
         <script>
-        // Header Functionality
+        // Header Functionality (Theme handled by theme-toggle.js)
         document.addEventListener('DOMContentLoaded', () => {
-            // Theme Toggle
-            const themeToggle = document.getElementById('themeToggle');
-            const mobileThemeToggle = document.getElementById('mobileThemeToggle');
-            const body = document.body;
-
-            // Check local storage
-            if (localStorage.getItem('theme') === 'light') {
-                body.classList.add('light-mode');
-            }
-
-            window.toggleTheme = function toggleTheme() {
-                body.classList.toggle('light-mode');
-                if (body.classList.contains('light-mode')) {
-                    localStorage.setItem('theme', 'light');
-                } else {
-                    localStorage.setItem('theme', 'dark');
-                }
-            }
-
-            if (themeToggle) themeToggle.addEventListener('click', toggleTheme);
-            if (mobileThemeToggle) mobileThemeToggle.addEventListener('click', toggleTheme);
-
             // Mobile Menu
             const mobileMenuBtn = document.querySelector('.mobile-sidebar-btn');
             const mobileMenu = document.querySelector('.mobile-sidebar');
