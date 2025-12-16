@@ -62,9 +62,29 @@
     // Main Tab Switching (Traditional IOCs vs AI Security)
     // ══════════════════════════════════════════════════════════════════
     function initMainTabs() {
+        // FIX: Ensure Main Tabs and AI Content are at the top level
+        // (threat-intel-tabs.js might have wrapped them inside 'threats-tab')
+        const container = document.querySelector('.main .container');
+        const mainTabs = document.querySelector('.main-threat-tabs');
+        const aiContent = document.getElementById('ai-tab-content');
+        const dashboardControls = document.querySelector('.dashboard-controls');
+
+        if (container && mainTabs) {
+            // Move Main Tabs to be right after dashboard controls (or at top)
+            if (dashboardControls) {
+                dashboardControls.after(mainTabs);
+            } else {
+                container.prepend(mainTabs);
+            }
+        }
+
+        if (container && aiContent && mainTabs) {
+            // Ensure AI Content is right after the tabs
+            mainTabs.after(aiContent);
+        }
+
         const tabButtons = document.querySelectorAll('.main-tab-btn');
         const iocContent = document.getElementById('ioc-tab-content');
-        const aiContent = document.getElementById('ai-tab-content');
 
         if (!tabButtons.length) {
             console.warn('[AI Security] Main tab buttons not found');
