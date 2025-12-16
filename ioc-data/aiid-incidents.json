@@ -1,6 +1,38 @@
 {
   "incidents": [
     {
+      "id": "AIID-1307",
+      "incident_id": 1307,
+      "title": "Grok AI Reportedly Generated Fabricated Civilian Hero Identity During Bondi Beach Shooting",
+      "date": "2025-12-16",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1308",
+      "incident_id": 1308,
+      "title": "Springer Nature Book 'Mastering Machine Learning: From Basics to Advanced' Reportedly Published With",
+      "date": "2025-12-16",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1309",
+      "incident_id": 1309,
+      "title": "Springer Nature Book 'Social, Ethical and Legal Aspects of Generative AI: Tools, Techniques and Syst",
+      "date": "2025-12-16",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1310",
+      "incident_id": 1310,
+      "title": "Canada Revenue Agency (CRA) AI Chatbot 'Charlie' Reportedly Gave Incorrect Tax Filing Guidance at Sc",
+      "date": "2025-12-16",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1306",
       "incident_id": 1306,
       "title": "Florida Couple Reportedly Loses $45,000 in Alleged AI-Generated Elon Musk Impersonation Scam",
@@ -561,19 +593,19 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-643",
-      "incident_id": 643,
-      "title": "Purported Deepfake Video Allegedly Claims Kyiv's Assassination Plan Against President Emmanuel Macro",
-      "date": "2025-11-17",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-602",
       "incident_id": 602,
       "title": "Russia Reportedly Using Artificial Intelligence in Disinformation Campaigns to Erode Western Support",
       "date": "2025-11-17",
       "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-643",
+      "incident_id": 643,
+      "title": "Purported Deepfake Video Allegedly Claims Kyiv's Assassination Plan Against President Emmanuel Macro",
+      "date": "2025-11-17",
+      "category": "deepfake",
       "severity": "medium"
     },
     {
@@ -1530,9 +1562,9 @@
     }
   ],
   "stats": {
-    "total": 191,
-    "last7Days": 22,
-    "last30Days": 114
+    "total": 195,
+    "last7Days": 26,
+    "last30Days": 118
   },
-  "lastUpdated": "2025-12-16T19:11:57.904354+05:30"
+  "lastUpdated": "2025-12-16T22:12:36.884946+05:30"
 }
