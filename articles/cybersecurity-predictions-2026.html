@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6 Cybersecurity Predictions for 2026: The AI Economy's New Rules | TheHGTech</title>
+    <meta name="description"
+        content="Palo Alto Networks releases 2026 cybersecurity predictions. From autonomous AI attacks to quantum threats, here's what security teams need to prepare for.">
+    <meta name="keywords"
+        content="cybersecurity predictions 2026, AI security trends, quantum computing security, autonomous AI attacks, Palo Alto Networks predictions">
+    <link rel="canonical" href="https://thehgtech.com/articles/cybersecurity-predictions-2026.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="6 Cybersecurity Predictions for 2026: The AI Economy's New Rules">
+    <meta property="og:description"
+        content="Palo Alto Networks forecasts a seismic shift in cybersecurity. Here's what 2026 has in store for defenders and attackers.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/articles/cybersecurity-predictions-2026.html">
+    <meta property="og:image" content="https://thehgtech.com/images/2026-predictions-hero.png">
+
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/theme-toggle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="/theme-toggle.js" defer></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF4C4C;
+            --accent-purple: #9D4EDD;
+            --accent-green: #00FF88;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        .article-container {
+            max-width: 800px;
+            margin: 80px auto 0;
+            padding: 2rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-cyan);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: var(--text-primary);
+        }
+
+        .article-header {
+            margin-bottom: 3rem;
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            flex-wrap: wrap;
+        }
+
+        .article-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .article-title {
+            font-size: 3rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .article-subtitle {
+            font-size: 1.3rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin: 2rem 0;
+            box-shadow: 0 10px 30px rgba(0, 217, 255, 0.2);
+        }
+
+        .article-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .article-content h2 {
+            font-size: 2rem;
+            margin: 3rem 0 1.5rem;
+            color: var(--text-primary);
+        }
+
+        .article-content h3 {
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem;
+            color: var(--accent-cyan);
+        }
+
+        .article-content p {
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        .article-content strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .article-content ul,
+        .article-content ol {
+            margin: 1.5rem 0;
+            padding-left: 2rem;
+        }
+
+        .article-content li {
+            margin-bottom: 0.75rem;
+            color: var(--text-secondary);
+        }
+
+        .prediction-card {
+            background: linear-gradient(135deg, rgba(0, 217, 255, 0.05), rgba(157, 78, 221, 0.05));
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 2rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .prediction-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--accent-cyan), var(--accent-purple));
+        }
+
+        .prediction-number {
+            position: absolute;
+            top: 1rem;
+            right: 1.5rem;
+            font-size: 4rem;
+            font-weight: 900;
+            opacity: 0.1;
+            color: var(--accent-cyan);
+        }
+
+        .prediction-card h3 {
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .prediction-card .icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .alert-box {
+            background: rgba(255, 76, 76, 0.1);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .info-box {
+            background: rgba(0, 217, 255, 0.1);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .green-box {
+            background: rgba(0, 255, 136, 0.1);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .guide-link {
+            display: inline-block;
+            background: linear-gradient(135deg, rgba(0, 217, 255, 0.1), rgba(102, 126, 234, 0.1));
+            border: 1px solid var(--accent-cyan);
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            color: var(--accent-cyan);
+            text-decoration: none;
+            margin: 0.5rem 0.5rem 0.5rem 0;
+            transition: all 0.3s;
+        }
+
+        .guide-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 217, 255, 0.3);
+        }
+
+        .related-guides {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 3rem 0;
+        }
+
+        .related-guides h3 {
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+        }
+
+        .year-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+            color: #000;
+            padding: 0.5rem 1.5rem;
+            border-radius: 30px;
+            font-weight: 800;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .stat-card .number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1;
+        }
+
+        .stat-card .label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .article-title {
+                font-size: 2rem;
+            }
+
+            .article-container {
+                padding: 1rem;
+            }
+
+            .prediction-number {
+                font-size: 3rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="article-container">
+        <a href="/articles.html" class="back-link">
+            <i class="fas fa-arrow-left"></i> Back to Articles
+        </a>
+
+        <div class="article-header">
+            <div class="article-meta">
+                <span><i class="far fa-calendar"></i> December 15, 2025</span>
+                <span><i class="far fa-clock"></i> 10 min read</span>
+                <span><i class="fas fa-tag"></i> Predictions</span>
+                <span><i class="fas fa-chart-line"></i> Industry Analysis</span>
+            </div>
+
+            <span class="year-badge">2026</span>
+            <h1 class="article-title">6 Cybersecurity Predictions for 2026: The AI Economy's New Rules</h1>
+            <p class="article-subtitle">Palo Alto Networks forecasts a "seismic shift in risk" as AI transforms both
+                attack and defense. Here's what they're predicting for the year ahead—and how to prepare.</p>
+        </div>
+
+        <img src="/images/2026-predictions-hero.png" alt="Cybersecurity Predictions 2026" class="hero-image">
+
+        <div class="article-content">
+            <p>Every December, Palo Alto Networks releases their annual cybersecurity predictions. This year's report,
+                titled <strong>"6 Predictions for the AI Economy: 2026's New Rules of Cybersecurity,"</strong> released
+                December 15, 2025, paints a picture of an industry at a turning point.</p>
+
+            <p>After calling 2025 the "Year of Disruption" (a prediction they claim was validated by 84% of major
+                incidents causing business impact), they're making a bold claim: <strong>2026 will be the "Year of the
+                    Defender."</strong></p>
+
+            <p>But before defenders get too comfortable, the report also warns of fully autonomous AI attacks, quantum
+                computing threats, and a fundamental restructuring of the cybersecurity landscape.</p>
+
+            <p>Let's break down each prediction:</p>
+
+            <div class="prediction-card">
+                <span class="prediction-number">1</span>
+                <h3>
+                    <span class="icon" style="background: rgba(0, 217, 255, 0.2); color: var(--accent-cyan);"><i
+                            class="fas fa-shield-alt"></i></span>
+                    2026: The Year of the Defender
+                </h3>
+                <p style="color: var(--text-secondary);">For the first time, Palo Alto Networks believes defenders will
+                    start to gain the upper hand against AI-powered attacks. The thesis: security teams are finally
+                    deploying AI-driven defenses at scale.</p>
+
+                <h4 style="color: var(--text-primary); margin-top: 1.5rem;">What this means in practice:</h4>
+                <ul>
+                    <li><strong>AI-Powered SOCs:</strong> Security Operations Centers using AI to triage alerts,
+                        correlate events, and automate response</li>
+                    <li><strong>Predictive Defense:</strong> Machine learning models that anticipate attacks before they
+                        happen</li>
+                    <li><strong>Automated Threat Hunting:</strong> AI agents proactively searching for indicators of
+                        compromise</li>
+                    <li><strong>Real-Time Adaptation:</strong> Defense systems that learn from attacks and update
+                        protections instantly</li>
+                </ul>
+
+                <div class="info-box" style="margin-top: 1.5rem;">
+                    <p style="margin: 0;"><strong>Reality Check:</strong> This is an optimistic take. The prediction
+                        assumes security budgets continue rising and organizations actually deploy AI defenses
+                        effectively. Given the current skills gap, execution will be uneven.</p>
+                </div>
+            </div>
+
+            <div class="prediction-card">
+                <span class="prediction-number">2</span>
+                <h3>
+                    <span class="icon" style="background: rgba(255, 76, 76, 0.2); color: var(--accent-red);"><i
+                            class="fas fa-robot"></i></span>
+                    Fully Autonomous AI-Driven Attacks
+                </h3>
+                <p style="color: var(--text-secondary);">The report predicts that 2026 will see the emergence of
+                    <strong>fully autonomous AI intrusion campaigns</strong>—attacks that operate without human
+                    intervention from initial reconnaissance to data exfiltration.</p>
+
+                <h4 style="color: var(--text-primary); margin-top: 1.5rem;">What autonomous attacks look like:</h4>
+                <ul>
+                    <li><strong>Self-Directed Reconnaissance:</strong> AI systems scanning for vulnerabilities without
+                        human guidance</li>
+                    <li><strong>Autonomous Exploitation:</strong> Automatic exploitation of discovered weaknesses</li>
+                    <li><strong>Adaptive Persistence:</strong> Malware that modifies itself to evade detection</li>
+                    <li><strong>Intelligent Exfiltration:</strong> AI that identifies and extracts the most valuable
+                        data</li>
+                </ul>
+
+                <div class="alert-box" style="margin-top: 1.5rem;">
+                    <p style="margin: 0;"><strong>Why this is terrifying:</strong> Human attackers are limited by time
+                        and attention. Autonomous AI attacks can operate 24/7, scale infinitely, and adapt in real-time.
+                        One sophisticated AI agent could simultaneously attack thousands of targets.</p>
+                </div>
+            </div>
+
+            <div class="prediction-card">
+                <span class="prediction-number">3</span>
+                <h3>
+                    <span class="icon" style="background: rgba(157, 78, 221, 0.2); color: var(--accent-purple);"><i
+                            class="fas fa-user-secret"></i></span>
+                    AI-Driven Identity Attacks at Scale
+                </h3>
+                <p style="color: var(--text-secondary);">Identity attacks—phishing, credential theft, account
+                    takeover—will be supercharged by AI. The report specifically calls out <strong>AI-generated
+                        phishing, voice cloning (vishing), and deepfakes</strong> as major threats.</p>
+
+                <h4 style="color: var(--text-primary); margin-top: 1.5rem;">Attack scenarios:</h4>
+                <ul>
+                    <li><strong>Hyper-Personalized Phishing:</strong> AI that crafts unique, contextually accurate
+                        phishing emails for each target</li>
+                    <li><strong>Real-Time Voice Cloning:</strong> Attackers impersonating executives on phone calls
+                        using AI-generated voices</li>
+                    <li><strong>Video Deepfakes:</strong> Fake video calls where the "CEO" instructs finance to wire
+                        money</li>
+                    <li><strong>Automated Credential Stuffing:</strong> AI-powered systems testing billions of
+                        credential combinations</li>
+                </ul>
+
+                <p style="color: var(--text-secondary); margin-top: 1.5rem;">The Harvard breach we reported on (phishing
+                    call to steal credentials) is just the beginning. When AI can perfectly imitate anyone's voice or
+                    face, traditional identity verification becomes nearly impossible.</p>
+            </div>
+
+            <div class="prediction-card">
+                <span class="prediction-number">4</span>
+                <h3>
+                    <span class="icon" style="background: rgba(255, 149, 0, 0.2); color: #FF9500;"><i
+                            class="fas fa-database"></i></span>
+                    Data Poisoning Goes Mainstream
+                </h3>
+                <p style="color: var(--text-secondary);">As organizations become increasingly dependent on AI, attackers
+                    will target the <strong>data that trains those AI systems</strong>. The report predicts data
+                    poisoning will become a standard attack technique in 2026.</p>
+
+                <h4 style="color: var(--text-primary); margin-top: 1.5rem;">How data poisoning works:</h4>
+                <ul>
+                    <li><strong>Training Data Manipulation:</strong> Injecting malicious samples into training datasets
+                    </li>
+                    <li><strong>Feedback Loop Poisoning:</strong> Corrupting data used for model fine-tuning and
+                        improvement</li>
+                    <li><strong>Supply Chain Attacks:</strong> Compromising third-party data sources organizations rely
+                        on</li>
+                    <li><strong>Long-Term Corruption:</strong> Subtly degrading model accuracy over time</li>
+                </ul>
+
+                <p style="color: var(--text-secondary); margin-top: 1.5rem;">This is particularly insidious because the
+                    effects may not be immediately visible. A poisoned model might function normally for months before
+                    producing catastrophically wrong outputs at a critical moment.</p>
+            </div>
+
+            <div class="prediction-card">
+                <span class="prediction-number">5</span>
+                <h3>
+                    <span class="icon" style="background: rgba(0, 255, 136, 0.2); color: var(--accent-green);"><i
+                            class="fas fa-atom"></i></span>
+                    Quantum Threat Preparation Becomes Urgent
+                </h3>
+                <p style="color: var(--text-secondary);">While practical quantum computers capable of breaking current
+                    encryption are still years away, the report emphasizes that <strong>organizations must start
+                        preparing now</strong>. The statistic is alarming: <strong>91% of enterprises lack formal
+                        quantum-safe migration plans.</strong></p>
+
+                <h4 style="color: var(--text-primary); margin-top: 1.5rem;">Why this matters now:</h4>
+                <ul>
+                    <li><strong>"Harvest Now, Decrypt Later":</strong> Adversaries are already collecting encrypted data
+                        to decrypt once quantum computers are available</li>
+                    <li><strong>Long Migration Timelines:</strong> Moving to post-quantum cryptography takes years of
+                        planning and implementation</li>
+                    <li><strong>Regulatory Pressure:</strong> Governments are starting to mandate quantum-safe
+                        preparations for critical infrastructure</li>
+                    <li><strong>Supply Chain Dependencies:</strong> Your organization may be ready, but are your
+                        vendors?</li>
+                </ul>
+
+                <div class="green-box" style="margin-top: 1.5rem;">
+                    <p style="margin: 0;"><strong>Action Item:</strong> Start inventorying where cryptography is used in
+                        your organization. Understanding your cryptographic footprint is the first step toward quantum
+                        readiness.</p>
+                </div>
+            </div>
+
+            <div class="prediction-card">
+                <span class="prediction-number">6</span>
+                <h3>
+                    <span class="icon" style="background: rgba(0, 217, 255, 0.2); color: var(--accent-cyan);"><i
+                            class="fas fa-cogs"></i></span>
+                    Security Consolidation Accelerates
+                </h3>
+                <p style="color: var(--text-secondary);">The report predicts that organizations will aggressively
+                    consolidate their security stacks in 2026, moving from dozens of point solutions to integrated
+                    platforms.</p>
+
+                <h4 style="color: var(--text-primary); margin-top: 1.5rem;">Drivers of consolidation:</h4>
+                <ul>
+                    <li><strong>AI Integration Challenges:</strong> Making AI work across 50 different security tools is
+                        impossible</li>
+                    <li><strong>Operational Efficiency:</strong> Fewer dashboards means faster response times</li>
+                    <li><strong>Cost Pressure:</strong> Platform licensing is often cheaper than multiple point
+                        solutions</li>
+                    <li><strong>Skills Gap:</strong> Teams can't maintain expertise across dozens of products</li>
+                </ul>
+
+                <p style="color: var(--text-secondary); margin-top: 1.5rem;">The vendors pushing this narrative (like
+                    Palo Alto Networks) obviously benefit from consolidation, but the underlying logic is sound. The
+                    question is whether platform vendors can actually deliver on the promise of integrated security.</p>
+            </div>
+
+            <h2>What Did Palo Alto Get Right in 2025?</h2>
+            <p>Before fully trusting these predictions, it's worth examining their track record. Palo Alto Networks
+                called 2025 the "Year of Disruption." According to their own data:</p>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="number">84%</div>
+                    <div class="label">Incidents Caused Business Impact</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">41%</div>
+                    <div class="label">Increase in API Attacks</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">99%</div>
+                    <div class="label">Orgs Had AI Systems Attacked</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">$4.44M</div>
+                    <div class="label">Avg. Breach Cost</div>
+                </div>
+            </div>
+
+            <p>By these metrics, 2025 was indeed disruptive. The question is whether their optimism about "Year of the
+                Defender" is warranted, or if it's marketing positioning for their platform consolidation strategy.</p>
+
+            <h2>How to Prepare: A Practical Roadmap</h2>
+            <p>Based on these predictions, here's what security teams should prioritize:</p>
+
+            <h3>For AI Defense (#1, #2, #4)</h3>
+            <ul>
+                <li><strong>Deploy AI-native security tools:</strong> If your SIEM and SOAR aren't AI-powered, evaluate
+                    alternatives</li>
+                <li><strong>Implement data provenance:</strong> Track where training data comes from to detect poisoning
+                </li>
+                <li><strong>Build detection for AI attacks:</strong> Your threat hunting playbooks need AI-specific
+                    scenarios</li>
+            </ul>
+
+            <h3>For Identity Protection (#3)</h3>
+            <ul>
+                <li><strong>Implement phishing-resistant MFA:</strong> Hardware security keys, not SMS or voice calls
+                </li>
+                <li><strong>Deploy deepfake detection:</strong> For video calls involving financial or sensitive
+                    decisions</li>
+                <li><strong>Create verification protocols:</strong> Out-of-band confirmation for high-risk requests</li>
+            </ul>
+
+            <h3>For Quantum Readiness (#5)</h3>
+            <ul>
+                <li><strong>Inventory cryptographic usage:</strong> Know where encryption is used in your systems</li>
+                <li><strong>Monitor NIST recommendations:</strong> Post-quantum standards are being finalized</li>
+                <li><strong>Include quantum in vendor assessments:</strong> Ask suppliers about their migration plans
+                </li>
+            </ul>
+
+            <h3>For Consolidation (#6)</h3>
+            <ul>
+                <li><strong>Audit your security stack:</strong> How many tools do you actually use effectively?</li>
+                <li><strong>Evaluate platform vendors:</strong> But be skeptical of "everything in one box" promises
+                </li>
+                <li><strong>Plan for integration:</strong> Whether you consolidate or not, tools need to work together
+                </li>
+            </ul>
+
+            <div class="related-guides">
+                <h3><i class="fas fa-book"></i> Related Resources</h3>
+                <a href="/threat-intel.html" class="guide-link">
+                    <i class="fas fa-shield-alt"></i> AI Threat Intelligence Dashboard
+                </a>
+                <a href="/articles/99-percent-ai-systems-attacked-2025.html" class="guide-link">
+                    <i class="fas fa-chart-line"></i> 99% of AI Systems Attacked
+                </a>
+                <a href="/guides/" class="guide-link">
+                    <i class="fas fa-graduation-cap"></i> Security Guides Library
+                </a>
+            </div>
+
+            <h2>The Bottom Line</h2>
+            <p>Palo Alto Networks' 2026 predictions paint a picture of an industry in transformation. The themes are
+                clear:</p>
+
+            <ul>
+                <li><strong>AI is the battlefield:</strong> Both attackers and defenders are racing to leverage it</li>
+                <li><strong>Identity is under siege:</strong> Traditional authentication is failing against AI-powered
+                    attacks</li>
+                <li><strong>Data integrity matters more than ever:</strong> Poisoned data means poisoned decisions</li>
+                <li><strong>Quantum is coming:</strong> Preparation must start now</li>
+                <li><strong>Complexity is the enemy:</strong> Consolidation is necessary for effective defense</li>
+            </ul>
+
+            <p>Whether 2026 truly becomes the "Year of the Defender" depends on whether security teams can execute on
+                these priorities. The tools are becoming available. The question is whether organizations have the will,
+                resources, and expertise to use them.</p>
+
+            <p><em>Stay ahead of emerging threats. Visit our <a href="/threat-intel.html"
+                        style="color: var(--accent-cyan);">AI Threat Intelligence Dashboard</a> for real-time updates on
+                    AI attack techniques and security incidents.</em></p>
+        </div>
+    </div>
+</body>
+
+</html>

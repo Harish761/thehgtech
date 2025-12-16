@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Billion-Record Heist: Salesforce Data Extortion Threatens Enterprise Cloud Security | TheHGTech</title>
+    <meta name="description"
+        content="Hackers claim to have stolen 1 billion records from companies using Salesforce's cloud databases. Here's what we know about the extortion campaign and how to protect your CRM data.">
+    <meta name="keywords"
+        content="Salesforce breach, data extortion, cloud security, CRM security, enterprise data breach, Salesforce security, billion records stolen">
+    <link rel="canonical" href="https://thehgtech.com/articles/salesforce-billion-record-extortion-2025.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title"
+        content="The Billion-Record Heist: Salesforce Data Extortion Threatens Enterprise Cloud Security">
+    <meta property="og:description"
+        content="A hacker group claims to have stolen 1 billion records from Salesforce customers. Here's what enterprises need to know.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/articles/salesforce-billion-record-extortion-2025.html">
+    <meta property="og:image" content="https://thehgtech.com/images/salesforce-breach-hero.png">
+
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/theme-toggle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="/theme-toggle.js" defer></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF4C4C;
+            --accent-purple: #9D4EDD;
+            --accent-blue: #1798C1;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        .article-container {
+            max-width: 800px;
+            margin: 80px auto 0;
+            padding: 2rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-cyan);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: var(--text-primary);
+        }
+
+        .article-header {
+            margin-bottom: 3rem;
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            flex-wrap: wrap;
+        }
+
+        .article-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .article-title {
+            font-size: 3rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .article-subtitle {
+            font-size: 1.3rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin: 2rem 0;
+            box-shadow: 0 10px 30px rgba(23, 152, 193, 0.3);
+        }
+
+        .article-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .article-content h2 {
+            font-size: 2rem;
+            margin: 3rem 0 1.5rem;
+            color: var(--text-primary);
+        }
+
+        .article-content h3 {
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem;
+            color: var(--accent-cyan);
+        }
+
+        .article-content h4 {
+            font-size: 1.2rem;
+            margin: 1.5rem 0 0.75rem;
+            color: var(--text-primary);
+        }
+
+        .article-content p {
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        .article-content strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .article-content ul,
+        .article-content ol {
+            margin: 1.5rem 0;
+            padding-left: 2rem;
+        }
+
+        .article-content li {
+            margin-bottom: 0.75rem;
+            color: var(--text-secondary);
+        }
+
+        .alert-box {
+            background: rgba(255, 76, 76, 0.1);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .alert-box strong {
+            color: var(--accent-red);
+        }
+
+        .info-box {
+            background: rgba(0, 217, 255, 0.1);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .warning-box {
+            background: rgba(255, 149, 0, 0.1);
+            border-left: 4px solid #FF9500;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .blue-box {
+            background: rgba(23, 152, 193, 0.1);
+            border-left: 4px solid var(--accent-blue);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .stat-card .number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--accent-blue);
+            line-height: 1;
+        }
+
+        .stat-card .label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 0.5rem;
+        }
+
+        .big-stat {
+            background: linear-gradient(135deg, rgba(23, 152, 193, 0.2), rgba(0, 217, 255, 0.1));
+            border: 2px solid var(--accent-blue);
+            border-radius: 16px;
+            padding: 3rem;
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .big-stat .number {
+            font-size: 5rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1;
+        }
+
+        .big-stat .label {
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            margin-top: 1rem;
+        }
+
+        .company-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .company-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .company-item i {
+            color: var(--accent-red);
+        }
+
+        .guide-link {
+            display: inline-block;
+            background: linear-gradient(135deg, rgba(0, 217, 255, 0.1), rgba(102, 126, 234, 0.1));
+            border: 1px solid var(--accent-cyan);
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            color: var(--accent-cyan);
+            text-decoration: none;
+            margin: 0.5rem 0.5rem 0.5rem 0;
+            transition: all 0.3s;
+        }
+
+        .guide-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 217, 255, 0.3);
+        }
+
+        .related-guides {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 3rem 0;
+        }
+
+        .related-guides h3 {
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+        }
+
+        .checklist {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .checklist h3 {
+            margin-top: 0;
+            color: var(--accent-cyan);
+        }
+
+        .checklist li {
+            list-style: none;
+            padding-left: 2rem;
+            position: relative;
+        }
+
+        .checklist li:before {
+            content: "☐";
+            position: absolute;
+            left: 0;
+            color: var(--accent-cyan);
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+            .article-title {
+                font-size: 2rem;
+            }
+
+            .article-container {
+                padding: 1rem;
+            }
+
+            .big-stat .number {
+                font-size: 3rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="article-container">
+        <a href="/articles.html" class="back-link">
+            <i class="fas fa-arrow-left"></i> Back to Articles
+        </a>
+
+        <div class="article-header">
+            <div class="article-meta">
+                <span><i class="far fa-calendar"></i> December 2025</span>
+                <span><i class="far fa-clock"></i> 10 min read</span>
+                <span><i class="fas fa-tag"></i> Data Breach</span>
+                <span><i class="fas fa-cloud"></i> Cloud Security</span>
+            </div>
+
+            <h1 class="article-title">The Billion-Record Heist: Salesforce Data Extortion Threatens Enterprise Cloud
+                Security</h1>
+            <p class="article-subtitle">A hacker group claims to have stolen 1 billion records from companies using
+                Salesforce's cloud databases and is now extorting victims. Here's what we know—and what it means for
+                cloud security.</p>
+        </div>
+
+        <img src="/images/salesforce-breach-hero.png" alt="Salesforce Data Breach Extortion" class="hero-image">
+
+        <div class="article-content">
+            <div class="warning-box">
+                <strong>⚠️ UNVERIFIED CLAIMS:</strong> The 1 billion record figure comes from threat actor claims, not
+                confirmed by Salesforce or independent verification. This article analyzes what's known and what remains
+                uncertain. Organizations should treat this as a credible threat but verify details before taking drastic
+                action.
+            </div>
+
+            <div class="big-stat">
+                <div class="number">1,000,000,000</div>
+                <div class="label">Records allegedly stolen from Salesforce customer databases</div>
+            </div>
+
+            <h2>What We Know</h2>
+            <p>In December 2025, reports emerged of a hacker group claiming to have <strong>stolen approximately 1
+                    billion records from companies using Salesforce's cloud databases</strong>. The attackers are
+                allegedly extorting multiple organizations, threatening to release the data if ransom demands aren't
+                met.</p>
+
+            <p>According to reporting from security researchers and industry publications, the breach appears to
+                involve:</p>
+
+            <ul>
+                <li><strong>Multiple companies affected:</strong> The attack targeted Salesforce customer databases, not
+                    Salesforce's own infrastructure</li>
+                <li><strong>Various industries represented:</strong> Reported victims include luxury brands, technology
+                    companies, and security vendors</li>
+                <li><strong>Active extortion campaign:</strong> Victims are receiving ransom demands with threats of
+                    public data release</li>
+                <li><strong>Third-party connections:</strong> Some breaches appear connected to compromised third-party
+                    applications and integrations</li>
+            </ul>
+
+            <h3>Companies Allegedly Affected</h3>
+            <p>While the full scope remains unclear, the following companies have been mentioned in connection with this
+                campaign:</p>
+
+            <div class="company-list">
+                <div class="company-item">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span>Chanel</span>
+                </div>
+                <div class="company-item">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span>Pandora</span>
+                </div>
+                <div class="company-item">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span>BeyondTrust</span>
+                </div>
+                <div class="company-item">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span>Cloudflare</span>
+                </div>
+                <div class="company-item">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span>CyberArk</span>
+                </div>
+                <div class="company-item">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span>Palo Alto Networks</span>
+                </div>
+            </div>
+
+            <p><em>Note: Inclusion on this list indicates the companies were mentioned in threat actor communications or
+                    security reporting. It does not confirm all were breached through Salesforce specifically.</em></p>
+
+            <h2>How Did This Happen?</h2>
+            <p>Based on available information, the attack likely exploited one or more of these vectors:</p>
+
+            <h3>1. Compromised Third-Party Applications</h3>
+            <p>The Salesforce ecosystem includes thousands of third-party applications on AppExchange. If one of these
+                apps is compromised, attackers gain access to customer data through the app's API permissions.</p>
+
+            <p>This is similar to the SoundCloud breach, which was traced to compromised analytics provider Mixpanel—a
+                third-party service with access to customer data.</p>
+
+            <h3>2. API Credential Theft</h3>
+            <p>Salesforce APIs require authentication credentials (API keys, OAuth tokens). If these credentials are
+                stolen—through phishing, insider threats, or insecure storage—attackers can access data directly.</p>
+
+            <h3>3. Misconfigured Sharing Settings</h3>
+            <p>Salesforce has complex permission models. Misconfigured sharing rules can inadvertently expose data to
+                unauthorized users. Community portals, in particular, have been sources of data exposure.</p>
+
+            <h3>4. Credential Stuffing and Account Takeover</h3>
+            <p>If Salesforce users reuse passwords from other breached services, attackers can access accounts through
+                credential stuffing attacks.</p>
+
+            <div class="info-box">
+                <h3 style="color: var(--accent-cyan); margin-top: 0;"><i class="fas fa-cloud"></i> The SaaS Security
+                    Challenge</h3>
+                <p style="margin-bottom: 0;">When you move data to Salesforce (or any SaaS provider), you don't
+                    eliminate security responsibility—you share it. Salesforce secures their infrastructure, but you
+                    remain responsible for access controls, data classification, third-party app permissions, and user
+                    security. This "shared responsibility model" is often misunderstood.</p>
+            </div>
+
+            <h2>Why CRM Data Is a Prime Target</h2>
+            <p>Salesforce is the world's largest CRM platform. The data it contains is extraordinarily valuable to
+                attackers:</p>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="number">150K+</div>
+                    <div class="label">Companies Using Salesforce</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">$21.5B</div>
+                    <div class="label">Annual Salesforce Revenue</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">#1</div>
+                    <div class="label">CRM Market Share</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">∞</div>
+                    <div class="label">Customer Data Value</div>
+                </div>
+            </div>
+
+            <h3>What's in a CRM?</h3>
+            <ul>
+                <li><strong>Customer Contact Information:</strong> Names, emails, phone numbers, addresses</li>
+                <li><strong>Transaction History:</strong> What customers bought, for how much, when</li>
+                <li><strong>Sales Conversations:</strong> Notes, emails, call logs with customer details</li>
+                <li><strong>Business Relationships:</strong> Who knows whom, account hierarchies</li>
+                <li><strong>Financial Data:</strong> Quotes, contracts, pricing information</li>
+                <li><strong>Sensitive Notes:</strong> Often unstructured data with highly sensitive information</li>
+            </ul>
+
+            <p>For attackers, this is a goldmine. CRM data can be used for targeted phishing, business email compromise,
+                competitive intelligence, or simply sold on dark web markets.</p>
+
+            <h2>The Supply Chain Dimension</h2>
+            <p>One of the most concerning aspects of this incident is the supply chain implications. If security vendors
+                like BeyondTrust, CyberArk, or Cloudflare had customer data exposed, that data could enable attacks
+                against <em>their</em> customers.</p>
+
+            <div class="alert-box">
+                <h4 style="color: var(--accent-red); margin-top: 0;"><i class="fas fa-link"></i> The Cascade Effect</h4>
+                <p style="margin-bottom: 0;">If an attacker gains access to a security vendor's CRM, they might learn:
+                    which companies are customers, what products they use, who the security contacts are, and what
+                    pricing they pay. This information enables highly targeted attacks against those companies,
+                    potentially before the security vendor even knows they were breached.</p>
+            </div>
+
+            <h2>What Should Organizations Do Right Now?</h2>
+            <p>Whether or not your organization is directly affected, this incident should prompt immediate action:</p>
+
+            <div class="checklist">
+                <h3>Immediate Actions (Today)</h3>
+                <ul>
+                    <li><strong>Review Salesforce Login Activity:</strong> Check Setup → Security → Login History for
+                        unusual access patterns</li>
+                    <li><strong>Audit Connected Apps:</strong> Review all third-party apps with Salesforce access.
+                        Remove any that are unused or unrecognized.</li>
+                    <li><strong>Check API Usage:</strong> Monitor API logs for unusual query patterns or data export
+                        activity</li>
+                    <li><strong>Verify User List:</strong> Look for unauthorized user accounts, especially recently
+                        created ones</li>
+                    <li><strong>Enable/Verify MFA:</strong> Ensure all Salesforce users have MFA enabled, no exceptions
+                    </li>
+                </ul>
+
+                <h3>Short-Term Actions (This Week)</h3>
+                <ul>
+                    <li><strong>Review Sharing Rules:</strong> Audit organization-wide defaults, sharing rules, and
+                        public access settings</li>
+                    <li><strong>Check Community/Portal Settings:</strong> Experience Cloud sites are common sources of
+                        data exposure</li>
+                    <li><strong>Rotate API Credentials:</strong> Refresh OAuth tokens and API keys as a precaution</li>
+                    <li><strong>Enable Event Monitoring:</strong> If you have Shield, ensure event monitoring is
+                        capturing security-relevant events</li>
+                    <li><strong>Brief Your Incident Response Team:</strong> Prepare for potential breach notification
+                        requirements</li>
+                </ul>
+
+                <h3>Strategic Actions (This Month)</h3>
+                <ul>
+                    <li><strong>Implement CASB:</strong> Cloud Access Security Brokers can detect anomalous Salesforce
+                        activity</li>
+                    <li><strong>Review Vendor Security:</strong> Assess security controls for all apps with Salesforce
+                        access</li>
+                    <li><strong>Data Classification:</strong> Understand what data is in your Salesforce instance and
+                        its sensitivity</li>
+                    <li><strong>Backup Strategy:</strong> Ensure you have independent backups of Salesforce data</li>
+                </ul>
+            </div>
+
+            <h2>Salesforce Security Best Practices</h2>
+            <p>Regardless of this specific incident, every Salesforce customer should implement these controls:</p>
+
+            <h3>Access Control</h3>
+            <ul>
+                <li><strong>Enforce MFA for all users</strong> — no exceptions</li>
+                <li><strong>Use IP whitelisting</strong> where possible</li>
+                <li><strong>Implement session security settings</strong> (timeout, HTTPS enforcement)</li>
+                <li><strong>Regular access reviews</strong> to remove unnecessary permissions</li>
+            </ul>
+
+            <h3>Data Protection</h3>
+            <ul>
+                <li><strong>Salesforce Shield</strong> for encryption and event monitoring (if budget allows)</li>
+                <li><strong>Field-level security</strong> to restrict sensitive data access</li>
+                <li><strong>Avoid over-provisioning</strong> — principle of least privilege</li>
+                <li><strong>Data classification</strong> for regulatory compliance</li>
+            </ul>
+
+            <h3>Third-Party Risk</h3>
+            <ul>
+                <li><strong>Audit all AppExchange installations</strong> regularly</li>
+                <li><strong>Review OAuth permissions</strong> granted to connected apps</li>
+                <li><strong>Use managed packages</strong> from vetted vendors only</li>
+                <li><strong>Monitor for unauthorized integrations</strong></li>
+            </ul>
+
+            <h2>The Broader Lesson: SaaS Concentration Risk</h2>
+            <p>This incident highlights a growing concern: <strong>SaaS concentration risk</strong>. When a platform
+                like Salesforce holds data from 150,000+ organizations, a single breach vector can have massive ripple
+                effects.</p>
+
+            <p>The same logic applies to other major SaaS platforms:</p>
+            <ul>
+                <li><strong>Microsoft 365:</strong> Email, documents, identity for millions of organizations</li>
+                <li><strong>Google Workspace:</strong> Similar to Microsoft 365</li>
+                <li><strong>ServiceNow:</strong> IT operations and business processes</li>
+                <li><strong>Workday:</strong> HR and financial data</li>
+                <li><strong>Snowflake:</strong> Data analytics and warehousing</li>
+            </ul>
+
+            <p>Organizations need to consider: what happens if one of these platforms has a major breach? Do you have
+                visibility into your data? Can you detect unauthorized access? Do you have response plans?</p>
+
+            <div class="blue-box">
+                <h3 style="color: var(--accent-blue); margin-top: 0;"><i class="fas fa-balance-scale"></i> Shared
+                    Responsibility Reality Check</h3>
+                <p><strong>What Salesforce is responsible for:</strong></p>
+                <ul>
+                    <li>Infrastructure security</li>
+                    <li>Platform security (patching, core security features)</li>
+                    <li>Physical data center security</li>
+                    <li>Network security</li>
+                </ul>
+                <p style="margin-bottom: 0;"><strong>What YOU are responsible for:</strong></p>
+                <ul style="margin-bottom: 0;">
+                    <li>User access management</li>
+                    <li>Data classification and protection</li>
+                    <li>Third-party app security</li>
+                    <li>Configuration and sharing settings</li>
+                    <li>Monitoring and incident response</li>
+                </ul>
+            </div>
+
+            <div class="related-guides">
+                <h3><i class="fas fa-book"></i> Related Resources</h3>
+                <a href="/threat-intel.html" class="guide-link">
+                    <i class="fas fa-shield-alt"></i> Threat Intelligence Dashboard
+                </a>
+                <a href="/articles/99-percent-ai-systems-attacked-2025.html" class="guide-link">
+                    <i class="fas fa-chart-line"></i> 99% of AI Systems Attacked
+                </a>
+                <a href="/guides/" class="guide-link">
+                    <i class="fas fa-graduation-cap"></i> Security Guides Library
+                </a>
+            </div>
+
+            <h2>The Bottom Line</h2>
+            <p>The alleged 1 billion record Salesforce breach—whether ultimately confirmed at that scale or not—reflects
+                a reality security professionals have been warning about for years: <strong>cloud doesn't mean
+                    secure</strong>.</p>
+
+            <p>Every organization using Salesforce (or any SaaS platform) needs to:</p>
+            <ol>
+                <li><strong>Understand their data:</strong> What's in the platform and how sensitive is it?</li>
+                <li><strong>Control access:</strong> Who can see the data, and are those permissions appropriate?</li>
+                <li><strong>Monitor activity:</strong> Can you detect unauthorized access or data exfiltration?</li>
+                <li><strong>Manage third parties:</strong> What other applications have access to your data?</li>
+                <li><strong>Plan for incidents:</strong> What do you do when (not if) a breach occurs?</li>
+            </ol>
+
+            <p>The attackers are targeting the platforms where the most valuable data lives. In 2025, that means SaaS.
+                Is your organization ready?</p>
+
+            <div class="warning-box">
+                <strong>📰 Developing Story:</strong> This article will be updated as more information becomes
+                available. The 1 billion record claim remains unverified. Check back for updates.
+            </div>
+
+            <p><em>Stay informed about cloud security threats. Visit our <a href="/threat-intel.html"
+                        style="color: var(--accent-cyan);">Threat Intelligence Dashboard</a> for real-time updates on
+                    breaches and security incidents.</em></p>
+        </div>
+    </div>
+</body>
+
+</html>
