@@ -781,9 +781,11 @@
 
             // Use anchor tags for SEO - on mobile, intercept click for modal
             grid.innerHTML = filteredArticles.map(article => {
-                const clickHandler = isMobile ? `onclick="openArticleModal(event, '${article.id}')"` : 'target="_blank"';
+                // If article has externalUrl, link directly to the standalone HTML file
+                const articleUrl = article.externalUrl ? article.externalUrl : `articles.html?id=${article.id}`;
+                const clickHandler = (isMobile && !article.externalUrl) ? `onclick="openArticleModal(event, '${article.id}')"` : '';
                 return `
-                <a href="articles.html?id=${article.id}" class="article-card-link" data-article-id="${article.id}" ${clickHandler} style="text-decoration: none; color: inherit; display: block;">
+                <a href="${articleUrl}" class="article-card-link" data-article-id="${article.id}" ${clickHandler} style="text-decoration: none; color: inherit; display: block;">
                     <div class="article-card">
                         <div class="article-category">${article.category}</div>
                         <h3>${article.title}</h3>
@@ -803,6 +805,12 @@
 
             const article = allArticles.find(a => a.id === articleId);
             if (!article) return;
+
+            // If article uses externalUrl, redirect instead of showing modal
+            if (article.externalUrl) {
+                window.location.href = article.externalUrl;
+                return;
+            }
 
             const wordCount = article.content.replace(/<[^>]*>/g, '').split(/\s+/).length;
             const readingTime = Math.ceil(wordCount / 200);
