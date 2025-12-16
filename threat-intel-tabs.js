@@ -43,13 +43,22 @@
         }
 
         // Wrap existing content in "All Threats" tab
+        // Wrap existing IOC content in "All Threats" tab
+        // IMPORTANT: filter out AI content and Main Tabs so they don't get wrapped!
         const existingContent = Array.from(mainContainer.children).slice(
             Array.from(mainContainer.children).indexOf(tabNav) + 1
-        );
+        ).filter(el => {
+            return !el.classList.contains('ai-tab-content') &&
+                el.id !== 'ai-tab-content' &&
+                !el.classList.contains('main-threat-tabs') &&
+                !el.classList.contains('dashboard-controls');
+        });
 
         const threatsTab = document.createElement('div');
         threatsTab.id = 'threats-tab';
         threatsTab.className = 'tab-content';
+
+        // Append filtered content to threats tab
         existingContent.forEach(el => threatsTab.appendChild(el));
 
         // Create dashboard tab
