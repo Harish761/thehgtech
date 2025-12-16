@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1306",
+      "incident_id": 1306,
+      "title": "Florida Couple Reportedly Loses $45,000 in Alleged AI-Generated Elon Musk Impersonation Scam",
+      "date": "2025-12-15",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
       "id": "AIID-817",
       "incident_id": 817,
       "title": "Purportedly AI-Generated Images Reportedly Spread Misinformation During Hurricane Helene Response",
@@ -1522,9 +1530,9 @@
     }
   ],
   "stats": {
-    "total": 190,
-    "last7Days": 21,
-    "last30Days": 113
+    "total": 191,
+    "last7Days": 22,
+    "last30Days": 114
   },
-  "lastUpdated": "2025-12-16T02:05:16.706602+05:30"
+  "lastUpdated": "2025-12-16T07:51:48.791344+05:30"
 }
