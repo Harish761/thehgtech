@@ -267,6 +267,22 @@
             margin-bottom: 1.5rem;
         }
 
+        /* AI Stats styling in hero */
+        .stat-divider {
+            border-left: 2px solid rgba(157, 78, 221, 0.4);
+            padding-left: 1.5rem !important;
+            margin-left: 0.5rem;
+        }
+
+        .ai-stat .stat-number {
+            text-shadow: 0 0 20px rgba(157, 78, 221, 0.4);
+        }
+
+        .live-stats {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
         /* Main Content */
         .main {
             padding: 0 2rem 4rem;
@@ -1030,23 +1046,31 @@
 
             <!-- Description -->
             <p>
-                Live indicators of compromise from 9 trusted security vendors, enriched with AI-powered analysis,
-                updated every 4 hours. Your command center for staying ahead of emerging threats.
+                Live indicators of compromise from 9 security vendors + AI threat intelligence from MITRE ATLAS,
+                AI Incident Database & OWASP LLM Top 10. Your unified command center for cyber & AI security.
             </p>
 
-            <!-- Live Stats -->
+            <!-- Live Stats - IOC Row -->
             <div class="live-stats">
                 <div class="stat-item">
-                    <span class="stat-number" data-target="15000">0</span>
+                    <span class="stat-number" data-target="52639">0</span>
                     <span class="stat-label">Active IOCs</span>
                 </div>
                 <div class="stat-item">
                     <span class="stat-number" data-target="9">0</span>
-                    <span class="stat-label">Data Sources</span>
+                    <span class="stat-label">IOC Sources</span>
                 </div>
-                <div class="stat-item">
-                    <span class="stat-number" data-target="4">0</span>
-                    <span class="stat-label">Hour Updates</span>
+                <div class="stat-item stat-divider">
+                    <span class="stat-number" style="color: #9d4edd;">+</span>
+                    <span class="stat-label" style="color: #9d4edd;">AI Security</span>
+                </div>
+                <div class="stat-item ai-stat">
+                    <span class="stat-number" id="heroAtlasCount" data-target="140" style="color: #9d4edd;">0</span>
+                    <span class="stat-label">ATLAS Techniques</span>
+                </div>
+                <div class="stat-item ai-stat">
+                    <span class="stat-number" id="heroAiidCount" data-target="191" style="color: #ff006e;">0</span>
+                    <span class="stat-label">AI Incidents</span>
                 </div>
             </div>
         </div>
