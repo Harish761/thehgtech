@@ -106,6 +106,16 @@
                 const daily7DaySection = document.querySelector('.daily-7day-section');
                 const trendChartSection = document.getElementById('trendChartSection');
 
+                // Inner tabs created by threat-intel-tabs.js
+                const tabNavigation = document.querySelector('.tab-navigation');
+                const dashboardTab = document.getElementById('dashboard-tab');
+                const threatsTab = document.getElementById('threats-tab');
+                const ransomwareTab = document.getElementById('ransomware-tab');
+
+                // Additional IOC-specific sections
+                const vendorStatusSection = document.getElementById('vendorStatusSection');
+                const dashboardGrid = document.querySelector('.dashboard-grid');
+
                 if (targetTab === 'ioc') {
                     if (iocContent) iocContent.style.display = 'block';
                     if (aiContent) aiContent.style.display = 'none';
@@ -116,6 +126,13 @@
                     if (vendorGrid) vendorGrid.style.display = '';
                     if (daily7DaySection) daily7DaySection.style.display = '';
                     if (trendChartSection) trendChartSection.style.display = '';
+                    // Show inner tabs
+                    if (tabNavigation) tabNavigation.style.display = '';
+                    if (dashboardTab) dashboardTab.style.display = '';
+                    if (threatsTab) threatsTab.style.display = '';
+                    if (ransomwareTab) ransomwareTab.style.display = '';
+                    if (vendorStatusSection) vendorStatusSection.style.display = '';
+                    if (dashboardGrid) dashboardGrid.style.display = '';
                 } else {
                     if (iocContent) iocContent.style.display = 'none';
                     if (aiContent) aiContent.style.display = 'block';
@@ -126,6 +143,13 @@
                     if (vendorGrid) vendorGrid.style.display = 'none';
                     if (daily7DaySection) daily7DaySection.style.display = 'none';
                     if (trendChartSection) trendChartSection.style.display = 'none';
+                    // Hide inner tabs
+                    if (tabNavigation) tabNavigation.style.display = 'none';
+                    if (dashboardTab) dashboardTab.style.display = 'none';
+                    if (threatsTab) threatsTab.style.display = 'none';
+                    if (ransomwareTab) ransomwareTab.style.display = 'none';
+                    if (vendorStatusSection) vendorStatusSection.style.display = 'none';
+                    if (dashboardGrid) dashboardGrid.style.display = 'none';
                 }
             });
         });
