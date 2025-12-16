@@ -12,82 +12,88 @@
     }
 
     function init() {
-        // Find the main container
         const mainContainer = document.querySelector('.main .container');
-        // Find the IOC Tab Content container - we want to inject EVERYTHING inside here
-        const iocTabContent = document.getElementById('ioc-tab-content');
 
-        if (!mainContainer || !iocTabContent) {
-            console.error('Main container or IOC tab content not found');
+        if (!mainContainer) {
+            console.error('Main container not found');
             return;
         }
 
-        // Check if tabs already exist to prevent duplication
+        // Check if tabs already exist
         if (mainContainer.querySelector('.tab-navigation')) {
-            console.log('Tabs already initialized, skipping...');
             return;
         }
 
-        // Also check if tab content already exists
-        if (document.getElementById('dashboard-tab')) {
-            console.log('Dashboard tab already exists, skipping...');
-            return;
-        }
+        // 1. Create Top-Level Tab Navigation
+        const tabNav = document.createElement('div');
+        tabNav.className = 'tab-navigation';
+        tabNav.innerHTML = `
+            <button class="tab-btn active" data-tab="dashboard">Dashboard</button>
+            <button class="tab-btn" data-tab="threats">Threat Intelligence</button>
+            <button class="tab-btn" data-tab="ransomware">Ransomware</button>
+        `;
 
-        // Create inner tab navigation (Dashboard / All Threats / Ransomware)
-        const tabNav = createTabNavigation();
-
-        // Insert tab navigation at the top of IOC tab content
-        // But after the data policy notice if possible
-        const iocPolicy = iocTabContent.querySelector('div[style*="linear-gradient"]');
-        if (iocPolicy) {
-            iocPolicy.after(tabNav);
+        // Insert Top-Level Tabs at the very top of main container
+        // (after dashboard controls/last updated)
+        const dashboardControls = document.querySelector('.dashboard-controls');
+        if (dashboardControls) {
+            dashboardControls.after(tabNav);
         } else {
-            iocTabContent.prepend(tabNav);
+            mainContainer.prepend(tabNav);
         }
 
-        // Wrap existing content in "All Threats" tab
-        // We only want to wrap content that is currently inside ioc-tab-content
-        // AND is after our newly inserted tabNav
-        const existingContent = Array.from(iocTabContent.children).slice(
-            Array.from(iocTabContent.children).indexOf(tabNav) + 1
-        );
+        // Add click handlers for the new top-level tabs
+        tabNav.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const tabName = btn.dataset.tab;
+                showTab(tabName);
+            });
+        });
 
-        const threatsTab = document.createElement('div');
-        threatsTab.id = 'threats-tab';
-        threatsTab.className = 'tab-content';
+        // 2. Create Content Containers
+        const dashboardTab = createDashboardTab(); // Charts etc.
+        const ransomwareTab = createRansomwareTab();
 
-        // Append filtered content to threats tab
-        existingContent.forEach(el => threatsTab.appendChild(el));
+        // 3. Create 'Threat Intelligence' Tab Container
+        const threatIntelTab = document.createElement('div');
+        threatIntelTab.id = 'threats-tab';
+        threatIntelTab.className = 'tab-content';
 
-        // MOVE ORPHANED SECTIONS INTO TABS
-        // 1. Move Static Snapshot (Text Lists) & Vendor Status Grid into "All Threats" tab
-        const staticSnapshot = document.getElementById('staticSnapshotContainer');
-        const vendorStatusSection = document.getElementById('vendorStatusSection');
+        // 4. FIND and MOVE existing Trad/AI structure into Threat Intel Tab
+        // We find the sub-tab navigation and the content containers
+        const subTabsNav = document.querySelector('.main-threat-tabs');
+        const iocContent = document.getElementById('ioc-tab-content');
+        const aiContent = document.getElementById('ai-tab-content');
         const iocExtended = document.querySelector('.ioc-extended-content');
+        const staticSnapshot = document.getElementById('staticSnapshotContainer');
+        const vendorStatus = document.getElementById('vendorStatusSection');
 
-        if (staticSnapshot) threatsTab.appendChild(staticSnapshot);
-        if (vendorStatusSection) threatsTab.appendChild(vendorStatusSection);
-        if (iocExtended) threatsTab.appendChild(iocExtended);
+        // Append these elements into the Threat Intelligence Tab
+        if (subTabsNav) threatIntelTab.appendChild(subTabsNav);
+        if (iocContent) threatIntelTab.appendChild(iocContent);
+        if (aiContent) threatIntelTab.appendChild(aiContent);
 
-        // Create dashboard tab
-        const dashboardTab = createDashboardTab();
+        // Ensure detached parts of IOC content are also moved into Threat Intel Tab (Defaulting to IOC view context)
+        // These might be moved inside 'ioc-tab-content' dynamically or kept as siblings depending on structure
+        // For now, appending them to threatIntelTab keeps them visible when Threat Intel tab is active.
+        if (iocExtended) threatIntelTab.appendChild(iocExtended);
+        if (staticSnapshot) threatIntelTab.appendChild(staticSnapshot);
+        if (vendorStatus) threatIntelTab.appendChild(vendorStatus); // Note: vendorStatus might be inside iocExtended, if so it moved with it.
 
-        // 2. Move Analytics Section (Charts) into "Dashboard" tab
+        // 5. Append Top-Level Tabs to Main Container
+        // We place them in order
+        mainContainer.appendChild(dashboardTab);
+        mainContainer.appendChild(threatIntelTab);
+        mainContainer.appendChild(ransomwareTab);
+
+        // 6. Move Analytics Section (Charts) to Dashboard?
+        // User said "Dashboard which has the charts"
         const analyticsSection = document.getElementById('analyticsSection');
         if (analyticsSection) {
             dashboardTab.querySelector('.dashboard-grid').appendChild(analyticsSection);
-            analyticsSection.style.display = 'block'; // Ensure it's visible inside the tab
-            analyticsSection.style.gridColumn = '1 / -1'; // Full width
+            analyticsSection.style.display = 'block';
+            analyticsSection.style.gridColumn = '1 / -1';
         }
-
-        // Create ransomware tab
-        const ransomwareTab = createRansomwareTab();
-
-        // Add tabs to IOC container (NOT main container)
-        iocTabContent.appendChild(dashboardTab);
-        iocTabContent.appendChild(ransomwareTab);
-        iocTabContent.appendChild(threatsTab);
 
         // Set initial active tab
         showTab('dashboard');
