@@ -650,6 +650,38 @@
         font-size: 1.1rem !important;
     }
 
+    /* AI Sub-tabs (ATLAS | Incidents | OWASP) - Ensure visibility */
+    .ai-tabs-nav {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        /* Allow wrapping so 3rd tab drops down if needed */
+        overflow-x: visible !important;
+        /* No scrolling */
+        gap: 8px !important;
+        padding: 0 !important;
+        background: transparent !important;
+        border: none !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .ai-tabs-nav .ai-tab-btn {
+        flex: 1 1 auto !important;
+        /* Grow to fill width */
+        min-width: 110px !important;
+        /* Ensure touch target size */
+        text-align: center !important;
+        justify-content: center !important;
+        padding: 8px 12px !important;
+        font-size: 0.8rem !important;
+    }
+
+    /* Reduce badge size slightly to fit */
+    .ai-tabs-nav .ai-tab-badge {
+        font-size: 0.7rem !important;
+        padding: 2px 6px !important;
+    }
+
     /* ========== QUICK ACCESS BAR ========== */
     .m-quick-access {
         display: flex;
