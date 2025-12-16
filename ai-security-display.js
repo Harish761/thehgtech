@@ -97,12 +97,16 @@
                 });
 
                 // Show/hide content
+                const iocExtended = document.querySelector('.ioc-extended-content');
+
                 if (targetTab === 'ioc') {
                     if (iocContent) iocContent.style.display = 'block';
                     if (aiContent) aiContent.style.display = 'none';
+                    if (iocExtended) iocExtended.style.display = 'block';
                 } else {
                     if (iocContent) iocContent.style.display = 'none';
                     if (aiContent) aiContent.style.display = 'block';
+                    if (iocExtended) iocExtended.style.display = 'none';
                 }
             });
         });
