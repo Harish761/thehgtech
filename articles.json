@@ -3,7 +3,7 @@
     {
       "id": "article-redhat-chatterbox-ai-safety-2025",
       "title": "Red Hat Acquires Chatterbox Labs: A New Era of Enterprise AI Safety and Responsible Deployment",
-      "date": "December 16, 2025",
+      "date": "December 17, 2025",
       "category": "AI Security",
       "excerpt": "Red Hat's strategic acquisition of Chatterbox Labs signals a major shift in enterprise AI development, bringing AI guardrails and safety testing directly into the OpenShift ecosystem.",
       "image": "images/redhat-chatterbox-hero.png",
@@ -22,7 +22,7 @@
     {
       "id": "article-99-percent-ai-attacked-2025",
       "title": "99% of Organizations Had Their AI Systems Attacked in 2025",
-      "date": "December 16, 2025",
+      "date": "December 17, 2025",
       "category": "AI Security",
       "excerpt": "Palo Alto Networks' State of Cloud Security Report reveals shocking statistics: virtually every organization running AI in production has been targeted by attackers.",
       "image": "images/ai-attacks-99-hero.png",
@@ -40,7 +40,7 @@
     {
       "id": "article-cybersecurity-predictions-2026",
       "title": "6 Cybersecurity Predictions for 2026: The AI Economy's New Rules",
-      "date": "December 15, 2025",
+      "date": "December 17, 2025",
       "category": "Predictions",
       "excerpt": "Palo Alto Networks forecasts a 'Year of the Defender' as AI transforms both attack and defense. From autonomous AI attacks to quantum threats, here's what to prepare for.",
       "image": "images/2026-predictions-hero.png",
@@ -58,7 +58,7 @@
     {
       "id": "article-harvard-phone-phishing-2025",
       "title": "How a Single Phone Call Breached Harvard: The Rise of AI-Assisted Vishing",
-      "date": "December 2025",
+      "date": "December 17, 2025",
       "category": "Social Engineering",
       "excerpt": "Harvard University's donor database was compromised through a phone-based social engineering attack. No zero-days, no malware—just a convincing phone call.",
       "image": "images/harvard-breach-hero.png",
@@ -76,7 +76,7 @@
     {
       "id": "article-salesforce-billion-extortion-2025",
       "title": "The Billion-Record Heist: Salesforce Data Extortion Threatens Enterprise Cloud Security",
-      "date": "December 2025",
+      "date": "December 17, 2025",
       "category": "Data Breach",
       "excerpt": "A hacker group claims to have stolen 1 billion records from companies using Salesforce's cloud databases and is now extorting victims. Here's what we know.",
       "image": "images/salesforce-breach-hero.png",
