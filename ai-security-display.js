@@ -428,21 +428,25 @@
             return (severityOrder[a.severity] || 2) - (severityOrder[b.severity] || 2);
         }).slice(0, 12);
 
+        // Store techniques for modal access
+        window._atlasData = {};
+        sortedTechniques.forEach(tech => { window._atlasData[tech.id] = tech; });
+
         const html = `
             <div class="atlas-grid">
                 ${sortedTechniques.map(tech => `
-                    <a href="https://atlas.mitre.org/techniques/${tech.id}" target="_blank" rel="noopener" 
-                       class="atlas-card" data-id="${tech.id}">
+                    <div class="atlas-card clickable" data-type="atlas" data-id="${tech.id}" 
+                         onclick="window.showAIModal('atlas', window._atlasData['${tech.id}'])">
                         <div class="atlas-card-header">
                             <span class="atlas-id"><i class="fas fa-crosshairs"></i> ${tech.id}</span>
                             <span class="atlas-severity ${tech.severity || 'low'}">${(tech.severity || 'low').toUpperCase()}</span>
                         </div>
                         <div class="atlas-name">${escapeHtml(tech.name)}</div>
-                        <div class="atlas-desc">${escapeHtml(tech.description || 'Click to view details on MITRE ATLAS')}</div>
+                        <div class="atlas-desc">${escapeHtml(tech.description || 'Click to view full details')}</div>
                         <div class="atlas-footer">
-                            <span class="atlas-link">View Details <i class="fas fa-external-link-alt"></i></span>
+                            <span class="atlas-link"><i class="fas fa-expand"></i> View Details</span>
                         </div>
-                    </a>
+                    </div>
                 `).join('')}
             </div>
             <div class="view-all-link">
@@ -477,13 +481,18 @@
             return;
         }
 
+        // Store incidents for modal access
+        window._incidentData = {};
+        incidents.slice(0, 15).forEach(inc => { window._incidentData[inc.id] = inc; });
+
         // Show first 15 incidents
         const html = `
             <div class="incidents-list">
                 ${incidents.slice(0, 15).map(incident => {
             const categoryIcon = CATEGORY_ICONS[incident.category] || CATEGORY_ICONS['other'];
             return `
-                    <a href="https://incidentdatabase.ai/cite/${incident.incident_id}" target="_blank" rel="noopener" class="incident-card">
+                    <div class="incident-card clickable" data-type="incident" data-id="${incident.id}"
+                         onclick="window.showAIModal('incident', window._incidentData['${incident.id}'])">
                         <span class="incident-icon"><i class="fas ${categoryIcon}" style="color: #ff9500;"></i></span>
                         <div class="incident-content">
                             <div class="incident-id-badge">${incident.id}</div>
@@ -496,8 +505,8 @@
                                 <span class="incident-date"><i class="fas fa-calendar-alt"></i> ${incident.date}</span>
                             </div>
                         </div>
-                        <span class="incident-arrow"><i class="fas fa-chevron-right"></i></span>
-                    </a>
+                        <span class="incident-arrow"><i class="fas fa-expand"></i></span>
+                    </div>
                 `}).join('')}
             </div>
             <div class="view-all-link">
@@ -532,13 +541,17 @@
             return;
         }
 
+        // Store vulnerabilities for modal access
+        window._owaspData = {};
+        vulns.forEach(vuln => { window._owaspData[vuln.id] = vuln; });
+
         const html = `
             <div class="owasp-grid">
                 ${vulns.map(vuln => {
             const icon = OWASP_ICONS[vuln.id] || 'fa-lock';
-            const linkUrl = vuln.sourceUrl || 'https://owasp.org/www-project-top-10-for-large-language-model-applications/';
             return `
-                    <a href="${linkUrl}" target="_blank" rel="noopener" class="owasp-card">
+                    <div class="owasp-card clickable" data-type="owasp" data-id="${vuln.id}"
+                         onclick="window.showAIModal('owasp', window._owaspData['${vuln.id}'])">
                         <div class="owasp-icon"><i class="fas ${icon}" style="color: #3a86ff;"></i></div>
                         <div class="owasp-rank-badge">#${vuln.rank}</div>
                         <div class="owasp-header">
@@ -548,9 +561,9 @@
                         <div class="owasp-name">${escapeHtml(vuln.name)}</div>
                         <div class="owasp-desc">${escapeHtml(vuln.description || 'Click to view details')}</div>
                         <div class="owasp-footer">
-                            <span class="owasp-link">Learn More <i class="fas fa-external-link-alt"></i></span>
+                            <span class="owasp-link"><i class="fas fa-expand"></i> View Details</span>
                         </div>
-                    </a>
+                    </div>
                 `}).join('')}
             </div>
             <div class="view-all-link owasp-link-color">
@@ -624,6 +637,218 @@
             .map(word => word.charAt(0).toUpperCase() + word.slice(1))
             .join(' ');
     }
+
+    // ══════════════════════════════════════════════════════════════════
+    // AI Security Modal System
+    // ══════════════════════════════════════════════════════════════════
+
+    // Create modal HTML if it doesn't exist
+    function ensureModalExists() {
+        if (document.getElementById('aiSecurityModal')) return;
+
+        const modalHTML = `
+            <div id="aiSecurityModal" class="ai-modal" style="display: none;">
+                <div class="ai-modal-backdrop"></div>
+                <div class="ai-modal-container">
+                    <div class="ai-modal-header">
+                        <div class="ai-modal-icon" id="aiModalIcon"></div>
+                        <div class="ai-modal-title-area">
+                            <span class="ai-modal-badge" id="aiModalBadge"></span>
+                            <h2 id="aiModalTitle"></h2>
+                        </div>
+                        <button class="ai-modal-close" onclick="window.closeAIModal()">&times;</button>
+                    </div>
+                    <div class="ai-modal-body" id="aiModalBody"></div>
+                    <div class="ai-modal-footer">
+                        <button class="ai-modal-btn secondary" onclick="window.closeAIModal()">
+                            <i class="fas fa-times"></i> Close
+                        </button>
+                        <a id="aiModalSourceLink" href="#" target="_blank" rel="noopener" class="ai-modal-btn primary">
+                            <i class="fas fa-external-link-alt"></i> View Source
+                        </a>
+                    </div>
+                </div>
+            </div>
+        `;
+        document.body.insertAdjacentHTML('beforeend', modalHTML);
+
+        // Close on backdrop click
+        document.querySelector('.ai-modal-backdrop').addEventListener('click', window.closeAIModal);
+
+        // Close on ESC key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') window.closeAIModal();
+        });
+    }
+
+    // Show modal with data
+    window.showAIModal = function (type, data) {
+        ensureModalExists();
+
+        const modal = document.getElementById('aiSecurityModal');
+        const icon = document.getElementById('aiModalIcon');
+        const badge = document.getElementById('aiModalBadge');
+        const title = document.getElementById('aiModalTitle');
+        const body = document.getElementById('aiModalBody');
+        const sourceLink = document.getElementById('aiModalSourceLink');
+
+        let iconClass = 'fa-info-circle';
+        let iconColor = '#9d4edd';
+        let sourceUrl = '#';
+        let bodyContent = '';
+
+        if (type === 'atlas') {
+            iconClass = 'fa-crosshairs';
+            iconColor = '#9d4edd';
+            sourceUrl = `https://atlas.mitre.org/techniques/${data.id}`;
+            badge.textContent = data.id;
+            badge.className = 'ai-modal-badge atlas';
+            title.textContent = data.name;
+
+            bodyContent = `
+                <div class="ai-modal-section">
+                    <div class="ai-modal-meta">
+                        <span class="severity-badge ${data.severity || 'medium'}">${(data.severity || 'medium').toUpperCase()}</span>
+                        ${data.tactic ? `<span class="tactic-badge"><i class="fas fa-chess"></i> ${data.tactic}</span>` : ''}
+                    </div>
+                </div>
+                
+                <div class="ai-modal-section">
+                    <h3><i class="fas fa-align-left"></i> Description</h3>
+                    <p>${escapeHtml(data.description) || 'No description available. Click "View Source" to see full details on MITRE ATLAS.'}</p>
+                </div>
+                
+                ${data.examples ? `
+                <div class="ai-modal-section">
+                    <h3><i class="fas fa-flask"></i> Examples</h3>
+                    <ul class="ai-modal-list">
+                        ${data.examples.map(ex => `<li>${escapeHtml(ex)}</li>`).join('')}
+                    </ul>
+                </div>
+                ` : ''}
+                
+                ${data.mitigations ? `
+                <div class="ai-modal-section">
+                    <h3><i class="fas fa-shield-alt"></i> Mitigations</h3>
+                    <ul class="ai-modal-list">
+                        ${data.mitigations.map(m => `<li>${escapeHtml(m)}</li>`).join('')}
+                    </ul>
+                </div>
+                ` : ''}
+                
+                <div class="ai-modal-info">
+                    <i class="fas fa-info-circle"></i> 
+                    This technique is part of the MITRE ATLAS framework for AI security threats.
+                </div>
+            `;
+
+        } else if (type === 'incident') {
+            iconClass = CATEGORY_ICONS[data.category] || 'fa-exclamation-triangle';
+            iconColor = '#ff9500';
+            sourceUrl = `https://incidentdatabase.ai/cite/${data.incident_id}`;
+            badge.textContent = data.id;
+            badge.className = 'ai-modal-badge incident';
+            title.textContent = data.title;
+
+            bodyContent = `
+                <div class="ai-modal-section">
+                    <div class="ai-modal-meta">
+                        <span class="severity-badge ${data.severity}">${data.severity.toUpperCase()}</span>
+                        <span class="category-badge"><i class="fas fa-tag"></i> ${formatCategory(data.category)}</span>
+                        <span class="date-badge"><i class="fas fa-calendar"></i> ${data.date}</span>
+                    </div>
+                </div>
+                
+                <div class="ai-modal-section">
+                    <h3><i class="fas fa-align-left"></i> Incident Summary</h3>
+                    <p>${escapeHtml(data.description) || 'This AI incident was reported to the AI Incident Database. Click "View Source" for full details, reports, and affected systems.'}</p>
+                </div>
+                
+                ${data.deployers ? `
+                <div class="ai-modal-section">
+                    <h3><i class="fas fa-building"></i> Organizations Involved</h3>
+                    <div class="ai-modal-tags">
+                        ${data.deployers.map(d => `<span class="tag">${escapeHtml(d)}</span>`).join('')}
+                    </div>
+                </div>
+                ` : ''}
+                
+                ${data.harmedParties ? `
+                <div class="ai-modal-section">
+                    <h3><i class="fas fa-users"></i> Affected Parties</h3>
+                    <div class="ai-modal-tags">
+                        ${data.harmedParties.map(h => `<span class="tag harm">${escapeHtml(h)}</span>`).join('')}
+                    </div>
+                </div>
+                ` : ''}
+                
+                <div class="ai-modal-info incident">
+                    <i class="fas fa-database"></i> 
+                    Incident #${data.incident_id} from the AI Incident Database
+                </div>
+            `;
+
+        } else if (type === 'owasp') {
+            iconClass = OWASP_ICONS[data.id] || 'fa-lock';
+            iconColor = '#3a86ff';
+            sourceUrl = data.sourceUrl || 'https://owasp.org/www-project-top-10-for-large-language-model-applications/';
+            badge.textContent = `${data.id}:2025`;
+            badge.className = 'ai-modal-badge owasp';
+            title.textContent = data.name;
+
+            bodyContent = `
+                <div class="ai-modal-section">
+                    <div class="ai-modal-meta">
+                        <span class="rank-badge"><i class="fas fa-trophy"></i> #${data.rank} in Top 10</span>
+                        <span class="severity-badge ${data.severity}">${data.severity.toUpperCase()}</span>
+                    </div>
+                </div>
+                
+                <div class="ai-modal-section">
+                    <h3><i class="fas fa-align-left"></i> Description</h3>
+                    <p>${escapeHtml(data.description) || 'No description available.'}</p>
+                </div>
+                
+                ${data.examples ? `
+                <div class="ai-modal-section">
+                    <h3><i class="fas fa-code"></i> Attack Examples</h3>
+                    <ul class="ai-modal-list examples">
+                        ${data.examples.map(ex => `<li>${escapeHtml(ex)}</li>`).join('')}
+                    </ul>
+                </div>
+                ` : ''}
+                
+                ${data.prevention ? `
+                <div class="ai-modal-section">
+                    <h3><i class="fas fa-shield-alt"></i> Prevention Strategies</h3>
+                    <ul class="ai-modal-list prevention">
+                        ${data.prevention.map(p => `<li>${escapeHtml(p)}</li>`).join('')}
+                    </ul>
+                </div>
+                ` : ''}
+                
+                <div class="ai-modal-info owasp">
+                    <i class="fas fa-lock"></i> 
+                    OWASP Top 10 for LLM Applications (2025 Edition)
+                </div>
+            `;
+        }
+
+        icon.innerHTML = `<i class="fas ${iconClass}" style="color: ${iconColor};"></i>`;
+        body.innerHTML = bodyContent;
+        sourceLink.href = sourceUrl;
+
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    };
+
+    window.closeAIModal = function () {
+        const modal = document.getElementById('aiSecurityModal');
+        if (modal) {
+            modal.style.display = 'none';
+            document.body.style.overflow = '';
+        }
+    };
 
     // ══════════════════════════════════════════════════════════════════
     // Public API
