@@ -4,60 +4,53 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Dec 15 2025",
-            "title": "React2Shell Exploits Persist Despite Extensive Vulnerability Exposure",
-            "content": "Exploits targeting the React2Shell vulnerability, designated CVE-2025-55182, continue to be active despite widespread awareness and previous exploitation. This vulnerability affects servers that have not been adequately patched, allowing attackers to execute arbitrary code. Although many vulnerable systems have likely already been compromised, the persistence of exploit attempts suggests ongoing risk for unpatched systems. React2Shell is a remote code execution flaw that has been a significant concern for cybersecurity professionals since its discovery. Organizations should ensure that all systems are updated to mitigate the risk of exploitation. This ongoing threat underscores the importance of timely patch management in cybersecurity defense strategies.",
+            "date": "Dec 16 2025",
+            "title": "ISC Stormcast Provides Latest Cyber Threat Intelligence",
+            "content": "The SANS Internet Storm Center has released its latest Stormcast for December 16, 2025, offering insights into recent cyber threats and vulnerabilities. The InfoCON level remains at green, indicating a stable threat environment. This podcast is a valuable resource for cybersecurity professionals seeking to stay informed about emerging threats and best practices. The Stormcast discusses recent security incidents and provides analysis on the implications for organizations globally. Listeners are encouraged to integrate this intelligence into their security strategies to enhance their defenses against evolving cyber threats.",
             "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32572"
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32574"
         },
         {
-            "date": "Dec 15 2025",
-            "title": "Maritime Cybersecurity Concerns Highlighted by Orange Star Case",
-            "content": "The docking of the Orange Star vessel at Port Elizabeth, carrying vital orange juice concentrate, underscores the vulnerabilities in America&#x27;s maritime cybersecurity. This single ship supplies a significant portion of the city&#x27;s orange juice, revealing the potential impact of a cyberattack on port systems. If these systems were compromised, it could disrupt supply chains and affect retailers significantly. This situation highlights the critical need for enhanced cybersecurity measures in maritime operations to prevent economic and logistical disruptions. The incident serves as a wake-up call for port authorities and related industries to prioritize cybersecurity resilience.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4105838/no-more-orange-juice-why-one-ship-reveals-americas-maritime-cybersecurity-crisis.html"
-        },
-        {
-            "date": "Dec 15 2025",
-            "title": "Google Identifies Additional Chinese Groups Exploiting React2Shell",
-            "content": "Google&#x27;s threat intelligence team has linked five more Chinese hacking groups to the exploitation of the React2Shell vulnerability, CVE-2025-55182. This vulnerability allows for remote code execution and has been rated as maximum severity. The involvement of multiple sophisticated threat actors highlights the widespread interest in exploiting this flaw. Organizations using affected systems should prioritize patching and monitoring for suspicious activity. This development emphasizes the need for robust threat intelligence and international cooperation to combat state-sponsored cyber threats effectively.",
+            "date": "Dec 16 2025",
+            "title": "SoundCloud Suffers Data Breach Impacting User Information",
+            "content": "SoundCloud has confirmed a security breach that resulted in the theft of a database containing user information, causing disruptions to VPN access and platform outages. The breach underscores vulnerabilities in the company&#x27;s data protection measures, affecting millions of users worldwide. SoundCloud has yet to disclose the specific nature of the compromised data, but users are advised to monitor their accounts for suspicious activity. This incident highlights the ongoing challenges faced by digital platforms in safeguarding user data against increasingly sophisticated cyber threats. SoundCloud is working to restore full service and enhance its security protocols.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/google-links-more-chinese-hacking-groups-to-react2shell-attacks/"
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/soundcloud-confirms-breach-after-member-data-stolen-vpn-access-disrupted/"
         },
         {
             "date": "Dec 15 2025",
-            "title": "Critical Software Vulnerabilities Exploited in Latest Cybersecurity Wave",
-            "content": "A surge in cyberattacks is targeting critical vulnerabilities in widely used software, including Apple devices, WinRAR, and .NET frameworks. These exploits are occurring even before patches are available, putting users at significant risk. The vulnerabilities allow attackers to execute arbitrary code, steal sensitive information, and compromise user privacy. It is crucial for users to stay informed about updates and apply patches as soon as they are released. This wave of attacks highlights the ongoing challenge of securing software against rapidly evolving threats and the importance of proactive cybersecurity measures.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/12/weekly-recap-apple-0-days-winrar.html"
+            "title": "Google to Discontinue Dark Web Report Tool in January",
+            "content": "Google has announced the discontinuation of its &quot;dark web report&quot; tool, effective January, as the company shifts focus to other security initiatives. The tool, designed to alert users if their data appeared on the dark web, will no longer be available, prompting users to seek alternative monitoring solutions. Google&#x27;s decision reflects a strategic pivot towards developing tools deemed more effective in protecting user privacy and security. Users of the dark web report are encouraged to explore third-party services to maintain vigilance over their personal data exposure. This move signals Google&#x27;s ongoing reassessment of its cybersecurity offerings.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/google/google-is-shutting-down-its-dark-web-report-feature-in-january/"
         },
         {
             "date": "Dec 15 2025",
-            "title": "ShadyPanda Campaign Exposes Risks of Browser Extensions",
-            "content": "The ShadyPanda cybercrime campaign has revealed significant risks associated with browser extensions, specifically targeting Chrome and Edge. Over seven years, the threat group behind ShadyPanda published or acquired extensions that appeared harmless but were later used for malicious purposes. These extensions can compromise user data and privacy, emphasizing the need for caution when installing browser add-ons. Users should regularly review and manage their installed extensions, removing those that are unnecessary or suspicious. This incident serves as a reminder of the potential dangers lurking in seemingly benign software components.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/12/a-browser-extension-risk-guide-after.html"
+            "title": "Askul Corporation Confirms Massive Data Breach in Ransomware Attack",
+            "content": "Askul Corporation, a major Japanese e-commerce firm, has confirmed the theft of approximately 740,000 customer records following a ransomware attack by the RansomHouse group. The breach, which occurred in October, exposed sensitive customer information, raising concerns over data privacy and security. Askul is currently working with cybersecurity experts to mitigate the impact and secure its systems against future attacks. Customers are advised to change passwords and monitor their accounts for unusual activity. This incident highlights the persistent threat of ransomware attacks on large corporations and the need for robust cybersecurity measures.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/askul-confirms-theft-of-740k-customer-records-in-ransomhouse-attack/"
         },
         {
             "date": "Dec 15 2025",
-            "title": "CISA Urges Immediate Action on GeoServer Vulnerability",
-            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has issued an urgent directive for federal agencies to patch a critical vulnerability in GeoServer, tracked as CVE-2025-58360. This flaw is an unauthenticated XML External Entity (XXE) vulnerability affecting versions 2.26.1 and earlier, allowing attackers to access sensitive data. The active exploitation of this vulnerability necessitates immediate action to protect affected systems. Organizations using GeoServer should apply the recommended patches without delay. This directive highlights the critical nature of timely vulnerability management in safeguarding sensitive infrastructure.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4106332/cisa-orders-immediate-patching-as-geoserver-flaw-faces-active-exploitation.html"
+            "title": "SantaStealer Malware Targets Browsers and Cryptocurrency Wallets",
+            "content": "A new malware-as-a-service offering, SantaStealer, is being promoted on Telegram and hacker forums, targeting data stored in web browsers and cryptocurrency wallets. Operating in memory to evade traditional file-based detection, SantaStealer poses a significant threat to users who store sensitive information in their browsers. The malware&#x27;s emergence underscores the growing sophistication of malware services available to cybercriminals. Users are advised to enhance their security measures, including using hardware wallets for cryptocurrency and employing advanced anti-malware solutions. This development reflects the increasing commodification of cyber threats in underground markets.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-santastealer-malware-steals-data-from-browsers-crypto-wallets/"
         },
         {
             "date": "Dec 15 2025",
-            "title": "Soverli Secures $2.6 Million for Innovative Secure Smartphone OS",
-            "content": "Soverli has raised $2.6 million in funding to develop a secure smartphone operating system that can run alongside Android or iOS. This OS allows users to switch between secure, isolated environments, enhancing privacy and security. The funding will support further development and deployment of this innovative solution. The secure OS is designed to address growing concerns over mobile security and data privacy. This development is significant for users seeking enhanced protection against increasingly sophisticated mobile threats. Soverli&#x27;s approach offers a promising alternative for privacy-conscious consumers and enterprises.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/soverli-raises-2-6-million-for-secure-smartphone-os/"
+            "title": "PornHub Faces Extortion After Premium Member Data Breach",
+            "content": "PornHub is under extortion threats from the ShinyHunters gang following the theft of Premium members&#x27; search and watch history in a Mixpanel data breach. The breach exposes the sensitive viewing habits of users, presenting significant privacy concerns. PornHub is investigating the breach and working to enhance its data security measures to prevent future incidents. Affected users are urged to review their account settings and consider additional privacy protections. This incident highlights the risks associated with data collection and the potential for exploitation by malicious actors.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/pornhub-extorted-after-hackers-steal-premium-member-activity-data/"
         },
         {
             "date": "Dec 15 2025",
-            "title": "ISC Stormcast Highlights Cybersecurity Trends for December 15th",
-            "content": "The SANS Internet Storm Center has released its latest Stormcast, providing insights into current cybersecurity trends and threats as of December 15th, 2025. The InfoCON remains at green, indicating a stable threat environment. The podcast covers various topics, including recent vulnerabilities and patches, emphasizing the importance of staying informed on emerging threats. Security professionals are encouraged to review the podcast for detailed analysis and recommendations. This resource is part of SANS&#x27; ongoing efforts to keep the cybersecurity community updated on potential risks and mitigation strategies.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32570"
+            "title": "Apple Patches New Zero-Day Vulnerabilities Amid Ongoing Threats",
+            "content": "Apple has released patches for two newly discovered zero-day vulnerabilities that were part of a sophisticated attack, following a similar zero-day flaw patched by Google last week. These vulnerabilities affect various Apple devices, posing risks of unauthorized access and data breaches. Users are strongly advised to update their devices to the latest software versions to protect against potential exploits. This marks a continued trend of zero-day vulnerabilities being targeted by advanced threat actors, emphasizing the importance of timely software updates. Apple&#x27;s swift response highlights the company&#x27;s commitment to maintaining device security in the face of evolving cyber threats.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/apple-patches-more-zero-days-sophisticated-attack"
         },
         {
             "date": "May 05 2026",
@@ -69,53 +62,53 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Dec 15 2025",
-            "title": "Mirelo Secures $41M to Address AI Video Sound Synchronization",
-            "content": "Mirelo, a German startup, has raised $41 million in a seed funding round led by Index Ventures and Andreessen Horowitz to develop AI technology that adds synchronized sound effects to videos. This innovation aims to enhance video content by seamlessly integrating audio, a challenge that has persisted in AI-generated media. The funding will accelerate Mirelo’s research and development, positioning it to tackle the silent video problem that affects content creators and media platforms globally. By improving audio synchronization, Mirelo’s technology could redefine how creators produce engaging multimedia content. Industry professionals should monitor Mirelo’s progress as it could significantly impact video production workflows.",
+            "date": "Dec 16 2025",
+            "title": "Consumer AI Startups Struggle Without New Personal Devices",
+            "content": "Venture capitalists are expressing skepticism about the longevity of consumer AI startups, citing the lack of a new personal device to drive sustained growth. Despite advances in AI technologies, the market has yet to see a breakthrough device akin to the smartphone or personal computer that can leverage these innovations. This stagnation poses challenges for startups aiming to capture consumer interest and maintain momentum. Industry experts suggest that without such a device, consumer AI applications may struggle to achieve widespread adoption. Startups and investors may need to pivot towards enterprise solutions or focus on creating new hardware to unlock AI&#x27;s full potential.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/15/mirelo-raises-41m-from-index-and-a16z-to-solve-ai-videos-silent-problem/"
+            "sourceUrl": "https://techcrunch.com/2025/12/15/vcs-discuss-why-most-consumer-ai-startups-still-lack-staying-power/"
         },
         {
             "date": "Dec 15 2025",
-            "title": "Walmart Leverages AI to Transform Retail Operations",
-            "content": "Walmart’s recent move to Nasdaq underscores its transition from a traditional discount chain to a tech-driven enterprise utilizing AI to revamp its retail operations. This strategic shift involves deploying AI across inventory management, customer service, and supply chain logistics, aiming to enhance efficiency and customer experience. The retailer&#x27;s initiative reflects a broader trend of major corporations integrating AI to streamline operations and reduce costs. As Walmart continues to implement AI solutions, industry observers should assess the impact on retail sector dynamics and employment. Tech professionals may find opportunities in developing AI systems tailored for large-scale retail environments.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/walmart-ai-strategy-agentic-future/"
+            "title": "Chai Discovery Secures $130M to Revolutionize Drug Discovery with AI",
+            "content": "Chai Discovery, backed by OpenAI, has raised $130 million in a Series B funding round, valuing the biotech firm at $1.3 billion. The company is developing foundation models aimed at predicting molecular interactions, a crucial step in reprogramming molecules for therapeutic purposes. By enhancing the precision of drug discovery, Chai aims to accelerate the development of new cures and treatments. This funding round underscores the growing interest in leveraging AI for biotechnological advancements. Stakeholders in the biotech and pharmaceutical industries should monitor Chai&#x27;s progress as it could significantly impact drug development timelines and efficacy.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/15/openai-backed-biotech-firm-chai-discovery-raises-130m-series-b-at-1-3b-valuation/"
         },
         {
             "date": "Dec 15 2025",
-            "title": "Sam Altman: The Visionary Behind AI&#x27;s Boldest Predictions",
-            "content": "Sam Altman has been a pivotal figure in articulating ambitious visions for AI&#x27;s future capabilities, often influencing Silicon Valley and the broader tech industry. Known for his persuasive advocacy, Altman has consistently pushed the boundaries of what AI can achieve, inspiring both innovation and debate. His influence is evident in the rapid advancements and speculative discussions surrounding AI technologies. As AI continues to evolve, Altman’s contributions serve as a catalyst for both technological progress and ethical considerations. Industry leaders should remain aware of Altman’s perspectives as they shape the discourse and direction of AI development.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2025/12/15/1129169/a-brief-history-of-sam-altmans-hype/"
+            "title": "Disney&#x27;s Exclusive AI Deal with OpenAI Set for One-Year Term",
+            "content": "Disney has signed an exclusive one-year partnership with OpenAI, allowing the entertainment giant to integrate cutting-edge AI technologies into its operations. After this period, Disney will be free to pursue similar agreements with other AI firms, potentially diversifying its technological collaborations. This deal highlights the increasing importance of AI in media and entertainment, where companies seek to enhance content creation and audience engagement. The partnership could lead to innovative AI-driven experiences for Disney&#x27;s vast consumer base. Industry observers should watch for new AI applications in Disney&#x27;s offerings as the collaboration unfolds.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/15/disneys-openai-deal-is-exclusive-for-just-one-year-then-its-open-season/"
         },
         {
             "date": "Dec 15 2025",
-            "title": "AI Doomers Persist Amidst Technological Advancements",
-            "content": "A community of researchers and policy experts, known as AI doomers, maintains a cautious stance on AI&#x27;s potential risks, arguing that advanced AI could pose significant threats to humanity. Despite the rapid progress in AI technologies, this group emphasizes the importance of ethical considerations and regulatory frameworks to mitigate potential dangers. Their concerns highlight the ongoing debate between technological optimism and caution, underscoring the need for balanced AI development. Industry stakeholders should engage with these perspectives to ensure responsible innovation and address societal implications of AI advancements.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2025/12/15/1129171/the-ai-doomers-feel-undeterred/"
+            "title": "Nvidia Expands Open Source AI Capabilities with Key Acquisition",
+            "content": "Nvidia has acquired SchedMD, the primary developer of the Slurm workload manager, and launched the Nemotron 3 family of open source AI models. This strategic move enhances Nvidia&#x27;s open source offerings, providing scalable solutions for AI development and deployment. Slurm is widely used in high-performance computing (HPC) environments, and its integration with Nvidia&#x27;s technologies could streamline AI workloads. The release of Nemotron 3 models further solidifies Nvidia&#x27;s position in the AI ecosystem, offering robust tools for developers. Organizations utilizing HPC and AI should explore Nvidia&#x27;s expanded resources to optimize their operations.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/15/nvidia-bulks-up-open-source-offerings-with-an-acquisition-and-new-open-ai-models/"
         },
         {
             "date": "Dec 15 2025",
-            "title": "The 2025 AI Hype Correction: A Reality Check",
-            "content": "The AI industry is experiencing a recalibration as initial excitement gives way to a more measured understanding of AI capabilities. Following the transformative impact of OpenAI&#x27;s ChatGPT in 2022, the market is now adjusting expectations to align with practical applications and limitations. This recalibration is crucial for sustainable growth and innovation, prompting companies to focus on tangible outcomes rather than speculative promises. As the hype subsides, professionals should prioritize developing robust AI solutions that deliver real-world value. This shift underscores the importance of realistic assessments in driving meaningful technological progress.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2025/12/15/1129174/the-great-ai-hype-correction-of-2025/"
+            "title": "Creative Commons Supports AI Pay-to-Crawl Systems with Guidelines",
+            "content": "Creative Commons has announced tentative support for AI pay-to-crawl systems, proposing several guiding principles for their implementation. These systems would create a marketplace for AI training data, compensating content creators for the use of their work. The organization emphasizes transparency, fairness, and accessibility as key components of any pay-to-crawl framework. This development could reshape the data acquisition landscape for AI models, impacting both developers and content providers. Professionals in AI and digital rights should consider the implications of such systems on data availability and ethical AI practices.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/15/creative-commons-announces-tentative-support-for-ai-pay-to-crawl-systems/"
         },
         {
             "date": "Dec 15 2025",
-            "title": "Generative AI&#x27;s Spectacle Overshadows Crucial Breakthroughs",
-            "content": "The fascination with generative AI, exemplified by a 2022 concert featuring a digital performance by Paul McCartney and a virtual John Lennon, has overshadowed more impactful AI advancements. While such applications captivate audiences, they divert attention from AI technologies that address critical challenges in healthcare, climate change, and other sectors. Industry professionals should balance interest in generative AI with a focus on innovations that offer significant societal benefits. By redirecting attention to these breakthroughs, the tech community can harness AI&#x27;s full potential to address pressing global issues.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2025/12/15/1129179/generative-ai-hype-distracts-us-from-ais-more-important-breakthroughs/"
+            "title": "Lightspeed Ventures Raises $9B to Fuel AI Startup Investments",
+            "content": "Lightspeed Ventures has raised a record $9 billion in fresh capital, positioning itself to significantly impact the AI startup ecosystem. This substantial fund will enable the firm to invest heavily in AI companies, particularly those requiring substantial financial backing for growth and innovation. The influx of capital highlights the escalating demand for AI-driven solutions across various industries. Investors and entrepreneurs should expect increased competition and opportunities in the AI sector as Lightspeed deploys its resources. The firm&#x27;s strategic investments could accelerate technological advancements and market expansion for AI startups.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/15/lightspeed-raises-record-9b-in-fresh-capital/"
         },
         {
             "date": "Dec 15 2025",
-            "title": "AI&#x27;s Impact on Legal Careers: A Reassuring Outlook",
-            "content": "Despite initial concerns, the adoption of generative AI in the legal sector has not led to widespread job displacement among lawyers. As AI tools become integrated into legal workflows, they are enhancing rather than replacing human expertise, offering support in research, document review, and case analysis. This development highlights the complementary role of AI in augmenting professional capabilities rather than rendering them obsolete. Legal professionals should embrace AI as a tool for increased efficiency and accuracy. The evolving landscape presents opportunities for specialization in AI-enhanced legal practices, ensuring continued relevance in the field.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2025/12/15/1129181/ai-might-not-be-coming-for-lawyers-jobs-anytime-soon/"
+            "title": "Korean Startup Motif Shares Key Insights on Training Enterprise LLMs",
+            "content": "Korean AI startup Motif has revealed four critical lessons for training large language models (LLMs) in enterprise settings, contributing to the ongoing global AI race. The company emphasizes the importance of data quality, scalability, domain specificity, and ethical considerations in LLM development. Motif&#x27;s insights are particularly relevant as the U.S. and China continue to dominate the AI landscape, with notable contributions from Canada and France. Enterprises looking to implement LLMs should heed these lessons to enhance model performance and ensure responsible AI deployment. Motif&#x27;s experience underscores the potential for emerging markets to influence AI advancements.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/ai/korean-ai-startup-motif-reveals-4-big-lessons-for-training-enterprise-llms"
         }
     ],
     "articles": {},
@@ -180,6 +173,28 @@ const websiteContent = {
     },
     "recentCVEs": [
         {
+            "cveId": "CVE-2025-14611",
+            "dateAdded": "Dec 15, 2025",
+            "vendor": "Gladinet CentreStack and Triofox",
+            "description": "Gladinet CentreStack and TrioFox contain a hardcoded cryptographic keys vulnerability for their implementation of the AES cryptoscheme. This vulnerability degrades security for public exposed endpoint",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-14611",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2025-43529",
+            "dateAdded": "Dec 15, 2025",
+            "vendor": "Apple Multiple Products",
+            "description": "Apple iOS, iPadOS, macOS, and other Apple products contain a use-after-free vulnerability in WebKit. Processing maliciously crafted web content may lead to memory corruption. This vulnerability could",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-43529",
+            "isZeroDay": false
+        },
+        {
             "cveId": "CVE-2018-4063",
             "dateAdded": "Dec 12, 2025",
             "vendor": "Sierra Wireless AirLink ALEOS",
@@ -210,28 +225,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-58360",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-6218",
-            "dateAdded": "Dec 09, 2025",
-            "vendor": "RARLAB WinRAR",
-            "description": "RARLAB WinRAR contains a path traversal vulnerability allowing an attacker to execute code in the context of the current user.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-6218",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-62221",
-            "dateAdded": "Dec 09, 2025",
-            "vendor": "Microsoft Windows",
-            "description": "Microsoft Windows Cloud Files Mini Filter Driver contains a use after free vulnerability that can allow an authorized attacker to elevate privileges locally.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-62221",
             "isZeroDay": false
         }
     ],
