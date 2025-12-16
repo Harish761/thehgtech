@@ -313,7 +313,7 @@
         }
 
         const html = aiThreats.map((threat, index) => `
-            <a href="${threat.url}" target="_blank" rel="noopener" class="threat-item" data-type="${threat.type}">
+            <div class="threat-item clickable" data-type="${threat.type}" onclick="window.openTopThreatModal(${index})">
                 <div class="threat-rank ${threat.severity}">${index + 1}</div>
                 <div class="threat-icon ${threat.type}">
                     <i class="fas ${threat.icon}" style="color: ${threat.iconColor};"></i>
@@ -327,12 +327,60 @@
                         <span><i class="fas fa-calendar-alt"></i> ${threat.details}</span>
                     </div>
                 </div>
-                <div class="threat-arrow"><i class="fas fa-chevron-right"></i></div>
-            </a>
+                <div class="threat-arrow"><i class="fas fa-expand"></i></div>
+            </div>
         `).join('');
 
         container.innerHTML = html;
     }
+
+    // Store references for Top AI Threats modal
+    function getTopThreatModalData(threatIndex) {
+        const aiThreats = generateAIThreats();
+        if (!aiThreats[threatIndex]) return null;
+
+        const threat = aiThreats[threatIndex];
+
+        // Map threat to modal data based on type
+        if (threat.type === 'ai_incident' && aiData.aiid?.incidents) {
+            const incident = aiData.aiid.incidents.find(i =>
+                threat.name === i.title
+            );
+            if (incident) {
+                window.showAIModal('incident', incident);
+                return;
+            }
+        }
+
+        if (threat.type === 'ai_technique') {
+            // Check if it's ATLAS
+            if (threat.source === 'MITRE ATLAS' && aiData.atlas?.techniques) {
+                const tech = aiData.atlas.techniques.find(t =>
+                    threat.name.includes(t.id) || threat.name.includes(t.name)
+                );
+                if (tech) {
+                    window.showAIModal('atlas', tech);
+                    return;
+                }
+            }
+            // Check if it's OWASP
+            if (threat.source === 'OWASP LLM' && aiData.owasp?.vulnerabilities) {
+                const vuln = aiData.owasp.vulnerabilities.find(v =>
+                    threat.name.includes(v.id) || threat.name.includes(v.name)
+                );
+                if (vuln) {
+                    window.showAIModal('owasp', vuln);
+                    return;
+                }
+            }
+        }
+
+        // Fallback: open external link
+        window.open(threat.url, '_blank');
+    }
+
+    // Expose for onclick
+    window.openTopThreatModal = getTopThreatModalData;
 
     function generateAIThreats() {
         const threats = [];

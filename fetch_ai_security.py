@@ -105,7 +105,7 @@ def fetch_mitre_atlas():
                     tactics.append({
                         'id': tactic.get('id', ''),
                         'name': tactic.get('name', ''),
-                        'description': tactic.get('description', '')[:300] + '...' if len(tactic.get('description', '')) > 300 else tactic.get('description', ''),
+                        'description': tactic.get('description', ''),
                         'type': 'tactic'
                     })
                 
@@ -114,7 +114,7 @@ def fetch_mitre_atlas():
                     techniques.append({
                         'id': technique.get('id', ''),
                         'name': technique.get('name', ''),
-                        'description': technique.get('description', '')[:300] + '...' if len(technique.get('description', '')) > 300 else technique.get('description', ''),
+                        'description': technique.get('description', ''),
                         'tactic': technique.get('tactic', ''),
                         'type': 'technique',
                         'severity': classify_technique_severity(technique.get('name', ''))
@@ -336,7 +336,7 @@ def fetch_owasp_llm():
                 
                 # Extract description (first paragraph after ## Description)
                 desc_match = re.search(r'### Description\n\n(.+?)(?=\n\n###|\n\n##|$)', content, re.DOTALL)
-                description = desc_match.group(1).strip()[:300] + '...' if desc_match else ''
+                description = desc_match.group(1).strip() if desc_match else ''
                 
                 # Extract prevention strategies count
                 prevention_count = content.count('####')

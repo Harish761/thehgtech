@@ -1,101 +1,101 @@
 {
   "version": "5.1.1",
-  "name": "Adversarial Threat Landscape for AI Systems",
+  "name": "MITRE ATLAS",
   "tactics": [
     {
       "id": "AML.TA0002",
       "name": "Reconnaissance",
-      "description": "The adversary is trying to gather information about the AI system they can use to plan future operations.\n\nReconnaissance consists of techniques that involve adversaries actively or passively gathering information that can be used to support targeting.\nSuch information may include details of the vic...",
+      "description": "",
       "type": "tactic"
     },
     {
       "id": "AML.TA0003",
       "name": "Resource Development",
-      "description": "The adversary is trying to establish resources they can use to support operations.\n\nResource Development consists of techniques that involve adversaries creating,\npurchasing, or compromising/stealing resources that can be used to support targeting.\nSuch resources include AI artifacts, infrastructure...",
+      "description": "",
       "type": "tactic"
     },
     {
       "id": "AML.TA0004",
       "name": "Initial Access",
-      "description": "The adversary is trying to gain access to the AI system.\n\nThe target system could be a network, mobile device, or an edge device such as a sensor platform.\nThe AI capabilities used by the system could be local with onboard or cloud-enabled AI capabilities.\n\nInitial Access consists of techniques that...",
+      "description": "",
       "type": "tactic"
     },
     {
       "id": "AML.TA0000",
       "name": "AI Model Access",
-      "description": "The adversary is attempting to gain some level of access to an AI model.\n\nAI Model Access enables techniques that use various types of access to the AI model that can be used by the adversary to gain information, develop attacks, and as a means to input data to the model.\nThe level of access can ran...",
+      "description": "",
       "type": "tactic"
     },
     {
       "id": "AML.TA0005",
       "name": "Execution",
-      "description": "The adversary is trying to run malicious code embedded in AI artifacts or software.\n\nExecution consists of techniques that result in adversary-controlled code running on a local or remote system.\nTechniques that run malicious code are often paired with techniques from all other tactics to achieve br...",
+      "description": "",
       "type": "tactic"
     },
     {
       "id": "AML.TA0006",
       "name": "Persistence",
-      "description": "The adversary is trying to maintain their foothold via AI artifacts or software.\n\nPersistence consists of techniques that adversaries use to keep access to systems across restarts, changed credentials, and other interruptions that could cut off their access.\nTechniques used for persistence often inv...",
+      "description": "",
       "type": "tactic"
     },
     {
       "id": "AML.TA0012",
       "name": "Privilege Escalation",
-      "description": "The adversary is trying to gain higher-level permissions.\n\nPrivilege Escalation consists of techniques that adversaries use to gain higher-level permissions on a system or network. Adversaries can often enter and explore a network with unprivileged access but require elevated permissions to follow t...",
+      "description": "",
       "type": "tactic"
     },
     {
       "id": "AML.TA0007",
       "name": "Defense Evasion",
-      "description": "The adversary is trying to avoid being detected by AI-enabled security software.\n\nDefense Evasion consists of techniques that adversaries use to avoid detection throughout their compromise.\nTechniques used for defense evasion include evading AI-enabled security software such as malware detectors.",
+      "description": "",
       "type": "tactic"
     },
     {
       "id": "AML.TA0013",
       "name": "Credential Access",
-      "description": "The adversary is trying to steal account names and passwords.\n\nCredential Access consists of techniques for stealing credentials like account names and passwords. Techniques used to get credentials include keylogging or credential dumping. Using legitimate credentials can give adversaries access to ...",
+      "description": "",
       "type": "tactic"
     },
     {
       "id": "AML.TA0008",
       "name": "Discovery",
-      "description": "The adversary is trying to figure out your AI environment.\n\nDiscovery consists of techniques an adversary may use to gain knowledge about the system and internal network.\nThese techniques help adversaries observe the environment and orient themselves before deciding how to act.\nThey also allow adver...",
+      "description": "",
       "type": "tactic"
     },
     {
       "id": "AML.TA0015",
       "name": "Lateral Movement",
-      "description": "The adversary is trying to move through your AI environment.\n\nLateral Movement consists of techniques that adversaries may use to gain access to and control other systems or components in the environment. Adversaries may pivot towards AI Ops infrastructure such as model registries, experiment tracke...",
+      "description": "",
       "type": "tactic"
     },
     {
       "id": "AML.TA0009",
       "name": "Collection",
-      "description": "The adversary is trying to gather AI artifacts and other related information relevant to their goal.\n\nCollection consists of techniques adversaries may use to gather information and the sources information is collected from that are relevant to following through on the adversary's objectives.\nFreque...",
+      "description": "",
       "type": "tactic"
     },
     {
       "id": "AML.TA0001",
       "name": "AI Attack Staging",
-      "description": "The adversary is leveraging their knowledge of and access to the target system to tailor the attack.\n\nAI Attack Staging consists of techniques adversaries use to prepare their attack on the target AI model.\nTechniques can include training proxy models, poisoning the target model, and crafting advers...",
+      "description": "",
       "type": "tactic"
     },
     {
       "id": "AML.TA0014",
       "name": "Command and Control",
-      "description": "The adversary is trying to communicate with compromised AI systems to control them.\n\nCommand and Control consists of techniques that adversaries may use to communicate with systems under their control within a victim network. Adversaries commonly attempt to mimic normal, expected traffic to avoid de...",
+      "description": "",
       "type": "tactic"
     },
     {
       "id": "AML.TA0010",
       "name": "Exfiltration",
-      "description": "The adversary is trying to steal AI artifacts or other information about the AI system.\n\nExfiltration consists of techniques that adversaries may use to steal data from your network.\nData may be stolen for its valuable intellectual property, or for use in staging future operations.\n\nTechniques for g...",
+      "description": "",
       "type": "tactic"
     },
     {
       "id": "AML.TA0011",
       "name": "Impact",
-      "description": "The adversary is trying to manipulate, interrupt, erode confidence in, or destroy your AI systems and data.\n\nImpact consists of techniques that adversaries use to disrupt availability or compromise integrity by manipulating business and operational processes.\nTechniques used for impact can include d...",
+      "description": "",
       "type": "tactic"
     }
   ],
@@ -103,31 +103,7 @@
     {
       "id": "AML.T0000",
       "name": "Search Open Technical Databases",
-      "description": "Adversaries may search for publicly available research and technical documentation to learn how and where AI is used within a victim organization.\nThe adversary can use this information to identify targets for attack, or to tailor an existing attack to make it more effective.\nOrganizations often use...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0000.000",
-      "name": "Journals and Conference Proceedings",
-      "description": "Many of the publications accepted at premier artificial intelligence conferences and journals come from commercial labs.\nSome journals and conferences are open access, others may require paying for access or a membership.\nThese publications will often describe in detail all aspects of a particular a...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0000.001",
-      "name": "Pre-Print Repositories",
-      "description": "Pre-Print repositories, such as arXiv, contain the latest academic research papers that haven't been peer reviewed.\nThey may contain research notes, or technical reports that aren't typically published in journals or conference proceedings.\nPre-print repositories also serve as a central location to ...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0000.002",
-      "name": "Technical Blogs",
-      "description": "Research labs at academic institutions and company R&D divisions often have blogs that highlight their use of artificial intelligence and its application to the organization's unique problems.\nIndividual researchers also frequently document their work in blogposts.\nAn adversary may search for posts ...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -135,7 +111,7 @@
     {
       "id": "AML.T0001",
       "name": "Search Open AI Vulnerability Analysis",
-      "description": "Much like the [Search Open Technical Databases](/techniques/AML.T0000), there is often ample research available on the vulnerabilities of common AI models. Once a target has been identified, an adversary will likely try to identify any pre-existing work that has been done for this class of models.\nT...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -143,7 +119,7 @@
     {
       "id": "AML.T0003",
       "name": "Search Victim-Owned Websites",
-      "description": "Adversaries may search websites owned by the victim for information that can be used during targeting.\nVictim-owned websites may contain technical details about their AI-enabled products or services.\nVictim-owned websites may contain a variety of details, including names of departments/divisions, ph...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -151,7 +127,7 @@
     {
       "id": "AML.T0004",
       "name": "Search Application Repositories",
-      "description": "Adversaries may search open application repositories during targeting.\nExamples of these include Google Play, the iOS App store, the macOS App Store, and the Microsoft Store.\n\nAdversaries may craft search queries seeking applications that contain AI-enabled components.\nFrequently, the next step is t...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -159,7 +135,7 @@
     {
       "id": "AML.T0006",
       "name": "Active Scanning",
-      "description": "An adversary may probe or scan the victim system to gather information for targeting. This is distinct from other reconnaissance techniques that do not involve direct interaction with the victim system.\n\nAdversaries may scan for open ports on a potential victim's network, which can indicate specific...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -167,23 +143,7 @@
     {
       "id": "AML.T0002",
       "name": "Acquire Public AI Artifacts",
-      "description": "Adversaries may search public sources, including cloud storage, public-facing services, and software or data repositories, to identify AI artifacts.\nThese AI artifacts may include the software stack used to train and deploy models, training and testing data, model configurations and parameters.\nAn a...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0002.000",
-      "name": "Datasets",
-      "description": "Adversaries may collect public datasets to use in their operations.\nDatasets used by the victim organization or datasets that are representative of the data used by the victim organization may be valuable to adversaries.\nDatasets can be stored in cloud storage, or on victim-owned websites.\nSome data...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0002.001",
-      "name": "Models",
-      "description": "Adversaries may acquire public models to use in their operations.\nAdversaries may seek models used by the victim organization or models that are representative of those used by the victim organization.\nRepresentative models may include model architectures, or pre-trained models which define the arch...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -191,23 +151,7 @@
     {
       "id": "AML.T0016",
       "name": "Obtain Capabilities",
-      "description": "Adversaries may search for and obtain software capabilities for use in their operations.\nCapabilities may be specific to AI-based attacks [Adversarial AI Attack Implementations](/techniques/AML.T0016.000) or generic software tools repurposed for malicious intent ([Software Tools](/techniques/AML.T00...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0016.000",
-      "name": "Adversarial AI Attack Implementations",
-      "description": "Adversaries may search for existing open source implementations of AI attacks. The research community often publishes their code for reproducibility and to further future research. Libraries intended for research purposes, such as CleverHans, the Adversarial Robustness Toolbox, and FoolBox, can be w...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0016.001",
-      "name": "Software Tools",
-      "description": "Adversaries may search for and obtain software tools to support their operations.\nSoftware designed for legitimate use may be repurposed by an adversary for malicious intent.\nAn adversary may modify or customize software tools to achieve their purpose.\nSoftware tools used to support attacks on AI sy...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -215,15 +159,7 @@
     {
       "id": "AML.T0017",
       "name": "Develop Capabilities",
-      "description": "Adversaries may develop their own capabilities to support operations. This process encompasses identifying requirements, building solutions, and deploying capabilities. Capabilities used to support attacks on AI-enabled systems are not necessarily AI-based themselves. Examples include setting up web...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0017.000",
-      "name": "Adversarial AI Attacks",
-      "description": "Adversaries may develop their own adversarial attacks.\nThey may leverage existing libraries as a starting point ([Adversarial AI Attack Implementations](/techniques/AML.T0016.000)).\nThey may implement ideas described in public research papers or develop custom made attacks for the victim model.\n",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -231,23 +167,7 @@
     {
       "id": "AML.T0008",
       "name": "Acquire Infrastructure",
-      "description": "Adversaries may buy, lease, or rent infrastructure for use throughout their operation.\nA wide variety of infrastructure exists for hosting and orchestrating adversary operations.\nInfrastructure solutions include physical or cloud servers, domains, mobile devices, and third-party web services.\nFree r...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0008.000",
-      "name": "AI Development Workspaces",
-      "description": "Developing and staging AI attacks often requires expensive compute resources.\nAdversaries may need access to one or many GPUs in order to develop an attack.\nThey may try to anonymously use free resources such as Google Colaboratory, or cloud resources such as AWS, Azure, or Google Cloud as an effici...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0008.001",
-      "name": "Consumer Hardware",
-      "description": "Adversaries may acquire consumer hardware to conduct their attacks.\nOwning the hardware provides the adversary with complete control of the environment. These devices can be hard to trace.\n",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -255,7 +175,7 @@
     {
       "id": "AML.T0019",
       "name": "Publish Poisoned Datasets",
-      "description": "Adversaries may [Poison Training Data](/techniques/AML.T0020) and publish it to a public location.\nThe poisoned dataset may be a novel dataset or a poisoned variant of an existing open source dataset.\nThis data may be introduced to a victim system via [AI Supply Chain Compromise](/techniques/AML.T00...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "high"
@@ -263,39 +183,7 @@
     {
       "id": "AML.T0010",
       "name": "AI Supply Chain Compromise",
-      "description": "Adversaries may gain initial access to a system by compromising the unique portions of the AI supply chain.\nThis could include [Hardware](/techniques/AML.T0010.000), [Data](/techniques/AML.T0010.002) and its annotations, parts of the AI [AI Software](/techniques/AML.T0010.001) stack, or the [Model](...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0010.000",
-      "name": "Hardware",
-      "description": "Adversaries may target AI systems by disrupting or manipulating the hardware supply chain. AI models often run on specialized hardware such as GPUs, TPUs, or embedded devices, but may also be optimized to operate on CPUs.",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0010.001",
-      "name": "AI Software",
-      "description": "Most AI systems rely on a limited set of AI frameworks.\nAn adversary could get access to a large number of AI systems through a comprise of one of their supply chains.\nMany AI projects also rely on other open source implementations of various algorithms.\nThese can also be compromised in a targeted w...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0010.002",
-      "name": "Data",
-      "description": "Data is a key vector of supply chain compromise for adversaries.\nEvery AI project will require some form of data.\nMany rely on large open source datasets that are publicly available.\nAn adversary could rely on compromising these sources of data.\nThe malicious data could be a result of [Poison Traini...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0010.003",
-      "name": "Model",
-      "description": "AI-enabled systems often rely on open sourced models in various ways.\nMost commonly, the victim organization may be using these models for fine tuning.\nThese models will be downloaded from an external source and then used as the base for the model as it is tuned on a smaller, private dataset.\nLoadin...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -303,7 +191,7 @@
     {
       "id": "AML.T0040",
       "name": "AI Model Inference API Access",
-      "description": "Adversaries may gain access to a model via legitimate access to the inference API.\nInference API access can be a source of information to the adversary ([Discover AI Model Ontology](/techniques/AML.T0013), [Discover AI Model Family](/techniques/AML.T0014)), a means of staging the attack ([Verify Att...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -311,7 +199,7 @@
     {
       "id": "AML.T0047",
       "name": "AI-Enabled Product or Service",
-      "description": "Adversaries may use a product or service that uses artificial intelligence under the hood to gain access to the underlying AI model.\nThis type of indirect model access may reveal details of the AI model or its inferences in logs or metadata.",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -319,7 +207,7 @@
     {
       "id": "AML.T0041",
       "name": "Physical Environment Access",
-      "description": "In addition to the attacks that take place purely in the digital domain, adversaries may also exploit the physical environment for their attacks.\nIf the model is interacting with data collected from the real world in some way, the adversary can influence the model through access to wherever the data...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -327,7 +215,7 @@
     {
       "id": "AML.T0044",
       "name": "Full AI Model Access",
-      "description": "Adversaries may gain full \"white-box\" access to an AI model.\nThis means the adversary has complete knowledge of the model architecture, its parameters, and class ontology.\nThey may exfiltrate the model to [Craft Adversarial Data](/techniques/AML.T0043) and [Verify Attack](/techniques/AML.T0042) in a...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -335,7 +223,7 @@
     {
       "id": "AML.T0013",
       "name": "Discover AI Model Ontology",
-      "description": "Adversaries may discover the ontology of an AI model's output space, for example, the types of objects a model can detect.\nThe adversary may discovery the ontology by repeated queries to the model, forcing it to enumerate its output space.\nOr the ontology may be discovered in a configuration file or...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -343,7 +231,7 @@
     {
       "id": "AML.T0014",
       "name": "Discover AI Model Family",
-      "description": "Adversaries may discover the general family of model.\nGeneral information about the model may be revealed in documentation, or the adversary may use carefully constructed examples and analyze the model's responses to categorize it.\n\nKnowledge of the model family can help the adversary identify means...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -351,7 +239,7 @@
     {
       "id": "AML.T0020",
       "name": "Poison Training Data",
-      "description": "Adversaries may attempt to poison datasets used by an AI model by modifying the underlying data or its labels.\nThis allows the adversary to embed vulnerabilities in AI models trained on the data that may not be easily detectable.\nData poisoning attacks may or may not require modifying the labels.\nTh...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "high"
@@ -359,7 +247,7 @@
     {
       "id": "AML.T0021",
       "name": "Establish Accounts",
-      "description": "Adversaries may create accounts with various services for use in targeting, to gain access to resources needed in [AI Attack Staging](/tactics/AML.TA0001), or for victim impersonation.\n",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -367,31 +255,7 @@
     {
       "id": "AML.T0005",
       "name": "Create Proxy AI Model",
-      "description": "Adversaries may obtain models to serve as proxies for the target model in use at the victim organization.\nProxy models are used to simulate complete access to the target model in a fully offline manner.\n\nAdversaries may train models from representative datasets, attempt to replicate models from vict...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0005.000",
-      "name": "Train Proxy via Gathered AI Artifacts",
-      "description": "Proxy models may be trained from AI artifacts (such as data, model architectures, and pre-trained models) that are representative of the target model gathered by the adversary.\nThis can be used to develop attacks that require higher levels of access than the adversary has available or as a means to ...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0005.001",
-      "name": "Train Proxy via Replication",
-      "description": "Adversaries may replicate a private model.\nBy repeatedly querying the victim's [AI Model Inference API Access](/techniques/AML.T0040), the adversary can collect the target model's inferences into a dataset.\nThe inferences are used as labels for training a separate model offline that will mimic the b...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0005.002",
-      "name": "Use Pre-Trained Model",
-      "description": "Adversaries may use an off-the-shelf pre-trained model as a proxy for the victim model to aid in staging the attack.\n",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -399,7 +263,7 @@
     {
       "id": "AML.T0007",
       "name": "Discover AI Artifacts",
-      "description": "Adversaries may search private sources to identify AI learning artifacts that exist on the system and gather information about them.\nThese artifacts can include the software stack used to train and deploy models, training and testing data management systems, container registries, software repositori...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -407,15 +271,7 @@
     {
       "id": "AML.T0011",
       "name": "User Execution",
-      "description": "An adversary may rely upon specific actions by a user in order to gain execution.\nUsers may inadvertently execute unsafe code introduced via [AI Supply Chain Compromise](/techniques/AML.T0010).\nUsers may be subjected to social engineering to get them to execute malicious code by, for example, openin...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0011.000",
-      "name": "Unsafe AI Artifacts",
-      "description": "Adversaries may develop unsafe AI artifacts that when executed have a deleterious effect.\nThe adversary can use this technique to establish persistent access to systems.\nThese models may be introduced via a [AI Supply Chain Compromise](/techniques/AML.T0010).\n\nSerialization of models is a popular te...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -423,7 +279,7 @@
     {
       "id": "AML.T0012",
       "name": "Valid Accounts",
-      "description": "Adversaries may obtain and abuse credentials of existing accounts as a means of gaining Initial Access.\nCredentials may take the form of usernames and passwords of individual user accounts or API keys that provide access to various AI resources and services.\n\nCompromised credentials may provide acce...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -431,7 +287,7 @@
     {
       "id": "AML.T0015",
       "name": "Evade AI Model",
-      "description": "Adversaries can [Craft Adversarial Data](/techniques/AML.T0043) that prevents an AI model from correctly identifying the contents of the data or [Generate Deepfakes](/techniques/AML.T0088) that fools an AI model expecting authentic data.\n\nThis technique can be used to evade a downstream task where A...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -439,23 +295,7 @@
     {
       "id": "AML.T0018",
       "name": "Manipulate AI Model",
-      "description": "Adversaries may directly manipulate an AI model to change its behavior or introduce malicious code. Manipulating a model gives the adversary a persistent change in the system. This can include poisoning the model by changing its weights, modifying the model architecture to change its behavior, and e...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0018.000",
-      "name": "Poison AI Model",
-      "description": "Adversaries may manipulate an AI model's weights to change it's behavior or performance, resulting in a poisoned model.\nAdversaries may poison a model by by directly manipulating its weights, training the model on poisoned data, further fine-tuning the model, or otherwise interfering with its traini...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "high"
-    },
-    {
-      "id": "AML.T0018.001",
-      "name": "Modify AI Model Architecture",
-      "description": "Adversaries may directly modify an AI model's architecture to re-define it's behavior. This can include adding or removing layers as well as adding pre or post-processing operations.\n\nThe effects could include removing the ability to predict certain classes, adding erroneous operations to increase c...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -463,39 +303,15 @@
     {
       "id": "AML.T0024",
       "name": "Exfiltration via AI Inference API",
-      "description": "Adversaries may exfiltrate private information via [AI Model Inference API Access](/techniques/AML.T0040).\nAI Models have been shown leak private information about their training data (e.g.  [Infer Training Data Membership](/techniques/AML.T0024.000), [Invert AI Model](/techniques/AML.T0024.001)).\nT...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "high"
     },
     {
-      "id": "AML.T0024.000",
-      "name": "Infer Training Data Membership",
-      "description": "Adversaries may infer the membership of a data sample or global characteristics of the data in its training set, which raises privacy concerns.\nSome strategies make use of a shadow model that could be obtained via [Train Proxy via Replication](/techniques/AML.T0005.001), others use statistics of mod...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0024.001",
-      "name": "Invert AI Model",
-      "description": "AI models' training data could be reconstructed by exploiting the confidence scores that are available via an inference API.\nBy querying the inference API strategically, adversaries can back out potentially private information embedded within the training data.\nThis could lead to privacy violations ...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0024.002",
-      "name": "Extract AI Model",
-      "description": "Adversaries may extract a functional copy of a private model.\nBy repeatedly querying the victim's [AI Model Inference API Access](/techniques/AML.T0040), the adversary can collect the target model's inferences into a dataset.\nThe inferences are used as labels for training a separate model offline th...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
       "id": "AML.T0025",
       "name": "Exfiltration via Cyber Means",
-      "description": "Adversaries may exfiltrate AI artifacts or other information relevant to their goals via traditional cyber means.\n\nSee the ATT&CK [Exfiltration](https://attack.mitre.org/tactics/TA0010/) tactic for more information.",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "high"
@@ -503,7 +319,7 @@
     {
       "id": "AML.T0029",
       "name": "Denial of AI Service",
-      "description": "Adversaries may target AI-enabled systems with a flood of requests for the purpose of degrading or shutting down the service.\nSince many AI systems require significant amounts of specialized compute, they are often expensive bottlenecks that can become overloaded.\nAdversaries can intentionally craft...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -511,7 +327,7 @@
     {
       "id": "AML.T0046",
       "name": "Spamming AI System with Chaff Data",
-      "description": "Adversaries may spam the AI system with chaff data that causes increase in the number of detections.\nThis can cause analysts at the victim organization to waste time reviewing and correcting incorrect inferences.",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -519,7 +335,7 @@
     {
       "id": "AML.T0031",
       "name": "Erode AI Model Integrity",
-      "description": "Adversaries may degrade the target model's performance with adversarial data inputs to erode confidence in the system over time.\nThis can lead to the victim organization wasting time and money both attempting to fix the system and performing the tasks it was meant to automate by hand.\n",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -527,7 +343,7 @@
     {
       "id": "AML.T0034",
       "name": "Cost Harvesting",
-      "description": "Adversaries may target different AI services to send useless queries or computationally expensive inputs to increase the cost of running services at the victim organization.\nSponge examples are a particular type of adversarial data designed to maximize energy consumption and thus operating cost.",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -535,7 +351,7 @@
     {
       "id": "AML.T0035",
       "name": "AI Artifact Collection",
-      "description": "Adversaries may collect AI artifacts for [Exfiltration](/tactics/AML.TA0010) or for use in [AI Attack Staging](/tactics/AML.TA0001).\nAI artifacts include models and datasets as well as other telemetry data produced when interacting with a model.",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "medium"
@@ -543,7 +359,7 @@
     {
       "id": "AML.T0036",
       "name": "Data from Information Repositories",
-      "description": "Adversaries may leverage information repositories to mine valuable information.\nInformation repositories are tools that allow for storage of information, typically to facilitate collaboration or information sharing between users, and can store a wide variety of data that may aid adversaries in furth...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -551,7 +367,7 @@
     {
       "id": "AML.T0037",
       "name": "Data from Local System",
-      "description": "Adversaries may search local system sources, such as file systems and configuration files or local databases, to find files of interest and sensitive data prior to Exfiltration.\n\nThis can include basic fingerprinting information and sensitive data such as ssh keys.\n",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -559,7 +375,7 @@
     {
       "id": "AML.T0042",
       "name": "Verify Attack",
-      "description": "Adversaries can verify the efficacy of their attack via an inference API or access to an offline copy of the target model.\nThis gives the adversary confidence that their approach works and allows them to carry out the attack at a later time of their choosing.\nThe adversary may verify the attack once...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -567,47 +383,7 @@
     {
       "id": "AML.T0043",
       "name": "Craft Adversarial Data",
-      "description": "Adversarial data are inputs to an AI model that have been modified such that they cause the adversary's desired effect in the target model.\nEffects can range from misclassification, to missed detections, to maximizing energy consumption.\nTypically, the modification is constrained in magnitude or loc...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0043.000",
-      "name": "White-Box Optimization",
-      "description": "In White-Box Optimization, the adversary has full access to the target model and optimizes the adversarial example directly.\nAdversarial examples trained in this manner are most effective against the target model.\n",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0043.001",
-      "name": "Black-Box Optimization",
-      "description": "In Black-Box attacks, the adversary has black-box (i.e. [AI Model Inference API Access](/techniques/AML.T0040) via API access) access to the target model.\nWith black-box attacks, the adversary may be using an API that the victim is monitoring.\nThese attacks are generally less effective and require m...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0043.002",
-      "name": "Black-Box Transfer",
-      "description": "In Black-Box Transfer attacks, the adversary uses one or more proxy models (trained via [Create Proxy AI Model](/techniques/AML.T0005) or [Train Proxy via Replication](/techniques/AML.T0005.001)) they have full access to and are representative of the target model.\nThe adversary uses [White-Box Optim...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0043.003",
-      "name": "Manual Modification",
-      "description": "Adversaries may manually modify the input data to craft adversarial data.\nThey may use their knowledge of the target model to modify parts of the data they suspect helps the model in performing its task.\nThe adversary may use trial and error until they are able to verify they have a working adversar...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0043.004",
-      "name": "Insert Backdoor Trigger",
-      "description": "The adversary may add a perceptual trigger into inference data.\nThe trigger may be imperceptible or non-obvious to humans.\nThis technique is used in conjunction with [Poison AI Model](/techniques/AML.T0018.000) and allows the adversary to produce their desired effect in the target model.\n",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -615,47 +391,7 @@
     {
       "id": "AML.T0048",
       "name": "External Harms",
-      "description": "Adversaries may abuse their access to a victim system and use its resources or capabilities to further their goals by causing harms external to that system.\nThese harms could affect the organization (e.g. Financial Harm, Reputational Harm), its users (e.g. User Harm), or the general public (e.g. Soc...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0048.000",
-      "name": "Financial Harm",
-      "description": "Financial harm involves the loss of wealth, property, or other monetary assets due to theft, fraud or forgery, or pressure to provide financial resources to the adversary.\n",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0048.001",
-      "name": "Reputational Harm",
-      "description": "Reputational harm involves a degradation of public perception and trust in organizations.  Examples of reputation-harming incidents include scandals or false impersonations.\n",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0048.002",
-      "name": "Societal Harm",
-      "description": "Societal harms might generate harmful outcomes that reach either the general public or specific vulnerable groups such as the exposure of children to vulgar content.\n",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0048.003",
-      "name": "User Harm",
-      "description": "User harms may encompass a variety of harm types including financial and reputational that are directed at or felt by individual victims of the attack rather than at the organization level.\n",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0048.004",
-      "name": "AI Intellectual Property Theft",
-      "description": "Adversaries may exfiltrate AI artifacts to steal intellectual property and cause economic harm to the victim organization.\n\nProprietary training data is costly to collect and annotate and may be a target for [Exfiltration](/tactics/AML.TA0010) and theft.\n\nAIaaS providers charge for use of their API....",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -663,7 +399,7 @@
     {
       "id": "AML.T0049",
       "name": "Exploit Public-Facing Application",
-      "description": "Adversaries may attempt to take advantage of a weakness in an Internet-facing computer or program using software, data, or commands in order to cause unintended or unanticipated behavior. The weakness in the system can be a bug, a glitch, or a design vulnerability. These applications are often websi...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -671,7 +407,7 @@
     {
       "id": "AML.T0050",
       "name": "Command and Scripting Interpreter",
-      "description": "Adversaries may abuse command and script interpreters to execute commands, scripts, or binaries. These interfaces and languages provide ways of interacting with computer systems and are a common feature across many different platforms. Most systems come with some built-in command-line interface and ...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -679,39 +415,15 @@
     {
       "id": "AML.T0051",
       "name": "LLM Prompt Injection",
-      "description": "An adversary may craft malicious prompts as inputs to an LLM that cause the LLM to act in unintended ways.\nThese \"prompt injections\" are often designed to cause the model to ignore aspects of its original instructions and follow the adversary's instructions instead.\n\nPrompt Injections can be an init...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "high"
     },
     {
-      "id": "AML.T0051.000",
-      "name": "Direct",
-      "description": "An adversary may inject prompts directly as a user of the LLM. This type of injection may be used by the adversary to gain a foothold in the system or to misuse the LLM itself, as for example to generate harmful content.\n",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0051.001",
-      "name": "Indirect",
-      "description": "An adversary may inject prompts indirectly via separate data channel ingested by the LLM such as include text or multimedia pulled from databases or websites.\nThese malicious prompts may be hidden or obfuscated from the user. This type of injection may be used by the adversary to gain a foothold in ...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
       "id": "AML.T0052",
       "name": "Phishing",
-      "description": "Adversaries may send phishing messages to gain access to victim systems. All forms of phishing are electronically delivered social engineering. Phishing can be targeted, known as spearphishing. In spearphishing, a specific individual, company, or industry will be targeted by the adversary. More gene...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0052.000",
-      "name": "Spearphishing via Social Engineering LLM",
-      "description": "Adversaries may turn LLMs into targeted social engineers.\nLLMs are capable of interacting with users via text conversations.\nThey can be instructed by an adversary to seek sensitive information from a user and act as effective social engineers.\nThey can be targeted towards particular personas define...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -719,7 +431,7 @@
     {
       "id": "AML.T0053",
       "name": "AI Agent Tool Invocation",
-      "description": "Adversaries may use their access to an AI agent to invoke tools the agent has access to. LLMs are often connected to other services or resources via tools to increase their capabilities. Tools may include integrations with other applications, access to public or private data sources, and the ability...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -727,7 +439,7 @@
     {
       "id": "AML.T0054",
       "name": "LLM Jailbreak",
-      "description": "An adversary may use a carefully crafted [LLM Prompt Injection](/techniques/AML.T0051) designed to place LLM in a state in which it will freely respond to any user input, bypassing any controls, restrictions, or guardrails placed on the LLM.\nOnce successfully jailbroken, the LLM can be used in unint...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -735,7 +447,7 @@
     {
       "id": "AML.T0055",
       "name": "Unsecured Credentials",
-      "description": "Adversaries may search compromised systems to find and obtain insecurely stored credentials.\nThese credentials can be stored and/or misplaced in many locations on a system, including plaintext files (e.g. bash history), environment variables, operating system, or application-specific repositories (e...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -743,7 +455,7 @@
     {
       "id": "AML.T0056",
       "name": "Extract LLM System Prompt",
-      "description": "Adversaries may attempt to extract a large language model's (LLM) system prompt. This can be done via prompt injection to induce the model to reveal its own system prompt or may be extracted from a configuration file.\n\nSystem prompts can be a portion of an AI provider's competitive advantage and are...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -751,7 +463,7 @@
     {
       "id": "AML.T0057",
       "name": "LLM Data Leakage",
-      "description": "Adversaries may craft prompts that induce the LLM to leak sensitive information.\nThis can include private user data or proprietary information.\nThe leaked information may come from proprietary training data, data sources the LLM is connected to, or information from other users of the LLM.\n",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -759,7 +471,7 @@
     {
       "id": "AML.T0058",
       "name": "Publish Poisoned Models",
-      "description": "Adversaries may publish a poisoned model to a public location such as a model registry or code repository. The poisoned model may be a novel model or a poisoned variant of an existing open-source model. This model may be introduced to a victim system via [AI Supply Chain Compromise](/techniques/AML....",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "high"
@@ -767,15 +479,7 @@
     {
       "id": "AML.T0059",
       "name": "Erode Dataset Integrity",
-      "description": "Adversaries may poison or manipulate portions of a dataset to reduce its usefulness, reduce trust, and cause users to waste resources correcting errors.",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0011.001",
-      "name": "Malicious Package",
-      "description": "Adversaries may develop malicious software packages that when imported by a user have a deleterious effect.\nMalicious packages may behave as expected to the user. They may be introduced via [AI Supply Chain Compromise](/techniques/AML.T0010). They may not present as obviously malicious to the user a...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -783,7 +487,7 @@
     {
       "id": "AML.T0060",
       "name": "Publish Hallucinated Entities",
-      "description": "Adversaries may create an entity they control, such as a software package, website, or email address to a source hallucinated by an LLM. The hallucinations may take the form of package names commands, URLs, company names, or email addresses that point the victim to the entity controlled by the adver...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -791,7 +495,7 @@
     {
       "id": "AML.T0061",
       "name": "LLM Prompt Self-Replication",
-      "description": "An adversary may use a carefully crafted [LLM Prompt Injection](/techniques/AML.T0051) designed to cause the LLM to replicate the prompt as part of its output. This allows the prompt to propagate to other LLMs and persist on the system. The self-replicating prompt is typically paired with other mali...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -799,23 +503,7 @@
     {
       "id": "AML.T0062",
       "name": "Discover LLM Hallucinations",
-      "description": "Adversaries may prompt large language models and identify hallucinated entities.\nThey may request software packages, commands, URLs, organization names, or e-mail addresses, and identify hallucinations with no connected real-world source. Discovered hallucinations provide the adversary with potentia...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0008.002",
-      "name": "Domains",
-      "description": "Adversaries may acquire domains that can be used during targeting. Domain names are the human readable names used to represent one or more IP addresses. They can be purchased or, in some cases, acquired for free.\n\nAdversaries may use acquired domains for a variety of purposes (see [ATT&CK](https://a...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0008.003",
-      "name": "Physical Countermeasures",
-      "description": "Adversaries may acquire or manufacture physical countermeasures to aid or support their attack.\n\nThese components may be used to disrupt or degrade the model, such as adversarial patterns printed on stickers or T-shirts, disguises, or decoys. They may also be used to disrupt or degrade the sensors u...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -823,15 +511,7 @@
     {
       "id": "AML.T0063",
       "name": "Discover AI Model Outputs",
-      "description": "Adversaries may discover model outputs, such as class scores, whose presence is not required for the system to function and are not intended for use by the end user. Model outputs may be found in logs or may be included in API responses.\nModel outputs may enable the adversary to identify weaknesses ...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0016.002",
-      "name": "Generative AI",
-      "description": "Adversaries may search for and obtain generative AI models or tools, such as large language models (LLMs), to assist them in various steps of their operation. Generative AI can be used in a variety of malicious ways, including generating malware or offensive cyber scripts, [Retrieval Content Craftin...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -839,7 +519,7 @@
     {
       "id": "AML.T0064",
       "name": "Gather RAG-Indexed Targets",
-      "description": "Adversaries may identify data sources used in retrieval augmented generation (RAG) systems for targeting purposes. By pinpointing these sources, attackers can focus on poisoning or otherwise manipulating the external data repositories the AI relies on.\n\nRAG-indexed data may be identified in public d...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -847,7 +527,7 @@
     {
       "id": "AML.T0065",
       "name": "LLM Prompt Crafting",
-      "description": "Adversaries may use their acquired knowledge of the target generative AI system to craft prompts that bypass its defenses and allow malicious instructions to be executed.\n\nThe adversary may iterate on the prompt to ensure that it works as-intended consistently.",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -855,7 +535,7 @@
     {
       "id": "AML.T0066",
       "name": "Retrieval Content Crafting",
-      "description": "Adversaries may write content designed to be retrieved by user queries and influence a user of the system in some way. This abuses the trust the user has in the system.\n\nThe crafted content can be combined with a prompt injection. It can also stand alone in a separate document or email. The adversar...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -863,7 +543,7 @@
     {
       "id": "AML.T0067",
       "name": "LLM Trusted Output Components Manipulation",
-      "description": "Adversaries may utilize prompts to a large language model (LLM) which manipulate various components of its response in order to make it appear trustworthy to the user. This helps the adversary continue to operate in the victim's environment and evade detection by the users it interacts with.\n\nThe LL...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "high"
@@ -871,7 +551,7 @@
     {
       "id": "AML.T0068",
       "name": "LLM Prompt Obfuscation",
-      "description": "Adversaries may hide or otherwise obfuscate prompt injections or retrieval content from the user to avoid detection.\n\nThis may include modifying how the injection is rendered such as small text, text colored the same as the background, or hidden HTML elements.",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -879,31 +559,7 @@
     {
       "id": "AML.T0069",
       "name": "Discover LLM System Information",
-      "description": "The adversary is trying to discover something about the large language model's (LLM) system information. This may be found in a configuration file containing the system instructions or extracted via interactions with the LLM. The desired information may include the full system prompt, special charac...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0069.000",
-      "name": "Special Character Sets",
-      "description": "Adversaries may discover delimiters and special characters sets used by the large language model. For example, delimiters used in retrieval augmented generation applications to differentiate between context and user prompts. These can later be exploited to confuse or manipulate the large language mo...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0069.001",
-      "name": "System Instruction Keywords",
-      "description": "Adversaries may discover keywords that have special meaning to the large language model (LLM), such as function names or object names. These can later be exploited to confuse or manipulate the LLM into misbehaving and to make calls to plugins the LLM has access to.",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0069.002",
-      "name": "System Prompt",
-      "description": "Adversaries may discover a large language model's system instructions provided by the AI system builder to learn about the system's capabilities and circumvent its guardrails.",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -911,7 +567,7 @@
     {
       "id": "AML.T0070",
       "name": "RAG Poisoning",
-      "description": "Adversaries may inject malicious content into data indexed by a retrieval augmented generation (RAG) system to contaminate a future thread through RAG-based search results. This may be accomplished by placing manipulated documents in a location the RAG indexes (see [Gather RAG-Indexed Targets](/tech...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "high"
@@ -919,39 +575,15 @@
     {
       "id": "AML.T0071",
       "name": "False RAG Entry Injection",
-      "description": "Adversaries may introduce false entries into a victim's retrieval augmented generation (RAG) database. Content designed to be interpreted as a document by the large language model (LLM) used in the RAG system is included in a data source being ingested into the RAG database. When RAG entry including...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "high"
     },
     {
-      "id": "AML.T0067.000",
-      "name": "Citations",
-      "description": "Adversaries may manipulate the citations provided in an AI system's response, in order to make it appear trustworthy. Variants include citing a providing the wrong citation, making up a new citation, or providing the right citation but for adversary-provided data.",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0018.002",
-      "name": "Embed Malware",
-      "description": "Adversaries may embed malicious code into AI Model files.\nAI models may be packaged as a combination of instructions and weights.\nSome formats such as pickle files are unsafe to deserialize because they can contain unsafe calls such as exec.\nModels with embedded malware may still operate as expected...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0010.004",
-      "name": "Container Registry",
-      "description": "An adversary may compromise a victim's container registry by pushing a manipulated container image and overwriting an existing container name and/or tag. Users of the container registry as well as automated CI/CD pipelines may pull the adversary's container image, compromising their AI Supply Chain....",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
       "id": "AML.T0072",
       "name": "Reverse Shell",
-      "description": "Adversaries may utilize a reverse shell to communicate and control the victim system.\n\nTypically, a user uses a client to connect to a remote machine which is listening for connections. With a reverse shell, the adversary is listening for incoming connections initiated from the victim system.",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -959,7 +591,7 @@
     {
       "id": "AML.T0073",
       "name": "Impersonation",
-      "description": "Adversaries may impersonate a trusted person or organization in order to persuade and trick a target into performing some action on their behalf. For example, adversaries may communicate with victims (via [Phishing](/techniques/AML.T0052), or [Spearphishing via Social Engineering LLM](/techniques/AM...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -967,7 +599,7 @@
     {
       "id": "AML.T0074",
       "name": "Masquerading",
-      "description": "Adversaries may attempt to manipulate features of their artifacts to make them appear legitimate or benign to users and/or security tools. Masquerading occurs when the name or location of an object, legitimate or malicious, is manipulated or abused for the sake of evading defenses and observation. T...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -975,7 +607,7 @@
     {
       "id": "AML.T0075",
       "name": "Cloud Service Discovery",
-      "description": "An adversary may attempt to enumerate the cloud services running on a system after gaining access. These methods can differ from platform-as-a-service (PaaS), to infrastructure-as-a-service (IaaS), or software-as-a-service (SaaS). Many services exist throughout the various cloud providers and can in...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "medium"
@@ -983,7 +615,7 @@
     {
       "id": "AML.T0076",
       "name": "Corrupt AI Model",
-      "description": "An adversary may purposefully corrupt a malicious AI model file so that it cannot be successfully deserialized in order to evade detection by a model scanner. The corrupt model may still successfully execute malicious code before deserialization fails.",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -991,15 +623,7 @@
     {
       "id": "AML.T0077",
       "name": "LLM Response Rendering",
-      "description": "An adversary may get a large language model (LLM) to respond with private information that is hidden from the user when the response is rendered by the user's client. The private information is then exfiltrated. This can take the form of rendered images, which automatically make a request to an adve...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0008.004",
-      "name": "Serverless",
-      "description": "Adversaries may purchase and configure serverless cloud infrastructure, such as Cloudflare Workers, AWS Lambda functions, or Google Apps Scripts, that can be used during targeting. By utilizing serverless infrastructure, adversaries can make it more difficult to attribute infrastructure used during ...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -1007,7 +631,7 @@
     {
       "id": "AML.T0078",
       "name": "Drive-by Compromise",
-      "description": "Adversaries may gain access to an AI system through a user visiting a website over the normal course of browsing, or an AI agent retrieving information from the web on behalf of a user. Websites can contain an [LLM Prompt Injection](/techniques/AML.T0051) which, when executed, can change the behavio...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -1015,7 +639,7 @@
     {
       "id": "AML.T0079",
       "name": "Stage Capabilities",
-      "description": "Adversaries may upload, install, or otherwise set up capabilities that can be used during targeting. To support their operations, an adversary may need to take capabilities they developed ([Develop Capabilities](/techniques/AML.T0017)) or obtained ([Obtain Capabilities](/techniques/AML.T0016)) and s...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -1023,31 +647,15 @@
     {
       "id": "AML.T0080",
       "name": "AI Agent Context Poisoning",
-      "description": "Adversaries may attempt to manipulate the context used by an AI agent's large language model (LLM) to influence the responses it generates or actions it takes. This allows an adversary to persistently change the behavior of the target agent and further their goals.\n\nContext poisoning can be accompli...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "high"
     },
     {
-      "id": "AML.T0080.000",
-      "name": "Memory",
-      "description": "Adversaries may manipulate the memory of a large language model (LLM) in order to persist changes to the LLM to future chat sessions. \n\nMemory is a common feature in LLMs that allows them to remember information across chat sessions by utilizing a user-specific database. Because the memory is contro...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0080.001",
-      "name": "Thread",
-      "description": "Adversaries may introduce malicious instructions into a chat thread of a large language model (LLM) to cause behavior changes which persist for the remainder of the thread. A chat thread may continue for an extended period over multiple sessions.\n\nThe malicious instructions may be introduced via Dir...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
       "id": "AML.T0081",
       "name": "Modify AI Agent Configuration",
-      "description": "Adversaries may modify the configuration files for AI agents on a system. This allows malicious changes to persist beyond the life of a single agent and affects any agents that share the configuration.\n\nConfiguration changes may include modifications to the system prompt, tampering with or replacing...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -1055,7 +663,7 @@
     {
       "id": "AML.T0082",
       "name": "RAG Credential Harvesting",
-      "description": "Adversaries may attempt to use their access to a large language model (LLM) on the victim's system to collect credentials. Credentials may be stored in internal documents which can inadvertently be ingested into a RAG database, where they can ultimately be retrieved by an AI agent.",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -1063,7 +671,7 @@
     {
       "id": "AML.T0083",
       "name": "Credentials from AI Agent Configuration",
-      "description": "Adversaries may access the credentials of other tools or services on a system from the configuration of an AI agent.\n\nAI Agents often utilize external tools or services to take actions, such as querying databases, invoking APIs, or interacting with cloud resources. To enable these functions, credent...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -1071,31 +679,7 @@
     {
       "id": "AML.T0084",
       "name": "Discover AI Agent Configuration",
-      "description": "Adversaries may attempt to discover configuration information for AI agents present on the victim's system. Agent configurations can include tools or services they have access to.\n\nAdversaries may directly access agent configuring dashboards or configuration files. They may also obtain configuration...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0084.000",
-      "name": "Embedded Knowledge",
-      "description": "Adversaries may attempt to discover the data sources a particular agent can access.  The AI agent's configuration may reveal data sources or knowledge.\n\nThe embedded knowledge may include sensitive or proprietary material such as intellectual property, customer data, internal policies, or even crede...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0084.001",
-      "name": "Tool Definitions",
-      "description": "Adversaries may discover the tools the AI agent has access to. By identifying which tools are available, the adversary can understand what actions may be executed through the agent and what additional resources it can reach. This knowledge may reveal access to external data sources such as OneDrive ...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0084.002",
-      "name": "Activation Triggers",
-      "description": "Adversaries may discover keywords or other triggers (such as incoming emails, documents being added, incoming message, or other workflows) that activate an agent and may cause it to run additional actions.\n\nUnderstanding these triggers can reveal how the AI agent is activated and controlled. This ma...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -1103,23 +687,7 @@
     {
       "id": "AML.T0085",
       "name": "Data from AI Services",
-      "description": "Adversaries may use their access to a victim organization's AI-enabled services to collect proprietary or otherwise sensitive information. As organizations adopt generative AI in centralized services for accessing an organization's data, such as with chat agents which can access retrieval augmented ...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0085.000",
-      "name": "RAG Databases",
-      "description": "Adversaries may prompt the AI service to retrieve data from a RAG database. This can include the majority of an organization's internal documents.",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0085.001",
-      "name": "AI Agent Tools",
-      "description": "Adversaries may prompt the AI service to invoke various tools the agent has access to. Tools may retrieve data from different APIs or services in an organization.",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -1127,7 +695,7 @@
     {
       "id": "AML.T0086",
       "name": "Exfiltration via AI Agent Tool Invocation",
-      "description": "Adversaries may use prompts to invoke an agent's tool capable of performing write operations to exfiltrate data. Sensitive information can be encoded into the tool's input parameters and transmitted as part of a seemingly legitimate action. Variants include sending emails, creating or modifying docu...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "high"
@@ -1135,7 +703,7 @@
     {
       "id": "AML.T0087",
       "name": "Gather Victim Identity Information",
-      "description": "Adversaries may gather information about the victim's identity that can be used during targeting. Information about identities may include a variety of details, including personal data (ex: employee names, email addresses, photos, etc.) as well as sensitive details such as credentials or multi-facto...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -1143,7 +711,7 @@
     {
       "id": "AML.T0088",
       "name": "Generate Deepfakes",
-      "description": "Adversaries may use generative artificial intelligence (GenAI) to create synthetic media (i.e. imagery, video, audio, and text) that appear authentic. These \"[deepfakes]( https://en.wikipedia.org/wiki/Deepfake)\" may mimic a real person or depict fictional personas. Adversaries may use deepfakes for ...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -1151,7 +719,7 @@
     {
       "id": "AML.T0089",
       "name": "Process Discovery",
-      "description": "Adversaries may attempt to get information about processes running on a system. Once obtained, this information could be used to gain an understanding of common AI-related software/applications running on systems within the network. Administrator or otherwise elevated access may provide better proce...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "medium"
@@ -1159,7 +727,7 @@
     {
       "id": "AML.T0090",
       "name": "OS Credential Dumping",
-      "description": "Adversaries may extract credentials from OS caches, application memory, or other sources on a compromised system. Credentials are often in the form of a hash or clear text, and can include usernames and passwords, application tokens, or other authentication keys.\n\nCredentials can be used to perform ...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -1167,7 +735,7 @@
     {
       "id": "AML.T0091",
       "name": "Use Alternate Authentication Material",
-      "description": "Adversaries may use alternate authentication material, such as password hashes, Kerberos tickets, and application access tokens, in order to move laterally within an environment and bypass normal system access controls.\n\nAI services commonly use alternate authentication material as a primary means f...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -1175,15 +743,7 @@
     {
       "id": "AML.T0092",
       "name": "Manipulate User LLM Chat History",
-      "description": "Adversaries may manipulate a user's large language model (LLM) chat history to cover the tracks of their malicious behavior. They may hide persistent changes they have made to the LLM's behavior, or obscure their attempts at discovering private information about the user.\n\nTo do so, adversaries may ...",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0091.000",
-      "name": "Application Access Token",
-      "description": "Adversaries may use stolen application access tokens to bypass the typical authentication process and access restricted accounts, information, or services on remote systems. These tokens are typically stolen from users or services and used in lieu of login credentials.\n\nApplication access tokens are...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -1191,7 +751,7 @@
     {
       "id": "AML.T0093",
       "name": "Prompt Infiltration via Public-Facing Application",
-      "description": "An adversary may introduce malicious prompts into the victim's system via a public-facing application with the intention of it being ingested by an AI at some point in the future and ultimately having a downstream effect. This may occur when a data source is indexed by a retrieval augmented generati...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -1199,15 +759,7 @@
     {
       "id": "AML.T0094",
       "name": "Delay Execution of LLM Instructions",
-      "description": "Adversaries may include instructions to be followed by the AI system in response to a future event, such as a specific keyword or the next interaction, in order to evade detection or bypass controls placed on the AI system.\n\nFor example, an adversary may include \"If the user submits a new request......",
-      "tactic": "",
-      "type": "technique",
-      "severity": "low"
-    },
-    {
-      "id": "AML.T0051.002",
-      "name": "Triggered",
-      "description": "An adversary may trigger a prompt injection via a user action or event that occurs within the victim's environment. Triggered prompt injections often target AI agents, which can be activated by means the adversary identifies during [Discovery](/tactics/AML.TA0008) (See [Activation Triggers](/techniq...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -1215,270 +767,17 @@
     {
       "id": "AML.T0095",
       "name": "Search Open Websites/Domains",
-      "description": "Adversaries may search public websites and/or domains for information about victims that can be used during targeting. Information about victims may be available in various online sites, such as social media, new sites, or domains owned by the victim.\n\nAdversaries may find the information they seek ...",
+      "description": "",
       "tactic": "",
       "type": "technique",
       "severity": "low"
     }
   ],
-  "caseStudies": [
-    {
-      "id": "AML.CS0000",
-      "name": "Evasion of Deep Learning Detector for Malware C&C Traffic",
-      "summary": "The Palo Alto Networks Security AI research team tested a deep learning model for malware command and control (C&C) traffic detection in HTTP traffic.\nBased on the publicly available [paper by Le et a...",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0001",
-      "name": "Botnet Domain Generation Algorithm (DGA) Detection Evasion",
-      "summary": "The Palo Alto Networks Security AI research team was able to bypass a Convolutional Neural Network based botnet Domain Generation Algorithm (DGA) detector using a generic domain name mutation techniqu...",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0002",
-      "name": "VirusTotal Poisoning",
-      "summary": "McAfee Advanced Threat Research noticed an increase in reports of a certain ransomware family that was out of the ordinary. Case investigation revealed that many samples of that particular ransomware ...",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0003",
-      "name": "Bypassing Cylance's AI Malware Detection",
-      "summary": "Researchers at Skylight were able to create a universal bypass string that evades detection by Cylance's AI Malware detector when appended to a malicious file.",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0004",
-      "name": "Camera Hijack Attack on Facial Recognition System",
-      "summary": "This type of camera hijack attack can evade the traditional live facial recognition authentication model and enable access to privileged systems and victim impersonation.\n\nTwo individuals in China use...",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0005",
-      "name": "Attack on Machine Translation Services",
-      "summary": "Machine translation services (such as Google Translate, Bing Translator, and Systran Translate) provide public-facing UIs and APIs.\nA research group at UC Berkeley utilized these public endpoints to c...",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0006",
-      "name": "ClearviewAI Misconfiguration",
-      "summary": "Clearview AI makes a facial recognition tool that searches publicly available photos for matches.  This tool has been used for investigative purposes by law enforcement agencies and other parties.\n\nCl...",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0007",
-      "name": "GPT-2 Model Replication",
-      "summary": "OpenAI built GPT-2, a language model capable of generating high quality text samples. Over concerns that GPT-2 could be used for malicious purposes such as impersonating others, or generating misleadi...",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0008",
-      "name": "ProofPoint Evasion",
-      "summary": "Proof Pudding (CVE-2019-20634) is a code repository that describes how ML researchers evaded ProofPoint's email protection system by first building a copy-cat email protection ML model, and using the ...",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0009",
-      "name": "Tay Poisoning",
-      "summary": "Microsoft created Tay, a Twitter chatbot designed to engage and entertain users.\nWhile previous chatbots used pre-programmed scripts\nto respond to prompts, Tay's machine learning capabilities allowed ...",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0010",
-      "name": "Microsoft Azure Service Disruption",
-      "summary": "The Microsoft AI Red Team performed a red team exercise on an internal Azure service with the intention of disrupting its service. This operation had a combination of traditional ATT&CK enterprise tec...",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0011",
-      "name": "Microsoft Edge AI Evasion",
-      "summary": "The Azure Red Team performed a red team exercise on a new Microsoft product designed for running AI workloads at the edge. This exercise was meant to use an automated system to continuously manipulate...",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0012",
-      "name": "Face Identification System Evasion via Physical Countermeasures",
-      "summary": "MITRE's AI Red Team demonstrated a physical-domain evasion attack on a commercial face identification service with the intention of inducing a targeted misclassification.\nThis operation had a combinat...",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0013",
-      "name": "Backdoor Attack on Deep Learning Models in Mobile Apps",
-      "summary": "Deep learning models are increasingly used in mobile applications as critical components.\nResearchers from Microsoft Research demonstrated that many deep learning models deployed in mobile apps are vu...",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0014",
-      "name": "Confusing Antimalware Neural Networks",
-      "summary": "Cloud storage and computations have become popular platforms for deploying ML malware detectors.\nIn such cases, the features for models are built on users' systems and then sent to cybersecurity compa...",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0015",
-      "name": "Compromised PyTorch Dependency Chain",
-      "summary": "Linux packages for PyTorch's pre-release version, called Pytorch-nightly, were compromised from December 25 to 30, 2022 by a malicious binary uploaded to the Python Package Index (PyPI) code repositor...",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0016",
-      "name": "Achieving Code Execution in MathGPT via Prompt Injection",
-      "summary": "The publicly available Streamlit application [MathGPT](https://mathgpt.streamlit.app/) uses GPT-3, a large language model (LLM), to answer user-generated math questions.\n\nRecent studies and experiment...",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0017",
-      "name": "Bypassing ID.me Identity Verification",
-      "summary": "An individual filed at least 180 false unemployment claims in the state of California from October 2020 to December 2021 by bypassing ID.me's automated identity verification system. Dozens of fraudule...",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0018",
-      "name": "Arbitrary Code Execution with Google Colab",
-      "summary": "Google Colab is a Jupyter Notebook service that executes on virtual machines.  Jupyter Notebooks are often used for ML and data science research and experimentation, containing executable snippets of ...",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0019",
-      "name": "PoisonGPT",
-      "summary": "Researchers from Mithril Security demonstrated how to poison an open-source pre-trained large language model (LLM) to return a false fact. They then successfully uploaded the poisoned model back to Hu...",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0020",
-      "name": "Indirect Prompt Injection Threats: Bing Chat Data Pirate",
-      "summary": "Whenever interacting with Microsoft's new Bing Chat LLM Chatbot, a user can allow Bing Chat permission to view and access currently open websites throughout the chat session. Researchers demonstrated ...",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0021",
-      "name": "ChatGPT Conversation Exfiltration",
-      "summary": "[Embrace the Red](https://embracethered.com/blog/) demonstrated that ChatGPT users' conversations can be exfiltrated via an indirect prompt injection. To execute the attack, a threat actor uploads a m...",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0022",
-      "name": "ChatGPT Package Hallucination",
-      "summary": "Researchers identified that large language models such as ChatGPT can hallucinate fake software package names that are not published to a package repository. An attacker could publish a malicious pack...",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0023",
-      "name": "ShadowRay",
-      "summary": "Ray is an open-source Python framework for scaling production AI workflows. Ray's Job API allows for arbitrary remote execution by design. However, it does not offer authentication, and the default co...",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0024",
-      "name": "Morris II Worm: RAG-Based Attack",
-      "summary": "Researchers developed Morris II, a zero-click worm designed to attack generative AI (GenAI) ecosystems and propagate between connected GenAI systems. The worm uses an adversarial self-replicating prom...",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0025",
-      "name": "Web-Scale Data Poisoning: Split-View Attack",
-      "summary": "Many recent large-scale datasets are distributed as a list of URLs pointing to individual datapoints. The researchers show that many of these datasets are vulnerable to a \"split-view\" poisoning attack...",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0026",
-      "name": "Financial Transaction Hijacking with M365 Copilot as an Insider",
-      "summary": "Researchers from Zenity conducted a red teaming exercise in August 2024 that successfully manipulated Microsoft 365 Copilot.[<sup>\\[1\\]</sup>][1] The attack abused the fact that Copilot ingests receiv...",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0027",
-      "name": "Organization Confusion on Hugging Face",
-      "summary": "[threlfall_hax](https://5stars217.github.io/), a security researcher, created organization accounts on Hugging Face, a public model repository, that impersonated real organizations. These false Huggin...",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0028",
-      "name": "AI Model Tampering via Supply Chain Attack",
-      "summary": "Researchers at Trend Micro, Inc. used service indexing portals and web searching tools to identify over 8,000 misconfigured private container registries exposed on the internet. Approximately 70% of t...",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0029",
-      "name": "Google Bard Conversation Exfiltration",
-      "summary": "[Embrace the Red](https://embracethered.com/blog/) demonstrated that Bard users' conversations could be exfiltrated via an indirect prompt injection. To execute the attack, a threat actor shares a Goo...",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0030",
-      "name": "LLM Jacking",
-      "summary": "The Sysdig Threat Research Team discovered that malicious actors utilized stolen credentials to gain access to cloud-hosted large language models (LLMs). The actors covertly gathered information about...",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0031",
-      "name": "Malicious Models on Hugging Face",
-      "summary": "Researchers at ReversingLabs have identified malicious models containing embedded malware hosted on the Hugging Face model repository. The models were found to execute reverse shells when loaded, whic...",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0032",
-      "name": "Attempted Evasion of ML Phishing Webpage Detection System",
-      "summary": "Adversaries create phishing websites that appear visually similar to legitimate sites. These sites are designed to trick users into entering their credentials, which are then sent to the bad actor. To...",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0033",
-      "name": "Live Deepfake Image Injection to Evade Mobile KYC Verification",
-      "summary": "Facial biometric authentication services are commonly used by mobile applications for user onboarding, authentication, and identity verification for KYC requirements. The iProov Red Team demonstrated ...",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0034",
-      "name": "ProKYC: Deepfake Tool for Account Fraud Attacks",
-      "summary": "Cato CTRL security researchers have identified ProKYC, a deepfake tool being sold to cybercriminals as a method to bypass Know Your Customer (KYC) verification on financial service applications such a...",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0035",
-      "name": "Data Exfiltration from Slack AI via Indirect Prompt Injection",
-      "summary": "[PromptArmor](https://promptarmor.substack.com) demonstrated that private data can be exfiltrated from Slack AI via indirect prompt injections. The attack relied on Slack AI ingesting a malicious prom...",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0036",
-      "name": "AIKatz: Attacking LLM Desktop Applications",
-      "summary": "Researchers at Lumia have demonstrated that it is possible to extract authentication tokens from the memory of LLM Desktop Applications. An attacker could then use those tokens to impersonate as the v...",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0037",
-      "name": "Data Exfiltration via Agent Tools in Copilot Studio",
-      "summary": "Researchers from Zenity demonstrated how an organization\u2019s data can be exfiltrated via prompt injections that target an AI-powered customer service agent.\n\nThe target system is a customer service agen...",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0038",
-      "name": "Planting Instructions for Delayed Automatic AI Agent Tool Invocation",
-      "summary": "[Embrace the Red](https://embracethered.com/blog/) demonstrated that Google Gemini is susceptible to automated tool invocation by delaying the execution to the next conversation turn. This bypasses a ...",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0039",
-      "name": "Living Off AI: Prompt Injection via Jira Service Management",
-      "summary": "Researchers from Cato Networks demonstrated how adversaries can exploit AI-powered systems embedded in enterprise workflows to execute malicious actions with elevated privileges. This is achieved by c...",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0040",
-      "name": "Hacking ChatGPT\u2019s Memories with Prompt Injection",
-      "summary": "[Embrace the Red](https://embracethered.com/blog/) demonstrated that ChatGPT\u2019s memory feature is vulnerable to manipulation via prompt injections. To execute the attack, the researcher hid a prompt in...",
-      "techniques": []
-    },
-    {
-      "id": "AML.CS0041",
-      "name": "Rules File Backdoor: Supply Chain Attack on AI Coding Assistants",
-      "summary": "Pillar Security researchers demonstrated how adversaries can compromise AI-generated code by injecting malicious instructions into rules files used to configure AI coding assistants like Cursor and Gi...",
-      "techniques": []
-    }
-  ],
+  "caseStudies": [],
   "stats": {
     "totalTactics": 16,
-    "totalTechniques": 140,
-    "totalCaseStudies": 42
+    "totalTechniques": 84,
+    "totalCaseStudies": 0
   },
-  "lastUpdated": "2025-12-16T18:34:13.975000+05:30"
+  "lastUpdated": "2025-12-16T18:51:28.903923+05:30"
 }
