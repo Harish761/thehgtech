@@ -99,14 +99,33 @@
                 // Show/hide content
                 const iocExtended = document.querySelector('.ioc-extended-content');
 
+                // Additional IOC-only sections to hide when AI tab is active
+                const staticSnapshot = document.getElementById('staticSnapshotContainer');
+                const analyticsSection = document.getElementById('analyticsSection');
+                const vendorGrid = document.querySelector('.vendor-grid');
+                const daily7DaySection = document.querySelector('.daily-7day-section');
+                const trendChartSection = document.getElementById('trendChartSection');
+
                 if (targetTab === 'ioc') {
                     if (iocContent) iocContent.style.display = 'block';
                     if (aiContent) aiContent.style.display = 'none';
                     if (iocExtended) iocExtended.style.display = 'block';
+                    // Show IOC-specific sections
+                    if (staticSnapshot) staticSnapshot.style.display = 'block';
+                    if (analyticsSection) analyticsSection.style.display = 'block';
+                    if (vendorGrid) vendorGrid.style.display = '';
+                    if (daily7DaySection) daily7DaySection.style.display = '';
+                    if (trendChartSection) trendChartSection.style.display = '';
                 } else {
                     if (iocContent) iocContent.style.display = 'none';
                     if (aiContent) aiContent.style.display = 'block';
                     if (iocExtended) iocExtended.style.display = 'none';
+                    // Hide IOC-specific sections when viewing AI tab
+                    if (staticSnapshot) staticSnapshot.style.display = 'none';
+                    if (analyticsSection) analyticsSection.style.display = 'none';
+                    if (vendorGrid) vendorGrid.style.display = 'none';
+                    if (daily7DaySection) daily7DaySection.style.display = 'none';
+                    if (trendChartSection) trendChartSection.style.display = 'none';
                 }
             });
         });
