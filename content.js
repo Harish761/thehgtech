@@ -5,6 +5,55 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Dec 16 2025",
+            "title": "Russian Hackers Exploit Misconfigurations in Critical Infrastructure",
+            "content": "Amazon has reported a shift in tactics by Russian state-sponsored hackers who are now targeting misconfigurations in critical infrastructure instead of relying on zero-day and n-day vulnerabilities. This change indicates a strategic pivot towards exploiting human error and oversight in system configurations. The focus on misconfigured devices poses a significant threat to sectors such as energy and utilities, where even minor configuration errors can lead to severe disruptions. This trend underscores the importance of rigorous configuration management and regular audits to prevent unauthorized access. Organizations are advised to enhance their security posture by implementing automated configuration checks and continuous monitoring.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/amazon-russian-hackers-now-favor-misconfigurations-in-critical-infrastructure-attacks/"
+        },
+        {
+            "date": "Dec 16 2025",
+            "title": "Microsoft to Restrict Exchange Online Access for Outdated Mobile Devices",
+            "content": "Microsoft announced plans to block mobile devices running outdated email software from accessing Exchange Online services. This measure aims to enhance security by ensuring that all devices meet the latest security standards and protocols. Devices using legacy protocols and software versions are more vulnerable to attacks, making this update crucial for protecting sensitive email communications. The move will affect organizations that have not updated their mobile device management policies, potentially disrupting access for users with outdated devices. IT departments should prioritize updating mobile software to maintain seamless access and security compliance.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-to-block-exchange-online-access-for-outdated-mobile-devices/"
+        },
+        {
+            "date": "Dec 16 2025",
+            "title": "Amazon Uncovers GRU&#x27;s Years-Long Cyber Campaign Targeting Infrastructure",
+            "content": "Amazon&#x27;s threat intelligence team has revealed details of a protracted cyber campaign by Russia&#x27;s GRU targeting Western critical infrastructure from 2021 to 2025. The campaign focused on energy and cloud infrastructure sectors, aiming to disrupt operations and gather intelligence. This disclosure highlights the persistent threat posed by state-sponsored actors to vital infrastructure, emphasizing the need for robust defensive measures. Organizations in these sectors should review their security protocols and enhance threat detection capabilities to mitigate potential risks. The findings underscore the importance of international cooperation in countering cyber threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/12/amazon-exposes-years-long-gru-cyber.html"
+        },
+        {
+            "date": "Dec 16 2025",
+            "title": "Bundestag Network Outage Not Caused by Cyberattack",
+            "content": "A widespread network outage in the Bundestag was confirmed not to be the result of a cyberattack. The incident, which temporarily disrupted access to the internet, intranet, and email services, was attributed to technical issues rather than malicious activity. This clarification alleviates concerns of a security breach within Germany&#x27;s parliamentary systems. While the exact technical cause remains under investigation, the situation underscores the importance of robust network infrastructure and contingency planning. IT administrators are reminded to regularly assess and update network systems to prevent similar disruptions.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4106959/internet-ausfall-im-bundestag-offenbar-kein-cyberangriff-2.html"
+        },
+        {
+            "date": "Dec 16 2025",
+            "title": "Urban VPN Caught Illegally Collecting AI Chat Data",
+            "content": "Security researchers have discovered that Urban VPN, a popular free browser extension, has been illicitly collecting and exporting users&#x27; AI chat conversations. This breach of privacy affects millions of users who installed the extension, potentially exposing sensitive internal communications and proprietary information. The incident raises significant concerns about data privacy and the security of free software offerings. Organizations should reassess the use of free VPN services and consider more secure, vetted alternatives. Users are advised to uninstall the extension immediately and review browser permissions for unauthorized data access.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4106949/featured-urban-vpn-caught-stealing-private-ai-chats.html"
+        },
+        {
+            "date": "Dec 16 2025",
+            "title": "Vulnerability in Photo Booth Service Exposes Private Photos Online",
+            "content": "A flaw in a photo booth operator&#x27;s website has potentially exposed hundreds of private customer photos online. The security researcher who identified the issue noted that the vulnerability allowed unauthorized access to stored images due to improper access controls. This exposure highlights the risks associated with weak web application security, particularly for services handling personal data. Businesses operating similar services should conduct thorough security assessments and implement strict access controls to protect user data. Customers are urged to be cautious when sharing personal information with online services.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/uncategorized/2025/12/photo-booth-flaw-exposes-peoples-private-pictures-online"
+        },
+        {
+            "date": "Dec 16 2025",
+            "title": "European Authorities Dismantle Major Fraud Ring in Ukraine",
+            "content": "European law enforcement agencies have successfully dismantled a fraud ring operating call centers in Ukraine, responsible for scamming over 10 million euros from victims across Europe. The operation targeted vulnerable individuals with deceptive schemes, emphasizing the ongoing threat of organized cybercrime. This successful intervention highlights the importance of cross-border cooperation in tackling sophisticated fraud networks. Authorities are urging the public to remain vigilant against unsolicited calls and suspicious financial offers. Businesses should educate employees on recognizing and reporting potential fraud attempts to prevent financial losses.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/european-authorities-dismantle-call-center-fraud-ring-in-ukraine/"
+        },
+        {
+            "date": "Dec 16 2025",
             "title": "ISC Stormcast Provides Latest Cyber Threat Intelligence",
             "content": "The SANS Internet Storm Center has released its latest Stormcast for December 16, 2025, offering insights into recent cyber threats and vulnerabilities. The InfoCON level remains at green, indicating a stable threat environment. This podcast is a valuable resource for cybersecurity professionals seeking to stay informed about emerging threats and best practices. The Stormcast discusses recent security incidents and provides analysis on the implications for organizations globally. Listeners are encouraged to integrate this intelligence into their security strategies to enhance their defenses against evolving cyber threats.",
             "source": "SANS Internet Storm Center",
@@ -18,41 +67,6 @@ const websiteContent = {
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/soundcloud-confirms-breach-after-member-data-stolen-vpn-access-disrupted/"
         },
         {
-            "date": "Dec 15 2025",
-            "title": "Google to Discontinue Dark Web Report Tool in January",
-            "content": "Google has announced the discontinuation of its &quot;dark web report&quot; tool, effective January, as the company shifts focus to other security initiatives. The tool, designed to alert users if their data appeared on the dark web, will no longer be available, prompting users to seek alternative monitoring solutions. Google&#x27;s decision reflects a strategic pivot towards developing tools deemed more effective in protecting user privacy and security. Users of the dark web report are encouraged to explore third-party services to maintain vigilance over their personal data exposure. This move signals Google&#x27;s ongoing reassessment of its cybersecurity offerings.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/google/google-is-shutting-down-its-dark-web-report-feature-in-january/"
-        },
-        {
-            "date": "Dec 15 2025",
-            "title": "Askul Corporation Confirms Massive Data Breach in Ransomware Attack",
-            "content": "Askul Corporation, a major Japanese e-commerce firm, has confirmed the theft of approximately 740,000 customer records following a ransomware attack by the RansomHouse group. The breach, which occurred in October, exposed sensitive customer information, raising concerns over data privacy and security. Askul is currently working with cybersecurity experts to mitigate the impact and secure its systems against future attacks. Customers are advised to change passwords and monitor their accounts for unusual activity. This incident highlights the persistent threat of ransomware attacks on large corporations and the need for robust cybersecurity measures.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/askul-confirms-theft-of-740k-customer-records-in-ransomhouse-attack/"
-        },
-        {
-            "date": "Dec 15 2025",
-            "title": "SantaStealer Malware Targets Browsers and Cryptocurrency Wallets",
-            "content": "A new malware-as-a-service offering, SantaStealer, is being promoted on Telegram and hacker forums, targeting data stored in web browsers and cryptocurrency wallets. Operating in memory to evade traditional file-based detection, SantaStealer poses a significant threat to users who store sensitive information in their browsers. The malware&#x27;s emergence underscores the growing sophistication of malware services available to cybercriminals. Users are advised to enhance their security measures, including using hardware wallets for cryptocurrency and employing advanced anti-malware solutions. This development reflects the increasing commodification of cyber threats in underground markets.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-santastealer-malware-steals-data-from-browsers-crypto-wallets/"
-        },
-        {
-            "date": "Dec 15 2025",
-            "title": "PornHub Faces Extortion After Premium Member Data Breach",
-            "content": "PornHub is under extortion threats from the ShinyHunters gang following the theft of Premium members&#x27; search and watch history in a Mixpanel data breach. The breach exposes the sensitive viewing habits of users, presenting significant privacy concerns. PornHub is investigating the breach and working to enhance its data security measures to prevent future incidents. Affected users are urged to review their account settings and consider additional privacy protections. This incident highlights the risks associated with data collection and the potential for exploitation by malicious actors.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/pornhub-extorted-after-hackers-steal-premium-member-activity-data/"
-        },
-        {
-            "date": "Dec 15 2025",
-            "title": "Apple Patches New Zero-Day Vulnerabilities Amid Ongoing Threats",
-            "content": "Apple has released patches for two newly discovered zero-day vulnerabilities that were part of a sophisticated attack, following a similar zero-day flaw patched by Google last week. These vulnerabilities affect various Apple devices, posing risks of unauthorized access and data breaches. Users are strongly advised to update their devices to the latest software versions to protect against potential exploits. This marks a continued trend of zero-day vulnerabilities being targeted by advanced threat actors, emphasizing the importance of timely software updates. Apple&#x27;s swift response highlights the company&#x27;s commitment to maintaining device security in the face of evolving cyber threats.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/apple-patches-more-zero-days-sophisticated-attack"
-        },
-        {
             "date": "May 05 2026",
             "title": "GISEC GLOBAL 2026 Unveils Cybersecurity Innovations in Middle East and Africa",
             "content": "GISEC GLOBAL 2026, the largest cybersecurity event in the Middle East and Africa, has kicked off, showcasing the latest advancements in cybersecurity technology and strategy. The event serves as a platform for industry leaders to discuss emerging threats and innovative solutions. This year&#x27;s focus includes AI-driven security tools, advanced threat detection systems, and new compliance frameworks. Professionals from various sectors, including government and private enterprises, are attending to gain insights into protecting critical infrastructure. The event highlights the region&#x27;s growing importance in the global cybersecurity landscape, emphasizing collaboration and knowledge sharing. Attendees are encouraged to engage with workshops and panels to stay ahead of evolving cyber threats.",
@@ -63,52 +77,59 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Dec 16 2025",
+            "title": "BHP Leverages AI to Enhance Mining Operations",
+            "content": "BHP, a leading mining conglomerate, is utilizing artificial intelligence to transform operational data into actionable insights for improved decision-making. By analyzing data from sensors and monitoring systems, AI identifies patterns and flags potential issues in plant machinery, providing decision-makers with critical information to optimize operations. This approach enhances efficiency and reduces downtime, crucial in the mining industry where operational continuity is key. BHP&#x27;s initiative reflects a growing trend in heavy industries to harness AI for data-driven strategies. Stakeholders should consider integrating similar technologies to maintain competitive advantage and operational excellence.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/mining-ai-gives-businesses-food-for-thought-in-real-life-deployments-of-oi/"
+        },
+        {
+            "date": "Dec 16 2025",
+            "title": "Reevaluating AI Expectations Amidst Rapid Developments",
+            "content": "The excitement surrounding AI innovations from major players like OpenAI and Google is being reassessed as the technology matures. While new models continue to emerge, the initial thrill is giving way to a more tempered view of AI&#x27;s capabilities and limitations. This shift in perception highlights the need for realistic expectations and a focus on practical applications rather than hype. As AI becomes more integrated into daily operations, professionals should prioritize understanding the technology&#x27;s true potential and constraints. This recalibration is crucial for informed decision-making and strategic planning in AI deployment.",
+            "source": "MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2025/12/16/1129946/why-its-time-to-reset-our-expectations-for-ai/"
+        },
+        {
+            "date": "Dec 16 2025",
+            "title": "BNP Paribas Innovates with AI in Investment Banking",
+            "content": "BNP Paribas is pioneering the use of AI in investment banking with its new internal tool, IB Portal. This platform aids bankers in assembling client pitches more efficiently by reducing repetitive tasks. The move represents a significant step in integrating AI into the banking sector&#x27;s daily operations, potentially reshaping how financial institutions approach client interactions. By streamlining processes, BNP Paribas aims to enhance productivity and client service, setting a precedent for other banks to follow. Financial professionals should monitor this development as it could signal broader industry changes.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/bnp-paribas-introduces-ai-tool-for-investment-banking/"
+        },
+        {
+            "date": "Dec 16 2025",
+            "title": "Everbloom&#x27;s AI Transforms Waste into Luxury Textiles",
+            "content": "Everbloom has developed an AI-driven chemical process to upcycle waste fibers and chicken feathers into materials resembling polyester and cashmere. This innovative approach addresses sustainability challenges by converting waste into valuable textiles, offering an eco-friendly alternative to traditional production methods. The technology underscores AI&#x27;s potential in revolutionizing material sciences and promoting circular economies. Industries reliant on raw materials should explore similar AI applications to reduce environmental impact and enhance sustainability efforts. This development highlights the intersection of AI and environmental responsibility in modern manufacturing.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/16/everbloom-built-an-ai-to-turn-chicken-feathers-into-cashmere/"
+        },
+        {
+            "date": "Dec 16 2025",
+            "title": "JPMorgan Chase&#x27;s AI Investment Yields Significant Returns",
+            "content": "JPMorgan Chase&#x27;s $18 billion investment in AI is proving fruitful, with its proprietary LLM Suite platform showing a 30-40% annual growth in benefits. However, this success comes with a human cost, as the bank&#x27;s workforce adapts to new AI-driven processes. With 200,000 employees utilizing the platform daily, the bank is at the forefront of AI integration in the financial sector. This development highlights the transformative impact of AI on workforce dynamics and operational efficiency. Financial institutions should assess the balance between technological advancements and workforce adaptation to optimize AI benefits.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/jpmorgan-chase-ai-strategy-2025/"
+        },
+        {
+            "date": "Dec 16 2025",
+            "title": "AI Literacy Becomes Essential in Evolving Workplaces",
+            "content": "As AI reshapes workplace operations across the U.S., AI literacy is becoming a fundamental component of business strategies. This shift is redefining roles, increasing workloads, and intensifying pressures on employees to adapt. The trend underscores the need for continuous education and skill development to remain competitive in an AI-driven landscape. Organizations should invest in training programs to enhance AI literacy among employees, ensuring a smooth transition into new operational paradigms. This evolution in workplace dynamics reflects a broader transformation in how businesses leverage technology for strategic advantage.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/ai-literacy-in-the-workplace-important-for-growth/"
+        },
+        {
+            "date": "Dec 16 2025",
+            "title": "AI Drives Transformation in Construction Industry",
+            "content": "AI is revolutionizing the construction industry by unlocking valuable insights from vast amounts of previously unused data. New research from Dodge Construction Network reveals that AI is enhancing decision-making, improving margins, and optimizing project outcomes. This technological shift is crucial for an industry traditionally burdened by inefficiencies and cost overruns. Construction professionals should consider adopting AI tools to capitalize on these benefits and remain competitive. The integration of AI into construction processes marks a significant step towards modernizing an industry ripe for innovation.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/construction-industry-ai-success-potential/"
+        },
+        {
+            "date": "Dec 16 2025",
             "title": "Consumer AI Startups Struggle Without New Personal Devices",
             "content": "Venture capitalists are expressing skepticism about the longevity of consumer AI startups, citing the lack of a new personal device to drive sustained growth. Despite advances in AI technologies, the market has yet to see a breakthrough device akin to the smartphone or personal computer that can leverage these innovations. This stagnation poses challenges for startups aiming to capture consumer interest and maintain momentum. Industry experts suggest that without such a device, consumer AI applications may struggle to achieve widespread adoption. Startups and investors may need to pivot towards enterprise solutions or focus on creating new hardware to unlock AI&#x27;s full potential.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2025/12/15/vcs-discuss-why-most-consumer-ai-startups-still-lack-staying-power/"
-        },
-        {
-            "date": "Dec 15 2025",
-            "title": "Chai Discovery Secures $130M to Revolutionize Drug Discovery with AI",
-            "content": "Chai Discovery, backed by OpenAI, has raised $130 million in a Series B funding round, valuing the biotech firm at $1.3 billion. The company is developing foundation models aimed at predicting molecular interactions, a crucial step in reprogramming molecules for therapeutic purposes. By enhancing the precision of drug discovery, Chai aims to accelerate the development of new cures and treatments. This funding round underscores the growing interest in leveraging AI for biotechnological advancements. Stakeholders in the biotech and pharmaceutical industries should monitor Chai&#x27;s progress as it could significantly impact drug development timelines and efficacy.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/15/openai-backed-biotech-firm-chai-discovery-raises-130m-series-b-at-1-3b-valuation/"
-        },
-        {
-            "date": "Dec 15 2025",
-            "title": "Disney&#x27;s Exclusive AI Deal with OpenAI Set for One-Year Term",
-            "content": "Disney has signed an exclusive one-year partnership with OpenAI, allowing the entertainment giant to integrate cutting-edge AI technologies into its operations. After this period, Disney will be free to pursue similar agreements with other AI firms, potentially diversifying its technological collaborations. This deal highlights the increasing importance of AI in media and entertainment, where companies seek to enhance content creation and audience engagement. The partnership could lead to innovative AI-driven experiences for Disney&#x27;s vast consumer base. Industry observers should watch for new AI applications in Disney&#x27;s offerings as the collaboration unfolds.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/15/disneys-openai-deal-is-exclusive-for-just-one-year-then-its-open-season/"
-        },
-        {
-            "date": "Dec 15 2025",
-            "title": "Nvidia Expands Open Source AI Capabilities with Key Acquisition",
-            "content": "Nvidia has acquired SchedMD, the primary developer of the Slurm workload manager, and launched the Nemotron 3 family of open source AI models. This strategic move enhances Nvidia&#x27;s open source offerings, providing scalable solutions for AI development and deployment. Slurm is widely used in high-performance computing (HPC) environments, and its integration with Nvidia&#x27;s technologies could streamline AI workloads. The release of Nemotron 3 models further solidifies Nvidia&#x27;s position in the AI ecosystem, offering robust tools for developers. Organizations utilizing HPC and AI should explore Nvidia&#x27;s expanded resources to optimize their operations.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/15/nvidia-bulks-up-open-source-offerings-with-an-acquisition-and-new-open-ai-models/"
-        },
-        {
-            "date": "Dec 15 2025",
-            "title": "Creative Commons Supports AI Pay-to-Crawl Systems with Guidelines",
-            "content": "Creative Commons has announced tentative support for AI pay-to-crawl systems, proposing several guiding principles for their implementation. These systems would create a marketplace for AI training data, compensating content creators for the use of their work. The organization emphasizes transparency, fairness, and accessibility as key components of any pay-to-crawl framework. This development could reshape the data acquisition landscape for AI models, impacting both developers and content providers. Professionals in AI and digital rights should consider the implications of such systems on data availability and ethical AI practices.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/15/creative-commons-announces-tentative-support-for-ai-pay-to-crawl-systems/"
-        },
-        {
-            "date": "Dec 15 2025",
-            "title": "Lightspeed Ventures Raises $9B to Fuel AI Startup Investments",
-            "content": "Lightspeed Ventures has raised a record $9 billion in fresh capital, positioning itself to significantly impact the AI startup ecosystem. This substantial fund will enable the firm to invest heavily in AI companies, particularly those requiring substantial financial backing for growth and innovation. The influx of capital highlights the escalating demand for AI-driven solutions across various industries. Investors and entrepreneurs should expect increased competition and opportunities in the AI sector as Lightspeed deploys its resources. The firm&#x27;s strategic investments could accelerate technological advancements and market expansion for AI startups.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/15/lightspeed-raises-record-9b-in-fresh-capital/"
-        },
-        {
-            "date": "Dec 15 2025",
-            "title": "Korean Startup Motif Shares Key Insights on Training Enterprise LLMs",
-            "content": "Korean AI startup Motif has revealed four critical lessons for training large language models (LLMs) in enterprise settings, contributing to the ongoing global AI race. The company emphasizes the importance of data quality, scalability, domain specificity, and ethical considerations in LLM development. Motif&#x27;s insights are particularly relevant as the U.S. and China continue to dominate the AI landscape, with notable contributions from Canada and France. Enterprises looking to implement LLMs should heed these lessons to enhance model performance and ensure responsible AI deployment. Motif&#x27;s experience underscores the potential for emerging markets to influence AI advancements.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/korean-ai-startup-motif-reveals-4-big-lessons-for-training-enterprise-llms"
         }
     ],
     "articles": {},
