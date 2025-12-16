@@ -385,3 +385,37 @@ window.threatIntelData = {
         "lastCalculated": "2025-12-16 18:34 IST"
     }
 };
+
+// Update the Traditional IOCs tab badge with actual count
+(function () {
+    function updateIOCBadge() {
+        const iocCount = window.threatIntelData?.dailySummary?.stats?.totalIndicators || 0;
+        const iocBadge = document.getElementById('ioc-total-badge');
+        if (iocBadge && iocCount > 0) {
+            iocBadge.textContent = iocCount.toLocaleString();
+            return true;
+        }
+        return false;
+    }
+
+    // Try immediately
+    if (!updateIOCBadge()) {
+        // Retry on DOMContentLoaded
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', updateIOCBadge);
+        } else {
+            // DOM already loaded, use observer to catch when badge is added
+            const observer = new MutationObserver((mutations, obs) => {
+                if (updateIOCBadge()) {
+                    obs.disconnect();
+                }
+            });
+            observer.observe(document.body, { childList: true, subtree: true });
+
+            // Also try with delays as fallback
+            setTimeout(updateIOCBadge, 500);
+            setTimeout(updateIOCBadge, 1500);
+            setTimeout(updateIOCBadge, 3000);
+        }
+    }
+})();
