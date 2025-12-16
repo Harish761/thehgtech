@@ -14,8 +14,11 @@
     function init() {
         // Find the main container
         const mainContainer = document.querySelector('.main .container');
-        if (!mainContainer) {
-            console.error('Main container not found');
+        // Find the IOC Tab Content container - we want to inject EVERYTHING inside here
+        const iocTabContent = document.getElementById('ioc-tab-content');
+
+        if (!mainContainer || !iocTabContent) {
+            console.error('Main container or IOC tab content not found');
             return;
         }
 
@@ -31,28 +34,24 @@
             return;
         }
 
-        // Create tab navigation
+        // Create inner tab navigation (Dashboard / All Threats / Ransomware)
         const tabNav = createTabNavigation();
 
-        // Insert tab navigation after the 7-day retention notice
-        const retentionNotice = mainContainer.querySelector('[style*="7-Day IOC"]')?.parentElement;
-        if (retentionNotice) {
-            retentionNotice.after(tabNav);
+        // Insert tab navigation at the top of IOC tab content
+        // But after the data policy notice if possible
+        const iocPolicy = iocTabContent.querySelector('div[style*="linear-gradient"]');
+        if (iocPolicy) {
+            iocPolicy.after(tabNav);
         } else {
-            mainContainer.prepend(tabNav);
+            iocTabContent.prepend(tabNav);
         }
 
         // Wrap existing content in "All Threats" tab
-        // Wrap existing IOC content in "All Threats" tab
-        // IMPORTANT: filter out AI content and Main Tabs so they don't get wrapped!
-        const existingContent = Array.from(mainContainer.children).slice(
-            Array.from(mainContainer.children).indexOf(tabNav) + 1
-        ).filter(el => {
-            return !el.classList.contains('ai-tab-content') &&
-                el.id !== 'ai-tab-content' &&
-                !el.classList.contains('main-threat-tabs') &&
-                !el.classList.contains('dashboard-controls');
-        });
+        // We only want to wrap content that is currently inside ioc-tab-content
+        // AND is after our newly inserted tabNav
+        const existingContent = Array.from(iocTabContent.children).slice(
+            Array.from(iocTabContent.children).indexOf(tabNav) + 1
+        );
 
         const threatsTab = document.createElement('div');
         threatsTab.id = 'threats-tab';
@@ -61,16 +60,34 @@
         // Append filtered content to threats tab
         existingContent.forEach(el => threatsTab.appendChild(el));
 
+        // MOVE ORPHANED SECTIONS INTO TABS
+        // 1. Move Static Snapshot (Text Lists) & Vendor Status Grid into "All Threats" tab
+        const staticSnapshot = document.getElementById('staticSnapshotContainer');
+        const vendorStatusSection = document.getElementById('vendorStatusSection');
+        const iocExtended = document.querySelector('.ioc-extended-content');
+
+        if (staticSnapshot) threatsTab.appendChild(staticSnapshot);
+        if (vendorStatusSection) threatsTab.appendChild(vendorStatusSection);
+        if (iocExtended) threatsTab.appendChild(iocExtended);
+
         // Create dashboard tab
         const dashboardTab = createDashboardTab();
+
+        // 2. Move Analytics Section (Charts) into "Dashboard" tab
+        const analyticsSection = document.getElementById('analyticsSection');
+        if (analyticsSection) {
+            dashboardTab.querySelector('.dashboard-grid').appendChild(analyticsSection);
+            analyticsSection.style.display = 'block'; // Ensure it's visible inside the tab
+            analyticsSection.style.gridColumn = '1 / -1'; // Full width
+        }
 
         // Create ransomware tab
         const ransomwareTab = createRansomwareTab();
 
-        // Add tabs to container
-        mainContainer.appendChild(dashboardTab);
-        mainContainer.appendChild(ransomwareTab);
-        mainContainer.appendChild(threatsTab);
+        // Add tabs to IOC container (NOT main container)
+        iocTabContent.appendChild(dashboardTab);
+        iocTabContent.appendChild(ransomwareTab);
+        iocTabContent.appendChild(threatsTab);
 
         // Set initial active tab
         showTab('dashboard');
