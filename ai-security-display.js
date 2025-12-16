@@ -1,16 +1,13 @@
 /**
- * AI Security Display v2.0 - Unified Threat Intelligence Dashboard
+ * AI Security Display v3.0 - Unified Threat Intelligence Dashboard
  * ═══════════════════════════════════════════════════════════════════
- * Handles loading and rendering AI security data from:
- * - MITRE ATLAS (AI attack techniques)
- * - AI Incident Database (real-world AI incidents)
- * - OWASP LLM Top 10 (2025 vulnerabilities)
+ * Major restructure with main tabs separating Traditional IOCs and AI Security
  * 
  * Features:
- * - Beautiful icons and emojis
+ * - Main tab switching (Traditional IOCs vs AI Security)
+ * - FontAwesome icons (NO emojis)
  * - Clickable cards with external links
- * - Proper tab switching
- * - Category icons for incidents
+ * - Proper sub-tab switching for AI section
  */
 
 (function () {
@@ -24,31 +21,33 @@
         owasp: 'owasp-llm-top10.json'
     };
 
-    // Category Icons Map
+    // Category Icons Map - FontAwesome classes
     const CATEGORY_ICONS = {
-        'deepfake': '🎭',
-        'prompt_injection': '💉',
-        'data_leak': '🔓',
-        'misinformation': '📰',
-        'bias': '⚖️',
-        'autonomous_vehicle': '🚗',
-        'content_moderation': '🛡️',
-        'fraud': '💸',
-        'other': '🤖'
+        'deepfake': 'fa-masks-theater',
+        'prompt_injection': 'fa-syringe',
+        'data_leak': 'fa-unlock',
+        'misinformation': 'fa-newspaper',
+        'bias': 'fa-balance-scale',
+        'autonomous_vehicle': 'fa-car',
+        'content_moderation': 'fa-shield-alt',
+        'fraud': 'fa-money-bill-wave',
+        'privacy': 'fa-user-secret',
+        'discrimination': 'fa-ban',
+        'other': 'fa-robot'
     };
 
-    // OWASP Vulnerability Icons
+    // OWASP Vulnerability Icons - FontAwesome classes
     const OWASP_ICONS = {
-        'LLM01': '💉', // Prompt Injection
-        'LLM02': '🔐', // Sensitive Info Disclosure
-        'LLM03': '📦', // Supply Chain
-        'LLM04': '☠️', // Data Poisoning
-        'LLM05': '📤', // Improper Output
-        'LLM06': '🤖', // Excessive Agency
-        'LLM07': '🔍', // System Prompt Leakage
-        'LLM08': '📊', // Vector Weaknesses
-        'LLM09': '🗣️', // Misinformation
-        'LLM10': '💰'  // Unbounded Consumption
+        'LLM01': 'fa-syringe',       // Prompt Injection
+        'LLM02': 'fa-key',           // Sensitive Info Disclosure
+        'LLM03': 'fa-boxes',         // Supply Chain
+        'LLM04': 'fa-skull-crossbones', // Data Poisoning
+        'LLM05': 'fa-file-export',   // Improper Output
+        'LLM06': 'fa-robot',         // Excessive Agency
+        'LLM07': 'fa-search',        // System Prompt Leakage
+        'LLM08': 'fa-database',      // Vector Weaknesses
+        'LLM09': 'fa-comment-slash', // Misinformation
+        'LLM10': 'fa-coins'          // Unbounded Consumption
     };
 
     // State
@@ -58,6 +57,58 @@
         owasp: null,
         loaded: false
     };
+
+    // ══════════════════════════════════════════════════════════════════
+    // Main Tab Switching (Traditional IOCs vs AI Security)
+    // ══════════════════════════════════════════════════════════════════
+    function initMainTabs() {
+        const tabButtons = document.querySelectorAll('.main-tab-btn');
+        const iocContent = document.getElementById('ioc-tab-content');
+        const aiContent = document.getElementById('ai-tab-content');
+
+        if (!tabButtons.length) {
+            console.warn('[AI Security] Main tab buttons not found');
+            return;
+        }
+
+        tabButtons.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetTab = btn.getAttribute('data-main-tab');
+                console.log('[AI Security] Main tab clicked:', targetTab);
+
+                // Update button styles
+                tabButtons.forEach(b => {
+                    if (b.getAttribute('data-main-tab') === targetTab) {
+                        b.style.background = targetTab === 'ioc'
+                            ? 'linear-gradient(135deg, var(--accent-cyan), #0066ff)'
+                            : 'linear-gradient(135deg, #9d4edd, #ff006e)';
+                        b.style.color = 'white';
+                        b.style.boxShadow = targetTab === 'ioc'
+                            ? '0 4px 15px rgba(0, 217, 255, 0.3)'
+                            : '0 4px 15px rgba(157, 78, 221, 0.3)';
+                        b.classList.add('active');
+                    } else {
+                        b.style.background = 'transparent';
+                        b.style.color = 'var(--text-secondary)';
+                        b.style.boxShadow = 'none';
+                        b.classList.remove('active');
+                    }
+                });
+
+                // Show/hide content
+                if (targetTab === 'ioc') {
+                    if (iocContent) iocContent.style.display = 'block';
+                    if (aiContent) aiContent.style.display = 'none';
+                } else {
+                    if (iocContent) iocContent.style.display = 'none';
+                    if (aiContent) aiContent.style.display = 'block';
+                }
+            });
+        });
+
+        console.log('[AI Security] Main tabs initialized');
+    }
 
     // ══════════════════════════════════════════════════════════════════
     // Data Loading
@@ -70,20 +121,26 @@
                 const response = await fetch(`${AI_DATA_BASE}/${filename}`);
                 if (response.ok) {
                     aiData[key] = await response.json();
-                    console.log(`[AI Security] ✓ Loaded ${key}:`, aiData[key]);
+                    console.log(`[AI Security] Loaded ${key}`);
                 } else {
-                    console.warn(`[AI Security] ✗ Failed to load ${filename}: ${response.status}`);
+                    console.warn(`[AI Security] Failed to load ${filename}: ${response.status}`);
                 }
             } catch (error) {
-                console.error(`[AI Security] ✗ Error loading ${filename}:`, error);
+                console.error(`[AI Security] Error loading ${filename}:`, error);
             }
         });
 
         await Promise.all(loadPromises);
         aiData.loaded = true;
 
+        // Initialize main tabs first
+        initMainTabs();
+
         // Render the dashboard
         renderAIDashboard();
+
+        // Update badge counts
+        updateMainBadges();
     }
 
     // ══════════════════════════════════════════════════════════════════
@@ -95,8 +152,8 @@
         // Render AI Stats Cards
         renderAIStats();
 
-        // Render Top Threats
-        renderTopThreats();
+        // Render Top AI Threats (only AI threats now)
+        renderTopAIThreats();
 
         // Render ATLAS section
         renderATLAS();
@@ -110,10 +167,27 @@
         // Update tab badge counts
         updateTabBadges();
 
-        // Initialize tab switching
+        // Initialize AI sub-tab switching
         initAITabs();
 
-        console.log('[AI Security] ✓ Dashboard render complete');
+        console.log('[AI Security] Dashboard render complete');
+    }
+
+    function updateMainBadges() {
+        const iocBadge = document.getElementById('ioc-total-badge');
+        const aiBadge = document.getElementById('ai-total-badge');
+
+        // Get IOC count from global threat data
+        if (iocBadge && window.threatIntelData?.totalIOCs) {
+            iocBadge.textContent = window.threatIntelData.totalIOCs.toLocaleString();
+        }
+
+        // Calculate AI count
+        if (aiBadge) {
+            const aiCount = (aiData.atlas?.stats?.totalTechniques || 0) +
+                (aiData.aiid?.stats?.total || 0) + 10; // 10 for OWASP
+            aiBadge.textContent = aiCount;
+        }
     }
 
     function updateTabBadges() {
@@ -129,7 +203,7 @@
     }
 
     // ══════════════════════════════════════════════════════════════════
-    // Stats Cards
+    // Stats Cards (with FontAwesome icons)
     // ══════════════════════════════════════════════════════════════════
     function renderAIStats() {
         const container = document.getElementById('ai-stats-container');
@@ -148,27 +222,27 @@
         };
 
         container.innerHTML = `
-            <div class="ai-stat-card" onclick="document.querySelector('[data-tab=atlas]').click()">
+            <div class="ai-stat-card" onclick="document.querySelector('.ai-tab-btn[data-tab=atlas]').click()">
                 <div class="stat-icon atlas">
-                    🎯
+                    <i class="fas fa-crosshairs" style="color: #9d4edd;"></i>
                 </div>
                 <div class="stat-value">${stats.techniques}</div>
                 <div class="stat-label">AI Attack Techniques</div>
                 <div class="stat-sublabel">MITRE ATLAS Framework</div>
             </div>
             
-            <div class="ai-stat-card" onclick="document.querySelector('[data-tab=incidents]').click()">
+            <div class="ai-stat-card" onclick="document.querySelector('.ai-tab-btn[data-tab=incidents]').click()">
                 <div class="stat-icon aiid">
-                    🤖
+                    <i class="fas fa-exclamation-triangle" style="color: #ff9500;"></i>
                 </div>
                 <div class="stat-value">${stats.incidents}</div>
                 <div class="stat-label">AI Incidents</div>
                 <div class="stat-sublabel">${stats.incidentsRecent} new in last 7 days</div>
             </div>
             
-            <div class="ai-stat-card" onclick="document.querySelector('[data-tab=owasp]').click()">
+            <div class="ai-stat-card" onclick="document.querySelector('.ai-tab-btn[data-tab=owasp]').click()">
                 <div class="stat-icon owasp">
-                    🛡️
+                    <i class="fas fa-lock" style="color: #3a86ff;"></i>
                 </div>
                 <div class="stat-value">10</div>
                 <div class="stat-label">OWASP LLM Top 10</div>
@@ -177,7 +251,7 @@
             
             <div class="ai-stat-card">
                 <div class="stat-icon correlation">
-                    📊
+                    <i class="fas fa-project-diagram" style="color: #ff006e;"></i>
                 </div>
                 <div class="stat-value">${stats.caseStudies}</div>
                 <div class="stat-label">Case Studies</div>
@@ -187,92 +261,39 @@
     }
 
     // ══════════════════════════════════════════════════════════════════
-    // Top Threats Today - With AI and IOC Tabs
+    // Top AI Threats (Only AI-related now)
     // ══════════════════════════════════════════════════════════════════
-    function renderTopThreats() {
+    function renderTopAIThreats() {
         const container = document.getElementById('top-threats-container');
         if (!container) return;
 
         const aiThreats = generateAIThreats();
-        const iocThreats = generateIOCThreats();
 
-        const html = `
-            <div class="threats-tabs">
-                <button class="threats-tab-btn active" data-threats-tab="ai">
-                    🤖 AI Threats <span class="threats-tab-count">${aiThreats.length}</span>
-                </button>
-                <button class="threats-tab-btn" data-threats-tab="ioc">
-                    🛡️ Traditional IOCs <span class="threats-tab-count">${iocThreats.length}</span>
-                </button>
-            </div>
-            
-            <div class="threats-content active" data-threats-tab="ai">
-                ${aiThreats.length === 0 ?
-                '<div class="ai-empty">🤖<p>No AI threats detected</p></div>' :
-                aiThreats.map((threat, index) => renderThreatItem(threat, index)).join('')
-            }
-            </div>
-            
-            <div class="threats-content" data-threats-tab="ioc" style="display: none;">
-                ${iocThreats.length === 0 ?
-                '<div class="ai-empty">🛡️<p>No IOC threats detected</p></div>' :
-                iocThreats.map((threat, index) => renderThreatItem(threat, index)).join('')
-            }
-            </div>
-        `;
+        if (aiThreats.length === 0) {
+            container.innerHTML = '<div class="ai-empty"><i class="fas fa-robot" style="font-size: 2rem; color: var(--text-muted);"></i><p>No AI threats detected</p></div>';
+            return;
+        }
 
-        container.innerHTML = html;
-
-        // Initialize threat tabs
-        initThreatTabs();
-    }
-
-    function renderThreatItem(threat, index) {
-        return `
+        const html = aiThreats.map((threat, index) => `
             <a href="${threat.url}" target="_blank" rel="noopener" class="threat-item" data-type="${threat.type}">
                 <div class="threat-rank ${threat.severity}">${index + 1}</div>
                 <div class="threat-icon ${threat.type}">
-                    ${threat.emoji}
+                    <i class="fas ${threat.icon}" style="color: ${threat.iconColor};"></i>
                 </div>
                 <div class="threat-info">
                     <div class="threat-name">${escapeHtml(threat.name)}</div>
                     <div class="threat-meta">
                         <span class="threat-source">
-                            ${threat.sourceEmoji} ${threat.source}
+                            <i class="fas ${threat.sourceIcon}" style="color: ${threat.iconColor};"></i> ${threat.source}
                         </span>
-                        <span>📅 ${threat.details}</span>
+                        <span><i class="fas fa-calendar-alt"></i> ${threat.details}</span>
                     </div>
                 </div>
-                <div class="threat-arrow">→</div>
+                <div class="threat-arrow"><i class="fas fa-chevron-right"></i></div>
             </a>
-        `;
-    }
+        `).join('');
 
-    function initThreatTabs() {
-        const tabButtons = document.querySelectorAll('.threats-tab-btn');
-        const tabContents = document.querySelectorAll('.threats-content');
-
-        tabButtons.forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                e.preventDefault();
-                const targetTab = btn.getAttribute('data-threats-tab');
-
-                // Update button states
-                tabButtons.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-
-                // Update content visibility
-                tabContents.forEach(content => {
-                    if (content.getAttribute('data-threats-tab') === targetTab) {
-                        content.classList.add('active');
-                        content.style.display = 'block';
-                    } else {
-                        content.classList.remove('active');
-                        content.style.display = 'none';
-                    }
-                });
-            });
-        });
+        container.innerHTML = html;
     }
 
     function generateAIThreats() {
@@ -286,10 +307,11 @@
                     type: 'ai_incident',
                     name: incident.title,
                     source: 'AI Incident DB',
-                    sourceEmoji: '📋',
+                    sourceIcon: 'fa-database',
                     details: incident.date,
                     severity: incident.severity || 'medium',
-                    emoji: categoryIcon,
+                    icon: categoryIcon,
+                    iconColor: '#ff9500',
                     url: `https://incidentdatabase.ai/cite/${incident.incident_id}`,
                     score: incident.severity === 'critical' ? 150 : incident.severity === 'high' ? 100 : 50
                 });
@@ -306,10 +328,11 @@
                     type: 'ai_technique',
                     name: `${promptInjection.id}: ${promptInjection.name}`,
                     source: 'MITRE ATLAS',
-                    sourceEmoji: '🎯',
+                    sourceIcon: 'fa-crosshairs',
                     details: 'Most exploited technique',
                     severity: 'critical',
-                    emoji: '💉',
+                    icon: 'fa-syringe',
+                    iconColor: '#9d4edd',
                     url: `https://atlas.mitre.org/techniques/${promptInjection.id}`,
                     score: 180
                 });
@@ -324,10 +347,11 @@
                     type: 'ai_technique',
                     name: `${topVuln.id}: ${topVuln.name}`,
                     source: 'OWASP LLM',
-                    sourceEmoji: '🛡️',
+                    sourceIcon: 'fa-lock',
                     details: '2025 Top 10 #1',
                     severity: 'critical',
-                    emoji: OWASP_ICONS[topVuln.id] || '🔒',
+                    icon: OWASP_ICONS[topVuln.id] || 'fa-lock',
+                    iconColor: '#3a86ff',
                     url: topVuln.sourceUrl || 'https://owasp.org/www-project-top-10-for-large-language-model-applications/',
                     score: 170
                 });
@@ -336,93 +360,6 @@
 
         // Sort by score and return top 5
         return threats.sort((a, b) => b.score - a.score).slice(0, 5);
-    }
-
-    function generateIOCThreats() {
-        const threats = [];
-
-        // Get IOC data from the main threat intel data object
-        const threatData = window.threatIntelData;
-
-        if (threatData?.campaigns && Array.isArray(threatData.campaigns)) {
-            threatData.campaigns.slice(0, 5).forEach(campaign => {
-                threats.push({
-                    type: 'campaign',
-                    name: campaign.name || campaign.campaign || 'Unknown Campaign',
-                    source: campaign.vendor || 'IOC Feed',
-                    sourceEmoji: '🔍',
-                    details: `${campaign.count || 0} IOCs detected`,
-                    severity: campaign.severity || 'high',
-                    emoji: getCampaignEmoji(campaign.name || campaign.campaign),
-                    url: getVendorUrl(campaign.vendor),
-                    score: campaign.count || 0
-                });
-            });
-        }
-
-        // If no campaigns, try to get from vendor data
-        if (threats.length === 0 && threatData?.vendors) {
-            Object.entries(threatData.vendors).slice(0, 5).forEach(([vendor, data]) => {
-                if (data.iocCount > 0) {
-                    threats.push({
-                        type: 'campaign',
-                        name: `${vendor} Active Threats`,
-                        source: vendor,
-                        sourceEmoji: '📊',
-                        details: `${data.iocCount.toLocaleString()} IOCs`,
-                        severity: data.iocCount > 1000 ? 'critical' : data.iocCount > 100 ? 'high' : 'medium',
-                        emoji: getVendorEmoji(vendor),
-                        url: getVendorUrl(vendor),
-                        score: data.iocCount
-                    });
-                }
-            });
-        }
-
-        // Sort by score and return top 5
-        return threats.sort((a, b) => b.score - a.score).slice(0, 5);
-    }
-
-    function getCampaignEmoji(name) {
-        if (!name) return '⚠️';
-        const lowerName = name.toLowerCase();
-        if (lowerName.includes('phish')) return '🎣';
-        if (lowerName.includes('malware') || lowerName.includes('trojan')) return '🦠';
-        if (lowerName.includes('ransom')) return '💀';
-        if (lowerName.includes('botnet') || lowerName.includes('c2')) return '🤖';
-        if (lowerName.includes('emotet')) return '👹';
-        if (lowerName.includes('spam')) return '📧';
-        return '⚠️';
-    }
-
-    function getVendorEmoji(vendor) {
-        const emojiMap = {
-            'OpenPhish': '🎣',
-            'URLhaus': '🔗',
-            'ThreatFox': '🦊',
-            'Feodo Tracker': '🤖',
-            'Blocklist.de': '🚫',
-            'SSL Blacklist': '🔐',
-            'Malware Bazaar': '🦠',
-            'Spamhaus DROP': '🛑',
-            'CINS Army': '⚔️'
-        };
-        return emojiMap[vendor] || '🛡️';
-    }
-
-    function getVendorUrl(vendor) {
-        const urlMap = {
-            'OpenPhish': 'https://openphish.com/',
-            'URLhaus': 'https://urlhaus.abuse.ch/',
-            'ThreatFox': 'https://threatfox.abuse.ch/',
-            'Feodo Tracker': 'https://feodotracker.abuse.ch/',
-            'Blocklist.de': 'https://www.blocklist.de/',
-            'SSL Blacklist': 'https://sslbl.abuse.ch/',
-            'Malware Bazaar': 'https://bazaar.abuse.ch/',
-            'Spamhaus DROP': 'https://www.spamhaus.org/drop/',
-            'CINS Army': 'http://cinsscore.com/'
-        };
-        return urlMap[vendor] || '#';
     }
 
     // ══════════════════════════════════════════════════════════════════
@@ -436,14 +373,14 @@
         }
 
         if (!aiData.atlas) {
-            container.innerHTML = '<div class="ai-empty">🎯<p>Loading ATLAS techniques...</p></div>';
+            container.innerHTML = '<div class="ai-empty"><i class="fas fa-crosshairs" style="font-size: 2rem; color: var(--text-muted);"></i><p>Loading ATLAS techniques...</p></div>';
             return;
         }
 
         const techniques = aiData.atlas.techniques || [];
 
         if (techniques.length === 0) {
-            container.innerHTML = '<div class="ai-empty">🎯<p>No ATLAS techniques loaded</p></div>';
+            container.innerHTML = '<div class="ai-empty"><i class="fas fa-crosshairs" style="font-size: 2rem; color: var(--text-muted);"></i><p>No ATLAS techniques loaded</p></div>';
             return;
         }
 
@@ -459,20 +396,20 @@
                     <a href="https://atlas.mitre.org/techniques/${tech.id}" target="_blank" rel="noopener" 
                        class="atlas-card" data-id="${tech.id}">
                         <div class="atlas-card-header">
-                            <span class="atlas-id">🎯 ${tech.id}</span>
+                            <span class="atlas-id"><i class="fas fa-crosshairs"></i> ${tech.id}</span>
                             <span class="atlas-severity ${tech.severity || 'low'}">${(tech.severity || 'low').toUpperCase()}</span>
                         </div>
                         <div class="atlas-name">${escapeHtml(tech.name)}</div>
                         <div class="atlas-desc">${escapeHtml(tech.description || 'Click to view details on MITRE ATLAS')}</div>
                         <div class="atlas-footer">
-                            <span class="atlas-link">View Details →</span>
+                            <span class="atlas-link">View Details <i class="fas fa-external-link-alt"></i></span>
                         </div>
                     </a>
                 `).join('')}
             </div>
             <div class="view-all-link">
                 <a href="https://atlas.mitre.org/matrices/ATLAS" target="_blank" rel="noopener">
-                    🎯 View all ${techniques.length} techniques on MITRE ATLAS →
+                    <i class="fas fa-crosshairs"></i> View all ${techniques.length} techniques on MITRE ATLAS <i class="fas fa-external-link-alt"></i>
                 </a>
             </div>
         `;
@@ -491,14 +428,14 @@
         }
 
         if (!aiData.aiid) {
-            container.innerHTML = '<div class="ai-empty">🤖<p>Loading AI incidents...</p></div>';
+            container.innerHTML = '<div class="ai-empty"><i class="fas fa-exclamation-triangle" style="font-size: 2rem; color: var(--text-muted);"></i><p>Loading AI incidents...</p></div>';
             return;
         }
 
         const incidents = aiData.aiid.incidents || [];
 
         if (incidents.length === 0) {
-            container.innerHTML = '<div class="ai-empty">🤖<p>No AI incidents loaded</p></div>';
+            container.innerHTML = '<div class="ai-empty"><i class="fas fa-exclamation-triangle" style="font-size: 2rem; color: var(--text-muted);"></i><p>No AI incidents loaded</p></div>';
             return;
         }
 
@@ -509,25 +446,25 @@
             const categoryIcon = CATEGORY_ICONS[incident.category] || CATEGORY_ICONS['other'];
             return `
                     <a href="https://incidentdatabase.ai/cite/${incident.incident_id}" target="_blank" rel="noopener" class="incident-card">
-                        <span class="incident-emoji">${categoryIcon}</span>
+                        <span class="incident-icon"><i class="fas ${categoryIcon}" style="color: #ff9500;"></i></span>
                         <div class="incident-content">
                             <div class="incident-id-badge">${incident.id}</div>
                             <div class="incident-title">${escapeHtml(incident.title)}</div>
                             <div class="incident-meta">
                                 <span class="incident-category">
-                                    🏷️ ${formatCategory(incident.category)}
+                                    <i class="fas fa-tag"></i> ${formatCategory(incident.category)}
                                 </span>
                                 <span class="incident-severity ${incident.severity}">${incident.severity.toUpperCase()}</span>
-                                <span class="incident-date">📅 ${incident.date}</span>
+                                <span class="incident-date"><i class="fas fa-calendar-alt"></i> ${incident.date}</span>
                             </div>
                         </div>
-                        <span class="incident-arrow">→</span>
+                        <span class="incident-arrow"><i class="fas fa-chevron-right"></i></span>
                     </a>
                 `}).join('')}
             </div>
             <div class="view-all-link">
-                <a href="https://incidentdatabase.ai/apps/discover/" target="_blank" rel="noopener">
-                    🤖 Explore all ${incidents.length} incidents on AI Incident Database →
+                <a href="https://incidentdatabase.ai/apps/discover/" target="_blank" rel="noopener" style="color: #ff9500; background: rgba(255, 149, 0, 0.1); border-color: rgba(255, 149, 0, 0.2);">
+                    <i class="fas fa-exclamation-triangle"></i> Explore all ${incidents.length} incidents on AI Incident Database <i class="fas fa-external-link-alt"></i>
                 </a>
             </div>
         `;
@@ -546,25 +483,25 @@
         }
 
         if (!aiData.owasp) {
-            container.innerHTML = '<div class="ai-empty">🛡️<p>Loading OWASP vulnerabilities...</p></div>';
+            container.innerHTML = '<div class="ai-empty"><i class="fas fa-lock" style="font-size: 2rem; color: var(--text-muted);"></i><p>Loading OWASP vulnerabilities...</p></div>';
             return;
         }
 
         const vulns = aiData.owasp.vulnerabilities || [];
 
         if (vulns.length === 0) {
-            container.innerHTML = '<div class="ai-empty">🛡️<p>No OWASP vulnerabilities loaded</p></div>';
+            container.innerHTML = '<div class="ai-empty"><i class="fas fa-lock" style="font-size: 2rem; color: var(--text-muted);"></i><p>No OWASP vulnerabilities loaded</p></div>';
             return;
         }
 
         const html = `
             <div class="owasp-grid">
                 ${vulns.map(vuln => {
-            const icon = OWASP_ICONS[vuln.id] || '🔒';
+            const icon = OWASP_ICONS[vuln.id] || 'fa-lock';
             const linkUrl = vuln.sourceUrl || 'https://owasp.org/www-project-top-10-for-large-language-model-applications/';
             return `
                     <a href="${linkUrl}" target="_blank" rel="noopener" class="owasp-card">
-                        <div class="owasp-emoji">${icon}</div>
+                        <div class="owasp-icon"><i class="fas ${icon}" style="color: #3a86ff;"></i></div>
                         <div class="owasp-rank-badge">#${vuln.rank}</div>
                         <div class="owasp-header">
                             <span class="owasp-id">${vuln.id}:2025</span>
@@ -573,14 +510,14 @@
                         <div class="owasp-name">${escapeHtml(vuln.name)}</div>
                         <div class="owasp-desc">${escapeHtml(vuln.description || 'Click to view details')}</div>
                         <div class="owasp-footer">
-                            <span class="owasp-link">Learn More →</span>
+                            <span class="owasp-link">Learn More <i class="fas fa-external-link-alt"></i></span>
                         </div>
                     </a>
                 `}).join('')}
             </div>
             <div class="view-all-link owasp-link-color">
                 <a href="https://owasp.org/www-project-top-10-for-large-language-model-applications/" target="_blank" rel="noopener">
-                    🛡️ View Official OWASP LLM Top 10 Project →
+                    <i class="fas fa-lock"></i> View Official OWASP LLM Top 10 Project <i class="fas fa-external-link-alt"></i>
                 </a>
             </div>
         `;
@@ -589,19 +526,19 @@
     }
 
     // ══════════════════════════════════════════════════════════════════
-    // Tab Navigation
+    // AI Sub-Tab Navigation
     // ══════════════════════════════════════════════════════════════════
     function initAITabs() {
         const tabButtons = document.querySelectorAll('.ai-tab-btn');
         const tabContents = document.querySelectorAll('.ai-tab-content');
 
-        console.log('[AI Security] Initializing tabs:', tabButtons.length, 'buttons,', tabContents.length, 'contents');
+        console.log('[AI Security] Initializing AI sub-tabs:', tabButtons.length, 'buttons,', tabContents.length, 'contents');
 
         tabButtons.forEach(btn => {
             btn.addEventListener('click', (e) => {
                 e.preventDefault();
                 const targetTab = btn.getAttribute('data-tab');
-                console.log('[AI Security] Tab clicked:', targetTab);
+                console.log('[AI Security] AI sub-tab clicked:', targetTab);
 
                 // Update button states
                 tabButtons.forEach(b => b.classList.remove('active'));
@@ -659,6 +596,14 @@
         refresh: () => {
             aiData = { atlas: null, aiid: null, owasp: null, loaded: false };
             loadAIData();
+        },
+        switchToAI: () => {
+            const aiBtn = document.querySelector('.main-tab-btn[data-main-tab="ai"]');
+            if (aiBtn) aiBtn.click();
+        },
+        switchToIOC: () => {
+            const iocBtn = document.querySelector('.main-tab-btn[data-main-tab="ioc"]');
+            if (iocBtn) iocBtn.click();
         }
     };
 
