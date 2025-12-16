@@ -385,3 +385,12 @@ window.threatIntelData = {
         "lastCalculated": "2025-12-16 14:13 IST"
     }
 };
+
+// Update the Traditional IOCs tab badge with actual count
+(function () {
+    const iocCount = window.threatIntelData?.dailySummary?.stats?.totalIndicators || 0;
+    const iocBadge = document.getElementById('ioc-total-badge');
+    if (iocBadge && iocCount > 0) {
+        iocBadge.textContent = iocCount.toLocaleString();
+    }
+})();
