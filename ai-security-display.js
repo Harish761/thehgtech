@@ -449,8 +449,73 @@
     }
 
     // ══════════════════════════════════════════════════════════════════
-    // MITRE ATLAS Section
+    // MITRE ATLAS Section with Smart Priority Scoring
     // ══════════════════════════════════════════════════════════════════
+
+    // Calculate priority score for a technique
+    function calculateTechniquePriority(tech) {
+        let score = 0;
+        const name = tech.name?.toLowerCase() || '';
+        const id = tech.id || '';
+
+        // Severity scoring
+        if (tech.severity === 'high') score += 50;
+        else if (tech.severity === 'medium') score += 25;
+
+        // LLM-related techniques (most relevant in 2025)
+        const llmKeywords = ['llm', 'prompt', 'jailbreak', 'injection', 'rag', 'agent', 'chat'];
+        if (llmKeywords.some(kw => name.includes(kw))) score += 40;
+
+        // High-impact attack types
+        const dangerKeywords = ['poison', 'exfiltration', 'credential', 'backdoor', 'manipulation'];
+        if (dangerKeywords.some(kw => name.includes(kw))) score += 30;
+
+        // Check if technique is referenced in case studies
+        const caseStudies = aiData.atlas?.caseStudies || [];
+        const inCaseStudy = caseStudies.some(cs =>
+            cs.techniques?.includes(id) || cs.techniques?.some(t => t.includes(id))
+        );
+        if (inCaseStudy) score += 35;
+
+        // Check correlation with OWASP LLM Top 10
+        const owaspCorrelation = {
+            'LLM01': ['injection', 'prompt'],
+            'LLM02': ['leakage', 'disclosure', 'exfiltration'],
+            'LLM03': ['supply chain', 'poison'],
+            'LLM04': ['poison', 'training'],
+            'LLM05': ['output'],
+            'LLM06': ['agent', 'tool', 'execution'],
+            'LLM07': ['system prompt'],
+            'LLM08': ['rag', 'vector', 'embedding'],
+            'LLM09': ['hallucination', 'misinformation'],
+            'LLM10': ['consumption', 'denial']
+        };
+        for (const [vulnId, keywords] of Object.entries(owaspCorrelation)) {
+            if (keywords.some(kw => name.includes(kw))) {
+                score += 20;
+                break;
+            }
+        }
+
+        // Cross-reference with recent AIID incidents
+        const incidents = aiData.aiid?.incidents || [];
+        const inIncident = incidents.some(inc => {
+            const title = inc.title?.toLowerCase() || '';
+            return name.split(' ').some(word => word.length > 4 && title.includes(word));
+        });
+        if (inIncident) score += 25;
+
+        return score;
+    }
+
+    // Get priority badge HTML
+    function getPriorityBadge(score) {
+        if (score >= 100) return '<span class="priority-badge critical"><i class="fas fa-fire"></i> Critical</span>';
+        if (score >= 70) return '<span class="priority-badge high"><i class="fas fa-bolt"></i> High</span>';
+        if (score >= 40) return '<span class="priority-badge medium"><i class="fas fa-exclamation"></i> Elevated</span>';
+        return '';
+    }
+
     function renderATLAS() {
         const container = document.getElementById('atlas-container');
         if (!container) {
@@ -470,29 +535,37 @@
             return;
         }
 
-        // Show first 12 techniques, sorted by severity
-        const sortedTechniques = [...techniques].sort((a, b) => {
-            const severityOrder = { high: 0, medium: 1, low: 2 };
-            return (severityOrder[a.severity] || 2) - (severityOrder[b.severity] || 2);
-        }).slice(0, 12);
+        // Calculate priority scores and sort
+        const scoredTechniques = techniques.map(tech => ({
+            ...tech,
+            priorityScore: calculateTechniquePriority(tech)
+        })).sort((a, b) => b.priorityScore - a.priorityScore);
+
+        // Show top 15 prioritized techniques
+        const topTechniques = scoredTechniques.slice(0, 15);
 
         // Store techniques for modal access
         window._atlasData = {};
-        sortedTechniques.forEach(tech => { window._atlasData[tech.id] = tech; });
+        topTechniques.forEach(tech => { window._atlasData[tech.id] = tech; });
 
         const html = `
+            <div class="atlas-section-header">
+                <span class="atlas-subtitle"><i class="fas fa-chart-line"></i> Prioritized by severity, LLM relevance & real-world activity</span>
+                <span class="atlas-count">Showing ${topTechniques.length} of ${techniques.length}</span>
+            </div>
             <div class="atlas-grid">
-                ${sortedTechniques.map(tech => `
+                ${topTechniques.map(tech => `
                     <div class="atlas-card clickable" data-type="atlas" data-id="${tech.id}" 
                          onclick="window.showAIModal('atlas', window._atlasData['${tech.id}'])">
                         <div class="atlas-card-header">
                             <span class="atlas-id"><i class="fas fa-crosshairs"></i> ${tech.id}</span>
-                            <span class="atlas-severity ${tech.severity || 'low'}">${(tech.severity || 'low').toUpperCase()}</span>
+                            ${getPriorityBadge(tech.priorityScore)}
                         </div>
                         <div class="atlas-name">${escapeHtml(tech.name)}</div>
-                        <div class="atlas-desc">${escapeHtml(tech.description || 'Click to view full details')}</div>
+                        <div class="atlas-desc">${escapeHtml((tech.description || 'Click to view full details').substring(0, 120))}...</div>
                         <div class="atlas-footer">
-                            <span class="atlas-link"><i class="fas fa-expand"></i> View Details</span>
+                            <span class="atlas-severity ${tech.severity || 'low'}">${(tech.severity || 'low').toUpperCase()}</span>
+                            <span class="atlas-link"><i class="fas fa-expand"></i> Details</span>
                         </div>
                     </div>
                 `).join('')}
