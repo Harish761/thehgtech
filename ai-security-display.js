@@ -181,20 +181,34 @@
         const iocBadge = document.getElementById('ioc-total-badge');
         const aiBadge = document.getElementById('ai-total-badge');
 
-        // Get IOC count from global threat data or from the totalIOCs element
+        // Get IOC count from global threat data
         if (iocBadge) {
-            // Try to get from window.threatIntelData first
-            if (window.threatIntelData?.totalIOCs) {
-                iocBadge.textContent = window.threatIntelData.totalIOCs.toLocaleString();
-            } else {
-                // Fallback: read from the Total IOCs stat card that's already rendered
+            // Try multiple sources for IOC count
+            let iocCount = 0;
+
+            // Source 1: window.threatIntelData.dailySummary.stats.totalIndicators
+            if (window.threatIntelData?.dailySummary?.stats?.totalIndicators) {
+                iocCount = window.threatIntelData.dailySummary.stats.totalIndicators;
+            }
+            // Source 2: Sum from vendors
+            else if (window.threatIntelData?.vendors) {
+                iocCount = Object.values(window.threatIntelData.vendors)
+                    .reduce((sum, v) => sum + (v.iocCount || 0), 0);
+            }
+            // Source 3: Read from the Total IOCs stat card
+            else {
                 const totalIOCsElement = document.getElementById('totalIOCs');
                 if (totalIOCsElement && totalIOCsElement.textContent !== '0') {
                     iocBadge.textContent = totalIOCsElement.textContent;
-                } else {
-                    // Retry after a delay if data isn't loaded yet
-                    setTimeout(updateMainBadges, 1000);
+                    return;
                 }
+                // Retry after a delay if data isn't loaded yet
+                setTimeout(updateMainBadges, 1000);
+                return;
+            }
+
+            if (iocCount > 0) {
+                iocBadge.textContent = iocCount.toLocaleString();
             }
         }
 
