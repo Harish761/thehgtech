@@ -479,30 +479,44 @@
         backdrop-filter: blur(10px) !important;
     }
 
-    /* Horizontal stats row */
+    /* Horizontal stats row - Optimized for 5 items */
     .live-stats {
         display: flex !important;
         flex-direction: row !important;
+        flex-wrap: wrap !important;
         gap: 8px !important;
         margin: 0 !important;
         padding: 0 !important;
     }
 
     .stat-item {
-        flex: 1 !important;
+        flex: 1 1 40% !important;
+        /* 2 per row */
         padding: 12px 8px !important;
-        min-width: unset !important;
+        min-width: 100px !important;
         background: rgba(255, 255, 255, 0.05) !important;
         border-radius: 12px !important;
         border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    /* The divider ("+") needs to be smaller or hidden on mobile grid */
+    .stat-divider {
+        display: none !important;
+        /* Hide + separator on mobile to save space */
     }
 
     .stat-number {
         font-size: 1.3rem !important;
+        white-space: nowrap !important;
     }
 
     .stat-label {
-        font-size: 0.6rem !important;
+        font-size: 0.65rem !important;
+        text-align: center !important;
     }
 
     /* Hide animated elements on mobile for performance */
@@ -512,15 +526,20 @@
         display: none !important;
     }
 
-    /* Horizontal tabs */
+    /* Top Level Horizontal tabs (Dashboard | Threat Intel | Ransomware) */
     .dashboard-tabs,
     .tab-navigation {
         display: flex !important;
         flex-direction: row !important;
         overflow-x: auto !important;
         gap: 8px !important;
-        padding: 0 1rem !important;
+        padding: 0 16px 12px !important;
+        /* Bottom padding for scrollbar space if needed */
+        margin: 0 -16px 1rem !important;
+        /* Negative margin to pull to edges */
+        width: calc(100% + 32px) !important;
         scrollbar-width: none !important;
+        -webkit-overflow-scrolling: touch !important;
     }
 
     .dashboard-tabs::-webkit-scrollbar,
@@ -532,10 +551,55 @@
     .tab-navigation button,
     .tab-btn {
         flex: 0 0 auto !important;
-        padding: 10px 16px !important;
-        font-size: 0.85rem !important;
+        padding: 10px 18px !important;
+        font-size: 0.9rem !important;
         white-space: nowrap !important;
         border-radius: 20px !important;
+        background: rgba(255, 255, 255, 0.05);
+        /* Default inactive bg */
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .tab-btn.active {
+        background: var(--m-accent-gradient) !important;
+        color: #000 !important;
+        border: none !important;
+        box-shadow: 0 4px 15px rgba(0, 217, 255, 0.3) !important;
+    }
+
+    /* Inner Tabs (Trad IOCs | AI Security) */
+    .main-threat-tabs {
+        margin: 1rem 0 !important;
+    }
+
+    .main-tabs-nav {
+        flex-direction: column !important;
+        /* Stack vertically on mobile for touch targets */
+        gap: 8px !important;
+        background: transparent !important;
+        border: none !important;
+        padding: 0 !important;
+    }
+
+    .main-tab-btn {
+        width: 100% !important;
+        justify-content: space-between !important;
+        padding: 16px !important;
+        background: var(--m-bg-card) !important;
+        border: 1px solid var(--m-border) !important;
+        border-radius: 12px !important;
+        margin: 0 !important;
+    }
+
+    .main-tab-btn.active {
+        background: linear-gradient(135deg, rgba(0, 217, 255, 0.1), rgba(0, 102, 255, 0.1)) !important;
+        border-color: var(--m-accent-primary) !important;
+    }
+
+    /* Make badges prominent */
+    .main-tab-badge {
+        background: rgba(255, 255, 255, 0.1) !important;
+        font-size: 0.8rem !important;
     }
 
     /* ========== MOBILE HERO OPTIMIZATION ========== */
