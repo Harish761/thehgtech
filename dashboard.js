@@ -49,9 +49,12 @@ function renderDashboard(stats) {
 // Update dashboard with new data
 function updateDashboard(stats) {
     // Update counters
-    // Update counters
     const totalIOCs = document.getElementById('totalIOCs');
-    if (totalIOCs) totalIOCs.textContent = formatNumber(stats.totalIOCs);
+    if (totalIOCs) {
+        totalIOCs.textContent = formatNumber(stats.totalIOCs);
+        // Also update IOC tab badge
+        if (window.updateIOCBadge) window.updateIOCBadge(stats.totalIOCs);
+    }
 
     const totalURLs = document.getElementById('totalURLs');
     if (totalURLs) totalURLs.textContent = formatNumber(stats.byType.url || 0);
@@ -88,6 +91,11 @@ function animateCounter(elementId, target) {
         if (current >= target) {
             current = target;
             clearInterval(timer);
+
+            // Update the main IOC tab badge when totalIOCs counter completes
+            if (elementId === 'totalIOCs' && window.updateIOCBadge) {
+                window.updateIOCBadge(target);
+            }
         }
         if (element) {
             element.textContent = formatNumber(Math.floor(current));

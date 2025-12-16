@@ -181,9 +181,21 @@
         const iocBadge = document.getElementById('ioc-total-badge');
         const aiBadge = document.getElementById('ai-total-badge');
 
-        // Get IOC count from global threat data
-        if (iocBadge && window.threatIntelData?.totalIOCs) {
-            iocBadge.textContent = window.threatIntelData.totalIOCs.toLocaleString();
+        // Get IOC count from global threat data or from the totalIOCs element
+        if (iocBadge) {
+            // Try to get from window.threatIntelData first
+            if (window.threatIntelData?.totalIOCs) {
+                iocBadge.textContent = window.threatIntelData.totalIOCs.toLocaleString();
+            } else {
+                // Fallback: read from the Total IOCs stat card that's already rendered
+                const totalIOCsElement = document.getElementById('totalIOCs');
+                if (totalIOCsElement && totalIOCsElement.textContent !== '0') {
+                    iocBadge.textContent = totalIOCsElement.textContent;
+                } else {
+                    // Retry after a delay if data isn't loaded yet
+                    setTimeout(updateMainBadges, 1000);
+                }
+            }
         }
 
         // Calculate AI count
@@ -193,6 +205,14 @@
             aiBadge.textContent = aiCount;
         }
     }
+
+    // Also expose a function to update IOC badge when data loads
+    window.updateIOCBadge = function (count) {
+        const iocBadge = document.getElementById('ioc-total-badge');
+        if (iocBadge && count) {
+            iocBadge.textContent = typeof count === 'number' ? count.toLocaleString() : count;
+        }
+    };
 
     function updateTabBadges() {
         const atlasCount = document.getElementById('atlas-count');
