@@ -4,67 +4,53 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Dec 16 2025",
-            "title": "Russian Hackers Exploit Misconfigurations in Critical Infrastructure",
-            "content": "Amazon has reported a shift in tactics by Russian state-sponsored hackers who are now targeting misconfigurations in critical infrastructure instead of relying on zero-day and n-day vulnerabilities. This change indicates a strategic pivot towards exploiting human error and oversight in system configurations. The focus on misconfigured devices poses a significant threat to sectors such as energy and utilities, where even minor configuration errors can lead to severe disruptions. This trend underscores the importance of rigorous configuration management and regular audits to prevent unauthorized access. Organizations are advised to enhance their security posture by implementing automated configuration checks and continuous monitoring.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/amazon-russian-hackers-now-favor-misconfigurations-in-critical-infrastructure-attacks/"
-        },
-        {
-            "date": "Dec 16 2025",
-            "title": "Microsoft to Restrict Exchange Online Access for Outdated Mobile Devices",
-            "content": "Microsoft announced plans to block mobile devices running outdated email software from accessing Exchange Online services. This measure aims to enhance security by ensuring that all devices meet the latest security standards and protocols. Devices using legacy protocols and software versions are more vulnerable to attacks, making this update crucial for protecting sensitive email communications. The move will affect organizations that have not updated their mobile device management policies, potentially disrupting access for users with outdated devices. IT departments should prioritize updating mobile software to maintain seamless access and security compliance.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-to-block-exchange-online-access-for-outdated-mobile-devices/"
-        },
-        {
-            "date": "Dec 16 2025",
-            "title": "Amazon Uncovers GRU&#x27;s Years-Long Cyber Campaign Targeting Infrastructure",
-            "content": "Amazon&#x27;s threat intelligence team has revealed details of a protracted cyber campaign by Russia&#x27;s GRU targeting Western critical infrastructure from 2021 to 2025. The campaign focused on energy and cloud infrastructure sectors, aiming to disrupt operations and gather intelligence. This disclosure highlights the persistent threat posed by state-sponsored actors to vital infrastructure, emphasizing the need for robust defensive measures. Organizations in these sectors should review their security protocols and enhance threat detection capabilities to mitigate potential risks. The findings underscore the importance of international cooperation in countering cyber threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/12/amazon-exposes-years-long-gru-cyber.html"
-        },
-        {
-            "date": "Dec 16 2025",
-            "title": "Bundestag Network Outage Not Caused by Cyberattack",
-            "content": "A widespread network outage in the Bundestag was confirmed not to be the result of a cyberattack. The incident, which temporarily disrupted access to the internet, intranet, and email services, was attributed to technical issues rather than malicious activity. This clarification alleviates concerns of a security breach within Germany&#x27;s parliamentary systems. While the exact technical cause remains under investigation, the situation underscores the importance of robust network infrastructure and contingency planning. IT administrators are reminded to regularly assess and update network systems to prevent similar disruptions.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4106959/internet-ausfall-im-bundestag-offenbar-kein-cyberangriff-2.html"
-        },
-        {
-            "date": "Dec 16 2025",
-            "title": "Urban VPN Caught Illegally Collecting AI Chat Data",
-            "content": "Security researchers have discovered that Urban VPN, a popular free browser extension, has been illicitly collecting and exporting users&#x27; AI chat conversations. This breach of privacy affects millions of users who installed the extension, potentially exposing sensitive internal communications and proprietary information. The incident raises significant concerns about data privacy and the security of free software offerings. Organizations should reassess the use of free VPN services and consider more secure, vetted alternatives. Users are advised to uninstall the extension immediately and review browser permissions for unauthorized data access.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4106949/featured-urban-vpn-caught-stealing-private-ai-chats.html"
-        },
-        {
-            "date": "Dec 16 2025",
-            "title": "Vulnerability in Photo Booth Service Exposes Private Photos Online",
-            "content": "A flaw in a photo booth operator&#x27;s website has potentially exposed hundreds of private customer photos online. The security researcher who identified the issue noted that the vulnerability allowed unauthorized access to stored images due to improper access controls. This exposure highlights the risks associated with weak web application security, particularly for services handling personal data. Businesses operating similar services should conduct thorough security assessments and implement strict access controls to protect user data. Customers are urged to be cautious when sharing personal information with online services.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/uncategorized/2025/12/photo-booth-flaw-exposes-peoples-private-pictures-online"
-        },
-        {
-            "date": "Dec 16 2025",
-            "title": "European Authorities Dismantle Major Fraud Ring in Ukraine",
-            "content": "European law enforcement agencies have successfully dismantled a fraud ring operating call centers in Ukraine, responsible for scamming over 10 million euros from victims across Europe. The operation targeted vulnerable individuals with deceptive schemes, emphasizing the ongoing threat of organized cybercrime. This successful intervention highlights the importance of cross-border cooperation in tackling sophisticated fraud networks. Authorities are urging the public to remain vigilant against unsolicited calls and suspicious financial offers. Businesses should educate employees on recognizing and reporting potential fraud attempts to prevent financial losses.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/european-authorities-dismantle-call-center-fraud-ring-in-ukraine/"
-        },
-        {
-            "date": "Dec 16 2025",
-            "title": "ISC Stormcast Provides Latest Cyber Threat Intelligence",
-            "content": "The SANS Internet Storm Center has released its latest Stormcast for December 16, 2025, offering insights into recent cyber threats and vulnerabilities. The InfoCON level remains at green, indicating a stable threat environment. This podcast is a valuable resource for cybersecurity professionals seeking to stay informed about emerging threats and best practices. The Stormcast discusses recent security incidents and provides analysis on the implications for organizations globally. Listeners are encouraged to integrate this intelligence into their security strategies to enhance their defenses against evolving cyber threats.",
+            "date": "Dec 17 2025",
+            "title": "ISC Stormcast Highlights Cybersecurity Trends for December 2025",
+            "content": "The latest ISC Stormcast podcast for December 17, 2025, provides a comprehensive overview of current cybersecurity challenges and trends. The InfoCON level remains at green, indicating a stable threat landscape. Key discussions include the rise in phishing attacks leveraging AI-generated content and the persistent threat of ransomware targeting healthcare systems. The podcast also covers recent vulnerabilities in widely used software, urging listeners to apply patches promptly. Security professionals are advised to stay vigilant and prioritize updates to protect against evolving threats. The ISC Stormcast continues to be a valuable resource for staying informed on cybersecurity developments.",
             "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32574"
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32576"
+        },
+        {
+            "date": "Dec 17 2025",
+            "title": "FortiGate Firewall Credentials Compromised After Vulnerability Discovery",
+            "content": "Threat actors are exploiting newly discovered vulnerabilities in Fortinet&#x27;s device authentication systems, leading to the theft of FortiGate firewall credentials. Arctic Wolf researchers have identified malicious single sign-on attempts targeting these next-generation firewalls since Fortinet&#x27;s advisory. The vulnerabilities affect devices running specific firmware versions, though exact CVE IDs have not yet been disclosed. Organizations using FortiGate firewalls should immediately review their security configurations and apply available patches to mitigate the risk. This incident underscores the importance of rapid response to vulnerability disclosures in critical network infrastructure.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4107440/fortigate-firewall-credentials-being-stolen-after-vulnerabilities-discovered.html"
         },
         {
             "date": "Dec 16 2025",
-            "title": "SoundCloud Suffers Data Breach Impacting User Information",
-            "content": "SoundCloud has confirmed a security breach that resulted in the theft of a database containing user information, causing disruptions to VPN access and platform outages. The breach underscores vulnerabilities in the company&#x27;s data protection measures, affecting millions of users worldwide. SoundCloud has yet to disclose the specific nature of the compromised data, but users are advised to monitor their accounts for suspicious activity. This incident highlights the ongoing challenges faced by digital platforms in safeguarding user data against increasingly sophisticated cyber threats. SoundCloud is working to restore full service and enhance its security protocols.",
+            "title": "Russian APT Group Exploits Network Edge Device Misconfigurations",
+            "content": "A Russian state-sponsored advanced persistent threat (APT) group is actively targeting energy companies and critical infrastructure by exploiting misconfigurations in network-edge devices. Operating since at least 2021, the group has shifted its focus to these vulnerable points, leveraging known vulnerabilities alongside configuration errors. This campaign highlights the ongoing risk posed by inadequate device management and the strategic importance of securing network perimeters. Organizations in the energy sector are urged to conduct thorough audits of their network configurations and implement robust security measures to defend against such espionage activities.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4107406/russian-apt-group-pivots-to-network-edge-device-misconfigurations.html"
+        },
+        {
+            "date": "Dec 16 2025",
+            "title": "Illusory Systems Reaches Settlement with FTC Over 2022 Crypto Hack",
+            "content": "Illusory Systems has settled with the Federal Trade Commission (FTC) following charges of misrepresenting the cybersecurity capabilities of its Token Bridge software. The 2022 cryptocurrency hack exposed significant security lapses, with executives failing to implement adequate protections. The settlement requires Illusory Systems to enhance its security practices and undergo regular audits. This case serves as a cautionary tale for tech companies about the legal and financial repercussions of inadequate cybersecurity measures. Companies should ensure transparency in their security claims and invest in robust defenses to protect consumer data.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/ftc-settles-with-illusory-systems-in-2022-cryptocurrency-hack/"
+        },
+        {
+            "date": "Dec 16 2025",
+            "title": "Cellik Android Malware Exploits Google Play Apps for Malicious Purposes",
+            "content": "A new Android malware-as-a-service (MaaS) named Cellik is being promoted on cybercrime forums, offering capabilities to embed malicious code into legitimate apps from the Google Play Store. This service enables attackers to create trojanized app versions with functionalities such as data theft and remote access. The emergence of Cellik underscores the persistent threat of malware distribution through official app stores. Android users and developers are advised to scrutinize app permissions and monitor for unusual behavior. Security teams should enhance app vetting processes to identify and mitigate such threats.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/soundcloud-confirms-breach-after-member-data-stolen-vpn-access-disrupted/"
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cellik-android-malware-builds-malicious-versions-from-google-play-apps/"
+        },
+        {
+            "date": "Dec 16 2025",
+            "title": "GhostPoster Campaign Embeds Malicious JavaScript in Firefox Addon Logos",
+            "content": "The GhostPoster campaign has been discovered hiding malicious JavaScript code within the image logos of Firefox extensions, which have amassed over 50,000 downloads. This technique allows attackers to monitor browser activity and install backdoors on affected systems. The campaign highlights the innovative methods cybercriminals employ to bypass traditional security measures. Users of Firefox are encouraged to review installed extensions and remove any suspicious or unrecognized add-ons. Developers should implement stricter security checks for extensions to prevent such covert attacks.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/ghostposter-attacks-hide-malicious-javascript-in-firefox-addon-logos/"
+        },
+        {
+            "date": "Dec 16 2025",
+            "title": "Outgoing GAO Chief Urges Continued Vigilance at CISA",
+            "content": "The outgoing chief of the Government Accountability Office (GAO) has issued a warning against complacency at the Cybersecurity and Infrastructure Security Agency (CISA). As leadership transitions, there is concern about maintaining momentum in cybersecurity initiatives and addressing emerging threats. The GAO chief emphasized the importance of sustained investment in cybersecurity infrastructure and personnel. This call to action is particularly relevant as cyber threats continue to evolve and increase in sophistication. Stakeholders are encouraged to support CISA&#x27;s mission and ensure it remains a priority in national security strategies.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://fedscoop.com/cisa-workforce-threats-gao-cybersecurity-gene-dodaro/"
         },
         {
             "date": "May 05 2026",
@@ -77,59 +63,52 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Dec 16 2025",
-            "title": "BHP Leverages AI to Enhance Mining Operations",
-            "content": "BHP, a leading mining conglomerate, is utilizing artificial intelligence to transform operational data into actionable insights for improved decision-making. By analyzing data from sensors and monitoring systems, AI identifies patterns and flags potential issues in plant machinery, providing decision-makers with critical information to optimize operations. This approach enhances efficiency and reduces downtime, crucial in the mining industry where operational continuity is key. BHP&#x27;s initiative reflects a growing trend in heavy industries to harness AI for data-driven strategies. Stakeholders should consider integrating similar technologies to maintain competitive advantage and operational excellence.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/mining-ai-gives-businesses-food-for-thought-in-real-life-deployments-of-oi/"
+            "title": "DoorDash Launches Zesty, an AI-Driven Social App for Restaurant Discovery",
+            "content": "DoorDash has unveiled Zesty, an AI-powered social networking application designed to enhance restaurant discovery through user-generated content. The app enables users to share photos and comments about their dining experiences, as well as explore and follow content from others, mimicking traditional social media platforms. This development aims to engage food enthusiasts and create a vibrant community around culinary exploration. The introduction of Zesty reflects a growing trend of integrating AI into social platforms to personalize user experiences and provide more targeted recommendations. Users should be aware of potential privacy implications when sharing location-based content and manage their settings accordingly.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/16/doordash-rolls-out-zesty-an-ai-social-app-for-discovering-new-restaurants/"
         },
         {
             "date": "Dec 16 2025",
-            "title": "Reevaluating AI Expectations Amidst Rapid Developments",
-            "content": "The excitement surrounding AI innovations from major players like OpenAI and Google is being reassessed as the technology matures. While new models continue to emerge, the initial thrill is giving way to a more tempered view of AI&#x27;s capabilities and limitations. This shift in perception highlights the need for realistic expectations and a focus on practical applications rather than hype. As AI becomes more integrated into daily operations, professionals should prioritize understanding the technology&#x27;s true potential and constraints. This recalibration is crucial for informed decision-making and strategic planning in AI deployment.",
+            "title": "Meta Enhances AI Glasses with Conversation Amplification Feature",
+            "content": "Meta has announced a new feature for its AI glasses, enhancing their utility by using open-ear speakers to amplify the voice of the person you are conversing with. This &quot;Conversation Focus&quot; capability aims to improve auditory experiences in noisy environments, leveraging AI technology to isolate and enhance specific audio inputs. The development is part of Meta&#x27;s broader strategy to integrate augmented reality (AR) into everyday life, making interactions more seamless and intuitive. Users of Meta&#x27;s AI glasses should consider how this feature can assist in various settings, from crowded public spaces to professional meetings, while remaining mindful of privacy and consent in amplified conversations.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/16/metas-ai-glasses-can-now-help-you-hear-conversations-better/"
+        },
+        {
+            "date": "Dec 16 2025",
+            "title": "OpenAI Unveils GPT Image 1.5 to Boost Image Generation Speed and Precision",
+            "content": "OpenAI has released GPT Image 1.5 for its ChatGPT platform, marking a significant advancement in AI-driven image generation. The new model promises a fourfold increase in generation speed, improved instruction-following, and enhanced precision in editing capabilities. This launch intensifies the competition with Google Gemini, as both companies vie for dominance in the generative AI space. The rapid advancements in image generation technology have significant implications for industries reliant on visual content, including marketing, design, and entertainment. Professionals should explore how these tools can be integrated into existing workflows to enhance creativity and efficiency while staying informed about ethical considerations and potential biases in AI-generated imagery.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/16/openai-continues-on-its-code-red-warpath-with-new-image-generation-model/"
+        },
+        {
+            "date": "Dec 16 2025",
+            "title": "Leona Health Secures $14M to Streamline WhatsApp for Latin American Doctors",
+            "content": "Leona Health, founded by a former Uber Eats executive, has raised $14 million in seed funding from Andreessen Horowitz (a16z) to develop an AI co-pilot for managing patient communications on WhatsApp. This tool aims to alleviate the overwhelming volume of messages that doctors in Latin America receive, thereby improving response times and patient care. By automating routine interactions, the AI co-pilot allows healthcare professionals to focus on more critical tasks. The funding underscores the growing interest in AI solutions tailored to specific regional challenges. Medical practitioners in Latin America should evaluate how integrating such technology can enhance operational efficiency and patient satisfaction.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/16/uber-eats-alum-lands-14m-seed-from-a16z-to-fix-whatsapp-chaos-for-latams-doctors/"
+        },
+        {
+            "date": "Dec 16 2025",
+            "title": "Google Pilots Email-Based Productivity Assistant for Select Users",
+            "content": "Google is testing a new email-based productivity assistant, available to AI Pro and Ultra plan users aged 18 and over in North America. This assistant is designed to streamline workflow by automating routine email tasks and providing intelligent suggestions to enhance productivity. The trial reflects Google&#x27;s ongoing efforts to integrate AI into everyday tools, aiming to reduce cognitive load and improve user efficiency. As AI continues to evolve, professionals should stay informed about new tools that can optimize their daily operations. Users participating in the trial should provide feedback to help refine the assistant&#x27;s capabilities and ensure it meets diverse user needs.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/16/google-tests-an-email-based-productivity-assistant/"
+        },
+        {
+            "date": "Dec 16 2025",
+            "title": "AI Search Tools Reshape SEO, Highlighting Human Expertise",
+            "content": "The rise of AI search engines and generative AI tools is transforming online information discovery but does not render SEO specialists obsolete. Instead, these advancements underscore the importance of skilled human optimizers who can adapt strategies to align with new AI-driven search paradigms. As AI continues to reshape the digital landscape, SEO professionals must enhance their understanding of AI technologies to maintain competitive advantage. The shift presents an opportunity for specialists to leverage AI tools to gain deeper insights into user behavior and search trends. Staying current with AI developments is crucial for those aiming to excel in the evolving field of search engine optimization.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/what-ai-search-tools-mean-for-the-future-of-seo-specialists/"
+        },
+        {
+            "date": "Dec 16 2025",
+            "title": "Navigating Psychological Safety in the AI-Driven Workplace",
+            "content": "Implementing enterprise-grade AI involves not only mastering the technology but also fostering a culture that maximizes its value. Creating psychological safety is essential for employees to effectively engage with AI tools and contribute to innovation. While technical challenges are significant, addressing the human element is equally critical to successful AI integration. Organizations must prioritize building environments where employees feel secure to experiment and voice concerns. As AI becomes more pervasive, leaders should focus on cultivating trust and openness to fully harness the potential of AI technologies. Encouraging dialogue and feedback will be key to navigating the complexities of AI adoption in the workplace.",
             "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2025/12/16/1129946/why-its-time-to-reset-our-expectations-for-ai/"
-        },
-        {
-            "date": "Dec 16 2025",
-            "title": "BNP Paribas Innovates with AI in Investment Banking",
-            "content": "BNP Paribas is pioneering the use of AI in investment banking with its new internal tool, IB Portal. This platform aids bankers in assembling client pitches more efficiently by reducing repetitive tasks. The move represents a significant step in integrating AI into the banking sector&#x27;s daily operations, potentially reshaping how financial institutions approach client interactions. By streamlining processes, BNP Paribas aims to enhance productivity and client service, setting a precedent for other banks to follow. Financial professionals should monitor this development as it could signal broader industry changes.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/bnp-paribas-introduces-ai-tool-for-investment-banking/"
-        },
-        {
-            "date": "Dec 16 2025",
-            "title": "Everbloom&#x27;s AI Transforms Waste into Luxury Textiles",
-            "content": "Everbloom has developed an AI-driven chemical process to upcycle waste fibers and chicken feathers into materials resembling polyester and cashmere. This innovative approach addresses sustainability challenges by converting waste into valuable textiles, offering an eco-friendly alternative to traditional production methods. The technology underscores AI&#x27;s potential in revolutionizing material sciences and promoting circular economies. Industries reliant on raw materials should explore similar AI applications to reduce environmental impact and enhance sustainability efforts. This development highlights the intersection of AI and environmental responsibility in modern manufacturing.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/16/everbloom-built-an-ai-to-turn-chicken-feathers-into-cashmere/"
-        },
-        {
-            "date": "Dec 16 2025",
-            "title": "JPMorgan Chase&#x27;s AI Investment Yields Significant Returns",
-            "content": "JPMorgan Chase&#x27;s $18 billion investment in AI is proving fruitful, with its proprietary LLM Suite platform showing a 30-40% annual growth in benefits. However, this success comes with a human cost, as the bank&#x27;s workforce adapts to new AI-driven processes. With 200,000 employees utilizing the platform daily, the bank is at the forefront of AI integration in the financial sector. This development highlights the transformative impact of AI on workforce dynamics and operational efficiency. Financial institutions should assess the balance between technological advancements and workforce adaptation to optimize AI benefits.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/jpmorgan-chase-ai-strategy-2025/"
-        },
-        {
-            "date": "Dec 16 2025",
-            "title": "AI Literacy Becomes Essential in Evolving Workplaces",
-            "content": "As AI reshapes workplace operations across the U.S., AI literacy is becoming a fundamental component of business strategies. This shift is redefining roles, increasing workloads, and intensifying pressures on employees to adapt. The trend underscores the need for continuous education and skill development to remain competitive in an AI-driven landscape. Organizations should invest in training programs to enhance AI literacy among employees, ensuring a smooth transition into new operational paradigms. This evolution in workplace dynamics reflects a broader transformation in how businesses leverage technology for strategic advantage.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/ai-literacy-in-the-workplace-important-for-growth/"
-        },
-        {
-            "date": "Dec 16 2025",
-            "title": "AI Drives Transformation in Construction Industry",
-            "content": "AI is revolutionizing the construction industry by unlocking valuable insights from vast amounts of previously unused data. New research from Dodge Construction Network reveals that AI is enhancing decision-making, improving margins, and optimizing project outcomes. This technological shift is crucial for an industry traditionally burdened by inefficiencies and cost overruns. Construction professionals should consider adopting AI tools to capitalize on these benefits and remain competitive. The integration of AI into construction processes marks a significant step towards modernizing an industry ripe for innovation.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/construction-industry-ai-success-potential/"
-        },
-        {
-            "date": "Dec 16 2025",
-            "title": "Consumer AI Startups Struggle Without New Personal Devices",
-            "content": "Venture capitalists are expressing skepticism about the longevity of consumer AI startups, citing the lack of a new personal device to drive sustained growth. Despite advances in AI technologies, the market has yet to see a breakthrough device akin to the smartphone or personal computer that can leverage these innovations. This stagnation poses challenges for startups aiming to capture consumer interest and maintain momentum. Industry experts suggest that without such a device, consumer AI applications may struggle to achieve widespread adoption. Startups and investors may need to pivot towards enterprise solutions or focus on creating new hardware to unlock AI&#x27;s full potential.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/15/vcs-discuss-why-most-consumer-ai-startups-still-lack-staying-power/"
+            "sourceUrl": "https://www.technologyreview.com/2025/12/16/1125899/creating-psychological-safety-in-the-ai-era/"
         }
     ],
     "articles": {},
@@ -193,6 +172,17 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2025-59718",
+            "dateAdded": "Dec 16, 2025",
+            "vendor": "Fortinet Multiple Products",
+            "description": "Fortinet FortiOS, FortiSwitchMaster, FortiProxy, and FortiWeb contain an improper verification of cryptographic signature vulnerability that may allow an unauthenticated attacker to bypass the FortiCl",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-59718",
+            "isZeroDay": false
+        },
         {
             "cveId": "CVE-2025-14611",
             "dateAdded": "Dec 15, 2025",
