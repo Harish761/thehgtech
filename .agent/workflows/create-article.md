@@ -137,6 +137,20 @@ When creating a new article for TheHGTech, follow these standards:
 ## NO EMOJIS - Use FontAwesome Instead
 (Same icon set as guides - see /create-guide workflow)
 
+## Interaction Bar (REQUIRED)
+Every article MUST include the interaction bar. See `/create-guide` workflow for full HTML.
+
+### Required Includes
+```html
+<!-- In <head> -->
+<link rel="stylesheet" href="/interaction-bar.css?v=20251217">
+
+<!-- Before </body> -->
+<script src="/interaction-bar.js?v=20251217"></script>
+```
+
+The interaction bar HTML should be placed before the footer or at the end of the content div.
+
 ## Article Footer
 ```html
 <div class="article-footer">

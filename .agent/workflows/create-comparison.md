@@ -213,7 +213,20 @@ For each tool, include:
 | ◐ | Partial | `<i class="fas fa-circle-half-stroke text-orange"></i>` |
 | ★ | Best in class | `<i class="fas fa-star text-cyan"></i>` |
 
+
 ## NO EMOJIS - Use FontAwesome Instead
+
+## Interaction Bar (REQUIRED)
+Every comparison MUST include the interaction bar. See `/create-guide` workflow for full HTML.
+
+### Required Includes
+```html
+<!-- In <head> -->
+<link rel="stylesheet" href="/interaction-bar.css?v=20251217">
+
+<!-- Before </body> -->
+<script src="/interaction-bar.js?v=20251217"></script>
+```
 
 ## After Creating Comparison
 1. Add to `/comparisons/index.html`

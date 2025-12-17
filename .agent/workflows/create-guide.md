@@ -149,6 +149,48 @@ command or code here</code></pre>
 | Fire/Hot | `<i class="fas fa-fire"></i>` |
 | Alert | `<i class="fas fa-bell"></i>` |
 
+## Interaction Bar (REQUIRED)
+Every guide MUST include the interaction bar at the bottom of the content.
+
+### CSS Include (in `<head>`)
+```html
+<link rel="stylesheet" href="/interaction-bar.css?v=20251217">
+```
+
+### HTML (before `</body>`)
+```html
+<!-- Interaction Bar -->
+<div class="interaction-bar">
+    <div class="like-section">
+        <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+            <i class="far fa-heart"></i> <span id="likeText">Like this guide</span>
+        </button>
+    </div>
+    <div class="action-buttons">
+        <div class="share-buttons">
+            <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter" aria-label="Share on Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn" aria-label="Share on LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link">
+                <i class="fas fa-link"></i>
+            </button>
+        </div>
+        <div class="button-separator"></div>
+        <button onclick="printArticle()" class="print-btn" title="Print" aria-label="Print">
+            <i class="fas fa-print"></i>
+        </button>
+    </div>
+</div>
+```
+
+### JS Include (before `</body>`)
+```html
+<script src="/interaction-bar.js?v=20251217"></script>
+```
+
 ## Footer Section
 ```html
 <p style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); color: var(--text-muted);">
