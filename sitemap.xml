@@ -265,4 +265,18 @@
     <lastmod>2025-12-17</lastmod>
   </url>
 
+  <url>
+    <loc>https://thehgtech.com/guides/active-directory-security-hardening.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2025-12-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/guides/windows-event-log-analysis.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2025-12-17</lastmod>
+  </url>
+
 </urlset>
