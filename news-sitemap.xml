@@ -2,56 +2,96 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
-  <!-- Dynamic content pages for Google News consideration -->
+  <!-- ========== LATEST NEWS ARTICLES (Last 48 hours for Google News) ========== -->
+  
   <url>
-    <loc>https://thehgtech.com/</loc>
+    <loc>https://thehgtech.com/articles/99-percent-ai-systems-attacked-2025.html</loc>
     <news:news>
       <news:publication>
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2025-12-12</news:publication_date>
-      <news:title>Real-Time Threat Intelligence, CVE Tracking, and Cybersecurity News</news:title>
-      <news:keywords>cybersecurity, threat intelligence, CVE, ransomware, malware, AI news</news:keywords>
+      <news:publication_date>2025-12-17T00:00:00+05:30</news:publication_date>
+      <news:title>99% of Organizations Had Their AI Systems Attacked in 2025</news:title>
+      <news:keywords>AI security, Palo Alto Networks, enterprise AI attacks, cloud security, API attacks</news:keywords>
     </news:news>
   </url>
 
   <url>
-    <loc>https://thehgtech.com/articles.html</loc>
+    <loc>https://thehgtech.com/articles/redhat-chatterbox-ai-safety-acquisition-2025.html</loc>
     <news:news>
       <news:publication>
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2025-12-12</news:publication_date>
-      <news:title>Cybersecurity Analysis and Expert Articles</news:title>
-      <news:keywords>cybersecurity articles, security analysis, threat research</news:keywords>
+      <news:publication_date>2025-12-17T00:00:00+05:30</news:publication_date>
+      <news:title>Red Hat Acquires Chatterbox Labs: A New Era of Enterprise AI Safety</news:title>
+      <news:keywords>Red Hat, Chatterbox Labs, AI safety, AI guardrails, enterprise AI, acquisition</news:keywords>
     </news:news>
   </url>
 
   <url>
-    <loc>https://thehgtech.com/cve-tracker.html</loc>
+    <loc>https://thehgtech.com/articles/cybersecurity-predictions-2026.html</loc>
     <news:news>
       <news:publication>
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2025-12-12</news:publication_date>
-      <news:title>CVE Vulnerability Tracker - CISA KEV Real-Time Dashboard</news:title>
-      <news:keywords>CVE tracker, vulnerability database, CISA KEV, security vulnerabilities</news:keywords>
+      <news:publication_date>2025-12-17T00:00:00+05:30</news:publication_date>
+      <news:title>6 Cybersecurity Predictions for 2026: The AI Economy's New Rules</news:title>
+      <news:keywords>cybersecurity predictions, 2026, Palo Alto Networks, AI attacks, quantum computing</news:keywords>
     </news:news>
   </url>
 
   <url>
-    <loc>https://thehgtech.com/ransomware-tracker.html</loc>
+    <loc>https://thehgtech.com/articles/harvard-phone-phishing-breach-2025.html</loc>
     <news:news>
       <news:publication>
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2025-12-12</news:publication_date>
-      <news:title>Ransomware Attack Tracker - Live Incident Monitoring</news:title>
-      <news:keywords>ransomware tracker, ransomware attacks, cyber attacks, ransomware groups</news:keywords>
+      <news:publication_date>2025-12-17T00:00:00+05:30</news:publication_date>
+      <news:title>How a Single Phone Call Breached Harvard: The Rise of AI-Assisted Vishing</news:title>
+      <news:keywords>Harvard breach, vishing attack, phone phishing, social engineering, voice cloning</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/salesforce-billion-record-extortion-2025.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-17T00:00:00+05:30</news:publication_date>
+      <news:title>The Billion-Record Heist: Salesforce Data Extortion Threatens Enterprise Cloud Security</news:title>
+      <news:keywords>Salesforce breach, data extortion, cloud security, CRM security, billion records</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/gentlemen-ransomware-threat-2025.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-15T00:00:00+05:30</news:publication_date>
+      <news:title>Gentlemen Ransomware: The 'Polite' Threat Ripping Through Corporate Networks</news:title>
+      <news:keywords>Gentlemen ransomware, BYOVD, ransomware, GPO manipulation, EDR evasion</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/7zip-critical-vulnerability.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-15T00:00:00+05:30</news:publication_date>
+      <news:title>Critical 7-Zip Vulnerability: What You Need to Know Right Now</news:title>
+      <news:keywords>7-Zip vulnerability, CVE, critical vulnerability, file compression security</news:keywords>
     </news:news>
   </url>
 

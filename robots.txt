@@ -1,11 +1,12 @@
 # TheHGTech Robots.txt - Optimized for Maximum Crawl Coverage
-# Last Updated: 2025-12-12
+# Last Updated: 2025-12-17
 
 User-agent: *
 Allow: /
 
 # Sitemaps
 Sitemap: https://thehgtech.com/sitemap.xml
+Sitemap: https://thehgtech.com/news-sitemap.xml
 
 # Priority pages - Hint to crawlers
 # Homepage, Trackers, and Guides are most important
