@@ -421,19 +421,19 @@
             <p style="color: var(--text-muted); font-size: 1.1rem;">Master security event analysis for threat detection
                 and incident response</p>
             <div style="margin-top: 1rem; color: var(--text-muted);">
-                <span>📖 22 min read</span> • <span>🎯 Intermediate</span> • <span>📅 December 2025</span>
+                <span><i class="fas fa-book-open"></i> 22 min read</span> • <span><i class="fas fa-crosshairs"></i> Intermediate</span> • <span><i class="far fa-calendar-alt"></i> December 2025</span>
             </div>
         </div>
 
         <div class="info-box">
-            <strong>💡 Why This Matters:</strong> Windows Event Logs are the primary source of truth for security
+            <strong><i class="fas fa-lightbulb"></i> Why This Matters:</strong> Windows Event Logs are the primary source of truth for security
             investigations. Understanding how to analyze them is essential for SOC analysts, incident responders, and
             threat hunters.
         </div>
 
         <!-- Table of Contents -->
         <div class="toc">
-            <h3>📋 Table of Contents</h3>
+            <h3><i class="fas fa-list-ul"></i> Table of Contents</h3>
             <ul>
                 <li><a href="#fundamentals">1. Event Log Fundamentals</a></li>
                 <li><a href="#critical-events">2. Critical Security Event IDs</a></li>
@@ -519,7 +519,7 @@ auditpol /set /subcategory:"Process Creation" /success:enable
 auditpol /set /subcategory:"Security Group Management" /success:enable</code></pre>
 
         <div class="warning-box">
-            <strong>⚠️ Important:</strong> Enable "Include command line in process creation events" via GPO to capture
+            <strong><i class="fas fa-exclamation-triangle"></i> Important:</strong> Enable "Include command line in process creation events" via GPO to capture
             full command lines in Event ID 4688. This is critical for threat hunting.
         </div>
 
@@ -798,7 +798,7 @@ Network Information:
         </table>
 
         <div class="info-box">
-            <strong>💡 Detection Tip:</strong> Multiple 4625 events with Sub-Status <code>0xC000006A</code> (bad
+            <strong><i class="fas fa-lightbulb"></i> Detection Tip:</strong> Multiple 4625 events with Sub-Status <code>0xC000006A</code> (bad
             password) from different accounts but the same source IP indicates password spraying.
         </div>
 
@@ -1147,7 +1147,7 @@ SecurityEvent
         </div>
 
         <div class="success-box">
-            <strong>✅ Next Steps:</strong>
+            <strong><i class="fas fa-check-circle"></i> Next Steps:</strong>
             <ul style="margin-top: 1rem;">
                 <li>Install <a href="https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon"
                         style="color: var(--accent-cyan);">Sysmon</a> for enhanced process monitoring</li>
@@ -1159,7 +1159,7 @@ SecurityEvent
         </div>
 
         <div class="info-box">
-            <strong>🔗 Related Resources:</strong>
+            <strong><i class="fas fa-link"></i> Related Resources:</strong>
             <ul style="margin-top: 1rem;">
                 <li><a href="/guides/active-directory-security-hardening.html" style="color: var(--accent-cyan);">Active
                         Directory Security & Hardening</a></li>

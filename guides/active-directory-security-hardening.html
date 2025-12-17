@@ -392,19 +392,19 @@
             <p style="color: var(--text-muted); font-size: 1.1rem;">The complete guide to securing your AD environment
                 against modern attacks</p>
             <div style="margin-top: 1rem; color: var(--text-muted);">
-                <span>📖 25 min read</span> • <span>🎯 Intermediate to Advanced</span> • <span>📅 December 2025</span>
+                <span><i class="fas fa-book-open"></i> 25 min read</span> • <span><i class="fas fa-crosshairs"></i> Intermediate to Advanced</span> • <span><i class="far fa-calendar-alt"></i> December 2025</span>
             </div>
         </div>
 
         <div class="warning-box">
-            <strong>⚠️ Why This Matters:</strong> Active Directory is the backbone of 95% of Fortune 1000 companies. A
+            <strong><i class="fas fa-exclamation-triangle"></i> Why This Matters:</strong> Active Directory is the backbone of 95% of Fortune 1000 companies. A
             single compromised AD environment can give attackers complete control over your entire organization. Recent
             breaches like SolarWinds and Colonial Pipeline exploited AD weaknesses.
         </div>
 
         <!-- Table of Contents -->
         <div class="toc">
-            <h3>📋 Table of Contents</h3>
+            <h3><i class="fas fa-list-ul"></i> Table of Contents</h3>
             <ul>
                 <li><a href="#understanding">1. Understanding AD Security Risks</a></li>
                 <li><a href="#tiered-model">2. Tiered Administration Model</a></li>
@@ -503,7 +503,7 @@
         </table>
 
         <div class="info-box">
-            <strong>💡 Golden Rule:</strong> Credentials from a higher tier should <strong>never</strong> be used on a
+            <strong><i class="fas fa-lightbulb"></i> Golden Rule:</strong> Credentials from a higher tier should <strong>never</strong> be used on a
             lower tier. A Tier 0 admin should never log into a user's workstation (Tier 2), as their credentials would
             be cached and vulnerable to theft.
         </div>
@@ -578,7 +578,7 @@ Computer Configuration → Administrative Templates → System → Device Guard
             Golden Tickets for unlimited access.</p>
 
         <div class="warning-box">
-            <strong>⚠️ Critical:</strong> Reset the KRBTGT password <strong>twice</strong> every 180 days. The password
+            <strong><i class="fas fa-exclamation-triangle"></i> Critical:</strong> Reset the KRBTGT password <strong>twice</strong> every 180 days. The password
             must be reset twice because Kerberos keeps the current and previous password. Use Microsoft's official
             KRBTGT reset script.
         </div>
@@ -612,7 +612,7 @@ Account lockout duration: 30 minutes
 Reset account lockout counter after: 30 minutes</code></pre>
 
         <div class="info-box">
-            <strong>💡 Note:</strong> Consider using Fine-Grained Password Policies (FGPP) for service accounts and
+            <strong><i class="fas fa-lightbulb"></i> Note:</strong> Consider using Fine-Grained Password Policies (FGPP) for service accounts and
             privileged users with longer, more complex passwords (25+ characters).
         </div>
 
@@ -701,7 +701,7 @@ Install-ADServiceAccount -Identity "gMSA-SQLService"
         </ul>
 
         <div class="warning-box">
-            <strong>⚠️ Caution:</strong> Test thoroughly before adding service accounts to Protected Users. Many
+            <strong><i class="fas fa-exclamation-triangle"></i> Caution:</strong> Test thoroughly before adding service accounts to Protected Users. Many
             applications rely on NTLM or delegation and will break.
         </div>
 
@@ -885,7 +885,7 @@ event_id:4769 NOT preceded_by:event_id:4768 within 10m</code></pre>
         </div>
 
         <div class="success-box">
-            <strong>✅ Next Steps:</strong>
+            <strong><i class="fas fa-check-circle"></i> Next Steps:</strong>
             <ul style="margin-top: 1rem;">
                 <li>Run <a href="https://github.com/BloodHoundAD/BloodHound"
                         style="color: var(--accent-cyan);">BloodHound</a> to discover attack paths in your AD</li>
@@ -898,7 +898,7 @@ event_id:4769 NOT preceded_by:event_id:4768 within 10m</code></pre>
         </div>
 
         <div class="info-box">
-            <strong>🔗 Related Resources:</strong>
+            <strong><i class="fas fa-link"></i> Related Resources:</strong>
             <ul style="margin-top: 1rem;">
                 <li><a href="/guides/windows-event-log-analysis.html" style="color: var(--accent-cyan);">Windows Event
                         Log Analysis Guide</a></li>

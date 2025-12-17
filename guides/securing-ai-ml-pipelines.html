@@ -391,24 +391,24 @@
         <a href="/guides/" class="back-link">← Back to Guides</a>
 
         <div class="guide-header">
-            <span class="ai-badge">🤖 AI Security</span>
+            <span class="ai-badge"><i class="fas fa-robot"></i> AI Security</span>
             <h1>Securing AI/ML Pipelines</h1>
             <p style="color: var(--text-muted); font-size: 1.1rem;">Protect your machine learning systems from
                 adversarial attacks, data poisoning, and model theft</p>
             <div style="margin-top: 1rem; color: var(--text-muted);">
-                <span>📖 20 min read</span> • <span>🎯 Intermediate to Advanced</span> • <span>📅 December 2025</span>
+                <span><i class="fas fa-book-open"></i> 20 min read</span> • <span><i class="fas fa-crosshairs"></i> Intermediate to Advanced</span> • <span><i class="far fa-calendar-alt"></i> December 2025</span>
             </div>
         </div>
 
         <div class="ai-box">
-            <strong>🔥 Why This Matters:</strong> 99% of organizations deploying AI systems reported security incidents
+            <strong><i class="fas fa-fire"></i> Why This Matters:</strong> 99% of organizations deploying AI systems reported security incidents
             in 2024-2025. AI-specific attacks like prompt injection, data poisoning, and adversarial examples are now in
             the OWASP Top 10 for LLM Applications.
         </div>
 
         <!-- Table of Contents -->
         <div class="toc">
-            <h3>📋 Table of Contents</h3>
+            <h3><i class="fas fa-list-ul"></i> Table of Contents</h3>
             <ul>
                 <li><a href="#threat-landscape">1. AI/ML Threat Landscape</a></li>
                 <li><a href="#data-security">2. Training Data Security</a></li>
@@ -492,7 +492,7 @@
         <h3>Attack Categories</h3>
 
         <div class="attack-card">
-            <h4>🎯 Adversarial Attacks</h4>
+            <h4><i class="fas fa-crosshairs"></i> Adversarial Attacks</h4>
             <p>Carefully crafted inputs that cause models to make incorrect predictions while appearing normal to
                 humans.</p>
             <ul>
@@ -503,7 +503,7 @@
         </div>
 
         <div class="attack-card">
-            <h4>☠️ Data Poisoning</h4>
+            <h4><i class="fas fa-skull-crossbones"></i> Data Poisoning</h4>
             <p>Corrupting training data to manipulate model behavior.</p>
             <ul>
                 <li><strong>Label flipping:</strong> Swap labels to create backdoors</li>
@@ -513,7 +513,7 @@
         </div>
 
         <div class="attack-card">
-            <h4>🔓 Model Extraction</h4>
+            <h4><i class="fas fa-lock-open"></i> Model Extraction</h4>
             <p>Stealing model functionality or parameters through API queries.</p>
             <ul>
                 <li><strong>Query-based extraction:</strong> Reconstruct model from input/output pairs</li>
@@ -581,7 +581,7 @@ def detect_poisoned_samples(X_train):
         </ul>
 
         <div class="warning-box">
-            <strong>⚠️ PII in Training Data:</strong> Ensure training data doesn't contain personally identifiable
+            <strong><i class="fas fa-exclamation-triangle"></i> PII in Training Data:</strong> Ensure training data doesn't contain personally identifiable
             information (PII) that could be extracted through model inversion attacks. Use differential privacy
             techniques when training on sensitive data.
         </div>
@@ -900,7 +900,7 @@ jobs:
         </table>
 
         <div class="success-box">
-            <strong>✅ Quick Wins:</strong>
+            <strong><i class="fas fa-check-circle"></i> Quick Wins:</strong>
             <ul style="margin-top: 1rem;">
                 <li>Enable rate limiting on all model APIs today</li>
                 <li>Implement model signing for your production models</li>
@@ -910,7 +910,7 @@ jobs:
         </div>
 
         <div class="info-box">
-            <strong>🔗 Related Resources:</strong>
+            <strong><i class="fas fa-link"></i> Related Resources:</strong>
             <ul style="margin-top: 1rem;">
                 <li><a href="/guides/llm-security-prompt-injection.html" style="color: var(--accent-purple);">LLM
                         Security: Prompt Injection & Jailbreaks</a></li>
