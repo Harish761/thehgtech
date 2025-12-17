@@ -5,6 +5,55 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Dec 17 2025",
+            "title": "From Fraudster to Fraud Fighter: The Transformation of Alex Hall",
+            "content": "Alex Hall, once known for his undetected fraudulent activities, shares his transformation journey from a fraudster to a defender of trust. Hall attributes his change to personal life events and insights gained through neurodiversity. His story underscores the potential for individuals to reform and contribute positively to cybersecurity. Hall&#x27;s experience highlights the importance of understanding diverse perspectives in building robust fraud prevention strategies. Security professionals can learn from Hall&#x27;s journey to better anticipate and counteract fraud tactics.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/hacker-conversations-alex-hall-one-time-fraudster/"
+        },
+        {
+            "date": "Dec 17 2025",
+            "title": "Cellik RAT: New Malware Trojanizes Google Play Apps for $150",
+            "content": "A new remote access trojan (RAT) named Cellik is being sold for $150, providing attackers full control over Android devices. This malware mimics advanced spyware capabilities, enabling real-time surveillance and compromising apps on Google Play. The threat is particularly concerning for users who download apps from unofficial sources or fail to update their security settings. The emergence of Cellik RAT highlights the need for continuous monitoring and updating of Android security measures. Users are advised to download apps only from trusted sources and regularly update their devices to mitigate risks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/new-150-cellik-rat-grants-android-control-trojanizes-google-play-apps/"
+        },
+        {
+            "date": "Dec 17 2025",
+            "title": "Microsoft Seeks IT Admins&#x27; Help to Address Windows IIS Failures",
+            "content": "Microsoft is urging IT administrators to contact them for advice on mitigating issues with Message Queuing (MSMQ) that are causing enterprise applications and Internet Information Services (IIS) sites to fail. The problem affects businesses relying on these systems for critical operations, potentially leading to significant downtime. Microsoft is working on a permanent fix, but in the meantime, affected organizations should reach out for temporary solutions. This incident underscores the importance of maintaining open communication channels with vendors for prompt issue resolution. IT teams should monitor Microsoft&#x27;s advisories for updates on the fix.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-asks-it-admins-to-reach-out-for-windows-iis-failures-fix/"
+        },
+        {
+            "date": "Dec 17 2025",
+            "title": "Cybersecurity Predictions for 2026: The End of Perimeter Security",
+            "content": "SecurityWeek predicts that 2026 will see the collapse of traditional perimeter security, with identity and AI taking center stage. As static controls become ineffective in a dynamic threat environment, organizations must rethink their security strategies. Credentials alone are no longer sufficient to protect against sophisticated attacks. This shift emphasizes the need for adaptive security measures that leverage AI to analyze threats in real-time. Security professionals should prepare to integrate AI-driven solutions and focus on identity management to safeguard their networks effectively.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/five-cybersecurity-predictions-for-2026-identity-ai-and-the-collapse-of-perimeter-thinking/"
+        },
+        {
+            "date": "Dec 17 2025",
+            "title": "JumpCloud Agent Flaw Allows Full System Compromise",
+            "content": "A critical vulnerability in JumpCloud&#x27;s Remote Assist for Windows agent allows local privilege escalation, potentially leading to full system compromise. Disclosed by XM Cyber, the flaw arises from insecure file operations during uninstall or update processes executed with Windows NT AUTHORITY\\SYSTEM privileges. This vulnerability poses a significant risk to organizations using JumpCloud for system management. Affected users should apply available patches immediately and review system logs for any signs of exploitation. This incident highlights the importance of rigorous security testing in software development.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4107744/jumpcloud-agent-turns-uninstall-into-a-system-shortcut.html"
+        },
+        {
+            "date": "Dec 17 2025",
+            "title": "Enhancing SOC Visibility: Real-Time Threat Detection for Industries",
+            "content": "Security Operations Centers (SOCs) are urged to overcome blind spots by adopting real-time threat detection tailored to specific industries and countries. As threats evolve and alerts increase, SOCs must prioritize understanding which dangers are most relevant to their business. The shift from reactive to proactive defense is essential to prevent breaches. Organizations should invest in tools that provide comprehensive visibility and contextual threat intelligence. This approach not only enhances security posture but also optimizes resource allocation for threat mitigation.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/12/fix-soc-blind-spots-see-threats-to-your.html"
+        },
+        {
+            "date": "Dec 17 2025",
+            "title": "Adaptive Security Secures $81 Million in Series B Funding",
+            "content": "Adaptive Security has raised $81 million in a Series B funding round led by Bain Capital Ventures, bringing its total funding to $146.5 million. The investment will support the company&#x27;s growth and development of advanced security solutions. Adaptive Security focuses on providing dynamic protection against evolving cyber threats, leveraging AI and machine learning technologies. This funding round underscores investor confidence in the company&#x27;s approach to addressing complex security challenges. Organizations should watch for new innovations from Adaptive Security as they expand their market presence.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/adaptive-security-raises-81-million-in-series-b-funding/"
+        },
+        {
+            "date": "Dec 17 2025",
             "title": "ISC Stormcast Highlights Cybersecurity Trends for December 2025",
             "content": "The latest ISC Stormcast podcast for December 17, 2025, provides a comprehensive overview of current cybersecurity challenges and trends. The InfoCON level remains at green, indicating a stable threat landscape. Key discussions include the rise in phishing attacks leveraging AI-generated content and the persistent threat of ransomware targeting healthcare systems. The podcast also covers recent vulnerabilities in widely used software, urging listeners to apply patches promptly. Security professionals are advised to stay vigilant and prioritize updates to protect against evolving threats. The ISC Stormcast continues to be a valuable resource for staying informed on cybersecurity developments.",
             "source": "SANS Internet Storm Center",
@@ -18,41 +67,6 @@ const websiteContent = {
             "sourceUrl": "https://www.csoonline.com/article/4107440/fortigate-firewall-credentials-being-stolen-after-vulnerabilities-discovered.html"
         },
         {
-            "date": "Dec 16 2025",
-            "title": "Russian APT Group Exploits Network Edge Device Misconfigurations",
-            "content": "A Russian state-sponsored advanced persistent threat (APT) group is actively targeting energy companies and critical infrastructure by exploiting misconfigurations in network-edge devices. Operating since at least 2021, the group has shifted its focus to these vulnerable points, leveraging known vulnerabilities alongside configuration errors. This campaign highlights the ongoing risk posed by inadequate device management and the strategic importance of securing network perimeters. Organizations in the energy sector are urged to conduct thorough audits of their network configurations and implement robust security measures to defend against such espionage activities.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4107406/russian-apt-group-pivots-to-network-edge-device-misconfigurations.html"
-        },
-        {
-            "date": "Dec 16 2025",
-            "title": "Illusory Systems Reaches Settlement with FTC Over 2022 Crypto Hack",
-            "content": "Illusory Systems has settled with the Federal Trade Commission (FTC) following charges of misrepresenting the cybersecurity capabilities of its Token Bridge software. The 2022 cryptocurrency hack exposed significant security lapses, with executives failing to implement adequate protections. The settlement requires Illusory Systems to enhance its security practices and undergo regular audits. This case serves as a cautionary tale for tech companies about the legal and financial repercussions of inadequate cybersecurity measures. Companies should ensure transparency in their security claims and invest in robust defenses to protect consumer data.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/ftc-settles-with-illusory-systems-in-2022-cryptocurrency-hack/"
-        },
-        {
-            "date": "Dec 16 2025",
-            "title": "Cellik Android Malware Exploits Google Play Apps for Malicious Purposes",
-            "content": "A new Android malware-as-a-service (MaaS) named Cellik is being promoted on cybercrime forums, offering capabilities to embed malicious code into legitimate apps from the Google Play Store. This service enables attackers to create trojanized app versions with functionalities such as data theft and remote access. The emergence of Cellik underscores the persistent threat of malware distribution through official app stores. Android users and developers are advised to scrutinize app permissions and monitor for unusual behavior. Security teams should enhance app vetting processes to identify and mitigate such threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cellik-android-malware-builds-malicious-versions-from-google-play-apps/"
-        },
-        {
-            "date": "Dec 16 2025",
-            "title": "GhostPoster Campaign Embeds Malicious JavaScript in Firefox Addon Logos",
-            "content": "The GhostPoster campaign has been discovered hiding malicious JavaScript code within the image logos of Firefox extensions, which have amassed over 50,000 downloads. This technique allows attackers to monitor browser activity and install backdoors on affected systems. The campaign highlights the innovative methods cybercriminals employ to bypass traditional security measures. Users of Firefox are encouraged to review installed extensions and remove any suspicious or unrecognized add-ons. Developers should implement stricter security checks for extensions to prevent such covert attacks.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/ghostposter-attacks-hide-malicious-javascript-in-firefox-addon-logos/"
-        },
-        {
-            "date": "Dec 16 2025",
-            "title": "Outgoing GAO Chief Urges Continued Vigilance at CISA",
-            "content": "The outgoing chief of the Government Accountability Office (GAO) has issued a warning against complacency at the Cybersecurity and Infrastructure Security Agency (CISA). As leadership transitions, there is concern about maintaining momentum in cybersecurity initiatives and addressing emerging threats. The GAO chief emphasized the importance of sustained investment in cybersecurity infrastructure and personnel. This call to action is particularly relevant as cyber threats continue to evolve and increase in sophistication. Stakeholders are encouraged to support CISA&#x27;s mission and ensure it remains a priority in national security strategies.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://fedscoop.com/cisa-workforce-threats-gao-cybersecurity-gene-dodaro/"
-        },
-        {
             "date": "May 05 2026",
             "title": "GISEC GLOBAL 2026 Unveils Cybersecurity Innovations in Middle East and Africa",
             "content": "GISEC GLOBAL 2026, the largest cybersecurity event in the Middle East and Africa, has kicked off, showcasing the latest advancements in cybersecurity technology and strategy. The event serves as a platform for industry leaders to discuss emerging threats and innovative solutions. This year&#x27;s focus includes AI-driven security tools, advanced threat detection systems, and new compliance frameworks. Professionals from various sectors, including government and private enterprises, are attending to gain insights into protecting critical infrastructure. The event highlights the region&#x27;s growing importance in the global cybersecurity landscape, emphasizing collaboration and knowledge sharing. Attendees are encouraged to engage with workshops and panels to stay ahead of evolving cyber threats.",
@@ -62,53 +76,53 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Dec 16 2025",
-            "title": "DoorDash Launches Zesty, an AI-Driven Social App for Restaurant Discovery",
-            "content": "DoorDash has unveiled Zesty, an AI-powered social networking application designed to enhance restaurant discovery through user-generated content. The app enables users to share photos and comments about their dining experiences, as well as explore and follow content from others, mimicking traditional social media platforms. This development aims to engage food enthusiasts and create a vibrant community around culinary exploration. The introduction of Zesty reflects a growing trend of integrating AI into social platforms to personalize user experiences and provide more targeted recommendations. Users should be aware of potential privacy implications when sharing location-based content and manage their settings accordingly.",
+            "date": "Dec 17 2025",
+            "title": "Amazon Eyes $10 Billion Investment in OpenAI to Leverage AI Chip Technology",
+            "content": "Amazon is reportedly in early-stage discussions to invest up to $10 billion in OpenAI, a move that would integrate the AI lab with Amazon&#x27;s proprietary AI chips. This potential investment highlights the growing trend of circular deals in the AI industry, where companies collaborate to leverage each other&#x27;s technological advancements. OpenAI, known for its generative AI models, could significantly benefit from Amazon&#x27;s hardware capabilities, potentially enhancing model efficiency and performance. This partnership could reshape the competitive landscape, affecting cloud service providers and AI developers. Stakeholders in AI and cloud computing should monitor this development closely, as it may influence future strategic alliances and technological innovations.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/16/doordash-rolls-out-zesty-an-ai-social-app-for-discovering-new-restaurants/"
+            "sourceUrl": "https://techcrunch.com/2025/12/17/amazon-reportedly-in-talks-to-invest-10b-in-openai-as-circular-deals-stay-popular/"
         },
         {
-            "date": "Dec 16 2025",
-            "title": "Meta Enhances AI Glasses with Conversation Amplification Feature",
-            "content": "Meta has announced a new feature for its AI glasses, enhancing their utility by using open-ear speakers to amplify the voice of the person you are conversing with. This &quot;Conversation Focus&quot; capability aims to improve auditory experiences in noisy environments, leveraging AI technology to isolate and enhance specific audio inputs. The development is part of Meta&#x27;s broader strategy to integrate augmented reality (AR) into everyday life, making interactions more seamless and intuitive. Users of Meta&#x27;s AI glasses should consider how this feature can assist in various settings, from crowded public spaces to professional meetings, while remaining mindful of privacy and consent in amplified conversations.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/16/metas-ai-glasses-can-now-help-you-hear-conversations-better/"
-        },
-        {
-            "date": "Dec 16 2025",
-            "title": "OpenAI Unveils GPT Image 1.5 to Boost Image Generation Speed and Precision",
-            "content": "OpenAI has released GPT Image 1.5 for its ChatGPT platform, marking a significant advancement in AI-driven image generation. The new model promises a fourfold increase in generation speed, improved instruction-following, and enhanced precision in editing capabilities. This launch intensifies the competition with Google Gemini, as both companies vie for dominance in the generative AI space. The rapid advancements in image generation technology have significant implications for industries reliant on visual content, including marketing, design, and entertainment. Professionals should explore how these tools can be integrated into existing workflows to enhance creativity and efficiency while staying informed about ethical considerations and potential biases in AI-generated imagery.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/16/openai-continues-on-its-code-red-warpath-with-new-image-generation-model/"
-        },
-        {
-            "date": "Dec 16 2025",
-            "title": "Leona Health Secures $14M to Streamline WhatsApp for Latin American Doctors",
-            "content": "Leona Health, founded by a former Uber Eats executive, has raised $14 million in seed funding from Andreessen Horowitz (a16z) to develop an AI co-pilot for managing patient communications on WhatsApp. This tool aims to alleviate the overwhelming volume of messages that doctors in Latin America receive, thereby improving response times and patient care. By automating routine interactions, the AI co-pilot allows healthcare professionals to focus on more critical tasks. The funding underscores the growing interest in AI solutions tailored to specific regional challenges. Medical practitioners in Latin America should evaluate how integrating such technology can enhance operational efficiency and patient satisfaction.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/16/uber-eats-alum-lands-14m-seed-from-a16z-to-fix-whatsapp-chaos-for-latams-doctors/"
-        },
-        {
-            "date": "Dec 16 2025",
-            "title": "Google Pilots Email-Based Productivity Assistant for Select Users",
-            "content": "Google is testing a new email-based productivity assistant, available to AI Pro and Ultra plan users aged 18 and over in North America. This assistant is designed to streamline workflow by automating routine email tasks and providing intelligent suggestions to enhance productivity. The trial reflects Google&#x27;s ongoing efforts to integrate AI into everyday tools, aiming to reduce cognitive load and improve user efficiency. As AI continues to evolve, professionals should stay informed about new tools that can optimize their daily operations. Users participating in the trial should provide feedback to help refine the assistant&#x27;s capabilities and ensure it meets diverse user needs.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/16/google-tests-an-email-based-productivity-assistant/"
-        },
-        {
-            "date": "Dec 16 2025",
-            "title": "AI Search Tools Reshape SEO, Highlighting Human Expertise",
-            "content": "The rise of AI search engines and generative AI tools is transforming online information discovery but does not render SEO specialists obsolete. Instead, these advancements underscore the importance of skilled human optimizers who can adapt strategies to align with new AI-driven search paradigms. As AI continues to reshape the digital landscape, SEO professionals must enhance their understanding of AI technologies to maintain competitive advantage. The shift presents an opportunity for specialists to leverage AI tools to gain deeper insights into user behavior and search trends. Staying current with AI developments is crucial for those aiming to excel in the evolving field of search engine optimization.",
+            "date": "Dec 17 2025",
+            "title": "Roblox Integrates AI to Streamline Game Development in Studio",
+            "content": "Roblox is enhancing its game development platform, Roblox Studio, by incorporating artificial intelligence to expedite the creation of virtual experiences. The integration aims to address persistent challenges such as repetitive production tasks and workflow friction. By automating routine processes, the AI tools promise to reduce development time and increase efficiency, allowing developers to focus on creative aspects. This move is part of a broader trend of AI adoption in creative industries, where speed and innovation are crucial. Developers using Roblox Studio should explore these new AI capabilities to optimize their production pipelines and enhance the quality of their offerings.",
             "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/what-ai-search-tools-mean-for-the-future-of-seo-specialists/"
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/roblox-brings-ai-into-the-studio-to-speed-up-game-creation/"
+        },
+        {
+            "date": "Dec 17 2025",
+            "title": "MoEngage Secures Additional $180 Million, Nears Unicorn Status",
+            "content": "Indian startup MoEngage has raised an additional $180 million in funding, bringing its post-money valuation to well over $900 million. This follows a recent $100 million funding round, highlighting investor confidence in the company&#x27;s growth prospects. MoEngage specializes in customer engagement solutions powered by AI, serving a global clientele across various industries. The infusion of capital is expected to accelerate product development and market expansion, positioning MoEngage as a formidable player in the AI-driven customer engagement space. Companies seeking innovative engagement solutions should consider MoEngage&#x27;s offerings as it approaches unicorn status.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/16/weeks-after-raising-100m-investors-pump-another-180m-into-hot-indian-startup-moengage/"
         },
         {
             "date": "Dec 16 2025",
-            "title": "Navigating Psychological Safety in the AI-Driven Workplace",
-            "content": "Implementing enterprise-grade AI involves not only mastering the technology but also fostering a culture that maximizes its value. Creating psychological safety is essential for employees to effectively engage with AI tools and contribute to innovation. While technical challenges are significant, addressing the human element is equally critical to successful AI integration. Organizations must prioritize building environments where employees feel secure to experiment and voice concerns. As AI becomes more pervasive, leaders should focus on cultivating trust and openness to fully harness the potential of AI technologies. Encouraging dialogue and feedback will be key to navigating the complexities of AI adoption in the workplace.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2025/12/16/1125899/creating-psychological-safety-in-the-ai-era/"
+            "title": "Databricks Achieves $134 Billion Valuation with $4 Billion Funding Round",
+            "content": "Databricks has successfully raised over $4 billion in a Series L funding round, boosting its valuation to an impressive $134 billion. This marks a significant 34% increase from its previous valuation just three months ago, underscoring the rapid growth of its AI and data analytics business. Databricks&#x27; platform, which integrates AI and big data, is increasingly crucial for enterprises looking to harness data-driven insights. The substantial valuation and funding reflect Databricks&#x27; strategic position in the market and its potential to lead in AI-driven data solutions. Enterprises should evaluate Databricks&#x27; offerings to enhance their data analytics capabilities.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/16/databricks-raises-4b-at-134b-valuation-as-its-ai-business-heats-up/"
+        },
+        {
+            "date": "Dec 16 2025",
+            "title": "Adobe Firefly Expands Functionality with Prompt-Based Video Editing",
+            "content": "Adobe has updated its AI-driven video generation app, Firefly, introducing a new video editor that supports prompt-based edits. This update includes the integration of third-party models like Black Forest Labs&#x27; FLUX.2 and Topaz Astra for enhanced image and video generation capabilities. The prompt-based editing feature allows users to make precise adjustments using natural language commands, streamlining the editing process for content creators. This innovation aligns with Adobe&#x27;s strategy to integrate AI tools across its creative suite, empowering users with more intuitive and efficient workflows. Video editors and content creators should explore Firefly&#x27;s new features to leverage these advanced editing capabilities.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/16/adobe-firefly-now-supports-prompt-based-video-editing-adds-more-third-party-models/"
+        },
+        {
+            "date": "Dec 16 2025",
+            "title": "Zencoder Launches Zenflow for AI-Powered Coding Error Detection",
+            "content": "Zencoder has released Zenflow, a free AI orchestration tool designed to pit AI models like Claude against OpenAI&#x27;s models to identify coding errors. This desktop application aims to transform software engineering by moving beyond traditional &quot;vibe coding&quot; practices. Zenflow leverages AI to automate error detection, enhancing code quality and development efficiency. The tool represents a significant advancement in AI-assisted coding, offering developers a robust solution for improving code reliability. Software engineers should consider integrating Zenflow into their development environments to benefit from its error detection capabilities and streamline their coding processes.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/ai/zencoder-drops-zenflow-a-free-ai-orchestration-tool-that-pits-claude-against"
+        },
+        {
+            "date": "Dec 16 2025",
+            "title": "Zoom Claims Record AI Test Score Amidst Controversy",
+            "content": "Zoom Video Communications has announced achieving the highest score on a challenging artificial intelligence test, sparking surprise and skepticism in the tech community. Critics allege that Zoom may have leveraged external resources to achieve this feat, raising questions about the test&#x27;s integrity. Despite the controversy, Zoom&#x27;s accomplishment highlights its ongoing commitment to advancing AI capabilities within its platform. This development is part of a broader trend of companies seeking to validate their AI prowess through competitive benchmarks. Industry professionals should critically assess such claims and consider the implications for AI development and credibility in the tech sector.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/ai/zoom-says-it-aced-ais-hardest-exam-critics-say-it-copied-off-its-neighbors"
         }
     ],
     "articles": {},
