@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Securing AI/ML Pipelines Guide 2025 | MLOps Security | TheHGTech</title>
+    <meta name="description"
+        content="Complete guide to securing AI and Machine Learning pipelines. Learn about model security, data poisoning prevention, adversarial attacks, MLOps security, and AI governance frameworks.">
+    <meta name="keywords"
+        content="AI security, ML security, machine learning security, MLOps security, adversarial attacks, data poisoning, model theft, AI governance, LLM security">
+    <meta name="author" content="TheHGTech">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thehgtech.com/guides/securing-ai-ml-pipelines.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Securing AI/ML Pipelines Guide 2025">
+    <meta property="og:description"
+        content="Complete guide to securing AI and Machine Learning pipelines against adversarial attacks, data poisoning, and model theft.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/guides/securing-ai-ml-pipelines.html">
+    <meta property="og:image" content="https://thehgtech.com/images/guides/ai-ml-security.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Securing AI/ML Pipelines Guide 2025">
+    <meta name="twitter:description"
+        content="Protect AI systems from adversarial attacks, data poisoning, and model theft.">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Securing AI/ML Pipelines Guide 2025",
+      "description": "Complete guide to securing AI and Machine Learning pipelines against adversarial attacks, data poisoning, and model theft.",
+      "author": {
+        "@type": "Organization",
+        "name": "TheHGTech"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TheHGTech",
+        "url": "https://thehgtech.com"
+      },
+      "datePublished": "2025-12-17",
+      "dateModified": "2025-12-17",
+      "mainEntityOfPage": "https://thehgtech.com/guides/securing-ai-ml-pipelines.html",
+      "articleSection": "AI Security Guides",
+      "keywords": ["AI Security", "ML Security", "MLOps", "Adversarial Attacks"]
+    }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF4C4C;
+            --accent-green: #10b981;
+            --accent-orange: #f59e0b;
+            --accent-purple: #8b5cf6;
+            --accent-pink: #ec4899;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .guide-header {
+            padding: 3rem 0 2rem;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+            margin-top: 60px;
+        }
+
+        .ai-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #8b5cf6, #ec4899);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, #8b5cf6, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            color: var(--accent-purple);
+            margin: 2.5rem 0 1rem;
+            font-size: 1.8rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        h3 {
+            color: var(--text-primary);
+            margin: 1.5rem 0 1rem;
+            font-size: 1.3rem;
+        }
+
+        h4 {
+            color: var(--accent-pink);
+            margin: 1.25rem 0 0.75rem;
+            font-size: 1.1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        ul,
+        ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .info-box {
+            background: rgba(139, 92, 246, 0.05);
+            border-left: 4px solid var(--accent-purple);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .warning-box {
+            background: rgba(255, 76, 76, 0.05);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .success-box {
+            background: rgba(16, 185, 129, 0.05);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .ai-box {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(236, 72, 153, 0.1));
+            border-left: 4px solid;
+            border-image: linear-gradient(135deg, #8b5cf6, #ec4899) 1;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        code {
+            background: var(--bg-card);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: var(--accent-purple);
+            font-size: 0.9rem;
+        }
+
+        pre {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+            color: var(--accent-green);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--accent-purple);
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: rgba(139, 92, 246, 0.1);
+            color: var(--accent-purple);
+            font-weight: 600;
+        }
+
+        td {
+            color: var(--text-secondary);
+        }
+
+        .toc {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .toc h3 {
+            margin-top: 0;
+            color: var(--accent-purple);
+        }
+
+        .toc ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .toc li {
+            margin-bottom: 0.5rem;
+        }
+
+        .toc a {
+            color: var(--text-secondary);
+            text-decoration: none;
+        }
+
+        .toc a:hover {
+            color: var(--accent-purple);
+        }
+
+        .attack-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .attack-card h4 {
+            margin-top: 0;
+        }
+
+        .severity-critical {
+            color: var(--accent-red);
+        }
+
+        .severity-high {
+            color: var(--accent-orange);
+        }
+
+        .severity-medium {
+            color: var(--accent-purple);
+        }
+    </style>
+
+    <!-- Mobile Navigation CSS -->
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <script src="/m-app.js?v=4.3" defer></script>
+</head>
+
+<body>
+    <!-- Mobile Header -->
+    <header class="m-header m-only">
+        <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark"
+                style="height: 28px; width: auto; margin: 0;">
+            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light"
+                style="height: 28px; width: auto; margin: 0;">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+        </div>
+        <div class="m-header__actions">
+            <button class="m-theme-toggle" onclick="mToggleTheme()" aria-label="Toggle Theme">
+                <span class="m-theme-toggle__thumb"></span>
+                <span class="m-theme-toggle__stars">
+                    <span class="m-theme-toggle__star"></span>
+                    <span class="m-theme-toggle__star"></span>
+                </span>
+            </button>
+            <button class="m-header__btn m-header__btn--search" data-action="search" aria-label="Search">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Bottom Navigation -->
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item">
+            <i class="fas fa-bug"></i>
+            <span>CVE</span>
+        </a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item">
+            <i class="fas fa-shield-alt"></i>
+            <span>Intel</span>
+        </a>
+        <a href="/articles.html" class="m-bottom-nav__item">
+            <i class="fas fa-newspaper"></i>
+            <span>Articles</span>
+        </a>
+        <a href="/guides/" class="m-bottom-nav__item active">
+            <i class="fas fa-book"></i>
+            <span>Guides</span>
+        </a>
+    </nav>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <a href="../index.html"
+                    style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="../logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="../logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+            <nav class="nav" role="navigation">
+                <a href="../index.html#news">News</a>
+                <a href="../threat-intel.html">Threat Intelligence <span class="live-badge">LIVE</span></a>
+                <a href="../cve-tracker.html">CVE</a>
+                <a href="../guides/">Guides</a>
+                <a href="../comparisons/">Tool Comparisons</a>
+                <a href="../articles.html">Articles</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <a href="/guides/" class="back-link">← Back to Guides</a>
+
+        <div class="guide-header">
+            <span class="ai-badge">🤖 AI Security</span>
+            <h1>Securing AI/ML Pipelines</h1>
+            <p style="color: var(--text-muted); font-size: 1.1rem;">Protect your machine learning systems from
+                adversarial attacks, data poisoning, and model theft</p>
+            <div style="margin-top: 1rem; color: var(--text-muted);">
+                <span>📖 20 min read</span> • <span>🎯 Intermediate to Advanced</span> • <span>📅 December 2025</span>
+            </div>
+        </div>
+
+        <div class="ai-box">
+            <strong>🔥 Why This Matters:</strong> 99% of organizations deploying AI systems reported security incidents
+            in 2024-2025. AI-specific attacks like prompt injection, data poisoning, and adversarial examples are now in
+            the OWASP Top 10 for LLM Applications.
+        </div>
+
+        <!-- Table of Contents -->
+        <div class="toc">
+            <h3>📋 Table of Contents</h3>
+            <ul>
+                <li><a href="#threat-landscape">1. AI/ML Threat Landscape</a></li>
+                <li><a href="#data-security">2. Training Data Security</a></li>
+                <li><a href="#model-security">3. Model Security</a></li>
+                <li><a href="#inference-security">4. Inference Pipeline Security</a></li>
+                <li><a href="#mlops">5. MLOps Security</a></li>
+                <li><a href="#governance">6. AI Governance Framework</a></li>
+                <li><a href="#tools">7. Security Tools & Frameworks</a></li>
+            </ul>
+        </div>
+
+        <h2 id="threat-landscape">1. AI/ML Threat Landscape</h2>
+
+        <p>AI systems face unique security challenges that traditional security controls don't address. Understanding
+            these threats is the first step to building secure AI pipelines.</p>
+
+        <h3>OWASP Top 10 for LLM Applications</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Vulnerability</th>
+                    <th>Risk</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>LLM01</td>
+                    <td><strong>Prompt Injection</strong></td>
+                    <td class="severity-critical">Critical</td>
+                </tr>
+                <tr>
+                    <td>LLM02</td>
+                    <td><strong>Insecure Output Handling</strong></td>
+                    <td class="severity-critical">Critical</td>
+                </tr>
+                <tr>
+                    <td>LLM03</td>
+                    <td><strong>Training Data Poisoning</strong></td>
+                    <td class="severity-high">High</td>
+                </tr>
+                <tr>
+                    <td>LLM04</td>
+                    <td><strong>Model Denial of Service</strong></td>
+                    <td class="severity-medium">Medium</td>
+                </tr>
+                <tr>
+                    <td>LLM05</td>
+                    <td><strong>Supply Chain Vulnerabilities</strong></td>
+                    <td class="severity-high">High</td>
+                </tr>
+                <tr>
+                    <td>LLM06</td>
+                    <td><strong>Sensitive Information Disclosure</strong></td>
+                    <td class="severity-critical">Critical</td>
+                </tr>
+                <tr>
+                    <td>LLM07</td>
+                    <td><strong>Insecure Plugin Design</strong></td>
+                    <td class="severity-high">High</td>
+                </tr>
+                <tr>
+                    <td>LLM08</td>
+                    <td><strong>Excessive Agency</strong></td>
+                    <td class="severity-high">High</td>
+                </tr>
+                <tr>
+                    <td>LLM09</td>
+                    <td><strong>Overreliance</strong></td>
+                    <td class="severity-medium">Medium</td>
+                </tr>
+                <tr>
+                    <td>LLM10</td>
+                    <td><strong>Model Theft</strong></td>
+                    <td class="severity-high">High</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Attack Categories</h3>
+
+        <div class="attack-card">
+            <h4>🎯 Adversarial Attacks</h4>
+            <p>Carefully crafted inputs that cause models to make incorrect predictions while appearing normal to
+                humans.</p>
+            <ul>
+                <li><strong>Evasion attacks:</strong> Modify inputs at inference time</li>
+                <li><strong>Perturbation attacks:</strong> Add imperceptible noise to images/text</li>
+                <li><strong>Physical attacks:</strong> Real-world adversarial objects (patches, stickers)</li>
+            </ul>
+        </div>
+
+        <div class="attack-card">
+            <h4>☠️ Data Poisoning</h4>
+            <p>Corrupting training data to manipulate model behavior.</p>
+            <ul>
+                <li><strong>Label flipping:</strong> Swap labels to create backdoors</li>
+                <li><strong>Data injection:</strong> Insert malicious samples into training set</li>
+                <li><strong>Backdoor attacks:</strong> Create hidden triggers that activate specific behaviors</li>
+            </ul>
+        </div>
+
+        <div class="attack-card">
+            <h4>🔓 Model Extraction</h4>
+            <p>Stealing model functionality or parameters through API queries.</p>
+            <ul>
+                <li><strong>Query-based extraction:</strong> Reconstruct model from input/output pairs</li>
+                <li><strong>Side-channel attacks:</strong> Timing, memory usage analysis</li>
+                <li><strong>Model inversion:</strong> Extract training data from model responses</li>
+            </ul>
+        </div>
+
+        <h2 id="data-security">2. Training Data Security</h2>
+
+        <p>Your model is only as secure as your training data. Protecting data integrity and confidentiality is
+            foundational.</p>
+
+        <h3>Data Pipeline Security Checklist</h3>
+
+        <h4>1. Data Source Verification</h4>
+        <ul>
+            <li>Validate data provenance and chain of custody</li>
+            <li>Use cryptographic hashes to verify data integrity</li>
+            <li>Implement data lineage tracking</li>
+            <li>Vet third-party datasets before use</li>
+        </ul>
+
+        <pre><code># Data integrity verification
+import hashlib
+
+def verify_dataset_integrity(file_path, expected_hash):
+    """Verify dataset hasn't been tampered with"""
+    sha256_hash = hashlib.sha256()
+    with open(file_path, "rb") as f:
+        for byte_block in iter(lambda: f.read(4096), b""):
+            sha256_hash.update(byte_block)
+    return sha256_hash.hexdigest() == expected_hash
+
+# Before training, always verify
+if not verify_dataset_integrity("training_data.csv", KNOWN_GOOD_HASH):
+    raise SecurityError("Dataset integrity check failed!")</code></pre>
+
+        <h4>2. Data Poisoning Detection</h4>
+        <ul>
+            <li>Statistical analysis for outlier detection</li>
+            <li>Input validation and sanitization</li>
+            <li>Anomaly detection on new data batches</li>
+            <li>Regular data audits and sampling</li>
+        </ul>
+
+        <pre><code># Simple outlier detection for numerical data
+from sklearn.ensemble import IsolationForest
+
+def detect_poisoned_samples(X_train):
+    """Detect potential poisoned samples using Isolation Forest"""
+    clf = IsolationForest(contamination=0.01, random_state=42)
+    predictions = clf.fit_predict(X_train)
+    
+    # Samples with -1 are potential outliers/poisoned
+    suspicious_indices = np.where(predictions == -1)[0]
+    return suspicious_indices</code></pre>
+
+        <h4>3. Data Access Controls</h4>
+        <ul>
+            <li>Role-based access control (RBAC) for datasets</li>
+            <li>Encryption at rest and in transit</li>
+            <li>Audit logging of all data access</li>
+            <li>Data loss prevention (DLP) policies</li>
+        </ul>
+
+        <div class="warning-box">
+            <strong>⚠️ PII in Training Data:</strong> Ensure training data doesn't contain personally identifiable
+            information (PII) that could be extracted through model inversion attacks. Use differential privacy
+            techniques when training on sensitive data.
+        </div>
+
+        <h2 id="model-security">3. Model Security</h2>
+
+        <h3>Secure Model Development</h3>
+
+        <h4>1. Model Signing & Versioning</h4>
+        <pre><code># Sign model artifacts for integrity verification
+import gnupg
+
+gpg = gnupg.GPG()
+
+def sign_model(model_path, passphrase):
+    """Cryptographically sign model file"""
+    with open(model_path, 'rb') as f:
+        signed_data = gpg.sign_file(f, passphrase=passphrase, detach=True)
+    
+    with open(f"{model_path}.sig", 'wb') as f:
+        f.write(str(signed_data).encode())
+    
+    return True
+
+def verify_model_signature(model_path, signature_path):
+    """Verify model hasn't been tampered with"""
+    with open(signature_path, 'rb') as f:
+        verified = gpg.verify_file(f, model_path)
+    return verified.valid</code></pre>
+
+        <h4>2. Model Hardening</h4>
+        <ul>
+            <li><strong>Adversarial training:</strong> Include adversarial examples in training</li>
+            <li><strong>Input validation:</strong> Reject inputs outside expected distributions</li>
+            <li><strong>Output filtering:</strong> Sanitize model outputs before use</li>
+            <li><strong>Confidence thresholds:</strong> Reject low-confidence predictions</li>
+        </ul>
+
+        <pre><code># Input validation for inference
+import numpy as np
+
+class SecurePredictor:
+    def __init__(self, model, input_bounds, confidence_threshold=0.7):
+        self.model = model
+        self.input_bounds = input_bounds
+        self.confidence_threshold = confidence_threshold
+    
+    def predict(self, X):
+        # Validate input bounds
+        if not self._validate_input(X):
+            raise ValueError("Input outside expected bounds - potential attack")
+        
+        # Get prediction with confidence
+        proba = self.model.predict_proba(X)
+        confidence = np.max(proba, axis=1)
+        
+        # Reject low-confidence predictions
+        if confidence < self.confidence_threshold:
+            return None, "Low confidence - abstaining from prediction"
+        
+        return np.argmax(proba, axis=1), confidence
+    
+    def _validate_input(self, X):
+        return np.all((X >= self.input_bounds['min']) & 
+                      (X <= self.input_bounds['max']))</code></pre>
+
+        <h4>3. Model Access Controls</h4>
+        <ul>
+            <li>Rate limiting on inference APIs</li>
+            <li>Query auditing and anomaly detection</li>
+            <li>API key rotation and management</li>
+            <li>Output watermarking for theft detection</li>
+        </ul>
+
+        <h2 id="inference-security">4. Inference Pipeline Security</h2>
+
+        <h3>Securing Model Deployment</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Layer</th>
+                    <th>Security Controls</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Network</strong></td>
+                    <td>TLS 1.3, mTLS, API gateway, WAF</td>
+                </tr>
+                <tr>
+                    <td><strong>Application</strong></td>
+                    <td>Input validation, rate limiting, authentication</td>
+                </tr>
+                <tr>
+                    <td><strong>Model</strong></td>
+                    <td>Signed models, version control, access logging</td>
+                </tr>
+                <tr>
+                    <td><strong>Data</strong></td>
+                    <td>Encryption, PII detection, output filtering</td>
+                </tr>
+                <tr>
+                    <td><strong>Infrastructure</strong></td>
+                    <td>Container security, secrets management, least privilege</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Rate Limiting for Model Extraction Prevention</h3>
+
+        <pre><code># Rate limiting to prevent model extraction
+from functools import wraps
+from flask import request, jsonify
+import time
+
+class RateLimiter:
+    def __init__(self, max_requests=100, window_seconds=3600):
+        self.max_requests = max_requests
+        self.window_seconds = window_seconds
+        self.requests = {}  # Use Redis in production
+    
+    def is_allowed(self, client_id):
+        current_time = time.time()
+        window_start = current_time - self.window_seconds
+        
+        # Clean old entries
+        if client_id in self.requests:
+            self.requests[client_id] = [
+                t for t in self.requests[client_id] if t > window_start
+            ]
+        
+        # Check limit
+        request_count = len(self.requests.get(client_id, []))
+        
+        if request_count >= self.max_requests:
+            return False
+        
+        # Record request
+        if client_id not in self.requests:
+            self.requests[client_id] = []
+        self.requests[client_id].append(current_time)
+        
+        return True
+
+rate_limiter = RateLimiter(max_requests=1000, window_seconds=3600)
+
+def rate_limit(f):
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        client_id = request.headers.get('X-API-Key')
+        if not rate_limiter.is_allowed(client_id):
+            return jsonify({"error": "Rate limit exceeded"}), 429
+        return f(*args, **kwargs)
+    return decorated_function</code></pre>
+
+        <h2 id="mlops">5. MLOps Security</h2>
+
+        <h3>Secure ML Pipeline Architecture</h3>
+
+        <pre><code>┌─────────────────────────────────────────────────────────────────┐
+│                    SECURE ML PIPELINE                            │
+├──────────────┬──────────────┬──────────────┬───────────────────┤
+│  Data Layer │ Training     │ Model Store  │ Serving Layer     │
+├──────────────┼──────────────┼──────────────┼───────────────────┤
+│ • Encryption │ • Isolated   │ • Signed     │ • API Gateway     │
+│ • DLP        │   environment│   artifacts  │ • Rate limiting   │
+│ • Lineage    │ • Audit logs │ • Versioning │ • Input validation│
+│ • Access     │ • Dependency │ • RBAC       │ • Output filtering│
+│   control    │   scanning   │              │                   │
+└──────────────┴──────────────┴──────────────┴───────────────────┘</code></pre>
+
+        <h3>CI/CD Pipeline Security</h3>
+
+        <ul>
+            <li><strong>Dependency scanning:</strong> Check for vulnerable packages (Snyk, Dependabot)</li>
+            <li><strong>Container scanning:</strong> Scan Docker images for vulnerabilities</li>
+            <li><strong>Secrets management:</strong> Use vault for API keys, credentials</li>
+            <li><strong>Model validation:</strong> Automated security tests before deployment</li>
+        </ul>
+
+        <pre><code># Example GitHub Actions workflow with security scanning
+# .github/workflows/ml-security.yml
+
+name: ML Security Pipeline
+on: [push, pull_request]
+
+jobs:
+  security-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Dependency vulnerability scan
+        uses: snyk/actions/python@master
+        with:
+          args: --severity-threshold=high
+      
+      - name: Container scan
+        uses: aquasecurity/trivy-action@master
+        with:
+          image-ref: 'my-ml-model:latest'
+          severity: 'CRITICAL,HIGH'
+      
+      - name: Secrets scan
+        uses: trufflesecurity/trufflehog@main
+        with:
+          extra_args: --only-verified
+      
+      - name: Model security tests
+        run: python -m pytest tests/security/</code></pre>
+
+        <h2 id="governance">6. AI Governance Framework</h2>
+
+        <h3>Key Governance Components</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Area</th>
+                    <th>Requirements</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Model Documentation</strong></td>
+                    <td>Model cards, training data documentation, intended use</td>
+                </tr>
+                <tr>
+                    <td><strong>Risk Assessment</strong></td>
+                    <td>Security risk analysis, bias auditing, impact assessment</td>
+                </tr>
+                <tr>
+                    <td><strong>Monitoring</strong></td>
+                    <td>Drift detection, performance monitoring, anomaly detection</td>
+                </tr>
+                <tr>
+                    <td><strong>Incident Response</strong></td>
+                    <td>AI-specific playbooks, rollback procedures, disclosure policy</td>
+                </tr>
+                <tr>
+                    <td><strong>Compliance</strong></td>
+                    <td>EU AI Act, NIST AI RMF, industry regulations</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Model Cards Template</h3>
+
+        <pre><code># Model Card: [Model Name]
+
+## Model Details
+- **Version:** 1.0
+- **Type:** Classification
+- **Framework:** PyTorch 2.0
+- **Owner:** ML Security Team
+
+## Intended Use
+- **Primary use:** Malware detection
+- **Out-of-scope uses:** Not for real-time threat blocking
+
+## Training Data
+- **Source:** Internal malware corpus
+- **Size:** 1M samples
+- **PII:** None
+- **Bias considerations:** May underperform on novel malware families
+
+## Security Considerations
+- **Attack surface:** API exposed for inference
+- **Known vulnerabilities:** None identified
+- **Security controls:** Rate limiting, input validation, signed artifacts
+
+## Ethical Considerations
+- Model may have false positives affecting legitimate software
+- Human review required for blocking decisions</code></pre>
+
+        <h2 id="tools">7. Security Tools & Frameworks</h2>
+
+        <h3>Open Source Tools</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Tool</th>
+                    <th>Purpose</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Adversarial Robustness Toolbox</strong></td>
+                    <td>Test & defend against adversarial attacks</td>
+                    <td>IBM Research</td>
+                </tr>
+                <tr>
+                    <td><strong>Microsoft Counterfit</strong></td>
+                    <td>AI security red teaming</td>
+                    <td>Microsoft</td>
+                </tr>
+                <tr>
+                    <td><strong>Garak</strong></td>
+                    <td>LLM vulnerability scanner</td>
+                    <td>NVIDIA</td>
+                </tr>
+                <tr>
+                    <td><strong>ModelScan</strong></td>
+                    <td>Scan ML models for malicious code</td>
+                    <td>ProtectAI</td>
+                </tr>
+                <tr>
+                    <td><strong>Fickling</strong></td>
+                    <td>Static analysis for pickle files</td>
+                    <td>Trail of Bits</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="success-box">
+            <strong>✅ Quick Wins:</strong>
+            <ul style="margin-top: 1rem;">
+                <li>Enable rate limiting on all model APIs today</li>
+                <li>Implement model signing for your production models</li>
+                <li>Add input validation to reject out-of-bounds inputs</li>
+                <li>Scan your ML dependencies with Snyk or Safety</li>
+            </ul>
+        </div>
+
+        <div class="info-box">
+            <strong>🔗 Related Resources:</strong>
+            <ul style="margin-top: 1rem;">
+                <li><a href="/guides/llm-security-prompt-injection.html" style="color: var(--accent-purple);">LLM
+                        Security: Prompt Injection & Jailbreaks</a></li>
+                <li><a href="/articles/99-percent-ai-systems-attacked-2025.html"
+                        style="color: var(--accent-purple);">99% of AI Systems Faced Attacks in 2024-2025</a></li>
+                <li><a href="/guides/threat-hunting-techniques.html" style="color: var(--accent-purple);">Threat Hunting
+                        Techniques</a></li>
+            </ul>
+        </div>
+
+        <p style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); color: var(--text-muted);">
+            <strong>Author:</strong> TheHGTech Security Team<br>
+            <strong>Last Updated:</strong> December 2025<br>
+            <strong>Reading Time:</strong> 20 minutes
+        </p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const body = document.body;
+            if (localStorage.getItem('theme') === 'light') {
+                body.classList.add('light-mode');
+            }
+        });
+    </script>
+</body>
+
+</html>
