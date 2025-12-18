@@ -408,8 +408,11 @@
 
         <div class="article-header">
             <div class="article-meta">
-                <span><i class="far fa-calendar"></i> December 15, 2025</span>
-                <span><i class="far fa-clock"></i> 12 min read</span>
+                <span
+                    style="background: linear-gradient(135deg, #10b981, #059669); color: white; padding: 0.3rem 0.8rem; border-radius: 4px; font-weight: 600;"><i
+                        class="fas fa-sync-alt"></i> UPDATED</span>
+                <span><i class="far fa-calendar"></i> Updated: December 18, 2025</span>
+                <span><i class="far fa-clock"></i> 14 min read</span>
                 <span><i class="fas fa-tag"></i> Ransomware</span>
                 <span><i class="fas fa-globe"></i> 17 Countries Affected</span>
             </div>
@@ -832,11 +835,32 @@
                 <li><strong>Affiliate Model Expansion:</strong> Many ransomware operations run affiliate programs,
                     recruiting other criminals to deploy their ransomware in exchange for a cut. If Gentlemen adopts
                     this model, attack volume could increase dramatically.</li>
-                <li><strong>Linux Variants:</strong> Given their Go-based codebase, a Linux variant is trivial to
-                    produce. Organizations with mixed Windows/Linux environments should prepare for both.</li>
+                <li><strong>Linux/ESXi Variants:</strong> <span style="color: var(--accent-cyan);">CONFIRMED December
+                        2025:</span> The group has now released enhanced support for Linux and ESXi environments,
+                    allowing them to target VMware infrastructure directly. Organizations with mixed environments are
+                    now at increased risk.</li>
+                <li><strong>Encryption Speed Improvements:</strong> <span style="color: var(--accent-cyan);">December
+                        2025:</span> Security researchers report a 9-15% encryption speed increase across variants, with
+                    dual execution modes for local and network-wide encryption.</li>
                 <li><strong>Targeting Patterns:</strong> As more victim data emerges, we'll understand whether certain
                     industries or regions are being specifically targeted or if this remains opportunistic.</li>
             </ul>
+
+            <div class="info-box">
+                <h3 style="color: var(--accent-cyan); margin-top: 0;"><i class="fas fa-sync-alt"></i> December 18, 2025
+                    Update</h3>
+                <p><strong>New developments confirmed by security researchers:</strong></p>
+                <ul style="margin-bottom: 0;">
+                    <li><strong>Linux/ESXi Support:</strong> Enhanced cross-platform capabilities now include direct
+                        VMware ESXi targeting</li>
+                    <li><strong>Encryption Speed:</strong> 9-15% performance improvement across all variants</li>
+                    <li><strong>Dual Execution:</strong> New modes for local-only or network-wide encryption</li>
+                    <li><strong>Anti-AV Tools:</strong> Custom tools using signed driver abuse and registry
+                        modifications</li>
+                    <li><strong>Detection Signature:</strong> AhnLab identifies as Ransomware/Win.GentlemenCrypt (V3
+                        engine Dec 2025)</li>
+                </ul>
+            </div>
 
             <div class="related-guides">
                 <h3>Essential Resources for Ransomware Defense</h3>
@@ -893,31 +917,33 @@
             </div>
         </div>
     </div>
-        <!-- Interaction Bar -->
-        <div class="interaction-bar">
-            <div class="like-section">
-                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
-                    <i class="far fa-heart"></i> <span id="likeText">Like this guide</span>
-                </button>
-            </div>
-            <div class="action-buttons">
-                <div class="share-buttons">
-                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter" aria-label="Share on Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn" aria-label="Share on LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link">
-                        <i class="fas fa-link"></i>
-                    </button>
-                </div>
-                <div class="button-separator"></div>
-                <button onclick="printArticle()" class="print-btn" title="Print" aria-label="Print">
-                    <i class="fas fa-print"></i>
-                </button>
-            </div>
+    <!-- Interaction Bar -->
+    <div class="interaction-bar">
+        <div class="like-section">
+            <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                <i class="far fa-heart"></i> <span id="likeText">Like this guide</span>
+            </button>
         </div>
+        <div class="action-buttons">
+            <div class="share-buttons">
+                <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"
+                    aria-label="Share on Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"
+                    aria-label="Share on LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link">
+                    <i class="fas fa-link"></i>
+                </button>
+            </div>
+            <div class="button-separator"></div>
+            <button onclick="printArticle()" class="print-btn" title="Print" aria-label="Print">
+                <i class="fas fa-print"></i>
+            </button>
+        </div>
+    </div>
 
 
     <script src="/interaction-bar.js?v=20251217"></script>

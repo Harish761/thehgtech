@@ -5,14 +5,16 @@
       "title": "French Ministry of Interior Hacked: 22-Year-Old Arrested",
       "date": "December 18, 2025",
       "category": "Government Breach",
-      "excerpt": "French Ministry of Interior confirms email systems breached December 11-12. Hacker 'Indra' claims access to police and tax databases. 22-year-old arrested.",
+      "badge": "UPDATED",
+      "excerpt": "UPDATED: Data extraction confirmed, suspect had prior convictions. French Ministry of Interior confirms email systems breached December 11-12. Hacker 'Indra' claims access to police and tax databases.",
       "image": "images/articles/french-ministry-hack-2025.png",
       "tags": [
         "France",
         "Government Breach",
         "Data Breach",
         "Arrest",
-        "Email Compromise"
+        "Email Compromise",
+        "BreachForums"
       ],
       "author": "TheHGTech",
       "externalUrl": "articles/french-ministry-interior-hack-2025.html"
@@ -147,9 +149,10 @@
     {
       "id": "article-gentlemen-ransomware-2025",
       "title": "Gentlemen Ransomware: The 'Polite' Threat Ripping Through Corporate Networks",
-      "date": "December 15, 2025",
+      "date": "December 18, 2025",
       "category": "Ransomware",
-      "excerpt": "Don't let the name fool you—this Go-based ransomware variant is anything but courteous. With BYOVD attacks, GPO manipulation, and 17 countries affected, here's what you need to know about this sophisticated threat.",
+      "badge": "UPDATED",
+      "excerpt": "UPDATED: Linux/ESXi support confirmed, 9-15% faster encryption. Go-based ransomware using BYOVD attacks, GPO manipulation across 17 countries. Now includes VMware targeting capabilities.",
       "image": "images/gentlemen_ransomware.png",
       "tags": [
         "Ransomware",
