@@ -392,12 +392,18 @@
             <p style="color: var(--text-muted); font-size: 1.1rem;">The complete guide to securing your AD environment
                 against modern attacks</p>
             <div style="margin-top: 1rem; color: var(--text-muted);">
-                <span><i class="fas fa-book-open"></i> 25 min read</span> • <span><i class="fas fa-crosshairs"></i> Intermediate to Advanced</span> • <span><i class="far fa-calendar-alt"></i> December 2025</span>
+                <span><i class="fas fa-book-open"></i> 25 min read</span> • <span><i class="fas fa-crosshairs"></i>
+                    Intermediate to Advanced</span> • <span><i class="far fa-calendar-alt"></i> December 2025</span>
             </div>
         </div>
 
+        <img src="/images/guides/active-directory-security-hardening.png"
+            alt="Active Directory Security & Hardening Guide" class="featured-image"
+            style="width: 100%; max-width: 100%; height: auto; border-radius: 12px; margin: 2rem 0; box-shadow: 0 10px 40px rgba(139, 92, 246, 0.2); border: 1px solid var(--border);">
+
         <div class="warning-box">
-            <strong><i class="fas fa-exclamation-triangle"></i> Why This Matters:</strong> Active Directory is the backbone of 95% of Fortune 1000 companies. A
+            <strong><i class="fas fa-exclamation-triangle"></i> Why This Matters:</strong> Active Directory is the
+            backbone of 95% of Fortune 1000 companies. A
             single compromised AD environment can give attackers complete control over your entire organization. Recent
             breaches like SolarWinds and Colonial Pipeline exploited AD weaknesses.
         </div>
@@ -421,7 +427,8 @@
 
         <p>Active Directory (AD) is a prime target for attackers because compromising it grants access to
             <strong>everything</strong>: user accounts, servers, applications, and data. Modern attacks like ransomware
-            specifically target AD to maximize damage.</p>
+            specifically target AD to maximize damage.
+        </p>
 
         <h3>Common AD Attack Vectors</h3>
 
@@ -503,7 +510,8 @@
         </table>
 
         <div class="info-box">
-            <strong><i class="fas fa-lightbulb"></i> Golden Rule:</strong> Credentials from a higher tier should <strong>never</strong> be used on a
+            <strong><i class="fas fa-lightbulb"></i> Golden Rule:</strong> Credentials from a higher tier should
+            <strong>never</strong> be used on a
             lower tier. A Tier 0 admin should never log into a user's workstation (Tier 2), as their credentials would
             be cached and vulnerable to theft.
         </div>
@@ -578,7 +586,8 @@ Computer Configuration → Administrative Templates → System → Device Guard
             Golden Tickets for unlimited access.</p>
 
         <div class="warning-box">
-            <strong><i class="fas fa-exclamation-triangle"></i> Critical:</strong> Reset the KRBTGT password <strong>twice</strong> every 180 days. The password
+            <strong><i class="fas fa-exclamation-triangle"></i> Critical:</strong> Reset the KRBTGT password
+            <strong>twice</strong> every 180 days. The password
             must be reset twice because Kerberos keeps the current and previous password. Use Microsoft's official
             KRBTGT reset script.
         </div>
@@ -612,7 +621,8 @@ Account lockout duration: 30 minutes
 Reset account lockout counter after: 30 minutes</code></pre>
 
         <div class="info-box">
-            <strong><i class="fas fa-lightbulb"></i> Note:</strong> Consider using Fine-Grained Password Policies (FGPP) for service accounts and
+            <strong><i class="fas fa-lightbulb"></i> Note:</strong> Consider using Fine-Grained Password Policies (FGPP)
+            for service accounts and
             privileged users with longer, more complex passwords (25+ characters).
         </div>
 
@@ -701,7 +711,8 @@ Install-ADServiceAccount -Identity "gMSA-SQLService"
         </ul>
 
         <div class="warning-box">
-            <strong><i class="fas fa-exclamation-triangle"></i> Caution:</strong> Test thoroughly before adding service accounts to Protected Users. Many
+            <strong><i class="fas fa-exclamation-triangle"></i> Caution:</strong> Test thoroughly before adding service
+            accounts to Protected Users. Many
             applications rely on NTLM or delegation and will break.
         </div>
 
@@ -927,31 +938,33 @@ event_id:4769 NOT preceded_by:event_id:4768 within 10m</code></pre>
         });
     </script>
 
-        <!-- Interaction Bar -->
-        <div class="interaction-bar">
-            <div class="like-section">
-                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
-                    <i class="far fa-heart"></i> <span id="likeText">Like this guide</span>
-                </button>
-            </div>
-            <div class="action-buttons">
-                <div class="share-buttons">
-                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter" aria-label="Share on Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn" aria-label="Share on LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link">
-                        <i class="fas fa-link"></i>
-                    </button>
-                </div>
-                <div class="button-separator"></div>
-                <button onclick="printArticle()" class="print-btn" title="Print" aria-label="Print">
-                    <i class="fas fa-print"></i>
-                </button>
-            </div>
+    <!-- Interaction Bar -->
+    <div class="interaction-bar">
+        <div class="like-section">
+            <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                <i class="far fa-heart"></i> <span id="likeText">Like this guide</span>
+            </button>
         </div>
+        <div class="action-buttons">
+            <div class="share-buttons">
+                <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"
+                    aria-label="Share on Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"
+                    aria-label="Share on LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link">
+                    <i class="fas fa-link"></i>
+                </button>
+            </div>
+            <div class="button-separator"></div>
+            <button onclick="printArticle()" class="print-btn" title="Print" aria-label="Print">
+                <i class="fas fa-print"></i>
+            </button>
+        </div>
+    </div>
 
     <script src="/interaction-bar.js?v=20251217"></script>
 </body>

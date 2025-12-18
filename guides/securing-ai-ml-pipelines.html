@@ -396,12 +396,18 @@
             <p style="color: var(--text-muted); font-size: 1.1rem;">Protect your machine learning systems from
                 adversarial attacks, data poisoning, and model theft</p>
             <div style="margin-top: 1rem; color: var(--text-muted);">
-                <span><i class="fas fa-book-open"></i> 20 min read</span> • <span><i class="fas fa-crosshairs"></i> Intermediate to Advanced</span> • <span><i class="far fa-calendar-alt"></i> December 2025</span>
+                <span><i class="fas fa-book-open"></i> 20 min read</span> • <span><i class="fas fa-crosshairs"></i>
+                    Intermediate to Advanced</span> • <span><i class="far fa-calendar-alt"></i> December 2025</span>
             </div>
         </div>
 
+        <img src="/images/guides/securing-ai-ml-pipelines.png" alt="Securing AI/ML Pipelines Guide"
+            class="featured-image"
+            style="width: 100%; max-width: 100%; height: auto; border-radius: 12px; margin: 2rem 0; box-shadow: 0 10px 40px rgba(139, 92, 246, 0.2); border: 1px solid var(--border);">
+
         <div class="ai-box">
-            <strong><i class="fas fa-fire"></i> Why This Matters:</strong> 99% of organizations deploying AI systems reported security incidents
+            <strong><i class="fas fa-fire"></i> Why This Matters:</strong> 99% of organizations deploying AI systems
+            reported security incidents
             in 2024-2025. AI-specific attacks like prompt injection, data poisoning, and adversarial examples are now in
             the OWASP Top 10 for LLM Applications.
         </div>
@@ -581,7 +587,8 @@ def detect_poisoned_samples(X_train):
         </ul>
 
         <div class="warning-box">
-            <strong><i class="fas fa-exclamation-triangle"></i> PII in Training Data:</strong> Ensure training data doesn't contain personally identifiable
+            <strong><i class="fas fa-exclamation-triangle"></i> PII in Training Data:</strong> Ensure training data
+            doesn't contain personally identifiable
             information (PII) that could be extracted through model inversion attacks. Use differential privacy
             techniques when training on sensitive data.
         </div>
@@ -937,31 +944,33 @@ jobs:
         });
     </script>
 
-        <!-- Interaction Bar -->
-        <div class="interaction-bar">
-            <div class="like-section">
-                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
-                    <i class="far fa-heart"></i> <span id="likeText">Like this guide</span>
-                </button>
-            </div>
-            <div class="action-buttons">
-                <div class="share-buttons">
-                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter" aria-label="Share on Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn" aria-label="Share on LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link">
-                        <i class="fas fa-link"></i>
-                    </button>
-                </div>
-                <div class="button-separator"></div>
-                <button onclick="printArticle()" class="print-btn" title="Print" aria-label="Print">
-                    <i class="fas fa-print"></i>
-                </button>
-            </div>
+    <!-- Interaction Bar -->
+    <div class="interaction-bar">
+        <div class="like-section">
+            <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                <i class="far fa-heart"></i> <span id="likeText">Like this guide</span>
+            </button>
         </div>
+        <div class="action-buttons">
+            <div class="share-buttons">
+                <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"
+                    aria-label="Share on Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"
+                    aria-label="Share on LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link">
+                    <i class="fas fa-link"></i>
+                </button>
+            </div>
+            <div class="button-separator"></div>
+            <button onclick="printArticle()" class="print-btn" title="Print" aria-label="Print">
+                <i class="fas fa-print"></i>
+            </button>
+        </div>
+    </div>
 
     <script src="/interaction-bar.js?v=20251217"></script>
 </body>
