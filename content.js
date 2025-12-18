@@ -4,67 +4,53 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Dec 17 2025",
-            "title": "From Fraudster to Fraud Fighter: The Transformation of Alex Hall",
-            "content": "Alex Hall, once known for his undetected fraudulent activities, shares his transformation journey from a fraudster to a defender of trust. Hall attributes his change to personal life events and insights gained through neurodiversity. His story underscores the potential for individuals to reform and contribute positively to cybersecurity. Hall&#x27;s experience highlights the importance of understanding diverse perspectives in building robust fraud prevention strategies. Security professionals can learn from Hall&#x27;s journey to better anticipate and counteract fraud tactics.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/hacker-conversations-alex-hall-one-time-fraudster/"
-        },
-        {
-            "date": "Dec 17 2025",
-            "title": "Cellik RAT: New Malware Trojanizes Google Play Apps for $150",
-            "content": "A new remote access trojan (RAT) named Cellik is being sold for $150, providing attackers full control over Android devices. This malware mimics advanced spyware capabilities, enabling real-time surveillance and compromising apps on Google Play. The threat is particularly concerning for users who download apps from unofficial sources or fail to update their security settings. The emergence of Cellik RAT highlights the need for continuous monitoring and updating of Android security measures. Users are advised to download apps only from trusted sources and regularly update their devices to mitigate risks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/new-150-cellik-rat-grants-android-control-trojanizes-google-play-apps/"
-        },
-        {
-            "date": "Dec 17 2025",
-            "title": "Microsoft Seeks IT Admins&#x27; Help to Address Windows IIS Failures",
-            "content": "Microsoft is urging IT administrators to contact them for advice on mitigating issues with Message Queuing (MSMQ) that are causing enterprise applications and Internet Information Services (IIS) sites to fail. The problem affects businesses relying on these systems for critical operations, potentially leading to significant downtime. Microsoft is working on a permanent fix, but in the meantime, affected organizations should reach out for temporary solutions. This incident underscores the importance of maintaining open communication channels with vendors for prompt issue resolution. IT teams should monitor Microsoft&#x27;s advisories for updates on the fix.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-asks-it-admins-to-reach-out-for-windows-iis-failures-fix/"
-        },
-        {
-            "date": "Dec 17 2025",
-            "title": "Cybersecurity Predictions for 2026: The End of Perimeter Security",
-            "content": "SecurityWeek predicts that 2026 will see the collapse of traditional perimeter security, with identity and AI taking center stage. As static controls become ineffective in a dynamic threat environment, organizations must rethink their security strategies. Credentials alone are no longer sufficient to protect against sophisticated attacks. This shift emphasizes the need for adaptive security measures that leverage AI to analyze threats in real-time. Security professionals should prepare to integrate AI-driven solutions and focus on identity management to safeguard their networks effectively.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/five-cybersecurity-predictions-for-2026-identity-ai-and-the-collapse-of-perimeter-thinking/"
-        },
-        {
-            "date": "Dec 17 2025",
-            "title": "JumpCloud Agent Flaw Allows Full System Compromise",
-            "content": "A critical vulnerability in JumpCloud&#x27;s Remote Assist for Windows agent allows local privilege escalation, potentially leading to full system compromise. Disclosed by XM Cyber, the flaw arises from insecure file operations during uninstall or update processes executed with Windows NT AUTHORITY\\SYSTEM privileges. This vulnerability poses a significant risk to organizations using JumpCloud for system management. Affected users should apply available patches immediately and review system logs for any signs of exploitation. This incident highlights the importance of rigorous security testing in software development.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4107744/jumpcloud-agent-turns-uninstall-into-a-system-shortcut.html"
-        },
-        {
-            "date": "Dec 17 2025",
-            "title": "Enhancing SOC Visibility: Real-Time Threat Detection for Industries",
-            "content": "Security Operations Centers (SOCs) are urged to overcome blind spots by adopting real-time threat detection tailored to specific industries and countries. As threats evolve and alerts increase, SOCs must prioritize understanding which dangers are most relevant to their business. The shift from reactive to proactive defense is essential to prevent breaches. Organizations should invest in tools that provide comprehensive visibility and contextual threat intelligence. This approach not only enhances security posture but also optimizes resource allocation for threat mitigation.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/12/fix-soc-blind-spots-see-threats-to-your.html"
-        },
-        {
-            "date": "Dec 17 2025",
-            "title": "Adaptive Security Secures $81 Million in Series B Funding",
-            "content": "Adaptive Security has raised $81 million in a Series B funding round led by Bain Capital Ventures, bringing its total funding to $146.5 million. The investment will support the company&#x27;s growth and development of advanced security solutions. Adaptive Security focuses on providing dynamic protection against evolving cyber threats, leveraging AI and machine learning technologies. This funding round underscores investor confidence in the company&#x27;s approach to addressing complex security challenges. Organizations should watch for new innovations from Adaptive Security as they expand their market presence.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/adaptive-security-raises-81-million-in-series-b-funding/"
-        },
-        {
-            "date": "Dec 17 2025",
-            "title": "ISC Stormcast Highlights Cybersecurity Trends for December 2025",
-            "content": "The latest ISC Stormcast podcast for December 17, 2025, provides a comprehensive overview of current cybersecurity challenges and trends. The InfoCON level remains at green, indicating a stable threat landscape. Key discussions include the rise in phishing attacks leveraging AI-generated content and the persistent threat of ransomware targeting healthcare systems. The podcast also covers recent vulnerabilities in widely used software, urging listeners to apply patches promptly. Security professionals are advised to stay vigilant and prioritize updates to protect against evolving threats. The ISC Stormcast continues to be a valuable resource for staying informed on cybersecurity developments.",
+            "date": "Dec 18 2025",
+            "title": "ISC Stormcast Highlights December Cybersecurity Trends",
+            "content": "The SANS Internet Storm Center&#x27;s latest Stormcast podcast for December 18, 2025, highlights key cybersecurity trends and threats as the year comes to a close. While the InfoCON level remains at green, indicating no immediate widespread threats, the podcast underscores the importance of remaining vigilant against emerging vulnerabilities. It discusses recent developments in malware tactics and highlights the need for robust security measures as attackers increasingly target unpatched systems. Security professionals are advised to ensure all systems are updated and to monitor for unusual network activity. This podcast serves as a reminder of the evolving threat landscape and the necessity of continuous defense strategies.",
             "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32576"
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32582"
+        },
+        {
+            "date": "Dec 18 2025",
+            "title": "Security Flaws in Kindle Devices Exposed by Black Hat Presentation",
+            "content": "In a recent episode of the Smashing Security podcast, experts discussed a significant vulnerability in Amazon&#x27;s Kindle devices revealed at Black Hat Europe. The flaw allows attackers to exploit a booby-trapped audiobook to gain unauthorized access to user accounts and potentially control credit card information. This vulnerability highlights the risks associated with eBook readers, often perceived as secure. Users are advised to be cautious when downloading content and to regularly update their devices with the latest security patches. This incident underscores the growing need for security awareness even in seemingly innocuous devices.",
+            "source": "Graham Cluley",
+            "sourceUrl": "https://grahamcluley.com/smashing-security-podcast-448/"
+        },
+        {
+            "date": "Dec 18 2025",
+            "title": "Ink Dragon Threat Group Exploits IIS Server Vulnerabilities",
+            "content": "The Chinese-linked threat group known as &quot;Ink Dragon&quot; is actively exploiting vulnerabilities in Internet Information Services (IIS) servers to construct a covert global espionage network. Identified by security firm Check Point, this group, also referred to as &quot;Earth Alux,&quot; targets common weaknesses in IIS to establish a network that is difficult to detect and disrupt. The campaign poses a significant threat to organizations relying on IIS for web hosting and application delivery. Security professionals are urged to review server configurations and apply necessary patches to mitigate these risks. This development reflects the persistent threat posed by state-sponsored cyber espionage groups.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4108158/ink-dragon-threat-group-targets-iis-servers-to-build-stealthy-global-network.html"
         },
         {
             "date": "Dec 17 2025",
-            "title": "FortiGate Firewall Credentials Compromised After Vulnerability Discovery",
-            "content": "Threat actors are exploiting newly discovered vulnerabilities in Fortinet&#x27;s device authentication systems, leading to the theft of FortiGate firewall credentials. Arctic Wolf researchers have identified malicious single sign-on attempts targeting these next-generation firewalls since Fortinet&#x27;s advisory. The vulnerabilities affect devices running specific firmware versions, though exact CVE IDs have not yet been disclosed. Organizations using FortiGate firewalls should immediately review their security configurations and apply available patches to mitigate the risk. This incident underscores the importance of rapid response to vulnerability disclosures in critical network infrastructure.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4107440/fortigate-firewall-credentials-being-stolen-after-vulnerabilities-discovered.html"
+            "title": "Zeroday Cloud Competition Awards $320,000 for Cloud Vulnerability Discoveries",
+            "content": "The Zeroday Cloud hacking event in London concluded with researchers receiving $320,000 in prizes for identifying critical vulnerabilities in cloud infrastructure components. The competition showcased 11 zero-day exploits, including remote code execution vulnerabilities that could have severe implications for cloud security. This event highlights the ongoing challenge of securing cloud environments against sophisticated threats. Organizations using cloud services are encouraged to prioritize security assessments and implement robust monitoring and response strategies. The competition underscores the value of ethical hacking in uncovering vulnerabilities before malicious actors can exploit them.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/zeroday-cloud-hacking-event-awards-320-0000-for-11-zero-days/"
+        },
+        {
+            "date": "Dec 17 2025",
+            "title": "React2Shell Vulnerability Exploits Reach Record Highs",
+            "content": "The React2Shell vulnerability has seen an unprecedented number of public exploits, making it the most exploited CVE to date. This flaw has attracted significant attention from attackers due to its widespread impact and ease of exploitation. Organizations using affected systems are at heightened risk, with sensitive targets increasingly being compromised. Security teams are advised to prioritize patching and to monitor for any signs of exploitation. This situation highlights the critical need for proactive vulnerability management and the importance of staying informed about emerging threats.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/react2shell-vulnerability-fallout-spreads/"
+        },
+        {
+            "date": "Dec 17 2025",
+            "title": "Active Attacks Target Critical Fortinet Vulnerabilities",
+            "content": "Critical vulnerabilities in Fortinet devices are currently being exploited by attackers targeting administrative accounts. Once access is obtained, attackers can export device configurations, including hashed credentials and other sensitive data. The vulnerabilities underscore the importance of securing network infrastructure devices against unauthorized access. Fortinet users are urged to apply the latest patches and review security settings to prevent potential breaches. This incident highlights the ongoing threat to network security devices and the need for rigorous access control measures.",
+            "source": "Dark Reading",
+            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/critical-fortinet-flaws-under-active-attack"
+        },
+        {
+            "date": "Dec 17 2025",
+            "title": "Suspect Arrested in Cyberattack on French Interior Ministry",
+            "content": "French authorities have arrested a 22-year-old individual in connection with a cyberattack on France&#x27;s Ministry of the Interior earlier this month. The attack, which targeted sensitive government systems, highlights the persistent threat of cybercrime against national infrastructure. Details of the attack remain limited, but the arrest marks a significant step in addressing cybersecurity threats within government agencies. This incident underscores the need for robust cybersecurity measures and international cooperation in combating cybercrime. Security professionals are reminded of the importance of vigilance and rapid response to potential threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/france-arrests-suspect-tied-to-cyberattack-on-interior-ministry/"
         },
         {
             "date": "May 05 2026",
@@ -76,53 +62,53 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Dec 17 2025",
-            "title": "Amazon Eyes $10 Billion Investment in OpenAI to Leverage AI Chip Technology",
-            "content": "Amazon is reportedly in early-stage discussions to invest up to $10 billion in OpenAI, a move that would integrate the AI lab with Amazon&#x27;s proprietary AI chips. This potential investment highlights the growing trend of circular deals in the AI industry, where companies collaborate to leverage each other&#x27;s technological advancements. OpenAI, known for its generative AI models, could significantly benefit from Amazon&#x27;s hardware capabilities, potentially enhancing model efficiency and performance. This partnership could reshape the competitive landscape, affecting cloud service providers and AI developers. Stakeholders in AI and cloud computing should monitor this development closely, as it may influence future strategic alliances and technological innovations.",
+            "date": "Dec 18 2025",
+            "title": "Adobe Faces Class-Action Lawsuit Over AI Training Practices",
+            "content": "Adobe is facing a proposed class-action lawsuit accusing the company of improperly using authors&#x27; works to train its AI models. This legal challenge is the latest in a series of copyright disputes targeting the AI industry, as creators seek to protect intellectual property from unauthorized use in AI training datasets. The lawsuit could significantly impact Adobe&#x27;s AI development processes and set a precedent for how companies utilize copyrighted materials in AI training. Professionals in the AI and legal fields should monitor this case closely, as its outcome could influence future AI training practices and copyright law interpretations. Companies leveraging AI should ensure compliance with copyright laws to avoid similar legal challenges.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/17/amazon-reportedly-in-talks-to-invest-10b-in-openai-as-circular-deals-stay-popular/"
-        },
-        {
-            "date": "Dec 17 2025",
-            "title": "Roblox Integrates AI to Streamline Game Development in Studio",
-            "content": "Roblox is enhancing its game development platform, Roblox Studio, by incorporating artificial intelligence to expedite the creation of virtual experiences. The integration aims to address persistent challenges such as repetitive production tasks and workflow friction. By automating routine processes, the AI tools promise to reduce development time and increase efficiency, allowing developers to focus on creative aspects. This move is part of a broader trend of AI adoption in creative industries, where speed and innovation are crucial. Developers using Roblox Studio should explore these new AI capabilities to optimize their production pipelines and enhance the quality of their offerings.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/roblox-brings-ai-into-the-studio-to-speed-up-game-creation/"
+            "sourceUrl": "https://techcrunch.com/2025/12/17/adobe-hit-with-proposed-class-action-accused-of-misusing-authors-work-in-ai-training/"
         },
         {
             "date": "Dec 17 2025",
-            "title": "MoEngage Secures Additional $180 Million, Nears Unicorn Status",
-            "content": "Indian startup MoEngage has raised an additional $180 million in funding, bringing its post-money valuation to well over $900 million. This follows a recent $100 million funding round, highlighting investor confidence in the company&#x27;s growth prospects. MoEngage specializes in customer engagement solutions powered by AI, serving a global clientele across various industries. The infusion of capital is expected to accelerate product development and market expansion, positioning MoEngage as a formidable player in the AI-driven customer engagement space. Companies seeking innovative engagement solutions should consider MoEngage&#x27;s offerings as it approaches unicorn status.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/16/weeks-after-raising-100m-investors-pump-another-180m-into-hot-indian-startup-moengage/"
-        },
-        {
-            "date": "Dec 16 2025",
-            "title": "Databricks Achieves $134 Billion Valuation with $4 Billion Funding Round",
-            "content": "Databricks has successfully raised over $4 billion in a Series L funding round, boosting its valuation to an impressive $134 billion. This marks a significant 34% increase from its previous valuation just three months ago, underscoring the rapid growth of its AI and data analytics business. Databricks&#x27; platform, which integrates AI and big data, is increasingly crucial for enterprises looking to harness data-driven insights. The substantial valuation and funding reflect Databricks&#x27; strategic position in the market and its potential to lead in AI-driven data solutions. Enterprises should evaluate Databricks&#x27; offerings to enhance their data analytics capabilities.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/16/databricks-raises-4b-at-134b-valuation-as-its-ai-business-heats-up/"
-        },
-        {
-            "date": "Dec 16 2025",
-            "title": "Adobe Firefly Expands Functionality with Prompt-Based Video Editing",
-            "content": "Adobe has updated its AI-driven video generation app, Firefly, introducing a new video editor that supports prompt-based edits. This update includes the integration of third-party models like Black Forest Labs&#x27; FLUX.2 and Topaz Astra for enhanced image and video generation capabilities. The prompt-based editing feature allows users to make precise adjustments using natural language commands, streamlining the editing process for content creators. This innovation aligns with Adobe&#x27;s strategy to integrate AI tools across its creative suite, empowering users with more intuitive and efficient workflows. Video editors and content creators should explore Firefly&#x27;s new features to leverage these advanced editing capabilities.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/16/adobe-firefly-now-supports-prompt-based-video-editing-adds-more-third-party-models/"
-        },
-        {
-            "date": "Dec 16 2025",
-            "title": "Zencoder Launches Zenflow for AI-Powered Coding Error Detection",
-            "content": "Zencoder has released Zenflow, a free AI orchestration tool designed to pit AI models like Claude against OpenAI&#x27;s models to identify coding errors. This desktop application aims to transform software engineering by moving beyond traditional &quot;vibe coding&quot; practices. Zenflow leverages AI to automate error detection, enhancing code quality and development efficiency. The tool represents a significant advancement in AI-assisted coding, offering developers a robust solution for improving code reliability. Software engineers should consider integrating Zenflow into their development environments to benefit from its error detection capabilities and streamline their coding processes.",
+            "title": "Gemini 3 Flash Launches, Offering Cost-Effective AI Model for Enterprises",
+            "content": "The Gemini 3 Flash has been introduced as an affordable alternative to Google&#x27;s state-of-the-art Gemini 3 Pro, offering enterprises a powerful large language model with reduced costs and latency. This new model promises to deliver near-equivalent performance to the Gemini 3 Pro, making advanced AI capabilities more accessible to businesses with budget constraints. By lowering operational costs and improving processing speeds, the Gemini 3 Flash is poised to enhance AI-driven applications across various industries. Enterprises should evaluate the potential of integrating this model into their operations to boost efficiency and innovation. The launch reflects a growing trend towards democratizing AI technology for broader commercial use.",
             "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/zencoder-drops-zenflow-a-free-ai-orchestration-tool-that-pits-claude-against"
+            "sourceUrl": "https://venturebeat.com/technology/gemini-3-flash-arrives-with-reduced-costs-and-latency-a-powerful-combo-for"
         },
         {
-            "date": "Dec 16 2025",
-            "title": "Zoom Claims Record AI Test Score Amidst Controversy",
-            "content": "Zoom Video Communications has announced achieving the highest score on a challenging artificial intelligence test, sparking surprise and skepticism in the tech community. Critics allege that Zoom may have leveraged external resources to achieve this feat, raising questions about the test&#x27;s integrity. Despite the controversy, Zoom&#x27;s accomplishment highlights its ongoing commitment to advancing AI capabilities within its platform. This development is part of a broader trend of companies seeking to validate their AI prowess through competitive benchmarks. Industry professionals should critically assess such claims and consider the implications for AI development and credibility in the tech sector.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/ai/zoom-says-it-aced-ais-hardest-exam-critics-say-it-copied-off-its-neighbors"
+            "date": "Dec 17 2025",
+            "title": "Amazon&#x27;s AI Strategy Strengthened with New Leadership",
+            "content": "Amazon has appointed Peter DeSantis, a seasoned executive with 27 years at the company, to lead its newly formed AI organization. DeSantis, who previously served as Senior Vice President for Amazon Web Services (AWS), will leverage his extensive experience in cloud computing to drive Amazon&#x27;s AI initiatives. AWS powers approximately one-third of the internet, positioning Amazon well to expand its influence in the AI sector. This strategic leadership change signals Amazon’s commitment to enhancing its AI capabilities and competing with major players like Google and Microsoft. Professionals in the AI and cloud sectors should anticipate innovations and potential collaborations under DeSantis&#x27;s leadership.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/17/amazon-appoints-longtime-aws-exec-peter-desantis-to-lead-new-ai-org/"
+        },
+        {
+            "date": "Dec 17 2025",
+            "title": "Google Adopts Gemini 3 Flash as Default AI Model",
+            "content": "Google has announced that the Gemini 3 Flash will become the default model in its Gemini app, marking a significant shift in its AI strategy. The Gemini 3 Flash, known for its reduced cost and latency, will also serve as the primary AI model for Google&#x27;s Search, enhancing user experience with faster and more efficient processing. This move underscores Google&#x27;s efforts to optimize AI performance while maintaining affordability. Developers and businesses utilizing Google&#x27;s AI services should prepare for potential updates and improvements in application performance. The integration of Gemini 3 Flash aligns with industry trends towards more accessible and efficient AI solutions.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/17/google-launches-gemini-3-flash-makes-it-the-default-model-in-the-gemini-app/"
+        },
+        {
+            "date": "Dec 17 2025",
+            "title": "Mozilla&#x27;s New CEO Advocates for AI in Firefox",
+            "content": "Mozilla has appointed Anthony Enzor-DeMeo as its new CEO, with a vision to integrate AI into the Firefox browser while maintaining user choice. As the browser market evolves rapidly, Mozilla aims to keep pace by incorporating AI features that enhance user experience without compromising control. Enzor-DeMeo&#x27;s leadership will focus on balancing innovation with Mozilla&#x27;s core values of privacy and user autonomy. Firefox users can expect optional AI functionalities that enhance browsing capabilities, reflecting Mozilla&#x27;s commitment to adaptability in a competitive landscape. Tech leaders should watch Mozilla&#x27;s approach as it navigates the intersection of AI and user-centric design.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/17/mozillas-new-ceo-says-ai-is-coming-to-firefox-but-will-remain-a-choice/"
+        },
+        {
+            "date": "Dec 17 2025",
+            "title": "Google Integrates Opal Vibe-Coding Tool into Gemini",
+            "content": "Google has integrated its Opal vibe-coding tool into the Gemini web app, allowing users to create AI-powered mini apps with ease. This tool enables developers to build custom applications tailored to specific needs, leveraging AI to enhance functionality and user engagement. By embedding Opal into Gemini, Google aims to empower users with the ability to innovate and personalize their digital experiences. This development is part of a broader trend towards user-driven AI customization and could inspire similar initiatives across the tech industry. Developers should explore Opal&#x27;s capabilities to unlock new possibilities in app creation and AI integration.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/17/googles-vibe-coding-tool-opal-comes-to-gemini/"
+        },
+        {
+            "date": "Dec 17 2025",
+            "title": "Skana Robotics Advances Underwater Robotics Communication",
+            "content": "Skana Robotics has developed a decision-making algorithm that enhances communication among fleets of underwater robots. This innovation allows unmanned vessels to react and adapt to data from fellow vessels, improving coordination and efficiency in underwater operations. The algorithm&#x27;s ability to facilitate real-time data sharing and decision-making is crucial for applications in research, exploration, and maritime industries. As autonomous systems become more prevalent, Skana&#x27;s technology represents a significant advancement in robotic collaboration. Industry professionals should consider the implications of improved communication capabilities for enhancing operational effectiveness and safety in underwater environments.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/17/skana-robotics-helps-fleets-of-underwater-robots-communicate-with-each-other/"
         }
     ],
     "articles": {},
@@ -187,6 +173,39 @@ const websiteContent = {
     },
     "recentCVEs": [
         {
+            "cveId": "CVE-2025-59374",
+            "dateAdded": "Dec 17, 2025",
+            "vendor": "ASUS Live Update",
+            "description": "ASUS Live Update contains an embedded malicious code vulnerability client were distributed with unauthorized modifications introduced through a supply chain compromise. The modified builds could cause",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-59374",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2025-40602",
+            "dateAdded": "Dec 17, 2025",
+            "vendor": "SonicWall SMA1000 appliance",
+            "description": "SonicWall SMA1000 contains a missing authorization vulnerability that could allow for privilege escalation appliance management console (AMC) of affected devices.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-40602",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2025-20393",
+            "dateAdded": "Dec 17, 2025",
+            "vendor": "Cisco Multiple Products",
+            "description": "Cisco Secure Email Gateway, Secure Email, AsyncOS Software, and Web Manager appliances contains an improper input validation vulnerability that allows threat actors to execute arbitrary commands with",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-20393",
+            "isZeroDay": false
+        },
+        {
             "cveId": "CVE-2025-59718",
             "dateAdded": "Dec 16, 2025",
             "vendor": "Fortinet Multiple Products",
@@ -239,17 +258,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-14174",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-58360",
-            "dateAdded": "Dec 11, 2025",
-            "vendor": "OSGeo GeoServer",
-            "description": "OSGeo GeoServer contains an improper restriction of XML external entity reference vulnerability that occurs when the application accepts XML input through a specific endpoint /geoserver/wms operation",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-58360",
             "isZeroDay": false
         }
     ],
