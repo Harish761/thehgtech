@@ -201,7 +201,27 @@ Every guide MUST include the interaction bar at the bottom of the content.
 ```
 
 ## After Creating Guide
-1. Add to `/guides/index.html` with proper card styling
+1. **Add to `/guides/index.html`** with proper card styling
+   - **IMPORTANT: Insert by DATE ORDER (newest first)**
+   - Date format: `Dec 17, 2025` (use exact format)
+   - New guides (Dec 17) go BEFORE guides from Dec 13
+   - Dec 13 guides go BEFORE Dec 5 guides, etc.
+   - Coming Soon guides go at the END
 2. Add to `/sitemap.xml`
-3. Create placeholder image in `/images/guides/[guide-name].png`
+3. Create image in `/images/guides/[guide-name].png`
 4. Commit and push to GitHub
+
+## Guide Ordering Rules
+**Always maintain chronological order (newest first):**
+```
+Dec 17, 2025  ← newest first
+Dec 13, 2025
+Dec 5, 2025
+Dec 4, 2025
+Dec 2, 2025
+Nov 29, 2025
+Nov 27, 2025
+November 2025 ← general month last
+--------------
+Coming Soon   ← at the very end
+```
