@@ -5,6 +5,55 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Dec 18 2025",
+            "title": "Massive Database of 4.3 Billion Records Found Exposed Online",
+            "content": "A staggering 4.3 billion records have been discovered exposed online, leaving vast amounts of personal and sensitive data vulnerable to unauthorized access. The database, which was not secured with any password or encryption, included a mix of email addresses, phone numbers, and other personal identifiers. This exposure poses significant risks of identity theft and fraud to affected individuals. The incident underscores the critical importance of implementing robust security measures and regular audits to prevent unauthorized data exposure. Organizations are urged to review their data security protocols immediately to mitigate similar risks.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4108632/datenbank-mit-43-milliarden-datensatzen-offen-im-netz.html"
+        },
+        {
+            "date": "Dec 18 2025",
+            "title": "Privacy-Claiming Chrome Extension Secretly Harvests AI Chats",
+            "content": "A Chrome extension marketed for privacy protection has been found to secretly collect data from users&#x27; AI chat interactions. Despite disclosing its data collection practices, the information was buried in terms that most users would not easily understand or consent to. This extension highlights the growing trend of malicious or misleading browser add-ons exploiting user trust. Users are advised to scrutinize permissions and privacy policies of extensions before installation. Security professionals should consider deploying browser management solutions to prevent unauthorized extensions in corporate environments.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2025/12/chrome-extension-slurps-up-ai-chats-after-users-installed-it-for-privacy"
+        },
+        {
+            "date": "Dec 18 2025",
+            "title": "Iran-Linked APT &quot;Prince of Persia&quot; Resurfaces, Targets Dissidents",
+            "content": "The dormant Iranian Advanced Persistent Threat (APT) group known as &quot;Prince of Persia&quot; has been identified as active again, employing sophisticated tactics to spy on dissidents. The group uses advanced operational security and cryptographic communication with its command-and-control servers, making detection challenging. This resurgence highlights the persistent threat posed by state-sponsored actors targeting political dissidents and activists worldwide. Organizations and individuals at risk should enhance their cybersecurity postures, focusing on threat intelligence and monitoring to detect and respond to such threats effectively.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/threat-intelligence/iran-apt-spying-dissidents"
+        },
+        {
+            "date": "Dec 18 2025",
+            "title": "New Attack Subverts AI Safeguards, Turns HITL into Exploits",
+            "content": "Researchers at CheckMarx have discovered a novel attack method that exploits Human-in-the-loop (HITL) safeguards in AI systems to execute malicious code. HITL mechanisms, designed to act as a safety check before sensitive actions are executed, can be manipulated by attackers to bypass security protocols. This vulnerability poses significant risks for AI-dependent systems, where HITL is a critical component of operational security. Developers and security teams should reassess the robustness of their AI safeguard implementations and consider additional layers of security to mitigate such threats.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4108592/human-in-the-loop-isnt-enough-new-attack-turns-ai-safeguards-into-exploits.html"
+        },
+        {
+            "date": "Dec 18 2025",
+            "title": "Critical RCE Vulnerability Patched in HPE OneView Software",
+            "content": "Hewlett Packard Enterprise (HPE) has released a patch for a maximum-severity remote code execution (RCE) vulnerability in its OneView software. The flaw allows attackers to execute arbitrary code remotely, posing severe risks to affected systems. Organizations using HPE OneView are strongly advised to apply the patch immediately to protect against potential exploits. This vulnerability highlights the ongoing challenge of securing complex IT management software and the need for timely patch management practices.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hpe-warns-of-maximum-severity-rce-flaw-in-oneview-software/"
+        },
+        {
+            "date": "Dec 18 2025",
+            "title": "Data Breach at Virginia Mental Health Authority Affects 113,000",
+            "content": "A data breach at the Virginia-based Richmond Behavioral Health Authority (RBHA) has compromised the personal information of 113,000 individuals. Threat actors accessed and stole names, Social Security numbers, and sensitive health and financial data, and deployed ransomware on RBHA&#x27;s systems. This incident underscores the critical vulnerabilities in healthcare infrastructure and the severe impact of data breaches on individuals&#x27; privacy and security. Affected individuals should monitor their accounts for suspicious activity, and organizations in the sector must bolster their cybersecurity defenses to prevent future breaches.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/113000-impacted-by-data-breach-at-virginia-mental-health-authority/"
+        },
+        {
+            "date": "Dec 18 2025",
+            "title": "Cisco Warns of Zero-Day Exploitation in Secure Email Products",
+            "content": "Cisco has issued a warning about active exploitation of a zero-day vulnerability in its Secure Email appliances by a China-linked hacking group. This vulnerability allows attackers to gain persistent access to affected systems, posing significant security risks. Organizations using these products may need to undertake disruptive rebuilds of their security infrastructure as patches are not yet available. This incident highlights the persistent threat of state-sponsored cyberattacks and the critical need for vigilance and rapid response in maintaining cybersecurity resilience.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4108496/cisco-confirms-zero-day-exploitation-of-secure-email-products.html"
+        },
+        {
+            "date": "Dec 18 2025",
             "title": "ISC Stormcast Highlights December Cybersecurity Trends",
             "content": "The SANS Internet Storm Center&#x27;s latest Stormcast podcast for December 18, 2025, highlights key cybersecurity trends and threats as the year comes to a close. While the InfoCON level remains at green, indicating no immediate widespread threats, the podcast underscores the importance of remaining vigilant against emerging vulnerabilities. It discusses recent developments in malware tactics and highlights the need for robust security measures as attackers increasingly target unpatched systems. Security professionals are advised to ensure all systems are updated and to monitor for unusual network activity. This podcast serves as a reminder of the evolving threat landscape and the necessity of continuous defense strategies.",
             "source": "SANS Internet Storm Center",
@@ -25,34 +74,6 @@ const websiteContent = {
             "sourceUrl": "https://www.csoonline.com/article/4108158/ink-dragon-threat-group-targets-iis-servers-to-build-stealthy-global-network.html"
         },
         {
-            "date": "Dec 17 2025",
-            "title": "Zeroday Cloud Competition Awards $320,000 for Cloud Vulnerability Discoveries",
-            "content": "The Zeroday Cloud hacking event in London concluded with researchers receiving $320,000 in prizes for identifying critical vulnerabilities in cloud infrastructure components. The competition showcased 11 zero-day exploits, including remote code execution vulnerabilities that could have severe implications for cloud security. This event highlights the ongoing challenge of securing cloud environments against sophisticated threats. Organizations using cloud services are encouraged to prioritize security assessments and implement robust monitoring and response strategies. The competition underscores the value of ethical hacking in uncovering vulnerabilities before malicious actors can exploit them.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/zeroday-cloud-hacking-event-awards-320-0000-for-11-zero-days/"
-        },
-        {
-            "date": "Dec 17 2025",
-            "title": "React2Shell Vulnerability Exploits Reach Record Highs",
-            "content": "The React2Shell vulnerability has seen an unprecedented number of public exploits, making it the most exploited CVE to date. This flaw has attracted significant attention from attackers due to its widespread impact and ease of exploitation. Organizations using affected systems are at heightened risk, with sensitive targets increasingly being compromised. Security teams are advised to prioritize patching and to monitor for any signs of exploitation. This situation highlights the critical need for proactive vulnerability management and the importance of staying informed about emerging threats.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/react2shell-vulnerability-fallout-spreads/"
-        },
-        {
-            "date": "Dec 17 2025",
-            "title": "Active Attacks Target Critical Fortinet Vulnerabilities",
-            "content": "Critical vulnerabilities in Fortinet devices are currently being exploited by attackers targeting administrative accounts. Once access is obtained, attackers can export device configurations, including hashed credentials and other sensitive data. The vulnerabilities underscore the importance of securing network infrastructure devices against unauthorized access. Fortinet users are urged to apply the latest patches and review security settings to prevent potential breaches. This incident highlights the ongoing threat to network security devices and the need for rigorous access control measures.",
-            "source": "Dark Reading",
-            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/critical-fortinet-flaws-under-active-attack"
-        },
-        {
-            "date": "Dec 17 2025",
-            "title": "Suspect Arrested in Cyberattack on French Interior Ministry",
-            "content": "French authorities have arrested a 22-year-old individual in connection with a cyberattack on France&#x27;s Ministry of the Interior earlier this month. The attack, which targeted sensitive government systems, highlights the persistent threat of cybercrime against national infrastructure. Details of the attack remain limited, but the arrest marks a significant step in addressing cybersecurity threats within government agencies. This incident underscores the need for robust cybersecurity measures and international cooperation in combating cybercrime. Security professionals are reminded of the importance of vigilance and rapid response to potential threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/france-arrests-suspect-tied-to-cyberattack-on-interior-ministry/"
-        },
-        {
             "date": "May 05 2026",
             "title": "GISEC GLOBAL 2026 Unveils Cybersecurity Innovations in Middle East and Africa",
             "content": "GISEC GLOBAL 2026, the largest cybersecurity event in the Middle East and Africa, has kicked off, showcasing the latest advancements in cybersecurity technology and strategy. The event serves as a platform for industry leaders to discuss emerging threats and innovative solutions. This year&#x27;s focus includes AI-driven security tools, advanced threat detection systems, and new compliance frameworks. Professionals from various sectors, including government and private enterprises, are attending to gain insights into protecting critical infrastructure. The event highlights the region&#x27;s growing importance in the global cybersecurity landscape, emphasizing collaboration and knowledge sharing. Attendees are encouraged to engage with workshops and panels to stay ahead of evolving cyber threats.",
@@ -63,52 +84,59 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Dec 18 2025",
+            "title": "AI Transforms Human Resources Operations",
+            "content": "AI technology is increasingly being integrated into human resources (HR) operations, enhancing efficiency in employee interactions and training support. Organizations are embedding AI into daily operations, particularly in automated response systems for employee queries and personalized training modules. This integration allows HR departments to measure productivity gains and streamline processes. As AI continues to evolve, its role in HR is expected to expand, potentially leading to significant cost savings and improved employee satisfaction. Companies should evaluate their HR processes to identify areas where AI can be effectively implemented to enhance operational efficiency.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/hr-ai-in-human-resources-the-real-operational-impact/"
+        },
+        {
+            "date": "Dec 18 2025",
+            "title": "AI Drives Workforce Changes in Wall Street Banks",
+            "content": "Wall Street banks are increasingly incorporating AI into their operations, with a focus on generative AI technologies that enhance financial services. During a recent Goldman Sachs conference, executives highlighted AI&#x27;s role as an operational upgrade, moving beyond experimental phases. This shift is prompting banks to plan for a reduced workforce as AI takes over routine tasks. The adoption of AI in finance is part of a broader trend towards automation in the industry, raising questions about future employment dynamics. Financial institutions should prepare for these changes by reskilling employees and exploring new AI-driven business models.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/wall-street-ai-gains-are-here-banks-plan-for-fewer-people/"
+        },
+        {
+            "date": "Dec 18 2025",
+            "title": "AI&#x27;s Growing Role in Insurance Operations",
+            "content": "AI has become integral to insurance operations, particularly in automating finance functions. Unlike traditional background automation, AI is now embedded in daily tasks, enhancing efficiency and decision-making processes. Insurers are leveraging AI for customer service, claims processing, and risk assessment, leading to faster and more accurate outcomes. This trend reflects a broader movement towards digital transformation in the insurance sector. Companies should assess their operational frameworks to identify opportunities for AI integration, ensuring they remain competitive in a rapidly evolving market.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/insurance-ai-use-operational-differences-experienced-by-the-big-players/"
+        },
+        {
+            "date": "Dec 18 2025",
+            "title": "AstraZeneca Pioneers AI in Clinical Trials",
+            "content": "AstraZeneca is leading the pharmaceutical industry by utilizing AI in clinical trials at a large public health scale. The company distinguishes itself by embedding AI technology directly into patient trials, enhancing data collection and analysis processes. This approach contrasts with competitors focusing on internal R&amp;D optimizations. AstraZeneca&#x27;s AI-driven trials aim to accelerate drug development and improve patient outcomes, setting a new standard in the industry. Other pharmaceutical companies should consider similar AI implementations to boost efficiency and innovation in their clinical operations.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/astrazeneca-ai-clinical-trials-2025/"
+        },
+        {
+            "date": "Dec 17 2025",
+            "title": "Benchmarking NVIDIA&#x27;s Nemotron 3 Nano with NeMo Evaluator",
+            "content": "Hugging Face introduces the Open Evaluation Standard for assessing NVIDIA&#x27;s Nemotron 3 Nano using the NeMo Evaluator. This benchmarking initiative aims to provide a comprehensive analysis of the model&#x27;s capabilities, focusing on performance metrics and efficiency. The Nemotron 3 Nano is designed for high-speed AI processing, making it suitable for various applications. By establishing a standardized evaluation framework, Hugging Face seeks to enhance transparency and comparability in AI model assessments. Developers and researchers should leverage these insights to optimize AI deployments and drive innovation.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-3-nano-evaluation-recipe"
+        },
+        {
+            "date": "Dec 17 2025",
+            "title": "Amazon Eyes $10 Billion Investment in OpenAI",
+            "content": "Amazon is reportedly in discussions to invest up to $10 billion in OpenAI, aiming to leverage its AI chips for strategic advantage. This potential investment underscores the growing trend of tech giants forming alliances to bolster AI capabilities. OpenAI&#x27;s use of Amazon&#x27;s AI chips could enhance its computational power, driving advancements in AI research and applications. This move reflects the increasing importance of hardware-software integration in AI development. Stakeholders should monitor these developments as they could significantly impact the competitive landscape in the AI industry.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/17/amazon-reportedly-in-talks-to-invest-10b-in-openai-as-circular-deals-stay-popular/"
+        },
+        {
+            "date": "Dec 17 2025",
+            "title": "Google DeepMind Unveils Gemini 3 Flash for High-Speed AI",
+            "content": "Google DeepMind has launched Gemini 3 Flash, a new AI model designed for rapid processing at reduced costs. This development emphasizes the importance of speed and efficiency in AI systems, catering to the growing demand for real-time data analysis. Gemini 3 Flash offers advanced capabilities, making it suitable for applications requiring swift decision-making and high throughput. The model&#x27;s cost-effectiveness could democratize access to cutting-edge AI technologies. Organizations should explore integrating Gemini 3 Flash into their operations to enhance performance and maintain a competitive edge.",
+            "source": "Google DeepMind News",
+            "sourceUrl": "https://deepmind.google/blog/gemini-3-flash-frontier-intelligence-built-for-speed/"
+        },
+        {
+            "date": "Dec 18 2025",
             "title": "Adobe Faces Class-Action Lawsuit Over AI Training Practices",
             "content": "Adobe is facing a proposed class-action lawsuit accusing the company of improperly using authors&#x27; works to train its AI models. This legal challenge is the latest in a series of copyright disputes targeting the AI industry, as creators seek to protect intellectual property from unauthorized use in AI training datasets. The lawsuit could significantly impact Adobe&#x27;s AI development processes and set a precedent for how companies utilize copyrighted materials in AI training. Professionals in the AI and legal fields should monitor this case closely, as its outcome could influence future AI training practices and copyright law interpretations. Companies leveraging AI should ensure compliance with copyright laws to avoid similar legal challenges.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2025/12/17/adobe-hit-with-proposed-class-action-accused-of-misusing-authors-work-in-ai-training/"
-        },
-        {
-            "date": "Dec 17 2025",
-            "title": "Gemini 3 Flash Launches, Offering Cost-Effective AI Model for Enterprises",
-            "content": "The Gemini 3 Flash has been introduced as an affordable alternative to Google&#x27;s state-of-the-art Gemini 3 Pro, offering enterprises a powerful large language model with reduced costs and latency. This new model promises to deliver near-equivalent performance to the Gemini 3 Pro, making advanced AI capabilities more accessible to businesses with budget constraints. By lowering operational costs and improving processing speeds, the Gemini 3 Flash is poised to enhance AI-driven applications across various industries. Enterprises should evaluate the potential of integrating this model into their operations to boost efficiency and innovation. The launch reflects a growing trend towards democratizing AI technology for broader commercial use.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/gemini-3-flash-arrives-with-reduced-costs-and-latency-a-powerful-combo-for"
-        },
-        {
-            "date": "Dec 17 2025",
-            "title": "Amazon&#x27;s AI Strategy Strengthened with New Leadership",
-            "content": "Amazon has appointed Peter DeSantis, a seasoned executive with 27 years at the company, to lead its newly formed AI organization. DeSantis, who previously served as Senior Vice President for Amazon Web Services (AWS), will leverage his extensive experience in cloud computing to drive Amazon&#x27;s AI initiatives. AWS powers approximately one-third of the internet, positioning Amazon well to expand its influence in the AI sector. This strategic leadership change signals Amazon’s commitment to enhancing its AI capabilities and competing with major players like Google and Microsoft. Professionals in the AI and cloud sectors should anticipate innovations and potential collaborations under DeSantis&#x27;s leadership.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/17/amazon-appoints-longtime-aws-exec-peter-desantis-to-lead-new-ai-org/"
-        },
-        {
-            "date": "Dec 17 2025",
-            "title": "Google Adopts Gemini 3 Flash as Default AI Model",
-            "content": "Google has announced that the Gemini 3 Flash will become the default model in its Gemini app, marking a significant shift in its AI strategy. The Gemini 3 Flash, known for its reduced cost and latency, will also serve as the primary AI model for Google&#x27;s Search, enhancing user experience with faster and more efficient processing. This move underscores Google&#x27;s efforts to optimize AI performance while maintaining affordability. Developers and businesses utilizing Google&#x27;s AI services should prepare for potential updates and improvements in application performance. The integration of Gemini 3 Flash aligns with industry trends towards more accessible and efficient AI solutions.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/17/google-launches-gemini-3-flash-makes-it-the-default-model-in-the-gemini-app/"
-        },
-        {
-            "date": "Dec 17 2025",
-            "title": "Mozilla&#x27;s New CEO Advocates for AI in Firefox",
-            "content": "Mozilla has appointed Anthony Enzor-DeMeo as its new CEO, with a vision to integrate AI into the Firefox browser while maintaining user choice. As the browser market evolves rapidly, Mozilla aims to keep pace by incorporating AI features that enhance user experience without compromising control. Enzor-DeMeo&#x27;s leadership will focus on balancing innovation with Mozilla&#x27;s core values of privacy and user autonomy. Firefox users can expect optional AI functionalities that enhance browsing capabilities, reflecting Mozilla&#x27;s commitment to adaptability in a competitive landscape. Tech leaders should watch Mozilla&#x27;s approach as it navigates the intersection of AI and user-centric design.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/17/mozillas-new-ceo-says-ai-is-coming-to-firefox-but-will-remain-a-choice/"
-        },
-        {
-            "date": "Dec 17 2025",
-            "title": "Google Integrates Opal Vibe-Coding Tool into Gemini",
-            "content": "Google has integrated its Opal vibe-coding tool into the Gemini web app, allowing users to create AI-powered mini apps with ease. This tool enables developers to build custom applications tailored to specific needs, leveraging AI to enhance functionality and user engagement. By embedding Opal into Gemini, Google aims to empower users with the ability to innovate and personalize their digital experiences. This development is part of a broader trend towards user-driven AI customization and could inspire similar initiatives across the tech industry. Developers should explore Opal&#x27;s capabilities to unlock new possibilities in app creation and AI integration.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/17/googles-vibe-coding-tool-opal-comes-to-gemini/"
-        },
-        {
-            "date": "Dec 17 2025",
-            "title": "Skana Robotics Advances Underwater Robotics Communication",
-            "content": "Skana Robotics has developed a decision-making algorithm that enhances communication among fleets of underwater robots. This innovation allows unmanned vessels to react and adapt to data from fellow vessels, improving coordination and efficiency in underwater operations. The algorithm&#x27;s ability to facilitate real-time data sharing and decision-making is crucial for applications in research, exploration, and maritime industries. As autonomous systems become more prevalent, Skana&#x27;s technology represents a significant advancement in robotic collaboration. Industry professionals should consider the implications of improved communication capabilities for enhancing operational effectiveness and safety in underwater environments.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/17/skana-robotics-helps-fleets-of-underwater-robots-communicate-with-each-other/"
         }
     ],
     "articles": {},
