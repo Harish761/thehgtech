@@ -373,31 +373,6 @@
             <img src="/images/articles/kimwolf-botnet-2025.png" alt="Kimwolf Botnet Android DDoS Attack 2025"
                 class="featured-image">
 
-            <!-- Interaction Bar -->
-            <div class="interaction-bar" id="interactionBar">
-                <div class="interaction-left">
-                    <button class="interaction-btn like-btn" id="likeBtn" onclick="toggleLike()"
-                        aria-label="Like this article">
-                        <i class="far fa-heart"></i>
-                        <span id="likeText">Like</span>
-                    </button>
-                </div>
-                <div class="interaction-right">
-                    <button class="interaction-btn" onclick="shareTwitter()" aria-label="Share on Twitter">
-                        <i class="fab fa-x-twitter"></i>
-                    </button>
-                    <button class="interaction-btn" onclick="shareLinkedIn()" aria-label="Share on LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </button>
-                    <button class="interaction-btn" onclick="copyLink()" aria-label="Copy link">
-                        <i class="fas fa-link"></i>
-                    </button>
-                    <button class="interaction-btn" onclick="window.print()" aria-label="Print article">
-                        <i class="fas fa-print"></i>
-                    </button>
-                </div>
-            </div>
-
             <div class="warning-box">
                 <strong><i class="fas fa-exclamation-triangle"></i> Threat Alert:</strong> A new botnet named "Kimwolf"
                 has infected over 1.8 million Android-based devices globally. This represents one of the largest IoT
@@ -438,7 +413,8 @@
             <p>Security researchers have identified that Kimwolf shares infrastructure and code similarities with the
                 <strong>AISURU botnet</strong>, suggesting either a common operator or code reuse. The connection
                 indicates this isn't an amateur operation but rather a sophisticated threat actor with existing botnet
-                experience.</p>
+                experience.
+            </p>
 
             <h2><i class="fas fa-tachometer-alt"></i> Attack Scale</h2>
             <p>What makes Kimwolf particularly dangerous is its attack velocity. During a three-day observation period
@@ -538,6 +514,34 @@
                 <strong>Reading Time:</strong> 6 minutes
             </p>
         </article>
+
+        <!-- Interaction Bar -->
+        <div class="interaction-bar">
+            <div class="like-section">
+                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                    <i class="far fa-heart"></i> <span id="likeText">Like this article</span>
+                </button>
+            </div>
+            <div class="action-buttons">
+                <div class="share-buttons">
+                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"
+                        aria-label="Share on Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"
+                        aria-label="Share on LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link">
+                        <i class="fas fa-link"></i>
+                    </button>
+                </div>
+                <div class="button-separator"></div>
+                <button onclick="window.print()" class="print-btn" title="Print Article" aria-label="Print Article">
+                    <i class="fas fa-print"></i>
+                </button>
+            </div>
+        </div>
     </main>
 
     <footer>

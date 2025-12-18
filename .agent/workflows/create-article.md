@@ -138,18 +138,60 @@ When creating a new article for TheHGTech, follow these standards:
 (Same icon set as guides - see /create-guide workflow)
 
 ## Interaction Bar (REQUIRED)
-Every article MUST include the interaction bar. See `/create-guide` workflow for full HTML.
+Every article MUST include the interaction bar. 
+
+### Placement Rules - IMPORTANT!
+The interaction bar MUST be placed:
+- **AFTER** the `</article>` closing tag
+- **BEFORE** the `</main>` closing tag  
+- **BEFORE** the `<footer>` element
+- **NOT** after the featured image (this is wrong!)
 
 ### Required Includes
 ```html
 <!-- In <head> -->
-<link rel="stylesheet" href="/interaction-bar.css?v=20251217">
+<link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
 
 <!-- Before </body> -->
-<script src="/interaction-bar.js?v=20251217"></script>
+<script src="/interaction-bar.js?v=20251207-0041"></script>
 ```
 
-The interaction bar HTML should be placed before the footer or at the end of the content div.
+### Correct Interaction Bar HTML
+```html
+        </article>
+
+        <!-- Interaction Bar - MUST be here, after article, before footer -->
+        <div class="interaction-bar">
+            <div class="like-section">
+                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                    <i class="far fa-heart"></i> <span id="likeText">Like this article</span>
+                </button>
+            </div>
+            <div class="action-buttons">
+                <div class="share-buttons">
+                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <button onclick="copyLink()" class="share-btn" title="Copy Link">
+                        <i class="fas fa-link"></i>
+                    </button>
+                </div>
+                <div class="button-separator"></div>
+                <button onclick="window.print()" class="print-btn" title="Print Article">
+                    <i class="fas fa-print"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TheHGTech. All rights reserved.</p>
+    </footer>
+```
+
 
 ## Article Footer
 ```html
