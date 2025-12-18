@@ -207,7 +207,7 @@
 }
 
 /* ============================================
-   STATS ROW - HORIZONTAL CARDS
+   STATS ROW - PREMIUM HORIZONTAL CARDS (NO JITTER)
    ============================================ */
 .live-stats {
     display: flex;
@@ -219,18 +219,60 @@
 
 .stat-item {
     text-align: center;
-    padding: 1.25rem 2rem;
-    background: rgba(0, 217, 255, 0.05);
-    border: 1px solid rgba(0, 217, 255, 0.15);
+    padding: 1.25rem 1.5rem;
+    background: linear-gradient(145deg, rgba(10, 10, 25, 0.8), rgba(15, 15, 35, 0.6));
+    border: 1px solid rgba(0, 217, 255, 0.2);
     border-radius: 16px;
-    min-width: 140px;
+    min-width: 130px;
+    min-height: 90px;
     transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Subtle glow effect on hover */
+.stat-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(ellipse at center, rgba(0, 217, 255, 0.1) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.stat-item:hover::before {
+    opacity: 1;
 }
 
 .stat-item:hover {
     transform: translateY(-4px);
     border-color: var(--hero-accent);
-    box-shadow: 0 10px 30px rgba(0, 217, 255, 0.15);
+    box-shadow: 0 10px 30px rgba(0, 217, 255, 0.2);
+}
+
+/* AI Security stat items */
+.stat-item.ai-stat {
+    background: linear-gradient(145deg, rgba(15, 10, 30, 0.8), rgba(25, 15, 45, 0.6));
+    border-color: rgba(157, 78, 221, 0.25);
+}
+
+.stat-item.ai-stat:hover {
+    border-color: #9d4edd;
+    box-shadow: 0 10px 30px rgba(157, 78, 221, 0.2);
+}
+
+/* Divider stat item */
+.stat-item.stat-divider {
+    min-width: 100px;
+    background: linear-gradient(145deg, rgba(157, 78, 221, 0.1), rgba(157, 78, 221, 0.05));
+    border-color: rgba(157, 78, 221, 0.3);
 }
 
 .stat-number {
@@ -239,6 +281,40 @@
     color: var(--hero-accent);
     display: block;
     margin-bottom: 4px;
+    min-width: 70px;
+    text-align: center;
+    font-feature-settings: "tnum";
+    font-variant-numeric: tabular-nums;
+}
+
+/* Loading skeleton animation */
+.stat-number[data-loading="true"],
+.stat-number:empty {
+    position: relative;
+    color: transparent !important;
+}
+
+.stat-number[data-loading="true"]::after,
+.stat-number:empty::after {
+    content: '...';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.3);
+    animation: shimmer 1.5s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+
+    0%,
+    100% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
 }
 
 .stat-label {

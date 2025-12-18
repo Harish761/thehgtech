@@ -117,11 +117,21 @@ class ThreatIntelHero {
     }
 
     // ============================================
-    // COUNTER ANIMATION
+    // COUNTER ANIMATION - NO JITTER VERSION
     // ============================================
     initCounterAnimation() {
         const counters = document.querySelectorAll('.stat-number');
         if (!counters.length) return;
+
+        // Immediately show target values as loading placeholders (no "0" showing)
+        counters.forEach(counter => {
+            const target = counter.getAttribute('data-target');
+            if (target) {
+                // Show formatted target immediately to reserve space
+                counter.textContent = this.formatNumber(parseInt(target));
+                counter.style.opacity = '0.5';  // Dim until animation starts
+            }
+        });
 
         // Try to get real IOC count from dashboard
         const updateRealCount = async () => {
@@ -134,6 +144,7 @@ class ThreatIntelHero {
                     const iocCounter = counters[0];
                     if (iocCounter && stats.totalIOCs) {
                         iocCounter.setAttribute('data-target', stats.totalIOCs);
+                        iocCounter.textContent = this.formatNumber(stats.totalIOCs);
                     }
                 }
             } catch (e) {
@@ -144,20 +155,18 @@ class ThreatIntelHero {
         updateRealCount();
 
         const animateCounter = (element, target) => {
-            const duration = 2000; // 2 seconds
-            const start = 0;
-            const increment = target / (duration / 16); // 60fps
-            let current = start;
+            const finalValue = this.formatNumber(target);
+            element.style.opacity = '1';  // Full opacity when animating
 
-            const timer = setInterval(() => {
-                current += increment;
-                if (current >= target) {
-                    element.textContent = this.formatNumber(target);
-                    clearInterval(timer);
-                } else {
-                    element.textContent = this.formatNumber(Math.floor(current));
-                }
-            }, 16);
+            // Quick fade-in animation instead of counting up
+            element.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+            element.style.transform = 'scale(1.05)';
+
+            setTimeout(() => {
+                element.style.transform = 'scale(1)';
+            }, 150);
+
+            element.textContent = finalValue;
         };
 
         // Observe when counters come into view
@@ -171,10 +180,10 @@ class ThreatIntelHero {
             });
         }, { threshold: 0.5 });
 
-        // Wait a bit for real count to load, then start animation
+        // Start observing immediately
         setTimeout(() => {
             counters.forEach(counter => observer.observe(counter));
-        }, 500);
+        }, 100);
     }
 
     // ============================================
