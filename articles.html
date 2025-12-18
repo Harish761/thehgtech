@@ -264,6 +264,32 @@
             margin-bottom: 1rem;
         }
 
+        .updated-badge {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+            border-radius: 4px;
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-left: 0.5rem;
+            animation: pulse-badge 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse-badge {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.7;
+            }
+        }
+
         .article-card h3 {
             font-size: 1.25rem;
             font-weight: 700;
@@ -784,10 +810,11 @@
                 // If article has externalUrl, link directly to the standalone HTML file
                 const articleUrl = article.externalUrl ? article.externalUrl : `articles.html?id=${article.id}`;
                 const clickHandler = (isMobile && !article.externalUrl) ? `onclick="openArticleModal(event, '${article.id}')"` : '';
+                const badgeHtml = article.badge ? `<span class="updated-badge">${article.badge}</span>` : '';
                 return `
                 <a href="${articleUrl}" class="article-card-link" data-article-id="${article.id}" ${clickHandler} style="text-decoration: none; color: inherit; display: block;">
                     <div class="article-card">
-                        <div class="article-category">${article.category}</div>
+                        <div class="article-category">${article.category} ${badgeHtml}</div>
                         <h3>${article.title}</h3>
                         <p class="article-excerpt">${article.excerpt}</p>
                         <div class="article-meta">

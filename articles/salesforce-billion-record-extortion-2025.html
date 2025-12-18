@@ -362,9 +362,12 @@
 
         <div class="article-header">
             <div class="article-meta">
-                <span><i class="fas fa-bolt"></i> Event: December 2025</span>
-                <span><i class="far fa-calendar"></i> Published: December 17, 2025</span>
-                <span><i class="far fa-clock"></i> 10 min read</span>
+                <span
+                    style="background: linear-gradient(135deg, #10b981, #059669); color: white; padding: 0.3rem 0.8rem; border-radius: 4px; font-weight: 600;"><i
+                        class="fas fa-sync-alt"></i> UPDATED</span>
+                <span><i class="fas fa-bolt"></i> Event: October-December 2025</span>
+                <span><i class="far fa-calendar"></i> Updated: December 18, 2025</span>
+                <span><i class="far fa-clock"></i> 15 min read</span>
                 <span><i class="fas fa-tag"></i> Data Breach</span>
             </div>
 
@@ -417,27 +420,59 @@
             <div class="company-list">
                 <div class="company-item">
                     <i class="fas fa-exclamation-circle"></i>
-                    <span>Chanel</span>
+                    <span>Google</span>
                 </div>
                 <div class="company-item">
                     <i class="fas fa-exclamation-circle"></i>
-                    <span>Pandora</span>
+                    <span>Disney</span>
                 </div>
                 <div class="company-item">
                     <i class="fas fa-exclamation-circle"></i>
-                    <span>BeyondTrust</span>
+                    <span>FedEx</span>
                 </div>
                 <div class="company-item">
                     <i class="fas fa-exclamation-circle"></i>
-                    <span>Cloudflare</span>
+                    <span>Toyota</span>
                 </div>
                 <div class="company-item">
                     <i class="fas fa-exclamation-circle"></i>
-                    <span>CyberArk</span>
+                    <span>Cisco</span>
                 </div>
                 <div class="company-item">
                     <i class="fas fa-exclamation-circle"></i>
-                    <span>Palo Alto Networks</span>
+                    <span>Adidas</span>
+                </div>
+                <div class="company-item">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span>Dior</span>
+                </div>
+                <div class="company-item">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span>UPS</span>
+                </div>
+                <div class="company-item">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span>Home Depot</span>
+                </div>
+                <div class="company-item">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span>Qantas</span>
+                </div>
+                <div class="company-item">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span>TransUnion</span>
+                </div>
+                <div class="company-item">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span>Workday</span>
+                </div>
+                <div class="company-item">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span>Allianz Life</span>
+                </div>
+                <div class="company-item">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span>Stellantis</span>
                 </div>
             </div>
 
@@ -462,9 +497,16 @@
             <p>Salesforce has complex permission models. Misconfigured sharing rules can inadvertently expose data to
                 unauthorized users. Community portals, in particular, have been sources of data exposure.</p>
 
-            <h3>4. Credential Stuffing and Account Takeover</h3>
-            <p>If Salesforce users reuse passwords from other breached services, attackers can access accounts through
-                credential stuffing attacks.</p>
+            <h3>4. Voice Phishing (Vishing) and Social Engineering</h3>
+            <p><strong style="color: var(--accent-cyan);">December 2025 Update:</strong> Researchers have confirmed that
+                the primary attack method involved sophisticated <strong>voice phishing (vishing)</strong> attacks.
+                Attackers impersonated IT support staff to trick employees into granting access to malicious OAuth
+                applications or revealing credentials.</p>
+
+            <h3>5. OAuth Token Abuse</h3>
+            <p>Another confirmed attack vector was the abuse of OAuth tokens. Attackers tricked users into authorizing
+                malicious applications that then used the granted permissions to access and exfiltrate Salesforce data.
+            </p>
 
             <div class="info-box">
                 <h3 style="color: var(--accent-cyan); margin-top: 0;"><i class="fas fa-cloud"></i> The SaaS Security
@@ -661,9 +703,24 @@
             <p>The attackers are targeting the platforms where the most valuable data lives. In 2025, that means SaaS.
                 Is your organization ready?</p>
 
+            <div class="info-box">
+                <h3 style="color: var(--accent-cyan); margin-top: 0;"><i class="fas fa-gavel"></i> December 2025 Update:
+                    Legal Developments</h3>
+                <p>Lawsuits are now underway against multiple companies affected by this breach:</p>
+                <ul style="margin-left: 1.5rem;">
+                    <li><strong>TransUnion lawsuits:</strong> Being consolidated in federal court</li>
+                    <li><strong>Dior lawsuits:</strong> Successfully dismissed in December 2025</li>
+                    <li><strong>Salesforce's position:</strong> Maintains its platform was not directly compromised and
+                        publicly refused extortion demands</li>
+                </ul>
+                <p style="margin-bottom: 0;"><em>Note: Broader efforts to merge all Salesforce-related lawsuits are not
+                        proceeding due to differing circumstances across cases.</em></p>
+            </div>
+
             <div class="warning-box">
-                <strong>📰 Developing Story:</strong> This article will be updated as more information becomes
-                available. The 1 billion record claim remains unverified. Check back for updates.
+                <strong><i class="fas fa-sync-alt"></i> Story Status:</strong> This article was last updated on
+                <strong>December 18, 2025</strong> with new information about attack methods, affected companies, and
+                legal proceedings. The 1 billion record claim remains based on threat actor statements.
             </div>
 
             <p><em>Stay informed about cloud security threats. Visit our <a href="/threat-intel.html"
@@ -671,31 +728,33 @@
                     breaches and security incidents.</em></p>
         </div>
     </div>
-        <!-- Interaction Bar -->
-        <div class="interaction-bar">
-            <div class="like-section">
-                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
-                    <i class="far fa-heart"></i> <span id="likeText">Like this guide</span>
-                </button>
-            </div>
-            <div class="action-buttons">
-                <div class="share-buttons">
-                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter" aria-label="Share on Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn" aria-label="Share on LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link">
-                        <i class="fas fa-link"></i>
-                    </button>
-                </div>
-                <div class="button-separator"></div>
-                <button onclick="printArticle()" class="print-btn" title="Print" aria-label="Print">
-                    <i class="fas fa-print"></i>
-                </button>
-            </div>
+    <!-- Interaction Bar -->
+    <div class="interaction-bar">
+        <div class="like-section">
+            <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                <i class="far fa-heart"></i> <span id="likeText">Like this guide</span>
+            </button>
         </div>
+        <div class="action-buttons">
+            <div class="share-buttons">
+                <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"
+                    aria-label="Share on Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"
+                    aria-label="Share on LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link">
+                    <i class="fas fa-link"></i>
+                </button>
+            </div>
+            <div class="button-separator"></div>
+            <button onclick="printArticle()" class="print-btn" title="Print" aria-label="Print">
+                <i class="fas fa-print"></i>
+            </button>
+        </div>
+    </div>
 
 
     <script src="/interaction-bar.js?v=20251217"></script>

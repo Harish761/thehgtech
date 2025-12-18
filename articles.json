@@ -127,9 +127,10 @@
     {
       "id": "article-salesforce-billion-extortion-2025",
       "title": "The Billion-Record Heist: Salesforce Data Extortion Threatens Enterprise Cloud Security",
-      "date": "December 17, 2025",
+      "date": "December 18, 2025",
       "category": "Data Breach",
-      "excerpt": "A hacker group claims to have stolen 1 billion records from companies using Salesforce's cloud databases and is now extorting victims. Here's what we know.",
+      "badge": "UPDATED",
+      "excerpt": "UPDATED: Lawsuits underway, attack methods confirmed. A hacker group claims to have stolen 1 billion records from companies using Salesforce's cloud databases. Now includes legal developments and more victim companies.",
       "image": "images/salesforce-breach-hero.png",
       "tags": [
         "Salesforce",
@@ -137,7 +138,8 @@
         "Extortion",
         "Cloud Security",
         "CRM Security",
-        "SaaS Security"
+        "SaaS Security",
+        "Vishing"
       ],
       "author": "Harish G",
       "externalUrl": "articles/salesforce-billion-record-extortion-2025.html"
