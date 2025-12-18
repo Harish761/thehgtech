@@ -15,6 +15,26 @@ When creating a new article for TheHGTech, follow these standards:
 2. **Analysis** - Deep dives into threats, trends, predictions
 3. **Research** - Original research, statistics, reports
 
+## Article Length Requirements - IMPORTANT!
+All articles MUST be comprehensive and in-depth:
+- **Minimum Reading Time:** 18-20 minutes
+- **Minimum Word Count:** ~3,500-4,500 words
+- **Content Depth:** Include background, analysis, implications, recommendations
+
+### Required Content Sections for Each Article:
+1. **Introduction/Lead** - Hook + key facts (who, what, when, where)
+2. **Background Context** - Why this matters, industry context
+3. **Detailed Technical Analysis** - Deep dive into the specifics
+4. **Timeline of Events** - Chronological breakdown
+5. **Impact Assessment** - Who is affected, how severe
+6. **Expert Analysis** - Our perspective and insights
+7. **Comparison to Similar Incidents** - Historical context
+8. **Defense/Mitigation Strategies** - Actionable recommendations
+9. **Future Implications** - What this means going forward
+10. **Key Takeaways** - Summary of main points
+
+**DO NOT create short 5-minute articles. Every article should be a comprehensive resource.**
+
 ## Required SEO Elements
 ```html
 <!-- Title: Include year, brand keywords -->
