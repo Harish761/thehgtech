@@ -1,6 +1,57 @@
 {
   "articles": [
     {
+      "id": "article-french-ministry-hack-2025",
+      "title": "French Ministry of Interior Hacked: 22-Year-Old Arrested",
+      "date": "December 18, 2025",
+      "category": "Government Breach",
+      "excerpt": "French Ministry of Interior confirms email systems breached December 11-12. Hacker 'Indra' claims access to police and tax databases. 22-year-old arrested.",
+      "image": "images/articles/french-ministry-hack-2025.png",
+      "tags": [
+        "France",
+        "Government Breach",
+        "Data Breach",
+        "Arrest",
+        "Email Compromise"
+      ],
+      "author": "TheHGTech",
+      "externalUrl": "articles/french-ministry-interior-hack-2025.html"
+    },
+    {
+      "id": "article-kimwolf-botnet-2025",
+      "title": "Kimwolf Botnet Hijacks 1.8 Million Android Devices for DDoS Attacks",
+      "date": "December 18, 2025",
+      "category": "IoT Threat",
+      "excerpt": "New hyper-scale botnet infects Android TVs, tablets, and set-top boxes. Launched 1.7 billion DDoS attack commands in just 72 hours.",
+      "image": "images/articles/kimwolf-botnet-2025.png",
+      "tags": [
+        "Botnet",
+        "Android",
+        "DDoS",
+        "IoT Security",
+        "Kimwolf"
+      ],
+      "author": "TheHGTech",
+      "externalUrl": "articles/kimwolf-botnet-android-ddos-2025.html"
+    },
+    {
+      "id": "article-fortinet-fortigate-exploit-2025",
+      "title": "Fortinet FortiGate Critical Vulnerabilities Under Active Exploitation",
+      "date": "December 18, 2025",
+      "category": "Critical Vulnerability",
+      "excerpt": "Two CVSS 9.8 authentication bypass flaws actively exploited within days of disclosure. Patch immediately.",
+      "image": "images/articles/fortinet-fortigate-exploit-2025.png",
+      "tags": [
+        "Fortinet",
+        "FortiGate",
+        "CVE",
+        "Authentication Bypass",
+        "Critical Vulnerability"
+      ],
+      "author": "TheHGTech",
+      "externalUrl": "articles/fortinet-fortigate-critical-exploit-2025.html"
+    },
+    {
       "id": "article-redhat-chatterbox-ai-safety-2025",
       "title": "Red Hat Acquires Chatterbox Labs: A New Era of Enterprise AI Safety and Responsible Deployment",
       "date": "December 17, 2025",
