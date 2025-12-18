@@ -1,12 +1,12 @@
 {
-  "last_updated": "2025-12-18T01:41:16.214115",
+  "last_updated": "2025-12-18T12:44:10.932092",
   "period": "Last 7 days",
   "total_groups": 33,
-  "total_victims": 278,
+  "total_victims": 275,
   "groups": [
     {
       "name": "Qilin",
-      "count": 45,
+      "count": 42,
       "victims": [
         {
           "name": "Pueblo West Colorado",
@@ -88,8 +88,8 @@
       "daily_counts": [
         6,
         4,
-        4,
-        14,
+        3,
+        12,
         0,
         14,
         0
@@ -278,8 +278,14 @@
     },
     {
       "name": "Devman",
-      "count": 19,
+      "count": 20,
       "victims": [
+        {
+          "name": "d*v***.cl",
+          "date": "2025-12-18 10:23:12.313776",
+          "url": "http://devmanblggk7ddrtqj3tsocnayow3bwnozab2s4yhv4shpv6ueitjzid.onion",
+          "discovered_date": "2025-12-18T10:23:12.313776"
+        },
         {
           "name": "Jet ********",
           "date": "2025-12-17 14:15:20.057732",
@@ -305,6 +311,12 @@
           "discovered_date": "2025-12-17T14:16:36.813997"
         },
         {
+          "name": "beausejourco-op.crs",
+          "date": "2025-12-18 10:24:28.384272",
+          "url": "http://devmanblggk7ddrtqj3tsocnayow3bwnozab2s4yhv4shpv6ueitjzid.onion",
+          "discovered_date": "2025-12-18T10:24:28.384272"
+        },
+        {
           "name": "DXS SYSTEMS",
           "date": "2025-12-15 09:11:37.912118",
           "url": "http://devmanblggk7ddrtqj3tsocnayow3bwnozab2s4yhv4shpv6ueitjzid.onion",
@@ -317,28 +329,16 @@
           "discovered_date": "2025-12-16T12:49:15.273696"
         },
         {
-          "name": "Axion50plus",
-          "date": "2025-12-17T14:16:36+00:00",
-          "url": "https://www.ransomware.live/id/QXhpb241MHBsdXNAZGV2bWFu",
-          "discovered_date": "2025-12-17T14:16:36+00:00"
+          "name": "beausejourco-op.crs",
+          "date": "2025-12-18T10:24:28+00:00",
+          "url": "https://www.ransomware.live/id/YmVhdXNlam91cmNvLW9wLmNyc0BkZXZtYW4=",
+          "discovered_date": "2025-12-18T10:24:28+00:00"
         },
         {
-          "name": "Jet ********",
-          "date": "2025-12-17T14:15:20+00:00",
-          "url": "https://www.ransomware.live/id/SmV0ICoqKioqKioqQGRldm1hbg==",
-          "discovered_date": "2025-12-17T14:15:20+00:00"
-        },
-        {
-          "name": "Productos Lácteos Flor de Aragua CA",
-          "date": "2025-12-16T12:49:15+00:00",
-          "url": "https://www.ransomware.live/id/UHJvZHVjdG9zIEzDoWN0ZW9zIEZsb3IgZGUgQXJhZ3VhIENBQGRldm1hbg==",
-          "discovered_date": "2025-12-16T12:49:15+00:00"
-        },
-        {
-          "name": "a**o*50*****.org",
-          "date": "2025-12-16T12:47:58+00:00",
-          "url": "https://www.ransomware.live/id/YSoqbyo1MCoqKioqLm9yZ0BkZXZtYW4=",
-          "discovered_date": "2025-12-16T12:47:58+00:00"
+          "name": "d*v***.cl",
+          "date": "2025-12-18T10:23:12+00:00",
+          "url": "https://www.ransomware.live/id/ZCp2KioqLmNsQGRldm1hbg==",
+          "discovered_date": "2025-12-18T10:23:12+00:00"
         }
       ],
       "industries": [
@@ -350,9 +350,9 @@
       "countries": [
         "BR",
         "CA",
+        "CL",
         "FR",
-        "PH",
-        "TN"
+        "PH"
       ],
       "trend": "up",
       "trend_percentage": 15,
@@ -363,12 +363,12 @@
         2,
         6,
         4,
-        0
+        4
       ]
     },
     {
       "name": "Akira",
-      "count": 17,
+      "count": 15,
       "victims": [
         {
           "name": "Latitude 33 Planning& Engineering",
@@ -437,9 +437,7 @@
         "Not Found"
       ],
       "countries": [
-        "CA",
         "CH",
-        "CN",
         "N/A",
         "US"
       ],
@@ -457,7 +455,7 @@
     },
     {
       "name": "Dragonforce",
-      "count": 16,
+      "count": 15,
       "victims": [
         {
           "name": "Edward J Kone",
@@ -636,6 +634,12 @@
       "count": 11,
       "victims": [
         {
+          "name": "deerfield.com (singulargenomics.com)",
+          "date": "2025-12-18 07:54:29.848751",
+          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6943a0babe52b3ea15daedee",
+          "discovered_date": "2025-12-18T07:54:29.848751"
+        },
+        {
           "name": "CVK Hotels & Resorts_Turkey",
           "date": "2025-12-17 21:49:22.799162",
           "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/69431c02be52b3ea15d4b3ef",
@@ -648,22 +652,16 @@
           "discovered_date": "2025-12-16T11:58:56.920011"
         },
         {
-          "name": "steelworksinc.ca",
-          "date": "2025-12-15 02:14:16.494699",
-          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/693f6499be52b3ea159a7bc8",
-          "discovered_date": "2025-12-15T02:14:16.494699"
-        },
-        {
-          "name": "cityofsignalhill.org",
-          "date": "2025-12-15 02:14:49.952870",
-          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/693f6391be52b3ea159a7093",
-          "discovered_date": "2025-12-15T02:14:49.952870"
-        },
-        {
           "name": "https://avenira.com/",
           "date": "2025-12-16 23:51:35.431103",
           "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6941ed80be52b3ea15c07985",
           "discovered_date": "2025-12-16T23:51:35.431103"
+        },
+        {
+          "name": "deerfield.com (singulargenomics.com)",
+          "date": "2025-12-18T07:54:29+00:00",
+          "url": "https://www.ransomware.live/id/ZGVlcmZpZWxkLmNvbSAoc2luZ3VsYXJnZW5vbWljcy5jb20pQGluY3JhbnNvbQ==",
+          "discovered_date": "2025-12-18T07:54:29+00:00"
         },
         {
           "name": "CVK Hotels & Resorts_Turkey",
@@ -700,8 +698,7 @@
         "Energy",
         "Financial Services",
         "Hospitality and Tourism",
-        "Manufacturing",
-        "Public Sector"
+        "Technology"
       ],
       "countries": [
         "AU",
@@ -715,10 +712,88 @@
         0,
         1,
         0,
-        4,
+        2,
         4,
         2,
-        0
+        2
+      ]
+    },
+    {
+      "name": "Handala",
+      "count": 9,
+      "victims": [
+        {
+          "name": "The 200,000 Message Bombshell: Bennett’s Game is Over",
+          "date": "2025-12-18 11:54:19.324582",
+          "url": "http://vmjfieomxhnfjba57sd6jjws2ogvowjgxhhfglsikqvvrnrajbmpxqqd.onion/?p=573",
+          "discovered_date": "2025-12-18T11:54:19.324582"
+        },
+        {
+          "name": "Naftali Bennett Chats",
+          "date": "2025-12-17 18:46:09.569609",
+          "url": "https://handala-hack.to/naftali-bennett-chats/",
+          "discovered_date": "2025-12-17T18:46:09.569609"
+        },
+        {
+          "name": "Operation Octopus: Naftali Bennett",
+          "date": "2025-12-17 11:43:07.875256",
+          "url": "https://handala-hack.to/operation-octopus-naftali-bennett-hacked/",
+          "discovered_date": "2025-12-17T11:43:07.875256"
+        },
+        {
+          "name": "Caught by the Octopus: Bennett’s Darkest Hour",
+          "date": "2025-12-17 05:51:51.127341",
+          "url": "https://handala-hack.to/caught-by-the-octopus-bennetts-darkest-hour/",
+          "discovered_date": "2025-12-17T05:51:51.127341"
+        },
+        {
+          "name": "The 200,000 Message Bombshell: Bennett’s Game is Over",
+          "date": "2025-12-18T11:54:19+00:00",
+          "url": "https://www.ransomware.live/id/VGhlIDIwMCwwMDAgTWVzc2FnZSBCb21ic2hlbGw6IEJlbm5ldHTigJlzIEdhbWUgaXMgT3ZlckBoYW5kYWxh",
+          "discovered_date": "2025-12-18T11:54:19+00:00"
+        },
+        {
+          "name": "Naftali Bennett Chats",
+          "date": "2025-12-17T18:46:09+00:00",
+          "url": "https://www.ransomware.live/id/TmFmdGFsaSBCZW5uZXR0IENoYXRzQGhhbmRhbGE=",
+          "discovered_date": "2025-12-17T18:46:09+00:00"
+        },
+        {
+          "name": "Operation Octopus: Naftali Bennett",
+          "date": "2025-12-17T11:43:07+00:00",
+          "url": "https://www.ransomware.live/id/T3BlcmF0aW9uIE9jdG9wdXM6IE5hZnRhbGkgQmVubmV0dEBoYW5kYWxh",
+          "discovered_date": "2025-12-17T11:43:07+00:00"
+        },
+        {
+          "name": "Caught by the Octopus: Bennett’s Darkest Hour",
+          "date": "2025-12-17T05:51:51+00:00",
+          "url": "https://www.ransomware.live/id/Q2F1Z2h0IGJ5IHRoZSBPY3RvcHVzOiBCZW5uZXR04oCZcyBEYXJrZXN0IEhvdXJAaGFuZGFsYQ==",
+          "discovered_date": "2025-12-17T05:51:51+00:00"
+        },
+        {
+          "name": "Targets Locked: The Minds Behind Arrow and David’s Sling Are Revealed",
+          "date": "2025-12-13T12:23:19+00:00",
+          "url": "https://www.ransomware.live/id/VGFyZ2V0cyBMb2NrZWQ6IFRoZSBNaW5kcyBCZWhpbmQgQXJyb3cgYW5kIERhdmlk4oCZcyBTbGluZyBBcmUgUmV2ZWFsZWRAaGFuZGFsYQ==",
+          "discovered_date": "2025-12-13T12:23:19+00:00"
+        }
+      ],
+      "industries": [
+        "Not Found"
+      ],
+      "countries": [
+        "IL",
+        "N/A"
+      ],
+      "trend": "stable",
+      "trend_percentage": 0,
+      "daily_counts": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        6,
+        2
       ]
     },
     {
@@ -803,151 +878,6 @@
       ]
     },
     {
-      "name": "Handala",
-      "count": 8,
-      "victims": [
-        {
-          "name": "Naftali Bennett Chats",
-          "date": "2025-12-17 18:46:09.569609",
-          "url": "https://handala-hack.to/naftali-bennett-chats/",
-          "discovered_date": "2025-12-17T18:46:09.569609"
-        },
-        {
-          "name": "Operation Octopus: Naftali Bennett",
-          "date": "2025-12-17 11:43:07.875256",
-          "url": "https://handala-hack.to/operation-octopus-naftali-bennett-hacked/",
-          "discovered_date": "2025-12-17T11:43:07.875256"
-        },
-        {
-          "name": "Caught by the Octopus: Bennett’s Darkest Hour",
-          "date": "2025-12-17 05:51:51.127341",
-          "url": "https://handala-hack.to/caught-by-the-octopus-bennetts-darkest-hour/",
-          "discovered_date": "2025-12-17T05:51:51.127341"
-        },
-        {
-          "name": "Naftali Bennett Chats",
-          "date": "2025-12-17T18:46:09+00:00",
-          "url": "https://www.ransomware.live/id/TmFmdGFsaSBCZW5uZXR0IENoYXRzQGhhbmRhbGE=",
-          "discovered_date": "2025-12-17T18:46:09+00:00"
-        },
-        {
-          "name": "Operation Octopus: Naftali Bennett",
-          "date": "2025-12-17T11:43:07+00:00",
-          "url": "https://www.ransomware.live/id/T3BlcmF0aW9uIE9jdG9wdXM6IE5hZnRhbGkgQmVubmV0dEBoYW5kYWxh",
-          "discovered_date": "2025-12-17T11:43:07+00:00"
-        },
-        {
-          "name": "Caught by the Octopus: Bennett’s Darkest Hour",
-          "date": "2025-12-17T05:51:51+00:00",
-          "url": "https://www.ransomware.live/id/Q2F1Z2h0IGJ5IHRoZSBPY3RvcHVzOiBCZW5uZXR04oCZcyBEYXJrZXN0IEhvdXJAaGFuZGFsYQ==",
-          "discovered_date": "2025-12-17T05:51:51+00:00"
-        },
-        {
-          "name": "Targets Locked: The Minds Behind Arrow and David’s Sling Are Revealed",
-          "date": "2025-12-13T12:23:19+00:00",
-          "url": "https://www.ransomware.live/id/VGFyZ2V0cyBMb2NrZWQ6IFRoZSBNaW5kcyBCZWhpbmQgQXJyb3cgYW5kIERhdmlk4oCZcyBTbGluZyBBcmUgUmV2ZWFsZWRAaGFuZGFsYQ==",
-          "discovered_date": "2025-12-13T12:23:19+00:00"
-        },
-        {
-          "name": "Plonter",
-          "date": "2025-12-11T07:24:19+00:00",
-          "url": "https://www.ransomware.live/id/UGxvbnRlckBoYW5kYWxh",
-          "discovered_date": "2025-12-11T07:24:19+00:00"
-        }
-      ],
-      "industries": [
-        "Not Found"
-      ],
-      "countries": [
-        "IL",
-        "N/A"
-      ],
-      "trend": "stable",
-      "trend_percentage": 0,
-      "daily_counts": [
-        0,
-        1,
-        0,
-        0,
-        0,
-        6,
-        0
-      ]
-    },
-    {
-      "name": "Obscura",
-      "count": 8,
-      "victims": [
-        {
-          "name": "k*m**w.com",
-          "date": "2025-12-15 05:46:46.933122",
-          "url": "",
-          "discovered_date": "2025-12-15T05:46:46.933122"
-        },
-        {
-          "name": "cle**rp**er.eu",
-          "date": "2025-12-15 18:39:47.277919",
-          "url": "",
-          "discovered_date": "2025-12-15T18:39:47.277919"
-        },
-        {
-          "name": "cle**rp**er.eu",
-          "date": "2025-12-15T18:39:47+00:00",
-          "url": "https://www.ransomware.live/id/Y2xlKipycCoqZXIuZXVAb2JzY3VyYQ==",
-          "discovered_date": "2025-12-15T18:39:47+00:00"
-        },
-        {
-          "name": "k*m**w.com",
-          "date": "2025-12-15T05:46:46+00:00",
-          "url": "https://www.ransomware.live/id/ayptKip3LmNvbUBvYnNjdXJh",
-          "discovered_date": "2025-12-15T05:46:46+00:00"
-        },
-        {
-          "name": "ACE Forwarding",
-          "date": "2025-12-12T22:11:48+00:00",
-          "url": "https://www.ransomware.live/id/QUNFIEZvcndhcmRpbmdAb2JzY3VyYQ==",
-          "discovered_date": "2025-12-12T22:11:48+00:00"
-        },
-        {
-          "name": "Startek Engineering Inc.",
-          "date": "2025-12-12T22:11:24+00:00",
-          "url": "https://www.ransomware.live/id/U3RhcnRlayBFbmdpbmVlcmluZyBJbmMuQG9ic2N1cmE=",
-          "discovered_date": "2025-12-12T22:11:24+00:00"
-        },
-        {
-          "name": "StanleyCo Malaysia",
-          "date": "2025-12-12T22:11:00+00:00",
-          "url": "https://www.ransomware.live/id/U3RhbmxleUNvIE1hbGF5c2lhQG9ic2N1cmE=",
-          "discovered_date": "2025-12-12T22:11:00+00:00"
-        },
-        {
-          "name": "New Obscura 2.0!",
-          "date": "2025-12-12T22:10:36+00:00",
-          "url": "https://www.ransomware.live/id/TmV3IE9ic2N1cmEgMi4wIUBvYnNjdXJh",
-          "discovered_date": "2025-12-12T22:10:36+00:00"
-        }
-      ],
-      "industries": [
-        "Not Found"
-      ],
-      "countries": [
-        "MY",
-        "N/A",
-        "TW"
-      ],
-      "trend": "stable",
-      "trend_percentage": 0,
-      "daily_counts": [
-        4,
-        0,
-        0,
-        4,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Worldleaks",
       "count": 7,
       "victims": [
@@ -1015,62 +945,67 @@
       ]
     },
     {
-      "name": "Rhysida",
-      "count": 6,
+      "name": "Obscura",
+      "count": 7,
       "victims": [
         {
-          "name": "YOKOSUKA GAKUIN",
-          "date": "2025-12-15 20:46:02.412280",
+          "name": "cle**rp**er.eu",
+          "date": "2025-12-15 18:39:47.277919",
           "url": "",
-          "discovered_date": "2025-12-15T20:46:02.412280"
+          "discovered_date": "2025-12-15T18:39:47.277919"
         },
         {
-          "name": "YOKOSUKA GAKUIN",
-          "date": "2025-12-15T20:46:02+00:00",
-          "url": "https://www.ransomware.live/id/WU9LT1NVS0EgR0FLVUlOQHJoeXNpZGE=",
-          "discovered_date": "2025-12-15T20:46:02+00:00"
+          "name": "cle**rp**er.eu",
+          "date": "2025-12-15T18:39:47+00:00",
+          "url": "https://www.ransomware.live/id/Y2xlKipycCoqZXIuZXVAb2JzY3VyYQ==",
+          "discovered_date": "2025-12-15T18:39:47+00:00"
         },
         {
-          "name": "***** ***********",
-          "date": "2025-12-13T12:54:32+00:00",
-          "url": "https://www.ransomware.live/id/KioqKiogKioqKioqKioqKipAcmh5c2lkYQ==",
-          "discovered_date": "2025-12-13T12:54:32+00:00"
+          "name": "k*m**w.com",
+          "date": "2025-12-15T05:46:46+00:00",
+          "url": "https://www.ransomware.live/id/ayptKip3LmNvbUBvYnNjdXJh",
+          "discovered_date": "2025-12-15T05:46:46+00:00"
         },
         {
-          "name": "United Keetoowah Band of Cherokee Indians in Oklahoma",
-          "date": "2025-12-12T16:56:19+00:00",
-          "url": "https://www.ransomware.live/id/VW5pdGVkIEtlZXRvb3dhaCBCYW5kIG9mIENoZXJva2VlIEluZGlhbnMgaW4gT2tsYWhvbWFAcmh5c2lkYQ==",
-          "discovered_date": "2025-12-12T16:56:19+00:00"
+          "name": "ACE Forwarding",
+          "date": "2025-12-12T22:11:48+00:00",
+          "url": "https://www.ransomware.live/id/QUNFIEZvcndhcmRpbmdAb2JzY3VyYQ==",
+          "discovered_date": "2025-12-12T22:11:48+00:00"
         },
         {
-          "name": "Woodard, Emhardt, Henry, Reeves & Wagner, LLP",
-          "date": "2025-12-11T14:49:40+00:00",
-          "url": "https://www.ransomware.live/id/V29vZGFyZCwgRW1oYXJkdCwgSGVucnksIFJlZXZlcyAmIFdhZ25lciwgTExQQHJoeXNpZGE=",
-          "discovered_date": "2025-12-11T14:49:40+00:00"
+          "name": "Startek Engineering Inc.",
+          "date": "2025-12-12T22:11:24+00:00",
+          "url": "https://www.ransomware.live/id/U3RhcnRlayBFbmdpbmVlcmluZyBJbmMuQG9ic2N1cmE=",
+          "discovered_date": "2025-12-12T22:11:24+00:00"
         },
         {
-          "name": "Harbour Town Doctors",
-          "date": "2025-12-11T11:47:45+00:00",
-          "url": "https://www.ransomware.live/id/SGFyYm91ciBUb3duIERvY3RvcnNAcmh5c2lkYQ==",
-          "discovered_date": "2025-12-11T11:47:45+00:00"
+          "name": "StanleyCo Malaysia",
+          "date": "2025-12-12T22:11:00+00:00",
+          "url": "https://www.ransomware.live/id/U3RhbmxleUNvIE1hbGF5c2lhQG9ic2N1cmE=",
+          "discovered_date": "2025-12-12T22:11:00+00:00"
+        },
+        {
+          "name": "New Obscura 2.0!",
+          "date": "2025-12-12T22:10:36+00:00",
+          "url": "https://www.ransomware.live/id/TmV3IE9ic2N1cmEgMi4wIUBvYnNjdXJh",
+          "discovered_date": "2025-12-12T22:10:36+00:00"
         }
       ],
       "industries": [
-        "Education"
+        "Not Found"
       ],
       "countries": [
-        "AU",
-        "JP",
+        "MY",
         "N/A",
-        "US"
+        "TW"
       ],
       "trend": "stable",
       "trend_percentage": 0,
       "daily_counts": [
-        1,
-        1,
+        4,
         0,
-        2,
+        0,
+        3,
         0,
         0,
         0
@@ -1187,6 +1122,61 @@
       ]
     },
     {
+      "name": "Rhysida",
+      "count": 5,
+      "victims": [
+        {
+          "name": "YOKOSUKA GAKUIN",
+          "date": "2025-12-15 20:46:02.412280",
+          "url": "",
+          "discovered_date": "2025-12-15T20:46:02.412280"
+        },
+        {
+          "name": "YOKOSUKA GAKUIN",
+          "date": "2025-12-15T20:46:02+00:00",
+          "url": "https://www.ransomware.live/id/WU9LT1NVS0EgR0FLVUlOQHJoeXNpZGE=",
+          "discovered_date": "2025-12-15T20:46:02+00:00"
+        },
+        {
+          "name": "***** ***********",
+          "date": "2025-12-13T12:54:32+00:00",
+          "url": "https://www.ransomware.live/id/KioqKiogKioqKioqKioqKipAcmh5c2lkYQ==",
+          "discovered_date": "2025-12-13T12:54:32+00:00"
+        },
+        {
+          "name": "United Keetoowah Band of Cherokee Indians in Oklahoma",
+          "date": "2025-12-12T16:56:19+00:00",
+          "url": "https://www.ransomware.live/id/VW5pdGVkIEtlZXRvb3dhaCBCYW5kIG9mIENoZXJva2VlIEluZGlhbnMgaW4gT2tsYWhvbWFAcmh5c2lkYQ==",
+          "discovered_date": "2025-12-12T16:56:19+00:00"
+        },
+        {
+          "name": "Woodard, Emhardt, Henry, Reeves & Wagner, LLP",
+          "date": "2025-12-11T14:49:40+00:00",
+          "url": "https://www.ransomware.live/id/V29vZGFyZCwgRW1oYXJkdCwgSGVucnksIFJlZXZlcyAmIFdhZ25lciwgTExQQHJoeXNpZGE=",
+          "discovered_date": "2025-12-11T14:49:40+00:00"
+        }
+      ],
+      "industries": [
+        "Education"
+      ],
+      "countries": [
+        "JP",
+        "N/A",
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        1,
+        1,
+        0,
+        2,
+        0,
+        0,
+        0
+      ]
+    },
+    {
       "name": "Pear",
       "count": 5,
       "victims": [
@@ -1290,6 +1280,54 @@
         0,
         0,
         0
+      ]
+    },
+    {
+      "name": "Ms13089",
+      "count": 4,
+      "victims": [
+        {
+          "name": "dgpcommercialisti.it",
+          "date": "2025-12-18 09:55:42.738988",
+          "url": "http://msleakjir7pxbe6onlqe5uwgvdmy6nq4mnwfy7ojswbhnleenm77vgad.onion/DGP/index.html",
+          "discovered_date": "2025-12-18T09:55:42.738988"
+        },
+        {
+          "name": "uro.com",
+          "date": "2025-12-18 09:54:49.187306",
+          "url": "http://msleakjir7pxbe6onlqe5uwgvdmy6nq4mnwfy7ojswbhnleenm77vgad.onion/URO/index.html",
+          "discovered_date": "2025-12-18T09:54:49.187306"
+        },
+        {
+          "name": "dgpcommercialisti.it",
+          "date": "2025-12-18T09:55:42+00:00",
+          "url": "https://www.ransomware.live/id/ZGdwY29tbWVyY2lhbGlzdGkuaXRAbXMxMzA4OQ==",
+          "discovered_date": "2025-12-18T09:55:42+00:00"
+        },
+        {
+          "name": "uro.com",
+          "date": "2025-12-18T09:54:49+00:00",
+          "url": "https://www.ransomware.live/id/dXJvLmNvbUBtczEzMDg5",
+          "discovered_date": "2025-12-18T09:54:49+00:00"
+        }
+      ],
+      "industries": [
+        "Not Found"
+      ],
+      "countries": [
+        "DE",
+        "IT"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4
       ]
     },
     {
@@ -1434,48 +1472,6 @@
         0,
         0,
         2,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Killsec",
-      "count": 3,
-      "victims": [
-        {
-          "name": "republica federative do brasil",
-          "date": "2025-12-15 03:19:33.578201",
-          "url": "",
-          "discovered_date": "2025-12-15T03:19:33.578201"
-        },
-        {
-          "name": "republica federative do brasil",
-          "date": "2025-12-15T03:19:33+00:00",
-          "url": "https://www.ransomware.live/id/cmVwdWJsaWNhIGZlZGVyYXRpdmUgZG8gYnJhc2lsQGtpbGxzZWM=",
-          "discovered_date": "2025-12-15T03:19:33+00:00"
-        },
-        {
-          "name": "dabafinance.com",
-          "date": "2025-12-14T01:53:00+00:00",
-          "url": "https://www.ransomware.live/id/ZGFiYWZpbmFuY2UuY29tQGtpbGxzZWM=",
-          "discovered_date": "2025-12-14T01:53:00+00:00"
-        }
-      ],
-      "industries": [
-        "Public Sector"
-      ],
-      "countries": [
-        "BR",
-        "GB"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        1,
-        2,
-        0,
         0,
         0
       ]
@@ -1656,6 +1652,41 @@
       ]
     },
     {
+      "name": "Osiris",
+      "count": 2,
+      "victims": [
+        {
+          "name": "The Araneta Group",
+          "date": "2025-12-18 09:29:57.951971",
+          "url": "",
+          "discovered_date": "2025-12-18T09:29:57.951971"
+        },
+        {
+          "name": "The Araneta Group",
+          "date": "2025-12-18T09:29:57+00:00",
+          "url": "https://www.ransomware.live/id/VGhlIEFyYW5ldGEgR3JvdXBAb3Npcmlz",
+          "discovered_date": "2025-12-18T09:29:57+00:00"
+        }
+      ],
+      "industries": [
+        "Not Found"
+      ],
+      "countries": [
+        "PH"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ]
+    },
+    {
       "name": "Ransomhouse",
       "count": 2,
       "victims": [
@@ -1720,6 +1751,40 @@
         0,
         0,
         2,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Killsec",
+      "count": 2,
+      "victims": [
+        {
+          "name": "republica federative do brasil",
+          "date": "2025-12-15T03:19:33+00:00",
+          "url": "https://www.ransomware.live/id/cmVwdWJsaWNhIGZlZGVyYXRpdmUgZG8gYnJhc2lsQGtpbGxzZWM=",
+          "discovered_date": "2025-12-15T03:19:33+00:00"
+        },
+        {
+          "name": "dabafinance.com",
+          "date": "2025-12-14T01:53:00+00:00",
+          "url": "https://www.ransomware.live/id/ZGFiYWZpbmFuY2UuY29tQGtpbGxzZWM=",
+          "discovered_date": "2025-12-14T01:53:00+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "BR",
+        "GB"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        1,
+        1,
         0,
         0,
         0
@@ -1793,60 +1858,6 @@
       "industries": [],
       "countries": [
         "NG"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Nightspire",
-      "count": 1,
-      "victims": [
-        {
-          "name": "Red Star Studio Ltd",
-          "date": "2025-12-11T02:38:47+00:00",
-          "url": "https://www.ransomware.live/id/UmVkIFN0YXIgU3R1ZGlvIEx0ZEBuaWdodHNwaXJl",
-          "discovered_date": "2025-12-11T02:38:47+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "GB"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Chaos",
-      "count": 1,
-      "victims": [
-        {
-          "name": "NSE Insurance Agencies",
-          "date": "2025-12-11T02:09:48+00:00",
-          "url": "https://www.ransomware.live/id/TlNFIEluc3VyYW5jZSBBZ2VuY2llc0BjaGFvcw==",
-          "discovered_date": "2025-12-11T02:09:48+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "US"
       ],
       "trend": "down",
       "trend_percentage": -5,
