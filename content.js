@@ -4,74 +4,53 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Dec 18 2025",
-            "title": "Massive Database of 4.3 Billion Records Found Exposed Online",
-            "content": "A staggering 4.3 billion records have been discovered exposed online, leaving vast amounts of personal and sensitive data vulnerable to unauthorized access. The database, which was not secured with any password or encryption, included a mix of email addresses, phone numbers, and other personal identifiers. This exposure poses significant risks of identity theft and fraud to affected individuals. The incident underscores the critical importance of implementing robust security measures and regular audits to prevent unauthorized data exposure. Organizations are urged to review their data security protocols immediately to mitigate similar risks.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4108632/datenbank-mit-43-milliarden-datensatzen-offen-im-netz.html"
-        },
-        {
-            "date": "Dec 18 2025",
-            "title": "Privacy-Claiming Chrome Extension Secretly Harvests AI Chats",
-            "content": "A Chrome extension marketed for privacy protection has been found to secretly collect data from users&#x27; AI chat interactions. Despite disclosing its data collection practices, the information was buried in terms that most users would not easily understand or consent to. This extension highlights the growing trend of malicious or misleading browser add-ons exploiting user trust. Users are advised to scrutinize permissions and privacy policies of extensions before installation. Security professionals should consider deploying browser management solutions to prevent unauthorized extensions in corporate environments.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2025/12/chrome-extension-slurps-up-ai-chats-after-users-installed-it-for-privacy"
-        },
-        {
-            "date": "Dec 18 2025",
-            "title": "Iran-Linked APT &quot;Prince of Persia&quot; Resurfaces, Targets Dissidents",
-            "content": "The dormant Iranian Advanced Persistent Threat (APT) group known as &quot;Prince of Persia&quot; has been identified as active again, employing sophisticated tactics to spy on dissidents. The group uses advanced operational security and cryptographic communication with its command-and-control servers, making detection challenging. This resurgence highlights the persistent threat posed by state-sponsored actors targeting political dissidents and activists worldwide. Organizations and individuals at risk should enhance their cybersecurity postures, focusing on threat intelligence and monitoring to detect and respond to such threats effectively.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/threat-intelligence/iran-apt-spying-dissidents"
-        },
-        {
-            "date": "Dec 18 2025",
-            "title": "New Attack Subverts AI Safeguards, Turns HITL into Exploits",
-            "content": "Researchers at CheckMarx have discovered a novel attack method that exploits Human-in-the-loop (HITL) safeguards in AI systems to execute malicious code. HITL mechanisms, designed to act as a safety check before sensitive actions are executed, can be manipulated by attackers to bypass security protocols. This vulnerability poses significant risks for AI-dependent systems, where HITL is a critical component of operational security. Developers and security teams should reassess the robustness of their AI safeguard implementations and consider additional layers of security to mitigate such threats.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4108592/human-in-the-loop-isnt-enough-new-attack-turns-ai-safeguards-into-exploits.html"
-        },
-        {
-            "date": "Dec 18 2025",
-            "title": "Critical RCE Vulnerability Patched in HPE OneView Software",
-            "content": "Hewlett Packard Enterprise (HPE) has released a patch for a maximum-severity remote code execution (RCE) vulnerability in its OneView software. The flaw allows attackers to execute arbitrary code remotely, posing severe risks to affected systems. Organizations using HPE OneView are strongly advised to apply the patch immediately to protect against potential exploits. This vulnerability highlights the ongoing challenge of securing complex IT management software and the need for timely patch management practices.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hpe-warns-of-maximum-severity-rce-flaw-in-oneview-software/"
-        },
-        {
-            "date": "Dec 18 2025",
-            "title": "Data Breach at Virginia Mental Health Authority Affects 113,000",
-            "content": "A data breach at the Virginia-based Richmond Behavioral Health Authority (RBHA) has compromised the personal information of 113,000 individuals. Threat actors accessed and stole names, Social Security numbers, and sensitive health and financial data, and deployed ransomware on RBHA&#x27;s systems. This incident underscores the critical vulnerabilities in healthcare infrastructure and the severe impact of data breaches on individuals&#x27; privacy and security. Affected individuals should monitor their accounts for suspicious activity, and organizations in the sector must bolster their cybersecurity defenses to prevent future breaches.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/113000-impacted-by-data-breach-at-virginia-mental-health-authority/"
-        },
-        {
-            "date": "Dec 18 2025",
-            "title": "Cisco Warns of Zero-Day Exploitation in Secure Email Products",
-            "content": "Cisco has issued a warning about active exploitation of a zero-day vulnerability in its Secure Email appliances by a China-linked hacking group. This vulnerability allows attackers to gain persistent access to affected systems, posing significant security risks. Organizations using these products may need to undertake disruptive rebuilds of their security infrastructure as patches are not yet available. This incident highlights the persistent threat of state-sponsored cyberattacks and the critical need for vigilance and rapid response in maintaining cybersecurity resilience.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4108496/cisco-confirms-zero-day-exploitation-of-secure-email-products.html"
-        },
-        {
-            "date": "Dec 18 2025",
+            "date": "Dec 19 2025",
             "title": "ISC Stormcast Highlights December Cybersecurity Trends",
-            "content": "The SANS Internet Storm Center&#x27;s latest Stormcast podcast for December 18, 2025, highlights key cybersecurity trends and threats as the year comes to a close. While the InfoCON level remains at green, indicating no immediate widespread threats, the podcast underscores the importance of remaining vigilant against emerging vulnerabilities. It discusses recent developments in malware tactics and highlights the need for robust security measures as attackers increasingly target unpatched systems. Security professionals are advised to ensure all systems are updated and to monitor for unusual network activity. This podcast serves as a reminder of the evolving threat landscape and the necessity of continuous defense strategies.",
+            "content": "The SANS Internet Storm Center&#x27;s latest Stormcast podcast for December 19, 2025, provides an overview of current cybersecurity threats and trends. This episode focuses on the InfoCON status, which remains at green, indicating no immediate widespread threats. The podcast delves into recent vulnerabilities and patches, emphasizing the importance of timely updates to mitigate risks. Listeners are encouraged to stay informed on emerging threats and apply security best practices in their organizations. The Stormcast serves as a critical resource for security professionals seeking to understand the evolving landscape of cyber threats.",
             "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32582"
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32586"
         },
         {
-            "date": "Dec 18 2025",
-            "title": "Security Flaws in Kindle Devices Exposed by Black Hat Presentation",
-            "content": "In a recent episode of the Smashing Security podcast, experts discussed a significant vulnerability in Amazon&#x27;s Kindle devices revealed at Black Hat Europe. The flaw allows attackers to exploit a booby-trapped audiobook to gain unauthorized access to user accounts and potentially control credit card information. This vulnerability highlights the risks associated with eBook readers, often perceived as secure. Users are advised to be cautious when downloading content and to regularly update their devices with the latest security patches. This incident underscores the growing need for security awareness even in seemingly innocuous devices.",
-            "source": "Graham Cluley",
-            "sourceUrl": "https://grahamcluley.com/smashing-security-podcast-448/"
-        },
-        {
-            "date": "Dec 18 2025",
-            "title": "Ink Dragon Threat Group Exploits IIS Server Vulnerabilities",
-            "content": "The Chinese-linked threat group known as &quot;Ink Dragon&quot; is actively exploiting vulnerabilities in Internet Information Services (IIS) servers to construct a covert global espionage network. Identified by security firm Check Point, this group, also referred to as &quot;Earth Alux,&quot; targets common weaknesses in IIS to establish a network that is difficult to detect and disrupt. The campaign poses a significant threat to organizations relying on IIS for web hosting and application delivery. Security professionals are urged to review server configurations and apply necessary patches to mitigate these risks. This development reflects the persistent threat posed by state-sponsored cyber espionage groups.",
+            "date": "Dec 19 2025",
+            "title": "Critical Vulnerability in HPE OneView Demands Immediate Attention",
+            "content": "A severe remote code execution vulnerability has been discovered in Hewlett Packard Enterprise&#x27;s OneView suite, prompting urgent calls for patching. The flaw, deemed maximum severity, allows attackers to execute arbitrary code on affected systems, potentially compromising network and system management operations. Curtis Dukes, a cybersecurity expert, warns that vendors often downplay such vulnerabilities, underscoring the need for immediate action. Organizations using HPE OneView should prioritize applying the latest patches to safeguard their infrastructure. This incident highlights the critical nature of proactive vulnerability management in maintaining robust cybersecurity defenses.",
             "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4108158/ink-dragon-threat-group-targets-iis-servers-to-build-stealthy-global-network.html"
+            "sourceUrl": "https://www.csoonline.com/article/4109162/hpe-oneview-vulnerable-to-remote-code-execution-attack.html"
+        },
+        {
+            "date": "Dec 19 2025",
+            "title": "Windows 10 Update Fixes Critical Message Queuing Issues",
+            "content": "Microsoft has released an out-of-band update for Windows 10 to address issues with the Message Queuing (MSMQ) service, which were inadvertently introduced in the latest security updates for Windows 11. MSMQ is vital for managing background tasks in enterprise environments, and the disruption has caused significant operational challenges. Organizations relying on this service should apply the update immediately to restore functionality and prevent further disruptions. This incident underscores the complexities of software updates and the need for thorough testing before deployment in production environments.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/windows-10-oob-update-released-to-fix-message-queuing-msmq-issues/"
+        },
+        {
+            "date": "Dec 18 2025",
+            "title": "Policymakers Confront Challenges from AI-Enabled Chinese Cyberattacks",
+            "content": "In the wake of a sophisticated AI-enabled cyberattack attributed to Chinese actors, policymakers are grappling with the implications for national security. The attack has sparked debate among lawmakers and tech executives about the readiness of current defenses against AI-powered threats. While some argue that AI hacking capabilities are still developing, the incident highlights the growing sophistication of cyber threats. This event underscores the urgent need for enhanced AI-driven cybersecurity measures and international cooperation to address the evolving threat landscape. Organizations are advised to evaluate their AI security strategies and collaborate with industry partners to strengthen defenses.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/ai-powered-cyber-attacks-claude-jailbreak-chinese-hackers/"
+        },
+        {
+            "date": "Dec 18 2025",
+            "title": "Cisco Zero-Day Vulnerability Exploited by China-Linked APT",
+            "content": "Cisco customers are facing a new wave of zero-day attacks linked to a Chinese advanced persistent threat (APT) group. The vulnerability, yet to be patched, has been actively exploited since late November, affecting various Cisco products. This ongoing threat emphasizes the critical importance of network security and the need for vigilant monitoring of system activity. Organizations using Cisco products should implement available workarounds and closely follow Cisco&#x27;s advisories for updates. The incident highlights the persistent targeting of major technology vendors by state-sponsored groups, underscoring the need for comprehensive cybersecurity strategies.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/cisco-zero-day-attacks-china-apt/"
+        },
+        {
+            "date": "Dec 18 2025",
+            "title": "SonicWall Devices Targeted by New Zero-Day Exploits",
+            "content": "SonicWall&#x27;s SMA1000 devices have been hit by a series of zero-day attacks, exploiting a newly discovered flaw in conjunction with a previously disclosed critical vulnerability. These attacks pose significant risks to organizations relying on SonicWall for secure access management. Threat actors have leveraged these vulnerabilities to gain unauthorized access, highlighting the importance of timely patching and security monitoring. SonicWall users are advised to apply recommended mitigations and monitor for security updates. This incident underscores the need for continuous vulnerability assessments and proactive security measures in safeguarding critical network infrastructure.",
+            "source": "Dark Reading",
+            "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/sonicwall-edge-devices-zero-day-attacks"
+        },
+        {
+            "date": "Dec 18 2025",
+            "title": "University of Sydney Data Breach Exposes Sensitive Information",
+            "content": "The University of Sydney has suffered a data breach after hackers accessed an online coding repository, compromising personal information of students and staff. The breach has raised concerns about data security practices in educational institutions. The compromised data includes sensitive personal details, potentially putting affected individuals at risk of identity theft and other cybercrimes. The university is working to secure its systems and has notified those impacted by the breach. This incident highlights the critical importance of robust cybersecurity measures and regular audits in protecting sensitive information within academic environments.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/university-of-sydney-suffers-data-breach-exposing-student-and-staff-info/"
         },
         {
             "date": "May 05 2026",
@@ -84,59 +63,52 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Dec 18 2025",
-            "title": "AI Transforms Human Resources Operations",
-            "content": "AI technology is increasingly being integrated into human resources (HR) operations, enhancing efficiency in employee interactions and training support. Organizations are embedding AI into daily operations, particularly in automated response systems for employee queries and personalized training modules. This integration allows HR departments to measure productivity gains and streamline processes. As AI continues to evolve, its role in HR is expected to expand, potentially leading to significant cost savings and improved employee satisfaction. Companies should evaluate their HR processes to identify areas where AI can be effectively implemented to enhance operational efficiency.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/hr-ai-in-human-resources-the-real-operational-impact/"
+            "title": "China&#x27;s EV Success Leads to Battery Disposal Challenges",
+            "content": "China&#x27;s rapid adoption of electric vehicles (EVs) has led to a pressing issue: the disposal of aging EV batteries. As early adopters like Wang Lei retire their vehicles, the country faces a growing pile of used batteries that require environmentally safe disposal methods. The challenge is compounded by the sheer volume of EVs sold in recent years, driven by government subsidies and domestic innovation support. Proper recycling and disposal infrastructure are critical to prevent environmental hazards associated with battery waste. Industry experts urge the Chinese government to accelerate its efforts in developing sustainable battery recycling solutions. This situation underscores the broader global challenge of managing EV battery lifecycles as the world transitions to electric mobility.",
+            "source": "MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2025/12/18/1130148/china-ev-battery-recycle/"
         },
         {
             "date": "Dec 18 2025",
-            "title": "AI Drives Workforce Changes in Wall Street Banks",
-            "content": "Wall Street banks are increasingly incorporating AI into their operations, with a focus on generative AI technologies that enhance financial services. During a recent Goldman Sachs conference, executives highlighted AI&#x27;s role as an operational upgrade, moving beyond experimental phases. This shift is prompting banks to plan for a reduced workforce as AI takes over routine tasks. The adoption of AI in finance is part of a broader trend towards automation in the industry, raising questions about future employment dynamics. Financial institutions should prepare for these changes by reskilling employees and exploring new AI-driven business models.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/wall-street-ai-gains-are-here-banks-plan-for-fewer-people/"
-        },
-        {
-            "date": "Dec 18 2025",
-            "title": "AI&#x27;s Growing Role in Insurance Operations",
-            "content": "AI has become integral to insurance operations, particularly in automating finance functions. Unlike traditional background automation, AI is now embedded in daily tasks, enhancing efficiency and decision-making processes. Insurers are leveraging AI for customer service, claims processing, and risk assessment, leading to faster and more accurate outcomes. This trend reflects a broader movement towards digital transformation in the insurance sector. Companies should assess their operational frameworks to identify opportunities for AI integration, ensuring they remain competitive in a rapidly evolving market.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/insurance-ai-use-operational-differences-experienced-by-the-big-players/"
-        },
-        {
-            "date": "Dec 18 2025",
-            "title": "AstraZeneca Pioneers AI in Clinical Trials",
-            "content": "AstraZeneca is leading the pharmaceutical industry by utilizing AI in clinical trials at a large public health scale. The company distinguishes itself by embedding AI technology directly into patient trials, enhancing data collection and analysis processes. This approach contrasts with competitors focusing on internal R&amp;D optimizations. AstraZeneca&#x27;s AI-driven trials aim to accelerate drug development and improve patient outcomes, setting a new standard in the industry. Other pharmaceutical companies should consider similar AI implementations to boost efficiency and innovation in their clinical operations.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/astrazeneca-ai-clinical-trials-2025/"
-        },
-        {
-            "date": "Dec 17 2025",
-            "title": "Benchmarking NVIDIA&#x27;s Nemotron 3 Nano with NeMo Evaluator",
-            "content": "Hugging Face introduces the Open Evaluation Standard for assessing NVIDIA&#x27;s Nemotron 3 Nano using the NeMo Evaluator. This benchmarking initiative aims to provide a comprehensive analysis of the model&#x27;s capabilities, focusing on performance metrics and efficiency. The Nemotron 3 Nano is designed for high-speed AI processing, making it suitable for various applications. By establishing a standardized evaluation framework, Hugging Face seeks to enhance transparency and comparability in AI model assessments. Developers and researchers should leverage these insights to optimize AI deployments and drive innovation.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-3-nano-evaluation-recipe"
-        },
-        {
-            "date": "Dec 17 2025",
-            "title": "Amazon Eyes $10 Billion Investment in OpenAI",
-            "content": "Amazon is reportedly in discussions to invest up to $10 billion in OpenAI, aiming to leverage its AI chips for strategic advantage. This potential investment underscores the growing trend of tech giants forming alliances to bolster AI capabilities. OpenAI&#x27;s use of Amazon&#x27;s AI chips could enhance its computational power, driving advancements in AI research and applications. This move reflects the increasing importance of hardware-software integration in AI development. Stakeholders should monitor these developments as they could significantly impact the competitive landscape in the AI industry.",
+            "title": "OpenAI Unveils ChatGPT App Store for Developer Innovations",
+            "content": "OpenAI has launched an app store for its ChatGPT platform, inviting developers to create new user experiences and expand the chatbot&#x27;s capabilities. This strategic move aims to transform ChatGPT from a standalone AI tool into a versatile platform with diverse applications. Developers can now integrate their own features, potentially enhancing ChatGPT&#x27;s functionality across various industries. By opening its ecosystem, OpenAI seeks to foster innovation and attract a broader developer community. This development positions OpenAI as a key player in the competitive AI landscape, where adaptability and user engagement are crucial. Tech leaders and developers should explore the app store for opportunities to leverage ChatGPT&#x27;s expanding capabilities.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/17/amazon-reportedly-in-talks-to-invest-10b-in-openai-as-circular-deals-stay-popular/"
-        },
-        {
-            "date": "Dec 17 2025",
-            "title": "Google DeepMind Unveils Gemini 3 Flash for High-Speed AI",
-            "content": "Google DeepMind has launched Gemini 3 Flash, a new AI model designed for rapid processing at reduced costs. This development emphasizes the importance of speed and efficiency in AI systems, catering to the growing demand for real-time data analysis. Gemini 3 Flash offers advanced capabilities, making it suitable for applications requiring swift decision-making and high throughput. The model&#x27;s cost-effectiveness could democratize access to cutting-edge AI technologies. Organizations should explore integrating Gemini 3 Flash into their operations to enhance performance and maintain a competitive edge.",
-            "source": "Google DeepMind News",
-            "sourceUrl": "https://deepmind.google/blog/gemini-3-flash-frontier-intelligence-built-for-speed/"
+            "sourceUrl": "https://techcrunch.com/2025/12/18/chatgpt-launches-an-app-store-lets-developers-know-its-open-for-business/"
         },
         {
             "date": "Dec 18 2025",
-            "title": "Adobe Faces Class-Action Lawsuit Over AI Training Practices",
-            "content": "Adobe is facing a proposed class-action lawsuit accusing the company of improperly using authors&#x27; works to train its AI models. This legal challenge is the latest in a series of copyright disputes targeting the AI industry, as creators seek to protect intellectual property from unauthorized use in AI training datasets. The lawsuit could significantly impact Adobe&#x27;s AI development processes and set a precedent for how companies utilize copyrighted materials in AI training. Professionals in the AI and legal fields should monitor this case closely, as its outcome could influence future AI training practices and copyright law interpretations. Companies leveraging AI should ensure compliance with copyright laws to avoid similar legal challenges.",
+            "title": "Pickle Robot Appoints Tesla Veteran as First CFO Amid UPS Partnership",
+            "content": "Pickle Robot has appointed Jeff Evanson, a former Tesla executive, as its first Chief Financial Officer (CFO) as the startup reportedly expands its collaboration with UPS. This strategic hire signals Pickle Robot&#x27;s commitment to scaling its operations and enhancing its financial management. Evanson&#x27;s experience at Tesla, known for its innovation and rapid growth, is expected to bolster Pickle Robot&#x27;s position in the robotics industry. The partnership with UPS could accelerate the deployment of Pickle Robot&#x27;s automation solutions in logistics and supply chain operations. Companies in these sectors should monitor Pickle Robot&#x27;s developments for potential advancements in automation technology.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/17/adobe-hit-with-proposed-class-action-accused-of-misusing-authors-work-in-ai-training/"
+            "sourceUrl": "https://techcrunch.com/2025/12/18/pickle-robot-adds-tesla-veteran-as-first-cfo/"
+        },
+        {
+            "date": "Dec 18 2025",
+            "title": "British Politicians Join American Tech Giants in Strategic Roles",
+            "content": "Former British Chancellor George Osborne has joined OpenAI as managing director and head of OpenAI for Countries, while also taking on a role with Coinbase&#x27;s internal advisory council. This trend of British politicians transitioning to leadership positions in American tech firms highlights the growing intersection of technology and policy. Osborne&#x27;s dual roles suggest a strategic focus on international expansion and regulatory engagement for both OpenAI and Coinbase. This movement reflects the increasing influence of tech companies in global economic and political arenas. Industry professionals should consider the implications of such appointments on technology policy and international business strategies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/18/why-british-politicians-are-flocking-to-american-tech-giants/"
+        },
+        {
+            "date": "Dec 18 2025",
+            "title": "ChatGPT Mobile App Achieves $3 Billion in Consumer Spending Milestone",
+            "content": "ChatGPT has reached a significant milestone with $3 billion in lifetime consumer spending on its mobile app, achieved in just 31 months. This rapid growth outpaces that of popular platforms like TikTok and major streaming services, highlighting ChatGPT&#x27;s widespread consumer appeal. The app&#x27;s success underscores the increasing demand for AI-driven applications in everyday life, from personal assistance to entertainment. OpenAI&#x27;s strategic focus on mobile accessibility and user engagement has been pivotal in reaching this milestone. Developers and tech leaders should note the potential for AI applications to drive significant consumer spending and explore similar opportunities in their own offerings.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/18/chatgpts-mobile-app-hits-new-milestone-of-3b-in-consumer-spending/"
+        },
+        {
+            "date": "Dec 18 2025",
+            "title": "Palona AI Introduces Vision and Workflow Features for Vertical Expansion",
+            "content": "Palona AI is making a strategic push into vertical markets with the launch of its Vision and Workflow features. Led by former Google and Meta engineering veterans, the Palo Alto-based startup aims to address the challenge of building enterprise AI solutions on unstable foundations. These new features are designed to enhance Palona&#x27;s AI offerings for specific industry applications, providing tailored solutions for businesses. The move reflects a broader trend of AI companies focusing on vertical integration to meet diverse market needs. AI builders should consider the benefits of vertical specialization in developing robust, industry-specific solutions.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/palona-goes-vertical-launching-vision-workflow-features-4-key-lessons-for-ai"
+        },
+        {
+            "date": "Dec 18 2025",
+            "title": "Anthropic Opens &#x27;Agent Skills&#x27; Standard to Compete in Enterprise AI",
+            "content": "Anthropic has announced the release of its Agent Skills technology as an open standard, challenging OpenAI in the enterprise AI space. By sharing its approach to enhancing AI assistant capabilities, Anthropic aims to solidify its presence in the rapidly evolving enterprise software market. This move encourages collaboration and innovation, potentially accelerating the development of more capable AI assistants. The open standard strategy may attract a wider range of developers and companies looking to integrate advanced AI features into their products. Enterprise software professionals should evaluate the potential of Agent Skills to enhance their AI-driven solutions and consider participating in the open standard ecosystem.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/anthropic-launches-enterprise-agent-skills-and-opens-the-standard"
         }
     ],
     "articles": {},
@@ -264,28 +236,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-43529",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2018-4063",
-            "dateAdded": "Dec 12, 2025",
-            "vendor": "Sierra Wireless AirLink ALEOS",
-            "description": "Sierra Wireless AirLink ALEOS contains an unrestricted upload of file with dangerous type vulnerability. A specially crafted HTTP request can upload a file, resulting in executable code being uploaded",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-4063",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-14174",
-            "dateAdded": "Dec 12, 2025",
-            "vendor": "Google Chromium",
-            "description": "Google Chromium contains an out of bounds memory access vulnerability in ANGLE that could allow a remote attacker to perform out of bounds memory access via a crafted HTML page. This vulnerability cou",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-14174",
             "isZeroDay": false
         }
     ],
