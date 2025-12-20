@@ -5,73 +5,52 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Dec 19 2025",
-            "title": "US Authorities Dismantle Crypto Exchange E-Note, Charge Russian Operator",
-            "content": "U.S. law enforcement has shut down the cryptocurrency exchange E-Note, alleging its involvement in laundering money for ransomware groups and other transnational cybercriminal organizations. The Russian administrator of the platform has been charged, highlighting the ongoing crackdown on illicit financial networks supporting cybercrime. This operation underscores the critical role that cryptocurrency exchanges can play in facilitating illegal activities, particularly ransomware, which continues to pose a significant threat to global cybersecurity. Professionals in the field should remain vigilant regarding the use of digital currencies in cybercrime and consider implementing enhanced monitoring of transactions. This action reflects a broader trend of international cooperation to combat cybercriminal infrastructure.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/us-shuts-down-crypto-exchange-e-note-charges-russian-administrator/"
+            "title": "Ukrainian Hacker Pleads Guilty to Nefilim Ransomware Attacks",
+            "content": "A 35-year-old Ukrainian national has pleaded guilty to orchestrating ransomware attacks using the Nefilim strain, potentially facing up to 10 years in prison. Nefilim ransomware has been known to exploit vulnerabilities in remote desktop protocols to encrypt data and demand hefty ransoms from victims. The U.S. authorities have announced an $11 million reward for information leading to the capture of his alleged co-conspirator, who remains at large. This case underscores the persistent threat ransomware poses to businesses globally, with attackers often targeting critical infrastructure and large enterprises. Security professionals are advised to enhance their network defenses and regularly update systems to mitigate such threats.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/nefilim-ransomware-artem-stryzhak-guilty-plea/"
         },
         {
             "date": "Dec 19 2025",
-            "title": "Denmark Accuses Russia of Cyberattack on Water Utility Infrastructure",
-            "content": "Danish intelligence has attributed a destructive cyberattack on the country&#x27;s water utility infrastructure to Russian state actors, part of Moscow&#x27;s broader hybrid warfare strategy against Western nations. The attack targeted critical systems, potentially disrupting water supply to thousands of residents, and highlights the increasing vulnerability of essential services to cyber threats. This incident is part of a pattern of cyber operations aimed at undermining the stability and security of national infrastructures. Security professionals should prioritize the protection of critical infrastructure and collaborate across sectors to enhance defensive measures. Denmark&#x27;s response emphasizes the need for robust international cybersecurity partnerships.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/denmark-blames-russia-for-destructive-cyberattack-on-water-utility/"
-        },
-        {
-            "date": "Dec 19 2025",
-            "title": "University of Sydney Data Breach Exposes Personal Information of 27,000",
-            "content": "The University of Sydney has suffered a data breach affecting 27,000 individuals, including current and former staff, affiliates, alumni, and students. The breach resulted from unauthorized downloads from a code library, compromising sensitive personal information. This incident highlights the risks associated with data storage and sharing practices within academic institutions. Those affected should monitor their personal accounts for suspicious activity and consider identity protection services. The breach underscores the importance of implementing strong data protection measures and regular security audits in educational environments to prevent unauthorized access.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/university-of-sydney-data-breach-affects-27000-individuals/"
-        },
-        {
-            "date": "Dec 19 2025",
-            "title": "Kimwolf Android Botnet Infects 1.8 Million Devices, Launches Massive DDoS Attacks",
-            "content": "The Kimwolf Android botnet, linked to the Aisuru IoT botnet, has compromised 1.8 million devices, executing over 1.7 billion Distributed Denial-of-Service (DDoS) attack commands. The botnet increases the popularity of its command-and-control (C&amp;C) domains, posing a significant threat to network security. This large-scale operation demonstrates the evolving sophistication of mobile botnets and their capacity to disrupt services globally. Organizations should ensure robust security measures are in place for mobile and IoT devices, including regular updates and network monitoring. The rise of such botnets calls for enhanced industry collaboration to mitigate their impact.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/kimwolf-android-botnet-ensnares-1-8-million-devices/"
-        },
-        {
-            "date": "Dec 19 2025",
-            "title": "Credential Stuffing Attacks Target Cisco and Palo Alto VPNs",
-            "content": "Security researchers have identified a coordinated credential-stuffing campaign targeting VPN authentication endpoints from Cisco and Palo Alto Networks. Over two days in mid-December, attackers launched large-scale automated login attempts against Cisco&#x27;s SSL VPN and Palo Alto Networks&#x27; GlobalProtect, exploiting weak or reused passwords. This campaign highlights the persistent threat of credential-based attacks on remote access solutions. Organizations should enforce strong password policies, implement multi-factor authentication (MFA), and monitor for unusual login attempts to protect against unauthorized access. The incident underscores the need for comprehensive security strategies to safeguard VPN infrastructures.",
+            "title": "Iranian APT &#x27;Prince of Persia&#x27; Resurfaces with New Cyber Threats",
+            "content": "The Iranian Advanced Persistent Threat (APT) group known as &#x27;Prince of Persia&#x27; has re-emerged, deploying new malware and command-and-control (C2) infrastructure. After a period of inactivity following disruptions by security firms in 2022, the group is believed to be launching new cyber espionage campaigns. The resurgence involves sophisticated techniques aimed at evading detection, posing significant risks to government and private sector entities. Cybersecurity experts should prioritize monitoring for indicators of compromise linked to this group and ensure robust incident response plans are in place. This development highlights the ongoing cyber threat landscape involving state-sponsored actors.",
             "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4109488/attackers-bring-their-own-passwords-to-cisco-and-palo-alto-vpns.html"
+            "sourceUrl": "https://www.csoonline.com/article/4109985/iranian-apt-prince-of-persia-returns-with-new-malware-and-c2-infrastructure.html"
         },
         {
             "date": "Dec 19 2025",
-            "title": "WatchGuard Patches Critical Fireware OS VPN Vulnerability Exploited in the Wild",
-            "content": "WatchGuard has released patches for a critical vulnerability in its Fireware OS, tracked as CVE-2025-14733, which has been exploited in real-world attacks. The flaw, an out-of-bounds write affecting the iked process, holds a CVSS score of 9.3 and could allow remote attackers to execute arbitrary code. This vulnerability poses a severe risk to organizations using affected systems, potentially compromising network security. Administrators are urged to apply the updates immediately to mitigate risks. This incident highlights the importance of timely patch management and the need for continuous vulnerability assessment.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/12/watchguard-warns-of-active-exploitation.html"
+            "title": "Former Cybersecurity Professionals Admit to Ransomware Crimes",
+            "content": "Ryan Goldberg and Kevin Martin, once employed as incident responders at cybersecurity firms, have pleaded guilty to launching a series of ransomware attacks in 2023. The duo targeted five companies, exploiting their insider knowledge to breach defenses and deploy ransomware. This breach of trust highlights the critical need for stringent internal security protocols and employee monitoring. Organizations must be vigilant in conducting thorough background checks and ensuring continuous cybersecurity training for employees. The case serves as a reminder of the potential for insider threats even from trusted professionals.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/incident-responders-plead-guilty-ransomware-digitalmint/"
         },
         {
             "date": "Dec 19 2025",
-            "title": "Exploring DLLs and TLS Callbacks for Security Testing",
-            "content": "A recent diary entry on the SANS Internet Storm Center has inspired further exploration of using DLLs (Dynamic Link Libraries) and TLS (Thread Local Storage) Callbacks for security testing. The research delves into how these components can be manipulated for testing purposes, offering insights into potential vulnerabilities. This exploration is part of ongoing efforts to understand and mitigate security risks associated with software components. Security professionals should consider incorporating such testing methodologies into their security assessments. Understanding these mechanisms is crucial for developing robust defenses against exploitation techniques.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32580"
+            "title": "FBI Warns of Persistent Deepfake Impersonation of U.S. Officials",
+            "content": "The FBI has issued a warning about the ongoing use of deepfake technology to impersonate U.S. government officials, a tactic dating back to 2023. These sophisticated digital forgeries aim to deceive individuals into sharing sensitive information or transferring funds. The deepfakes often involve manipulated video and audio to create convincing impersonations. As these tactics evolve, it is crucial for organizations and individuals to verify the authenticity of communications through multiple channels. This trend underscores the growing challenge of deepfake technology in cybersecurity, necessitating advanced detection tools and public awareness.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/fbi-says-ongoing-deepfake-impersonation-of-us-officials-dates-back-to-2023/"
         },
         {
             "date": "Dec 19 2025",
-            "title": "ISC Stormcast Highlights December Cybersecurity Trends",
-            "content": "The SANS Internet Storm Center&#x27;s latest Stormcast podcast for December 19, 2025, provides an overview of current cybersecurity threats and trends. This episode focuses on the InfoCON status, which remains at green, indicating no immediate widespread threats. The podcast delves into recent vulnerabilities and patches, emphasizing the importance of timely updates to mitigate risks. Listeners are encouraged to stay informed on emerging threats and apply security best practices in their organizations. The Stormcast serves as a critical resource for security professionals seeking to understand the evolving landscape of cyber threats.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32586"
+            "title": "Cisco VPNs and Email Services Targeted in Dual Cyber Campaigns",
+            "content": "Cisco has reported two separate cyber threat campaigns targeting its VPN and email services. One attack involved a sophisticated, coordinated effort, while the other was a broad, indiscriminate &#x27;spray-and-pray&#x27; attempt. The attacks exploited known vulnerabilities in Cisco&#x27;s systems, potentially impacting a wide range of users who rely on these services for secure communication. Organizations using Cisco products should immediately apply available patches and updates to mitigate these risks. This incident highlights the importance of maintaining up-to-date security measures and the ongoing threat to enterprise communication tools.",
+            "source": "Dark Reading",
+            "sourceUrl": "https://www.darkreading.com/endpoint-security/cisco-vpns-email-services-threat-campaigns"
         },
         {
             "date": "Dec 19 2025",
-            "title": "Critical Vulnerability in HPE OneView Demands Immediate Attention",
-            "content": "A severe remote code execution vulnerability has been discovered in Hewlett Packard Enterprise&#x27;s OneView suite, prompting urgent calls for patching. The flaw, deemed maximum severity, allows attackers to execute arbitrary code on affected systems, potentially compromising network and system management operations. Curtis Dukes, a cybersecurity expert, warns that vendors often downplay such vulnerabilities, underscoring the need for immediate action. Organizations using HPE OneView should prioritize applying the latest patches to safeguard their infrastructure. This incident highlights the critical nature of proactive vulnerability management in maintaining robust cybersecurity defenses.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4109162/hpe-oneview-vulnerable-to-remote-code-execution-attack.html"
-        },
-        {
-            "date": "Dec 19 2025",
-            "title": "Windows 10 Update Fixes Critical Message Queuing Issues",
-            "content": "Microsoft has released an out-of-band update for Windows 10 to address issues with the Message Queuing (MSMQ) service, which were inadvertently introduced in the latest security updates for Windows 11. MSMQ is vital for managing background tasks in enterprise environments, and the disruption has caused significant operational challenges. Organizations relying on this service should apply the update immediately to restore functionality and prevent further disruptions. This incident underscores the complexities of software updates and the need for thorough testing before deployment in production environments.",
+            "title": "Microsoft Teams Outage Causes Message Delays Worldwide",
+            "content": "Microsoft has confirmed an outage affecting its Teams platform, with users experiencing delays in sending and receiving messages. The disruption has impacted thousands globally, affecting businesses that rely on Teams for communication and collaboration. Microsoft is actively investigating the cause and working to restore normal service. Users are advised to monitor Microsoft&#x27;s service status page for updates and consider alternative communication methods in the interim. This incident underscores the reliance on cloud-based collaboration tools and the need for contingency planning in case of service disruptions.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/windows-10-oob-update-released-to-fix-message-queuing-msmq-issues/"
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-teams-is-down-and-messages-are-delayed/"
+        },
+        {
+            "date": "Dec 19 2025",
+            "title": "Global Initiative Launched to Combat Online Scams at Thailand Conference",
+            "content": "An international initiative to combat online scams was launched at a conference in Bangkok, Thailand, with participation from the Association of Southeast Asian Nations (ASEAN). The initiative aims to strengthen cooperation among countries to dismantle scam networks and protect consumers. With online scams on the rise, this collaborative effort seeks to enhance information sharing and develop unified strategies. Security professionals are encouraged to engage with international counterparts to bolster defenses against such threats. This initiative reflects a growing recognition of the need for global cooperation in addressing cybercrime.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/thailand-conference-launches-international-initiative-to-fight-online-scams/"
         },
         {
             "date": "May 05 2026",
@@ -83,53 +62,53 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
+            "date": "Dec 20 2025",
+            "title": "Resolve AI Achieves $1 Billion Valuation with Series A Funding",
+            "content": "Resolve AI, a startup founded by former Splunk executives, has reached a $1 billion valuation following its Series A funding round led by Lightspeed Venture Partners. The company focuses on leveraging artificial intelligence to enhance data analytics and operational efficiency. This significant valuation underscores the growing demand for AI-driven solutions in enterprise environments. Industry insiders note that Resolve AI&#x27;s rapid rise reflects a broader trend of increasing investment in AI startups that promise transformative capabilities. Stakeholders should monitor how Resolve AI plans to deploy this new capital, particularly in scaling its technology and expanding its market reach.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/19/ex-splunk-execs-startup-resolve-ai-hits-1-billion-valuation-with-series-a/"
+        },
+        {
             "date": "Dec 19 2025",
-            "title": "Zara Integrates Generative AI for Enhanced Retail Product Imagery",
-            "content": "Zara is pioneering the use of generative AI to transform retail operations, specifically focusing on product imagery. The retailer is utilizing AI technology to create new images of real models showcasing various outfits, streamlining the visual content creation process. This approach aims to enhance the efficiency of marketing and product presentation workflows, potentially reducing the need for extensive photoshoots. The initiative marks a significant shift in how AI is applied in retail, moving beyond inventory and logistics to more creative aspects. Retailers should consider the implications of AI-driven imagery for brand consistency and customer engagement strategies.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/zara-use-of-ai-shows-how-retail-workflows-are-quietly-changing/"
+            "title": "Cursor Acquires AI Code Review Assistant Graphite",
+            "content": "Cursor has announced the acquisition of Graphite, an AI-powered code review assistant previously valued at $290 million. This move is part of Cursor&#x27;s strategy to expand its portfolio of AI tools for developers, enhancing code quality and productivity. Graphite&#x27;s technology automates code review processes, potentially reducing human error and accelerating development cycles. The acquisition highlights a trend towards integrating AI into software development workflows, which can lead to more efficient and reliable coding practices. Developers and tech leaders should consider how such tools could be integrated into their own processes to improve outcomes.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/19/cursor-continues-acquisition-spree-with-graphite-deal/"
         },
         {
-            "date": "Dec 18 2025",
-            "title": "Peripheral Labs Leverages Autonomous Vehicle Sensors for Immersive Sports Experiences",
-            "content": "Peripheral Labs has secured a $3.6 million seed funding round led by Khosla Ventures to innovate sports viewing experiences using self-driving car sensors. By repurposing these advanced sensors, the startup aims to provide fans with a more immersive and interactive way to experience live sports events. This technology could revolutionize how audiences engage with sports, offering dynamic perspectives and enhanced data-driven insights. The funding will support further development and deployment of this technology, potentially disrupting traditional sports broadcasting models. Stakeholders in sports technology should monitor these developments for potential collaboration and integration opportunities.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/18/peripheral-labs-taps-into-self-driving-car-sensors-to-bring-sports-fans-right-into-the-game/"
+            "date": "Dec 19 2025",
+            "title": "Yann LeCun Launches New AI Startup with Ambitious Valuation Goals",
+            "content": "Yann LeCun, a prominent figure in the AI field, has confirmed the launch of a new startup focused on developing &#x27;world models,&#x27; with aspirations for a valuation exceeding $5 billion. Despite not taking on the CEO role, LeCun&#x27;s involvement marks a significant endorsement of the startup&#x27;s potential. World models are AI systems designed to understand and predict complex environments, a capability that could revolutionize fields like robotics and autonomous systems. This development is part of a broader push towards more generalized AI systems capable of reasoning and planning. Investors and tech companies should watch for further developments, as such advancements could reshape industry standards.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/19/yann-lecun-confirms-his-new-world-model-startup-reportedly-seeks-5b-valuation/"
         },
         {
-            "date": "Dec 18 2025",
-            "title": "Luma AI Launches Video Generation Model on Dream Machine Platform",
-            "content": "Luma AI has introduced a cutting-edge AI model that allows users to generate videos from specified start and end frames, available through its Dream Machine platform. This innovation enables creators to produce seamless video content with minimal input, leveraging AI to fill in the transitional frames. The model represents a significant advancement in video editing and content creation, potentially reducing production time and costs. By simplifying the video creation process, Luma AI&#x27;s technology could appeal to content creators, marketers, and media professionals seeking efficient production solutions. Users should explore the Dream Machine platform to assess its capabilities and applications.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/18/luma-releases-a-new-ai-model-that-lets-users-generate-a-video-from-a-start-and-end-frame/"
+            "date": "Dec 19 2025",
+            "title": "iRobot, Luminar, and Rad Power Bikes File for Bankruptcy Amid Industry Challenges",
+            "content": "In a challenging week for hardware companies, iRobot, Luminar, and Rad Power Bikes have all filed for bankruptcy. These filings are attributed to a mix of tariff pressures, supply chain disruptions, and shifting market demands. The situation underscores the difficulties faced by hardware manufacturers in maintaining profitability amidst global economic uncertainties. This trend raises concerns about the sustainability of hardware-focused business models in an increasingly software-driven world. Industry professionals should evaluate the resilience of their supply chains and consider strategic pivots to mitigate similar risks.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/podcast/hardwares-brutal-week-irobot-luminar-and-rad-power-go-bankrupt/"
         },
         {
-            "date": "Dec 18 2025",
-            "title": "Lovable Achieves $6.6 Billion Valuation with $330 Million Funding Round",
-            "content": "Lovable, a startup specializing in vibe-coding technology, has raised $330 million, boosting its valuation to $6.6 billion. This funding round, occurring just five months after the previous one, underscores the rapid growth and investor confidence in Lovable&#x27;s innovative approach to coding emotional resonance into digital experiences. The company&#x27;s technology is poised to transform user interactions across various digital platforms by integrating emotional intelligence into software applications. Industry professionals should watch Lovable&#x27;s trajectory as it continues to expand its influence and capabilities in the tech landscape, potentially setting new standards for emotionally responsive technology.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/18/vibe-coding-startup-lovable-raises-330m-at-a-6-6b-valuation/"
+            "date": "Dec 19 2025",
+            "title": "OpenAI Introduces New Safety Guidelines for ChatGPT Users Under 18",
+            "content": "OpenAI has updated its safety guidelines for ChatGPT, focusing on interactions with users under 18 as lawmakers debate AI standards for minors. The new policies include enhanced AI literacy resources for teens and parents, aiming to promote safe and informed usage. Despite these updates, questions remain about the practical enforcement of such guidelines in diverse user environments. This move is part of a broader effort to address ethical concerns surrounding AI interactions with younger audiences. Parents and educators should familiarize themselves with these resources to better guide young users in navigating AI technologies responsibly.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/19/openai-adds-new-teen-safety-rules-to-models-as-lawmakers-weigh-ai-standards-for-minors/"
         },
         {
-            "date": "Dec 18 2025",
-            "title": "Amazon Enhances Ring Doorbells with Alexa+ Conversational AI",
-            "content": "Amazon has unveiled Alexa+, a new feature that integrates conversational AI into its Ring doorbells, enhancing their capability to identify visitors. This feature uses video analysis to recognize individuals based on their uniforms, actions, and objects they are holding, providing a more interactive and informative user experience. By adding this layer of AI-driven context, Ring doorbells can offer users more detailed insights about visitors, potentially improving home security and user convenience. Homeowners and security professionals should consider the implications of AI-enhanced surveillance for privacy and security management, as well as the potential for further integration with smart home ecosystems.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/18/amazons-new-alexa-feature-adds-conversational-ai-to-ring-doorbells/"
+            "date": "Dec 19 2025",
+            "title": "Known&#x27;s Voice AI Boosts Success Rates for In-Person Dating",
+            "content": "Known, a company testing its voice AI technology in San Francisco, reports that 80% of its user introductions result in in-person dates, significantly outperforming traditional swipe-based dating apps. The AI system facilitates more meaningful connections by focusing on conversational compatibility rather than superficial criteria. This development highlights the potential for AI to transform social interactions by prioritizing quality over quantity. As the dating landscape evolves, users and developers should consider the implications of AI-driven matchmaking on personal relationships and social dynamics. The success of Known&#x27;s approach could inspire similar innovations in other sectors.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/19/known-uses-voice-ai-to-help-you-go-on-more-in-person-dates/"
         },
         {
-            "date": "Dec 18 2025",
-            "title": "AI Revolutionizes Human Resources Operations with Enhanced Efficiency",
-            "content": "AI is increasingly embedded in Human Resources (HR), transforming operational efficiency by automating routine tasks such as answering employee inquiries and supporting training programs. This integration allows HR departments to focus more on strategic initiatives by offloading repetitive tasks to AI systems. The technology&#x27;s impact is most evident in areas where performance metrics can be directly measured, such as response times and training effectiveness. Organizations should evaluate AI solutions to optimize HR operations, ensuring they remain competitive and responsive to workforce needs. As AI continues to evolve, its role in HR is likely to expand, offering new opportunities for innovation.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/hr-ai-in-human-resources-the-real-operational-impact/"
-        },
-        {
-            "date": "Dec 18 2025",
-            "title": "OpenAI Introduces Chain-of-Thought Monitorability Framework",
-            "content": "OpenAI has released a comprehensive framework and evaluation suite for monitoring chain-of-thought processes in AI models, covering 13 evaluations across 24 environments. This initiative highlights the effectiveness of monitoring a model&#x27;s internal reasoning rather than solely focusing on outputs, providing a more nuanced understanding of AI behavior. The framework aims to enhance the transparency and reliability of AI systems, offering a path toward scalable control and safety. AI developers and researchers should consider adopting these tools to improve model accountability and performance. This development underscores the growing importance of interpretability in AI research and deployment.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/evaluating-chain-of-thought-monitorability"
+            "date": "Dec 19 2025",
+            "title": "Meta to Release Advanced Image and Video AI Model in 2026",
+            "content": "Meta is reportedly developing a new AI model for release in 2026, aimed at enhancing image and video processing capabilities. The model will integrate advanced text-based functionalities with improved coding capabilities and explore new world models that comprehend visual data. This initiative is part of Meta&#x27;s strategy to create AI systems capable of reasoning, planning, and acting without exhaustive training for every scenario. The development reflects a broader industry trend towards more autonomous and versatile AI systems. Tech professionals should anticipate the potential impacts of such advancements on fields like media, entertainment, and beyond.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/19/meta-is-developing-a-new-image-and-video-model-for-a-2026-release-report-says/"
         }
     ],
     "articles": {},
@@ -193,6 +172,17 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2025-14733",
+            "dateAdded": "Dec 19, 2025",
+            "vendor": "WatchGuard Firebox",
+            "description": "WatchGuard Fireware OS iked process contains an out of bounds write vulnerability in the OS iked process. This vulnerability may allow a remote unauthenticated attacker to execute arbitrary code and a",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-14733",
+            "isZeroDay": false
+        },
         {
             "cveId": "CVE-2025-59374",
             "dateAdded": "Dec 17, 2025",
