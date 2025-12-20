@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-12-20T01:38:58.656824",
+  "last_updated": "2025-12-20T12:39:17.464553",
   "period": "Last 7 days",
   "total_groups": 35,
   "total_victims": 300,
@@ -96,6 +96,97 @@
       ]
     },
     {
+      "name": "Qilin",
+      "count": 44,
+      "victims": [
+        {
+          "name": "Fujitsu Component (Malaysia) SDN. BHD",
+          "date": "2025-12-20 09:16:13.303422",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=25196ccb-af80-3c8e-b93b-84d505aefe8d",
+          "discovered_date": "2025-12-20T09:16:13.303422"
+        },
+        {
+          "name": "Publicidad Sarmiento",
+          "date": "2025-12-19 17:54:21.134004",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=2e20bfff-6db8-35ab-8cac-e76f3bed5f24",
+          "discovered_date": "2025-12-19T17:54:21.134004"
+        },
+        {
+          "name": "Melsing",
+          "date": "2025-12-19 14:46:32.079331",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=902a4e13-49c1-34e1-bc1b-d16e11f8e3fd",
+          "discovered_date": "2025-12-19T14:46:32.079331"
+        },
+        {
+          "name": "The Genesis Group",
+          "date": "2025-12-19 12:38:02.602692",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=2e6af24f-27ff-3d6a-b6c1-1d26661c5083",
+          "discovered_date": "2025-12-19T12:38:02.602692"
+        },
+        {
+          "name": "Maison Law",
+          "date": "2025-12-19 12:37:22.995491",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=a7961263-c7a8-30cd-b2eb-9c297be549cc",
+          "discovered_date": "2025-12-19T12:37:22.995491"
+        },
+        {
+          "name": "Club Atlético River Plate",
+          "date": "2025-12-19 11:29:37.258303",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=8218417e-8d89-38e0-a811-151a6b94abcb",
+          "discovered_date": "2025-12-19T11:29:37.258303"
+        },
+        {
+          "name": "Josh Steel",
+          "date": "2025-12-19 09:35:18.803603",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=f4b1c62b-289b-374e-8e2c-e935cb70b49e",
+          "discovered_date": "2025-12-19T09:35:18.803603"
+        },
+        {
+          "name": "Shah Law Office",
+          "date": "2025-12-19 09:34:41.246159",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=6930147a-9505-3f07-befe-bd6149a6f566",
+          "discovered_date": "2025-12-19T09:34:41.246159"
+        },
+        {
+          "name": "MG Chartered Professional Accountant",
+          "date": "2025-12-19 09:34:02.937966",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=402edd4d-f10a-372a-b9c0-3d4b3fe0420c",
+          "discovered_date": "2025-12-19T09:34:02.937966"
+        },
+        {
+          "name": "Grandes Vinos",
+          "date": "2025-12-18 14:47:43.445415",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=54a0b04f-d262-3940-b8f8-0a42c0119915",
+          "discovered_date": "2025-12-18T14:47:43.445415"
+        }
+      ],
+      "industries": [
+        "Agriculture and Food Production",
+        "Business Services",
+        "Consumer Services",
+        "Financial Services",
+        "Hospitality and Tourism"
+      ],
+      "countries": [
+        "AR",
+        "CA",
+        "DK",
+        "EE",
+        "ES"
+      ],
+      "trend": "up",
+      "trend_percentage": 15,
+      "daily_counts": [
+        2,
+        7,
+        0,
+        7,
+        8,
+        16,
+        4
+      ]
+    },
+    {
       "name": "Sinobi",
       "count": 44,
       "victims": [
@@ -186,99 +277,8 @@
       ]
     },
     {
-      "name": "Qilin",
-      "count": 42,
-      "victims": [
-        {
-          "name": "Publicidad Sarmiento",
-          "date": "2025-12-19 17:54:21.134004",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=2e20bfff-6db8-35ab-8cac-e76f3bed5f24",
-          "discovered_date": "2025-12-19T17:54:21.134004"
-        },
-        {
-          "name": "Melsing",
-          "date": "2025-12-19 14:46:32.079331",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=902a4e13-49c1-34e1-bc1b-d16e11f8e3fd",
-          "discovered_date": "2025-12-19T14:46:32.079331"
-        },
-        {
-          "name": "The Genesis Group",
-          "date": "2025-12-19 12:38:02.602692",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=2e6af24f-27ff-3d6a-b6c1-1d26661c5083",
-          "discovered_date": "2025-12-19T12:38:02.602692"
-        },
-        {
-          "name": "Maison Law",
-          "date": "2025-12-19 12:37:22.995491",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=a7961263-c7a8-30cd-b2eb-9c297be549cc",
-          "discovered_date": "2025-12-19T12:37:22.995491"
-        },
-        {
-          "name": "Club Atlético River Plate",
-          "date": "2025-12-19 11:29:37.258303",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=8218417e-8d89-38e0-a811-151a6b94abcb",
-          "discovered_date": "2025-12-19T11:29:37.258303"
-        },
-        {
-          "name": "Josh Steel",
-          "date": "2025-12-19 09:35:18.803603",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=f4b1c62b-289b-374e-8e2c-e935cb70b49e",
-          "discovered_date": "2025-12-19T09:35:18.803603"
-        },
-        {
-          "name": "Shah Law Office",
-          "date": "2025-12-19 09:34:41.246159",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=6930147a-9505-3f07-befe-bd6149a6f566",
-          "discovered_date": "2025-12-19T09:34:41.246159"
-        },
-        {
-          "name": "MG Chartered Professional Accountant",
-          "date": "2025-12-19 09:34:02.937966",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=402edd4d-f10a-372a-b9c0-3d4b3fe0420c",
-          "discovered_date": "2025-12-19T09:34:02.937966"
-        },
-        {
-          "name": "Grandes Vinos",
-          "date": "2025-12-18 14:47:43.445415",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=54a0b04f-d262-3940-b8f8-0a42c0119915",
-          "discovered_date": "2025-12-18T14:47:43.445415"
-        },
-        {
-          "name": "Best Hotels Spain",
-          "date": "2025-12-18 13:02:35.144093",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=73f16525-4d05-30a5-8bb9-e91a1b806d84",
-          "discovered_date": "2025-12-18T13:02:35.144093"
-        }
-      ],
-      "industries": [
-        "Agriculture and Food Production",
-        "Business Services",
-        "Financial Services",
-        "Hospitality and Tourism",
-        "Not Found"
-      ],
-      "countries": [
-        "AR",
-        "CA",
-        "DK",
-        "EE",
-        "ES"
-      ],
-      "trend": "up",
-      "trend_percentage": 15,
-      "daily_counts": [
-        3,
-        7,
-        0,
-        8,
-        8,
-        16,
-        0
-      ]
-    },
-    {
       "name": "Akira",
-      "count": 22,
+      "count": 21,
       "victims": [
         {
           "name": "Susquehanna Glass",
@@ -329,16 +329,16 @@
           "discovered_date": "2025-12-18T16:18:42.163012"
         },
         {
-          "name": "Adelman & Gettleman",
-          "date": "2025-12-17 15:43:54.888476",
-          "url": "",
-          "discovered_date": "2025-12-17T15:43:54.888476"
-        },
-        {
           "name": "MAT 4Site Engineers",
           "date": "2025-12-19T15:48:03+00:00",
           "url": "https://www.ransomware.live/id/TUFUIDRTaXRlIEVuZ2luZWVyc0Bha2lyYQ==",
           "discovered_date": "2025-12-19T15:48:03+00:00"
+        },
+        {
+          "name": "Global Miami JV",
+          "date": "2025-12-19T13:20:08+00:00",
+          "url": "https://www.ransomware.live/id/R2xvYmFsIE1pYW1pIEpWQGFraXJh",
+          "discovered_date": "2025-12-19T13:20:08+00:00"
         }
       ],
       "industries": [
@@ -358,7 +358,7 @@
         0,
         2,
         0,
-        4,
+        3,
         10,
         6,
         0
@@ -366,7 +366,7 @@
     },
     {
       "name": "Devman",
-      "count": 19,
+      "count": 18,
       "victims": [
         {
           "name": "****s*oc****.com",
@@ -436,16 +436,16 @@
         "Technology"
       ],
       "countries": [
-        "BR",
         "CA",
         "CL",
         "CN",
-        "ES"
+        "ES",
+        "FR"
       ],
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        1,
+        0,
         1,
         3,
         2,
@@ -634,6 +634,84 @@
       ]
     },
     {
+      "name": "Handala",
+      "count": 9,
+      "victims": [
+        {
+          "name": "No Place to Hide: Unmasking the Masterminds Behind War Drones",
+          "date": "2025-12-20 10:55:04.186924",
+          "url": "http://vmjfieomxhnfjba57sd6jjws2ogvowjgxhhfglsikqvvrnrajbmpxqqd.onion/?p=581",
+          "discovered_date": "2025-12-20T10:55:04.186924"
+        },
+        {
+          "name": "The Day of Reckoning Awaits the Child-Killers",
+          "date": "2025-12-19 07:59:37.166385",
+          "url": "http://vmjfieomxhnfjba57sd6jjws2ogvowjgxhhfglsikqvvrnrajbmpxqqd.onion/?p=577",
+          "discovered_date": "2025-12-19T07:59:37.166385"
+        },
+        {
+          "name": "The 200,000 Message Bombshell: Bennett’s Game is Over",
+          "date": "2025-12-18 11:54:19.324582",
+          "url": "http://vmjfieomxhnfjba57sd6jjws2ogvowjgxhhfglsikqvvrnrajbmpxqqd.onion/?p=573",
+          "discovered_date": "2025-12-18T11:54:19.324582"
+        },
+        {
+          "name": "No Place to Hide: Unmasking the Masterminds Behind War Drones",
+          "date": "2025-12-20T10:55:04+00:00",
+          "url": "https://www.ransomware.live/id/Tm8gUGxhY2UgdG8gSGlkZTogVW5tYXNraW5nIHRoZSBNYXN0ZXJtaW5kcyBCZWhpbmQgV2FyIERyb25lc0BoYW5kYWxh",
+          "discovered_date": "2025-12-20T10:55:04+00:00"
+        },
+        {
+          "name": "The Day of Reckoning Awaits the Child-Killers",
+          "date": "2025-12-19T07:59:37+00:00",
+          "url": "https://www.ransomware.live/id/VGhlIERheSBvZiBSZWNrb25pbmcgQXdhaXRzIHRoZSBDaGlsZC1LaWxsZXJzQGhhbmRhbGE=",
+          "discovered_date": "2025-12-19T07:59:37+00:00"
+        },
+        {
+          "name": "The 200,000 Message Bombshell: Bennett’s Game is Over",
+          "date": "2025-12-18T11:54:19+00:00",
+          "url": "https://www.ransomware.live/id/VGhlIDIwMCwwMDAgTWVzc2FnZSBCb21ic2hlbGw6IEJlbm5ldHTigJlzIEdhbWUgaXMgT3ZlckBoYW5kYWxh",
+          "discovered_date": "2025-12-18T11:54:19+00:00"
+        },
+        {
+          "name": "Naftali Bennett Chats",
+          "date": "2025-12-17T18:46:09+00:00",
+          "url": "https://www.ransomware.live/id/TmFmdGFsaSBCZW5uZXR0IENoYXRzQGhhbmRhbGE=",
+          "discovered_date": "2025-12-17T18:46:09+00:00"
+        },
+        {
+          "name": "Operation Octopus: Naftali Bennett",
+          "date": "2025-12-17T11:43:07+00:00",
+          "url": "https://www.ransomware.live/id/T3BlcmF0aW9uIE9jdG9wdXM6IE5hZnRhbGkgQmVubmV0dEBoYW5kYWxh",
+          "discovered_date": "2025-12-17T11:43:07+00:00"
+        },
+        {
+          "name": "Caught by the Octopus: Bennett’s Darkest Hour",
+          "date": "2025-12-17T05:51:51+00:00",
+          "url": "https://www.ransomware.live/id/Q2F1Z2h0IGJ5IHRoZSBPY3RvcHVzOiBCZW5uZXR04oCZcyBEYXJrZXN0IEhvdXJAaGFuZGFsYQ==",
+          "discovered_date": "2025-12-17T05:51:51+00:00"
+        }
+      ],
+      "industries": [
+        "Not Found"
+      ],
+      "countries": [
+        "IL",
+        "N/A"
+      ],
+      "trend": "stable",
+      "trend_percentage": 0,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        3,
+        2,
+        2,
+        2
+      ]
+    },
+    {
       "name": "Dragonforce",
       "count": 9,
       "victims": [
@@ -709,78 +787,6 @@
         5,
         1,
         0,
-        2,
-        0
-      ]
-    },
-    {
-      "name": "Handala",
-      "count": 8,
-      "victims": [
-        {
-          "name": "The Day of Reckoning Awaits the Child-Killers",
-          "date": "2025-12-19 07:59:37.166385",
-          "url": "http://vmjfieomxhnfjba57sd6jjws2ogvowjgxhhfglsikqvvrnrajbmpxqqd.onion/?p=577",
-          "discovered_date": "2025-12-19T07:59:37.166385"
-        },
-        {
-          "name": "The 200,000 Message Bombshell: Bennett’s Game is Over",
-          "date": "2025-12-18 11:54:19.324582",
-          "url": "http://vmjfieomxhnfjba57sd6jjws2ogvowjgxhhfglsikqvvrnrajbmpxqqd.onion/?p=573",
-          "discovered_date": "2025-12-18T11:54:19.324582"
-        },
-        {
-          "name": "Naftali Bennett Chats",
-          "date": "2025-12-17 18:46:09.569609",
-          "url": "https://handala-hack.to/naftali-bennett-chats/",
-          "discovered_date": "2025-12-17T18:46:09.569609"
-        },
-        {
-          "name": "The Day of Reckoning Awaits the Child-Killers",
-          "date": "2025-12-19T07:59:37+00:00",
-          "url": "https://www.ransomware.live/id/VGhlIERheSBvZiBSZWNrb25pbmcgQXdhaXRzIHRoZSBDaGlsZC1LaWxsZXJzQGhhbmRhbGE=",
-          "discovered_date": "2025-12-19T07:59:37+00:00"
-        },
-        {
-          "name": "The 200,000 Message Bombshell: Bennett’s Game is Over",
-          "date": "2025-12-18T11:54:19+00:00",
-          "url": "https://www.ransomware.live/id/VGhlIDIwMCwwMDAgTWVzc2FnZSBCb21ic2hlbGw6IEJlbm5ldHTigJlzIEdhbWUgaXMgT3ZlckBoYW5kYWxh",
-          "discovered_date": "2025-12-18T11:54:19+00:00"
-        },
-        {
-          "name": "Naftali Bennett Chats",
-          "date": "2025-12-17T18:46:09+00:00",
-          "url": "https://www.ransomware.live/id/TmFmdGFsaSBCZW5uZXR0IENoYXRzQGhhbmRhbGE=",
-          "discovered_date": "2025-12-17T18:46:09+00:00"
-        },
-        {
-          "name": "Operation Octopus: Naftali Bennett",
-          "date": "2025-12-17T11:43:07+00:00",
-          "url": "https://www.ransomware.live/id/T3BlcmF0aW9uIE9jdG9wdXM6IE5hZnRhbGkgQmVubmV0dEBoYW5kYWxh",
-          "discovered_date": "2025-12-17T11:43:07+00:00"
-        },
-        {
-          "name": "Caught by the Octopus: Bennett’s Darkest Hour",
-          "date": "2025-12-17T05:51:51+00:00",
-          "url": "https://www.ransomware.live/id/Q2F1Z2h0IGJ5IHRoZSBPY3RvcHVzOiBCZW5uZXR04oCZcyBEYXJrZXN0IEhvdXJAaGFuZGFsYQ==",
-          "discovered_date": "2025-12-17T05:51:51+00:00"
-        }
-      ],
-      "industries": [
-        "Not Found"
-      ],
-      "countries": [
-        "IL",
-        "N/A"
-      ],
-      "trend": "stable",
-      "trend_percentage": 0,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        4,
-        2,
         2,
         0
       ]
@@ -1238,55 +1244,6 @@
       ]
     },
     {
-      "name": "Blackshrantac",
-      "count": 4,
-      "victims": [
-        {
-          "name": "Netstar Australia PTY Ltd",
-          "date": "2025-12-17 16:49:04.660373",
-          "url": "http://b2ykcy2gcug4gnccm6hnrb5xapnresmyjjqgvhafaypppwgo4feixwyd.onion/targets/37",
-          "discovered_date": "2025-12-17T16:49:04.660373"
-        },
-        {
-          "name": "Netstar Australia PTY Ltd",
-          "date": "2025-12-17T16:49:04+00:00",
-          "url": "https://www.ransomware.live/id/TmV0c3RhciBBdXN0cmFsaWEgUFRZIEx0ZEBibGFja3NocmFudGFj",
-          "discovered_date": "2025-12-17T16:49:04+00:00"
-        },
-        {
-          "name": "demilac, Inc",
-          "date": "2025-12-15T16:19:10+00:00",
-          "url": "https://www.ransomware.live/id/ZGVtaWxhYywgSW5jQGJsYWNrc2hyYW50YWM=",
-          "discovered_date": "2025-12-15T16:19:10+00:00"
-        },
-        {
-          "name": "VFM Systems & Services (P) Ltd",
-          "date": "2025-12-14T20:08:14+00:00",
-          "url": "https://www.ransomware.live/id/VkZNIFN5c3RlbXMgJiBTZXJ2aWNlcyAoUCkgTHRkQGJsYWNrc2hyYW50YWM=",
-          "discovered_date": "2025-12-14T20:08:14+00:00"
-        }
-      ],
-      "industries": [
-        "Telecommunication"
-      ],
-      "countries": [
-        "AU",
-        "IN",
-        "N/A"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        1,
-        1,
-        0,
-        2,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Play",
       "count": 4,
       "victims": [
@@ -1455,6 +1412,82 @@
         0,
         2,
         0
+      ]
+    },
+    {
+      "name": "Blackshrantac",
+      "count": 3,
+      "victims": [
+        {
+          "name": "Netstar Australia PTY Ltd",
+          "date": "2025-12-17T16:49:04+00:00",
+          "url": "https://www.ransomware.live/id/TmV0c3RhciBBdXN0cmFsaWEgUFRZIEx0ZEBibGFja3NocmFudGFj",
+          "discovered_date": "2025-12-17T16:49:04+00:00"
+        },
+        {
+          "name": "demilac, Inc",
+          "date": "2025-12-15T16:19:10+00:00",
+          "url": "https://www.ransomware.live/id/ZGVtaWxhYywgSW5jQGJsYWNrc2hyYW50YWM=",
+          "discovered_date": "2025-12-15T16:19:10+00:00"
+        },
+        {
+          "name": "VFM Systems & Services (P) Ltd",
+          "date": "2025-12-14T20:08:14+00:00",
+          "url": "https://www.ransomware.live/id/VkZNIFN5c3RlbXMgJiBTZXJ2aWNlcyAoUCkgTHRkQGJsYWNrc2hyYW50YWM=",
+          "discovered_date": "2025-12-14T20:08:14+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "AU",
+        "IN",
+        "N/A"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Coinbasecartel",
+      "count": 2,
+      "victims": [
+        {
+          "name": "Insight",
+          "date": "2025-12-20 12:21:23.489685",
+          "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/insight",
+          "discovered_date": "2025-12-20T12:21:23.489685"
+        },
+        {
+          "name": "ILLUMINA",
+          "date": "2025-12-16T17:47:42+00:00",
+          "url": "https://www.ransomware.live/id/SUxMVU1JTkFAY29pbmJhc2VjYXJ0ZWw=",
+          "discovered_date": "2025-12-16T17:47:42+00:00"
+        }
+      ],
+      "industries": [
+        "Technology"
+      ],
+      "countries": [
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
       ]
     },
     {
@@ -1664,40 +1697,6 @@
       ]
     },
     {
-      "name": "Killsec",
-      "count": 2,
-      "victims": [
-        {
-          "name": "republica federative do brasil",
-          "date": "2025-12-15T03:19:33+00:00",
-          "url": "https://www.ransomware.live/id/cmVwdWJsaWNhIGZlZGVyYXRpdmUgZG8gYnJhc2lsQGtpbGxzZWM=",
-          "discovered_date": "2025-12-15T03:19:33+00:00"
-        },
-        {
-          "name": "dabafinance.com",
-          "date": "2025-12-14T01:53:00+00:00",
-          "url": "https://www.ransomware.live/id/ZGFiYWZpbmFuY2UuY29tQGtpbGxzZWM=",
-          "discovered_date": "2025-12-14T01:53:00+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "BR",
-        "GB"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Crypto24",
       "count": 1,
       "victims": [
@@ -1738,33 +1737,6 @@
       "industries": [],
       "countries": [
         "IT"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Coinbasecartel",
-      "count": 1,
-      "victims": [
-        {
-          "name": "ILLUMINA",
-          "date": "2025-12-16T17:47:42+00:00",
-          "url": "https://www.ransomware.live/id/SUxMVU1JTkFAY29pbmJhc2VjYXJ0ZWw=",
-          "discovered_date": "2025-12-16T17:47:42+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "US"
       ],
       "trend": "down",
       "trend_percentage": -5,
@@ -1846,6 +1818,33 @@
       "industries": [],
       "countries": [
         "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Killsec",
+      "count": 1,
+      "victims": [
+        {
+          "name": "republica federative do brasil",
+          "date": "2025-12-15T03:19:33+00:00",
+          "url": "https://www.ransomware.live/id/cmVwdWJsaWNhIGZlZGVyYXRpdmUgZG8gYnJhc2lsQGtpbGxzZWM=",
+          "discovered_date": "2025-12-15T03:19:33+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "BR"
       ],
       "trend": "down",
       "trend_percentage": -5,
