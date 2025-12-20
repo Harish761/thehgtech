@@ -1,6 +1,77 @@
 {
   "articles": [
     {
+      "id": "article-700credit-breach-2025",
+      "title": "700Credit Data Breach Exposes 5.6 Million SSNs: Automotive Industry Supply Chain Attack",
+      "date": "December 20, 2025",
+      "category": "Data Breach",
+      "badge": "NEW",
+      "excerpt": "A compromised third-party API gave hackers access to millions of Social Security numbers, addresses, and dates of birth from automotive dealership credit checks over 4 months.",
+      "image": "images/articles/700credit-breach-2025.png",
+      "tags": [
+        "Data Breach",
+        "Supply Chain",
+        "SSN",
+        "Automotive",
+        "Third-Party Risk"
+      ],
+      "author": "TheHGTech",
+      "externalUrl": "articles/700credit-breach-2025.html"
+    },
+    {
+      "id": "article-dxs-nhs-breach-2025",
+      "title": "DXS International NHS Breach: DevMan Ransomware Claims 300GB from UK Healthcare Provider",
+      "date": "December 20, 2025",
+      "category": "Healthcare Breach",
+      "badge": "NEW",
+      "excerpt": "NHS GP software provider serving 17 million patients hit by DevMan ransomware. 300GB of data allegedly stolen in December 14 attack.",
+      "image": "images/articles/dxs-nhs-breach-2025.png",
+      "tags": [
+        "NHS",
+        "Healthcare",
+        "Ransomware",
+        "UK",
+        "DevMan"
+      ],
+      "author": "TheHGTech",
+      "externalUrl": "articles/dxs-nhs-ransomware-breach-2025.html"
+    },
+    {
+      "id": "article-cybersecurity-pros-alphv-2025",
+      "title": "Former Cybersecurity Professionals Plead Guilty to ALPHV BlackCat Ransomware Attacks",
+      "date": "December 20, 2025",
+      "category": "Insider Threat",
+      "badge": "NEW",
+      "excerpt": "Incident response manager and ransomware negotiator convicted of conducting ALPHV attacks. $9.5M in losses, used insider knowledge to evade defenses.",
+      "image": "images/articles/cybersecurity-pros-guilty-2025.png",
+      "tags": [
+        "Insider Threat",
+        "ALPHV",
+        "BlackCat",
+        "Ransomware",
+        "Prosecution"
+      ],
+      "author": "TheHGTech",
+      "externalUrl": "articles/cybersecurity-pros-guilty-alphv-ransomware-2025.html"
+    },
+    {
+      "id": "article-nefilim-guilty-plea-2025",
+      "title": "Nefilim Ransomware Operator Pleads Guilty: Ukrainian National Faces 10 Years",
+      "date": "December 20, 2025",
+      "category": "Legal/Arrest",
+      "excerpt": "Ukrainian national Artem Stryzhak pleads guilty to Nefilim ransomware conspiracy. Co-conspirator at large with $11 million bounty.",
+      "image": "images/articles/nefilim-guilty-plea-2025.png",
+      "tags": [
+        "Nefilim",
+        "Ransomware",
+        "Prosecution",
+        "Ukraine",
+        "DOJ"
+      ],
+      "author": "TheHGTech",
+      "externalUrl": "articles/nefilim-ransomware-operator-guilty-2025.html"
+    },
+    {
       "id": "article-french-ministry-hack-2025",
       "title": "French Ministry of Interior Hacked: 22-Year-Old Arrested",
       "date": "December 18, 2025",
