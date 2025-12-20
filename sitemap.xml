@@ -65,6 +65,34 @@
   
   <!-- ========== ARTICLES - HIGH TRAFFIC POTENTIAL ========== -->
   <url>
+    <loc>https://thehgtech.com/articles/700credit-breach-2025.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2025-12-20</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/dxs-nhs-ransomware-breach-2025.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2025-12-20</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/cybersecurity-pros-guilty-alphv-ransomware-2025.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2025-12-20</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/nefilim-ransomware-operator-guilty-2025.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2025-12-20</lastmod>
+  </url>
+
+  <url>
     <loc>https://thehgtech.com/articles/99-percent-ai-systems-attacked-2025.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
