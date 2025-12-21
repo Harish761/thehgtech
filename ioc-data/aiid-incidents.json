@@ -1551,28 +1551,12 @@
       "date": "2025-09-30",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1041",
-      "incident_id": 1041,
-      "title": "Nomi Chatbots Reportedly Encouraged Suicide, Sexual Violence, Terrorism, and Hate Speech",
-      "date": "2025-09-22",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1212",
-      "incident_id": 1212,
-      "title": "Nomi AI Companion Allegedly Directs Australian User to Stab Father and Engages in Harmful Role-Play",
-      "date": "2025-09-22",
-      "category": "content_moderation",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 196,
+    "total": 194,
     "last7Days": 6,
     "last30Days": 68
   },
-  "lastUpdated": "2025-12-21T07:57:52.557163+05:30"
+  "lastUpdated": "2025-12-21T10:13:59.651966+05:30"
 }
