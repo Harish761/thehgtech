@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-12-21T01:50:21.986388",
+  "last_updated": "2025-12-21T12:40:15.348743",
   "period": "Last 7 days",
   "total_groups": 35,
   "total_victims": 300,
@@ -555,6 +555,12 @@
           "discovered_date": "2025-12-19T19:54:46.046060"
         },
         {
+          "name": "svlawus.com",
+          "date": "2025-12-21 12:10:34.858718",
+          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/694227a2be52b3ea15c49711",
+          "discovered_date": "2025-12-21T12:10:34.858718"
+        },
+        {
           "name": "Pacific Rim Mechanical",
           "date": "2025-12-18 22:24:36.116588",
           "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/69446ea8be52b3ea15e7951c",
@@ -601,12 +607,6 @@
           "date": "2025-12-16T23:51:35+00:00",
           "url": "https://www.ransomware.live/id/aHR0cHM6Ly9hdmVuaXJhLmNvbS9AaW5jcmFuc29t",
           "discovered_date": "2025-12-16T23:51:35+00:00"
-        },
-        {
-          "name": "Precise Benefits Group LLC",
-          "date": "2025-12-16T11:58:56+00:00",
-          "url": "https://www.ransomware.live/id/UHJlY2lzZSBCZW5lZml0cyBHcm91cCBMTENAaW5jcmFuc29t",
-          "discovered_date": "2025-12-16T11:58:56+00:00"
         }
       ],
       "industries": [
@@ -622,13 +622,13 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        1,
+        0,
         2,
         1,
         3,
         4,
         0,
-        0
+        1
       ]
     },
     {
@@ -946,6 +946,68 @@
       ]
     },
     {
+      "name": "Lynx",
+      "count": 6,
+      "victims": [
+        {
+          "name": "terport.com.py",
+          "date": "2025-12-21 07:49:31.843237",
+          "url": "http://lynxchatly4zludmhmi75jrwhycnoqvkxb4prohxmyzf4euf5gjxroad.onion/leaks/6947a0582423bc3ce01f5c42",
+          "discovered_date": "2025-12-21T07:49:31.843237"
+        },
+        {
+          "name": "L.O. Trading",
+          "date": "2025-12-18 16:39:07.812659",
+          "url": "http://lynxchatly4zludmhmi75jrwhycnoqvkxb4prohxmyzf4euf5gjxroad.onion/leaks/69442a5b2423bc3ce0e342ac",
+          "discovered_date": "2025-12-18T16:39:07.812659"
+        },
+        {
+          "name": "terport.com.py",
+          "date": "2025-12-21T07:49:31+00:00",
+          "url": "https://www.ransomware.live/id/dGVycG9ydC5jb20ucHlAbHlueA==",
+          "discovered_date": "2025-12-21T07:49:31+00:00"
+        },
+        {
+          "name": "L.O. Trading",
+          "date": "2025-12-18T16:39:07+00:00",
+          "url": "https://www.ransomware.live/id/TC5PLiBUcmFkaW5nQGx5bng=",
+          "discovered_date": "2025-12-18T16:39:07+00:00"
+        },
+        {
+          "name": "www.ktlgroup.com",
+          "date": "2025-12-16T18:19:05+00:00",
+          "url": "https://www.ransomware.live/id/d3d3Lmt0bGdyb3VwLmNvbUBseW54",
+          "discovered_date": "2025-12-16T18:19:05+00:00"
+        },
+        {
+          "name": "www.advancedentdenver.com",
+          "date": "2025-12-16T17:22:09+00:00",
+          "url": "https://www.ransomware.live/id/d3d3LmFkdmFuY2VkZW50ZGVudmVyLmNvbUBseW54",
+          "discovered_date": "2025-12-16T17:22:09+00:00"
+        }
+      ],
+      "industries": [
+        "Not Found",
+        "Transportation/Logistics"
+      ],
+      "countries": [
+        "CA",
+        "PY",
+        "US"
+      ],
+      "trend": "stable",
+      "trend_percentage": 0,
+      "daily_counts": [
+        0,
+        2,
+        0,
+        2,
+        0,
+        0,
+        2
+      ]
+    },
+    {
       "name": "Thegentlemen",
       "count": 6,
       "victims": [
@@ -1220,102 +1282,6 @@
       ]
     },
     {
-      "name": "Lynx",
-      "count": 4,
-      "victims": [
-        {
-          "name": "L.O. Trading",
-          "date": "2025-12-18 16:39:07.812659",
-          "url": "http://lynxchatly4zludmhmi75jrwhycnoqvkxb4prohxmyzf4euf5gjxroad.onion/leaks/69442a5b2423bc3ce0e342ac",
-          "discovered_date": "2025-12-18T16:39:07.812659"
-        },
-        {
-          "name": "L.O. Trading",
-          "date": "2025-12-18T16:39:07+00:00",
-          "url": "https://www.ransomware.live/id/TC5PLiBUcmFkaW5nQGx5bng=",
-          "discovered_date": "2025-12-18T16:39:07+00:00"
-        },
-        {
-          "name": "www.ktlgroup.com",
-          "date": "2025-12-16T18:19:05+00:00",
-          "url": "https://www.ransomware.live/id/d3d3Lmt0bGdyb3VwLmNvbUBseW54",
-          "discovered_date": "2025-12-16T18:19:05+00:00"
-        },
-        {
-          "name": "www.advancedentdenver.com",
-          "date": "2025-12-16T17:22:09+00:00",
-          "url": "https://www.ransomware.live/id/d3d3LmFkdmFuY2VkZW50ZGVudmVyLmNvbUBseW54",
-          "discovered_date": "2025-12-16T17:22:09+00:00"
-        }
-      ],
-      "industries": [
-        "Not Found"
-      ],
-      "countries": [
-        "CA",
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        2,
-        0,
-        2,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Ms13089",
-      "count": 4,
-      "victims": [
-        {
-          "name": "dgpcommercialisti.it",
-          "date": "2025-12-18 09:55:42.738988",
-          "url": "http://msleakjir7pxbe6onlqe5uwgvdmy6nq4mnwfy7ojswbhnleenm77vgad.onion/DGP/index.html",
-          "discovered_date": "2025-12-18T09:55:42.738988"
-        },
-        {
-          "name": "uro.com",
-          "date": "2025-12-18 09:54:49.187306",
-          "url": "http://msleakjir7pxbe6onlqe5uwgvdmy6nq4mnwfy7ojswbhnleenm77vgad.onion/URO/index.html",
-          "discovered_date": "2025-12-18T09:54:49.187306"
-        },
-        {
-          "name": "dgpcommercialisti.it",
-          "date": "2025-12-18T09:55:42+00:00",
-          "url": "https://www.ransomware.live/id/ZGdwY29tbWVyY2lhbGlzdGkuaXRAbXMxMzA4OQ==",
-          "discovered_date": "2025-12-18T09:55:42+00:00"
-        },
-        {
-          "name": "uro.com",
-          "date": "2025-12-18T09:54:49+00:00",
-          "url": "https://www.ransomware.live/id/dXJvLmNvbUBtczEzMDg5",
-          "discovered_date": "2025-12-18T09:54:49+00:00"
-        }
-      ],
-      "industries": [
-        "Not Found"
-      ],
-      "countries": [
-        "DE",
-        "IT"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        4,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Coinbasecartel",
       "count": 3,
       "victims": [
@@ -1539,6 +1505,40 @@
       ],
       "countries": [
         "IN"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Ms13089",
+      "count": 2,
+      "victims": [
+        {
+          "name": "dgpcommercialisti.it",
+          "date": "2025-12-18T09:55:42+00:00",
+          "url": "https://www.ransomware.live/id/ZGdwY29tbWVyY2lhbGlzdGkuaXRAbXMxMzA4OQ==",
+          "discovered_date": "2025-12-18T09:55:42+00:00"
+        },
+        {
+          "name": "uro.com",
+          "date": "2025-12-18T09:54:49+00:00",
+          "url": "https://www.ransomware.live/id/dXJvLmNvbUBtczEzMDg5",
+          "discovered_date": "2025-12-18T09:54:49+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "DE",
+        "IT"
       ],
       "trend": "down",
       "trend_percentage": -5,
