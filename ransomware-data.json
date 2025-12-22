@@ -1,13 +1,19 @@
 {
-  "last_updated": "2025-12-21T12:40:15.348743",
+  "last_updated": "2025-12-22T01:49:44.951226",
   "period": "Last 7 days",
-  "total_groups": 35,
+  "total_groups": 34,
   "total_victims": 300,
   "groups": [
     {
       "name": "Qilin",
-      "count": 56,
+      "count": 53,
       "victims": [
+        {
+          "name": "Cedar Valley Services",
+          "date": "2025-12-21 23:14:59.611079",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=7adeac9a-3593-3d19-be7d-217c10e02be4",
+          "discovered_date": "2025-12-21T23:14:59.611079"
+        },
         {
           "name": "Busbusbus",
           "date": "2025-12-20 16:56:47.744093",
@@ -61,12 +67,6 @@
           "date": "2025-12-19 17:54:21.134004",
           "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=2e20bfff-6db8-35ab-8cac-e76f3bed5f24",
           "discovered_date": "2025-12-19T17:54:21.134004"
-        },
-        {
-          "name": "Melsing",
-          "date": "2025-12-19 14:46:32.079331",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=902a4e13-49c1-34e1-bc1b-d16e11f8e3fd",
-          "discovered_date": "2025-12-19T14:46:32.079331"
         }
       ],
       "industries": [
@@ -86,18 +86,18 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        7,
         0,
         7,
-        8,
+        6,
         16,
         18,
+        2,
         0
       ]
     },
     {
       "name": "Sinobi",
-      "count": 46,
+      "count": 48,
       "victims": [
         {
           "name": "Turnamics",
@@ -177,13 +177,13 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        0,
         16,
         0,
         22,
         6,
         2,
-        0
+        0,
+        2
       ]
     },
     {
@@ -267,11 +267,11 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        0,
         7,
         7,
         0,
         18,
+        0,
         0,
         0
       ]
@@ -355,101 +355,11 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        2,
         0,
         3,
         10,
         6,
         0,
-        0
-      ]
-    },
-    {
-      "name": "Devman",
-      "count": 18,
-      "victims": [
-        {
-          "name": "****s*oc****.com",
-          "date": "2025-12-19 19:44:49.767212",
-          "url": "http://devmanblggk7ddrtqj3tsocnayow3bwnozab2s4yhv4shpv6ueitjzid.onion",
-          "discovered_date": "2025-12-19T19:44:49.767212"
-        },
-        {
-          "name": "*n**e-ai",
-          "date": "2025-12-19 19:46:07.686873",
-          "url": "http://devmanblggk7ddrtqj3tsocnayow3bwnozab2s4yhv4shpv6ueitjzid.onion",
-          "discovered_date": "2025-12-19T19:46:07.686873"
-        },
-        {
-          "name": "consult*****.c**",
-          "date": "2025-12-19 19:47:25.242634",
-          "url": "http://devmanblggk7ddrtqj3tsocnayow3bwnozab2s4yhv4shpv6ueitjzid.onion",
-          "discovered_date": "2025-12-19T19:47:25.242634"
-        },
-        {
-          "name": "d*v***.cl",
-          "date": "2025-12-18 10:23:12.313776",
-          "url": "http://devmanblggk7ddrtqj3tsocnayow3bwnozab2s4yhv4shpv6ueitjzid.onion",
-          "discovered_date": "2025-12-18T10:23:12.313776"
-        },
-        {
-          "name": "Culinary Jet Concierge",
-          "date": "2025-12-19 17:24:04.973942",
-          "url": "http://devmanblggk7ddrtqj3tsocnayow3bwnozab2s4yhv4shpv6ueitjzid.onion",
-          "discovered_date": "2025-12-19T17:24:04.973942"
-        },
-        {
-          "name": "beausejourco-op.crs",
-          "date": "2025-12-18 10:24:28.384272",
-          "url": "http://devmanblggk7ddrtqj3tsocnayow3bwnozab2s4yhv4shpv6ueitjzid.onion",
-          "discovered_date": "2025-12-18T10:24:28.384272"
-        },
-        {
-          "name": "consult*****.c**",
-          "date": "2025-12-19T19:47:25+00:00",
-          "url": "https://www.ransomware.live/id/Y29uc3VsdCoqKioqLmMqKkBkZXZtYW4=",
-          "discovered_date": "2025-12-19T19:47:25+00:00"
-        },
-        {
-          "name": "*n**e-ai",
-          "date": "2025-12-19T19:46:07+00:00",
-          "url": "https://www.ransomware.live/id/Km4qKmUtYWlAZGV2bWFu",
-          "discovered_date": "2025-12-19T19:46:07+00:00"
-        },
-        {
-          "name": "****s*oc****.com",
-          "date": "2025-12-19T19:44:49+00:00",
-          "url": "https://www.ransomware.live/id/KioqKnMqb2MqKioqLmNvbUBkZXZtYW4=",
-          "discovered_date": "2025-12-19T19:44:49+00:00"
-        },
-        {
-          "name": "Culinary Jet Concierge",
-          "date": "2025-12-19T17:24:04+00:00",
-          "url": "https://www.ransomware.live/id/Q3VsaW5hcnkgSmV0IENvbmNpZXJnZUBkZXZtYW4=",
-          "discovered_date": "2025-12-19T17:24:04+00:00"
-        }
-      ],
-      "industries": [
-        "Agriculture and Food Production",
-        "Hospitality and Tourism",
-        "Not Found",
-        "Technology"
-      ],
-      "countries": [
-        "CA",
-        "CL",
-        "CN",
-        "ES",
-        "FR"
-      ],
-      "trend": "up",
-      "trend_percentage": 15,
-      "daily_counts": [
-        1,
-        3,
-        2,
-        4,
-        8,
         0,
         0
       ]
@@ -538,16 +448,28 @@
         0,
         0,
         0,
-        0,
         18,
+        0,
         0,
         0
       ]
     },
     {
       "name": "Incransom",
-      "count": 11,
+      "count": 16,
       "victims": [
+        {
+          "name": "Evercover",
+          "date": "2025-12-21 14:24:26.483441",
+          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6948023fbe52b3ea15221b9c",
+          "discovered_date": "2025-12-21T14:24:26.483441"
+        },
+        {
+          "name": "Talarico",
+          "date": "2025-12-21 15:13:29.180067",
+          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6948038dbe52b3ea15222e64",
+          "discovered_date": "2025-12-21T15:13:29.180067"
+        },
         {
           "name": "eagrealtyinternational.com",
           "date": "2025-12-19 19:54:46.046060",
@@ -573,40 +495,28 @@
           "discovered_date": "2025-12-19T18:19:15.968976"
         },
         {
+          "name": "Talarico",
+          "date": "2025-12-21T15:13:29+00:00",
+          "url": "https://www.ransomware.live/id/VGFsYXJpY29AaW5jcmFuc29t",
+          "discovered_date": "2025-12-21T15:13:29+00:00"
+        },
+        {
+          "name": "Evercover",
+          "date": "2025-12-21T14:24:26+00:00",
+          "url": "https://www.ransomware.live/id/RXZlcmNvdmVyQGluY3JhbnNvbQ==",
+          "discovered_date": "2025-12-21T14:24:26+00:00"
+        },
+        {
+          "name": "svlawus.com",
+          "date": "2025-12-21T12:10:34+00:00",
+          "url": "https://www.ransomware.live/id/c3ZsYXd1cy5jb21AaW5jcmFuc29t",
+          "discovered_date": "2025-12-21T12:10:34+00:00"
+        },
+        {
           "name": "eagrealtyinternational.com",
           "date": "2025-12-19T19:54:46+00:00",
           "url": "https://www.ransomware.live/id/ZWFncmVhbHR5aW50ZXJuYXRpb25hbC5jb21AaW5jcmFuc29t",
           "discovered_date": "2025-12-19T19:54:46+00:00"
-        },
-        {
-          "name": "glasserstv.com",
-          "date": "2025-12-19T18:19:15+00:00",
-          "url": "https://www.ransomware.live/id/Z2xhc3NlcnN0di5jb21AaW5jcmFuc29t",
-          "discovered_date": "2025-12-19T18:19:15+00:00"
-        },
-        {
-          "name": "Pacific Rim Mechanical",
-          "date": "2025-12-18T22:24:36+00:00",
-          "url": "https://www.ransomware.live/id/UGFjaWZpYyBSaW0gTWVjaGFuaWNhbEBpbmNyYW5zb20=",
-          "discovered_date": "2025-12-18T22:24:36+00:00"
-        },
-        {
-          "name": "deerfield.com (singulargenomics.com)",
-          "date": "2025-12-18T07:54:29+00:00",
-          "url": "https://www.ransomware.live/id/ZGVlcmZpZWxkLmNvbSAoc2luZ3VsYXJnZW5vbWljcy5jb20pQGluY3JhbnNvbQ==",
-          "discovered_date": "2025-12-18T07:54:29+00:00"
-        },
-        {
-          "name": "CVK Hotels & Resorts_Turkey",
-          "date": "2025-12-17T21:49:22+00:00",
-          "url": "https://www.ransomware.live/id/Q1ZLIEhvdGVscyAmIFJlc29ydHNfVHVya2V5QGluY3JhbnNvbQ==",
-          "discovered_date": "2025-12-17T21:49:22+00:00"
-        },
-        {
-          "name": "https://avenira.com/",
-          "date": "2025-12-16T23:51:35+00:00",
-          "url": "https://www.ransomware.live/id/aHR0cHM6Ly9hdmVuaXJhLmNvbS9AaW5jcmFuc29t",
-          "discovered_date": "2025-12-16T23:51:35+00:00"
         }
       ],
       "industries": [
@@ -616,25 +526,121 @@
       "countries": [
         "AU",
         "CA",
-        "TR",
-        "US"
+        "HU",
+        "IT",
+        "TR"
       ],
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        0,
         2,
         1,
         3,
         4,
         0,
-        1
+        6,
+        0
+      ]
+    },
+    {
+      "name": "Devman",
+      "count": 16,
+      "victims": [
+        {
+          "name": "****s*oc****.com",
+          "date": "2025-12-19 19:44:49.767212",
+          "url": "http://devmanblggk7ddrtqj3tsocnayow3bwnozab2s4yhv4shpv6ueitjzid.onion",
+          "discovered_date": "2025-12-19T19:44:49.767212"
+        },
+        {
+          "name": "*n**e-ai",
+          "date": "2025-12-19 19:46:07.686873",
+          "url": "http://devmanblggk7ddrtqj3tsocnayow3bwnozab2s4yhv4shpv6ueitjzid.onion",
+          "discovered_date": "2025-12-19T19:46:07.686873"
+        },
+        {
+          "name": "consult*****.c**",
+          "date": "2025-12-19 19:47:25.242634",
+          "url": "http://devmanblggk7ddrtqj3tsocnayow3bwnozab2s4yhv4shpv6ueitjzid.onion",
+          "discovered_date": "2025-12-19T19:47:25.242634"
+        },
+        {
+          "name": "Culinary Jet Concierge",
+          "date": "2025-12-19 17:24:04.973942",
+          "url": "http://devmanblggk7ddrtqj3tsocnayow3bwnozab2s4yhv4shpv6ueitjzid.onion",
+          "discovered_date": "2025-12-19T17:24:04.973942"
+        },
+        {
+          "name": "consult*****.c**",
+          "date": "2025-12-19T19:47:25+00:00",
+          "url": "https://www.ransomware.live/id/Y29uc3VsdCoqKioqLmMqKkBkZXZtYW4=",
+          "discovered_date": "2025-12-19T19:47:25+00:00"
+        },
+        {
+          "name": "*n**e-ai",
+          "date": "2025-12-19T19:46:07+00:00",
+          "url": "https://www.ransomware.live/id/Km4qKmUtYWlAZGV2bWFu",
+          "discovered_date": "2025-12-19T19:46:07+00:00"
+        },
+        {
+          "name": "****s*oc****.com",
+          "date": "2025-12-19T19:44:49+00:00",
+          "url": "https://www.ransomware.live/id/KioqKnMqb2MqKioqLmNvbUBkZXZtYW4=",
+          "discovered_date": "2025-12-19T19:44:49+00:00"
+        },
+        {
+          "name": "Culinary Jet Concierge",
+          "date": "2025-12-19T17:24:04+00:00",
+          "url": "https://www.ransomware.live/id/Q3VsaW5hcnkgSmV0IENvbmNpZXJnZUBkZXZtYW4=",
+          "discovered_date": "2025-12-19T17:24:04+00:00"
+        },
+        {
+          "name": "beausejourco-op.crs",
+          "date": "2025-12-18T10:24:28+00:00",
+          "url": "https://www.ransomware.live/id/YmVhdXNlam91cmNvLW9wLmNyc0BkZXZtYW4=",
+          "discovered_date": "2025-12-18T10:24:28+00:00"
+        },
+        {
+          "name": "d*v***.cl",
+          "date": "2025-12-18T10:23:12+00:00",
+          "url": "https://www.ransomware.live/id/ZCp2KioqLmNsQGRldm1hbg==",
+          "discovered_date": "2025-12-18T10:23:12+00:00"
+        }
+      ],
+      "industries": [
+        "Hospitality and Tourism",
+        "Not Found",
+        "Technology"
+      ],
+      "countries": [
+        "CA",
+        "CL",
+        "CN",
+        "ES",
+        "FR"
+      ],
+      "trend": "up",
+      "trend_percentage": 15,
+      "daily_counts": [
+        3,
+        2,
+        2,
+        8,
+        0,
+        0,
+        0
       ]
     },
     {
       "name": "Dragonforce",
-      "count": 10,
+      "count": 12,
       "victims": [
+        {
+          "name": "Váhostav",
+          "date": "2025-12-21 20:49:38.659007",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=a3343b56-0067-4d03-bf5e-2e316225a8b4",
+          "discovered_date": "2025-12-21T20:49:38.659007"
+        },
         {
           "name": "Colonial Metals",
           "date": "2025-12-19 14:15:36.824336",
@@ -646,6 +652,12 @@
           "date": "2025-12-20 14:51:20.329768",
           "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=1e4a1771-ca8e-498c-a961-6e20180c091d",
           "discovered_date": "2025-12-20T14:51:20.329768"
+        },
+        {
+          "name": "Váhostav",
+          "date": "2025-12-21T20:49:38+00:00",
+          "url": "https://www.ransomware.live/id/VsOhaG9zdGF2QGRyYWdvbmZvcmNl",
+          "discovered_date": "2025-12-21T20:49:38+00:00"
         },
         {
           "name": "Unipres Alabama Inc.",
@@ -682,113 +694,25 @@
           "date": "2025-12-16T12:51:43+00:00",
           "url": "https://www.ransomware.live/id/TGlmdFBST0BkcmFnb25mb3JjZQ==",
           "discovered_date": "2025-12-16T12:51:43+00:00"
-        },
-        {
-          "name": "GPC Industries",
-          "date": "2025-12-16T12:50:40+00:00",
-          "url": "https://www.ransomware.live/id/R1BDIEluZHVzdHJpZXNAZHJhZ29uZm9yY2U=",
-          "discovered_date": "2025-12-16T12:50:40+00:00"
-        },
-        {
-          "name": "McKee-Pownall Equine Services",
-          "date": "2025-12-16T11:57:03+00:00",
-          "url": "https://www.ransomware.live/id/TWNLZWUtUG93bmFsbCBFcXVpbmUgU2VydmljZXNAZHJhZ29uZm9yY2U=",
-          "discovered_date": "2025-12-16T11:57:03+00:00"
         }
       ],
       "industries": [
+        "Construction",
         "Manufacturing"
       ],
       "countries": [
         "CA",
         "HK",
         "N/A",
+        "SK",
         "US"
       ],
-      "trend": "stable",
-      "trend_percentage": 0,
+      "trend": "up",
+      "trend_percentage": 15,
       "daily_counts": [
-        0,
         5,
         1,
         0,
-        2,
-        2,
-        0
-      ]
-    },
-    {
-      "name": "Handala",
-      "count": 9,
-      "victims": [
-        {
-          "name": "No Place to Hide: Unmasking the Masterminds Behind War Drones",
-          "date": "2025-12-20 10:55:04.186924",
-          "url": "http://vmjfieomxhnfjba57sd6jjws2ogvowjgxhhfglsikqvvrnrajbmpxqqd.onion/?p=581",
-          "discovered_date": "2025-12-20T10:55:04.186924"
-        },
-        {
-          "name": "The Day of Reckoning Awaits the Child-Killers",
-          "date": "2025-12-19 07:59:37.166385",
-          "url": "http://vmjfieomxhnfjba57sd6jjws2ogvowjgxhhfglsikqvvrnrajbmpxqqd.onion/?p=577",
-          "discovered_date": "2025-12-19T07:59:37.166385"
-        },
-        {
-          "name": "The 200,000 Message Bombshell: Bennett’s Game is Over",
-          "date": "2025-12-18 11:54:19.324582",
-          "url": "http://vmjfieomxhnfjba57sd6jjws2ogvowjgxhhfglsikqvvrnrajbmpxqqd.onion/?p=573",
-          "discovered_date": "2025-12-18T11:54:19.324582"
-        },
-        {
-          "name": "No Place to Hide: Unmasking the Masterminds Behind War Drones",
-          "date": "2025-12-20T10:55:04+00:00",
-          "url": "https://www.ransomware.live/id/Tm8gUGxhY2UgdG8gSGlkZTogVW5tYXNraW5nIHRoZSBNYXN0ZXJtaW5kcyBCZWhpbmQgV2FyIERyb25lc0BoYW5kYWxh",
-          "discovered_date": "2025-12-20T10:55:04+00:00"
-        },
-        {
-          "name": "The Day of Reckoning Awaits the Child-Killers",
-          "date": "2025-12-19T07:59:37+00:00",
-          "url": "https://www.ransomware.live/id/VGhlIERheSBvZiBSZWNrb25pbmcgQXdhaXRzIHRoZSBDaGlsZC1LaWxsZXJzQGhhbmRhbGE=",
-          "discovered_date": "2025-12-19T07:59:37+00:00"
-        },
-        {
-          "name": "The 200,000 Message Bombshell: Bennett’s Game is Over",
-          "date": "2025-12-18T11:54:19+00:00",
-          "url": "https://www.ransomware.live/id/VGhlIDIwMCwwMDAgTWVzc2FnZSBCb21ic2hlbGw6IEJlbm5ldHTigJlzIEdhbWUgaXMgT3ZlckBoYW5kYWxh",
-          "discovered_date": "2025-12-18T11:54:19+00:00"
-        },
-        {
-          "name": "Naftali Bennett Chats",
-          "date": "2025-12-17T18:46:09+00:00",
-          "url": "https://www.ransomware.live/id/TmFmdGFsaSBCZW5uZXR0IENoYXRzQGhhbmRhbGE=",
-          "discovered_date": "2025-12-17T18:46:09+00:00"
-        },
-        {
-          "name": "Operation Octopus: Naftali Bennett",
-          "date": "2025-12-17T11:43:07+00:00",
-          "url": "https://www.ransomware.live/id/T3BlcmF0aW9uIE9jdG9wdXM6IE5hZnRhbGkgQmVubmV0dEBoYW5kYWxh",
-          "discovered_date": "2025-12-17T11:43:07+00:00"
-        },
-        {
-          "name": "Caught by the Octopus: Bennett’s Darkest Hour",
-          "date": "2025-12-17T05:51:51+00:00",
-          "url": "https://www.ransomware.live/id/Q2F1Z2h0IGJ5IHRoZSBPY3RvcHVzOiBCZW5uZXR04oCZcyBEYXJrZXN0IEhvdXJAaGFuZGFsYQ==",
-          "discovered_date": "2025-12-17T05:51:51+00:00"
-        }
-      ],
-      "industries": [
-        "Not Found"
-      ],
-      "countries": [
-        "IL",
-        "N/A"
-      ],
-      "trend": "stable",
-      "trend_percentage": 0,
-      "daily_counts": [
-        0,
-        0,
-        3,
         2,
         2,
         2,
@@ -860,12 +784,84 @@
       "trend": "stable",
       "trend_percentage": 0,
       "daily_counts": [
-        0,
         4,
         0,
         0,
         0,
         4,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Handala",
+      "count": 8,
+      "victims": [
+        {
+          "name": "No Place to Hide: Unmasking the Masterminds Behind War Drones",
+          "date": "2025-12-20 10:55:04.186924",
+          "url": "http://vmjfieomxhnfjba57sd6jjws2ogvowjgxhhfglsikqvvrnrajbmpxqqd.onion/?p=581",
+          "discovered_date": "2025-12-20T10:55:04.186924"
+        },
+        {
+          "name": "The Day of Reckoning Awaits the Child-Killers",
+          "date": "2025-12-19 07:59:37.166385",
+          "url": "http://vmjfieomxhnfjba57sd6jjws2ogvowjgxhhfglsikqvvrnrajbmpxqqd.onion/?p=577",
+          "discovered_date": "2025-12-19T07:59:37.166385"
+        },
+        {
+          "name": "No Place to Hide: Unmasking the Masterminds Behind War Drones",
+          "date": "2025-12-20T10:55:04+00:00",
+          "url": "https://www.ransomware.live/id/Tm8gUGxhY2UgdG8gSGlkZTogVW5tYXNraW5nIHRoZSBNYXN0ZXJtaW5kcyBCZWhpbmQgV2FyIERyb25lc0BoYW5kYWxh",
+          "discovered_date": "2025-12-20T10:55:04+00:00"
+        },
+        {
+          "name": "The Day of Reckoning Awaits the Child-Killers",
+          "date": "2025-12-19T07:59:37+00:00",
+          "url": "https://www.ransomware.live/id/VGhlIERheSBvZiBSZWNrb25pbmcgQXdhaXRzIHRoZSBDaGlsZC1LaWxsZXJzQGhhbmRhbGE=",
+          "discovered_date": "2025-12-19T07:59:37+00:00"
+        },
+        {
+          "name": "The 200,000 Message Bombshell: Bennett’s Game is Over",
+          "date": "2025-12-18T11:54:19+00:00",
+          "url": "https://www.ransomware.live/id/VGhlIDIwMCwwMDAgTWVzc2FnZSBCb21ic2hlbGw6IEJlbm5ldHTigJlzIEdhbWUgaXMgT3ZlckBoYW5kYWxh",
+          "discovered_date": "2025-12-18T11:54:19+00:00"
+        },
+        {
+          "name": "Naftali Bennett Chats",
+          "date": "2025-12-17T18:46:09+00:00",
+          "url": "https://www.ransomware.live/id/TmFmdGFsaSBCZW5uZXR0IENoYXRzQGhhbmRhbGE=",
+          "discovered_date": "2025-12-17T18:46:09+00:00"
+        },
+        {
+          "name": "Operation Octopus: Naftali Bennett",
+          "date": "2025-12-17T11:43:07+00:00",
+          "url": "https://www.ransomware.live/id/T3BlcmF0aW9uIE9jdG9wdXM6IE5hZnRhbGkgQmVubmV0dEBoYW5kYWxh",
+          "discovered_date": "2025-12-17T11:43:07+00:00"
+        },
+        {
+          "name": "Caught by the Octopus: Bennett’s Darkest Hour",
+          "date": "2025-12-17T05:51:51+00:00",
+          "url": "https://www.ransomware.live/id/Q2F1Z2h0IGJ5IHRoZSBPY3RvcHVzOiBCZW5uZXR04oCZcyBEYXJrZXN0IEhvdXJAaGFuZGFsYQ==",
+          "discovered_date": "2025-12-17T05:51:51+00:00"
+        }
+      ],
+      "industries": [
+        "Not Found"
+      ],
+      "countries": [
+        "IL",
+        "N/A"
+      ],
+      "trend": "stable",
+      "trend_percentage": 0,
+      "daily_counts": [
+        0,
+        3,
+        1,
+        2,
+        2,
+        0,
         0
       ]
     },
@@ -939,8 +935,8 @@
         0,
         0,
         0,
-        0,
         8,
+        0,
         0,
         0
       ]
@@ -998,13 +994,13 @@
       "trend": "stable",
       "trend_percentage": 0,
       "daily_counts": [
-        0,
         2,
         0,
         2,
         0,
         0,
-        2
+        2,
+        0
       ]
     },
     {
@@ -1062,8 +1058,8 @@
         0,
         0,
         0,
-        0,
         6,
+        0,
         0,
         0
       ]
@@ -1121,11 +1117,11 @@
       "trend": "stable",
       "trend_percentage": 0,
       "daily_counts": [
-        1,
         0,
         1,
         0,
         4,
+        0,
         0,
         0
       ]
@@ -1176,11 +1172,11 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        1,
         2,
         0,
         0,
         2,
+        0,
         0,
         0
       ]
@@ -1224,11 +1220,11 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         2,
         0,
         0,
         2,
+        0,
         0,
         0
       ]
@@ -1275,8 +1271,8 @@
         0,
         0,
         0,
-        0,
         4,
+        0,
         0,
         0
       ]
@@ -1314,12 +1310,12 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         1,
         0,
         0,
         0,
         2,
+        0,
         0
       ]
     },
@@ -1356,11 +1352,11 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        1,
         0,
         0,
         0,
         2,
+        0,
         0,
         0
       ]
@@ -1397,53 +1393,11 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        1,
         0,
         0,
         2,
         0,
         0,
-        0
-      ]
-    },
-    {
-      "name": "Ransomhouse",
-      "count": 3,
-      "victims": [
-        {
-          "name": "Lawsoft",
-          "date": "2025-12-19 10:27:21.083714",
-          "url": "http://zohlm7ahjwegcedoz7lrdrti7bvpofymcayotp744qhx6gjmxbuo2yid.onion/r/d613663d20bbf739005d2d1a05dc92eb73db7d2b",
-          "discovered_date": "2025-12-19T10:27:21.083714"
-        },
-        {
-          "name": "Lawsoft",
-          "date": "2025-12-19T10:27:21+00:00",
-          "url": "https://www.ransomware.live/id/TGF3c29mdEByYW5zb21ob3VzZQ==",
-          "discovered_date": "2025-12-19T10:27:21+00:00"
-        },
-        {
-          "name": "Diaz Gill Medicina Laboratorial S.A.",
-          "date": "2025-12-15T06:45:59+00:00",
-          "url": "https://www.ransomware.live/id/RGlheiBHaWxsIE1lZGljaW5hIExhYm9yYXRvcmlhbCBTLkEuQHJhbnNvbWhvdXNl",
-          "discovered_date": "2025-12-15T06:45:59+00:00"
-        }
-      ],
-      "industries": [
-        "Not Found"
-      ],
-      "countries": [
-        "BR",
-        "N/A"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        1,
-        0,
-        0,
-        0,
-        2,
         0,
         0
       ]
@@ -1477,8 +1431,8 @@
         0,
         0,
         0,
-        0,
         2,
+        0,
         0,
         0
       ]
@@ -1505,6 +1459,41 @@
       ],
       "countries": [
         "IN"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Ransomhouse",
+      "count": 2,
+      "victims": [
+        {
+          "name": "Lawsoft",
+          "date": "2025-12-19 10:27:21.083714",
+          "url": "http://zohlm7ahjwegcedoz7lrdrti7bvpofymcayotp744qhx6gjmxbuo2yid.onion/r/d613663d20bbf739005d2d1a05dc92eb73db7d2b",
+          "discovered_date": "2025-12-19T10:27:21.083714"
+        },
+        {
+          "name": "Lawsoft",
+          "date": "2025-12-19T10:27:21+00:00",
+          "url": "https://www.ransomware.live/id/TGF3c29mdEByYW5zb21ob3VzZQ==",
+          "discovered_date": "2025-12-19T10:27:21+00:00"
+        }
+      ],
+      "industries": [
+        "Not Found"
+      ],
+      "countries": [
+        "N/A"
       ],
       "trend": "down",
       "trend_percentage": -5,
@@ -1545,8 +1534,8 @@
       "daily_counts": [
         0,
         0,
-        0,
         2,
+        0,
         0,
         0,
         0
@@ -1577,41 +1566,8 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        1,
         0,
         1,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Obscura",
-      "count": 2,
-      "victims": [
-        {
-          "name": "cle**rp**er.eu",
-          "date": "2025-12-15T18:39:47+00:00",
-          "url": "https://www.ransomware.live/id/Y2xlKipycCoqZXIuZXVAb2JzY3VyYQ==",
-          "discovered_date": "2025-12-15T18:39:47+00:00"
-        },
-        {
-          "name": "k*m**w.com",
-          "date": "2025-12-15T05:46:46+00:00",
-          "url": "https://www.ransomware.live/id/ayptKip3LmNvbUBvYnNjdXJh",
-          "discovered_date": "2025-12-15T05:46:46+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "N/A"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        2,
-        0,
         0,
         0,
         0,
@@ -1643,7 +1599,7 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        2,
+        0,
         0,
         0,
         0,
@@ -1672,8 +1628,8 @@
       "daily_counts": [
         0,
         0,
-        0,
         1,
+        0,
         0,
         0,
         0
@@ -1698,8 +1654,8 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         1,
+        0,
         0,
         0,
         0,
@@ -1725,8 +1681,8 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         1,
+        0,
         0,
         0,
         0,
@@ -1751,8 +1707,8 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         1,
+        0,
         0,
         0,
         0,
@@ -1778,8 +1734,8 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         1,
+        0,
         0,
         0,
         0,
@@ -1805,8 +1761,35 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Obscura",
+      "count": 1,
+      "victims": [
+        {
+          "name": "cle**rp**er.eu",
+          "date": "2025-12-15T18:39:47+00:00",
+          "url": "https://www.ransomware.live/id/Y2xlKipycCoqZXIuZXVAb2JzY3VyYQ==",
+          "discovered_date": "2025-12-15T18:39:47+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "N/A"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
         0,
         0,
         0,
@@ -1832,34 +1815,7 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        1,
         0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Killsec",
-      "count": 1,
-      "victims": [
-        {
-          "name": "republica federative do brasil",
-          "date": "2025-12-15T03:19:33+00:00",
-          "url": "https://www.ransomware.live/id/cmVwdWJsaWNhIGZlZGVyYXRpdmUgZG8gYnJhc2lsQGtpbGxzZWM=",
-          "discovered_date": "2025-12-15T03:19:33+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "BR"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        1,
         0,
         0,
         0,
