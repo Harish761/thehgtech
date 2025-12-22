@@ -5,6 +5,45 @@
   <!-- ========== LATEST NEWS ARTICLES (Last 48 hours for Google News) ========== -->
   
   <url>
+    <loc>https://thehgtech.com/articles/watchguard-firebox-zero-day-2025.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-22T00:00:00+05:30</news:publication_date>
+      <news:title>WatchGuard Firebox Zero-Day CVE-2025-14733 Under Active Exploitation</news:title>
+      <news:keywords>WatchGuard, Firebox, CVE-2025-14733, zero-day, VPN vulnerability, CISA KEV</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/doj-atm-jackpotting-ploutus-2025.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-22T00:00:00+05:30</news:publication_date>
+      <news:title>DOJ Charges 54 in Massive ATM Jackpotting Scheme Using Ploutus Malware</news:title>
+      <news:keywords>ATM jackpotting, Ploutus malware, DOJ, Tren de Aragua, ATM fraud</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/north-korea-crypto-theft-2025.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-22T00:00:00+05:30</news:publication_date>
+      <news:title>North Korea Stole $2.02 Billion in Cryptocurrency in 2025</news:title>
+      <news:keywords>North Korea, cryptocurrency, Lazarus Group, DPRK hackers, crypto theft</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://thehgtech.com/articles/700credit-breach-2025.html</loc>
     <news:news>
       <news:publication>
