@@ -108,6 +108,7 @@ def fetch_nvd_critical_cves(days=7, max_results=50) -> List[Dict]:
             vendor = "Unknown"
             product = "Unknown"
             
+            # Method 1: Try CPE configuration data
             if cve_data.get('configurations'):
                 try:
                     cpe_match = cve_data['configurations'][0]['nodes'][0]['cpeMatch'][0]
@@ -117,6 +118,92 @@ def fetch_nvd_critical_cves(days=7, max_results=50) -> List[Dict]:
                         product = cpe_parts[4].replace('_', ' ').title()
                 except:
                     pass
+            
+            # Method 2: If still unknown, try to extract from description
+            if vendor == "Unknown" or product == "Unknown":
+                descriptions = cve_data.get('descriptions', [])
+                desc_text = descriptions[0]['value'].lower() if descriptions else ""
+                
+                # Known vendors to look for in descriptions
+                known_vendors = {
+                    'microsoft': 'Microsoft', 'windows': 'Microsoft', 'azure': 'Microsoft',
+                    'google': 'Google', 'chrome': 'Google', 'android': 'Google',
+                    'apple': 'Apple', 'ios': 'Apple', 'macos': 'Apple', 'webkit': 'Apple',
+                    'cisco': 'Cisco', 'fortinet': 'Fortinet', 'fortigate': 'Fortinet',
+                    'palo alto': 'Palo Alto Networks', 'pan-os': 'Palo Alto Networks',
+                    'adobe': 'Adobe', 'oracle': 'Oracle', 'vmware': 'VMware',
+                    'linux': 'Linux', 'kernel': 'Linux', 'ubuntu': 'Canonical',
+                    'red hat': 'Red Hat', 'redhat': 'Red Hat',
+                    'apache': 'Apache', 'nginx': 'Nginx', 'wordpress': 'WordPress',
+                    'drupal': 'Drupal', 'joomla': 'Joomla', 'jenkins': 'Jenkins',
+                    'docker': 'Docker', 'kubernetes': 'Kubernetes',
+                    'samsung': 'Samsung', 'huawei': 'Huawei', 'zyxel': 'Zyxel',
+                    'netgear': 'Netgear', 'd-link': 'D-Link', 'dlink': 'D-Link',
+                    'tp-link': 'TP-Link', 'tplink': 'TP-Link', 'linksys': 'Linksys',
+                    'openssl': 'OpenSSL', 'openssh': 'OpenSSH',
+                    'postgresql': 'PostgreSQL', 'mysql': 'MySQL', 'mongodb': 'MongoDB',
+                    'atlassian': 'Atlassian', 'confluence': 'Atlassian', 'jira': 'Atlassian',
+                    'sap': 'SAP', 'ibm': 'IBM', 'dell': 'Dell', 'hp ': 'HP', 'hpe ': 'HPE',
+                    'sophos': 'Sophos', 'symantec': 'Symantec', 'mcafee': 'McAfee',
+                    'trend micro': 'Trend Micro', 'kaspersky': 'Kaspersky',
+                    'sonicwall': 'SonicWall', 'watchguard': 'WatchGuard',
+                    'zoom': 'Zoom', 'slack': 'Slack', 'teams': 'Microsoft',
+                    'gitlab': 'GitLab', 'github': 'GitHub', 'bitbucket': 'Atlassian',
+                    'tenda': 'Tenda', 'hikvision': 'Hikvision', 'dahua': 'Dahua',
+                    'qnap': 'QNAP', 'synology': 'Synology', 'buffalo': 'Buffalo',
+                    'juniper': 'Juniper', 'arista': 'Arista', 'aruba': 'Aruba',
+                    'f5 ': 'F5', 'big-ip': 'F5', 'citrix': 'Citrix',
+                    'ivanti': 'Ivanti', 'pulse secure': 'Ivanti',
+                    'zoho': 'Zoho', 'manageengine': 'ManageEngine',
+                    'mitel': 'Mitel', 'avaya': 'Avaya', 'asterisk': 'Asterisk',
+                    'nextcloud': 'Nextcloud', 'owncloud': 'ownCloud',
+                    'veeam': 'Veeam', 'acronis': 'Acronis', 'veritas': 'Veritas',
+                    # Additional IoT and software vendors
+                    'totolink': 'TOTOLINK', 'ragic': 'Ragic', 'innovastudio': 'InnovaStudio',
+                    'wysiwyg': 'InnovaStudio', 'ever gauzy': 'Ever Gauzy',
+                    'restajet': 'Restajet', 'commax': 'Commax', 'imou': 'Imou',
+                    'reolink': 'Reolink', 'foscam': 'Foscam', 'amcrest': 'Amcrest',
+                    'ubiquiti': 'Ubiquiti', 'unifi': 'Ubiquiti', 'mikrotik': 'MikroTik',
+                    'openwrt': 'OpenWrt', 'ddwrt': 'DD-WRT', 'asuswrt': 'ASUS',
+                    'asus': 'ASUS', 'acer': 'Acer', 'lenovo': 'Lenovo',
+                    'intel': 'Intel', 'amd': 'AMD', 'nvidia': 'NVIDIA',
+                    'elasticsearch': 'Elastic', 'kibana': 'Elastic', 'logstash': 'Elastic',
+                    'splunk': 'Splunk', 'grafana': 'Grafana', 'prometheus': 'Prometheus',
+                    'rabbitmq': 'RabbitMQ', 'redis': 'Redis', 'memcached': 'Memcached',
+                    'nginx': 'Nginx', 'haproxy': 'HAProxy', 'traefik': 'Traefik',
+                    'spring': 'VMware', 'tomcat': 'Apache', 'struts': 'Apache',
+                    'log4j': 'Apache', 'weblogic': 'Oracle', 'websphere': 'IBM',
+                    'solarwinds': 'SolarWinds', 'nagios': 'Nagios', 'zabbix': 'Zabbix',
+                    'cacti': 'Cacti', 'prtg': 'Paessler', 'datadog': 'Datadog',
+                    'php': 'PHP', 'python': 'Python', 'nodejs': 'Node.js', 'ruby': 'Ruby',
+                    'laravel': 'Laravel', 'django': 'Django', 'flask': 'Flask',
+                    'react': 'Meta', 'angular': 'Google', 'vue': 'Vue.js',
+                }
+                
+                for keyword, vendor_name in known_vendors.items():
+                    if keyword in desc_text:
+                        vendor = vendor_name
+                        break
+                
+                # Try to extract product from description patterns
+                if product == "Unknown":
+                    import re
+                    # Pattern: "vulnerability in [Product]" or "[Product] version"
+                    product_patterns = [
+                        r'vulnerability in ([A-Z][a-zA-Z0-9\-\.]+)',
+                        r'flaw in ([A-Z][a-zA-Z0-9\-\.]+)',
+                        r'affects? ([A-Z][a-zA-Z0-9\-\.]+)',
+                        r'^([A-Z][a-zA-Z0-9\-\.]+)\s+(?:before|version|v\d)',
+                    ]
+                    original_desc = descriptions[0]['value'] if descriptions else ""
+                    for pattern in product_patterns:
+                        match = re.search(pattern, original_desc)
+                        if match:
+                            extracted = match.group(1)
+                            # Filter out common false positives
+                            if extracted.lower() not in ['a', 'an', 'the', 'this', 'that', 'some', 'certain']:
+                                product = extracted
+                                break
             
             # Get description
             descriptions = cve_data.get('descriptions', [])
