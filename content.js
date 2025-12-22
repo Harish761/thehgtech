@@ -4,53 +4,53 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Dec 21 2025",
-            "title": "Iranian Infy APT Group Returns with New Malware Campaign",
-            "content": "The Infy Advanced Persistent Threat (APT) group, also known as Prince of Persia, has resurfaced with new malware activities targeting multiple countries. After a hiatus of nearly five years, the group is now deploying malware aimed at victims in Sweden, the Netherlands, and Turkey. This resurgence involves sophisticated tactics that suggest an evolution in their capabilities. Security researchers have observed a significant increase in the scale of their operations, indicating a potential uptick in threat levels. Organizations in the affected regions should enhance their security measures and remain vigilant for signs of compromise.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/12/iranian-infy-apt-resurfaces-with-new.html"
+            "date": "Dec 22 2025",
+            "title": "ISC Stormcast Highlights Recent Cybersecurity Trends and Threats",
+            "content": "The SANS Internet Storm Center has released its latest Stormcast podcast, providing insights into the current cybersecurity landscape. The discussion includes recent threat trends and key vulnerabilities affecting various sectors. The InfoCON level remains at green, indicating no immediate widespread threats. Security professionals are advised to stay informed about evolving attack vectors and to apply patches promptly. The podcast serves as a valuable resource for keeping up-to-date with the latest cybersecurity developments and best practices. Listening to such updates can help organizations better prepare for potential security challenges.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32588"
         },
         {
-            "date": "Dec 19 2025",
-            "title": "Microsoft Teams Outage Causes Message Delays for Thousands",
-            "content": "Microsoft Teams users are experiencing widespread issues with message delays, impacting communication for thousands of users globally. The disruption has been confirmed by Microsoft, which is actively investigating the root cause. The service interruption highlights the critical dependency many organizations have on cloud-based collaboration tools. While Microsoft works on a resolution, users are advised to monitor the official Microsoft 365 Service Health page for updates. This incident underscores the importance of having contingency plans for communication disruptions in enterprise environments.",
+            "date": "Dec 20 2025",
+            "title": "RansomHouse Enhances Ransomware with Multi-Layered Encryption",
+            "content": "RansomHouse, a notorious ransomware-as-a-service (RaaS) operation, has upgraded its encryption techniques, moving from a simple single-phase method to a more sophisticated multi-layered approach. This enhancement complicates decryption efforts and increases the difficulty of recovering data without paying the ransom. The upgrade poses a heightened threat to businesses and individuals, as it can lead to prolonged downtime and increased ransom demands. Security experts recommend organizations strengthen their defenses by implementing robust backup strategies and employee training on ransomware avoidance. The evolution of RansomHouse&#x27;s tactics underscores the growing complexity of ransomware threats.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-teams-is-down-and-messages-are-delayed/"
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/ransomhouse-upgrades-encryption-with-multi-layered-data-processing/"
         },
         {
-            "date": "Dec 19 2025",
-            "title": "Global Initiative Launched to Combat Online Scams at Thailand Conference",
-            "content": "An international initiative to tackle online scams has been launched at a conference in Bangkok, with participation from members of the Association of Southeast Asian Nations (ASEAN). This effort aims to strengthen cross-border collaboration in dismantling scam networks, which have been increasingly targeting individuals and businesses worldwide. The initiative follows similar pledges made by ASEAN countries in recent months, reflecting a growing recognition of the need for coordinated action against cybercrime. Stakeholders are encouraged to support and contribute to these efforts to enhance global cybersecurity resilience.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/thailand-conference-launches-international-initiative-to-fight-online-scams/"
-        },
-        {
-            "date": "Dec 19 2025",
-            "title": "Nigerian Authorities Arrest Developers of Raccoon0365 Phishing Platform",
-            "content": "Nigerian police have apprehended three individuals allegedly involved in the development and operation of the Raccoon0365 phishing-as-a-service platform. This service targeted Microsoft 365 users by facilitating cyberattacks through phishing campaigns. The arrests mark a significant step in disrupting cybercriminal activities originating from Nigeria. Law enforcement agencies worldwide are increasingly focusing on dismantling such platforms to protect users from credential theft and data breaches. Organizations using Microsoft 365 are advised to implement robust security measures, including multi-factor authentication, to mitigate phishing risks.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/nigeria-arrests-dev-of-microsoft-365-raccoon0365-phishing-platform/"
-        },
-        {
-            "date": "Dec 19 2025",
-            "title": "Russian Hackers Exploit Microsoft 365 Device Code in Phishing Campaigns",
-            "content": "A Russia-linked hacking group is conducting a phishing campaign using device code authentication workflows to compromise Microsoft 365 accounts. This campaign, active since September 2025, is being tracked by Proofpoint under the moniker &quot;TA4567.&quot; The attackers exploit this method to steal credentials and perform account takeovers, posing a significant threat to businesses relying on Microsoft 365. Organizations are urged to review their authentication processes and consider adopting additional security measures, such as conditional access policies and enhanced monitoring, to protect against these sophisticated attacks.",
+            "date": "Dec 20 2025",
+            "title": "DOJ Charges 54 Individuals in ATM Jackpotting Scheme Using Ploutus Malware",
+            "content": "The U.S. Department of Justice has indicted 54 individuals involved in a sophisticated ATM jackpotting scheme that leveraged the Ploutus malware. This operation, which targeted ATMs across the United States, resulted in multi-million dollar losses. Ploutus malware enables attackers to force ATMs to dispense cash on command, exploiting vulnerabilities in ATM software. The indictment highlights the ongoing threat of financial cybercrime and the need for improved security measures in banking infrastructure. Financial institutions are urged to update their ATM software and conduct regular security audits to mitigate such risks.",
             "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/12/russia-linked-hackers-use-microsoft-365.html"
+            "sourceUrl": "https://thehackernews.com/2025/12/us-doj-charges-54-in-atm-jackpotting.html"
         },
         {
             "date": "Dec 19 2025",
-            "title": "WatchGuard Patches Critical Zero-Day Vulnerability in Firebox Appliances",
-            "content": "WatchGuard has released an urgent patch for a critical vulnerability in its Firebox firewall appliances, identified as CVE-2025-14733. This Out-of-bounds Write flaw, with a CVSS score of 9.3, affects the iked process and is currently being exploited by threat actors. The vulnerability allows attackers to potentially take over affected devices, posing a severe risk to network security. Organizations using Firebox appliances should immediately apply the patch to mitigate the threat. This incident highlights the ongoing need for timely vulnerability management in safeguarding critical infrastructure.",
+            "title": "Ukrainian National Faces Jail for Nefilim Ransomware Attacks",
+            "content": "A 35-year-old Ukrainian national has pleaded guilty to participating in Nefilim ransomware attacks, facing a potential 10-year prison sentence. Authorities have announced an $11 million reward for information leading to the capture of his alleged co-conspirator, who remains at large. The Nefilim ransomware has been responsible for numerous high-profile attacks, encrypting victims&#x27; data and demanding significant ransoms. This case underscores the international nature of cybercrime and the challenges in apprehending all involved parties. Organizations are advised to enhance their cybersecurity measures to prevent falling victim to such attacks.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/nefilim-ransomware-artem-stryzhak-guilty-plea/"
+        },
+        {
+            "date": "Dec 19 2025",
+            "title": "Iranian APT Prince of Persia Resurfaces with New Malware",
+            "content": "The Iranian threat actor known as Prince of Persia has re-emerged with new malware and command-and-control (C2) infrastructure after a period of dormancy since 2022. Researchers believe this group is linked to the Iranian government and has previously been involved in espionage activities. The resurgence of this advanced persistent threat (APT) group poses a renewed risk to national security and critical infrastructure. Security professionals should monitor for indicators of compromise associated with this group and strengthen defenses against potential intrusions. The reappearance of Prince of Persia highlights the persistent threats posed by state-sponsored actors.",
             "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4109884/watchguard-fixes-critical-zero-day-allowing-firewall-takeover.html"
+            "sourceUrl": "https://www.csoonline.com/article/4109985/iranian-apt-prince-of-persia-returns-with-new-malware-and-c2-infrastructure.html"
         },
         {
             "date": "Dec 19 2025",
-            "title": "Surge in OAuth Phishing Attacks Targeting Microsoft 365 Accounts",
-            "content": "Multiple threat actors are targeting Microsoft 365 accounts through OAuth-based phishing attacks, leveraging device code authorization mechanisms. These attacks aim to gain unauthorized access to accounts by tricking users into granting permissions to malicious applications. The rise in such attacks underscores the importance of securing OAuth implementations and educating users about phishing tactics. Organizations should review their OAuth configurations and consider deploying security tools that can detect and block unauthorized access attempts. Enhanced user awareness and vigilance are crucial in mitigating the risks associated with these sophisticated phishing strategies.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsoft-365-accounts-targeted-in-wave-of-oauth-phishing-attacks/"
+            "title": "Former Cybersecurity Professionals Admit to Ransomware Attacks",
+            "content": "Ryan Goldberg and Kevin Martin, former incident responders at cybersecurity firms, have pleaded guilty to conducting a series of ransomware attacks in 2023. Their insider knowledge allowed them to exploit vulnerabilities within five companies, causing significant financial and operational damage. This case highlights the risks posed by insider threats and the importance of stringent access controls and monitoring within organizations. Companies are urged to implement robust insider threat detection programs and conduct regular security awareness training. The incident serves as a reminder of the potential dangers when cybersecurity professionals turn rogue.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/incident-responders-plead-guilty-ransomware-digitalmint/"
+        },
+        {
+            "date": "Dec 19 2025",
+            "title": "FBI Warns of Deepfake Impersonations of U.S. Government Officials",
+            "content": "The FBI has issued a warning about ongoing deepfake impersonations of U.S. government officials, a trend that has been active since 2023. These deepfakes are used to deceive victims into divulging sensitive information or transferring funds. The sophistication of the deepfake technology makes it challenging to distinguish genuine communications from fraudulent ones. Organizations and individuals are advised to verify the authenticity of communications, particularly those requesting confidential information or financial transactions. The rise of deepfake technology underscores the need for enhanced cybersecurity awareness and verification processes to combat these deceptive tactics.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/fbi-says-ongoing-deepfake-impersonation-of-us-officials-dates-back-to-2023/"
         },
         {
             "date": "May 05 2026",
@@ -62,53 +62,53 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
+            "date": "Dec 21 2025",
+            "title": "Agent Autonomy Poses Challenges for Site Reliability Engineers",
+            "content": "The rise of autonomous AI agents in enterprise settings is creating significant challenges for Site Reliability Engineers (SREs), according to João Freitas, GM and VP of engineering for AI and automation at PagerDuty. These AI agents, while promising substantial ROI, often lack the necessary guardrails to prevent unpredictable behaviors in complex systems. This can lead to unexpected outages and increased operational risks. As organizations increasingly adopt these technologies, SREs are tasked with developing new strategies to manage and mitigate potential disruptions. The trend underscores the need for robust oversight mechanisms and emphasizes the importance of integrating safety protocols in AI deployments. Professionals should evaluate their current AI governance frameworks to ensure resilience against such challenges.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/ai/agent-autonomy-without-guardrails-is-an-sre-nightmare"
+        },
+        {
+            "date": "Dec 21 2025",
+            "title": "Waymo Halts San Francisco Robotaxi Operations Amid Blackout",
+            "content": "Waymo has temporarily suspended its robotaxi services in San Francisco following a citywide blackout that left many of its autonomous vehicles immobilized. The incident highlights the vulnerabilities of AI-driven transportation systems in the face of infrastructure failures. Waymo&#x27;s decision to pause operations reflects its commitment to safety, as stalled vehicles can pose significant traffic hazards. This event raises questions about the robustness of autonomous systems in urban environments and their dependency on stable power grids. Stakeholders in the autonomous vehicle industry should consider enhancing backup systems and exploring alternative power solutions to prevent similar disruptions in the future.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/21/waymo-suspends-service-in-san-francisco-as-robotaxis-stall-during-blackout/"
+        },
+        {
             "date": "Dec 20 2025",
-            "title": "Resolve AI Reaches $1 Billion Valuation in Series A Funding",
-            "content": "Resolve AI, a startup founded by former Splunk executives, has achieved a $1 billion valuation following its Series A funding round led by Lightspeed Venture Partners. This significant financial backing underscores the growing confidence in AI-driven solutions, as Resolve AI aims to revolutionize enterprise-level data analytics and operations. The company is leveraging advanced machine learning models to automate complex data processes, providing businesses with enhanced decision-making capabilities. This funding milestone reflects a broader trend of substantial investments in AI startups, as the technology becomes increasingly integral across various sectors. Industry professionals should monitor Resolve AI&#x27;s developments for potential innovations that could impact enterprise data strategies.",
+            "title": "OpenAI Introduces Customization Features for ChatGPT",
+            "content": "OpenAI has introduced new customization options for ChatGPT, allowing users to adjust the chatbot&#x27;s level of enthusiasm, warmth, and emoji usage. This update provides users with greater control over the tone and style of interactions, catering to diverse preferences and use cases. The feature aims to enhance user experience by making AI interactions more personalized and contextually appropriate. As conversational AI continues to evolve, such customization capabilities are becoming increasingly important in maintaining user engagement. Developers and businesses leveraging ChatGPT should explore these new settings to optimize their applications and improve customer satisfaction.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/19/ex-splunk-execs-startup-resolve-ai-hits-1-billion-valuation-with-series-a/"
+            "sourceUrl": "https://techcrunch.com/2025/12/20/openai-allows-users-to-directly-adjust-chatgpts-warmth-and-enthusiasm/"
         },
         {
-            "date": "Dec 19 2025",
-            "title": "Known&#x27;s Voice AI Boosts In-Person Dating Success",
-            "content": "Known, a dating app utilizing voice AI technology, reports that 80% of its introductions in San Francisco have resulted in physical dates, a notable increase compared to traditional swipe-based apps. The app&#x27;s AI-driven approach focuses on facilitating more meaningful connections by analyzing vocal attributes and conversational cues to match users. This innovative use of AI highlights a shift towards more personalized digital interactions, addressing the common issue of superficial engagements in online dating. As AI continues to evolve, professionals in the tech and social industries should consider how these advancements can enhance user experiences and drive engagement.",
+            "date": "Dec 20 2025",
+            "title": "Shift from Specialists to Generalists in AI and Tech Hiring",
+            "content": "The tech industry is witnessing a shift in hiring trends, with a growing preference for generalists over specialists, according to Tony Stoyanov, CTO and co-founder of EliseAI. Previously, companies sought specialized roles such as backend engineers and data scientists, but the rapid pace of technological change now favors versatile professionals who can adapt to various roles. This trend reflects the need for agility and cross-functional skills in an era where AI and automation are transforming job functions. Organizations are encouraged to reassess their hiring strategies to align with this shift, prioritizing candidates with broad skill sets and adaptive capabilities.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/ai/hiring-specialists-made-sense-before-ai-now-generalists-win"
+        },
+        {
+            "date": "Dec 20 2025",
+            "title": "New York Enacts RAISE Act to Enhance AI Safety Regulations",
+            "content": "New York Governor Kathy Hochul has signed the RAISE Act, a legislative measure aimed at regulating AI safety within the state. The act mandates that large AI developers disclose their safety protocols and report any safety incidents to state authorities within 72 hours. This move is part of a broader effort to ensure accountability and transparency in AI development, addressing growing concerns about the potential risks associated with AI technologies. The legislation underscores the importance of proactive governance in mitigating the impact of AI-related incidents. AI developers operating in New York should prepare to comply with these new requirements to avoid potential penalties.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/19/known-uses-voice-ai-to-help-you-go-on-more-in-person-dates/"
+            "sourceUrl": "https://techcrunch.com/2025/12/20/new-york-governor-kathy-hochul-signs-raise-act-to-regulate-ai-safety/"
         },
         {
             "date": "Dec 19 2025",
-            "title": "Meta&#x27;s New AI Model to Enhance Visual Understanding",
-            "content": "Meta is developing a new AI model set for release in 2026, designed to improve text-based coding capabilities and advance visual information comprehension. This model aims to enable machines to reason, plan, and act without exhaustive training on every scenario, marking a significant leap in AI&#x27;s cognitive abilities. By integrating these capabilities, Meta seeks to enhance its AI&#x27;s adaptability in dynamic environments, potentially transforming industries reliant on complex data interpretation, such as autonomous vehicles and robotics. Developers and tech leaders should watch for Meta&#x27;s updates as this model could redefine standards in AI-driven visual processing.",
+            "title": "Cursor Acquires Graphite in Ongoing Expansion Strategy",
+            "content": "Cursor has announced the acquisition of Graphite, an AI code review assistant valued at $290 million, marking another step in its strategic expansion. This acquisition aims to enhance Cursor&#x27;s capabilities in automating software development processes, leveraging Graphite&#x27;s advanced AI-driven code analysis tools. The deal reflects a growing trend of consolidation in the AI industry, as companies seek to integrate complementary technologies to strengthen their market positions. Developers and tech leaders should monitor these industry shifts, as they could influence the availability of integrated AI solutions and impact competitive dynamics in the software development sector.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/19/meta-is-developing-a-new-image-and-video-model-for-a-2026-release-report-says/"
+            "sourceUrl": "https://techcrunch.com/2025/12/19/cursor-continues-acquisition-spree-with-graphite-deal/"
         },
         {
             "date": "Dec 19 2025",
-            "title": "AI Integration Boosts Efficiency in Marketing Agencies",
-            "content": "Marketing agencies are increasingly embedding AI into their workflows, moving beyond experimental phases to integral components of their operations. According to a WPP iQ post, AI is now central to briefs, production pipelines, approvals, and media optimization, enabling agencies to serve more clients efficiently. This shift reflects AI&#x27;s maturation from a novel tool to a core element of business strategy, particularly in data-driven industries like marketing. Professionals should consider the implications of AI adoption in their workflows, as it offers the potential for significant improvements in productivity and client engagement.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/marketing-agencies-ai-use-creates-faster-workflows-but-need-restructuring-internally/"
-        },
-        {
-            "date": "Dec 19 2025",
-            "title": "OpenAI Seeks $100 Billion Funding at $830 Billion Valuation",
-            "content": "OpenAI is reportedly aiming to raise $100 billion, targeting an $830 billion valuation, with plans to secure funding by early 2026. The company is considering sovereign wealth funds as potential investors to support this ambitious round. OpenAI, known for its ChatGPT model, continues to expand its influence in the AI sector, driven by increasing demand for advanced generative AI technologies. This funding effort underscores the massive financial stakes involved in AI development and the expectations for future growth and innovation. Stakeholders in the AI industry should monitor this development closely, as it could signal significant shifts in market dynamics and investment trends.",
+            "title": "Yann LeCun Launches New AI Startup with Ambitious Valuation Goals",
+            "content": "Yann LeCun, a prominent figure in the AI community, has officially confirmed the launch of his new startup focused on developing a &#x27;world model&#x27; AI. While LeCun will not serve as CEO, the company reportedly seeks a valuation exceeding $5 billion, signaling high expectations and investor interest. This venture aims to advance AI research and applications, potentially setting new benchmarks in the field. The announcement adds to the growing momentum in AI innovation, driven by leading researchers and entrepreneurs. Industry professionals should watch for developments from LeCun&#x27;s startup, as its progress could influence future AI technologies and applications.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/19/openai-is-reportedly-trying-to-raise-100b-at-an-830b-valuation/"
-        },
-        {
-            "date": "Dec 19 2025",
-            "title": "Major Indian IT Firms Deploy 50,000 Microsoft Copilot Licenses",
-            "content": "Leading Indian IT service companies, including Cognizant, Tata Consultancy Services, Infosys, and Wipro, have announced plans to deploy over 200,000 Microsoft Copilot licenses, with each firm adopting more than 50,000 licenses. This marks a new benchmark for enterprise-scale adoption of generative AI, reflecting the growing integration of AI tools in business operations. Microsoft Copilot is designed to enhance productivity by automating repetitive tasks and providing intelligent suggestions, facilitating more efficient workflows. This deployment highlights the increasing reliance on AI to drive business transformation in the IT sector, offering insights into future trends in enterprise technology adoption.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/service-provider-ai-implementations-india-enterprise-scale-copilot-rollouts/"
-        },
-        {
-            "date": "Dec 19 2025",
-            "title": "Challenges Mount for Hardware Startups Amid Bankruptcies",
-            "content": "The hardware industry faces significant challenges as iRobot, Luminar, and Rad Power Bikes file for bankruptcy, citing tariff pressures, supply chain disruptions, and shifting market demands. These bankruptcies highlight the difficulties in sustaining hardware businesses in an era dominated by software and digital solutions. The affected companies illustrate the broader struggle of adapting to rapidly changing economic and technological landscapes. Hardware startups and investors should reassess their strategies, focusing on innovation and adaptability to navigate these turbulent times. This trend underscores the importance of flexible business models and diversified portfolios in the hardware sector.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/video/from-roombas-to-e-bikes-why-are-hardware-startups-going-bankrupt/"
+            "sourceUrl": "https://techcrunch.com/2025/12/19/yann-lecun-confirms-his-new-world-model-startup-reportedly-seeks-5b-valuation/"
         }
     ],
     "articles": {},
@@ -225,28 +225,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-59718",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-14611",
-            "dateAdded": "Dec 15, 2025",
-            "vendor": "Gladinet CentreStack and Triofox",
-            "description": "Gladinet CentreStack and TrioFox contain a hardcoded cryptographic keys vulnerability for their implementation of the AES cryptoscheme. This vulnerability degrades security for public exposed endpoint",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-14611",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-43529",
-            "dateAdded": "Dec 15, 2025",
-            "vendor": "Apple Multiple Products",
-            "description": "Apple iOS, iPadOS, macOS, and other Apple products contain a use-after-free vulnerability in WebKit. Processing maliciously crafted web content may lead to memory corruption. This vulnerability could",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-43529",
             "isZeroDay": false
         }
     ],
