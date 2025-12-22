@@ -1,13 +1,19 @@
 {
-  "last_updated": "2025-12-22T01:49:44.951226",
+  "last_updated": "2025-12-22T12:44:08.859063",
   "period": "Last 7 days",
   "total_groups": 34,
-  "total_victims": 300,
+  "total_victims": 298,
   "groups": [
     {
       "name": "Qilin",
-      "count": 53,
+      "count": 55,
       "victims": [
+        {
+          "name": "Grupo Olé",
+          "date": "2025-12-22 11:17:54.854453",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=06be85a1-ee54-3196-9a78-5a5808f9c57c",
+          "discovered_date": "2025-12-22T11:17:54.854453"
+        },
         {
           "name": "Cedar Valley Services",
           "date": "2025-12-21 23:14:59.611079",
@@ -61,12 +67,6 @@
           "date": "2025-12-20 09:16:13.303422",
           "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=25196ccb-af80-3c8e-b93b-84d505aefe8d",
           "discovered_date": "2025-12-20T09:16:13.303422"
-        },
-        {
-          "name": "Publicidad Sarmiento",
-          "date": "2025-12-19 17:54:21.134004",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=2e20bfff-6db8-35ab-8cac-e76f3bed5f24",
-          "discovered_date": "2025-12-19T17:54:21.134004"
         }
       ],
       "industries": [
@@ -92,7 +92,7 @@
         16,
         18,
         2,
-        0
+        2
       ]
     },
     {
@@ -277,97 +277,15 @@
       ]
     },
     {
-      "name": "Akira",
-      "count": 21,
-      "victims": [
-        {
-          "name": "Susquehanna Glass",
-          "date": "2025-12-19 13:20:02.213345",
-          "url": "",
-          "discovered_date": "2025-12-19T13:20:02.213345"
-        },
-        {
-          "name": "Global Miami JV",
-          "date": "2025-12-19 13:20:08.339043",
-          "url": "",
-          "discovered_date": "2025-12-19T13:20:08.339043"
-        },
-        {
-          "name": "MAT 4Site Engineers",
-          "date": "2025-12-19 15:48:03.122707",
-          "url": "",
-          "discovered_date": "2025-12-19T15:48:03.122707"
-        },
-        {
-          "name": "Farwest Fabrication",
-          "date": "2025-12-18 13:18:51.297020",
-          "url": "",
-          "discovered_date": "2025-12-18T13:18:51.297020"
-        },
-        {
-          "name": "Household & Commercial Products Association",
-          "date": "2025-12-18 14:09:13.697691",
-          "url": "",
-          "discovered_date": "2025-12-18T14:09:13.697691"
-        },
-        {
-          "name": "Morningstar Properties",
-          "date": "2025-12-18 14:09:18.015850",
-          "url": "",
-          "discovered_date": "2025-12-18T14:09:18.015850"
-        },
-        {
-          "name": "Associated Thermoforming",
-          "date": "2025-12-18 16:18:36.631399",
-          "url": "",
-          "discovered_date": "2025-12-18T16:18:36.631399"
-        },
-        {
-          "name": "Phillips Scales",
-          "date": "2025-12-18 16:18:42.163012",
-          "url": "",
-          "discovered_date": "2025-12-18T16:18:42.163012"
-        },
-        {
-          "name": "MAT 4Site Engineers",
-          "date": "2025-12-19T15:48:03+00:00",
-          "url": "https://www.ransomware.live/id/TUFUIDRTaXRlIEVuZ2luZWVyc0Bha2lyYQ==",
-          "discovered_date": "2025-12-19T15:48:03+00:00"
-        },
-        {
-          "name": "Global Miami JV",
-          "date": "2025-12-19T13:20:08+00:00",
-          "url": "https://www.ransomware.live/id/R2xvYmFsIE1pYW1pIEpWQGFraXJh",
-          "discovered_date": "2025-12-19T13:20:08+00:00"
-        }
-      ],
-      "industries": [
-        "Construction",
-        "Consumer Services",
-        "Manufacturing",
-        "Not Found"
-      ],
-      "countries": [
-        "GB",
-        "N/A",
-        "US"
-      ],
-      "trend": "up",
-      "trend_percentage": 15,
-      "daily_counts": [
-        0,
-        3,
-        10,
-        6,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Lockbit5",
-      "count": 18,
+      "count": 19,
       "victims": [
+        {
+          "name": "uniplaclages.edu.br",
+          "date": "2025-12-22 12:29:30.540155",
+          "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/0f0099fb93e3d840e972f0503498ab3d",
+          "discovered_date": "2025-12-22T12:29:30.540155"
+        },
         {
           "name": "walters-group.co.uk",
           "date": "2025-12-19 15:04:00.601195",
@@ -421,12 +339,6 @@
           "date": "2025-12-19 15:12:40.273412",
           "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/dc1f2d3d0af9bf63695eb550597ad7fe",
           "discovered_date": "2025-12-19T15:12:40.273412"
-        },
-        {
-          "name": "keystoliteracy.com",
-          "date": "2025-12-19T15:13:24+00:00",
-          "url": "https://www.ransomware.live/id/a2V5c3RvbGl0ZXJhY3kuY29tQGxvY2tiaXQ1",
-          "discovered_date": "2025-12-19T15:13:24+00:00"
         }
       ],
       "industries": [
@@ -438,6 +350,7 @@
       ],
       "countries": [
         "AR",
+        "BR",
         "GB",
         "N/A",
         "US"
@@ -449,6 +362,93 @@
         0,
         0,
         18,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "Akira",
+      "count": 18,
+      "victims": [
+        {
+          "name": "Susquehanna Glass",
+          "date": "2025-12-19 13:20:02.213345",
+          "url": "",
+          "discovered_date": "2025-12-19T13:20:02.213345"
+        },
+        {
+          "name": "Global Miami JV",
+          "date": "2025-12-19 13:20:08.339043",
+          "url": "",
+          "discovered_date": "2025-12-19T13:20:08.339043"
+        },
+        {
+          "name": "MAT 4Site Engineers",
+          "date": "2025-12-19 15:48:03.122707",
+          "url": "",
+          "discovered_date": "2025-12-19T15:48:03.122707"
+        },
+        {
+          "name": "Associated Thermoforming",
+          "date": "2025-12-18 16:18:36.631399",
+          "url": "",
+          "discovered_date": "2025-12-18T16:18:36.631399"
+        },
+        {
+          "name": "Phillips Scales",
+          "date": "2025-12-18 16:18:42.163012",
+          "url": "",
+          "discovered_date": "2025-12-18T16:18:42.163012"
+        },
+        {
+          "name": "MAT 4Site Engineers",
+          "date": "2025-12-19T15:48:03+00:00",
+          "url": "https://www.ransomware.live/id/TUFUIDRTaXRlIEVuZ2luZWVyc0Bha2lyYQ==",
+          "discovered_date": "2025-12-19T15:48:03+00:00"
+        },
+        {
+          "name": "Global Miami JV",
+          "date": "2025-12-19T13:20:08+00:00",
+          "url": "https://www.ransomware.live/id/R2xvYmFsIE1pYW1pIEpWQGFraXJh",
+          "discovered_date": "2025-12-19T13:20:08+00:00"
+        },
+        {
+          "name": "Susquehanna Glass",
+          "date": "2025-12-19T13:20:02+00:00",
+          "url": "https://www.ransomware.live/id/U3VzcXVlaGFubmEgR2xhc3NAYWtpcmE=",
+          "discovered_date": "2025-12-19T13:20:02+00:00"
+        },
+        {
+          "name": "Phillips Scales",
+          "date": "2025-12-18T16:18:42+00:00",
+          "url": "https://www.ransomware.live/id/UGhpbGxpcHMgU2NhbGVzQGFraXJh",
+          "discovered_date": "2025-12-18T16:18:42+00:00"
+        },
+        {
+          "name": "Associated Thermoforming",
+          "date": "2025-12-18T16:18:36+00:00",
+          "url": "https://www.ransomware.live/id/QXNzb2NpYXRlZCBUaGVybW9mb3JtaW5nQGFraXJh",
+          "discovered_date": "2025-12-18T16:18:36+00:00"
+        }
+      ],
+      "industries": [
+        "Construction",
+        "Manufacturing",
+        "Not Found"
+      ],
+      "countries": [
+        "GB",
+        "N/A",
+        "US"
+      ],
+      "trend": "up",
+      "trend_percentage": 15,
+      "daily_counts": [
+        0,
+        3,
+        7,
+        6,
         0,
         0,
         0
@@ -544,7 +544,7 @@
     },
     {
       "name": "Devman",
-      "count": 16,
+      "count": 15,
       "victims": [
         {
           "name": "****s*oc****.com",
@@ -1127,61 +1127,6 @@
       ]
     },
     {
-      "name": "Worldleaks",
-      "count": 5,
-      "victims": [
-        {
-          "name": "OGI Groupe",
-          "date": "2025-12-19 14:25:43.144781",
-          "url": "https://worldleaksartrjm3c6vasllvgacbi5u3mgzkluehrzhk2jz4taufuid.onion/companies/9429657975",
-          "discovered_date": "2025-12-19T14:25:43.144781"
-        },
-        {
-          "name": "OGI Groupe",
-          "date": "2025-12-19T14:25:43+00:00",
-          "url": "https://www.ransomware.live/id/T0dJIEdyb3VwZUB3b3JsZGxlYWtz",
-          "discovered_date": "2025-12-19T14:25:43+00:00"
-        },
-        {
-          "name": "Roose Ressler & Green Co",
-          "date": "2025-12-16T23:32:47+00:00",
-          "url": "https://www.ransomware.live/id/Um9vc2UgUmVzc2xlciAmIEdyZWVuIENvQHdvcmxkbGVha3M=",
-          "discovered_date": "2025-12-16T23:32:47+00:00"
-        },
-        {
-          "name": "Smith Hawks",
-          "date": "2025-12-16T23:32:03+00:00",
-          "url": "https://www.ransomware.live/id/U21pdGggSGF3a3NAd29ybGRsZWFrcw==",
-          "discovered_date": "2025-12-16T23:32:03+00:00"
-        },
-        {
-          "name": "Thrings Solicitors and Lawyers",
-          "date": "2025-12-15T09:40:00+00:00",
-          "url": "https://www.ransomware.live/id/VGhyaW5ncyBTb2xpY2l0b3JzIGFuZCBMYXd5ZXJzQHdvcmxkbGVha3M=",
-          "discovered_date": "2025-12-15T09:40:00+00:00"
-        }
-      ],
-      "industries": [
-        "Not Found"
-      ],
-      "countries": [
-        "FR",
-        "GB",
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        2,
-        0,
-        0,
-        2,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Anubis",
       "count": 4,
       "victims": [
@@ -1272,6 +1217,54 @@
         0,
         0,
         4,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Worldleaks",
+      "count": 4,
+      "victims": [
+        {
+          "name": "OGI Groupe",
+          "date": "2025-12-19 14:25:43.144781",
+          "url": "https://worldleaksartrjm3c6vasllvgacbi5u3mgzkluehrzhk2jz4taufuid.onion/companies/9429657975",
+          "discovered_date": "2025-12-19T14:25:43.144781"
+        },
+        {
+          "name": "OGI Groupe",
+          "date": "2025-12-19T14:25:43+00:00",
+          "url": "https://www.ransomware.live/id/T0dJIEdyb3VwZUB3b3JsZGxlYWtz",
+          "discovered_date": "2025-12-19T14:25:43+00:00"
+        },
+        {
+          "name": "Roose Ressler & Green Co",
+          "date": "2025-12-16T23:32:47+00:00",
+          "url": "https://www.ransomware.live/id/Um9vc2UgUmVzc2xlciAmIEdyZWVuIENvQHdvcmxkbGVha3M=",
+          "discovered_date": "2025-12-16T23:32:47+00:00"
+        },
+        {
+          "name": "Smith Hawks",
+          "date": "2025-12-16T23:32:03+00:00",
+          "url": "https://www.ransomware.live/id/U21pdGggSGF3a3NAd29ybGRsZWFrcw==",
+          "discovered_date": "2025-12-16T23:32:03+00:00"
+        }
+      ],
+      "industries": [
+        "Not Found"
+      ],
+      "countries": [
+        "FR",
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        2,
+        0,
+        0,
+        2,
         0,
         0,
         0
@@ -1400,6 +1393,41 @@
         0,
         0,
         0
+      ]
+    },
+    {
+      "name": "Benzona",
+      "count": 2,
+      "victims": [
+        {
+          "name": "taminsho.com",
+          "date": "2025-12-22 07:41:54.995816",
+          "url": "",
+          "discovered_date": "2025-12-22T07:41:54.995816"
+        },
+        {
+          "name": "taminsho.com",
+          "date": "2025-12-22T07:41:54+00:00",
+          "url": "https://www.ransomware.live/id/dGFtaW5zaG8uY29tQGJlbnpvbmE=",
+          "discovered_date": "2025-12-22T07:41:54+00:00"
+        }
+      ],
+      "industries": [
+        "Not Found"
+      ],
+      "countries": [
+        "IR"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
       ]
     },
     {
@@ -1568,39 +1596,6 @@
       "daily_counts": [
         0,
         1,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Pear",
-      "count": 2,
-      "victims": [
-        {
-          "name": "Gordon Clifford Properties Inc.",
-          "date": "2025-12-15T11:44:15+00:00",
-          "url": "https://www.ransomware.live/id/R29yZG9uIENsaWZmb3JkIFByb3BlcnRpZXMgSW5jLkBwZWFy",
-          "discovered_date": "2025-12-15T11:44:15+00:00"
-        },
-        {
-          "name": "Angstrom Automotive Group",
-          "date": "2025-12-15T11:43:35+00:00",
-          "url": "https://www.ransomware.live/id/QW5nc3Ryb20gQXV0b21vdGl2ZSBHcm91cEBwZWFy",
-          "discovered_date": "2025-12-15T11:43:35+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
         0,
         0,
         0,
