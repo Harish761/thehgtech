@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Threat Intelligence Feeds Integration Guide 2025 | TheHGTech</title>
+    <meta name="description"
+        content="Complete guide to integrating threat intelligence feeds. Learn IOC types, STIX/TAXII, feed sources, SIEM integration, and threat intelligence platform deployment.">
+    <meta name="keywords"
+        content="threat intelligence feeds, IOC feeds, STIX TAXII, threat intel integration, SIEM integration, threat feeds, malware feeds, threat intelligence platform">
+    <link rel="canonical" href="https://thehgtech.com/guides/threat-intelligence-feeds-integration.html">
+    <meta property="og:title" content="Threat Intelligence Feeds Integration Guide 2025">
+    <meta property="og:image" content="https://thehgtech.com/images/guides/threat-intelligence-feeds-integration.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251217">
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <script src="/m-app.js?v=4.3" defer></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF4C4C;
+            --accent-green: #10b981;
+            --text-primary: #fff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 80px auto 0;
+            padding: 2rem;
+        }
+
+        .guide-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .guide-header h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-green));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        .new-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #FF4C4C, #ff8c8c);
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            margin-left: 1rem;
+        }
+
+        .guide-meta {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .featured-image {
+            width: 100%;
+            border-radius: 12px;
+            margin: 2rem 0;
+            box-shadow: 0 10px 40px rgba(0, 217, 255, 0.2);
+            border: 1px solid var(--border);
+        }
+
+        .content {
+            margin-top: 3rem;
+        }
+
+        .content h2 {
+            color: var(--accent-cyan);
+            font-size: 1.8rem;
+            margin: 2.5rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-cyan);
+        }
+
+        .content h3 {
+            color: var(--text-primary);
+            font-size: 1.3rem;
+            margin: 1.5rem 0 1rem;
+        }
+
+        .content p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .content ul,
+        .content ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        .content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .toc {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .toc h3 {
+            color: var(--accent-cyan);
+            margin-bottom: 1rem;
+        }
+
+        .toc ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .toc a {
+            color: var(--text-secondary);
+            text-decoration: none;
+        }
+
+        .info-box {
+            background: rgba(0, 217, 255, 0.1);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .warning-box {
+            background: rgba(255, 76, 76, 0.1);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .success-box {
+            background: rgba(16, 185, 129, 0.1);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: rgba(0, 217, 255, 0.1);
+            color: var(--accent-cyan);
+        }
+
+        td {
+            color: var(--text-secondary);
+        }
+
+        code {
+            background: var(--bg-secondary);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: monospace;
+            color: var(--accent-cyan);
+            font-size: 0.9rem;
+        }
+
+        pre {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+
+        footer {
+            margin-top: 5rem;
+            padding-top: 3rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="m-header m-only">
+        <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px;">
+            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px;">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">TheHGTech</span>
+        </div>
+        <div class="m-header__actions">
+            <button class="m-theme-toggle" onclick="mToggleTheme()"><span class="m-theme-toggle__thumb"></span></button>
+            <button class="m-header__btn" data-action="search"><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item"><i class="fas fa-bug"></i><span>CVE</span></a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item"><i class="fas fa-shield-alt"></i><span>Intel</span></a>
+        <a href="/articles.html" class="m-bottom-nav__item"><i class="fas fa-newspaper"></i><span>Articles</span></a>
+        <a href="/guides/" class="m-bottom-nav__item active"><i class="fas fa-book"></i><span>Guides</span></a>
+    </nav>
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo"><a href="../index.html"
+                    style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;"><img
+                        src="../logo-dark.png" class="logo-img logo-dark"><img src="../logo-light.png"
+                        class="logo-img logo-light"><span class="logo-text">TheHGTech</span></a></div>
+            <nav class="nav" role="navigation">
+                <a href="../index.html#news">News</a>
+                <a href="../threat-intel.html">Threat Intelligence <span class="live-badge">LIVE</span></a>
+                <a href="../cve-tracker.html">CVE</a>
+                <a href="../guides/">Guides</a>
+                <a href="../comparisons/">Tool Comparisons</a>
+                <a href="../articles.html">Articles</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <a href="/guides/"
+            style="color: var(--accent-cyan); text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; margin-bottom: 2rem;"><i
+                class="fas fa-arrow-left"></i> Back to Guides</a>
+
+        <div class="guide-header">
+            <h1><i class="fas fa-rss"></i> Threat Intelligence Feeds Integration <span class="new-badge"><i
+                        class="fas fa-fire"></i> NEW</span></h1>
+            <p style="color: var(--text-muted); font-size: 1.1rem;">Integrate threat feeds into your security stack for
+                proactive defense</p>
+            <div class="guide-meta">
+                <span><i class="fas fa-book-open"></i> 18 min read</span>
+                <span><i class="fas fa-crosshairs"></i> Intermediate</span>
+                <span><i class="far fa-calendar-alt"></i> December 2025</span>
+            </div>
+        </div>
+
+        <img src="/images/guides/threat-intelligence-feeds-integration.png"
+            alt="Threat Intelligence Feeds Integration Guide" class="featured-image">
+
+        <div class="info-box">
+            <strong><i class="fas fa-lightbulb"></i> Live Example:</strong> TheHGTech aggregates 15+ threat intelligence
+            feeds in real-time. See our <a href="/threat-intel.html" style="color: var(--accent-cyan);">Threat
+                Intelligence page</a> for live IOCs including malicious IPs, domains, file hashes, and phishing URLs.
+        </div>
+
+        <div class="toc">
+            <h3><i class="fas fa-list-ul"></i> Table of Contents</h3>
+            <ul>
+                <li><a href="#overview">1. What is Threat Intelligence?</a></li>
+                <li><a href="#ioc-types">2. IOC Types & Categories</a></li>
+                <li><a href="#feeds">3. Free & Commercial Feed Sources</a></li>
+                <li><a href="#stix-taxii">4. STIX/TAXII Standards</a></li>
+                <li><a href="#integration">5. SIEM & Security Tool Integration</a></li>
+                <li><a href="#tip">6. Threat Intelligence Platforms</a></li>
+                <li><a href="#workflow">7. Operational Workflow</a></li>
+                <li><a href="#quality">8. Feed Quality & Confidence</a></li>
+                <li><a href="#automation">9. Automation & Enrichment</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2 id="overview"><i class="fas fa-brain"></i> 1. What is Threat Intelligence?</h2>
+            <p><strong>Threat Intelligence (TI)</strong> is evidence-based knowledge about existing or emerging threats
+                that helps organizations prevent, detect, and respond to cyber attacks. It ranges from tactical IOCs to
+                strategic threat assessments.</p>
+
+            <h3>Intelligence Levels</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Level</th>
+                        <th>Description</th>
+                        <th>Audience</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Strategic</strong></td>
+                        <td>High-level trends, threat actors, motivations</td>
+                        <td>Executives, CISO</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Operational</strong></td>
+                        <td>TTPs, campaigns, threat actor profiles</td>
+                        <td>Security managers, analysts</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tactical</strong></td>
+                        <td>IOCs: IPs, domains, hashes, URLs</td>
+                        <td>SOC analysts, SIEM</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Technical</strong></td>
+                        <td>Malware analysis, exploit details</td>
+                        <td>Malware analysts, IR</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 id="ioc-types"><i class="fas fa-fingerprint"></i> 2. IOC Types & Categories</h2>
+
+            <h3>Common Indicator Types</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>IP Address</strong></td>
+                        <td>Malicious C2, scanning, attacking IPs</td>
+                        <td><code>185.141.27.xxx</code></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Domain</strong></td>
+                        <td>Malware C2, phishing domains</td>
+                        <td><code>malicious-update.com</code></td>
+                    </tr>
+                    <tr>
+                        <td><strong>URL</strong></td>
+                        <td>Specific malicious URLs</td>
+                        <td><code>https://evil.com/payload.exe</code></td>
+                    </tr>
+                    <tr>
+                        <td><strong>File Hash (MD5/SHA1/SHA256)</strong></td>
+                        <td>Malware file signatures</td>
+                        <td><code>44d88612fea8a...</code></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Email Address</strong></td>
+                        <td>Phishing sender addresses</td>
+                        <td><code>ceo@fake-company.com</code></td>
+                    </tr>
+                    <tr>
+                        <td><strong>CVE</strong></td>
+                        <td>Exploited vulnerabilities</td>
+                        <td><code>CVE-2024-21887</code></td>
+                    </tr>
+                    <tr>
+                        <td><strong>YARA Rule</strong></td>
+                        <td>Pattern-based malware detection</td>
+                        <td>Rule definitions</td>
+                    </tr>
+                    <tr>
+                        <td><strong>JA3/JA3S</strong></td>
+                        <td>TLS fingerprints</td>
+                        <td>Client/server TLS signatures</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 id="feeds"><i class="fas fa-database"></i> 3. Free & Commercial Feed Sources</h2>
+
+            <h3>Free/Open Source Feeds</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feed</th>
+                        <th>Type</th>
+                        <th>Format</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>abuse.ch (URLhaus, Feodo, MalwareBazaar)</strong></td>
+                        <td>Malware, Botnets</td>
+                        <td>CSV, JSON, API</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AlienVault OTX</strong></td>
+                        <td>Community IOCs</td>
+                        <td>STIX, CSV, API</td>
+                    </tr>
+                    <tr>
+                        <td><strong>OpenPhish</strong></td>
+                        <td>Phishing URLs</td>
+                        <td>Text, JSON</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PhishTank</strong></td>
+                        <td>Phishing URLs</td>
+                        <td>CSV, XML, JSON</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Emerging Threats</strong></td>
+                        <td>IDS rules, IPs</td>
+                        <td>Suricata/Snort rules</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SANS ISC</strong></td>
+                        <td>Suspicious IPs</td>
+                        <td>Text</td>
+                    </tr>
+                    <tr>
+                        <td><strong>CISA KEV</strong></td>
+                        <td>Exploited CVEs</td>
+                        <td>JSON, CSV</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Commercial Feeds</h3>
+            <ul>
+                <li>Recorded Future, Mandiant, CrowdStrike (Premium TI)</li>
+                <li>VirusTotal (File/URL analysis)</li>
+                <li>DomainTools, RiskIQ (Domain/infrastructure intel)</li>
+                <li>Palo Alto Unit 42, Cisco Talos (Vendor TI)</li>
+            </ul>
+
+            <h2 id="stix-taxii"><i class="fas fa-exchange-alt"></i> 4. STIX/TAXII Standards</h2>
+            <p>STIX and TAXII are OASIS standards for sharing threat intelligence:</p>
+
+            <h3>STIX (Structured Threat Information eXpression)</h3>
+            <p>A language and serialization format for threat intelligence objects:</p>
+            <pre><code>{
+  "type": "indicator",
+  "id": "indicator--a932fcc6-e032-176c-126f-cb970a5a1fff",
+  "pattern": "[domain-name:value = 'malicious.com']",
+  "pattern_type": "stix",
+  "valid_from": "2025-01-01T00:00:00Z",
+  "labels": ["malicious-activity"]
+}</code></pre>
+
+            <h3>TAXII (Trusted Automated eXchange of Intelligence Information)</h3>
+            <p>A protocol for exchanging STIX data. TAXII 2.1 uses REST APIs.</p>
+            <ul>
+                <li><strong>Collections:</strong> Groups of intelligence objects</li>
+                <li><strong>Channels:</strong> Push-based intelligence sharing</li>
+                <li><strong>Discovery:</strong> Find available TAXII services</li>
+            </ul>
+
+            <h2 id="integration"><i class="fas fa-plug"></i> 5. SIEM & Security Tool Integration</h2>
+
+            <h3>Integration Methods</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Method</th>
+                        <th>Best For</th>
+                        <th>Complexity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Lookup Tables</strong></td>
+                        <td>Simple IOC matching</td>
+                        <td>Low</td>
+                    </tr>
+                    <tr>
+                        <td><strong>API Integration</strong></td>
+                        <td>Real-time enrichment</td>
+                        <td>Medium</td>
+                    </tr>
+                    <tr>
+                        <td><strong>TAXII Client</strong></td>
+                        <td>Standardized feed ingestion</td>
+                        <td>Medium</td>
+                    </tr>
+                    <tr>
+                        <td><strong>TIP Integration</strong></td>
+                        <td>Aggregating multiple feeds</td>
+                        <td>High</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Splunk Integration Example</h3>
+            <pre><code># Create lookup table from threat feed
+| inputlookup threat_ips.csv
+| eval threat_type="malicious_ip"
+
+# Correlate with logs
+index=firewall 
+| lookup threat_ips.csv ip as dest_ip OUTPUT threat_type
+| where isnotnull(threat_type)</code></pre>
+
+            <h3>Firewall/Proxy Integration</h3>
+            <ul>
+                <li>Import IP/domain blocklists automatically</li>
+                <li>Create EDL (External Dynamic Lists) for Palo Alto</li>
+                <li>Feed proxy URL categories with threat data</li>
+            </ul>
+
+            <h2 id="tip"><i class="fas fa-server"></i> 6. Threat Intelligence Platforms (TIPs)</h2>
+            <p>A TIP aggregates, normalizes, and operationalizes threat intelligence from multiple sources.</p>
+
+            <h3>Popular TIP Solutions</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Platform</th>
+                        <th>Type</th>
+                        <th>Key Features</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>MISP</strong></td>
+                        <td>Open Source</td>
+                        <td>Sharing, correlation, STIX/TAXII</td>
+                    </tr>
+                    <tr>
+                        <td><strong>OpenCTI</strong></td>
+                        <td>Open Source</td>
+                        <td>Knowledge management, STIX native</td>
+                    </tr>
+                    <tr>
+                        <td><strong>TheHive/Cortex</strong></td>
+                        <td>Open Source</td>
+                        <td>Case management + enrichment</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Anomali ThreatStream</strong></td>
+                        <td>Commercial</td>
+                        <td>Enterprise TIP</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ThreatConnect</strong></td>
+                        <td>Commercial</td>
+                        <td>TIP + orchestration</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 id="workflow"><i class="fas fa-project-diagram"></i> 7. Operational Workflow</h2>
+
+            <h3>Threat Intel Operational Cycle</h3>
+            <ol>
+                <li><strong>Collect:</strong> Ingest feeds from multiple sources</li>
+                <li><strong>Normalize:</strong> Convert to common format (STIX)</li>
+                <li><strong>Enrich:</strong> Add context (WHOIS, geolocation, related IOCs)</li>
+                <li><strong>Analyze:</strong> Correlate and prioritize</li>
+                <li><strong>Disseminate:</strong> Push to detection tools (SIEM, FW, EDR)</li>
+                <li><strong>Act:</strong> Alert, block, or investigate matches</li>
+                <li><strong>Feedback:</strong> Improve based on false positive rates</li>
+            </ol>
+
+            <h2 id="quality"><i class="fas fa-check-double"></i> 8. Feed Quality & Confidence</h2>
+
+            <div class="warning-box">
+                <strong><i class="fas fa-exclamation-triangle"></i> Quality Matters:</strong> Not all threat feeds are
+                equal. Poor quality feeds lead to alert fatigue and false positives. Always assign confidence levels and
+                track feed performance.
+            </div>
+
+            <h3>Confidence Scoring</h3>
+            <ul>
+                <li><strong>High (80-100%):</strong> Verified by multiple sources, recent, active</li>
+                <li><strong>Medium (40-79%):</strong> Single source, reasonable age, some validation</li>
+                <li><strong>Low (0-39%):</strong> Old data, unverified, high false positive rate</li>
+            </ul>
+
+            <h3>Feed Hygiene</h3>
+            <ul>
+                <li>Set expiration dates on IOCs (30-90 days typical)</li>
+                <li>Track false positive rates per feed</li>
+                <li>Deduplicate across feeds</li>
+                <li>Retire underperforming feeds</li>
+            </ul>
+
+            <h2 id="automation"><i class="fas fa-robot"></i> 9. Automation & Enrichment</h2>
+
+            <h3>Automated Enrichment</h3>
+            <ul>
+                <li><strong>VirusTotal:</strong> File/URL reputation</li>
+                <li><strong>Shodan:</strong> IP service discovery</li>
+                <li><strong>WHOIS:</strong> Domain registration</li>
+                <li><strong>GeoIP:</strong> Location data</li>
+                <li><strong>PassiveDNS:</strong> Historical domain resolution</li>
+            </ul>
+
+            <h3>SOAR Integration</h3>
+            <p>Use SOAR platforms to automate threat intel workflows:</p>
+            <ul>
+                <li>Auto-enrich IOCs on detection</li>
+                <li>Auto-block confirmed malicious indicators</li>
+                <li>Auto-create tickets for investigation</li>
+                <li>Auto-update feeds and blocklists</li>
+            </ul>
+
+            <div class="success-box">
+                <strong><i class="fas fa-check-circle"></i> Quick Start Checklist:</strong>
+                <ol style="margin-top: 0.5rem; margin-bottom: 0;">
+                    <li>Start with 3-5 high-quality free feeds</li>
+                    <li>Create lookup tables in your SIEM</li>
+                    <li>Build correlation rules for IOC matches</li>
+                    <li>Track false positive rates</li>
+                    <li>Consider MISP or OpenCTI if scaling</li>
+                </ol>
+            </div>
+
+            <h2><i class="fas fa-link"></i> Related Resources</h2>
+            <ul>
+                <li><a href="/threat-intel.html" style="color: var(--accent-cyan);">TheHGTech Live Threat
+                        Intelligence</a></li>
+                <li><a href="/guides/mitre-attack-mapping.html" style="color: var(--accent-cyan);">MITRE ATT&CK Mapping
+                        Guide</a></li>
+                <li><a href="/guides/openphish-integration.html" style="color: var(--accent-cyan);">OpenPhish
+                        Integration Guide</a></li>
+            </ul>
+
+            <p
+                style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); color: var(--text-muted);">
+                <strong>Author:</strong> TheHGTech Security Team<br>
+                <strong>Last Updated:</strong> December 2025<br>
+                <strong>Reading Time:</strong> 18 minutes
+            </p>
+        </div>
+
+        <div class="interaction-bar">
+            <div class="like-section"><button class="like-btn" id="likeBtn" onclick="toggleLike()"><i
+                        class="far fa-heart"></i> <span id="likeText">Like this guide</span></button></div>
+            <div class="action-buttons">
+                <div class="share-buttons">
+                    <a href="#" onclick="shareTwitter(event)" class="share-btn"><i class="fab fa-twitter"></i></a>
+                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn"><i class="fab fa-linkedin-in"></i></a>
+                    <button onclick="copyLink()" class="share-btn"><i class="fas fa-link"></i></button>
+                </div>
+                <div class="button-separator"></div>
+                <button onclick="printArticle()" class="print-btn"><i class="fas fa-print"></i></button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 TheHGTech. All rights reserved.</p>
+    </footer>
+    <script src="/header.js"></script>
+    <script src="/interaction-bar.js?v=20251217"></script>
+</body>
+
+</html>

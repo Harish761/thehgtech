@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>AI Governance Framework Guide 2025 | Enterprise AI Policy | TheHGTech</title>
+    <meta name="title" content="AI Governance Framework Guide 2025 | Enterprise AI Policy | TheHGTech">
+    <meta name="description"
+        content="Complete AI governance framework for enterprises. Create policies for ChatGPT, Copilot, and generative AI. Risk management, acceptable use policies, and EU AI Act compliance.">
+    <meta name="keywords"
+        content="AI governance, AI policy, ChatGPT policy, generative AI governance, EU AI Act, AI risk management, responsible AI, AI ethics, enterprise AI policy, Copilot governance">
+    <meta name="author" content="TheHGTech">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thehgtech.com/guides/ai-governance-framework.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/guides/ai-governance-framework.html">
+    <meta property="og:title" content="AI Governance Framework Guide 2025">
+    <meta property="og:description"
+        content="Enterprise AI governance framework for ChatGPT, Copilot, and generative AI tools.">
+    <meta property="og:image" content="https://thehgtech.com/images/guides/ai-governance-framework.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "AI Governance Framework Guide 2025",
+      "description": "Complete AI governance framework for enterprises covering policies, risk management, and compliance",
+      "image": "https://thehgtech.com/images/guides/ai-governance-framework.png",
+      "author": { "@type": "Organization", "name": "TheHGTech" },
+      "publisher": { "@type": "Organization", "name": "TheHGTech" },
+      "datePublished": "2025-12-23",
+      "proficiencyLevel": "Intermediate",
+      "wordCount": 4200
+    }
+    </script>
+
+    <!-- Styles -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251217">
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <script src="/m-app.js?v=4.3" defer></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF4C4C;
+            --accent-green: #10b981;
+            --accent-purple: #8b5cf6;
+            --accent-pink: #ec4899;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 80px auto 0;
+            padding: 2rem;
+        }
+
+        .guide-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .guide-header h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, var(--accent-purple), var(--accent-pink));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        .new-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #FF4C4C, #ff8c8c);
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            margin-left: 1rem;
+        }
+
+        .guide-meta {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .featured-image {
+            width: 100%;
+            border-radius: 12px;
+            margin: 2rem 0;
+            box-shadow: 0 10px 40px rgba(139, 92, 246, 0.2);
+            border: 1px solid var(--border);
+        }
+
+        .content {
+            margin-top: 3rem;
+        }
+
+        .content h2 {
+            color: var(--accent-purple);
+            font-size: 1.8rem;
+            margin: 2.5rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-purple);
+        }
+
+        .content h3 {
+            color: var(--text-primary);
+            font-size: 1.3rem;
+            margin: 1.5rem 0 1rem;
+        }
+
+        .content p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .content ul,
+        .content ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        .content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .toc {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .toc h3 {
+            color: var(--accent-cyan);
+            margin-bottom: 1rem;
+        }
+
+        .toc ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .toc a {
+            color: var(--text-secondary);
+            text-decoration: none;
+        }
+
+        .toc a:hover {
+            color: var(--accent-cyan);
+        }
+
+        .info-box {
+            background: rgba(0, 217, 255, 0.1);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .warning-box {
+            background: rgba(255, 76, 76, 0.1);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .success-box {
+            background: rgba(16, 185, 129, 0.1);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: rgba(139, 92, 246, 0.1);
+            color: var(--accent-purple);
+            font-weight: 600;
+        }
+
+        td {
+            color: var(--text-secondary);
+        }
+
+        .risk-category {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .risk-high {
+            border-left: 4px solid var(--accent-red);
+        }
+
+        .risk-medium {
+            border-left: 4px solid #f59e0b;
+        }
+
+        .risk-low {
+            border-left: 4px solid var(--accent-green);
+        }
+
+        .policy-template {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            font-family: monospace;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            margin-top: 5rem;
+            padding-top: 3rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--text-muted);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+                margin-top: 60px;
+            }
+
+            .guide-header h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Mobile Header -->
+    <header class="m-header m-only">
+        <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px;">
+            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px;">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">TheHGTech</span>
+        </div>
+        <div class="m-header__actions">
+            <button class="m-theme-toggle" onclick="mToggleTheme()" aria-label="Toggle Theme"><span
+                    class="m-theme-toggle__thumb"></span></button>
+            <button class="m-header__btn" data-action="search" aria-label="Search"><i
+                    class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item"><i class="fas fa-bug"></i><span>CVE</span></a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item"><i class="fas fa-shield-alt"></i><span>Intel</span></a>
+        <a href="/articles.html" class="m-bottom-nav__item"><i class="fas fa-newspaper"></i><span>Articles</span></a>
+        <a href="/guides/" class="m-bottom-nav__item active"><i class="fas fa-book"></i><span>Guides</span></a>
+    </nav>
+
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <a href="../index.html"
+                    style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="../logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="../logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+            <nav class="nav" role="navigation">
+                <a href="../index.html#news">News</a>
+                <a href="../threat-intel.html">Threat Intelligence <span class="live-badge">LIVE</span></a>
+                <a href="../cve-tracker.html">CVE</a>
+                <a href="../guides/">Guides</a>
+                <a href="../comparisons/">Tool Comparisons</a>
+                <a href="../articles.html">Articles</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <a href="/guides/"
+            style="color: var(--accent-cyan); text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; margin-bottom: 2rem;"><i
+                class="fas fa-arrow-left"></i> Back to Guides</a>
+
+        <div class="guide-header">
+            <h1><i class="fas fa-robot"></i> AI Governance Framework <span class="new-badge"><i class="fas fa-fire"></i>
+                    NEW</span></h1>
+            <p style="color: var(--text-muted); font-size: 1.1rem;">Enterprise guide to governing ChatGPT, Copilot, and
+                generative AI tools</p>
+            <div class="guide-meta">
+                <span><i class="fas fa-book-open"></i> 18 min read</span>
+                <span><i class="fas fa-crosshairs"></i> Intermediate</span>
+                <span><i class="far fa-calendar-alt"></i> December 2025</span>
+            </div>
+        </div>
+
+        <img src="/images/guides/ai-governance-framework.png" alt="AI Governance Framework" class="featured-image">
+
+        <div class="warning-box">
+            <strong><i class="fas fa-exclamation-triangle"></i> Regulatory Alert:</strong> The EU AI Act becomes
+            enforceable in <strong>February 2025</strong>. Organizations using AI in the EU or serving EU customers must
+            comply with risk-based AI regulations including transparency, human oversight, and prohibited practices.
+        </div>
+
+        <div class="toc">
+            <h3><i class="fas fa-list-ul"></i> Table of Contents</h3>
+            <ul>
+                <li><a href="#why">1. Why AI Governance Matters</a></li>
+                <li><a href="#framework">2. AI Governance Framework Components</a></li>
+                <li><a href="#risk">3. AI Risk Classification</a></li>
+                <li><a href="#policy">4. Acceptable Use Policies</a></li>
+                <li><a href="#data">5. Data Protection & Privacy</a></li>
+                <li><a href="#security">6. AI Security Considerations</a></li>
+                <li><a href="#euai">7. EU AI Act Compliance</a></li>
+                <li><a href="#roles">8. Roles & Responsibilities</a></li>
+                <li><a href="#monitoring">9. Monitoring & Oversight</a></li>
+                <li><a href="#templates">10. Policy Templates</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2 id="why"><i class="fas fa-question-circle"></i> 1. Why AI Governance Matters</h2>
+            <p>The rapid adoption of generative AI tools like ChatGPT, Microsoft Copilot, and Claude has created
+                significant governance challenges. According to ISACA's 2024 survey, <strong>75% of organizations have
+                    no formal AI policy</strong> despite widespread employee use of AI tools.</p>
+
+            <h3>Key Risks of Ungoverned AI</h3>
+            <ul>
+                <li><strong>Data Leakage:</strong> Employees inadvertently sharing confidential data with public AI
+                    services</li>
+                <li><strong>Compliance Violations:</strong> AI outputs that violate regulations (GDPR, HIPAA, financial
+                    regulations)</li>
+                <li><strong>Intellectual Property:</strong> Using AI-generated content without understanding IP
+                    implications</li>
+                <li><strong>Bias & Discrimination:</strong> AI decisions that perpetuate harmful biases</li>
+                <li><strong>Hallucinations:</strong> Relying on AI-generated false information for critical decisions
+                </li>
+                <li><strong>Shadow AI:</strong> Employees using unapproved AI tools without IT knowledge</li>
+            </ul>
+
+            <div class="info-box">
+                <strong><i class="fas fa-lightbulb"></i> Key Insight:</strong> Governance is not about blocking AI
+                adoption—it's about enabling safe, effective AI use that protects the organization while unlocking
+                productivity benefits.
+            </div>
+
+            <h2 id="framework"><i class="fas fa-sitemap"></i> 2. AI Governance Framework Components</h2>
+            <p>A comprehensive AI governance framework consists of six interconnected components:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Component</th>
+                        <th>Purpose</th>
+                        <th>Key Deliverables</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Strategy & Vision</strong></td>
+                        <td>Define how AI supports business objectives</td>
+                        <td>AI strategy document, use case priorities</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Policies & Standards</strong></td>
+                        <td>Establish rules for AI use</td>
+                        <td>Acceptable use policy, data handling standards</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Risk Management</strong></td>
+                        <td>Identify and mitigate AI-specific risks</td>
+                        <td>AI risk assessment framework, risk register</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Governance Structure</strong></td>
+                        <td>Define oversight and decision-making</td>
+                        <td>AI committee, RACI matrix, escalation paths</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Compliance & Ethics</strong></td>
+                        <td>Ensure legal and ethical AI use</td>
+                        <td>Compliance checklist, ethics guidelines</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Monitoring & Assurance</strong></td>
+                        <td>Verify ongoing compliance</td>
+                        <td>Audit program, KPIs, incident response</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 id="risk"><i class="fas fa-exclamation-triangle"></i> 3. AI Risk Classification</h2>
+            <p>Classify AI use cases based on risk level to apply appropriate controls:</p>
+
+            <div class="risk-category risk-high">
+                <h4 style="color: var(--accent-red);"><i class="fas fa-times-circle"></i> High Risk / Prohibited</h4>
+                <p><strong>Description:</strong> AI applications that pose unacceptable risks to safety, rights, or
+                    regulatory compliance.</p>
+                <p><strong>Examples:</strong></p>
+                <ul>
+                    <li>Autonomous decisions affecting employment, credit, or legal matters without human review</li>
+                    <li>Processing sensitive personal data (health, biometric, financial) without explicit consent</li>
+                    <li>Real-time biometric identification in public spaces</li>
+                    <li>Social scoring or manipulation of behavior</li>
+                </ul>
+                <p><strong>Controls:</strong> Prohibited without extensive review and approval by legal, compliance, and
+                    executive leadership.</p>
+            </div>
+
+            <div class="risk-category risk-medium">
+                <h4 style="color: #f59e0b;"><i class="fas fa-exclamation-circle"></i> Medium Risk</h4>
+                <p><strong>Description:</strong> AI applications with significant impact requiring human oversight and
+                    controls.</p>
+                <p><strong>Examples:</strong></p>
+                <ul>
+                    <li>Customer-facing AI assistants and chatbots</li>
+                    <li>AI-assisted content creation for external publication</li>
+                    <li>Code generation with Copilot for production systems</li>
+                    <li>Data analysis and business intelligence</li>
+                </ul>
+                <p><strong>Controls:</strong> Require approval from department head, human review of outputs, data
+                    handling agreements, and regular monitoring.</p>
+            </div>
+
+            <div class="risk-category risk-low">
+                <h4 style="color: var(--accent-green);"><i class="fas fa-check-circle"></i> Low Risk / General Use</h4>
+                <p><strong>Description:</strong> AI applications for productivity with minimal organizational risk.</p>
+                <p><strong>Examples:</strong></p>
+                <ul>
+                    <li>Grammar and writing assistance (with no sensitive data)</li>
+                    <li>Meeting summarization (internal meetings only)</li>
+                    <li>Code explanation and learning assistance</li>
+                    <li>Public information research</li>
+                </ul>
+                <p><strong>Controls:</strong> General acceptable use policy awareness, no sensitive data prohibition,
+                    training completion.</p>
+            </div>
+
+            <h2 id="policy"><i class="fas fa-file-alt"></i> 4. Acceptable Use Policies</h2>
+            <p>Your AI acceptable use policy should address these critical areas:</p>
+
+            <h3>Approved vs. Prohibited Activities</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th><i class="fas fa-check" style="color: var(--accent-green);"></i> Approved</th>
+                        <th><i class="fas fa-times" style="color: var(--accent-red);"></i> Prohibited</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Drafting internal communications</td>
+                        <td>Inputting confidential business data</td>
+                    </tr>
+                    <tr>
+                        <td>Researching public information</td>
+                        <td>Sharing customer PII with AI tools</td>
+                    </tr>
+                    <tr>
+                        <td>Code review and explanation</td>
+                        <td>Using AI for final decisions without review</td>
+                    </tr>
+                    <tr>
+                        <td>Brainstorming and ideation</td>
+                        <td>Creating deepfakes or deceptive content</td>
+                    </tr>
+                    <tr>
+                        <td>Learning and skill development</td>
+                        <td>Bypassing security controls</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Data Classification for AI</h3>
+            <ul>
+                <li><strong>Public Data:</strong> Can be used with any approved AI tool</li>
+                <li><strong>Internal Data:</strong> Only with enterprise-licensed AI tools (e.g., Microsoft 365 Copilot
+                    with data residency)</li>
+                <li><strong>Confidential Data:</strong> Only with approved on-premise or air-gapped AI solutions</li>
+                <li><strong>Restricted/PII Data:</strong> Generally prohibited from AI tools; requires explicit CISO
+                    approval</li>
+            </ul>
+
+            <h2 id="data"><i class="fas fa-database"></i> 5. Data Protection & Privacy</h2>
+
+            <h3>Key Data Protection Requirements</h3>
+            <ul>
+                <li><strong>Data Minimization:</strong> Only share data absolutely necessary for the AI task</li>
+                <li><strong>Anonymization:</strong> Remove PII before using data with external AI services</li>
+                <li><strong>Vendor Agreements:</strong> Ensure AI vendors have appropriate DPAs (Data Processing
+                    Agreements)</li>
+                <li><strong>Data Residency:</strong> Verify where AI providers process and store data (especially for EU
+                    data)</li>
+                <li><strong>Training Data Opt-Out:</strong> Configure AI tools to not use your data for model training
+                </li>
+            </ul>
+
+            <div class="warning-box">
+                <strong><i class="fas fa-exclamation-triangle"></i> Critical:</strong> Public ChatGPT, Claude, and
+                similar free services may use your inputs for training. Use enterprise versions with appropriate data
+                handling agreements for any business data.
+            </div>
+
+            <h2 id="security"><i class="fas fa-shield-alt"></i> 6. AI Security Considerations</h2>
+
+            <h3>AI-Specific Security Risks</h3>
+            <ul>
+                <li><strong>Prompt Injection:</strong> Malicious inputs that manipulate AI behavior</li>
+                <li><strong>Data Exfiltration:</strong> AI tools leaking sensitive information in responses</li>
+                <li><strong>Model Poisoning:</strong> Corrupted training data affecting AI outputs</li>
+                <li><strong>Supply Chain Risk:</strong> Third-party AI models with unknown vulnerabilities</li>
+            </ul>
+
+            <h3>Security Controls</h3>
+            <ul>
+                <li>Deploy DLP (Data Loss Prevention) to monitor AI tool usage</li>
+                <li>Use enterprise AI tools with SSO and audit logging</li>
+                <li>Implement network controls to block unapproved AI services</li>
+                <li>Regular security assessments of AI integrations</li>
+            </ul>
+
+            <h2 id="euai"><i class="fas fa-euro-sign"></i> 7. EU AI Act Compliance</h2>
+            <p>The EU AI Act is the world's first comprehensive AI regulation. Key compliance requirements:</p>
+
+            <h3>Risk-Based Classification</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Examples</th>
+                        <th>Requirements</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="color: #000; background: #ef4444;"><strong>Unacceptable Risk</strong></td>
+                        <td>Social scoring, manipulation</td>
+                        <td>Prohibited</td>
+                    </tr>
+                    <tr>
+                        <td style="color: #000; background: #f59e0b;"><strong>High Risk</strong></td>
+                        <td>Employment, credit, education AI</td>
+                        <td>Conformity assessment, human oversight, logging</td>
+                    </tr>
+                    <tr>
+                        <td style="color: #000; background: #3B82F6;"><strong>Limited Risk</strong></td>
+                        <td>Chatbots, content generation</td>
+                        <td>Transparency requirements</td>
+                    </tr>
+                    <tr>
+                        <td style="color: #000; background: #10b981;"><strong>Minimal Risk</strong></td>
+                        <td>Spam filters, games</td>
+                        <td>No specific requirements</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Key Obligations (Effective Feb 2025)</h3>
+            <ul>
+                <li><strong>Transparency:</strong> Disclose when content is AI-generated or when users interact with AI
+                </li>
+                <li><strong>Human Oversight:</strong> Maintain human control over high-risk AI systems</li>
+                <li><strong>Technical Documentation:</strong> Document AI system design, training data, and performance
+                </li>
+                <li><strong>Risk Assessment:</strong> Conduct and maintain AI risk assessments</li>
+            </ul>
+
+            <h2 id="roles"><i class="fas fa-users"></i> 8. Roles & Responsibilities</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Role</th>
+                        <th>Responsibilities</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>AI Governance Committee</strong></td>
+                        <td>Strategy, policy approval, high-risk decisions, oversight</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Chief AI Officer / AI Lead</strong></td>
+                        <td>Framework ownership, stakeholder coordination, reporting</td>
+                    </tr>
+                    <tr>
+                        <td><strong>CISO / Security Team</strong></td>
+                        <td>AI security controls, DLP, vendor security assessment</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Legal / Compliance</strong></td>
+                        <td>Regulatory compliance, contracts, IP review</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Data Privacy Officer</strong></td>
+                        <td>GDPR/privacy compliance, data handling standards</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Business Unit Leaders</strong></td>
+                        <td>Use case identification, risk acceptance, training enforcement</td>
+                    </tr>
+                    <tr>
+                        <td><strong>All Employees</strong></td>
+                        <td>Policy compliance, training completion, incident reporting</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 id="monitoring"><i class="fas fa-chart-line"></i> 9. Monitoring & Oversight</h2>
+
+            <h3>Key Performance Indicators</h3>
+            <ul>
+                <li>Percentage of employees completing AI training</li>
+                <li>Number of AI use cases reviewed and approved</li>
+                <li>AI-related security incidents</li>
+                <li>Policy violations detected</li>
+                <li>Shadow AI usage (unapproved tools)</li>
+            </ul>
+
+            <h3>Audit Program</h3>
+            <ul>
+                <li>Quarterly review of approved AI tools and usage patterns</li>
+                <li>Annual AI governance framework assessment</li>
+                <li>Incident-triggered reviews for policy violations</li>
+                <li>Third-party AI vendor security assessments</li>
+            </ul>
+
+            <h2 id="templates"><i class="fas fa-file-signature"></i> 10. Policy Templates</h2>
+
+            <h3>Sample Policy Statement</h3>
+            <div class="policy-template">
+                <strong>AI ACCEPTABLE USE POLICY</strong><br><br>
+                <strong>Purpose:</strong> This policy establishes guidelines for the responsible use of artificial
+                intelligence tools by [Organization] employees.<br><br>
+                <strong>Scope:</strong> All employees, contractors, and third parties using AI tools for [Organization]
+                business.<br><br>
+                <strong>Key Requirements:</strong><br>
+                1. Only approved AI tools may be used for business purposes<br>
+                2. Confidential, restricted, or personal data must NOT be entered into AI tools<br>
+                3. AI-generated outputs must be reviewed by humans before use in decisions<br>
+                4. All AI use must comply with applicable laws and regulations<br>
+                5. Violations must be reported to [contact]<br><br>
+                <strong>Approved Tools:</strong> [List enterprise-approved AI tools]<br>
+                <strong>Effective Date:</strong> [Date]<br>
+                <strong>Policy Owner:</strong> [Title]
+            </div>
+
+            <div class="success-box">
+                <strong><i class="fas fa-check-circle"></i> Next Steps:</strong>
+                <ol style="margin-top: 0.5rem; margin-bottom: 0;">
+                    <li>Inventory current AI tool usage across the organization</li>
+                    <li>Establish an AI governance committee with key stakeholders</li>
+                    <li>Draft and approve an AI acceptable use policy</li>
+                    <li>Deploy training for all employees</li>
+                    <li>Implement technical controls (DLP, approved tool list)</li>
+                    <li>Establish ongoing monitoring and review processes</li>
+                </ol>
+            </div>
+
+            <h2><i class="fas fa-link"></i> Related Guides</h2>
+            <ul>
+                <li><a href="/guides/llm-security-prompt-injection.html" style="color: var(--accent-cyan);">LLM
+                        Security: Prompt Injection & Jailbreaks</a></li>
+                <li><a href="/guides/securing-ai-ml-pipelines.html" style="color: var(--accent-cyan);">Securing AI/ML
+                        Pipelines</a></li>
+                <li><a href="/guides/dora-compliance.html" style="color: var(--accent-cyan);">DORA Compliance Guide</a>
+                </li>
+            </ul>
+
+            <p
+                style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); color: var(--text-muted);">
+                <strong>Author:</strong> TheHGTech Security Team<br>
+                <strong>Last Updated:</strong> December 2025<br>
+                <strong>Reading Time:</strong> 18 minutes
+            </p>
+        </div>
+
+        <div class="interaction-bar">
+            <div class="like-section">
+                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                    <i class="far fa-heart"></i> <span id="likeText">Like this guide</span>
+                </button>
+            </div>
+            <div class="action-buttons">
+                <div class="share-buttons">
+                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <button onclick="copyLink()" class="share-btn" title="Copy Link"><i
+                            class="fas fa-link"></i></button>
+                </div>
+                <div class="button-separator"></div>
+                <button onclick="printArticle()" class="print-btn" title="Print"><i class="fas fa-print"></i></button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TheHGTech. All rights reserved.</p>
+    </footer>
+
+    <script src="/header.js"></script>
+    <script src="/interaction-bar.js?v=20251217"></script>
+</body>
+
+</html>

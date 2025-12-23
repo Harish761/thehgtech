@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splunk SPL Query Guide 2025 | Search Processing Language | TheHGTech</title>
+    <meta name="description"
+        content="Complete Splunk SPL query guide for SOC analysts. Learn search commands, filters, stats, transformations, and security use cases. SPL cheatsheet included.">
+    <meta name="keywords"
+        content="Splunk SPL, Splunk queries, SPL commands, Splunk search, SOC analyst Splunk, SIEM queries, Splunk cheatsheet, security monitoring Splunk">
+    <link rel="canonical" href="https://thehgtech.com/guides/splunk-spl-guide.html">
+    <meta property="og:title" content="Splunk SPL Query Guide 2025">
+    <meta property="og:image" content="https://thehgtech.com/images/guides/splunk-spl-guide.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251217">
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <script src="/m-app.js?v=4.3" defer></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF4C4C;
+            --accent-green: #10b981;
+            --text-primary: #fff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 80px auto 0;
+            padding: 2rem;
+        }
+
+        .guide-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .guide-header h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, #10b981, var(--accent-cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        .new-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #FF4C4C, #ff8c8c);
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            margin-left: 1rem;
+        }
+
+        .guide-meta {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .featured-image {
+            width: 100%;
+            border-radius: 12px;
+            margin: 2rem 0;
+            box-shadow: 0 10px 40px rgba(16, 185, 129, 0.2);
+            border: 1px solid var(--border);
+        }
+
+        .content {
+            margin-top: 3rem;
+        }
+
+        .content h2 {
+            color: var(--accent-green);
+            font-size: 1.8rem;
+            margin: 2.5rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-green);
+        }
+
+        .content h3 {
+            color: var(--text-primary);
+            font-size: 1.3rem;
+            margin: 1.5rem 0 1rem;
+        }
+
+        .content p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .content ul,
+        .content ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        .content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .toc {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .toc h3 {
+            color: var(--accent-cyan);
+            margin-bottom: 1rem;
+        }
+
+        .toc ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .toc a {
+            color: var(--text-secondary);
+            text-decoration: none;
+        }
+
+        .info-box {
+            background: rgba(0, 217, 255, 0.1);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .warning-box {
+            background: rgba(255, 76, 76, 0.1);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .success-box {
+            background: rgba(16, 185, 129, 0.1);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        pre {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+
+        code {
+            font-family: 'Fira Code', 'Courier New', monospace;
+            color: var(--accent-cyan);
+            font-size: 0.9rem;
+        }
+
+        .command-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+
+        .command-table th,
+        .command-table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .command-table th {
+            background: rgba(16, 185, 129, 0.1);
+            color: var(--accent-green);
+        }
+
+        .command-table td {
+            color: var(--text-secondary);
+        }
+
+        .command-table code {
+            background: var(--bg-card);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+        }
+
+        footer {
+            margin-top: 5rem;
+            padding-top: 3rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="m-header m-only">
+        <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px;">
+            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px;">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">TheHGTech</span>
+        </div>
+        <div class="m-header__actions">
+            <button class="m-theme-toggle" onclick="mToggleTheme()"><span class="m-theme-toggle__thumb"></span></button>
+            <button class="m-header__btn" data-action="search"><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item"><i class="fas fa-bug"></i><span>CVE</span></a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item"><i class="fas fa-shield-alt"></i><span>Intel</span></a>
+        <a href="/articles.html" class="m-bottom-nav__item"><i class="fas fa-newspaper"></i><span>Articles</span></a>
+        <a href="/guides/" class="m-bottom-nav__item active"><i class="fas fa-book"></i><span>Guides</span></a>
+    </nav>
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo"><a href="../index.html"
+                    style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;"><img
+                        src="../logo-dark.png" class="logo-img logo-dark"><img src="../logo-light.png"
+                        class="logo-img logo-light"><span class="logo-text">TheHGTech</span></a></div>
+            <nav class="nav" role="navigation">
+                <a href="../index.html#news">News</a>
+                <a href="../threat-intel.html">Threat Intelligence <span class="live-badge">LIVE</span></a>
+                <a href="../cve-tracker.html">CVE</a>
+                <a href="../guides/">Guides</a>
+                <a href="../comparisons/">Tool Comparisons</a>
+                <a href="../articles.html">Articles</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <a href="/guides/"
+            style="color: var(--accent-cyan); text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; margin-bottom: 2rem;"><i
+                class="fas fa-arrow-left"></i> Back to Guides</a>
+
+        <div class="guide-header">
+            <h1><i class="fas fa-terminal"></i> Splunk SPL Query Guide <span class="new-badge"><i
+                        class="fas fa-fire"></i> NEW</span></h1>
+            <p style="color: var(--text-muted); font-size: 1.1rem;">Master Search Processing Language for security
+                monitoring and threat detection</p>
+            <div class="guide-meta">
+                <span><i class="fas fa-book-open"></i> 20 min read</span>
+                <span><i class="fas fa-crosshairs"></i> Beginner to Intermediate</span>
+                <span><i class="far fa-calendar-alt"></i> December 2025</span>
+            </div>
+        </div>
+
+        <img src="/images/guides/splunk-spl-guide.png" alt="Splunk SPL Query Guide" class="featured-image">
+
+        <div class="info-box">
+            <strong><i class="fas fa-lightbulb"></i> Why SPL Matters:</strong> Splunk is deployed in 92% of Fortune 100
+            companies. SPL (Search Processing Language) is the query language for extracting insights from machine data.
+            Mastering SPL is essential for any SOC analyst.
+        </div>
+
+        <div class="toc">
+            <h3><i class="fas fa-list-ul"></i> Table of Contents</h3>
+            <ul>
+                <li><a href="#basics">1. SPL Basics & Syntax</a></li>
+                <li><a href="#search">2. Search Commands</a></li>
+                <li><a href="#filtering">3. Filtering & Field Extraction</a></li>
+                <li><a href="#stats">4. Statistical Commands</a></li>
+                <li><a href="#transforming">5. Transforming Commands</a></li>
+                <li><a href="#subsearch">6. Subsearches & Joins</a></li>
+                <li><a href="#security">7. Security Use Cases</a></li>
+                <li><a href="#optimization">8. Query Optimization</a></li>
+                <li><a href="#cheatsheet">9. SPL Cheatsheet</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2 id="basics"><i class="fas fa-code"></i> 1. SPL Basics & Syntax</h2>
+            <p>SPL searches follow a pipeline model where data flows from left to right through a series of commands:
+            </p>
+
+            <pre><code>search_terms | command1 | command2 | command3</code></pre>
+
+            <h3>Basic Search Structure</h3>
+            <pre><code>index=security sourcetype=wineventlog EventCode=4625
+| stats count by src_ip, user
+| sort -count
+| head 10</code></pre>
+
+            <h3>Key Concepts</h3>
+            <ul>
+                <li><strong>Index:</strong> Where data is stored (e.g., <code>index=main</code>,
+                    <code>index=security</code>)</li>
+                <li><strong>Sourcetype:</strong> The format of data (e.g., <code>sourcetype=syslog</code>)</li>
+                <li><strong>Fields:</strong> Key-value pairs in events (e.g., <code>src_ip</code>, <code>user</code>)
+                </li>
+                <li><strong>Time Range:</strong> Use time picker or <code>earliest</code>/<code>latest</code> modifiers
+                </li>
+                <li><strong>Wildcards:</strong> Use <code>*</code> for pattern matching</li>
+            </ul>
+
+            <h2 id="search"><i class="fas fa-search"></i> 2. Search Commands</h2>
+
+            <table class="command-table">
+                <thead>
+                    <tr>
+                        <th>Command</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>search</code></td>
+                        <td>Filter events (implicit)</td>
+                        <td><code>search error OR failed</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>where</code></td>
+                        <td>Filter with expressions</td>
+                        <td><code>where count > 100</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>dedup</code></td>
+                        <td>Remove duplicate events</td>
+                        <td><code>dedup src_ip</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>head</code></td>
+                        <td>Return first N results</td>
+                        <td><code>head 10</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>tail</code></td>
+                        <td>Return last N results</td>
+                        <td><code>tail 20</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>sort</code></td>
+                        <td>Order results</td>
+                        <td><code>sort -count</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>reverse</code></td>
+                        <td>Reverse result order</td>
+                        <td><code>reverse</code></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 id="filtering"><i class="fas fa-filter"></i> 3. Filtering & Field Extraction</h2>
+
+            <h3>Field Commands</h3>
+            <table class="command-table">
+                <thead>
+                    <tr>
+                        <th>Command</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>fields</code></td>
+                        <td>Include/exclude fields</td>
+                        <td><code>fields src_ip, dest_ip, action</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>table</code></td>
+                        <td>Display as table</td>
+                        <td><code>table _time, user, action</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>rename</code></td>
+                        <td>Rename fields</td>
+                        <td><code>rename src_ip as Source_IP</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>eval</code></td>
+                        <td>Create/modify fields</td>
+                        <td><code>eval status=if(action="allowed","OK","BLOCKED")</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>rex</code></td>
+                        <td>Extract with regex</td>
+                        <td><code>rex field=_raw "user=(?&lt;username&gt;\w+)"</code></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Common eval Functions</h3>
+            <pre><code>| eval lower_user = lower(user)
+| eval bytes_mb = bytes / 1024 / 1024
+| eval time_diff = now() - _time
+| eval is_internal = if(cidrmatch("10.0.0.0/8", src_ip), "yes", "no")</code></pre>
+
+            <h2 id="stats"><i class="fas fa-chart-bar"></i> 4. Statistical Commands</h2>
+
+            <table class="command-table">
+                <thead>
+                    <tr>
+                        <th>Command</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>stats</code></td>
+                        <td>Calculate statistics</td>
+                        <td><code>stats count, avg(duration) by user</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>eventstats</code></td>
+                        <td>Add stats to each event</td>
+                        <td><code>eventstats avg(bytes) as avg_bytes</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>streamstats</code></td>
+                        <td>Running stats</td>
+                        <td><code>streamstats count as event_num</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>timechart</code></td>
+                        <td>Time-based stats</td>
+                        <td><code>timechart span=1h count by action</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>chart</code></td>
+                        <td>Arbitrary stats chart</td>
+                        <td><code>chart count over action by user</code></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Stats Functions</h3>
+            <pre><code>| stats count                    -- Count events
+| stats dc(user) as unique_users -- Distinct count
+| stats sum(bytes) as total      -- Sum values
+| stats avg(duration)            -- Average
+| stats min(timestamp), max(timestamp)
+| stats values(action) as actions -- List unique values
+| stats list(user) as all_users  -- List all values</code></pre>
+
+            <h2 id="transforming"><i class="fas fa-exchange-alt"></i> 5. Transforming Commands</h2>
+
+            <pre><code>-- Top values
+| top 10 src_ip
+
+-- Rare values (opposite of top)
+| rare user
+
+-- Transaction grouping
+| transaction user maxspan=30m
+
+-- Cluster similar events
+| cluster showcount=t</code></pre>
+
+            <h2 id="subsearch"><i class="fas fa-code-branch"></i> 6. Subsearches & Joins</h2>
+
+            <h3>Subsearch Example</h3>
+            <pre><code>index=security action=blocked
+[search index=threat_intel 
+ | fields ip 
+ | rename ip as src_ip]</code></pre>
+
+            <h3>Join Example</h3>
+            <pre><code>index=authentication
+| join user [search index=hr_data | fields user, department]
+| table user, department, action</code></pre>
+
+            <h3>Lookup Example</h3>
+            <pre><code>| lookup geo_ip_lookup ip as src_ip OUTPUT country, city
+| stats count by country</code></pre>
+
+            <h2 id="security"><i class="fas fa-shield-alt"></i> 7. Security Use Cases</h2>
+
+            <h3>Failed Logins Detection</h3>
+            <pre><code>index=wineventlog EventCode=4625
+| stats count by src_ip, user
+| where count > 10
+| sort -count</code></pre>
+
+            <h3>Brute Force Detection</h3>
+            <pre><code>index=auth action=failure
+| bin _time span=5m
+| stats count by _time, src_ip, user
+| where count > 20
+| eval attack="Possible Brute Force"</code></pre>
+
+            <h3>Unusual Process Execution</h3>
+            <pre><code>index=sysmon EventCode=1
+| rare limit=20 process_name
+| where count < 5</code></pre>
+
+            <h3>Data Exfiltration Detection</h3>
+            <pre><code>index=proxy
+| stats sum(bytes_out) as total_bytes by src_ip
+| where total_bytes > 1073741824
+| eval GB = round(total_bytes/1024/1024/1024, 2)
+| table src_ip, GB</code></pre>
+
+            <h3>Lateral Movement Detection</h3>
+            <pre><code>index=wineventlog EventCode=4624 Logon_Type=3
+| stats dc(dest) as unique_hosts by src_ip, user
+| where unique_hosts > 10
+| sort -unique_hosts</code></pre>
+
+            <h2 id="optimization"><i class="fas fa-tachometer-alt"></i> 8. Query Optimization</h2>
+
+            <div class="success-box">
+                <strong><i class="fas fa-check-circle"></i> Performance Tips:</strong>
+                <ul style="margin-top: 0.5rem; margin-bottom: 0;">
+                    <li>Always specify <code>index</code> and <code>sourcetype</code></li>
+                    <li>Use time ranges to limit search scope</li>
+                    <li>Filter early in the pipeline (before stats)</li>
+                    <li>Use <code>fields</code> to limit returned data</li>
+                    <li>Avoid wildcards at the beginning of terms</li>
+                    <li>Use <code>tstats</code> for indexed fields (faster)</li>
+                </ul>
+            </div>
+
+            <h2 id="cheatsheet"><i class="fas fa-clipboard-list"></i> 9. SPL Cheatsheet</h2>
+
+            <pre><code>-- TIME MODIFIERS --
+earliest=-24h latest=now
+earliest=-7d@d latest=@d
+
+-- BOOLEAN OPERATORS --
+AND, OR, NOT
+field=value1 OR field=value2
+NOT (action=allowed)
+
+-- COMPARISON OPERATORS --
+=, !=, <, >, <=, >=
+field="exact match"
+field=*wildcard*
+
+-- COMMON PATTERNS --
+index=security sourcetype=* | stats count by sourcetype
+index=* | rare _sourcetype
+| makeresults | eval test="hello"
+
+-- ALERTING PATTERN --
+index=security action=blocked
+| stats count
+| where count > 100</code></pre>
+
+            <h2><i class="fas fa-link"></i> Related Guides</h2>
+            <ul>
+                <li><a href="/guides/siem-log-analysis.html" style="color: var(--accent-cyan);">SIEM Log Analysis
+                        Guide</a></li>
+                <li><a href="/guides/threat-hunting-techniques.html" style="color: var(--accent-cyan);">Threat Hunting
+                        Techniques</a></li>
+                <li><a href="/guides/soc-analyst-fundamentals.html" style="color: var(--accent-cyan);">SOC Analyst
+                        Fundamentals</a></li>
+            </ul>
+
+            <p
+                style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); color: var(--text-muted);">
+                <strong>Author:</strong> TheHGTech Security Team<br>
+                <strong>Last Updated:</strong> December 2025<br>
+                <strong>Reading Time:</strong> 20 minutes
+            </p>
+        </div>
+
+        <div class="interaction-bar">
+            <div class="like-section"><button class="like-btn" id="likeBtn" onclick="toggleLike()"><i
+                        class="far fa-heart"></i> <span id="likeText">Like this guide</span></button></div>
+            <div class="action-buttons">
+                <div class="share-buttons">
+                    <a href="#" onclick="shareTwitter(event)" class="share-btn"><i class="fab fa-twitter"></i></a>
+                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn"><i class="fab fa-linkedin-in"></i></a>
+                    <button onclick="copyLink()" class="share-btn"><i class="fas fa-link"></i></button>
+                </div>
+                <div class="button-separator"></div>
+                <button onclick="printArticle()" class="print-btn"><i class="fas fa-print"></i></button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 TheHGTech. All rights reserved.</p>
+    </footer>
+    <script src="/header.js"></script>
+    <script src="/interaction-bar.js?v=20251217"></script>
+</body>
+
+</html>

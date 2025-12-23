@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>DORA Compliance Guide 2025 | Digital Operational Resilience Act | TheHGTech</title>
+    <meta name="title" content="DORA Compliance Guide 2025 | Digital Operational Resilience Act | TheHGTech">
+    <meta name="description"
+        content="Complete DORA compliance guide for financial institutions. Learn the 5 pillars: ICT risk management, incident reporting, resilience testing, third-party risk, and information sharing. Enforceable January 17, 2025.">
+    <meta name="keywords"
+        content="DORA compliance, Digital Operational Resilience Act, EU financial regulation, ICT risk management, operational resilience, third-party risk, incident reporting, resilience testing, DORA 2025">
+    <meta name="author" content="TheHGTech">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thehgtech.com/guides/dora-compliance.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/guides/dora-compliance.html">
+    <meta property="og:title" content="DORA Compliance Guide 2025 | Digital Operational Resilience Act">
+    <meta property="og:description"
+        content="Complete guide to DORA compliance for EU financial institutions. 5 pillars explained.">
+    <meta property="og:image" content="https://thehgtech.com/images/guides/dora-compliance.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://thehgtech.com/guides/dora-compliance.html">
+    <meta name="twitter:title" content="DORA Compliance Guide 2025">
+    <meta name="twitter:description" content="Complete DORA compliance guide for financial institutions.">
+    <meta name="twitter:image" content="https://thehgtech.com/images/guides/dora-compliance.png">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "DORA Compliance Guide 2025: Digital Operational Resilience Act",
+      "description": "Complete guide to DORA compliance covering ICT risk management, incident reporting, resilience testing, third-party risk, and information sharing for EU financial institutions",
+      "image": "https://thehgtech.com/images/guides/dora-compliance.png",
+      "author": {
+        "@type": "Organization",
+        "name": "TheHGTech"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TheHGTech",
+        "url": "https://thehgtech.com"
+      },
+      "datePublished": "2025-12-23",
+      "dateModified": "2025-12-23",
+      "proficiencyLevel": "Intermediate",
+      "wordCount": 4200
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251217">
+
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <script src="/m-app.js?v=4.3" defer></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF4C4C;
+            --accent-green: #10b981;
+            --accent-orange: #f59e0b;
+            --accent-purple: #8b5cf6;
+            --accent-gold: #FFD700;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 80px auto 0;
+            padding: 2rem;
+        }
+
+        .guide-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .guide-header h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, var(--accent-gold), var(--accent-cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+
+        .new-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #FF4C4C, #ff8c8c);
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            margin-left: 1rem;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.8;
+                transform: scale(1.05);
+            }
+        }
+
+        .guide-meta {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            flex-wrap: wrap;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .featured-image {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin: 2rem 0;
+            box-shadow: 0 10px 40px rgba(255, 215, 0, 0.2);
+            border: 1px solid var(--border);
+        }
+
+        .content {
+            margin-top: 3rem;
+        }
+
+        .content h2 {
+            color: var(--accent-gold);
+            font-size: 1.8rem;
+            margin: 2.5rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-gold);
+        }
+
+        .content h3 {
+            color: var(--text-primary);
+            font-size: 1.3rem;
+            margin: 1.5rem 0 1rem;
+        }
+
+        .content p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .content ul,
+        .content ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        .content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .content code {
+            background: var(--bg-card);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: var(--accent-cyan);
+            font-size: 0.9em;
+        }
+
+        .toc {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .toc h3 {
+            color: var(--accent-cyan);
+            margin-bottom: 1rem;
+        }
+
+        .toc ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .toc li {
+            margin-bottom: 0.5rem;
+        }
+
+        .toc a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .toc a:hover {
+            color: var(--accent-cyan);
+        }
+
+        .info-box {
+            background: rgba(0, 217, 255, 0.1);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .warning-box {
+            background: rgba(255, 76, 76, 0.1);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .success-box {
+            background: rgba(16, 185, 129, 0.1);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .pillar-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .pillar-box h4 {
+            color: var(--accent-gold);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .pillar-number {
+            background: var(--accent-gold);
+            color: #000;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: rgba(255, 215, 0, 0.1);
+            color: var(--accent-gold);
+            font-weight: 600;
+        }
+
+        td {
+            color: var(--text-secondary);
+        }
+
+        .timeline {
+            border-left: 3px solid var(--accent-gold);
+            padding-left: 2rem;
+            margin: 2rem 0;
+        }
+
+        .timeline-item {
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2.35rem;
+            top: 0.5rem;
+            width: 12px;
+            height: 12px;
+            background: var(--accent-gold);
+            border-radius: 50%;
+        }
+
+        .timeline-date {
+            color: var(--accent-gold);
+            font-weight: 600;
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .checklist {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .checklist li {
+            padding: 0.75rem 0;
+            padding-left: 2rem;
+            position: relative;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .checklist li::before {
+            content: '\f0c8';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 400;
+            position: absolute;
+            left: 0;
+            color: var(--accent-gold);
+        }
+
+        footer {
+            margin-top: 5rem;
+            padding-top: 3rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--text-muted);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+                margin-top: 60px;
+            }
+
+            .guide-header h1 {
+                font-size: 1.8rem;
+            }
+
+            .guide-meta {
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Mobile Header -->
+    <header class="m-header m-only">
+        <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark"
+                style="height: 28px; width: auto; margin: 0;">
+            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light"
+                style="height: 28px; width: auto; margin: 0;">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+        </div>
+        <div class="m-header__actions">
+            <button class="m-theme-toggle" onclick="mToggleTheme()" aria-label="Toggle Theme">
+                <span class="m-theme-toggle__thumb"></span>
+                <span class="m-theme-toggle__stars"><span class="m-theme-toggle__star"></span><span
+                        class="m-theme-toggle__star"></span></span>
+            </button>
+            <button class="m-header__btn m-header__btn--search" data-action="search" aria-label="Search"><i
+                    class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <!-- Bottom Navigation -->
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item"><i class="fas fa-bug"></i><span>CVE</span></a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item"><i class="fas fa-shield-alt"></i><span>Intel</span></a>
+        <a href="/articles.html" class="m-bottom-nav__item"><i class="fas fa-newspaper"></i><span>Articles</span></a>
+        <a href="/guides/" class="m-bottom-nav__item active"><i class="fas fa-book"></i><span>Guides</span></a>
+    </nav>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <a href="../index.html"
+                    style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="../logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="../logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+            <nav class="nav" role="navigation">
+                <a href="../index.html#news">News</a>
+                <a href="../threat-intel.html">Threat Intelligence <span class="live-badge">LIVE</span></a>
+                <a href="../cve-tracker.html">CVE</a>
+                <a href="../guides/">Guides</a>
+                <a href="../comparisons/">Tool Comparisons</a>
+                <a href="../articles.html">Articles</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <a href="/guides/"
+            style="color: var(--accent-cyan); text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; margin-bottom: 2rem;"><i
+                class="fas fa-arrow-left"></i> Back to Guides</a>
+
+        <div class="guide-header">
+            <h1>DORA Compliance Guide 2025 <span class="new-badge"><i class="fas fa-fire"></i> NEW</span></h1>
+            <p style="color: var(--text-muted); font-size: 1.1rem;">Complete guide to the Digital Operational Resilience
+                Act for EU financial institutions</p>
+            <div class="guide-meta" style="margin-top: 1rem;">
+                <span class="meta-item"><i class="fas fa-book-open"></i> 20 min read</span>
+                <span class="meta-item"><i class="fas fa-crosshairs"></i> Intermediate</span>
+                <span class="meta-item"><i class="far fa-calendar-alt"></i> December 2025</span>
+            </div>
+        </div>
+
+        <img src="/images/guides/dora-compliance.png" alt="DORA Compliance Guide" class="featured-image">
+
+        <div class="warning-box">
+            <strong><i class="fas fa-exclamation-triangle"></i> Critical Deadline:</strong> DORA becomes fully
+            enforceable on <strong>January 17, 2025</strong>. Financial entities must have all requirements implemented
+            by this date or face significant penalties.
+        </div>
+
+        <div class="toc">
+            <h3><i class="fas fa-list-ul"></i> Table of Contents</h3>
+            <ul>
+                <li><a href="#overview">1. What is DORA?</a></li>
+                <li><a href="#scope">2. Who Must Comply?</a></li>
+                <li><a href="#pillars">3. The 5 Pillars of DORA</a></li>
+                <li><a href="#ict-risk">4. ICT Risk Management Framework</a></li>
+                <li><a href="#incident-reporting">5. Incident Reporting Requirements</a></li>
+                <li><a href="#resilience-testing">6. Digital Operational Resilience Testing</a></li>
+                <li><a href="#third-party">7. Third-Party ICT Risk Management</a></li>
+                <li><a href="#information-sharing">8. Information Sharing Arrangements</a></li>
+                <li><a href="#timeline">9. Implementation Timeline</a></li>
+                <li><a href="#checklist">10. Compliance Checklist</a></li>
+                <li><a href="#penalties">11. Penalties for Non-Compliance</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2 id="overview"><i class="fas fa-gavel"></i> 1. What is DORA?</h2>
+            <p>The <strong>Digital Operational Resilience Act (DORA)</strong> is a comprehensive EU regulation
+                (Regulation (EU) 2022/2554) that establishes a uniform framework for managing ICT (Information and
+                Communication Technology) risks in the financial sector.</p>
+
+            <p>DORA aims to ensure that financial entities can withstand, respond to, and recover from all types of
+                ICT-related disruptions and threats. It consolidates and upgrades ICT risk requirements that were
+                previously scattered across various EU financial services directives.</p>
+
+            <div class="info-box">
+                <strong><i class="fas fa-lightbulb"></i> Key Insight:</strong> Unlike previous regulations, DORA applies
+                directly across all EU member states without requiring national transposition. This creates a single,
+                harmonized set of ICT risk management rules for the entire EU financial sector.
+            </div>
+
+            <h3>Core Objectives</h3>
+            <ul>
+                <li><strong>Harmonization:</strong> Create consistent ICT risk management requirements across EU
+                    financial services</li>
+                <li><strong>Resilience:</strong> Ensure financial entities can operate through ICT disruptions</li>
+                <li><strong>Oversight:</strong> Establish regulatory supervision of critical ICT third-party providers
+                </li>
+                <li><strong>Transparency:</strong> Improve incident reporting and information sharing</li>
+            </ul>
+
+            <h2 id="scope"><i class="fas fa-building"></i> 2. Who Must Comply?</h2>
+            <p>DORA applies to a wide range of financial entities and, notably, to the ICT third-party service providers
+                that support them.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Entity Type</th>
+                        <th>Examples</th>
+                        <th>Compliance Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Credit Institutions</td>
+                        <td>Banks, building societies</td>
+                        <td>Full</td>
+                    </tr>
+                    <tr>
+                        <td>Investment Firms</td>
+                        <td>Broker-dealers, asset managers</td>
+                        <td>Full</td>
+                    </tr>
+                    <tr>
+                        <td>Insurance Companies</td>
+                        <td>Insurers, reinsurers</td>
+                        <td>Full</td>
+                    </tr>
+                    <tr>
+                        <td>Payment Institutions</td>
+                        <td>Payment processors, e-money issuers</td>
+                        <td>Full</td>
+                    </tr>
+                    <tr>
+                        <td>Crypto-Asset Service Providers</td>
+                        <td>Crypto exchanges, custodians</td>
+                        <td>Full</td>
+                    </tr>
+                    <tr>
+                        <td>ICT Third-Party Providers</td>
+                        <td>Cloud providers, SaaS vendors</td>
+                        <td>Oversight Framework</td>
+                    </tr>
+                    <tr>
+                        <td>Small/Micro Entities</td>
+                        <td>Fewer than 10 employees, &lt;€2M revenue</td>
+                        <td>Simplified</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="success-box">
+                <strong><i class="fas fa-check-circle"></i> Pro Tip:</strong> Even if your organization is not directly
+                subject to DORA, if you provide ICT services to EU financial entities, you will be indirectly affected.
+                Start reviewing your contracts and security practices now.
+            </div>
+
+            <h2 id="pillars"><i class="fas fa-columns"></i> 3. The 5 Pillars of DORA</h2>
+            <p>DORA is structured around five interconnected pillars that together form a comprehensive operational
+                resilience framework:</p>
+
+            <div class="pillar-box">
+                <h4><span class="pillar-number">1</span> ICT Risk Management</h4>
+                <p>Establish and maintain a robust ICT risk management framework with governance, identification,
+                    protection, detection, response, and recovery capabilities.</p>
+            </div>
+
+            <div class="pillar-box">
+                <h4><span class="pillar-number">2</span> ICT-Related Incident Reporting</h4>
+                <p>Classify, report, and manage ICT-related incidents according to harmonized criteria. Major incidents
+                    must be reported to competent authorities within strict timelines.</p>
+            </div>
+
+            <div class="pillar-box">
+                <h4><span class="pillar-number">3</span> Digital Operational Resilience Testing</h4>
+                <p>Conduct regular testing of ICT systems including vulnerability assessments, penetration testing, and
+                    threat-led penetration testing (TLPT) for significant entities.</p>
+            </div>
+
+            <div class="pillar-box">
+                <h4><span class="pillar-number">4</span> ICT Third-Party Risk Management</h4>
+                <p>Manage risks from ICT third-party providers including contractual requirements, ongoing monitoring,
+                    and exit strategies. Critical providers subject to direct EU oversight.</p>
+            </div>
+
+            <div class="pillar-box">
+                <h4><span class="pillar-number">5</span> Information Sharing Arrangements</h4>
+                <p>Participate in voluntary threat intelligence and information sharing arrangements with other
+                    financial entities and authorities.</p>
+            </div>
+
+            <h2 id="ict-risk"><i class="fas fa-shield-alt"></i> 4. ICT Risk Management Framework</h2>
+            <p>Article 5-16 of DORA establishes comprehensive requirements for ICT risk management. The management body
+                (Board/C-suite) bears ultimate responsibility.</p>
+
+            <h3>Governance Requirements</h3>
+            <ul>
+                <li>Management body must approve and oversee the ICT risk management framework</li>
+                <li>Allocate sufficient budget for ICT security and resilience</li>
+                <li>Appoint an ICT risk management function (separate from internal audit)</li>
+                <li>Define, approve, and review ICT security policies at least annually</li>
+                <li>Management body members must undergo ICT risk training</li>
+            </ul>
+
+            <h3>Framework Components</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Component</th>
+                        <th>Requirements</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Identification</strong></td>
+                        <td>Identify all ICT assets, systems, and their criticality. Document business functions and
+                            their ICT dependencies.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Protection</strong></td>
+                        <td>Implement security policies, access controls, encryption, network security, and physical
+                            security measures.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Detection</strong></td>
+                        <td>Deploy monitoring capabilities to detect anomalies, intrusions, and ICT-related incidents.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Response & Recovery</strong></td>
+                        <td>Establish incident response procedures, business continuity plans, and disaster recovery
+                            capabilities.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Learning & Evolution</strong></td>
+                        <td>Conduct post-incident reviews, incorporate lessons learned, and continuously improve.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 id="incident-reporting"><i class="fas fa-bell"></i> 5. Incident Reporting Requirements</h2>
+            <p>DORA establishes strict incident classification and reporting obligations (Articles 17-23).</p>
+
+            <h3>Incident Classification Criteria</h3>
+            <ul>
+                <li>Number of clients/counterparties affected</li>
+                <li>Duration of the incident</li>
+                <li>Geographical spread</li>
+                <li>Data losses (availability, authenticity, integrity, confidentiality)</li>
+                <li>Economic impact</li>
+                <li>Criticality of services affected</li>
+            </ul>
+
+            <div class="warning-box">
+                <strong><i class="fas fa-clock"></i> Reporting Timelines:</strong>
+                <ul style="margin-top: 0.5rem; margin-bottom: 0;">
+                    <li><strong>Initial notification:</strong> Within 4 hours of classification (24 hours for
+                        non-banking)</li>
+                    <li><strong>Intermediate report:</strong> Within 72 hours</li>
+                    <li><strong>Final report:</strong> Within 1 month of incident resolution</li>
+                </ul>
+            </div>
+
+            <h3>What Must Be Reported</h3>
+            <ul>
+                <li>Major ICT-related incidents as classified by DORA criteria</li>
+                <li>Significant cyber threats (voluntary but encouraged)</li>
+                <li>Incidents at critical ICT third-party providers affecting your operations</li>
+            </ul>
+
+            <h2 id="resilience-testing"><i class="fas fa-vial"></i> 6. Digital Operational Resilience Testing</h2>
+            <p>DORA mandates regular testing of ICT systems to validate resilience capabilities (Articles 24-27).</p>
+
+            <h3>Testing Requirements by Entity Type</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Test Type</th>
+                        <th>Frequency</th>
+                        <th>Applicable To</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Vulnerability Assessments</td>
+                        <td>Continuous / Regular</td>
+                        <td>All entities</td>
+                    </tr>
+                    <tr>
+                        <td>Network Security Testing</td>
+                        <td>At least annually</td>
+                        <td>All entities</td>
+                    </tr>
+                    <tr>
+                        <td>Penetration Testing</td>
+                        <td>At least annually</td>
+                        <td>All entities</td>
+                    </tr>
+                    <tr>
+                        <td>Source Code Review</td>
+                        <td>For critical systems</td>
+                        <td>All entities</td>
+                    </tr>
+                    <tr>
+                        <td>Scenario-Based Testing</td>
+                        <td>At least annually</td>
+                        <td>All entities</td>
+                    </tr>
+                    <tr>
+                        <td>Threat-Led Penetration Testing (TLPT)</td>
+                        <td>Every 3 years minimum</td>
+                        <td>Significant entities only</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>TLPT Requirements</h3>
+            <p>Threat-Led Penetration Testing based on the TIBER-EU framework is required for systemically important
+                financial entities:</p>
+            <ul>
+                <li>Must use external (independent) testers</li>
+                <li>Based on real threat intelligence</li>
+                <li>Cover critical or important functions</li>
+                <li>Include ICT third-party providers (with their agreement)</li>
+                <li>Competent authorities must be notified and may participate</li>
+            </ul>
+
+            <h2 id="third-party"><i class="fas fa-handshake"></i> 7. Third-Party ICT Risk Management</h2>
+            <p>DORA places significant emphasis on managing risks from ICT service providers (Articles 28-44).</p>
+
+            <h3>Pre-Contractual Due Diligence</h3>
+            <ul>
+                <li>Assess provider's ability to meet DORA requirements</li>
+                <li>Evaluate concentration risk (over-reliance on single providers)</li>
+                <li>Consider substitutability and exit strategies</li>
+                <li>Review provider's security certifications and audit reports</li>
+            </ul>
+
+            <h3>Mandatory Contractual Provisions</h3>
+            <p>All ICT service contracts must include:</p>
+            <ul>
+                <li>Clear description of services and performance levels (SLAs)</li>
+                <li>Location of data processing and storage</li>
+                <li>Provisions on data protection and access</li>
+                <li>Right to audit and access</li>
+                <li>Incident notification obligations</li>
+                <li>Exit strategies and transition assistance</li>
+                <li>Subcontracting conditions and limits</li>
+            </ul>
+
+            <div class="info-box">
+                <strong><i class="fas fa-eye"></i> Oversight Framework:</strong> Critical ICT third-party providers
+                (designated by ESAs) are subject to direct EU oversight including on-site inspections, recommendations,
+                and ultimately the power to impose penalties.
+            </div>
+
+            <h3>Register of ICT Third-Party Providers</h3>
+            <p>Financial entities must maintain a register of all ICT third-party arrangements containing:</p>
+            <ul>
+                <li>Provider identification details</li>
+                <li>Services provided and criticality assessment</li>
+                <li>Contract details and duration</li>
+                <li>Subcontractors and fourth-party dependencies</li>
+                <li>Data locations</li>
+            </ul>
+
+            <h2 id="information-sharing"><i class="fas fa-share-alt"></i> 8. Information Sharing Arrangements</h2>
+            <p>DORA encourages participation in cyber threat intelligence sharing (Article 45).</p>
+
+            <h3>Benefits of Participation</h3>
+            <ul>
+                <li>Early warning of emerging threats</li>
+                <li>Access to indicators of compromise (IOCs)</li>
+                <li>Collaborative defense against common adversaries</li>
+                <li>Benchmarking security practices</li>
+            </ul>
+
+            <h3>Requirements for Sharing Arrangements</h3>
+            <ul>
+                <li>Protect confidentiality of shared information</li>
+                <li>Handle personal data in compliance with GDPR</li>
+                <li>Notify competent authorities of participation</li>
+                <li>Define governance and liability frameworks</li>
+            </ul>
+
+            <h2 id="timeline"><i class="fas fa-calendar-check"></i> 9. Implementation Timeline</h2>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="timeline-date">December 2022</span>
+                    <span class="timeline-event">DORA officially published in the Official Journal of the EU</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">January 2023</span>
+                    <span class="timeline-event">DORA enters into force (20 days after publication)</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">2023-2024</span>
+                    <span class="timeline-event">ESAs (EBA, EIOPA, ESMA) develop Regulatory Technical Standards (RTS)
+                        and Implementing Technical Standards (ITS)</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">July 2024</span>
+                    <span class="timeline-event">First batch of RTS adopted by European Commission</span>
+                </div>
+                <div class="timeline-item"
+                    style="background: rgba(255, 215, 0, 0.1); padding: 1rem; border-radius: 8px; margin-left: -1rem;">
+                    <span class="timeline-date" style="font-size: 1.1rem;">January 17, 2025</span>
+                    <span class="timeline-event"><strong>DORA BECOMES FULLY APPLICABLE</strong> - All requirements must
+                        be implemented</span>
+                </div>
+            </div>
+
+            <h2 id="checklist"><i class="fas fa-tasks"></i> 10. Compliance Checklist</h2>
+
+            <h3>ICT Risk Management</h3>
+            <ul class="checklist">
+                <li>Establish ICT risk management framework approved by management body</li>
+                <li>Document all ICT assets, systems, and dependencies</li>
+                <li>Implement ICT security policies covering all DORA domains</li>
+                <li>Deploy detection and monitoring capabilities</li>
+                <li>Develop and test business continuity and disaster recovery plans</li>
+                <li>Allocate dedicated budget for ICT security</li>
+                <li>Provide ICT risk training to management body</li>
+            </ul>
+
+            <h3>Incident Management</h3>
+            <ul class="checklist">
+                <li>Implement incident classification process per DORA criteria</li>
+                <li>Establish incident response procedures</li>
+                <li>Create reporting templates and escalation paths</li>
+                <li>Configure systems for 4-hour reporting capability</li>
+                <li>Document post-incident review process</li>
+            </ul>
+
+            <h3>Resilience Testing</h3>
+            <ul class="checklist">
+                <li>Schedule annual penetration tests and vulnerability assessments</li>
+                <li>Plan TLPT if classified as significant entity</li>
+                <li>Document testing scope, results, and remediation</li>
+                <li>Include critical ICT providers in testing scope</li>
+            </ul>
+
+            <h3>Third-Party Risk</h3>
+            <ul class="checklist">
+                <li>Create register of all ICT third-party agreements</li>
+                <li>Review and update contracts with mandatory DORA clauses</li>
+                <li>Assess concentration risk across providers</li>
+                <li>Develop exit strategies for critical providers</li>
+                <li>Establish ongoing monitoring of provider security</li>
+            </ul>
+
+            <h2 id="penalties"><i class="fas fa-gavel"></i> 11. Penalties for Non-Compliance</h2>
+            <p>DORA empowers competent authorities to impose significant penalties:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Violation Type</th>
+                        <th>Potential Penalties</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Minor Infringements</td>
+                        <td>Public warnings, orders to cease conduct, administrative fines</td>
+                    </tr>
+                    <tr>
+                        <td>Significant Infringements</td>
+                        <td>Fines up to €5 million or 10% of annual turnover (for entities)</td>
+                    </tr>
+                    <tr>
+                        <td>Individual Liability</td>
+                        <td>Fines up to €500,000 for responsible persons</td>
+                    </tr>
+                    <tr>
+                        <td>Critical ICT Providers</td>
+                        <td>Periodic penalty payments up to 1% of daily worldwide turnover</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="success-box">
+                <strong><i class="fas fa-check-circle"></i> Next Steps:</strong>
+                <ol style="margin-top: 0.5rem; margin-bottom: 0;">
+                    <li>Conduct a DORA gap assessment against current practices</li>
+                    <li>Prioritize gaps based on risk and implementation effort</li>
+                    <li>Update contracts with ICT providers to include DORA clauses</li>
+                    <li>Implement or enhance incident reporting capabilities</li>
+                    <li>Schedule required testing activities</li>
+                </ol>
+            </div>
+
+            <h2><i class="fas fa-link"></i> Related Guides</h2>
+            <ul>
+                <li><a href="/guides/third-party-risk-management.html" style="color: var(--accent-cyan);">Third-Party
+                        Risk Management (TPRM) Guide</a></li>
+                <li><a href="/guides/incident-response-automation.html" style="color: var(--accent-cyan);">Incident
+                        Response Automation</a></li>
+                <li><a href="/guides/ransomware-response-playbook.html" style="color: var(--accent-cyan);">Ransomware
+                        Response Playbook</a></li>
+            </ul>
+
+            <p
+                style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); color: var(--text-muted);">
+                <strong>Author:</strong> TheHGTech Security Team<br>
+                <strong>Last Updated:</strong> December 2025<br>
+                <strong>Reading Time:</strong> 20 minutes
+            </p>
+        </div>
+
+        <!-- Interaction Bar -->
+        <div class="interaction-bar">
+            <div class="like-section">
+                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                    <i class="far fa-heart"></i> <span id="likeText">Like this guide</span>
+                </button>
+            </div>
+            <div class="action-buttons">
+                <div class="share-buttons">
+                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"
+                        aria-label="Share on Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"
+                        aria-label="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link"><i
+                            class="fas fa-link"></i></button>
+                </div>
+                <div class="button-separator"></div>
+                <button onclick="printArticle()" class="print-btn" title="Print" aria-label="Print"><i
+                        class="fas fa-print"></i></button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TheHGTech. All rights reserved.</p>
+    </footer>
+
+    <script src="/header.js"></script>
+    <script src="/interaction-bar.js?v=20251217"></script>
+</body>
+
+</html>

@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MITRE ATT&CK Mapping Guide 2025 | Threat Detection | TheHGTech</title>
+    <meta name="description"
+        content="Complete MITRE ATT&CK mapping guide. Learn tactics, techniques, and procedures (TTPs), detection engineering, threat actor mapping, and coverage analysis.">
+    <meta name="keywords"
+        content="MITRE ATT&CK, ATT&CK framework, threat mapping, TTPs, detection engineering, threat actor mapping, ATT&CK Navigator, security operations">
+    <link rel="canonical" href="https://thehgtech.com/guides/mitre-attack-mapping.html">
+    <meta property="og:title" content="MITRE ATT&CK Mapping Guide 2025">
+    <meta property="og:image" content="https://thehgtech.com/images/guides/mitre-attack-mapping.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251217">
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <script src="/m-app.js?v=4.3" defer></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF4C4C;
+            --accent-green: #10b981;
+            --accent-purple: #8b5cf6;
+            --text-primary: #fff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 80px auto 0;
+            padding: 2rem;
+        }
+
+        .guide-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .guide-header h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, var(--accent-purple), #3B82F6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        .new-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #FF4C4C, #ff8c8c);
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            margin-left: 1rem;
+        }
+
+        .guide-meta {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .featured-image {
+            width: 100%;
+            border-radius: 12px;
+            margin: 2rem 0;
+            box-shadow: 0 10px 40px rgba(139, 92, 246, 0.2);
+            border: 1px solid var(--border);
+        }
+
+        .content {
+            margin-top: 3rem;
+        }
+
+        .content h2 {
+            color: var(--accent-purple);
+            font-size: 1.8rem;
+            margin: 2.5rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-purple);
+        }
+
+        .content h3 {
+            color: var(--text-primary);
+            font-size: 1.3rem;
+            margin: 1.5rem 0 1rem;
+        }
+
+        .content p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .content ul,
+        .content ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        .content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .toc {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .toc h3 {
+            color: var(--accent-cyan);
+            margin-bottom: 1rem;
+        }
+
+        .toc ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .toc a {
+            color: var(--text-secondary);
+            text-decoration: none;
+        }
+
+        .info-box {
+            background: rgba(0, 217, 255, 0.1);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .warning-box {
+            background: rgba(255, 76, 76, 0.1);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .success-box {
+            background: rgba(16, 185, 129, 0.1);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.95rem;
+        }
+
+        th {
+            background: rgba(139, 92, 246, 0.1);
+            color: var(--accent-purple);
+        }
+
+        td {
+            color: var(--text-secondary);
+        }
+
+        .tactic-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            display: inline-block;
+            width: calc(50% - 1rem);
+            margin-right: 0.5rem;
+            vertical-align: top;
+        }
+
+        .tactic-box h4 {
+            color: var(--accent-purple);
+            margin-bottom: 0.25rem;
+            font-size: 0.95rem;
+        }
+
+        .tactic-box p {
+            font-size: 0.85rem;
+            margin: 0;
+        }
+
+        code {
+            background: var(--bg-secondary);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: monospace;
+            color: var(--accent-cyan);
+            font-size: 0.9rem;
+        }
+
+        footer {
+            margin-top: 5rem;
+            padding-top: 3rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--text-muted);
+        }
+
+        @media (max-width: 768px) {
+            .tactic-box {
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="m-header m-only">
+        <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px;">
+            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px;">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">TheHGTech</span>
+        </div>
+        <div class="m-header__actions">
+            <button class="m-theme-toggle" onclick="mToggleTheme()"><span class="m-theme-toggle__thumb"></span></button>
+            <button class="m-header__btn" data-action="search"><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item"><i class="fas fa-bug"></i><span>CVE</span></a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item"><i class="fas fa-shield-alt"></i><span>Intel</span></a>
+        <a href="/articles.html" class="m-bottom-nav__item"><i class="fas fa-newspaper"></i><span>Articles</span></a>
+        <a href="/guides/" class="m-bottom-nav__item active"><i class="fas fa-book"></i><span>Guides</span></a>
+    </nav>
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo"><a href="../index.html"
+                    style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;"><img
+                        src="../logo-dark.png" class="logo-img logo-dark"><img src="../logo-light.png"
+                        class="logo-img logo-light"><span class="logo-text">TheHGTech</span></a></div>
+            <nav class="nav" role="navigation">
+                <a href="../index.html#news">News</a>
+                <a href="../threat-intel.html">Threat Intelligence <span class="live-badge">LIVE</span></a>
+                <a href="../cve-tracker.html">CVE</a>
+                <a href="../guides/">Guides</a>
+                <a href="../comparisons/">Tool Comparisons</a>
+                <a href="../articles.html">Articles</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <a href="/guides/"
+            style="color: var(--accent-cyan); text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; margin-bottom: 2rem;"><i
+                class="fas fa-arrow-left"></i> Back to Guides</a>
+
+        <div class="guide-header">
+            <h1><i class="fas fa-crosshairs"></i> MITRE ATT&CK Mapping Guide <span class="new-badge"><i
+                        class="fas fa-fire"></i> NEW</span></h1>
+            <p style="color: var(--text-muted); font-size: 1.1rem;">Master threat detection using the ATT&CK framework
+            </p>
+            <div class="guide-meta">
+                <span><i class="fas fa-book-open"></i> 20 min read</span>
+                <span><i class="fas fa-crosshairs"></i> Intermediate</span>
+                <span><i class="far fa-calendar-alt"></i> December 2025</span>
+            </div>
+        </div>
+
+        <img src="/images/guides/mitre-attack-mapping.png" alt="MITRE ATT&CK Mapping Guide" class="featured-image">
+
+        <div class="toc">
+            <h3><i class="fas fa-list-ul"></i> Table of Contents</h3>
+            <ul>
+                <li><a href="#overview">1. What is MITRE ATT&CK?</a></li>
+                <li><a href="#structure">2. Framework Structure</a></li>
+                <li><a href="#tactics">3. The 14 Tactics Explained</a></li>
+                <li><a href="#techniques">4. Understanding Techniques</a></li>
+                <li><a href="#mapping">5. How to Map Threats</a></li>
+                <li><a href="#detection">6. Detection Engineering</a></li>
+                <li><a href="#coverage">7. Coverage Analysis</a></li>
+                <li><a href="#navigator">8. ATT&CK Navigator</a></li>
+                <li><a href="#resources">9. Resources & Tools</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2 id="overview"><i class="fas fa-bullseye"></i> 1. What is MITRE ATT&CK?</h2>
+            <p><strong>MITRE ATT&CK</strong> (Adversarial Tactics, Techniques, and Common Knowledge) is a
+                globally-accessible knowledge base of adversary tactics and techniques based on real-world observations.
+                It serves as a common language for describing cyber attacks.</p>
+
+            <h3>Key Use Cases</h3>
+            <ul>
+                <li><strong>Detection Engineering:</strong> Build detections mapped to specific techniques</li>
+                <li><strong>Threat Intelligence:</strong> Describe threat actors by their TTPs</li>
+                <li><strong>Security Assessment:</strong> Evaluate detection coverage gaps</li>
+                <li><strong>Red Teaming:</strong> Structure adversary emulation</li>
+                <li><strong>Communication:</strong> Common language across teams</li>
+            </ul>
+
+            <h2 id="structure"><i class="fas fa-sitemap"></i> 2. Framework Structure</h2>
+
+            <h3>ATT&CK Hierarchy</h3>
+            <ul>
+                <li><strong>Matrices:</strong> Enterprise, Mobile, ICS (different environments)</li>
+                <li><strong>Tactics:</strong> The adversary's goal (the "why")</li>
+                <li><strong>Techniques:</strong> How they achieve the goal (the "how")</li>
+                <li><strong>Sub-techniques:</strong> More specific variations</li>
+                <li><strong>Procedures:</strong> Specific implementations by threat actors</li>
+            </ul>
+
+            <div class="info-box">
+                <strong><i class="fas fa-lightbulb"></i> Example:</strong><br>
+                <strong>Tactic:</strong> Credential Access (goal: steal credentials)<br>
+                <strong>Technique:</strong> T1003 - OS Credential Dumping<br>
+                <strong>Sub-technique:</strong> T1003.001 - LSASS Memory<br>
+                <strong>Procedure:</strong> Mimikatz sekurlsa::logonpasswords
+            </div>
+
+            <h2 id="tactics"><i class="fas fa-chess"></i> 3. The 14 Tactics Explained</h2>
+            <p>Tactics represent the adversary's objective at each phase of an attack:</p>
+
+            <div class="tactic-box">
+                <h4>TA0043: Reconnaissance</h4>
+                <p>Gather information to plan attack</p>
+            </div>
+            <div class="tactic-box">
+                <h4>TA0042: Resource Development</h4>
+                <p>Establish attack infrastructure</p>
+            </div>
+            <div class="tactic-box">
+                <h4>TA0001: Initial Access</h4>
+                <p>Get into the network</p>
+            </div>
+            <div class="tactic-box">
+                <h4>TA0002: Execution</h4>
+                <p>Run malicious code</p>
+            </div>
+            <div class="tactic-box">
+                <h4>TA0003: Persistence</h4>
+                <p>Maintain foothold</p>
+            </div>
+            <div class="tactic-box">
+                <h4>TA0004: Privilege Escalation</h4>
+                <p>Gain higher permissions</p>
+            </div>
+            <div class="tactic-box">
+                <h4>TA0005: Defense Evasion</h4>
+                <p>Avoid detection</p>
+            </div>
+            <div class="tactic-box">
+                <h4>TA0006: Credential Access</h4>
+                <p>Steal credentials</p>
+            </div>
+            <div class="tactic-box">
+                <h4>TA0007: Discovery</h4>
+                <p>Learn the environment</p>
+            </div>
+            <div class="tactic-box">
+                <h4>TA0008: Lateral Movement</h4>
+                <p>Move through network</p>
+            </div>
+            <div class="tactic-box">
+                <h4>TA0009: Collection</h4>
+                <p>Gather target data</p>
+            </div>
+            <div class="tactic-box">
+                <h4>TA0011: Command & Control</h4>
+                <p>Communicate with implants</p>
+            </div>
+            <div class="tactic-box">
+                <h4>TA0010: Exfiltration</h4>
+                <p>Steal data out</p>
+            </div>
+            <div class="tactic-box">
+                <h4>TA0040: Impact</h4>
+                <p>Disrupt, destroy, manipulate</p>
+            </div>
+
+            <h2 id="techniques"><i class="fas fa-cogs"></i> 4. Understanding Techniques</h2>
+
+            <h3>Technique Components</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>ID</strong></td>
+                        <td>Unique identifier (e.g., T1059)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Name</strong></td>
+                        <td>Descriptive name (e.g., Command and Scripting Interpreter)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Description</strong></td>
+                        <td>How the technique works</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Platforms</strong></td>
+                        <td>Where it applies (Windows, Linux, macOS, etc.)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Data Sources</strong></td>
+                        <td>Logs/telemetry for detection</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Detection</strong></td>
+                        <td>Guidance on detecting the technique</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mitigations</strong></td>
+                        <td>How to prevent/reduce impact</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Most Common Techniques (2024-2025)</h3>
+            <ul>
+                <li><code>T1059</code> - Command and Scripting Interpreter (PowerShell, Python)</li>
+                <li><code>T1078</code> - Valid Accounts (compromised credentials)</li>
+                <li><code>T1566</code> - Phishing (spearphishing attachments/links)</li>
+                <li><code>T1486</code> - Data Encrypted for Impact (ransomware)</li>
+                <li><code>T1082</code> - System Information Discovery</li>
+            </ul>
+
+            <h2 id="mapping"><i class="fas fa-map"></i> 5. How to Map Threats</h2>
+
+            <h3>Mapping Incident to ATT&CK</h3>
+            <ol>
+                <li><strong>Extract Behaviors:</strong> What did the adversary DO? (not just what tools)</li>
+                <li><strong>Identify Tactics:</strong> What was their goal at each step?</li>
+                <li><strong>Match Techniques:</strong> Find the technique that describes the behavior</li>
+                <li><strong>Document Evidence:</strong> Link to logs/artifacts that prove the technique</li>
+            </ol>
+
+            <h3>Example Mapping</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Observed Behavior</th>
+                        <th>Tactic</th>
+                        <th>Technique</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>User clicked phishing link</td>
+                        <td>Initial Access</td>
+                        <td>T1566.002 Spearphishing Link</td>
+                    </tr>
+                    <tr>
+                        <td>Macro executed PowerShell</td>
+                        <td>Execution</td>
+                        <td>T1059.001 PowerShell</td>
+                    </tr>
+                    <tr>
+                        <td>Added to registry Run key</td>
+                        <td>Persistence</td>
+                        <td>T1547.001 Registry Run Keys</td>
+                    </tr>
+                    <tr>
+                        <td>Dumped LSASS memory</td>
+                        <td>Credential Access</td>
+                        <td>T1003.001 LSASS Memory</td>
+                    </tr>
+                    <tr>
+                        <td>RDP to other servers</td>
+                        <td>Lateral Movement</td>
+                        <td>T1021.001 Remote Desktop</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 id="detection"><i class="fas fa-eye"></i> 6. Detection Engineering</h2>
+
+            <h3>Building ATT&CK-Based Detections</h3>
+            <ol>
+                <li><strong>Choose Technique:</strong> Start with high-priority techniques based on threat landscape
+                </li>
+                <li><strong>Review Data Sources:</strong> What logs do you need?</li>
+                <li><strong>Build Detection Logic:</strong> Create SIEM rule or query</li>
+                <li><strong>Test with Emulation:</strong> Use Atomic Red Team or similar</li>
+                <li><strong>Tune for Environment:</strong> Reduce false positives</li>
+                <li><strong>Document Coverage:</strong> Map detection to technique ID</li>
+            </ol>
+
+            <h3>Example Detection (Splunk)</h3>
+            <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 8px; overflow-x: auto;"><code># T1003.001 - LSASS Memory Access
+index=sysmon EventCode=10 TargetImage="*lsass.exe"
+| where NOT match(SourceImage, "(?i)(MsMpEng|csrss|wininit)")
+| stats count by SourceImage, SourceUser, Computer
+| where count > 0</code></pre>
+
+            <h2 id="coverage"><i class="fas fa-chart-pie"></i> 7. Coverage Analysis</h2>
+            <p>Use ATT&CK to identify detection gaps:</p>
+
+            <h3>Coverage Assessment Steps</h3>
+            <ol>
+                <li>Inventory all current detection rules</li>
+                <li>Map each rule to ATT&CK technique(s)</li>
+                <li>Visualize coverage using ATT&CK Navigator</li>
+                <li>Identify gaps in critical tactics</li>
+                <li>Prioritize based on threat intelligence</li>
+            </ol>
+
+            <div class="warning-box">
+                <strong><i class="fas fa-exclamation-triangle"></i> Common Gaps:</strong> Organizations often have
+                strong coverage for Initial Access and Execution, but poor coverage for Defense Evasion and Credential
+                Access. Focus detection efforts on these blind spots.
+            </div>
+
+            <h2 id="navigator"><i class="fas fa-compass"></i> 8. ATT&CK Navigator</h2>
+            <p>The ATT&CK Navigator is a web tool for visualizing and annotating the ATT&CK matrix.</p>
+
+            <h3>Navigator Use Cases</h3>
+            <ul>
+                <li>Visualize detection coverage (green = detected, red = gap)</li>
+                <li>Compare threat actor TTPs to your defenses</li>
+                <li>Plan red team operations</li>
+                <li>Track remediation progress</li>
+                <li>Create layers for different analysis views</li>
+            </ul>
+
+            <p><strong>Access Navigator:</strong> <a href="https://mitre-attack.github.io/attack-navigator/"
+                    target="_blank" style="color: var(--accent-cyan);">mitre-attack.github.io/attack-navigator</a></p>
+
+            <h2 id="resources"><i class="fas fa-tools"></i> 9. Resources & Tools</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="https://attack.mitre.org/" style="color: var(--accent-cyan);">ATT&CK Website</a>
+                        </td>
+                        <td>Official knowledge base</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/redcanaryco/atomic-red-team"
+                                style="color: var(--accent-cyan);">Atomic Red Team</a></td>
+                        <td>Technique emulation tests</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://car.mitre.org/" style="color: var(--accent-cyan);">MITRE CAR</a></td>
+                        <td>Cyber Analytics Repository</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/SigmaHQ/sigma" style="color: var(--accent-cyan);">Sigma
+                                Rules</a></td>
+                        <td>Generic detection rules</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://d3fend.mitre.org/" style="color: var(--accent-cyan);">D3FEND</a></td>
+                        <td>Defensive techniques framework</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="success-box">
+                <strong><i class="fas fa-check-circle"></i> Quick Start:</strong>
+                <ol style="margin-top: 0.5rem; margin-bottom: 0;">
+                    <li>Pick 5 techniques relevant to your threat model</li>
+                    <li>Verify you have data sources for detection</li>
+                    <li>Build or import detection rules</li>
+                    <li>Test with Atomic Red Team</li>
+                    <li>Document in Navigator layer</li>
+                </ol>
+            </div>
+
+            <h2><i class="fas fa-link"></i> Related Guides</h2>
+            <ul>
+                <li><a href="/guides/threat-hunting-techniques.html" style="color: var(--accent-cyan);">Threat Hunting
+                        Techniques & Methodologies</a></li>
+                <li><a href="/guides/threat-intelligence-feeds-integration.html"
+                        style="color: var(--accent-cyan);">Threat Intelligence Feeds Integration</a></li>
+                <li><a href="/guides/splunk-spl-guide.html" style="color: var(--accent-cyan);">Splunk SPL Query
+                        Guide</a></li>
+            </ul>
+
+            <p
+                style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); color: var(--text-muted);">
+                <strong>Author:</strong> TheHGTech Security Team<br>
+                <strong>Last Updated:</strong> December 2025<br>
+                <strong>Reading Time:</strong> 20 minutes
+            </p>
+        </div>
+
+        <div class="interaction-bar">
+            <div class="like-section"><button class="like-btn" id="likeBtn" onclick="toggleLike()"><i
+                        class="far fa-heart"></i> <span id="likeText">Like this guide</span></button></div>
+            <div class="action-buttons">
+                <div class="share-buttons">
+                    <a href="#" onclick="shareTwitter(event)" class="share-btn"><i class="fab fa-twitter"></i></a>
+                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn"><i class="fab fa-linkedin-in"></i></a>
+                    <button onclick="copyLink()" class="share-btn"><i class="fas fa-link"></i></button>
+                </div>
+                <div class="button-separator"></div>
+                <button onclick="printArticle()" class="print-btn"><i class="fas fa-print"></i></button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 TheHGTech. All rights reserved.</p>
+    </footer>
+    <script src="/header.js"></script>
+    <script src="/interaction-bar.js?v=20251217"></script>
+</body>
+
+</html>
