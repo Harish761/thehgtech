@@ -4,53 +4,53 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Dec 22 2025",
-            "title": "NIST and MITRE Launch $20 Million AI Cybersecurity Research Initiative",
-            "content": "The National Institute of Standards and Technology (NIST) and MITRE have announced a $20 million collaborative research effort aimed at understanding the impact of artificial intelligence on cybersecurity. The initiative will establish a research center that brings together government and industry experts to focus on protecting critical infrastructure. This move comes as AI technologies increasingly integrate into various sectors, raising new security challenges. The center will explore AI-driven security threats and develop strategies to mitigate potential risks. Industry professionals are encouraged to engage with this initiative to stay at the forefront of AI cybersecurity advancements.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/nist-mitre-announce-20-million-dollar-research-effort-on-ai-cybersecurity/"
+            "date": "Dec 23 2025",
+            "title": "Hackers Exploit OAuth 2.0 One-Time Codes to Bypass MFA",
+            "content": "Security firm Proofpoint has uncovered a sophisticated method used by hackers to bypass multi-factor authentication (MFA) by exploiting one-time codes from OAuth 2.0. This approach allows attackers to gain unauthorized access to corporate accounts, posing a significant risk to organizations relying on OAuth for secure authentication. The vulnerability lies in the interception and reuse of these one-time codes, which are meant to enhance security. Companies using OAuth 2.0 should reassess their MFA implementations and consider additional security layers. This discovery underscores the evolving tactics of cybercriminals targeting authentication systems and the need for continuous vigilance in cybersecurity practices.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4111120/one-time-codes-used-to-hack-corporate-accounts.html"
         },
         {
-            "date": "Dec 22 2025",
-            "title": "Nissan Customer Data Exposed in Red Hat Security Breach",
-            "content": "Nissan Motor Co. Ltd. has confirmed that a data breach at Red Hat in September has compromised the personal information of thousands of its customers. The breach involved unauthorized access to Red Hat systems, which are widely used for enterprise solutions. Nissan&#x27;s affected customers are advised to monitor their accounts for unusual activity and consider identity protection measures. This incident highlights the vulnerability of third-party service providers and the potential risks they pose to large corporations. Companies are urged to reassess their supply chain security practices to prevent similar breaches.",
+            "date": "Dec 23 2025",
+            "title": "Outsourced Cybersecurity Creates Cascading Risks Across Industries",
+            "content": "Outsourcing critical IT and cybersecurity functions has emerged as a double-edged sword, leading to systemic vulnerabilities across industries. Initially seen as a cost-efficient strategy, reliance on third-party vendors has led to cascading breaches affecting hundreds of organizations at once. This systemic fragility is exacerbated by interconnected digital ecosystems where a single vendor&#x27;s breach can have widespread implications. Businesses must reassess their dependency on external cybersecurity providers and implement robust risk management strategies. This trend highlights the need for a balanced approach to outsourcing, where security is prioritized alongside efficiency.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4110657/why-outsourced-cyber-defenses-create-systemic-risks.html"
+        },
+        {
+            "date": "Dec 23 2025",
+            "title": "Coupang Faces US Lawsuit Over Delayed Data Breach Disclosure",
+            "content": "South Korean e-commerce giant Coupang is facing a US federal securities class action lawsuit for allegedly delaying the disclosure of a significant data breach. The lawsuit claims that Coupang violated SEC rules by taking nearly a month to report the breach, which should have been disclosed within four business days. This incident raises concerns about transparency and compliance with cybersecurity reporting regulations. Investors and stakeholders demand accountability as delayed disclosures can exacerbate the impact of breaches. Companies are reminded of the importance of timely communication and adherence to regulatory requirements in managing cybersecurity incidents.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4111091/south-korean-firm-hit-with-us-investor-lawsuit-over-data-breach-disclosure-failures.html"
+        },
+        {
+            "date": "Dec 23 2025",
+            "title": "Hacktivists Claim Near-Complete Spotify Data Scrape",
+            "content": "Hacktivists have reportedly scraped nearly all available content from Spotify, raising potential privacy and security concerns for users. While the implications for individual users remain unclear, the scale of the scrape suggests a significant breach of Spotify&#x27;s data protection measures. This incident highlights the vulnerabilities in digital content platforms and the challenges in securing vast amounts of user data. Spotify users are advised to monitor their accounts for any unusual activity and consider updating their passwords. The event underscores the ongoing threats posed by hacktivist groups targeting major digital services.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2025/12/hacktivists-claim-near-total-spotify-music-scrape"
+        },
+        {
+            "date": "Dec 23 2025",
+            "title": "Cyberattack Disrupts France&#x27;s Postal and Banking Services",
+            "content": "A major cyberattack has disrupted the French national postal service&#x27;s online operations, impacting digital banking and other services for millions. The incident, described as a &quot;major network incident,&quot; has highlighted vulnerabilities in critical national infrastructure. The disruption underscores the potential for cyberattacks to paralyze essential services and the need for robust cybersecurity measures. French authorities are investigating the attack&#x27;s origins and working to restore affected services. This event serves as a stark reminder of the importance of securing national infrastructure against sophisticated cyber threats.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/nissan-says-thousands-of-customers-exposed-in-red-hat-breach/"
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cyberattack-knocks-offline-frances-postal-banking-services/"
         },
         {
-            "date": "Dec 22 2025",
-            "title": "MacSync Malware Dropper Bypasses macOS Gatekeeper Security",
-            "content": "A new variant of the MacSync malware has been identified, capable of evading macOS Gatekeeper checks by using a digitally signed, notarized Swift application. This sophisticated dropper targets macOS systems, allowing attackers to deliver the MacSync information stealer with minimal detection. Users running macOS are advised to ensure their systems are updated to the latest security patches and to be cautious when downloading applications from unverified sources. The emergence of such advanced techniques underscores the need for continuous vigilance and robust endpoint protection strategies.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-macsync-malware-dropper-evades-macos-gatekeeper-checks/"
+            "date": "Dec 23 2025",
+            "title": "Nissan Affected by Red Hat Data Breach Compromising Customer Data",
+            "content": "Nissan has confirmed that the personal information of 21,000 customers was compromised following a breach of Red Hat&#x27;s GitLab instances. Hackers exploited vulnerabilities in Red Hat&#x27;s systems to access sensitive customer data, highlighting the risks associated with third-party software dependencies. This breach has raised concerns about data security protocols and the protection of customer information. Nissan is working to notify affected customers and enhance its security measures. The incident emphasizes the need for rigorous security assessments and monitoring of third-party systems to prevent data breaches.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/nissan-confirms-impact-from-red-hat-data-breach/"
         },
         {
-            "date": "Dec 22 2025",
-            "title": "Zero-Day Exploitation Targets WatchGuard Firebox Devices",
-            "content": "Threat actors are actively exploiting a zero-day vulnerability in WatchGuard Firebox devices, adding to the growing list of edge device vendors targeted in recent weeks. The critical flaw allows attackers to gain unauthorized access and potentially disrupt network operations. Organizations using WatchGuard devices should implement available workarounds and monitor for suspicious activity while awaiting a patch. This trend of targeting edge devices highlights the importance of securing network perimeters and maintaining up-to-date threat intelligence. Security teams should prioritize patch management and incident response readiness.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/threat-actors-zero-day-watchguard-firebox"
-        },
-        {
-            "date": "Dec 22 2025",
-            "title": "Leader of 764 Offshoot Pleads Guilty, Faces Lengthy Prison Sentence",
-            "content": "Alexis Chavez, a leader of the extremist group 764, has pled guilty to multiple charges, including coercion of victims during a yearslong crime spree. This legal victory marks a significant step in law enforcement&#x27;s efforts to dismantle violent extremist networks. Chavez, who joined the group as a minor in 2022, now faces up to 60 years in prison. This case underscores the persistent threat posed by extremist collectives and the importance of continued vigilance and collaboration among security agencies. Authorities are encouraged to leverage this success to further disrupt similar criminal activities.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/764-offshoot-leader-alexis-chavez-guilty/"
-        },
-        {
-            "date": "Dec 22 2025",
-            "title": "Interpol Operation Sentinel Dismantles Ransomware Networks",
-            "content": "Operation Sentinel, led by Interpol, has resulted in the arrest of 574 individuals and the decryption of six ransomware strains, recovering $3 million tied to cybercrime activities. The operation targeted business email compromise, extortion, and ransomware networks, significantly disrupting criminal operations. This coordinated effort demonstrates the effectiveness of international collaboration in combating cyber threats. Organizations are reminded to strengthen their cybersecurity posture, including regular data backups and employee training on phishing and ransomware tactics. The operation&#x27;s success serves as a deterrent to cybercriminals worldwide.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/interpol-led-action-decrypts-6-ransomware-strains-arrests-hundreds/"
-        },
-        {
-            "date": "Dec 22 2025",
-            "title": "Android SMS Stealer Malware Targets Uzbek Telegram Users",
-            "content": "Telegram users in Uzbekistan are being targeted by a sophisticated Android SMS stealer malware, which has seen improvements in its attack methods. The malware intercepts SMS messages, potentially compromising sensitive information and authentication codes. Users are advised to install security updates promptly and exercise caution when downloading apps from unofficial sources. This attack highlights the ongoing evolution of mobile malware and the specific targeting of regional user bases. Security professionals should focus on enhancing mobile security measures and educating users on recognizing phishing attempts.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyber-risk/uzbek-users-android-sms-stealers"
+            "date": "Dec 23 2025",
+            "title": "Feds Seize Database Used in $28 Million Bank Account Takeover Scheme",
+            "content": "Federal authorities have seized a password database used in a massive bank account takeover scheme, thwarting cybercriminals&#x27; attempts to steal $28 million. The attackers relied on phishing tactics to compromise bank accounts, leveraging the database to facilitate unauthorized access. This operation highlights the ongoing threat of phishing and the importance of safeguarding credentials. Financial institutions and customers are urged to implement stronger authentication measures and remain vigilant against phishing attempts. The successful intervention by federal agencies underscores the critical role of law enforcement in combating cybercrime.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/feds-seize-password-database-used-in-massive-bank-account-takeover-scheme/"
         },
         {
             "date": "May 05 2026",
@@ -62,53 +62,39 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Dec 22 2025",
-            "title": "OpenAI Acknowledges Persistent Threat of Prompt Injection Attacks",
-            "content": "OpenAI has admitted that prompt injection attacks will remain a persistent threat to AI browsers with agentic capabilities, such as its Atlas browser. These attacks exploit vulnerabilities in AI models, potentially allowing malicious actors to manipulate outputs. To counter this, OpenAI is enhancing its cybersecurity measures with an &quot;LLM-based automated attacker,&quot; designed to proactively identify and mitigate such threats. This development underscores the ongoing challenges in securing AI systems, particularly as they become more autonomous and complex. Organizations using AI-driven browsers should remain vigilant and implement robust security protocols to protect against these evolving risks.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/22/openai-says-ai-browsers-may-always-be-vulnerable-to-prompt-injection-attacks/"
+            "date": "Dec 23 2025",
+            "title": "AI Hype Criticized by Google DeepMind CEO",
+            "content": "Demis Hassabis, CEO of Google DeepMind, publicly criticized the overenthusiastic promotion of AI achievements on social media, calling it &quot;embarrassing.&quot; His comments were directed at a post by Sébastien Bubeck, an OpenAI research scientist, who announced a breakthrough involving their latest model, GPT-5. The incident underscores the ongoing rivalry between AI giants and the tendency for social media to amplify claims beyond their technical merit. This highlights the need for professionals to critically evaluate AI advancements rather than relying on sensationalized online narratives. Industry leaders are urged to communicate developments with clarity and caution to avoid misleading stakeholders about AI&#x27;s current capabilities.",
+            "source": "MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2025/12/23/1130393/how-social-media-encourages-the-worst-of-ai-boosterism/"
         },
         {
             "date": "Dec 22 2025",
-            "title": "Alphabet Acquires Intersect Power to Enhance Energy Infrastructure",
-            "content": "Alphabet has announced its acquisition of Intersect Power for $4.75 billion in cash, plus debt, aiming to address energy grid bottlenecks impacting its data centers. Intersect Power specializes in clean energy development, and this acquisition marks a strategic move by Alphabet to secure a more reliable energy supply for its expanding infrastructure. The transaction highlights the growing importance of sustainable energy solutions in the tech industry, as companies seek to mitigate the environmental impact of data center operations. Industry leaders should consider similar investments to enhance energy efficiency and sustainability in their operations.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/22/alphabet-to-buy-intersect-power-to-bypass-energy-grid-bottlenecks/"
+            "title": "Tesco Partners with Mistral for AI-Driven Customer Experience",
+            "content": "Tesco has entered a three-year partnership with AI firm Mistral to enhance customer experience through artificial intelligence. The collaboration aims to integrate AI tools into Tesco&#x27;s operations, focusing on improving efficiency and personalization in customer interactions. This strategic move reflects the retail sector&#x27;s growing reliance on AI to stay competitive in a rapidly evolving market. By leveraging AI, Tesco hopes to better understand customer preferences and optimize service delivery. Retailers are encouraged to explore similar innovations to maintain customer engagement and operational effectiveness in the digital age.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/tesco-signs-three-year-ai-deal-centred-on-customer-experience/"
         },
         {
             "date": "Dec 22 2025",
-            "title": "ChatGPT Introduces Personalized Year-End Review Feature",
-            "content": "ChatGPT has launched a new feature akin to Spotify Wrapped, offering users a personalized year-end review. This experience includes awards, poems, and pictures that reflect users&#x27; interactions with the chatbot throughout the year. By leveraging AI to create these personalized summaries, OpenAI aims to enhance user engagement and provide a unique retrospective on digital communication. This feature could set a precedent for other AI-driven platforms to offer similar personalized insights. Users are encouraged to explore their ChatGPT year-end review to gain a deeper understanding of their AI interactions over the past year.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/22/chatgpt-launches-a-year-end-review-like-spotify-wrapped/"
-        },
-        {
-            "date": "Dec 22 2025",
-            "title": "Splat&#x27;s AI App Transforms Photos into Coloring Pages for Kids",
-            "content": "Splat has introduced an innovative app that uses AI to convert personal photos into coloring pages for children. This application leverages machine learning algorithms to simplify images, making them suitable for coloring activities. The app provides a creative and personalized way for children to engage with their environment, blending technology with traditional play. As AI continues to permeate daily life, such applications demonstrate the potential for technology to enhance family activities. Parents looking for educational and entertaining activities for their children may find this app a valuable addition to their digital toolkit.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/22/splats-app-uses-ai-to-turn-your-photos-into-coloring-pages-for-kids/"
-        },
-        {
-            "date": "Dec 22 2025",
-            "title": "Comprehensive Timeline of ChatGPT&#x27;s 2025 Developments Released",
-            "content": "A detailed timeline of ChatGPT&#x27;s updates and releases throughout 2025 has been published, offering insights into the chatbot&#x27;s evolution. This includes enhancements in language processing capabilities, user interface improvements, and expanded integration options. The timeline serves as a valuable resource for developers and businesses utilizing ChatGPT, providing a clear view of the platform&#x27;s progress and future direction. Staying informed about these updates can help organizations optimize their use of ChatGPT and anticipate upcoming features. Industry professionals are encouraged to review this timeline to better understand the trajectory of AI-powered communication tools.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/22/chatgpt-everything-to-know-about-the-ai-chatbot/"
-        },
-        {
-            "date": "Dec 22 2025",
-            "title": "Waymo Resumes San Francisco Service After Robotaxi Disruption",
-            "content": "Waymo has restarted its robotaxi service in San Francisco following a temporary suspension caused by a citywide blackout. The outage left several autonomous vehicles stalled on the streets, highlighting the vulnerability of AI-driven services to infrastructure failures. Waymo&#x27;s swift response to the incident involved recalibrating its systems to ensure reliability in future operations. This event underscores the importance of robust contingency plans for autonomous vehicle services, particularly in urban environments. Customers in San Francisco can now resume using Waymo&#x27;s services with confidence in the company&#x27;s commitment to operational stability.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/21/waymo-suspends-service-in-san-francisco-as-robotaxis-stall-during-blackout/"
-        },
-        {
-            "date": "Dec 22 2025",
-            "title": "OpenAI Celebrates Milestone of One Million Global Customers",
-            "content": "OpenAI has reached a significant milestone, with over one million customers worldwide utilizing its AI technologies to drive innovation. Companies such as PayPal, Virgin Atlantic, BBVA, Cisco, Moderna, and Canva are leveraging OpenAI&#x27;s capabilities to transform their operations and unlock new opportunities. This widespread adoption reflects the growing trust and reliance on AI to enhance productivity and creativity across various industries. Organizations aiming to stay competitive should consider integrating AI solutions to streamline processes and foster innovation. OpenAI&#x27;s achievement highlights the transformative potential of AI in shaping the future of work.",
+            "title": "OpenAI Enhances ChatGPT Atlas Security Against Prompt Injection",
+            "content": "OpenAI is fortifying ChatGPT Atlas against prompt injection attacks by employing automated red teaming techniques enhanced with reinforcement learning. This initiative aims to proactively discover and patch vulnerabilities, strengthening the browser agent&#x27;s defenses as AI systems become more autonomous. By identifying novel exploits early, OpenAI seeks to safeguard users and maintain trust in AI applications. The effort highlights the importance of continuous security improvements in AI development to mitigate potential threats. Organizations using AI-driven tools should prioritize security measures to protect against evolving cyber threats.",
             "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/one-in-a-million-customers"
+            "sourceUrl": "https://openai.com/index/hardening-atlas-against-prompt-injection"
+        },
+        {
+            "date": "Dec 20 2025",
+            "title": "OpenAI Introduces User-Controlled Enthusiasm Levels in ChatGPT",
+            "content": "OpenAI has expanded ChatGPT&#x27;s customization options by allowing users to directly adjust the AI&#x27;s enthusiasm level. This new feature builds on existing capabilities to set a base style and tone, including Professional, Candid, and Quirky options introduced in November. The enhancement provides users with greater control over the interaction dynamics, catering to diverse communication preferences. This development reflects a broader trend towards personalized AI experiences, enabling users to tailor AI interactions to specific contexts and audiences. Professionals utilizing AI for customer service or content creation can leverage these tools to enhance user satisfaction and engagement.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/20/openai-allows-users-to-directly-adjust-chatgpts-warmth-and-enthusiasm/"
+        },
+        {
+            "date": "Dec 20 2025",
+            "title": "New York Enacts RAISE Act for AI Safety Regulation",
+            "content": "New York Governor Kathy Hochul has signed the RAISE Act, mandating that large AI developers disclose their safety protocols and report incidents within 72 hours. This legislation aims to enhance transparency and accountability in AI development, addressing growing concerns over AI safety. By requiring detailed safety disclosures, the RAISE Act seeks to protect consumers and ensure responsible AI deployment. This move aligns with global efforts to regulate AI technologies, emphasizing the need for robust governance frameworks. AI developers must prepare to comply with these regulations, which could influence future industry standards and practices.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/20/new-york-governor-kathy-hochul-signs-raise-act-to-regulate-ai-safety/"
         }
     ],
     "articles": {},
