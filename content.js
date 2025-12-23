@@ -5,59 +5,52 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Dec 22 2025",
-            "title": "MacSync Malware Evades Detection with Signed Swift Application",
-            "content": "The MacSync Stealer malware has evolved to be distributed via a signed Swift application, eliminating the need for terminal interaction during execution. This development increases the malware&#x27;s stealth, making it more challenging for users to detect and prevent infections. The malware targets macOS systems, posing a significant threat to users who rely on the platform&#x27;s security reputation. By leveraging a signed application, the malware bypasses traditional security checks, potentially leading to widespread data breaches. Security professionals should advise users to remain vigilant about downloading applications from unverified sources and consider deploying advanced endpoint protection solutions.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/macsync-macos-malware-distributed-via-signed-swift-application/"
+            "title": "NIST and MITRE Launch $20 Million AI Cybersecurity Research Initiative",
+            "content": "The National Institute of Standards and Technology (NIST) and MITRE have announced a $20 million collaborative research effort aimed at understanding the impact of artificial intelligence on cybersecurity. The initiative will establish a research center that brings together government and industry experts to focus on protecting critical infrastructure. This move comes as AI technologies increasingly integrate into various sectors, raising new security challenges. The center will explore AI-driven security threats and develop strategies to mitigate potential risks. Industry professionals are encouraged to engage with this initiative to stay at the forefront of AI cybersecurity advancements.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/nist-mitre-announce-20-million-dollar-research-effort-on-ai-cybersecurity/"
         },
         {
             "date": "Dec 22 2025",
-            "title": "RansomHouse Enhances Ransomware with Multi-Layered Encryption",
-            "content": "RansomHouse, also known as Jolly Scorpius, has upgraded its ransomware operation by implementing a multi-layered encryption technique in its double-extortion Ransomware-as-a-Service (RaaS) model. This enhancement complicates decryption efforts, increasing the pressure on victims to pay ransoms. The new model targets enterprises, posing a heightened risk to organizations that rely on traditional backup and recovery solutions. This development underscores the evolving sophistication of ransomware gangs and highlights the need for comprehensive cybersecurity strategies that include regular updates, employee training, and incident response planning.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4110472/think-you-can-beat-ransomware-ransomhouse-just-made-it-a-lot-harder.html"
-        },
-        {
-            "date": "Dec 22 2025",
-            "title": "Gambit Cyber Secures $3.4 Million for Expansion and Innovation",
-            "content": "Cybersecurity startup Gambit Cyber has raised $3.4 million in seed funding to accelerate platform improvements, expand globally, and forge strategic partnerships. This funding round will enable the company to enhance its cybersecurity solutions, addressing the growing demand for robust protection against sophisticated threats. The investment reflects increased investor confidence in cybersecurity startups as threats become more advanced and pervasive. Organizations seeking cutting-edge security solutions may benefit from Gambit Cyber&#x27;s enhanced offerings, which aim to provide comprehensive protection across various digital environments.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/gambit-cyber-raises-3-4-million-in-seed-funding/"
-        },
-        {
-            "date": "Dec 22 2025",
-            "title": "Weekly Cyber Threats Highlight Vulnerabilities in Everyday Tools",
-            "content": "Recent cyber threats have demonstrated how attackers exploit everyday tools such as firewalls, browser add-ons, and smart TVs to cause significant damage. These attacks, often overlooked, can lead to serious breaches by turning small vulnerabilities into major security incidents. The trend indicates a shift from targeting high-profile systems to exploiting common technologies that users trust. Security professionals must prioritize the protection of these everyday tools and implement robust security measures to prevent exploitation. Regular updates, vulnerability assessments, and user awareness are critical components of an effective defense strategy.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/12/weekly-recap-firewall-exploits-ai-data.html"
-        },
-        {
-            "date": "Dec 22 2025",
-            "title": "Sustainable Browsing: Reducing the Internet&#x27;s Environmental Impact",
-            "content": "As the internet&#x27;s environmental footprint grows, users are encouraged to adopt green browsers to browse more sustainably. Data centers and resource-intensive browsing habits contribute significantly to energy consumption and digital waste. While individual users may not see this impact directly, the collective effect is substantial. Green browsers aim to minimize energy usage and reduce carbon emissions, making them an attractive option for environmentally conscious users. Professionals in the tech industry should consider promoting sustainable browsing practices and exploring technological innovations that reduce the environmental impact of digital activities.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/12/how-to-browse-sustainably-with-a-green-browser.html"
-        },
-        {
-            "date": "Dec 22 2025",
-            "title": "Microsoft OAuth Exploited to Compromise Enterprise Accounts",
-            "content": "Hackers are exploiting Microsoft&#x27;s OAuth 2.0 device authorization process to hijack enterprise accounts, bypassing multifactor authentication (MFA) protections. This technique allows cybercriminals and state-sponsored actors to gain persistent access to sensitive organizational data. The exploitation of a legitimate process highlights the need for enhanced security measures beyond traditional MFA. Organizations should review their authentication protocols and consider implementing additional layers of security, such as conditional access policies and continuous monitoring, to mitigate the risk of unauthorized access.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4110419/hackers-exploit-microsoft-oauth-device-codes-to-hijack-enterprise-accounts.html"
-        },
-        {
-            "date": "Dec 22 2025",
-            "title": "ASUS Live Update Vulnerability Clarified as Historic Issue",
-            "content": "The ASUS Live Update vulnerability, tracked as CVE-2025-59374, has been circulating in infosec feeds, but it pertains to a historic supply-chain attack in an End-of-Life (EoL) product, not a new threat. This clarification is crucial for security professionals assessing current risks and prioritizing patch management. While the vulnerability is not actively exploited, it serves as a reminder of the long-term impact of supply chain attacks. Organizations should ensure that all software, especially legacy systems, is regularly audited and updated to mitigate potential security risks.",
+            "title": "Nissan Customer Data Exposed in Red Hat Security Breach",
+            "content": "Nissan Motor Co. Ltd. has confirmed that a data breach at Red Hat in September has compromised the personal information of thousands of its customers. The breach involved unauthorized access to Red Hat systems, which are widely used for enterprise solutions. Nissan&#x27;s affected customers are advised to monitor their accounts for unusual activity and consider identity protection measures. This incident highlights the vulnerability of third-party service providers and the potential risks they pose to large corporations. Companies are urged to reassess their supply chain security practices to prevent similar breaches.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/not-all-cisa-linked-alerts-are-urgent-asus-live-update-cve-2025-59374/"
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/nissan-says-thousands-of-customers-exposed-in-red-hat-breach/"
         },
         {
             "date": "Dec 22 2025",
-            "title": "ISC Stormcast Highlights Recent Cybersecurity Trends and Threats",
-            "content": "The SANS Internet Storm Center has released its latest Stormcast podcast, providing insights into the current cybersecurity landscape. The discussion includes recent threat trends and key vulnerabilities affecting various sectors. The InfoCON level remains at green, indicating no immediate widespread threats. Security professionals are advised to stay informed about evolving attack vectors and to apply patches promptly. The podcast serves as a valuable resource for keeping up-to-date with the latest cybersecurity developments and best practices. Listening to such updates can help organizations better prepare for potential security challenges.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32588"
+            "title": "MacSync Malware Dropper Bypasses macOS Gatekeeper Security",
+            "content": "A new variant of the MacSync malware has been identified, capable of evading macOS Gatekeeper checks by using a digitally signed, notarized Swift application. This sophisticated dropper targets macOS systems, allowing attackers to deliver the MacSync information stealer with minimal detection. Users running macOS are advised to ensure their systems are updated to the latest security patches and to be cautious when downloading applications from unverified sources. The emergence of such advanced techniques underscores the need for continuous vigilance and robust endpoint protection strategies.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-macsync-malware-dropper-evades-macos-gatekeeper-checks/"
+        },
+        {
+            "date": "Dec 22 2025",
+            "title": "Zero-Day Exploitation Targets WatchGuard Firebox Devices",
+            "content": "Threat actors are actively exploiting a zero-day vulnerability in WatchGuard Firebox devices, adding to the growing list of edge device vendors targeted in recent weeks. The critical flaw allows attackers to gain unauthorized access and potentially disrupt network operations. Organizations using WatchGuard devices should implement available workarounds and monitor for suspicious activity while awaiting a patch. This trend of targeting edge devices highlights the importance of securing network perimeters and maintaining up-to-date threat intelligence. Security teams should prioritize patch management and incident response readiness.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/threat-actors-zero-day-watchguard-firebox"
+        },
+        {
+            "date": "Dec 22 2025",
+            "title": "Leader of 764 Offshoot Pleads Guilty, Faces Lengthy Prison Sentence",
+            "content": "Alexis Chavez, a leader of the extremist group 764, has pled guilty to multiple charges, including coercion of victims during a yearslong crime spree. This legal victory marks a significant step in law enforcement&#x27;s efforts to dismantle violent extremist networks. Chavez, who joined the group as a minor in 2022, now faces up to 60 years in prison. This case underscores the persistent threat posed by extremist collectives and the importance of continued vigilance and collaboration among security agencies. Authorities are encouraged to leverage this success to further disrupt similar criminal activities.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/764-offshoot-leader-alexis-chavez-guilty/"
+        },
+        {
+            "date": "Dec 22 2025",
+            "title": "Interpol Operation Sentinel Dismantles Ransomware Networks",
+            "content": "Operation Sentinel, led by Interpol, has resulted in the arrest of 574 individuals and the decryption of six ransomware strains, recovering $3 million tied to cybercrime activities. The operation targeted business email compromise, extortion, and ransomware networks, significantly disrupting criminal operations. This coordinated effort demonstrates the effectiveness of international collaboration in combating cyber threats. Organizations are reminded to strengthen their cybersecurity posture, including regular data backups and employee training on phishing and ransomware tactics. The operation&#x27;s success serves as a deterrent to cybercriminals worldwide.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/interpol-led-action-decrypts-6-ransomware-strains-arrests-hundreds/"
+        },
+        {
+            "date": "Dec 22 2025",
+            "title": "Android SMS Stealer Malware Targets Uzbek Telegram Users",
+            "content": "Telegram users in Uzbekistan are being targeted by a sophisticated Android SMS stealer malware, which has seen improvements in its attack methods. The malware intercepts SMS messages, potentially compromising sensitive information and authentication codes. Users are advised to install security updates promptly and exercise caution when downloading apps from unofficial sources. This attack highlights the ongoing evolution of mobile malware and the specific targeting of regional user bases. Security professionals should focus on enhancing mobile security measures and educating users on recognizing phishing attempts.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cyber-risk/uzbek-users-android-sms-stealers"
         },
         {
             "date": "May 05 2026",
@@ -70,52 +63,52 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Dec 22 2025",
-            "title": "Tesco Partners with Mistral to Enhance Customer Experience with AI",
-            "content": "Tesco has entered into a three-year partnership with AI firm Mistral to develop tools aimed at enhancing customer experience. This collaboration focuses on integrating AI into everyday operations of one of the UK&#x27;s largest supermarket chains, optimizing inventory management, and personalizing customer interactions. The initiative reflects a broader trend among retailers to leverage AI for operational efficiency and customer engagement. This strategic move is expected to streamline processes and potentially increase customer satisfaction and retention. Industry professionals should monitor how AI can be effectively embedded into retail workflows to drive business outcomes.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/tesco-signs-three-year-ai-deal-centred-on-customer-experience/"
-        },
-        {
-            "date": "Dec 20 2025",
-            "title": "Resolve AI Achieves $1 Billion Valuation with Series A Funding",
-            "content": "Resolve AI, a startup founded by former Splunk executives, has reached a $1 billion valuation following its Series A funding round led by Lightspeed Venture Partners. The company focuses on providing AI-driven solutions to optimize business processes, leveraging advanced machine learning models to enhance decision-making capabilities. This milestone underscores the growing investor confidence in AI startups that offer tangible business value. The funding will likely be used to expand product offerings and scale operations. Stakeholders in the AI industry should note the increasing valuation benchmarks for AI companies and the potential for rapid growth in this sector.",
+            "title": "OpenAI Acknowledges Persistent Threat of Prompt Injection Attacks",
+            "content": "OpenAI has admitted that prompt injection attacks will remain a persistent threat to AI browsers with agentic capabilities, such as its Atlas browser. These attacks exploit vulnerabilities in AI models, potentially allowing malicious actors to manipulate outputs. To counter this, OpenAI is enhancing its cybersecurity measures with an &quot;LLM-based automated attacker,&quot; designed to proactively identify and mitigate such threats. This development underscores the ongoing challenges in securing AI systems, particularly as they become more autonomous and complex. Organizations using AI-driven browsers should remain vigilant and implement robust security protocols to protect against these evolving risks.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/19/ex-splunk-execs-startup-resolve-ai-hits-1-billion-valuation-with-series-a/"
+            "sourceUrl": "https://techcrunch.com/2025/12/22/openai-says-ai-browsers-may-always-be-vulnerable-to-prompt-injection-attacks/"
         },
         {
-            "date": "Dec 19 2025",
-            "title": "Major Hardware Companies Declare Bankruptcy Amid Market Shifts",
-            "content": "iRobot, Luminar, and Rad Power Bikes have filed for bankruptcy, highlighting significant challenges in the hardware sector. These companies faced a combination of tariff pressures, disrupted supply chains, and changing market demands, which collectively strained their financial viability. The bankruptcies reflect broader difficulties in maintaining profitability while producing physical products in a rapidly evolving technological landscape. This development serves as a cautionary tale for hardware manufacturers to adapt to market conditions and innovate continuously. Industry professionals should evaluate their supply chain resilience and market strategies to mitigate similar risks.",
+            "date": "Dec 22 2025",
+            "title": "Alphabet Acquires Intersect Power to Enhance Energy Infrastructure",
+            "content": "Alphabet has announced its acquisition of Intersect Power for $4.75 billion in cash, plus debt, aiming to address energy grid bottlenecks impacting its data centers. Intersect Power specializes in clean energy development, and this acquisition marks a strategic move by Alphabet to secure a more reliable energy supply for its expanding infrastructure. The transaction highlights the growing importance of sustainable energy solutions in the tech industry, as companies seek to mitigate the environmental impact of data center operations. Industry leaders should consider similar investments to enhance energy efficiency and sustainability in their operations.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/podcast/hardwares-brutal-week-irobot-luminar-and-rad-power-go-bankrupt/"
+            "sourceUrl": "https://techcrunch.com/2025/12/22/alphabet-to-buy-intersect-power-to-bypass-energy-grid-bottlenecks/"
         },
         {
-            "date": "Dec 19 2025",
-            "title": "OpenAI Implements Teen Safety Rules for ChatGPT Amid Regulatory Scrutiny",
-            "content": "OpenAI has introduced new safety guidelines for its ChatGPT model, specifically targeting users under 18. These updates include AI literacy resources for teenagers and parents, aiming to ensure safe and informed interactions with AI systems. As lawmakers deliberate on AI standards for minors, this move by OpenAI represents a proactive approach to address potential regulatory requirements. However, questions remain regarding the practical enforcement of these guidelines. AI developers and policymakers should collaborate to establish effective safety measures and standards that protect young users while fostering technological literacy.",
+            "date": "Dec 22 2025",
+            "title": "ChatGPT Introduces Personalized Year-End Review Feature",
+            "content": "ChatGPT has launched a new feature akin to Spotify Wrapped, offering users a personalized year-end review. This experience includes awards, poems, and pictures that reflect users&#x27; interactions with the chatbot throughout the year. By leveraging AI to create these personalized summaries, OpenAI aims to enhance user engagement and provide a unique retrospective on digital communication. This feature could set a precedent for other AI-driven platforms to offer similar personalized insights. Users are encouraged to explore their ChatGPT year-end review to gain a deeper understanding of their AI interactions over the past year.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/19/openai-adds-new-teen-safety-rules-to-models-as-lawmakers-weigh-ai-standards-for-minors/"
+            "sourceUrl": "https://techcrunch.com/2025/12/22/chatgpt-launches-a-year-end-review-like-spotify-wrapped/"
         },
         {
-            "date": "Dec 19 2025",
-            "title": "Known&#x27;s Voice AI Drives Higher Success Rates in Dating Scene",
-            "content": "Known&#x27;s voice AI technology has demonstrated an 80% success rate in facilitating in-person dates during its pilot phase in San Francisco, significantly outperforming traditional swipe-based dating apps. This innovative approach uses AI to create more meaningful connections by focusing on voice interactions, which can lead to better compatibility assessments. The high success rate indicates a potential shift in how dating platforms leverage AI to enhance user experiences and outcomes. Professionals in the dating and social networking industries should explore integrating voice AI to improve engagement and satisfaction rates among users.",
+            "date": "Dec 22 2025",
+            "title": "Splat&#x27;s AI App Transforms Photos into Coloring Pages for Kids",
+            "content": "Splat has introduced an innovative app that uses AI to convert personal photos into coloring pages for children. This application leverages machine learning algorithms to simplify images, making them suitable for coloring activities. The app provides a creative and personalized way for children to engage with their environment, blending technology with traditional play. As AI continues to permeate daily life, such applications demonstrate the potential for technology to enhance family activities. Parents looking for educational and entertaining activities for their children may find this app a valuable addition to their digital toolkit.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/19/known-uses-voice-ai-to-help-you-go-on-more-in-person-dates/"
+            "sourceUrl": "https://techcrunch.com/2025/12/22/splats-app-uses-ai-to-turn-your-photos-into-coloring-pages-for-kids/"
         },
         {
-            "date": "Dec 19 2025",
-            "title": "Meta Plans Advanced AI Model for Visual Understanding by 2026",
-            "content": "Meta is developing a new AI model aimed at improving visual understanding capabilities, set for release in 2026. The model will enhance coding proficiency and explore world models capable of reasoning, planning, and acting without extensive training. This initiative represents a significant step towards creating more autonomous and intelligent AI systems that can handle complex visual data. The development aligns with Meta&#x27;s broader strategy to lead in AI innovation and application. AI professionals should anticipate advancements in visual processing technologies that could transform fields such as robotics, augmented reality, and automated systems.",
+            "date": "Dec 22 2025",
+            "title": "Comprehensive Timeline of ChatGPT&#x27;s 2025 Developments Released",
+            "content": "A detailed timeline of ChatGPT&#x27;s updates and releases throughout 2025 has been published, offering insights into the chatbot&#x27;s evolution. This includes enhancements in language processing capabilities, user interface improvements, and expanded integration options. The timeline serves as a valuable resource for developers and businesses utilizing ChatGPT, providing a clear view of the platform&#x27;s progress and future direction. Staying informed about these updates can help organizations optimize their use of ChatGPT and anticipate upcoming features. Industry professionals are encouraged to review this timeline to better understand the trajectory of AI-powered communication tools.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/19/meta-is-developing-a-new-image-and-video-model-for-a-2026-release-report-says/"
+            "sourceUrl": "https://techcrunch.com/2025/12/22/chatgpt-everything-to-know-about-the-ai-chatbot/"
         },
         {
-            "date": "Dec 19 2025",
-            "title": "AI Integration Boosts Efficiency in Marketing Agencies",
-            "content": "Marketing agencies are increasingly embedding AI into their workflows to enhance client service capabilities. According to a WPP iQ report, AI is now integral to briefs, production pipelines, approvals, and media optimization processes. This shift reflects a broader industry trend where AI moves from experimental to essential, driving operational efficiency and client satisfaction. The adoption of AI tools enables agencies to handle more accounts and deliver personalized marketing strategies at scale. Marketing professionals should prioritize AI integration to remain competitive and meet evolving client expectations.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/marketing-agencies-ai-use-creates-faster-workflows-but-need-restructuring-internally/"
+            "date": "Dec 22 2025",
+            "title": "Waymo Resumes San Francisco Service After Robotaxi Disruption",
+            "content": "Waymo has restarted its robotaxi service in San Francisco following a temporary suspension caused by a citywide blackout. The outage left several autonomous vehicles stalled on the streets, highlighting the vulnerability of AI-driven services to infrastructure failures. Waymo&#x27;s swift response to the incident involved recalibrating its systems to ensure reliability in future operations. This event underscores the importance of robust contingency plans for autonomous vehicle services, particularly in urban environments. Customers in San Francisco can now resume using Waymo&#x27;s services with confidence in the company&#x27;s commitment to operational stability.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/21/waymo-suspends-service-in-san-francisco-as-robotaxis-stall-during-blackout/"
+        },
+        {
+            "date": "Dec 22 2025",
+            "title": "OpenAI Celebrates Milestone of One Million Global Customers",
+            "content": "OpenAI has reached a significant milestone, with over one million customers worldwide utilizing its AI technologies to drive innovation. Companies such as PayPal, Virgin Atlantic, BBVA, Cisco, Moderna, and Canva are leveraging OpenAI&#x27;s capabilities to transform their operations and unlock new opportunities. This widespread adoption reflects the growing trust and reliance on AI to enhance productivity and creativity across various industries. Organizations aiming to stay competitive should consider integrating AI solutions to streamline processes and foster innovation. OpenAI&#x27;s achievement highlights the transformative potential of AI in shaping the future of work.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/one-in-a-million-customers"
         }
     ],
     "articles": {},
@@ -180,6 +173,17 @@ const websiteContent = {
     },
     "recentCVEs": [
         {
+            "cveId": "CVE-2023-52163",
+            "dateAdded": "Dec 22, 2025",
+            "vendor": "Digiever DS-2105 Pro",
+            "description": "Digiever DS-2105 Pro contains a missing authorization vulnerability which could allow for command injection via time_tzsetup.cgi.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-52163",
+            "isZeroDay": false
+        },
+        {
             "cveId": "CVE-2025-14733",
             "dateAdded": "Dec 19, 2025",
             "vendor": "WatchGuard Firebox",
@@ -221,17 +225,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-20393",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-59718",
-            "dateAdded": "Dec 16, 2025",
-            "vendor": "Fortinet Multiple Products",
-            "description": "Fortinet FortiOS, FortiSwitchMaster, FortiProxy, and FortiWeb contain an improper verification of cryptographic signature vulnerability that may allow an unauthenticated attacker to bypass the FortiCl",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-59718",
             "isZeroDay": false
         }
     ],
