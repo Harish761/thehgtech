@@ -1,6 +1,24 @@
 {
   "articles": [
     {
+      "id": "article-nissan-redhat-breach-2025",
+      "title": "Nissan Customer Data Breach: Red Hat Consulting GitLab Compromise Exposes 21,000 Customers",
+      "date": "December 23, 2025",
+      "category": "Supply Chain Breach",
+      "badge": "NEW",
+      "excerpt": "Crimson Collective breached Red Hat Consulting's GitLab, exposing 21,000 Nissan Fukuoka customer records. 570GB stolen from 28,000 repositories.",
+      "image": "images/articles/nissan-redhat-breach-2025.png",
+      "tags": [
+        "Nissan",
+        "Red Hat",
+        "Supply Chain",
+        "GitLab",
+        "Data Breach"
+      ],
+      "author": "TheHGTech",
+      "externalUrl": "articles/nissan-redhat-breach-2025.html"
+    },
+    {
       "id": "article-watchguard-zero-day-2025",
       "title": "WatchGuard Firebox Zero-Day CVE-2025-14733 Under Active Exploitation",
       "date": "December 22, 2025",
