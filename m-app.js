@@ -438,12 +438,6 @@
         init();
     }
 
-    // Load Search Engine (Global)
-    const searchScript = document.createElement('script');
-    searchScript.src = '/search-engine.js';
-    searchScript.defer = true;
-    document.head.appendChild(searchScript);
-
 })();
 
 // Also add CSS to forcefully hide BMC
