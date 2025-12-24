@@ -5,52 +5,59 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Dec 24 2025",
+            "title": "Cybersecurity Strategies for 2026: Protecting Against Evolving Threats",
+            "content": "As cybercriminals continue to adapt, businesses must evolve their defenses to mitigate the risk of data breaches. In 2025, small and medium-sized businesses (SMBs) faced significant challenges as attackers increasingly targeted their networks to steal sensitive data for sale on the dark web. Experts recommend enhancing security measures by implementing zero-trust architectures, improving incident response times, and investing in employee cybersecurity training. These strategies are critical as attackers deploy more sophisticated tactics, exploiting vulnerabilities in outdated systems. With the growing frequency of attacks, businesses must prioritize cybersecurity to protect financial and personal data from malicious actors.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/12/attacks-are-evolving-3-ways-to-protect.html"
+        },
+        {
+            "date": "Dec 24 2025",
+            "title": "Webrat Trojan Exploits GitHub PoCs in New Malware Campaign",
+            "content": "Researchers have discovered a stealthy campaign where the Webrat Trojan is masquerading as proof-of-concept (PoC) exploit code on GitHub, targeting security professionals. Previously known for embedding itself in game cheats and cracked software, Webrat now redirects its malicious activities towards those seeking vulnerabilities. This shift poses a significant threat to cybersecurity researchers and developers who rely on GitHub for legitimate PoCs. The campaign highlights the need for heightened vigilance and verification of code sources. Security teams are advised to implement robust scanning and validation processes to avoid inadvertently downloading malicious code.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4111531/webrat-turns-github-pocs-into-a-malware-trap.html"
+        },
+        {
+            "date": "Dec 24 2025",
+            "title": "SEC Charges Firms in $14 Million Crypto Fraud Using AI-Themed Scams",
+            "content": "The U.S. Securities and Exchange Commission (SEC) has charged multiple companies, including Morocoin Tech Corp. and Berge, for orchestrating a $14 million cryptocurrency scam. The scheme involved fraudulent AI-themed investment tips that lured retail investors into buying worthless crypto assets. This case underscores the growing trend of leveraging AI buzzwords to deceive investors in the crypto space. The SEC&#x27;s action serves as a warning to investors to exercise due diligence and skepticism, especially regarding AI-related investment opportunities. Professionals in the financial sector should remain alert to such scams that exploit emerging technology themes.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/12/sec-files-charges-over-14-million.html"
+        },
+        {
+            "date": "Dec 24 2025",
+            "title": "Navigating NIS2 Implementation: Avoiding Regulatory Pitfalls",
+            "content": "The implementation of the NIS2 directive in Europe is raising concerns about excessive regulatory burdens for companies. Similar to the challenges posed by the GDPR and the IT Security Act, businesses fear getting bogged down in compliance documentation without achieving substantial security improvements. NIS2 aims to enhance cybersecurity across critical sectors, but its success depends on balancing regulatory requirements with practical security measures. Companies are encouraged to streamline compliance processes and focus on actionable security outcomes. Understanding the directive&#x27;s requirements and leveraging automation tools can help organizations meet obligations efficiently.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4108294/implementing-nis2-without-ending-up-in-a-paper-war.html"
+        },
+        {
+            "date": "Dec 24 2025",
+            "title": "Italy Fines Apple €98.6 Million for Limiting App Store Competition",
+            "content": "Italy&#x27;s antitrust authority has fined Apple €98.6 million ($116 million) for its App Tracking Transparency (ATT) framework, which allegedly restricts competition in the App Store. The Autorità Garante della Concorrenza e del Mercato (AGCM) concluded that Apple&#x27;s ATT rules unfairly disadvantage third-party developers by limiting their ability to track users for personalized advertising. This decision reflects ongoing scrutiny of major tech companies&#x27; practices and their impact on market competition. Developers and tech companies should monitor regulatory developments and consider the implications of privacy frameworks on their business models.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/12/italy-fines-apple-986-million-over-att.html"
+        },
+        {
+            "date": "Dec 24 2025",
+            "title": "ServiceNow&#x27;s $7.75 Billion Acquisition of Armis Signals Strategic Shift",
+            "content": "ServiceNow has announced its acquisition of cybersecurity vendor Armis for $7.75 billion in cash, marking a significant strategic expansion. This move follows its recent purchases of identity security vendor Veza and AI company Moveworks. Analysts view this acquisition as part of ServiceNow&#x27;s broader strategy to enhance its cybersecurity offerings and integrate AI-driven solutions. The acquisition is expected to bolster ServiceNow&#x27;s capabilities in securing Internet of Things (IoT) devices, a growing concern for enterprises. IT leaders should assess how this acquisition might impact their security strategies and consider potential integrations with ServiceNow&#x27;s expanded portfolio.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4111449/servicenows-7-75-billion-cash-deal-for-armis-illustrates-shifting-strategies-2.html"
+        },
+        {
+            "date": "Dec 23 2025",
+            "title": "The AI Fix Podcast Explores Santa Claus Myth with AI Insights",
+            "content": "In a festive edition of The AI Fix podcast, hosts delve into the age-old question of Santa Claus&#x27;s existence using AI and scientific principles. The episode humorously examines how chatbots, Google&#x27;s algorithms, and the laws of physics contribute to debunking the Santa myth. This lighthearted exploration highlights the intersection of AI technology and cultural traditions, offering an entertaining take on how AI can be applied to unconventional topics. Listeners are encouraged to reflect on the broader implications of AI&#x27;s role in shaping perceptions and narratives, even in whimsical contexts.",
+            "source": "Graham Cluley",
+            "sourceUrl": "https://grahamcluley.com/the-ai-fix-82-santa-claus-doesnt-exist-according-to-ai/"
+        },
+        {
+            "date": "Dec 24 2025",
             "title": "Interpol&#x27;s Global Crackdown Dismantles Cybercrime Networks in 19 Countries",
             "content": "Interpol&#x27;s recent operation in Africa has led to the decryption of six ransomware strains, disruption of malicious websites, and the arrest of hundreds of cybercriminals across 19 countries. The coordinated effort, praised by cybersecurity experts, highlights the persistent threat of ransomware and the need for international cooperation in combating cybercrime. This operation, while not as high-profile as taking down notorious groups like LockBit, marks a significant step in disrupting organized cybercrime networks. The operation&#x27;s success underscores the importance of cross-border collaboration in addressing the growing sophistication of digital threats. Organizations are encouraged to enhance their cybersecurity measures and remain vigilant against evolving ransomware tactics.",
             "source": "CSO Online",
             "sourceUrl": "https://www.csoonline.com/article/4111324/interpol-sweep-takes-down-cybercrooks-in-19-countries.html"
-        },
-        {
-            "date": "Dec 23 2025",
-            "title": "Healthcare Industry Challenges Proposed HIPAA Security Rule Changes",
-            "content": "Despite a surge in cyberattacks targeting healthcare systems, industry groups argue that the proposed overhaul of the Health Insurance Portability and Accountability Act (HIPAA) security rules does not adequately address current threats. The healthcare sector remains a prime target for cybercriminals due to the sensitive nature of patient data and the potential for disruption. Critics of the proposed changes suggest that more robust measures are needed to protect against increasingly sophisticated attacks. As healthcare organizations grapple with these challenges, there is a call for more comprehensive regulatory frameworks to ensure data integrity and patient safety.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyber-risk/industry-oppose-hipaa-security-rule-overhaul"
-        },
-        {
-            "date": "Dec 23 2025",
-            "title": "ServiceNow Acquires Armis for $7.75 Billion to Enhance AI-Driven Cybersecurity",
-            "content": "ServiceNow has announced its acquisition of Armis for $7.75 billion, aiming to bolster its &#x27;AI Control Tower&#x27; initiative for autonomous cybersecurity management. This strategic purchase is expected to enhance ServiceNow&#x27;s ability to proactively manage security threats using artificial intelligence, integrating seamlessly into their existing security stack. The acquisition reflects a growing trend among tech companies to leverage AI for more efficient and effective cybersecurity solutions. As cyber threats become more complex, the integration of AI capabilities is seen as essential for organizations looking to stay ahead of potential vulnerabilities and attacks.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/servicenow-buys-armis-gets-ai-control-tower"
-        },
-        {
-            "date": "Dec 23 2025",
-            "title": "WebRAT Malware Exploits GitHub for Distribution via Fake Vulnerability Exploits",
-            "content": "The WebRAT malware is being distributed through GitHub repositories masquerading as proof-of-concept exploits for newly disclosed vulnerabilities. This tactic exploits the trust developers place in open-source platforms, potentially leading to widespread infection. WebRAT is capable of executing remote commands and exfiltrating sensitive data, posing a significant risk to systems that download and run these fake exploits. Security professionals are advised to verify the authenticity of GitHub repositories and exercise caution when accessing proof-of-concept code. This development highlights the need for heightened vigilance in the open-source community to prevent the spread of malicious software.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/webrat-malware-spread-via-fake-vulnerability-exploits-on-github/"
-        },
-        {
-            "date": "Dec 23 2025",
-            "title": "Amazon Thwarts 1,800 North Korean IT Job Scammers",
-            "content": "Amazon has successfully identified and blocked 1,800 suspected North Korean operatives attempting to infiltrate the company under the guise of IT job applicants. This operation highlights the scale of state-sponsored cyber activities aimed at corporate espionage and data theft. The scammers, believed to be part of a broader strategy by North Korea to generate revenue and gather intelligence, used sophisticated tactics to blend in with legitimate applicants. Organizations are urged to strengthen their hiring processes and conduct thorough background checks to mitigate the risk of insider threats. This incident underscores the persistent threat posed by nation-state actors in the cyber domain.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/remote-workforce/amazon-fends-off-dprk-it-job-scammers"
-        },
-        {
-            "date": "Dec 23 2025",
-            "title": "Operation Sentinel Disrupts Major African Cybercrime Syndicates",
-            "content": "Interpol&#x27;s Operation Sentinel has resulted in 574 arrests and the recovery of $3 million, targeting cybercrime syndicates across 19 African countries. The operation addressed a range of criminal activities, including business email compromise, digital extortion, and ransomware schemes. This large-scale crackdown reflects the growing cybercrime threat in the region and the need for coordinated international efforts to dismantle these networks. The success of Operation Sentinel demonstrates the effectiveness of collaborative law enforcement actions in combating cybercrime. Businesses are encouraged to remain vigilant and implement robust cybersecurity measures to protect against such threats.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/threat-intelligence/operation-sentinel-african-cybercrime-syndicates"
-        },
-        {
-            "date": "Dec 23 2025",
-            "title": "MacSync Stealer Malware Bypasses macOS Gatekeeper Security",
-            "content": "The MacSync Stealer malware has developed the capability to bypass macOS Gatekeeper security warnings, posing a significant threat to Apple users. By disguising itself as a legitimate application, the malware can infect systems with minimal user interaction, increasing the risk of data theft. This advancement in malware tactics highlights the evolving nature of threats targeting macOS, traditionally considered more secure than other operating systems. Security experts advise macOS users to remain vigilant, ensuring that their systems are updated and that they avoid downloading applications from untrusted sources. This incident underscores the importance of continuous security enhancements in protecting against sophisticated malware.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4111179/macsync-stealer-malware-bypasses-macos-gatekeeper-security-warnings.html"
         },
         {
             "date": "May 05 2026",
@@ -62,53 +69,53 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Dec 23 2025",
-            "title": "Authors File Lawsuit Against AI Companies Over Settlement Terms",
-            "content": "John Carreyrou and several other authors have filed a lawsuit against six major AI companies, rejecting a class action settlement proposed by Anthropic. The authors argue that the settlement undervalues their claims, allowing large language model (LLM) companies to dismiss high-value claims at minimal costs. This legal action underscores ongoing concerns about intellectual property rights as AI models increasingly rely on vast datasets that include copyrighted material. The outcome of this lawsuit could set a precedent for how AI companies negotiate with content creators. Professionals in the AI and legal sectors should monitor this case closely, as it may influence future agreements and regulations in the industry.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/23/john-carreyrou-and-other-authors-bring-new-lawsuit-against-six-major-ai-companies/"
-        },
-        {
-            "date": "Dec 23 2025",
-            "title": "Google Highlights 2025 Research Breakthroughs Across Eight Key Areas",
-            "content": "Google&#x27;s 2025 year in review showcases significant research breakthroughs across eight pivotal areas, reinforcing its leadership in AI innovation. These advancements span fields such as quantum computing, natural language processing, and AI ethics, reflecting the company&#x27;s broad investment in cutting-edge technologies. The breakthroughs have potential implications for various industries, from healthcare to finance, where AI applications are rapidly expanding. Google&#x27;s commitment to transparency and collaboration in research is evident as it continues to share findings with the broader scientific community. Stakeholders in technology and research should explore these developments to understand emerging trends and opportunities in AI.",
-            "source": "Google DeepMind News",
-            "sourceUrl": "https://deepmind.google/blog/googles-year-in-review-8-areas-with-research-breakthroughs-in-2025/"
-        },
-        {
-            "date": "Dec 23 2025",
-            "title": "Marissa Mayer&#x27;s Dazzle Secures $8M to Revolutionize AI-Driven Consumer Experiences",
-            "content": "Marissa Mayer&#x27;s new venture, Dazzle, has raised $8 million in a funding round led by Forerunner&#x27;s Kirsten Green, signaling strong investor confidence in AI-driven consumer applications. Following the closure of her previous startup, Sunshine, Mayer is focusing on integrating AI into consumer experiences, potentially transforming how users interact with digital products. The funding will support Dazzle&#x27;s development of AI-infused technologies aimed at enhancing user engagement and personalization. As AI continues to permeate consumer markets, businesses should consider how these innovations could reshape customer interactions and competitive dynamics. Industry leaders and developers should watch Dazzle&#x27;s progress for insights into the evolving landscape of AI in consumer technology.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/23/marissa-mayers-new-startup-dazzle-raises-8m-led-by-forerunners-kirsten-green/"
-        },
-        {
-            "date": "Dec 23 2025",
-            "title": "Amazon Expands Alexa+ Capabilities with New Service Integrations",
-            "content": "Amazon has announced that its AI assistant, Alexa+, now integrates with Angi, Expedia, Square, and Yelp, further expanding its ecosystem of services. These additions complement existing integrations with platforms like Uber and OpenTable, enhancing Alexa+&#x27;s utility for users seeking seamless interactions across various domains. The new capabilities allow users to book services, manage appointments, and access information more efficiently, highlighting the growing role of AI in everyday activities. As virtual assistants become more versatile, businesses should consider leveraging these technologies to improve customer service and operational efficiency. Developers should explore the potential for creating new applications that capitalize on these expanded functionalities.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/23/amazons-ai-assistant-alexa-now-works-with-angi-expedia-square-and-yelp/"
-        },
-        {
-            "date": "Dec 23 2025",
-            "title": "Lemon Slice Secures $10.5M to Advance Digital Avatar Technology",
-            "content": "Lemon Slice, a company specializing in digital avatar generation, has raised $10.5 million from investors including Y Combinator and Matrix Partners. The funding will support the development of a new diffusion model capable of creating lifelike digital avatars from a single image, potentially adding a video layer to AI chatbots. This technology could revolutionize user interactions by providing more engaging and personalized virtual experiences. As digital avatars become increasingly prevalent in sectors like gaming, entertainment, and customer service, businesses should explore how these innovations can enhance user engagement. The rise of avatar technology underscores the need for robust AI models that balance realism with ethical considerations.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/23/lemon-slice-nabs-10-5m-from-yc-and-matrix-to-build-out-its-digital-avatar-tech/"
-        },
-        {
-            "date": "Dec 23 2025",
-            "title": "AprielGuard Enhances Safety and Robustness in LLM Systems",
-            "content": "Hugging Face has introduced AprielGuard, a new framework designed to improve safety and adversarial robustness in modern large language model (LLM) systems. This tool aims to mitigate risks associated with adversarial attacks and unintended outputs, ensuring more reliable AI interactions. As LLMs are increasingly deployed in sensitive applications, the need for robust guardrails to protect against misuse and errors is critical. AprielGuard&#x27;s development reflects a broader industry trend towards enhancing AI safety and accountability. AI developers and security professionals should consider integrating such frameworks to safeguard their systems and maintain user trust in AI technologies.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/ServiceNow-AI/aprielguard"
-        },
-        {
-            "date": "Dec 23 2025",
-            "title": "Arm&#x27;s Strategic Vision for AI at the Edge",
-            "content": "In a recent podcast, Vince Jesaitis, head of global government affairs at Arm Holdings, outlined the company&#x27;s strategic vision for AI at the edge. Arm is positioning itself as a central player in the AI transformation by focusing on energy-efficient processing and innovative solutions for edge computing. As AI applications expand beyond centralized data centers, edge computing offers opportunities for faster, more responsive AI experiences in fields like IoT and autonomous vehicles. Arm&#x27;s approach highlights the importance of scalable, efficient AI infrastructure to support diverse applications. Enterprises should evaluate how edge AI can enhance their operations and drive innovation in their respective sectors.",
+            "date": "Dec 24 2025",
+            "title": "Britain&#x27;s Railways Poised for Billion-Journey Expansion with AI",
+            "content": "A recent industry report suggests that Britain&#x27;s railway network could accommodate an additional billion passenger journeys by the mid-2030s, leveraging the 1.6 billion journeys recorded by March 2024. The expansion relies on integrating digital systems to manage the increased complexity and control required. This growth is expected to be driven by AI technologies that enhance predictive maintenance, optimize scheduling, and improve passenger experience. The report highlights the need for robust infrastructure and data management to support this ambitious plan. Industry professionals should focus on developing scalable AI solutions to meet future demand while maintaining safety and efficiency standards.",
             "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/arm-chips-and-the-future-of-ai-at-the-edge/"
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/rail-ai-in-the-uk-beyond-predictive-maintenance/"
+        },
+        {
+            "date": "Dec 24 2025",
+            "title": "Disney Integrates Generative AI to Streamline Content Production",
+            "content": "Disney is embedding generative AI into its operating model to enhance content production and distribution across diverse formats and audiences. This move aims to balance speed and flexibility with the need for tight control over intellectual property, safety, and brand consistency. While generative AI offers significant advantages, Disney acknowledges the risks of unmanaged use, which could lead to brand dilution or intellectual property issues. The company is focusing on developing AI governance frameworks to mitigate these risks. Professionals in the media and entertainment industry should monitor Disney&#x27;s approach as a potential model for integrating AI while safeguarding brand integrity.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/why-disney-is-embedding-generative-ai-into-its-operating-model/"
+        },
+        {
+            "date": "Dec 23 2025",
+            "title": "AI Hype on Social Media: A Growing Concern for Industry Leaders",
+            "content": "Demis Hassabis, CEO of Google DeepMind, criticized the overzealous promotion of AI capabilities on social media, calling it &quot;embarrassing.&quot; His comment was directed at a post by Sébastien Bubeck of OpenAI, which exaggerated the achievements of GPT-5 in assisting mathematicians. This incident underscores the growing issue of AI boosterism, where exaggerated claims can mislead the public and stakeholders about AI&#x27;s true capabilities and limitations. Industry leaders are urged to promote a balanced narrative that accurately reflects AI&#x27;s potential and challenges. Professionals should remain skeptical of hyperbolic claims and seek evidence-based assessments of AI technologies.",
+            "source": "MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2025/12/23/1130393/how-social-media-encourages-the-worst-of-ai-boosterism/"
+        },
+        {
+            "date": "Dec 22 2025",
+            "title": "OpenAI Acknowledges Persistent Vulnerability in AI Browsers",
+            "content": "OpenAI has conceded that prompt injection attacks will remain a persistent risk for AI browsers with agentic capabilities, such as Atlas. Despite this, the company is enhancing its cybersecurity measures by deploying an LLM-based automated attacker to identify and mitigate potential threats. This development highlights the ongoing challenge of securing AI systems against sophisticated attacks. Security professionals should prioritize developing robust defense mechanisms and continuously updating threat models to protect AI-driven applications. OpenAI&#x27;s proactive approach serves as a reminder of the need for vigilance in AI cybersecurity.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/22/openai-says-ai-browsers-may-always-be-vulnerable-to-prompt-injection-attacks/"
+        },
+        {
+            "date": "Dec 22 2025",
+            "title": "Alphabet Acquires Intersect Power to Overcome Energy Grid Challenges",
+            "content": "Alphabet has announced its acquisition of Intersect Power for $4.75 billion in cash plus debt, aiming to bypass existing energy grid bottlenecks. Intersect Power, known for its data center and clean energy development, will bolster Alphabet&#x27;s efforts to ensure reliable energy supply for its operations. This strategic move reflects the growing importance of sustainable energy solutions in the tech industry. By securing a direct supply of clean energy, Alphabet positions itself to meet increasing energy demands while reducing its carbon footprint. Industry leaders should consider similar strategies to address energy challenges and support environmental sustainability.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/22/alphabet-to-buy-intersect-power-to-bypass-energy-grid-bottlenecks/"
+        },
+        {
+            "date": "Dec 22 2025",
+            "title": "ChatGPT Introduces Year-End Review Feature Inspired by Spotify Wrapped",
+            "content": "ChatGPT has launched a new year-end review feature that mirrors the popular Spotify Wrapped experience. This interactive feature includes personalized awards, poems, and images that reference users&#x27; year in chat interactions. By offering a creative and engaging summary of user activity, ChatGPT aims to enhance user engagement and satisfaction. This initiative highlights the trend of personalization in AI-driven applications, providing users with unique insights into their interactions. Developers and product managers should explore similar features to boost user retention and engagement in their platforms.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/22/chatgpt-launches-a-year-end-review-like-spotify-wrapped/"
+        },
+        {
+            "date": "Dec 22 2025",
+            "title": "Splat&#x27;s App Uses AI to Transform Photos into Kids&#x27; Coloring Pages",
+            "content": "Splat has launched an innovative app that uses AI to convert personal photos into coloring pages for children. This application leverages AI technologies to simplify the process of creating customized coloring pages, providing a creative outlet for kids. The app&#x27;s ability to transform everyday images into engaging activities represents a growing trend in AI&#x27;s role in education and entertainment. Parents and educators should consider incorporating such tools to foster creativity and learning in children. The app exemplifies the potential for AI to enhance traditional activities with personalized digital content.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/22/splats-app-uses-ai-to-turn-your-photos-into-coloring-pages-for-kids/"
         }
     ],
     "articles": {},
