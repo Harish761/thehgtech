@@ -4,53 +4,53 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Dec 23 2025",
-            "title": "Hackers Exploit OAuth 2.0 One-Time Codes to Bypass MFA",
-            "content": "Security firm Proofpoint has uncovered a sophisticated method used by hackers to bypass multi-factor authentication (MFA) by exploiting one-time codes from OAuth 2.0. This approach allows attackers to gain unauthorized access to corporate accounts, posing a significant risk to organizations relying on OAuth for secure authentication. The vulnerability lies in the interception and reuse of these one-time codes, which are meant to enhance security. Companies using OAuth 2.0 should reassess their MFA implementations and consider additional security layers. This discovery underscores the evolving tactics of cybercriminals targeting authentication systems and the need for continuous vigilance in cybersecurity practices.",
+            "date": "Dec 24 2025",
+            "title": "Interpol&#x27;s Global Crackdown Dismantles Cybercrime Networks in 19 Countries",
+            "content": "Interpol&#x27;s recent operation in Africa has led to the decryption of six ransomware strains, disruption of malicious websites, and the arrest of hundreds of cybercriminals across 19 countries. The coordinated effort, praised by cybersecurity experts, highlights the persistent threat of ransomware and the need for international cooperation in combating cybercrime. This operation, while not as high-profile as taking down notorious groups like LockBit, marks a significant step in disrupting organized cybercrime networks. The operation&#x27;s success underscores the importance of cross-border collaboration in addressing the growing sophistication of digital threats. Organizations are encouraged to enhance their cybersecurity measures and remain vigilant against evolving ransomware tactics.",
             "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4111120/one-time-codes-used-to-hack-corporate-accounts.html"
+            "sourceUrl": "https://www.csoonline.com/article/4111324/interpol-sweep-takes-down-cybercrooks-in-19-countries.html"
         },
         {
             "date": "Dec 23 2025",
-            "title": "Outsourced Cybersecurity Creates Cascading Risks Across Industries",
-            "content": "Outsourcing critical IT and cybersecurity functions has emerged as a double-edged sword, leading to systemic vulnerabilities across industries. Initially seen as a cost-efficient strategy, reliance on third-party vendors has led to cascading breaches affecting hundreds of organizations at once. This systemic fragility is exacerbated by interconnected digital ecosystems where a single vendor&#x27;s breach can have widespread implications. Businesses must reassess their dependency on external cybersecurity providers and implement robust risk management strategies. This trend highlights the need for a balanced approach to outsourcing, where security is prioritized alongside efficiency.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4110657/why-outsourced-cyber-defenses-create-systemic-risks.html"
+            "title": "Healthcare Industry Challenges Proposed HIPAA Security Rule Changes",
+            "content": "Despite a surge in cyberattacks targeting healthcare systems, industry groups argue that the proposed overhaul of the Health Insurance Portability and Accountability Act (HIPAA) security rules does not adequately address current threats. The healthcare sector remains a prime target for cybercriminals due to the sensitive nature of patient data and the potential for disruption. Critics of the proposed changes suggest that more robust measures are needed to protect against increasingly sophisticated attacks. As healthcare organizations grapple with these challenges, there is a call for more comprehensive regulatory frameworks to ensure data integrity and patient safety.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cyber-risk/industry-oppose-hipaa-security-rule-overhaul"
         },
         {
             "date": "Dec 23 2025",
-            "title": "Coupang Faces US Lawsuit Over Delayed Data Breach Disclosure",
-            "content": "South Korean e-commerce giant Coupang is facing a US federal securities class action lawsuit for allegedly delaying the disclosure of a significant data breach. The lawsuit claims that Coupang violated SEC rules by taking nearly a month to report the breach, which should have been disclosed within four business days. This incident raises concerns about transparency and compliance with cybersecurity reporting regulations. Investors and stakeholders demand accountability as delayed disclosures can exacerbate the impact of breaches. Companies are reminded of the importance of timely communication and adherence to regulatory requirements in managing cybersecurity incidents.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4111091/south-korean-firm-hit-with-us-investor-lawsuit-over-data-breach-disclosure-failures.html"
+            "title": "ServiceNow Acquires Armis for $7.75 Billion to Enhance AI-Driven Cybersecurity",
+            "content": "ServiceNow has announced its acquisition of Armis for $7.75 billion, aiming to bolster its &#x27;AI Control Tower&#x27; initiative for autonomous cybersecurity management. This strategic purchase is expected to enhance ServiceNow&#x27;s ability to proactively manage security threats using artificial intelligence, integrating seamlessly into their existing security stack. The acquisition reflects a growing trend among tech companies to leverage AI for more efficient and effective cybersecurity solutions. As cyber threats become more complex, the integration of AI capabilities is seen as essential for organizations looking to stay ahead of potential vulnerabilities and attacks.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/servicenow-buys-armis-gets-ai-control-tower"
         },
         {
             "date": "Dec 23 2025",
-            "title": "Hacktivists Claim Near-Complete Spotify Data Scrape",
-            "content": "Hacktivists have reportedly scraped nearly all available content from Spotify, raising potential privacy and security concerns for users. While the implications for individual users remain unclear, the scale of the scrape suggests a significant breach of Spotify&#x27;s data protection measures. This incident highlights the vulnerabilities in digital content platforms and the challenges in securing vast amounts of user data. Spotify users are advised to monitor their accounts for any unusual activity and consider updating their passwords. The event underscores the ongoing threats posed by hacktivist groups targeting major digital services.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2025/12/hacktivists-claim-near-total-spotify-music-scrape"
-        },
-        {
-            "date": "Dec 23 2025",
-            "title": "Cyberattack Disrupts France&#x27;s Postal and Banking Services",
-            "content": "A major cyberattack has disrupted the French national postal service&#x27;s online operations, impacting digital banking and other services for millions. The incident, described as a &quot;major network incident,&quot; has highlighted vulnerabilities in critical national infrastructure. The disruption underscores the potential for cyberattacks to paralyze essential services and the need for robust cybersecurity measures. French authorities are investigating the attack&#x27;s origins and working to restore affected services. This event serves as a stark reminder of the importance of securing national infrastructure against sophisticated cyber threats.",
+            "title": "WebRAT Malware Exploits GitHub for Distribution via Fake Vulnerability Exploits",
+            "content": "The WebRAT malware is being distributed through GitHub repositories masquerading as proof-of-concept exploits for newly disclosed vulnerabilities. This tactic exploits the trust developers place in open-source platforms, potentially leading to widespread infection. WebRAT is capable of executing remote commands and exfiltrating sensitive data, posing a significant risk to systems that download and run these fake exploits. Security professionals are advised to verify the authenticity of GitHub repositories and exercise caution when accessing proof-of-concept code. This development highlights the need for heightened vigilance in the open-source community to prevent the spread of malicious software.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cyberattack-knocks-offline-frances-postal-banking-services/"
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/webrat-malware-spread-via-fake-vulnerability-exploits-on-github/"
         },
         {
             "date": "Dec 23 2025",
-            "title": "Nissan Affected by Red Hat Data Breach Compromising Customer Data",
-            "content": "Nissan has confirmed that the personal information of 21,000 customers was compromised following a breach of Red Hat&#x27;s GitLab instances. Hackers exploited vulnerabilities in Red Hat&#x27;s systems to access sensitive customer data, highlighting the risks associated with third-party software dependencies. This breach has raised concerns about data security protocols and the protection of customer information. Nissan is working to notify affected customers and enhance its security measures. The incident emphasizes the need for rigorous security assessments and monitoring of third-party systems to prevent data breaches.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/nissan-confirms-impact-from-red-hat-data-breach/"
+            "title": "Amazon Thwarts 1,800 North Korean IT Job Scammers",
+            "content": "Amazon has successfully identified and blocked 1,800 suspected North Korean operatives attempting to infiltrate the company under the guise of IT job applicants. This operation highlights the scale of state-sponsored cyber activities aimed at corporate espionage and data theft. The scammers, believed to be part of a broader strategy by North Korea to generate revenue and gather intelligence, used sophisticated tactics to blend in with legitimate applicants. Organizations are urged to strengthen their hiring processes and conduct thorough background checks to mitigate the risk of insider threats. This incident underscores the persistent threat posed by nation-state actors in the cyber domain.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/remote-workforce/amazon-fends-off-dprk-it-job-scammers"
         },
         {
             "date": "Dec 23 2025",
-            "title": "Feds Seize Database Used in $28 Million Bank Account Takeover Scheme",
-            "content": "Federal authorities have seized a password database used in a massive bank account takeover scheme, thwarting cybercriminals&#x27; attempts to steal $28 million. The attackers relied on phishing tactics to compromise bank accounts, leveraging the database to facilitate unauthorized access. This operation highlights the ongoing threat of phishing and the importance of safeguarding credentials. Financial institutions and customers are urged to implement stronger authentication measures and remain vigilant against phishing attempts. The successful intervention by federal agencies underscores the critical role of law enforcement in combating cybercrime.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/feds-seize-password-database-used-in-massive-bank-account-takeover-scheme/"
+            "title": "Operation Sentinel Disrupts Major African Cybercrime Syndicates",
+            "content": "Interpol&#x27;s Operation Sentinel has resulted in 574 arrests and the recovery of $3 million, targeting cybercrime syndicates across 19 African countries. The operation addressed a range of criminal activities, including business email compromise, digital extortion, and ransomware schemes. This large-scale crackdown reflects the growing cybercrime threat in the region and the need for coordinated international efforts to dismantle these networks. The success of Operation Sentinel demonstrates the effectiveness of collaborative law enforcement actions in combating cybercrime. Businesses are encouraged to remain vigilant and implement robust cybersecurity measures to protect against such threats.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/threat-intelligence/operation-sentinel-african-cybercrime-syndicates"
+        },
+        {
+            "date": "Dec 23 2025",
+            "title": "MacSync Stealer Malware Bypasses macOS Gatekeeper Security",
+            "content": "The MacSync Stealer malware has developed the capability to bypass macOS Gatekeeper security warnings, posing a significant threat to Apple users. By disguising itself as a legitimate application, the malware can infect systems with minimal user interaction, increasing the risk of data theft. This advancement in malware tactics highlights the evolving nature of threats targeting macOS, traditionally considered more secure than other operating systems. Security experts advise macOS users to remain vigilant, ensuring that their systems are updated and that they avoid downloading applications from untrusted sources. This incident underscores the importance of continuous security enhancements in protecting against sophisticated malware.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4111179/macsync-stealer-malware-bypasses-macos-gatekeeper-security-warnings.html"
         },
         {
             "date": "May 05 2026",
@@ -63,38 +63,52 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Dec 23 2025",
-            "title": "AI Hype Criticized by Google DeepMind CEO",
-            "content": "Demis Hassabis, CEO of Google DeepMind, publicly criticized the overenthusiastic promotion of AI achievements on social media, calling it &quot;embarrassing.&quot; His comments were directed at a post by Sébastien Bubeck, an OpenAI research scientist, who announced a breakthrough involving their latest model, GPT-5. The incident underscores the ongoing rivalry between AI giants and the tendency for social media to amplify claims beyond their technical merit. This highlights the need for professionals to critically evaluate AI advancements rather than relying on sensationalized online narratives. Industry leaders are urged to communicate developments with clarity and caution to avoid misleading stakeholders about AI&#x27;s current capabilities.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2025/12/23/1130393/how-social-media-encourages-the-worst-of-ai-boosterism/"
+            "title": "Authors File Lawsuit Against AI Companies Over Settlement Terms",
+            "content": "John Carreyrou and several other authors have filed a lawsuit against six major AI companies, rejecting a class action settlement proposed by Anthropic. The authors argue that the settlement undervalues their claims, allowing large language model (LLM) companies to dismiss high-value claims at minimal costs. This legal action underscores ongoing concerns about intellectual property rights as AI models increasingly rely on vast datasets that include copyrighted material. The outcome of this lawsuit could set a precedent for how AI companies negotiate with content creators. Professionals in the AI and legal sectors should monitor this case closely, as it may influence future agreements and regulations in the industry.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/23/john-carreyrou-and-other-authors-bring-new-lawsuit-against-six-major-ai-companies/"
         },
         {
-            "date": "Dec 22 2025",
-            "title": "Tesco Partners with Mistral for AI-Driven Customer Experience",
-            "content": "Tesco has entered a three-year partnership with AI firm Mistral to enhance customer experience through artificial intelligence. The collaboration aims to integrate AI tools into Tesco&#x27;s operations, focusing on improving efficiency and personalization in customer interactions. This strategic move reflects the retail sector&#x27;s growing reliance on AI to stay competitive in a rapidly evolving market. By leveraging AI, Tesco hopes to better understand customer preferences and optimize service delivery. Retailers are encouraged to explore similar innovations to maintain customer engagement and operational effectiveness in the digital age.",
+            "date": "Dec 23 2025",
+            "title": "Google Highlights 2025 Research Breakthroughs Across Eight Key Areas",
+            "content": "Google&#x27;s 2025 year in review showcases significant research breakthroughs across eight pivotal areas, reinforcing its leadership in AI innovation. These advancements span fields such as quantum computing, natural language processing, and AI ethics, reflecting the company&#x27;s broad investment in cutting-edge technologies. The breakthroughs have potential implications for various industries, from healthcare to finance, where AI applications are rapidly expanding. Google&#x27;s commitment to transparency and collaboration in research is evident as it continues to share findings with the broader scientific community. Stakeholders in technology and research should explore these developments to understand emerging trends and opportunities in AI.",
+            "source": "Google DeepMind News",
+            "sourceUrl": "https://deepmind.google/blog/googles-year-in-review-8-areas-with-research-breakthroughs-in-2025/"
+        },
+        {
+            "date": "Dec 23 2025",
+            "title": "Marissa Mayer&#x27;s Dazzle Secures $8M to Revolutionize AI-Driven Consumer Experiences",
+            "content": "Marissa Mayer&#x27;s new venture, Dazzle, has raised $8 million in a funding round led by Forerunner&#x27;s Kirsten Green, signaling strong investor confidence in AI-driven consumer applications. Following the closure of her previous startup, Sunshine, Mayer is focusing on integrating AI into consumer experiences, potentially transforming how users interact with digital products. The funding will support Dazzle&#x27;s development of AI-infused technologies aimed at enhancing user engagement and personalization. As AI continues to permeate consumer markets, businesses should consider how these innovations could reshape customer interactions and competitive dynamics. Industry leaders and developers should watch Dazzle&#x27;s progress for insights into the evolving landscape of AI in consumer technology.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/23/marissa-mayers-new-startup-dazzle-raises-8m-led-by-forerunners-kirsten-green/"
+        },
+        {
+            "date": "Dec 23 2025",
+            "title": "Amazon Expands Alexa+ Capabilities with New Service Integrations",
+            "content": "Amazon has announced that its AI assistant, Alexa+, now integrates with Angi, Expedia, Square, and Yelp, further expanding its ecosystem of services. These additions complement existing integrations with platforms like Uber and OpenTable, enhancing Alexa+&#x27;s utility for users seeking seamless interactions across various domains. The new capabilities allow users to book services, manage appointments, and access information more efficiently, highlighting the growing role of AI in everyday activities. As virtual assistants become more versatile, businesses should consider leveraging these technologies to improve customer service and operational efficiency. Developers should explore the potential for creating new applications that capitalize on these expanded functionalities.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/23/amazons-ai-assistant-alexa-now-works-with-angi-expedia-square-and-yelp/"
+        },
+        {
+            "date": "Dec 23 2025",
+            "title": "Lemon Slice Secures $10.5M to Advance Digital Avatar Technology",
+            "content": "Lemon Slice, a company specializing in digital avatar generation, has raised $10.5 million from investors including Y Combinator and Matrix Partners. The funding will support the development of a new diffusion model capable of creating lifelike digital avatars from a single image, potentially adding a video layer to AI chatbots. This technology could revolutionize user interactions by providing more engaging and personalized virtual experiences. As digital avatars become increasingly prevalent in sectors like gaming, entertainment, and customer service, businesses should explore how these innovations can enhance user engagement. The rise of avatar technology underscores the need for robust AI models that balance realism with ethical considerations.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/23/lemon-slice-nabs-10-5m-from-yc-and-matrix-to-build-out-its-digital-avatar-tech/"
+        },
+        {
+            "date": "Dec 23 2025",
+            "title": "AprielGuard Enhances Safety and Robustness in LLM Systems",
+            "content": "Hugging Face has introduced AprielGuard, a new framework designed to improve safety and adversarial robustness in modern large language model (LLM) systems. This tool aims to mitigate risks associated with adversarial attacks and unintended outputs, ensuring more reliable AI interactions. As LLMs are increasingly deployed in sensitive applications, the need for robust guardrails to protect against misuse and errors is critical. AprielGuard&#x27;s development reflects a broader industry trend towards enhancing AI safety and accountability. AI developers and security professionals should consider integrating such frameworks to safeguard their systems and maintain user trust in AI technologies.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/ServiceNow-AI/aprielguard"
+        },
+        {
+            "date": "Dec 23 2025",
+            "title": "Arm&#x27;s Strategic Vision for AI at the Edge",
+            "content": "In a recent podcast, Vince Jesaitis, head of global government affairs at Arm Holdings, outlined the company&#x27;s strategic vision for AI at the edge. Arm is positioning itself as a central player in the AI transformation by focusing on energy-efficient processing and innovative solutions for edge computing. As AI applications expand beyond centralized data centers, edge computing offers opportunities for faster, more responsive AI experiences in fields like IoT and autonomous vehicles. Arm&#x27;s approach highlights the importance of scalable, efficient AI infrastructure to support diverse applications. Enterprises should evaluate how edge AI can enhance their operations and drive innovation in their respective sectors.",
             "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/tesco-signs-three-year-ai-deal-centred-on-customer-experience/"
-        },
-        {
-            "date": "Dec 22 2025",
-            "title": "OpenAI Enhances ChatGPT Atlas Security Against Prompt Injection",
-            "content": "OpenAI is fortifying ChatGPT Atlas against prompt injection attacks by employing automated red teaming techniques enhanced with reinforcement learning. This initiative aims to proactively discover and patch vulnerabilities, strengthening the browser agent&#x27;s defenses as AI systems become more autonomous. By identifying novel exploits early, OpenAI seeks to safeguard users and maintain trust in AI applications. The effort highlights the importance of continuous security improvements in AI development to mitigate potential threats. Organizations using AI-driven tools should prioritize security measures to protect against evolving cyber threats.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/hardening-atlas-against-prompt-injection"
-        },
-        {
-            "date": "Dec 20 2025",
-            "title": "OpenAI Introduces User-Controlled Enthusiasm Levels in ChatGPT",
-            "content": "OpenAI has expanded ChatGPT&#x27;s customization options by allowing users to directly adjust the AI&#x27;s enthusiasm level. This new feature builds on existing capabilities to set a base style and tone, including Professional, Candid, and Quirky options introduced in November. The enhancement provides users with greater control over the interaction dynamics, catering to diverse communication preferences. This development reflects a broader trend towards personalized AI experiences, enabling users to tailor AI interactions to specific contexts and audiences. Professionals utilizing AI for customer service or content creation can leverage these tools to enhance user satisfaction and engagement.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/20/openai-allows-users-to-directly-adjust-chatgpts-warmth-and-enthusiasm/"
-        },
-        {
-            "date": "Dec 20 2025",
-            "title": "New York Enacts RAISE Act for AI Safety Regulation",
-            "content": "New York Governor Kathy Hochul has signed the RAISE Act, mandating that large AI developers disclose their safety protocols and report incidents within 72 hours. This legislation aims to enhance transparency and accountability in AI development, addressing growing concerns over AI safety. By requiring detailed safety disclosures, the RAISE Act seeks to protect consumers and ensure responsible AI deployment. This move aligns with global efforts to regulate AI technologies, emphasizing the need for robust governance frameworks. AI developers must prepare to comply with these regulations, which could influence future industry standards and practices.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/20/new-york-governor-kathy-hochul-signs-raise-act-to-regulate-ai-safety/"
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/arm-chips-and-the-future-of-ai-at-the-edge/"
         }
     ],
     "articles": {},
@@ -178,39 +192,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-14733",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-59374",
-            "dateAdded": "Dec 17, 2025",
-            "vendor": "ASUS Live Update",
-            "description": "ASUS Live Update contains an embedded malicious code vulnerability client were distributed with unauthorized modifications introduced through a supply chain compromise. The modified builds could cause",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-59374",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-40602",
-            "dateAdded": "Dec 17, 2025",
-            "vendor": "SonicWall SMA1000 appliance",
-            "description": "SonicWall SMA1000 contains a missing authorization vulnerability that could allow for privilege escalation appliance management console (AMC) of affected devices.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-40602",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-20393",
-            "dateAdded": "Dec 17, 2025",
-            "vendor": "Cisco Multiple Products",
-            "description": "Cisco Secure Email Gateway, Secure Email, AsyncOS Software, and Web Manager appliances contains an improper input validation vulnerability that allows threat actors to execute arbitrary commands with",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-20393",
             "isZeroDay": false
         }
     ],
