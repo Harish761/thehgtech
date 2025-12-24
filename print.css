@@ -1,31 +1,75 @@
-/* Print-specific styles for guides, articles, and comparisons */
+/**
+ * THEHGTECH PRINT STYLES (ENHANCED)
+ * Professional print layouts for guides and articles
+ * Optimized for PDF export with branding
+ * @version 2.0
+ */
 
-/* Hide elements that shouldn't be printed */
 @media print {
 
-    /* Hide navigation and UI elements */
+    /* ========== RESET & BASE ========== */
+    *,
+    *::before,
+    *::after {
+        box-shadow: none !important;
+        text-shadow: none !important;
+        transition: none !important;
+        animation: none !important;
+    }
+
+    body {
+        background: white !important;
+        color: #1a1a1a !important;
+        font-size: 11pt !important;
+        line-height: 1.6 !important;
+        font-family: 'Georgia', 'Times New Roman', serif !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    /* ========== HIDDEN ELEMENTS ========== */
     .header,
+    .m-header,
+    .m-bottom-nav,
     .mobile-menu,
     .back-link,
     .print-button,
     .theme-toggle,
+    .theme-toggle-btn,
     .mobile-menu-btn,
     .breadcrumb,
     .read-more,
     .guide-meta,
     .comparison-meta,
     .methodology-badge,
-    footer {
+    .interaction-bar,
+    .share-buttons,
+    .share-bar,
+    .bookmark-btn,
+    .bookmarks-trigger,
+    .back-to-top,
+    .toast-container,
+    .cmd-palette-overlay,
+    .bookmarks-panel,
+    .bookmarks-overlay,
+    .shortcuts-modal-overlay,
+    .rec-widget,
+    .content-hub__filters,
+    .load-more-btn,
+    .related-guides,
+    .cta-section,
+    footer,
+    .main-footer,
+    nav,
+    .nav,
+    script,
+    noscript,
+    .desktop-search-btn,
+    #reading-progress {
         display: none !important;
     }
 
-    /* Reset colors for print */
-    body {
-        background: white !important;
-        color: black !important;
-    }
-
-    /* Headers */
+    /* ========== TYPOGRAPHY ========== */
     h1,
     h2,
     h3,
@@ -33,135 +77,386 @@
     h5,
     h6 {
         color: #000 !important;
+        font-family: 'Helvetica Neue', Arial, sans-serif !important;
         page-break-after: avoid;
+        page-break-inside: avoid;
+        margin-top: 1.5em;
+        margin-bottom: 0.5em;
     }
 
-    /* Paragraphs and lists */
+    h1 {
+        font-size: 24pt !important;
+        border-bottom: 2px solid #333;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 18pt !important;
+        color: #333 !important;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 5px;
+    }
+
+    h3 {
+        font-size: 14pt !important;
+        color: #444 !important;
+    }
+
+    h4 {
+        font-size: 12pt !important;
+        color: #555 !important;
+    }
+
     p,
     ul,
     ol,
     li {
-        color: #000 !important;
+        color: #1a1a1a !important;
+        orphans: 3;
+        widows: 3;
     }
 
-    /* Code blocks */
-    code,
-    pre {
-        background: #f5f5f5 !important;
-        color: #000 !important;
-        border: 1px solid #ddd !important;
-        page-break-inside: avoid;
+    p {
+        margin-bottom: 1em;
     }
 
-    /* Info boxes */
-    .info-box,
-    .warning-box {
-        background: #f9f9f9 !important;
-        border-left: 4px solid #333 !important;
-        color: #000 !important;
-        page-break-inside: avoid;
+    /* ========== LINKS ========== */
+    a {
+        color: #0066cc !important;
+        text-decoration: underline !important;
     }
 
-    /* Images */
-    img {
-        max-width: 100% !important;
-        page-break-inside: avoid;
-    }
-
-    /* Tables */
-    table {
-        border-collapse: collapse;
-        width: 100%;
-        page-break-inside: avoid;
-    }
-
-    table,
-    th,
-    td {
-        border: 1px solid #000 !important;
-        color: #000 !important;
-    }
-
-    /* Links - show URL after link text */
-    a[href]:after {
+    /* Show URLs for external links */
+    a[href^="http"]:not([href*="thehgtech.com"])::after {
         content: " (" attr(href) ")";
         font-size: 0.8em;
         color: #666;
+        font-style: italic;
     }
 
-    /* Don't show URLs for internal links */
-    a[href^="#"]:after,
-    a[href^="/"]:after {
-        content: "";
+    /* Don't show URLs for internal/anchor links */
+    a[href^="#"]::after,
+    a[href^="/"]::after,
+    a[href*="thehgtech.com"]::after {
+        content: "" !important;
     }
 
-    /* Page breaks */
-    h1 {
-        page-break-before: always;
+    /* ========== CODE BLOCKS ========== */
+    code {
+        font-family: 'Courier New', Courier, monospace !important;
+        font-size: 9pt !important;
+        background: #f5f5f5 !important;
+        color: #333 !important;
+        padding: 2px 4px !important;
+        border-radius: 2px !important;
+        border: 1px solid #ddd !important;
     }
 
-    h1:first-of-type {
-        page-break-before: avoid;
+    pre {
+        background: #f8f8f8 !important;
+        border: 1px solid #ccc !important;
+        border-radius: 4px !important;
+        padding: 12px !important;
+        font-size: 9pt !important;
+        line-height: 1.4 !important;
+        overflow-x: auto !important;
+        page-break-inside: avoid;
+        white-space: pre-wrap !important;
+        word-wrap: break-word !important;
     }
 
-    /* Avoid breaking these elements */
-    blockquote,
-    pre,
-    img,
+    pre code {
+        background: transparent !important;
+        border: none !important;
+        padding: 0 !important;
+    }
+
+    /* ========== TABLES ========== */
     table {
+        border-collapse: collapse !important;
+        width: 100% !important;
+        margin: 1em 0 !important;
+        page-break-inside: avoid;
+        font-size: 10pt !important;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr {
         page-break-inside: avoid;
     }
 
-    /* Container adjustments */
-    .container {
+    th,
+    td {
+        border: 1px solid #333 !important;
+        padding: 8px 12px !important;
+        text-align: left !important;
+        color: #000 !important;
+    }
+
+    th {
+        background: #e8e8e8 !important;
+        font-weight: bold !important;
+    }
+
+    tr:nth-child(even) td {
+        background: #f5f5f5 !important;
+    }
+
+    /* ========== INFO BOXES / CALLOUTS ========== */
+    .info-box,
+    .warning-box,
+    .tip-box,
+    .note-box,
+    .callout,
+    .alert {
+        background: #f9f9f9 !important;
+        border: 1px solid #ccc !important;
+        border-left: 4px solid #333 !important;
+        color: #000 !important;
+        padding: 12px 16px !important;
+        margin: 1em 0 !important;
+        page-break-inside: avoid;
+    }
+
+    .warning-box,
+    .alert-warning {
+        border-left-color: #ff9800 !important;
+        background: #fff8e1 !important;
+    }
+
+    .tip-box,
+    .alert-success {
+        border-left-color: #4caf50 !important;
+        background: #e8f5e9 !important;
+    }
+
+    .note-box,
+    .alert-info {
+        border-left-color: #2196f3 !important;
+        background: #e3f2fd !important;
+    }
+
+    /* ========== IMAGES ========== */
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+        page-break-inside: avoid;
+    }
+
+    figure {
+        page-break-inside: avoid;
+        margin: 1em 0;
+    }
+
+    figcaption {
+        font-size: 9pt;
+        font-style: italic;
+        color: #666;
+        text-align: center;
+        margin-top: 0.5em;
+    }
+
+    /* ========== LISTS ========== */
+    ul,
+    ol {
+        padding-left: 25px !important;
+        margin: 1em 0 !important;
+    }
+
+    li {
+        margin-bottom: 0.5em;
+    }
+
+    ul li {
+        list-style-type: disc;
+    }
+
+    ol li {
+        list-style-type: decimal;
+    }
+
+    /* ========== BLOCKQUOTES ========== */
+    blockquote {
+        border-left: 3px solid #333 !important;
+        padding-left: 15px !important;
+        margin: 1em 0 !important;
+        font-style: italic !important;
+        color: #444 !important;
+        page-break-inside: avoid;
+    }
+
+    /* ========== PAGE BREAKS ========== */
+    .page-break-before {
+        page-break-before: always;
+    }
+
+    .page-break-after {
+        page-break-after: always;
+    }
+
+    .no-page-break {
+        page-break-inside: avoid;
+    }
+
+    /* Start new pages for major sections */
+    .guide-section h2:first-of-type,
+    .article-section h2:first-of-type {
+        page-break-before: always;
+    }
+
+    .guide-section:first-of-type h2:first-of-type,
+    .article-section:first-of-type h2:first-of-type {
+        page-break-before: avoid;
+    }
+
+    /* ========== CONTAINER ADJUSTMENTS ========== */
+    .container,
+    .guide-content,
+    .article-content,
+    main {
         max-width: 100% !important;
         padding: 0 !important;
-        margin: 0 !important;
+        margin: 0 auto !important;
+        width: 100% !important;
     }
 
-    /* Remove shadows and effects */
-    * {
-        box-shadow: none !important;
-        text-shadow: none !important;
+    /* ========== HEADER BRANDING (for print) ========== */
+    .guide-header,
+    .article-header {
+        position: relative;
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+        border-bottom: 2px solid #000;
+    }
+
+    .guide-header::after,
+    .article-header::after {
+        content: "thehgtech.com";
+        position: absolute;
+        bottom: 5px;
+        right: 0;
+        font-size: 10pt;
+        color: #666;
+        font-style: italic;
+    }
+
+    /* ========== TOC (Table of Contents) ========== */
+    .toc,
+    .table-of-contents {
+        background: #f5f5f5 !important;
+        border: 1px solid #ddd !important;
+        padding: 15px 20px !important;
+        margin: 20px 0 !important;
+        page-break-inside: avoid;
+    }
+
+    .toc h2,
+    .toc h3,
+    .table-of-contents h2,
+    .table-of-contents h3 {
+        border: none !important;
+        margin-top: 0 !important;
+    }
+
+    .toc a,
+    .table-of-contents a {
+        color: #000 !important;
+        text-decoration: none !important;
+    }
+
+    .toc a::after,
+    .table-of-contents a::after {
+        content: "" !important;
+    }
+
+    /* ========== FOOTER PRINT BRANDING ========== */
+    @page {
+        size: A4;
+        margin: 20mm 15mm 25mm 15mm;
+
+        @bottom-center {
+            content: "TheHGTech - thehgtech.com";
+            font-size: 9pt;
+            color: #666;
+        }
+
+        @bottom-right {
+            content: "Page " counter(page) " of " counter(pages);
+            font-size: 9pt;
+            color: #666;
+        }
+    }
+
+    @page :first {
+        margin-top: 15mm;
+    }
+
+    /* ========== COVER PAGE (for guides) ========== */
+    .print-cover {
+        page-break-after: always;
+        text-align: center;
+        padding-top: 30%;
+    }
+
+    .print-cover h1 {
+        font-size: 28pt !important;
+        border: none !important;
+        margin-bottom: 20px;
+    }
+
+    .print-cover .subtitle {
+        font-size: 14pt;
+        color: #666;
+        margin-bottom: 40px;
+    }
+
+    .print-cover .meta {
+        font-size: 11pt;
+        color: #888;
     }
 }
 
-/* Print button styling (visible on screen, hidden in print) */
-.print-button {
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple, #9D4EDD));
-    color: white;
-    border: none;
-    padding: 1rem 1.5rem;
-    border-radius: 50px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    box-shadow: 0 4px 20px rgba(0, 217, 255, 0.3);
-    transition: all 0.3s ease;
-    z-index: 1000;
-}
-
-.print-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 30px rgba(0, 217, 255, 0.5);
-}
-
-.print-button i {
-    font-size: 1.2rem;
-}
-
-/* Mobile responsive */
-@media (max-width: 768px) {
+/* ========== PRINT BUTTON (screen only) ========== */
+@media screen {
     .print-button {
-        bottom: 1rem;
-        right: 1rem;
-        padding: 0.75rem 1.25rem;
+        position: fixed;
+        bottom: 24px;
+        right: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 12px 20px;
+        background: linear-gradient(135deg, #00D9FF 0%, #0099CC 100%);
+        color: #000;
+        border: none;
+        border-radius: 12px;
         font-size: 0.9rem;
+        font-weight: 600;
+        cursor: pointer;
+        box-shadow: 0 4px 20px rgba(0, 217, 255, 0.3);
+        transition: all 0.3s ease;
+        z-index: 9990;
+    }
+
+    .print-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 30px rgba(0, 217, 255, 0.5);
+    }
+
+    .print-button i {
+        font-size: 1rem;
+    }
+
+    @media (max-width: 768px) {
+        .print-button {
+            bottom: 90px;
+            right: 16px;
+            padding: 10px 16px;
+        }
     }
 }

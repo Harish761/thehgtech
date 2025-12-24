@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" 
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>TheHGTech - Cybersecurity &amp; Threat Intelligence</title>
+    <description>Expert cybersecurity guides, threat intelligence, CVE tracking, and security news. Free resources for security professionals.</description>
+    <link>https://thehgtech.com</link>
+    <atom:link href="https://thehgtech.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 24 Dec 2025 00:00:00 GMT</lastBuildDate>
+    <ttl>60</ttl>
+    <image>
+      <url>https://thehgtech.com/logo-dark.png</url>
+      <title>TheHGTech</title>
+      <link>https://thehgtech.com</link>
+    </image>
+    <copyright>Copyright 2025 TheHGTech. All rights reserved.</copyright>
+    <managingEditor>harish@thehgtech.com (TheHGTech)</managingEditor>
+    <webMaster>harish@thehgtech.com (TheHGTech)</webMaster>
+    <category>Technology</category>
+    <category>Cybersecurity</category>
+    <category>Threat Intelligence</category>
+
+    <!-- ========== SECURITY GUIDES (December 2025) ========== -->
+
+    <item>
+      <title>DORA Compliance Guide - Digital Operational Resilience Act</title>
+      <link>https://thehgtech.com/guides/dora-compliance.html</link>
+      <description>Comprehensive guide to the Digital Operational Resilience Act (DORA) for financial services. Covers the 5 pillars, incident reporting requirements, resilience testing, and third-party risk management.</description>
+      <pubDate>Mon, 23 Dec 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://thehgtech.com/guides/dora-compliance.html</guid>
+      <dc:creator>TheHGTech</dc:creator>
+      <category>Compliance</category>
+      <category>DORA</category>
+      <category>Financial Services</category>
+    </item>
+
+    <item>
+      <title>NIST CSF 2.0 Implementation Guide</title>
+      <link>https://thehgtech.com/guides/nist-csf-2-implementation.html</link>
+      <description>Complete implementation guide for NIST Cybersecurity Framework 2.0. Covers the new GOVERN function, all 6 core functions, framework structure, and step-by-step implementation roadmap.</description>
+      <pubDate>Mon, 23 Dec 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://thehgtech.com/guides/nist-csf-2-implementation.html</guid>
+      <dc:creator>TheHGTech</dc:creator>
+      <category>Compliance</category>
+      <category>NIST</category>
+      <category>Framework</category>
+    </item>
+
+    <item>
+      <title>AI Governance Framework - ChatGPT &amp; Copilot Security Policies</title>
+      <link>https://thehgtech.com/guides/ai-governance-framework.html</link>
+      <description>Enterprise AI governance guide covering policies for ChatGPT, GitHub Copilot, and generative AI tools. Includes risk management frameworks and EU AI Act compliance requirements.</description>
+      <pubDate>Mon, 23 Dec 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://thehgtech.com/guides/ai-governance-framework.html</guid>
+      <dc:creator>TheHGTech</dc:creator>
+      <category>AI Security</category>
+      <category>Governance</category>
+      <category>Policy</category>
+    </item>
+
+    <item>
+      <title>ZTNA Deployment Guide - Zero Trust Network Access</title>
+      <link>https://thehgtech.com/guides/ztna-deployment.html</link>
+      <description>Complete Zero Trust Network Access deployment guide. Covers ZTNA vs VPN comparison, architecture models (service-initiated vs endpoint-initiated), key components, and implementation roadmap.</description>
+      <pubDate>Mon, 23 Dec 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://thehgtech.com/guides/ztna-deployment.html</guid>
+      <dc:creator>TheHGTech</dc:creator>
+      <category>Zero Trust</category>
+      <category>Network Security</category>
+      <category>Architecture</category>
+    </item>
+
+    <item>
+      <title>Third-Party Risk Management (TPRM) Guide</title>
+      <link>https://thehgtech.com/guides/third-party-risk-management.html</link>
+      <description>Comprehensive TPRM guide covering vendor security assessment, supply chain risk management, due diligence checklists, and continuous monitoring strategies.</description>
+      <pubDate>Mon, 23 Dec 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://thehgtech.com/guides/third-party-risk-management.html</guid>
+      <dc:creator>TheHGTech</dc:creator>
+      <category>Risk Management</category>
+      <category>Vendor Security</category>
+      <category>Supply Chain</category>
+    </item>
+
+    <item>
+      <title>Splunk SPL Query Guide for SOC Analysts</title>
+      <link>https://thehgtech.com/guides/splunk-spl-guide.html</link>
+      <description>Master Splunk Search Processing Language with this comprehensive guide. Covers SPL basics, essential commands, security use cases, threat detection queries, and optimization techniques.</description>
+      <pubDate>Mon, 23 Dec 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://thehgtech.com/guides/splunk-spl-guide.html</guid>
+      <dc:creator>TheHGTech</dc:creator>
+      <category>SIEM</category>
+      <category>Splunk</category>
+      <category>SOC</category>
+    </item>
+
+    <item>
+      <title>CVE Prioritization &amp; Patch Management Guide</title>
+      <link>https://thehgtech.com/guides/cve-prioritization-patch-management.html</link>
+      <description>Risk-based vulnerability management guide using CVSS, EPSS, and CISA KEV. Learn to prioritize CVEs effectively and build efficient patch management workflows.</description>
+      <pubDate>Mon, 23 Dec 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://thehgtech.com/guides/cve-prioritization-patch-management.html</guid>
+      <dc:creator>TheHGTech</dc:creator>
+      <category>Vulnerability Management</category>
+      <category>CVE</category>
+      <category>Patching</category>
+    </item>
+
+    <item>
+      <title>MITRE ATT&amp;CK Mapping Guide for Detection Engineering</title>
+      <link>https://thehgtech.com/guides/mitre-attack-mapping.html</link>
+      <description>Learn to use the MITRE ATT&amp;CK framework for detection engineering. Covers tactics, techniques, sub-techniques, detection rule development, and coverage analysis.</description>
+      <pubDate>Mon, 23 Dec 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://thehgtech.com/guides/mitre-attack-mapping.html</guid>
+      <dc:creator>TheHGTech</dc:creator>
+      <category>MITRE ATT&amp;CK</category>
+      <category>Detection</category>
+      <category>Threat Hunting</category>
+    </item>
+
+    <item>
+      <title>Threat Intelligence Feeds Integration Guide</title>
+      <link>https://thehgtech.com/guides/threat-intelligence-feeds-integration.html</link>
+      <description>Complete guide to integrating threat intelligence feeds. Covers IOC types, STIX/TAXII standards, SIEM integration patterns, and feed quality management.</description>
+      <pubDate>Mon, 23 Dec 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://thehgtech.com/guides/threat-intelligence-feeds-integration.html</guid>
+      <dc:creator>TheHGTech</dc:creator>
+      <category>Threat Intelligence</category>
+      <category>STIX/TAXII</category>
+      <category>SIEM</category>
+    </item>
+
+    <item>
+      <title>SOC 2 Compliance Checklist</title>
+      <link>https://thehgtech.com/guides/soc2-compliance-checklist.html</link>
+      <description>Complete SOC 2 compliance checklist covering all Trust Services Criteria. Includes Type I vs Type II comparison, evidence requirements, and audit preparation guide.</description>
+      <pubDate>Mon, 23 Dec 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://thehgtech.com/guides/soc2-compliance-checklist.html</guid>
+      <dc:creator>TheHGTech</dc:creator>
+      <category>Compliance</category>
+      <category>SOC 2</category>
+      <category>Audit</category>
+    </item>
+
+    <!-- ========== PREVIOUS GUIDES ========== -->
+
+    <item>
+      <title>SIEM Log Analysis Guide</title>
+      <link>https://thehgtech.com/guides/siem-log-analysis.html</link>
+      <description>Master security event correlation and log analysis. Covers log sources, parsing techniques, correlation rules, and threat detection patterns.</description>
+      <pubDate>Tue, 17 Dec 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://thehgtech.com/guides/siem-log-analysis.html</guid>
+      <dc:creator>TheHGTech</dc:creator>
+      <category>SIEM</category>
+      <category>Log Analysis</category>
+    </item>
+
+    <item>
+      <title>Security Metrics &amp; KPIs Dashboard Guide</title>
+      <link>https://thehgtech.com/guides/security-metrics-kpis-dashboard.html</link>
+      <description>Build effective security dashboards with meaningful metrics. Covers MTTD, MTTR, vulnerability metrics, and executive reporting.</description>
+      <pubDate>Tue, 17 Dec 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://thehgtech.com/guides/security-metrics-kpis-dashboard.html</guid>
+      <dc:creator>TheHGTech</dc:creator>
+      <category>Metrics</category>
+      <category>Reporting</category>
+    </item>
+
+    <item>
+      <title>Incident Response Automation Guide</title>
+      <link>https://thehgtech.com/guides/incident-response-automation.html</link>
+      <description>Automate IR workflows with SOAR playbooks. Covers automation use cases, playbook design, and integration patterns.</description>
+      <pubDate>Sat, 14 Dec 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://thehgtech.com/guides/incident-response-automation.html</guid>
+      <dc:creator>TheHGTech</dc:creator>
+      <category>Incident Response</category>
+      <category>SOAR</category>
+      <category>Automation</category>
+    </item>
+
+    <item>
+      <title>Threat Intelligence Feeds Comparison</title>
+      <link>https://thehgtech.com/guides/threat-intelligence-feeds-comparison.html</link>
+      <description>Compare top threat intelligence feeds - paid vs free. Covers feed types, quality metrics, and selection criteria.</description>
+      <pubDate>Sat, 14 Dec 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://thehgtech.com/guides/threat-intelligence-feeds-comparison.html</guid>
+      <dc:creator>TheHGTech</dc:creator>
+      <category>Threat Intelligence</category>
+      <category>Comparison</category>
+    </item>
+
+  </channel>
+</rss>
