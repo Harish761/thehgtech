@@ -470,7 +470,7 @@
             <h1>⚡ Incident Response Automation</h1>
             <div class="page-meta">
                 <span>📖 18 min read</span>
-                <span>🎯 Advanced</span>
+                <span><i class="fas fa-crosshairs"></i> Advanced</span>
                 <span>📅 November 29, 2025</span>
             </div>
         </div>
@@ -504,7 +504,7 @@
                     <p>Respond to threats in seconds, not hours</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">🎯</div>
+                    <div class="feature-icon"><i class="fas fa-crosshairs"></i></div>
                     <div class="feature-title">Consistency</div>
                     <p>Eliminate human error with standardized playbooks</p>
                 </div>
@@ -659,7 +659,7 @@ FIREWALL_API = <span class="string">"https://firewall.company.com/api"</span>
 
 <span class="keyword">def</span> <span class="keyword">notify_team</span>(url, blocked):
     <span class="string">"""Send Slack notification to SOC"""</span>
-    status = <span class="string">"✅ BLOCKED"</span> <span class="keyword">if</span> blocked <span class="keyword">else</span> <span class="string">"⚠️ MANUAL REVIEW NEEDED"</span>
+    status = <span class="string">"<i class="fas fa-check-circle" style="color: var(--accent-green);"></i> BLOCKED"</span> <span class="keyword">if</span> blocked <span class="keyword">else</span> <span class="string">"<i class="fas fa-exclamation-triangle" style="color: var(--accent-orange);"></i> MANUAL REVIEW NEEDED"</span>
     message = {
         <span class="string">"text"</span>: <span class="string">f"🚨 Phishing URL Detected\n\nURL: {url}\nStatus: {status}"</span>
     }

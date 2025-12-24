@@ -134,20 +134,55 @@ command or code here</code></pre>
 </table>
 ```
 
-## NO EMOJIS - Use FontAwesome Instead
-| Purpose | Icon |
-|---------|------|
+## ICONS - Use FontAwesome ONLY (No Emojis)
+
+**NEVER use emojis** (✅ ❌ ⚠️ 💡 🔧 📋 🎯 🚀 etc.) in guides.
+Always use Font Awesome icons with appropriate styling.
+
+| Purpose | Icon Code |
+|---------|-----------|
+| Checkmark/Yes | `<i class="fas fa-check-circle" style="color: var(--accent-green);"></i>` |
+| Cross/No | `<i class="fas fa-times-circle" style="color: var(--accent-red);"></i>` |
+| Warning | `<i class="fas fa-exclamation-triangle" style="color: var(--accent-orange);"></i>` |
+| Tip/Info | `<i class="fas fa-lightbulb"></i>` |
+| Success | `<i class="fas fa-check-circle"></i>` |
 | Read time | `<i class="fas fa-book-open"></i>` |
 | Difficulty | `<i class="fas fa-crosshairs"></i>` |
 | Date | `<i class="far fa-calendar-alt"></i>` |
 | TOC | `<i class="fas fa-list-ul"></i>` |
-| Warning | `<i class="fas fa-exclamation-triangle"></i>` |
-| Tip/Info | `<i class="fas fa-lightbulb"></i>` |
-| Success | `<i class="fas fa-check-circle"></i>` |
 | Links | `<i class="fas fa-link"></i>` |
 | AI/Robot | `<i class="fas fa-robot"></i>` |
 | Fire/Hot | `<i class="fas fa-fire"></i>` |
 | Alert | `<i class="fas fa-bell"></i>` |
+| Network | `<i class="fas fa-network-wired"></i>` |
+| Shield | `<i class="fas fa-shield-alt"></i>` |
+| Lock | `<i class="fas fa-lock"></i>` |
+| Key | `<i class="fas fa-key"></i>` |
+| Bug | `<i class="fas fa-bug"></i>` |
+
+## Content Writing Guidelines
+
+### Structure
+1. **Start with context** - Explain what something is and why it matters before diving into technical details
+2. **Use analogies** - Compare concepts to real-world situations (e.g., "like a restaurant health inspection")
+3. **Include real-world examples** - Reference actual incidents (Colonial Pipeline, SolarWinds, etc.) with specific impacts
+4. **Add comparison tables** - Before/after, with/without, old way vs new way
+
+### Section Headers
+- **DO NOT** use labels like "(For Beginners)" or "(Simple Explanation)"
+- Headers should be natural: "Understanding the Basics", "Why This Matters", "Real-World Examples"
+- Content should be self-explanatory without calling out skill levels
+
+### Callout Boxes
+- **info-box**: Tips, insights, "Think of it like this" analogies
+- **warning-box**: Common mistakes, pitfalls, critical cautions
+- **success-box**: Best practices, quick wins, key takeaways
+
+### Tables
+Use tables liberally for:
+- Comparing options (VPN vs ZTNA, Type I vs Type II)
+- Listing examples with context (Year | Incident | Impact)
+- Breaking down concepts (Component | What It Does | Example)
 
 ## Interaction Bar (REQUIRED)
 Every guide MUST include the interaction bar at the bottom of the content.

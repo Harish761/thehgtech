@@ -478,7 +478,7 @@
 
             <h4>IAM Hardening Checklist:</h4>
             <div class="callout success">
-                <strong>✅ Mandatory IAM Controls:</strong>
+                <strong><i class="fas fa-check-circle" style="color: var(--accent-green);"></i> Mandatory IAM Controls:</strong>
                 <ul>
                     <li>Enable MFA for all human users (especially root/admin)</li>
                     <li>Use role-based access control (RBAC) with predefined permission sets</li>
@@ -529,11 +529,11 @@
 
             <pre><code># AWS: Use IAM Roles instead of access keys
 # Instead of hardcoding credentials:
-# aws_access_key_id = "AKIAIOSFODNN7EXAMPLE"  ❌ BAD
-# aws_secret_access_key = "wJalrXUtnFEMI..."   ❌ BAD
+# aws_access_key_id = "AKIAIOSFODNN7EXAMPLE"  <i class="fas fa-times-circle" style="color: var(--accent-red);"></i> BAD
+# aws_secret_access_key = "wJalrXUtnFEMI..."   <i class="fas fa-times-circle" style="color: var(--accent-red);"></i> BAD
 
 # Use instance profiles or assume role:
-aws sts assume-role --role-arn arn:aws:iam::123456789:role/MyRole  ✅ GOOD
+aws sts assume-role --role-arn arn:aws:iam::123456789:role/MyRole  <i class="fas fa-check-circle" style="color: var(--accent-green);"></i> GOOD
 
 # Azure: Use Managed Identities
 # Resources automatically get identity—no secrets needed
@@ -592,7 +592,7 @@ gcloud iam service-accounts add-iam-policy-binding \
             </ul>
 
             <div class="callout warning">
-                <strong>⚠️ Common Network Mistakes:</strong>
+                <strong><i class="fas fa-exclamation-triangle" style="color: var(--accent-orange);"></i> Common Network Mistakes:</strong>
                 <ul>
                     <li>Security groups with <code>0.0.0.0/0</code> (open to the world) for SSH/RDP</li>
                     <li>Public S3 buckets or storage blobs (hello, data breach)</li>

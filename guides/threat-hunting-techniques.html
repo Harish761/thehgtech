@@ -582,7 +582,7 @@
             <p>Search for known-bad indicators—hashes, IPs, domains, file names.</p>
 
             <div class="hunt-box">
-                <h5>🎯 Hunt: Known Malware Hashes</h5>
+                <h5><i class="fas fa-crosshairs"></i> Hunt: Known Malware Hashes</h5>
                 <p><strong>Hypothesis:</strong> Malware from recent APT campaign may be present in our environment.</p>
                 <pre><code># Splunk - Search for known bad hashes
 index=endpoint (hash=e99a18c428cb38d5f260853678922e03 OR 
@@ -598,7 +598,7 @@ index=endpoint (hash=e99a18c428cb38d5f260853678922e03 OR
             <p>Search for adversary behaviors rather than specific indicators.</p>
 
             <div class="hunt-box">
-                <h5>🎯 Hunt: PowerShell Download Cradles</h5>
+                <h5><i class="fas fa-crosshairs"></i> Hunt: PowerShell Download Cradles</h5>
                 <p><strong>Hypothesis:</strong> Attackers may use PowerShell to download and execute payloads.</p>
                 <p><span class="mitre-tactic">Execution</span> <span class="mitre-technique">T1059.001 -
                         PowerShell</span></p>
@@ -615,7 +615,7 @@ index=windows EventCode=4688
             </div>
 
             <div class="hunt-box">
-                <h5>🎯 Hunt: Suspicious Parent-Child Process Relationships</h5>
+                <h5><i class="fas fa-crosshairs"></i> Hunt: Suspicious Parent-Child Process Relationships</h5>
                 <p><strong>Hypothesis:</strong> Malicious documents spawn unexpected child processes.</p>
                 <p><span class="mitre-tactic">Execution</span> <span class="mitre-technique">T1204 - User
                         Execution</span></p>
@@ -636,7 +636,7 @@ index=windows EventCode=4688
             <p>Find statistical outliers—things that deviate from normal.</p>
 
             <div class="hunt-box">
-                <h5>🎯 Hunt: Rare Processes</h5>
+                <h5><i class="fas fa-crosshairs"></i> Hunt: Rare Processes</h5>
                 <p><strong>Hypothesis:</strong> Malware often uses unusual process names that are rare in the
                     environment.</p>
                 <pre><code># Splunk - Find rare processes
@@ -648,7 +648,7 @@ index=windows EventCode=4688
             </div>
 
             <div class="hunt-box">
-                <h5>🎯 Hunt: Beaconing Detection</h5>
+                <h5><i class="fas fa-crosshairs"></i> Hunt: Beaconing Detection</h5>
                 <p><strong>Hypothesis:</strong> C2 beacons maintain regular check-in intervals.</p>
                 <p><span class="mitre-tactic">Command & Control</span> <span class="mitre-technique">T1071 - Application
                         Layer Protocol</span></p>
@@ -665,7 +665,7 @@ index=network
             <p>Compare current activity against known-good baselines.</p>
 
             <div class="hunt-box">
-                <h5>🎯 Hunt: New Scheduled Tasks</h5>
+                <h5><i class="fas fa-crosshairs"></i> Hunt: New Scheduled Tasks</h5>
                 <p><strong>Hypothesis:</strong> Attackers create scheduled tasks for persistence.</p>
                 <p><span class="mitre-tactic">Persistence</span> <span class="mitre-technique">T1053.005 - Scheduled
                         Task</span></p>
@@ -818,7 +818,7 @@ RECOMMENDATIONS:
             <h2>7. My Hunting Tips</h2>
 
             <div class="callout success">
-                <strong>💡 Lessons from the Hunt:</strong>
+                <strong><i class="fas fa-lightbulb" style="color: var(--accent-cyan);"></i> Lessons from the Hunt:</strong>
                 <ol>
                     <li><strong>Start with what you know.</strong> Hunt in areas where you have good visibility.</li>
                     <li><strong>Document everything.</strong> Even "no findings" is valuable data.</li>

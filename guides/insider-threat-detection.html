@@ -213,12 +213,12 @@
             <p style="color: var(--text-muted); font-size: 1.1rem;">Build a comprehensive insider threat detection
                 program with behavioral analytics and monitoring</p>
             <div style="margin-top: 1rem; color: var(--text-muted);">
-                <span>📖 16 min read</span> • <span>🎯 Advanced</span> • <span>📅 December 2025</span>
+                <span>📖 16 min read</span> • <span><i class="fas fa-crosshairs"></i> Advanced</span> • <span>📅 December 2025</span>
             </div>
         </div>
 
         <div class="info-box">
-            <strong>💡 Why This Matters:</strong> Insider threats account for 60% of data breaches and cost an average
+            <strong><i class="fas fa-lightbulb" style="color: var(--accent-cyan);"></i> Why This Matters:</strong> Insider threats account for 60% of data breaches and cost an average
             of $15.38 million per incident. Recent breaches like Coupang (33.7M users exposed by former developer)
             demonstrate the critical need for insider threat programs.
         </div>
@@ -275,7 +275,7 @@
         </ul>
 
         <div class="warning-box">
-            <strong>⚠️ Legal Compliance:</strong> Consult with legal counsel before implementing monitoring. Laws like
+            <strong><i class="fas fa-exclamation-triangle" style="color: var(--accent-orange);"></i> Legal Compliance:</strong> Consult with legal counsel before implementing monitoring. Laws like
             GDPR (EU), CCPA (California), and various labor laws impose strict requirements on employee monitoring and
             data privacy.
         </div>
@@ -364,7 +364,7 @@
                 </ul>
 
                 <div class="warning-box">
-                    <strong>⚠️ Privacy Consideration:</strong> Behavioral monitoring must respect employee privacy.
+                    <strong><i class="fas fa-exclamation-triangle" style="color: var(--accent-orange);"></i> Privacy Consideration:</strong> Behavioral monitoring must respect employee privacy.
                     Focus on work-related activities, not personal communications. Document clear policies and obtain
                     legal approval.
                 </div>
@@ -499,21 +499,21 @@
 
                 <h3>What Went Wrong at Coupang</h3>
                 <ul>
-                    <li>❌ No automated deprovisioning of API tokens</li>
-                    <li>❌ No geographic access controls (overseas access not flagged)</li>
-                    <li>❌ No UEBA to detect anomalous database queries</li>
-                    <li>❌ No DLP to alert on bulk data exfiltration</li>
-                    <li>❌ 5-month detection gap</li>
+                    <li><i class="fas fa-times-circle" style="color: var(--accent-red);"></i> No automated deprovisioning of API tokens</li>
+                    <li><i class="fas fa-times-circle" style="color: var(--accent-red);"></i> No geographic access controls (overseas access not flagged)</li>
+                    <li><i class="fas fa-times-circle" style="color: var(--accent-red);"></i> No UEBA to detect anomalous database queries</li>
+                    <li><i class="fas fa-times-circle" style="color: var(--accent-red);"></i> No DLP to alert on bulk data exfiltration</li>
+                    <li><i class="fas fa-times-circle" style="color: var(--accent-red);"></i> 5-month detection gap</li>
                 </ul>
 
                 <h3>How This Program Would Have Prevented It</h3>
                 <ul>
-                    <li>✅ <strong>Automated Deprovisioning:</strong> API tokens revoked within 1 hour of termination
+                    <li><i class="fas fa-check-circle" style="color: var(--accent-green);"></i> <strong>Automated Deprovisioning:</strong> API tokens revoked within 1 hour of termination
                     </li>
-                    <li>✅ <strong>Geographic Controls:</strong> Alert on access from China (developer's location)</li>
-                    <li>✅ <strong>UEBA:</strong> Detect database queries by departed employee's token</li>
-                    <li>✅ <strong>DLP:</strong> Alert on 33.7M records being accessed over 5 months</li>
-                    <li>✅ <strong>Detection Time:</strong> Hours instead of months</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--accent-green);"></i> <strong>Geographic Controls:</strong> Alert on access from China (developer's location)</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--accent-green);"></i> <strong>UEBA:</strong> Detect database queries by departed employee's token</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--accent-green);"></i> <strong>DLP:</strong> Alert on 33.7M records being accessed over 5 months</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--accent-green);"></i> <strong>Detection Time:</strong> Hours instead of months</li>
                 </ul>
 
                 <h2>Common Pitfalls to Avoid</h2>

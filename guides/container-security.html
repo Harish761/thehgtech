@@ -234,12 +234,12 @@
       <p style="color: var(--text-muted); font-size: 1.1rem;">Secure containerized applications with best
         practices for Docker, Kubernetes, and container registries</p>
       <div style="margin-top: 1rem; color: var(--text-muted);">
-        <span>📖 18 min read</span> • <span>🎯 Advanced</span> • <span>📅 December 2025</span>
+        <span>📖 18 min read</span> • <span><i class="fas fa-crosshairs"></i> Advanced</span> • <span>📅 December 2025</span>
       </div>
     </div>
 
     <div class="info-box">
-      <strong>💡 Why Container Security Matters:</strong> 75% of organizations use containers in production, but
+      <strong><i class="fas fa-lightbulb" style="color: var(--accent-cyan);"></i> Why Container Security Matters:</strong> 75% of organizations use containers in production, but
       60% have experienced container security incidents. Misconfigurations, vulnerable images, and runtime attacks
       are the top threats.
     </div>
@@ -271,13 +271,13 @@
 
     <h4>Use Minimal Base Images</h4>
     <p>Reduce attack surface by using minimal base images:</p>
-    <pre><code># ❌ Bad: Full OS image (1GB+, hundreds of packages)
+    <pre><code># <i class="fas fa-times-circle" style="color: var(--accent-red);"></i> Bad: Full OS image (1GB+, hundreds of packages)
 FROM ubuntu:latest
 
-# ✅ Good: Minimal distroless image (20MB, no shell)
+# <i class="fas fa-check-circle" style="color: var(--accent-green);"></i> Good: Minimal distroless image (20MB, no shell)
 FROM gcr.io/distroless/static-debian11
 
-# ✅ Better: Alpine Linux (5MB, minimal packages)
+# <i class="fas fa-check-circle" style="color: var(--accent-green);"></i> Better: Alpine Linux (5MB, minimal packages)
 FROM alpine:3.18</code></pre>
 
     <p><strong>Why?</strong> Fewer packages = fewer vulnerabilities. Distroless images contain only your application
@@ -397,10 +397,10 @@ docker network create --driver bridge --opt com.docker.network.bridge.enable_icc
     <h3>4. Secrets Management</h3>
 
     <h4>Never Hardcode Secrets</h4>
-    <p>❌ <strong>Bad:</strong></p>
+    <p><i class="fas fa-times-circle" style="color: var(--accent-red);"></i> <strong>Bad:</strong></p>
     <pre><code>ENV DATABASE_PASSWORD=supersecret123</code></pre>
 
-    <p>✅ <strong>Good:</strong> Use Docker Secrets or external vaults:</p>
+    <p><i class="fas fa-check-circle" style="color: var(--accent-green);"></i> <strong>Good:</strong> Use Docker Secrets or external vaults:</p>
     <pre><code># Docker Swarm Secrets
 echo "supersecret123" | docker secret create db_password -
 
@@ -748,7 +748,7 @@ grype sbom:./sbom.json</code></pre>
     <h2>Security Checklist</h2>
 
     <div class="info-box">
-      <h3 style="margin-top: 0;">✅ Container Security Checklist</h3>
+      <h3 style="margin-top: 0;"><i class="fas fa-check-circle" style="color: var(--accent-green);"></i> Container Security Checklist</h3>
       <p><strong>Images:</strong></p>
       <ul>
         <li>☐ Use minimal base images (distroless/Alpine)</li>

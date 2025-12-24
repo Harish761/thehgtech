@@ -462,7 +462,7 @@
                 looking to understand what pentesters do so you can better defend, this is for you.</p>
 
             <div class="callout">
-                <strong>⚠️ Legal Disclaimer:</strong> Penetration testing without explicit written authorization is
+                <strong><i class="fas fa-exclamation-triangle" style="color: var(--accent-orange);"></i> Legal Disclaimer:</strong> Penetration testing without explicit written authorization is
                 illegal. Always obtain proper authorization (scope document, rules of engagement) before testing any
                 systems. This guide is for educational purposes and authorized security testing only.
             </div>
@@ -708,7 +708,7 @@ hydra -l admin -P rockyou.txt target.com ssh
 hashcat -m 1000 ntlm_hashes.txt rockyou.txt</code></pre>
 
             <div class="callout warning">
-                <strong>⚠️ Account Lockout Warning:</strong> Always check password policies before brute forcing. A good
+                <strong><i class="fas fa-exclamation-triangle" style="color: var(--accent-orange);"></i> Account Lockout Warning:</strong> Always check password policies before brute forcing. A good
                 rule: 1 password per 30 minutes per account to avoid lockouts.
             </div>
 
@@ -870,7 +870,7 @@ evil-winrm -i target.com -u admin -p password</code></pre>
             <p>After years of pentesting, here's what I wish someone had told me earlier:</p>
 
             <div class="callout success">
-                <strong>💡 Pro Tips:</strong>
+                <strong><i class="fas fa-lightbulb" style="color: var(--accent-cyan);"></i> Pro Tips:</strong>
                 <ol>
                     <li><strong>Document everything</strong> - You will forget what you did. Screenshots, notes,
                         timestamps.</li>
