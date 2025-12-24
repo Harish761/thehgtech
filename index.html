@@ -3829,150 +3829,6 @@
                 <a href="articles.html">Articles</a>
                 <a href="#" onclick="openModal('about'); return false;">About</a>
                 <a href="#" onclick="openModal('contact'); return false;">Contact</a>
-                <button class="desktop-search-btn" aria-label="Search (CMD+K)">
-                    <span class="search-btn-glow"></span>
-                    <span class="search-btn-content">
-                        <i class="fas fa-search search-btn-icon"></i>
-                        <span class="search-btn-text">Search</span>
-                        <span class="search-btn-divider"></span>
-                        <kbd class="search-btn-kbd">⌘K</kbd>
-                    </span>
-                </button>
-                <style>
-                    .desktop-search-btn {
-                        position: relative;
-                        background: rgba(255, 255, 255, 0.03);
-                        border: 1px solid rgba(255, 255, 255, 0.1);
-                        border-radius: 12px;
-                        padding: 0.6rem 1rem;
-                        cursor: pointer;
-                        display: flex;
-                        align-items: center;
-                        font-size: 0.85rem;
-                        margin-right: 0.75rem;
-                        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-                        overflow: hidden;
-                        backdrop-filter: blur(10px);
-                        -webkit-backdrop-filter: blur(10px);
-                    }
-
-                    .desktop-search-btn:hover {
-                        background: rgba(0, 217, 255, 0.08);
-                        border-color: rgba(0, 217, 255, 0.4);
-                        transform: translateY(-1px);
-                        box-shadow: 0 4px 20px rgba(0, 217, 255, 0.15),
-                            0 0 40px rgba(0, 217, 255, 0.05);
-                    }
-
-                    .desktop-search-btn:active {
-                        transform: translateY(0);
-                    }
-
-                    .search-btn-glow {
-                        position: absolute;
-                        top: 0;
-                        left: -100%;
-                        width: 100%;
-                        height: 100%;
-                        background: linear-gradient(90deg,
-                                transparent,
-                                rgba(0, 217, 255, 0.1),
-                                transparent);
-                        transition: left 0.5s ease;
-                    }
-
-                    .desktop-search-btn:hover .search-btn-glow {
-                        left: 100%;
-                    }
-
-                    .search-btn-content {
-                        display: flex;
-                        align-items: center;
-                        gap: 0.6rem;
-                        position: relative;
-                        z-index: 1;
-                    }
-
-                    .search-btn-icon {
-                        color: #00D9FF;
-                        font-size: 0.9rem;
-                        transition: transform 0.3s ease;
-                    }
-
-                    .desktop-search-btn:hover .search-btn-icon {
-                        transform: scale(1.1);
-                    }
-
-                    .search-btn-text {
-                        color: rgba(255, 255, 255, 0.7);
-                        font-weight: 500;
-                        letter-spacing: 0.02em;
-                    }
-
-                    .desktop-search-btn:hover .search-btn-text {
-                        color: rgba(255, 255, 255, 0.9);
-                    }
-
-                    .search-btn-divider {
-                        width: 1px;
-                        height: 16px;
-                        background: rgba(255, 255, 255, 0.15);
-                    }
-
-                    .search-btn-kbd {
-                        background: linear-gradient(135deg, rgba(0, 217, 255, 0.15), rgba(0, 217, 255, 0.05));
-                        border: 1px solid rgba(0, 217, 255, 0.2);
-                        color: #00D9FF;
-                        padding: 0.2rem 0.5rem;
-                        border-radius: 6px;
-                        font-size: 0.7rem;
-                        font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
-                        font-weight: 600;
-                        letter-spacing: 0.05em;
-                        transition: all 0.3s ease;
-                    }
-
-                    .desktop-search-btn:hover .search-btn-kbd {
-                        background: linear-gradient(135deg, rgba(0, 217, 255, 0.25), rgba(0, 217, 255, 0.1));
-                        box-shadow: 0 0 10px rgba(0, 217, 255, 0.2);
-                    }
-
-                    /* Light mode */
-                    .light-mode .desktop-search-btn {
-                        background: rgba(0, 0, 0, 0.03);
-                        border-color: rgba(0, 0, 0, 0.1);
-                    }
-
-                    .light-mode .desktop-search-btn:hover {
-                        background: rgba(0, 150, 200, 0.08);
-                        border-color: rgba(0, 150, 200, 0.3);
-                    }
-
-                    .light-mode .search-btn-text {
-                        color: rgba(0, 0, 0, 0.6);
-                    }
-
-                    .light-mode .desktop-search-btn:hover .search-btn-text {
-                        color: rgba(0, 0, 0, 0.8);
-                    }
-
-                    .light-mode .search-btn-divider {
-                        background: rgba(0, 0, 0, 0.1);
-                    }
-
-                    .light-mode .search-btn-kbd {
-                        background: linear-gradient(135deg, rgba(0, 150, 200, 0.12), rgba(0, 150, 200, 0.05));
-                        border-color: rgba(0, 150, 200, 0.2);
-                        color: #0099cc;
-                    }
-
-                    /* Hide on mobile */
-                    @media (max-width: 768px) {
-                        .desktop-search-btn {
-                            display: none !important;
-                        }
-                    }
-                </style>
                 <div class="theme-toggle-wrapper">
                     <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
                         <div class="toggle-stars">
@@ -3984,6 +3840,151 @@
                     </button>
                 </div>
             </nav>
+            <button class="desktop-search-btn" aria-label="Search (CMD+K)">
+                <span class="search-btn-glow"></span>
+                <span class="search-btn-content">
+                    <i class="fas fa-search search-btn-icon"></i>
+                    <span class="search-btn-text">Search</span>
+                    <span class="search-btn-divider"></span>
+                    <kbd class="search-btn-kbd">⌘K</kbd>
+                </span>
+            </button>
+            <style>
+                .desktop-search-btn {
+                    position: relative;
+                    background: rgba(255, 255, 255, 0.03);
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    border-radius: 12px;
+                    padding: 0.5rem 0.9rem;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    font-size: 0.85rem;
+                    margin-left: 1rem;
+                    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                    overflow: hidden;
+                    backdrop-filter: blur(10px);
+                    -webkit-backdrop-filter: blur(10px);
+                }
+
+                .desktop-search-btn:hover {
+                    background: rgba(0, 217, 255, 0.08);
+                    border-color: rgba(0, 217, 255, 0.4);
+                    transform: translateY(-1px);
+                    box-shadow: 0 4px 20px rgba(0, 217, 255, 0.15),
+                        0 0 40px rgba(0, 217, 255, 0.05);
+                }
+
+                .desktop-search-btn:active {
+                    transform: translateY(0);
+                }
+
+                .search-btn-glow {
+                    position: absolute;
+                    top: 0;
+                    left: -100%;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(90deg,
+                            transparent,
+                            rgba(0, 217, 255, 0.1),
+                            transparent);
+                    transition: left 0.5s ease;
+                }
+
+                .desktop-search-btn:hover .search-btn-glow {
+                    left: 100%;
+                }
+
+                .search-btn-content {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    position: relative;
+                    z-index: 1;
+                }
+
+                .search-btn-icon {
+                    color: #00D9FF;
+                    font-size: 0.85rem;
+                    transition: transform 0.3s ease;
+                }
+
+                .desktop-search-btn:hover .search-btn-icon {
+                    transform: scale(1.1);
+                }
+
+                .search-btn-text {
+                    color: rgba(255, 255, 255, 0.7);
+                    font-weight: 500;
+                    font-size: 0.85rem;
+                    letter-spacing: 0.02em;
+                }
+
+                .desktop-search-btn:hover .search-btn-text {
+                    color: rgba(255, 255, 255, 0.9);
+                }
+
+                .search-btn-divider {
+                    width: 1px;
+                    height: 14px;
+                    background: rgba(255, 255, 255, 0.15);
+                }
+
+                .search-btn-kbd {
+                    background: linear-gradient(135deg, rgba(0, 217, 255, 0.15), rgba(0, 217, 255, 0.05));
+                    border: 1px solid rgba(0, 217, 255, 0.2);
+                    color: #00D9FF;
+                    padding: 0.15rem 0.4rem;
+                    border-radius: 5px;
+                    font-size: 0.65rem;
+                    font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
+                    font-weight: 600;
+                    letter-spacing: 0.05em;
+                    transition: all 0.3s ease;
+                }
+
+                .desktop-search-btn:hover .search-btn-kbd {
+                    background: linear-gradient(135deg, rgba(0, 217, 255, 0.25), rgba(0, 217, 255, 0.1));
+                    box-shadow: 0 0 10px rgba(0, 217, 255, 0.2);
+                }
+
+                /* Light mode */
+                .light-mode .desktop-search-btn {
+                    background: rgba(0, 0, 0, 0.03);
+                    border-color: rgba(0, 0, 0, 0.1);
+                }
+
+                .light-mode .desktop-search-btn:hover {
+                    background: rgba(0, 150, 200, 0.08);
+                    border-color: rgba(0, 150, 200, 0.3);
+                }
+
+                .light-mode .search-btn-text {
+                    color: rgba(0, 0, 0, 0.6);
+                }
+
+                .light-mode .desktop-search-btn:hover .search-btn-text {
+                    color: rgba(0, 0, 0, 0.8);
+                }
+
+                .light-mode .search-btn-divider {
+                    background: rgba(0, 0, 0, 0.1);
+                }
+
+                .light-mode .search-btn-kbd {
+                    background: linear-gradient(135deg, rgba(0, 150, 200, 0.12), rgba(0, 150, 200, 0.05));
+                    border-color: rgba(0, 150, 200, 0.2);
+                    color: #0099cc;
+                }
+
+                /* Hide on mobile */
+                @media (max-width: 768px) {
+                    .desktop-search-btn {
+                        display: none !important;
+                    }
+                }
+            </style>
             <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Open navigation menu"
                 aria-expanded="false">☰</button>
         </div>
