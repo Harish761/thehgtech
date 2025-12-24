@@ -1,5 +1,5 @@
 {
-  "version": "5.1.1",
+  "version": "5.2.0",
   "name": "Adversarial Threat Landscape for AI Systems",
   "tactics": [
     {
@@ -447,7 +447,7 @@
     {
       "id": "AML.T0018.000",
       "name": "Poison AI Model",
-      "description": "Adversaries may manipulate an AI model's weights to change it's behavior or performance, resulting in a poisoned model.\nAdversaries may poison a model by by directly manipulating its weights, training the model on poisoned data, further fine-tuning the model, or otherwise interfering with its training process. \n\nThe change in behavior of poisoned models may be limited to targeted categories in predictive AI models, or targeted topics, concepts, or facts in generative AI models, or aim for a general performance degradation.",
+      "description": "Adversaries may manipulate an AI model's weights to change it's behavior or performance, resulting in a poisoned model.\nAdversaries may poison a model by directly manipulating its weights, training the model on poisoned data, further fine-tuning the model, or otherwise interfering with its training process. \n\nThe change in behavior of poisoned models may be limited to targeted categories in predictive AI models, or targeted topics, concepts, or facts in generative AI models, or aim for a general performance degradation.",
       "tactic": "",
       "type": "technique",
       "severity": "high"
@@ -487,7 +487,7 @@
     {
       "id": "AML.T0024.002",
       "name": "Extract AI Model",
-      "description": "Adversaries may extract a functional copy of a private model.\nBy repeatedly querying the victim's [AI Model Inference API Access](/techniques/AML.T0040), the adversary can collect the target model's inferences into a dataset.\nThe inferences are used as labels for training a separate model offline that will mimic the behavior and performance of the target model.\n\nAdversaries may extract the model to avoid paying per query in an artificial intelligence as a service (AIaaS) setting.\nModel extraction is used for [AI Intellectual Property Theft](/techniques/AML.T0048.004).",
+      "description": "Adversaries may extract a functional copy of a private model.\nBy repeatedly querying the victim's [AI Model Inference API Access](/techniques/AML.T0040), the adversary can collect the target model's inferences into a dataset.\nThe inferences are used as labels for training a separate model offline that will mimic the behavior and performance of the target model.\n\nAdversaries may extract the model to avoid paying per query in an artificial-intelligence-as-a-service (AIaaS) setting.\nModel extraction is used for [AI Intellectual Property Theft](/techniques/AML.T0048.004).",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -511,7 +511,7 @@
     {
       "id": "AML.T0046",
       "name": "Spamming AI System with Chaff Data",
-      "description": "Adversaries may spam the AI system with chaff data that causes increase in the number of detections.\nThis can cause analysts at the victim organization to waste time reviewing and correcting incorrect inferences.",
+      "description": "Adversaries may spam the AI system with chaff data that causes increase in the number of detections.\nThis can cause analysts at the victim organization to waste time reviewing and correcting incorrect inferences.\n\nAdversaries may also spam AI agents with excessive low-severity auditable events or agentic actions that require a human-in-the-loop, wasting time for the victim organization in human review of the agentic AI system.",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -831,7 +831,7 @@
     {
       "id": "AML.T0016.002",
       "name": "Generative AI",
-      "description": "Adversaries may search for and obtain generative AI models or tools, such as large language models (LLMs), to assist them in various steps of their operation. Generative AI can be used in a variety of malicious ways, including generating malware or offensive cyber scripts, [Retrieval Content Crafting](/techniques/AML.T0066), or generating [Phishing](/techniques/AML.T0052) content.\n\nAdversaries may obtain an open source model or they may leverage a generative AI service. They may need to jailbreak the generative AI model to bypass any restrictions put in place to limit the types of responses it can generate. They may also need to break the terms of service of the generative AI.",
+      "description": "Adversaries may search for and obtain generative AI models or tools, such as large language models (LLMs), to assist them in various steps of their operation. Generative AI can be used in a variety of malicious ways, such as to generating malware, to [Generate Deepfakes](/techniques/AML.T0088), to [Generate Malicious Commands](/techniques/AML.T0102), for [Retrieval Content Crafting](/techniques/AML.T0066), or to generate [Phishing](/techniques/AML.T0052) content.\n\nAdversaries may obtain open source models and serve them locally using frameworks such as [Ollama](https://ollama.com/) or [vLLM]( https://docs.vllm.ai/en/latest/). They may host them using cloud infrastructure. Or, they may leverage AI service providers such as HuggingFace.\n\nThey may need to jailbreak the model (see [LLM Jailbreak](/techniques/AML.T0054)) to bypass any restrictions put in place to limit the types of responses it can generate. They may also need to break the terms of service of the model's developer.\n\nGenerative AI models may also be \"uncensored\" meaning they are designed to generate content without any restrictions such as guardrails or content filters. Uncensored GenAI is ripe for abuse by cybercriminals [\\[1\\]][1] [\\[2\\]][2]. Models may be fine-tuned to remove alignment and guardrails [\\[3\\]][3] or be subjected to targeted manipulations to bypass refusal [\\[4\\]][4] resulting in uncensored variants of the model. Uncensored models may be built for offensive and defensive cybersecurity [\\[5\\]][5], which can be abused by an adversary. There are also models that are expressly designed and advertised for malicious use [\\[6\\]][6].\n\n[1]: https://blog.talosintelligence.com/cybercriminal-abuse-of-large-language-models/\n[2]: https://gbhackers.com/cybercriminals-exploit-llm-models/\n[3]: https://erichartford.com/uncensored-models\n[4]: https://arxiv.org/abs/2406.11717/\n[5]: https://taico.ca/posts/whiterabbitneo/\n[6]: https://gbhackers.com/wormgpt-enhanced-with-grok-and-mixtral/",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -871,7 +871,7 @@
     {
       "id": "AML.T0068",
       "name": "LLM Prompt Obfuscation",
-      "description": "Adversaries may hide or otherwise obfuscate prompt injections or retrieval content from the user to avoid detection.\n\nThis may include modifying how the injection is rendered such as small text, text colored the same as the background, or hidden HTML elements.",
+      "description": "Adversaries may hide or otherwise obfuscate prompt injections or retrieval content from the user to avoid detection.\n\nFor text inputs, this may include modifying how the instructions are rendered such as small text, text colored the same as the background, or hidden HTML elements. For multi-modal inputs, malicious instructions could be hidden in the data itself (e.g. in the pixels of an image) or in file metadata (e.g. EXIF for images, ID3 tags for audio, or document metadata).",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -975,7 +975,7 @@
     {
       "id": "AML.T0075",
       "name": "Cloud Service Discovery",
-      "description": "An adversary may attempt to enumerate the cloud services running on a system after gaining access. These methods can differ from platform-as-a-service (PaaS), to infrastructure-as-a-service (IaaS), or software-as-a-service (SaaS). Many services exist throughout the various cloud providers and can include Continuous Integration and Continuous Delivery (CI/CD), Lambda Functions, Entra ID, etc. They may also include security services, such as AWS GuardDuty and Microsoft Defender for Cloud, and logging services, such as AWS CloudTrail and Google Cloud Audit Logs.\n\nAdversaries may attempt to discover information about the services enabled throughout the environment. Azure tools and APIs, such as the Microsoft Graph API and Azure Resource Manager API, can enumerate resources and services, including applications, management groups, resources and policy definitions, and their relationships that are accessible by an identity.[1][2]\n\nFor example, Stormspotter is an open source tool for enumerating and constructing a graph for Azure resources and services, and Pacu is an open source AWS exploitation framework that supports several methods for discovering cloud services.[3][4]\n\nAdversaries may use the information gained to shape follow-on behaviors, such as targeting data or credentials from enumerated services or evading identified defenses through Disable or Modify Tools or Disable or Modify Cloud Logs.",
+      "description": "Adversaries may attempt to enumerate the cloud services running on a system after gaining access. These methods can differ from platform-as-a-service (PaaS), to infrastructure-as-a-service (IaaS), software-as-a-service (SaaS), or AI-as-a-service (AIaaS). Many services exist throughout the various cloud providers and can include Continuous Integration and Continuous Delivery (CI/CD), Lambda Functions, Entra ID, AI Inference, Generative AI, Agentic AI, etc. They may also include security services, such as AWS GuardDuty and Microsoft Defender for Cloud, and logging services, such as AWS CloudTrail and Google Cloud Audit Logs.\n\nAdversaries may attempt to discover information about the services enabled throughout the environment. Azure tools and APIs, such as the Microsoft Graph API and Azure Resource Manager API, can enumerate resources and services, including applications, management groups, resources and policy definitions, and their relationships that are accessible by an identity. They may use tools to check credentials and enumerate the AI models available in various AIaaS providers' environments including AI21 Labs, Anthropic, AWS Bedrock, Azure, ElevenLabs, MakerSuite, Mistral, OpenAI, OpenRouter, and GCP Vertex AI [\\[1\\]][1].\n\n[1]: https://www.sysdig.com/blog/llmjacking-stolen-cloud-credentials-used-in-new-ai-attack",
       "tactic": "",
       "type": "technique",
       "severity": "medium"
@@ -1183,7 +1183,7 @@
     {
       "id": "AML.T0091.000",
       "name": "Application Access Token",
-      "description": "Adversaries may use stolen application access tokens to bypass the typical authentication process and access restricted accounts, information, or services on remote systems. These tokens are typically stolen from users or services and used in lieu of login credentials.\n\nApplication access tokens are used to make authorized API requests on behalf of a user or service and are commonly used to access resources in cloud, container-based applications, and software-as-a-service (SaaS). They are commonly used for AI services such as chatbots, LLMs, and predictive inference APIs.",
+      "description": "Adversaries may use stolen application access tokens to bypass the typical authentication process and access restricted accounts, information, or services on remote systems. These tokens are typically stolen from users or services and used in lieu of login credentials.\n\nApplication access tokens are used to make authorized API requests on behalf of a user or service and are commonly used to access resources in cloud, container-based applications, software-as-a-service (SaaS), and AI-as-a-service(AIaaS). They are commonly used for AI services such as chatbots, LLMs, and predictive inference APIs.",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -1191,7 +1191,7 @@
     {
       "id": "AML.T0093",
       "name": "Prompt Infiltration via Public-Facing Application",
-      "description": "An adversary may introduce malicious prompts into the victim's system via a public-facing application with the intention of it being ingested by an AI at some point in the future and ultimately having a downstream effect. This may occur when a data source is indexed by a retrieval augmented generation (RAG) system, when a rule triggers an action by an AI agent, or when a user utilizes a large language model (LLM) to interact with the malicious content. The malicious prompts may persist on the victim system for an extended period and could affect multiple users and various AI tools within the victim organization.\n\nAny public-facing application that accepts text input could be a target. This includes email, shared document systems like OneDrive or Google Drive, and service desks or ticketing systems like Jira.\n\nAdversaries may perform [Reconnaissance](/tactics/AML.TA0002) to identify public facing applications that are likely monitored by an AI agent or are likely to be indexed by a RAG. They may perform [Discover AI Agent Configuration](/techniques/AML.T0084) to refine their targeting.",
+      "description": "An adversary may introduce malicious prompts into the victim's system via a public-facing application with the intention of it being ingested by an AI at some point in the future and ultimately having a downstream effect. This may occur when a data source is indexed by a retrieval augmented generation (RAG) system, when a rule triggers an action by an AI agent, or when a user utilizes a large language model (LLM) to interact with the malicious content. The malicious prompts may persist on the victim system for an extended period and could affect multiple users and various AI tools within the victim organization.\n\nAny public-facing application that accepts text input could be a target. This includes email, shared document systems like OneDrive or Google Drive, and service desks or ticketing systems like Jira. This also includes OCR-mediated infiltration where malicious instructions are embedded in images, screenshots, and invoices that are ingested into the system.\n\nAdversaries may perform [Reconnaissance](/tactics/AML.TA0002) to identify public facing applications that are likely monitored by an AI agent or are likely to be indexed by a RAG. They may perform [Discover AI Agent Configuration](/techniques/AML.T0084) to refine their targeting.",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -1216,6 +1216,62 @@
       "id": "AML.T0095",
       "name": "Search Open Websites/Domains",
       "description": "Adversaries may search public websites and/or domains for information about victims that can be used during targeting. Information about victims may be available in various online sites, such as social media, new sites, or domains owned by the victim.\n\nAdversaries may find the information they seek to gather via search engines. They can use precise search queries to identify software platforms or services used by the victim to use in targeting. This may be followed by [Exploit Public-Facing Application](/techniques/AML.T0049) or [Prompt Infiltration via Public-Facing Application](/techniques/AML.T0093).",
+      "tactic": "",
+      "type": "technique",
+      "severity": "low"
+    },
+    {
+      "id": "AML.T0096",
+      "name": "AI Service API",
+      "description": "Adversaries may communicate using the API of an AI service on the victim's system. The adversary's commands to the victim system, and often the results, are embedded in the normal traffic of the AI service.\n\nAn AI service API command and control channel is covert because the adversary's commands blend in with normal communications, so an adversary may use this technique to avoid detection. Using existing infrastructure on the victim's system allows the adversary to live off the land, further reducing their footprint.\n\nAI service APIs may be abused as C2 channels when an adversary wants to be stealthy and maintain long-term persistence for espionage activities [\\[1\\]][1].\n\n[1]: https://www.microsoft.com/en-us/security/blog/2025/11/03/sesameop-novel-backdoor-uses-openai-assistants-api-for-command-and-control/",
+      "tactic": "",
+      "type": "technique",
+      "severity": "low"
+    },
+    {
+      "id": "AML.T0097",
+      "name": "Virtualization/Sandbox Evasion",
+      "description": "Adversaries may employ various means to detect and avoid virtualization and analysis environments. This may include changing behaviors based on the results of checks for the presence of artifacts indicative of a virtual machine environment (VME) or sandbox. If the adversary detects a VME, they may alter their malware to disengage from the victim or conceal the core functions of the implant. They may also search for VME artifacts before dropping secondary or additional payloads.\n\nAdversaries may use several methods to accomplish Virtualization/Sandbox Evasion such as checking for security monitoring tools (e.g., Sysinternals, Wireshark, etc.) or other system artifacts associated with analysis or virtualization such as registry keys (e.g. substrings matching Vmware, VBOX, QEMU), environment variables (e.g. substrings matching VBOX, VMWARE, PARALLELS), NIC MAC addresses (e.g. prefixes 00-05-69 (VMWare) or 08-00-27 (VirtualBox)), running processes (e.g. vmware.exe, vboxservice.exe, qemu-ga.exe) [\\[1\\]][1].\n\n[1]: https://research.checkpoint.com/2025/ai-evasion-prompt-injection/",
+      "tactic": "",
+      "type": "technique",
+      "severity": "high"
+    },
+    {
+      "id": "AML.T0098",
+      "name": "AI Agent Tool Credential Harvesting",
+      "description": "Adversaries may attempt to use their access to an AI agent on the victim's system to retrieve data from available agent tools to collect credentials. Agent tools may connect to a wide range of sources that may contain credentials including document stores (e.g. SharePoint, OneDrive or Google Drive), code repositories (e.g. GitHub or GitLab), or enterprise productivity tools (e.g. as email providers or Slack), and local notetaking tools (e.g. Obsidian or Apple Notes).",
+      "tactic": "",
+      "type": "technique",
+      "severity": "low"
+    },
+    {
+      "id": "AML.T0099",
+      "name": "AI Agent Tool Data Poisoning",
+      "description": "Adversaries may place malicious content on a victim's system where it can be retrieved by an AI Agent Tool. This may be accomplished by placing documents in a location that will be ingested by a service the AI agent has associated tools for.\n\nThe content may be targeted such that it would often be retrieved by common queries. The adversary's content may include false or misleading information. It may also include prompt injections with malicious instructions.",
+      "tactic": "",
+      "type": "technique",
+      "severity": "high"
+    },
+    {
+      "id": "AML.T0100",
+      "name": "AI Agent Clickbait",
+      "description": "Adversaries may craft deceptive web content designed to bait Computer-Using AI agents or AI web browsers into taking unintended actions, such as clicking buttons, copying code, or navigating to specific web pages. These attacks exploit the agent's interpretation of UI content, visual cues, or prompt-like language embedded in the site. When successful, they can lead the agent to inadvertently copy and execute malicious code on the user's operating system.",
+      "tactic": "",
+      "type": "technique",
+      "severity": "low"
+    },
+    {
+      "id": "AML.T0101",
+      "name": "Data Destruction via AI Agent Tool Invocation",
+      "description": "Adversaries may invoke an AI agent's tool capable of performing mutative operations to perform Data Destruction. Adversaries may destroy data and files on specific systems or in large numbers on a network to interrupt availability to systems, services, and network resources.",
+      "tactic": "",
+      "type": "technique",
+      "severity": "low"
+    },
+    {
+      "id": "AML.T0102",
+      "name": "Generate Malicious Commands",
+      "description": "Adversaries may use large language models (LLMs) to dynamically generate malicious commands from natural language. Dynamically generated commands may be harder detect as the attack signature is constantly changing. AI-generated commands may also allow adversaries to more rapidly adapt to different environments and adjust their tactics.\n\nAdversaries may utilize LLMs present in the victim's environment or call out to externally hosted services. [APT28](https://attack.mitre.org/groups/G0007) utilized a model hosted on HuggingFace in a campaign with their LAMEHUG malware [\\[1\\]][1]. In either case prompts to generate malicious code can blend in with normal traffic.\n\n[1]: https://logpoint.com/en/blog/apt28s-new-arsenal-lamehug-the-first-ai-powered-malware",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -1473,12 +1529,30 @@
       "name": "Rules File Backdoor: Supply Chain Attack on AI Coding Assistants",
       "summary": "Pillar Security researchers demonstrated how adversaries can compromise AI-generated code by injecting malicious instructions into rules files used to configure AI coding assistants like Cursor and Gi...",
       "techniques": []
+    },
+    {
+      "id": "AML.CS0042",
+      "name": "SesameOp: Novel backdoor uses OpenAI Assistants API for command and control",
+      "summary": "The Microsoft Incident Response - Detection and Response Team (DART) investigated a compromised system where a threat actor utilized SesameOp, a backdoor implant that abuses the OpenAI Assistants API ...",
+      "techniques": []
+    },
+    {
+      "id": "AML.CS0043",
+      "name": "Malware Prototype with Embedded Prompt Injection",
+      "summary": "Check Point Research identified a prototype malware sample in the wild that contained a prompt injection, which appeared to be designed to manipulate LLM-based malware detectors and/or analysis tools....",
+      "techniques": []
+    },
+    {
+      "id": "AML.CS0044",
+      "name": "LAMEHUG: Malware Leveraging Dynamic AI-Generated Commands",
+      "summary": "In July 2025, Ukrainian authorities reported the emergence of LAMEHUG, a new AI-powered malware attributed to the Russian state-backed threat actor [APT28](https://attack.mitre.org/groups/G0007/) (als...",
+      "techniques": []
     }
   ],
   "stats": {
     "totalTactics": 16,
-    "totalTechniques": 140,
-    "totalCaseStudies": 42
+    "totalTechniques": 147,
+    "totalCaseStudies": 45
   },
-  "lastUpdated": "2025-12-24T18:30:10.471739+05:30"
+  "lastUpdated": "2025-12-24T22:06:56.027322+05:30"
 }
