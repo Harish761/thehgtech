@@ -479,23 +479,94 @@
 
         <div class="content">
             <h2 id="overview"><i class="fas fa-shield-alt"></i> 1. What is NIST CSF 2.0?</h2>
+
+            <h3>The Simple Explanation (For Beginners)</h3>
+            <p>Imagine you're running a business and someone asks: <em>"How good is your cybersecurity?"</em> Most
+                people would say "pretty good" or "we have antivirus" - but that doesn't really answer the question in
+                any useful way.</p>
+
+            <p>The <strong>NIST Cybersecurity Framework</strong> gives you a structured way to answer that question
+                properly. Instead of vague statements, it lets you say:</p>
+            <ul>
+                <li>✅ We know exactly what systems and data we have (IDENTIFY)</li>
+                <li>✅ We have controls to prevent attacks (PROTECT)</li>
+                <li>✅ We can detect when something bad happens (DETECT)</li>
+                <li>✅ We have a plan to respond to incidents (RESPOND)</li>
+                <li>✅ We can recover and get back to normal (RECOVER)</li>
+                <li>✅ We have executive oversight and clear policies (GOVERN - new!)</li>
+            </ul>
+
+            <div class="info-box">
+                <strong><i class="fas fa-lightbulb"></i> Think of it like this:</strong> If cybersecurity was a health
+                checkup, NIST CSF is the comprehensive checklist your doctor uses. It doesn't tell you exactly what
+                medicine to take - it tells you what body systems to check and what healthy looks like.
+            </div>
+
+            <h3>The Technical Definition</h3>
             <p>The <strong>NIST Cybersecurity Framework (CSF) 2.0</strong> is a voluntary framework developed by the
                 National Institute of Standards and Technology that provides organizations with a structured approach to
                 managing cybersecurity risk.</p>
 
-            <p>Unlike prescriptive compliance standards, CSF 2.0 is outcome-based and flexible, allowing organizations
-                of any size, sector, or maturity level to apply it according to their specific risk context and business
-                needs.</p>
+            <p>Unlike prescriptive compliance standards (like PCI-DSS that says "encrypt with AES-256"), CSF 2.0 is
+                <strong>outcome-based</strong> and flexible, allowing organizations of any size, sector, or maturity
+                level to apply it according to their specific risk context and business needs.</p>
+
+            <h3>Why NIST CSF Matters in 2025</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Situation</th>
+                        <th>How NIST CSF Helps</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Board asks "Are we secure?"</td>
+                        <td>Show them your tier rating and target profile</td>
+                    </tr>
+                    <tr>
+                        <td>Cyber insurance application</td>
+                        <td>Many insurers use CSF as an assessment framework</td>
+                    </tr>
+                    <tr>
+                        <td>Customer security questionnaires</td>
+                        <td>Map your controls to CSF and answer consistently</td>
+                    </tr>
+                    <tr>
+                        <td>Prioritizing security budget</td>
+                        <td>Gap analysis shows exactly where to invest</td>
+                    </tr>
+                    <tr>
+                        <td>After a security incident</td>
+                        <td>Framework shows what went wrong and how to improve</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="success-box">
+                <strong><i class="fas fa-check-circle"></i> Real-World Adoption:</strong> CSF is used by 50% of U.S.
+                organizations and is referenced in government contracts, supply chain requirements, and industry
+                regulations. Even if it's "voluntary," you'll likely encounter it in business relationships.
+            </div>
 
             <h3>Who Should Use CSF 2.0?</h3>
             <ul>
-                <li><strong>All Organizations:</strong> CSF 2.0 is designed for organizations of any size and sector
-                    (expanded from critical infrastructure focus)</li>
-                <li><strong>Supply Chain Partners:</strong> Organizations managing third-party cybersecurity risk</li>
-                <li><strong>Government Contractors:</strong> Federal agencies and contractors</li>
-                <li><strong>International Organizations:</strong> Aligns with international standards like ISO 27001
-                </li>
+                <li><strong>All Organizations:</strong> CSF 2.0 is explicitly designed for organizations of any size and
+                    sector (expanded from the previous critical infrastructure focus)</li>
+                <li><strong>Supply Chain Partners:</strong> Organizations managing third-party cybersecurity risk - your
+                    customers may require CSF alignment</li>
+                <li><strong>Government Contractors:</strong> Federal agencies and contractors often reference CSF in
+                    requirements</li>
+                <li><strong>International Organizations:</strong> CSF aligns well with international standards like ISO
+                    27001, making it useful for global compliance</li>
             </ul>
+
+            <div class="warning-box">
+                <strong><i class="fas fa-exclamation-triangle"></i> Common Misunderstanding:</strong> NIST CSF is NOT a
+                certification like ISO 27001. You can't "get certified" in CSF. Instead, you use it as a self-assessment
+                framework and may have third parties validate your implementation. Don't let vendors sell you "CSF
+                certification" - it doesn't exist.
+            </div>
 
             <h2 id="changes"><i class="fas fa-sync-alt"></i> 2. Key Changes from CSF 1.1</h2>
 
@@ -562,7 +633,8 @@
 
             <h3>Profiles</h3>
             <p>Profiles describe an organization's current and/or target cybersecurity posture. CSF 2.0 introduces
-                <strong>Organizational Profiles</strong> and <strong>Community Profiles</strong> as templates.</p>
+                <strong>Organizational Profiles</strong> and <strong>Community Profiles</strong> as templates.
+            </p>
 
             <h3>Tiers</h3>
             <p>Four tiers describe the degree of rigor in cybersecurity risk management practices:</p>

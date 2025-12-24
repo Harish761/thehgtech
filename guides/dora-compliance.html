@@ -502,34 +502,151 @@
 
         <div class="content">
             <h2 id="overview"><i class="fas fa-gavel"></i> 1. What is DORA?</h2>
-            <p>The <strong>Digital Operational Resilience Act (DORA)</strong> is a comprehensive EU regulation
-                (Regulation (EU) 2022/2554) that establishes a uniform framework for managing ICT (Information and
-                Communication Technology) risks in the financial sector.</p>
 
-            <p>DORA aims to ensure that financial entities can withstand, respond to, and recover from all types of
-                ICT-related disruptions and threats. It consolidates and upgrades ICT risk requirements that were
-                previously scattered across various EU financial services directives.</p>
+            <h3>The Simple Explanation (For Beginners)</h3>
+            <p>Imagine a major bank's computer systems go down for several hours. Customers can't access their money,
+                businesses can't process payments, and panic spreads. Now imagine this happening across multiple banks
+                simultaneously due to a cyberattack or a failed software update from a shared technology provider.</p>
+
+            <p>This is exactly what <strong>DORA (Digital Operational Resilience Act)</strong> is designed to prevent.
+                It's like a comprehensive "digital safety rulebook" for the EU financial sector that says: <em>"Your
+                    technology systems MUST be able to survive problems and keep working."</em></p>
 
             <div class="info-box">
-                <strong><i class="fas fa-lightbulb"></i> Key Insight:</strong> Unlike previous regulations, DORA applies
-                directly across all EU member states without requiring national transposition. This creates a single,
-                harmonized set of ICT risk management rules for the entire EU financial sector.
+                <strong><i class="fas fa-lightbulb"></i> Think of it like this:</strong> If your car's seatbelt law says
+                you must wear a seatbelt, DORA says your financial institution must have a "digital seatbelt" -
+                protective measures that keep your technology running safely even when things go wrong.
             </div>
 
-            <h3>Core Objectives</h3>
+            <h3>The Technical Definition</h3>
+            <p>The <strong>Digital Operational Resilience Act (DORA)</strong> is a comprehensive EU regulation
+                (Regulation (EU) 2022/2554) that establishes a uniform framework for managing ICT (Information and
+                Communication Technology) risks across the entire European financial sector.</p>
+
+            <p>DORA aims to ensure that financial entities can:</p>
             <ul>
-                <li><strong>Harmonization:</strong> Create consistent ICT risk management requirements across EU
-                    financial services</li>
-                <li><strong>Resilience:</strong> Ensure financial entities can operate through ICT disruptions</li>
-                <li><strong>Oversight:</strong> Establish regulatory supervision of critical ICT third-party providers
-                </li>
-                <li><strong>Transparency:</strong> Improve incident reporting and information sharing</li>
+                <li><strong>Withstand</strong> - Continue operating during ICT disruptions</li>
+                <li><strong>Respond</strong> - Quickly react to cyber incidents and technology failures</li>
+                <li><strong>Recover</strong> - Restore normal operations after disruptions</li>
             </ul>
 
-            <h2 id="scope"><i class="fas fa-building"></i> 2. Who Must Comply?</h2>
-            <p>DORA applies to a wide range of financial entities and, notably, to the ICT third-party service providers
-                that support them.</p>
+            <h3>Why Was DORA Created?</h3>
+            <p>Before DORA, EU financial institutions faced a patchwork of inconsistent ICT security requirements spread
+                across dozens of different directives. A bank operating in Germany, France, and Spain might face three
+                slightly different sets of rules. This created confusion, gaps in protection, and made it harder to
+                respond to cross-border incidents.</p>
 
+            <p>Several high-profile incidents highlighted the need for DORA:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Incident</th>
+                        <th>Impact</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2018</td>
+                        <td>TSB Bank Migration Failure (UK)</td>
+                        <td>1.9 million customers locked out for weeks, £330M cost</td>
+                    </tr>
+                    <tr>
+                        <td>2020</td>
+                        <td>SolarWinds Supply Chain Attack</td>
+                        <td>Multiple financial institutions affected via third-party software</td>
+                    </tr>
+                    <tr>
+                        <td>2021</td>
+                        <td>AWS Outage</td>
+                        <td>Multiple banks and payment processors went offline globally</td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>ION Trading Ransomware</td>
+                        <td>Derivatives trading disrupted across multiple EU financial firms</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="warning-box">
+                <strong><i class="fas fa-exclamation-triangle"></i> The Wake-Up Call:</strong> The SolarWinds attack in
+                particular showed that even if your organization has perfect security, a vulnerability in one of your
+                software vendors can compromise your entire operation. DORA specifically addresses this "third-party
+                risk" problem.
+            </div>
+
+            <h3>What Makes DORA Different?</h3>
+            <p>Unlike previous regulations that were <strong>directives</strong> (guidelines that each EU country could
+                interpret differently), DORA is a <strong>regulation</strong>. This means:</p>
+
+            <ul>
+                <li><strong>Direct applicability:</strong> DORA applies identically in all 27 EU member states - no
+                    national variations</li>
+                <li><strong>No transposition needed:</strong> Member states don't need to pass local laws to implement
+                    it</li>
+                <li><strong>Single rulebook:</strong> Same requirements whether you're in Ireland, Italy, or Estonia
+                </li>
+            </ul>
+
+            <h3>Core Objectives</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Objective</th>
+                        <th>What It Means in Practice</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Harmonization</strong></td>
+                        <td>Create one set of ICT risk management rules across all EU financial services - no more
+                            confusion about which rules apply where</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Resilience</strong></td>
+                        <td>Ensure financial entities can keep operating even when their technology is under attack or
+                            experiencing problems</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Oversight</strong></td>
+                        <td>Give EU regulators the power to directly supervise critical technology providers (like major
+                            cloud services) that support multiple financial institutions</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Transparency</strong></td>
+                        <td>Require financial entities to report major ICT incidents so regulators can identify systemic
+                            risks and coordinate responses</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="success-box">
+                <strong><i class="fas fa-check-circle"></i> Key Takeaway:</strong> DORA represents the EU's most
+                comprehensive attempt to protect the financial system from technology-related risks. It recognizes that
+                in today's digital world, a cyberattack or IT failure can be just as damaging as a traditional financial
+                crisis.
+            </div>
+
+            <h2 id="scope"><i class="fas fa-building"></i> 2. Who Must Comply?</h2>
+            <p>DORA casts a wide net, covering virtually every type of financial entity in the EU, plus the technology
+                companies that serve them.</p>
+
+            <h3>Understanding the Scope (Simple Overview)</h3>
+            <p>If you work in finance in the EU and your job involves computers (which is almost everyone today), DORA
+                probably applies to your organization. Here's an easy way to think about it:</p>
+
+            <ul>
+                <li><strong>Banks and lenders?</strong> ✅ Covered by DORA</li>
+                <li><strong>Investment firms?</strong> ✅ Covered by DORA</li>
+                <li><strong>Insurance companies?</strong> ✅ Covered by DORA</li>
+                <li><strong>Payment processors?</strong> ✅ Covered by DORA</li>
+                <li><strong>Crypto exchanges?</strong> ✅ Covered by DORA</li>
+                <li><strong>The cloud provider hosting the bank's systems?</strong> ✅ Also affected by DORA</li>
+            </ul>
+
+            <h3>Full List of Covered Entities</h3>
             <table>
                 <thead>
                     <tr>
@@ -541,46 +658,81 @@
                 <tbody>
                     <tr>
                         <td>Credit Institutions</td>
-                        <td>Banks, building societies</td>
+                        <td>Banks, building societies, credit unions</td>
                         <td>Full</td>
                     </tr>
                     <tr>
                         <td>Investment Firms</td>
-                        <td>Broker-dealers, asset managers</td>
+                        <td>Broker-dealers, asset managers, hedge funds</td>
                         <td>Full</td>
                     </tr>
                     <tr>
                         <td>Insurance Companies</td>
-                        <td>Insurers, reinsurers</td>
+                        <td>Life insurers, property insurers, reinsurers</td>
                         <td>Full</td>
                     </tr>
                     <tr>
                         <td>Payment Institutions</td>
-                        <td>Payment processors, e-money issuers</td>
+                        <td>Payment processors, e-money issuers (like Wise, Revolut)</td>
                         <td>Full</td>
                     </tr>
                     <tr>
                         <td>Crypto-Asset Service Providers</td>
-                        <td>Crypto exchanges, custodians</td>
+                        <td>Crypto exchanges, wallet providers, custodians</td>
+                        <td>Full</td>
+                    </tr>
+                    <tr>
+                        <td>Trading Venues</td>
+                        <td>Stock exchanges, MTFs, OTFs</td>
+                        <td>Full</td>
+                    </tr>
+                    <tr>
+                        <td>Central Counterparties</td>
+                        <td>Clearing houses (LCH, Eurex)</td>
+                        <td>Full</td>
+                    </tr>
+                    <tr>
+                        <td>Credit Rating Agencies</td>
+                        <td>Moody's (EU operations), Fitch, S&P</td>
                         <td>Full</td>
                     </tr>
                     <tr>
                         <td>ICT Third-Party Providers</td>
-                        <td>Cloud providers, SaaS vendors</td>
-                        <td>Oversight Framework</td>
+                        <td>Cloud providers (AWS, Azure, GCP), SaaS vendors, IT outsourcers</td>
+                        <td>Oversight Framework*</td>
                     </tr>
                     <tr>
                         <td>Small/Micro Entities</td>
                         <td>Fewer than 10 employees, &lt;€2M revenue</td>
-                        <td>Simplified</td>
+                        <td>Simplified**</td>
                     </tr>
                 </tbody>
             </table>
 
+            <div class="info-box">
+                <strong><i class="fas fa-asterisk"></i> Special Notes:</strong>
+                <ul style="margin-top: 0.5rem; margin-bottom: 0;">
+                    <li><strong>*Oversight Framework:</strong> Critical ICT providers designated by EU regulators will
+                        be subject to direct EU supervision, not just contractual obligations from their financial
+                        clients</li>
+                    <li><strong>**Simplified:</strong> Small entities get proportionate, less burdensome requirements,
+                        but are not exempt</li>
+                </ul>
+            </div>
+
+            <h3>What About Non-EU Companies?</h3>
+            <p>DORA primarily applies to entities established in the EU. However, if you're outside the EU but:</p>
+            <ul>
+                <li>You provide ICT services to EU financial entities → You'll need to comply contractually</li>
+                <li>You're designated as a "Critical ICT third-party provider" → You may face direct EU oversight</li>
+                <li>You have EU-based subsidiaries → Those subsidiaries must comply</li>
+            </ul>
+
             <div class="success-box">
                 <strong><i class="fas fa-check-circle"></i> Pro Tip:</strong> Even if your organization is not directly
                 subject to DORA, if you provide ICT services to EU financial entities, you will be indirectly affected.
-                Start reviewing your contracts and security practices now.
+                Your financial clients will require you to meet DORA standards in your contracts. Start reviewing your
+                security practices and contract templates now.
             </div>
 
             <h2 id="pillars"><i class="fas fa-columns"></i> 3. The 5 Pillars of DORA</h2>

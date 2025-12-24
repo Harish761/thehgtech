@@ -333,36 +333,167 @@
 
         <div class="content">
             <h2 id="overview"><i class="fas fa-bullseye"></i> 1. What is MITRE ATT&CK?</h2>
+
+            <h3>The Simple Explanation (For Beginners)</h3>
+            <p>Imagine you're learning to defend a castle. You'd want to know:</p>
+            <ul>
+                <li>How do attackers typically get in? (scaling walls, breaking gates, bribery...)</li>
+                <li>What do they do once inside? (search for treasure, take hostages, burn buildings...)</li>
+                <li>How have past attackers operated? (specific techniques used by famous armies)</li>
+            </ul>
+
+            <p><strong>MITRE ATT&CK</strong> is exactly this - but for cyber attacks. It's a comprehensive "playbook" of
+                how hackers actually attack organizations, based on real incidents that have been studied and documented
+                over years.</p>
+
+            <div class="info-box">
+                <strong><i class="fas fa-lightbulb"></i> Think of it like this:</strong> If hackers were chess players,
+                ATT&CK would be a book containing EVERY possible move they might make, organized by what they're trying
+                to achieve. Instead of just knowing "hackers are bad," you know specifically: "Hackers often use
+                PowerShell (T1059.001) to run commands because it's already installed on Windows computers."
+            </div>
+
+            <h3>The Technical Definition</h3>
             <p><strong>MITRE ATT&CK</strong> (Adversarial Tactics, Techniques, and Common Knowledge) is a
                 globally-accessible knowledge base of adversary tactics and techniques based on real-world observations.
                 It serves as a common language for describing cyber attacks.</p>
 
-            <h3>Key Use Cases</h3>
+            <p>The framework is maintained by MITRE, a nonprofit that operates federally funded R&D centers. They've
+                catalogued thousands of attacks and distilled them into a structured framework anyone can use.</p>
+
+            <h3>Why ATT&CK Changed Everything</h3>
+            <p>Before ATT&CK, security teams had a problem. When analysts discussed attacks, they'd say things like:</p>
             <ul>
-                <li><strong>Detection Engineering:</strong> Build detections mapped to specific techniques</li>
-                <li><strong>Threat Intelligence:</strong> Describe threat actors by their TTPs</li>
-                <li><strong>Security Assessment:</strong> Evaluate detection coverage gaps</li>
-                <li><strong>Red Teaming:</strong> Structure adversary emulation</li>
-                <li><strong>Communication:</strong> Common language across teams</li>
+                <li>"The attacker ran some scripts"</li>
+                <li>"They moved around the network"</li>
+                <li>"They stole data somehow"</li>
             </ul>
+            <p>This was vague and made it hard to compare attacks, build defenses, or communicate clearly.</p>
+
+            <p>Now, with ATT&CK, those same descriptions become:</p>
+            <ul>
+                <li>"T1059.001 - PowerShell execution"</li>
+                <li>"T1021.001 - Remote Desktop Protocol lateral movement"</li>
+                <li>"T1048 - Exfiltration over alternative protocol"</li>
+            </ul>
+
+            <div class="success-box">
+                <strong><i class="fas fa-check-circle"></i> Real-World Example:</strong> When the Colonial Pipeline
+                ransomware attack happened in 2021, security teams worldwide immediately shared analysis mapped to
+                ATT&CK. Within hours, organizations could check: "Do we detect T1078 (Valid Accounts)? Do we detect
+                T1486 (Data Encrypted for Impact)?" This shared language accelerated global defense.
+            </div>
+
+            <h3>Key Use Cases</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Use Case</th>
+                        <th>What It Means</th>
+                        <th>Who Benefits</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Detection Engineering</strong></td>
+                        <td>Build alerts that detect specific techniques</td>
+                        <td>SOC Analysts, Security Engineers</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Threat Intelligence</strong></td>
+                        <td>Describe threat actors by their TTPs instead of just IOCs</td>
+                        <td>CTI Analysts, Threat Hunters</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Security Assessment</strong></td>
+                        <td>Find gaps in your detection coverage</td>
+                        <td>Security Managers, CISOs</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Red Teaming</strong></td>
+                        <td>Structure adversary emulation tests</td>
+                        <td>Penetration Testers, Red Teams</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Communication</strong></td>
+                        <td>Speak the same language across teams and organizations</td>
+                        <td>Everyone in security</td>
+                    </tr>
+                </tbody>
+            </table>
 
             <h2 id="structure"><i class="fas fa-sitemap"></i> 2. Framework Structure</h2>
 
-            <h3>ATT&CK Hierarchy</h3>
-            <ul>
-                <li><strong>Matrices:</strong> Enterprise, Mobile, ICS (different environments)</li>
-                <li><strong>Tactics:</strong> The adversary's goal (the "why")</li>
-                <li><strong>Techniques:</strong> How they achieve the goal (the "how")</li>
-                <li><strong>Sub-techniques:</strong> More specific variations</li>
-                <li><strong>Procedures:</strong> Specific implementations by threat actors</li>
-            </ul>
+            <h3>Understanding the Hierarchy (It's Like an Outline)</h3>
+            <p>ATT&CK is organized like a well-structured document with increasing levels of detail:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Level</th>
+                        <th>What It Is</th>
+                        <th>Example</th>
+                        <th>Count</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Matrices</strong></td>
+                        <td>The environment (Windows/Mac/Linux, Mobile, Industrial)</td>
+                        <td>Enterprise Matrix</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tactics</strong></td>
+                        <td>The adversary's GOAL (the "WHY")</td>
+                        <td>Credential Access</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Techniques</strong></td>
+                        <td>HOW they achieve the goal</td>
+                        <td>OS Credential Dumping</td>
+                        <td>~200</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sub-techniques</strong></td>
+                        <td>Specific variations of techniques</td>
+                        <td>LSASS Memory</td>
+                        <td>~400</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Procedures</strong></td>
+                        <td>Exact implementation by specific threat actors</td>
+                        <td>Mimikatz sekurlsa::logonpasswords</td>
+                        <td>Thousands</td>
+                    </tr>
+                </tbody>
+            </table>
 
             <div class="info-box">
-                <strong><i class="fas fa-lightbulb"></i> Example:</strong><br>
+                <strong><i class="fas fa-lightbulb"></i> Walk-Through Example:</strong><br>
                 <strong>Tactic:</strong> Credential Access (goal: steal credentials)<br>
                 <strong>Technique:</strong> T1003 - OS Credential Dumping<br>
                 <strong>Sub-technique:</strong> T1003.001 - LSASS Memory<br>
-                <strong>Procedure:</strong> Mimikatz sekurlsa::logonpasswords
+                <strong>Procedure:</strong> APT28 uses Mimikatz sekurlsa::logonpasswords command<br><br>
+                <em>Translation: The attacker wanted passwords (tactic), so they dumped operating system credentials
+                    (technique), specifically from LSASS memory (sub-technique), using the exact Mimikatz command the
+                    notorious APT28 group uses (procedure).</em>
+            </div>
+
+            <h3>The Three Matrices</h3>
+            <ul>
+                <li><strong>Enterprise:</strong> Windows, macOS, Linux, Cloud (AWS/Azure/GCP), Network, Containers -
+                    this is the most commonly used matrix</li>
+                <li><strong>Mobile:</strong> iOS and Android device attacks</li>
+                <li><strong>ICS:</strong> Industrial Control Systems (power plants, manufacturing, SCADA)</li>
+            </ul>
+
+            <div class="warning-box">
+                <strong><i class="fas fa-exclamation-triangle"></i> Common Beginner Mistake:</strong> Don't try to
+                memorize all 200+ techniques! Start with the 10-15 most common techniques in your industry (check
+                reports from CrowdStrike, Mandiant, or CISA). You'll naturally learn more as you encounter them in
+                incidents.
             </div>
 
             <h2 id="tactics"><i class="fas fa-chess"></i> 3. The 14 Tactics Explained</h2>

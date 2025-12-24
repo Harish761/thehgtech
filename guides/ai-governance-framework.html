@@ -388,6 +388,67 @@
 
         <div class="content">
             <h2 id="why"><i class="fas fa-question-circle"></i> 1. Why AI Governance Matters</h2>
+
+            <h3>The Simple Explanation (For Beginners)</h3>
+            <p>Your employees are already using ChatGPT, Claude, and other AI tools - often without telling IT. They're
+                pasting customer emails, contract clauses, code snippets, and financial data into these tools every
+                single day.</p>
+
+            <p><strong>Here's the problem:</strong> When your sales rep pastes a customer contract into ChatGPT to
+                "summarize the key points," that confidential contract just became training data for OpenAI. When your
+                developer shares proprietary code with GitHub Copilot, it potentially becomes part of suggestions for
+                your competitors.</p>
+
+            <div class="info-box">
+                <strong><i class="fas fa-lightbulb"></i> Think of it like this:</strong> Imagine if your employees were
+                photocopying confidential documents and mailing them to random companies for feedback. You'd stop that
+                immediately, right? That's essentially what's happening with ungoverned AI use - except it's invisible
+                and happening thousands of times per day.
+            </div>
+
+            <h3>Real-World AI Disasters (Learn from Others' Mistakes)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Incident</th>
+                        <th>What Went Wrong</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2023</td>
+                        <td>Samsung semiconductor leak</td>
+                        <td>Engineers pasted proprietary chip designs into ChatGPT; data potentially used for training
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>Lawyer cited fake cases</td>
+                        <td>Attorney filed brief with AI-hallucinated case citations that didn't exist; sanctioned by
+                            court</td>
+                    </tr>
+                    <tr>
+                        <td>2024</td>
+                        <td>Multiple banks banned AI</td>
+                        <td>JPMorgan, Goldman, others banned ChatGPT after employees shared client info</td>
+                    </tr>
+                    <tr>
+                        <td>2024</td>
+                        <td>Air Canada chatbot</td>
+                        <td>AI made up refund policy; airline forced to honor false AI promises</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="warning-box">
+                <strong><i class="fas fa-exclamation-triangle"></i> The Samsung Incident Explained:</strong> Samsung
+                engineers used ChatGPT to check source code for errors and optimize code. They inadvertently leaked
+                source code for semiconductor equipment, internal meeting notes, and proprietary test data. Samsung
+                responded by banning ChatGPT entirely - but many employees just used it on personal devices instead.
+            </div>
+
+            <h3>The Technical Perspective</h3>
             <p>The rapid adoption of generative AI tools like ChatGPT, Microsoft Copilot, and Claude has created
                 significant governance challenges. According to ISACA's 2024 survey, <strong>75% of organizations have
                     no formal AI policy</strong> despite widespread employee use of AI tools.</p>
@@ -395,21 +456,24 @@
             <h3>Key Risks of Ungoverned AI</h3>
             <ul>
                 <li><strong>Data Leakage:</strong> Employees inadvertently sharing confidential data with public AI
-                    services</li>
-                <li><strong>Compliance Violations:</strong> AI outputs that violate regulations (GDPR, HIPAA, financial
-                    regulations)</li>
+                    services that may use inputs for training</li>
+                <li><strong>Compliance Violations:</strong> AI outputs that violate regulations (GDPR for using customer
+                    data, HIPAA for health info, SOX for financial controls)</li>
                 <li><strong>Intellectual Property:</strong> Using AI-generated content without understanding IP
-                    implications</li>
-                <li><strong>Bias & Discrimination:</strong> AI decisions that perpetuate harmful biases</li>
+                    implications - who owns AI-generated code or content?</li>
+                <li><strong>Bias & Discrimination:</strong> AI decisions that perpetuate harmful biases in hiring,
+                    lending, or customer service</li>
                 <li><strong>Hallucinations:</strong> Relying on AI-generated false information for critical decisions
-                </li>
-                <li><strong>Shadow AI:</strong> Employees using unapproved AI tools without IT knowledge</li>
+                    (the lawyer example above)</li>
+                <li><strong>Shadow AI:</strong> Employees using unapproved AI tools without IT knowledge, creating
+                    security blind spots</li>
             </ul>
 
-            <div class="info-box">
-                <strong><i class="fas fa-lightbulb"></i> Key Insight:</strong> Governance is not about blocking AI
+            <div class="success-box">
+                <strong><i class="fas fa-check-circle"></i> Key Insight:</strong> Governance is not about blocking AI
                 adoption—it's about enabling safe, effective AI use that protects the organization while unlocking
-                productivity benefits.
+                productivity benefits. The companies winning are those with clear AI policies, not those trying to ban
+                AI entirely.
             </div>
 
             <h2 id="framework"><i class="fas fa-sitemap"></i> 2. AI Governance Framework Components</h2>
