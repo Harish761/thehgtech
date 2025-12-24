@@ -102,7 +102,9 @@ class CommandPalette {
         });
 
         document.addEventListener('click', (e) => {
-            if (e.target.closest('.desktop-search-btn') || e.target.closest('[data-action="command-palette"]')) {
+            if (e.target.closest('.desktop-search-btn') ||
+                e.target.closest('[data-action="command-palette"]') ||
+                e.target.closest('[data-action="search"]')) {
                 e.preventDefault();
                 this.open();
             }
