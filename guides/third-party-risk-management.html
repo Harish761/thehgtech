@@ -315,6 +315,67 @@
 
         <div class="content">
             <h2 id="overview"><i class="fas fa-network-wired"></i> 1. What is Third-Party Risk Management?</h2>
+
+            <h3>The Simple Explanation (For Beginners)</h3>
+            <p>Imagine you have the most secure house in the neighborhood - alarm systems, cameras, reinforced doors.
+                But you give your house key to a cleaning service, and they get robbed. Now criminals have your key.</p>
+
+            <p>This is <strong>third-party risk</strong> in a nutshell. Your organization might have excellent security,
+                but you share data and access with vendors who might not. When THEY get breached, YOU suffer the
+                consequences.</p>
+
+            <div class="info-box">
+                <strong><i class="fas fa-lightbulb"></i> Think of it like this:</strong> Every vendor with access to
+                your data or systems is a potential door into your organization. TPRM is about knowing which doors you
+                have, who holds the keys, and making sure they're locked properly.
+            </div>
+
+            <h3>Real-World Supply Chain Attacks (Learn from Others)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Incident</th>
+                        <th>What Happened</th>
+                        <th>Impact</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2020</td>
+                        <td>SolarWinds</td>
+                        <td>Attackers compromised SolarWinds' build system, inserted malware into software updates</td>
+                        <td>18,000+ organizations downloaded compromised updates, including US government agencies</td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>MOVEit Transfer</td>
+                        <td>Zero-day in file transfer software exploited before patch available</td>
+                        <td>2,500+ organizations breached, 65M+ individuals affected</td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>Okta via Rightway</td>
+                        <td>Third-party healthcare admin vendor breached, exposing Okta employee data</td>
+                        <td>5,000 Okta employees' personal info exposed via support vendor</td>
+                    </tr>
+                    <tr>
+                        <td>2024</td>
+                        <td>Change Healthcare</td>
+                        <td>Healthcare claims processor ransomed, affecting entire US healthcare system</td>
+                        <td>Millions of patients' data exposed, billions in damages</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="warning-box">
+                <strong><i class="fas fa-exclamation-triangle"></i> The SolarWinds Lesson:</strong> Organizations with
+                multi-million dollar security budgets were compromised because their network monitoring vendor was
+                hacked. The attackers didn't need to break through firewalls—they walked in through a trusted software
+                update. This is why vendor security matters as much as your own.
+            </div>
+
+            <h3>The Technical Definition</h3>
             <p><strong>Third-Party Risk Management (TPRM)</strong> is the process of identifying, assessing, and
                 mitigating risks that arise from organizations you do business with—vendors, suppliers, partners,
                 contractors, and service providers.</p>
@@ -328,42 +389,48 @@
                     <tr>
                         <th>Risk Category</th>
                         <th>Description</th>
-                        <th>Examples</th>
+                        <th>Real Example</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td><strong>Cybersecurity</strong></td>
                         <td>Security vulnerabilities and breaches at vendors</td>
-                        <td>Data breaches, ransomware, access compromise</td>
+                        <td>SolarWinds: Malicious code in software update compromised 18,000+ customers</td>
                     </tr>
                     <tr>
                         <td><strong>Operational</strong></td>
                         <td>Vendor failures affecting your operations</td>
-                        <td>Service outages, bankruptcy, capacity issues</td>
+                        <td>AWS outage 2021: Thousands of websites and services went offline for hours</td>
                     </tr>
                     <tr>
                         <td><strong>Compliance</strong></td>
                         <td>Vendor violations affecting your compliance</td>
-                        <td>GDPR, HIPAA, PCI-DSS violations</td>
+                        <td>You're still liable if your cloud provider mishandles GDPR-protected data</td>
                     </tr>
                     <tr>
                         <td><strong>Strategic</strong></td>
                         <td>Changes affecting business relationship</td>
-                        <td>Acquisitions, product discontinuation</td>
+                        <td>VMware acquired by Broadcom; major licensing and pricing changes</td>
                     </tr>
                     <tr>
                         <td><strong>Reputational</strong></td>
                         <td>Vendor actions damaging your brand</td>
-                        <td>Ethical violations, data mishandling</td>
+                        <td>Customers blame you for breaches, even if the vendor was at fault</td>
                     </tr>
                     <tr>
                         <td><strong>Fourth-Party</strong></td>
                         <td>Risks from your vendor's vendors</td>
-                        <td>Cloud provider to SaaS to you</td>
+                        <td>Your SaaS provider uses AWS, which uses third-party datacenters...</td>
                     </tr>
                 </tbody>
             </table>
+
+            <div class="success-box">
+                <strong><i class="fas fa-check-circle"></i> Key Insight:</strong> You can outsource the work, but you
+                can't outsource the responsibility. Regulators and customers hold YOU accountable when your vendor
+                fails, regardless of whose fault it technically was.
+            </div>
 
             <h2 id="program"><i class="fas fa-building"></i> 2. Building a TPRM Program</h2>
             <h3>Program Components</h3>

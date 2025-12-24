@@ -317,6 +317,73 @@
 
         <div class="content">
             <h2 id="overview"><i class="fas fa-brain"></i> 1. What is Threat Intelligence?</h2>
+
+            <h3>The Simple Explanation (For Beginners)</h3>
+            <p>Imagine you're a store detective trying to catch shoplifters. It would help to know what past shoplifters
+                looked like, what tactics they used, and which stores they hit recently. That's essentially what
+                <strong>threat intelligence</strong> is for cybersecurity.</p>
+
+            <p>Threat intelligence feeds are like a constantly updated "watch list" that tells your security tools:</p>
+            <ul>
+                <li>These IP addresses are known to be malicious (blocklist them)</li>
+                <li>These website domains are running phishing scams (block or alert)</li>
+                <li>Files with these signatures are malware (stop them from running)</li>
+                <li>This is how the latest attack campaigns are operating (watch for this behavior)</li>
+            </ul>
+
+            <div class="info-box">
+                <strong><i class="fas fa-lightbulb"></i> Think of it like this:</strong> If your firewall and antivirus
+                are your security guards, threat intelligence is like giving them a constantly updated "FBI Most Wanted"
+                list. Instead of just reacting to bad behavior, they can proactively block known bad actors before they
+                cause damage.
+            </div>
+
+            <h3>Why Threat Intelligence Matters</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Without Threat Intel</th>
+                        <th>With Threat Intel</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Your firewall only blocks what it's explicitly configured to block</td>
+                        <td>Firewall automatically blocks thousands of known malicious IPs</td>
+                    </tr>
+                    <tr>
+                        <td>Antivirus relies only on signatures from that vendor</td>
+                        <td>New malware hashes pushed from multiple sources within hours</td>
+                    </tr>
+                    <tr>
+                        <td>Phishing detection is limited to major campaigns</td>
+                        <td>Real-time phishing URL feeds block new threats immediately</td>
+                    </tr>
+                    <tr>
+                        <td>You find out about attacks after you're hit</td>
+                        <td>Proactive detection: "This IP attacked another company yesterday"</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>What is an IOC? (Indicator of Compromise)</h3>
+            <p>IOCs are the "fingerprints" of malicious activity. When security researchers analyze attacks, they
+                document observable patterns that can identify the same attack elsewhere:</p>
+            <ul>
+                <li><strong>IP Address:</strong> The attacker's server (e.g., <code>185.141.27.xxx</code>)</li>
+                <li><strong>Domain:</strong> Malicious website (e.g., <code>fake-update.com</code>)</li>
+                <li><strong>File Hash:</strong> Unique fingerprint of malware (SHA256)</li>
+                <li><strong>URL:</strong> Specific malicious page (e.g., phishing login page)</li>
+            </ul>
+
+            <div class="warning-box">
+                <strong><i class="fas fa-exclamation-triangle"></i> Common Misconception:</strong> Threat intelligence
+                is NOT just about blocking. Good threat intel also enriches your investigations. When you see a
+                suspicious IP in your logs, threat intel can tell you: "This IP is associated with APT28, a Russian
+                state-sponsored group known for targeting government organizations."
+            </div>
+
+            <h3>The Technical Definition</h3>
             <p><strong>Threat Intelligence (TI)</strong> is evidence-based knowledge about existing or emerging threats
                 that helps organizations prevent, detect, and respond to cyber attacks. It ranges from tactical IOCs to
                 strategic threat assessments.</p>
@@ -328,6 +395,7 @@
                         <th>Level</th>
                         <th>Description</th>
                         <th>Audience</th>
+                        <th>Example</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -335,24 +403,35 @@
                         <td><strong>Strategic</strong></td>
                         <td>High-level trends, threat actors, motivations</td>
                         <td>Executives, CISO</td>
+                        <td>"China-based attacks on semiconductor companies up 40%"</td>
                     </tr>
                     <tr>
                         <td><strong>Operational</strong></td>
                         <td>TTPs, campaigns, threat actor profiles</td>
-                        <td>Security managers, analysts</td>
+                        <td>Security managers</td>
+                        <td>"APT41 is targeting VPN vulnerabilities with this campaign"</td>
                     </tr>
                     <tr>
                         <td><strong>Tactical</strong></td>
                         <td>IOCs: IPs, domains, hashes, URLs</td>
                         <td>SOC analysts, SIEM</td>
+                        <td>"Block these 500 C2 domains immediately"</td>
                     </tr>
                     <tr>
                         <td><strong>Technical</strong></td>
                         <td>Malware analysis, exploit details</td>
                         <td>Malware analysts, IR</td>
+                        <td>"This malware uses DLL sideloading via this technique"</td>
                     </tr>
                 </tbody>
             </table>
+
+            <div class="success-box">
+                <strong><i class="fas fa-check-circle"></i> Where to Start:</strong> If you're new to threat
+                intelligence, start with 3-5 free feeds (abuse.ch, AlienVault OTX, OpenPhish). Import them as lookup
+                tables in your SIEM and create alerts when your logs match known-bad indicators. You'll be amazed what
+                you find.
+            </div>
 
             <h2 id="ioc-types"><i class="fas fa-fingerprint"></i> 2. IOC Types & Categories</h2>
 
