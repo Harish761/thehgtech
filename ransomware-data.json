@@ -1,13 +1,25 @@
 {
-  "last_updated": "2025-12-25T01:45:21.326127",
+  "last_updated": "2025-12-25T12:42:42.571449",
   "period": "Last 7 days",
   "total_groups": 34,
   "total_victims": 300,
   "groups": [
     {
       "name": "Qilin",
-      "count": 85,
+      "count": 87,
       "victims": [
+        {
+          "name": "Lynn Electrical",
+          "date": "2025-12-25 08:33:25.710702",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=bbfa7816-bf35-3077-9ff5-158e535dca49",
+          "discovered_date": "2025-12-25T08:33:25.710702"
+        },
+        {
+          "name": "SEIMITSU THAI COMPANY LIMITED",
+          "date": "2025-12-25 08:32:00.375429",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=db5e6bdf-3dba-3490-8b71-740693a37779",
+          "discovered_date": "2025-12-25T08:32:00.375429"
+        },
         {
           "name": "ARO",
           "date": "2025-12-24 14:04:25.456131",
@@ -55,18 +67,6 @@
           "date": "2025-12-24 05:03:57.472207",
           "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=c7070432-dbb3-3112-aafa-a85db8cc9b9a",
           "discovered_date": "2025-12-24T05:03:57.472207"
-        },
-        {
-          "name": "Shore Gardens Rehabilitation & Nursing Center",
-          "date": "2025-12-24 05:02:00.387123",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=2e49fb4d-c17c-3333-a4fb-cb2a74da80f6",
-          "discovered_date": "2025-12-24T05:02:00.387123"
-        },
-        {
-          "name": "The Sonnenschein Groupe",
-          "date": "2025-12-24 05:00:34.801121",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=819aea74-5552-349b-b935-d863f0265380",
-          "discovered_date": "2025-12-24T05:00:34.801121"
         }
       ],
       "industries": [
@@ -89,10 +89,10 @@
         8,
         9,
         1,
-        32,
+        31,
         0,
         32,
-        0
+        4
       ]
     },
     {
@@ -187,97 +187,6 @@
       ]
     },
     {
-      "name": "Akira",
-      "count": 24,
-      "victims": [
-        {
-          "name": "Steel Dynamics",
-          "date": "2025-12-24 12:12:16.249890",
-          "url": "",
-          "discovered_date": "2025-12-24T12:12:16.249890"
-        },
-        {
-          "name": "Rafael Construction",
-          "date": "2025-12-24 13:15:48.971229",
-          "url": "",
-          "discovered_date": "2025-12-24T13:15:48.971229"
-        },
-        {
-          "name": "J Grennan & Sons",
-          "date": "2025-12-24 13:15:52.591675",
-          "url": "",
-          "discovered_date": "2025-12-24T13:15:52.591675"
-        },
-        {
-          "name": "Building Trades",
-          "date": "2025-12-24 14:17:19.489790",
-          "url": "",
-          "discovered_date": "2025-12-24T14:17:19.489790"
-        },
-        {
-          "name": "Watertech of America, WorldPoint ECC, Mastermedia, Garrett Leather, Guttenberg Industries.",
-          "date": "2025-12-24 15:46:35.617755",
-          "url": "",
-          "discovered_date": "2025-12-24T15:46:35.617755"
-        },
-        {
-          "name": "Trubee Wealth Advisors",
-          "date": "2025-12-24 15:46:39.701366",
-          "url": "",
-          "discovered_date": "2025-12-24T15:46:39.701366"
-        },
-        {
-          "name": "Agralite Electric Cooperative",
-          "date": "2025-12-24 15:46:42.610603",
-          "url": "",
-          "discovered_date": "2025-12-24T15:46:42.610603"
-        },
-        {
-          "name": "Friis & Moltke",
-          "date": "2025-12-22 12:48:24.164944",
-          "url": "",
-          "discovered_date": "2025-12-22T12:48:24.164944"
-        },
-        {
-          "name": "Agralite Electric Cooperative",
-          "date": "2025-12-24T15:46:42+00:00",
-          "url": "https://www.ransomware.live/id/QWdyYWxpdGUgRWxlY3RyaWMgQ29vcGVyYXRpdmVAYWtpcmE=",
-          "discovered_date": "2025-12-24T15:46:42+00:00"
-        },
-        {
-          "name": "Trubee Wealth Advisors",
-          "date": "2025-12-24T15:46:39+00:00",
-          "url": "https://www.ransomware.live/id/VHJ1YmVlIFdlYWx0aCBBZHZpc29yc0Bha2lyYQ==",
-          "discovered_date": "2025-12-24T15:46:39+00:00"
-        }
-      ],
-      "industries": [
-        "Agriculture and Food Production",
-        "Construction",
-        "Energy",
-        "Financial Services",
-        "Manufacturing"
-      ],
-      "countries": [
-        "DK",
-        "GB",
-        "IE",
-        "N/A",
-        "US"
-      ],
-      "trend": "up",
-      "trend_percentage": 15,
-      "daily_counts": [
-        3,
-        0,
-        0,
-        2,
-        0,
-        14,
-        0
-      ]
-    },
-    {
       "name": "Sinobi",
       "count": 24,
       "victims": [
@@ -364,6 +273,97 @@
         9,
         0,
         0,
+        0
+      ]
+    },
+    {
+      "name": "Akira",
+      "count": 22,
+      "victims": [
+        {
+          "name": "Steel Dynamics",
+          "date": "2025-12-24 12:12:16.249890",
+          "url": "",
+          "discovered_date": "2025-12-24T12:12:16.249890"
+        },
+        {
+          "name": "Rafael Construction",
+          "date": "2025-12-24 13:15:48.971229",
+          "url": "",
+          "discovered_date": "2025-12-24T13:15:48.971229"
+        },
+        {
+          "name": "J Grennan & Sons",
+          "date": "2025-12-24 13:15:52.591675",
+          "url": "",
+          "discovered_date": "2025-12-24T13:15:52.591675"
+        },
+        {
+          "name": "Building Trades",
+          "date": "2025-12-24 14:17:19.489790",
+          "url": "",
+          "discovered_date": "2025-12-24T14:17:19.489790"
+        },
+        {
+          "name": "Watertech of America, WorldPoint ECC, Mastermedia, Garrett Leather, Guttenberg Industries.",
+          "date": "2025-12-24 15:46:35.617755",
+          "url": "",
+          "discovered_date": "2025-12-24T15:46:35.617755"
+        },
+        {
+          "name": "Trubee Wealth Advisors",
+          "date": "2025-12-24 15:46:39.701366",
+          "url": "",
+          "discovered_date": "2025-12-24T15:46:39.701366"
+        },
+        {
+          "name": "Agralite Electric Cooperative",
+          "date": "2025-12-24 15:46:42.610603",
+          "url": "",
+          "discovered_date": "2025-12-24T15:46:42.610603"
+        },
+        {
+          "name": "Friis & Moltke",
+          "date": "2025-12-22 12:48:24.164944",
+          "url": "",
+          "discovered_date": "2025-12-22T12:48:24.164944"
+        },
+        {
+          "name": "Agralite Electric Cooperative",
+          "date": "2025-12-24T15:46:42+00:00",
+          "url": "https://www.ransomware.live/id/QWdyYWxpdGUgRWxlY3RyaWMgQ29vcGVyYXRpdmVAYWtpcmE=",
+          "discovered_date": "2025-12-24T15:46:42+00:00"
+        },
+        {
+          "name": "Trubee Wealth Advisors",
+          "date": "2025-12-24T15:46:39+00:00",
+          "url": "https://www.ransomware.live/id/VHJ1YmVlIFdlYWx0aCBBZHZpc29yc0Bha2lyYQ==",
+          "discovered_date": "2025-12-24T15:46:39+00:00"
+        }
+      ],
+      "industries": [
+        "Agriculture and Food Production",
+        "Construction",
+        "Energy",
+        "Financial Services",
+        "Manufacturing"
+      ],
+      "countries": [
+        "DK",
+        "GB",
+        "IE",
+        "N/A",
+        "US"
+      ],
+      "trend": "up",
+      "trend_percentage": 15,
+      "daily_counts": [
+        3,
+        0,
+        0,
+        2,
+        0,
+        14,
         0
       ]
     },
@@ -1476,41 +1476,6 @@
       ]
     },
     {
-      "name": "Benzona",
-      "count": 2,
-      "victims": [
-        {
-          "name": "taminsho.com",
-          "date": "2025-12-22 07:41:54.995816",
-          "url": "",
-          "discovered_date": "2025-12-22T07:41:54.995816"
-        },
-        {
-          "name": "taminsho.com",
-          "date": "2025-12-22T07:41:54+00:00",
-          "url": "https://www.ransomware.live/id/dGFtaW5zaG8uY29tQGJlbnpvbmE=",
-          "discovered_date": "2025-12-22T07:41:54+00:00"
-        }
-      ],
-      "industries": [
-        "Not Found"
-      ],
-      "countries": [
-        "IR"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        2,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Securotrop",
       "count": 2,
       "victims": [
@@ -1616,6 +1581,41 @@
       ]
     },
     {
+      "name": "Termite",
+      "count": 2,
+      "victims": [
+        {
+          "name": "Hermes Medical Solutions",
+          "date": "2025-12-25 01:40:47.613830",
+          "url": "http://termiteuslbumdge2zmfmfcsrvmvsfe4gvyudc5j6cdnisnhtftvokid.onion/post/694c8118feb604ea6ee55c75",
+          "discovered_date": "2025-12-25T01:40:47.613830"
+        },
+        {
+          "name": "Hermes Medical Solutions",
+          "date": "2025-12-25T01:40:47+00:00",
+          "url": "https://www.ransomware.live/id/SGVybWVzIE1lZGljYWwgU29sdXRpb25zQHRlcm1pdGU=",
+          "discovered_date": "2025-12-25T01:40:47+00:00"
+        }
+      ],
+      "industries": [
+        "Healthcare"
+      ],
+      "countries": [
+        "SE"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ]
+    },
+    {
       "name": "Play",
       "count": 2,
       "victims": [
@@ -1716,21 +1716,19 @@
       ]
     },
     {
-      "name": "Termite",
+      "name": "Benzona",
       "count": 1,
       "victims": [
         {
-          "name": "Hermes Medical Solutions",
-          "date": "2025-12-25 01:40:47.613830",
-          "url": "http://termiteuslbumdge2zmfmfcsrvmvsfe4gvyudc5j6cdnisnhtftvokid.onion/post/694c8118feb604ea6ee55c75",
-          "discovered_date": "2025-12-25T01:40:47.613830"
+          "name": "taminsho.com",
+          "date": "2025-12-22T07:41:54+00:00",
+          "url": "https://www.ransomware.live/id/dGFtaW5zaG8uY29tQGJlbnpvbmE=",
+          "discovered_date": "2025-12-22T07:41:54+00:00"
         }
       ],
-      "industries": [
-        "Healthcare"
-      ],
+      "industries": [],
       "countries": [
-        "SE"
+        "IR"
       ],
       "trend": "down",
       "trend_percentage": -5,
@@ -1738,10 +1736,10 @@
         0,
         0,
         0,
+        1,
         0,
         0,
-        0,
-        1
+        0
       ]
     },
     {
