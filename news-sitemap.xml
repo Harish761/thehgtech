@@ -5,6 +5,33 @@
   <!-- ========== LATEST NEWS ARTICLES (Last 48 hours for Google News) ========== -->
   
   <url>
+    <loc>https://thehgtech.com/articles/romania-water-ransomware-bitlocker-2025.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-25T00:00:00+05:30</news:publication_date>
+      <news:title>Romania Water Authority Ransomware Attack: 1,000 Systems Encrypted Using BitLocker</news:title>
+      <news:keywords>Romania, ANAR, ransomware, BitLocker, critical infrastructure, water utilities, LOTL</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/n8n-rce-vulnerability-cve-2025-68613.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-25T00:00:00+05:30</news:publication_date>
+      <news:title>n8n RCE Vulnerability CVE-2025-68613: Why Automation Platforms Are Your Biggest Blind Spot</news:title>
+      <news:keywords>n8n, CVE-2025-68613, RCE, automation, shadow IT, workflow automation, vulnerability</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+
     <loc>https://thehgtech.com/articles/nissan-redhat-breach-2025.html</loc>
     <news:news>
       <news:publication>

