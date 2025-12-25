@@ -1,6 +1,24 @@
 {
   "articles": [
     {
+      "id": "article-operation-pcpcat-2025",
+      "title": "Operation PCPcat: 59,000 Next.js Servers Hacked in 48 Hours",
+      "date": "December 25, 2025",
+      "category": "Mass Exploitation",
+      "badge": "BREAKING",
+      "excerpt": "Massive credential-theft campaign compromised 59,128 Next.js servers in 48 hours. 64.6% success rate. Your frontend framework is now the attack surface.",
+      "image": "images/articles/operation-pcpcat-2025.png",
+      "tags": [
+        "Next.js",
+        "React",
+        "PCPcat",
+        "CVE",
+        "Credential Theft"
+      ],
+      "author": "TheHGTech",
+      "externalUrl": "articles/operation-pcpcat-nextjs-hack-2025.html"
+    },
+    {
       "id": "article-romania-water-ransomware-2025",
       "title": "Romania Water Authority Ransomware Attack: 1,000 Systems Encrypted Using BitLocker",
       "date": "December 25, 2025",
