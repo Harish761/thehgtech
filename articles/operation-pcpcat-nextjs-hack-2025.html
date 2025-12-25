@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operation PCPcat: 59,000 Next.js Servers Hacked in 48 Hours - Why Your "Frontend" Is Now the Attack Surface |
+        TheHGTech</title>
+    <meta name="description"
+        content="Operation PCPcat compromised 59,128 Next.js/React servers in 48 hours exploiting CVE-2025-29927 and CVE-2025-66478. Analysis of why modern frontend frameworks are the new backend vulnerability.">
+    <meta name="keywords"
+        content="Operation PCPcat, Next.js, React, CVE-2025-29927, CVE-2025-66478, react.py, credential theft, server-side rendering, SSR vulnerability">
+    <link rel="canonical" href="https://thehgtech.com/articles/operation-pcpcat-nextjs-hack-2025.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Operation PCPcat: 59,000 Next.js Servers Hacked in 48 Hours">
+    <meta property="og:description"
+        content="Massive credential-theft campaign exploits Next.js vulnerabilities. Your frontend framework is now the attack surface.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/articles/operation-pcpcat-nextjs-hack-2025.html">
+    <meta property="og:image" content="https://thehgtech.com/images/articles/operation-pcpcat-2025.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Operation PCPcat: 59K Next.js Servers Compromised">
+    <meta name="twitter:description"
+        content="64.6% success rate. AWS keys, Docker tokens, SSH credentials stolen. Your React app is the new perimeter.">
+
+    <!-- Article Meta -->
+    <meta property="article:published_time" content="2025-12-25T00:00:00Z">
+    <meta property="article:author" content="TheHGTech">
+    <meta property="article:section" content="Cybersecurity">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": "Operation PCPcat: 59,000 Next.js Servers Hacked in 48 Hours - Why Your Frontend Is Now the Attack Surface",
+      "description": "Analysis of the massive PCPcat campaign that compromised 59,128 Next.js servers in under 48 hours, exploiting CVE-2025-29927 and CVE-2025-66478.",
+      "author": {
+        "@type": "Organization",
+        "name": "TheHGTech"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TheHGTech",
+        "url": "https://thehgtech.com"
+      },
+      "datePublished": "2025-12-25",
+      "dateModified": "2025-12-25",
+      "mainEntityOfPage": "https://thehgtech.com/articles/operation-pcpcat-nextjs-hack-2025.html"
+    }
+    </script>
+
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF4C4C;
+            --accent-purple: #9D4EDD;
+            --accent-orange: #FF9500;
+            --accent-green: #10b981;
+            --accent-blue: #3b82f6;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        .article-container {
+            max-width: 800px;
+            margin: 80px auto 0;
+            padding: 2rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-cyan);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: var(--text-primary);
+        }
+
+        .article-header {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .article-category {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .article-excerpt {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .article-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .featured-image {
+            width: 100%;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border: 1px solid var(--border);
+        }
+
+        h2 {
+            color: var(--accent-cyan);
+            margin: 2.5rem 0 1rem;
+            font-size: 1.6rem;
+        }
+
+        h3 {
+            color: var(--text-primary);
+            margin: 1.5rem 0 1rem;
+            font-size: 1.3rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        .info-box {
+            background: rgba(0, 217, 255, 0.05);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .warning-box {
+            background: rgba(255, 76, 76, 0.1);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .success-box {
+            background: rgba(16, 185, 129, 0.1);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .blue-box {
+            background: rgba(59, 130, 246, 0.1);
+            border-left: 4px solid var(--accent-blue);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: rgba(0, 217, 255, 0.1);
+            color: var(--accent-cyan);
+            font-weight: 600;
+        }
+
+        td {
+            color: var(--text-secondary);
+        }
+
+        .timeline {
+            border-left: 3px solid var(--accent-cyan);
+            padding-left: 2rem;
+            margin: 2rem 0;
+        }
+
+        .timeline-item {
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2.35rem;
+            top: 0.5rem;
+            width: 12px;
+            height: 12px;
+            background: var(--accent-cyan);
+            border-radius: 50%;
+        }
+
+        .timeline-date {
+            color: var(--accent-cyan);
+            font-weight: 600;
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .timeline-event {
+            color: var(--text-secondary);
+        }
+
+        ul,
+        ol {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        blockquote {
+            border-left: 4px solid var(--accent-blue);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+
+        blockquote cite {
+            display: block;
+            margin-top: 0.5rem;
+            color: var(--accent-blue);
+            font-style: normal;
+            font-weight: 600;
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent-cyan);
+            display: block;
+        }
+
+        .stat-label {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .cve-card {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(0, 217, 255, 0.1));
+            border: 1px solid var(--accent-blue);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .cve-id {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--accent-blue);
+        }
+
+        .cvss-score {
+            display: inline-block;
+            background: var(--accent-red);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 6px;
+            font-weight: 700;
+            margin-left: 1rem;
+        }
+
+        code {
+            background: rgba(0, 217, 255, 0.1);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Fira Code', monospace;
+            color: var(--accent-cyan);
+        }
+
+        pre {
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+        }
+
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 3rem 2rem;
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        footer p {
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .article-container {
+                padding: 1rem;
+                margin-top: 60px;
+            }
+
+            .article-meta {
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+        }
+    </style>
+
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <script src="/m-app.js?v=4.3" defer></script>
+</head>
+
+<body>
+    <!-- Mobile Header -->
+    <header class="m-header m-only">
+        <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark"
+                style="height: 28px; width: auto; margin: 0;">
+            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light"
+                style="height: 28px; width: auto; margin: 0;">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+        </div>
+        <div class="m-header__actions">
+            <button class="m-theme-toggle" onclick="mToggleTheme()" aria-label="Toggle Theme">
+                <span class="m-theme-toggle__thumb"></span>
+                <span class="m-theme-toggle__stars"><span class="m-theme-toggle__star"></span><span
+                        class="m-theme-toggle__star"></span></span>
+            </button>
+            <button class="m-header__btn m-header__btn--search" data-action="search" aria-label="Search"><i
+                    class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <!-- Bottom Navigation -->
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item"><i class="fas fa-bug"></i><span>CVE</span></a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item"><i class="fas fa-shield-alt"></i><span>Intel</span></a>
+        <a href="/articles.html" class="m-bottom-nav__item active"><i
+                class="fas fa-newspaper"></i><span>Articles</span></a>
+        <a href="/guides/" class="m-bottom-nav__item"><i class="fas fa-book"></i><span>Guides</span></a>
+    </nav>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <a href="../index.html"
+                    style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="../logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="../logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+            <nav class="nav" role="navigation">
+                <a href="../index.html#news">News</a>
+                <a href="../threat-intel.html">Threat Intelligence <span class="live-badge">LIVE</span></a>
+                <a href="../cve-tracker.html">CVE</a>
+                <a href="../guides/">Guides</a>
+                <a href="../comparisons/">Tool Comparisons</a>
+                <a href="../articles.html">Articles</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="article-container">
+        <a href="/articles.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Articles</a>
+
+        <article>
+            <header class="article-header">
+                <div class="article-category"><i class="fas fa-cat"></i> Mass Exploitation Campaign</div>
+                <h1>Operation PCPcat: 59,000 Next.js Servers Hacked in 48 Hours</h1>
+                <p class="article-excerpt">A massive credential-theft campaign dubbed "PCPcat" compromised 59,128
+                    Next.js and React servers in under 48 hours. But the real lesson isn't about patching—it's about why
+                    your "frontend" framework is now the most dangerous part of your infrastructure.</p>
+                <div class="article-meta">
+                    <span><i class="far fa-calendar-alt"></i> Attack: December 2025</span>
+                    <span><i class="fas fa-clock"></i> Published: Dec 25, 2025</span>
+                    <span><i class="fas fa-book-open"></i> 18 min read</span>
+                </div>
+            </header>
+
+            <img src="/images/articles/operation-pcpcat-2025.png" alt="Operation PCPcat Next.js React Hack"
+                class="featured-image">
+
+            <div class="warning-box">
+                <strong><i class="fas fa-exclamation-triangle"></i> URGENT - Mass Exploitation:</strong> Operation
+                PCPcat achieved a 64.6% success rate across 91,505 scanned targets. If you run Next.js or React with
+                server-side rendering (SSR), assume you were scanned. Check for CVE-2025-29927 and CVE-2025-66478
+                immediately.
+            </div>
+
+            <h2><i class="fas fa-lightbulb"></i> The Uncomfortable Truth About "Frontend" Frameworks</h2>
+
+            <p>Let me start with a controversial statement: <strong>Next.js and React are not frontend frameworks
+                    anymore.</strong> They haven't been for years. And this fundamental misunderstanding is why 59,128
+                servers just got pwned in 48 hours.</p>
+
+            <p>When developers think "React," they think browser. They think client-side rendering. They think "it's
+                just JavaScript in the browser, what's the risk?" But modern React with Next.js is a full-stack Node.js
+                server that:</p>
+
+            <ul>
+                <li>Executes code on the server before sending HTML to the browser</li>
+                <li>Has direct access to environment variables containing production secrets</li>
+                <li>Can read and write to databases, APIs, and cloud infrastructure</li>
+                <li>Often runs with the same privileges as your backend services</li>
+            </ul>
+
+            <p>Operation PCPcat didn't hack "websites." It hacked <strong>servers</strong>. And those servers had the
+                keys to everything.</p>
+
+            <div class="blue-box">
+                <strong><i class="fas fa-brain"></i> The Mental Model Problem:</strong> Security teams often treat
+                Next.js deployments as "frontend" and apply weaker controls. Developers create `.env` files with
+                production AWS keys because "it's just for the build." This cognitive gap between "React = browser" and
+                "Next.js = server" is exactly what attackers exploit.
+            </div>
+
+            <h2><i class="fas fa-file-alt"></i> What Is Operation PCPcat?</h2>
+
+            <p>Operation PCPcat is a large-scale, automated credential-theft campaign that targeted Next.js and React
+                applications with server-side rendering capabilities. The campaign was named after the distinct
+                cat-themed motifs found in the attack infrastructure.</p>
+
+            <div class="stat-grid">
+                <div class="stat-card">
+                    <span class="stat-value">59,128</span>
+                    <span class="stat-label">Servers Compromised</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">48 hrs</span>
+                    <span class="stat-label">Attack Duration</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">64.6%</span>
+                    <span class="stat-label">Success Rate</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">91,505</span>
+                    <span class="stat-label">Targets Scanned</span>
+                </div>
+            </div>
+
+            <h3>The Attack Chain</h3>
+
+            <p>The PCPcat operation leveraged two critical vulnerabilities in combination:</p>
+
+            <div class="cve-card">
+                <div class="cve-id">CVE-2025-29927 <span class="cvss-score">Critical</span></div>
+                <p style="margin-top: 1rem; margin-bottom: 0;">Next.js middleware authorization bypass allowing
+                    attackers to access protected routes and server-side functions without authentication.</p>
+            </div>
+
+            <div class="cve-card">
+                <div class="cve-id">CVE-2025-66478 <span class="cvss-score">Critical</span></div>
+                <p style="margin-top: 1rem; margin-bottom: 0;">Prototype pollution vulnerability in JSON payload
+                    processing enabling remote code execution via <code>child_process.execSync()</code>.</p>
+            </div>
+
+            <h3>How It Worked</h3>
+
+            <ol>
+                <li><strong>Mass Scanning:</strong> Attackers used automated scanners to identify public Next.js
+                    deployments across the internet</li>
+                <li><strong>Fingerprinting:</strong> Applications were fingerprinted to identify vulnerable versions
+                </li>
+                <li><strong>Malware Delivery:</strong> The <code>react.py</code> malware was distributed to compromised
+                    hosts</li>
+                <li><strong>Prototype Pollution:</strong> Malicious JSON payloads exploited CVE-2025-66478 to achieve
+                    code execution</li>
+                <li><strong>RCE Confirmation:</strong> Attackers confirmed RCE with an <code>id</code> command test</li>
+                <li><strong>Credential Harvesting:</strong> Systematic extraction of secrets from compromised servers
+                </li>
+            </ol>
+
+            <h3>What Was Stolen</h3>
+
+            <p>The attackers systematically exfiltrated high-value credentials from every compromised server:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Target</th>
+                        <th>Location</th>
+                        <th>Impact</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>.env files</td>
+                        <td>Project root, /app, /src</td>
+                        <td>Database credentials, API keys, secrets</td>
+                    </tr>
+                    <tr>
+                        <td>SSH Keys</td>
+                        <td>~/.ssh/</td>
+                        <td>Lateral movement to other servers</td>
+                    </tr>
+                    <tr>
+                        <td>AWS Configs</td>
+                        <td>~/.aws/credentials</td>
+                        <td>Full cloud infrastructure access</td>
+                    </tr>
+                    <tr>
+                        <td>Docker Tokens</td>
+                        <td>~/.docker/config.json</td>
+                        <td>Container registry access, supply chain risk</td>
+                    </tr>
+                    <tr>
+                        <td>Git Credentials</td>
+                        <td>~/.git-credentials, .gitconfig</td>
+                        <td>Source code access, supply chain attacks</td>
+                    </tr>
+                    <tr>
+                        <td>Bash History</td>
+                        <td>~/.bash_history</td>
+                        <td>Reconnaissance, additional secrets in commands</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2><i class="fas fa-code"></i> Technical Deep Dive: The react.py Malware</h2>
+
+            <p>The <code>react.py</code> malware distributed during Operation PCPcat is a Python-based credential
+                harvester designed specifically for server-side JavaScript environments. Key characteristics include:
+            </p>
+
+            <h3>Prototype Pollution Exploit</h3>
+
+            <pre><code>// Malicious JSON payload structure
+{
+  "__proto__": {
+    "shell": "/bin/sh",
+    "env": {
+      "NODE_OPTIONS": "--require /tmp/malicious.js"
+    }
+  },
+  "constructor": {
+    "prototype": {
+      "execSync": "function(cmd) { ... }"
+    }
+  }
+}</code></pre>
+
+            <p>The attack leverages JavaScript's prototype chain to inject malicious properties that are later accessed
+                by the application, ultimately leading to command execution.</p>
+
+            <h3>Credential Extraction Script</h3>
+
+            <pre><code># Simplified react.py credential harvesting logic
+import os
+import subprocess
+
+targets = [
+    '.env', '.env.local', '.env.production',
+    os.path.expanduser('~/.ssh/id_rsa'),
+    os.path.expanduser('~/.aws/credentials'),
+    os.path.expanduser('~/.docker/config.json'),
+    os.path.expanduser('~/.git-credentials'),
+    os.path.expanduser('~/.bash_history')
+]
+
+for target in targets:
+    if os.path.exists(target):
+        with open(target, 'r') as f:
+            exfiltrate(f.read())</code></pre>
+
+            <h2><i class="fas fa-road"></i> Why This Keeps Happening: The Framework Blindspot</h2>
+
+            <h3>1. The "Frontend" Security Gap</h3>
+
+            <p>Most organizations apply different security standards to "frontend" vs "backend" systems. Next.js
+                applications often:</p>
+
+            <ul>
+                <li>Don't receive the same security audits as traditional backends</li>
+                <li>Are deployed by frontend developers unfamiliar with server security</li>
+                <li>Run in shared or less-secured infrastructure</li>
+                <li>Have lax secret management because "it's just the frontend"</li>
+            </ul>
+
+            <h3>2. The .env Credential Dump Problem</h3>
+
+            <p>Next.js applications commonly store production secrets in <code>.env</code> files for convenience:</p>
+
+            <pre><code># Typical .env file in compromised Next.js apps
+DATABASE_URL=postgresql://prod-user:SuperSecret123@prod-db.internal:5432/main
+AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
+AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+STRIPE_SECRET_KEY=sk_live_51...
+GITHUB_TOKEN=ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+SLACK_WEBHOOK_URL=https://hooks.slack.com/services/...</code></pre>
+
+            <p>When attackers achieve RCE, this single file provides access to:</p>
+            <ul>
+                <li>Production databases</li>
+                <li>Cloud infrastructure (AWS, GCP, Azure)</li>
+                <li>Payment processing (Stripe, etc.)</li>
+                <li>Internal communications (Slack)</li>
+                <li>Source code repositories (GitHub/GitLab tokens)</li>
+            </ul>
+
+            <h3>3. The "Build vs Runtime" Confusion</h3>
+
+            <p>Developers often don't understand the difference between build-time and runtime environment variables in
+                Next.js. Secrets meant only for builds end up accessible at runtime, expanding the attack surface.</p>
+
+            <blockquote>
+                "We put the AWS keys in .env.local because we thought they were only used during deployment. We didn't
+                realize the running server could access them too."
+                <cite>— Anonymous victim organization</cite>
+            </blockquote>
+
+            <h2><i class="fas fa-history"></i> Timeline of Operation PCPcat</h2>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="timeline-date">December 2025 - Day 0</span>
+                    <span class="timeline-event">Attackers begin mass internet scanning for Next.js deployments.
+                        Fingerprinting begins to identify vulnerable versions.</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">Day 0 + 12 Hours</span>
+                    <span class="timeline-event">First wave of exploitation begins. CVE-2025-29927 used to bypass
+                        authentication on targeted applications.</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">Day 0 + 18 Hours</span>
+                    <span class="timeline-event">react.py malware distributed to compromised hosts. Prototype pollution
+                        exploits (CVE-2025-66478) achieve RCE.</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">Day 0 + 24 Hours</span>
+                    <span class="timeline-event">Over 30,000 servers compromised. Credential exfiltration at scale
+                        begins.</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">Day 0 + 48 Hours</span>
+                    <span class="timeline-event">Campaign reaches peak. 59,128 servers compromised out of 91,505 scanned
+                        (64.6% success rate).</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">December 2025</span>
+                    <span class="timeline-event">Security researchers identify campaign. Public disclosure begins.
+                        Organizations scramble to assess exposure.</span>
+                </div>
+            </div>
+
+            <h2><i class="fas fa-shield-alt"></i> Immediate Response Actions</h2>
+
+            <div class="success-box">
+                <strong><i class="fas fa-check-circle"></i> If You Run Next.js or React SSR:</strong>
+                <ol style="margin-top: 1rem; margin-bottom: 0;">
+                    <li><strong>Patch Immediately:</strong> Update Next.js to the latest patched version</li>
+                    <li><strong>Assume Compromise:</strong> If you were running vulnerable versions, assume credentials
+                        were stolen</li>
+                    <li><strong>Rotate ALL Secrets:</strong> Every credential in your .env files must be rotated</li>
+                    <li><strong>Review AWS Activity:</strong> Check CloudTrail for unauthorized access using stolen keys
+                    </li>
+                    <li><strong>Check SSH Keys:</strong> Audit authorized_keys on all connected servers</li>
+                    <li><strong>Review Git History:</strong> Look for unauthorized commits or repository access</li>
+                </ol>
+            </div>
+
+            <h3>Checking Your Exposure</h3>
+
+            <pre><code># Check Next.js version
+cat package.json | grep next
+
+# Search for sensitive files that may have been accessed
+find /var/log -name "*.log" -exec grep -l "\.env\|\.ssh\|\.aws" {} \;
+
+# Check for react.py or similar artifacts
+find /tmp -name "*.py" -mtime -7 -ls</code></pre>
+
+            <h3>Secret Rotation Checklist</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Secret Type</th>
+                        <th>Location</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Database passwords</td>
+                        <td>.env, .env.local</td>
+                        <td>Rotate in DB, update .env</td>
+                    </tr>
+                    <tr>
+                        <td>AWS Access Keys</td>
+                        <td>.env, ~/.aws/credentials</td>
+                        <td>Deactivate in IAM, create new keys</td>
+                    </tr>
+                    <tr>
+                        <td>API Keys</td>
+                        <td>.env</td>
+                        <td>Regenerate in each service dashboard</td>
+                    </tr>
+                    <tr>
+                        <td>SSH Keys</td>
+                        <td>~/.ssh/</td>
+                        <td>Generate new keypairs, remove old from authorized_keys</td>
+                    </tr>
+                    <tr>
+                        <td>GitHub/GitLab Tokens</td>
+                        <td>.env, ~/.git-credentials</td>
+                        <td>Revoke in developer settings, create new PATs</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2><i class="fas fa-search"></i> Indicators of Compromise (IoCs)</h2>
+
+            <h3>Files to Look For</h3>
+            <ul>
+                <li><code>/tmp/react.py</code> or variations</li>
+                <li>Unexplained Python scripts in temp directories</li>
+                <li>Modified <code>.bashrc</code> or <code>.profile</code> files</li>
+                <li>New cron jobs or scheduled tasks</li>
+            </ul>
+
+            <h3>Network Indicators</h3>
+            <ul>
+                <li>Outbound connections to unfamiliar IPs on ports 443, 8443, 9999</li>
+                <li>Large data transfers (credential dumps)</li>
+                <li>C2 beaconing patterns</li>
+            </ul>
+
+            <h3>SIEM Detection Query (Splunk)</h3>
+            <pre><code>index=web sourcetype=access_* 
+| search (uri_path="*__proto__*" OR uri_path="*constructor*" OR uri_path="*.env*")
+| stats count by src_ip, uri_path, status
+| where count > 10</code></pre>
+
+            <h2><i class="fas fa-lock"></i> Long-Term Security Recommendations</h2>
+
+            <h3>1. Treat Next.js Like a Backend</h3>
+            <p>Apply the same security controls you would to any Node.js server:</p>
+            <ul>
+                <li>Regular security audits and penetration testing</li>
+                <li>Hardened container images</li>
+                <li>Network segmentation</li>
+                <li>Runtime application self-protection (RASP)</li>
+            </ul>
+
+            <h3>2. Migrate Away from .env Files</h3>
+            <p>Use proper secret management solutions:</p>
+            <ul>
+                <li><strong>AWS Secrets Manager</strong> or <strong>HashiCorp Vault</strong></li>
+                <li><strong>Environment-specific injection</strong> rather than file-based storage</li>
+                <li><strong>Runtime secret fetching</strong> instead of build-time embedding</li>
+            </ul>
+
+            <h3>3. Implement Least Privilege</h3>
+            <p>Your Next.js application probably doesn't need:</p>
+            <ul>
+                <li>Full AWS admin access</li>
+                <li>Write access to production databases</li>
+                <li>SSH keys to other infrastructure</li>
+            </ul>
+
+            <h3>4. Monitor for Framework Vulnerabilities</h3>
+            <p>Subscribe to security advisories for:</p>
+            <ul>
+                <li>Next.js: <a href="https://github.com/vercel/next.js/security/advisories"
+                        style="color: var(--accent-cyan);">GitHub Security Advisories</a></li>
+                <li>React: Official security announcements</li>
+                <li>Node.js: Node.js Security Working Group</li>
+            </ul>
+
+            <h2><i class="fas fa-book"></i> Related Security Guides</h2>
+            <p>For more information on securing modern web applications:</p>
+            <ul>
+                <li><a href="/guides/api-security-best-practices.html" style="color: var(--accent-cyan);">API Security
+                        Best Practices</a></li>
+                <li><a href="/guides/container-security.html" style="color: var(--accent-cyan);">Container Security
+                        Guide</a></li>
+                <li><a href="/guides/threat-hunting-techniques.html" style="color: var(--accent-cyan);">Threat Hunting
+                        Techniques</a></li>
+            </ul>
+
+            <h2><i class="fas fa-check-square"></i> Key Takeaways</h2>
+            <div class="info-box">
+                <strong><i class="fas fa-key"></i> Summary:</strong>
+                <ul style="margin-top: 1rem; margin-bottom: 0;">
+                    <li><strong>59,128 Next.js servers</strong> compromised in under 48 hours with a 64.6% success rate
+                    </li>
+                    <li>Attackers exploited <strong>CVE-2025-29927</strong> (auth bypass) and
+                        <strong>CVE-2025-66478</strong> (prototype pollution RCE)</li>
+                    <li>The <code>react.py</code> malware systematically harvested .env files, AWS keys, SSH keys, and
+                        Git credentials</li>
+                    <li><strong>Your "frontend" is a full backend server</strong>—treat it with the same security rigor
+                    </li>
+                    <li>Stop storing production secrets in .env files—use proper secret management</li>
+                    <li>If you ran a vulnerable version, <strong>assume compromise and rotate all credentials
+                            immediately</strong></li>
+                </ul>
+            </div>
+
+            <div class="article-footer"
+                style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);">
+                <p><strong>Author:</strong> TheHGTech Security Team</p>
+                <p><strong>Published:</strong> December 25, 2025</p>
+                <p><strong>Last Updated:</strong> December 25, 2025</p>
+
+                <div class="related-articles" style="margin-top: 2rem;">
+                    <h3>Related Articles</h3>
+                    <ul>
+                        <li><a href="n8n-rce-vulnerability-cve-2025-68613.html" style="color: var(--accent-cyan);">n8n
+                                RCE Vulnerability: When Automation Platforms Become Attack Vectors</a></li>
+                        <li><a href="/guides/api-security-best-practices.html" style="color: var(--accent-cyan);">API
+                                Security Best Practices Guide</a></li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <!-- Interaction Bar -->
+        <div class="interaction-bar">
+            <div class="like-section">
+                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                    <i class="far fa-heart"></i> <span id="likeText">Like this article</span>
+                </button>
+            </div>
+            <div class="action-buttons">
+                <div class="share-buttons">
+                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <button onclick="copyLink()" class="share-btn" title="Copy Link">
+                        <i class="fas fa-link"></i>
+                    </button>
+                </div>
+                <div class="button-separator"></div>
+                <button onclick="window.print()" class="print-btn" title="Print Article">
+                    <i class="fas fa-print"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TheHGTech. All rights reserved.</p>
+    </footer>
+
+    <script src="/header.js"></script>
+    <script src="/interaction-bar.js?v=20251207-0041"></script>
+    <script src="/command-palette.js" defer></script>
+    <script src="/theme-toggle.js" defer></script>
+</body>
+
+</html>
