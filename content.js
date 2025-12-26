@@ -5,52 +5,52 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Dec 25 2025",
-            "title": "LastPass Breach Fuels Years-Long Cryptocurrency Thefts",
-            "content": "The 2022 LastPass data breach continues to have severe repercussions, as TRM Labs reports that stolen encrypted vault backups are being exploited to drain cryptocurrency assets. Attackers have leveraged weak master passwords to crack these vaults, with thefts occurring as recently as late 2025. This breach highlights the critical importance of strong password practices and secure storage of sensitive data. Affected users may face significant financial losses as a result of these ongoing attacks. Security experts recommend users update their master passwords and enable two-factor authentication where possible to mitigate risks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/12/lastpass-2022-breach-led-to-years-long.html"
+            "title": "ChatGPT Gains New UI with Formatting Blocks to Enhance Task Execution",
+            "content": "OpenAI has introduced &#x27;formatting blocks&#x27; to ChatGPT, altering its user interface to better align with specific task requirements. This update aims to improve user interaction by providing a more intuitive layout that mirrors the task being performed. The enhancement is part of OpenAI&#x27;s ongoing efforts to make AI tools more user-friendly and task-oriented. The new UI design is expected to aid users in navigating complex tasks more efficiently, potentially increasing productivity. Users can expect a more streamlined experience as the AI adapts its presentation to the task at hand, making it a more versatile tool for various applications.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/chatgpts-new-formatting-blocks-make-its-ui-look-more-like-a-task-tool/"
         },
         {
             "date": "Dec 25 2025",
-            "title": "Active Exploitation of FortiOS VPN Vulnerability Detected",
-            "content": "Fortinet has issued a warning about the active exploitation of a five-year-old vulnerability, CVE-2020-12812, in its FortiOS SSL VPN. This improper authentication flaw, with a CVSS score of 5.2, allows attackers to bypass two-factor authentication under certain configurations. The vulnerability primarily affects organizations using outdated configurations of FortiOS SSL VPN. Fortinet advises users to update their systems to the latest version and review their VPN configurations to ensure they are not susceptible to this exploit. This incident underscores the necessity of regular security audits and timely patch management.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/12/fortinet-warns-of-active-exploitation.html"
+            "title": "Google Introduces Option to Change @gmail.com Addresses",
+            "content": "Google has announced a new feature allowing users to change their @gmail.com addresses or create new aliases. This change, outlined in a recent support document, marks a significant shift in Google&#x27;s email management policy. The update provides users with greater flexibility in managing their digital identity, catering to those who require a change due to personal or professional reasons. This move could enhance user satisfaction by allowing for more personalized email addresses. Google has not yet specified the rollout timeline, but users should monitor their accounts for updates on this feature.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/google/google-will-finally-allow-you-to-change-your-gmailcom-address/"
         },
         {
             "date": "Dec 25 2025",
-            "title": "CISA Alerts to Exploited Digiever NVR Flaw",
-            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a critical vulnerability in Digiever DS-2105 Pro network video recorders (NVRs) to its Known Exploited Vulnerabilities catalog. The flaw, identified as CVE-2023-52163, allows for remote code execution and has been actively exploited, posing significant risks to affected systems. Organizations using these NVRs are urged to apply available patches immediately to protect against potential intrusions. This alert highlights the ongoing threat landscape where attackers target unpatched systems to gain unauthorized access.",
+            "title": "ThreatsDay Bulletin Highlights Increasing Sophistication of Cyber Threats",
+            "content": "The latest ThreatsDay Bulletin reveals a growing trend of cyber attackers blending into everyday tech environments, making it harder to distinguish between legitimate and malicious activities. The report covers a range of threats, including stealth loaders, AI chatbot vulnerabilities, and Docker exploits. This evolution in cyber tactics underscores the need for enhanced vigilance and updated security measures. Organizations must stay informed about these developments to protect their systems from increasingly sophisticated attacks. As threat actors continue to exploit trusted tools and applications, cybersecurity strategies must adapt to this changing landscape.",
             "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/12/cisa-flags-actively-exploited-digiever.html"
-        },
-        {
-            "date": "Dec 25 2025",
-            "title": "CERN&#x27;s Approach to Risk Management",
-            "content": "The European Organization for Nuclear Research, CERN, continues to set a benchmark in risk management for large research institutions. Established in 1954, CERN operates from Meyrin, Switzerland, and is renowned for its advanced scientific research. The organization employs a comprehensive risk management framework to safeguard its operations and data. This framework involves continuous monitoring, threat assessment, and strategic planning to mitigate potential risks. As cyber threats evolve, CERN&#x27;s proactive approach serves as a model for other institutions aiming to protect their critical assets and information.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4109133/cern-how-does-an-international-research-institution-manage-risk.html"
+            "sourceUrl": "https://thehackernews.com/2025/12/threatsday-bulletin-stealth-loaders-ai.html"
         },
         {
             "date": "Dec 24 2025",
-            "title": "Surge in Nomani Scam Leveraging AI Deepfake Ads",
-            "content": "The Nomani investment scam has surged by 62% as fraudsters employ AI-generated deepfake ads across multiple social media platforms, according to ESET. Initially proliferating on Facebook, the scam has now expanded to YouTube, exploiting the reach of these platforms to deceive more victims. ESET reports blocking over 64,000 attempts, highlighting the scale of this operation. The use of deepfake technology in scams is a growing concern, emphasizing the need for heightened vigilance and verification of online content. Users are advised to be cautious of unsolicited investment opportunities and verify the authenticity of advertisements.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/12/nomani-investment-scam-surges-62-using.html"
+            "title": "OpenAI Tests New &quot;Skills&quot; Feature for ChatGPT",
+            "content": "OpenAI is reportedly experimenting with a new feature called &quot;Skills&quot; for ChatGPT, designed to enhance its functionality by allowing it to perform specific tasks more effectively. This feature is reminiscent of Claude&#x27;s Skills, suggesting a trend towards more specialized AI capabilities. By enabling ChatGPT to execute distinct functions, OpenAI aims to increase its utility across various domains. The testing phase will determine how these Skills can be integrated into broader applications, potentially making ChatGPT a more powerful tool for professionals. Users should watch for updates as OpenAI refines this feature.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-is-reportedly-testing-claude-like-skills-for-chatgpt/"
         },
         {
             "date": "Dec 24 2025",
-            "title": "Strategies for Cyber Defense in 2026",
-            "content": "As cyberattacks evolve, businesses must adapt their defense strategies to protect against increasingly sophisticated threats. In 2025, data breaches targeting small and medium-sized businesses (SMBs) posed significant challenges, with attackers focusing on extracting sensitive data for financial gain. Companies are encouraged to adopt three key strategies for 2026: enhancing endpoint security, implementing zero-trust architectures, and investing in employee cybersecurity training. By prioritizing these measures, businesses can better safeguard their networks and data from emerging threats. Continuous adaptation and proactive defense are essential in the ever-changing cybersecurity landscape.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/12/attacks-are-evolving-3-ways-to-protect.html"
+            "title": "Malicious PowerShell Malware Spread via Fake MAS Activation Domain",
+            "content": "A typosquatted domain mimicking the Microsoft Activation Scripts (MAS) tool has been used to distribute PowerShell malware, infecting Windows systems with the &#x27;Cosmali Loader&#x27;. This attack exploits users seeking legitimate activation scripts, redirecting them to download malicious content instead. The malware poses a significant risk by potentially compromising system integrity and data security. Users and organizations should verify URLs and sources before downloading activation tools, and consider implementing robust security measures to detect and prevent such threats. This incident highlights the ongoing risk of typosquatting in cyber attacks.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/fake-mas-windows-activation-domain-used-to-spread-powershell-malware/"
         },
         {
             "date": "Dec 24 2025",
-            "title": "Webrat Trojan Targets GitHub PoCs in New Campaign",
-            "content": "Security researchers have uncovered a new campaign where attackers are using the Webrat Trojan to target proof-of-concept (PoC) code on GitHub. Previously known for hiding in game cheats and cracked software, Webrat is now posing as legitimate PoC code to trap unsuspecting security professionals. This development underscores the risks associated with downloading unverified code from public repositories. Professionals are advised to exercise caution and verify the source and authenticity of PoC code before use. This campaign highlights the need for rigorous security protocols when handling potentially malicious software.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4111531/webrat-turns-github-pocs-into-a-malware-trap.html"
+            "title": "MacSync macOS Stealer Bypasses Apple Gatekeeper with Signed App",
+            "content": "Cybersecurity researchers have identified a new variant of the MacSync information stealer targeting macOS systems. This variant uses a digitally signed, notarized Swift application to masquerade as a messaging app installer, effectively bypassing Apple&#x27;s Gatekeeper security checks. By exploiting the trust in signed applications, the malware can extract sensitive information from infected systems. This discovery highlights the need for macOS users to remain vigilant and ensure they download applications from trusted sources. Organizations should review their security protocols to mitigate the risk posed by this sophisticated attack vector.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/12/new-macsync-macos-stealer-uses-signed.html"
+        },
+        {
+            "date": "Dec 24 2025",
+            "title": "Microsoft Teams Enhances Security with External User Blocking Feature",
+            "content": "Microsoft has announced a new security feature for Teams, enabling administrators to block external users from sending messages, calls, or meeting invitations. This enhancement, accessible via the Defender portal, aims to strengthen organizational security by reducing the risk of unauthorized access and communication. By controlling external interactions, organizations can better protect sensitive information and maintain secure communication channels. Administrators should familiarize themselves with the new settings to effectively implement this feature within their Teams environment. This update reflects Microsoft&#x27;s commitment to enhancing security in its collaboration tools.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-teams-to-let-admins-block-external-users-via-defender-portal/"
         },
         {
             "date": "May 05 2026",
@@ -62,53 +62,53 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Dec 25 2025",
-            "title": "AI Dominates 2025 with Unstoppable Industry Trends",
-            "content": "The past year has seen a relentless surge in AI advancements, with new terms and technologies dominating the industry lexicon. DeepSeek, a groundbreaking AI model, has redefined expectations and capabilities across sectors. Meta&#x27;s shift away from the metaverse highlights the industry&#x27;s dynamic nature, as AI continues to influence strategic pivots. The proliferation of AI applications has affected industries from healthcare to finance, driving innovation and competition. Professionals should stay informed about emerging AI trends to leverage opportunities and mitigate risks associated with rapid technological changes.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2025/12/25/1130298/ai-wrapped-the-14-ai-terms-you-couldnt-avoid-in-2025/"
+            "date": "Dec 24 2025",
+            "title": "Nvidia Strengthens AI Chip Dominance by Licensing Groq&#x27;s Technology",
+            "content": "Nvidia has announced plans to license technology from Groq, an AI chip challenger, and hire its CEO, a strategic move poised to boost its dominance in the chip manufacturing sector. Groq&#x27;s innovative approach to AI chip design, which emphasizes efficiency and speed, complements Nvidia&#x27;s existing capabilities in GPU production. This partnership could significantly impact the competitive landscape, potentially affecting companies reliant on AI processing power. With the integration of Groq’s technology, Nvidia aims to enhance its product offerings, catering to the growing demand for advanced AI solutions. Industry professionals should monitor this development as it may influence future hardware and software integration strategies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/24/nvidia-acquires-ai-chip-challenger-groq-for-20b-report-says/"
         },
         {
             "date": "Dec 24 2025",
-            "title": "AI to Revolutionize Britain&#x27;s Railway Network by 2030s",
-            "content": "A new industry report suggests that Britain&#x27;s railway network could accommodate an additional billion journeys by the mid-2030s, thanks to AI-driven enhancements. Building on the 1.6 billion passenger journeys recorded by March 2024, the integration of digital systems will be crucial. These systems will enable better prediction, monitoring, and management of rail operations. The report highlights the potential for increased efficiency and passenger capacity, impacting commuters and the transportation sector significantly. Stakeholders should prepare for this digital transformation by investing in AI technologies and infrastructure upgrades.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/rail-ai-in-the-uk-beyond-predictive-maintenance/"
+            "title": "Data Centers Emerge as Central Players in Tech Infrastructure",
+            "content": "Data centers have transitioned from being mere backend components to central elements in technological infrastructure. This shift is driven by the increasing reliance on cloud computing, AI, and big data analytics, which require substantial processing power and storage capabilities. The evolution signifies a broader trend where data centers are now pivotal in supporting digital transformation across industries. As companies continue to digitize operations, the demand for efficient, scalable data center solutions is expected to rise. Professionals in IT and infrastructure management should consider investing in advanced data center technologies to meet future demands and maintain competitive advantage.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/24/the-year-data-centers-went-from-backend-to-center-stage/"
         },
         {
             "date": "Dec 24 2025",
-            "title": "Disney Integrates Generative AI for Content Innovation",
-            "content": "Disney is embedding generative AI into its operations to enhance content production and distribution across diverse formats and audiences. This move aims to balance creativity with rigorous control over intellectual property and brand integrity. Generative AI offers speed and flexibility, but poses risks if not managed properly, potentially affecting content quality and rights management. The entertainment giant&#x27;s strategy reflects broader industry trends towards AI adoption for scalability and efficiency. Professionals in media and entertainment should monitor Disney&#x27;s approach to leverage AI while safeguarding core values and assets.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/why-disney-is-embedding-generative-ai-into-its-operating-model/"
-        },
-        {
-            "date": "Dec 23 2025",
-            "title": "Authors Sue AI Firms Over Content Use in Training Models",
-            "content": "John Carreyrou and other authors have filed a lawsuit against six major AI companies, challenging a class action settlement with Anthropic. The authors argue that large language model (LLM) companies are undervaluing their claims, which involve the unauthorized use of their work in AI training. This legal action underscores ongoing tensions between content creators and AI developers over intellectual property rights. The outcome could set precedents for how AI companies compensate creators. Industry stakeholders should track this case closely, as it may influence future AI training practices and copyright policies.",
+            "title": "European Startup Market Poised for Data-Driven Growth",
+            "content": "Despite its energetic ecosystem, the European startup market has yet to produce substantial data reflecting its potential growth. Analysts suggest that while current metrics may not fully capture the market&#x27;s vibrancy, there is optimism for future data improvements. Factors such as increased investment in innovation and supportive regulatory environments are expected to drive this transformation. Startups and investors should remain vigilant, leveraging emerging opportunities to capitalize on this anticipated growth. Understanding these dynamics is crucial for stakeholders aiming to navigate the evolving European tech landscape effectively.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/23/john-carreyrou-and-other-authors-bring-new-lawsuit-against-six-major-ai-companies/"
+            "sourceUrl": "https://techcrunch.com/2025/12/24/the-european-startup-markets-data-doesnt-match-its-energy-yet/"
         },
         {
-            "date": "Dec 23 2025",
-            "title": "Google Highlights Eight AI Research Breakthroughs in 2025",
-            "content": "Google&#x27;s year-end review showcases eight significant AI research breakthroughs achieved in 2025. These advancements span areas such as natural language processing, computer vision, and quantum computing, demonstrating Google&#x27;s continued leadership in AI innovation. Each breakthrough has the potential to enhance existing technologies and create new applications across various industries. The research achievements reflect Google&#x27;s strategic focus on pushing the boundaries of AI capabilities. Tech professionals should explore these breakthroughs to understand their implications and potential for driving future technological developments.",
-            "source": "Google DeepMind News",
-            "sourceUrl": "https://deepmind.google/blog/googles-year-in-review-8-areas-with-research-breakthroughs-in-2025/"
-        },
-        {
-            "date": "Dec 23 2025",
-            "title": "Marissa Mayer&#x27;s Startup Dazzle Secures $8M for AI-Driven Innovation",
-            "content": "Marissa Mayer&#x27;s new venture, Dazzle, has raised $8 million in funding led by Forerunner&#x27;s Kirsten Green. Following the closure of her previous startup, Sunshine, Mayer aims to capitalize on the growing demand for AI-enhanced consumer services. Dazzle is positioned to innovate in the AI space, focusing on user-friendly applications that integrate seamlessly into daily life. This funding round signals investor confidence in Mayer&#x27;s vision and the potential of AI-driven consumer solutions. Entrepreneurs and investors should watch Dazzle&#x27;s progress as it develops new offerings in the competitive AI market.",
+            "date": "Dec 24 2025",
+            "title": "AI Set to Revolutionize Operating Room Efficiency",
+            "content": "Akara, a healthcare technology firm, highlights the potential of AI to address inefficiencies in operating room (OR) coordination. Hospitals lose two to four hours of OR time daily due to logistical challenges unrelated to the surgeries themselves. AI-driven solutions can optimize scheduling, resource allocation, and communication, reducing operational downtime. This innovation could lead to significant cost savings and improved patient outcomes by enhancing OR efficiency. Healthcare administrators and technology providers should explore AI applications to streamline OR operations, mitigating current challenges and maximizing resource utilization.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/23/marissa-mayers-new-startup-dazzle-raises-8m-led-by-forerunners-kirsten-green/"
+            "sourceUrl": "https://techcrunch.com/podcast/why-the-operating-room-is-ripe-for-ai-according-to-akara/"
         },
         {
-            "date": "Dec 23 2025",
-            "title": "Amazon Expands Alexa+ Capabilities with New Service Integrations",
-            "content": "Amazon has enhanced its AI assistant, Alexa+, by integrating services such as Angi, Expedia, Square, and Yelp. These additions complement existing integrations with platforms like Uber and OpenTable, broadening Alexa+&#x27;s utility for users. The expanded capabilities enable more seamless interactions and transactions, enhancing user convenience and engagement. This development reflects Amazon&#x27;s strategy to position Alexa+ as a versatile tool for everyday tasks. Users and developers should explore these new integrations to maximize the assistant&#x27;s functionality and leverage it in various applications.",
+            "date": "Dec 24 2025",
+            "title": "Waymo Tests Gemini AI Assistant in Robotaxis",
+            "content": "Waymo is testing a new AI assistant, powered by its Gemini system, within its fleet of robotaxis. The assistant is designed to handle general knowledge queries and manage in-cabin features, enhancing passenger experience. This development marks a significant step in integrating AI into autonomous vehicle services, potentially setting a benchmark for future in-car AI applications. As the technology matures, it could lead to more personalized and interactive transportation solutions. Companies in the autonomous vehicle sector should consider similar innovations to stay competitive and meet evolving consumer expectations.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/23/amazons-ai-assistant-alexa-now-works-with-angi-expedia-square-and-yelp/"
+            "sourceUrl": "https://techcrunch.com/2025/12/24/waymo-is-testing-gemini-as-an-in-car-ai-assistant-in-its-robotaxis/"
+        },
+        {
+            "date": "Dec 24 2025",
+            "title": "Italy Orders Meta to Halt WhatsApp AI Chatbot Ban",
+            "content": "The Italian government has mandated Meta to suspend its policy preventing companies from using WhatsApp&#x27;s business tools for AI chatbots. This decision underscores regulatory concerns about anti-competitive practices in digital platforms. The policy, if enforced, could limit innovation by restricting businesses from deploying AI-driven customer interaction tools on WhatsApp. Companies using WhatsApp for business communications should stay informed of regulatory changes and assess their impact on operational strategies. This development highlights the ongoing tension between tech giants and regulators regarding platform openness and competition.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/24/italy-tells-meta-to-suspend-its-policy-that-bans-rival-ai-chatbots-from-whatsapp/"
+        },
+        {
+            "date": "Dec 24 2025",
+            "title": "AI Solutions Target Operating Room Coordination Challenges",
+            "content": "A new startup is leveraging AI to tackle inefficiencies in operating room (OR) coordination, a significant cost factor for hospitals. Current challenges result in two to four hours of lost OR time daily, primarily due to non-surgical logistics. AI applications can streamline processes such as scheduling and resource management, reducing downtime and enhancing operational efficiency. This innovation promises not only cost savings but also improved patient care by optimizing OR utilization. Healthcare professionals and technology developers should consider adopting AI solutions to address these persistent challenges and improve healthcare delivery.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/video/can-ai-fix-the-operating-room-this-startup-thinks-so/"
         }
     ],
     "articles": {},
@@ -181,17 +181,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-52163",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-14733",
-            "dateAdded": "Dec 19, 2025",
-            "vendor": "WatchGuard Firebox",
-            "description": "WatchGuard Fireware OS iked process contains an out of bounds write vulnerability in the OS iked process. This vulnerability may allow a remote unauthenticated attacker to execute arbitrary code and a",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-14733",
             "isZeroDay": false
         }
     ],
