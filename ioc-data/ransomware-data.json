@@ -1,8 +1,8 @@
 {
-  "last_updated": "2025-12-27T01:42:48.819192",
+  "last_updated": "2025-12-27T12:40:41.838534",
   "period": "Last 7 days",
-  "total_groups": 29,
-  "total_victims": 294,
+  "total_groups": 28,
+  "total_victims": 291,
   "groups": [
     {
       "name": "Lockbit5",
@@ -97,7 +97,7 @@
     },
     {
       "name": "Qilin",
-      "count": 64,
+      "count": 62,
       "victims": [
         {
           "name": "Hometech Window",
@@ -532,19 +532,13 @@
     },
     {
       "name": "Dragonforce",
-      "count": 7,
+      "count": 6,
       "victims": [
         {
           "name": "National Credit Regulator (NCR)",
           "date": "2025-12-24 19:44:44.153925",
           "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=86439ee0-fe94-4bf3-8cf7-056c60e87c1d",
           "discovered_date": "2025-12-24T19:44:44.153925"
-        },
-        {
-          "name": "Tri-State Metal Roofing Supply",
-          "date": "2025-12-24 11:23:02.569554",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=32370c72-e544-4420-b27c-bb59b1384a96",
-          "discovered_date": "2025-12-24T11:23:02.569554"
         },
         {
           "name": "National Credit Regulator (NCR)",
@@ -578,8 +572,7 @@
         }
       ],
       "industries": [
-        "Financial Services",
-        "Manufacturing"
+        "Financial Services"
       ],
       "countries": [
         "N/A",
@@ -593,7 +586,7 @@
         1,
         0,
         0,
-        5,
+        4,
         0,
         0,
         0
@@ -1090,6 +1083,41 @@
       ]
     },
     {
+      "name": "Morpheus",
+      "count": 2,
+      "victims": [
+        {
+          "name": "VALLEREDONDO",
+          "date": "2025-12-27 10:48:26.979401",
+          "url": "",
+          "discovered_date": "2025-12-27T10:48:26.979401"
+        },
+        {
+          "name": "VALLEREDONDO",
+          "date": "2025-12-27T10:48:26+00:00",
+          "url": "https://www.ransomware.live/id/VkFMTEVSRURPTkRPQG1vcnBoZXVz",
+          "discovered_date": "2025-12-27T10:48:26+00:00"
+        }
+      ],
+      "industries": [
+        "Not Found"
+      ],
+      "countries": [
+        "ES"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ]
+    },
+    {
       "name": "Killsec",
       "count": 2,
       "victims": [
@@ -1381,60 +1409,6 @@
       "daily_counts": [
         0,
         1,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Coinbasecartel",
-      "count": 1,
-      "victims": [
-        {
-          "name": "Insight",
-          "date": "2025-12-20T12:21:23+00:00",
-          "url": "https://www.ransomware.live/id/SW5zaWdodEBjb2luYmFzZWNhcnRlbA==",
-          "discovered_date": "2025-12-20T12:21:23+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "N/A"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Handala",
-      "count": 1,
-      "victims": [
-        {
-          "name": "No Place to Hide: Unmasking the Masterminds Behind War Drones",
-          "date": "2025-12-20T10:55:04+00:00",
-          "url": "https://www.ransomware.live/id/Tm8gUGxhY2UgdG8gSGlkZTogVW5tYXNraW5nIHRoZSBNYXN0ZXJtaW5kcyBCZWhpbmQgV2FyIERyb25lc0BoYW5kYWxh",
-          "discovered_date": "2025-12-20T10:55:04+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "N/A"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
         0,
         0,
         0,
