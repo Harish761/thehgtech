@@ -1,6 +1,60 @@
 {
   "articles": [
     {
+      "id": "article-react2shell-cve-2025",
+      "title": "React2Shell CVE-2025-55182: The CVSS 10.0 Vulnerability That Turned React Into a Weapon",
+      "date": "December 27, 2025",
+      "category": "Critical Zero-Day",
+      "badge": "CRITICAL",
+      "excerpt": "Maximum severity RCE in React 19 Server Components. No auth required. Actively exploited. Your framework just became the backdoor.",
+      "image": "images/articles/react2shell-vulnerability-2025.png",
+      "tags": [
+        "React",
+        "CVE",
+        "RCE",
+        "CVSS 10.0",
+        "Zero-Day"
+      ],
+      "author": "TheHGTech",
+      "externalUrl": "articles/react2shell-cve-2025-55182-react-vulnerability.html"
+    },
+    {
+      "id": "article-trustwallet-hack-2025",
+      "title": "TrustWallet Chrome Extension Hack: Millions Lost in Browser Extension Trust Crisis",
+      "date": "December 27, 2025",
+      "category": "Cryptocurrency Security",
+      "badge": "BREAKING",
+      "excerpt": "TrustWallet Chrome extension compromised on December 26. Millions in crypto drained. Browser extensions are the new attack surface.",
+      "image": "images/articles/trustwallet-hack-2025.png",
+      "tags": [
+        "TrustWallet",
+        "Crypto",
+        "Chrome Extension",
+        "Wallet Hack",
+        "Browser Security"
+      ],
+      "author": "TheHGTech",
+      "externalUrl": "articles/trustwallet-chrome-extension-hack-2025.html"
+    },
+    {
+      "id": "article-langchain-cve-2025",
+      "title": "LangChain CVE-2025-68664: Your AI Agent Just Got Weaponized",
+      "date": "December 27, 2025",
+      "category": "AI Security",
+      "badge": "NEW",
+      "excerpt": "Critical CVSS 9.3 serialization injection in LangChain allows attackers to steal secrets and poison AI responses. The safety tool is now the weapon.",
+      "image": "images/articles/langchain-vulnerability-2025.png",
+      "tags": [
+        "LangChain",
+        "AI Security",
+        "CVE",
+        "LLM",
+        "Serialization"
+      ],
+      "author": "TheHGTech",
+      "externalUrl": "articles/langchain-cve-2025-68664-ai-vulnerability.html"
+    },
+    {
       "id": "article-operation-pcpcat-2025",
       "title": "Operation PCPcat: 59,000 Next.js Servers Hacked in 48 Hours",
       "date": "December 25, 2025",
