@@ -5,52 +5,52 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Dec 26 2025",
-            "title": "Growing Use of AI in Coding Raises Security Concerns for 2026",
-            "content": "As developers increasingly integrate AI agents into their coding practices, security experts warn of significant vulnerabilities in the development pipeline for 2026. The reliance on AI for code generation is accelerating, but often at the expense of robust security measures. This trend could expose software projects to new types of cyber threats if security is not prioritized alongside innovation. Developers are urged to implement stringent security protocols and conduct thorough code reviews to mitigate potential risks. As AI continues to transform software development, maintaining a balance between efficiency and security will be crucial for safeguarding digital assets.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/application-security/coders-adopt-ai-agents-security-pitfalls-lurk-2026"
-        },
-        {
-            "date": "Dec 26 2025",
-            "title": "Participate in Dark Reading&#x27;s Application Security Survey",
-            "content": "Dark Reading has launched a comprehensive survey aimed at uncovering the latest trends, challenges, and solutions in application security. This initiative seeks input from security professionals to better understand the evolving landscape of application vulnerabilities and defense mechanisms. Participants will contribute to a broader understanding of how organizations are adapting to new threats and the effectiveness of current security practices. The survey results will provide valuable insights into the future direction of application security, helping to shape industry standards and best practices. Security professionals are encouraged to participate and share their experiences.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/application-security/dark-reading-opens-state-appsec-survey"
-        },
-        {
-            "date": "Dec 26 2025",
-            "title": "Trust Wallet Chrome Extension Hack Results in Cryptocurrency Losses",
-            "content": "A compromised update to the Trust Wallet Chrome extension has led to significant cryptocurrency losses for users. Released on December 24, the update allowed attackers to drain wallets by exploiting vulnerabilities in the extension. Trust Wallet has issued urgent warnings to affected users and is working to address the breach. This incident highlights the critical importance of verifying the integrity of software updates, especially in the cryptocurrency sector. Users are advised to check for any unauthorized transactions and update their security measures immediately to protect their digital assets.",
+            "title": "GrubHub Users Targeted by Fake Emails Promising Bitcoin Returns",
+            "content": "GrubHub users have been targeted by a phishing campaign involving fraudulent emails that appear to originate from the company. These emails promise a tenfold return on bitcoin investments if users transfer cryptocurrency to a specified wallet. The scam exploits users&#x27; trust in legitimate-looking communications to steal funds. This incident underscores the ongoing threat of phishing attacks in the digital age, particularly those leveraging cryptocurrency&#x27;s allure. Users are advised to verify the authenticity of such communications and report suspicious emails to GrubHub. The company has not confirmed any data breach, but users should remain vigilant against similar scams.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/trust-wallet-chrome-extension-hack-tied-to-millions-in-losses/"
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/fake-grubhub-emails-promise-tenfold-return-on-sent-cryptocurrency/"
         },
         {
             "date": "Dec 26 2025",
-            "title": "LangChain Core Vulnerability Threatens Sensitive Data Security",
-            "content": "A critical vulnerability has been identified in LangChain Core, a key Python package, which could allow attackers to access sensitive data through serialization injection. This flaw also poses a risk of influencing large language model (LLM) responses via prompt injection. LangChain Core is integral to many AI applications, and this vulnerability could have widespread implications for systems relying on its functionalities. Developers using LangChain Core are urged to apply patches immediately and review their security protocols to prevent unauthorized data access. This discovery underscores the need for rigorous security practices in AI development environments.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/12/critical-langchain-core-vulnerability.html"
-        },
-        {
-            "date": "Dec 26 2025",
-            "title": "SASE Certifications Essential for Modern Network Security",
-            "content": "As cyber threats become more sophisticated, organizations are increasingly adopting Secure Access Service Edge (SASE) frameworks to enhance network and security convergence. SASE certifications validate the skills required to implement this cloud-native approach, which integrates network and security functions to better protect against AI-powered threats. With traditional perimeter-based security models becoming obsolete, professionals with SASE expertise are in high demand. Enterprises are encouraged to invest in training and certification programs to ensure their teams are equipped to handle the evolving threat landscape. This shift signifies a critical evolution in cybersecurity strategies.",
+            "title": "Critical MongoDB Flaw Could Expose Uninitialized Memory",
+            "content": "A high-severity vulnerability, CVE-2025-14847, has been identified in MongoDB, potentially allowing unauthenticated users to read uninitialized heap memory. The flaw involves mismatched length fields in zlib compressed protocol headers, posing a significant risk to data confidentiality. MongoDB has urged users to update their systems immediately to mitigate potential exploitation. This vulnerability could affect enterprises relying on MongoDB for data management, emphasizing the need for timely patch management. Organizations should prioritize this update to protect sensitive information and maintain data integrity.",
             "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4108280/7-sase-certifications-to-validate-converged-network-and-security-skills-2.html"
+            "sourceUrl": "https://www.csoonline.com/article/4111711/high-severity-flaw-in-mongodb-could-allow-memory-leakage-2.html"
+        },
+        {
+            "date": "Dec 26 2025",
+            "title": "Trust Wallet Chrome Extension Breach Results in $7 Million Crypto Loss",
+            "content": "Trust Wallet has disclosed a security incident involving its Google Chrome extension, leading to a $7 million loss in cryptocurrency. The breach affects version 2.68 of the extension and involved malicious code that compromised users&#x27; wallets. Trust Wallet has advised users to update to the latest version to secure their assets. This incident highlights the vulnerabilities in browser extensions and the potential financial impact on users. Cryptocurrency holders using Trust Wallet should take immediate action to update their extensions and monitor their accounts for unusual activity.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/12/trust-wallet-chrome-extension-bug.html"
+        },
+        {
+            "date": "Dec 26 2025",
+            "title": "CISO Patricia Voight Advocates for Diversity and Mentorship in Cybersecurity",
+            "content": "Patricia Voight, Chief Information Security Officer (CISO) at Webster Bank, emphasizes the importance of mentorship and diversity in the cybersecurity field. In a rapidly evolving industry, she advocates for initiatives that support career advancement and combat financial crimes. Voight highlights that diverse teams bring varied perspectives, enhancing problem-solving capabilities and innovation. Her insights are particularly relevant as the industry faces a talent shortage and increasing cyber threats. Organizations are encouraged to foster diverse work environments and mentorship programs to build the next generation of cybersecurity experts.",
+            "source": "Dark Reading",
+            "sourceUrl": "https://www.darkreading.com/cybersecurity-careers/mentorship-and-diversity-shaping-the-next-generation-of-cyber-experts"
+        },
+        {
+            "date": "Dec 26 2025",
+            "title": "Evasive Panda APT Group Conducts DNS Poisoning to Deploy MgBot Malware",
+            "content": "The Evasive Panda, a China-linked advanced persistent threat (APT) group, has been linked to a sophisticated cyber espionage campaign using DNS poisoning to deploy MgBot malware. This campaign targeted entities in Türkiye, China, and India, highlighting the group&#x27;s focus on strategic geopolitical regions. DNS poisoning involves manipulating DNS queries to redirect traffic to malicious sites, enabling malware deployment. Organizations in affected regions should enhance their network security measures and monitor for signs of DNS manipulation. This activity underscores the persistent threat posed by state-sponsored APT groups.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/12/china-linked-evasive-panda-ran-dns.html"
+        },
+        {
+            "date": "Dec 26 2025",
+            "title": "Trust Wallet Confirms Chrome Extension Hack Led to $7 Million Theft",
+            "content": "Trust Wallet has confirmed that a compromised update to its Chrome extension led to a $7 million cryptocurrency theft. Released on December 24, the update allowed attackers to drain users&#x27; wallets. The breach has prompted an urgent response from Trust Wallet, advising users to update to the latest version and remain vigilant against phishing attempts. This incident highlights the risks associated with browser extensions and the importance of maintaining updated software. Users should check their account activity and consider additional security measures such as two-factor authentication.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/trust-wallet-confirms-extension-hack-led-to-7-million-crypto-theft/"
         },
         {
             "date": "Dec 25 2025",
-            "title": "LastPass Breach Continues to Affect Cryptocurrency Security",
-            "content": "New findings from TRM Labs reveal that the 2022 LastPass data breach has led to ongoing cryptocurrency thefts. Attackers exploited weak master passwords to access encrypted vault backups, resulting in asset losses as recent as late 2025. This breach highlights the long-term impact of inadequate password security and the importance of robust encryption practices. Cryptocurrency holders who used LastPass are advised to strengthen their passwords and monitor their accounts for suspicious activity. The incident serves as a stark reminder of the need for heightened vigilance in managing digital credentials.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/12/lastpass-2022-breach-led-to-years-long.html"
-        },
-        {
-            "date": "Dec 25 2025",
-            "title": "Fortinet Reports Exploitation of FortiOS SSL VPN Vulnerability",
-            "content": "Fortinet has issued a warning regarding active exploitation of a five-year-old vulnerability, CVE-2020-12812, in FortiOS SSL VPN systems. This improper authentication flaw, with a CVSS score of 5.2, allows attackers to bypass two-factor authentication under certain configurations. Organizations using affected FortiOS versions are at risk, potentially exposing sensitive data to unauthorized access. Fortinet urges users to update their systems and review their security configurations to prevent exploitation. This incident underscores the importance of regular patching and security audits to protect against known vulnerabilities.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/12/fortinet-warns-of-active-exploitation.html"
+            "title": "OpenAI Enhances ChatGPT with New Task-Oriented Formatting Blocks",
+            "content": "OpenAI has introduced &#x27;formatting blocks&#x27; to ChatGPT, aligning its user interface (UI) with specific task requirements. This update aims to improve user interaction by making the UI more intuitive and task-oriented. The change reflects OpenAI&#x27;s ongoing efforts to enhance AI usability and adaptability in various applications. By tailoring the interface to the task, users can expect a more streamlined experience, potentially increasing efficiency in task execution. Developers and AI enthusiasts should explore these new features to leverage ChatGPT&#x27;s capabilities more effectively.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/chatgpts-new-formatting-blocks-make-its-ui-look-more-like-a-task-tool/"
         },
         {
             "date": "May 05 2026",
@@ -62,53 +62,53 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Dec 25 2025",
-            "title": "AI Buzzwords of 2025: The Unstoppable Hype Train",
-            "content": "The AI landscape of 2025 was dominated by a surge in terminology that reflects the technology&#x27;s rapid evolution and widespread impact. Key terms such as &quot;DeepSeek,&quot; a revolutionary AI model that upended industry norms, and &quot;Meta&#x27;s metaverse,&quot; which saw diminished focus amid AI advancements, were at the forefront. This year highlighted the relentless pace of AI development, with tech giants and startups alike vying for breakthroughs. The industry saw a shift towards more integrated AI solutions, impacting sectors from healthcare to entertainment. Professionals must stay informed about these emerging concepts to leverage AI effectively in their domains. The ongoing AI hype underscores the necessity for continuous learning and adaptation in the tech field.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2025/12/25/1130298/ai-wrapped-the-14-ai-terms-you-couldnt-avoid-in-2025/"
+            "date": "Dec 26 2025",
+            "title": "TechCrunch Predicts AI Agents and Blockbuster IPOs by 2026",
+            "content": "TechCrunch&#x27;s Equity podcast has released its 2026 predictions, highlighting AI agents and blockbuster IPOs as key trends to watch. Hosts Kirsten Korosec, Anthony Ha, and Rebecca Bellan, along with Isabelle Johannessen, discussed the potential for mega AI funding rounds and the evolving landscape of venture capital. The focus on AI agents suggests a shift towards more autonomous systems capable of handling complex tasks, impacting industries from finance to healthcare. The anticipated IPOs could reshape market dynamics, offering new opportunities for investors and entrepreneurs. Professionals should monitor these trends for strategic planning and investment decisions.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/podcast/equitys-2026-predictions-ai-agents-blockbuster-ipos-and-the-future-of-vc/"
         },
         {
             "date": "Dec 24 2025",
-            "title": "AI-Driven Innovations Poised to Transform Britain&#x27;s Railways by 2030s",
-            "content": "A new industry report suggests Britain&#x27;s railway network could accommodate an additional billion passenger journeys by the mid-2030s, leveraging AI-driven digital systems. Building on the 1.6 billion journeys recorded by March 2024, the report emphasizes the integration of predictive analytics and machine learning to optimize scheduling and maintenance. This transformation aims to enhance capacity and efficiency, addressing the growing demand for sustainable transportation. The report highlights the importance of adopting advanced AI technologies to manage increasing complexity within rail operations. Stakeholders should prioritize investments in AI to future-proof infrastructure and improve passenger experiences.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/rail-ai-in-the-uk-beyond-predictive-maintenance/"
+            "title": "Nvidia Expands Dominance with Groq AI Chip Technology Licensing",
+            "content": "Nvidia has announced plans to license technology from Groq, a competitor in the AI chip market, and hire its CEO. This move positions Nvidia to further strengthen its leadership in chip manufacturing by integrating Groq&#x27;s innovative architecture. The collaboration is expected to enhance Nvidia&#x27;s capabilities in delivering high-performance AI solutions, crucial for data-intensive applications. This development could significantly impact competitors and drive advancements in AI hardware. Industry stakeholders should consider the implications for supply chains and potential shifts in market power.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/24/nvidia-acquires-ai-chip-challenger-groq-for-20b-report-says/"
         },
         {
             "date": "Dec 24 2025",
-            "title": "Disney Integrates Generative AI to Streamline Content Production",
-            "content": "Disney is embedding generative AI into its operations to enhance content production and distribution across various platforms while maintaining control over intellectual property. This strategic move aims to balance speed and flexibility with brand consistency and rights management. The deployment of AI tools promises to streamline workflows, but also raises concerns about potential risks if not properly managed. Disney&#x27;s initiative reflects a broader industry trend towards leveraging AI for creative processes, underscoring the need for robust governance frameworks. Companies in the media sector should consider similar integrations to remain competitive while safeguarding their assets.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/why-disney-is-embedding-generative-ai-into-its-operating-model/"
-        },
-        {
-            "date": "Dec 23 2025",
-            "title": "Authors Challenge AI Firms Over Settlement Terms in New Lawsuit",
-            "content": "John Carreyrou and other authors have filed a lawsuit against six major AI companies, rejecting Anthropic&#x27;s class action settlement. The authors argue that the settlement undervalues high-value claims, allowing large language model (LLM) companies to evade accountability. This legal action highlights ongoing tensions between content creators and AI developers over intellectual property rights. The case underscores the need for clearer regulations to address the use of copyrighted material in training AI models. Stakeholders in the AI industry should monitor this lawsuit closely, as it could set precedents affecting future AI development and content usage policies.",
+            "title": "Data Centers Emerge as Key Players in Tech Innovation",
+            "content": "Data centers have transitioned from backend operations to central figures in tech innovation, according to a recent analysis. This shift is driven by increased demand for cloud services, AI processing, and edge computing capabilities. As businesses rely more on data-driven insights, the role of data centers in supporting scalable and efficient infrastructure has become critical. This trend highlights the need for enhanced security measures and sustainable energy solutions. IT professionals should prioritize data center optimization and explore partnerships that leverage these evolving capabilities.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/23/john-carreyrou-and-other-authors-bring-new-lawsuit-against-six-major-ai-companies/"
+            "sourceUrl": "https://techcrunch.com/2025/12/24/the-year-data-centers-went-from-backend-to-center-stage/"
         },
         {
-            "date": "Dec 23 2025",
-            "title": "Google Highlights Eight Key AI Research Breakthroughs in 2025",
-            "content": "Google&#x27;s year-end review showcases eight significant AI research breakthroughs achieved in 2025, reflecting the company&#x27;s continued leadership in the field. These advancements span various domains, including natural language processing, computer vision, and reinforcement learning. Each breakthrough represents a step forward in AI capabilities, with potential applications in industries ranging from healthcare to autonomous systems. Google&#x27;s research emphasizes the importance of sustained investment in AI innovation to drive technological progress. Professionals should examine these developments to identify opportunities for integration and collaboration within their own projects and sectors.",
-            "source": "Google DeepMind News",
-            "sourceUrl": "https://deepmind.google/blog/googles-year-in-review-8-areas-with-research-breakthroughs-in-2025/"
-        },
-        {
-            "date": "Dec 23 2025",
-            "title": "Marissa Mayer&#x27;s Dazzle Secures $8M to Innovate AI-Driven Consumer Tech",
-            "content": "Marissa Mayer&#x27;s new venture, Dazzle, has raised $8 million in funding led by Forerunner&#x27;s Kirsten Green, signaling strong investor confidence in AI-driven consumer technologies. Following the closure of her previous startup, Sunshine, Mayer aims to capitalize on emerging trends in AI-infused consumer products. Dazzle&#x27;s focus will likely include innovative applications that enhance user experience and engagement. This funding round highlights the growing interest in consumer-focused AI solutions and the potential for significant market impact. Entrepreneurs and investors should watch Dazzle&#x27;s progress as it seeks to redefine consumer interactions through AI.",
+            "date": "Dec 24 2025",
+            "title": "European Startup Market Poised for Data-Driven Growth",
+            "content": "Despite a lack of substantial data, Europe&#x27;s startup market shows potential for significant growth, fueled by increasing entrepreneurial energy. Current metrics may not fully capture the innovation and investment activity within the region. Analysts suggest that improving data collection and analysis could reveal a more vibrant ecosystem. The anticipated shift could attract more investors and foster a competitive environment for emerging technologies. Entrepreneurs and investors should stay informed about policy changes and funding opportunities to capitalize on this evolving market.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/23/marissa-mayers-new-startup-dazzle-raises-8m-led-by-forerunners-kirsten-green/"
+            "sourceUrl": "https://techcrunch.com/2025/12/24/the-european-startup-markets-data-doesnt-match-its-energy-yet/"
         },
         {
-            "date": "Dec 23 2025",
-            "title": "Amazon Expands Alexa+ Capabilities with New Integrations",
-            "content": "Amazon&#x27;s AI assistant, Alexa+, now supports integrations with Angi, Expedia, Square, and Yelp, expanding its ecosystem of services. These additions complement existing partnerships with platforms like Uber and OpenTable, enhancing Alexa+&#x27;s utility for users. The new integrations enable seamless interactions across various services, from home improvement to travel planning. This expansion underscores Amazon&#x27;s strategy to position Alexa+ as a versatile assistant capable of managing diverse user needs. Developers and businesses should explore opportunities to integrate with Alexa+ to reach a broader audience and enhance service delivery.",
+            "date": "Dec 24 2025",
+            "title": "AI Revolutionizes Operating Room Efficiency, Says Akara",
+            "content": "Akara has highlighted the potential for AI to transform operating room efficiency, addressing costly coordination issues. Hospitals currently lose two to four hours of OR time daily due to manual scheduling and logistical challenges. AI solutions can streamline these processes, reducing delays and improving patient outcomes. This application of AI in healthcare could lead to significant cost savings and operational improvements. Healthcare administrators should consider investing in AI technologies to enhance OR management and overall hospital efficiency.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/23/amazons-ai-assistant-alexa-now-works-with-angi-expedia-square-and-yelp/"
+            "sourceUrl": "https://techcrunch.com/podcast/why-the-operating-room-is-ripe-for-ai-according-to-akara/"
+        },
+        {
+            "date": "Dec 24 2025",
+            "title": "Waymo Tests Gemini AI Assistant in Robotaxis",
+            "content": "Waymo is testing a new in-car AI assistant, Gemini, in its autonomous vehicle fleet. The assistant, powered by a 1,200-line system prompt, can answer general knowledge questions and control in-cabin features, enhancing the passenger experience. This development marks a step towards more interactive and user-friendly autonomous transport. The integration of AI assistants could set new standards for convenience and accessibility in transportation. Industry professionals should monitor these advancements for potential applications in other sectors and consumer technologies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/24/waymo-is-testing-gemini-as-an-in-car-ai-assistant-in-its-robotaxis/"
+        },
+        {
+            "date": "Dec 24 2025",
+            "title": "Italy Orders Meta to Halt WhatsApp AI Chatbot Ban",
+            "content": "The Italian government has mandated Meta to suspend its policy that prohibits rival AI chatbots from using WhatsApp&#x27;s business tools. This decision challenges Meta&#x27;s control over third-party integrations on the platform, potentially opening the market for diverse AI solutions. The ruling underscores regulatory efforts to ensure fair competition in digital services. Companies utilizing WhatsApp for business should evaluate the impact on their AI strategies and consider compliance with evolving regulations. This development may influence broader regulatory trends across the tech industry.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/24/italy-tells-meta-to-suspend-its-policy-that-bans-rival-ai-chatbots-from-whatsapp/"
         }
     ],
     "articles": {},
