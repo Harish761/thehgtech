@@ -65,6 +65,27 @@
   
   <!-- ========== ARTICLES - HIGH TRAFFIC POTENTIAL ========== -->
   <url>
+    <loc>https://thehgtech.com/articles/react2shell-cve-2025-55182-react-vulnerability.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <lastmod>2025-12-27</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/trustwallet-chrome-extension-hack-2025.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <lastmod>2025-12-27</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/langchain-cve-2025-68664-ai-vulnerability.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <lastmod>2025-12-27</lastmod>
+  </url>
+
+  <url>
     <loc>https://thehgtech.com/articles/operation-pcpcat-nextjs-hack-2025.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>

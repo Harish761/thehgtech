@@ -5,6 +5,45 @@
   <!-- ========== LATEST NEWS ARTICLES (Last 48 hours for Google News) ========== -->
   
   <url>
+    <loc>https://thehgtech.com/articles/react2shell-cve-2025-55182-react-vulnerability.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-27T00:00:00+05:30</news:publication_date>
+      <news:title>React2Shell CVE-2025-55182: CVSS 10.0 Vulnerability in React Server Components</news:title>
+      <news:keywords>React2Shell, CVE-2025-55182, React 19, Next.js, RCE, zero-day, CVSS 10.0</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/trustwallet-chrome-extension-hack-2025.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-27T00:00:00+05:30</news:publication_date>
+      <news:title>TrustWallet Chrome Extension Hack: Millions Lost in Browser Extension Crisis</news:title>
+      <news:keywords>TrustWallet, Chrome extension, crypto hack, wallet compromise, cryptocurrency theft</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/langchain-cve-2025-68664-ai-vulnerability.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-27T00:00:00+05:30</news:publication_date>
+      <news:title>LangChain CVE-2025-68664: AI Agent Vulnerability Allows Secret Theft</news:title>
+      <news:keywords>LangChain, CVE-2025-68664, AI security, LLM vulnerability, serialization injection</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://thehgtech.com/articles/operation-pcpcat-nextjs-hack-2025.html</loc>
     <news:news>
       <news:publication>
