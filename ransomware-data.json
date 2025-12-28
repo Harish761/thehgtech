@@ -1,8 +1,8 @@
 {
-  "last_updated": "2025-12-28T01:55:29.385906",
+  "last_updated": "2025-12-28T12:41:25.279576",
   "period": "Last 7 days",
-  "total_groups": 28,
-  "total_victims": 295,
+  "total_groups": 29,
+  "total_victims": 297,
   "groups": [
     {
       "name": "Lockbit5",
@@ -97,8 +97,14 @@
     },
     {
       "name": "Qilin",
-      "count": 53,
+      "count": 55,
       "victims": [
+        {
+          "name": "Atalian",
+          "date": "2025-12-28 10:43:11.636121",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=d34bc6bb-15f0-3a4a-8ebb-3ad311427eba",
+          "discovered_date": "2025-12-28T10:43:11.636121"
+        },
         {
           "name": "Typhoo Tea",
           "date": "2025-12-27 18:23:25.916915",
@@ -152,20 +158,14 @@
           "date": "2025-12-25 08:32:00.375429",
           "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=db5e6bdf-3dba-3490-8b71-740693a37779",
           "discovered_date": "2025-12-25T08:32:00.375429"
-        },
-        {
-          "name": "Hopital La Rabta",
-          "date": "2025-12-26 17:53:44.529652",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=2385873c-ba72-3adb-871d-cfede76c7dd5",
-          "discovered_date": "2025-12-26T17:53:44.529652"
         }
       ],
       "industries": [
         "Agriculture and Food Production",
+        "Business Services",
         "Consumer Services",
         "Education",
-        "Energy",
-        "Healthcare"
+        "Energy"
       ],
       "countries": [
         "CA",
@@ -183,12 +183,12 @@
         8,
         8,
         4,
-        0
+        2
       ]
     },
     {
       "name": "Safepay",
-      "count": 36,
+      "count": 33,
       "victims": [
         {
           "name": "heatcel.co.uk",
@@ -255,7 +255,6 @@
         "Consumer Services",
         "Manufacturing",
         "Not Found",
-        "Technology",
         "Transportation/Logistics"
       ],
       "countries": [
@@ -270,7 +269,7 @@
       "daily_counts": [
         0,
         1,
-        17,
+        14,
         0,
         0,
         18,
@@ -368,7 +367,7 @@
     },
     {
       "name": "Dragonforce",
-      "count": 11,
+      "count": 10,
       "victims": [
         {
           "name": "Centro Médico Palafox",
@@ -387,12 +386,6 @@
           "date": "2025-12-27 15:45:03.892075",
           "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=bed18c92-e86f-4909-a7b0-eff76c9e98d4",
           "discovered_date": "2025-12-27T15:45:03.892075"
-        },
-        {
-          "name": "National Credit Regulator (NCR)",
-          "date": "2025-12-24 19:44:44.153925",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=86439ee0-fe94-4bf3-8cf7-056c60e87c1d",
-          "discovered_date": "2025-12-24T19:44:44.153925"
         },
         {
           "name": "BMW Guatemala",
@@ -429,10 +422,15 @@
           "date": "2025-12-24T07:21:20+00:00",
           "url": "https://www.ransomware.live/id/UHJpbWUgTGFiZWxAZHJhZ29uZm9yY2U=",
           "discovered_date": "2025-12-24T07:21:20+00:00"
+        },
+        {
+          "name": "Váhostav",
+          "date": "2025-12-21T20:49:38+00:00",
+          "url": "https://www.ransomware.live/id/VsOhaG9zdGF2QGRyYWdvbmZvcmNl",
+          "discovered_date": "2025-12-21T20:49:38+00:00"
         }
       ],
       "industries": [
-        "Financial Services",
         "Healthcare",
         "Manufacturing",
         "Not Found"
@@ -444,12 +442,12 @@
         "SK",
         "US"
       ],
-      "trend": "up",
-      "trend_percentage": 15,
+      "trend": "stable",
+      "trend_percentage": 0,
       "daily_counts": [
         0,
         0,
-        4,
+        3,
         0,
         0,
         6,
@@ -546,7 +544,7 @@
     },
     {
       "name": "Lynx",
-      "count": 8,
+      "count": 7,
       "victims": [
         {
           "name": "CSA Tax & Advisory",
@@ -589,12 +587,6 @@
           "date": "2025-12-23T14:11:53+00:00",
           "url": "https://www.ransomware.live/id/d3d3LmZlY3J3eS5jb21AbHlueA==",
           "discovered_date": "2025-12-23T14:11:53+00:00"
-        },
-        {
-          "name": "terport.com.py",
-          "date": "2025-12-21T07:49:31+00:00",
-          "url": "https://www.ransomware.live/id/dGVycG9ydC5jb20ucHlAbHlueA==",
-          "discovered_date": "2025-12-21T07:49:31+00:00"
         }
       ],
       "industries": [
@@ -605,7 +597,7 @@
         "DE",
         "JP",
         "N/A",
-        "PY"
+        "US"
       ],
       "trend": "stable",
       "trend_percentage": 0,
@@ -617,6 +609,66 @@
         2,
         0,
         0
+      ]
+    },
+    {
+      "name": "Handala",
+      "count": 6,
+      "victims": [
+        {
+          "name": "Braverman Files Unleashed: Every Secret Now Exposed",
+          "date": "2025-12-28 11:21:47.162041",
+          "url": "http://vmjfieomxhnfjba57sd6jjws2ogvowjgxhhfglsikqvvrnrajbmpxqqd.onion/?p=593",
+          "discovered_date": "2025-12-28T11:21:47.162041"
+        },
+        {
+          "name": "Bibi Gate: The Gatekeeper’s Fall | Tzachi Braverman",
+          "date": "2025-12-28 06:28:23.777691",
+          "url": "http://vmjfieomxhnfjba57sd6jjws2ogvowjgxhhfglsikqvvrnrajbmpxqqd.onion/?p=589",
+          "discovered_date": "2025-12-28T06:28:23.777691"
+        },
+        {
+          "name": "Netanyahu’s Cabinet Awaits Handala’s Next Move",
+          "date": "2025-12-27 23:16:14.610257",
+          "url": "https://handala-hack.to/netanyahus-cabinet-awaits-handalas-next-move/",
+          "discovered_date": "2025-12-27T23:16:14.610257"
+        },
+        {
+          "name": "Braverman Files Unleashed: Every Secret Now Exposed",
+          "date": "2025-12-28T11:21:47+00:00",
+          "url": "https://www.ransomware.live/id/QnJhdmVybWFuIEZpbGVzIFVubGVhc2hlZDogRXZlcnkgU2VjcmV0IE5vdyBFeHBvc2VkQGhhbmRhbGE=",
+          "discovered_date": "2025-12-28T11:21:47+00:00"
+        },
+        {
+          "name": "Bibi Gate: The Gatekeeper’s Fall | Tzachi Braverman",
+          "date": "2025-12-28T06:28:23+00:00",
+          "url": "https://www.ransomware.live/id/QmliaSBHYXRlOiBUaGUgR2F0ZWtlZXBlcuKAmXMgRmFsbCB8IFR6YWNoaSBCcmF2ZXJtYW5AaGFuZGFsYQ==",
+          "discovered_date": "2025-12-28T06:28:23+00:00"
+        },
+        {
+          "name": "Netanyahu’s Cabinet Awaits Handala’s Next Move",
+          "date": "2025-12-27T23:16:14+00:00",
+          "url": "https://www.ransomware.live/id/TmV0YW55YWh14oCZcyBDYWJpbmV0IEF3YWl0cyBIYW5kYWxh4oCZcyBOZXh0IE1vdmVAaGFuZGFsYQ==",
+          "discovered_date": "2025-12-27T23:16:14+00:00"
+        }
+      ],
+      "industries": [
+        "Not Found"
+      ],
+      "countries": [
+        "IL",
+        "N/A"
+      ],
+      "trend": "stable",
+      "trend_percentage": 0,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        4
       ]
     },
     {
@@ -840,54 +892,6 @@
       ]
     },
     {
-      "name": "Incransom",
-      "count": 4,
-      "victims": [
-        {
-          "name": "WSI",
-          "date": "2025-12-24T14:28:48+00:00",
-          "url": "https://www.ransomware.live/id/V1NJQGluY3JhbnNvbQ==",
-          "discovered_date": "2025-12-24T14:28:48+00:00"
-        },
-        {
-          "name": "Talarico",
-          "date": "2025-12-21T15:13:29+00:00",
-          "url": "https://www.ransomware.live/id/VGFsYXJpY29AaW5jcmFuc29t",
-          "discovered_date": "2025-12-21T15:13:29+00:00"
-        },
-        {
-          "name": "Evercover",
-          "date": "2025-12-21T14:24:26+00:00",
-          "url": "https://www.ransomware.live/id/RXZlcmNvdmVyQGluY3JhbnNvbQ==",
-          "discovered_date": "2025-12-21T14:24:26+00:00"
-        },
-        {
-          "name": "svlawus.com",
-          "date": "2025-12-21T12:10:34+00:00",
-          "url": "https://www.ransomware.live/id/c3ZsYXd1cy5jb21AaW5jcmFuc29t",
-          "discovered_date": "2025-12-21T12:10:34+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "FR",
-        "HU",
-        "IT",
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Chaos",
       "count": 3,
       "victims": [
@@ -1055,6 +1059,47 @@
       ]
     },
     {
+      "name": "Incransom",
+      "count": 3,
+      "victims": [
+        {
+          "name": "WSI",
+          "date": "2025-12-24T14:28:48+00:00",
+          "url": "https://www.ransomware.live/id/V1NJQGluY3JhbnNvbQ==",
+          "discovered_date": "2025-12-24T14:28:48+00:00"
+        },
+        {
+          "name": "Talarico",
+          "date": "2025-12-21T15:13:29+00:00",
+          "url": "https://www.ransomware.live/id/VGFsYXJpY29AaW5jcmFuc29t",
+          "discovered_date": "2025-12-21T15:13:29+00:00"
+        },
+        {
+          "name": "Evercover",
+          "date": "2025-12-21T14:24:26+00:00",
+          "url": "https://www.ransomware.live/id/RXZlcmNvdmVyQGluY3JhbnNvbQ==",
+          "discovered_date": "2025-12-21T14:24:26+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "FR",
+        "HU",
+        "IT"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
       "name": "Anubis",
       "count": 3,
       "victims": [
@@ -1092,41 +1137,6 @@
         0,
         0,
         0,
-        0
-      ]
-    },
-    {
-      "name": "Handala",
-      "count": 2,
-      "victims": [
-        {
-          "name": "Netanyahu’s Cabinet Awaits Handala’s Next Move",
-          "date": "2025-12-27 23:16:14.610257",
-          "url": "https://handala-hack.to/netanyahus-cabinet-awaits-handalas-next-move/",
-          "discovered_date": "2025-12-27T23:16:14.610257"
-        },
-        {
-          "name": "Netanyahu’s Cabinet Awaits Handala’s Next Move",
-          "date": "2025-12-27T23:16:14+00:00",
-          "url": "https://www.ransomware.live/id/TmV0YW55YWh14oCZcyBDYWJpbmV0IEF3YWl0cyBIYW5kYWxh4oCZcyBOZXh0IE1vdmVAaGFuZGFsYQ==",
-          "discovered_date": "2025-12-27T23:16:14+00:00"
-        }
-      ],
-      "industries": [
-        "Not Found"
-      ],
-      "countries": [
-        "N/A"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
         0
       ]
     },
@@ -1198,6 +1208,41 @@
         0,
         0,
         0
+      ]
+    },
+    {
+      "name": "Medusa",
+      "count": 2,
+      "victims": [
+        {
+          "name": "JBS",
+          "date": "2025-12-28 08:00:45.564957",
+          "url": "http://xfv4jzckytb4g3ckwemcny3ihv4i5p4lqzdpi624cxisu35my5fwi5qd.onion/detail?id=41d10752afc874fc21305afdf3e01b62",
+          "discovered_date": "2025-12-28T08:00:45.564957"
+        },
+        {
+          "name": "JBS",
+          "date": "2025-12-28T08:00:45+00:00",
+          "url": "https://www.ransomware.live/id/SkJTQG1lZHVzYQ==",
+          "discovered_date": "2025-12-28T08:00:45+00:00"
+        }
+      ],
+      "industries": [
+        "Healthcare"
+      ],
+      "countries": [
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
       ]
     },
     {
