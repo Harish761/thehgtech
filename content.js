@@ -5,52 +5,59 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Dec 28 2025",
+            "title": "Rainbow Six Siege Breach Floods Players with Billions in Credits",
+            "content": "Ubisoft&#x27;s Rainbow Six Siege has experienced a significant security breach, allowing hackers to exploit internal systems to grant billions of in-game credits and cosmetic items to players globally. The breach also enabled unauthorized banning and unbanning of players and manipulation of in-game moderation feeds. This incident affects a wide range of players, potentially disrupting the game&#x27;s economy and fairness. Ubisoft is urgently investigating the breach to mitigate its impact and secure the affected systems. Players are advised to monitor their accounts for unusual activity and report any discrepancies to Ubisoft support.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/massive-rainbow-six-siege-breach-gives-players-billions-of-credits/"
+        },
+        {
+            "date": "Dec 27 2025",
+            "title": "OpenAI&#x27;s ChatGPT May Soon Feature Sponsored Content in Responses",
+            "content": "OpenAI is reportedly considering the integration of &quot;sponsored content&quot; within ChatGPT&#x27;s responses, a move that could significantly influence user interactions and purchasing decisions. This development raises concerns about the potential impact on the perceived neutrality and reliability of AI-generated answers. While details remain sparse, the introduction of sponsored content could alter how users engage with ChatGPT, particularly in commercial contexts. It remains crucial for users to stay informed about these changes and consider the implications for privacy and data use. OpenAI has yet to provide a timeline or confirm the specifics of this initiative.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openais-chatgpt-ads-will-allegedly-prioritize-sponsored-content-in-answers/"
+        },
+        {
+            "date": "Dec 27 2025",
+            "title": "High-Severity MongoDB Flaw Exposes Uninitialized Memory",
+            "content": "A critical vulnerability identified as CVE-2025-14847 has been discovered in MongoDB, allowing unauthenticated attackers to access uninitialized heap memory. This flaw, with a CVSS score of 8.7, results from improper handling of length parameter inconsistencies. Unpatched systems are at risk, potentially exposing sensitive data to attackers. Organizations using MongoDB should prioritize patching to protect against unauthorized data access. This vulnerability underscores the importance of rigorous memory management and security practices in database systems.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/12/new-mongodb-flaw-lets-unauthenticated.html"
+        },
+        {
+            "date": "Dec 26 2025",
+            "title": "AI Adoption in Coding Raises Security Concerns for 2026",
+            "content": "As developers increasingly rely on AI agents for code generation, security experts warn of potential pitfalls in 2026. The integration of AI in development pipelines necessitates heightened attention to security vulnerabilities that could be introduced by automated tools. This trend highlights the need for robust security measures and thorough vetting of AI-generated code. Developers are encouraged to maintain rigorous testing and validation processes to mitigate risks. The evolving landscape of AI in software development demands a proactive approach to balancing innovation with security.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/application-security/coders-adopt-ai-agents-security-pitfalls-lurk-2026"
+        },
+        {
+            "date": "Dec 26 2025",
+            "title": "Participate in Dark Reading&#x27;s State of Application Security Survey",
+            "content": "Dark Reading has launched its State of Application Security Survey, inviting professionals to contribute insights on emerging trends, challenges, and solutions in application security. The survey aims to gather data that will shape future strategies and address key security concerns facing organizations. Participants will help identify critical areas for improvement and innovation in securing applications. This initiative underscores the ongoing need for community engagement and collaboration in strengthening cybersecurity defenses. Professionals are encouraged to participate and share their experiences to drive meaningful change.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/application-security/dark-reading-opens-state-appsec-survey"
+        },
+        {
+            "date": "Dec 26 2025",
+            "title": "LangChain Core Vulnerability Risks LLM Security Through Injection",
+            "content": "A critical vulnerability in LangChain Core, a key Python package, has been disclosed, posing a threat to sensitive data and LLM responses. The flaw allows attackers to perform serialization injection, potentially stealing secrets and influencing large language model outputs. Organizations using LangChain Core should immediately review their systems and apply necessary patches to prevent exploitation. This discovery highlights the ongoing challenges in securing AI and machine learning frameworks. Developers must remain vigilant and adopt best practices to safeguard against such vulnerabilities.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/12/critical-langchain-core-vulnerability.html"
+        },
+        {
+            "date": "Dec 26 2025",
+            "title": "SASE Certifications Enhance Network and Security Convergence Skills",
+            "content": "As cyber threats become more sophisticated, organizations are increasingly adopting Secure Access Service Edge (SASE) to merge network and security functions. Seven key SASE certifications have been identified to validate professionals&#x27; skills in this evolving framework. These certifications are crucial for ensuring effective protection against AI-powered threats and complex cyberattacks. Enterprises are encouraged to invest in training and certification to enhance their security posture. This shift towards SASE reflects a broader trend of integrating cloud-native solutions to address modern security challenges.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4108280/7-sase-certifications-to-validate-converged-network-and-security-skills-2.html"
+        },
+        {
+            "date": "Dec 28 2025",
             "title": "ISC Stormcast Highlights Key Cybersecurity Threats for December 28th, 2025",
             "content": "The SANS Internet Storm Center has released its latest Stormcast for December 28th, 2025, detailing current cybersecurity threats and trends. The InfoCON level remains at green, indicating a baseline level of threat activity. The report underscores the importance of vigilance in monitoring network traffic and maintaining up-to-date security patches. Cybersecurity professionals are advised to review the latest advisories and implement recommended defensive measures. This update serves as a routine reminder of the evolving nature of cyber threats and the necessity for ongoing awareness and preparedness in the cybersecurity community.",
             "source": "SANS Internet Storm Center",
             "sourceUrl": "https://isc.sans.edu/diary/rss/32590"
-        },
-        {
-            "date": "Dec 26 2025",
-            "title": "Grubhub Users Targeted by Fake Cryptocurrency Emails",
-            "content": "Grubhub users have been targeted by a phishing campaign involving fraudulent emails promising a tenfold return on cryptocurrency transfers. The emails, appearing to originate from a legitimate Grubhub address, direct recipients to send bitcoin to a specified wallet. This scam exploits the increasing popularity of cryptocurrency and the trust users place in established brands. Affected users risk financial loss if they fall for the deception. Security experts recommend verifying the authenticity of unexpected financial offers and reporting suspicious emails to the proper authorities. This incident highlights the ongoing threat of phishing attacks in the digital age.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/fake-grubhub-emails-promise-tenfold-return-on-sent-cryptocurrency/"
-        },
-        {
-            "date": "Dec 26 2025",
-            "title": "Critical MongoDB Flaw Exposes Uninitialized Memory",
-            "content": "MongoDB has issued an urgent advisory following the discovery of a high-severity flaw, CVE-2025-14847, that could allow unauthorized access to uninitialized heap memory. This vulnerability arises from mismatched length fields in zlib compressed protocol headers and affects all versions prior to the latest patch. If exploited, attackers could potentially read sensitive data from affected systems. MongoDB users are strongly advised to update to the latest version immediately to mitigate this risk. This flaw underscores the critical importance of timely patch management in maintaining database security.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4111711/high-severity-flaw-in-mongodb-could-allow-memory-leakage-2.html"
-        },
-        {
-            "date": "Dec 26 2025",
-            "title": "Trust Wallet Chrome Extension Breach Results in $7 Million Crypto Loss",
-            "content": "Trust Wallet has confirmed a security breach in its Google Chrome extension, leading to a $7 million cryptocurrency loss. The breach, affecting version 2.68, involved malicious code that compromised users&#x27; wallets. Trust Wallet has urged all users to update to the latest version to secure their accounts. This incident highlights the vulnerabilities inherent in browser extensions and the significant financial risks posed by such exploits. Users are advised to regularly update their software and remain vigilant against potential security threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/12/trust-wallet-chrome-extension-bug.html"
-        },
-        {
-            "date": "Dec 26 2025",
-            "title": "Mentorship and Diversity Key to Cybersecurity&#x27;s Future, Says Webster Bank CISO",
-            "content": "Patricia Voight, Chief Information Security Officer at Webster Bank, emphasizes the critical role of mentorship and diversity in shaping the next generation of cybersecurity professionals. In a rapidly evolving industry, Voight advocates for initiatives that support career advancement and address the growing threat of financial crimes. She highlights the need for diverse perspectives to tackle complex security challenges effectively. Organizations are encouraged to invest in mentorship programs and diversity initiatives to build a more resilient cybersecurity workforce. This approach is seen as essential for fostering innovation and enhancing security outcomes.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cybersecurity-careers/mentorship-and-diversity-shaping-the-next-generation-of-cyber-experts"
-        },
-        {
-            "date": "Dec 26 2025",
-            "title": "Evasive Panda APT Group Conducts DNS Poisoning Campaign",
-            "content": "The China-linked APT group known as Evasive Panda has been identified as the perpetrator of a sophisticated DNS poisoning campaign. This operation targeted victims in Türkiye, China, and India, delivering the MgBot malware via manipulated DNS requests. The campaign exemplifies the advanced tactics employed by state-sponsored actors to conduct cyber espionage. Organizations in the affected regions are advised to review their DNS configurations and apply security patches to defend against such threats. This incident underscores the persistent threat posed by advanced persistent threat groups on a global scale.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/12/china-linked-evasive-panda-ran-dns.html"
-        },
-        {
-            "date": "Dec 26 2025",
-            "title": "Trust Wallet Confirms $7 Million Theft from Compromised Extension",
-            "content": "Trust Wallet has confirmed that a compromised update of its Chrome extension led to a $7 million cryptocurrency theft. Released on December 24, the update allowed attackers to drain users&#x27; wallets, prompting an urgent response from the company. Trust Wallet has advised users to update their extensions and remain alert to phishing attempts. This breach highlights the critical need for robust security measures in browser extensions and the potential consequences of software vulnerabilities. Users should regularly review security advisories and update their extensions to protect their assets.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/trust-wallet-confirms-extension-hack-led-to-7-million-crypto-theft/"
         },
         {
             "date": "May 05 2026",
@@ -62,18 +69,18 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
+            "date": "Dec 26 2025",
+            "title": "TechCrunch Predicts AI Agents and Blockbuster IPOs to Define 2026",
+            "content": "In its annual predictions episode, TechCrunch&#x27;s Equity team forecasts significant technological advancements for 2026, highlighting the emergence of AI agents and a wave of blockbuster IPOs. The discussion, led by hosts Kirsten Korosec, Anthony Ha, Rebecca Bellan, and Isabelle Johannessen, points to mega AI funds as a driving force behind these developments. The team predicts that AI agents will become more autonomous and capable, potentially transforming industries like customer service and logistics. Venture capitalists are expected to shift focus towards these AI innovations, anticipating lucrative returns as AI technology continues to mature. The anticipated IPOs could bring substantial capital influx, reshaping market dynamics and investment strategies. Professionals in the tech sector should prepare for a competitive landscape, emphasizing innovation and strategic investments in AI capabilities.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/podcast/equitys-2026-predictions-ai-agents-blockbuster-ipos-and-the-future-of-vc/"
+        },
+        {
             "date": "Dec 28 2025",
             "title": "Indian Startup Funding Declines as Investors Prioritize Selectivity",
             "content": "In 2025, Indian startup funding reached $11 billion, marking a significant decrease as investors opted for more selective capital allocation. This shift reflects a broader trend where venture capitalists are concentrating resources on fewer, more promising companies, potentially leading to increased competition among startups for limited funds. The decline in funding rounds suggests a strategic pivot towards sustainability and profitability over rapid expansion. This development is critical for startup founders and investors alike, as it may influence funding strategies and priorities in the region. Stakeholders should assess their value propositions and business models to align with this more discerning investment landscape.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2025/12/27/india-startup-funding-hits-11b-in-2025-as-investors-grow-more-selective/"
-        },
-        {
-            "date": "Dec 25 2025",
-            "title": "The AI Buzzwords Dominating 2025",
-            "content": "The past year has seen an explosion in artificial intelligence terminology, with 14 key terms emerging as unavoidable in 2025. This linguistic shift underscores the relentless momentum of the AI industry, catalyzed by groundbreaking developments such as DeepSeek&#x27;s transformative impact. The prominence of these terms highlights the sector&#x27;s dynamic evolution, with companies like Meta pivoting focus from previous ventures such as the metaverse to AI-driven initiatives. For tech professionals, staying informed about these terms is crucial, as they encapsulate the latest trends and innovations shaping the future of AI. Engaging with these concepts can provide valuable insights into the industry&#x27;s direction and potential opportunities.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2025/12/25/1130298/ai-wrapped-the-14-ai-terms-you-couldnt-avoid-in-2025/"
         }
     ],
     "articles": {},
