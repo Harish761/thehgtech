@@ -261,23 +261,23 @@ CYBER_FEEDS = [
 ]
 
 AI_FEEDS = [
-    # ===== TIER 1 - Original Sources (4) =====
+    # ===== TIER 1 - Daily News Sources (MOST IMPORTANT) =====
     'https://techcrunch.com/category/artificial-intelligence/feed/',
-    'https://www.theverge.com/ai-artificial-intelligence/rss/index.xml',
-    'https://venturebeat.com/category/ai/feed/',
+    'https://www.theverge.com/rss/ai-artificial-intelligence/index.xml',  # FIXED: /rss/ comes first
+    'https://venturebeat.com/feed/',                            # FIXED: Main feed (category feed broken)
+    'https://www.wired.com/feed/tag/ai/latest/rss',             # NEW: WIRED AI - Very active
+    'https://arstechnica.com/tag/artificial-intelligence/feed/', # NEW: Ars Technica AI
     'https://www.artificialintelligence-news.com/feed/',
     
-    # ===== PHASE 1 EXPANSION - Top Quality Sources (5) =====
+    # ===== PHASE 1 EXPANSION - Quality Sources =====
     'https://www.technologyreview.com/topic/artificial-intelligence/feed',  # MIT - Academic rigor
+    
+    # ===== Company Blogs (Infrequent but valuable when posted) =====
     'https://ai.googleblog.com/feeds/posts/default',            # Google AI - Authoritative
     'https://openai.com/blog/rss.xml',                          # OpenAI - GPT updates
     'https://www.anthropic.com/index/rss.xml',                  # Anthropic - Claude updates
     'https://deepmind.google/blog/rss.xml',                     # DeepMind - Research
-    
-    # ===== PHASE 2 EXPANSION - Premium Sources (4) =====
     'https://huggingface.co/blog/feed.xml',                     # Hugging Face - Open-source AI
-    'https://paperswithcode.com/latest/rss.xml',                # Papers with Code - Research
-    'https://www.deeplearning.ai/the-batch/feed/',              # The Batch - Andrew Ng newsletter
     'https://ai.meta.com/blog/rss/',                            # Meta AI - Llama updates
 ]
 
