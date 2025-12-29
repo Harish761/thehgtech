@@ -17,6 +17,42 @@
       "author": "TheHGTech Bot"
     },
     {
+      "id": "article-mongodb-mongobleed-2025",
+      "title": "MongoBleed CVE-2025-14847: When Your Database Becomes a Credential Vending Machine",
+      "date": "December 29, 2025",
+      "category": "Database Security",
+      "badge": "CRITICAL",
+      "excerpt": "Critical memory leak in MongoDB allows unauthenticated attackers to steal credentials, API keys, and session tokens. 87,000+ servers exposed. PoC in the wild.",
+      "image": "images/articles/mongodb-mongobleed-cve-2025.png",
+      "tags": [
+        "MongoDB",
+        "CVE",
+        "MongoBleed",
+        "Memory Leak",
+        "Database Security"
+      ],
+      "author": "TheHGTech",
+      "externalUrl": "articles/mongodb-mongobleed-cve-2025-14847.html"
+    },
+    {
+      "id": "article-scattered-spider-teen-2025",
+      "title": "The $115 Million Teenager: Inside Scattered Spider's Corporate Rampage",
+      "date": "December 29, 2025",
+      "category": "Ransomware",
+      "badge": "BREAKING",
+      "excerpt": "19-year-old London teen allegedly led Scattered Spider attacks on 47 US companies. Social engineering beats security. The new face of cybercrime.",
+      "image": "images/articles/scattered-spider-teen-hacker-2025.png",
+      "tags": [
+        "Scattered Spider",
+        "Ransomware",
+        "Social Engineering",
+        "Teen Hacker",
+        "Octo Tempest"
+      ],
+      "author": "TheHGTech",
+      "externalUrl": "articles/scattered-spider-teen-hacker-115-million.html"
+    },
+    {
       "id": "article-react2shell-cve-2025",
       "title": "React2Shell CVE-2025-55182: The CVSS 10.0 Vulnerability That Turned React Into a Weapon",
       "date": "December 27, 2025",

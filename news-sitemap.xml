@@ -5,6 +5,32 @@
   <!-- ========== LATEST NEWS ARTICLES (Last 48 hours for Google News) ========== -->
   
   <url>
+    <loc>https://thehgtech.com/articles/mongodb-mongobleed-cve-2025-14847.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-29T00:00:00+05:30</news:publication_date>
+      <news:title>MongoBleed CVE-2025-14847: Critical MongoDB Memory Leak Exposes Credentials</news:title>
+      <news:keywords>MongoBleed, CVE-2025-14847, MongoDB, database security, memory leak, credential theft</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/scattered-spider-teen-hacker-115-million.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-29T00:00:00+05:30</news:publication_date>
+      <news:title>Scattered Spider Teen Hacker: 19-Year-Old Stole $115 Million from 47 US Companies</news:title>
+      <news:keywords>Scattered Spider, teen hacker, ransomware, social engineering, Octo Tempest, cyberattack 2025</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://thehgtech.com/articles/react2shell-cve-2025-55182-react-vulnerability.html</loc>
     <news:news>
       <news:publication>
