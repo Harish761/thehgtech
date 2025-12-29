@@ -4,53 +4,53 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Dec 28 2025",
-            "title": "MongoBleed Vulnerability Exposes 87,000 MongoDB Servers",
-            "content": "A critical vulnerability known as MongoBleed (CVE-2025-14847) is actively being exploited, affecting multiple versions of MongoDB and exposing over 80,000 servers to potential data leaks. The flaw allows unauthorized access to sensitive information by exploiting mismatched length fields in zlib compressed protocol headers. This vulnerability poses a significant risk to organizations relying on MongoDB for data storage, particularly those with servers exposed to the public web. MongoDB users are urged to update their systems immediately to mitigate this risk. The incident underscores the importance of timely patching and monitoring of database systems to prevent unauthorized access and data breaches.",
+            "date": "Dec 29 2025",
+            "title": "Korean Air Data Breach Exposes Employee Information",
+            "content": "Korean Air has confirmed a data breach impacting thousands of its employees due to a cyberattack on its former subsidiary, Korean Air Catering &amp; Duty-Free (KC&amp;D). The breach involved unauthorized access to sensitive employee data, though specific details about the compromised information have not been disclosed. This incident highlights the risks associated with supply chain vulnerabilities, as third-party partners can become entry points for cyber threats. Affected employees should remain vigilant for signs of identity theft and consider monitoring their financial accounts. Korean Air is working with cybersecurity experts to investigate the breach and enhance its security measures.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/exploited-mongobleed-flaw-leaks-mongodb-secrets-87k-servers-exposed/"
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/korean-air-data-breach-exposes-data-of-thousands-of-employees/"
         },
         {
-            "date": "Dec 28 2025",
-            "title": "Alleged WIRED Database Breach Exposes 2.3 Million Records",
-            "content": "A hacker has claimed responsibility for breaching Condé Nast and leaking a database allegedly containing over 2.3 million subscriber records from WIRED. The attacker has also threatened to release up to 40 million additional records from other Condé Nast properties. If true, this breach could have significant implications for subscribers, potentially exposing personal information and leading to identity theft or phishing attacks. Condé Nast has yet to confirm the breach, but affected users should be vigilant about monitoring their accounts for suspicious activity. This incident highlights the ongoing challenges of securing large databases against increasingly sophisticated cyber threats.",
+            "date": "Dec 29 2025",
+            "title": "Fortinet Alerts Users to Exploitation of Old Two-Factor Flaw",
+            "content": "Fortinet has issued a warning about ongoing attacks exploiting an old vulnerability, identified as CVE-2020-12812, in its FortiOS software. This flaw allows attackers to bypass two-factor authentication, potentially granting unauthorized access to affected systems. The vulnerability persists in systems that have not applied the necessary patches, despite being disclosed over five years ago. Organizations using Fortinet products are advised to update to the latest software versions and ensure all security patches are applied. This situation underscores the critical importance of timely patch management in preventing exploitation of known vulnerabilities.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/fortinet-warns-of-new-attacks-exploiting-old-vulnerability/"
+        },
+        {
+            "date": "Dec 29 2025",
+            "title": "Microsoft Integrates GPT 5.2 into Copilot with Smart Plus Mode",
+            "content": "Microsoft is enhancing its Copilot feature by rolling out GPT 5.2 as a new &quot;Smart Plus&quot; mode across web, Windows, and mobile platforms. This update is a free upgrade and will operate alongside the existing GPT 5.1 model, offering users improved AI capabilities. GPT 5.2 is expected to deliver more accurate and context-aware responses, enhancing productivity tools for developers and users alike. This rollout reflects Microsoft&#x27;s commitment to integrating advanced AI models into its products, aiming to streamline workflows and boost efficiency. Users should explore the new features to leverage enhanced AI-driven assistance.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hacker-claims-to-leak-wired-database-with-23-million-records/"
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-copilot-is-rolling-out-gpt-52-as-smart-plus-mode/"
         },
         {
-            "date": "Dec 26 2025",
-            "title": "Grubhub Users Targeted by Fake Cryptocurrency Return Scam",
-            "content": "Grubhub users have been targeted by a scam involving fraudulent emails promising a tenfold return on cryptocurrency sent to a specified wallet. The emails, appearing to originate from a legitimate Grubhub email address, aim to deceive users into transferring bitcoin under false pretenses. This scam is part of a broader trend of phishing attacks exploiting brand trust to steal cryptocurrency. Users are advised to verify the authenticity of unexpected emails and avoid sending cryptocurrency to unverified addresses. Grubhub has been alerted to the situation and is likely investigating the source of the compromised emails.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/fake-grubhub-emails-promise-tenfold-return-on-sent-cryptocurrency/"
+            "date": "Dec 29 2025",
+            "title": "Coupang Responds to Data Breach with $1.17 Billion in Vouchers",
+            "content": "E-commerce giant Coupang has announced plans to issue $1.17 billion in purchase vouchers to 33.7 million individuals affected by a recent data breach. The breach exposed sensitive customer information, prompting the company to take significant steps to mitigate potential fallout. This compensation plan is one of the largest in response to a data breach, highlighting the severe impact and scale of the incident. Affected customers are advised to remain cautious about phishing attempts and unauthorized account activity. Coupang is also enhancing its cybersecurity measures to prevent future breaches and restore customer trust.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/coupang-to-issue-1-17-billion-in-vouchers-over-data-breach/"
         },
         {
-            "date": "Dec 26 2025",
-            "title": "MongoDB Urges Immediate Update Due to High Severity Flaw",
-            "content": "MongoDB has issued an urgent advisory for users to update their systems following the discovery of a high severity flaw, CVE-2025-14847, which allows unauthenticated users to read uninitialized heap memory. This vulnerability, caused by mismatched length fields in zlib compressed protocol headers, could lead to potential data exposure. The flaw affects multiple versions of MongoDB, posing a serious risk to data integrity and confidentiality. Organizations using MongoDB should prioritize updating to the latest version to protect against possible exploitation. This incident highlights the critical need for regular updates and security audits in database management.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4111711/high-severity-flaw-in-mongodb-could-allow-memory-leakage-2.html"
+            "date": "Dec 29 2025",
+            "title": "Massive Aflac Data Breach Affects 22 Million Individuals",
+            "content": "Aflac has disclosed a significant data breach that compromised the personal information of 22 million individuals, including names, addresses, Social Security numbers, and health insurance details. This breach marks a substantial security failure, exposing sensitive data that could be exploited for identity theft and fraud. The insurance company is advising affected individuals to monitor their credit reports and consider identity theft protection services. This incident underscores the critical need for robust data protection strategies in the insurance industry, where sensitive personal information is frequently targeted by cybercriminals.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/22-million-affected-by-aflac-data-breach/"
         },
         {
-            "date": "Dec 26 2025",
-            "title": "Trust Wallet Chrome Extension Breach Results in $7 Million Loss",
-            "content": "Trust Wallet has reported a security incident involving its Google Chrome extension, leading to a loss of approximately $7 million due to malicious code. The breach affects version 2.68 of the multi-chain, non-custodial cryptocurrency wallet service. Users are urged to update to the latest version immediately to safeguard their assets. This incident underscores the vulnerabilities associated with browser extensions and the importance of maintaining up-to-date security measures. Trust Wallet is investigating the breach and working to enhance its security protocols to prevent future incidents.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/12/trust-wallet-chrome-extension-bug.html"
+            "date": "Dec 29 2025",
+            "title": "Malware in 2025 Expands Beyond Windows to Multiple Platforms",
+            "content": "In 2025, malware threats have increasingly diversified, targeting not just Windows PCs but also Android, macOS, and other platforms. This trend highlights a shift in cybercriminal strategies as they aim to exploit vulnerabilities across various operating systems and devices. Security experts emphasize the importance of comprehensive protection measures that extend beyond traditional Windows-focused solutions. Users are encouraged to keep all devices updated with the latest security patches and use reputable security software. This evolution in malware distribution calls for heightened awareness and proactive defense strategies across all digital platforms.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2025/12/malware-in-2025-spread-beyond-windows-pcs"
         },
         {
-            "date": "Dec 26 2025",
-            "title": "Advancing Cybersecurity Careers Through Mentorship and Diversity",
-            "content": "Patricia Voight, CISO at Webster Bank, emphasizes the critical role of mentorship and diversity in shaping the next generation of cybersecurity professionals. In a rapidly evolving industry, fostering diverse talent is essential to address complex cybersecurity challenges and combat financial crimes effectively. Voight advocates for initiatives that support career advancement and inclusion, highlighting the positive impact of diverse perspectives on problem-solving and innovation. As cybersecurity threats grow more sophisticated, organizations must prioritize diversity and mentorship to build resilient teams capable of protecting against emerging risks.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cybersecurity-careers/mentorship-and-diversity-shaping-the-next-generation-of-cyber-experts"
-        },
-        {
-            "date": "Dec 26 2025",
-            "title": "China-Linked Evasive Panda APT Conducts DNS Poisoning Campaign",
-            "content": "The China-linked advanced persistent threat (APT) group, Evasive Panda, has been identified as conducting a targeted cyber espionage campaign using DNS poisoning to deliver its MgBot malware. This attack method involves manipulating Domain Name System requests to redirect victims to malicious sites, impacting targets in Türkiye, China, and India. The campaign highlights the sophisticated techniques employed by state-sponsored actors to infiltrate critical infrastructure and exfiltrate sensitive data. Organizations in affected regions should enhance their DNS security measures and monitor for signs of compromise. This incident underscores the ongoing threat posed by nation-state actors in cyberspace.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/12/china-linked-evasive-panda-ran-dns.html"
+            "date": "Dec 29 2025",
+            "title": "Infostealer Malware Deployed via EmEditor Supply Chain Attack",
+            "content": "A supply chain attack has compromised the official EmEditor website, distributing infostealer malware through its download button. Users downloading the text editor may have inadvertently installed malicious software designed to harvest sensitive information. This incident highlights the growing threat of supply chain attacks, where trusted software distribution channels are hijacked by cybercriminals. Users who recently downloaded EmEditor should conduct thorough security scans and monitor their systems for unusual activity. Developers and companies are urged to strengthen their supply chain security protocols to prevent similar breaches in the future.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/infostealer-malware-delivered-in-emeditor-supply-chain-attack/"
         },
         {
             "date": "May 05 2026",
