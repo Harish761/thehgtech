@@ -5,59 +5,52 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Dec 28 2025",
-            "title": "Rainbow Six Siege Breach Floods Players with Billions in Credits",
-            "content": "Ubisoft&#x27;s Rainbow Six Siege has experienced a significant security breach, allowing hackers to exploit internal systems to grant billions of in-game credits and cosmetic items to players globally. The breach also enabled unauthorized banning and unbanning of players and manipulation of in-game moderation feeds. This incident affects a wide range of players, potentially disrupting the game&#x27;s economy and fairness. Ubisoft is urgently investigating the breach to mitigate its impact and secure the affected systems. Players are advised to monitor their accounts for unusual activity and report any discrepancies to Ubisoft support.",
+            "title": "MongoBleed Vulnerability Exposes 87,000 MongoDB Servers",
+            "content": "A critical vulnerability known as MongoBleed (CVE-2025-14847) is actively being exploited, affecting multiple versions of MongoDB and exposing over 80,000 servers to potential data leaks. The flaw allows unauthorized access to sensitive information by exploiting mismatched length fields in zlib compressed protocol headers. This vulnerability poses a significant risk to organizations relying on MongoDB for data storage, particularly those with servers exposed to the public web. MongoDB users are urged to update their systems immediately to mitigate this risk. The incident underscores the importance of timely patching and monitoring of database systems to prevent unauthorized access and data breaches.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/massive-rainbow-six-siege-breach-gives-players-billions-of-credits/"
-        },
-        {
-            "date": "Dec 27 2025",
-            "title": "OpenAI&#x27;s ChatGPT May Soon Feature Sponsored Content in Responses",
-            "content": "OpenAI is reportedly considering the integration of &quot;sponsored content&quot; within ChatGPT&#x27;s responses, a move that could significantly influence user interactions and purchasing decisions. This development raises concerns about the potential impact on the perceived neutrality and reliability of AI-generated answers. While details remain sparse, the introduction of sponsored content could alter how users engage with ChatGPT, particularly in commercial contexts. It remains crucial for users to stay informed about these changes and consider the implications for privacy and data use. OpenAI has yet to provide a timeline or confirm the specifics of this initiative.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openais-chatgpt-ads-will-allegedly-prioritize-sponsored-content-in-answers/"
-        },
-        {
-            "date": "Dec 27 2025",
-            "title": "High-Severity MongoDB Flaw Exposes Uninitialized Memory",
-            "content": "A critical vulnerability identified as CVE-2025-14847 has been discovered in MongoDB, allowing unauthenticated attackers to access uninitialized heap memory. This flaw, with a CVSS score of 8.7, results from improper handling of length parameter inconsistencies. Unpatched systems are at risk, potentially exposing sensitive data to attackers. Organizations using MongoDB should prioritize patching to protect against unauthorized data access. This vulnerability underscores the importance of rigorous memory management and security practices in database systems.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/12/new-mongodb-flaw-lets-unauthenticated.html"
-        },
-        {
-            "date": "Dec 26 2025",
-            "title": "AI Adoption in Coding Raises Security Concerns for 2026",
-            "content": "As developers increasingly rely on AI agents for code generation, security experts warn of potential pitfalls in 2026. The integration of AI in development pipelines necessitates heightened attention to security vulnerabilities that could be introduced by automated tools. This trend highlights the need for robust security measures and thorough vetting of AI-generated code. Developers are encouraged to maintain rigorous testing and validation processes to mitigate risks. The evolving landscape of AI in software development demands a proactive approach to balancing innovation with security.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/application-security/coders-adopt-ai-agents-security-pitfalls-lurk-2026"
-        },
-        {
-            "date": "Dec 26 2025",
-            "title": "Participate in Dark Reading&#x27;s State of Application Security Survey",
-            "content": "Dark Reading has launched its State of Application Security Survey, inviting professionals to contribute insights on emerging trends, challenges, and solutions in application security. The survey aims to gather data that will shape future strategies and address key security concerns facing organizations. Participants will help identify critical areas for improvement and innovation in securing applications. This initiative underscores the ongoing need for community engagement and collaboration in strengthening cybersecurity defenses. Professionals are encouraged to participate and share their experiences to drive meaningful change.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/application-security/dark-reading-opens-state-appsec-survey"
-        },
-        {
-            "date": "Dec 26 2025",
-            "title": "LangChain Core Vulnerability Risks LLM Security Through Injection",
-            "content": "A critical vulnerability in LangChain Core, a key Python package, has been disclosed, posing a threat to sensitive data and LLM responses. The flaw allows attackers to perform serialization injection, potentially stealing secrets and influencing large language model outputs. Organizations using LangChain Core should immediately review their systems and apply necessary patches to prevent exploitation. This discovery highlights the ongoing challenges in securing AI and machine learning frameworks. Developers must remain vigilant and adopt best practices to safeguard against such vulnerabilities.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/12/critical-langchain-core-vulnerability.html"
-        },
-        {
-            "date": "Dec 26 2025",
-            "title": "SASE Certifications Enhance Network and Security Convergence Skills",
-            "content": "As cyber threats become more sophisticated, organizations are increasingly adopting Secure Access Service Edge (SASE) to merge network and security functions. Seven key SASE certifications have been identified to validate professionals&#x27; skills in this evolving framework. These certifications are crucial for ensuring effective protection against AI-powered threats and complex cyberattacks. Enterprises are encouraged to invest in training and certification to enhance their security posture. This shift towards SASE reflects a broader trend of integrating cloud-native solutions to address modern security challenges.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4108280/7-sase-certifications-to-validate-converged-network-and-security-skills-2.html"
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/exploited-mongobleed-flaw-leaks-mongodb-secrets-87k-servers-exposed/"
         },
         {
             "date": "Dec 28 2025",
-            "title": "ISC Stormcast Highlights Key Cybersecurity Threats for December 28th, 2025",
-            "content": "The SANS Internet Storm Center has released its latest Stormcast for December 28th, 2025, detailing current cybersecurity threats and trends. The InfoCON level remains at green, indicating a baseline level of threat activity. The report underscores the importance of vigilance in monitoring network traffic and maintaining up-to-date security patches. Cybersecurity professionals are advised to review the latest advisories and implement recommended defensive measures. This update serves as a routine reminder of the evolving nature of cyber threats and the necessity for ongoing awareness and preparedness in the cybersecurity community.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32590"
+            "title": "Alleged WIRED Database Breach Exposes 2.3 Million Records",
+            "content": "A hacker has claimed responsibility for breaching Condé Nast and leaking a database allegedly containing over 2.3 million subscriber records from WIRED. The attacker has also threatened to release up to 40 million additional records from other Condé Nast properties. If true, this breach could have significant implications for subscribers, potentially exposing personal information and leading to identity theft or phishing attacks. Condé Nast has yet to confirm the breach, but affected users should be vigilant about monitoring their accounts for suspicious activity. This incident highlights the ongoing challenges of securing large databases against increasingly sophisticated cyber threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hacker-claims-to-leak-wired-database-with-23-million-records/"
+        },
+        {
+            "date": "Dec 26 2025",
+            "title": "Grubhub Users Targeted by Fake Cryptocurrency Return Scam",
+            "content": "Grubhub users have been targeted by a scam involving fraudulent emails promising a tenfold return on cryptocurrency sent to a specified wallet. The emails, appearing to originate from a legitimate Grubhub email address, aim to deceive users into transferring bitcoin under false pretenses. This scam is part of a broader trend of phishing attacks exploiting brand trust to steal cryptocurrency. Users are advised to verify the authenticity of unexpected emails and avoid sending cryptocurrency to unverified addresses. Grubhub has been alerted to the situation and is likely investigating the source of the compromised emails.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/fake-grubhub-emails-promise-tenfold-return-on-sent-cryptocurrency/"
+        },
+        {
+            "date": "Dec 26 2025",
+            "title": "MongoDB Urges Immediate Update Due to High Severity Flaw",
+            "content": "MongoDB has issued an urgent advisory for users to update their systems following the discovery of a high severity flaw, CVE-2025-14847, which allows unauthenticated users to read uninitialized heap memory. This vulnerability, caused by mismatched length fields in zlib compressed protocol headers, could lead to potential data exposure. The flaw affects multiple versions of MongoDB, posing a serious risk to data integrity and confidentiality. Organizations using MongoDB should prioritize updating to the latest version to protect against possible exploitation. This incident highlights the critical need for regular updates and security audits in database management.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4111711/high-severity-flaw-in-mongodb-could-allow-memory-leakage-2.html"
+        },
+        {
+            "date": "Dec 26 2025",
+            "title": "Trust Wallet Chrome Extension Breach Results in $7 Million Loss",
+            "content": "Trust Wallet has reported a security incident involving its Google Chrome extension, leading to a loss of approximately $7 million due to malicious code. The breach affects version 2.68 of the multi-chain, non-custodial cryptocurrency wallet service. Users are urged to update to the latest version immediately to safeguard their assets. This incident underscores the vulnerabilities associated with browser extensions and the importance of maintaining up-to-date security measures. Trust Wallet is investigating the breach and working to enhance its security protocols to prevent future incidents.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/12/trust-wallet-chrome-extension-bug.html"
+        },
+        {
+            "date": "Dec 26 2025",
+            "title": "Advancing Cybersecurity Careers Through Mentorship and Diversity",
+            "content": "Patricia Voight, CISO at Webster Bank, emphasizes the critical role of mentorship and diversity in shaping the next generation of cybersecurity professionals. In a rapidly evolving industry, fostering diverse talent is essential to address complex cybersecurity challenges and combat financial crimes effectively. Voight advocates for initiatives that support career advancement and inclusion, highlighting the positive impact of diverse perspectives on problem-solving and innovation. As cybersecurity threats grow more sophisticated, organizations must prioritize diversity and mentorship to build resilient teams capable of protecting against emerging risks.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cybersecurity-careers/mentorship-and-diversity-shaping-the-next-generation-of-cyber-experts"
+        },
+        {
+            "date": "Dec 26 2025",
+            "title": "China-Linked Evasive Panda APT Conducts DNS Poisoning Campaign",
+            "content": "The China-linked advanced persistent threat (APT) group, Evasive Panda, has been identified as conducting a targeted cyber espionage campaign using DNS poisoning to deliver its MgBot malware. This attack method involves manipulating Domain Name System requests to redirect victims to malicious sites, impacting targets in Türkiye, China, and India. The campaign highlights the sophisticated techniques employed by state-sponsored actors to infiltrate critical infrastructure and exfiltrate sensitive data. Organizations in affected regions should enhance their DNS security measures and monitor for signs of compromise. This incident underscores the ongoing threat posed by nation-state actors in cyberspace.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/12/china-linked-evasive-panda-ran-dns.html"
         },
         {
             "date": "May 05 2026",
@@ -143,18 +136,6 @@ const websiteContent = {
         "privacy": "<h2>Privacy Policy</h2><p style='color: var(--text-muted); font-size: 0.9rem; margin-bottom: 2rem;'>Last Updated: November 18, 2025</p><h3>Information We Collect</h3><p>TheHGTech is committed to protecting your privacy. We collect minimal information necessary to provide our services:</p><ul style='margin-left: 1.5rem; margin-bottom: 1.5rem;'><li>Usage data (pages visited, time spent, browser type) via Google Analytics</li><li>Cookies for theme preferences and site functionality</li></ul><h3>Third-Party Services</h3><p>We use the following third-party services that may collect data:</p><ul style='margin-left: 1.5rem; margin-bottom: 1.5rem;'><li><strong>Google Analytics:</strong> For anonymous traffic analysis</li><li><strong>Carbon Ads (via Fullres):</strong> For displaying privacy-friendly advertisements</li></ul><h3>Advertising</h3><p>We display advertisements through Carbon Ads, a privacy-focused ad network. Carbon Ads:</p><ul style='margin-left: 1.5rem; margin-bottom: 1.5rem;'><li>Does NOT use cookies for tracking</li><li>Does NOT collect personal information</li><li>Only uses contextual targeting based on page content</li><li>Serves ads from ethical, vetted technology companies</li></ul><p>Learn more: <a href='https://www.carbonads.net/privacy' target='_blank' rel='noopener noreferrer' style='color: var(--accent);'>Carbon Ads Privacy Policy</a></p><h3>Cookies</h3><p>We use minimal cookies for:</p><ul style='margin-left: 1.5rem; margin-bottom: 1.5rem;'><li>Remembering your dark/light theme preference</li><li>Tracking cookie consent (if accepted)</li></ul><h3>Data Security</h3><p>We implement industry-standard security measures including HTTPS, Content Security Policy (CSP), and HSTS to protect your information.</p><h3>Your Rights</h3><p>You have the right to:</p><ul style='margin-left: 1.5rem; margin-bottom: 1.5rem;'><li>Access any personal data we hold about you</li><li>Request deletion of your data</li><li>Opt-out of analytics by using browser privacy settings</li><li>Use ad blockers to prevent ad display</li></ul><h3>External Links</h3><p>Our site contains links to external websites. We are not responsible for the privacy practices of these sites.</p><h3>Changes to Policy</h3><p>We may update this policy periodically. The 'Last Updated' date will reflect any changes.</p><h3>Contact</h3><p>For privacy concerns, contact us at: <a href='mailto:harish@thehgtech.com' style='color: var(--accent);'>harish@thehgtech.com</a></p>",
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
-    "recentCVEs": [
-        {
-            "cveId": "CVE-2023-52163",
-            "dateAdded": "Dec 22, 2025",
-            "vendor": "Digiever DS-2105 Pro",
-            "description": "Digiever DS-2105 Pro contains a missing authorization vulnerability which could allow for command injection via time_tzsetup.cgi.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-52163",
-            "isZeroDay": false
-        }
-    ],
+    "recentCVEs": [],
     "featureCards": []
 };
