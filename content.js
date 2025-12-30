@@ -5,6 +5,55 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Dec 30 2025",
+            "title": "Cybersecurity M&amp;A Deals Surpass $84 Billion in 2025",
+            "content": "In 2025, the cybersecurity sector witnessed an unprecedented surge in mergers and acquisitions (M&amp;A), with eight deals each exceeding the $1 billion mark, contributing to a total disclosed value of over $84 billion. This trend underscores the increasing valuation of cybersecurity firms amid heightened demand for advanced security solutions. The acquisitions reflect a strategic consolidation as companies aim to enhance their cybersecurity capabilities in response to escalating cyber threats. Industry analysts suggest this wave of M&amp;A activity is driven by the need to integrate innovative technologies and expand market reach. Security professionals should monitor these developments to understand the shifting landscape and potential impacts on service offerings and competitive dynamics.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/8-cybersecurity-acquisitions-surpassed-1-billion-mark-in-2025/"
+        },
+        {
+            "date": "Dec 30 2025",
+            "title": "Silver Fox Phishing Campaign Targets Indian Taxpayers with ValleyRAT Malware",
+            "content": "The threat actor known as Silver Fox has launched a targeted phishing campaign against Indian users, employing income tax-themed emails to distribute the ValleyRAT malware, also known as Winos 4.0. This sophisticated attack involves a complex kill chain, including techniques like DLL hijacking. The campaign&#x27;s focus on tax-related themes aims to exploit the urgency and anxiety associated with tax filing, increasing the likelihood of successful phishing attempts. Affected users face risks of data theft and unauthorized access to sensitive information. Security teams should enhance email filtering systems and educate users about recognizing phishing attempts to mitigate potential damages.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/12/silver-fox-targets-indian-users-with.html"
+        },
+        {
+            "date": "Dec 30 2025",
+            "title": "Mustang Panda Deploys Kernel-Mode Rootkit for Advanced Cyber Espionage",
+            "content": "The Chinese advanced persistent threat (APT) group Mustang Panda has been detected using a kernel-mode rootkit to deploy its ToneShell backdoor, signaling a sophisticated escalation in their cyber espionage tactics. The rootkit leverages a signed driver file to execute two user-mode shellcodes, facilitating stealthy operations and persistence. This development poses significant risks to organizations targeted by Mustang Panda, as the rootkit&#x27;s capabilities can bypass traditional security measures. The use of such advanced techniques highlights the group&#x27;s ongoing evolution and adaptability. Organizations should prioritize kernel-level security defenses and conduct thorough audits of driver files to detect and prevent such intrusions.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/chinese-apt-mustang-panda-caught-using-kernel-mode-rootkit/"
+        },
+        {
+            "date": "Dec 30 2025",
+            "title": "AI&#x27;s Rapid Rise in 2025 Highlights Overlooked Security Risks",
+            "content": "The year 2025 has exposed significant security risks associated with the accelerated adoption of artificial intelligence (AI) technologies. As organizations rushed to implement AI-driven solutions, many overlooked critical vulnerabilities and ethical considerations. This haste has led to increased exposure to AI-specific threats, including data poisoning and adversarial attacks. The lack of comprehensive security frameworks for AI systems has left users and organizations vulnerable to exploitation. Security professionals are urged to develop robust AI governance policies and invest in AI-specific threat detection and mitigation strategies to safeguard against emerging risks.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2025/12/2025-exposed-risks-we-ignored-while-rushing-ai"
+        },
+        {
+            "date": "Dec 30 2025",
+            "title": "Challenges in Integrating AI into Security Operations Centers",
+            "content": "Despite the rapid integration of artificial intelligence (AI) into security operations centers (SOCs), many teams struggle to derive consistent operational value from these technologies. The primary challenge lies in the lack of an intentional approach to AI integration, leading to fragmented implementations and underutilized capabilities. Effective integration requires a strategic framework that aligns AI tools with existing workflows to enhance threat detection and response efficiency. Security leaders should focus on building cross-functional teams and investing in AI training for analysts to maximize the benefits of AI-driven security solutions. Establishing clear metrics for success can also help in evaluating AI&#x27;s impact on SOC performance.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/12/how-to-integrate-ai-into-modern-soc.html"
+        },
+        {
+            "date": "Dec 30 2025",
+            "title": "Korean Air Employee Data Breached in Oracle EBS Hack",
+            "content": "A cyber attack on KC&amp;D, a former subsidiary of Korean Air, has resulted in the compromise of personal data belonging to approximately 30,000 Korean Air employees. The breach exploited vulnerabilities in Oracle&#x27;s E-Business Suite (EBS), highlighting the ongoing risks associated with legacy enterprise systems. The stolen data could be used for identity theft or further targeted attacks on individuals and the organization. Affected employees are advised to monitor their financial accounts and report any suspicious activities. Organizations using Oracle EBS should apply the latest security patches and conduct regular security assessments to prevent similar incidents.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/korean-air-data-compromised-in-oracle-ebs-hack/"
+        },
+        {
+            "date": "Dec 30 2025",
+            "title": "Mustang Panda Utilizes New Kernel-Mode Rootkit for TONESHELL Deployment",
+            "content": "The Chinese hacking group Mustang Panda has been identified using a previously undocumented kernel-mode rootkit to deploy a backdoor variant named TONESHELL. This cyber attack, detected in mid-2025, targeted an unspecified entity in Asia and was uncovered by researchers at Kaspersky. The rootkit&#x27;s ability to operate at the kernel level allows it to evade detection by conventional security tools, posing a substantial threat to targeted systems. Security teams should enhance their defenses by implementing advanced endpoint detection and response (EDR) solutions capable of identifying rootkit activity. Continuous monitoring and threat intelligence sharing are crucial for staying ahead of such sophisticated adversaries.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/12/mustang-panda-uses-signed-kernel-driver.html"
+        },
+        {
+            "date": "Dec 30 2025",
             "title": "Chinese Hackers Deploy Rootkit to Conceal ToneShell Malware",
             "content": "Chinese state-sponsored hackers have been identified using a rootkit to stealthily deploy the ToneShell backdoor in a campaign targeting government organizations. The sophisticated attack involves a kernel-mode loader, which grants attackers deep access to compromised systems, bypassing traditional security measures. This method allows the ToneShell malware to operate undetected, posing significant risks to sensitive government data and operations. The campaign underscores the growing trend of state actors leveraging advanced persistent threats (APTs) to conduct cyber espionage. Organizations are urged to bolster their defenses by implementing robust endpoint detection and response (EDR) solutions and conducting regular security audits.",
             "source": "BleepingComputer",
@@ -18,41 +67,6 @@ const websiteContent = {
             "sourceUrl": "https://cyberscoop.com/ai-regulation-unified-federal-standards-needed-op-ed/"
         },
         {
-            "date": "Dec 29 2025",
-            "title": "Coupang Allocates $1.17 Billion for Data Breach Compensation",
-            "content": "Coupang, South Korea&#x27;s largest retailer, has announced a $1.17 billion compensation plan for the 33.7 million customers affected by a recent data breach. The breach, discovered last month, exposed sensitive customer information, prompting the company to take swift action to address the fallout. This substantial compensation package reflects the severity of the breach and the company&#x27;s commitment to rebuilding trust with its customers. The incident highlights the critical need for robust data security measures in the retail sector, where vast amounts of personal information are routinely processed. Affected customers are advised to monitor their accounts for suspicious activity and consider identity theft protection services.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/coupang-to-split-117-billion-among-337-million-data-breach-victims/"
-        },
-        {
-            "date": "Dec 29 2025",
-            "title": "MongoBleed Vulnerability Exploited in Ongoing Attacks",
-            "content": "The MongoBleed vulnerability, a high-severity defect affecting multiple versions of the MongoDB database, is currently under active exploitation. This flaw allows attackers to access and manipulate sensitive data stored in MongoDB instances, posing significant risks to organizations relying on this widely used open-source database. The vulnerability&#x27;s discovery has dashed hopes for a quiet end to the year for database administrators and cybersecurity teams. To mitigate the threat, organizations are urged to apply available patches immediately and review their database security configurations. This incident serves as a reminder of the importance of timely vulnerability management in safeguarding critical data assets.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/mongobleed-vulnerability-mongodb-exploitation/"
-        },
-        {
-            "date": "Dec 29 2025",
-            "title": "KrebsOnSecurity Celebrates 16 Years of Cybersecurity Insights",
-            "content": "KrebsOnSecurity.com marks its 16th anniversary, celebrating a legacy of providing in-depth cybersecurity analysis and reporting. Founded by renowned journalist Brian Krebs, the site has become a trusted resource for security professionals, offering insights into the latest threats and trends. Over the years, KrebsOnSecurity has played a pivotal role in uncovering major cyber incidents and influencing the cybersecurity discourse. As the site looks to the future, it remains committed to delivering high-quality, investigative journalism that informs and empowers its readers. The anniversary is an opportunity to reflect on the evolving landscape of cybersecurity and the ongoing need for vigilant reporting.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2025/12/happy-16th-birthday-krebsonsecurity-com/"
-        },
-        {
-            "date": "Dec 29 2025",
-            "title": "Lithuanian Hacker Arrested for Massive Malware Campaign",
-            "content": "A Lithuanian national has been arrested in connection with a widespread malware campaign that infected 2.8 million systems. The malware, disguised as the KMSAuto tool, was used to illegally activate Windows and Office software while secretly stealing clipboard data. This arrest highlights the scale and impact of the campaign, which compromised both individual and enterprise systems worldwide. The incident underscores the risks associated with using unauthorized software activation tools, which often serve as vectors for malware distribution. Users are advised to verify the legitimacy of software sources and employ comprehensive antivirus solutions to prevent similar compromises.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hacker-arrested-for-kmsauto-malware-campaign-with-28-million-downloads/"
-        },
-        {
-            "date": "Dec 29 2025",
-            "title": "Trust Wallet Users Lose $7 Million in Christmas Crypto Heist",
-            "content": "Trust Wallet has reported a significant security breach in which attackers drained approximately $7 million from 2,596 cryptocurrency wallets. The breach occurred after attackers compromised the wallet&#x27;s browser extension just before Christmas, leading to substantial financial losses for affected users. This incident highlights the vulnerabilities inherent in browser-based cryptocurrency wallets, which remain attractive targets for cybercriminals. Trust Wallet users are urged to review their security practices, including enabling two-factor authentication and using hardware wallets for added protection. The breach serves as a stark reminder of the need for heightened vigilance in managing digital assets.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/trust-wallet-says-7-million-crypto-theft-attack-drained-2-596-wallets/"
-        },
-        {
             "date": "May 05 2026",
             "title": "GISEC GLOBAL 2026 Unveils Cybersecurity Innovations in Middle East and Africa",
             "content": "GISEC GLOBAL 2026, the largest cybersecurity event in the Middle East and Africa, has kicked off, showcasing the latest advancements in cybersecurity technology and strategy. The event serves as a platform for industry leaders to discuss emerging threats and innovative solutions. This year&#x27;s focus includes AI-driven security tools, advanced threat detection systems, and new compliance frameworks. Professionals from various sectors, including government and private enterprises, are attending to gain insights into protecting critical infrastructure. The event highlights the region&#x27;s growing importance in the global cybersecurity landscape, emphasizing collaboration and knowledge sharing. Attendees are encouraged to engage with workshops and panels to stay ahead of evolving cyber threats.",
@@ -62,53 +76,53 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
+            "date": "Dec 30 2025",
+            "title": "U.S. Shifts Energy Focus as Data Centers Face Scrutiny",
+            "content": "The U.S. is witnessing a significant shift in energy policy, with increasing support for nuclear energy while coal plants are being phased out. This transition comes amid rising concerns about the energy consumption of data centers, which are facing substantial pushback due to their high electricity demands. As data centers are integral to AI and tech infrastructure, this development could impact tech companies reliant on these facilities for operations. The shift underscores a broader trend towards sustainable energy solutions, with nuclear energy being positioned as a viable alternative. Industry professionals should monitor regulatory changes and explore energy-efficient technologies to mitigate potential operational impacts.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/expired-tired-wired-nuclear-plants/"
+        },
+        {
+            "date": "Dec 30 2025",
+            "title": "AI Therapists Emerge Amid Global Mental Health Crisis",
+            "content": "In response to a global mental health crisis affecting over a billion people, AI-driven therapy solutions are gaining traction. These AI therapists are designed to address the growing prevalence of anxiety and depression, particularly among young demographics. Leveraging machine learning algorithms, these systems aim to provide scalable mental health support. This development highlights the potential of AI to alleviate pressure on traditional healthcare systems, though it raises questions about efficacy and ethical considerations. Stakeholders should consider integrating AI solutions with human oversight to enhance mental health services while ensuring ethical standards are maintained.",
+            "source": "MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2025/12/30/1129392/book-reviews-ai-therapy-mental-health/"
+        },
+        {
+            "date": "Dec 30 2025",
+            "title": "Meta Acquires AI Startup Manus to Enhance Social Platforms",
+            "content": "Meta has acquired Manus, a prominent AI startup, with plans to maintain its independent operations while integrating its technology into Meta’s social platforms like Facebook, Instagram, and WhatsApp. Manus is known for its innovative AI agents, which are expected to complement Meta’s existing chatbot, Meta AI. This acquisition reflects Meta’s strategic focus on enhancing user engagement through advanced AI capabilities. The integration of Manus’s technology aims to provide more personalized and interactive user experiences across Meta&#x27;s platforms. Developers and tech leaders should anticipate new opportunities and challenges as AI becomes more deeply embedded in social media ecosystems.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/29/meta-just-bought-manus-an-ai-startup-everyone-has-been-talking-about/"
+        },
+        {
             "date": "Dec 29 2025",
-            "title": "Fal Unveils Enhanced Flux 2 Image Generator with Cost and Efficiency Gains",
-            "content": "Fal.ai has launched a new version of its Flux 2 image generator, boasting a tenfold reduction in cost and a sixfold increase in efficiency. This development follows the company&#x27;s recent $140 million Series D funding round. The updated Flux 2 is an open-source tool designed for multi-modal media creation, appealing to enterprises seeking cost-effective AI solutions. With these improvements, Fal aims to attract a broader user base, including smaller businesses that previously found AI media tools financially prohibitive. This move aligns with a growing industry trend toward more accessible and sustainable AI technologies, emphasizing both economic and environmental efficiencies.",
+            "title": "New Framework Simplifies AI Development Amid Complex Ecosystem",
+            "content": "Researchers have introduced a new framework designed to simplify the increasingly complex landscape of agentic AI tools and frameworks. As the ecosystem expands, developers face challenges in selecting appropriate tools and models for AI system development. This framework aims to streamline decision-making processes by providing clear guidelines and comparative analyses of available options. Its introduction is timely, given the rapid growth in AI capabilities and applications, which often leaves developers overwhelmed. The framework is expected to enhance productivity and innovation by reducing the cognitive load on developers. Tech professionals should evaluate this framework to optimize their AI development strategies.",
             "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/new-years-ai-surprise-fal-releases-its-own-version-of-flux-2-image-generator"
+            "sourceUrl": "https://venturebeat.com/orchestration/new-framework-simplifies-the-complex-landscape-of-agentic-ai"
         },
         {
-            "date": "Dec 29 2025",
-            "title": "AI Industry Faces Reality Check Amidst 2025&#x27;s Exuberant Growth",
-            "content": "2025 saw a surge in AI investments, characterized by significant funding rounds and ambitious infrastructure projects. However, as the year concludes, the industry faces increasing scrutiny regarding the sustainability, safety, and viability of AI business models. This shift from unchecked enthusiasm to a more cautious approach reflects broader concerns about the long-term impacts of AI technologies. Companies are now urged to prioritize ethical considerations and robust safety measures to maintain trust and relevance. This recalibration is crucial for ensuring that AI developments remain aligned with societal needs and expectations.",
+            "date": "Dec 28 2025",
+            "title": "OpenAI Seeks New Executive to Address Emerging AI Risks",
+            "content": "OpenAI is actively recruiting a new Head of Preparedness to address emerging AI-related risks across various domains, including computer security and mental health. This strategic hire underscores OpenAI’s commitment to proactively managing the potential negative impacts of AI technologies. The role will involve identifying and mitigating risks associated with AI deployment, ensuring that advancements do not compromise security or ethical standards. As AI continues to evolve, the need for dedicated risk management becomes increasingly critical. Organizations should consider similar roles to safeguard their AI initiatives and maintain public trust in AI technologies.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/29/2025-was-the-year-ai-got-a-vibe-check/"
+            "sourceUrl": "https://techcrunch.com/2025/12/28/openai-is-looking-for-a-new-head-of-preparedness/"
         },
         {
-            "date": "Dec 29 2025",
-            "title": "Plaud Note Pro: The AI-Powered Recorder Revolutionizing Note-Taking",
-            "content": "Plaud Note Pro, priced at $179, emerges as a standout AI-powered recording device, gaining popularity among professionals for its exceptional note-taking capabilities. Beyond basic recording, it employs advanced AI algorithms to transcribe and organize audio notes efficiently. This device is particularly beneficial for journalists, students, and business executives who require reliable and accurate documentation of meetings and lectures. The Plaud Note Pro exemplifies the growing integration of AI in everyday tools, enhancing productivity and reducing manual transcription efforts. Users are encouraged to explore its features to optimize their workflow and improve information retention.",
+            "date": "Dec 28 2025",
+            "title": "Expanding Data Centers Drive AI Growth and Energy Concerns",
+            "content": "The global expansion of billion-dollar data centers is a direct consequence of the race for AI dominance, with significant implications for both technology and energy sectors. These massive facilities are crucial for supporting AI computations but also contribute to rising energy consumption and environmental concerns. As data centers become more prevalent, companies are under pressure to adopt sustainable practices and explore energy-efficient technologies. This trend highlights the dual challenge of advancing AI capabilities while minimizing environmental impact. Industry leaders should prioritize investments in green technologies to balance growth with sustainability goals.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/expired-tired-wired-data-centers/"
+        },
+        {
+            "date": "Dec 28 2025",
+            "title": "Selective Investment Drives $11B in Indian Startup Funding",
+            "content": "In 2025, Indian startups secured $11 billion in funding as investors became more selective, concentrating capital into fewer companies. This shift reflects a strategic focus on high-potential ventures amid a competitive funding landscape. The reduced number of funding rounds indicates a maturing market where investors prioritize quality over quantity. This trend could lead to increased pressure on startups to demonstrate robust business models and clear paths to profitability. Entrepreneurs should be prepared to present compelling value propositions and sustainable growth strategies to attract investment in this evolving market environment.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/29/plaud-note-pro-is-an-excellent-ai-powered-recorder-that-i-carry-everywhere/"
-        },
-        {
-            "date": "Dec 29 2025",
-            "title": "China Proposes Stringent AI Regulations to Combat Harmful Content",
-            "content": "China has drafted what could become the world&#x27;s strictest regulations to address AI-related content promoting suicide and violence. The proposed rules mandate human oversight, requiring immediate intervention and notification of guardians if harmful content is detected. This regulatory move underscores China&#x27;s commitment to curbing AI misuse and protecting vulnerable populations. The initiative reflects a global trend towards tighter AI governance, emphasizing the need for ethical AI development. Organizations leveraging AI technologies should prepare for potential compliance requirements, ensuring their systems align with emerging global standards for safety and responsibility.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2025/12/china-drafts-worlds-strictest-rules-to-end-ai-encouraged-suicide-violence/"
-        },
-        {
-            "date": "Dec 29 2025",
-            "title": "New ChatGPT App Integrations Enhance User Experience with Popular Services",
-            "content": "OpenAI&#x27;s ChatGPT now offers seamless integrations with popular apps like DoorDash, Spotify, and Uber, among others, enhancing its utility for users. These integrations allow users to perform tasks such as ordering food, streaming music, and booking rides directly within the ChatGPT interface. This development represents a significant step towards creating a more interconnected digital ecosystem, where AI can streamline and simplify daily activities. Users are encouraged to explore these new features to maximize the convenience and functionality of ChatGPT. This expansion highlights the ongoing evolution of AI as a versatile tool in everyday life.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/29/how-to-use-the-new-chatgpt-app-integrations-including-doordash-spotify-uber-and-others/"
-        },
-        {
-            "date": "Dec 29 2025",
-            "title": "Venture Capitalists Anticipate Robust Enterprise AI Adoption in 2026",
-            "content": "A survey of over 20 venture capitalists reveals optimism for continued strong adoption of enterprise AI technologies in 2026. Key areas of focus include AI agents and increased budget allocations for AI initiatives within organizations. This forecast indicates a sustained belief in AI&#x27;s potential to drive business transformation and efficiency gains. Companies are advised to assess their AI strategies and consider expanding their investment in AI solutions to stay competitive. The anticipated growth underscores the importance of AI in shaping future business landscapes and the need for strategic planning to harness its benefits effectively.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/29/vcs-predict-strong-enterprise-ai-adoption-next-year-again/"
-        },
-        {
-            "date": "Dec 29 2025",
-            "title": "Google Gemini Live&#x27;s Latest Upgrade Introduces Innovative Features",
-            "content": "Google&#x27;s AI platform, Gemini Live, has received a major upgrade, introducing three new capabilities that enhance its intelligence and versatility. These features are designed to improve user interaction and expand the platform&#x27;s applicability across various domains. The update reflects Google&#x27;s commitment to advancing AI technology and maintaining its competitive edge in the AI market. Users should explore these new functionalities to leverage Gemini Live&#x27;s full potential. This upgrade is part of a broader trend of continuous improvement in AI platforms, aimed at delivering more sophisticated and user-friendly experiences.",
-            "source": "Feed: Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/3-tricks-google-gemini-live-latest-major-upgrade/"
+            "sourceUrl": "https://techcrunch.com/2025/12/27/india-startup-funding-hits-11b-in-2025-as-investors-grow-more-selective/"
         }
     ],
     "articles": {},
