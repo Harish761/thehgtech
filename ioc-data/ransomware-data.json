@@ -1,12 +1,12 @@
 {
-  "last_updated": "2025-12-30T01:45:53.979285",
+  "last_updated": "2025-12-30T12:45:20.739342",
   "period": "Last 7 days",
-  "total_groups": 28,
-  "total_victims": 296,
+  "total_groups": 29,
+  "total_victims": 300,
   "groups": [
     {
       "name": "Lockbit5",
-      "count": 96,
+      "count": 92,
       "victims": [
         {
           "name": "samkee.com",
@@ -33,12 +33,6 @@
           "discovered_date": "2025-12-29T19:53:37.556857"
         },
         {
-          "name": "cmc.com.br",
-          "date": "2025-12-26 15:30:02.567532",
-          "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/2a30392d374498a514ee354db096a626",
-          "discovered_date": "2025-12-26T15:30:02.567532"
-        },
-        {
           "name": "zszeleznice.cz",
           "date": "2025-12-26 15:46:54.685884",
           "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/9c83a9092d978058454f9a44a5aac0b8",
@@ -57,16 +51,22 @@
           "discovered_date": "2025-12-26T15:32:56.300919"
         },
         {
-          "name": "carseo.de",
-          "date": "2025-12-26 15:28:54.024554",
-          "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/8cff1a0be50db9c6ec89cb4b04e5cc15",
-          "discovered_date": "2025-12-26T15:28:54.024554"
+          "name": "d-klima.cz",
+          "date": "2025-12-26 15:31:16.037601",
+          "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/38a8fba2ca7c49a4e282c2c2535bd686",
+          "discovered_date": "2025-12-26T15:31:16.037601"
         },
         {
-          "name": "casabotas.es",
-          "date": "2025-12-26 15:29:27.961432",
-          "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/56120658071aaac4e6f4246690e92092",
-          "discovered_date": "2025-12-26T15:29:27.961432"
+          "name": "emresorts.com",
+          "date": "2025-12-26 15:31:49.644372",
+          "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/480c31786b6163b366d70d966e6fefc0",
+          "discovered_date": "2025-12-26T15:31:49.644372"
+        },
+        {
+          "name": "fortrex.hu",
+          "date": "2025-12-26 15:32:23.145796",
+          "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/d7e8009b4584eb08a600b5a8fd62b8bf",
+          "discovered_date": "2025-12-26T15:32:23.145796"
         }
       ],
       "industries": [
@@ -88,7 +88,7 @@
       "daily_counts": [
         0,
         0,
-        88,
+        84,
         0,
         0,
         8,
@@ -623,6 +623,80 @@
       ]
     },
     {
+      "name": "Thegentlemen",
+      "count": 8,
+      "victims": [
+        {
+          "name": "BioNet-Asia",
+          "date": "2025-12-30 08:07:46.329484",
+          "url": "http://tezwsse5czllksjb7cwp65rvnk4oobmzti2znn42i43bjdfd2prqqkad.onion",
+          "discovered_date": "2025-12-30T08:07:46.329484"
+        },
+        {
+          "name": "BioNet-Asia",
+          "date": "2025-12-30T08:07:46+00:00",
+          "url": "https://www.ransomware.live/id/QmlvTmV0LUFzaWFAdGhlZ2VudGxlbWVu",
+          "discovered_date": "2025-12-30T08:07:46+00:00"
+        },
+        {
+          "name": "Usina Sao Jose Do Pinheiro",
+          "date": "2025-12-24T10:03:03+00:00",
+          "url": "https://www.ransomware.live/id/VXNpbmEgU2FvIEpvc2UgRG8gUGluaGVpcm9AdGhlZ2VudGxlbWVu",
+          "discovered_date": "2025-12-24T10:03:03+00:00"
+        },
+        {
+          "name": "Ever Green Industria e Comercio Ltda",
+          "date": "2025-12-24T10:02:26+00:00",
+          "url": "https://www.ransomware.live/id/RXZlciBHcmVlbiBJbmR1c3RyaWEgZSBDb21lcmNpbyBMdGRhQHRoZWdlbnRsZW1lbg==",
+          "discovered_date": "2025-12-24T10:02:26+00:00"
+        },
+        {
+          "name": "All Rush",
+          "date": "2025-12-24T10:01:50+00:00",
+          "url": "https://www.ransomware.live/id/QWxsIFJ1c2hAdGhlZ2VudGxlbWVu",
+          "discovered_date": "2025-12-24T10:01:50+00:00"
+        },
+        {
+          "name": "Santa Casa de Assis",
+          "date": "2025-12-24T10:01:12+00:00",
+          "url": "https://www.ransomware.live/id/U2FudGEgQ2FzYSBkZSBBc3Npc0B0aGVnZW50bGVtZW4=",
+          "discovered_date": "2025-12-24T10:01:12+00:00"
+        },
+        {
+          "name": "Solus Tecnologia em Sistemas LTDA",
+          "date": "2025-12-24T10:00:24+00:00",
+          "url": "https://www.ransomware.live/id/U29sdXMgVGVjbm9sb2dpYSBlbSBTaXN0ZW1hcyBMVERBQHRoZWdlbnRsZW1lbg==",
+          "discovered_date": "2025-12-24T10:00:24+00:00"
+        },
+        {
+          "name": "HSR Specialist Researchers",
+          "date": "2025-12-24T09:59:43+00:00",
+          "url": "https://www.ransomware.live/id/SFNSIFNwZWNpYWxpc3QgUmVzZWFyY2hlcnNAdGhlZ2VudGxlbWVu",
+          "discovered_date": "2025-12-24T09:59:43+00:00"
+        }
+      ],
+      "industries": [
+        "Healthcare"
+      ],
+      "countries": [
+        "BR",
+        "GB",
+        "N/A",
+        "TH"
+      ],
+      "trend": "stable",
+      "trend_percentage": 0,
+      "daily_counts": [
+        6,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ]
+    },
+    {
       "name": "Incransom",
       "count": 7,
       "victims": [
@@ -812,65 +886,6 @@
       ]
     },
     {
-      "name": "Thegentlemen",
-      "count": 6,
-      "victims": [
-        {
-          "name": "Usina Sao Jose Do Pinheiro",
-          "date": "2025-12-24T10:03:03+00:00",
-          "url": "https://www.ransomware.live/id/VXNpbmEgU2FvIEpvc2UgRG8gUGluaGVpcm9AdGhlZ2VudGxlbWVu",
-          "discovered_date": "2025-12-24T10:03:03+00:00"
-        },
-        {
-          "name": "Ever Green Industria e Comercio Ltda",
-          "date": "2025-12-24T10:02:26+00:00",
-          "url": "https://www.ransomware.live/id/RXZlciBHcmVlbiBJbmR1c3RyaWEgZSBDb21lcmNpbyBMdGRhQHRoZWdlbnRsZW1lbg==",
-          "discovered_date": "2025-12-24T10:02:26+00:00"
-        },
-        {
-          "name": "All Rush",
-          "date": "2025-12-24T10:01:50+00:00",
-          "url": "https://www.ransomware.live/id/QWxsIFJ1c2hAdGhlZ2VudGxlbWVu",
-          "discovered_date": "2025-12-24T10:01:50+00:00"
-        },
-        {
-          "name": "Santa Casa de Assis",
-          "date": "2025-12-24T10:01:12+00:00",
-          "url": "https://www.ransomware.live/id/U2FudGEgQ2FzYSBkZSBBc3Npc0B0aGVnZW50bGVtZW4=",
-          "discovered_date": "2025-12-24T10:01:12+00:00"
-        },
-        {
-          "name": "Solus Tecnologia em Sistemas LTDA",
-          "date": "2025-12-24T10:00:24+00:00",
-          "url": "https://www.ransomware.live/id/U29sdXMgVGVjbm9sb2dpYSBlbSBTaXN0ZW1hcyBMVERBQHRoZWdlbnRsZW1lbg==",
-          "discovered_date": "2025-12-24T10:00:24+00:00"
-        },
-        {
-          "name": "HSR Specialist Researchers",
-          "date": "2025-12-24T09:59:43+00:00",
-          "url": "https://www.ransomware.live/id/SFNSIFNwZWNpYWxpc3QgUmVzZWFyY2hlcnNAdGhlZ2VudGxlbWVu",
-          "discovered_date": "2025-12-24T09:59:43+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "BR",
-        "GB",
-        "N/A"
-      ],
-      "trend": "stable",
-      "trend_percentage": 0,
-      "daily_counts": [
-        6,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Nova",
       "count": 4,
       "victims": [
@@ -916,6 +931,55 @@
         0,
         2,
         0
+      ]
+    },
+    {
+      "name": "Kazu",
+      "count": 4,
+      "victims": [
+        {
+          "name": "Saudi Icon",
+          "date": "2025-12-29 16:26:33.893062",
+          "url": "",
+          "discovered_date": "2025-12-29T16:26:33.893062"
+        },
+        {
+          "name": "ManageMyHealth - New Zealand",
+          "date": "2025-12-30 04:07:35.385060",
+          "url": "",
+          "discovered_date": "2025-12-30T04:07:35.385060"
+        },
+        {
+          "name": "ManageMyHealth - New Zealand",
+          "date": "2025-12-30T04:07:35+00:00",
+          "url": "https://www.ransomware.live/id/TWFuYWdlTXlIZWFsdGggLSBOZXcgWmVhbGFuZEBrYXp1",
+          "discovered_date": "2025-12-30T04:07:35+00:00"
+        },
+        {
+          "name": "Saudi Icon",
+          "date": "2025-12-29T16:26:33+00:00",
+          "url": "https://www.ransomware.live/id/U2F1ZGkgSWNvbkBrYXp1",
+          "discovered_date": "2025-12-29T16:26:33+00:00"
+        }
+      ],
+      "industries": [
+        "Healthcare",
+        "Not Found"
+      ],
+      "countries": [
+        "NZ",
+        "SA"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2
       ]
     },
     {
@@ -968,6 +1032,47 @@
       ]
     },
     {
+      "name": "Spacebears",
+      "count": 3,
+      "victims": [
+        {
+          "name": "Firmengruppe Hoffmann",
+          "date": "2025-12-30 02:04:33.884559",
+          "url": "http://5butbkrljkaorg5maepuca25oma7eiwo6a2rlhvkblb4v6mf3ki2ovid.onion/companies/109/firmengruppe-hoffmann",
+          "discovered_date": "2025-12-30T02:04:33.884559"
+        },
+        {
+          "name": "Firmengruppe Hoffmann",
+          "date": "2025-12-30T02:04:33+00:00",
+          "url": "https://www.ransomware.live/id/RmlybWVuZ3J1cHBlIEhvZmZtYW5uQHNwYWNlYmVhcnM=",
+          "discovered_date": "2025-12-30T02:04:33+00:00"
+        },
+        {
+          "name": "Autohaus Elstermann",
+          "date": "2025-12-24T03:02:15+00:00",
+          "url": "https://www.ransomware.live/id/QXV0b2hhdXMgRWxzdGVybWFubkBzcGFjZWJlYXJz",
+          "discovered_date": "2025-12-24T03:02:15+00:00"
+        }
+      ],
+      "industries": [
+        "Not Found"
+      ],
+      "countries": [
+        "DE"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ]
+    },
+    {
       "name": "Everest",
       "count": 3,
       "victims": [
@@ -1008,6 +1113,41 @@
       ]
     },
     {
+      "name": "Cloak",
+      "count": 2,
+      "victims": [
+        {
+          "name": "Fitzpatrickhotels.com",
+          "date": "2025-12-30 11:17:18.096092",
+          "url": "",
+          "discovered_date": "2025-12-30T11:17:18.096092"
+        },
+        {
+          "name": "Fitzpatrickhotels.com",
+          "date": "2025-12-30T11:17:18+00:00",
+          "url": "https://www.ransomware.live/id/Rml0enBhdHJpY2tob3RlbHMuY29tQGNsb2Fr",
+          "discovered_date": "2025-12-30T11:17:18+00:00"
+        }
+      ],
+      "industries": [
+        "Hospitality and Tourism"
+      ],
+      "countries": [
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ]
+    },
+    {
       "name": "Gunra",
       "count": 2,
       "victims": [
@@ -1029,41 +1169,6 @@
       ],
       "countries": [
         "KR"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        0
-      ]
-    },
-    {
-      "name": "Kazu",
-      "count": 2,
-      "victims": [
-        {
-          "name": "Saudi Icon",
-          "date": "2025-12-29 16:26:33.893062",
-          "url": "",
-          "discovered_date": "2025-12-29T16:26:33.893062"
-        },
-        {
-          "name": "Saudi Icon",
-          "date": "2025-12-29T16:26:33+00:00",
-          "url": "https://www.ransomware.live/id/U2F1ZGkgSWNvbkBrYXp1",
-          "discovered_date": "2025-12-29T16:26:33+00:00"
-        }
-      ],
-      "industries": [
-        "Not Found"
-      ],
-      "countries": [
-        "SA"
       ],
       "trend": "down",
       "trend_percentage": -5,
@@ -1350,33 +1455,6 @@
       "industries": [],
       "countries": [
         "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Spacebears",
-      "count": 1,
-      "victims": [
-        {
-          "name": "Autohaus Elstermann",
-          "date": "2025-12-24T03:02:15+00:00",
-          "url": "https://www.ransomware.live/id/QXV0b2hhdXMgRWxzdGVybWFubkBzcGFjZWJlYXJz",
-          "discovered_date": "2025-12-24T03:02:15+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "DE"
       ],
       "trend": "down",
       "trend_percentage": -5,
