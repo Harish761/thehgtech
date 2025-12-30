@@ -4,53 +4,53 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Dec 29 2025",
-            "title": "Korean Air Data Breach Exposes Employee Information",
-            "content": "Korean Air has confirmed a data breach impacting thousands of its employees due to a cyberattack on its former subsidiary, Korean Air Catering &amp; Duty-Free (KC&amp;D). The breach involved unauthorized access to sensitive employee data, though specific details about the compromised information have not been disclosed. This incident highlights the risks associated with supply chain vulnerabilities, as third-party partners can become entry points for cyber threats. Affected employees should remain vigilant for signs of identity theft and consider monitoring their financial accounts. Korean Air is working with cybersecurity experts to investigate the breach and enhance its security measures.",
+            "date": "Dec 30 2025",
+            "title": "Chinese Hackers Deploy Rootkit to Conceal ToneShell Malware",
+            "content": "Chinese state-sponsored hackers have been identified using a rootkit to stealthily deploy the ToneShell backdoor in a campaign targeting government organizations. The sophisticated attack involves a kernel-mode loader, which grants attackers deep access to compromised systems, bypassing traditional security measures. This method allows the ToneShell malware to operate undetected, posing significant risks to sensitive government data and operations. The campaign underscores the growing trend of state actors leveraging advanced persistent threats (APTs) to conduct cyber espionage. Organizations are urged to bolster their defenses by implementing robust endpoint detection and response (EDR) solutions and conducting regular security audits.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/korean-air-data-breach-exposes-data-of-thousands-of-employees/"
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/chinese-state-hackers-use-rootkit-to-hide-toneshell-malware-activity/"
+        },
+        {
+            "date": "Dec 30 2025",
+            "title": "States Take Lead in AI Regulation Amid Federal Inaction",
+            "content": "With artificial intelligence (AI) evolving rapidly, individual states are stepping up to regulate its development and use, as federal guidelines lag behind. California&#x27;s S.B. 53 is a notable example, aiming to establish ethical standards and accountability for AI technologies. This decentralized approach could lead to a patchwork of regulations, complicating compliance for AI developers operating across state lines. The lack of a unified federal framework poses challenges for innovation and raises concerns about the consistency and effectiveness of AI governance. Industry leaders are encouraged to engage with policymakers to shape balanced regulations that support both innovation and ethical AI deployment.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/ai-regulation-unified-federal-standards-needed-op-ed/"
         },
         {
             "date": "Dec 29 2025",
-            "title": "Fortinet Alerts Users to Exploitation of Old Two-Factor Flaw",
-            "content": "Fortinet has issued a warning about ongoing attacks exploiting an old vulnerability, identified as CVE-2020-12812, in its FortiOS software. This flaw allows attackers to bypass two-factor authentication, potentially granting unauthorized access to affected systems. The vulnerability persists in systems that have not applied the necessary patches, despite being disclosed over five years ago. Organizations using Fortinet products are advised to update to the latest software versions and ensure all security patches are applied. This situation underscores the critical importance of timely patch management in preventing exploitation of known vulnerabilities.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/fortinet-warns-of-new-attacks-exploiting-old-vulnerability/"
-        },
-        {
-            "date": "Dec 29 2025",
-            "title": "Microsoft Integrates GPT 5.2 into Copilot with Smart Plus Mode",
-            "content": "Microsoft is enhancing its Copilot feature by rolling out GPT 5.2 as a new &quot;Smart Plus&quot; mode across web, Windows, and mobile platforms. This update is a free upgrade and will operate alongside the existing GPT 5.1 model, offering users improved AI capabilities. GPT 5.2 is expected to deliver more accurate and context-aware responses, enhancing productivity tools for developers and users alike. This rollout reflects Microsoft&#x27;s commitment to integrating advanced AI models into its products, aiming to streamline workflows and boost efficiency. Users should explore the new features to leverage enhanced AI-driven assistance.",
+            "title": "Coupang Allocates $1.17 Billion for Data Breach Compensation",
+            "content": "Coupang, South Korea&#x27;s largest retailer, has announced a $1.17 billion compensation plan for the 33.7 million customers affected by a recent data breach. The breach, discovered last month, exposed sensitive customer information, prompting the company to take swift action to address the fallout. This substantial compensation package reflects the severity of the breach and the company&#x27;s commitment to rebuilding trust with its customers. The incident highlights the critical need for robust data security measures in the retail sector, where vast amounts of personal information are routinely processed. Affected customers are advised to monitor their accounts for suspicious activity and consider identity theft protection services.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-copilot-is-rolling-out-gpt-52-as-smart-plus-mode/"
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/coupang-to-split-117-billion-among-337-million-data-breach-victims/"
         },
         {
             "date": "Dec 29 2025",
-            "title": "Coupang Responds to Data Breach with $1.17 Billion in Vouchers",
-            "content": "E-commerce giant Coupang has announced plans to issue $1.17 billion in purchase vouchers to 33.7 million individuals affected by a recent data breach. The breach exposed sensitive customer information, prompting the company to take significant steps to mitigate potential fallout. This compensation plan is one of the largest in response to a data breach, highlighting the severe impact and scale of the incident. Affected customers are advised to remain cautious about phishing attempts and unauthorized account activity. Coupang is also enhancing its cybersecurity measures to prevent future breaches and restore customer trust.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/coupang-to-issue-1-17-billion-in-vouchers-over-data-breach/"
+            "title": "MongoBleed Vulnerability Exploited in Ongoing Attacks",
+            "content": "The MongoBleed vulnerability, a high-severity defect affecting multiple versions of the MongoDB database, is currently under active exploitation. This flaw allows attackers to access and manipulate sensitive data stored in MongoDB instances, posing significant risks to organizations relying on this widely used open-source database. The vulnerability&#x27;s discovery has dashed hopes for a quiet end to the year for database administrators and cybersecurity teams. To mitigate the threat, organizations are urged to apply available patches immediately and review their database security configurations. This incident serves as a reminder of the importance of timely vulnerability management in safeguarding critical data assets.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/mongobleed-vulnerability-mongodb-exploitation/"
         },
         {
             "date": "Dec 29 2025",
-            "title": "Massive Aflac Data Breach Affects 22 Million Individuals",
-            "content": "Aflac has disclosed a significant data breach that compromised the personal information of 22 million individuals, including names, addresses, Social Security numbers, and health insurance details. This breach marks a substantial security failure, exposing sensitive data that could be exploited for identity theft and fraud. The insurance company is advising affected individuals to monitor their credit reports and consider identity theft protection services. This incident underscores the critical need for robust data protection strategies in the insurance industry, where sensitive personal information is frequently targeted by cybercriminals.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/22-million-affected-by-aflac-data-breach/"
+            "title": "KrebsOnSecurity Celebrates 16 Years of Cybersecurity Insights",
+            "content": "KrebsOnSecurity.com marks its 16th anniversary, celebrating a legacy of providing in-depth cybersecurity analysis and reporting. Founded by renowned journalist Brian Krebs, the site has become a trusted resource for security professionals, offering insights into the latest threats and trends. Over the years, KrebsOnSecurity has played a pivotal role in uncovering major cyber incidents and influencing the cybersecurity discourse. As the site looks to the future, it remains committed to delivering high-quality, investigative journalism that informs and empowers its readers. The anniversary is an opportunity to reflect on the evolving landscape of cybersecurity and the ongoing need for vigilant reporting.",
+            "source": "Krebs on Security",
+            "sourceUrl": "https://krebsonsecurity.com/2025/12/happy-16th-birthday-krebsonsecurity-com/"
         },
         {
             "date": "Dec 29 2025",
-            "title": "Malware in 2025 Expands Beyond Windows to Multiple Platforms",
-            "content": "In 2025, malware threats have increasingly diversified, targeting not just Windows PCs but also Android, macOS, and other platforms. This trend highlights a shift in cybercriminal strategies as they aim to exploit vulnerabilities across various operating systems and devices. Security experts emphasize the importance of comprehensive protection measures that extend beyond traditional Windows-focused solutions. Users are encouraged to keep all devices updated with the latest security patches and use reputable security software. This evolution in malware distribution calls for heightened awareness and proactive defense strategies across all digital platforms.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2025/12/malware-in-2025-spread-beyond-windows-pcs"
+            "title": "Lithuanian Hacker Arrested for Massive Malware Campaign",
+            "content": "A Lithuanian national has been arrested in connection with a widespread malware campaign that infected 2.8 million systems. The malware, disguised as the KMSAuto tool, was used to illegally activate Windows and Office software while secretly stealing clipboard data. This arrest highlights the scale and impact of the campaign, which compromised both individual and enterprise systems worldwide. The incident underscores the risks associated with using unauthorized software activation tools, which often serve as vectors for malware distribution. Users are advised to verify the legitimacy of software sources and employ comprehensive antivirus solutions to prevent similar compromises.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hacker-arrested-for-kmsauto-malware-campaign-with-28-million-downloads/"
         },
         {
             "date": "Dec 29 2025",
-            "title": "Infostealer Malware Deployed via EmEditor Supply Chain Attack",
-            "content": "A supply chain attack has compromised the official EmEditor website, distributing infostealer malware through its download button. Users downloading the text editor may have inadvertently installed malicious software designed to harvest sensitive information. This incident highlights the growing threat of supply chain attacks, where trusted software distribution channels are hijacked by cybercriminals. Users who recently downloaded EmEditor should conduct thorough security scans and monitor their systems for unusual activity. Developers and companies are urged to strengthen their supply chain security protocols to prevent similar breaches in the future.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/infostealer-malware-delivered-in-emeditor-supply-chain-attack/"
+            "title": "Trust Wallet Users Lose $7 Million in Christmas Crypto Heist",
+            "content": "Trust Wallet has reported a significant security breach in which attackers drained approximately $7 million from 2,596 cryptocurrency wallets. The breach occurred after attackers compromised the wallet&#x27;s browser extension just before Christmas, leading to substantial financial losses for affected users. This incident highlights the vulnerabilities inherent in browser-based cryptocurrency wallets, which remain attractive targets for cybercriminals. Trust Wallet users are urged to review their security practices, including enabling two-factor authentication and using hardware wallets for added protection. The breach serves as a stark reminder of the need for heightened vigilance in managing digital assets.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/trust-wallet-says-7-million-crypto-theft-attack-drained-2-596-wallets/"
         },
         {
             "date": "May 05 2026",
@@ -62,18 +62,53 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Dec 26 2025",
-            "title": "TechCrunch Predicts AI Agents and Blockbuster IPOs to Define 2026",
-            "content": "In its annual predictions episode, TechCrunch&#x27;s Equity team forecasts significant technological advancements for 2026, highlighting the emergence of AI agents and a wave of blockbuster IPOs. The discussion, led by hosts Kirsten Korosec, Anthony Ha, Rebecca Bellan, and Isabelle Johannessen, points to mega AI funds as a driving force behind these developments. The team predicts that AI agents will become more autonomous and capable, potentially transforming industries like customer service and logistics. Venture capitalists are expected to shift focus towards these AI innovations, anticipating lucrative returns as AI technology continues to mature. The anticipated IPOs could bring substantial capital influx, reshaping market dynamics and investment strategies. Professionals in the tech sector should prepare for a competitive landscape, emphasizing innovation and strategic investments in AI capabilities.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/podcast/equitys-2026-predictions-ai-agents-blockbuster-ipos-and-the-future-of-vc/"
+            "date": "Dec 29 2025",
+            "title": "Fal Unveils Enhanced Flux 2 Image Generator with Cost and Efficiency Gains",
+            "content": "Fal.ai has launched a new version of its Flux 2 image generator, boasting a tenfold reduction in cost and a sixfold increase in efficiency. This development follows the company&#x27;s recent $140 million Series D funding round. The updated Flux 2 is an open-source tool designed for multi-modal media creation, appealing to enterprises seeking cost-effective AI solutions. With these improvements, Fal aims to attract a broader user base, including smaller businesses that previously found AI media tools financially prohibitive. This move aligns with a growing industry trend toward more accessible and sustainable AI technologies, emphasizing both economic and environmental efficiencies.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/new-years-ai-surprise-fal-releases-its-own-version-of-flux-2-image-generator"
         },
         {
-            "date": "Dec 28 2025",
-            "title": "Indian Startup Funding Declines as Investors Prioritize Selectivity",
-            "content": "In 2025, Indian startup funding reached $11 billion, marking a significant decrease as investors opted for more selective capital allocation. This shift reflects a broader trend where venture capitalists are concentrating resources on fewer, more promising companies, potentially leading to increased competition among startups for limited funds. The decline in funding rounds suggests a strategic pivot towards sustainability and profitability over rapid expansion. This development is critical for startup founders and investors alike, as it may influence funding strategies and priorities in the region. Stakeholders should assess their value propositions and business models to align with this more discerning investment landscape.",
+            "date": "Dec 29 2025",
+            "title": "AI Industry Faces Reality Check Amidst 2025&#x27;s Exuberant Growth",
+            "content": "2025 saw a surge in AI investments, characterized by significant funding rounds and ambitious infrastructure projects. However, as the year concludes, the industry faces increasing scrutiny regarding the sustainability, safety, and viability of AI business models. This shift from unchecked enthusiasm to a more cautious approach reflects broader concerns about the long-term impacts of AI technologies. Companies are now urged to prioritize ethical considerations and robust safety measures to maintain trust and relevance. This recalibration is crucial for ensuring that AI developments remain aligned with societal needs and expectations.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/27/india-startup-funding-hits-11b-in-2025-as-investors-grow-more-selective/"
+            "sourceUrl": "https://techcrunch.com/2025/12/29/2025-was-the-year-ai-got-a-vibe-check/"
+        },
+        {
+            "date": "Dec 29 2025",
+            "title": "Plaud Note Pro: The AI-Powered Recorder Revolutionizing Note-Taking",
+            "content": "Plaud Note Pro, priced at $179, emerges as a standout AI-powered recording device, gaining popularity among professionals for its exceptional note-taking capabilities. Beyond basic recording, it employs advanced AI algorithms to transcribe and organize audio notes efficiently. This device is particularly beneficial for journalists, students, and business executives who require reliable and accurate documentation of meetings and lectures. The Plaud Note Pro exemplifies the growing integration of AI in everyday tools, enhancing productivity and reducing manual transcription efforts. Users are encouraged to explore its features to optimize their workflow and improve information retention.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/29/plaud-note-pro-is-an-excellent-ai-powered-recorder-that-i-carry-everywhere/"
+        },
+        {
+            "date": "Dec 29 2025",
+            "title": "China Proposes Stringent AI Regulations to Combat Harmful Content",
+            "content": "China has drafted what could become the world&#x27;s strictest regulations to address AI-related content promoting suicide and violence. The proposed rules mandate human oversight, requiring immediate intervention and notification of guardians if harmful content is detected. This regulatory move underscores China&#x27;s commitment to curbing AI misuse and protecting vulnerable populations. The initiative reflects a global trend towards tighter AI governance, emphasizing the need for ethical AI development. Organizations leveraging AI technologies should prepare for potential compliance requirements, ensuring their systems align with emerging global standards for safety and responsibility.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2025/12/china-drafts-worlds-strictest-rules-to-end-ai-encouraged-suicide-violence/"
+        },
+        {
+            "date": "Dec 29 2025",
+            "title": "New ChatGPT App Integrations Enhance User Experience with Popular Services",
+            "content": "OpenAI&#x27;s ChatGPT now offers seamless integrations with popular apps like DoorDash, Spotify, and Uber, among others, enhancing its utility for users. These integrations allow users to perform tasks such as ordering food, streaming music, and booking rides directly within the ChatGPT interface. This development represents a significant step towards creating a more interconnected digital ecosystem, where AI can streamline and simplify daily activities. Users are encouraged to explore these new features to maximize the convenience and functionality of ChatGPT. This expansion highlights the ongoing evolution of AI as a versatile tool in everyday life.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/29/how-to-use-the-new-chatgpt-app-integrations-including-doordash-spotify-uber-and-others/"
+        },
+        {
+            "date": "Dec 29 2025",
+            "title": "Venture Capitalists Anticipate Robust Enterprise AI Adoption in 2026",
+            "content": "A survey of over 20 venture capitalists reveals optimism for continued strong adoption of enterprise AI technologies in 2026. Key areas of focus include AI agents and increased budget allocations for AI initiatives within organizations. This forecast indicates a sustained belief in AI&#x27;s potential to drive business transformation and efficiency gains. Companies are advised to assess their AI strategies and consider expanding their investment in AI solutions to stay competitive. The anticipated growth underscores the importance of AI in shaping future business landscapes and the need for strategic planning to harness its benefits effectively.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/29/vcs-predict-strong-enterprise-ai-adoption-next-year-again/"
+        },
+        {
+            "date": "Dec 29 2025",
+            "title": "Google Gemini Live&#x27;s Latest Upgrade Introduces Innovative Features",
+            "content": "Google&#x27;s AI platform, Gemini Live, has received a major upgrade, introducing three new capabilities that enhance its intelligence and versatility. These features are designed to improve user interaction and expand the platform&#x27;s applicability across various domains. The update reflects Google&#x27;s commitment to advancing AI technology and maintaining its competitive edge in the AI market. Users should explore these new functionalities to leverage Gemini Live&#x27;s full potential. This upgrade is part of a broader trend of continuous improvement in AI platforms, aimed at delivering more sophisticated and user-friendly experiences.",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/3-tricks-google-gemini-live-latest-major-upgrade/"
         }
     ],
     "articles": {},
@@ -136,6 +171,18 @@ const websiteContent = {
         "privacy": "<h2>Privacy Policy</h2><p style='color: var(--text-muted); font-size: 0.9rem; margin-bottom: 2rem;'>Last Updated: November 18, 2025</p><h3>Information We Collect</h3><p>TheHGTech is committed to protecting your privacy. We collect minimal information necessary to provide our services:</p><ul style='margin-left: 1.5rem; margin-bottom: 1.5rem;'><li>Usage data (pages visited, time spent, browser type) via Google Analytics</li><li>Cookies for theme preferences and site functionality</li></ul><h3>Third-Party Services</h3><p>We use the following third-party services that may collect data:</p><ul style='margin-left: 1.5rem; margin-bottom: 1.5rem;'><li><strong>Google Analytics:</strong> For anonymous traffic analysis</li><li><strong>Carbon Ads (via Fullres):</strong> For displaying privacy-friendly advertisements</li></ul><h3>Advertising</h3><p>We display advertisements through Carbon Ads, a privacy-focused ad network. Carbon Ads:</p><ul style='margin-left: 1.5rem; margin-bottom: 1.5rem;'><li>Does NOT use cookies for tracking</li><li>Does NOT collect personal information</li><li>Only uses contextual targeting based on page content</li><li>Serves ads from ethical, vetted technology companies</li></ul><p>Learn more: <a href='https://www.carbonads.net/privacy' target='_blank' rel='noopener noreferrer' style='color: var(--accent);'>Carbon Ads Privacy Policy</a></p><h3>Cookies</h3><p>We use minimal cookies for:</p><ul style='margin-left: 1.5rem; margin-bottom: 1.5rem;'><li>Remembering your dark/light theme preference</li><li>Tracking cookie consent (if accepted)</li></ul><h3>Data Security</h3><p>We implement industry-standard security measures including HTTPS, Content Security Policy (CSP), and HSTS to protect your information.</p><h3>Your Rights</h3><p>You have the right to:</p><ul style='margin-left: 1.5rem; margin-bottom: 1.5rem;'><li>Access any personal data we hold about you</li><li>Request deletion of your data</li><li>Opt-out of analytics by using browser privacy settings</li><li>Use ad blockers to prevent ad display</li></ul><h3>External Links</h3><p>Our site contains links to external websites. We are not responsible for the privacy practices of these sites.</p><h3>Changes to Policy</h3><p>We may update this policy periodically. The 'Last Updated' date will reflect any changes.</p><h3>Contact</h3><p>For privacy concerns, contact us at: <a href='mailto:harish@thehgtech.com' style='color: var(--accent);'>harish@thehgtech.com</a></p>",
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
-    "recentCVEs": [],
+    "recentCVEs": [
+        {
+            "cveId": "CVE-2025-14847",
+            "dateAdded": "Dec 29, 2025",
+            "vendor": "MongoDB MongoDB and MongoDB Server",
+            "description": "MongoDB Server contains an improper handling of length parameter inconsistency vulnerability in Zlib compressed protocol headers. This vulnerability may allow a read of uninitialized heap memory by an",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-14847",
+            "isZeroDay": false
+        }
+    ],
     "featureCards": []
 };
