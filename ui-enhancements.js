@@ -204,6 +204,32 @@
         if (!document.querySelector('.back-to-top')) {
             new BackToTop();
         }
+
+        // Add keyboard hints to search elements
+        const searchButtons = document.querySelectorAll('.m-header__btn--search, .search-btn, [data-action="search"]');
+        searchButtons.forEach(btn => {
+            if (!btn.querySelector('.keyboard-hint')) {
+                addKeyboardHint(btn, '/');
+            }
+        });
+
+        // Add keyboard hint to search inputs
+        const searchInputs = document.querySelectorAll('input[type="search"], .search-input, #searchInput');
+        searchInputs.forEach(input => {
+            // Add hint as placeholder enhancement
+            const wrapper = input.parentElement;
+            if (wrapper && !wrapper.querySelector('.keyboard-hint')) {
+                const hint = document.createElement('span');
+                hint.className = 'keyboard-hint search-hint';
+                hint.textContent = '/';
+                hint.style.position = 'absolute';
+                hint.style.right = '12px';
+                hint.style.top = '50%';
+                hint.style.transform = 'translateY(-50%)';
+                wrapper.style.position = 'relative';
+                wrapper.appendChild(hint);
+            }
+        });
     });
 
     // Export to global scope

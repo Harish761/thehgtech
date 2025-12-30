@@ -265,6 +265,21 @@ body.light-mode .keyboard-hint {
     border-color: rgba(0, 0, 0, 0.1);
 }
 
+/* Search hint specifically positioned */
+.keyboard-hint.search-hint {
+    margin-left: 0;
+    opacity: 0.6;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+}
+
+/* Hide keyboard hints on mobile - more relevant for desktop users */
+@media (max-width: 768px) {
+    .keyboard-hint {
+        display: none !important;
+    }
+}
+
 /* ========== SMOOTH SCROLLING ========== */
 html {
     scroll-behavior: smooth;

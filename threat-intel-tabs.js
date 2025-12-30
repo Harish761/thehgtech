@@ -170,7 +170,22 @@
                         <span class="badge-live">LIVE</span>
                     </div>
                     <div id="threatLeaderboard" class="leaderboard">
-                        <p style="text-align:center;color:var(--text-muted);">Loading...</p>
+                        <!-- Skeleton Loaders for Leaderboard -->
+                        <div class="skeleton-card" style="display: flex; align-items: center; gap: 1rem; padding: 0.75rem;">
+                            <div class="skeleton-loader" style="width: 32px; height: 32px; border-radius: 50%;"></div>
+                            <div style="flex: 1;"><div class="skeleton-loader skeleton-title" style="width: 60%; margin-bottom: 8px;"></div><div class="skeleton-loader skeleton-text" style="width: 80%;"></div></div>
+                            <div class="skeleton-loader" style="width: 50px; height: 24px;"></div>
+                        </div>
+                        <div class="skeleton-card" style="display: flex; align-items: center; gap: 1rem; padding: 0.75rem;">
+                            <div class="skeleton-loader" style="width: 32px; height: 32px; border-radius: 50%;"></div>
+                            <div style="flex: 1;"><div class="skeleton-loader skeleton-title" style="width: 55%; margin-bottom: 8px;"></div><div class="skeleton-loader skeleton-text" style="width: 70%;"></div></div>
+                            <div class="skeleton-loader" style="width: 50px; height: 24px;"></div>
+                        </div>
+                        <div class="skeleton-card" style="display: flex; align-items: center; gap: 1rem; padding: 0.75rem;">
+                            <div class="skeleton-loader" style="width: 32px; height: 32px; border-radius: 50%;"></div>
+                            <div style="flex: 1;"><div class="skeleton-loader skeleton-title" style="width: 50%; margin-bottom: 8px;"></div><div class="skeleton-loader skeleton-text" style="width: 65%;"></div></div>
+                            <div class="skeleton-loader" style="width: 50px; height: 24px;"></div>
+                        </div>
                     </div>
                 </div>
 
@@ -275,9 +290,24 @@
             </div>
             
             <div class="ransomware-grid" id="ransomwareGrid">
-                <div class="ransomware-loading">
-                    <div class="spinner"></div>
-                    <p>Loading ransomware data...</p>
+                <!-- Skeleton Loaders for Ransomware Cards -->
+                <div class="skeleton-card" style="border-left: 4px solid rgba(255, 76, 76, 0.5); padding: 1.25rem;">
+                    <div class="skeleton-loader skeleton-badge" style="width: 100px; margin-bottom: 1rem;"></div>
+                    <div class="skeleton-loader skeleton-title" style="width: 75%; margin-bottom: 1rem;"></div>
+                    <div class="skeleton-loader skeleton-text" style="width: 100%; margin-bottom: 0.5rem;"></div>
+                    <div class="skeleton-loader skeleton-text" style="width: 60%;"></div>
+                </div>
+                <div class="skeleton-card" style="border-left: 4px solid rgba(255, 76, 76, 0.5); padding: 1.25rem;">
+                    <div class="skeleton-loader skeleton-badge" style="width: 80px; margin-bottom: 1rem;"></div>
+                    <div class="skeleton-loader skeleton-title" style="width: 65%; margin-bottom: 1rem;"></div>
+                    <div class="skeleton-loader skeleton-text" style="width: 100%; margin-bottom: 0.5rem;"></div>
+                    <div class="skeleton-loader skeleton-text" style="width: 45%;"></div>
+                </div>
+                <div class="skeleton-card" style="border-left: 4px solid rgba(255, 76, 76, 0.5); padding: 1.25rem;">
+                    <div class="skeleton-loader skeleton-badge" style="width: 90px; margin-bottom: 1rem;"></div>
+                    <div class="skeleton-loader skeleton-title" style="width: 70%; margin-bottom: 1rem;"></div>
+                    <div class="skeleton-loader skeleton-text" style="width: 100%; margin-bottom: 0.5rem;"></div>
+                    <div class="skeleton-loader skeleton-text" style="width: 55%;"></div>
                 </div>
             </div>
         `;
@@ -520,12 +550,33 @@
         const container = document.getElementById('ransomwareGrid');
         if (!container) return;
 
-        container.innerHTML = `
-            <div class="ransomware-error">
-                <h3>⚠️ Unable to Load Ransomware Data</h3>
-                <p>Please try refreshing the page or check back later.</p>
-            </div>
-        `;
+        // Use the LoadingStates utility if available
+        if (typeof LoadingStates !== 'undefined' && LoadingStates.createError) {
+            container.innerHTML = LoadingStates.createError(
+                'Unable to load ransomware data. Please try again.',
+                () => {
+                    // Retry loading
+                    container.innerHTML = `
+                        <div class="loading-state">
+                            <div class="loading-spinner"></div>
+                            <div class="loading-text">Retrying...</div>
+                        </div>
+                    `;
+                    loadRansomwareData();
+                }
+            );
+        } else {
+            // Fallback
+            container.innerHTML = `
+                <div class="error-state">
+                    <div class="error-state__icon"><i class="fas fa-exclamation-circle"></i></div>
+                    <div class="error-state__message">Unable to load ransomware data. Please try again.</div>
+                    <button class="error-state__retry" onclick="location.reload()">
+                        <i class="fas fa-redo"></i> Refresh Page
+                    </button>
+                </div>
+            `;
+        }
     }
 
     function renderLeaderboard(topMalware) {
