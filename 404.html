@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | TheHGTech</title>
+    <meta name="description"
+        content="The page you're looking for doesn't exist. Navigate back to TheHGTech for cybersecurity news, threat intelligence, and security guides.">
+    <meta name="robots" content="noindex, follow">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Core Styles -->
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/light-mode.css">
+
+    <!-- Mobile -->
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <script src="/m-app.js?v=4.3" defer></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF4C4C;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .error-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .error-code {
+            font-size: 8rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-red) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: 1rem;
+            animation: glitch 2s infinite;
+        }
+
+        @keyframes glitch {
+
+            0%,
+            100% {
+                transform: translate(0);
+            }
+
+            2% {
+                transform: translate(-2px, 1px);
+            }
+
+            4% {
+                transform: translate(2px, -1px);
+            }
+
+            6% {
+                transform: translate(-1px, -1px);
+            }
+
+            8% {
+                transform: translate(1px, 2px);
+            }
+
+            10% {
+                transform: translate(0);
+            }
+        }
+
+        .error-title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .error-message {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 500px;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .error-actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.875rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-red));
+            color: #000;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(0, 217, 255, 0.4);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--accent-cyan);
+        }
+
+        /* Popular links */
+        .quick-links {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .quick-links__title {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .quick-links__grid {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .quick-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: rgba(0, 217, 255, 0.1);
+            border: 1px solid rgba(0, 217, 255, 0.2);
+            border-radius: 20px;
+            color: var(--accent-cyan);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+        }
+
+        .quick-link:hover {
+            background: rgba(0, 217, 255, 0.2);
+            border-color: var(--accent-cyan);
+            transform: translateY(-2px);
+        }
+
+        /* ASCII art decoration */
+        .error-decoration {
+            font-family: monospace;
+            font-size: 0.7rem;
+            color: rgba(0, 217, 255, 0.3);
+            margin-bottom: 2rem;
+            white-space: pre;
+            line-height: 1.2;
+        }
+
+        /* Light mode */
+        body.light-mode {
+            --bg-primary: #f8f9fa;
+            --bg-secondary: #ffffff;
+            --text-primary: #1a1a1a;
+            --text-secondary: #666666;
+            --text-muted: #999999;
+            --border: rgba(0, 0, 0, 0.1);
+        }
+
+        body.light-mode .btn-primary {
+            color: #fff;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 5rem;
+            }
+
+            .error-title {
+                font-size: 1.5rem;
+            }
+
+            .error-message {
+                font-size: 1rem;
+            }
+
+            .error-container {
+                padding-bottom: 100px;
+            }
+
+            .error-decoration {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Mobile Header -->
+    <header class="m-header m-only">
+        <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="/logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark"
+                style="height: 28px; width: auto; margin: 0;">
+            <img src="/logo-light.png" alt="TheHGTech" class="m-logo-img logo-light"
+                style="height: 28px; width: auto; margin: 0;">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+        </div>
+        <div class="m-header__actions">
+            <button class="m-header__btn m-header__btn--theme" onclick="mToggleTheme()" aria-label="Toggle Theme">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Bottom Navigation -->
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item">
+            <i class="fas fa-bug"></i>
+            <span>CVE</span>
+        </a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item">
+            <i class="fas fa-shield-alt"></i>
+            <span>Intel</span>
+        </a>
+        <a href="/articles.html" class="m-bottom-nav__item">
+            <i class="fas fa-newspaper"></i>
+            <span>Articles</span>
+        </a>
+        <a href="/guides/" class="m-bottom-nav__item">
+            <i class="fas fa-book"></i>
+            <span>Guides</span>
+        </a>
+    </nav>
+
+    <!-- Desktop Header -->
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <a href="/" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+            <nav class="nav" role="navigation">
+                <a href="/">Home</a>
+                <a href="/threat-intel.html">Threat Intelligence <span class="live-badge">LIVE</span></a>
+                <a href="/cve-tracker.html">CVE</a>
+                <a href="/guides/">Guides</a>
+                <a href="/comparisons/">Tool Comparisons</a>
+                <a href="/articles.html">Articles</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="error-container">
+        <div class="error-decoration">
+            _____ _ _ ___ _ _
+            | | |_ |_| | ||__||_|
+            |__|___|_ _| |_|_|| ||_|
+            NOT FOUND
+        </div>
+
+        <div class="error-code">404</div>
+
+        <h1 class="error-title">Page Not Found</h1>
+
+        <p class="error-message">
+            The page you're looking for doesn't exist or has been moved.
+            But don't worry—our threat intelligence is still running!
+        </p>
+
+        <div class="error-actions">
+            <a href="/" class="btn btn-primary">
+                <i class="fas fa-home"></i>
+                Go Home
+            </a>
+            <a href="/threat-intel.html" class="btn btn-secondary">
+                <i class="fas fa-shield-alt"></i>
+                View Threats
+            </a>
+        </div>
+
+        <div class="quick-links">
+            <div class="quick-links__title">Popular Pages</div>
+            <div class="quick-links__grid">
+                <a href="/cve-tracker.html" class="quick-link">
+                    <i class="fas fa-bug"></i> CVE Tracker
+                </a>
+                <a href="/guides/" class="quick-link">
+                    <i class="fas fa-book"></i> Security Guides
+                </a>
+                <a href="/articles.html" class="quick-link">
+                    <i class="fas fa-newspaper"></i> Articles
+                </a>
+                <a href="/comparisons/" class="quick-link">
+                    <i class="fas fa-balance-scale"></i> Tool Comparisons
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Theme toggle support
+        if (localStorage.getItem('theme') === 'light') {
+            document.body.classList.add('light-mode');
+        }
+
+        // Track 404 errors (if analytics is available)
+        if (typeof gtag !== 'undefined') {
+            gtag('event', '404_error', {
+                'page_location': window.location.href,
+                'page_referrer': document.referrer
+            });
+        }
+    </script>
+</body>
+
+</html>

@@ -32,6 +32,12 @@
     <link rel="stylesheet" href="/header.css">
     <link rel="stylesheet" href="/light-mode.css">
 
+    <!-- Mobile Optimization -->
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <script src="/m-app.js?v=4.3" defer></script>
+
     <style>
         * {
             margin: 0;
@@ -332,27 +338,82 @@
 </head>
 
 <body>
-    <!-- Header -->
+    <!-- ========== MOBILE NAVIGATION ========== -->
+
+    <!-- Mobile Header -->
+    <header class="m-header m-only">
+        <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="/logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark"
+                style="height: 28px; width: auto; margin: 0;">
+            <img src="/logo-light.png" alt="TheHGTech" class="m-logo-img logo-light"
+                style="height: 28px; width: auto; margin: 0;">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+        </div>
+        <div class="m-header__actions">
+            <button class="m-header__btn m-header__btn--theme" onclick="mToggleTheme()" aria-label="Toggle Theme">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </button>
+            <button class="m-header__btn" data-action="search" aria-label="Search">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Bottom Navigation -->
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item">
+            <i class="fas fa-bug"></i>
+            <span>CVE</span>
+        </a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item">
+            <i class="fas fa-shield-alt"></i>
+            <span>Intel</span>
+        </a>
+        <a href="/articles.html" class="m-bottom-nav__item">
+            <i class="fas fa-newspaper"></i>
+            <span>Articles</span>
+        </a>
+        <a href="/guides/" class="m-bottom-nav__item">
+            <i class="fas fa-book"></i>
+            <span>Guides</span>
+        </a>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="m-search-overlay m-only">
+        <div class="m-search-overlay__header">
+            <input type="text" class="m-search-overlay__input" placeholder="Search news, CVEs, guides...">
+            <button class="m-search-overlay__cancel">Cancel</button>
+        </div>
+        <div class="m-search-overlay__results"></div>
+    </div>
+
+    <!-- ========== DESKTOP HEADER ========== -->
     <header class="header" role="banner">
         <div class="header-content">
             <div class="logo">
-                <a href="../index.html"
-                    style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
-                    <img src="../logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
-                    <img src="../logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
                     <span class="logo-text">TheHGTech</span>
                 </a>
             </div>
 
             <nav class="nav" role="navigation">
-                <a href="../index.html#news">News</a>
-                <a href="../threat-intel.html">Threat Intelligence <span class="live-badge">LIVE</span></a>
-                <a href="../cve-tracker.html">CVE</a>
-                <a href="../guides/">Guides</a>
-                <a href="../comparisons/">Tool Comparisons</a>
-                <a href="../articles.html">Articles</a>
-                <a href="../index.html#about">About</a>
-                <a href="../index.html#contact">Contact</a>
+                <a href="/index.html#news">News</a>
+                <a href="/threat-intel.html">Threat Intelligence <span class="live-badge">LIVE</span></a>
+                <a href="/cve-tracker.html">CVE</a>
+                <a href="/guides/">Guides</a>
+                <a href="/comparisons/">Tool Comparisons</a>
+                <a href="/articles.html">Articles</a>
+                <a href="/index.html#about">About</a>
+                <a href="/index.html#contact">Contact</a>
 
                 <div class="theme-toggle-wrapper">
                     <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
@@ -374,7 +435,7 @@
         </div>
     </header>
 
-    <!-- Mobile Menu -->
+    <!-- Mobile Menu (Legacy fallback) -->
     <div class="mobile-menu">
         <div class="mobile-theme-toggle" id="mobileThemeToggle">
             <i class="fas fa-adjust"></i> Switch Theme
