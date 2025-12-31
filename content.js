@@ -4,53 +4,53 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Dec 30 2025",
-            "title": "ErrTraffic Tool Facilitates ClickFix Attacks with Fake Browser Glitches",
-            "content": "A new cybercrime tool named ErrTraffic is enabling threat actors to conduct ClickFix attacks by simulating fake glitches on compromised websites. This tool tricks users into downloading malicious payloads or following harmful instructions under the guise of resolving browser errors. The tool automates the creation of these deceptive glitches, increasing the scale and efficiency of such attacks. This development poses a significant risk to internet users who may unwittingly fall for these realistic-looking errors. Security professionals are advised to enhance website monitoring and educate users about the dangers of unsolicited downloads and instructions.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-errtraffic-service-enables-clickfix-attacks-via-fake-browser-glitches/"
+            "date": "Dec 31 2025",
+            "title": "Shai-Hulud Attack Exposes Trust Wallet GitHub Secrets in $8.5 Million Theft",
+            "content": "A sophisticated supply chain attack known as Shai-Hulud has compromised Trust Wallet by exploiting its Developer GitHub secrets, leading to a significant security breach. Attackers managed to publish a backdoor extension, allowing them to siphon funds from 2,520 wallets, resulting in an $8.5 million heist. This incident underscores the vulnerability of developer environments and the critical need for securing API keys and other sensitive credentials. Trust Wallet users are urged to review their wallet security and update their software to the latest versions. The attack highlights the growing trend of targeting supply chains to access sensitive information and assets.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/shai-hulud-supply-chain-attack-led-to-8-5-million-trust-wallet-heist/"
         },
         {
-            "date": "Dec 30 2025",
-            "title": "Critical SmarterMail Vulnerability Allows Remote Code Execution",
-            "content": "The Cyber Security Agency of Singapore has issued an alert regarding a critical vulnerability in SmarterTools SmarterMail software, identified as CVE-2025-52691, which allows remote code execution. This flaw has been assigned the highest CVSS score of 10.0, indicating its severe impact. Organizations using SmarterMail are at risk, as attackers could exploit this vulnerability to gain control over affected systems. This highlights the ongoing threat posed by software vulnerabilities in critical communication tools. It is imperative for users to apply patches and updates provided by SmarterTools to mitigate potential exploitation.",
+            "date": "Dec 31 2025",
+            "title": "Age Verification Laws Lead to Widespread Internet Access Issues",
+            "content": "In 2025, newly enforced age verification laws have begun to disrupt internet access globally, with websites blocking entire countries to comply with regulations. This move has led to a surge in the use of Virtual Private Networks (VPNs) as users seek to bypass these restrictions. The age checks are part of broader efforts to protect minors online, but they have raised concerns about privacy and accessibility. Internet service providers and website operators are caught in a challenging position, balancing legal compliance with user experience. Users and businesses alike should stay informed about these regulatory changes and consider the implications for their online activities.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2025/12/in-2025-age-checks-started-locking-people-out-of-the-internet"
+        },
+        {
+            "date": "Dec 31 2025",
+            "title": "IBM Urges Immediate Patch for Critical API Connect Vulnerability",
+            "content": "IBM has issued an urgent advisory for users of its API Connect platform to patch a critical authentication bypass vulnerability. The flaw, which affects all versions prior to 10.0.5.0, could allow unauthorized remote access to applications, posing a significant security risk. This vulnerability highlights the importance of regular software updates and vulnerability management in enterprise environments. Organizations using API Connect should prioritize applying the available patch to mitigate potential exploitation. This incident serves as a reminder of the persistent threats facing enterprise APIs and the need for robust security measures.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/ibm-warns-of-critical-api-connect-auth-bypass-vulnerability/"
+        },
+        {
+            "date": "Dec 31 2025",
+            "title": "Disney Settles for $10 Million Over Children&#x27;s Privacy Violations",
+            "content": "Disney has agreed to a $10 million settlement following allegations of violating the Children&#x27;s Online Privacy Protection Act (COPPA). The company was accused of mislabeling videos and enabling data collection for targeted advertising, which breached privacy regulations. This settlement emphasizes the heightened scrutiny on companies regarding data privacy, especially concerning minors. Businesses handling children&#x27;s data must ensure compliance with COPPA to avoid legal repercussions. Disney&#x27;s case serves as a cautionary tale for companies to review their data practices and ensure transparency and compliance in their operations.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/disney-will-pay-10m-to-settle-claims-of-childrens-privacy-violations-on-youtube/"
+        },
+        {
+            "date": "Dec 31 2025",
+            "title": "European Space Agency Confirms Data Breach Amid Hacker Threats",
+            "content": "The European Space Agency (ESA) has confirmed a data breach after a hacker claimed to have compromised external science servers and offered the data for sale. The breach is under investigation, with ESA working to assess the extent of the compromise and secure its systems. This incident highlights the persistent threat of cyberattacks against critical infrastructure and scientific organizations. The ESA breach serves as a reminder of the importance of robust cybersecurity measures in protecting sensitive data. Organizations should review their security protocols and ensure that all systems are fortified against potential breaches.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/european-space-agency-confirms-breach-after-hacker-offers-to-sell-data/"
+        },
+        {
+            "date": "Dec 31 2025",
+            "title": "Equifax Europe CISO Reflects on Breach-Induced Cybersecurity Overhaul",
+            "content": "The infamous 2017 Equifax breach, impacting over 147 million individuals, has driven a comprehensive cybersecurity transformation within the company. Equifax&#x27;s Chief Information Security Officer (CISO) in Europe has detailed the extensive measures taken to enhance security post-breach. The incident, one of the largest data leaks of the 21st century, underscored critical vulnerabilities and prompted widespread industry reforms. Companies are encouraged to learn from Equifax&#x27;s experience by investing in proactive security strategies and maintaining stringent data protection practices. This transformation emphasizes the importance of continuous improvement in cybersecurity frameworks.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4109026/javier-checa-equifax-now-the-security-culture-is-part-of-our-dna-as-a-company.html"
+        },
+        {
+            "date": "Dec 31 2025",
+            "title": "U.S. Treasury Removes Sanctions on Individuals Linked to Predator Spyware",
+            "content": "The U.S. Department of the Treasury&#x27;s Office of Foreign Assets Control (OFAC) has lifted sanctions on three individuals associated with the Intellexa Consortium, the entity behind the Predator spyware. This decision comes after a review of the individuals&#x27; involvement in the commercial spyware operations. The Predator spyware has been a controversial tool, often used in surveillance activities that raised privacy concerns. The removal of these individuals from the sanctions list may have implications for international relations and the regulation of spyware technologies. Stakeholders should monitor developments in this area and consider the broader impact on cybersecurity and privacy policies.",
             "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/12/csa-issues-alert-on-critical.html"
-        },
-        {
-            "date": "Dec 30 2025",
-            "title": "European Space Agency Confirms Breach of External Servers",
-            "content": "The European Space Agency has confirmed a security breach affecting its external servers, which stored unclassified information related to collaborative engineering activities. Although the compromised data is not classified, the breach underscores the vulnerabilities present in organizations handling significant data. This incident is part of a broader trend of cyberattacks targeting governmental and space agencies. Organizations are urged to review their security protocols and ensure that external servers are adequately protected to prevent unauthorized access and potential data leaks.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/european-space-agency-confirms-breach-of-external-servers/"
-        },
-        {
-            "date": "Dec 30 2025",
-            "title": "Zoom Stealer Extensions Compromise Corporate Meeting Data",
-            "content": "A campaign known as Zoom Stealer is impacting 2.2 million users across Chrome, Firefox, and Microsoft Edge through 18 malicious browser extensions. These extensions harvest sensitive meeting-related data such as URLs, IDs, topics, descriptions, and embedded passwords from online meetings. The campaign poses a significant threat to corporate security, as it compromises confidential meeting information. Organizations should audit their browser extensions and educate employees about the risks of installing unverified extensions. Removing these malicious extensions is crucial to safeguarding sensitive corporate data.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/zoom-stealer-browser-extensions-harvest-corporate-meeting-intelligence/"
-        },
-        {
-            "date": "Dec 30 2025",
-            "title": "OpenAI Warns of Unsolvable Prompt Injection Risks for AI Browser Agents",
-            "content": "OpenAI has raised concerns about the persistent security risk of prompt injection attacks, which embed malicious instructions within ordinary online content. This issue is particularly problematic for AI agents operating within web browsers, like OpenAI&#x27;s Atlas, which are designed to perform tasks for users. Despite recent security updates, OpenAI acknowledges that prompt injection may never be fully resolved, posing ongoing challenges for AI security. Developers and users of AI agents should remain vigilant and implement robust security measures to mitigate potential risks associated with these attacks.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/openai-chatgpt-atlas-prompt-injection-browser-agent-security-update-head-of-preparedness/"
-        },
-        {
-            "date": "Dec 30 2025",
-            "title": "Former Cybersecurity Experts Admit to BlackCat Ransomware Attacks",
-            "content": "Two former cybersecurity professionals from Sygnia and DigitalMint have pleaded guilty to conducting BlackCat (ALPHV) ransomware attacks against U.S. companies in 2023. This case highlights the insider threat posed by individuals with deep technical knowledge of cybersecurity defenses. The involvement of industry insiders in cybercriminal activities poses a severe risk to organizations, emphasizing the need for stringent background checks and monitoring of personnel with access to sensitive systems. Companies must remain vigilant against insider threats to protect their networks from sophisticated attacks.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/us-cybersecurity-experts-plead-guilty-to-blackcat-alphv-ransomware-attacks/"
-        },
-        {
-            "date": "Dec 30 2025",
-            "title": "CISA Mandates Patching of MongoBleed Vulnerability in Federal Systems",
-            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has ordered U.S. federal agencies to patch a critical vulnerability known as MongoBleed in MongoDB. This flaw is actively exploited to steal credentials, API keys, and other sensitive data, posing a significant threat to affected systems. The directive underscores the urgent need to address vulnerabilities in widely used database systems to prevent data breaches. Federal agencies must comply with CISA&#x27;s directive to ensure their systems are secured against this exploit. Timely patching and continuous monitoring are essential to safeguarding sensitive information.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-orders-federal-agencies-to-patch-mongobleed-flaw-actively-exploited-in-attacks/"
+            "sourceUrl": "https://thehackernews.com/2025/12/us-treasury-lifts-sanctions-on-three.html"
         },
         {
             "date": "May 05 2026",
@@ -62,53 +62,53 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Dec 30 2025",
-            "title": "Meta&#x27;s $2 Billion Acquisition of Manus: A Strategic Move in Enterprise AI",
-            "content": "Meta, the parent company of Facebook and Instagram, has announced its acquisition of Manus for over $2 billion, signaling a strategic shift in the enterprise AI landscape. This acquisition underscores the growing competition among tech giants, not just on AI model quality but on broader enterprise integration capabilities. Manus, known for its innovative AI agent technologies, will bolster Meta&#x27;s offerings in AI-driven enterprise solutions. This move is expected to impact enterprises seeking advanced AI tools, pushing them towards more integrated solutions. Companies should evaluate their AI strategies to leverage such advancements effectively, ensuring they remain competitive in a rapidly evolving market.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/why-meta-bought-manus-and-what-it-means-for-your-enterprise-ai-agent"
+            "date": "Dec 31 2025",
+            "title": "AI-Driven Dating Apps Struggle as In-Person Connections Resurge",
+            "content": "Despite the rise of AI-powered dating apps promising virtual matchmaking and bot wingmen, traditional in-person encounters are gaining renewed traction. These apps leverage AI algorithms to suggest potential matches and facilitate conversations, yet their effectiveness compared to face-to-face interactions remains questionable. As users increasingly report fatigue from digital interactions, the trend suggests a shift back to organic meet-cutes. This development underscores the limitations of AI in replicating the spontaneity and authenticity of real-life connections. Dating app developers may need to reconsider their reliance on AI features as users seek more genuine experiences.",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/expired-tired-wired-ai-powered-dating/"
+        },
+        {
+            "date": "Dec 31 2025",
+            "title": "The Future Beyond Smartphones: What Comes Next?",
+            "content": "Industry experts predict a significant decline in smartphone usage within the next decade, with potential alternatives still uncertain. The rapid evolution of technology suggests that devices like the iPhone may not dominate the market in the coming years. This shift could be driven by advancements in wearable tech, augmented reality (AR), and artificial intelligence (AI), which offer more immersive and integrated experiences. As consumer preferences evolve, tech companies must innovate to meet changing demands, possibly focusing on seamless connectivity and enhanced user interfaces. Professionals in the field should monitor emerging technologies that could redefine personal computing.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/30/the-phone-is-dead-long-live-what-exactly/"
         },
         {
             "date": "Dec 30 2025",
-            "title": "Top AI-Powered Dictation Apps of 2025 Revolutionize Productivity",
-            "content": "AI-powered dictation apps have become indispensable tools in 2025, streamlining tasks such as email responses, note-taking, and even coding through voice commands. These applications leverage advanced natural language processing (NLP) models to enhance accuracy and user experience. Professionals across industries benefit from increased efficiency and reduced manual input, with developers particularly finding value in voice-activated coding features. As these apps continue to evolve, businesses should consider integrating them into their workflows to maximize productivity. Evaluating the leading apps can help organizations choose the best fit for their specific needs.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/30/the-best-ai-powered-dictation-apps-of-2025/"
+            "title": "U.S. Energy Landscape Shifts Towards Nuclear Amid Data Center Challenges",
+            "content": "The United States is witnessing a growing endorsement of nuclear energy as coal plants face obsolescence and data centers encounter resistance due to their high energy consumption. This transition highlights a broader energy policy shift towards more sustainable and efficient power sources. With data centers consuming significant electricity, there is mounting pressure to find greener solutions to support the increasing demand from AI and cloud computing services. Stakeholders in the energy and tech sectors must collaborate to balance innovation with environmental responsibility. This energy evolution presents opportunities for investment in nuclear technology and energy-efficient infrastructure.",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/expired-tired-wired-nuclear-plants/"
         },
         {
             "date": "Dec 30 2025",
-            "title": "2026 AI Spending to Increase with Fewer Vendors, Predicts VCs",
-            "content": "Venture capitalists predict a shift in enterprise AI spending in 2026, with organizations likely to consolidate their vendor partnerships. This trend follows years of experimentation with diverse AI tools, as businesses begin to identify and invest in leading solutions. The consolidation is expected to streamline operations and reduce complexity, allowing for more focused and effective AI implementations. Enterprises should prepare for this shift by assessing their current AI vendors and considering strategic partnerships with those offering the most comprehensive and integrated solutions. This approach will be crucial for maintaining a competitive edge as the AI market matures.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/30/vcs-predict-enterprises-will-spend-more-on-ai-in-2026-through-fewer-vendors/"
+            "title": "AI Therapists Emerge as a Solution to Global Mental Health Crisis",
+            "content": "As over a billion people worldwide suffer from mental health conditions, AI-driven therapy solutions are gaining traction as a scalable and accessible option. These AI therapists utilize natural language processing and machine learning algorithms to provide support and guidance, particularly for anxiety and depression. With mental health services often limited by geographic and financial barriers, AI offers a way to reach underserved populations. However, the effectiveness and ethical implications of AI in mental health care remain under scrutiny. Professionals should consider integrating AI solutions with traditional methods to enhance mental health support systems.",
+            "source": "Artificial intelligence – MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2025/12/30/1129392/book-reviews-ai-therapy-mental-health/"
         },
         {
             "date": "Dec 30 2025",
-            "title": "AI Agents Outnumber Humans: A New Challenge for Legacy IAM Systems",
-            "content": "In a striking development, AI agents and machines now outnumber humans by 82 to 1, challenging traditional Identity and Access Management (IAM) systems like Active Directory and LDAP. Originally designed for human users, these systems are struggling to accommodate the rapid growth of AI and machine identities. This imbalance highlights the urgent need for IAM solutions that can handle the unique requirements of AI agents, which often lack adequate governance. Organizations must reevaluate their IAM strategies to ensure robust security and compliance in an increasingly AI-driven environment. Implementing advanced IAM solutions will be critical to managing this new landscape effectively.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/security/machine-identities-outnumber-humans-82-to-1-legacy-iam-cant-keep-up"
-        },
-        {
-            "date": "Dec 30 2025",
-            "title": "IT-Led Workflow Integration: Key to Successful AI Adoption",
-            "content": "At Gold Bond Inc., a 77-year-old promotional products company, CIO Matt Price emphasizes the importance of IT-led workflow integration for successful AI adoption. Rather than deploying standalone chatbots, the company focuses on embedding AI into existing workflows, such as ERP intake and document processing. This approach ensures that AI enhances productivity by automating tedious tasks employees dislike. Organizations looking to adopt AI should prioritize integrating it into their current processes to maximize its benefits. By doing so, they can improve efficiency and employee satisfaction, ultimately driving better business outcomes.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/infrastructure/why-ai-adoption-fails-without-it-led-workflow-integration"
+            "title": "Meta Acquires AI Startup Manus to Enhance Social Media Integration",
+            "content": "Meta has announced the acquisition of Manus, a prominent AI startup, with plans to integrate its technology across Facebook, Instagram, and WhatsApp. Manus will continue to operate independently, while its AI agents complement Meta AI, the existing chatbot available to users. This strategic move aims to bolster Meta&#x27;s capabilities in natural language processing and user engagement. By enhancing conversational AI, Meta seeks to provide more personalized and interactive experiences on its platforms. Industry professionals should anticipate further innovations in social media interactions as AI becomes increasingly embedded in digital communication.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/29/meta-just-bought-manus-an-ai-startup-everyone-has-been-talking-about/"
         },
         {
             "date": "Dec 29 2025",
-            "title": "Fal Unveils Cheaper, More Efficient Flux 2 Image Generator",
-            "content": "Fal, a leading enterprise AI media creation platform, has released an improved version of its Flux 2 image generator, boasting a 10x reduction in cost and 6x increase in efficiency. This release follows Fal&#x27;s recent $140 million Series D funding round, highlighting its commitment to innovation. The new version is expected to democratize access to high-quality image generation, benefiting businesses seeking cost-effective AI solutions. Companies should explore integrating Fal&#x27;s Flux 2 into their creative workflows to leverage its enhanced capabilities. This development underscores the ongoing trend of AI tools becoming more accessible and efficient.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/new-years-ai-surprise-fal-releases-its-own-version-of-flux-2-image-generator"
+            "title": "Plaud Note Pro: A Reliable AI-Powered Notetaking Device",
+            "content": "The Plaud Note Pro, priced at $179, is gaining attention as a highly effective AI-powered recording device. Designed for professionals who require accurate and efficient notetaking, the device leverages advanced speech recognition technology to transcribe audio into text seamlessly. Its portability and user-friendly interface make it an essential tool for meetings and interviews. As AI continues to enhance productivity tools, devices like Plaud Note Pro demonstrate the potential for improved workflow efficiency. Users should consider adopting such technology to streamline documentation processes and ensure precise record-keeping.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/29/plaud-note-pro-is-an-excellent-ai-powered-recorder-that-i-carry-everywhere/"
         },
         {
             "date": "Dec 29 2025",
-            "title": "AI&#x27;s 2025 Vibe Check: From Hype to Scrutiny",
-            "content": "The year 2025 marked a turning point for AI, as initial enthusiasm gave way to increased scrutiny over its sustainability, safety, and business models. Early in the year, the industry saw significant investments and infrastructure promises, leading to a reevaluation of AI&#x27;s real-world impact. Stakeholders are now focusing on ensuring that AI technologies are not only innovative but also responsible and viable in the long term. As the AI sector matures, professionals should prioritize ethical considerations and sustainability in their AI strategies. This shift is crucial for fostering trust and ensuring the technology&#x27;s continued growth and acceptance.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/29/2025-was-the-year-ai-got-a-vibe-check/"
+            "title": "China Proposes Stringent Regulations to Curb AI-Induced Harm",
+            "content": "China is drafting what could become the world&#x27;s strictest regulations to prevent AI from encouraging suicide and violence. The proposed rules mandate human intervention and guardian notification if AI systems detect mentions of self-harm. This regulatory move reflects growing concerns over the ethical use of AI and its impact on vulnerable populations. By enforcing stringent oversight, China aims to safeguard individuals from potential psychological harm exacerbated by AI interactions. Professionals developing AI systems should prioritize ethical considerations and implement safeguards to prevent misuse and ensure user safety.",
+            "source": "Artificial Intelligence - Ars Technica",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2025/12/china-drafts-worlds-strictest-rules-to-end-ai-encouraged-suicide-violence/"
         }
     ],
     "articles": {},
