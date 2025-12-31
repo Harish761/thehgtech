@@ -289,7 +289,19 @@
 
   <!-- ========== SECURITY GUIDES - HIGH VALUE LONG-TAIL KEYWORDS ========== -->
   
-  <!-- NEW GUIDES - December 23, 2025 -->
+  <!-- NEW GUIDES - December 31, 2025 -->
+  <url>
+    <loc>https://thehgtech.com/guides/edr-vs-xdr.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2025-12-31</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/guides/edr-vs-xdr.png</image:loc>
+      <image:title>EDR vs XDR Complete Security Guide 2025</image:title>
+    </image:image>
+  </url>
+
+  <!-- December 23, 2025 -->
   <url>
     <loc>https://thehgtech.com/guides/dora-compliance.html</loc>
     <changefreq>monthly</changefreq>
