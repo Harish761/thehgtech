@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-01-01T01:56:11.419168",
+  "last_updated": "2026-01-01T12:43:28.162978",
   "period": "Last 7 days",
   "total_groups": 25,
-  "total_victims": 258,
+  "total_victims": 256,
   "groups": [
     {
       "name": "Lockbit5",
@@ -97,7 +97,7 @@
     },
     {
       "name": "Qilin",
-      "count": 46,
+      "count": 44,
       "victims": [
         {
           "name": "KOPA Kozmetik A",
