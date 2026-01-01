@@ -5,52 +5,59 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Jan 01 2026",
+            "title": "IT Leaders Set Strategic Agenda for 2026",
+            "content": "IT leaders are prioritizing agility, flexibility, and measurable business outcomes as they set their strategic agendas for 2026. The January issue of Enterprise Spotlight, produced by the editors of CIO, Computerworld, CSO, InfoWorld, and Network World, delves into the emerging trends and technologies shaping these strategies. As businesses continue to navigate a rapidly evolving digital landscape, the need for adaptable IT frameworks becomes increasingly critical. This focus on agility is expected to drive significant investment in cloud technologies, AI, and cybersecurity measures. IT professionals are encouraged to download the issue to gain insights into best practices and strategic planning for the coming years.",
+            "source": "CSO Online",
+            "sourceUrl": "https://us.resources.csoonline.com/resources/download-the-2026-it-agenda-spotlight-report/"
+        },
+        {
+            "date": "Jan 01 2026",
+            "title": "RondoDox Botnet Exploits React2Shell Vulnerability",
+            "content": "A newly disclosed botnet, RondoDox, has been exploiting the critical React2Shell vulnerability to hijack IoT devices and web servers. The campaign, persisting for nine months, leverages this flaw to integrate compromised systems into its network. The React2Shell vulnerability, which affects numerous IoT devices and web applications, poses a significant threat to enterprises relying on these technologies. As of December 2025, the botnet&#x27;s activity underscores the urgent need for organizations to patch affected systems promptly. Cybersecurity teams must prioritize the deployment of updates and monitor network traffic for signs of compromise.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/01/rondodox-botnet-exploits-critical.html"
+        },
+        {
+            "date": "Dec 31 2025",
+            "title": "Cloud Outages Disrupt IoT Ecosystems",
+            "content": "The increasing reliance on cloud services has highlighted vulnerabilities within IoT ecosystems, especially during outages. Recent disruptions have impacted a range of connected devices, affecting daily activities such as sleep monitoring, educational tools, and smart home functionalities. This dependence on cloud infrastructure underscores the need for robust contingency planning and offline capabilities. Organizations and consumers alike must evaluate their IoT strategies to mitigate risks associated with cloud service interruptions. As the IoT landscape continues to expand, ensuring reliability and resilience remains a critical challenge for developers and users.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/iot/when-cloud-rains-on-everyone-iot-parade"
+        },
+        {
+            "date": "Dec 31 2025",
+            "title": "Identity Security Trends and Predictions for 2026",
+            "content": "Identity security is set to evolve in 2026 with notable trends including agentic AI adoption, expanded Identity Governance and Administration (IGA) in mid-markets, and enhanced collaboration between Security Operations Centers (SOC) and identity teams. The consolidation of identity platforms is expected to streamline operations and improve security postures. As AI technologies become more integrated into identity management, the associated risks will require careful navigation. Organizations should focus on strengthening their identity frameworks and fostering interdepartmental cooperation to effectively address these emerging challenges. Staying informed on these developments is crucial for maintaining robust security measures.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/identity-access-management-security/identity-security-2026-predictions-and-recommendations"
+        },
+        {
+            "date": "Dec 31 2025",
+            "title": "Rising Skepticism Toward AI Amid Economic Concerns",
+            "content": "Skepticism surrounding artificial intelligence is increasing as concerns about an economic bubble and doubts about return on investment grow. This shift in sentiment suggests potential challenges for the AI industry, which has seen rapid expansion in recent years. Industry experts warn that inflated expectations and unproven ROI could lead to a reevaluation of AI&#x27;s role in business strategies. Companies are advised to critically assess their AI investments and focus on realistic, sustainable applications. This trend highlights the need for transparency and measurable outcomes in AI deployments to maintain stakeholder confidence.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/contrarians-no-more-ai-skepticism"
+        },
+        {
+            "date": "Dec 31 2025",
+            "title": "Critical Vulnerability Found in IBM API Connect",
+            "content": "IBM has released details of a critical vulnerability, CVE-2025-13915, in its API Connect authentication system. Rated 9.8 on the CVSS scale, this flaw could allow attackers to gain unauthorized remote access to applications. The vulnerability highlights significant security risks for enterprises using API Connect, necessitating immediate action to apply patches. IBM advises all users to update their systems to mitigate potential exploitation. This disclosure underscores the importance of maintaining up-to-date security measures in API management solutions to prevent unauthorized access and data breaches.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/12/ibm-warns-of-critical-api-connect-bug.html"
+        },
+        {
+            "date": "Dec 31 2025",
+            "title": "New Shai-Hulud Worm Variant Detected in npm Registry",
+            "content": "Cybersecurity researchers have identified a new variant of the Shai-Hulud worm on the npm registry, embedded within the package &quot;@vietmoney/react-big-calendar.&quot; This modified strain represents an evolution from the version observed last month, indicating ongoing development and testing by threat actors. The npm registry&#x27;s role as a critical infrastructure for JavaScript developers makes this discovery particularly concerning. Developers are urged to scrutinize dependencies and monitor for any unusual activity in their applications. This incident highlights the persistent threat posed by supply chain attacks and the need for vigilant security practices in software development.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2025/12/researchers-spot-modified-shai-hulud.html"
+        },
+        {
+            "date": "Jan 01 2026",
             "title": "IBM Urges Immediate Patch for Critical API Connect Vulnerability",
             "content": "IBM has issued an urgent advisory for users of its API Connect platform to apply a critical security patch to address a vulnerability that allows remote attackers to bypass authentication mechanisms. The flaw, identified in versions prior to the latest update, poses a significant risk as API Connect serves as a comprehensive API gateway for creating, testing, managing, and securing APIs. This vulnerability could enable unauthorized access to sensitive systems and data, impacting organizations that rely on API Connect for secure communications. Users are advised to review IBM&#x27;s security bulletin and implement the patch without delay to mitigate potential exploitation. This incident underscores the importance of timely updates in maintaining robust cybersecurity defenses.",
             "source": "CSO Online",
             "sourceUrl": "https://www.csoonline.com/article/4112265/critical-vulnerability-in-ibm-api-connect-could-allow-authentication-bypass-2.html"
-        },
-        {
-            "date": "Dec 31 2025",
-            "title": "NYC Mayoral Inauguration Bans Flipper Zero and Raspberry Pi Devices",
-            "content": "The 2026 mayoral inauguration of Zohran Mamdani in New York City has announced a ban on Flipper Zero and Raspberry Pi devices, citing security concerns. These devices, commonly used for educational purposes and ethical hacking, can be repurposed for malicious activities, prompting heightened security measures at the event. The ban aims to prevent potential disruptions or unauthorized access to sensitive systems during the high-profile ceremony. Attendees are advised to comply with the restrictions to ensure a secure and smooth event. This move reflects growing awareness and caution around the use of versatile tech tools in public gatherings.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/nyc-mayoral-inauguration-bans-flipper-zero-raspberry-pi-devices/"
-        },
-        {
-            "date": "Dec 31 2025",
-            "title": "Ivanti EPMM Zero-Day Attacks Highlight Persistent Security Challenges",
-            "content": "The exploitation of zero-day vulnerabilities in Ivanti&#x27;s Endpoint Manager Mobile (EPMM) platform by a Chinese advanced persistent threat (APT) group earlier this year has compromised thousands of organizations. This attack, which occurred in April and May, underscores the persistent threat posed by sophisticated cyber actors exploiting unpatched vulnerabilities. Affected organizations experienced significant breaches, emphasizing the need for proactive vulnerability management and timely patching. The incident serves as a stark reminder of the potential consequences of delayed security updates and the importance of maintaining robust defense mechanisms against evolving threats.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyber-risk/sunken-ships-ivanti-epmm-attacks"
-        },
-        {
-            "date": "Dec 31 2025",
-            "title": "Trust Wallet Chrome Extension Hacked in $8.5 Million Supply Chain Attack",
-            "content": "Trust Wallet has disclosed a supply chain attack targeting its Google Chrome extension, resulting in the theft of approximately $8.5 million in digital assets. The breach is attributed to the second iteration of the Shai-Hulud supply chain attack, which compromised the Developer GitHub repository in November 2025. This incident highlights the vulnerabilities inherent in software supply chains, where attackers exploit trusted components to infiltrate systems. Users of the Trust Wallet extension are advised to review their security settings and monitor accounts for suspicious activity. The attack underscores the critical need for enhanced supply chain security measures in the cryptocurrency sector.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/12/trust-wallet-chrome-extension-hack.html"
-        },
-        {
-            "date": "Dec 31 2025",
-            "title": "DarkSpectre Campaign Exposes Millions to Browser Extension Threats",
-            "content": "Security researchers have uncovered the DarkSpectre campaign, which has impacted 2.2 million users through malicious browser extensions on Chrome, Edge, and Firefox. This campaign, linked to the threat actor behind ShadyPanda and GhostPoster, represents a significant risk to user privacy and data security. The extensions, once installed, can exfiltrate sensitive information and manipulate browsing behavior. Affected users are urged to uninstall suspicious extensions and review their browser security settings. This discovery highlights the ongoing threat posed by malicious browser extensions and the importance of vigilant cybersecurity practices.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/12/darkspectre-browser-extension-campaigns.html"
-        },
-        {
-            "date": "Dec 31 2025",
-            "title": "Unleash Protocol Loses $3.9 Million in Multisig Contract Hijack",
-            "content": "The Unleash Protocol, a decentralized intellectual property platform, has suffered a loss of approximately $3.9 million in cryptocurrency following a multisig contract hijack. An unauthorized contract upgrade enabled attackers to withdraw assets, exploiting vulnerabilities in the platform&#x27;s security protocols. This breach highlights the risks associated with decentralized finance (DeFi) platforms and the complexities of securing multisig contracts. Users and stakeholders are advised to review their security practices and consider additional protective measures. The incident underscores the critical need for rigorous security audits and robust governance in DeFi ecosystems.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-drain-39m-from-unleash-protocol-after-multisig-hijack/"
-        },
-        {
-            "date": "Dec 31 2025",
-            "title": "RondoDox Botnet Exploits React2Shell Flaw in Next.js Servers",
-            "content": "The RondoDox botnet has been observed exploiting the React2Shell vulnerability (CVE-2025-55182) to compromise Next.js servers, deploying malware and cryptominers. This critical flaw allows attackers to execute arbitrary code on vulnerable systems, posing significant risks to affected organizations. The exploitation of this vulnerability highlights the ongoing challenges in securing modern web application frameworks. Administrators are urged to apply available patches and strengthen server defenses to prevent potential intrusions. This incident emphasizes the importance of timely vulnerability management and proactive security measures in safeguarding web infrastructure.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/rondodox-botnet-exploits-react2shell-flaw-to-breach-nextjs-servers/"
         },
         {
             "date": "May 05 2026",
@@ -62,53 +69,53 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Dec 31 2025",
-            "title": "Instagram Chief Warns of Synthetic Content Era",
-            "content": "Adam Mosseri, head of Instagram, has highlighted the growing challenge of distinguishing real from synthetic content as he reflects on the platform&#x27;s evolution through 2025. In a 20-image presentation, Mosseri emphasizes the shift towards &quot;infinite synthetic content,&quot; making it increasingly difficult for users to identify authentic material. The transition marks the end of the traditional, personal Instagram feed, which Mosseri claims has been &quot;dead&quot; for years. This development underscores the broader trend of AI-generated content permeating social media, raising concerns about misinformation and digital authenticity. Users and developers are urged to adopt advanced tools and strategies to verify content authenticity in this new digital landscape.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/news/852124/adam-mosseri-ai-images-video-instagram"
+            "date": "Jan 01 2026",
+            "title": "Erotic Chatbots Redefine AI&#x27;s Role in 2025",
+            "content": "The year 2025 saw a significant shift in AI&#x27;s narrative as erotic chatbots became a dominant force, overshadowing previous expectations of productivity enhancements. These AI-driven platforms have tapped into a lucrative market, offering personalized interactions that cater to intimate human desires. This shift highlights a growing trend where AI applications are expanding beyond traditional productivity tools into more personal and emotional domains. The impact is broad, with developers and businesses exploring new ethical and operational challenges. Professionals in the AI field should consider the implications of this trend on privacy, consent, and user engagement strategies. As this sector grows, understanding the societal and technological nuances will be crucial for future AI developments.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/expired-tired-wired-sexy-chatbots/"
         },
         {
-            "date": "Dec 31 2025",
-            "title": "Open Source Qwen-Image-2512 Challenges Google&#x27;s Nano Banana Pro",
-            "content": "The release of Qwen-Image-2512, an open-source AI image generation model, aims to compete with Google&#x27;s recently launched Nano Banana Pro, also known as Gemini 3 Pro Image. This new model allows users to generate detailed, text-heavy infographics and enterprise-grade visuals using natural language inputs. The competition between these models highlights the rapid advancements in AI-driven image generation, pushing the boundaries of creativity and utility in professional settings. Enterprises and developers should explore these tools to enhance visual content creation, while remaining aware of the competitive landscape and potential intellectual property concerns.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/open-source-qwen-image-2512-launches-to-compete-with-googles-nano-banana-pro"
-        },
-        {
-            "date": "Dec 31 2025",
-            "title": "Investors Anticipate AI&#x27;s Impact on Labor Market in 2026",
-            "content": "As 2026 approaches, investors are increasingly focused on the potential impact of AI on the labor market, though the exact effects remain uncertain. Predictions suggest that AI technologies will begin to reshape enterprise job roles, potentially displacing certain functions while creating new opportunities. This trend reflects a broader shift in how businesses leverage AI to enhance productivity and efficiency. Companies should prepare by investing in workforce reskilling and staying informed about AI advancements to mitigate potential disruptions. Stakeholders must balance technological innovation with strategic workforce planning to navigate this evolving landscape.",
+            "date": "Jan 01 2026",
+            "title": "Dropout Status Gains Prestige Among AI Startup Founders",
+            "content": "In a surprising twist, the &quot;college dropout&quot; label has become a sought-after credential among AI startup founders pitching to Y Combinator (YC). This trend reflects a cultural shift where unconventional paths are increasingly seen as a badge of innovation and risk-taking. The phenomenon is particularly pronounced in the tech sector, where traditional educational credentials are being overshadowed by entrepreneurial spirit and real-world problem-solving skills. This shift impacts how investors evaluate potential founders, emphasizing creativity and adaptability over formal education. Aspiring entrepreneurs should recognize the changing landscape and consider how their unique experiences can be leveraged in competitive startup environments. The evolution of founder credentials signals a broader change in how success is defined in the tech industry.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/31/investors-predict-ai-is-coming-for-labor-in-2026/"
+            "sourceUrl": "https://techcrunch.com/2025/12/31/college-dropout-has-become-the-most-coveted-startup-founder-credential/"
         },
         {
             "date": "Dec 31 2025",
-            "title": "Six Data Trends to Influence Enterprise AI in 2026",
-            "content": "The data landscape is undergoing significant changes, with six key trends poised to shape enterprise AI in 2026. Historically dominated by relational databases like Oracle, the field is now seeing the rise of NoSQL document stores, graph databases, and vector-based systems. These shifts enable more complex data handling and advanced AI applications. Enterprises must adapt to these evolving technologies to maintain competitive advantage, focusing on data integration and management strategies that leverage these new systems. Understanding these trends is crucial for tech leaders aiming to harness the full potential of AI in their operations.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/data/six-data-shifts-that-will-shape-enterprise-ai-in-2026"
+            "title": "AI Dating Apps Face Reality Check as Traditional Methods Resurge",
+            "content": "Despite the recent buzz around AI-powered dating apps and bot wingmen, traditional in-person dating experiences are making a comeback. This resurgence suggests that users are seeking genuine human interactions over algorithm-driven matches. AI dating technologies, while innovative, struggle to replicate the spontaneity and authenticity of real-life encounters. This trend indicates a potential shift in consumer preferences, with implications for developers focusing on human-centric design and engagement strategies. Professionals in the dating tech industry should reassess their approaches to balance AI capabilities with the demand for authentic connections. Understanding this dynamic will be key to developing successful dating platforms in the future.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/expired-tired-wired-ai-powered-dating/"
+        },
+        {
+            "date": "Dec 31 2025",
+            "title": "The Decline of Smartphones: What Lies Ahead?",
+            "content": "Industry expert Callaghan predicts a rapid decline in smartphone usage, suggesting that iPhones may become obsolete within five years. This bold statement reflects broader trends in technology where new, immersive devices are poised to replace traditional smartphones. The transition could be driven by advancements in augmented reality (AR), virtual reality (VR), and wearable technology, offering more integrated and intuitive user experiences. This shift will have significant implications for developers and tech companies, requiring adaptation to new platforms and interfaces. Professionals should monitor these emerging technologies closely to remain competitive and innovative in a rapidly evolving market. The potential end of smartphones marks a pivotal moment in the tech landscape, urging stakeholders to prepare for transformative changes.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/30/the-phone-is-dead-long-live-what-exactly/"
         },
         {
             "date": "Dec 30 2025",
-            "title": "Meta&#x27;s Acquisition of Manus Signals Strategic Shift in AI",
-            "content": "Meta, the parent company of Facebook and Instagram, has announced its acquisition of Manus for over $2 billion, marking a strategic shift in its AI strategy. This move indicates that major tech platforms are now competing not only on AI model quality but also on the broader capabilities of AI agents. Manus&#x27;s technology is expected to enhance Meta&#x27;s AI offerings, potentially impacting enterprise AI agent strategies. Businesses should consider the implications of such acquisitions on their own AI development plans and the competitive dynamics within the tech industry. This acquisition underscores the importance of investing in comprehensive AI ecosystems.",
+            "title": "Identity Management Faces Challenges as AI Agents Proliferate",
+            "content": "The rapid proliferation of AI agents, now outnumbering human users by 82 to 1, is straining legacy identity and access management (IAM) systems. Traditional IAM solutions like Active Directory and Lightweight Directory Access Protocol (LDAP) were designed for human users, making them ill-equipped to handle the unique demands of AI and machine identities. This imbalance is creating security vulnerabilities and operational inefficiencies as AI agents become the fastest-growing and least-governed identity class. Organizations must urgently rethink their identity strategies, incorporating robust governance frameworks tailored to machine identities. Addressing these challenges is critical to maintaining security and operational integrity in an AI-driven landscape.",
             "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/why-meta-bought-manus-and-what-it-means-for-your-enterprise-ai-agent"
+            "sourceUrl": "https://venturebeat.com/security/machine-identities-outnumber-humans-82-to-1-legacy-iam-cant-keep-up"
         },
         {
             "date": "Dec 30 2025",
-            "title": "Top AI-Powered Dictation Apps of 2025",
-            "content": "AI-powered dictation apps have become essential tools for professionals, offering capabilities such as email replies, note-taking, and even voice-driven coding. The latest advancements in AI have enhanced the accuracy and functionality of these applications, making them indispensable for increasing productivity. Users should evaluate the leading apps based on their specific needs, considering factors like integration with existing workflows and support for various languages. As AI continues to evolve, these apps are expected to offer even more sophisticated features, further streamlining communication and task management across industries.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/30/the-best-ai-powered-dictation-apps-of-2025/"
+            "title": "Energy Sector Faces New Challenges with AI and Nuclear Power",
+            "content": "The energy landscape is undergoing significant changes as the U.S. increases support for nuclear energy while phasing out coal plants. This shift is occurring alongside growing resistance to the high energy consumption of data centers, driven by AI and other digital technologies. The juxtaposition of these trends highlights the complexity of balancing energy demands with environmental and economic considerations. For tech leaders and policymakers, understanding the implications of this energy transition is crucial. They must navigate the challenges of sustainable energy solutions while accommodating the growing power needs of AI-driven infrastructures. Strategic planning and investment in renewable energy sources will be essential to meet future demands.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/expired-tired-wired-nuclear-plants/"
         },
         {
             "date": "Dec 30 2025",
-            "title": "Enterprises to Increase AI Spending in 2026, Focus on Fewer Vendors",
-            "content": "Venture capitalists predict a significant increase in enterprise AI spending in 2026, with a focus on consolidating vendor relationships. This trend reflects a maturation of the AI market, as businesses seek to streamline their AI toolsets and maximize return on investment. By concentrating on fewer vendors, enterprises aim to deepen partnerships and enhance integration across their technology stacks. Organizations should assess their current AI deployments and vendor strategies to align with this trend, ensuring they are positioned to capitalize on emerging AI capabilities while managing costs effectively.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/30/vcs-predict-enterprises-will-spend-more-on-ai-in-2026-through-fewer-vendors/"
+            "title": "AI Therapists Emerge Amid Global Mental Health Crisis",
+            "content": "As the world grapples with a mental health crisis affecting over a billion people, AI therapists are emerging as a potential solution. These digital tools offer scalable support for individuals suffering from conditions like anxiety and depression, particularly among younger demographics. AI-driven therapy platforms can provide accessible mental health resources, addressing gaps in traditional healthcare systems. However, the rise of AI therapists also raises questions about efficacy, privacy, and the human touch in mental health care. Mental health professionals and tech developers must collaborate to ensure these tools are used ethically and effectively. The integration of AI in mental health care represents a promising yet complex frontier that requires careful consideration and regulation.",
+            "source": "MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2025/12/30/1129392/book-reviews-ai-therapy-mental-health/"
         }
     ],
     "articles": {},
