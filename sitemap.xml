@@ -289,7 +289,30 @@
 
   <!-- ========== SECURITY GUIDES - HIGH VALUE LONG-TAIL KEYWORDS ========== -->
   
-  <!-- NEW GUIDES - December 31, 2025 -->
+  <!-- NEW GUIDES - January 1, 2026 -->
+  <url>
+    <loc>https://thehgtech.com/guides/iso-27001-gap-analysis.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2026-01-01</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/guides/iso-27001-gap-analysis.png</image:loc>
+      <image:title>ISO 27001:2022 Gap Analysis Guide</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/guides/iso-27001-certification-roadmap.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2026-01-01</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/guides/iso-27001-certification-roadmap.png</image:loc>
+      <image:title>ISO 27001:2022 Certification Roadmap</image:title>
+    </image:image>
+  </url>
+
+  <!-- December 31, 2025 -->
   <url>
     <loc>https://thehgtech.com/guides/edr-vs-xdr.html</loc>
     <changefreq>monthly</changefreq>

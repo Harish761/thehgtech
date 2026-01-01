@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>ISO 27001:2022 Gap Analysis Guide | Complete Assessment Framework | TheHGTech</title>
+    <meta name="title" content="ISO 27001:2022 Gap Analysis Guide | TheHGTech">
+    <meta name="description"
+        content="Complete ISO 27001:2022 gap analysis guide with templates, control mapping, and assessment methodology. Learn to identify compliance gaps across all 93 Annex A controls.">
+    <meta name="keywords"
+        content="ISO 27001 gap analysis, ISO 27001:2022 assessment, Annex A controls, ISMS implementation, compliance gap assessment, ISO 27001 checklist, security controls audit, information security management">
+    <meta name="author" content="TheHGTech">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thehgtech.com/guides/iso-27001-gap-analysis.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/guides/iso-27001-gap-analysis.html">
+    <meta property="og:title" content="ISO 27001:2022 Gap Analysis Guide">
+    <meta property="og:description"
+        content="Complete gap analysis methodology with templates and real-world examples for ISO 27001:2022 compliance.">
+    <meta property="og:image" content="https://thehgtech.com/images/guides/iso-27001-gap-analysis.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://thehgtech.com/guides/iso-27001-gap-analysis.html">
+    <meta name="twitter:title" content="ISO 27001:2022 Gap Analysis Guide">
+    <meta name="twitter:description"
+        content="Master ISO 27001:2022 gap analysis with practical templates and methodology.">
+    <meta name="twitter:image" content="https://thehgtech.com/images/guides/iso-27001-gap-analysis.png">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "headline": "ISO 27001:2022 Gap Analysis Guide",
+        "description": "Complete guide to conducting ISO 27001:2022 gap analysis with templates, control mapping, and assessment methodology",
+        "image": "https://thehgtech.com/images/guides/iso-27001-gap-analysis.png",
+        "author": {
+            "@type": "Organization",
+            "name": "TheHGTech"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "TheHGTech",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://thehgtech.com/logo-dark.png"
+            }
+        },
+        "datePublished": "2026-01-01",
+        "dateModified": "2026-01-01",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://thehgtech.com/guides/iso-27001-gap-analysis.html"
+        }
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251217">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF4C4C;
+            --accent-orange: #FF9500;
+            --accent-green: #30D158;
+            --accent-purple: #8b5cf6;
+            --accent-pink: #ec4899;
+            --accent-blue: #3B82F6;
+            --glow-cyan: rgba(0, 217, 255, 0.5);
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+            --glass: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Page Header */
+        .page-header {
+            padding: 3rem 0;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+            margin-top: 60px;
+        }
+
+        .breadcrumb {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .breadcrumb a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .breadcrumb a:hover {
+            color: var(--text-primary);
+        }
+
+        .page-header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .page-meta {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            flex-wrap: wrap;
+        }
+
+        /* Featured Image */
+        .featured-image {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+
+        .featured-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Content */
+        .content {
+            margin-bottom: 4rem;
+        }
+
+        .content h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 2.5rem 0 1rem 0;
+            color: var(--accent-cyan);
+        }
+
+        .content h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 2rem 0 1rem 0;
+            color: var(--text-primary);
+        }
+
+        .content h4 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin: 1.5rem 0 0.75rem 0;
+            color: var(--accent-purple);
+        }
+
+        .content p {
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        .content ul,
+        .content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+            color: var(--text-secondary);
+        }
+
+        .content li {
+            margin-bottom: 0.75rem;
+        }
+
+        .content strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .content a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+
+        .content a:hover {
+            text-decoration: underline;
+        }
+
+        /* Table of Contents */
+        .toc {
+            background: var(--glass);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem 2rem;
+            margin: 2rem 0;
+        }
+
+        .toc h3 {
+            margin: 0 0 1rem 0;
+            color: var(--accent-cyan);
+            font-size: 1.1rem;
+        }
+
+        .toc ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .toc li {
+            margin-bottom: 0.5rem;
+        }
+
+        .toc a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .toc a:hover {
+            color: var(--accent-cyan);
+        }
+
+        /* Info Box */
+        .info-box {
+            background: rgba(0, 217, 255, 0.1);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 1.5rem;
+            border-radius: 0 12px 12px 0;
+            margin: 2rem 0;
+        }
+
+        .info-box strong {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--accent-cyan);
+        }
+
+        /* Warning Box */
+        .warning-box {
+            background: rgba(255, 149, 0, 0.1);
+            border-left: 4px solid var(--accent-orange);
+            padding: 1.5rem;
+            border-radius: 0 12px 12px 0;
+            margin: 2rem 0;
+        }
+
+        .warning-box strong {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--accent-orange);
+        }
+
+        /* Success Box */
+        .success-box {
+            background: rgba(48, 209, 88, 0.1);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            border-radius: 0 12px 12px 0;
+            margin: 2rem 0;
+        }
+
+        .success-box strong {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--accent-green);
+        }
+
+        /* War Story Box */
+        .war-story-box {
+            background: rgba(139, 92, 246, 0.1);
+            border-left: 4px solid var(--accent-purple);
+            padding: 1.5rem;
+            border-radius: 0 12px 12px 0;
+            margin: 2rem 0;
+        }
+
+        .war-story-box strong {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--accent-purple);
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: var(--glass);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: rgba(0, 217, 255, 0.1);
+            color: var(--accent-cyan);
+            font-weight: 600;
+        }
+
+        td {
+            color: var(--text-secondary);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Theme Cards */
+        .theme-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .theme-card {
+            background: var(--glass);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: all 0.3s;
+        }
+
+        .theme-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .theme-card.organizational {
+            border-top: 3px solid var(--accent-blue);
+        }
+
+        .theme-card.people {
+            border-top: 3px solid var(--accent-green);
+        }
+
+        .theme-card.physical {
+            border-top: 3px solid var(--accent-orange);
+        }
+
+        .theme-card.technological {
+            border-top: 3px solid var(--accent-purple);
+        }
+
+        .theme-card h4 {
+            margin: 0 0 0.5rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .theme-card .count {
+            font-size: 2rem;
+            font-weight: 800;
+            margin: 0.5rem 0;
+        }
+
+        .theme-card .count span {
+            font-size: 1rem;
+            font-weight: 400;
+            color: var(--text-muted);
+        }
+
+        /* Download Box */
+        .download-box {
+            background: linear-gradient(135deg, rgba(0, 217, 255, 0.1), rgba(139, 92, 246, 0.1));
+            border: 2px solid var(--accent-cyan);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .download-box h3 {
+            margin: 0 0 1rem 0;
+            color: var(--text-primary);
+        }
+
+        .download-box p {
+            margin: 0 0 1.5rem 0;
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 217, 255, 0.3);
+        }
+
+        /* Code Blocks */
+        pre {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+
+        code {
+            font-family: 'Fira Code', 'Consolas', monospace;
+            font-size: 0.9rem;
+            color: var(--accent-cyan);
+        }
+
+        /* Gap Rating */
+        .gap-rating {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .gap-rating.critical {
+            background: rgba(255, 76, 76, 0.2);
+            color: var(--accent-red);
+        }
+
+        .gap-rating.high {
+            background: rgba(255, 149, 0, 0.2);
+            color: var(--accent-orange);
+        }
+
+        .gap-rating.medium {
+            background: rgba(255, 215, 0, 0.2);
+            color: #FFD700;
+        }
+
+        .gap-rating.low {
+            background: rgba(48, 209, 88, 0.2);
+            color: var(--accent-green);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 2rem;
+            }
+
+            .page-meta {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .content h2 {
+                font-size: 1.5rem;
+            }
+
+            .content h3 {
+                font-size: 1.2rem;
+            }
+
+            .theme-grid {
+                grid-template-columns: 1fr;
+            }
+
+            table {
+                font-size: 0.9rem;
+            }
+
+            th,
+            td {
+                padding: 0.75rem;
+            }
+        }
+    </style>
+
+    <!-- Mobile Navigation CSS -->
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <script src="/m-app.js?v=4.3" defer></script>
+</head>
+
+<body>
+    <!-- Mobile Header -->
+    <header class="m-header m-only">
+        <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="/logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark"
+                style="height: 28px; width: auto; margin: 0;">
+            <img src="/logo-light.png" alt="TheHGTech" class="m-logo-img logo-light"
+                style="height: 28px; width: auto; margin: 0;">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+        </div>
+        <div class="m-header__actions">
+            <button class="m-theme-toggle" onclick="mToggleTheme()" aria-label="Toggle Theme">
+                <span class="m-theme-toggle__thumb"></span>
+                <span class="m-theme-toggle__stars">
+                    <span class="m-theme-toggle__star"></span>
+                    <span class="m-theme-toggle__star"></span>
+                </span>
+            </button>
+            <button class="m-header__btn m-header__btn--search" data-action="search" aria-label="Search">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Bottom Navigation -->
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item">
+            <i class="fas fa-bug"></i>
+            <span>CVE</span>
+        </a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item">
+            <i class="fas fa-shield-alt"></i>
+            <span>Intel</span>
+        </a>
+        <a href="/articles.html" class="m-bottom-nav__item">
+            <i class="fas fa-newspaper"></i>
+            <span>Articles</span>
+        </a>
+        <a href="/guides/" class="m-bottom-nav__item active">
+            <i class="fas fa-book"></i>
+            <span>Guides</span>
+        </a>
+    </nav>
+
+    <!-- Desktop Header -->
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+
+            <nav class="nav" role="navigation">
+                <a href="/index.html#news">News</a>
+                <a href="/threat-intel.html">Threat Intelligence <span class="live-badge">LIVE</span></a>
+                <a href="/cve-tracker.html">CVE</a>
+                <a href="/guides/">Guides</a>
+                <a href="/comparisons/">Tool Comparisons</a>
+                <a href="/articles.html">Articles</a>
+                <a href="/index.html#about">About</a>
+                <a href="/index.html#contact">Contact</a>
+
+                <div class="theme-toggle-wrapper">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                        <div class="toggle-icon sun">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <div class="toggle-icon moon">
+                            <i class="fas fa-moon"></i>
+                        </div>
+                    </button>
+                </div>
+            </nav>
+
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="page-header">
+            <div class="breadcrumb">
+                <a href="/">Home</a> / <a href="/guides/">Guides</a> / ISO 27001 Gap Analysis
+            </div>
+            <h1><i class="fas fa-search-plus"></i> ISO 27001:2022 Gap Analysis Guide</h1>
+            <p style="color: var(--text-muted); font-size: 1.1rem;">Complete Assessment Framework for Compliance
+                Readiness</p>
+            <div class="page-meta">
+                <span><i class="fas fa-book-open"></i> 28 min read</span>
+                <span><i class="fas fa-crosshairs"></i> Beginner to Advanced</span>
+                <span><i class="far fa-calendar-alt"></i> January 2026</span>
+            </div>
+        </div>
+
+        <!-- Featured Image -->
+        <div class="featured-image">
+            <img src="/images/guides/iso-27001-gap-analysis.png"
+                alt="ISO 27001:2022 Gap Analysis showing the four Annex A themes and compliance assessment framework"
+                width="800" height="450">
+        </div>
+
+        <div class="content">
+            <!-- Table of Contents -->
+            <div class="toc">
+                <h3><i class="fas fa-list-ul"></i> Table of Contents</h3>
+                <ul>
+                    <li><a href="#introduction">1. What is ISO 27001:2022 Gap Analysis?</a></li>
+                    <li><a href="#changes-2022">2. Key Changes: ISO 27001:2013 vs 2022</a></li>
+                    <li><a href="#methodology">3. Gap Analysis Methodology</a></li>
+                    <li><a href="#annex-a-themes">4. The Four Annex A Themes (93 Controls)</a></li>
+                    <li><a href="#commonly-failed">5. Most Commonly Failed Controls</a></li>
+                    <li><a href="#scoring">6. Gap Scoring and Prioritization</a></li>
+                    <li><a href="#remediation">7. Remediation Planning</a></li>
+                    <li><a href="#war-stories">8. War Stories: Lessons from Real Assessments</a></li>
+                    <li><a href="#templates">9. Download: Gap Analysis Templates</a></li>
+                    <li><a href="#next-steps">10. Next Steps: From Gap to Certification</a></li>
+                </ul>
+            </div>
+
+            <h2 id="introduction">1. What is ISO 27001:2022 Gap Analysis?</h2>
+            <p>
+                An ISO 27001 gap analysis is a systematic comparison between your organization's current information
+                security posture and the requirements of the ISO 27001:2022 standard. Think of it as a health check for
+                your security program that reveals exactly where you stand and what needs improvement before pursuing
+                certification.
+            </p>
+            <p>
+                The gap analysis answers three critical questions:
+            </p>
+            <ul>
+                <li><strong>Where are we now?</strong> Current state of security controls and processes</li>
+                <li><strong>Where do we need to be?</strong> ISO 27001:2022 requirements and expectations</li>
+                <li><strong>What's the gap?</strong> The delta between current state and compliance requirements</li>
+            </ul>
+
+            <div class="info-box">
+                <strong><i class="fas fa-lightbulb"></i> Why Gap Analysis First?</strong>
+                <p style="margin: 0;">
+                    Organizations that skip gap analysis spend an average of 40% more time on implementation. The gap
+                    analysis provides a roadmap that prevents wasted effort on controls you already have while
+                    highlighting critical blind spots.
+                </p>
+            </div>
+
+            <h3>When to Conduct a Gap Analysis</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Scenario</th>
+                        <th>Gap Analysis Purpose</th>
+                        <th>Typical Duration</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>First-time certification</strong></td>
+                        <td>Baseline assessment, implementation roadmap</td>
+                        <td>2-4 weeks</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Transition from 2013 to 2022</strong></td>
+                        <td>Identify new controls, mapping existing controls</td>
+                        <td>1-2 weeks</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Post-acquisition/merger</strong></td>
+                        <td>Assess inherited systems and processes</td>
+                        <td>3-6 weeks</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Pre-audit health check</strong></td>
+                        <td>Identify gaps before certification body arrives</td>
+                        <td>1 week</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Annual review</strong></td>
+                        <td>Continuous improvement, maintain compliance</td>
+                        <td>3-5 days</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 id="changes-2022">2. Key Changes: ISO 27001:2013 vs 2022</h2>
+            <p>
+                The 2022 revision brought significant restructuring to Annex A. Understanding these changes is essential
+                for anyone familiar with the previous version.
+            </p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Aspect</th>
+                        <th>ISO 27001:2013</th>
+                        <th>ISO 27001:2022</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Total Controls</strong></td>
+                        <td>114 controls</td>
+                        <td>93 controls</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Control Domains</strong></td>
+                        <td>14 domains (A.5 - A.18)</td>
+                        <td>4 themes</td>
+                    </tr>
+                    <tr>
+                        <td><strong>New Controls</strong></td>
+                        <td>-</td>
+                        <td>11 new controls</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Merged Controls</strong></td>
+                        <td>-</td>
+                        <td>24 controls merged</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Control Attributes</strong></td>
+                        <td>Not included</td>
+                        <td>5 attribute types for each control</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Transition Deadline</strong></td>
+                        <td>-</td>
+                        <td>October 31, 2025</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>The 11 New Controls in ISO 27001:2022</h3>
+            <p>
+                These controls reflect modern security challenges that didn't exist or weren't prominent in 2013:
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Control ID</th>
+                        <th>Control Name</th>
+                        <th>Why It's New</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>A.5.7</td>
+                        <td>Threat Intelligence</td>
+                        <td>Proactive threat awareness</td>
+                    </tr>
+                    <tr>
+                        <td>A.5.23</td>
+                        <td>Information Security for Cloud Services</td>
+                        <td>Cloud adoption explosion</td>
+                    </tr>
+                    <tr>
+                        <td>A.5.30</td>
+                        <td>ICT Readiness for Business Continuity</td>
+                        <td>Technology resilience focus</td>
+                    </tr>
+                    <tr>
+                        <td>A.7.4</td>
+                        <td>Physical Security Monitoring</td>
+                        <td>Surveillance and detection</td>
+                    </tr>
+                    <tr>
+                        <td>A.8.9</td>
+                        <td>Configuration Management</td>
+                        <td>Baseline security settings</td>
+                    </tr>
+                    <tr>
+                        <td>A.8.10</td>
+                        <td>Information Deletion</td>
+                        <td>Data lifecycle management</td>
+                    </tr>
+                    <tr>
+                        <td>A.8.11</td>
+                        <td>Data Masking</td>
+                        <td>Privacy and data protection</td>
+                    </tr>
+                    <tr>
+                        <td>A.8.12</td>
+                        <td>Data Leakage Prevention</td>
+                        <td>DLP requirements</td>
+                    </tr>
+                    <tr>
+                        <td>A.8.16</td>
+                        <td>Monitoring Activities</td>
+                        <td>Detection and SIEM</td>
+                    </tr>
+                    <tr>
+                        <td>A.8.23</td>
+                        <td>Web Filtering</td>
+                        <td>Content filtering controls</td>
+                    </tr>
+                    <tr>
+                        <td>A.8.28</td>
+                        <td>Secure Coding</td>
+                        <td>Application security focus</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="warning-box">
+                <strong><i class="fas fa-exclamation-triangle"></i> Transition Deadline</strong>
+                <p style="margin: 0;">
+                    All certified organizations must transition to ISO 27001:2022 by <strong>October 31, 2025</strong>.
+                    Certifications under the 2013 version will not be valid after this date.
+                </p>
+            </div>
+
+            <h2 id="methodology">3. Gap Analysis Methodology</h2>
+            <p>
+                A structured methodology ensures consistent, repeatable assessments. Here's a proven five-phase
+                approach:
+            </p>
+
+            <h3>Phase 1: Scope Definition</h3>
+            <ul>
+                <li>Define ISMS boundaries (business units, locations, systems)</li>
+                <li>Identify key stakeholders and process owners</li>
+                <li>Gather existing documentation (policies, procedures, risk assessments)</li>
+                <li>Establish assessment timeline and resources</li>
+            </ul>
+
+            <h3>Phase 2: Document Review</h3>
+            <ul>
+                <li>Review existing ISMS documentation against ISO 27001 requirements</li>
+                <li>Assess policy completeness and currency</li>
+                <li>Evaluate procedure alignment with controls</li>
+                <li>Check evidence of implementation and records</li>
+            </ul>
+
+            <h3>Phase 3: Control Assessment</h3>
+            <p>For each of the 93 Annex A controls, evaluate:</p>
+            <ul>
+                <li><strong>Implementation Status:</strong> Not implemented, Partially, Fully implemented</li>
+                <li><strong>Evidence Quality:</strong> None, Informal, Documented, Proven effective</li>
+                <li><strong>Gap Severity:</strong> Critical, High, Medium, Low</li>
+                <li><strong>Remediation Effort:</strong> Quick win, Moderate, Significant project</li>
+            </ul>
+
+            <h3>Phase 4: Stakeholder Interviews</h3>
+            <ul>
+                <li>Interview process owners to validate document review findings</li>
+                <li>Observe actual practices vs documented procedures</li>
+                <li>Identify undocumented but effective controls</li>
+                <li>Uncover cultural and awareness gaps</li>
+            </ul>
+
+            <h3>Phase 5: Reporting and Roadmap</h3>
+            <ul>
+                <li>Compile findings into gap analysis report</li>
+                <li>Prioritize gaps by risk and remediation effort</li>
+                <li>Create remediation timeline with milestones</li>
+                <li>Estimate resource requirements and budget</li>
+            </ul>
+
+            <div class="success-box">
+                <strong><i class="fas fa-check-circle"></i> Best Practice: Evidence-Based Assessment</strong>
+                <p style="margin: 0;">
+                    Never rely solely on interviews. For each control, request evidence: screenshots, logs, policy
+                    documents, training records. "We do that" isn't evidence; a signed procedure with audit trail is.
+                </p>
+            </div>
+
+            <h2 id="annex-a-themes">4. The Four Annex A Themes (93 Controls)</h2>
+            <p>
+                ISO 27001:2022 restructured the 93 controls into four logical themes. Understanding this structure helps
+                organize your assessment and responsibilities.
+            </p>
+
+            <div class="theme-grid">
+                <div class="theme-card organizational">
+                    <h4 style="color: var(--accent-blue);"><i class="fas fa-building"></i> Organizational Controls</h4>
+                    <div class="count" style="color: var(--accent-blue);">37 <span>controls</span></div>
+                    <p style="margin: 0; color: var(--text-secondary); font-size: 0.95rem;">
+                        Policies, roles, responsibilities, asset management, access control, supplier relationships,
+                        incident management, business continuity, compliance
+                    </p>
+                </div>
+                <div class="theme-card people">
+                    <h4 style="color: var(--accent-green);"><i class="fas fa-users"></i> People Controls</h4>
+                    <div class="count" style="color: var(--accent-green);">8 <span>controls</span></div>
+                    <p style="margin: 0; color: var(--text-secondary); font-size: 0.95rem;">
+                        Screening, employment terms, awareness training, disciplinary process, termination, remote
+                        working, event reporting
+                    </p>
+                </div>
+                <div class="theme-card physical">
+                    <h4 style="color: var(--accent-orange);"><i class="fas fa-door-closed"></i> Physical Controls</h4>
+                    <div class="count" style="color: var(--accent-orange);">14 <span>controls</span></div>
+                    <p style="margin: 0; color: var(--text-secondary); font-size: 0.95rem;">
+                        Physical perimeters, entry controls, securing offices, monitoring, protecting against threats,
+                        equipment security, secure disposal, clear desk
+                    </p>
+                </div>
+                <div class="theme-card technological">
+                    <h4 style="color: var(--accent-purple);"><i class="fas fa-microchip"></i> Technological Controls
+                    </h4>
+                    <div class="count" style="color: var(--accent-purple);">34 <span>controls</span></div>
+                    <p style="margin: 0; color: var(--text-secondary); font-size: 0.95rem;">
+                        Endpoint devices, access rights, authentication, malware, backups, logging, monitoring,
+                        network security, cryptography, secure development, testing
+                    </p>
+                </div>
+            </div>
+
+            <h3>Organizational Controls (A.5) - Key Areas</h3>
+            <p>These 37 controls form the foundation of your ISMS:</p>
+            <ul>
+                <li><strong>A.5.1-A.5.6:</strong> Policies and roles - Governance structure</li>
+                <li><strong>A.5.7:</strong> Threat intelligence - NEW in 2022</li>
+                <li><strong>A.5.9-A.5.14:</strong> Asset management - Classification and handling</li>
+                <li><strong>A.5.15-A.5.18:</strong> Access control - Identity and access management</li>
+                <li><strong>A.5.19-A.5.22:</strong> Supplier relationships - Third-party risk</li>
+                <li><strong>A.5.23-A.5.25:</strong> Cloud security - NEW emphasis in 2022</li>
+                <li><strong>A.5.24-A.5.28:</strong> Incident management - Detection and response</li>
+                <li><strong>A.5.29-A.5.30:</strong> Business continuity - Resilience</li>
+                <li><strong>A.5.31-A.5.37:</strong> Compliance - Legal and contractual</li>
+            </ul>
+
+            <h3>People Controls (A.6) - Key Areas</h3>
+            <ul>
+                <li><strong>A.6.1:</strong> Background screening before employment</li>
+                <li><strong>A.6.2:</strong> Terms and conditions of employment</li>
+                <li><strong>A.6.3:</strong> Information security awareness, education, and training</li>
+                <li><strong>A.6.4:</strong> Disciplinary process for violations</li>
+                <li><strong>A.6.5:</strong> Responsibilities after termination</li>
+                <li><strong>A.6.6:</strong> Confidentiality agreements</li>
+                <li><strong>A.6.7:</strong> Remote working security</li>
+                <li><strong>A.6.8:</strong> Security event reporting</li>
+            </ul>
+
+            <h3>Physical Controls (A.7) - Key Areas</h3>
+            <ul>
+                <li><strong>A.7.1-A.7.3:</strong> Physical security perimeters and entry</li>
+                <li><strong>A.7.4:</strong> Physical security monitoring - NEW in 2022</li>
+                <li><strong>A.7.5-A.7.8:</strong> Protecting against environmental threats</li>
+                <li><strong>A.7.9-A.7.13:</strong> Equipment security and maintenance</li>
+                <li><strong>A.7.14:</strong> Secure disposal or reuse of equipment</li>
+            </ul>
+
+            <h3>Technological Controls (A.8) - Key Areas</h3>
+            <ul>
+                <li><strong>A.8.1-A.8.8:</strong> Endpoint and access management</li>
+                <li><strong>A.8.9-A.8.12:</strong> Configuration, deletion, masking, DLP - NEW controls</li>
+                <li><strong>A.8.13-A.8.17:</strong> Backup, redundancy, logging, monitoring</li>
+                <li><strong>A.8.18-A.8.22:</strong> Network security and segregation</li>
+                <li><strong>A.8.23-A.8.25:</strong> Web filtering, cryptography - NEW/enhanced</li>
+                <li><strong>A.8.26-A.8.34:</strong> Application security, secure development, testing</li>
+            </ul>
+
+            <h2 id="commonly-failed">5. Most Commonly Failed Controls</h2>
+            <p>
+                Based on analysis of hundreds of certification audits, these controls have the highest failure rates.
+                Pay special attention during your gap analysis:
+            </p>
+
+            <h3><span class="gap-rating critical"><i class="fas fa-times-circle"></i> Critical</span> A.5.7 - Threat
+                Intelligence</h3>
+            <p>
+                <strong>Why it fails:</strong> Organizations claim they "monitor threats" but lack structured processes.
+                Reading security news isn't threat intelligence.
+            </p>
+            <p><strong>What auditors look for:</strong></p>
+            <ul>
+                <li>Documented threat intelligence sources and feeds</li>
+                <li>Process for analyzing and actioning threat information</li>
+                <li>Evidence of threat briefings to relevant stakeholders</li>
+                <li>Integration with risk assessment and incident response</li>
+            </ul>
+
+            <div class="war-story-box">
+                <strong><i class="fas fa-skull-crossbones"></i> War Story: The "We Read The News" Defense</strong>
+                <p style="margin: 0;">
+                    A financial services company confidently claimed A.5.7 compliance because their security team
+                    "follows industry news." The auditor asked for evidence of how a recent ransomware campaign
+                    affecting their sector was analyzed and actioned. Silence. The auditor found no documentation of
+                    threat sources, no analysis process, no evidence of sharing with IT teams. Result: Major
+                    non-conformity.
+                </p>
+            </div>
+
+            <h3><span class="gap-rating critical"><i class="fas fa-times-circle"></i> Critical</span> A.6.3 - Security
+                Awareness Training</h3>
+            <p>
+                <strong>Why it fails:</strong> Annual checkbox training with no measurement of effectiveness. No
+                role-based training. No evidence of behavior change.
+            </p>
+            <p><strong>What auditors look for:</strong></p>
+            <ul>
+                <li>Training program aligned to roles and risks</li>
+                <li>Completion records with dates and attendee signatures</li>
+                <li>Assessment/testing of knowledge retention</li>
+                <li>Evidence of continuous reinforcement (phishing simulations, newsletters)</li>
+                <li>Training updates when policies or threats change</li>
+            </ul>
+
+            <h3><span class="gap-rating high"><i class="fas fa-exclamation-circle"></i> High</span> A.8.9 -
+                Configuration
+                Management</h3>
+            <p>
+                <strong>Why it fails:</strong> Organizations have configurations but no documented baselines. Drift from
+                baseline isn't monitored. No approval process for changes.
+            </p>
+            <p><strong>What auditors look for:</strong></p>
+            <ul>
+                <li>Documented security baseline configurations for each technology</li>
+                <li>Process to detect and remediate configuration drift</li>
+                <li>Change management integration</li>
+                <li>Regular configuration reviews (hardening assessments)</li>
+            </ul>
+
+            <h3><span class="gap-rating high"><i class="fas fa-exclamation-circle"></i> High</span> A.5.23 - Cloud
+                Security</h3>
+            <p>
+                <strong>Why it fails:</strong> Shadow IT, unclear responsibility models, treating cloud like
+                on-premises.
+            </p>
+            <p><strong>What auditors look for:</strong></p>
+            <ul>
+                <li>Cloud service inventory and risk assessment</li>
+                <li>Clear shared responsibility documentation per provider</li>
+                <li>Cloud-specific security configurations and monitoring</li>
+                <li>Exit strategy and data portability planning</li>
+            </ul>
+
+            <h3><span class="gap-rating high"><i class="fas fa-exclamation-circle"></i> High</span> A.8.16 - Monitoring
+                Activities</h3>
+            <p>
+                <strong>Why it fails:</strong> Logs exist but nobody reviews them. Alerts fire but nobody responds.
+                No defined thresholds or escalation.
+            </p>
+            <p><strong>What auditors look for:</strong></p>
+            <ul>
+                <li>Defined monitoring requirements (what, where, how often)</li>
+                <li>Alert thresholds and escalation procedures</li>
+                <li>Evidence of log review (signed reviews, SIEM reports)</li>
+                <li>Incident correlation and detection rules</li>
+            </ul>
+
+            <h3><span class="gap-rating medium"><i class="fas fa-exclamation-triangle"></i> Medium</span> A.8.28 -
+                Secure
+                Coding</h3>
+            <p>
+                <strong>Why it fails:</strong> Developers say they follow secure coding, but no standards exist. No code
+                review process. No security testing in CI/CD.
+            </p>
+            <p><strong>What auditors look for:</strong></p>
+            <ul>
+                <li>Documented secure coding standards (OWASP, SANS)</li>
+                <li>Security code review process with records</li>
+                <li>SAST/DAST integration in development pipeline</li>
+                <li>Developer security training specific to languages used</li>
+            </ul>
+
+            <h3><span class="gap-rating medium"><i class="fas fa-exclamation-triangle"></i> Medium</span> A.5.22 -
+                Supplier Monitoring</h3>
+            <p>
+                <strong>Why it fails:</strong> Initial assessment done, but no ongoing monitoring. No process for
+                supplier changes or incidents.
+            </p>
+            <p><strong>What auditors look for:</strong></p>
+            <ul>
+                <li>Regular supplier security reviews (annual minimum)</li>
+                <li>Monitoring of supplier security posture changes</li>
+                <li>Notification requirements for supplier incidents</li>
+                <li>Right to audit clauses exercised</li>
+            </ul>
+
+            <h2 id="scoring">6. Gap Scoring and Prioritization</h2>
+            <p>
+                Not all gaps are equal. Use a scoring matrix to prioritize remediation efforts:
+            </p>
+
+            <h3>Gap Severity Matrix</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Severity</th>
+                        <th>Criteria</th>
+                        <th>Remediation Priority</th>
+                        <th>Timeline</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="gap-rating critical"><i class="fas fa-times-circle"></i> Critical</span></td>
+                        <td>Control not implemented; high risk exposure; will result in major NC</td>
+                        <td>Immediate</td>
+                        <td>0-30 days</td>
+                    </tr>
+                    <tr>
+                        <td><span class="gap-rating high"><i class="fas fa-exclamation-circle"></i> High</span></td>
+                        <td>Control partially implemented; significant gaps; likely minor NC</td>
+                        <td>High</td>
+                        <td>30-60 days</td>
+                    </tr>
+                    <tr>
+                        <td><span class="gap-rating medium"><i class="fas fa-exclamation-triangle"></i> Medium</span>
+                        </td>
+                        <td>Control mostly implemented; minor gaps; observation likely</td>
+                        <td>Medium</td>
+                        <td>60-90 days</td>
+                    </tr>
+                    <tr>
+                        <td><span class="gap-rating low"><i class="fas fa-check-circle"></i> Low</span></td>
+                        <td>Control implemented; minor improvements possible; optimization</td>
+                        <td>Low</td>
+                        <td>90+ days</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Prioritization Formula</h3>
+            <p>Calculate priority score for each gap:</p>
+            <pre><code>Priority Score = (Risk Impact × Likelihood) + Audit Probability - Implementation Effort
+
+Where:
+- Risk Impact: 1-5 (1=Low, 5=Critical)
+- Likelihood: 1-5 (1=Rare, 5=Almost Certain)  
+- Audit Probability: How likely auditor will check (1-3)
+- Implementation Effort: Resource requirement (1-5, higher = harder)</code></pre>
+
+            <p><strong>Example Calculation:</strong></p>
+            <ul>
+                <li>A.5.7 Threat Intelligence: (4 × 3) + 3 - 3 = 12 (High priority)</li>
+                <li>A.8.28 Secure Coding: (3 × 2) + 2 - 4 = 4 (Medium priority)</li>
+            </ul>
+
+            <h2 id="remediation">7. Remediation Planning</h2>
+            <p>
+                Transform your gap findings into an actionable remediation plan:
+            </p>
+
+            <h3>Remediation Plan Template</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Control</th>
+                        <th>Gap Description</th>
+                        <th>Action Required</th>
+                        <th>Owner</th>
+                        <th>Target Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>A.5.7</td>
+                        <td>No formal threat intel process</td>
+                        <td>Implement threat intel feeds, create analysis procedure</td>
+                        <td>SOC Manager</td>
+                        <td>Feb 28</td>
+                        <td>In Progress</td>
+                    </tr>
+                    <tr>
+                        <td>A.6.3</td>
+                        <td>Training lacks role-based content</td>
+                        <td>Develop role-specific training modules</td>
+                        <td>HR/Security</td>
+                        <td>Mar 15</td>
+                        <td>Not Started</td>
+                    </tr>
+                    <tr>
+                        <td>A.8.9</td>
+                        <td>No baseline configurations documented</td>
+                        <td>Create CIS-based baselines, implement drift detection</td>
+                        <td>IT Ops</td>
+                        <td>Apr 1</td>
+                        <td>Planning</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Quick Wins vs. Projects</h3>
+            <p><strong>Quick Wins (1-2 weeks):</strong></p>
+            <ul>
+                <li>Documenting existing but undocumented processes</li>
+                <li>Updating policies with missing sections</li>
+                <li>Enabling existing but unused security features</li>
+                <li>Creating missing forms and templates</li>
+            </ul>
+            <p><strong>Projects (1-3 months):</strong></p>
+            <ul>
+                <li>Implementing new technology controls (DLP, SIEM)</li>
+                <li>Developing comprehensive training programs</li>
+                <li>Establishing new processes (threat intelligence, secure development)</li>
+                <li>Third-party risk management program build-out</li>
+            </ul>
+
+            <div class="success-box">
+                <strong><i class="fas fa-check-circle"></i> Best Practice: Evidence as You Go</strong>
+                <p style="margin: 0;">
+                    As you remediate each gap, immediately collect and organize evidence. Don't wait until audit
+                    preparation. Create an evidence folder structure mirroring Annex A controls.
+                </p>
+            </div>
+
+            <h2 id="war-stories">8. War Stories: Lessons from Real Assessments</h2>
+
+            <div class="war-story-box">
+                <strong><i class="fas fa-skull-crossbones"></i> The Over-Confident CISO</strong>
+                <p style="margin: 0.5rem 0;">
+                    A technology company's CISO was confident their existing SOC 2 controls would map directly to ISO
+                    27001. The gap analysis revealed 34 control gaps. SOC 2 covers security, but ISO 27001 includes
+                    physical security, HR processes, and supplier management that SOC 2 doesn't require. Lesson: Never
+                    assume framework equivalence without mapping.
+                </p>
+            </div>
+
+            <div class="war-story-box">
+                <strong><i class="fas fa-skull-crossbones"></i> The Documentation Desert</strong>
+                <p style="margin: 0.5rem 0;">
+                    A healthcare organization had excellent security practices but almost no documentation. Engineers
+                    knew what to do, but nothing was written down. The gap analysis found only 12 of 93 controls had
+                    adequate documentation. Six months of intensive documentation work followed. Lesson: Undocumented
+                    controls don't exist in an audit.
+                </p>
+            </div>
+
+            <div class="war-story-box">
+                <strong><i class="fas fa-skull-crossbones"></i> The Shadow IT Surprise</strong>
+                <p style="margin: 0.5rem 0;">
+                    During A.5.9 (asset inventory) assessment, the gap analysis team discovered 47 SaaS applications in
+                    use that IT knew nothing about. Marketing had procurement cards. Each unapproved app was a potential
+                    A.5.23 (cloud security) violation. The scope had to be expanded significantly. Lesson: Always do
+                    discovery before assuming you know your asset universe.
+                </p>
+            </div>
+
+            <div class="war-story-box">
+                <strong><i class="fas fa-skull-crossbones"></i> The Backup That Wasn't</strong>
+                <p style="margin: 0.5rem 0;">
+                    For A.8.13 (backup), the IT team showed beautiful backup job success reports. The gap analyst asked
+                    for restore test evidence. Last restore test? 18 months ago. A test restore was performed during the
+                    assessment and failed. Backups had been completing but were corrupted. Lesson: Backup without tested
+                    restore is just storage.
+                </p>
+            </div>
+
+            <h2 id="templates">9. Download: Gap Analysis Templates</h2>
+
+            <div class="download-box">
+                <h3><i class="fas fa-file-download"></i> ISO 27001:2022 Gap Analysis Template Pack</h3>
+                <p>
+                    Complete assessment toolkit including control checklist, scoring matrix, remediation tracker, and
+                    evidence requirements for all 93 Annex A controls.
+                </p>
+                <a href="/downloads/iso-27001-gap-analysis-template.xlsx" class="download-btn">
+                    <i class="fas fa-download"></i> Download Template Pack (Excel)
+                </a>
+                <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-muted);">
+                    <i class="fas fa-lock"></i> Free download - No email required
+                </p>
+            </div>
+
+            <h3>What's Included:</h3>
+            <ul>
+                <li><strong>Control Assessment Worksheet:</strong> All 93 controls with assessment criteria</li>
+                <li><strong>Gap Scoring Matrix:</strong> Prioritization calculator with formulas</li>
+                <li><strong>Remediation Tracker:</strong> Action items with owners and timelines</li>
+                <li><strong>Evidence Checklist:</strong> Required evidence for each control</li>
+                <li><strong>Executive Summary Template:</strong> Report format for leadership</li>
+                <li><strong>Control Mapping:</strong> 2013 to 2022 transition mapping</li>
+            </ul>
+
+            <h2 id="next-steps">10. Next Steps: From Gap to Certification</h2>
+            <p>
+                Your gap analysis is complete. Here's what comes next:
+            </p>
+
+            <h3>Immediate Actions (Week 1-2)</h3>
+            <ol>
+                <li>Present gap analysis findings to leadership</li>
+                <li>Secure budget and resource commitment</li>
+                <li>Assign control owners for each gap</li>
+                <li>Prioritize quick wins for early momentum</li>
+            </ol>
+
+            <h3>Implementation Phase (Months 1-6)</h3>
+            <ol>
+                <li>Execute remediation plan in priority order</li>
+                <li>Document everything as you implement</li>
+                <li>Conduct mini internal audits to verify closure</li>
+                <li>Update risk assessment with control improvements</li>
+            </ol>
+
+            <h3>Certification Preparation (Months 6-9)</h3>
+            <ol>
+                <li>Conduct full internal audit</li>
+                <li>Management review meeting</li>
+                <li>Address internal audit findings</li>
+                <li>Select certification body and schedule audit</li>
+            </ol>
+
+            <div class="info-box">
+                <strong><i class="fas fa-lightbulb"></i> Ready for the Next Step?</strong>
+                <p style="margin: 0;">
+                    Check out our complete <a href="/guides/iso-27001-certification-roadmap.html">ISO 27001:2022
+                        Certification Roadmap</a> for detailed guidance on the journey from implementation to
+                    certification.
+                </p>
+            </div>
+
+            <p
+                style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); color: var(--text-muted);">
+                <strong>Author:</strong> TheHGTech Security Team<br>
+                <strong>Last Updated:</strong> January 2026<br>
+                <strong>Reading Time:</strong> 28 minutes
+            </p>
+        </div>
+
+        <!-- Interaction Bar -->
+        <div class="interaction-bar">
+            <div class="like-section">
+                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                    <i class="far fa-heart"></i> <span id="likeText">Like this guide</span>
+                </button>
+            </div>
+            <div class="action-buttons">
+                <div class="share-buttons">
+                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"
+                        aria-label="Share on Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"
+                        aria-label="Share on LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link">
+                        <i class="fas fa-link"></i>
+                    </button>
+                </div>
+                <div class="button-separator"></div>
+                <button onclick="printArticle()" class="print-btn" title="Print" aria-label="Print">
+                    <i class="fas fa-print"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/header.js"></script>
+    <script src="/theme-toggle.js"></script>
+    <script src="/interaction-bar.js?v=20251217"></script>
+</body>
+
+</html>
