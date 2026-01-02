@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-01-01T12:43:28.162978",
+  "last_updated": "2026-01-02T01:47:50.299719",
   "period": "Last 7 days",
-  "total_groups": 25,
-  "total_victims": 256,
+  "total_groups": 24,
+  "total_victims": 250,
   "groups": [
     {
       "name": "Lockbit5",
-      "count": 81,
+      "count": 80,
       "victims": [
         {
           "name": "esopdirect.com",
@@ -63,10 +63,10 @@
           "discovered_date": "2025-12-26T15:46:54.685884"
         },
         {
-          "name": "savantivibranti.com",
-          "date": "2025-12-26 15:42:59.709231",
-          "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/c8fe0fba6a64762a522de480da697e2e",
-          "discovered_date": "2025-12-26T15:42:59.709231"
+          "name": "soeuae.ae",
+          "date": "2025-12-26 15:43:33.124946",
+          "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/ef1480089cbb6bc1ce980a0ce4eb2a74",
+          "discovered_date": "2025-12-26T15:43:33.124946"
         }
       ],
       "industries": [
@@ -86,18 +86,18 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        63,
         0,
         0,
         8,
         0,
         10,
+        0,
         0
       ]
     },
     {
       "name": "Qilin",
-      "count": 44,
+      "count": 42,
       "victims": [
         {
           "name": "KOPA Kozmetik A",
@@ -177,12 +177,12 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        8,
         4,
         8,
         8,
         2,
         12,
+        0,
         0
       ]
     },
@@ -268,12 +268,101 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        0,
         18,
         0,
         20,
         0,
         0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Dragonforce",
+      "count": 14,
+      "victims": [
+        {
+          "name": "NK Technologies",
+          "date": "2025-12-29 17:15:26.211498",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=ca9647eb-67d9-47f5-a33e-49299d53b499",
+          "discovered_date": "2025-12-29T17:15:26.211498"
+        },
+        {
+          "name": "Burnex",
+          "date": "2025-12-29 17:16:24.280439",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=f46e177f-4a43-4cef-abea-2216f2ecf204",
+          "discovered_date": "2025-12-29T17:16:24.280439"
+        },
+        {
+          "name": "Barnes & Jones",
+          "date": "2026-01-01 15:53:40.050076",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=ba78a599-b0fc-4d8b-bd21-6773d6a6bf65",
+          "discovered_date": "2026-01-01T15:53:40.050076"
+        },
+        {
+          "name": "Centro Médico Palafox",
+          "date": "2025-12-27 15:43:18.955254",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=e54a028c-5807-42e3-931b-9fefe267bdde",
+          "discovered_date": "2025-12-27T15:43:18.955254"
+        },
+        {
+          "name": "Caramel",
+          "date": "2025-12-27 15:44:12.370957",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=d9fde603-23c2-4e9c-9aa1-a242ff4eca8e",
+          "discovered_date": "2025-12-27T15:44:12.370957"
+        },
+        {
+          "name": "BMW Guatemala",
+          "date": "2025-12-27 15:45:03.892075",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=bed18c92-e86f-4909-a7b0-eff76c9e98d4",
+          "discovered_date": "2025-12-27T15:45:03.892075"
+        },
+        {
+          "name": "Neurological Associates",
+          "date": "2025-12-28 15:50:08.662915",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=1f1a5c3d-343b-48e8-9fdd-d0d520a75a1c",
+          "discovered_date": "2025-12-28T15:50:08.662915"
+        },
+        {
+          "name": "Barnes & Jones",
+          "date": "2026-01-01T15:53:40+00:00",
+          "url": "https://www.ransomware.live/id/QmFybmVzICYgSm9uZXNAZHJhZ29uZm9yY2U=",
+          "discovered_date": "2026-01-01T15:53:40+00:00"
+        },
+        {
+          "name": "Burnex",
+          "date": "2025-12-29T17:16:24+00:00",
+          "url": "https://www.ransomware.live/id/QnVybmV4QGRyYWdvbmZvcmNl",
+          "discovered_date": "2025-12-29T17:16:24+00:00"
+        },
+        {
+          "name": "NK Technologies",
+          "date": "2025-12-29T17:15:26+00:00",
+          "url": "https://www.ransomware.live/id/TksgVGVjaG5vbG9naWVzQGRyYWdvbmZvcmNl",
+          "discovered_date": "2025-12-29T17:15:26+00:00"
+        }
+      ],
+      "industries": [
+        "Healthcare",
+        "Manufacturing",
+        "Not Found",
+        "Technology"
+      ],
+      "countries": [
+        "GT",
+        "MX",
+        "N/A",
+        "US"
+      ],
+      "trend": "up",
+      "trend_percentage": 15,
+      "daily_counts": [
+        6,
+        2,
+        4,
+        0,
+        0,
+        2,
         0
       ]
     },
@@ -357,10 +446,10 @@
       "daily_counts": [
         0,
         0,
-        0,
         10,
         0,
         2,
+        0,
         0
       ]
     },
@@ -446,106 +535,17 @@
       "trend_percentage": 15,
       "daily_counts": [
         0,
-        0,
         2,
         4,
         2,
         4,
-        0
-      ]
-    },
-    {
-      "name": "Dragonforce",
-      "count": 12,
-      "victims": [
-        {
-          "name": "NK Technologies",
-          "date": "2025-12-29 17:15:26.211498",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=ca9647eb-67d9-47f5-a33e-49299d53b499",
-          "discovered_date": "2025-12-29T17:15:26.211498"
-        },
-        {
-          "name": "Burnex",
-          "date": "2025-12-29 17:16:24.280439",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=f46e177f-4a43-4cef-abea-2216f2ecf204",
-          "discovered_date": "2025-12-29T17:16:24.280439"
-        },
-        {
-          "name": "Centro Médico Palafox",
-          "date": "2025-12-27 15:43:18.955254",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=e54a028c-5807-42e3-931b-9fefe267bdde",
-          "discovered_date": "2025-12-27T15:43:18.955254"
-        },
-        {
-          "name": "Caramel",
-          "date": "2025-12-27 15:44:12.370957",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=d9fde603-23c2-4e9c-9aa1-a242ff4eca8e",
-          "discovered_date": "2025-12-27T15:44:12.370957"
-        },
-        {
-          "name": "BMW Guatemala",
-          "date": "2025-12-27 15:45:03.892075",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=bed18c92-e86f-4909-a7b0-eff76c9e98d4",
-          "discovered_date": "2025-12-27T15:45:03.892075"
-        },
-        {
-          "name": "Neurological Associates",
-          "date": "2025-12-28 15:50:08.662915",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=1f1a5c3d-343b-48e8-9fdd-d0d520a75a1c",
-          "discovered_date": "2025-12-28T15:50:08.662915"
-        },
-        {
-          "name": "Burnex",
-          "date": "2025-12-29T17:16:24+00:00",
-          "url": "https://www.ransomware.live/id/QnVybmV4QGRyYWdvbmZvcmNl",
-          "discovered_date": "2025-12-29T17:16:24+00:00"
-        },
-        {
-          "name": "NK Technologies",
-          "date": "2025-12-29T17:15:26+00:00",
-          "url": "https://www.ransomware.live/id/TksgVGVjaG5vbG9naWVzQGRyYWdvbmZvcmNl",
-          "discovered_date": "2025-12-29T17:15:26+00:00"
-        },
-        {
-          "name": "Neurological Associates",
-          "date": "2025-12-28T15:50:08+00:00",
-          "url": "https://www.ransomware.live/id/TmV1cm9sb2dpY2FsIEFzc29jaWF0ZXNAZHJhZ29uZm9yY2U=",
-          "discovered_date": "2025-12-28T15:50:08+00:00"
-        },
-        {
-          "name": "BMW Guatemala",
-          "date": "2025-12-27T15:45:03+00:00",
-          "url": "https://www.ransomware.live/id/Qk1XIEd1YXRlbWFsYUBkcmFnb25mb3JjZQ==",
-          "discovered_date": "2025-12-27T15:45:03+00:00"
-        }
-      ],
-      "industries": [
-        "Healthcare",
-        "Manufacturing",
-        "Not Found",
-        "Technology"
-      ],
-      "countries": [
-        "GT",
-        "MX",
-        "N/A",
-        "US"
-      ],
-      "trend": "up",
-      "trend_percentage": 15,
-      "daily_counts": [
-        0,
-        6,
-        2,
-        4,
-        0,
         0,
         0
       ]
     },
     {
       "name": "Devman",
-      "count": 11,
+      "count": 8,
       "victims": [
         {
           "name": "sharinc.org",
@@ -594,33 +594,20 @@
           "date": "2025-12-28T15:44:29+00:00",
           "url": "https://www.ransomware.live/id/c2hhcmluYy5vcmdAZGV2bWFu",
           "discovered_date": "2025-12-28T15:44:29+00:00"
-        },
-        {
-          "name": "kavi.fi",
-          "date": "2025-12-25T18:52:17+00:00",
-          "url": "https://www.ransomware.live/id/a2F2aS5maUBkZXZtYW4=",
-          "discovered_date": "2025-12-25T18:52:17+00:00"
-        },
-        {
-          "name": "i**o**.us",
-          "date": "2025-12-25T18:50:54+00:00",
-          "url": "https://www.ransomware.live/id/aSoqbyoqLnVzQGRldm1hbg==",
-          "discovered_date": "2025-12-25T18:50:54+00:00"
         }
       ],
       "industries": [
         "Not Found"
       ],
       "countries": [
-        "FI",
         "US"
       ],
-      "trend": "up",
-      "trend_percentage": 15,
+      "trend": "stable",
+      "trend_percentage": 0,
       "daily_counts": [
         0,
-        0,
         8,
+        0,
         0,
         0,
         0,
@@ -678,9 +665,9 @@
       "trend": "stable",
       "trend_percentage": 0,
       "daily_counts": [
-        0,
         2,
         4,
+        0,
         0,
         0,
         0,
@@ -730,8 +717,8 @@
         0,
         0,
         0,
-        0,
         4,
+        0,
         0,
         0
       ]
@@ -778,9 +765,9 @@
       "daily_counts": [
         0,
         0,
+        2,
+        2,
         0,
-        2,
-        2,
         0,
         0
       ]
@@ -827,49 +814,8 @@
       "daily_counts": [
         0,
         0,
-        0,
         4,
         0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Nova",
-      "count": 3,
-      "victims": [
-        {
-          "name": "APC Home Health Service",
-          "date": "2025-12-29 06:17:24.975893",
-          "url": "http://novadmrkp4vbk2padk5t6pbxolndceuc7hrcq4mjaoyed6nxsqiuzyyd.onion/#apc-home-health-service",
-          "discovered_date": "2025-12-29T06:17:24.975893"
-        },
-        {
-          "name": "APC Home Health Service",
-          "date": "2025-12-29T06:17:24+00:00",
-          "url": "https://www.ransomware.live/id/QVBDIEhvbWUgSGVhbHRoIFNlcnZpY2VAbm92YQ==",
-          "discovered_date": "2025-12-29T06:17:24+00:00"
-        },
-        {
-          "name": "CYMA SYSTEMS",
-          "date": "2025-12-25T15:24:12+00:00",
-          "url": "https://www.ransomware.live/id/Q1lNQSBTWVNURU1TQG5vdmE=",
-          "discovered_date": "2025-12-25T15:24:12+00:00"
-        }
-      ],
-      "industries": [
-        "Healthcare"
-      ],
-      "countries": [
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        2,
         0,
         0,
         0
@@ -908,11 +854,11 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        1,
         0,
         0,
         0,
         2,
+        0,
         0,
         0
       ]
@@ -949,7 +895,7 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        3,
+        0,
         0,
         0,
         0,
@@ -988,8 +934,8 @@
         0,
         0,
         0,
-        0,
         2,
+        0,
         0
       ]
     },
@@ -1022,8 +968,8 @@
         0,
         0,
         0,
-        0,
         2,
+        0,
         0,
         0
       ]
@@ -1057,8 +1003,8 @@
         0,
         0,
         0,
-        0,
         2,
+        0,
         0,
         0
       ]
@@ -1092,8 +1038,8 @@
         0,
         0,
         0,
-        0,
         2,
+        0,
         0,
         0
       ]
@@ -1126,8 +1072,43 @@
       "daily_counts": [
         0,
         0,
+        2,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Nova",
+      "count": 2,
+      "victims": [
+        {
+          "name": "APC Home Health Service",
+          "date": "2025-12-29 06:17:24.975893",
+          "url": "http://novadmrkp4vbk2padk5t6pbxolndceuc7hrcq4mjaoyed6nxsqiuzyyd.onion/#apc-home-health-service",
+          "discovered_date": "2025-12-29T06:17:24.975893"
+        },
+        {
+          "name": "APC Home Health Service",
+          "date": "2025-12-29T06:17:24+00:00",
+          "url": "https://www.ransomware.live/id/QVBDIEhvbWUgSGVhbHRoIFNlcnZpY2VAbm92YQ==",
+          "discovered_date": "2025-12-29T06:17:24+00:00"
+        }
+      ],
+      "industries": [
+        "Healthcare"
+      ],
+      "countries": [
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
         0,
         2,
+        0,
         0,
         0,
         0
@@ -1159,8 +1140,8 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         2,
+        0,
         0,
         0,
         0,
@@ -1195,8 +1176,8 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         2,
+        0,
         0,
         0,
         0,
@@ -1232,8 +1213,8 @@
         0,
         0,
         0,
-        0,
         2,
+        0,
         0,
         0
       ]
@@ -1256,7 +1237,7 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        1,
+        0,
         0,
         0,
         0,
@@ -1279,33 +1260,6 @@
       "industries": [],
       "countries": [
         "IT"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Everest",
-      "count": 1,
-      "victims": [
-        {
-          "name": "Chrysler",
-          "date": "2025-12-25T17:53:46+00:00",
-          "url": "https://www.ransomware.live/id/Q2hyeXNsZXJAZXZlcmVzdA==",
-          "discovered_date": "2025-12-25T17:53:46+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "US"
       ],
       "trend": "down",
       "trend_percentage": -5,
