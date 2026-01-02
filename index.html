@@ -3998,11 +3998,12 @@
                 <span class="terminal-text">echo "Happy New Year 2026!"</span>
             </div>
             <div class="new-year-banner__message">
-                <span class="new-year-banner__icon">🔐</span>
+                <span class="new-year-banner__icon"><i class="fas fa-lock"></i></span>
                 <span class="new-year-banner__text">
                     <strong>Welcome to 2026!</strong> May your firewalls stay strong, your patches stay current, and
                     your MFA stay enabled.
-                    <span class="desktop-only" style="opacity: 0.8;">// Zero breaches, maximum resilience 🛡️</span>
+                    <span class="desktop-only" style="opacity: 0.8;">// Zero breaches, maximum resilience <i
+                            class="fas fa-shield-alt"></i></span>
                 </span>
             </div>
         </div>
@@ -4014,6 +4015,8 @@
     <style>
         .new-year-banner {
             position: relative;
+            margin-top: 60px;
+            /* Account for fixed desktop header */
             background: linear-gradient(135deg, rgba(0, 217, 255, 0.1), rgba(139, 92, 246, 0.1), rgba(255, 61, 61, 0.05));
             border-bottom: 1px solid rgba(0, 217, 255, 0.3);
             padding: 0.75rem 1rem;
@@ -4023,6 +4026,7 @@
             gap: 1rem;
             overflow: hidden;
             animation: bannerGlow 3s ease-in-out infinite alternate;
+            z-index: 99;
         }
 
         @keyframes bannerGlow {
