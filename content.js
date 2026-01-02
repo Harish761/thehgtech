@@ -5,59 +5,52 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Jan 01 2026",
-            "title": "IT Leaders Set Strategic Agenda for 2026",
-            "content": "IT leaders are prioritizing agility, flexibility, and measurable business outcomes as they set their strategic agendas for 2026. The January issue of Enterprise Spotlight, produced by the editors of CIO, Computerworld, CSO, InfoWorld, and Network World, delves into the emerging trends and technologies shaping these strategies. As businesses continue to navigate a rapidly evolving digital landscape, the need for adaptable IT frameworks becomes increasingly critical. This focus on agility is expected to drive significant investment in cloud technologies, AI, and cybersecurity measures. IT professionals are encouraged to download the issue to gain insights into best practices and strategic planning for the coming years.",
-            "source": "CSO Online",
-            "sourceUrl": "https://us.resources.csoonline.com/resources/download-the-2026-it-agenda-spotlight-report/"
+            "title": "OpenAI Offers Free Month of ChatGPT Plus to Existing Subscribers",
+            "content": "OpenAI is providing a free month of its ChatGPT Plus service, typically priced at $20, to some existing subscribers who request to cancel their subscription. This move appears to be an effort to retain users and gather feedback on the premium service, which offers faster response times and priority access to new features. While this offer may appeal to current users, it also highlights the competitive landscape of AI tools where customer retention is crucial. Users interested in this offer should contact OpenAI directly to inquire about eligibility. This development underscores the ongoing evolution and experimentation within the AI subscription model market.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-is-offering-20-chatgpt-plus-for-free-to-some-users/"
         },
         {
             "date": "Jan 01 2026",
-            "title": "RondoDox Botnet Exploits React2Shell Vulnerability",
-            "content": "A newly disclosed botnet, RondoDox, has been exploiting the critical React2Shell vulnerability to hijack IoT devices and web servers. The campaign, persisting for nine months, leverages this flaw to integrate compromised systems into its network. The React2Shell vulnerability, which affects numerous IoT devices and web applications, poses a significant threat to enterprises relying on these technologies. As of December 2025, the botnet&#x27;s activity underscores the urgent need for organizations to patch affected systems promptly. Cybersecurity teams must prioritize the deployment of updates and monitor network traffic for signs of compromise.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/01/rondodox-botnet-exploits-critical.html"
-        },
-        {
-            "date": "Dec 31 2025",
-            "title": "Cloud Outages Disrupt IoT Ecosystems",
-            "content": "The increasing reliance on cloud services has highlighted vulnerabilities within IoT ecosystems, especially during outages. Recent disruptions have impacted a range of connected devices, affecting daily activities such as sleep monitoring, educational tools, and smart home functionalities. This dependence on cloud infrastructure underscores the need for robust contingency planning and offline capabilities. Organizations and consumers alike must evaluate their IoT strategies to mitigate risks associated with cloud service interruptions. As the IoT landscape continues to expand, ensuring reliability and resilience remains a critical challenge for developers and users.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/iot/when-cloud-rains-on-everyone-iot-parade"
-        },
-        {
-            "date": "Dec 31 2025",
-            "title": "Identity Security Trends and Predictions for 2026",
-            "content": "Identity security is set to evolve in 2026 with notable trends including agentic AI adoption, expanded Identity Governance and Administration (IGA) in mid-markets, and enhanced collaboration between Security Operations Centers (SOC) and identity teams. The consolidation of identity platforms is expected to streamline operations and improve security postures. As AI technologies become more integrated into identity management, the associated risks will require careful navigation. Organizations should focus on strengthening their identity frameworks and fostering interdepartmental cooperation to effectively address these emerging challenges. Staying informed on these developments is crucial for maintaining robust security measures.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/identity-access-management-security/identity-security-2026-predictions-and-recommendations"
-        },
-        {
-            "date": "Dec 31 2025",
-            "title": "Rising Skepticism Toward AI Amid Economic Concerns",
-            "content": "Skepticism surrounding artificial intelligence is increasing as concerns about an economic bubble and doubts about return on investment grow. This shift in sentiment suggests potential challenges for the AI industry, which has seen rapid expansion in recent years. Industry experts warn that inflated expectations and unproven ROI could lead to a reevaluation of AI&#x27;s role in business strategies. Companies are advised to critically assess their AI investments and focus on realistic, sustainable applications. This trend highlights the need for transparency and measurable outcomes in AI deployments to maintain stakeholder confidence.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/contrarians-no-more-ai-skepticism"
-        },
-        {
-            "date": "Dec 31 2025",
-            "title": "Critical Vulnerability Found in IBM API Connect",
-            "content": "IBM has released details of a critical vulnerability, CVE-2025-13915, in its API Connect authentication system. Rated 9.8 on the CVSS scale, this flaw could allow attackers to gain unauthorized remote access to applications. The vulnerability highlights significant security risks for enterprises using API Connect, necessitating immediate action to apply patches. IBM advises all users to update their systems to mitigate potential exploitation. This disclosure underscores the importance of maintaining up-to-date security measures in API management solutions to prevent unauthorized access and data breaches.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/12/ibm-warns-of-critical-api-connect-bug.html"
-        },
-        {
-            "date": "Dec 31 2025",
-            "title": "New Shai-Hulud Worm Variant Detected in npm Registry",
-            "content": "Cybersecurity researchers have identified a new variant of the Shai-Hulud worm on the npm registry, embedded within the package &quot;@vietmoney/react-big-calendar.&quot; This modified strain represents an evolution from the version observed last month, indicating ongoing development and testing by threat actors. The npm registry&#x27;s role as a critical infrastructure for JavaScript developers makes this discovery particularly concerning. Developers are urged to scrutinize dependencies and monitor for any unusual activity in their applications. This incident highlights the persistent threat posed by supply chain attacks and the need for vigilant security practices in software development.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2025/12/researchers-spot-modified-shai-hulud.html"
+            "title": "Reflecting on 2025: Key Cybersecurity Incidents and Breaches",
+            "content": "The year 2025 witnessed a surge in cybersecurity incidents, marked by high-profile cyberattacks, data breaches, and the exploitation of zero-day vulnerabilities. Notable incidents included attacks on critical infrastructure and the rise of new threat groups gaining notoriety. These developments underscore the increasing sophistication and impact of cyber threats on global security. Organizations faced challenges in protecting sensitive data and maintaining operational integrity amid these threats. This retrospective analysis highlights the need for robust cybersecurity measures and proactive threat intelligence to mitigate future risks. Security professionals should leverage lessons learned from 2025 to enhance their defenses.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/the-biggest-cybersecurity-and-cyberattack-stories-of-2025/"
         },
         {
             "date": "Jan 01 2026",
-            "title": "IBM Urges Immediate Patch for Critical API Connect Vulnerability",
-            "content": "IBM has issued an urgent advisory for users of its API Connect platform to apply a critical security patch to address a vulnerability that allows remote attackers to bypass authentication mechanisms. The flaw, identified in versions prior to the latest update, poses a significant risk as API Connect serves as a comprehensive API gateway for creating, testing, managing, and securing APIs. This vulnerability could enable unauthorized access to sensitive systems and data, impacting organizations that rely on API Connect for secure communications. Users are advised to review IBM&#x27;s security bulletin and implement the patch without delay to mitigate potential exploitation. This incident underscores the importance of timely updates in maintaining robust cybersecurity defenses.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4112265/critical-vulnerability-in-ibm-api-connect-could-allow-authentication-bypass-2.html"
+            "title": "ThreatsDay Bulletin Highlights New Year Cybersecurity Challenges",
+            "content": "The inaugural ThreatsDay Bulletin of 2026 reveals a landscape of evolving cyber threats, including GhostAd Drain, macOS attacks, and proxy botnets. The bulletin emphasizes that threat actors continue to innovate, exploiting cloud vulnerabilities and leveraging sophisticated tactics. This trend highlights the relentless pace at which cyber threats are advancing, challenging defenders to stay ahead. Security professionals must remain vigilant, continuously update their defenses, and prioritize threat intelligence sharing. The bulletin serves as a reminder of the ongoing need for adaptive security strategies to counteract the dynamic nature of cyber threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/01/threatsday-bulletin-ghostad-drain-macos.html"
+        },
+        {
+            "date": "Jan 01 2026",
+            "title": "GlassWorm Malware Targets macOS Developers with Trojanized Wallets",
+            "content": "A new wave of the GlassWorm malware campaign is targeting macOS developers by deploying malicious Visual Studio Code (VSCode) and OpenVSX extensions. These extensions deliver trojanized versions of cryptocurrency wallet applications, posing a significant threat to developers and their projects. This attack vector highlights the growing trend of targeting development environments to distribute malware. Developers using VSCode or OpenVSX should scrutinize extensions for authenticity and regularly update their security protocols. This incident underscores the importance of securing development environments against increasingly sophisticated malware campaigns.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-glassworm-malware-wave-targets-macs-with-trojanized-crypto-wallets/"
+        },
+        {
+            "date": "Jan 01 2026",
+            "title": "Enhance Productivity with the Adapt Browser&#x27;s Streamlined Features",
+            "content": "The Adapt Browser is gaining attention for its ability to enhance browsing speed and productivity by minimizing feature overload and optimizing workflow. Unlike traditional browsers, Adapt focuses on reducing background processes and streamlining user interactions, making it ideal for professionals who rely heavily on web-based applications. Users can expect a more efficient browsing experience, with reduced friction and improved task management. This development is part of a broader trend towards creating specialized browsers tailored to specific user needs. Tech professionals should consider exploring Adapt Browser to improve their workflow efficiency and reduce digital clutter.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/01/how-to-browse-fast-using-a-lightweight-browser.html"
+        },
+        {
+            "date": "Dec 31 2025",
+            "title": "NYC Mayoral Inauguration Bans Electronic Hacking Devices",
+            "content": "The 2026 mayoral inauguration in New York City has banned the use of specific electronic devices, including the Flipper Zero and Raspberry Pi, due to security concerns. These devices, often associated with hacking and penetration testing, are seen as potential security risks during high-profile events. The decision reflects heightened security measures aimed at preventing unauthorized access and disruptions. Attendees are advised to comply with the restrictions to ensure a smooth and secure inauguration process. This move highlights the ongoing challenge of balancing security with technological innovation at public events.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/nyc-mayoral-inauguration-bans-flipper-zero-raspberry-pi-devices/"
+        },
+        {
+            "date": "Dec 31 2025",
+            "title": "Lessons from Ivanti EPMM Zero-Day Exploitations",
+            "content": "The zero-day exploitations of Ivanti&#x27;s Endpoint Manager Mobile (EPMM) platform in April and May 2025 resulted in significant breaches by a Chinese Advanced Persistent Threat (APT) group. Thousands of organizations were affected, highlighting vulnerabilities in mobile device management systems. This incident serves as a stark reminder of the critical need for timely patch management and incident response strategies. Organizations must prioritize regular security audits and updates to prevent similar breaches in the future. The attacks underscore the importance of vigilance and preparedness in the face of evolving threat landscapes.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cyber-risk/sunken-ships-ivanti-epmm-attacks"
         },
         {
             "date": "May 05 2026",
@@ -70,52 +63,52 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Jan 01 2026",
-            "title": "Erotic Chatbots Redefine AI&#x27;s Role in 2025",
-            "content": "The year 2025 saw a significant shift in AI&#x27;s narrative as erotic chatbots became a dominant force, overshadowing previous expectations of productivity enhancements. These AI-driven platforms have tapped into a lucrative market, offering personalized interactions that cater to intimate human desires. This shift highlights a growing trend where AI applications are expanding beyond traditional productivity tools into more personal and emotional domains. The impact is broad, with developers and businesses exploring new ethical and operational challenges. Professionals in the AI field should consider the implications of this trend on privacy, consent, and user engagement strategies. As this sector grows, understanding the societal and technological nuances will be crucial for future AI developments.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/expired-tired-wired-sexy-chatbots/"
+            "title": "European Banks to Slash 200,000 Jobs as AI Revolutionizes Operations",
+            "content": "European banks are set to eliminate 200,000 positions, primarily in back-office operations, risk management, and compliance, due to the increasing adoption of artificial intelligence (AI). This significant workforce reduction reflects the growing role of AI in automating tasks traditionally performed by humans, thus streamlining operations and reducing costs. The banking sector&#x27;s shift towards AI-driven processes is part of a broader trend across industries aiming to enhance efficiency and accuracy. Professionals in affected roles may need to upskill or transition to new areas where human oversight remains essential. The move underscores the critical importance of AI literacy and adaptability in the modern workforce.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/01/european-banks-plan-to-cut-200000-jobs-as-ai-takes-hold/"
         },
         {
             "date": "Jan 01 2026",
-            "title": "Dropout Status Gains Prestige Among AI Startup Founders",
-            "content": "In a surprising twist, the &quot;college dropout&quot; label has become a sought-after credential among AI startup founders pitching to Y Combinator (YC). This trend reflects a cultural shift where unconventional paths are increasingly seen as a badge of innovation and risk-taking. The phenomenon is particularly pronounced in the tech sector, where traditional educational credentials are being overshadowed by entrepreneurial spirit and real-world problem-solving skills. This shift impacts how investors evaluate potential founders, emphasizing creativity and adaptability over formal education. Aspiring entrepreneurs should recognize the changing landscape and consider how their unique experiences can be leveraged in competitive startup environments. The evolution of founder credentials signals a broader change in how success is defined in the tech industry.",
+            "title": "OpenAI Pivots to Audio, Envisions a Screenless Future",
+            "content": "OpenAI is making a strategic shift towards audio technology, aligning with Silicon Valley&#x27;s broader trend of moving away from screen-based interfaces. This transition suggests that audio could become the primary mode of interaction with technology, transforming environments like homes, cars, and personal devices into seamless audio interfaces. As AI advances, the potential for voice-activated systems to enhance accessibility and convenience grows, impacting how users engage with digital content. Developers and tech companies should consider integrating audio capabilities into their products to stay competitive. This shift highlights the evolving landscape of user interface design, emphasizing the need for innovation in audio technology.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/31/college-dropout-has-become-the-most-coveted-startup-founder-credential/"
+            "sourceUrl": "https://techcrunch.com/2026/01/01/openai-bets-big-on-audio-as-silicon-valley-declares-war-on-screens/"
         },
         {
-            "date": "Dec 31 2025",
-            "title": "AI Dating Apps Face Reality Check as Traditional Methods Resurge",
-            "content": "Despite the recent buzz around AI-powered dating apps and bot wingmen, traditional in-person dating experiences are making a comeback. This resurgence suggests that users are seeking genuine human interactions over algorithm-driven matches. AI dating technologies, while innovative, struggle to replicate the spontaneity and authenticity of real-life encounters. This trend indicates a potential shift in consumer preferences, with implications for developers focusing on human-centric design and engagement strategies. Professionals in the dating tech industry should reassess their approaches to balance AI capabilities with the demand for authentic connections. Understanding this dynamic will be key to developing successful dating platforms in the future.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/expired-tired-wired-ai-powered-dating/"
-        },
-        {
-            "date": "Dec 31 2025",
-            "title": "The Decline of Smartphones: What Lies Ahead?",
-            "content": "Industry expert Callaghan predicts a rapid decline in smartphone usage, suggesting that iPhones may become obsolete within five years. This bold statement reflects broader trends in technology where new, immersive devices are poised to replace traditional smartphones. The transition could be driven by advancements in augmented reality (AR), virtual reality (VR), and wearable technology, offering more integrated and intuitive user experiences. This shift will have significant implications for developers and tech companies, requiring adaptation to new platforms and interfaces. Professionals should monitor these emerging technologies closely to remain competitive and innovative in a rapidly evolving market. The potential end of smartphones marks a pivotal moment in the tech landscape, urging stakeholders to prepare for transformative changes.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/30/the-phone-is-dead-long-live-what-exactly/"
-        },
-        {
-            "date": "Dec 30 2025",
-            "title": "Identity Management Faces Challenges as AI Agents Proliferate",
-            "content": "The rapid proliferation of AI agents, now outnumbering human users by 82 to 1, is straining legacy identity and access management (IAM) systems. Traditional IAM solutions like Active Directory and Lightweight Directory Access Protocol (LDAP) were designed for human users, making them ill-equipped to handle the unique demands of AI and machine identities. This imbalance is creating security vulnerabilities and operational inefficiencies as AI agents become the fastest-growing and least-governed identity class. Organizations must urgently rethink their identity strategies, incorporating robust governance frameworks tailored to machine identities. Addressing these challenges is critical to maintaining security and operational integrity in an AI-driven landscape.",
+            "date": "Jan 01 2026",
+            "title": "Key AI Research Trends for Enterprises to Watch in 2026",
+            "content": "As AI technology matures, enterprises are focusing on research trends that enhance the production and implementation of AI applications. The emphasis is shifting from model performance benchmarks to developing techniques that facilitate the deployment of AI in real-world scenarios. This includes advancements in AI ethics, explainability, and integration with existing business processes. Organizations aiming to leverage AI for competitive advantage should monitor these trends closely. Understanding these developments will be crucial for tech leaders and developers seeking to maximize AI&#x27;s potential while addressing challenges related to trust and transparency in AI systems.",
             "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/security/machine-identities-outnumber-humans-82-to-1-legacy-iam-cant-keep-up"
+            "sourceUrl": "https://venturebeat.com/technology/four-ai-research-trends-enterprise-teams-should-watch-in-2026"
         },
         {
-            "date": "Dec 30 2025",
-            "title": "Energy Sector Faces New Challenges with AI and Nuclear Power",
-            "content": "The energy landscape is undergoing significant changes as the U.S. increases support for nuclear energy while phasing out coal plants. This shift is occurring alongside growing resistance to the high energy consumption of data centers, driven by AI and other digital technologies. The juxtaposition of these trends highlights the complexity of balancing energy demands with environmental and economic considerations. For tech leaders and policymakers, understanding the implications of this energy transition is crucial. They must navigate the challenges of sustainable energy solutions while accommodating the growing power needs of AI-driven infrastructures. Strategic planning and investment in renewable energy sources will be essential to meet future demands.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/expired-tired-wired-nuclear-plants/"
+            "date": "Dec 31 2025",
+            "title": "Instagram Head Warns of the Rise of Infinite Synthetic Content",
+            "content": "Adam Mosseri, head of Instagram, has highlighted the growing prevalence of &quot;infinite synthetic content,&quot; which is increasingly indistinguishable from reality. This development marks a significant shift from Instagram&#x27;s original personal feed, which Mosseri claims has been obsolete for years. The rise of AI-generated content poses challenges in distinguishing authentic media from synthetic creations, impacting user trust and content moderation. Social media platforms and users must adapt to this new reality by developing tools and techniques to verify content authenticity. This evolution underscores the need for robust AI ethics and governance frameworks in digital media.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/news/852124/adam-mosseri-ai-images-video-instagram"
         },
         {
-            "date": "Dec 30 2025",
-            "title": "AI Therapists Emerge Amid Global Mental Health Crisis",
-            "content": "As the world grapples with a mental health crisis affecting over a billion people, AI therapists are emerging as a potential solution. These digital tools offer scalable support for individuals suffering from conditions like anxiety and depression, particularly among younger demographics. AI-driven therapy platforms can provide accessible mental health resources, addressing gaps in traditional healthcare systems. However, the rise of AI therapists also raises questions about efficacy, privacy, and the human touch in mental health care. Mental health professionals and tech developers must collaborate to ensure these tools are used ethically and effectively. The integration of AI in mental health care represents a promising yet complex frontier that requires careful consideration and regulation.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2025/12/30/1129392/book-reviews-ai-therapy-mental-health/"
+            "date": "Dec 31 2025",
+            "title": "Open Source Qwen-Image-2512 Challenges Google&#x27;s Nano Banana Pro in AI Image Generation",
+            "content": "The launch of Qwen-Image-2512, an open-source AI image generation model, aims to rival Google&#x27;s Nano Banana Pro (also known as Gemini 3 Pro Image) in producing high-quality visuals. Google&#x27;s model, released in November, set new standards by allowing users to generate detailed, text-heavy infographics and enterprise-grade visuals using natural language. Qwen-Image-2512 seeks to democratize access to advanced image generation capabilities, providing developers and enterprises with a powerful tool for creating compelling visual content. This competition highlights the rapid advancements in AI image technology and the growing importance of open-source contributions to the field.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/open-source-qwen-image-2512-launches-to-compete-with-googles-nano-banana-pro"
+        },
+        {
+            "date": "Dec 31 2025",
+            "title": "Investors Anticipate AI&#x27;s Impact on Labor Market in 2026",
+            "content": "Investors are forecasting a significant impact of AI on the enterprise labor market in 2026, although the exact effects remain uncertain. As AI continues to automate tasks across various sectors, the demand for certain job roles may decrease, while new opportunities could emerge in AI development and oversight. Companies and workers should prepare for potential shifts by investing in AI training and reskilling programs. The anticipated changes reflect AI&#x27;s transformative potential in reshaping workforce dynamics, emphasizing the need for proactive strategies to manage this transition effectively.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/31/investors-predict-ai-is-coming-for-labor-in-2026/"
+        },
+        {
+            "date": "Dec 31 2025",
+            "title": "Six Data Shifts Poised to Transform Enterprise AI in 2026",
+            "content": "The enterprise data landscape is undergoing significant changes, with six key shifts expected to shape AI development in 2026. Traditional relational databases are giving way to NoSQL document stores, graph databases, and vector-based systems, reflecting the need for more flexible and scalable data management solutions. These advancements enable enterprises to handle diverse data types and volumes more efficiently, driving innovation in AI applications. Tech leaders and data professionals should stay informed about these trends to leverage new data architectures for enhanced AI performance. This evolution underscores the critical role of data strategy in achieving AI success.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/data/six-data-shifts-that-will-shape-enterprise-ai-in-2026"
         }
     ],
     "articles": {},
