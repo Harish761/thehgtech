@@ -4,53 +4,53 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Jan 01 2026",
-            "title": "OpenAI Offers Free Month of ChatGPT Plus to Existing Subscribers",
-            "content": "OpenAI is providing a free month of its ChatGPT Plus service, typically priced at $20, to some existing subscribers who request to cancel their subscription. This move appears to be an effort to retain users and gather feedback on the premium service, which offers faster response times and priority access to new features. While this offer may appeal to current users, it also highlights the competitive landscape of AI tools where customer retention is crucial. Users interested in this offer should contact OpenAI directly to inquire about eligibility. This development underscores the ongoing evolution and experimentation within the AI subscription model market.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-is-offering-20-chatgpt-plus-for-free-to-some-users/"
+            "date": "Jan 02 2026",
+            "title": "Cybersecurity Experts Admit Guilt in Ransomware Scheme",
+            "content": "Ryan Goldberg and Kevin Martin, two cybersecurity professionals, have pleaded guilty to operating a ransomware scheme aimed at obstructing commerce through extortion. The duo will face sentencing on March 12, 2026, as announced by the US Department of Justice. Their operation involved the deployment of ransomware to encrypt data and demand payment, affecting numerous businesses. This case underscores the ongoing threat posed by insiders with technical expertise exploiting vulnerabilities for financial gain. Organizations are advised to implement robust insider threat detection mechanisms and regularly update their cybersecurity protocols to mitigate such risks.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4112400/two-cybersecurity-experts-plead-guilty-to-running-ransomware-operation.html"
         },
         {
-            "date": "Jan 01 2026",
-            "title": "Reflecting on 2025: Key Cybersecurity Incidents and Breaches",
-            "content": "The year 2025 witnessed a surge in cybersecurity incidents, marked by high-profile cyberattacks, data breaches, and the exploitation of zero-day vulnerabilities. Notable incidents included attacks on critical infrastructure and the rise of new threat groups gaining notoriety. These developments underscore the increasing sophistication and impact of cyber threats on global security. Organizations faced challenges in protecting sensitive data and maintaining operational integrity amid these threats. This retrospective analysis highlights the need for robust cybersecurity measures and proactive threat intelligence to mitigate future risks. Security professionals should leverage lessons learned from 2025 to enhance their defenses.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/the-biggest-cybersecurity-and-cyberattack-stories-of-2025/"
+            "date": "Jan 02 2026",
+            "title": "US Cybersecurity Professionals Linked to BlackCat Ransomware",
+            "content": "Ryan Goldberg and Kevin Martin have confessed to being affiliates of the BlackCat/Alphv ransomware group, notorious for its sophisticated attacks. This revelation highlights the growing trend of cybersecurity insiders participating in cybercrime. BlackCat ransomware is known for its advanced encryption techniques and ability to evade traditional defenses, targeting critical infrastructure and enterprises. The involvement of security experts in such operations raises concerns about trust and security within the cybersecurity community. Companies should enhance their vetting processes and continuously monitor for unusual activities to prevent insider threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/two-us-cybersecurity-pros-plead-guilty-over-ransomware-attacks/"
         },
         {
-            "date": "Jan 01 2026",
-            "title": "ThreatsDay Bulletin Highlights New Year Cybersecurity Challenges",
-            "content": "The inaugural ThreatsDay Bulletin of 2026 reveals a landscape of evolving cyber threats, including GhostAd Drain, macOS attacks, and proxy botnets. The bulletin emphasizes that threat actors continue to innovate, exploiting cloud vulnerabilities and leveraging sophisticated tactics. This trend highlights the relentless pace at which cyber threats are advancing, challenging defenders to stay ahead. Security professionals must remain vigilant, continuously update their defenses, and prioritize threat intelligence sharing. The bulletin serves as a reminder of the ongoing need for adaptive security strategies to counteract the dynamic nature of cyber threats.",
+            "date": "Jan 02 2026",
+            "title": "Evaluating the Effectiveness of Attack Surface Management Tools",
+            "content": "The implementation of Attack Surface Management (ASM) tools often leads to an increase in data and alerts but does not necessarily translate into reduced risk. While these tools expand asset inventories and provide measurable outputs, they can overwhelm security teams with information. The challenge lies in demonstrating a clear return on investment (ROI) when leadership demands evidence of improved security posture. Organizations need to focus on integrating ASM solutions with existing security frameworks to ensure actionable insights rather than just data accumulation. This approach can help in prioritizing vulnerabilities and streamlining threat response efforts.",
             "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/01/threatsday-bulletin-ghostad-drain-macos.html"
+            "sourceUrl": "https://thehackernews.com/2026/01/the-roi-problem-in-attack-surface.html"
         },
         {
-            "date": "Jan 01 2026",
-            "title": "GlassWorm Malware Targets macOS Developers with Trojanized Wallets",
-            "content": "A new wave of the GlassWorm malware campaign is targeting macOS developers by deploying malicious Visual Studio Code (VSCode) and OpenVSX extensions. These extensions deliver trojanized versions of cryptocurrency wallet applications, posing a significant threat to developers and their projects. This attack vector highlights the growing trend of targeting development environments to distribute malware. Developers using VSCode or OpenVSX should scrutinize extensions for authenticity and regularly update their security protocols. This incident underscores the importance of securing development environments against increasingly sophisticated malware campaigns.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-glassworm-malware-wave-targets-macs-with-trojanized-crypto-wallets/"
+            "date": "Jan 02 2026",
+            "title": "RondoDox Botnet Exploits React2Shell Vulnerability in Next.js Servers",
+            "content": "The RondoDox botnet has been actively exploiting the React2Shell vulnerability to compromise Next.js servers, with a focus on weaponizing this flaw in December. This vulnerability allows attackers to execute arbitrary code, posing significant risks to affected systems. The exploitation of React2Shell highlights the importance of timely patch management and the need for organizations to remain vigilant against emerging threats. Security teams should prioritize updating vulnerable systems and consider deploying web application firewalls to mitigate potential attacks. This incident serves as a reminder of the evolving tactics used by botnets to infiltrate enterprise environments.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/rondodox-botnet-exploiting-react2shell-vulnerability/"
         },
         {
-            "date": "Jan 01 2026",
-            "title": "Enhance Productivity with the Adapt Browser&#x27;s Streamlined Features",
-            "content": "The Adapt Browser is gaining attention for its ability to enhance browsing speed and productivity by minimizing feature overload and optimizing workflow. Unlike traditional browsers, Adapt focuses on reducing background processes and streamlining user interactions, making it ideal for professionals who rely heavily on web-based applications. Users can expect a more efficient browsing experience, with reduced friction and improved task management. This development is part of a broader trend towards creating specialized browsers tailored to specific user needs. Tech professionals should consider exploring Adapt Browser to improve their workflow efficiency and reduce digital clutter.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/01/how-to-browse-fast-using-a-lightweight-browser.html"
+            "date": "Jan 02 2026",
+            "title": "Covenant Health Data Breach Exposes 478,000 Individuals&#x27; Information",
+            "content": "The Qilin ransomware group has successfully breached Covenant Health&#x27;s systems, compromising sensitive data of approximately 478,000 individuals. The breach, which occurred in May 2025, involved the theft of personal and medical information, raising serious privacy concerns. This incident is part of a larger trend of ransomware attacks targeting healthcare organizations, which often hold valuable data and are perceived as vulnerable. Affected individuals should monitor their accounts for suspicious activity and consider identity protection services. Healthcare providers must enhance their cybersecurity measures, including regular security audits and employee training, to protect against such intrusions.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/covenant-health-data-breach-impacts-478000-individuals/"
         },
         {
-            "date": "Dec 31 2025",
-            "title": "NYC Mayoral Inauguration Bans Electronic Hacking Devices",
-            "content": "The 2026 mayoral inauguration in New York City has banned the use of specific electronic devices, including the Flipper Zero and Raspberry Pi, due to security concerns. These devices, often associated with hacking and penetration testing, are seen as potential security risks during high-profile events. The decision reflects heightened security measures aimed at preventing unauthorized access and disruptions. Attendees are advised to comply with the restrictions to ensure a smooth and secure inauguration process. This move highlights the ongoing challenge of balancing security with technological innovation at public events.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/nyc-mayoral-inauguration-bans-flipper-zero-raspberry-pi-devices/"
+            "date": "Jan 02 2026",
+            "title": "AI Advances in 2025 Enhance the Sophistication of Scams",
+            "content": "In 2025, advancements in artificial intelligence (AI) significantly increased the effectiveness of scams, making them more convincing and harder to detect. AI technologies enabled the creation of highly realistic phishing emails and deepfake audio and video, which fooled even the most cautious individuals. This trend underscores the need for enhanced security awareness and training to recognize AI-driven threats. Organizations should invest in AI-based security solutions to detect and mitigate these sophisticated scams. As AI continues to evolve, staying informed about its potential misuse is crucial for maintaining robust cybersecurity defenses.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/01/how-ai-made-scams-more-convincing-in-2025"
         },
         {
-            "date": "Dec 31 2025",
-            "title": "Lessons from Ivanti EPMM Zero-Day Exploitations",
-            "content": "The zero-day exploitations of Ivanti&#x27;s Endpoint Manager Mobile (EPMM) platform in April and May 2025 resulted in significant breaches by a Chinese Advanced Persistent Threat (APT) group. Thousands of organizations were affected, highlighting vulnerabilities in mobile device management systems. This incident serves as a stark reminder of the critical need for timely patch management and incident response strategies. Organizations must prioritize regular security audits and updates to prevent similar breaches in the future. The attacks underscore the importance of vigilance and preparedness in the face of evolving threat landscapes.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyber-risk/sunken-ships-ivanti-epmm-attacks"
+            "date": "Jan 02 2026",
+            "title": "Coordinated Attack Targets Adobe ColdFusion Servers Over Holidays",
+            "content": "A coordinated cyberattack targeted Adobe ColdFusion servers during the 2025 Christmas holiday, exploiting multiple vulnerabilities. GreyNoise reported thousands of requests aimed at a dozen known security flaws, potentially allowing unauthorized access and data exfiltration. This campaign highlights the importance of applying security patches promptly, especially during periods of reduced staffing like holidays. Organizations using ColdFusion should ensure their systems are updated with the latest patches and consider implementing intrusion detection systems. The incident serves as a reminder of the persistent threat actors who exploit well-known vulnerabilities, emphasizing the need for continuous vigilance.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/adobe-coldfusion-servers-targeted-in-coordinated-campaign/"
         },
         {
             "date": "May 05 2026",
@@ -63,52 +63,52 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Jan 01 2026",
-            "title": "European Banks to Slash 200,000 Jobs as AI Revolutionizes Operations",
-            "content": "European banks are set to eliminate 200,000 positions, primarily in back-office operations, risk management, and compliance, due to the increasing adoption of artificial intelligence (AI). This significant workforce reduction reflects the growing role of AI in automating tasks traditionally performed by humans, thus streamlining operations and reducing costs. The banking sector&#x27;s shift towards AI-driven processes is part of a broader trend across industries aiming to enhance efficiency and accuracy. Professionals in affected roles may need to upskill or transition to new areas where human oversight remains essential. The move underscores the critical importance of AI literacy and adaptability in the modern workforce.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/01/european-banks-plan-to-cut-200000-jobs-as-ai-takes-hold/"
+            "title": "Erotic Chatbots Steal the Spotlight in AI&#x27;s 2025 Narrative",
+            "content": "In 2025, the AI industry witnessed a surprising shift as erotic chatbots became the focal point of AI discussions, overshadowing productivity-enhancing generative AI applications. These chatbots, designed to simulate intimate conversations, gained significant traction and sparked debates about AI&#x27;s role in human relationships. This trend highlights a broader societal interest in AI-driven companionship, raising questions about the ethical implications and potential psychological impacts. As AI continues to evolve, professionals must consider the balance between technological innovation and human values. Companies developing AI solutions should remain vigilant about user consent and privacy to address growing concerns.",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/expired-tired-wired-sexy-chatbots/"
         },
         {
             "date": "Jan 01 2026",
-            "title": "OpenAI Pivots to Audio, Envisions a Screenless Future",
-            "content": "OpenAI is making a strategic shift towards audio technology, aligning with Silicon Valley&#x27;s broader trend of moving away from screen-based interfaces. This transition suggests that audio could become the primary mode of interaction with technology, transforming environments like homes, cars, and personal devices into seamless audio interfaces. As AI advances, the potential for voice-activated systems to enhance accessibility and convenience grows, impacting how users engage with digital content. Developers and tech companies should consider integrating audio capabilities into their products to stay competitive. This shift highlights the evolving landscape of user interface design, emphasizing the need for innovation in audio technology.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/01/openai-bets-big-on-audio-as-silicon-valley-declares-war-on-screens/"
+            "title": "Dropout Status Becomes a Badge of Honor for AI Startup Founders",
+            "content": "The trend of AI founders leveraging their college dropout status as a credential during Y Combinator (YC) pitches gained momentum in 2025. This unconventional badge of honor is increasingly seen as a symbol of entrepreneurial spirit and risk-taking. It reflects a shift in the startup ecosystem where non-traditional backgrounds are valued for their potential to foster innovation. While this trend may inspire aspiring entrepreneurs, it also raises questions about the long-term sustainability and scalability of such ventures. Tech leaders should consider the implications of this cultural shift on talent acquisition and development in the AI sector.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/31/college-dropout-has-become-the-most-coveted-startup-founder-credential/"
         },
         {
-            "date": "Jan 01 2026",
-            "title": "Key AI Research Trends for Enterprises to Watch in 2026",
-            "content": "As AI technology matures, enterprises are focusing on research trends that enhance the production and implementation of AI applications. The emphasis is shifting from model performance benchmarks to developing techniques that facilitate the deployment of AI in real-world scenarios. This includes advancements in AI ethics, explainability, and integration with existing business processes. Organizations aiming to leverage AI for competitive advantage should monitor these trends closely. Understanding these developments will be crucial for tech leaders and developers seeking to maximize AI&#x27;s potential while addressing challenges related to trust and transparency in AI systems.",
+            "date": "Dec 31 2025",
+            "title": "AI-Powered Dating Falls Short as Traditional Meet-Cutes Make a Comeback",
+            "content": "Despite the hype around AI-powered dating apps and bot wingmen, 2025 saw a resurgence in traditional in-real-life (IRL) dating methods. Users expressed growing dissatisfaction with algorithm-driven matchmaking, preferring spontaneous, organic interactions. This shift underscores the limitations of AI in capturing the nuances of human chemistry and attraction. Dating app developers must reassess their strategies, focusing on enhancing user experience and privacy. As the dating landscape evolves, professionals should explore hybrid models that combine AI&#x27;s convenience with the authenticity of face-to-face connections.",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/expired-tired-wired-ai-powered-dating/"
+        },
+        {
+            "date": "Dec 31 2025",
+            "title": "The Future Beyond Smartphones: A New Era of Communication",
+            "content": "Industry experts predict the decline of traditional smartphones within the next decade, as new communication technologies emerge. Callaghan, a prominent voice in tech, suggests that iPhones may become obsolete in as little as five years. This forecast signals a shift towards more integrated and immersive communication solutions, potentially involving augmented reality (AR) and virtual reality (VR) platforms. As enterprises prepare for this transition, they should invest in research and development to stay ahead of the curve. Understanding emerging trends will be crucial for tech leaders aiming to capitalize on the next wave of innovation.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/30/the-phone-is-dead-long-live-what-exactly/"
+        },
+        {
+            "date": "Dec 30 2025",
+            "title": "Meta&#x27;s Acquisition of Manus Signals Strategic Shift in AI Competition",
+            "content": "Meta&#x27;s recent acquisition of Manus for over $2 billion marks a pivotal moment in the AI industry, highlighting a shift from mere model quality competition to broader strategic capabilities. Manus, known for its advanced AI and machine learning technologies, will bolster Meta&#x27;s enterprise AI offerings. This move reflects a growing trend among major tech platforms to enhance their AI ecosystems through strategic acquisitions. Enterprises should closely monitor these developments, as they may influence AI adoption strategies and vendor partnerships. The deal underscores the importance of robust AI infrastructure in maintaining competitive advantage.",
             "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/four-ai-research-trends-enterprise-teams-should-watch-in-2026"
+            "sourceUrl": "https://venturebeat.com/orchestration/why-meta-bought-manus-and-what-it-means-for-your-enterprise-ai-agent"
         },
         {
-            "date": "Dec 31 2025",
-            "title": "Instagram Head Warns of the Rise of Infinite Synthetic Content",
-            "content": "Adam Mosseri, head of Instagram, has highlighted the growing prevalence of &quot;infinite synthetic content,&quot; which is increasingly indistinguishable from reality. This development marks a significant shift from Instagram&#x27;s original personal feed, which Mosseri claims has been obsolete for years. The rise of AI-generated content poses challenges in distinguishing authentic media from synthetic creations, impacting user trust and content moderation. Social media platforms and users must adapt to this new reality by developing tools and techniques to verify content authenticity. This evolution underscores the need for robust AI ethics and governance frameworks in digital media.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/news/852124/adam-mosseri-ai-images-video-instagram"
+            "date": "Dec 30 2025",
+            "title": "AI-Powered Dictation Apps Revolutionize Productivity in 2025",
+            "content": "AI-powered dictation apps emerged as vital tools for enhancing productivity in 2025, facilitating tasks like email replies, note-taking, and even coding through voice commands. These apps leverage advanced natural language processing (NLP) to understand and transcribe speech with high accuracy. As remote work continues to rise, professionals are increasingly adopting these tools to streamline workflows and improve efficiency. Developers should focus on enhancing app capabilities, such as multilingual support and integration with existing software ecosystems. Understanding user needs will be key to driving further innovation in this space.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/30/the-best-ai-powered-dictation-apps-of-2025/"
         },
         {
-            "date": "Dec 31 2025",
-            "title": "Open Source Qwen-Image-2512 Challenges Google&#x27;s Nano Banana Pro in AI Image Generation",
-            "content": "The launch of Qwen-Image-2512, an open-source AI image generation model, aims to rival Google&#x27;s Nano Banana Pro (also known as Gemini 3 Pro Image) in producing high-quality visuals. Google&#x27;s model, released in November, set new standards by allowing users to generate detailed, text-heavy infographics and enterprise-grade visuals using natural language. Qwen-Image-2512 seeks to democratize access to advanced image generation capabilities, providing developers and enterprises with a powerful tool for creating compelling visual content. This competition highlights the rapid advancements in AI image technology and the growing importance of open-source contributions to the field.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/open-source-qwen-image-2512-launches-to-compete-with-googles-nano-banana-pro"
-        },
-        {
-            "date": "Dec 31 2025",
-            "title": "Investors Anticipate AI&#x27;s Impact on Labor Market in 2026",
-            "content": "Investors are forecasting a significant impact of AI on the enterprise labor market in 2026, although the exact effects remain uncertain. As AI continues to automate tasks across various sectors, the demand for certain job roles may decrease, while new opportunities could emerge in AI development and oversight. Companies and workers should prepare for potential shifts by investing in AI training and reskilling programs. The anticipated changes reflect AI&#x27;s transformative potential in reshaping workforce dynamics, emphasizing the need for proactive strategies to manage this transition effectively.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2025/12/31/investors-predict-ai-is-coming-for-labor-in-2026/"
-        },
-        {
-            "date": "Dec 31 2025",
-            "title": "Six Data Shifts Poised to Transform Enterprise AI in 2026",
-            "content": "The enterprise data landscape is undergoing significant changes, with six key shifts expected to shape AI development in 2026. Traditional relational databases are giving way to NoSQL document stores, graph databases, and vector-based systems, reflecting the need for more flexible and scalable data management solutions. These advancements enable enterprises to handle diverse data types and volumes more efficiently, driving innovation in AI applications. Tech leaders and data professionals should stay informed about these trends to leverage new data architectures for enhanced AI performance. This evolution underscores the critical role of data strategy in achieving AI success.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/data/six-data-shifts-that-will-shape-enterprise-ai-in-2026"
+            "date": "Dec 30 2025",
+            "title": "Enterprises to Consolidate AI Spending Among Fewer Vendors in 2026",
+            "content": "Venture capitalists predict that enterprises will increase their AI spending in 2026, but through a more selective approach, concentrating investments among fewer vendors. This trend reflects a maturation of the AI market, as businesses seek reliable and scalable solutions. Companies that have demonstrated proven results and robust support are likely to emerge as preferred partners. Tech leaders should evaluate their vendor relationships and consider consolidating their AI portfolios to optimize performance and cost-efficiency. Staying informed about market dynamics will be essential for enterprises aiming to leverage AI effectively in their operations.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2025/12/30/vcs-predict-enterprises-will-spend-more-on-ai-in-2026-through-fewer-vendors/"
         }
     ],
     "articles": {},
