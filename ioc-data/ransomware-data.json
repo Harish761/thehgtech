@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-01-02T01:47:50.299719",
+  "last_updated": "2026-01-02T12:42:39.515096",
   "period": "Last 7 days",
-  "total_groups": 24,
-  "total_victims": 250,
+  "total_groups": 22,
+  "total_victims": 252,
   "groups": [
     {
       "name": "Lockbit5",
-      "count": 80,
+      "count": 75,
       "victims": [
         {
           "name": "esopdirect.com",
@@ -63,18 +63,18 @@
           "discovered_date": "2025-12-26T15:46:54.685884"
         },
         {
-          "name": "soeuae.ae",
-          "date": "2025-12-26 15:43:33.124946",
-          "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/ef1480089cbb6bc1ce980a0ce4eb2a74",
-          "discovered_date": "2025-12-26T15:43:33.124946"
+          "name": "urfishtrade.com",
+          "date": "2025-12-26 15:46:20.293837",
+          "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/9b7a5fc1679b154bd866bff68969f5fd",
+          "discovered_date": "2025-12-26T15:46:20.293837"
         }
       ],
       "industries": [
-        "Education",
         "Financial Services",
         "Healthcare",
         "Manufacturing",
-        "Not Found"
+        "Not Found",
+        "Technology"
       ],
       "countries": [
         "AE",
@@ -97,8 +97,20 @@
     },
     {
       "name": "Qilin",
-      "count": 42,
+      "count": 46,
       "victims": [
+        {
+          "name": "Csv Group",
+          "date": "2026-01-02 05:54:06.928920",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=fbc56041-e8c3-3ec3-b953-b06c78e448cc",
+          "discovered_date": "2026-01-02T05:54:06.928920"
+        },
+        {
+          "name": "Sugawara Laboratories",
+          "date": "2026-01-02 05:53:29.138211",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=f3980832-c0b4-31fc-8fa6-b456aef5b19f",
+          "discovered_date": "2026-01-02T05:53:29.138211"
+        },
         {
           "name": "KOPA Kozmetik A",
           "date": "2025-12-31 17:46:16.759824",
@@ -146,18 +158,6 @@
           "date": "2025-12-29 18:27:13.867679",
           "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=95007099-26f2-3e14-a83a-43f0bcc08610",
           "discovered_date": "2025-12-29T18:27:13.867679"
-        },
-        {
-          "name": "Grupo Hafesa",
-          "date": "2025-12-29 14:45:34.999140",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=dbff4c3e-a9ce-3c72-8f68-8fa02be7cd08",
-          "discovered_date": "2025-12-29T14:45:34.999140"
-        },
-        {
-          "name": "Sintac Recycling",
-          "date": "2025-12-29 14:44:56.225383",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=aaed302b-5da5-312d-af58-22a99f1d3a75",
-          "discovered_date": "2025-12-29T14:44:56.225383"
         }
       ],
       "industries": [
@@ -183,7 +183,7 @@
         2,
         12,
         0,
-        0
+        4
       ]
     },
     {
@@ -278,9 +278,102 @@
       ]
     },
     {
-      "name": "Dragonforce",
-      "count": 14,
+      "name": "Play",
+      "count": 16,
       "victims": [
+        {
+          "name": "Rockport Technology Group",
+          "date": "2026-01-02 12:06:35.099169",
+          "url": "http://j75o7xvvsm4lpsjhkjvb4wl2q6ajegvabe6oswthuaubbykk4xkzgpid.onion/topic.php?id=esDJCS3mVkDnqd",
+          "discovered_date": "2026-01-02T12:06:35.099169"
+        },
+        {
+          "name": "Stoughton Steel",
+          "date": "2026-01-02 12:05:57.099288",
+          "url": "http://j75o7xvvsm4lpsjhkjvb4wl2q6ajegvabe6oswthuaubbykk4xkzgpid.onion/topic.php?id=fxWg9TtLUNeSIE",
+          "discovered_date": "2026-01-02T12:05:57.099288"
+        },
+        {
+          "name": "Infinite Computing Systems",
+          "date": "2025-12-31 17:01:53.639153",
+          "url": "http://k7kg3jqxang3wh7hnmaiokchk7qoebupfgoik6rha6mjpzwupwtj25yd.onion/topic.php?id=3JhxiXt5hzc4KY",
+          "discovered_date": "2025-12-31T17:01:53.639153"
+        },
+        {
+          "name": "Genoa Lakes",
+          "date": "2025-12-29 20:05:31.643410",
+          "url": "http://k7kg3jqxang3wh7hnmaiokchk7qoebupfgoik6rha6mjpzwupwtj25yd.onion/topic.php?id=24WK1yFdiLV7ZL",
+          "discovered_date": "2025-12-29T20:05:31.643410"
+        },
+        {
+          "name": "JZ Russell Industries",
+          "date": "2025-12-29 20:04:36.545769",
+          "url": "http://k7kg3jqxang3wh7hnmaiokchk7qoebupfgoik6rha6mjpzwupwtj25yd.onion/topic.php?id=WhbluuFPm9OYds",
+          "discovered_date": "2025-12-29T20:04:36.545769"
+        },
+        {
+          "name": "MP Filtri",
+          "date": "2025-12-29 20:03:57.947507",
+          "url": "http://k7kg3jqxang3wh7hnmaiokchk7qoebupfgoik6rha6mjpzwupwtj25yd.onion/topic.php?id=Uv1pnOXLLioIZq",
+          "discovered_date": "2025-12-29T20:03:57.947507"
+        },
+        {
+          "name": "C&r Electric",
+          "date": "2025-12-29 20:03:19.938252",
+          "url": "http://k7kg3jqxang3wh7hnmaiokchk7qoebupfgoik6rha6mjpzwupwtj25yd.onion/topic.php?id=Q8iXGWzD6MyJ31",
+          "discovered_date": "2025-12-29T20:03:19.938252"
+        },
+        {
+          "name": "Esquire Brands",
+          "date": "2025-12-29 20:04:53.814647",
+          "url": "http://k7kg3jqxang3wh7hnmaiokchk7qoebupfgoik6rha6mjpzwupwtj25yd.onion/topic.php?id=Q23xWAmU4J8d2t",
+          "discovered_date": "2025-12-29T20:04:53.814647"
+        },
+        {
+          "name": "Rockport Technology Group",
+          "date": "2026-01-02T12:06:35+00:00",
+          "url": "https://www.ransomware.live/id/Um9ja3BvcnQgVGVjaG5vbG9neSBHcm91cEBwbGF5",
+          "discovered_date": "2026-01-02T12:06:35+00:00"
+        },
+        {
+          "name": "Stoughton Steel",
+          "date": "2026-01-02T12:05:57+00:00",
+          "url": "https://www.ransomware.live/id/U3RvdWdodG9uIFN0ZWVsQHBsYXk=",
+          "discovered_date": "2026-01-02T12:05:57+00:00"
+        }
+      ],
+      "industries": [
+        "Manufacturing",
+        "Not Found",
+        "Technology"
+      ],
+      "countries": [
+        "IT",
+        "N/A",
+        "US"
+      ],
+      "trend": "up",
+      "trend_percentage": 15,
+      "daily_counts": [
+        0,
+        0,
+        10,
+        0,
+        2,
+        0,
+        4
+      ]
+    },
+    {
+      "name": "Dragonforce",
+      "count": 16,
+      "victims": [
+        {
+          "name": "SINBON Electronics Co., Ltd",
+          "date": "2026-01-02 06:24:56.732530",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=8bf25b2f-9d42-40d3-ad5a-0e4b162b3bcd",
+          "discovered_date": "2026-01-02T06:24:56.732530"
+        },
         {
           "name": "NK Technologies",
           "date": "2025-12-29 17:15:26.211498",
@@ -324,22 +417,16 @@
           "discovered_date": "2025-12-28T15:50:08.662915"
         },
         {
+          "name": "SINBON Electronics Co., Ltd",
+          "date": "2026-01-02T06:24:56+00:00",
+          "url": "https://www.ransomware.live/id/U0lOQk9OIEVsZWN0cm9uaWNzIENvLiwgTHRkQGRyYWdvbmZvcmNl",
+          "discovered_date": "2026-01-02T06:24:56+00:00"
+        },
+        {
           "name": "Barnes & Jones",
           "date": "2026-01-01T15:53:40+00:00",
           "url": "https://www.ransomware.live/id/QmFybmVzICYgSm9uZXNAZHJhZ29uZm9yY2U=",
           "discovered_date": "2026-01-01T15:53:40+00:00"
-        },
-        {
-          "name": "Burnex",
-          "date": "2025-12-29T17:16:24+00:00",
-          "url": "https://www.ransomware.live/id/QnVybmV4QGRyYWdvbmZvcmNl",
-          "discovered_date": "2025-12-29T17:16:24+00:00"
-        },
-        {
-          "name": "NK Technologies",
-          "date": "2025-12-29T17:15:26+00:00",
-          "url": "https://www.ransomware.live/id/TksgVGVjaG5vbG9naWVzQGRyYWdvbmZvcmNl",
-          "discovered_date": "2025-12-29T17:15:26+00:00"
         }
       ],
       "industries": [
@@ -352,6 +439,7 @@
         "GT",
         "MX",
         "N/A",
+        "TW",
         "US"
       ],
       "trend": "up",
@@ -363,94 +451,7 @@
         0,
         0,
         2,
-        0
-      ]
-    },
-    {
-      "name": "Play",
-      "count": 12,
-      "victims": [
-        {
-          "name": "Infinite Computing Systems",
-          "date": "2025-12-31 17:01:53.639153",
-          "url": "http://k7kg3jqxang3wh7hnmaiokchk7qoebupfgoik6rha6mjpzwupwtj25yd.onion/topic.php?id=3JhxiXt5hzc4KY",
-          "discovered_date": "2025-12-31T17:01:53.639153"
-        },
-        {
-          "name": "Genoa Lakes",
-          "date": "2025-12-29 20:05:31.643410",
-          "url": "http://k7kg3jqxang3wh7hnmaiokchk7qoebupfgoik6rha6mjpzwupwtj25yd.onion/topic.php?id=24WK1yFdiLV7ZL",
-          "discovered_date": "2025-12-29T20:05:31.643410"
-        },
-        {
-          "name": "JZ Russell Industries",
-          "date": "2025-12-29 20:04:36.545769",
-          "url": "http://k7kg3jqxang3wh7hnmaiokchk7qoebupfgoik6rha6mjpzwupwtj25yd.onion/topic.php?id=WhbluuFPm9OYds",
-          "discovered_date": "2025-12-29T20:04:36.545769"
-        },
-        {
-          "name": "MP Filtri",
-          "date": "2025-12-29 20:03:57.947507",
-          "url": "http://k7kg3jqxang3wh7hnmaiokchk7qoebupfgoik6rha6mjpzwupwtj25yd.onion/topic.php?id=Uv1pnOXLLioIZq",
-          "discovered_date": "2025-12-29T20:03:57.947507"
-        },
-        {
-          "name": "C&r Electric",
-          "date": "2025-12-29 20:03:19.938252",
-          "url": "http://k7kg3jqxang3wh7hnmaiokchk7qoebupfgoik6rha6mjpzwupwtj25yd.onion/topic.php?id=Q8iXGWzD6MyJ31",
-          "discovered_date": "2025-12-29T20:03:19.938252"
-        },
-        {
-          "name": "Esquire Brands",
-          "date": "2025-12-29 20:04:53.814647",
-          "url": "http://k7kg3jqxang3wh7hnmaiokchk7qoebupfgoik6rha6mjpzwupwtj25yd.onion/topic.php?id=Q23xWAmU4J8d2t",
-          "discovered_date": "2025-12-29T20:04:53.814647"
-        },
-        {
-          "name": "Infinite Computing Systems",
-          "date": "2025-12-31T17:01:53+00:00",
-          "url": "https://www.ransomware.live/id/SW5maW5pdGUgQ29tcHV0aW5nIFN5c3RlbXNAcGxheQ==",
-          "discovered_date": "2025-12-31T17:01:53+00:00"
-        },
-        {
-          "name": "Genoa Lakes",
-          "date": "2025-12-29T20:05:31+00:00",
-          "url": "https://www.ransomware.live/id/R2Vub2EgTGFrZXNAcGxheQ==",
-          "discovered_date": "2025-12-29T20:05:31+00:00"
-        },
-        {
-          "name": "Esquire Brands",
-          "date": "2025-12-29T20:04:53+00:00",
-          "url": "https://www.ransomware.live/id/RXNxdWlyZSBCcmFuZHNAcGxheQ==",
-          "discovered_date": "2025-12-29T20:04:53+00:00"
-        },
-        {
-          "name": "JZ Russell Industries",
-          "date": "2025-12-29T20:04:36+00:00",
-          "url": "https://www.ransomware.live/id/SlogUnVzc2VsbCBJbmR1c3RyaWVzQHBsYXk=",
-          "discovered_date": "2025-12-29T20:04:36+00:00"
-        }
-      ],
-      "industries": [
-        "Manufacturing",
-        "Not Found",
-        "Technology"
-      ],
-      "countries": [
-        "IT",
-        "N/A",
-        "US"
-      ],
-      "trend": "up",
-      "trend_percentage": 15,
-      "daily_counts": [
-        0,
-        0,
-        10,
-        0,
-        2,
-        0,
-        0
+        2
       ]
     },
     {
@@ -822,48 +823,6 @@
       ]
     },
     {
-      "name": "Nightspire",
-      "count": 3,
-      "victims": [
-        {
-          "name": "Midkiff, Muncie & Ross, P.C",
-          "date": "2025-12-30 16:37:20.842322",
-          "url": "",
-          "discovered_date": "2025-12-30T16:37:20.842322"
-        },
-        {
-          "name": "Midkiff, Muncie & Ross, P.C",
-          "date": "2025-12-30T16:37:20+00:00",
-          "url": "https://www.ransomware.live/id/TWlka2lmZiwgTXVuY2llICYgUm9zcywgUC5DQG5pZ2h0c3BpcmU=",
-          "discovered_date": "2025-12-30T16:37:20+00:00"
-        },
-        {
-          "name": "THT Bio-Science, France",
-          "date": "2025-12-26T05:47:19+00:00",
-          "url": "https://www.ransomware.live/id/VEhUIEJpby1TY2llbmNlLCBGcmFuY2VAbmlnaHRzcGlyZQ==",
-          "discovered_date": "2025-12-26T05:47:19+00:00"
-        }
-      ],
-      "industries": [
-        "Not Found"
-      ],
-      "countries": [
-        "FR",
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        2,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Akira",
       "count": 3,
       "victims": [
@@ -1220,19 +1179,27 @@
       ]
     },
     {
-      "name": "Lynx",
-      "count": 1,
+      "name": "Nightspire",
+      "count": 2,
       "victims": [
         {
-          "name": "CSA Tax & Advisory",
-          "date": "2025-12-26T12:22:14+00:00",
-          "url": "https://www.ransomware.live/id/Q1NBIFRheCAmIEFkdmlzb3J5QGx5bng=",
-          "discovered_date": "2025-12-26T12:22:14+00:00"
+          "name": "Midkiff, Muncie & Ross, P.C",
+          "date": "2025-12-30 16:37:20.842322",
+          "url": "",
+          "discovered_date": "2025-12-30T16:37:20.842322"
+        },
+        {
+          "name": "Midkiff, Muncie & Ross, P.C",
+          "date": "2025-12-30T16:37:20+00:00",
+          "url": "https://www.ransomware.live/id/TWlka2lmZiwgTXVuY2llICYgUm9zcywgUC5DQG5pZ2h0c3BpcmU=",
+          "discovered_date": "2025-12-30T16:37:20+00:00"
         }
       ],
-      "industries": [],
+      "industries": [
+        "Not Found"
+      ],
       "countries": [
-        "AU"
+        "US"
       ],
       "trend": "down",
       "trend_percentage": -5,
@@ -1240,34 +1207,7 @@
         0,
         0,
         0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Chaos",
-      "count": 1,
-      "victims": [
-        {
-          "name": "VEPLASTIC",
-          "date": "2025-12-26T11:48:53+00:00",
-          "url": "https://www.ransomware.live/id/VkVQTEFTVElDQGNoYW9z",
-          "discovered_date": "2025-12-26T11:48:53+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "IT"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        0,
+        2,
         0,
         0,
         0
