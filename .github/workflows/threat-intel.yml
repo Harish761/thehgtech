@@ -43,11 +43,44 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python enrich_cve_dual_source.py
 
+      # NEW: EPSS Enrichment - adds exploit prediction scores
+      - name: Enrich CVE Data with EPSS Scores
+        continue-on-error: true  # Non-blocking - workflow continues if EPSS API fails
+        run: |
+          echo "📊 Adding EPSS (Exploit Prediction) scores..."
+          python enrich_epss.py
+
+      # NEW: Log workflow usage for monitoring
+      - name: Log Usage Statistics
+        continue-on-error: true
+        run: |
+          mkdir -p data
+          python -c "
+          from monitor_github_actions import log_workflow_run
+          usage = log_workflow_run('threat-intel', duration_seconds=180)
+          print(f\"📊 Monthly usage: {usage['totalMinutes']:.1f}/{usage['limit']} minutes ({usage['usagePercent']}%)\")
+          "
+
       - name: Commit & Push All Changes
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add threat-intel.js threat-intel-history.json threat-intel-history.js ti-snapshot.html ioc-data/ cve-data.json
+          git add threat-intel.js threat-intel-history.json threat-intel-history.js ti-snapshot.html ioc-data/ cve-data.json data/
           git diff --quiet && git diff --staged --quiet || \
             git commit -m "🛡️ Threat Intel update [$(date -u '+%Y-%m-%d %H:%M')] UTC"
           git pull --rebase origin main && git push
+
+      # NEW: Summary with EPSS stats
+      - name: Workflow Summary
+        if: always()
+        run: |
+          echo "### 🛡️ Threat Intel Update Complete" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Time**: $(date -u '+%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
+          echo "- **CVE Enrichment**: ✅ CISA KEV + NVD Critical" >> $GITHUB_STEP_SUMMARY
+          echo "- **EPSS Scoring**: ✅ Exploit Prediction Added" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ -f cve-data.json ]; then
+            CVE_COUNT=$(python -c "import json; d=json.load(open('cve-data.json')); print(d.get('totalCVEs', 0))")
+            echo "- **Total CVEs Tracked**: $CVE_COUNT" >> $GITHUB_STEP_SUMMARY
+          fi
