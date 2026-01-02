@@ -65,6 +65,41 @@
   
   <!-- ========== ARTICLES - HIGH TRAFFIC POTENTIAL ========== -->
   <url>
+    <loc>https://thehgtech.com/articles/ibm-api-connect-cve-2026.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <lastmod>2026-01-02</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/clickfix-social-engineering-2026.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <lastmod>2026-01-02</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/managemyhealth-nz-breach-2026.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <lastmod>2026-01-02</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/covenant-health-qilin-ransomware-2026.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <lastmod>2026-01-02</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/wheelchair-bluetooth-hack-cve-2025-14346.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <lastmod>2026-01-02</lastmod>
+  </url>
+
+  <url>
     <loc>https://thehgtech.com/articles/mongodb-mongobleed-cve-2025-14847.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>

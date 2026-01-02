@@ -5,6 +5,71 @@
   <!-- ========== LATEST NEWS ARTICLES (Last 48 hours for Google News) ========== -->
   
   <url>
+    <loc>https://thehgtech.com/articles/ibm-api-connect-cve-2026.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-01-02T00:00:00+05:30</news:publication_date>
+      <news:title>IBM API Connect CVE-2025-13915: Critical Enterprise Gateway Vulnerability</news:title>
+      <news:keywords>IBM API Connect, CVE-2025-13915, enterprise security, RCE, API gateway, critical vulnerability</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/clickfix-social-engineering-2026.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-01-02T00:00:00+05:30</news:publication_date>
+      <news:title>ClickFix Surge: 517% Increase in Fake CAPTCHA Social Engineering Attacks</news:title>
+      <news:keywords>ClickFix, social engineering, fake CAPTCHA, PowerShell malware, phishing, 2026 threat</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/managemyhealth-nz-breach-2026.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-01-02T00:00:00+05:30</news:publication_date>
+      <news:title>ManageMyHealth NZ Breach: $60,000 Ransom Deadline for Patient Data</news:title>
+      <news:keywords>ManageMyHealth, New Zealand, healthcare breach, ransom, patient data, NHI</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/covenant-health-qilin-ransomware-2026.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-01-02T00:00:00+05:30</news:publication_date>
+      <news:title>Covenant Health Ransomware: Qilin Steals 850GB from 478,000 Patients</news:title>
+      <news:keywords>Covenant Health, Qilin ransomware, healthcare breach, patient data, Massachusetts</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/wheelchair-bluetooth-hack-cve-2025-14346.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-01-02T00:00:00+05:30</news:publication_date>
+      <news:title>Electric Wheelchair Bluetooth Hack CVE-2025-14346: IoT Medical Device Vulnerability</news:title>
+      <news:keywords>wheelchair hack, Bluetooth vulnerability, CVE-2025-14346, IoT security, medical device, WHILL</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://thehgtech.com/articles/mongodb-mongobleed-cve-2025-14847.html</loc>
     <news:news>
       <news:publication>
