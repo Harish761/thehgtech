@@ -61,6 +61,7 @@ When creating a new guide for TheHGTech, follow these standards:
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="stylesheet" href="/header.css">
+<link rel="stylesheet" href="/header-dropdown.css?v=1">
 <link rel="stylesheet" href="/print.css">
 <link rel="stylesheet" href="/light-mode.css">
 <link rel="stylesheet" href="/m-core.css?v=4.2">
