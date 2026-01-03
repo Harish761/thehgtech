@@ -70,7 +70,7 @@ body.light-mode .logo-light {
 .nav {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1.25rem;
     margin-left: auto;
 }
 
@@ -78,9 +78,10 @@ body.light-mode .logo-light {
     color: var(--text-secondary);
     text-decoration: none;
     font-weight: 500;
-    font-size: 0.95rem;
+    font-size: 0.875rem;
     transition: all 0.3s ease;
     position: relative;
+    white-space: nowrap;
 }
 
 .nav a:hover {
@@ -105,12 +106,13 @@ body.light-mode .logo-light {
 .live-badge {
     background: #FF3D3D;
     color: white;
-    font-size: 0.7rem;
-    padding: 0.1rem 0.4rem;
-    border-radius: 4px;
+    font-size: 0.6rem;
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
     font-weight: 700;
-    margin-left: 0.3rem;
+    margin-left: 0.2rem;
     animation: pulse 2s infinite;
+    vertical-align: middle;
 }
 
 @keyframes pulse {
