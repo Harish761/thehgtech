@@ -269,6 +269,7 @@
     <link rel="stylesheet" href="cve-display.css?v=4" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="ransomware-display.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="article-links-fix.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="header-dropdown.css?v=1" media="print" onload="this.media='all'">
 
     <!-- Font Awesome (Deferred until after page load for performance) -->
     <script>
@@ -3815,20 +3816,121 @@
                     class="logo-img logo-light" width="40" height="40" style="object-fit: contain;">
                 <span class="logo-text">TheHGTech</span>
             </div>
-            <nav class="nav">
+            <nav class="nav nav-modern" role="navigation">
                 <a href="#news">News</a>
-                <a href="threat-intel.html" style="color: #00D9FF; position: relative;">
-                    Threat Intelligence
-                    <span
-                        style="font-size: 0.65rem; background: #FF4C4C; padding: 0.15rem 0.4rem; border-radius: 3px; margin-left: 0.3rem; animation: pulse 2s infinite;">LIVE</span>
-                </a>
-                <a href="cve-tracker.html">CVE Tracker</a>
-                <a href="/guides/">Guides</a>
-                <a href="/comparisons/">Tool Comparisons</a>
 
-                <a href="articles.html">Articles</a>
-                <a href="#" onclick="openModal('about'); return false;">About</a>
-                <a href="#" onclick="openModal('contact'); return false;">Contact</a>
+                <!-- Intelligence Dropdown -->
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">
+                        Intelligence
+                        <span class="nav-live-badge">LIVE</span>
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </span>
+                    <div class="nav-dropdown-panel">
+                        <a href="threat-intel.html" class="dropdown-item">
+                            <div class="dropdown-item-icon intel">
+                                <i class="fas fa-satellite-dish"></i>
+                            </div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">
+                                    Threat Intelligence
+                                    <span class="dropdown-badge live">LIVE</span>
+                                </div>
+                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours
+                                </div>
+                            </div>
+                        </a>
+                        <a href="cve-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon cve">
+                                <i class="fas fa-bug"></i>
+                            </div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">CVE Tracker</div>
+                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores
+                                </div>
+                            </div>
+                        </a>
+                        <a href="ransomware-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon ransomware">
+                                <i class="fas fa-skull-crossbones"></i>
+                            </div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Ransomware Tracker</div>
+                                <div class="dropdown-item-desc">Track active ransomware groups and victims</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Resources Dropdown -->
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">
+                        Resources
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/guides/" class="dropdown-item">
+                            <div class="dropdown-item-icon guides">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">
+                                    Security Guides
+                                    <span class="dropdown-badge popular">37+</span>
+                                </div>
+                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
+                            </div>
+                        </a>
+                        <a href="/comparisons/" class="dropdown-item">
+                            <div class="dropdown-item-icon comparisons">
+                                <i class="fas fa-balance-scale"></i>
+                            </div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Tool Comparisons</div>
+                                <div class="dropdown-item-desc">EDR, SIEM, and security tool head-to-head reviews</div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="articles.html" class="dropdown-item">
+                            <div class="dropdown-item-icon articles">
+                                <i class="fas fa-newspaper"></i>
+                            </div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Articles</div>
+                                <div class="dropdown-item-desc">Latest cybersecurity news and analysis</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- About Dropdown -->
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">
+                        About
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </span>
+                    <div class="nav-dropdown-panel" style="min-width: 220px;">
+                        <a href="#" onclick="openModal('about'); return false;" class="dropdown-item">
+                            <div class="dropdown-item-icon about">
+                                <i class="fas fa-info-circle"></i>
+                            </div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">About Us</div>
+                                <div class="dropdown-item-desc">Learn about TheHGTech</div>
+                            </div>
+                        </a>
+                        <a href="#" onclick="openModal('contact'); return false;" class="dropdown-item">
+                            <div class="dropdown-item-icon contact">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Contact</div>
+                                <div class="dropdown-item-desc">Get in touch with us</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
                 <div class="theme-toggle-wrapper">
                     <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
                         <div class="toggle-stars">
