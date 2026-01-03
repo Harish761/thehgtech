@@ -265,6 +265,7 @@ def fetch_nvd_critical_cves(days=7, max_results=50) -> List[Dict]:
                 'dateAdded': date_added,
                 'vendor': vendor,
                 'product': product,
+                'fullDescription': description,  # Store complete description for modal
                 'description': description[:200] + "..." if len(description) > 200 else description,
                 'shortDescription': description[:100] + "..." if len(description) > 100 else description,
                 'severity': severity,

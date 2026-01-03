@@ -398,11 +398,19 @@ def process_cve(cisa_vuln: Dict) -> Dict:
         product=product
     )
     
+    # Get full description from NVD (for modal display)
+    full_description = cisa_vuln['vulnerabilityName']  # Fallback
+    if nvd_data:
+        descriptions = nvd_data.get('descriptions', [])
+        if descriptions:
+            full_description = descriptions[0].get('value', full_description)
+    
     cve_entry = {
         'cveId': cve_id,
         'dateAdded': cisa_vuln['dateAdded'],
         'vendor': vendor,
         'product': product,
+        'fullDescription': full_description,  # Complete description for modal
         'description': cisa_vuln['vulnerabilityName'],
         'shortDescription': cisa_vuln.get('shortDescription', ''),
         'severity': severity,
