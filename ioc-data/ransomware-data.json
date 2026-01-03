@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-01-03T01:41:46.040266",
+  "last_updated": "2026-01-03T12:40:59.351530",
   "period": "Last 7 days",
-  "total_groups": 21,
-  "total_victims": 208,
+  "total_groups": 20,
+  "total_victims": 209,
   "groups": [
     {
       "name": "Qilin",
@@ -97,7 +97,7 @@
     },
     {
       "name": "Safepay",
-      "count": 36,
+      "count": 34,
       "victims": [
         {
           "name": "setex-textil.de",
@@ -459,6 +459,91 @@
       ]
     },
     {
+      "name": "Handala",
+      "count": 12,
+      "victims": [
+        {
+          "name": "Unveiling the Secrets: Inside the WhatsApp Chats of a Minister",
+          "date": "2026-01-03 11:02:13.155163",
+          "url": "https://handala-hack.to/unveiling-the-secrets-inside-the-whatsapp-chats-of-a-minister/",
+          "discovered_date": "2026-01-03T11:02:13.155163"
+        },
+        {
+          "name": "The Queen’s Secrets: Unveiling the Mysteries Behind Ayelet Shaked",
+          "date": "2026-01-03 07:22:56.781313",
+          "url": "https://handala-hack.to/the-queens-secrets-unveiling-the-mysteries-behind-ayelet-shaked/",
+          "discovered_date": "2026-01-03T07:22:56.781313"
+        },
+        {
+          "name": "Handala Alert: Amplifying the Voice of Resistance",
+          "date": "2026-01-02 22:54:49.534727",
+          "url": "https://handala-hack.to/handala-alert-amplifying-the-voice-of-resistance/",
+          "discovered_date": "2026-01-02T22:54:49.534727"
+        },
+        {
+          "name": "Braverman Files Unleashed: Every Secret Now Exposed",
+          "date": "2025-12-28 11:21:47.162041",
+          "url": "http://vmjfieomxhnfjba57sd6jjws2ogvowjgxhhfglsikqvvrnrajbmpxqqd.onion/?p=593",
+          "discovered_date": "2025-12-28T11:21:47.162041"
+        },
+        {
+          "name": "Bibi Gate: The Gatekeeper’s Fall | Tzachi Braverman",
+          "date": "2025-12-28 06:28:23.777691",
+          "url": "http://vmjfieomxhnfjba57sd6jjws2ogvowjgxhhfglsikqvvrnrajbmpxqqd.onion/?p=589",
+          "discovered_date": "2025-12-28T06:28:23.777691"
+        },
+        {
+          "name": "Netanyahu’s Cabinet Awaits Handala’s Next Move",
+          "date": "2025-12-27 23:16:14.610257",
+          "url": "https://handala-hack.to/netanyahus-cabinet-awaits-handalas-next-move/",
+          "discovered_date": "2025-12-27T23:16:14.610257"
+        },
+        {
+          "name": "Unveiling the Secrets: Inside the WhatsApp Chats of a Minister",
+          "date": "2026-01-03T11:02:13+00:00",
+          "url": "https://www.ransomware.live/id/VW52ZWlsaW5nIHRoZSBTZWNyZXRzOiBJbnNpZGUgdGhlIFdoYXRzQXBwIENoYXRzIG9mIGEgTWluaXN0ZXJAaGFuZGFsYQ==",
+          "discovered_date": "2026-01-03T11:02:13+00:00"
+        },
+        {
+          "name": "The Queen’s Secrets: Unveiling the Mysteries Behind Ayelet Shaked",
+          "date": "2026-01-03T07:22:56+00:00",
+          "url": "https://www.ransomware.live/id/VGhlIFF1ZWVu4oCZcyBTZWNyZXRzOiBVbnZlaWxpbmcgdGhlIE15c3RlcmllcyBCZWhpbmQgQXllbGV0IFNoYWtlZEBoYW5kYWxh",
+          "discovered_date": "2026-01-03T07:22:56+00:00"
+        },
+        {
+          "name": "Handala Alert: Amplifying the Voice of Resistance",
+          "date": "2026-01-02T22:54:49+00:00",
+          "url": "https://www.ransomware.live/id/SGFuZGFsYSBBbGVydDogQW1wbGlmeWluZyB0aGUgVm9pY2Ugb2YgUmVzaXN0YW5jZUBoYW5kYWxh",
+          "discovered_date": "2026-01-02T22:54:49+00:00"
+        },
+        {
+          "name": "Braverman Files Unleashed: Every Secret Now Exposed",
+          "date": "2025-12-28T11:21:47+00:00",
+          "url": "https://www.ransomware.live/id/QnJhdmVybWFuIEZpbGVzIFVubGVhc2hlZDogRXZlcnkgU2VjcmV0IE5vdyBFeHBvc2VkQGhhbmRhbGE=",
+          "discovered_date": "2025-12-28T11:21:47+00:00"
+        }
+      ],
+      "industries": [
+        "Not Found"
+      ],
+      "countries": [
+        "IL",
+        "N/A",
+        "PS"
+      ],
+      "trend": "up",
+      "trend_percentage": 15,
+      "daily_counts": [
+        4,
+        0,
+        0,
+        0,
+        0,
+        2,
+        4
+      ]
+    },
+    {
       "name": "Incransom",
       "count": 12,
       "victims": [
@@ -545,79 +630,6 @@
         4,
         0,
         0,
-        0
-      ]
-    },
-    {
-      "name": "Handala",
-      "count": 8,
-      "victims": [
-        {
-          "name": "Handala Alert: Amplifying the Voice of Resistance",
-          "date": "2026-01-02 22:54:49.534727",
-          "url": "https://handala-hack.to/handala-alert-amplifying-the-voice-of-resistance/",
-          "discovered_date": "2026-01-02T22:54:49.534727"
-        },
-        {
-          "name": "Braverman Files Unleashed: Every Secret Now Exposed",
-          "date": "2025-12-28 11:21:47.162041",
-          "url": "http://vmjfieomxhnfjba57sd6jjws2ogvowjgxhhfglsikqvvrnrajbmpxqqd.onion/?p=593",
-          "discovered_date": "2025-12-28T11:21:47.162041"
-        },
-        {
-          "name": "Bibi Gate: The Gatekeeper’s Fall | Tzachi Braverman",
-          "date": "2025-12-28 06:28:23.777691",
-          "url": "http://vmjfieomxhnfjba57sd6jjws2ogvowjgxhhfglsikqvvrnrajbmpxqqd.onion/?p=589",
-          "discovered_date": "2025-12-28T06:28:23.777691"
-        },
-        {
-          "name": "Netanyahu’s Cabinet Awaits Handala’s Next Move",
-          "date": "2025-12-27 23:16:14.610257",
-          "url": "https://handala-hack.to/netanyahus-cabinet-awaits-handalas-next-move/",
-          "discovered_date": "2025-12-27T23:16:14.610257"
-        },
-        {
-          "name": "Handala Alert: Amplifying the Voice of Resistance",
-          "date": "2026-01-02T22:54:49+00:00",
-          "url": "https://www.ransomware.live/id/SGFuZGFsYSBBbGVydDogQW1wbGlmeWluZyB0aGUgVm9pY2Ugb2YgUmVzaXN0YW5jZUBoYW5kYWxh",
-          "discovered_date": "2026-01-02T22:54:49+00:00"
-        },
-        {
-          "name": "Braverman Files Unleashed: Every Secret Now Exposed",
-          "date": "2025-12-28T11:21:47+00:00",
-          "url": "https://www.ransomware.live/id/QnJhdmVybWFuIEZpbGVzIFVubGVhc2hlZDogRXZlcnkgU2VjcmV0IE5vdyBFeHBvc2VkQGhhbmRhbGE=",
-          "discovered_date": "2025-12-28T11:21:47+00:00"
-        },
-        {
-          "name": "Bibi Gate: The Gatekeeper’s Fall | Tzachi Braverman",
-          "date": "2025-12-28T06:28:23+00:00",
-          "url": "https://www.ransomware.live/id/QmliaSBHYXRlOiBUaGUgR2F0ZWtlZXBlcuKAmXMgRmFsbCB8IFR6YWNoaSBCcmF2ZXJtYW5AaGFuZGFsYQ==",
-          "discovered_date": "2025-12-28T06:28:23+00:00"
-        },
-        {
-          "name": "Netanyahu’s Cabinet Awaits Handala’s Next Move",
-          "date": "2025-12-27T23:16:14+00:00",
-          "url": "https://www.ransomware.live/id/TmV0YW55YWh14oCZcyBDYWJpbmV0IEF3YWl0cyBIYW5kYWxh4oCZcyBOZXh0IE1vdmVAaGFuZGFsYQ==",
-          "discovered_date": "2025-12-27T23:16:14+00:00"
-        }
-      ],
-      "industries": [
-        "Not Found"
-      ],
-      "countries": [
-        "IL",
-        "N/A",
-        "PS"
-      ],
-      "trend": "stable",
-      "trend_percentage": 0,
-      "daily_counts": [
-        4,
-        0,
-        0,
-        0,
-        0,
-        2,
         0
       ]
     },
@@ -1148,33 +1160,6 @@
         0,
         0,
         2,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Morpheus",
-      "count": 1,
-      "victims": [
-        {
-          "name": "VALLEREDONDO",
-          "date": "2025-12-27T10:48:26+00:00",
-          "url": "https://www.ransomware.live/id/VkFMTEVSRURPTkRPQG1vcnBoZXVz",
-          "discovered_date": "2025-12-27T10:48:26+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "ES"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
         0,
         0,
         0,
