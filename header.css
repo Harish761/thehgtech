@@ -70,7 +70,8 @@ body.light-mode .logo-light {
 .nav {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
+    margin-left: auto;
 }
 
 .nav a {
