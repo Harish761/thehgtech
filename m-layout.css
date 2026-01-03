@@ -460,12 +460,13 @@
         z-index: 1200;
         padding: var(--m-space-md);
         padding-top: calc(var(--m-space-md) + var(--m-safe-area-top));
+        display: none;
         opacity: 0;
         visibility: hidden;
-        transition: all var(--m-transition-fast);
     }
 
     .m-search-overlay.active {
+        display: block;
         opacity: 1;
         visibility: visible;
     }
