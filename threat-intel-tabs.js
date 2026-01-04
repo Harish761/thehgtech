@@ -30,7 +30,6 @@
         tabNav.innerHTML = `
             <button class="tab-btn active" data-tab="dashboard">Dashboard</button>
             <button class="tab-btn" data-tab="threats">Threat Intelligence</button>
-            <button class="tab-btn" data-tab="ransomware">Ransomware</button>
         `;
 
         // Insert Top-Level Tabs at the very top of main container
@@ -52,7 +51,6 @@
 
         // 2. Create Content Containers
         const dashboardTab = createDashboardTab(); // Charts etc.
-        const ransomwareTab = createRansomwareTab();
 
         // 3. Create 'Threat Intelligence' Tab Container
         const threatIntelTab = document.createElement('div');
@@ -84,7 +82,6 @@
         // We place them in order
         mainContainer.appendChild(dashboardTab);
         mainContainer.appendChild(threatIntelTab);
-        mainContainer.appendChild(ransomwareTab);
 
         // 6. Move Analytics Section (Charts) to Dashboard?
         // User said "Dashboard which has the charts"
@@ -114,9 +111,6 @@
                 console.error('Failed to load dashboard data:', err);
             });
         }
-
-        // Load ransomware data
-        loadRansomwareData();
     }
 
     function createTabNavigation() {
@@ -223,7 +217,8 @@
                     </div>
 
                     <div>
-                        <button onclick="document.querySelector('[data-tab=\'ransomware\']').click()" style="
+                        <a href="ransomware-tracker.html" style="
+                            display: inline-block;
                             background: rgba(255, 61, 61, 0.1);
                             border: 1px solid var(--accent-red);
                             color: var(--accent-red);
@@ -231,11 +226,12 @@
                             border-radius: 6px;
                             cursor: pointer;
                             font-weight: 600;
+                            text-decoration: none;
                             transition: all 0.3s ease;
                         " onmouseover="this.style.background='var(--accent-red)'; this.style.color='white';"
                           onmouseout="this.style.background='rgba(255, 61, 61, 0.1)'; this.style.color='var(--accent-red)';">
                             View Full Tracker →
-                        </button>
+                        </a>
                     </div>
                 </div>
 
