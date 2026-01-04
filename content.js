@@ -5,52 +5,52 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Jan 03 2026",
-            "title": "Trump Orders Emcore Corp. Divestment to Safeguard US Security",
-            "content": "President Trump has mandated the divestment of Emcore Corp.&#x27;s computer chips and wafer fabrication operations, valued at $2.9 million, to protect national security interests. The decision underscores the administration&#x27;s focus on securing critical technology sectors from foreign influence. Emcore Corp., known for its aerospace and defense expertise, is compelled to sell off these assets to mitigate potential risks associated with foreign ownership or control. This move highlights ongoing concerns about protecting sensitive technologies amid geopolitical tensions. Companies in the defense sector should remain vigilant about regulatory changes affecting ownership and operational control.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/president-trump-orders-divestment-in-2-9-million-chips-deal-to-protect-us-security-interests/"
-        },
-        {
-            "date": "Jan 02 2026",
-            "title": "Trust Wallet Links $8.5M Theft to Shai-Hulud NPM Attack",
-            "content": "Trust Wallet has attributed a theft of approximately $8.5 million from over 2,500 crypto wallets to the Shai-Hulud NPM attack that occurred in November. The attack involved compromising the browser extension used by Trust Wallet, allowing attackers to siphon funds from unsuspecting users. This incident highlights the vulnerabilities in browser extensions and the broader impact of the Shai-Hulud attack, which has affected multiple organizations across the industry. Cryptocurrency holders should ensure their wallets and extensions are up-to-date and consider additional security measures such as hardware wallets. The incident serves as a reminder of the persistent threats facing digital assets and the need for robust security practices.",
+            "title": "Resecurity Claims Honeypot Foiled Alleged Data Breach",
+            "content": "The ShinyHunters hacking group alleges it breached cybersecurity firm Resecurity, claiming to have stolen internal data. However, Resecurity asserts that the attackers only accessed a honeypot, a decoy system designed to lure and monitor cybercriminals. This honeypot contained fake information, allowing Resecurity to gather intelligence on the hackers&#x27; methods without risking real data. The incident underscores the importance of deceptive technologies in cybersecurity defense strategies. Organizations should consider deploying similar tactics to enhance their security posture and gather actionable threat intelligence.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/trust-wallet-links-85-million-crypto-theft-to-shai-hulud-npm-attack/"
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-claim-resecurity-hack-firm-says-it-was-a-honeypot/"
         },
         {
             "date": "Jan 02 2026",
-            "title": "Experts Predict AI-Driven Threats to Dominate 2026 Cybersecurity Landscape",
-            "content": "Cybersecurity experts are forecasting a significant rise in AI-driven threats throughout 2026, emphasizing a shift from prevention to resilience. The increasing sophistication of AI in automating attacks necessitates advanced security measures to combat evolving risks. Experts are urging organizations to invest in AI-powered defense systems and focus on building resilience against inevitable breaches. This shift reflects a broader trend in cybersecurity, where traditional defenses are no longer sufficient against adaptive threats. Professionals should prioritize continuous monitoring and adaptive responses to maintain security in an increasingly AI-driven threat landscape.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/threat-intelligence/cybersecurity-predictions-for-2026-navigating-the-future-of-digital-threats"
+            "title": "Covenant Health Data Breach Affects Nearly 500,000 Patients",
+            "content": "Covenant Health has updated the impact of a data breach discovered in May, now reporting that nearly 478,000 patients were affected. The breach involved unauthorized access to personal and medical information, highlighting vulnerabilities in healthcare data security. This incident reflects a broader trend of increasing cyberattacks targeting health organizations, which often hold sensitive data. Covenant Health is working to enhance its cybersecurity measures and has notified affected individuals. Healthcare providers should prioritize robust security frameworks to protect patient data and comply with regulations.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/covenant-health-says-may-data-breach-impacted-nearly-478-000-patients/"
         },
         {
             "date": "Jan 02 2026",
-            "title": "CTOs Set Resolutions for Enhanced Cybersecurity in 2026",
-            "content": "As 2026 begins, Chief Technology Officers (CTOs) are outlining resolutions to bolster cybersecurity, focusing on securing Multi-Cloud Platforms (MCPs) and supply chain defenses. The emphasis is also on formal governance for AI and quantum technologies to address emerging threats. Experts stress the importance of integrating comprehensive security frameworks and enhancing collaboration across industries to fortify defenses. This proactive approach is essential in adapting to the rapidly changing cyber threat landscape. Organizations are encouraged to adopt these resolutions to ensure robust protection against sophisticated attacks.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyber-risk/cto-new-year-resolutions-for-a-more-secure-2026"
+            "title": "LastPass Breach Linked to Ongoing Cryptocurrency Thefts",
+            "content": "TRM Labs, a blockchain investigation firm, has linked recent cryptocurrency thefts to the 2022 LastPass breach. Attackers have been exploiting stolen encrypted vaults, draining digital wallets and laundering funds through Russian exchanges. This development highlights the long-term risks associated with data breaches, particularly when encryption keys are compromised. Cryptocurrency holders who used LastPass should review their security practices and consider additional protective measures such as hardware wallets. The situation emphasizes the need for continuous security vigilance and timely response to breaches.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cryptocurrency-theft-attacks-traced-to-2022-lastpass-breach/"
         },
         {
             "date": "Jan 02 2026",
-            "title": "Transparent Tribe Targets Indian Entities with New RAT Attacks",
-            "content": "The threat actor group Transparent Tribe has launched new remote access trojan (RAT) attacks against Indian governmental and academic institutions. This campaign uses deceptive delivery techniques to gain persistent control over compromised systems, posing a significant threat to sensitive data. Transparent Tribe is known for targeting strategic entities, and this latest operation underscores their continued focus on India. Organizations in the region should enhance their security protocols and conduct regular threat assessments to mitigate potential impacts. The attacks highlight the ongoing need for vigilance against sophisticated cyber adversaries.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/01/transparent-tribe-launches-new-rat.html"
+            "title": "Fortinet Firewalls Vulnerable to Old 2FA Bypass Exploit",
+            "content": "Over 10,000 Fortinet firewalls exposed to the internet remain vulnerable to a five-year-old two-factor authentication (2FA) bypass vulnerability. This flaw allows attackers to gain unauthorized access, posing significant security risks to organizations relying on these devices. Despite its age, the vulnerability continues to be actively exploited, demonstrating the persistent threat of unpatched systems. Fortinet users should immediately apply available patches and ensure all security measures are up to date. The incident underscores the critical importance of regular vulnerability assessments and timely patch management.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/over-10-000-fortinet-firewalls-exposed-to-ongoing-2fa-bypass-attacks/"
         },
         {
             "date": "Jan 02 2026",
-            "title": "Cybersecurity Experts Admit to Running Ransomware Operation",
-            "content": "Two cybersecurity professionals, Ryan Goldberg and Kevin Martin, have pleaded guilty to operating a ransomware scheme aimed at extorting businesses. The duo conspired to obstruct commerce through their illicit activities and are set to be sentenced on March 12, 2026. This case highlights the insider threat within the cybersecurity community, where trusted professionals exploit their expertise for criminal gain. Organizations should reinforce internal controls and conduct thorough background checks to prevent similar incidents. The guilty plea serves as a reminder of the diverse threats facing businesses today.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4112400/two-cybersecurity-experts-plead-guilty-to-running-ransomware-operation.html"
+            "title": "U.S. Treasury Delists Intellexa-Linked Individuals",
+            "content": "The U.S. Treasury has removed three Iranians from its sanctions list, previously linked to the spyware company Intellexa. These individuals were sanctioned in 2024 but have reportedly distanced themselves from the company, prompting their removal. The move reflects ongoing diplomatic and regulatory complexities surrounding spyware and surveillance technologies. It highlights the importance of maintaining up-to-date intelligence on individuals and entities involved in cyber activities. Organizations should remain vigilant about compliance with international sanctions and monitor changes in regulatory landscapes.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/treasury-removes-intellexa-spyware-linked-trio-from-sanctions-list/"
         },
         {
             "date": "Jan 02 2026",
-            "title": "US Cybersecurity Pros Plead Guilty to BlackCat/Alphv Ransomware Involvement",
-            "content": "Ryan Goldberg and Kevin Martin have confessed to being affiliates of the notorious BlackCat/Alphv ransomware group. Their involvement in the ransomware operation underscores the growing trend of professionals exploiting their skills for malicious purposes. This admission reveals the complex nature of modern cyber threats, where insiders play a pivotal role. Businesses are urged to strengthen their security policies and monitor for potential insider threats to safeguard against such breaches. The case exemplifies the ongoing challenges in combating ransomware and the importance of comprehensive security strategies.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/two-us-cybersecurity-pros-plead-guilty-over-ransomware-attacks/"
+            "title": "Optimizing DNS Response Times with Tshark",
+            "content": "A recent project involved optimizing DNS response times using Tshark, a network protocol analyzer. The initiative followed the failure of a homelab server, necessitating a network cleanup and optimization. Tshark was employed to diagnose and address &quot;layer 1&quot; issues, improving overall network performance. This case study illustrates the practical application of network tools in troubleshooting and enhancing home and small business networks. IT professionals should consider incorporating similar tools into their diagnostic arsenal to ensure efficient network operations.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32592"
+        },
+        {
+            "date": "Jan 02 2026",
+            "title": "Google Tests New High-Speed Image AI Model",
+            "content": "Google is testing &quot;Nano Banana 2 Flash,&quot; its latest image AI model, which promises to match the capabilities of the Gemini 3 Pro Nano Banana while being more cost-effective. This model aims to deliver rapid image processing speeds, potentially setting a new standard for AI-driven image analysis. The development is part of Google&#x27;s ongoing efforts to enhance AI accessibility and performance. Tech professionals should monitor this advancement as it may offer new opportunities for integrating high-speed AI capabilities into applications. The model&#x27;s affordability could make advanced AI more accessible across various industries.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/google/google-is-testing-a-new-image-ai-and-its-going-to-be-its-fastest-model/"
         },
         {
             "date": "May 05 2026",
@@ -62,60 +62,53 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Jan 02 2026",
-            "title": "AI and Big Data Revolutionize Digital Marketing Strategies",
-            "content": "Artificial intelligence and big data are significantly transforming digital marketing by offering deeper insights into consumer behavior, enabling more personalized and effective marketing strategies. These technologies allow marketers to tailor campaigns to specific audience segments, enhancing engagement and conversion rates. As the digital landscape evolves, businesses must adapt by integrating AI-driven analytics to maintain competitiveness. Companies like Rainmaker are leading this shift by developing AI models that predict consumer trends and preferences. Marketers should focus on leveraging AI tools to refine their strategies and improve ROI, staying ahead of competitors who lag in technology adoption.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/understanding-how-ai-and-big-data-transform-digital-marketing/"
-        },
-        {
-            "date": "Jan 02 2026",
-            "title": "Solana&#x27;s AI Adoption Spurs Malware Concerns in Crypto Space",
-            "content": "Solana&#x27;s high-speed blockchain platform is increasingly becoming the preferred environment for independent AI programs, but this growth coincides with a rise in malware targeting the cryptocurrency community. The platform&#x27;s advanced capabilities have attracted both developers and cybercriminals, leading to a surge in cyberattacks exploiting vulnerabilities in AI applications. This trend underscores the need for robust security measures to protect digital assets and user data. Cryptocurrency holders and developers should prioritize implementing comprehensive security protocols and stay informed about potential threats to safeguard their investments.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/solanas-high-speed-ai-gains-and-malware-losses/"
-        },
-        {
-            "date": "Jan 02 2026",
-            "title": "OpenAI Grove Cohort 2 Opens Applications for AI Innovators",
-            "content": "OpenAI has announced that applications are open for the second cohort of its Grove program, a five-week initiative designed for founders at various stages, from pre-idea to product development. Participants will receive $50,000 in API credits, early access to cutting-edge AI tools, and personalized mentorship from the OpenAI team. This program aims to foster innovation and accelerate the development of AI-driven solutions across industries. Entrepreneurs and developers interested in advancing their AI projects should consider applying to leverage these resources and expertise, positioning themselves at the forefront of AI innovation.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/openai-grove"
-        },
-        {
-            "date": "Jan 02 2026",
-            "title": "Proactive AI Supply Chain Visibility Essential to Avoid Breaches",
-            "content": "With predictions that 40% of enterprise applications will incorporate task-specific AI agents this year, the urgency for AI supply chain visibility has never been greater. Despite this, Stanford University&#x27;s 2025 Index Report reveals only 6% of organizations have an advanced AI security strategy. Palo Alto Networks warns that 2026 could see the first major lawsuits related to AI supply chain breaches. Companies must proactively implement comprehensive AI security frameworks to mitigate risks and avoid potential legal and financial repercussions. Security professionals should focus on enhancing visibility and accountability within their AI supply chains.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/security/seven-steps-to-ai-supply-chain-visibility"
-        },
-        {
-            "date": "Jan 02 2026",
-            "title": "Notion AI&#x27;s Breakthrough: Simplifying Complex AI Systems",
-            "content": "Notion AI has achieved a significant breakthrough by simplifying its approach to large language models (LLMs) and agentic AI. Initially relying on complex code generation and data modeling, the team discovered that reducing complexity led to more effective and scalable solutions. This shift underscores the importance of simplicity in AI development, allowing engineers to focus on core functionalities rather than intricate schemas. Developers should consider reevaluating their AI strategies to streamline processes and enhance efficiency, drawing lessons from Notion&#x27;s successful simplification efforts.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/infrastructure/why-notions-biggest-ai-breakthrough-came-from-simplifying-everything"
-        },
-        {
-            "date": "Jan 01 2026",
-            "title": "European Banks to Cut 200,000 Jobs Amid AI Integration",
-            "content": "European banks are planning to eliminate 200,000 jobs, primarily in back-office operations, risk management, and compliance, as artificial intelligence becomes more integrated into their systems. This significant reduction highlights the growing impact of AI automation on traditional job roles within the financial sector. While AI offers efficiency and cost savings, the workforce displacement poses challenges for employees and industry leaders. Banking professionals should prepare for this transition by upskilling in AI-related technologies and exploring new career opportunities within the evolving financial landscape.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/01/european-banks-plan-to-cut-200000-jobs-as-ai-takes-hold/"
-        },
-        {
-            "date": "Jan 01 2026",
-            "title": "OpenAI&#x27;s Audio Focus Signals Shift Away from Screen-Based Interfaces",
-            "content": "OpenAI is making a strategic bet on audio technology, aligning with Silicon Valley&#x27;s broader move away from screen-dependent interfaces. This shift emphasizes audio as the future interface, transforming spaces like homes, cars, and personal devices into interactive environments. As audio technology advances, it presents opportunities for developers to create innovative voice-activated applications and services. Tech leaders should explore the potential of audio interfaces to enhance user experiences and drive engagement, staying ahead in an increasingly voice-driven digital world.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/01/openai-bets-big-on-audio-as-silicon-valley-declares-war-on-screens/"
+            "date": "Jan 03 2026",
+            "title": "Tech Billionaires Cash Out Amid Stock Market Surge",
+            "content": "In 2025, tech billionaires collectively sold $16 billion worth of stock as market valuations soared, with Jeff Bezos leading the pack. Bezos offloaded 25 million Amazon shares, netting $5.7 billion during June and July, coinciding with his marriage to Lauren Sanchez in Venice. This trend underscores a significant shift in billionaire investment strategies, as they capitalize on favorable market conditions. The sales highlight the ongoing volatility and rapid growth in the tech sector, which continues to attract substantial investor interest. Industry professionals should monitor these movements as they can signal shifts in market dynamics and potential opportunities for investment.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/03/tech-billionaires-cashed-out-16-billion-in-2025-as-stocks-soared/"
         },
         {
             "date": "Jan 03 2026",
-            "title": "Nvidia&#x27;s Strategic Shift Signals the End of General-Purpose GPUs",
-            "content": "Nvidia has announced a $20 billion strategic licensing deal with Groq, marking a pivotal shift away from general-purpose GPUs toward more specialized AI hardware. This move highlights the growing complexity of the AI stack, which is becoming increasingly tailored to specific applications. As enterprises build next-generation AI systems, they must consider the implications of this transition on their infrastructure and investment strategies. Nvidia&#x27;s decision underscores a broader industry trend towards optimizing hardware for AI workloads, potentially impacting data centers and cloud providers. Technical decision-makers should evaluate their current GPU deployments and prepare for a future where specialized hardware plays a dominant role.",
+            "title": "Rethinking API Interactions in the Era of Large Language Models",
+            "content": "The traditional approach of querying APIs is being challenged by the rise of large language models (LLMs), which demand a new interaction paradigm. Historically, developers adapted to software by memorizing commands and integrating SDKs, but LLMs like GPT-4 and beyond offer more intuitive interfaces. This shift suggests a move towards more natural language processing (NLP) capabilities, reducing the need for technical fluency in specific programming languages. As LLMs become more prevalent, developers and companies must adapt, focusing on leveraging these models to streamline operations and enhance user experiences. Understanding this transition is crucial for tech leaders aiming to stay competitive in an evolving landscape.",
             "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/infrastructure/inference-is-splitting-in-two-nvidias-usd20b-groq-bet-explains-its-next-act"
+            "sourceUrl": "https://venturebeat.com/orchestration/why-which-api-do-i-call-is-the-wrong-question-in-the-llm-era"
+        },
+        {
+            "date": "Jan 03 2026",
+            "title": "AI-Generated Disinformation Surges Post-Maduro Capture",
+            "content": "Following the capture of Venezuelan leader Nicolás Maduro by the US, social media platforms have been inundated with disinformation, much of it seemingly AI-generated. Platforms like TikTok, Instagram, and X have struggled to contain the spread of misleading content, including doctored videos and repurposed footage. This incident highlights the growing challenge of moderating AI-generated media and its potential to influence public perception during geopolitical events. Professionals in cybersecurity and media must enhance detection and response strategies to combat such disinformation. The situation underscores the urgent need for robust AI governance and content verification systems.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/disinformation-floods-social-media-after-nicolas-maduros-capture/"
+        },
+        {
+            "date": "Jan 03 2026",
+            "title": "AI Chatbots Struggle with Breaking News on Venezuela",
+            "content": "The recent US invasion of Venezuela and the capture of Nicolás Maduro have exposed inconsistencies in AI chatbots&#x27; ability to process breaking news. While some models effectively assimilate real-time events, others fail to provide accurate information, reflecting disparities in AI training and data sources. This inconsistency raises concerns about the reliability of AI for real-time news dissemination. Developers and companies using AI for news-related applications must prioritize training models on diverse and up-to-date datasets. Ensuring accuracy in AI-driven news delivery is critical to maintaining public trust and informed decision-making.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/us-invaded-venezuela-and-captured-nicolas-maduro-chatgpt-disagrees/"
+        },
+        {
+            "date": "Jan 02 2026",
+            "title": "Privacy Concerns as xAI&#x27;s Grok Alters Images Without Consent",
+            "content": "xAI&#x27;s Grok has sparked controversy by enabling users to remove clothing from images without consent, raising significant privacy and ethical concerns. This feature, recently introduced on the X platform, allows users to edit images without notifying the original poster. The tool&#x27;s misuse could lead to severe privacy violations, particularly affecting minors and vulnerable individuals. This incident highlights the pressing need for stringent content moderation and ethical guidelines in AI development. Tech companies must prioritize user consent and privacy to prevent exploitation and misuse of AI technologies.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/news/853191/grok-explicit-bikini-pictures-minors"
+        },
+        {
+            "date": "Jan 02 2026",
+            "title": "India Demands Action from X on Grok&#x27;s Inappropriate Content",
+            "content": "India&#x27;s IT ministry has issued a 72-hour ultimatum to X, demanding a report on actions taken to address Grok&#x27;s obscene AI-generated content. This follows public outcry over Grok&#x27;s ability to undress individuals in images without consent. The directive underscores the Indian government&#x27;s commitment to regulating AI content and protecting digital privacy. Companies operating in India must comply with local regulations to avoid legal repercussions and maintain user trust. This situation serves as a reminder of the global challenges in moderating AI-generated content and the need for proactive measures to ensure ethical AI use.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/02/india-orders-musks-x-to-fix-grok-over-obscene-ai-content/"
+        },
+        {
+            "date": "Jan 02 2026",
+            "title": "Mercor&#x27;s Role in AI&#x27;s Transformation of the Workforce",
+            "content": "Mercor, a three-year-old startup, has emerged as a key player in AI&#x27;s data-driven transformation of the workforce, achieving a $10 billion valuation. The company facilitates knowledge transfer by connecting AI labs, such as OpenAI and Anthropic, with industry experts from Goldman Sachs and McKinsey, offering up to $200 per hour for their insights. This model reflects the increasing value of domain expertise in training sophisticated AI systems. As AI continues to reshape industries, professionals must adapt by leveraging their expertise in collaboration with AI technologies. Understanding this dynamic is essential for staying relevant in a rapidly evolving job market.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/podcast/how-ai-is-reshaping-work-and-who-gets-to-do-it-according-to-mercors-ceo/"
         }
     ],
     "articles": {},
