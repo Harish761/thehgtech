@@ -147,11 +147,6 @@
             </a>
         `).join('');
 
-        // Build source link with nofollow ugc for external attribution
-        const sourceHTML = item.sourceUrl
-            ? `<a href="${escapeHTML(item.sourceUrl)}" target="_blank" rel="nofollow ugc noopener noreferrer">${escapeHTML(item.source)}</a>`
-            : escapeHTML(item.source);
-
         return `
             <div class="threat-brief-featured ${isAI ? 'ai-featured' : ''}" data-index="${index}" data-type="${type}" onclick="openNewsModal(${index}, '${type}')">
                 <div class="featured-badge">
@@ -178,8 +173,8 @@
                 </div>
                 ` : ''}
                 
-                <div class="source-attribution" onclick="event.stopPropagation()">
-                    <span>Source: ${sourceHTML}</span>
+                <div class="source-attribution">
+                    <span>Source: ${escapeHTML(item.source)}</span>
                 </div>
             </div>
         `;
@@ -204,11 +199,6 @@
             </a>
         `).join('');
 
-        // Build source link with nofollow ugc
-        const sourceHTML = item.sourceUrl
-            ? `<a href="${escapeHTML(item.sourceUrl)}" target="_blank" rel="nofollow ugc noopener noreferrer">${escapeHTML(item.source)}</a>`
-            : escapeHTML(item.source);
-
         return `
             <div class="intel-card category-${category}" data-index="${index}" data-type="${type}" onclick="openNewsModal(${index}, '${type}')">
                 <div class="category-badge">
@@ -225,8 +215,8 @@
                 </div>
                 ` : ''}
                 
-                <div class="source-attribution" onclick="event.stopPropagation()">
-                    <span>src: ${sourceHTML}</span>
+                <div class="source-attribution">
+                    <span>src: ${escapeHTML(item.source)}</span>
                 </div>
             </div>
         `;
