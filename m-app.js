@@ -239,6 +239,34 @@
             document.body.appendChild(modal);
         }
 
+        // Build related links using client-side detection
+        let relatedHTML = '';
+        if (window.detectNewsCategory && window.getNewsRelatedLinks) {
+            const newsCategory = window.detectNewsCategory(item.title || '', item.content || '');
+            const relatedLinks = window.getNewsRelatedLinks(newsCategory);
+
+            if (relatedLinks && relatedLinks.length > 0) {
+                const linksHTML = relatedLinks.map(link => `
+                    <a href="${escapeHTMLBasic(link.url)}" class="m-related-link">
+                        <i class="fas ${escapeHTMLBasic(link.icon || 'fa-link')}"></i>
+                        ${escapeHTMLBasic(link.label)}
+                    </a>
+                `).join('');
+
+                relatedHTML = `
+                    <div class="m-related-resources">
+                        <div class="m-related-title">
+                            <i class="fas fa-link"></i>
+                            Related on TheHGTech
+                        </div>
+                        <div class="m-related-links">
+                            ${linksHTML}
+                        </div>
+                    </div>
+                `;
+            }
+        }
+
         modal.innerHTML = `
             <div class="m-news-modal__backdrop" onclick="closeNewsDetail()"></div>
             <div class="m-news-modal__content">
@@ -253,10 +281,10 @@
                 <div class="m-news-modal__body">
                     <p>${escapeHTMLBasic(item.content || '')}</p>
                 </div>
-                <a href="${item.sourceUrl || '#'}" target="_blank" rel="noopener" class="m-news-modal__link">
-                    <i class="fas fa-external-link-alt"></i>
-                    Read on ${escapeHTMLBasic(item.source || 'Source')}
-                </a>
+                ${relatedHTML}
+                <div class="m-news-modal__footer">
+                    <span class="m-news-modal__source-text">Source: ${escapeHTMLBasic(item.source || '')}</span>
+                </div>
             </div>
         `;
 
@@ -769,6 +797,67 @@
                 transform: scale(0.98);
             }
             
+            /* Related Links in Mobile Modal */
+            .m-related-resources {
+                background: rgba(0, 217, 255, 0.05);
+                border: 1px solid rgba(0, 217, 255, 0.2);
+                border-radius: 12px;
+                padding: 16px;
+                margin-bottom: 20px;
+            }
+            
+            .m-related-title {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                font-size: 0.75rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                color: #00D9FF;
+                margin-bottom: 12px;
+            }
+            
+            .m-related-links {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .m-related-link {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding: 12px 16px;
+                background: rgba(0, 217, 255, 0.1);
+                border: 1px solid rgba(0, 217, 255, 0.3);
+                border-radius: 10px;
+                color: #00D9FF;
+                font-size: 0.9rem;
+                font-weight: 500;
+                text-decoration: none;
+            }
+            
+            .m-related-link:active {
+                background: rgba(0, 217, 255, 0.2);
+            }
+            
+            .m-related-link i {
+                font-size: 0.85rem;
+            }
+            
+            /* Source Footer */
+            .m-news-modal__footer {
+                text-align: center;
+                padding-top: 16px;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            
+            .m-news-modal__source-text {
+                color: rgba(255, 255, 255, 0.4);
+                font-size: 0.75rem;
+            }
+            
             /* Light mode modal */
             .light-mode .m-news-modal__content {
                 background: #fff;
@@ -785,6 +874,25 @@
             .light-mode .m-news-modal__close {
                 background: rgba(0, 0, 0, 0.1);
                 color: #333;
+            }
+            
+            .light-mode .m-related-resources {
+                background: rgba(0, 180, 220, 0.05);
+                border-color: rgba(0, 180, 220, 0.2);
+            }
+            
+            .light-mode .m-related-link {
+                background: rgba(0, 180, 220, 0.1);
+                border-color: rgba(0, 180, 220, 0.3);
+                color: #0099cc;
+            }
+            
+            .light-mode .m-news-modal__footer {
+                border-top-color: rgba(0, 0, 0, 0.1);
+            }
+            
+            .light-mode .m-news-modal__source-text {
+                color: rgba(0, 0, 0, 0.4);
             }
         }
     `;
