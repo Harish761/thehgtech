@@ -1,0 +1,489 @@
+{
+    "version": "1.0",
+    "lastUpdated": "2026-01-03",
+    "description": "Internal content index for news entity matching",
+    "categories": {
+        "ransomware_groups": {
+            "description": "Known ransomware groups tracked on TheHGTech",
+            "primaryUrl": "/ransomware-tracker.html",
+            "entities": [
+                "lockbit",
+                "alphv",
+                "blackcat",
+                "qilin",
+                "akira",
+                "clop",
+                "hive",
+                "conti",
+                "rhysida",
+                "medusa",
+                "play",
+                "bianlian",
+                "royal",
+                "cuba",
+                "ragnar locker",
+                "daixin",
+                "vice society",
+                "black basta",
+                "8base",
+                "cactus",
+                "hunters international",
+                "phobos",
+                "trigona",
+                "snatch",
+                "everest",
+                "blacksuit",
+                "meow",
+                "monti",
+                "inc ransom",
+                "cicada3301",
+                "noname",
+                "babuk",
+                "avaddon",
+                "revil",
+                "darkside",
+                "nefilim",
+                "gentlemen"
+            ]
+        },
+        "cve_tracker": {
+            "description": "CVE vulnerability tracking",
+            "primaryUrl": "/cve-tracker.html",
+            "keywords": [
+                "cve-",
+                "vulnerability",
+                "exploit",
+                "zero-day",
+                "0-day",
+                "rce",
+                "remote code execution",
+                "arbitrary code",
+                "code injection",
+                "sql injection",
+                "xss",
+                "csrf",
+                "ssrf",
+                "buffer overflow",
+                "heap overflow",
+                "use-after-free",
+                "privilege escalation",
+                "authentication bypass",
+                "security flaw",
+                "critical flaw"
+            ]
+        },
+        "threat_intel": {
+            "description": "Threat intelligence hub",
+            "primaryUrl": "/threat-intel.html",
+            "keywords": [
+                "ioc",
+                "indicator of compromise",
+                "threat intelligence",
+                "apt",
+                "nation-state",
+                "threat actor",
+                "campaign",
+                "c2",
+                "command and control",
+                "malware",
+                "botnet",
+                "trojan",
+                "backdoor",
+                "stealer",
+                "infostealer"
+            ]
+        }
+    },
+    "guides": [
+        {
+            "url": "/guides/ransomware-response-playbook.html",
+            "title": "Ransomware Response Playbook",
+            "keywords": [
+                "ransomware",
+                "incident response",
+                "recovery",
+                "ransom",
+                "decrypt",
+                "backup",
+                "containment"
+            ],
+            "icon": "fa-biohazard"
+        },
+        {
+            "url": "/guides/cve-prioritization-patch-management.html",
+            "title": "CVE Prioritization Guide",
+            "keywords": [
+                "cve",
+                "patch",
+                "vulnerability",
+                "cvss",
+                "epss",
+                "prioritization",
+                "remediation"
+            ],
+            "icon": "fa-bug"
+        },
+        {
+            "url": "/guides/threat-hunting-techniques.html",
+            "title": "Threat Hunting Guide",
+            "keywords": [
+                "threat hunting",
+                "detection",
+                "investigation",
+                "forensics",
+                "analysis"
+            ],
+            "icon": "fa-crosshairs"
+        },
+        {
+            "url": "/guides/incident-response-automation.html",
+            "title": "Incident Response Automation",
+            "keywords": [
+                "incident response",
+                "soar",
+                "automation",
+                "playbook",
+                "orchestration"
+            ],
+            "icon": "fa-bolt"
+        },
+        {
+            "url": "/guides/zero-day-detection.html",
+            "title": "Zero-Day Detection Guide",
+            "keywords": [
+                "zero-day",
+                "0-day",
+                "detection",
+                "exploit",
+                "unknown threat"
+            ],
+            "icon": "fa-exclamation-triangle"
+        },
+        {
+            "url": "/guides/siem-log-analysis.html",
+            "title": "SIEM & Log Analysis Guide",
+            "keywords": [
+                "siem",
+                "log",
+                "analysis",
+                "splunk",
+                "elastic",
+                "detection"
+            ],
+            "icon": "fa-chart-bar"
+        },
+        {
+            "url": "/guides/phishing-simulation-security-awareness.html",
+            "title": "Phishing & Security Awareness",
+            "keywords": [
+                "phishing",
+                "social engineering",
+                "awareness",
+                "email",
+                "credential"
+            ],
+            "icon": "fa-fish"
+        },
+        {
+            "url": "/guides/active-directory-security-hardening.html",
+            "title": "Active Directory Security",
+            "keywords": [
+                "active directory",
+                "ad",
+                "ldap",
+                "kerberos",
+                "domain",
+                "windows"
+            ],
+            "icon": "fa-sitemap"
+        },
+        {
+            "url": "/guides/cloud-security-hardening.html",
+            "title": "Cloud Security Hardening",
+            "keywords": [
+                "cloud",
+                "aws",
+                "azure",
+                "gcp",
+                "s3",
+                "iam",
+                "misconfiguration"
+            ],
+            "icon": "fa-cloud"
+        },
+        {
+            "url": "/guides/network-segmentation-zero-trust.html",
+            "title": "Network Segmentation & Zero Trust",
+            "keywords": [
+                "zero trust",
+                "segmentation",
+                "network",
+                "ztna",
+                "microsegmentation"
+            ],
+            "icon": "fa-project-diagram"
+        },
+        {
+            "url": "/guides/container-security.html",
+            "title": "Container Security Guide",
+            "keywords": [
+                "container",
+                "docker",
+                "kubernetes",
+                "k8s",
+                "pod",
+                "image"
+            ],
+            "icon": "fa-cube"
+        },
+        {
+            "url": "/guides/api-security-best-practices.html",
+            "title": "API Security Best Practices",
+            "keywords": [
+                "api",
+                "rest",
+                "oauth",
+                "jwt",
+                "authentication",
+                "rate limiting"
+            ],
+            "icon": "fa-plug"
+        },
+        {
+            "url": "/guides/llm-security-prompt-injection.html",
+            "title": "LLM Security & Prompt Injection",
+            "keywords": [
+                "llm",
+                "prompt injection",
+                "ai",
+                "chatgpt",
+                "gpt",
+                "claude",
+                "jailbreak"
+            ],
+            "icon": "fa-robot"
+        },
+        {
+            "url": "/guides/securing-ai-ml-pipelines.html",
+            "title": "Securing AI/ML Pipelines",
+            "keywords": [
+                "ai",
+                "ml",
+                "machine learning",
+                "pipeline",
+                "model",
+                "training"
+            ],
+            "icon": "fa-brain"
+        },
+        {
+            "url": "/guides/ai-governance-framework.html",
+            "title": "AI Governance Framework",
+            "keywords": [
+                "ai governance",
+                "ai safety",
+                "ai policy",
+                "responsible ai"
+            ],
+            "icon": "fa-balance-scale"
+        },
+        {
+            "url": "/guides/mitre-attack-mapping.html",
+            "title": "MITRE ATT&CK Mapping",
+            "keywords": [
+                "mitre",
+                "attack",
+                "tactics",
+                "techniques",
+                "ttp"
+            ],
+            "icon": "fa-map"
+        },
+        {
+            "url": "/guides/soc-analyst-fundamentals.html",
+            "title": "SOC Analyst Fundamentals",
+            "keywords": [
+                "soc",
+                "analyst",
+                "tier 1",
+                "tier 2",
+                "alert",
+                "triage"
+            ],
+            "icon": "fa-shield-alt"
+        },
+        {
+            "url": "/guides/insider-threat-detection.html",
+            "title": "Insider Threat Detection",
+            "keywords": [
+                "insider threat",
+                "data exfiltration",
+                "employee",
+                "ueba"
+            ],
+            "icon": "fa-user-secret"
+        },
+        {
+            "url": "/guides/third-party-risk-management.html",
+            "title": "Third-Party Risk Management",
+            "keywords": [
+                "third-party",
+                "vendor",
+                "supply chain",
+                "risk",
+                "assessment"
+            ],
+            "icon": "fa-handshake"
+        },
+        {
+            "url": "/guides/penetration-testing-methodology.html",
+            "title": "Penetration Testing Methodology",
+            "keywords": [
+                "pentest",
+                "penetration testing",
+                "red team",
+                "ethical hacking"
+            ],
+            "icon": "fa-user-ninja"
+        },
+        {
+            "url": "/guides/windows-event-log-analysis.html",
+            "title": "Windows Event Log Analysis",
+            "keywords": [
+                "windows",
+                "event log",
+                "security log",
+                "4624",
+                "4625"
+            ],
+            "icon": "fa-windows"
+        },
+        {
+            "url": "/guides/iso-27001-certification-roadmap.html",
+            "title": "ISO 27001 Certification Roadmap",
+            "keywords": [
+                "iso 27001",
+                "certification",
+                "isms",
+                "compliance"
+            ],
+            "icon": "fa-certificate"
+        },
+        {
+            "url": "/guides/nist-csf-2-implementation.html",
+            "title": "NIST CSF 2.0 Implementation",
+            "keywords": [
+                "nist",
+                "csf",
+                "framework",
+                "cybersecurity framework"
+            ],
+            "icon": "fa-check-double"
+        },
+        {
+            "url": "/guides/soc2-compliance-checklist.html",
+            "title": "SOC 2 Compliance Checklist",
+            "keywords": [
+                "soc2",
+                "soc 2",
+                "type 2",
+                "audit",
+                "compliance"
+            ],
+            "icon": "fa-clipboard-check"
+        },
+        {
+            "url": "/guides/dora-compliance.html",
+            "title": "DORA Compliance Guide",
+            "keywords": [
+                "dora",
+                "digital operational resilience",
+                "financial",
+                "eu"
+            ],
+            "icon": "fa-university"
+        }
+    ],
+    "comparisons": [
+        {
+            "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
+            "title": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
+            "keywords": [
+                "edr",
+                "xdr",
+                "crowdstrike",
+                "microsoft defender",
+                "cortex",
+                "palo alto",
+                "endpoint"
+            ],
+            "icon": "fa-shield-virus"
+        },
+        {
+            "url": "/comparisons/splunk-vs-elastic-security-vs-logrhythm.html",
+            "title": "SIEM Comparison: Splunk vs Elastic vs LogRhythm",
+            "keywords": [
+                "siem",
+                "splunk",
+                "elastic",
+                "logrhythm",
+                "log management"
+            ],
+            "icon": "fa-chart-line"
+        }
+    ],
+    "articles": {
+        "products": {
+            "fortinet": "/articles/fortinet-fortigate-critical-exploit-2025.html",
+            "fortigate": "/articles/fortinet-fortigate-critical-exploit-2025.html",
+            "mongodb": "/articles/mongodb-mongobleed-cve-2025-14847.html",
+            "ibm": "/articles/ibm-api-connect-cve-2026.html",
+            "n8n": "/articles/n8n-rce-vulnerability-cve-2025-68613.html",
+            "langchain": "/articles/langchain-cve-2025-68664-ai-vulnerability.html",
+            "react": "/articles/react2shell-cve-2025-55182-react-vulnerability.html",
+            "7-zip": "/articles/7zip-critical-vulnerability.html",
+            "7zip": "/articles/7zip-critical-vulnerability.html",
+            "watchguard": "/articles/watchguard-firebox-zero-day-2025.html",
+            "trustwallet": "/articles/trustwallet-chrome-extension-hack-2025.html"
+        },
+        "threat_groups": {
+            "qilin": "/articles/covenant-health-qilin-ransomware-2026.html",
+            "alphv": "/articles/cybersecurity-pros-guilty-alphv-ransomware-2025.html",
+            "blackcat": "/articles/cybersecurity-pros-guilty-alphv-ransomware-2025.html",
+            "nefilim": "/articles/nefilim-ransomware-operator-guilty-2025.html",
+            "scattered spider": "/articles/scattered-spider-teen-hacker-115-million.html",
+            "gentlemen": "/articles/gentlemen-ransomware-threat-2025.html"
+        },
+        "attack_types": {
+            "phishing": "/articles/harvard-phone-phishing-breach-2025.html",
+            "social engineering": "/articles/clickfix-social-engineering-2026.html",
+            "clickfix": "/articles/clickfix-social-engineering-2026.html"
+        }
+    },
+    "aptGroups": [
+        "lazarus",
+        "apt28",
+        "fancy bear",
+        "apt29",
+        "cozy bear",
+        "sandworm",
+        "kimsuky",
+        "apt41",
+        "winnti",
+        "charming kitten",
+        "apt33",
+        "apt34",
+        "oilrig",
+        "turla",
+        "gamaredon",
+        "mustang panda",
+        "scattered spider",
+        "lapsus$",
+        "blacktech",
+        "volt typhoon",
+        "salt typhoon"
+    ],
+    "cvePatterns": [
+        "CVE-\\d{4}-\\d{4,7}"
+    ]
+}
