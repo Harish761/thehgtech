@@ -10,7 +10,7 @@
     --border-color: rgba(255, 255, 255, 0.1);
 
     /* Gradients - Red/Cyan Theme */
-    --gradient-primary: linear-gradient(135deg, #FF3D3D 0%, #FF6B6B 100%);
+    --gradient-primary: linear-gradient(135deg, #FF3D3D 0%, #FF5555 100%);
     --gradient-secondary: linear-gradient(135deg, #00D9FF 0%, #00F2FE 100%);
     --gradient-success: linear-gradient(135deg, #10b981 0%, #38ef7d 100%);
     --gradient-warning: linear-gradient(135deg, #f59e0b 0%, #f5576c 100%);

@@ -17,8 +17,8 @@
     --m-text-tertiary: rgba(255, 255, 255, 0.5);
 
     --m-accent-primary: #00D9FF;
-    --m-accent-secondary: #FF4C4C;
-    --m-accent-gradient: linear-gradient(135deg, #00D9FF, #FF4C4C);
+    --m-accent-secondary: #FF3D3D;
+    --m-accent-gradient: linear-gradient(135deg, #00D9FF, #FF3D3D);
 
     --m-border: rgba(255, 255, 255, 0.1);
     --m-border-strong: rgba(255, 255, 255, 0.2);

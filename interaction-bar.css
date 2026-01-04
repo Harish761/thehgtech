@@ -150,7 +150,7 @@
 .print-btn:hover {
     background: rgba(102, 126, 234, 0.2);
     border-color: rgba(102, 126, 234, 0.4);
-    color: #667eea;
+    color: #3B82F6;
 }
 
 .print-btn i {
@@ -204,7 +204,7 @@ body.light-mode .print-btn {
 body.light-mode .print-btn:hover {
     background: rgba(102, 126, 234, 0.15);
     border-color: rgba(102, 126, 234, 0.4);
-    color: #667eea;
+    color: #3B82F6;
 }
 
 /* Responsive */

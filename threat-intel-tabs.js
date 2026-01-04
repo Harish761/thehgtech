@@ -267,7 +267,7 @@
         tab.innerHTML = `
             <div class="section-header">
                 <h2><span class="icon">🔒</span> Ransomware Tracker</h2>
-                <div style="background: rgba(255, 76, 76, 0.1); border-left: 4px solid #FF4C4C; padding: 1rem; border-radius: 8px; margin-top: 0.5rem; display: flex; align-items: center; gap: 0.75rem;">
+                <div style="background: rgba(255, 76, 76, 0.1); border-left: 4px solid #FF3D3D; padding: 1rem; border-radius: 8px; margin-top: 0.5rem; display: flex; align-items: center; gap: 0.75rem;">
                     <span style="font-size: 1.2rem;">ℹ️</span>
                     <p class="section-subtitle" style="margin: 0; color: var(--text-primary); font-size: 0.9rem;">
                         <strong>Live Intelligence:</strong> Monitoring active ransomware campaigns from dark web leak sites (Last 7 Days). Data aggregated from Ransomware.live API & RSS feeds.
@@ -645,7 +645,7 @@
                     labels: Object.keys(stats.byType),
                     datasets: [{
                         data: Object.values(stats.byType),
-                        backgroundColor: ['#FF3D3D', '#00D9FF', '#10b981', '#f59e0b', '#ec4899']
+                        backgroundColor: ['#FF3D3D', '#00D9FF', '#10b981', '#f59e0b', '#FF3D3D']
                     }]
                 },
                 options: {

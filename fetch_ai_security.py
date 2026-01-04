@@ -412,7 +412,7 @@ def generate_top_threats(ioc_campaigns, ai_data):
                 'source': 'AIID',
                 'details': incident['date'],
                 'icon': 'robot',
-                'color': '#9d4edd'
+                'color': '#3B82F6'
             })
     
     # 3. Add trending ATLAS techniques (based on incident mentions)

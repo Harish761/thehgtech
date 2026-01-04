@@ -104,7 +104,7 @@ function createAnalyticsSummary(metrics) {
     // IOC Type Breakdown
     const typeCard = createAnalyticsCard('IOC Type Distribution', [
         { label: 'Phishing URLs', value: metrics.iocTypes.urls, color: '#FF9500' },
-        { label: 'Malware Hashes', value: metrics.iocTypes.hashes, color: '#FF4C4C' },
+        { label: 'Malware Hashes', value: metrics.iocTypes.hashes, color: '#FF3D3D' },
         { label: 'Malicious IPs', value: metrics.iocTypes.ips, color: '#FFD60A' },
         { label: 'Hijacked Networks', value: metrics.iocTypes.networks, color: '#00D9FF' }
     ]);
@@ -112,7 +112,7 @@ function createAnalyticsSummary(metrics) {
 
     // Severity Breakdown
     const severityCard = createAnalyticsCard('Threat Severity', [
-        { label: 'Critical', value: metrics.severity.critical, color: '#FF4C4C' },
+        { label: 'Critical', value: metrics.severity.critical, color: '#FF3D3D' },
         { label: 'High', value: metrics.severity.high, color: '#FF9500' },
         { label: 'Medium', value: metrics.severity.medium, color: '#FFD60A' },
         { label: 'Low', value: metrics.severity.low, color: '#30D158' }
@@ -122,7 +122,7 @@ function createAnalyticsSummary(metrics) {
     // Attack Vectors
     const vectorCard = createAnalyticsCard('Attack Vectors', [
         { label: 'Phishing', value: metrics.attackVectors.phishing, color: '#FF9500' },
-        { label: 'Malware', value: metrics.attackVectors.malware, color: '#FF4C4C' },
+        { label: 'Malware', value: metrics.attackVectors.malware, color: '#FF3D3D' },
         { label: 'Network', value: metrics.attackVectors.network, color: '#FFD60A' },
         { label: 'C2/Botnet', value: metrics.attackVectors.c2, color: '#00D9FF' }
     ]);

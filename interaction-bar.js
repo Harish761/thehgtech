@@ -127,7 +127,7 @@ function showCopyFeedback() {
     copyBtn.innerHTML = '<i class="fas fa-check"></i>';
     copyBtn.style.background = 'rgba(0, 255, 136, 0.15)';
     copyBtn.style.borderColor = 'rgba(0, 255, 136, 0.4)';
-    copyBtn.style.color = '#00FF88';
+    copyBtn.style.color = '#22C55E';
 
     setTimeout(() => {
         copyBtn.innerHTML = originalIcon;

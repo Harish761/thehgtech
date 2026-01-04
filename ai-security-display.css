@@ -3,9 +3,9 @@
    =============================================== */
 
 :root {
-    --ai-purple: #9d4edd;
+    --ai-blue: #3B82F6;
     --ai-orange: #ff9500;
-    --ai-pink: #ff006e;
+    --ai-red: #FF3D3D;
     --ai-blue: #3a86ff;
     --glow-purple: rgba(157, 78, 221, 0.4);
     --glow-orange: rgba(255, 149, 0, 0.4);
@@ -63,13 +63,13 @@
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(90deg, var(--ai-purple), var(--ai-orange));
+    background: linear-gradient(90deg, var(--ai-blue), var(--ai-orange));
 }
 
 .ai-stat-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 40px rgba(157, 78, 221, 0.2);
-    border-color: var(--ai-purple);
+    border-color: var(--ai-blue);
 }
 
 .ai-stat-card .stat-icon {
@@ -171,7 +171,7 @@
 }
 
 .threats-tab-btn.active[data-threats-tab="ai"] {
-    background: linear-gradient(135deg, var(--ai-purple), var(--ai-pink));
+    background: linear-gradient(135deg, var(--ai-blue), var(--ai-red));
     color: white;
     box-shadow: 0 4px 15px rgba(157, 78, 221, 0.3);
 }
@@ -237,7 +237,7 @@
 }
 
 .threat-rank.critical {
-    background: linear-gradient(135deg, #ff4c4c, #ff0066);
+    background: linear-gradient(135deg, #FF3D3D, #ff0066);
     color: white;
 }
 
@@ -343,7 +343,7 @@
 .atlas-card:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 30px rgba(157, 78, 221, 0.2);
-    border-color: var(--ai-purple);
+    border-color: var(--ai-blue);
     background: linear-gradient(135deg, rgba(157, 78, 221, 0.15), rgba(58, 134, 255, 0.08));
 }
 
@@ -357,7 +357,7 @@
 .atlas-id {
     font-family: 'Fira Code', 'SF Mono', monospace;
     font-size: 0.8rem;
-    color: var(--ai-purple);
+    color: var(--ai-blue);
     background: rgba(157, 78, 221, 0.15);
     padding: 0.3rem 0.6rem;
     border-radius: 6px;
@@ -386,7 +386,7 @@
 
 .priority-badge.critical {
     background: linear-gradient(135deg, rgba(255, 61, 61, 0.3), rgba(255, 0, 110, 0.3));
-    color: #ff6b6b;
+    color: #FF5555;
     animation: criticalPulse 2s ease-in-out infinite;
 }
 
@@ -426,7 +426,7 @@
 
 .atlas-subtitle {
     font-size: 0.8rem;
-    color: var(--ai-purple);
+    color: var(--ai-blue);
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -446,7 +446,7 @@
 
 .atlas-severity.high {
     background: rgba(255, 76, 76, 0.2);
-    color: #ff6b6b;
+    color: #FF5555;
 }
 
 .atlas-severity.medium {
@@ -485,7 +485,7 @@
 
 .atlas-link {
     font-size: 0.8rem;
-    color: var(--ai-purple);
+    color: var(--ai-blue);
     font-weight: 500;
 }
 
@@ -606,7 +606,7 @@
 
 .incident-severity.critical {
     background: rgba(255, 0, 60, 0.2);
-    color: #ff4c4c;
+    color: #FF3D3D;
 }
 
 .incident-severity.high {
@@ -722,7 +722,7 @@
 
 .owasp-severity.critical {
     background: rgba(255, 76, 76, 0.2);
-    color: #ff6b6b;
+    color: #FF5555;
 }
 
 .owasp-severity.high {
@@ -783,7 +783,7 @@
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    color: var(--ai-purple);
+    color: var(--ai-blue);
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 500;
@@ -796,7 +796,7 @@
 
 .view-all-link a:hover {
     background: rgba(157, 78, 221, 0.2);
-    border-color: var(--ai-purple);
+    border-color: var(--ai-blue);
     transform: translateY(-2px);
 }
 
@@ -847,7 +847,7 @@
 }
 
 .ai-tab-btn.active {
-    background: linear-gradient(135deg, var(--ai-purple), var(--ai-pink));
+    background: linear-gradient(135deg, var(--ai-blue), var(--ai-red));
     border-color: transparent;
     color: white;
     box-shadow: 0 4px 15px rgba(157, 78, 221, 0.3);
@@ -930,7 +930,7 @@
     width: 40px;
     height: 40px;
     border: 3px solid rgba(157, 78, 221, 0.3);
-    border-top-color: var(--ai-purple);
+    border-top-color: var(--ai-blue);
     border-radius: 50%;
     animation: spin 1s linear infinite;
     margin-bottom: 1rem;
@@ -1141,7 +1141,7 @@ body.light-mode .threat-name {
 }
 
 .ai-modal-section h3 i {
-    color: var(--ai-purple);
+    color: var(--ai-blue);
     font-size: 0.85rem;
 }
 
@@ -1175,7 +1175,7 @@ body.light-mode .threat-name {
 .severity-badge.critical,
 .severity-badge.high {
     background: rgba(255, 61, 61, 0.2);
-    color: #ff6b6b;
+    color: #FF5555;
 }
 
 .severity-badge.medium {
@@ -1218,7 +1218,7 @@ body.light-mode .threat-name {
 }
 
 .ai-modal-list.examples li::marker {
-    color: #ff6b6b;
+    color: #FF5555;
 }
 
 .ai-modal-list.prevention li::marker {
@@ -1242,7 +1242,7 @@ body.light-mode .threat-name {
 
 .ai-modal-tags .tag.harm {
     background: rgba(255, 61, 61, 0.15);
-    color: #ff6b6b;
+    color: #FF5555;
     border-color: rgba(255, 61, 61, 0.3);
 }
 
@@ -1259,7 +1259,7 @@ body.light-mode .threat-name {
 }
 
 .ai-modal-info i {
-    color: var(--ai-purple);
+    color: var(--ai-blue);
     font-size: 1rem;
 }
 
@@ -1315,7 +1315,7 @@ body.light-mode .threat-name {
 }
 
 .ai-modal-btn.primary {
-    background: linear-gradient(135deg, var(--ai-purple), var(--ai-pink));
+    background: linear-gradient(135deg, var(--ai-blue), var(--ai-red));
     color: #fff;
     flex: 1;
     justify-content: center;

@@ -5,7 +5,7 @@
 
 :root {
     --hero-accent: #00d9ff;
-    --hero-accent-2: #ff006e;
+    --hero-accent-2: #FF3D3D;
     --hero-accent-3: #7b2cbf;
     --hero-dark-bg: #0a0a0f;
 }
@@ -131,7 +131,7 @@
 .threat-dot {
     width: 8px;
     height: 8px;
-    background: #ff006e;
+    background: #FF3D3D;
     border-radius: 50%;
     animation: pulse 1.5s ease-in-out infinite;
 }
@@ -153,7 +153,7 @@
 .threat-text {
     font-size: 0.75rem;
     font-weight: 600;
-    color: #ff006e;
+    color: #FF3D3D;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -264,7 +264,7 @@
 }
 
 .stat-item.ai-stat:hover {
-    border-color: #9d4edd;
+    border-color: #3B82F6;
     box-shadow: 0 10px 30px rgba(157, 78, 221, 0.2);
 }
 

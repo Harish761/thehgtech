@@ -69,7 +69,7 @@
 
 .ransomware-modal-header h2 {
     margin: 0;
-    color: #FF4C4C;
+    color: #FF3D3D;
     font-size: 1.5rem;
     font-weight: 700;
 }
@@ -93,7 +93,7 @@
 
 .ransomware-modal-close:hover {
     background: rgba(255, 76, 76, 0.2);
-    color: #FF4C4C;
+    color: #FF3D3D;
     transform: rotate(90deg);
 }
 
@@ -129,7 +129,7 @@
 .modal-stat-value {
     font-size: 2rem;
     font-weight: 700;
-    color: #FF4C4C;
+    color: #FF3D3D;
 }
 
 /* Modal Actions Section */
@@ -194,7 +194,7 @@
     padding: 1rem;
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-left: 3px solid #FF4C4C;
+    border-left: 3px solid #FF3D3D;
     border-radius: 8px;
     transition: all 0.2s ease;
 }

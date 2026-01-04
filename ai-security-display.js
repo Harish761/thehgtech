@@ -102,11 +102,11 @@
                     if (b.getAttribute('data-main-tab') === targetTab) {
                         b.style.background = targetTab === 'ioc'
                             ? 'linear-gradient(135deg, var(--accent-cyan), #0066ff)'
-                            : 'linear-gradient(135deg, #9d4edd, #ff006e)';
+                            : 'linear-gradient(135deg, #3B82F6, #FF3D3D)';
                         b.style.color = 'white';
                         b.style.boxShadow = targetTab === 'ioc'
                             ? '0 4px 15px rgba(0, 217, 255, 0.3)'
-                            : '0 4px 15px rgba(157, 78, 221, 0.3)';
+                            : '0 4px 15px rgba(59, 130, 246, 0.3)';
                         b.classList.add('active');
                     } else {
                         b.style.background = 'transparent';
@@ -283,7 +283,7 @@
         container.innerHTML = `
             <div class="ai-stat-card" onclick="document.querySelector('.ai-tab-btn[data-tab=atlas]').click()">
                 <div class="stat-icon atlas">
-                    <i class="fas fa-crosshairs" style="color: #9d4edd;"></i>
+                    <i class="fas fa-crosshairs" style="color: #3B82F6;"></i>
                 </div>
                 <div class="stat-value">${stats.techniques}</div>
                 <div class="stat-label">AI Attack Techniques</div>
@@ -310,7 +310,7 @@
             
             <div class="ai-stat-card">
                 <div class="stat-icon correlation">
-                    <i class="fas fa-project-diagram" style="color: #ff006e;"></i>
+                    <i class="fas fa-project-diagram" style="color: #FF3D3D;"></i>
                 </div>
                 <div class="stat-value">${stats.caseStudies}</div>
                 <div class="stat-label">Case Studies</div>
@@ -439,7 +439,7 @@
                     details: 'Most exploited technique',
                     severity: 'critical',
                     icon: 'fa-syringe',
-                    iconColor: '#9d4edd',
+                    iconColor: '#3B82F6',
                     url: `https://atlas.mitre.org/techniques/${promptInjection.id}`,
                     score: 180
                 });
@@ -835,13 +835,13 @@
         const sourceLink = document.getElementById('aiModalSourceLink');
 
         let iconClass = 'fa-info-circle';
-        let iconColor = '#9d4edd';
+        let iconColor = '#3B82F6';
         let sourceUrl = '#';
         let bodyContent = '';
 
         if (type === 'atlas') {
             iconClass = 'fa-crosshairs';
-            iconColor = '#9d4edd';
+            iconColor = '#3B82F6';
             sourceUrl = `https://atlas.mitre.org/techniques/${data.id}`;
             badge.textContent = data.id;
             badge.className = 'ai-modal-badge atlas';

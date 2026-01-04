@@ -171,7 +171,7 @@ body.light-mode .skeleton-card {
 
 .error-state__icon {
     font-size: 2.5rem;
-    color: #FF4C4C;
+    color: #FF3D3D;
     margin-bottom: 1rem;
 }
 
@@ -182,7 +182,7 @@ body.light-mode .skeleton-card {
 }
 
 .error-state__retry {
-    background: linear-gradient(135deg, #FF4C4C, #ff6b6b);
+    background: linear-gradient(135deg, #FF3D3D, #FF5555);
     color: #fff;
     border: none;
     padding: 0.75rem 1.5rem;

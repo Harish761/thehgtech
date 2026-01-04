@@ -45,7 +45,7 @@ body.light-mode {
     --accent-cyan: #0099cc;
     --accent-red: #cc3333;
     --accent-green: #00aa66;
-    --accent-purple: #7722cc;
+    --accent-blue: #7722cc;
 
     /* Text colors - WCAG AA compliant */
     --text-primary: #1a1a1a;
@@ -70,7 +70,7 @@ body.light-mode h6 {
 }
 
 body.light-mode h1 {
-    background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+    background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -91,7 +91,7 @@ body.light-mode a {
 }
 
 body.light-mode a:hover {
-    color: var(--accent-purple);
+    color: var(--accent-blue);
 }
 
 /* Code blocks */
@@ -168,7 +168,7 @@ body.light-mode .badge-coming-soon {
 
 /* Print button */
 body.light-mode .print-button {
-    background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+    background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
     color: white;
     box-shadow: 0 4px 12px rgba(0, 153, 204, 0.3);
 }

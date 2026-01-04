@@ -117,7 +117,7 @@
 }
 
 .severity-critical {
-    background: linear-gradient(90deg, #FF3D3D, #FF6B6B);
+    background: linear-gradient(90deg, #FF3D3D, #FF5555);
 }
 
 .severity-high {
@@ -154,11 +154,11 @@
 }
 
 .status-online {
-    background: #00FF88;
+    background: #22C55E;
 }
 
 .status-online::before {
-    background: #00FF88;
+    background: #22C55E;
 }
 
 .status-offline {
@@ -217,7 +217,7 @@
 }
 
 .toast-success::before {
-    background: #00FF88;
+    background: #22C55E;
 }
 
 .toast-error::before {

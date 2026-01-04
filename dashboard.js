@@ -230,7 +230,7 @@ function initializeCharts(stats) {
                     '#00D9FF',
                     '#10b981',
                     '#f59e0b',
-                    '#ec4899'
+                    '#FF3D3D'
                 ],
                 borderWidth: 0
             }]

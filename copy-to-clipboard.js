@@ -111,8 +111,8 @@
             // Visual feedback
             copyBtn.innerHTML = '✓';
             copyBtn.style.background = 'rgba(0, 255, 136, 0.2)';
-            copyBtn.style.borderColor = '#00ff88';
-            copyBtn.style.color = '#00ff88';
+            copyBtn.style.borderColor = '#22C55E';
+            copyBtn.style.color = '#22C55E';
 
             setTimeout(() => {
                 copyBtn.innerHTML = '📋';
