@@ -222,6 +222,24 @@
         `;
     }
 
+    // Threat severity scoring for determining featured article
+    const THREAT_SCORES = {
+        zeroday: 10,
+        ransomware: 8,
+        apt: 7,
+        vulnerability: 6,
+        breach: 5,
+        malware: 4,
+        ai: 3,
+        default: 2
+    };
+
+    // Calculate threat score for an item
+    function calculateThreatScore(item) {
+        const category = detectCategory(item.title, item.content);
+        return THREAT_SCORES[category] || 2;
+    }
+
     // Render the full premium news section
     function renderPremiumNews(containerId, items, type) {
         const container = document.getElementById(containerId);
@@ -233,14 +251,33 @@
         const titleClass = isAI ? 'ai-intel' : '';
         const sectionTitle = isAI ? 'AI Security Intel' : 'Threat Intelligence';
 
-        // Featured article (first)
-        const featuredHTML = renderFeaturedCard(items[0], 0, type);
+        // Limit to 10 items max
+        const displayItems = items.slice(0, 10);
 
-        // Grid articles (2-5)
-        const gridItems = items.slice(1, 5);
-        const gridHTML = gridItems.map((item, idx) =>
-            renderIntelCard(item, idx + 1, type)
-        ).join('');
+        // Find the highest-scoring item for featured spot
+        let featuredIndex = 0;
+        let highestScore = 0;
+
+        displayItems.forEach((item, idx) => {
+            const score = calculateThreatScore(item);
+            if (score > highestScore) {
+                highestScore = score;
+                featuredIndex = idx;
+            }
+        });
+
+        // Get featured item and remaining grid items
+        const featuredItem = displayItems[featuredIndex];
+        const gridItems = displayItems.filter((_, idx) => idx !== featuredIndex);
+
+        // Render featured card (highest threat score)
+        const featuredHTML = renderFeaturedCard(featuredItem, featuredIndex, type);
+
+        // Render grid cards (remaining items, up to 9)
+        const gridHTML = gridItems.map((item, idx) => {
+            const originalIndex = idx >= featuredIndex ? idx + 1 : idx;
+            return renderIntelCard(item, originalIndex, type);
+        }).join('');
 
         container.innerHTML = `
             <div class="intel-section ${sectionClass}">
