@@ -141,7 +141,7 @@
         }
 
         const linksHTML = relatedLinks.map(link => `
-            <a href="${link.url}" class="related-link">
+            <a href="${link.url}" class="related-link" onclick="event.stopPropagation()">
                 <i class="fas ${link.icon}"></i>
                 ${link.label}
             </a>

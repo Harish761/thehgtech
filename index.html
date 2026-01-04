@@ -5684,10 +5684,20 @@
             const wordCount = safeContent.replace(/<[^>]*>/g, '').split(/\s+/).length;
             const readingTime = Math.max(1, Math.ceil(wordCount / 200));
 
-            // Build related resources HTML if available
+            // Build related resources HTML - use server-side data if available, else client-side detection
             let relatedHTML = '';
+            let relatedLinks = [];
+
             if (item.relatedResources && Array.isArray(item.relatedResources) && item.relatedResources.length > 0) {
-                const linksHTML = item.relatedResources.map(link => `
+                relatedLinks = item.relatedResources;
+            } else if (window.detectNewsCategory && window.getNewsRelatedLinks) {
+                // Fallback to client-side detection
+                const category = window.detectNewsCategory(item.title || '', item.content || '');
+                relatedLinks = window.getNewsRelatedLinks(category);
+            }
+
+            if (relatedLinks.length > 0) {
+                const linksHTML = relatedLinks.map(link => `
                     <a href="${escapeHTML(link.url)}" class="modal-related-link" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background: rgba(0, 217, 255, 0.1); border: 1px solid rgba(0, 217, 255, 0.3); border-radius: 8px; color: #00D9FF; text-decoration: none; font-size: 0.875rem; transition: all 0.2s;">
                         <i class="fas ${escapeHTML(link.icon || 'fa-link')}"></i>
                         ${escapeHTML(link.label)}
