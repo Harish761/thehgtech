@@ -1,0 +1,653 @@
+/*
+ * Premium News UI - TheHGTech
+ * Feature + Grid Layout with Threat Intelligence Focus
+ */
+
+/* ========================================
+   NEWS SECTION CONTAINER
+   ======================================== */
+
+.intel-section {
+    background: linear-gradient(135deg, rgba(255, 61, 61, 0.02), rgba(0, 217, 255, 0.02));
+    border-radius: 20px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.intel-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.intel-section-title {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.intel-section-title i {
+    color: #FF3D3D;
+}
+
+.intel-section-title.ai-intel i {
+    color: #9d4edd;
+}
+
+.intel-tabs {
+    display: flex;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.intel-tab {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: transparent;
+    color: var(--text-secondary);
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.intel-tab:hover {
+    color: var(--text-primary);
+}
+
+.intel-tab.active {
+    background: rgba(255, 61, 61, 0.2);
+    color: #FF3D3D;
+}
+
+.intel-tab.active.ai {
+    background: rgba(157, 78, 221, 0.2);
+    color: #9d4edd;
+}
+
+/* ========================================
+   FEATURE + GRID LAYOUT
+   ======================================== */
+
+.intel-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+    .intel-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ========================================
+   FEATURED THREAT BRIEF (Large Card)
+   ======================================== */
+
+.threat-brief-featured {
+    background: linear-gradient(135deg, rgba(255, 61, 61, 0.08), rgba(0, 0, 0, 0.4));
+    border: 1px solid rgba(255, 61, 61, 0.3);
+    border-radius: 16px;
+    padding: 1.75rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.threat-brief-featured::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, #FF3D3D, #ff6b6b);
+}
+
+.threat-brief-featured::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 61, 61, 0.05) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.threat-brief-featured:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 40px rgba(255, 61, 61, 0.15);
+    border-color: rgba(255, 61, 61, 0.5);
+}
+
+.threat-brief-featured:hover::after {
+    opacity: 1;
+}
+
+.featured-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.35rem 0.75rem;
+    background: rgba(255, 61, 61, 0.2);
+    border: 1px solid rgba(255, 61, 61, 0.4);
+    border-radius: 6px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #FF3D3D;
+    margin-bottom: 1rem;
+}
+
+.featured-badge::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: #FF3D3D;
+    border-radius: 50%;
+    animation: pulse-dot 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: scale(1.2);
+    }
+}
+
+.threat-brief-featured .threat-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+}
+
+.threat-brief-featured .threat-date {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+.threat-brief-featured .threat-content {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+/* Related Resources Box */
+.related-resources {
+    background: rgba(0, 217, 255, 0.05);
+    border: 1px solid rgba(0, 217, 255, 0.2);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.related-resources-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #00D9FF;
+    margin-bottom: 0.75rem;
+}
+
+.related-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.related-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.4rem 0.75rem;
+    background: rgba(0, 217, 255, 0.1);
+    border: 1px solid rgba(0, 217, 255, 0.3);
+    border-radius: 6px;
+    color: #00D9FF;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.related-link:hover {
+    background: rgba(0, 217, 255, 0.2);
+    transform: translateX(2px);
+}
+
+.related-link i {
+    font-size: 0.7rem;
+}
+
+/* Source Attribution */
+.source-attribution {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.35);
+}
+
+.source-attribution a {
+    color: rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+}
+
+.source-attribution a:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+body.light-mode .source-attribution {
+    color: rgba(0, 0, 0, 0.35);
+    border-top-color: rgba(0, 0, 0, 0.05);
+}
+
+body.light-mode .source-attribution a {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+/* ========================================
+   INTEL GRID (Smaller Cards)
+   ======================================== */
+
+.intel-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .intel-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ========================================
+   INTEL CARD (Small Card)
+   ======================================== */
+
+.intel-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.03), rgba(0, 0, 0, 0.2));
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 1.25rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.intel-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: var(--category-color, rgba(255, 255, 255, 0.2));
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.intel-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.intel-card:hover::before {
+    opacity: 1;
+}
+
+/* Category Colors */
+.intel-card.category-ransomware {
+    --category-color: #FF3D3D;
+}
+
+.intel-card.category-vulnerability {
+    --category-color: #f59e0b;
+}
+
+.intel-card.category-breach {
+    --category-color: #00D9FF;
+}
+
+.intel-card.category-zeroday {
+    --category-color: #ec4899;
+}
+
+.intel-card.category-malware {
+    --category-color: #10b981;
+}
+
+.intel-card.category-apt {
+    --category-color: #8b5cf6;
+}
+
+.intel-card.category-ai {
+    --category-color: #9d4edd;
+}
+
+.intel-card.category-default {
+    --category-color: #64748b;
+}
+
+/* Category Badge */
+.category-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 4px;
+    margin-bottom: 0.75rem;
+}
+
+.intel-card.category-ransomware .category-badge {
+    background: rgba(255, 61, 61, 0.15);
+    color: #FF3D3D;
+}
+
+.intel-card.category-vulnerability .category-badge {
+    background: rgba(245, 158, 11, 0.15);
+    color: #f59e0b;
+}
+
+.intel-card.category-breach .category-badge {
+    background: rgba(0, 217, 255, 0.15);
+    color: #00D9FF;
+}
+
+.intel-card.category-zeroday .category-badge {
+    background: rgba(236, 72, 153, 0.15);
+    color: #ec4899;
+}
+
+.intel-card.category-malware .category-badge {
+    background: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+}
+
+.intel-card.category-apt .category-badge {
+    background: rgba(139, 92, 246, 0.15);
+    color: #8b5cf6;
+}
+
+.intel-card.category-ai .category-badge {
+    background: rgba(157, 78, 221, 0.15);
+    color: #9d4edd;
+}
+
+.intel-card.category-default .category-badge {
+    background: rgba(100, 116, 139, 0.15);
+    color: #94a3b8;
+}
+
+.intel-card .intel-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.intel-card .intel-date {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+}
+
+.intel-card .intel-related {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-bottom: 0.75rem;
+}
+
+.intel-card .intel-related-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.2rem 0.5rem;
+    background: rgba(0, 217, 255, 0.08);
+    border-radius: 4px;
+    color: #00D9FF;
+    font-size: 0.65rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.intel-card .intel-related-link:hover {
+    background: rgba(0, 217, 255, 0.15);
+}
+
+.intel-card .source-attribution {
+    font-size: 0.65rem;
+    padding-top: 0.5rem;
+}
+
+/* ========================================
+   AI SECTION STYLING
+   ======================================== */
+
+.intel-section.ai-section {
+    background: linear-gradient(135deg, rgba(157, 78, 221, 0.02), rgba(0, 217, 255, 0.02));
+}
+
+.threat-brief-featured.ai-featured {
+    background: linear-gradient(135deg, rgba(157, 78, 221, 0.08), rgba(0, 0, 0, 0.4));
+    border-color: rgba(157, 78, 221, 0.3);
+}
+
+.threat-brief-featured.ai-featured::before {
+    background: linear-gradient(180deg, #9d4edd, #c084fc);
+}
+
+.threat-brief-featured.ai-featured:hover {
+    box-shadow: 0 20px 40px rgba(157, 78, 221, 0.15);
+    border-color: rgba(157, 78, 221, 0.5);
+}
+
+.ai-featured .featured-badge {
+    background: rgba(157, 78, 221, 0.2);
+    border-color: rgba(157, 78, 221, 0.4);
+    color: #9d4edd;
+}
+
+.ai-featured .featured-badge::before {
+    background: #9d4edd;
+}
+
+/* ========================================
+   NEWS MODAL (Enhanced)
+   ======================================== */
+
+.news-modal-content {
+    position: relative;
+}
+
+.news-modal-category {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.news-modal-category.ransomware {
+    background: rgba(255, 61, 61, 0.15);
+    color: #FF3D3D;
+}
+
+.news-modal-category.vulnerability {
+    background: rgba(245, 158, 11, 0.15);
+    color: #f59e0b;
+}
+
+.news-modal-content .related-resources {
+    margin-top: 1.5rem;
+}
+
+.news-modal-source {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* ========================================
+   LIGHT MODE
+   ======================================== */
+
+body.light-mode .intel-section {
+    background: linear-gradient(135deg, rgba(255, 61, 61, 0.03), rgba(0, 217, 255, 0.03));
+}
+
+body.light-mode .threat-brief-featured {
+    background: linear-gradient(135deg, rgba(255, 61, 61, 0.05), rgba(255, 255, 255, 0.95));
+    border-color: rgba(255, 61, 61, 0.2);
+}
+
+body.light-mode .intel-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(0, 0, 0, 0.02));
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .intel-card:hover {
+    border-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .related-resources {
+    background: rgba(0, 217, 255, 0.05);
+    border-color: rgba(0, 217, 255, 0.15);
+}
+
+body.light-mode .intel-tabs {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+body.light-mode .intel-tab.active {
+    background: rgba(255, 61, 61, 0.1);
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 768px) {
+    .intel-section {
+        padding: 1.5rem;
+        border-radius: 16px;
+    }
+
+    .intel-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .intel-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .intel-section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .threat-brief-featured .threat-title {
+        font-size: 1.2rem;
+    }
+
+    .related-links {
+        flex-direction: column;
+    }
+
+    .related-link {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Hide desktop news on mobile, show mobile cards instead */
+@media (max-width: 768px) {
+    .intel-section {
+        display: none;
+    }
+}
+
+/* ========================================
+   SKELETON LOADING
+   ======================================== */
+
+.intel-skeleton {
+    animation: skeleton-pulse 1.5s ease-in-out infinite;
+}
+
+.intel-skeleton-title {
+    height: 24px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    margin-bottom: 0.75rem;
+}
+
+.intel-skeleton-text {
+    height: 14px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+@keyframes skeleton-pulse {
+
+    0%,
+    100% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}

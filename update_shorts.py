@@ -25,6 +25,148 @@ client = OpenAI(api_key=os.environ.get('OPENAI_API_KEY'))
 # CISA Known Exploited Vulnerabilities Catalog
 CISA_KEV_URL = 'https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json'
 
+# Content Index for Internal Linking
+CONTENT_INDEX_FILE = 'content-index.json'
+
+def load_content_index():
+    """
+    Load the content index for entity matching.
+    Returns the content index dict or None if not found.
+    """
+    try:
+        if os.path.exists(CONTENT_INDEX_FILE):
+            with open(CONTENT_INDEX_FILE, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        else:
+            print(f"   ⚠️ Content index not found: {CONTENT_INDEX_FILE}")
+            return None
+    except Exception as e:
+        print(f"   ⚠️ Error loading content index: {e}")
+        return None
+
+def match_entities_to_internal_content(title, content, entities=None):
+    """
+    Match extracted entities or text content to internal TheHGTech resources.
+    Returns a list of related resource objects for the news item.
+    
+    Args:
+        title: The news headline
+        content: The news content
+        entities: Optional dict with extracted entities from GPT
+    
+    Returns:
+        List of dicts with 'label', 'url', 'icon' keys
+    """
+    content_index = load_content_index()
+    if not content_index:
+        return []
+    
+    related = []
+    text = (title + ' ' + content).lower()
+    found_urls = set()  # Prevent duplicates
+    
+    # 1. Check for CVE patterns
+    cve_pattern = re.compile(r'CVE-\d{4}-\d{4,7}', re.IGNORECASE)
+    cves_found = cve_pattern.findall(text)
+    if cves_found:
+        tracker_url = content_index.get('categories', {}).get('cve_tracker', {}).get('primaryUrl', '/cve-tracker.html')
+        if tracker_url not in found_urls:
+            related.append({
+                'label': 'CVE Tracker',
+                'url': tracker_url,
+                'icon': 'fa-bug'
+            })
+            found_urls.add(tracker_url)
+    
+    # 2. Check for ransomware groups
+    ransomware_groups = content_index.get('categories', {}).get('ransomware_groups', {}).get('entities', [])
+    for group in ransomware_groups:
+        if group.lower() in text:
+            tracker_url = content_index.get('categories', {}).get('ransomware_groups', {}).get('primaryUrl', '/ransomware-tracker.html')
+            if tracker_url not in found_urls:
+                related.append({
+                    'label': 'Ransomware Tracker',
+                    'url': tracker_url,
+                    'icon': 'fa-skull-crossbones'
+                })
+                found_urls.add(tracker_url)
+            break
+    
+    # 3. Check for APT groups
+    apt_groups = content_index.get('aptGroups', [])
+    for apt in apt_groups:
+        if apt.lower() in text:
+            threat_intel_url = content_index.get('categories', {}).get('threat_intel', {}).get('primaryUrl', '/threat-intel.html')
+            if threat_intel_url not in found_urls:
+                related.append({
+                    'label': 'Threat Intelligence',
+                    'url': threat_intel_url,
+                    'icon': 'fa-user-secret'
+                })
+                found_urls.add(threat_intel_url)
+            break
+    
+    # 4. Check for product-specific articles
+    product_articles = content_index.get('articles', {}).get('products', {})
+    for product, url in product_articles.items():
+        if product.lower() in text and url not in found_urls:
+            related.append({
+                'label': f'{product.title()} Analysis',
+                'url': url,
+                'icon': 'fa-file-alt'
+            })
+            found_urls.add(url)
+            break
+    
+    # 5. Check for threat group articles
+    threat_articles = content_index.get('articles', {}).get('threat_groups', {})
+    for group, url in threat_articles.items():
+        if group.lower() in text and url not in found_urls:
+            related.append({
+                'label': f'{group.title()} Deep Dive',
+                'url': url,
+                'icon': 'fa-file-alt'
+            })
+            found_urls.add(url)
+            break
+    
+    # 6. Match relevant guides based on keywords
+    guides = content_index.get('guides', [])
+    matched_guide = None
+    best_match_score = 0
+    
+    for guide in guides:
+        guide_keywords = guide.get('keywords', [])
+        score = sum(1 for kw in guide_keywords if kw.lower() in text)
+        if score > best_match_score:
+            best_match_score = score
+            matched_guide = guide
+    
+    if matched_guide and best_match_score >= 2 and matched_guide['url'] not in found_urls:
+        related.append({
+            'label': matched_guide.get('title', 'Related Guide'),
+            'url': matched_guide['url'],
+            'icon': matched_guide.get('icon', 'fa-book')
+        })
+        found_urls.add(matched_guide['url'])
+    
+    # 7. Check comparisons
+    comparisons = content_index.get('comparisons', [])
+    for comp in comparisons:
+        comp_keywords = comp.get('keywords', [])
+        if any(kw.lower() in text for kw in comp_keywords) and comp['url'] not in found_urls:
+            related.append({
+                'label': comp.get('title', 'Tool Comparison'),
+                'url': comp['url'],
+                'icon': comp.get('icon', 'fa-balance-scale')
+            })
+            found_urls.add(comp['url'])
+            break
+    
+    # Limit to 3 related resources
+    return related[:3]
+
+
 
 def sanitize_content(text):
     """
@@ -459,6 +601,17 @@ CRITICAL FORMATTING RULES:
 - Keep the exact format shown above with labeled sections
 - The Source URL must be EXACTLY "ARTICLE_X_URL_PLACEHOLDER" - do not modify it
 
+ENTITY EXTRACTION (Important for internal linking):
+At the end of each short, add an Entities line with comma-separated values for:
+- Any CVE IDs mentioned (e.g., CVE-2024-12345)
+- Any ransomware group names (e.g., LockBit, ALPHV, Qilin)
+- Any APT/threat actor names (e.g., Lazarus, APT28)
+- Key product names affected (e.g., Chrome, Windows, Fortinet)
+- Attack type keywords (e.g., zero-day, RCE, phishing, ransomware)
+
+Example:
+Entities: CVE-2024-12345, Chrome, zero-day, Google
+
 Create a short for EACH of the {len(top_articles)} articles above."""
     
     try:
@@ -517,12 +670,34 @@ def parse_shorts(content):
                 print(f"   ⚠️ Skipping short with invalid URL: {title_match.group(1)[:50]}")
                 continue
             
+            # Extract entities if present
+            entities_match = re.search(r'Entities:\s*(.+?)(?:\n|$)', item)
+            extracted_entities = []
+            if entities_match:
+                entities_text = entities_match.group(1).strip()
+                extracted_entities = [e.strip() for e in entities_text.split(',') if e.strip()]
+            
+            # Get content without the Entities line
+            content_text = content_match.group(1).strip()
+            content_text = re.sub(r'\nEntities:.*$', '', content_text, flags=re.MULTILINE).strip()
+            
+            title_text = sanitize_content(title_match.group(1).strip())
+            content_sanitized = sanitize_content(content_text)
+            
+            # Match entities to internal content
+            related_resources = match_entities_to_internal_content(
+                title_text,
+                content_sanitized,
+                extracted_entities
+            )
+            
             short = {
                 "date": sanitize_content(date_match.group(1).strip()),
-                "title": sanitize_content(title_match.group(1).strip()),
-                "content": sanitize_content(content_match.group(1).strip()),
+                "title": title_text,
+                "content": content_sanitized,
                 "source": sanitize_content(source_match.group(1).strip()),
-                "sourceUrl": source_url
+                "sourceUrl": source_url,
+                "relatedResources": related_resources
             }
             shorts.append(short)
     

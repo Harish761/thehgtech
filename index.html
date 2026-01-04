@@ -270,6 +270,7 @@
     <link rel="stylesheet" href="ransomware-display.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="article-links-fix.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="header-dropdown.css?v=1" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="premium-news.css?v=1" media="print" onload="this.media='all'">
 
     <!-- Font Awesome (Deferred until after page load for performance) -->
     <script>
@@ -4397,15 +4398,23 @@
                     <div class="section-header">
                         <h2 class="section-title">Latest Intelligence</h2>
                     </div>
-                    <div class="tabs">
-                        <button class="tab active" onclick="switchTab('cyber')">
+                    <div class="tabs desktop-only">
+                        <button class="tab active" onclick="switchPremiumTab('cyber')">
                             Cybersecurity
                         </button>
-                        <button class="tab" onclick="switchTab('ai')">
+                        <button class="tab" onclick="switchPremiumTab('ai')">
                             AI & ML
                         </button>
                     </div>
-                    <div id="cyberNews" class="news-grid"></div>
+
+                    <!-- Premium News Layout (Desktop - Feature + Grid) -->
+                    <div class="desktop-only">
+                        <div id="cyberNewsPremium"></div>
+                        <div id="aiNewsPremium" style="display: none;"></div>
+                    </div>
+
+                    <!-- Old news grid - hidden on desktop, keeping for fallback -->
+                    <div id="cyberNews" class="news-grid" style="display: none;"></div>
                     <div id="aiNews" class="news-grid" style="display: none;"></div>
 
                     <!-- Mobile Swipeable News Cards (Tinder-style) -->
@@ -4991,6 +5000,7 @@
 
     <!-- Load Content Files (deferred to prevent render blocking) -->
     <script src="content.js?v=20251219" defer></script>
+    <script src="premium-news.js?v=1" defer></script>
     <script src="article-loader.js?v=20251207-1255" defer></script>
     <link rel="stylesheet" href="article-modal.css" media="print" onload="this.media='all'">
     <script src="article-modal.js" defer></script>
@@ -5608,7 +5618,7 @@
                                 <span>Read Full Story</span>
                                 <span>→</span>
                             </div>
-                            <a href="${safeUrl}" class="news-link" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+                            <a href="${safeUrl}" class="news-link" target="_blank" rel="nofollow ugc noopener noreferrer" onclick="event.stopPropagation()">
                                 <span>View Source</span>
                             </a>
                         </div>
@@ -5654,7 +5664,7 @@
                                 <span>Read Full Story</span>
                                 <span>→</span>
                             </div>
-                            <a href="${safeUrl}" class="news-link" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+                            <a href="${safeUrl}" class="news-link" target="_blank" rel="nofollow ugc noopener noreferrer" onclick="event.stopPropagation()">
                                 <span>View Source</span>
                             </a>
                         </div>
@@ -5680,6 +5690,29 @@
             const wordCount = safeContent.replace(/<[^>]*>/g, '').split(/\s+/).length;
             const readingTime = Math.max(1, Math.ceil(wordCount / 200));
 
+            // Build related resources HTML if available
+            let relatedHTML = '';
+            if (item.relatedResources && Array.isArray(item.relatedResources) && item.relatedResources.length > 0) {
+                const linksHTML = item.relatedResources.map(link => `
+                    <a href="${escapeHTML(link.url)}" class="modal-related-link" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background: rgba(0, 217, 255, 0.1); border: 1px solid rgba(0, 217, 255, 0.3); border-radius: 8px; color: #00D9FF; text-decoration: none; font-size: 0.875rem; transition: all 0.2s;">
+                        <i class="fas ${escapeHTML(link.icon || 'fa-link')}"></i>
+                        ${escapeHTML(link.label)}
+                    </a>
+                `).join('');
+
+                relatedHTML = `
+                    <div class="news-modal-related" style="margin-top: 1.5rem; padding: 1rem; background: rgba(0, 217, 255, 0.05); border: 1px solid rgba(0, 217, 255, 0.2); border-radius: 12px;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: #00D9FF; margin-bottom: 0.75rem;">
+                            <i class="fas fa-link"></i>
+                            Related on TheHGTech
+                        </div>
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
+                            ${linksHTML}
+                        </div>
+                    </div>
+                `;
+            }
+
             const modalHTML = `
                 <div class="news-modal-overlay" id="newsModal" onclick="closeNewsModal(event)">
                     <div class="news-modal" onclick="event.stopPropagation()">
@@ -5693,9 +5726,10 @@
                             <div class="news-modal-close" onclick="closeNewsModal()" title="Close (ESC)">×</div>
                         </div>
                         <div class="news-modal-content">${safeContent}</div>
-                        <div class="news-modal-footer">
-                            <a href="${safeUrl}" class="news-link" target="_blank" rel="noopener noreferrer">
-                                <span>View Original Source</span>
+                        ${relatedHTML}
+                        <div class="news-modal-footer" style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1);">
+                            <a href="${safeUrl}" class="news-link" target="_blank" rel="nofollow ugc noopener noreferrer" style="color: var(--text-muted); font-size: 0.85rem;">
+                                <span>Source: ${safeSource}</span>
                             </a>
                         </div>
                     </div>
@@ -5750,6 +5784,25 @@
                 if (cyberNews) cyberNews.style.display = 'none';
                 if (aiNews) aiNews.style.display = 'none';
                 if (threatIntel) threatIntel.classList.add('active');
+            }
+        }
+
+        // Switch premium news tabs (Feature + Grid layout)
+        function switchPremiumTab(tab) {
+            const tabs = document.querySelectorAll('.tabs.desktop-only .tab');
+            const cyberPremium = document.getElementById('cyberNewsPremium');
+            const aiPremium = document.getElementById('aiNewsPremium');
+
+            tabs.forEach(t => t.classList.remove('active'));
+
+            if (tab === 'cyber') {
+                if (tabs[0]) tabs[0].classList.add('active');
+                if (cyberPremium) cyberPremium.style.display = 'block';
+                if (aiPremium) aiPremium.style.display = 'none';
+            } else if (tab === 'ai') {
+                if (tabs[1]) tabs[1].classList.add('active');
+                if (cyberPremium) cyberPremium.style.display = 'none';
+                if (aiPremium) aiPremium.style.display = 'block';
             }
         }
 
