@@ -173,6 +173,7 @@
     margin-bottom: 2rem;
 }
 
+.modal-section h3,
 .modal-section h4 {
     font-size: 1.1rem;
     color: rgba(255, 255, 255, 0.9);
@@ -329,6 +330,7 @@ body.light-mode .modal-stat-value {
     color: #DC2626;
 }
 
+body.light-mode .modal-section h3,
 body.light-mode .modal-section h4 {
     color: rgba(0, 0, 0, 0.9);
 }

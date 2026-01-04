@@ -8,9 +8,9 @@
     <!-- SEO Meta Tags -->
     <title>Free Ransomware Tracker - Live Ransomware Victims & Groups | TheHGTech</title>
     <meta name="description"
-        content="FREE ransomware tracker with live victim data. Track ransomware groups, victims, and trends. Updated twice daily from Ransomware.live. No signup required. Monitor LockBit, ALPHV, BlackCat, and more.">
+        content="FREE ransomware tracker with live victim data. Track ransomware groups like LockBit, ALPHV, BlackCat, Play, Cl0p. Updated twice daily from Ransomware.live. No signup required.">
     <meta name="keywords"
-        content="ransomware tracker, ransomware victims, ransomware groups, LockBit tracker, ALPHV tracker, BlackCat ransomware, ransomware statistics, free ransomware tracker, ransomware monitoring">
+        content="ransomware tracker, ransomware victims, ransomware groups, LockBit tracker, ALPHV tracker, BlackCat ransomware, ransomware statistics, free ransomware tracker, ransomware monitoring, ransomware.live">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Free Ransomware Tracker - Live Victim Data">
@@ -18,25 +18,119 @@
         content="Track ransomware victims and groups in real-time. Updated twice daily. Free, no signup.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://thehgtech.com/ransomware-tracker.html">
+    <meta property="og:image" content="https://thehgtech.com/images/ransomware-tracker-og.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Free Ransomware Tracker - Live Victim Data">
+    <meta name="twitter:description" content="Track ransomware victims and groups in real-time. Updated twice daily.">
+    <meta name="twitter:image" content="https://thehgtech.com/images/ransomware-tracker-og.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://thehgtech.com/ransomware-tracker.html">
+
+    <!-- ========== STRUCTURED DATA - DATASET ========== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dataset",
+      "name": "Live Ransomware Victims & Groups Database",
+      "description": "Real-time database of ransomware victims and active ransomware groups. Includes victim names, industries, countries, attack dates, and group activity trends. Updated twice daily from ransomware leak sites.",
+      "url": "https://thehgtech.com/ransomware-tracker.html",
+      "keywords": ["ransomware", "victims", "ransomware groups", "LockBit", "ALPHV", "BlackCat", "cybersecurity", "threat intelligence"],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "isAccessibleForFree": true,
+      "creator": {
+        "@type": "Organization",
+        "name": "TheHGTech",
+        "url": "https://thehgtech.com"
+      },
+      "distribution": {
+        "@type": "DataDownload",
+        "encodingFormat": "application/json",
+        "contentUrl": "https://thehgtech.com/ransomware-data.json"
+      },
+      "temporalCoverage": "2024/..",
+      "spatialCoverage": "Global",
+      "variableMeasured": [
+        "Victim Name",
+        "Ransomware Group",
+        "Industry",
+        "Country",
+        "Attack Date"
+      ]
+    }
+    </script>
+
+    <!-- ========== STRUCTURED DATA - WEBPAGE ========== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Ransomware Tracker - Live Victims & Groups",
+      "description": "Free ransomware tracker with live victim data from active ransomware groups. Updated twice daily.",
+      "url": "https://thehgtech.com/ransomware-tracker.html",
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListOrder": "https://schema.org/ItemListOrderDescending",
+        "name": "Active Ransomware Groups",
+        "description": "Most active ransomware groups with recent victims"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://thehgtech.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Ransomware Tracker",
+            "item": "https://thehgtech.com/ransomware-tracker.html"
+          }
+        ]
+      }
+    }
+    </script>
+
+    <!-- ========== PERFORMANCE OPTIMIZATION ========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
 
     <!-- Fonts & Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Non-blocking FontAwesome -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </noscript>
+
+    <!-- Chart.js for trend charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="header-dropdown.css?v=1">
     <link rel="stylesheet" href="light-mode.css">
     <link rel="stylesheet" href="ransomware-display.css">
+    <link rel="stylesheet" href="ransomware-modal.css">
     <link rel="stylesheet" href="theme-toggle.css">
 
     <!-- Mobile Optimization (v3.0) -->
-    <link rel="stylesheet" href="m-core.css?v=4.2">
+    <link rel="stylesheet" href="m-core.css?v=4.1">
     <link rel="stylesheet" href="m-layout.css?v=3.2">
     <link rel="stylesheet" href="m-components.css?v=3.0">
     <script src="m-app.js?v=4.3" defer></script>
     <script src="theme-toggle.js" defer></script>
+    <link rel="stylesheet" href="ui-enhancements.css?v=1.0">
+    <script src="ui-enhancements.js?v=1.0" defer></script>
 
     <style>
         * {
@@ -49,8 +143,9 @@
             --bg-primary: #000000;
             --bg-secondary: #0a0a0a;
             --bg-card: rgba(255, 255, 255, 0.03);
-            --accent-cyan: #00D9FF;
+            --accent-orange: #FF8C00;
             --accent-red: #FF4C4C;
+            --accent-cyan: #00D9FF;
             --text-primary: #ffffff;
             --text-secondary: #a0a0a0;
             --text-muted: #666666;
@@ -62,193 +157,408 @@
             background: var(--bg-primary);
             color: var(--text-primary);
             line-height: 1.6;
+            overflow-x: hidden;
         }
 
-        .hero {
-            max-width: 1400px;
-            margin: 100px auto 40px;
-            padding: 0 2rem;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            font-weight: 800;
-            margin-bottom: 1.5rem;
-            background: linear-gradient(135deg, var(--accent-red), #ff6b6b);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .hero p {
-            font-size: 1.3rem;
-            color: var(--text-secondary);
-            max-width: 800px;
-            margin: 0 auto 2rem;
-        }
-
-        .alert-banner {
-            background: rgba(255, 76, 76, 0.1);
-            border: 1px solid var(--accent-red);
-            border-radius: 8px;
-            padding: 1rem 2rem;
-            margin: 2rem auto;
-            max-width: 800px;
-            text-align: center;
-        }
-
-        .alert-banner strong {
-            color: var(--accent-red);
-        }
-
-        .stats-bar {
+        /* ========== ANIMATED HERO SECTION ========== */
+        .ransomware-hero {
+            position: relative;
+            min-height: 320px;
             display: flex;
+            flex-direction: column;
+            align-items: center;
             justify-content: center;
-            gap: 3rem;
-            margin: 3rem auto;
-            flex-wrap: wrap;
-        }
-
-        .stat {
             text-align: center;
+            padding: 120px 2rem 60px;
+            overflow: hidden;
+            background: radial-gradient(ellipse at 50% 0%, rgba(255, 140, 0, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 50%, rgba(255, 76, 76, 0.08) 0%, transparent 40%),
+                radial-gradient(ellipse at 20% 80%, rgba(0, 217, 255, 0.05) 0%, transparent 40%);
         }
 
-        .stat-number {
+        /* Floating orbs animation */
+        .ransomware-hero::before,
+        .ransomware-hero::after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(60px);
+            opacity: 0.5;
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .ransomware-hero::before {
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(255, 140, 0, 0.3), transparent 70%);
+            top: -100px;
+            left: -100px;
+            animation-delay: 0s;
+        }
+
+        .ransomware-hero::after {
+            width: 250px;
+            height: 250px;
+            background: radial-gradient(circle, rgba(255, 76, 76, 0.25), transparent 70%);
+            bottom: -50px;
+            right: -50px;
+            animation-delay: -4s;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            33% {
+                transform: translate(30px, -20px) scale(1.05);
+            }
+
+            66% {
+                transform: translate(-20px, 20px) scale(0.95);
+            }
+        }
+
+        /* Skull icon with pulse */
+        .ransomware-hero__icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--accent-orange), #FF5722);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 10px 40px rgba(255, 140, 0, 0.3);
+            animation: pulse-glow 3s ease-in-out infinite;
+        }
+
+        .ransomware-hero__icon i {
             font-size: 2.5rem;
+            color: #fff;
+        }
+
+        @keyframes pulse-glow {
+
+            0%,
+            100% {
+                box-shadow: 0 10px 40px rgba(255, 140, 0, 0.3);
+            }
+
+            50% {
+                box-shadow: 0 10px 60px rgba(255, 140, 0, 0.5);
+            }
+        }
+
+        .ransomware-hero__title {
+            font-size: 3rem;
             font-weight: 800;
-            color: var(--accent-red);
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #fff 0%, var(--accent-orange) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+            z-index: 1;
         }
 
-        .stat-label {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            text-transform: uppercase;
-            letter-spacing: 1px;
+        .ransomware-hero__subtitle {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin-bottom: 2rem;
+            position: relative;
+            z-index: 1;
         }
 
-        .features {
-            max-width: 1200px;
-            margin: 4rem auto;
-            padding: 0 2rem;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
+        /* Live badge */
+        .live-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255, 76, 76, 0.15);
+            border: 1px solid rgba(255, 76, 76, 0.3);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #FF4C4C;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 1;
         }
 
-        .feature-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 2rem;
-            transition: all 0.3s;
+        .live-badge::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: #FF4C4C;
+            border-radius: 50%;
+            animation: blink 1.5s ease-in-out infinite;
         }
 
-        .feature-card:hover {
-            border-color: var(--accent-red);
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.3;
+            }
+        }
+
+        /* Stats row */
+        .ransomware-hero__stats {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .ransomware-hero__stat {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 1.25rem 2rem;
+            text-align: center;
+            min-width: 120px;
+            transition: all 0.3s ease;
+        }
+
+        .ransomware-hero__stat:hover {
+            border-color: var(--accent-orange);
             transform: translateY(-4px);
         }
 
-        .feature-icon {
+        .ransomware-hero__stat-value {
             font-size: 2.5rem;
-            color: var(--accent-red);
-            margin-bottom: 1rem;
+            font-weight: 800;
+            color: var(--accent-orange);
+            line-height: 1;
         }
 
-        .feature-card h3 {
-            font-size: 1.3rem;
-            margin-bottom: 0.5rem;
+        .ransomware-hero__stat-label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 0.5rem;
         }
 
-        .feature-card p {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-        }
-
-        .cta-section {
-            text-align: center;
-            margin: 4rem auto;
-            padding: 0 2rem;
-        }
-
-        .cta-button {
-            display: inline-block;
-            padding: 1.2rem 3rem;
-            background: linear-gradient(135deg, var(--accent-red), #ff6b6b);
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 600;
-            font-size: 1.1rem;
-            transition: all 0.3s;
-        }
-
-        .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(255, 76, 76, 0.3);
-        }
-
+        /* ========== CONTENT SECTION ========== */
         .content-section {
             max-width: 1400px;
             margin: 0 auto;
             padding: 2rem;
         }
 
-        .industry-stats {
-            max-width: 1200px;
-            margin: 4rem auto;
-            padding: 2rem;
+        /* Section title */
+        .section-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .section-title i {
+            color: var(--accent-orange);
+        }
+
+        /* ========== FILTER BAR ========== */
+        .filter-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
             background: var(--bg-card);
             border: 1px solid var(--border);
             border-radius: 12px;
         }
 
-        .industry-stats h3 {
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-            text-align: center;
+        .filter-group {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
 
-        .industry-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
+        .filter-group label {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            font-weight: 500;
         }
 
-        .industry-item {
-            text-align: center;
-            padding: 1rem;
-            background: var(--bg-secondary);
+        .filter-select {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border);
             border-radius: 8px;
-        }
-
-        .industry-item .number {
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--accent-red);
-        }
-
-        .industry-item .label {
+            padding: 0.5rem 1rem;
+            color: var(--text-primary);
             font-size: 0.9rem;
-            color: var(--text-muted);
-            margin-top: 0.5rem;
+            cursor: pointer;
         }
 
+        .filter-select:focus {
+            outline: none;
+            border-color: var(--accent-orange);
+        }
+
+        .search-input {
+            flex: 1;
+            min-width: 200px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 0.5rem 1rem;
+            color: var(--text-primary);
+            font-size: 0.9rem;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--accent-orange);
+        }
+
+        .search-input::placeholder {
+            color: var(--text-muted);
+        }
+
+        /* ========== MOBILE RESPONSIVE ========== */
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
+            .ransomware-hero {
+                min-height: auto;
+                padding: 70px 1rem 24px;
             }
 
-            .stats-bar {
-                gap: 1.5rem;
+            .ransomware-hero::before,
+            .ransomware-hero::after {
+                display: none;
             }
+
+            .ransomware-hero__icon {
+                width: 50px;
+                height: 50px;
+                border-radius: 12px;
+                margin-bottom: 1rem;
+            }
+
+            .ransomware-hero__icon i {
+                font-size: 1.5rem;
+            }
+
+            .ransomware-hero__title {
+                font-size: 1.5rem;
+            }
+
+            .ransomware-hero__subtitle {
+                font-size: 0.85rem;
+                margin-bottom: 1.25rem;
+            }
+
+            .ransomware-hero__stats {
+                gap: 8px;
+                width: 100%;
+            }
+
+            .ransomware-hero__stat {
+                flex: 1;
+                padding: 12px 8px;
+                min-width: unset;
+                border-radius: 12px;
+            }
+
+            .ransomware-hero__stat-value {
+                font-size: 1.5rem;
+            }
+
+            .ransomware-hero__stat-label {
+                font-size: 0.6rem;
+            }
+
+            .content-section {
+                padding: 1rem 1rem 100px;
+            }
+
+            .filter-bar {
+                flex-direction: column;
+            }
+        }
+
+        /* ========== LIGHT MODE SUPPORT ========== */
+        html body.light-mode .ransomware-hero {
+            background: linear-gradient(180deg, #fff8f0 0%, #fff 100%) !important;
+        }
+
+        html body.light-mode ::selection {
+            background: rgba(255, 140, 0, 0.2) !important;
+            color: #B45309 !important;
+        }
+
+        html body.light-mode .ransomware-hero__icon {
+            background: #ffffff !important;
+            box-shadow: 0 10px 30px rgba(255, 140, 0, 0.15) !important;
+            border: 1px solid rgba(255, 140, 0, 0.2) !important;
+        }
+
+        html body.light-mode .ransomware-hero__icon i {
+            background: linear-gradient(135deg, #FF8C00, #FF5722) !important;
+            -webkit-background-clip: text !important;
+            background-clip: text !important;
+            -webkit-text-fill-color: transparent !important;
+        }
+
+        html body.light-mode .ransomware-hero__title {
+            background: none !important;
+            -webkit-background-clip: unset !important;
+            background-clip: unset !important;
+            -webkit-text-fill-color: #B45309 !important;
+            color: #B45309 !important;
+        }
+
+        html body.light-mode .ransomware-hero__subtitle {
+            color: #555 !important;
+        }
+
+        html body.light-mode .ransomware-hero__stat {
+            background: #ffffff !important;
+            border: 1px solid rgba(255, 140, 0, 0.15) !important;
+            box-shadow: 0 4px 12px rgba(255, 140, 0, 0.05) !important;
+        }
+
+        html body.light-mode .ransomware-hero__stat-value {
+            color: #B45309 !important;
+        }
+
+        html body.light-mode .ransomware-hero__stat-label {
+            color: #888 !important;
+        }
+
+        html body.light-mode .filter-bar,
+        html body.light-mode .filter-select,
+        html body.light-mode .search-input {
+            background: #ffffff !important;
+            border-color: rgba(0, 0, 0, 0.1) !important;
+        }
+
+        html body.light-mode .filter-select,
+        html body.light-mode .search-input {
+            color: #333 !important;
         }
     </style>
 </head>
 
-<body>
-    <!-- ========== NEW MOBILE NAVIGATION (v3.0) ========== -->
-    <!-- ========== NEW MOBILE NAVIGATION (v3.1) ========== -->
+<body class="ransomware-tracker-page">
+    <!-- ========== MOBILE NAVIGATION (v3.1) ========== -->
 
     <!-- Mobile Header -->
     <header class="m-header m-only">
@@ -258,7 +568,7 @@
             <img src="logo-light.png" alt="TheHGTech - Cybersecurity and AI Threat Intelligence Platform"
                 class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0;">
             <span
-                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF8C00, #ffab40); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
         </div>
         <div class="m-header__actions">
             <!-- Premium Theme Toggle -->
@@ -276,7 +586,7 @@
         </div>
     </header>
 
-    <!-- Bottom Navigation (5 items: Home, CVE, Intel, Articles, Guides) -->
+    <!-- Bottom Navigation -->
     <nav class="m-bottom-nav m-only">
         <a href="/" class="m-bottom-nav__item">
             <i class="fas fa-home"></i>
@@ -309,7 +619,7 @@
         <div class="m-search-overlay__results"></div>
     </div>
 
-    <!-- Header -->
+    <!-- Desktop Header -->
     <header class="header" role="banner">
         <div class="header-content">
             <div class="logo">
@@ -353,10 +663,11 @@
                             </div>
                         </a>
                         <a href="ransomware-tracker.html" class="dropdown-item"
-                            style="background: rgba(255, 140, 0, 0.1);">
+                            style="background: rgba(255, 140, 0, 0.08);">
                             <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
                             <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #FF8C00;">Ransomware Tracker</div>
+                                <div class="dropdown-item-title" style="color: var(--accent-orange);">Ransomware Tracker
+                                </div>
                                 <div class="dropdown-item-desc">Track active ransomware groups and victims</div>
                             </div>
                         </a>
@@ -416,98 +727,59 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>🔐 Ransomware Tracker</h1>
-        <p>Track ransomware victims and active ransomware groups in real-time. Data updated twice daily from
-            Ransomware.live. Monitor trends, identify targeted industries, and stay informed about the latest attacks.
-        </p>
-
-        <div class="alert-banner">
-            <strong>⚠️ Live Data:</strong> This tracker shows real ransomware victims. Data is sourced from public
-            ransomware leak sites and updated twice daily.
+    <!-- Beautiful Animated Hero Section -->
+    <section class="ransomware-hero">
+        <div class="live-badge">
+            LIVE DATA
         </div>
+        <div class="ransomware-hero__icon">
+            <i class="fas fa-skull-crossbones"></i>
+        </div>
+        <h1 class="ransomware-hero__title">Ransomware Tracker</h1>
+        <p class="ransomware-hero__subtitle">Track active ransomware groups and victims in real-time. Data sourced from
+            ransomware leak sites, updated twice daily.</p>
 
-        <div class="stats-bar">
-            <div class="stat">
-                <div class="stat-number" id="totalVictims">Loading...</div>
-                <div class="stat-label">Total Victims Tracked</div>
+        <div class="ransomware-hero__stats">
+            <div class="ransomware-hero__stat">
+                <div class="ransomware-hero__stat-value" id="totalVictims">--</div>
+                <div class="ransomware-hero__stat-label">Total Victims</div>
             </div>
-            <div class="stat">
-                <div class="stat-number" id="activeGroups">Loading...</div>
-                <div class="stat-label">Active Groups</div>
+            <div class="ransomware-hero__stat">
+                <div class="ransomware-hero__stat-value" id="activeGroups">--</div>
+                <div class="ransomware-hero__stat-label">Active Groups</div>
             </div>
-            <div class="stat">
-                <div class="stat-number" id="thisWeek">Loading...</div>
-                <div class="stat-label">Victims This Week</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features -->
-    <section class="features">
-        <div class="feature-card">
-            <div class="feature-icon"><i class="fas fa-users"></i></div>
-            <h3>Victim Tracking</h3>
-            <p>Monitor ransomware victims across all major groups. See company names, industries, countries, and attack
-                dates.</p>
-        </div>
-
-        <div class="feature-card">
-            <div class="feature-icon"><i class="fas fa-skull-crossbones"></i></div>
-            <h3>Ransomware Groups</h3>
-            <p>Track active ransomware groups including LockBit, ALPHV/BlackCat, Play, Cl0p, and 50+ others.</p>
-        </div>
-
-        <div class="feature-card">
-            <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
-            <h3>Trend Analysis</h3>
-            <p>Identify patterns in ransomware attacks. See which industries are most targeted and track group activity
-                over time.</p>
-        </div>
-
-        <div class="feature-card">
-            <div class="feature-icon"><i class="fas fa-sync-alt"></i></div>
-            <h3>Twice Daily Updates</h3>
-            <p>Data refreshed at midnight and noon UTC via automated scraping of ransomware leak sites.</p>
-        </div>
-
-        <div class="feature-card">
-            <div class="feature-icon"><i class="fas fa-globe"></i></div>
-            <h3>Global Coverage</h3>
-            <p>Track ransomware victims worldwide. Filter by country, industry, or ransomware group.</p>
-        </div>
-
-        <div class="feature-card">
-            <div class="feature-icon"><i class="fas fa-bell"></i></div>
-            <h3>Early Warning</h3>
-            <p>See which industries and regions are being targeted. Use this intelligence to strengthen your defenses.
-            </p>
-        </div>
-    </section>
-
-    <!-- Industry Stats -->
-    <section class="industry-stats">
-        <h3>Most Targeted Industries</h3>
-        <div class="industry-grid" id="industryGrid">
-            <div class="industry-item">
-                <div class="number">Loading...</div>
-                <div class="label">Loading...</div>
+            <div class="ransomware-hero__stat">
+                <div class="ransomware-hero__stat-value" id="thisWeek">--</div>
+                <div class="ransomware-hero__stat-label">This Week</div>
             </div>
         </div>
     </section>
 
-    <!-- CTA -->
-    <section class="cta-section">
-        <h2 style="font-size: 2rem; margin-bottom: 1rem;">View Live Ransomware Data</h2>
-        <p style="color: var(--text-secondary); margin-bottom: 2rem;">No signup. No credit card. No BS.</p>
-        <a href="index.html#ransomware" class="cta-button">View Ransomware Dashboard →</a>
-    </section>
-
-    <!-- Ransomware Display Section -->
+    <!-- Filter Bar -->
     <section class="content-section">
-        <h2 style="font-size: 2.5rem; margin-bottom: 2rem; text-align: center;">Latest Ransomware Victims</h2>
-        <div id="ransomwareContainer"></div>
+        <div class="filter-bar">
+            <div class="filter-group">
+                <label for="industryFilter">Industry:</label>
+                <select id="industryFilter" class="filter-select">
+                    <option value="">All Industries</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="sortBy">Sort by:</label>
+                <select id="sortBy" class="filter-select">
+                    <option value="victims">Most Victims</option>
+                    <option value="recent">Most Recent</option>
+                    <option value="trend">Trending Up</option>
+                </select>
+            </div>
+            <input type="text" class="search-input" id="groupSearch" placeholder="Search ransomware groups...">
+        </div>
+    </section>
+
+    <!-- Ransomware Groups Grid -->
+    <section class="content-section" style="padding-top: 0;">
+        <h2 class="section-title"><i class="fas fa-skull-crossbones"></i> Active Ransomware Groups</h2>
+        <div id="ransomwareGrid" class="ransomware-grid"></div>
     </section>
 
     <!-- Scripts -->
@@ -518,59 +790,87 @@
             try {
                 const response = await fetch('ransomware-data.json');
                 const data = await response.json();
-                const victims = data.victims || [];
+                const groups = data.groups || [];
 
-                // Total victims
-                document.getElementById('totalVictims').textContent = victims.length;
+                // Calculate total victims from all groups
+                const allVictims = groups.flatMap(g => g.victims || []);
 
-                // Active groups (unique)
-                const groups = new Set(victims.map(v => v.group));
-                document.getElementById('activeGroups').textContent = groups.size;
+                // Total victims (use data.total_victims if available, otherwise calculate)
+                const totalVictimsEl = document.getElementById('totalVictims');
+                if (totalVictimsEl) {
+                    totalVictimsEl.textContent = data.total_victims || allVictims.length;
+                }
+
+                // Active groups
+                const activeGroupsEl = document.getElementById('activeGroups');
+                if (activeGroupsEl) {
+                    activeGroupsEl.textContent = data.total_groups || groups.length;
+                }
 
                 // Victims this week
                 const oneWeekAgo = new Date();
                 oneWeekAgo.setDate(oneWeekAgo.getDate() - 7);
-                const thisWeek = victims.filter(v => {
-                    const victimDate = new Date(v.discovered);
+                const thisWeekCount = allVictims.filter(v => {
+                    const victimDate = new Date(v.date || v.discovered_date);
                     return victimDate >= oneWeekAgo;
                 }).length;
-                document.getElementById('thisWeek').textContent = thisWeek;
+                const thisWeekEl = document.getElementById('thisWeek');
+                if (thisWeekEl) {
+                    thisWeekEl.textContent = thisWeekCount;
+                }
 
-                // Industry stats
+                // Populate industry filter from groups
                 const industries = {};
-                victims.forEach(v => {
-                    const industry = v.activity || 'Unknown';
-                    industries[industry] = (industries[industry] || 0) + 1;
+                groups.forEach(g => {
+                    (g.industries || []).forEach(industry => {
+                        industries[industry] = (industries[industry] || 0) + g.count;
+                    });
                 });
 
-                // Sort and get top 6
-                const topIndustries = Object.entries(industries)
-                    .sort((a, b) => b[1] - a[1])
-                    .slice(0, 6);
+                const industryFilter = document.getElementById('industryFilter');
+                if (industryFilter) {
+                    const sortedIndustries = Object.entries(industries)
+                        .filter(([industry]) => industry !== 'Not Found')
+                        .sort((a, b) => b[1] - a[1])
+                        .slice(0, 20);
 
-                const industryGrid = document.getElementById('industryGrid');
-                industryGrid.innerHTML = topIndustries.map(([industry, count]) => `
-                    <div class="industry-item">
-                        <div class="number">${count}</div>
-                        <div class="label">${industry}</div>
-                    </div>
-                `).join('');
+                    sortedIndustries.forEach(([industry, count]) => {
+                        const option = document.createElement('option');
+                        option.value = industry;
+                        option.textContent = `${industry} (${count})`;
+                        industryFilter.appendChild(option);
+                    });
+                }
 
             } catch (error) {
                 console.error('Error loading stats:', error);
             }
         }
 
+        // Initialize
         loadStats();
 
-
+        // Search functionality
+        const searchInput = document.getElementById('groupSearch');
+        if (searchInput) {
+            searchInput.addEventListener('input', (e) => {
+                const query = e.target.value.toLowerCase();
+                const cards = document.querySelectorAll('.ransomware-card');
+                cards.forEach(card => {
+                    const name = card.querySelector('h3')?.textContent?.toLowerCase() || '';
+                    card.style.display = name.includes(query) ? '' : 'none';
+                });
+            });
+        }
 
         // Mobile menu
         const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
         const nav = document.querySelector('.nav');
-        mobileMenuBtn.addEventListener('click', () => {
-            nav.classList.toggle('active');
-        });
+        if (mobileMenuBtn && nav) {
+            mobileMenuBtn.addEventListener('click', () => {
+                nav.classList.toggle('active');
+            });
+        }
     </script>
 </body>
 
