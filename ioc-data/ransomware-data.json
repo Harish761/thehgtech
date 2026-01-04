@@ -1,13 +1,19 @@
 {
-  "last_updated": "2026-01-04T01:56:34.986251",
+  "last_updated": "2026-01-04T12:41:19.526380",
   "period": "Last 7 days",
   "total_groups": 21,
-  "total_victims": 201,
+  "total_victims": 205,
   "groups": [
     {
       "name": "Qilin",
       "count": 52,
       "victims": [
+        {
+          "name": "Tommotek",
+          "date": "2026-01-04 11:59:01.033215",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=14295723-fdc2-34b8-a7f3-468219a279c6",
+          "discovered_date": "2026-01-04T11:59:01.033215"
+        },
         {
           "name": "Farmacia San Pablo",
           "date": "2026-01-02 19:06:54.344956",
@@ -61,27 +67,21 @@
           "date": "2026-01-02 05:53:29.138211",
           "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=f3980832-c0b4-31fc-8fa6-b456aef5b19f",
           "discovered_date": "2026-01-02T05:53:29.138211"
-        },
-        {
-          "name": "Jing Cheng Enterprise Co., Ltd.",
-          "date": "2026-01-02 19:06:16.254175",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=e59c5487-b277-3b8f-a2ea-faac1dc452f5",
-          "discovered_date": "2026-01-02T19:06:16.254175"
         }
       ],
       "industries": [
-        "Business Services",
         "Consumer Services",
         "Education",
         "Energy",
-        "Healthcare"
+        "Healthcare",
+        "Manufacturing"
       ],
       "countries": [
         "CA",
         "CH",
         "DE",
         "ES",
-        "FR"
+        "FI"
       ],
       "trend": "up",
       "trend_percentage": 15,
@@ -92,7 +92,7 @@
         0,
         22,
         0,
-        0
+        2
       ]
     },
     {
@@ -459,77 +459,83 @@
       ]
     },
     {
-      "name": "Handala",
-      "count": 13,
+      "name": "Direwolf",
+      "count": 14,
       "victims": [
         {
-          "name": "Ayelet Shaked Contact List",
-          "date": "2026-01-03 13:59:56.213074",
-          "url": "http://vmjfieomxhnfjba57sd6jjws2ogvowjgxhhfglsikqvvrnrajbmpxqqd.onion/?p=612",
-          "discovered_date": "2026-01-03T13:59:56.213074"
+          "name": "Bina Darulaman Berhad",
+          "date": "2026-01-04 06:31:59.666157",
+          "url": "http://direwolfcdkv5whaz2spehizdg22jsuf5aeje4asmetpbt6ri4jnd4qd.onion/api/public/articles/61",
+          "discovered_date": "2026-01-04T06:31:59.666157"
         },
         {
-          "name": "15 SIGINT Agents Exposed — $50,000 Reward",
-          "date": "2026-01-03 13:59:34.866738",
-          "url": "http://vmjfieomxhnfjba57sd6jjws2ogvowjgxhhfglsikqvvrnrajbmpxqqd.onion/?p=616",
-          "discovered_date": "2026-01-03T13:59:34.866738"
+          "name": "Hydrodiseño",
+          "date": "2026-01-04 06:32:33.019468",
+          "url": "http://direwolfcdkv5whaz2spehizdg22jsuf5aeje4asmetpbt6ri4jnd4qd.onion/api/public/articles/60",
+          "discovered_date": "2026-01-04T06:32:33.019468"
         },
         {
-          "name": "Unveiling the Secrets: Inside the WhatsApp Chats of a Minister",
-          "date": "2026-01-03 11:02:13.155163",
-          "url": "https://handala-hack.to/unveiling-the-secrets-inside-the-whatsapp-chats-of-a-minister/",
-          "discovered_date": "2026-01-03T11:02:13.155163"
+          "name": "Varimed Medikal",
+          "date": "2026-01-04 05:52:16.331028",
+          "url": "http://direwolfcdkv5whaz2spehizdg22jsuf5aeje4asmetpbt6ri4jnd4qd.onion/api/public/articles/59",
+          "discovered_date": "2026-01-04T05:52:16.331028"
         },
         {
-          "name": "The Queen’s Secrets: Unveiling the Mysteries Behind Ayelet Shaked",
-          "date": "2026-01-03 07:22:56.781313",
-          "url": "https://handala-hack.to/the-queens-secrets-unveiling-the-mysteries-behind-ayelet-shaked/",
-          "discovered_date": "2026-01-03T07:22:56.781313"
+          "name": "Sunzen Biotech Berhad",
+          "date": "2026-01-04 05:52:50.429938",
+          "url": "http://direwolfcdkv5whaz2spehizdg22jsuf5aeje4asmetpbt6ri4jnd4qd.onion/api/public/articles/58",
+          "discovered_date": "2026-01-04T05:52:50.429938"
         },
         {
-          "name": "Handala Alert: Amplifying the Voice of Resistance",
-          "date": "2026-01-02 22:54:49.534727",
-          "url": "https://handala-hack.to/handala-alert-amplifying-the-voice-of-resistance/",
-          "discovered_date": "2026-01-02T22:54:49.534727"
+          "name": "Laurenzano Logistics",
+          "date": "2026-01-04 05:53:23.598973",
+          "url": "http://direwolfcdkv5whaz2spehizdg22jsuf5aeje4asmetpbt6ri4jnd4qd.onion/api/public/articles/57",
+          "discovered_date": "2026-01-04T05:53:23.598973"
         },
         {
-          "name": "Braverman Files Unleashed: Every Secret Now Exposed",
-          "date": "2025-12-28 11:21:47.162041",
-          "url": "http://vmjfieomxhnfjba57sd6jjws2ogvowjgxhhfglsikqvvrnrajbmpxqqd.onion/?p=593",
-          "discovered_date": "2025-12-28T11:21:47.162041"
+          "name": "KwikLedgers",
+          "date": "2026-01-04 05:53:57.254160",
+          "url": "http://direwolfcdkv5whaz2spehizdg22jsuf5aeje4asmetpbt6ri4jnd4qd.onion/api/public/articles/56",
+          "discovered_date": "2026-01-04T05:53:57.254160"
         },
         {
-          "name": "Ayelet Shaked Contact List",
-          "date": "2026-01-03T13:59:56+00:00",
-          "url": "https://www.ransomware.live/id/QXllbGV0IFNoYWtlZCBDb250YWN0IExpc3RAaGFuZGFsYQ==",
-          "discovered_date": "2026-01-03T13:59:56+00:00"
+          "name": "PernelMedia",
+          "date": "2026-01-04 05:54:30.444524",
+          "url": "http://direwolfcdkv5whaz2spehizdg22jsuf5aeje4asmetpbt6ri4jnd4qd.onion/api/public/articles/55",
+          "discovered_date": "2026-01-04T05:54:30.444524"
         },
         {
-          "name": "15 SIGINT Agents Exposed — $50,000 Reward",
-          "date": "2026-01-03T13:59:34+00:00",
-          "url": "https://www.ransomware.live/id/MTUgU0lHSU5UIEFnZW50cyBFeHBvc2VkIOKAlCAkNTAsMDAwIFJld2FyZEBoYW5kYWxh",
-          "discovered_date": "2026-01-03T13:59:34+00:00"
+          "name": "Hydrodiseño",
+          "date": "2026-01-04T06:32:33+00:00",
+          "url": "https://www.ransomware.live/id/SHlkcm9kaXNlw7FvQGRpcmV3b2xm",
+          "discovered_date": "2026-01-04T06:32:33+00:00"
         },
         {
-          "name": "Unveiling the Secrets: Inside the WhatsApp Chats of a Minister",
-          "date": "2026-01-03T11:02:13+00:00",
-          "url": "https://www.ransomware.live/id/VW52ZWlsaW5nIHRoZSBTZWNyZXRzOiBJbnNpZGUgdGhlIFdoYXRzQXBwIENoYXRzIG9mIGEgTWluaXN0ZXJAaGFuZGFsYQ==",
-          "discovered_date": "2026-01-03T11:02:13+00:00"
+          "name": "Bina Darulaman Berhad",
+          "date": "2026-01-04T06:31:59+00:00",
+          "url": "https://www.ransomware.live/id/QmluYSBEYXJ1bGFtYW4gQmVyaGFkQGRpcmV3b2xm",
+          "discovered_date": "2026-01-04T06:31:59+00:00"
         },
         {
-          "name": "The Queen’s Secrets: Unveiling the Mysteries Behind Ayelet Shaked",
-          "date": "2026-01-03T07:22:56+00:00",
-          "url": "https://www.ransomware.live/id/VGhlIFF1ZWVu4oCZcyBTZWNyZXRzOiBVbnZlaWxpbmcgdGhlIE15c3RlcmllcyBCZWhpbmQgQXllbGV0IFNoYWtlZEBoYW5kYWxh",
-          "discovered_date": "2026-01-03T07:22:56+00:00"
+          "name": "PernelMedia",
+          "date": "2026-01-04T05:54:30+00:00",
+          "url": "https://www.ransomware.live/id/UGVybmVsTWVkaWFAZGlyZXdvbGY=",
+          "discovered_date": "2026-01-04T05:54:30+00:00"
         }
       ],
       "industries": [
-        "Not Found"
+        "Construction",
+        "Healthcare",
+        "Manufacturing",
+        "Not Found",
+        "Transportation/Logistics"
       ],
       "countries": [
-        "IL",
-        "N/A",
-        "PS"
+        "ES",
+        "FR",
+        "MY",
+        "TR",
+        "US"
       ],
       "trend": "up",
       "trend_percentage": 15,
@@ -538,14 +544,14 @@
         0,
         0,
         0,
-        2,
-        8,
-        0
+        0,
+        0,
+        14
       ]
     },
     {
       "name": "Dragonforce",
-      "count": 12,
+      "count": 11,
       "victims": [
         {
           "name": "UBS Office",
@@ -578,12 +584,6 @@
           "discovered_date": "2026-01-01T15:53:40.050076"
         },
         {
-          "name": "Neurological Associates",
-          "date": "2025-12-28 15:50:08.662915",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=1f1a5c3d-343b-48e8-9fdd-d0d520a75a1c",
-          "discovered_date": "2025-12-28T15:50:08.662915"
-        },
-        {
           "name": "UBS Office",
           "date": "2026-01-02T19:52:48+00:00",
           "url": "https://www.ransomware.live/id/VUJTIE9mZmljZUBkcmFnb25mb3JjZQ==",
@@ -606,11 +606,16 @@
           "date": "2025-12-29T17:16:24+00:00",
           "url": "https://www.ransomware.live/id/QnVybmV4QGRyYWdvbmZvcmNl",
           "discovered_date": "2025-12-29T17:16:24+00:00"
+        },
+        {
+          "name": "NK Technologies",
+          "date": "2025-12-29T17:15:26+00:00",
+          "url": "https://www.ransomware.live/id/TksgVGVjaG5vbG9naWVzQGRyYWdvbmZvcmNl",
+          "discovered_date": "2025-12-29T17:15:26+00:00"
         }
       ],
       "industries": [
         "Financial Services",
-        "Healthcare",
         "Manufacturing",
         "Not Found",
         "Technology"
@@ -634,63 +639,76 @@
       ]
     },
     {
-      "name": "Devman",
-      "count": 8,
+      "name": "Handala",
+      "count": 10,
       "victims": [
         {
-          "name": "sharinc.org",
-          "date": "2025-12-28 15:44:29.882867",
-          "url": "http://devmanblggk7ddrtqj3tsocnayow3bwnozab2s4yhv4shpv6ueitjzid.onion",
-          "discovered_date": "2025-12-28T15:44:29.882867"
+          "name": "Ayelet Shaked Contact List",
+          "date": "2026-01-03 13:59:56.213074",
+          "url": "http://vmjfieomxhnfjba57sd6jjws2ogvowjgxhhfglsikqvvrnrajbmpxqqd.onion/?p=612",
+          "discovered_date": "2026-01-03T13:59:56.213074"
         },
         {
-          "name": "Jennings SD",
-          "date": "2025-12-28 15:45:51.905684",
-          "url": "http://devmanblggk7ddrtqj3tsocnayow3bwnozab2s4yhv4shpv6ueitjzid.onion",
-          "discovered_date": "2025-12-28T15:45:51.905684"
+          "name": "15 SIGINT Agents Exposed — $50,000 Reward",
+          "date": "2026-01-03 13:59:34.866738",
+          "url": "http://vmjfieomxhnfjba57sd6jjws2ogvowjgxhhfglsikqvvrnrajbmpxqqd.onion/?p=616",
+          "discovered_date": "2026-01-03T13:59:34.866738"
         },
         {
-          "name": "oppor**nity*****.org",
-          "date": "2025-12-28 15:47:14.122142",
-          "url": "http://devmanblggk7ddrtqj3tsocnayow3bwnozab2s4yhv4shpv6ueitjzid.onion",
-          "discovered_date": "2025-12-28T15:47:14.122142"
+          "name": "Unveiling the Secrets: Inside the WhatsApp Chats of a Minister",
+          "date": "2026-01-03 11:02:13.155163",
+          "url": "https://handala-hack.to/unveiling-the-secrets-inside-the-whatsapp-chats-of-a-minister/",
+          "discovered_date": "2026-01-03T11:02:13.155163"
         },
         {
-          "name": "Intonu.com",
-          "date": "2025-12-28 15:48:35.412632",
-          "url": "http://devmanblggk7ddrtqj3tsocnayow3bwnozab2s4yhv4shpv6ueitjzid.onion",
-          "discovered_date": "2025-12-28T15:48:35.412632"
+          "name": "The Queen’s Secrets: Unveiling the Mysteries Behind Ayelet Shaked",
+          "date": "2026-01-03 07:22:56.781313",
+          "url": "https://handala-hack.to/the-queens-secrets-unveiling-the-mysteries-behind-ayelet-shaked/",
+          "discovered_date": "2026-01-03T07:22:56.781313"
         },
         {
-          "name": "Intonu.com",
-          "date": "2025-12-28T15:48:35+00:00",
-          "url": "https://www.ransomware.live/id/SW50b251LmNvbUBkZXZtYW4=",
-          "discovered_date": "2025-12-28T15:48:35+00:00"
+          "name": "Handala Alert: Amplifying the Voice of Resistance",
+          "date": "2026-01-02 22:54:49.534727",
+          "url": "https://handala-hack.to/handala-alert-amplifying-the-voice-of-resistance/",
+          "discovered_date": "2026-01-02T22:54:49.534727"
         },
         {
-          "name": "oppor**nity*****.org",
-          "date": "2025-12-28T15:47:14+00:00",
-          "url": "https://www.ransomware.live/id/b3Bwb3IqKm5pdHkqKioqKi5vcmdAZGV2bWFu",
-          "discovered_date": "2025-12-28T15:47:14+00:00"
+          "name": "Ayelet Shaked Contact List",
+          "date": "2026-01-03T13:59:56+00:00",
+          "url": "https://www.ransomware.live/id/QXllbGV0IFNoYWtlZCBDb250YWN0IExpc3RAaGFuZGFsYQ==",
+          "discovered_date": "2026-01-03T13:59:56+00:00"
         },
         {
-          "name": "Jennings SD",
-          "date": "2025-12-28T15:45:51+00:00",
-          "url": "https://www.ransomware.live/id/SmVubmluZ3MgU0RAZGV2bWFu",
-          "discovered_date": "2025-12-28T15:45:51+00:00"
+          "name": "15 SIGINT Agents Exposed — $50,000 Reward",
+          "date": "2026-01-03T13:59:34+00:00",
+          "url": "https://www.ransomware.live/id/MTUgU0lHSU5UIEFnZW50cyBFeHBvc2VkIOKAlCAkNTAsMDAwIFJld2FyZEBoYW5kYWxh",
+          "discovered_date": "2026-01-03T13:59:34+00:00"
         },
         {
-          "name": "sharinc.org",
-          "date": "2025-12-28T15:44:29+00:00",
-          "url": "https://www.ransomware.live/id/c2hhcmluYy5vcmdAZGV2bWFu",
-          "discovered_date": "2025-12-28T15:44:29+00:00"
+          "name": "Unveiling the Secrets: Inside the WhatsApp Chats of a Minister",
+          "date": "2026-01-03T11:02:13+00:00",
+          "url": "https://www.ransomware.live/id/VW52ZWlsaW5nIHRoZSBTZWNyZXRzOiBJbnNpZGUgdGhlIFdoYXRzQXBwIENoYXRzIG9mIGEgTWluaXN0ZXJAaGFuZGFsYQ==",
+          "discovered_date": "2026-01-03T11:02:13+00:00"
+        },
+        {
+          "name": "The Queen’s Secrets: Unveiling the Mysteries Behind Ayelet Shaked",
+          "date": "2026-01-03T07:22:56+00:00",
+          "url": "https://www.ransomware.live/id/VGhlIFF1ZWVu4oCZcyBTZWNyZXRzOiBVbnZlaWxpbmcgdGhlIE15c3RlcmllcyBCZWhpbmQgQXllbGV0IFNoYWtlZEBoYW5kYWxh",
+          "discovered_date": "2026-01-03T07:22:56+00:00"
+        },
+        {
+          "name": "Handala Alert: Amplifying the Voice of Resistance",
+          "date": "2026-01-02T22:54:49+00:00",
+          "url": "https://www.ransomware.live/id/SGFuZGFsYSBBbGVydDogQW1wbGlmeWluZyB0aGUgVm9pY2Ugb2YgUmVzaXN0YW5jZUBoYW5kYWxh",
+          "discovered_date": "2026-01-02T22:54:49+00:00"
         }
       ],
       "industries": [
         "Not Found"
       ],
       "countries": [
-        "US"
+        "N/A",
+        "PS"
       ],
       "trend": "stable",
       "trend_percentage": 0,
@@ -699,8 +717,8 @@
         0,
         0,
         0,
-        0,
-        0,
+        2,
+        8,
         0
       ]
     },
@@ -843,6 +861,51 @@
       "trend_percentage": -5,
       "daily_counts": [
         4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Devman",
+      "count": 4,
+      "victims": [
+        {
+          "name": "Intonu.com",
+          "date": "2025-12-28T15:48:35+00:00",
+          "url": "https://www.ransomware.live/id/SW50b251LmNvbUBkZXZtYW4=",
+          "discovered_date": "2025-12-28T15:48:35+00:00"
+        },
+        {
+          "name": "oppor**nity*****.org",
+          "date": "2025-12-28T15:47:14+00:00",
+          "url": "https://www.ransomware.live/id/b3Bwb3IqKm5pdHkqKioqKi5vcmdAZGV2bWFu",
+          "discovered_date": "2025-12-28T15:47:14+00:00"
+        },
+        {
+          "name": "Jennings SD",
+          "date": "2025-12-28T15:45:51+00:00",
+          "url": "https://www.ransomware.live/id/SmVubmluZ3MgU0RAZGV2bWFu",
+          "discovered_date": "2025-12-28T15:45:51+00:00"
+        },
+        {
+          "name": "sharinc.org",
+          "date": "2025-12-28T15:44:29+00:00",
+          "url": "https://www.ransomware.live/id/c2hhcmluYy5vcmdAZGV2bWFu",
+          "discovered_date": "2025-12-28T15:44:29+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
         0,
         0,
         0,
@@ -1088,41 +1151,6 @@
       "trend_percentage": -5,
       "daily_counts": [
         2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Medusa",
-      "count": 2,
-      "victims": [
-        {
-          "name": "JBS",
-          "date": "2025-12-28 08:00:45.564957",
-          "url": "http://xfv4jzckytb4g3ckwemcny3ihv4i5p4lqzdpi624cxisu35my5fwi5qd.onion/detail?id=41d10752afc874fc21305afdf3e01b62",
-          "discovered_date": "2025-12-28T08:00:45.564957"
-        },
-        {
-          "name": "JBS",
-          "date": "2025-12-28T08:00:45+00:00",
-          "url": "https://www.ransomware.live/id/SkJTQG1lZHVzYQ==",
-          "discovered_date": "2025-12-28T08:00:45+00:00"
-        }
-      ],
-      "industries": [
-        "Healthcare"
-      ],
-      "countries": [
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
         0,
         0,
         0,
