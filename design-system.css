@@ -1,0 +1,559 @@
+/**
+ * TheHGTech Enterprise Design System
+ * "Built for Security Professionals"
+ * 
+ * v2.0 - Complete Color & Typography Overhaul
+ * 
+ * This file defines the unified design tokens for the entire site.
+ * Applied across: Homepage, TI, CVE, Ransomware, Guides, Articles, Comparisons
+ */
+
+/* ========================================
+   GOOGLE FONTS IMPORT
+   ======================================== */
+
+/* Add to HTML head:
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+*/
+
+/* ========================================
+   DESIGN TOKENS - THE FOUNDATION
+   ======================================== */
+
+:root {
+    /* ===== BRAND COLORS ===== */
+    --hg-primary: #FF3D3D;
+    /* Threat Red - Hero color */
+    --hg-primary-dark: #CC3030;
+    /* Darker red for hover */
+    --hg-primary-light: #FF6B6B;
+    /* Lighter red for accents */
+
+    --hg-action: #00D9FF;
+    /* Cyber Cyan - LINKS ONLY */
+    --hg-action-dark: #00B8D9;
+    /* Darker cyan for hover */
+
+    /* ===== BACKGROUND COLORS ===== */
+    --hg-bg-primary: #0A0A0A;
+    /* Main background */
+    --hg-bg-secondary: #111111;
+    /* Cards, containers */
+    --hg-bg-tertiary: #1A1A1A;
+    /* Elevated elements */
+    --hg-bg-surface: rgba(255, 255, 255, 0.03);
+    /* Subtle surface */
+
+    /* ===== TEXT COLORS ===== */
+    --hg-text-primary: #FFFFFF;
+    /* Headings, important text */
+    --hg-text-secondary: #B0B0B0;
+    /* Body text, descriptions */
+    --hg-text-muted: #666666;
+    /* Timestamps, metadata */
+    --hg-text-disabled: #444444;
+    /* Disabled states */
+
+    /* ===== BORDER COLORS ===== */
+    --hg-border: rgba(255, 255, 255, 0.08);
+    --hg-border-strong: rgba(255, 255, 255, 0.15);
+    --hg-border-focus: rgba(0, 217, 255, 0.5);
+
+    /* ===== SEMANTIC COLORS (Severity Only) ===== */
+    --hg-critical: #FF3D3D;
+    --hg-high: #F59E0B;
+    --hg-medium: #EAB308;
+    --hg-low: #22C55E;
+    --hg-info: #3B82F6;
+
+    /* ===== TYPOGRAPHY ===== */
+    --hg-font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --hg-font-mono: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace;
+
+    /* Font Sizes */
+    --hg-text-display: 3.5rem;
+    /* 56px - Hero headlines */
+    --hg-text-h1: 2.5rem;
+    /* 40px */
+    --hg-text-h2: 2rem;
+    /* 32px */
+    --hg-text-h3: 1.5rem;
+    /* 24px */
+    --hg-text-h4: 1.25rem;
+    /* 20px */
+    --hg-text-body-lg: 1.125rem;
+    /* 18px */
+    --hg-text-body: 1rem;
+    /* 16px */
+    --hg-text-body-sm: 0.875rem;
+    /* 14px */
+    --hg-text-caption: 0.75rem;
+    /* 12px */
+    --hg-text-overline: 0.6875rem;
+    /* 11px */
+
+    /* Font Weights */
+    --hg-weight-regular: 400;
+    --hg-weight-medium: 500;
+    --hg-weight-semibold: 600;
+    --hg-weight-bold: 700;
+
+    /* Line Heights */
+    --hg-leading-tight: 1.2;
+    --hg-leading-snug: 1.35;
+    --hg-leading-normal: 1.5;
+    --hg-leading-relaxed: 1.7;
+
+    /* Letter Spacing */
+    --hg-tracking-tight: -0.02em;
+    --hg-tracking-normal: 0;
+    --hg-tracking-wide: 0.05em;
+    --hg-tracking-wider: 0.1em;
+
+    /* ===== SPACING ===== */
+    --hg-space-1: 0.25rem;
+    /* 4px */
+    --hg-space-2: 0.5rem;
+    /* 8px */
+    --hg-space-3: 0.75rem;
+    /* 12px */
+    --hg-space-4: 1rem;
+    /* 16px */
+    --hg-space-5: 1.25rem;
+    /* 20px */
+    --hg-space-6: 1.5rem;
+    /* 24px */
+    --hg-space-8: 2rem;
+    /* 32px */
+    --hg-space-10: 2.5rem;
+    /* 40px */
+    --hg-space-12: 3rem;
+    /* 48px */
+    --hg-space-16: 4rem;
+    /* 64px */
+    --hg-space-20: 5rem;
+    /* 80px */
+
+    /* ===== BORDER RADIUS ===== */
+    --hg-radius-sm: 4px;
+    --hg-radius-md: 8px;
+    --hg-radius-lg: 12px;
+    --hg-radius-xl: 16px;
+    --hg-radius-2xl: 24px;
+    --hg-radius-full: 9999px;
+
+    /* ===== SHADOWS ===== */
+    --hg-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+    --hg-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+    --hg-shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+    --hg-shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.6);
+    --hg-shadow-glow: 0 0 20px rgba(255, 61, 61, 0.3);
+    --hg-shadow-glow-cyan: 0 0 20px rgba(0, 217, 255, 0.3);
+
+    /* ===== TRANSITIONS ===== */
+    --hg-transition-fast: 150ms ease;
+    --hg-transition-normal: 250ms ease;
+    --hg-transition-slow: 350ms ease;
+
+    /* ===== Z-INDEX ===== */
+    --hg-z-dropdown: 100;
+    --hg-z-sticky: 200;
+    --hg-z-modal: 500;
+    --hg-z-toast: 600;
+    --hg-z-tooltip: 700;
+}
+
+/* ========================================
+   LIGHT MODE OVERRIDES
+   ======================================== */
+
+[data-theme="light"],
+.light-mode {
+    --hg-bg-primary: #F8F9FA;
+    --hg-bg-secondary: #FFFFFF;
+    --hg-bg-tertiary: #F0F0F0;
+    --hg-bg-surface: rgba(0, 0, 0, 0.02);
+
+    --hg-text-primary: #111111;
+    --hg-text-secondary: #555555;
+    --hg-text-muted: #888888;
+
+    --hg-border: rgba(0, 0, 0, 0.08);
+    --hg-border-strong: rgba(0, 0, 0, 0.15);
+
+    --hg-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.08);
+    --hg-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --hg-shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* ========================================
+   BASE STYLES
+   ======================================== */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    margin: 0;
+    font-family: var(--hg-font-primary);
+    font-size: var(--hg-text-body);
+    font-weight: var(--hg-weight-regular);
+    line-height: var(--hg-leading-relaxed);
+    color: var(--hg-text-secondary);
+    background: var(--hg-bg-primary);
+}
+
+/* ========================================
+   TYPOGRAPHY
+   ======================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 var(--hg-space-4);
+    font-family: var(--hg-font-primary);
+    font-weight: var(--hg-weight-semibold);
+    line-height: var(--hg-leading-tight);
+    color: var(--hg-text-primary);
+}
+
+h1 {
+    font-size: var(--hg-text-h1);
+    font-weight: var(--hg-weight-bold);
+    letter-spacing: var(--hg-tracking-tight);
+}
+
+h2 {
+    font-size: var(--hg-text-h2);
+    letter-spacing: var(--hg-tracking-tight);
+}
+
+h3 {
+    font-size: var(--hg-text-h3);
+}
+
+h4 {
+    font-size: var(--hg-text-h4);
+}
+
+/* Display heading (hero) */
+.display {
+    font-size: var(--hg-text-display);
+    font-weight: var(--hg-weight-bold);
+    letter-spacing: var(--hg-tracking-tight);
+    line-height: 1.1;
+}
+
+/* Overline - section labels */
+.overline {
+    font-size: var(--hg-text-overline);
+    font-weight: var(--hg-weight-semibold);
+    letter-spacing: var(--hg-tracking-wider);
+    text-transform: uppercase;
+    color: var(--hg-primary);
+}
+
+/* Caption text */
+.caption {
+    font-size: var(--hg-text-caption);
+    font-weight: var(--hg-weight-medium);
+    letter-spacing: var(--hg-tracking-wide);
+    color: var(--hg-text-muted);
+}
+
+/* Monospace text (CVE IDs, hashes, code) */
+.mono,
+code,
+.code {
+    font-family: var(--hg-font-mono);
+    font-size: 0.9em;
+    background: var(--hg-bg-surface);
+    padding: 2px 6px;
+    border-radius: var(--hg-radius-sm);
+}
+
+p {
+    margin: 0 0 var(--hg-space-4);
+}
+
+/* ========================================
+   LINKS - CYAN ONLY
+   ======================================== */
+
+a {
+    color: var(--hg-action);
+    text-decoration: none;
+    transition: color var(--hg-transition-fast);
+}
+
+a:hover {
+    color: var(--hg-action-dark);
+    text-decoration: underline;
+}
+
+/* ========================================
+   BUTTONS
+   ======================================== */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--hg-space-2);
+    padding: var(--hg-space-3) var(--hg-space-6);
+    font-family: var(--hg-font-primary);
+    font-size: var(--hg-text-body-sm);
+    font-weight: var(--hg-weight-semibold);
+    line-height: 1;
+    border-radius: var(--hg-radius-md);
+    border: none;
+    cursor: pointer;
+    transition: all var(--hg-transition-fast);
+}
+
+/* Primary button - Red */
+.btn-primary {
+    background: var(--hg-primary);
+    color: #FFFFFF;
+}
+
+.btn-primary:hover {
+    background: var(--hg-primary-dark);
+    box-shadow: var(--hg-shadow-glow);
+}
+
+/* Secondary button - Outlined */
+.btn-secondary {
+    background: transparent;
+    color: var(--hg-text-primary);
+    border: 1px solid var(--hg-border-strong);
+}
+
+.btn-secondary:hover {
+    border-color: var(--hg-text-primary);
+    background: var(--hg-bg-surface);
+}
+
+/* Ghost button - Text only */
+.btn-ghost {
+    background: transparent;
+    color: var(--hg-action);
+    padding: var(--hg-space-2) var(--hg-space-4);
+}
+
+.btn-ghost:hover {
+    background: rgba(0, 217, 255, 0.1);
+}
+
+/* ========================================
+   CARDS
+   ======================================== */
+
+.card {
+    background: var(--hg-bg-secondary);
+    border: 1px solid var(--hg-border);
+    border-radius: var(--hg-radius-lg);
+    padding: var(--hg-space-6);
+    transition: all var(--hg-transition-normal);
+}
+
+.card:hover {
+    border-color: var(--hg-border-strong);
+    box-shadow: var(--hg-shadow-md);
+}
+
+/* Card with red accent */
+.card-accent {
+    border-left: 4px solid var(--hg-primary);
+}
+
+/* ========================================
+   BADGES - NEUTRAL BY DEFAULT
+   ======================================== */
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--hg-space-1);
+    padding: var(--hg-space-1) var(--hg-space-2);
+    font-size: var(--hg-text-caption);
+    font-weight: var(--hg-weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: var(--hg-tracking-wide);
+    border-radius: var(--hg-radius-sm);
+    background: var(--hg-bg-surface);
+    color: var(--hg-text-secondary);
+    border: 1px solid var(--hg-border);
+}
+
+/* Severity badges - ONLY for actual severity */
+.badge-critical {
+    background: rgba(255, 61, 61, 0.15);
+    color: var(--hg-critical);
+    border-color: rgba(255, 61, 61, 0.3);
+}
+
+.badge-high {
+    background: rgba(245, 158, 11, 0.15);
+    color: var(--hg-high);
+    border-color: rgba(245, 158, 11, 0.3);
+}
+
+.badge-medium {
+    background: rgba(234, 179, 8, 0.15);
+    color: var(--hg-medium);
+    border-color: rgba(234, 179, 8, 0.3);
+}
+
+.badge-low {
+    background: rgba(34, 197, 94, 0.15);
+    color: var(--hg-low);
+    border-color: rgba(34, 197, 94, 0.3);
+}
+
+.badge-info {
+    background: rgba(59, 130, 246, 0.15);
+    color: var(--hg-info);
+    border-color: rgba(59, 130, 246, 0.3);
+}
+
+/* ========================================
+   STAT NUMBERS
+   ======================================== */
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: var(--hg-weight-bold);
+    letter-spacing: var(--hg-tracking-tight);
+    color: var(--hg-text-primary);
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: var(--hg-text-overline);
+    font-weight: var(--hg-weight-semibold);
+    letter-spacing: var(--hg-tracking-wider);
+    text-transform: uppercase;
+    color: var(--hg-text-muted);
+}
+
+/* ========================================
+   SECTION HEADERS
+   ======================================== */
+
+.section-header {
+    margin-bottom: var(--hg-space-8);
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: var(--hg-space-3);
+    font-size: var(--hg-text-h2);
+    color: var(--hg-text-primary);
+}
+
+.section-title i {
+    color: var(--hg-primary);
+}
+
+/* ========================================
+   UTILITY CLASSES
+   ======================================== */
+
+/* Text colors */
+.text-primary {
+    color: var(--hg-text-primary) !important;
+}
+
+.text-secondary {
+    color: var(--hg-text-secondary) !important;
+}
+
+.text-muted {
+    color: var(--hg-text-muted) !important;
+}
+
+.text-red {
+    color: var(--hg-primary) !important;
+}
+
+.text-cyan {
+    color: var(--hg-action) !important;
+}
+
+/* Background colors */
+.bg-primary {
+    background: var(--hg-bg-primary) !important;
+}
+
+.bg-secondary {
+    background: var(--hg-bg-secondary) !important;
+}
+
+.bg-surface {
+    background: var(--hg-bg-surface) !important;
+}
+
+/* Spacing */
+.mt-0 {
+    margin-top: 0 !important;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.mt-4 {
+    margin-top: var(--hg-space-4) !important;
+}
+
+.mb-4 {
+    margin-bottom: var(--hg-space-4) !important;
+}
+
+.mt-8 {
+    margin-top: var(--hg-space-8) !important;
+}
+
+.mb-8 {
+    margin-bottom: var(--hg-space-8) !important;
+}
+
+/* ========================================
+   RESPONSIVE TYPOGRAPHY
+   ======================================== */
+
+@media (max-width: 768px) {
+    :root {
+        --hg-text-display: 2.25rem;
+        /* 36px on mobile */
+        --hg-text-h1: 1.75rem;
+        /* 28px */
+        --hg-text-h2: 1.5rem;
+        /* 24px */
+        --hg-text-h3: 1.25rem;
+        /* 20px */
+        --hg-text-h4: 1.125rem;
+        /* 18px */
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+}
