@@ -17,6 +17,120 @@
       "author": "TheHGTech Bot"
     },
     {
+      "id": "article-agentic-ai-insider-threat-2026",
+      "title": "Agentic AI: The New Insider Threat You Didn't Hire",
+      "date": "January 5, 2026",
+      "category": "AI Security",
+      "badge": "NEW",
+      "excerpt": "As enterprises deploy autonomous AI agents with system access and decision-making authority, they're creating a new class of insider threat. Analysis of how agentic AI creates security risks from overpermissioning to shadow AI.",
+      "image": "images/articles/agentic-ai-insider-threat-2026.png",
+      "tags": [
+        "Agentic AI",
+        "AI Security",
+        "Insider Threat",
+        "Shadow AI",
+        "Enterprise Security",
+        "AI Governance"
+      ],
+      "author": "Harish G",
+      "externalUrl": "articles/agentic-ai-insider-threat-2026.html"
+    },
+    {
+      "id": "article-deepfake-as-a-service-2026",
+      "title": "Deepfake-as-a-Service: When AI Identity Theft Costs Less Than a Pizza",
+      "date": "January 5, 2026",
+      "category": "AI Fraud",
+      "badge": "TRENDING",
+      "excerpt": "Criminal marketplaces now offer deepfake creation for $20. From the ₹43 lakh Narayana Murthy scam to the UK Deepfake Detection Challenge, we analyze the DaaS explosion.",
+      "image": "images/articles/deepfake-as-service-2026.png",
+      "tags": [
+        "Deepfake",
+        "DaaS",
+        "AI Fraud",
+        "Voice Cloning",
+        "Narayana Murthy",
+        "UK Detection Challenge"
+      ],
+      "author": "Harish G",
+      "externalUrl": "articles/deepfake-as-a-service-explosion-2026.html"
+    },
+    {
+      "id": "article-claude-ai-vulnerability-2026",
+      "title": "Claude AI Used to Hack Itself: Critical CVE-2025-54794 and CVE-2025-54795 Discovered",
+      "date": "January 5, 2026",
+      "category": "AI Security",
+      "badge": "CRITICAL",
+      "excerpt": "Researchers used Claude to reverse-engineer Claude's own security via InversePrompt technique. Two critical CVEs allow bypassing restrictions and unauthorized command execution.",
+      "image": "images/articles/claude-ai-vulnerability-2026.png",
+      "tags": [
+        "Claude AI",
+        "Anthropic",
+        "CVE-2025-54794",
+        "CVE-2025-54795",
+        "InversePrompt",
+        "AI Vulnerability"
+      ],
+      "author": "Harish G",
+      "externalUrl": "articles/claude-ai-vulnerability-inverseprompt-2026.html"
+    },
+    {
+      "id": "article-sedgwick-tridentlocker-2026",
+      "title": "Sedgwick Government Solutions Hit by TridentLocker: New Ransomware Gang Claims 3.4GB Theft",
+      "date": "January 5, 2026",
+      "category": "Ransomware",
+      "badge": "NEW",
+      "excerpt": "New ransomware group TridentLocker claims attack on federal contractor Sedgwick Government Solutions on New Year's Eve. 3.4GB data allegedly stolen.",
+      "image": "images/articles/sedgwick-tridentlocker-2026.png",
+      "tags": [
+        "TridentLocker",
+        "Ransomware",
+        "Federal Contractor",
+        "Sedgwick",
+        "New Year",
+        "Government"
+      ],
+      "author": "Harish G",
+      "externalUrl": "articles/sedgwick-tridentlocker-ransomware-2026.html"
+    },
+    {
+      "id": "article-taiwan-chinese-cyberattacks-2026",
+      "title": "Taiwan Reports 2.63 Million Daily Chinese Cyberattacks: Energy Infrastructure Under Siege",
+      "date": "January 5, 2026",
+      "category": "Nation-State Threat",
+      "badge": "BREAKING",
+      "excerpt": "Taiwan's National Security Bureau reports unprecedented 2.63 million daily cyberattacks from China. 10x increase in energy infrastructure attacks. Analysis of cyber warfare escalation.",
+      "image": "images/articles/taiwan-china-cyberattacks-2026.png",
+      "tags": [
+        "Taiwan",
+        "China",
+        "Nation-State",
+        "Cyber Warfare",
+        "Energy Infrastructure",
+        "APT"
+      ],
+      "author": "Harish G",
+      "externalUrl": "articles/taiwan-263-million-daily-chinese-cyberattacks-2026.html"
+    },
+    {
+      "id": "article-esa-cyberattack-2026",
+      "title": "European Space Agency Cyberattack: Threat Actor '888' Claims 200GB Data Theft",
+      "date": "January 5, 2026",
+      "category": "Critical Infrastructure",
+      "badge": "BREAKING",
+      "excerpt": "Threat actor '888' claims massive breach of European Space Agency with 200GB of data exfiltrated. Aerospace security faces new challenges as space becomes strategic domain.",
+      "image": "images/articles/esa-cyberattack-2026.png",
+      "tags": [
+        "ESA",
+        "Space Security",
+        "Threat Actor 888",
+        "Aerospace",
+        "Critical Infrastructure",
+        "Data Breach"
+      ],
+      "author": "Harish G",
+      "externalUrl": "articles/esa-cyberattack-200gb-data-theft-2026.html"
+    },
+    {
       "id": "article-ibm-api-connect-cve-2026",
       "title": "IBM API Connect CVE-2025-13915: Critical Enterprise Gateway Flaw",
       "date": "January 2, 2026",

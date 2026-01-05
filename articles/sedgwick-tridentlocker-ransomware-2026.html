@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sedgwick Government Solutions Hit by TridentLocker Ransomware: 3.4GB Stolen | TheHGTech</title>
+    <meta name="description"
+        content="TridentLocker ransomware gang claims attack on Sedgwick Government Solutions, stealing 3.4GB of data from the federal contractor on New Year's Eve. Analysis of the breach and implications.">
+    <meta name="keywords"
+        content="Sedgwick ransomware, TridentLocker, federal contractor breach, government contractor hack 2026, ransomware attack New Year">
+    <link rel="canonical" href="https://thehgtech.com/articles/sedgwick-tridentlocker-ransomware-2026.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Federal Contractor Sedgwick Hit by TridentLocker Ransomware">
+    <meta property="og:description"
+        content="TridentLocker gang claims 3.4GB data theft from Sedgwick Government Solutions on New Year's Eve. Inside the federal contractor breach.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/articles/sedgwick-tridentlocker-ransomware-2026.html">
+    <meta property="og:image" content="https://thehgtech.com/images/articles/sedgwick-tridentlocker-2026.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TridentLocker Ransomware Hits Federal Contractor">
+    <meta name="twitter:description"
+        content="Sedgwick Government Solutions breached on New Year's Eve. 3.4GB claimed stolen by emerging ransomware group.">
+
+    <!-- Article Meta -->
+    <meta property="article:published_time" content="2026-01-05T00:00:00Z">
+    <meta property="article:author" content="Harish G">
+    <meta property="article:section" content="Ransomware">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": "Sedgwick Government Solutions Hit by TridentLocker Ransomware",
+      "description": "TridentLocker ransomware gang claims attack on federal contractor Sedgwick Government Solutions with 3.4GB data theft on New Year's Eve.",
+      "author": {
+        "@type": "Person",
+        "name": "Harish G"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TheHGTech",
+        "url": "https://thehgtech.com"
+      },
+      "datePublished": "2026-01-05",
+      "dateModified": "2026-01-05",
+      "mainEntityOfPage": "https://thehgtech.com/articles/sedgwick-tridentlocker-ransomware-2026.html"
+    }
+    </script>
+
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/header-dropdown.css?v=1">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF3D3D;
+            --accent-blue: #3B82F6;
+            --accent-orange: #FF9500;
+            --accent-green: #10b981;
+            --accent-navy: #1E3A5F;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        .article-container {
+            max-width: 800px;
+            margin: 80px auto 0;
+            padding: 2rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-cyan);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: var(--text-primary);
+        }
+
+        .article-header {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .article-category {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent-red), var(--accent-orange));
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.3rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--accent-red), var(--accent-orange));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .article-excerpt {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .article-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .featured-image {
+            width: 100%;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border: 1px solid var(--border);
+        }
+
+        h2 {
+            color: var(--accent-orange);
+            margin: 2.5rem 0 1rem;
+            font-size: 1.6rem;
+        }
+
+        h3 {
+            color: var(--text-primary);
+            margin: 1.5rem 0 1rem;
+            font-size: 1.3rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        .info-box {
+            background: rgba(0, 217, 255, 0.08);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .warning-box {
+            background: rgba(255, 61, 61, 0.1);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .success-box {
+            background: rgba(16, 185, 129, 0.1);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .critical-box {
+            background: linear-gradient(135deg, rgba(255, 149, 0, 0.15), rgba(255, 61, 61, 0.1));
+            border-left: 4px solid var(--accent-orange);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 149, 0, 0.3);
+        }
+
+        .ransomware-box {
+            background: linear-gradient(135deg, rgba(255, 61, 61, 0.2), rgba(0, 0, 0, 0.8));
+            border: 2px solid var(--accent-red);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .ransomware-box .group-name {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--accent-red);
+            display: block;
+            margin-bottom: 0.25rem;
+            font-family: monospace;
+            text-shadow: 0 0 20px rgba(255, 61, 61, 0.5);
+        }
+
+        .ransomware-box .label {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        .ransomware-box .data-amount {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--accent-orange);
+            display: block;
+            margin-top: 1rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: rgba(255, 149, 0, 0.1);
+            color: var(--accent-orange);
+            font-weight: 600;
+        }
+
+        td {
+            color: var(--text-secondary);
+        }
+
+        ul,
+        ol {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        blockquote {
+            border-left: 4px solid var(--accent-orange);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+
+        blockquote cite {
+            display: block;
+            margin-top: 0.5rem;
+            color: var(--accent-orange);
+            font-style: normal;
+            font-weight: 600;
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent-red);
+            display: block;
+        }
+
+        .stat-value.blue {
+            color: var(--accent-cyan);
+        }
+
+        .stat-value.orange {
+            color: var(--accent-orange);
+        }
+
+        .stat-label {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .timeline {
+            border-left: 3px solid var(--accent-orange);
+            padding-left: 2rem;
+            margin: 2rem 0;
+        }
+
+        .timeline-item {
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2.35rem;
+            top: 0.5rem;
+            width: 12px;
+            height: 12px;
+            background: var(--accent-orange);
+            border-radius: 50%;
+        }
+
+        .timeline-date {
+            color: var(--accent-orange);
+            font-weight: 600;
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .timeline-event {
+            color: var(--text-secondary);
+        }
+
+        code {
+            background: rgba(255, 149, 0, 0.1);
+            color: var(--accent-orange);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Monaco', 'Menlo', monospace;
+        }
+
+        .author-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .author-box i {
+            font-size: 2rem;
+            color: var(--accent-cyan);
+        }
+
+        .author-info strong {
+            color: var(--text-primary);
+        }
+
+        .author-info p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 3rem 2rem;
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        footer p {
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.7rem;
+            }
+
+            .article-container {
+                padding: 1rem;
+                margin-top: 60px;
+            }
+
+            .article-meta {
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+
+            .ransomware-box .group-name {
+                font-size: 1.8rem;
+            }
+
+            .ransomware-box .data-amount {
+                font-size: 2rem;
+            }
+        }
+    </style>
+
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <script src="/m-app.js?v=4.3" defer></script>
+</head>
+
+<body>
+    <!-- Mobile Header -->
+    <header class="m-header m-only">
+        <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark"
+                style="height: 28px; width: auto; margin: 0;">
+            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light"
+                style="height: 28px; width: auto; margin: 0;">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+        </div>
+        <div class="m-header__actions">
+            <button class="m-theme-toggle" onclick="mToggleTheme()" aria-label="Toggle Theme">
+                <span class="m-theme-toggle__thumb"></span>
+                <span class="m-theme-toggle__stars"><span class="m-theme-toggle__star"></span><span
+                        class="m-theme-toggle__star"></span></span>
+            </button>
+            <button class="m-header__btn m-header__btn--search" data-action="search" aria-label="Search"><i
+                    class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <!-- Bottom Navigation -->
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item"><i class="fas fa-bug"></i><span>CVE</span></a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item"><i class="fas fa-shield-alt"></i><span>Intel</span></a>
+        <a href="/articles.html" class="m-bottom-nav__item active"><i
+                class="fas fa-newspaper"></i><span>Articles</span></a>
+        <a href="/guides/" class="m-bottom-nav__item"><i class="fas fa-book"></i><span>Guides</span></a>
+    </nav>
+
+    <!-- Desktop Header -->
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+
+            <nav class="nav nav-modern" role="navigation">
+                <a href="/index.html#news">News</a>
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">
+                        Intelligence <span class="nav-live-badge">LIVE</span>
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/threat-intel.html" class="dropdown-item">
+                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Threat Intelligence <span
+                                        class="dropdown-badge live">LIVE</span></div>
+                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds</div>
+                            </div>
+                        </a>
+                        <a href="/cve-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">CVE Tracker</div>
+                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities</div>
+                            </div>
+                        </a>
+                        <a href="/ransomware-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Ransomware Tracker</div>
+                                <div class="dropdown-item-desc">Active ransomware groups and victims</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">
+                        Resources <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/guides/" class="dropdown-item">
+                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Security Guides <span
+                                        class="dropdown-badge popular">37+</span></div>
+                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2 & more</div>
+                            </div>
+                        </a>
+                        <a href="/comparisons/" class="dropdown-item">
+                            <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Tool Comparisons</div>
+                                <div class="dropdown-item-desc">EDR, SIEM head-to-head reviews</div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="/articles.html" class="dropdown-item">
+                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Articles</div>
+                                <div class="dropdown-item-desc">Latest cybersecurity news</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="theme-toggle-wrapper">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <div class="toggle-stars">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                    </button>
+                </div>
+            </nav>
+
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="article-container">
+        <a href="/articles.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Articles</a>
+
+        <article>
+            <header class="article-header">
+                <div class="article-category"><i class="fas fa-skull-crossbones"></i> Ransomware Attack</div>
+                <h1>Sedgwick Government Solutions Hit by TridentLocker: New Ransomware Gang Claims 3.4GB Theft</h1>
+                <p class="article-excerpt">A new ransomware group called TridentLocker claims responsibility for
+                    attacking Sedgwick Government Solutions on New Year's Eve. The federal contractor confirms a cyber
+                    incident affecting its government-focused subsidiary. What we know about this emerging threat.</p>
+                <div class="article-meta">
+                    <span><i class="far fa-calendar-alt"></i> Attack: December 31, 2025</span>
+                    <span><i class="fas fa-clock"></i> Published: Jan 5, 2026</span>
+                    <span><i class="fas fa-book-open"></i> 18 min read</span>
+                    <span><i class="fas fa-user"></i> By Harish G</span>
+                </div>
+            </header>
+
+            <img src="/images/articles/sedgwick-tridentlocker-2026.png"
+                alt="Sedgwick TridentLocker Ransomware Attack Visualization" class="featured-image">
+
+            <div class="ransomware-box">
+                <span class="group-name">TridentLocker</span>
+                <span class="label">New Ransomware Gang Claims Federal Contractor Attack</span>
+                <span class="data-amount">3.4 GB</span>
+                <span class="label">Data Allegedly Stolen from Sedgwick Government Solutions</span>
+            </div>
+
+            <div class="critical-box">
+                <strong><i class="fas fa-exclamation-triangle"></i> INCIDENT CONFIRMED:</strong> Sedgwick, a global
+                claims management company, has confirmed a cyber incident affecting Sedgwick Government Solutions, its
+                federal contractor subsidiary. The TridentLocker ransomware group claims responsibility, alleging they
+                stole 3.4 gigabytes of data on New Year's Eve 2025.
+            </div>
+
+            <h2><i class="fas fa-crosshairs"></i> The Attack: New Year's Eve Strike</h2>
+
+            <p>There's a reason cybercriminals love holidays. When security teams are reduced, response times are
+                slower, and leadership is unavailable, attackers strike. The TridentLocker attack on Sedgwick Government
+                Solutions exemplifies this tactical approach.</p>
+
+            <p>According to the ransomware group's claims and Sedgwick's confirmation:</p>
+
+            <ul>
+                <li><strong>Attack date:</strong> December 31, 2025 (New Year's Eve)</li>
+                <li><strong>Target:</strong> Sedgwick Government Solutions (federal contractor subsidiary)</li>
+                <li><strong>Data claimed:</strong> 3.4 gigabytes exfiltrated</li>
+                <li><strong>Ransomware group:</strong> TridentLocker (emerging actor)</li>
+                <li><strong>Parent company:</strong> Sedgwick (global claims management with $8B+ annual revenue)</li>
+            </ul>
+
+            <div class="stat-grid">
+                <div class="stat-card">
+                    <span class="stat-value orange">3.4GB</span>
+                    <span class="stat-label">Data Claimed Stolen</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value blue">Dec 31</span>
+                    <span class="stat-label">Attack Date</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">New</span>
+                    <span class="stat-label">Threat Actor Status</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value blue">Fed</span>
+                    <span class="stat-label">Contractor Target</span>
+                </div>
+            </div>
+
+            <h2><i class="fas fa-building"></i> Understanding Sedgwick</h2>
+
+            <p>Sedgwick is one of the world's largest claims management companies, handling everything from workers'
+                compensation to property damage claims for major corporations and government entities.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Company Profile</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Company</strong></td>
+                        <td>Sedgwick Claims Management Services, Inc.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Founded</strong></td>
+                        <td>1969 (Memphis, Tennessee)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Revenue</strong></td>
+                        <td>$8+ billion annually</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Employees</strong></td>
+                        <td>33,000+ globally</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Services</strong></td>
+                        <td>Claims management, risk consulting, managed care</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Affected Subsidiary</strong></td>
+                        <td>Sedgwick Government Solutions (federal contracts)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>What is Sedgwick Government Solutions?</h3>
+
+            <p>Sedgwick Government Solutions is the company's federal contractor arm, providing claims management and
+                related services to U.S. government agencies. This could include:</p>
+
+            <ul>
+                <li><strong>Federal employee claims:</strong> Workers' compensation for government workers</li>
+                <li><strong>Disability determinations:</strong> Processing benefits applications</li>
+                <li><strong>Healthcare administration:</strong> Managing government health programs</li>
+                <li><strong>Disaster response:</strong> FEMA-related claims processing</li>
+            </ul>
+
+            <div class="warning-box">
+                <strong><i class="fas fa-exclamation-triangle"></i> Data Sensitivity:</strong> As a federal contractor
+                handling claims, Sedgwick Government Solutions likely processes highly sensitive personal information
+                including Social Security numbers, medical records, employment histories, and financial details of
+                government employees and benefit recipients.
+            </div>
+
+            <h2><i class="fas fa-trident"></i> Who is TridentLocker?</h2>
+
+            <p>TridentLocker appears to be a new entrant in the ransomware ecosystem. The group's emergence with a
+                federal contractor attack as their debut suggests either unusual ambition or possible connections to
+                more established operations.</p>
+
+            <h3>What We Know</h3>
+
+            <ul>
+                <li><strong>First appearance:</strong> Late December 2025 / Early January 2026</li>
+                <li><strong>Naming:</strong> "Trident" motif suggests nautical theming (similar to other groups)</li>
+                <li><strong>Initial target:</strong> High-profile federal contractor (unusual for new groups)</li>
+                <li><strong>Tactics:</strong> Data exfiltration + extortion (modern double-extortion approach)</li>
+            </ul>
+
+            <h3>Possible Origins</h3>
+
+            <p>New ransomware groups typically emerge through several paths:</p>
+
+            <ol>
+                <li><strong>Splinter group:</strong> Members from disbanded groups like Conti, REvil, or ALPHV forming
+                    new operations</li>
+                <li><strong>RaaS affiliate graduation:</strong> Former affiliates launching their own operation</li>
+                <li><strong>Rebranding:</strong> Existing group using new name to evade law enforcement attention</li>
+                <li><strong>New actors:</strong> Genuinely new entrants (less common at this capability level)</li>
+            </ol>
+
+            <div class="info-box">
+                <strong><i class="fas fa-lightbulb"></i> Analysis Note:</strong> The sophistication required to
+                successfully breach a federal contractor on their first (public) operation suggests TridentLocker may be
+                a rebrand or spinoff rather than genuinely new actors. We're tracking for indicators linking them to
+                known ransomware ecosystems.
+            </div>
+
+            <h2><i class="fas fa-history"></i> Timeline of Events</h2>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="timeline-date">December 31, 2025</span>
+                    <span class="timeline-event">TridentLocker claims to have initiated attack on Sedgwick Government
+                        Solutions (New Year's Eve)</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">January 1, 2026</span>
+                    <span class="timeline-event">TridentLocker announces the attack on their dark web portal, claiming
+                        3.4GB data theft</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">January 2, 2026</span>
+                    <span class="timeline-event">Sedgwick confirms cyber incident affecting Government Solutions
+                        subsidiary</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">January 3, 2026</span>
+                    <span class="timeline-event">Sedgwick emphasizes segmentation: no broader company systems or data
+                        affected</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">January 5, 2026</span>
+                    <span class="timeline-event">Investigation ongoing; extent of data exposure being assessed</span>
+                </div>
+            </div>
+
+            <h2><i class="fas fa-network-wired"></i> The Segmentation Defense</h2>
+
+            <p>Sedgwick's response emphasized a critical point: the Government Solutions subsidiary operates in a
+                segmented environment, separate from the broader company infrastructure. This is exactly how
+                defense-in-depth should work.</p>
+
+            <blockquote>
+                "Sedgwick Government Solutions is segmented, meaning no broader company systems or data were affected."
+                <cite>— Sedgwick Official Statement</cite>
+            </blockquote>
+
+            <h3>Why Segmentation Matters</h3>
+
+            <ul>
+                <li><strong>Blast radius containment:</strong> Breach limited to one subsidiary</li>
+                <li><strong>Regulatory compliance:</strong> Federal contractors often required to isolate government
+                    data</li>
+                <li><strong>Recovery simplification:</strong> Isolated systems can be rebuilt without affecting
+                    operations</li>
+                <li><strong>Negotiation leverage:</strong> Limited scope may reduce ransom pressure</li>
+            </ul>
+
+            <h3>Questions That Remain</h3>
+
+            <ul>
+                <li>Was any data actually encrypted, or was this pure exfiltration?</li>
+                <li>What specific data types were in the 3.4GB claimed?</li>
+                <li>Are government employees or benefit recipients affected?</li>
+                <li>Has Sedgwick been in contact with affected federal agencies?</li>
+            </ul>
+
+            <h2><i class="fas fa-gavel"></i> Federal Contractor Security Requirements</h2>
+
+            <p>As a federal contractor, Sedgwick Government Solutions is subject to various cybersecurity requirements:
+            </p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Requirement</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>NIST 800-171</strong></td>
+                        <td>Protecting Controlled Unclassified Information (CUI)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>CMMC</strong></td>
+                        <td>Cybersecurity Maturity Model Certification (depending on contract)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>FedRAMP</strong></td>
+                        <td>If cloud services are provided to federal agencies</td>
+                    </tr>
+                    <tr>
+                        <td><strong>FISMA</strong></td>
+                        <td>Federal Information Security Modernization Act compliance</td>
+                    </tr>
+                    <tr>
+                        <td><strong>DFARS 252.204-7012</strong></td>
+                        <td>Safeguarding Covered Defense Information (if DoD related)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>Breach of these requirements can result in contract termination, False Claims Act liability, and
+                suspension from federal contracting.</p>
+
+            <h2><i class="fas fa-chart-line"></i> The Holiday Attack Trend</h2>
+
+            <p>TridentLocker's New Year's Eve timing follows a well-established pattern. Major ransomware attacks
+                increasingly target holiday periods:</p>
+
+            <h3>Notable Holiday Attacks</h3>
+
+            <ul>
+                <li><strong>Kaseya (July 4, 2021):</strong> REvil struck the MSP platform over Independence Day weekend
+                </li>
+                <li><strong>JBS (Memorial Day 2021):</strong> Meat processing giant hit during the holiday weekend</li>
+                <li><strong>Colonial Pipeline (Mother's Day 2021):</strong> DarkSide attacked on the weekend</li>
+                <li><strong>Log4j exploitation (December 2021):</strong> Attacks intensified over Christmas</li>
+            </ul>
+
+            <h3>Why Holidays Work for Attackers</h3>
+
+            <ol>
+                <li><strong>Reduced staffing:</strong> SOC teams often at skeleton crew</li>
+                <li><strong>Delayed detection:</strong> Alerts may not be investigated promptly</li>
+                <li><strong>Slow escalation:</strong> Key decision-makers unavailable</li>
+                <li><strong>Extended dwell time:</strong> Attackers can operate longer undetected</li>
+                <li><strong>Pressure to pay:</strong> Organizations want to resume operations quickly</li>
+            </ol>
+
+            <div class="success-box">
+                <strong><i class="fas fa-lightbulb"></i> Defensive Lesson:</strong> Organizations should maintain
+                heightened vigilance during holidays, implement automated detection and response capabilities, and
+                ensure incident response teams have clear escalation paths even when leadership is on vacation.
+            </div>
+
+            <h2><i class="fas fa-shield-alt"></i> Implications for Federal Contractors</h2>
+
+            <p>The Sedgwick attack sends a clear message to the federal contracting community:</p>
+
+            <h3>Immediate Actions</h3>
+
+            <div class="success-box">
+                <strong><i class="fas fa-check-circle"></i> Recommended Steps:</strong>
+                <ul style="margin-bottom: 0;">
+                    <li>Verify network segmentation between government and commercial operations</li>
+                    <li>Review access controls for government-related data and systems</li>
+                    <li>Ensure incident response plans address holiday/weekend scenarios</li>
+                    <li>Confirm backup integrity and test restoration capabilities</li>
+                    <li>Update government contracting officers on security posture</li>
+                </ul>
+            </div>
+
+            <h3>Longer-term Considerations</h3>
+
+            <ul>
+                <li><strong>CMMC readiness:</strong> The Cybersecurity Maturity Model Certification is increasingly
+                    required</li>
+                <li><strong>Third-party risk:</strong> Assess security of subcontractors and vendors</li>
+                <li><strong>Cyber insurance:</strong> Verify coverage adequacy for government contract breaches</li>
+                <li><strong>Disclosure obligations:</strong> Understand reporting requirements to contracting agencies
+                </li>
+            </ul>
+
+            <h2><i class="fas fa-database"></i> What Data Might Be at Risk?</h2>
+
+            <p>While the specific contents of the 3.4GB aren't confirmed, federal claims management operations typically
+                handle:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data Category</th>
+                        <th>Examples</th>
+                        <th>Risk Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Personal Identifiers</strong></td>
+                        <td>SSN, DOB, addresses</td>
+                        <td style="color: #FF3D3D;">Critical</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Medical Records</strong></td>
+                        <td>Treatment history, diagnoses, prescriptions</td>
+                        <td style="color: #FF3D3D;">Critical</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Employment Data</strong></td>
+                        <td>Job history, salary, performance records</td>
+                        <td style="color: #FF9500;">High</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Financial Information</strong></td>
+                        <td>Bank accounts, payment history</td>
+                        <td style="color: #FF3D3D;">Critical</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Claims Details</strong></td>
+                        <td>Incident descriptions, witness statements</td>
+                        <td style="color: #FF9500;">High</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2><i class="fas fa-key"></i> Key Takeaways</h2>
+
+            <div class="info-box">
+                <strong><i class="fas fa-check-circle"></i> Summary Points:</strong>
+                <ul style="margin-bottom: 0;">
+                    <li><strong>New threat actor:</strong> TridentLocker emerges with federal contractor attack</li>
+                    <li><strong>3.4GB claimed stolen:</strong> Contents unconfirmed but likely sensitive</li>
+                    <li><strong>Holiday timing:</strong> New Year's Eve attack follows established pattern</li>
+                    <li><strong>Segmentation worked:</strong> Broader Sedgwick systems reportedly unaffected</li>
+                    <li><strong>Federal compliance:</strong> Contractor security requirements under scrutiny</li>
+                </ul>
+            </div>
+
+            <h2><i class="fas fa-binoculars"></i> What to Watch</h2>
+
+            <ol>
+                <li><strong>Data release:</strong> Will TridentLocker publish samples or sell the data?</li>
+                <li><strong>Federal response:</strong> How will contracting agencies respond?</li>
+                <li><strong>Attribution development:</strong> Links to existing ransomware ecosystems?</li>
+                <li><strong>Additional victims:</strong> TridentLocker's next targets will reveal their focus</li>
+                <li><strong>Notification requirements:</strong> Affected individuals should watch for breach notices
+                </li>
+            </ol>
+
+            <p>The TridentLocker attack on Sedgwick Government Solutions represents both the emergence of a new threat
+                and a reminder of the persistent vulnerability of federal contractors. As the investigation continues,
+                the security community will be watching to learn more about this new player in the ransomware ecosystem.
+            </p>
+
+            <div class="author-box">
+                <i class="fas fa-user-circle"></i>
+                <div class="author-info">
+                    <strong>Harish G</strong>
+                    <p>Cybersecurity analyst tracking ransomware groups and their tactics, techniques, and procedures.
+                    </p>
+                </div>
+            </div>
+
+            <h2><i class="fas fa-book"></i> Related Resources</h2>
+
+            <div class="success-box">
+                <strong><i class="fas fa-link"></i> Further Reading:</strong>
+                <ul style="margin-bottom: 0;">
+                    <li><a href="/ransomware-tracker.html">Live Ransomware Tracker</a> — Monitor active groups</li>
+                    <li><a href="/guides/incident-response-automation.html">Incident Response Automation</a></li>
+                    <li><a href="/guides/network-segmentation-zero-trust.html">Network Segmentation & Zero Trust</a>
+                    </li>
+                </ul>
+            </div>
+
+        </article>
+
+        <!-- Interaction Bar -->
+        <div class="interaction-bar">
+            <div class="like-section">
+                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                    <i class="far fa-heart"></i> <span id="likeText">Like this article</span>
+                </button>
+            </div>
+            <div class="action-buttons">
+                <div class="share-buttons">
+                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <button onclick="copyLink()" class="share-btn" title="Copy Link">
+                        <i class="fas fa-link"></i>
+                    </button>
+                </div>
+                <div class="button-separator"></div>
+                <button onclick="window.print()" class="print-btn" title="Print Article">
+                    <i class="fas fa-print"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TheHGTech. All rights reserved.</p>
+    </footer>
+
+    <script src="/header.js"></script>
+    <script src="/interaction-bar.js?v=20251207-0041"></script>
+</body>
+
+</html>

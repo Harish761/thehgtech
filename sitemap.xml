@@ -68,6 +68,50 @@
   </url>
   
   <!-- ========== ARTICLES - HIGH TRAFFIC POTENTIAL ========== -->
+  
+  <!-- January 5, 2026 Articles -->
+  <url>
+    <loc>https://thehgtech.com/articles/agentic-ai-insider-threat-2026.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <lastmod>2026-01-05</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/deepfake-as-a-service-explosion-2026.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <lastmod>2026-01-05</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/claude-ai-vulnerability-inverseprompt-2026.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <lastmod>2026-01-05</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/sedgwick-tridentlocker-ransomware-2026.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <lastmod>2026-01-05</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/taiwan-263-million-daily-chinese-cyberattacks-2026.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <lastmod>2026-01-05</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/esa-cyberattack-200gb-data-theft-2026.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <lastmod>2026-01-05</lastmod>
+  </url>
+
   <url>
     <loc>https://thehgtech.com/articles/ibm-api-connect-cve-2026.html</loc>
     <changefreq>weekly</changefreq>

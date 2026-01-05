@@ -4,6 +4,85 @@
 
   <!-- ========== LATEST NEWS ARTICLES (Last 48 hours for Google News) ========== -->
   
+  <!-- January 5, 2026 -->
+  <url>
+    <loc>https://thehgtech.com/articles/agentic-ai-insider-threat-2026.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-01-05T00:00:00+05:30</news:publication_date>
+      <news:title>Agentic AI: The New Insider Threat - When AI Employees Go Rogue</news:title>
+      <news:keywords>Agentic AI, AI insider threat, autonomous AI, shadow AI, AI governance, enterprise security</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/deepfake-as-a-service-explosion-2026.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-01-05T00:00:00+05:30</news:publication_date>
+      <news:title>Deepfake-as-a-Service: Criminals Rent AI Impersonation Tools for $20</news:title>
+      <news:keywords>Deepfake, DaaS, AI fraud, voice cloning, Narayana Murthy scam, UK detection challenge</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/claude-ai-vulnerability-inverseprompt-2026.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-01-05T00:00:00+05:30</news:publication_date>
+      <news:title>Claude AI Used to Hack Itself: Critical CVE-2025-54794 and CVE-2025-54795</news:title>
+      <news:keywords>Claude AI, Anthropic, CVE-2025-54794, CVE-2025-54795, InversePrompt, AI vulnerability</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/sedgwick-tridentlocker-ransomware-2026.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-01-05T00:00:00+05:30</news:publication_date>
+      <news:title>Sedgwick Government Solutions Hit by TridentLocker Ransomware: 3.4GB Stolen</news:title>
+      <news:keywords>TridentLocker, ransomware, Sedgwick, federal contractor, government breach</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/taiwan-263-million-daily-chinese-cyberattacks-2026.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-01-05T00:00:00+05:30</news:publication_date>
+      <news:title>Taiwan: 2.63 Million Chinese Cyberattacks Daily - Energy Infrastructure Siege</news:title>
+      <news:keywords>Taiwan, China, cyberattacks, nation-state, energy infrastructure, cyber warfare</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/esa-cyberattack-200gb-data-theft-2026.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-01-05T00:00:00+05:30</news:publication_date>
+      <news:title>European Space Agency Cyberattack: Threat Actor '888' Claims 200GB Data Theft</news:title>
+      <news:keywords>ESA, European Space Agency, threat actor 888, space security, aerospace breach</news:keywords>
+    </news:news>
+  </url>
+
   <url>
     <loc>https://thehgtech.com/articles/ibm-api-connect-cve-2026.html</loc>
     <news:news>
