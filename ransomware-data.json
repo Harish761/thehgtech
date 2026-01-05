@@ -1,13 +1,25 @@
 {
-  "last_updated": "2026-01-04T12:41:19.526380",
+  "last_updated": "2026-01-05T01:56:39.234052",
   "period": "Last 7 days",
-  "total_groups": 21,
-  "total_victims": 205,
+  "total_groups": 22,
+  "total_victims": 198,
   "groups": [
     {
       "name": "Qilin",
-      "count": 52,
+      "count": 50,
       "victims": [
+        {
+          "name": "Sönmezler Metal",
+          "date": "2026-01-04 13:09:28.830354",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=fce35e22-6243-390c-bb7e-00074eb92bf8",
+          "discovered_date": "2026-01-04T13:09:28.830354"
+        },
+        {
+          "name": "Cal Spas, Inc.",
+          "date": "2026-01-04 13:08:52.289164",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=b32b7816-1b2c-3f86-8cfb-c05213b4ac10",
+          "discovered_date": "2026-01-04T13:08:52.289164"
+        },
         {
           "name": "Tommotek",
           "date": "2026-01-04 11:59:01.033215",
@@ -55,18 +67,6 @@
           "date": "2026-01-02 16:21:14.091890",
           "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=0a707461-0d8b-3597-a5f3-2dbf5fb48f86",
           "discovered_date": "2026-01-02T16:21:14.091890"
-        },
-        {
-          "name": "Csv Group",
-          "date": "2026-01-02 05:54:06.928920",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=fbc56041-e8c3-3ec3-b953-b06c78e448cc",
-          "discovered_date": "2026-01-02T05:54:06.928920"
-        },
-        {
-          "name": "Sugawara Laboratories",
-          "date": "2026-01-02 05:53:29.138211",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=f3980832-c0b4-31fc-8fa6-b456aef5b19f",
-          "discovered_date": "2026-01-02T05:53:29.138211"
         }
       ],
       "industries": [
@@ -77,22 +77,22 @@
         "Manufacturing"
       ],
       "countries": [
-        "CA",
         "CH",
         "DE",
         "ES",
-        "FI"
+        "FI",
+        "IT"
       ],
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        8,
         2,
         12,
         0,
         22,
         0,
-        2
+        6,
+        0
       ]
     },
     {
@@ -176,11 +176,11 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        10,
         0,
         2,
         0,
         14,
+        0,
         0,
         0
       ]
@@ -267,12 +267,12 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        8,
         0,
         10,
         0,
         0,
         2,
+        0,
         0
       ]
     },
@@ -358,103 +358,12 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        20,
         0,
         0,
         0,
         0,
         0,
-        0
-      ]
-    },
-    {
-      "name": "Incransom",
-      "count": 18,
-      "victims": [
-        {
-          "name": "proton-system_Serbia",
-          "date": "2026-01-03 14:01:20.311496",
-          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/69590e3b8f1d14b743e48ddb",
-          "discovered_date": "2026-01-03T14:01:20.311496"
-        },
-        {
-          "name": "Automation One Business Systems Inc",
-          "date": "2026-01-03 14:01:00.772638",
-          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/69590e3b8f1d14b743e48df7",
-          "discovered_date": "2026-01-03T14:01:00.772638"
-        },
-        {
-          "name": "3GH Informatica Integral",
-          "date": "2025-12-31 07:26:19.574210",
-          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6954c7638f1d14b743a37740",
-          "discovered_date": "2025-12-31T07:26:19.574210"
-        },
-        {
-          "name": "Burnham Brown",
-          "date": "2025-12-31 10:26:43.169237",
-          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6954f0ee8f1d14b743a5e36e",
-          "discovered_date": "2025-12-31T10:26:43.169237"
-        },
-        {
-          "name": "OSI Systems, Inc.",
-          "date": "2025-12-30 22:23:40.552584",
-          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/69544e358f1d14b7439c5c43",
-          "discovered_date": "2025-12-30T22:23:40.552584"
-        },
-        {
-          "name": "selp",
-          "date": "2025-12-29 16:23:18.365548",
-          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6952a4b68f1d14b74380cda7",
-          "discovered_date": "2025-12-29T16:23:18.365548"
-        },
-        {
-          "name": "omrania",
-          "date": "2025-12-29 01:49:09.067644",
-          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6951d5bebe52b3ea15c01483",
-          "discovered_date": "2025-12-29T01:49:09.067644"
-        },
-        {
-          "name": "klingele",
-          "date": "2025-12-28 21:47:04.701636",
-          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/69519e63be52b3ea15bc7676",
-          "discovered_date": "2025-12-28T21:47:04.701636"
-        },
-        {
-          "name": "Borough of Moonachie",
-          "date": "2026-01-03 17:17:43.311490",
-          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/69594c118f1d14b743e8290d",
-          "discovered_date": "2026-01-03T17:17:43.311490"
-        },
-        {
-          "name": "Borough of Moonachie",
-          "date": "2026-01-03T17:17:43+00:00",
-          "url": "https://www.ransomware.live/id/Qm9yb3VnaCBvZiBNb29uYWNoaWVAaW5jcmFuc29t",
-          "discovered_date": "2026-01-03T17:17:43+00:00"
-        }
-      ],
-      "industries": [
-        "Business Services",
-        "Manufacturing",
-        "Not Found",
-        "Public Sector",
-        "Technology"
-      ],
-      "countries": [
-        "CA",
-        "DE",
-        "ES",
-        "FR",
-        "JO"
-      ],
-      "trend": "up",
-      "trend_percentage": 15,
-      "daily_counts": [
-        4,
-        2,
-        4,
         0,
-        0,
-        6,
         0
       ]
     },
@@ -545,95 +454,96 @@
         0,
         0,
         0,
-        0,
-        14
+        14,
+        0
       ]
     },
     {
-      "name": "Dragonforce",
-      "count": 11,
+      "name": "Incransom",
+      "count": 14,
       "victims": [
         {
-          "name": "UBS Office",
-          "date": "2026-01-02 19:52:48.118797",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=128f7e86-5543-41c1-a213-ac9d7f8581d5",
-          "discovered_date": "2026-01-02T19:52:48.118797"
+          "name": "proton-system_Serbia",
+          "date": "2026-01-03 14:01:20.311496",
+          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/69590e3b8f1d14b743e48ddb",
+          "discovered_date": "2026-01-03T14:01:20.311496"
         },
         {
-          "name": "SINBON Electronics Co., Ltd",
-          "date": "2026-01-02 06:24:56.732530",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=8bf25b2f-9d42-40d3-ad5a-0e4b162b3bcd",
-          "discovered_date": "2026-01-02T06:24:56.732530"
+          "name": "Automation One Business Systems Inc",
+          "date": "2026-01-03 14:01:00.772638",
+          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/69590e3b8f1d14b743e48df7",
+          "discovered_date": "2026-01-03T14:01:00.772638"
         },
         {
-          "name": "NK Technologies",
-          "date": "2025-12-29 17:15:26.211498",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=ca9647eb-67d9-47f5-a33e-49299d53b499",
-          "discovered_date": "2025-12-29T17:15:26.211498"
+          "name": "3GH Informatica Integral",
+          "date": "2025-12-31 07:26:19.574210",
+          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6954c7638f1d14b743a37740",
+          "discovered_date": "2025-12-31T07:26:19.574210"
         },
         {
-          "name": "Burnex",
-          "date": "2025-12-29 17:16:24.280439",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=f46e177f-4a43-4cef-abea-2216f2ecf204",
-          "discovered_date": "2025-12-29T17:16:24.280439"
+          "name": "Burnham Brown",
+          "date": "2025-12-31 10:26:43.169237",
+          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6954f0ee8f1d14b743a5e36e",
+          "discovered_date": "2025-12-31T10:26:43.169237"
         },
         {
-          "name": "Barnes & Jones",
-          "date": "2026-01-01 15:53:40.050076",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=ba78a599-b0fc-4d8b-bd21-6773d6a6bf65",
-          "discovered_date": "2026-01-01T15:53:40.050076"
+          "name": "OSI Systems, Inc.",
+          "date": "2025-12-30 22:23:40.552584",
+          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/69544e358f1d14b7439c5c43",
+          "discovered_date": "2025-12-30T22:23:40.552584"
         },
         {
-          "name": "UBS Office",
-          "date": "2026-01-02T19:52:48+00:00",
-          "url": "https://www.ransomware.live/id/VUJTIE9mZmljZUBkcmFnb25mb3JjZQ==",
-          "discovered_date": "2026-01-02T19:52:48+00:00"
+          "name": "selp",
+          "date": "2025-12-29 16:23:18.365548",
+          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6952a4b68f1d14b74380cda7",
+          "discovered_date": "2025-12-29T16:23:18.365548"
         },
         {
-          "name": "SINBON Electronics Co., Ltd",
-          "date": "2026-01-02T06:24:56+00:00",
-          "url": "https://www.ransomware.live/id/U0lOQk9OIEVsZWN0cm9uaWNzIENvLiwgTHRkQGRyYWdvbmZvcmNl",
-          "discovered_date": "2026-01-02T06:24:56+00:00"
+          "name": "Borough of Moonachie",
+          "date": "2026-01-03 17:17:43.311490",
+          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/69594c118f1d14b743e8290d",
+          "discovered_date": "2026-01-03T17:17:43.311490"
         },
         {
-          "name": "Barnes & Jones",
-          "date": "2026-01-01T15:53:40+00:00",
-          "url": "https://www.ransomware.live/id/QmFybmVzICYgSm9uZXNAZHJhZ29uZm9yY2U=",
-          "discovered_date": "2026-01-01T15:53:40+00:00"
+          "name": "Borough of Moonachie",
+          "date": "2026-01-03T17:17:43+00:00",
+          "url": "https://www.ransomware.live/id/Qm9yb3VnaCBvZiBNb29uYWNoaWVAaW5jcmFuc29t",
+          "discovered_date": "2026-01-03T17:17:43+00:00"
         },
         {
-          "name": "Burnex",
-          "date": "2025-12-29T17:16:24+00:00",
-          "url": "https://www.ransomware.live/id/QnVybmV4QGRyYWdvbmZvcmNl",
-          "discovered_date": "2025-12-29T17:16:24+00:00"
+          "name": "proton-system_Serbia",
+          "date": "2026-01-03T14:01:20+00:00",
+          "url": "https://www.ransomware.live/id/cHJvdG9uLXN5c3RlbV9TZXJiaWFAaW5jcmFuc29t",
+          "discovered_date": "2026-01-03T14:01:20+00:00"
         },
         {
-          "name": "NK Technologies",
-          "date": "2025-12-29T17:15:26+00:00",
-          "url": "https://www.ransomware.live/id/TksgVGVjaG5vbG9naWVzQGRyYWdvbmZvcmNl",
-          "discovered_date": "2025-12-29T17:15:26+00:00"
+          "name": "Automation One Business Systems Inc",
+          "date": "2026-01-03T14:01:00+00:00",
+          "url": "https://www.ransomware.live/id/QXV0b21hdGlvbiBPbmUgQnVzaW5lc3MgU3lzdGVtcyBJbmNAaW5jcmFuc29t",
+          "discovered_date": "2026-01-03T14:01:00+00:00"
         }
       ],
       "industries": [
-        "Financial Services",
-        "Manufacturing",
+        "Business Services",
         "Not Found",
+        "Public Sector",
         "Technology"
       ],
       "countries": [
-        "CH",
-        "N/A",
-        "TW",
+        "CA",
+        "ES",
+        "FR",
+        "RS",
         "US"
       ],
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        4,
-        0,
-        0,
         2,
         4,
+        0,
+        0,
+        6,
         0,
         0
       ]
@@ -716,9 +626,97 @@
         0,
         0,
         0,
-        0,
         2,
         8,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Dragonforce",
+      "count": 10,
+      "victims": [
+        {
+          "name": "UBS Office",
+          "date": "2026-01-02 19:52:48.118797",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=128f7e86-5543-41c1-a213-ac9d7f8581d5",
+          "discovered_date": "2026-01-02T19:52:48.118797"
+        },
+        {
+          "name": "SINBON Electronics Co., Ltd",
+          "date": "2026-01-02 06:24:56.732530",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=8bf25b2f-9d42-40d3-ad5a-0e4b162b3bcd",
+          "discovered_date": "2026-01-02T06:24:56.732530"
+        },
+        {
+          "name": "NK Technologies",
+          "date": "2025-12-29 17:15:26.211498",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=ca9647eb-67d9-47f5-a33e-49299d53b499",
+          "discovered_date": "2025-12-29T17:15:26.211498"
+        },
+        {
+          "name": "Burnex",
+          "date": "2025-12-29 17:16:24.280439",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=f46e177f-4a43-4cef-abea-2216f2ecf204",
+          "discovered_date": "2025-12-29T17:16:24.280439"
+        },
+        {
+          "name": "Barnes & Jones",
+          "date": "2026-01-01 15:53:40.050076",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=ba78a599-b0fc-4d8b-bd21-6773d6a6bf65",
+          "discovered_date": "2026-01-01T15:53:40.050076"
+        },
+        {
+          "name": "UBS Office",
+          "date": "2026-01-02T19:52:48+00:00",
+          "url": "https://www.ransomware.live/id/VUJTIE9mZmljZUBkcmFnb25mb3JjZQ==",
+          "discovered_date": "2026-01-02T19:52:48+00:00"
+        },
+        {
+          "name": "SINBON Electronics Co., Ltd",
+          "date": "2026-01-02T06:24:56+00:00",
+          "url": "https://www.ransomware.live/id/U0lOQk9OIEVsZWN0cm9uaWNzIENvLiwgTHRkQGRyYWdvbmZvcmNl",
+          "discovered_date": "2026-01-02T06:24:56+00:00"
+        },
+        {
+          "name": "Barnes & Jones",
+          "date": "2026-01-01T15:53:40+00:00",
+          "url": "https://www.ransomware.live/id/QmFybmVzICYgSm9uZXNAZHJhZ29uZm9yY2U=",
+          "discovered_date": "2026-01-01T15:53:40+00:00"
+        },
+        {
+          "name": "Burnex",
+          "date": "2025-12-29T17:16:24+00:00",
+          "url": "https://www.ransomware.live/id/QnVybmV4QGRyYWdvbmZvcmNl",
+          "discovered_date": "2025-12-29T17:16:24+00:00"
+        },
+        {
+          "name": "NK Technologies",
+          "date": "2025-12-29T17:15:26+00:00",
+          "url": "https://www.ransomware.live/id/TksgVGVjaG5vbG9naWVzQGRyYWdvbmZvcmNl",
+          "discovered_date": "2025-12-29T17:15:26+00:00"
+        }
+      ],
+      "industries": [
+        "Financial Services",
+        "Manufacturing",
+        "Not Found",
+        "Technology"
+      ],
+      "countries": [
+        "CH",
+        "TW",
+        "US"
+      ],
+      "trend": "stable",
+      "trend_percentage": 0,
+      "daily_counts": [
+        0,
+        0,
+        2,
+        4,
+        0,
+        0,
         0
       ]
     },
@@ -762,8 +760,8 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         4,
+        0,
         0,
         0,
         0,
@@ -812,7 +810,7 @@
       "trend_percentage": -5,
       "daily_counts": [
         2,
-        2,
+        0,
         0,
         0,
         0,
@@ -860,7 +858,7 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        4,
+        0,
         0,
         0,
         0,
@@ -870,35 +868,25 @@
       ]
     },
     {
-      "name": "Devman",
-      "count": 4,
+      "name": "Everest",
+      "count": 2,
       "victims": [
         {
-          "name": "Intonu.com",
-          "date": "2025-12-28T15:48:35+00:00",
-          "url": "https://www.ransomware.live/id/SW50b251LmNvbUBkZXZtYW4=",
-          "discovered_date": "2025-12-28T15:48:35+00:00"
+          "name": "Chrysler - Database leaked",
+          "date": "2026-01-04 13:51:16.823257",
+          "url": "http://ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad.onion/news/Chrysler/",
+          "discovered_date": "2026-01-04T13:51:16.823257"
         },
         {
-          "name": "oppor**nity*****.org",
-          "date": "2025-12-28T15:47:14+00:00",
-          "url": "https://www.ransomware.live/id/b3Bwb3IqKm5pdHkqKioqKi5vcmdAZGV2bWFu",
-          "discovered_date": "2025-12-28T15:47:14+00:00"
-        },
-        {
-          "name": "Jennings SD",
-          "date": "2025-12-28T15:45:51+00:00",
-          "url": "https://www.ransomware.live/id/SmVubmluZ3MgU0RAZGV2bWFu",
-          "discovered_date": "2025-12-28T15:45:51+00:00"
-        },
-        {
-          "name": "sharinc.org",
-          "date": "2025-12-28T15:44:29+00:00",
-          "url": "https://www.ransomware.live/id/c2hhcmluYy5vcmdAZGV2bWFu",
-          "discovered_date": "2025-12-28T15:44:29+00:00"
+          "name": "Chrysler - Database leaked",
+          "date": "2026-01-04T13:51:16+00:00",
+          "url": "https://www.ransomware.live/id/Q2hyeXNsZXIgLSBEYXRhYmFzZSBsZWFrZWRAZXZlcmVzdA==",
+          "discovered_date": "2026-01-04T13:51:16+00:00"
         }
       ],
-      "industries": [],
+      "industries": [
+        "Manufacturing"
+      ],
       "countries": [
         "US"
       ],
@@ -910,7 +898,42 @@
         0,
         0,
         0,
+        2,
+        0
+      ]
+    },
+    {
+      "name": "Medusa",
+      "count": 2,
+      "victims": [
+        {
+          "name": "Resource Corporation of America",
+          "date": "2026-01-04 19:22:42.424005",
+          "url": "http://xfv4jzckytb4g3ckwemcny3ihv4i5p4lqzdpi624cxisu35my5fwi5qd.onion/detail?id=20058b47f2b4df7a0402f1fc268880b9",
+          "discovered_date": "2026-01-04T19:22:42.424005"
+        },
+        {
+          "name": "Resource Corporation of America",
+          "date": "2026-01-04T19:22:42+00:00",
+          "url": "https://www.ransomware.live/id/UmVzb3VyY2UgQ29ycG9yYXRpb24gb2YgQW1lcmljYUBtZWR1c2E=",
+          "discovered_date": "2026-01-04T19:22:42+00:00"
+        }
+      ],
+      "industries": [
+        "Not Found"
+      ],
+      "countries": [
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
         0,
+        0,
+        0,
+        0,
+        0,
+        2,
         0
       ]
     },
@@ -944,8 +967,8 @@
         0,
         0,
         0,
-        0,
         2,
+        0,
         0
       ]
     },
@@ -976,8 +999,8 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         2,
+        0,
         0,
         0,
         0,
@@ -1010,8 +1033,8 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         2,
+        0,
         0,
         0,
         0,
@@ -1045,8 +1068,8 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         2,
+        0,
         0,
         0,
         0,
@@ -1080,8 +1103,8 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         2,
+        0,
         0,
         0,
         0,
@@ -1115,7 +1138,7 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        2,
+        0,
         0,
         0,
         0,
@@ -1150,7 +1173,7 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        2,
+        0,
         0,
         0,
         0,
@@ -1185,8 +1208,8 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         2,
+        0,
         0,
         0,
         0,
@@ -1220,8 +1243,8 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         2,
+        0,
         0,
         0,
         0,
