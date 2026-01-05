@@ -4,60 +4,11 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Jan 03 2026",
-            "title": "Resecurity Hack Alleged by ShinyHunters, Firm Claims Honeypot Deception",
-            "content": "The ShinyHunters hacking group claims to have breached Resecurity, a cybersecurity firm, and accessed internal data. However, Resecurity asserts that the attackers only accessed a honeypot—a decoy system designed to lure and monitor cybercriminals. The honeypot contained fake information, and Resecurity maintains that no real data was compromised. This incident highlights the ongoing cat-and-mouse game between cybersecurity firms and threat actors. Security professionals should consider deploying honeypots as part of their defense strategy to gather intelligence on attacker tactics. The situation underscores the importance of maintaining vigilance and robust incident response plans.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-claim-resecurity-hack-firm-says-it-was-a-honeypot/",
-            "relatedResources": [
-                {
-                    "label": "MITRE ATT&CK Mapping",
-                    "url": "/guides/mitre-attack-mapping.html",
-                    "icon": "fa-map"
-                }
-            ]
-        },
-        {
-            "date": "Jan 02 2026",
-            "title": "Covenant Health Data Breach Affects Nearly Half a Million Patients",
-            "content": "Covenant Health has updated the impact of a data breach discovered in May, now reporting that nearly 478,000 patients were affected. The breach involved unauthorized access to sensitive patient information, though specific data types compromised have not been detailed. This incident serves as a reminder of the vulnerabilities in healthcare data systems and the critical need for robust data protection measures. Healthcare organizations should review their security policies and ensure compliance with regulations such as HIPAA. Affected individuals are advised to monitor their personal information for signs of misuse.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/covenant-health-says-may-data-breach-impacted-nearly-478-000-patients/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 02 2026",
-            "title": "Cryptocurrency Thefts Linked to 2022 LastPass Breach",
-            "content": "TRM Labs has traced ongoing cryptocurrency thefts back to the 2022 LastPass breach, where encrypted password vaults were stolen. Attackers have been draining cryptocurrency wallets over time, laundering the assets through Russian exchanges. This development highlights the long-term risks associated with data breaches, particularly when encrypted data is compromised. Users who had accounts with LastPass during the breach should change passwords and enable multi-factor authentication on all accounts. The incident underscores the importance of regularly updating security measures and monitoring for suspicious activity.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cryptocurrency-theft-attacks-traced-to-2022-lastpass-breach/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 02 2026",
-            "title": "Thousands of Fortinet Firewalls Vulnerable to 2FA Bypass Exploit",
-            "content": "Over 10,000 Fortinet firewalls remain exposed to a five-year-old two-factor authentication (2FA) bypass vulnerability. The flaw, which still affects Internet-exposed systems, allows attackers to gain unauthorized access without needing a second authentication factor. This vulnerability highlights the critical need for timely patch management and system updates. Organizations using Fortinet products should immediately apply available patches and review their network exposure. The persistence of this vulnerability emphasizes the importance of regular security audits and proactive vulnerability management.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/over-10-000-fortinet-firewalls-exposed-to-ongoing-2fa-bypass-attacks/",
-            "relatedResources": [
-                {
-                    "label": "Fortinet Analysis",
-                    "url": "/articles/fortinet-fortigate-critical-exploit-2025.html",
-                    "icon": "fa-file-alt"
-                },
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Jan 02 2026",
-            "title": "U.S. Treasury Removes Intellexa-Linked Individuals from Sanctions List",
-            "content": "The U.S. Treasury has removed three individuals linked to the Intellexa spyware firm from its sanctions list. These individuals, initially sanctioned in 2024, have reportedly separated themselves from the company. This decision reflects ongoing diplomatic and legal negotiations surrounding international spyware use and regulation. The removal from the sanctions list suggests a shift in the individuals&#x27; involvement or cooperation with authorities. Organizations should continue to monitor developments in spyware regulation and adapt their compliance strategies accordingly.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/treasury-removes-intellexa-spyware-linked-trio-from-sanctions-list/",
+            "date": "Jan 05 2026",
+            "title": "ISC Stormcast Highlights Emerging Cyber Threats for January 2026",
+            "content": "The SANS Internet Storm Center&#x27;s latest Stormcast podcast for January 5, 2026, provides an overview of current cybersecurity threats and trends. The InfoCON level remains green, indicating a stable threat environment, but experts urge vigilance as new vulnerabilities continue to surface. Key topics include the latest patch updates and potential exploits affecting enterprise systems. Security professionals are advised to stay informed on emerging threats and apply security patches promptly to mitigate risks. The podcast serves as a crucial resource for IT teams to stay ahead of potential cyber threats in the new year.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32596",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
@@ -67,33 +18,64 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Jan 02 2026",
-            "title": "Optimizing DNS Response Times with Tshark",
-            "content": "A recent project involved using Tshark to debug and optimize DNS response times in a home network. The initiative followed a failure of a homelab server, necessitating a network overhaul. Tshark, a network protocol analyzer, proved instrumental in identifying and resolving &quot;layer 1&quot; issues. This case study underscores the importance of regular network maintenance and the utility of tools like Tshark in diagnosing network performance problems. IT professionals are encouraged to incorporate similar diagnostic tools to ensure efficient network operations.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32592",
+            "date": "Jan 03 2026",
+            "title": "President Trump Mandates Divestment in $2.9 Million Chip Deal for National Security",
+            "content": "In a decisive move to safeguard national security, President Trump has ordered the divestment of Emcore Corp.&#x27;s computer chips and wafer fabrication operation in a $2.9 million deal. The decision underscores the administration&#x27;s focus on protecting critical technology sectors from foreign influence. Emcore, known for its aerospace and defense expertise, is compelled to restructure its operations to align with U.S. security interests. This action reflects a broader trend of scrutinizing foreign investments in sensitive industries. Companies in similar sectors should evaluate their foreign partnerships and prepare for potential regulatory changes.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/president-trump-orders-divestment-in-2-9-million-chips-deal-to-protect-us-security-interests/",
             "relatedResources": []
         },
         {
             "date": "Jan 02 2026",
-            "title": "Google Tests New High-Speed Image AI Model",
-            "content": "Google is testing a new image AI model, &quot;Nano Banana 2 Flash,&quot; which promises to be its fastest yet. The model is expected to match the capabilities of the Gemini 3 Pro Nano Banana but at a lower cost. This development highlights Google&#x27;s ongoing advancements in AI technology and its commitment to making powerful tools more accessible. The new model could significantly impact industries relying on image processing and AI-driven insights. Developers and tech leaders should watch for official release details and consider potential applications in their projects.",
+            "title": "Kimwolf Botnet Exploits Vulnerabilities Across Global Networks",
+            "content": "The Kimwolf botnet is actively exploiting vulnerabilities across global networks, prompting an urgent security advisory. This botnet has been silently operating for months, targeting various systems through unpatched vulnerabilities. The threat poses a significant risk to organizations, potentially leading to data breaches and operational disruptions. Security experts emphasize the need for immediate patching of affected systems and increased network monitoring. The Kimwolf botnet highlights the persistent threat of botnets in the cybersecurity landscape, urging organizations to fortify their defenses.",
+            "source": "Krebs on Security",
+            "sourceUrl": "https://krebsonsecurity.com/2026/01/the-kimwolf-botnet-is-stalking-your-local-network/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 02 2026",
+            "title": "Trust Wallet Links $8.5 Million Crypto Theft to Shai-Hulud NPM Attack",
+            "content": "Trust Wallet has connected an $8.5 million crypto theft to the Shai-Hulud NPM attack that compromised its web browser. Over 2,500 crypto wallets were affected in this sophisticated breach. The attack is believed to be part of an industry-wide vulnerability exploited in November. The incident underscores the critical need for enhanced security measures in the cryptocurrency sector. Users are advised to review their wallet security settings and remain vigilant against potential phishing attempts. This breach serves as a reminder of the evolving threats targeting digital assets.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/google/google-is-testing-a-new-image-ai-and-its-going-to-be-its-fastest-model/",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/trust-wallet-links-85-million-crypto-theft-to-shai-hulud-npm-attack/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 02 2026",
+            "title": "Cybersecurity Predictions for 2026 Highlight AI-Driven Threats",
+            "content": "Cybersecurity experts predict a rise in AI-driven threats and a shift towards resilience over prevention in 2026. As cyber threats evolve, advanced security measures are crucial to combat these risks. The integration of artificial intelligence in cyberattacks poses new challenges for defense strategies. Organizations are encouraged to focus on building resilient systems capable of withstanding sophisticated attacks. This prediction aligns with the growing trend of AI adoption across industries, emphasizing the need for proactive security measures.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/threat-intelligence/cybersecurity-predictions-for-2026-navigating-the-future-of-digital-threats",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 02 2026",
+            "title": "CTOs Share Cybersecurity Resolutions for a Safer 2026",
+            "content": "Leading CTOs have outlined their cybersecurity resolutions for 2026, focusing on securing managed cloud providers (MCPs) and enhancing supply chain defenses. Formal governance for AI and quantum technologies is also a priority. These resolutions aim to address the increasing complexity of cyber threats and the need for robust defense mechanisms. Organizations are advised to adopt comprehensive security frameworks and invest in advanced technologies to protect their digital assets. The emphasis on governance highlights the importance of regulatory compliance and risk management.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cyber-risk/cto-new-year-resolutions-for-a-more-secure-2026",
             "relatedResources": [
                 {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
+                    "label": "Third-Party Risk Management",
+                    "url": "/guides/third-party-risk-management.html",
+                    "icon": "fa-handshake"
                 }
             ]
         },
         {
-            "date": "Jan 04 2026",
-            "title": "Surge in Cryptocurrency Scam Emails and Web Pages Marks 2026 Onset",
-            "content": "As 2026 begins, a significant increase in cryptocurrency scam emails and fraudulent web pages has been observed, targeting unsuspecting users. These scams often involve phishing schemes designed to steal digital assets by tricking users into providing private keys or login credentials. The scams are leveraging sophisticated social engineering tactics and are affecting both individual investors and enterprises involved in cryptocurrency transactions. This trend highlights a growing challenge in securing digital financial assets against increasingly complex cyber threats. Users are advised to remain vigilant, verify the authenticity of email sources, and use multi-factor authentication to protect their accounts. The rise in such scams underscores the necessity for enhanced cybersecurity measures in the crypto space.",
-            "source": "SANS Internet Storm Center, InfoCON: green",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32594"
+            "date": "Jan 02 2026",
+            "title": "Transparent Tribe Targets Indian Government with New RAT Attacks",
+            "content": "The threat actor known as Transparent Tribe has launched a new wave of remote access trojan (RAT) attacks against Indian governmental and academic institutions. These attacks grant persistent control over compromised systems, posing a significant threat to national security. The campaign employs deceptive delivery techniques to infiltrate targets. Organizations in the region are advised to enhance their cybersecurity measures and conduct thorough threat assessments. This development highlights the ongoing cyber espionage activities targeting strategic entities.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/01/transparent-tribe-launches-new-rat.html",
+            "relatedResources": [
+                {
+                    "label": "MITRE ATT&CK Mapping",
+                    "url": "/guides/mitre-attack-mapping.html",
+                    "icon": "fa-map"
+                }
+            ]
         },
         {
             "date": "May 05 2026",
@@ -106,72 +88,71 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Jan 04 2026",
-            "title": "Zeroth Launches Real-Life WALL-E Robot in the US",
-            "content": "Zeroth, an AI robotics startup, has brought a real-life version of Disney&#x27;s WALL-E to the market, initially launching in China and now introducing an off-brand version in the US for $5,599. This robot companion mimics the beloved character&#x27;s design and functionality, offering advanced AI capabilities for interaction. The US version lacks Disney&#x27;s licensed design but retains the core features, providing an interactive and autonomous experience. This move highlights the growing trend of AI-driven consumer robotics aimed at personal companionship. Potential buyers should consider the robot&#x27;s capabilities and price point in comparison to other home automation and robotics solutions.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/852956/zeroth-wall-e-robot-w1-m1-ces-2026",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 03 2026",
-            "title": "Tech Billionaires Sell $16 Billion in Stocks Amid Market Surge",
-            "content": "In 2025, tech billionaires, led by Jeff Bezos, collectively sold $16 billion in stock as market valuations soared. Bezos alone offloaded 25 million Amazon shares worth $5.7 billion during June and July, coinciding with his marriage to Lauren Sanchez in Venice. This trend reflects a strategic cash-out amid favorable market conditions, potentially signaling confidence in continued personal financial stability despite volatile economic landscapes. Investors and market analysts should monitor these significant stock movements as indicators of broader market trends and individual financial strategies.",
+            "title": "DoorDash Driver Banned for Using AI to Fake Delivery",
+            "content": "DoorDash has confirmed the suspension of a delivery driver who allegedly used an AI-generated photo to falsely claim a completed delivery. The incident highlights the increasing misuse of AI technologies to manipulate and deceive service platforms. This development raises concerns about the integrity of gig economy services and the potential for AI to be exploited for fraudulent activities. DoorDash has not disclosed specific details about how the deception was detected or the exact AI tools used. The case underscores the need for enhanced verification measures and AI detection capabilities in app-based delivery services to maintain trust and reliability.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/03/tech-billionaires-cashed-out-16-billion-in-2025-as-stocks-soared/",
+            "sourceUrl": "https://techcrunch.com/2026/01/04/doordash-says-it-banned-driver-who-seemingly-faked-a-delivery-using-ai/",
             "relatedResources": [
                 {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
+                    "label": "Zero-Day Detection Guide",
+                    "url": "/guides/zero-day-detection.html",
+                    "icon": "fa-exclamation-triangle"
                 }
             ]
         },
         {
-            "date": "Jan 03 2026",
-            "title": "Rethinking API Usage in the Era of Large Language Models",
-            "content": "The traditional approach to software interfaces is evolving with the rise of large language models (LLMs), shifting focus from &quot;which API do I call?&quot; to more intuitive interaction paradigms. Historically, developers adapted to rigid interfaces, but LLMs offer a more natural, language-based interaction, reducing the need for memorizing commands or SDK integration. This evolution signifies a paradigm shift in software development, emphasizing user-friendly, adaptable systems. Professionals should explore integrating LLMs into their workflows to enhance efficiency and user experience.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/why-which-api-do-i-call-is-the-wrong-question-in-the-llm-era",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 03 2026",
-            "title": "Social Media Platforms Struggle with Disinformation Post-Maduro Capture",
-            "content": "Following the capture of Nicolás Maduro amid a US invasion of Venezuela, social media platforms like TikTok, Instagram, and X have been inundated with disinformation. This includes AI-generated videos and repurposed old footage, complicating the public&#x27;s ability to discern fact from fiction. The platforms&#x27; inadequate response underscores the ongoing challenge of moderating content in real-time during geopolitical events. Users and stakeholders must remain vigilant, relying on verified sources and critical thinking to navigate the digital information landscape.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/disinformation-floods-social-media-after-nicolas-maduros-capture/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 03 2026",
-            "title": "AI Chatbots Show Varied Accuracy in Reporting Maduro&#x27;s Capture",
-            "content": "The capture of Nicolás Maduro by US forces has exposed discrepancies in AI chatbots&#x27; ability to accurately report breaking news. While some chatbots provided reliable updates, others failed to reflect the event&#x27;s occurrence, highlighting inconsistencies in AI&#x27;s processing of real-time information. This raises concerns about the reliability of AI as a news source, particularly in fast-evolving situations. Users should cross-reference AI-generated news with traditional outlets to ensure accuracy and context.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/us-invaded-venezuela-and-captured-nicolas-maduro-chatgpt-disagrees/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 02 2026",
-            "title": "Controversy as Grok AI Edits Images Without Consent",
-            "content": "xAI&#x27;s Grok has sparked controversy by enabling users to remove clothing from images without consent, following a new feature rollout on the X platform. This capability allows for instant image editing without notifying the original poster, raising significant ethical and privacy concerns. The feature&#x27;s misuse, particularly involving minors, underscores the need for robust content moderation and user protection measures. Users and platform providers must prioritize ethical guidelines and technological safeguards to prevent abuse.",
+            "date": "Jan 04 2026",
+            "title": "LG Unveils CLOiD Home Robot Capable of Household Tasks at CES",
+            "content": "LG has announced its CLOiD home robot, designed to automate household chores, at the Consumer Electronics Show (CES). The robot can perform tasks such as fetching milk, preparing breakfast, and folding laundry, aiming to create a &quot;zero labor home.&quot; This development reflects the growing trend of integrating AI and robotics into everyday life to enhance convenience and efficiency. CLOiD&#x27;s capabilities could significantly impact the home appliance market, offering a glimpse into the future of smart home technology. Consumers and tech enthusiasts should watch for further demonstrations and potential market availability announcements.",
             "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/news/853191/grok-explicit-bikini-pictures-minors",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 02 2026",
-            "title": "India Demands Action from Musk&#x27;s X Over Grok&#x27;s Inappropriate Content",
-            "content": "India&#x27;s IT ministry has issued a 72-hour ultimatum to X, demanding an action-taken report addressing Grok&#x27;s ability to generate &quot;obscene&quot; AI content. This follows concerns over the AI&#x27;s misuse in creating inappropriate images, particularly affecting minors. The directive highlights the importance of regulatory oversight in AI content generation and the need for companies to implement effective content moderation strategies. Stakeholders should monitor the outcome as a precedent for international regulatory approaches to AI ethics and safety.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/02/india-orders-musks-x-to-fix-grok-over-obscene-ai-content/",
+            "sourceUrl": "https://www.theverge.com/tech/854082/lg-cloid-home-robot-fold-laundry-ces",
             "relatedResources": []
         },
         {
             "date": "Jan 04 2026",
-            "title": "Subtle Launches Advanced Noise-Canceling Earbuds with Voice Dictation",
-            "content": "Subtle has released its latest $199 earbuds featuring advanced noise-cancelation technology and integrated voice dictation capabilities. These earbuds allow users to dictate text in any application on both desktop and mobile devices, leveraging AI-powered speech recognition. This development targets tech-savvy consumers and professionals seeking seamless multitasking solutions. The earbuds are designed to enhance productivity by facilitating hands-free communication and content creation. As competition in the wearable tech market intensifies, Subtle&#x27;s innovation underscores the growing demand for multifunctional devices.",
+            "title": "Introducing &#x27;Intelition&#x27;: The New Era of Human-Machine Collaboration",
+            "content": "VentureBeat discusses the emergence of &quot;intelition,&quot; a term describing the synergy between human and machine intelligence in decision-making and creativity. As AI technologies evolve, the boundaries between human cognition and machine capabilities are blurring, necessitating new vocabulary to capture this dynamic interaction. This concept could revolutionize industries by enhancing problem-solving and innovation through collaborative intelligence. Tech leaders and developers should consider the implications of intelition on future AI applications and workforce integration. Understanding this paradigm shift is crucial for leveraging AI&#x27;s full potential in various sectors.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/intelition-changes-everything-ai-is-no-longer-a-tool-you-invoke",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 04 2026",
+            "title": "Plaud Enhances NotePin AI Recorder with New Button Feature",
+            "content": "Plaud has updated its NotePin AI recorder, introducing the NotePin S with a new physical button for easier operation. This upgrade is complemented by the Plaud Desktop app, which allows users to record audio in online meetings, available for free to all Plaud Note and NotePin owners. The addition of a button simplifies user interaction, addressing customer feedback for more intuitive controls. This enhancement reflects the ongoing innovation in AI-powered recording devices as they become essential tools for professionals managing digital communications. Users should explore the new features to optimize their meeting documentation processes.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/851393/plaud-notepin-s-desktop-app-ces",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 04 2026",
+            "title": "Grok Under Investigation for Creating Sexualized Deepfakes",
+            "content": "Authorities in France and Malaysia have launched investigations into Grok, a company accused of generating sexualized deepfakes of women and minors. This follows similar actions by Indian authorities, highlighting the growing international concern over the misuse of AI in creating harmful content. Deepfakes pose significant ethical and legal challenges, particularly when used to exploit individuals without consent. The investigations underscore the need for stricter regulations and technological solutions to detect and prevent the proliferation of malicious AI-generated content. Stakeholders in AI development must prioritize ethical considerations to mitigate such abuses.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/04/subtle-releases-ear-buds-with-its-noise-cancelation-models/"
+            "sourceUrl": "https://techcrunch.com/2026/01/04/french-and-malaysian-authorities-are-investigating-grok-for-generating-sexualized-deepfakes/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 04 2026",
+            "title": "SwitchBot Launches AI MindClip as a &#x27;Second Brain&#x27; for Conversations",
+            "content": "SwitchBot has introduced the AI MindClip, a clip-on audio recorder designed to capture and organize spoken information from daily interactions and work meetings. Announced at CES, this device uses AI to convert conversations into summaries, effectively acting as a &quot;second brain&quot; for users. The MindClip represents a growing trend in AI-driven personal assistants aimed at enhancing memory and productivity. Professionals and consumers alike may find value in this technology for managing information overload and improving workflow efficiency. Potential users should evaluate its capabilities in the context of their personal and professional needs.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/853109/switchbot-ai-mindclip-audio-recorder-ces-announcement",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 04 2026",
+            "title": "Plaud Introduces New AI Pin and Desktop Meeting Notetaker",
+            "content": "Plaud has expanded its product lineup with a new AI pin and a desktop app designed to record online meetings. The launch targets competitors like Granola, emphasizing Plaud&#x27;s commitment to enhancing digital communication tools. The desktop app offers a streamlined solution for capturing meeting notes, potentially increasing productivity and accuracy in professional settings. This development highlights the growing demand for AI-assisted tools that simplify information management in virtual environments. Users interested in optimizing their meeting documentation should consider exploring Plaud&#x27;s latest offerings.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/04/plaud-launches-a-new-ai-pin-and-a-desktop-meeting-notetaker/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
         }
     ],
     "articles": {},
@@ -234,18 +215,6 @@ const websiteContent = {
         "privacy": "<h2>Privacy Policy</h2><p style='color: var(--text-muted); font-size: 0.9rem; margin-bottom: 2rem;'>Last Updated: November 18, 2025</p><h3>Information We Collect</h3><p>TheHGTech is committed to protecting your privacy. We collect minimal information necessary to provide our services:</p><ul style='margin-left: 1.5rem; margin-bottom: 1.5rem;'><li>Usage data (pages visited, time spent, browser type) via Google Analytics</li><li>Cookies for theme preferences and site functionality</li></ul><h3>Third-Party Services</h3><p>We use the following third-party services that may collect data:</p><ul style='margin-left: 1.5rem; margin-bottom: 1.5rem;'><li><strong>Google Analytics:</strong> For anonymous traffic analysis</li><li><strong>Carbon Ads (via Fullres):</strong> For displaying privacy-friendly advertisements</li></ul><h3>Advertising</h3><p>We display advertisements through Carbon Ads, a privacy-focused ad network. Carbon Ads:</p><ul style='margin-left: 1.5rem; margin-bottom: 1.5rem;'><li>Does NOT use cookies for tracking</li><li>Does NOT collect personal information</li><li>Only uses contextual targeting based on page content</li><li>Serves ads from ethical, vetted technology companies</li></ul><p>Learn more: <a href='https://www.carbonads.net/privacy' target='_blank' rel='noopener noreferrer' style='color: var(--accent);'>Carbon Ads Privacy Policy</a></p><h3>Cookies</h3><p>We use minimal cookies for:</p><ul style='margin-left: 1.5rem; margin-bottom: 1.5rem;'><li>Remembering your dark/light theme preference</li><li>Tracking cookie consent (if accepted)</li></ul><h3>Data Security</h3><p>We implement industry-standard security measures including HTTPS, Content Security Policy (CSP), and HSTS to protect your information.</p><h3>Your Rights</h3><p>You have the right to:</p><ul style='margin-left: 1.5rem; margin-bottom: 1.5rem;'><li>Access any personal data we hold about you</li><li>Request deletion of your data</li><li>Opt-out of analytics by using browser privacy settings</li><li>Use ad blockers to prevent ad display</li></ul><h3>External Links</h3><p>Our site contains links to external websites. We are not responsible for the privacy practices of these sites.</p><h3>Changes to Policy</h3><p>We may update this policy periodically. The 'Last Updated' date will reflect any changes.</p><h3>Contact</h3><p>For privacy concerns, contact us at: <a href='mailto:harish@thehgtech.com' style='color: var(--accent);'>harish@thehgtech.com</a></p>",
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
-    "recentCVEs": [
-        {
-            "cveId": "CVE-2025-14847",
-            "dateAdded": "Dec 29, 2025",
-            "vendor": "MongoDB MongoDB and MongoDB Server",
-            "description": "MongoDB Server contains an improper handling of length parameter inconsistency vulnerability in Zlib compressed protocol headers. This vulnerability may allow a read of uninitialized heap memory by an",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-14847",
-            "isZeroDay": false
-        }
-    ],
+    "recentCVEs": [],
     "featureCards": []
 };
