@@ -1,103 +1,12 @@
 {
-  "last_updated": "2026-01-07T01:47:24.703318",
+  "last_updated": "2026-01-07T12:48:08.709930",
   "period": "Last 7 days",
   "total_groups": 21,
-  "total_victims": 221,
+  "total_victims": 220,
   "groups": [
     {
-      "name": "Qilin",
-      "count": 42,
-      "victims": [
-        {
-          "name": "Berkmann Wine Cellars",
-          "date": "2026-01-06 22:55:06.300001",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=ffb15494-9275-3bb7-80b6-db43a3030983",
-          "discovered_date": "2026-01-06T22:55:06.300001"
-        },
-        {
-          "name": "USArt",
-          "date": "2026-01-06 18:57:29.822103",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=52cf7b21-b74f-3dc7-9020-d3c0ee43d9a7",
-          "discovered_date": "2026-01-06T18:57:29.822103"
-        },
-        {
-          "name": "Secorp Industries",
-          "date": "2026-01-06 14:49:37.708686",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=986e252b-9daf-36d8-a26b-bbe34e8706f2",
-          "discovered_date": "2026-01-06T14:49:37.708686"
-        },
-        {
-          "name": "Medical Asset Management",
-          "date": "2026-01-06 14:48:55.561151",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=654fdc3f-f14e-3f0f-9f5c-b4dc96c0880b",
-          "discovered_date": "2026-01-06T14:48:55.561151"
-        },
-        {
-          "name": "Health Bridge Chiropractic",
-          "date": "2026-01-06 14:48:15.934258",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=c70181f7-7683-3ebd-b28f-49d117a3e0a0",
-          "discovered_date": "2026-01-06T14:48:15.934258"
-        },
-        {
-          "name": "Sönmezler Metal",
-          "date": "2026-01-04 13:09:28.830354",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=fce35e22-6243-390c-bb7e-00074eb92bf8",
-          "discovered_date": "2026-01-04T13:09:28.830354"
-        },
-        {
-          "name": "Cal Spas, Inc.",
-          "date": "2026-01-04 13:08:52.289164",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=b32b7816-1b2c-3f86-8cfb-c05213b4ac10",
-          "discovered_date": "2026-01-04T13:08:52.289164"
-        },
-        {
-          "name": "Tommotek",
-          "date": "2026-01-04 11:59:01.033215",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=14295723-fdc2-34b8-a7f3-468219a279c6",
-          "discovered_date": "2026-01-04T11:59:01.033215"
-        },
-        {
-          "name": "Farmacia San Pablo",
-          "date": "2026-01-02 19:06:54.344956",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=d0d00442-a75e-3086-9182-7d91dd31e943",
-          "discovered_date": "2026-01-02T19:06:54.344956"
-        },
-        {
-          "name": "Sai Oral SurgeryOral",
-          "date": "2026-01-02 18:17:21.347439",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=2d9cfa32-39cb-34a7-8400-2a1af91d4d27",
-          "discovered_date": "2026-01-02T18:17:21.347439"
-        }
-      ],
-      "industries": [
-        "Consumer Services",
-        "Education",
-        "Healthcare",
-        "Manufacturing",
-        "Not Found"
-      ],
-      "countries": [
-        "DE",
-        "FI",
-        "GB",
-        "JP",
-        "MX"
-      ],
-      "trend": "up",
-      "trend_percentage": 15,
-      "daily_counts": [
-        0,
-        20,
-        0,
-        6,
-        0,
-        10,
-        0
-      ]
-    },
-    {
       "name": "Lynx",
-      "count": 42,
+      "count": 44,
       "victims": [
         {
           "name": "www.swautomation.at",
@@ -183,6 +92,97 @@
         0,
         40,
         2,
+        2
+      ]
+    },
+    {
+      "name": "Qilin",
+      "count": 39,
+      "victims": [
+        {
+          "name": "Berkmann Wine Cellars",
+          "date": "2026-01-06 22:55:06.300001",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=ffb15494-9275-3bb7-80b6-db43a3030983",
+          "discovered_date": "2026-01-06T22:55:06.300001"
+        },
+        {
+          "name": "USArt",
+          "date": "2026-01-06 18:57:29.822103",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=52cf7b21-b74f-3dc7-9020-d3c0ee43d9a7",
+          "discovered_date": "2026-01-06T18:57:29.822103"
+        },
+        {
+          "name": "Secorp Industries",
+          "date": "2026-01-06 14:49:37.708686",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=986e252b-9daf-36d8-a26b-bbe34e8706f2",
+          "discovered_date": "2026-01-06T14:49:37.708686"
+        },
+        {
+          "name": "Medical Asset Management",
+          "date": "2026-01-06 14:48:55.561151",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=654fdc3f-f14e-3f0f-9f5c-b4dc96c0880b",
+          "discovered_date": "2026-01-06T14:48:55.561151"
+        },
+        {
+          "name": "Health Bridge Chiropractic",
+          "date": "2026-01-06 14:48:15.934258",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=c70181f7-7683-3ebd-b28f-49d117a3e0a0",
+          "discovered_date": "2026-01-06T14:48:15.934258"
+        },
+        {
+          "name": "Sönmezler Metal",
+          "date": "2026-01-04 13:09:28.830354",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=fce35e22-6243-390c-bb7e-00074eb92bf8",
+          "discovered_date": "2026-01-04T13:09:28.830354"
+        },
+        {
+          "name": "Cal Spas, Inc.",
+          "date": "2026-01-04 13:08:52.289164",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=b32b7816-1b2c-3f86-8cfb-c05213b4ac10",
+          "discovered_date": "2026-01-04T13:08:52.289164"
+        },
+        {
+          "name": "Tommotek",
+          "date": "2026-01-04 11:59:01.033215",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=14295723-fdc2-34b8-a7f3-468219a279c6",
+          "discovered_date": "2026-01-04T11:59:01.033215"
+        },
+        {
+          "name": "Farmacia San Pablo",
+          "date": "2026-01-02 19:06:54.344956",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=d0d00442-a75e-3086-9182-7d91dd31e943",
+          "discovered_date": "2026-01-02T19:06:54.344956"
+        },
+        {
+          "name": "Sai Oral SurgeryOral",
+          "date": "2026-01-02 18:17:21.347439",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=2d9cfa32-39cb-34a7-8400-2a1af91d4d27",
+          "discovered_date": "2026-01-02T18:17:21.347439"
+        }
+      ],
+      "industries": [
+        "Consumer Services",
+        "Education",
+        "Healthcare",
+        "Manufacturing",
+        "Not Found"
+      ],
+      "countries": [
+        "DE",
+        "FI",
+        "GB",
+        "JP",
+        "MX"
+      ],
+      "trend": "up",
+      "trend_percentage": 15,
+      "daily_counts": [
+        0,
+        20,
+        0,
+        6,
+        0,
+        10,
         0
       ]
     },
@@ -277,7 +277,7 @@
     },
     {
       "name": "Play",
-      "count": 19,
+      "count": 15,
       "victims": [
         {
           "name": "Autohaus Pichel GmbH",
@@ -304,30 +304,6 @@
           "discovered_date": "2026-01-02T13:06:58.610843"
         },
         {
-          "name": "Wardell Builders",
-          "date": "2026-01-02 13:06:21.037247",
-          "url": "http://k7kg3jqxang3wh7hnmaiokchk7qoebupfgoik6rha6mjpzwupwtj25yd.onion/topic.php?id=fnnIZJm2JJbPl",
-          "discovered_date": "2026-01-02T13:06:21.037247"
-        },
-        {
-          "name": "Garner Foods",
-          "date": "2026-01-02 13:05:43.682929",
-          "url": "http://k7kg3jqxang3wh7hnmaiokchk7qoebupfgoik6rha6mjpzwupwtj25yd.onion/topic.php?id=dljB2CC4HghAaq",
-          "discovered_date": "2026-01-02T13:05:43.682929"
-        },
-        {
-          "name": "Pewarchuk CPA",
-          "date": "2026-01-02 13:05:05.743183",
-          "url": "http://k7kg3jqxang3wh7hnmaiokchk7qoebupfgoik6rha6mjpzwupwtj25yd.onion/topic.php?id=dbfVgYT1fSXdlt",
-          "discovered_date": "2026-01-02T13:05:05.743183"
-        },
-        {
-          "name": "Benise-Dowling & Associates",
-          "date": "2026-01-02 13:04:27.607494",
-          "url": "http://k7kg3jqxang3wh7hnmaiokchk7qoebupfgoik6rha6mjpzwupwtj25yd.onion/topic.php?id=sL5zMN7JGAyWd1",
-          "discovered_date": "2026-01-02T13:04:27.607494"
-        },
-        {
           "name": "Autohaus Pichel GmbH",
           "date": "2026-01-06T11:57:51+00:00",
           "url": "https://www.ransomware.live/id/QXV0b2hhdXMgUGljaGVsIEdtYkhAcGxheQ==",
@@ -338,14 +314,36 @@
           "date": "2026-01-06T11:56:46+00:00",
           "url": "https://www.ransomware.live/id/RHVlIERveWxlIEZhbm5pbmdAcGxheQ==",
           "discovered_date": "2026-01-06T11:56:46+00:00"
+        },
+        {
+          "name": "Mill Brothers",
+          "date": "2026-01-06T11:56:07+00:00",
+          "url": "https://www.ransomware.live/id/TWlsbCBCcm90aGVyc0BwbGF5",
+          "discovered_date": "2026-01-06T11:56:07+00:00"
+        },
+        {
+          "name": "Lakeside Title Company",
+          "date": "2026-01-02T13:06:58+00:00",
+          "url": "https://www.ransomware.live/id/TGFrZXNpZGUgVGl0bGUgQ29tcGFueUBwbGF5",
+          "discovered_date": "2026-01-02T13:06:58+00:00"
+        },
+        {
+          "name": "Wardell Builders",
+          "date": "2026-01-02T13:06:21+00:00",
+          "url": "https://www.ransomware.live/id/V2FyZGVsbCBCdWlsZGVyc0BwbGF5",
+          "discovered_date": "2026-01-02T13:06:21+00:00"
+        },
+        {
+          "name": "Garner Foods",
+          "date": "2026-01-02T13:05:43+00:00",
+          "url": "https://www.ransomware.live/id/R2FybmVyIEZvb2RzQHBsYXk=",
+          "discovered_date": "2026-01-02T13:05:43+00:00"
         }
       ],
       "industries": [
-        "Agriculture and Food Production",
-        "Business Services",
-        "Construction",
         "Financial Services",
-        "Not Found"
+        "Not Found",
+        "Transportation/Logistics"
       ],
       "countries": [
         "CA",
@@ -357,7 +355,7 @@
       "trend_percentage": 15,
       "daily_counts": [
         0,
-        12,
+        8,
         0,
         0,
         0,
@@ -717,78 +715,78 @@
       ]
     },
     {
-      "name": "Incransom",
+      "name": "Thegentlemen",
       "count": 8,
       "victims": [
         {
-          "name": "proton-system_Serbia",
-          "date": "2026-01-03 14:01:20.311496",
-          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/69590e3b8f1d14b743e48ddb",
-          "discovered_date": "2026-01-03T14:01:20.311496"
+          "name": "Systherm Grupa",
+          "date": "2026-01-07 12:01:52.915118",
+          "url": "http://tezwsse5czllksjb7cwp65rvnk4oobmzti2znn42i43bjdfd2prqqkad.onion",
+          "discovered_date": "2026-01-07T12:01:52.915118"
         },
         {
-          "name": "Automation One Business Systems Inc",
-          "date": "2026-01-03 14:01:00.772638",
-          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/69590e3b8f1d14b743e48df7",
-          "discovered_date": "2026-01-03T14:01:00.772638"
+          "name": "Wamtechnik",
+          "date": "2026-01-07 12:03:02.525050",
+          "url": "http://tezwsse5czllksjb7cwp65rvnk4oobmzti2znn42i43bjdfd2prqqkad.onion",
+          "discovered_date": "2026-01-07T12:03:02.525050"
         },
         {
-          "name": "Borough of Moonachie",
-          "date": "2026-01-03 17:17:43.311490",
-          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/69594c118f1d14b743e8290d",
-          "discovered_date": "2026-01-03T17:17:43.311490"
+          "name": "Complexul Energetic Oltenia",
+          "date": "2026-01-06 21:47:11.935992",
+          "url": "http://tezwsse5czllksjb7cwp65rvnk4oobmzti2znn42i43bjdfd2prqqkad.onion",
+          "discovered_date": "2026-01-06T21:47:11.935992"
         },
         {
-          "name": "Borough of Moonachie",
-          "date": "2026-01-03T17:17:43+00:00",
-          "url": "https://www.ransomware.live/id/Qm9yb3VnaCBvZiBNb29uYWNoaWVAaW5jcmFuc29t",
-          "discovered_date": "2026-01-03T17:17:43+00:00"
+          "name": "Hart",
+          "date": "2026-01-07 12:00:34.306333",
+          "url": "http://tezwsse5czllksjb7cwp65rvnk4oobmzti2znn42i43bjdfd2prqqkad.onion",
+          "discovered_date": "2026-01-07T12:00:34.306333"
         },
         {
-          "name": "proton-system_Serbia",
-          "date": "2026-01-03T14:01:20+00:00",
-          "url": "https://www.ransomware.live/id/cHJvdG9uLXN5c3RlbV9TZXJiaWFAaW5jcmFuc29t",
-          "discovered_date": "2026-01-03T14:01:20+00:00"
+          "name": "Wamtechnik",
+          "date": "2026-01-07T12:03:02+00:00",
+          "url": "https://www.ransomware.live/id/V2FtdGVjaG5pa0B0aGVnZW50bGVtZW4=",
+          "discovered_date": "2026-01-07T12:03:02+00:00"
         },
         {
-          "name": "Automation One Business Systems Inc",
-          "date": "2026-01-03T14:01:00+00:00",
-          "url": "https://www.ransomware.live/id/QXV0b21hdGlvbiBPbmUgQnVzaW5lc3MgU3lzdGVtcyBJbmNAaW5jcmFuc29t",
-          "discovered_date": "2026-01-03T14:01:00+00:00"
+          "name": "Systherm Grupa",
+          "date": "2026-01-07T12:01:52+00:00",
+          "url": "https://www.ransomware.live/id/U3lzdGhlcm0gR3J1cGFAdGhlZ2VudGxlbWVu",
+          "discovered_date": "2026-01-07T12:01:52+00:00"
         },
         {
-          "name": "Burnham Brown",
-          "date": "2025-12-31T10:26:43+00:00",
-          "url": "https://www.ransomware.live/id/QnVybmhhbSBCcm93bkBpbmNyYW5zb20=",
-          "discovered_date": "2025-12-31T10:26:43+00:00"
+          "name": "Hart",
+          "date": "2026-01-07T12:00:34+00:00",
+          "url": "https://www.ransomware.live/id/SGFydEB0aGVnZW50bGVtZW4=",
+          "discovered_date": "2026-01-07T12:00:34+00:00"
         },
         {
-          "name": "3GH Informatica Integral",
-          "date": "2025-12-31T07:26:19+00:00",
-          "url": "https://www.ransomware.live/id/M0dIIEluZm9ybWF0aWNhIEludGVncmFsQGluY3JhbnNvbQ==",
-          "discovered_date": "2025-12-31T07:26:19+00:00"
+          "name": "Complexul Energetic Oltenia",
+          "date": "2026-01-06T21:47:11+00:00",
+          "url": "https://www.ransomware.live/id/Q29tcGxleHVsIEVuZXJnZXRpYyBPbHRlbmlhQHRoZWdlbnRsZW1lbg==",
+          "discovered_date": "2026-01-06T21:47:11+00:00"
         }
       ],
       "industries": [
-        "Public Sector",
+        "Energy",
+        "Not Found",
         "Technology"
       ],
       "countries": [
-        "CA",
-        "ES",
-        "RS",
-        "US"
+        "N/A",
+        "PL",
+        "RO"
       ],
       "trend": "stable",
       "trend_percentage": 0,
       "daily_counts": [
         0,
         0,
-        6,
         0,
         0,
         0,
-        0
+        2,
+        6
       ]
     },
     {
@@ -852,6 +850,68 @@
         0,
         0,
         2,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Incransom",
+      "count": 6,
+      "victims": [
+        {
+          "name": "proton-system_Serbia",
+          "date": "2026-01-03 14:01:20.311496",
+          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/69590e3b8f1d14b743e48ddb",
+          "discovered_date": "2026-01-03T14:01:20.311496"
+        },
+        {
+          "name": "Automation One Business Systems Inc",
+          "date": "2026-01-03 14:01:00.772638",
+          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/69590e3b8f1d14b743e48df7",
+          "discovered_date": "2026-01-03T14:01:00.772638"
+        },
+        {
+          "name": "Borough of Moonachie",
+          "date": "2026-01-03 17:17:43.311490",
+          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/69594c118f1d14b743e8290d",
+          "discovered_date": "2026-01-03T17:17:43.311490"
+        },
+        {
+          "name": "Borough of Moonachie",
+          "date": "2026-01-03T17:17:43+00:00",
+          "url": "https://www.ransomware.live/id/Qm9yb3VnaCBvZiBNb29uYWNoaWVAaW5jcmFuc29t",
+          "discovered_date": "2026-01-03T17:17:43+00:00"
+        },
+        {
+          "name": "proton-system_Serbia",
+          "date": "2026-01-03T14:01:20+00:00",
+          "url": "https://www.ransomware.live/id/cHJvdG9uLXN5c3RlbV9TZXJiaWFAaW5jcmFuc29t",
+          "discovered_date": "2026-01-03T14:01:20+00:00"
+        },
+        {
+          "name": "Automation One Business Systems Inc",
+          "date": "2026-01-03T14:01:00+00:00",
+          "url": "https://www.ransomware.live/id/QXV0b21hdGlvbiBPbmUgQnVzaW5lc3MgU3lzdGVtcyBJbmNAaW5jcmFuc29t",
+          "discovered_date": "2026-01-03T14:01:00+00:00"
+        }
+      ],
+      "industries": [
+        "Public Sector",
+        "Technology"
+      ],
+      "countries": [
+        "CA",
+        "RS",
+        "US"
+      ],
+      "trend": "stable",
+      "trend_percentage": 0,
+      "daily_counts": [
+        0,
+        0,
+        6,
         0,
         0,
         0,
@@ -1008,41 +1068,6 @@
         0,
         0,
         0,
-        0
-      ]
-    },
-    {
-      "name": "Thegentlemen",
-      "count": 2,
-      "victims": [
-        {
-          "name": "Complexul Energetic Oltenia",
-          "date": "2026-01-06 21:47:11.935992",
-          "url": "http://tezwsse5czllksjb7cwp65rvnk4oobmzti2znn42i43bjdfd2prqqkad.onion",
-          "discovered_date": "2026-01-06T21:47:11.935992"
-        },
-        {
-          "name": "Complexul Energetic Oltenia",
-          "date": "2026-01-06T21:47:11+00:00",
-          "url": "https://www.ransomware.live/id/Q29tcGxleHVsIEVuZXJnZXRpYyBPbHRlbmlhQHRoZWdlbnRsZW1lbg==",
-          "discovered_date": "2026-01-06T21:47:11+00:00"
-        }
-      ],
-      "industries": [
-        "Energy"
-      ],
-      "countries": [
-        "RO"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
         0
       ]
     },
