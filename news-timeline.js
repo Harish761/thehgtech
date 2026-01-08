@@ -118,15 +118,27 @@
         try {
             // Parse date like "Jan 05 2026"
             const date = new Date(dateStr);
+            if (isNaN(date.getTime())) {
+                return dateStr; // Invalid date, return as-is
+            }
+
             const now = new Date();
             const diffMs = now - date;
+
+            // Future dates - show the date as-is
+            if (diffMs < 0) {
+                return dateStr;
+            }
+
             const diffHours = Math.floor(diffMs / (1000 * 60 * 60));
             const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
 
             if (diffHours < 1) return 'Just now';
             if (diffHours < 24) return `${diffHours}h ago`;
+            if (diffDays === 1) return 'Yesterday';
             if (diffDays < 7) return `${diffDays}d ago`;
-            return dateStr;
+            if (diffDays < 30) return `${Math.floor(diffDays / 7)}w ago`;
+            return dateStr; // Older than a month, show full date
         } catch (e) {
             return dateStr;
         }
