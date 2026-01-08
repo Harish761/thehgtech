@@ -544,16 +544,17 @@ For EACH article, create a compelling news short in this EXACT format:
 Date: [Use the actual date from the article]
 Source Name: [Use the actual source from the article]
 Source URL: [Use exactly: ARTICLE_X_URL_PLACEHOLDER where X is the article number]
-Title: [Create a clear, compelling headline that captures the key development - you can rephrase for clarity and impact]
+Headline: [Create a PUNCHY, eye-catching headline - max 12 words - see guidelines below]
+Title: [Create a clear, descriptive headline that captures the full context]
 Content:
 [Write 5-7 well-crafted sentences that:
 
 MUST INCLUDE:
-1. **What happened**: Lead with the most newsworthy development
-2. **Technical details**: Include specific versions, CVE IDs, affected systems, or model capabilities
-3. **Impact analysis**: Explain who is affected and how severely
-4. **Context**: Provide relevant background or trends
-5. **Action items**: What should readers do or know
+1. What happened: Lead with the most newsworthy development
+2. Technical details: Include specific versions, CVE IDs, affected systems, or model capabilities
+3. Impact analysis: Explain who is affected and how severely
+4. Context: Provide relevant background or trends
+5. Action items: What should readers do or know
 
 QUALITY STANDARDS:
 - Write for technical professionals but remain accessible
@@ -570,6 +571,20 @@ AVOID:
 - Passive voice where active is clearer
 - Jargon without explanation]
 
+HEADLINE GENERATION RULES (for the "Headline" field):
+The Headline is a SHORT, punchy hook (max 12 words) for the news timeline. It should:
+- Lead with numbers, dollar amounts, or specific names when possible
+- Create urgency without false alarm
+- Use em dashes (—) for dramatic effect when appropriate
+- Remove weak words: "new", "important", "major", "significant"
+- Be specific: "$500K" beats "large amount", "3B users" beats "many users"
+
+Headline Examples:
+- BAD: "New Security Vulnerability Discovered" → GOOD: "Chrome Zero-Day Hits 3B Users—Patch Now"
+- BAD: "Ransomware Attack Affects Company" → GOOD: "$10M Ransom: LockBit Claims Logistics Giant"
+- BAD: "AI Has Security Issues" → GOOD: "Claude Used to Hack Itself: 2 Critical CVEs"
+- BAD: "Data Breach Reported" → GOOD: "ESA Breach: 200GB Space Data Stolen"
+
 CRITICAL FORMATTING RULES:
 1. Use PLAIN TEXT only - absolutely NO markdown, NO asterisks, NO formatting
 2. Write "Source URL:" not "Source:" for the URL line
@@ -577,14 +592,17 @@ CRITICAL FORMATTING RULES:
 4. Separate each short with exactly one blank line
 5. Do not number the shorts
 6. Do not add section headers or extra formatting
+7. The Headline comes BEFORE the Title
 
 EXAMPLE OF CORRECT OUTPUT:
 Date: Nov 23 2024
 Source Name: BleepingComputer
 Source URL: ARTICLE_1_URL_PLACEHOLDER
-Title: Critical Chrome Zero-Day Exploited in Targeted Attacks
+Headline: Chrome Zero-Day Hits 3B Users—Update Now
+Title: Critical Chrome Zero-Day CVE-2024-12345 Actively Exploited in Targeted Attacks
 Content:
 Google has patched CVE-2024-12345, a critical use-after-free vulnerability in Chrome's V8 JavaScript engine that was actively exploited in targeted attacks. The flaw affects all Chrome versions prior to 120.0.6099.129 and allows remote code execution through specially crafted web pages. Security researchers at Kaspersky discovered the exploit being used against financial institutions and government agencies in Eastern Europe. Users should update immediately through Chrome's built-in updater or download version 120.0.6099.129 or later. This marks the eighth zero-day vulnerability patched in Chrome this year, highlighting the browser's continued targeting by sophisticated threat actors.
+Entities: CVE-2024-12345, Chrome, zero-day, Google
 
 Now generate {len(top_articles)} professional news shorts following these guidelines exactly:
 - Write in a professional, journalistic style
@@ -593,6 +611,7 @@ Now generate {len(top_articles)} professional news shorts following these guidel
 - Use clear, direct language
 - Include relevant technical details where appropriate
 - Explain significance for professionals in the field
+- ALWAYS include both Headline (punchy) and Title (descriptive)
 
 CRITICAL FORMATTING RULES:
 - DO NOT use any markdown formatting (no **, no __, no # headers, no * bullets)
@@ -600,17 +619,16 @@ CRITICAL FORMATTING RULES:
 - Do not add bold, italic, or any other formatting
 - Keep the exact format shown above with labeled sections
 - The Source URL must be EXACTLY "ARTICLE_X_URL_PLACEHOLDER" - do not modify it
+- Headline must be max 12 words, punchy and specific
+- Title should be descriptive and complete
 
 ENTITY EXTRACTION (Important for internal linking):
-At the end of each short, add an Entities line with comma-separated values for:
+At the end of each short's Content, add an Entities line with comma-separated values for:
 - Any CVE IDs mentioned (e.g., CVE-2024-12345)
 - Any ransomware group names (e.g., LockBit, ALPHV, Qilin)
 - Any APT/threat actor names (e.g., Lazarus, APT28)
 - Key product names affected (e.g., Chrome, Windows, Fortinet)
 - Attack type keywords (e.g., zero-day, RCE, phishing, ransomware)
-
-Example:
-Entities: CVE-2024-12345, Chrome, zero-day, Google
 
 Create a short for EACH of the {len(top_articles)} articles above."""
     
@@ -660,6 +678,7 @@ def parse_shorts(content):
         date_match = re.search(r'Date:\s*(.+?)(?:\n|$)', item)
         source_match = re.search(r'Source Name:\s*(.+?)(?:\n|$)', item)
         url_match = re.search(r'Source URL:\s*(.+?)(?:\n|$)', item)
+        headline_match = re.search(r'Headline:\s*(.+?)(?:\n|$)', item)
         title_match = re.search(r'Title:\s*(.+?)(?:\n|$)', item)
         content_match = re.search(r'Content:\s*(.+)', item, re.DOTALL)
         
@@ -684,6 +703,14 @@ def parse_shorts(content):
             title_text = sanitize_content(title_match.group(1).strip())
             content_sanitized = sanitize_content(content_text)
             
+            # Extract headline (fallback to title if not present)
+            headline_text = ''
+            if headline_match:
+                headline_text = sanitize_content(headline_match.group(1).strip())
+            if not headline_text:
+                # Fallback: create headline from title (first 60 chars)
+                headline_text = title_text[:60] + ('...' if len(title_text) > 60 else '')
+            
             # Match entities to internal content
             related_resources = match_entities_to_internal_content(
                 title_text,
@@ -693,6 +720,7 @@ def parse_shorts(content):
             
             short = {
                 "date": sanitize_content(date_match.group(1).strip()),
+                "headline": headline_text,
                 "title": title_text,
                 "content": content_sanitized,
                 "source": sanitize_content(source_match.group(1).strip()),
