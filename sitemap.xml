@@ -69,6 +69,14 @@
   
   <!-- ========== ARTICLES - HIGH TRAFFIC POTENTIAL ========== -->
   
+  <!-- January 8, 2026 Articles -->
+  <url>
+    <loc>https://thehgtech.com/articles/n8n-ni8mare-critical-vulnerability-2026.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <lastmod>2026-01-08</lastmod>
+  </url>
+
   <!-- January 5, 2026 Articles -->
   <url>
     <loc>https://thehgtech.com/articles/agentic-ai-insider-threat-2026.html</loc>
