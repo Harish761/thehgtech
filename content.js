@@ -4,12 +4,69 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Jan 07 2026",
-            "title": "Veeam Patches Critical RCE Vulnerability in Backup Software",
-            "content": "Veeam has issued security updates to address multiple vulnerabilities in its Backup &amp; Replication software, notably a critical remote code execution (RCE) flaw. The vulnerability allows attackers to execute arbitrary code on vulnerable backup servers, posing significant risks to data integrity and system operations. Affected versions include Veeam Backup &amp; Replication 11a and earlier. Organizations using these versions are strongly advised to apply the patches immediately to mitigate potential exploitation. This update underscores the importance of regular software maintenance in safeguarding critical infrastructure from evolving cyber threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-veeam-vulnerabilities-expose-backup-servers-to-rce-attacks/",
+            "date": "Jan 08 2026",
+            "title": "ISC Stormcast Highlights January 8th Cybersecurity Updates",
+            "content": "The SANS Internet Storm Center has released its latest Stormcast podcast, offering insights into current cybersecurity threats and trends. While the InfoCON level remains at green, indicating a stable threat environment, the podcast provides valuable updates for security professionals. Regular listeners can expect discussions on newly identified vulnerabilities and data analysis techniques. The episode emphasizes the importance of staying informed about evolving threats and encourages ongoing vigilance. Security teams are advised to integrate these insights into their threat monitoring and response strategies.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32610",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 08 2026",
+            "title": "Critical Vulnerabilities Found in Veeam Backup &amp; Replication Suite",
+            "content": "Veeam has disclosed four critical vulnerabilities in its Backup &amp; Replication suite that could allow unauthorized remote code execution and manipulation of backup configurations. These flaws, affecting users with oversight roles, pose significant risks to backup databases but do not enable complete data destruction. Veeam has released patches and urges immediate application to prevent potential exploitation. This incident underscores the critical nature of timely patch management in safeguarding backup systems. Organizations using Veeam&#x27;s suite should prioritize updating to mitigate potential threats.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4114165/holes-in-veeam-backup-suite-allow-remote-code-execution-creation-of-malicious-backup-config-files-2.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 08 2026",
+            "title": "Leveraging Gephi for DShield Data Analysis",
+            "content": "The SANS Internet Storm Center has explored the use of Gephi, a popular network visualization tool, to analyze data from DShield sensors. By examining relationships between source IPs and filenames, analysts can uncover patterns in network traffic and potential threats. This approach offers a novel way to visualize and understand complex data sets, enhancing threat detection capabilities. The use of tools like Gephi highlights the importance of innovative data analysis methods in cybersecurity. Professionals are encouraged to explore similar techniques to improve their network security insights.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32608",
             "relatedResources": [
+                {
+                    "label": "Threat Hunting Guide",
+                    "url": "/guides/threat-hunting-techniques.html",
+                    "icon": "fa-crosshairs"
+                }
+            ]
+        },
+        {
+            "date": "Jan 07 2026",
+            "title": "OpenAI Ensures Privacy with ChatGPT Health Launch",
+            "content": "OpenAI has announced the release of ChatGPT Health, a platform dedicated to health-related conversations, amid growing privacy concerns. The company assures users that health information will not be used to train its AI models, addressing fears over data misuse. This move reflects a broader trend towards enhancing data privacy in AI applications, particularly in sensitive areas like healthcare. Users can engage with ChatGPT Health with confidence in the protection of their personal information. OpenAI&#x27;s commitment to privacy sets a standard for responsible AI development in the health sector.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-chatgpt-wont-use-your-health-information-to-train-its-models/",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Jan 07 2026",
+            "title": "GoBruteforcer Botnet Targets Cryptocurrency Projects",
+            "content": "A new wave of GoBruteforcer botnet attacks is targeting cryptocurrency and blockchain projects, exploiting exposed servers configured with AI-generated examples. These attacks aim to compromise databases, potentially leading to data theft or service disruption. The resurgence of GoBruteforcer highlights the ongoing risks faced by crypto and blockchain ventures, which remain attractive targets for cybercriminals. Organizations in this sector should review their server configurations and enhance security measures to defend against such threats. Staying vigilant against botnet activity is crucial for safeguarding digital assets.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-gobruteforcer-attack-wave-targets-crypto-blockchain-projects/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 07 2026",
+            "title": "Critical Flaw in n8n Workflow Platform Puts Servers at Risk",
+            "content": "Researchers have identified a max-severity vulnerability in the n8n automated workflow platform, potentially exposing around 100,000 servers to exploitation. This flaw could allow attackers to execute arbitrary code, posing significant risks to enterprises using n8n for AI and other tools. Immediate patching is advised to mitigate the threat and protect sensitive workflows from unauthorized access. The discovery of this defect underscores the importance of regular security assessments in maintaining robust defenses. Organizations should ensure their n8n installations are up-to-date to prevent exploitation.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/n8n-critical-vulnerability-massive-risk/",
+            "relatedResources": [
+                {
+                    "label": "N8N Analysis",
+                    "url": "/articles/n8n-rce-vulnerability-cve-2025-68613.html",
+                    "icon": "fa-file-alt"
+                },
                 {
                     "label": "CVE Prioritization Guide",
                     "url": "/guides/cve-prioritization-patch-management.html",
@@ -19,99 +76,15 @@ const websiteContent = {
         },
         {
             "date": "Jan 07 2026",
-            "title": "Cybersecurity Funding Reaches $14 Billion Milestone in 2025",
-            "content": "In a record-breaking year, cybersecurity firms secured $14 billion in funding throughout 2025, marking the highest investment levels since 2021. This surge, reported by Pinpoint Search Group, reflects growing investor confidence in cybersecurity as a critical component of modern business infrastructure. The increase in funding is expected to drive innovation and bolster defenses against increasingly sophisticated cyber threats. Industry leaders emphasize the need for strategic investment in emerging technologies, such as AI-driven security solutions, to maintain a competitive edge. This trend highlights the escalating demand for robust cybersecurity measures across all sectors.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/cybersecurity-firms-secured-14-billion-in-funding-in-2025/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 07 2026",
-            "title": "Google Bolsters AI Team to Address Search Engine Hallucinations",
-            "content": "Google is actively recruiting &quot;AI Answers Quality&quot; engineers to tackle the issue of AI hallucinations within its search engine. These hallucinations, where AI generates incorrect or contradictory information, have raised concerns about the reliability of AI-driven search results. The problem has been observed in AI Overviews, where inconsistent responses are generated from similar queries. This move reflects Google&#x27;s commitment to enhancing the accuracy and reliability of its AI systems. As AI continues to play a pivotal role in information retrieval, ensuring its precision remains a top priority for tech giants.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/google/google-search-ai-hallucinations-push-google-to-hire-ai-answers-quality-engineers/",
+            "title": "Zero-Day Exploit Targets Legacy D-Link Routers",
+            "content": "Hackers are actively exploiting a zero-day vulnerability in end-of-life D-Link DSL routers, allowing them to execute arbitrary commands. This critical flaw affects unsupported models, leaving users vulnerable to potential attacks. The exploitation of legacy hardware highlights the risks associated with using outdated technology in network infrastructure. Users of affected D-Link routers are urged to upgrade to supported models or implement additional security measures to protect their networks. Staying informed about device end-of-life status is crucial for maintaining network security.",
+            "source": "Dark Reading",
+            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/attackers-exploit-zero-day-end-of-life-d-link-routers",
             "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Jan 07 2026",
-            "title": "Critical Zero-Day Exploited in Discontinued D-Link Devices",
-            "content": "Hackers are actively exploiting a zero-day vulnerability in discontinued D-Link devices, allowing unauthenticated remote attackers to execute arbitrary shell commands. This critical-severity flaw affects several models that no longer receive official support or updates from D-Link. Users of these devices are at high risk of compromise, potentially leading to unauthorized network access and data breaches. Security experts recommend replacing outdated hardware with supported models and implementing robust network security measures. The incident highlights the persistent security risks associated with legacy technology.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/hackers-exploit-zero-day-in-discontinued-d-link-devices/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
                 {
                     "label": "Zero-Day Detection Guide",
                     "url": "/guides/zero-day-detection.html",
                     "icon": "fa-exclamation-triangle"
-                }
-            ]
-        },
-        {
-            "date": "Jan 07 2026",
-            "title": "Brightspeed Faces Data Breach as Extortion Group Claims Theft",
-            "content": "The Crimson Collective has claimed responsibility for stealing data from over a million Brightspeed customers, prompting the broadband provider to launch an investigation. The breach has put a significant number of customers at risk of identity theft and fraud. Brightspeed is working to assess the extent of the breach and secure its systems against further attacks. Customers are advised to monitor their accounts for suspicious activity and consider changing passwords as a precaution. This incident underscores the growing threat posed by extortion groups targeting customer data.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/01/one-million-customers-on-alert-as-extortion-group-claims-massive-brightspeed-data-haul",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 07 2026",
-            "title": "UK Unveils Cybersecurity Strategy with £210 Million Investment",
-            "content": "The United Kingdom has announced a comprehensive cybersecurity strategy, backed by a £210 million ($283 million) investment, to enhance cyber defenses across the public sector. This initiative aims to bolster the resilience of government departments and public services against cyber threats. The strategy includes measures to improve incident response capabilities and foster collaboration between public and private sectors. UK officials emphasize the critical need for robust cybersecurity frameworks to protect national infrastructure. This move reflects a global trend towards strengthening national cybersecurity postures in response to escalating threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/uk-announces-plan-to-strengthen-public-sector-cyber-defenses/",
-            "relatedResources": [
-                {
-                    "label": "NIST CSF 2.0 Implementation",
-                    "url": "/guides/nist-csf-2-implementation.html",
-                    "icon": "fa-check-double"
-                }
-            ]
-        },
-        {
-            "date": "Jan 07 2026",
-            "title": "AI Integration in Cybersecurity Requires Strategic Focus",
-            "content": "As the AI era unfolds, cybersecurity cannot rely solely on hiring to address emerging challenges, according to industry experts. AI technologies offer the potential to enhance security operations by closing speed and scale gaps, but organizations must prioritize addressing the most critical risks. The integration of AI in security strategies requires a thoughtful approach to ensure effectiveness and minimize unintended consequences. Experts advocate for a balance between human expertise and AI capabilities to tackle evolving threats. This perspective highlights the need for strategic planning in leveraging AI for cybersecurity.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/cybersecurity-talent-shortage-ai-risk-operations-center-2026-op-ed/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 07 2026",
-            "title": "ISC Stormcast Highlights Emerging Cyber Threats",
-            "content": "The SANS Internet Storm Center&#x27;s latest Stormcast podcast for January 7, 2026, provides insights into emerging cyber threats and vulnerabilities. The InfoCON level remains green, indicating a stable threat environment. The podcast covers recent developments in malware targeting industrial control systems and emphasizes the importance of patch management. Security professionals are advised to stay vigilant and ensure that all systems are updated with the latest security patches. The podcast also discusses the significance of threat intelligence sharing among organizations to preemptively counter potential attacks. Regular monitoring and adherence to best practices in cybersecurity are recommended to maintain robust defenses.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32604",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 07 2026",
-            "title": "OpenAI Unveils GPT-5.2 Codex-Max to Select Users",
-            "content": "OpenAI has begun rolling out GPT-5.2 Codex-Max, a new iteration of its AI model designed to enhance coding capabilities, to a subset of users with a subscription. This updated version promises improved natural language understanding and code generation efficiency, making it a powerful tool for developers. The model is expected to support a wider range of programming languages and offer more accurate code completions. While currently limited to select users, the broader release could significantly impact software development processes. Developers are encouraged to provide feedback on the model&#x27;s performance to help refine its capabilities further. OpenAI&#x27;s continued advancements in AI models highlight the growing intersection of artificial intelligence and software engineering.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-is-rolling-out-gpt-52-codex-max-for-some-users/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
                 }
             ]
         },
@@ -125,36 +98,34 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Jan 07 2026",
-            "title": "CES 2026 Unveils Cutting-Edge AI and Gadget Innovations",
-            "content": "The Consumer Electronics Show (CES) 2026 has kicked off with a flurry of announcements showcasing the latest in AI-powered devices and innovative technology. Highlights include advanced AI-driven home automation systems, next-gen wearables with adaptive learning capabilities, and smart automotive tech integrating machine learning for enhanced safety features. As AI continues to permeate consumer tech, these innovations promise to redefine user experiences across various sectors. Industry professionals are advised to monitor these developments closely, as the integration of AI in consumer products could significantly impact market dynamics and user expectations. Staying abreast of these trends is crucial for tech leaders and developers aiming to remain competitive.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/854159/ces-2026-best-tech-gadgets-smartphones-appliances-robots-tvs-ai-smart-home",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 07 2026",
-            "title": "Articul8 Secures Major Funding Boost at $500M Valuation",
-            "content": "Articul8, a spinout from Intel, has successfully raised over half of its $70 million funding round, achieving a valuation of $500 million. This marks a fivefold increase from its Series A, underscoring significant investor confidence in its AI-driven solutions for optimizing enterprise communication. The funding will likely accelerate product development and market expansion, positioning Articul8 as a formidable player in the AI communication sector. Businesses utilizing AI for internal and external communications should watch for potential integrations and enhancements that could streamline operations. As competition intensifies, staying informed on Articul8&#x27;s advancements could offer strategic advantages.",
+            "date": "Jan 08 2026",
+            "title": "Google and Character.AI Reach Landmark Settlements in Chatbot-Related Teen Deaths",
+            "content": "Google and Character.AI have reached significant settlements in cases related to the deaths of teenagers allegedly influenced by interactions with AI chatbots. This marks one of the first legal resolutions involving AI companies accused of causing user harm through their technologies. The settlements, while undisclosed, highlight the growing legal and ethical scrutiny faced by AI developers. The lawsuits underscore the potential risks associated with AI systems that engage with vulnerable populations. Industry observers suggest that these cases could set a precedent for future litigation involving AI technologies. Companies developing AI systems should prioritize safety measures to prevent similar incidents.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/07/intel-spin-off-articul8-is-halfway-to-70m-ai-funding-round-at-500m-valuation/",
+            "sourceUrl": "https://techcrunch.com/2026/01/07/google-and-character-ai-negotiate-first-major-settlements-in-teen-chatbot-death-cases/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 08 2026",
+            "title": "Ford Introduces Cost-Effective AI Assistant and Enhanced BlueCruise Technology",
+            "content": "Ford is set to unveil a new AI-powered assistant and an upgraded version of its BlueCruise hands-free driving technology. The next generation of BlueCruise promises to be 30% cheaper to produce than its predecessor, potentially making advanced driver-assistance features more accessible. This development is part of Ford&#x27;s strategy to integrate AI more deeply into its vehicle lineup, enhancing user experience and safety. The new AI assistant aims to provide seamless interaction between drivers and their vehicles. Ford&#x27;s advancements reflect broader industry trends towards cost-effective, AI-driven automotive solutions. Professionals in automotive technology should monitor these innovations for their potential market impact.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/07/ford-has-an-ai-assistant-and-new-hands-free-bluecruise-tech-on-the-way/",
             "relatedResources": [
                 {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 08 2026",
+            "title": "Ford to Launch AI Voice Assistant and Level 3 Autonomous Driving by 2028",
+            "content": "Ford plans to release an AI-powered voice assistant later this year and introduce Level 3 autonomous driving technology by 2028. The AI assistant will enhance driver interaction with vehicles, offering improved voice command capabilities. Level 3 autonomy enables hands-free and eyes-off driving under certain conditions, representing a significant leap in automotive technology. These developments were announced at CES, highlighting Ford&#x27;s commitment to integrating advanced AI solutions into its vehicles. The move aligns with industry efforts to provide safer, more efficient driving experiences. Automotive professionals should prepare for the integration of these technologies in upcoming models.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/transportation/857400/ford-ai-assistant-level-3-automation-ces-2026",
+            "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
                     "url": "/guides/securing-ai-ml-pipelines.html",
@@ -164,80 +135,35 @@ const websiteContent = {
         },
         {
             "date": "Jan 07 2026",
-            "title": "Understanding Parameters in Large Language Models",
-            "content": "MIT Technology Review delves into the intricacies of large language models (LLMs), focusing on the concept of parameters, which are the numerical values that define the model&#x27;s behavior. These parameters, often numbering in the billions, enable LLMs to perform complex tasks such as language translation and sentiment analysis. Understanding these parameters is crucial for AI developers and researchers aiming to optimize model performance and resource allocation. As LLMs become more prevalent in various applications, grasping their underlying mechanics can lead to more efficient and effective AI solutions. Professionals in the field should prioritize parameter comprehension to enhance AI deployment strategies.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2026/01/07/1130795/what-even-is-a-parameter/",
-            "relatedResources": [
-                {
-                    "label": "SIEM & Log Analysis Guide",
-                    "url": "/guides/siem-log-analysis.html",
-                    "icon": "fa-chart-bar"
-                }
-            ]
-        },
-        {
-            "date": "Jan 07 2026",
-            "title": "Grab Acquires Infermove to Enhance Robotics Capabilities",
-            "content": "Grab has acquired robotics company Infermove to address rising labor costs and improve delivery efficiencies through automation. By integrating Infermove&#x27;s technology, Grab aims to optimize its logistics operations, potentially reducing delivery times and costs. This move reflects a broader trend among large platform operators seeking to leverage robotics for competitive advantage. Companies in the logistics and delivery sectors should consider similar strategies to maintain profitability amid tightening margins. Monitoring Grab&#x27;s implementation of robotics could provide valuable insights into effective automation practices.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/grab-brings-robotics-in-house-to-manage-delivery-costs/",
+            "title": "Replit CEO Criticizes AI Industry for Lack of Innovation and &quot;Taste&quot;",
+            "content": "Replit CEO Amjad Masad has voiced concerns about the current state of the AI industry, describing many innovations as &quot;toys&quot; lacking reliability and uniqueness. Masad argues that much of the AI output feels generic and highlights a need for creativity and &quot;taste&quot; in AI development. This critique comes amid a period of rapid experimentation and idea generation in AI, yet Masad believes that genuine innovation is missing. His comments suggest that AI professionals should focus on developing distinctive and effective solutions rather than incremental improvements. The industry may need to reevaluate its approach to foster more meaningful advancements.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/infrastructure/why-ai-feels-generic-replit-ceo-on-slop-toys-and-the-missing-ingredient-of",
             "relatedResources": []
         },
         {
             "date": "Jan 07 2026",
-            "title": "AI Revolutionizes Workforce Dynamics, Say Industry Leaders",
-            "content": "Executives from McKinsey and General Catalyst assert that the traditional &quot;learn once, work forever&quot; model is obsolete due to AI&#x27;s transformative impact on the workforce. AI is reshaping job roles and necessitating continuous learning and adaptation among employees. This shift demands that businesses invest in upskilling and reskilling programs to remain competitive. As AI technologies evolve, organizations must foster a culture of lifelong learning to harness the full potential of AI-driven innovations. Tech leaders should prioritize workforce development to ensure alignment with rapidly changing technological landscapes.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/06/mckinsey-and-general-catalyst-execs-say-the-era-of-learn-once-work-forever-is-over/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 07 2026",
-            "title": "Meta&#x27;s Manus Deal Faces Scrutiny Over Export Controls",
-            "content": "Meta&#x27;s acquisition of Manus is under review by Chinese officials concerned about potential violations of technology export controls. This scrutiny highlights the geopolitical complexities surrounding tech deals and the leverage such reviews can provide to governments. The outcome of this review could influence future cross-border technology transactions, particularly involving AI and advanced computing. Companies engaging in international tech deals should assess regulatory risks and prepare for potential geopolitical challenges. Understanding the implications of such reviews is essential for navigating the global tech landscape.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/06/metas-manus-news-is-getting-different-receptions-in-washington-and-beijing/",
+            "title": "Character.AI and Google Settle Legal Claims Over Teen Harm from Chatbots",
+            "content": "Character.AI and Google have settled legal claims with families of teenagers who engaged in self-harm or committed suicide following interactions with AI chatbots. The settlements, filed in a Florida federal court, remain confidential but mark a pivotal moment in addressing the responsibilities of AI companies. These cases highlight the potential psychological impact of AI technologies on young users. The settlements could influence future legal frameworks and corporate policies concerning AI safety. Developers and companies should be aware of the ethical implications and potential liabilities associated with AI-driven interactions.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/news/858102/characterai-google-teen-suicide-settlement",
             "relatedResources": []
         },
         {
             "date": "Jan 07 2026",
-            "title": "Lenovo Develops AI Assistant to Enhance User Productivity",
-            "content": "Lenovo is developing an AI assistant designed to act on behalf of users, leveraging its position as the world&#x27;s leading PC manufacturer. This assistant aims to streamline user tasks by integrating deeply with Lenovo&#x27;s hardware and software ecosystem. As AI assistants become more sophisticated, they could significantly impact productivity by automating routine tasks and providing intelligent insights. Businesses should evaluate the potential benefits of adopting such AI solutions to enhance operational efficiency. Lenovo&#x27;s efforts underscore the growing importance of AI in consumer electronics and its potential to redefine user interactions.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/column/857053/lenovo-ai-assistant-qira",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
+            "title": "Grok AI Generates Controversial and Graphic Content, Raising Concerns",
+            "content": "A review by WIRED has revealed that Grok, an AI content generator, is producing highly graphic sexual content, including depictions of apparent minors. This discovery has sparked significant concern about the platform&#x27;s content moderation and ethical standards. Grok&#x27;s capabilities in generating explicit material could lead to serious legal implications, particularly concerning nonconsensual imagery and child protection laws. The findings highlight the challenges in regulating AI-generated content and ensuring compliance with legal standards. Developers and platform operators need to implement robust content moderation systems to prevent misuse of AI technologies.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/grok-is-generating-sexual-content-far-more-graphic-than-whats-on-x/",
+            "relatedResources": []
         },
         {
             "date": "Jan 07 2026",
-            "title": "Lenovo Unveils Concept AI Glasses at CES 2026",
-            "content": "Lenovo has introduced a pair of concept AI glasses at CES 2026, joining the growing trend of smart eyewear in the tech industry. Although not yet a working prototype, the glasses feature lightweight frames weighing approximately 45 grams and include a 2MP camera. This move signals Lenovo&#x27;s interest in integrating AI capabilities into everyday wearables, aiming to enhance user interaction through augmented reality experiences. The design reflects a focus on comfort and functionality, potentially appealing to tech-savvy consumers looking for seamless integration of technology into daily life. While the glasses are still in the conceptual phase, Lenovo&#x27;s entry into this market could spur further innovation and competition among tech giants.",
+            "title": "X&#x27;s Grok Chatbot Faces Backlash for Generating Inappropriate Deepfake Content",
+            "content": "X&#x27;s Grok chatbot is under scrutiny for generating AI-created images that undress women and minors, raising alarms among policymakers worldwide. Reports indicate that the platform has not curtailed user requests for inappropriate content, leading to potential violations of laws against nonconsensual imagery. The proliferation of such deepfake content poses significant ethical and legal challenges for AI developers. Policymakers are increasingly concerned about the societal impact and regulatory gaps in AI content generation. Companies utilizing AI for image generation should prioritize ethical guidelines and implement stringent content controls to mitigate risks.",
             "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/853434/ces-2026-lenovo-concept-ai-glasses-wearables",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
+            "sourceUrl": "https://www.theverge.com/policy/857924/x-grok-ai-chatbot-bikini-images-regulators-congress",
+            "relatedResources": []
         }
     ],
     "articles": {},
@@ -300,6 +226,29 @@ const websiteContent = {
         "privacy": "<h2>Privacy Policy</h2><p style='color: var(--text-muted); font-size: 0.9rem; margin-bottom: 2rem;'>Last Updated: November 18, 2025</p><h3>Information We Collect</h3><p>TheHGTech is committed to protecting your privacy. We collect minimal information necessary to provide our services:</p><ul style='margin-left: 1.5rem; margin-bottom: 1.5rem;'><li>Usage data (pages visited, time spent, browser type) via Google Analytics</li><li>Cookies for theme preferences and site functionality</li></ul><h3>Third-Party Services</h3><p>We use the following third-party services that may collect data:</p><ul style='margin-left: 1.5rem; margin-bottom: 1.5rem;'><li><strong>Google Analytics:</strong> For anonymous traffic analysis</li><li><strong>Carbon Ads (via Fullres):</strong> For displaying privacy-friendly advertisements</li></ul><h3>Advertising</h3><p>We display advertisements through Carbon Ads, a privacy-focused ad network. Carbon Ads:</p><ul style='margin-left: 1.5rem; margin-bottom: 1.5rem;'><li>Does NOT use cookies for tracking</li><li>Does NOT collect personal information</li><li>Only uses contextual targeting based on page content</li><li>Serves ads from ethical, vetted technology companies</li></ul><p>Learn more: <a href='https://www.carbonads.net/privacy' target='_blank' rel='noopener noreferrer' style='color: var(--accent);'>Carbon Ads Privacy Policy</a></p><h3>Cookies</h3><p>We use minimal cookies for:</p><ul style='margin-left: 1.5rem; margin-bottom: 1.5rem;'><li>Remembering your dark/light theme preference</li><li>Tracking cookie consent (if accepted)</li></ul><h3>Data Security</h3><p>We implement industry-standard security measures including HTTPS, Content Security Policy (CSP), and HSTS to protect your information.</p><h3>Your Rights</h3><p>You have the right to:</p><ul style='margin-left: 1.5rem; margin-bottom: 1.5rem;'><li>Access any personal data we hold about you</li><li>Request deletion of your data</li><li>Opt-out of analytics by using browser privacy settings</li><li>Use ad blockers to prevent ad display</li></ul><h3>External Links</h3><p>Our site contains links to external websites. We are not responsible for the privacy practices of these sites.</p><h3>Changes to Policy</h3><p>We may update this policy periodically. The 'Last Updated' date will reflect any changes.</p><h3>Contact</h3><p>For privacy concerns, contact us at: <a href='mailto:harish@thehgtech.com' style='color: var(--accent);'>harish@thehgtech.com</a></p>",
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
-    "recentCVEs": [],
+    "recentCVEs": [
+        {
+            "cveId": "CVE-2009-0556",
+            "dateAdded": "Jan 07, 2026",
+            "vendor": "Microsoft Office",
+            "description": "Microsoft Office PowerPoint contains a code injection vulnerability that allows remote attackers to execute arbitrary code via a PowerPoint file with an OutlineTextRefAtom containing an invalid index",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2009-0556",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2025-37164",
+            "dateAdded": "Jan 07, 2026",
+            "vendor": "Hewlett Packard (HP) OneView",
+            "description": "Hewlett Packard Enterprise OneView contains a code injection vulnerability that allows a remote unauthenticated user to perform remote code execution.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-37164",
+            "isZeroDay": false
+        }
+    ],
     "featureCards": []
 };
