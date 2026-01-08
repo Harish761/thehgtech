@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "id": "article-n8n-ni8mare-vulnerability-2026",
+      "title": "Ni8mare: Two CVSS 10.0 Vulnerabilities Put 100K n8n Automation Servers at Risk",
+      "date": "January 8, 2026",
+      "category": "Critical Vulnerability",
+      "badge": "CRITICAL",
+      "excerpt": "Critical CVE-2026-21858 'Ni8mare' and CVE-2026-21877 in n8n workflow automation allow unauthenticated RCE. 100,000+ servers exposed. Your API keys, OAuth tokens, and credentials at risk.",
+      "image": "images/articles/n8n-ni8mare-vulnerability-2026.png",
+      "tags": [
+        "n8n",
+        "CVE-2026-21858",
+        "CVE-2026-21877",
+        "Ni8mare",
+        "CVSS 10.0",
+        "RCE",
+        "Workflow Automation"
+      ],
+      "author": "Harish G",
+      "externalUrl": "articles/n8n-ni8mare-critical-vulnerability-2026.html"
+    },
+    {
       "id": "report-20260105",
       "title": "Weekly Threat Report: January 05, 2026",
       "date": "January 05, 2026",
