@@ -67,6 +67,63 @@ All articles MUST be comprehensive and in-depth:
 <!-- Structured Data: NewsArticle or Article schema -->
 ```
 
+## Featured Image Requirements - IMPORTANT!
+
+Every article MUST have a custom presentation-style illustration as the featured image.
+
+### Image Style Specifications
+Generate a **presenter-style illustration** with these elements:
+
+1. **Presenter Character:**
+   - Cartoon/illustrated version of Harish G (use reference photo)
+   - Indian man with beard, sunglasses on head, confident expression
+   - Black t-shirt with subtle tech logo
+   - Standing to the left, holding a marker, presenting gesture
+
+2. **Whiteboard Content (Right Side):**
+   - **Title:** Article key term in large bold text (use red/cyan accents)
+   - **Subtitle:** Severity score or key metric (e.g., "CVSS 10.0", "200GB Stolen")
+   - **Bullet Points:** 3-4 key facts with arrows (→)
+   - **Flow Diagram:** Simple attack chain or process flow at bottom
+
+3. **Visual Elements:**
+   - Red warning triangle icon (!) for critical/breach articles
+   - "CRITICAL" or "BREACH" stamp for severity
+   - Dark cybersecurity-themed background with circuit patterns
+   - Red/cyan accent colors matching TheHGTech brand
+
+4. **Technical Specs:**
+   - Format: PNG
+   - Location: `/images/articles/[article-slug].png`
+   - Minimum dimensions: 1200x630px (OG image standard)
+
+### Image Generation Prompt Template
+```
+Create a professional cybersecurity presentation-style illustration. A cartoon/illustrated version of the man from the reference photo (Indian man with beard, sunglasses pushed up, confident expression) standing in front of a whiteboard, wearing a black t-shirt with a subtle tech logo, holding a marker and presenting.
+
+The whiteboard shows:
+- Title: "[KEY TERM]" in red bold text
+- Subtitle: "[SEVERITY/METRIC]"
+- Key points with arrows:
+  → [Point 1]
+  → [Point 2]
+  → [Point 3]
+  → [Point 4]
+
+Visual elements include:
+- Red warning triangle icon with "!" on the left side
+- "[STAMP TEXT]" red stamp
+- Small flow diagram showing: [Step 1] → [Step 2] → [Step 3] → [Result]
+- Dark cybersecurity-themed background with subtle circuit patterns and red/cyan highlights
+
+Style: Clean cartoon illustration similar to tech explainer videos, professional but engaging, dark theme with red accents for danger.
+```
+
+### Reference Image for Presenter
+Use this photo as the base for the cartoon presenter:
+- Location: `/.agent/assets/harish-profile-photo.jpg`
+- Style: Maintain recognizable features while creating clean cartoon style
+
 ## CSS Variables (Same as guides)
 ```css
 :root {
