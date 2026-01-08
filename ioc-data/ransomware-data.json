@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-01-08T01:47:49.541497",
+  "last_updated": "2026-01-08T12:48:53.917070",
   "period": "Last 7 days",
-  "total_groups": 21,
-  "total_victims": 221,
+  "total_groups": 22,
+  "total_victims": 226,
   "groups": [
     {
       "name": "Lynx",
@@ -97,8 +97,26 @@
     },
     {
       "name": "Qilin",
-      "count": 33,
+      "count": 39,
       "victims": [
+        {
+          "name": "PTS Goldkist Industries Sdn Bhd",
+          "date": "2026-01-08 10:56:27.769069",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=65d076c0-adba-3d45-874d-9e641a5d730d",
+          "discovered_date": "2026-01-08T10:56:27.769069"
+        },
+        {
+          "name": "The Cressi",
+          "date": "2026-01-08 10:55:50.376373",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=2fa58507-6b0f-3f07-8eed-42d7b1c952e5",
+          "discovered_date": "2026-01-08T10:55:50.376373"
+        },
+        {
+          "name": "Telstar-Hommel",
+          "date": "2026-01-08 10:55:12.208436",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=bbf112b7-ebd3-38ab-8942-bf0dac31dcad",
+          "discovered_date": "2026-01-08T10:55:12.208436"
+        },
         {
           "name": "Evergreen Printing",
           "date": "2026-01-07 17:51:18.752401",
@@ -140,39 +158,21 @@
           "date": "2026-01-06 14:48:55.561151",
           "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=654fdc3f-f14e-3f0f-9f5c-b4dc96c0880b",
           "discovered_date": "2026-01-06T14:48:55.561151"
-        },
-        {
-          "name": "Health Bridge Chiropractic",
-          "date": "2026-01-06 14:48:15.934258",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=c70181f7-7683-3ebd-b28f-49d117a3e0a0",
-          "discovered_date": "2026-01-06T14:48:15.934258"
-        },
-        {
-          "name": "Sönmezler Metal",
-          "date": "2026-01-04 13:09:28.830354",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=fce35e22-6243-390c-bb7e-00074eb92bf8",
-          "discovered_date": "2026-01-04T13:09:28.830354"
-        },
-        {
-          "name": "Cal Spas, Inc.",
-          "date": "2026-01-04 13:08:52.289164",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=b32b7816-1b2c-3f86-8cfb-c05213b4ac10",
-          "discovered_date": "2026-01-04T13:08:52.289164"
         }
       ],
       "industries": [
+        "Agriculture and Food Production",
         "Construction",
         "Consumer Services",
         "Healthcare",
-        "Manufacturing",
-        "Not Found"
+        "Manufacturing"
       ],
       "countries": [
         "DE",
         "FI",
         "FR",
         "GB",
-        "JP"
+        "IT"
       ],
       "trend": "up",
       "trend_percentage": 15,
@@ -183,7 +183,7 @@
         0,
         10,
         6,
-        0
+        6
       ]
     },
     {
@@ -633,90 +633,6 @@
       ]
     },
     {
-      "name": "Handala",
-      "count": 10,
-      "victims": [
-        {
-          "name": "Ayelet Shaked Contact List",
-          "date": "2026-01-03 13:59:56.213074",
-          "url": "http://vmjfieomxhnfjba57sd6jjws2ogvowjgxhhfglsikqvvrnrajbmpxqqd.onion/?p=612",
-          "discovered_date": "2026-01-03T13:59:56.213074"
-        },
-        {
-          "name": "15 SIGINT Agents Exposed — $50,000 Reward",
-          "date": "2026-01-03 13:59:34.866738",
-          "url": "http://vmjfieomxhnfjba57sd6jjws2ogvowjgxhhfglsikqvvrnrajbmpxqqd.onion/?p=616",
-          "discovered_date": "2026-01-03T13:59:34.866738"
-        },
-        {
-          "name": "Unveiling the Secrets: Inside the WhatsApp Chats of a Minister",
-          "date": "2026-01-03 11:02:13.155163",
-          "url": "https://handala-hack.to/unveiling-the-secrets-inside-the-whatsapp-chats-of-a-minister/",
-          "discovered_date": "2026-01-03T11:02:13.155163"
-        },
-        {
-          "name": "The Queen’s Secrets: Unveiling the Mysteries Behind Ayelet Shaked",
-          "date": "2026-01-03 07:22:56.781313",
-          "url": "https://handala-hack.to/the-queens-secrets-unveiling-the-mysteries-behind-ayelet-shaked/",
-          "discovered_date": "2026-01-03T07:22:56.781313"
-        },
-        {
-          "name": "Handala Alert: Amplifying the Voice of Resistance",
-          "date": "2026-01-02 22:54:49.534727",
-          "url": "https://handala-hack.to/handala-alert-amplifying-the-voice-of-resistance/",
-          "discovered_date": "2026-01-02T22:54:49.534727"
-        },
-        {
-          "name": "Ayelet Shaked Contact List",
-          "date": "2026-01-03T13:59:56+00:00",
-          "url": "https://www.ransomware.live/id/QXllbGV0IFNoYWtlZCBDb250YWN0IExpc3RAaGFuZGFsYQ==",
-          "discovered_date": "2026-01-03T13:59:56+00:00"
-        },
-        {
-          "name": "15 SIGINT Agents Exposed — $50,000 Reward",
-          "date": "2026-01-03T13:59:34+00:00",
-          "url": "https://www.ransomware.live/id/MTUgU0lHSU5UIEFnZW50cyBFeHBvc2VkIOKAlCAkNTAsMDAwIFJld2FyZEBoYW5kYWxh",
-          "discovered_date": "2026-01-03T13:59:34+00:00"
-        },
-        {
-          "name": "Unveiling the Secrets: Inside the WhatsApp Chats of a Minister",
-          "date": "2026-01-03T11:02:13+00:00",
-          "url": "https://www.ransomware.live/id/VW52ZWlsaW5nIHRoZSBTZWNyZXRzOiBJbnNpZGUgdGhlIFdoYXRzQXBwIENoYXRzIG9mIGEgTWluaXN0ZXJAaGFuZGFsYQ==",
-          "discovered_date": "2026-01-03T11:02:13+00:00"
-        },
-        {
-          "name": "The Queen’s Secrets: Unveiling the Mysteries Behind Ayelet Shaked",
-          "date": "2026-01-03T07:22:56+00:00",
-          "url": "https://www.ransomware.live/id/VGhlIFF1ZWVu4oCZcyBTZWNyZXRzOiBVbnZlaWxpbmcgdGhlIE15c3RlcmllcyBCZWhpbmQgQXllbGV0IFNoYWtlZEBoYW5kYWxh",
-          "discovered_date": "2026-01-03T07:22:56+00:00"
-        },
-        {
-          "name": "Handala Alert: Amplifying the Voice of Resistance",
-          "date": "2026-01-02T22:54:49+00:00",
-          "url": "https://www.ransomware.live/id/SGFuZGFsYSBBbGVydDogQW1wbGlmeWluZyB0aGUgVm9pY2Ugb2YgUmVzaXN0YW5jZUBoYW5kYWxh",
-          "discovered_date": "2026-01-02T22:54:49+00:00"
-        }
-      ],
-      "industries": [
-        "Not Found"
-      ],
-      "countries": [
-        "N/A",
-        "PS"
-      ],
-      "trend": "stable",
-      "trend_percentage": 0,
-      "daily_counts": [
-        2,
-        8,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Interlock",
       "count": 8,
       "victims": [
@@ -926,6 +842,107 @@
         0,
         0,
         0
+      ]
+    },
+    {
+      "name": "Handala",
+      "count": 5,
+      "victims": [
+        {
+          "name": "Ayelet Shaked Contact List",
+          "date": "2026-01-03T13:59:56+00:00",
+          "url": "https://www.ransomware.live/id/QXllbGV0IFNoYWtlZCBDb250YWN0IExpc3RAaGFuZGFsYQ==",
+          "discovered_date": "2026-01-03T13:59:56+00:00"
+        },
+        {
+          "name": "15 SIGINT Agents Exposed — $50,000 Reward",
+          "date": "2026-01-03T13:59:34+00:00",
+          "url": "https://www.ransomware.live/id/MTUgU0lHSU5UIEFnZW50cyBFeHBvc2VkIOKAlCAkNTAsMDAwIFJld2FyZEBoYW5kYWxh",
+          "discovered_date": "2026-01-03T13:59:34+00:00"
+        },
+        {
+          "name": "Unveiling the Secrets: Inside the WhatsApp Chats of a Minister",
+          "date": "2026-01-03T11:02:13+00:00",
+          "url": "https://www.ransomware.live/id/VW52ZWlsaW5nIHRoZSBTZWNyZXRzOiBJbnNpZGUgdGhlIFdoYXRzQXBwIENoYXRzIG9mIGEgTWluaXN0ZXJAaGFuZGFsYQ==",
+          "discovered_date": "2026-01-03T11:02:13+00:00"
+        },
+        {
+          "name": "The Queen’s Secrets: Unveiling the Mysteries Behind Ayelet Shaked",
+          "date": "2026-01-03T07:22:56+00:00",
+          "url": "https://www.ransomware.live/id/VGhlIFF1ZWVu4oCZcyBTZWNyZXRzOiBVbnZlaWxpbmcgdGhlIE15c3RlcmllcyBCZWhpbmQgQXllbGV0IFNoYWtlZEBoYW5kYWxh",
+          "discovered_date": "2026-01-03T07:22:56+00:00"
+        },
+        {
+          "name": "Handala Alert: Amplifying the Voice of Resistance",
+          "date": "2026-01-02T22:54:49+00:00",
+          "url": "https://www.ransomware.live/id/SGFuZGFsYSBBbGVydDogQW1wbGlmeWluZyB0aGUgVm9pY2Ugb2YgUmVzaXN0YW5jZUBoYW5kYWxh",
+          "discovered_date": "2026-01-02T22:54:49+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "N/A",
+        "PS"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        1,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Blackshrantac",
+      "count": 4,
+      "victims": [
+        {
+          "name": "National Water Authority",
+          "date": "2026-01-08 02:51:23.615609",
+          "url": "http://jvkpexgkuaw5toiph7fbgucycvnafaqmfvakymfh5pdxepvahw3xryqd.onion/targets/40",
+          "discovered_date": "2026-01-08T02:51:23.615609"
+        },
+        {
+          "name": "SCHNEIDER PROTOTYPING INDIA PVT. LTD",
+          "date": "2026-01-08 02:50:57.893995",
+          "url": "http://jvkpexgkuaw5toiph7fbgucycvnafaqmfvakymfh5pdxepvahw3xryqd.onion/targets/41",
+          "discovered_date": "2026-01-08T02:50:57.893995"
+        },
+        {
+          "name": "National Water Authority",
+          "date": "2026-01-08T02:51:23+00:00",
+          "url": "https://www.ransomware.live/id/TmF0aW9uYWwgV2F0ZXIgQXV0aG9yaXR5QGJsYWNrc2hyYW50YWM=",
+          "discovered_date": "2026-01-08T02:51:23+00:00"
+        },
+        {
+          "name": "SCHNEIDER PROTOTYPING INDIA PVT. LTD",
+          "date": "2026-01-08T02:50:57+00:00",
+          "url": "https://www.ransomware.live/id/U0NITkVJREVSIFBST1RPVFlQSU5HIElORElBIFBWVC4gTFREQGJsYWNrc2hyYW50YWM=",
+          "discovered_date": "2026-01-08T02:50:57+00:00"
+        }
+      ],
+      "industries": [
+        "Manufacturing",
+        "Public Sector"
+      ],
+      "countries": [
+        "IN",
+        "N/A"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4
       ]
     },
     {
