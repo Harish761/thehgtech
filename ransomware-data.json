@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-01-09T01:48:35.420036",
+  "last_updated": "2026-01-09T12:46:57.650951",
   "period": "Last 7 days",
   "total_groups": 26,
-  "total_victims": 246,
+  "total_victims": 241,
   "groups": [
     {
       "name": "Qilin",
-      "count": 50,
+      "count": 48,
       "victims": [
         {
           "name": "TriVector Services",
@@ -188,7 +188,7 @@
     },
     {
       "name": "Sinobi",
-      "count": 30,
+      "count": 29,
       "victims": [
         {
           "name": "M&M Auto Parts",
@@ -239,16 +239,16 @@
           "discovered_date": "2026-01-05T06:28:14.882802"
         },
         {
-          "name": "Lampire Biological Laboratories",
-          "date": "2026-01-05 06:26:38.619656",
-          "url": "http://sinobi6ftrg27d6g4sjdt65malds6cfptlnjyw52rskakqjda6uvb7yd.onion/leaks/695b57e86387a4c9a2d2f7ec",
-          "discovered_date": "2026-01-05T06:26:38.619656"
-        },
-        {
           "name": "Sva Y Tecnologia Movil De España",
           "date": "2026-01-05 06:26:56.700724",
           "url": "http://sinobi6ftrg27d6g4sjdt65malds6cfptlnjyw52rskakqjda6uvb7yd.onion/leaks/695b572d6387a4c9a2d2f4a2",
           "discovered_date": "2026-01-05T06:26:56.700724"
+        },
+        {
+          "name": "Delko",
+          "date": "2026-01-05 06:27:15.278219",
+          "url": "http://sinobi6ftrg27d6g4sjdt65malds6cfptlnjyw52rskakqjda6uvb7yd.onion/leaks/695b55ce6387a4c9a2d2e7a3",
+          "discovered_date": "2026-01-05T06:27:15.278219"
         }
       ],
       "industries": [
@@ -268,7 +268,7 @@
       "daily_counts": [
         1,
         0,
-        27,
+        26,
         0,
         0,
         2,
@@ -368,7 +368,7 @@
     },
     {
       "name": "Play",
-      "count": 13,
+      "count": 11,
       "victims": [
         {
           "name": "Autohaus Pichel GmbH",
@@ -671,6 +671,68 @@
       ]
     },
     {
+      "name": "Incransom",
+      "count": 6,
+      "victims": [
+        {
+          "name": "stignatiusijamsville.org",
+          "date": "2026-01-09 12:22:55.795516",
+          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6957d6ad8f1d14b743cfc643",
+          "discovered_date": "2026-01-09T12:22:55.795516"
+        },
+        {
+          "name": "https://lpollockpr.com/",
+          "date": "2026-01-08 16:57:00.866300",
+          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/695fd6398f1d14b7434fa840",
+          "discovered_date": "2026-01-08T16:57:00.866300"
+        },
+        {
+          "name": "https://lpollockpr.com/",
+          "date": "2026-01-08T16:57:00+00:00",
+          "url": "https://www.ransomware.live/id/aHR0cHM6Ly9scG9sbG9ja3ByLmNvbS9AaW5jcmFuc29t",
+          "discovered_date": "2026-01-08T16:57:00+00:00"
+        },
+        {
+          "name": "Borough of Moonachie",
+          "date": "2026-01-03T17:17:43+00:00",
+          "url": "https://www.ransomware.live/id/Qm9yb3VnaCBvZiBNb29uYWNoaWVAaW5jcmFuc29t",
+          "discovered_date": "2026-01-03T17:17:43+00:00"
+        },
+        {
+          "name": "proton-system_Serbia",
+          "date": "2026-01-03T14:01:20+00:00",
+          "url": "https://www.ransomware.live/id/cHJvdG9uLXN5c3RlbV9TZXJiaWFAaW5jcmFuc29t",
+          "discovered_date": "2026-01-03T14:01:20+00:00"
+        },
+        {
+          "name": "Automation One Business Systems Inc",
+          "date": "2026-01-03T14:01:00+00:00",
+          "url": "https://www.ransomware.live/id/QXV0b21hdGlvbiBPbmUgQnVzaW5lc3MgU3lzdGVtcyBJbmNAaW5jcmFuc29t",
+          "discovered_date": "2026-01-03T14:01:00+00:00"
+        }
+      ],
+      "industries": [
+        "Business Services",
+        "Education"
+      ],
+      "countries": [
+        "CA",
+        "RS",
+        "US"
+      ],
+      "trend": "stable",
+      "trend_percentage": 0,
+      "daily_counts": [
+        3,
+        0,
+        0,
+        0,
+        0,
+        2,
+        1
+      ]
+    },
+    {
       "name": "Clop",
       "count": 6,
       "victims": [
@@ -789,61 +851,6 @@
         2,
         0,
         0,
-        0
-      ]
-    },
-    {
-      "name": "Incransom",
-      "count": 5,
-      "victims": [
-        {
-          "name": "https://lpollockpr.com/",
-          "date": "2026-01-08 16:57:00.866300",
-          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/695fd6398f1d14b7434fa840",
-          "discovered_date": "2026-01-08T16:57:00.866300"
-        },
-        {
-          "name": "https://lpollockpr.com/",
-          "date": "2026-01-08T16:57:00+00:00",
-          "url": "https://www.ransomware.live/id/aHR0cHM6Ly9scG9sbG9ja3ByLmNvbS9AaW5jcmFuc29t",
-          "discovered_date": "2026-01-08T16:57:00+00:00"
-        },
-        {
-          "name": "Borough of Moonachie",
-          "date": "2026-01-03T17:17:43+00:00",
-          "url": "https://www.ransomware.live/id/Qm9yb3VnaCBvZiBNb29uYWNoaWVAaW5jcmFuc29t",
-          "discovered_date": "2026-01-03T17:17:43+00:00"
-        },
-        {
-          "name": "proton-system_Serbia",
-          "date": "2026-01-03T14:01:20+00:00",
-          "url": "https://www.ransomware.live/id/cHJvdG9uLXN5c3RlbV9TZXJiaWFAaW5jcmFuc29t",
-          "discovered_date": "2026-01-03T14:01:20+00:00"
-        },
-        {
-          "name": "Automation One Business Systems Inc",
-          "date": "2026-01-03T14:01:00+00:00",
-          "url": "https://www.ransomware.live/id/QXV0b21hdGlvbiBPbmUgQnVzaW5lc3MgU3lzdGVtcyBJbmNAaW5jcmFuc29t",
-          "discovered_date": "2026-01-03T14:01:00+00:00"
-        }
-      ],
-      "industries": [
-        "Business Services"
-      ],
-      "countries": [
-        "CA",
-        "RS",
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        3,
-        0,
-        0,
-        0,
-        0,
-        2,
         0
       ]
     },
@@ -1397,40 +1404,6 @@
       ]
     },
     {
-      "name": "Dragonforce",
-      "count": 2,
-      "victims": [
-        {
-          "name": "UBS Office",
-          "date": "2026-01-02T19:52:48+00:00",
-          "url": "https://www.ransomware.live/id/VUJTIE9mZmljZUBkcmFnb25mb3JjZQ==",
-          "discovered_date": "2026-01-02T19:52:48+00:00"
-        },
-        {
-          "name": "SINBON Electronics Co., Ltd",
-          "date": "2026-01-02T06:24:56+00:00",
-          "url": "https://www.ransomware.live/id/U0lOQk9OIEVsZWN0cm9uaWNzIENvLiwgTHRkQGRyYWdvbmZvcmNl",
-          "discovered_date": "2026-01-02T06:24:56+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "CH",
-        "TW"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Medusa",
       "count": 1,
       "victims": [
@@ -1450,6 +1423,33 @@
       "daily_counts": [
         0,
         1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Dragonforce",
+      "count": 1,
+      "victims": [
+        {
+          "name": "UBS Office",
+          "date": "2026-01-02T19:52:48+00:00",
+          "url": "https://www.ransomware.live/id/VUJTIE9mZmljZUBkcmFnb25mb3JjZQ==",
+          "discovered_date": "2026-01-02T19:52:48+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "CH"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
         0,
         0,
         0,
