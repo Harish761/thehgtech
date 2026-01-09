@@ -79,6 +79,11 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/header-dropdown.css?v=1">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/light-mode.css">
 
     <style>
         * {
@@ -290,10 +295,13 @@
     <!-- Mobile Header -->
     <header class="m-header m-only">
         <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
-    <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
-    <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0;">
-    <span style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
-</div>
+            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark"
+                style="height: 28px; width: auto; margin: 0;">
+            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light"
+                style="height: 28px; width: auto; margin: 0;">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+        </div>
         <div class="m-header__actions">
             <!-- Premium Theme Toggle -->
             <button class="m-theme-toggle" onclick="mToggleTheme()" aria-label="Toggle Theme">
@@ -393,8 +401,8 @@
                         <a href="/guides/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
                             <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
                             <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides <span
-                                        class="dropdown-badge popular">37+</span></div>
+                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides
+                                    <span class="dropdown-badge popular">37+</span></div>
                                 <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
                             </div>
                         </a>
@@ -473,7 +481,8 @@
         </ul>
 
         <div class="info-box">
-            <strong><i class="fas fa-lightbulb" style="color: var(--accent-cyan);"></i> Key Principle:</strong> The best security metrics are actionable, measurable, and aligned with
+            <strong><i class="fas fa-lightbulb" style="color: var(--accent-cyan);"></i> Key Principle:</strong> The best
+            security metrics are actionable, measurable, and aligned with
             business objectives. Avoid vanity metrics that look good but don't drive meaningful improvements.
         </div>
 
@@ -573,7 +582,8 @@
         <img src="images/executive-report.png" alt="Executive Security Report" class="section-image">
 
         <div class="info-box">
-            <strong><i class="fas fa-lightbulb" style="color: var(--accent-cyan);"></i> Executive Dashboard Tip:</strong> Use traffic light indicators (red/yellow/green) and trend
+            <strong><i class="fas fa-lightbulb" style="color: var(--accent-cyan);"></i> Executive Dashboard
+                Tip:</strong> Use traffic light indicators (red/yellow/green) and trend
             arrows. Executives need to understand security posture at a glance without deep technical knowledge.
         </div>
 
@@ -669,7 +679,8 @@
         </ul>
 
         <div class="warning-box">
-            <strong><i class="fas fa-exclamation-triangle" style="color: var(--accent-orange);"></i> Common Pitfall:</strong> Avoid "metric gaming" where teams optimize for the metric instead of
+            <strong><i class="fas fa-exclamation-triangle" style="color: var(--accent-orange);"></i> Common
+                Pitfall:</strong> Avoid "metric gaming" where teams optimize for the metric instead of
             actual security improvement. For example, closing tickets quickly without proper remediation just to improve
             MTTR.
         </div>
@@ -724,7 +735,8 @@
         </ul>
 
         <div class="info-box">
-            <strong><i class="fas fa-lightbulb" style="color: var(--accent-cyan);"></i> Remember:</strong> The goal isn't perfect metrics—it's actionable insights that improve security
+            <strong><i class="fas fa-lightbulb" style="color: var(--accent-cyan);"></i> Remember:</strong> The goal
+            isn't perfect metrics—it's actionable insights that improve security
             posture. Start simple, measure what matters, and iterate based on feedback.
         </div>
 
@@ -742,7 +754,8 @@
         </ol>
 
         <div class="warning-box">
-            <strong><i class="fas fa-exclamation-triangle" style="color: var(--accent-orange);"></i> Final Warning:</strong> Don't let perfect be the enemy of good. Start with imperfect metrics and
+            <strong><i class="fas fa-exclamation-triangle" style="color: var(--accent-orange);"></i> Final
+                Warning:</strong> Don't let perfect be the enemy of good. Start with imperfect metrics and
             improve them over time. The worst dashboard is the one that never gets built because you're waiting for
             perfect data.
         </div>
@@ -765,31 +778,33 @@
         </div>
     </div>
 
-        <!-- Interaction Bar -->
-        <div class="interaction-bar">
-            <div class="like-section">
-                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
-                    <i class="far fa-heart"></i> <span id="likeText">Like this guide</span>
-                </button>
-            </div>
-            <div class="action-buttons">
-                <div class="share-buttons">
-                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter" aria-label="Share on Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn" aria-label="Share on LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link">
-                        <i class="fas fa-link"></i>
-                    </button>
-                </div>
-                <div class="button-separator"></div>
-                <button onclick="printArticle()" class="print-btn" title="Print" aria-label="Print">
-                    <i class="fas fa-print"></i>
-                </button>
-            </div>
+    <!-- Interaction Bar -->
+    <div class="interaction-bar">
+        <div class="like-section">
+            <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                <i class="far fa-heart"></i> <span id="likeText">Like this guide</span>
+            </button>
         </div>
+        <div class="action-buttons">
+            <div class="share-buttons">
+                <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"
+                    aria-label="Share on Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"
+                    aria-label="Share on LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link">
+                    <i class="fas fa-link"></i>
+                </button>
+            </div>
+            <div class="button-separator"></div>
+            <button onclick="printArticle()" class="print-btn" title="Print" aria-label="Print">
+                <i class="fas fa-print"></i>
+            </button>
+        </div>
+    </div>
 
     <script src="/interaction-bar.js?v=20251217"></script>
 </body>
