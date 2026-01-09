@@ -73,6 +73,7 @@
             max-width: 900px;
             margin: 0 auto;
             padding: 2rem;
+            padding-top: 100px;
         }
 
         /* Header */
@@ -258,7 +259,7 @@
             }
         }
     </style>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/header.css">
     <link rel="stylesheet" href="/header-dropdown.css?v=1">
     <link rel="stylesheet" href="/print.css">
@@ -276,7 +277,12 @@
             border-bottom: 1px solid var(--border);
             margin: 3rem 0;
         }
-        .share-buttons { display: flex; gap: 1rem; }
+
+        .share-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+
         .share-btn {
             background: var(--bg-card);
             border: 1px solid var(--border);
@@ -291,13 +297,20 @@
             transition: all 0.3s ease;
             text-decoration: none;
         }
+
         .share-btn:hover {
             background: var(--accent-cyan);
             color: #000;
             transform: translateY(-2px);
             box-shadow: 0 0 15px var(--glow-cyan);
         }
-        .like-section { display: flex; align-items: center; gap: 1rem; }
+
+        .like-section {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
         .like-btn {
             background: transparent;
             border: 1px solid var(--border);
@@ -312,17 +325,31 @@
             font-family: 'Inter', sans-serif;
             font-size: 1rem;
         }
-        .like-btn:hover { border-color: var(--accent-red); color: var(--accent-red); }
+
+        .like-btn:hover {
+            border-color: var(--accent-red);
+            color: var(--accent-red);
+        }
+
         .like-btn.liked {
             background: rgba(255, 76, 76, 0.1);
             border-color: var(--accent-red);
             color: var(--accent-red);
         }
-        .like-btn i { transition: transform 0.2s; }
-        .like-btn.liked i { transform: scale(1.2); }
-        
+
+        .like-btn i {
+            transition: transform 0.2s;
+        }
+
+        .like-btn.liked i {
+            transform: scale(1.2);
+        }
+
         @media (max-width: 768px) {
-            .interaction-bar { flex-direction: column; gap: 1.5rem; }
+            .interaction-bar {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
         }
     </style>
 
@@ -338,10 +365,13 @@
     <!-- Mobile Header -->
     <header class="m-header m-only">
         <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
-    <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
-    <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0;">
-    <span style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
-</div>
+            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark"
+                style="height: 28px; width: auto; margin: 0;">
+            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light"
+                style="height: 28px; width: auto; margin: 0;">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+        </div>
         <div class="m-header__actions">
             <!-- Premium Theme Toggle -->
             <button class="m-theme-toggle" onclick="mToggleTheme()" aria-label="Toggle Theme">
@@ -441,8 +471,8 @@
                         <a href="/guides/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
                             <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
                             <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides <span
-                                        class="dropdown-badge popular">37+</span></div>
+                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides
+                                    <span class="dropdown-badge popular">37+</span></div>
                                 <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
                             </div>
                         </a>
@@ -1008,35 +1038,37 @@
         </div>
     </div>
 
-                <!-- Interaction Bar -->
-        <div class="interaction-bar">
-            <div class="like-section">
-                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
-                    <i class="far fa-heart"></i> <span id="likeText">Like this article</span>
-                </button>
-            </div>
-            <div class="action-buttons">
-                <div class="share-buttons">
-                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter" aria-label="Share on Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn" aria-label="Share on LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link">
-                        <i class="fas fa-link"></i>
-                    </button>
-                </div>
-                <div class="button-separator"></div>
-                <button onclick="printArticle()" class="print-btn" title="Print Article" aria-label="Print Article">
-                    <i class="fas fa-print"></i>
-                </button>
-            </div>
+    <!-- Interaction Bar -->
+    <div class="interaction-bar">
+        <div class="like-section">
+            <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                <i class="far fa-heart"></i> <span id="likeText">Like this article</span>
+            </button>
         </div>
-    
+        <div class="action-buttons">
+            <div class="share-buttons">
+                <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"
+                    aria-label="Share on Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"
+                    aria-label="Share on LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link">
+                    <i class="fas fa-link"></i>
+                </button>
+            </div>
+            <div class="button-separator"></div>
+            <button onclick="printArticle()" class="print-btn" title="Print Article" aria-label="Print Article">
+                <i class="fas fa-print"></i>
+            </button>
+        </div>
+    </div>
+
 
     <!-- Interaction Bar Script -->
     <script src="/interaction-bar.js?v=20251206"></script>
-  </body>
+</body>
 
 </html>

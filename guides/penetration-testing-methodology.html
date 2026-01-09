@@ -116,6 +116,7 @@
             max-width: 900px;
             margin: 0 auto;
             padding: 2rem;
+            padding-top: 100px;
         }
 
         /* New Badge */
@@ -497,8 +498,8 @@
                         <a href="/guides/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
                             <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
                             <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides <span
-                                        class="dropdown-badge popular">37+</span></div>
+                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides
+                                    <span class="dropdown-badge popular">37+</span></div>
                                 <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
                             </div>
                         </a>
@@ -567,7 +568,8 @@
                 looking to understand what pentesters do so you can better defend, this is for you.</p>
 
             <div class="callout">
-                <strong><i class="fas fa-exclamation-triangle" style="color: var(--accent-orange);"></i> Legal Disclaimer:</strong> Penetration testing without explicit written authorization is
+                <strong><i class="fas fa-exclamation-triangle" style="color: var(--accent-orange);"></i> Legal
+                    Disclaimer:</strong> Penetration testing without explicit written authorization is
                 illegal. Always obtain proper authorization (scope document, rules of engagement) before testing any
                 systems. This guide is for educational purposes and authorized security testing only.
             </div>
@@ -813,7 +815,8 @@ hydra -l admin -P rockyou.txt target.com ssh
 hashcat -m 1000 ntlm_hashes.txt rockyou.txt</code></pre>
 
             <div class="callout warning">
-                <strong><i class="fas fa-exclamation-triangle" style="color: var(--accent-orange);"></i> Account Lockout Warning:</strong> Always check password policies before brute forcing. A good
+                <strong><i class="fas fa-exclamation-triangle" style="color: var(--accent-orange);"></i> Account Lockout
+                    Warning:</strong> Always check password policies before brute forcing. A good
                 rule: 1 password per 30 minutes per account to avoid lockouts.
             </div>
 
@@ -902,7 +905,8 @@ evil-winrm -i target.com -u admin -p password</code></pre>
             <h2>Phase 5: Reporting</h2>
 
             <p>The report is the deliverable. A pentest without a good report is worthless. Your report should be
-                <strong>actionable</strong>—the client should know exactly what to fix.</p>
+                <strong>actionable</strong>—the client should know exactly what to fix.
+            </p>
 
             <h3>Report Structure</h3>
             <ol>
