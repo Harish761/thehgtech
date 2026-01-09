@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <title>Ransomware Response Playbook | TheHGTech Security Guides</title>
-    <meta name="title" content="Ransomware Response Playbook | TheHGTech">
+    <title>Ransomware Response Playbook: Step-by-Step IR Guide [2025] | TheHGTech</title>
+    <meta name="title" content="Ransomware Response Playbook: Step-by-Step IR Guide [2025]">
     <meta name="description"
-        content="Comprehensive step-by-step playbook for responding to ransomware incidents. Learn containment, eradication, recovery strategies, and post-incident analysis.">
+        content="💀 When ransomware hits, every minute counts. Step-by-step containment, FBI reporting checklist & recovery timeline. Print this guide before you need it.">
     <meta name="keywords"
         content="ransomware response, incident response, ransomware playbook, cyber attack response, ransomware recovery, incident containment, ransomware mitigation">
     <meta name="author" content="TheHGTech">
@@ -19,17 +19,60 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://thehgtech.com/guides/ransomware-response-playbook.html">
-    <meta property="og:title" content="Ransomware Response Playbook">
+    <meta property="og:title" content="Ransomware Response Playbook: Step-by-Step IR Guide [2025]">
     <meta property="og:description"
-        content="Step-by-step guide for responding to ransomware incidents and minimizing damage.">
+        content="Minute-by-minute ransomware response guide. Containment, eradication & recovery.">
     <meta property="og:image" content="https://thehgtech.com/images/ransomware-og.jpg">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://thehgtech.com/guides/ransomware-response-playbook.html">
-    <meta name="twitter:title" content="Ransomware Response Playbook">
-    <meta name="twitter:description" content="Comprehensive ransomware incident response guide.">
+    <meta name="twitter:title" content="Ransomware Response Playbook [2025]">
+    <meta name="twitter:description" content="Step-by-step ransomware IR guide - print before you need it.">
     <meta name="twitter:image" content="https://thehgtech.com/images/ransomware-twitter.jpg">
+
+    <!-- FAQ Schema for Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Should I pay the ransomware ransom?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The FBI advises against paying ransom as it funds criminal operations and doesn't guarantee recovery. Only 8% of organizations recover all data after paying. Consider: Do you have offline backups? Is the ransom affordable? Is the attacker trustworthy? Are there legal sanctions against this group? Consult with legal counsel and cyber insurance before deciding."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the first steps when ransomware is detected?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "First 60 minutes are critical: 1) Activate incident response team, 2) Isolate affected systems from network (don't power off - you lose volatile memory), 3) Protect backups immediately, 4) Identify the ransomware variant using ID Ransomware, 5) Start documenting everything with timestamps."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does ransomware recovery take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Average recovery time: 22-25 days according to industry reports. Containment takes 1-4 hours, eradication 4-24 hours, recovery from backups 24-72 hours. Full restoration and post-incident analysis can take weeks. Organizations with tested IR plans recover 50% faster."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I report ransomware to law enforcement?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, report to: FBI IC3 (ic3.gov), CISA (cisa.gov/report), and local FBI field office. Benefits: FBI may have decryption keys, you establish legal documentation, and it helps track ransomware groups. In some jurisdictions, reporting is legally required. Your cyber insurance may also require it."
+          }
+        }
+      ]
+    }
+    </script>
+
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -364,10 +407,13 @@
     <!-- Mobile Header -->
     <header class="m-header m-only">
         <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
-    <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
-    <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0;">
-    <span style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
-</div>
+            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark"
+                style="height: 28px; width: auto; margin: 0;">
+            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light"
+                style="height: 28px; width: auto; margin: 0;">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+        </div>
         <div class="m-header__actions">
             <!-- Premium Theme Toggle -->
             <button class="m-theme-toggle" onclick="mToggleTheme()" aria-label="Toggle Theme">
@@ -467,8 +513,9 @@
                         <a href="/guides/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
                             <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
                             <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides <span
-                                        class="dropdown-badge popular">37+</span></div>
+                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides
+                                    <span class="dropdown-badge popular">37+</span>
+                                </div>
                                 <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
                             </div>
                         </a>
@@ -912,32 +959,34 @@ reg query HKCU\Software\Microsoft\Windows\CurrentVersion\Run
 
     <!-- Load Header -->
     <script src="/header.js"></script>
-  
-        <!-- Interaction Bar -->
-        <div class="interaction-bar">
-            <div class="like-section">
-                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
-                    <i class="far fa-heart"></i> <span id="likeText">Like this guide</span>
-                </button>
-            </div>
-            <div class="action-buttons">
-                <div class="share-buttons">
-                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter" aria-label="Share on Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn" aria-label="Share on LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link">
-                        <i class="fas fa-link"></i>
-                    </button>
-                </div>
-                <div class="button-separator"></div>
-                <button onclick="printArticle()" class="print-btn" title="Print" aria-label="Print">
-                    <i class="fas fa-print"></i>
-                </button>
-            </div>
+
+    <!-- Interaction Bar -->
+    <div class="interaction-bar">
+        <div class="like-section">
+            <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                <i class="far fa-heart"></i> <span id="likeText">Like this guide</span>
+            </button>
         </div>
+        <div class="action-buttons">
+            <div class="share-buttons">
+                <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"
+                    aria-label="Share on Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"
+                    aria-label="Share on LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link">
+                    <i class="fas fa-link"></i>
+                </button>
+            </div>
+            <div class="button-separator"></div>
+            <button onclick="printArticle()" class="print-btn" title="Print" aria-label="Print">
+                <i class="fas fa-print"></i>
+            </button>
+        </div>
+    </div>
 
     <script src="/interaction-bar.js?v=20251217"></script>
 </body>

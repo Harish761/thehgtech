@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <title>Windows Event Log Analysis Guide 2025 | Security Monitoring | TheHGTech</title>
+    <title>Windows Event Log Analysis: Critical Event IDs Cheat Sheet [2025] | TheHGTech</title>
     <meta name="description"
-        content="Complete Windows Event Log analysis guide for security professionals. Learn critical Event IDs, PowerShell analysis, threat detection, and SIEM integration for incident response.">
+        content="🔍 Master Windows Security logs for threat detection. Event ID 4624, 4625, 4688 explained. PowerShell queries + downloadable cheat sheet included.">
     <meta name="keywords"
         content="Windows Event Log, Event ID 4624, Event ID 4625, security monitoring, threat detection, SIEM, PowerShell event analysis, Windows security logs, incident response">
     <meta name="author" content="TheHGTech">
@@ -16,24 +16,66 @@
     <link rel="canonical" href="https://thehgtech.com/guides/windows-event-log-analysis.html">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Windows Event Log Analysis Guide 2025">
+    <meta property="og:title" content="Windows Event Log Analysis: Critical Event IDs [2025]">
     <meta property="og:description"
-        content="Complete guide to Windows Event Log analysis for threat detection and incident response.">
+        content="Master Windows Security logs for threat detection. Event ID cheat sheet included.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://thehgtech.com/guides/windows-event-log-analysis.html">
     <meta property="og:image" content="https://thehgtech.com/images/guides/windows-event-log-analysis.png">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Windows Event Log Analysis Guide 2025">
-    <meta name="twitter:description" content="Complete guide to Windows Event Log analysis for threat detection.">
+    <meta name="twitter:title" content="Windows Event Log Analysis [2025]">
+    <meta name="twitter:description" content="Critical Event IDs & PowerShell queries for threat detection.">
+
+    <!-- FAQ Schema for Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the most important Windows Event IDs for security?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Top 10 critical Event IDs: 4624 (successful logon), 4625 (failed logon), 4688 (process creation), 4672 (special privileges assigned), 4720 (user created), 4728/4732 (group membership changes), 4697 (service installed), 4698 (scheduled task created), 4776 (NTLM authentication). Enable command-line logging for 4688."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between Event ID 4624 logon types?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Key logon types: Type 2 (Interactive) = console login. Type 3 (Network) = SMB, WMI - common for lateral movement. Type 4 (Batch) = scheduled tasks. Type 7 (Unlock) = workstation unlock. Type 10 (RemoteInteractive) = RDP. Type 10 from an internal IP is normal; from external is suspicious."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I enable Windows command line logging?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Via GPO: Computer Configuration → Administrative Templates → System → Audit Process Creation → 'Include command line in process creation events' = Enabled. Also enable: auditpol /set /subcategory:'Process Creation' /success:enable. This adds full command lines to Event ID 4688."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What Windows logs should I forward to my SIEM?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Minimum: Security log (authentication, process creation), System log (services, drivers), PowerShell Operational log, Sysmon if deployed. Recommended: WMI Activity, TaskScheduler, Windows Defender, Firewall logs. Filter high-volume noise like 4624 Logon Type 3 from known service accounts."
+          }
+        }
+      ]
+    }
+    </script>
 
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "TechArticle",
-      "headline": "Windows Event Log Analysis Guide 2025",
+      "headline": "Windows Event Log Analysis: Critical Event IDs Cheat Sheet [2025]",
       "description": "Complete guide to Windows Event Log analysis for security professionals. Critical Event IDs, PowerShell analysis, and threat detection techniques.",
       "author": {
         "@type": "Organization",
@@ -45,7 +87,7 @@
         "url": "https://thehgtech.com"
       },
       "datePublished": "2025-12-17",
-      "dateModified": "2025-12-17",
+      "dateModified": "2026-01-09",
       "mainEntityOfPage": "https://thehgtech.com/guides/windows-event-log-analysis.html",
       "articleSection": "Security Guides",
       "keywords": ["Windows Events", "Security Monitoring", "Threat Detection", "SIEM"]
@@ -393,7 +435,7 @@
     </nav>
 
     <!-- Header -->
-        <!-- Desktop Header -->
+    <!-- Desktop Header -->
     <header class="header" role="banner">
         <div class="header-content">
             <div class="logo">
@@ -452,8 +494,9 @@
                         <a href="/guides/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
                             <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
                             <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides <span
-                                        class="dropdown-badge popular">37+</span></div>
+                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides
+                                    <span class="dropdown-badge popular">37+</span>
+                                </div>
                                 <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
                             </div>
                         </a>

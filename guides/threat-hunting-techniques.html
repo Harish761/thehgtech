@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <title>Threat Hunting Techniques & Methodologies: Proactive Security Guide | TheHGTech</title>
-    <meta name="title" content="Threat Hunting Techniques & Methodologies: Proactive Security Guide | TheHGTech">
+    <title>Threat Hunting: MITRE ATT&CK Techniques & Queries [2025] | TheHGTech</title>
+    <meta name="title" content="Threat Hunting: MITRE ATT&CK Techniques & Queries [2025]">
     <meta name="description"
-        content="Master proactive threat hunting with hypothesis-driven approaches, MITRE ATT&CK mapping, behavioral analysis, and advanced detection techniques. Go beyond reactive alerting.">
+        content="🎯 Go beyond reactive alerts. Hypothesis-driven threat hunting with MITRE ATT&CK mapping. Splunk queries, KQL examples & hunt playbooks included.">
     <meta name="keywords"
         content="threat hunting, MITRE ATT&CK, hypothesis hunting, behavioral analysis, proactive security, threat detection, cyber threat hunting, hunt team, IOC hunting, TTP hunting">
     <meta name="author" content="TheHGTech">
@@ -19,17 +19,59 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://thehgtech.com/guides/threat-hunting-techniques.html">
-    <meta property="og:title" content="Threat Hunting Techniques & Methodologies">
-    <meta property="og:description"
-        content="Master proactive threat hunting with hypothesis-driven approaches and MITRE ATT&CK mapping.">
+    <meta property="og:title" content="Threat Hunting: MITRE ATT&CK Techniques & Queries [2025]">
+    <meta property="og:description" content="Hypothesis-driven hunting with MITRE ATT&CK mapping & Splunk queries.">
     <meta property="og:image" content="https://thehgtech.com/images/guides/threat-hunting-techniques.png">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://thehgtech.com/guides/threat-hunting-techniques.html">
-    <meta name="twitter:title" content="Threat Hunting Techniques & Methodologies">
-    <meta name="twitter:description" content="Master proactive threat hunting with hypothesis-driven approaches.">
+    <meta name="twitter:title" content="Threat Hunting Techniques [2025]">
+    <meta name="twitter:description" content="MITRE ATT&CK hunting with Splunk & KQL query examples.">
     <meta name="twitter:image" content="https://thehgtech.com/images/guides/threat-hunting-techniques.png">
+
+    <!-- FAQ Schema for Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the difference between threat hunting and incident response?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Incident Response is reactive - you respond to alerts that have fired. Threat Hunting is proactive - you assume you're already compromised and actively search for threats that bypassed detection. IR investigates known events; hunting discovers unknown threats."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I start threat hunting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Start with: 1) Pick a hypothesis (e.g., 'attackers may be using encoded PowerShell'), 2) Identify data sources needed, 3) Write queries to test the hypothesis, 4) Analyze results, 5) Document findings. Begin with high-value hunts like persistence mechanisms, lateral movement, and C2 beaconing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What data sources do I need for threat hunting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Essential: Windows Security events (4688, 4624, 4625), PowerShell logging (ScriptBlock, Module), Sysmon, EDR telemetry, network flow data, DNS logs. Good to have: Proxy logs, email gateway logs, cloud audit logs. Enable command-line logging in Windows for maximum visibility."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is MITRE ATT&CK and how do I use it for hunting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MITRE ATT&CK is a knowledge base of adversary tactics and techniques. Use it to: 1) Prioritize hunts based on common TTPs for your threat profile, 2) Map your detection coverage gaps, 3) Create hypothesis-driven hunts for specific techniques, 4) Structure hunt documentation using ATT&CK IDs (e.g., T1059.001 for PowerShell)."
+          }
+        }
+      ]
+    }
+    </script>
+
 
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -505,7 +547,8 @@
                             <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
                             <div class="dropdown-item-content">
                                 <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides
-                                    <span class="dropdown-badge popular">37+</span></div>
+                                    <span class="dropdown-badge popular">37+</span>
+                                </div>
                                 <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
                             </div>
                         </a>

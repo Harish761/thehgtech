@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <title>Incident Response Automation Guide | TheHGTech Security Guides</title>
-    <meta name="title" content="Incident Response Automation | TheHGTech">
+    <title>Incident Response Automation: SOAR Playbook Templates [2025] | TheHGTech</title>
+    <meta name="title" content="Incident Response Automation: SOAR Playbook Templates [2025]">
     <meta name="description"
-        content="Learn how to automate incident response workflows using SOAR platforms, custom scripts, and orchestration tools. Reduce response time from hours to minutes.">
+        content="⚡ Automate IR with SOAR playbooks. Phishing, malware & ransomware response automation. 10+ playbook templates + Python scripts included. Reduce MTTR by 80%.">
     <meta name="keywords"
         content="incident response automation, SOAR, security orchestration, automated response, incident automation, security automation, playbook automation, IR workflows">
     <meta name="author" content="TheHGTech">
@@ -19,17 +19,59 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://thehgtech.com/guides/incident-response-automation.html">
-    <meta property="og:title" content="Incident Response Automation Guide">
+    <meta property="og:title" content="Incident Response Automation: SOAR Playbook Templates [2025]">
     <meta property="og:description"
-        content="Automate incident response workflows using SOAR platforms and custom scripts.">
+        content="Automate IR with SOAR playbooks. Reduce response time from hours to minutes.">
     <meta property="og:image" content="https://thehgtech.com/images/automation-og.jpg">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://thehgtech.com/guides/incident-response-automation.html">
-    <meta name="twitter:title" content="Incident Response Automation">
-    <meta name="twitter:description" content="Comprehensive guide to automating security incident response.">
+    <meta name="twitter:title" content="Incident Response Automation: SOAR Playbooks [2025]">
+    <meta name="twitter:description" content="10+ SOAR playbook templates for phishing, malware & ransomware.">
     <meta name="twitter:image" content="https://thehgtech.com/images/automation-twitter.jpg">
+
+    <!-- FAQ Schema for Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is SOAR in cybersecurity?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SOAR (Security Orchestration, Automation, and Response) platforms automate incident response workflows. They integrate with SIEM, EDR, firewalls, and threat intel to execute playbooks automatically. Leading SOAR platforms include Palo Alto Cortex XSOAR, Splunk SOAR, Microsoft Sentinel, and Swimlane."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I automate phishing response?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Automate phishing response by: extracting URLs and attachments from reported emails, querying VirusTotal/URLScan for reputation, blocking malicious URLs on firewall/proxy, quarantining emails from other recipients, and creating a ticket with enriched context. This reduces response from hours to minutes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I automate first in incident response?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Start automating: 1) Alert enrichment (IOC lookups), 2) Phishing triage (most common alert), 3) User context gathering (who, where, what device), 4) Ticket creation with context, 5) Low-risk containment actions. Save high-risk actions for human approval initially."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does SOAR reduce response time?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "According to IBM, organizations with fully deployed security AI and automation reduced breach containment time by 108 days and saved $1.76 million per breach. Typical SOAR implementations reduce MTTR (Mean Time to Respond) by 80% for automated use cases."
+          }
+        }
+      ]
+    }
+    </script>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -415,10 +457,13 @@
     <!-- Mobile Header -->
     <header class="m-header m-only">
         <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
-    <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
-    <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0;">
-    <span style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
-</div>
+            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark"
+                style="height: 28px; width: auto; margin: 0;">
+            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light"
+                style="height: 28px; width: auto; margin: 0;">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+        </div>
         <div class="m-header__actions">
             <!-- Premium Theme Toggle -->
             <button class="m-theme-toggle" onclick="mToggleTheme()" aria-label="Toggle Theme">
@@ -518,8 +563,9 @@
                         <a href="/guides/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
                             <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
                             <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides <span
-                                        class="dropdown-badge popular">37+</span></div>
+                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides
+                                    <span class="dropdown-badge popular">37+</span>
+                                </div>
                                 <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
                             </div>
                         </a>
@@ -1094,32 +1140,34 @@ Invoke-RestMethod -Uri <span class="string">"https://servicenow.com/api/now/tabl
 
     <!-- Load Header -->
     <script src="/header.js"></script>
-  
-        <!-- Interaction Bar -->
-        <div class="interaction-bar">
-            <div class="like-section">
-                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
-                    <i class="far fa-heart"></i> <span id="likeText">Like this guide</span>
-                </button>
-            </div>
-            <div class="action-buttons">
-                <div class="share-buttons">
-                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter" aria-label="Share on Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn" aria-label="Share on LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link">
-                        <i class="fas fa-link"></i>
-                    </button>
-                </div>
-                <div class="button-separator"></div>
-                <button onclick="printArticle()" class="print-btn" title="Print" aria-label="Print">
-                    <i class="fas fa-print"></i>
-                </button>
-            </div>
+
+    <!-- Interaction Bar -->
+    <div class="interaction-bar">
+        <div class="like-section">
+            <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                <i class="far fa-heart"></i> <span id="likeText">Like this guide</span>
+            </button>
         </div>
+        <div class="action-buttons">
+            <div class="share-buttons">
+                <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"
+                    aria-label="Share on Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"
+                    aria-label="Share on LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link">
+                    <i class="fas fa-link"></i>
+                </button>
+            </div>
+            <div class="button-separator"></div>
+            <button onclick="printArticle()" class="print-btn" title="Print" aria-label="Print">
+                <i class="fas fa-print"></i>
+            </button>
+        </div>
+    </div>
 
     <script src="/interaction-bar.js?v=20251217"></script>
 </body>

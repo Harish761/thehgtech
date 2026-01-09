@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <title>API Security Best Practices | TheHGTech</title>
-    <meta name="title" content="API Security Best Practices | TheHGTech">
+    <title>API Security Best Practices: OWASP Top 10 Defense Guide [2025] | TheHGTech</title>
+    <meta name="title" content="API Security Best Practices: OWASP Top 10 Defense Guide [2025]">
     <meta name="description"
-        content="Comprehensive guide to securing REST APIs, authentication, authorization, and preventing common vulnerabilities. Learn OAuth 2.0, rate limiting, and API gateway security.">
+        content="🔐 Secure your REST APIs against OWASP API Top 10. OAuth 2.0, JWT, rate limiting & input validation. Code examples for Python, Node.js included.">
     <meta name="keywords"
         content="API security, REST API, OAuth 2.0, API authentication, rate limiting, API gateway, input validation, OWASP API">
     <meta name="author" content="TheHGTech">
@@ -19,17 +19,59 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://thehgtech.com/guides/api-security-best-practices.html">
-    <meta property="og:title" content="API Security Best Practices">
+    <meta property="og:title" content="API Security Best Practices: OWASP Top 10 Defense Guide [2025]">
     <meta property="og:description"
-        content="Master API security with this comprehensive guide to authentication, authorization, and vulnerability prevention.">
+        content="Secure your REST APIs against OWASP API Top 10. OAuth 2.0, JWT, rate limiting & code examples.">
     <meta property="og:image" content="https://thehgtech.com/images/api-security-og.jpg">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://thehgtech.com/guides/api-security-best-practices.html">
-    <meta name="twitter:title" content="API Security Best Practices">
-    <meta name="twitter:description" content="Learn how to secure your REST APIs effectively.">
+    <meta name="twitter:title" content="API Security Best Practices: OWASP Top 10 Defense [2025]">
+    <meta name="twitter:description" content="Secure your REST APIs with OAuth 2.0, JWT & rate limiting.">
     <meta name="twitter:image" content="https://thehgtech.com/images/api-security-twitter.jpg">
+
+    <!-- FAQ Schema for Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the OWASP API Security Top 10?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The OWASP API Security Top 10 lists the most critical API vulnerabilities: Broken Object Level Authorization, Broken Authentication, Broken Object Property Level Authorization, Unrestricted Resource Consumption, Broken Function Level Authorization, Unrestricted Access to Sensitive Business Flows, SSRF, Security Misconfiguration, Improper Inventory Management, and Unsafe Consumption of APIs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I implement API rate limiting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Implement API rate limiting using token bucket or sliding window algorithms. Use Redis for distributed rate limiting. Return X-RateLimit-Limit, X-RateLimit-Remaining, and Retry-After headers. Common limits: 100-1000 requests per minute for authenticated users, lower for unauthenticated."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I use OAuth 2.0 or API keys?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use OAuth 2.0 with PKCE for user-delegated access and mobile/web apps. Use API keys for server-to-server communication. Never use API keys for frontend applications. Always use short-lived tokens (15-30 min) with refresh tokens for better security."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I prevent API injection attacks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Prevent API injection by: using parameterized queries (never string concatenation), validating all input with strict schemas (Joi, JSON Schema), sanitizing output, using ORMs instead of raw SQL, and implementing content-type validation."
+          }
+        }
+      ]
+    }
+    </script>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -477,7 +519,8 @@
                             <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
                             <div class="dropdown-item-content">
                                 <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides
-                                    <span class="dropdown-badge popular">37+</span></div>
+                                    <span class="dropdown-badge popular">37+</span>
+                                </div>
                                 <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
                             </div>
                         </a>

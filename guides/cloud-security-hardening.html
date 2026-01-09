@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <title>Cloud Security Hardening: AWS, Azure & GCP Best Practices | TheHGTech</title>
-    <meta name="title" content="Cloud Security Hardening: AWS, Azure & GCP Best Practices | TheHGTech">
+    <title>Cloud Security Hardening: AWS, Azure & GCP Checklist [2025] | TheHGTech</title>
+    <meta name="title" content="Cloud Security Hardening: AWS, Azure & GCP Checklist [2025]">
     <meta name="description"
-        content="Comprehensive guide to hardening cloud infrastructure across AWS, Azure, and GCP. Learn IAM best practices, network security, encryption, logging, and compliance frameworks.">
+        content="☁️ Multi-cloud security hardening for AWS, Azure & GCP. IAM, network security, encryption & logging. Comparison tables + CLI commands included.">
     <meta name="keywords"
         content="cloud security, AWS security, Azure security, GCP security, cloud hardening, IAM best practices, cloud compliance, CSPM, cloud security posture management, multi-cloud security">
     <meta name="author" content="TheHGTech">
@@ -37,7 +37,7 @@
     {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "Cloud Security Hardening: AWS, Azure & GCP Best Practices",
+      "headline": "Cloud Security Hardening: AWS, Azure & GCP Checklist [2025]",
       "description": "Comprehensive guide to hardening cloud infrastructure across AWS, Azure, and GCP",
       "image": {
         "@type": "ImageObject",
@@ -61,7 +61,7 @@
         }
       },
       "datePublished": "2025-12-13",
-      "dateModified": "2025-12-13",
+      "dateModified": "2026-01-09",
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://thehgtech.com/guides/cloud-security-hardening.html"
@@ -70,6 +70,48 @@
       "articleSection": "Security Guides",
       "inLanguage": "en-US",
       "wordCount": 4500
+    }
+    </script>
+
+    <!-- FAQ Schema for Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the shared responsibility model in cloud security?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cloud providers secure the infrastructure OF the cloud (physical data centers, network, hypervisors). You secure everything IN the cloud - your data, applications, identities, IAM policies, network configurations, and encryption keys. Most cloud breaches occur in the customer's domain."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the top cloud security mistakes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Top cloud security mistakes: 1) Overly permissive IAM policies with wildcards, 2) Public S3 buckets or storage blobs, 3) Security groups open to 0.0.0.0/0, 4) No MFA on admin accounts, 5) Long-lived credentials instead of temporary tokens, 6) Disabled logging, 7) Unencrypted data at rest."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I secure IAM in AWS, Azure, and GCP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Secure IAM by: enabling MFA for all users, using role-based access control (RBAC), implementing Just-In-Time access for privileged operations, rotating credentials every 90 days, using service accounts with scoped permissions, and eliminating long-lived access keys in favor of temporary credentials."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What logs should I enable in cloud environments?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Essential cloud logs: AWS CloudTrail (API activity), VPC Flow Logs, GuardDuty findings. Azure Activity Log, NSG Flow Logs, Defender for Cloud alerts. GCP Cloud Audit Logs, VPC Flow Logs, Security Command Center findings. Store logs in a separate account with immutable retention."
+          }
+        }
+      ]
     }
     </script>
 
@@ -486,7 +528,8 @@
                             <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
                             <div class="dropdown-item-content">
                                 <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides
-                                    <span class="dropdown-badge popular">37+</span></div>
+                                    <span class="dropdown-badge popular">37+</span>
+                                </div>
                                 <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
                             </div>
                         </a>
