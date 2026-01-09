@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <title>LLM Security: Prompt Injection & Jailbreaks Guide 2025 | TheHGTech</title>
+    <title>LLM Prompt Injection Attacks: Defense Guide + Examples [2025]</title>
     <meta name="description"
-        content="Complete guide to LLM security vulnerabilities. Learn about prompt injection attacks, jailbreaks, data exfiltration, and how to secure ChatGPT, Claude, and custom LLM integrations.">
+        content="🔐 Stop LLM attacks before they happen. Real prompt injection examples, jailbreak techniques & step-by-step defense playbook for ChatGPT, Claude & custom AI. Free checklist included.">
     <meta name="keywords"
         content="LLM security, prompt injection, jailbreak, ChatGPT security, Claude security, AI security, indirect prompt injection, GenAI security">
     <meta name="author" content="TheHGTech">
@@ -16,25 +16,25 @@
     <link rel="canonical" href="https://thehgtech.com/guides/llm-security-prompt-injection.html">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="LLM Security: Prompt Injection & Jailbreaks Guide 2025">
+    <meta property="og:title" content="LLM Prompt Injection Attacks: Defense Guide + Examples [2025]">
     <meta property="og:description"
-        content="Secure your LLM integrations against prompt injection, jailbreaks, and data exfiltration attacks.">
+        content="Stop LLM attacks before they happen. Real prompt injection examples, jailbreak techniques & step-by-step defense playbook.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://thehgtech.com/guides/llm-security-prompt-injection.html">
     <meta property="og:image" content="https://thehgtech.com/images/guides/llm-security.png">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="LLM Security: Prompt Injection & Jailbreaks Guide 2025">
+    <meta name="twitter:title" content="LLM Prompt Injection Attacks: Defense Guide + Examples [2025]">
     <meta name="twitter:description"
-        content="Secure your LLM integrations against prompt injection and jailbreak attacks.">
+        content="Stop LLM attacks before they happen. Real examples, jailbreak techniques & step-by-step defense playbook.">
 
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "TechArticle",
-      "headline": "LLM Security: Prompt Injection & Jailbreaks Guide 2025",
+      "headline": "LLM Prompt Injection Attacks: Defense Guide + Examples [2025]",
       "description": "Complete guide to securing Large Language Model integrations against prompt injection, jailbreaks, and data exfiltration.",
       "author": {
         "@type": "Organization",
@@ -46,10 +46,60 @@
         "url": "https://thehgtech.com"
       },
       "datePublished": "2025-12-17",
-      "dateModified": "2025-12-17",
+      "dateModified": "2026-01-09",
       "mainEntityOfPage": "https://thehgtech.com/guides/llm-security-prompt-injection.html",
       "articleSection": "AI Security Guides",
       "keywords": ["LLM Security", "Prompt Injection", "Jailbreaks", "GenAI Security"]
+    }
+    </script>
+
+    <!-- FAQ Schema for Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is prompt injection in LLMs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Prompt injection is an attack where malicious input causes an LLM to ignore its original instructions and follow the attacker's commands instead. It's ranked #1 in OWASP's Top 10 for LLM Applications."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is indirect prompt injection?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Indirect prompt injection occurs when malicious prompts are hidden in external data sources (web pages, emails, documents) that the LLM processes, rather than coming directly from the user."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a jailbreak attack on AI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A jailbreak is a sophisticated prompt injection attack designed to bypass an LLM's safety filters, getting it to produce harmful, unethical, or restricted content that it would normally refuse."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I protect against LLM prompt injection?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use defense in depth: input validation and sanitization, prompt hardening with clear delimiters, output filtering for sensitive data, and implement the principle of least privilege for LLM tool access."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can ChatGPT and Claude be jailbroken?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, all LLMs including ChatGPT and Claude can potentially be jailbroken through sophisticated prompts. Vendors continuously patch known jailbreaks, but new techniques emerge regularly."
+          }
+        }
+      ]
     }
     </script>
 
@@ -380,7 +430,7 @@
     </nav>
 
     <!-- Header -->
-        <!-- Desktop Header -->
+    <!-- Desktop Header -->
     <header class="header" role="banner">
         <div class="header-content">
             <div class="logo">
@@ -439,8 +489,8 @@
                         <a href="/guides/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
                             <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
                             <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides <span
-                                        class="dropdown-badge popular">37+</span></div>
+                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides
+                                    <span class="dropdown-badge popular">37+</span></div>
                                 <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
                             </div>
                         </a>

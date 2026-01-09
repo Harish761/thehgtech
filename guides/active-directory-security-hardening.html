@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <title>Active Directory Security & Hardening Guide 2025 | Best Practices | TheHGTech</title>
+    <title>Active Directory Hardening: Complete Security Checklist [2025]</title>
     <meta name="description"
-        content="Complete Active Directory security hardening guide. Learn AD tiered administration, GPO security, Kerberos attack prevention, credential protection, and enterprise AD best practices.">
+        content="🔒 Secure your AD environment. Step-by-step hardening guide: tiered admin model, Kerberoasting prevention, LAPS, GPO security. Includes free audit checklist.">
     <meta name="keywords"
         content="Active Directory security, AD hardening, Kerberoasting prevention, Pass-the-Hash, LAPS, AD tiered model, GPO security, domain controller security, enterprise Active Directory">
     <meta name="author" content="TheHGTech">
@@ -16,24 +16,25 @@
     <link rel="canonical" href="https://thehgtech.com/guides/active-directory-security-hardening.html">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Active Directory Security & Hardening Guide 2025">
+    <meta property="og:title" content="Active Directory Hardening: Complete Security Checklist [2025]">
     <meta property="og:description"
-        content="Complete guide to securing and hardening Active Directory. Tiered administration, GPO security, attack prevention.">
+        content="Secure your AD environment with our step-by-step hardening guide. Tiered admin model, attack prevention & free audit checklist.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://thehgtech.com/guides/active-directory-security-hardening.html">
     <meta property="og:image" content="https://thehgtech.com/images/guides/active-directory-security.png">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Active Directory Security & Hardening Guide 2025">
-    <meta name="twitter:description" content="Complete guide to securing and hardening Active Directory.">
+    <meta name="twitter:title" content="Active Directory Hardening: Complete Security Checklist [2025]">
+    <meta name="twitter:description"
+        content="Secure your AD environment. Tiered admin model, attack prevention & free audit checklist.">
 
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "TechArticle",
-      "headline": "Active Directory Security & Hardening Guide 2025",
+      "headline": "Active Directory Hardening: Complete Security Checklist [2025]",
       "description": "Complete guide to securing and hardening Active Directory environments with tiered administration model, GPO security, and attack prevention techniques.",
       "author": {
         "@type": "Organization",
@@ -45,10 +46,60 @@
         "url": "https://thehgtech.com"
       },
       "datePublished": "2025-12-17",
-      "dateModified": "2025-12-17",
+      "dateModified": "2026-01-09",
       "mainEntityOfPage": "https://thehgtech.com/guides/active-directory-security-hardening.html",
       "articleSection": "Security Guides",
       "keywords": ["Active Directory", "Security", "Hardening", "Enterprise Security"]
+    }
+    </script>
+
+    <!-- FAQ Schema for Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the AD Tiered Administration Model?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Tiered Administration Model (or Enterprise Access Model) separates admin credentials into 3 tiers: Tier 0 (Domain Controllers, identity), Tier 1 (enterprise servers), and Tier 2 (workstations). Credentials from higher tiers should never be used on lower tiers to prevent credential theft."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Kerberoasting and how do I prevent it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kerberoasting is an attack where attackers extract service account password hashes from Kerberos tickets. Prevent it by using Group Managed Service Accounts (gMSA) with auto-rotating 240-character passwords, or ensure service accounts have 25+ character passwords."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is LAPS and why do I need it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "LAPS (Local Administrator Password Solution) automatically manages and rotates local admin passwords, ensuring each machine has a unique, complex password. This prevents lateral movement attacks where attackers reuse the same local admin password across machines."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often should I reset the KRBTGT password?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Reset the KRBTGT password twice every 180 days. It must be reset twice because Kerberos keeps both the current and previous password. This prevents Golden Ticket attacks where attackers forge Kerberos tickets using a compromised KRBTGT hash."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are Protected Users in Active Directory?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Protected Users is a security group that provides enhanced protection: NTLM authentication is disabled, DES/RC4 encryption is disabled for Kerberos, credential delegation is disabled, and TGT lifetime is reduced to 4 hours. Add high-value admin accounts to this group."
+          }
+        }
+      ]
     }
     </script>
 
@@ -364,7 +415,7 @@
     </nav>
 
     <!-- Header -->
-        <!-- Desktop Header -->
+    <!-- Desktop Header -->
     <header class="header" role="banner">
         <div class="header-content">
             <div class="logo">
@@ -423,8 +474,8 @@
                         <a href="/guides/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
                             <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
                             <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides <span
-                                        class="dropdown-badge popular">37+</span></div>
+                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides
+                                    <span class="dropdown-badge popular">37+</span></div>
                                 <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
                             </div>
                         </a>
