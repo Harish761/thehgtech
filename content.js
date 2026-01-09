@@ -5,6 +5,141 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Jan 09 2026",
+            "headline": "Ni8mare Vulnerability Threatens 100,000 Servers Worldwide",
+            "title": "Critical n8n Vulnerability Puts 100,000 Servers at Risk",
+            "content": "A severe vulnerability dubbed &quot;Ni8mare&quot; has been identified in the n8n workflow automation tool, potentially affecting up to 100,000 servers globally. This critical flaw could allow attackers to execute arbitrary code on compromised systems, posing a significant threat to organizations relying on n8n for automation tasks. The vulnerability highlights the growing risks associated with open-source tools that are widely deployed in enterprise environments. Security professionals are urged to apply available patches immediately to mitigate the risk of exploitation. This incident underscores the importance of continuous monitoring and timely updates in maintaining secure IT infrastructures.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4114963/ni8mare-kritische-n8n-lucke-bedroht-100-000-server.html",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "N8N Analysis",
+                    "url": "/articles/n8n-rce-vulnerability-cve-2025-68613.html",
+                    "icon": "fa-file-alt"
+                },
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Jan 09 2026",
+            "headline": "Researchers Exploit ChatGPT with &#x27;ZombieAgent&#x27; Attack",
+            "title": "&#x27;ZombieAgent&#x27; Attack Compromises ChatGPT&#x27;s Security and Privacy",
+            "content": "Researchers at Radware have demonstrated a novel attack method named &#x27;ZombieAgent&#x27; that successfully bypasses ChatGPT&#x27;s security mechanisms. By exploiting vulnerabilities, they were able to exfiltrate user data and implant persistent logic into the AI&#x27;s long-term memory. This attack raises significant concerns about the security and privacy of AI models, especially as they become more integrated into sensitive applications. Organizations utilizing ChatGPT should review their security protocols and consider implementing additional safeguards to protect against such sophisticated threats. The incident highlights the need for robust AI security measures as AI adoption continues to grow.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/zombieagent-attack-let-researchers-take-over-chatgpt/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Jan 09 2026",
+            "headline": "ChatGPT Health Raises Privacy Concerns for Medical Data",
+            "title": "ChatGPT Health: Balancing Wellness Benefits with Privacy Risks",
+            "content": "The introduction of ChatGPT Health, which links medical records to AI for personalized wellness advice, has sparked privacy concerns among experts. While the platform promises tailored health insights, the potential exposure of sensitive medical data to unauthorized access poses a significant risk. As healthcare providers and patients consider adopting this technology, they must weigh the benefits against the privacy implications. This development reflects a broader trend of AI integration into healthcare, necessitating stringent data protection measures. Stakeholders are advised to ensure compliance with privacy regulations and implement robust security controls.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/01/are-we-ready-for-chatgpt-health",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Jan 09 2026",
+            "headline": "CrowdStrike Acquires SGNL for $740M—Boosts Identity Security",
+            "title": "CrowdStrike Expands with $740M Acquisition of SGNL for Real-Time Security",
+            "content": "CrowdStrike has announced its acquisition of identity security startup SGNL for $740 million, aiming to enhance its real-time authorization capabilities. This strategic move will allow CrowdStrike to offer dynamic access management based on current risk conditions, rather than relying on static permissions. The acquisition is expected to close in the company&#x27;s fiscal first quarter, ending April 30, and signifies a growing trend towards adaptive security solutions. Organizations can benefit from improved protection against identity-based threats by adopting these advanced security measures. This deal highlights the increasing importance of identity security in the cybersecurity landscape.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4114957/crowdstrike-to-acquire-sgnl-for-740m-expanding-real-time-identity-security.html",
+            "relatedResources": [
+                {
+                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
+                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
+                    "icon": "fa-shield-virus"
+                }
+            ]
+        },
+        {
+            "date": "Jan 09 2026",
+            "headline": "Ransomware Hits Texas Gas Firm—377,000 Affected",
+            "title": "Data Breach at Texas Gas Station Firm Impacts 377,000 Individuals",
+            "content": "Gulshan Management Services, a Texas-based gas station firm, has reported a data breach affecting 377,000 individuals following a ransomware attack. The breach has compromised sensitive customer information, underscoring the ongoing threat posed by ransomware to businesses of all sizes. As ransomware attacks continue to evolve, organizations must enhance their cybersecurity defenses and incident response strategies. Affected customers are advised to monitor their accounts for suspicious activity and consider identity theft protection services. This incident serves as a reminder of the critical need for robust cybersecurity measures in protecting consumer data.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/377000-impacted-by-data-breach-at-texas-gas-station-firm/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Ransomware Response Playbook",
+                    "url": "/guides/ransomware-response-playbook.html",
+                    "icon": "fa-biohazard"
+                }
+            ]
+        },
+        {
+            "date": "Jan 09 2026",
+            "headline": "CISA Warns of Critical HPE OneView Vulnerability",
+            "title": "Max-Severity RCE Flaw in HPE OneView Actively Exploited",
+            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has flagged a maximum severity remote code execution (RCE) vulnerability in HPE&#x27;s OneView management platform, tracked as CVE-2025-37164. This flaw is currently being actively exploited, posing a major threat to organizations using OneView for infrastructure management. Users are urged to prioritize patching this vulnerability to prevent potential exploitation. The inclusion of this flaw in CISA&#x27;s Known Exploited Vulnerability Catalog highlights the urgent need for vigilance and timely updates in maintaining secure systems. Organizations should assess their exposure and implement necessary security measures.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4114947/cisa-flags-max-severity-bug-in-hpe-oneview-amid-active-exploitation.html",
+            "relatedResources": [
+                {
+                    "label": "CVE Tracker",
+                    "url": "/cve-tracker.html",
+                    "icon": "fa-bug"
+                },
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Jan 09 2026",
+            "headline": "VMware Zero-Day Exploits Preceded Public Disclosure by Year",
+            "title": "Exploit for VMware Zero-Day Flaws Built Before Disclosure",
+            "content": "New evidence suggests that exploits for three VMware ESXi zero-day vulnerabilities were developed a year before their public disclosure in March 2025. These vulnerabilities have been targeted in recent attacks, highlighting the persistent threat posed by undisclosed exploits. The situation emphasizes the importance of proactive vulnerability management and threat intelligence in safeguarding virtualized environments. Organizations using VMware ESXi should ensure they have applied all relevant patches and continue to monitor for suspicious activity. This case underscores the critical need for timely vulnerability disclosures and robust security practices.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/exploit-for-vmware-zero-day-flaws-likely-built-a-year-before-public-disclosure/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Jan 09 2026",
             "headline": "Cisco ISE Flaw Exposes Data—Patch and Rotate Credentials Now",
             "title": "Cisco ISE Vulnerability Could Expose Sensitive Data to Attackers",
             "content": "Cisco has identified a vulnerability in its Identity Services Engine (ISE) that could allow attackers to access sensitive information. The flaw requires immediate attention involving the rotation of credentials and the installation of a critical patch. Cisco ISE, a platform used for network access control, is crucial in enforcing access policies across networks. This vulnerability poses a significant risk to organizations relying on ISE for secure network management. Experts urge affected users to apply the patch promptly to mitigate potential data exposure. This incident underscores the ongoing challenges in securing network infrastructure against emerging threats.",
@@ -34,85 +169,6 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Jan 08 2026",
-            "headline": "Gmail&#x27;s AI Inbox Summarizes Emails—Privacy Assured",
-            "title": "Google Introduces AI Inbox with Assurances on User Privacy",
-            "content": "Google has launched a new feature called &#x27;AI Inbox&#x27; in Gmail, utilizing the Gemini AI model to summarize users&#x27; emails. Importantly, Google has assured users that their emails will not be used to train the AI models, addressing privacy concerns. The AI Inbox aims to enhance productivity by providing concise email summaries, allowing users to manage their communications more efficiently. This move reflects the growing trend of integrating AI into everyday tools while balancing privacy and functionality. Users can expect improved email management without compromising their data privacy.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/google/gmails-new-ai-inbox-uses-gemini-but-google-says-it-wont-train-ai-on-user-emails/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 08 2026",
-            "headline": "China-Linked Hackers Exploit Telcos—Edge Devices Targeted",
-            "title": "China-Linked Group Expands Attacks on Telcos Using Edge Device Exploits",
-            "content": "A sophisticated threat actor, linked to China, has been exploiting edge devices to breach telecommunications providers, extending its reach to organizations in Southeastern Europe. The group employs Linux-based malware to infiltrate systems, demonstrating advanced capabilities and strategic targeting. This campaign highlights the vulnerabilities inherent in edge devices, which are increasingly used in modern telecom infrastructures. Organizations in the sector are advised to bolster their defenses, particularly around edge devices, to mitigate the risk of such intrusions. This development underscores the persistent threat posed by nation-state actors in cyberspace.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-china-linked-hackers-breach-telcos-using-edge-device-exploits/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 08 2026",
-            "headline": "Kimwolf Botnet Infects 2M Devices—Android TV Boxes Compromised",
-            "title": "Investigation Reveals Rapid Growth of Kimwolf Botnet via Android TV Boxes",
-            "content": "The Kimwolf botnet has rapidly expanded, infecting over two million devices by compromising unofficial Android TV streaming boxes. This botnet, along with Aisuru, has raised significant concerns about the security of IoT devices and their role in large-scale cyber attacks. The investigation into Kimwolf&#x27;s growth provides insights into the tactics used by the operators, including exploiting weak security protocols in IoT devices. This incident highlights the urgent need for improved security measures in consumer electronics to prevent such widespread compromises. Organizations should prioritize securing IoT devices to mitigate botnet risks.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2026/01/who-benefited-from-the-aisuru-and-kimwolf-botnets/",
-            "relatedResources": [
-                {
-                    "label": "MITRE ATT&CK Mapping",
-                    "url": "/guides/mitre-attack-mapping.html",
-                    "icon": "fa-map"
-                }
-            ]
-        },
-        {
-            "date": "Jan 08 2026",
-            "headline": "Vercel&#x27;s React2Shell Response—Bounty and Patch Race",
-            "title": "Vercel&#x27;s Urgent Response to React2Shell Vulnerability Highlights Open-Source Security Challenges",
-            "content": "Vercel has been at the forefront of addressing the React2Shell vulnerability, engaging in a swift mitigation effort that included launching a bounty program and deploying patches. The vulnerability, affecting React-based applications, underscores the challenges of coordinating security efforts in open-source projects. Vercel&#x27;s response involved a concerted effort to patch the vulnerability while engaging the community in a debate about best practices in open-source security. This incident highlights the importance of proactive measures and community involvement in securing open-source ecosystems. Developers are encouraged to update affected applications and participate in ongoing security discussions.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/vercel-cto-security-react2shell-vulnerability/",
-            "relatedResources": [
-                {
-                    "label": "React Analysis",
-                    "url": "/articles/react2shell-cve-2025-55182-react-vulnerability.html",
-                    "icon": "fa-file-alt"
-                },
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Jan 08 2026",
-            "headline": "Kimsuky Hackers Target U.S. with QR Code Phishing",
-            "title": "FBI Warns of Kimsuky&#x27;s QR Code Phishing Campaign Against U.S. Organizations",
-            "content": "The FBI has issued a warning about a spearphishing campaign by the North Korean state-sponsored group Kimsuky, which uses malicious QR codes to target U.S. organizations. This innovative approach to phishing highlights the evolving tactics of threat actors in their efforts to compromise sensitive information. The campaign&#x27;s focus on U.S. entities underscores the ongoing threat posed by nation-state actors. Organizations are advised to educate their employees about the risks associated with QR codes and implement robust email security measures. This alert serves as a reminder of the importance of vigilance against sophisticated phishing techniques.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-warns-about-kimsuky-hackers-using-qr-codes-to-phish-us-orgs/",
-            "relatedResources": [
-                {
-                    "label": "Threat Intelligence",
-                    "url": "/threat-intel.html",
-                    "icon": "fa-user-secret"
-                },
-                {
-                    "label": "Phishing & Security Awareness",
-                    "url": "/guides/phishing-simulation-security-awareness.html",
-                    "icon": "fa-fish"
-                }
-            ]
-        },
-        {
             "date": "May 05 2026",
             "title": "GISEC GLOBAL 2026 Unveils Cybersecurity Innovations in Middle East and Africa",
             "content": "GISEC GLOBAL 2026, the largest cybersecurity event in the Middle East and Africa, has kicked off, showcasing the latest advancements in cybersecurity technology and strategy. The event serves as a platform for industry leaders to discuss emerging threats and innovative solutions. This year&#x27;s focus includes AI-driven security tools, advanced threat detection systems, and new compliance frameworks. Professionals from various sectors, including government and private enterprises, are attending to gain insights into protecting critical infrastructure. The event highlights the region&#x27;s growing importance in the global cybersecurity landscape, emphasizing collaboration and knowledge sharing. Attendees are encouraged to engage with workshops and panels to stay ahead of evolving cyber threats.",
@@ -123,56 +179,50 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Jan 09 2026",
-            "headline": "CES 2026 Dazzles with AI Gadgets and Cutting-Edge Chips",
-            "title": "CES 2026 Showcases Nvidia, AMD, and Razer&#x27;s Latest AI Innovations",
-            "content": "CES 2026 has kicked off in Las Vegas, unveiling a plethora of technological advancements from industry giants like Nvidia, AMD, and Razer. Nvidia introduced its latest AI-driven graphics solutions, promising enhanced performance for gaming and professional applications. AMD showcased new chip designs aimed at boosting efficiency and power in computing devices. Meanwhile, Razer surprised attendees with unconventional AI gadgets, including AI-powered gaming peripherals. The event highlights the growing integration of AI across consumer electronics, setting the stage for further innovation. Attendees and tech enthusiasts should keep an eye on these developments as they signal future trends in AI and computing.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/08/ces-2026-everything-revealed-from-nvidias-debuts-to-amds-new-chips-to-razers-ai-oddities/",
+            "headline": "Microsoft-Hexagon Robots Enter Workplaces—Humanoids Become Reality",
+            "title": "Microsoft and Hexagon Partnership Brings Humanoid Robots to Workplaces",
+            "content": "The collaboration between Microsoft and Hexagon is set to revolutionize workplaces with the introduction of humanoid robots. These prototypes, now transitioning to operational realities, are designed to enhance efficiency and safety in industrial environments. The robots leverage Microsoft&#x27;s cloud technologies and Hexagon&#x27;s manufacturing expertise, aiming to automate repetitive tasks and assist human workers. Industries such as automotive and electronics are expected to benefit significantly, potentially reducing labor costs and improving precision. This development marks a pivotal moment in robotics, reflecting a growing trend towards integrating AI-driven automation in traditional sectors. Organizations should evaluate the potential for adopting such technologies to stay competitive.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/from-cloud-to-factory-humanoid-robots-coming-to-workplaces/",
             "relatedResources": []
         },
         {
-            "date": "Jan 08 2026",
-            "headline": "UK PM Vows Crackdown on Grok&#x27;s Offensive Deepfakes",
-            "title": "UK Government to Address Grok AI&#x27;s Deepfake Scandal on X",
-            "content": "UK Prime Minister Keir Starmer has announced intentions to take action against the Grok AI chatbot on the X platform, following reports of it generating sexualized deepfakes involving both adults and minors. This follows investigations by The Telegraph and Sky News, which highlighted the unethical use of AI technology in creating non-consensual imagery. The UK government is considering regulatory measures to curb such practices and protect individuals&#x27; privacy and dignity. This incident underscores growing concerns about the misuse of AI in creating harmful content, prompting calls for stricter oversight. Users are advised to be vigilant about AI-generated content online.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/news/859107/uk-prime-minister-x-ai-grok-deepfakes",
-            "relatedResources": []
+            "date": "Jan 09 2026",
+            "headline": "Physical AI to Transform Automotive Industry—New Era for Cars",
+            "title": "Physical AI Set to Revolutionize the Future of Automotive Technology",
+            "content": "The advent of &quot;Physical AI&quot; is poised to reshape the automotive industry, introducing intelligent systems that enhance vehicle performance and safety. This emerging technology integrates AI with physical components, enabling cars to adapt to dynamic environments and user preferences. By leveraging machine learning algorithms and sensor data, vehicles can optimize fuel efficiency, predict maintenance needs, and provide personalized driving experiences. Automakers are increasingly investing in this innovation to meet consumer demands for smarter, more responsive vehicles. Industry professionals should monitor developments in Physical AI to capitalize on its potential benefits and address any security implications.",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/physical-ai-is-coming-for-your-car/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 09 2026",
+            "headline": "Anthropic Secures Allianz—Expands Enterprise AI Solutions",
+            "title": "Anthropic Partners with Allianz to Deliver Advanced AI Solutions",
+            "content": "Anthropic has announced a strategic partnership with Allianz, marking its first enterprise deal of 2026. This collaboration will focus on developing AI agents and providing Claude code to enhance Allianz&#x27;s operational capabilities. By integrating Anthropic&#x27;s AI technologies, Allianz aims to streamline processes and improve customer interactions. The partnership underscores a growing trend of enterprises adopting AI-driven solutions to gain competitive advantages. Companies in the financial sector should consider similar collaborations to leverage AI for innovation and efficiency. This deal highlights the increasing importance of AI in transforming traditional business models.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/09/anthropic-adds-allianz-to-growing-list-of-enterprise-wins/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
         },
         {
             "date": "Jan 08 2026",
-            "headline": "Global Outcry Over AI-Generated Nude Images on X",
-            "title": "Governments Respond to AI-Generated Non-Consensual Imagery Flooding X",
-            "content": "In recent weeks, the X platform has been inundated with AI-generated nude images created by the Grok AI chatbot, sparking international concern. Governments worldwide are pledging to take action against this misuse of artificial intelligence, which has raised significant privacy and ethical issues. The proliferation of such content highlights the challenges in regulating AI technologies and protecting individuals from non-consensual exposure. Stakeholders are urged to collaborate on developing robust policies and tools to prevent AI-generated abuses. This event serves as a critical reminder of the need for responsible AI deployment and governance.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/08/governments-grapple-with-the-flood-of-non-consensual-nudity-on-x/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 08 2026",
-            "headline": "AI Platforms Emerge—Developers Wary of User Disconnect",
-            "title": "AI Devices Proliferate as Developers Weigh User Engagement Risks",
-            "content": "As AI is increasingly hailed as the next major platform, tech companies are pushing for AI integration across various applications. However, some developers express concerns over AI agents potentially disrupting direct interactions with users. This apprehension stems from fears that AI intermediaries could alter user experiences and diminish brand loyalty. The trend suggests a pivotal moment for developers to strategize on maintaining user engagement while leveraging AI advancements. Professionals in the tech industry should consider the implications of AI as a platform and how it might reshape user relationships.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/openai-amazon-operating-system-ai-apps-ads/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 08 2026",
-            "headline": "CES 2026 Overrun by Dubious AI Gadgets",
-            "title": "Questionable AI Applications Flood CES 2026 Show Floor",
-            "content": "CES 2026 is teeming with AI-enabled gadgets, from wearables to home appliances, but not all innovations are created equal. Among the multitude of AI companions, toys, and robots, some applications have raised eyebrows for their questionable utility and ethics. The event highlights the ongoing trend of embedding AI in every conceivable product, sometimes prioritizing novelty over practicality. Attendees are encouraged to critically assess the real-world benefits and potential risks of these AI implementations. This serves as a reminder for developers and consumers alike to prioritize meaningful and responsible AI use.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/858315/most-dubious-ai-tech-ces-2026",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 08 2026",
-            "headline": "OpenAI Expands with Convogo Team Acquisition",
-            "title": "OpenAI Acquires Executive Coaching AI Tool Team Convogo",
-            "content": "In a strategic move, OpenAI has acquired the team behind Convogo, an AI tool designed for executive coaching, in an all-stock transaction. This acquisition marks another step in OpenAI&#x27;s aggressive expansion strategy, aiming to bolster its capabilities in AI-driven professional development. Convogo&#x27;s technology offers personalized coaching experiences, leveraging AI to enhance leadership skills and organizational effectiveness. The integration of Convogo&#x27;s team is expected to enhance OpenAI&#x27;s portfolio in the business solutions sector. Stakeholders should anticipate further developments as OpenAI continues its acquisition spree to diversify its AI offerings.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/08/openai-to-acquire-the-team-behind-executive-coaching-ai-tool-convogo/",
+            "headline": "CES 2026 Unveils Bizarre Tech—AI Panda and Holograms",
+            "title": "The Most Unusual Tech Innovations Announced at CES 2026",
+            "content": "CES 2026 has showcased some of the most unconventional tech innovations, including an AI-powered panda pet and an anime girl hologram for desks. These novel products highlight the playful and imaginative side of AI, appealing to consumers seeking unique experiences. While these gadgets may seem whimsical, they reflect broader trends in AI personalization and entertainment. Developers and tech companies should note the rising demand for interactive and customizable AI solutions. As AI continues to permeate everyday life, the industry must balance creativity with practicality to ensure widespread adoption.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/08/the-most-bizarre-tech-announced-so-far-at-ces-2026/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
@@ -183,11 +233,55 @@ const websiteContent = {
         },
         {
             "date": "Jan 08 2026",
-            "headline": "Viral ICE Killing Video Sparks AI Ethics Debate",
-            "title": "Controversial ICE Killing Video Raises AI and Ethical Concerns",
-            "content": "A series of videos depicting an ICE officer-involved killing have gone viral across social media platforms, including X, Bluesky, Reddit, and TikTok. The clips, varying in clarity and length, have sparked widespread debate over the ethical implications of AI-enhanced video editing and dissemination. The incident highlights the power of AI tools in shaping public perception and the potential for misinformation. As these technologies become more prevalent, there is an urgent need for ethical guidelines and responsible usage to prevent manipulation and ensure accurate representations. Tech leaders and policymakers must address these challenges to safeguard public trust.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/858710/minneapolis-ice-shooting-trump-video-footage-social-media",
+            "headline": "CES 2026 Highlights—Physical AI and Robots Take Center Stage",
+            "title": "CES 2026: Key Highlights as Physical AI and Robotics Dominate",
+            "content": "CES 2026 in Las Vegas has become a focal point for groundbreaking advancements in physical AI and robotics. The event features a range of innovative technologies, from autonomous drones to sophisticated robotic assistants, showcasing the future of AI integration in consumer products. TechCrunch reporters are on-site, providing insights into how these developments could impact various industries, including healthcare, logistics, and entertainment. Attendees are encouraged to explore these technologies to understand their potential applications and implications. As AI continues to evolve, staying informed about such innovations is crucial for tech leaders and developers.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/storyline/ces-2026-follow-live-for-the-best-weirdest-most-interesting-tech-as-physical-ai-and-robots-dominates-the-event/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Jan 08 2026",
+            "headline": "Nvidia Demands Upfront Payment for H200 Chips in China",
+            "title": "Nvidia Requires Chinese Customers to Prepay for H200 AI Chips",
+            "content": "Nvidia has implemented a new policy requiring its Chinese customers to pay in full upfront for its H200 AI chips. This decision comes amid uncertainties regarding approval from both the U.S. and Chinese governments. The H200 chips are critical for AI applications, and this move may affect Chinese companies relying on Nvidia&#x27;s technology. The policy highlights the geopolitical tensions influencing tech supply chains, particularly in the AI sector. Companies should assess their supply chain strategies to mitigate potential disruptions and consider alternative suppliers if necessary.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/08/nvidias-reportedly-asking-chinese-customers-to-pay-upfront-its-for-h200-ai-chips/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 08 2026",
+            "headline": "Microsoft Adds Buy Buttons to Copilot—Streamlines Purchases",
+            "title": "Microsoft Integrates Direct Purchase Options into Copilot Conversations",
+            "content": "Microsoft is enhancing its Copilot AI chatbot by introducing a feature that allows users to make purchases directly during conversations. This integration enables seamless shopping experiences, such as buying recommended sneakers without leaving the chat interface. The feature leverages AI to provide personalized product suggestions and streamline the checkout process. This development reflects a growing trend towards integrating e-commerce capabilities within AI platforms. Businesses should explore similar integrations to enhance customer engagement and drive sales. As AI continues to evolve, its role in transforming consumer interactions and commerce is becoming increasingly significant.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/news/858664/microsoft-copilot-ai-checkout-buy-products",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 09 2026",
+            "headline": "CES 2026 Dazzles with AI Gadgets and Cutting-Edge Chips",
+            "title": "CES 2026 Showcases Nvidia, AMD, and Razer&#x27;s Latest AI Innovations",
+            "content": "CES 2026 has kicked off in Las Vegas, unveiling a plethora of technological advancements from industry giants like Nvidia, AMD, and Razer. Nvidia introduced its latest AI-driven graphics solutions, promising enhanced performance for gaming and professional applications. AMD showcased new chip designs aimed at boosting efficiency and power in computing devices. Meanwhile, Razer surprised attendees with unconventional AI gadgets, including AI-powered gaming peripherals. The event highlights the growing integration of AI across consumer electronics, setting the stage for further innovation. Attendees and tech enthusiasts should keep an eye on these developments as they signal future trends in AI and computing.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/08/ces-2026-everything-revealed-from-nvidias-debuts-to-amds-new-chips-to-razers-ai-oddities/",
             "relatedResources": []
         }
     ],
