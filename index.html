@@ -119,6 +119,24 @@
             color: #fff
         }
 
+        /* CRITICAL: FOUC Prevention - Hide elements that would flash before CSS loads */
+        .nav-dropdown-panel {
+            display: none;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .m-only,
+        .m-search-overlay {
+            display: none !important;
+        }
+
+        .new-year-banner.hidden {
+            display: none !important;
+        }
+
+        /* Allow dropdowns to show on hover after CSS loads - this will be overridden by external CSS */
+
         .hero {
             padding: 3rem 1rem;
             text-align: center
