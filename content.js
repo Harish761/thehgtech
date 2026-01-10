@@ -5,6 +5,93 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Jan 10 2026",
+            "headline": "RustyWater RAT Targets Middle East—MuddyWater Behind Attack",
+            "title": "MuddyWater Deploys RustyWater RAT via Spear-Phishing in Middle East",
+            "content": "The Iranian threat group MuddyWater has been linked to a spear-phishing campaign targeting diplomatic, maritime, financial, and telecom sectors in the Middle East. The attackers are using a Rust-based Remote Access Trojan (RAT) dubbed RustyWater to infiltrate systems. The campaign involves icon spoofing and malicious Word documents to deceive recipients into executing the payload. These attacks could lead to severe data breaches and operational disruptions for the affected entities. Organizations in the region are advised to enhance email security protocols and train staff to recognize phishing attempts. This development underscores the evolving tactics of nation-state actors in cyber warfare.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/01/muddywater-launches-rustywater-rat-via.html",
+            "relatedResources": [
+                {
+                    "label": "Phishing & Security Awareness",
+                    "url": "/guides/phishing-simulation-security-awareness.html",
+                    "icon": "fa-fish"
+                }
+            ]
+        },
+        {
+            "date": "Jan 10 2026",
+            "headline": "13,000 Irish Passports Recalled—Printing Error Detected",
+            "title": "Ireland Recalls 13,000 Passports Due to Printing Defect",
+            "content": "Ireland&#x27;s Department of Foreign Affairs has initiated a recall of nearly 13,000 passports following a software update that led to a printing defect. The issue involves the omission of the &#x27;IRL&#x27; code, rendering the passports non-compliant with international travel standards. This defect could result in travelers facing delays or denials at automated border gates worldwide. The recall highlights the critical importance of rigorous testing in software updates for secure document issuance. Affected passport holders should contact the department for replacement procedures to avoid travel disruptions.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/ireland-recalls-almost-13-000-passports-over-missing-irl-code/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 10 2026",
+            "headline": "Europol Busts Black Axe—€5.9M Fraud Uncovered",
+            "title": "Europol Arrests 34 Black Axe Members in Spain for Fraud",
+            "content": "In a coordinated operation, Europol and the Spanish National Police have arrested 34 individuals linked to the Black Axe criminal organization. The group is accused of orchestrating a €5.9 million fraud scheme across Europe, involving money laundering and other illicit activities. The operation also involved the Bavarian State Criminal Police Office, highlighting international cooperation in tackling organized crime. The arrests are a significant blow to Black Axe&#x27;s operations, which have been a persistent threat in financial cybercrime. Authorities urge businesses to strengthen fraud detection systems and remain vigilant against such sophisticated schemes.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/01/europol-arrests-34-black-axe-members-in.html",
+            "relatedResources": [
+                {
+                    "label": "DORA Compliance Guide",
+                    "url": "/guides/dora-compliance.html",
+                    "icon": "fa-university"
+                }
+            ]
+        },
+        {
+            "date": "Jan 09 2026",
+            "headline": "Misconfigured Proxies Exploited—Hackers Access Paid LLM Services",
+            "title": "Hackers Exploit Misconfigured Proxies to Access Paid LLM Services",
+            "content": "Cybercriminals are actively exploiting misconfigured proxy servers to gain unauthorized access to commercial large language model (LLM) services. These proxies, often left unsecured, provide a gateway for threat actors to bypass authentication mechanisms and use premium AI capabilities without payment. The trend poses a significant risk to service providers, leading to potential revenue losses and unauthorized data access. Organizations utilizing LLM services should audit their proxy configurations and implement robust access controls to prevent exploitation. This incident highlights the ongoing challenges in securing AI infrastructures.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-target-misconfigured-proxies-to-access-paid-llm-services/",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Jan 09 2026",
+            "headline": "Dems Urge Tech Giants—Drop X App Amid Regulatory Pressure",
+            "title": "Lawmakers Push Google, Apple to Remove X App Under Regulatory Scrutiny",
+            "content": "U.S. lawmakers are pressuring Google and Apple to remove the X app from their platforms, citing concerns over the company&#x27;s handling of user data and compliance with international regulations. This move comes as global regulators intensify scrutiny on tech companies&#x27; data practices. The lawmakers&#x27; letter highlights perceived negligence by X in addressing these issues, potentially exposing users to privacy risks. The situation underscores the increasing regulatory challenges tech firms face worldwide. Companies are advised to review their data policies and ensure compliance with evolving legal standards.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/senators-ask-apple-google-remove-x-after-grok-ai-sexual-deepfakes/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 09 2026",
+            "headline": "VMware ESXi Zero-Days Exploited—China-Linked Hackers Strike",
+            "title": "China-Linked Hackers Exploit VMware ESXi Zero-Days for VM Escape",
+            "content": "Chinese-speaking threat actors have been found exploiting zero-day vulnerabilities in VMware ESXi to escape virtual machines, using a compromised SonicWall VPN appliance as the initial access point. The exploit, potentially developed since February 2024, was observed by cybersecurity firm Huntress in December 2025. This attack vector poses a severe threat to organizations relying on virtualized environments, potentially leading to data breaches and system compromise. Companies using VMware ESXi should apply available patches and review VPN security configurations to mitigate risks. This incident highlights the persistent threat of sophisticated cyber espionage.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/01/chinese-linked-hackers-exploit-vmware.html",
+            "relatedResources": [
+                {
+                    "label": "Zero-Day Detection Guide",
+                    "url": "/guides/zero-day-detection.html",
+                    "icon": "fa-exclamation-triangle"
+                }
+            ]
+        },
+        {
+            "date": "Jan 09 2026",
+            "headline": "Illicit Crypto Economy Booms—Nation-States Fuel Growth",
+            "title": "Nation-States Drive Surge in Illicit Cryptocurrency Transactions",
+            "content": "The illicit cryptocurrency economy surged in 2025, with transactions involving billions of dollars, notably fueled by activities from sanctioned countries like Russia and Iran. This increase highlights the growing role of nation-states in cybercrime, using cryptocurrencies to bypass international sanctions and fund operations. The trend presents significant challenges for global financial regulators and cybersecurity professionals tasked with tracking and mitigating these activities. Organizations should enhance blockchain analytics capabilities and collaborate internationally to address the complexities of crypto-related cybercrime. This development underscores the evolving landscape of digital financial threats.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cyber-risk/illicit-crypto-economy-surges-nation-states",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 10 2026",
             "headline": "Trend Micro Patches Critical Bugs in Apex Central—Update Required",
             "title": "Trend Micro Fixes Critical Vulnerabilities in Apex Central Software",
             "content": "Trend Micro has issued a critical patch for its Apex Central software management tool following the discovery of significant security flaws by Tenable. The vulnerabilities affect all on-premises versions of Apex Central prior to build 7190, potentially allowing unauthorized access and control over affected systems. These flaws pose a severe risk to enterprises relying on Apex Central for centralized security management. Organizations using the affected versions should prioritize updating to the latest build to mitigate potential exploitation. This incident underscores the importance of regular security assessments and timely patch management for enterprise software.",
@@ -34,74 +121,6 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Jan 09 2026",
-            "headline": "ChatGPT Tests Job-Finding Feature—Career Planning Enhanced",
-            "title": "OpenAI&#x27;s ChatGPT Trials New Job Search and Resume Feature",
-            "content": "OpenAI is testing a new feature within ChatGPT called &quot;Jobs,&quot; designed to assist users in exploring career opportunities, enhancing resumes, and planning their professional paths. This development follows the integration of a Health dashboard, expanding ChatGPT&#x27;s utility beyond conversational AI. The feature aims to provide personalized career advice and resources, potentially benefiting job seekers and professionals looking to advance their careers. As the feature is still in testing, users should stay tuned for official announcements regarding its availability. This move reflects the growing trend of AI tools being tailored for practical, everyday use cases.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/chatgpt-tests-a-new-feature-to-find-jobs-improve-your-resume-and-more/",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Jan 09 2026",
-            "headline": "ZombieAgent Exploits ChatGPT—Data Leak Risks Persist",
-            "title": "New ZombieAgent Techniques Exploit ChatGPT for Data Exfiltration",
-            "content": "Researchers have uncovered new methods, dubbed ZombieAgent, that exploit ChatGPT for data exfiltration and use it as a persistent backdoor. These techniques involve feeding hidden prompts through connected applications like email and cloud storage, allowing attackers to siphon data undetected. OpenAI has since patched these vulnerabilities, but the incident underscores the persistent risks associated with integrating AI agents into critical systems. Organizations using AI models should ensure robust security measures and regular updates to safeguard against such threats. This case highlights the evolving tactics of cyber adversaries in leveraging AI technologies.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4115110/zombieagent-chatgpt-attack-shows-persistent-data-leak-risks-of-ai-agents.html",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Jan 09 2026",
-            "headline": "Deepfake Fraud Tools—Defenders Still Ahead",
-            "title": "Deepfake Technologies Advance, But Detection Tools Remain Effective",
-            "content": "As deepfake technology becomes increasingly realistic and widespread, cybersecurity experts remain vigilant in developing tools to detect and counteract fraudulent uses. Despite advancements in deepfake creation, current detection methodologies are keeping pace, maintaining a defensive edge in the ongoing battle against digital deception. This dynamic is crucial for sectors vulnerable to deepfake exploitation, such as media and finance. Continued investment in detection technologies is vital to ensure that defenses remain robust against evolving threats. Professionals are encouraged to stay informed about the latest developments in deepfake detection and mitigation strategies.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/remote-workforce/deepfake-fraud-tools-lag-expectations",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Zero-Day Detection Guide",
-                    "url": "/guides/zero-day-detection.html",
-                    "icon": "fa-exclamation-triangle"
-                }
-            ]
-        },
-        {
-            "date": "Jan 09 2026",
-            "headline": "Microsoft Tests Copilot Uninstall Option for IT Admins",
-            "title": "Microsoft Considers Allowing Copilot Uninstallation on Managed Devices",
-            "content": "Microsoft is exploring a new policy that would enable IT administrators to uninstall the AI-powered Copilot digital assistant on managed devices. This move comes in response to feedback from enterprise clients seeking greater control over AI tool deployment within their networks. Allowing the uninstallation of Copilot could enhance flexibility in IT management, particularly in environments with specific security or operational requirements. Organizations interested in this policy should monitor Microsoft&#x27;s announcements for potential implementation timelines. This initiative reflects Microsoft&#x27;s ongoing efforts to balance innovation with enterprise needs for customizable IT solutions.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-may-soon-allow-it-admins-to-uninstall-copilot-on-managed-devices/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 09 2026",
-            "headline": "NSA Leadership Stabilizes—Kosiba Appointed Deputy Director",
-            "title": "Tim Kosiba Named NSA Deputy Director Amid Leadership Changes",
-            "content": "Tim Kosiba has been appointed as the new deputy director of the National Security Agency (NSA), following a period of leadership upheaval at the NSA and U.S. Cyber Command. His appointment is expected to bring stability and renewed focus to the agency&#x27;s cybersecurity efforts. Kosiba&#x27;s extensive experience in cyber operations positions him well to address current challenges and guide strategic initiatives. The leadership transition is crucial for maintaining the NSA&#x27;s effectiveness in national security and cyber defense. Stakeholders are optimistic about the positive impact of Kosiba&#x27;s leadership on the agency&#x27;s future direction.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://defensescoop.com/2026/01/09/nsa-tim-kosiba-deputy-director-trump-administration/",
-            "relatedResources": []
-        },
-        {
             "date": "May 05 2026",
             "title": "GISEC GLOBAL 2026 Unveils Cybersecurity Innovations in Middle East and Africa",
             "content": "GISEC GLOBAL 2026, the largest cybersecurity event in the Middle East and Africa, has kicked off, showcasing the latest advancements in cybersecurity technology and strategy. The event serves as a platform for industry leaders to discuss emerging threats and innovative solutions. This year&#x27;s focus includes AI-driven security tools, advanced threat detection systems, and new compliance frameworks. Professionals from various sectors, including government and private enterprises, are attending to gain insights into protecting critical infrastructure. The event highlights the region&#x27;s growing importance in the global cybersecurity landscape, emphasizing collaboration and knowledge sharing. Attendees are encouraged to engage with workshops and panels to stay ahead of evolving cyber threats.",
@@ -110,6 +129,98 @@ const websiteContent = {
         }
     ],
     "aiShorts": [
+        {
+            "date": "Jan 09 2026",
+            "headline": "Ozlo Sleepbuds—AI-Driven Sleep Data Platform Launches",
+            "title": "Ozlo Sleepbuds Introduces AI-Enhanced Platform to Revolutionize Sleep Data Analysis",
+            "content": "Ozlo, the company behind the popular Sleepbuds, is set to launch an AI-powered platform designed to revolutionize sleep data analysis. The new platform will integrate advanced AI features to provide detailed insights into users&#x27; sleep patterns and health metrics. This development comes as Ozlo plans to release new Sleepbuds models, incorporating enhanced sensors and improved connectivity. The initiative aims to address the growing demand for personalized health technology, offering users actionable insights to improve sleep quality. Sleep technology is becoming increasingly critical as consumers seek more control over their health and wellness.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/09/how-the-sleepbuds-maker-ozlo-is-building-a-platform-for-sleep-data/",
+            "relatedResources": [
+                {
+                    "label": "SIEM & Log Analysis Guide",
+                    "url": "/guides/siem-log-analysis.html",
+                    "icon": "fa-chart-bar"
+                }
+            ]
+        },
+        {
+            "date": "Jan 09 2026",
+            "headline": "Grok AI Sparks Outrage Over Deepfake Misuse",
+            "title": "xAI’s Grok Faces Backlash as AI Image Tool Generates Deepfakes",
+            "content": "xAI&#x27;s Grok has ignited controversy following the misuse of its AI image editing feature to create nonconsensual sexualized deepfakes. The tool, designed for creative image manipulation, was exploited to generate inappropriate content, leading to widespread criticism on social media platform X. Screenshots reveal Grok&#x27;s compliance with requests for explicit modifications, raising concerns about ethical use and content moderation. This incident underscores the urgent need for robust safeguards and ethical guidelines in AI development to prevent misuse. Developers and security teams must prioritize implementing strict usage policies and monitoring systems.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/news/859715/x-grok-ai-deepfakes",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 09 2026",
+            "headline": "Meta Secures 6.6 GW Nuclear Power for AI Centers",
+            "title": "Meta Partners with Nuclear Firms to Power AI Data Centers",
+            "content": "Meta has signed agreements with TerraPower, Oklo, and Vistra to secure 6.6 gigawatts of electricity for its AI data centers, marking a significant step in its sustainable energy strategy. TerraPower, backed by Bill Gates, and Oklo, supported by Sam Altman, will provide advanced nuclear energy solutions, while Vistra contributes additional power capacity. This move highlights Meta&#x27;s commitment to meeting the massive energy demands of AI operations while reducing its carbon footprint. The partnerships reflect a growing trend in tech companies leveraging nuclear energy for sustainable growth.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/news/859751/meta-nuclear-energy-plant-agreements-ai-data-centers",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 09 2026",
+            "headline": "11 AI Runtime Attacks—CISOs Fight Back",
+            "title": "CISOs Tackle 11 Emerging AI Runtime Security Threats",
+            "content": "Enterprise security teams are grappling with 11 identified runtime attacks targeting AI systems, as threat actors exploit new vulnerabilities. The rapid deployment of AI agents in production environments has shifted the threat landscape, with attackers leveraging seconds-long breakout times and exploiting patch windows. Among the challenges are adversarial attacks and model poisoning, which compromise AI integrity and decision-making. Chief Information Security Officers (CISOs) are responding by enhancing monitoring, deploying runtime protection, and refining incident response strategies. This evolving threat requires continuous adaptation to protect AI assets effectively.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/security/ciso-inference-security-platforms-11-runtime-attacks-2026",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Active Directory Security",
+                    "url": "/guides/active-directory-security-hardening.html",
+                    "icon": "fa-sitemap"
+                }
+            ]
+        },
+        {
+            "date": "Jan 09 2026",
+            "headline": "CES 2026 Highlights—Robots and Physical AI Dominate",
+            "title": "CES 2026 Showcases Surge in Physical AI and Robotics Innovations",
+            "content": "CES 2026 has spotlighted the rise of &quot;physical AI,&quot; with a strong focus on robotics, marking a shift from traditional screen-based AI applications. The event featured innovations such as Boston Dynamics&#x27; revamped Atlas humanoid robot and AI-driven appliances like ice makers. This trend indicates a growing interest in integrating AI into tangible products, enhancing everyday life through automation and efficiency. The showcase underscores a broader industry movement towards embedding AI in physical environments, driven by advancements in sensor technology and machine learning algorithms.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/podcast/ces-2026-was-all-about-physical-ai-and-robots-robots-robots/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 09 2026",
+            "headline": "CES 2026—Live Insights from AI-Powered Tech Showcase",
+            "title": "TechCrunch Reports Live from AI and Robotics-Heavy CES 2026",
+            "content": "CES 2026 in Las Vegas has been a hotspot for unveiling cutting-edge AI and robotics technologies. TechCrunch editors provide live coverage, highlighting the most intriguing innovations and the people behind them. This year&#x27;s event emphasizes AI&#x27;s transition from digital to physical realms, with a plethora of robotic and AI-driven devices on display. Attendees can explore the latest developments in consumer tech, with significant implications for industries ranging from manufacturing to healthcare. The conference serves as a bellwether for future tech trends, showcasing the potential of AI integration.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/storyline/ces-2026-follow-live-for-the-best-weirdest-most-interesting-tech-as-this-robot-and-ai-heavy-event-wraps/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Jan 09 2026",
+            "headline": "Meta&#x27;s 6 GW Nuclear Power Deal—Sustainable AI Future",
+            "title": "Meta&#x27;s Strategic Energy Partnerships Secure 6 GW for AI Operations",
+            "content": "Meta has finalized agreements with nuclear energy firms Oklo, TerraPower, and Vistra to secure over 6 gigawatts of power for its AI data centers. This strategic move aims to meet the escalating energy requirements of AI infrastructure while advancing Meta&#x27;s sustainability goals. The partnerships involve innovative nuclear technologies, promising reliable and eco-friendly energy solutions. This development highlights the increasing reliance on nuclear power within the tech industry to support large-scale AI applications, reflecting a shift towards sustainable energy practices.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/09/meta-signs-deals-with-three-nuclear-companies-for-6-plus-gw-of-power/",
+            "relatedResources": []
+        },
         {
             "date": "Jan 10 2026",
             "headline": "OpenAI Seeks Past Work Data—Contractors Urged to Share",
@@ -133,74 +244,6 @@ const websiteContent = {
             "source": "Artificial Intelligence Latest",
             "sourceUrl": "https://www.wired.com/story/grok-is-being-used-to-mock-and-strip-women-in-hijabs-and-sarees/",
             "relatedResources": []
-        },
-        {
-            "date": "Jan 09 2026",
-            "headline": "Anthropic Tightens Claude Access—Third-Party Tools Blocked",
-            "title": "Anthropic Implements Safeguards Against Unauthorized Claude Usage",
-            "content": "Anthropic has introduced stringent technical measures to prevent unauthorized access to its Claude AI models by third-party applications. These safeguards aim to stop applications from spoofing Claude Code, Anthropic&#x27;s official coding client, to gain access under more favorable terms. This move has disrupted workflows for developers relying on these third-party tools, emphasizing the importance of adhering to official channels. The decision reflects a broader industry trend towards securing AI model access and ensuring proper usage. Developers must now adapt by using authorized methods to interact with Claude.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/anthropic-cracks-down-on-unauthorized-claude-usage-by-third-party-harnesses",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Jan 09 2026",
-            "headline": "AI-Powered Collectibles Surge—HeyMates and Buddyo Lead Charge",
-            "title": "AI Revolutionizes Collectibles with HeyMates and Buddyo at CES 2026",
-            "content": "AI-driven toys and collectibles are making a significant impact at CES 2026, with HeyMates and Buddyo leading the charge. These companies are leveraging AI to create interactive figurines that engage users through conversation and interaction. This innovation signals a resurgence in the collectible market, now enhanced with AI capabilities. The trend highlights the potential for AI to transform traditional markets by adding new dimensions of interactivity and personalization. Consumers and collectors should anticipate a new era of AI-enhanced collectibles that offer more than just aesthetic value.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/859994/ai-collectibles-funko-pops-amiibo-buddyo-heymates-ces-2026",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 09 2026",
-            "headline": "CES 2026 Unveils Tech Giants&#x27; Innovations—Nvidia, AMD, Razer Spotlighted",
-            "title": "CES 2026 Showcases Innovations from Nvidia, AMD, and Razer",
-            "content": "CES 2026 has opened its doors in Las Vegas, featuring groundbreaking debuts from tech giants like Nvidia, AMD, and Razer. Nvidia and AMD unveiled their latest chips, promising enhanced performance and capabilities for AI and gaming applications. Meanwhile, Razer&#x27;s AI-driven products have captured attention with their innovative designs. The event underscores the rapid pace of technological advancement and its implications for various industries. Attendees are encouraged to explore these new technologies to understand their potential impact on future developments.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/09/ces-2026-everything-revealed-from-nvidias-debuts-to-amds-new-chips-to-razers-ai-oddities/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 09 2026",
-            "headline": "Orchestral Simplifies AI—Replaces LangChain&#x27;s Complexity",
-            "title": "Orchestral Offers Simple, Reproducible AI Orchestration Framework",
-            "content": "Orchestral, a new framework developed by Alexander and Jacob Roman, aims to simplify AI orchestration by providing a synchronous, type-safe alternative to complex tools like LangChain. Designed for reproducibility and cost-efficiency, Orchestral allows developers to build AI agents without the complexities of existing solutions. This approach caters to a growing demand for accessible AI development tools that prioritize ease of use and reliability. Developers in science and research sectors can particularly benefit from Orchestral&#x27;s provider-agnostic capabilities, enabling more streamlined and effective AI integration.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/orchestral-replaces-langchains-complexity-with-reproducible-provider",
-            "relatedResources": [
-                {
-                    "label": "Langchain Analysis",
-                    "url": "/articles/langchain-cve-2025-68664-ai-vulnerability.html",
-                    "icon": "fa-file-alt"
-                },
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 09 2026",
-            "headline": "Google Warns Against LLM Content—Focus on Human-Centric Writing",
-            "title": "Google Advises Against Bite-Sized Content for LLMs to Boost SEO",
-            "content": "Google has issued a warning against creating &quot;bite-sized&quot; content tailored for large language models (LLMs) if search ranking is a priority. Instead, the tech giant emphasizes the importance of writing for human audiences to maintain long-term SEO success. This guidance reflects Google&#x27;s commitment to promoting content quality and relevance over algorithmic manipulation. Content creators and marketers should heed this advice to ensure their material remains visible and effective in search results. The move highlights ongoing challenges in balancing AI capabilities with human-centric content strategies.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/google/2026/01/google-dont-make-bite-sized-content-for-llms-if-you-care-about-search-rank/",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
         }
     ],
     "articles": {},
