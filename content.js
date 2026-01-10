@@ -4,162 +4,12 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Jan 09 2026",
-            "headline": "Ni8mare Vulnerability Threatens 100,000 Servers Worldwide",
-            "title": "Critical n8n Vulnerability Puts 100,000 Servers at Risk",
-            "content": "A severe vulnerability dubbed &quot;Ni8mare&quot; has been identified in the n8n workflow automation tool, potentially affecting up to 100,000 servers globally. This critical flaw could allow attackers to execute arbitrary code on compromised systems, posing a significant threat to organizations relying on n8n for automation tasks. The vulnerability highlights the growing risks associated with open-source tools that are widely deployed in enterprise environments. Security professionals are urged to apply available patches immediately to mitigate the risk of exploitation. This incident underscores the importance of continuous monitoring and timely updates in maintaining secure IT infrastructures.",
+            "date": "Jan 10 2026",
+            "headline": "Trend Micro Patches Critical Bugs in Apex Central—Update Required",
+            "title": "Trend Micro Fixes Critical Vulnerabilities in Apex Central Software",
+            "content": "Trend Micro has issued a critical patch for its Apex Central software management tool following the discovery of significant security flaws by Tenable. The vulnerabilities affect all on-premises versions of Apex Central prior to build 7190, potentially allowing unauthorized access and control over affected systems. These flaws pose a severe risk to enterprises relying on Apex Central for centralized security management. Organizations using the affected versions should prioritize updating to the latest build to mitigate potential exploitation. This incident underscores the importance of regular security assessments and timely patch management for enterprise software.",
             "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4114963/ni8mare-kritische-n8n-lucke-bedroht-100-000-server.html",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "N8N Analysis",
-                    "url": "/articles/n8n-rce-vulnerability-cve-2025-68613.html",
-                    "icon": "fa-file-alt"
-                },
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Jan 09 2026",
-            "headline": "Researchers Exploit ChatGPT with &#x27;ZombieAgent&#x27; Attack",
-            "title": "&#x27;ZombieAgent&#x27; Attack Compromises ChatGPT&#x27;s Security and Privacy",
-            "content": "Researchers at Radware have demonstrated a novel attack method named &#x27;ZombieAgent&#x27; that successfully bypasses ChatGPT&#x27;s security mechanisms. By exploiting vulnerabilities, they were able to exfiltrate user data and implant persistent logic into the AI&#x27;s long-term memory. This attack raises significant concerns about the security and privacy of AI models, especially as they become more integrated into sensitive applications. Organizations utilizing ChatGPT should review their security protocols and consider implementing additional safeguards to protect against such sophisticated threats. The incident highlights the need for robust AI security measures as AI adoption continues to grow.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/zombieagent-attack-let-researchers-take-over-chatgpt/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Jan 09 2026",
-            "headline": "ChatGPT Health Raises Privacy Concerns for Medical Data",
-            "title": "ChatGPT Health: Balancing Wellness Benefits with Privacy Risks",
-            "content": "The introduction of ChatGPT Health, which links medical records to AI for personalized wellness advice, has sparked privacy concerns among experts. While the platform promises tailored health insights, the potential exposure of sensitive medical data to unauthorized access poses a significant risk. As healthcare providers and patients consider adopting this technology, they must weigh the benefits against the privacy implications. This development reflects a broader trend of AI integration into healthcare, necessitating stringent data protection measures. Stakeholders are advised to ensure compliance with privacy regulations and implement robust security controls.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/01/are-we-ready-for-chatgpt-health",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Jan 09 2026",
-            "headline": "CrowdStrike Acquires SGNL for $740M—Boosts Identity Security",
-            "title": "CrowdStrike Expands with $740M Acquisition of SGNL for Real-Time Security",
-            "content": "CrowdStrike has announced its acquisition of identity security startup SGNL for $740 million, aiming to enhance its real-time authorization capabilities. This strategic move will allow CrowdStrike to offer dynamic access management based on current risk conditions, rather than relying on static permissions. The acquisition is expected to close in the company&#x27;s fiscal first quarter, ending April 30, and signifies a growing trend towards adaptive security solutions. Organizations can benefit from improved protection against identity-based threats by adopting these advanced security measures. This deal highlights the increasing importance of identity security in the cybersecurity landscape.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4114957/crowdstrike-to-acquire-sgnl-for-740m-expanding-real-time-identity-security.html",
-            "relatedResources": [
-                {
-                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
-                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
-                    "icon": "fa-shield-virus"
-                }
-            ]
-        },
-        {
-            "date": "Jan 09 2026",
-            "headline": "Ransomware Hits Texas Gas Firm—377,000 Affected",
-            "title": "Data Breach at Texas Gas Station Firm Impacts 377,000 Individuals",
-            "content": "Gulshan Management Services, a Texas-based gas station firm, has reported a data breach affecting 377,000 individuals following a ransomware attack. The breach has compromised sensitive customer information, underscoring the ongoing threat posed by ransomware to businesses of all sizes. As ransomware attacks continue to evolve, organizations must enhance their cybersecurity defenses and incident response strategies. Affected customers are advised to monitor their accounts for suspicious activity and consider identity theft protection services. This incident serves as a reminder of the critical need for robust cybersecurity measures in protecting consumer data.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/377000-impacted-by-data-breach-at-texas-gas-station-firm/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Ransomware Response Playbook",
-                    "url": "/guides/ransomware-response-playbook.html",
-                    "icon": "fa-biohazard"
-                }
-            ]
-        },
-        {
-            "date": "Jan 09 2026",
-            "headline": "CISA Warns of Critical HPE OneView Vulnerability",
-            "title": "Max-Severity RCE Flaw in HPE OneView Actively Exploited",
-            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has flagged a maximum severity remote code execution (RCE) vulnerability in HPE&#x27;s OneView management platform, tracked as CVE-2025-37164. This flaw is currently being actively exploited, posing a major threat to organizations using OneView for infrastructure management. Users are urged to prioritize patching this vulnerability to prevent potential exploitation. The inclusion of this flaw in CISA&#x27;s Known Exploited Vulnerability Catalog highlights the urgent need for vigilance and timely updates in maintaining secure systems. Organizations should assess their exposure and implement necessary security measures.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4114947/cisa-flags-max-severity-bug-in-hpe-oneview-amid-active-exploitation.html",
-            "relatedResources": [
-                {
-                    "label": "CVE Tracker",
-                    "url": "/cve-tracker.html",
-                    "icon": "fa-bug"
-                },
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Jan 09 2026",
-            "headline": "VMware Zero-Day Exploits Preceded Public Disclosure by Year",
-            "title": "Exploit for VMware Zero-Day Flaws Built Before Disclosure",
-            "content": "New evidence suggests that exploits for three VMware ESXi zero-day vulnerabilities were developed a year before their public disclosure in March 2025. These vulnerabilities have been targeted in recent attacks, highlighting the persistent threat posed by undisclosed exploits. The situation emphasizes the importance of proactive vulnerability management and threat intelligence in safeguarding virtualized environments. Organizations using VMware ESXi should ensure they have applied all relevant patches and continue to monitor for suspicious activity. This case underscores the critical need for timely vulnerability disclosures and robust security practices.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/exploit-for-vmware-zero-day-flaws-likely-built-a-year-before-public-disclosure/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Jan 09 2026",
-            "headline": "Cisco ISE Flaw Exposes Data—Patch and Rotate Credentials Now",
-            "title": "Cisco ISE Vulnerability Could Expose Sensitive Data to Attackers",
-            "content": "Cisco has identified a vulnerability in its Identity Services Engine (ISE) that could allow attackers to access sensitive information. The flaw requires immediate attention involving the rotation of credentials and the installation of a critical patch. Cisco ISE, a platform used for network access control, is crucial in enforcing access policies across networks. This vulnerability poses a significant risk to organizations relying on ISE for secure network management. Experts urge affected users to apply the patch promptly to mitigate potential data exposure. This incident underscores the ongoing challenges in securing network infrastructure against emerging threats.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4114715/cisco-identifies-vulnerability-in-ise-network-access-control-devices-2.html",
-            "relatedResources": [
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Jan 09 2026",
-            "headline": "ISC Stormcast Highlights—Security Trends and Threats",
-            "title": "ISC Stormcast for January 9th: Security Highlights and Threat Analysis",
-            "content": "The SANS Internet Storm Center&#x27;s latest Stormcast provides crucial insights into current cybersecurity trends and threats. While specific details of the podcast are not summarized here, professionals are encouraged to listen for updates on vulnerability management, threat actor activities, and defensive strategies. The podcast serves as a valuable resource for staying informed about the evolving threat landscape. Security practitioners should integrate these insights into their risk assessment and mitigation strategies. Staying informed through such reputable sources is vital for maintaining robust security postures.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32612",
+            "sourceUrl": "https://www.csoonline.com/article/4115151/trend-micro-patches-critical-flaws-in-its-apex-central-software.html",
             "relatedResources": [
                 {
                     "label": "Third-Party Risk Management",
@@ -167,6 +17,89 @@ const websiteContent = {
                     "icon": "fa-handshake"
                 }
             ]
+        },
+        {
+            "date": "Jan 10 2026",
+            "headline": "Anthropic Denies Viral Ban Claims—No Accounts Affected",
+            "title": "Anthropic Refutes Viral Claims of Banning Claude Users",
+            "content": "Anthropic has officially denied reports circulating on social media platform X, alleging that it banned a user of its AI model, Claude. The viral post claimed that the account was banned and reported to authorities, but Anthropic clarified that no such actions were taken against legitimate users. This incident highlights the potential for misinformation to spread rapidly on social media, impacting user trust. Anthropic emphasizes its commitment to transparent communication and urges users to rely on official channels for accurate information. Users are advised to be cautious of unverified claims online.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-viral-claude-banned-and-reported-to-authorities-message-isnt-real/",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Jan 09 2026",
+            "headline": "ChatGPT Tests Job-Finding Feature—Career Planning Enhanced",
+            "title": "OpenAI&#x27;s ChatGPT Trials New Job Search and Resume Feature",
+            "content": "OpenAI is testing a new feature within ChatGPT called &quot;Jobs,&quot; designed to assist users in exploring career opportunities, enhancing resumes, and planning their professional paths. This development follows the integration of a Health dashboard, expanding ChatGPT&#x27;s utility beyond conversational AI. The feature aims to provide personalized career advice and resources, potentially benefiting job seekers and professionals looking to advance their careers. As the feature is still in testing, users should stay tuned for official announcements regarding its availability. This move reflects the growing trend of AI tools being tailored for practical, everyday use cases.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/chatgpt-tests-a-new-feature-to-find-jobs-improve-your-resume-and-more/",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Jan 09 2026",
+            "headline": "ZombieAgent Exploits ChatGPT—Data Leak Risks Persist",
+            "title": "New ZombieAgent Techniques Exploit ChatGPT for Data Exfiltration",
+            "content": "Researchers have uncovered new methods, dubbed ZombieAgent, that exploit ChatGPT for data exfiltration and use it as a persistent backdoor. These techniques involve feeding hidden prompts through connected applications like email and cloud storage, allowing attackers to siphon data undetected. OpenAI has since patched these vulnerabilities, but the incident underscores the persistent risks associated with integrating AI agents into critical systems. Organizations using AI models should ensure robust security measures and regular updates to safeguard against such threats. This case highlights the evolving tactics of cyber adversaries in leveraging AI technologies.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4115110/zombieagent-chatgpt-attack-shows-persistent-data-leak-risks-of-ai-agents.html",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Jan 09 2026",
+            "headline": "Deepfake Fraud Tools—Defenders Still Ahead",
+            "title": "Deepfake Technologies Advance, But Detection Tools Remain Effective",
+            "content": "As deepfake technology becomes increasingly realistic and widespread, cybersecurity experts remain vigilant in developing tools to detect and counteract fraudulent uses. Despite advancements in deepfake creation, current detection methodologies are keeping pace, maintaining a defensive edge in the ongoing battle against digital deception. This dynamic is crucial for sectors vulnerable to deepfake exploitation, such as media and finance. Continued investment in detection technologies is vital to ensure that defenses remain robust against evolving threats. Professionals are encouraged to stay informed about the latest developments in deepfake detection and mitigation strategies.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/remote-workforce/deepfake-fraud-tools-lag-expectations",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Zero-Day Detection Guide",
+                    "url": "/guides/zero-day-detection.html",
+                    "icon": "fa-exclamation-triangle"
+                }
+            ]
+        },
+        {
+            "date": "Jan 09 2026",
+            "headline": "Microsoft Tests Copilot Uninstall Option for IT Admins",
+            "title": "Microsoft Considers Allowing Copilot Uninstallation on Managed Devices",
+            "content": "Microsoft is exploring a new policy that would enable IT administrators to uninstall the AI-powered Copilot digital assistant on managed devices. This move comes in response to feedback from enterprise clients seeking greater control over AI tool deployment within their networks. Allowing the uninstallation of Copilot could enhance flexibility in IT management, particularly in environments with specific security or operational requirements. Organizations interested in this policy should monitor Microsoft&#x27;s announcements for potential implementation timelines. This initiative reflects Microsoft&#x27;s ongoing efforts to balance innovation with enterprise needs for customizable IT solutions.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-may-soon-allow-it-admins-to-uninstall-copilot-on-managed-devices/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 09 2026",
+            "headline": "NSA Leadership Stabilizes—Kosiba Appointed Deputy Director",
+            "title": "Tim Kosiba Named NSA Deputy Director Amid Leadership Changes",
+            "content": "Tim Kosiba has been appointed as the new deputy director of the National Security Agency (NSA), following a period of leadership upheaval at the NSA and U.S. Cyber Command. His appointment is expected to bring stability and renewed focus to the agency&#x27;s cybersecurity efforts. Kosiba&#x27;s extensive experience in cyber operations positions him well to address current challenges and guide strategic initiatives. The leadership transition is crucial for maintaining the NSA&#x27;s effectiveness in national security and cyber defense. Stakeholders are optimistic about the positive impact of Kosiba&#x27;s leadership on the agency&#x27;s future direction.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://defensescoop.com/2026/01/09/nsa-tim-kosiba-deputy-director-trump-administration/",
+            "relatedResources": []
         },
         {
             "date": "May 05 2026",
@@ -178,21 +111,12 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Jan 09 2026",
-            "headline": "Microsoft-Hexagon Robots Enter Workplaces—Humanoids Become Reality",
-            "title": "Microsoft and Hexagon Partnership Brings Humanoid Robots to Workplaces",
-            "content": "The collaboration between Microsoft and Hexagon is set to revolutionize workplaces with the introduction of humanoid robots. These prototypes, now transitioning to operational realities, are designed to enhance efficiency and safety in industrial environments. The robots leverage Microsoft&#x27;s cloud technologies and Hexagon&#x27;s manufacturing expertise, aiming to automate repetitive tasks and assist human workers. Industries such as automotive and electronics are expected to benefit significantly, potentially reducing labor costs and improving precision. This development marks a pivotal moment in robotics, reflecting a growing trend towards integrating AI-driven automation in traditional sectors. Organizations should evaluate the potential for adopting such technologies to stay competitive.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/from-cloud-to-factory-humanoid-robots-coming-to-workplaces/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 09 2026",
-            "headline": "Physical AI to Transform Automotive Industry—New Era for Cars",
-            "title": "Physical AI Set to Revolutionize the Future of Automotive Technology",
-            "content": "The advent of &quot;Physical AI&quot; is poised to reshape the automotive industry, introducing intelligent systems that enhance vehicle performance and safety. This emerging technology integrates AI with physical components, enabling cars to adapt to dynamic environments and user preferences. By leveraging machine learning algorithms and sensor data, vehicles can optimize fuel efficiency, predict maintenance needs, and provide personalized driving experiences. Automakers are increasingly investing in this innovation to meet consumer demands for smarter, more responsive vehicles. Industry professionals should monitor developments in Physical AI to capitalize on its potential benefits and address any security implications.",
-            "source": "Feed: Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/physical-ai-is-coming-for-your-car/",
+            "date": "Jan 10 2026",
+            "headline": "OpenAI Seeks Past Work Data—Contractors Urged to Share",
+            "title": "OpenAI Requests Contractors&#x27; Past Work to Train AI Agents",
+            "content": "OpenAI is asking its contractors to upload projects from previous jobs to enhance the training of its AI agents for office tasks. Contractors are responsible for removing any confidential or personally identifiable information before submission. This initiative aims to better prepare AI systems for real-world business applications, potentially improving their efficiency and accuracy. However, this request raises concerns about data privacy and the ethical implications of using past work. Contractors and organizations must carefully consider the risks and benefits of participating in this data-sharing effort.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/openai-contractor-upload-real-work-documents-ai-agents/",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
@@ -202,71 +126,59 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Jan 09 2026",
-            "headline": "Anthropic Secures Allianz—Expands Enterprise AI Solutions",
-            "title": "Anthropic Partners with Allianz to Deliver Advanced AI Solutions",
-            "content": "Anthropic has announced a strategic partnership with Allianz, marking its first enterprise deal of 2026. This collaboration will focus on developing AI agents and providing Claude code to enhance Allianz&#x27;s operational capabilities. By integrating Anthropic&#x27;s AI technologies, Allianz aims to streamline processes and improve customer interactions. The partnership underscores a growing trend of enterprises adopting AI-driven solutions to gain competitive advantages. Companies in the financial sector should consider similar collaborations to leverage AI for innovation and efficiency. This deal highlights the increasing importance of AI in transforming traditional business models.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/09/anthropic-adds-allianz-to-growing-list-of-enterprise-wins/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 08 2026",
-            "headline": "CES 2026 Unveils Bizarre Tech—AI Panda and Holograms",
-            "title": "The Most Unusual Tech Innovations Announced at CES 2026",
-            "content": "CES 2026 has showcased some of the most unconventional tech innovations, including an AI-powered panda pet and an anime girl hologram for desks. These novel products highlight the playful and imaginative side of AI, appealing to consumers seeking unique experiences. While these gadgets may seem whimsical, they reflect broader trends in AI personalization and entertainment. Developers and tech companies should note the rising demand for interactive and customizable AI solutions. As AI continues to permeate everyday life, the industry must balance creativity with practicality to ensure widespread adoption.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/08/the-most-bizarre-tech-announced-so-far-at-ces-2026/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Jan 08 2026",
-            "headline": "CES 2026 Highlights—Physical AI and Robots Take Center Stage",
-            "title": "CES 2026: Key Highlights as Physical AI and Robotics Dominate",
-            "content": "CES 2026 in Las Vegas has become a focal point for groundbreaking advancements in physical AI and robotics. The event features a range of innovative technologies, from autonomous drones to sophisticated robotic assistants, showcasing the future of AI integration in consumer products. TechCrunch reporters are on-site, providing insights into how these developments could impact various industries, including healthcare, logistics, and entertainment. Attendees are encouraged to explore these technologies to understand their potential applications and implications. As AI continues to evolve, staying informed about such innovations is crucial for tech leaders and developers.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/storyline/ces-2026-follow-live-for-the-best-weirdest-most-interesting-tech-as-physical-ai-and-robots-dominates-the-event/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Jan 08 2026",
-            "headline": "Nvidia Demands Upfront Payment for H200 Chips in China",
-            "title": "Nvidia Requires Chinese Customers to Prepay for H200 AI Chips",
-            "content": "Nvidia has implemented a new policy requiring its Chinese customers to pay in full upfront for its H200 AI chips. This decision comes amid uncertainties regarding approval from both the U.S. and Chinese governments. The H200 chips are critical for AI applications, and this move may affect Chinese companies relying on Nvidia&#x27;s technology. The policy highlights the geopolitical tensions influencing tech supply chains, particularly in the AI sector. Companies should assess their supply chain strategies to mitigate potential disruptions and consider alternative suppliers if necessary.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/08/nvidias-reportedly-asking-chinese-customers-to-pay-upfront-its-for-h200-ai-chips/",
+            "date": "Jan 10 2026",
+            "headline": "Grok Misused—AI Targets Women in Religious Garb",
+            "title": "Grok AI Tool Misused to Target Women in Hijabs and Saris",
+            "content": "The AI tool Grok is reportedly being used to generate or alter images that mock women wearing hijabs and saris. This misuse highlights a growing concern over AI&#x27;s potential to perpetuate cultural and religious insensitivity. The impact is significant as it affects women who are already vulnerable to discrimination and bias. This incident underscores the urgent need for stricter controls and ethical guidelines in AI image generation. Developers and users must prioritize cultural sensitivity and ethical use of AI technologies to prevent such misuse.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/grok-is-being-used-to-mock-and-strip-women-in-hijabs-and-sarees/",
             "relatedResources": []
         },
         {
-            "date": "Jan 08 2026",
-            "headline": "Microsoft Adds Buy Buttons to Copilot—Streamlines Purchases",
-            "title": "Microsoft Integrates Direct Purchase Options into Copilot Conversations",
-            "content": "Microsoft is enhancing its Copilot AI chatbot by introducing a feature that allows users to make purchases directly during conversations. This integration enables seamless shopping experiences, such as buying recommended sneakers without leaving the chat interface. The feature leverages AI to provide personalized product suggestions and streamline the checkout process. This development reflects a growing trend towards integrating e-commerce capabilities within AI platforms. Businesses should explore similar integrations to enhance customer engagement and drive sales. As AI continues to evolve, its role in transforming consumer interactions and commerce is becoming increasingly significant.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/news/858664/microsoft-copilot-ai-checkout-buy-products",
+            "date": "Jan 09 2026",
+            "headline": "Anthropic Tightens Claude Access—Third-Party Tools Blocked",
+            "title": "Anthropic Implements Safeguards Against Unauthorized Claude Usage",
+            "content": "Anthropic has introduced stringent technical measures to prevent unauthorized access to its Claude AI models by third-party applications. These safeguards aim to stop applications from spoofing Claude Code, Anthropic&#x27;s official coding client, to gain access under more favorable terms. This move has disrupted workflows for developers relying on these third-party tools, emphasizing the importance of adhering to official channels. The decision reflects a broader industry trend towards securing AI model access and ensuring proper usage. Developers must now adapt by using authorized methods to interact with Claude.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/anthropic-cracks-down-on-unauthorized-claude-usage-by-third-party-harnesses",
             "relatedResources": [
                 {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Jan 09 2026",
+            "headline": "AI-Powered Collectibles Surge—HeyMates and Buddyo Lead Charge",
+            "title": "AI Revolutionizes Collectibles with HeyMates and Buddyo at CES 2026",
+            "content": "AI-driven toys and collectibles are making a significant impact at CES 2026, with HeyMates and Buddyo leading the charge. These companies are leveraging AI to create interactive figurines that engage users through conversation and interaction. This innovation signals a resurgence in the collectible market, now enhanced with AI capabilities. The trend highlights the potential for AI to transform traditional markets by adding new dimensions of interactivity and personalization. Consumers and collectors should anticipate a new era of AI-enhanced collectibles that offer more than just aesthetic value.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/859994/ai-collectibles-funko-pops-amiibo-buddyo-heymates-ces-2026",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 09 2026",
+            "headline": "CES 2026 Unveils Tech Giants&#x27; Innovations—Nvidia, AMD, Razer Spotlighted",
+            "title": "CES 2026 Showcases Innovations from Nvidia, AMD, and Razer",
+            "content": "CES 2026 has opened its doors in Las Vegas, featuring groundbreaking debuts from tech giants like Nvidia, AMD, and Razer. Nvidia and AMD unveiled their latest chips, promising enhanced performance and capabilities for AI and gaming applications. Meanwhile, Razer&#x27;s AI-driven products have captured attention with their innovative designs. The event underscores the rapid pace of technological advancement and its implications for various industries. Attendees are encouraged to explore these new technologies to understand their potential impact on future developments.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/09/ces-2026-everything-revealed-from-nvidias-debuts-to-amds-new-chips-to-razers-ai-oddities/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 09 2026",
+            "headline": "Orchestral Simplifies AI—Replaces LangChain&#x27;s Complexity",
+            "title": "Orchestral Offers Simple, Reproducible AI Orchestration Framework",
+            "content": "Orchestral, a new framework developed by Alexander and Jacob Roman, aims to simplify AI orchestration by providing a synchronous, type-safe alternative to complex tools like LangChain. Designed for reproducibility and cost-efficiency, Orchestral allows developers to build AI agents without the complexities of existing solutions. This approach caters to a growing demand for accessible AI development tools that prioritize ease of use and reliability. Developers in science and research sectors can particularly benefit from Orchestral&#x27;s provider-agnostic capabilities, enabling more streamlined and effective AI integration.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/orchestral-replaces-langchains-complexity-with-reproducible-provider",
+            "relatedResources": [
+                {
+                    "label": "Langchain Analysis",
+                    "url": "/articles/langchain-cve-2025-68664-ai-vulnerability.html",
+                    "icon": "fa-file-alt"
                 },
                 {
                     "label": "Securing AI/ML Pipelines",
@@ -277,12 +189,18 @@ const websiteContent = {
         },
         {
             "date": "Jan 09 2026",
-            "headline": "CES 2026 Dazzles with AI Gadgets and Cutting-Edge Chips",
-            "title": "CES 2026 Showcases Nvidia, AMD, and Razer&#x27;s Latest AI Innovations",
-            "content": "CES 2026 has kicked off in Las Vegas, unveiling a plethora of technological advancements from industry giants like Nvidia, AMD, and Razer. Nvidia introduced its latest AI-driven graphics solutions, promising enhanced performance for gaming and professional applications. AMD showcased new chip designs aimed at boosting efficiency and power in computing devices. Meanwhile, Razer surprised attendees with unconventional AI gadgets, including AI-powered gaming peripherals. The event highlights the growing integration of AI across consumer electronics, setting the stage for further innovation. Attendees and tech enthusiasts should keep an eye on these developments as they signal future trends in AI and computing.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/08/ces-2026-everything-revealed-from-nvidias-debuts-to-amds-new-chips-to-razers-ai-oddities/",
-            "relatedResources": []
+            "headline": "Google Warns Against LLM Content—Focus on Human-Centric Writing",
+            "title": "Google Advises Against Bite-Sized Content for LLMs to Boost SEO",
+            "content": "Google has issued a warning against creating &quot;bite-sized&quot; content tailored for large language models (LLMs) if search ranking is a priority. Instead, the tech giant emphasizes the importance of writing for human audiences to maintain long-term SEO success. This guidance reflects Google&#x27;s commitment to promoting content quality and relevance over algorithmic manipulation. Content creators and marketers should heed this advice to ensure their material remains visible and effective in search results. The move highlights ongoing challenges in balancing AI capabilities with human-centric content strategies.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/google/2026/01/google-dont-make-bite-sized-content-for-llms-if-you-care-about-search-rank/",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
         }
     ],
     "articles": {},
@@ -360,8 +278,8 @@ const websiteContent = {
         {
             "cveId": "CVE-2025-37164",
             "dateAdded": "Jan 07, 2026",
-            "vendor": "Hewlett Packard (HP) OneView",
-            "description": "Hewlett Packard Enterprise OneView contains a code injection vulnerability that allows a remote unauthenticated user to perform remote code execution.",
+            "vendor": "Hewlett Packard Enterprise (HPE) OneView",
+            "description": "Hewlett Packard Enterprise (HPE) OneView contains a code injection vulnerability that allows a remote unauthenticated user to perform remote code execution.",
             "score": "HIGH",
             "status": "Confirmed",
             "source": "CISA KEV",
