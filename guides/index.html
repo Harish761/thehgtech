@@ -60,15 +60,19 @@
         :root {
             --bg-primary: #000000;
             --bg-secondary: #0a0a0a;
-            --bg-card: rgba(255, 255, 255, 0.03);
+            --bg-card: rgba(255, 255, 255, 0.02);
             --accent-cyan: #00D9FF;
             --accent-red: #FF3D3D;
-            --glow-cyan: rgba(0, 217, 255, 0.5);
+            --accent-purple: #A855F7;
+            --accent-green: #22C55E;
+            --accent-gold: #F59E0B;
+            --glow-cyan: rgba(0, 217, 255, 0.15);
             --text-primary: #ffffff;
-            --text-secondary: #a0a0a0;
+            --text-secondary: #b0b0b0;
             --text-muted: #666666;
-            --border: rgba(255, 255, 255, 0.1);
-            --glass: rgba(255, 255, 255, 0.05);
+            --border: rgba(255, 255, 255, 0.08);
+            --glass: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.06);
         }
 
         body {
@@ -80,25 +84,129 @@
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1280px;
             margin: 0 auto;
             padding: 2rem;
         }
 
-        /* Page Header */
-        .page-header {
-            padding: 3rem 0;
-            text-align: center;
-            border-bottom: 1px solid var(--border);
-            margin-bottom: 3rem;
+        /* ========== PREMIUM HERO SECTION ========== */
+        @keyframes gradientShift {
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(5deg);
+            }
+        }
+
+        @keyframes pulse-glow {
+
+            0%,
+            100% {
+                opacity: 0.4;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.8;
+                transform: scale(1.05);
+            }
+        }
+
+        @keyframes shimmer {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        .hero-section {
+            padding: 5rem 0 4rem;
             margin-top: 60px;
-            /* Space for fixed header */
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Animated gradient background */
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg,
+                    rgba(0, 217, 255, 0.03) 0%,
+                    rgba(168, 85, 247, 0.03) 25%,
+                    rgba(255, 61, 61, 0.02) 50%,
+                    rgba(0, 217, 255, 0.03) 75%,
+                    rgba(168, 85, 247, 0.03) 100%);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            pointer-events: none;
+        }
+
+        /* Floating orbs */
+        .hero-section::after {
+            content: '';
+            position: absolute;
+            top: 20%;
+            right: 10%;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(0, 217, 255, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float 8s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        .hero-orb-1,
+        .hero-orb-2 {
+            position: absolute;
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .hero-orb-1 {
+            top: 30%;
+            left: 5%;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(168, 85, 247, 0.12) 0%, transparent 70%);
+            animation: float 10s ease-in-out infinite reverse;
+        }
+
+        .hero-orb-2 {
+            bottom: 10%;
+            left: 20%;
+            width: 150px;
+            height: 150px;
+            background: radial-gradient(circle, rgba(255, 61, 61, 0.08) 0%, transparent 70%);
+            animation: float 12s ease-in-out infinite;
         }
 
         .breadcrumb {
             font-size: 0.9rem;
             color: var(--text-muted);
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
         }
 
         .breadcrumb a {
@@ -108,146 +216,144 @@
         }
 
         .breadcrumb a:hover {
-            color: var(--glow-cyan);
             text-decoration: underline;
         }
 
-        h1 {
-            font-size: 3rem;
-            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-red));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 1rem;
-            line-height: 1.2;
-        }
-
-        .subtitle {
-            color: var(--text-secondary);
-            font-size: 1.2rem;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        /* Guides Grid */
-        .guides-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .guide-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 2rem;
-            transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
-            cursor: pointer;
+        .hero-content {
+            text-align: center;
             position: relative;
+            z-index: 1;
         }
 
-        .guide-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--accent-cyan);
-            box-shadow: 0 10px 30px var(--glow-cyan);
-        }
-
-        .guide-tag {
-            display: inline-block;
-            padding: 0.3rem 0.8rem;
-            background: rgba(0, 217, 255, 0.1);
-            color: var(--accent-cyan);
-            border-radius: 20px;
-            font-size: 0.85rem;
-            margin-bottom: 1rem;
-            font-weight: 500;
-        }
-
-        .guide-card h2 {
-            color: var(--text-primary);
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .guide-card p {
-            color: var(--text-secondary);
-            margin-bottom: 1.5rem;
-            line-height: 1.6;
-        }
-
-        .guide-meta {
-            display: flex;
-            gap: 1.5rem;
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            margin-bottom: 1.5rem;
-        }
-
-        .guide-meta span {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .read-more {
-            color: var(--accent-cyan);
-            text-decoration: none;
-            font-weight: 600;
+        .hero-badge {
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            transition: gap 0.3s;
+            padding: 0.5rem 1rem;
+            background: rgba(0, 217, 255, 0.1);
+            border: 1px solid rgba(0, 217, 255, 0.2);
+            border-radius: 100px;
+            font-size: 0.85rem;
+            color: var(--accent-cyan);
+            margin-bottom: 1.5rem;
         }
 
-        .read-more:hover {
-            gap: 1rem;
+        .hero-badge i {
+            font-size: 0.75rem;
         }
 
-        /* Coming Soon */
-        .coming-soon {
-            opacity: 0.6;
-            pointer-events: none;
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #ffffff 0%, #b0b0b0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
         }
 
-        .coming-soon-badge {
-            background: rgba(255, 76, 76, 0.1);
-            color: var(--accent-red);
+        h1 span {
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
-        /* Filter Bar */
+        .hero-description {
+            color: var(--text-secondary);
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto 2.5rem;
+            line-height: 1.6;
+        }
+
+        /* Stats Row */
+        .stats-row {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--accent-cyan);
+            line-height: 1;
+            margin-bottom: 0.25rem;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Trust Indicators */
+        .trust-indicators {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .trust-item i {
+            color: var(--accent-green);
+        }
+
+        /* ========== FILTER BAR (Premium) ========== */
         .filter-bar {
             display: flex;
             gap: 1rem;
             align-items: center;
             flex-wrap: wrap;
-            padding: 1.5rem;
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            margin-top: 2rem;
+            padding: 1.25rem 1.5rem;
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
         }
 
         .search-box {
             position: relative;
             flex: 1;
-            min-width: 200px;
+            min-width: 250px;
         }
 
         .search-box input {
             width: 100%;
-            padding: 0.875rem 1rem 0.875rem 2.5rem;
-            background: var(--bg-secondary);
+            padding: 0.875rem 1rem 0.875rem 2.75rem;
+            background: rgba(0, 0, 0, 0.3);
             border: 1px solid var(--border);
-            border-radius: 8px;
+            border-radius: 10px;
             color: var(--text-primary);
             font-size: 0.95rem;
-            transition: border-color 0.3s;
+            transition: all 0.3s ease;
         }
 
         .search-box input:focus {
             outline: none;
             border-color: var(--accent-cyan);
+            background: rgba(0, 217, 255, 0.05);
         }
 
         .search-box i {
@@ -261,9 +367,9 @@
         .filter-select,
         .sort-select {
             padding: 0.875rem 2.5rem 0.875rem 1rem;
-            background: var(--bg-secondary);
+            background: rgba(0, 0, 0, 0.3);
             border: 1px solid var(--border);
-            border-radius: 8px;
+            border-radius: 10px;
             color: var(--text-primary);
             font-size: 0.95rem;
             cursor: pointer;
@@ -281,8 +387,356 @@
 
         .results-count {
             color: var(--text-muted);
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             margin-left: auto;
+            padding: 0.5rem 1rem;
+            background: rgba(0, 217, 255, 0.08);
+            border-radius: 8px;
+        }
+
+        /* ========== FEATURED SECTION ========== */
+        .featured-section {
+            margin-bottom: 3rem;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-header h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .section-header .badge {
+            padding: 0.25rem 0.75rem;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+            border-radius: 100px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: white;
+        }
+
+        .featured-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        /* Featured Card (Premium) */
+        .featured-card {
+            background: linear-gradient(135deg, rgba(0, 217, 255, 0.08) 0%, rgba(168, 85, 247, 0.05) 100%);
+            border: 1px solid rgba(0, 217, 255, 0.2);
+            border-radius: 24px;
+            padding: 2.25rem;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            backdrop-filter: blur(20px);
+        }
+
+        /* Gradient border effect */
+        .featured-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple), var(--accent-cyan));
+            background-size: 200% 100%;
+            animation: gradientShift 3s linear infinite;
+        }
+
+        /* Shimmer effect on hover */
+        .featured-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.08), transparent);
+            transition: left 0.6s ease;
+            pointer-events: none;
+        }
+
+        .featured-card:hover::after {
+            left: 150%;
+        }
+
+        /* Glow effect */
+        .featured-card:hover {
+            transform: translateY(-6px) scale(1.01);
+            border-color: rgba(0, 217, 255, 0.4);
+            box-shadow:
+                0 25px 50px rgba(0, 0, 0, 0.4),
+                0 0 80px rgba(0, 217, 255, 0.15),
+                inset 0 0 30px rgba(0, 217, 255, 0.05);
+        }
+
+        .featured-card .new-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.4rem 1rem;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+            color: white;
+            border-radius: 100px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 1.25rem;
+            box-shadow: 0 4px 15px rgba(0, 217, 255, 0.3);
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+
+        .featured-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.85rem;
+            line-height: 1.3;
+            transition: color 0.3s;
+        }
+
+        .featured-card:hover h3 {
+            background: linear-gradient(135deg, #ffffff 0%, var(--accent-cyan) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .featured-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .featured-meta {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 1.25rem;
+            padding: 0.75rem 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .featured-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .featured-meta span i {
+            color: var(--accent-cyan);
+            opacity: 0.7;
+        }
+
+        .featured-card .read-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-cyan);
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s;
+            padding: 0.5rem 0;
+        }
+
+        .featured-card .read-link i {
+            transition: transform 0.3s;
+        }
+
+        .featured-card:hover .read-link {
+            gap: 0.85rem;
+            text-shadow: 0 0 20px rgba(0, 217, 255, 0.5);
+        }
+
+        .featured-card:hover .read-link i {
+            transform: translateX(4px);
+        }
+
+        /* ========== GUIDES GRID (Premium Cards) ========== */
+        .all-guides-section {
+            margin-top: 3rem;
+        }
+
+        .guides-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+            gap: 1.75rem;
+        }
+
+        .guide-card {
+            background: linear-gradient(145deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 20px;
+            padding: 2rem;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+        }
+
+        /* Subtle top border accent */
+        .guide-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .guide-card:hover::before {
+            opacity: 1;
+        }
+
+        /* Shimmer effect */
+        .guide-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+            transition: left 0.7s ease;
+            pointer-events: none;
+        }
+
+        .guide-card:hover::after {
+            left: 150%;
+        }
+
+        .guide-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(255, 255, 255, 0.15);
+            background: linear-gradient(145deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+            box-shadow:
+                0 20px 40px rgba(0, 0, 0, 0.3),
+                0 0 40px rgba(0, 217, 255, 0.08);
+        }
+
+        .guide-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.4rem 0.9rem;
+            background: rgba(255, 255, 255, 0.04);
+            color: var(--text-secondary);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 100px;
+            font-size: 0.8rem;
+            margin-bottom: 1.25rem;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .guide-card:hover .guide-tag {
+            border-color: rgba(255, 255, 255, 0.15);
+            background: rgba(255, 255, 255, 0.06);
+        }
+
+        .guide-card h2 {
+            color: var(--text-primary);
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.85rem;
+            line-height: 1.35;
+            transition: color 0.3s;
+        }
+
+        .guide-card:hover h2 {
+            color: #ffffff;
+        }
+
+        .guide-card p {
+            color: var(--text-secondary);
+            font-size: 0.92rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.65;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .guide-meta {
+            display: flex;
+            gap: 1.25rem;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-bottom: 1.25rem;
+            flex-wrap: wrap;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .guide-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .guide-meta span i {
+            opacity: 0.6;
+            transition: opacity 0.3s;
+        }
+
+        .guide-card:hover .guide-meta span i {
+            opacity: 1;
+            color: var(--accent-cyan);
+        }
+
+        .read-more {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s;
+        }
+
+        .read-more i {
+            transition: transform 0.3s;
+        }
+
+        .guide-card:hover .read-more {
+            gap: 0.8rem;
+            text-shadow: 0 0 15px rgba(0, 217, 255, 0.4);
+        }
+
+        .guide-card:hover .read-more i {
+            transform: translateX(3px);
+        }
+
+        /* Coming Soon */
+        .coming-soon {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+
+        .coming-soon-badge {
+            background: rgba(255, 76, 76, 0.1) !important;
+            color: var(--accent-red) !important;
+            border-color: rgba(255, 76, 76, 0.2) !important;
         }
 
         /* Hide guides that don't match filter */
@@ -290,9 +744,79 @@
             display: none;
         }
 
-        /* Responsive */
+        /* ========== SEO CONTENT SECTION ========== */
+        .seo-content {
+            margin-top: 4rem;
+            padding: 3rem;
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+        }
+
+        .seo-content h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+        }
+
+        .seo-content p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .seo-content h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin: 2rem 0 1rem;
+            color: var(--text-primary);
+        }
+
+        .seo-content ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+
+        .seo-content li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            color: var(--text-secondary);
+            padding: 0.75rem;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        .seo-content li i {
+            color: var(--accent-cyan);
+            margin-top: 0.2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 1024px) {
+            .featured-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
         @media (max-width: 768px) {
             h1 {
+                font-size: 2.25rem;
+            }
+
+            .hero-description {
+                font-size: 1.1rem;
+            }
+
+            .stats-row {
+                gap: 2rem;
+            }
+
+            .stat-number {
                 font-size: 2rem;
             }
 
@@ -321,6 +845,14 @@
             .results-count {
                 margin-left: 0;
                 text-align: center;
+            }
+
+            .trust-indicators {
+                gap: 1rem;
+            }
+
+            .seo-content {
+                padding: 1.5rem;
             }
         }
     </style>
@@ -499,15 +1031,59 @@
         <a href="/index.html#contact">Contact</a>
     </div>
     <div class="container">
-        <div class="page-header">
+        <!-- Premium Hero Section -->
+        <section class="hero-section">
+            <!-- Decorative floating orbs -->
+            <div class="hero-orb-1"></div>
+            <div class="hero-orb-2"></div>
+
             <div class="breadcrumb">
                 <a href="/">Home</a> / Guides
             </div>
-            <h1>Security Guides & Tutorials</h1>
-            <p class="subtitle">
-                Expert guides on cybersecurity, threat intelligence, and security operations
-            </p>
-        </div>
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Trusted by 50,000+ Security Professionals</span>
+                </div>
+                <h1>Security <span>Guides</span> & Tutorials</h1>
+                <p class="hero-description">
+                    Learn from industry experts with our comprehensive cybersecurity guides. From threat detection with
+                    YARA and Sigma rules to compliance frameworks like ISO 27001 — master the skills that matter.
+                </p>
+                <div class="stats-row">
+                    <div class="stat-item">
+                        <div class="stat-number">25+</div>
+                        <div class="stat-label">Expert Guides</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Minutes of Content</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">12</div>
+                        <div class="stat-label">Categories</div>
+                    </div>
+                </div>
+                <div class="trust-indicators">
+                    <div class="trust-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Updated for 2026</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Real-World Examples</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Copy-Paste Code Snippets</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Beginner to Advanced</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Filter Bar -->
         <div class="filter-bar">
@@ -517,16 +1093,15 @@
             </div>
             <select id="categoryFilter" class="filter-select">
                 <option value="all">All Categories</option>
-                <option value="AI Security"><i class="fas fa-robot"></i> AI Security</option>
+                <option value="Detection Engineering">Detection Engineering</option>
+                <option value="Compliance">Compliance</option>
                 <option value="Security Operations">Security Operations</option>
                 <option value="Threat Intelligence">Threat Intelligence</option>
                 <option value="Vulnerability Management">Vulnerability Management</option>
                 <option value="Incident Response">Incident Response</option>
-                <option value="Application Security">Application Security</option>
+                <option value="Cloud Security">Cloud Security</option>
                 <option value="Zero Trust">Zero Trust</option>
-                <option value="Training">Training</option>
-                <option value="Analytics">Analytics</option>
-                <option value="Compliance">Compliance</option>
+                <option value="AI Security">AI Security</option>
             </select>
             <select id="sortSelect" class="sort-select">
                 <option value="date-desc">Newest First</option>
@@ -537,54 +1112,60 @@
             <span class="results-count" id="resultsCount">Loading...</span>
         </div>
 
+        <!-- Featured New Guides -->
+        <section class="featured-section">
+            <div class="section-header">
+                <h2><i class="fas fa-fire" style="color: #FF3D3D; margin-right: 0.5rem;"></i> Just Released</h2>
+                <span class="badge">New</span>
+            </div>
+            <div class="featured-grid">
+                <!-- YARA Rules Featured Card -->
+                <a href="/guides/yara-rules-malware-detection.html" style="text-decoration: none;">
+                    <div class="featured-card">
+                        <span class="new-badge"><i class="fas fa-bolt"></i> New Guide</span>
+                        <h3>YARA Rules for Malware Detection</h3>
+                        <p>
+                            Master YARA pattern matching for malware detection. Write effective rules with strings, hex
+                            patterns, regex, modules, and VirusTotal integration.
+                        </p>
+                        <div class="featured-meta">
+                            <span><i class="fas fa-book-open"></i> 16 min read</span>
+                            <span><i class="fas fa-crosshairs"></i> Advanced</span>
+                            <span><i class="far fa-calendar-alt"></i> Jan 9, 2026</span>
+                        </div>
+                        <span class="read-link">Start Learning <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+                <!-- Sigma Rules Featured Card -->
+                <a href="/guides/sigma-rules-siem-detection.html" style="text-decoration: none;">
+                    <div class="featured-card">
+                        <span class="new-badge"><i class="fas fa-bolt"></i> New Guide</span>
+                        <h3>Sigma Rules for SIEM Detection</h3>
+                        <p>
+                            Write once, detect everywhere. Universal detection rules for Splunk, Elastic, Sentinel,
+                            QRadar, and 40+ SIEM platforms.
+                        </p>
+                        <div class="featured-meta">
+                            <span><i class="fas fa-book-open"></i> 18 min read</span>
+                            <span><i class="fas fa-crosshairs"></i> Intermediate</span>
+                            <span><i class="far fa-calendar-alt"></i> Jan 9, 2026</span>
+                        </div>
+                        <span class="read-link">Start Learning <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- All Guides Section -->
+        <section class="all-guides-section">
+            <div class="section-header">
+                <h2><i class="fas fa-book-open" style="color: var(--accent-cyan); margin-right: 0.5rem;"></i> All Guides
+                </h2>
+            </div>
+        </section>
+
         <div class="guides-grid" id="guidesGrid">
             <!-- ========== ALL GUIDES (Ordered by Date - Newest First) ========== -->
-
-            <!-- ========== NEW GUIDES (January 9, 2026) ========== -->
-
-            <!-- YARA Rules for Malware Detection (Jan 9, 2026) - NEW! -->
-            <a href="/guides/yara-rules-malware-detection.html" style="text-decoration: none;">
-                <div class="guide-card"
-                    style="border: 2px solid #00D9FF; box-shadow: 0 0 25px rgba(0, 217, 255, 0.4); background: linear-gradient(135deg, rgba(0, 217, 255, 0.08), rgba(255, 61, 61, 0.05));">
-                    <span class="guide-tag"
-                        style="background: linear-gradient(135deg, #00D9FF, #FF3D3D); color: white; border: none; font-weight: 700;"><i
-                            class="fas fa-star"></i>
-                        New</span>
-                    <h2>YARA Rules for Malware Detection</h2>
-                    <p>
-                        Master YARA pattern matching for malware detection. Write effective rules with strings, hex
-                        patterns, regex, modules, and VirusTotal integration.
-                    </p>
-                    <div class="guide-meta">
-                        <span><i class="fas fa-book-open"></i> 16 min read</span>
-                        <span><i class="fas fa-crosshairs"></i> Advanced</span>
-                        <span><i class="far fa-calendar-alt"></i> Jan 9, 2026</span>
-                    </div>
-                    <span class="read-more">Read Guide →</span>
-                </div>
-            </a>
-
-            <!-- Sigma Rules for SIEM Detection (Jan 9, 2026) - NEW! -->
-            <a href="/guides/sigma-rules-siem-detection.html" style="text-decoration: none;">
-                <div class="guide-card"
-                    style="border: 2px solid #A855F7; box-shadow: 0 0 25px rgba(168, 85, 247, 0.4); background: linear-gradient(135deg, rgba(168, 85, 247, 0.08), rgba(0, 217, 255, 0.05));">
-                    <span class="guide-tag"
-                        style="background: linear-gradient(135deg, #A855F7, #00D9FF); color: white; border: none; font-weight: 700;"><i
-                            class="fas fa-star"></i>
-                        New</span>
-                    <h2>Sigma Rules for SIEM Detection</h2>
-                    <p>
-                        Write once, detect everywhere. Universal detection rules for Splunk, Elastic, Sentinel, QRadar,
-                        and 40+ SIEM platforms.
-                    </p>
-                    <div class="guide-meta">
-                        <span><i class="fas fa-book-open"></i> 18 min read</span>
-                        <span><i class="fas fa-crosshairs"></i> Intermediate</span>
-                        <span><i class="far fa-calendar-alt"></i> Jan 9, 2026</span>
-                    </div>
-                    <span class="read-more">Read Guide →</span>
-                </div>
-            </a>
 
             <!-- ========== GUIDES (January 1, 2026) ========== -->
 
