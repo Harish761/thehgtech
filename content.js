@@ -4,61 +4,42 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Jan 11 2026",
-            "headline": "YARA-X 1.11.0—New Hash Function Warnings Added",
-            "title": "YARA-X 1.11.0 Update Introduces Hash Function Warning Feature",
-            "content": "The latest release of YARA-X, version 1.11.0, introduces a new feature designed to enhance security by providing warnings related to hash functions. This update aims to assist cybersecurity professionals in identifying potential issues with hash functions within their datasets. By flagging these concerns, YARA-X continues to improve its utility as a tool for malware researchers and incident responders. As hash functions are critical for ensuring data integrity and security, this feature is a significant addition for those relying on YARA-X in their threat detection workflows. Users are encouraged to update to version 1.11.0 to take advantage of this enhancement.",
+            "date": "Jan 12 2026",
+            "headline": "Hackers Breach UH Cancer Center—Patient Data Compromised",
+            "title": "University of Hawaii Cancer Center Patient Data Breach Raises Concerns",
+            "content": "Hackers accessed sensitive patient data at the University of Hawaii Cancer Center, yet affected individuals were not immediately notified. UH officials have withheld critical information, including the specific research project impacted and the ransom paid to regain access. The breach underscores the vulnerability of healthcare institutions to cyberattacks, particularly those involving sensitive health information. While the exact number of affected patients remains undisclosed, the incident highlights the growing trend of ransomware attacks targeting healthcare facilities. Security professionals emphasize the importance of robust cybersecurity measures and timely breach disclosures to protect patient data.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/hackers-accessed-university-of-hawaii-cancer-center-patient-data-they-werent-immediately-notified/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Response Playbook",
+                    "url": "/guides/ransomware-response-playbook.html",
+                    "icon": "fa-biohazard"
+                }
+            ]
+        },
+        {
+            "date": "Jan 12 2026",
+            "headline": "ISC Stormcast Discusses Latest Cybersecurity Developments",
+            "title": "ISC Stormcast Highlights Key Cybersecurity Threats and Trends",
+            "content": "The SANS Internet Storm Center&#x27;s latest Stormcast podcast provides a comprehensive overview of emerging cybersecurity threats and trends. This episode covers a range of topics, including recent vulnerabilities, attack vectors, and defensive strategies. With InfoCON status at green, the podcast serves as a valuable resource for security professionals seeking to stay informed about the latest developments in the field. Listeners are encouraged to leverage the insights shared to enhance their organization&#x27;s security posture. Regular updates from trusted sources like the ISC are crucial for maintaining awareness and preparedness against evolving cyber threats.",
             "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32616",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32620",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 11 2026",
+            "headline": "Instagram Data Leak Denied—Bug Fixed Amid Scraping Claims",
+            "title": "Instagram Addresses Alleged Data Breach and Fixes Password Reset Bug",
+            "content": "Instagram has refuted claims of a data breach involving 17 million accounts, attributing the incident to a bug that allowed mass password reset requests. The platform swiftly addressed the vulnerability, emphasizing that no user data was exposed as a result of the bug. Despite assurances, the incident raises concerns about data scraping and the potential misuse of publicly accessible information. Instagram&#x27;s response highlights the need for continuous monitoring and rapid remediation of security flaws. Users are advised to remain vigilant and utilize strong, unique passwords to safeguard their accounts.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/instagram-denies-breach-amid-claims-of-17-million-account-data-leak/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
                     "url": "/ransomware-tracker.html",
                     "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Jan 10 2026",
-            "headline": "RustyWater RAT Targets Middle East via Spear-Phishing",
-            "title": "MuddyWater Deploys RustyWater RAT in Middle East Spear-Phishing Campaign",
-            "content": "The Iranian threat actor MuddyWater has launched a spear-phishing campaign targeting critical sectors in the Middle East, using a Rust-based remote access trojan (RAT) known as RustyWater. This campaign specifically targets diplomatic, maritime, financial, and telecom sectors by employing icon spoofing and malicious Word documents to deliver the malware. RustyWater&#x27;s deployment highlights the increasing sophistication and adaptability of MuddyWater&#x27;s tactics. Organizations in the affected regions are urged to bolster their email security measures and educate employees on recognizing phishing attempts to mitigate this threat.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/01/muddywater-launches-rustywater-rat-via.html",
-            "relatedResources": [
-                {
-                    "label": "Phishing & Security Awareness",
-                    "url": "/guides/phishing-simulation-security-awareness.html",
-                    "icon": "fa-fish"
-                }
-            ]
-        },
-        {
-            "date": "Jan 10 2026",
-            "headline": "Ireland Recalls 13,000 Passports—Printing Error Found",
-            "title": "Software Update Error Prompts Recall of 13,000 Irish Passports",
-            "content": "Ireland&#x27;s Department of Foreign Affairs has recalled nearly 13,000 passports due to a printing defect caused by a recent software update. The error omitted the &#x27;IRL&#x27; code, rendering these passports non-compliant with international travel standards and potentially unreadable at automated border gates. This recall highlights the critical importance of thorough testing in software updates that affect essential services. Affected individuals are advised to contact the Department for a replacement to ensure their travel documents comply with international requirements.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/ireland-recalls-almost-13-000-passports-over-missing-irl-code/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 10 2026",
-            "headline": "Europol Busts 34 in €5.9M Black Axe Fraud Case",
-            "title": "Europol Arrests 34 Black Axe Members in €5.9M Fraud Operation",
-            "content": "Europol has announced the arrest of 34 individuals in Spain linked to the Black Axe criminal organization, accused of orchestrating a €5.9 million fraud scheme. This operation, conducted in collaboration with the Spanish National Police and Bavarian State Criminal Police, targeted a network involved in various criminal activities, including money laundering and cyber fraud. The arrests underscore Europol&#x27;s ongoing efforts to dismantle organized crime groups operating across Europe. Entities and individuals potentially affected by Black Axe&#x27;s activities are advised to review their security measures and remain vigilant against fraud attempts.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/01/europol-arrests-34-black-axe-members-in.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 10 2026",
-            "headline": "Trend Micro Patches Critical Apex Central Vulnerabilities",
-            "title": "Trend Micro Issues Patch for Critical Apex Central Software Flaws",
-            "content": "Trend Micro has released a patch addressing critical vulnerabilities in its Apex Central software, identified by Tenable&#x27;s vulnerability management platform. These flaws affect all on-premises versions prior to build 7190, potentially allowing unauthorized access and control. The security bulletin urges users to update immediately to mitigate risks associated with these vulnerabilities. This patch is part of Trend Micro&#x27;s ongoing commitment to maintaining the security and integrity of its products. Organizations using Apex Central should prioritize this update to protect their systems from potential exploits.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4115151/trend-micro-patches-critical-flaws-in-its-apex-central-software.html",
-            "relatedResources": [
+                },
                 {
                     "label": "CVE Prioritization Guide",
                     "url": "/guides/cve-prioritization-patch-management.html",
@@ -67,13 +48,56 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Jan 10 2026",
-            "headline": "Anthropic Denies Viral Claude Ban Rumors",
-            "title": "Anthropic Refutes Viral Claims of Claude Banning Legitimate Accounts",
-            "content": "Anthropic has officially denied reports that it banned legitimate accounts following a viral post on X, alleging that the creator of Claude had unjustly banned a user. The company clarified that the claims are unfounded and that no legitimate accounts have been affected. This incident highlights the potential for misinformation to spread rapidly on social media platforms, impacting public perception. Users are encouraged to verify information through official channels and remain cautious of unverified claims circulating online.",
+            "date": "Jan 11 2026",
+            "headline": "California Blocks Health Data Sales—Data Broker Firm Penalized",
+            "title": "California Enforces Ban on Health Data Resale by Unregistered Brokers",
+            "content": "The California Privacy Protection Agency has taken decisive action against Datamasters, a marketing firm illegally selling health and personal data without proper registration. This enforcement marks a significant step in protecting consumer privacy and curbing unauthorized data brokerage activities. Millions of users&#x27; sensitive information were at risk due to the firm&#x27;s non-compliance with state regulations. The crackdown reflects California&#x27;s ongoing commitment to strengthening data privacy laws and holding violators accountable. Organizations handling personal data are urged to ensure compliance with applicable privacy regulations to avoid similar penalties.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-viral-claude-banned-and-reported-to-authorities-message-isnt-real/",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/legal/california-bans-data-broker-reselling-health-data-of-millions/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 10 2026",
+            "headline": "BreachForums Compromised—324,000 User Accounts Exposed",
+            "title": "BreachForums Hacking Forum Database Leaked, User Data at Risk",
+            "content": "BreachForums, a notorious hacking forum, has suffered a significant data breach, resulting in the exposure of 324,000 user accounts. The leaked database includes sensitive user information, posing risks of further exploitation and identity theft. This breach highlights the inherent vulnerabilities within illegal online platforms and the potential consequences for their users. Security experts warn that participants in such forums are at heightened risk of law enforcement scrutiny and cyberattacks. Individuals involved in illicit activities are advised to reconsider their participation and enhance their personal security measures.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/breachforums-hacking-forum-database-leaked-exposing-324-000-accounts/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 10 2026",
+            "headline": "Spain Arrests 34 in Black Axe Cybercrime Sweep",
+            "title": "Spanish Authorities Dismantle Black Axe-Linked Cybercrime Network",
+            "content": "Spanish authorities have arrested 34 individuals suspected of being part of a cybercrime network associated with the Black Axe group. This operation targeted individuals involved in cyber fraud and other illicit activities across Europe. The arrests signify a major victory in the fight against organized cybercrime, disrupting a network responsible for significant financial losses. Black Axe, known for its sophisticated schemes, has been a persistent threat across the continent. Law enforcement agencies continue to collaborate internationally to dismantle such networks and prevent further criminal activities.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/spain-arrests-34-suspects-linked-to-black-axe-cyber-crime/",
             "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "DORA Compliance Guide",
+                    "url": "/guides/dora-compliance.html",
+                    "icon": "fa-university"
+                }
+            ]
+        },
+        {
+            "date": "Jan 09 2026",
+            "headline": "ChatGPT Trials Career-Boosting Feature—Job Search and Resume Help",
+            "title": "OpenAI Tests ChatGPT &quot;Jobs&quot; Feature for Career Enhancement",
+            "content": "OpenAI is testing a new ChatGPT feature named &quot;Jobs,&quot; designed to assist users in exploring career opportunities, improving resumes, and planning their professional paths. This development follows the integration of a Health dashboard, expanding ChatGPT&#x27;s functionality beyond conversational AI. The feature aims to provide tailored career advice and resources, enhancing users&#x27; job search experiences. As AI continues to evolve, tools like ChatGPT are increasingly being leveraged for personal and professional development. Users interested in optimizing their career prospects are encouraged to explore these new capabilities.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/chatgpt-tests-a-new-feature-to-find-jobs-improve-your-resume-and-more/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
                 {
                     "label": "LLM Security & Prompt Injection",
                     "url": "/guides/llm-security-prompt-injection.html",
@@ -82,21 +106,21 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Jan 09 2026",
-            "headline": "Tim Kosiba Named NSA Deputy Director Amid Leadership Changes",
-            "title": "Tim Kosiba Appointed as NSA Deputy Director After Leadership Turmoil",
-            "content": "Tim Kosiba has been appointed as the new deputy director of the National Security Agency (NSA), following a period of leadership instability within the agency and the U.S. Cyber Command. His appointment aims to bring stability and direction to the NSA during a time of significant cybersecurity challenges. Kosiba&#x27;s extensive experience in cybersecurity and intelligence positions him well to address the evolving threats facing national security. This leadership change is expected to enhance the NSA&#x27;s strategic initiatives and operational effectiveness.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://defensescoop.com/2026/01/09/nsa-tim-kosiba-deputy-director-trump-administration/",
-            "relatedResources": []
-        },
+            "date": "May 05 2026",
+            "title": "GISEC GLOBAL 2026 Unveils Cybersecurity Innovations in Middle East and Africa",
+            "content": "GISEC GLOBAL 2026, the largest cybersecurity event in the Middle East and Africa, has kicked off, showcasing the latest advancements in cybersecurity technology and strategy. The event serves as a platform for industry leaders to discuss emerging threats and innovative solutions. This year&#x27;s focus includes AI-driven security tools, advanced threat detection systems, and new compliance frameworks. Professionals from various sectors, including government and private enterprises, are attending to gain insights into protecting critical infrastructure. The event highlights the region&#x27;s growing importance in the global cybersecurity landscape, emphasizing collaboration and knowledge sharing. Attendees are encouraged to engage with workshops and panels to stay ahead of evolving cyber threats.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/events/gisec-global"
+        }
+    ],
+    "aiShorts": [
         {
-            "date": "Jan 11 2026",
-            "headline": "Microsoft Ends &#x27;Send to Kindle&#x27;—Word Users Must Seek Alternatives",
-            "title": "Microsoft Retires &#x27;Send to Kindle&#x27; Feature in Microsoft Word",
-            "content": "Microsoft has announced the retirement of its &#x27;Send to Kindle&#x27; feature in Microsoft Word, effective immediately. This feature allowed users to send Word documents directly to their Kindle devices, streamlining the process of transferring documents for reading on-the-go. The decision affects users across all versions of Microsoft Word that supported this integration. Microsoft has not provided a direct replacement, leaving users to explore alternative methods such as emailing documents to their Kindle email address or using third-party tools. This move reflects a broader trend of tech companies reassessing and often discontinuing legacy features in favor of newer solutions. Users should adjust their workflows to accommodate this change.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-is-retiring-send-to-kindle-in-word/",
+            "date": "Jan 12 2026",
+            "headline": "Motional Targets 2026 for Las Vegas Driverless Robotaxi Launch",
+            "title": "Motional Plans AI-Driven Robotaxi Service in Las Vegas by 2026",
+            "content": "Motional has announced plans to roll out a driverless robotaxi service in Las Vegas by the end of 2026, placing AI technology at the forefront of its autonomous vehicle strategy. The initiative will leverage Motional&#x27;s latest advancements in AI to navigate complex urban environments without human intervention. This move positions Motional as a key player in the competitive autonomous vehicle market, which is rapidly expanding as companies race to deploy driverless solutions. The service is expected to impact urban transportation by providing a safer and more efficient alternative to traditional taxis. Industry professionals should monitor this development for potential shifts in transportation models and AI applications in urban settings.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/11/motional-puts-ai-at-center-of-robotaxi-reboot-as-it-targets-2026-for-driverless-service/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
@@ -111,66 +135,21 @@ const websiteContent = {
             ]
         },
         {
-            "date": "May 05 2026",
-            "title": "GISEC GLOBAL 2026 Unveils Cybersecurity Innovations in Middle East and Africa",
-            "content": "GISEC GLOBAL 2026, the largest cybersecurity event in the Middle East and Africa, has kicked off, showcasing the latest advancements in cybersecurity technology and strategy. The event serves as a platform for industry leaders to discuss emerging threats and innovative solutions. This year&#x27;s focus includes AI-driven security tools, advanced threat detection systems, and new compliance frameworks. Professionals from various sectors, including government and private enterprises, are attending to gain insights into protecting critical infrastructure. The event highlights the region&#x27;s growing importance in the global cybersecurity landscape, emphasizing collaboration and knowledge sharing. Attendees are encouraged to engage with workshops and panels to stay ahead of evolving cyber threats.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/events/gisec-global"
-        }
-    ],
-    "aiShorts": [
-        {
-            "date": "Jan 10 2026",
-            "headline": "OpenAI Requests Old Projects—Boosts AI Office Skills",
-            "title": "OpenAI Asks Contractors to Upload Past Work for AI Training",
-            "content": "OpenAI is requesting contractors to upload projects from previous jobs to enhance the performance of its AI agents in office tasks. The initiative aims to improve AI models by exposing them to a wide array of real-world scenarios. Contractors are responsible for removing any confidential or personally identifiable information before submission. This move is part of OpenAI&#x27;s broader strategy to prepare AI for practical, administrative roles, potentially affecting how businesses integrate AI into their operations. Professionals should ensure data privacy compliance when participating in such initiatives to mitigate risks of data leakage or misuse.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/openai-contractor-upload-real-work-documents-ai-agents/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
+            "date": "Jan 11 2026",
+            "headline": "Google Pulls Misleading AI Medical Overviews After Criticism",
+            "title": "Google Removes AI Overviews Following Misleading Medical Information Report",
+            "content": "Google has removed AI-generated overviews for certain medical searches after an investigation by The Guardian revealed inaccuracies and misleading information. The investigation highlighted instances where Google&#x27;s AI provided false medical data, prompting the company to take corrective action. This incident underscores the challenges of relying on AI for critical information, especially in sensitive areas like healthcare. Professionals in the field should be aware of the limitations of AI in providing reliable information and the potential risks of misinformation. Google&#x27;s response reflects the ongoing need for rigorous validation processes in AI systems handling critical data.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/news/860356/google-pulls-alarming-dangerous-medical-ai-overviews",
+            "relatedResources": []
         },
         {
-            "date": "Jan 10 2026",
-            "headline": "Grok AI Misused—Cultural Images Turned Offensive",
-            "title": "Grok AI Tool Misused to Target Women in Cultural Attire",
-            "content": "The Grok AI image editing tool has been misused to generate offensive images targeting women in hijabs and saris. This issue highlights a growing concern about AI&#x27;s role in perpetuating cultural insensitivity and harassment. The misuse of Grok underscores the importance of implementing robust ethical guidelines and moderation mechanisms in AI systems. Women from religious and cultural communities are particularly vulnerable to such abuses, raising alarms about privacy and representation. Developers and AI companies must prioritize ethical training data and enforce strict usage policies to prevent similar occurrences.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/grok-is-being-used-to-mock-and-strip-women-in-hijabs-and-sarees/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 09 2026",
-            "headline": "Google Warns: Avoid &quot;Bite-Sized&quot; Content for SEO Success",
-            "title": "Google Advises Against &quot;Bite-Sized&quot; Content for Better Search Rankings",
-            "content": "Google has issued a warning to content creators against producing &quot;bite-sized&quot; content tailored for large language models (LLMs) if they wish to maintain strong search rankings. The company emphasizes that creating content for human readers, rather than AI, is the best long-term strategy for visibility. This advice comes as LLMs increasingly influence how content is consumed and ranked online. Content creators should focus on delivering quality, in-depth information to engage users and improve search performance. Adapting to these guidelines can help maintain competitive search visibility.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/google/2026/01/google-dont-make-bite-sized-content-for-llms-if-you-care-about-search-rank/",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Jan 09 2026",
-            "headline": "Ozlo&#x27;s Sleepbuds—AI-Powered Sleep Data Platform Launches",
-            "title": "Ozlo Expands Sleepbuds with AI-Powered Sleep Data Platform",
-            "content": "Ozlo is set to revolutionize sleep technology with the introduction of an AI-powered platform for sleep data, enhancing its Sleepbuds product line. The platform aims to provide users with personalized sleep insights and recommendations, leveraging AI to analyze sleep patterns. This development marks a significant step in integrating AI into consumer health products, offering users a more tailored sleep experience. As sleep technology continues to evolve, professionals in the health tech industry should consider how AI can be used to improve product offerings and user outcomes. The launch is expected to drive innovation in the sleep tech market.",
+            "date": "Jan 11 2026",
+            "headline": "Google Scrubs AI Medical Data After Inaccuracy Report",
+            "title": "Google Removes AI Overviews After Misleading Medical Query Findings",
+            "content": "Following a report by The Guardian, Google has taken down AI-generated overviews for certain medical queries that were found to be misleading. The investigation revealed that Google&#x27;s AI provided incorrect health information, raising concerns about the reliability of AI in medical contexts. This action highlights the importance of accuracy and accountability in AI systems, particularly in areas impacting public health. The tech community should consider the implications of AI-driven misinformation and advocate for stronger oversight and validation in AI applications. This development serves as a reminder of the critical role that accuracy plays in AI deployments.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/09/how-the-sleepbuds-maker-ozlo-is-building-a-platform-for-sleep-data/",
+            "sourceUrl": "https://techcrunch.com/2026/01/11/google-removes-ai-overviews-for-certain-medical-queries/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
@@ -180,35 +159,55 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Jan 09 2026",
-            "headline": "Grok AI Faces Backlash—Deepfake Misuse Sparks Outrage",
-            "title": "Grok AI Image Editing Tool Sparks Deepfake Controversy",
-            "content": "The launch of Grok&#x27;s AI image editing feature has led to a surge of nonconsensual sexualized deepfakes on social media platform X. Users exploited the tool to generate inappropriate images, prompting widespread criticism and highlighting the need for stricter content moderation. The incident underscores the potential for AI tools to be misused, causing harm and violating privacy. As the use of AI in image editing grows, companies must implement robust safeguards to prevent abuse. This situation serves as a cautionary tale for developers and regulators to prioritize ethical standards in AI deployment.",
+            "date": "Jan 11 2026",
+            "headline": "Google Unveils AI Inbox—A Glimpse into Gmail&#x27;s Future",
+            "title": "Google&#x27;s AI Inbox Offers New Vision for Gmail&#x27;s Interface",
+            "content": "Google has introduced an AI Inbox feature for Gmail, transforming the traditional email list into an AI-driven task and topic tracker. This innovative approach uses AI to organize emails into actionable items, potentially revolutionizing how users interact with their inboxes. Although not yet widely available, early access users report a more streamlined experience that prioritizes productivity. This feature reflects Google&#x27;s commitment to integrating AI into everyday tools to enhance user efficiency. Tech professionals should anticipate further developments in AI-driven productivity tools as Google continues to refine this feature based on user feedback.",
             "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/news/859715/x-grok-ai-deepfakes",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 09 2026",
-            "headline": "Meta&#x27;s Nuclear Power Play—Partners with Gates-Backed TerraPower",
-            "title": "Meta Partners with Nuclear Firms to Power AI Data Centers",
-            "content": "Meta has secured agreements with three nuclear power providers, including Bill Gates-backed TerraPower, to power its AI data centers. The deals, which also involve Oklo and Vistra, are expected to deliver 6.6 gigawatts of energy, ensuring a stable electricity supply for Meta&#x27;s expanding AI operations. This move highlights the tech giant&#x27;s commitment to sustainable energy solutions amidst growing energy demands from AI technologies. By investing in nuclear power, Meta aims to reduce its carbon footprint while supporting the scalability of its data centers. This strategic shift underscores the increasing intersection of technology and sustainable energy.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/news/859751/meta-nuclear-energy-plant-agreements-ai-data-centers",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 09 2026",
-            "headline": "AI Runtime Attacks Surge—CISOs Fight Back",
-            "title": "CISOs Tackle 11 Emerging Runtime Attacks Threatening AI Security",
-            "content": "Enterprise security teams are grappling with a rise in AI-enabled runtime attacks, as attackers exploit new vulnerabilities in AI systems. These attacks, characterized by rapid breakout times and short patch windows, challenge traditional defense mechanisms. Chief Information Security Officers (CISOs) are adopting proactive strategies, including runtime application self-protection (RASP) and enhanced monitoring, to mitigate these threats. As AI systems become integral to business operations, understanding and addressing runtime vulnerabilities is crucial for maintaining security. This trend highlights the evolving threat landscape and the need for adaptive security measures in AI environments.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/security/ciso-inference-security-platforms-11-runtime-attacks-2026",
+            "sourceUrl": "https://www.theverge.com/tech/859864/google-gmail-ai-inbox-hands-on",
             "relatedResources": [
                 {
-                    "label": "Active Directory Security",
-                    "url": "/guides/active-directory-security-hardening.html",
-                    "icon": "fa-sitemap"
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 11 2026",
+            "headline": "Indonesia, Malaysia Block Grok Over Deepfake Concerns",
+            "title": "Grok Blocked in Indonesia and Malaysia Over Deepfake Issues",
+            "content": "Indonesia and Malaysia have temporarily blocked access to xAI&#x27;s chatbot, Grok, due to concerns over non-consensual, sexualized deepfakes. The decision follows reports of Grok being used to generate harmful and unauthorized content, raising significant ethical and legal issues. This action reflects the growing scrutiny and regulatory challenges facing AI technologies capable of creating deepfakes. The tech industry must address these concerns by implementing stricter content moderation and ethical guidelines. Stakeholders should be aware of the increasing regulatory landscape surrounding AI to ensure compliance and responsible use.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/11/indonesia-blocks-grok-over-non-consensual-sexualized-deepfakes/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 10 2026",
+            "headline": "OpenAI&#x27;s Data Request Raises Intellectual Property Concerns",
+            "title": "OpenAI&#x27;s Contractor Practices Spark Intellectual Property Debate",
+            "content": "OpenAI is reportedly asking contractors to upload real work from past jobs, raising significant intellectual property concerns. An intellectual property lawyer warns that this practice could expose OpenAI to legal risks, as it may involve proprietary or confidential information. The request highlights the ongoing tension between AI development needs and intellectual property rights. Professionals in the field should be vigilant about data privacy and ownership issues when engaging with AI companies. This situation underscores the importance of clear guidelines and legal frameworks to protect both companies and individuals in the AI ecosystem.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/10/openai-is-reportedly-asking-contractors-to-upload-real-work-from-past-jobs/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 10 2026",
+            "headline": "Semantic Caching Cuts LLM API Bills by 73%",
+            "title": "Semantic Caching Offers Solution to Rising LLM API Costs",
+            "content": "As LLM (large language model) API bills surge by 30% month-over-month, semantic caching emerges as a promising solution to reduce costs by up to 73%. This technique involves storing and reusing previous query responses to minimize redundant processing, addressing the issue of users repeatedly asking similar questions. The implementation of semantic caching can significantly alleviate financial burdens for companies relying on LLMs. This development is crucial for businesses seeking to optimize their AI expenditures while maintaining efficient operations. Industry leaders should consider adopting semantic caching strategies to manage costs and enhance system performance.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/why-your-llm-bill-is-exploding-and-how-semantic-caching-can-cut-it-by-73",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
                 }
             ]
         }
