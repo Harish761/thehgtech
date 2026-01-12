@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Advanced YARA Techniques: Expert Malware Detection Guide [2026] | TheHGTech</title>
+    <meta name="title" content="Advanced YARA Techniques: Expert Malware Detection Guide [2026]">
+    <meta name="description"
+        content="Master advanced YARA techniques: memory scanning, YARA-X, yarGen, APT detection rules, PE analysis, performance optimization, and DFIR integration.">
+    <meta name="keywords"
+        content="advanced YARA, YARA-X, memory scanning YARA, APT detection rules, yarGen, YARA performance, DFIR YARA, Velociraptor YARA, malware hunting">
+    <meta name="author" content="TheHGTech">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thehgtech.com/guides/yara-rules-advanced.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/guides/yara-rules-advanced.html">
+    <meta property="og:title" content="Advanced YARA Techniques: Expert Malware Detection Guide [2026]">
+    <meta property="og:description"
+        content="Master advanced YARA: memory scanning, YARA-X, APT rules, and DFIR integration.">
+    <meta property="og:image" content="https://thehgtech.com/images/guides/yara-rules-advanced.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://thehgtech.com/guides/yara-rules-advanced.html">
+    <meta name="twitter:title" content="Advanced YARA Techniques [2026]">
+    <meta name="twitter:description"
+        content="Expert YARA guide: memory scanning, APT detection, YARA-X, and performance optimization.">
+    <meta name="twitter:image" content="https://thehgtech.com/images/guides/yara-rules-advanced.png">
+
+    <!-- FAQ Schema for Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is YARA and what is it used for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "YARA is a pattern matching tool designed to help malware researchers identify and classify malware samples. It allows you to create rules that describe patterns found in malicious files, enabling automated detection across large file sets."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do YARA rules work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "YARA rules work by defining patterns (strings, hex sequences, regular expressions) and conditions. When a file matches all specified conditions, the rule triggers. Rules can match text strings, hexadecimal patterns, file size, entry points, and more."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the main components of a YARA rule?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A YARA rule has three main sections: 1) Meta - descriptive information like author and description, 2) Strings - patterns to search for (text, hex, regex), 3) Condition - logic that determines when the rule matches (e.g., 'any of them', 'all of them', file size checks)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use YARA with VirusTotal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, VirusTotal supports YARA rules through its Hunting feature (requires premium subscription). You can upload YARA rules to automatically scan new submissions and retroactively search the VirusTotal database for matching samples."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Advanced YARA Techniques: Expert Malware Detection Guide",
+      "description": "Master advanced YARA techniques: memory scanning, YARA-X, yarGen, APT detection rules, PE analysis, performance optimization, and DFIR integration.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://thehgtech.com/images/guides/yara-rules-advanced.png",
+        "width": 1200,
+        "height": 630
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "TheHGTech",
+        "url": "https://thehgtech.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TheHGTech",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://thehgtech.com/logo.png",
+          "width": 600,
+          "height": 60
+        }
+      },
+      "datePublished": "2026-01-12",
+      "dateModified": "2026-01-12",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://thehgtech.com/guides/yara-rules-advanced.html"
+      },
+      "keywords": "advanced YARA, YARA-X, memory scanning, APT detection, malware hunting",
+      "articleSection": "Security Guides",
+      "inLanguage": "en-US",
+      "proficiencyLevel": "Advanced",
+      "wordCount": 8000
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF3D3D;
+            --accent-green: #22C55E;
+            --accent-orange: #FF9500;
+            --accent-purple: #A855F7;
+            --glow-cyan: rgba(0, 217, 255, 0.5);
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+            --glass: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            padding-top: 100px;
+        }
+
+        .new-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent-red), var(--accent-cyan));
+            color: #000;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            margin-left: 1rem;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.8;
+                transform: scale(1.05);
+            }
+        }
+
+        .guide-header {
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+        }
+
+        .breadcrumb {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .breadcrumb a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(to right, #fff, #a0a0a0);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+
+        .meta {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            flex-wrap: wrap;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .featured-image {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin: 2rem 0;
+            box-shadow: 0 10px 40px rgba(0, 217, 255, 0.2);
+            border: 1px solid var(--border);
+        }
+
+        .content h2 {
+            font-size: 1.8rem;
+            color: var(--accent-cyan);
+            margin: 3rem 0 1.5rem;
+        }
+
+        .content h3 {
+            font-size: 1.4rem;
+            color: #fff;
+            margin: 2rem 0 1rem;
+        }
+
+        .content h4 {
+            font-size: 1.2rem;
+            color: var(--accent-cyan);
+            margin: 1.5rem 0 1rem;
+        }
+
+        .content p {
+            margin-bottom: 1.5rem;
+            color: #d0d0d0;
+        }
+
+        .content ul,
+        .content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+            color: #d0d0d0;
+        }
+
+        .content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .content strong {
+            color: #fff;
+        }
+
+        .content code {
+            background: var(--bg-card);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: var(--accent-cyan);
+            font-size: 0.9em;
+        }
+
+        .info-box {
+            background: rgba(0, 217, 255, 0.05);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .warning-box {
+            background: rgba(255, 61, 61, 0.1);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .success-box {
+            background: rgba(34, 197, 94, 0.1);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        pre {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+            color: #d0d0d0;
+        }
+
+        /* YARA-specific syntax highlighting */
+        .yara-keyword {
+            color: var(--accent-purple);
+            font-weight: 600;
+        }
+
+        .yara-string {
+            color: var(--accent-green);
+        }
+
+        .yara-comment {
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        .yara-operator {
+            color: var(--accent-orange);
+        }
+
+        .yara-hex {
+            color: var(--accent-cyan);
+        }
+
+        /* Rule Box */
+        .rule-box {
+            background: linear-gradient(135deg, rgba(0, 217, 255, 0.1), rgba(168, 85, 247, 0.05));
+            border: 1px solid var(--accent-cyan);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .rule-box h5 {
+            color: var(--accent-cyan);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Table styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: rgba(0, 217, 255, 0.1);
+            color: var(--accent-cyan);
+            font-weight: 600;
+        }
+
+        td {
+            color: var(--text-secondary);
+        }
+
+        /* TOC */
+        .toc {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .toc h3 {
+            color: var(--accent-cyan);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .toc ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .toc li {
+            margin-bottom: 0.5rem;
+        }
+
+        .toc a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .toc a:hover {
+            color: var(--accent-cyan);
+        }
+
+        footer {
+            margin-top: 5rem;
+            padding-top: 3rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.8rem 1.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-back:hover {
+            border-color: var(--accent-cyan);
+            color: var(--accent-cyan);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .content h2 {
+                font-size: 1.5rem;
+            }
+
+            .content h3 {
+                font-size: 1.2rem;
+            }
+
+            .container {
+                padding-top: 80px;
+            }
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/header-dropdown.css?v=1">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <script src="/m-app.js?v=4.3" defer></script>
+</head>
+
+<body>
+    <!-- Mobile Header -->
+    <header class="m-header m-only">
+        <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark"
+                style="height: 28px; width: auto; margin: 0;">
+            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light"
+                style="height: 28px; width: auto; margin: 0;">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+        </div>
+        <div class="m-header__actions">
+            <button class="m-theme-toggle" onclick="mToggleTheme()" aria-label="Toggle Theme">
+                <span class="m-theme-toggle__thumb"></span>
+                <span class="m-theme-toggle__stars">
+                    <span class="m-theme-toggle__star"></span>
+                    <span class="m-theme-toggle__star"></span>
+                </span>
+            </button>
+            <button class="m-header__btn m-header__btn--search" data-action="search" aria-label="Search">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Bottom Navigation -->
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item"><i class="fas fa-bug"></i><span>CVE</span></a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item"><i class="fas fa-shield-alt"></i><span>Intel</span></a>
+        <a href="/articles.html" class="m-bottom-nav__item"><i class="fas fa-newspaper"></i><span>Articles</span></a>
+        <a href="/guides/" class="m-bottom-nav__item active"><i class="fas fa-book"></i><span>Guides</span></a>
+    </nav>
+
+    <!-- Desktop Header -->
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+
+            <nav class="nav nav-modern" role="navigation">
+                <a href="/index.html#news">News</a>
+
+                <!-- Intelligence Dropdown -->
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">
+                        Intelligence
+                        <span class="nav-live-badge">LIVE</span>
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/threat-intel.html" class="dropdown-item">
+                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Threat Intelligence <span
+                                        class="dropdown-badge live">LIVE</span></div>
+                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/cve-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">CVE Tracker</div>
+                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/ransomware-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Ransomware Tracker</div>
+                                <div class="dropdown-item-desc">Track active ransomware groups and victims</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Resources Dropdown -->
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">
+                        Resources
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/guides/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
+                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides
+                                    <span class="dropdown-badge popular">37+</span>
+                                </div>
+                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
+                            </div>
+                        </a>
+                        <a href="/comparisons/" class="dropdown-item">
+                            <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Tool Comparisons</div>
+                                <div class="dropdown-item-desc">EDR, SIEM, and security tool head-to-head reviews</div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="/articles.html" class="dropdown-item">
+                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Articles</div>
+                                <div class="dropdown-item-desc">Latest cybersecurity news and analysis</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="theme-toggle-wrapper">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <div class="toggle-stars">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                    </button>
+                </div>
+            </nav>
+
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="guide-header">
+            <div class="breadcrumb">
+                <a href="/">Home</a> / <a href="/guides/">Guides</a> / Advanced YARA Techniques
+            </div>
+            <h1>Advanced YARA Techniques<span class="new-badge">NEW</span></h1>
+            <p style="color: var(--text-muted); font-size: 1.1rem;">Expert-level YARA for malware hunters — memory
+                scanning, YARA-X, APT detection rules, performance tuning, and DFIR workflows.</p>
+            <div class="meta">
+                <div class="meta-item"><i class="fas fa-book-open"></i> 35 min read</div>
+                <div class="meta-item"><i class="fas fa-crosshairs"></i> Advanced</div>
+                <div class="meta-item"><i class="far fa-calendar-alt"></i> Jan 12, 2026</div>
+            </div>
+        </div>
+
+        <article class="content">
+            <img src="/images/guides/yara-rules-advanced.png" alt="Advanced YARA Techniques Guide"
+                class="featured-image">
+
+            <div class="warning-box">
+                <strong><i class="fas fa-exclamation-triangle"></i> Prerequisites Required</strong>
+                <p style="margin-top: 0.5rem; margin-bottom: 0;">This is an advanced guide designed for experienced
+                    security professionals. If you're new to YARA or need a refresher on the fundamentals, start with
+                    our <a href="/guides/yara-rules-malware-detection.html"
+                        style="color: var(--accent-cyan); font-weight: 600;">YARA Rules Fundamentals</a> guide first,
+                    then return here to level up your skills.</p>
+            </div>
+
+            <p>You know YARA basics. You can write rules that match strings and conditions. But the difference between a
+                good malware analyst and a great one is knowing the advanced techniques — how to scan memory, optimize
+                performance, detect APT groups, and integrate YARA into your DFIR workflows.</p>
+
+            <p>This guide covers everything the fundamentals guide doesn't: the expert techniques that make the
+                difference between catching commodity malware and hunting nation-state actors.</p>
+
+            <!-- Table of Contents -->
+            <div class="toc">
+                <h3><i class="fas fa-list-ul"></i> Table of Contents</h3>
+                <ul>
+                    <li><a href="#memory-scanning">1. Memory Scanning Techniques</a></li>
+                    <li><a href="#yara-x">2. YARA-X: The Next Generation</a></li>
+                    <li><a href="#yargen">3. Automated Rule Generation with yarGen</a></li>
+                    <li><a href="#performance">4. Performance Optimization</a></li>
+                    <li><a href="#pe-analysis">5. Advanced PE Analysis</a></li>
+                    <li><a href="#complex-conditions">6. Complex Conditions and Iterators</a></li>
+                    <li><a href="#apt-rules">7. APT Detection Rules</a></li>
+                    <li><a href="#dfir">8. DFIR Integration (Velociraptor, KAPE)</a></li>
+                    <li><a href="#false-positives">9. Systematic False Positive Reduction</a></li>
+                    <li><a href="#evasion">10. Detection Evasion Techniques</a></li>
+                </ul>
+            </div>
+
+            <h2 id="memory-scanning">1. Memory Scanning Techniques</h2>
+
+            <p>File scanning is just the beginning. Real advanced YARA usage involves scanning process memory, which
+                lets you catch malware that's unpacked, decrypted, or fileless. This is where you catch the malware that
+                evades signature-based file scans.</p>
+
+            <h3>Why Memory Scanning Matters</h3>
+            <ul>
+                <li><strong>Unpacked code:</strong> Many malware families pack their payloads; the real malicious code
+                    only exists in memory</li>
+                <li><strong>Decrypted strings:</strong> Obfuscated strings become readable once the malware runs</li>
+                <li><strong>Fileless malware:</strong> PowerShell empire, Cobalt Strike, and other tools often never
+                    touch disk</li>
+                <li><strong>Process injection:</strong> Detect injected code in legitimate processes</li>
+            </ul>
+
+            <h3>Linux Memory Scanning</h3>
+
+            <pre><code><span class="yara-comment"># Scan a specific process by PID</span>
+yara -p rule.yar 1234
+
+<span class="yara-comment"># Scan all processes</span>
+for pid in $(ls /proc/ | grep -E '^[0-9]+$'); do
+    yara rule.yar /proc/$pid/mem 2>/dev/null
+done
+
+<span class="yara-comment"># Using yara with memory dump</span>
+yara rules.yar memory.dmp</code></pre>
+
+            <h3>Windows Memory Scanning with Volatility</h3>
+
+            <pre><code><span class="yara-comment"># Extract memory dump with winpmem</span>
+winpmem_mini_x64.exe memdump.raw
+
+<span class="yara-comment"># Scan with Volatility 3</span>
+vol -f memdump.raw windows.yarascan --yara-file=rules.yar
+
+<span class="yara-comment"># Target specific process</span>
+vol -f memdump.raw windows.yarascan --yara-file=cobalt.yar --pid=4532</code></pre>
+
+            <div class="rule-box">
+                <h5><i class="fas fa-crosshairs"></i> Memory-Specific Rule Pattern</h5>
+                <pre><code><span class="yara-keyword">rule</span> MemoryOnly_Beacon {
+    <span class="yara-keyword">meta</span>:
+        description = "Detects unpacked beacon in memory"
+        memory_only = true
+        
+    <span class="yara-keyword">strings</span>:
+        <span class="yara-comment">// Strings that only appear after unpacking</span>
+        $config = { 00 01 00 01 00 02 ?? ?? 00 02 00 01 }
+        $sleep = "Sleep mask" ascii
+        $pipe = "\\\\.\\pipe\\" ascii wide
+        
+    <span class="yara-keyword">condition</span>:
+        <span class="yara-comment">// No MZ header check - this isn't a file</span>
+        2 of them
+}</code></pre>
+            </div>
+
+            <h3>Live Memory Forensics with YARA</h3>
+            <p>Tools that combine YARA with live memory analysis:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tool</th>
+                        <th>Platform</th>
+                        <th>Use Case</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>Velociraptor</code></td>
+                        <td>Cross-platform</td>
+                        <td>Enterprise DFIR with YARA hunts</td>
+                    </tr>
+                    <tr>
+                        <td><code>LOKI</code></td>
+                        <td>Windows/Linux</td>
+                        <td>IOC and YARA scanner</td>
+                    </tr>
+                    <tr>
+                        <td><code>THOR</code></td>
+                        <td>Windows/Linux</td>
+                        <td>Commercial APT scanner</td>
+                    </tr>
+                    <tr>
+                        <td><code>CrowdResponse</code></td>
+                        <td>Windows</td>
+                        <td>CrowdStrike's free YARA scanner</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 id="yara-x">2. YARA-X: The Next Generation</h2>
+
+            <p>YARA-X is a complete rewrite of YARA in Rust by VirusTotal. It's faster, more memory-efficient, and has
+                better error handling. If you're doing high-volume scanning, YARA-X is the future.</p>
+
+            <h3>Key Improvements</h3>
+            <ul>
+                <li><strong>Performance:</strong> 2-5x faster scanning in most cases</li>
+                <li><strong>Memory efficiency:</strong> Better handling of large rule sets</li>
+                <li><strong>Better errors:</strong> More descriptive error messages with line numbers</li>
+                <li><strong>Python bindings:</strong> Native yara-x-py package</li>
+                <li><strong>Wasm support:</strong> Run YARA in the browser</li>
+            </ul>
+
+            <h3>Installation</h3>
+
+            <pre><code><span class="yara-comment"># Install with cargo (Rust package manager)</span>
+cargo install yara-x
+
+<span class="yara-comment"># Python bindings</span>
+pip install yara-x
+
+<span class="yara-comment"># Verify installation</span>
+yr --version</code></pre>
+
+            <h3>YARA-X Command Line</h3>
+
+            <pre><code><span class="yara-comment"># Basic scan (uses 'yr' instead of 'yara')</span>
+yr scan rule.yar sample.exe
+
+<span class="yara-comment"># Compile rules to binary format</span>
+yr compile rules/*.yar -o compiled.yarc
+
+<span class="yara-comment"># Scan with compiled rules</span>
+yr scan -c compiled.yarc sample.exe
+
+<span class="yara-comment"># Verbose output with matching strings</span>
+yr scan --print-strings rule.yar sample.exe</code></pre>
+
+            <h3>Python Integration</h3>
+
+            <pre><code><span class="yara-keyword">import</span> yara_x
+
+<span class="yara-comment"># Compile rules from source</span>
+rules = yara_x.compile('''
+    rule test {
+        strings:
+            $a = "malware"
+        condition:
+            $a
+    }
+''')
+
+<span class="yara-comment"># Scan file</span>
+results = rules.scan_file('/path/to/file')
+for match in results:
+    print(f"Matched: {match.identifier}")
+    
+<span class="yara-comment"># Scan bytes</span>
+data = open('/path/to/file', 'rb').read()
+results = rules.scan(data)</code></pre>
+
+            <div class="info-box">
+                <strong><i class="fas fa-lightbulb"></i> Migration Note:</strong>
+                <p style="margin-top: 0.5rem; margin-bottom: 0;">YARA-X is mostly compatible with existing rules, but
+                    some edge cases may differ. Test your rules thoroughly before migrating production workloads. Use
+                    <code>yr check rules.yar</code> to validate syntax.
+                </p>
+            </div>
+
+            <h2 id="yargen">3. Automated Rule Generation with yarGen</h2>
+
+            <p>Writing every rule by hand is tedious. yarGen by Florian Roth automatically generates YARA rules from
+                malware samples by identifying unique strings and opcodes that don't appear in legitimate software.</p>
+
+            <h3>How yarGen Works</h3>
+            <ol>
+                <li>Extracts all strings from your malware samples</li>
+                <li>Compares against a database of "goodware" strings (known clean files)</li>
+                <li>Identifies unique malware-specific strings</li>
+                <li>Generates rules with appropriate conditions</li>
+            </ol>
+
+            <h3>Installation and Setup</h3>
+
+            <pre><code><span class="yara-comment"># Clone the repository</span>
+git clone https://github.com/Neo23x0/yarGen.git
+cd yarGen
+
+<span class="yara-comment"># Install dependencies</span>
+pip install -r requirements.txt
+
+<span class="yara-comment"># Download string databases (required first run)</span>
+python yarGen.py --update</code></pre>
+
+            <h3>Basic Usage</h3>
+
+            <pre><code><span class="yara-comment"># Generate rules from a single sample</span>
+python yarGen.py -m /path/to/malware.exe
+
+<span class="yara-comment"># Process entire directory</span>
+python yarGen.py -m /path/to/samples/ -o output_rules.yar
+
+<span class="yara-comment"># Exclude common strings (reduce false positives)</span>
+python yarGen.py -m /samples/ --excludegood
+
+<span class="yara-comment"># Generate opcodes in addition to strings</span>
+python yarGen.py -m /samples/ --opcodes</code></pre>
+
+            <h3>Tuning yarGen Output</h3>
+
+            <pre><code><span class="yara-comment"># Increase minimum string length (default: 8)</span>
+python yarGen.py -m /samples/ -s 12
+
+<span class="yara-comment"># Maximum strings per rule (default: 20)</span>
+python yarGen.py -m /samples/ -z 30
+
+<span class="yara-comment"># Generate super rules (combine common patterns)</span>
+python yarGen.py -m /samples/ -g
+
+<span class="yara-comment"># Add metadata prefix</span>
+python yarGen.py -m /samples/ -p "APTGROUP_"</code></pre>
+
+            <div class="warning-box">
+                <strong><i class="fas fa-exclamation-triangle"></i> Quality Warning:</strong>
+                yarGen rules are a starting point, not production-ready output. Always review and test generated rules.
+                Remove overly generic strings and add filesize limits.
+            </div>
+
+            <h2 id="performance">4. Performance Optimization</h2>
+
+            <p>When you're scanning millions of files or processing terabytes of data, rule performance matters. A
+                poorly written rule can be 100x slower than an optimized one.</p>
+
+            <h3>Why Some Rules Are Slow</h3>
+            <ul>
+                <li><strong>Regular expressions:</strong> Backtracking regex can be exponentially slow</li>
+                <li><strong>Large wildcards:</strong> <code>[0-1000]</code> makes the engine work hard</li>
+                <li><strong>Too many alternatives:</strong> <code>(a|b|c|d|e|f|g...)</code> in hex patterns</li>
+                <li><strong>No anchors:</strong> Patterns that can match anywhere vs specific offsets</li>
+                <li><strong>Condition order:</strong> Expensive checks run before cheap ones</li>
+            </ul>
+
+            <h3>Optimization Techniques</h3>
+
+            <pre><code><span class="yara-comment">// SLOW: Regex with backtracking</span>
+$slow = /.*malware.*config.*/
+
+<span class="yara-comment">// FAST: Specific literal strings</span>
+$fast1 = "malware"
+$fast2 = "config"
+
+<span class="yara-comment">// SLOW: Large jump range</span>
+$slow_hex = { 4D 5A [0-10000] 50 45 }
+
+<span class="yara-comment">// FAST: Bounded range</span>
+$fast_hex = { 4D 5A [60-512] 50 45 00 00 }</code></pre>
+
+            <h3>Condition Ordering</h3>
+            <p>Put fast, eliminating conditions first:</p>
+
+            <pre><code><span class="yara-keyword">condition</span>:
+    <span class="yara-comment">// FAST checks first</span>
+    filesize < 5MB and
+    uint16(0) == 0x5A4D and          <span class="yara-comment">// MZ check (fast)</span>
+    
+    <span class="yara-comment">// SLOW checks last (only run if fast checks pass)</span>
+    pe.is_pe and                     <span class="yara-comment">// Module call</span>
+    3 of ($s*) and                   <span class="yara-comment">// String matching</span>
+    for any section in pe.sections : <span class="yara-comment">// Iterator (slowest)</span>
+        (section.entropy > 7)</code></pre>
+
+            <h3>Profiling Your Rules</h3>
+
+            <pre><code><span class="yara-comment"># Get timing information</span>
+time yara -r rules/ /path/to/samples/ 2>&1 | head -20
+
+<span class="yara-comment"># Use YARA's built-in profiling (compile with --enable-profiling)</span>
+yara --print-stats rules.yar samples/
+
+<span class="yara-comment"># With YARA-X, get detailed metrics</span>
+yr scan --print-stats rule.yar sample.exe</code></pre>
+
+            <div class="success-box">
+                <strong><i class="fas fa-check-circle"></i> Performance Best Practices:</strong>
+                <ul style="margin-top: 0.5rem; margin-bottom: 0;">
+                    <li>Always add <code>filesize</code> limits</li>
+                    <li>Use literal strings over regex when possible</li>
+                    <li>Bound hex wildcards (use <code>[0-100]</code> not <code>[0-]</code>)</li>
+                    <li>Put cheapest conditions first</li>
+                    <li>Compile rules for repeated scanning: <code>yarac rules.yar compiled.yarc</code></li>
+                </ul>
+            </div>
+
+            <h2 id="pe-analysis">5. Advanced PE Analysis</h2>
+
+            <p>The PE module is where YARA really shines for Windows malware. Beyond basic imports, you can analyze rich
+                headers, section characteristics, timestamps, and more.</p>
+
+            <h3>Import Hash (Imphash)</h3>
+            <p>Imphash identifies samples by their import table structure:</p>
+
+            <pre><code><span class="yara-keyword">import</span> "pe"
+<span class="yara-keyword">import</span> "hash"
+
+<span class="yara-keyword">rule</span> Emotet_Imphash {
+    <span class="yara-keyword">meta</span>:
+        description = "Emotet variants by imphash"
+        
+    <span class="yara-keyword">condition</span>:
+        pe.is_pe and
+        pe.imphash() == "f34d5f2d4577ed6d9ceec516c1f5a744"
+}</code></pre>
+
+            <h3>Rich Header Analysis</h3>
+            <p>The Rich header contains compiler info - useful for attribution:</p>
+
+            <pre><code><span class="yara-keyword">rule</span> APT_RichHeader_Signature {
+    <span class="yara-keyword">meta</span>:
+        description = "Detects specific compiler toolchain"
+        
+    <span class="yara-keyword">condition</span>:
+        pe.is_pe and
+        pe.rich_signature.toolid(0x0093, 0x7809) and  <span class="yara-comment">// VS 2015</span>
+        pe.rich_signature.toolid(0x00aa, 0x7809)      <span class="yara-comment">// Linker</span>
+}</code></pre>
+
+            <h3>Section Analysis</h3>
+
+            <pre><code><span class="yara-keyword">import</span> "pe"
+<span class="yara-keyword">import</span> "math"
+
+<span class="yara-keyword">rule</span> Packed_High_Entropy_Sections {
+    <span class="yara-keyword">meta</span>:
+        description = "PE with high entropy sections (likely packed)"
+        
+    <span class="yara-keyword">condition</span>:
+        pe.is_pe and
+        for any section in pe.sections : (
+            math.entropy(section.raw_data_offset, section.raw_data_size) > 7.5
+        )
+}
+
+<span class="yara-keyword">rule</span> Suspicious_Section_Names {
+    <span class="yara-keyword">condition</span>:
+        pe.is_pe and
+        for any section in pe.sections : (
+            section.name == ".ndata" or
+            section.name == "UPX0" or
+            section.name == ".themida"
+        )
+}</code></pre>
+
+            <h3>Export Analysis</h3>
+
+            <pre><code><span class="yara-keyword">rule</span> DLL_Suspicious_Exports {
+    <span class="yara-keyword">condition</span>:
+        pe.is_dll() and
+        (
+            pe.exports("ServiceMain") or
+            pe.exports("DllInstall") or
+            pe.exports("StartW")
+        )
+}</code></pre>
+            @string1[1] < 0x100 <span class="yara-comment">// First occurrence before 0x100</span>
+                @string1[2] - @string1[1] < 50 <span class="yara-comment">// Occurrences within 50 bytes</span></code>
+                    </pre>
+
+                    <h2 id="modifiers">4. String Modifiers</h2>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Modifier</th>
+                                <th>Description</th>
+                                <th>Use Case</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>ascii</code></td>
+                                <td>ASCII encoding</td>
+                                <td>Default for text strings</td>
+                            </tr>
+                            <tr>
+                                <td><code>wide</code></td>
+                                <td>UTF-16LE encoding</td>
+                                <td>Windows Unicode strings</td>
+                            </tr>
+                            <tr>
+                                <td><code>nocase</code></td>
+                                <td>Case insensitive</td>
+                                <td>Commands, paths</td>
+                            </tr>
+                            <tr>
+                                <td><code>fullword</code></td>
+                                <td>Delimited word</td>
+                                <td>Avoid partial matches</td>
+                            </tr>
+                            <tr>
+                                <td><code>xor</code></td>
+                                <td>XOR encoded</td>
+                                <td>Obfuscated strings</td>
+                            </tr>
+                            <tr>
+                                <td><code>base64</code></td>
+                                <td>Base64 encoded</td>
+                                <td>Encoded payloads</td>
+                            </tr>
+                            <tr>
+                                <td><code>private</code></td>
+                                <td>Don't report string</td>
+                                <td>Helper patterns</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>XOR Modifier (YARA 4.0+)</h3>
+                    <p>Essential for detecting obfuscated malware:</p>
+
+                    <pre><code><span class="yara-keyword">strings</span>:
+    <span class="yara-comment">// Match "cmd.exe" XORed with any single byte</span>
+    $xor1 = "cmd.exe" <span class="yara-keyword">xor</span>
+    
+    <span class="yara-comment">// XOR with specific range</span>
+    $xor2 = "powershell" <span class="yara-keyword">xor(0x01-0xff)</span>
+    
+    <span class="yara-comment">// Combined with wide</span>
+    $xor3 = "CreateProcess" <span class="yara-keyword">wide xor</span></code></pre>
+
+                    <h2 id="modules">5. YARA Modules</h2>
+
+                    <p>YARA modules extend functionality for specific file types and analysis.</p>
+
+                    <h3>PE Module</h3>
+                    <p>For Windows executable analysis:</p>
+
+                    <pre><code><span class="yara-keyword">import</span> "pe"
+
+<span class="yara-keyword">rule</span> SuspiciousPE {
+    <span class="yara-keyword">condition</span>:
+        pe.is_pe and
+        pe.number_of_sections > 7 and
+        pe.entry_point_raw > pe.sections[pe.number_of_sections-1].raw_data_offset and
+        pe.characteristics & pe.DLL
+}</code></pre>
+
+                    <h3>Common PE Checks</h3>
+
+                    <pre><code><span class="yara-comment">// Import checks</span>
+pe.imports("kernel32.dll", "VirtualAllocEx")
+pe.imports("ntdll.dll", "NtCreateThreadEx")
+
+<span class="yara-comment">// Resource checks</span>
+pe.number_of_resources > 5
+pe.resources[0].type == pe.RESOURCE_TYPE_ICON
+
+<span class="yara-comment">// Section checks</span>
+pe.sections[0].name == ".text"
+pe.sections[0].characteristics & pe.SECTION_MEM_EXECUTE
+
+<span class="yara-comment">// Compiler/linker stamps</span>
+pe.linker_version.major >= 14  <span class="yara-comment">// VS2015+</span>
+pe.timestamp > 1609459200      <span class="yara-comment">// After 2021</span></code></pre>
+
+                    <h3>Hash Module</h3>
+
+                    <pre><code><span class="yara-keyword">import</span> "hash"
+
+<span class="yara-keyword">rule</span> KnownMalwareHash {
+    <span class="yara-keyword">condition</span>:
+        hash.md5(0, filesize) == "e99a18c428cb38d5f260853678922e03" or
+        hash.sha256(0, filesize) == "5994471abb01112afcc..."
+}</code></pre>
+
+                    <h3>Math Module</h3>
+                    <p>For entropy analysis (detecting packed/encrypted sections):</p>
+
+                    <pre><code><span class="yara-keyword">import</span> "math"
+
+<span class="yara-keyword">rule</span> HighEntropySection {
+    <span class="yara-keyword">condition</span>:
+        math.entropy(0, filesize) > 7.5  <span class="yara-comment">// Likely packed</span>
+}</code></pre>
+
+                    <h2 id="real-world">6. Real-World Rule Examples</h2>
+
+                    <h3>Example 1: Cobalt Strike Beacon Detection</h3>
+
+                    <div class="rule-box">
+                        <h5><i class="fas fa-crosshairs"></i> Cobalt Strike Beacon</h5>
+                        <pre><code><span class="yara-keyword">rule</span> CobaltStrike_Beacon_2026 {
+    <span class="yara-keyword">meta</span>:
+        author = "TheHGTech"
+        description = "Detects Cobalt Strike Beacon payload"
+        date = "2026-01-09"
+        mitre_attack = "T1071.001, S0154"
+        
+    <span class="yara-keyword">strings</span>:
+        <span class="yara-comment">// Beacon config markers</span>
+        $config1 = { 00 01 00 01 00 02 ?? ?? 00 02 00 01 00 02 }
+        $config2 = { 69 68 69 68 69 6B ?? ?? 69 6B 69 68 69 6B }
+        
+        <span class="yara-comment">// Common strings</span>
+        $s1 = "%s (admin)" ascii wide
+        $s2 = "beacon.dll" ascii
+        $s3 = "ReflectiveLoader" ascii
+        $s4 = "%s as %s\\%s: %d" ascii
+        
+        <span class="yara-comment">// HTTP config patterns</span>
+        $http1 = "/submit.php" ascii
+        $http2 = "Cookie: " ascii wide
+        
+    <span class="yara-keyword">condition</span>:
+        filesize < 5MB and
+        (any of ($config*) or 3 of ($s*)) and
+        any of ($http*)
+}</code></pre>
+                    </div>
+
+                    <h3>Example 2: PowerShell Downloader</h3>
+
+                    <div class="rule-box">
+                        <h5><i class="fas fa-crosshairs"></i> PowerShell Download Cradle</h5>
+                        <pre><code><span class="yara-keyword">rule</span> PowerShell_Downloader {
+    <span class="yara-keyword">meta</span>:
+        author = "TheHGTech"
+        description = "Detects PowerShell download patterns"
+        mitre_attack = "T1059.001"
+        
+    <span class="yara-keyword">strings</span>:
+        <span class="yara-comment">// Download methods</span>
+        $dl1 = "DownloadString" ascii wide nocase
+        $dl2 = "DownloadFile" ascii wide nocase
+        $dl3 = "Invoke-WebRequest" ascii wide nocase
+        $dl4 = "wget " ascii wide nocase
+        $dl5 = "curl " ascii wide nocase
+        $dl6 = "Net.WebClient" ascii wide nocase
+        $dl7 = "Start-BitsTransfer" ascii wide nocase
+        
+        <span class="yara-comment">// Execution methods</span>
+        $ex1 = "Invoke-Expression" ascii wide nocase
+        $ex2 = "IEX(" ascii wide nocase
+        $ex3 = "IEX (" ascii wide nocase
+        $ex4 = "[scriptblock]::Create" ascii wide nocase
+        
+        <span class="yara-comment">// Obfuscation indicators</span>
+        $ob1 = "-enc " ascii wide nocase
+        $ob2 = "-e " ascii wide nocase
+        $ob3 = "FromBase64String" ascii wide nocase
+        
+    <span class="yara-keyword">condition</span>:
+        filesize < 500KB and
+        (any of ($dl*) and any of ($ex*)) or
+        (any of ($dl*) and any of ($ob*))
+}</code></pre>
+                    </div>
+
+                    <h3>Example 3: Ransomware Generic Detection</h3>
+
+                    <div class="rule-box">
+                        <h5><i class="fas fa-crosshairs"></i> Ransomware Indicators</h5>
+                        <pre><code><span class="yara-keyword">import</span> "pe"
+
+<span class="yara-keyword">rule</span> Ransomware_Indicators {
+    <span class="yara-keyword">meta</span>:
+        author = "TheHGTech"
+        description = "Generic ransomware behavior indicators"
+        mitre_attack = "T1486"
+        
+    <span class="yara-keyword">strings</span>:
+        <span class="yara-comment">// Ransom note patterns</span>
+        $note1 = "Your files have been encrypted" ascii wide nocase
+        $note2 = "bitcoin" ascii wide nocase
+        $note3 = "decrypt" ascii wide nocase
+        $note4 = "ransom" ascii wide nocase
+        $note5 = ".onion" ascii wide nocase
+        
+        <span class="yara-comment">// Crypto API usage</span>
+        $api1 = "CryptEncrypt" ascii
+        $api2 = "CryptGenKey" ascii
+        $api3 = "CryptImportKey" ascii
+        $api4 = "CryptAcquireContext" ascii
+        
+        <span class="yara-comment">// File operations</span>
+        $file1 = "vssadmin delete shadows" ascii wide nocase
+        $file2 = "bcdedit /set" ascii wide nocase
+        $file3 = "wmic shadowcopy delete" ascii wide nocase
+        
+    <span class="yara-keyword">condition</span>:
+        pe.is_pe and
+        filesize < 10MB and
+        (2 of ($note*) and 2 of ($api*)) or
+        (any of ($file*) and 2 of ($api*))
+}</code></pre>
+                    </div>
+
+                    <h2 id="best-practices">7. Best Practices</h2>
+
+                    <div class="success-box">
+                        <strong><i class="fas fa-check-circle"></i> YARA Rule Writing Best Practices:</strong>
+                        <ol style="margin-top: 0.5rem; margin-bottom: 0;">
+                            <li><strong>Test Extensively:</strong> Always test on clean files to avoid false positives
+                            </li>
+                            <li><strong>Use Multiple Strings:</strong> Single string rules are fragile; require multiple
+                                indicators</li>
+                            <li><strong>Add Filesize Limits:</strong> Prevent scanning huge files unnecessarily</li>
+                            <li><strong>Document Everything:</strong> Include samples, references, and MITRE ATT&CK
+                                mappings
+                            </li>
+                            <li><strong>Use Specific Patterns:</strong> Avoid overly generic strings like "error" or
+                                "http"</li>
+                            <li><strong>Consider Performance:</strong> Put fast checks (filesize) before slow ones
+                                (regex)</li>
+                            <li><strong>Version Your Rules:</strong> Track changes and update dates</li>
+                            <li><strong>Use Private Strings:</strong> Helper patterns that shouldn't trigger alone</li>
+                        </ol>
+                    </div>
+
+                    <h3>Avoiding False Positives</h3>
+
+                    <pre><code><span class="yara-keyword">rule</span> GoodRule_LowFP {
+    <span class="yara-keyword">meta</span>:
+        description = "Low false positive example"
+        
+    <span class="yara-keyword">strings</span>:
+        <span class="yara-comment">// Specific unique strings, not generic</span>
+        $unique1 = "MyMalware_Config_v2" ascii
+        $unique2 = { 4D 79 4D 61 6C 77 61 72 65 }
+        
+        <span class="yara-comment">// Multiple indicators required</span>
+        $api1 = "VirtualAllocEx" ascii
+        $api2 = "WriteProcessMemory" ascii
+        $api3 = "CreateRemoteThread" ascii
+        
+    <span class="yara-keyword">condition</span>:
+        filesize < 2MB and
+        filesize > 10KB and  <span class="yara-comment">// Not too small</span>
+        (any of ($unique*)) and
+        (2 of ($api*))       <span class="yara-comment">// Require multiple</span>
+}</code></pre>
+
+                    <h2 id="integration">8. Tools and Integration</h2>
+
+                    <h3>Command-Line Usage</h3>
+
+                    <pre><code><span class="yara-comment"># Basic scan</span>
+yara rule.yar suspicious_file.exe
+
+<span class="yara-comment"># Scan directory recursively</span>
+yara -r rules/ /path/to/samples/
+
+<span class="yara-comment"># Show matching strings</span>
+yara -s rule.yar sample.exe
+
+<span class="yara-comment"># Multiple rule files</span>
+yara rules/*.yar sample.exe
+
+<span class="yara-comment"># Compile rules for faster loading</span>
+yarac rules.yar compiled.yarc
+yara -C compiled.yarc sample.exe
+
+<span class="yara-comment"># Scan process memory (Linux)</span>
+yara -p rule.yar 1234</code></pre>
+
+                    <h3>VirusTotal Integration</h3>
+                    <p>With VT Premium, you can use YARA for hunting across their malware corpus:</p>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Feature</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Livehunt</td>
+                                <td>Scan new submissions in real-time</td>
+                            </tr>
+                            <tr>
+                                <td>Retrohunt</td>
+                                <td>Search historical samples (90 days)</td>
+                            </tr>
+                            <tr>
+                                <td>Intelligence</td>
+                                <td>Pivot from samples to related IOCs</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>Security Tool Integration</h3>
+                    <ul>
+                        <li><strong>YARA-X:</strong> Modern Rust rewrite with better performance</li>
+                        <li><strong>yarGen:</strong> Automatic rule generation from samples</li>
+                        <li><strong>LOKI/THOR:</strong> IOC and YARA scanners</li>
+                        <li><strong>Velociraptor:</strong> YARA scanning in DFIR workflows</li>
+                        <li><strong>MISP:</strong> Share YARA rules with threat intel platforms</li>
+                        <li><strong>ClamAV:</strong> YARA rules as custom signatures</li>
+                    </ul>
+
+                    <h2 id="hunting">9. Threat Hunting with YARA</h2>
+
+                    <p>YARA excels at proactive threat hunting. Here's a workflow for hunting unknown threats:</p>
+
+                    <h3>Hunting Workflow</h3>
+                    <ol>
+                        <li><strong>Form Hypothesis:</strong> "Attackers may use encoded PowerShell in documents"</li>
+                        <li><strong>Write YARA Rule:</strong> Pattern for Office docs with Base64 PowerShell</li>
+                        <li><strong>Scan Environment:</strong> Run against network shares, email attachments</li>
+                        <li><strong>Triage Results:</strong> Investigate matches, eliminate false positives</li>
+                        <li><strong>Refine Rule:</strong> Improve based on findings</li>
+                        <li><strong>Operationalize:</strong> Add to EDR, email gateway, or continuous scanning</li>
+                    </ol>
+
+                    <div class="rule-box">
+                        <h5><i class="fas fa-crosshairs"></i> Hunt: Malicious Office Documents</h5>
+                        <pre><code><span class="yara-keyword">rule</span> Hunt_MaliciousOfficeDoc {
+    <span class="yara-keyword">meta</span>:
+        author = "TheHGTech"
+        description = "Hunt for Office docs with suspicious content"
+        
+    <span class="yara-keyword">strings</span>:
+        <span class="yara-comment">// Office magic bytes</span>
+        $office_ole = { D0 CF 11 E0 A1 B1 1A E1 }
+        $office_ooxml = "PK"
+        
+        <span class="yara-comment">// Suspicious VBA patterns</span>
+        $vba1 = "AutoOpen" ascii wide nocase
+        $vba2 = "Document_Open" ascii wide nocase
+        $vba3 = "Shell(" ascii wide nocase
+        $vba4 = "WScript.Shell" ascii wide nocase
+        $vba5 = "powershell" ascii wide nocase
+        $vba6 = "cmd /c" ascii wide nocase
+        
+        <span class="yara-comment">// Encoded content</span>
+        $b64 = /[A-Za-z0-9+\/]{100,}={0,2}/ ascii wide
+        
+    <span class="yara-keyword">condition</span>:
+        ($office_ole at 0 or $office_ooxml at 0) and
+        filesize < 10MB and
+        (2 of ($vba*) or ($b64 and any of ($vba*)))
+}</code></pre>
+                    </div>
+
+                    <h3>YARA Rule Sources</h3>
+                    <p>Quality YARA rules from the community:</p>
+                    <ul>
+                        <li><strong>YARA-Rules:</strong> <a href="https://github.com/Yara-Rules/rules" target="_blank"
+                                style="color: var(--accent-cyan);">github.com/Yara-Rules/rules</a></li>
+                        <li><strong>Florian Roth's Signature Base:</strong> <a
+                                href="https://github.com/Neo23x0/signature-base" target="_blank"
+                                style="color: var(--accent-cyan);">github.com/Neo23x0/signature-base</a></li>
+                        <li><strong>Malpedia:</strong> <a href="https://malpedia.caad.fkie.fraunhofer.de/"
+                                target="_blank" style="color: var(--accent-cyan);">malpedia.caad.fkie.fraunhofer.de</a>
+                        </li>
+                        <li><strong>ReversingLabs:</strong> Curated YARA rules</li>
+                        <li><strong>Elastic Security:</strong> Detection rules with YARA</li>
+                    </ul>
+
+                    <div class="success-box">
+                        <strong><i class="fas fa-check-circle"></i> Advanced YARA Mastery Checklist:</strong>
+                        <ul style="margin-top: 0.5rem; margin-bottom: 0;">
+                            <li>Scan process memory, not just files</li>
+                            <li>Use YARA-X for high-performance scanning</li>
+                            <li>Automate rule generation with yarGen</li>
+                            <li>Optimize rules for condition ordering and bounded patterns</li>
+                            <li>Leverage PE module for imphash, rich header, and section analysis</li>
+                            <li>Integrate with Velociraptor, LOKI, and DFIR tools</li>
+                            <li>Continuously test and reduce false positives</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-box"
+                        style="margin-top: 3rem; background: linear-gradient(135deg, rgba(0, 217, 255, 0.1), rgba(168, 85, 247, 0.05));">
+                        <strong><i class="fas fa-book"></i> Need the Fundamentals?</strong>
+                        <p style="margin-top: 0.5rem; margin-bottom: 0;">If any concepts in this guide were unclear,
+                            revisit our <a href="/guides/yara-rules-malware-detection.html"
+                                style="color: var(--accent-cyan); font-weight: 600;">YARA Rules Fundamentals</a> guide
+                            for a solid foundation on YARA syntax, string types, conditions, and modules.</p>
+                    </div>
+
+                    <p
+                        style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--border); color: var(--text-muted);">
+                        <strong>Author:</strong> TheHGTech Security Team<br>
+                        <strong>Last Updated:</strong> January 2026<br>
+                        <strong>Reading Time:</strong> 35 minutes
+                    </p>
+
+                    <a href="/guides/" class="btn-back"><i class="fas fa-arrow-left"></i> Back to Guides</a>
+        </article>
+
+        <!-- Interaction Bar -->
+        <div class="interaction-bar">
+            <div class="like-section">
+                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                    <i class="far fa-heart"></i> <span id="likeText">Like this guide</span>
+                </button>
+            </div>
+            <div class="action-buttons">
+                <div class="share-buttons">
+                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"
+                        aria-label="Share on Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"
+                        aria-label="Share on LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link">
+                        <i class="fas fa-link"></i>
+                    </button>
+                </div>
+                <div class="button-separator"></div>
+                <button onclick="printArticle()" class="print-btn" title="Print Guide" aria-label="Print Guide">
+                    <i class="fas fa-print"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 TheHGTech. All rights reserved.</p>
+    </footer>
+
+    <script src="/header.js"></script>
+    <script src="/interaction-bar.js?v=20251207-0041"></script>
+</body>
+
+</html>

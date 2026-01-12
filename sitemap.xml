@@ -380,6 +380,18 @@
 
   <!-- ========== SECURITY GUIDES - HIGH VALUE LONG-TAIL KEYWORDS ========== -->
   
+  <!-- NEW GUIDES - January 12, 2026 -->
+  <url>
+    <loc>https://thehgtech.com/guides/yara-rules-advanced.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2026-01-12</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/guides/yara-rules-advanced.png</image:loc>
+      <image:title>Advanced YARA Techniques: Expert Malware Detection Guide</image:title>
+    </image:image>
+  </url>
+
   <!-- NEW GUIDES - January 9, 2026 -->
   <url>
     <loc>https://thehgtech.com/guides/yara-rules-malware-detection.html</loc>
