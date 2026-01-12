@@ -69,6 +69,29 @@
   
   <!-- ========== ARTICLES - HIGH TRAFFIC POTENTIAL ========== -->
   
+  <!-- January 12, 2026 Articles -->
+  <url>
+    <loc>https://thehgtech.com/articles/crowdstrike-sgnl-acquisition-identity-security-2026.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <lastmod>2026-01-12</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/crowdstrike-sgnl-acquisition-2026.png</image:loc>
+      <image:title>CrowdStrike Acquires SGNL for $740M - Identity Security Analysis</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/ledger-global-e-supply-chain-breach-2026.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <lastmod>2026-01-12</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/ledger-global-e-supply-chain-breach-2026.png</image:loc>
+      <image:title>Ledger Supply Chain Breach via Global-e Payment Processor</image:title>
+    </image:image>
+  </url>
+
   <!-- January 8, 2026 Articles -->
   <url>
     <loc>https://thehgtech.com/articles/n8n-ni8mare-critical-vulnerability-2026.html</loc>
