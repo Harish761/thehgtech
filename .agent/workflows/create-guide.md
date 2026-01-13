@@ -247,17 +247,86 @@ Every guide MUST include the interaction bar at the bottom of the content.
 3. Create image in `/images/guides/[guide-name].png`
 4. Commit and push to GitHub
 
+## Guide Card Styling on Index Page
+
+### DO - Use Subtle Borders
+```html
+<div class="guide-card" style="border: 1px solid var(--border);">
+```
+
+### DO NOT - Use Neon Glows or Colored Borders
+```html
+<!-- NEVER DO THIS - No neon glow effects -->
+<div class="guide-card" style="border: 2px solid #8b5cf6; box-shadow: 0 0 15px rgba(139, 92, 246, 0.2);">
+```
+
+**Reason**: Neon glow effects create visual inconsistency and distract from the content. All guide cards should have a clean, consistent design with subtle borders only.
+
+### Badge Styling
+For "New" badges on guide cards, use a gradient badge without affecting the card border:
+```html
+<span class="guide-tag" 
+    style="background: linear-gradient(135deg, #8b5cf6, #a78bfa); color: white; border: none; font-weight: 600;">
+    <i class="fas fa-star"></i> New
+</span>
+```
+
+After guides are no longer "new" (after ~2 weeks), change to category-specific badges:
+```html
+<span class="guide-tag" 
+    style="background: rgba(139, 92, 246, 0.15); color: #a78bfa; border: 1px solid #8b5cf6; font-weight: 600;">
+    <i class="fas fa-robot"></i> AI Security
+</span>
+```
+
+## Featured Image Generation Guidelines
+
+### Image Location
+- Path: `/images/guides/[guide-name].png`
+- Naming: Must match the guide HTML filename (e.g., `llm-security-prompt-injection.png`)
+
+### Required Visual Style: "Cartoon Instructor"
+All guide featured images MUST follow this consistent style:
+
+**Image prompt template:**
+```
+A professional cybersecurity educational illustration featuring a cartoon character 
+who is styled as Harish G (Indian male, glasses, dark blue polo shirt or tech-themed 
+casual attire, friendly expression, minimal cartoon style) standing at a whiteboard 
+or futuristic display.
+
+The whiteboard/display shows: [SPECIFIC TOPIC ELEMENTS]
+
+Background: Dark gradient (#0a0a0a to #1a1a2e) with subtle tech patterns.
+Style: Modern, clean, corporate-friendly but approachable.
+Colors: Use accent colors from the guide theme - cyan (#00D9FF), purple (#8b5cf6), 
+red (#FF3D3D), or green (#10b981) as appropriate for the topic.
+NO text on the image.
+```
+
+### Topic-Specific Elements to Show on Whiteboard:
+- **AI/LLM Security**: Robot icons, neural networks, prompt bubbles, shield icons
+- **Compliance (ISO, SOC2)**: Checkmarks, certificate badges, audit symbols
+- **Detection (YARA, Sigma)**: Code patterns, magnifying glass, alert icons
+- **Threat Intelligence**: Maps, threat actor symbols, IOC patterns
+- **Incident Response**: Timeline charts, fire/alert symbols, playbook steps
+- **Cloud Security**: Cloud icons, lock symbols, infrastructure diagrams
+
+### Image Generation Tool
+Use the `generate_image` tool with the prompt template above, customized for the specific guide topic. Save directly to `/images/guides/[guide-name].png`.
+
 ## Guide Ordering Rules
 **Always maintain chronological order (newest first):**
 ```
-Dec 17, 2025  ← newest first
-Dec 13, 2025
-Dec 5, 2025
-Dec 4, 2025
-Dec 2, 2025
-Nov 29, 2025
-Nov 27, 2025
-November 2025 ← general month last
+Jan 13, 2026  ← newest first
+Jan 12, 2026
+Jan 9, 2026
+Jan 1, 2026
+Dec 31, 2025
+Dec 23, 2025
+Dec 17, 2025
+...older dates...
 --------------
 Coming Soon   ← at the very end
 ```
+
