@@ -5,71 +5,97 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Jan 13 2026",
+            "headline": "Target Source Code Leaked—Accelerated Git Lockdown Initiated",
+            "title": "Target Confirms Source Code Leak, Tightens Git Server Security",
+            "content": "Target has confirmed that leaked source code samples posted by a threat actor are genuine, impacting its internal systems. In response, the company implemented an &quot;accelerated&quot; lockdown of its Git server, now requiring VPN access for enhanced security. This measure was taken a day after BleepingComputer contacted the retailer about the breach. The leak underscores the increasing risk of source code exposure, which can facilitate further attacks if not swiftly addressed. Target employees, both current and former, have verified the authenticity of the leaked code. Organizations are advised to review their source code access protocols to prevent similar incidents.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/target-employees-confirm-leaked-code-after-accelerated-git-lockdown/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 13 2026",
+            "headline": "Broadcom WiFi Bug—Single Frame Knocks Networks Offline",
+            "title": "High-Severity Broadcom WiFi Flaw Enables Denial-of-Service Attacks",
+            "content": "A critical vulnerability in Broadcom WiFi chipset software allows attackers within radio range to disrupt wireless networks with a single malicious frame. This denial-of-service flaw, identified by the Cybersecurity Research team, requires routers to be manually rebooted to restore connectivity. The vulnerability affects a wide range of devices utilizing Broadcom chipsets, posing significant risks to businesses and consumers relying on wireless networks. Users and administrators should monitor for updates and apply patches as they become available to mitigate this threat. The disclosure highlights the ongoing challenge of securing wireless communication technologies.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4116064/high-severity-bug-in-broadcom-software-enables-easy-wifi-denial-of-service.html",
+            "relatedResources": [
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Jan 13 2026",
+            "headline": "iOS 26+ Urgently Needed—Active Exploits Target iPhones",
+            "title": "Apple Urges iPhone Users to Update to iOS 26+ Amid Exploits",
+            "content": "Apple has confirmed active exploitation of vulnerabilities affecting iPhones, with full protections available only on devices running iOS 26 or later, featuring Liquid Glass technology. Users are strongly advised to update and restart their devices to safeguard against potential threats. The vulnerabilities are being actively exploited, posing risks of unauthorized access and data breaches. This development emphasizes the importance of maintaining up-to-date software to protect against evolving cyber threats. iPhone users should ensure their devices are running the latest iOS version to benefit from enhanced security measures.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/01/why-iphone-users-should-update-and-restart-their-devices-now",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 13 2026",
+            "headline": "SAP Patches Critical Vulnerabilities—SQL Injection, RCE Addressed",
+            "title": "SAP January 2026 Security Updates Fix Critical Vulnerabilities",
+            "content": "SAP&#x27;s latest security updates address 17 vulnerabilities, including four critical ones involving SQL injection, remote code execution (RCE), and code injection. These vulnerabilities could allow attackers to compromise SAP systems, leading to unauthorized access or control. Organizations using SAP software should prioritize applying these patches to mitigate potential risks. The updates reflect SAP&#x27;s ongoing efforts to enhance security and protect its extensive user base from evolving cyber threats. Administrators are urged to review the security notes and implement the recommended patches promptly.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/saps-january-2026-security-updates-patch-critical-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 13 2026",
+            "headline": "VoidLink Malware Targets Linux Cloud Environments—Stealthy Access Achieved",
+            "title": "Advanced Linux VoidLink Malware Threatens Cloud and Container Security",
+            "content": "Researchers have uncovered VoidLink, a sophisticated malware framework designed for long-term, stealthy access to Linux-based cloud environments. Disclosed by Check Point Research, VoidLink targets cloud-native infrastructures, posing significant risks to organizations relying on Linux for cloud and container operations. The malware&#x27;s advanced capabilities enable it to evade detection and maintain persistent access, highlighting the need for enhanced security measures in cloud environments. Organizations should review their security protocols and consider implementing advanced threat detection solutions to protect against such threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/01/new-advanced-linux-voidlink-malware.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 13 2026",
+            "headline": "AI Attacks in 2025—Old Playbook, New Scale",
+            "title": "Lessons from AI-Powered Attacks in 2025: Old Tactics, New Scale",
+            "content": "The security industry is facing challenges as attackers leverage AI to scale traditional attack methods. While defenders focus on emerging threats, attackers optimize basic techniques, exploiting AI&#x27;s capabilities to enhance efficiency and impact. The trend underscores the importance of not only adopting new security technologies but also reinforcing fundamental defenses. Organizations must balance innovation with vigilance, ensuring robust security measures are in place to counteract both new and traditional threats. The evolution of AI in cyber attacks highlights the need for continuous adaptation in cybersecurity strategies.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/01/what-should-we-learn-from-how-attackers.html",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "MITRE ATT&CK Mapping",
+                    "url": "/guides/mitre-attack-mapping.html",
+                    "icon": "fa-map"
+                }
+            ]
+        },
+        {
+            "date": "Jan 13 2026",
+            "headline": "Dutch Port Hacker Jailed—Malware Planted with Inside Help",
+            "title": "Dutch Port Hacker Sentenced for Planting Remote Access Malware",
+            "content": "A 44-year-old hacker has been sentenced to prison for installing remote access malware on a logistics firm&#x27;s systems at a Dutch port, with assistance from employees. The breach compromised the firm&#x27;s operations, highlighting the risks posed by insider threats. This case serves as a reminder of the need for robust security protocols and employee training to prevent such incidents. Organizations should implement stringent access controls and monitoring to detect and deter insider-assisted attacks. The sentencing reflects the serious legal consequences of cybercrime.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/dutch-port-hacker-sentenced-to-prison/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 13 2026",
             "headline": "ISC Stormcast Analyzes Latest Cyber Threats—Stay Informed",
             "title": "ISC Stormcast Highlights Emerging Cyber Threats and Defensive Measures",
             "content": "The SANS Internet Storm Center&#x27;s latest Stormcast podcast for January 13, 2026, provides insights into the current cybersecurity landscape with a focus on emerging threats and vulnerabilities. The podcast, part of a daily series, discusses recent cyber incidents and advises on defensive strategies to mitigate risks. Security professionals can benefit from the expert analysis on evolving attack vectors and the latest security patches. The InfoCON level remains green, indicating a stable threat environment but with ongoing vigilance required. Listeners are encouraged to stay updated with daily briefings to enhance their cybersecurity posture.",
             "source": "SANS Internet Storm Center",
             "sourceUrl": "https://isc.sans.edu/diary/rss/32622",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 12 2026",
-            "headline": "Black Axe Leaders Arrested—Spanish Police Disrupt Crime Ring",
-            "title": "Spanish Police Arrest Black Axe Leaders, Disrupt BEC Crime Network",
-            "content": "Spanish authorities have dismantled a significant portion of the Black Axe criminal organization, arresting its alleged leaders in a coordinated operation across four cities. Known for orchestrating business email compromise (BEC) scams, Black Axe generated billions annually through numerous small-scale frauds. The arrests mark a substantial blow to the group&#x27;s operations, which have targeted businesses worldwide. The crackdown highlights the ongoing international efforts to combat cybercrime syndicates leveraging digital platforms for illicit gains. Organizations are advised to strengthen email security measures to prevent BEC attacks.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/black-axe-disruption-arrests-spain/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 12 2026",
-            "headline": "Dutch Hacker Gets 7 Years—Ports Breach and Extortion",
-            "title": "Dutch Hacker Sentenced for Breaching Rotterdam and Antwerp Ports",
-            "content": "A 44-year-old Dutch hacker has been sentenced to seven years in prison by the Amsterdam Court of Appeal for hacking into the Rotterdam and Antwerp ports. The individual was found guilty of multiple crimes, including computer hacking and attempted extortion, leveraging unauthorized access to critical port systems. The breach compromised logistics operations and posed significant risks to supply chain security. This case underscores the vulnerabilities in critical infrastructure and the severe legal consequences of cybercriminal activities. Organizations managing sensitive systems should prioritize robust cybersecurity protocols.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hacker-gets-seven-years-for-breaching-rotterdam-and-antwerp-ports/",
-            "relatedResources": [
-                {
-                    "label": "Third-Party Risk Management",
-                    "url": "/guides/third-party-risk-management.html",
-                    "icon": "fa-handshake"
-                }
-            ]
-        },
-        {
-            "date": "Jan 12 2026",
-            "headline": "BreachForums Compromised—324K Cybercriminals Exposed",
-            "title": "Data Breach Exposes Identities of 324,000 BreachForums Members",
-            "content": "BreachForums, a notorious hacker forum, has suffered a massive data breach, exposing the identities of 324,000 users, including administrators and members. The leaked data includes real names and contact details, potentially leading to legal actions against those involved in cybercriminal activities. This breach reveals the inherent risks within illegal online communities and the potential for law enforcement to dismantle such networks. The incident serves as a stark reminder of the importance of operational security for cybercriminals. Security professionals should monitor for any fallout that may affect their organizations.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/threat-intelligence/breachforums-breached-exposing-324k-cybercriminals",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 12 2026",
-            "headline": "BreachForums Doomsday Leak—324,000 Criminal Users Exposed",
-            "title": "BreachForums Faces Fallout After Massive User Data Leak",
-            "content": "BreachForums, a prominent crime forum, is reeling from a catastrophic data leak that exposed nearly 324,000 users. The breach, which occurred months prior, became public when a MySQL database containing user information was leaked. This revelation severely undermines the forum&#x27;s reputation and operational security, potentially leading to arrests and the forum&#x27;s downfall. The incident highlights the vulnerabilities of criminal networks and the risks of participating in illicit activities online. Cybersecurity professionals should be aware of potential threats emerging from exposed data.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4115660/notorious-breachforums-hacking-site-hit-by-doomsday-leak-of-324000-criminal-users.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 12 2026",
-            "headline": "GoBruteforcer Botnet Targets 50K Linux Servers—Secure Now",
-            "title": "GoBruteforcer Botnet Exploits Weak Credentials on Linux Servers",
-            "content": "Researchers have identified an enhanced version of the GoBruteforcer botnet, which is actively targeting over 50,000 Linux servers with weak credentials. This botnet leverages AI-generated configurations to optimize its attacks, making it a formidable threat to vulnerable systems. The campaign underscores the importance of securing Linux servers with strong, unique passwords and regularly updating security patches. Organizations running Linux-based infrastructures should conduct immediate security audits to prevent unauthorized access. The rise of AI-enhanced cyber threats calls for heightened vigilance and advanced defensive measures.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/threat-intelligence/gobruteforcer-botnet-targets-50k-plus-linux-servers",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 12 2026",
-            "headline": "Facebook Login Thieves Use Browser-in-Browser Trick",
-            "title": "Hackers Exploit Browser-in-Browser Technique to Steal Facebook Logins",
-            "content": "Cybercriminals are increasingly using the browser-in-the-browser (BitB) technique to deceive users into surrendering their Facebook login credentials. This method creates a realistic-looking browser window within a browser, tricking victims into entering their details on what appears to be a legitimate login page. Over the past six months, this technique has gained traction among hackers targeting social media users. To protect against such attacks, users should verify URLs and be cautious of unexpected login prompts. Security experts recommend enabling two-factor authentication for added account protection.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/facebook-login-thieves-now-using-browser-in-browser-trick/",
             "relatedResources": []
         },
         {
@@ -83,6 +109,93 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Jan 13 2026",
+            "headline": "Salesforce Transforms Slackbot—New AI Agent Revolutionizes Workflows",
+            "title": "Salesforce Unveils AI-Powered Slackbot for Seamless Enterprise Task Management",
+            "content": "Salesforce has launched a revamped version of Slackbot, now positioned as a robust AI agent capable of streamlining tasks across various enterprise applications directly from Slack. This transformation allows users to search enterprise data, draft documents, and execute actions without leaving the Slack environment. By integrating advanced AI capabilities, Salesforce aims to enhance productivity and bolster its competitive stance against Microsoft and Google in the workplace AI sector. The new Slackbot promises to reduce the need for switching between applications, thus optimizing workflow efficiency for enterprises. Organizations leveraging Slack for communication should explore integrating this AI agent to maximize operational productivity.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/13/slackbot-is-an-ai-agent-now/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 13 2026",
+            "headline": "Salesforce Unleashes AI-Powered Slackbot—A Game Changer for Enterprises",
+            "title": "Salesforce&#x27;s New AI Slackbot Enhances Enterprise Data Interaction and Task Execution",
+            "content": "Salesforce has introduced an upgraded version of Slackbot, transforming it from a basic notification tool into a sophisticated AI agent. This new iteration enables users to search through enterprise data, draft documents, and perform actions directly within Slack, thereby streamlining business processes. The move is part of Salesforce&#x27;s strategy to position itself against rivals like Microsoft and Google in the workplace AI space. By providing a centralized platform for task execution, the AI-powered Slackbot aims to improve workflow efficiency and reduce operational friction for businesses. Enterprises using Slack should consider adopting this enhanced tool to leverage its full capabilities.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/salesforce-rolls-out-new-slackbot-ai-agent-as-it-battles-microsoft-and",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 13 2026",
+            "headline": "Brazil Halts Meta&#x27;s WhatsApp Policy—Probes Anti-Competitive Practices",
+            "title": "Brazil Orders Meta to Suspend WhatsApp&#x27;s Third-Party AI Chatbot Ban",
+            "content": "Brazil&#x27;s competition authority has mandated Meta to pause its policy that prevents third-party AI companies from utilizing WhatsApp&#x27;s business API to offer chatbots. This directive comes amid an investigation into whether Meta&#x27;s policy is anti-competitive. The suspension allows AI developers to continue leveraging WhatsApp for chatbot services, potentially impacting Meta&#x27;s control over the platform. This decision highlights the ongoing scrutiny of tech giants&#x27; practices in global markets. Companies using WhatsApp for business communications should monitor developments closely, as regulatory outcomes may influence platform accessibility and integration options.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/13/brazil-orders-meta-to-suspend-policy-banning-third-party-ai-chatbots-from-whatsapp/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Jan 13 2026",
+            "headline": "Converge Bio Secures $25M—Advances AI Drug Discovery",
+            "title": "Converge Bio Raises $25M to Propel AI-Powered Drug Discovery Initiatives",
+            "content": "AI-driven drug discovery startup Converge Bio has successfully raised $25 million in a Series A funding round led by Bessemer Venture Partners. The round also saw participation from prominent figures at Meta, OpenAI, and Wiz, highlighting significant industry interest in AI applications in biotechnology. Converge Bio plans to utilize the funds to accelerate its research and development efforts, aiming to revolutionize the drug discovery process with AI. This investment underscores the growing confidence in AI&#x27;s potential to transform the pharmaceutical landscape. Stakeholders in biotech should watch Converge Bio&#x27;s progress as it could set new standards in drug development.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/13/ai-drug-discovery-startup-converge-bio-pulls-in-25m-from-bessemer-and-execs-from-meta-openai-and-wiz/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 13 2026",
+            "headline": "Reid Hoffman Urges Silicon Valley to Challenge Trump Policies",
+            "title": "Reid Hoffman Calls for Silicon Valley to Oppose Trump Administration&#x27;s Actions",
+            "content": "Reid Hoffman, cofounder of LinkedIn, has called upon Silicon Valley to vocalize opposition to the Trump administration&#x27;s policies. Hoffman emphasizes the importance of tech leaders speaking out on issues they believe to be true, advocating for a collective stance on matters impacting the industry and society. His message resonates amidst ongoing debates about the role of tech companies in political discourse. Hoffman&#x27;s appeal highlights the potential influence of Silicon Valley in shaping policy and public opinion. Tech leaders are encouraged to consider their positions and the broader impact of their platforms in political and social arenas.",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/the-big-interview-podcast-reid-hoffman/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 13 2026",
+            "headline": "Smart Warehouses Shift—Edge AI Solves Latency Issues",
+            "title": "Smart Warehouses Embrace Edge AI to Overcome Cloud Latency Challenges",
+            "content": "As enterprises increasingly migrate to the cloud, smart warehouses are moving in the opposite direction by adopting edge AI to address critical latency issues. This shift is driven by the need for real-time data processing and decision-making on the warehouse floor, where delays can disrupt operations. Edge AI allows for faster processing by handling data locally rather than relying on distant cloud servers. This trend underscores the importance of edge computing in logistics and automation, offering a solution to the &quot;latency gap&quot; that can hinder efficiency. Warehouse operators should evaluate edge AI solutions to enhance operational responsiveness and reliability.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/the-latency-trap-smart-warehouses-abandon-cloud-for-edge/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 13 2026",
+            "headline": "Hupo Secures $10M—Pivots to AI Sales Coaching",
+            "title": "Hupo Raises $10M After Shifting Focus to AI Sales Coaching",
+            "content": "Hupo, a company backed by Meta, has successfully pivoted from mental wellness to AI-driven sales coaching, securing a $10 million Series A investment led by DST Global. The company now focuses on providing AI sales coaching solutions tailored for banks and insurance firms. This strategic shift has opened new growth opportunities, leveraging AI to enhance sales performance and training. The funding will support Hupo&#x27;s expansion and development of its AI coaching platform. Financial institutions seeking to improve sales effectiveness should consider integrating AI coaching tools like those offered by Hupo to boost productivity and outcomes.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/12/meta-backed-hupo-finds-growth-after-pivot-to-ai-sales-coaching-from-mental-wellness/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 13 2026",
             "headline": "Amazon&#x27;s Bee Wearable—AI Features Coming in 2026",
             "title": "Amazon&#x27;s Bee Wearable Debuts with Promised AI Feature Expansion",
             "content": "Amazon has unveiled its latest AI wearable, Bee, aimed at enhancing user interaction with AI technologies. While the current version lacks advanced functionalities for professional users, Amazon has announced plans to introduce more features throughout 2026. The device is designed to integrate seamlessly with Amazon&#x27;s ecosystem, potentially complementing existing services like Alexa. Early adopters can expect updates that will expand the device&#x27;s capabilities, making it more useful for a broader audience. This release marks Amazon&#x27;s strategic move to capture a segment of the wearable tech market dominated by AI-driven innovations.",
@@ -93,89 +206,6 @@ const websiteContent = {
                     "label": "Securing AI/ML Pipelines",
                     "url": "/guides/securing-ai-ml-pipelines.html",
                     "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 12 2026",
-            "headline": "Amazon&#x27;s Bee Acquisition—Integration with Alexa?",
-            "title": "Amazon Acquires Bee to Enhance Wearable AI Ecosystem",
-            "content": "Amazon has acquired Bee, an AI wearable company, as part of its strategy to enhance its AI and wearable technology portfolio. The acquisition raises questions about potential integration with Amazon&#x27;s voice assistant, Alexa, though no official plans have been confirmed. This move aligns with Amazon&#x27;s broader vision to expand its AI capabilities and leverage wearables to provide more personalized user experiences. The company aims to create a seamless ecosystem where AI-driven insights can enhance daily activities. This acquisition could signal a shift in Amazon&#x27;s approach to consumer technology, focusing on AI-enhanced wearables.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/12/why-amazon-bought-bee-an-ai-wearable/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 12 2026",
-            "headline": "Meta Expands AI Infrastructure—Energy Footprint to Grow",
-            "title": "Meta Launches AI Infrastructure Initiative to Boost Capacity",
-            "content": "Meta, led by CEO Mark Zuckerberg, has announced a new initiative to significantly expand its AI infrastructure. The company plans to increase its energy footprint to support the growing demand for AI processing power. This expansion is part of Meta&#x27;s strategy to enhance its capabilities in AI-driven services and products. By investing in infrastructure, Meta aims to support its ambitious goals for AI research and development, potentially impacting various sectors reliant on AI. The initiative underscores the tech giant&#x27;s commitment to maintaining a competitive edge in the rapidly evolving AI landscape.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/12/mark-zuckerberg-says-meta-is-launching-its-own-ai-infrastructure-initiative/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 12 2026",
-            "headline": "Anthropic&#x27;s Claude for Healthcare—Post-ChatGPT Health Era",
-            "title": "Anthropic Unveils Claude for Healthcare Amid AI Health Race",
-            "content": "Anthropic has launched Claude for Healthcare, a new AI product aimed at transforming healthcare services. This announcement comes shortly after OpenAI introduced its ChatGPT Health product, highlighting the competitive nature of AI in healthcare. Claude for Healthcare is designed to assist medical professionals by providing AI-driven insights and recommendations, potentially improving patient outcomes. As AI continues to penetrate the healthcare sector, companies like Anthropic are positioning themselves to address the increasing demand for intelligent health solutions. This development marks a significant step in the integration of AI within healthcare systems.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/12/anthropic-announces-claude-for-healthcare-following-openais-chatgpt-health-reveal/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Jan 12 2026",
-            "headline": "UK Criminalizes Deepfake Nudes—Response to Grok AI",
-            "title": "UK Enacts Law Against Nonconsensual Deepfake Nudes Citing Grok AI",
-            "content": "In response to the proliferation of nonconsensual deepfake images on platforms like X, the UK has enacted a law criminalizing the creation of such content. This legislative move follows the rise of the Grok AI chatbot, which has been linked to the spread of intimate deepfakes. The Data Act, passed last year, now makes it a criminal offense to create or request these images without consent. This law aims to protect individuals&#x27; privacy and curb the misuse of AI technologies in creating harmful content. The UK government&#x27;s action reflects growing concerns about AI&#x27;s potential for abuse.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/news/860881/uk-ai-x-grok-law-criminalizing-deepfake-nudes-ai",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 12 2026",
-            "headline": "Anthropic&#x27;s Cowork Tool—Claude Code Simplified",
-            "title": "Anthropic Introduces Cowork Tool for Easy File Management with Claude",
-            "content": "Anthropic has launched a new feature called Cowork within its Claude Desktop app, designed to simplify file management through AI. This tool allows users to designate specific folders for Claude to access, modify, or analyze, making file handling more efficient. Users interact with Cowork through a chat interface, eliminating the need for coding skills. This innovation aims to broaden the accessibility of AI-driven tools, enabling users to leverage Claude&#x27;s capabilities without technical expertise. The release of Cowork highlights Anthropic&#x27;s commitment to enhancing user experience by integrating AI into everyday tasks.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/12/anthropics-new-cowork-tool-offers-claude-code-without-the-code/",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Jan 12 2026",
-            "headline": "Anthropic Expands Claude&#x27;s Capabilities with Cowork Feature",
-            "title": "Anthropic Enhances Claude with New Cowork AI Agent Feature",
-            "content": "Anthropic is expanding the capabilities of its AI agent, Claude, by introducing a new feature called Cowork. This addition allows Claude to perform tasks similar to those of Claude Code, but without requiring users to write code. Cowork can handle various tasks, enhancing productivity and simplifying workflows for users. This feature is part of Anthropic&#x27;s strategy to capitalize on the growing interest in AI agents, making advanced AI functionalities more accessible. By focusing on ease of use, Anthropic aims to attract a wider audience to its AI platform.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/860730/anthropic-cowork-feature-ai-agents-claude-code",
-            "relatedResources": [
-                {
-                    "label": "API Security Best Practices",
-                    "url": "/guides/api-security-best-practices.html",
-                    "icon": "fa-plug"
                 }
             ]
         }
