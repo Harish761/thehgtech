@@ -1,19 +1,13 @@
 #!/usr/bin/env python3
 """
-Breach Deep Dive Generator - TEST (Token Optimized)
+Breach Deep Dive Generator - Using OpenAI GPT-4o
 """
 
 import os
-import json
 import requests
 from datetime import datetime
 from bs4 import BeautifulSoup
-try:
-    from google import genai
-    USE_NEW_SDK = True
-except ImportError:
-    import google.generativeai as genai
-    USE_NEW_SDK = False
+from openai import OpenAI
 
 CURRENT_DATE = datetime.now()
 
@@ -32,11 +26,11 @@ def fetch_one_breach():
         
         for item in items:
             title = item.find('title').text if item.find('title') else ""
-            if any(kw in title.lower() for kw in ['breach', 'ransomware', 'hack', 'data']):
+            if any(kw in title.lower() for kw in ['breach', 'ransomware', 'hack', 'data', 'attack']):
                 desc = item.find('description').text if item.find('description') else ""
                 # Clean HTML from description
                 desc_soup = BeautifulSoup(desc, 'html.parser')
-                clean_desc = desc_soup.get_text()[:400]
+                clean_desc = desc_soup.get_text()[:600]
                 
                 return {
                     'title': title,
@@ -49,21 +43,17 @@ def fetch_one_breach():
     return None
 
 def generate_article(breach):
-    """Generate article using Gemini - token optimized"""
+    """Generate article using OpenAI GPT-4o"""
     
-    api_key = os.environ.get('GEMINI_API_KEY')
+    api_key = os.environ.get('OPENAI_API_KEY')
     if not api_key:
-        print("❌ GEMINI_API_KEY not set!")
+        print("❌ OPENAI_API_KEY not set!")
         return None
     
-    print("🤖 Configuring Gemini API...")
+    print("🤖 Configuring OpenAI GPT-4o...")
+    client = OpenAI(api_key=api_key)
     
-    # Use the old SDK (still works, just deprecated warning)
-    import google.generativeai as genai_old
-    genai_old.configure(api_key=api_key)
-    model = genai_old.GenerativeModel('gemini-2.0-flash-exp')
-    
-    # Optimized prompt - shorter but clear
+    # Optimized prompt
     prompt = f"""Today is {CURRENT_DATE.strftime('%B %d, %Y')} (January 2026).
 
 Write a professional cybersecurity breach analysis article about:
@@ -76,8 +66,8 @@ Requirements:
 - Professional cybersecurity analysis tone
 - DO NOT include any source URLs or citations
 - DO NOT reference where this information came from
-- Write as if from TheHGTech's own analysis
-- Include MITRE ATT&CK technique IDs where relevant
+- Write as if from TheHGTech's own security research team analysis
+- Include MITRE ATT&CK technique IDs where relevant (e.g., T1566, T1078)
 
 Generate complete HTML article with this structure:
 
@@ -183,12 +173,12 @@ Generate complete HTML article with this structure:
 </head>
 <body>
     <article class="container">
-        <!-- START CONTENT HERE -->
+        <!-- Content starts here -->
         
         <span class="badge badge-critical">Breach Analysis</span>
         <span class="badge badge-info">January 2026</span>
         
-        <h1>[Article Title]</h1>
+        <h1>[Article Title - Make it compelling]</h1>
         
         <div class="meta">
             <strong>Published:</strong> {CURRENT_DATE.strftime('%B %d, %Y')} | 
@@ -206,77 +196,103 @@ Generate complete HTML article with this structure:
         </div>
         
         <h2>Executive Summary</h2>
-        <p>[2-3 paragraphs summarizing the breach]</p>
+        <p>[2-3 detailed paragraphs summarizing what happened]</p>
         
         <h2>Organization Background</h2>
-        <p>[Context about the organization and why it's a target]</p>
+        <p>[Context about the organization, industry, why they're a target]</p>
         
         <h2>Attack Timeline</h2>
         <div class="timeline">
             <div class="timeline-item">
-                <div class="timeline-date">[Date]</div>
-                <p>[Event description]</p>
+                <div class="timeline-date">[Date/Time]</div>
+                <p>[What happened]</p>
             </div>
-            <!-- More timeline items -->
+            <div class="timeline-item">
+                <div class="timeline-date">[Date/Time]</div>
+                <p>[What happened next]</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">[Date/Time]</div>
+                <p>[Discovery/Response]</p>
+            </div>
         </div>
         
         <h2>Attack Vector Analysis</h2>
-        <p>[Technical analysis with MITRE ATT&CK references]</p>
-        <p>Relevant techniques: <span class="mitre-tag">T1566</span> <span class="mitre-tag">T1078</span></p>
+        <p>[Detailed technical analysis of HOW the attack happened]</p>
+        <p>Relevant MITRE ATT&CK techniques:</p>
+        <p><span class="mitre-tag">T1566</span> <span class="mitre-tag">T1078</span> <span class="mitre-tag">T1486</span></p>
         
         <div class="warning-box">
             <h3>⚠️ Critical Vulnerability Exploited</h3>
-            <p>[Description of the vulnerability or weakness exploited]</p>
+            <p>[Description of the main vulnerability or weakness]</p>
         </div>
         
         <h2>Impact Assessment</h2>
-        <p>[Data compromised, people affected, regulatory implications]</p>
+        <p>[Data compromised, number of people affected, types of data]</p>
+        <p>[Regulatory implications - GDPR, HIPAA if applicable]</p>
+        <p>[Financial/reputational impact]</p>
         
         <h2>What Went Wrong</h2>
         <ul>
-            <li>[Security failure 1]</li>
-            <li>[Security failure 2]</li>
+            <li><strong>[Security Failure 1]:</strong> [Explanation]</li>
+            <li><strong>[Security Failure 2]:</strong> [Explanation]</li>
+            <li><strong>[Security Failure 3]:</strong> [Explanation]</li>
         </ul>
         
         <h2>Lessons Learned & Recommendations</h2>
         <ol>
-            <li><strong>[Recommendation]:</strong> [Details]</li>
-            <li><strong>[Recommendation]:</strong> [Details]</li>
+            <li><strong>[Recommendation 1]:</strong> [Actionable details]</li>
+            <li><strong>[Recommendation 2]:</strong> [Actionable details]</li>
+            <li><strong>[Recommendation 3]:</strong> [Actionable details]</li>
+            <li><strong>[Recommendation 4]:</strong> [Actionable details]</li>
         </ol>
         
         <h2>Frequently Asked Questions</h2>
         
         <div class="faq">
-            <h4>[Question 1]?</h4>
-            <p>[Answer]</p>
+            <h4>[Question about the breach]?</h4>
+            <p>[Concise answer]</p>
         </div>
         
         <div class="faq">
-            <h4>[Question 2]?</h4>
-            <p>[Answer]</p>
+            <h4>[Question about impact]?</h4>
+            <p>[Concise answer]</p>
         </div>
         
-        <!-- END CONTENT -->
+        <div class="faq">
+            <h4>[Question about protection]?</h4>
+            <p>[Concise answer]</p>
+        </div>
+        
     </article>
 </body>
 </html>
 ```
 
-Fill in all the bracketed placeholders with actual content. Generate a complete, polished article."""
+Fill in ALL the bracketed placeholders with actual, detailed content based on the breach information provided. Generate a complete, production-ready article."""
 
-    print("🤖 Calling Gemini API...")
+    print("🤖 Calling OpenAI GPT-4o...")
     
     try:
-        response = model.generate_content(
-            prompt,
-            generation_config={
-                'temperature': 0.7,
-                'max_output_tokens': 8000,
-            }
+        response = client.chat.completions.create(
+            model="gpt-4o",
+            messages=[
+                {
+                    "role": "system",
+                    "content": "You are a senior cybersecurity analyst writing for TheHGTech, a professional cybersecurity news website. Write detailed, accurate, and actionable security content. Today's date is January 15, 2026."
+                },
+                {
+                    "role": "user", 
+                    "content": prompt
+                }
+            ],
+            temperature=0.7,
+            max_tokens=4000
         )
         
-        print(f"✅ Generated! ({len(response.text)} chars)")
-        return response.text
+        article = response.choices[0].message.content
+        print(f"✅ Generated! ({len(article)} chars)")
+        return article
         
     except Exception as e:
         print(f"❌ Error: {e}")
@@ -284,7 +300,7 @@ Fill in all the bracketed placeholders with actual content. Generate a complete,
 
 def main():
     print("=" * 50)
-    print("🔐 Breach Deep Dive Generator - TEST")
+    print("🔐 Breach Deep Dive Generator - GPT-4o")
     print(f"📅 {CURRENT_DATE.strftime('%B %d, %Y')}")
     print("=" * 50)
     
@@ -294,7 +310,8 @@ def main():
         print("❌ No breach found")
         return
     
-    print(f"\n✅ Selected: {breach['title'][:60]}...")
+    print(f"\n✅ Selected: {breach['title'][:70]}...")
+    print(f"   Details: {breach['description'][:100]}...")
     
     # Generate
     article = generate_article(breach)
@@ -305,7 +322,9 @@ def main():
     if "```html" in article:
         article = article.split("```html")[1].split("```")[0]
     elif "```" in article:
-        article = article.split("```")[1].split("```")[0]
+        parts = article.split("```")
+        if len(parts) >= 2:
+            article = parts[1]
     
     # Save
     output_file = "test_breach_output.html"
@@ -313,6 +332,7 @@ def main():
         f.write(article.strip())
     
     print(f"\n📄 Saved to: {output_file}")
+    print(f"   Size: {len(article)} characters")
     print("\n🎉 Done! Open the HTML file to review.")
 
 if __name__ == "__main__":

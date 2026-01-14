@@ -19,11 +19,11 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install google-generativeai requests beautifulsoup4 lxml
+        run: pip install openai requests beautifulsoup4 lxml
 
       - name: Run Breach Generator
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python test_breach_generator.py
 
       - name: Commit Generated Article
