@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConsentFix: An In-depth Analysis of the Latest OAuth Phishing Attack | TheHGTech</title>
+    <meta name="description" content="Explore the latest insights into ConsentFix, an OAuth phishing attack compromising Microsoft accounts. Discover key findings, attack vectors, and mitigation strategies.">
+    <style>
+        :root {
+            --bg-primary: #0d1117;
+            --bg-secondary: #161b22;
+            --text-primary: #e6edf3;
+            --text-secondary: #8b949e;
+            --accent-blue: #58a6ff;
+            --accent-red: #f85149;
+            --accent-green: #3fb950;
+            --accent-yellow: #d29922;
+            --border: #30363d;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 2rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .badge-critical { background: var(--accent-red); color: white; }
+        .badge-info { background: var(--accent-blue); color: white; }
+        h1 { font-size: 2.5rem; margin: 1rem 0; line-height: 1.2; }
+        h2 { color: var(--accent-blue); margin: 2rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+        h3 { color: var(--text-primary); margin: 1.5rem 0 0.75rem; }
+        p { margin-bottom: 1rem; color: var(--text-secondary); }
+        .meta { color: var(--text-secondary); margin: 1rem 0 2rem; font-size: 0.9rem; }
+        .key-findings {
+            background: var(--bg-secondary);
+            border-left: 4px solid var(--accent-blue);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .warning-box {
+            background: rgba(248, 81, 73, 0.1);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .timeline {
+            border-left: 2px solid var(--border);
+            padding-left: 2rem;
+            margin: 1.5rem 0;
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 1.5rem;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2.35rem;
+            top: 0.5rem;
+            width: 10px;
+            height: 10px;
+            background: var(--accent-blue);
+            border-radius: 50%;
+        }
+        .timeline-date {
+            color: var(--accent-blue);
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+        .mitre-tag {
+            display: inline-block;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.8rem;
+            color: var(--accent-yellow);
+            margin: 0.2rem;
+        }
+        ul, ol { margin: 1rem 0 1rem 2rem; color: var(--text-secondary); }
+        li { margin-bottom: 0.5rem; }
+        .faq { background: var(--bg-secondary); padding: 1.5rem; border-radius: 8px; margin: 1rem 0; }
+        .faq h4 { color: var(--text-primary); margin-bottom: 0.5rem; }
+        .faq p { margin-bottom: 0; }
+        code { background: var(--bg-secondary); padding: 0.2rem 0.4rem; border-radius: 4px; font-family: monospace; }
+    </style>
+</head>
+<body>
+    <article class="container">
+        <!-- Content starts here -->
+        
+        <span class="badge badge-critical">Breach Analysis</span>
+        <span class="badge badge-info">January 2026</span>
+        
+        <h1>ConsentFix: An In-depth Analysis of the Latest OAuth Phishing Attack</h1>
+        
+        <div class="meta">
+            <strong>Published:</strong> January 14, 2026 | 
+            <strong>Category:</strong> Data Breach Analysis |
+            <strong>Reading Time:</strong> 8 min
+        </div>
+        
+        <div class="key-findings">
+            <h3>🔑 Key Findings</h3>
+            <ul>
+                <li>An innovative phishing technique, ConsentFix, manipulates legitimate browser-based OAuth flows to hijack Microsoft accounts.</li>
+                <li>Attackers exploit users' trust in familiar login processes by presenting authentic-looking consent screens.</li>
+                <li>Push Security's continued tracking reveals sophisticated attacker evolution and community research insights.</li>
+            </ul>
+        </div>
+        
+        <h2>Executive Summary</h2>
+        <p>In recent months, a novel phishing technique dubbed "ConsentFix" has emerged, targeting Microsoft account users by exploiting OAuth authorization flows. This technique allows cybercriminals to gain unauthorized access to user accounts without needing to steal credentials directly. By mimicking legitimate consent screens, attackers trick users into granting access to malicious applications under the guise of authenticity.</p>
+        <p>Push Security's dedicated tracking of this threat has uncovered substantial advancements in the attackers' methodologies. The community has contributed valuable insights into recognizing and mitigating these sophisticated attacks, highlighting the need for enhanced security measures around OAuth implementations.</p>
+        
+        <h2>Organization Background</h2>
+        <p>ConsentFix primarily targets organizations and individuals heavily reliant on Microsoft 365 services. Given the widespread adoption of Microsoft accounts across various industries, including healthcare, finance, and technology, the attack's potential impact is vast. As a preferred productivity suite, Microsoft 365's expansive user base makes it an attractive target for attackers seeking to exploit OAuth vulnerabilities.</p>
+        
+        <h2>Attack Timeline</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">November 2025</div>
+                <p>Initial reports of unusual OAuth consent requests begin circulating among cybersecurity communities.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">December 2025</div>
+                <p>Push Security identifies patterns indicative of a coordinated phishing campaign leveraging Microsoft OAuth flows.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">January 2026</div>
+                <p>Detailed analysis reveals the ConsentFix technique, prompting widespread awareness and mitigation efforts.</p>
+            </div>
+        </div>
+        
+        <h2>Attack Vector Analysis</h2>
+        <p>The ConsentFix attack exploits vulnerabilities in the OAuth authorization process (MITRE ATT&CK ID: <span class="mitre-tag">T1566</span>), a protocol designed to enable secure delegated access. Attackers craft phishing emails or malicious links that lead users to authentic-looking consent pages. These pages request permissions for malicious applications that, once authorized, grant attackers access to sensitive account information.</p>
+        <p>The exploitation of OAuth (MITRE ATT&CK ID: <span class="mitre-tag">T1078</span>) bypasses traditional credential theft by taking advantage of users' trust in familiar login processes. This technique is particularly insidious as it doesn't trigger standard security alerts associated with password-based compromises.</p>
+        
+        <div class="warning-box">
+            <h3>⚠️ Critical Vulnerability Exploited</h3>
+            <p>The primary vulnerability lies in the user's ability to recognize forged consent screens. Attackers leverage authentic-looking interfaces to deceive users into granting excessive permissions, thereby compromising their accounts without directly capturing credentials.</p>
+        </div>
+        
+        <h2>Impact Assessment</h2>
+        <p>The ConsentFix attack has resulted in unauthorized access to numerous Microsoft accounts. The compromised data includes emails, contacts, and potentially sensitive documents stored within affected accounts. The number of affected users is still being evaluated, but initial estimates suggest thousands of individuals and organizations may be impacted.</p>
+        <p>Given the nature of the data accessed, regulatory implications under GDPR and other privacy frameworks could be significant, necessitating prompt notification and remediation efforts by affected organizations.</p>
+        <p>The financial and reputational impact on organizations could be severe, particularly if sensitive information is leaked or exploited further by malicious actors.</p>
+        
+        <h2>What Went Wrong</h2>
+        <ul>
+            <li><strong>Security Failure 1:</strong> Insufficient user education on recognizing phishing attempts led to a higher success rate for attackers.</li>
+            <li><strong>Security Failure 2:</strong> Lack of advanced detection mechanisms for OAuth-based attacks allowed the campaign to proliferate undetected initially.</li>
+            <li><strong>Security Failure 3:</strong> Over-reliance on traditional credential-based security measures failed to address the unique threats posed by OAuth exploitation.</li>
+        </ul>
+        
+        <h2>Lessons Learned & Recommendations</h2>
+        <ol>
+            <li><strong>Enhance User Training:</strong> Conduct comprehensive training sessions focusing on identifying and avoiding phishing scams, particularly those involving OAuth consent requests.</li>
+            <li><strong>Implement Conditional Access Policies:</strong> Utilize advanced security features within Microsoft 365 to restrict application access based on location, device, and user risk profiles.</li>
+            <li><strong>Monitor OAuth Activity:</strong> Deploy security solutions capable of detecting unusual OAuth activity, such as unauthorized consent requests and access patterns.</li>
+            <li><strong>Strengthen MFA Adoption:</strong> Encourage the use of multi-factor authentication (MFA) across all services to provide an additional layer of security against unauthorized access.</li>
+        </ol>
+        
+        <h2>Frequently Asked Questions</h2>
+        
+        <div class="faq">
+            <h4>What is the ConsentFix attack?</h4>
+            <p>ConsentFix is a phishing technique that exploits OAuth authorization flows to gain unauthorized access to Microsoft accounts by tricking users into granting permissions to malicious applications.</p>
+        </div>
+        
+        <div class="faq">
+            <h4>How does this impact my organization?</h4>
+            <p>Organizations using Microsoft 365 services may face unauthorized access to sensitive data, leading to potential data breaches and regulatory consequences.</p>
+        </div>
+        
+        <div class="faq">
+            <h4>How can I protect my accounts from this attack?</h4>
+            <p>Enhancing user awareness, implementing conditional access policies, and monitoring OAuth activity can significantly mitigate the risk of ConsentFix attacks.</p>
+        </div>
+        
+    </article>
+</body>
+</html>
