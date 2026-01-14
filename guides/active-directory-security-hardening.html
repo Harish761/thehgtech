@@ -6,54 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <title>Active Directory Hardening: Complete Security Checklist [2025]</title>
+    <title>Active Directory Security Hardening Guide 2026 | AD Security Best Practices | TheHGTech</title>
     <meta name="description"
-        content="🔒 Secure your AD environment. Step-by-step hardening guide: tiered admin model, Kerberoasting prevention, LAPS, GPO security. Includes free audit checklist.">
+        content="Complete Active Directory security hardening guide. Tiered admin model, GPO security, Kerberos hardening, detecting AD attacks like Kerberoasting and DCSync.">
     <meta name="keywords"
-        content="Active Directory security, AD hardening, Kerberoasting prevention, Pass-the-Hash, LAPS, AD tiered model, GPO security, domain controller security, enterprise Active Directory">
+        content="active directory security, AD hardening, active directory best practices, kerberoasting defense, dcsync detection, tiered admin model, AD security guide, windows security">
     <meta name="author" content="TheHGTech">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://thehgtech.com/guides/active-directory-security-hardening.html">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Active Directory Hardening: Complete Security Checklist [2025]">
+    <meta property="og:title" content="Active Directory Security Hardening Guide 2026">
     <meta property="og:description"
-        content="Secure your AD environment with our step-by-step hardening guide. Tiered admin model, attack prevention & free audit checklist.">
+        content="Defend the #1 enterprise attack target. Complete AD security hardening with tiered admin, Kerberos hardening, and attack detection.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://thehgtech.com/guides/active-directory-security-hardening.html">
-    <meta property="og:image" content="https://thehgtech.com/images/guides/active-directory-security.png">
+    <meta property="og:image" content="https://thehgtech.com/images/guides/active-directory-security-hardening.png">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Active Directory Hardening: Complete Security Checklist [2025]">
-    <meta name="twitter:description"
-        content="Secure your AD environment. Tiered admin model, attack prevention & free audit checklist.">
+    <meta name="twitter:title" content="Active Directory Security Hardening Guide 2026">
+    <meta name="twitter:description" content="Complete AD security hardening guide with defense strategies.">
 
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "TechArticle",
-      "headline": "Active Directory Hardening: Complete Security Checklist [2025]",
-      "description": "Complete guide to securing and hardening Active Directory environments with tiered administration model, GPO security, and attack prevention techniques.",
-      "author": {
-        "@type": "Organization",
-        "name": "TheHGTech"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "TheHGTech",
-        "url": "https://thehgtech.com"
-      },
-      "datePublished": "2025-12-17",
-      "dateModified": "2026-01-09",
+      "headline": "Active Directory Security Hardening Guide 2026",
+      "description": "Complete Active Directory security hardening guide covering tiered admin model, GPO security, Kerberos hardening, and detecting AD-based attacks.",
+      "author": { "@type": "Organization", "name": "TheHGTech" },
+      "publisher": { "@type": "Organization", "name": "TheHGTech", "url": "https://thehgtech.com" },
+      "datePublished": "2026-01-14",
+      "dateModified": "2026-01-14",
       "mainEntityOfPage": "https://thehgtech.com/guides/active-directory-security-hardening.html",
-      "articleSection": "Security Guides",
-      "keywords": ["Active Directory", "Security", "Hardening", "Enterprise Security"]
+      "articleSection": "Enterprise Security Guides",
+      "keywords": ["Active Directory", "AD Security", "Kerberos", "Windows Security", "Enterprise Security"]
     }
     </script>
 
-    <!-- FAQ Schema for Rich Snippets -->
+    <!-- FAQ Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -61,10 +53,18 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What is the AD Tiered Administration Model?",
+          "name": "Why is Active Directory the #1 attack target?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The Tiered Administration Model (or Enterprise Access Model) separates admin credentials into 3 tiers: Tier 0 (Domain Controllers, identity), Tier 1 (enterprise servers), and Tier 2 (workstations). Credentials from higher tiers should never be used on lower tiers to prevent credential theft."
+            "text": "Active Directory controls authentication and authorization for 95% of Fortune 500 companies. Compromising AD gives attackers the keys to the kingdom - access to every system, user, and resource in the organization."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the tiered admin model?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The tiered admin model separates privileged access into three tiers: Tier 0 (Domain Controllers and AD), Tier 1 (Enterprise servers and apps), and Tier 2 (Workstations). Admins in each tier cannot access resources in other tiers, limiting lateral movement."
           }
         },
         {
@@ -72,31 +72,15 @@
           "name": "What is Kerberoasting and how do I prevent it?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Kerberoasting is an attack where attackers extract service account password hashes from Kerberos tickets. Prevent it by using Group Managed Service Accounts (gMSA) with auto-rotating 240-character passwords, or ensure service accounts have 25+ character passwords."
+            "text": "Kerberoasting extracts service account password hashes from Kerberos tickets for offline cracking. Prevent it by using long, complex passwords (25+ characters) for service accounts, implementing gMSAs, and monitoring for suspicious TGS requests."
           }
         },
         {
           "@type": "Question",
-          "name": "What is LAPS and why do I need it?",
+          "name": "How do I detect DCSync attacks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "LAPS (Local Administrator Password Solution) automatically manages and rotates local admin passwords, ensuring each machine has a unique, complex password. This prevents lateral movement attacks where attackers reuse the same local admin password across machines."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How often should I reset the KRBTGT password?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Reset the KRBTGT password twice every 180 days. It must be reset twice because Kerberos keeps both the current and previous password. This prevents Golden Ticket attacks where attackers forge Kerberos tickets using a compromised KRBTGT hash."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What are Protected Users in Active Directory?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Protected Users is a security group that provides enhanced protection: NTLM authentication is disabled, DES/RC4 encryption is disabled for Kerberos, credential delegation is disabled, and TGT lifetime is reduced to 4 hours. Add high-value admin accounts to this group."
+            "text": "Monitor for Event ID 4662 with specific GUIDs related to replication rights, watch for non-DC computers requesting replication, and use tools like Microsoft ATA or Defender for Identity to detect DCSync behavior."
           }
         }
       ]
@@ -126,7 +110,8 @@
             --accent-red: #FF3D3D;
             --accent-green: #10b981;
             --accent-orange: #f59e0b;
-            --accent-blue: #3B82F6;
+            --accent-purple: #8b5cf6;
+            --accent-blue: #3b82f6;
             --text-primary: #ffffff;
             --text-secondary: #a0a0a0;
             --text-muted: #666666;
@@ -153,16 +138,28 @@
             margin-top: 60px;
         }
 
+        .ad-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
         h1 {
             font-size: 2.5rem;
-            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            background-clip: text;
             margin-bottom: 1rem;
         }
 
         h2 {
-            color: var(--accent-cyan);
+            color: var(--accent-blue);
             margin: 2.5rem 0 1rem;
             font-size: 1.8rem;
             padding-top: 1rem;
@@ -176,7 +173,7 @@
         }
 
         h4 {
-            color: var(--accent-blue);
+            color: var(--accent-purple);
             margin: 1.25rem 0 0.75rem;
             font-size: 1.1rem;
         }
@@ -198,8 +195,8 @@
         }
 
         .info-box {
-            background: rgba(0, 217, 255, 0.05);
-            border-left: 4px solid var(--accent-cyan);
+            background: rgba(59, 130, 246, 0.05);
+            border-left: 4px solid var(--accent-blue);
             padding: 1.5rem;
             margin: 2rem 0;
             border-radius: 8px;
@@ -221,12 +218,65 @@
             border-radius: 8px;
         }
 
+        .attack-box {
+            background: rgba(255, 61, 61, 0.1);
+            border: 1px solid rgba(255, 61, 61, 0.3);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .attack-box::before {
+            content: "Attack Pattern";
+            display: block;
+            color: var(--accent-red);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .defense-box {
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .defense-box::before {
+            content: "Defense Strategy";
+            display: block;
+            color: var(--accent-green);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .tier-box {
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .tier-0 {
+            background: rgba(255, 61, 61, 0.1);
+            border: 1px solid rgba(255, 61, 61, 0.3);
+        }
+
+        .tier-1 {
+            background: rgba(245, 158, 11, 0.1);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+        }
+
+        .tier-2 {
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+        }
+
         code {
             background: var(--bg-card);
             padding: 0.2rem 0.5rem;
             border-radius: 4px;
             font-family: 'Courier New', monospace;
-            color: var(--accent-cyan);
+            color: var(--accent-blue);
             font-size: 0.9rem;
         }
 
@@ -248,7 +298,7 @@
         .back-link {
             display: inline-block;
             margin-bottom: 2rem;
-            color: var(--accent-cyan);
+            color: var(--accent-blue);
             text-decoration: none;
         }
 
@@ -273,36 +323,13 @@
         }
 
         th {
-            background: rgba(0, 217, 255, 0.1);
-            color: var(--accent-cyan);
+            background: rgba(59, 130, 246, 0.1);
+            color: var(--accent-blue);
             font-weight: 600;
         }
 
         td {
             color: var(--text-secondary);
-        }
-
-        .tier-badge {
-            display: inline-block;
-            padding: 0.25rem 0.75rem;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            font-weight: 600;
-        }
-
-        .tier-0 {
-            background: rgba(255, 76, 76, 0.2);
-            color: #FF3D3D;
-        }
-
-        .tier-1 {
-            background: rgba(245, 158, 11, 0.2);
-            color: #f59e0b;
-        }
-
-        .tier-2 {
-            background: rgba(16, 185, 129, 0.2);
-            color: #10b981;
         }
 
         .toc {
@@ -315,7 +342,7 @@
 
         .toc h3 {
             margin-top: 0;
-            color: var(--accent-cyan);
+            color: var(--accent-blue);
         }
 
         .toc ul {
@@ -333,32 +360,44 @@
         }
 
         .toc a:hover {
-            color: var(--accent-cyan);
+            color: var(--accent-blue);
         }
 
-        .checklist {
+        .severity-critical {
+            color: var(--accent-red);
+        }
+
+        .severity-high {
+            color: var(--accent-orange);
+        }
+
+        .severity-medium {
+            color: var(--accent-purple);
+        }
+
+        .related-guides {
             background: var(--bg-card);
             border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin: 1.5rem 0;
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 3rem 0;
         }
 
-        .checklist li {
-            list-style: none;
-            padding-left: 2rem;
-            position: relative;
+        .related-guides h3 {
+            color: var(--accent-blue);
+            margin-bottom: 1rem;
         }
 
-        .checklist li::before {
-            content: '☐';
-            position: absolute;
-            left: 0;
+        .related-guides a {
             color: var(--accent-cyan);
+            text-decoration: none;
+        }
+
+        .related-guides a:hover {
+            text-decoration: underline;
         }
     </style>
 
-    <!-- Mobile Navigation CSS -->
     <link rel="stylesheet" href="/m-core.css?v=4.2">
     <link rel="stylesheet" href="/m-layout.css?v=3.2">
     <link rel="stylesheet" href="/m-components.css?v=3.0">
@@ -374,47 +413,28 @@
             <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light"
                 style="height: 28px; width: auto; margin: 0;">
             <span
-                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #3b82f6, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
         </div>
         <div class="m-header__actions">
             <button class="m-theme-toggle" onclick="mToggleTheme()" aria-label="Toggle Theme">
                 <span class="m-theme-toggle__thumb"></span>
-                <span class="m-theme-toggle__stars">
-                    <span class="m-theme-toggle__star"></span>
-                    <span class="m-theme-toggle__star"></span>
-                </span>
+                <span class="m-theme-toggle__stars"><span class="m-theme-toggle__star"></span><span
+                        class="m-theme-toggle__star"></span></span>
             </button>
-            <button class="m-header__btn m-header__btn--search" data-action="search" aria-label="Search">
-                <i class="fas fa-search"></i>
-            </button>
+            <button class="m-header__btn m-header__btn--search" data-action="search" aria-label="Search"><i
+                    class="fas fa-search"></i></button>
         </div>
     </header>
 
     <!-- Bottom Navigation -->
     <nav class="m-bottom-nav m-only">
-        <a href="/" class="m-bottom-nav__item">
-            <i class="fas fa-home"></i>
-            <span>Home</span>
-        </a>
-        <a href="/cve-tracker.html" class="m-bottom-nav__item">
-            <i class="fas fa-bug"></i>
-            <span>CVE</span>
-        </a>
-        <a href="/threat-intel.html" class="m-bottom-nav__item">
-            <i class="fas fa-shield-alt"></i>
-            <span>Intel</span>
-        </a>
-        <a href="/articles.html" class="m-bottom-nav__item">
-            <i class="fas fa-newspaper"></i>
-            <span>Articles</span>
-        </a>
-        <a href="/guides/" class="m-bottom-nav__item active">
-            <i class="fas fa-book"></i>
-            <span>Guides</span>
-        </a>
+        <a href="/" class="m-bottom-nav__item"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item"><i class="fas fa-bug"></i><span>CVE</span></a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item"><i class="fas fa-shield-alt"></i><span>Intel</span></a>
+        <a href="/articles.html" class="m-bottom-nav__item"><i class="fas fa-newspaper"></i><span>Articles</span></a>
+        <a href="/guides/" class="m-bottom-nav__item active"><i class="fas fa-book"></i><span>Guides</span></a>
     </nav>
 
-    <!-- Header -->
     <!-- Desktop Header -->
     <header class="header" role="banner">
         <div class="header-content">
@@ -425,65 +445,54 @@
                     <span class="logo-text">TheHGTech</span>
                 </a>
             </div>
-
             <nav class="nav nav-modern" role="navigation">
                 <a href="/index.html#news">News</a>
-
-                <!-- Intelligence Dropdown -->
                 <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger">
-                        Intelligence
-                        <span class="nav-live-badge">LIVE</span>
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
-                    </span>
+                    <span class="nav-dropdown-trigger">Intelligence <span class="nav-live-badge">LIVE</span> <i
+                            class="fas fa-chevron-down dropdown-arrow"></i></span>
                     <div class="nav-dropdown-panel">
                         <a href="/threat-intel.html" class="dropdown-item">
                             <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
                             <div class="dropdown-item-content">
                                 <div class="dropdown-item-title">Threat Intelligence <span
                                         class="dropdown-badge live">LIVE</span></div>
-                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours
-                                </div>
+                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds</div>
                             </div>
                         </a>
                         <a href="/cve-tracker.html" class="dropdown-item">
                             <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
                             <div class="dropdown-item-content">
                                 <div class="dropdown-item-title">CVE Tracker</div>
-                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores
-                                </div>
+                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities</div>
                             </div>
                         </a>
                         <a href="/ransomware-tracker.html" class="dropdown-item">
                             <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
                             <div class="dropdown-item-content">
                                 <div class="dropdown-item-title">Ransomware Tracker</div>
-                                <div class="dropdown-item-desc">Track active ransomware groups and victims</div>
+                                <div class="dropdown-item-desc">Track active ransomware groups</div>
                             </div>
                         </a>
                     </div>
                 </div>
-
-                <!-- Resources Dropdown -->
                 <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger">
-                        Resources
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
-                    </span>
+                    <span class="nav-dropdown-trigger">Resources <i
+                            class="fas fa-chevron-down dropdown-arrow"></i></span>
                     <div class="nav-dropdown-panel">
                         <a href="/guides/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
                             <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
                             <div class="dropdown-item-content">
                                 <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides
-                                    <span class="dropdown-badge popular">37+</span></div>
-                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
+                                    <span class="dropdown-badge popular">40+</span>
+                                </div>
+                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2 and more</div>
                             </div>
                         </a>
                         <a href="/comparisons/" class="dropdown-item">
                             <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
                             <div class="dropdown-item-content">
                                 <div class="dropdown-item-title">Tool Comparisons</div>
-                                <div class="dropdown-item-desc">EDR, SIEM, and security tool head-to-head reviews</div>
+                                <div class="dropdown-item-desc">Security tool reviews</div>
                             </div>
                         </a>
                         <div class="dropdown-divider"></div>
@@ -491,585 +500,502 @@
                             <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
                             <div class="dropdown-item-content">
                                 <div class="dropdown-item-title">Articles</div>
-                                <div class="dropdown-item-desc">Latest cybersecurity news and analysis</div>
+                                <div class="dropdown-item-desc">Security news and analysis</div>
                             </div>
                         </a>
                     </div>
                 </div>
-
-                <div class="theme-toggle-wrapper">
-                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <div class="theme-toggle-wrapper"><button class="theme-toggle" id="themeToggle"
+                        aria-label="Toggle theme">
                         <div class="toggle-stars">
                             <div class="star"></div>
                             <div class="star"></div>
                             <div class="star"></div>
                             <div class="star"></div>
                         </div>
-                    </button>
-                </div>
+                    </button></div>
             </nav>
-
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <button class="mobile-menu-btn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
         </div>
     </header>
 
     <div class="container">
-        <a href="/guides/" class="back-link">← Back to Guides</a>
+        <a href="/guides/" class="back-link"><i class="fas fa-arrow-left"></i> Back to Guides</a>
 
         <div class="guide-header">
-            <h1>Active Directory Security & Hardening</h1>
-            <p style="color: var(--text-muted); font-size: 1.1rem;">The complete guide to securing your AD environment
-                against modern attacks</p>
+            <span class="ad-badge"><i class="fas fa-server"></i> Enterprise Security</span>
+            <h1>Active Directory Security Hardening</h1>
+            <p style="color: var(--text-muted); font-size: 1.1rem;">Defend the #1 enterprise attack target with tiered
+                admin, Kerberos hardening, and attack detection strategies</p>
             <div style="margin-top: 1rem; color: var(--text-muted);">
-                <span><i class="fas fa-book-open"></i> 25 min read</span> • <span><i class="fas fa-crosshairs"></i>
-                    Intermediate to Advanced</span> • <span><i class="far fa-calendar-alt"></i> December 2025</span>
+                <span><i class="fas fa-book-open"></i> 28 min read</span> <span style="margin: 0 0.5rem;">|</span>
+                <span><i class="fas fa-crosshairs"></i> Intermediate</span> <span style="margin: 0 0.5rem;">|</span>
+                <span><i class="far fa-calendar-alt"></i> January 2026</span>
             </div>
         </div>
 
-        <img src="/images/guides/active-directory-security-hardening.png"
-            alt="Active Directory Security & Hardening Guide" class="featured-image"
-            style="width: 100%; max-width: 100%; height: auto; border-radius: 12px; margin: 2rem 0; box-shadow: 0 10px 40px rgba(139, 92, 246, 0.2); border: 1px solid var(--border);">
+        <img src="/images/guides/active-directory-security-hardening.png" alt="Active Directory Security Hardening"
+            class="featured-image"
+            style="width: 100%; max-width: 100%; height: auto; border-radius: 12px; margin: 2rem 0; box-shadow: 0 10px 40px rgba(59, 130, 246, 0.2); border: 1px solid var(--border);">
 
         <div class="warning-box">
-            <strong><i class="fas fa-exclamation-triangle"></i> Why This Matters:</strong> Active Directory is the
-            backbone of 95% of Fortune 1000 companies. A
-            single compromised AD environment can give attackers complete control over your entire organization. Recent
-            breaches like SolarWinds and Colonial Pipeline exploited AD weaknesses.
+            <strong><i class="fas fa-exclamation-triangle"></i> Critical Target:</strong> Active Directory is
+            compromised in over 80% of enterprise breaches. If attackers own AD, they own everything. This guide
+            provides practical hardening steps you can implement today.
         </div>
 
         <!-- Table of Contents -->
         <div class="toc">
             <h3><i class="fas fa-list-ul"></i> Table of Contents</h3>
             <ul>
-                <li><a href="#understanding">1. Understanding AD Security Risks</a></li>
-                <li><a href="#tiered-model">2. Tiered Administration Model</a></li>
-                <li><a href="#domain-controllers">3. Domain Controller Security</a></li>
-                <li><a href="#gpo-security">4. GPO Hardening</a></li>
-                <li><a href="#credential-protection">5. Credential Protection</a></li>
-                <li><a href="#attack-prevention">6. Attack Prevention</a></li>
-                <li><a href="#monitoring">7. Monitoring & Detection</a></li>
-                <li><a href="#checklist">8. Hardening Checklist</a></li>
+                <li><a href="#why-ad">1. Why Active Directory is the Crown Jewel</a></li>
+                <li><a href="#tiered-model">2. The Tiered Administrative Model</a></li>
+                <li><a href="#privileged-accounts">3. Securing Privileged Accounts</a></li>
+                <li><a href="#kerberos">4. Kerberos Hardening</a></li>
+                <li><a href="#gpo-security">5. Group Policy Security</a></li>
+                <li><a href="#common-attacks">6. Detecting Common AD Attacks</a></li>
+                <li><a href="#monitoring">7. Monitoring and Alerting</a></li>
+                <li><a href="#quick-wins">8. Quick Wins Checklist</a></li>
             </ul>
         </div>
 
-        <h2 id="understanding">1. Understanding AD Security Risks</h2>
+        <h2 id="why-ad">1. Why Active Directory is the Crown Jewel</h2>
 
-        <p>Active Directory (AD) is a prime target for attackers because compromising it grants access to
-            <strong>everything</strong>: user accounts, servers, applications, and data. Modern attacks like ransomware
-            specifically target AD to maximize damage.
-        </p>
-
-        <h3>Common AD Attack Vectors</h3>
+        <p>Active Directory (AD) is the identity and access management backbone for 95% of Fortune 500 companies. When
+            attackers compromise AD, they gain:</p>
 
         <table>
             <thead>
                 <tr>
-                    <th>Attack</th>
-                    <th>Description</th>
-                    <th>Risk Level</th>
+                    <th>What They Get</th>
+                    <th>Impact</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td><strong>Kerberoasting</strong></td>
-                    <td>Extract service account password hashes from Kerberos tickets</td>
-                    <td style="color: var(--accent-red);">Critical</td>
+                    <td><strong>All user credentials</strong></td>
+                    <td class="severity-critical">Access to every account in the organization</td>
                 </tr>
                 <tr>
-                    <td><strong>Pass-the-Hash</strong></td>
-                    <td>Reuse NTLM hashes without knowing passwords</td>
-                    <td style="color: var(--accent-red);">Critical</td>
+                    <td><strong>Group memberships</strong></td>
+                    <td class="severity-critical">Ability to add themselves to any group</td>
                 </tr>
                 <tr>
-                    <td><strong>Golden Ticket</strong></td>
-                    <td>Forge Kerberos tickets using KRBTGT hash</td>
-                    <td style="color: var(--accent-red);">Critical</td>
+                    <td><strong>Computer accounts</strong></td>
+                    <td class="severity-high">Lateral movement to any joined system</td>
                 </tr>
                 <tr>
-                    <td><strong>DCSync</strong></td>
-                    <td>Replicate AD data to extract all password hashes</td>
-                    <td style="color: var(--accent-red);">Critical</td>
+                    <td><strong>GPO control</strong></td>
+                    <td class="severity-critical">Push malware to every endpoint</td>
                 </tr>
                 <tr>
-                    <td><strong>Password Spraying</strong></td>
-                    <td>Try common passwords across many accounts</td>
-                    <td style="color: var(--accent-orange);">High</td>
-                </tr>
-                <tr>
-                    <td><strong>LLMNR/NBT-NS Poisoning</strong></td>
-                    <td>Capture credentials via network protocol abuse</td>
-                    <td style="color: var(--accent-orange);">High</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <h2 id="tiered-model">2. Tiered Administration Model</h2>
-
-        <p>Microsoft's <strong>Tiered Administration Model</strong> (also called the Enterprise Access Model) is the
-            foundation of AD security. It prevents credential theft by ensuring administrators never expose high-value
-            credentials on lower-tier systems.</p>
-
-        <h3>The Three Tiers</h3>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Tier</th>
-                    <th>Assets</th>
-                    <th>Examples</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><span class="tier-badge tier-0">Tier 0</span></td>
-                    <td>Identity & Control Plane</td>
-                    <td>Domain Controllers, Azure AD Connect, PKI, ADFS</td>
-                </tr>
-                <tr>
-                    <td><span class="tier-badge tier-1">Tier 1</span></td>
-                    <td>Enterprise Servers</td>
-                    <td>File servers, SQL servers, application servers</td>
-                </tr>
-                <tr>
-                    <td><span class="tier-badge tier-2">Tier 2</span></td>
-                    <td>Workstations & End Users</td>
-                    <td>Desktops, laptops, mobile devices</td>
+                    <td><strong>Certificate authority access</strong></td>
+                    <td class="severity-critical">Issue certificates for any user</td>
                 </tr>
             </tbody>
         </table>
 
         <div class="info-box">
-            <strong><i class="fas fa-lightbulb"></i> Golden Rule:</strong> Credentials from a higher tier should
-            <strong>never</strong> be used on a
-            lower tier. A Tier 0 admin should never log into a user's workstation (Tier 2), as their credentials would
-            be cached and vulnerable to theft.
+            <strong><i class="fas fa-lightbulb"></i> Think of it like this:</strong> Active Directory is like the master
+            key system for a building. If someone steals the master key, they can open every door. AD security is not
+            just an IT issue - it is a business survival issue.
         </div>
 
-        <h3>Implementing Tiered Administration</h3>
+        <h3>The AD Attack Kill Chain</h3>
 
-        <h4>Step 1: Create Tiered Admin Accounts</h4>
-        <p>Each administrator should have separate accounts for each tier:</p>
-        <ul>
-            <li><code>john.smith-T0</code> — Tier 0 (Domain Admin tasks only)</li>
-            <li><code>john.smith-T1</code> — Tier 1 (Server administration)</li>
-            <li><code>john.smith</code> — Tier 2 (Daily workstation use)</li>
-        </ul>
-
-        <h4>Step 2: Create Privileged Access Workstations (PAWs)</h4>
-        <p>PAWs are dedicated, hardened workstations used <strong>only</strong> for administrative tasks:</p>
-        <ul>
-            <li>Tier 0 PAW: Only for managing Domain Controllers and core identity</li>
-            <li>Tier 1 PAW: Only for managing enterprise servers</li>
-            <li>No email, web browsing, or general use on PAWs</li>
-            <li>Physically secured or isolated network segment</li>
-        </ul>
-
-        <h4>Step 3: Enforce Tier Isolation via GPO</h4>
-        <pre><code># GPO: Deny logon to Tier 2 workstations for Tier 0/1 admins
-User Rights Assignment:
-  Deny log on locally: "Tier 0 Admins", "Tier 1 Admins"
-  Deny log on through Remote Desktop: "Tier 0 Admins", "Tier 1 Admins"
-  Deny access to this computer from network: "Tier 0 Admins"</code></pre>
-
-        <h2 id="domain-controllers">3. Domain Controller Security</h2>
-
-        <p>Domain Controllers (DCs) are the crown jewels of your AD environment. Compromising a DC means game over.</p>
-
-        <h3>Physical Security</h3>
-        <ul>
-            <li>DCs should be in a secure datacenter with restricted physical access</li>
-            <li>Never run DCs as virtual machines on potentially compromised hypervisors</li>
-            <li>If using VMs, ensure hypervisor admins are Tier 0</li>
-        </ul>
-
-        <h3>Network Security</h3>
-        <ul>
-            <li>Place DCs in a dedicated VLAN/subnet</li>
-            <li>Use Windows Firewall with Advanced Security to restrict traffic</li>
-            <li>Only allow necessary ports (Kerberos, LDAP, DNS, etc.)</li>
-        </ul>
-
-        <pre><code># Recommended DC firewall rules (inbound)
-# Allow from management subnet only:
-TCP 135, 389, 445, 464, 636, 3268, 3269, 49152-65535
-UDP 53, 88, 123, 389, 464
-
-# Block all other inbound traffic from workstation subnets</code></pre>
-
-        <h3>OS Hardening</h3>
-        <ul>
-            <li><strong>Minimal installation:</strong> No additional roles, features, or software</li>
-            <li><strong>No internet access:</strong> DCs should never browse the web</li>
-            <li><strong>AppLocker/WDAC:</strong> Whitelist only required executables</li>
-            <li><strong>Enable Credential Guard:</strong> Protects NTLM hashes and Kerberos tickets in memory</li>
-        </ul>
-
-        <pre><code># Enable Credential Guard via GPO
-Computer Configuration → Administrative Templates → System → Device Guard
-  → Turn On Virtualization Based Security: Enabled
-  → Credential Guard Configuration: Enabled with UEFI lock</code></pre>
-
-        <h3>KRBTGT Account Management</h3>
-
-        <p>The <code>KRBTGT</code> account is used to sign all Kerberos tickets. If compromised, attackers can create
-            Golden Tickets for unlimited access.</p>
-
-        <div class="warning-box">
-            <strong><i class="fas fa-exclamation-triangle"></i> Critical:</strong> Reset the KRBTGT password
-            <strong>twice</strong> every 180 days. The password
-            must be reset twice because Kerberos keeps the current and previous password. Use Microsoft's official
-            KRBTGT reset script.
-        </div>
-
-        <pre><code># Check KRBTGT password age
-Get-ADUser krbtgt -Properties PasswordLastSet
-
-# Reset KRBTGT (run twice, 10+ hours apart)
-# Use Microsoft's script: https://github.com/microsoft/New-KrsbtgtKeys.ps1</code></pre>
-
-        <h2 id="gpo-security">4. GPO Hardening</h2>
-
-        <p>Group Policy Objects (GPOs) control security settings across your environment. Misconfigurations can weaken
-            security; proper hardening strengthens it.</p>
-
-        <h3>Essential GPO Settings</h3>
-
-        <h4>Password Policy</h4>
-        <pre><code>Computer Configuration → Policies → Windows Settings → Security Settings 
-  → Account Policies → Password Policy:
-  
-  Minimum password length: 14 characters
-  Password must meet complexity requirements: Enabled
-  Maximum password age: 365 days (for regular users)
-  Minimum password age: 1 day
-  Enforce password history: 24 passwords</code></pre>
-
-        <h4>Account Lockout Policy</h4>
-        <pre><code>Account lockout threshold: 5 invalid attempts
-Account lockout duration: 30 minutes
-Reset account lockout counter after: 30 minutes</code></pre>
-
-        <div class="info-box">
-            <strong><i class="fas fa-lightbulb"></i> Note:</strong> Consider using Fine-Grained Password Policies (FGPP)
-            for service accounts and
-            privileged users with longer, more complex passwords (25+ characters).
-        </div>
-
-        <h4>Audit Policy (Critical for Detection)</h4>
-        <pre><code>Computer Configuration → Policies → Windows Settings → Security Settings 
-  → Advanced Audit Policy:
-
-  Account Logon:
-    Audit Credential Validation: Success, Failure
-    Audit Kerberos Authentication Service: Success, Failure
-    Audit Kerberos Service Ticket Operations: Success, Failure
-  
-  Account Management:
-    Audit Security Group Management: Success
-    Audit User Account Management: Success, Failure
-  
-  Logon/Logoff:
-    Audit Logon: Success, Failure
-    Audit Special Logon: Success
-  
-  Object Access:
-    Audit File System: Success, Failure (on sensitive shares)
-  
-  Privilege Use:
-    Audit Sensitive Privilege Use: Success, Failure
-  
-  DS Access:
-    Audit Directory Service Access: Success, Failure
-    Audit Directory Service Changes: Success</code></pre>
-
-        <h4>Disable Legacy Protocols</h4>
-        <pre><code># Disable LLMNR (prevents poisoning attacks)
-Computer Configuration → Administrative Templates → Network → DNS Client
-  → Turn off multicast name resolution: Enabled
-
-# Disable NetBIOS over TCP/IP
-# Via DHCP scope options or NIC settings
-
-# Disable WPAD (Web Proxy Auto Discovery)
-# Create DNS entry "wpad" pointing to nonexistent IP</code></pre>
-
-        <h2 id="credential-protection">5. Credential Protection</h2>
-
-        <h3>LAPS (Local Administrator Password Solution)</h3>
-
-        <p>LAPS automatically manages local administrator passwords, ensuring each machine has a unique, complex
-            password stored securely in AD.</p>
-
-        <pre><code># Install LAPS
-Install-WindowsFeature RSAT-AD-PowerShell
-
-# Extend schema (run as Schema Admin)
-Import-Module AdmPwd.PS
-Update-AdmPwdADSchema
-
-# Set up LAPS GPO
-Computer Configuration → Administrative Templates → LAPS
-  → Enable local admin password management: Enabled
-  → Password Settings: Length 20, Complexity High, Age 30 days
-  → Name of administrator account to manage: "Administrator"</code></pre>
-
-        <h3>gMSA (Group Managed Service Accounts)</h3>
-
-        <p>Replace traditional service accounts with gMSAs. AD automatically rotates their 240-character passwords,
-            eliminating Kerberoasting risk.</p>
-
-        <pre><code># Create gMSA
-New-ADServiceAccount -Name "gMSA-SQLService" `
-    -DNSHostName "gmsa-sqlservice.domain.com" `
-    -PrincipalsAllowedToRetrieveManagedPassword "SQL-Servers"
-
-# Install on target server
-Install-ADServiceAccount -Identity "gMSA-SQLService"
-
-# Configure service to use gMSA (username: DOMAIN\gMSA-SQLService$, no password)</code></pre>
-
-        <h3>Protected Users Security Group</h3>
-
-        <p>Add high-value accounts to the <strong>Protected Users</strong> group for enhanced protection:</p>
-
-        <ul>
-            <li>NTLM authentication disabled</li>
-            <li>DES/RC4 encryption disabled for Kerberos</li>
-            <li>Credential delegation disabled</li>
-            <li>TGT lifetime reduced to 4 hours</li>
-        </ul>
-
-        <div class="warning-box">
-            <strong><i class="fas fa-exclamation-triangle"></i> Caution:</strong> Test thoroughly before adding service
-            accounts to Protected Users. Many
-            applications rely on NTLM or delegation and will break.
-        </div>
-
-        <h2 id="attack-prevention">6. Attack Prevention</h2>
-
-        <h3>Kerberoasting Prevention</h3>
+        <p>Attackers follow a predictable path when targeting AD:</p>
 
         <ol>
-            <li>Use gMSAs instead of traditional service accounts</li>
-            <li>Set long (25+ character) passwords for service accounts</li>
-            <li>Limit SPN assignments to necessary accounts only</li>
-            <li>Monitor for Kerberos Service Ticket requests (Event ID 4769)</li>
+            <li><strong>Initial Access</strong> - Phishing, vulnerability exploitation</li>
+            <li><strong>Credential Theft</strong> - Mimikatz, LSASS dumping</li>
+            <li><strong>Reconnaissance</strong> - BloodHound, AD enumeration</li>
+            <li><strong>Privilege Escalation</strong> - Kerberoasting, delegation abuse</li>
+            <li><strong>Lateral Movement</strong> - Pass-the-hash, pass-the-ticket</li>
+            <li><strong>Domain Dominance</strong> - DCSync, Golden Ticket</li>
         </ol>
+
+        <h2 id="tiered-model">2. The Tiered Administrative Model</h2>
+
+        <p>The tiered model is the foundation of AD security. It creates security boundaries that prevent attackers from
+            moving from low-value to high-value targets.</p>
+
+        <div class="tier-box tier-0">
+            <h4><i class="fas fa-crown" style="color: var(--accent-red);"></i> Tier 0 - Domain Controllers and Identity
+            </h4>
+            <p><strong>What belongs here:</strong></p>
+            <ul>
+                <li>Domain Controllers</li>
+                <li>AD FS, Azure AD Connect servers</li>
+                <li>PKI/Certificate Authority servers</li>
+                <li>Privileged Access Workstations (PAWs)</li>
+                <li>Domain Admin and Enterprise Admin accounts</li>
+            </ul>
+            <p><strong>Rule:</strong> Tier 0 admins NEVER log into Tier 1 or Tier 2 systems.</p>
+        </div>
+
+        <div class="tier-box tier-1">
+            <h4><i class="fas fa-server" style="color: var(--accent-orange);"></i> Tier 1 - Enterprise Servers</h4>
+            <p><strong>What belongs here:</strong></p>
+            <ul>
+                <li>Application servers</li>
+                <li>Database servers</li>
+                <li>File servers</li>
+                <li>Email servers</li>
+                <li>Server admin accounts</li>
+            </ul>
+            <p><strong>Rule:</strong> Tier 1 admins can manage servers but not workstations or DCs.</p>
+        </div>
+
+        <div class="tier-box tier-2">
+            <h4><i class="fas fa-desktop" style="color: var(--accent-green);"></i> Tier 2 - Workstations and Users</h4>
+            <p><strong>What belongs here:</strong></p>
+            <ul>
+                <li>User workstations</li>
+                <li>Laptops</li>
+                <li>Help desk support</li>
+                <li>Workstation admin accounts</li>
+            </ul>
+            <p><strong>Rule:</strong> Tier 2 admins only manage end-user devices.</p>
+        </div>
+
+        <h3>Implementing Tier Separation</h3>
+
+        <pre><code># Create tiered admin groups
+New-ADGroup -Name "Tier0-Admins" -GroupScope Global -Path "OU=Tier0,OU=Admin,DC=corp,DC=local"
+New-ADGroup -Name "Tier1-Admins" -GroupScope Global -Path "OU=Tier1,OU=Admin,DC=corp,DC=local"
+New-ADGroup -Name "Tier2-Admins" -GroupScope Global -Path "OU=Tier2,OU=Admin,DC=corp,DC=local"
+
+# Use GPO to restrict logon
+# Deny "Log on locally" for Tier0 admins on Tier1/Tier2 systems
+# Deny "Log on through Remote Desktop Services" similarly</code></pre>
+
+        <h2 id="privileged-accounts">3. Securing Privileged Accounts</h2>
+
+        <h3>Password Best Practices</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Account Type</th>
+                    <th>Minimum Length</th>
+                    <th>Rotation</th>
+                    <th>Storage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Domain Admin</td>
+                    <td class="severity-critical">25+ characters</td>
+                    <td>90 days</td>
+                    <td>Emergency break-glass only</td>
+                </tr>
+                <tr>
+                    <td>Service Accounts</td>
+                    <td class="severity-critical">25+ characters</td>
+                    <td>Use gMSA (automatic)</td>
+                    <td>Group Managed Service Accounts</td>
+                </tr>
+                <tr>
+                    <td>Tier 0 Admin</td>
+                    <td class="severity-high">20+ characters</td>
+                    <td>90 days</td>
+                    <td>PAM solution</td>
+                </tr>
+                <tr>
+                    <td>Tier 1/2 Admin</td>
+                    <td class="severity-medium">15+ characters</td>
+                    <td>90 days</td>
+                    <td>Password manager</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Protected Users Group</h3>
+
+        <p>Add all privileged accounts to the Protected Users security group:</p>
+
+        <pre><code># Add admin to Protected Users
+Add-ADGroupMember -Identity "Protected Users" -Members "AdminAccount"
+
+# Verify membership
+Get-ADGroupMember -Identity "Protected Users"</code></pre>
+
+        <p>Protected Users provides:</p>
+        <ul>
+            <li><i class="fas fa-check-circle" style="color: var(--accent-green);"></i> No NTLM authentication (prevents
+                pass-the-hash)</li>
+            <li><i class="fas fa-check-circle" style="color: var(--accent-green);"></i> No credential caching</li>
+            <li><i class="fas fa-check-circle" style="color: var(--accent-green);"></i> No DES or RC4 encryption in
+                Kerberos</li>
+            <li><i class="fas fa-check-circle" style="color: var(--accent-green);"></i> Cannot be delegated</li>
+        </ul>
+
+        <div class="warning-box">
+            <strong><i class="fas fa-exclamation-triangle"></i> Caution:</strong> Test Protected Users in a lab first.
+            Some legacy applications may break when NTLM is disabled. Service accounts should use gMSAs instead of
+            Protected Users.
+        </div>
+
+        <h3>LAPS for Local Admin Passwords</h3>
+
+        <p>Local Administrator Password Solution (LAPS) ensures unique passwords on every machine:</p>
+
+        <pre><code># Deploy LAPS via GPO
+# 1. Install LAPS management tools
+Install-WindowsFeature RSAT-AD-Tools
+
+# 2. Extend AD schema (one-time)
+Update-AdmPwdADSchema
+
+# 3. Set permissions
+Set-AdmPwdComputerSelfPermission -OrgUnit "OU=Workstations,DC=corp,DC=local"
+
+# 4. Allow IT to read passwords
+Set-AdmPwdReadPasswordPermission -OrgUnit "OU=Workstations,DC=corp,DC=local" -AllowedPrincipals "Tier2-Admins"</code></pre>
+
+        <h2 id="kerberos">4. Kerberos Hardening</h2>
+
+        <p>Kerberos is the authentication protocol for AD. Hardening it prevents many common attacks.</p>
+
+        <h3>Kerberoasting Defense</h3>
+
+        <div class="attack-box">
+            <strong>Kerberoasting</strong> extracts service account password hashes from TGS tickets. Attackers request
+            tickets for SPNs, then crack them offline.
+        </div>
+
+        <div class="defense-box">
+            <ul>
+                <li><strong>Use gMSAs</strong> - Automatic 240-character passwords that rotate automatically</li>
+                <li><strong>Long passwords</strong> - 25+ characters for all service accounts</li>
+                <li><strong>Monitor TGS requests</strong> - Alert on bulk ticket requests</li>
+                <li><strong>Limit SPN accounts</strong> - Audit and remove unnecessary SPNs</li>
+            </ul>
+        </div>
 
         <pre><code># Find accounts with SPNs (potential Kerberoasting targets)
 Get-ADUser -Filter {ServicePrincipalName -ne "$null"} -Properties ServicePrincipalName | 
-    Select Name, ServicePrincipalName</code></pre>
+    Select-Object Name, ServicePrincipalName
 
-        <h3>Pass-the-Hash Prevention</h3>
+# Create a gMSA
+New-ADServiceAccount -Name "svc-webapp" `
+    -DNSHostName "svc-webapp.corp.local" `
+    -PrincipalsAllowedToRetrieveManagedPassword "WebServers"</code></pre>
 
-        <ol>
-            <li><strong>Enable Credential Guard</strong> on all supported systems</li>
-            <li>Disable NTLM where possible (use Kerberos only)</li>
-            <li>Never log into untrusted systems with privileged accounts</li>
-            <li>Use Remote Credential Guard for RDP sessions</li>
-        </ol>
+        <h3>AS-REP Roasting Defense</h3>
 
-        <pre><code># Audit NTLM usage before disabling
-# GPO: Security Settings → Local Policies → Security Options
-Network security: Restrict NTLM: Audit all NTLM authentication
+        <div class="attack-box">
+            <strong>AS-REP Roasting</strong> targets accounts with Kerberos pre-authentication disabled, allowing
+            attackers to request encrypted data crackable offline.
+        </div>
 
-# After confirming apps don't need NTLM:
-Network security: Restrict NTLM: Deny all in this domain</code></pre>
+        <div class="defense-box">
+            <p>Ensure NO accounts have "Do not require Kerberos preauthentication" enabled:</p>
+        </div>
 
-        <h3>DCSync Prevention</h3>
+        <pre><code># Find vulnerable accounts
+Get-ADUser -Filter {DoesNotRequirePreAuth -eq $True} -Properties DoesNotRequirePreAuth
 
-        <p>DCSync requires <code>Replicating Directory Changes</code> and <code>Replicating Directory Changes All</code>
-            permissions. Audit and restrict these:</p>
+# Fix vulnerable accounts
+Set-ADAccountControl -Identity "VulnerableUser" -DoesNotRequirePreAuth $false</code></pre>
 
-        <pre><code># Find users with DCSync rights (should only be DCs and specific admin accounts)
-Import-Module ActiveDirectory
-$domainDN = (Get-ADDomain).DistinguishedName
+        <h3>Disable Weak Encryption</h3>
 
-Get-ADObject -SearchBase $domainDN -Filter * -Properties nTSecurityDescriptor | 
-    ForEach-Object {
-        $_.nTSecurityDescriptor.Access | 
-        Where-Object { $_.ActiveDirectoryRights -match "ExtendedRight" } |
-        Where-Object { $_.ObjectType -match "1131f6aa-|1131f6ad-" }
-    }</code></pre>
+        <pre><code># Via GPO: Computer Configuration > Policies > Windows Settings > 
+# Security Settings > Local Policies > Security Options
 
-        <h3>AdminSDHolder Monitoring</h3>
+# "Network security: Configure encryption types allowed for Kerberos"
+# Enable ONLY: AES128_HMAC_SHA1, AES256_HMAC_SHA1
+# Disable: DES_CBC_CRC, DES_CBC_MD5, RC4_HMAC_MD5</code></pre>
 
-        <p>Attackers modify AdminSDHolder to persist permissions on privileged groups. Monitor for changes:</p>
+        <h2 id="gpo-security">5. Group Policy Security</h2>
 
-        <pre><code># Check AdminSDHolder ACL
-Get-ADObject "CN=AdminSDHolder,CN=System,DC=domain,DC=com" -Properties nTSecurityDescriptor |
-    Select -ExpandProperty nTSecurityDescriptor |
-    Select -ExpandProperty Access</code></pre>
+        <h3>Critical GPO Hardening</h3>
 
-        <h2 id="monitoring">7. Monitoring & Detection</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Setting</th>
+                    <th>Location</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Disable LM hash storage</td>
+                    <td>Security Options</td>
+                    <td>Enabled</td>
+                </tr>
+                <tr>
+                    <td>LAN Manager auth level</td>
+                    <td>Security Options</td>
+                    <td>Send NTLMv2 only/Refuse LM and NTLM</td>
+                </tr>
+                <tr>
+                    <td>Credential Guard</td>
+                    <td>Device Guard</td>
+                    <td>Enabled with UEFI lock</td>
+                </tr>
+                <tr>
+                    <td>Remote Credential Guard</td>
+                    <td>Credentials Delegation</td>
+                    <td>Enabled</td>
+                </tr>
+                <tr>
+                    <td>Restrict NTLM</td>
+                    <td>NTLM Settings</td>
+                    <td>Audit then Deny</td>
+                </tr>
+            </tbody>
+        </table>
 
-        <h3>Critical Event IDs to Monitor</h3>
+        <h2 id="common-attacks">6. Detecting Common AD Attacks</h2>
+
+        <h3>DCSync Attack</h3>
+
+        <div class="attack-box">
+            <strong>DCSync</strong> abuses domain replication permissions to request password hashes directly from a DC.
+            Attackers use Mimikatz to impersonate a domain controller.
+        </div>
+
+        <div class="defense-box">
+            <p><strong>Detection:</strong> Monitor Event ID 4662 for these GUIDs:</p>
+            <ul>
+                <li><code>1131f6aa-9c07-11d1-f79f-00c04fc2dcd2</code> - DS-Replication-Get-Changes</li>
+                <li><code>1131f6ad-9c07-11d1-f79f-00c04fc2dcd2</code> - DS-Replication-Get-Changes-All</li>
+            </ul>
+            <p><strong>Prevention:</strong> Audit and restrict replication rights to only Domain Controllers.</p>
+        </div>
+
+        <h3>Golden Ticket Attack</h3>
+
+        <div class="attack-box">
+            <strong>Golden Ticket</strong> uses the KRBTGT hash to forge TGTs for any user, including non-existent ones,
+            with any group membership.
+        </div>
+
+        <div class="defense-box">
+            <ul>
+                <li><strong>Rotate KRBTGT twice</strong> (with 10+ hour gap)</li>
+                <li><strong>Monitor for TGT anomalies</strong> - Long lifetimes, impossible SIDs</li>
+                <li><strong>Use Microsoft ATA/Defender for Identity</strong></li>
+            </ul>
+        </div>
+
+        <pre><code># Reset KRBTGT password (do this twice, 10+ hours apart)
+# WARNING: May cause authentication issues - plan carefully
+Reset-ADServiceAccountPassword -Identity krbtgt
+
+# Verify last password change
+Get-ADUser krbtgt -Properties PasswordLastSet | Select-Object PasswordLastSet</code></pre>
+
+        <h2 id="monitoring">7. Monitoring and Alerting</h2>
+
+        <h3>Critical Events to Monitor</h3>
 
         <table>
             <thead>
                 <tr>
                     <th>Event ID</th>
                     <th>Description</th>
-                    <th>Alert On</th>
+                    <th>Priority</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td><code>4624</code></td>
-                    <td>Successful logon</td>
-                    <td>Tier 0 accounts on Tier 2 systems</td>
+                    <td>4728/4732/4756</td>
+                    <td>Member added to sensitive group</td>
+                    <td class="severity-critical">Critical</td>
                 </tr>
                 <tr>
-                    <td><code>4625</code></td>
-                    <td>Failed logon</td>
-                    <td>Multiple failures (password spray)</td>
+                    <td>4662</td>
+                    <td>Directory service access (DCSync)</td>
+                    <td class="severity-critical">Critical</td>
                 </tr>
                 <tr>
-                    <td><code>4648</code></td>
+                    <td>4769</td>
+                    <td>Kerberos service ticket (Kerberoasting)</td>
+                    <td class="severity-high">High</td>
+                </tr>
+                <tr>
+                    <td>4768</td>
+                    <td>Kerberos TGT request (Golden Ticket)</td>
+                    <td class="severity-high">High</td>
+                </tr>
+                <tr>
+                    <td>4625</td>
+                    <td>Failed logon attempts</td>
+                    <td class="severity-medium">Medium</td>
+                </tr>
+                <tr>
+                    <td>4648</td>
                     <td>Explicit credential logon</td>
-                    <td>Unusual service accounts</td>
+                    <td class="severity-medium">Medium</td>
                 </tr>
                 <tr>
-                    <td><code>4672</code></td>
-                    <td>Special privileges assigned</td>
-                    <td>New privileged logons</td>
-                </tr>
-                <tr>
-                    <td><code>4720</code></td>
-                    <td>User account created</td>
-                    <td>Unexpected account creation</td>
-                </tr>
-                <tr>
-                    <td><code>4728/4732</code></td>
-                    <td>Member added to group</td>
-                    <td>Privileged group changes</td>
-                </tr>
-                <tr>
-                    <td><code>4769</code></td>
-                    <td>Kerberos service ticket requested</td>
-                    <td>RC4 encryption (Kerberoasting)</td>
-                </tr>
-                <tr>
-                    <td><code>4776</code></td>
-                    <td>NTLM authentication</td>
-                    <td>Unusual NTLM usage</td>
-                </tr>
-                <tr>
-                    <td><code>5136</code></td>
+                    <td>5136</td>
                     <td>Directory object modified</td>
-                    <td>Schema/AdminSDHolder changes</td>
+                    <td class="severity-medium">Medium</td>
                 </tr>
             </tbody>
         </table>
 
-        <h3>SIEM Detection Rules</h3>
+        <h2 id="quick-wins">8. Quick Wins Checklist</h2>
 
-        <pre><code># Detect potential Kerberoasting
-event_id:4769 AND encryption_type:"0x17" # RC4 encryption
+        <p>Implement these changes today for immediate security improvement:</p>
 
-# Detect password spraying
-event_id:4625 | stats count by src_ip, user | where count > 5
-
-# Detect DCSync
-event_id:4662 AND properties:("1131f6aa-*" OR "1131f6ad-*") NOT user:*$
-
-# Detect Golden/Silver Ticket (TGT without TGS)
-event_id:4769 NOT preceded_by:event_id:4768 within 10m</code></pre>
-
-        <h2 id="checklist">8. Hardening Checklist</h2>
-
-        <div class="checklist">
-            <h3>🔒 Active Directory Hardening Checklist</h3>
-
-            <h4>Tier Model Implementation</h4>
+        <div class="success-box">
+            <h4><i class="fas fa-check-circle"></i> Week 1 Quick Wins</h4>
             <ul>
-                <li>Separate admin accounts for each tier (T0, T1, T2)</li>
-                <li>Privileged Access Workstations deployed for Tier 0/1</li>
-                <li>GPO enforcing tier isolation</li>
-                <li>Protected Users group used for high-value accounts</li>
-            </ul>
-
-            <h4>Domain Controller Security</h4>
-            <ul>
-                <li>DCs in dedicated VLAN with firewall rules</li>
-                <li>Credential Guard enabled</li>
-                <li>AppLocker/WDAC configured</li>
-                <li>KRBTGT password reset in last 180 days</li>
-                <li>No non-DC roles installed</li>
-            </ul>
-
-            <h4>Credential Protection</h4>
-            <ul>
-                <li>LAPS deployed to all workstations and servers</li>
-                <li>gMSAs used for service accounts</li>
-                <li>14+ character minimum password length</li>
-                <li>Fine-grained password policies for privileged accounts</li>
-            </ul>
-
-            <h4>Attack Surface Reduction</h4>
-            <ul>
-                <li>LLMNR disabled</li>
-                <li>NetBIOS over TCP/IP disabled</li>
-                <li>NTLM restricted/audited</li>
-                <li>Unnecessary SPNs removed</li>
-                <li>AdminSDHolder monitored</li>
-            </ul>
-
-            <h4>Monitoring & Detection</h4>
-            <ul>
-                <li>Advanced audit policy configured</li>
-                <li>Logs forwarded to SIEM</li>
-                <li>Detection rules for Kerberoasting, DCSync, etc.</li>
-                <li>Privileged group changes alerted</li>
+                <li>Add all Domain Admins to Protected Users group</li>
+                <li>Find and fix accounts with "Do not require Kerberos preauthentication"</li>
+                <li>Deploy LAPS to all workstations</li>
+                <li>Disable LM hash storage</li>
+                <li>Set LAN Manager to NTLMv2 only</li>
             </ul>
         </div>
 
         <div class="success-box">
-            <strong><i class="fas fa-check-circle"></i> Next Steps:</strong>
-            <ul style="margin-top: 1rem;">
-                <li>Run <a href="https://github.com/BloodHoundAD/BloodHound"
-                        style="color: var(--accent-cyan);">BloodHound</a> to discover attack paths in your AD</li>
-                <li>Use <a href="https://www.pingcastle.com/" style="color: var(--accent-cyan);">PingCastle</a> for
-                    automated AD security assessment</li>
-                <li>Review Microsoft's <a
-                        href="https://docs.microsoft.com/en-us/security/compass/privileged-access-access-model"
-                        style="color: var(--accent-cyan);">Enterprise Access Model</a> documentation</li>
+            <h4><i class="fas fa-check-circle"></i> Month 1 Goals</h4>
+            <ul>
+                <li>Implement tiered admin model</li>
+                <li>Convert service accounts to gMSAs</li>
+                <li>Enable advanced audit policies</li>
+                <li>Deploy Credential Guard on Windows 10/11</li>
+                <li>Set up alerting for critical Event IDs</li>
             </ul>
         </div>
 
-        <div class="info-box">
-            <strong><i class="fas fa-link"></i> Related Resources:</strong>
-            <ul style="margin-top: 1rem;">
-                <li><a href="/guides/windows-event-log-analysis.html" style="color: var(--accent-cyan);">Windows Event
-                        Log Analysis Guide</a></li>
-                <li><a href="/guides/siem-log-analysis.html" style="color: var(--accent-cyan);">SIEM Log Analysis for
-                        Beginners</a></li>
-                <li><a href="/guides/incident-response-automation.html" style="color: var(--accent-cyan);">Incident
-                        Response Automation</a></li>
-                <li><a href="/comparisons/splunk-vs-elastic-security-vs-logrhythm.html"
-                        style="color: var(--accent-cyan);">SIEM Platform Comparison</a></li>
+        <div class="success-box">
+            <h4><i class="fas fa-check-circle"></i> Quarter 1 Goals</h4>
+            <ul>
+                <li>Deploy PAWs for Tier 0 administration</li>
+                <li>Implement just-in-time (JIT) admin access</li>
+                <li>Complete KRBTGT rotation</li>
+                <li>Restrict NTLM across the environment</li>
+                <li>Deploy Microsoft Defender for Identity or similar</li>
+            </ul>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="related-guides">
+            <h3><i class="fas fa-link"></i> Related Guides</h3>
+            <ul>
+                <li><a href="/guides/zero-trust-architecture.html">Zero Trust Architecture Guide</a></li>
+                <li><a href="/guides/ransomware-response-playbook.html">Ransomware Response Playbook</a></li>
+                <li><a href="/guides/azure-security-fundamentals.html">Azure Security Fundamentals</a> (Coming Soon)
+                </li>
+                <li><a href="/guides/privileged-access-management.html">Privileged Access Management</a> (Coming Soon)
+                </li>
             </ul>
         </div>
 
         <p style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); color: var(--text-muted);">
             <strong>Author:</strong> TheHGTech Security Team<br>
-            <strong>Last Updated:</strong> December 2025<br>
-            <strong>Reading Time:</strong> 25 minutes
+            <strong>Last Updated:</strong> January 2026<br>
+            <strong>Reading Time:</strong> 28 minutes
         </p>
     </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const body = document.body;
-            if (localStorage.getItem('theme') === 'light') {
-                body.classList.add('light-mode');
-            }
-        });
-    </script>
 
     <!-- Interaction Bar -->
     <div class="interaction-bar">
@@ -1099,6 +1025,7 @@ event_id:4769 NOT preceded_by:event_id:4768 within 10m</code></pre>
         </div>
     </div>
 
+    <script src="/header.js"></script>
     <script src="/interaction-bar.js?v=20251217"></script>
 </body>
 
