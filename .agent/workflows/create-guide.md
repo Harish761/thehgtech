@@ -35,7 +35,35 @@ When creating a new guide for TheHGTech, follow these standards:
 <meta name="twitter:card" content="summary_large_image">
 
 <!-- Structured Data: TechArticle schema -->
+
+<!-- Structured Data: BreadcrumbList (REQUIRED for SEO) -->
 ```
+
+## Required Breadcrumb Schema
+Every guide MUST include breadcrumb structured data in `<head>`:
+```html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Home",
+    "item": "https://thehgtech.com"
+  }, {
+    "@type": "ListItem",
+    "position": 2,
+    "name": "Guides",
+    "item": "https://thehgtech.com/guides/"
+  }, {
+    "@type": "ListItem",
+    "position": 3,
+    "name": "[Guide Title]",
+    "item": "https://thehgtech.com/guides/[filename].html"
+  }]
+}
+</script>
 
 ## CSS Variables (Use These)
 ```css

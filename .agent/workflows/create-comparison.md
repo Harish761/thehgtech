@@ -30,7 +30,35 @@ Tool comparisons help security professionals choose the right solutions. They sh
 <meta name="keywords" content="[tool1] vs [tool2], [tool1] comparison, [tool2] review, security tools comparison">
 
 <!-- Structured Data: Use comparison/review schema -->
+
+<!-- Structured Data: BreadcrumbList (REQUIRED for SEO) -->
 ```
+
+## Required Breadcrumb Schema
+Every comparison MUST include breadcrumb structured data in `<head>`:
+```html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Home",
+    "item": "https://thehgtech.com"
+  }, {
+    "@type": "ListItem",
+    "position": 2,
+    "name": "Comparisons",
+    "item": "https://thehgtech.com/comparisons/"
+  }, {
+    "@type": "ListItem",
+    "position": 3,
+    "name": "[Comparison Title]",
+    "item": "https://thehgtech.com/comparisons/[filename].html"
+  }]
+}
+</script>
 
 ## Comparison Structure
 

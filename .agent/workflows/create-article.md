@@ -65,7 +65,35 @@ All articles MUST be comprehensive and in-depth:
 <meta property="article:section" content="Cybersecurity">
 
 <!-- Structured Data: NewsArticle or Article schema -->
+
+<!-- Structured Data: BreadcrumbList (REQUIRED for SEO) -->
 ```
+
+## Required Breadcrumb Schema
+Every article MUST include breadcrumb structured data in `<head>`:
+```html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Home",
+    "item": "https://thehgtech.com"
+  }, {
+    "@type": "ListItem",
+    "position": 2,
+    "name": "Articles",
+    "item": "https://thehgtech.com/articles.html"
+  }, {
+    "@type": "ListItem",
+    "position": 3,
+    "name": "[Article Title]",
+    "item": "https://thehgtech.com/articles/[filename].html"
+  }]
+}
+</script>
 
 ## Featured Image Requirements - IMPORTANT!
 
