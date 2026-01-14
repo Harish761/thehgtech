@@ -1,8 +1,8 @@
 {
   "vendor": "Feodo Tracker",
-  "lastUpdated": "2026-01-14T02:06:25.859866+05:30",
-  "totalCount": 4,
-  "displayedCount": 4,
+  "lastUpdated": "2026-01-14T08:00:49.107029+05:30",
+  "totalCount": 5,
+  "displayedCount": 5,
   "isCapped": false,
   "cappingStrategy": null,
   "iocs": [
@@ -13,13 +13,13 @@
       "timestamp": "just now",
       "source": "Feodo Tracker",
       "sourceUrl": "https://feodotracker.abuse.ch/",
-      "analysisTime": "2026-01-14 02:06 IST",
+      "analysisTime": "2026-01-14 08:00 IST",
       "tags": [
         "botnet",
         "c2",
         "banking-trojan"
       ],
-      "addedAt": "2026-01-14T02:06:22.580950+05:30",
+      "addedAt": "2026-01-14T08:00:45.648743+05:30",
       "campaign": "Banking Malware C2"
     },
     {
@@ -29,13 +29,13 @@
       "timestamp": "just now",
       "source": "Feodo Tracker",
       "sourceUrl": "https://feodotracker.abuse.ch/",
-      "analysisTime": "2026-01-14 02:06 IST",
+      "analysisTime": "2026-01-14 08:00 IST",
       "tags": [
         "botnet",
         "c2",
         "banking-trojan"
       ],
-      "addedAt": "2026-01-14T02:06:22.580950+05:30",
+      "addedAt": "2026-01-14T08:00:45.648743+05:30",
       "campaign": "Banking Malware C2"
     },
     {
@@ -45,13 +45,29 @@
       "timestamp": "just now",
       "source": "Feodo Tracker",
       "sourceUrl": "https://feodotracker.abuse.ch/",
-      "analysisTime": "2026-01-14 02:06 IST",
+      "analysisTime": "2026-01-14 08:00 IST",
       "tags": [
         "botnet",
         "c2",
         "banking-trojan"
       ],
-      "addedAt": "2026-01-14T02:06:22.580950+05:30",
+      "addedAt": "2026-01-14T08:00:45.648743+05:30",
+      "campaign": "Banking Malware C2"
+    },
+    {
+      "type": "ip",
+      "indicator": "34[.]204[.]119[.]63",
+      "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
+      "timestamp": "just now",
+      "source": "Feodo Tracker",
+      "sourceUrl": "https://feodotracker.abuse.ch/",
+      "analysisTime": "2026-01-14 08:00 IST",
+      "tags": [
+        "botnet",
+        "c2",
+        "banking-trojan"
+      ],
+      "addedAt": "2026-01-14T08:00:45.648743+05:30",
       "campaign": "Banking Malware C2"
     },
     {
@@ -61,13 +77,13 @@
       "timestamp": "just now",
       "source": "Feodo Tracker",
       "sourceUrl": "https://feodotracker.abuse.ch/",
-      "analysisTime": "2026-01-14 02:06 IST",
+      "analysisTime": "2026-01-14 08:00 IST",
       "tags": [
         "botnet",
         "c2",
         "banking-trojan"
       ],
-      "addedAt": "2026-01-14T02:06:22.580950+05:30",
+      "addedAt": "2026-01-14T08:00:45.648743+05:30",
       "campaign": "Banking Malware C2"
     }
   ]
