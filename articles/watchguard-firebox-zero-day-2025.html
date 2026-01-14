@@ -385,6 +385,30 @@
     <link rel="stylesheet" href="/m-layout.css?v=3.2">
     <link rel="stylesheet" href="/m-components.css?v=3.0">
     <script src="/m-app.js?v=4.3" defer></script>
+
+    <!-- ========== STRUCTURED DATA - BREADCRUMB ========== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://thehgtech.com"
+      }, {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Articles",
+        "item": "https://thehgtech.com/articles.html"
+      }, {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "WatchGuard Firebox Zero-Day CVE-2025-14733 Under Active E...",
+        "item": "https://thehgtech.com/articles/watchguard-firebox-zero-day-2025.html"
+      }]
+    }
+    </script>
 </head>
 
 <body>

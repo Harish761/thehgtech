@@ -625,6 +625,30 @@
     <link rel="stylesheet" href="/m-layout.css?v=3.2">
     <link rel="stylesheet" href="/m-components.css?v=3.0">
     <script src="/m-app.js?v=4.3" defer></script>
+
+    <!-- ========== STRUCTURED DATA - BREADCRUMB ========== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://thehgtech.com"
+      }, {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Guides",
+        "item": "https://thehgtech.com/guides/"
+      }, {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "ISO 27001 Certification: Complete Roadmap & Timeline [2025]",
+        "item": "https://thehgtech.com/guides/iso-27001-certification-roadmap.html"
+      }]
+    }
+    </script>
 </head>
 
 <body>

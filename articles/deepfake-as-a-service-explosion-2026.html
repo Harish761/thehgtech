@@ -451,6 +451,30 @@
     <link rel="stylesheet" href="/m-layout.css?v=3.2">
     <link rel="stylesheet" href="/m-components.css?v=3.0">
     <script src="/m-app.js?v=4.3" defer></script>
+
+    <!-- ========== STRUCTURED DATA - BREADCRUMB ========== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://thehgtech.com"
+      }, {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Articles",
+        "item": "https://thehgtech.com/articles.html"
+      }, {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Deepfake-as-a-Service: Criminals Rent AI Impersonation To...",
+        "item": "https://thehgtech.com/articles/deepfake-as-a-service-explosion-2026.html"
+      }]
+    }
+    </script>
 </head>
 
 <body>
