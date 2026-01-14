@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-01-14T01:52:03.511635",
+  "last_updated": "2026-01-14T12:49:18.786724",
   "period": "Last 7 days",
-  "total_groups": 29,
-  "total_victims": 237,
+  "total_groups": 30,
+  "total_victims": 236,
   "groups": [
     {
       "name": "Qilin",
@@ -368,97 +368,6 @@
       ]
     },
     {
-      "name": "Thegentlemen",
-      "count": 17,
-      "victims": [
-        {
-          "name": "Dsm Information Technology Trade Ltd.",
-          "date": "2026-01-11 18:58:58.000687",
-          "url": "http://tezwsse5czllksjb7cwp65rvnk4oobmzti2znn42i43bjdfd2prqqkad.onion",
-          "discovered_date": "2026-01-11T18:58:58.000687"
-        },
-        {
-          "name": "Real Tech",
-          "date": "2026-01-11 18:59:34.524275",
-          "url": "http://tezwsse5czllksjb7cwp65rvnk4oobmzti2znn42i43bjdfd2prqqkad.onion",
-          "discovered_date": "2026-01-11T18:59:34.524275"
-        },
-        {
-          "name": "Warka Bank for Investment and Finance",
-          "date": "2026-01-11 18:00:19.485619",
-          "url": "http://tezwsse5czllksjb7cwp65rvnk4oobmzti2znn42i43bjdfd2prqqkad.onion",
-          "discovered_date": "2026-01-11T18:00:19.485619"
-        },
-        {
-          "name": "DTI Foreign Trade Service Corps",
-          "date": "2026-01-11 17:59:14.614215",
-          "url": "http://tezwsse5czllksjb7cwp65rvnk4oobmzti2znn42i43bjdfd2prqqkad.onion",
-          "discovered_date": "2026-01-11T17:59:14.614215"
-        },
-        {
-          "name": "Hog Slat",
-          "date": "2026-01-11 17:59:40.890216",
-          "url": "http://tezwsse5czllksjb7cwp65rvnk4oobmzti2znn42i43bjdfd2prqqkad.onion",
-          "discovered_date": "2026-01-11T17:59:40.890216"
-        },
-        {
-          "name": "Dekoyap",
-          "date": "2026-01-11 18:00:37.947674",
-          "url": "http://tezwsse5czllksjb7cwp65rvnk4oobmzti2znn42i43bjdfd2prqqkad.onion",
-          "discovered_date": "2026-01-11T18:00:37.947674"
-        },
-        {
-          "name": "Pos Bilişim Teknolojileri",
-          "date": "2026-01-11 18:58:20.825889",
-          "url": "http://tezwsse5czllksjb7cwp65rvnk4oobmzti2znn42i43bjdfd2prqqkad.onion",
-          "discovered_date": "2026-01-11T18:58:20.825889"
-        },
-        {
-          "name": "Real Tech",
-          "date": "2026-01-11T18:59:34+00:00",
-          "url": "https://www.ransomware.live/id/UmVhbCBUZWNoQHRoZWdlbnRsZW1lbg==",
-          "discovered_date": "2026-01-11T18:59:34+00:00"
-        },
-        {
-          "name": "Dsm Information Technology Trade Ltd.",
-          "date": "2026-01-11T18:58:58+00:00",
-          "url": "https://www.ransomware.live/id/RHNtIEluZm9ybWF0aW9uIFRlY2hub2xvZ3kgVHJhZGUgTHRkLkB0aGVnZW50bGVtZW4=",
-          "discovered_date": "2026-01-11T18:58:58+00:00"
-        },
-        {
-          "name": "Pos Bilişim Teknolojileri",
-          "date": "2026-01-11T18:58:20+00:00",
-          "url": "https://www.ransomware.live/id/UG9zIEJpbGnFn2ltIFRla25vbG9qaWxlcmlAdGhlZ2VudGxlbWVu",
-          "discovered_date": "2026-01-11T18:58:20+00:00"
-        }
-      ],
-      "industries": [
-        "Business Services",
-        "Financial Services",
-        "Manufacturing",
-        "Not Found",
-        "Technology"
-      ],
-      "countries": [
-        "CA",
-        "GB",
-        "IQ",
-        "N/A",
-        "PH"
-      ],
-      "trend": "up",
-      "trend_percentage": 15,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        14,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Devman",
       "count": 16,
       "victims": [
@@ -542,6 +451,97 @@
         0,
         0,
         16,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Thegentlemen",
+      "count": 14,
+      "victims": [
+        {
+          "name": "Dsm Information Technology Trade Ltd.",
+          "date": "2026-01-11 18:58:58.000687",
+          "url": "http://tezwsse5czllksjb7cwp65rvnk4oobmzti2znn42i43bjdfd2prqqkad.onion",
+          "discovered_date": "2026-01-11T18:58:58.000687"
+        },
+        {
+          "name": "Real Tech",
+          "date": "2026-01-11 18:59:34.524275",
+          "url": "http://tezwsse5czllksjb7cwp65rvnk4oobmzti2znn42i43bjdfd2prqqkad.onion",
+          "discovered_date": "2026-01-11T18:59:34.524275"
+        },
+        {
+          "name": "Warka Bank for Investment and Finance",
+          "date": "2026-01-11 18:00:19.485619",
+          "url": "http://tezwsse5czllksjb7cwp65rvnk4oobmzti2znn42i43bjdfd2prqqkad.onion",
+          "discovered_date": "2026-01-11T18:00:19.485619"
+        },
+        {
+          "name": "DTI Foreign Trade Service Corps",
+          "date": "2026-01-11 17:59:14.614215",
+          "url": "http://tezwsse5czllksjb7cwp65rvnk4oobmzti2znn42i43bjdfd2prqqkad.onion",
+          "discovered_date": "2026-01-11T17:59:14.614215"
+        },
+        {
+          "name": "Hog Slat",
+          "date": "2026-01-11 17:59:40.890216",
+          "url": "http://tezwsse5czllksjb7cwp65rvnk4oobmzti2znn42i43bjdfd2prqqkad.onion",
+          "discovered_date": "2026-01-11T17:59:40.890216"
+        },
+        {
+          "name": "Dekoyap",
+          "date": "2026-01-11 18:00:37.947674",
+          "url": "http://tezwsse5czllksjb7cwp65rvnk4oobmzti2znn42i43bjdfd2prqqkad.onion",
+          "discovered_date": "2026-01-11T18:00:37.947674"
+        },
+        {
+          "name": "Pos Bilişim Teknolojileri",
+          "date": "2026-01-11 18:58:20.825889",
+          "url": "http://tezwsse5czllksjb7cwp65rvnk4oobmzti2znn42i43bjdfd2prqqkad.onion",
+          "discovered_date": "2026-01-11T18:58:20.825889"
+        },
+        {
+          "name": "Real Tech",
+          "date": "2026-01-11T18:59:34+00:00",
+          "url": "https://www.ransomware.live/id/UmVhbCBUZWNoQHRoZWdlbnRsZW1lbg==",
+          "discovered_date": "2026-01-11T18:59:34+00:00"
+        },
+        {
+          "name": "Dsm Information Technology Trade Ltd.",
+          "date": "2026-01-11T18:58:58+00:00",
+          "url": "https://www.ransomware.live/id/RHNtIEluZm9ybWF0aW9uIFRlY2hub2xvZ3kgVHJhZGUgTHRkLkB0aGVnZW50bGVtZW4=",
+          "discovered_date": "2026-01-11T18:58:58+00:00"
+        },
+        {
+          "name": "Pos Bilişim Teknolojileri",
+          "date": "2026-01-11T18:58:20+00:00",
+          "url": "https://www.ransomware.live/id/UG9zIEJpbGnFn2ltIFRla25vbG9qaWxlcmlAdGhlZ2VudGxlbWVu",
+          "discovered_date": "2026-01-11T18:58:20+00:00"
+        }
+      ],
+      "industries": [
+        "Business Services",
+        "Financial Services",
+        "Manufacturing",
+        "Not Found",
+        "Technology"
+      ],
+      "countries": [
+        "CA",
+        "GB",
+        "IQ",
+        "PH",
+        "TR"
+      ],
+      "trend": "up",
+      "trend_percentage": 15,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        14,
+        0,
         0,
         0
       ]
@@ -875,6 +875,68 @@
       ]
     },
     {
+      "name": "Genesis",
+      "count": 6,
+      "victims": [
+        {
+          "name": "*** *********",
+          "date": "2026-01-14 09:51:33.575315",
+          "url": "http://genesis6ixpb5mcy4kudybtw5op2wqlrkocfogbnenz3c647ibqixiad.onion/a540b155da0a63b229ca/",
+          "discovered_date": "2026-01-14T09:51:33.575315"
+        },
+        {
+          "name": "Advanced Family Surgery Center (Covenant Health)",
+          "date": "2026-01-11 12:23:13.351063",
+          "url": "http://genesis6ixpb5mcy4kudybtw5op2wqlrkocfogbnenz3c647ibqixiad.onion/61f7f99d32a7af3f28a4/",
+          "discovered_date": "2026-01-11T12:23:13.351063"
+        },
+        {
+          "name": "Novelty Technology Care Espana (Part of GRUPO NTC)",
+          "date": "2026-01-11 12:23:53.423565",
+          "url": "http://genesis6ixpb5mcy4kudybtw5op2wqlrkocfogbnenz3c647ibqixiad.onion/889c157b885c4a13f8e9/",
+          "discovered_date": "2026-01-11T12:23:53.423565"
+        },
+        {
+          "name": "*** *********",
+          "date": "2026-01-14T09:51:33+00:00",
+          "url": "https://www.ransomware.live/id/KioqICoqKioqKioqKkBnZW5lc2lz",
+          "discovered_date": "2026-01-14T09:51:33+00:00"
+        },
+        {
+          "name": "Novelty Technology Care Espana (Part of GRUPO NTC)",
+          "date": "2026-01-11T12:23:53+00:00",
+          "url": "https://www.ransomware.live/id/Tm92ZWx0eSBUZWNobm9sb2d5IENhcmUgRXNwYW5hIChQYXJ0IG9mIEdSVVBPIE5UQylAZ2VuZXNpcw==",
+          "discovered_date": "2026-01-11T12:23:53+00:00"
+        },
+        {
+          "name": "Advanced Family Surgery Center (Covenant Health)",
+          "date": "2026-01-11T12:23:13+00:00",
+          "url": "https://www.ransomware.live/id/QWR2YW5jZWQgRmFtaWx5IFN1cmdlcnkgQ2VudGVyIChDb3ZlbmFudCBIZWFsdGgpQGdlbmVzaXM=",
+          "discovered_date": "2026-01-11T12:23:13+00:00"
+        }
+      ],
+      "industries": [
+        "Healthcare",
+        "Not Found",
+        "Technology"
+      ],
+      "countries": [
+        "ES",
+        "US"
+      ],
+      "trend": "stable",
+      "trend_percentage": 0,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        2
+      ]
+    },
+    {
       "name": "Play",
       "count": 6,
       "victims": [
@@ -993,6 +1055,55 @@
       ]
     },
     {
+      "name": "Nightspire",
+      "count": 4,
+      "victims": [
+        {
+          "name": "AUTOCARES CARRETERO",
+          "date": "2026-01-14 07:20:16.265516",
+          "url": "",
+          "discovered_date": "2026-01-14T07:20:16.265516"
+        },
+        {
+          "name": "Hyatt Place New York / Chelsea Hotel",
+          "date": "2026-01-14 11:11:17.865945",
+          "url": "",
+          "discovered_date": "2026-01-14T11:11:17.865945"
+        },
+        {
+          "name": "Hyatt Place New York / Chelsea Hotel",
+          "date": "2026-01-14T11:11:17+00:00",
+          "url": "https://www.ransomware.live/id/SHlhdHQgUGxhY2UgTmV3IFlvcmsgLyBDaGVsc2VhIEhvdGVsQG5pZ2h0c3BpcmU=",
+          "discovered_date": "2026-01-14T11:11:17+00:00"
+        },
+        {
+          "name": "AUTOCARES CARRETERO",
+          "date": "2026-01-14T07:20:16+00:00",
+          "url": "https://www.ransomware.live/id/QVVUT0NBUkVTIENBUlJFVEVST0BuaWdodHNwaXJl",
+          "discovered_date": "2026-01-14T07:20:16+00:00"
+        }
+      ],
+      "industries": [
+        "Hospitality and Tourism",
+        "Transportation/Logistics"
+      ],
+      "countries": [
+        "ES",
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4
+      ]
+    },
+    {
       "name": "Nova",
       "count": 4,
       "victims": [
@@ -1042,64 +1153,9 @@
       ]
     },
     {
-      "name": "Genesis",
-      "count": 4,
-      "victims": [
-        {
-          "name": "Advanced Family Surgery Center (Covenant Health)",
-          "date": "2026-01-11 12:23:13.351063",
-          "url": "http://genesis6ixpb5mcy4kudybtw5op2wqlrkocfogbnenz3c647ibqixiad.onion/61f7f99d32a7af3f28a4/",
-          "discovered_date": "2026-01-11T12:23:13.351063"
-        },
-        {
-          "name": "Novelty Technology Care Espana (Part of GRUPO NTC)",
-          "date": "2026-01-11 12:23:53.423565",
-          "url": "http://genesis6ixpb5mcy4kudybtw5op2wqlrkocfogbnenz3c647ibqixiad.onion/889c157b885c4a13f8e9/",
-          "discovered_date": "2026-01-11T12:23:53.423565"
-        },
-        {
-          "name": "Novelty Technology Care Espana (Part of GRUPO NTC)",
-          "date": "2026-01-11T12:23:53+00:00",
-          "url": "https://www.ransomware.live/id/Tm92ZWx0eSBUZWNobm9sb2d5IENhcmUgRXNwYW5hIChQYXJ0IG9mIEdSVVBPIE5UQylAZ2VuZXNpcw==",
-          "discovered_date": "2026-01-11T12:23:53+00:00"
-        },
-        {
-          "name": "Advanced Family Surgery Center (Covenant Health)",
-          "date": "2026-01-11T12:23:13+00:00",
-          "url": "https://www.ransomware.live/id/QWR2YW5jZWQgRmFtaWx5IFN1cmdlcnkgQ2VudGVyIChDb3ZlbmFudCBIZWFsdGgpQGdlbmVzaXM=",
-          "discovered_date": "2026-01-11T12:23:13+00:00"
-        }
-      ],
-      "industries": [
-        "Healthcare",
-        "Technology"
-      ],
-      "countries": [
-        "ES",
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        4,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Clop",
-      "count": 4,
+      "count": 3,
       "victims": [
-        {
-          "name": "MUTTI-PARMA.COM",
-          "date": "2026-01-08 17:47:46.286122",
-          "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/mutti-parma-com",
-          "discovered_date": "2026-01-08T17:47:46.286122"
-        },
         {
           "name": "MUTTI-PARMA.COM",
           "date": "2026-01-08T17:47:46+00:00",
@@ -1119,9 +1175,7 @@
           "discovered_date": "2026-01-08T17:46:29+00:00"
         }
       ],
-      "industries": [
-        "Agriculture and Food Production"
-      ],
+      "industries": [],
       "countries": [
         "IT",
         "US"
@@ -1129,50 +1183,8 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        4,
+        3,
         0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Lynx",
-      "count": 3,
-      "victims": [
-        {
-          "name": "Grupo Ruiz",
-          "date": "2026-01-09 12:45:32.527317",
-          "url": "http://lynxchatly4zludmhmi75jrwhycnoqvkxb4prohxmyzf4euf5gjxroad.onion/leaks/695a9c0d9c439c5f4554400c",
-          "discovered_date": "2026-01-09T12:45:32.527317"
-        },
-        {
-          "name": "Grupo Ruiz",
-          "date": "2026-01-09T12:45:32+00:00",
-          "url": "https://www.ransomware.live/id/R3J1cG8gUnVpekBseW54",
-          "discovered_date": "2026-01-09T12:45:32+00:00"
-        },
-        {
-          "name": "Options",
-          "date": "2026-01-07T09:53:08+00:00",
-          "url": "https://www.ransomware.live/id/T3B0aW9uc0BseW54",
-          "discovered_date": "2026-01-07T09:53:08+00:00"
-        }
-      ],
-      "industries": [
-        "Transportation/Logistics"
-      ],
-      "countries": [
-        "ES",
-        "N/A"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        2,
         0,
         0,
         0,
@@ -1426,68 +1438,33 @@
       ]
     },
     {
-      "name": "Lockbit5",
+      "name": "Lynx",
       "count": 2,
       "victims": [
         {
-          "name": "hilden.in",
-          "date": "2026-01-08 17:48:29.042186",
-          "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/b06b309497d11b998f527f3f013e8bd7",
-          "discovered_date": "2026-01-08T17:48:29.042186"
+          "name": "Grupo Ruiz",
+          "date": "2026-01-09 12:45:32.527317",
+          "url": "http://lynxchatly4zludmhmi75jrwhycnoqvkxb4prohxmyzf4euf5gjxroad.onion/leaks/695a9c0d9c439c5f4554400c",
+          "discovered_date": "2026-01-09T12:45:32.527317"
         },
         {
-          "name": "hilden.in",
-          "date": "2026-01-08T17:48:29+00:00",
-          "url": "https://www.ransomware.live/id/aGlsZGVuLmluQGxvY2tiaXQ1",
-          "discovered_date": "2026-01-08T17:48:29+00:00"
+          "name": "Grupo Ruiz",
+          "date": "2026-01-09T12:45:32+00:00",
+          "url": "https://www.ransomware.live/id/R3J1cG8gUnVpekBseW54",
+          "discovered_date": "2026-01-09T12:45:32+00:00"
         }
       ],
       "industries": [
-        "Not Found"
+        "Transportation/Logistics"
       ],
       "countries": [
-        "IN"
+        "ES"
       ],
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
+        0,
         2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Vect",
-      "count": 2,
-      "victims": [
-        {
-          "name": "Federal University of Sergipe",
-          "date": "2026-01-08 19:12:15.072831",
-          "url": "",
-          "discovered_date": "2026-01-08T19:12:15.072831"
-        },
-        {
-          "name": "Federal University of Sergipe",
-          "date": "2026-01-08T19:12:15+00:00",
-          "url": "https://www.ransomware.live/id/RmVkZXJhbCBVbml2ZXJzaXR5IG9mIFNlcmdpcGVAdmVjdA==",
-          "discovered_date": "2026-01-08T19:12:15+00:00"
-        }
-      ],
-      "industries": [
-        "Education"
-      ],
-      "countries": [
-        "BR"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        2,
-        0,
         0,
         0,
         0,
@@ -1589,6 +1566,60 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Vect",
+      "count": 1,
+      "victims": [
+        {
+          "name": "Federal University of Sergipe",
+          "date": "2026-01-08T19:12:15+00:00",
+          "url": "https://www.ransomware.live/id/RmVkZXJhbCBVbml2ZXJzaXR5IG9mIFNlcmdpcGVAdmVjdA==",
+          "discovered_date": "2026-01-08T19:12:15+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "BR"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Lockbit5",
+      "count": 1,
+      "victims": [
+        {
+          "name": "hilden.in",
+          "date": "2026-01-08T17:48:29+00:00",
+          "url": "https://www.ransomware.live/id/aGlsZGVuLmluQGxvY2tiaXQ1",
+          "discovered_date": "2026-01-08T17:48:29+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "IN"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        1,
         0,
         0,
         0,
