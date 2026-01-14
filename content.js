@@ -4,21 +4,36 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Jan 13 2026",
-            "headline": "Target Source Code Leaked—Accelerated Git Lockdown Initiated",
-            "title": "Target Confirms Source Code Leak, Tightens Git Server Security",
-            "content": "Target has confirmed that leaked source code samples posted by a threat actor are genuine, impacting its internal systems. In response, the company implemented an &quot;accelerated&quot; lockdown of its Git server, now requiring VPN access for enhanced security. This measure was taken a day after BleepingComputer contacted the retailer about the breach. The leak underscores the increasing risk of source code exposure, which can facilitate further attacks if not swiftly addressed. Target employees, both current and former, have verified the authenticity of the leaked code. Organizations are advised to review their source code access protocols to prevent similar incidents.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/target-employees-confirm-leaked-code-after-accelerated-git-lockdown/",
+            "date": "Jan 14 2026",
+            "headline": "ISC Stormcast Highlights Cyber Trends—January 14, 2026",
+            "title": "ISC Stormcast For January 14, 2026: Key Cybersecurity Developments",
+            "content": "The SANS Internet Storm Center released its latest Stormcast for January 14, 2026, providing a comprehensive overview of current cybersecurity trends. The InfoCON status remains green, indicating a stable threat environment. This report continues to serve as a critical resource for security professionals, offering insights into emerging threats and vulnerabilities. The podcast format allows for easy consumption of the latest cybersecurity news, making it an essential tool for staying informed. Regular updates from trusted sources like the SANS Internet Storm Center help organizations prepare and respond effectively to potential threats.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32626",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Jan 14 2026",
+            "headline": "Taiwan Faces 2.63M Daily Cyberattacks from China",
+            "title": "Taiwan Endures Increased Cyber Pressure from China in 2025",
+            "content": "Taiwan experienced a significant increase in cyberattacks from China in 2025, with an average of 2.63 million attacks daily targeting its critical infrastructure. These attacks affected essential services, including energy utilities and hospitals, highlighting the ongoing cyber tensions in the region. The 6% rise in attacks underscores the persistent threat posed by Chinese cyber operations against Taiwan. This trend reflects broader geopolitical tensions and the strategic importance of cybersecurity in national defense. Organizations in Taiwan are urged to bolster their cybersecurity defenses and remain vigilant against potential threats.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cyber-risk/taiwan-sees-greater-cyber-pressure-from-china",
             "relatedResources": []
         },
         {
-            "date": "Jan 13 2026",
-            "headline": "Broadcom WiFi Bug—Single Frame Knocks Networks Offline",
-            "title": "High-Severity Broadcom WiFi Flaw Enables Denial-of-Service Attacks",
-            "content": "A critical vulnerability in Broadcom WiFi chipset software allows attackers within radio range to disrupt wireless networks with a single malicious frame. This denial-of-service flaw, identified by the Cybersecurity Research team, requires routers to be manually rebooted to restore connectivity. The vulnerability affects a wide range of devices utilizing Broadcom chipsets, posing significant risks to businesses and consumers relying on wireless networks. Users and administrators should monitor for updates and apply patches as they become available to mitigate this threat. The disclosure highlights the ongoing challenge of securing wireless communication technologies.",
+            "date": "Jan 14 2026",
+            "headline": "Microsoft Patch Tuesday: Zero-Day, 8 Critical Flaws",
+            "title": "January 2026 Microsoft Patch Tuesday: Critical Vulnerabilities and Zero-Day",
+            "content": "Microsoft&#x27;s first Patch Tuesday of 2026 addresses eight critical vulnerabilities and an actively exploited zero-day. Notably, two vulnerabilities in SharePoint score 8.8 on the CVSS scale, highlighting their severity. The actively exploited zero-day requires immediate attention to prevent potential exploitation. Most vulnerabilities affect Office products, emphasizing the need for organizations to prioritize patching these widely used applications. This release follows last year&#x27;s trend of SharePoint abuse, underscoring the importance of timely updates. Security teams should apply these patches promptly to mitigate risks and protect organizational assets.",
             "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4116064/high-severity-bug-in-broadcom-software-enables-easy-wifi-denial-of-service.html",
+            "sourceUrl": "https://www.csoonline.com/article/4116437/january-2026-microsoft-patch-tuesday-actively-exploited-zero-day-needs-attention.html",
             "relatedResources": [
                 {
                     "label": "CVE Prioritization Guide",
@@ -29,38 +44,41 @@ const websiteContent = {
         },
         {
             "date": "Jan 13 2026",
-            "headline": "iOS 26+ Urgently Needed—Active Exploits Target iPhones",
-            "title": "Apple Urges iPhone Users to Update to iOS 26+ Amid Exploits",
-            "content": "Apple has confirmed active exploitation of vulnerabilities affecting iPhones, with full protections available only on devices running iOS 26 or later, featuring Liquid Glass technology. Users are strongly advised to update and restart their devices to safeguard against potential threats. The vulnerabilities are being actively exploited, posing risks of unauthorized access and data breaches. This development emphasizes the importance of maintaining up-to-date software to protect against evolving cyber threats. iPhone users should ensure their devices are running the latest iOS version to benefit from enhanced security measures.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/01/why-iphone-users-should-update-and-restart-their-devices-now",
-            "relatedResources": []
+            "headline": "Trump Renominates Sean Plankey to Lead CISA",
+            "title": "Sean Plankey Re-Nominated by Trump to Head CISA",
+            "content": "President Donald Trump has re-nominated Sean Plankey to lead the Cybersecurity and Infrastructure Security Agency (CISA) after the initial nomination stalled in the Senate last year. Plankey&#x27;s re-nomination reflects the administration&#x27;s continued focus on strengthening national cybersecurity defenses. CISA plays a crucial role in protecting the nation&#x27;s critical infrastructure from cyber threats, making leadership stability essential. The re-nomination highlights the importance of experienced leadership in navigating the evolving cybersecurity landscape. Stakeholders are watching closely as the Senate considers this nomination amid increasing cyber challenges.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/sean-plankey-re-nominated-to-lead-cisa/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
         },
         {
             "date": "Jan 13 2026",
-            "headline": "SAP Patches Critical Vulnerabilities—SQL Injection, RCE Addressed",
-            "title": "SAP January 2026 Security Updates Fix Critical Vulnerabilities",
-            "content": "SAP&#x27;s latest security updates address 17 vulnerabilities, including four critical ones involving SQL injection, remote code execution (RCE), and code injection. These vulnerabilities could allow attackers to compromise SAP systems, leading to unauthorized access or control. Organizations using SAP software should prioritize applying these patches to mitigate potential risks. The updates reflect SAP&#x27;s ongoing efforts to enhance security and protect its extensive user base from evolving cyber threats. Administrators are urged to review the security notes and implement the recommended patches promptly.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/saps-january-2026-security-updates-patch-critical-vulnerabilities/",
-            "relatedResources": []
+            "headline": "CISO Turnover Crisis—Risks Amplified by Leadership Changes",
+            "title": "CISO Succession Crisis: Rapid Turnover Increases Security Risks",
+            "content": "The rapid turnover of Chief Information Security Officers (CISOs) is compounding cybersecurity risks rather than resetting them. Frequent leadership changes can disrupt strategic continuity and weaken an organization&#x27;s security posture. This crisis highlights the critical need for stable and effective cybersecurity leadership to manage evolving threats. Organizations must prioritize succession planning and invest in leadership development to mitigate these risks. The ongoing challenges in retaining cybersecurity talent underscore the importance of creating a supportive environment for CISOs to thrive and protect organizational assets.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cyber-risk/ciso-succession-crisis-highlights-turnover-amplifies-security-risks",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
         },
         {
             "date": "Jan 13 2026",
-            "headline": "VoidLink Malware Targets Linux Cloud Environments—Stealthy Access Achieved",
-            "title": "Advanced Linux VoidLink Malware Threatens Cloud and Container Security",
-            "content": "Researchers have uncovered VoidLink, a sophisticated malware framework designed for long-term, stealthy access to Linux-based cloud environments. Disclosed by Check Point Research, VoidLink targets cloud-native infrastructures, posing significant risks to organizations relying on Linux for cloud and container operations. The malware&#x27;s advanced capabilities enable it to evade detection and maintain persistent access, highlighting the need for enhanced security measures in cloud environments. Organizations should review their security protocols and consider implementing advanced threat detection solutions to protect against such threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/01/new-advanced-linux-voidlink-malware.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 13 2026",
-            "headline": "AI Attacks in 2025—Old Playbook, New Scale",
-            "title": "Lessons from AI-Powered Attacks in 2025: Old Tactics, New Scale",
-            "content": "The security industry is facing challenges as attackers leverage AI to scale traditional attack methods. While defenders focus on emerging threats, attackers optimize basic techniques, exploiting AI&#x27;s capabilities to enhance efficiency and impact. The trend underscores the importance of not only adopting new security technologies but also reinforcing fundamental defenses. Organizations must balance innovation with vigilance, ensuring robust security measures are in place to counteract both new and traditional threats. The evolution of AI in cyber attacks highlights the need for continuous adaptation in cybersecurity strategies.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/01/what-should-we-learn-from-how-attackers.html",
+            "headline": "Ukraine Defense Hit by Charity-Themed Malware Attack",
+            "title": "Ukraine&#x27;s Army Targeted in Charity-Themed Malware Campaign",
+            "content": "Ukraine&#x27;s Defense Forces were targeted by a sophisticated malware campaign between October and December 2025. The attack, disguised as a charity initiative, delivered a backdoor malware named PluggyApe. This campaign underscores the persistent cyber threats facing Ukraine amid ongoing geopolitical tensions. The malware&#x27;s deployment highlights the need for heightened vigilance and robust cybersecurity measures. Ukrainian officials must continue to prioritize cybersecurity defenses to protect against such deceptive and damaging attacks. This incident serves as a reminder of the innovative tactics employed by threat actors to compromise sensitive systems.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/ukraines-army-targeted-in-new-charity-themed-malware-campaign/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
@@ -76,27 +94,18 @@ const websiteContent = {
         },
         {
             "date": "Jan 13 2026",
-            "headline": "Dutch Port Hacker Jailed—Malware Planted with Inside Help",
-            "title": "Dutch Port Hacker Sentenced for Planting Remote Access Malware",
-            "content": "A 44-year-old hacker has been sentenced to prison for installing remote access malware on a logistics firm&#x27;s systems at a Dutch port, with assistance from employees. The breach compromised the firm&#x27;s operations, highlighting the risks posed by insider threats. This case serves as a reminder of the need for robust security protocols and employee training to prevent such incidents. Organizations should implement stringent access controls and monitoring to detect and deter insider-assisted attacks. The sentencing reflects the serious legal consequences of cybercrime.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/dutch-port-hacker-sentenced-to-prison/",
+            "headline": "Microsoft Fixes 112 Bugs—Zero-Day Exposes Sensitive Data",
+            "title": "Microsoft Patch Tuesday Resolves 112 Defects, Focus on Zero-Day",
+            "content": "Microsoft&#x27;s latest Patch Tuesday addresses 112 security defects, including a critical zero-day vulnerability that exposes sensitive information. This zero-day could allow attackers to undermine defenses and improve the reliability of other exploits. The comprehensive update covers various Microsoft products, emphasizing the importance of timely patching. Security researchers stress the urgency of applying these updates to protect against potential exploitation. Organizations should prioritize the deployment of these patches to safeguard their systems and data. This patch release highlights Microsoft&#x27;s ongoing efforts to address security challenges and protect its user base.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/microsoft-patch-tuesday-january-2026/",
             "relatedResources": [
                 {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
                 }
             ]
-        },
-        {
-            "date": "Jan 13 2026",
-            "headline": "ISC Stormcast Analyzes Latest Cyber Threats—Stay Informed",
-            "title": "ISC Stormcast Highlights Emerging Cyber Threats and Defensive Measures",
-            "content": "The SANS Internet Storm Center&#x27;s latest Stormcast podcast for January 13, 2026, provides insights into the current cybersecurity landscape with a focus on emerging threats and vulnerabilities. The podcast, part of a daily series, discusses recent cyber incidents and advises on defensive strategies to mitigate risks. Security professionals can benefit from the expert analysis on evolving attack vectors and the latest security patches. The InfoCON level remains green, indicating a stable threat environment but with ongoing vigilance required. Listeners are encouraged to stay updated with daily briefings to enhance their cybersecurity posture.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32622",
-            "relatedResources": []
         },
         {
             "date": "May 05 2026",
@@ -109,84 +118,17 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Jan 13 2026",
-            "headline": "Salesforce Transforms Slackbot—New AI Agent Revolutionizes Workflows",
-            "title": "Salesforce Unveils AI-Powered Slackbot for Seamless Enterprise Task Management",
-            "content": "Salesforce has launched a revamped version of Slackbot, now positioned as a robust AI agent capable of streamlining tasks across various enterprise applications directly from Slack. This transformation allows users to search enterprise data, draft documents, and execute actions without leaving the Slack environment. By integrating advanced AI capabilities, Salesforce aims to enhance productivity and bolster its competitive stance against Microsoft and Google in the workplace AI sector. The new Slackbot promises to reduce the need for switching between applications, thus optimizing workflow efficiency for enterprises. Organizations leveraging Slack for communication should explore integrating this AI agent to maximize operational productivity.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/13/slackbot-is-an-ai-agent-now/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 13 2026",
-            "headline": "Salesforce Unleashes AI-Powered Slackbot—A Game Changer for Enterprises",
-            "title": "Salesforce&#x27;s New AI Slackbot Enhances Enterprise Data Interaction and Task Execution",
-            "content": "Salesforce has introduced an upgraded version of Slackbot, transforming it from a basic notification tool into a sophisticated AI agent. This new iteration enables users to search through enterprise data, draft documents, and perform actions directly within Slack, thereby streamlining business processes. The move is part of Salesforce&#x27;s strategy to position itself against rivals like Microsoft and Google in the workplace AI space. By providing a centralized platform for task execution, the AI-powered Slackbot aims to improve workflow efficiency and reduce operational friction for businesses. Enterprises using Slack should consider adopting this enhanced tool to leverage its full capabilities.",
+            "headline": "Egnyte Hires Juniors—Despite AI Coding Tools Integration",
+            "title": "Egnyte Continues Hiring Junior Engineers, Leveraging AI for Onboarding",
+            "content": "Egnyte, a cloud content governance company valued at $1.5 billion, is integrating AI coding tools across its 350-strong developer team but continues to recruit junior engineers. The AI tools are designed to accelerate onboarding, enhance understanding of the codebase, and streamline development processes rather than reduce headcount. This approach is part of Egnyte&#x27;s strategy to blend human creativity with machine efficiency, ensuring that new engineers quickly adapt and contribute. By focusing on junior talent, Egnyte aims to foster a dynamic workforce that can leverage AI to innovate and maintain robust software solutions. This trend underscores a broader industry shift toward using AI to complement rather than replace human roles.",
             "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/salesforce-rolls-out-new-slackbot-ai-agent-as-it-battles-microsoft-and",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 13 2026",
-            "headline": "Brazil Halts Meta&#x27;s WhatsApp Policy—Probes Anti-Competitive Practices",
-            "title": "Brazil Orders Meta to Suspend WhatsApp&#x27;s Third-Party AI Chatbot Ban",
-            "content": "Brazil&#x27;s competition authority has mandated Meta to pause its policy that prevents third-party AI companies from utilizing WhatsApp&#x27;s business API to offer chatbots. This directive comes amid an investigation into whether Meta&#x27;s policy is anti-competitive. The suspension allows AI developers to continue leveraging WhatsApp for chatbot services, potentially impacting Meta&#x27;s control over the platform. This decision highlights the ongoing scrutiny of tech giants&#x27; practices in global markets. Companies using WhatsApp for business communications should monitor developments closely, as regulatory outcomes may influence platform accessibility and integration options.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/13/brazil-orders-meta-to-suspend-policy-banning-third-party-ai-chatbots-from-whatsapp/",
+            "sourceUrl": "https://venturebeat.com/orchestration/why-egnyte-keeps-hiring-junior-engineers-despite-the-rise-of-ai-coding-tools",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
                     "url": "/ransomware-tracker.html",
                     "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Jan 13 2026",
-            "headline": "Converge Bio Secures $25M—Advances AI Drug Discovery",
-            "title": "Converge Bio Raises $25M to Propel AI-Powered Drug Discovery Initiatives",
-            "content": "AI-driven drug discovery startup Converge Bio has successfully raised $25 million in a Series A funding round led by Bessemer Venture Partners. The round also saw participation from prominent figures at Meta, OpenAI, and Wiz, highlighting significant industry interest in AI applications in biotechnology. Converge Bio plans to utilize the funds to accelerate its research and development efforts, aiming to revolutionize the drug discovery process with AI. This investment underscores the growing confidence in AI&#x27;s potential to transform the pharmaceutical landscape. Stakeholders in biotech should watch Converge Bio&#x27;s progress as it could set new standards in drug development.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/13/ai-drug-discovery-startup-converge-bio-pulls-in-25m-from-bessemer-and-execs-from-meta-openai-and-wiz/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 13 2026",
-            "headline": "Reid Hoffman Urges Silicon Valley to Challenge Trump Policies",
-            "title": "Reid Hoffman Calls for Silicon Valley to Oppose Trump Administration&#x27;s Actions",
-            "content": "Reid Hoffman, cofounder of LinkedIn, has called upon Silicon Valley to vocalize opposition to the Trump administration&#x27;s policies. Hoffman emphasizes the importance of tech leaders speaking out on issues they believe to be true, advocating for a collective stance on matters impacting the industry and society. His message resonates amidst ongoing debates about the role of tech companies in political discourse. Hoffman&#x27;s appeal highlights the potential influence of Silicon Valley in shaping policy and public opinion. Tech leaders are encouraged to consider their positions and the broader impact of their platforms in political and social arenas.",
-            "source": "Feed: Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/the-big-interview-podcast-reid-hoffman/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 13 2026",
-            "headline": "Smart Warehouses Shift—Edge AI Solves Latency Issues",
-            "title": "Smart Warehouses Embrace Edge AI to Overcome Cloud Latency Challenges",
-            "content": "As enterprises increasingly migrate to the cloud, smart warehouses are moving in the opposite direction by adopting edge AI to address critical latency issues. This shift is driven by the need for real-time data processing and decision-making on the warehouse floor, where delays can disrupt operations. Edge AI allows for faster processing by handling data locally rather than relying on distant cloud servers. This trend underscores the importance of edge computing in logistics and automation, offering a solution to the &quot;latency gap&quot; that can hinder efficiency. Warehouse operators should evaluate edge AI solutions to enhance operational responsiveness and reliability.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/the-latency-trap-smart-warehouses-abandon-cloud-for-edge/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 13 2026",
-            "headline": "Hupo Secures $10M—Pivots to AI Sales Coaching",
-            "title": "Hupo Raises $10M After Shifting Focus to AI Sales Coaching",
-            "content": "Hupo, a company backed by Meta, has successfully pivoted from mental wellness to AI-driven sales coaching, securing a $10 million Series A investment led by DST Global. The company now focuses on providing AI sales coaching solutions tailored for banks and insurance firms. This strategic shift has opened new growth opportunities, leveraging AI to enhance sales performance and training. The funding will support Hupo&#x27;s expansion and development of its AI coaching platform. Financial institutions seeking to improve sales effectiveness should consider integrating AI coaching tools like those offered by Hupo to boost productivity and outcomes.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/12/meta-backed-hupo-finds-growth-after-pivot-to-ai-sales-coaching-from-mental-wellness/",
-            "relatedResources": [
+                },
                 {
                     "label": "Securing AI/ML Pipelines",
                     "url": "/guides/securing-ai-ml-pipelines.html",
@@ -196,18 +138,85 @@ const websiteContent = {
         },
         {
             "date": "Jan 13 2026",
-            "headline": "Amazon&#x27;s Bee Wearable—AI Features Coming in 2026",
-            "title": "Amazon&#x27;s Bee Wearable Debuts with Promised AI Feature Expansion",
-            "content": "Amazon has unveiled its latest AI wearable, Bee, aimed at enhancing user interaction with AI technologies. While the current version lacks advanced functionalities for professional users, Amazon has announced plans to introduce more features throughout 2026. The device is designed to integrate seamlessly with Amazon&#x27;s ecosystem, potentially complementing existing services like Alexa. Early adopters can expect updates that will expand the device&#x27;s capabilities, making it more useful for a broader audience. This release marks Amazon&#x27;s strategic move to capture a segment of the wearable tech market dominated by AI-driven innovations.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/12/hands-on-with-bee-amazons-latest-ai-wearable/",
+            "headline": "Senate Clears Path for Deepfake Victim Lawsuits",
+            "title": "Senate Approves DEFIANCE Act for Nonconsensual Deepfake Victim Lawsuits",
+            "content": "The U.S. Senate has passed the Disrupt Explicit Forged Images and Non-Consensual Edits Act, known as the DEFIANCE Act, allowing victims of nonconsensual deepfakes to sue their creators. This legislative move addresses the growing issue of individuals having their likeness digitally altered into explicit content without consent. The Act empowers victims with legal recourse, reflecting increasing concerns over privacy and digital rights in the age of AI-generated media. This development is a critical step in combating the misuse of AI technologies for harmful purposes, offering a legal framework to deter malicious actors. Professionals in the tech and legal sectors should monitor the implementation and impact of this legislation.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/news/861531/defiance-act-senate-passage-deepfakes-grok",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 13 2026",
+            "headline": "Anthropic Reorganizes C-Suite to Boost Incubator Growth",
+            "title": "Anthropic Restructures Leadership to Expand Internal Labs Team",
+            "content": "Anthropic, an AI startup, is reorganizing its executive team to focus on expanding its internal incubator, the Labs team. Mike Krieger, Instagram co-founder and former chief product officer at Anthropic, will now co-lead this initiative. Since its inception in mid-2024 with just two members, the Labs team has grown significantly, signaling Anthropic&#x27;s commitment to fostering innovation within the company. This strategic shift aims to accelerate the development of cutting-edge AI technologies and solutions. The move highlights the importance of internal innovation ecosystems in driving technological advancement and maintaining competitive advantage in the rapidly evolving AI landscape.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/861475/anthropic-ai-c-suite-internal-incubator-labs-team-mike-krieger",
             "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "API Security Best Practices",
+                    "url": "/guides/api-security-best-practices.html",
+                    "icon": "fa-plug"
+                }
+            ]
+        },
+        {
+            "date": "Jan 13 2026",
+            "headline": "Microsoft Expands Data Centers—Promises No Power Bill Hikes",
+            "title": "Microsoft Announces New Data Centers, Ensures Stable Electricity Costs",
+            "content": "Microsoft has announced plans to expand its data center infrastructure across the United States, emphasizing its role as a &quot;good neighbor&quot; by pledging not to increase local electricity costs. This expansion is part of Microsoft&#x27;s broader investment in AI infrastructure, reflecting the growing demand for cloud computing capabilities. The company aims to balance its technological advancements with community impact, ensuring that local residents and businesses do not face increased utility expenses. Microsoft&#x27;s commitment to sustainable growth and community responsibility sets a precedent for other tech giants in the AI and cloud sectors. Stakeholders should observe how these developments influence local economies and energy policies.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/13/microsoft-announces-glut-of-new-data-centers-but-says-it-wont-let-your-electricity-bill-go-up/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 13 2026",
+            "headline": "Simple Prompt Method Boosts LLM Accuracy by 76%",
+            "title": "New Prompt Technique Enhances LLM Performance on Non-Reasoning Tasks",
+            "content": "A new prompt technique has been developed that significantly improves the accuracy of Large Language Models (LLMs) on non-reasoning tasks by up to 76%. This method simplifies the process of optimizing LLM responses, moving away from complex rituals like &quot;Chain of Thought.&quot; The technique involves straightforward prompts that guide the model&#x27;s output more effectively, enhancing performance without requiring intricate reasoning traces. This advancement is crucial for developers seeking to maximize LLM efficiency in applications where reasoning is not the primary focus. The breakthrough underscores the ongoing evolution in LLM optimization, offering practical solutions for improving AI capabilities.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/this-new-dead-simple-prompt-technique-boosts-accuracy-on-llms-by-up-to-76-on",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Jan 13 2026",
+            "headline": "Watchdog Warns on Google&#x27;s AI Shopping Protocol—Google Disputes",
+            "title": "Consumer Watchdog Challenges Google&#x27;s Universal Commerce Protocol",
+            "content": "A consumer economics watchdog has raised concerns about Google&#x27;s new Universal Commerce Protocol, suggesting it could lead to consumers overpaying for goods. Google has refuted these claims, asserting that the protocol is designed to streamline online shopping and enhance user experience. The watchdog&#x27;s warning highlights potential risks of AI-driven commerce systems, where algorithmic biases could impact pricing transparency and fairness. As AI continues to transform e-commerce, stakeholders must ensure that consumer protection and ethical standards are upheld. This debate emphasizes the need for rigorous oversight and accountability in the deployment of AI technologies in consumer markets.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/13/a-consumer-watchdog-issued-a-warning-about-googles-ai-agent-shopping-protocol-google-says-shes-wrong/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
                 {
                     "label": "Securing AI/ML Pipelines",
                     "url": "/guides/securing-ai-ml-pipelines.html",
                     "icon": "fa-brain"
                 }
             ]
+        },
+        {
+            "date": "Jan 13 2026",
+            "headline": "Ring&#x27;s Intelligent Assistant Era Begins with AI Integration",
+            "title": "Ring Founder Discusses Transition to Intelligent Assistant Technology",
+            "content": "Ring, the Amazon-owned video doorbell company, is entering a new phase by integrating AI to become an &quot;intelligent assistant.&quot; This strategic shift aims to enhance Ring&#x27;s product offerings by leveraging AI to provide more intuitive and responsive security solutions. The integration marks a significant evolution from traditional video monitoring to a more interactive and proactive security platform. This transition is part of a broader trend in the smart home industry, where AI is increasingly used to offer personalized and efficient user experiences. Industry professionals should consider the implications of AI advancements on consumer expectations and product development.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/13/ring-founder-details-the-camera-companys-intelligent-assistant-era/",
+            "relatedResources": []
         }
     ],
     "articles": {},
@@ -272,6 +281,17 @@ const websiteContent = {
     },
     "recentCVEs": [
         {
+            "cveId": "CVE-2026-20805",
+            "dateAdded": "Jan 13, 2026",
+            "vendor": "Microsoft Windows",
+            "description": "Microsoft Windows Desktop Windows Manager contains an information disclosure vulnerability that allows an authorized attacker to disclose information locally.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20805",
+            "isZeroDay": false
+        },
+        {
             "cveId": "CVE-2025-8110",
             "dateAdded": "Jan 12, 2026",
             "vendor": "Gogs Gogs",
@@ -280,28 +300,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-8110",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2009-0556",
-            "dateAdded": "Jan 07, 2026",
-            "vendor": "Microsoft Office",
-            "description": "Microsoft Office PowerPoint contains a code injection vulnerability that allows remote attackers to execute arbitrary code via a PowerPoint file with an OutlineTextRefAtom containing an invalid index",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2009-0556",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-37164",
-            "dateAdded": "Jan 07, 2026",
-            "vendor": "Hewlett Packard Enterprise (HPE) OneView",
-            "description": "Hewlett Packard Enterprise (HPE) OneView contains a code injection vulnerability that allows a remote unauthenticated user to perform remote code execution.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-37164",
             "isZeroDay": false
         }
     ],
