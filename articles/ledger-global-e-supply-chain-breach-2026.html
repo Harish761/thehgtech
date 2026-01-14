@@ -498,6 +498,36 @@
       }]
     }
     </script>
+
+    <!-- ========== STRUCTURED DATA - FAQPAGE ========== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What are the main security risks with AI systems?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Key risks include prompt injection attacks, data poisoning, model theft, adversarial inputs, hallucinations leading to misinformation, and privacy breaches from training data exposure."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How can organizations secure their AI deployments?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Implement input validation, output filtering, model access controls, regular security testing, monitoring for anomalies, and follow frameworks like OWASP LLM Top 10 and MITRE ATLAS."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What is prompt injection and how do you prevent it?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Prompt injection is an attack where malicious inputs manipulate AI behavior. Prevention includes input sanitization, output validation, system prompt protection, and using AI-specific security tools."
+        }
+      }]
+    }
+    </script>
 </head>
 
 <body>

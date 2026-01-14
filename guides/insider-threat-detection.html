@@ -155,6 +155,36 @@
       }]
     }
     </script>
+
+    <!-- ========== STRUCTURED DATA - FAQPAGE ========== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What is the difference between SIEM and SOAR?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SIEM (Security Information and Event Management) collects and analyzes logs to detect threats. SOAR (Security Orchestration, Automation and Response) automates incident response workflows."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How do you reduce false positives in security monitoring?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tune detection rules, use threat intelligence correlation, implement behavioral baselines, leverage machine learning, and regularly review and adjust alert thresholds."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What logs should organizations collect for security?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Critical sources include authentication logs, firewall logs, endpoint events, email gateway logs, DNS queries, cloud service logs, and application-specific security events."
+        }
+      }]
+    }
+    </script>
 </head>
 
 <body>

@@ -469,6 +469,36 @@
       }]
     }
     </script>
+
+    <!-- ========== STRUCTURED DATA - FAQPAGE ========== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What is ransomware and how does it work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ransomware is malicious software that encrypts files and demands payment for decryption. Attackers typically gain access through phishing emails, vulnerable RDP, or software exploits, then deploy encryption across the network."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How can organizations protect against ransomware?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Key protections include regular backups, network segmentation, endpoint detection and response (EDR), email filtering, patch management, and security awareness training for employees."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Should you pay the ransomware demand?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Security experts and law enforcement generally advise against paying ransoms as it funds criminal operations and doesn't guarantee data recovery. Focus on backup restoration and incident response instead."
+        }
+      }]
+    }
+    </script>
 </head>
 
 <body>
