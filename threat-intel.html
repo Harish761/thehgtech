@@ -79,6 +79,65 @@
     }
     </script>
 
+    <!-- ========== STRUCTURED DATA - DATASET (For Google Dataset Search) ========== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dataset",
+      "name": "Live Threat Intelligence IOC Feeds",
+      "description": "Real-time Indicators of Compromise (IOCs) aggregated from 9 trusted security vendors including OpenPhish, URLhaus, ThreatFox, Malware Bazaar, Spamhaus DROP, CINS Army, and Blocklist.de. Includes phishing URLs, malware hashes, malicious IPs, and threat actor data. Updated every 4 hours.",
+      "url": "https://thehgtech.com/threat-intel.html",
+      "keywords": ["IOC", "indicators of compromise", "threat intelligence", "phishing URLs", "malware hashes", "malicious IPs", "OpenPhish", "URLhaus", "ThreatFox", "cybersecurity"],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "isAccessibleForFree": true,
+      "creator": {
+        "@type": "Organization",
+        "name": "TheHGTech",
+        "url": "https://thehgtech.com"
+      },
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "application/json",
+          "contentUrl": "https://thehgtech.com/threat-intel.js"
+        },
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "application/json",
+          "contentUrl": "https://thehgtech.com/ioc-data/openphish.json"
+        }
+      ],
+      "temporalCoverage": "2024/..",
+      "spatialCoverage": "Global",
+      "variableMeasured": [
+        "Phishing URLs",
+        "Malware Hashes",
+        "Malicious IP Addresses",
+        "Threat Actor TTPs",
+        "AI Security Incidents"
+      ]
+    }
+    </script>
+
+    <!-- ========== STRUCTURED DATA - BREADCRUMB ========== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://thehgtech.com"
+      }, {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Threat Intelligence",
+        "item": "https://thehgtech.com/threat-intel.html"
+      }]
+    }
+    </script>
+
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -974,7 +1033,8 @@
                             <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
                             <div class="dropdown-item-content">
                                 <div class="dropdown-item-title" style="color: var(--accent-cyan);">Threat Intelligence
-                                    <span class="dropdown-badge live">LIVE</span></div>
+                                    <span class="dropdown-badge live">LIVE</span>
+                                </div>
                                 <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours
                                 </div>
                             </div>
