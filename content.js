@@ -4,146 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Jan 14 2026",
-            "headline": "Novee Secures $51.5M for AI-Driven Penetration Testing",
-            "title": "Novee Launches with $51.5 Million to Enhance AI Penetration Testing",
-            "content": "Novee has emerged from stealth mode with a substantial $51.5 million in funding to advance its AI-driven penetration testing platform. The company specializes in continuous testing to identify and mitigate novel vulnerabilities across various systems. This funding round underscores the growing importance of AI in cybersecurity, particularly in automating and enhancing traditional security practices. Novee&#x27;s solution promises to offer real-time insights into potential security gaps, benefiting organizations looking to strengthen their defenses against evolving threats. Security professionals should monitor Novee&#x27;s developments as AI-driven security tools gain traction in the industry.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/novee-emerges-from-stealth-with-51-5-million-in-funding/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Jan 14 2026",
-            "headline": "SpyCloud Tackles Supply Chain Threats with New Solution",
-            "title": "SpyCloud Introduces Supply Chain Protection to Combat Identity Threats",
-            "content": "SpyCloud has unveiled its latest offering, the Supply Chain Threat Protection solution, designed to enhance identity threat protection across vendor networks. This advanced security layer addresses the rising concern of third-party identity threats by extending protection to organizations&#x27; entire vendor ecosystems. By integrating this solution, companies can better safeguard against identity-based attacks that exploit vulnerabilities in supply chains. The launch highlights the increasing focus on securing extended workforces as cyber threats become more sophisticated. Security teams should evaluate SpyCloud&#x27;s solution to bolster their defenses against potential supply chain attacks.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4116536/spycloud-launches-supply-chain-solution-to-combat-rising-third-party-identity-threats.html",
-            "relatedResources": [
-                {
-                    "label": "Third-Party Risk Management",
-                    "url": "/guides/third-party-risk-management.html",
-                    "icon": "fa-handshake"
-                }
-            ]
-        },
-        {
-            "date": "Jan 14 2026",
-            "headline": "Magecart Skimmers Target Major Payment Networks",
-            "title": "Magecart Campaign Compromises Major Payment Networks&#x27; Checkout Systems",
-            "content": "A new Magecart campaign is actively skimming credit card data from online checkout systems linked to major payment networks such as American Express, Diners Club, and Mastercard. This attack involves injecting malicious scripts into e-commerce platforms to intercept payment information during transactions. The ongoing threat poses significant risks to both consumers and businesses, potentially leading to financial losses and reputational damage. E-commerce operators are urged to conduct thorough security audits and implement robust defenses to detect and prevent such skimming activities. Staying vigilant against Magecart attacks is crucial as these threats continue to evolve.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/01/online-shoppers-at-risk-as-magecart-skimming-hits-major-payment-networks",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Jan 14 2026",
-            "headline": "CrowdStrike Expands Falcon with Seraphic Acquisition",
-            "title": "CrowdStrike Acquires Seraphic to Enhance Falcon&#x27;s Browser Security",
-            "content": "CrowdStrike has announced its acquisition of Seraphic Security, an Israel-based company specializing in browser runtime security. This strategic move aims to integrate Seraphic&#x27;s browser-native protection into CrowdStrike&#x27;s Falcon platform, enhancing enterprise security at the browser level. The acquisition, expected to close by April, reflects CrowdStrike&#x27;s commitment to providing comprehensive security solutions that address emerging threats. By expanding its capabilities, CrowdStrike aims to deliver more robust protection against browser-based attacks, a growing concern for enterprises worldwide. Organizations should anticipate updates to Falcon&#x27;s security features as the integration progresses.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4116703/crowdstrike-to-add-browser-security-to-falcon-with-seraphic-acquisition.html",
-            "relatedResources": [
-                {
-                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
-                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
-                    "icon": "fa-shield-virus"
-                }
-            ]
-        },
-        {
-            "date": "Jan 14 2026",
-            "headline": "Pax8 Data Leak Affects 1,800 MSP Partners",
-            "title": "Pax8 Email Mishap Exposes Data of 1,800 Managed Service Providers",
-            "content": "Pax8, a cloud marketplace and distributor, has confirmed an accidental data exposure involving the email distribution of a spreadsheet containing sensitive business information. The incident affected fewer than 40 UK-based partners but included data on 1,800 managed service providers (MSPs) and Microsoft licensing details. This breach highlights the risks associated with mishandling internal communications and the potential for unintended data leaks. Pax8 has taken corrective measures to prevent future occurrences and is working with affected partners to address any concerns. Organizations should review their data handling practices to avoid similar incidents.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cloud-marketplace-pax8-accidentally-exposes-data-on-1-800-msp-partners/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 14 2026",
-            "headline": "Fortinet Patches Critical FortiSIEM RCE Flaw",
-            "title": "Fortinet Addresses Critical FortiSIEM Vulnerability Allowing Remote Code Execution",
-            "content": "Fortinet has released patches for a critical vulnerability in its FortiSIEM product, identified as CVE-2025-64155, which could enable unauthenticated remote code execution. The flaw, rated 9.4 out of 10 on the CVSS scale, stems from an operating system injection vulnerability. If exploited, attackers could execute arbitrary code on affected systems, posing significant risks to organizations relying on FortiSIEM for security information and event management. Fortinet advises all users to apply the latest updates promptly to mitigate potential threats. This incident underscores the importance of timely patch management in maintaining secure environments.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/01/fortinet-fixes-critical-fortisiem-flaw.html",
-            "relatedResources": [
-                {
-                    "label": "CVE Tracker",
-                    "url": "/cve-tracker.html",
-                    "icon": "fa-bug"
-                },
-                {
-                    "label": "Fortinet Analysis",
-                    "url": "/articles/fortinet-fortigate-critical-exploit-2025.html",
-                    "icon": "fa-file-alt"
-                },
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Jan 14 2026",
-            "headline": "WitnessAI Secures $58M to Expand AI Security Platform",
-            "title": "WitnessAI Raises $58 Million to Enhance Global AI Security Platform",
-            "content": "WitnessAI has successfully raised $58 million in funding to accelerate the expansion of its AI security platform globally. The investment will support the company&#x27;s go-to-market strategies and product development efforts, aiming to deliver advanced AI-driven security solutions. WitnessAI&#x27;s platform focuses on leveraging artificial intelligence to detect and respond to security threats more effectively. This funding round highlights the increasing demand for AI-based security technologies as organizations seek innovative ways to protect against sophisticated cyber threats. Security leaders should consider integrating AI solutions like WitnessAI&#x27;s to enhance their security posture.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/witnessai-raises-58-million-for-ai-security-platform/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 14 2026",
-            "headline": "ISC Stormcast Highlights Cyber Trends—January 14, 2026",
-            "title": "ISC Stormcast For January 14, 2026: Key Cybersecurity Developments",
-            "content": "The SANS Internet Storm Center released its latest Stormcast for January 14, 2026, providing a comprehensive overview of current cybersecurity trends. The InfoCON status remains green, indicating a stable threat environment. This report continues to serve as a critical resource for security professionals, offering insights into emerging threats and vulnerabilities. The podcast format allows for easy consumption of the latest cybersecurity news, making it an essential tool for staying informed. Regular updates from trusted sources like the SANS Internet Storm Center help organizations prepare and respond effectively to potential threats.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32626",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Jan 14 2026",
-            "headline": "Taiwan Faces 2.63M Daily Cyberattacks from China",
-            "title": "Taiwan Endures Increased Cyber Pressure from China in 2025",
-            "content": "Taiwan experienced a significant increase in cyberattacks from China in 2025, with an average of 2.63 million attacks daily targeting its critical infrastructure. These attacks affected essential services, including energy utilities and hospitals, highlighting the ongoing cyber tensions in the region. The 6% rise in attacks underscores the persistent threat posed by Chinese cyber operations against Taiwan. This trend reflects broader geopolitical tensions and the strategic importance of cybersecurity in national defense. Organizations in Taiwan are urged to bolster their cybersecurity defenses and remain vigilant against potential threats.",
+            "date": "Mar 23 2026",
+            "headline": "RSAC 2026 Registration Opens—Secure Your Spot Now",
+            "title": "RSA Conference 2026 Registration Opens for Cybersecurity Professionals",
+            "content": "Registration for the RSA Conference 2026 is now open, inviting cybersecurity professionals to secure their spot at one of the industry&#x27;s most anticipated events. Scheduled for April in San Francisco, RSAC 2026 promises to gather experts and leaders to discuss pressing security challenges and innovations. This year&#x27;s conference will focus on emerging threats, AI in cybersecurity, and the future of digital defense. Attendees can expect keynote speeches, technical sessions, and networking opportunities with peers and industry leaders. Early registration is advised as the event typically sells out quickly, reflecting its importance in shaping cybersecurity discourse.",
             "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyber-risk/taiwan-sees-greater-cyber-pressure-from-china",
+            "sourceUrl": "https://www.darkreading.com/events/rsac-2026-conference",
             "relatedResources": []
         },
         {
-            "date": "Jan 14 2026",
-            "headline": "Microsoft Patch Tuesday: Zero-Day, 8 Critical Flaws",
-            "title": "January 2026 Microsoft Patch Tuesday: Critical Vulnerabilities and Zero-Day",
-            "content": "Microsoft&#x27;s first Patch Tuesday of 2026 addresses eight critical vulnerabilities and an actively exploited zero-day. Notably, two vulnerabilities in SharePoint score 8.8 on the CVSS scale, highlighting their severity. The actively exploited zero-day requires immediate attention to prevent potential exploitation. Most vulnerabilities affect Office products, emphasizing the need for organizations to prioritize patching these widely used applications. This release follows last year&#x27;s trend of SharePoint abuse, underscoring the importance of timely updates. Security teams should apply these patches promptly to mitigate risks and protect organizational assets.",
+            "date": "Jan 15 2026",
+            "headline": "SANS Stormcast: Key Cyber Threats for January 15th",
+            "title": "Latest SANS Internet Stormcast Highlights Emerging Cyber Threats",
+            "content": "The SANS Internet Storm Center&#x27;s latest Stormcast podcast for January 15th provides insights into current cyber threats and vulnerabilities. The podcast offers a detailed analysis of recent malware campaigns and security patches, emphasizing the importance of timely updates. Key topics include the risks of unpatched systems and the growing sophistication of phishing attacks. The InfoCON level remains at green, indicating a stable threat landscape, but vigilance is advised. Security professionals are encouraged to stay informed through such resources to effectively safeguard their networks.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32630",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 15 2026",
+            "headline": "VoidLink Malware Targets Linux—Cloud Servers at Risk",
+            "title": "New VoidLink Malware Framework Threatens Linux Cloud Environments",
+            "content": "Researchers have identified VoidLink, a sophisticated malware framework targeting Linux cloud servers and containers. Developed by Chinese actors, VoidLink is modular and stealthy, exploiting Linux internals to avoid detection. The framework poses a significant threat to cloud infrastructure, potentially compromising sensitive data and disrupting operations. This discovery highlights the increasing targeting of Linux systems by advanced persistent threats (APTs). Organizations using Linux in cloud environments should enhance monitoring and apply security patches to mitigate potential risks.",
             "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4116437/january-2026-microsoft-patch-tuesday-actively-exploited-zero-day-needs-attention.html",
+            "sourceUrl": "https://www.csoonline.com/article/4117038/sophisticated-voidlink-malware-framework-targets-linux-cloud-servers.html",
             "relatedResources": [
                 {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
+                    "label": "Zero-Day Detection Guide",
+                    "url": "/guides/zero-day-detection.html",
+                    "icon": "fa-exclamation-triangle"
                 }
             ]
+        },
+        {
+            "date": "Jan 14 2026",
+            "headline": "OpenAI Challenges Google—ChatGPT Translate Debuts",
+            "title": "OpenAI&#x27;s ChatGPT Translate Emerges as Google Translate Rival",
+            "content": "OpenAI has quietly introduced ChatGPT Translate, a new feature designed to compete with Google Translate&#x27;s web capabilities. This tool leverages OpenAI&#x27;s advanced language models to offer translation services across numerous languages. While still in its early stages, ChatGPT Translate aims to provide accurate and context-aware translations, potentially reshaping the landscape of online translation services. The move underscores OpenAI&#x27;s ambition to expand its AI applications beyond conversational AI. Users are encouraged to explore the new tool and provide feedback to aid its development.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openais-hidden-chatgpt-translate-tool-takes-on-google-translate/",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Jan 14 2026",
+            "headline": "Kyowon Hit by Ransomware—Data Theft Confirmed",
+            "title": "Kyowon Group Confirms Data Breach Following Ransomware Attack",
+            "content": "The Kyowon Group, a major South Korean conglomerate, has confirmed a data breach resulting from a recent ransomware attack. The cyberattack disrupted operations and potentially exposed customer information, highlighting the vulnerabilities faced by large enterprises. As the investigation continues, Kyowon is working with cybersecurity experts to assess the full impact and enhance its defenses. This incident reflects a broader trend of ransomware attacks targeting high-profile organizations globally. Affected customers are advised to monitor their accounts and report any suspicious activity.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/south-korean-giant-kyowon-confirms-data-theft-in-ransomware-attack/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Ransomware Response Playbook",
+                    "url": "/guides/ransomware-response-playbook.html",
+                    "icon": "fa-biohazard"
+                }
+            ]
+        },
+        {
+            "date": "Jan 14 2026",
+            "headline": "Cyberattacks Surge in Oceania—Retail and Services Hit Hard",
+            "title": "Retail and Services Sectors in Oceania Face Increased Cyberattacks",
+            "content": "Cyberattacks on retail and service industries in Oceania surged last year, surpassing those on critical infrastructure sectors. Businesses in Australia, New Zealand, and the South Pacific experienced heightened threats, including ransomware and phishing attacks. The trend indicates a shift in cybercriminal focus towards industries with potentially weaker defenses. Companies in these sectors are urged to bolster their cybersecurity measures and conduct regular security audits. The rise in attacks underscores the need for comprehensive security strategies across all industries.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cybersecurity-analytics/retail-services-industries-oceania",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Response Playbook",
+                    "url": "/guides/ransomware-response-playbook.html",
+                    "icon": "fa-biohazard"
+                }
+            ]
+        },
+        {
+            "date": "Jan 14 2026",
+            "headline": "DHS to Relaunch Critical Infrastructure Security Council",
+            "title": "DHS Finalizing New Initiative for Critical Infrastructure Security",
+            "content": "The Department of Homeland Security (DHS) is finalizing plans to replace its disbanded critical infrastructure security council with a new initiative, ANCHOR. This effort aims to renew collaboration between government and industry on securing vital infrastructure. The new council will address liability concerns and enhance information sharing to better protect against evolving threats. This development comes amid growing concerns over infrastructure vulnerabilities and the need for cohesive defense strategies. Stakeholders are encouraged to engage in upcoming discussions to shape the initiative&#x27;s direction.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/dhs-anchor-cipac-replacement-critical-infrastructure-cybersecurity-liability-protections/",
+            "relatedResources": []
         },
         {
             "date": "May 05 2026",
@@ -155,45 +105,74 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Jan 14 2026",
-            "headline": "AI Agents&#x27; Success Hinges on Effective Orchestration",
-            "title": "Multi-Agent Systems Demand Robust Orchestration for Optimal Performance",
-            "content": "In the enterprise landscape, the focus has shifted from individual AI agent capabilities to how well these agents communicate and collaborate. The orchestration of multi-agent systems has become a critical differentiator, as businesses seek to leverage agent-to-agent communications effectively. This trend underscores the importance of integrating diverse AI platforms to achieve cohesive and efficient operations. Companies prioritizing robust orchestration strategies can expect to see improved outcomes in automation and decision-making processes. As AI technologies proliferate, the ability to manage and harmonize multiple agents will define competitive advantage.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/ai-agents-can-talk-orchestration-is-what-makes-them-work-together",
+            "date": "Jan 15 2026",
+            "headline": "OpenAI Lures Two Founders from Thinking Machines Lab",
+            "title": "Co-Founders Depart Thinking Machines Lab to Rejoin OpenAI",
+            "content": "Thinking Machines Lab is facing a significant leadership shake-up as two of its co-founders have decided to leave the company and rejoin OpenAI. This personnel change, which was in the planning stages for several weeks, comes as a strategic blow to Thinking Machines Lab. The move could impact the startup&#x27;s ongoing AI projects and its competitive positioning in the AI landscape. OpenAI&#x27;s acquisition of key talent underscores its aggressive strategy to consolidate expertise in artificial intelligence. Organizations relying on Thinking Machines Lab&#x27;s innovations may need to reassess project timelines and expectations. This development highlights the dynamic and competitive nature of the AI industry, where talent acquisition can drive significant shifts.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/14/mira-muratis-startup-thinking-machines-lab-is-losing-two-of-its-co-founders-to-openai/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 15 2026",
+            "headline": "Grok&#x27;s Image Editing Sparks Controversy on X Platform",
+            "title": "X&#x27;s Grok Fails to Curb Nonconsensual Image Manipulation",
+            "content": "The X platform is embroiled in controversy as its Grok account continues to allow nonconsensual image manipulation, despite claims of having addressed the issue. Users have reported that Grok can still generate inappropriate modifications, such as placing individuals in compromising attire. This follows similar reports by The Telegraph highlighting Grok&#x27;s problematic capabilities. The situation raises significant privacy and ethical concerns, particularly affecting individuals whose images are used without consent. X&#x27;s failure to effectively control Grok&#x27;s capabilities could lead to increased scrutiny from regulators and privacy advocates. Users are advised to remain cautious and report any misuse of the platform&#x27;s tools.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/news/862372/x-grok-ai-policy-update-deepfake-bikini-poses",
             "relatedResources": [
                 {
-                    "label": "Incident Response Automation",
-                    "url": "/guides/incident-response-automation.html",
-                    "icon": "fa-bolt"
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Jan 15 2026",
+            "headline": "Thinking Machines Lab Faces Setback as Founders Exit",
+            "title": "Departure of Co-Founders Challenges Thinking Machines Lab&#x27;s Future",
+            "content": "Thinking Machines Lab is experiencing a leadership crisis with the departure of two co-founders who are returning to OpenAI. This unexpected exit has sparked discussions within the industry about the potential reasons and implications for the startup. The loss of these key figures could disrupt ongoing projects and strategic initiatives at Thinking Machines Lab. As the AI sector becomes increasingly competitive, retaining top talent is crucial for innovation and growth. Stakeholders and partners may need to reassess their engagements with the company in light of these developments. The situation underscores the volatility and competitive pressures within the AI ecosystem.",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/thinking-machines-lab-cofounders-leave-for-openai/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 15 2026",
+            "headline": "Emversity&#x27;s Valuation Doubles Amid AI-Resistant Workforce Training",
+            "title": "Emversity Secures $30M to Expand AI-Resistant Job Training",
+            "content": "Emversity, an Indian startup specializing in job-ready training, has successfully doubled its valuation by raising $30 million in a new funding round. The company focuses on equipping workers with skills that are less susceptible to automation by AI technologies. This funding boost will enable Emversity to scale its operations and expand its reach across India, addressing the growing demand for AI-resistant skillsets. As AI continues to transform numerous industries, Emversity&#x27;s approach provides a crucial pathway for workers to remain competitive in the evolving job market. Investors and industry leaders are closely watching this model as a potential blueprint for future workforce development.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/14/indias-emversity-doubles-valuation-as-it-scales-workers-ai-cant-replace/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
                 }
             ]
         },
         {
             "date": "Jan 14 2026",
-            "headline": "Microsoft Copilot Error Spurs UK Police Misstep",
-            "title": "UK Police Fault Microsoft Copilot for Erroneous Intelligence Report",
-            "content": "A major UK police force has attributed a significant intelligence error to Microsoft&#x27;s Copilot AI assistant. The mistake involved a fabricated football match report that led to the wrongful banning of Israeli fans from a game. This incident highlights the risks associated with relying on AI-generated content in sensitive areas like law enforcement. The error raises questions about the accuracy and oversight of AI tools used in public safety and intelligence. Organizations utilizing AI for critical operations must implement rigorous validation processes to prevent similar mishaps.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/news/861668/uk-police-microsoft-copilot-error-mistake",
+            "headline": "California AG Probes Grok for Generating Inappropriate Images",
+            "title": "Musk Denies Knowledge as California Investigates Grok&#x27;s Misuse",
+            "content": "The California Attorney General has launched an investigation into xAI, Elon Musk&#x27;s artificial intelligence initiative, following reports that its Grok chatbot produced nonconsensual sexual images, including those of minors. Musk has denied any prior awareness of these activities. The investigation highlights significant ethical and legal challenges associated with AI-generated content, particularly concerning privacy and consent. The fallout from this probe could have serious implications for xAI&#x27;s operations and reputation. Organizations utilizing AI technologies should closely monitor regulatory developments and ensure robust ethical guidelines are in place to prevent misuse.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/14/musk-denies-awareness-of-grok-sexual-underage-images-as-california-ag-launches-probe/",
             "relatedResources": []
         },
         {
             "date": "Jan 14 2026",
-            "headline": "AI Firms&#x27; Stance Shifts on Military Tech Use",
-            "title": "AI Companies Reverse Course on Military Tool Development",
-            "content": "Leading AI companies such as Meta and OpenAI, previously opposed to military applications of their technologies, have shifted their stance. This change comes as the U.S. military increasingly seeks AI solutions for defense initiatives. The pivot reflects growing pressures and opportunities within the defense sector for AI integration. This development could lead to new ethical and regulatory challenges as companies balance innovation with responsible use. Stakeholders in the AI industry should monitor these shifts closely to understand the evolving landscape of AI ethics and military collaboration.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/book-excerpt-silicon-empires-nick-srnicek/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 14 2026",
-            "headline": "AstraZeneca Leverages AI for Cancer Research Acceleration",
-            "title": "AstraZeneca Integrates AI to Enhance Oncology Research Efficiency",
-            "content": "Pharmaceutical giant AstraZeneca is harnessing AI to streamline its oncology research processes. With the explosion of data in drug development, the company is embedding AI deeply into its research and clinical trials. This integration aims to improve decision-making and accelerate the development of cancer treatments. As AI becomes indispensable in pharma, the focus is on how seamlessly it can be incorporated into existing workflows. AstraZeneca&#x27;s strategy could set a precedent for other firms seeking to leverage AI for scientific advancements.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/astrazeneca-bets-on-in-house-ai-to-speed-up-oncology-research/",
+            "headline": "OpenAI and Cerebras Ink $10B Compute Power Deal",
+            "title": "OpenAI Secures $10B Compute Agreement with Cerebras for Faster AI",
+            "content": "OpenAI has entered into a $10 billion agreement with Cerebras Systems to enhance its computational capabilities. This collaboration aims to improve the performance of OpenAI&#x27;s models, particularly in handling complex and time-intensive tasks. By leveraging Cerebras&#x27; advanced hardware, OpenAI anticipates delivering faster response times and more efficient processing. This move is part of OpenAI&#x27;s broader strategy to maintain its leadership in the AI sector by investing in cutting-edge infrastructure. The partnership underscores the growing demand for specialized compute resources in advancing AI capabilities. Stakeholders should consider the implications of such large-scale investments in shaping the future of AI applications.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/14/openai-signs-deal-reportedly-worth-10-billion-for-compute-from-cerebras/",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
@@ -204,36 +183,18 @@ const websiteContent = {
         },
         {
             "date": "Jan 14 2026",
-            "headline": "UK Young Adults Turn to AI for Financial Advice",
-            "title": "Survey Reveals AI&#x27;s Growing Role in Young Adults&#x27; Financial Planning",
-            "content": "A recent study by Cleo AI reveals a significant trend among UK young adults aged 28 to 40, who are increasingly relying on AI for financial guidance. The survey, involving 5,000 participants, found that many are saving less than previous generations and are using AI tools to manage their finances better. This shift indicates a growing trust in technology for personal finance management. Financial institutions should consider enhancing their digital offerings to meet the evolving preferences of younger clients seeking efficient and sustainable financial solutions.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/financial-advice-ai-powered-uk-fintech-market-possibilities/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 13 2026",
-            "headline": "Roblox Age Verification AI Faces Accuracy Issues",
-            "title": "Roblox&#x27;s AI-Powered Age Verification System Under Scrutiny",
-            "content": "Roblox&#x27;s AI-driven age verification system is facing criticism for its inaccuracies, with reports of children being misidentified as adults and vice versa. This has led to age-verified accounts being sold online, posing security and privacy concerns. The flawed system highlights the challenges of implementing AI for sensitive tasks like identity verification. Roblox must address these issues promptly to maintain user trust and compliance with age-related regulations. The situation underscores the need for robust validation mechanisms in AI systems handling personal data.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/robloxs-ai-powered-age-verification-is-a-complete-mess/",
+            "headline": "Z.ai&#x27;s GLM-Image Outperforms Google&#x27;s Nano Banana Pro in Text Rendering",
+            "title": "Z.ai&#x27;s Open Source Model Surpasses Google in Complex Text Tasks",
+            "content": "Z.ai&#x27;s open-source GLM-Image model has outperformed Google&#x27;s Nano Banana Pro in complex text rendering tasks, although it falls short in aesthetic quality. This development highlights the competitive landscape in AI model performance, particularly in specialized tasks such as text rendering. The rise of open-source models like GLM-Image demonstrates the potential for community-driven innovation to challenge established tech giants. While Google&#x27;s Nano Banana Pro remains superior in aesthetics, the technical prowess of GLM-Image offers a compelling alternative for developers focusing on functionality. This competition may drive further advancements and diversification in AI model capabilities.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/z-ais-open-source-glm-image-beats-googles-nano-banana-pro-at-complex-text",
             "relatedResources": [
                 {
-                    "label": "ISO 27001 Certification Roadmap",
-                    "url": "/guides/iso-27001-certification-roadmap.html",
-                    "icon": "fa-certificate"
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
                 }
             ]
-        },
-        {
-            "date": "Jan 13 2026",
-            "headline": "AI&#x27;s Role in Healthcare Expands Beyond Chatbots",
-            "title": "Healthcare Industry Explores Broader AI Applications Beyond Chatbots",
-            "content": "Recent launches by OpenAI and Anthropic of healthcare-focused AI products signal a growing interest in AI&#x27;s potential in the medical field. While chatbots have been a popular entry point, professionals are exploring more sophisticated applications such as diagnostic tools and personalized treatment plans. This development reflects a shift towards integrating AI into core healthcare processes. The challenge lies in ensuring these technologies complement rather than replace human expertise. Healthcare providers should evaluate AI solutions that enhance clinical outcomes and patient care.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/13/doctors-think-ai-has-a-place-in-healthcare-but-maybe-not-as-a-chatbot/",
-            "relatedResources": []
         }
     ],
     "articles": {},
