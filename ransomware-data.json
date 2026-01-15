@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-01-15T01:47:21.341277",
+  "last_updated": "2026-01-15T12:48:32.661344",
   "period": "Last 7 days",
-  "total_groups": 30,
-  "total_victims": 264,
+  "total_groups": 28,
+  "total_victims": 260,
   "groups": [
     {
       "name": "Qilin",
-      "count": 40,
+      "count": 37,
       "victims": [
         {
           "name": "Lunsford Capital",
@@ -81,7 +81,7 @@
         "DE",
         "FR",
         "IT",
-        "MY"
+        "N/A"
       ],
       "trend": "up",
       "trend_percentage": 15,
@@ -279,8 +279,14 @@
     },
     {
       "name": "Incransom",
-      "count": 25,
+      "count": 27,
       "victims": [
+        {
+          "name": "https://trustarholdingsllc.com/ https://vistlabs.com/",
+          "date": "2026-01-15 05:24:09.724636",
+          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/696842f08f1d14b743b7c396",
+          "discovered_date": "2026-01-15T05:24:09.724636"
+        },
         {
           "name": "https://acswinc.com/",
           "date": "2026-01-14 13:42:30.011743",
@@ -334,12 +340,6 @@
           "date": "2026-01-12 15:51:33.055271",
           "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6960f3998f1d14b743626a54",
           "discovered_date": "2026-01-12T15:51:33.055271"
-        },
-        {
-          "name": "https://bellowsmfg.com/company/",
-          "date": "2026-01-13 22:46:22.258536",
-          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6966c1018f1d14b7439913ea",
-          "discovered_date": "2026-01-13T22:46:22.258536"
         }
       ],
       "industries": [
@@ -351,8 +351,8 @@
       ],
       "countries": [
         "AE",
+        "HK",
         "IT",
-        "TW",
         "US"
       ],
       "trend": "up",
@@ -364,7 +364,7 @@
         4,
         14,
         2,
-        0
+        2
       ]
     },
     {
@@ -443,8 +443,8 @@
         "GB",
         "HK",
         "IN",
-        "MY",
-        "N/A"
+        "N/A",
+        "US"
       ],
       "trend": "up",
       "trend_percentage": 15,
@@ -547,6 +547,96 @@
       ]
     },
     {
+      "name": "Tengu",
+      "count": 10,
+      "victims": [
+        {
+          "name": "Nordstrom Rack",
+          "date": "2026-01-15 02:49:57.338610",
+          "url": "http://longcc4fqrfcqt5lzceutylaxir6h66fp6df3oin6mvwvz6pfdbxc6qd.onion/blog/9ed049f13a6c03647605778e699066649aea5265c7351bff6fd5e509a294ba2e/",
+          "discovered_date": "2026-01-15T02:49:57.338610"
+        },
+        {
+          "name": "Samson Equipment",
+          "date": "2026-01-14 23:29:41.611513",
+          "url": "http://longcc4fqrfcqt5lzceutylaxir6h66fp6df3oin6mvwvz6pfdbxc6qd.onion/blog/b15894372ddbb2ea10962a5ec4eaab9594a0406f9ce1d66c7db3c9e23ef52003/",
+          "discovered_date": "2026-01-14T23:29:41.611513"
+        },
+        {
+          "name": "https://seha.org.sa",
+          "date": "2026-01-14 15:27:16.739537",
+          "url": "http://longcc4fqrfcqt5lzceutylaxir6h66fp6df3oin6mvwvz6pfdbxc6qd.onion/blog/9194b5bee0d8552e9421cd7003d82a7861469b78856b501259d0c881519df3cf/",
+          "discovered_date": "2026-01-14T15:27:16.739537"
+        },
+        {
+          "name": "Quick Safety Electric",
+          "date": "2026-01-14 00:23:47.633206",
+          "url": "http://longcc4fqrfcqt5lzceutylaxir6h66fp6df3oin6mvwvz6pfdbxc6qd.onion/blog/b97904dfa9f56c1edd2c4bc06a22786ff9ec1bb76c4e5717796b18ca076bbbb5/",
+          "discovered_date": "2026-01-14T00:23:47.633206"
+        },
+        {
+          "name": "www.charoenchai.com",
+          "date": "2026-01-12 14:28:51.108891",
+          "url": "http://longcc4fqrfcqt5lzceutylaxir6h66fp6df3oin6mvwvz6pfdbxc6qd.onion/blog/c4d13fb89574bba9e6b64412d1b369a26faecb336fc4710ba43d994468c915ef/",
+          "discovered_date": "2026-01-12T14:28:51.108891"
+        },
+        {
+          "name": "Nordstrom Rack",
+          "date": "2026-01-15T02:49:57+00:00",
+          "url": "https://www.ransomware.live/id/Tm9yZHN0cm9tIFJhY2tAdGVuZ3U=",
+          "discovered_date": "2026-01-15T02:49:57+00:00"
+        },
+        {
+          "name": "Samson Equipment",
+          "date": "2026-01-14T23:29:41+00:00",
+          "url": "https://www.ransomware.live/id/U2Ftc29uIEVxdWlwbWVudEB0ZW5ndQ==",
+          "discovered_date": "2026-01-14T23:29:41+00:00"
+        },
+        {
+          "name": "https://seha.org.sa",
+          "date": "2026-01-14T15:27:16+00:00",
+          "url": "https://www.ransomware.live/id/aHR0cHM6Ly9zZWhhLm9yZy5zYUB0ZW5ndQ==",
+          "discovered_date": "2026-01-14T15:27:16+00:00"
+        },
+        {
+          "name": "Quick Safety Electric",
+          "date": "2026-01-14T00:23:47+00:00",
+          "url": "https://www.ransomware.live/id/UXVpY2sgU2FmZXR5IEVsZWN0cmljQHRlbmd1",
+          "discovered_date": "2026-01-14T00:23:47+00:00"
+        },
+        {
+          "name": "www.charoenchai.com",
+          "date": "2026-01-12T14:28:51+00:00",
+          "url": "https://www.ransomware.live/id/d3d3LmNoYXJvZW5jaGFpLmNvbUB0ZW5ndQ==",
+          "discovered_date": "2026-01-12T14:28:51+00:00"
+        }
+      ],
+      "industries": [
+        "Agriculture and Food Production",
+        "Consumer Services",
+        "Healthcare",
+        "Manufacturing",
+        "Not Found"
+      ],
+      "countries": [
+        "N/A",
+        "SA",
+        "TH",
+        "US"
+      ],
+      "trend": "stable",
+      "trend_percentage": 0,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        6,
+        2
+      ]
+    },
+    {
       "name": "Everest",
       "count": 10,
       "victims": [
@@ -619,7 +709,7 @@
       "countries": [
         "BG",
         "CA",
-        "FR",
+        "ES",
         "JP",
         "N/A"
       ],
@@ -637,14 +727,8 @@
     },
     {
       "name": "Thegentlemen",
-      "count": 10,
+      "count": 9,
       "victims": [
-        {
-          "name": "Real Tech",
-          "date": "2026-01-11 18:59:34.524275",
-          "url": "http://tezwsse5czllksjb7cwp65rvnk4oobmzti2znn42i43bjdfd2prqqkad.onion",
-          "discovered_date": "2026-01-11T18:59:34.524275"
-        },
         {
           "name": "Rogers Capital",
           "date": "2026-01-14 21:22:11.208416",
@@ -701,8 +785,7 @@
         }
       ],
       "industries": [
-        "Financial Services",
-        "Not Found"
+        "Financial Services"
       ],
       "countries": [
         "CA",
@@ -716,87 +799,10 @@
       "daily_counts": [
         0,
         0,
-        8,
+        7,
         0,
         0,
         2,
-        0
-      ]
-    },
-    {
-      "name": "Tengu",
-      "count": 8,
-      "victims": [
-        {
-          "name": "Samson Equipment",
-          "date": "2026-01-14 23:29:41.611513",
-          "url": "http://longcc4fqrfcqt5lzceutylaxir6h66fp6df3oin6mvwvz6pfdbxc6qd.onion/blog/b15894372ddbb2ea10962a5ec4eaab9594a0406f9ce1d66c7db3c9e23ef52003/",
-          "discovered_date": "2026-01-14T23:29:41.611513"
-        },
-        {
-          "name": "https://seha.org.sa",
-          "date": "2026-01-14 15:27:16.739537",
-          "url": "http://longcc4fqrfcqt5lzceutylaxir6h66fp6df3oin6mvwvz6pfdbxc6qd.onion/blog/9194b5bee0d8552e9421cd7003d82a7861469b78856b501259d0c881519df3cf/",
-          "discovered_date": "2026-01-14T15:27:16.739537"
-        },
-        {
-          "name": "Quick Safety Electric",
-          "date": "2026-01-14 00:23:47.633206",
-          "url": "http://longcc4fqrfcqt5lzceutylaxir6h66fp6df3oin6mvwvz6pfdbxc6qd.onion/blog/b97904dfa9f56c1edd2c4bc06a22786ff9ec1bb76c4e5717796b18ca076bbbb5/",
-          "discovered_date": "2026-01-14T00:23:47.633206"
-        },
-        {
-          "name": "www.charoenchai.com",
-          "date": "2026-01-12 14:28:51.108891",
-          "url": "http://longcc4fqrfcqt5lzceutylaxir6h66fp6df3oin6mvwvz6pfdbxc6qd.onion/blog/c4d13fb89574bba9e6b64412d1b369a26faecb336fc4710ba43d994468c915ef/",
-          "discovered_date": "2026-01-12T14:28:51.108891"
-        },
-        {
-          "name": "Samson Equipment",
-          "date": "2026-01-14T23:29:41+00:00",
-          "url": "https://www.ransomware.live/id/U2Ftc29uIEVxdWlwbWVudEB0ZW5ndQ==",
-          "discovered_date": "2026-01-14T23:29:41+00:00"
-        },
-        {
-          "name": "https://seha.org.sa",
-          "date": "2026-01-14T15:27:16+00:00",
-          "url": "https://www.ransomware.live/id/aHR0cHM6Ly9zZWhhLm9yZy5zYUB0ZW5ndQ==",
-          "discovered_date": "2026-01-14T15:27:16+00:00"
-        },
-        {
-          "name": "Quick Safety Electric",
-          "date": "2026-01-14T00:23:47+00:00",
-          "url": "https://www.ransomware.live/id/UXVpY2sgU2FmZXR5IEVsZWN0cmljQHRlbmd1",
-          "discovered_date": "2026-01-14T00:23:47+00:00"
-        },
-        {
-          "name": "www.charoenchai.com",
-          "date": "2026-01-12T14:28:51+00:00",
-          "url": "https://www.ransomware.live/id/d3d3LmNoYXJvZW5jaGFpLmNvbUB0ZW5ndQ==",
-          "discovered_date": "2026-01-12T14:28:51+00:00"
-        }
-      ],
-      "industries": [
-        "Agriculture and Food Production",
-        "Healthcare",
-        "Manufacturing",
-        "Not Found"
-      ],
-      "countries": [
-        "N/A",
-        "SA",
-        "TH",
-        "US"
-      ],
-      "trend": "stable",
-      "trend_percentage": 0,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        2,
-        0,
-        6,
         0
       ]
     },
@@ -951,14 +957,8 @@
     },
     {
       "name": "Obscura",
-      "count": 7,
+      "count": 6,
       "victims": [
-        {
-          "name": "Revoil",
-          "date": "2026-01-11 19:46:29.859425",
-          "url": "",
-          "discovered_date": "2026-01-11T19:46:29.859425"
-        },
         {
           "name": "Revoil",
           "date": "2026-01-11T19:46:29+00:00",
@@ -996,9 +996,7 @@
           "discovered_date": "2026-01-11T10:47:29+00:00"
         }
       ],
-      "industries": [
-        "Energy"
-      ],
+      "industries": [],
       "countries": [
         "GR",
         "MY",
@@ -1010,7 +1008,7 @@
       "daily_counts": [
         0,
         0,
-        7,
+        6,
         0,
         0,
         0,
@@ -1481,40 +1479,6 @@
       ]
     },
     {
-      "name": "Blackshrantac",
-      "count": 2,
-      "victims": [
-        {
-          "name": "National Water Authority",
-          "date": "2026-01-08T02:51:23+00:00",
-          "url": "https://www.ransomware.live/id/TmF0aW9uYWwgV2F0ZXIgQXV0aG9yaXR5QGJsYWNrc2hyYW50YWM=",
-          "discovered_date": "2026-01-08T02:51:23+00:00"
-        },
-        {
-          "name": "SCHNEIDER PROTOTYPING INDIA PVT. LTD",
-          "date": "2026-01-08T02:50:57+00:00",
-          "url": "https://www.ransomware.live/id/U0NITkVJREVSIFBST1RPVFlQSU5HIElORElBIFBWVC4gTFREQGJsYWNrc2hyYW50YWM=",
-          "discovered_date": "2026-01-08T02:50:57+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "IN",
-        "N/A"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Killsec",
       "count": 1,
       "victims": [
@@ -1636,33 +1600,6 @@
       "industries": [],
       "countries": [
         "IN"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Blacknevas",
-      "count": 1,
-      "victims": [
-        {
-          "name": "Applied LNG",
-          "date": "2026-01-08T12:47:11+00:00",
-          "url": "https://www.ransomware.live/id/QXBwbGllZCBMTkdAYmxhY2tuZXZhcw==",
-          "discovered_date": "2026-01-08T12:47:11+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "US"
       ],
       "trend": "down",
       "trend_percentage": -5,
