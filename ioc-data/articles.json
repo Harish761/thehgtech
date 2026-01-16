@@ -1,6 +1,80 @@
 {
   "articles": [
     {
+      "id": "article-microsoft-patch-tuesday-jan-2026",
+      "title": "Microsoft Patch Tuesday January 2026: 114 CVEs, 3 Zero-Days, and One Actively Exploited",
+      "date": "January 16, 2026",
+      "category": "Vulnerability",
+      "badge": "CRITICAL",
+      "excerpt": "Microsoft's January 2026 Patch Tuesday addresses 114 vulnerabilities including 3 zero-days. CVE-2026-20805 is actively exploited in the wild and added to CISA KEV.",
+      "image": "images/articles/microsoft-patch-tuesday-january-2026.png",
+      "tags": [
+        "Microsoft",
+        "Patch Tuesday",
+        "Zero-Day",
+        "CVE-2026-20805",
+        "CISA KEV",
+        "Windows"
+      ],
+      "author": "Harish G",
+      "externalUrl": "articles/microsoft-patch-tuesday-january-2026.html"
+    },
+    {
+      "id": "article-totalenergies-breach-2026",
+      "title": "TotalEnergies Breach: 183 Million Customer Records Allegedly Stolen",
+      "date": "January 16, 2026",
+      "category": "Data Breach",
+      "badge": "BREAKING",
+      "excerpt": "French energy giant TotalEnergies targeted in massive data breach. Attackers claim 183 million customer records stolen including bank accounts, emails, and phone numbers.",
+      "image": "images/articles/totalenergies-data-breach-2026.png",
+      "tags": [
+        "TotalEnergies",
+        "Data Breach",
+        "France",
+        "Energy Sector",
+        "Banking Data"
+      ],
+      "author": "Harish G",
+      "externalUrl": "articles/totalenergies-data-breach-2026.html"
+    },
+    {
+      "id": "article-llm-attack-reconnaissance-2026",
+      "title": "91,000 LLM Attack Sessions: Massive AI Reconnaissance Campaign",
+      "date": "January 16, 2026",
+      "category": "AI Security",
+      "badge": "NEW",
+      "excerpt": "Security researchers detect 91,000 attack sessions targeting LLM APIs including OpenAI and Gemini. Threat actors mapping AI infrastructure for future cyberattacks.",
+      "image": "images/articles/llm-attack-reconnaissance-2026.png",
+      "tags": [
+        "AI Security",
+        "LLM",
+        "OpenAI",
+        "Gemini",
+        "Reconnaissance",
+        "API Security"
+      ],
+      "author": "Harish G",
+      "externalUrl": "articles/llm-attack-reconnaissance-2026.html"
+    },
+    {
+      "id": "article-microsoft-365-gov-breach-2026",
+      "title": "Microsoft 365 US Government Breach: Cloud Espionage Campaign",
+      "date": "January 16, 2026",
+      "category": "Nation-State Threat",
+      "badge": "BREAKING",
+      "excerpt": "Sophisticated cyber espionage campaign compromises US federal agencies through Microsoft 365 cloud services. Stolen credentials and phishing used to access email accounts.",
+      "image": "images/articles/microsoft-365-gov-breach-2026.png",
+      "tags": [
+        "Microsoft 365",
+        "Government Breach",
+        "Nation-State",
+        "Espionage",
+        "Cloud Security"
+      ],
+      "author": "Harish G",
+      "externalUrl": "articles/microsoft-365-gov-breach-2026.html"
+    },
+    {
       "id": "report-20260112",
       "title": "Weekly Threat Report: January 12, 2026",
       "date": "January 12, 2026",
