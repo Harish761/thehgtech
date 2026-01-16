@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>AWS Security Best Practices Guide 2026 | IAM, S3, VPC Security | TheHGTech</title>
+    <meta name="title" content="AWS Security Best Practices Guide 2026 | Cloud Security Hardening">
+    <meta name="description"
+        content="Secure your AWS environment with this comprehensive guide. Learn IAM policies, S3 bucket security, VPC configuration, CloudTrail logging, and GuardDuty setup.">
+    <meta name="keywords"
+        content="AWS security, IAM best practices, S3 security, VPC security, CloudTrail, GuardDuty, AWS hardening, cloud security, AWS compliance, security groups">
+    <meta name="author" content="TheHGTech">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thehgtech.com/guides/aws-security-best-practices.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/guides/aws-security-best-practices.html">
+    <meta property="og:title" content="AWS Security Best Practices Guide 2026">
+    <meta property="og:description" content="Comprehensive AWS security hardening - IAM, S3, VPC, and monitoring.">
+    <meta property="og:image" content="https://thehgtech.com/images/guides/aws-security-best-practices.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://thehgtech.com/guides/aws-security-best-practices.html">
+    <meta name="twitter:title" content="AWS Security Best Practices [2026]">
+    <meta name="twitter:description" content="Complete AWS security guide - IAM, S3, VPC hardening.">
+    <meta name="twitter:image" content="https://thehgtech.com/images/guides/aws-security-best-practices.png">
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the most important AWS security settings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Priority AWS security settings: 1) Enable MFA on root account, 2) Enable CloudTrail in all regions, 3) Block public S3 bucket access, 4) Use IAM roles instead of access keys, 5) Enable GuardDuty for threat detection, 6) Configure Security Hub for compliance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I secure S3 buckets in AWS?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "To secure S3 buckets: Enable S3 Block Public Access at account level, use bucket policies with least privilege, enable default encryption (SSE-S3 or SSE-KMS), enable versioning, configure access logging, and use VPC endpoints for internal access."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the principle of least privilege in AWS IAM?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Least privilege means granting only the minimum permissions necessary to perform a task. In AWS IAM, this means: using specific resource ARNs instead of wildcards, specifying exact actions needed, using conditions to restrict access, and regularly reviewing permissions with IAM Access Analyzer."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "AWS Security Best Practices: Complete Hardening Guide",
+      "description": "Secure your AWS environment from day one with IAM, S3, VPC, and monitoring best practices.",
+      "image": {"@type": "ImageObject", "url": "https://thehgtech.com/images/guides/aws-security-best-practices.png", "width": 1200, "height": 630},
+      "author": {"@type": "Organization", "name": "TheHGTech", "url": "https://thehgtech.com"},
+      "publisher": {"@type": "Organization", "name": "TheHGTech", "logo": {"@type": "ImageObject", "url": "https://thehgtech.com/logo.png"}},
+      "datePublished": "2026-01-17",
+      "dateModified": "2026-01-17",
+      "mainEntityOfPage": {"@type": "WebPage", "@id": "https://thehgtech.com/guides/aws-security-best-practices.html"},
+      "keywords": "AWS security, IAM, S3, VPC, CloudTrail, GuardDuty",
+      "articleSection": "Security Guides",
+      "proficiencyLevel": "Intermediate"
+    }
+    </script>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF3D3D;
+            --accent-green: #22C55E;
+            --accent-orange: #FF9900;
+            --accent-purple: #A855F7;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            padding-top: 100px;
+        }
+
+        .new-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent-orange), #ffb347);
+            color: #000;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            margin-left: 1rem;
+        }
+
+        .guide-header {
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+        }
+
+        .breadcrumb {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .breadcrumb a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(to right, #fff, #a0a0a0);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+
+        .meta {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            flex-wrap: wrap;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .featured-image {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin: 2rem 0;
+            box-shadow: 0 10px 40px rgba(255, 153, 0, 0.2);
+            border: 1px solid var(--border);
+        }
+
+        .content h2 {
+            font-size: 1.8rem;
+            color: var(--accent-orange);
+            margin: 3rem 0 1.5rem;
+        }
+
+        .content h3 {
+            font-size: 1.4rem;
+            color: #fff;
+            margin: 2rem 0 1rem;
+        }
+
+        .content h4 {
+            font-size: 1.2rem;
+            color: var(--accent-orange);
+            margin: 1.5rem 0 1rem;
+        }
+
+        .content p {
+            margin-bottom: 1.5rem;
+            color: #d0d0d0;
+        }
+
+        .content ul,
+        .content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+            color: #d0d0d0;
+        }
+
+        .content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .content strong {
+            color: #fff;
+        }
+
+        .content code {
+            background: var(--bg-card);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: var(--accent-orange);
+            font-size: 0.9em;
+        }
+
+        .info-box {
+            background: rgba(0, 217, 255, 0.05);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .warning-box {
+            background: rgba(255, 61, 61, 0.1);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .success-box {
+            background: rgba(34, 197, 94, 0.1);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        pre {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+            color: #d0d0d0;
+        }
+
+        .aws-keyword {
+            color: var(--accent-orange);
+            font-weight: 600;
+        }
+
+        .aws-value {
+            color: var(--accent-green);
+        }
+
+        .aws-comment {
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: rgba(255, 153, 0, 0.1);
+            color: var(--accent-orange);
+            font-weight: 600;
+        }
+
+        td {
+            color: var(--text-secondary);
+        }
+
+        .toc {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .toc h3 {
+            color: var(--accent-orange);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .toc ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .toc li {
+            margin-bottom: 0.5rem;
+        }
+
+        .toc a {
+            color: var(--text-secondary);
+            text-decoration: none;
+        }
+
+        .toc a:hover {
+            color: var(--accent-orange);
+        }
+
+        .aws-box {
+            background: linear-gradient(135deg, rgba(255, 153, 0, 0.1), rgba(255, 179, 71, 0.05));
+            border: 1px solid var(--accent-orange);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .aws-box h5 {
+            color: var(--accent-orange);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.8rem 1.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .btn-back:hover {
+            border-color: var(--accent-orange);
+            color: var(--accent-orange);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .content h2 {
+                font-size: 1.5rem;
+            }
+
+            .container {
+                padding-top: 80px;
+            }
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/header-dropdown.css?v=1">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <script src="/m-app.js?v=4.3" defer></script>
+
+    <script type="application/ld+json">
+    {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thehgtech.com"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://thehgtech.com/guides/"}, {"@type": "ListItem", "position": 3, "name": "AWS Security Best Practices", "item": "https://thehgtech.com/guides/aws-security-best-practices.html"}]}
+    </script>
+</head>
+
+<body>
+    <header class="m-header m-only">
+        <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px;">
+            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px;">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">TheHGTech</span>
+        </div>
+        <div class="m-header__actions">
+            <button class="m-theme-toggle" onclick="mToggleTheme()" aria-label="Toggle Theme"><span
+                    class="m-theme-toggle__thumb"></span></button>
+            <button class="m-header__btn m-header__btn--search" data-action="search" aria-label="Search"><i
+                    class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item"><i class="fas fa-bug"></i><span>CVE</span></a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item"><i class="fas fa-shield-alt"></i><span>Intel</span></a>
+        <a href="/articles.html" class="m-bottom-nav__item"><i class="fas fa-newspaper"></i><span>Articles</span></a>
+        <a href="/guides/" class="m-bottom-nav__item active"><i class="fas fa-book"></i><span>Guides</span></a>
+    </nav>
+
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+            <nav class="nav nav-modern" role="navigation">
+                <a href="/index.html#news">News</a>
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">Intelligence <span class="nav-live-badge">LIVE</span><i
+                            class="fas fa-chevron-down dropdown-arrow"></i></span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/threat-intel.html" class="dropdown-item">
+                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Threat Intelligence</div>
+                            </div>
+                        </a>
+                        <a href="/cve-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">CVE Tracker</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">Resources<i
+                            class="fas fa-chevron-down dropdown-arrow"></i></span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/guides/" class="dropdown-item">
+                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Security Guides</div>
+                            </div>
+                        </a>
+                        <a href="/articles.html" class="dropdown-item">
+                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Articles</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="theme-toggle-wrapper"><button class="theme-toggle" id="themeToggle"
+                        aria-label="Toggle theme"></button></div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="guide-header">
+            <div class="breadcrumb"><a href="/">Home</a> / <a href="/guides/">Guides</a> / AWS Security</div>
+            <h1>AWS Security Best Practices</h1>
+            <span class="new-badge"><i class="fas fa-cloud"></i> Cloud</span>
+            <p style="color: var(--text-muted); font-size: 1.1rem; margin-top: 1rem;">Secure your AWS environment from
+                day one with comprehensive hardening guidelines.</p>
+            <div class="meta" style="margin-top: 1rem;">
+                <div class="meta-item"><i class="fas fa-book-open"></i> 25 min read</div>
+                <div class="meta-item"><i class="fas fa-crosshairs"></i> Intermediate</div>
+                <div class="meta-item"><i class="far fa-calendar-alt"></i> Jan 17, 2026</div>
+            </div>
+        </div>
+
+        <article class="content">
+            <img src="/images/guides/aws-security-best-practices.png" alt="AWS Security Best Practices Guide"
+                class="featured-image">
+
+            <p>AWS powers millions of organizations worldwide, making it a prime target for attackers. Misconfigurations
+                are the #1 cause of cloud breaches - from exposed S3 buckets to overly permissive IAM roles. This guide
+                covers the essential security controls every AWS environment needs.</p>
+
+            <div class="info-box">
+                <strong><i class="fas fa-lightbulb"></i> The AWS Shared Responsibility Model</strong>
+                <p style="margin-top: 0.5rem; margin-bottom: 0;"><strong>AWS is responsible for:</strong> Physical
+                    security, hypervisor, network infrastructure<br><strong>You are responsible for:</strong> IAM, data
+                    encryption, network configuration, application security, OS patching</p>
+            </div>
+
+            <div class="toc">
+                <h3><i class="fas fa-list-ul"></i> Table of Contents</h3>
+                <ul>
+                    <li><a href="#account">1. Account Security Fundamentals</a></li>
+                    <li><a href="#iam">2. IAM Best Practices</a></li>
+                    <li><a href="#s3">3. S3 Bucket Security</a></li>
+                    <li><a href="#vpc">4. VPC and Network Security</a></li>
+                    <li><a href="#logging">5. Logging and Monitoring</a></li>
+                    <li><a href="#encryption">6. Data Encryption</a></li>
+                    <li><a href="#detection">7. Threat Detection</a></li>
+                    <li><a href="#compliance">8. Compliance and Auditing</a></li>
+                </ul>
+            </div>
+
+            <h2 id="account">1. Account Security Fundamentals</h2>
+
+            <h3>Root Account Protection</h3>
+            <div class="warning-box">
+                <strong><i class="fas fa-exclamation-triangle"></i> Critical: Secure Your Root Account</strong>
+                <p style="margin-top: 0.5rem; margin-bottom: 0;">The root account has unlimited access to everything.
+                    Compromise of root means total account takeover.</p>
+            </div>
+
+            <div class="success-box">
+                <strong><i class="fas fa-check-circle"></i> Root Account Checklist</strong>
+                <ul style="margin-top: 0.5rem; margin-bottom: 0;">
+                    <li>Enable MFA (hardware key preferred, TOTP minimum)</li>
+                    <li>Never create access keys for root</li>
+                    <li>Use a dedicated email with strong security</li>
+                    <li>Only use root for tasks that require it</li>
+                    <li>Set up alternate contacts for billing/security</li>
+                </ul>
+            </div>
+
+            <h3>AWS Organizations</h3>
+            <p>For multi-account environments, use AWS Organizations:</p>
+            <ul>
+                <li><strong>Service Control Policies (SCPs)</strong> - Restrict what services accounts can use</li>
+                <li><strong>Consolidated billing</strong> - Single payer, multiple accounts</li>
+                <li><strong>Account isolation</strong> - Separate prod/dev/security accounts</li>
+            </ul>
+
+            <h2 id="iam">2. IAM Best Practices</h2>
+
+            <h3>The Principle of Least Privilege</h3>
+            <p>Grant only the minimum permissions required for a task:</p>
+
+            <div class="aws-box">
+                <h5><i class="fas fa-user-shield"></i> Good vs Bad IAM Policy</h5>
+                <pre><code><span class="aws-comment">// BAD - Too permissive</span>
+{
+    <span class="aws-keyword">"Effect"</span>: <span class="aws-value">"Allow"</span>,
+    <span class="aws-keyword">"Action"</span>: <span class="aws-value">"s3:*"</span>,
+    <span class="aws-keyword">"Resource"</span>: <span class="aws-value">"*"</span>
+}
+
+<span class="aws-comment">// GOOD - Specific actions and resources</span>
+{
+    <span class="aws-keyword">"Effect"</span>: <span class="aws-value">"Allow"</span>,
+    <span class="aws-keyword">"Action"</span>: [
+        <span class="aws-value">"s3:GetObject"</span>,
+        <span class="aws-value">"s3:ListBucket"</span>
+    ],
+    <span class="aws-keyword">"Resource"</span>: [
+        <span class="aws-value">"arn:aws:s3:::my-app-bucket"</span>,
+        <span class="aws-value">"arn:aws:s3:::my-app-bucket/*"</span>
+    ]
+}</code></pre>
+            </div>
+
+            <h3>IAM Roles vs Access Keys</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Use Case</th>
+                        <th>Solution</th>
+                        <th>Why</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>EC2 accessing S3</td>
+                        <td>IAM Role (Instance Profile)</td>
+                        <td>No keys to manage or rotate</td>
+                    </tr>
+                    <tr>
+                        <td>Lambda functions</td>
+                        <td>IAM Role (Execution Role)</td>
+                        <td>Automatic, secure</td>
+                    </tr>
+                    <tr>
+                        <td>Cross-account access</td>
+                        <td>IAM Role with AssumeRole</td>
+                        <td>No shared credentials</td>
+                    </tr>
+                    <tr>
+                        <td>CI/CD pipelines</td>
+                        <td>OIDC Federation</td>
+                        <td>No long-lived keys</td>
+                    </tr>
+                    <tr>
+                        <td>Local development</td>
+                        <td>SSO / Identity Center</td>
+                        <td>Temporary credentials</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>IAM Access Analyzer</h3>
+            <p>Enable IAM Access Analyzer to find:</p>
+            <ul>
+                <li>Resources shared with external accounts</li>
+                <li>Unused permissions (for policy trimming)</li>
+                <li>Public or cross-account access paths</li>
+            </ul>
+
+            <pre><code><span class="aws-comment"># AWS CLI - Create analyzer</span>
+aws accessanalyzer create-analyzer \
+    --analyzer-name my-analyzer \
+    --type ACCOUNT</code></pre>
+
+            <h2 id="s3">3. S3 Bucket Security</h2>
+
+            <div class="warning-box">
+                <strong><i class="fas fa-exclamation-triangle"></i> S3 Misconfigurations = Data Breaches</strong>
+                <p style="margin-top: 0.5rem; margin-bottom: 0;">Public S3 buckets have caused countless data leaks.
+                    Always assume your buckets contain sensitive data.</p>
+            </div>
+
+            <h3>S3 Block Public Access</h3>
+            <p>Enable at the <strong>account level</strong> to prevent any bucket from becoming public:</p>
+
+            <pre><code><span class="aws-comment"># Enable Block Public Access for entire account</span>
+aws s3control put-public-access-block \
+    --account-id 123456789012 \
+    --public-access-block-configuration \
+        "BlockPublicAcls=true,\
+         IgnorePublicAcls=true,\
+         BlockPublicPolicy=true,\
+         RestrictPublicBuckets=true"</code></pre>
+
+            <h3>S3 Security Checklist</h3>
+            <div class="success-box">
+                <strong><i class="fas fa-check-circle"></i> Every S3 Bucket Should Have:</strong>
+                <ul style="margin-top: 0.5rem; margin-bottom: 0;">
+                    <li>Block Public Access enabled</li>
+                    <li>Default encryption (SSE-S3 or SSE-KMS)</li>
+                    <li>Versioning enabled</li>
+                    <li>Access logging enabled</li>
+                    <li>Lifecycle policies for old versions</li>
+                    <li>Object Lock for compliance data (if required)</li>
+                </ul>
+            </div>
+
+            <h3>Secure Bucket Policy Example</h3>
+            <pre><code>{
+    <span class="aws-keyword">"Version"</span>: <span class="aws-value">"2012-10-17"</span>,
+    <span class="aws-keyword">"Statement"</span>: [
+        {
+            <span class="aws-keyword">"Sid"</span>: <span class="aws-value">"DenyInsecureTransport"</span>,
+            <span class="aws-keyword">"Effect"</span>: <span class="aws-value">"Deny"</span>,
+            <span class="aws-keyword">"Principal"</span>: <span class="aws-value">"*"</span>,
+            <span class="aws-keyword">"Action"</span>: <span class="aws-value">"s3:*"</span>,
+            <span class="aws-keyword">"Resource"</span>: [
+                <span class="aws-value">"arn:aws:s3:::my-bucket"</span>,
+                <span class="aws-value">"arn:aws:s3:::my-bucket/*"</span>
+            ],
+            <span class="aws-keyword">"Condition"</span>: {
+                <span class="aws-keyword">"Bool"</span>: {<span class="aws-keyword">"aws:SecureTransport"</span>: <span class="aws-value">"false"</span>}
+            }
+        }
+    ]
+}</code></pre>
+
+            <h2 id="vpc">4. VPC and Network Security</h2>
+
+            <h3>Security Groups Best Practices</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rule</th>
+                        <th>Bad Practice</th>
+                        <th>Good Practice</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Inbound SSH</td>
+                        <td>0.0.0.0/0:22</td>
+                        <td>VPN/Bastion IP only</td>
+                    </tr>
+                    <tr>
+                        <td>Inbound RDP</td>
+                        <td>0.0.0.0/0:3389</td>
+                        <td>Never public; use SSM</td>
+                    </tr>
+                    <tr>
+                        <td>Database</td>
+                        <td>All IPs:3306</td>
+                        <td>App security group only</td>
+                    </tr>
+                    <tr>
+                        <td>Outbound</td>
+                        <td>All traffic allowed</td>
+                        <td>Restrict to needed destinations</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>VPC Flow Logs</h3>
+            <p>Enable VPC Flow Logs for network visibility:</p>
+            <pre><code>aws ec2 create-flow-logs \
+    --resource-type VPC \
+    --resource-ids vpc-12345678 \
+    --traffic-type ALL \
+    --log-destination-type cloud-watch-logs \
+    --log-group-name /aws/vpc/flowlogs</code></pre>
+
+            <h3>Use VPC Endpoints</h3>
+            <p>Keep traffic private with VPC Endpoints:</p>
+            <ul>
+                <li><strong>Gateway Endpoints</strong> - S3, DynamoDB (free)</li>
+                <li><strong>Interface Endpoints</strong> - Other AWS services (paid)</li>
+            </ul>
+
+            <h2 id="logging">5. Logging and Monitoring</h2>
+
+            <h3>CloudTrail - The Foundation</h3>
+            <p>CloudTrail logs all API activity. Enable it in <strong>all regions</strong>:</p>
+
+            <div class="success-box">
+                <strong><i class="fas fa-check-circle"></i> CloudTrail Configuration</strong>
+                <ul style="margin-top: 0.5rem; margin-bottom: 0;">
+                    <li>Create organization trail (if using Organizations)</li>
+                    <li>Enable in all regions</li>
+                    <li>Log to S3 bucket with versioning + encryption</li>
+                    <li>Enable log file integrity validation</li>
+                    <li>Send to CloudWatch Logs for alerting</li>
+                    <li>Protect trail from tampering with SCPs</li>
+                </ul>
+            </div>
+
+            <h3>CloudWatch Alarms</h3>
+            <p>Set up alarms for critical security events:</p>
+            <ul>
+                <li>Root account usage</li>
+                <li>IAM policy changes</li>
+                <li>Security group changes</li>
+                <li>CloudTrail disabled</li>
+                <li>Console login without MFA</li>
+            </ul>
+
+            <h2 id="encryption">6. Data Encryption</h2>
+
+            <h3>Encryption at Rest</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Default Encryption</th>
+                        <th>Recommended</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>S3</td>
+                        <td>Optional</td>
+                        <td>SSE-S3 or SSE-KMS</td>
+                    </tr>
+                    <tr>
+                        <td>EBS</td>
+                        <td>Optional (can enforce)</td>
+                        <td>Enable account-level default</td>
+                    </tr>
+                    <tr>
+                        <td>RDS</td>
+                        <td>Optional</td>
+                        <td>Enable at creation</td>
+                    </tr>
+                    <tr>
+                        <td>DynamoDB</td>
+                        <td>SSE enabled by default</td>
+                        <td>Use KMS CMK for more control</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>KMS Key Policies</h3>
+            <p>Use AWS KMS for key management. Control access with key policies:</p>
+            <pre><code>{
+    <span class="aws-keyword">"Sid"</span>: <span class="aws-value">"Allow use of the key"</span>,
+    <span class="aws-keyword">"Effect"</span>: <span class="aws-value">"Allow"</span>,
+    <span class="aws-keyword">"Principal"</span>: {
+        <span class="aws-keyword">"AWS"</span>: <span class="aws-value">"arn:aws:iam::123456789012:role/MyAppRole"</span>
+    },
+    <span class="aws-keyword">"Action"</span>: [
+        <span class="aws-value">"kms:Encrypt"</span>,
+        <span class="aws-value">"kms:Decrypt"</span>,
+        <span class="aws-value">"kms:GenerateDataKey"</span>
+    ],
+    <span class="aws-keyword">"Resource"</span>: <span class="aws-value">"*"</span>
+}</code></pre>
+
+            <h2 id="detection">7. Threat Detection</h2>
+
+            <h3>Amazon GuardDuty</h3>
+            <p>GuardDuty is AWS's threat detection service. Enable it in all accounts and regions:</p>
+            <ul>
+                <li>Analyzes CloudTrail, VPC Flow Logs, DNS logs</li>
+                <li>Detects crypto mining, data exfiltration, backdoors</li>
+                <li>Machine learning identifies anomalies</li>
+                <li>Integrates with Security Hub</li>
+            </ul>
+
+            <h3>Security Hub</h3>
+            <p>Centralize security findings from multiple services:</p>
+            <ul>
+                <li>GuardDuty findings</li>
+                <li>Inspector findings</li>
+                <li>IAM Access Analyzer</li>
+                <li>Config Rules compliance</li>
+                <li>Third-party tools</li>
+            </ul>
+
+            <h2 id="compliance">8. Compliance and Auditing</h2>
+
+            <h3>AWS Config Rules</h3>
+            <p>Continuously monitor configuration compliance:</p>
+
+            <pre><code><span class="aws-comment"># Essential Config Rules</span>
+- s3-bucket-public-read-prohibited
+- s3-bucket-ssl-requests-only
+- iam-root-access-key-check
+- iam-user-mfa-enabled
+- ec2-security-group-attached-to-eni
+- vpc-flow-logs-enabled
+- cloudtrail-enabled</code></pre>
+
+            <h3>AWS Audit Manager</h3>
+            <p>Automate evidence collection for:</p>
+            <ul>
+                <li>SOC 2</li>
+                <li>ISO 27001</li>
+                <li>PCI DSS</li>
+                <li>HIPAA</li>
+                <li>GDPR</li>
+            </ul>
+
+            <div class="info-box">
+                <strong><i class="fas fa-lightbulb"></i> Next Steps</strong>
+                <p style="margin-top: 0.5rem; margin-bottom: 0;">After implementing these basics, explore AWS Security
+                    Specialty certification, Well-Architected Framework security pillar, and advanced services like AWS
+                    Network Firewall and WAF.</p>
+            </div>
+
+            <p
+                style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); color: var(--text-muted);">
+                <strong>Author:</strong> TheHGTech Security Team<br>
+                <strong>Last Updated:</strong> January 2026<br>
+                <strong>Reading Time:</strong> 25 minutes
+            </p>
+        </article>
+
+        <div class="interaction-bar">
+            <div class="like-section">
+                <button class="like-btn" id="likeBtn" onclick="toggleLike()"><i class="far fa-heart"></i> <span
+                        id="likeText">Like this guide</span></button>
+            </div>
+            <div class="action-buttons">
+                <div class="share-buttons">
+                    <a href="#" onclick="shareTwitter(event)" class="share-btn"><i class="fab fa-twitter"></i></a>
+                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn"><i class="fab fa-linkedin-in"></i></a>
+                    <button onclick="copyLink()" class="share-btn"><i class="fas fa-link"></i></button>
+                </div>
+                <div class="button-separator"></div>
+                <button onclick="printArticle()" class="print-btn"><i class="fas fa-print"></i></button>
+            </div>
+        </div>
+
+        <a href="/guides/" class="btn-back"><i class="fas fa-arrow-left"></i> Back to All Guides</a>
+    </div>
+
+    <script src="/interaction-bar.js?v=20251217"></script>
+</body>
+
+</html>

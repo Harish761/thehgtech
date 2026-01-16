@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Wireshark Network Analysis Guide 2026 | Packet Capture & Protocol Analysis | TheHGTech</title>
+    <meta name="title" content="Wireshark Network Analysis Guide 2026 | Packet Capture Tutorial">
+    <meta name="description"
+        content="Master Wireshark packet analysis with this complete guide. Learn display filters, protocol analysis, traffic patterns, and security investigation techniques for SOC analysts.">
+    <meta name="keywords"
+        content="Wireshark tutorial, packet analysis, network traffic, display filters, protocol analysis, pcap, SOC analyst, network forensics, packet capture, security monitoring">
+    <meta name="author" content="TheHGTech">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thehgtech.com/guides/wireshark-network-analysis.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/guides/wireshark-network-analysis.html">
+    <meta property="og:title" content="Wireshark Network Analysis Guide 2026 | Complete Tutorial">
+    <meta property="og:description"
+        content="Master packet analysis with Wireshark. Display filters, protocol analysis, and security investigation techniques.">
+    <meta property="og:image" content="https://thehgtech.com/images/guides/wireshark-network-analysis.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://thehgtech.com/guides/wireshark-network-analysis.html">
+    <meta name="twitter:title" content="Wireshark Network Analysis Guide [2026]">
+    <meta name="twitter:description"
+        content="Complete Wireshark tutorial for security professionals - filters, protocols, and forensics.">
+    <meta name="twitter:image" content="https://thehgtech.com/images/guides/wireshark-network-analysis.png">
+
+    <!-- FAQ Schema for Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Wireshark and why is it used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Wireshark is a free, open-source network protocol analyzer used for packet capture and traffic analysis. Security professionals use it for troubleshooting network issues, analyzing malware communications, investigating security incidents, and understanding network protocols."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the most useful Wireshark display filters?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Essential Wireshark filters include: ip.addr == x.x.x.x (filter by IP), tcp.port == 443 (filter by port), http.request.method == GET (HTTP methods), dns.qry.name contains 'domain' (DNS queries), and tcp.flags.syn == 1 (TCP SYN packets)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I analyze suspicious traffic in Wireshark?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "To analyze suspicious traffic: 1) Filter for the suspect IP or port, 2) Follow TCP/HTTP streams to see full conversations, 3) Check for unusual ports or protocols, 4) Look for large data transfers, 5) Identify beaconing patterns with IO graphs, 6) Export suspicious files for malware analysis."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between capture filters and display filters?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Capture filters (BPF syntax) filter packets during capture, reducing file size but permanently excluding unmatched packets. Display filters (Wireshark syntax) filter the view of already-captured packets, allowing you to show/hide packets without losing data. Use capture filters when you know exactly what you need; use display filters for flexible analysis."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Wireshark Network Analysis Guide: Packet Capture & Protocol Analysis",
+      "description": "Master Wireshark for network security analysis. Learn display filters, protocol analysis, traffic patterns, and investigation techniques.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://thehgtech.com/images/guides/wireshark-network-analysis.png",
+        "width": 1200,
+        "height": 630
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "TheHGTech",
+        "url": "https://thehgtech.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TheHGTech",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://thehgtech.com/logo.png",
+          "width": 600,
+          "height": 60
+        }
+      },
+      "datePublished": "2026-01-17",
+      "dateModified": "2026-01-17",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://thehgtech.com/guides/wireshark-network-analysis.html"
+      },
+      "keywords": "Wireshark, packet analysis, network security, protocol analysis, pcap, SOC",
+      "articleSection": "Security Guides",
+      "inLanguage": "en-US",
+      "proficiencyLevel": "Beginner to Intermediate",
+      "wordCount": 4500
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF3D3D;
+            --accent-green: #22C55E;
+            --accent-orange: #FF9500;
+            --accent-purple: #A855F7;
+            --glow-cyan: rgba(0, 217, 255, 0.5);
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+            --glass: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            padding-top: 100px;
+        }
+
+        .new-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+            color: #000;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            margin-left: 1rem;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.8;
+                transform: scale(1.05);
+            }
+        }
+
+        .guide-header {
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+        }
+
+        .breadcrumb {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .breadcrumb a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(to right, #fff, #a0a0a0);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+
+        .meta {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            flex-wrap: wrap;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .featured-image {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin: 2rem 0;
+            box-shadow: 0 10px 40px rgba(0, 217, 255, 0.2);
+            border: 1px solid var(--border);
+        }
+
+        .content h2 {
+            font-size: 1.8rem;
+            color: var(--accent-cyan);
+            margin: 3rem 0 1.5rem;
+        }
+
+        .content h3 {
+            font-size: 1.4rem;
+            color: #fff;
+            margin: 2rem 0 1rem;
+        }
+
+        .content h4 {
+            font-size: 1.2rem;
+            color: var(--accent-cyan);
+            margin: 1.5rem 0 1rem;
+        }
+
+        .content p {
+            margin-bottom: 1.5rem;
+            color: #d0d0d0;
+        }
+
+        .content ul,
+        .content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+            color: #d0d0d0;
+        }
+
+        .content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .content strong {
+            color: #fff;
+        }
+
+        .content code {
+            background: var(--bg-card);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: var(--accent-cyan);
+            font-size: 0.9em;
+        }
+
+        .info-box {
+            background: rgba(0, 217, 255, 0.05);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .warning-box {
+            background: rgba(255, 61, 61, 0.1);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .success-box {
+            background: rgba(34, 197, 94, 0.1);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        pre {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+            color: #d0d0d0;
+        }
+
+        .filter-keyword {
+            color: var(--accent-purple);
+            font-weight: 600;
+        }
+
+        .filter-operator {
+            color: var(--accent-orange);
+        }
+
+        .filter-value {
+            color: var(--accent-green);
+        }
+
+        .filter-comment {
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: rgba(0, 217, 255, 0.1);
+            color: var(--accent-cyan);
+            font-weight: 600;
+        }
+
+        td {
+            color: var(--text-secondary);
+        }
+
+        .toc {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .toc h3 {
+            color: var(--accent-cyan);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .toc ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .toc li {
+            margin-bottom: 0.5rem;
+        }
+
+        .toc a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .toc a:hover {
+            color: var(--accent-cyan);
+        }
+
+        .filter-box {
+            background: linear-gradient(135deg, rgba(0, 217, 255, 0.1), rgba(168, 85, 247, 0.05));
+            border: 1px solid var(--accent-cyan);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .filter-box h5 {
+            color: var(--accent-cyan);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .inline-image {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border: 1px solid var(--border);
+        }
+
+        footer {
+            margin-top: 5rem;
+            padding-top: 3rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.8rem 1.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-back:hover {
+            border-color: var(--accent-cyan);
+            color: var(--accent-cyan);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .content h2 {
+                font-size: 1.5rem;
+            }
+
+            .content h3 {
+                font-size: 1.2rem;
+            }
+
+            .container {
+                padding-top: 80px;
+            }
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/header-dropdown.css?v=1">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <script src="/m-app.js?v=4.3" defer></script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://thehgtech.com"
+      }, {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Guides",
+        "item": "https://thehgtech.com/guides/"
+      }, {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Wireshark Network Analysis Guide",
+        "item": "https://thehgtech.com/guides/wireshark-network-analysis.html"
+      }]
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Mobile Header -->
+    <header class="m-header m-only">
+        <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark"
+                style="height: 28px; width: auto; margin: 0;">
+            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light"
+                style="height: 28px; width: auto; margin: 0;">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+        </div>
+        <div class="m-header__actions">
+            <button class="m-theme-toggle" onclick="mToggleTheme()" aria-label="Toggle Theme">
+                <span class="m-theme-toggle__thumb"></span>
+                <span class="m-theme-toggle__stars">
+                    <span class="m-theme-toggle__star"></span>
+                    <span class="m-theme-toggle__star"></span>
+                </span>
+            </button>
+            <button class="m-header__btn m-header__btn--search" data-action="search" aria-label="Search">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Bottom Navigation -->
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item"><i class="fas fa-bug"></i><span>CVE</span></a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item"><i class="fas fa-shield-alt"></i><span>Intel</span></a>
+        <a href="/articles.html" class="m-bottom-nav__item"><i class="fas fa-newspaper"></i><span>Articles</span></a>
+        <a href="/guides/" class="m-bottom-nav__item active"><i class="fas fa-book"></i><span>Guides</span></a>
+    </nav>
+
+    <!-- Desktop Header -->
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+
+            <nav class="nav nav-modern" role="navigation">
+                <a href="/index.html#news">News</a>
+
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">
+                        Intelligence
+                        <span class="nav-live-badge">LIVE</span>
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/threat-intel.html" class="dropdown-item">
+                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Threat Intelligence <span
+                                        class="dropdown-badge live">LIVE</span></div>
+                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds</div>
+                            </div>
+                        </a>
+                        <a href="/cve-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">CVE Tracker</div>
+                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities</div>
+                            </div>
+                        </a>
+                        <a href="/ransomware-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Ransomware Tracker</div>
+                                <div class="dropdown-item-desc">Track active ransomware groups</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">
+                        Resources
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/guides/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
+                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides
+                                    <span class="dropdown-badge popular">40+</span>
+                                </div>
+                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
+                            </div>
+                        </a>
+                        <a href="/comparisons/" class="dropdown-item">
+                            <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Tool Comparisons</div>
+                                <div class="dropdown-item-desc">EDR, SIEM, and security tool reviews</div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="/articles.html" class="dropdown-item">
+                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Articles</div>
+                                <div class="dropdown-item-desc">Latest cybersecurity news and analysis</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="theme-toggle-wrapper">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <div class="toggle-stars">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="guide-header">
+            <div class="breadcrumb">
+                <a href="/">Home</a> / <a href="/guides/">Guides</a> / Wireshark Network Analysis
+            </div>
+            <h1>Wireshark Network Analysis</h1>
+            <span class="new-badge"><i class="fas fa-star"></i> New</span>
+            <p style="color: var(--text-muted); font-size: 1.1rem; margin-top: 1rem;">Master packet analysis for
+                security investigations, troubleshooting, and network forensics.</p>
+            <div class="meta" style="margin-top: 1rem;">
+                <div class="meta-item"><i class="fas fa-book-open"></i> 20 min read</div>
+                <div class="meta-item"><i class="fas fa-crosshairs"></i> Beginner to Intermediate</div>
+                <div class="meta-item"><i class="far fa-calendar-alt"></i> Jan 17, 2026</div>
+            </div>
+        </div>
+
+        <article class="content">
+            <img src="/images/guides/wireshark-network-analysis.png" alt="Wireshark Network Analysis Guide"
+                class="featured-image">
+
+            <p>Wireshark is the world's most popular network protocol analyzer. Whether you're troubleshooting
+                connectivity issues, investigating malware communications, or performing network forensics, Wireshark is
+                an essential tool in every security professional's toolkit.</p>
+
+            <p>In this comprehensive guide, I'll walk you through everything from basic packet capture to advanced
+                filtering techniques used by SOC analysts to investigate security incidents.</p>
+
+            <div class="info-box">
+                <strong><i class="fas fa-lightbulb"></i> Why Learn Wireshark?</strong>
+                <p style="margin-top: 0.5rem; margin-bottom: 0;">Wireshark appears in nearly every SOC analyst job
+                    description. It's free, cross-platform, and provides unmatched visibility into network traffic.
+                    Understanding packet-level analysis is crucial for detecting lateral movement, exfiltration, and
+                    command-and-control communications.</p>
+            </div>
+
+            <!-- Table of Contents -->
+            <div class="toc">
+                <h3><i class="fas fa-list-ul"></i> Table of Contents</h3>
+                <ul>
+                    <li><a href="#getting-started">1. Getting Started with Wireshark</a></li>
+                    <li><a href="#interface">2. Understanding the Interface</a></li>
+                    <li><a href="#capture-filters">3. Capture Filters (BPF Syntax)</a></li>
+                    <li><a href="#display-filters">4. Display Filters (Essential Reference)</a></li>
+                    <li><a href="#protocol-analysis">5. Protocol Analysis Techniques</a></li>
+                    <li><a href="#security-analysis">6. Security Investigation Techniques</a></li>
+                    <li><a href="#follow-streams">7. Following TCP/HTTP Streams</a></li>
+                    <li><a href="#statistics">8. Statistics and Traffic Patterns</a></li>
+                    <li><a href="#export">9. Exporting Data and Objects</a></li>
+                    <li><a href="#malware-analysis">10. Malware Traffic Analysis</a></li>
+                    <li><a href="#best-practices">11. Best Practices for SOC Analysts</a></li>
+                </ul>
+            </div>
+
+            <h2 id="getting-started">1. Getting Started with Wireshark</h2>
+
+            <h3>Installation</h3>
+            <p>Wireshark is available for Windows, macOS, and Linux:</p>
+
+            <pre><code><span class="filter-comment"># Windows/macOS</span>
+Download from https://www.wireshark.org/download.html
+
+<span class="filter-comment"># Ubuntu/Debian</span>
+sudo apt update && sudo apt install wireshark
+
+<span class="filter-comment"># Fedora/RHEL</span>
+sudo dnf install wireshark
+
+<span class="filter-comment"># Add user to wireshark group (Linux)</span>
+sudo usermod -aG wireshark $USER</code></pre>
+
+            <h3>First Capture</h3>
+            <p>To capture your first packets:</p>
+            <ol>
+                <li>Launch Wireshark</li>
+                <li>Select your network interface (usually "eth0" or "Wi-Fi")</li>
+                <li>Click the blue shark fin icon to start capturing</li>
+                <li>Generate some traffic (browse a website)</li>
+                <li>Click the red square to stop capturing</li>
+            </ol>
+
+            <div class="success-box">
+                <strong><i class="fas fa-check-circle"></i> Quick Tip:</strong> Save captures in <code>.pcapng</code>
+                format (Wireshark's native format) to preserve all metadata. Use <code>.pcap</code> when sharing with
+                older tools.
+            </div>
+
+            <h2 id="interface">2. Understanding the Interface</h2>
+
+            <p>Wireshark's interface has three main panes:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pane</th>
+                        <th>Location</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Packet List</strong></td>
+                        <td>Top</td>
+                        <td>Shows all captured packets with summary info (time, source, dest, protocol, info)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Packet Details</strong></td>
+                        <td>Middle</td>
+                        <td>Expandable tree showing protocol layers (Ethernet → IP → TCP → HTTP)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Packet Bytes</strong></td>
+                        <td>Bottom</td>
+                        <td>Raw hexadecimal and ASCII representation of selected packet</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Color Coding</h3>
+            <p>Wireshark uses colors to quickly identify traffic types:</p>
+            <ul>
+                <li><strong style="color: #7CFC00;">Light Green</strong> - HTTP traffic</li>
+                <li><strong style="color: #87CEEB;">Light Blue</strong> - UDP traffic</li>
+                <li><strong style="color: #FFB6C1;">Light Pink</strong> - TCP traffic</li>
+                <li><strong style="color: #FF0000;">Red</strong> - Errors, retransmissions, bad checksums</li>
+                <li><strong style="color: #000000; background: #FFFF00;">Black on Yellow</strong> - ICMP traffic</li>
+                <li><strong style="color: #90EE90;">Light Green</strong> - DNS traffic</li>
+            </ul>
+
+            <h2 id="capture-filters">3. Capture Filters (BPF Syntax)</h2>
+
+            <p>Capture filters use Berkeley Packet Filter (BPF) syntax and <strong>filter packets during
+                    capture</strong>. This is useful when you know exactly what traffic you need and want to reduce file
+                size.</p>
+
+            <div class="warning-box">
+                <strong><i class="fas fa-exclamation-triangle"></i> Important:</strong> Capture filters permanently
+                exclude non-matching packets. You cannot recover filtered-out traffic. When in doubt, capture everything
+                and use display filters instead.
+            </div>
+
+            <h3>Common Capture Filters</h3>
+
+            <pre><code><span class="filter-comment"># Capture only traffic to/from specific host</span>
+<span class="filter-keyword">host</span> 192.168.1.100
+
+<span class="filter-comment"># Capture only traffic on specific port</span>
+<span class="filter-keyword">port</span> 443
+
+<span class="filter-comment"># Capture only TCP traffic</span>
+<span class="filter-keyword">tcp</span>
+
+<span class="filter-comment"># Capture traffic to specific network</span>
+<span class="filter-keyword">net</span> 10.0.0.0/8
+
+<span class="filter-comment"># Combine with and/or</span>
+<span class="filter-keyword">host</span> 192.168.1.100 <span class="filter-operator">and</span> <span class="filter-keyword">port</span> 80
+<span class="filter-keyword">tcp</span> <span class="filter-operator">or</span> <span class="filter-keyword">udp</span>
+
+<span class="filter-comment"># Exclude specific traffic</span>
+<span class="filter-operator">not</span> <span class="filter-keyword">port</span> 22
+
+<span class="filter-comment"># Complex filter: HTTP but not from my IP</span>
+<span class="filter-keyword">tcp port</span> 80 <span class="filter-operator">and not</span> <span class="filter-keyword">host</span> 192.168.1.50</code></pre>
+
+            <h2 id="display-filters">4. Display Filters (Essential Reference)</h2>
+
+            <p>Display filters use Wireshark's own syntax and <strong>filter the view of already-captured
+                    packets</strong>. This is the most common filtering method for analysis.</p>
+
+            <img src="/images/guides/wireshark-filters.png" alt="Wireshark Display Filters Reference"
+                class="inline-image">
+
+            <h3>IP Address Filters</h3>
+
+            <div class="filter-box">
+                <h5><i class="fas fa-network-wired"></i> IP Filtering Examples</h5>
+                <pre><code><span class="filter-comment"># Traffic involving specific IP</span>
+<span class="filter-keyword">ip.addr</span> <span class="filter-operator">==</span> <span class="filter-value">192.168.1.100</span>
+
+<span class="filter-comment"># Source IP only</span>
+<span class="filter-keyword">ip.src</span> <span class="filter-operator">==</span> <span class="filter-value">10.0.0.5</span>
+
+<span class="filter-comment"># Destination IP only</span>
+<span class="filter-keyword">ip.dst</span> <span class="filter-operator">==</span> <span class="filter-value">8.8.8.8</span>
+
+<span class="filter-comment"># Traffic within a subnet</span>
+<span class="filter-keyword">ip.addr</span> <span class="filter-operator">==</span> <span class="filter-value">192.168.1.0/24</span>
+
+<span class="filter-comment"># NOT from specific IP</span>
+<span class="filter-operator">!</span><span class="filter-keyword">ip.addr</span> <span class="filter-operator">==</span> <span class="filter-value">192.168.1.1</span></code></pre>
+            </div>
+
+            <h3>Port and Protocol Filters</h3>
+
+            <div class="filter-box">
+                <h5><i class="fas fa-plug"></i> Port and Protocol Filtering</h5>
+                <pre><code><span class="filter-comment"># Filter by TCP port</span>
+<span class="filter-keyword">tcp.port</span> <span class="filter-operator">==</span> <span class="filter-value">443</span>
+
+<span class="filter-comment"># Filter by UDP port</span>
+<span class="filter-keyword">udp.port</span> <span class="filter-operator">==</span> <span class="filter-value">53</span>
+
+<span class="filter-comment"># Source port only</span>
+<span class="filter-keyword">tcp.srcport</span> <span class="filter-operator">==</span> <span class="filter-value">80</span>
+
+<span class="filter-comment"># Destination port only</span>
+<span class="filter-keyword">tcp.dstport</span> <span class="filter-operator">==</span> <span class="filter-value">8080</span>
+
+<span class="filter-comment"># Port range (dynamic ports)</span>
+<span class="filter-keyword">tcp.port</span> <span class="filter-operator">>=</span> <span class="filter-value">1024</span> <span class="filter-operator">&&</span> <span class="filter-keyword">tcp.port</span> <span class="filter-operator"><=</span> <span class="filter-value">65535</span>
+
+<span class="filter-comment"># Protocol filters</span>
+<span class="filter-keyword">http</span>
+<span class="filter-keyword">dns</span>
+<span class="filter-keyword">tls</span>
+<span class="filter-keyword">icmp</span>
+<span class="filter-keyword">arp</span></code></pre>
+            </div>
+
+            <h3>HTTP-Specific Filters</h3>
+
+            <div class="filter-box">
+                <h5><i class="fas fa-globe"></i> HTTP Traffic Analysis</h5>
+                <pre><code><span class="filter-comment"># All HTTP traffic</span>
+<span class="filter-keyword">http</span>
+
+<span class="filter-comment"># HTTP requests only</span>
+<span class="filter-keyword">http.request</span>
+
+<span class="filter-comment"># HTTP responses only</span>
+<span class="filter-keyword">http.response</span>
+
+<span class="filter-comment"># Specific HTTP method</span>
+<span class="filter-keyword">http.request.method</span> <span class="filter-operator">==</span> <span class="filter-value">"GET"</span>
+<span class="filter-keyword">http.request.method</span> <span class="filter-operator">==</span> <span class="filter-value">"POST"</span>
+
+<span class="filter-comment"># Filter by URL/URI</span>
+<span class="filter-keyword">http.request.uri</span> <span class="filter-operator">contains</span> <span class="filter-value">"/login"</span>
+
+<span class="filter-comment"># Filter by Host header</span>
+<span class="filter-keyword">http.host</span> <span class="filter-operator">contains</span> <span class="filter-value">"malicious-domain.com"</span>
+
+<span class="filter-comment"># Filter by User-Agent</span>
+<span class="filter-keyword">http.user_agent</span> <span class="filter-operator">contains</span> <span class="filter-value">"curl"</span>
+
+<span class="filter-comment"># HTTP response codes</span>
+<span class="filter-keyword">http.response.code</span> <span class="filter-operator">==</span> <span class="filter-value">200</span>
+<span class="filter-keyword">http.response.code</span> <span class="filter-operator">==</span> <span class="filter-value">404</span>
+<span class="filter-keyword">http.response.code</span> <span class="filter-operator">>=</span> <span class="filter-value">400</span>  <span class="filter-comment"># All errors</span></code></pre>
+            </div>
+
+            <h3>DNS Filters</h3>
+
+            <div class="filter-box">
+                <h5><i class="fas fa-server"></i> DNS Analysis Filters</h5>
+                <pre><code><span class="filter-comment"># All DNS traffic</span>
+<span class="filter-keyword">dns</span>
+
+<span class="filter-comment"># DNS queries only</span>
+<span class="filter-keyword">dns.flags.response</span> <span class="filter-operator">==</span> <span class="filter-value">0</span>
+
+<span class="filter-comment"># DNS responses only</span>
+<span class="filter-keyword">dns.flags.response</span> <span class="filter-operator">==</span> <span class="filter-value">1</span>
+
+<span class="filter-comment"># Query for specific domain</span>
+<span class="filter-keyword">dns.qry.name</span> <span class="filter-operator">contains</span> <span class="filter-value">"suspicious.com"</span>
+
+<span class="filter-comment"># A record queries</span>
+<span class="filter-keyword">dns.qry.type</span> <span class="filter-operator">==</span> <span class="filter-value">1</span>
+
+<span class="filter-comment"># TXT record queries (often used by malware)</span>
+<span class="filter-keyword">dns.qry.type</span> <span class="filter-operator">==</span> <span class="filter-value">16</span>
+
+<span class="filter-comment"># NXDOMAIN responses (domain not found)</span>
+<span class="filter-keyword">dns.flags.rcode</span> <span class="filter-operator">==</span> <span class="filter-value">3</span></code></pre>
+            </div>
+
+            <h3>TCP Flags and Connection Analysis</h3>
+
+            <div class="filter-box">
+                <h5><i class="fas fa-flag"></i> TCP Flag Filters</h5>
+                <pre><code><span class="filter-comment"># SYN packets (connection attempts)</span>
+<span class="filter-keyword">tcp.flags.syn</span> <span class="filter-operator">==</span> <span class="filter-value">1</span> <span class="filter-operator">&&</span> <span class="filter-keyword">tcp.flags.ack</span> <span class="filter-operator">==</span> <span class="filter-value">0</span>
+
+<span class="filter-comment"># SYN-ACK (connection accepted)</span>
+<span class="filter-keyword">tcp.flags.syn</span> <span class="filter-operator">==</span> <span class="filter-value">1</span> <span class="filter-operator">&&</span> <span class="filter-keyword">tcp.flags.ack</span> <span class="filter-operator">==</span> <span class="filter-value">1</span>
+
+<span class="filter-comment"># FIN packets (connection close)</span>
+<span class="filter-keyword">tcp.flags.fin</span> <span class="filter-operator">==</span> <span class="filter-value">1</span>
+
+<span class="filter-comment"># RST packets (connection reset/rejected)</span>
+<span class="filter-keyword">tcp.flags.reset</span> <span class="filter-operator">==</span> <span class="filter-value">1</span>
+
+<span class="filter-comment"># Detect retransmissions (network issues)</span>
+<span class="filter-keyword">tcp.analysis.retransmission</span>
+
+<span class="filter-comment"># Zero window (flow control issues)</span>
+<span class="filter-keyword">tcp.analysis.zero_window</span></code></pre>
+            </div>
+
+            <h2 id="protocol-analysis">5. Protocol Analysis Techniques</h2>
+
+            <h3>Decrypting TLS/HTTPS Traffic</h3>
+            <p>To analyze encrypted HTTPS traffic, you need either:</p>
+            <ol>
+                <li><strong>Pre-master secret log file</strong> - Set <code>SSLKEYLOGFILE</code> environment variable in
+                    your browser</li>
+                <li><strong>Server's private key</strong> - For RSA key exchange (not ECDHE)</li>
+            </ol>
+
+            <pre><code><span class="filter-comment"># Set in your shell before starting browser</span>
+export SSLKEYLOGFILE=~/sslkeys.log
+
+<span class="filter-comment"># In Wireshark: Edit → Preferences → Protocols → TLS</span>
+<span class="filter-comment"># Set "(Pre)-Master-Secret log filename" to ~/sslkeys.log</span></code></pre>
+
+            <h3>SMB Analysis</h3>
+            <pre><code><span class="filter-comment"># All SMB traffic</span>
+<span class="filter-keyword">smb</span> <span class="filter-operator">||</span> <span class="filter-keyword">smb2</span>
+
+<span class="filter-comment"># SMB file access</span>
+<span class="filter-keyword">smb2.cmd</span> <span class="filter-operator">==</span> <span class="filter-value">5</span>  <span class="filter-comment"># Create (file open)</span>
+<span class="filter-keyword">smb2.cmd</span> <span class="filter-operator">==</span> <span class="filter-value">8</span>  <span class="filter-comment"># Read</span>
+<span class="filter-keyword">smb2.cmd</span> <span class="filter-operator">==</span> <span class="filter-value">9</span>  <span class="filter-comment"># Write</span>
+
+<span class="filter-comment"># Filter by filename</span>
+<span class="filter-keyword">smb2.filename</span> <span class="filter-operator">contains</span> <span class="filter-value">"password"</span></code></pre>
+
+            <h2 id="security-analysis">6. Security Investigation Techniques</h2>
+
+            <h3>Detecting Port Scans</h3>
+            <pre><code><span class="filter-comment"># Many SYN packets from single source (port scan indicator)</span>
+<span class="filter-keyword">tcp.flags.syn</span> <span class="filter-operator">==</span> <span class="filter-value">1</span> <span class="filter-operator">&&</span> <span class="filter-keyword">tcp.flags.ack</span> <span class="filter-operator">==</span> <span class="filter-value">0</span>
+<span class="filter-comment"># Then check Statistics → Endpoints → TCP tab</span>
+
+<span class="filter-comment"># RST responses indicate closed ports</span>
+<span class="filter-keyword">tcp.flags.reset</span> <span class="filter-operator">==</span> <span class="filter-value">1</span></code></pre>
+
+            <h3>Detecting Data Exfiltration</h3>
+            <pre><code><span class="filter-comment"># Large outbound transfers</span>
+<span class="filter-keyword">ip.dst</span> <span class="filter-operator">!=</span> <span class="filter-value">192.168.0.0/16</span> <span class="filter-operator">&&</span> <span class="filter-keyword">tcp.len</span> <span class="filter-operator">></span> <span class="filter-value">1000</span>
+
+<span class="filter-comment"># DNS tunneling (large TXT queries)</span>
+<span class="filter-keyword">dns.qry.type</span> <span class="filter-operator">==</span> <span class="filter-value">16</span> <span class="filter-operator">&&</span> <span class="filter-keyword">dns.qry.name.len</span> <span class="filter-operator">></span> <span class="filter-value">50</span>
+
+<span class="filter-comment"># ICMP tunneling (large payloads)</span>
+<span class="filter-keyword">icmp</span> <span class="filter-operator">&&</span> <span class="filter-keyword">data.len</span> <span class="filter-operator">></span> <span class="filter-value">100</span></code></pre>
+
+            <h3>Detecting Beaconing</h3>
+            <p>C2 beacons often show regular intervals. Use Statistics → IO Graph:</p>
+            <ol>
+                <li>Filter to suspect IP/port</li>
+                <li>Set interval to 1 second</li>
+                <li>Look for regular spikes (e.g., every 60 seconds)</li>
+            </ol>
+
+            <h2 id="follow-streams">7. Following TCP/HTTP Streams</h2>
+
+            <p>One of Wireshark's most powerful features for security analysis:</p>
+
+            <ol>
+                <li>Right-click any packet in a conversation</li>
+                <li>Select <strong>Follow → TCP Stream</strong> (or HTTP Stream)</li>
+                <li>View the complete conversation reassembled</li>
+            </ol>
+
+            <div class="success-box">
+                <strong><i class="fas fa-check-circle"></i> Pro Tip:</strong> Use "Follow Stream" to see full HTTP
+                requests/responses, including POST data, headers, and responses. This reveals credentials sent in
+                plaintext, file downloads, and API calls.
+            </div>
+
+            <h2 id="statistics">8. Statistics and Traffic Patterns</h2>
+
+            <h3>Essential Statistics Menus</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Menu</th>
+                        <th>Use Case</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Statistics → Endpoints</strong></td>
+                        <td>Top talkers by IP, MAC, or port</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Statistics → Conversations</strong></td>
+                        <td>Traffic between specific IP pairs</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Statistics → Protocol Hierarchy</strong></td>
+                        <td>Protocol distribution breakdown</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Statistics → IO Graph</strong></td>
+                        <td>Traffic over time (detect beaconing)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Statistics → HTTP → Requests</strong></td>
+                        <td>All HTTP requests by host/URI</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 id="export">9. Exporting Data and Objects</h2>
+
+            <h3>Export HTTP Objects (Files)</h3>
+            <p>Extract files from HTTP traffic:</p>
+            <ol>
+                <li>File → Export Objects → HTTP</li>
+                <li>View all downloaded files</li>
+                <li>Save suspicious files for analysis</li>
+            </ol>
+
+            <h3>Export Other Formats</h3>
+            <ul>
+                <li><strong>File → Export Specified Packets</strong> - Save filtered packets to new pcap</li>
+                <li><strong>File → Export Packet Dissections</strong> - Export as CSV/JSON for SIEM</li>
+                <li><strong>File → Export Objects → IMF</strong> - Extract email attachments</li>
+            </ul>
+
+            <h2 id="malware-analysis">10. Malware Traffic Analysis</h2>
+
+            <h3>Common Malware Indicators</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Indicator</th>
+                        <th>Filter</th>
+                        <th>Significance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Unusual User-Agent</td>
+                        <td><code>http.user_agent contains "python" or "curl"</code></td>
+                        <td>Scripted requests, not browsers</td>
+                    </tr>
+                    <tr>
+                        <td>Long DNS queries</td>
+                        <td><code>dns.qry.name.len > 50</code></td>
+                        <td>Possible DNS tunneling</td>
+                    </tr>
+                    <tr>
+                        <td>Non-standard ports</td>
+                        <td><code>tcp.port == 4444 or tcp.port == 5555</code></td>
+                        <td>Common RAT/backdoor ports</td>
+                    </tr>
+                    <tr>
+                        <td>Base64 in URLs</td>
+                        <td><code>http.request.uri matches ".*[A-Za-z0-9+/]{20}.*"</code></td>
+                        <td>Encoded commands/data</td>
+                    </tr>
+                    <tr>
+                        <td>Regular beaconing</td>
+                        <td>Use IO Graph</td>
+                        <td>C2 check-in intervals</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 id="best-practices">11. Best Practices for SOC Analysts</h2>
+
+            <div class="success-box">
+                <strong><i class="fas fa-check-circle"></i> SOC Analyst Checklist:</strong>
+                <ul style="margin-top: 0.5rem; margin-bottom: 0;">
+                    <li>Always work on a <strong>copy</strong> of pcap files, never the original</li>
+                    <li>Document your filters and findings as you go</li>
+                    <li>Use <strong>time display format</strong>: View → Time Display Format → UTC Date and Time of Day
+                    </li>
+                    <li>Create filter <strong>buttons</strong> for commonly used filters</li>
+                    <li>Use <strong>coloring rules</strong> to highlight suspicious traffic</li>
+                    <li>Check <strong>geolocation</strong> of external IPs (Statistics → Endpoints → Map)</li>
+                    <li>Correlate timestamps with other log sources (SIEM, EDR)</li>
+                </ul>
+            </div>
+
+            <h3>Essential Filter Button Set</h3>
+            <p>Create these as quick filter buttons (Analyze → Display Filter Expression → Save):</p>
+
+            <pre><code><span class="filter-comment"># C2 Hunt</span>
+<span class="filter-keyword">http.user_agent</span> <span class="filter-operator">contains</span> <span class="filter-value">"python"</span> <span class="filter-operator">||</span> <span class="filter-keyword">http.user_agent</span> <span class="filter-operator">contains</span> <span class="filter-value">"curl"</span> <span class="filter-operator">||</span> <span class="filter-keyword">http.user_agent</span> <span class="filter-operator">contains</span> <span class="filter-value">"wget"</span>
+
+<span class="filter-comment"># DNS Anomalies</span>
+<span class="filter-keyword">dns.qry.type</span> <span class="filter-operator">==</span> <span class="filter-value">16</span> <span class="filter-operator">||</span> <span class="filter-keyword">dns.qry.name.len</span> <span class="filter-operator">></span> <span class="filter-value">50</span>
+
+<span class="filter-comment"># Errors Only</span>
+<span class="filter-keyword">tcp.analysis.flags</span> <span class="filter-operator">||</span> <span class="filter-keyword">http.response.code</span> <span class="filter-operator">>=</span> <span class="filter-value">400</span>
+
+<span class="filter-comment"># Exclude noise</span>
+<span class="filter-operator">!</span>(<span class="filter-keyword">arp</span> <span class="filter-operator">||</span> <span class="filter-keyword">stp</span> <span class="filter-operator">||</span> <span class="filter-keyword">cdp</span> <span class="filter-operator">||</span> <span class="filter-keyword">lldp</span>)</code></pre>
+
+            <div class="info-box">
+                <strong><i class="fas fa-lightbulb"></i> Continue Learning:</strong>
+                <p style="margin-top: 0.5rem; margin-bottom: 0;">Practice with real malware traffic at <a
+                        href="https://www.malware-traffic-analysis.net/"
+                        style="color: var(--accent-cyan);">malware-traffic-analysis.net</a> - they provide pcap files
+                    with analysis walkthroughs. Also check out the Network Forensics section of SANS FOR572.</p>
+            </div>
+
+            <p
+                style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); color: var(--text-muted);">
+                <strong>Author:</strong> TheHGTech Security Team<br>
+                <strong>Last Updated:</strong> January 2026<br>
+                <strong>Reading Time:</strong> 20 minutes
+            </p>
+        </article>
+
+        <!-- Interaction Bar -->
+        <div class="interaction-bar">
+            <div class="like-section">
+                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                    <i class="far fa-heart"></i> <span id="likeText">Like this guide</span>
+                </button>
+            </div>
+            <div class="action-buttons">
+                <div class="share-buttons">
+                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"
+                        aria-label="Share on Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"
+                        aria-label="Share on LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link">
+                        <i class="fas fa-link"></i>
+                    </button>
+                </div>
+                <div class="button-separator"></div>
+                <button onclick="printArticle()" class="print-btn" title="Print" aria-label="Print">
+                    <i class="fas fa-print"></i>
+                </button>
+            </div>
+        </div>
+
+        <a href="/guides/" class="btn-back"><i class="fas fa-arrow-left"></i> Back to All Guides</a>
+    </div>
+
+    <script src="/interaction-bar.js?v=20251217"></script>
+</body>
+
+</html>

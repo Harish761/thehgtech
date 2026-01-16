@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Email Security: SPF, DKIM & DMARC Complete Guide 2026 | TheHGTech</title>
+    <meta name="title" content="Email Security: SPF, DKIM & DMARC Configuration Guide 2026">
+    <meta name="description"
+        content="Learn to configure SPF, DKIM, and DMARC to protect your domain from email spoofing and phishing. Complete setup guide with DNS records and troubleshooting.">
+    <meta name="keywords"
+        content="SPF record, DKIM setup, DMARC policy, email authentication, email spoofing, phishing prevention, DNS records, email security, domain protection">
+    <meta name="author" content="TheHGTech">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thehgtech.com/guides/email-security-spf-dkim-dmarc.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/guides/email-security-spf-dkim-dmarc.html">
+    <meta property="og:title" content="Email Security: SPF, DKIM & DMARC Complete Guide 2026">
+    <meta property="og:description"
+        content="Protect your domain from email spoofing with SPF, DKIM, and DMARC. Complete setup guide.">
+    <meta property="og:image" content="https://thehgtech.com/images/guides/email-security-spf-dkim-dmarc.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://thehgtech.com/guides/email-security-spf-dkim-dmarc.html">
+    <meta name="twitter:title" content="SPF, DKIM & DMARC Guide [2026]">
+    <meta name="twitter:description"
+        content="Complete email authentication setup guide - protect your domain from spoofing.">
+    <meta name="twitter:image" content="https://thehgtech.com/images/guides/email-security-spf-dkim-dmarc.png">
+
+    <!-- FAQ Schema for Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the difference between SPF, DKIM, and DMARC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SPF (Sender Policy Framework) specifies which mail servers can send email on behalf of your domain. DKIM (DomainKeys Identified Mail) adds a cryptographic signature to verify the email wasn't altered. DMARC (Domain-based Message Authentication) ties SPF and DKIM together with a policy for handling failures and provides reporting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I create an SPF record?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Create a TXT record in your DNS with format: v=spf1 include:_spf.google.com include:amazonses.com -all. The 'include' statements authorize specific mail servers, and '-all' means reject all other sources. Replace with your actual email providers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What DMARC policy should I start with?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Start with p=none to monitor without affecting mail delivery. After reviewing reports for 2-4 weeks and fixing issues, move to p=quarantine, then p=reject. Example: v=DMARC1; p=none; rua=mailto:dmarc@yourdomain.com"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why are my emails going to spam?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Common causes include: missing or incorrect SPF record, no DKIM signature, DMARC alignment failures, sending from unauthorized servers, or SPF lookup limit exceeded (10 DNS lookups max). Use tools like MXToolbox or Google Admin Toolbox to diagnose."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Email Security: SPF, DKIM & DMARC Complete Configuration Guide",
+      "description": "Learn to configure SPF, DKIM, and DMARC to protect your domain from email spoofing and phishing attacks.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://thehgtech.com/images/guides/email-security-spf-dkim-dmarc.png",
+        "width": 1200,
+        "height": 630
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "TheHGTech",
+        "url": "https://thehgtech.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TheHGTech",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://thehgtech.com/logo.png",
+          "width": 600,
+          "height": 60
+        }
+      },
+      "datePublished": "2026-01-17",
+      "dateModified": "2026-01-17",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://thehgtech.com/guides/email-security-spf-dkim-dmarc.html"
+      },
+      "keywords": "SPF, DKIM, DMARC, email security, email authentication, phishing prevention",
+      "articleSection": "Security Guides",
+      "inLanguage": "en-US",
+      "proficiencyLevel": "Beginner to Intermediate",
+      "wordCount": 3500
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF3D3D;
+            --accent-green: #22C55E;
+            --accent-orange: #FF9500;
+            --accent-purple: #A855F7;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            padding-top: 100px;
+        }
+
+        .new-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+            color: #000;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            margin-left: 1rem;
+        }
+
+        .guide-header {
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+        }
+
+        .breadcrumb {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .breadcrumb a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(to right, #fff, #a0a0a0);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+
+        .meta {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            flex-wrap: wrap;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .featured-image {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin: 2rem 0;
+            box-shadow: 0 10px 40px rgba(0, 217, 255, 0.2);
+            border: 1px solid var(--border);
+        }
+
+        .content h2 {
+            font-size: 1.8rem;
+            color: var(--accent-cyan);
+            margin: 3rem 0 1.5rem;
+        }
+
+        .content h3 {
+            font-size: 1.4rem;
+            color: #fff;
+            margin: 2rem 0 1rem;
+        }
+
+        .content h4 {
+            font-size: 1.2rem;
+            color: var(--accent-cyan);
+            margin: 1.5rem 0 1rem;
+        }
+
+        .content p {
+            margin-bottom: 1.5rem;
+            color: #d0d0d0;
+        }
+
+        .content ul,
+        .content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+            color: #d0d0d0;
+        }
+
+        .content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .content strong {
+            color: #fff;
+        }
+
+        .content code {
+            background: var(--bg-card);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: var(--accent-cyan);
+            font-size: 0.9em;
+        }
+
+        .info-box {
+            background: rgba(0, 217, 255, 0.05);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .warning-box {
+            background: rgba(255, 61, 61, 0.1);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .success-box {
+            background: rgba(34, 197, 94, 0.1);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        pre {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+            color: #d0d0d0;
+        }
+
+        .dns-keyword {
+            color: var(--accent-purple);
+            font-weight: 600;
+        }
+
+        .dns-value {
+            color: var(--accent-green);
+        }
+
+        .dns-comment {
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: rgba(0, 217, 255, 0.1);
+            color: var(--accent-cyan);
+            font-weight: 600;
+        }
+
+        td {
+            color: var(--text-secondary);
+        }
+
+        .toc {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .toc h3 {
+            color: var(--accent-cyan);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .toc ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .toc li {
+            margin-bottom: 0.5rem;
+        }
+
+        .toc a {
+            color: var(--text-secondary);
+            text-decoration: none;
+        }
+
+        .toc a:hover {
+            color: var(--accent-cyan);
+        }
+
+        .record-box {
+            background: linear-gradient(135deg, rgba(0, 217, 255, 0.1), rgba(168, 85, 247, 0.05));
+            border: 1px solid var(--accent-cyan);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .record-box h5 {
+            color: var(--accent-cyan);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.8rem 1.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .btn-back:hover {
+            border-color: var(--accent-cyan);
+            color: var(--accent-cyan);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .content h2 {
+                font-size: 1.5rem;
+            }
+
+            .container {
+                padding-top: 80px;
+            }
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/header-dropdown.css?v=1">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <script src="/m-app.js?v=4.3" defer></script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem", "position": 1, "name": "Home", "item": "https://thehgtech.com"
+      }, {
+        "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://thehgtech.com/guides/"
+      }, {
+        "@type": "ListItem", "position": 3, "name": "Email Security: SPF, DKIM & DMARC", "item": "https://thehgtech.com/guides/email-security-spf-dkim-dmarc.html"
+      }]
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Mobile Header -->
+    <header class="m-header m-only">
+        <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px;">
+            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px;">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">TheHGTech</span>
+        </div>
+        <div class="m-header__actions">
+            <button class="m-theme-toggle" onclick="mToggleTheme()" aria-label="Toggle Theme"><span
+                    class="m-theme-toggle__thumb"></span></button>
+            <button class="m-header__btn m-header__btn--search" data-action="search" aria-label="Search"><i
+                    class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item"><i class="fas fa-bug"></i><span>CVE</span></a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item"><i class="fas fa-shield-alt"></i><span>Intel</span></a>
+        <a href="/articles.html" class="m-bottom-nav__item"><i class="fas fa-newspaper"></i><span>Articles</span></a>
+        <a href="/guides/" class="m-bottom-nav__item active"><i class="fas fa-book"></i><span>Guides</span></a>
+    </nav>
+
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+            <nav class="nav nav-modern" role="navigation">
+                <a href="/index.html#news">News</a>
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">Intelligence <span class="nav-live-badge">LIVE</span><i
+                            class="fas fa-chevron-down dropdown-arrow"></i></span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/threat-intel.html" class="dropdown-item">
+                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Threat Intelligence</div>
+                            </div>
+                        </a>
+                        <a href="/cve-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">CVE Tracker</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">Resources<i
+                            class="fas fa-chevron-down dropdown-arrow"></i></span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/guides/" class="dropdown-item">
+                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Security Guides</div>
+                            </div>
+                        </a>
+                        <a href="/articles.html" class="dropdown-item">
+                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Articles</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="theme-toggle-wrapper"><button class="theme-toggle" id="themeToggle"
+                        aria-label="Toggle theme"></button></div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="guide-header">
+            <div class="breadcrumb">
+                <a href="/">Home</a> / <a href="/guides/">Guides</a> / Email Security
+            </div>
+            <h1>Email Security: SPF, DKIM & DMARC</h1>
+            <span class="new-badge"><i class="fas fa-star"></i> New</span>
+            <p style="color: var(--text-muted); font-size: 1.1rem; margin-top: 1rem;">Protect your domain from email
+                spoofing and phishing with proper email authentication.</p>
+            <div class="meta" style="margin-top: 1rem;">
+                <div class="meta-item"><i class="fas fa-book-open"></i> 15 min read</div>
+                <div class="meta-item"><i class="fas fa-crosshairs"></i> Beginner to Intermediate</div>
+                <div class="meta-item"><i class="far fa-calendar-alt"></i> Jan 17, 2026</div>
+            </div>
+        </div>
+
+        <article class="content">
+            <img src="/images/guides/email-security-spf-dkim-dmarc.png" alt="Email Security SPF DKIM DMARC Guide"
+                class="featured-image">
+
+            <p>Email remains the #1 attack vector for phishing and social engineering. Without proper email
+                authentication, attackers can send emails that appear to come from your domain, damaging your reputation
+                and targeting your customers or employees.</p>
+
+            <p>This guide covers the three pillars of email authentication: <strong>SPF</strong>, <strong>DKIM</strong>,
+                and <strong>DMARC</strong>. Together, they form a defense-in-depth approach to prevent email spoofing.
+            </p>
+
+            <div class="info-box">
+                <strong><i class="fas fa-lightbulb"></i> The Email Authentication Stack</strong>
+                <p style="margin-top: 0.5rem; margin-bottom: 0;"><strong>SPF</strong> = Who can send? (authorized
+                    servers)<br><strong>DKIM</strong> = Is it authentic? (cryptographic
+                    signature)<br><strong>DMARC</strong> = What to do with failures? (policy + reporting)</p>
+            </div>
+
+            <div class="toc">
+                <h3><i class="fas fa-list-ul"></i> Table of Contents</h3>
+                <ul>
+                    <li><a href="#why-matters">1. Why Email Authentication Matters</a></li>
+                    <li><a href="#spf">2. SPF: Sender Policy Framework</a></li>
+                    <li><a href="#dkim">3. DKIM: DomainKeys Identified Mail</a></li>
+                    <li><a href="#dmarc">4. DMARC: Tying It All Together</a></li>
+                    <li><a href="#implementation">5. Implementation Roadmap</a></li>
+                    <li><a href="#testing">6. Testing and Validation</a></li>
+                    <li><a href="#troubleshooting">7. Common Mistakes and Fixes</a></li>
+                    <li><a href="#monitoring">8. Ongoing Monitoring</a></li>
+                </ul>
+            </div>
+
+            <h2 id="why-matters">1. Why Email Authentication Matters</h2>
+
+            <h3>The Spoofing Problem</h3>
+            <p>By default, email has no authentication. The "From" address is just text that senders can set to
+                anything. Without SPF, DKIM, and DMARC:</p>
+            <ul>
+                <li>Attackers can send phishing emails appearing to be from your CEO</li>
+                <li>Scammers can impersonate your company to customers</li>
+                <li>Your legitimate emails may land in spam folders</li>
+                <li>You have no visibility into who is sending email using your domain</li>
+            </ul>
+
+            <h3>Real-World Impact</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Incident</th>
+                        <th>Impact</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024</td>
+                        <td>BEC attacks using CEO spoofing</td>
+                        <td>$2.9 billion in losses (FBI IC3)</td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>Vendor email compromise</td>
+                        <td>Supply chain phishing campaigns</td>
+                    </tr>
+                    <tr>
+                        <td>2022</td>
+                        <td>Domain spoofing attacks</td>
+                        <td>Brand reputation damage to major companies</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 id="spf">2. SPF: Sender Policy Framework</h2>
+
+            <p>SPF lets you specify which mail servers are authorized to send email on behalf of your domain.</p>
+
+            <h3>How SPF Works</h3>
+            <ol>
+                <li>You publish an SPF record in your domain's DNS</li>
+                <li>Receiving mail servers check if the sending server's IP is authorized</li>
+                <li>If not authorized, the email can be rejected or marked as suspicious</li>
+            </ol>
+
+            <h3>SPF Record Syntax</h3>
+
+            <div class="record-box">
+                <h5><i class="fas fa-server"></i> SPF Record Structure</h5>
+                <pre><code><span class="dns-keyword">v=spf1</span> <span class="dns-comment"># Version (required)</span>
+<span class="dns-keyword">include:</span><span class="dns-value">_spf.google.com</span>  <span class="dns-comment"># Authorize Google Workspace</span>
+<span class="dns-keyword">include:</span><span class="dns-value">amazonses.com</span>      <span class="dns-comment"># Authorize Amazon SES</span>
+<span class="dns-keyword">ip4:</span><span class="dns-value">203.0.113.5</span>              <span class="dns-comment"># Authorize specific IP</span>
+<span class="dns-keyword">a</span>                               <span class="dns-comment"># Authorize domain's A record IP</span>
+<span class="dns-keyword">mx</span>                              <span class="dns-comment"># Authorize domain's MX servers</span>
+<span class="dns-keyword">-all</span>                            <span class="dns-comment"># Fail all others (strict)</span></code></pre>
+            </div>
+
+            <h3>Complete SPF Examples</h3>
+
+            <pre><code><span class="dns-comment"># Google Workspace only</span>
+<span class="dns-keyword">v=spf1 include:</span><span class="dns-value">_spf.google.com</span> <span class="dns-keyword">-all</span>
+
+<span class="dns-comment"># Microsoft 365 only</span>
+<span class="dns-keyword">v=spf1 include:</span><span class="dns-value">spf.protection.outlook.com</span> <span class="dns-keyword">-all</span>
+
+<span class="dns-comment"># Google + Mailchimp + custom server</span>
+<span class="dns-keyword">v=spf1 include:</span><span class="dns-value">_spf.google.com</span> <span class="dns-keyword">include:</span><span class="dns-value">servers.mcsv.net</span> <span class="dns-keyword">ip4:</span><span class="dns-value">203.0.113.5</span> <span class="dns-keyword">-all</span></code></pre>
+
+            <h3>SPF Qualifiers</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Qualifier</th>
+                        <th>Meaning</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>+</code> (Pass)</td>
+                        <td>Authorized (default)</td>
+                        <td>Accept</td>
+                    </tr>
+                    <tr>
+                        <td><code>-</code> (Fail)</td>
+                        <td>NOT authorized</td>
+                        <td>Reject</td>
+                    </tr>
+                    <tr>
+                        <td><code>~</code> (SoftFail)</td>
+                        <td>Probably not authorized</td>
+                        <td>Accept but mark</td>
+                    </tr>
+                    <tr>
+                        <td><code>?</code> (Neutral)</td>
+                        <td>No assertion</td>
+                        <td>Accept</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="warning-box">
+                <strong><i class="fas fa-exclamation-triangle"></i> SPF 10 Lookup Limit</strong>
+                <p style="margin-top: 0.5rem; margin-bottom: 0;">SPF is limited to 10 DNS lookups. Each
+                    <code>include:</code>, <code>a</code>, <code>mx</code>, and <code>redirect</code> counts. Exceeding
+                    this causes SPF to fail. Use SPF flattening tools if you need more providers.</p>
+            </div>
+
+            <h2 id="dkim">3. DKIM: DomainKeys Identified Mail</h2>
+
+            <p>DKIM adds a cryptographic signature to emails, proving they weren't altered in transit and came from an
+                authorized sender.</p>
+
+            <h3>How DKIM Works</h3>
+            <ol>
+                <li>Your mail server signs outgoing emails with a private key</li>
+                <li>The signature is added to the email header</li>
+                <li>Receiving servers fetch your public key from DNS</li>
+                <li>They verify the signature matches the email content</li>
+            </ol>
+
+            <h3>DKIM DNS Record</h3>
+
+            <div class="record-box">
+                <h5><i class="fas fa-key"></i> DKIM TXT Record</h5>
+                <pre><code><span class="dns-comment"># Record name (selector._domainkey.yourdomain.com)</span>
+<span class="dns-keyword">google._domainkey</span>
+
+<span class="dns-comment"># Record value</span>
+<span class="dns-keyword">v=DKIM1;</span> <span class="dns-keyword">k=rsa;</span> <span class="dns-keyword">p=</span><span class="dns-value">MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC...</span></code></pre>
+            </div>
+
+            <h3>DKIM Header Example</h3>
+            <p>A signed email includes this header:</p>
+            <pre><code>DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+  d=yourdomain.com; s=google;
+  h=from:to:subject:date:message-id;
+  bh=47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=;
+  b=dGVzdCBzaWduYXR1cmU...</code></pre>
+
+            <h3>Setting Up DKIM</h3>
+            <p>DKIM setup varies by provider:</p>
+            <ul>
+                <li><strong>Google Workspace:</strong> Admin Console → Apps → Gmail → Authenticate email</li>
+                <li><strong>Microsoft 365:</strong> Defender Portal → Policies → DKIM</li>
+                <li><strong>Amazon SES:</strong> Verified Identities → DKIM settings</li>
+            </ul>
+
+            <h2 id="dmarc">4. DMARC: Tying It All Together</h2>
+
+            <p>DMARC tells receiving servers what to do when SPF or DKIM fails, and provides reports on email
+                authentication.</p>
+
+            <h3>DMARC Record Structure</h3>
+
+            <div class="record-box">
+                <h5><i class="fas fa-shield-alt"></i> DMARC TXT Record</h5>
+                <pre><code><span class="dns-comment"># Record name: _dmarc.yourdomain.com</span>
+<span class="dns-comment"># Record type: TXT</span>
+
+<span class="dns-keyword">v=DMARC1;</span>                   <span class="dns-comment"># Version (required)</span>
+<span class="dns-keyword">p=</span><span class="dns-value">reject</span>;                   <span class="dns-comment"># Policy: none|quarantine|reject</span>
+<span class="dns-keyword">rua=</span><span class="dns-value">mailto:dmarc@domain.com</span>; <span class="dns-comment"># Aggregate reports</span>
+<span class="dns-keyword">ruf=</span><span class="dns-value">mailto:dmarc@domain.com</span>; <span class="dns-comment"># Forensic reports</span>
+<span class="dns-keyword">sp=</span><span class="dns-value">reject</span>;                  <span class="dns-comment"># Subdomain policy</span>
+<span class="dns-keyword">adkim=</span><span class="dns-value">s</span>;                    <span class="dns-comment"># DKIM alignment: s=strict, r=relaxed</span>
+<span class="dns-keyword">aspf=</span><span class="dns-value">s</span>;                     <span class="dns-comment"># SPF alignment: s=strict, r=relaxed</span>
+<span class="dns-keyword">pct=</span><span class="dns-value">100</span>                     <span class="dns-comment"># Percentage to apply policy</span></code></pre>
+            </div>
+
+            <h3>DMARC Policies</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Policy</th>
+                        <th>Action</th>
+                        <th>When to Use</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>p=none</code></td>
+                        <td>Monitor only, deliver all</td>
+                        <td>Initial setup, learning phase</td>
+                    </tr>
+                    <tr>
+                        <td><code>p=quarantine</code></td>
+                        <td>Send failures to spam</td>
+                        <td>After fixing SPF/DKIM issues</td>
+                    </tr>
+                    <tr>
+                        <td><code>p=reject</code></td>
+                        <td>Reject failures outright</td>
+                        <td>Full protection mode</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>DMARC Alignment</h3>
+            <p>DMARC requires the "From" domain to align with either SPF or DKIM:</p>
+            <ul>
+                <li><strong>SPF Alignment:</strong> Return-Path domain matches From domain</li>
+                <li><strong>DKIM Alignment:</strong> DKIM signature domain (d=) matches From domain</li>
+                <li><strong>Strict (s):</strong> Exact domain match required</li>
+                <li><strong>Relaxed (r):</strong> Subdomains allowed (default)</li>
+            </ul>
+
+            <h2 id="implementation">5. Implementation Roadmap</h2>
+
+            <div class="success-box">
+                <strong><i class="fas fa-check-circle"></i> Recommended Rollout</strong>
+                <ol style="margin-top: 0.5rem; margin-bottom: 0;">
+                    <li><strong>Week 1:</strong> Implement SPF with all current senders</li>
+                    <li><strong>Week 2:</strong> Enable DKIM for all sending sources</li>
+                    <li><strong>Week 3:</strong> Add DMARC with <code>p=none</code> (monitor only)</li>
+                    <li><strong>Week 5-8:</strong> Analyze DMARC reports, fix issues</li>
+                    <li><strong>Week 9:</strong> Move to <code>p=quarantine</code></li>
+                    <li><strong>Week 13:</strong> Move to <code>p=reject</code> (full protection)</li>
+                </ol>
+            </div>
+
+            <h2 id="testing">6. Testing and Validation</h2>
+
+            <h3>Free Testing Tools</h3>
+            <ul>
+                <li><strong><a href="https://mxtoolbox.com/spf.aspx"
+                            style="color: var(--accent-cyan);">MXToolbox</a></strong> - SPF, DKIM, DMARC lookup and
+                    validation</li>
+                <li><strong><a href="https://www.mail-tester.com/"
+                            style="color: var(--accent-cyan);">Mail-Tester</a></strong> - Send test email and get score
+                </li>
+                <li><strong><a href="https://dmarcian.com/dmarc-inspector/" style="color: var(--accent-cyan);">DMARC
+                            Inspector</a></strong> - Free DMARC record check</li>
+                <li><strong><a href="https://toolbox.googleapps.com/apps/checkmx/"
+                            style="color: var(--accent-cyan);">Google Admin Toolbox</a></strong> - Check MX and mail
+                    config</li>
+            </ul>
+
+            <h3>Command Line Testing</h3>
+            <pre><code><span class="dns-comment"># Check SPF record</span>
+dig TXT yourdomain.com | grep spf
+
+<span class="dns-comment"># Check DKIM record</span>
+dig TXT google._domainkey.yourdomain.com
+
+<span class="dns-comment"># Check DMARC record</span>
+dig TXT _dmarc.yourdomain.com</code></pre>
+
+            <h2 id="troubleshooting">7. Common Mistakes and Fixes</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Problem</th>
+                        <th>Cause</th>
+                        <th>Solution</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SPF PermError</td>
+                        <td>Too many DNS lookups (>10)</td>
+                        <td>Flatten SPF or remove unused includes</td>
+                    </tr>
+                    <tr>
+                        <td>DKIM fails</td>
+                        <td>Wrong selector or missing record</td>
+                        <td>Verify selector name matches header</td>
+                    </tr>
+                    <tr>
+                        <td>DMARC alignment fails</td>
+                        <td>From domain doesn't match</td>
+                        <td>Ensure Return-Path or DKIM d= matches From</td>
+                    </tr>
+                    <tr>
+                        <td>Emails to spam</td>
+                        <td>Missing or wrong SPF/DKIM</td>
+                        <td>Check all three records are valid</td>
+                    </tr>
+                    <tr>
+                        <td>No DMARC reports</td>
+                        <td>Wrong rua email format</td>
+                        <td>Use <code>mailto:email@domain.com</code> format</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 id="monitoring">8. Ongoing Monitoring</h2>
+
+            <h3>DMARC Report Analysis</h3>
+            <p>DMARC aggregate reports (RUA) come as XML files. Use these free services to parse them:</p>
+            <ul>
+                <li><strong><a href="https://dmarc.postmarkapp.com/" style="color: var(--accent-cyan);">Postmark
+                            DMARC</a></strong> - Free weekly reports</li>
+                <li><strong><a href="https://dmarcian.com/" style="color: var(--accent-cyan);">DMARCian</a></strong> -
+                    Free tier available</li>
+                <li><strong><a href="https://www.uriports.com/" style="color: var(--accent-cyan);">URIports</a></strong>
+                    - Free DMARC report analyzer</li>
+            </ul>
+
+            <h3>What to Monitor</h3>
+            <ul>
+                <li><strong>SPF pass rate</strong> - Should be > 99%</li>
+                <li><strong>DKIM pass rate</strong> - Should be > 99%</li>
+                <li><strong>DMARC alignment</strong> - Must pass for full protection</li>
+                <li><strong>Unknown senders</strong> - Investigate unrecognized IPs in reports</li>
+                <li><strong>Spoofing attempts</strong> - Failed authentications from unauthorized sources</li>
+            </ul>
+
+            <div class="info-box">
+                <strong><i class="fas fa-lightbulb"></i> Next Steps</strong>
+                <p style="margin-top: 0.5rem; margin-bottom: 0;">Once you have DMARC at <code>p=reject</code>, consider
+                    implementing <strong>BIMI</strong> (Brand Indicators for Message Identification) to display your
+                    logo next to authenticated emails in supported clients like Gmail.</p>
+            </div>
+
+            <p
+                style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); color: var(--text-muted);">
+                <strong>Author:</strong> TheHGTech Security Team<br>
+                <strong>Last Updated:</strong> January 2026<br>
+                <strong>Reading Time:</strong> 15 minutes
+            </p>
+        </article>
+
+        <div class="interaction-bar">
+            <div class="like-section">
+                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                    <i class="far fa-heart"></i> <span id="likeText">Like this guide</span>
+                </button>
+            </div>
+            <div class="action-buttons">
+                <div class="share-buttons">
+                    <a href="#" onclick="shareTwitter(event)" class="share-btn"><i class="fab fa-twitter"></i></a>
+                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn"><i class="fab fa-linkedin-in"></i></a>
+                    <button onclick="copyLink()" class="share-btn"><i class="fas fa-link"></i></button>
+                </div>
+                <div class="button-separator"></div>
+                <button onclick="printArticle()" class="print-btn"><i class="fas fa-print"></i></button>
+            </div>
+        </div>
+
+        <a href="/guides/" class="btn-back"><i class="fas fa-arrow-left"></i> Back to All Guides</a>
+    </div>
+
+    <script src="/interaction-bar.js?v=20251217"></script>
+</body>
+
+</html>

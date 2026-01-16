@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>DevSecOps Pipeline Security Guide 2026 | SAST, DAST, SCA Integration | TheHGTech</title>
+    <meta name="title" content="DevSecOps Pipeline Security Guide 2026 | Shift-Left Security">
+    <meta name="description"
+        content="Integrate security into CI/CD pipelines with this DevSecOps guide. Learn SAST, DAST, SCA tools, secrets management, and shift-left security practices.">
+    <meta name="keywords"
+        content="DevSecOps, CI/CD security, SAST, DAST, SCA, shift-left, pipeline security, secure DevOps, application security, code scanning">
+    <meta name="author" content="TheHGTech">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thehgtech.com/guides/devsecops-pipeline-security.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/guides/devsecops-pipeline-security.html">
+    <meta property="og:title" content="DevSecOps Pipeline Security Guide 2026">
+    <meta property="og:description" content="Integrate security into CI/CD - SAST, DAST, SCA, and secrets scanning.">
+    <meta property="og:image" content="https://thehgtech.com/images/guides/devsecops-pipeline-security.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DevSecOps Pipeline Security [2026]">
+    <meta name="twitter:description" content="Complete guide to securing your CI/CD pipelines.">
+    <meta name="twitter:image" content="https://thehgtech.com/images/guides/devsecops-pipeline-security.png">
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is DevSecOps?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "DevSecOps integrates security practices into DevOps workflows, making security a shared responsibility throughout the software development lifecycle. Instead of security being a final gate, it's embedded at every stage - from code commit to production deployment."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between SAST and DAST?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SAST (Static Application Security Testing) analyzes source code without running the application, finding vulnerabilities early in development. DAST (Dynamic Application Security Testing) tests running applications, simulating real attacks to find runtime vulnerabilities. Use both for comprehensive coverage."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What tools should I use for DevSecOps?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Key DevSecOps tools include: SAST (Semgrep, SonarQube, Checkmarx), DAST (OWASP ZAP, Burp Suite), SCA (Snyk, Dependabot, OWASP Dependency-Check), Secrets scanning (GitLeaks, TruffleHog), Container scanning (Trivy, Grype), and IaC scanning (Checkov, tfsec)."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "DevSecOps Pipeline Security: Integrating Security into CI/CD",
+      "description": "Learn to integrate SAST, DAST, SCA, and secrets scanning into your CI/CD pipelines.",
+      "image": {"@type": "ImageObject", "url": "https://thehgtech.com/images/guides/devsecops-pipeline-security.png", "width": 1200, "height": 630},
+      "author": {"@type": "Organization", "name": "TheHGTech", "url": "https://thehgtech.com"},
+      "publisher": {"@type": "Organization", "name": "TheHGTech"},
+      "datePublished": "2026-01-17",
+      "dateModified": "2026-01-17",
+      "mainEntityOfPage": {"@type": "WebPage", "@id": "https://thehgtech.com/guides/devsecops-pipeline-security.html"},
+      "keywords": "DevSecOps, SAST, DAST, SCA, CI/CD security",
+      "articleSection": "Security Guides",
+      "proficiencyLevel": "Intermediate"
+    }
+    </script>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF3D3D;
+            --accent-green: #22C55E;
+            --accent-purple: #8b5cf6;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            padding-top: 100px;
+        }
+
+        .new-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent-purple), #a78bfa);
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            margin-left: 1rem;
+        }
+
+        .guide-header {
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+        }
+
+        .breadcrumb {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .breadcrumb a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(to right, #fff, #a0a0a0);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+
+        .meta {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            flex-wrap: wrap;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .featured-image {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin: 2rem 0;
+            box-shadow: 0 10px 40px rgba(139, 92, 246, 0.2);
+            border: 1px solid var(--border);
+        }
+
+        .content h2 {
+            font-size: 1.8rem;
+            color: var(--accent-purple);
+            margin: 3rem 0 1.5rem;
+        }
+
+        .content h3 {
+            font-size: 1.4rem;
+            color: #fff;
+            margin: 2rem 0 1rem;
+        }
+
+        .content h4 {
+            font-size: 1.2rem;
+            color: var(--accent-purple);
+            margin: 1.5rem 0 1rem;
+        }
+
+        .content p {
+            margin-bottom: 1.5rem;
+            color: #d0d0d0;
+        }
+
+        .content ul,
+        .content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+            color: #d0d0d0;
+        }
+
+        .content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .content strong {
+            color: #fff;
+        }
+
+        .content code {
+            background: var(--bg-card);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: var(--accent-cyan);
+            font-size: 0.9em;
+        }
+
+        .info-box {
+            background: rgba(0, 217, 255, 0.05);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .warning-box {
+            background: rgba(255, 61, 61, 0.1);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .success-box {
+            background: rgba(34, 197, 94, 0.1);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        pre {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+            color: #d0d0d0;
+        }
+
+        .yaml-key {
+            color: var(--accent-purple);
+        }
+
+        .yaml-value {
+            color: var(--accent-green);
+        }
+
+        .yaml-comment {
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: rgba(139, 92, 246, 0.1);
+            color: var(--accent-purple);
+            font-weight: 600;
+        }
+
+        td {
+            color: var(--text-secondary);
+        }
+
+        .toc {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .toc h3 {
+            color: var(--accent-purple);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .toc ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .toc li {
+            margin-bottom: 0.5rem;
+        }
+
+        .toc a {
+            color: var(--text-secondary);
+            text-decoration: none;
+        }
+
+        .toc a:hover {
+            color: var(--accent-purple);
+        }
+
+        .pipeline-box {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(167, 139, 250, 0.05));
+            border: 1px solid var(--accent-purple);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .pipeline-box h5 {
+            color: var(--accent-purple);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.8rem 1.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .btn-back:hover {
+            border-color: var(--accent-purple);
+            color: var(--accent-purple);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .content h2 {
+                font-size: 1.5rem;
+            }
+
+            .container {
+                padding-top: 80px;
+            }
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/header-dropdown.css?v=1">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <script src="/m-app.js?v=4.3" defer></script>
+
+    <script type="application/ld+json">
+    {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thehgtech.com"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://thehgtech.com/guides/"}, {"@type": "ListItem", "position": 3, "name": "DevSecOps Pipeline Security", "item": "https://thehgtech.com/guides/devsecops-pipeline-security.html"}]}
+    </script>
+</head>
+
+<body>
+    <header class="m-header m-only">
+        <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px;">
+            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px;">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">TheHGTech</span>
+        </div>
+        <div class="m-header__actions">
+            <button class="m-theme-toggle" onclick="mToggleTheme()" aria-label="Toggle Theme"><span
+                    class="m-theme-toggle__thumb"></span></button>
+            <button class="m-header__btn m-header__btn--search" data-action="search" aria-label="Search"><i
+                    class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item"><i class="fas fa-bug"></i><span>CVE</span></a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item"><i class="fas fa-shield-alt"></i><span>Intel</span></a>
+        <a href="/articles.html" class="m-bottom-nav__item"><i class="fas fa-newspaper"></i><span>Articles</span></a>
+        <a href="/guides/" class="m-bottom-nav__item active"><i class="fas fa-book"></i><span>Guides</span></a>
+    </nav>
+
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+            <nav class="nav nav-modern" role="navigation">
+                <a href="/index.html#news">News</a>
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">Intelligence <span class="nav-live-badge">LIVE</span><i
+                            class="fas fa-chevron-down dropdown-arrow"></i></span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/threat-intel.html" class="dropdown-item">
+                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Threat Intelligence</div>
+                            </div>
+                        </a>
+                        <a href="/cve-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">CVE Tracker</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">Resources<i
+                            class="fas fa-chevron-down dropdown-arrow"></i></span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/guides/" class="dropdown-item">
+                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Security Guides</div>
+                            </div>
+                        </a>
+                        <a href="/articles.html" class="dropdown-item">
+                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Articles</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="theme-toggle-wrapper"><button class="theme-toggle" id="themeToggle"
+                        aria-label="Toggle theme"></button></div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="guide-header">
+            <div class="breadcrumb"><a href="/">Home</a> / <a href="/guides/">Guides</a> / DevSecOps</div>
+            <h1>DevSecOps Pipeline Security</h1>
+            <span class="new-badge"><i class="fas fa-infinity"></i> DevOps</span>
+            <p style="color: var(--text-muted); font-size: 1.1rem; margin-top: 1rem;">Integrate security into CI/CD
+                pipelines with SAST, DAST, SCA, and shift-left practices.</p>
+            <div class="meta" style="margin-top: 1rem;">
+                <div class="meta-item"><i class="fas fa-book-open"></i> 20 min read</div>
+                <div class="meta-item"><i class="fas fa-crosshairs"></i> Intermediate</div>
+                <div class="meta-item"><i class="far fa-calendar-alt"></i> Jan 17, 2026</div>
+            </div>
+        </div>
+
+        <article class="content">
+            <img src="/images/guides/devsecops-pipeline-security.png" alt="DevSecOps Pipeline Security Guide"
+                class="featured-image">
+
+            <p>Traditional security testing at the end of development is too slow and too expensive. DevSecOps shifts
+                security left - integrating automated security testing throughout the CI/CD pipeline so vulnerabilities
+                are found when they're cheapest to fix.</p>
+
+            <div class="info-box">
+                <strong><i class="fas fa-lightbulb"></i> Why Shift-Left Security?</strong>
+                <p style="margin-top: 0.5rem; margin-bottom: 0;">A vulnerability found in development costs
+                    <strong>$80</strong> to fix. Found in testing: <strong>$240</strong>. Found in production:
+                    <strong>$7,600</strong>. The earlier you find it, the cheaper it is. (Source: IBM Systems Sciences
+                    Institute)</p>
+            </div>
+
+            <div class="toc">
+                <h3><i class="fas fa-list-ul"></i> Table of Contents</h3>
+                <ul>
+                    <li><a href="#overview">1. DevSecOps Overview</a></li>
+                    <li><a href="#sast">2. SAST - Static Application Security Testing</a></li>
+                    <li><a href="#sca">3. SCA - Software Composition Analysis</a></li>
+                    <li><a href="#secrets">4. Secrets Detection</a></li>
+                    <li><a href="#dast">5. DAST - Dynamic Application Security Testing</a></li>
+                    <li><a href="#container">6. Container Security</a></li>
+                    <li><a href="#iac">7. Infrastructure as Code Security</a></li>
+                    <li><a href="#pipeline">8. Complete Pipeline Example</a></li>
+                </ul>
+            </div>
+
+            <h2 id="overview">1. DevSecOps Overview</h2>
+
+            <h3>The DevSecOps Pipeline</h3>
+            <p>Security checks at every stage:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Stage</th>
+                        <th>Security Activity</th>
+                        <th>Tools</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Code</strong></td>
+                        <td>Pre-commit hooks, secrets scanning</td>
+                        <td>GitLeaks, pre-commit</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Build</strong></td>
+                        <td>SAST, SCA, license compliance</td>
+                        <td>Semgrep, Snyk, FOSSA</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Test</strong></td>
+                        <td>DAST, API security testing</td>
+                        <td>OWASP ZAP, Nuclei</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Deploy</strong></td>
+                        <td>Container scanning, IaC scanning</td>
+                        <td>Trivy, Checkov</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Production</strong></td>
+                        <td>RASP, WAF, monitoring</td>
+                        <td>Datadog, Falco</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 id="sast">2. SAST - Static Application Security Testing</h2>
+
+            <p>SAST analyzes source code to find vulnerabilities without running the application.</p>
+
+            <h3>Popular SAST Tools</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tool</th>
+                        <th>Languages</th>
+                        <th>Highlights</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Semgrep</strong></td>
+                        <td>30+ languages</td>
+                        <td>Fast, open-source, custom rules</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SonarQube</strong></td>
+                        <td>25+ languages</td>
+                        <td>Quality + security, self-hosted</td>
+                    </tr>
+                    <tr>
+                        <td><strong>CodeQL</strong></td>
+                        <td>10+ languages</td>
+                        <td>GitHub native, query-based</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Checkmarx</strong></td>
+                        <td>25+ languages</td>
+                        <td>Enterprise, accurate</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>GitHub Actions: Semgrep Example</h3>
+
+            <div class="pipeline-box">
+                <h5><i class="fas fa-code-branch"></i> .github/workflows/sast.yml</h5>
+                <pre><code><span class="yaml-key">name:</span> <span class="yaml-value">SAST Scan</span>
+<span class="yaml-key">on:</span> <span class="yaml-value">[push, pull_request]</span>
+
+<span class="yaml-key">jobs:</span>
+  <span class="yaml-key">semgrep:</span>
+    <span class="yaml-key">runs-on:</span> <span class="yaml-value">ubuntu-latest</span>
+    <span class="yaml-key">steps:</span>
+      - <span class="yaml-key">uses:</span> <span class="yaml-value">actions/checkout@v4</span>
+      
+      - <span class="yaml-key">name:</span> <span class="yaml-value">Run Semgrep</span>
+        <span class="yaml-key">uses:</span> <span class="yaml-value">returntocorp/semgrep-action@v1</span>
+        <span class="yaml-key">with:</span>
+          <span class="yaml-key">config:</span> <span class="yaml-value">p/security-audit p/owasp-top-ten</span>
+        <span class="yaml-key">env:</span>
+          <span class="yaml-key">SEMGREP_APP_TOKEN:</span> <span class="yaml-value">${{ secrets.SEMGREP_APP_TOKEN }}</span></code></pre>
+            </div>
+
+            <h2 id="sca">3. SCA - Software Composition Analysis</h2>
+
+            <p>SCA scans dependencies for known vulnerabilities (CVEs) and license issues.</p>
+
+            <div class="warning-box">
+                <strong><i class="fas fa-exclamation-triangle"></i> Supply Chain Risk</strong>
+                <p style="margin-top: 0.5rem; margin-bottom: 0;">Log4Shell (CVE-2021-44228) showed how a single
+                    vulnerable dependency can affect thousands of applications. SCA is critical for modern software.</p>
+            </div>
+
+            <h3>Popular SCA Tools</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tool</th>
+                        <th>Ecosystems</th>
+                        <th>Highlights</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Snyk</strong></td>
+                        <td>npm, Maven, pip, Go, etc.</td>
+                        <td>Fix PRs, container scanning</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Dependabot</strong></td>
+                        <td>GitHub native</td>
+                        <td>Free, auto PR updates</td>
+                    </tr>
+                    <tr>
+                        <td><strong>OWASP Dependency-Check</strong></td>
+                        <td>Java, .NET, npm, etc.</td>
+                        <td>Open-source, offline</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Renovate</strong></td>
+                        <td>All major</td>
+                        <td>Highly configurable</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>GitHub Actions: Snyk Example</h3>
+
+            <div class="pipeline-box">
+                <h5><i class="fas fa-shield-alt"></i> SCA with Snyk</h5>
+                <pre><code><span class="yaml-key">- name:</span> <span class="yaml-value">Run Snyk</span>
+  <span class="yaml-key">uses:</span> <span class="yaml-value">snyk/actions/node@master</span>
+  <span class="yaml-key">env:</span>
+    <span class="yaml-key">SNYK_TOKEN:</span> <span class="yaml-value">${{ secrets.SNYK_TOKEN }}</span>
+  <span class="yaml-key">with:</span>
+    <span class="yaml-key">args:</span> <span class="yaml-value">--severity-threshold=high</span></code></pre>
+            </div>
+
+            <h2 id="secrets">4. Secrets Detection</h2>
+
+            <p>Prevent API keys, passwords, and tokens from reaching your repository.</p>
+
+            <h3>Pre-Commit Secrets Scanning</h3>
+
+            <div class="pipeline-box">
+                <h5><i class="fas fa-key"></i> .pre-commit-config.yaml</h5>
+                <pre><code><span class="yaml-key">repos:</span>
+  - <span class="yaml-key">repo:</span> <span class="yaml-value">https://github.com/gitleaks/gitleaks</span>
+    <span class="yaml-key">rev:</span> <span class="yaml-value">v8.18.0</span>
+    <span class="yaml-key">hooks:</span>
+      - <span class="yaml-key">id:</span> <span class="yaml-value">gitleaks</span>
+        
+  - <span class="yaml-key">repo:</span> <span class="yaml-value">https://github.com/Yelp/detect-secrets</span>
+    <span class="yaml-key">rev:</span> <span class="yaml-value">v1.4.0</span>
+    <span class="yaml-key">hooks:</span>
+      - <span class="yaml-key">id:</span> <span class="yaml-value">detect-secrets</span>
+        <span class="yaml-key">args:</span> <span class="yaml-value">['--baseline', '.secrets.baseline']</span></code></pre>
+            </div>
+
+            <h3>CI Pipeline Secrets Scanning</h3>
+            <pre><code><span class="yaml-comment"># GitLeaks in GitHub Actions</span>
+<span class="yaml-key">- name:</span> <span class="yaml-value">GitLeaks Scan</span>
+  <span class="yaml-key">uses:</span> <span class="yaml-value">gitleaks/gitleaks-action@v2</span>
+  <span class="yaml-key">env:</span>
+    <span class="yaml-key">GITHUB_TOKEN:</span> <span class="yaml-value">${{ secrets.GITHUB_TOKEN }}</span></code></pre>
+
+            <h2 id="dast">5. DAST - Dynamic Application Security Testing</h2>
+
+            <p>DAST tests running applications by simulating real attacks.</p>
+
+            <h3>OWASP ZAP in CI/CD</h3>
+
+            <div class="pipeline-box">
+                <h5><i class="fas fa-spider"></i> DAST with OWASP ZAP</h5>
+                <pre><code><span class="yaml-key">- name:</span> <span class="yaml-value">ZAP Baseline Scan</span>
+  <span class="yaml-key">uses:</span> <span class="yaml-value">zaproxy/action-baseline@v0.10.0</span>
+  <span class="yaml-key">with:</span>
+    <span class="yaml-key">target:</span> <span class="yaml-value">'https://staging.myapp.com'</span>
+    <span class="yaml-key">rules_file_name:</span> <span class="yaml-value">'.zap/rules.tsv'</span>
+    <span class="yaml-key">issue_title:</span> <span class="yaml-value">'ZAP Security Scan Results'</span></code></pre>
+            </div>
+
+            <h3>When to Use DAST</h3>
+            <ul>
+                <li><strong>Staging environment</strong> - After deployment to staging</li>
+                <li><strong>Nightly builds</strong> - Full scan on main branch</li>
+                <li><strong>Pre-release</strong> - Before production deployment</li>
+            </ul>
+
+            <h2 id="container">6. Container Security</h2>
+
+            <p>Scan container images for vulnerabilities before deployment.</p>
+
+            <h3>Trivy Container Scanning</h3>
+
+            <div class="pipeline-box">
+                <h5><i class="fas fa-docker"></i> Container Scan with Trivy</h5>
+                <pre><code><span class="yaml-key">- name:</span> <span class="yaml-value">Build Image</span>
+  <span class="yaml-key">run:</span> <span class="yaml-value">docker build -t myapp:${{ github.sha }} .</span>
+
+<span class="yaml-key">- name:</span> <span class="yaml-value">Trivy Scan</span>
+  <span class="yaml-key">uses:</span> <span class="yaml-value">aquasecurity/trivy-action@master</span>
+  <span class="yaml-key">with:</span>
+    <span class="yaml-key">image-ref:</span> <span class="yaml-value">'myapp:${{ github.sha }}'</span>
+    <span class="yaml-key">format:</span> <span class="yaml-value">'sarif'</span>
+    <span class="yaml-key">exit-code:</span> <span class="yaml-value">'1'</span>
+    <span class="yaml-key">severity:</span> <span class="yaml-value">'CRITICAL,HIGH'</span></code></pre>
+            </div>
+
+            <h2 id="iac">7. Infrastructure as Code Security</h2>
+
+            <p>Scan Terraform, CloudFormation, and Kubernetes manifests for misconfigurations.</p>
+
+            <h3>Checkov IaC Scanning</h3>
+
+            <div class="pipeline-box">
+                <h5><i class="fas fa-cloud"></i> IaC Security with Checkov</h5>
+                <pre><code><span class="yaml-key">- name:</span> <span class="yaml-value">Checkov Scan</span>
+  <span class="yaml-key">uses:</span> <span class="yaml-value">bridgecrewio/checkov-action@master</span>
+  <span class="yaml-key">with:</span>
+    <span class="yaml-key">directory:</span> <span class="yaml-value">terraform/</span>
+    <span class="yaml-key">framework:</span> <span class="yaml-value">terraform</span>
+    <span class="yaml-key">soft_fail:</span> <span class="yaml-value">false</span>
+    <span class="yaml-key">skip_check:</span> <span class="yaml-value">CKV_AWS_18,CKV_AWS_21</span></code></pre>
+            </div>
+
+            <h2 id="pipeline">8. Complete Pipeline Example</h2>
+
+            <div class="success-box">
+                <strong><i class="fas fa-check-circle"></i> Full DevSecOps Pipeline</strong>
+                <p style="margin-top: 0.5rem; margin-bottom: 0;">This example combines all security tools into a
+                    comprehensive CI/CD workflow.</p>
+            </div>
+
+            <div class="pipeline-box">
+                <h5><i class="fas fa-infinity"></i> Complete .github/workflows/devsecops.yml</h5>
+                <pre><code><span class="yaml-key">name:</span> <span class="yaml-value">DevSecOps Pipeline</span>
+<span class="yaml-key">on:</span> <span class="yaml-value">[push, pull_request]</span>
+
+<span class="yaml-key">jobs:</span>
+  <span class="yaml-key">secrets-scan:</span>
+    <span class="yaml-key">runs-on:</span> <span class="yaml-value">ubuntu-latest</span>
+    <span class="yaml-key">steps:</span>
+      - <span class="yaml-key">uses:</span> <span class="yaml-value">actions/checkout@v4</span>
+        <span class="yaml-key">with:</span>
+          <span class="yaml-key">fetch-depth:</span> <span class="yaml-value">0</span>
+      - <span class="yaml-key">uses:</span> <span class="yaml-value">gitleaks/gitleaks-action@v2</span>
+
+  <span class="yaml-key">sast:</span>
+    <span class="yaml-key">runs-on:</span> <span class="yaml-value">ubuntu-latest</span>
+    <span class="yaml-key">steps:</span>
+      - <span class="yaml-key">uses:</span> <span class="yaml-value">actions/checkout@v4</span>
+      - <span class="yaml-key">uses:</span> <span class="yaml-value">returntocorp/semgrep-action@v1</span>
+        <span class="yaml-key">with:</span>
+          <span class="yaml-key">config:</span> <span class="yaml-value">p/security-audit</span>
+
+  <span class="yaml-key">sca:</span>
+    <span class="yaml-key">runs-on:</span> <span class="yaml-value">ubuntu-latest</span>
+    <span class="yaml-key">steps:</span>
+      - <span class="yaml-key">uses:</span> <span class="yaml-value">actions/checkout@v4</span>
+      - <span class="yaml-key">uses:</span> <span class="yaml-value">snyk/actions/node@master</span>
+        <span class="yaml-key">env:</span>
+          <span class="yaml-key">SNYK_TOKEN:</span> <span class="yaml-value">${{ secrets.SNYK_TOKEN }}</span>
+
+  <span class="yaml-key">container-scan:</span>
+    <span class="yaml-key">needs:</span> <span class="yaml-value">[sast, sca]</span>
+    <span class="yaml-key">runs-on:</span> <span class="yaml-value">ubuntu-latest</span>
+    <span class="yaml-key">steps:</span>
+      - <span class="yaml-key">uses:</span> <span class="yaml-value">actions/checkout@v4</span>
+      - <span class="yaml-key">run:</span> <span class="yaml-value">docker build -t app:${{ github.sha }} .</span>
+      - <span class="yaml-key">uses:</span> <span class="yaml-value">aquasecurity/trivy-action@master</span>
+        <span class="yaml-key">with:</span>
+          <span class="yaml-key">image-ref:</span> <span class="yaml-value">'app:${{ github.sha }}'</span>
+          <span class="yaml-key">exit-code:</span> <span class="yaml-value">'1'</span>
+          <span class="yaml-key">severity:</span> <span class="yaml-value">'CRITICAL,HIGH'</span>
+
+  <span class="yaml-key">dast:</span>
+    <span class="yaml-key">needs:</span> <span class="yaml-value">[container-scan]</span>
+    <span class="yaml-key">if:</span> <span class="yaml-value">github.ref == 'refs/heads/main'</span>
+    <span class="yaml-key">runs-on:</span> <span class="yaml-value">ubuntu-latest</span>
+    <span class="yaml-key">steps:</span>
+      - <span class="yaml-key">uses:</span> <span class="yaml-value">zaproxy/action-baseline@v0.10.0</span>
+        <span class="yaml-key">with:</span>
+          <span class="yaml-key">target:</span> <span class="yaml-value">'https://staging.example.com'</span></code></pre>
+            </div>
+
+            <div class="info-box">
+                <strong><i class="fas fa-lightbulb"></i> Key Takeaways</strong>
+                <ul style="margin-top: 0.5rem; margin-bottom: 0;">
+                    <li>Start with secrets scanning and SAST - they're fast and catch common issues</li>
+                    <li>Add SCA next - dependency vulnerabilities are a major risk</li>
+                    <li>Container scanning before any deployment</li>
+                    <li>DAST on staging/pre-prod - not every commit (too slow)</li>
+                    <li>Don't fail builds on every finding - prioritize critical/high first</li>
+                </ul>
+            </div>
+
+            <p
+                style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); color: var(--text-muted);">
+                <strong>Author:</strong> TheHGTech Security Team<br>
+                <strong>Last Updated:</strong> January 2026<br>
+                <strong>Reading Time:</strong> 20 minutes
+            </p>
+        </article>
+
+        <div class="interaction-bar">
+            <div class="like-section">
+                <button class="like-btn" id="likeBtn" onclick="toggleLike()"><i class="far fa-heart"></i> <span
+                        id="likeText">Like this guide</span></button>
+            </div>
+            <div class="action-buttons">
+                <div class="share-buttons">
+                    <a href="#" onclick="shareTwitter(event)" class="share-btn"><i class="fab fa-twitter"></i></a>
+                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn"><i class="fab fa-linkedin-in"></i></a>
+                    <button onclick="copyLink()" class="share-btn"><i class="fas fa-link"></i></button>
+                </div>
+                <div class="button-separator"></div>
+                <button onclick="printArticle()" class="print-btn"><i class="fas fa-print"></i></button>
+            </div>
+        </div>
+
+        <a href="/guides/" class="btn-back"><i class="fas fa-arrow-left"></i> Back to All Guides</a>
+    </div>
+
+    <script src="/interaction-bar.js?v=20251217"></script>
+</body>
+
+</html>

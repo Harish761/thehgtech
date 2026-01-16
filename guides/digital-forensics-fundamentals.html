@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Digital Forensics Fundamentals Guide 2026 | Evidence Collection & Analysis | TheHGTech</title>
+    <meta name="title" content="Digital Forensics Fundamentals Guide 2026 | Incident Investigation">
+    <meta name="description"
+        content="Learn digital forensics fundamentals for incident response. Evidence collection, chain of custody, memory forensics, disk analysis, and investigation techniques.">
+    <meta name="keywords"
+        content="digital forensics, incident response, evidence collection, chain of custody, memory forensics, disk forensics, forensic analysis, computer forensics, DFIR">
+    <meta name="author" content="TheHGTech">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thehgtech.com/guides/digital-forensics-fundamentals.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/guides/digital-forensics-fundamentals.html">
+    <meta property="og:title" content="Digital Forensics Fundamentals Guide 2026">
+    <meta property="og:description" content="Evidence collection, memory forensics, and disk analysis techniques.">
+    <meta property="og:image" content="https://thehgtech.com/images/guides/digital-forensics-fundamentals.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Digital Forensics Guide [2026]">
+    <meta name="twitter:description" content="Complete guide to digital forensics for incident investigations.">
+    <meta name="twitter:image" content="https://thehgtech.com/images/guides/digital-forensics-fundamentals.png">
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is digital forensics?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Digital forensics is the process of identifying, preserving, analyzing, and presenting digital evidence in a legally sound manner. It's used in incident response, legal investigations, insider threat cases, and criminal investigations involving computers and digital devices."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is chain of custody in digital forensics?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Chain of custody is the documented chronological history of evidence handling. It records who collected the evidence, when it was collected, how it was stored, and every person who handled it. Proper chain of custody ensures evidence is admissible in court and hasn't been tampered with."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What tools are used in digital forensics?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Common digital forensics tools include: Autopsy (disk forensics), FTK Imager (disk imaging), Volatility (memory analysis), Velociraptor (endpoint collection), Wireshark (network forensics), RegRipper (Windows registry), and Eric Zimmerman's tools (Windows artifacts)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I collect memory or disk evidence first?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Collect memory (RAM) first - it's volatile and will be lost when the system powers down. Memory contains running processes, network connections, encryption keys, and malware that may not exist on disk. After memory acquisition, create a forensic disk image."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Digital Forensics Fundamentals: Evidence Collection & Analysis Guide",
+      "description": "Learn digital forensics for incident response - evidence collection, chain of custody, memory and disk analysis.",
+      "image": {"@type": "ImageObject", "url": "https://thehgtech.com/images/guides/digital-forensics-fundamentals.png", "width": 1200, "height": 630},
+      "author": {"@type": "Organization", "name": "TheHGTech", "url": "https://thehgtech.com"},
+      "publisher": {"@type": "Organization", "name": "TheHGTech"},
+      "datePublished": "2026-01-17",
+      "dateModified": "2026-01-17",
+      "mainEntityOfPage": {"@type": "WebPage", "@id": "https://thehgtech.com/guides/digital-forensics-fundamentals.html"},
+      "keywords": "digital forensics, DFIR, memory forensics, disk forensics, evidence collection",
+      "articleSection": "Security Guides",
+      "proficiencyLevel": "Intermediate to Advanced"
+    }
+    </script>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF3D3D;
+            --accent-green: #22C55E;
+            --accent-purple: #A855F7;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            padding-top: 100px;
+        }
+
+        .new-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+            color: #000;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            margin-left: 1rem;
+        }
+
+        .guide-header {
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+        }
+
+        .breadcrumb {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .breadcrumb a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(to right, #fff, #a0a0a0);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+
+        .meta {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            flex-wrap: wrap;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .featured-image {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin: 2rem 0;
+            box-shadow: 0 10px 40px rgba(0, 217, 255, 0.2);
+            border: 1px solid var(--border);
+        }
+
+        .content h2 {
+            font-size: 1.8rem;
+            color: var(--accent-cyan);
+            margin: 3rem 0 1.5rem;
+        }
+
+        .content h3 {
+            font-size: 1.4rem;
+            color: #fff;
+            margin: 2rem 0 1rem;
+        }
+
+        .content h4 {
+            font-size: 1.2rem;
+            color: var(--accent-cyan);
+            margin: 1.5rem 0 1rem;
+        }
+
+        .content p {
+            margin-bottom: 1.5rem;
+            color: #d0d0d0;
+        }
+
+        .content ul,
+        .content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+            color: #d0d0d0;
+        }
+
+        .content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .content strong {
+            color: #fff;
+        }
+
+        .content code {
+            background: var(--bg-card);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: var(--accent-cyan);
+            font-size: 0.9em;
+        }
+
+        .info-box {
+            background: rgba(0, 217, 255, 0.05);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .warning-box {
+            background: rgba(255, 61, 61, 0.1);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .success-box {
+            background: rgba(34, 197, 94, 0.1);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        pre {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+            color: #d0d0d0;
+        }
+
+        .cmd-comment {
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        .cmd-tool {
+            color: var(--accent-cyan);
+            font-weight: 600;
+        }
+
+        .cmd-arg {
+            color: var(--accent-green);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: rgba(0, 217, 255, 0.1);
+            color: var(--accent-cyan);
+            font-weight: 600;
+        }
+
+        td {
+            color: var(--text-secondary);
+        }
+
+        .toc {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .toc h3 {
+            color: var(--accent-cyan);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .toc ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .toc li {
+            margin-bottom: 0.5rem;
+        }
+
+        .toc a {
+            color: var(--text-secondary);
+            text-decoration: none;
+        }
+
+        .toc a:hover {
+            color: var(--accent-cyan);
+        }
+
+        .forensic-box {
+            background: linear-gradient(135deg, rgba(0, 217, 255, 0.1), rgba(168, 85, 247, 0.05));
+            border: 1px solid var(--accent-cyan);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .forensic-box h5 {
+            color: var(--accent-cyan);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.8rem 1.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .btn-back:hover {
+            border-color: var(--accent-cyan);
+            color: var(--accent-cyan);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .content h2 {
+                font-size: 1.5rem;
+            }
+
+            .container {
+                padding-top: 80px;
+            }
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/header-dropdown.css?v=1">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <script src="/m-app.js?v=4.3" defer></script>
+
+    <script type="application/ld+json">
+    {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thehgtech.com"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://thehgtech.com/guides/"}, {"@type": "ListItem", "position": 3, "name": "Digital Forensics Fundamentals", "item": "https://thehgtech.com/guides/digital-forensics-fundamentals.html"}]}
+    </script>
+</head>
+
+<body>
+    <header class="m-header m-only">
+        <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px;">
+            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px;">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">TheHGTech</span>
+        </div>
+        <div class="m-header__actions">
+            <button class="m-theme-toggle" onclick="mToggleTheme()" aria-label="Toggle Theme"><span
+                    class="m-theme-toggle__thumb"></span></button>
+            <button class="m-header__btn m-header__btn--search" data-action="search" aria-label="Search"><i
+                    class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item"><i class="fas fa-bug"></i><span>CVE</span></a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item"><i class="fas fa-shield-alt"></i><span>Intel</span></a>
+        <a href="/articles.html" class="m-bottom-nav__item"><i class="fas fa-newspaper"></i><span>Articles</span></a>
+        <a href="/guides/" class="m-bottom-nav__item active"><i class="fas fa-book"></i><span>Guides</span></a>
+    </nav>
+
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+            <nav class="nav nav-modern" role="navigation">
+                <a href="/index.html#news">News</a>
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">Intelligence <span class="nav-live-badge">LIVE</span><i
+                            class="fas fa-chevron-down dropdown-arrow"></i></span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/threat-intel.html" class="dropdown-item">
+                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Threat Intelligence</div>
+                            </div>
+                        </a>
+                        <a href="/cve-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">CVE Tracker</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">Resources<i
+                            class="fas fa-chevron-down dropdown-arrow"></i></span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/guides/" class="dropdown-item">
+                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Security Guides</div>
+                            </div>
+                        </a>
+                        <a href="/articles.html" class="dropdown-item">
+                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Articles</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="theme-toggle-wrapper"><button class="theme-toggle" id="themeToggle"
+                        aria-label="Toggle theme"></button></div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="guide-header">
+            <div class="breadcrumb"><a href="/">Home</a> / <a href="/guides/">Guides</a> / Digital Forensics</div>
+            <h1>Digital Forensics Fundamentals</h1>
+            <span class="new-badge"><i class="fas fa-search"></i> DFIR</span>
+            <p style="color: var(--text-muted); font-size: 1.1rem; margin-top: 1rem;">Master evidence collection, chain
+                of custody, and analysis techniques for incident investigations.</p>
+            <div class="meta" style="margin-top: 1rem;">
+                <div class="meta-item"><i class="fas fa-book-open"></i> 24 min read</div>
+                <div class="meta-item"><i class="fas fa-crosshairs"></i> Intermediate to Advanced</div>
+                <div class="meta-item"><i class="far fa-calendar-alt"></i> Jan 17, 2026</div>
+            </div>
+        </div>
+
+        <article class="content">
+            <img src="/images/guides/digital-forensics-fundamentals.png" alt="Digital Forensics Fundamentals Guide"
+                class="featured-image">
+
+            <p>When a security incident occurs, the clock is ticking. Evidence is volatile - memory is ephemeral, logs
+                rotate, and attackers cover their tracks. Digital forensics provides the methodology to properly
+                collect, preserve, and analyze this evidence before it's gone.</p>
+
+            <div class="info-box">
+                <strong><i class="fas fa-lightbulb"></i> What is DFIR?</strong>
+                <p style="margin-top: 0.5rem; margin-bottom: 0;"><strong>Digital Forensics and Incident Response
+                        (DFIR)</strong> combines forensic analysis with incident handling. Forensics focuses on evidence
+                    and investigation; IR focuses on containment, eradication, and recovery. Together, they answer: What
+                    happened? How did it happen? What's the impact?</p>
+            </div>
+
+            <div class="toc">
+                <h3><i class="fas fa-list-ul"></i> Table of Contents</h3>
+                <ul>
+                    <li><a href="#principles">1. Forensic Principles</a></li>
+                    <li><a href="#chain">2. Chain of Custody</a></li>
+                    <li><a href="#order">3. Order of Volatility</a></li>
+                    <li><a href="#memory">4. Memory Forensics</a></li>
+                    <li><a href="#disk">5. Disk Forensics</a></li>
+                    <li><a href="#windows">6. Windows Artifacts</a></li>
+                    <li><a href="#linux">7. Linux Artifacts</a></li>
+                    <li><a href="#tools">8. Essential Tools</a></li>
+                    <li><a href="#reporting">9. Documentation and Reporting</a></li>
+                </ul>
+            </div>
+
+            <h2 id="principles">1. Forensic Principles</h2>
+
+            <h3>The Four A's of Forensics</h3>
+            <ol>
+                <li><strong>Acquire</strong> - Collect evidence without altering it</li>
+                <li><strong>Authenticate</strong> - Prove evidence hasn't been tampered with (hashes)</li>
+                <li><strong>Analyze</strong> - Examine evidence for relevant findings</li>
+                <li><strong>Archive</strong> - Preserve evidence for future reference/legal needs</li>
+            </ol>
+
+            <h3>Key Principles</h3>
+            <ul>
+                <li><strong>Never work on original evidence</strong> - Always create forensic copies</li>
+                <li><strong>Document everything</strong> - Screenshots, photos, detailed notes</li>
+                <li><strong>Maintain integrity</strong> - Use write blockers, verify hashes</li>
+                <li><strong>Be methodical</strong> - Follow established procedures</li>
+                <li><strong>Preserve context</strong> - Timestamps, system state, who was logged in</li>
+            </ul>
+
+            <h2 id="chain">2. Chain of Custody</h2>
+
+            <p>Chain of custody is critical for legal proceedings. It documents every hand that touches the evidence.
+            </p>
+
+            <div class="warning-box">
+                <strong><i class="fas fa-exclamation-triangle"></i> Breaking Chain = Evidence Inadmissible</strong>
+                <p style="margin-top: 0.5rem; margin-bottom: 0;">If chain of custody is broken or poorly documented,
+                    evidence may be thrown out in court. Even for internal investigations, proper documentation protects
+                    against claims of tampering.</p>
+            </div>
+
+            <h3>Chain of Custody Form Elements</h3>
+
+            <div class="forensic-box">
+                <h5><i class="fas fa-clipboard-list"></i> Required Documentation</h5>
+                <ul style="margin-bottom: 0;">
+                    <li><strong>Case Information:</strong> Case number, incident date, description</li>
+                    <li><strong>Evidence Description:</strong> Device type, serial number, model, condition</li>
+                    <li><strong>Collection Details:</strong> Who, when, where, how</li>
+                    <li><strong>Hash Values:</strong> MD5 and SHA256 of original evidence</li>
+                    <li><strong>Transfer Log:</strong> Every handoff - from/to, date/time, purpose, signatures</li>
+                    <li><strong>Storage Location:</strong> Evidence locker, safe, restricted access area</li>
+                </ul>
+            </div>
+
+            <h2 id="order">3. Order of Volatility</h2>
+
+            <p>Collect evidence in order of volatility - most volatile (easiest to lose) first:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Priority</th>
+                        <th>Evidence Type</th>
+                        <th>Volatility</th>
+                        <th>Window</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>CPU registers, cache</td>
+                        <td>Nanoseconds</td>
+                        <td>Gone immediately</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>RAM (memory)</td>
+                        <td>Seconds</td>
+                        <td>Lost on reboot</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Network connections</td>
+                        <td>Minutes</td>
+                        <td>Sessions close</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Running processes</td>
+                        <td>Minutes</td>
+                        <td>Change constantly</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Disk (HDD/SSD)</td>
+                        <td>Days-Months</td>
+                        <td>Persistent until overwritten</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Backups, archives</td>
+                        <td>Years</td>
+                        <td>Retention policies</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Printouts, media</td>
+                        <td>Years</td>
+                        <td>Physical storage</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="success-box">
+                <strong><i class="fas fa-check-circle"></i> Collection Order</strong>
+                <ol style="margin-top: 0.5rem; margin-bottom: 0;">
+                    <li>Photograph the scene and screen</li>
+                    <li>Capture memory dump</li>
+                    <li>Document running processes and network connections</li>
+                    <li>Create forensic disk image</li>
+                    <li>Collect relevant logs</li>
+                </ol>
+            </div>
+
+            <h2 id="memory">4. Memory Forensics</h2>
+
+            <p>Memory contains evidence that doesn't exist on disk: running malware, decrypted data, network
+                connections, and command history.</p>
+
+            <h3>Memory Acquisition</h3>
+
+            <pre><code><span class="cmd-comment"># Windows - Using WinPMEM</span>
+<span class="cmd-tool">winpmem_mini_x64.exe</span> <span class="cmd-arg">memory.raw</span>
+
+<span class="cmd-comment"># Linux - Using LiME</span>
+<span class="cmd-tool">insmod</span> <span class="cmd-arg">lime.ko "path=/tmp/memory.lime format=lime"</span>
+
+<span class="cmd-comment"># Using FTK Imager (GUI)</span>
+File → Capture Memory → Select destination</code></pre>
+
+            <h3>Memory Analysis with Volatility 3</h3>
+
+            <pre><code><span class="cmd-comment"># Identify operating system profile</span>
+<span class="cmd-tool">vol</span> -f memory.raw <span class="cmd-arg">windows.info</span>
+
+<span class="cmd-comment"># List running processes</span>
+<span class="cmd-tool">vol</span> -f memory.raw <span class="cmd-arg">windows.pslist</span>
+
+<span class="cmd-comment"># Process tree (parent-child relationships)</span>
+<span class="cmd-tool">vol</span> -f memory.raw <span class="cmd-arg">windows.pstree</span>
+
+<span class="cmd-comment"># Network connections</span>
+<span class="cmd-tool">vol</span> -f memory.raw <span class="cmd-arg">windows.netstat</span>
+
+<span class="cmd-comment"># Command line arguments</span>
+<span class="cmd-tool">vol</span> -f memory.raw <span class="cmd-arg">windows.cmdline</span>
+
+<span class="cmd-comment"># Detect hidden/injected code</span>
+<span class="cmd-tool">vol</span> -f memory.raw <span class="cmd-arg">windows.malfind</span>
+
+<span class="cmd-comment"># Extract password hashes</span>
+<span class="cmd-tool">vol</span> -f memory.raw <span class="cmd-arg">windows.hashdump</span></code></pre>
+
+            <h3>What to Look For in Memory</h3>
+            <ul>
+                <li><strong>Unusual parent processes</strong> - CMD spawned from Word?</li>
+                <li><strong>Process injection</strong> - Legitimate process with injected code</li>
+                <li><strong>Orphaned processes</strong> - No parent (parent killed/crashed)</li>
+                <li><strong>Suspicious network connections</strong> - Strange IPs/ports</li>
+                <li><strong>Encoded commands</strong> - Base64, XOR in command lines</li>
+            </ul>
+
+            <h2 id="disk">5. Disk Forensics</h2>
+
+            <h3>Creating Forensic Images</h3>
+
+            <div class="warning-box">
+                <strong><i class="fas fa-exclamation-triangle"></i> Always Use Write Blockers</strong>
+                <p style="margin-top: 0.5rem; margin-bottom: 0;">Hardware or software write blockers prevent accidental
+                    modification of evidence. Never connect suspect drives directly to your forensic workstation without
+                    protection.</p>
+            </div>
+
+            <pre><code><span class="cmd-comment"># Linux - Using dd (basic)</span>
+<span class="cmd-tool">dd</span> if=/dev/sda of=/evidence/disk.img bs=4M status=progress
+
+<span class="cmd-comment"># Linux - Using dc3dd (better logging)</span>
+<span class="cmd-tool">dc3dd</span> if=/dev/sda of=/evidence/disk.img hash=md5 hash=sha256 log=/evidence/dd.log
+
+<span class="cmd-comment"># Verify the image</span>
+<span class="cmd-tool">md5sum</span> /dev/sda
+<span class="cmd-tool">md5sum</span> /evidence/disk.img
+<span class="cmd-comment"># Hashes must match!</span></code></pre>
+
+            <h3>Mounting Images Read-Only</h3>
+            <pre><code><span class="cmd-comment"># Mount forensic image read-only</span>
+<span class="cmd-tool">mount</span> -o ro,loop,noexec /evidence/disk.img /mnt/evidence
+
+<span class="cmd-comment"># Mount E01 images with ewfmount</span>
+<span class="cmd-tool">ewfmount</span> /evidence/image.E01 /mnt/ewf
+<span class="cmd-tool">mount</span> -o ro /mnt/ewf/ewf1 /mnt/evidence</code></pre>
+
+            <h2 id="windows">6. Windows Artifacts</h2>
+
+            <h3>Key Locations</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Artifact</th>
+                        <th>Location</th>
+                        <th>Use Case</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Event Logs</td>
+                        <td><code>C:\Windows\System32\winevt\Logs\</code></td>
+                        <td>Security, application, system events</td>
+                    </tr>
+                    <tr>
+                        <td>Registry Hives</td>
+                        <td><code>C:\Windows\System32\config\</code></td>
+                        <td>System configuration, user activity</td>
+                    </tr>
+                    <tr>
+                        <td>Prefetch</td>
+                        <td><code>C:\Windows\Prefetch\</code></td>
+                        <td>Program execution evidence</td>
+                    </tr>
+                    <tr>
+                        <td>Amcache</td>
+                        <td><code>C:\Windows\AppCompat\Programs\</code></td>
+                        <td>Program execution history</td>
+                    </tr>
+                    <tr>
+                        <td>SRUM</td>
+                        <td><code>C:\Windows\System32\sru\</code></td>
+                        <td>Application usage, network activity</td>
+                    </tr>
+                    <tr>
+                        <td>Browser Data</td>
+                        <td><code>%APPDATA%\Local\</code></td>
+                        <td>History, downloads, cookies</td>
+                    </tr>
+                    <tr>
+                        <td>$MFT</td>
+                        <td>NTFS Master File Table</td>
+                        <td>All file metadata, deleted files</td>
+                    </tr>
+                    <tr>
+                        <td>$USNJrnl</td>
+                        <td>NTFS Change Journal</td>
+                        <td>File system changes over time</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Eric Zimmerman's Tools</h3>
+            <p>Essential free Windows forensics tools:</p>
+            <ul>
+                <li><strong>MFTECmd</strong> - Parse $MFT for file timeline</li>
+                <li><strong>PECmd</strong> - Parse Prefetch files</li>
+                <li><strong>EvtxECmd</strong> - Parse Windows Event Logs</li>
+                <li><strong>RECmd</strong> - Registry analysis</li>
+                <li><strong>AmcacheParser</strong> - Amcache analysis</li>
+                <li><strong>Timeline Explorer</strong> - View parsed data</li>
+            </ul>
+
+            <pre><code><span class="cmd-comment"># Parse Prefetch for execution history</span>
+<span class="cmd-tool">PECmd.exe</span> -d C:\Windows\Prefetch --csv output\
+
+<span class="cmd-comment"># Parse MFT for file timeline</span>
+<span class="cmd-tool">MFTECmd.exe</span> -f $MFT --csv output\
+
+<span class="cmd-comment"># Parse Security Event Log</span>
+<span class="cmd-tool">EvtxECmd.exe</span> -f Security.evtx --csv output\</code></pre>
+
+            <h2 id="linux">7. Linux Artifacts</h2>
+
+            <h3>Key Locations</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Artifact</th>
+                        <th>Location</th>
+                        <th>Use Case</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Auth logs</td>
+                        <td><code>/var/log/auth.log</code> or <code>/var/log/secure</code></td>
+                        <td>SSH, sudo, authentication</td>
+                    </tr>
+                    <tr>
+                        <td>Syslog</td>
+                        <td><code>/var/log/syslog</code> or <code>/var/log/messages</code></td>
+                        <td>System events</td>
+                    </tr>
+                    <tr>
+                        <td>Bash history</td>
+                        <td><code>~/.bash_history</code></td>
+                        <td>Command history</td>
+                    </tr>
+                    <tr>
+                        <td>Cron jobs</td>
+                        <td><code>/etc/crontab</code>, <code>/var/spool/cron/</code></td>
+                        <td>Scheduled tasks</td>
+                    </tr>
+                    <tr>
+                        <td>User accounts</td>
+                        <td><code>/etc/passwd</code>, <code>/etc/shadow</code></td>
+                        <td>Account enumeration</td>
+                    </tr>
+                    <tr>
+                        <td>SSH keys</td>
+                        <td><code>~/.ssh/</code></td>
+                        <td>Authorized access</td>
+                    </tr>
+                    <tr>
+                        <td>Web logs</td>
+                        <td><code>/var/log/apache2/</code>, <code>/var/log/nginx/</code></td>
+                        <td>Web attacks</td>
+                    </tr>
+                    <tr>
+                        <td>Systemd journal</td>
+                        <td><code>/var/log/journal/</code></td>
+                        <td>Service logs</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Useful Commands</h3>
+            <pre><code><span class="cmd-comment"># Find recently modified files</span>
+<span class="cmd-tool">find</span> / -mtime -1 -type f 2>/dev/null
+
+<span class="cmd-comment"># Find SUID binaries (privilege escalation)</span>
+<span class="cmd-tool">find</span> / -perm -4000 -type f 2>/dev/null
+
+<span class="cmd-comment"># Check cron for persistence</span>
+<span class="cmd-tool">cat</span> /etc/crontab
+<span class="cmd-tool">ls</span> -la /etc/cron.*/
+
+<span class="cmd-comment"># Check for unusual users</span>
+<span class="cmd-tool">cat</span> /etc/passwd | awk -F: '$3 >= 1000 {print}'
+
+<span class="cmd-comment"># Review SSH authentication</span>
+<span class="cmd-tool">grep</span> "Accepted\|Failed" /var/log/auth.log</code></pre>
+
+            <h2 id="tools">8. Essential Tools</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Tool</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Disk Analysis</td>
+                        <td><strong>Autopsy</strong></td>
+                        <td>Full-featured disk forensics (free)</td>
+                    </tr>
+                    <tr>
+                        <td>Disk Analysis</td>
+                        <td><strong>FTK Imager</strong></td>
+                        <td>Imaging and preview (free)</td>
+                    </tr>
+                    <tr>
+                        <td>Memory</td>
+                        <td><strong>Volatility 3</strong></td>
+                        <td>Memory analysis (free)</td>
+                    </tr>
+                    <tr>
+                        <td>Collection</td>
+                        <td><strong>Velociraptor</strong></td>
+                        <td>Remote collection at scale (free)</td>
+                    </tr>
+                    <tr>
+                        <td>Collection</td>
+                        <td><strong>KAPE</strong></td>
+                        <td>Windows artifact collection (free)</td>
+                    </tr>
+                    <tr>
+                        <td>Analysis</td>
+                        <td><strong>Plaso/log2timeline</strong></td>
+                        <td>Timeline creation (free)</td>
+                    </tr>
+                    <tr>
+                        <td>Network</td>
+                        <td><strong>Wireshark</strong></td>
+                        <td>Packet analysis (free)</td>
+                    </tr>
+                    <tr>
+                        <td>Malware</td>
+                        <td><strong>YARA</strong></td>
+                        <td>Pattern matching (free)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 id="reporting">9. Documentation and Reporting</h2>
+
+            <h3>Report Structure</h3>
+            <ol>
+                <li><strong>Executive Summary</strong> - Non-technical overview, key findings, impact</li>
+                <li><strong>Scope and Methodology</strong> - What was examined and how</li>
+                <li><strong>Timeline of Events</strong> - Chronological sequence of actions</li>
+                <li><strong>Detailed Findings</strong> - Evidence with screenshots and analysis</li>
+                <li><strong>Indicators of Compromise</strong> - Hashes, IPs, domains, filenames</li>
+                <li><strong>Conclusions</strong> - What happened, attribution if possible</li>
+                <li><strong>Recommendations</strong> - Remediation and prevention steps</li>
+                <li><strong>Appendices</strong> - Full logs, tool output, chain of custody</li>
+            </ol>
+
+            <div class="info-box">
+                <strong><i class="fas fa-lightbulb"></i> Next Steps</strong>
+                <p style="margin-top: 0.5rem; margin-bottom: 0;">To advance your DFIR skills, consider SANS
+                    FOR500/FOR508 courses, practice with <a href="https://www.cfreds.nist.gov/"
+                        style="color: var(--accent-cyan);">NIST CFReDS</a> datasets, and participate in DFIR CTF
+                    challenges.</p>
+            </div>
+
+            <p
+                style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); color: var(--text-muted);">
+                <strong>Author:</strong> TheHGTech Security Team<br>
+                <strong>Last Updated:</strong> January 2026<br>
+                <strong>Reading Time:</strong> 24 minutes
+            </p>
+        </article>
+
+        <div class="interaction-bar">
+            <div class="like-section">
+                <button class="like-btn" id="likeBtn" onclick="toggleLike()"><i class="far fa-heart"></i> <span
+                        id="likeText">Like this guide</span></button>
+            </div>
+            <div class="action-buttons">
+                <div class="share-buttons">
+                    <a href="#" onclick="shareTwitter(event)" class="share-btn"><i class="fab fa-twitter"></i></a>
+                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn"><i class="fab fa-linkedin-in"></i></a>
+                    <button onclick="copyLink()" class="share-btn"><i class="fas fa-link"></i></button>
+                </div>
+                <div class="button-separator"></div>
+                <button onclick="printArticle()" class="print-btn"><i class="fas fa-print"></i></button>
+            </div>
+        </div>
+
+        <a href="/guides/" class="btn-back"><i class="fas fa-arrow-left"></i> Back to All Guides</a>
+    </div>
+
+    <script src="/interaction-bar.js?v=20251217"></script>
+</body>
+
+</html>
