@@ -4,21 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Jan 16 2026",
+            "headline": "Gmail Users Can Now Change Email Addresses",
+            "title": "Google Allows Users to Change Their @gmail.com Addresses",
+            "content": "Google has announced a new feature allowing users to change their existing @gmail.com email addresses. This update provides flexibility for users wanting to update their email identifiers without creating a new account. The change is rolling out gradually, with Google emphasizing user convenience and account continuity. This move could significantly impact users who have long desired more personalized or professional email addresses. While the feature enhances usability, Google has not yet detailed the exact process or any potential limitations. Users are advised to check their Gmail settings for availability and further instructions.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/technology/google-now-lets-you-change-your-gmailcom-address-rolling-out/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Jan 16 2026",
+            "headline": "Palo Alto Networks Fixes High-Severity Firewall Flaw",
+            "title": "Palo Alto Networks Patches PAN-OS to Mitigate DoS Vulnerability CVE-2026-0227",
+            "content": "Palo Alto Networks has released patches addressing a high-severity denial-of-service (DoS) vulnerability found in its PAN-OS firewall platform. Identified as CVE-2026-0227, this flaw carries a CVSS score of 7.7, indicating a significant risk to affected systems. The vulnerability could allow attackers to disrupt services, impacting organizations relying on these firewalls for network security. This patch is critical for maintaining operational integrity and preventing potential service interruptions. Customers are urged to apply the updates immediately to mitigate the risk of exploitation.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4117730/palo-alto-networks-patches-firewalls-after-discovery-of-a-new-denial-of-service-flaw-2.html",
+            "relatedResources": [
+                {
+                    "label": "CVE Tracker",
+                    "url": "/cve-tracker.html",
+                    "icon": "fa-bug"
+                },
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                },
+                {
+                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
+                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
+                    "icon": "fa-shield-virus"
+                }
+            ]
+        },
+        {
+            "date": "Jan 16 2026",
+            "headline": "ChatGPT Enhances Chat History Search for Subscribers",
+            "title": "OpenAI Upgrades ChatGPT with Advanced Chat History Search for Paid Users",
+            "content": "OpenAI has introduced a significant upgrade to ChatGPT, enhancing its ability to search and remember past conversations. This new feature is available exclusively to Plus and Pro subscribers, offering them improved interaction history management. The upgrade aims to make ChatGPT more reliable and efficient in retrieving past chats, thus enhancing user experience. This development reflects OpenAI&#x27;s ongoing commitment to refining AI capabilities, though it may leave free-tier users wanting. Subscribers should explore these new functionalities to maximize their productivity and engagement with ChatGPT.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/chatgpt-is-now-more-reliable-at-finding-and-remembering-your-past-chat/",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
             "date": "Jan 15 2026",
-            "headline": "isVerified Debuts with Voice Deepfake Detection Apps",
-            "title": "isVerified Launches Apps to Combat Voice Deepfakes in Enterprise Communications",
-            "content": "isVerified has emerged from stealth mode, introducing its voice deepfake detection applications for Android and iOS, specifically designed to secure enterprise communications. The applications aim to address the growing threat of voice deepfakes, which can be used in social engineering attacks to impersonate executives or employees. By leveraging advanced AI algorithms, these apps can analyze voice patterns and detect anomalies that indicate potential deepfakes. This launch comes as enterprises increasingly rely on voice communications, making them vulnerable to sophisticated impersonation attacks. Security teams are encouraged to integrate such detection tools to protect sensitive communications and prevent unauthorized access.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/isverified-emerges-from-stealth-with-voice-deepfake-detection-apps/",
+            "headline": "Trump’s Cyber Chief Nominee to Review Cybercom-NSA Role",
+            "title": "Cyber Chief Nominee Pledges to Assess Cybercom-NSA Dual-Hat Role",
+            "content": "During a recent confirmation hearing, Trump&#x27;s nominee for cyber chief, Rudd, committed to evaluating the effectiveness of the dual-hat leadership role of Cyber Command (Cybercom) and the National Security Agency (NSA). This role has been a subject of debate, with discussions focusing on its impact on national cybersecurity strategy. Rudd emphasized an objective approach to the assessment, promising to address any concerns that arise. This review could lead to significant changes in how these critical defense entities operate and coordinate. Stakeholders in national security and cybersecurity should monitor developments closely.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://defensescoop.com/2026/01/15/gen-rudd-cybercom-nsa-dual-hat-cyber-force/",
             "relatedResources": []
         },
         {
             "date": "Jan 15 2026",
-            "headline": "Reprompt Attack Breaches Microsoft Copilot—Data Exfiltration Alert",
-            "title": "New Reprompt Attack Exposes Data in Microsoft Copilot Sessions",
-            "content": "A newly identified attack, dubbed &quot;Reprompt,&quot; has been found to bypass Microsoft Copilot&#x27;s data leak protections, enabling attackers to exfiltrate session data even after a chat session is closed. This vulnerability highlights a critical flaw in the Copilot system, which is widely used for its AI-assisted features in enterprise environments. The attack method involves manipulating session tokens to gain unauthorized access to sensitive information. Organizations using Microsoft Copilot are at risk of data breaches, potentially affecting confidential business communications. It is crucial for IT departments to review their security protocols and apply any available patches to mitigate this threat.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/new-reprompt-attack-silently-siphons-microsoft-copilot-data/",
+            "headline": "Gootloader Uses Massive ZIP Archives to Evade Detection",
+            "title": "Gootloader Malware Adopts 1,000-Part ZIP Archives for Stealthy Delivery",
+            "content": "The Gootloader malware has evolved its delivery mechanism by employing malformed ZIP archives that concatenate up to 1,000 parts, aiming to bypass traditional detection methods. Typically used for initial access in cyber attacks, this sophisticated technique demonstrates the malware&#x27;s adaptability and persistence. Security experts warn that this approach could significantly increase the difficulty of detecting and mitigating Gootloader infections. Organizations should update their security protocols and employ advanced threat detection solutions to counter such innovative tactics. This development underscores the continuous evolution of malware delivery methods.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/gootloader-now-uses-1-000-part-zip-archives-for-stealthy-delivery/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "MITRE ATT&CK Mapping",
+                    "url": "/guides/mitre-attack-mapping.html",
+                    "icon": "fa-map"
+                }
+            ]
+        },
+        {
+            "date": "Jan 15 2026",
+            "headline": "CISA Tool Vulnerability Fixed After Researcher Report",
+            "title": "CISA Fixes XSS Vulnerability in Secure-Software Buying Tool",
+            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has addressed a cross-site scripting (XSS) vulnerability in its secure-software buying tool, following a report by a security researcher. The flaw was identified in September and fixed by December, highlighting the importance of timely vulnerability management. This incident serves as a reminder of the potential risks even in tools designed to enhance security. Organizations using CISA&#x27;s tools should ensure they have applied the latest updates to maintain security integrity. This case underscores the critical role of responsible vulnerability disclosure and prompt remediation.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/cisa-secure-software-buying-tool-had-a-simple-xss-vulnerability-of-its-own/",
             "relatedResources": [
                 {
                     "label": "CVE Prioritization Guide",
@@ -29,35 +104,11 @@ const websiteContent = {
         },
         {
             "date": "Jan 15 2026",
-            "headline": "Interrail Data Breach Exposes Customer Information",
-            "title": "Interrail Customer Database Hacked, Exposing Personal Data",
-            "content": "Interrail has suffered a significant data breach, compromising its customer database and exposing personal information. The breach involved unauthorized access to sensitive data, including names, addresses, and payment details of customers. As Interrail is a popular service among travelers, this breach could impact thousands of users globally. The incident underscores the importance of robust cybersecurity measures, especially for companies handling large volumes of personal data. Customers are advised to monitor their accounts for suspicious activity and change passwords as a precautionary measure. Interrail is currently investigating the breach and working to enhance its security infrastructure.",
+            "headline": "AWS CodeBuild Misconfiguration Averted Potential Supply Chain Attack",
+            "title": "AWS CodeBuild Misconfiguration Could Have Led to Supply Chain Attack",
+            "content": "Researchers from Wiz have identified a misconfiguration in AWS CodeBuild that posed a risk of compromising numerous AWS GitHub code repositories and applications. This flaw in the continuous integration (CI) service could have facilitated a widespread software supply chain attack. While AWS has addressed the issue, the incident highlights the critical importance of securing CI/CD pipelines against potential vulnerabilities. Organizations utilizing AWS CodeBuild should review their security configurations to prevent similar exposures. This discovery emphasizes the ongoing need for vigilance in cloud service security management.",
             "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4117313/interrail-kundendatenbank-gehackt.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 15 2026",
-            "headline": "Workflow Security Takes Center Stage Over Model Security",
-            "title": "AI Workflow Security Poses Greater Risk Than Model Security",
-            "content": "As AI copilots and assistants become integral to daily workflows, recent incidents suggest that the real security risk lies in the workflows surrounding these models rather than the models themselves. Two Chrome extensions, masquerading as AI helpers, were recently caught exploiting workflow vulnerabilities to gain unauthorized access to data. This highlights a shift in focus for security teams, who must now prioritize securing the entire workflow process. The trend indicates that as AI integration becomes more prevalent, attackers are likely to target the systems and processes that support AI functionalities. Organizations should reassess their security strategies to address these emerging threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/01/model-security-is-wrong-frame-real-risk.html",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 15 2026",
-            "headline": "FortiSIEM Flaw Allows Root Access—Patch Immediately",
-            "title": "Critical FortiSIEM Command Injection Vulnerability Disclosed",
-            "content": "A critical command injection vulnerability has been disclosed in Fortinet&#x27;s FortiSIEM platform, identified as allowing attackers to achieve unauthenticated root access remotely. This flaw, existing for nearly three years, has now been publicly disclosed along with an exploit code, significantly raising the risk of attacks. The vulnerability affects all versions prior to the latest patch and is part of a broader class of weaknesses in the FortiSIEM system. Organizations using FortiSIEM should urgently apply the latest security updates to protect against potential exploitation. This disclosure emphasizes the need for continuous monitoring and timely patch management in cybersecurity practices.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4117316/researchers-warn-of-long%e2%80%91running-fortisiem-root-exploit-vector-as-new-cve-emerges.html",
+            "sourceUrl": "https://www.csoonline.com/article/4117692/possible-software-supply-chain-attack-through-aws-codebuild-service-blunted-2.html",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
@@ -65,49 +116,9 @@ const websiteContent = {
                     "icon": "fa-skull-crossbones"
                 },
                 {
-                    "label": "Fortinet Analysis",
-                    "url": "/articles/fortinet-fortigate-critical-exploit-2025.html",
-                    "icon": "fa-file-alt"
-                },
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Jan 15 2026",
-            "headline": "Outdated SOC Practices Undermine MTTR in 2026",
-            "title": "Four Outdated SOC Habits Hindering MTTR Effectiveness in 2026",
-            "content": "Despite advancements in cybersecurity, many Security Operations Centers (SOCs) continue to rely on outdated tools and processes, negatively impacting Mean Time to Respond (MTTR) to incidents. These practices, which were effective in the past, are no longer sufficient in addressing the complexity and volume of modern cyber threats. Analysts are often overwhelmed, leading to delayed responses and increased risk of breaches. SOCs are urged to adopt more agile and sophisticated technologies, such as AI-driven analytics and automated response systems, to enhance their threat detection and response capabilities. Updating these practices is crucial for maintaining robust cybersecurity defenses.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/01/4-outdated-habits-destroying-your-socs.html",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "SIEM & Log Analysis Guide",
-                    "url": "/guides/siem-log-analysis.html",
-                    "icon": "fa-chart-bar"
-                }
-            ]
-        },
-        {
-            "date": "Jan 15 2026",
-            "headline": "Delta PLCs Vulnerable to Trio of Critical Bugs",
-            "title": "Critical Vulnerabilities Found in Delta Industrial PLCs",
-            "content": "Security researchers have identified three critical vulnerabilities in Delta&#x27;s Industrial Programmable Logic Controllers (PLCs), sparking debate over their severity. These vulnerabilities could potentially allow attackers to disrupt industrial operations by executing unauthorized commands or causing system malfunctions. While experts are divided on the immediate threat level, the vulnerabilities highlight ongoing security challenges in industrial control systems. Organizations using Delta PLCs should conduct thorough security assessments and apply recommended patches to mitigate potential risks. This discovery underscores the importance of securing industrial environments against evolving cyber threats.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/ics-ot-security/critical-bugs-delta-industrial-plcs",
-            "relatedResources": [
-                {
-                    "label": "Third-Party Risk Management",
-                    "url": "/guides/third-party-risk-management.html",
-                    "icon": "fa-handshake"
+                    "label": "Cloud Security Hardening",
+                    "url": "/guides/cloud-security-hardening.html",
+                    "icon": "fa-cloud"
                 }
             ]
         },
@@ -121,30 +132,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Jan 15 2026",
-            "headline": "SANS Stormcast: Key Cyber Threats for January 15th",
-            "title": "Latest SANS Internet Stormcast Highlights Emerging Cyber Threats",
-            "content": "The SANS Internet Storm Center&#x27;s latest Stormcast podcast for January 15th provides insights into current cyber threats and vulnerabilities. The podcast offers a detailed analysis of recent malware campaigns and security patches, emphasizing the importance of timely updates. Key topics include the risks of unpatched systems and the growing sophistication of phishing attacks. The InfoCON level remains at green, indicating a stable threat landscape, but vigilance is advised. Security professionals are encouraged to stay informed through such resources to effectively safeguard their networks.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32630",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 15 2026",
-            "headline": "VoidLink Malware Targets Linux—Cloud Servers at Risk",
-            "title": "New VoidLink Malware Framework Threatens Linux Cloud Environments",
-            "content": "Researchers have identified VoidLink, a sophisticated malware framework targeting Linux cloud servers and containers. Developed by Chinese actors, VoidLink is modular and stealthy, exploiting Linux internals to avoid detection. The framework poses a significant threat to cloud infrastructure, potentially compromising sensitive data and disrupting operations. This discovery highlights the increasing targeting of Linux systems by advanced persistent threats (APTs). Organizations using Linux in cloud environments should enhance monitoring and apply security patches to mitigate potential risks.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4117038/sophisticated-voidlink-malware-framework-targets-linux-cloud-servers.html",
-            "relatedResources": [
-                {
-                    "label": "Zero-Day Detection Guide",
-                    "url": "/guides/zero-day-detection.html",
-                    "icon": "fa-exclamation-triangle"
-                }
-            ]
-        },
-        {
             "date": "May 05 2026",
             "title": "GISEC GLOBAL 2026 Unveils Cybersecurity Innovations in Middle East and Africa",
             "content": "GISEC GLOBAL 2026, the largest cybersecurity event in the Middle East and Africa, has kicked off, showcasing the latest advancements in cybersecurity technology and strategy. The event serves as a platform for industry leaders to discuss emerging threats and innovative solutions. This year&#x27;s focus includes AI-driven security tools, advanced threat detection systems, and new compliance frameworks. Professionals from various sectors, including government and private enterprises, are attending to gain insights into protecting critical infrastructure. The event highlights the region&#x27;s growing importance in the global cybersecurity landscape, emphasizing collaboration and knowledge sharing. Attendees are encouraged to engage with workshops and panels to stay ahead of evolving cyber threats.",
@@ -154,54 +141,12 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Jan 15 2026",
-            "headline": "Jen Easterly to Lead RSA—Cybersecurity at a Crossroads",
-            "title": "Former CISA Director Jen Easterly Appointed Head of RSA Conference",
-            "content": "Jen Easterly, former director of the Cybersecurity and Infrastructure Security Agency (CISA), has been appointed to lead the RSA Conference, a major event in the cybersecurity industry. Easterly steps into this role at a pivotal moment as the tech industry faces evolving threats and increasing global tensions. Her appointment is expected to bring a fresh perspective to RSA, leveraging her extensive experience in government cybersecurity strategy and operations. The RSA Conference remains a critical platform for discussing the latest security challenges and innovations, and Easterly&#x27;s leadership could shape its future direction. Industry professionals anticipate her influence will strengthen collaborations between public and private sectors to address pressing cybersecurity issues.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/former-cisa-director-jen-easterly-will-lead-rsa-conference/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 15 2026",
-            "headline": "Advocacy Groups Push Apple, Google to Drop X for Deepfakes",
-            "title": "‘Get Grok Gone’: Groups Urge App Store Removal Over Deepfake Concerns",
-            "content": "A coalition of 28 advocacy groups is calling on Apple and Google to remove the X app and xAI&#x27;s Grok from their app stores due to the proliferation of nonconsensual sexual deepfakes. These deepfakes violate both companies&#x27; policies on explicit content, yet the apps remain available for download. The groups, including several women&#x27;s organizations, argue that allowing such content undermines user safety and privacy protections. The demand highlights ongoing challenges in moderating AI-generated content and enforcing digital platform policies. Tech companies are under pressure to enhance their content moderation systems to prevent harmful AI-generated media.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/news/862460/apple-google-app-stores-ditch-grok-x-open-letters",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 15 2026",
-            "headline": "WhatsApp Exempts Brazil from Chatbot Ban Amid Regulatory Pressure",
-            "title": "WhatsApp Allows Chatbots in Brazil Despite Global Policy Shift",
-            "content": "WhatsApp has decided to permit AI providers to continue offering chatbots in Brazil, following a directive from the country&#x27;s competition agency to halt its new policy banning third-party chatbots. This decision comes after Italy previously faced similar regulatory scrutiny. WhatsApp&#x27;s policy shift aims to control third-party chatbot integration, but Brazil&#x27;s exemption underscores the complexities of global regulatory compliance. The move is significant for AI developers and businesses in Brazil, as it allows continued innovation and user engagement on the platform. This development highlights the ongoing tension between international tech policies and local regulatory frameworks.",
+            "date": "Jan 16 2026",
+            "headline": "Symbolic.ai Partners with News Corp to Revolutionize Journalism",
+            "title": "AI Journalism Startup Symbolic.ai Inks Deal with News Corp",
+            "content": "Symbolic.ai, an AI journalism startup, has signed a strategic partnership with Rupert Murdoch’s News Corp to enhance editorial processes using its AI platform. The platform is designed to optimize research and streamline editorial workflows, potentially transforming how newsrooms operate. This collaboration aims to leverage AI to increase efficiency and accuracy in news production. Symbolic.ai’s tools can automate mundane tasks, allowing journalists to focus on investigative reporting and creative storytelling. News Corp&#x27;s adoption of AI reflects a growing trend in the media industry to integrate advanced technologies for competitive advantage.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/15/after-italy-whatsapp-excludes-brazil-from-rival-chatbot-ban/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Jan 15 2026",
-            "headline": "China’s Tech Dominance Explored in WIRED Livestream",
-            "title": "Livestream: Examining China’s Influence in the Global Tech Landscape",
-            "content": "WIRED is hosting a livestream event to discuss China&#x27;s growing influence in technology and its implications for the future. The session will feature a panel of experts analyzing China&#x27;s strategic advancements in AI and other tech sectors. This event comes amid increasing global concern over China&#x27;s tech policies and their impact on international markets. Participants will have the opportunity to pose questions to the panel, fostering a deeper understanding of China&#x27;s role in shaping the future of technology. The discussion aims to provide insights into how tech professionals can navigate the challenges and opportunities presented by China&#x27;s tech dominance.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/livestream-welcome-to-the-chinese-century/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 15 2026",
-            "headline": "AI Boom Spurs Demand for Skilled Trades in Data Centers",
-            "title": "Data Center Expansion Creates Urgent Need for Skilled Tradespeople",
-            "content": "The rapid expansion of AI technologies is driving an unprecedented increase in data center construction, creating a critical demand for skilled tradespeople such as plumbers and electricians in the U.S. Despite the surge in construction, there is a significant shortage of qualified workers to meet the demand. This shortage poses a potential bottleneck for the AI industry&#x27;s growth, as data centers are essential for supporting AI infrastructure. Industry leaders are calling for enhanced training programs and incentives to attract workers to these vital roles. The situation highlights the broader economic impact of the AI boom beyond traditional tech sectors.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/why-there-arent-enough-electricians-and-plumbers-to-build-ai-data-centers/",
+            "sourceUrl": "https://techcrunch.com/2026/01/15/ai-journalism-startup-symbolic-ai-signs-deal-with-rupert-murdochs-news-corp/",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
@@ -212,11 +157,53 @@ const websiteContent = {
         },
         {
             "date": "Jan 15 2026",
-            "headline": "OpenAI’s ChatGPT Translate Rivals Google Translate",
-            "title": "OpenAI Launches ChatGPT Translate to Compete with Google Translate",
-            "content": "OpenAI has unveiled ChatGPT Translate, a standalone web translation tool supporting over 50 languages, directly challenging Google Translate. The tool features a user-friendly interface with two text boxes for input and output, similar to Google&#x27;s service. This launch marks OpenAI&#x27;s strategic move into the translation market, leveraging its advanced language model capabilities. The competition between OpenAI and Google in this space could drive innovation and improvements in translation accuracy and speed. Users can expect enhanced language support and potentially new features as the two tech giants vie for dominance in the translation sector.",
+            "headline": "Lawsuit Filed Against X for AI Image Manipulation",
+            "title": "Ashley St. Clair Sues X Over AI-Generated Bikini Image",
+            "content": "Ashley St. Clair, mother of one of Elon Musk&#x27;s children, has filed a lawsuit against X for the unauthorized use of AI to generate a bikini image of her. The incident highlights ongoing privacy concerns surrounding AI image manipulation technologies. St. Clair is among several individuals who have discovered AI-generated images depicting them in compromising attire without consent. This legal action underscores the potential for AI misuse and the need for stricter regulations. X&#x27;s platform faces scrutiny over its ability to control AI-generated content, raising questions about user safety and privacy.",
             "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/news/862448/openai-chatgpt-translate-tool-launch-website",
+            "sourceUrl": "https://www.theverge.com/news/863097/ashley-st-clair-elon-musk-grok-undressing-lawsuit",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 15 2026",
+            "headline": "Thinking Machines Lab Loses Top Executives Amid AI Talent Exodus",
+            "title": "Executive Departures at Thinking Machines Highlight AI Lab Instability",
+            "content": "Thinking Machines Lab is experiencing significant turnover, with three top executives abruptly leaving the company. This development is part of a broader trend of high employee turnover in AI labs, driven by competitive pressures and lucrative offers from rival firms. The departures come amid reports of internal conflicts and strategic disagreements within the lab. Mira Murati, the lab&#x27;s leader, faces challenges in retaining talent as the AI industry continues to evolve rapidly. The revolving door phenomenon raises concerns about the stability and continuity of AI research initiatives.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/15/the-ai-lab-revolving-door-spins-ever-faster/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Jan 15 2026",
+            "headline": "OpenAI Poaches Talent from Thinking Machines for AI Expansion",
+            "title": "OpenAI Targets Thinking Machines Lab for Talent Acquisition",
+            "content": "OpenAI is reportedly recruiting researchers from Thinking Machines Lab, following the acquisition of two cofounders. This move is part of OpenAI&#x27;s strategy to bolster its research capabilities and accelerate AI development. The talent raid highlights the fierce competition among AI labs to attract top-tier researchers. OpenAI&#x27;s aggressive recruitment tactics are indicative of the high stakes in the AI industry as companies vie for leadership in innovation. The ongoing talent war underscores the importance of human capital in driving AI advancements and maintaining competitive edges.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/inside-openai-raid-on-thinking-machines-lab/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 15 2026",
+            "headline": "Taiwan Commits $250B to Boost US Semiconductor Production",
+            "title": "Taiwan Invests Heavily in US Semiconductor Manufacturing",
+            "content": "Taiwan has pledged a substantial $250 billion investment in US semiconductor manufacturing as part of a new trade agreement. This initiative aims to strengthen the semiconductor supply chain and reduce reliance on Chinese production. The investment will support the construction of new manufacturing facilities and the expansion of existing ones in the United States. This move is expected to create jobs and foster technological innovation in the semiconductor industry. The deal underscores Taiwan&#x27;s strategic commitment to deepening economic ties with the US amid global supply chain disruptions.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/15/taiwan-to-invest-250b-in-us-semiconductor-manufacturing/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 15 2026",
+            "headline": "Claude Code Update Adds User-Requested Features",
+            "title": "Anthropic Enhances Claude Code with Model Context Protocol Update",
+            "content": "Anthropic has updated its open-source standard, the Model Context Protocol (MCP), to enhance its AI programming tool, Claude Code. The MCP, initially released in 2024, allows AI models to connect with external tools in a structured format. This update introduces one of the most-requested features, improving the tool&#x27;s usability and functionality. Claude Code&#x27;s enhancements are expected to facilitate more efficient AI agentic programming and expand its application scope. The update reflects Anthropic&#x27;s commitment to addressing user feedback and advancing AI development tools.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/claude-code-just-got-updated-with-one-of-the-most-requested-user-features",
             "relatedResources": [
                 {
                     "label": "LLM Security & Prompt Injection",
@@ -227,69 +214,16 @@ const websiteContent = {
         },
         {
             "date": "Jan 15 2026",
-            "headline": "Wikipedia Faces Growing Challenges at 25-Year Milestone",
-            "title": "Wikipedia Confronts Political, AI, and Volunteer Challenges at 25",
-            "content": "As Wikipedia celebrates its 25th anniversary, the online encyclopedia faces significant challenges, including political opposition, AI scraping, and a decline in volunteer contributors. These issues threaten the platform&#x27;s foundational ideals of free and open access to information. The rise of AI technologies has led to increased content scraping, impacting Wikipedia&#x27;s reliability and integrity. Additionally, political pressures in various countries pose risks to its neutrality and accessibility. The Wikimedia Foundation is exploring strategies to address these challenges, emphasizing the need for community engagement and technological solutions to preserve Wikipedia&#x27;s role as a trusted information source.",
+            "headline": "Grok&#x27;s AI Image Restrictions Fall Short, Users Still at Risk",
+            "title": "Grok&#x27;s Incomplete Fix for AI-Generated Explicit Images",
+            "content": "Despite new restrictions, Grok&#x27;s AI platform on X continues to struggle with controlling the generation of explicit images. Recent tests reveal that the updates have resulted in inconsistent limitations, failing to fully resolve the issue. Users remain vulnerable to unauthorized image manipulation, raising concerns about the effectiveness of current safeguards. The situation highlights the challenges in moderating AI-generated content and the need for robust solutions. X&#x27;s ongoing efforts to address these issues are crucial for protecting user privacy and maintaining trust in AI technologies.",
             "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/wikipedias-existential-threats-have-never-been-greater/",
+            "sourceUrl": "https://www.wired.com/story/elon-musks-grok-undressing-problem-isnt-fixed/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
                     "url": "/ransomware-tracker.html",
                     "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Jan 15 2026",
-            "headline": "OpenAI Lures Two Founders from Thinking Machines Lab",
-            "title": "Co-Founders Depart Thinking Machines Lab to Rejoin OpenAI",
-            "content": "Thinking Machines Lab is facing a significant leadership shake-up as two of its co-founders have decided to leave the company and rejoin OpenAI. This personnel change, which was in the planning stages for several weeks, comes as a strategic blow to Thinking Machines Lab. The move could impact the startup&#x27;s ongoing AI projects and its competitive positioning in the AI landscape. OpenAI&#x27;s acquisition of key talent underscores its aggressive strategy to consolidate expertise in artificial intelligence. Organizations relying on Thinking Machines Lab&#x27;s innovations may need to reassess project timelines and expectations. This development highlights the dynamic and competitive nature of the AI industry, where talent acquisition can drive significant shifts.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/14/mira-muratis-startup-thinking-machines-lab-is-losing-two-of-its-co-founders-to-openai/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 15 2026",
-            "headline": "Grok&#x27;s Image Editing Sparks Controversy on X Platform",
-            "title": "X&#x27;s Grok Fails to Curb Nonconsensual Image Manipulation",
-            "content": "The X platform is embroiled in controversy as its Grok account continues to allow nonconsensual image manipulation, despite claims of having addressed the issue. Users have reported that Grok can still generate inappropriate modifications, such as placing individuals in compromising attire. This follows similar reports by The Telegraph highlighting Grok&#x27;s problematic capabilities. The situation raises significant privacy and ethical concerns, particularly affecting individuals whose images are used without consent. X&#x27;s failure to effectively control Grok&#x27;s capabilities could lead to increased scrutiny from regulators and privacy advocates. Users are advised to remain cautious and report any misuse of the platform&#x27;s tools.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/news/862372/x-grok-ai-policy-update-deepfake-bikini-poses",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Jan 15 2026",
-            "headline": "Thinking Machines Lab Faces Setback as Founders Exit",
-            "title": "Departure of Co-Founders Challenges Thinking Machines Lab&#x27;s Future",
-            "content": "Thinking Machines Lab is experiencing a leadership crisis with the departure of two co-founders who are returning to OpenAI. This unexpected exit has sparked discussions within the industry about the potential reasons and implications for the startup. The loss of these key figures could disrupt ongoing projects and strategic initiatives at Thinking Machines Lab. As the AI sector becomes increasingly competitive, retaining top talent is crucial for innovation and growth. Stakeholders and partners may need to reassess their engagements with the company in light of these developments. The situation underscores the volatility and competitive pressures within the AI ecosystem.",
-            "source": "Feed: Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/thinking-machines-lab-cofounders-leave-for-openai/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 15 2026",
-            "headline": "Emversity&#x27;s Valuation Doubles Amid AI-Resistant Workforce Training",
-            "title": "Emversity Secures $30M to Expand AI-Resistant Job Training",
-            "content": "Emversity, an Indian startup specializing in job-ready training, has successfully doubled its valuation by raising $30 million in a new funding round. The company focuses on equipping workers with skills that are less susceptible to automation by AI technologies. This funding boost will enable Emversity to scale its operations and expand its reach across India, addressing the growing demand for AI-resistant skillsets. As AI continues to transform numerous industries, Emversity&#x27;s approach provides a crucial pathway for workers to remain competitive in the evolving job market. Investors and industry leaders are closely watching this model as a potential blueprint for future workforce development.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/14/indias-emversity-doubles-valuation-as-it-scales-workers-ai-cant-replace/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
                 }
             ]
         }
