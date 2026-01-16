@@ -549,31 +549,17 @@
     color: var(--accent);
 }
 
-/* Source Link Button */
-.modal-source-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.75rem 1.5rem;
-    background: linear-gradient(135deg, var(--accent), #FF6B6B);
-    border: none;
-    border-radius: 8px;
-    color: white;
-    font-size: 0.95rem;
-    font-weight: 600;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    margin-top: 1rem;
+/* Source Footer Text */
+.modal-source-footer {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.modal-source-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(255, 61, 61, 0.3);
-}
-
-.modal-source-btn i {
-    font-size: 0.85rem;
+.modal-source-text {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-style: italic;
 }
 
 /* ===== LOAD MORE ===== */

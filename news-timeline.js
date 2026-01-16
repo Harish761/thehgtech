@@ -349,10 +349,9 @@
                             ${escapeHTML(content)}
                         </div>
                         ${relatedHTML}
-                        <a href="${sourceUrl}" target="_blank" rel="noopener noreferrer" class="modal-source-btn">
-                            <i class="fas fa-external-link-alt"></i>
-                            Read Full Article on ${escapeHTML(source)}
-                        </a>
+                        <div class="modal-source-footer">
+                            <span class="modal-source-text">Source: ${escapeHTML(source)}</span>
+                        </div>
                     </div>
                 </div>
             </div>
