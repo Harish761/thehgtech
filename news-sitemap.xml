@@ -4,6 +4,59 @@
 
   <!-- ========== LATEST NEWS ARTICLES (Last 48 hours for Google News) ========== -->
   
+  <!-- January 16, 2026 -->
+  <url>
+    <loc>https://thehgtech.com/articles/microsoft-patch-tuesday-january-2026.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-01-16T00:00:00+05:30</news:publication_date>
+      <news:title>Microsoft Patch Tuesday January 2026: 114 CVEs, 3 Zero-Days, One Actively Exploited</news:title>
+      <news:keywords>Microsoft, Patch Tuesday, CVE-2026-20805, zero-day, CISA KEV, Windows security</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/totalenergies-data-breach-2026.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-01-16T00:00:00+05:30</news:publication_date>
+      <news:title>TotalEnergies Breach: 183 Million Customer Records Allegedly Stolen</news:title>
+      <news:keywords>TotalEnergies, data breach, France, energy sector, banking data, customer records</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/llm-attack-reconnaissance-2026.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-01-16T00:00:00+05:30</news:publication_date>
+      <news:title>91,000 LLM Attack Sessions: Massive AI Reconnaissance Campaign</news:title>
+      <news:keywords>LLM attacks, AI security, OpenAI, Gemini, reconnaissance, API security</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/microsoft-365-gov-breach-2026.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-01-16T00:00:00+05:30</news:publication_date>
+      <news:title>Microsoft 365 US Government Breach: Cloud Espionage Campaign</news:title>
+      <news:keywords>Microsoft 365, government breach, nation-state, cloud espionage, federal agencies</news:keywords>
+    </news:news>
+  </url>
+
   <!-- January 12, 2026 -->
   <url>
     <loc>https://thehgtech.com/articles/crowdstrike-sgnl-acquisition-identity-security-2026.html</loc>

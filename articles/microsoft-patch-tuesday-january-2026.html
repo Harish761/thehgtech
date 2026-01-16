@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Patch Tuesday January 2026: 114 CVEs, 3 Zero-Days, and One Actively Exploited | TheHGTech</title>
+    <meta name="description"
+        content="Comprehensive analysis of Microsoft's January 2026 Patch Tuesday: 114 vulnerabilities patched, 3 zero-days including CVE-2026-20805 actively exploited in the wild, 8 critical RCE flaws, and CISA KEV additions.">
+    <meta name="keywords"
+        content="Microsoft Patch Tuesday January 2026, CVE-2026-20805, Windows zero-day, CISA KEV, Microsoft security update, DWM vulnerability, critical CVE, RCE vulnerability, Windows security patches">
+    <link rel="canonical" href="https://thehgtech.com/articles/microsoft-patch-tuesday-january-2026.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Microsoft Patch Tuesday January 2026: 114 CVEs and 3 Zero-Days Patched">
+    <meta property="og:description"
+        content="Complete analysis of January 2026's massive security update including actively exploited zero-day CVE-2026-20805.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/articles/microsoft-patch-tuesday-january-2026.html">
+    <meta property="og:image" content="https://thehgtech.com/images/articles/microsoft-patch-tuesday-january-2026.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Microsoft Patch Tuesday January 2026: 114 CVEs Patched">
+    <meta name="twitter:description"
+        content="3 zero-days including CVE-2026-20805 actively exploited. Full breakdown and remediation guidance.">
+
+    <!-- Article Meta -->
+    <meta property="article:published_time" content="2026-01-16T00:00:00Z">
+    <meta property="article:author" content="Harish G">
+    <meta property="article:section" content="Vulnerability">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": "Microsoft Patch Tuesday January 2026: 114 CVEs, 3 Zero-Days, and One Actively Exploited",
+      "description": "Comprehensive analysis of Microsoft's January 2026 Patch Tuesday including the actively exploited CVE-2026-20805 zero-day vulnerability.",
+      "author": {
+        "@type": "Person",
+        "name": "Harish G"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TheHGTech",
+        "url": "https://thehgtech.com"
+      },
+      "datePublished": "2026-01-16",
+      "dateModified": "2026-01-16",
+      "mainEntityOfPage": "https://thehgtech.com/articles/microsoft-patch-tuesday-january-2026.html"
+    }
+    </script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://thehgtech.com"
+      }, {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Articles",
+        "item": "https://thehgtech.com/articles.html"
+      }, {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Microsoft Patch Tuesday January 2026",
+        "item": "https://thehgtech.com/articles/microsoft-patch-tuesday-january-2026.html"
+      }]
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What is CVE-2026-20805 and why is it critical?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "CVE-2026-20805 is an information disclosure vulnerability in Windows Desktop Window Manager (DWM) that is actively exploited in the wild. Despite a moderate CVSS score of 5.5, attackers use it to leak memory addresses, which can be chained with other vulnerabilities for privilege escalation and system compromise."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How many zero-day vulnerabilities did Microsoft patch in January 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Microsoft patched 3 zero-day vulnerabilities in January 2026: CVE-2026-20805 (actively exploited DWM info disclosure), CVE-2023-31096 (Agere Soft Modem Driver privilege escalation), and CVE-2026-21265 (Secure Boot bypass)."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What should organizations prioritize patching first?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Organizations should prioritize: 1) CVE-2026-20805 (actively exploited), 2) Critical RCE vulnerabilities in Office (CVE-2026-20952, CVE-2026-20953), 3) NTFS heap overflow vulnerabilities (CVE-2026-20840, CVE-2026-20922), and 4) Any internet-facing Windows servers."
+        }
+      }]
+    }
+    </script>
+
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/header-dropdown.css?v=1">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF3D3D;
+            --accent-blue: #3B82F6;
+            --accent-orange: #FF9500;
+            --accent-green: #10b981;
+            --accent-purple: #8b5cf6;
+            --accent-microsoft: #00A4EF;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        .article-container {
+            max-width: 800px;
+            margin: 80px auto 0;
+            padding: 2rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-cyan);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: var(--text-primary);
+        }
+
+        .article-header {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .article-category {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent-red), var(--accent-orange));
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--accent-red), var(--accent-orange));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .article-excerpt {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .article-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .featured-image {
+            width: 100%;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border: 1px solid var(--border);
+        }
+
+        h2 {
+            color: var(--accent-cyan);
+            margin: 2.5rem 0 1rem;
+            font-size: 1.6rem;
+        }
+
+        h3 {
+            color: var(--text-primary);
+            margin: 1.5rem 0 1rem;
+            font-size: 1.3rem;
+        }
+
+        h4 {
+            color: var(--accent-purple);
+            margin: 1.25rem 0 0.75rem;
+            font-size: 1.1rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        .info-box {
+            background: rgba(0, 217, 255, 0.08);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .warning-box {
+            background: rgba(255, 61, 61, 0.1);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .success-box {
+            background: rgba(16, 185, 129, 0.1);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .cve-highlight {
+            background: linear-gradient(135deg, rgba(255, 61, 61, 0.15), rgba(255, 149, 0, 0.1));
+            border: 2px solid var(--accent-red);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 12px;
+        }
+
+        .cve-highlight .cve-id {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--accent-red);
+            display: block;
+            margin-bottom: 0.5rem;
+            font-family: monospace;
+        }
+
+        .cve-highlight .cvss-score {
+            display: inline-block;
+            background: var(--accent-red);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin-right: 0.5rem;
+        }
+
+        .cve-highlight .status-badge {
+            display: inline-block;
+            background: rgba(255, 61, 61, 0.3);
+            color: var(--accent-red);
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.7;
+            }
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: rgba(255, 61, 61, 0.1);
+            color: var(--accent-red);
+            font-weight: 600;
+        }
+
+        td {
+            color: var(--text-secondary);
+        }
+
+        td code {
+            background: rgba(255, 61, 61, 0.15);
+            color: var(--accent-red);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Monaco', 'Menlo', monospace;
+            font-size: 0.85rem;
+        }
+
+        ul,
+        ol {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        blockquote {
+            border-left: 4px solid var(--accent-purple);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+
+        blockquote cite {
+            display: block;
+            margin-top: 0.5rem;
+            color: var(--accent-cyan);
+            font-style: normal;
+            font-weight: 600;
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--accent-cyan);
+            display: block;
+        }
+
+        .stat-value.red {
+            color: var(--accent-red);
+        }
+
+        .stat-value.purple {
+            color: var(--accent-purple);
+        }
+
+        .stat-value.green {
+            color: var(--accent-green);
+        }
+
+        .stat-value.orange {
+            color: var(--accent-orange);
+        }
+
+        .stat-label {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        code {
+            background: rgba(0, 217, 255, 0.15);
+            color: var(--accent-cyan);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Monaco', 'Menlo', monospace;
+        }
+
+        .timeline {
+            margin: 2rem 0;
+            padding-left: 2rem;
+            border-left: 2px solid var(--accent-red);
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-bottom: 1.5rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2.5rem;
+            top: 0.25rem;
+            width: 12px;
+            height: 12px;
+            background: var(--accent-red);
+            border-radius: 50%;
+        }
+
+        .timeline-date {
+            font-weight: 700;
+            color: var(--accent-red);
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .timeline-event {
+            color: var(--text-secondary);
+        }
+
+        .severity-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.8rem;
+        }
+
+        .severity-critical {
+            background: rgba(255, 61, 61, 0.2);
+            color: #FF6B6B;
+        }
+
+        .severity-high {
+            background: rgba(255, 149, 0, 0.2);
+            color: #FF9500;
+        }
+
+        .severity-medium {
+            background: rgba(255, 215, 0, 0.2);
+            color: #FFD700;
+        }
+
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 3rem 2rem;
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        footer p {
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.6rem;
+            }
+
+            .article-container {
+                padding: 1rem;
+                margin-top: 60px;
+            }
+
+            .article-meta {
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+
+            .stat-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .cve-highlight .cve-id {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <script src="/m-app.js?v=4.3" defer></script>
+</head>
+
+<body>
+    <!-- Mobile Header -->
+    <header class="m-header m-only">
+        <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark"
+                style="height: 28px; width: auto; margin: 0;">
+            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light"
+                style="height: 28px; width: auto; margin: 0;">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+        </div>
+        <div class="m-header__actions">
+            <button class="m-theme-toggle" onclick="mToggleTheme()" aria-label="Toggle Theme">
+                <span class="m-theme-toggle__thumb"></span>
+                <span class="m-theme-toggle__stars"><span class="m-theme-toggle__star"></span><span
+                        class="m-theme-toggle__star"></span></span>
+            </button>
+            <button class="m-header__btn m-header__btn--search" data-action="search" aria-label="Search"><i
+                    class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <!-- Bottom Navigation -->
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item"><i class="fas fa-bug"></i><span>CVE</span></a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item"><i class="fas fa-shield-alt"></i><span>Intel</span></a>
+        <a href="/articles.html" class="m-bottom-nav__item active"><i
+                class="fas fa-newspaper"></i><span>Articles</span></a>
+        <a href="/guides/" class="m-bottom-nav__item"><i class="fas fa-book"></i><span>Guides</span></a>
+    </nav>
+
+    <!-- Desktop Header -->
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+
+            <nav class="nav nav-modern" role="navigation">
+                <a href="/index.html#news">News</a>
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">
+                        Intelligence <span class="nav-live-badge">LIVE</span>
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/threat-intel.html" class="dropdown-item">
+                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Threat Intelligence <span
+                                        class="dropdown-badge live">LIVE</span></div>
+                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds</div>
+                            </div>
+                        </a>
+                        <a href="/cve-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">CVE Tracker</div>
+                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities</div>
+                            </div>
+                        </a>
+                        <a href="/ransomware-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Ransomware Tracker</div>
+                                <div class="dropdown-item-desc">Active ransomware groups and victims</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">
+                        Resources <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/guides/" class="dropdown-item">
+                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Security Guides <span
+                                        class="dropdown-badge popular">37+</span></div>
+                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2 & more</div>
+                            </div>
+                        </a>
+                        <a href="/comparisons/" class="dropdown-item">
+                            <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Tool Comparisons</div>
+                                <div class="dropdown-item-desc">EDR, SIEM head-to-head reviews</div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="/articles.html" class="dropdown-item">
+                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Articles</div>
+                                <div class="dropdown-item-desc">Latest cybersecurity news</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="theme-toggle-wrapper">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <div class="toggle-stars">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                    </button>
+                </div>
+            </nav>
+
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="article-container">
+        <a href="/articles.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Articles</a>
+
+        <article>
+            <header class="article-header">
+                <div class="article-category"><i class="fas fa-bug"></i> Vulnerability Analysis</div>
+                <h1>Microsoft Patch Tuesday January 2026: 114 CVEs, 3 Zero-Days, and One Actively Exploited</h1>
+                <p class="article-excerpt">Microsoft kicks off 2026 with a massive security update addressing 114
+                    vulnerabilities including CVE-2026-20805, an information disclosure flaw in Windows DWM that
+                    attackers are already weaponizing in the wild.</p>
+                <div class="article-meta">
+                    <span><i class="far fa-calendar-alt"></i> Released: January 14, 2026</span>
+                    <span><i class="fas fa-clock"></i> Published: Jan 16, 2026</span>
+                    <span><i class="fas fa-book-open"></i> 20 min read</span>
+                    <span><i class="fas fa-user"></i> By Harish G</span>
+                </div>
+            </header>
+
+            <img src="/images/articles/microsoft-patch-tuesday-january-2026.png"
+                alt="Microsoft Patch Tuesday January 2026 Analysis" class="featured-image">
+
+            <div class="stat-grid">
+                <div class="stat-card">
+                    <span class="stat-value">114</span>
+                    <span class="stat-label">Total CVEs Patched</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value red">3</span>
+                    <span class="stat-label">Zero-Day Vulnerabilities</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value orange">8</span>
+                    <span class="stat-label">Critical Severity</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value purple">1</span>
+                    <span class="stat-label">Actively Exploited</span>
+                </div>
+            </div>
+
+            <h2><i class="fas fa-crosshairs"></i> Executive Summary</h2>
+
+            <p>Microsoft's first Patch Tuesday of 2026 is one for the record books. Released on January 14, 2026, this
+                security update addresses <strong>114 vulnerabilities</strong> across the Windows ecosystem, including
+                <strong>three zero-day vulnerabilities</strong>—one of which is confirmed to be actively exploited in
+                the wild.</p>
+
+            <p>The star of this month's update is <strong>CVE-2026-20805</strong>, an information disclosure
+                vulnerability in Windows Desktop Window Manager (DWM) that threat actors are actively leveraging as part
+                of exploit chains. Despite its moderate CVSS score of 5.5, its active exploitation status means security
+                teams should treat this as a priority-one patch.</p>
+
+            <p>Beyond the zero-days, this update includes eight critical-severity vulnerabilities affecting Microsoft
+                Office, Windows LSASS, Windows NTFS, and the Graphics Component. Several of these enable remote code
+                execution (RCE) through maliciously crafted files—a classic attack vector that continues to plague
+                enterprise environments.</p>
+
+            <div class="warning-box">
+                <strong><i class="fas fa-exclamation-triangle"></i> Urgent Action Required:</strong> CVE-2026-20805 is
+                actively exploited in the wild and has been added to CISA's Known Exploited Vulnerabilities (KEV)
+                catalog. Federal agencies must remediate by February 3, 2026. All organizations should patch
+                immediately.
+            </div>
+
+            <h2><i class="fas fa-skull-crossbones"></i> The Actively Exploited Zero-Day: CVE-2026-20805</h2>
+
+            <div class="cve-highlight">
+                <span class="cve-id">CVE-2026-20805</span>
+                <span class="cvss-score">CVSS 5.5</span>
+                <span class="status-badge"><i class="fas fa-fire"></i> ACTIVELY EXPLOITED</span>
+                <p style="margin-top: 1rem; color: var(--text-secondary);">Windows Desktop Window Manager (DWM)
+                    Information Disclosure Vulnerability</p>
+            </div>
+
+            <h3>What is CVE-2026-20805?</h3>
+
+            <p>CVE-2026-20805 is an information disclosure vulnerability in the Windows Desktop Window Manager (DWM),
+                the core Windows component responsible for desktop composition and visual effects. The vulnerability
+                allows an attacker to leak kernel memory addresses—information that shouldn't be accessible to regular
+                applications.</p>
+
+            <p>You might wonder why a "mere" information disclosure bug warrants critical attention. The answer lies in
+                how modern exploitation works. Attackers rarely use a single vulnerability—they chain multiple bugs
+                together. Memory address leaks like CVE-2026-20805 are invaluable for bypassing Address Space Layout
+                Randomization (ASLR), one of Windows' fundamental security defenses.</p>
+
+            <h3>The Attack Chain</h3>
+
+            <p>Security researchers have observed CVE-2026-20805 being used in a multi-stage attack chain:</p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="timeline-date">Stage 1: Initial Access</span>
+                    <span class="timeline-event">Attacker delivers malicious document or tricks user into visiting
+                        weaponized website</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">Stage 2: Memory Leak (CVE-2026-20805)</span>
+                    <span class="timeline-event">Vulnerability exploited to leak kernel memory addresses, defeating
+                        ASLR</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">Stage 3: Privilege Escalation</span>
+                    <span class="timeline-event">Leaked addresses used to precisely target a kernel vulnerability for
+                        SYSTEM privileges</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">Stage 4: Persistence</span>
+                    <span class="timeline-event">Attacker establishes persistent access, deploys malware or
+                        ransomware</span>
+                </div>
+            </div>
+
+            <h3>Who is Exploiting CVE-2026-20805?</h3>
+
+            <p>Microsoft has not publicly attributed the exploitation to a specific threat actor, but intelligence
+                sources suggest the vulnerability is being used by both state-sponsored groups and financially motivated
+                attackers. The broad utility of ASLR bypass techniques makes this vulnerability valuable to virtually
+                any advanced threat actor.</p>
+
+            <p>What's particularly concerning is the speed of exploitation. The vulnerability was being exploited before
+                the patch was released (hence "zero-day"), indicating either:</p>
+
+            <ul>
+                <li>Independent discovery by threat actors</li>
+                <li>Possible leak of vulnerability details</li>
+                <li>Sophisticated research capabilities of the attacking group</li>
+            </ul>
+
+            <h2><i class="fas fa-shield-virus"></i> The Other Zero-Days</h2>
+
+            <p>While CVE-2026-20805 gets the headlines for active exploitation, Microsoft patched two additional
+                zero-day vulnerabilities that were publicly disclosed before the patch:</p>
+
+            <h3>CVE-2023-31096: Agere Soft Modem Driver Privilege Escalation</h3>
+
+            <table>
+                <tr>
+                    <th>Property</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td>CVE ID</td>
+                    <td><code>CVE-2023-31096</code></td>
+                </tr>
+                <tr>
+                    <td>Type</td>
+                    <td>Elevation of Privilege</td>
+                </tr>
+                <tr>
+                    <td>Component</td>
+                    <td>Windows Agere Soft Modem Driver (agrsm64.sys / agrsm.sys)</td>
+                </tr>
+                <tr>
+                    <td>Resolution</td>
+                    <td>Affected drivers removed from Windows</td>
+                </tr>
+            </table>
+
+            <p>This is an interesting case—the CVE was originally assigned by MITRE back in 2023, but it took until 2026
+                for Microsoft to address it. The delay is due to the affected drivers being third-party components
+                (LSI/Agere) that were bundled with Windows. Microsoft's resolution is definitive: they've simply removed
+                the vulnerable drivers from the operating system entirely.</p>
+
+            <h3>CVE-2026-21265: Secure Boot Security Feature Bypass</h3>
+
+            <table>
+                <tr>
+                    <th>Property</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td>CVE ID</td>
+                    <td><code>CVE-2026-21265</code></td>
+                </tr>
+                <tr>
+                    <td>CVSS Score</td>
+                    <td>6.4 (Medium)</td>
+                </tr>
+                <tr>
+                    <td>Type</td>
+                    <td>Security Feature Bypass</td>
+                </tr>
+                <tr>
+                    <td>Attack Vector</td>
+                    <td>Local, requires high privileges</td>
+                </tr>
+            </table>
+
+            <p>CVE-2026-21265 is a Secure Boot bypass that could allow an authenticated attacker with high privileges to
+                circumvent security features through weaknesses in the certificate update mechanism. While it requires
+                local access and elevated privileges, Secure Boot bypasses are particularly valuable for attackers
+                seeking to establish persistent, boot-level malware that survives system reinstallation.</p>
+
+            <div class="info-box">
+                <strong><i class="fas fa-key"></i> Key Takeaway:</strong> Secure Boot vulnerabilities are rare but
+                impactful. If you're running environments where firmware integrity is critical (financial systems,
+                critical infrastructure), prioritize this patch even though it's not rated critical.
+            </div>
+
+            <h2><i class="fas fa-bomb"></i> Critical Vulnerabilities: The Remote Code Execution Threats</h2>
+
+            <p>Microsoft rated eight vulnerabilities as Critical in this release. Here are the ones security teams
+                should focus on:</p>
+
+            <h3>Microsoft Office RCE Vulnerabilities</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>CVE ID</th>
+                        <th>Component</th>
+                        <th>CVSS</th>
+                        <th>Preview Pane?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>CVE-2026-20944</code></td>
+                        <td>Microsoft Word</td>
+                        <td><span class="severity-badge severity-critical">8.4</span></td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td><code>CVE-2026-20955</code></td>
+                        <td>Microsoft Excel</td>
+                        <td><span class="severity-badge severity-high">7.8</span></td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td><code>CVE-2026-20957</code></td>
+                        <td>Microsoft Excel</td>
+                        <td><span class="severity-badge severity-high">7.8</span></td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td><code>CVE-2026-20952</code></td>
+                        <td>Microsoft Office</td>
+                        <td><span class="severity-badge severity-critical">Critical</span></td>
+                        <td><strong>Yes!</strong></td>
+                    </tr>
+                    <tr>
+                        <td><code>CVE-2026-20953</code></td>
+                        <td>Microsoft Office</td>
+                        <td><span class="severity-badge severity-critical">Critical</span></td>
+                        <td><strong>Yes!</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>The most dangerous of these are CVE-2026-20952 and CVE-2026-20953. These Office vulnerabilities can be
+                triggered through Outlook's Preview Pane—meaning a user doesn't even need to open the malicious
+                attachment. Simply selecting the email in Outlook is enough to trigger exploitation.</p>
+
+            <div class="warning-box">
+                <strong><i class="fas fa-exclamation-triangle"></i> Critical Risk:</strong> CVE-2026-20952 and
+                CVE-2026-20953 can be exploited through Outlook Preview Pane. Disable the Preview Pane immediately as a
+                temporary mitigation until patches are deployed.
+            </div>
+
+            <h3>Windows LSASS Remote Code Execution</h3>
+
+            <table>
+                <tr>
+                    <th>CVE ID</th>
+                    <td><code>CVE-2026-20854</code></td>
+                </tr>
+                <tr>
+                    <th>Component</th>
+                    <td>Windows Local Security Authority Subsystem Service (LSASS)</td>
+                </tr>
+                <tr>
+                    <th>CVSS Score</th>
+                    <td><span class="severity-badge severity-high">7.5</span></td>
+                </tr>
+                <tr>
+                    <th>Attack Vector</th>
+                    <td>Network</td>
+                </tr>
+            </table>
+
+            <p>LSASS is the heart of Windows authentication. It handles login validation, password changes, and security
+                token creation. A remote code execution vulnerability in LSASS is particularly dangerous because:</p>
+
+            <ul>
+                <li>LSASS runs with SYSTEM privileges—the highest privilege level in Windows</li>
+                <li>Successful exploitation gives attackers complete control over the target</li>
+                <li>LSASS is network-accessible in domain environments</li>
+                <li>Domain controllers running LSASS are high-value targets</li>
+            </ul>
+
+            <h3>Windows NTFS Heap Buffer Overflow</h3>
+
+            <p>CVE-2026-20840 and CVE-2026-20922 are heap-based buffer overflow vulnerabilities in Windows NTFS, the
+                primary filesystem for Windows. Both have a CVSS score of 7.8 and enable RCE when processing specially
+                crafted disk images or mounted volumes.</p>
+
+            <p>Attack scenarios include:</p>
+
+            <ul>
+                <li>User mounts a malicious USB drive</li>
+                <li>User extracts a malicious ISO or VHD file</li>
+                <li>Attacker tricks user into mounting a network share containing exploit</li>
+            </ul>
+
+            <h2><i class="fas fa-chart-bar"></i> Breakdown by Category</h2>
+
+            <p>Let's look at the full distribution of vulnerabilities in this Patch Tuesday:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Count</th>
+                        <th>Key Components</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Elevation of Privilege</td>
+                        <td><strong>47</strong></td>
+                        <td>Windows Kernel, DWM, VBS Enclave, RRAS</td>
+                    </tr>
+                    <tr>
+                        <td>Remote Code Execution</td>
+                        <td><strong>28</strong></td>
+                        <td>Office, LSASS, NTFS, OLE</td>
+                    </tr>
+                    <tr>
+                        <td>Information Disclosure</td>
+                        <td><strong>17</strong></td>
+                        <td>DWM (the zero-day), Windows Kernel</td>
+                    </tr>
+                    <tr>
+                        <td>Denial of Service</td>
+                        <td><strong>12</strong></td>
+                        <td>Various Windows services</td>
+                    </tr>
+                    <tr>
+                        <td>Security Feature Bypass</td>
+                        <td><strong>8</strong></td>
+                        <td>Secure Boot, Windows Security</td>
+                    </tr>
+                    <tr>
+                        <td>Spoofing</td>
+                        <td><strong>2</strong></td>
+                        <td>Windows components</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>The high proportion of Elevation of Privilege vulnerabilities (47 out of 114) reflects the security
+                research community's focus on local privilege escalation—a critical link in attack chains that convert
+                initial access into full system compromise.</p>
+
+            <h2><i class="fas fa-history"></i> Timeline of Events</h2>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="timeline-date">Before January 14, 2026</span>
+                    <span class="timeline-event">CVE-2026-20805 exploitation detected in the wild; CVE-2023-31096 and
+                        CVE-2026-21265 publicly disclosed</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">January 14, 2026</span>
+                    <span class="timeline-event">Microsoft releases January 2026 Patch Tuesday with 114 fixes</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">January 14, 2026</span>
+                    <span class="timeline-event">CISA adds CVE-2026-20805 to Known Exploited Vulnerabilities (KEV)
+                        catalog</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">February 3, 2026</span>
+                    <span class="timeline-event">CISA deadline for federal agencies to remediate CVE-2026-20805</span>
+                </div>
+            </div>
+
+            <h2><i class="fas fa-balance-scale"></i> Comparison to Previous Patch Tuesdays</h2>
+
+            <p>How does January 2026 compare to recent Patch Tuesdays?</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Month</th>
+                        <th>Total CVEs</th>
+                        <th>Critical</th>
+                        <th>Zero-Days</th>
+                        <th>Actively Exploited</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>January 2026</strong></td>
+                        <td><strong>114</strong></td>
+                        <td><strong>8</strong></td>
+                        <td><strong>3</strong></td>
+                        <td><strong>1</strong></td>
+                    </tr>
+                    <tr>
+                        <td>December 2025</td>
+                        <td>72</td>
+                        <td>5</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>November 2025</td>
+                        <td>91</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>October 2025</td>
+                        <td>103</td>
+                        <td>7</td>
+                        <td>2</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>January 2025</td>
+                        <td>98</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>January 2026 represents a <strong>58% increase</strong> in patched vulnerabilities compared to December
+                2025, making it one of the largest Patch Tuesdays in recent memory. The three zero-days also tie for the
+                most zero-days patched in a single month over the past year.</p>
+
+            <h2><i class="fas fa-shield-alt"></i> Remediation and Mitigation Strategies</h2>
+
+            <h3>Immediate Actions (Within 24-48 Hours)</h3>
+
+            <div class="success-box">
+                <strong><i class="fas fa-shield-alt"></i> Priority 1 - Do Now:</strong>
+                <ul>
+                    <li><strong>Patch CVE-2026-20805</strong> on all Windows endpoints immediately—it's actively
+                        exploited</li>
+                    <li><strong>Disable Outlook Preview Pane</strong> to mitigate CVE-2026-20952/20953 until patches are
+                        deployed</li>
+                    <li><strong>Prioritize Domain Controllers</strong> for the LSASS vulnerability (CVE-2026-20854)</li>
+                    <li><strong>Block untrusted USB devices</strong> to mitigate NTFS vulnerabilities while patching
+                    </li>
+                </ul>
+            </div>
+
+            <h3>Standard Patching Timeline</h3>
+
+            <ul>
+                <li><strong>Critical/Actively Exploited:</strong> 24-48 hours</li>
+                <li><strong>Critical RCE:</strong> 7 days</li>
+                <li><strong>High Severity:</strong> 14 days</li>
+                <li><strong>Medium/Low:</strong> 30 days (standard patch cycle)</li>
+            </ul>
+
+            <h3>Detection and Hunting</h3>
+
+            <p>While patching, security teams should hunt for signs of exploitation:</p>
+
+            <ul>
+                <li><strong>CVE-2026-20805:</strong> Monitor for unusual DWM.exe behavior, unexpected memory reads, or
+                    process injection attempts targeting dwm.exe</li>
+                <li><strong>Office exploits:</strong> Watch for suspicious Office process spawning child processes
+                    (cmd.exe, powershell.exe, mshta.exe)</li>
+                <li><strong>LSASS attacks:</strong> Enable Credential Guard if not already active; monitor LSASS for
+                    unusual network connections</li>
+            </ul>
+
+            <h2><i class="fas fa-building"></i> Impact on Different Industries</h2>
+
+            <h3>Healthcare</h3>
+            <p>Healthcare organizations should prioritize patching immediately. With the ransomware epidemic continuing
+                to target hospitals, the combination of Office RCE vulnerabilities and the actively exploited DWM bug
+                creates significant risk for clinical systems.</p>
+
+            <h3>Financial Services</h3>
+            <p>The Secure Boot bypass (CVE-2026-21265) is particularly relevant for financial institutions where boot
+                integrity is a compliance requirement. Domain controllers running LSASS are also high-value targets that
+                require immediate attention.</p>
+
+            <h3>Critical Infrastructure</h3>
+            <p>OT environments often have delayed patching cycles, but the active exploitation of CVE-2026-20805 means
+                infrastructure operators should accelerate testing and deployment. Network segmentation between IT and
+                OT remains critical.</p>
+
+            <h3>Education</h3>
+            <p>Educational institutions are frequent targets for ransomware. The Outlook Preview Pane vulnerabilities
+                are particularly dangerous in environments where users may click on anything. Disable Preview Pane
+                institution-wide as an immediate mitigation.</p>
+
+            <h2><i class="fas fa-forward"></i> Future Implications</h2>
+
+            <h3>The Exploit Chain Problem</h3>
+
+            <p>CVE-2026-20805 illustrates a growing trend: attackers use multiple vulnerabilities together. A "moderate"
+                information disclosure bug becomes critical when it enables ASLR bypass for a kernel exploit. Security
+                teams need to evaluate vulnerabilities not just by CVSS score, but by their utility in attack chains.
+            </p>
+
+            <h3>Zero-Day Velocity</h3>
+
+            <p>Three zero-days in one Patch Tuesday continues the trend of increased zero-day exploitation. Microsoft's
+                own data shows zero-day exploitation has increased 50% year-over-year. Organizations need:</p>
+
+            <ul>
+                <li>Faster patching capabilities</li>
+                <li>Better exploit detection (behavioral, not just signature-based)</li>
+                <li>Reduce attack surface through principles like least privilege</li>
+            </ul>
+
+            <h3>The Preview Pane Continues to Haunt</h3>
+
+            <p>Outlook's Preview Pane has been a source of zero-click vulnerabilities for years. CVE-2026-20952 and
+                CVE-2026-20953 add to this legacy. Organizations should seriously consider disabling the Preview Pane by
+                default—the convenience isn't worth the recurring security risk.</p>
+
+            <h2><i class="fas fa-clipboard-list"></i> Key Takeaways</h2>
+
+            <div class="info-box">
+                <strong><i class="fas fa-key"></i> Summary:</strong>
+                <ol>
+                    <li><strong>Patch CVE-2026-20805 immediately</strong>—it's actively exploited and added to CISA KEV
+                    </li>
+                    <li><strong>Disable Outlook Preview Pane</strong> to mitigate two critical Office RCE bugs</li>
+                    <li><strong>Prioritize Domain Controllers</strong> for the LSASS vulnerability</li>
+                    <li><strong>Block untrusted removable media</strong> while patching NTFS vulnerabilities</li>
+                    <li><strong>114 total vulnerabilities</strong> means thorough testing is essential—but don't let
+                        that delay critical patches</li>
+                    <li><strong>Hunt for exploitation</strong> of the actively exploited zero-day in your environment
+                    </li>
+                </ol>
+            </div>
+
+            <h2><i class="fas fa-link"></i> Related Resources</h2>
+
+            <ul>
+                <li><a href="/cve-tracker.html" style="color: var(--accent-cyan);">TheHGTech CVE Tracker</a> - Track all
+                    January 2026 CVEs</li>
+                <li><a href="/guides/cve-prioritization-patch-management.html" style="color: var(--accent-cyan);">CVE
+                        Prioritization and Patch Management Guide</a></li>
+                <li><a href="/guides/cisa-kev-tracker.html" style="color: var(--accent-cyan);">CISA KEV Tracker</a></li>
+                <li><a href="/guides/ransomware-response-playbook.html" style="color: var(--accent-cyan);">Ransomware
+                        Response Playbook</a></li>
+            </ul>
+
+            <div class="article-footer"
+                style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);">
+                <p><strong>Author:</strong> Harish G, TheHGTech Security Team</p>
+                <p><strong>Published:</strong> January 16, 2026</p>
+                <p><strong>Last Updated:</strong> January 16, 2026</p>
+            </div>
+        </article>
+
+        <!-- Interaction Bar -->
+        <div class="interaction-bar">
+            <div class="like-section">
+                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                    <i class="far fa-heart"></i> <span id="likeText">Like this article</span>
+                </button>
+            </div>
+            <div class="action-buttons">
+                <div class="share-buttons">
+                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <button onclick="copyLink()" class="share-btn" title="Copy Link">
+                        <i class="fas fa-link"></i>
+                    </button>
+                </div>
+                <div class="button-separator"></div>
+                <button onclick="window.print()" class="print-btn" title="Print Article">
+                    <i class="fas fa-print"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TheHGTech. All rights reserved.</p>
+    </footer>
+
+    <script src="/interaction-bar.js?v=20251207-0041"></script>
+</body>
+
+</html>

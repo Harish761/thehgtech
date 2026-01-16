@@ -69,6 +69,51 @@
   
   <!-- ========== ARTICLES - HIGH TRAFFIC POTENTIAL ========== -->
   
+  <!-- January 16, 2026 Articles -->
+  <url>
+    <loc>https://thehgtech.com/articles/microsoft-patch-tuesday-january-2026.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <lastmod>2026-01-16</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/microsoft-patch-tuesday-january-2026.png</image:loc>
+      <image:title>Microsoft Patch Tuesday January 2026: 114 CVEs and 3 Zero-Days</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/totalenergies-data-breach-2026.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <lastmod>2026-01-16</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/totalenergies-data-breach-2026.png</image:loc>
+      <image:title>TotalEnergies 183 Million Records Data Breach</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/llm-attack-reconnaissance-2026.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <lastmod>2026-01-16</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/llm-attack-reconnaissance-2026.png</image:loc>
+      <image:title>91,000 LLM Attack Sessions - AI Security Threat</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/microsoft-365-gov-breach-2026.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <lastmod>2026-01-16</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/microsoft-365-gov-breach-2026.png</image:loc>
+      <image:title>Microsoft 365 US Government Breach Cloud Espionage</image:title>
+    </image:image>
+  </url>
+
   <!-- January 12, 2026 Articles -->
   <url>
     <loc>https://thehgtech.com/articles/crowdstrike-sgnl-acquisition-identity-security-2026.html</loc>
