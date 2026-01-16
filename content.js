@@ -5,6 +5,108 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Jan 16 2026",
+            "headline": "750K Affected—Canadian Watchdog Data Breach Exposes Personal Info",
+            "title": "Data Breach at Canadian Investment Watchdog Impacts 750,000 Individuals",
+            "content": "A significant data breach at the Canadian Investment Regulatory Organization (CIRO) has compromised the personal information of 750,000 individuals associated with CIRO member firms. The breach exposed sensitive data of registered employees, raising concerns about identity theft and financial fraud. This incident underscores the increasing vulnerability of financial oversight bodies to cyberattacks. CIRO is currently investigating the breach and has urged affected individuals to monitor their financial accounts for suspicious activities. This breach highlights the critical need for enhanced cybersecurity measures in financial regulatory organizations.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/750000-impacted-by-data-breach-at-canadian-investment-watchdog/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 16 2026",
+            "headline": "AI-Powered Social Engineering Threatens Cybersecurity in 2026",
+            "title": "Social Engineering with AI Capabilities Poses New Security Challenges in 2026",
+            "content": "The integration of artificial intelligence into social engineering tactics is reshaping the cybersecurity landscape as 2026 begins. Cybercriminals are leveraging AI to craft more convincing phishing attacks and manipulate individuals into divulging sensitive information. This evolution in social engineering techniques poses a heightened risk to organizations and individuals alike, as AI-driven attacks can bypass traditional security measures. Security professionals are urged to enhance their awareness and training programs to counteract these sophisticated threats. As AI continues to evolve, staying ahead of these tactics will be crucial for maintaining cybersecurity defenses.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/cyber-insights-2026-social-engineering/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Phishing & Security Awareness",
+                    "url": "/guides/phishing-simulation-security-awareness.html",
+                    "icon": "fa-fish"
+                }
+            ]
+        },
+        {
+            "date": "Jan 16 2026",
+            "headline": "Windows 11 Update Freezes Outlook for POP Users",
+            "title": "Windows 11 January Update Causes Outlook Freezes for POP Email Users",
+            "content": "Microsoft has confirmed that the KB5074109 security update for Windows 11 is causing the Outlook desktop client to freeze for users with POP email accounts. This issue affects the classic Outlook application, leading to disruptions in email communications for affected users. Microsoft is actively working on a resolution and advises users to temporarily switch to web-based email clients or IMAP settings as a workaround. This incident highlights the challenges of maintaining software compatibility across updates and the need for comprehensive testing. Users should stay informed of upcoming patches to resolve this issue.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-11-update-causes-outlook-freezes-for-pop-users/",
+            "relatedResources": [
+                {
+                    "label": "Active Directory Security",
+                    "url": "/guides/active-directory-security-hardening.html",
+                    "icon": "fa-sitemap"
+                }
+            ]
+        },
+        {
+            "date": "Jan 16 2026",
+            "headline": "WhisperPair Flaw Exposes Millions of Bluetooth Devices",
+            "title": "WhisperPair Attack Exploits Bluetooth Vulnerability in Audio Accessories",
+            "content": "A newly discovered vulnerability, dubbed &quot;WhisperPair,&quot; is leaving millions of Bluetooth audio accessories vulnerable to hijacking. The flaw arises from improper implementations of Google&#x27;s Fast Pair protocol, allowing attackers to gain unauthorized access to affected devices. This vulnerability poses significant risks to user privacy and device security, as attackers could intercept audio communications or manipulate device settings. Manufacturers are urged to release firmware updates to patch the vulnerability and protect users. This incident serves as a reminder of the importance of securing wireless communication protocols.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/whisperpair-attack-leaves-millions-of-bluetooth-accessories-open-to-hijacking/",
+            "relatedResources": [
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Jan 16 2026",
+            "headline": "China&#x27;s Software Ban Spurs Cybersecurity Industry Reaction",
+            "title": "Cybersecurity Firms Respond to China&#x27;s Reported Software Ban",
+            "content": "Reports of China&#x27;s government implementing a software ban have elicited varied responses from the country&#x27;s cybersecurity industry. With over 5,000 cybersecurity companies operating in China, the top 20 firms are closely aligned with government directives. This move could impact international collaborations and the development of cybersecurity solutions within China. Industry experts are analyzing the potential ramifications on global cybersecurity dynamics and the future of software innovation. Organizations operating in China are advised to stay updated on regulatory changes and assess their compliance strategies accordingly.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/cybersecurity-firms-react-to-chinas-reported-software-ban/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 16 2026",
+            "headline": "Digital Footprints: A Privacy Concern at Your Doorstep",
+            "title": "Unseen Digital Footprints Pose Privacy Risks to Individuals",
+            "content": "In an era where digital footprints are increasingly accessible, individuals face growing privacy risks from publicly available personal information. Data such as names, addresses, phone numbers, and employment history can be exploited by malicious actors for identity theft and social engineering attacks. Despite efforts to secure personal data, this information often remains exposed on various online platforms. Individuals are encouraged to regularly audit their digital presence and utilize privacy tools to minimize exposure. This ongoing challenge highlights the need for robust privacy legislation and individual vigilance in protecting personal information.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/01/your-digital-footprint-can-lead-right.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 16 2026",
+            "headline": "Fortinet FortiSIEM Flaw Exploited in Active Attacks",
+            "title": "Critical Fortinet FortiSIEM Vulnerability Exploited by Hackers",
+            "content": "A critical vulnerability in Fortinet&#x27;s FortiSIEM security information and event management system is being actively exploited by attackers. The flaw, for which proof-of-concept exploit code is publicly available, allows unauthorized access to sensitive data and system controls. Organizations using FortiSIEM are at heightened risk of data breaches and should prioritize applying available patches to mitigate this threat. This incident underscores the importance of timely vulnerability management and patch application in maintaining robust cybersecurity defenses. Fortinet has released security updates to address the flaw and protect its users.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-now-exploiting-critical-fortinet-fortisiem-vulnerability-in-attacks/",
+            "relatedResources": [
+                {
+                    "label": "Fortinet Analysis",
+                    "url": "/articles/fortinet-fortigate-critical-exploit-2025.html",
+                    "icon": "fa-file-alt"
+                },
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                },
+                {
+                    "label": "SIEM Comparison: Splunk vs Elastic vs LogRhythm",
+                    "url": "/comparisons/splunk-vs-elastic-security-vs-logrhythm.html",
+                    "icon": "fa-chart-line"
+                }
+            ]
+        },
+        {
+            "date": "Jan 16 2026",
             "headline": "Gmail Users Can Now Change Email Addresses",
             "title": "Google Allows Users to Change Their @gmail.com Addresses",
             "content": "Google has announced a new feature allowing users to change their existing @gmail.com email addresses. This update provides flexibility for users wanting to update their email identifiers without creating a new account. The change is rolling out gradually, with Google emphasizing user convenience and account continuity. This move could significantly impact users who have long desired more personalized or professional email addresses. While the feature enhances usability, Google has not yet detailed the exact process or any potential limitations. Users are advised to check their Gmail settings for availability and further instructions.",
@@ -59,70 +161,6 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Jan 15 2026",
-            "headline": "Trump’s Cyber Chief Nominee to Review Cybercom-NSA Role",
-            "title": "Cyber Chief Nominee Pledges to Assess Cybercom-NSA Dual-Hat Role",
-            "content": "During a recent confirmation hearing, Trump&#x27;s nominee for cyber chief, Rudd, committed to evaluating the effectiveness of the dual-hat leadership role of Cyber Command (Cybercom) and the National Security Agency (NSA). This role has been a subject of debate, with discussions focusing on its impact on national cybersecurity strategy. Rudd emphasized an objective approach to the assessment, promising to address any concerns that arise. This review could lead to significant changes in how these critical defense entities operate and coordinate. Stakeholders in national security and cybersecurity should monitor developments closely.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://defensescoop.com/2026/01/15/gen-rudd-cybercom-nsa-dual-hat-cyber-force/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 15 2026",
-            "headline": "Gootloader Uses Massive ZIP Archives to Evade Detection",
-            "title": "Gootloader Malware Adopts 1,000-Part ZIP Archives for Stealthy Delivery",
-            "content": "The Gootloader malware has evolved its delivery mechanism by employing malformed ZIP archives that concatenate up to 1,000 parts, aiming to bypass traditional detection methods. Typically used for initial access in cyber attacks, this sophisticated technique demonstrates the malware&#x27;s adaptability and persistence. Security experts warn that this approach could significantly increase the difficulty of detecting and mitigating Gootloader infections. Organizations should update their security protocols and employ advanced threat detection solutions to counter such innovative tactics. This development underscores the continuous evolution of malware delivery methods.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/gootloader-now-uses-1-000-part-zip-archives-for-stealthy-delivery/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "MITRE ATT&CK Mapping",
-                    "url": "/guides/mitre-attack-mapping.html",
-                    "icon": "fa-map"
-                }
-            ]
-        },
-        {
-            "date": "Jan 15 2026",
-            "headline": "CISA Tool Vulnerability Fixed After Researcher Report",
-            "title": "CISA Fixes XSS Vulnerability in Secure-Software Buying Tool",
-            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has addressed a cross-site scripting (XSS) vulnerability in its secure-software buying tool, following a report by a security researcher. The flaw was identified in September and fixed by December, highlighting the importance of timely vulnerability management. This incident serves as a reminder of the potential risks even in tools designed to enhance security. Organizations using CISA&#x27;s tools should ensure they have applied the latest updates to maintain security integrity. This case underscores the critical role of responsible vulnerability disclosure and prompt remediation.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/cisa-secure-software-buying-tool-had-a-simple-xss-vulnerability-of-its-own/",
-            "relatedResources": [
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Jan 15 2026",
-            "headline": "AWS CodeBuild Misconfiguration Averted Potential Supply Chain Attack",
-            "title": "AWS CodeBuild Misconfiguration Could Have Led to Supply Chain Attack",
-            "content": "Researchers from Wiz have identified a misconfiguration in AWS CodeBuild that posed a risk of compromising numerous AWS GitHub code repositories and applications. This flaw in the continuous integration (CI) service could have facilitated a widespread software supply chain attack. While AWS has addressed the issue, the incident highlights the critical importance of securing CI/CD pipelines against potential vulnerabilities. Organizations utilizing AWS CodeBuild should review their security configurations to prevent similar exposures. This discovery emphasizes the ongoing need for vigilance in cloud service security management.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4117692/possible-software-supply-chain-attack-through-aws-codebuild-service-blunted-2.html",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Cloud Security Hardening",
-                    "url": "/guides/cloud-security-hardening.html",
-                    "icon": "fa-cloud"
-                }
-            ]
-        },
-        {
             "date": "Mar 23 2026",
             "headline": "RSAC 2026 Registration Opens—Secure Your Spot Now",
             "title": "RSA Conference 2026 Registration Opens for Cybersecurity Professionals",
@@ -142,6 +180,87 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Jan 16 2026",
+            "headline": "Musk vs. OpenAI—Billionaire&#x27;s Lawsuit Heads to Jury Trial",
+            "title": "Elon Musk&#x27;s Lawsuit Against OpenAI Set for April Jury Trial",
+            "content": "Elon Musk&#x27;s legal battle against OpenAI is advancing to a jury trial set for April 27, 2026. The lawsuit, initiated by Musk in February 2024, alleges misappropriation of proprietary technology and breach of fiduciary duty. Despite OpenAI&#x27;s attempts to dismiss the case, a federal judge has allowed it to proceed, highlighting the potential implications for corporate governance and intellectual property rights in AI development. This case underscores the ongoing tensions between tech giants over AI innovations and their commercial applications. Stakeholders in AI and tech industries should closely monitor the trial&#x27;s outcome for its possible impact on future collaborations and competitive dynamics.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/column/863319/highlights-musk-v-altman-openai",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 16 2026",
+            "headline": "Retail AI—Consumer Insights Drive New Commercial Strategies",
+            "title": "Retailers Leverage AI for Enhanced Consumer Insight Integration",
+            "content": "Retailers are increasingly embedding AI-driven consumer insights into their strategic decision-making processes. First Insight, a US-based analytics firm specializing in predictive consumer feedback, is at the forefront of this shift, advocating for AI&#x27;s role in real-time commercial decisions. This move aims to enhance customer engagement and optimize inventory and pricing strategies. By integrating conversational AI and analytics, retailers can better anticipate consumer needs and adjust their offerings accordingly. As the retail sector embraces these technologies, businesses must invest in robust data management and analytics capabilities to stay competitive.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/retailers-bring-conversational-ai-and-analytics-closer-to-the-user/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 16 2026",
+            "headline": "Plumery AI—Standardized Integration Transforms Banking Operations",
+            "title": "Plumery AI Launches Standardized Integration for Banking Sector",
+            "content": "Plumery AI has introduced a new technology designed to seamlessly integrate artificial intelligence into daily banking operations. This initiative addresses the challenge of moving beyond proofs of concept while ensuring compliance with governance and regulatory standards. The &quot;AI Framework&quot; by Plumery offers a standardized approach that enhances operational efficiency and security without compromising on compliance. Financial institutions adopting this framework can expect improved customer service and streamlined processes. This development marks a significant step in the operationalization of AI within the banking sector, promising to reshape how banks interact with and serve their clients.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/banks-operationalise-ai-as-plumery-ai-launches-standardised-integration/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 16 2026",
+            "headline": "Anthropic Expands in India—Ex-Microsoft Exec Takes Helm",
+            "title": "Irina Ghose Leads Anthropic&#x27;s Expansion as India Managing Director",
+            "content": "Anthropic has appointed Irina Ghose as its new managing director for India, spearheading the company&#x27;s expansion in the region. Ghose, who spent 24 years at Microsoft, brings a wealth of experience to her new role. Her leadership is expected to strengthen Anthropic&#x27;s presence in India&#x27;s burgeoning AI market, fostering innovation and collaboration. This strategic move aligns with Anthropic&#x27;s broader vision to enhance its global footprint and leverage India&#x27;s tech talent pool. Industry observers anticipate that Ghose&#x27;s appointment will accelerate the company&#x27;s growth and influence in the competitive AI landscape.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/15/anthropic-taps-former-microsoft-india-md-to-lead-bengaluru-expansion/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 16 2026",
+            "headline": "OpenAI, Microsoft Head to Court—Judge Rejects Dismissal",
+            "title": "Court Battle Looms as OpenAI, Microsoft Face Elon Musk&#x27;s Lawsuit",
+            "content": "A federal judge has denied requests from OpenAI and Microsoft to dismiss Elon Musk&#x27;s lawsuit, setting the stage for a courtroom showdown. The lawsuit, which centers on allegations of technology misappropriation, will proceed to trial, potentially reshaping industry norms around intellectual property and corporate partnerships. This legal conflict highlights the complex dynamics between leading tech companies and the challenges of navigating competitive interests in AI development. Professionals in the sector should be aware of the trial&#x27;s implications for future collaborations and the enforcement of intellectual property rights.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/15/silicon-valleys-messiest-breakout-is-definitely-headed-to-court/",
+            "relatedResources": [
+                {
+                    "label": "API Security Best Practices",
+                    "url": "/guides/api-security-best-practices.html",
+                    "icon": "fa-plug"
+                }
+            ]
+        },
+        {
+            "date": "Jan 15 2026",
+            "headline": "CIOs Shift Focus—Strategic AI Adoption in 2026",
+            "title": "CIOs Embrace Strategic AI Integration Amid Changing Tech Landscape",
+            "content": "In 2026, Chief Information Officers (CIOs) are adopting a more strategic approach to artificial intelligence, following a year of rapid deployment and high expectations. This pivot is not about slowing down AI adoption but about steering it more intelligently to maximize value and minimize risks. The focus is on integrating AI copilots and other advanced tools into business processes, enhancing decision-making and operational efficiency. As AI continues to evolve, CIOs must balance innovation with governance, ensuring that AI deployments align with organizational goals and regulatory requirements. This strategic shift is crucial for sustaining competitive advantage in an increasingly AI-driven world.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/ai-predictions-dominated-the-conversation-in-2025-cios-shift-gears-in-2026/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Jan 15 2026",
+            "headline": "Higgsfield&#x27;s Valuation Soars—AI Startup Hits $1.3B",
+            "title": "AI Video Startup Higgsfield Achieves $1.3B Valuation with Revenue Surge",
+            "content": "Higgsfield, an AI video startup founded by a former Snap executive, has reached a $1.3 billion valuation, driven by its impressive $200 million annual revenue run rate. The company recently reopened its Series A funding round, raising an additional $80 million. Higgsfield&#x27;s growth reflects the increasing demand for AI-driven video solutions and highlights the potential for innovative startups to rapidly scale in the competitive tech landscape. Investors and industry professionals should note Higgsfield&#x27;s strategic positioning and its impact on the broader AI video market.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/15/ai-video-startup-higgsfield-founded-by-ex-snap-exec-lands-1-3b-valuation/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 16 2026",
             "headline": "Symbolic.ai Partners with News Corp to Revolutionize Journalism",
             "title": "AI Journalism Startup Symbolic.ai Inks Deal with News Corp",
             "content": "Symbolic.ai, an AI journalism startup, has signed a strategic partnership with Rupert Murdoch’s News Corp to enhance editorial processes using its AI platform. The platform is designed to optimize research and streamline editorial workflows, potentially transforming how newsrooms operate. This collaboration aims to leverage AI to increase efficiency and accuracy in news production. Symbolic.ai’s tools can automate mundane tasks, allowing journalists to focus on investigative reporting and creative storytelling. News Corp&#x27;s adoption of AI reflects a growing trend in the media industry to integrate advanced technologies for competitive advantage.",
@@ -152,78 +271,6 @@ const websiteContent = {
                     "label": "Securing AI/ML Pipelines",
                     "url": "/guides/securing-ai-ml-pipelines.html",
                     "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 15 2026",
-            "headline": "Lawsuit Filed Against X for AI Image Manipulation",
-            "title": "Ashley St. Clair Sues X Over AI-Generated Bikini Image",
-            "content": "Ashley St. Clair, mother of one of Elon Musk&#x27;s children, has filed a lawsuit against X for the unauthorized use of AI to generate a bikini image of her. The incident highlights ongoing privacy concerns surrounding AI image manipulation technologies. St. Clair is among several individuals who have discovered AI-generated images depicting them in compromising attire without consent. This legal action underscores the potential for AI misuse and the need for stricter regulations. X&#x27;s platform faces scrutiny over its ability to control AI-generated content, raising questions about user safety and privacy.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/news/863097/ashley-st-clair-elon-musk-grok-undressing-lawsuit",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 15 2026",
-            "headline": "Thinking Machines Lab Loses Top Executives Amid AI Talent Exodus",
-            "title": "Executive Departures at Thinking Machines Highlight AI Lab Instability",
-            "content": "Thinking Machines Lab is experiencing significant turnover, with three top executives abruptly leaving the company. This development is part of a broader trend of high employee turnover in AI labs, driven by competitive pressures and lucrative offers from rival firms. The departures come amid reports of internal conflicts and strategic disagreements within the lab. Mira Murati, the lab&#x27;s leader, faces challenges in retaining talent as the AI industry continues to evolve rapidly. The revolving door phenomenon raises concerns about the stability and continuity of AI research initiatives.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/15/the-ai-lab-revolving-door-spins-ever-faster/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Jan 15 2026",
-            "headline": "OpenAI Poaches Talent from Thinking Machines for AI Expansion",
-            "title": "OpenAI Targets Thinking Machines Lab for Talent Acquisition",
-            "content": "OpenAI is reportedly recruiting researchers from Thinking Machines Lab, following the acquisition of two cofounders. This move is part of OpenAI&#x27;s strategy to bolster its research capabilities and accelerate AI development. The talent raid highlights the fierce competition among AI labs to attract top-tier researchers. OpenAI&#x27;s aggressive recruitment tactics are indicative of the high stakes in the AI industry as companies vie for leadership in innovation. The ongoing talent war underscores the importance of human capital in driving AI advancements and maintaining competitive edges.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/inside-openai-raid-on-thinking-machines-lab/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 15 2026",
-            "headline": "Taiwan Commits $250B to Boost US Semiconductor Production",
-            "title": "Taiwan Invests Heavily in US Semiconductor Manufacturing",
-            "content": "Taiwan has pledged a substantial $250 billion investment in US semiconductor manufacturing as part of a new trade agreement. This initiative aims to strengthen the semiconductor supply chain and reduce reliance on Chinese production. The investment will support the construction of new manufacturing facilities and the expansion of existing ones in the United States. This move is expected to create jobs and foster technological innovation in the semiconductor industry. The deal underscores Taiwan&#x27;s strategic commitment to deepening economic ties with the US amid global supply chain disruptions.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/15/taiwan-to-invest-250b-in-us-semiconductor-manufacturing/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 15 2026",
-            "headline": "Claude Code Update Adds User-Requested Features",
-            "title": "Anthropic Enhances Claude Code with Model Context Protocol Update",
-            "content": "Anthropic has updated its open-source standard, the Model Context Protocol (MCP), to enhance its AI programming tool, Claude Code. The MCP, initially released in 2024, allows AI models to connect with external tools in a structured format. This update introduces one of the most-requested features, improving the tool&#x27;s usability and functionality. Claude Code&#x27;s enhancements are expected to facilitate more efficient AI agentic programming and expand its application scope. The update reflects Anthropic&#x27;s commitment to addressing user feedback and advancing AI development tools.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/claude-code-just-got-updated-with-one-of-the-most-requested-user-features",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Jan 15 2026",
-            "headline": "Grok&#x27;s AI Image Restrictions Fall Short, Users Still at Risk",
-            "title": "Grok&#x27;s Incomplete Fix for AI-Generated Explicit Images",
-            "content": "Despite new restrictions, Grok&#x27;s AI platform on X continues to struggle with controlling the generation of explicit images. Recent tests reveal that the updates have resulted in inconsistent limitations, failing to fully resolve the issue. Users remain vulnerable to unauthorized image manipulation, raising concerns about the effectiveness of current safeguards. The situation highlights the challenges in moderating AI-generated content and the need for robust solutions. X&#x27;s ongoing efforts to address these issues are crucial for protecting user privacy and maintaining trust in AI technologies.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/elon-musks-grok-undressing-problem-isnt-fixed/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
                 }
             ]
         }
