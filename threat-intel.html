@@ -153,8 +153,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-    <!-- Chart.js -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js" defer></script>
+    <!-- Chart.js (with SRI for security) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"
+        integrity="sha384-kPPj/12sAJH8V1VqJb9z7pL6wQ6sQoJLapDBaYiSYHPPv8s8c0vNwgDPnzD0TxeE" crossorigin="anonymous"
+        defer></script>
 
     <!-- Dashboard Integration -->
     <link rel="stylesheet" href="threat-intel-tabs.css">
@@ -163,11 +165,14 @@
     <link rel="stylesheet" href="ransomware-modal.css">
     <link rel="stylesheet" href="ai-security-display.css">
 
-    <!-- Non-blocking FontAwesome -->
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style"
-        onload="this.onload=null;this.rel='stylesheet'">
+    <!-- Non-blocking FontAwesome (with SRI) -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer">
     </noscript>
 
     <link rel="stylesheet" href="header.css">
@@ -2910,7 +2915,9 @@
     </script>
 
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"
+        integrity="sha384-kPPj/12sAJH8V1VqJb9z7pL6wQ6sQoJLapDBaYiSYHPPv8s8c0vNwgDPnzD0TxeE"
+        crossorigin="anonymous"></script>
     <script src="threat-intel-history.js?v=20251128"></script>
     <script src="dashboard-data.js?v=20251128"></script>
     <script src="dashboard.js?v=20251216-fix"></script>

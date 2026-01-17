@@ -55,11 +55,31 @@
         Header set Cache-Control "max-age=14400, public"
     </FilesMatch>
     
-    # Security Headers
+    # ========== SECURITY HEADERS (Enterprise-Grade) ==========
+    
+    # Basic Security Headers
     Header always set X-Content-Type-Options "nosniff"
     Header always set X-Frame-Options "DENY"
     Header always set X-XSS-Protection "1; mode=block"
     Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    
+    # HSTS - Force HTTPS (1 year, include subdomains, preload-ready)
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+    
+    # Permissions Policy - Restrict powerful browser features
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=()"
+    
+    # Cross-Origin Policies
+    Header always set Cross-Origin-Opener-Policy "same-origin-allow-popups"
+    Header always set Cross-Origin-Resource-Policy "same-origin"
+    
+    # Content Security Policy (backup for browsers that support HTTP header over meta)
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://t.fullres.net https://cdn.carbonads.com https://static.cloudflareinsights.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.carbonads.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://srv.carbonads.net https://t.fullres.net https://cloudflareinsights.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;"
+    
+    # Prevent caching of sensitive pages
+    <FilesMatch "\.(json)$">
+        Header set X-Robots-Tag "noindex, nofollow"
+    </FilesMatch>
 </IfModule>
 
 # Enable Keep-Alive

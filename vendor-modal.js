@@ -153,6 +153,14 @@ async function openVendorModal(vendorName) {
     `;
 
 
+    // Security: HTML escape function to prevent XSS from external IOC data
+    function escapeHTML(str) {
+        if (!str) return '';
+        const div = document.createElement('div');
+        div.textContent = str;
+        return div.innerHTML;
+    }
+
     let html = cappingNotice + filterControls + exportButtons;
     data.iocs.forEach((ioc) => {
         // Format timestamp - use addedAt if available, otherwise timestamp
@@ -180,28 +188,32 @@ async function openVendorModal(vendorName) {
                     displayTime = iocDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
                 }
             } catch (e) {
-                displayTime = timeStr;
+                displayTime = escapeHTML(timeStr);
             }
         } else if (timeStr === 'just now') {
             displayTime = 'just now';
         }
 
-        // Store filter data as data attributes
-        const tagsStr = (ioc.tags || []).join(',');
-        const addedAtStr = ioc.addedAt || ioc.timestamp || '';
+        // Store filter data as data attributes (escaped for security)
+        const tagsStr = (ioc.tags || []).map(t => escapeHTML(t)).join(',');
+        const addedAtStr = escapeHTML(ioc.addedAt || ioc.timestamp || '');
+
+        // Escape all external data for XSS prevention
+        const safeIndicator = escapeHTML(ioc.indicator);
+        const safeType = escapeHTML(ioc.type);
 
         html += `<div class="modal-stat-item vendor-ioc-item" 
-            data-indicator="${ioc.indicator}" 
-            data-type="${ioc.type}"
+            data-indicator="${safeIndicator}" 
+            data-type="${safeType}"
             data-tags="${tagsStr}"
             data-added-at="${addedAtStr}"
             style="padding: 1rem; background: rgba(255, 255, 255, 0.02); border-radius: 8px; margin-bottom: 0.75rem; cursor: pointer; transition: all 0.2s ease; border-left: 3px solid var(--accent-cyan);"
             onmouseover="this.style.background='rgba(0, 217, 255, 0.1)'" 
             onmouseout="this.style.background='rgba(255, 255, 255, 0.02)'"
-            onclick="openIOCFromVendor('${vendorName}', '${ioc.indicator}')">
-            <div style="color: var(--text-primary); font-weight: 500; font-family: monospace; word-break: break-all; margin-bottom: 0.5rem;">${ioc.indicator}</div>
+            onclick="openIOCFromVendor('${escapeHTML(vendorName)}', '${safeIndicator}')">
+            <div style="color: var(--text-primary); font-weight: 500; font-family: monospace; word-break: break-all; margin-bottom: 0.5rem;">${safeIndicator}</div>
             <div style="color: var(--text-muted); font-size: 0.85rem;">
-                <span style="color: var(--accent-cyan);">Type:</span> ${ioc.type} | 
+                <span style="color: var(--accent-cyan);">Type:</span> ${safeType} | 
                 <span style="color: var(--accent-cyan);">Added:</span> ${displayTime}
                 ${tagsStr ? ` | <span style="color: var(--accent-cyan);">Tags:</span> ${tagsStr}` : ''}
             </div>

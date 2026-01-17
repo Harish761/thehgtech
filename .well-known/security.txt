@@ -1,0 +1,16 @@
+# TheHGTech Security Policy
+# RFC 9116 Standard - https://securitytxt.org/
+
+Contact: mailto:harish@thehgtech.com
+Preferred-Languages: en
+Canonical: https://thehgtech.com/.well-known/security.txt
+Expires: 2027-01-01T00:00:00.000Z
+
+# Security Acknowledgments
+Acknowledgments: https://thehgtech.com/security-acknowledgments.html
+
+# Policy
+Policy: https://thehgtech.com/security-policy.html
+
+# Hiring
+# Hiring: https://thehgtech.com/careers.html
