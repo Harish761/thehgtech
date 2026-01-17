@@ -5,20 +5,11 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Jan 16 2026",
-            "headline": "750K Affected—Canadian Watchdog Data Breach Exposes Personal Info",
-            "title": "Data Breach at Canadian Investment Watchdog Impacts 750,000 Individuals",
-            "content": "A significant data breach at the Canadian Investment Regulatory Organization (CIRO) has compromised the personal information of 750,000 individuals associated with CIRO member firms. The breach exposed sensitive data of registered employees, raising concerns about identity theft and financial fraud. This incident underscores the increasing vulnerability of financial oversight bodies to cyberattacks. CIRO is currently investigating the breach and has urged affected individuals to monitor their financial accounts for suspicious activities. This breach highlights the critical need for enhanced cybersecurity measures in financial regulatory organizations.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/750000-impacted-by-data-breach-at-canadian-investment-watchdog/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 16 2026",
-            "headline": "AI-Powered Social Engineering Threatens Cybersecurity in 2026",
-            "title": "Social Engineering with AI Capabilities Poses New Security Challenges in 2026",
-            "content": "The integration of artificial intelligence into social engineering tactics is reshaping the cybersecurity landscape as 2026 begins. Cybercriminals are leveraging AI to craft more convincing phishing attacks and manipulate individuals into divulging sensitive information. This evolution in social engineering techniques poses a heightened risk to organizations and individuals alike, as AI-driven attacks can bypass traditional security measures. Security professionals are urged to enhance their awareness and training programs to counteract these sophisticated threats. As AI continues to evolve, staying ahead of these tactics will be crucial for maintaining cybersecurity defenses.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/cyber-insights-2026-social-engineering/",
+            "headline": "ChatGPT Go Subscription—10x Messages for $8, Ads Included",
+            "title": "OpenAI Launches ChatGPT Go with Enhanced Messaging and Ads",
+            "content": "OpenAI has introduced ChatGPT Go, an $8 per month subscription that offers users ten times more messages than the free version, now available globally. This new tier includes advertisements, marking a shift in OpenAI’s monetization strategy. Despite the ads, OpenAI assures users that these will not affect the AI&#x27;s responses or the quality of interactions. The move aims to balance user affordability with operational costs, as OpenAI continues to expand its AI offerings. Users concerned about privacy and ad influence should monitor their settings and usage to ensure a seamless experience.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/chatgpt-go-subscription-rolls-out-worldwide-at-8-but-itll-show-you-ads/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
@@ -26,68 +17,49 @@ const websiteContent = {
                     "icon": "fa-skull-crossbones"
                 },
                 {
-                    "label": "Phishing & Security Awareness",
-                    "url": "/guides/phishing-simulation-security-awareness.html",
-                    "icon": "fa-fish"
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
                 }
             ]
         },
         {
             "date": "Jan 16 2026",
-            "headline": "Windows 11 Update Freezes Outlook for POP Users",
-            "title": "Windows 11 January Update Causes Outlook Freezes for POP Email Users",
-            "content": "Microsoft has confirmed that the KB5074109 security update for Windows 11 is causing the Outlook desktop client to freeze for users with POP email accounts. This issue affects the classic Outlook application, leading to disruptions in email communications for affected users. Microsoft is actively working on a resolution and advises users to temporarily switch to web-based email clients or IMAP settings as a workaround. This incident highlights the challenges of maintaining software compatibility across updates and the need for comprehensive testing. Users should stay informed of upcoming patches to resolve this issue.",
+            "headline": "ChatGPT Ads Incoming—OpenAI Promises Unbiased Answers",
+            "title": "OpenAI Confirms Upcoming Ads in ChatGPT, Ensures Answer Integrity",
+            "content": "OpenAI has announced that advertisements will soon be integrated into ChatGPT, though it promises that these ads will not compromise the integrity of the AI&#x27;s responses. This development follows the launch of the ChatGPT Go subscription, which includes ads as part of its service. OpenAI emphasizes that the AI’s core function—to provide accurate and unbiased information—remains unchanged despite the inclusion of ads. Users are advised to stay informed about these changes and adjust their usage preferences accordingly. The company aims to maintain transparency and user trust as it explores new revenue models.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-11-update-causes-outlook-freezes-for-pop-users/",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-its-new-chatgpt-ads-wont-influence-answers/",
             "relatedResources": [
                 {
-                    "label": "Active Directory Security",
-                    "url": "/guides/active-directory-security-hardening.html",
-                    "icon": "fa-sitemap"
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
                 }
             ]
         },
         {
             "date": "Jan 16 2026",
-            "headline": "WhisperPair Flaw Exposes Millions of Bluetooth Devices",
-            "title": "WhisperPair Attack Exploits Bluetooth Vulnerability in Audio Accessories",
-            "content": "A newly discovered vulnerability, dubbed &quot;WhisperPair,&quot; is leaving millions of Bluetooth audio accessories vulnerable to hijacking. The flaw arises from improper implementations of Google&#x27;s Fast Pair protocol, allowing attackers to gain unauthorized access to affected devices. This vulnerability poses significant risks to user privacy and device security, as attackers could intercept audio communications or manipulate device settings. Manufacturers are urged to release firmware updates to patch the vulnerability and protect users. This incident serves as a reminder of the importance of securing wireless communication protocols.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/whisperpair-attack-leaves-millions-of-bluetooth-accessories-open-to-hijacking/",
+            "headline": "Jordanian Cybercriminal Sold Network Access to FBI Agent",
+            "title": "Jordanian National Pleads Guilty to Selling Network Access to Undercover FBI",
+            "content": "A Jordanian national has pleaded guilty to charges of selling unauthorized access to over 50 company networks, unaware that one of his buyers was an undercover FBI agent. The 40-year-old was identified through an email address used both for cybercrime activities and a U.S. visa application. This case highlights the ongoing threat of insider access sales on cybercrime forums. Companies are urged to enhance their network security and monitoring to prevent unauthorized access. This incident underscores the need for vigilance in identity verification and cybersecurity protocols.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/jordanian-national-access-broker-pleads-guilty/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 16 2026",
+            "headline": "Fortinet Faces Exploitation of Critical FortiSIEM Flaw",
+            "title": "Fortinet&#x27;s FortiSIEM Flaw CVE-2025-64155 Exploited in Active Attacks",
+            "content": "Fortinet is grappling with a critical command injection vulnerability, CVE-2025-64155, in its FortiSIEM product, which has come under active exploitation. The flaw was disclosed earlier this week and has since been targeted from various IP addresses. Security professionals using FortiSIEM are urged to apply patches immediately to mitigate potential breaches. This incident adds to Fortinet&#x27;s recent challenges with vulnerabilities and highlights the importance of timely patch management. Organizations should review their security postures and ensure all systems are up-to-date to prevent exploitation.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/fortinet-critical-fortisiem-flaw-exploited",
             "relatedResources": [
                 {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "label": "CVE Tracker",
+                    "url": "/cve-tracker.html",
                     "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Jan 16 2026",
-            "headline": "China&#x27;s Software Ban Spurs Cybersecurity Industry Reaction",
-            "title": "Cybersecurity Firms Respond to China&#x27;s Reported Software Ban",
-            "content": "Reports of China&#x27;s government implementing a software ban have elicited varied responses from the country&#x27;s cybersecurity industry. With over 5,000 cybersecurity companies operating in China, the top 20 firms are closely aligned with government directives. This move could impact international collaborations and the development of cybersecurity solutions within China. Industry experts are analyzing the potential ramifications on global cybersecurity dynamics and the future of software innovation. Organizations operating in China are advised to stay updated on regulatory changes and assess their compliance strategies accordingly.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/cybersecurity-firms-react-to-chinas-reported-software-ban/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 16 2026",
-            "headline": "Digital Footprints: A Privacy Concern at Your Doorstep",
-            "title": "Unseen Digital Footprints Pose Privacy Risks to Individuals",
-            "content": "In an era where digital footprints are increasingly accessible, individuals face growing privacy risks from publicly available personal information. Data such as names, addresses, phone numbers, and employment history can be exploited by malicious actors for identity theft and social engineering attacks. Despite efforts to secure personal data, this information often remains exposed on various online platforms. Individuals are encouraged to regularly audit their digital presence and utilize privacy tools to minimize exposure. This ongoing challenge highlights the need for robust privacy legislation and individual vigilance in protecting personal information.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/01/your-digital-footprint-can-lead-right.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 16 2026",
-            "headline": "Fortinet FortiSIEM Flaw Exploited in Active Attacks",
-            "title": "Critical Fortinet FortiSIEM Vulnerability Exploited by Hackers",
-            "content": "A critical vulnerability in Fortinet&#x27;s FortiSIEM security information and event management system is being actively exploited by attackers. The flaw, for which proof-of-concept exploit code is publicly available, allows unauthorized access to sensitive data and system controls. Organizations using FortiSIEM are at heightened risk of data breaches and should prioritize applying available patches to mitigate this threat. This incident underscores the importance of timely vulnerability management and patch application in maintaining robust cybersecurity defenses. Fortinet has released security updates to address the flaw and protect its users.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-now-exploiting-critical-fortinet-fortisiem-vulnerability-in-attacks/",
-            "relatedResources": [
+                },
                 {
                     "label": "Fortinet Analysis",
                     "url": "/articles/fortinet-fortigate-critical-exploit-2025.html",
@@ -97,36 +69,51 @@ const websiteContent = {
                     "label": "CVE Prioritization Guide",
                     "url": "/guides/cve-prioritization-patch-management.html",
                     "icon": "fa-bug"
-                },
-                {
-                    "label": "SIEM Comparison: Splunk vs Elastic vs LogRhythm",
-                    "url": "/comparisons/splunk-vs-elastic-security-vs-logrhythm.html",
-                    "icon": "fa-chart-line"
                 }
             ]
         },
         {
             "date": "Jan 16 2026",
-            "headline": "Gmail Users Can Now Change Email Addresses",
-            "title": "Google Allows Users to Change Their @gmail.com Addresses",
-            "content": "Google has announced a new feature allowing users to change their existing @gmail.com email addresses. This update provides flexibility for users wanting to update their email identifiers without creating a new account. The change is rolling out gradually, with Google emphasizing user convenience and account continuity. This move could significantly impact users who have long desired more personalized or professional email addresses. While the feature enhances usability, Google has not yet detailed the exact process or any potential limitations. Users are advised to check their Gmail settings for availability and further instructions.",
+            "headline": "Researchers Hijack StealC Malware Control Panels via XSS",
+            "title": "StealC Hackers Compromised by Researchers Exploiting XSS Flaw",
+            "content": "Security researchers have successfully compromised the control panels of the StealC info-stealing malware by exploiting a cross-site scripting (XSS) vulnerability. This flaw allowed researchers to access active sessions and gather intelligence on the attackers&#x27; infrastructure. The breach provides valuable insights into the malware operators&#x27; tactics and techniques. Organizations using StealC or similar malware should enhance their security measures to detect and prevent such vulnerabilities. This incident demonstrates the potential for turning the tables on cybercriminals through proactive security research.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/technology/google-now-lets-you-change-your-gmailcom-address-rolling-out/",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/stealc-hackers-hacked-as-researchers-hijack-malware-control-panels/",
+            "relatedResources": [
+                {
+                    "label": "MITRE ATT&CK Mapping",
+                    "url": "/guides/mitre-attack-mapping.html",
+                    "icon": "fa-map"
+                }
+            ]
+        },
+        {
+            "date": "Jan 16 2026",
+            "headline": "Black Basta Leader Added to Interpol&#x27;s Red Notice List",
+            "title": "Black Basta Ransomware Leader Identified and Pursued by Interpol",
+            "content": "The leader of the notorious Black Basta ransomware gang has been identified by law enforcement agencies in Ukraine and Germany and is now on Interpol&#x27;s Red Notice list. This development marks a significant step in international efforts to combat ransomware operations. Authorities are intensifying their pursuit of this individual, who is believed to be behind numerous high-profile attacks globally. Organizations are advised to bolster their cybersecurity defenses against ransomware threats and stay informed about ongoing law enforcement actions. This case underscores the importance of international collaboration in tackling cybercrime.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/black-basta-boss-makes-it-onto-interpols-red-notice-list/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
                     "url": "/ransomware-tracker.html",
                     "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Ransomware Response Playbook",
+                    "url": "/guides/ransomware-response-playbook.html",
+                    "icon": "fa-biohazard"
                 }
             ]
         },
         {
             "date": "Jan 16 2026",
-            "headline": "Palo Alto Networks Fixes High-Severity Firewall Flaw",
-            "title": "Palo Alto Networks Patches PAN-OS to Mitigate DoS Vulnerability CVE-2026-0227",
-            "content": "Palo Alto Networks has released patches addressing a high-severity denial-of-service (DoS) vulnerability found in its PAN-OS firewall platform. Identified as CVE-2026-0227, this flaw carries a CVSS score of 7.7, indicating a significant risk to affected systems. The vulnerability could allow attackers to disrupt services, impacting organizations relying on these firewalls for network security. This patch is critical for maintaining operational integrity and preventing potential service interruptions. Customers are urged to apply the updates immediately to mitigate the risk of exploitation.",
+            "headline": "Cisco Patches Critical Zero-Day in Email Gateways After 7 Weeks",
+            "title": "Cisco Addresses CVE-2025-20393 Zero-Day in Secure Email Gateway Products",
+            "content": "Cisco has finally patched a critical zero-day vulnerability, CVE-2025-20393, affecting its Secure Email Gateway products, after a seven-week exposure period. The flaw, present in Cisco&#x27;s AsyncOS Software, posed significant risks of unauthorized access and data breaches. Customers using these products are strongly advised to apply the latest updates to secure their systems. This delay in patching highlights ongoing challenges in timely vulnerability management and the need for vigilant security practices. Organizations should prioritize patch deployment to protect against potential exploits.",
             "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4117730/palo-alto-networks-patches-firewalls-after-discovery-of-a-new-denial-of-service-flaw-2.html",
+            "sourceUrl": "https://www.csoonline.com/article/4118159/cisco-finally-patches-seven-week-old-zero-day-flaw-in-secure-email-gateway-products-2.html",
             "relatedResources": [
                 {
                     "label": "CVE Tracker",
@@ -137,26 +124,6 @@ const websiteContent = {
                     "label": "CVE Prioritization Guide",
                     "url": "/guides/cve-prioritization-patch-management.html",
                     "icon": "fa-bug"
-                },
-                {
-                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
-                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
-                    "icon": "fa-shield-virus"
-                }
-            ]
-        },
-        {
-            "date": "Jan 16 2026",
-            "headline": "ChatGPT Enhances Chat History Search for Subscribers",
-            "title": "OpenAI Upgrades ChatGPT with Advanced Chat History Search for Paid Users",
-            "content": "OpenAI has introduced a significant upgrade to ChatGPT, enhancing its ability to search and remember past conversations. This new feature is available exclusively to Plus and Pro subscribers, offering them improved interaction history management. The upgrade aims to make ChatGPT more reliable and efficient in retrieving past chats, thus enhancing user experience. This development reflects OpenAI&#x27;s ongoing commitment to refining AI capabilities, though it may leave free-tier users wanting. Subscribers should explore these new functionalities to maximize their productivity and engagement with ChatGPT.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/chatgpt-is-now-more-reliable-at-finding-and-remembering-your-past-chat/",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
                 }
             ]
         },
@@ -179,54 +146,12 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Jan 16 2026",
-            "headline": "Musk vs. OpenAI—Billionaire&#x27;s Lawsuit Heads to Jury Trial",
-            "title": "Elon Musk&#x27;s Lawsuit Against OpenAI Set for April Jury Trial",
-            "content": "Elon Musk&#x27;s legal battle against OpenAI is advancing to a jury trial set for April 27, 2026. The lawsuit, initiated by Musk in February 2024, alleges misappropriation of proprietary technology and breach of fiduciary duty. Despite OpenAI&#x27;s attempts to dismiss the case, a federal judge has allowed it to proceed, highlighting the potential implications for corporate governance and intellectual property rights in AI development. This case underscores the ongoing tensions between tech giants over AI innovations and their commercial applications. Stakeholders in AI and tech industries should closely monitor the trial&#x27;s outcome for its possible impact on future collaborations and competitive dynamics.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/column/863319/highlights-musk-v-altman-openai",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 16 2026",
-            "headline": "Retail AI—Consumer Insights Drive New Commercial Strategies",
-            "title": "Retailers Leverage AI for Enhanced Consumer Insight Integration",
-            "content": "Retailers are increasingly embedding AI-driven consumer insights into their strategic decision-making processes. First Insight, a US-based analytics firm specializing in predictive consumer feedback, is at the forefront of this shift, advocating for AI&#x27;s role in real-time commercial decisions. This move aims to enhance customer engagement and optimize inventory and pricing strategies. By integrating conversational AI and analytics, retailers can better anticipate consumer needs and adjust their offerings accordingly. As the retail sector embraces these technologies, businesses must invest in robust data management and analytics capabilities to stay competitive.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/retailers-bring-conversational-ai-and-analytics-closer-to-the-user/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 16 2026",
-            "headline": "Plumery AI—Standardized Integration Transforms Banking Operations",
-            "title": "Plumery AI Launches Standardized Integration for Banking Sector",
-            "content": "Plumery AI has introduced a new technology designed to seamlessly integrate artificial intelligence into daily banking operations. This initiative addresses the challenge of moving beyond proofs of concept while ensuring compliance with governance and regulatory standards. The &quot;AI Framework&quot; by Plumery offers a standardized approach that enhances operational efficiency and security without compromising on compliance. Financial institutions adopting this framework can expect improved customer service and streamlined processes. This development marks a significant step in the operationalization of AI within the banking sector, promising to reshape how banks interact with and serve their clients.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/banks-operationalise-ai-as-plumery-ai-launches-standardised-integration/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 16 2026",
-            "headline": "Anthropic Expands in India—Ex-Microsoft Exec Takes Helm",
-            "title": "Irina Ghose Leads Anthropic&#x27;s Expansion as India Managing Director",
-            "content": "Anthropic has appointed Irina Ghose as its new managing director for India, spearheading the company&#x27;s expansion in the region. Ghose, who spent 24 years at Microsoft, brings a wealth of experience to her new role. Her leadership is expected to strengthen Anthropic&#x27;s presence in India&#x27;s burgeoning AI market, fostering innovation and collaboration. This strategic move aligns with Anthropic&#x27;s broader vision to enhance its global footprint and leverage India&#x27;s tech talent pool. Industry observers anticipate that Ghose&#x27;s appointment will accelerate the company&#x27;s growth and influence in the competitive AI landscape.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/15/anthropic-taps-former-microsoft-india-md-to-lead-bengaluru-expansion/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 16 2026",
-            "headline": "OpenAI, Microsoft Head to Court—Judge Rejects Dismissal",
-            "title": "Court Battle Looms as OpenAI, Microsoft Face Elon Musk&#x27;s Lawsuit",
-            "content": "A federal judge has denied requests from OpenAI and Microsoft to dismiss Elon Musk&#x27;s lawsuit, setting the stage for a courtroom showdown. The lawsuit, which centers on allegations of technology misappropriation, will proceed to trial, potentially reshaping industry norms around intellectual property and corporate partnerships. This legal conflict highlights the complex dynamics between leading tech companies and the challenges of navigating competitive interests in AI development. Professionals in the sector should be aware of the trial&#x27;s implications for future collaborations and the enforcement of intellectual property rights.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/15/silicon-valleys-messiest-breakout-is-definitely-headed-to-court/",
+            "date": "Jan 17 2026",
+            "headline": "Thinking Machines Exec Fired Amid Misconduct Allegations",
+            "title": "Thinking Machines Cofounder Barret Zoph Terminated for Serious Misconduct",
+            "content": "Thinking Machines, co-founded by Mira Murati, has terminated Barret Zoph following allegations of serious misconduct linked to an inappropriate office relationship. The startup, known for its cutting-edge AI developments, is now dealing with the fallout of these revelations. This incident highlights the ongoing challenges tech companies face in maintaining ethical standards amidst rapid growth. Thinking Machines is conducting an internal review to prevent future occurrences and restore trust among its stakeholders. Industry observers are watching closely to see how the company manages this reputational risk and its impact on their operations.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/thinking-machines-lab-cofounder-office-relationship-firing-openai/",
             "relatedResources": [
                 {
                     "label": "API Security Best Practices",
@@ -236,12 +161,12 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Jan 15 2026",
-            "headline": "CIOs Shift Focus—Strategic AI Adoption in 2026",
-            "title": "CIOs Embrace Strategic AI Integration Amid Changing Tech Landscape",
-            "content": "In 2026, Chief Information Officers (CIOs) are adopting a more strategic approach to artificial intelligence, following a year of rapid deployment and high expectations. This pivot is not about slowing down AI adoption but about steering it more intelligently to maximize value and minimize risks. The focus is on integrating AI copilots and other advanced tools into business processes, enhancing decision-making and operational efficiency. As AI continues to evolve, CIOs must balance innovation with governance, ensuring that AI deployments align with organizational goals and regulatory requirements. This strategic shift is crucial for sustaining competitive advantage in an increasingly AI-driven world.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/ai-predictions-dominated-the-conversation-in-2025-cios-shift-gears-in-2026/",
+            "date": "Jan 16 2026",
+            "headline": "Runpod Soars to $120M ARR—Launched from a Reddit Post",
+            "title": "AI Cloud Startup Runpod Achieves $120M in Annual Recurring Revenue",
+            "content": "Runpod, an AI cloud startup that originated from a Reddit post, has reached an impressive $120 million in annual recurring revenue (ARR). The company’s success story underscores the power of community-driven innovation and fortunate timing in the tech industry. Runpod offers scalable, efficient cloud solutions tailored for AI applications, attracting a diverse range of developers and enterprises. This milestone signals a growing demand for specialized cloud services that cater to the burgeoning AI sector. As Runpod continues to expand, it serves as a case study in leveraging online platforms for entrepreneurial success.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/16/ai-cloud-startup-runpod-hits-120m-in-arr-and-it-started-with-a-reddit-post/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
@@ -251,26 +176,65 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Jan 15 2026",
-            "headline": "Higgsfield&#x27;s Valuation Soars—AI Startup Hits $1.3B",
-            "title": "AI Video Startup Higgsfield Achieves $1.3B Valuation with Revenue Surge",
-            "content": "Higgsfield, an AI video startup founded by a former Snap executive, has reached a $1.3 billion valuation, driven by its impressive $200 million annual revenue run rate. The company recently reopened its Series A funding round, raising an additional $80 million. Higgsfield&#x27;s growth reflects the increasing demand for AI-driven video solutions and highlights the potential for innovative startups to rapidly scale in the competitive tech landscape. Investors and industry professionals should note Higgsfield&#x27;s strategic positioning and its impact on the broader AI video market.",
+            "date": "Jan 16 2026",
+            "headline": "Black Forest Labs Unveils Lightning-Fast AI Image Generator",
+            "title": "Black Forest Labs Releases FLUX.2 [klein] for Rapid AI Image Generation",
+            "content": "German AI startup Black Forest Labs has launched FLUX.2 [klein], an open-source AI image generator capable of producing images in under a second. Developed by former Stability AI engineers, the tool comprises two models—one open and one non-commercial—designed for speed and reduced computational requirements. This release is part of Black Forest Labs&#x27; ongoing efforts to democratize AI technology by providing accessible and efficient tools for developers. The introduction of FLUX.2 [klein] is expected to accelerate innovation in fields reliant on rapid image generation, such as gaming and virtual reality.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/black-forest-labs-launches-open-source-flux-2-klein-to-generate-ai-images-in",
+            "relatedResources": [
+                {
+                    "label": "API Security Best Practices",
+                    "url": "/guides/api-security-best-practices.html",
+                    "icon": "fa-plug"
+                }
+            ]
+        },
+        {
+            "date": "Jan 16 2026",
+            "headline": "Musk&#x27;s xAI Faces Legal Action Over AI Deepfakes",
+            "title": "California AG Orders xAI to Cease AI-Generated Sexual Deepfakes",
+            "content": "The California Attorney General has issued a cease-and-desist order to xAI, Elon Musk&#x27;s AI venture, over the proliferation of AI-generated sexual deepfakes. This legal action reflects growing concerns among state and federal officials about the misuse of AI technology for creating harmful, non-consensual content. xAI&#x27;s involvement in this controversy underscores the ethical and regulatory challenges facing AI developers. The order demands immediate cessation of these activities and compliance with state laws. Industry leaders are urged to implement strict ethical guidelines to prevent similar issues in the future.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/15/ai-video-startup-higgsfield-founded-by-ex-snap-exec-lands-1-3b-valuation/",
+            "sourceUrl": "https://techcrunch.com/2026/01/16/california-ag-sends-musks-xai-a-cease-and-desist-order-over-sexual-deepfakes/",
             "relatedResources": []
         },
         {
             "date": "Jan 16 2026",
-            "headline": "Symbolic.ai Partners with News Corp to Revolutionize Journalism",
-            "title": "AI Journalism Startup Symbolic.ai Inks Deal with News Corp",
-            "content": "Symbolic.ai, an AI journalism startup, has signed a strategic partnership with Rupert Murdoch’s News Corp to enhance editorial processes using its AI platform. The platform is designed to optimize research and streamline editorial workflows, potentially transforming how newsrooms operate. This collaboration aims to leverage AI to increase efficiency and accuracy in news production. Symbolic.ai’s tools can automate mundane tasks, allowing journalists to focus on investigative reporting and creative storytelling. News Corp&#x27;s adoption of AI reflects a growing trend in the media industry to integrate advanced technologies for competitive advantage.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/15/ai-journalism-startup-symbolic-ai-signs-deal-with-rupert-murdochs-news-corp/",
+            "headline": "Google&#x27;s Internal RL Promises Smarter AI Agents",
+            "title": "Google Develops Internal Reinforcement Learning for Complex AI Tasks",
+            "content": "Google researchers have introduced a novel technique called internal reinforcement learning (internal RL) to enhance AI models&#x27; ability to perform complex reasoning tasks. This approach diverges from traditional next-token prediction methods, aiming to reduce hallucination and improve task performance in long-horizon AI agents. Internal RL is poised to significantly advance the capabilities of large language models (LLMs), enabling them to tackle more sophisticated applications. This innovation could lead to breakthroughs in areas such as autonomous systems and advanced problem-solving. Developers should monitor these advancements for potential integration into AI solutions.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/infrastructure/how-googles-internal-rl-could-unlock-long-horizon-ai-agents",
             "relatedResources": [
                 {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Jan 16 2026",
+            "headline": "Trump, Governors Push for Tech-Funded Power Plants",
+            "title": "Trump, Mid-Atlantic Governors Urge Tech Firms to Fund New Power Plants",
+            "content": "The Trump administration, alongside Mid-Atlantic governors, is pressuring PJM Interconnection to organize a power auction aimed at funding new power plant construction. This move seeks to address the increasing energy demands driven by tech industry growth, particularly from data centers and AI operations. The proposed &quot;emergency&quot; auction reflects a strategic push to ensure energy infrastructure keeps pace with technological advancements. Tech companies are encouraged to engage in discussions about sustainable energy solutions and consider investments in power generation to support their expanding operations.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/news/863620/data-centers-ai-power-auction-trump",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 16 2026",
+            "headline": "Chai Discovery Partners with Eli Lilly in AI Drug Development",
+            "title": "Chai Discovery Secures Partnership with Eli Lilly for AI-Driven Drug Development",
+            "content": "Chai Discovery, a prominent AI drug development startup, has entered a strategic partnership with pharmaceutical giant Eli Lilly. This collaboration aims to leverage Chai Discovery&#x27;s advanced AI capabilities to accelerate drug discovery processes. Backed by leading Silicon Valley venture capitalists, the startup is positioned as a significant player in the biotech sector. The partnership highlights the growing trend of integrating AI in pharmaceutical research to enhance efficiency and innovation. As AI-driven drug development gains traction, industry professionals should anticipate rapid advancements in medical research and treatment options.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/16/from-openais-offices-to-a-deal-with-eli-lilly-how-chai-discovery-became-one-of-the-flashiest-names-in-ai-drug-development/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
                 }
             ]
         }
