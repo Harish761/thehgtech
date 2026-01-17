@@ -4,12 +4,36 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Jan 16 2026",
-            "headline": "ChatGPT Go Subscription—10x Messages for $8, Ads Included",
-            "title": "OpenAI Launches ChatGPT Go with Enhanced Messaging and Ads",
-            "content": "OpenAI has introduced ChatGPT Go, an $8 per month subscription that offers users ten times more messages than the free version, now available globally. This new tier includes advertisements, marking a shift in OpenAI’s monetization strategy. Despite the ads, OpenAI assures users that these will not affect the AI&#x27;s responses or the quality of interactions. The move aims to balance user affordability with operational costs, as OpenAI continues to expand its AI offerings. Users concerned about privacy and ad influence should monitor their settings and usage to ensure a seamless experience.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/chatgpt-go-subscription-rolls-out-worldwide-at-8-but-itll-show-you-ads/",
+            "date": "Jan 17 2026",
+            "headline": "Hacker Admits Breaching Supreme Court Systems—Faces Legal Repercussions",
+            "title": "Tennessee Man Pleads Guilty to Hacking Supreme Court, AmeriCorps, and VA Systems",
+            "content": "Nicholas Moore has pleaded guilty to hacking into the U.S. Supreme Court&#x27;s filing system, along with unauthorized access to computer systems of AmeriCorps and the Department of Veterans Affairs. This breach highlights vulnerabilities in high-profile government systems, raising concerns about the security measures in place. The hacking activities were conducted repeatedly, suggesting persistent security gaps. The case underscores the need for robust cybersecurity defenses within governmental IT infrastructures. Legal consequences for Moore could serve as a deterrent to similar cybercriminal activities in the future.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/tennessee-man-pleads-guilty-to-repeatedly-hacking-supreme-courts-filing-system/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 17 2026",
+            "headline": "Wireshark 4.6.3 Fixes 4 Vulnerabilities—Update Recommended",
+            "title": "Wireshark 4.6.3 Released with Critical Security Patches and Bug Fixes",
+            "content": "Wireshark has released version 4.6.3, addressing four security vulnerabilities and resolving nine bugs. This update is crucial for users to maintain secure network analysis operations and prevent potential exploitation of these vulnerabilities. Wireshark, a widely used network protocol analyzer, plays a critical role in IT security environments, making timely updates essential to protect data integrity. Users are advised to download the latest version to mitigate risks associated with the identified vulnerabilities. Staying current with updates ensures the reliability and security of network monitoring activities.",
+            "source": "SANS Internet Storm Center, InfoCON: green",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32636",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Jan 17 2026",
+            "headline": "ChatGPT to Display Ads for U.S. Adults—Free and Go Plans",
+            "title": "OpenAI Introduces Advertising in ChatGPT for U.S. Adult Users on Free and Go Plans",
+            "content": "OpenAI will begin displaying advertisements in ChatGPT for logged-in adult users in the U.S. on both the free and ChatGPT Go tiers. This move aims to expand access to its low-cost subscription model globally, while generating additional revenue streams. OpenAI assures users that their data and conversations will remain secure, despite the introduction of ads. This development reflects a growing trend among AI service providers to monetize free offerings while balancing user privacy concerns. Users should be aware of this change and consider its implications on their ChatGPT experience.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/01/openai-to-show-ads-in-chatgpt-for.html",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
@@ -24,76 +48,30 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Jan 16 2026",
-            "headline": "ChatGPT Ads Incoming—OpenAI Promises Unbiased Answers",
-            "title": "OpenAI Confirms Upcoming Ads in ChatGPT, Ensures Answer Integrity",
-            "content": "OpenAI has announced that advertisements will soon be integrated into ChatGPT, though it promises that these ads will not compromise the integrity of the AI&#x27;s responses. This development follows the launch of the ChatGPT Go subscription, which includes ads as part of its service. OpenAI emphasizes that the AI’s core function—to provide accurate and unbiased information—remains unchanged despite the inclusion of ads. Users are advised to stay informed about these changes and adjust their usage preferences accordingly. The company aims to maintain transparency and user trust as it explores new revenue models.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-its-new-chatgpt-ads-wont-influence-answers/",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Jan 16 2026",
-            "headline": "Jordanian Cybercriminal Sold Network Access to FBI Agent",
-            "title": "Jordanian National Pleads Guilty to Selling Network Access to Undercover FBI",
-            "content": "A Jordanian national has pleaded guilty to charges of selling unauthorized access to over 50 company networks, unaware that one of his buyers was an undercover FBI agent. The 40-year-old was identified through an email address used both for cybercrime activities and a U.S. visa application. This case highlights the ongoing threat of insider access sales on cybercrime forums. Companies are urged to enhance their network security and monitoring to prevent unauthorized access. This incident underscores the need for vigilance in identity verification and cybersecurity protocols.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/jordanian-national-access-broker-pleads-guilty/",
+            "date": "Jan 17 2026",
+            "headline": "AppGuard Critiques AI-Driven Cyber Defenses—Releases New Platform Insights",
+            "title": "AppGuard Critiques AI Hyped Defenses; Expands Insider Release for Next-Gen Platform",
+            "content": "AppGuard has released a report critiquing the over-reliance on AI-enhanced defenses, which can be outpaced by AI-driven malware. The report highlights that AI makes malware detection more challenging, as adversaries use AI to quickly adapt and evade security measures. AppGuard advocates for a fundamental shift in cybersecurity strategies to address these evolving threats. The company has also expanded its insider release for its next-generation platform, aiming to bolster defenses against sophisticated AI-enabled attacks. This move emphasizes the need for innovative approaches in cybersecurity to counteract AI-driven threats.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4118270/appguard-critiques-ai-hyped-defenses-expands-its-insider-release-for-its-next-generation-platform.html",
             "relatedResources": []
         },
         {
             "date": "Jan 16 2026",
-            "headline": "Fortinet Faces Exploitation of Critical FortiSIEM Flaw",
-            "title": "Fortinet&#x27;s FortiSIEM Flaw CVE-2025-64155 Exploited in Active Attacks",
-            "content": "Fortinet is grappling with a critical command injection vulnerability, CVE-2025-64155, in its FortiSIEM product, which has come under active exploitation. The flaw was disclosed earlier this week and has since been targeted from various IP addresses. Security professionals using FortiSIEM are urged to apply patches immediately to mitigate potential breaches. This incident adds to Fortinet&#x27;s recent challenges with vulnerabilities and highlights the importance of timely patch management. Organizations should review their security postures and ensure all systems are up-to-date to prevent exploitation.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/fortinet-critical-fortisiem-flaw-exploited",
-            "relatedResources": [
-                {
-                    "label": "CVE Tracker",
-                    "url": "/cve-tracker.html",
-                    "icon": "fa-bug"
-                },
-                {
-                    "label": "Fortinet Analysis",
-                    "url": "/articles/fortinet-fortigate-critical-exploit-2025.html",
-                    "icon": "fa-file-alt"
-                },
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
+            "headline": "2026 IT Agenda Focuses on Agility and Business Outcomes",
+            "title": "Enterprise Spotlight: Setting the 2026 IT Agenda for Agility and Results",
+            "content": "IT leaders are crafting their strategies for 2026 with a focus on agility, flexibility, and achieving tangible business results. The latest issue of Enterprise Spotlight provides insights from editors of CIO, Computerworld, CSO, InfoWorld, and Network World, highlighting key trends and technologies shaping the IT landscape. As enterprises navigate digital transformation, the emphasis is on aligning IT initiatives with business objectives to drive growth and innovation. IT professionals are encouraged to download the report to stay informed about the latest strategic priorities and technological advancements.",
+            "source": "CSO Online",
+            "sourceUrl": "https://us.resources.csoonline.com/resources/download-the-2026-it-agenda-spotlight-report/",
+            "relatedResources": []
         },
         {
             "date": "Jan 16 2026",
-            "headline": "Researchers Hijack StealC Malware Control Panels via XSS",
-            "title": "StealC Hackers Compromised by Researchers Exploiting XSS Flaw",
-            "content": "Security researchers have successfully compromised the control panels of the StealC info-stealing malware by exploiting a cross-site scripting (XSS) vulnerability. This flaw allowed researchers to access active sessions and gather intelligence on the attackers&#x27; infrastructure. The breach provides valuable insights into the malware operators&#x27; tactics and techniques. Organizations using StealC or similar malware should enhance their security measures to detect and prevent such vulnerabilities. This incident demonstrates the potential for turning the tables on cybercriminals through proactive security research.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/stealc-hackers-hacked-as-researchers-hijack-malware-control-panels/",
-            "relatedResources": [
-                {
-                    "label": "MITRE ATT&CK Mapping",
-                    "url": "/guides/mitre-attack-mapping.html",
-                    "icon": "fa-map"
-                }
-            ]
-        },
-        {
-            "date": "Jan 16 2026",
-            "headline": "Black Basta Leader Added to Interpol&#x27;s Red Notice List",
-            "title": "Black Basta Ransomware Leader Identified and Pursued by Interpol",
-            "content": "The leader of the notorious Black Basta ransomware gang has been identified by law enforcement agencies in Ukraine and Germany and is now on Interpol&#x27;s Red Notice list. This development marks a significant step in international efforts to combat ransomware operations. Authorities are intensifying their pursuit of this individual, who is believed to be behind numerous high-profile attacks globally. Organizations are advised to bolster their cybersecurity defenses against ransomware threats and stay informed about ongoing law enforcement actions. This case underscores the importance of international collaboration in tackling cybercrime.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/black-basta-boss-makes-it-onto-interpols-red-notice-list/",
+            "headline": "GootLoader Evades Detection with 1,000 ZIP Archives—Security Alert",
+            "title": "GootLoader Malware Uses Concatenated ZIP Archives to Evade Detection",
+            "content": "The GootLoader malware, a JavaScript-based threat, has been observed using a novel technique to evade detection by concatenating 500 to 1,000 ZIP archives. This anti-analysis method complicates efforts to identify and mitigate the malware, posing a significant challenge for cybersecurity professionals. The tactic highlights the evolving sophistication of malware designed to bypass traditional security measures. Organizations are urged to enhance their detection capabilities and update their security protocols to address this emerging threat. Staying vigilant against such innovative evasion techniques is crucial for maintaining cybersecurity.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/01/gootloader-malware-uses-5001000.html",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
@@ -101,25 +79,20 @@ const websiteContent = {
                     "icon": "fa-skull-crossbones"
                 },
                 {
-                    "label": "Ransomware Response Playbook",
-                    "url": "/guides/ransomware-response-playbook.html",
-                    "icon": "fa-biohazard"
+                    "label": "Threat Hunting Guide",
+                    "url": "/guides/threat-hunting-techniques.html",
+                    "icon": "fa-crosshairs"
                 }
             ]
         },
         {
             "date": "Jan 16 2026",
-            "headline": "Cisco Patches Critical Zero-Day in Email Gateways After 7 Weeks",
-            "title": "Cisco Addresses CVE-2025-20393 Zero-Day in Secure Email Gateway Products",
-            "content": "Cisco has finally patched a critical zero-day vulnerability, CVE-2025-20393, affecting its Secure Email Gateway products, after a seven-week exposure period. The flaw, present in Cisco&#x27;s AsyncOS Software, posed significant risks of unauthorized access and data breaches. Customers using these products are strongly advised to apply the latest updates to secure their systems. This delay in patching highlights ongoing challenges in timely vulnerability management and the need for vigilant security practices. Organizations should prioritize patch deployment to protect against potential exploits.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4118159/cisco-finally-patches-seven-week-old-zero-day-flaw-in-secure-email-gateway-products-2.html",
+            "headline": "China-Linked Hackers Exploit Sitecore Zero-Day in North America",
+            "title": "China-Linked Hackers Exploit Sitecore Zero-Day for Initial Access in North America",
+            "content": "A threat actor identified as UAT-8837, believed to be linked to China, has been exploiting a zero-day vulnerability in Sitecore to gain initial access to critical infrastructure systems in North America. This attack underscores the persistent threat posed by state-sponsored groups targeting essential services. The use of both known and zero-day vulnerabilities reflects a sophisticated approach to infiltrating and compromising sensitive systems. Organizations using Sitecore are advised to apply available patches and enhance their monitoring capabilities to detect and prevent such intrusions. Proactive defense measures are essential in mitigating risks from advanced persistent threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/china-linked-hackers-exploited-sitecore-zero-day-for-initial-access/",
             "relatedResources": [
-                {
-                    "label": "CVE Tracker",
-                    "url": "/cve-tracker.html",
-                    "icon": "fa-bug"
-                },
                 {
                     "label": "CVE Prioritization Guide",
                     "url": "/guides/cve-prioritization-patch-management.html",
@@ -147,65 +120,20 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Jan 17 2026",
-            "headline": "Thinking Machines Exec Fired Amid Misconduct Allegations",
-            "title": "Thinking Machines Cofounder Barret Zoph Terminated for Serious Misconduct",
-            "content": "Thinking Machines, co-founded by Mira Murati, has terminated Barret Zoph following allegations of serious misconduct linked to an inappropriate office relationship. The startup, known for its cutting-edge AI developments, is now dealing with the fallout of these revelations. This incident highlights the ongoing challenges tech companies face in maintaining ethical standards amidst rapid growth. Thinking Machines is conducting an internal review to prevent future occurrences and restore trust among its stakeholders. Industry observers are watching closely to see how the company manages this reputational risk and its impact on their operations.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/thinking-machines-lab-cofounder-office-relationship-firing-openai/",
-            "relatedResources": [
-                {
-                    "label": "API Security Best Practices",
-                    "url": "/guides/api-security-best-practices.html",
-                    "icon": "fa-plug"
-                }
-            ]
-        },
-        {
-            "date": "Jan 16 2026",
-            "headline": "Runpod Soars to $120M ARR—Launched from a Reddit Post",
-            "title": "AI Cloud Startup Runpod Achieves $120M in Annual Recurring Revenue",
-            "content": "Runpod, an AI cloud startup that originated from a Reddit post, has reached an impressive $120 million in annual recurring revenue (ARR). The company’s success story underscores the power of community-driven innovation and fortunate timing in the tech industry. Runpod offers scalable, efficient cloud solutions tailored for AI applications, attracting a diverse range of developers and enterprises. This milestone signals a growing demand for specialized cloud services that cater to the burgeoning AI sector. As Runpod continues to expand, it serves as a case study in leveraging online platforms for entrepreneurial success.",
+            "headline": "Musk Sues OpenAI for $134B—Seeks Massive Return",
+            "title": "Elon Musk Pursues $134 Billion in Lawsuit Against OpenAI",
+            "content": "Elon Musk is pursuing a $134 billion lawsuit against OpenAI, claiming he deserves compensation as an early investor. Musk&#x27;s legal team argues that his initial investment should yield returns &quot;many orders of magnitude greater&quot; than its original value, given OpenAI&#x27;s exponential growth. This lawsuit comes despite Musk&#x27;s existing $700 billion fortune, highlighting the stakes in the AI sector&#x27;s rapid expansion. The case underscores the complex financial dynamics and investor expectations in the burgeoning AI industry. Professionals should monitor this development as it may influence future investment strategies and legal precedents in tech startups.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/16/ai-cloud-startup-runpod-hits-120m-in-arr-and-it-started-with-a-reddit-post/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Jan 16 2026",
-            "headline": "Black Forest Labs Unveils Lightning-Fast AI Image Generator",
-            "title": "Black Forest Labs Releases FLUX.2 [klein] for Rapid AI Image Generation",
-            "content": "German AI startup Black Forest Labs has launched FLUX.2 [klein], an open-source AI image generator capable of producing images in under a second. Developed by former Stability AI engineers, the tool comprises two models—one open and one non-commercial—designed for speed and reduced computational requirements. This release is part of Black Forest Labs&#x27; ongoing efforts to democratize AI technology by providing accessible and efficient tools for developers. The introduction of FLUX.2 [klein] is expected to accelerate innovation in fields reliant on rapid image generation, such as gaming and virtual reality.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/black-forest-labs-launches-open-source-flux-2-klein-to-generate-ai-images-in",
-            "relatedResources": [
-                {
-                    "label": "API Security Best Practices",
-                    "url": "/guides/api-security-best-practices.html",
-                    "icon": "fa-plug"
-                }
-            ]
-        },
-        {
-            "date": "Jan 16 2026",
-            "headline": "Musk&#x27;s xAI Faces Legal Action Over AI Deepfakes",
-            "title": "California AG Orders xAI to Cease AI-Generated Sexual Deepfakes",
-            "content": "The California Attorney General has issued a cease-and-desist order to xAI, Elon Musk&#x27;s AI venture, over the proliferation of AI-generated sexual deepfakes. This legal action reflects growing concerns among state and federal officials about the misuse of AI technology for creating harmful, non-consensual content. xAI&#x27;s involvement in this controversy underscores the ethical and regulatory challenges facing AI developers. The order demands immediate cessation of these activities and compliance with state laws. Industry leaders are urged to implement strict ethical guidelines to prevent similar issues in the future.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/16/california-ag-sends-musks-xai-a-cease-and-desist-order-over-sexual-deepfakes/",
+            "sourceUrl": "https://techcrunch.com/2026/01/17/musk-wants-up-to-134b-in-openai-lawsuit-despite-700b-fortune/",
             "relatedResources": []
         },
         {
             "date": "Jan 16 2026",
-            "headline": "Google&#x27;s Internal RL Promises Smarter AI Agents",
-            "title": "Google Develops Internal Reinforcement Learning for Complex AI Tasks",
-            "content": "Google researchers have introduced a novel technique called internal reinforcement learning (internal RL) to enhance AI models&#x27; ability to perform complex reasoning tasks. This approach diverges from traditional next-token prediction methods, aiming to reduce hallucination and improve task performance in long-horizon AI agents. Internal RL is poised to significantly advance the capabilities of large language models (LLMs), enabling them to tackle more sophisticated applications. This innovation could lead to breakthroughs in areas such as autonomous systems and advanced problem-solving. Developers should monitor these advancements for potential integration into AI solutions.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/infrastructure/how-googles-internal-rl-could-unlock-long-horizon-ai-agents",
+            "headline": "Targeted Ads Coming to ChatGPT—User Control Promised",
+            "title": "OpenAI to Introduce Targeted Ads in ChatGPT with User Controls",
+            "content": "OpenAI has announced plans to introduce targeted advertising within its ChatGPT platform, affecting users who engage with the service. Users will have some control over the ads they see, though the specifics of these controls remain unclear. This move aligns with broader trends of monetizing AI-driven services through advertising, a strategy already prevalent in other digital platforms. The introduction of ads may impact user experience and privacy, prompting professionals to consider the implications for data management and user engagement strategies. The change reflects the ongoing evolution of AI business models.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/16/chatgpt-users-are-about-to-get-hit-with-targeted-ads/",
             "relatedResources": [
                 {
                     "label": "LLM Security & Prompt Injection",
@@ -216,25 +144,85 @@ const websiteContent = {
         },
         {
             "date": "Jan 16 2026",
-            "headline": "Trump, Governors Push for Tech-Funded Power Plants",
-            "title": "Trump, Mid-Atlantic Governors Urge Tech Firms to Fund New Power Plants",
-            "content": "The Trump administration, alongside Mid-Atlantic governors, is pressuring PJM Interconnection to organize a power auction aimed at funding new power plant construction. This move seeks to address the increasing energy demands driven by tech industry growth, particularly from data centers and AI operations. The proposed &quot;emergency&quot; auction reflects a strategic push to ensure energy infrastructure keeps pace with technological advancements. Tech companies are encouraged to engage in discussions about sustainable energy solutions and consider investments in power generation to support their expanding operations.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/news/863620/data-centers-ai-power-auction-trump",
+            "headline": "White House Pushes $15B Power Buy—Tech Firms Targeted",
+            "title": "U.S. Administration Urges Tech Firms to Invest in Power Plants",
+            "content": "The Trump administration is urging tech companies to purchase $15 billion worth of power plants in an effort to stabilize rising electricity prices. The plan involves an auction by grid operator PJM to secure new generating capacity, with tech giants expected to participate. This initiative reflects the growing intersection of technology and energy sectors, as tech companies increasingly rely on stable power supplies. The proposal could have significant financial implications for participating firms and influence energy market dynamics. Tech leaders should evaluate the potential costs and benefits of involvement in this government-driven energy strategy.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/16/trump-administration-wants-tech-companies-to-buy-15b-of-power-plants-they-may-not-use/",
             "relatedResources": []
         },
         {
             "date": "Jan 16 2026",
-            "headline": "Chai Discovery Partners with Eli Lilly in AI Drug Development",
-            "title": "Chai Discovery Secures Partnership with Eli Lilly for AI-Driven Drug Development",
-            "content": "Chai Discovery, a prominent AI drug development startup, has entered a strategic partnership with pharmaceutical giant Eli Lilly. This collaboration aims to leverage Chai Discovery&#x27;s advanced AI capabilities to accelerate drug discovery processes. Backed by leading Silicon Valley venture capitalists, the startup is positioned as a significant player in the biotech sector. The partnership highlights the growing trend of integrating AI in pharmaceutical research to enhance efficiency and innovation. As AI-driven drug development gains traction, industry professionals should anticipate rapid advancements in medical research and treatment options.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/16/from-openais-offices-to-a-deal-with-eli-lilly-how-chai-discovery-became-one-of-the-flashiest-names-in-ai-drug-development/",
+            "headline": "Google Expands AI Video Tool—Now in Workspace",
+            "title": "Google’s AI Videomaker Flow Now Available to Workspace Users",
+            "content": "Google has expanded access to Flow, its AI-powered videomaking tool, to include Business, Enterprise, and Education Workspace users. Initially launched for Google AI Pro and AI Ultra subscribers, Flow leverages the Veo 3.1 model to streamline video content creation. This expansion signifies Google&#x27;s commitment to integrating AI tools into its productivity suite, enhancing capabilities for a broad range of users. The move is part of a larger trend of incorporating AI into everyday business tools, potentially increasing productivity and creative output. Workspace users should explore Flow to enhance their video production processes.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/news/863570/google-flow-ai-video-generator-workspace",
             "relatedResources": [
                 {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 16 2026",
+            "headline": "AI Healthcare Surge—$250M Deals and New Products",
+            "title": "AI Firms Rush into Healthcare with Major Investments and Acquisitions",
+            "content": "The AI healthcare sector is experiencing a surge, with significant investments and product launches. OpenAI&#x27;s acquisition of health startup Torch, Anthropic&#x27;s launch of Claude for healthcare, and MergeLabs&#x27; $250 million seed round at an $850 million valuation highlight this trend. These developments indicate a shift towards leveraging AI for healthcare solutions, capitalizing on the industry&#x27;s growth potential. As money and innovation pour into health AI, companies are positioning themselves to transform medical practices and patient care. Professionals should stay informed about these advancements, as they may redefine healthcare delivery and business opportunities.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/video/the-ai-healthcare-gold-rush-is-here/",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Jan 16 2026",
+            "headline": "ChatGPT Ads Begin—Expect Shopping Links Soon",
+            "title": "OpenAI to Test Shopping-Related Ads in ChatGPT",
+            "content": "OpenAI will soon begin testing shopping-related ads within its ChatGPT platform for U.S. users. The ads will appear for both free users and those with a ChatGPT Go subscription, depending on the conversation context. This marks OpenAI&#x27;s entry into ad-supported models, mirroring strategies used by other tech companies to monetize AI services. The introduction of ads may alter user interactions with ChatGPT, raising considerations about user experience and data privacy. Professionals should assess how this shift could impact AI application strategies and user engagement metrics.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/news/863428/openai-chatgpt-shopping-ads-test",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Jan 16 2026",
+            "headline": "OpenAI Launches Global ChatGPT Go—Affordable AI Access",
+            "title": "OpenAI Expands ChatGPT Go Subscription to Global Markets",
+            "content": "OpenAI has launched its low-cost ChatGPT Go subscription globally, following successful rollouts in India and 170 other countries. This expansion aims to make AI technology more accessible, offering an affordable option for users worldwide. The subscription&#x27;s success in various markets indicates strong demand for cost-effective AI solutions. By broadening access, OpenAI is positioning itself to capture a larger share of the AI market, potentially driving further innovation and adoption. Tech leaders should consider how this expanded access could influence AI utilization and competitive dynamics in their industries.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/news/863466/openai-chatgpt-go-global-release",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Jan 17 2026",
+            "headline": "Thinking Machines Exec Fired Amid Misconduct Allegations",
+            "title": "Thinking Machines Cofounder Barret Zoph Terminated for Serious Misconduct",
+            "content": "Thinking Machines, co-founded by Mira Murati, has terminated Barret Zoph following allegations of serious misconduct linked to an inappropriate office relationship. The startup, known for its cutting-edge AI developments, is now dealing with the fallout of these revelations. This incident highlights the ongoing challenges tech companies face in maintaining ethical standards amidst rapid growth. Thinking Machines is conducting an internal review to prevent future occurrences and restore trust among its stakeholders. Industry observers are watching closely to see how the company manages this reputational risk and its impact on their operations.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/thinking-machines-lab-cofounder-office-relationship-firing-openai/",
+            "relatedResources": [
+                {
+                    "label": "API Security Best Practices",
+                    "url": "/guides/api-security-best-practices.html",
+                    "icon": "fa-plug"
                 }
             ]
         }
