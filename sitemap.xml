@@ -69,6 +69,18 @@
   
   <!-- ========== ARTICLES - HIGH TRAFFIC POTENTIAL ========== -->
   
+  <!-- January 17, 2026 Articles -->
+  <url>
+    <loc>https://thehgtech.com/articles/crowdstrike-seraphic-browser-security-2026.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <lastmod>2026-01-17</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/crowdstrike-seraphic-browser-security-2026.png</image:loc>
+      <image:title>CrowdStrike Acquires Seraphic Security for $420M - Browser Security Analysis</image:title>
+    </image:image>
+  </url>
+
   <!-- January 16, 2026 Articles -->
   <url>
     <loc>https://thehgtech.com/articles/microsoft-patch-tuesday-january-2026.html</loc>

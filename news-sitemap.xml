@@ -4,6 +4,20 @@
 
   <!-- ========== LATEST NEWS ARTICLES (Last 48 hours for Google News) ========== -->
   
+  <!-- January 17, 2026 -->
+  <url>
+    <loc>https://thehgtech.com/articles/crowdstrike-seraphic-browser-security-2026.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-01-17T00:00:00+05:30</news:publication_date>
+      <news:title>CrowdStrike Acquires Seraphic Security for $420M: Securing the Browser Battlefield</news:title>
+      <news:keywords>CrowdStrike, Seraphic Security, acquisition, browser security, Shadow AI, BYOD, Falcon Platform</news:keywords>
+    </news:news>
+  </url>
+
   <!-- January 16, 2026 -->
   <url>
     <loc>https://thehgtech.com/articles/microsoft-patch-tuesday-january-2026.html</loc>

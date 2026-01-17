@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "id": "article-crowdstrike-seraphic-browser-security-2026",
+      "title": "CrowdStrike Acquires Seraphic Security for $420M: Securing the Browser Battlefield",
+      "date": "January 17, 2026",
+      "category": "Industry Analysis",
+      "badge": "NEW",
+      "excerpt": "Five days after the $740M SGNL deal, CrowdStrike acquires Seraphic Security for $420M to extend Falcon into browser security. Secure Chrome, Edge, Safari without forcing enterprise browser adoption.",
+      "image": "images/articles/crowdstrike-seraphic-browser-security-2026.png",
+      "tags": [
+        "CrowdStrike",
+        "Seraphic Security",
+        "Acquisition",
+        "Browser Security",
+        "Shadow AI",
+        "BYOD",
+        "Falcon Platform"
+      ],
+      "author": "Harish G",
+      "externalUrl": "articles/crowdstrike-seraphic-browser-security-2026.html"
+    },
+    {
       "id": "article-microsoft-patch-tuesday-jan-2026",
       "title": "Microsoft Patch Tuesday January 2026: 114 CVEs, 3 Zero-Days, and One Actively Exploited",
       "date": "January 16, 2026",
