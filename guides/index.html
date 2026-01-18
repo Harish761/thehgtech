@@ -967,6 +967,272 @@
                 gap: 1.25rem;
             }
         }
+
+        /* COMING SOON SECTION */
+        .coming-soon-section {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem 2rem 6rem;
+        }
+
+        .coming-soon-container {
+            background: linear-gradient(135deg, rgba(15, 15, 24, 0.6), rgba(8, 8, 16, 0.8));
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 32px;
+            padding: 4rem 3rem;
+            backdrop-filter: blur(20px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .coming-soon-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg,
+                    transparent 0%,
+                    var(--accent-primary) 20%,
+                    var(--accent-secondary) 50%,
+                    var(--accent-pink) 80%,
+                    transparent 100%);
+            opacity: 0.6;
+        }
+
+        .coming-soon-header {
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
+
+        .section-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding: 0.6rem 1.25rem;
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.15), rgba(168, 85, 247, 0.05));
+            border: 1px solid rgba(168, 85, 247, 0.3);
+            border-radius: 100px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: var(--accent-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 1.5rem;
+            animation: badgeGlow 3s ease-in-out infinite;
+        }
+
+        .section-badge i {
+            font-size: 0.8rem;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+
+        .section-title .gradient-text {
+            background: linear-gradient(135deg, var(--accent-secondary), var(--accent-pink), var(--accent-primary));
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradientShift 6s ease-in-out infinite;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 550px;
+            margin: 0 auto;
+        }
+
+        .coming-soon-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.75rem;
+        }
+
+        .coming-soon-card {
+            background: linear-gradient(145deg, rgba(25, 25, 35, 0.9), rgba(15, 15, 25, 0.95));
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 20px;
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: default;
+        }
+
+        .coming-soon-card::before {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            background: linear-gradient(135deg,
+                    rgba(168, 85, 247, 0.3),
+                    rgba(236, 72, 153, 0.3),
+                    rgba(0, 217, 255, 0.3),
+                    rgba(168, 85, 247, 0.3));
+            background-size: 300% 300%;
+            border-radius: 21px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            animation: borderGlow 6s ease infinite;
+        }
+
+        .coming-soon-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3),
+                0 0 40px rgba(168, 85, 247, 0.1);
+        }
+
+        .coming-soon-card:hover::before {
+            opacity: 1;
+        }
+
+        .coming-soon-shimmer {
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(90deg,
+                    transparent,
+                    rgba(255, 255, 255, 0.03),
+                    transparent);
+            transition: left 0.8s ease;
+            pointer-events: none;
+        }
+
+        .coming-soon-card:hover .coming-soon-shimmer {
+            left: 150%;
+        }
+
+        .coming-soon-icon {
+            width: 52px;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.15), rgba(236, 72, 153, 0.1));
+            border: 1px solid rgba(168, 85, 247, 0.2);
+            border-radius: 14px;
+            margin-bottom: 1.25rem;
+            font-size: 1.3rem;
+            color: var(--accent-secondary);
+            transition: all 0.3s ease;
+        }
+
+        .coming-soon-card:hover .coming-soon-icon {
+            transform: scale(1.08);
+            box-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
+        }
+
+        .coming-soon-badge {
+            position: absolute;
+            top: 1.25rem;
+            right: 1.25rem;
+            padding: 0.4rem 0.85rem;
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.2), rgba(236, 72, 153, 0.15));
+            border: 1px solid rgba(168, 85, 247, 0.35);
+            border-radius: 100px;
+            font-size: 0.55rem;
+            font-weight: 700;
+            color: var(--accent-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+
+        .coming-soon-badge i {
+            font-size: 0.5rem;
+        }
+
+        .coming-soon-card h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: var(--text-primary);
+            line-height: 1.35;
+        }
+
+        .coming-soon-card p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.65;
+            margin-bottom: 1.25rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .coming-soon-meta {
+            display: flex;
+            gap: 1.25rem;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-bottom: 1.25rem;
+        }
+
+        .coming-soon-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .coming-soon-meta i {
+            color: var(--accent-secondary);
+            font-size: 0.65rem;
+        }
+
+        .coming-soon-notify {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.65rem 1.25rem;
+            background: rgba(168, 85, 247, 0.08);
+            border: 1px solid rgba(168, 85, 247, 0.25);
+            border-radius: 100px;
+            color: var(--accent-secondary);
+            font-size: 0.75rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .coming-soon-notify:hover {
+            background: rgba(168, 85, 247, 0.15);
+            border-color: rgba(168, 85, 247, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(168, 85, 247, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .coming-soon-section {
+                padding: 1.5rem 1.25rem 4rem;
+            }
+
+            .coming-soon-container {
+                padding: 2.5rem 1.5rem;
+                border-radius: 24px;
+            }
+
+            .coming-soon-grid {
+                grid-template-columns: 1fr;
+                gap: 1.25rem;
+            }
+
+            .coming-soon-card {
+                padding: 1.5rem;
+            }
+        }
     </style>
 </head>
 
@@ -1051,7 +1317,8 @@
                             <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
                             <div class="dropdown-item-content">
                                 <div class="dropdown-item-title" style="color: var(--accent-primary);">Security Guides
-                                    <span class="dropdown-badge popular">40+</span></div>
+                                    <span class="dropdown-badge popular">40+</span>
+                                </div>
                                 <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
                             </div>
                         </a>
@@ -1154,6 +1421,170 @@
             </div>
         </div>
     </div>
+
+    <!-- COMING SOON SECTION -->
+    <section class="coming-soon-section">
+        <div class="coming-soon-container">
+            <div class="coming-soon-header">
+                <div class="section-badge">
+                    <i class="fas fa-rocket"></i>
+                    <span>Coming Soon</span>
+                </div>
+                <h2 class="section-title">On the <span class="gradient-text">Horizon</span></h2>
+                <p class="section-subtitle">Premium guides currently in development. Subscribe to get notified when they
+                    launch.</p>
+            </div>
+
+            <div class="coming-soon-grid">
+                <!-- Azure Security -->
+                <div class="coming-soon-card">
+                    <div class="coming-soon-shimmer"></div>
+                    <div class="coming-soon-icon">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <div class="coming-soon-badge">
+                        <i class="fas fa-lock"></i> Coming Soon
+                    </div>
+                    <h3>Azure Security Fundamentals</h3>
+                    <p>Master Microsoft Azure security. Entra ID, Defender for Cloud, network security groups, Key
+                        Vault, and compliance frameworks.</p>
+                    <div class="coming-soon-meta">
+                        <span><i class="fas fa-clock"></i> 24 min read</span>
+                        <span><i class="fas fa-signal"></i> Intermediate</span>
+                    </div>
+                    <div class="coming-soon-notify">
+                        <i class="fas fa-bell"></i> Notify Me
+                    </div>
+                </div>
+
+                <!-- Kubernetes Security -->
+                <div class="coming-soon-card">
+                    <div class="coming-soon-shimmer"></div>
+                    <div class="coming-soon-icon">
+                        <i class="fas fa-dharmachakra"></i>
+                    </div>
+                    <div class="coming-soon-badge">
+                        <i class="fas fa-lock"></i> Coming Soon
+                    </div>
+                    <h3>Kubernetes Security Guide</h3>
+                    <p>Secure containerized workloads at scale. Pod security policies, RBAC, network policies, secrets
+                        management, and runtime protection.</p>
+                    <div class="coming-soon-meta">
+                        <span><i class="fas fa-clock"></i> 26 min read</span>
+                        <span><i class="fas fa-signal"></i> Advanced</span>
+                    </div>
+                    <div class="coming-soon-notify">
+                        <i class="fas fa-bell"></i> Notify Me
+                    </div>
+                </div>
+
+                <!-- SOC Analyst Career -->
+                <div class="coming-soon-card">
+                    <div class="coming-soon-shimmer"></div>
+                    <div class="coming-soon-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <div class="coming-soon-badge">
+                        <i class="fas fa-lock"></i> Coming Soon
+                    </div>
+                    <h3>SOC Analyst Career Roadmap</h3>
+                    <p>Your complete path to becoming a SOC analyst. Required skills, certifications, tools to master,
+                        interview prep, and salary expectations.</p>
+                    <div class="coming-soon-meta">
+                        <span><i class="fas fa-clock"></i> 20 min read</span>
+                        <span><i class="fas fa-signal"></i> Beginner</span>
+                    </div>
+                    <div class="coming-soon-notify">
+                        <i class="fas fa-bell"></i> Notify Me
+                    </div>
+                </div>
+
+                <!-- SOAR Automation -->
+                <div class="coming-soon-card">
+                    <div class="coming-soon-shimmer"></div>
+                    <div class="coming-soon-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="coming-soon-badge">
+                        <i class="fas fa-lock"></i> Coming Soon
+                    </div>
+                    <h3>Incident Response Automation with SOAR</h3>
+                    <p>Scale your SOC with automation. Building playbooks, integration strategies, use cases, and
+                        measuring automation ROI.</p>
+                    <div class="coming-soon-meta">
+                        <span><i class="fas fa-clock"></i> 22 min read</span>
+                        <span><i class="fas fa-signal"></i> Intermediate</span>
+                    </div>
+                    <div class="coming-soon-notify">
+                        <i class="fas fa-bell"></i> Notify Me
+                    </div>
+                </div>
+
+                <!-- CEH vs OSCP -->
+                <div class="coming-soon-card">
+                    <div class="coming-soon-shimmer"></div>
+                    <div class="coming-soon-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="coming-soon-badge">
+                        <i class="fas fa-lock"></i> Coming Soon
+                    </div>
+                    <h3>CEH vs OSCP: Which Certification?</h3>
+                    <p>The ultimate comparison guide. Exam formats, career value, difficulty levels, costs, and which
+                        one fits your goals.</p>
+                    <div class="coming-soon-meta">
+                        <span><i class="fas fa-clock"></i> 15 min read</span>
+                        <span><i class="fas fa-signal"></i> Beginner</span>
+                    </div>
+                    <div class="coming-soon-notify">
+                        <i class="fas fa-bell"></i> Notify Me
+                    </div>
+                </div>
+
+                <!-- Bug Bounty -->
+                <div class="coming-soon-card">
+                    <div class="coming-soon-shimmer"></div>
+                    <div class="coming-soon-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <div class="coming-soon-badge">
+                        <i class="fas fa-lock"></i> Coming Soon
+                    </div>
+                    <h3>Bug Bounty Hunting for Beginners</h3>
+                    <p>Start earning from ethical hacking. Platform selection, methodology, report writing, and turning
+                        findings into payouts.</p>
+                    <div class="coming-soon-meta">
+                        <span><i class="fas fa-clock"></i> 18 min read</span>
+                        <span><i class="fas fa-signal"></i> Beginner</span>
+                    </div>
+                    <div class="coming-soon-notify">
+                        <i class="fas fa-bell"></i> Notify Me
+                    </div>
+                </div>
+
+                <!-- GRC Career -->
+                <div class="coming-soon-card">
+                    <div class="coming-soon-shimmer"></div>
+                    <div class="coming-soon-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="coming-soon-badge">
+                        <i class="fas fa-lock"></i> Coming Soon
+                    </div>
+                    <h3>GRC Career Path: From Analyst to CISO</h3>
+                    <p>Navigate the governance, risk, and compliance career ladder. Skills progression, certifications,
+                        and leadership development.</p>
+                    <div class="coming-soon-meta">
+                        <span><i class="fas fa-clock"></i> 16 min read</span>
+                        <span><i class="fas fa-signal"></i> Beginner</span>
+                    </div>
+                    <div class="coming-soon-notify">
+                        <i class="fas fa-bell"></i> Notify Me
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <script>
         let allGuides = [];
         let filteredGuides = [];
