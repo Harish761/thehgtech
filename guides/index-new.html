@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Guides & Tutorials | TheHGTech</title>
+    <meta name="description"
+        content="Comprehensive guides on cybersecurity, threat intelligence, vulnerability management, and security operations.">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </noscript>
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/header-dropdown.css?v=1">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/m-core.css?v=4.4">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <link rel="stylesheet" href="/theme-toggle.css">
+    <script src="/m-app.js?v=4.3" defer></script>
+    <script src="/theme-toggle.js" defer></script>
+    <style>
+        :root {
+            --bg-primary: #030305;
+            --bg-secondary: #080810;
+            --bg-tertiary: #0f0f18;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a5b8;
+            --text-muted: #6b7084;
+            --accent-primary: #00D9FF;
+            --accent-secondary: #A855F7;
+            --accent-red: #FF3D3D;
+            --accent-green: #10b981;
+            --accent-pink: #ec4899;
+            --glass: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --glow-cyan: rgba(0, 217, 255, 0.4);
+            --glow-purple: rgba(168, 85, 247, 0.4);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* HERO SECTION */
+        .guides-hero {
+            position: relative;
+            padding: 10rem 2rem 6rem;
+            overflow: hidden;
+            background: var(--bg-primary);
+        }
+
+        .guides-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse 80% 60% at 20% 20%, rgba(0, 217, 255, 0.12) 0%, transparent 50%),
+                radial-gradient(ellipse 70% 50% at 80% 30%, rgba(168, 85, 247, 0.1) 0%, transparent 50%),
+                radial-gradient(ellipse 90% 70% at 50% 80%, rgba(255, 61, 61, 0.08) 0%, transparent 50%);
+            animation: meshFloat 20s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        .guides-hero::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+            background-size: 60px 60px;
+            mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
+            pointer-events: none;
+        }
+
+        @keyframes meshFloat {
+
+            0%,
+            100% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            25% {
+                transform: translate(-2%, 2%) scale(1.02);
+            }
+
+            50% {
+                transform: translate(1%, -1%) scale(1.01);
+            }
+
+            75% {
+                transform: translate(-1%, -2%) scale(0.99);
+            }
+        }
+
+        .hero-particles {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .hero-particles span {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: var(--accent-primary);
+            border-radius: 50%;
+            opacity: 0.4;
+            animation: particleFloat 15s infinite ease-in-out;
+        }
+
+        .hero-particles span:nth-child(1) {
+            left: 10%;
+            top: 20%;
+            animation-delay: 0s;
+            animation-duration: 12s;
+        }
+
+        .hero-particles span:nth-child(2) {
+            left: 20%;
+            top: 80%;
+            animation-delay: 2s;
+            animation-duration: 18s;
+            background: var(--accent-red);
+        }
+
+        .hero-particles span:nth-child(3) {
+            left: 35%;
+            top: 40%;
+            animation-delay: 4s;
+            animation-duration: 14s;
+        }
+
+        .hero-particles span:nth-child(4) {
+            left: 50%;
+            top: 15%;
+            animation-delay: 1s;
+            animation-duration: 16s;
+            background: var(--accent-secondary);
+        }
+
+        .hero-particles span:nth-child(5) {
+            left: 65%;
+            top: 70%;
+            animation-delay: 3s;
+            animation-duration: 20s;
+        }
+
+        .hero-particles span:nth-child(6) {
+            left: 80%;
+            top: 30%;
+            animation-delay: 5s;
+            animation-duration: 13s;
+            background: var(--accent-pink);
+        }
+
+        .hero-particles span:nth-child(7) {
+            left: 90%;
+            top: 60%;
+            animation-delay: 2.5s;
+            animation-duration: 17s;
+        }
+
+        .hero-particles span:nth-child(8) {
+            left: 75%;
+            top: 85%;
+            animation-delay: 4.5s;
+            animation-duration: 15s;
+            background: var(--accent-red);
+        }
+
+        @keyframes particleFloat {
+
+            0%,
+            100% {
+                transform: translate(0, 0) scale(1);
+                opacity: 0.3;
+            }
+
+            25% {
+                transform: translate(20px, -30px) scale(1.2);
+                opacity: 0.6;
+            }
+
+            50% {
+                transform: translate(-15px, 20px) scale(0.8);
+                opacity: 0.4;
+            }
+
+            75% {
+                transform: translate(10px, -10px) scale(1.1);
+                opacity: 0.5;
+            }
+        }
+
+        .hero-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding: 0.6rem 1.25rem;
+            background: linear-gradient(135deg, rgba(0, 217, 255, 0.15), rgba(0, 217, 255, 0.05));
+            border: 1px solid rgba(0, 217, 255, 0.3);
+            border-radius: 100px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: var(--accent-primary);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 2rem;
+            animation: fadeInUp 0.6s ease-out, badgeGlow 3s ease-in-out infinite;
+        }
+
+        @keyframes badgeGlow {
+
+            0%,
+            100% {
+                box-shadow: 0 0 15px rgba(0, 217, 255, 0.2);
+            }
+
+            50% {
+                box-shadow: 0 0 25px rgba(0, 217, 255, 0.4);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 7vw, 5rem);
+            font-weight: 900;
+            line-height: 1.05;
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 0.6s ease-out 0.1s both;
+        }
+
+        .hero-title .gradient-text {
+            background: linear-gradient(135deg, #fff 0%, var(--accent-primary) 50%, var(--accent-secondary) 100%);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradientShift 8s ease-in-out infinite;
+        }
+
+        @keyframes gradientShift {
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 650px;
+            margin-bottom: 3rem;
+            animation: fadeInUp 0.6s ease-out 0.2s both;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 2rem;
+            animation: fadeInUp 0.6s ease-out 0.3s both;
+        }
+
+        .hero-stat {
+            text-align: left;
+            padding: 1.25rem 2rem;
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .hero-stat:hover {
+            border-color: var(--accent-primary);
+            transform: translateY(-3px);
+        }
+
+        .hero-stat-value {
+            font-size: 2.75rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-stat-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* FEATURED SECTION */
+        .featured-section {
+            max-width: 1400px;
+            margin: -4rem auto 4rem;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 3;
+        }
+
+        .featured-card {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            background: linear-gradient(135deg, rgba(15, 15, 24, 0.95), rgba(8, 8, 16, 0.98));
+            border: 1px solid var(--glass-border);
+            border-radius: 28px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            text-decoration: none;
+            color: inherit;
+            position: relative;
+            backdrop-filter: blur(20px);
+        }
+
+        .featured-card::before {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary), var(--accent-pink), var(--accent-primary));
+            background-size: 300% 300%;
+            border-radius: 30px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            animation: borderGlow 6s ease infinite;
+        }
+
+        @keyframes borderGlow {
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        .featured-card:hover::before {
+            opacity: 1;
+        }
+
+        .featured-card:hover {
+            transform: translateY(-8px) scale(1.01);
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5), 0 0 80px var(--glow-cyan);
+        }
+
+        .featured-image {
+            position: relative;
+            aspect-ratio: 16/10;
+            overflow: hidden;
+        }
+
+        .featured-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .featured-card:hover .featured-image img {
+            transform: scale(1.08);
+        }
+
+        .featured-image::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to right, transparent 40%, rgba(8, 8, 16, 0.95));
+        }
+
+        .featured-content {
+            padding: 3.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .featured-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 0.65rem;
+            font-weight: 700;
+            color: var(--accent-primary);
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            margin-bottom: 1.25rem;
+        }
+
+        .featured-category {
+            display: inline-block;
+            padding: 0.5rem 1.25rem;
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+            color: #fff;
+            border-radius: 100px;
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 1.25rem;
+            width: fit-content;
+        }
+
+        .featured-title {
+            font-size: 2rem;
+            font-weight: 800;
+            line-height: 1.25;
+            margin-bottom: 1.25rem;
+        }
+
+        .featured-excerpt {
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+            line-height: 1.75;
+            margin-bottom: 2rem;
+        }
+
+        .featured-meta {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .featured-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .featured-meta i {
+            color: var(--accent-primary);
+        }
+
+        /* FILTER SECTION */
+        .filter-section {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem 2rem;
+        }
+
+        .filter-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.25rem;
+            padding: 1.5rem 2rem;
+            background: linear-gradient(135deg, rgba(15, 15, 24, 0.85), rgba(8, 8, 16, 0.9));
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            backdrop-filter: blur(15px);
+        }
+
+        .category-tabs {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .category-tab {
+            padding: 0.65rem 1.35rem;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--glass-border);
+            border-radius: 100px;
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            font-family: inherit;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .category-tab::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            z-index: -1;
+        }
+
+        .category-tab:hover {
+            border-color: var(--accent-primary);
+            color: var(--accent-primary);
+            transform: translateY(-2px);
+        }
+
+        .category-tab.active {
+            border-color: transparent;
+            color: #fff;
+            box-shadow: 0 4px 20px rgba(0, 217, 255, 0.4);
+        }
+
+        .category-tab.active::before {
+            opacity: 1;
+        }
+
+        .filter-controls {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .search-container {
+            position: relative;
+        }
+
+        .search-container input {
+            width: 300px;
+            padding: 0.85rem 1.25rem 0.85rem 3rem;
+            background: rgba(15, 15, 24, 0.8);
+            border: 1px solid var(--glass-border);
+            border-radius: 14px;
+            color: var(--text-primary);
+            font-size: 0.9rem;
+            transition: all 0.4s ease;
+            font-family: inherit;
+        }
+
+        .search-container input:focus {
+            outline: none;
+            border-color: var(--accent-primary);
+            box-shadow: 0 0 0 4px var(--glow-cyan);
+        }
+
+        .search-container i {
+            position: absolute;
+            left: 1.1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-muted);
+        }
+
+        .sort-select {
+            padding: 0.85rem 2.75rem 0.85rem 1.25rem;
+            background: rgba(15, 15, 24, 0.8);
+            border: 1px solid var(--glass-border);
+            border-radius: 14px;
+            color: var(--text-primary);
+            font-size: 0.9rem;
+            cursor: pointer;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2300D9FF' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 1.1rem center;
+            font-family: inherit;
+        }
+
+        .results-count {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            padding: 0.5rem 1rem;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 100px;
+        }
+
+        /* GUIDES GRID */
+        .guides-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem 6rem;
+        }
+
+        .guides-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .guide-card-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            opacity: 0;
+            animation: cardEntrance 0.6s ease forwards;
+        }
+
+        .guide-card-link:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .guide-card-link:nth-child(2) {
+            animation-delay: 0.08s;
+        }
+
+        .guide-card-link:nth-child(3) {
+            animation-delay: 0.16s;
+        }
+
+        .guide-card-link:nth-child(4) {
+            animation-delay: 0.24s;
+        }
+
+        .guide-card-link:nth-child(5) {
+            animation-delay: 0.32s;
+        }
+
+        .guide-card-link:nth-child(6) {
+            animation-delay: 0.4s;
+        }
+
+        .guide-card-link:nth-child(n+7) {
+            animation-delay: 0.48s;
+        }
+
+        @keyframes cardEntrance {
+            from {
+                opacity: 0;
+                transform: translateY(40px) scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .guide-card {
+            background: linear-gradient(145deg, rgba(15, 15, 24, 0.9), rgba(8, 8, 16, 0.95));
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            overflow: hidden;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            backdrop-filter: blur(10px);
+        }
+
+        .guide-card::before {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary), var(--accent-pink), var(--accent-primary));
+            background-size: 300% 300%;
+            border-radius: 25px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            animation: borderGlow 4s ease infinite;
+        }
+
+        .guide-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary), var(--accent-pink));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .guide-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4), 0 0 50px rgba(0, 217, 255, 0.15);
+        }
+
+        .guide-card:hover::before {
+            opacity: 1;
+        }
+
+        .guide-card:hover::after {
+            transform: scaleX(1);
+        }
+
+        .card-image {
+            position: relative;
+            aspect-ratio: 16/9;
+            overflow: hidden;
+            background: linear-gradient(135deg, var(--bg-tertiary), var(--bg-secondary));
+        }
+
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .guide-card:hover .card-image img {
+            transform: scale(1.1);
+        }
+
+        .card-image::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, transparent 40%, rgba(8, 8, 16, 0.95) 100%);
+        }
+
+        .card-badge {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            padding: 0.4rem 0.85rem;
+            border-radius: 8px;
+            font-size: 0.6rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            z-index: 2;
+            backdrop-filter: blur(10px);
+        }
+
+        .card-badge.new {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.9), rgba(5, 150, 105, 0.9));
+            color: #fff;
+        }
+
+        .card-badge.critical,
+        .card-badge.urgent {
+            background: linear-gradient(135deg, rgba(220, 38, 38, 0.9), rgba(249, 115, 22, 0.9));
+            color: #fff;
+            animation: pulse-badge 1.5s ease-in-out infinite;
+        }
+
+        @keyframes pulse-badge {
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.85;
+                transform: scale(1.02);
+            }
+        }
+
+        .card-content {
+            padding: 1.75rem;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .card-category {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.65rem;
+            font-weight: 700;
+            color: var(--accent-primary);
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            margin-bottom: 0.85rem;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            line-height: 1.35;
+            margin-bottom: 0.85rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .guide-card:hover .card-title {
+            background: linear-gradient(135deg, var(--text-primary), var(--accent-primary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .card-excerpt {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.65;
+            margin-bottom: 1.5rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            flex: 1;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1.25rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            margin-top: auto;
+        }
+
+        .card-meta {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .card-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .card-meta i {
+            color: var(--accent-primary);
+            opacity: 0.8;
+        }
+
+        .read-more {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--accent-primary);
+            padding: 0.5rem 1rem;
+            background: rgba(0, 217, 255, 0.1);
+            border-radius: 100px;
+            transition: all 0.4s ease;
+        }
+
+        .guide-card:hover .read-more {
+            background: var(--accent-primary);
+            color: #fff;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: var(--text-secondary);
+        }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 3px solid var(--glass-border);
+            border-top-color: var(--accent-primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1.5rem;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 4rem 2rem;
+            grid-column: 1 / -1;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 1024px) {
+            .featured-card {
+                grid-template-columns: 1fr;
+            }
+
+            .featured-image::after {
+                background: linear-gradient(to bottom, transparent 60%, var(--bg-tertiary));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                display: none !important;
+            }
+
+            .guides-hero {
+                padding: 6rem 1.25rem 3rem;
+            }
+
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .hero-stats {
+                gap: 1rem;
+                flex-wrap: wrap;
+            }
+
+            .featured-section {
+                margin-top: -2rem;
+                padding: 0 1.25rem;
+            }
+
+            .filter-section {
+                padding: 0 1.25rem 1.5rem;
+            }
+
+            .filter-bar {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .search-container {
+                width: 100%;
+            }
+
+            .search-container input {
+                width: 100%;
+            }
+
+            .guides-container {
+                padding: 0 1.25rem 6rem;
+            }
+
+            .guides-grid {
+                grid-template-columns: 1fr;
+                gap: 1.25rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Mobile Header -->
+    <header class="m-header m-only">
+        <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="/logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px;">
+            <img src="/logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px;">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">TheHGTech</span>
+        </div>
+        <div class="m-header__actions">
+            <button class="m-header__btn m-header__btn--theme" onclick="mToggleTheme()" aria-label="Toggle Theme">
+                <i class="fas fa-moon"></i><i class="fas fa-sun"></i>
+            </button>
+            <button class="m-header__btn" data-action="search" aria-label="Search"><i
+                    class="fas fa-search"></i></button>
+        </div>
+    </header>
+    <!-- Bottom Nav -->
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item"><i class="fas fa-bug"></i><span>CVE</span></a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item"><i class="fas fa-shield-alt"></i><span>Intel</span></a>
+        <a href="/articles.html" class="m-bottom-nav__item"><i class="fas fa-newspaper"></i><span>Articles</span></a>
+        <a href="/guides/" class="m-bottom-nav__item active"><i class="fas fa-book"></i><span>Guides</span></a>
+    </nav>
+    <!-- Search Overlay -->
+    <div class="m-search-overlay m-only">
+        <div class="m-search-overlay__header">
+            <input type="text" class="m-search-overlay__input" placeholder="Search guides...">
+            <button class="m-search-overlay__cancel">Cancel</button>
+        </div>
+        <div class="m-search-overlay__results"></div>
+    </div>
+    <!-- Desktop Header -->
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+            <nav class="nav nav-modern" role="navigation">
+                <a href="/index.html#news">News</a>
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">Intelligence<span class="nav-live-badge">LIVE</span><i
+                            class="fas fa-chevron-down dropdown-arrow"></i></span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/threat-intel.html" class="dropdown-item">
+                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Threat Intelligence <span
+                                        class="dropdown-badge live">LIVE</span></div>
+                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds</div>
+                            </div>
+                        </a>
+                        <a href="/cve-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">CVE Tracker</div>
+                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities</div>
+                            </div>
+                        </a>
+                        <a href="/ransomware-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Ransomware Tracker</div>
+                                <div class="dropdown-item-desc">Track active ransomware groups</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">Resources<i
+                            class="fas fa-chevron-down dropdown-arrow"></i></span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/guides/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
+                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title" style="color: var(--accent-primary);">Security Guides
+                                    <span class="dropdown-badge popular">40+</span></div>
+                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
+                            </div>
+                        </a>
+                        <a href="/comparisons/" class="dropdown-item">
+                            <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Tool Comparisons</div>
+                                <div class="dropdown-item-desc">EDR, SIEM, security tool reviews</div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="/articles.html" class="dropdown-item">
+                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Articles</div>
+                                <div class="dropdown-item-desc">Latest cybersecurity news</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="theme-toggle-wrapper">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <div class="toggle-stars">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- HERO -->
+    <section class="guides-hero">
+        <div class="hero-particles">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge"><i class="fas fa-bolt"></i> Expert Resources</div>
+            <h1 class="hero-title"><span class="gradient-text">Security Guides</span><br>& Tutorials</h1>
+            <p class="hero-subtitle">Master cybersecurity with expert-written guides covering threat detection,
+                compliance frameworks, cloud security, and more.</p>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="hero-stat-value" id="totalGuides">--</div>
+                    <div class="hero-stat-label">Guides</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-value" id="totalCategories">--</div>
+                    <div class="hero-stat-label">Categories</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-value" id="latestDate">--</div>
+                    <div class="hero-stat-label">Latest</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FEATURED -->
+    <section class="featured-section">
+        <a href="#" class="featured-card" id="featuredCard">
+            <div class="featured-image"><img src="" alt="" id="featuredImage"></div>
+            <div class="featured-content">
+                <div class="featured-label"><i class="fas fa-fire"></i> Featured Guide</div>
+                <div class="featured-category" id="featuredCategory">Loading...</div>
+                <h2 class="featured-title" id="featuredTitle">Loading featured guide...</h2>
+                <p class="featured-excerpt" id="featuredExcerpt">Please wait while we load the content.</p>
+                <div class="featured-meta">
+                    <span id="featuredTime"><i class="fas fa-clock"></i> --</span>
+                    <span id="featuredLevel"><i class="fas fa-signal"></i> --</span>
+                    <span id="featuredDate"><i class="fas fa-calendar"></i> --</span>
+                </div>
+            </div>
+        </a>
+    </section>
+    <!-- FILTER -->
+    <section class="filter-section">
+        <div class="filter-bar">
+            <div class="category-tabs" id="categoryTabs"><button class="category-tab active"
+                    data-category="all">All</button></div>
+            <div class="filter-controls">
+                <div class="search-container"><i class="fas fa-search"></i><input type="text" id="searchInput"
+                        placeholder="Search guides..."></div>
+                <select id="sortSelect" class="sort-select">
+                    <option value="date-desc">Newest First</option>
+                    <option value="date-asc">Oldest First</option>
+                    <option value="title-asc">Title (A-Z)</option>
+                </select>
+                <span class="results-count" id="resultsCount">Loading...</span>
+            </div>
+        </div>
+    </section>
+    <!-- GUIDES GRID -->
+    <div class="guides-container">
+        <div id="guidesGrid" class="guides-grid">
+            <div class="loading">
+                <div class="spinner"></div>
+                <p>Loading guides...</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        let allGuides = [];
+        let filteredGuides = [];
+        let currentCategory = 'all';
+        const defaultImage = '/images/guides/default-guide.png';
+
+        function getCategoryIcon(cat) {
+            const icons = {
+                'AI Security': 'fa-robot', 'Cloud Security': 'fa-cloud', 'Compliance': 'fa-certificate',
+                'Detection Engineering': 'fa-crosshairs', 'DevSecOps': 'fa-infinity', 'DFIR': 'fa-search',
+                'Identity Security': 'fa-id-card', 'Incident Response': 'fa-ambulance', 'Network Security': 'fa-network-wired',
+                'Red Team': 'fa-skull-crossbones', 'Risk Management': 'fa-chart-line', 'Security Operations': 'fa-shield-alt',
+                'Threat Intelligence': 'fa-satellite-dish', 'Vulnerability Management': 'fa-bug', 'Zero Trust': 'fa-lock',
+                'Email Security': 'fa-envelope', 'Application Security': 'fa-code', 'Analytics': 'fa-chart-bar'
+            };
+            return icons[cat] || 'fa-book';
+        }
+
+        async function loadGuides() {
+            try {
+                const response = await fetch('guides.json');
+                const data = await response.json();
+                allGuides = data.guides;
+                filteredGuides = [...allGuides];
+                document.getElementById('totalGuides').textContent = allGuides.length;
+                const categories = [...new Set(allGuides.map(g => g.category))];
+                document.getElementById('totalCategories').textContent = categories.length;
+                if (allGuides.length > 0) {
+                    const parts = allGuides[0].date.split(' ');
+                    document.getElementById('latestDate').textContent = `${parts[0]} ${parts[1]}`;
+                }
+                populateCategoryTabs(categories);
+                renderFeatured(allGuides[0]);
+                renderGuides();
+                updateResultsCount();
+            } catch (error) {
+                console.error('Error loading guides:', error);
+                document.getElementById('guidesGrid').innerHTML = '<div class="empty-state"><h3>Error Loading Guides</h3><p>Please try refreshing the page.</p></div>';
+            }
+        }
+
+        function populateCategoryTabs(categories) {
+            const tabs = document.getElementById('categoryTabs');
+            categories.slice(0, 6).forEach(cat => {
+                const btn = document.createElement('button');
+                btn.className = 'category-tab';
+                btn.dataset.category = cat;
+                btn.textContent = cat;
+                btn.onclick = () => selectCategory(cat);
+                tabs.appendChild(btn);
+            });
+        }
+
+        function selectCategory(cat) {
+            currentCategory = cat;
+            document.querySelectorAll('.category-tab').forEach(t => t.classList.toggle('active', t.dataset.category === cat));
+            applyFilters();
+        }
+
+        function renderFeatured(guide) {
+            if (!guide) return;
+            document.getElementById('featuredCard').href = `/guides/${guide.id}.html`;
+            document.getElementById('featuredImage').src = guide.image || defaultImage;
+            document.getElementById('featuredImage').alt = guide.title;
+            document.getElementById('featuredCategory').textContent = guide.category;
+            document.getElementById('featuredTitle').textContent = guide.title;
+            document.getElementById('featuredExcerpt').textContent = guide.excerpt;
+            document.getElementById('featuredTime').innerHTML = `<i class="fas fa-clock"></i> ${guide.readTime}`;
+            document.getElementById('featuredLevel').innerHTML = `<i class="fas fa-signal"></i> ${guide.level}`;
+            document.getElementById('featuredDate').innerHTML = `<i class="fas fa-calendar"></i> ${guide.date}`;
+        }
+
+        function renderGuides() {
+            const grid = document.getElementById('guidesGrid');
+            const displayGuides = currentCategory === 'all' && !document.getElementById('searchInput').value ? filteredGuides.slice(1) : filteredGuides;
+            if (displayGuides.length === 0) {
+                grid.innerHTML = '<div class="empty-state"><h3>No Guides Found</h3><p>Try adjusting your search or filters.</p></div>';
+                return;
+            }
+            grid.innerHTML = displayGuides.map(g => {
+                const badge = g.badge ? `<span class="card-badge ${g.badge.toLowerCase()}">${g.badge}</span>` : '';
+                const icon = getCategoryIcon(g.category);
+                return `
+                <a href="/guides/${g.id}.html" class="guide-card-link">
+                    <article class="guide-card">
+                        <div class="card-image">
+                            <img src="${g.image || defaultImage}" alt="${g.title}" loading="lazy" onerror="this.src='${defaultImage}'">
+                            ${badge}
+                        </div>
+                        <div class="card-content">
+                            <div class="card-category"><i class="fas ${icon}"></i> ${g.category}</div>
+                            <h3 class="card-title">${g.title}</h3>
+                            <p class="card-excerpt">${g.excerpt}</p>
+                            <div class="card-footer">
+                                <div class="card-meta">
+                                    <span><i class="fas fa-clock"></i> ${g.readTime}</span>
+                                    <span><i class="fas fa-signal"></i> ${g.level.split(' ')[0]}</span>
+                                </div>
+                                <div class="read-more">Read <i class="fas fa-arrow-right"></i></div>
+                            </div>
+                        </div>
+                    </article>
+                </a>`;
+            }).join('');
+        }
+
+        function updateResultsCount() {
+            const count = filteredGuides.length;
+            const displayCount = currentCategory === 'all' && !document.getElementById('searchInput').value ? count - 1 : count;
+            document.getElementById('resultsCount').textContent = `Showing ${displayCount} guides`;
+        }
+
+        function applyFilters() {
+            const search = document.getElementById('searchInput').value.toLowerCase();
+            const sort = document.getElementById('sortSelect').value;
+            filteredGuides = allGuides.filter(g => {
+                const matchesSearch = !search || g.title.toLowerCase().includes(search) || g.excerpt.toLowerCase().includes(search) || g.category.toLowerCase().includes(search);
+                const matchesCat = currentCategory === 'all' || g.category === currentCategory;
+                return matchesSearch && matchesCat;
+            });
+            filteredGuides.sort((a, b) => {
+                if (sort === 'date-desc') return new Date(b.date) - new Date(a.date);
+                if (sort === 'date-asc') return new Date(a.date) - new Date(b.date);
+                if (sort === 'title-asc') return a.title.localeCompare(b.title);
+                return 0;
+            });
+            renderGuides();
+            updateResultsCount();
+        }
+
+        document.getElementById('searchInput').addEventListener('input', applyFilters);
+        document.getElementById('sortSelect').addEventListener('change', applyFilters);
+        loadGuides();
+    </script>
+</body>
+
+</html>
