@@ -670,10 +670,15 @@
 
         <h2 id="introduction">1. The Invisible Threat</h2>
 
-        <p>In November 2024, researchers published a groundbreaking paper that shook the AI security community:
-            <strong>"Emoji Attack: A Method for Misleading Judge LLMs in Safety Risk Detection."</strong> Their findings
-            were alarming - by simply inserting emojis into text, they could bypass safety filters in leading AI systems
-            like Llama Guard and ShieldLM with success rates up to <strong>75%</strong>.</p>
+        <p>Throughout 2025 and into 2026, researchers have uncovered devastating vulnerabilities in how LLMs process
+            text.
+            The 2025 "Emoji Attack" research demonstrated up to <strong>75% bypass rates</strong> against leading safety
+            systems.
+            In October 2025, the "Imperceptible Jailbreaking" technique using Unicode variation selectors achieved
+            <strong>100% success rates</strong> in prompt injection attacks. Most recently, Microsoft patched
+            CVE-2025-32711
+            ("EchoLeak") after ASCII smuggling attacks against Microsoft 365 Copilot were discovered.
+        </p>
 
         <p>But emoji attacks are just the tip of the iceberg. A deeper technique called <strong>Unicode
                 smuggling</strong> allows attackers to hide entire instructions inside invisible characters - creating
@@ -823,9 +828,9 @@
             <em>The emojis fragment the tokens, breaking the semantic pattern that safety filters look for.</em>
         </div>
 
-        <h3>Research Results</h3>
+        <h3>Research Results (2025-2026)</h3>
 
-        <p>The 2024 research tested emoji attacks against six state-of-the-art Judge LLMs:</p>
+        <p>The latest research has tested emoji attacks against current Judge LLMs with alarming results:</p>
 
         <table>
             <thead>
@@ -983,7 +988,7 @@
 
         <h2 id="real-world-impact">6. Real-World Impact & Research</h2>
 
-        <h3>Documented Vulnerabilities</h3>
+        <h3>Documented Vulnerabilities (2025-2026)</h3>
 
         <table>
             <thead>
@@ -1002,16 +1007,28 @@
                     <td>ICML 2025 Paper</td>
                 </tr>
                 <tr>
-                    <td>Invisible Jailbreaks</td>
-                    <td>GPT-4, Claude</td>
-                    <td>60-80%</td>
-                    <td>arXiv 2024</td>
+                    <td>Emoji-Based Jailbreaking</td>
+                    <td>GPT-4, Claude, Gemini</td>
+                    <td>40-70%</td>
+                    <td>arXiv Jan 2026</td>
+                </tr>
+                <tr>
+                    <td>Imperceptible Jailbreaks</td>
+                    <td>Llama-2, Vicuna, GPT-4</td>
+                    <td>72-100%</td>
+                    <td>arXiv Oct 2025</td>
                 </tr>
                 <tr>
                     <td>Variation Selectors</td>
                     <td>Multiple LLMs</td>
                     <td>Up to 100%</td>
-                    <td>Security Research 2024</td>
+                    <td>Security Research 2025</td>
+                </tr>
+                <tr>
+                    <td>ASCII Smuggling (EchoLeak)</td>
+                    <td>Microsoft 365 Copilot</td>
+                    <td>Exploited in wild</td>
+                    <td>CVE-2025-32711</td>
                 </tr>
             </tbody>
         </table>

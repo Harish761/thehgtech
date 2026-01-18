@@ -1,6 +1,18 @@
 {
   "guides": [
     {
+      "id": "unicode-llm-attacks-advanced",
+      "title": "Advanced Unicode LLM Attacks: Variation Selectors & Token Exploitation",
+      "category": "AI Security",
+      "excerpt": "Expert-level guide to Unicode-based LLM attacks. Variation selector exploits, imperceptible jailbreaks, ASCII smuggling (CVE-2025-32711), and enterprise defense architectures.",
+      "readTime": "35 min",
+      "level": "Intermediate to Advanced",
+      "date": "Jan 18, 2026",
+      "badge": "New",
+      "featured": true,
+      "image": "/images/guides/unicode-llm-attacks-advanced.png"
+    },
+    {
       "id": "unicode-llm-attacks",
       "title": "Unicode Smuggling: How Hackers Hide Instructions in Emojis",
       "category": "AI Security",
