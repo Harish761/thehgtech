@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-01-18T01:55:27.489570",
+  "last_updated": "2026-01-18T12:41:01.670083",
   "period": "Last 7 days",
-  "total_groups": 22,
-  "total_victims": 261,
+  "total_groups": 23,
+  "total_victims": 253,
   "groups": [
     {
       "name": "Qilin",
@@ -279,7 +279,7 @@
     },
     {
       "name": "Incransom",
-      "count": 21,
+      "count": 20,
       "victims": [
         {
           "name": "ecsc.org",
@@ -304,12 +304,6 @@
           "date": "2026-01-14 13:42:30.011743",
           "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/696792498f1d14b743a9d829",
           "discovered_date": "2026-01-14T13:42:30.011743"
-        },
-        {
-          "name": "stimgroup",
-          "date": "2026-01-13 03:51:46.577093",
-          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/69620d758f1d14b7436965ea",
-          "discovered_date": "2026-01-13T03:51:46.577093"
         },
         {
           "name": "gbmme.com",
@@ -340,6 +334,12 @@
           "date": "2026-01-16T03:48:35+00:00",
           "url": "https://www.ransomware.live/id/Y2lycnVzYXZpYXRpb25AaW5jcmFuc29t",
           "discovered_date": "2026-01-16T03:48:35+00:00"
+        },
+        {
+          "name": "https://trustarholdingsllc.com/ https://vistlabs.com/",
+          "date": "2026-01-15T05:24:09+00:00",
+          "url": "https://www.ransomware.live/id/aHR0cHM6Ly90cnVzdGFyaG9sZGluZ3NsbGMuY29tLyBodHRwczovL3Zpc3RsYWJzLmNvbS9AaW5jcmFuc29t",
+          "discovered_date": "2026-01-15T05:24:09+00:00"
         }
       ],
       "industries": [
@@ -358,7 +358,7 @@
       "trend_percentage": 15,
       "daily_counts": [
         2,
-        11,
+        10,
         2,
         2,
         4,
@@ -633,80 +633,6 @@
       ]
     },
     {
-      "name": "Genesis",
-      "count": 8,
-      "victims": [
-        {
-          "name": "Upper Township",
-          "date": "2026-01-16 08:26:02.281734",
-          "url": "http://genesis6ixpb5mcy4kudybtw5op2wqlrkocfogbnenz3c647ibqixiad.onion/31a696c2ccd7ef9a1b02/",
-          "discovered_date": "2026-01-16T08:26:02.281734"
-        },
-        {
-          "name": "Dedman Gray Property Consultants",
-          "date": "2026-01-16 08:26:45.197115",
-          "url": "http://genesis6ixpb5mcy4kudybtw5op2wqlrkocfogbnenz3c647ibqixiad.onion/d19fd82c34beb881a17a/",
-          "discovered_date": "2026-01-16T08:26:45.197115"
-        },
-        {
-          "name": "*** *********",
-          "date": "2026-01-14 09:51:33.575315",
-          "url": "http://genesis6ixpb5mcy4kudybtw5op2wqlrkocfogbnenz3c647ibqixiad.onion/a540b155da0a63b229ca/",
-          "discovered_date": "2026-01-14T09:51:33.575315"
-        },
-        {
-          "name": "Dedman Gray Property Consultants",
-          "date": "2026-01-16T08:26:45+00:00",
-          "url": "https://www.ransomware.live/id/RGVkbWFuIEdyYXkgUHJvcGVydHkgQ29uc3VsdGFudHNAZ2VuZXNpcw==",
-          "discovered_date": "2026-01-16T08:26:45+00:00"
-        },
-        {
-          "name": "Upper Township",
-          "date": "2026-01-16T08:26:02+00:00",
-          "url": "https://www.ransomware.live/id/VXBwZXIgVG93bnNoaXBAZ2VuZXNpcw==",
-          "discovered_date": "2026-01-16T08:26:02+00:00"
-        },
-        {
-          "name": "*** *********",
-          "date": "2026-01-14T09:51:33+00:00",
-          "url": "https://www.ransomware.live/id/KioqICoqKioqKioqKkBnZW5lc2lz",
-          "discovered_date": "2026-01-14T09:51:33+00:00"
-        },
-        {
-          "name": "Novelty Technology Care Espana (Part of GRUPO NTC)",
-          "date": "2026-01-11T12:23:53+00:00",
-          "url": "https://www.ransomware.live/id/Tm92ZWx0eSBUZWNobm9sb2d5IENhcmUgRXNwYW5hIChQYXJ0IG9mIEdSVVBPIE5UQylAZ2VuZXNpcw==",
-          "discovered_date": "2026-01-11T12:23:53+00:00"
-        },
-        {
-          "name": "Advanced Family Surgery Center (Covenant Health)",
-          "date": "2026-01-11T12:23:13+00:00",
-          "url": "https://www.ransomware.live/id/QWR2YW5jZWQgRmFtaWx5IFN1cmdlcnkgQ2VudGVyIChDb3ZlbmFudCBIZWFsdGgpQGdlbmVzaXM=",
-          "discovered_date": "2026-01-11T12:23:13+00:00"
-        }
-      ],
-      "industries": [
-        "Business Services",
-        "Not Found"
-      ],
-      "countries": [
-        "ES",
-        "GB",
-        "US"
-      ],
-      "trend": "stable",
-      "trend_percentage": 0,
-      "daily_counts": [
-        0,
-        0,
-        2,
-        0,
-        4,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Beast",
       "count": 8,
       "victims": [
@@ -915,6 +841,67 @@
       ]
     },
     {
+      "name": "Genesis",
+      "count": 6,
+      "victims": [
+        {
+          "name": "Upper Township",
+          "date": "2026-01-16 08:26:02.281734",
+          "url": "http://genesis6ixpb5mcy4kudybtw5op2wqlrkocfogbnenz3c647ibqixiad.onion/31a696c2ccd7ef9a1b02/",
+          "discovered_date": "2026-01-16T08:26:02.281734"
+        },
+        {
+          "name": "Dedman Gray Property Consultants",
+          "date": "2026-01-16 08:26:45.197115",
+          "url": "http://genesis6ixpb5mcy4kudybtw5op2wqlrkocfogbnenz3c647ibqixiad.onion/d19fd82c34beb881a17a/",
+          "discovered_date": "2026-01-16T08:26:45.197115"
+        },
+        {
+          "name": "*** *********",
+          "date": "2026-01-14 09:51:33.575315",
+          "url": "http://genesis6ixpb5mcy4kudybtw5op2wqlrkocfogbnenz3c647ibqixiad.onion/a540b155da0a63b229ca/",
+          "discovered_date": "2026-01-14T09:51:33.575315"
+        },
+        {
+          "name": "Dedman Gray Property Consultants",
+          "date": "2026-01-16T08:26:45+00:00",
+          "url": "https://www.ransomware.live/id/RGVkbWFuIEdyYXkgUHJvcGVydHkgQ29uc3VsdGFudHNAZ2VuZXNpcw==",
+          "discovered_date": "2026-01-16T08:26:45+00:00"
+        },
+        {
+          "name": "Upper Township",
+          "date": "2026-01-16T08:26:02+00:00",
+          "url": "https://www.ransomware.live/id/VXBwZXIgVG93bnNoaXBAZ2VuZXNpcw==",
+          "discovered_date": "2026-01-16T08:26:02+00:00"
+        },
+        {
+          "name": "*** *********",
+          "date": "2026-01-14T09:51:33+00:00",
+          "url": "https://www.ransomware.live/id/KioqICoqKioqKioqKkBnZW5lc2lz",
+          "discovered_date": "2026-01-14T09:51:33+00:00"
+        }
+      ],
+      "industries": [
+        "Business Services",
+        "Not Found"
+      ],
+      "countries": [
+        "GB",
+        "US"
+      ],
+      "trend": "stable",
+      "trend_percentage": 0,
+      "daily_counts": [
+        0,
+        0,
+        2,
+        0,
+        4,
+        0,
+        0
+      ]
+    },
+    {
       "name": "Everest",
       "count": 6,
       "victims": [
@@ -1039,66 +1026,6 @@
       ]
     },
     {
-      "name": "Obscura",
-      "count": 6,
-      "victims": [
-        {
-          "name": "Revoil",
-          "date": "2026-01-11T19:46:29+00:00",
-          "url": "https://www.ransomware.live/id/UmV2b2lsQG9ic2N1cmE=",
-          "discovered_date": "2026-01-11T19:46:29+00:00"
-        },
-        {
-          "name": "CleverPower",
-          "date": "2026-01-11T10:49:08+00:00",
-          "url": "https://www.ransomware.live/id/Q2xldmVyUG93ZXJAb2JzY3VyYQ==",
-          "discovered_date": "2026-01-11T10:49:08+00:00"
-        },
-        {
-          "name": "Trend Import Export",
-          "date": "2026-01-11T10:48:43+00:00",
-          "url": "https://www.ransomware.live/id/VHJlbmQgSW1wb3J0IEV4cG9ydEBvYnNjdXJh",
-          "discovered_date": "2026-01-11T10:48:43+00:00"
-        },
-        {
-          "name": "Thai Petroleum & Trading",
-          "date": "2026-01-11T10:48:18+00:00",
-          "url": "https://www.ransomware.live/id/VGhhaSBQZXRyb2xldW0gJiBUcmFkaW5nQG9ic2N1cmE=",
-          "discovered_date": "2026-01-11T10:48:18+00:00"
-        },
-        {
-          "name": "STC Concrete Product",
-          "date": "2026-01-11T10:47:54+00:00",
-          "url": "https://www.ransomware.live/id/U1RDIENvbmNyZXRlIFByb2R1Y3RAb2JzY3VyYQ==",
-          "discovered_date": "2026-01-11T10:47:54+00:00"
-        },
-        {
-          "name": "REDtone",
-          "date": "2026-01-11T10:47:29+00:00",
-          "url": "https://www.ransomware.live/id/UkVEdG9uZUBvYnNjdXJh",
-          "discovered_date": "2026-01-11T10:47:29+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "GR",
-        "MY",
-        "N/A",
-        "TH"
-      ],
-      "trend": "stable",
-      "trend_percentage": 0,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Benzona",
       "count": 5,
       "victims": [
@@ -1155,7 +1082,7 @@
     },
     {
       "name": "Nova",
-      "count": 5,
+      "count": 4,
       "victims": [
         {
           "name": "The National Auto Loan Network",
@@ -1180,12 +1107,6 @@
           "date": "2026-01-13T12:19:00+00:00",
           "url": "https://www.ransomware.live/id/RHViYWkgQWlyIFdpbmdAbm92YQ==",
           "discovered_date": "2026-01-13T12:19:00+00:00"
-        },
-        {
-          "name": "Cisneros group",
-          "date": "2026-01-11T11:54:02+00:00",
-          "url": "https://www.ransomware.live/id/Q2lzbmVyb3MgZ3JvdXBAbm92YQ==",
-          "discovered_date": "2026-01-11T11:54:02+00:00"
         }
       ],
       "industries": [
@@ -1194,8 +1115,7 @@
       ],
       "countries": [
         "AE",
-        "US",
-        "VE"
+        "US"
       ],
       "trend": "down",
       "trend_percentage": -5,
@@ -1378,6 +1298,33 @@
       ]
     },
     {
+      "name": "Handala",
+      "count": 1,
+      "victims": [
+        {
+          "name": "Avraham Hayyim ( Mehrdad Rahimi ) – Mossad Agent",
+          "date": "2026-01-18 12:25:35.310658",
+          "url": "https://handala-hack.to/avraham-hayyim-mehrdad-rahimi-hacked-mossad-agent/",
+          "discovered_date": "2026-01-18T12:25:35.310658"
+        }
+      ],
+      "industries": [
+        "Not Found"
+      ],
+      "countries": [],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
       "name": "Kazu",
       "count": 1,
       "victims": [
@@ -1423,6 +1370,33 @@
       "trend_percentage": -5,
       "daily_counts": [
         1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Obscura",
+      "count": 1,
+      "victims": [
+        {
+          "name": "Revoil",
+          "date": "2026-01-11T19:46:29+00:00",
+          "url": "https://www.ransomware.live/id/UmV2b2lsQG9ic2N1cmE=",
+          "discovered_date": "2026-01-11T19:46:29+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "GR"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
         0,
         0,
         0,
