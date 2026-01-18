@@ -1,13 +1,25 @@
 {
-  "last_updated": "2026-01-17T12:41:06.747828",
+  "last_updated": "2026-01-18T01:55:27.489570",
   "period": "Last 7 days",
-  "total_groups": 23,
-  "total_victims": 263,
+  "total_groups": 22,
+  "total_victims": 261,
   "groups": [
     {
       "name": "Qilin",
-      "count": 52,
+      "count": 55,
       "victims": [
+        {
+          "name": "Orthopaedic Specialists of Massachusetts",
+          "date": "2026-01-17 17:58:48.912977",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=570dc719-84f3-3537-b786-46fae6eb04cf",
+          "discovered_date": "2026-01-17T17:58:48.912977"
+        },
+        {
+          "name": "Cary Pediatric Center",
+          "date": "2026-01-17 14:56:34.554052",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=83a9eeb0-57c8-36e8-9857-2d3635169191",
+          "discovered_date": "2026-01-17T14:56:34.554052"
+        },
         {
           "name": "Fluorsid Spa",
           "date": "2026-01-17 07:00:44.833539",
@@ -55,18 +67,6 @@
           "date": "2026-01-15 19:59:34.228935",
           "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=2795747b-e19f-3de7-a4d8-41fe1d9bd8b9",
           "discovered_date": "2026-01-15T19:59:34.228935"
-        },
-        {
-          "name": "Aero-Coating",
-          "date": "2026-01-15 19:58:54.786036",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=76d39630-8a9b-3e2a-b18d-46aa47f9a9ed",
-          "discovered_date": "2026-01-15T19:58:54.786036"
-        },
-        {
-          "name": "Bergmanis Preyra",
-          "date": "2026-01-15 19:58:14.629098",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=784ba1c7-b880-3042-8c04-5373bb399723",
-          "discovered_date": "2026-01-15T19:58:14.629098"
         }
       ],
       "industries": [
@@ -79,20 +79,20 @@
       "countries": [
         "CA",
         "DE",
-        "FR",
         "GB",
-        "IT"
+        "IT",
+        "MX"
       ],
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        3,
         6,
         0,
         14,
         14,
         2,
-        12
+        16,
+        0
       ]
     },
     {
@@ -177,12 +177,12 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        0,
         6,
         4,
         10,
         6,
         10,
+        0,
         0
       ]
     },
@@ -270,8 +270,8 @@
       "daily_counts": [
         0,
         0,
-        0,
         34,
+        0,
         0,
         0,
         0
@@ -279,7 +279,7 @@
     },
     {
       "name": "Incransom",
-      "count": 23,
+      "count": 21,
       "victims": [
         {
           "name": "ecsc.org",
@@ -312,12 +312,6 @@
           "discovered_date": "2026-01-13T03:51:46.577093"
         },
         {
-          "name": "Rodney's Sign Company",
-          "date": "2026-01-13 03:51:33.945138",
-          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/696215908f1d14b743699a5a",
-          "discovered_date": "2026-01-13T03:51:33.945138"
-        },
-        {
           "name": "gbmme.com",
           "date": "2026-01-13 11:46:35.528465",
           "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/69657e3e8f1d14b7437febc5",
@@ -330,20 +324,25 @@
           "discovered_date": "2026-01-13T21:52:49.741231"
         },
         {
-          "name": "Fit-Line Global",
-          "date": "2026-01-13 00:52:56.974440",
-          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6960ed1d8f1d14b743621cad",
-          "discovered_date": "2026-01-13T00:52:56.974440"
-        },
-        {
           "name": "https://bellowsmfg.com/company/",
           "date": "2026-01-13 22:46:22.258536",
           "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6966c1018f1d14b7439913ea",
           "discovered_date": "2026-01-13T22:46:22.258536"
+        },
+        {
+          "name": "ecsc.org",
+          "date": "2026-01-16T17:35:49+00:00",
+          "url": "https://www.ransomware.live/id/ZWNzYy5vcmdAaW5jcmFuc29t",
+          "discovered_date": "2026-01-16T17:35:49+00:00"
+        },
+        {
+          "name": "cirrusaviation",
+          "date": "2026-01-16T03:48:35+00:00",
+          "url": "https://www.ransomware.live/id/Y2lycnVzYXZpYXRpb25AaW5jcmFuc29t",
+          "discovered_date": "2026-01-16T03:48:35+00:00"
         }
       ],
       "industries": [
-        "Business Services",
         "Manufacturing",
         "Not Found",
         "Technology",
@@ -358,11 +357,102 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
+        2,
+        11,
+        2,
+        2,
+        4,
         0,
+        0
+      ]
+    },
+    {
+      "name": "Tengu",
+      "count": 17,
+      "victims": [
+        {
+          "name": "Nafae Sanitaire S.a.r.l",
+          "date": "2026-01-17 20:00:10.522217",
+          "url": "http://longcc4fqrfcqt5lzceutylaxir6h66fp6df3oin6mvwvz6pfdbxc6qd.onion/blog/b4a7f8a258b93ba3de493134d47355ffb5b1247dc32f06d17d036c2fab17c457/",
+          "discovered_date": "2026-01-17T20:00:10.522217"
+        },
+        {
+          "name": "anfibius.net",
+          "date": "2026-01-17 14:00:59.044755",
+          "url": "http://longcc4fqrfcqt5lzceutylaxir6h66fp6df3oin6mvwvz6pfdbxc6qd.onion/blog/effd2f3a99a333472d7397332f60f208e445cb97d57df4fb019cbbc4e77be843/",
+          "discovered_date": "2026-01-17T14:00:59.044755"
+        },
+        {
+          "name": "https://comercialautomotriz.com",
+          "date": "2026-01-16 20:01:04.567812",
+          "url": "http://longcc4fqrfcqt5lzceutylaxir6h66fp6df3oin6mvwvz6pfdbxc6qd.onion/blog/56d5ba2b78a185c8232a69cf3e5be18f67f5ee8704a61dd0556b672b5a92e83c/",
+          "discovered_date": "2026-01-16T20:01:04.567812"
+        },
+        {
+          "name": "Grupo Roa",
+          "date": "2026-01-16 12:12:08.490548",
+          "url": "http://longcc4fqrfcqt5lzceutylaxir6h66fp6df3oin6mvwvz6pfdbxc6qd.onion/blog/c080d02876ae0fd24190edd17c6140ca44b1626050eb86fab1a0a277a116bf3b/",
+          "discovered_date": "2026-01-16T12:12:08.490548"
+        },
+        {
+          "name": "Nordstrom Rack",
+          "date": "2026-01-15 02:49:57.338610",
+          "url": "http://longcc4fqrfcqt5lzceutylaxir6h66fp6df3oin6mvwvz6pfdbxc6qd.onion/blog/9ed049f13a6c03647605778e699066649aea5265c7351bff6fd5e509a294ba2e/",
+          "discovered_date": "2026-01-15T02:49:57.338610"
+        },
+        {
+          "name": "Samson Equipment",
+          "date": "2026-01-14 23:29:41.611513",
+          "url": "http://longcc4fqrfcqt5lzceutylaxir6h66fp6df3oin6mvwvz6pfdbxc6qd.onion/blog/b15894372ddbb2ea10962a5ec4eaab9594a0406f9ce1d66c7db3c9e23ef52003/",
+          "discovered_date": "2026-01-14T23:29:41.611513"
+        },
+        {
+          "name": "https://seha.org.sa",
+          "date": "2026-01-14 15:27:16.739537",
+          "url": "http://longcc4fqrfcqt5lzceutylaxir6h66fp6df3oin6mvwvz6pfdbxc6qd.onion/blog/9194b5bee0d8552e9421cd7003d82a7861469b78856b501259d0c881519df3cf/",
+          "discovered_date": "2026-01-14T15:27:16.739537"
+        },
+        {
+          "name": "Quick Safety Electric",
+          "date": "2026-01-14 00:23:47.633206",
+          "url": "http://longcc4fqrfcqt5lzceutylaxir6h66fp6df3oin6mvwvz6pfdbxc6qd.onion/blog/b97904dfa9f56c1edd2c4bc06a22786ff9ec1bb76c4e5717796b18ca076bbbb5/",
+          "discovered_date": "2026-01-14T00:23:47.633206"
+        },
+        {
+          "name": "Nafae Sanitaire S.a.r.l",
+          "date": "2026-01-17T20:00:10+00:00",
+          "url": "https://www.ransomware.live/id/TmFmYWUgU2FuaXRhaXJlIFMuYS5yLmxAdGVuZ3U=",
+          "discovered_date": "2026-01-17T20:00:10+00:00"
+        },
+        {
+          "name": "anfibius.net",
+          "date": "2026-01-17T14:00:59+00:00",
+          "url": "https://www.ransomware.live/id/YW5maWJpdXMubmV0QHRlbmd1",
+          "discovered_date": "2026-01-17T14:00:59+00:00"
+        }
+      ],
+      "industries": [
+        "Agriculture and Food Production",
+        "Consumer Services",
+        "Healthcare",
+        "Manufacturing",
+        "Not Found"
+      ],
+      "countries": [
+        "CO",
+        "EC",
+        "ES",
+        "MA",
+        "N/A"
+      ],
+      "trend": "up",
+      "trend_percentage": 15,
+      "daily_counts": [
+        1,
+        0,
+        6,
         2,
-        13,
-        2,
-        2,
+        4,
         4,
         0
       ]
@@ -445,103 +535,12 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        8,
         2,
         1,
         2,
         2,
         0,
-        0
-      ]
-    },
-    {
-      "name": "Tengu",
-      "count": 13,
-      "victims": [
-        {
-          "name": "https://comercialautomotriz.com",
-          "date": "2026-01-16 20:01:04.567812",
-          "url": "http://longcc4fqrfcqt5lzceutylaxir6h66fp6df3oin6mvwvz6pfdbxc6qd.onion/blog/56d5ba2b78a185c8232a69cf3e5be18f67f5ee8704a61dd0556b672b5a92e83c/",
-          "discovered_date": "2026-01-16T20:01:04.567812"
-        },
-        {
-          "name": "Grupo Roa",
-          "date": "2026-01-16 12:12:08.490548",
-          "url": "http://longcc4fqrfcqt5lzceutylaxir6h66fp6df3oin6mvwvz6pfdbxc6qd.onion/blog/c080d02876ae0fd24190edd17c6140ca44b1626050eb86fab1a0a277a116bf3b/",
-          "discovered_date": "2026-01-16T12:12:08.490548"
-        },
-        {
-          "name": "Nordstrom Rack",
-          "date": "2026-01-15 02:49:57.338610",
-          "url": "http://longcc4fqrfcqt5lzceutylaxir6h66fp6df3oin6mvwvz6pfdbxc6qd.onion/blog/9ed049f13a6c03647605778e699066649aea5265c7351bff6fd5e509a294ba2e/",
-          "discovered_date": "2026-01-15T02:49:57.338610"
-        },
-        {
-          "name": "Samson Equipment",
-          "date": "2026-01-14 23:29:41.611513",
-          "url": "http://longcc4fqrfcqt5lzceutylaxir6h66fp6df3oin6mvwvz6pfdbxc6qd.onion/blog/b15894372ddbb2ea10962a5ec4eaab9594a0406f9ce1d66c7db3c9e23ef52003/",
-          "discovered_date": "2026-01-14T23:29:41.611513"
-        },
-        {
-          "name": "https://seha.org.sa",
-          "date": "2026-01-14 15:27:16.739537",
-          "url": "http://longcc4fqrfcqt5lzceutylaxir6h66fp6df3oin6mvwvz6pfdbxc6qd.onion/blog/9194b5bee0d8552e9421cd7003d82a7861469b78856b501259d0c881519df3cf/",
-          "discovered_date": "2026-01-14T15:27:16.739537"
-        },
-        {
-          "name": "Quick Safety Electric",
-          "date": "2026-01-14 00:23:47.633206",
-          "url": "http://longcc4fqrfcqt5lzceutylaxir6h66fp6df3oin6mvwvz6pfdbxc6qd.onion/blog/b97904dfa9f56c1edd2c4bc06a22786ff9ec1bb76c4e5717796b18ca076bbbb5/",
-          "discovered_date": "2026-01-14T00:23:47.633206"
-        },
-        {
-          "name": "https://comercialautomotriz.com",
-          "date": "2026-01-16T20:01:04+00:00",
-          "url": "https://www.ransomware.live/id/aHR0cHM6Ly9jb21lcmNpYWxhdXRvbW90cml6LmNvbUB0ZW5ndQ==",
-          "discovered_date": "2026-01-16T20:01:04+00:00"
-        },
-        {
-          "name": "Grupo Roa",
-          "date": "2026-01-16T12:12:08+00:00",
-          "url": "https://www.ransomware.live/id/R3J1cG8gUm9hQHRlbmd1",
-          "discovered_date": "2026-01-16T12:12:08+00:00"
-        },
-        {
-          "name": "Nordstrom Rack",
-          "date": "2026-01-15T02:49:57+00:00",
-          "url": "https://www.ransomware.live/id/Tm9yZHN0cm9tIFJhY2tAdGVuZ3U=",
-          "discovered_date": "2026-01-15T02:49:57+00:00"
-        },
-        {
-          "name": "Samson Equipment",
-          "date": "2026-01-14T23:29:41+00:00",
-          "url": "https://www.ransomware.live/id/U2Ftc29uIEVxdWlwbWVudEB0ZW5ndQ==",
-          "discovered_date": "2026-01-14T23:29:41+00:00"
-        }
-      ],
-      "industries": [
-        "Agriculture and Food Production",
-        "Consumer Services",
-        "Healthcare",
-        "Manufacturing",
-        "Not Found"
-      ],
-      "countries": [
-        "CO",
-        "EC",
-        "N/A",
-        "SA",
-        "TH"
-      ],
-      "trend": "up",
-      "trend_percentage": 15,
-      "daily_counts": [
         0,
-        1,
-        0,
-        6,
-        2,
-        4,
         0
       ]
     },
@@ -624,100 +623,11 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        7,
         0,
         0,
         2,
         0,
         2,
-        0
-      ]
-    },
-    {
-      "name": "Everest",
-      "count": 10,
-      "victims": [
-        {
-          "name": "Notin - Database leaked",
-          "date": "2026-01-14 23:46:02.585418",
-          "url": "http://ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad.onion/news/Notin/",
-          "discovered_date": "2026-01-14T23:46:02.585418"
-        },
-        {
-          "name": "National Money Mart Company - Database leaked",
-          "date": "2026-01-14 23:45:44.857984",
-          "url": "http://ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad.onion/news/National_Money_Mart_Company/",
-          "discovered_date": "2026-01-14T23:45:44.857984"
-        },
-        {
-          "name": "IDeaS.com - Database leaked",
-          "date": "2026-01-13 01:50:52.024453",
-          "url": "http://ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad.onion/news/IDeaS/",
-          "discovered_date": "2026-01-13T01:50:52.024453"
-        },
-        {
-          "name": "Morgan Records Management - Database leaked",
-          "date": "2026-01-13 01:50:32.319519",
-          "url": "http://ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad.onion/news/Morgan_Records_Management/",
-          "discovered_date": "2026-01-13T01:50:32.319519"
-        },
-        {
-          "name": "Notin - Database leaked",
-          "date": "2026-01-14T23:46:02+00:00",
-          "url": "https://www.ransomware.live/id/Tm90aW4gLSBEYXRhYmFzZSBsZWFrZWRAZXZlcmVzdA==",
-          "discovered_date": "2026-01-14T23:46:02+00:00"
-        },
-        {
-          "name": "National Money Mart Company - Database leaked",
-          "date": "2026-01-14T23:45:44+00:00",
-          "url": "https://www.ransomware.live/id/TmF0aW9uYWwgTW9uZXkgTWFydCBDb21wYW55IC0gRGF0YWJhc2UgbGVha2VkQGV2ZXJlc3Q=",
-          "discovered_date": "2026-01-14T23:45:44+00:00"
-        },
-        {
-          "name": "IDeaS.com - Database leaked",
-          "date": "2026-01-13T01:50:52+00:00",
-          "url": "https://www.ransomware.live/id/SURlYVMuY29tIC0gRGF0YWJhc2UgbGVha2VkQGV2ZXJlc3Q=",
-          "discovered_date": "2026-01-13T01:50:52+00:00"
-        },
-        {
-          "name": "Morgan Records Management - Database leaked",
-          "date": "2026-01-13T01:50:32+00:00",
-          "url": "https://www.ransomware.live/id/TW9yZ2FuIFJlY29yZHMgTWFuYWdlbWVudCAtIERhdGFiYXNlIGxlYWtlZEBldmVyZXN0",
-          "discovered_date": "2026-01-13T01:50:32+00:00"
-        },
-        {
-          "name": "Virginia Records",
-          "date": "2026-01-10T18:21:13+00:00",
-          "url": "https://www.ransomware.live/id/VmlyZ2luaWEgUmVjb3Jkc0BldmVyZXN0",
-          "discovered_date": "2026-01-10T18:21:13+00:00"
-        },
-        {
-          "name": "Nissan Motor Corporation",
-          "date": "2026-01-10T18:20:53+00:00",
-          "url": "https://www.ransomware.live/id/Tmlzc2FuIE1vdG9yIENvcnBvcmF0aW9uQGV2ZXJlc3Q=",
-          "discovered_date": "2026-01-10T18:20:53+00:00"
-        }
-      ],
-      "industries": [
-        "Financial Services",
-        "Not Found",
-        "Technology"
-      ],
-      "countries": [
-        "BG",
-        "CA",
-        "ES",
-        "JP",
-        "N/A"
-      ],
-      "trend": "stable",
-      "trend_percentage": 0,
-      "daily_counts": [
-        0,
-        0,
-        4,
-        4,
-        0,
         0,
         0
       ]
@@ -787,12 +697,12 @@
       "trend": "stable",
       "trend_percentage": 0,
       "daily_counts": [
-        2,
         0,
         0,
         2,
         0,
         4,
+        0,
         0
       ]
     },
@@ -862,8 +772,8 @@
       "trend_percentage": 0,
       "daily_counts": [
         0,
-        0,
         8,
+        0,
         0,
         0,
         0,
@@ -932,8 +842,8 @@
       "trend": "stable",
       "trend_percentage": 0,
       "daily_counts": [
-        0,
         8,
+        0,
         0,
         0,
         0,
@@ -998,9 +908,72 @@
         0,
         0,
         0,
+        2,
+        4,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Everest",
+      "count": 6,
+      "victims": [
+        {
+          "name": "Notin - Database leaked",
+          "date": "2026-01-14 23:46:02.585418",
+          "url": "http://ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad.onion/news/Notin/",
+          "discovered_date": "2026-01-14T23:46:02.585418"
+        },
+        {
+          "name": "National Money Mart Company - Database leaked",
+          "date": "2026-01-14 23:45:44.857984",
+          "url": "http://ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad.onion/news/National_Money_Mart_Company/",
+          "discovered_date": "2026-01-14T23:45:44.857984"
+        },
+        {
+          "name": "Notin - Database leaked",
+          "date": "2026-01-14T23:46:02+00:00",
+          "url": "https://www.ransomware.live/id/Tm90aW4gLSBEYXRhYmFzZSBsZWFrZWRAZXZlcmVzdA==",
+          "discovered_date": "2026-01-14T23:46:02+00:00"
+        },
+        {
+          "name": "National Money Mart Company - Database leaked",
+          "date": "2026-01-14T23:45:44+00:00",
+          "url": "https://www.ransomware.live/id/TmF0aW9uYWwgTW9uZXkgTWFydCBDb21wYW55IC0gRGF0YWJhc2UgbGVha2VkQGV2ZXJlc3Q=",
+          "discovered_date": "2026-01-14T23:45:44+00:00"
+        },
+        {
+          "name": "IDeaS.com - Database leaked",
+          "date": "2026-01-13T01:50:52+00:00",
+          "url": "https://www.ransomware.live/id/SURlYVMuY29tIC0gRGF0YWJhc2UgbGVha2VkQGV2ZXJlc3Q=",
+          "discovered_date": "2026-01-13T01:50:52+00:00"
+        },
+        {
+          "name": "Morgan Records Management - Database leaked",
+          "date": "2026-01-13T01:50:32+00:00",
+          "url": "https://www.ransomware.live/id/TW9yZ2FuIFJlY29yZHMgTWFuYWdlbWVudCAtIERhdGFiYXNlIGxlYWtlZEBldmVyZXN0",
+          "discovered_date": "2026-01-13T01:50:32+00:00"
+        }
+      ],
+      "industries": [
+        "Financial Services",
+        "Not Found"
+      ],
+      "countries": [
+        "CA",
+        "ES",
+        "N/A",
+        "US"
+      ],
+      "trend": "stable",
+      "trend_percentage": 0,
+      "daily_counts": [
         0,
         2,
         4,
+        0,
+        0,
+        0,
         0
       ]
     },
@@ -1057,8 +1030,8 @@
       "trend_percentage": 0,
       "daily_counts": [
         0,
-        0,
         6,
+        0,
         0,
         0,
         0,
@@ -1116,7 +1089,7 @@
       "trend": "stable",
       "trend_percentage": 0,
       "daily_counts": [
-        6,
+        0,
         0,
         0,
         0,
@@ -1171,13 +1144,13 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         1,
         0,
         0,
         0,
         0,
-        4
+        4,
+        0
       ]
     },
     {
@@ -1227,10 +1200,10 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        1,
         0,
         2,
         2,
+        0,
         0,
         0,
         0
@@ -1278,8 +1251,8 @@
       "daily_counts": [
         0,
         0,
-        0,
         4,
+        0,
         0,
         0,
         0
@@ -1327,47 +1300,7 @@
       "daily_counts": [
         0,
         0,
-        0,
         4,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Play",
-      "count": 3,
-      "victims": [
-        {
-          "name": "Launie & Marino",
-          "date": "2026-01-10T20:56:16+00:00",
-          "url": "https://www.ransomware.live/id/TGF1bmllICYgTWFyaW5vQHBsYXk=",
-          "discovered_date": "2026-01-10T20:56:16+00:00"
-        },
-        {
-          "name": "Denny's 5th Avenue Bakery",
-          "date": "2026-01-10T20:55:38+00:00",
-          "url": "https://www.ransomware.live/id/RGVubnkncyA1dGggQXZlbnVlIEJha2VyeUBwbGF5",
-          "discovered_date": "2026-01-10T20:55:38+00:00"
-        },
-        {
-          "name": "WiZiX Technology Group",
-          "date": "2026-01-10T20:54:58+00:00",
-          "url": "https://www.ransomware.live/id/V2laaVggVGVjaG5vbG9neSBHcm91cEBwbGF5",
-          "discovered_date": "2026-01-10T20:54:58+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "N/A",
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
         0,
         0,
         0,
@@ -1403,8 +1336,8 @@
         0,
         0,
         0,
-        0,
         2,
+        0,
         0,
         0
       ]
@@ -1436,8 +1369,8 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         2,
+        0,
         0,
         0,
         0,
@@ -1462,8 +1395,8 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         1,
+        0,
         0,
         0,
         0,
@@ -1489,8 +1422,8 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         1,
+        0,
         0,
         0,
         0,
