@@ -5,6 +5,114 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Jan 18 2026",
+            "headline": "Surge in API Requests Targets LLMs—Honeypot Logs Reveal",
+            "title": "Increased API Requests for LLMs Detected in Honeypot Logs",
+            "content": "Security researchers at SANS Internet Storm Center have observed a notable increase in API requests directed at various large language models (LLMs) within their honeypot logs. This surge suggests heightened interest or potential probing activities targeting AI systems. While the InfoCON status remains green, indicating no immediate threat, the volume of requests could signal preparatory actions for future exploitation attempts. Organizations utilizing LLMs should review their API security measures and monitor for unusual activity. This trend underscores the growing focus on AI systems as potential attack vectors in the cybersecurity landscape.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32618",
+            "relatedResources": [
+                {
+                    "label": "API Security Best Practices",
+                    "url": "/guides/api-security-best-practices.html",
+                    "icon": "fa-plug"
+                }
+            ]
+        },
+        {
+            "date": "Jan 17 2026",
+            "headline": "Hacker Pleads Guilty—Supreme Court System Breached",
+            "title": "Tennessee Man Admits to Hacking Supreme Court and Federal Systems",
+            "content": "Nicholas Moore, a Tennessee resident, has pleaded guilty to hacking the U.S. Supreme Court’s filing system, as well as unauthorized access to systems belonging to AmeriCorps and the Department of Veterans Affairs. Moore&#x27;s actions highlight vulnerabilities within critical government infrastructures, emphasizing the need for robust cybersecurity measures. The breaches could have exposed sensitive legal and personal information, potentially impacting numerous individuals and operations. Federal agencies are urged to reassess their security protocols to prevent similar incidents. This case serves as a stark reminder of the persistent threats facing governmental digital assets.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/tennessee-man-pleads-guilty-to-repeatedly-hacking-supreme-courts-filing-system/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 17 2026",
+            "headline": "Wireshark 4.6.3 Fixes 4 Vulnerabilities—Update Recommended",
+            "title": "Wireshark 4.6.3 Released with Critical Vulnerability Patches",
+            "content": "Wireshark, the popular network protocol analyzer, has released version 4.6.3, addressing four critical vulnerabilities and resolving nine additional bugs. These updates are crucial for maintaining secure network analysis environments, as unpatched vulnerabilities could be exploited for unauthorized data access or manipulation. The release underscores the importance of regular software updates to safeguard against potential security threats. Users are advised to download the latest version to ensure their systems remain protected against known vulnerabilities. This update is part of Wireshark&#x27;s ongoing commitment to security and reliability.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32636",
+            "relatedResources": [
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Jan 17 2026",
+            "headline": "ChatGPT to Display Ads—Free and Go Plans Affected",
+            "title": "OpenAI Introduces Ads in ChatGPT for U.S. Free and Go Users",
+            "content": "OpenAI has announced that it will begin displaying advertisements in ChatGPT for U.S. adults using both the free and ChatGPT Go subscription tiers. This move aims to monetize the AI platform while expanding its global reach. Users should be aware that their data and interactions might be used to tailor ad experiences, raising privacy considerations. As AI services grow, the integration of ads highlights the evolving business models in the AI sector. Users may need to review privacy settings and understand how their data is utilized in this new ad-supported environment.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/01/openai-to-show-ads-in-chatgpt-for.html",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Jan 17 2026",
+            "headline": "AI-Powered Malware Outpaces Defenses—AppGuard Warns",
+            "title": "AppGuard Critiques AI-Driven Malware and Expands Platform Release",
+            "content": "AppGuard has released a profile highlighting the challenges posed by AI-enhanced malware, which is increasingly difficult to detect and counter. The report emphasizes how AI enables malware to adapt rapidly, outpacing traditional cybersecurity defenses. To combat this, AppGuard advocates for a fundamental shift in security strategies, focusing on proactive measures rather than reactive defenses. The company is also expanding its insider release for its next-generation platform, aiming to bolster defenses against these sophisticated threats. This development underscores the urgent need for innovative solutions in the face of evolving cyber risks.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4118270/appguard-critiques-ai-hyped-defenses-expands-its-insider-release-for-its-next-generation-platform.html",
+            "relatedResources": [
+                {
+                    "label": "React Analysis",
+                    "url": "/articles/react2shell-cve-2025-55182-react-vulnerability.html",
+                    "icon": "fa-file-alt"
+                }
+            ]
+        },
+        {
+            "date": "Jan 16 2026",
+            "headline": "FortiSIEM Flaw Exploited—Patch CVE-2025-64155 Urgently",
+            "title": "Critical FortiSIEM Vulnerability CVE-2025-64155 Under Active Exploitation",
+            "content": "A command injection vulnerability identified as CVE-2025-64155 in FortiSIEM has come under active exploitation shortly after its disclosure. This flaw allows attackers to execute arbitrary commands, posing significant risks to affected systems. Organizations using FortiSIEM are urged to apply patches immediately to prevent potential breaches. The rapid exploitation of this vulnerability highlights the importance of timely updates and vigilant monitoring of network systems. Fortinet users should prioritize security patches to mitigate this critical threat and protect sensitive data from unauthorized access.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/fortinet-critical-fortisiem-flaw-exploited",
+            "relatedResources": [
+                {
+                    "label": "CVE Tracker",
+                    "url": "/cve-tracker.html",
+                    "icon": "fa-bug"
+                },
+                {
+                    "label": "Fortinet Analysis",
+                    "url": "/articles/fortinet-fortigate-critical-exploit-2025.html",
+                    "icon": "fa-file-alt"
+                },
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Jan 16 2026",
+            "headline": "Researchers Hijack StealC Hackers&#x27; Control Panels",
+            "title": "XSS Flaw Allows Researchers to Access StealC Malware Control Panels",
+            "content": "Researchers have exploited a cross-site scripting (XSS) vulnerability in the control panels of the StealC info-stealing malware. This flaw enabled them to observe active sessions and gather intelligence on the attackers&#x27; infrastructure. The breach provides valuable insights into the operations of the StealC group, potentially aiding in dismantling their activities. This incident underscores the importance of securing web-based control panels to prevent unauthorized access and data leaks. Organizations should reassess their web security measures to protect against similar vulnerabilities.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/stealc-hackers-hacked-as-researchers-hijack-malware-control-panels/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 18 2026",
             "headline": "Chrome Users Can Now Disable AI Scam Detection",
             "title": "Google Chrome Allows Disabling On-Device AI for Scam Detection",
             "content": "Google Chrome has introduced a new feature allowing users to delete local AI models that power the browser&#x27;s &quot;Enhanced Protection&quot; feature, which was upgraded with AI capabilities last year. This development comes in response to privacy concerns, as the AI model operates on-device to detect and block potential scams. Users can now choose to disable this feature if they prefer not to have local AI processing. While this option offers more control, it may reduce the effectiveness of Chrome&#x27;s scam detection, especially for those who rely heavily on the browser&#x27;s security features. This move reflects growing user demand for customizable privacy settings in AI-powered applications.",
@@ -17,83 +125,6 @@ const websiteContent = {
                     "icon": "fa-brain"
                 }
             ]
-        },
-        {
-            "date": "Jan 17 2026",
-            "headline": "Black Basta Leader on EU’s Most Wanted List",
-            "title": "Black Basta Ransomware Leader Faces EU Most Wanted and INTERPOL Notice",
-            "content": "Authorities in Ukraine and Germany have identified two Ukrainians linked to the Russia-affiliated ransomware-as-a-service group, Black Basta. The group&#x27;s alleged leader, 35-year-old Russian national Oleg Evgenievich Nefedov, has been added to the EU&#x27;s Most Wanted list and issued an INTERPOL Red Notice. Black Basta is known for targeting high-profile organizations with sophisticated ransomware attacks. This development underscores the ongoing international efforts to dismantle cybercriminal networks and bring perpetrators to justice. Security professionals should remain vigilant against ransomware threats, as these groups continue to evolve and pose significant risks to global cybersecurity.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/01/black-basta-ransomware-hacker-leader.html",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Ransomware Response Playbook",
-                    "url": "/guides/ransomware-response-playbook.html",
-                    "icon": "fa-biohazard"
-                }
-            ]
-        },
-        {
-            "date": "Jan 17 2026",
-            "headline": "Malicious Chrome Extensions Target HR Platforms",
-            "title": "Credential-Stealing Chrome Extensions Exploit Enterprise HR Systems",
-            "content": "Security researchers have discovered malicious Chrome extensions masquerading as productivity and security tools, specifically targeting enterprise HR and ERP platforms. These extensions, available on the Chrome Web Store, were found stealing authentication credentials and blocking security management pages. The extensions pose a significant threat to enterprises by compromising sensitive employee data and hindering incident response efforts. Organizations using Chrome should audit their extensions and remove any suspicious ones immediately to mitigate potential data breaches. This incident highlights the importance of scrutinizing third-party browser extensions, particularly in enterprise environments.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/credential-stealing-chrome-extensions-target-enterprise-hr-platforms/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 17 2026",
-            "headline": "GhostPoster Extensions Reach 840,000 Installs",
-            "title": "Malicious GhostPoster Browser Extensions Found with 840,000 Installs",
-            "content": "Seventeen malicious browser extensions associated with the GhostPoster campaign have been identified across Chrome, Firefox, and Edge stores, amassing a total of 840,000 installations. These extensions engage in unauthorized social media posting and data collection, posing a privacy risk to users. The widespread installation of these extensions underscores the challenges in policing browser marketplaces for malicious content. Users are advised to review and remove any GhostPoster-related extensions to protect their data and privacy. This discovery emphasizes the need for enhanced security measures in browser extension ecosystems.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/malicious-ghostposter-browser-extensions-found-with-840-000-installs/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 16 2026",
-            "headline": "ChatGPT Go Subscription Launches with Ads",
-            "title": "OpenAI Launches $8 ChatGPT Go Subscription with Ads Worldwide",
-            "content": "OpenAI has rolled out its ChatGPT Go subscription globally, priced at $8 per month, offering users ten times more messages compared to the free tier. However, the subscription will include advertisements, marking a shift in OpenAI&#x27;s monetization strategy. The introduction of ads has raised questions about user experience and privacy, although OpenAI assures that ads will not influence the AI&#x27;s responses. This move aims to make premium AI access more affordable while diversifying OpenAI&#x27;s revenue streams. Users should weigh the benefits of increased message limits against the potential impact of ads on their interactions.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/chatgpt-go-subscription-rolls-out-worldwide-at-8-but-itll-show-you-ads/",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Jan 16 2026",
-            "headline": "OpenAI Assures Ads Won’t Skew ChatGPT Answers",
-            "title": "OpenAI Confirms Ads Won’t Influence ChatGPT&#x27;s Generated Answers",
-            "content": "OpenAI has confirmed that advertisements will be integrated into ChatGPT in the coming weeks, but assures users that these ads will not affect the AI&#x27;s generated responses. This announcement comes as part of OpenAI&#x27;s broader strategy to monetize its popular AI platform while maintaining the integrity of its outputs. The introduction of ads is expected to provide a new revenue stream without compromising the quality of the AI&#x27;s responses. Users can expect to see ads in their interactions but should not worry about the AI&#x27;s objectivity being compromised. This development highlights the balance OpenAI seeks between monetization and user trust.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-its-new-chatgpt-ads-wont-influence-answers/",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Jan 16 2026",
-            "headline": "Jordanian Guilty of Selling Network Access to FBI",
-            "title": "Jordanian National Pleads Guilty to Selling Network Access to FBI Agent",
-            "content": "A Jordanian national has pleaded guilty after inadvertently selling access to 50 company networks to an undercover FBI agent. Authorities traced the individual&#x27;s cybercrime activities through an email address linked to a 2016 U.S. visa application. This case highlights the ongoing threat posed by underground cybercrime forums where network access is frequently traded. Organizations are urged to strengthen their cybersecurity measures to prevent unauthorized access and mitigate potential breaches. This incident serves as a reminder of the importance of vigilance and proactive security strategies in safeguarding corporate networks.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/jordanian-national-access-broker-pleads-guilty/",
-            "relatedResources": []
         },
         {
             "date": "Mar 23 2026",
@@ -114,27 +145,12 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Jan 17 2026",
-            "headline": "NeurIPS 2025: Reinforcement Learning Faces Depth Challenge",
-            "title": "NeurIPS 2025 Highlights Limitations in Reinforcement Learning Without Representation Depth",
-            "content": "At NeurIPS 2025, researchers emphasized the limitations of reinforcement learning (RL) when lacking sufficient representation depth. The conference showcased papers that questioned existing assumptions about scaling and system design in AI models. Without deep representation, RL models plateau, limiting their ability to handle complex tasks and environments. This revelation affects developers and researchers focusing on AI scalability and efficiency. The insights call for a reevaluation of current RL methodologies, urging professionals to integrate deeper representational frameworks to enhance model performance. The findings highlight a pivotal shift in AI research priorities.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/why-reinforcement-learning-plateaus-without-representation-depth-and-other",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 16 2026",
-            "headline": "Runpod Hits $120M ARR—From Reddit to Riches",
-            "title": "Runpod Achieves $120M Annual Recurring Revenue After Reddit Launch",
-            "content": "AI cloud startup Runpod has reached $120 million in annual recurring revenue (ARR), a remarkable feat for a company that began with a simple Reddit post. This milestone demonstrates the power of community-driven product development and timing in the tech industry. Runpod&#x27;s growth underscores the increasing demand for scalable AI cloud solutions, particularly among developers seeking efficient and cost-effective platforms. The startup&#x27;s journey from a grassroots idea to a major player in the AI cloud market offers valuable insights for entrepreneurs and investors. Runpod&#x27;s success story highlights the potential of leveraging online communities for business growth.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/16/ai-cloud-startup-runpod-hits-120m-in-arr-and-it-started-with-a-reddit-post/",
+            "date": "Jan 18 2026",
+            "headline": "Grok Under Musk—A Predictable AI Misstep",
+            "title": "Under Elon Musk, Grok AI&#x27;s Challenges Were Inevitable",
+            "content": "The development of Grok AI under Elon Musk&#x27;s leadership has encountered significant hurdles, leading to what some describe as an inevitable disaster. This AI project, initially full of promise, has struggled due to a lack of clear direction and strategic oversight. Critics argue that Musk&#x27;s ambitious yet unfocused approach contributed to the project&#x27;s downfall. The implications are substantial for stakeholders who hoped Grok would be a groundbreaking AI initiative. As the AI landscape continues to evolve rapidly, the challenges faced by Grok underscore the importance of cohesive leadership and strategic planning in AI development. Industry professionals should take note of the lessons learned from Grok&#x27;s trajectory to avoid similar pitfalls in their own AI projects.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/column/863502/grok-deepfake-musk",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
@@ -144,36 +160,30 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Jan 16 2026",
-            "headline": "Black Forest Labs Debuts Lightning-Fast AI Image Generator",
-            "title": "Black Forest Labs Launches FLUX.2 [klein] for Rapid AI Image Generation",
-            "content": "Black Forest Labs, a German AI startup founded by former Stability AI engineers, has released FLUX.2 [klein], an open-source AI image generator capable of producing images in under a second. This launch includes two models: one open and one non-commercial, both designed for speed and reduced computational demand. The development of FLUX.2 [klein] caters to industries requiring rapid image generation with minimal resources, such as advertising and digital media. The release marks a significant advancement in AI imaging technology, offering professionals a powerful tool for creative and commercial applications.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/black-forest-labs-launches-open-source-flux-2-klein-to-generate-ai-images-in",
-            "relatedResources": [
-                {
-                    "label": "API Security Best Practices",
-                    "url": "/guides/api-security-best-practices.html",
-                    "icon": "fa-plug"
-                }
-            ]
+            "date": "Jan 17 2026",
+            "headline": "Musk Seeks $134B from OpenAI Despite $700B Net Worth",
+            "title": "Elon Musk Pursues Massive $134B Compensation in OpenAI Lawsuit",
+            "content": "Elon Musk is pursuing up to $134 billion in compensation from OpenAI, arguing that as an early investor, he is entitled to returns far exceeding his initial investment. Musk&#x27;s legal team claims that the current valuation of OpenAI warrants a payout &quot;many orders of magnitude greater&quot; than what was originally anticipated. This legal battle highlights the complexities of startup investments and the potential for substantial financial disputes as companies grow. The outcome of this lawsuit could have significant implications for investors and the valuation of AI companies. Observers in the tech industry should closely monitor this case for its potential to set precedents in investment returns.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/17/musk-wants-up-to-134b-in-openai-lawsuit-despite-700b-fortune/",
+            "relatedResources": []
         },
         {
-            "date": "Jan 16 2026",
-            "headline": "Musk’s xAI Faces Legal Action Over Deepfake Scandal",
-            "title": "California AG Orders xAI to Cease Deepfake Production",
-            "content": "The California Attorney General has issued a cease-and-desist order to Elon Musk&#x27;s xAI over the proliferation of AI-generated sexual deepfakes. This legal action reflects growing concerns among state and federal officials about the misuse of AI technologies for creating harmful and non-consensual content. The order demands xAI halt the development and distribution of these deepfakes, highlighting the urgent need for regulatory frameworks to manage AI&#x27;s ethical implications. The case underscores the broader challenge of balancing innovation with societal responsibility in AI development.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/16/california-ag-sends-musks-xai-a-cease-and-desist-order-over-sexual-deepfakes/",
+            "date": "Jan 17 2026",
+            "headline": "Thinking Machines Exec Fired Over Office Affair",
+            "title": "Thinking Machines Cofounder Terminated Following Office Relationship Scandal",
+            "content": "Barret Zoph, cofounder of Thinking Machines, has been terminated due to allegations of serious misconduct related to an office relationship. The startup, led by Mira Murati, has taken decisive action following revelations about Zoph&#x27;s inappropriate behavior. This incident raises important questions about workplace ethics and the responsibilities of leadership in tech companies. The situation underscores the need for clear policies and enforcement to maintain professional integrity. Tech leaders should evaluate their own organizational policies to prevent similar incidents and ensure a respectful work environment.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/thinking-machines-lab-cofounder-office-relationship-firing-openai/",
             "relatedResources": []
         },
         {
             "date": "Jan 16 2026",
-            "headline": "Google’s Internal RL Advances AI’s Reasoning Capabilities",
-            "title": "Google Develops Internal Reinforcement Learning to Enhance AI Reasoning",
-            "content": "Google researchers have introduced internal reinforcement learning (RL), a novel technique aimed at improving AI models&#x27; ability to perform complex reasoning tasks. Unlike traditional methods relying on next-token prediction, internal RL allows models to better handle long-horizon tasks that typically lead to hallucinations or failures in large language models (LLMs). This advancement could significantly impact AI&#x27;s application in fields requiring sophisticated decision-making, such as autonomous systems and strategic planning. The development positions Google at the forefront of AI research, pushing the boundaries of what LLMs can achieve.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/infrastructure/how-googles-internal-rl-could-unlock-long-horizon-ai-agents",
+            "headline": "ChatGPT to Display Targeted Ads to Users",
+            "title": "OpenAI to Introduce Targeted Ads in ChatGPT Platform",
+            "content": "OpenAI has announced plans to introduce targeted advertisements within its ChatGPT platform, affecting users with varying degrees of control over the ads they see. This move marks a shift in OpenAI&#x27;s monetization strategy, potentially impacting the user experience and raising privacy concerns. The introduction of ads is aimed at generating additional revenue streams for the company, but it also poses questions about data usage and user consent. Users of ChatGPT should prepare for changes in their interaction with the platform and consider adjusting their privacy settings accordingly. This development reflects broader trends in the tech industry towards ad-supported models.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/16/chatgpt-users-are-about-to-get-hit-with-targeted-ads/",
             "relatedResources": [
                 {
                     "label": "LLM Security & Prompt Injection",
@@ -184,25 +194,45 @@ const websiteContent = {
         },
         {
             "date": "Jan 16 2026",
-            "headline": "Trump, Governors Push Tech Firms to Fund Power Plants",
-            "title": "US Leaders Urge Tech Companies to Finance New Power Infrastructure",
-            "content": "The Trump administration, along with Mid-Atlantic governors, is pressuring PJM Interconnection to conduct a power auction aimed at financing new power plants. This initiative addresses the increasing energy demands driven by data centers and tech companies, which are major consumers of electricity. The call for an &quot;emergency&quot; auction reflects concerns over grid reliability and the need for sustainable energy solutions. Tech companies are being urged to contribute financially to ensure a stable power supply, highlighting the intersection of technology growth and infrastructure requirements.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/news/863620/data-centers-ai-power-auction-trump",
+            "headline": "Trump Admin Pushes $15B Power Plant Purchase by Tech Firms",
+            "title": "White House Urges Tech Companies to Invest in Power Plants",
+            "content": "In an effort to address rising electricity prices, the Trump administration is advocating for tech companies to participate in a $15 billion auction for new power generation capacity. The White House has tasked grid operator PJM with organizing this auction, encouraging tech firms to bid on power plants they may not fully utilize. This initiative aims to stabilize energy costs but raises questions about the role of tech companies in the energy sector. Industry leaders should assess the potential benefits and risks of such investments, considering both financial and environmental implications. The move reflects a growing intersection between technology and energy policy.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/16/trump-administration-wants-tech-companies-to-buy-15b-of-power-plants-they-may-not-use/",
             "relatedResources": []
         },
         {
             "date": "Jan 16 2026",
-            "headline": "Chai Discovery Partners with Eli Lilly in AI Drug Development",
-            "title": "Chai Discovery Secures Partnership with Eli Lilly for AI-Driven Drug Discovery",
-            "content": "Chai Discovery, a rising star in AI drug development, has secured a partnership with pharmaceutical giant Eli Lilly. This collaboration marks a significant milestone for the startup, which has gained attention from Silicon Valley&#x27;s top venture capitalists. Chai Discovery&#x27;s AI platform accelerates drug discovery processes, offering potential breakthroughs in developing new treatments. The partnership with Eli Lilly underscores the growing influence of AI in the pharmaceutical industry and the potential for AI-driven innovations to transform drug development. This move positions Chai Discovery as a key player in the biotech sector.",
+            "headline": "Google Expands AI Video Tool to Workspace Users",
+            "title": "Google Launches AI Videomaker Flow to Workspace Subscribers",
+            "content": "Google has expanded access to its AI videomaking tool, Flow, to Business, Enterprise, and Education Workspace users. Initially launched for Google AI Pro and AI Ultra subscribers, Flow utilizes Google&#x27;s AI video generation model Veo 3.1 to create high-quality video content. This expansion broadens the tool&#x27;s availability, allowing more users to leverage advanced AI capabilities for video production. As AI-driven content creation becomes increasingly prevalent, professionals should explore how these tools can enhance their workflows. Google&#x27;s move underscores the growing demand for AI solutions in business and educational settings.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/news/863570/google-flow-ai-video-generator-workspace",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 16 2026",
+            "headline": "AI Healthcare Boom—$250M Raised in a Week",
+            "title": "AI Companies Rush into Healthcare with Major Investments and Acquisitions",
+            "content": "The AI healthcare sector is experiencing a rapid influx of investment and innovation, highlighted by OpenAI&#x27;s acquisition of health startup Torch and Anthropic&#x27;s launch of Claude for healthcare. Additionally, Sam Altman-backed MergeLabs has secured a $250 million seed round, reaching an $850 million valuation. These developments signal a burgeoning interest in applying AI technologies to healthcare, promising transformative changes in patient care and medical research. Industry professionals should anticipate increased competition and collaboration in this space, as AI continues to reshape healthcare delivery and diagnostics. The financial momentum underscores the sector&#x27;s potential for growth and innovation.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/16/from-openais-offices-to-a-deal-with-eli-lilly-how-chai-discovery-became-one-of-the-flashiest-names-in-ai-drug-development/",
+            "sourceUrl": "https://techcrunch.com/video/the-ai-healthcare-gold-rush-is-here/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
                     "url": "/ransomware-tracker.html",
                     "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "API Security Best Practices",
+                    "url": "/guides/api-security-best-practices.html",
+                    "icon": "fa-plug"
                 }
             ]
         }
