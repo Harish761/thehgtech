@@ -358,3 +358,68 @@ Dec 17, 2025
 Coming Soon   ← at the very end
 ```
 
+## Research-Grade Editorial Framework
+
+For "Advanced" or "Deep Dive" guides, apply the following rigorous standards to ensure content meets a defensive research quality bar.
+
+### 1. Tone & Voice Compliance
+*   **Strict Neutrality:** Remove all marketing/hype language.
+    *   ❌ Avoid: "Game-changing", "Mind-blowing", "Unstoppable", "Ultimate".
+    *   ✅ Use: "Significant", "demonstrated", "high-severity", "comprehensive".
+*   **Precision:** Be specific about versions and conditions.
+    *   ❌ "LLMs are vulnerable to this."
+    *   ✅ "Llama-2-7B-Chat (v1) demonstrated susceptibility in white-box testing."
+
+### 2. Mandatory Research Components
+Every research-grade guide must include:
+
+*   **Abstract/Executive Summary:** Replaces generic "Intro". Briefly state the vector, the impact, and the defense.
+*   **Ethical Disclaimer:** Explicit statement that content is for defensive purposes.
+*   **Threat Model Section:** Define:
+    *   **Attacker Capabilities:** (e.g., white-box access, API access).
+    *   **Target Assumptions:** (e.g., standard RLHF aligned model).
+    *   **Attack Class:** (e.g., Tokenization-level, Prompt Injection).
+*   **Scoped Claims:**
+    *   Never state absolute success rates without context.
+    *   Format: "Achieved [X]% success rate on [Model Name] under [Condition Y]."
+*   **Defense Architecture:**
+    *   Move beyond "tips". Provide a structural defense strategy (e.g., "Layer 1: Sanitization, Layer 2: Normalization").
+    *   Include production-ready code examples (e.g., complete Python classes), not just snippets.
+*   **limitations Section:**
+    *   Explicitly state what the attack *cannot* do.
+    *   Explicitly state where the defense *might fail* (adaptive attacks).
+*   **References Section:**
+    *   Cite specific papers (Author, Year, Title, ArXiv/Conference).
+    *   Cite CVEs with links.
+
+### 3. Prompt Skeleton for "Research-Grade" Output
+When generating content, use this structural prompt to enforce quality:
+
+```markdown
+# ROLE
+Act as a Principal Security Researcher. Your goal is to write a definitive, defensive research paper formatted as a technical guide.
+
+# CONSTRAINTS
+- NO checklist-style "how-to" tone. Use analytical narrative.
+- NO marketing adjectives (revolutionary, scary, shocking).
+- Claims regarding "bypass" or "jailbreak" MUST be scoped to specific model versions or experimental settings.
+
+# STRUCTURE
+1. **Header**: Title (Technical), Abstract (Summary of findings).
+2. **Threat Model**: Define the adversary (Capabilities: API vs Weights).
+3. **Technical Analysis**:
+   - Deep dive into the mechanic (e.g., Tokenization logic, Helper function abuse).
+   - Use "Attack Scenario" tables (Vector | Precondition | Impact).
+4. **Evidence/Impact**:
+   - Cite specific CVEs or Papers (e.g., "Zou et al., 2023").
+   - Use "Impact Analysis" info-boxes, not generic "Danger" boxes.
+5. **Defense Engineering**:
+   - Provide "Enterprise Architecture" diagrams (ASCII).
+   - Provide "Production-Ready" code (Classes with type hints, error handling).
+6. **Limitations**: What does this NOT work on?
+7. **References**: IEEE/ACM style citations.
+
+# VISUALS
+- Use <div class="architecture-diagram"> for system flows.
+- Use <div class="token-viz"> for NLP/Token breakdowns.
+```
