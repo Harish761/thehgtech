@@ -346,3 +346,61 @@ The interaction bar MUST be placed:
 - Industry News
 - Research
 - Predictions
+## Research-Grade News Framework
+
+For "Deep Analysis" or "Critical Breach" articles, apply the following intelligence standards to ensure content meets a professional threat analyst quality bar.
+
+### 1. Tone & Voice Compliance
+*   **Objective Journalism:** Remove all FUD (Fear, Uncertainty, Doubt).
+    *   ❌ Avoid: "Catastrophic", "Cybergeddon", "Doomsday", "Panic".
+    *   ✅ Use: "Critical severity", "Mass exploitation", "Systemic failure", "Unverified claim".
+*   **Attribution precision:** Be specific about the source of information.
+    *   ❌ "Hackers say they stole..."
+    *   ✅ "Threat actor 'KillSec' claimed exfiltration of 5TB on Telegram (unverified)."
+    *   ✅ "Microsoft confirmed the vulnerability (CVE-202X-XXXX) in a Tuesday advisory."
+
+### 2. Mandatory Intelligence Components
+Every research-grade article must include:
+
+*   **Executive Summary/Lead:** The "BLUF" (Bottom Line Up Front). Who, What, When, Severity.
+*   **Confidence Level:** Explicitly state if the breach is *Confirmed*, *Claimed*, or *Under Investigation*.
+*   **Technical Root Cause:** Move beyond "hacked". Specify the vector (e.g., "MFA Fatigue", "SQLi", "Supply Chain compromise").
+*   **Impact Verification:**
+    *   Verify claims manually where possible (e.g., "Sample data reviewed by analysis team shows...").
+    *   If relying on sources, cite the primary source (BleepingComputer, Vendor Blog), not aggregators.
+*   **Timeline of Events:** Chronological list of access, movement, and disclosure.
+*   **IOCs (Indicators of Compromise):** or a link to a repository/GitHub with hash/IPs.
+*   **Mitigation Status:** "Patched", "Workaround Available", or "Zero-Day".
+
+### 3. Prompt Skeleton for "Threat Analyst" Output
+When generating article content, use this structural prompt to enforce quality:
+
+```markdown
+# ROLE
+Act as a Senior Cyber Threat Analyst for a top-tier intelligence firm (like Mandiant or CrowdStrike). Your goal is to write a high-fidelity intelligence report formatted as a news article.
+
+# CONSTRAINTS
+- NO "clickbait" headlines or intro hooks. Start with the facts.
+- NO marketing adjectives.
+- Distinguish clearly between "Vendor Confirmation" and "Hacker Claims".
+
+# STRUCTURE
+1. **Header**: Title (Standardized format: [Victim/Tool] [Event Type] - [Date/Year]), Executive Summary.
+2. **Context**: Who is the victim? Why are they a target?
+3. **Attack Vector Analysis**:
+   - Technical breakdown of the exploit (CVE numbers, TTPs).
+   - Diagram of the attack chain (ASCII or description).
+4. **Timeline**: Day 0 (Access) -> Day X (Detection) -> Day Y (Disclosure).
+5. **Impact Assessment**:
+   - Reg data (GDPR/CCPA) impacted?
+   - Operational downtime?
+   - Financial estimate (if reliable).
+6. **Defensive Action**:
+   - Immediate mitigations (Block IPs, patch version X).
+   - Long-term recommendations (Architecture changes).
+7. **References**: Links to Vendor Advisories, CVE Record, Primary Reporting.
+
+# VISUALS
+- Use <div class="timeline"> for event sequences.
+- Use <div class="warning-box"> for active IoCs.
+```
