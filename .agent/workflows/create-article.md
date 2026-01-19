@@ -316,11 +316,20 @@ The interaction bar MUST be placed:
 ```
 
 ## After Creating Article
-1. Add entry to `/articles.json` with `externalUrl` field pointing to HTML file
+1. **Add entry to `/articles.json`** with `externalUrl` field pointing to HTML file
+   - **IMPORTANT: Insert at TOP of array (newest first)**
+   - The homepage "Latest Articles" section auto-loads from this file
+   - The first 2 entries will appear on the homepage
 2. Add to `/sitemap.xml` 
 3. Add to `/news-sitemap.xml` for Google News
 4. Create OG image in `/images/articles/`
 5. Commit and push to GitHub
+
+## Homepage Latest Articles (Auto-Updated)
+The homepage displays the 2 most recent articles in the "Latest Articles" column.
+- Data source: `/articles.json`
+- New articles added to the JSON will automatically appear on homepage
+- Ensure the `externalUrl` or `url` field points to the correct article path
 
 ## articles.json Entry Format
 ```json

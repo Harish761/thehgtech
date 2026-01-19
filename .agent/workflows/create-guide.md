@@ -271,9 +271,19 @@ Every guide MUST include the interaction bar at the bottom of the content.
    - New guides (Dec 17) go BEFORE guides from Dec 13
    - Dec 13 guides go BEFORE Dec 5 guides, etc.
    - Coming Soon guides go at the END
-2. Add to `/sitemap.xml`
-3. Create image in `/images/guides/[guide-name].png`
-4. Commit and push to GitHub
+2. **Add to `/guides/guides.json`** (REQUIRED for homepage)
+   - The homepage "Latest Guides" section pulls from `guides.json`
+   - The first 2 entries with `featured: true` will appear on the homepage
+   - Order by date (newest first) in the JSON file
+3. Add to `/sitemap.xml`
+4. Create image in `/images/guides/[guide-name].png`
+5. Commit and push to GitHub
+
+## Homepage Featured Guides (Auto-Updated)
+The homepage displays the 2 most recent guides in the "Latest Guides" column.
+- Data source: `/guides/guides.json`
+- The static fallback shows Unicode LLM Attacks guides
+- For guides to appear: add to `guides.json` with `featured: true`
 
 ## Guide Card Styling on Index Page
 

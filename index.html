@@ -1285,6 +1285,65 @@
             margin: 0 auto;
         }
 
+        /* Solution Cards Hover Effects */
+        .solution-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--accent-cyan) !important;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 217, 255, 0.1);
+        }
+
+        .solution-card:hover h3 {
+            color: var(--accent-cyan);
+        }
+
+        /* Primary CTA Hover */
+        .primary-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 40px rgba(0, 217, 255, 0.5);
+        }
+
+        /* Secondary CTA Hover */
+        .secondary-cta:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: var(--accent-cyan);
+            color: var(--accent-cyan);
+        }
+
+        /* Featured Cards Hover */
+        .featured-grid a:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Stats Bar Responsive */
+        @media (max-width: 768px) {
+            .hero-stats-bar {
+                gap: 1rem !important;
+                padding: 1rem !important;
+            }
+
+            .hero-stats-bar .stat-item {
+                min-width: 70px !important;
+            }
+
+            .hero-stats-bar .stat-item>div:first-child {
+                font-size: 1.5rem !important;
+            }
+
+            .stat-divider {
+                display: none !important;
+            }
+
+            .solutions-grid {
+                grid-template-columns: 1fr !important;
+            }
+
+            .featured-grid {
+                grid-template-columns: 1fr !important;
+            }
+        }
+
+
         /* Section Styles */
         .section {
             padding: 4rem 0;
@@ -4341,181 +4400,460 @@
     <!-- Main Content -->
     <main class="main" id="main-content" role="main">
         <div class="container">
-            <!-- Hero Section -->
-            <section class="hero">
+            <!-- ========== HERO SECTION (CrowdStrike-Inspired) ========== -->
+            <section class="hero"
+                style="min-height: 85vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; position: relative; padding: 4rem 2rem;">
                 <canvas class="hero-canvas" id="heroCanvas"></canvas>
-                <div class="hero-badge">
+
+                <!-- Trust Badge -->
+                <div class="hero-badge"
+                    style="background: linear-gradient(135deg, rgba(0, 217, 255, 0.15), rgba(0, 217, 255, 0.05)); border: 1px solid rgba(0, 217, 255, 0.3); padding: 0.5rem 1.25rem; border-radius: 50px; font-size: 0.75rem; font-weight: 600; color: var(--accent-cyan); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 2rem;">
                     <div class="pulse-dot"></div>
-                    Automated Updates Every 4 Hours
+                    Free • No Signup • Updated Every 4 Hours
                 </div>
-                <h1>Live Cyber <span id="rotatingText">Threat Intelligence</span></h1>
-                <p id="rotatingSubtext">Global attack trends, threat vectors, and real-time telemetry powered by
-                    TheHGTech</p>
-                <a href="threat-intel.html" class="view-dashboard-btn"
-                    style="display: inline-block; margin-top: 2rem; padding: 1rem 2.5rem; background: linear-gradient(135deg, #00D9FF, #0099cc); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 5px 20px rgba(0, 217, 255, 0.3);">
-                    View Dashboard →
-                </a>
+
+                <!-- Main Headline -->
+                <h1
+                    style="font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 800; line-height: 1.1; margin: 0 0 1.5rem; max-width: 900px;">
+                    Your Free <span
+                        style="background: linear-gradient(135deg, var(--accent-cyan), #0099cc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Threat
+                        Intelligence</span> Command Center
+                </h1>
+
+                <!-- Subheadline -->
+                <p
+                    style="font-size: 1.25rem; color: var(--text-secondary); max-width: 700px; margin: 0 0 2.5rem; line-height: 1.6;">
+                    52,000+ IOCs from 9 trusted sources. Real-time CVE tracking. AI-powered insights. Export to SIEM.
+                    Zero cost.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; margin-bottom: 3rem;">
+                    <a href="#snapshot" class="primary-cta"
+                        style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 1rem 2rem; background: linear-gradient(135deg, var(--accent-cyan), #0099cc); color: #000; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 1rem; transition: all 0.3s ease; box-shadow: 0 5px 25px rgba(0, 217, 255, 0.4);">
+                        <i class="fas fa-shield-alt"></i> Explore Dashboard
+                    </a>
+                    <a href="/guides/" class="secondary-cta"
+                        style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 1rem 2rem; background: transparent; color: var(--text-primary); text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 1rem; border: 1px solid var(--border); transition: all 0.3s ease;">
+                        <i class="fas fa-graduation-cap"></i> Security Guides
+                    </a>
+                </div>
+
+                <!-- Stats Bar -->
+                <div class="hero-stats-bar"
+                    style="display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; padding: 1.5rem 2rem; background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border); border-radius: 16px; backdrop-filter: blur(10px); margin-bottom: 2rem;">
+                    <div class="stat-item" style="text-align: center; min-width: 100px;">
+                        <div style="font-size: 2rem; font-weight: 800; color: var(--accent-cyan);"><span
+                                id="heroIocCountDynamic">52K+</span></div>
+                        <div
+                            style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;">
+                            Live IOCs</div>
+                    </div>
+                    <div class="stat-divider" style="width: 1px; height: 50px; background: var(--border);"></div>
+                    <div class="stat-item" style="text-align: center; min-width: 100px;">
+                        <div style="font-size: 2rem; font-weight: 800; color: var(--accent-cyan);">9</div>
+                        <div
+                            style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;">
+                            Threat Feeds</div>
+                    </div>
+                    <div class="stat-divider" style="width: 1px; height: 50px; background: var(--border);"></div>
+                    <div class="stat-item" style="text-align: center; min-width: 100px;">
+                        <div style="font-size: 2rem; font-weight: 800; color: #FF3D3D;"><span
+                                id="heroCveCountDynamic">50</span></div>
+                        <div
+                            style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;">
+                            Critical CVEs</div>
+                    </div>
+                    <div class="stat-divider" style="width: 1px; height: 50px; background: var(--border);"></div>
+                    <div class="stat-item" style="text-align: center; min-width: 100px;">
+                        <div style="font-size: 2rem; font-weight: 800; color: var(--accent-cyan);">4hr</div>
+                        <div
+                            style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;">
+                            Update Cycle</div>
+                    </div>
+                </div>
+
+                <!-- News Ticker in Hero -->
+                <div class="hero-news-ticker" style="width: 100%; max-width: 900px; margin: 0 auto;">
+                    <!-- Ticker Tabs -->
+                    <div style="display: flex; justify-content: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                        <button class="ticker-tab active" data-category="cyber" onclick="switchTickerCategory('cyber')"
+                            style="background: rgba(0, 217, 255, 0.15); border: 1px solid rgba(0, 217, 255, 0.3); color: var(--accent-cyan); padding: 0.35rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease;">
+                            <i class="fas fa-shield-alt"></i> Cybersecurity
+                        </button>
+                        <button class="ticker-tab" data-category="ai" onclick="switchTickerCategory('ai')"
+                            style="background: transparent; border: 1px solid var(--border); color: var(--text-muted); padding: 0.35rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease;">
+                            <i class="fas fa-brain"></i> AI & ML
+                        </button>
+                    </div>
+                    <!-- Ticker Container -->
+                    <div class="ticker-wrapper"
+                        style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border); border-radius: 12px; padding: 0.75rem 1rem; overflow: hidden; position: relative;">
+                        <div class="ticker-content" id="tickerCyber"
+                            style="display: flex; animation: tickerScroll 30s linear infinite; white-space: nowrap;">
+                            <span class="ticker-item"
+                                style="display: inline-flex; align-items: center; gap: 1.5rem; padding-right: 3rem; color: var(--text-secondary); font-size: 0.85rem; cursor: pointer;"
+                                onclick="openTickerNews(0, 'cyber')">
+                                <span style="color: var(--accent-cyan);">●</span> Loading cybersecurity news...
+                            </span>
+                        </div>
+                        <div class="ticker-content" id="tickerAI"
+                            style="display: none; animation: tickerScroll 30s linear infinite; white-space: nowrap;">
+                            <span class="ticker-item"
+                                style="display: inline-flex; align-items: center; gap: 1.5rem; padding-right: 3rem; color: var(--text-secondary); font-size: 0.85rem; cursor: pointer;"
+                                onclick="openTickerNews(0, 'ai')">
+                                <span style="color: #8B5CF6;">●</span> Loading AI news...
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <style>
+                    @keyframes tickerScroll {
+                        0% {
+                            transform: translateX(0);
+                        }
+
+                        100% {
+                            transform: translateX(-50%);
+                        }
+                    }
+
+                    .ticker-wrapper:hover .ticker-content {
+                        animation-play-state: paused;
+                    }
+
+                    .ticker-item:hover {
+                        color: var(--accent-cyan) !important;
+                    }
+
+                    .ticker-tab.active {
+                        background: rgba(0, 217, 255, 0.15) !important;
+                        border-color: rgba(0, 217, 255, 0.3) !important;
+                        color: var(--accent-cyan) !important;
+                    }
+
+                    .ticker-tab:hover:not(.active) {
+                        border-color: var(--accent-cyan);
+                        color: var(--accent-cyan);
+                    }
+                </style>
             </section>
 
-            <!-- Today's Threat Snapshot Section -->
-            <section class="section" id="snapshot" style="padding: 1.5rem 0;">
-                <div class="section-header" style="margin-bottom: 1rem;">
-                    <h2 class="section-title" style="font-size: 1.5rem;">Professional Threat Intelligence</h2>
-                    <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.25rem;"><span
-                            id="snapshotIocCount">52K+</span> live IOCs • 9 vendors • AI analysis • Search &
-                        export</p>
+            <!-- ========== TRUSTED SOURCES SECTION ========== -->
+            <section class="trust-section"
+                style="padding: 3rem 0; text-align: center; border-bottom: 1px solid var(--border);">
+                <p
+                    style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1.5rem;">
+                    Powered by Trusted Intelligence Sources</p>
+                <div class="trust-logos"
+                    style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 2.5rem; opacity: 0.7;">
+                    <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 500;">OpenPhish</span>
+                    <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 500;">Malware
+                        Bazaar</span>
+                    <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 500;">CISA KEV</span>
+                    <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 500;">Spamhaus
+                        DROP</span>
+                    <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 500;">CINS Army</span>
+                    <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 500;">Blocklist.de</span>
                 </div>
+            </section>
+
+            <!-- ========== SOLUTIONS GRID ========== -->
+            <section class="solutions-section" id="snapshot" style="padding: 4rem 0;">
+                <div class="section-header" style="text-align: center; margin-bottom: 3rem;">
+                    <h2 style="font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 700; margin: 0 0 1rem;">Everything
+                        You Need for Threat Hunting</h2>
+                    <p style="color: var(--text-muted); font-size: 1rem; max-width: 600px; margin: 0 auto;">
+                        Professional-grade tools. Community-driven intelligence. Always free.</p>
+                </div>
+
                 <!-- Hidden snapshot cards for JS -->
                 <div id="snapshotCards" style="display: none;"></div>
 
-                <!-- Compact Feature Cards -->
-                <div style="margin-top: 0.5rem;">
+                <!-- Solutions Grid -->
+                <div class="solutions-grid"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 1200px; margin: 0 auto;">
 
-                    <div
-                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.75rem; margin-bottom: 0.75rem;">
-                        <div class="info-tile"
-                            style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 8px; padding: 0.9rem; transition: all 0.3s ease;">
-                            <div style="display: flex; align-items: center; gap: 0.75rem;">
-                                <div>
-                                    <h3 style="color: var(--accent-cyan); margin: 0; font-size: 0.95rem;"><span
-                                            id="heroIocCount">52K+</span> Live IOCs
-                                    </h3>
-                                    <p style="color: var(--text-muted); margin: 0; font-size: 0.75rem;">Updated every 4
-                                        hours</p>
-                                </div>
-                            </div>
+                    <!-- IOC Intelligence -->
+                    <a href="threat-intel.html" class="solution-card"
+                        style="text-decoration: none; background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; transition: all 0.3s ease; display: block;">
+                        <div
+                            style="width: 48px; height: 48px; background: linear-gradient(135deg, rgba(0, 217, 255, 0.2), rgba(0, 217, 255, 0.05)); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
+                            <i class="fas fa-shield-virus" style="font-size: 1.25rem; color: var(--accent-cyan);"></i>
                         </div>
+                        <h3
+                            style="color: var(--text-primary); font-size: 1.1rem; font-weight: 600; margin: 0 0 0.5rem;">
+                            IOC Intelligence</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.5; margin: 0 0 1rem;">
+                            Track malicious URLs, IPs, domains, and file hashes from 9 curated threat feeds.</p>
+                        <span style="color: var(--accent-cyan); font-size: 0.85rem; font-weight: 500;">Explore Feeds
+                            →</span>
+                    </a>
 
-                        <div class="info-tile"
-                            style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 8px; padding: 0.9rem; transition: all 0.3s ease;">
-                            <div style="display: flex; align-items: center; gap: 0.75rem;">
-                                <div>
-                                    <h3 style="color: var(--accent-cyan); margin: 0; font-size: 0.95rem;">AI Insights
-                                    </h3>
-                                    <p style="color: var(--text-muted); margin: 0; font-size: 0.75rem;">Daily summaries
-                                    </p>
-                                </div>
-                            </div>
+                    <!-- CVE Tracker -->
+                    <a href="cve-tracker.html" class="solution-card"
+                        style="text-decoration: none; background: rgba(255, 61, 61, 0.03); border: 1px solid rgba(255, 61, 61, 0.2); border-radius: 16px; padding: 2rem; transition: all 0.3s ease; display: block;">
+                        <div
+                            style="width: 48px; height: 48px; background: linear-gradient(135deg, rgba(255, 61, 61, 0.2), rgba(255, 61, 61, 0.05)); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
+                            <i class="fas fa-bug" style="font-size: 1.25rem; color: #FF3D3D;"></i>
                         </div>
+                        <h3
+                            style="color: var(--text-primary); font-size: 1.1rem; font-weight: 600; margin: 0 0 0.5rem;">
+                            CVE Tracker</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.5; margin: 0 0 1rem;">
+                            Real-time CISA KEV + critical CVEs with CVSS scores and remediation guidance.</p>
+                        <span style="color: #FF3D3D; font-size: 0.85rem; font-weight: 500;">View CVEs →</span>
+                    </a>
 
-                        <div class="info-tile"
-                            style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 8px; padding: 0.9rem; transition: all 0.3s ease;">
-                            <div style="display: flex; align-items: center; gap: 0.75rem;">
-                                <div>
-                                    <h3 style="color: var(--accent-cyan); margin: 0; font-size: 0.95rem;">Pro Tools</h3>
-                                    <p style="color: var(--text-muted); margin: 0; font-size: 0.75rem;">Search & export
-                                    </p>
-                                </div>
-                            </div>
+                    <!-- Security News -->
+                    <a href="#news" class="solution-card"
+                        style="text-decoration: none; background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; transition: all 0.3s ease; display: block;">
+                        <div
+                            style="width: 48px; height: 48px; background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(139, 92, 246, 0.05)); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
+                            <i class="fas fa-newspaper" style="font-size: 1.25rem; color: #8B5CF6;"></i>
                         </div>
+                        <h3
+                            style="color: var(--text-primary); font-size: 1.1rem; font-weight: 600; margin: 0 0 0.5rem;">
+                            Security News</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.5; margin: 0 0 1rem;">
+                            AI-curated cybersecurity and AI news from 50+ sources, updated hourly.</p>
+                        <span style="color: #8B5CF6; font-size: 0.85rem; font-weight: 500;">Read News →</span>
+                    </a>
 
-                        <div class="info-tile"
-                            onclick="document.getElementById('cve').scrollIntoView({behavior: 'smooth'})"
-                            style="background: rgba(255, 61, 61, 0.05); border: 1px solid rgba(255, 61, 61, 0.2); border-radius: 8px; padding: 0.9rem; transition: all 0.3s ease; cursor: pointer;">
-                            <div style="display: flex; align-items: center; gap: 0.75rem;">
-                                <div>
-                                    <h3 style="color: #FF3D3D; margin: 0; font-size: 0.95rem;"><span
-                                            id="heroKevCount">20</span> CISA KEV</h3>
-                                    <p style="color: var(--text-muted); margin: 0; font-size: 0.75rem;">Live tracking
-                                    </p>
+                    <!-- Expert Guides -->
+                    <a href="/guides/" class="solution-card"
+                        style="text-decoration: none; background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; transition: all 0.3s ease; display: block;">
+                        <div
+                            style="width: 48px; height: 48px; background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(16, 185, 129, 0.05)); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
+                            <i class="fas fa-graduation-cap" style="font-size: 1.25rem; color: #10b981;"></i>
+                        </div>
+                        <h3
+                            style="color: var(--text-primary); font-size: 1.1rem; font-weight: 600; margin: 0 0 0.5rem;">
+                            Expert Guides</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.5; margin: 0 0 1rem;">40+
+                            in-depth security guides covering LLM attacks, OWASP, compliance, and more.</p>
+                        <span style="color: #10b981; font-size: 0.85rem; font-weight: 500;">Browse Guides →</span>
+                    </a>
+
+                    <!-- SIEM Export -->
+                    <a href="threat-intel.html#export" class="solution-card"
+                        style="text-decoration: none; background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; transition: all 0.3s ease; display: block;">
+                        <div
+                            style="width: 48px; height: 48px; background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(245, 158, 11, 0.05)); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
+                            <i class="fas fa-download" style="font-size: 1.25rem; color: #f59e0b;"></i>
+                        </div>
+                        <h3
+                            style="color: var(--text-primary); font-size: 1.1rem; font-weight: 600; margin: 0 0 0.5rem;">
+                            SIEM Export</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.5; margin: 0 0 1rem;">
+                            Export IOCs in CSV/JSON for Splunk, QRadar, Sentinel, and Elastic integration.</p>
+                        <span style="color: #f59e0b; font-size: 0.85rem; font-weight: 500;">Export Data →</span>
+                    </a>
+
+                    <!-- Articles -->
+                    <a href="/articles.html" class="solution-card"
+                        style="text-decoration: none; background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; transition: all 0.3s ease; display: block;">
+                        <div
+                            style="width: 48px; height: 48px; background: linear-gradient(135deg, rgba(236, 72, 153, 0.2), rgba(236, 72, 153, 0.05)); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
+                            <i class="fas fa-file-alt" style="font-size: 1.25rem; color: #ec4899;"></i>
+                        </div>
+                        <h3
+                            style="color: var(--text-primary); font-size: 1.1rem; font-weight: 600; margin: 0 0 0.5rem;">
+                            Deep Analysis</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.5; margin: 0 0 1rem;">
+                            In-depth articles on breaches, threat actors, and emerging attack techniques.</p>
+                        <span style="color: #ec4899; font-size: 0.85rem; font-weight: 500;">Read Articles →</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- ========== FEATURED CONTENT SECTION (Dynamic) ========== -->
+            <section class="featured-section" style="padding: 3rem 0; border-top: 1px solid var(--border);">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem;">
+
+                    <!-- Latest Guides Column -->
+                    <div class="featured-column">
+                        <div class="section-header"
+                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                            <h2
+                                style="font-size: 1.25rem; font-weight: 700; margin: 0; display: flex; align-items: center; gap: 0.5rem;">
+                                <i class="fas fa-graduation-cap" style="color: #10b981;"></i> Latest Guides
+                            </h2>
+                            <a href="/guides/"
+                                style="color: var(--accent-cyan); text-decoration: none; font-size: 0.85rem; font-weight: 500;">View
+                                All →</a>
+                        </div>
+                        <div id="latestGuidesContainer" class="featured-grid"
+                            style="display: flex; flex-direction: column; gap: 1rem;">
+                            <!-- Dynamic guides will be loaded here -->
+                            <a href="/guides/unicode-llm-attacks-advanced.html" class="featured-card"
+                                style="text-decoration: none; background: linear-gradient(135deg, rgba(0, 217, 255, 0.05), rgba(139, 92, 246, 0.05)); border: 1px solid rgba(0, 217, 255, 0.2); border-radius: 12px; padding: 1.25rem; display: flex; align-items: flex-start; gap: 1rem; transition: all 0.3s ease;">
+                                <div
+                                    style="flex-shrink: 0; width: 40px; height: 40px; background: linear-gradient(135deg, var(--accent-cyan), #8B5CF6); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fas fa-robot" style="color: #000; font-size: 1rem;"></i>
                                 </div>
+                                <div style="flex: 1; min-width: 0;">
+                                    <span
+                                        style="display: inline-block; background: linear-gradient(135deg, var(--accent-cyan), #8B5CF6); color: #000; font-size: 0.6rem; font-weight: 700; padding: 0.2rem 0.5rem; border-radius: 3px; text-transform: uppercase; margin-bottom: 0.5rem;">New</span>
+                                    <h3
+                                        style="color: var(--text-primary); font-size: 0.95rem; font-weight: 600; margin: 0 0 0.25rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                                        Advanced Unicode LLM Attacks</h3>
+                                    <p
+                                        style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin: 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                                        Variation selector exploitation and defense architecture</p>
+                                </div>
+                            </a>
+                            <a href="/guides/llm-jailbreaking-defense-advanced.html" class="featured-card"
+                                style="text-decoration: none; background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; display: flex; align-items: flex-start; gap: 1rem; transition: all 0.3s ease;">
+                                <div
+                                    style="flex-shrink: 0; width: 40px; height: 40px; background: rgba(255, 61, 61, 0.15); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fas fa-shield-alt" style="color: #FF3D3D; font-size: 1rem;"></i>
+                                </div>
+                                <div style="flex: 1; min-width: 0;">
+                                    <h3
+                                        style="color: var(--text-primary); font-size: 0.95rem; font-weight: 600; margin: 0 0 0.25rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                                        Advanced LLM Jailbreaking Defense</h3>
+                                    <p
+                                        style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin: 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                                        GCG attacks, adversarial suffixes, and red team techniques</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Latest Articles Column -->
+                    <div class="featured-column">
+                        <div class="section-header"
+                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                            <h2
+                                style="font-size: 1.25rem; font-weight: 700; margin: 0; display: flex; align-items: center; gap: 0.5rem;">
+                                <i class="fas fa-newspaper" style="color: #ec4899;"></i> Latest Articles
+                            </h2>
+                            <a href="/articles.html"
+                                style="color: var(--accent-cyan); text-decoration: none; font-size: 0.85rem; font-weight: 500;">View
+                                All →</a>
+                        </div>
+                        <div id="latestArticlesContainer" class="featured-grid"
+                            style="display: flex; flex-direction: column; gap: 1rem;">
+                            <!-- Dynamic articles will be loaded here -->
+                            <div style="text-align: center; padding: 2rem; color: var(--text-muted);">
+                                <i class="fas fa-spinner fa-spin"></i> Loading articles...
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <style>
+                    .featured-card:hover {
+                        transform: translateX(5px);
+                        border-color: var(--accent-cyan) !important;
+                    }
 
-                <section class="section" id="news">
-                    <div class="section-header">
-                        <h2 class="section-title">Latest Intelligence</h2>
-                    </div>
-                    <div class="tabs desktop-only">
-                        <button class="tab active" onclick="switchPremiumTab('cyber')">
-                            Cybersecurity
+                    .featured-card:hover h3 {
+                        color: var(--accent-cyan);
+                    }
+
+                    @media (max-width: 900px) {
+                        .featured-section>div {
+                            grid-template-columns: 1fr !important;
+                        }
+                    }
+                </style>
+            </section>
+
+
+            <section class="section" id="news">
+                <div class="section-header">
+                    <h2 class="section-title">Latest Intelligence</h2>
+                </div>
+                <div class="tabs desktop-only">
+                    <button class="tab active" onclick="switchPremiumTab('cyber')">
+                        Cybersecurity
+                    </button>
+                    <button class="tab" onclick="switchPremiumTab('ai')">
+                        AI & ML
+                    </button>
+                </div>
+
+                <!-- Premium News Layout (Desktop - Feature + Grid) -->
+                <div class="desktop-only">
+                    <div id="cyberNewsPremium"></div>
+                    <div id="aiNewsPremium" style="display: none;"></div>
+                </div>
+
+                <!-- Old news grid - hidden on desktop, keeping for fallback -->
+                <div id="cyberNews" class="news-grid" style="display: none;"></div>
+                <div id="aiNews" class="news-grid" style="display: none;"></div>
+
+                <!-- Mobile Swipeable News Cards (Tinder-style) -->
+                <div class="mobile-only" style="margin-top: 2rem;">
+                    <!-- Tab Switcher -->
+                    <div class="news-tab-switcher">
+                        <button class="news-tab active" data-category="cyber" onclick="switchNewsCategory('cyber')">
+                            <i class="fas fa-shield-alt"></i> Cybersecurity
                         </button>
-                        <button class="tab" onclick="switchPremiumTab('ai')">
-                            AI & ML
+                        <button class="news-tab" data-category="ai" onclick="switchNewsCategory('ai')">
+                            <i class="fas fa-brain"></i> AI & ML
                         </button>
                     </div>
 
-                    <!-- Premium News Layout (Desktop - Feature + Grid) -->
-                    <div class="desktop-only">
-                        <div id="cyberNewsPremium"></div>
-                        <div id="aiNewsPremium" style="display: none;"></div>
-                    </div>
-
-                    <!-- Old news grid - hidden on desktop, keeping for fallback -->
-                    <div id="cyberNews" class="news-grid" style="display: none;"></div>
-                    <div id="aiNews" class="news-grid" style="display: none;"></div>
-
-                    <!-- Mobile Swipeable News Cards (Tinder-style) -->
-                    <div class="mobile-only" style="margin-top: 2rem;">
-                        <!-- Tab Switcher -->
-                        <div class="news-tab-switcher">
-                            <button class="news-tab active" data-category="cyber" onclick="switchNewsCategory('cyber')">
-                                <i class="fas fa-shield-alt"></i> Cybersecurity
-                            </button>
-                            <button class="news-tab" data-category="ai" onclick="switchNewsCategory('ai')">
-                                <i class="fas fa-brain"></i> AI & ML
-                            </button>
-                        </div>
-
-                        <!-- News Card Stack Container -->
-                        <div class="news-stack-container" id="newsStackContainer">
-                            <!-- Static LCP placeholder - replaced by JS -->
-                            <div class="mobile-news-card active" id="staticNewsPlaceholder"
-                                style="background: var(--m-bg-card, #1a1a1a); border: 1px solid var(--m-border, rgba(255,255,255,0.1)); border-radius: 16px; padding: 20px; margin: 0 16px;">
-                                <div class="mobile-news-card__source"
-                                    style="color: #00D9FF; font-size: 0.75rem; font-weight: 600; text-transform: uppercase;">
-                                    Cybersecurity</div>
-                                <div class="mobile-news-card__date"
-                                    style="color: #666; font-size: 0.75rem; margin-top: 4px;">Latest Updates</div>
-                                <h2 class="mobile-news-card__title"
-                                    style="font-size: 1.25rem; font-weight: 700; line-height: 1.3; margin: 12px 0; color: #fff;">
-                                    Live Cyber Threat Intelligence Dashboard</h2>
-                                <p class="mobile-news-card__excerpt"
-                                    style="color: #aaa; font-size: 0.95rem; line-height: 1.5; margin-bottom: 16px;">Stay
-                                    ahead with real-time cybersecurity news, CVE alerts, and threat intelligence.
-                                    Automated updates every 4 hours from trusted sources...</p>
-                                <div class="mobile-news-card__cta"
-                                    style="display: flex; align-items: center; justify-content: space-between; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 12px; color: #00D9FF; font-weight: 600; font-size: 0.9rem;">
-                                    <span>Loading latest news...</span>
-                                    <i class="fas fa-spinner fa-spin"></i>
-                                </div>
-                            </div>
-                            <!-- Dynamic cards will be inserted here -->
-                            <div class="news-empty-state" id="newsEmptyState" style="display: none;">
-                                <div class="news-empty-icon">
-                                    <i class="fas fa-newspaper"></i>
-                                </div>
-                                <div class="news-empty-title">Loading News...</div>
-                                <div class="news-empty-text">Please wait while we fetch the latest updates</div>
+                    <!-- News Card Stack Container -->
+                    <div class="news-stack-container" id="newsStackContainer">
+                        <!-- Static LCP placeholder - replaced by JS -->
+                        <div class="mobile-news-card active" id="staticNewsPlaceholder"
+                            style="background: var(--m-bg-card, #1a1a1a); border: 1px solid var(--m-border, rgba(255,255,255,0.1)); border-radius: 16px; padding: 20px; margin: 0 16px;">
+                            <div class="mobile-news-card__source"
+                                style="color: #00D9FF; font-size: 0.75rem; font-weight: 600; text-transform: uppercase;">
+                                Cybersecurity</div>
+                            <div class="mobile-news-card__date"
+                                style="color: #666; font-size: 0.75rem; margin-top: 4px;">Latest Updates</div>
+                            <h2 class="mobile-news-card__title"
+                                style="font-size: 1.25rem; font-weight: 700; line-height: 1.3; margin: 12px 0; color: #fff;">
+                                Live Cyber Threat Intelligence Dashboard</h2>
+                            <p class="mobile-news-card__excerpt"
+                                style="color: #aaa; font-size: 0.95rem; line-height: 1.5; margin-bottom: 16px;">Stay
+                                ahead with real-time cybersecurity news, CVE alerts, and threat intelligence.
+                                Automated updates every 4 hours from trusted sources...</p>
+                            <div class="mobile-news-card__cta"
+                                style="display: flex; align-items: center; justify-content: space-between; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 12px; color: #00D9FF; font-weight: 600; font-size: 0.9rem;">
+                                <span>Loading latest news...</span>
+                                <i class="fas fa-spinner fa-spin"></i>
                             </div>
                         </div>
-
-                        <!-- Progress Indicator -->
-                        <div class="news-progress" id="newsProgress" style="display: none;">
-                            <div class="news-progress-dots" id="newsProgressDots"></div>
-                            <span class="news-progress-counter" id="newsProgressCounter">1 of 10</span>
-                        </div>
-
-                        <!-- Navigation Controls -->
-                        <div class="news-nav-controls" id="newsNavControls" style="display: none;">
-                            <button class="news-nav-btn prev" aria-label="Previous news">
-                                <i class="fas fa-chevron-left"></i>
-                            </button>
-                            <button class="news-nav-btn next" aria-label="Next news">
-                                <i class="fas fa-chevron-right"></i>
-                            </button>
-                        </div>
-
-                        <!-- Swipe Hint -->
-                        <div class="news-swipe-hint" id="newsSwipeHint">
-                            <i class="fas fa-hand-pointer"></i>
-                            Swipe to navigate
-                            <i class="fas fa-arrows-alt-h"></i>
+                        <!-- Dynamic cards will be inserted here -->
+                        <div class="news-empty-state" id="newsEmptyState" style="display: none;">
+                            <div class="news-empty-icon">
+                                <i class="fas fa-newspaper"></i>
+                            </div>
+                            <div class="news-empty-title">Loading News...</div>
+                            <div class="news-empty-text">Please wait while we fetch the latest updates</div>
                         </div>
                     </div>
+
+                    <!-- Progress Indicator -->
+                    <div class="news-progress" id="newsProgress" style="display: none;">
+                        <div class="news-progress-dots" id="newsProgressDots"></div>
+                        <span class="news-progress-counter" id="newsProgressCounter">1 of 10</span>
+                    </div>
+
+                    <!-- Navigation Controls -->
+                    <div class="news-nav-controls" id="newsNavControls" style="display: none;">
+                        <button class="news-nav-btn prev" aria-label="Previous news">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="news-nav-btn next" aria-label="Next news">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                    <!-- Swipe Hint -->
+                    <div class="news-swipe-hint" id="newsSwipeHint">
+                        <i class="fas fa-hand-pointer"></i>
+                        Swipe to navigate
+                        <i class="fas fa-arrows-alt-h"></i>
+                    </div>
+                </div>
 
 
         </div>
@@ -4540,7 +4878,7 @@
                         </div>
                     </div>
                     <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">
-                        Top 20 actively exploited vulnerabilities from CISA Known Exploited Vulnerabilities catalog and
+                        Top 50 actively exploited vulnerabilities from CISA Known Exploited Vulnerabilities catalog and
                         critical CVEs (CVSS 9.0+) from NVD. Updated every 4 hours.
                     </p>
                 </div>
@@ -4549,7 +4887,7 @@
                     <div style="display: flex; gap: 12px;">
                         <div
                             style="text-align: center; padding: 16px 24px; background: rgba(0,0,0,0.4); border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
-                            <div id="homeCveCount" style="font-size: 2rem; font-weight: 700; color: #FF3D3D;">20</div>
+                            <div id="homeCveCount" style="font-size: 2rem; font-weight: 700; color: #FF3D3D;">50</div>
                             <div
                                 style="font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;">
                                 Top CVEs</div>
@@ -5049,18 +5387,201 @@
             try {
                 const response = await fetch('cve-data.json?t=' + Date.now());
                 const data = await response.json();
-                const cves = (data.cves || []).slice(0, 20);
+                const cves = (data.cves || []).slice(0, 50);
 
                 const countEl = document.getElementById('homeCveCount');
                 const criticalEl = document.getElementById('homeCveCritical');
                 const zeroEl = document.getElementById('homeCveZero');
+                const heroCveEl = document.getElementById('heroCveCountDynamic');
 
                 if (countEl) countEl.textContent = cves.length;
                 if (criticalEl) criticalEl.textContent = cves.filter(c => c.severity === 'CRITICAL').length;
                 if (zeroEl) zeroEl.textContent = cves.filter(c => c.isZeroDay).length;
+                if (heroCveEl) heroCveEl.textContent = cves.length;
             } catch (e) {
                 console.log('Could not load homepage CVE stats');
             }
+        });
+
+        // ========== HERO NEWS TICKER ==========
+        let tickerCyberNews = [];
+        let tickerAINews = [];
+
+        async function initNewsTicker() {
+            try {
+                const response = await fetch('news_cyber.json?t=' + Date.now());
+                const cyberData = await response.json();
+                tickerCyberNews = (cyberData.articles || []).slice(0, 8);
+                populateTicker('tickerCyber', tickerCyberNews, 'cyber');
+            } catch (e) {
+                console.log('Could not load cyber news for ticker');
+            }
+
+            try {
+                const response = await fetch('news_ai.json?t=' + Date.now());
+                const aiData = await response.json();
+                tickerAINews = (aiData.articles || []).slice(0, 8);
+                populateTicker('tickerAI', tickerAINews, 'ai');
+            } catch (e) {
+                console.log('Could not load AI news for ticker');
+            }
+        }
+
+        function populateTicker(containerId, articles, category) {
+            const container = document.getElementById(containerId);
+            if (!container || articles.length === 0) return;
+
+            const color = category === 'cyber' ? 'var(--accent-cyan)' : '#8B5CF6';
+            let html = '';
+
+            // Duplicate articles for seamless scroll
+            const allArticles = [...articles, ...articles];
+            allArticles.forEach((article, index) => {
+                const realIndex = index % articles.length;
+                const title = escapeHTML(article.title || 'Untitled').substring(0, 80);
+                html += `<span class="ticker-item" style="display: inline-flex; align-items: center; gap: 0.5rem; padding-right: 3rem; color: var(--text-secondary); font-size: 0.85rem; cursor: pointer;" onclick="openTickerNews(${realIndex}, '${category}')">
+                    <span style="color: ${color};">●</span> ${title}${title.length >= 80 ? '...' : ''}
+                </span>`;
+            });
+
+            container.innerHTML = html;
+        }
+
+        function switchTickerCategory(category) {
+            const cyberTicker = document.getElementById('tickerCyber');
+            const aiTicker = document.getElementById('tickerAI');
+            const tabs = document.querySelectorAll('.ticker-tab');
+
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+                if (tab.dataset.category === category) {
+                    tab.classList.add('active');
+                }
+            });
+
+            if (category === 'cyber') {
+                cyberTicker.style.display = 'flex';
+                aiTicker.style.display = 'none';
+            } else {
+                cyberTicker.style.display = 'none';
+                aiTicker.style.display = 'flex';
+            }
+        }
+
+        function openTickerNews(index, category) {
+            const articles = category === 'cyber' ? tickerCyberNews : tickerAINews;
+            if (articles[index]) {
+                // Use existing news modal if available, otherwise open URL
+                if (typeof openNewsModal === 'function') {
+                    openNewsModal(articles[index]);
+                } else {
+                    window.open(articles[index].url, '_blank');
+                }
+            }
+        }
+
+        // ========== DYNAMIC IOC COUNT ==========
+        async function updateHeroIocCount() {
+            try {
+                const response = await fetch('threat-intel-data.json?t=' + Date.now());
+                const data = await response.json();
+                const heroIocEl = document.getElementById('heroIocCountDynamic');
+
+                if (heroIocEl && data.totalCount) {
+                    const count = data.totalCount;
+                    if (count >= 1000) {
+                        heroIocEl.textContent = Math.floor(count / 1000) + 'K+';
+                    } else {
+                        heroIocEl.textContent = count + '+';
+                    }
+                }
+            } catch (e) {
+                console.log('Could not load IOC count for hero');
+            }
+        }
+
+        // ========== DYNAMIC ARTICLES LOADING ==========
+        async function loadLatestArticles() {
+            try {
+                const response = await fetch('articles.json?t=' + Date.now());
+                const data = await response.json();
+                const articles = (data || []).slice(0, 2);
+                const container = document.getElementById('latestArticlesContainer');
+
+                if (!container || articles.length === 0) return;
+
+                let html = '';
+                articles.forEach((article, index) => {
+                    const isFirst = index === 0;
+                    const bgStyle = isFirst ? 'background: linear-gradient(135deg, rgba(236, 72, 153, 0.05), rgba(139, 92, 246, 0.05)); border: 1px solid rgba(236, 72, 153, 0.2);' : 'background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border);';
+                    const url = article.externalUrl || article.url || '#';
+
+                    html += `<a href="${escapeHTML(url)}" class="featured-card" style="text-decoration: none; ${bgStyle} border-radius: 12px; padding: 1.25rem; display: flex; align-items: flex-start; gap: 1rem; transition: all 0.3s ease;">
+                        <div style="flex-shrink: 0; width: 40px; height: 40px; background: ${isFirst ? 'linear-gradient(135deg, #ec4899, #8B5CF6)' : 'rgba(236, 72, 153, 0.15)'}; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-bolt" style="color: ${isFirst ? '#000' : '#ec4899'}; font-size: 1rem;"></i>
+                        </div>
+                        <div style="flex: 1; min-width: 0;">
+                            ${isFirst ? '<span style="display: inline-block; background: linear-gradient(135deg, #ec4899, #8B5CF6); color: #000; font-size: 0.6rem; font-weight: 700; padding: 0.2rem 0.5rem; border-radius: 3px; text-transform: uppercase; margin-bottom: 0.5rem;">Latest</span>' : ''}
+                            <h3 style="color: var(--text-primary); font-size: 0.95rem; font-weight: 600; margin: 0 0 0.25rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${escapeHTML(article.title)}</h3>
+                            <p style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin: 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">${escapeHTML(article.excerpt || '')}</p>
+                        </div>
+                    </a>`;
+                });
+
+                container.innerHTML = html;
+            } catch (e) {
+                console.log('Could not load latest articles');
+                const container = document.getElementById('latestArticlesContainer');
+                if (container) {
+                    container.innerHTML = '<div style="text-align: center; padding: 1rem; color: var(--text-muted);">Unable to load articles</div>';
+                }
+            }
+        }
+
+        // ========== DYNAMIC GUIDES LOADING ==========
+        async function loadLatestGuides() {
+            try {
+                const response = await fetch('guides/guides.json?t=' + Date.now());
+                const data = await response.json();
+                // Get first 2 featured guides
+                const guides = (data || []).filter(g => g.featured !== false).slice(0, 2);
+                const container = document.getElementById('latestGuidesContainer');
+
+                if (!container || guides.length === 0) return;
+
+                let html = '';
+                guides.forEach((guide, index) => {
+                    const isFirst = index === 0;
+                    const bgStyle = isFirst ? 'background: linear-gradient(135deg, rgba(0, 217, 255, 0.05), rgba(139, 92, 246, 0.05)); border: 1px solid rgba(0, 217, 255, 0.2);' : 'background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border);';
+                    const iconBgStyle = isFirst ? 'background: linear-gradient(135deg, var(--accent-cyan), #8B5CF6);' : 'background: rgba(16, 185, 129, 0.15);';
+                    const iconColor = isFirst ? '#000' : '#10b981';
+                    const url = guide.url || `/guides/${guide.slug}.html`;
+
+                    html += `<a href="${escapeHTML(url)}" class="featured-card" style="text-decoration: none; ${bgStyle} border-radius: 12px; padding: 1.25rem; display: flex; align-items: flex-start; gap: 1rem; transition: all 0.3s ease;">
+                        <div style="flex-shrink: 0; width: 40px; height: 40px; ${iconBgStyle} border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-robot" style="color: ${iconColor}; font-size: 1rem;"></i>
+                        </div>
+                        <div style="flex: 1; min-width: 0;">
+                            ${isFirst ? '<span style="display: inline-block; background: linear-gradient(135deg, var(--accent-cyan), #8B5CF6); color: #000; font-size: 0.6rem; font-weight: 700; padding: 0.2rem 0.5rem; border-radius: 3px; text-transform: uppercase; margin-bottom: 0.5rem;">New</span>' : ''}
+                            <h3 style="color: var(--text-primary); font-size: 0.95rem; font-weight: 600; margin: 0 0 0.25rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${escapeHTML(guide.title)}</h3>
+                            <p style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin: 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">${escapeHTML(guide.excerpt || '')}</p>
+                        </div>
+                    </a>`;
+                });
+
+                container.innerHTML = html;
+            } catch (e) {
+                console.log('Could not load latest guides - using static fallback');
+                // Keep the static fallback HTML that's already in the container
+            }
+        }
+
+        // Initialize all dynamic content
+        document.addEventListener('DOMContentLoaded', function () {
+            initNewsTicker();
+            updateHeroIocCount();
+            loadLatestGuides();
+            loadLatestArticles();
         });
     </script>
     <script src="archives-content.js?v=20251130" defer></script>
