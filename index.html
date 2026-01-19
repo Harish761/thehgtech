@@ -5508,7 +5508,8 @@
                 articles.forEach((article, index) => {
                     const isFirst = index === 0;
                     const bgStyle = isFirst ? 'background: linear-gradient(135deg, rgba(236, 72, 153, 0.05), rgba(139, 92, 246, 0.05)); border: 1px solid rgba(236, 72, 153, 0.2);' : 'background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border);';
-                    const url = article.externalUrl || article.url || '#';
+                    // For content-based articles (no externalUrl), link to articles.html with id parameter
+                    const url = article.externalUrl || article.url || (article.id ? `articles.html?id=${article.id}` : '#');
 
                     html += `<a href="${escapeHTML(url)}" class="featured-card" style="text-decoration: none; ${bgStyle} border-radius: 12px; padding: 1.25rem; display: flex; align-items: flex-start; gap: 1rem; transition: all 0.3s ease;">
                         <div style="flex-shrink: 0; width: 40px; height: 40px; background: ${isFirst ? 'linear-gradient(135deg, #ec4899, #8B5CF6)' : 'rgba(236, 72, 153, 0.15)'}; border-radius: 8px; display: flex; align-items: center; justify-content: center;">

@@ -1784,6 +1784,15 @@
 
             const card = document.getElementById('featuredCard');
             card.href = article.externalUrl || `articles.html?id=${article.id}`;
+            card.dataset.articleId = article.id;
+
+            // For content-based articles, prevent navigation and show modal
+            card.onclick = function (e) {
+                if (article.content && !article.externalUrl) {
+                    e.preventDefault();
+                    showArticleModal(article);
+                }
+            };
 
             document.getElementById('featuredImage').src = article.image || 'images/default-article.png';
             document.getElementById('featuredImage').alt = article.title;
