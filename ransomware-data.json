@@ -1,13 +1,19 @@
 {
-  "last_updated": "2026-01-19T01:53:41.782855",
+  "last_updated": "2026-01-19T12:51:52.743639",
   "period": "Last 7 days",
-  "total_groups": 23,
-  "total_victims": 255,
+  "total_groups": 24,
+  "total_victims": 256,
   "groups": [
     {
       "name": "Qilin",
-      "count": 62,
+      "count": 64,
       "victims": [
+        {
+          "name": "Casadei",
+          "date": "2026-01-19 04:23:30.677287",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=2f996339-6bd4-3582-9198-be07a126fa8b",
+          "discovered_date": "2026-01-19T04:23:30.677287"
+        },
         {
           "name": "Dreher Law Firm",
           "date": "2026-01-18 18:48:52.803835",
@@ -61,12 +67,6 @@
           "date": "2026-01-17 06:59:56.829402",
           "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=ddfb1940-3f0b-35b9-a8bd-6c943cec8967",
           "discovered_date": "2026-01-17T06:59:56.829402"
-        },
-        {
-          "name": "Laboratorios Smasac",
-          "date": "2026-01-17 06:59:20.426892",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=bd2149c3-8de3-3674-9846-8bef1e7862e7",
-          "discovered_date": "2026-01-17T06:59:20.426892"
         }
       ],
       "industries": [
@@ -92,7 +92,7 @@
         2,
         16,
         10,
-        0
+        2
       ]
     },
     {
@@ -188,7 +188,7 @@
     },
     {
       "name": "Akira",
-      "count": 32,
+      "count": 30,
       "victims": [
         {
           "name": "Industrial Rivet & Fastener Company",
@@ -239,16 +239,16 @@
           "discovered_date": "2026-01-15T15:39:09.711285"
         },
         {
-          "name": "Rebars & Mesh",
-          "date": "2026-01-14 14:37:54.392182",
+          "name": "ImageWorks Display",
+          "date": "2026-01-14 15:44:10.133924",
           "url": "",
-          "discovered_date": "2026-01-14T14:37:54.392182"
+          "discovered_date": "2026-01-14T15:44:10.133924"
         },
         {
-          "name": "TruGolf",
-          "date": "2026-01-14 14:37:58.699282",
-          "url": "",
-          "discovered_date": "2026-01-14T14:37:58.699282"
+          "name": "La Macchia Group",
+          "date": "2026-01-16T14:12:50+00:00",
+          "url": "https://www.ransomware.live/id/TGEgTWFjY2hpYSBHcm91cEBha2lyYQ==",
+          "discovered_date": "2026-01-16T14:12:50+00:00"
         }
       ],
       "industries": [
@@ -268,7 +268,7 @@
       "trend_percentage": 15,
       "daily_counts": [
         2,
-        8,
+        6,
         6,
         10,
         0,
@@ -832,7 +832,7 @@
     },
     {
       "name": "Benzona",
-      "count": 5,
+      "count": 4,
       "victims": [
         {
           "name": "ccbrt.org",
@@ -857,12 +857,6 @@
           "date": "2026-01-17T09:24:34+00:00",
           "url": "https://www.ransomware.live/id/ZW0qKippbnQqLWhvKioqLmNvbUBiZW56b25h",
           "discovered_date": "2026-01-17T09:24:34+00:00"
-        },
-        {
-          "name": "cc***.or.*z",
-          "date": "2026-01-12T11:38:06+00:00",
-          "url": "https://www.ransomware.live/id/Y2MqKioub3IuKnpAYmVuem9uYQ==",
-          "discovered_date": "2026-01-12T11:38:06+00:00"
         }
       ],
       "industries": [
@@ -1203,6 +1197,41 @@
       ],
       "countries": [
         "N/A"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "name": "Ransomhouse",
+      "count": 2,
+      "victims": [
+        {
+          "name": "[Apple Data]Luxshare Precision Industry Co. Ltd.",
+          "date": "2026-01-19 11:26:28.261573",
+          "url": "http://zohlm7ahjwegcedoz7lrdrti7bvpofymcayotp744qhx6gjmxbuo2yid.onion/r/71e3c79c30915c9a48250c410fff31ed587e6909",
+          "discovered_date": "2026-01-19T11:26:28.261573"
+        },
+        {
+          "name": "[Apple Data]Luxshare Precision Industry Co. Ltd.",
+          "date": "2026-01-19T11:26:28+00:00",
+          "url": "https://www.ransomware.live/id/W0FwcGxlIERhdGFdTHV4c2hhcmUgUHJlY2lzaW9uIEluZHVzdHJ5IENvLiBMdGQuQHJhbnNvbWhvdXNl",
+          "discovered_date": "2026-01-19T11:26:28+00:00"
+        }
+      ],
+      "industries": [
+        "Technology"
+      ],
+      "countries": [
+        "CN"
       ],
       "trend": "down",
       "trend_percentage": -5,
