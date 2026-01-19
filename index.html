@@ -4476,33 +4476,34 @@
                 <!-- News Ticker in Hero -->
                 <div class="hero-news-ticker" style="width: 100%; max-width: 900px; margin: 0 auto;">
                     <!-- Ticker Tabs -->
-                    <div style="display: flex; justify-content: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                    <div style="display: flex; justify-content: center; gap: 0.75rem; margin-bottom: 1rem;">
                         <button class="ticker-tab active" data-category="cyber" onclick="switchTickerCategory('cyber')"
-                            style="background: rgba(0, 217, 255, 0.15); border: 1px solid rgba(0, 217, 255, 0.3); color: var(--accent-cyan); padding: 0.35rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease;">
+                            style="background: rgba(0, 217, 255, 0.15); border: 1px solid rgba(0, 217, 255, 0.4); color: var(--accent-cyan); padding: 0.5rem 1.25rem; border-radius: 25px; font-size: 0.85rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease;">
                             <i class="fas fa-shield-alt"></i> Cybersecurity
                         </button>
                         <button class="ticker-tab" data-category="ai" onclick="switchTickerCategory('ai')"
-                            style="background: transparent; border: 1px solid var(--border); color: var(--text-muted); padding: 0.35rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease;">
+                            style="background: transparent; border: 1px solid var(--border); color: var(--text-muted); padding: 0.5rem 1.25rem; border-radius: 25px; font-size: 0.85rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease;">
                             <i class="fas fa-brain"></i> AI & ML
                         </button>
                     </div>
                     <!-- Ticker Container -->
                     <div class="ticker-wrapper"
-                        style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border); border-radius: 12px; padding: 0.75rem 1rem; overflow: hidden; position: relative;">
+                        style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 16px; padding: 1rem 1.5rem; overflow: hidden; position: relative;">
                         <div class="ticker-content" id="tickerCyber"
-                            style="display: flex; animation: tickerScroll 30s linear infinite; white-space: nowrap;">
+                            style="display: flex; animation: tickerScroll 40s linear infinite; white-space: nowrap;">
                             <span class="ticker-item"
-                                style="display: inline-flex; align-items: center; gap: 1.5rem; padding-right: 3rem; color: var(--text-secondary); font-size: 0.85rem; cursor: pointer;"
+                                style="display: inline-flex; align-items: center; gap: 0.75rem; padding-right: 4rem; color: var(--text-secondary); font-size: 0.95rem; cursor: pointer;"
                                 onclick="openTickerNews(0, 'cyber')">
-                                <span style="color: var(--accent-cyan);">●</span> Loading cybersecurity news...
+                                <span style="color: var(--accent-cyan); font-size: 0.5rem;">●</span> Loading
+                                cybersecurity news...
                             </span>
                         </div>
                         <div class="ticker-content" id="tickerAI"
-                            style="display: none; animation: tickerScroll 30s linear infinite; white-space: nowrap;">
+                            style="display: none; animation: tickerScroll 40s linear infinite; white-space: nowrap;">
                             <span class="ticker-item"
-                                style="display: inline-flex; align-items: center; gap: 1.5rem; padding-right: 3rem; color: var(--text-secondary); font-size: 0.85rem; cursor: pointer;"
+                                style="display: inline-flex; align-items: center; gap: 0.75rem; padding-right: 4rem; color: var(--text-secondary); font-size: 0.95rem; cursor: pointer;"
                                 onclick="openTickerNews(0, 'ai')">
-                                <span style="color: #8B5CF6;">●</span> Loading AI news...
+                                <span style="color: #8B5CF6; font-size: 0.5rem;">●</span> Loading AI news...
                             </span>
                         </div>
                     </div>
@@ -5435,9 +5436,9 @@
             const allArticles = [...articles, ...articles];
             allArticles.forEach((article, index) => {
                 const realIndex = index % articles.length;
-                const title = escapeHTML(article.title || 'Untitled').substring(0, 80);
-                html += `<span class="ticker-item" style="display: inline-flex; align-items: center; gap: 0.5rem; padding-right: 3rem; color: var(--text-secondary); font-size: 0.85rem; cursor: pointer;" onclick="openTickerNews(${realIndex}, '${category}')">
-                    <span style="color: ${color};">●</span> ${title}${title.length >= 80 ? '...' : ''}
+                const title = escapeHTML(article.title || 'Untitled').substring(0, 75);
+                html += `<span class="ticker-item" style="display: inline-flex; align-items: center; gap: 0.75rem; padding-right: 4rem; color: var(--text-secondary); font-size: 0.95rem; cursor: pointer;" onclick="openTickerNews(${realIndex}, '${category}')">
+                    <span style="color: ${color}; font-size: 0.6rem;">●</span> ${title}${title.length >= 75 ? '...' : ''}
                 </span>`;
             });
 
