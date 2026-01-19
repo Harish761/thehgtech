@@ -5407,23 +5407,20 @@
         let tickerCyberNews = [];
         let tickerAINews = [];
 
-        async function initNewsTicker() {
-            try {
-                const response = await fetch('news_cyber.json?t=' + Date.now());
-                const cyberData = await response.json();
-                tickerCyberNews = (cyberData.articles || []).slice(0, 8);
+        function initNewsTicker() {
+            // Wait for websiteContent to be available
+            if (typeof websiteContent !== 'undefined' && websiteContent.cyberShorts) {
+                tickerCyberNews = websiteContent.cyberShorts.slice(0, 8);
                 populateTicker('tickerCyber', tickerCyberNews, 'cyber');
-            } catch (e) {
-                console.log('Could not load cyber news for ticker');
+            } else {
+                // Retry after content loads
+                setTimeout(initNewsTicker, 500);
+                return;
             }
 
-            try {
-                const response = await fetch('news_ai.json?t=' + Date.now());
-                const aiData = await response.json();
-                tickerAINews = (aiData.articles || []).slice(0, 8);
+            if (typeof websiteContent !== 'undefined' && websiteContent.aiShorts) {
+                tickerAINews = websiteContent.aiShorts.slice(0, 8);
                 populateTicker('tickerAI', tickerAINews, 'ai');
-            } catch (e) {
-                console.log('Could not load AI news for ticker');
             }
         }
 
@@ -5469,14 +5466,9 @@
         }
 
         function openTickerNews(index, category) {
-            const articles = category === 'cyber' ? tickerCyberNews : tickerAINews;
-            if (articles[index]) {
-                // Use existing news modal if available, otherwise open URL
-                if (typeof openNewsModal === 'function') {
-                    openNewsModal(articles[index]);
-                } else {
-                    window.open(articles[index].url, '_blank');
-                }
+            // Use the existing openNewsModal function that uses websiteContent
+            if (typeof openNewsModal === 'function') {
+                openNewsModal(index, category);
             }
         }
 
@@ -5505,7 +5497,8 @@
             try {
                 const response = await fetch('articles.json?t=' + Date.now());
                 const data = await response.json();
-                const articles = (data || []).slice(0, 2);
+                // articles.json has { "articles": [...] } structure
+                const articles = (data.articles || data || []).slice(0, 2);
                 const container = document.getElementById('latestArticlesContainer');
 
                 if (!container || articles.length === 0) return;
@@ -5530,7 +5523,7 @@
 
                 container.innerHTML = html;
             } catch (e) {
-                console.log('Could not load latest articles');
+                console.log('Could not load latest articles', e);
                 const container = document.getElementById('latestArticlesContainer');
                 if (container) {
                     container.innerHTML = '<div style="text-align: center; padding: 1rem; color: var(--text-muted);">Unable to load articles</div>';
