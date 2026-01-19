@@ -1905,8 +1905,220 @@
         document.getElementById('searchInput').addEventListener('input', applyFilters);
         document.getElementById('sortSelect').addEventListener('change', applyFilters);
 
+        // ========== ARTICLE MODAL FOR CONTENT-BASED ARTICLES ==========
+        function showArticleModal(article) {
+            if (!article || !article.content) return false;
+
+            // Create modal if doesn't exist
+            let modal = document.getElementById('articleModal');
+            if (!modal) {
+                modal = document.createElement('div');
+                modal.id = 'articleModal';
+                modal.innerHTML = `
+                    <div class="article-modal-overlay" onclick="closeArticleModal()"></div>
+                    <div class="article-modal-content">
+                        <button class="article-modal-close" onclick="closeArticleModal()">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <div class="article-modal-header">
+                            <span class="article-modal-category"></span>
+                            <h1 class="article-modal-title"></h1>
+                            <div class="article-modal-meta">
+                                <span class="article-modal-author"><i class="fas fa-user"></i> </span>
+                                <span class="article-modal-date"><i class="fas fa-calendar"></i> </span>
+                            </div>
+                        </div>
+                        <div class="article-modal-body"></div>
+                    </div>
+                `;
+                document.body.appendChild(modal);
+
+                // Add modal styles
+                const style = document.createElement('style');
+                style.textContent = `
+                    #articleModal {
+                        position: fixed;
+                        inset: 0;
+                        z-index: 10000;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 2rem;
+                    }
+                    .article-modal-overlay {
+                        position: absolute;
+                        inset: 0;
+                        background: rgba(0, 0, 0, 0.85);
+                        backdrop-filter: blur(10px);
+                    }
+                    .article-modal-content {
+                        position: relative;
+                        background: var(--bg-secondary, #0a0a14);
+                        border: 1px solid var(--border, rgba(255,255,255,0.1));
+                        border-radius: 20px;
+                        max-width: 800px;
+                        max-height: 90vh;
+                        width: 100%;
+                        overflow-y: auto;
+                        padding: 2.5rem;
+                        animation: modalSlideIn 0.3s ease;
+                    }
+                    @keyframes modalSlideIn {
+                        from { opacity: 0; transform: translateY(20px); }
+                        to { opacity: 1; transform: translateY(0); }
+                    }
+                    .article-modal-close {
+                        position: absolute;
+                        top: 1.5rem;
+                        right: 1.5rem;
+                        background: rgba(255, 255, 255, 0.1);
+                        border: none;
+                        color: var(--text-secondary, #aaa);
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        cursor: pointer;
+                        transition: all 0.3s;
+                        font-size: 1rem;
+                    }
+                    .article-modal-close:hover {
+                        background: rgba(255, 61, 61, 0.2);
+                        color: #FF3D3D;
+                    }
+                    .article-modal-header {
+                        margin-bottom: 2rem;
+                        padding-bottom: 1.5rem;
+                        border-bottom: 1px solid var(--border, rgba(255,255,255,0.1));
+                    }
+                    .article-modal-category {
+                        display: inline-block;
+                        background: linear-gradient(135deg, rgba(255, 61, 61, 0.2), rgba(255, 61, 61, 0.05));
+                        color: #FF3D3D;
+                        padding: 0.4rem 1rem;
+                        border-radius: 20px;
+                        font-size: 0.75rem;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        margin-bottom: 1rem;
+                    }
+                    .article-modal-title {
+                        font-size: 1.75rem;
+                        font-weight: 700;
+                        color: var(--text-primary, #fff);
+                        line-height: 1.3;
+                        margin: 0 0 1rem;
+                    }
+                    .article-modal-meta {
+                        display: flex;
+                        gap: 1.5rem;
+                        color: var(--text-muted, #666);
+                        font-size: 0.85rem;
+                    }
+                    .article-modal-meta i {
+                        margin-right: 0.4rem;
+                        color: var(--accent-primary, #FF3D3D);
+                    }
+                    .article-modal-body {
+                        color: var(--text-secondary, #ccc);
+                        font-size: 1rem;
+                        line-height: 1.8;
+                    }
+                    .article-modal-body h1, .article-modal-body h2, .article-modal-body h3 {
+                        color: var(--text-primary, #fff);
+                        margin: 1.5rem 0 1rem;
+                    }
+                    .article-modal-body h2 { font-size: 1.35rem; }
+                    .article-modal-body h3 { font-size: 1.15rem; }
+                    .article-modal-body ul, .article-modal-body ol {
+                        padding-left: 1.5rem;
+                        margin: 1rem 0;
+                    }
+                    .article-modal-body li {
+                        margin-bottom: 0.5rem;
+                    }
+                    .article-modal-body strong {
+                        color: var(--text-primary, #fff);
+                    }
+                    .article-modal-body p {
+                        margin-bottom: 1rem;
+                    }
+                    @media (max-width: 768px) {
+                        #articleModal { padding: 0; }
+                        .article-modal-content {
+                            max-height: 100vh;
+                            border-radius: 0;
+                            padding: 1.5rem;
+                        }
+                        .article-modal-title { font-size: 1.35rem; }
+                    }
+                `;
+                document.head.appendChild(style);
+            }
+
+            // Populate modal
+            modal.querySelector('.article-modal-category').textContent = article.category || 'Article';
+            modal.querySelector('.article-modal-title').textContent = article.title;
+            modal.querySelector('.article-modal-author').innerHTML = `<i class="fas fa-user"></i> ${article.author || 'TheHGTech'}`;
+            modal.querySelector('.article-modal-date').innerHTML = `<i class="fas fa-calendar"></i> ${article.date}`;
+            modal.querySelector('.article-modal-body').innerHTML = article.content;
+
+            // Show modal
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+
+            // Update URL without reload
+            history.pushState({}, '', `articles.html?id=${article.id}`);
+
+            return true;
+        }
+
+        function closeArticleModal() {
+            const modal = document.getElementById('articleModal');
+            if (modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = '';
+                // Reset URL
+                history.pushState({}, '', 'articles.html');
+            }
+        }
+
+        // Handle ESC key to close modal
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') closeArticleModal();
+        });
+
+        // Check for article ID in URL on page load
+        function checkUrlForArticle() {
+            const params = new URLSearchParams(window.location.search);
+            const articleId = params.get('id');
+
+            if (articleId && allArticles.length > 0) {
+                const article = allArticles.find(a => a.id === articleId);
+                if (article && article.content) {
+                    showArticleModal(article);
+                }
+            }
+        }
+
+        // Override article card clicks to handle content-based articles
+        document.addEventListener('click', function (e) {
+            const link = e.target.closest('.article-card-link');
+            if (link) {
+                const articleId = link.dataset.articleId;
+                const article = allArticles.find(a => a.id === articleId);
+
+                // If article has content (no externalUrl), show modal instead
+                if (article && article.content && !article.externalUrl) {
+                    e.preventDefault();
+                    showArticleModal(article);
+                }
+            }
+        });
+
         // Initialize
-        loadArticles();
+        loadArticles().then(() => {
+            checkUrlForArticle();
+        });
     </script>
 </body>
 
