@@ -4521,32 +4521,59 @@
                         display: flex;
                         align-items: center;
                         gap: 0.5rem;
-                        background: rgba(255, 255, 255, 0.03);
-                        border: 1px solid rgba(255, 255, 255, 0.1);
-                        color: var(--text-muted);
+                        background: var(--glass);
+                        border: 1px solid var(--border);
+                        color: var(--text-secondary);
                         padding: 0.6rem 1.5rem;
                         border-radius: 8px;
                         font-size: 0.9rem;
                         font-weight: 600;
                         cursor: pointer;
-                        transition: all 0.3s ease;
+                        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                        position: relative;
+                        overflow: hidden;
+                    }
+
+                    .ticker-tab::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: -100%;
+                        width: 100%;
+                        height: 100%;
+                        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+                        transition: left 0.5s ease;
+                    }
+
+                    .ticker-tab:hover::before {
+                        left: 100%;
                     }
 
                     .ticker-tab:hover {
+                        background: rgba(0, 217, 255, 0.1);
                         border-color: var(--accent-cyan);
                         color: var(--accent-cyan);
+                        transform: translateY(-2px);
                     }
 
                     .ticker-tab.active {
-                        background: linear-gradient(135deg, rgba(0, 217, 255, 0.15), rgba(0, 217, 255, 0.05));
+                        background: var(--accent-cyan);
                         border-color: var(--accent-cyan);
-                        color: var(--accent-cyan);
+                        color: #000;
+                        box-shadow: 0 4px 20px rgba(0, 217, 255, 0.4);
+                    }
+
+                    .ticker-tab[data-category="ai"]:hover {
+                        background: rgba(139, 92, 246, 0.1);
+                        border-color: #8B5CF6;
+                        color: #8B5CF6;
                     }
 
                     .ticker-tab[data-category="ai"].active {
-                        background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(139, 92, 246, 0.05));
+                        background: #8B5CF6;
                         border-color: #8B5CF6;
-                        color: #8B5CF6;
+                        color: white;
+                        box-shadow: 0 4px 20px rgba(139, 92, 246, 0.4);
                     }
 
                     /* Fixed height wrapper - NO RESIZE */
