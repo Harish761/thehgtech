@@ -4475,12 +4475,8 @@
 
                 <!-- Premium Breaking News Ticker -->
                 <div class="breaking-news-container">
-                    <!-- LIVE Badge + Category Tabs -->
+                    <!-- Category Tabs -->
                     <div class="ticker-header">
-                        <div class="live-badge">
-                            <span class="live-dot"></span>
-                            <span class="live-text">LIVE</span>
-                        </div>
                         <div class="ticker-tabs">
                             <button class="ticker-tab-v2 active" data-category="cyber"
                                 onclick="switchTickerCategory('cyber')">
@@ -4536,64 +4532,10 @@
                         margin-bottom: 1rem;
                     }
 
-                    /* Pulsing LIVE Badge */
-                    .live-badge {
-                        display: flex;
-                        align-items: center;
-                        gap: 0.5rem;
-                        background: linear-gradient(135deg, rgba(255, 61, 61, 0.2), rgba(255, 61, 61, 0.1));
-                        border: 1px solid rgba(255, 61, 61, 0.5);
-                        padding: 0.5rem 1rem;
-                        border-radius: 6px;
-                        animation: livePulse 2s ease-in-out infinite;
-                    }
-
-                    .live-dot {
-                        width: 10px;
-                        height: 10px;
-                        background: #FF3D3D;
-                        border-radius: 50%;
-                        animation: liveDotPulse 1.5s ease-in-out infinite;
-                        box-shadow: 0 0 10px rgba(255, 61, 61, 0.8);
-                    }
-
-                    .live-text {
-                        font-size: 0.85rem;
-                        font-weight: 800;
-                        letter-spacing: 2px;
-                        color: #FF3D3D;
-                        text-transform: uppercase;
-                    }
-
-                    @keyframes livePulse {
-
-                        0%,
-                        100% {
-                            box-shadow: 0 0 0 0 rgba(255, 61, 61, 0.4);
-                        }
-
-                        50% {
-                            box-shadow: 0 0 20px 5px rgba(255, 61, 61, 0.2);
-                        }
-                    }
-
-                    @keyframes liveDotPulse {
-
-                        0%,
-                        100% {
-                            opacity: 1;
-                            transform: scale(1);
-                        }
-
-                        50% {
-                            opacity: 0.5;
-                            transform: scale(0.8);
-                        }
-                    }
-
-                    /* Category Tabs */
+                    /* Category Tabs - centered */
                     .ticker-tabs {
                         display: flex;
+                        justify-content: center;
                         gap: 0.5rem;
                     }
 
@@ -4643,6 +4585,7 @@
                         padding: 1.25rem 0;
                         overflow: hidden;
                         backdrop-filter: blur(20px);
+                        height: 60px;
                         box-shadow:
                             0 4px 30px rgba(0, 0, 0, 0.5),
                             inset 0 1px 0 rgba(255, 255, 255, 0.05),
