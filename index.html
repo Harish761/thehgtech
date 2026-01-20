@@ -4473,256 +4473,167 @@
                     </div>
                 </div>
 
-                <!-- Premium Breaking News Ticker -->
-                <div class="breaking-news-container">
+                <!-- Simple News Panel -->
+                <div class="news-panel">
                     <!-- Category Tabs -->
-                    <div class="ticker-header">
-                        <div class="ticker-tabs">
-                            <button class="ticker-tab-v2 active" data-category="cyber"
-                                onclick="switchTickerCategory('cyber')">
-                                <i class="fas fa-shield-alt"></i>
-                                <span>CYBER THREATS</span>
-                            </button>
-                            <button class="ticker-tab-v2" data-category="ai" onclick="switchTickerCategory('ai')">
-                                <i class="fas fa-robot"></i>
-                                <span>AI SECURITY</span>
-                            </button>
-                        </div>
+                    <div class="news-tabs">
+                        <button class="news-tab active" data-category="cyber" onclick="switchNewsTab('cyber')">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Cyber Threats</span>
+                        </button>
+                        <button class="news-tab" data-category="ai" onclick="switchNewsTab('ai')">
+                            <i class="fas fa-robot"></i>
+                            <span>AI Security</span>
+                        </button>
                     </div>
 
-                    <!-- Main Ticker Display -->
-                    <div class="premium-ticker-wrapper">
-                        <!-- Left gradient fade -->
-                        <div class="ticker-fade-left"></div>
-
-                        <!-- Ticker Content -->
-                        <div class="ticker-scroll-area">
-                            <div class="ticker-content-v2 active" id="tickerCyber">
-                                <span class="ticker-item-v2" onclick="openTickerNews(0, 'cyber')">
-                                    <span class="ticker-bullet cyber"></span>
-                                    <span class="ticker-text">Loading threat intelligence...</span>
-                                </span>
-                            </div>
-                            <div class="ticker-content-v2" id="tickerAI">
-                                <span class="ticker-item-v2" onclick="openTickerNews(0, 'ai')">
-                                    <span class="ticker-bullet ai"></span>
-                                    <span class="ticker-text">Loading AI security news...</span>
-                                </span>
-                            </div>
+                    <!-- News Content -->
+                    <div class="news-content-wrapper">
+                        <div class="news-content active" id="newsCyber">
+                            <div class="news-loading">Loading cyber news...</div>
                         </div>
-
-                        <!-- Right gradient fade -->
-                        <div class="ticker-fade-right"></div>
+                        <div class="news-content" id="newsAI">
+                            <div class="news-loading">Loading AI news...</div>
+                        </div>
                     </div>
                 </div>
 
                 <style>
-                    /* Premium Breaking News Ticker Styles */
-                    .breaking-news-container {
+                    /* Simple News Panel Styles */
+                    .news-panel {
                         width: 100%;
-                        max-width: 1000px;
+                        max-width: 900px;
                         margin: 0 auto;
                     }
 
-                    .ticker-header {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        gap: 1.5rem;
-                        margin-bottom: 1rem;
-                    }
-
-                    /* Category Tabs - centered */
-                    .ticker-tabs {
+                    .news-tabs {
                         display: flex;
                         justify-content: center;
                         gap: 0.5rem;
+                        margin-bottom: 1rem;
                     }
 
-                    .ticker-tab-v2 {
+                    .news-tab {
                         display: flex;
                         align-items: center;
                         gap: 0.5rem;
                         background: rgba(255, 255, 255, 0.03);
                         border: 1px solid rgba(255, 255, 255, 0.1);
                         color: var(--text-muted);
-                        padding: 0.6rem 1.25rem;
+                        padding: 0.6rem 1.5rem;
                         border-radius: 8px;
-                        font-size: 0.8rem;
-                        font-weight: 700;
-                        letter-spacing: 1px;
+                        font-size: 0.9rem;
+                        font-weight: 600;
                         cursor: pointer;
                         transition: all 0.3s ease;
-                        text-transform: uppercase;
                     }
 
-                    .ticker-tab-v2:hover {
+                    .news-tab:hover {
                         border-color: var(--accent-cyan);
                         color: var(--accent-cyan);
-                        background: rgba(0, 217, 255, 0.05);
                     }
 
-                    .ticker-tab-v2.active {
+                    .news-tab.active {
                         background: linear-gradient(135deg, rgba(0, 217, 255, 0.15), rgba(0, 217, 255, 0.05));
                         border-color: var(--accent-cyan);
                         color: var(--accent-cyan);
-                        box-shadow: 0 0 20px rgba(0, 217, 255, 0.2);
                     }
 
-                    .ticker-tab-v2[data-category="ai"].active {
+                    .news-tab[data-category="ai"].active {
                         background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(139, 92, 246, 0.05));
                         border-color: #8B5CF6;
                         color: #8B5CF6;
-                        box-shadow: 0 0 20px rgba(139, 92, 246, 0.2);
                     }
 
-                    /* Premium Ticker Wrapper */
-                    .premium-ticker-wrapper {
-                        position: relative;
-                        background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(10, 10, 10, 0.9));
-                        border: 1px solid rgba(0, 217, 255, 0.2);
+                    .news-content-wrapper {
+                        background: rgba(255, 255, 255, 0.02);
+                        border: 1px solid rgba(255, 255, 255, 0.08);
                         border-radius: 12px;
-                        padding: 1.25rem 0;
-                        overflow: hidden;
-                        backdrop-filter: blur(20px);
-                        height: 60px;
-                        box-shadow:
-                            0 4px 30px rgba(0, 0, 0, 0.5),
-                            inset 0 1px 0 rgba(255, 255, 255, 0.05),
-                            0 0 60px rgba(0, 217, 255, 0.05);
+                        padding: 1rem 1.5rem;
+                        min-height: 80px;
                     }
 
-                    /* Gradient Fades on edges */
-                    .ticker-fade-left,
-                    .ticker-fade-right {
-                        position: absolute;
-                        top: 0;
-                        bottom: 0;
-                        width: 80px;
-                        z-index: 2;
-                        pointer-events: none;
+                    .news-content {
+                        display: none;
                     }
 
-                    .ticker-fade-left {
-                        left: 0;
-                        background: linear-gradient(to right, rgba(0, 0, 0, 1), transparent);
+                    .news-content.active {
+                        display: block;
                     }
 
-                    .ticker-fade-right {
-                        right: 0;
-                        background: linear-gradient(to left, rgba(0, 0, 0, 1), transparent);
-                    }
-
-                    /* Ticker Scroll Area */
-                    .ticker-scroll-area {
-                        position: relative;
-                        overflow: hidden;
-                        padding: 0 1rem;
-                        height: 28px;
-                    }
-
-                    .ticker-content-v2 {
-                        position: absolute;
-                        top: 0;
-                        left: 1rem;
-                        right: 1rem;
+                    .news-items {
                         display: flex;
-                        animation: tickerScrollV2 35s linear infinite;
-                        white-space: nowrap;
-                        opacity: 0;
-                        visibility: hidden;
-                        transition: opacity 0.3s ease, visibility 0.3s ease;
-                    }
-
-                    .ticker-content-v2.active {
-                        opacity: 1;
-                        visibility: visible;
-                    }
-
-                    @keyframes tickerScrollV2 {
-                        0% {
-                            transform: translateX(0);
-                        }
-
-                        100% {
-                            transform: translateX(-50%);
-                        }
-                    }
-
-                    .premium-ticker-wrapper:hover .ticker-content-v2 {
-                        animation-play-state: paused;
-                    }
-
-                    /* Individual Ticker Items */
-                    .ticker-item-v2 {
-                        display: inline-flex;
-                        align-items: center;
+                        flex-wrap: wrap;
                         gap: 1rem;
-                        padding: 0 3rem;
+                        justify-content: center;
+                    }
+
+                    .news-item {
+                        display: flex;
+                        align-items: center;
+                        gap: 0.75rem;
+                        padding: 0.5rem 1rem;
+                        background: rgba(255, 255, 255, 0.02);
+                        border: 1px solid rgba(255, 255, 255, 0.05);
+                        border-radius: 8px;
                         cursor: pointer;
                         transition: all 0.3s ease;
+                        max-width: 400px;
                     }
 
-                    .ticker-item-v2:hover .ticker-text {
+                    .news-item:hover {
+                        border-color: var(--accent-cyan);
+                        background: rgba(0, 217, 255, 0.05);
+                    }
+
+                    .news-item:hover .news-item-title {
                         color: var(--accent-cyan);
-                        text-shadow: 0 0 20px rgba(0, 217, 255, 0.5);
                     }
 
-                    .ticker-bullet {
-                        width: 8px;
-                        height: 8px;
+                    .news-item-dot {
+                        width: 6px;
+                        height: 6px;
                         border-radius: 50%;
                         flex-shrink: 0;
                     }
 
-                    .ticker-bullet.cyber {
+                    .news-item-dot.cyber {
                         background: var(--accent-cyan);
-                        box-shadow: 0 0 10px var(--accent-cyan);
+                        box-shadow: 0 0 6px var(--accent-cyan);
                     }
 
-                    .ticker-bullet.ai {
+                    .news-item-dot.ai {
                         background: #8B5CF6;
-                        box-shadow: 0 0 10px #8B5CF6;
+                        box-shadow: 0 0 6px #8B5CF6;
                     }
 
-                    .ticker-text {
-                        font-size: 1.1rem;
+                    .news-item-title {
+                        font-size: 0.9rem;
                         font-weight: 500;
-                        color: rgba(255, 255, 255, 0.9);
-                        letter-spacing: 0.3px;
-                        transition: all 0.3s ease;
+                        color: var(--text-secondary);
+                        transition: color 0.3s ease;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
                     }
 
-                    /* Top border glow effect */
-                    .premium-ticker-wrapper::before {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        left: 10%;
-                        right: 10%;
-                        height: 1px;
-                        background: linear-gradient(90deg, transparent, var(--accent-cyan), transparent);
-                        opacity: 0.5;
+                    .news-loading {
+                        text-align: center;
+                        color: var(--text-muted);
+                        padding: 1rem;
                     }
 
-                    /* Responsive */
                     @media (max-width: 768px) {
-                        .ticker-header {
+                        .news-items {
                             flex-direction: column;
-                            gap: 1rem;
                         }
 
-                        .ticker-text {
-                            font-size: 0.95rem;
+                        .news-item {
+                            max-width: 100%;
                         }
 
-                        .ticker-tab-v2 span {
+                        .news-tab span {
                             display: none;
-                        }
-
-                        .ticker-fade-left,
-                        .ticker-fade-right {
-                            width: 40px;
                         }
                     }
                 </style>
@@ -5598,8 +5509,7 @@
         function initNewsTicker() {
             // Wait for websiteContent to be available
             if (typeof websiteContent !== 'undefined' && websiteContent.cyberShorts) {
-                tickerCyberNews = websiteContent.cyberShorts.slice(0, 8);
-                populateTicker('tickerCyber', tickerCyberNews, 'cyber');
+                populateNewsPanel('newsCyber', websiteContent.cyberShorts.slice(0, 4), 'cyber');
             } else {
                 // Retry after content loads
                 setTimeout(initNewsTicker, 500);
@@ -5607,36 +5517,33 @@
             }
 
             if (typeof websiteContent !== 'undefined' && websiteContent.aiShorts) {
-                tickerAINews = websiteContent.aiShorts.slice(0, 8);
-                populateTicker('tickerAI', tickerAINews, 'ai');
+                populateNewsPanel('newsAI', websiteContent.aiShorts.slice(0, 4), 'ai');
             }
         }
 
-        function populateTicker(containerId, articles, category) {
+        function populateNewsPanel(containerId, articles, category) {
             const container = document.getElementById(containerId);
             if (!container || articles.length === 0) return;
 
-            const bulletClass = category === 'cyber' ? 'cyber' : 'ai';
-            let html = '';
+            const dotClass = category === 'cyber' ? 'cyber' : 'ai';
+            let html = '<div class="news-items">';
 
-            // Duplicate articles for seamless scroll
-            const allArticles = [...articles, ...articles];
-            allArticles.forEach((article, index) => {
-                const realIndex = index % articles.length;
-                const title = escapeHTML(article.title || 'Untitled').substring(0, 80);
-                html += `<span class="ticker-item-v2" onclick="openTickerNews(${realIndex}, '${category}')">
-                    <span class="ticker-bullet ${bulletClass}"></span>
-                    <span class="ticker-text">${title}${title.length >= 80 ? '...' : ''}</span>
-                </span>`;
+            articles.forEach((article, index) => {
+                const title = escapeHTML(article.title || 'Untitled').substring(0, 60);
+                html += `<div class="news-item" onclick="openNewsItem(${index}, '${category}')">
+                    <span class="news-item-dot ${dotClass}"></span>
+                    <span class="news-item-title">${title}${title.length >= 60 ? '...' : ''}</span>
+                </div>`;
             });
 
+            html += '</div>';
             container.innerHTML = html;
         }
 
-        function switchTickerCategory(category) {
-            const cyberTicker = document.getElementById('tickerCyber');
-            const aiTicker = document.getElementById('tickerAI');
-            const tabs = document.querySelectorAll('.ticker-tab-v2');
+        function switchNewsTab(category) {
+            const cyberNews = document.getElementById('newsCyber');
+            const aiNews = document.getElementById('newsAI');
+            const tabs = document.querySelectorAll('.news-tab');
 
             tabs.forEach(tab => {
                 tab.classList.remove('active');
@@ -5646,16 +5553,16 @@
             });
 
             if (category === 'cyber') {
-                cyberTicker.classList.add('active');
-                aiTicker.classList.remove('active');
+                cyberNews.classList.add('active');
+                aiNews.classList.remove('active');
             } else {
-                cyberTicker.classList.remove('active');
-                aiTicker.classList.add('active');
+                cyberNews.classList.remove('active');
+                aiNews.classList.add('active');
             }
         }
 
-        function openTickerNews(index, category) {
-            // Use the existing openNewsModal function that uses websiteContent
+        function openNewsItem(index, category) {
+            // Use the existing openNewsModal function
             if (typeof openNewsModal === 'function') {
                 openNewsModal(index, category);
             }
