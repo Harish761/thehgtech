@@ -4576,6 +4576,24 @@
                         box-shadow: 0 4px 20px rgba(139, 92, 246, 0.4);
                     }
 
+                    /* FIX FOR RESIZING BUG: Ripple Effect Styles */
+                    .ripple-effect {
+                        position: absolute;
+                        /* Vital for preventing resizing */
+                        border-radius: 50%;
+                        background: rgba(255, 255, 255, 0.4);
+                        transform: scale(0);
+                        animation: ripple 0.6s linear;
+                        pointer-events: none;
+                    }
+
+                    @keyframes ripple {
+                        to {
+                            transform: scale(4);
+                            opacity: 0;
+                        }
+                    }
+
                     /* Fixed height wrapper - NO RESIZE */
                     .ticker-wrapper {
                         position: relative;
@@ -4617,18 +4635,17 @@
                         left: 0;
                         right: 0;
                         height: 100%;
-                        display: flex;
+                        display: none;
+                        /* Hidden by default */
                         align-items: center;
                         animation: tickerScrollAnim 30s linear infinite;
                         white-space: nowrap;
-                        opacity: 0;
-                        visibility: hidden;
-                        transition: opacity 0.2s ease;
                     }
 
+                    /* Instant Switch - No fade transition */
                     .ticker-scroll.active {
-                        opacity: 1;
-                        visibility: visible;
+                        display: flex;
+                        /* Instant show */
                     }
 
                     @keyframes tickerScrollAnim {
