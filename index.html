@@ -4473,44 +4473,216 @@
                     </div>
                 </div>
 
-                <!-- News Ticker in Hero -->
-                <div class="hero-news-ticker" style="width: 100%; max-width: 900px; margin: 0 auto;">
-                    <!-- Ticker Tabs -->
-                    <div style="display: flex; justify-content: center; gap: 0.75rem; margin-bottom: 1rem;">
-                        <button class="ticker-tab active" data-category="cyber" onclick="switchTickerCategory('cyber')"
-                            style="background: rgba(0, 217, 255, 0.15); border: 1px solid rgba(0, 217, 255, 0.4); color: var(--accent-cyan); padding: 0.5rem 1.25rem; border-radius: 25px; font-size: 0.85rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease;">
-                            <i class="fas fa-shield-alt"></i> Cybersecurity
-                        </button>
-                        <button class="ticker-tab" data-category="ai" onclick="switchTickerCategory('ai')"
-                            style="background: transparent; border: 1px solid var(--border); color: var(--text-muted); padding: 0.5rem 1.25rem; border-radius: 25px; font-size: 0.85rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease;">
-                            <i class="fas fa-brain"></i> AI & ML
-                        </button>
+                <!-- Premium Breaking News Ticker -->
+                <div class="breaking-news-container">
+                    <!-- LIVE Badge + Category Tabs -->
+                    <div class="ticker-header">
+                        <div class="live-badge">
+                            <span class="live-dot"></span>
+                            <span class="live-text">LIVE</span>
+                        </div>
+                        <div class="ticker-tabs">
+                            <button class="ticker-tab-v2 active" data-category="cyber"
+                                onclick="switchTickerCategory('cyber')">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>CYBER THREATS</span>
+                            </button>
+                            <button class="ticker-tab-v2" data-category="ai" onclick="switchTickerCategory('ai')">
+                                <i class="fas fa-robot"></i>
+                                <span>AI SECURITY</span>
+                            </button>
+                        </div>
                     </div>
-                    <!-- Ticker Container -->
-                    <div class="ticker-wrapper"
-                        style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 16px; padding: 1rem 1.5rem; overflow: hidden; position: relative;">
-                        <div class="ticker-content" id="tickerCyber"
-                            style="display: flex; animation: tickerScroll 40s linear infinite; white-space: nowrap;">
-                            <span class="ticker-item"
-                                style="display: inline-flex; align-items: center; gap: 0.75rem; padding-right: 4rem; color: var(--text-secondary); font-size: 0.95rem; cursor: pointer;"
-                                onclick="openTickerNews(0, 'cyber')">
-                                <span style="color: var(--accent-cyan); font-size: 0.5rem;">●</span> Loading
-                                cybersecurity news...
-                            </span>
+
+                    <!-- Main Ticker Display -->
+                    <div class="premium-ticker-wrapper">
+                        <!-- Left gradient fade -->
+                        <div class="ticker-fade-left"></div>
+
+                        <!-- Ticker Content -->
+                        <div class="ticker-scroll-area">
+                            <div class="ticker-content-v2" id="tickerCyber">
+                                <span class="ticker-item-v2" onclick="openTickerNews(0, 'cyber')">
+                                    <span class="ticker-bullet cyber"></span>
+                                    <span class="ticker-text">Loading threat intelligence...</span>
+                                </span>
+                            </div>
+                            <div class="ticker-content-v2" id="tickerAI" style="display: none;">
+                                <span class="ticker-item-v2" onclick="openTickerNews(0, 'ai')">
+                                    <span class="ticker-bullet ai"></span>
+                                    <span class="ticker-text">Loading AI security news...</span>
+                                </span>
+                            </div>
                         </div>
-                        <div class="ticker-content" id="tickerAI"
-                            style="display: none; animation: tickerScroll 40s linear infinite; white-space: nowrap;">
-                            <span class="ticker-item"
-                                style="display: inline-flex; align-items: center; gap: 0.75rem; padding-right: 4rem; color: var(--text-secondary); font-size: 0.95rem; cursor: pointer;"
-                                onclick="openTickerNews(0, 'ai')">
-                                <span style="color: #8B5CF6; font-size: 0.5rem;">●</span> Loading AI news...
-                            </span>
-                        </div>
+
+                        <!-- Right gradient fade -->
+                        <div class="ticker-fade-right"></div>
                     </div>
                 </div>
 
                 <style>
-                    @keyframes tickerScroll {
+                    /* Premium Breaking News Ticker Styles */
+                    .breaking-news-container {
+                        width: 100%;
+                        max-width: 1000px;
+                        margin: 0 auto;
+                    }
+
+                    .ticker-header {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 1.5rem;
+                        margin-bottom: 1rem;
+                    }
+
+                    /* Pulsing LIVE Badge */
+                    .live-badge {
+                        display: flex;
+                        align-items: center;
+                        gap: 0.5rem;
+                        background: linear-gradient(135deg, rgba(255, 61, 61, 0.2), rgba(255, 61, 61, 0.1));
+                        border: 1px solid rgba(255, 61, 61, 0.5);
+                        padding: 0.5rem 1rem;
+                        border-radius: 6px;
+                        animation: livePulse 2s ease-in-out infinite;
+                    }
+
+                    .live-dot {
+                        width: 10px;
+                        height: 10px;
+                        background: #FF3D3D;
+                        border-radius: 50%;
+                        animation: liveDotPulse 1.5s ease-in-out infinite;
+                        box-shadow: 0 0 10px rgba(255, 61, 61, 0.8);
+                    }
+
+                    .live-text {
+                        font-size: 0.85rem;
+                        font-weight: 800;
+                        letter-spacing: 2px;
+                        color: #FF3D3D;
+                        text-transform: uppercase;
+                    }
+
+                    @keyframes livePulse {
+
+                        0%,
+                        100% {
+                            box-shadow: 0 0 0 0 rgba(255, 61, 61, 0.4);
+                        }
+
+                        50% {
+                            box-shadow: 0 0 20px 5px rgba(255, 61, 61, 0.2);
+                        }
+                    }
+
+                    @keyframes liveDotPulse {
+
+                        0%,
+                        100% {
+                            opacity: 1;
+                            transform: scale(1);
+                        }
+
+                        50% {
+                            opacity: 0.5;
+                            transform: scale(0.8);
+                        }
+                    }
+
+                    /* Category Tabs */
+                    .ticker-tabs {
+                        display: flex;
+                        gap: 0.5rem;
+                    }
+
+                    .ticker-tab-v2 {
+                        display: flex;
+                        align-items: center;
+                        gap: 0.5rem;
+                        background: rgba(255, 255, 255, 0.03);
+                        border: 1px solid rgba(255, 255, 255, 0.1);
+                        color: var(--text-muted);
+                        padding: 0.6rem 1.25rem;
+                        border-radius: 8px;
+                        font-size: 0.8rem;
+                        font-weight: 700;
+                        letter-spacing: 1px;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                        text-transform: uppercase;
+                    }
+
+                    .ticker-tab-v2:hover {
+                        border-color: var(--accent-cyan);
+                        color: var(--accent-cyan);
+                        background: rgba(0, 217, 255, 0.05);
+                    }
+
+                    .ticker-tab-v2.active {
+                        background: linear-gradient(135deg, rgba(0, 217, 255, 0.15), rgba(0, 217, 255, 0.05));
+                        border-color: var(--accent-cyan);
+                        color: var(--accent-cyan);
+                        box-shadow: 0 0 20px rgba(0, 217, 255, 0.2);
+                    }
+
+                    .ticker-tab-v2[data-category="ai"].active {
+                        background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(139, 92, 246, 0.05));
+                        border-color: #8B5CF6;
+                        color: #8B5CF6;
+                        box-shadow: 0 0 20px rgba(139, 92, 246, 0.2);
+                    }
+
+                    /* Premium Ticker Wrapper */
+                    .premium-ticker-wrapper {
+                        position: relative;
+                        background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(10, 10, 10, 0.9));
+                        border: 1px solid rgba(0, 217, 255, 0.2);
+                        border-radius: 12px;
+                        padding: 1.25rem 0;
+                        overflow: hidden;
+                        backdrop-filter: blur(20px);
+                        box-shadow:
+                            0 4px 30px rgba(0, 0, 0, 0.5),
+                            inset 0 1px 0 rgba(255, 255, 255, 0.05),
+                            0 0 60px rgba(0, 217, 255, 0.05);
+                    }
+
+                    /* Gradient Fades on edges */
+                    .ticker-fade-left,
+                    .ticker-fade-right {
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        width: 80px;
+                        z-index: 2;
+                        pointer-events: none;
+                    }
+
+                    .ticker-fade-left {
+                        left: 0;
+                        background: linear-gradient(to right, rgba(0, 0, 0, 1), transparent);
+                    }
+
+                    .ticker-fade-right {
+                        right: 0;
+                        background: linear-gradient(to left, rgba(0, 0, 0, 1), transparent);
+                    }
+
+                    /* Ticker Scroll Area */
+                    .ticker-scroll-area {
+                        overflow: hidden;
+                        padding: 0 1rem;
+                    }
+
+                    .ticker-content-v2 {
+                        display: flex;
+                        animation: tickerScrollV2 35s linear infinite;
+                        white-space: nowrap;
+                    }
+
+                    @keyframes tickerScrollV2 {
                         0% {
                             transform: translateX(0);
                         }
@@ -4520,23 +4692,81 @@
                         }
                     }
 
-                    .ticker-wrapper:hover .ticker-content {
+                    .premium-ticker-wrapper:hover .ticker-content-v2 {
                         animation-play-state: paused;
                     }
 
-                    .ticker-item:hover {
-                        color: var(--accent-cyan) !important;
+                    /* Individual Ticker Items */
+                    .ticker-item-v2 {
+                        display: inline-flex;
+                        align-items: center;
+                        gap: 1rem;
+                        padding: 0 3rem;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
                     }
 
-                    .ticker-tab.active {
-                        background: rgba(0, 217, 255, 0.15) !important;
-                        border-color: rgba(0, 217, 255, 0.3) !important;
-                        color: var(--accent-cyan) !important;
-                    }
-
-                    .ticker-tab:hover:not(.active) {
-                        border-color: var(--accent-cyan);
+                    .ticker-item-v2:hover .ticker-text {
                         color: var(--accent-cyan);
+                        text-shadow: 0 0 20px rgba(0, 217, 255, 0.5);
+                    }
+
+                    .ticker-bullet {
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        flex-shrink: 0;
+                    }
+
+                    .ticker-bullet.cyber {
+                        background: var(--accent-cyan);
+                        box-shadow: 0 0 10px var(--accent-cyan);
+                    }
+
+                    .ticker-bullet.ai {
+                        background: #8B5CF6;
+                        box-shadow: 0 0 10px #8B5CF6;
+                    }
+
+                    .ticker-text {
+                        font-size: 1.1rem;
+                        font-weight: 500;
+                        color: rgba(255, 255, 255, 0.9);
+                        letter-spacing: 0.3px;
+                        transition: all 0.3s ease;
+                    }
+
+                    /* Top border glow effect */
+                    .premium-ticker-wrapper::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 10%;
+                        right: 10%;
+                        height: 1px;
+                        background: linear-gradient(90deg, transparent, var(--accent-cyan), transparent);
+                        opacity: 0.5;
+                    }
+
+                    /* Responsive */
+                    @media (max-width: 768px) {
+                        .ticker-header {
+                            flex-direction: column;
+                            gap: 1rem;
+                        }
+
+                        .ticker-text {
+                            font-size: 0.95rem;
+                        }
+
+                        .ticker-tab-v2 span {
+                            display: none;
+                        }
+
+                        .ticker-fade-left,
+                        .ticker-fade-right {
+                            width: 40px;
+                        }
                     }
                 </style>
             </section>
@@ -5429,16 +5659,17 @@
             const container = document.getElementById(containerId);
             if (!container || articles.length === 0) return;
 
-            const color = category === 'cyber' ? 'var(--accent-cyan)' : '#8B5CF6';
+            const bulletClass = category === 'cyber' ? 'cyber' : 'ai';
             let html = '';
 
             // Duplicate articles for seamless scroll
             const allArticles = [...articles, ...articles];
             allArticles.forEach((article, index) => {
                 const realIndex = index % articles.length;
-                const title = escapeHTML(article.title || 'Untitled').substring(0, 75);
-                html += `<span class="ticker-item" style="display: inline-flex; align-items: center; gap: 0.75rem; padding-right: 4rem; color: var(--text-secondary); font-size: 0.95rem; cursor: pointer;" onclick="openTickerNews(${realIndex}, '${category}')">
-                    <span style="color: ${color}; font-size: 0.6rem;">●</span> ${title}${title.length >= 75 ? '...' : ''}
+                const title = escapeHTML(article.title || 'Untitled').substring(0, 80);
+                html += `<span class="ticker-item-v2" onclick="openTickerNews(${realIndex}, '${category}')">
+                    <span class="ticker-bullet ${bulletClass}"></span>
+                    <span class="ticker-text">${title}${title.length >= 80 ? '...' : ''}</span>
                 </span>`;
             });
 
@@ -5448,7 +5679,7 @@
         function switchTickerCategory(category) {
             const cyberTicker = document.getElementById('tickerCyber');
             const aiTicker = document.getElementById('tickerAI');
-            const tabs = document.querySelectorAll('.ticker-tab');
+            const tabs = document.querySelectorAll('.ticker-tab-v2');
 
             tabs.forEach(tab => {
                 tab.classList.remove('active');
