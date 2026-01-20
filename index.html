@@ -4494,7 +4494,7 @@
                             <div class="ticker-scroll active" id="tickerCyber">
                                 <span class="ticker-item">Loading cyber news...</span>
                             </div>
-                            <div class="ticker-scroll" id="tickerAI">
+                            <div class="ticker-scroll" id="tickerAI" style="display: none;">
                                 <span class="ticker-item">Loading AI news...</span>
                             </div>
                         </div>
@@ -5624,10 +5624,16 @@
 
             if (category === 'cyber') {
                 cyberTicker.classList.add('active');
+                cyberTicker.style.display = ''; // Allow CSS flex to work
+
                 aiTicker.classList.remove('active');
+                aiTicker.style.display = 'none'; // Ensure hidden
             } else {
                 cyberTicker.classList.remove('active');
+                cyberTicker.style.display = 'none'; // Ensure hidden
+
                 aiTicker.classList.add('active');
+                aiTicker.style.display = ''; // Allow CSS flex to work
             }
         }
 
