@@ -4,90 +4,66 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Jan 19 2026",
-            "headline": "Firefox Users Targeted by Spy Extensions—Check Your Add-ons",
-            "title": "Sleeper Extensions on Firefox Spy on Users and Install Backdoors",
-            "content": "Researchers have uncovered a new wave of sleeper browser extensions that are now targeting Firefox users, joining similar threats on Chrome and Edge. These malicious extensions secretly spy on users and install backdoors, potentially compromising sensitive information. The extensions are designed to remain dormant until activated by specific triggers, making detection difficult. Firefox users are urged to review their installed extensions and remove any suspicious or unrecognized add-ons immediately. This discovery underscores the persistent threat of malicious browser extensions across major platforms, highlighting the need for vigilance in extension management.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/01/firefox-joins-chrome-and-edge-as-sleeper-extensions-spy-on-users",
+            "date": "Jan 20 2026",
+            "headline": "ISC Stormcast Highlights Cyber Trends—Stay Informed",
+            "title": "ISC Stormcast for January 20th Details Emerging Cybersecurity Trends",
+            "content": "The SANS Internet Storm Center&#x27;s latest Stormcast provides crucial insights into emerging cybersecurity threats and trends as of January 20th, 2026. With InfoCON status at green, indicating a low-level threat environment, the report emphasizes vigilance against evolving attack vectors. Security professionals are encouraged to stay updated on the latest advisories and patches to protect against potential vulnerabilities. The Stormcast serves as a valuable resource for identifying patterns in malicious activities and understanding the broader cybersecurity landscape. Regular engagement with these updates can enhance organizational resilience against cyber threats.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32638",
             "relatedResources": []
         },
         {
-            "date": "Jan 19 2026",
-            "headline": "Cyberattacks Linked to Caracas Blackout—US Officials Confirm",
-            "title": "Cyberattacks Disrupted Caracas Power and Air Defense During Maduro Capture",
-            "content": "US officials have confirmed that cyberattacks played a critical role in the blackout that plunged Caracas into darkness during the capture of Venezuelan President Nicolas Maduro. The attacks targeted the city&#x27;s power grid and air defense radar systems, causing widespread disruption. This incident highlights the increasing use of cyber warfare to achieve political objectives, raising concerns about the vulnerability of critical infrastructure. Security experts emphasize the need for robust cybersecurity measures to protect against such attacks, especially in politically volatile regions.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/new-reports-reinforce-cyberattacks-role-in-maduro-capture-blackout/",
+            "date": "Jan 20 2026",
+            "headline": "ChatGPT Go Offers Unlimited GPT-5.2 for $8 Monthly",
+            "title": "OpenAI&#x27;s ChatGPT Go Unlocks Unlimited GPT-5.2 Instant Access",
+            "content": "OpenAI has revamped its ChatGPT Go service, now offering unlimited access to GPT-5.2 Instant for a monthly fee of $8. This update nearly doubles previous usage limits, making the service more attractive for users requiring extensive interaction with AI models. The shift aims to enhance user experience by providing faster response times and more robust capabilities. This move positions ChatGPT Go as a competitive option in the AI marketplace, appealing to both individual users and businesses seeking scalable AI solutions. Users are advised to evaluate their usage needs to determine if the new offering aligns with their requirements.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/chatgpt-go-now-unlocks-unlimited-access-to-gpt-52-instant-for-8/",
             "relatedResources": [
                 {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
                 }
             ]
         },
         {
             "date": "Jan 19 2026",
-            "headline": "Cloud Downtime Costs Soar for DevOps and SaaS Firms",
-            "title": "Hidden Costs of Cloud Downtime Impact DevOps and SaaS Businesses",
-            "content": "The promise of the cloud as a foolproof solution for performance and security issues is being reevaluated as businesses face significant downtime costs. Cloud-first DevOps and SaaS companies are experiencing hidden expenses due to service interruptions, challenging the notion of &quot;always-on&quot; reliability. As organizations increasingly rely on public cloud services, they are finding that the lack of granular control can lead to unforeseen vulnerabilities and disruptions. Experts recommend implementing robust contingency plans and diversifying cloud service providers to mitigate potential risks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/01/high-costs-of-devops-saas-downtime.html",
+            "headline": "Fake Ad Blocker Targets Browsers—Beware NexShield",
+            "title": "Malicious NexShield Extension Crashes Browsers for ClickFix Attacks",
+            "content": "A deceptive Chrome and Edge extension named NexShield is being used in a malvertising campaign to crash browsers and facilitate ClickFix attacks. This fake ad blocker manipulates browser functionality, disrupting users&#x27; web experiences to exploit ad revenue systems. The extension&#x27;s malicious activity highlights the need for vigilance when installing browser add-ons, especially from unverified sources. Security professionals should advise users to remove NexShield immediately and ensure robust endpoint protection measures are in place. This incident underscores the ongoing threat posed by malicious browser extensions in cyber ecosystems.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/fake-ad-blocker-extension-crashes-the-browser-for-clickfix-attacks/",
             "relatedResources": [
                 {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
+                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
+                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
+                    "icon": "fa-shield-virus"
                 }
             ]
         },
         {
             "date": "Jan 19 2026",
-            "headline": "Chrome Extensions Hijack Enterprise Sessions—Beware of Token Theft",
-            "title": "Malicious Chrome Extensions Hijack Enterprise Sessions for Account Takeover",
-            "content": "A coordinated campaign has been discovered involving Chrome extensions that hijack enterprise sessions to steal authentication tokens. These extensions, disguised as productivity tools, bypassed the Chrome Web Store&#x27;s defenses and pose a significant threat to corporate security. By blocking incident reports and stealing session tokens, the extensions enable potential full account takeovers. Organizations are urged to audit their browser extensions and enforce strict policies on third-party add-ons. This incident highlights the ongoing risks associated with browser extensions in enterprise environments.",
+            "headline": "Mandiant Cracks NTLMv1—Pushes for Protocol Abandonment",
+            "title": "Mandiant Releases NTLMv1 Cracking Tool to Urge Protocol Retirement",
+            "content": "Google&#x27;s Mandiant security division has published a data lookup tool that simplifies cracking the outdated NTLMv1 authentication protocol, urging organizations to abandon its use. By demonstrating the ease with which NTLMv1 credentials can be compromised, Mandiant aims to accelerate the transition to more secure authentication methods. This initiative is part of a broader effort to eliminate legacy systems that pose significant security risks. Organizations still using NTLMv1 should prioritize migrating to modern protocols like NTLMv2 or Kerberos to safeguard their networks against potential breaches.",
             "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4118607/five-chrome-extensions-caught-hijacking-enterprise-sessions.html",
+            "sourceUrl": "https://www.csoonline.com/article/4118800/mandiant-pushes-organizations-to-dump-insecure-ntlmv1-by-releasing-a-way-to-crack-it.html",
             "relatedResources": [
                 {
-                    "label": "Third-Party Risk Management",
-                    "url": "/guides/third-party-risk-management.html",
-                    "icon": "fa-handshake"
+                    "label": "Active Directory Security",
+                    "url": "/guides/active-directory-security-hardening.html",
+                    "icon": "fa-sitemap"
                 }
             ]
         },
         {
             "date": "Jan 19 2026",
-            "headline": "AMD CPUs Vulnerable—StackWarp Flaw Exposes SEV-SNP Protections",
-            "title": "StackWarp Hardware Flaw Compromises AMD SEV-SNP on Zen CPUs",
-            "content": "Researchers from the CISPA Helmholtz Center have disclosed a hardware vulnerability named StackWarp affecting AMD processors from Zen 1 to Zen 5. This flaw undermines the Secure Encrypted Virtualization-Secure Nested Paging (SEV-SNP) protections, allowing attackers with privileged access to execute malicious code. The vulnerability poses a significant risk to environments relying on AMD&#x27;s security features for data protection. Organizations using affected AMD processors should review their security configurations and apply any available patches to mitigate potential exploits.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/01/new-stackwarp-hardware-flaw-breaks-amd.html",
-            "relatedResources": [
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Jan 19 2026",
-            "headline": "CrashFix Chrome Extension Crashes Browsers—Installs Malware",
-            "title": "Malicious Chrome Extension &#x27;CrashFix&#x27; Crashes Browsers to Deploy Malware",
-            "content": "A malicious Chrome extension, masquerading as an ad blocker, has been identified as &#x27;CrashFix,&#x27; which crashes browsers to trick users into installing malware. This deceptive tactic aims to exploit user frustration and lead them to download malicious software under the guise of a fix. Security experts warn users to be cautious of unexpected browser crashes and to verify the legitimacy of extensions before installation. This incident underscores the importance of maintaining updated security measures and exercising caution with browser add-ons.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/malicious-chrome-extension-crashes-browser-in-clickfix-variant-crashfix/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 19 2026",
-            "headline": "Ingram Micro Ransomware Attack Hits 42,000—Personal Data Stolen",
-            "title": "Ransomware Attack on Ingram Micro Exposes Data of 42,000 Individuals",
-            "content": "A ransomware attack on Ingram Micro has compromised personal information of 42,000 individuals, including names, dates of birth, Social Security numbers, and employment-related data. The breach highlights the ongoing threat of ransomware attacks targeting large enterprises, with significant implications for data privacy and security. Affected individuals are advised to monitor their financial accounts and credit reports for suspicious activity. Organizations are reminded to strengthen their cybersecurity defenses and implement comprehensive incident response plans to mitigate the impact of such attacks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/42000-impacted-by-ingram-micro-ransomware-attack/",
+            "headline": "PDFSider Malware Hits Fortune 100 Firm—Finance Sector Alert",
+            "title": "PDFSider Malware Targets Fortune 100 Finance Company",
+            "content": "A new malware strain, PDFSider, has been deployed in a ransomware attack against a Fortune 100 company within the finance sector. This malware operates on Windows systems, delivering malicious payloads designed to compromise sensitive data and disrupt operations. The incident highlights the persistent threat of ransomware attacks targeting high-profile organizations, emphasizing the need for robust cybersecurity measures. Security teams should enhance monitoring and implement advanced threat detection solutions to mitigate the risk of similar intrusions. The attack serves as a stark reminder of the evolving tactics employed by cybercriminals.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-pdfsider-windows-malware-deployed-on-fortune-100-firms-network/",
             "relatedResources": [
                 {
                     "label": "Ransomware Response Playbook",
@@ -98,26 +74,31 @@ const websiteContent = {
         },
         {
             "date": "Jan 19 2026",
-            "headline": "Southeast Asia CISOs Predict AI Security, Identity Focus for 2026",
-            "title": "Southeast Asia CISOs Outline 2026 Security Priorities: AI, Identity, Resilience",
-            "content": "Chief Information Security Officers (CISOs) across Southeast Asia have forecasted critical security trends for 2026, emphasizing AI security, identity management, and strategic resilience. As cyber attackers refine their tactics, AI&#x27;s dual role in both risk and response is becoming more pronounced. The integration of IT and operational technology (OT) systems is also blurring traditional security boundaries. Key priorities include strengthening cloud and AI infrastructure and treating identity as the new perimeter. Organizations are advised to proactively adapt their security strategies to these evolving challenges, ensuring that AI and identity management are central to their resilience plans.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4117844/southeast-asia-cisos-13-top-predictions-for-2026-securing-ai-centering-identity-and-making-resilience-strategic.html",
+            "headline": "ChatGPT Health Launch Raises Security Concerns",
+            "title": "Security Concerns Emerge with ChatGPT Health Rollout",
+            "content": "The launch of ChatGPT Health has sparked significant security and safety concerns, despite its promise of robust data protection. Critics point to potential vulnerabilities in the system&#x27;s handling of sensitive health data, raising questions about user privacy and data integrity. As AI continues to integrate into healthcare, ensuring the security of patient information becomes paramount. Organizations utilizing ChatGPT Health should conduct thorough security assessments and maintain compliance with data protection regulations. The situation underscores the critical need for vigilance in safeguarding AI-driven healthcare solutions.",
+            "source": "Dark Reading",
+            "sourceUrl": "https://www.darkreading.com/remote-workforce/chatgpt-health-security-safety-concerns",
             "relatedResources": [
                 {
-                    "label": "MITRE ATT&CK Mapping",
-                    "url": "/guides/mitre-attack-mapping.html",
-                    "icon": "fa-map"
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
                 }
             ]
         },
         {
             "date": "Jan 19 2026",
-            "headline": "OpenAI Leak Reveals New ChatGPT Features—Testing Underway",
-            "title": "OpenAI Testing New ChatGPT Features Ahead of Upcoming Release",
-            "content": "OpenAI is reportedly testing new features for ChatGPT, with updates expected to roll out in the coming weeks. Although specific details remain under wraps, the enhancements are anticipated to improve user interaction and expand the AI&#x27;s capabilities on the web platform. This development is part of OpenAI&#x27;s ongoing efforts to maintain its competitive edge in the rapidly evolving conversational AI market. Users can expect more intuitive and efficient interactions, reinforcing ChatGPT&#x27;s position as a leading AI tool. Technical professionals should monitor these updates to leverage new functionalities in their applications.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/new-openai-leak-hints-at-upcoming-chatgpt-features/",
+            "headline": "Google Gemini Flaw Exposes Calendar Data—Prompt Injection Risk",
+            "title": "Google Gemini Vulnerability Leaks Calendar Data via Malicious Invites",
+            "content": "Cybersecurity researchers have identified a vulnerability in Google Gemini that exploits indirect prompt injection to access private Google Calendar data through malicious invites. This flaw bypasses authorization protocols, posing a significant risk to users&#x27; privacy and data security. The discovery by Miggo Security highlights the ongoing challenges of securing AI-driven systems against sophisticated attacks. Users should be cautious of unexpected calendar invites and review their security settings. Google is urged to implement stringent protective measures to prevent similar vulnerabilities in the future.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/01/google-gemini-prompt-injection-flaw.html",
             "relatedResources": [
                 {
                     "label": "LLM Security & Prompt Injection",
@@ -146,11 +127,11 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Jan 19 2026",
-            "headline": "AI Reshapes Financial Services—From Fraud Detection to Customer Engagement",
-            "title": "AI Becomes Integral to Financial Services Across Banking and Payments",
-            "content": "Artificial intelligence has transitioned from an innovative tool to a fundamental aspect of financial services, becoming embedded in key areas such as banking, payments, and wealth management. AI technologies now play critical roles in budgeting tools, fraud detection systems, Know Your Customer (KYC), Anti-Money Laundering (AML) processes, and customer engagement platforms. Financial institutions, including credit unions and fintech firms, are leveraging AI to enhance security, streamline operations, and improve customer experiences. This shift underscores the growing reliance on AI to address complex challenges and drive efficiency in the financial sector. Professionals in finance should focus on integrating AI solutions to remain competitive and secure.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/credit-union-ai-in-operational-settings-learnings-from-the-fintech-sector/",
+            "headline": "55 US AI Startups Secure $100M+ in 2025",
+            "title": "U.S. AI Startups See Record Fundraising with 55 Raising Over $100M",
+            "content": "In 2025, the U.S. AI industry witnessed a significant surge in investment, with 55 startups each raising $100 million or more. This influx of capital highlights the growing confidence in AI&#x27;s transformative potential across various sectors. The funding boom is expected to accelerate innovation in machine learning, natural language processing, and autonomous systems. Investors are particularly interested in startups that offer scalable solutions and address pressing industry challenges. As AI technologies continue to mature, the focus will likely shift towards ensuring ethical use and robust security measures. Stakeholders should monitor these developments closely to capitalize on emerging opportunities.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/19/here-are-the-49-us-ai-startups-that-have-raised-100m-or-more-in-2025/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
@@ -158,19 +139,57 @@ const websiteContent = {
                     "icon": "fa-skull-crossbones"
                 },
                 {
-                    "label": "SIEM & Log Analysis Guide",
-                    "url": "/guides/siem-log-analysis.html",
-                    "icon": "fa-chart-bar"
+                    "label": "API Security Best Practices",
+                    "url": "/guides/api-security-best-practices.html",
+                    "icon": "fa-plug"
                 }
             ]
         },
         {
             "date": "Jan 19 2026",
-            "headline": "Enterprise AI Bottleneck—5% of Pilots Yield Results",
-            "title": "Composable and Sovereign AI: Overcoming Enterprise Adoption Challenges",
-            "content": "Despite substantial investments in generative AI, only 5% of enterprise AI pilots deliver measurable business value, with nearly half of companies abandoning initiatives before reaching production. The primary bottleneck lies not in the AI models themselves but in the integration and scalability of these solutions. Composable and sovereign AI frameworks are emerging as potential solutions to address these challenges by enabling more flexible and tailored deployments. Enterprises must focus on building robust AI infrastructures that support scalability and integration to maximize the return on their AI investments. Companies should evaluate their AI strategies to ensure alignment with business goals and operational capabilities.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2026/01/19/1131422/going-beyond-pilots-with-composable-and-sovereign-ai/",
+            "headline": "SAP, Fresenius Build Secure AI Platform for Healthcare",
+            "title": "SAP and Fresenius Develop Sovereign AI Backbone for Healthcare Data Security",
+            "content": "SAP and Fresenius have partnered to create a sovereign AI platform designed to enhance data security in healthcare settings. This initiative aims to provide a secure environment for processing sensitive clinical data, addressing the limitations of public cloud solutions in meeting stringent healthcare governance requirements. By leveraging their expertise, the companies seek to build a robust infrastructure that ensures compliance with regulations while facilitating AI-driven insights. Healthcare organizations are encouraged to explore this platform to enhance their data management capabilities and improve patient outcomes. The collaboration underscores the critical need for secure AI solutions in the medical sector.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/sap-and-fresenius-build-sovereign-ai-backbone-for-healthcare/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 19 2026",
+            "headline": "VCs Invest in AI Security—Rogue Agents in Focus",
+            "title": "Venture Capitalists Bet on AI Security to Tackle Rogue Agents",
+            "content": "Venture capitalists are increasingly investing in AI security startups like Witness AI, which focuses on detecting and mitigating the risks posed by rogue agents. These misaligned AI systems can lead to unauthorized tool usage and potential security breaches. Witness AI&#x27;s technology aims to identify and block such threats, ensuring compliance and safeguarding sensitive data. The rise in investment reflects growing concerns about AI&#x27;s potential vulnerabilities and the need for robust security frameworks. Organizations should prioritize AI security solutions to protect against evolving threats and maintain operational integrity.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/19/rogue-agents-and-shadow-ai-why-vcs-are-betting-big-on-ai-security/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 19 2026",
+            "headline": "Metaverse Declines as AI Innovations Surge",
+            "title": "Metaverse Faces Decline Amidst Rising AI Dominance in Technology",
+            "content": "The metaverse is losing traction as AI technologies continue to advance, overshadowing virtual reality (VR) initiatives. Meta&#x27;s ambitious VR projects have struggled to capture sustained interest, with AI-driven applications taking the spotlight. This shift highlights the tech industry&#x27;s pivot towards AI solutions that offer more immediate and practical benefits. Companies invested in VR may need to reassess their strategies and explore AI integrations to remain competitive. The trend underscores the dynamic nature of technology development and the importance of adaptability in a rapidly changing landscape.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/19/well-there-goes-the-metaverse/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "API Security Best Practices",
+                    "url": "/guides/api-security-best-practices.html",
+                    "icon": "fa-plug"
+                }
+            ]
+        },
+        {
+            "date": "Jan 19 2026",
+            "headline": "AI Scaling Challenges—Beyond Pilot Phase Purgatory",
+            "title": "Overcoming AI Scaling Challenges from Pilot to Enterprise Adoption",
+            "content": "Scaling AI solutions from pilot projects to full enterprise implementation remains a significant challenge for organizations. While experimentation with generative models is widespread, integrating these tools into existing systems requires robust governance, security, and interoperability frameworks. Many companies find themselves stuck in a &quot;pilot phase purgatory,&quot; unable to fully realize AI&#x27;s potential. To overcome these hurdles, organizations should focus on building scalable architectures and investing in comprehensive training programs for their workforce. Successfully industrializing AI tools will unlock substantial value and drive competitive advantage.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/scaling-ai-value-beyond-pilot-phase-purgatory/",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
@@ -178,55 +197,34 @@ const websiteContent = {
                     "icon": "fa-brain"
                 }
             ]
-        },
-        {
-            "date": "Jan 19 2026",
-            "headline": "JPMorgan Chase Declares AI as Essential Infrastructure",
-            "title": "AI Treated as Core Infrastructure by JPMorgan Chase",
-            "content": "JPMorgan Chase has classified artificial intelligence as a core component of its infrastructure, akin to payment systems and data centers. The bank&#x27;s CEO has emphasized AI&#x27;s critical role in maintaining competitive advantage and operational efficiency. This strategic positioning highlights the increasing importance of AI in risk management, customer service, and financial analysis. As AI becomes integral to financial institutions, organizations must prioritize AI development and deployment to stay ahead in a rapidly evolving landscape. Financial professionals should consider AI capabilities as essential to future-proofing their operations.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/jpmorgan-chase-treats-ai-spending-as-core-infrastructure/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 19 2026",
-            "headline": "Europe&#x27;s AI Ambitions Intensify Amid US Alliance Strains",
-            "title": "Europe Races to Establish AI Independence as US Ties Falter",
-            "content": "Europe is accelerating its efforts to become a self-sufficient AI superpower as its longstanding alliance with the US shows signs of strain. The region aims to reduce reliance on external AI technologies and foster homegrown innovation. This push for AI sovereignty involves significant investments in research, development, and infrastructure to support European tech companies. The strategic shift reflects broader geopolitical trends and the desire for technological independence. European tech leaders must navigate these changes by investing in local talent and fostering collaborations within the region to build a robust AI ecosystem.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/europe-race-us-deepseek-sovereign-ai/",
-            "relatedResources": []
         },
         {
             "date": "Jan 18 2026",
-            "headline": "Under Musk, Grok&#x27;s Downfall Was Unavoidable",
-            "title": "Grok&#x27;s Collapse Under Musk&#x27;s Leadership: An Inevitable Outcome",
-            "content": "The Grok project, under Elon Musk&#x27;s leadership, faced an inevitable downfall due to strategic missteps and management challenges. The initiative, which aimed to revolutionize AI applications, struggled with execution and failed to meet its ambitious goals. This case highlights the complexities of managing large-scale AI projects and the potential pitfalls of visionary leadership without effective operational strategies. Industry professionals should learn from Grok&#x27;s experience by balancing innovation with practical implementation and risk management. The story serves as a cautionary tale for tech leaders navigating the high-stakes world of AI development.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/column/863502/grok-deepfake-musk",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 17 2026",
-            "headline": "Musk Sues OpenAI—Seeks Up to $134B Over Investment Returns",
-            "title": "Musk Pursues Massive Compensation in OpenAI Lawsuit",
-            "content": "Elon Musk is pursuing a lawsuit against OpenAI, seeking up to $134 billion in compensation as an early investor. Musk&#x27;s legal team argues that his initial investment deserves returns &quot;many orders of magnitude greater&quot; than initially projected. This legal battle underscores the complexities of valuing early-stage investments in rapidly evolving tech sectors. The case could set a precedent for how investment returns are calculated in the AI industry, impacting future investor relations and financial negotiations. Stakeholders should closely monitor the proceedings to understand potential implications for investment strategies and legal frameworks in tech.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/17/musk-wants-up-to-134b-in-openai-lawsuit-despite-700b-fortune/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 17 2026",
-            "headline": "Thinking Machines Cofounder Fired for Office Misconduct",
-            "title": "Misconduct Leads to Termination of Thinking Machines Cofounder",
-            "content": "Barret Zoph, cofounder of Mira Murati&#x27;s startup Thinking Machines, has been terminated following allegations of serious misconduct related to an office relationship. The incident has prompted internal investigations and raised questions about corporate governance and workplace ethics. This development highlights the importance of maintaining professional boundaries and ethical standards in tech startups. Organizations should implement clear policies and training to prevent similar issues and ensure a respectful work environment. The situation serves as a reminder of the potential reputational and operational risks associated with leadership misconduct.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/thinking-machines-lab-cofounder-office-relationship-firing-openai/",
+            "headline": "AI Bubbles—Multiple Markets, Different Expiration Dates",
+            "title": "Diverse AI Bubbles: Understanding Market Dynamics and Potential Risks",
+            "content": "The debate over whether AI represents a bubble is nuanced, with experts suggesting multiple bubbles exist across different market segments. Each bubble, from autonomous vehicles to generative AI, has its own dynamics and potential risks. Investors and industry leaders are urged to assess which segments are overvalued and identify sustainable growth opportunities. Understanding the unique characteristics of each AI market is crucial for making informed investment decisions and mitigating potential losses. As AI continues to evolve, stakeholders must remain vigilant and adaptable to changing market conditions.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/infrastructure/stop-calling-it-the-ai-bubble-its-actually-multiple-bubbles-each-with-a",
             "relatedResources": [
                 {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Jan 18 2026",
+            "headline": "Privacy-Focused AI—Moxie Marlinspike&#x27;s ChatGPT Alternative",
+            "title": "Moxie Marlinspike Introduces Privacy-Centric Alternative to ChatGPT",
+            "content": "Moxie Marlinspike has unveiled Confer, a privacy-conscious AI platform designed as an alternative to popular conversational agents like ChatGPT. Unlike its counterparts, Confer ensures that user interactions are not used for training or advertising purposes, addressing growing privacy concerns. This development reflects a broader trend towards privacy-focused AI solutions as users demand greater control over their data. Organizations and individuals seeking secure communication tools should consider adopting such platforms to protect sensitive information. The introduction of Confer highlights the increasing importance of privacy in AI development and deployment.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/18/moxie-marlinspike-has-a-privacy-conscious-alternative-to-chatgpt/",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
                 }
             ]
         }
@@ -291,18 +289,6 @@ const websiteContent = {
         "privacy": "<h2>Privacy Policy</h2><p style='color: var(--text-muted); font-size: 0.9rem; margin-bottom: 2rem;'>Last Updated: November 18, 2025</p><h3>Information We Collect</h3><p>TheHGTech is committed to protecting your privacy. We collect minimal information necessary to provide our services:</p><ul style='margin-left: 1.5rem; margin-bottom: 1.5rem;'><li>Usage data (pages visited, time spent, browser type) via Google Analytics</li><li>Cookies for theme preferences and site functionality</li></ul><h3>Third-Party Services</h3><p>We use the following third-party services that may collect data:</p><ul style='margin-left: 1.5rem; margin-bottom: 1.5rem;'><li><strong>Google Analytics:</strong> For anonymous traffic analysis</li><li><strong>Carbon Ads (via Fullres):</strong> For displaying privacy-friendly advertisements</li></ul><h3>Advertising</h3><p>We display advertisements through Carbon Ads, a privacy-focused ad network. Carbon Ads:</p><ul style='margin-left: 1.5rem; margin-bottom: 1.5rem;'><li>Does NOT use cookies for tracking</li><li>Does NOT collect personal information</li><li>Only uses contextual targeting based on page content</li><li>Serves ads from ethical, vetted technology companies</li></ul><p>Learn more: <a href='https://www.carbonads.net/privacy' target='_blank' rel='noopener noreferrer' style='color: var(--accent);'>Carbon Ads Privacy Policy</a></p><h3>Cookies</h3><p>We use minimal cookies for:</p><ul style='margin-left: 1.5rem; margin-bottom: 1.5rem;'><li>Remembering your dark/light theme preference</li><li>Tracking cookie consent (if accepted)</li></ul><h3>Data Security</h3><p>We implement industry-standard security measures including HTTPS, Content Security Policy (CSP), and HSTS to protect your information.</p><h3>Your Rights</h3><p>You have the right to:</p><ul style='margin-left: 1.5rem; margin-bottom: 1.5rem;'><li>Access any personal data we hold about you</li><li>Request deletion of your data</li><li>Opt-out of analytics by using browser privacy settings</li><li>Use ad blockers to prevent ad display</li></ul><h3>External Links</h3><p>Our site contains links to external websites. We are not responsible for the privacy practices of these sites.</p><h3>Changes to Policy</h3><p>We may update this policy periodically. The 'Last Updated' date will reflect any changes.</p><h3>Contact</h3><p>For privacy concerns, contact us at: <a href='mailto:harish@thehgtech.com' style='color: var(--accent);'>harish@thehgtech.com</a></p>",
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
-    "recentCVEs": [
-        {
-            "cveId": "CVE-2026-20805",
-            "dateAdded": "Jan 13, 2026",
-            "vendor": "Microsoft Windows",
-            "description": "Microsoft Windows Desktop Windows Manager contains an information disclosure vulnerability that allows an authorized attacker to disclose information locally.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20805",
-            "isZeroDay": false
-        }
-    ],
+    "recentCVEs": [],
     "featureCards": []
 };
