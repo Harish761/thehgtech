@@ -4497,13 +4497,13 @@
 
                         <!-- Ticker Content -->
                         <div class="ticker-scroll-area">
-                            <div class="ticker-content-v2" id="tickerCyber">
+                            <div class="ticker-content-v2 active" id="tickerCyber">
                                 <span class="ticker-item-v2" onclick="openTickerNews(0, 'cyber')">
                                     <span class="ticker-bullet cyber"></span>
                                     <span class="ticker-text">Loading threat intelligence...</span>
                                 </span>
                             </div>
-                            <div class="ticker-content-v2" id="tickerAI" style="display: none;">
+                            <div class="ticker-content-v2" id="tickerAI">
                                 <span class="ticker-item-v2" onclick="openTickerNews(0, 'ai')">
                                     <span class="ticker-bullet ai"></span>
                                     <span class="ticker-text">Loading AI security news...</span>
@@ -4615,14 +4615,28 @@
 
                     /* Ticker Scroll Area */
                     .ticker-scroll-area {
+                        position: relative;
                         overflow: hidden;
                         padding: 0 1rem;
+                        height: 28px;
                     }
 
                     .ticker-content-v2 {
+                        position: absolute;
+                        top: 0;
+                        left: 1rem;
+                        right: 1rem;
                         display: flex;
                         animation: tickerScrollV2 35s linear infinite;
                         white-space: nowrap;
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: opacity 0.3s ease, visibility 0.3s ease;
+                    }
+
+                    .ticker-content-v2.active {
+                        opacity: 1;
+                        visibility: visible;
                     }
 
                     @keyframes tickerScrollV2 {
@@ -5632,11 +5646,11 @@
             });
 
             if (category === 'cyber') {
-                cyberTicker.style.display = 'flex';
-                aiTicker.style.display = 'none';
+                cyberTicker.classList.add('active');
+                aiTicker.classList.remove('active');
             } else {
-                cyberTicker.style.display = 'none';
-                aiTicker.style.display = 'flex';
+                cyberTicker.classList.remove('active');
+                aiTicker.classList.add('active');
             }
         }
 
