@@ -4546,19 +4546,28 @@
                     }
 
                     .news-content-wrapper {
+                        position: relative;
                         background: rgba(255, 255, 255, 0.02);
                         border: 1px solid rgba(255, 255, 255, 0.08);
                         border-radius: 12px;
                         padding: 1rem 1.5rem;
-                        min-height: 80px;
+                        height: 70px;
+                        overflow: hidden;
                     }
 
                     .news-content {
-                        display: none;
+                        position: absolute;
+                        top: 1rem;
+                        left: 1.5rem;
+                        right: 1.5rem;
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: opacity 0.2s ease;
                     }
 
                     .news-content.active {
-                        display: block;
+                        opacity: 1;
+                        visibility: visible;
                     }
 
                     .news-items {
