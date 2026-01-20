@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DragonForce: The New Ransomware Cartel Built on LockBit and Conti DNA | TheHGTech</title>
+    <meta name="description"
+        content="DragonForce has evolved from hacktivist group to ransomware cartel, leveraging LockBit 3.0 and Conti source code. Analysis of their RaaS model, UK retail attacks, and what makes them dangerous.">
+    <meta name="keywords"
+        content="DragonForce ransomware, ransomware cartel, LockBit 3.0, Conti ransomware, RaaS, Marks Spencer hack, Co-op ransomware, double extortion">
+    <link rel="canonical" href="https://thehgtech.com/articles/dragonforce-ransomware-cartel-2026.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="DragonForce: The Ransomware Cartel Combining LockBit & Conti">
+    <meta property="og:description"
+        content="From hacktivists to profit-driven cartel. How DragonForce built a RaaS empire using leaked ransomware code.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/articles/dragonforce-ransomware-cartel-2026.html">
+    <meta property="og:image" content="https://thehgtech.com/images/articles/dragonforce-ransomware-cartel-2026.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DragonForce Ransomware Cartel Analysis">
+    <meta name="twitter:description"
+        content="The new ransomware supergroup using LockBit 3.0 and Conti code. UK retailers targeted.">
+
+    <!-- Article Meta -->
+    <meta property="article:published_time" content="2026-01-20T00:00:00Z">
+    <meta property="article:author" content="Harish G">
+    <meta property="article:section" content="Ransomware">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": "DragonForce: The New Ransomware Cartel Built on LockBit and Conti DNA",
+      "description": "DragonForce ransomware group analysis - from hacktivists to RaaS cartel using LockBit 3.0 and Conti source code.",
+      "author": {
+        "@type": "Person",
+        "name": "Harish G"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TheHGTech",
+        "url": "https://thehgtech.com"
+      },
+      "datePublished": "2026-01-20",
+      "dateModified": "2026-01-20",
+      "mainEntityOfPage": "https://thehgtech.com/articles/dragonforce-ransomware-cartel-2026.html"
+    }
+    </script>
+
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/header-dropdown.css?v=1">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF3D3D;
+            --accent-blue: #3B82F6;
+            --accent-orange: #FF6B35;
+            --accent-green: #10b981;
+            --accent-purple: #8B5CF6;
+            --accent-dragon: #FF4500;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        .article-container {
+            max-width: 800px;
+            margin: 80px auto 0;
+            padding: 2rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-cyan);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: var(--text-primary);
+        }
+
+        .article-header {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .article-category {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent-red), var(--accent-dragon));
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--accent-dragon), var(--accent-red));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .article-excerpt {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .article-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .featured-image {
+            width: 100%;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border: 1px solid var(--border);
+        }
+
+        h2 {
+            color: var(--accent-dragon);
+            margin: 2.5rem 0 1rem;
+            font-size: 1.6rem;
+        }
+
+        h3 {
+            color: var(--text-primary);
+            margin: 1.5rem 0 1rem;
+            font-size: 1.3rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        .info-box {
+            background: rgba(255, 69, 0, 0.08);
+            border-left: 4px solid var(--accent-dragon);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .warning-box {
+            background: rgba(255, 61, 61, 0.1);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .success-box {
+            background: rgba(16, 185, 129, 0.1);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .critical-box {
+            background: linear-gradient(135deg, rgba(255, 69, 0, 0.2), rgba(255, 61, 61, 0.1));
+            border-left: 4px solid var(--accent-dragon);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 69, 0, 0.3);
+        }
+
+        .threat-actor-box {
+            background: linear-gradient(135deg, rgba(255, 69, 0, 0.15), rgba(255, 61, 61, 0.1));
+            border: 2px solid var(--accent-dragon);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .threat-actor-box .actor-name {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--accent-dragon);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .threat-actor-box .label {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: rgba(255, 69, 0, 0.1);
+            color: var(--accent-dragon);
+            font-weight: 600;
+        }
+
+        td {
+            color: var(--text-secondary);
+        }
+
+        ul,
+        ol {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        blockquote {
+            border-left: 4px solid var(--accent-dragon);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+
+        blockquote cite {
+            display: block;
+            margin-top: 0.5rem;
+            color: var(--accent-dragon);
+            font-style: normal;
+            font-weight: 600;
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent-red);
+            display: block;
+        }
+
+        .stat-value.orange {
+            color: var(--accent-dragon);
+        }
+
+        .stat-value.cyan {
+            color: var(--accent-cyan);
+        }
+
+        .stat-label {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .timeline {
+            border-left: 3px solid var(--accent-dragon);
+            padding-left: 2rem;
+            margin: 2rem 0;
+        }
+
+        .timeline-item {
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2.35rem;
+            top: 0.5rem;
+            width: 12px;
+            height: 12px;
+            background: var(--accent-dragon);
+            border-radius: 50%;
+        }
+
+        .timeline-date {
+            color: var(--accent-dragon);
+            font-weight: 600;
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .timeline-event {
+            color: var(--text-secondary);
+        }
+
+        code {
+            background: rgba(255, 69, 0, 0.1);
+            color: var(--accent-dragon);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Monaco', 'Menlo', monospace;
+        }
+
+        .attack-chain {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: var(--bg-card);
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+
+        .attack-chain-step {
+            background: rgba(255, 69, 0, 0.2);
+            border: 1px solid var(--accent-dragon);
+            padding: 0.75rem 1.25rem;
+            border-radius: 8px;
+            font-weight: 600;
+            color: var(--text-primary);
+            font-size: 0.9rem;
+        }
+
+        .attack-chain-arrow {
+            color: var(--accent-red);
+            font-size: 1.5rem;
+        }
+
+        .victim-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .victim-card h4 {
+            color: var(--accent-dragon);
+            margin-bottom: 0.5rem;
+        }
+
+        .victim-card p {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        .author-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .author-box i {
+            font-size: 2rem;
+            color: var(--accent-dragon);
+        }
+
+        .author-info strong {
+            color: var(--text-primary);
+        }
+
+        .author-info p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 3rem 2rem;
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        footer p {
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .article-container {
+                padding: 1rem;
+                margin-top: 60px;
+            }
+
+            .article-meta {
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+
+            .threat-actor-box .actor-name {
+                font-size: 2rem;
+            }
+
+            .attack-chain {
+                flex-direction: column;
+            }
+
+            .attack-chain-arrow {
+                transform: rotate(90deg);
+            }
+        }
+    </style>
+
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <script src="/m-app.js?v=4.3" defer></script>
+
+    <!-- ========== STRUCTURED DATA - BREADCRUMB ========== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://thehgtech.com"
+      }, {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Articles",
+        "item": "https://thehgtech.com/articles.html"
+      }, {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "DragonForce Ransomware Cartel 2026",
+        "item": "https://thehgtech.com/articles/dragonforce-ransomware-cartel-2026.html"
+      }]
+    }
+    </script>
+
+    <!-- ========== STRUCTURED DATA - FAQPAGE ========== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What is DragonForce ransomware?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "DragonForce is a ransomware cartel that evolved from a pro-Palestinian hacktivist group into a profit-driven Ransomware-as-a-Service (RaaS) operation. They use leaked source code from LockBit 3.0 and Conti to power their ransomware platform."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Who has DragonForce attacked?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "DragonForce has targeted high-profile UK retailers including Marks & Spencer, Co-op, and Harrods in 2025. They focus on supply chain targets and organizations with valuable data."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How does DragonForce's cartel model work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "DragonForce operates a RaaS platform called 'Ransombay' where affiliates can use their ransomware tools in exchange for a percentage of ransom payments. They also absorb rival operations to expand their network."
+        }
+      }]
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Mobile Header -->
+    <header class="m-header m-only">
+        <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark"
+                style="height: 28px; width: auto; margin: 0;">
+            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light"
+                style="height: 28px; width: auto; margin: 0;">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+        </div>
+        <div class="m-header__actions">
+            <button class="m-theme-toggle" onclick="mToggleTheme()" aria-label="Toggle Theme">
+                <span class="m-theme-toggle__thumb"></span>
+                <span class="m-theme-toggle__stars"><span class="m-theme-toggle__star"></span><span
+                        class="m-theme-toggle__star"></span></span>
+            </button>
+            <button class="m-header__btn m-header__btn--search" data-action="search" aria-label="Search"><i
+                    class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <!-- Bottom Navigation -->
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item"><i class="fas fa-bug"></i><span>CVE</span></a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item"><i class="fas fa-shield-alt"></i><span>Intel</span></a>
+        <a href="/articles.html" class="m-bottom-nav__item active"><i
+                class="fas fa-newspaper"></i><span>Articles</span></a>
+        <a href="/guides/" class="m-bottom-nav__item"><i class="fas fa-book"></i><span>Guides</span></a>
+    </nav>
+
+    <!-- Desktop Header -->
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+
+            <nav class="nav nav-modern" role="navigation">
+                <a href="/index.html#news">News</a>
+
+                <!-- Intelligence Dropdown -->
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">
+                        Intelligence
+                        <span class="nav-live-badge">LIVE</span>
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/threat-intel.html" class="dropdown-item">
+                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Threat Intelligence <span
+                                        class="dropdown-badge live">LIVE</span></div>
+                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/cve-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">CVE Tracker</div>
+                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/ransomware-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Ransomware Tracker</div>
+                                <div class="dropdown-item-desc">Track active ransomware groups and victims</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Resources Dropdown -->
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">
+                        Resources
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/guides/" class="dropdown-item">
+                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Security Guides <span
+                                        class="dropdown-badge popular">40+</span></div>
+                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
+                            </div>
+                        </a>
+                        <a href="/comparisons/" class="dropdown-item">
+                            <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Tool Comparisons</div>
+                                <div class="dropdown-item-desc">EDR, SIEM, and security tool head-to-head reviews</div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="/articles.html" class="dropdown-item">
+                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Articles</div>
+                                <div class="dropdown-item-desc">Latest cybersecurity news and analysis</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="theme-toggle-wrapper">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <div class="toggle-stars">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                    </button>
+                </div>
+            </nav>
+
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="article-container">
+        <a href="/articles.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Articles</a>
+
+        <article>
+            <header class="article-header">
+                <div class="article-category"><i class="fas fa-dragon"></i> Ransomware</div>
+                <h1>DragonForce: The New Ransomware Cartel Built on LockBit and Conti DNA</h1>
+                <p class="article-excerpt">From pro-Palestinian hacktivists to profit-driven ransomware cartel.
+                    DragonForce has emerged as a formidable threat by combining leaked code from LockBit 3.0 and Conti
+                    into a powerful RaaS platform that's already claimed high-profile victims.</p>
+                <div class="article-meta">
+                    <span><i class="far fa-calendar-alt"></i> Threat Active: 2023 - Present</span>
+                    <span><i class="fas fa-clock"></i> Published: Jan 20, 2026</span>
+                    <span><i class="fas fa-book-open"></i> 18 min read</span>
+                    <span><i class="fas fa-user"></i> By Harish G</span>
+                </div>
+            </header>
+
+            <img src="/images/articles/dragonforce-ransomware-cartel-2026.png"
+                alt="DragonForce Ransomware Cartel Analysis" class="featured-image">
+
+            <div class="threat-actor-box">
+                <span class="actor-name"><i class="fas fa-dragon"></i> DragonForce</span>
+                <span class="label">Ransomware Cartel | LockBit 3.0 + Conti DNA | RaaS Platform</span>
+            </div>
+
+            <div class="critical-box">
+                <strong><i class="fas fa-skull-crossbones"></i> ACTIVE THREAT:</strong> DragonForce has evolved from a
+                hacktivist collective into one of the most aggressive ransomware cartels of 2026. By leveraging leaked
+                source code from LockBit 3.0 and Conti, they've built a sophisticated RaaS operation that's absorbing
+                rival groups and targeting high-value organizations worldwide.
+            </div>
+
+            <h2><i class="fas fa-history"></i> The Evolution: From Hacktivists to Criminal Enterprise</h2>
+
+            <p>DragonForce didn't start as a ransomware operation. The group emerged in 2023 as a pro-Palestinian
+                hacktivist collective, conducting DDoS attacks and website defacements against Israeli targets. But
+                somewhere along the way, the operators realized there was more money in extortion than ideology.</p>
+
+            <p>By late 2023, DragonForce had pivoted to ransomware, and by March 2025, they formally rebranded as a
+                "cartel" — launching an affiliate program that invites other cybercriminals to use their platform in
+                exchange for a cut of the profits.</p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="timeline-date">2023</span>
+                    <span class="timeline-event">DragonForce emerges as a pro-Palestinian hacktivist group conducting
+                        DDoS attacks and defacements.</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">Late 2023</span>
+                    <span class="timeline-event">Pivot to ransomware operations begins. Group starts using modified
+                        ransomware tools.</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">2024</span>
+                    <span class="timeline-event">Integration of LockBit 3.0 leaked source code. Ransomware capabilities
+                        significantly enhanced.</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">March 2025</span>
+                    <span class="timeline-event">Formal rebrand as a "cartel." Launch of affiliate program and RaaS
+                        platform "Ransombay."</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">May 2025</span>
+                    <span class="timeline-event">High-profile attacks on UK retailers: Marks & Spencer, Co-op, Harrods
+                        targeted.</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">August 2025</span>
+                    <span class="timeline-event">Introduction of "data analysis service" to increase pressure on
+                        victims.</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">January 2026</span>
+                    <span class="timeline-event">Continued expansion. Active absorption of rival ransomware operations
+                        into the cartel.</span>
+                </div>
+            </div>
+
+            <h2><i class="fas fa-code"></i> The DNA: LockBit 3.0 + Conti Source Code</h2>
+
+            <p>What makes DragonForce particularly dangerous is their ransomware's genetic makeup. Rather than building
+                from scratch, the group has incorporated leaked source code from two of history's most successful
+                ransomware operations:</p>
+
+            <h3>LockBit 3.0 (LockBit Black)</h3>
+
+            <p>When a disgruntled LockBit developer leaked the LockBit 3.0 source code in September 2022, it became a
+                gift that keeps giving to the cybercriminal ecosystem. DragonForce has heavily leveraged this code,
+                which included:</p>
+
+            <ul>
+                <li><strong>Advanced encryption routines:</strong> Fast, efficient file encryption that minimizes
+                    detection time</li>
+                <li><strong>Anti-analysis features:</strong> Techniques to evade security researchers and sandboxes</li>
+                <li><strong>Self-propagation capabilities:</strong> Ability to spread laterally through networks</li>
+                <li><strong>Credential harvesting:</strong> Built-in tools to extract passwords and tokens</li>
+            </ul>
+
+            <h3>Conti Source Code</h3>
+
+            <p>After the Conti group imploded following their attack on Costa Rica in 2022, their source code also found
+                its way into the wild. DragonForce has incorporated Conti's:</p>
+
+            <ul>
+                <li><strong>Network reconnaissance modules:</strong> Sophisticated scanning for valuable targets</li>
+                <li><strong>Active Directory exploitation:</strong> Tools for domain compromise</li>
+                <li><strong>Data exfiltration pipelines:</strong> Efficient extraction of sensitive files</li>
+                <li><strong>Negotiation playbooks:</strong> Proven tactics for extracting payments</li>
+            </ul>
+
+            <div class="info-box">
+                <strong><i class="fas fa-lightbulb"></i> Why This Matters:</strong> By combining code from two highly
+                successful operations, DragonForce has essentially created a "greatest hits" ransomware that
+                incorporates years of criminal R&D without the original development costs.
+            </div>
+
+            <h2><i class="fas fa-users"></i> The Cartel Model: RaaS 2.0</h2>
+
+            <p>DragonForce's cartel model represents an evolution in Ransomware-as-a-Service. Their platform, called
+                "Ransombay," offers affiliates a comprehensive toolkit:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Ransomware Builder</strong></td>
+                        <td>Customizable payloads with LockBit/Conti DNA</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Leak Site Hosting</strong></td>
+                        <td>Centralized infrastructure for victim shaming</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Negotiation Portal</strong></td>
+                        <td>Professional chat interface for ransom discussions</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Data Analysis Service</strong></td>
+                        <td>Team reviews stolen data to identify leverage points</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Payment Processing</strong></td>
+                        <td>Cryptocurrency laundering and distribution</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Technical Support</strong></td>
+                        <td>24/7 assistance for affiliates</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Revenue Sharing</h3>
+
+            <p>Like other RaaS operations, DragonForce takes a percentage of each ransom payment. Reports suggest they
+                operate on a 70/30 or 80/20 split favoring affiliates, which makes them competitive in the crowded
+                ransomware market.</p>
+
+            <h3>Absorbing the Competition</h3>
+
+            <p>What truly distinguishes DragonForce's cartel approach is their strategy of absorbing rival operations.
+                Rather than competing with smaller ransomware groups, they're offering to bring them under the
+                DragonForce umbrella — providing better infrastructure, more victims, and shared resources. This
+                consolidation strategy mirrors legitimate business practices and suggests sophisticated leadership.</p>
+
+            <h2><i class="fas fa-building"></i> Notable Victims: UK Retail Under Siege</h2>
+
+            <p>DragonForce made international headlines in 2025 when they launched a coordinated campaign against major
+                UK retailers:</p>
+
+            <div class="victim-card">
+                <h4><i class="fas fa-store"></i> Marks & Spencer</h4>
+                <p>The iconic British retailer was hit in early 2025, with DragonForce claiming to have exfiltrated
+                    customer data and internal documents. The attack disrupted operations and forced temporary system
+                    shutdowns.</p>
+            </div>
+
+            <div class="victim-card">
+                <h4><i class="fas fa-shopping-cart"></i> The Co-operative Group (Co-op)</h4>
+                <p>The UK's fifth-largest food retailer suffered a significant breach. DragonForce threatened to release
+                    employee data, supplier contracts, and financial information.</p>
+            </div>
+
+            <div class="victim-card">
+                <h4><i class="fas fa-gem"></i> Harrods</h4>
+                <p>The luxury department store was targeted in the same campaign, demonstrating DragonForce's confidence
+                    in taking on high-profile, well-resourced targets.</p>
+            </div>
+
+            <div class="stat-grid">
+                <div class="stat-card">
+                    <span class="stat-value orange">3</span>
+                    <span class="stat-label">Major UK Retailers Hit</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">2025</span>
+                    <span class="stat-label">Cartel Launch Year</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value cyan">4x</span>
+                    <span class="stat-label">Extortion Methods</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value orange">Active</span>
+                    <span class="stat-label">Current Status</span>
+                </div>
+            </div>
+
+            <h2><i class="fas fa-bomb"></i> Attack Methodology: Multi-Extortion Tactics</h2>
+
+            <p>DragonForce employs a four-pronged extortion strategy that maximizes pressure on victims:</p>
+
+            <div class="attack-chain">
+                <span class="attack-chain-step">1. Encrypt Files</span>
+                <span class="attack-chain-arrow"><i class="fas fa-arrow-right"></i></span>
+                <span class="attack-chain-step">2. Steal Data</span>
+                <span class="attack-chain-arrow"><i class="fas fa-arrow-right"></i></span>
+                <span class="attack-chain-step">3. Threaten Leak</span>
+                <span class="attack-chain-arrow"><i class="fas fa-arrow-right"></i></span>
+                <span class="attack-chain-step">4. Contact Victims</span>
+            </div>
+
+            <h3>1. File Encryption</h3>
+            <p>Traditional ransomware encryption renders files unusable until a decryption key is purchased.
+                DragonForce's encryption is fast and thorough, prioritizing high-value file types.</p>
+
+            <h3>2. Data Exfiltration</h3>
+            <p>Before encryption, DragonForce systematically identifies and extracts sensitive data — financial records,
+                customer databases, employee information, intellectual property, and trade secrets.</p>
+
+            <h3>3. Public Leaks</h3>
+            <p>Stolen data is threatened for release on their leak site. They often release "samples" to prove they have
+                the data and demonstrate the consequences of non-payment.</p>
+
+            <h3>4. Direct Communication</h3>
+            <p>DragonForce doesn't just threaten — they act. Affiliates have been known to directly contact employees,
+                partners, and even customers to amplify pressure on victim organizations.</p>
+
+            <div class="warning-box">
+                <strong><i class="fas fa-exclamation-triangle"></i> Data Analysis Service:</strong> In August 2025,
+                DragonForce introduced a "data analysis service" where their team reviews stolen data to identify
+                specific leverage points — executive communications, legal issues, regulatory violations — that can be
+                used to increase ransom demands. This professionalized approach to extortion represents a concerning
+                escalation.
+            </div>
+
+            <h2><i class="fas fa-globe"></i> The Broader Ransomware Landscape in 2026</h2>
+
+            <p>DragonForce's rise occurs against a evolving ransomware backdrop. Key trends include:</p>
+
+            <h3>LockBit's Resurrection</h3>
+            <p>Despite Operation Cronos disrupting LockBit in early 2024, the group announced a comeback in September
+                2025 with "LockBit 5.0" and is actively recruiting new affiliates. They remain a major threat,
+                particularly to healthcare organizations.</p>
+
+            <h3>Code Sharing Economy</h3>
+            <p>The leaking of LockBit and Conti source code has democratized ransomware development. Groups like
+                DragonForce can build sophisticated operations without starting from zero.</p>
+
+            <h3>Geographic Expansion</h3>
+            <p>For the first time in 2026, analysts predict that new ransomware actors operating outside Russia will
+                outnumber those within it. This global expansion makes attribution and law enforcement more challenging.
+            </p>
+
+            <h3>AI Integration</h3>
+            <p>Ransomware groups are beginning to integrate AI capabilities into their operations — from automated
+                reconnaissance to AI-powered social engineering. This trend is expected to accelerate throughout 2026.
+            </p>
+
+            <h2><i class="fas fa-shield-alt"></i> Defense Recommendations</h2>
+
+            <p>Protecting against DragonForce and similar cartels requires a multi-layered approach:</p>
+
+            <div class="success-box">
+                <strong><i class="fas fa-check-circle"></i> Immediate Actions:</strong>
+                <ul>
+                    <li><strong>Patch aggressively:</strong> DragonForce exploits known vulnerabilities. Prioritize CISA
+                        KEV catalog items.</li>
+                    <li><strong>Implement MFA everywhere:</strong> Credential theft is a primary access vector.</li>
+                    <li><strong>Segment networks:</strong> Limit lateral movement once access is gained.</li>
+                    <li><strong>Monitor for data exfiltration:</strong> Large outbound transfers are a red flag.</li>
+                    <li><strong>Maintain offline backups:</strong> 3-2-1 backup strategy with tested restoration.</li>
+                    <li><strong>Train employees:</strong> Phishing remains a common initial access vector.</li>
+                </ul>
+            </div>
+
+            <h3>Detection Indicators</h3>
+
+            <p>Organizations should monitor for:</p>
+
+            <ul>
+                <li>Unusual process execution patterns consistent with LockBit/Conti TTPs</li>
+                <li>Attempts to disable security tools or backup solutions</li>
+                <li>Large-scale file enumeration across network shares</li>
+                <li>Connections to known DragonForce infrastructure (check threat feeds)</li>
+                <li>Use of legitimate tools (PsExec, Cobalt Strike) for lateral movement</li>
+            </ul>
+
+            <h3>Incident Response Preparation</h3>
+
+            <p>Given DragonForce's multi-extortion model, organizations should prepare for scenarios where:</p>
+
+            <ul>
+                <li>Data has been stolen regardless of whether encryption occurred</li>
+                <li>Attackers may contact employees, partners, or customers directly</li>
+                <li>Regulatory notification may be required even without ransom payment</li>
+                <li>Reputation management becomes as important as technical recovery</li>
+            </ul>
+
+            <h2><i class="fas fa-key"></i> Key Takeaways</h2>
+
+            <div class="info-box">
+                <strong><i class="fas fa-list"></i> Summary:</strong>
+                <ol>
+                    <li><strong>DragonForce has evolved</strong> from hacktivists to one of the most aggressive
+                        ransomware cartels of 2026</li>
+                    <li><strong>Their ransomware combines</strong> leaked LockBit 3.0 and Conti source code for maximum
+                        effectiveness</li>
+                    <li><strong>The cartel model</strong> includes a RaaS platform, affiliate program, and absorption of
+                        rival groups</li>
+                    <li><strong>Multi-extortion tactics</strong> include encryption, data theft, leak threats, and
+                        direct victim contact</li>
+                    <li><strong>High-profile UK retailers</strong> Marks & Spencer, Co-op, and Harrods have been
+                        targeted</li>
+                    <li><strong>Defense requires</strong> aggressive patching, network segmentation, and preparation for
+                        data theft scenarios</li>
+                </ol>
+            </div>
+
+            <h2><i class="fas fa-link"></i> Related Resources</h2>
+
+            <ul>
+                <li><a href="/ransomware-tracker.html" style="color: var(--accent-dragon);">Live Ransomware Tracker</a>
+                </li>
+                <li><a href="/articles/scattered-spider-teen-hacker-115-million.html"
+                        style="color: var(--accent-dragon);">Scattered Spider: The $115 Million Teenager</a></li>
+                <li><a href="/guides/ransomware-incident-response.html" style="color: var(--accent-dragon);">Ransomware
+                        Incident Response Guide</a></li>
+            </ul>
+
+            <div class="author-box">
+                <i class="fas fa-user-circle"></i>
+                <div class="author-info">
+                    <strong>Harish G</strong>
+                    <p>Security Researcher & Founder, TheHGTech. Tracking ransomware groups and breach incidents.</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- Interaction Bar -->
+        <div class="interaction-bar">
+            <div class="like-section">
+                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                    <i class="far fa-heart"></i> <span id="likeText">Like this article</span>
+                </button>
+            </div>
+            <div class="action-buttons">
+                <div class="share-buttons">
+                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <button onclick="copyLink()" class="share-btn" title="Copy Link">
+                        <i class="fas fa-link"></i>
+                    </button>
+                </div>
+                <div class="button-separator"></div>
+                <button onclick="window.print()" class="print-btn" title="Print Article">
+                    <i class="fas fa-print"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TheHGTech. All rights reserved.</p>
+    </footer>
+
+    <script src="/interaction-bar.js?v=20251207-0041"></script>
+</body>
+
+</html>

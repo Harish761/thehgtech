@@ -81,6 +81,28 @@
     </image:image>
   </url>
 
+  <url>
+    <loc>https://thehgtech.com/articles/dragonforce-ransomware-cartel-2026.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <lastmod>2026-01-20</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/dragonforce-ransomware-cartel-2026.png</image:loc>
+      <image:title>DragonForce Ransomware Cartel - LockBit and Conti DNA</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/lastpass-vault-cracks-2026.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <lastmod>2026-01-20</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/lastpass-vault-cracks-2026.png</image:loc>
+      <image:title>LastPass Vault Cracks - 2022 Breach Still Affecting Users in 2026</image:title>
+    </image:image>
+  </url>
+
   <!-- January 17, 2026 Articles -->
   <url>
     <loc>https://thehgtech.com/articles/crowdstrike-seraphic-browser-security-2026.html</loc>

@@ -1,6 +1,45 @@
 {
   "articles": [
     {
+      "id": "article-lastpass-vault-cracks-2026",
+      "title": "LastPass Vault Cracks Continue: 2022 Breach Still Draining Crypto Wallets in 2026",
+      "date": "January 20, 2026",
+      "category": "Cryptocurrency Security",
+      "badge": "ONGOING",
+      "excerpt": "Three years later, the LastPass breach is still claiming victims. Attackers cracking encrypted vaults to steal cryptocurrency. $200M+ in losses and counting.",
+      "image": "images/articles/lastpass-vault-cracks-2026.png",
+      "tags": [
+        "LastPass",
+        "Data Breach",
+        "Cryptocurrency",
+        "Password Manager",
+        "Vault Cracking",
+        "Crypto Theft"
+      ],
+      "author": "Harish G",
+      "externalUrl": "articles/lastpass-vault-cracks-2026.html"
+    },
+    {
+      "id": "article-dragonforce-ransomware-cartel-2026",
+      "title": "DragonForce: The New Ransomware Cartel Built on LockBit and Conti DNA",
+      "date": "January 20, 2026",
+      "category": "Ransomware",
+      "badge": "THREAT ACTOR",
+      "excerpt": "From hacktivists to criminal cartel. DragonForce combines LockBit 3.0 and Conti code into a powerful RaaS platform targeting UK retailers and global supply chains.",
+      "image": "images/articles/dragonforce-ransomware-cartel-2026.png",
+      "tags": [
+        "DragonForce",
+        "Ransomware",
+        "LockBit",
+        "Conti",
+        "RaaS",
+        "UK Retailers",
+        "Cartel"
+      ],
+      "author": "Harish G",
+      "externalUrl": "articles/dragonforce-ransomware-cartel-2026.html"
+    },
+    {
       "id": "article-ai-agents-attack-vectors-2026",
       "title": "AI Agents Will Be the Primary Attack Vector in 2026: A Deep Security Analysis",
       "date": "January 20, 2026",
