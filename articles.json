@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "id": "article-ai-agents-attack-vectors-2026",
+      "title": "AI Agents Will Be the Primary Attack Vector in 2026: A Deep Security Analysis",
+      "date": "January 20, 2026",
+      "category": "AI Security",
+      "badge": "DEEP ANALYSIS",
+      "excerpt": "With 91,000+ attack sessions targeting AI infrastructure in just three months, AI agents are becoming the primary attack vector. Technical analysis of threats, real incidents, and defense strategies.",
+      "image": "images/articles/ai-agents-attack-vectors-2026.png",
+      "tags": [
+        "AI Security",
+        "AI Agents",
+        "Prompt Injection",
+        "LLM Security",
+        "Agentic AI",
+        "Shadow AI",
+        "Attack Vectors"
+      ],
+      "author": "Harish G",
+      "externalUrl": "articles/ai-agents-attack-vectors-2026.html"
+    },
+    {
       "id": "report-20260119",
       "title": "Weekly Threat Report: January 19, 2026",
       "date": "January 19, 2026",

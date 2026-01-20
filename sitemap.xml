@@ -69,6 +69,18 @@
   
   <!-- ========== ARTICLES - HIGH TRAFFIC POTENTIAL ========== -->
   
+  <!-- January 20, 2026 Articles -->
+  <url>
+    <loc>https://thehgtech.com/articles/ai-agents-attack-vectors-2026.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <lastmod>2026-01-20</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/ai-agents-attack-vectors-2026.png</image:loc>
+      <image:title>AI Agents Will Be the Primary Attack Vector in 2026</image:title>
+    </image:image>
+  </url>
+
   <!-- January 17, 2026 Articles -->
   <url>
     <loc>https://thehgtech.com/articles/crowdstrike-seraphic-browser-security-2026.html</loc>
