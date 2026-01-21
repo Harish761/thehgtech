@@ -4,123 +4,99 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Jan 20 2026",
-            "headline": "SOC Teams Struggle—Execs Withhold Essential Cyber Tools",
-            "title": "Webinar Highlights SOC Teams&#x27; Challenges with Limited Toolsets",
-            "content": "A recent webinar by BleepingComputer delved into the challenges faced by Security Operations Center (SOC) teams who are often left defending their environments with tools they did not choose. The discussion focused on overcoming alert fatigue, addressing platform gaps, and cutting through the AI hype to achieve tangible results with existing resources. As cyber threats continue to evolve, SOC teams are under pressure to adapt and optimize their operations without additional investments. The webinar emphasized practical strategies for maximizing the utility of current tools and improving security postures. Security professionals are encouraged to reassess their current toolsets and seek innovative ways to enhance their defenses.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/webinar-why-execs-dont-buy-soc-teams-the-tools-they-need/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "SOC Analyst Fundamentals",
-                    "url": "/guides/soc-analyst-fundamentals.html",
-                    "icon": "fa-shield-alt"
-                }
-            ]
-        },
-        {
-            "date": "Jan 20 2026",
-            "headline": "PDFSider Malware—Ransomware Groups Leverage APT-Grade Tactics",
-            "title": "APT-Grade PDFSider Malware Utilized by Ransomware Operators",
-            "content": "SecurityWeek reports the emergence of PDFSider, a sophisticated malware providing cyberespionage and remote code execution capabilities, now employed by ransomware groups. The malware executes via DLL sideloading, a technique often associated with advanced persistent threats (APTs). This development highlights the increasing sophistication of ransomware operators as they adopt APT-grade tools to enhance their attack strategies. Organizations are urged to bolster their defenses against such threats by implementing robust security measures and maintaining up-to-date threat intelligence. The use of PDFSider underscores the need for continuous monitoring and timely patching to mitigate potential risks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/apt-grade-pdfsider-malware-used-by-ransomware-groups/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Ransomware Response Playbook",
-                    "url": "/guides/ransomware-response-playbook.html",
-                    "icon": "fa-biohazard"
-                }
-            ]
-        },
-        {
-            "date": "Jan 20 2026",
-            "headline": "Orphan Accounts—Hidden Threat Lurking in IT Systems",
-            "title": "The Persistent Risk of Orphan Accounts in Growing Organizations",
-            "content": "The Hacker News sheds light on the issue of &quot;orphan accounts,&quot; which are inactive user accounts left behind as employees, contractors, and systems transition in and out of organizations. These dormant accounts pose significant security risks as they can be exploited by malicious actors to gain unauthorized access to sensitive information. As organizations expand and evolve, the management of these accounts often falls by the wayside, leading to potential vulnerabilities. Security professionals are advised to conduct regular audits of user accounts and implement automated processes for deactivating unused accounts to mitigate this risk. Addressing orphan accounts is crucial for maintaining a secure IT environment.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/01/the-hidden-risk-of-orphan-accounts.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 20 2026",
-            "headline": "Evelyn Stealer Targets Devs—VS Code Extensions Abused",
-            "title": "Evelyn Stealer Malware Exploits VS Code Extensions for Data Theft",
-            "content": "Cybersecurity researchers have uncovered a malware campaign targeting software developers through the Microsoft Visual Studio Code (VS Code) extension ecosystem. Known as Evelyn Stealer, this malware is designed to exfiltrate sensitive information, including developer credentials and cryptocurrency. By weaponizing popular VS Code extensions, attackers can infiltrate development environments and harvest critical data. This campaign highlights the growing trend of targeting software development tools to gain access to valuable information. Developers are urged to scrutinize the extensions they use and ensure they come from trusted sources to protect against such threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/01/evelyn-stealer-malware-abuses-vs-code.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 20 2026",
-            "headline": "Google Settles for $8.25M—Child Data-Tracking Allegations",
-            "title": "Google Settles $8.25 Million Lawsuit Over Child Data Privacy Violations",
-            "content": "Google has agreed to pay $8.25 million to settle allegations that its AdMob platform collected children&#x27;s data without parental consent. The data in question included IP addresses, usage data, and precise geolocation, raising significant privacy concerns. This settlement underscores the ongoing scrutiny tech giants face regarding data privacy, especially concerning minors. The case highlights the importance of adhering to data protection regulations and obtaining proper consent when handling sensitive information. Organizations are reminded to review their data collection practices to ensure compliance with privacy laws and protect user data.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/01/google-will-pay-8-25m-to-settle-child-data-tracking-allegations",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 20 2026",
-            "headline": "CrashFix Attack—ModelRAT Delivered via Fake Chrome Extension",
-            "title": "CrashFix Exploit Uses Browser Crashes to Deploy ModelRAT Malware",
-            "content": "Security researchers have identified a malicious campaign named CrashFix that exploits browser failures to distribute the ModelRAT malware through a fake Chrome extension. The attack, attributed to the threat cluster known as KongTuke, involves crashing victims&#x27; browsers and leveraging the ensuing confusion to execute attacker-supplied commands. This method highlights the creativity of threat actors in exploiting browser vulnerabilities to propagate malware. Users are advised to remain vigilant and avoid installing unverified browser extensions. Keeping browsers updated and employing comprehensive security solutions can help mitigate such threats.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4119047/crashfix-attack-hijacks-browser-failures-to-deliver-modelrat-malware-via-fake-chrome-extension.html",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 20 2026",
-            "headline": "Cloudflare Fixes Bug—ACME Validation Flaw Allowed WAF Bypass",
-            "title": "Cloudflare Patches ACME Validation Vulnerability Enabling WAF Bypass",
-            "content": "Cloudflare has resolved a security flaw in its Automatic Certificate Management Environment (ACME) validation logic that permitted bypassing of Web Application Firewall (WAF) protections, potentially exposing origin servers to attacks. The vulnerability was linked to how Cloudflare&#x27;s edge network processed requests intended for ACME validation. This issue highlights the critical importance of robust validation processes in maintaining secure web services. Organizations using Cloudflare&#x27;s services are advised to review their security configurations and ensure all updates are applied promptly to safeguard their infrastructures. The fix reinforces the need for vigilance in identifying and addressing vulnerabilities in cloud services.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/01/cloudflare-fixes-acme-validation-bug.html",
-            "relatedResources": [
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Jan 20 2026",
-            "headline": "ISC Stormcast Highlights Cyber Trends—Stay Informed",
-            "title": "ISC Stormcast for January 20th Details Emerging Cybersecurity Trends",
-            "content": "The SANS Internet Storm Center&#x27;s latest Stormcast provides crucial insights into emerging cybersecurity threats and trends as of January 20th, 2026. With InfoCON status at green, indicating a low-level threat environment, the report emphasizes vigilance against evolving attack vectors. Security professionals are encouraged to stay updated on the latest advisories and patches to protect against potential vulnerabilities. The Stormcast serves as a valuable resource for identifying patterns in malicious activities and understanding the broader cybersecurity landscape. Regular engagement with these updates can enhance organizational resilience against cyber threats.",
+            "date": "Jan 21 2026",
+            "headline": "ISC Stormcast Highlights Cyber Trends—Stay Vigilant",
+            "title": "ISC Stormcast for January 21st, 2026 Discusses Current Cyber Threats",
+            "content": "The SANS Internet Storm Center&#x27;s latest Stormcast podcast for January 21st, 2026, provides insights into emerging cybersecurity threats and trends. The InfoCON remains at green, indicating a low threat level, but professionals are advised to stay informed. The podcast covers recent vulnerabilities, threat actor activities, and defensive measures. Security experts emphasize the importance of regular patching and monitoring for unusual network activity. Listeners are encouraged to review the detailed discussion to enhance their organizational security posture.",
             "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32638",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32642",
             "relatedResources": []
         },
         {
-            "date": "Jan 20 2026",
-            "headline": "ChatGPT Go Offers Unlimited GPT-5.2 for $8 Monthly",
-            "title": "OpenAI&#x27;s ChatGPT Go Unlocks Unlimited GPT-5.2 Instant Access",
-            "content": "OpenAI has revamped its ChatGPT Go service, now offering unlimited access to GPT-5.2 Instant for a monthly fee of $8. This update nearly doubles previous usage limits, making the service more attractive for users requiring extensive interaction with AI models. The shift aims to enhance user experience by providing faster response times and more robust capabilities. This move positions ChatGPT Go as a competitive option in the AI marketplace, appealing to both individual users and businesses seeking scalable AI solutions. Users are advised to evaluate their usage needs to determine if the new offering aligns with their requirements.",
+            "date": "Jan 21 2026",
+            "headline": "ChatGPT Atlas Tests Video Understanding—New Actions Feature",
+            "title": "OpenAI&#x27;s ChatGPT Atlas Browser Experiments with Actions and Video Timestamps",
+            "content": "OpenAI&#x27;s ChatGPT Atlas, a Chromium-based browser, is testing a new feature called &quot;Actions&quot; which enhances its ability to interact with video content. This feature allows the browser to generate timestamps for videos, improving navigation and accessibility. The development could significantly impact how users engage with multimedia content online. As OpenAI continues to refine this feature, developers and content creators should prepare for potential changes in how video content is indexed and accessed. Users are encouraged to explore these capabilities to understand their implications for digital content consumption.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/chatgpt-go-now-unlocks-unlimited-access-to-gpt-52-instant-for-8/",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openais-chatgpt-atlas-browser-is-testing-actions-feature/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Jan 21 2026",
+            "headline": "Chainlit AI Flaws—Patch Now to Protect Servers",
+            "title": "Critical Vulnerabilities in Chainlit AI Framework Expose Servers to Attack",
+            "content": "Two critical vulnerabilities have been discovered in the Chainlit AI development framework, potentially allowing attackers to read arbitrary files and database content. If unpatched, these flaws could lead to the leakage of API keys and secret tokens, facilitating lateral movement within an organization. The vulnerabilities pose a significant risk to developers using Chainlit for AI projects. Organizations are urged to apply patches immediately to safeguard their systems and prevent unauthorized access. This incident highlights the ongoing challenges of securing AI development environments.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4119469/flaws-in-chainlit-ai-dev-framework-expose-servers-to-compromise.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 21 2026",
+            "headline": "Google Gemini Ad-Free; ChatGPT Adds Ads in U.S.",
+            "title": "Google Confirms Gemini Will Remain Ad-Free as ChatGPT Introduces Ads",
+            "content": "Google has announced that its AI model Gemini will not feature ads, contrasting with OpenAI&#x27;s decision to introduce ads in ChatGPT for U.S. users with free or $8 Go subscriptions. This strategic divergence highlights differing approaches to monetizing AI platforms. While OpenAI explores ad revenue, Google focuses on maintaining an ad-free experience, potentially appealing to privacy-conscious users. Businesses and developers should consider these differences when choosing AI solutions, as advertising can impact user experience and data privacy.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/google-says-gemini-wont-have-ads-as-chatgpt-prepares-to-add-them/",
             "relatedResources": [
                 {
                     "label": "LLM Security & Prompt Injection",
                     "url": "/guides/llm-security-prompt-injection.html",
                     "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Jan 20 2026",
+            "headline": "ChatGPT Age Prediction Model—Enhancing Safety for Teens",
+            "title": "OpenAI Launches Age Prediction Model on ChatGPT for Safety Controls",
+            "content": "OpenAI has introduced an age prediction model in ChatGPT to enhance safety by detecting user age and applying restrictions for teenagers. This model aims to prevent misuse and improve user safety by tailoring content and interactions based on age. The initiative reflects growing concerns over online safety for younger users. Developers and parents should be aware of these changes and consider how they might influence user engagement and content moderation strategies. OpenAI&#x27;s move underscores the importance of responsible AI deployment in protecting vulnerable user groups.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-rolls-out-age-prediction-model-on-chatgpt-to-detect-your-age/",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Jan 20 2026",
+            "headline": "WordPress ACF Plugin Bug—50,000 Sites at Risk",
+            "title": "Critical Vulnerability in ACF Plugin Threatens 50,000 WordPress Sites",
+            "content": "A critical vulnerability in the Advanced Custom Fields: Extended (ACF Extended) plugin for WordPress exposes approximately 50,000 sites to potential exploitation. Unauthenticated attackers can remotely gain administrative privileges, posing a severe risk to site security. The flaw highlights the importance of regular plugin updates and security audits for WordPress administrators. Site owners should immediately update the ACF Extended plugin to the latest version to mitigate the risk of unauthorized access and maintain site integrity.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/acf-plugin-bug-gives-hackers-admin-on-50-000-wordpress-sites/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 20 2026",
+            "headline": "&#x27;CrashFix&#x27; Scam—Malware Delivered via Browser Crash",
+            "title": "&#x27;CrashFix&#x27; Scam Uses Browser Crashes to Deploy Malware",
+            "content": "A new scam dubbed &#x27;CrashFix&#x27; is exploiting browser crashes to deliver malware via a malicious NexShield extension and a Python-based Remote Access Trojan (RAT). The attack employs social engineering tactics to trick users into installing the extension, which then compromises their systems. This method represents a sophisticated blend of psychological manipulation and technical exploitation. Security professionals should educate users on the risks of unsolicited browser extensions and implement robust endpoint protection measures to detect and block such threats.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/crashfix-scam-crashes-browsers-delivers-malware",
+            "relatedResources": [
+                {
+                    "label": "MITRE ATT&CK Mapping",
+                    "url": "/guides/mitre-attack-mapping.html",
+                    "icon": "fa-map"
+                },
+                {
+                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
+                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
+                    "icon": "fa-shield-virus"
                 }
             ]
         },
@@ -143,39 +119,12 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Jan 20 2026",
-            "headline": "AI Boyfriends in China—Digital Romance Takes Physical Form",
-            "title": "China&#x27;s Gen Z Turns to AI Boyfriends for Digital and Real Companionship",
-            "content": "In China, Gen Z women are increasingly embracing AI-generated boyfriends, a trend that has grown beyond digital interactions to include real-world meetups. These AI companions, initially designed for virtual engagement, are now inspiring users to seek physical dates with human counterparts who resemble their digital partners. This phenomenon highlights the blending of AI technology with personal relationships, reflecting broader societal shifts towards digital companionship. The trend underscores the rapid adoption of AI in personal life, raising questions about the future of human interaction in an AI-driven world. As this movement gains momentum, developers and policymakers must consider the implications for privacy, consent, and emotional well-being.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/china-ai-boyfriends/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 20 2026",
-            "headline": "Meet Your New Coworker—A Chinese Humanoid Robot",
-            "title": "The Rise of Chinese Humanoid Robots in the Workplace",
-            "content": "Chinese companies are at the forefront of integrating humanoid robots into the workforce, promising enhanced productivity but also raising safety concerns. These robots, equipped with advanced AI and sensors, can perform tasks with speed but lack the dexterity of human workers. Their design includes features like 360-degree vision, which aims to improve workplace efficiency. However, their rapid movements and limited adaptability pose potential risks, necessitating robust safety protocols. As these robots become more prevalent, businesses must balance technological advancements with worker safety and ethical considerations, ensuring a harmonious coexistence between humans and machines.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/china-humanoid-robot-coworkers/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 20 2026",
-            "headline": "China’s AI Boom Mapped—Government Registry Reveals All",
-            "title": "China&#x27;s AI Revolution Documented by Government Registry",
-            "content": "The Cyberspace Administration of China has inadvertently provided a comprehensive overview of the country&#x27;s AI industry through its government registry. This registry tracks thousands of companies contributing to China&#x27;s rapid AI development, offering insights into the nation&#x27;s technological ambitions. The data reveals the scale and diversity of China&#x27;s AI landscape, from startups to established tech giants, highlighting the government&#x27;s role in fostering innovation. This registry serves as a valuable resource for understanding China&#x27;s AI strategy and its implications for global technology leadership. Stakeholders should leverage this information to assess competitive dynamics and collaboration opportunities in the AI sector.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/china-ai-boom-algorithm-registry/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 20 2026",
-            "headline": "Differential Transformer V2—The Next Leap in AI Models",
-            "title": "Hugging Face Releases Differential Transformer V2 for Enhanced AI Performance",
-            "content": "Hugging Face has unveiled Differential Transformer V2, an upgraded version of its AI model designed to deliver superior performance and efficiency. This new iteration promises improved accuracy and speed in natural language processing tasks, addressing limitations of previous models. By refining the transformer architecture, Hugging Face aims to enhance machine learning applications across various domains. The release of Differential Transformer V2 marks a significant step forward in AI model development, offering developers powerful tools for building more effective AI solutions. Organizations should explore this model to leverage its capabilities in advancing their AI-driven initiatives.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/microsoft/diff-attn-v2",
+            "date": "Jan 21 2026",
+            "headline": "Bolna Secures $6.3M—75% Revenue from Self-Serve Users",
+            "title": "Bolna Raises $6.3 Million for India-Focused Voice Orchestration Platform",
+            "content": "Bolna, a voice orchestration platform targeting the Indian market, has raised $6.3 million in funding from General Catalyst. The company reports that 75% of its revenue is generated from self-serve customers, indicating strong demand for its user-driven services. Bolna&#x27;s platform enables businesses to integrate voice technology into their operations, enhancing customer interactions and operational efficiency. This investment will likely accelerate the development of Bolna&#x27;s technology and expand its reach within India, a rapidly growing market for voice-based solutions. Companies leveraging voice technology can benefit from improved customer engagement and streamlined processes.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/20/bolna-nabs-6-3-million-from-general-catalyst-for-its-india-focused-voice-orchestration-platform/",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
@@ -185,12 +134,45 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Jan 19 2026",
-            "headline": "OpenAI Aims for Practical AI Adoption in 2026",
-            "title": "OpenAI Focuses on Bridging AI Capabilities and User Needs in 2026",
-            "content": "OpenAI has announced its strategic focus on the &quot;practical adoption&quot; of AI technologies throughout 2026, as detailed in a blog post by CFO Sarah Friar. The company is investing heavily in infrastructure to close the gap between AI capabilities and real-world applications. This initiative aims to address the challenges users face in integrating AI into everyday tasks, enhancing usability and accessibility. OpenAI&#x27;s commitment to practical adoption underscores the importance of aligning AI advancements with user needs, fostering a more seamless integration of AI into various sectors. Stakeholders should anticipate more user-friendly AI solutions as OpenAI progresses with its plans.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/news/864229/openai-focus-practical-adoption-sarah-friar",
+            "date": "Jan 21 2026",
+            "headline": "Anthropic CEO Criticizes Nvidia Amid China Chip Concerns",
+            "title": "Anthropic CEO Dario Amodei Criticizes Nvidia Over China Chip Sales",
+            "content": "At the Davos conference, Anthropic CEO Dario Amodei publicly criticized Nvidia and other U.S. chipmakers for their plans to sell technology to China, despite geopolitical tensions. This is particularly striking given Nvidia&#x27;s role as a significant partner and investor in Anthropic. Amodei&#x27;s comments highlight the ethical and strategic concerns surrounding technology sales to countries with complex international relations. The criticism may influence ongoing discussions about tech industry responsibilities and national security considerations. Companies involved in international tech sales should assess the broader implications of their partnerships and market strategies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/20/anthropics-ceo-stuns-davos-with-nvidia-criticism/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 20 2026",
+            "headline": "ChatGPT Introduces Age Prediction to Shield Minors",
+            "title": "ChatGPT Implements Age Prediction to Protect Young Users",
+            "content": "OpenAI has introduced an age prediction feature in ChatGPT to prevent the delivery of inappropriate content to users under 18. This feature aims to enhance safety by predicting the age of users based on their interactions and limiting access to potentially harmful material. The implementation reflects a growing trend in AI systems toward responsible content moderation and child protection. As AI becomes more integrated into daily life, ensuring the safety of younger users remains a critical priority. Developers and platform operators should consider similar measures to safeguard vulnerable demographics.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/20/in-an-effort-to-protect-young-users-chatgpt-will-now-predict-how-old-you-are/",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Jan 20 2026",
+            "headline": "Tesla&#x27;s Dojo3 to Power Space-Based AI Compute",
+            "title": "Elon Musk Announces Tesla&#x27;s Dojo3 for Space-Based AI Computing",
+            "content": "Elon Musk has announced Tesla&#x27;s plans to revive its Dojo3 AI chip project, this time focusing on space-based AI computing. Unlike its previous iterations aimed at self-driving technology, Dojo3 will support AI applications beyond Earth. This shift underscores a growing interest in leveraging AI for space exploration and satellite operations. Tesla&#x27;s initiative could pave the way for more advanced space-based AI systems, enhancing capabilities in areas like satellite communication and extraterrestrial research. Organizations involved in space technology should monitor developments in AI hardware optimized for off-planet use.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/20/elon-musk-says-teslas-restarted-dojo3-will-be-for-space-based-ai-compute/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 20 2026",
+            "headline": "MIT&#x27;s RLMs Process 10M Tokens—No Context Rot",
+            "title": "MIT Develops Recursive Framework for Large Language Models",
+            "content": "MIT&#x27;s Computer Science and Artificial Intelligence Laboratory (CSAIL) has introduced a recursive framework for language models, allowing them to process up to 10 million tokens without suffering from context rot. Recursive language models (RLMs) treat extensive prompts as an external environment, enabling more efficient and accurate processing of large datasets. This advancement could significantly enhance the capabilities of language models, particularly in applications requiring long-context understanding. Researchers and developers can leverage this framework to improve model performance in areas like document analysis and complex data interpretation.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/mits-new-recursive-framework-lets-llms-process-10-million-tokens-without",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
@@ -200,37 +182,26 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Jan 19 2026",
-            "headline": "Razer CEO: Gamers Unknowingly Embrace AI in Game Development",
-            "title": "Razer&#x27;s CEO Highlights AI&#x27;s Role in Transforming Game Development",
-            "content": "During a live interview at CES, Razer CEO Min-Liang Tan emphasized the growing yet unnoticed role of AI in game development. Despite gamers&#x27; lack of awareness, AI is increasingly integrated into gaming technologies, enhancing realism and gameplay experiences. Razer, known for its gaming hardware, is leveraging AI to improve product performance and user engagement. This trend reflects a broader industry shift towards AI-driven innovation, with potential to redefine gaming experiences. Developers and gaming companies should recognize AI&#x27;s transformative impact, exploring opportunities to incorporate AI technologies to meet evolving gamer expectations.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/podcast/863361/razer-ceo-min-liang-tan-ces-2026-ai-gaming-project-ava-interview",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
+            "date": "Jan 20 2026",
+            "headline": "X Open Sources Algorithm—5 Ways Businesses Benefit",
+            "title": "X Releases Social Recommendation Algorithm Under Open Source License",
+            "content": "Elon Musk&#x27;s social network X, previously known as Twitter, has open-sourced parts of its social recommendation algorithm under the Apache 2.0 license. This move allows businesses to access, modify, and use the code commercially. The open-source release aims to foster transparency and innovation within the tech community. Companies can now tailor the algorithm to enhance user engagement and content delivery on their platforms. By leveraging this open-source technology, businesses can improve their social media strategies and gain insights into user behavior.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/data/x-open-sources-its-algorithm-5-ways-businesses-can-benefit",
+            "relatedResources": []
         },
         {
-            "date": "Jan 19 2026",
-            "headline": "AI Reshapes Financial Services—From Banking to Fraud Detection",
-            "title": "AI&#x27;s Growing Role in Financial Services Transformation",
-            "content": "Artificial intelligence has become a foundational component in the financial services sector, reshaping banking, payments, and wealth management. AI technologies are now integral to budgeting tools, fraud detection systems, and compliance processes such as Know Your Customer (KYC) and Anti-Money Laundering (AML). This shift underscores AI&#x27;s transition from a peripheral innovation to a critical infrastructure element, driving efficiency and security. Financial institutions must adapt to these changes by investing in AI capabilities to stay competitive and meet regulatory demands. The ongoing AI integration highlights the need for continuous innovation and strategic planning in the financial industry.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/credit-union-ai-in-operational-settings-learnings-from-the-fintech-sector/",
+            "date": "Jan 20 2026",
+            "headline": "Humans&amp; Raises $480M—Valued at $4.48B",
+            "title": "Human-Centric AI Startup Humans&amp; Secures $480 Million Seed Funding",
+            "content": "Humans&amp;, a startup emphasizing the empowerment of people through AI, has raised $480 million in a seed funding round, achieving a valuation of $4.48 billion. Founded by alumni from Anthropic, xAI, and Google, the company focuses on developing AI technologies that enhance human capabilities rather than replace them. This substantial investment reflects growing interest in AI solutions that prioritize human-centric design. As AI continues to evolve, balancing technological advancement with ethical considerations will be crucial. Stakeholders should consider the implications of AI that supports human agency.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/20/humans-a-human-centric-ai-startup-founded-by-anthropic-xai-google-alums-raised-480m-seed-round/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
                     "url": "/ransomware-tracker.html",
                     "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "SIEM & Log Analysis Guide",
-                    "url": "/guides/siem-log-analysis.html",
-                    "icon": "fa-chart-bar"
                 }
             ]
         }
