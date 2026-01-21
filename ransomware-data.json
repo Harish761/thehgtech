@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-01-21T01:51:34.136392",
+  "last_updated": "2026-01-21T12:52:14.586202",
   "period": "Last 7 days",
-  "total_groups": 26,
-  "total_victims": 273,
+  "total_groups": 27,
+  "total_victims": 271,
   "groups": [
     {
       "name": "Thegentlemen",
@@ -97,7 +97,7 @@
     },
     {
       "name": "Qilin",
-      "count": 47,
+      "count": 46,
       "victims": [
         {
           "name": "Altius Geotecnia y Obras Especiales",
@@ -164,8 +164,8 @@
         "Business Services",
         "Construction",
         "Consumer Services",
-        "Education",
-        "Healthcare"
+        "Healthcare",
+        "Hospitality and Tourism"
       ],
       "countries": [
         "CA",
@@ -179,7 +179,7 @@
       "daily_counts": [
         7,
         1,
-        14,
+        13,
         10,
         4,
         4,
@@ -803,85 +803,6 @@
       ]
     },
     {
-      "name": "Genesis",
-      "count": 9,
-      "victims": [
-        {
-          "name": "QFloors",
-          "date": "2026-01-18 23:52:58.898254",
-          "url": "http://genesis6ixpb5mcy4kudybtw5op2wqlrkocfogbnenz3c647ibqixiad.onion/cce17aec4f3cbc4d7db/",
-          "discovered_date": "2026-01-18T23:52:58.898254"
-        },
-        {
-          "name": "Mid-park Ink",
-          "date": "2026-01-18 23:53:37.754143",
-          "url": "http://genesis6ixpb5mcy4kudybtw5op2wqlrkocfogbnenz3c647ibqixiad.onion/d503a05beb1788a3eda0/",
-          "discovered_date": "2026-01-18T23:53:37.754143"
-        },
-        {
-          "name": "Thunder Mountain Harley-Davidson",
-          "date": "2026-01-18 23:54:16.754862",
-          "url": "http://genesis6ixpb5mcy4kudybtw5op2wqlrkocfogbnenz3c647ibqixiad.onion/f2e4e88d2bff1711d38a/",
-          "discovered_date": "2026-01-18T23:54:16.754862"
-        },
-        {
-          "name": "Thunder Mountain Harley-Davidson",
-          "date": "2026-01-18T23:54:16+00:00",
-          "url": "https://www.ransomware.live/id/VGh1bmRlciBNb3VudGFpbiBIYXJsZXktRGF2aWRzb25AZ2VuZXNpcw==",
-          "discovered_date": "2026-01-18T23:54:16+00:00"
-        },
-        {
-          "name": "Mid-park Ink",
-          "date": "2026-01-18T23:53:37+00:00",
-          "url": "https://www.ransomware.live/id/TWlkLXBhcmsgSW5rQGdlbmVzaXM=",
-          "discovered_date": "2026-01-18T23:53:37+00:00"
-        },
-        {
-          "name": "QFloors",
-          "date": "2026-01-18T23:52:58+00:00",
-          "url": "https://www.ransomware.live/id/UUZsb29yc0BnZW5lc2lz",
-          "discovered_date": "2026-01-18T23:52:58+00:00"
-        },
-        {
-          "name": "Dedman Gray Property Consultants",
-          "date": "2026-01-16T08:26:45+00:00",
-          "url": "https://www.ransomware.live/id/RGVkbWFuIEdyYXkgUHJvcGVydHkgQ29uc3VsdGFudHNAZ2VuZXNpcw==",
-          "discovered_date": "2026-01-16T08:26:45+00:00"
-        },
-        {
-          "name": "Upper Township",
-          "date": "2026-01-16T08:26:02+00:00",
-          "url": "https://www.ransomware.live/id/VXBwZXIgVG93bnNoaXBAZ2VuZXNpcw==",
-          "discovered_date": "2026-01-16T08:26:02+00:00"
-        },
-        {
-          "name": "*** *********",
-          "date": "2026-01-14T09:51:33+00:00",
-          "url": "https://www.ransomware.live/id/KioqICoqKioqKioqKkBnZW5lc2lz",
-          "discovered_date": "2026-01-14T09:51:33+00:00"
-        }
-      ],
-      "industries": [
-        "Consumer Services",
-        "Not Found"
-      ],
-      "countries": [
-        "GB",
-        "US"
-      ],
-      "trend": "stable",
-      "trend_percentage": 0,
-      "daily_counts": [
-        0,
-        2,
-        0,
-        6,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Play",
       "count": 8,
       "victims": [
@@ -953,6 +874,79 @@
         0,
         0,
         8,
+        0
+      ]
+    },
+    {
+      "name": "Genesis",
+      "count": 8,
+      "victims": [
+        {
+          "name": "QFloors",
+          "date": "2026-01-18 23:52:58.898254",
+          "url": "http://genesis6ixpb5mcy4kudybtw5op2wqlrkocfogbnenz3c647ibqixiad.onion/cce17aec4f3cbc4d7db/",
+          "discovered_date": "2026-01-18T23:52:58.898254"
+        },
+        {
+          "name": "Mid-park Ink",
+          "date": "2026-01-18 23:53:37.754143",
+          "url": "http://genesis6ixpb5mcy4kudybtw5op2wqlrkocfogbnenz3c647ibqixiad.onion/d503a05beb1788a3eda0/",
+          "discovered_date": "2026-01-18T23:53:37.754143"
+        },
+        {
+          "name": "Thunder Mountain Harley-Davidson",
+          "date": "2026-01-18 23:54:16.754862",
+          "url": "http://genesis6ixpb5mcy4kudybtw5op2wqlrkocfogbnenz3c647ibqixiad.onion/f2e4e88d2bff1711d38a/",
+          "discovered_date": "2026-01-18T23:54:16.754862"
+        },
+        {
+          "name": "Thunder Mountain Harley-Davidson",
+          "date": "2026-01-18T23:54:16+00:00",
+          "url": "https://www.ransomware.live/id/VGh1bmRlciBNb3VudGFpbiBIYXJsZXktRGF2aWRzb25AZ2VuZXNpcw==",
+          "discovered_date": "2026-01-18T23:54:16+00:00"
+        },
+        {
+          "name": "Mid-park Ink",
+          "date": "2026-01-18T23:53:37+00:00",
+          "url": "https://www.ransomware.live/id/TWlkLXBhcmsgSW5rQGdlbmVzaXM=",
+          "discovered_date": "2026-01-18T23:53:37+00:00"
+        },
+        {
+          "name": "QFloors",
+          "date": "2026-01-18T23:52:58+00:00",
+          "url": "https://www.ransomware.live/id/UUZsb29yc0BnZW5lc2lz",
+          "discovered_date": "2026-01-18T23:52:58+00:00"
+        },
+        {
+          "name": "Dedman Gray Property Consultants",
+          "date": "2026-01-16T08:26:45+00:00",
+          "url": "https://www.ransomware.live/id/RGVkbWFuIEdyYXkgUHJvcGVydHkgQ29uc3VsdGFudHNAZ2VuZXNpcw==",
+          "discovered_date": "2026-01-16T08:26:45+00:00"
+        },
+        {
+          "name": "Upper Township",
+          "date": "2026-01-16T08:26:02+00:00",
+          "url": "https://www.ransomware.live/id/VXBwZXIgVG93bnNoaXBAZ2VuZXNpcw==",
+          "discovered_date": "2026-01-16T08:26:02+00:00"
+        }
+      ],
+      "industries": [
+        "Consumer Services",
+        "Not Found"
+      ],
+      "countries": [
+        "GB",
+        "US"
+      ],
+      "trend": "stable",
+      "trend_percentage": 0,
+      "daily_counts": [
+        0,
+        2,
+        0,
+        6,
+        0,
+        0,
         0
       ]
     },
@@ -1165,54 +1159,6 @@
       ]
     },
     {
-      "name": "Nightspire",
-      "count": 4,
-      "victims": [
-        {
-          "name": "TriApex US Laboratories",
-          "date": "2026-01-20 01:23:11.670759",
-          "url": "",
-          "discovered_date": "2026-01-20T01:23:11.670759"
-        },
-        {
-          "name": "TriApex US Laboratories",
-          "date": "2026-01-20T01:23:11+00:00",
-          "url": "https://www.ransomware.live/id/VHJpQXBleCBVUyBMYWJvcmF0b3JpZXNAbmlnaHRzcGlyZQ==",
-          "discovered_date": "2026-01-20T01:23:11+00:00"
-        },
-        {
-          "name": "Hyatt Place New York / Chelsea Hotel",
-          "date": "2026-01-14T11:11:17+00:00",
-          "url": "https://www.ransomware.live/id/SHlhdHQgUGxhY2UgTmV3IFlvcmsgLyBDaGVsc2VhIEhvdGVsQG5pZ2h0c3BpcmU=",
-          "discovered_date": "2026-01-14T11:11:17+00:00"
-        },
-        {
-          "name": "AUTOCARES CARRETERO",
-          "date": "2026-01-14T07:20:16+00:00",
-          "url": "https://www.ransomware.live/id/QVVUT0NBUkVTIENBUlJFVEVST0BuaWdodHNwaXJl",
-          "discovered_date": "2026-01-14T07:20:16+00:00"
-        }
-      ],
-      "industries": [
-        "Not Found"
-      ],
-      "countries": [
-        "ES",
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        0
-      ]
-    },
-    {
       "name": "Nitrogen",
       "count": 4,
       "victims": [
@@ -1387,6 +1333,41 @@
       ]
     },
     {
+      "name": "Nightspire",
+      "count": 2,
+      "victims": [
+        {
+          "name": "TriApex US Laboratories",
+          "date": "2026-01-20 01:23:11.670759",
+          "url": "",
+          "discovered_date": "2026-01-20T01:23:11.670759"
+        },
+        {
+          "name": "TriApex US Laboratories",
+          "date": "2026-01-20T01:23:11+00:00",
+          "url": "https://www.ransomware.live/id/VHJpQXBleCBVUyBMYWJvcmF0b3JpZXNAbmlnaHRzcGlyZQ==",
+          "discovered_date": "2026-01-20T01:23:11+00:00"
+        }
+      ],
+      "industries": [
+        "Not Found"
+      ],
+      "countries": [
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ]
+    },
+    {
       "name": "Handala",
       "count": 2,
       "victims": [
@@ -1454,6 +1435,41 @@
         2,
         0,
         0
+      ]
+    },
+    {
+      "name": "Crypto24",
+      "count": 2,
+      "victims": [
+        {
+          "name": "Yource Bulgaria & Greece",
+          "date": "2026-01-21 01:51:55.934057",
+          "url": "",
+          "discovered_date": "2026-01-21T01:51:55.934057"
+        },
+        {
+          "name": "Yource Bulgaria & Greece",
+          "date": "2026-01-21T01:51:55+00:00",
+          "url": "https://www.ransomware.live/id/WW91cmNlIEJ1bGdhcmlhICYgR3JlZWNlQGNyeXB0bzI0",
+          "discovered_date": "2026-01-21T01:51:55+00:00"
+        }
+      ],
+      "industries": [
+        "Not Found"
+      ],
+      "countries": [
+        "BG"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
       ]
     },
     {
