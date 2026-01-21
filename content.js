@@ -5,6 +5,110 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Jan 21 2026",
+            "headline": "North Korean Hackers Exploit VS Code to Target macOS Developers",
+            "title": "North Korean Cybercriminals Use Malicious VS Code Projects Against macOS Developers",
+            "content": "North Korean hackers are targeting macOS developers by tricking them into accessing malicious Visual Studio Code (VS Code) projects hosted on GitHub or GitLab. These repositories contain harmful code designed to exploit vulnerabilities within the VS Code environment, potentially compromising the developers&#x27; systems. The campaign highlights a significant threat to developers who rely on VS Code for software development on macOS. Security experts advise developers to verify the authenticity of repositories before cloning and to use security tools to scan for malicious code. This attack underscores the ongoing risks posed by nation-state actors targeting software development ecosystems.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/north-korean-hackers-target-macos-developers-via-malicious-vs-code-projects/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 21 2026",
+            "headline": "Contagious Interview Campaign Abuses VS Code for Cyber Attacks",
+            "title": "Contagious Interview Campaign Expands to Exploit Microsoft VS Code",
+            "content": "The Contagious Interview cyber campaign is now leveraging Microsoft Visual Studio Code (VS Code) as a vector for execution and persistence in its attacks. Jamf Threat Labs reports that threat actors are embedding malicious code within VS Code extensions, enabling them to execute attacks once the extensions are installed. This marks a shift from traditional social engineering tactics to more technical exploits, posing new challenges for developers using VS Code. Organizations should review and restrict the installation of unauthorized extensions and employ endpoint detection and response solutions to mitigate risks. The evolution of this campaign highlights the increasing sophistication of threat actors targeting development tools.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4119927/contagious-interview-turns-vs-code-into-an-attack-vector.html",
+            "relatedResources": [
+                {
+                    "label": "Zero-Day Detection Guide",
+                    "url": "/guides/zero-day-detection.html",
+                    "icon": "fa-exclamation-triangle"
+                },
+                {
+                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
+                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
+                    "icon": "fa-shield-virus"
+                }
+            ]
+        },
+        {
+            "date": "Jan 21 2026",
+            "headline": "Malicious Calendar Invites Turn AI Assistants into Data Leakers",
+            "title": "Google Calendar Invites Used to Exploit AI Assistants and Leak Data",
+            "content": "Researchers have demonstrated how malicious Google Calendar invites can be used to bypass privacy controls and exploit AI assistants, leading to potential data leaks. The attack involves prompt injection techniques hidden within calendar events, which can manipulate AI assistants into revealing sensitive information. This vulnerability affects users who integrate AI assistants with their calendar applications, posing significant privacy risks. To mitigate this threat, users should be cautious of unsolicited calendar invites and consider disabling automatic event additions. This discovery emphasizes the need for robust security measures in AI assistant integrations to prevent data exposure.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/01/malicious-google-calendar-invites-could-expose-private-data",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Jan 21 2026",
+            "headline": "Beyond MFA: Enhancing Identity Security with Threat Detection",
+            "title": "Integrating Identity Threat Detection with MFA for Improved Security",
+            "content": "Security experts are urging organizations to enhance identity security by integrating identity threat detection alongside multi-factor authentication (MFA). While MFA provides a layer of security, it is not foolproof against sophisticated attacks. By combining MFA with identity threat detection, organizations can better protect sensitive data and maintain operational continuity. This approach helps in identifying anomalies and potential threats in real-time, reducing the risk of unauthorized access. Companies are encouraged to adopt comprehensive identity security strategies to address evolving cyber threats. This shift reflects the growing recognition that MFA alone is insufficient for robust security.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/why-identity-security-must-move-beyond-mfa/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Jan 21 2026",
+            "headline": "Tesla Hacked: 37 Zero-Days Exploited at Pwn2Own 2026",
+            "title": "Tesla Infotainment System Compromised at Pwn2Own with 37 Zero-Days",
+            "content": "Security researchers successfully hacked Tesla&#x27;s Infotainment System by exploiting 37 zero-day vulnerabilities during the Pwn2Own Automotive 2026 competition, earning $516,500. This demonstration highlights the vulnerabilities present in automotive systems, emphasizing the need for robust security measures in connected vehicles. The vulnerabilities exploited could potentially allow attackers to gain control over vehicle functions, posing safety risks. Tesla and other automotive manufacturers are urged to prioritize security updates and collaborate with researchers to patch vulnerabilities. This event underscores the critical importance of cybersecurity in the rapidly evolving automotive sector.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/tesla-hacked-37-zero-days-demoed-at-pwn2own-automotive-2026/",
+            "relatedResources": [
+                {
+                    "label": "Zero-Day Detection Guide",
+                    "url": "/guides/zero-day-detection.html",
+                    "icon": "fa-exclamation-triangle"
+                }
+            ]
+        },
+        {
+            "date": "Jan 21 2026",
+            "headline": "MITRE Unveils Security Framework for Embedded Systems",
+            "title": "MITRE Introduces Embedded Systems Threat Matrix for Enhanced Security",
+            "content": "MITRE has launched the Embedded Systems Threat Matrix (ESTM), a new security framework designed to help organizations protect critical embedded systems. This framework provides a structured approach to identifying and mitigating threats specific to embedded environments, which are often overlooked in traditional security models. The ESTM aims to enhance the security posture of industries relying on embedded systems, such as healthcare, automotive, and industrial control. Organizations are encouraged to adopt the ESTM to improve their threat detection and response capabilities. This initiative reflects the growing need for specialized security frameworks in an increasingly interconnected world.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/mitre-launches-new-security-framework-for-embedded-systems/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 21 2026",
+            "headline": "API Security in 2026: Navigating AI-Driven Challenges",
+            "title": "API Security Faces AI-Driven Threats and Defense Challenges in 2026",
+            "content": "API security is becoming increasingly complex as AI-assisted attackers and defenders engage in a technological arms race. The rapid adoption of AI technologies has made APIs a critical target for cybercriminals, who use AI to discover and exploit vulnerabilities. This dynamic environment requires organizations to implement advanced security measures to protect their APIs from sophisticated attacks. Security professionals must stay informed about the latest AI-driven threats and invest in AI-enhanced security tools. The ongoing battle between AI-assisted attackers and defenders highlights the necessity for continuous innovation in API security strategies.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/cyber-insights-2026-api-security/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Jan 21 2026",
             "headline": "ISC Stormcast Highlights Cyber Trends—Stay Vigilant",
             "title": "ISC Stormcast for January 21st, 2026 Discusses Current Cyber Threats",
             "content": "The SANS Internet Storm Center&#x27;s latest Stormcast podcast for January 21st, 2026, provides insights into emerging cybersecurity threats and trends. The InfoCON remains at green, indicating a low threat level, but professionals are advised to stay informed. The podcast covers recent vulnerabilities, threat actor activities, and defensive measures. Security experts emphasize the importance of regular patching and monitoring for unusual network activity. Listeners are encouraged to review the detailed discussion to enhance their organizational security posture.",
@@ -57,50 +161,6 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Jan 20 2026",
-            "headline": "ChatGPT Age Prediction Model—Enhancing Safety for Teens",
-            "title": "OpenAI Launches Age Prediction Model on ChatGPT for Safety Controls",
-            "content": "OpenAI has introduced an age prediction model in ChatGPT to enhance safety by detecting user age and applying restrictions for teenagers. This model aims to prevent misuse and improve user safety by tailoring content and interactions based on age. The initiative reflects growing concerns over online safety for younger users. Developers and parents should be aware of these changes and consider how they might influence user engagement and content moderation strategies. OpenAI&#x27;s move underscores the importance of responsible AI deployment in protecting vulnerable user groups.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-rolls-out-age-prediction-model-on-chatgpt-to-detect-your-age/",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Jan 20 2026",
-            "headline": "WordPress ACF Plugin Bug—50,000 Sites at Risk",
-            "title": "Critical Vulnerability in ACF Plugin Threatens 50,000 WordPress Sites",
-            "content": "A critical vulnerability in the Advanced Custom Fields: Extended (ACF Extended) plugin for WordPress exposes approximately 50,000 sites to potential exploitation. Unauthenticated attackers can remotely gain administrative privileges, posing a severe risk to site security. The flaw highlights the importance of regular plugin updates and security audits for WordPress administrators. Site owners should immediately update the ACF Extended plugin to the latest version to mitigate the risk of unauthorized access and maintain site integrity.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/acf-plugin-bug-gives-hackers-admin-on-50-000-wordpress-sites/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 20 2026",
-            "headline": "&#x27;CrashFix&#x27; Scam—Malware Delivered via Browser Crash",
-            "title": "&#x27;CrashFix&#x27; Scam Uses Browser Crashes to Deploy Malware",
-            "content": "A new scam dubbed &#x27;CrashFix&#x27; is exploiting browser crashes to deliver malware via a malicious NexShield extension and a Python-based Remote Access Trojan (RAT). The attack employs social engineering tactics to trick users into installing the extension, which then compromises their systems. This method represents a sophisticated blend of psychological manipulation and technical exploitation. Security professionals should educate users on the risks of unsolicited browser extensions and implement robust endpoint protection measures to detect and block such threats.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/crashfix-scam-crashes-browsers-delivers-malware",
-            "relatedResources": [
-                {
-                    "label": "MITRE ATT&CK Mapping",
-                    "url": "/guides/mitre-attack-mapping.html",
-                    "icon": "fa-map"
-                },
-                {
-                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
-                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
-                    "icon": "fa-shield-virus"
-                }
-            ]
-        },
-        {
             "date": "Mar 23 2026",
             "headline": "RSAC 2026 Registration Opens—Secure Your Spot Now",
             "title": "RSA Conference 2026 Registration Opens for Cybersecurity Professionals",
@@ -118,6 +178,99 @@ const websiteContent = {
         }
     ],
     "aiShorts": [
+        {
+            "date": "Jan 21 2026",
+            "headline": "Zanskar Secures $115M to Unleash 1 TW Geothermal Power",
+            "title": "Zanskar&#x27;s $115M Funding Aims to Tap 1 TW of Geothermal Energy in U.S.",
+            "content": "Zanskar has successfully raised $115 million to identify and develop approximately a dozen geothermal resources across the U.S. West, potentially unlocking up to 1 terawatt (TW) of power. This initiative aims to significantly contribute to the U.S. energy grid by harnessing untapped geothermal potential, which remains largely overlooked in the renewable energy sector. The funding will support the exploration and development of these resources, providing a sustainable alternative to fossil fuels. This move aligns with growing demands for clean energy solutions amid increasing concerns over climate change. Stakeholders in the energy industry should monitor Zanskar&#x27;s progress as it could redefine renewable energy strategies in the region.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/21/zanskar-thinks-1-tw-of-geothermal-power-is-being-overlooked/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 21 2026",
+            "headline": "Preply Achieves Unicorn Status with $1.2B Valuation",
+            "title": "Preply&#x27;s $150M Funding Round Elevates Valuation to $1.2 Billion",
+            "content": "Language learning marketplace Preply has reached unicorn status with a new valuation of $1.2 billion following a $150 million funding round. This milestone underscores the company&#x27;s resilience and growth, particularly in the context of the ongoing challenges faced by Ukrainian businesses. Preply&#x27;s platform connects learners with tutors worldwide, leveraging AI to enhance language acquisition through personalized learning experiences. This funding will likely accelerate product development and market expansion, strengthening Preply&#x27;s position in the competitive edtech landscape. Investors and edtech stakeholders should note Preply&#x27;s innovative approach as a model of success amid geopolitical adversity.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/21/language-learning-marketplace-preplys-unicorn-status-embodies-ukrainian-resilience/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 21 2026",
+            "headline": "AI Apps Surpass Games in 2025 Consumer Spending",
+            "title": "AI App Adoption Drives Consumer Spending Beyond Mobile Games in 2025",
+            "content": "In 2025, consumer spending on mobile applications outpaced that on mobile games for the first time, driven by the increasing adoption of AI-powered apps. This shift highlights a growing consumer preference for productivity and utility applications that leverage artificial intelligence to enhance user experiences. The trend reflects broader technological advancements and a move towards more functional app usage, as AI capabilities become embedded in everyday digital tools. Developers and tech companies should consider this shift when strategizing product development and marketing efforts, as the demand for AI-enhanced applications continues to rise.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/21/consumers-spent-more-on-mobile-apps-than-games-in-2025-driven-by-ai-app-adoption/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Jan 21 2026",
+            "headline": "Pro-AI Super PACs Gear Up for U.S. Midterms",
+            "title": "Silicon Valley&#x27;s Pro-AI Super PACs Influence Upcoming U.S. Midterms",
+            "content": "Silicon Valley&#x27;s pro-AI Super Political Action Committees (PACs) are actively shaping the discourse around AI regulation in the lead-up to the U.S. midterm elections. These PACs are investing heavily in campaigns to influence public opinion and legislative approaches to AI technology oversight. The involvement of such entities underscores the high stakes of AI policy decisions, which could impact innovation and regulatory frameworks. Tech leaders and policymakers should closely watch these developments, as the outcome could significantly affect the future of AI governance in the United States.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/ai-super-pacs-trying-to-influence-midterms/",
+            "relatedResources": [
+                {
+                    "label": "AI Governance Framework",
+                    "url": "/guides/ai-governance-framework.html",
+                    "icon": "fa-balance-scale"
+                }
+            ]
+        },
+        {
+            "date": "Jan 21 2026",
+            "headline": "OpenAI Pledges Energy Independence for Data Centers",
+            "title": "OpenAI to Fund Energy and Water Efficiency for Data Centers",
+            "content": "OpenAI has announced plans to finance energy infrastructure upgrades and minimize water usage at its data centers, addressing community concerns over rising utility costs. The company aims to be a responsible neighbor by ensuring its facilities do not burden local resources. This initiative comes amid increasing scrutiny of AI projects and their environmental impact. By committing to these improvements, OpenAI seeks to mitigate opposition and demonstrate leadership in sustainable AI operations. Stakeholders in the AI and environmental sectors should observe OpenAI&#x27;s efforts as a potential model for balancing technological advancement with resource conservation.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/news/864798/openai-data-center-opposition-energy-bills",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 21 2026",
+            "headline": "AI Cost Efficiency Challenges Data Sovereignty in Enterprises",
+            "title": "Enterprises Rethink Risk Frameworks Amid AI Cost and Data Sovereignty Clash",
+            "content": "The tension between AI cost efficiency and data sovereignty is prompting global organizations to reassess their risk management frameworks. As the generative AI narrative has focused on capability races, often prioritizing parameter counts and benchmark scores, the need for a balanced approach has become evident. Enterprises face challenges in maintaining data sovereignty while leveraging cost-effective AI solutions, which could impact compliance and operational strategies. Tech leaders should evaluate their risk frameworks to ensure they align with both economic and regulatory demands in the evolving AI landscape.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/balancing-ai-cost-efficiency-with-data-sovereignty/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 21 2026",
+            "headline": "ChatGPT Implements Age Prediction for Youth Protection",
+            "title": "OpenAI&#x27;s ChatGPT Adds Age Prediction to Safeguard Underage Users",
+            "content": "OpenAI has introduced age prediction features to ChatGPT to enhance protections for minors using the platform. This development follows the announcement of updated guidelines for interacting with teen users, alongside a broader industry trend towards age-gating measures. The new feature aims to identify underage users and restrict access to age-inappropriate content, addressing growing concerns over online safety for minors. Parents and guardians should be aware of these enhancements as part of ongoing efforts to create a safer digital environment for young users.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/news/864784/openai-chatgpt-age-prediction-restrictions-rollout",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
         {
             "date": "Jan 21 2026",
             "headline": "Bolna Secures $6.3M—75% Revenue from Self-Serve Users",
@@ -141,69 +294,6 @@ const websiteContent = {
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/01/20/anthropics-ceo-stuns-davos-with-nvidia-criticism/",
             "relatedResources": []
-        },
-        {
-            "date": "Jan 20 2026",
-            "headline": "ChatGPT Introduces Age Prediction to Shield Minors",
-            "title": "ChatGPT Implements Age Prediction to Protect Young Users",
-            "content": "OpenAI has introduced an age prediction feature in ChatGPT to prevent the delivery of inappropriate content to users under 18. This feature aims to enhance safety by predicting the age of users based on their interactions and limiting access to potentially harmful material. The implementation reflects a growing trend in AI systems toward responsible content moderation and child protection. As AI becomes more integrated into daily life, ensuring the safety of younger users remains a critical priority. Developers and platform operators should consider similar measures to safeguard vulnerable demographics.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/20/in-an-effort-to-protect-young-users-chatgpt-will-now-predict-how-old-you-are/",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Jan 20 2026",
-            "headline": "Tesla&#x27;s Dojo3 to Power Space-Based AI Compute",
-            "title": "Elon Musk Announces Tesla&#x27;s Dojo3 for Space-Based AI Computing",
-            "content": "Elon Musk has announced Tesla&#x27;s plans to revive its Dojo3 AI chip project, this time focusing on space-based AI computing. Unlike its previous iterations aimed at self-driving technology, Dojo3 will support AI applications beyond Earth. This shift underscores a growing interest in leveraging AI for space exploration and satellite operations. Tesla&#x27;s initiative could pave the way for more advanced space-based AI systems, enhancing capabilities in areas like satellite communication and extraterrestrial research. Organizations involved in space technology should monitor developments in AI hardware optimized for off-planet use.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/20/elon-musk-says-teslas-restarted-dojo3-will-be-for-space-based-ai-compute/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 20 2026",
-            "headline": "MIT&#x27;s RLMs Process 10M Tokens—No Context Rot",
-            "title": "MIT Develops Recursive Framework for Large Language Models",
-            "content": "MIT&#x27;s Computer Science and Artificial Intelligence Laboratory (CSAIL) has introduced a recursive framework for language models, allowing them to process up to 10 million tokens without suffering from context rot. Recursive language models (RLMs) treat extensive prompts as an external environment, enabling more efficient and accurate processing of large datasets. This advancement could significantly enhance the capabilities of language models, particularly in applications requiring long-context understanding. Researchers and developers can leverage this framework to improve model performance in areas like document analysis and complex data interpretation.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/mits-new-recursive-framework-lets-llms-process-10-million-tokens-without",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 20 2026",
-            "headline": "X Open Sources Algorithm—5 Ways Businesses Benefit",
-            "title": "X Releases Social Recommendation Algorithm Under Open Source License",
-            "content": "Elon Musk&#x27;s social network X, previously known as Twitter, has open-sourced parts of its social recommendation algorithm under the Apache 2.0 license. This move allows businesses to access, modify, and use the code commercially. The open-source release aims to foster transparency and innovation within the tech community. Companies can now tailor the algorithm to enhance user engagement and content delivery on their platforms. By leveraging this open-source technology, businesses can improve their social media strategies and gain insights into user behavior.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/data/x-open-sources-its-algorithm-5-ways-businesses-can-benefit",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 20 2026",
-            "headline": "Humans&amp; Raises $480M—Valued at $4.48B",
-            "title": "Human-Centric AI Startup Humans&amp; Secures $480 Million Seed Funding",
-            "content": "Humans&amp;, a startup emphasizing the empowerment of people through AI, has raised $480 million in a seed funding round, achieving a valuation of $4.48 billion. Founded by alumni from Anthropic, xAI, and Google, the company focuses on developing AI technologies that enhance human capabilities rather than replace them. This substantial investment reflects growing interest in AI solutions that prioritize human-centric design. As AI continues to evolve, balancing technological advancement with ethical considerations will be crucial. Stakeholders should consider the implications of AI that supports human agency.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/20/humans-a-human-centric-ai-startup-founded-by-anthropic-xai-google-alums-raised-480m-seed-round/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
         }
     ],
     "articles": {},
