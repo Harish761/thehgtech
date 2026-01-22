@@ -69,6 +69,18 @@
   
   <!-- ========== ARTICLES - HIGH TRAFFIC POTENTIAL ========== -->
   
+  <!-- January 22, 2026 Articles -->
+  <url>
+    <loc>https://thehgtech.com/articles/luxshare-apple-breach-2025.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <lastmod>2026-01-22</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/luxshare-apple-breach-2025.png</image:loc>
+      <image:title>Luxshare Ransomware Attack - Apple Vision Pro CAD Designs Stolen</image:title>
+    </image:image>
+  </url>
+
   <!-- January 20, 2026 Articles -->
   <url>
     <loc>https://thehgtech.com/articles/ai-agents-attack-vectors-2026.html</loc>
