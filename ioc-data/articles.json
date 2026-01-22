@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "id": "article-luxshare-apple-breach-2025",
+      "title": "Luxshare Ransomware Attack: Apple Vision Pro CAD Designs and Secret Product Data Stolen",
+      "date": "January 22, 2026",
+      "category": "Supply Chain Attack",
+      "badge": "BREAKING",
+      "excerpt": "RansomHub claims breach of Apple supplier Luxshare. Over 1TB of confidential data stolen including 3D CAD designs for Vision Pro, iPhone, AirPods, and unreleased products.",
+      "image": "images/articles/luxshare-apple-breach-2025.png",
+      "tags": [
+        "Luxshare",
+        "Apple",
+        "RansomHub",
+        "Vision Pro",
+        "Supply Chain Attack",
+        "Ransomware",
+        "Data Breach"
+      ],
+      "author": "Harish G",
+      "externalUrl": "articles/luxshare-apple-breach-2025.html"
+    },
+    {
       "id": "article-lastpass-vault-cracks-2026",
       "title": "LastPass Vault Cracks Continue: 2022 Breach Still Draining Crypto Wallets in 2026",
       "date": "January 20, 2026",
