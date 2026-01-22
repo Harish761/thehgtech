@@ -1,6 +1,54 @@
 {
   "guides": [
     {
+      "id": "ai-agent-security",
+      "title": "Securing Autonomous AI Agents: The 2026 Architecture Guide",
+      "category": "AI Security",
+      "excerpt": "Enterprise security architecture for AI agents. Permission scoping, HITL enforcement, sandboxing, and defense strategies for LangChain, AutoGPT, and custom frameworks.",
+      "readTime": "30 min",
+      "level": "Intermediate to Advanced",
+      "date": "Jan 22, 2026",
+      "badge": "New",
+      "featured": true,
+      "image": "/images/guides/ai-agent-security.png"
+    },
+    {
+      "id": "kubernetes-ai-security",
+      "title": "Kubernetes AI Security: Protecting the ML Pipeline",
+      "category": "DevSecOps",
+      "excerpt": "Enterprise hardening for GPU clusters, model registries, and MLOps infrastructure. Serialization attack defense and container security for AI workloads.",
+      "readTime": "28 min",
+      "level": "Intermediate to Advanced",
+      "date": "Jan 22, 2026",
+      "badge": "New",
+      "featured": false,
+      "image": "/images/guides/kubernetes-ai-security.png"
+    },
+    {
+      "id": "deepfake-defense",
+      "title": "Deepfake Defense: Technical Detection of Synthetic Identities",
+      "category": "Fraud Detection",
+      "excerpt": "Forensic techniques for detecting AI-generated audio, video, and images. Audio spectral analysis, facial landmark detection, and SOC workflows.",
+      "readTime": "25 min",
+      "level": "Intermediate to Advanced",
+      "date": "Jan 22, 2026",
+      "badge": "New",
+      "featured": false,
+      "image": "/images/guides/deepfake-defense.png"
+    },
+    {
+      "id": "compliance-checklist-2026",
+      "title": "2026 Compliance Checklist: DORA, EU AI Act & NIST Mastery",
+      "category": "Compliance",
+      "excerpt": "Comprehensive cheat sheet for 2026 regulatory requirements. DORA implementation, EU AI Act obligations, NIST CSF 2.0 controls, and audit preparation.",
+      "readTime": "22 min",
+      "level": "Intermediate",
+      "date": "Jan 22, 2026",
+      "badge": "New",
+      "featured": false,
+      "image": "/images/guides/compliance-checklist-2026.png"
+    },
+    {
       "id": "unicode-llm-attacks-advanced",
       "title": "Advanced Unicode LLM Attacks: Variation Selectors & Token Exploitation",
       "category": "AI Security",

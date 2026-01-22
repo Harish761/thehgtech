@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 Compliance Checklist: DORA, EU AI Act & NIST Mastery | TheHGTech</title>
+    <meta name="description"
+        content="Comprehensive compliance checklist for 2026 regulatory requirements. DORA implementation, EU AI Act obligations, NIST CSF 2.0 controls, and audit preparation guidance.">
+    <meta name="keywords"
+        content="DORA compliance 2026, EU AI Act compliance, NIST CSF 2.0, compliance checklist, regulatory compliance, financial services compliance, AI governance, cybersecurity compliance">
+    <meta name="author" content="TheHGTech">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thehgtech.com/guides/compliance-checklist-2026.html">
+    <meta property="og:title" content="2026 Compliance Checklist: DORA, EU AI Act & NIST Mastery">
+    <meta property="og:description"
+        content="Comprehensive compliance checklist for 2026 regulatory requirements including DORA, EU AI Act, and NIST CSF 2.0.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/guides/compliance-checklist-2026.html">
+    <meta property="og:image" content="https://thehgtech.com/images/guides/compliance-checklist-2026.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"TechArticle","headline":"2026 Compliance Checklist: DORA, EU AI Act & NIST Mastery","description":"Comprehensive compliance checklist for 2026 regulatory requirements.","author":{"@type":"Organization","name":"TheHGTech"},"publisher":{"@type":"Organization","name":"TheHGTech","url":"https://thehgtech.com"},"datePublished":"2026-01-22","dateModified":"2026-01-22","mainEntityOfPage":"https://thehgtech.com/guides/compliance-checklist-2026.html"}
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://thehgtech.com"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://thehgtech.com/guides/"},{"@type":"ListItem","position":3,"name":"2026 Compliance Checklist","item":"https://thehgtech.com/guides/compliance-checklist-2026.html"}]}
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/header-dropdown.css?v=1">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF3D3D;
+            --accent-green: #10b981;
+            --accent-orange: #f59e0b;
+            --accent-purple: #8b5cf6;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1)
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem
+        }
+
+        .guide-header {
+            padding: 3rem 0 2rem;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+            margin-top: 60px
+        }
+
+        .ai-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #10b981, #00D9FF);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1rem
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, #10b981, #00D9FF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem
+        }
+
+        h2 {
+            color: var(--accent-green);
+            margin: 2.5rem 0 1rem;
+            font-size: 1.8rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border)
+        }
+
+        h3 {
+            color: var(--text-primary);
+            margin: 1.5rem 0 1rem;
+            font-size: 1.3rem
+        }
+
+        h4 {
+            color: var(--accent-green);
+            margin: 1.25rem 0 0.75rem;
+            font-size: 1.1rem
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary)
+        }
+
+        ul,
+        ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-secondary)
+        }
+
+        li {
+            margin-bottom: 0.5rem
+        }
+
+        .info-box {
+            background: rgba(16, 185, 129, 0.08);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px
+        }
+
+        .warning-box {
+            background: rgba(255, 76, 76, 0.05);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px
+        }
+
+        .success-box {
+            background: rgba(16, 185, 129, 0.05);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px
+        }
+
+        .deadline-box {
+            background: rgba(245, 158, 11, 0.08);
+            border-left: 4px solid var(--accent-orange);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px
+        }
+
+        code {
+            background: var(--bg-card);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'JetBrains Mono', 'Courier New', monospace;
+            color: var(--accent-green);
+            font-size: 0.9rem
+        }
+
+        pre {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            overflow-x: auto;
+            margin: 1.5rem 0
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+            color: var(--accent-green)
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--accent-green);
+            text-decoration: none
+        }
+
+        .back-link:hover {
+            text-decoration: underline
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden
+        }
+
+        th,
+        td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border)
+        }
+
+        th {
+            background: rgba(16, 185, 129, 0.1);
+            color: var(--accent-green);
+            font-weight: 600
+        }
+
+        td {
+            color: var(--text-secondary)
+        }
+
+        .toc {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0
+        }
+
+        .toc h3 {
+            margin-top: 0;
+            color: var(--accent-green)
+        }
+
+        .toc ul {
+            list-style: none;
+            margin-left: 0
+        }
+
+        .toc li {
+            margin-bottom: 0.5rem
+        }
+
+        .toc a {
+            color: var(--text-secondary);
+            text-decoration: none
+        }
+
+        .toc a:hover {
+            color: var(--accent-green)
+        }
+
+        .checklist {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0
+        }
+
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            margin-bottom: 0.75rem;
+            padding: 0.5rem;
+            border-radius: 4px
+        }
+
+        .checklist-item:hover {
+            background: rgba(255, 255, 255, 0.02)
+        }
+
+        .checklist-item i {
+            color: var(--accent-green);
+            margin-top: 0.2rem
+        }
+
+        .framework-badge {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-right: 0.5rem
+        }
+
+        .badge-dora {
+            background: rgba(139, 92, 246, 0.2);
+            color: #a78bfa
+        }
+
+        .badge-euai {
+            background: rgba(0, 217, 255, 0.2);
+            color: var(--accent-cyan)
+        }
+
+        .badge-nist {
+            background: rgba(245, 158, 11, 0.2);
+            color: var(--accent-orange)
+        }
+    </style>
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <script src="/m-app.js?v=4.3" defer></script>
+</head>
+
+<body>
+    <header class="m-header m-only">
+        <div class="m-header__logo" style="display:flex;align-items:center;gap:0.75rem;">
+            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark"
+                style="height:28px;width:auto;margin:0;">
+            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light"
+                style="height:28px;width:auto;margin:0;">
+            <span
+                style="font-size:1.2rem;font-weight:700;background:linear-gradient(135deg,#8b5cf6,#ec4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">TheHGTech</span>
+        </div>
+        <div class="m-header__actions">
+            <button class="m-theme-toggle" onclick="mToggleTheme()" aria-label="Toggle Theme"><span
+                    class="m-theme-toggle__thumb"></span><span class="m-theme-toggle__stars"><span
+                        class="m-theme-toggle__star"></span><span class="m-theme-toggle__star"></span></span></button>
+            <button class="m-header__btn m-header__btn--search" data-action="search" aria-label="Search"><i
+                    class="fas fa-search"></i></button>
+        </div>
+    </header>
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item"><i class="fas fa-bug"></i><span>CVE</span></a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item"><i class="fas fa-shield-alt"></i><span>Intel</span></a>
+        <a href="/articles.html" class="m-bottom-nav__item"><i class="fas fa-newspaper"></i><span>Articles</span></a>
+        <a href="/guides/" class="m-bottom-nav__item active"><i class="fas fa-book"></i><span>Guides</span></a>
+    </nav>
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo"><a href="/index.html"
+                    style="text-decoration:none;display:flex;align-items:center;gap:0.75rem;"><img src="/logo-dark.png"
+                        alt="TheHGTech Logo" class="logo-img logo-dark"><img src="/logo-light.png" alt="TheHGTech Logo"
+                        class="logo-img logo-light"><span class="logo-text">TheHGTech</span></a></div>
+            <nav class="nav nav-modern" role="navigation">
+                <a href="/index.html#news">News</a>
+                <div class="nav-dropdown"><span class="nav-dropdown-trigger">Intelligence <span
+                            class="nav-live-badge">LIVE</span> <i class="fas fa-chevron-down dropdown-arrow"></i></span>
+                    <div class="nav-dropdown-panel"><a href="/threat-intel.html" class="dropdown-item">
+                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Threat Intelligence <span
+                                        class="dropdown-badge live">LIVE</span></div>
+                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds</div>
+                            </div>
+                        </a><a href="/cve-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">CVE Tracker</div>
+                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities</div>
+                            </div>
+                        </a><a href="/ransomware-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Ransomware Tracker</div>
+                                <div class="dropdown-item-desc">Track active ransomware groups</div>
+                            </div>
+                        </a></div>
+                </div>
+                <div class="nav-dropdown"><span class="nav-dropdown-trigger">Resources <i
+                            class="fas fa-chevron-down dropdown-arrow"></i></span>
+                    <div class="nav-dropdown-panel"><a href="/guides/" class="dropdown-item"
+                            style="background:rgba(0,217,255,0.08);">
+                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title" style="color:var(--accent-cyan);">Security Guides <span
+                                        class="dropdown-badge popular">40+</span></div>
+                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2 & more</div>
+                            </div>
+                        </a><a href="/comparisons/" class="dropdown-item">
+                            <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Tool Comparisons</div>
+                                <div class="dropdown-item-desc">Security tool reviews</div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div><a href="/articles.html" class="dropdown-item">
+                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Articles</div>
+                                <div class="dropdown-item-desc">Security news and analysis</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="theme-toggle-wrapper"><button class="theme-toggle" id="themeToggle"
+                        aria-label="Toggle theme">
+                        <div class="toggle-stars">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                    </button></div>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <div class="container">
+        <a href="/guides/" class="back-link"><i class="fas fa-arrow-left"></i> Back to Guides</a>
+
+        <div class="guide-header">
+            <span class="ai-badge"><i class="fas fa-clipboard-check"></i> Compliance & Governance</span>
+            <h1>The 2026 Compliance Checklist: DORA, EU AI Act & NIST Mastery</h1>
+            <p style="color:var(--text-muted);font-size:1.1rem;">Comprehensive cheat sheet for navigating 2026's
+                regulatory landscape</p>
+            <div style="margin-top:1rem;color:var(--text-muted);">
+                <span><i class="fas fa-book-open"></i> 22 min read</span> <span style="margin:0 0.5rem;">|</span>
+                <span><i class="fas fa-crosshairs"></i> Intermediate</span> <span style="margin:0 0.5rem;">|</span>
+                <span><i class="far fa-calendar-alt"></i> January 2026</span>
+            </div>
+        </div>
+
+        <img src="/images/guides/compliance-checklist-2026.png" alt="2026 Compliance Checklist Guide"
+            class="featured-image"
+            style="width:100%;max-width:100%;height:auto;border-radius:12px;margin:2rem 0;box-shadow:0 10px 40px rgba(16,185,129,0.2);border:1px solid var(--border);">
+
+        <div class="deadline-box" style="margin-bottom:2rem;">
+            <strong><i class="fas fa-clock"></i> Critical Deadlines:</strong>
+            <ul style="margin-top:0.5rem;margin-bottom:0;">
+                <li><strong>DORA:</strong> Full enforcement since January 17, 2025 — audits ongoing</li>
+                <li><strong>EU AI Act (High-Risk):</strong> August 2, 2026 — 6 months remaining</li>
+                <li><strong>NIST CSF 2.0:</strong> Voluntary but increasingly expected by regulators</li>
+            </ul>
+        </div>
+
+        <div class="info-box">
+            <strong><i class="fas fa-file-alt"></i> Abstract:</strong>
+            2026 marks a critical inflection point in cybersecurity regulation. Financial services organizations must
+            demonstrate DORA compliance under active regulatory scrutiny. AI deployers face EU AI Act obligations for
+            high-risk systems. NIST CSF 2.0's new GOVERN function has become the de facto standard for board-level risk
+            reporting. This guide provides actionable checklists for each framework, identifies overlapping controls to
+            reduce duplication, and offers audit preparation strategies. Target audience: CISOs, GRC managers,
+            compliance officers, and security managers preparing for regulatory assessments.
+        </div>
+
+        <div class="toc">
+            <h3><i class="fas fa-list-ul"></i> Table of Contents</h3>
+            <ul>
+                <li><a href="#overview">1. 2026 Regulatory Landscape Overview</a></li>
+                <li><a href="#dora">2. DORA Compliance Checklist</a></li>
+                <li><a href="#euai">3. EU AI Act Compliance Checklist</a></li>
+                <li><a href="#nist">4. NIST CSF 2.0 Quick Reference</a></li>
+                <li><a href="#mapping">5. Control Mapping: One Effort, Three Frameworks</a></li>
+                <li><a href="#audit">6. Audit Preparation Strategies</a></li>
+                <li><a href="#tools">7. Compliance Automation Tools</a></li>
+                <li><a href="#references">8. References</a></li>
+            </ul>
+        </div>
+
+        <h2 id="overview">1. 2026 Regulatory Landscape Overview</h2>
+
+        <p>The convergence of cybersecurity, operational resilience, and AI governance regulations creates both
+            challenges and opportunities for organizations. Understanding the scope and interactions between frameworks
+            is essential.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Framework</th>
+                    <th>Scope</th>
+                    <th>Key Deadline</th>
+                    <th>Penalty Risk</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="framework-badge badge-dora">DORA</span> Digital Operational Resilience Act</td>
+                    <td>EU financial entities + ICT providers</td>
+                    <td>Active enforcement</td>
+                    <td>Up to 2% global turnover</td>
+                </tr>
+                <tr>
+                    <td><span class="framework-badge badge-euai">EU AI Act</span></td>
+                    <td>AI systems deployed/developed in EU</td>
+                    <td>Aug 2, 2026 (high-risk)</td>
+                    <td>Up to €35M or 7% turnover</td>
+                </tr>
+                <tr>
+                    <td><span class="framework-badge badge-nist">NIST CSF 2.0</span></td>
+                    <td>All organizations (voluntary)</td>
+                    <td>N/A (best practice)</td>
+                    <td>Reputational, contractual</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 id="dora">2. DORA Compliance Checklist</h2>
+
+        <p>The Digital Operational Resilience Act applies to financial entities operating in the EU and their critical
+            ICT service providers.</p>
+
+        <h3>Pillar 1: ICT Risk Management</h3>
+
+        <div class="checklist">
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>ICT risk management framework
+                    documented and board-approved</span></div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Dedicated ICT security function with
+                    clear responsibilities</span></div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Business impact analysis covering all
+                    critical functions</span></div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>ICT asset inventory maintained with
+                    classification</span></div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Encryption standards for data at rest
+                    and in transit</span></div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Access control with least privilege
+                    enforcement</span></div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Vulnerability management program with
+                    SLAs</span></div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Change management procedures
+                    documented</span></div>
+        </div>
+
+        <h3>Pillar 2: ICT Incident Management</h3>
+
+        <div class="checklist">
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Incident classification scheme aligned
+                    with DORA definitions</span></div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Major incident reporting to competent
+                    authority within 4 hours (initial)</span></div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Intermediate report within 72
+                    hours</span></div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Final report within 1 month</span>
+            </div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Root cause analysis process
+                    established</span></div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Communication templates for regulatory
+                    notification</span></div>
+        </div>
+
+        <h3>Pillar 3: Digital Operational Resilience Testing</h3>
+
+        <div class="checklist">
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Annual testing program
+                    documented</span></div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Vulnerability assessments performed
+                    quarterly</span></div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Penetration testing annually
+                    (minimum)</span></div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>TLPT (Threat-Led Penetration Testing)
+                    every 3 years for significant entities</span></div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Scenario-based testing including cyber
+                    attack simulations</span></div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Test results remediation
+                    tracking</span></div>
+        </div>
+
+        <h3>Pillar 4: ICT Third-Party Risk Management</h3>
+
+        <div class="checklist">
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Register of all ICT third-party
+                    providers maintained</span></div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Criticality assessment of each
+                    provider</span></div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Contractual requirements include
+                    DORA-mandated clauses</span></div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Exit strategies documented for
+                    critical providers</span></div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Subcontracting chain visibility</span>
+            </div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Annual due diligence reviews</span>
+            </div>
+        </div>
+
+        <h3>Pillar 5: Information Sharing</h3>
+
+        <div class="checklist">
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Participation in cyber threat
+                    intelligence sharing arrangements</span></div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Internal procedures for sharing threat
+                    information with authorities</span></div>
+        </div>
+
+        <h2 id="euai">3. EU AI Act Compliance Checklist</h2>
+
+        <p>The EU AI Act classifies AI systems by risk level. High-risk systems (HR, credit scoring, biometrics,
+            critical infrastructure) face the most stringent requirements.</p>
+
+        <div class="warning-box">
+            <strong><i class="fas fa-exclamation-triangle"></i> Deadline Alert:</strong>
+            High-risk AI system requirements apply from <strong>August 2, 2026</strong>. Organizations deploying AI in
+            hiring, lending, law enforcement, or critical infrastructure must comply.
+        </div>
+
+        <h3>High-Risk AI System Requirements</h3>
+
+        <div class="checklist">
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Risk management system established for
+                    AI lifecycle</span></div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Training data quality requirements
+                    documented</span></div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Technical documentation maintained
+                    (Annex IV)</span></div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Logging/audit trail capabilities
+                    enabled</span></div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Transparency measures (users informed
+                    of AI use)</span></div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Human oversight mechanisms in
+                    place</span></div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Accuracy, robustness, cybersecurity
+                    measures</span></div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Conformity assessment completed</span>
+            </div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>CE marking applied (where
+                    required)</span></div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Registration in EU database</span>
+            </div>
+        </div>
+
+        <h3>General-Purpose AI (GPAI) Model Obligations</h3>
+
+        <p>If you deploy foundation models or LLMs:</p>
+
+        <div class="checklist">
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Technical documentation including
+                    training methodology</span></div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Copyright compliance for training
+                    data</span></div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Summary of training content
+                    published</span></div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>EU AI Office cooperation
+                    procedures</span></div>
+        </div>
+
+        <h3>Prohibited AI Practices (Effective Feb 2025)</h3>
+
+        <div class="warning-box">
+            <strong><i class="fas fa-ban"></i> Already Prohibited:</strong>
+            <ul style="margin-top:0.5rem;margin-bottom:0;">
+                <li>Social scoring by public authorities</li>
+                <li>Real-time biometric identification in public spaces (with exceptions)</li>
+                <li>Emotion recognition in workplace/education</li>
+                <li>AI exploiting vulnerabilities (age, disability)</li>
+                <li>Untargeted scraping for facial recognition databases</li>
+            </ul>
+        </div>
+
+        <h2 id="nist">4. NIST CSF 2.0 Quick Reference</h2>
+
+        <p>NIST CSF 2.0 introduced the GOVERN function, elevating cybersecurity risk to a board-level concern. The
+            framework now has 6 core functions:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Function</th>
+                    <th>Focus</th>
+                    <th>Key Activities</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="color:var(--accent-purple);font-weight:600;">GOVERN (New)</td>
+                    <td>Strategy & Oversight</td>
+                    <td>Risk appetite, roles, policies, supply chain</td>
+                </tr>
+                <tr>
+                    <td style="color:var(--accent-cyan);font-weight:600;">IDENTIFY</td>
+                    <td>Asset Management</td>
+                    <td>Inventory, BIA, risk assessment</td>
+                </tr>
+                <tr>
+                    <td style="color:var(--accent-green);font-weight:600;">PROTECT</td>
+                    <td>Safeguards</td>
+                    <td>Access control, training, data security</td>
+                </tr>
+                <tr>
+                    <td style="color:var(--accent-orange);font-weight:600;">DETECT</td>
+                    <td>Anomaly Discovery</td>
+                    <td>Monitoring, detection processes</td>
+                </tr>
+                <tr>
+                    <td style="color:var(--accent-red);font-weight:600;">RESPOND</td>
+                    <td>Incident Handling</td>
+                    <td>Response planning, communication</td>
+                </tr>
+                <tr>
+                    <td style="color:#64748b;font-weight:600;">RECOVER</td>
+                    <td>Restoration</td>
+                    <td>Recovery planning, improvements</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>GOVERN Function Checklist (New in CSF 2.0)</h3>
+
+        <div class="checklist">
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Organizational context documented
+                    (mission, stakeholders, legal)</span></div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Risk management strategy with defined
+                    risk appetite</span></div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Cybersecurity roles and
+                    responsibilities defined</span></div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Policy framework established and
+                    communicated</span></div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Board/executive oversight
+                    mechanisms</span></div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Supply chain risk management
+                    program</span></div>
+            <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Continuous improvement
+                    processes</span></div>
+        </div>
+
+        <h2 id="mapping">5. Control Mapping: One Effort, Three Frameworks</h2>
+
+        <p>Many controls satisfy multiple frameworks. Efficient organizations implement once and document for each:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Control Domain</th>
+                    <th>DORA</th>
+                    <th>EU AI Act</th>
+                    <th>NIST CSF 2.0</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Asset Inventory</strong></td>
+                    <td>Art. 8</td>
+                    <td>Annex IV</td>
+                    <td>ID.AM</td>
+                </tr>
+                <tr>
+                    <td><strong>Risk Assessment</strong></td>
+                    <td>Art. 6</td>
+                    <td>Art. 9</td>
+                    <td>GV.RM, ID.RA</td>
+                </tr>
+                <tr>
+                    <td><strong>Incident Response</strong></td>
+                    <td>Art. 17-19</td>
+                    <td>Art. 62</td>
+                    <td>RS.RP, RC.RP</td>
+                </tr>
+                <tr>
+                    <td><strong>Third-Party Risk</strong></td>
+                    <td>Art. 28-30</td>
+                    <td>Art. 25</td>
+                    <td>GV.SC</td>
+                </tr>
+                <tr>
+                    <td><strong>Access Control</strong></td>
+                    <td>Art. 9</td>
+                    <td>Art. 14</td>
+                    <td>PR.AA</td>
+                </tr>
+                <tr>
+                    <td><strong>Logging/Monitoring</strong></td>
+                    <td>Art. 10</td>
+                    <td>Art. 12</td>
+                    <td>DE.CM</td>
+                </tr>
+                <tr>
+                    <td><strong>Testing</strong></td>
+                    <td>Art. 24-27</td>
+                    <td>Art. 9</td>
+                    <td>ID.RA</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="success-box">
+            <strong><i class="fas fa-check-circle"></i> Efficiency Tip:</strong>
+            Build your control library once using NIST CSF 2.0 as the baseline, then map to DORA and EU AI Act
+            requirements. This reduces duplicate documentation by 40-60%.
+        </div>
+
+        <h2 id="audit">6. Audit Preparation Strategies</h2>
+
+        <h3>30-Day Audit Readiness Plan</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Week</th>
+                    <th>Focus Area</th>
+                    <th>Deliverables</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Week 1</strong></td>
+                    <td>Documentation Review</td>
+                    <td>Policy inventory, gap analysis, evidence index</td>
+                </tr>
+                <tr>
+                    <td><strong>Week 2</strong></td>
+                    <td>Control Testing</td>
+                    <td>Internal control tests, remediation of gaps</td>
+                </tr>
+                <tr>
+                    <td><strong>Week 3</strong></td>
+                    <td>Stakeholder Prep</td>
+                    <td>Interview scripts, RACI for audit queries</td>
+                </tr>
+                <tr>
+                    <td><strong>Week 4</strong></td>
+                    <td>Mock Audit</td>
+                    <td>Dry-run walkthrough, final remediation</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Common Audit Findings to Avoid</h3>
+
+        <ul>
+            <li><strong>Stale documentation:</strong> Policies not updated within 12 months</li>
+            <li><strong>Evidence gaps:</strong> Controls documented but no proof of execution</li>
+            <li><strong>Incomplete vendor assessments:</strong> Critical providers without due diligence</li>
+            <li><strong>Missing board reporting:</strong> No evidence of executive oversight</li>
+            <li><strong>Testing gaps:</strong> No penetration test in >12 months</li>
+        </ul>
+
+        <h2 id="tools">7. Compliance Automation Tools</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Tool</th>
+                    <th>Best For</th>
+                    <th>Key Features</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Vanta</strong></td>
+                    <td>SOC 2, ISO 27001</td>
+                    <td>Automated evidence collection, integrations</td>
+                </tr>
+                <tr>
+                    <td><strong>Drata</strong></td>
+                    <td>Multi-framework</td>
+                    <td>Continuous monitoring, risk management</td>
+                </tr>
+                <tr>
+                    <td><strong>OneTrust</strong></td>
+                    <td>Privacy + AI governance</td>
+                    <td>EU AI Act templates, DPIA automation</td>
+                </tr>
+                <tr>
+                    <td><strong>ServiceNow GRC</strong></td>
+                    <td>Enterprise scale</td>
+                    <td>End-to-end workflow, audit management</td>
+                </tr>
+                <tr>
+                    <td><strong>Secureframe</strong></td>
+                    <td>Startups</td>
+                    <td>Quick implementation, cost-effective</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 id="references">8. References</h2>
+
+        <ol>
+            <li>European Commission. "Digital Operational Resilience Act (DORA) - Regulation (EU) 2022/2554." Official
+                Journal, 2022.</li>
+            <li>European Parliament. "Artificial Intelligence Act - Regulation (EU) 2024/1689." Official Journal, 2024.
+            </li>
+            <li>NIST. "Cybersecurity Framework 2.0." NIST, February 2024.</li>
+            <li>European Supervisory Authorities. "DORA Regulatory Technical Standards." January 2025.</li>
+            <li>EU AI Office. "Guidelines for High-Risk AI System Compliance." December 2025.</li>
+        </ol>
+
+        <div class="info-box" style="margin-top:2rem;">
+            <strong><i class="fas fa-link"></i> Related Guides:</strong>
+            <ul style="margin-top:0.5rem;margin-bottom:0;">
+                <li><a href="/guides/dora-compliance.html" style="color:var(--accent-cyan);">DORA Compliance Deep
+                        Dive</a></li>
+                <li><a href="/guides/nist-csf-2-implementation.html" style="color:var(--accent-cyan);">NIST CSF 2.0
+                        Implementation Guide</a></li>
+                <li><a href="/guides/ai-governance-framework.html" style="color:var(--accent-cyan);">AI Governance
+                        Framework</a></li>
+                <li><a href="/guides/iso-27001-certification-roadmap.html" style="color:var(--accent-cyan);">ISO
+                        27001:2022 Certification Roadmap</a></li>
+            </ul>
+        </div>
+
+        <p style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);color:var(--text-muted);">
+            <strong>Author:</strong> TheHGTech Security Team<br>
+            <strong>Last Updated:</strong> January 2026<br>
+            <strong>Reading Time:</strong> 22 minutes
+        </p>
+    </div>
+
+    <div class="interaction-bar">
+        <div class="like-section"><button class="like-btn" id="likeBtn" onclick="toggleLike()"><i
+                    class="far fa-heart"></i> <span id="likeText">Like this guide</span></button></div>
+        <div class="action-buttons">
+            <div class="share-buttons">
+                <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"><i
+                        class="fab fa-twitter"></i></a>
+                <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <button onclick="copyLink()" class="share-btn" title="Copy Link"><i class="fas fa-link"></i></button>
+            </div>
+            <div class="button-separator"></div>
+            <button onclick="printArticle()" class="print-btn" title="Print"><i class="fas fa-print"></i></button>
+        </div>
+    </div>
+    <script src="/interaction-bar.js?v=20251217"></script>
+</body>
+
+</html>
