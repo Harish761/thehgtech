@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-01-22T01:51:59.763269",
+  "last_updated": "2026-01-22T12:52:07.327146",
   "period": "Last 7 days",
   "total_groups": 26,
-  "total_victims": 258,
+  "total_victims": 257,
   "groups": [
     {
       "name": "Thegentlemen",
@@ -186,7 +186,7 @@
     },
     {
       "name": "Sinobi",
-      "count": 29,
+      "count": 25,
       "victims": [
         {
           "name": "MODERNISTIC GARDEN & PET SUPPLY LTD",
@@ -225,36 +225,36 @@
           "discovered_date": "2026-01-20T00:27:35.333928"
         },
         {
-          "name": "National Waste Associates",
-          "date": "2026-01-19 00:33:28.490438",
-          "url": "http://sinobi6ftrg27d6g4sjdt65malds6cfptlnjyw52rskakqjda6uvb7yd.onion/leaks/696d47666387a4c9a26ea6d7",
-          "discovered_date": "2026-01-19T00:33:28.490438"
-        },
-        {
           "name": "Pivotal Healthcare",
           "date": "2026-01-20 00:27:55.427089",
           "url": "http://sinobi6ftrg27d6g4sjdt65malds6cfptlnjyw52rskakqjda6uvb7yd.onion/leaks/696d45556387a4c9a26e95d8",
           "discovered_date": "2026-01-20T00:27:55.427089"
         },
         {
-          "name": "Avalon Hills",
-          "date": "2026-01-19 00:33:48.834892",
-          "url": "http://sinobi6ftrg27d6g4sjdt65malds6cfptlnjyw52rskakqjda6uvb7yd.onion/leaks/696d44836387a4c9a26e8ec4",
-          "discovered_date": "2026-01-19T00:33:48.834892"
+          "name": "Talleyville Fire",
+          "date": "2026-01-20 00:28:15.725277",
+          "url": "http://sinobi6ftrg27d6g4sjdt65malds6cfptlnjyw52rskakqjda6uvb7yd.onion/leaks/696d3fa56387a4c9a26e59ce",
+          "discovered_date": "2026-01-20T00:28:15.725277"
         },
         {
-          "name": "Channel Products",
-          "date": "2026-01-19 00:34:09.072084",
-          "url": "http://sinobi6ftrg27d6g4sjdt65malds6cfptlnjyw52rskakqjda6uvb7yd.onion/leaks/696d43806387a4c9a26e8401",
-          "discovered_date": "2026-01-19T00:34:09.072084"
+          "name": "OnSight",
+          "date": "2026-01-22T00:29:46+00:00",
+          "url": "https://www.ransomware.live/id/T25TaWdodEBzaW5vYmk=",
+          "discovered_date": "2026-01-22T00:29:46+00:00"
+        },
+        {
+          "name": "Bayside Dental",
+          "date": "2026-01-21T19:50:03+00:00",
+          "url": "https://www.ransomware.live/id/QmF5c2lkZSBEZW50YWxAc2lub2Jp",
+          "discovered_date": "2026-01-21T19:50:03+00:00"
         }
       ],
       "industries": [
-        "Business Services",
         "Consumer Services",
         "Energy",
         "Healthcare",
-        "Hospitality and Tourism"
+        "Not Found",
+        "Public Sector"
       ],
       "countries": [
         "BR",
@@ -269,7 +269,7 @@
         0,
         0,
         5,
-        8,
+        4,
         6,
         8,
         2
@@ -723,6 +723,12 @@
       "count": 10,
       "victims": [
         {
+          "name": "STRONG WINGS LLP",
+          "date": "2026-01-22 12:47:24.018179",
+          "url": "http://longcc4fqrfcqt5lzceutylaxir6h66fp6df3oin6mvwvz6pfdbxc6qd.onion/blog/ab9f49b923161544d6fc0c3d7cd0bdf867adcfcffa4af758f4ccda040e76f6f9/",
+          "discovered_date": "2026-01-22T12:47:24.018179"
+        },
+        {
           "name": "www.coconutboard.gov.in",
           "date": "2026-01-20 12:08:02.749666",
           "url": "http://longcc4fqrfcqt5lzceutylaxir6h66fp6df3oin6mvwvz6pfdbxc6qd.onion/blog/c0b63c60d94025eff1accba59f0f42fd8a932576faf925c2cd5044201bd98676/",
@@ -775,16 +781,11 @@
           "date": "2026-01-16T12:12:08+00:00",
           "url": "https://www.ransomware.live/id/R3J1cG8gUm9hQHRlbmd1",
           "discovered_date": "2026-01-16T12:12:08+00:00"
-        },
-        {
-          "name": "Nordstrom Rack",
-          "date": "2026-01-15T02:49:57+00:00",
-          "url": "https://www.ransomware.live/id/Tm9yZHN0cm9tIFJhY2tAdGVuZ3U=",
-          "discovered_date": "2026-01-15T02:49:57+00:00"
         }
       ],
       "industries": [
         "Manufacturing",
+        "Not Found",
         "Public Sector"
       ],
       "countries": [
@@ -803,7 +804,7 @@
         2,
         2,
         0,
-        0
+        1
       ]
     },
     {
@@ -899,6 +900,12 @@
       "count": 7,
       "victims": [
         {
+          "name": "Elmore Goldsmith Kelley & deHoll",
+          "date": "2026-01-22 12:07:55.732572",
+          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/696f63048f1d14b7432dbc14",
+          "discovered_date": "2026-01-22T12:07:55.732572"
+        },
+        {
           "name": "Sandberg",
           "date": "2026-01-20 05:55:07.442309",
           "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/696f04578f1d14b743278cb2",
@@ -933,12 +940,6 @@
           "date": "2026-01-16T03:48:35+00:00",
           "url": "https://www.ransomware.live/id/Y2lycnVzYXZpYXRpb25AaW5jcmFuc29t",
           "discovered_date": "2026-01-16T03:48:35+00:00"
-        },
-        {
-          "name": "https://trustarholdingsllc.com/ https://vistlabs.com/",
-          "date": "2026-01-15T05:24:09+00:00",
-          "url": "https://www.ransomware.live/id/aHR0cHM6Ly90cnVzdGFyaG9sZGluZ3NsbGMuY29tLyBodHRwczovL3Zpc3RsYWJzLmNvbS9AaW5jcmFuc29t",
-          "discovered_date": "2026-01-15T05:24:09+00:00"
         }
       ],
       "industries": [
@@ -958,7 +959,67 @@
         0,
         2,
         0,
-        0
+        1
+      ]
+    },
+    {
+      "name": "Nightspire",
+      "count": 6,
+      "victims": [
+        {
+          "name": "Service Lane eAdvisor",
+          "date": "2026-01-22 10:24:35.478619",
+          "url": "",
+          "discovered_date": "2026-01-22T10:24:35.478619"
+        },
+        {
+          "name": "Serometrix LLC",
+          "date": "2026-01-21 15:53:29.728347",
+          "url": "",
+          "discovered_date": "2026-01-21T15:53:29.728347"
+        },
+        {
+          "name": "TriApex US Laboratories",
+          "date": "2026-01-20 01:23:11.670759",
+          "url": "",
+          "discovered_date": "2026-01-20T01:23:11.670759"
+        },
+        {
+          "name": "Service Lane eAdvisor",
+          "date": "2026-01-22T10:24:35+00:00",
+          "url": "https://www.ransomware.live/id/U2VydmljZSBMYW5lIGVBZHZpc29yQG5pZ2h0c3BpcmU=",
+          "discovered_date": "2026-01-22T10:24:35+00:00"
+        },
+        {
+          "name": "Serometrix LLC",
+          "date": "2026-01-21T15:53:29+00:00",
+          "url": "https://www.ransomware.live/id/U2Vyb21ldHJpeCBMTENAbmlnaHRzcGlyZQ==",
+          "discovered_date": "2026-01-21T15:53:29+00:00"
+        },
+        {
+          "name": "TriApex US Laboratories",
+          "date": "2026-01-20T01:23:11+00:00",
+          "url": "https://www.ransomware.live/id/VHJpQXBleCBVUyBMYWJvcmF0b3JpZXNAbmlnaHRzcGlyZQ==",
+          "discovered_date": "2026-01-20T01:23:11+00:00"
+        }
+      ],
+      "industries": [
+        "Not Found",
+        "Technology"
+      ],
+      "countries": [
+        "US"
+      ],
+      "trend": "stable",
+      "trend_percentage": 0,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        2
       ]
     },
     {
@@ -1077,50 +1138,53 @@
       ]
     },
     {
-      "name": "Nightspire",
+      "name": "Benzona",
       "count": 4,
       "victims": [
         {
-          "name": "Serometrix LLC",
-          "date": "2026-01-21 15:53:29.728347",
+          "name": "empreinte-hotel.com",
+          "date": "2026-01-22 12:00:58.873452",
           "url": "",
-          "discovered_date": "2026-01-21T15:53:29.728347"
+          "discovered_date": "2026-01-22T12:00:58.873452"
         },
         {
-          "name": "TriApex US Laboratories",
-          "date": "2026-01-20 01:23:11.670759",
+          "name": "*a*ame*i*a.com.g*",
+          "date": "2026-01-22 12:00:28.537370",
           "url": "",
-          "discovered_date": "2026-01-20T01:23:11.670759"
+          "discovered_date": "2026-01-22T12:00:28.537370"
         },
         {
-          "name": "Serometrix LLC",
-          "date": "2026-01-21T15:53:29+00:00",
-          "url": "https://www.ransomware.live/id/U2Vyb21ldHJpeCBMTENAbmlnaHRzcGlyZQ==",
-          "discovered_date": "2026-01-21T15:53:29+00:00"
+          "name": "ccbrt.org",
+          "date": "2026-01-17T09:25:01+00:00",
+          "url": "https://www.ransomware.live/id/Y2NicnQub3JnQGJlbnpvbmE=",
+          "discovered_date": "2026-01-17T09:25:01+00:00"
         },
         {
-          "name": "TriApex US Laboratories",
-          "date": "2026-01-20T01:23:11+00:00",
-          "url": "https://www.ransomware.live/id/VHJpQXBleCBVUyBMYWJvcmF0b3JpZXNAbmlnaHRzcGlyZQ==",
-          "discovered_date": "2026-01-20T01:23:11+00:00"
+          "name": "em***int*-ho***.com",
+          "date": "2026-01-17T09:24:34+00:00",
+          "url": "https://www.ransomware.live/id/ZW0qKippbnQqLWhvKioqLmNvbUBiZW56b25h",
+          "discovered_date": "2026-01-17T09:24:34+00:00"
         }
       ],
       "industries": [
+        "Hospitality and Tourism",
         "Not Found"
       ],
       "countries": [
-        "US"
+        "FR",
+        "N/A",
+        "TZ"
       ],
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
-        0,
-        0,
         2,
-        2,
-        0
+        0,
+        0,
+        0,
+        0,
+        2
       ]
     },
     {
@@ -1395,41 +1459,6 @@
       ]
     },
     {
-      "name": "Lynx",
-      "count": 2,
-      "victims": [
-        {
-          "name": "Ocean Fish",
-          "date": "2026-01-19 00:24:48.897147",
-          "url": "http://lynxchatly4zludmhmi75jrwhycnoqvkxb4prohxmyzf4euf5gjxroad.onion/leaks/6967b30f9c439c5f452f7179",
-          "discovered_date": "2026-01-19T00:24:48.897147"
-        },
-        {
-          "name": "Ocean Fish",
-          "date": "2026-01-19T00:24:48+00:00",
-          "url": "https://www.ransomware.live/id/T2NlYW4gRmlzaEBseW54",
-          "discovered_date": "2026-01-19T00:24:48+00:00"
-        }
-      ],
-      "industries": [
-        "Agriculture and Food Production"
-      ],
-      "countries": [
-        "N/A"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        2,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Crypto24",
       "count": 2,
       "victims": [
@@ -1500,34 +1529,27 @@
       ]
     },
     {
-      "name": "Benzona",
-      "count": 2,
+      "name": "Lynx",
+      "count": 1,
       "victims": [
         {
-          "name": "ccbrt.org",
-          "date": "2026-01-17T09:25:01+00:00",
-          "url": "https://www.ransomware.live/id/Y2NicnQub3JnQGJlbnpvbmE=",
-          "discovered_date": "2026-01-17T09:25:01+00:00"
-        },
-        {
-          "name": "em***int*-ho***.com",
-          "date": "2026-01-17T09:24:34+00:00",
-          "url": "https://www.ransomware.live/id/ZW0qKippbnQqLWhvKioqLmNvbUBiZW56b25h",
-          "discovered_date": "2026-01-17T09:24:34+00:00"
+          "name": "Ocean Fish",
+          "date": "2026-01-19T00:24:48+00:00",
+          "url": "https://www.ransomware.live/id/T2NlYW4gRmlzaEBseW54",
+          "discovered_date": "2026-01-19T00:24:48+00:00"
         }
       ],
       "industries": [],
       "countries": [
-        "N/A",
-        "TZ"
+        "N/A"
       ],
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        2,
         0,
         0,
+        1,
         0,
         0,
         0
