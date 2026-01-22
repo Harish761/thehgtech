@@ -5,6 +5,111 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Jan 22 2026",
+            "headline": "AiStrike Secures $7M for AI-Driven Cyber Defense Platform",
+            "title": "AiStrike Raises $7 Million in Seed Funding for AI-Native Security Platform",
+            "content": "AiStrike has successfully raised $7 million in seed funding to advance its AI-native cybersecurity platform. This platform integrates exposure analysis, threat intelligence, investigation, and response capabilities, aiming to streamline cybersecurity operations for enterprises. The funding round was led by prominent venture capital firms, highlighting growing investor interest in AI-driven security solutions. AiStrike&#x27;s platform is designed to enhance threat detection and response times, potentially reducing the impact of cyber incidents. Organizations looking to bolster their cybersecurity posture may find AiStrike&#x27;s unified approach particularly beneficial as threats become increasingly sophisticated.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/aistrike-raises-7-million-in-seed-funding/",
+            "relatedResources": [
+                {
+                    "label": "Threat Hunting Guide",
+                    "url": "/guides/threat-hunting-techniques.html",
+                    "icon": "fa-crosshairs"
+                }
+            ]
+        },
+        {
+            "date": "Jan 22 2026",
+            "headline": "Ransomware Cripples Conceptnet—Websites Down",
+            "title": "Ransomware Attack Disrupts Conceptnet&#x27;s Services, Affecting Customer Websites",
+            "content": "Conceptnet, an IT service provider based in Regensburg, Germany, has fallen victim to a ransomware attack, leading to significant service disruptions. The attack has rendered customer websites inoperable, prompting the company to issue alerts about ongoing technical issues. The ransomware incident underscores the persistent threat that such attacks pose to service providers and their clients. While Conceptnet has not disclosed the specific ransomware strain involved, the attack highlights the critical need for robust cybersecurity measures and incident response plans. Affected customers are advised to monitor updates from Conceptnet and consider additional security measures.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4120644/hacker-legen-websites-von-conceptnet-kunden-lahm.html",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Response Playbook",
+                    "url": "/guides/ransomware-response-playbook.html",
+                    "icon": "fa-biohazard"
+                }
+            ]
+        },
+        {
+            "date": "Jan 22 2026",
+            "headline": "$439K Awarded for 29 Zero-Days at Pwn2Own Auto",
+            "title": "Hackers Exploit 29 Zero-Days at Pwn2Own Automotive 2026, Earning $439,250",
+            "content": "The Pwn2Own Automotive 2026 competition saw hackers exploit 29 zero-day vulnerabilities, earning a total of $439,250 in rewards. These exploits targeted various automotive software and systems, demonstrating significant security gaps in the industry. Participants showcased vulnerabilities across multiple platforms, emphasizing the urgent need for manufacturers to prioritize security in vehicle software. The event, organized by Trend Micro&#x27;s Zero Day Initiative, aims to uncover and address critical flaws before malicious actors can exploit them. Automotive companies are encouraged to collaborate with security researchers to enhance their products&#x27; defenses.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-29-zero-day-vulnerabilities-on-second-day-of-pwn2own-automotive/",
+            "relatedResources": [
+                {
+                    "label": "Zero-Day Detection Guide",
+                    "url": "/guides/zero-day-detection.html",
+                    "icon": "fa-exclamation-triangle"
+                }
+            ]
+        },
+        {
+            "date": "Jan 22 2026",
+            "headline": "Cisco UC Flaw Exploited—Patch Now Required",
+            "title": "Critical Cisco UC Vulnerability Requires Immediate Patching Amid Active Exploitation",
+            "content": "Cisco has issued patches for a critical remote code execution (RCE) vulnerability affecting its Unified Communications (UC) products. The vulnerability, actively exploited in the wild, has been added to the US Cybersecurity and Infrastructure Security Agency&#x27;s (CISA) Known Exploited Vulnerabilities catalog. Cisco urges users to apply the version-specific patches immediately to mitigate potential damage. This flaw underscores the ongoing challenges in securing communication systems against sophisticated threats. Organizations using Cisco UC products should prioritize patching to prevent unauthorized access and potential data breaches.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4120613/actively-exploited-cisco-uc-bug-requires-immediate-version%e2%80%91specific-patching.html",
+            "relatedResources": [
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Jan 22 2026",
+            "headline": "FortiGate Firewalls Under Attack—SSO Bypass Exploited",
+            "title": "Hackers Target FortiGate Firewalls by Bypassing FortiCloud SSO Authentication",
+            "content": "A new wave of cyberattacks is targeting FortiGate firewalls, exploiting a vulnerability in the FortiCloud Single Sign-On (SSO) authentication. Attackers are bypassing security measures to create unauthorized accounts and alter device configurations, posing a significant threat to network security. Fortinet has not yet released specific details on the exploited vulnerability, but users are advised to review their security settings and apply any available updates. This incident highlights the critical importance of securing authentication mechanisms to prevent unauthorized access. Organizations using FortiGate products should remain vigilant and monitor for unusual activity.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/new-wave-of-attacks-targeting-fortigate-firewalls/",
+            "relatedResources": [
+                {
+                    "label": "Fortinet Analysis",
+                    "url": "/articles/fortinet-fortigate-critical-exploit-2025.html",
+                    "icon": "fa-file-alt"
+                }
+            ]
+        },
+        {
+            "date": "Jan 22 2026",
+            "headline": "Under Armour Breach Exposes 72M Customers on Dark Web",
+            "title": "Under Armour Ransomware Breach Leads to Data of 72 Million Customers on Dark Web",
+            "content": "A ransomware attack on Under Armour has resulted in the exposure of data belonging to 72 million customers, now circulating on the dark web. The breach highlights the severe impact of ransomware on large organizations, compromising sensitive customer information. Under Armour has not disclosed the specific ransomware variant responsible, but the incident reinforces the need for robust data protection measures. Customers are advised to monitor their accounts for suspicious activity and consider changing passwords as a precaution. This breach serves as a stark reminder of the ongoing threat posed by ransomware to personal data security.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/01/under-armour-ransomware-breach-data-of-72-million-customers-appears-on-the-dark-web",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Response Playbook",
+                    "url": "/guides/ransomware-response-playbook.html",
+                    "icon": "fa-biohazard"
+                }
+            ]
+        },
+        {
+            "date": "Jan 22 2026",
+            "headline": "Claroty Secures $150M—Valuation Hits $3B",
+            "title": "Claroty Raises $150 Million in Series F Funding, Valuation Reaches $3 Billion",
+            "content": "Claroty has successfully raised $150 million in its Series F funding round, bringing its total funding to approximately $900 million and boosting its valuation to $3 billion. The company specializes in industrial cybersecurity, focusing on protecting critical infrastructure and operational technology environments. This substantial investment reflects growing confidence in Claroty&#x27;s ability to address escalating cybersecurity threats in industrial sectors. As cyber threats continue to evolve, organizations in energy, manufacturing, and other critical industries are increasingly turning to specialized cybersecurity solutions like Claroty&#x27;s to safeguard their operations.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/claroty-raises-150-million-in-series-f-funding/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Jan 22 2026",
             "headline": "ISC Stormcast Highlights Cyber Threat Trends—January 22, 2026",
             "title": "ISC Stormcast For Thursday, January 22nd, 2026: Key Cybersecurity Insights",
             "content": "The SANS Internet Storm Center has released its latest Stormcast, providing insights into current cybersecurity threats and trends. This update, dated January 22, 2026, highlights the ongoing vigilance required for maintaining security in an ever-evolving threat landscape. The InfoCON level remains at green, indicating a baseline state of security readiness. As cyber threats continue to diversify, professionals are urged to stay informed about new vulnerabilities and attack vectors. Regular updates and community engagement are critical for effective threat mitigation.",
@@ -49,60 +154,6 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Jan 21 2026",
-            "headline": "GitLab 2FA Flaw Exposes Accounts—Patch Now",
-            "title": "Critical GitLab 2FA Bypass Vulnerability Requires Immediate Patch",
-            "content": "A critical vulnerability in GitLab&#x27;s two-factor authentication (2FA) system has been identified, allowing attackers to bypass login protections. This flaw affects both the Community and Enterprise editions, necessitating urgent patching to prevent unauthorized account access. The issue is one of five vulnerabilities addressed in the latest GitLab updates, with three classified as critical. Organizations using GitLab are advised to apply these patches immediately to safeguard their development environments. This incident underscores the importance of robust authentication mechanisms in protecting sensitive data.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4120316/gitlab-2fa-login-protection-bypass-lets-attackers-take-over-accounts.html",
-            "relatedResources": [
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Jan 21 2026",
-            "headline": "Zendesk Systems Hijacked—Global Spam Wave Hits Users",
-            "title": "Massive Spam Campaign Exploits Unsecured Zendesk Ticket Systems",
-            "content": "A global spam wave is exploiting unsecured Zendesk support systems, inundating users with hundreds of unsolicited emails. Victims report receiving messages with alarming subject lines, raising concerns about data privacy and security. The attack leverages misconfigured Zendesk systems to propagate spam, highlighting the need for strict access controls and security audits. Organizations using Zendesk are advised to review their configurations and implement security best practices to prevent exploitation. This incident serves as a reminder of the vulnerabilities inherent in cloud-based customer support platforms.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/zendesk-ticket-systems-hijacked-in-massive-global-spam-wave/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 21 2026",
-            "headline": "Chainlit AI Flaws Enable Cloud Breaches—Patch Urgently",
-            "title": "Chainlit AI Framework Vulnerabilities Threaten Cloud Security",
-            "content": "Two high-severity vulnerabilities have been discovered in Chainlit, an open-source framework for building conversational AI applications. These flaws allow attackers to read any file on the server and access sensitive information, posing a significant risk to cloud environments. Organizations utilizing Chainlit are urged to apply patches immediately to mitigate potential breaches. The vulnerabilities highlight the critical need for rigorous security assessments in AI development frameworks. As AI applications become more prevalent, ensuring their security is paramount to protecting data integrity and privacy.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/chainlit-ai-framework-bugs-let-hackers-breach-cloud-environments/",
-            "relatedResources": [
-                {
-                    "label": "Cloud Security Hardening",
-                    "url": "/guides/cloud-security-hardening.html",
-                    "icon": "fa-cloud"
-                }
-            ]
-        },
-        {
-            "date": "Jan 21 2026",
-            "headline": "Demo Environments Exploited—Cloud Backdoors Threaten Enterprises",
-            "title": "Misconfigured Demo Environments Create Cloud Backdoors to Enterprises",
-            "content": "Research from Pentera Labs reveals that misconfigured demo environments are being exploited as backdoors into enterprise cloud systems. These environments, often used for internal testing and training, can become entry points for attackers if left in their default states. The study emphasizes the importance of securing demo setups to prevent unauthorized access and data breaches. Organizations are advised to regularly audit and secure their demo environments to close potential security gaps. This issue underscores the broader challenge of maintaining security across all aspects of IT infrastructure.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4120258/misconfigured-demo-environments-are-turning-into-cloud-backdoors-to-the-enterprise.html",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
             "date": "Mar 23 2026",
             "headline": "RSAC 2026 Registration Opens—Secure Your Spot Now",
             "title": "RSA Conference 2026 Registration Opens for Cybersecurity Professionals",
@@ -122,105 +173,104 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Jan 22 2026",
+            "headline": "Quadric&#x27;s On-Device AI Chips—Speed and Flexibility for Local Models",
+            "title": "Quadric Advances On-Device AI Inference with Programmable Chips",
+            "content": "Quadric is spearheading a shift from cloud-based AI to on-device inference, offering programmable AI chips that execute rapidly evolving models locally. This approach enhances speed and reduces latency, crucial for applications requiring real-time data processing. By enabling companies and governments to run AI models on-device, Quadric addresses privacy concerns and reduces dependency on cloud infrastructure. This trend aligns with the growing demand for edge computing solutions that offer greater control and efficiency. Organizations leveraging Quadric&#x27;s technology can expect improved performance and security in AI operations.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/22/quadric-rides-the-shift-from-cloud-ai-to-on-device-inference-and-its-paying-off/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 22 2026",
+            "headline": "Google DeepMind Acquires Hume AI Talent in Strategic Licensing Move",
+            "title": "Google DeepMind Strengthens Voice AI Capabilities with Hume AI Talent Acquisition",
+            "content": "In a strategic move, Google DeepMind has acquired top talent from Hume AI, including CEO Alan Cowen and several engineers, through a licensing deal. This acquisition aims to enhance Google&#x27;s capabilities in voice AI, a critical area as voice interfaces become increasingly integral to user interaction. The infusion of expertise from Hume AI is expected to accelerate development in natural language processing and emotional AI. For Google, this move underscores its commitment to leading advancements in AI-driven voice technologies. Industry professionals should watch for potential innovations in voice AI applications as a result.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/google-hires-hume-ai-ceo-licensing-deal-gemini/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 22 2026",
+            "headline": "AI Writing Detection Guide Now &#x27;Humanizes&#x27; Chatbots",
+            "title": "Wikipedia&#x27;s AI Writing Detection Guide Fuels Chatbot Humanization",
+            "content": "A Wikipedia group has developed a guide to detect AI-generated writing, which has ironically become a resource for AI models to appear more human-like. This guide, initially intended to identify AI-authored content, is now being used in a plug-in to refine chatbot interactions, making them less detectable as AI. The development highlights the ongoing cat-and-mouse game between AI detection and evasion techniques. As AI-generated content becomes more prevalent, professionals should consider the implications for content authenticity and the evolving standards for AI-human interaction.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/wikipedia-group-made-guide-to-detect-ai-writing-now-a-plug-in-uses-it-to-humanize-chatbots/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 22 2026",
+            "headline": "Ex-Google Trio Launches AI Learning App for Kids",
+            "title": "Former Google Engineers Develop AI-Powered Interactive Learning App for Children",
+            "content": "Three former Google employees are creating an interactive AI-powered learning application designed to engage children beyond traditional text or voice interfaces. This initiative seeks to leverage generative AI to create more captivating educational experiences for young users, addressing the limitations of current digital learning tools. The app aims to integrate visual and interactive elements to maintain children&#x27;s interest and enhance learning outcomes. As generative AI continues to evolve, this project could signal a shift in educational technology, offering more dynamic and personalized learning experiences for children.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/22/former-google-trio-is-building-an-interactive-ai-powered-learning-app-for-kids/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Jan 22 2026",
+            "headline": "Chinese Century: Livestream Explores China&#x27;s Global Influence",
+            "title": "Livestream Event Analyzes China&#x27;s Ascendancy and Future Global Role",
+            "content": "A livestream event titled &quot;Welcome to the Chinese Century&quot; examines China&#x27;s growing influence and dominance in global affairs. The discussion focuses on how China is reshaping international norms and its potential future impact across various sectors, including technology and economics. As China continues to assert its leadership, understanding its strategies and objectives becomes crucial for global stakeholders. Attendees can expect insights into China&#x27;s geopolitical maneuvers and technological advancements, offering a comprehensive view of its role on the world stage.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/livestream-welcome-to-the-chinese-century/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Jan 22 2026",
+            "headline": "Gates Foundation, OpenAI Test AI in African Healthcare Systems",
+            "title": "AI Pilots by Gates Foundation and OpenAI Tackle African Healthcare Challenges",
+            "content": "The Gates Foundation and OpenAI are testing AI solutions to address the growing strain on primary healthcare systems in Africa. Amid increasing demand and chronic staff shortages, AI is being explored not as a breakthrough but as a means to sustain basic healthcare services. This initiative focuses on leveraging AI to optimize resource allocation and improve patient outcomes in regions with limited medical infrastructure. The collaboration highlights the potential of AI to support healthcare delivery in underserved areas, offering a lifeline for systems facing significant constraints.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/gates-foundation-and-openai-test-ai-in-african-healthcare/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 22 2026",
+            "headline": "Yann LeCun&#x27;s New Venture Challenges Dominance of Large Language Models",
+            "title": "Yann LeCun Advocates for Alternative AI Approaches Beyond Large Language Models",
+            "content": "Yann LeCun, a Turing Award winner and prominent AI researcher, is launching a venture that challenges the prevailing focus on large language models. LeCun argues that the industry&#x27;s emphasis on these models is misguided and insufficient for solving critical AI challenges. Instead, he promotes exploring alternative methodologies that could offer more robust and versatile AI solutions. This contrarian perspective invites professionals to reconsider the current AI research trajectory and explore diverse approaches that may yield more effective results in addressing complex problems.",
+            "source": "MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2026/01/22/1131661/yann-lecuns-new-venture-ami-labs/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 22 2026",
             "headline": "Apple’s AI Wearable Could Debut in 2027",
             "title": "Apple Reportedly Developing AI Wearable to Rival OpenAI Innovations",
             "content": "Apple is reportedly developing an AI-powered wearable device, potentially launching in 2027, to compete with OpenAI advancements. This development follows a trend of tech giants investing heavily in AI-integrated consumer products. While specific technical details remain under wraps, the wearable is expected to enhance user experience through advanced AI capabilities. If successful, Apple&#x27;s entry into the AI wearable market could disrupt current offerings and set new industry standards. This move underscores Apple&#x27;s commitment to expanding its ecosystem with AI-driven innovations. Tech leaders and developers should monitor this development closely for potential collaborations or competitive insights.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/01/21/not-to-be-outdone-by-openai-apple-is-reportedly-developing-an-ai-wearable/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 21 2026",
-            "headline": "LinkedIn’s AI Breakthrough: Small Models Over Prompting",
-            "title": "LinkedIn Leverages Small AI Models for Enhanced Recommender Systems",
-            "content": "LinkedIn has achieved a breakthrough in its AI recommender systems by shifting focus from prompting to small models, significantly improving accuracy and latency. This strategic pivot enhances LinkedIn&#x27;s ability to provide personalized job recommendations, a critical feature for its extensive user base. By developing proprietary models instead of relying on off-the-shelf solutions, LinkedIn aims to deliver superior performance tailored to its platform&#x27;s unique demands. This advancement highlights a growing trend in AI development, where custom, smaller models are favored for their efficiency and effectiveness. Professionals in AI and machine learning should consider this approach for optimizing large-scale systems.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/infrastructure/why-linkedin-says-prompting-was-a-non-starter-and-small-models-was-the",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 21 2026",
-            "headline": "RadixArk Emerges with $400M Valuation Amid AI Inference Boom",
-            "title": "Project SGLang Evolves into RadixArk with Major Funding Success",
-            "content": "RadixArk, a spin-out from UC Berkeley&#x27;s Project SGLang, has secured a $400 million valuation, fueled by investment from Accel. Originating from Ion Stoica&#x27;s lab, RadixArk capitalizes on the burgeoning AI inference market, which is experiencing rapid growth due to increased demand for efficient AI processing. The company focuses on developing advanced inference solutions that promise to enhance AI model deployment and performance. This funding round positions RadixArk as a significant player in the AI landscape, potentially influencing future AI infrastructure developments. Stakeholders in AI and venture capital should watch RadixArk&#x27;s trajectory for potential partnerships and investment opportunities.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/21/sources-project-sglang-spins-out-as-radixark-with-400m-valuation-as-inference-market-explodes/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 21 2026",
-            "headline": "US Semiconductor Market 2025: Key Changes and Challenges",
-            "title": "Analyzing the US Semiconductor Industry’s Transformative Year in 2025",
-            "content": "The US semiconductor market underwent significant changes in 2025, marked by leadership shifts and fluctuating policies on chip exports. These developments have reshaped the competitive landscape, affecting both legacy companies and emerging players. The semiconductor sector faced challenges from geopolitical tensions and supply chain disruptions, influencing global market dynamics. As the industry adapts, companies must navigate these complexities to maintain competitiveness and innovation. Professionals in the semiconductor field should stay informed about policy changes and market trends to leverage new opportunities and mitigate risks.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/21/a-timeline-of-the-u-s-semiconductor-market-in-2025/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Third-Party Risk Management",
-                    "url": "/guides/third-party-risk-management.html",
-                    "icon": "fa-handshake"
-                }
-            ]
-        },
-        {
-            "date": "Jan 21 2026",
-            "headline": "Todoist Adds Voice-Activated AI Task Creation",
-            "title": "Todoist App Introduces AI-Powered Voice Task Feature",
-            "content": "Todoist has launched a new feature allowing users to add tasks through voice commands, utilizing AI to interpret natural speech. This enhancement streamlines task management by enabling hands-free operation, catering to users seeking convenience and efficiency. The AI-driven feature is designed to understand context and nuances in spoken language, offering a seamless integration into daily workflows. As productivity apps increasingly incorporate AI, Todoist&#x27;s innovation reflects a broader trend towards more intuitive user interfaces. Developers and tech leaders should consider similar AI integrations to enhance user engagement and functionality.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/21/todoists-app-now-lets-you-add-tasks-to-your-to-do-list-by-speaking-to-its-ai/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 21 2026",
-            "headline": "Siri to Transform into AI Chatbot—Report",
-            "title": "Apple Plans Major Update: Siri to Become AI Chatbot",
-            "content": "Apple is reportedly planning to transform Siri into an AI chatbot, resembling models like ChatGPT, to enhance its functionality across Apple devices. This shift aims to improve Siri&#x27;s interactive capabilities, making it more conversational and context-aware. By leveraging advanced AI techniques, Apple seeks to address longstanding user criticisms about Siri&#x27;s limitations compared to competitors. This development indicates a strategic push by Apple to strengthen its AI offerings and maintain competitive parity in the smart assistant market. Tech professionals should anticipate potential changes in user interaction and integration opportunities within the Apple ecosystem.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/21/apple-plans-to-make-siri-an-ai-chatbot-report-says/",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Jan 21 2026",
-            "headline": "Apple’s AirTag-Sized AI Wearable Under Development",
-            "title": "Apple Reportedly Designing AI Wearable Pin with Advanced Sensors",
-            "content": "Apple is reportedly working on a compact AI-powered wearable pin, similar in size to an AirTag, featuring cameras and microphones to capture environmental data. This device, housed in a sleek aluminum and glass casing, aims to offer users a novel way to interact with their surroundings through AI. The wearable is designed to process contextual information, potentially enhancing applications in augmented reality and personal assistants. Such innovation reflects Apple&#x27;s ongoing commitment to integrating AI into everyday devices, potentially setting new standards for wearable technology. Developers and tech leaders should explore the implications of this device for future AI-driven applications.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/news/865212/apple-ai-pin-wearable-airtag-rumor",
             "relatedResources": []
         }
     ],
