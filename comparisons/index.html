@@ -545,13 +545,11 @@
             content: '';
             position: absolute;
             inset: -1px;
-            background: linear-gradient(135deg, var(--accent-secondary), var(--accent-primary), var(--accent-pink), var(--accent-secondary));
-            background-size: 300% 300%;
+            background: var(--accent-secondary);
             border-radius: 25px;
             z-index: -1;
             opacity: 0;
             transition: opacity 0.4s ease;
-            animation: borderGlow 4s ease infinite;
         }
 
         @keyframes borderGlow {
@@ -572,20 +570,21 @@
             top: 0;
             left: 0;
             right: 0;
-            height: 3px;
-            background: linear-gradient(90deg, var(--accent-secondary), var(--accent-primary), var(--accent-pink));
+            height: 2px;
+            background: var(--accent-secondary);
             transform: scaleX(0);
             transform-origin: left;
             transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .comparison-card:hover {
-            transform: translateY(-10px) scale(1.02);
-            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4), 0 0 50px rgba(168, 85, 247, 0.15);
+            transform: translateY(-6px);
+            border-color: rgba(168, 85, 247, 0.4);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 30px rgba(168, 85, 247, 0.1);
         }
 
         .comparison-card:hover::before {
-            opacity: 1;
+            opacity: 0.15;
         }
 
         .comparison-card:hover::after {
