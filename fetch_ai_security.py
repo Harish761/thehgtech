@@ -215,7 +215,9 @@ def fetch_aiid_incidents():
             json={"query": query},
             headers={
                 'Content-Type': 'application/json',
-                'User-Agent': 'TheHGTech-AISecurityTracker/1.0'
+                'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
+                'Origin': 'https://incidentdatabase.ai',
+                'Referer': 'https://incidentdatabase.ai/'
             },
             timeout=60
         )
