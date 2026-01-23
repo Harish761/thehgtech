@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <title>Security Tool Comparisons | TheHGTech</title>
-    <meta name="title" content="Security Tool Comparisons | TheHGTech">
+    <title>Security Tool Comparisons 2026 | EDR, SIEM, Email Security | TheHGTech</title>
+    <meta name="title" content="Security Tool Comparisons 2026 | EDR, SIEM, Email Security | TheHGTech">
     <meta name="description"
-        content="Data-driven comparisons of cybersecurity tools based on expert reviews, user feedback, and industry research. SIEM, EDR, SOAR, and more.">
+        content="Data-driven comparisons of cybersecurity tools: EDR/XDR, SIEM, email security, vulnerability scanners. Expert analysis based on Gartner, user reviews, and industry research.">
     <meta name="keywords"
-        content="security tools comparison, SIEM comparison, EDR comparison, cybersecurity tools, Splunk vs Elastic, CrowdStrike vs SentinelOne">
+        content="security tools comparison, SIEM comparison, EDR comparison, email security comparison, Proofpoint vs Mimecast, CrowdStrike vs SentinelOne, Splunk vs Elastic">
     <meta name="author" content="TheHGTech">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://thehgtech.com/comparisons/">
@@ -19,14 +19,48 @@
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://thehgtech.com/comparisons/">
-    <meta property="og:title" content="Security Tools Comparisons">
+    <meta property="og:title" content="Security Tools Comparisons 2026">
     <meta property="og:description" content="Data-driven comparisons of cybersecurity tools">
+    <meta property="og:image" content="https://thehgtech.com/images/og-comparisons.png">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Security Tool Comparisons",
+        "description": "Data-driven comparisons of cybersecurity tools",
+        "publisher": {
+            "@type": "Organization",
+            "name": "TheHGTech"
+        }
+    }
+    </script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://thehgtech.com"
+        }, {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tool Comparisons",
+            "item": "https://thehgtech.com/comparisons/"
+        }]
+    }
+    </script>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/header.css">
@@ -38,312 +72,804 @@
     <link rel="stylesheet" href="/m-layout.css?v=3.2">
     <link rel="stylesheet" href="/m-components.css?v=3.0">
     <script src="/m-app.js?v=4.3" defer></script>
-    <link rel="stylesheet" href="/ui-enhancements.css?v=1.0">
-    <script src="/ui-enhancements.js?v=1.0" defer></script>
 
     <style>
+        :root {
+            --bg-primary: #030305;
+            --bg-secondary: #080810;
+            --bg-tertiary: #0f0f18;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a5b8;
+            --text-muted: #6b7084;
+            --accent-primary: #00D9FF;
+            --accent-secondary: #A855F7;
+            --accent-red: #FF3D3D;
+            --accent-green: #10b981;
+            --accent-orange: #FF9500;
+            --accent-pink: #ec4899;
+            --glass: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --glow-cyan: rgba(0, 217, 255, 0.4);
+            --glow-purple: rgba(168, 85, 247, 0.4);
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        :root {
-            --bg-primary: #000000;
-            --bg-secondary: #0a0a0a;
-            --bg-card: rgba(255, 255, 255, 0.03);
-            --accent-cyan: #00D9FF;
-            --accent-red: #FF3D3D;
-            --accent-green: #22C55E;
-            --glow-cyan: rgba(0, 217, 255, 0.4);
-            --text-primary: #ffffff;
-            --text-secondary: #a0a0a0;
-            --text-muted: #666666;
-            --border: rgba(255, 255, 255, 0.1);
-        }
-
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             background: var(--bg-primary);
             color: var(--text-primary);
             line-height: 1.6;
+            min-height: 100vh;
+            overflow-x: hidden;
         }
 
-        .container {
-            max-width: 1200px;
+        /* HERO SECTION */
+        .compare-hero {
+            position: relative;
+            padding: 10rem 2rem 6rem;
+            overflow: hidden;
+            background: var(--bg-primary);
+        }
+
+        .compare-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse 80% 60% at 20% 20%, rgba(168, 85, 247, 0.12) 0%, transparent 50%),
+                radial-gradient(ellipse 70% 50% at 80% 30%, rgba(0, 217, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(ellipse 90% 70% at 50% 80%, rgba(255, 61, 61, 0.08) 0%, transparent 50%);
+            animation: meshFloat 20s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        .compare-hero::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+            background-size: 60px 60px;
+            mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
+            pointer-events: none;
+        }
+
+        @keyframes meshFloat {
+
+            0%,
+            100% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            25% {
+                transform: translate(-2%, 2%) scale(1.02);
+            }
+
+            50% {
+                transform: translate(1%, -1%) scale(1.01);
+            }
+
+            75% {
+                transform: translate(-1%, -2%) scale(0.99);
+            }
+        }
+
+        .hero-particles {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .hero-particles span {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: var(--accent-secondary);
+            border-radius: 50%;
+            opacity: 0.4;
+            animation: particleFloat 15s infinite ease-in-out;
+        }
+
+        .hero-particles span:nth-child(1) {
+            left: 10%;
+            top: 20%;
+            animation-delay: 0s;
+            animation-duration: 12s;
+        }
+
+        .hero-particles span:nth-child(2) {
+            left: 20%;
+            top: 80%;
+            animation-delay: 2s;
+            animation-duration: 18s;
+            background: var(--accent-red);
+        }
+
+        .hero-particles span:nth-child(3) {
+            left: 35%;
+            top: 40%;
+            animation-delay: 4s;
+            animation-duration: 14s;
+        }
+
+        .hero-particles span:nth-child(4) {
+            left: 50%;
+            top: 15%;
+            animation-delay: 1s;
+            animation-duration: 16s;
+            background: var(--accent-primary);
+        }
+
+        .hero-particles span:nth-child(5) {
+            left: 65%;
+            top: 70%;
+            animation-delay: 3s;
+            animation-duration: 20s;
+        }
+
+        .hero-particles span:nth-child(6) {
+            left: 80%;
+            top: 30%;
+            animation-delay: 5s;
+            animation-duration: 13s;
+            background: var(--accent-pink);
+        }
+
+        .hero-particles span:nth-child(7) {
+            left: 90%;
+            top: 60%;
+            animation-delay: 2.5s;
+            animation-duration: 17s;
+        }
+
+        .hero-particles span:nth-child(8) {
+            left: 75%;
+            top: 85%;
+            animation-delay: 4.5s;
+            animation-duration: 15s;
+            background: var(--accent-red);
+        }
+
+        @keyframes particleFloat {
+
+            0%,
+            100% {
+                transform: translate(0, 0) scale(1);
+                opacity: 0.3;
+            }
+
+            25% {
+                transform: translate(20px, -30px) scale(1.2);
+                opacity: 0.6;
+            }
+
+            50% {
+                transform: translate(-15px, 20px) scale(0.8);
+                opacity: 0.4;
+            }
+
+            75% {
+                transform: translate(10px, -10px) scale(1.1);
+                opacity: 0.5;
+            }
+        }
+
+        .hero-content {
+            max-width: 1400px;
             margin: 0 auto;
-            padding: 2rem;
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
         }
 
-        /* Page Header */
-        .page-header {
-            text-align: center;
-            padding: 4rem 0 3rem;
-            border-bottom: 1px solid var(--border);
-            margin-bottom: 3rem;
-            margin-top: 60px;
-            /* Space for fixed header */
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding: 0.6rem 1.25rem;
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.15), rgba(168, 85, 247, 0.05));
+            border: 1px solid rgba(168, 85, 247, 0.3);
+            border-radius: 100px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: var(--accent-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 2rem;
+            animation: fadeInUp 0.6s ease-out, badgeGlow 3s ease-in-out infinite;
         }
 
-        .breadcrumb {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            margin-bottom: 1rem;
+        @keyframes badgeGlow {
+
+            0%,
+            100% {
+                box-shadow: 0 0 15px rgba(168, 85, 247, 0.2);
+            }
+
+            50% {
+                box-shadow: 0 0 25px rgba(168, 85, 247, 0.4);
+            }
         }
 
-        .breadcrumb a {
-            color: var(--accent-cyan);
-            text-decoration: none;
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
-        h1 {
-            font-size: 3rem;
-            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-red));
+        .hero-title {
+            font-size: clamp(2.5rem, 7vw, 5rem);
+            font-weight: 900;
+            line-height: 1.05;
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 0.6s ease-out 0.1s both;
+        }
+
+        .hero-title .gradient-text {
+            background: linear-gradient(135deg, #fff 0%, var(--accent-secondary) 50%, var(--accent-primary) 100%);
+            background-size: 200% 200%;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            margin-bottom: 1rem;
+            animation: gradientShift 8s ease-in-out infinite;
         }
 
-        .subtitle {
-            font-size: 1.2rem;
+        @keyframes gradientShift {
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
             color: var(--text-secondary);
-            max-width: 700px;
-            margin: 0 auto;
+            max-width: 650px;
+            margin-bottom: 3rem;
+            animation: fadeInUp 0.6s ease-out 0.2s both;
         }
 
-        /* Methodology Badge */
-        .methodology-badge {
-            display: inline-block;
-            background: rgba(0, 217, 255, 0.1);
-            border: 1px solid var(--accent-cyan);
-            padding: 0.75rem 1.5rem;
-            border-radius: 50px;
-            margin-top: 1.5rem;
-            font-size: 0.9rem;
-            color: var(--accent-cyan);
-        }
-
-        /* Categories Grid */
-        .categories {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        .hero-stats {
+            display: flex;
             gap: 2rem;
-            margin-bottom: 4rem;
+            animation: fadeInUp 0.6s ease-out 0.3s both;
+        }
+
+        .hero-stat {
+            text-align: left;
+            padding: 1.25rem 2rem;
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .hero-stat:hover {
+            border-color: var(--accent-secondary);
+            transform: translateY(-3px);
+        }
+
+        .hero-stat-value {
+            font-size: 2.75rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--accent-secondary), var(--accent-primary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-stat-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* CATEGORY SECTION */
+        .category-section {
+            max-width: 1400px;
+            margin: -4rem auto 4rem;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 3;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
         }
 
         .category-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 2rem;
-            transition: all 0.3s ease;
+            background: linear-gradient(145deg, rgba(15, 15, 24, 0.9), rgba(8, 8, 16, 0.95));
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 1.5rem;
             cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            text-align: center;
         }
 
-        .category-card:hover {
+        .category-card:hover,
+        .category-card.active {
+            border-color: var(--accent-secondary);
             transform: translateY(-5px);
-            border-color: var(--accent-cyan);
-            box-shadow: 0 10px 30px rgba(0, 217, 255, 0.2);
-        }
-
-        .category-icon {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: var(--accent-cyan);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 60px;
-            height: 60px;
-            background: rgba(0, 217, 255, 0.1);
-            border-radius: 12px;
-            border: 1px solid rgba(0, 217, 255, 0.3);
-        }
-
-        .category-card h3 {
-            color: var(--accent-cyan);
-            margin-bottom: 0.5rem;
-            font-size: 1.3rem;
-        }
-
-        .category-card p {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-            margin-bottom: 1rem;
-        }
-
-        .comparison-count {
-            color: var(--text-muted);
-            font-size: 0.85rem;
-        }
-
-        /* Comparisons List */
-        .comparisons-section {
-            margin-top: 4rem;
-        }
-
-        .section-title {
-            font-size: 2rem;
-            color: var(--text-primary);
-            margin-bottom: 2rem;
-            padding-bottom: 1rem;
-            border-bottom: 2px solid var(--border);
-        }
-
-        .comparison-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 2rem;
-            margin-bottom: 1.5rem;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: block;
-        }
-
-        .comparison-card:hover {
-            border-color: var(--accent-cyan);
-            transform: translateX(10px);
-        }
-
-        .comparison-title {
-            font-size: 1.5rem;
-            color: var(--text-primary);
-            margin-bottom: 0.75rem;
-        }
-
-        .comparison-meta {
-            display: flex;
-            gap: 1.5rem;
-            margin-bottom: 1rem;
-            font-size: 0.9rem;
-            color: var(--text-muted);
-        }
-
-        .comparison-description {
-            color: var(--text-secondary);
-            line-height: 1.7;
-        }
-
-        .coming-soon {
-            opacity: 0.6;
-            cursor: not-allowed;
-        }
-
-        .coming-soon:hover {
-            transform: none;
-            border-color: var(--border);
-        }
-
-        .badge {
-            display: inline-block;
-            padding: 0.25rem 0.75rem;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            text-transform: uppercase;
-        }
-
-        .badge-new {
-            background: rgba(0, 255, 136, 0.2);
-            color: var(--accent-green);
-        }
-
-        .badge-coming-soon {
-            background: rgba(255, 76, 76, 0.2);
-            color: var(--accent-red);
+            box-shadow: 0 15px 40px rgba(168, 85, 247, 0.2);
         }
 
         .category-card.active {
-            border-color: var(--accent-cyan);
-            background: rgba(0, 217, 255, 0.1);
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0, 217, 255, 0.3);
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.15), rgba(0, 217, 255, 0.1));
+        }
+
+        .category-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.2), rgba(0, 217, 255, 0.1));
+            border: 1px solid rgba(168, 85, 247, 0.3);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.25rem;
+            color: var(--accent-secondary);
+            transition: all 0.3s ease;
+        }
+
+        .category-card:hover .category-icon,
+        .category-card.active .category-icon {
+            background: linear-gradient(135deg, var(--accent-secondary), var(--accent-primary));
+            color: #fff;
+        }
+
+        .category-name {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .category-count {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        /* COMPARISONS GRID */
+        .comparisons-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem 6rem;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--text-primary), var(--accent-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .results-count {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            padding: 0.5rem 1rem;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 100px;
+        }
+
+        .comparisons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .comparison-card-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            opacity: 0;
+            animation: cardEntrance 0.6s ease forwards;
+        }
+
+        .comparison-card-link:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .comparison-card-link:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+
+        .comparison-card-link:nth-child(3) {
+            animation-delay: 0.2s;
+        }
+
+        .comparison-card-link:nth-child(n+4) {
+            animation-delay: 0.3s;
+        }
+
+        @keyframes cardEntrance {
+            from {
+                opacity: 0;
+                transform: translateY(40px) scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .comparison-card {
+            background: linear-gradient(145deg, rgba(15, 15, 24, 0.9), rgba(8, 8, 16, 0.95));
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            overflow: hidden;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            backdrop-filter: blur(10px);
+        }
+
+        .comparison-card::before {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            background: linear-gradient(135deg, var(--accent-secondary), var(--accent-primary), var(--accent-pink), var(--accent-secondary));
+            background-size: 300% 300%;
+            border-radius: 25px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            animation: borderGlow 4s ease infinite;
+        }
+
+        @keyframes borderGlow {
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        .comparison-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent-secondary), var(--accent-primary), var(--accent-pink));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .comparison-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4), 0 0 50px rgba(168, 85, 247, 0.15);
+        }
+
+        .comparison-card:hover::before {
+            opacity: 1;
+        }
+
+        .comparison-card:hover::after {
+            transform: scaleX(1);
+        }
+
+        .card-header {
+            padding: 2rem;
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(0, 217, 255, 0.05));
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .card-badge {
+            display: inline-block;
+            padding: 0.4rem 0.85rem;
+            border-radius: 8px;
+            font-size: 0.6rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .card-badge.new {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.9), rgba(5, 150, 105, 0.9));
+            color: #fff;
+        }
+
+        .card-badge.featured {
+            background: linear-gradient(135deg, rgba(255, 149, 0, 0.9), rgba(255, 107, 53, 0.9));
+            color: #fff;
+        }
+
+        .card-badge.coming-soon {
+            background: rgba(255, 76, 76, 0.2);
+            color: var(--accent-red);
+            border: 1px solid rgba(255, 76, 76, 0.3);
+        }
+
+        .tools-showcase {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        .tool-tag {
+            padding: 0.5rem 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--glass-border);
+            border-radius: 100px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+        }
+
+        .comparison-card:hover .tool-tag {
+            border-color: var(--accent-secondary);
+        }
+
+        .card-title {
+            font-size: 1.35rem;
+            font-weight: 700;
+            line-height: 1.35;
+            margin-bottom: 0.5rem;
+        }
+
+        .comparison-card:hover .card-title {
+            background: linear-gradient(135deg, var(--text-primary), var(--accent-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .card-category-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: var(--accent-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .card-content {
+            padding: 1.75rem;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .card-excerpt {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            flex: 1;
+        }
+
+        .card-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1.25rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            margin-top: auto;
+        }
+
+        .meta-info {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .meta-info span {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .meta-info i {
+            color: var(--accent-secondary);
+            opacity: 0.8;
+        }
+
+        .read-more {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--accent-secondary);
+            padding: 0.5rem 1rem;
+            background: rgba(168, 85, 247, 0.1);
+            border-radius: 100px;
+            transition: all 0.4s ease;
+        }
+
+        .comparison-card:hover .read-more {
+            background: var(--accent-secondary);
+            color: #fff;
+        }
+
+        /* Coming Soon Card */
+        .comparison-card.coming-soon-card {
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+
+        .comparison-card.coming-soon-card:hover {
+            transform: none;
+            box-shadow: none;
+        }
+
+        .comparison-card.coming-soon-card::before,
+        .comparison-card.coming-soon-card::after {
+            display: none;
+        }
+
+        /* Methodology Section */
+        .methodology-section {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem 6rem;
+        }
+
+        .methodology-card {
+            background: linear-gradient(145deg, rgba(15, 15, 24, 0.9), rgba(8, 8, 16, 0.95));
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 3rem;
+        }
+
+        .methodology-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .methodology-title i {
+            color: var(--accent-secondary);
+        }
+
+        .methodology-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .methodology-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1.25rem;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 12px;
+            border: 1px solid var(--glass-border);
+            transition: all 0.3s ease;
+        }
+
+        .methodology-item:hover {
+            border-color: var(--accent-secondary);
+            transform: translateY(-3px);
+        }
+
+        .methodology-item i {
+            font-size: 1.25rem;
+            color: var(--accent-secondary);
+            padding: 0.5rem;
+            background: rgba(168, 85, 247, 0.1);
+            border-radius: 8px;
+        }
+
+        .methodology-item-content h4 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .methodology-item-content p {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--glass-border);
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        footer p {
+            color: var(--text-muted);
         }
 
         /* Responsive */
         @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
+            .compare-hero {
+                padding: 8rem 1.5rem 4rem;
             }
 
-            .categories {
+            .hero-stats {
+                flex-direction: column;
+                gap: 1rem;
+                width: 100%;
+            }
+
+            .hero-stat {
+                width: 100%;
+            }
+
+            .category-section {
+                margin-top: -2rem;
+            }
+
+            .category-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .comparisons-grid {
                 grid-template-columns: 1fr;
             }
 
-            .comparison-meta {
+            .section-header {
                 flex-direction: column;
-                gap: 0.5rem;
+                gap: 1rem;
+                text-align: center;
+            }
+
+            .methodology-card {
+                padding: 2rem;
             }
         }
     </style>
-
-    <script>
-        // Category filtering system
-        let activeCategory = 'all';
-
-        function filterByCategory(category) {
-            activeCategory = category;
-
-            // Update active state on category cards
-            document.querySelectorAll('.category-card').forEach(card => {
-                card.classList.remove('active');
-            });
-
-            if (category !== 'all') {
-                event.target.closest('.category-card').classList.add('active');
-            }
-
-            // Filter comparison cards
-            const comparisons = document.querySelectorAll('.comparison-card');
-            comparisons.forEach(card => {
-                if (category === 'all' || card.dataset.category === category) {
-                    card.style.display = 'block';
-                    card.style.animation = 'fadeIn 0.3s ease';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-
-            // Update section title
-            const sectionTitle = document.querySelector('.section-title');
-            if (category === 'all') {
-                sectionTitle.textContent = 'Latest Tool Comparisons';
-            } else {
-                const categoryNames = {
-                    'siem': 'SIEM Platform Comparisons',
-                    'edr': 'EDR/XDR Solution Comparisons',
-                    'vuln': 'Vulnerability Scanner Comparisons',
-                    'soar': 'SOAR Platform Comparisons',
-                    'cloud': 'Cloud Security Comparisons',
-                    'api': 'API Security Comparisons'
-                };
-                sectionTitle.textContent = categoryNames[category] || 'Tool Comparisons';
-            }
-
-            // Smooth scroll to comparisons section
-            document.querySelector('.comparisons-section').scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
-
-        // Add fadeIn animation
-        const style = document.createElement('style');
-        style.textContent = `
-            @keyframes fadeIn {
-                from { opacity: 0; transform: translateY(10px); }
-                to { opacity: 1; transform: translateY(0); }
-            }
-        `;
-        document.head.appendChild(style);
-    </script>
 </head>
 
 <body>
-    <!-- ========== MOBILE NAVIGATION ========== -->
-
     <!-- Mobile Header -->
     <header class="m-header m-only">
         <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
@@ -355,11 +881,10 @@
                 style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
         </div>
         <div class="m-header__actions">
-            <button class="m-header__btn m-header__btn--theme" onclick="mToggleTheme()" aria-label="Toggle Theme">
-                <i class="fas fa-moon"></i>
-                <i class="fas fa-sun"></i>
+            <button class="m-theme-toggle" onclick="mToggleTheme()" aria-label="Toggle Theme">
+                <span class="m-theme-toggle__thumb"></span>
             </button>
-            <button class="m-header__btn" data-action="search" aria-label="Search">
+            <button class="m-header__btn m-header__btn--search" data-action="search" aria-label="Search">
                 <i class="fas fa-search"></i>
             </button>
         </div>
@@ -389,16 +914,7 @@
         </a>
     </nav>
 
-    <!-- Search Overlay -->
-    <div class="m-search-overlay m-only">
-        <div class="m-search-overlay__header">
-            <input type="text" class="m-search-overlay__input" placeholder="Search news, CVEs, guides...">
-            <button class="m-search-overlay__cancel">Cancel</button>
-        </div>
-        <div class="m-search-overlay__results"></div>
-    </div>
-
-    <!-- ========== DESKTOP HEADER ========== -->
+    <!-- Desktop Header -->
     <header class="header" role="banner">
         <div class="header-content">
             <div class="logo">
@@ -412,7 +928,6 @@
             <nav class="nav nav-modern" role="navigation">
                 <a href="/index.html#news">News</a>
 
-                <!-- Intelligence Dropdown -->
                 <div class="nav-dropdown">
                     <span class="nav-dropdown-trigger">
                         Intelligence
@@ -425,29 +940,26 @@
                             <div class="dropdown-item-content">
                                 <div class="dropdown-item-title">Threat Intelligence <span
                                         class="dropdown-badge live">LIVE</span></div>
-                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours
-                                </div>
+                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds</div>
                             </div>
                         </a>
                         <a href="/cve-tracker.html" class="dropdown-item">
                             <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
                             <div class="dropdown-item-content">
                                 <div class="dropdown-item-title">CVE Tracker</div>
-                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores
-                                </div>
+                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities</div>
                             </div>
                         </a>
                         <a href="/ransomware-tracker.html" class="dropdown-item">
                             <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
                             <div class="dropdown-item-content">
                                 <div class="dropdown-item-title">Ransomware Tracker</div>
-                                <div class="dropdown-item-desc">Track active ransomware groups and victims</div>
+                                <div class="dropdown-item-desc">Track active ransomware groups</div>
                             </div>
                         </a>
                     </div>
                 </div>
 
-                <!-- Resources Dropdown -->
                 <div class="nav-dropdown">
                     <span class="nav-dropdown-trigger">
                         Resources
@@ -458,16 +970,16 @@
                             <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
                             <div class="dropdown-item-content">
                                 <div class="dropdown-item-title">Security Guides <span
-                                        class="dropdown-badge popular">37+</span></div>
-                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
+                                        class="dropdown-badge popular">40+</span></div>
+                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2 & more</div>
                             </div>
                         </a>
-                        <a href="/comparisons/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
+                        <a href="/comparisons/" class="dropdown-item" style="background: rgba(168, 85, 247, 0.08);">
                             <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
                             <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">Tool Comparisons
-                                </div>
-                                <div class="dropdown-item-desc">EDR, SIEM, and security tool head-to-head reviews</div>
+                                <div class="dropdown-item-title" style="color: var(--accent-secondary);">Tool
+                                    Comparisons</div>
+                                <div class="dropdown-item-desc">Security tool head-to-head reviews</div>
                             </div>
                         </a>
                         <div class="dropdown-divider"></div>
@@ -475,7 +987,7 @@
                             <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
                             <div class="dropdown-item-content">
                                 <div class="dropdown-item-title">Articles</div>
-                                <div class="dropdown-item-desc">Latest cybersecurity news and analysis</div>
+                                <div class="dropdown-item-desc">Latest cybersecurity news</div>
                             </div>
                         </a>
                     </div>
@@ -501,218 +1013,291 @@
         </div>
     </header>
 
-    <!-- Mobile Menu (Legacy fallback) -->
-    <div class="mobile-menu">
-        <div class="mobile-theme-toggle" id="mobileThemeToggle">
-            <i class="fas fa-adjust"></i> Switch Theme
+    <!-- Hero Section -->
+    <section class="compare-hero">
+        <div class="hero-particles">
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
         </div>
-        <a href="/index.html#news">News</a>
-        <a href="/threat-intel.html">Threat Intelligence</a>
-        <a href="/cve-tracker.html">CVE</a>
-        <a href="/guides/">Guides</a>
-        <a href="/comparisons/">Tool Comparisons</a>
-        <a href="/articles.html">Articles</a>
-        <a href="/index.html#about">About</a>
-        <a href="/index.html#contact">Contact</a>
-    </div>
-    <div class="container">
-        <div class="page-header">
-            <div class="breadcrumb">
-                <a href="/">Home</a> / Tool Comparisons
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-balance-scale"></i>
+                Data-Driven Analysis
             </div>
-            <h1>Security Tool Comparisons</h1>
-            <p class="subtitle">
-                Data-driven analysis of cybersecurity tools based on expert reviews, user feedback, and industry
-                research. We do the research so you can make informed decisions.
+            <h1 class="hero-title">
+                <span class="gradient-text">Security Tool</span><br>
+                Comparisons
+            </h1>
+            <p class="hero-subtitle">
+                Make informed decisions with our research-based comparisons. We analyze Gartner reports,
+                thousands of user reviews, and industry research so you don't have to.
             </p>
-            <div class="methodology-badge">
-                📊 Research-Based • 🔍 Fact-Checked • 📈 Regularly Updated
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="hero-stat-value">3</div>
+                    <div class="hero-stat-label">Comparisons</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-value">6</div>
+                    <div class="hero-stat-label">Categories</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-value">1.3K+</div>
+                    <div class="hero-stat-label">Reviews Analyzed</div>
+                </div>
             </div>
         </div>
+    </section>
 
-        <!-- Categories -->
-        <div class="categories">
-            <div class="category-card" onclick="filterByCategory('all')" style="cursor: pointer;">
+    <!-- Category Section -->
+    <section class="category-section">
+        <div class="category-grid">
+            <div class="category-card active" data-category="all" onclick="filterByCategory('all', this)">
                 <div class="category-icon"><i class="fas fa-th-large"></i></div>
-                <h3>All Categories</h3>
-                <p>View all available tool comparisons</p>
-                <span class="comparison-count">Click to view all</span>
+                <div class="category-name">All</div>
+                <div class="category-count">3 comparisons</div>
             </div>
-
-            <div class="category-card" onclick="filterByCategory('siem')" style="cursor: pointer;">
-                <div class="category-icon"><i class="fas fa-shield-alt"></i></div>
-                <h3>SIEM Platforms</h3>
-                <p>Compare security information and event management solutions</p>
-                <span class="comparison-count">1 comparison available</span>
-            </div>
-
-            <div class="category-card" onclick="filterByCategory('edr')" style="cursor: pointer;">
+            <div class="category-card" data-category="edr" onclick="filterByCategory('edr', this)">
                 <div class="category-icon"><i class="fas fa-laptop-code"></i></div>
-                <h3>EDR/XDR Solutions</h3>
-                <p>Endpoint detection and response platform comparisons</p>
-                <span class="comparison-count">1 comparison available</span>
+                <div class="category-name">EDR/XDR</div>
+                <div class="category-count">1 comparison</div>
             </div>
-
-            <div class="category-card" onclick="filterByCategory('vuln')" style="cursor: pointer;">
+            <div class="category-card" data-category="siem" onclick="filterByCategory('siem', this)">
+                <div class="category-icon"><i class="fas fa-chart-bar"></i></div>
+                <div class="category-name">SIEM</div>
+                <div class="category-count">1 comparison</div>
+            </div>
+            <div class="category-card" data-category="email" onclick="filterByCategory('email', this)">
+                <div class="category-icon"><i class="fas fa-envelope-open-text"></i></div>
+                <div class="category-name">Email Security</div>
+                <div class="category-count">Coming soon</div>
+            </div>
+            <div class="category-card" data-category="vuln" onclick="filterByCategory('vuln', this)">
                 <div class="category-icon"><i class="fas fa-bug"></i></div>
-                <h3>Vulnerability Scanners</h3>
-                <p>Compare vulnerability assessment and management tools</p>
-                <span class="comparison-count">Coming soon</span>
+                <div class="category-name">Vulnerability</div>
+                <div class="category-count">Coming soon</div>
             </div>
-
-            <div class="category-card" onclick="filterByCategory('soar')" style="cursor: pointer;">
-                <div class="category-icon"><i class="fas fa-robot"></i></div>
-                <h3>SOAR Platforms</h3>
-                <p>Security orchestration, automation, and response solutions</p>
-                <span class="comparison-count">Coming soon</span>
-            </div>
-
-            <div class="category-card" onclick="filterByCategory('cloud')" style="cursor: pointer;">
+            <div class="category-card" data-category="cloud" onclick="filterByCategory('cloud', this)">
                 <div class="category-icon"><i class="fas fa-cloud"></i></div>
-                <h3>Cloud Security</h3>
-                <p>Cloud security posture management and CWPP tools</p>
-                <span class="comparison-count">Coming soon</span>
-            </div>
-
-            <div class="category-card" onclick="filterByCategory('api')" style="cursor: pointer;">
-                <div class="category-icon"><i class="fas fa-code"></i></div>
-                <h3>API Security</h3>
-                <p>API security testing and protection platforms</p>
-                <span class="comparison-count">Coming soon</span>
+                <div class="category-name">Cloud Security</div>
+                <div class="category-count">Coming soon</div>
             </div>
         </div>
+    </section>
 
-        <!-- Latest Comparisons -->
-        <section class="comparisons-section">
-            <h2 class="section-title">Latest Tool Comparisons</h2>
+    <!-- Comparisons Grid -->
+    <section class="comparisons-container">
+        <div class="section-header">
+            <h2 class="section-title" id="sectionTitle">All Comparisons</h2>
+            <span class="results-count" id="resultsCount">Showing 3 comparisons</span>
+        </div>
 
-            <a href="/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html" class="comparison-card"
-                data-category="edr" style="border: 2px solid #FF6B35; box-shadow: 0 0 20px rgba(255, 107, 53, 0.3);">
-                <span class="badge badge-new">New · POC Tested</span>
-                <h3 class="comparison-title">CrowdStrike vs Microsoft Defender vs Cortex XDR: EDR/XDR Battle 2025</h3>
-                <div class="comparison-meta">
-                    <span>📖 22 min read</span>
-                    <span>🧪 Hands-on POC + Industry Analysis</span>
-                    <span>📅 December 2025</span>
-                </div>
-                <p class="comparison-description">
-                    Unique hybrid comparison: Personal POC experience combined with 2025 Gartner data. Covers console
-                    experience,
-                    reliability, the CrowdStrike July 2024 incident, and the controversial Microsoft E5 bundling
-                    strategy.
-                    Real opinions backed by industry evidence.
-                </p>
+        <div class="comparisons-grid" id="comparisonsGrid">
+            <!-- EDR Comparison -->
+            <a href="/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html" class="comparison-card-link"
+                data-category="edr">
+                <article class="comparison-card">
+                    <div class="card-header">
+                        <span class="card-badge featured"><i class="fas fa-flask"></i> POC Tested</span>
+                        <div class="tools-showcase">
+                            <span class="tool-tag">CrowdStrike</span>
+                            <span class="tool-tag">Microsoft Defender</span>
+                            <span class="tool-tag">Cortex XDR</span>
+                        </div>
+                        <h3 class="card-title">CrowdStrike vs Microsoft Defender vs Cortex XDR</h3>
+                        <span class="card-category-label"><i class="fas fa-laptop-code"></i> EDR/XDR Battle 2025</span>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-excerpt">
+                            Unique hybrid comparison: Personal POC experience combined with 2025 Gartner data.
+                            Covers console experience, reliability, the CrowdStrike July 2024 incident, and the
+                            controversial Microsoft E5 bundling strategy.
+                        </p>
+                        <div class="card-meta">
+                            <div class="meta-info">
+                                <span><i class="fas fa-clock"></i> 22 min read</span>
+                                <span><i class="fas fa-calendar"></i> Dec 2025</span>
+                            </div>
+                            <span class="read-more">Compare <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </article>
             </a>
 
-            <a href="/comparisons/splunk-vs-elastic-security-vs-logrhythm.html" class="comparison-card"
+            <!-- SIEM Comparison -->
+            <a href="/comparisons/splunk-vs-elastic-security-vs-logrhythm.html" class="comparison-card-link"
                 data-category="siem">
-                <h3 class="comparison-title">Splunk vs Elastic Security vs LogRhythm: SIEM Showdown 2025</h3>
-                <div class="comparison-meta">
-                    <span>📖 18 min read</span>
-                    <span>📊 Based on 1,300+ reviews</span>
-                    <span>📅 Updated: November 2025</span>
-                </div>
-                <p class="comparison-description">
-                    Comprehensive three-way comparison of leading SIEM platforms. Analysis based on Gartner reports,
-                    1,300+ G2 reviews, and community feedback. Includes on-prem vs cloud deployment, feature matrix,
-                    pricing breakdown, and use case recommendations.
-                </p>
+                <article class="comparison-card">
+                    <div class="card-header">
+                        <span class="card-badge new"><i class="fas fa-star"></i> Updated</span>
+                        <div class="tools-showcase">
+                            <span class="tool-tag">Splunk</span>
+                            <span class="tool-tag">Elastic Security</span>
+                            <span class="tool-tag">LogRhythm</span>
+                        </div>
+                        <h3 class="card-title">Splunk vs Elastic Security vs LogRhythm</h3>
+                        <span class="card-category-label"><i class="fas fa-chart-bar"></i> SIEM Showdown 2025</span>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-excerpt">
+                            Comprehensive three-way comparison of leading SIEM platforms. Analysis based on
+                            Gartner reports, 1,300+ G2 reviews, and community feedback. Includes on-prem vs
+                            cloud deployment, feature matrix, and pricing breakdown.
+                        </p>
+                        <div class="card-meta">
+                            <div class="meta-info">
+                                <span><i class="fas fa-clock"></i> 18 min read</span>
+                                <span><i class="fas fa-star"></i> 1.3K+ reviews</span>
+                            </div>
+                            <span class="read-more">Compare <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </article>
             </a>
 
+            <!-- Email Security - Coming Soon -->
+            <div class="comparison-card-link" data-category="email">
+                <article class="comparison-card coming-soon-card">
+                    <div class="card-header">
+                        <span class="card-badge coming-soon"><i class="fas fa-hourglass-half"></i> Coming Soon</span>
+                        <div class="tools-showcase">
+                            <span class="tool-tag">Proofpoint</span>
+                            <span class="tool-tag">Mimecast</span>
+                            <span class="tool-tag">M365 Defender</span>
+                        </div>
+                        <h3 class="card-title">Proofpoint vs Mimecast vs Microsoft Defender for O365</h3>
+                        <span class="card-category-label"><i class="fas fa-envelope-open-text"></i> Email Security
+                            2026</span>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-excerpt">
+                            Enterprise email security comparison covering anti-phishing, BEC protection,
+                            DMARC/DKIM/SPF, sandboxing, and user awareness training integrations.
+                            Analysis in progress.
+                        </p>
+                        <div class="card-meta">
+                            <div class="meta-info">
+                                <span><i class="fas fa-clock"></i> 15 min read</span>
+                                <span><i class="fas fa-spinner fa-spin"></i> In Progress</span>
+                            </div>
+                            <span class="read-more" style="opacity: 0.5;">Coming Soon</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
 
-            <div class="comparison-card coming-soon" data-category="vuln">
-                <span class="badge badge-coming-soon">Coming Soon</span>
-                <h3 class="comparison-title">Nessus vs Qualys vs Rapid7: Vulnerability Scanner Comparison</h3>
-                <div class="comparison-meta">
-                    <span>📖 14 min read</span>
-                    <span>📊 Analysis in progress</span>
+    <!-- Methodology Section -->
+    <section class="methodology-section">
+        <div class="methodology-card">
+            <h2 class="methodology-title"><i class="fas fa-microscope"></i> Our Methodology</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                Our comparisons are research-based and data-driven. We don't claim hands-on testing of every tool,
+                but we do extensive research to provide you with accurate, actionable insights.
+            </p>
+            <div class="methodology-grid">
+                <div class="methodology-item">
+                    <i class="fas fa-star"></i>
+                    <div class="methodology-item-content">
+                        <h4>500+ User Reviews</h4>
+                        <p>G2, Gartner Peer Insights, TrustRadius</p>
+                    </div>
                 </div>
-                <p class="comparison-description">
-                    Three-way comparison of popular vulnerability scanners. Coverage, accuracy, and ease of use
-                    analysis.
-                </p>
+                <div class="methodology-item">
+                    <i class="fas fa-chart-pie"></i>
+                    <div class="methodology-item-content">
+                        <h4>Analyst Reports</h4>
+                        <p>Gartner Magic Quadrant, Forrester Wave</p>
+                    </div>
+                </div>
+                <div class="methodology-item">
+                    <i class="fas fa-file-alt"></i>
+                    <div class="methodology-item-content">
+                        <h4>Vendor Documentation</h4>
+                        <p>Official specs and feature lists</p>
+                    </div>
+                </div>
+                <div class="methodology-item">
+                    <i class="fas fa-users"></i>
+                    <div class="methodology-item-content">
+                        <h4>Community Feedback</h4>
+                        <p>Reddit, Stack Overflow, security forums</p>
+                    </div>
+                </div>
+                <div class="methodology-item">
+                    <i class="fas fa-dollar-sign"></i>
+                    <div class="methodology-item-content">
+                        <h4>Pricing Analysis</h4>
+                        <p>Vendor websites and user reports</p>
+                    </div>
+                </div>
+                <div class="methodology-item">
+                    <i class="fas fa-sync-alt"></i>
+                    <div class="methodology-item-content">
+                        <h4>Quarterly Updates</h4>
+                        <p>We refresh comparisons regularly</p>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Methodology Section -->
-        <section class="comparisons-section">
-            <h2 class="section-title">Our Methodology</h2>
-            <div class="comparison-card">
-                <h3 class="comparison-title">How We Create Comparisons</h3>
-                <li style="list-style: none;"><a href="/comparisons/">View All Tool Comparisons</a></li>
-                <p class="comparison-description" style="margin-bottom: 1rem;">
-                    Our comparisons are research-based and data-driven. We don't claim hands-on testing of every
-                    tool,
-                    but we do extensive research to provide you with accurate, actionable insights.
-                </p>
-                <p class="comparison-description" style="margin-bottom: 1rem;">
-                    <strong>Our research includes:</strong>
-                </p>
-                <ul style="color: var(--text-secondary); margin-left: 2rem; line-height: 1.8;">
-                    <li>Analysis of 500+ verified user reviews from G2, Gartner Peer Insights, and TrustRadius</li>
-                    <li>Gartner Magic Quadrant and Forrester Wave reports</li>
-                    <li>Official vendor documentation and specifications</li>
-                    <li>Community feedback from Reddit, Stack Overflow, and security forums</li>
-                    <li>Published performance benchmarks and case studies</li>
-                    <li>Pricing information from vendor websites and user reports</li>
-                </ul>
-                <p class="comparison-description" style="margin-top: 1rem;">
-                    All claims are cited with sources. We update comparisons quarterly to ensure accuracy.
-                </p>
-            </div>
-        </section>
-    </div>
-</body>
+    <footer>
+        <p>&copy; 2026 TheHGTech. Making security tool decisions easier.</p>
+    </footer>
 
-<script>
-    // Header Functionality
-    document.addEventListener('DOMContentLoaded', () => {
-        // Theme Toggle
-        const themeToggle = document.getElementById('themeToggle');
-        const mobileThemeToggle = document.getElementById('mobileThemeToggle');
-        const body = document.body;
+    <script>
+        // Category filtering
+        function filterByCategory(category, element) {
+            // Update active state
+            document.querySelectorAll('.category-card').forEach(card => card.classList.remove('active'));
+            if (element) element.classList.add('active');
 
-        // Check local storage
-        if (localStorage.getItem('theme') === 'light') {
-            body.classList.add('light-mode');
-        }
+            // Filter cards
+            const cards = document.querySelectorAll('.comparison-card-link');
+            let visibleCount = 0;
 
-        function toggleTheme() {
-            body.classList.toggle('light-mode');
-            if (body.classList.contains('light-mode')) {
-                localStorage.setItem('theme', 'light');
-            } else {
-                localStorage.setItem('theme', 'dark');
-            }
-        }
-
-        if (themeToggle) themeToggle.addEventListener('click', toggleTheme);
-        if (mobileThemeToggle) mobileThemeToggle.addEventListener('click', toggleTheme);
-
-        // Mobile Menu
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const mobileMenu = document.querySelector('.mobile-menu');
-
-        if (mobileMenuBtn && mobileMenu) {
-            mobileMenuBtn.addEventListener('click', () => {
-                mobileMenu.classList.toggle('active');
-                mobileMenuBtn.classList.toggle('active');
-
-                // Animate hamburger
-                const spans = mobileMenuBtn.querySelectorAll('span');
-                if (mobileMenu.classList.contains('active')) {
-                    spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
-                    spans[1].style.opacity = '0';
-                    spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
+            cards.forEach(card => {
+                if (category === 'all' || card.dataset.category === category) {
+                    card.style.display = 'block';
+                    card.style.animation = 'cardEntrance 0.5s ease forwards';
+                    visibleCount++;
                 } else {
-                    spans[0].style.transform = 'none';
-                    spans[1].style.opacity = '1';
-                    spans[2].style.transform = 'none';
+                    card.style.display = 'none';
                 }
             });
+
+            // Update title and count
+            const categoryNames = {
+                'all': 'All Comparisons',
+                'edr': 'EDR/XDR Comparisons',
+                'siem': 'SIEM Comparisons',
+                'email': 'Email Security Comparisons',
+                'vuln': 'Vulnerability Scanner Comparisons',
+                'cloud': 'Cloud Security Comparisons'
+            };
+            document.getElementById('sectionTitle').textContent = categoryNames[category] || 'All Comparisons';
+            document.getElementById('resultsCount').textContent = `Showing ${visibleCount} comparison${visibleCount !== 1 ? 's' : ''}`;
         }
-    });
-</script>
+
+        // Theme toggle
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggle = document.getElementById('themeToggle');
+            const body = document.body;
+
+            if (localStorage.getItem('theme') === 'light') {
+                body.classList.add('light-mode');
+            }
+
+            if (themeToggle) {
+                themeToggle.addEventListener('click', () => {
+                    body.classList.toggle('light-mode');
+                    localStorage.setItem('theme', body.classList.contains('light-mode') ? 'light' : 'dark');
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
