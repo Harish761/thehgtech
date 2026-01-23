@@ -4,28 +4,18 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Jan 22 2026",
-            "headline": "AiStrike Secures $7M for AI-Driven Cyber Defense Platform",
-            "title": "AiStrike Raises $7 Million in Seed Funding for AI-Native Security Platform",
-            "content": "AiStrike has successfully raised $7 million in seed funding to advance its AI-native cybersecurity platform. This platform integrates exposure analysis, threat intelligence, investigation, and response capabilities, aiming to streamline cybersecurity operations for enterprises. The funding round was led by prominent venture capital firms, highlighting growing investor interest in AI-driven security solutions. AiStrike&#x27;s platform is designed to enhance threat detection and response times, potentially reducing the impact of cyber incidents. Organizations looking to bolster their cybersecurity posture may find AiStrike&#x27;s unified approach particularly beneficial as threats become increasingly sophisticated.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/aistrike-raises-7-million-in-seed-funding/",
+            "date": "Jan 23 2026",
+            "headline": "Ransomware Slip-up—US Firms Recover Data from INC",
+            "title": "Data Recovery for 12 US Firms After INC Ransomware Mistake",
+            "content": "Twelve US companies have successfully recovered their data following a misstep by the INC ransomware group. Cybersecurity firm Cyber Centaurs identified the cloud storage infrastructure where INC stored stolen data, leveraging a lapse in the gang&#x27;s operational security. This discovery allowed affected firms to restore access to their encrypted files without paying a ransom. The incident underscores the importance of monitoring threat actor infrastructure for potential vulnerabilities. Organizations are advised to maintain robust backup strategies and engage with cybersecurity firms for proactive threat hunting. This recovery marks a rare win for victims in the ongoing battle against ransomware.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4121134/ransomware-gangs-slip-up-led-to-data-recovery-for-12-us-firms.html",
             "relatedResources": [
                 {
-                    "label": "Threat Hunting Guide",
-                    "url": "/guides/threat-hunting-techniques.html",
-                    "icon": "fa-crosshairs"
-                }
-            ]
-        },
-        {
-            "date": "Jan 22 2026",
-            "headline": "Ransomware Cripples Conceptnet—Websites Down",
-            "title": "Ransomware Attack Disrupts Conceptnet&#x27;s Services, Affecting Customer Websites",
-            "content": "Conceptnet, an IT service provider based in Regensburg, Germany, has fallen victim to a ransomware attack, leading to significant service disruptions. The attack has rendered customer websites inoperable, prompting the company to issue alerts about ongoing technical issues. The ransomware incident underscores the persistent threat that such attacks pose to service providers and their clients. While Conceptnet has not disclosed the specific ransomware strain involved, the attack highlights the critical need for robust cybersecurity measures and incident response plans. Affected customers are advised to monitor updates from Conceptnet and consider additional security measures.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4120644/hacker-legen-websites-von-conceptnet-kunden-lahm.html",
-            "relatedResources": [
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
                 {
                     "label": "Ransomware Response Playbook",
                     "url": "/guides/ransomware-response-playbook.html",
@@ -34,13 +24,18 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Jan 22 2026",
-            "headline": "$439K Awarded for 29 Zero-Days at Pwn2Own Auto",
-            "title": "Hackers Exploit 29 Zero-Days at Pwn2Own Automotive 2026, Earning $439,250",
-            "content": "The Pwn2Own Automotive 2026 competition saw hackers exploit 29 zero-day vulnerabilities, earning a total of $439,250 in rewards. These exploits targeted various automotive software and systems, demonstrating significant security gaps in the industry. Participants showcased vulnerabilities across multiple platforms, emphasizing the urgent need for manufacturers to prioritize security in vehicle software. The event, organized by Trend Micro&#x27;s Zero Day Initiative, aims to uncover and address critical flaws before malicious actors can exploit them. Automotive companies are encouraged to collaborate with security researchers to enhance their products&#x27; defenses.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-29-zero-day-vulnerabilities-on-second-day-of-pwn2own-automotive/",
+            "date": "Jan 23 2026",
+            "headline": "Pwn2Own Automotive Awards $955K—Master of Pwn Crowned",
+            "title": "Pwn2Own Automotive 2026 Wraps with $955K in Prizes Awarded",
+            "content": "The Pwn2Own Automotive 2026 competition concluded with security researchers identifying 66 zero-day vulnerabilities across various automotive systems, earning a total of $955,750 in prizes. This year&#x27;s event saw fierce competition among top researchers, with a clear frontrunner emerging on the Master of Pwn leaderboard. The vulnerabilities discovered highlight ongoing security challenges in the automotive industry, emphasizing the need for manufacturers to prioritize cybersecurity in vehicle design. Participants demonstrated exploits on modern automotive targets, showcasing the critical need for continuous security assessments. Automakers are encouraged to collaborate with the security community to address these vulnerabilities promptly.",
+            "source": "Zero Day Initiative - Blog",
+            "sourceUrl": "https://www.thezdi.com/blog/2026/1/23/pwn2own-automotive-2026-day-three-results-and-the-master-of-pwn",
             "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
                 {
                     "label": "Zero-Day Detection Guide",
                     "url": "/guides/zero-day-detection.html",
@@ -49,12 +44,21 @@ const websiteContent = {
             ]
         },
         {
+            "date": "Jan 23 2026",
+            "headline": "ISC Stormcast Highlights—Cyber Threats on the Rise",
+            "title": "ISC Stormcast for January 23rd, 2026: Key Cybersecurity Insights",
+            "content": "The latest ISC Stormcast podcast provides an overview of current cybersecurity threats and trends. Key highlights include discussions on emerging vulnerabilities and attack vectors that security professionals should be aware of. The podcast serves as a valuable resource for staying informed about the latest developments in the cybersecurity landscape. Listeners are encouraged to regularly tune in to gain insights into threat intelligence and defensive strategies. The ISC Stormcast remains a crucial tool for professionals seeking to enhance their understanding of the evolving threat environment.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32652",
+            "relatedResources": []
+        },
+        {
             "date": "Jan 22 2026",
-            "headline": "Cisco UC Flaw Exploited—Patch Now Required",
-            "title": "Critical Cisco UC Vulnerability Requires Immediate Patching Amid Active Exploitation",
-            "content": "Cisco has issued patches for a critical remote code execution (RCE) vulnerability affecting its Unified Communications (UC) products. The vulnerability, actively exploited in the wild, has been added to the US Cybersecurity and Infrastructure Security Agency&#x27;s (CISA) Known Exploited Vulnerabilities catalog. Cisco urges users to apply the version-specific patches immediately to mitigate potential damage. This flaw underscores the ongoing challenges in securing communication systems against sophisticated threats. Organizations using Cisco UC products should prioritize patching to prevent unauthorized access and potential data breaches.",
+            "headline": "Telnet Flaw—Devices at Risk of Total Takeover",
+            "title": "Critical Telnet Authentication Bypass Puts Devices at Risk",
+            "content": "A critical vulnerability in the Telnet protocol allows attackers to bypass authentication, leaving devices susceptible to complete takeover. Despite being outdated, Telnet remains in use on many IoT and embedded devices, which are now at immediate risk. This flaw underscores the urgency for organizations to transition to more secure protocols like SSH. Affected devices may face severe security breaches if left unpatched, making it imperative for IT teams to audit their networks for Telnet usage. This vulnerability highlights the persistent risks associated with legacy systems in modern networks.",
             "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4120613/actively-exploited-cisco-uc-bug-requires-immediate-version%e2%80%91specific-patching.html",
+            "sourceUrl": "https://www.csoonline.com/article/4120997/trivial-telnet-authentication-bypass-exposes-devices-to-complete-takeover.html",
             "relatedResources": [
                 {
                     "label": "CVE Prioritization Guide",
@@ -65,91 +69,51 @@ const websiteContent = {
         },
         {
             "date": "Jan 22 2026",
-            "headline": "FortiGate Firewalls Under Attack—SSO Bypass Exploited",
-            "title": "Hackers Target FortiGate Firewalls by Bypassing FortiCloud SSO Authentication",
-            "content": "A new wave of cyberattacks is targeting FortiGate firewalls, exploiting a vulnerability in the FortiCloud Single Sign-On (SSO) authentication. Attackers are bypassing security measures to create unauthorized accounts and alter device configurations, posing a significant threat to network security. Fortinet has not yet released specific details on the exploited vulnerability, but users are advised to review their security settings and apply any available updates. This incident highlights the critical importance of securing authentication mechanisms to prevent unauthorized access. Organizations using FortiGate products should remain vigilant and monitor for unusual activity.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/new-wave-of-attacks-targeting-fortigate-firewalls/",
+            "headline": "Chinese Buses Pose Cyber Risks—Australia Reviews Fleet",
+            "title": "Chinese Electric Buses Under Review for Cybersecurity Concerns",
+            "content": "The Australian government is reviewing Chinese electric buses due to potential cybersecurity vulnerabilities, including a virtual kill switch that could be exploited by the Chinese state. These buses, deployed across Australia and Europe, are at risk of cybercriminal attacks. The review aims to assess the security posture of these vehicles and determine necessary actions to mitigate risks. This situation highlights the broader implications of supply chain security and the need for stringent cybersecurity standards in public infrastructure. Authorities are urged to enforce comprehensive security assessments for all imported technologies.",
+            "source": "DarkReading",
+            "sourceUrl": "https://www.darkreading.com/cyber-risk/chinese-electric-buses-aussie-govt",
             "relatedResources": [
+                {
+                    "label": "Third-Party Risk Management",
+                    "url": "/guides/third-party-risk-management.html",
+                    "icon": "fa-handshake"
+                }
+            ]
+        },
+        {
+            "date": "Jan 22 2026",
+            "headline": "Vishing Attacks Target Okta SSO—Credentials at Risk",
+            "title": "Okta SSO Accounts Compromised in Vishing-Based Attacks",
+            "content": "Okta warns of sophisticated vishing attacks using custom phishing kits to steal single sign-on (SSO) credentials. These attacks exploit voice-based social engineering techniques to deceive users into revealing sensitive information. The ongoing campaign poses a significant threat to organizations relying on Okta&#x27;s SSO for secure access management. Security teams should enhance user awareness training and implement multi-factor authentication (MFA) to mitigate these risks. This incident underscores the evolving tactics of threat actors and the importance of robust security measures in protecting identity and access management systems.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/okta-sso-accounts-targeted-in-vishing-based-data-theft-attacks/",
+            "relatedResources": [
+                {
+                    "label": "Phishing & Security Awareness",
+                    "url": "/guides/phishing-simulation-security-awareness.html",
+                    "icon": "fa-fish"
+                }
+            ]
+        },
+        {
+            "date": "Jan 22 2026",
+            "headline": "Fortinet Firewalls Compromised—Configuration Files Stolen",
+            "title": "Malicious Configuration Changes Hit Fortinet Firewalls",
+            "content": "Threat actors are exploiting FortiGate firewalls, even those fully patched, to steal configuration files through automated infections. This breach highlights vulnerabilities in Fortinet&#x27;s security architecture, potentially exposing sensitive network configurations. Organizations using FortiGate devices should review their security policies and monitor for unusual activity. The incident emphasizes the need for continuous security updates and vigilant monitoring of network security appliances. Fortinet users are advised to apply recommended security patches and consider additional layers of defense to safeguard their network infrastructure.",
+            "source": "DarkReading",
+            "sourceUrl": "https://www.darkreading.com/cloud-security/fortinet-firewalls-malicious-configuration-changes",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
                 {
                     "label": "Fortinet Analysis",
                     "url": "/articles/fortinet-fortigate-critical-exploit-2025.html",
                     "icon": "fa-file-alt"
-                }
-            ]
-        },
-        {
-            "date": "Jan 22 2026",
-            "headline": "Under Armour Breach Exposes 72M Customers on Dark Web",
-            "title": "Under Armour Ransomware Breach Leads to Data of 72 Million Customers on Dark Web",
-            "content": "A ransomware attack on Under Armour has resulted in the exposure of data belonging to 72 million customers, now circulating on the dark web. The breach highlights the severe impact of ransomware on large organizations, compromising sensitive customer information. Under Armour has not disclosed the specific ransomware variant responsible, but the incident reinforces the need for robust data protection measures. Customers are advised to monitor their accounts for suspicious activity and consider changing passwords as a precaution. This breach serves as a stark reminder of the ongoing threat posed by ransomware to personal data security.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/01/under-armour-ransomware-breach-data-of-72-million-customers-appears-on-the-dark-web",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Response Playbook",
-                    "url": "/guides/ransomware-response-playbook.html",
-                    "icon": "fa-biohazard"
-                }
-            ]
-        },
-        {
-            "date": "Jan 22 2026",
-            "headline": "Claroty Secures $150M—Valuation Hits $3B",
-            "title": "Claroty Raises $150 Million in Series F Funding, Valuation Reaches $3 Billion",
-            "content": "Claroty has successfully raised $150 million in its Series F funding round, bringing its total funding to approximately $900 million and boosting its valuation to $3 billion. The company specializes in industrial cybersecurity, focusing on protecting critical infrastructure and operational technology environments. This substantial investment reflects growing confidence in Claroty&#x27;s ability to address escalating cybersecurity threats in industrial sectors. As cyber threats continue to evolve, organizations in energy, manufacturing, and other critical industries are increasingly turning to specialized cybersecurity solutions like Claroty&#x27;s to safeguard their operations.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/claroty-raises-150-million-in-series-f-funding/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Jan 22 2026",
-            "headline": "ISC Stormcast Highlights Cyber Threat Trends—January 22, 2026",
-            "title": "ISC Stormcast For Thursday, January 22nd, 2026: Key Cybersecurity Insights",
-            "content": "The SANS Internet Storm Center has released its latest Stormcast, providing insights into current cybersecurity threats and trends. This update, dated January 22, 2026, highlights the ongoing vigilance required for maintaining security in an ever-evolving threat landscape. The InfoCON level remains at green, indicating a baseline state of security readiness. As cyber threats continue to diversify, professionals are urged to stay informed about new vulnerabilities and attack vectors. Regular updates and community engagement are critical for effective threat mitigation.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32646",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Jan 22 2026",
-            "headline": "NIST Staff Cuts Threaten Encryption Programs—700 Jobs Lost",
-            "title": "NIST Staff Reductions Impact Encryption and Other Key Priorities",
-            "content": "The National Institute of Standards and Technology (NIST) is grappling with significant staff reductions, having lost over 700 positions since 2025. This includes 89 jobs from a laboratory focused on testing and validating government encryption standards. These cuts could hinder the agency&#x27;s ability to maintain and advance critical encryption technologies, posing a risk to national security. The reduction in workforce comes amidst increasing reliance on robust encryption for safeguarding sensitive data across federal agencies. Stakeholders are urged to advocate for resource allocation to ensure NIST&#x27;s continued leadership in cybersecurity.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/encryption-nist-officials-detail-staff-cuts-impact/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Jan 22 2026",
-            "headline": "Hacker Targets US Supreme Court—Screenshots Posted Online",
-            "title": "Smashing Security Podcast Reveals Government Hack and Future Threats",
-            "content": "Episode 451 of the &quot;Smashing Security&quot; podcast dives into the exploits of a cybercriminal who breached the US Supreme Court and other government entities. The hacker, operating under the alias &quot;I hacked the government,&quot; shared screenshots and sensitive data, including personal identifiers. The podcast also explores vulnerabilities in seemingly mundane devices like headphones, highlighting the expanding attack surface. Security professionals are reminded of the importance of robust defenses and the need to secure all network-connected devices. Continuous monitoring and threat intelligence are key to preventing similar breaches.",
-            "source": "GRAHAM CLULEY",
-            "sourceUrl": "https://grahamcluley.com/smashing-security-podcast-451/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
                 }
             ]
         },
@@ -172,12 +136,12 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Jan 22 2026",
-            "headline": "Quadric&#x27;s On-Device AI Chips—Speed and Flexibility for Local Models",
-            "title": "Quadric Advances On-Device AI Inference with Programmable Chips",
-            "content": "Quadric is spearheading a shift from cloud-based AI to on-device inference, offering programmable AI chips that execute rapidly evolving models locally. This approach enhances speed and reduces latency, crucial for applications requiring real-time data processing. By enabling companies and governments to run AI models on-device, Quadric addresses privacy concerns and reduces dependency on cloud infrastructure. This trend aligns with the growing demand for edge computing solutions that offer greater control and efficiency. Organizations leveraging Quadric&#x27;s technology can expect improved performance and security in AI operations.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/22/quadric-rides-the-shift-from-cloud-ai-to-on-device-inference-and-its-paying-off/",
+            "date": "Jan 23 2026",
+            "headline": "Voice AI Revolutionizes—True Conversations Now Possible",
+            "title": "Voice AI Breakthrough Transforms Conversational Capabilities for Enterprises",
+            "content": "A recent breakthrough in voice AI technology has transformed the traditional request-response model into a truly conversational experience. Previously, voice AI systems operated by transcribing speech, processing it through a language model, and responding with a robotic voice, which limited real-time interaction. This shift enables more natural, fluid conversations, enhancing user engagement and efficiency in enterprise applications. Businesses can now leverage these advanced capabilities to improve customer service and streamline operations. The development signifies a pivotal moment in voice AI, potentially setting a new standard for interactive systems. Enterprises should explore integrating these technologies to stay competitive.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/everything-in-voice-ai-just-changed-how-enterprise-ai-builders-can-benefit",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
@@ -187,75 +151,32 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Jan 22 2026",
-            "headline": "Google DeepMind Acquires Hume AI Talent in Strategic Licensing Move",
-            "title": "Google DeepMind Strengthens Voice AI Capabilities with Hume AI Talent Acquisition",
-            "content": "In a strategic move, Google DeepMind has acquired top talent from Hume AI, including CEO Alan Cowen and several engineers, through a licensing deal. This acquisition aims to enhance Google&#x27;s capabilities in voice AI, a critical area as voice interfaces become increasingly integral to user interaction. The infusion of expertise from Hume AI is expected to accelerate development in natural language processing and emotional AI. For Google, this move underscores its commitment to leading advancements in AI-driven voice technologies. Industry professionals should watch for potential innovations in voice AI applications as a result.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/google-hires-hume-ai-ceo-licensing-deal-gemini/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 22 2026",
-            "headline": "AI Writing Detection Guide Now &#x27;Humanizes&#x27; Chatbots",
-            "title": "Wikipedia&#x27;s AI Writing Detection Guide Fuels Chatbot Humanization",
-            "content": "A Wikipedia group has developed a guide to detect AI-generated writing, which has ironically become a resource for AI models to appear more human-like. This guide, initially intended to identify AI-authored content, is now being used in a plug-in to refine chatbot interactions, making them less detectable as AI. The development highlights the ongoing cat-and-mouse game between AI detection and evasion techniques. As AI-generated content becomes more prevalent, professionals should consider the implications for content authenticity and the evolving standards for AI-human interaction.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/wikipedia-group-made-guide-to-detect-ai-writing-now-a-plug-in-uses-it-to-humanize-chatbots/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 22 2026",
-            "headline": "Ex-Google Trio Launches AI Learning App for Kids",
-            "title": "Former Google Engineers Develop AI-Powered Interactive Learning App for Children",
-            "content": "Three former Google employees are creating an interactive AI-powered learning application designed to engage children beyond traditional text or voice interfaces. This initiative seeks to leverage generative AI to create more captivating educational experiences for young users, addressing the limitations of current digital learning tools. The app aims to integrate visual and interactive elements to maintain children&#x27;s interest and enhance learning outcomes. As generative AI continues to evolve, this project could signal a shift in educational technology, offering more dynamic and personalized learning experiences for children.",
+            "date": "Jan 23 2026",
+            "headline": "Blockit Secures $5M—AI Manages Your Schedule",
+            "title": "AI Startup Blockit Raises $5M to Automate Calendar Negotiations",
+            "content": "Blockit, a startup developing an AI agent designed to autonomously manage and negotiate calendar schedules, has secured $5 million in seed funding led by Sequoia. The AI agent communicates directly with other calendar systems, aiming to optimize meeting arrangements without human intervention. This innovation could significantly reduce time spent on scheduling, freeing professionals to focus on more critical tasks. The funding will be used to enhance the technology and expand its market presence, signaling growing interest in AI-driven productivity tools. Businesses should monitor these developments as AI continues to streamline administrative processes.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/22/former-google-trio-is-building-an-interactive-ai-powered-learning-app-for-kids/",
+            "sourceUrl": "https://techcrunch.com/2026/01/22/former-sequoia-partners-new-startup-uses-ai-to-negotiate-your-calendar-for-you/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
                     "url": "/ransomware-tracker.html",
                     "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Jan 22 2026",
-            "headline": "Chinese Century: Livestream Explores China&#x27;s Global Influence",
-            "title": "Livestream Event Analyzes China&#x27;s Ascendancy and Future Global Role",
-            "content": "A livestream event titled &quot;Welcome to the Chinese Century&quot; examines China&#x27;s growing influence and dominance in global affairs. The discussion focuses on how China is reshaping international norms and its potential future impact across various sectors, including technology and economics. As China continues to assert its leadership, understanding its strategies and objectives becomes crucial for global stakeholders. Attendees can expect insights into China&#x27;s geopolitical maneuvers and technological advancements, offering a comprehensive view of its role on the world stage.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/livestream-welcome-to-the-chinese-century/",
-            "relatedResources": [
+                },
                 {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
                 }
             ]
         },
         {
-            "date": "Jan 22 2026",
-            "headline": "Gates Foundation, OpenAI Test AI in African Healthcare Systems",
-            "title": "AI Pilots by Gates Foundation and OpenAI Tackle African Healthcare Challenges",
-            "content": "The Gates Foundation and OpenAI are testing AI solutions to address the growing strain on primary healthcare systems in Africa. Amid increasing demand and chronic staff shortages, AI is being explored not as a breakthrough but as a means to sustain basic healthcare services. This initiative focuses on leveraging AI to optimize resource allocation and improve patient outcomes in regions with limited medical infrastructure. The collaboration highlights the potential of AI to support healthcare delivery in underserved areas, offering a lifeline for systems facing significant constraints.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/gates-foundation-and-openai-test-ai-in-african-healthcare/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 22 2026",
-            "headline": "Yann LeCun&#x27;s New Venture Challenges Dominance of Large Language Models",
-            "title": "Yann LeCun Advocates for Alternative AI Approaches Beyond Large Language Models",
-            "content": "Yann LeCun, a Turing Award winner and prominent AI researcher, is launching a venture that challenges the prevailing focus on large language models. LeCun argues that the industry&#x27;s emphasis on these models is misguided and insufficient for solving critical AI challenges. Instead, he promotes exploring alternative methodologies that could offer more robust and versatile AI solutions. This contrarian perspective invites professionals to reconsider the current AI research trajectory and explore diverse approaches that may yield more effective results in addressing complex problems.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2026/01/22/1131661/yann-lecuns-new-venture-ami-labs/",
+            "date": "Jan 23 2026",
+            "headline": "OpenAI Targets Enterprises—Barret Zoph Leads Charge",
+            "title": "OpenAI Appoints Barret Zoph to Spearhead Enterprise Expansion",
+            "content": "OpenAI has appointed Barret Zoph to lead its strategic push into the enterprise sector, marking a significant shift in its business focus. Zoph&#x27;s leadership follows his recent return to the company, underscoring OpenAI&#x27;s commitment to capturing enterprise market share. The move aims to leverage OpenAI&#x27;s advanced AI models for enterprise applications, potentially transforming operational efficiencies and decision-making processes. This initiative reflects a broader trend of AI companies targeting enterprise solutions, aiming to capitalize on the growing demand for AI-driven business tools. Enterprises should anticipate new offerings tailored to their needs.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/22/openai-is-coming-for-those-sweet-enterprise-dollars-in-2026/",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
@@ -266,12 +187,73 @@ const websiteContent = {
         },
         {
             "date": "Jan 22 2026",
-            "headline": "Apple’s AI Wearable Could Debut in 2027",
-            "title": "Apple Reportedly Developing AI Wearable to Rival OpenAI Innovations",
-            "content": "Apple is reportedly developing an AI-powered wearable device, potentially launching in 2027, to compete with OpenAI advancements. This development follows a trend of tech giants investing heavily in AI-integrated consumer products. While specific technical details remain under wraps, the wearable is expected to enhance user experience through advanced AI capabilities. If successful, Apple&#x27;s entry into the AI wearable market could disrupt current offerings and set new industry standards. This move underscores Apple&#x27;s commitment to expanding its ecosystem with AI-driven innovations. Tech leaders and developers should monitor this development closely for potential collaborations or competitive insights.",
+            "headline": "LiveKit Hits $1B Valuation—Powers ChatGPT Voice Mode",
+            "title": "LiveKit Achieves $1B Valuation with Key Role in ChatGPT Voice Mode",
+            "content": "LiveKit, a startup integral to OpenAI’s ChatGPT voice mode, has reached a $1 billion valuation following a $100 million funding round led by Index Ventures. The company’s technology enables seamless voice interactions, enhancing the functionality of ChatGPT and similar platforms. This milestone highlights the increasing value and demand for advanced voice AI solutions in the market. LiveKit&#x27;s growth is indicative of the broader trend towards voice-enabled AI applications, which are becoming essential in various sectors. Companies should consider integrating voice AI to enhance user experience and engagement.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/21/not-to-be-outdone-by-openai-apple-is-reportedly-developing-an-ai-wearable/",
-            "relatedResources": []
+            "sourceUrl": "https://techcrunch.com/2026/01/22/voice-ai-engine-and-openai-partner-livekit-hits-1b-valuation/",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Jan 22 2026",
+            "headline": "Inferact Raises $150M—Targets vLLM Commercialization",
+            "title": "Inferact Secures $150M to Advance vLLM Commercialization",
+            "content": "Inference startup Inferact has raised $150 million in a seed round, valuing the company at $800 million, to commercialize its vLLM technology. vLLM, or very Large Language Models, promise enhanced processing capabilities for complex data tasks, potentially revolutionizing sectors reliant on data analysis. The funding will accelerate the development and deployment of vLLM solutions, positioning Inferact as a key player in the AI landscape. This investment reflects growing confidence in AI&#x27;s ability to transform business operations and decision-making. Organizations should explore vLLM applications to stay ahead in data-driven industries.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/22/inference-startup-inferact-lands-150m-to-commercialize-vllm/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "SIEM & Log Analysis Guide",
+                    "url": "/guides/siem-log-analysis.html",
+                    "icon": "fa-chart-bar"
+                }
+            ]
+        },
+        {
+            "date": "Jan 22 2026",
+            "headline": "AI Agents Stumble—New Benchmark Shows Workplace Challenges",
+            "title": "Research Finds AI Agents Struggle with White-Collar Work Tasks",
+            "content": "Recent research has revealed significant shortcomings in AI models when applied to white-collar tasks in fields such as consulting, investment banking, and law. The study tested leading AI agents on practical workplace tasks, with most failing to meet performance expectations. These findings raise questions about the readiness of AI to replace human roles in complex professional environments. As AI continues to evolve, businesses should remain cautious in deploying these technologies for critical tasks, ensuring human oversight and intervention. This research highlights the need for continued development and testing of AI models in real-world scenarios.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/22/are-ai-agents-ready-for-the-workplace-a-new-benchmark-raises-doubts/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 22 2026",
+            "headline": "Sen. Markey Challenges OpenAI on ChatGPT Ads",
+            "title": "Senator Markey Questions OpenAI on ChatGPT&#x27;s Advertising Practices",
+            "content": "Senator Ed Markey has raised concerns with OpenAI regarding the introduction of advertisements into its ChatGPT platform, questioning the transparency and ethical implications. In letters to the CEOs of OpenAI, Anthropic, Google, Meta, Microsoft, Snap, and xAI, Markey expressed worries that embedding ads in AI chatbots could mislead users. This scrutiny highlights the broader debate over monetization strategies in AI applications and the potential impact on user trust. Companies utilizing AI chatbots should consider the ethical dimensions of advertising and ensure clear communication with users. The outcome of this inquiry could influence future AI advertising practices.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/news/865854/senator-ed-markey-ai-companies-chatbots-advertising",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
         }
     ],
     "articles": {},
@@ -335,6 +317,50 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2025-68645",
+            "dateAdded": "Jan 22, 2026",
+            "vendor": "Synacor Zimbra Collaboration Suite (ZCS)",
+            "description": "Synacor Zimbra Collaboration Suite (ZCS) contains a PHP remote file inclusion vulnerability that could allow for remote attackers to craft requests to the /h/rest endpoint to influence internal reques",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-68645",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2025-34026",
+            "dateAdded": "Jan 22, 2026",
+            "vendor": "Versa Concerto",
+            "description": "Versa Concerto SD-WAN orchestration platform contains an improper authentication vulnerability in the Traefik reverse proxy configuration, allowing at attacker to access administrative endpoints. The",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-34026",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2025-31125",
+            "dateAdded": "Jan 22, 2026",
+            "vendor": "Vite Vitejs",
+            "description": "Vite Vitejs contains an improper access control vulnerability that exposes content of non-allowed files using ?inline&amp;import or ?raw?import. Only apps explicitly exposing the Vite dev server to the ne",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-31125",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2025-54313",
+            "dateAdded": "Jan 22, 2026",
+            "vendor": "Prettier eslint-config-prettier",
+            "description": "Prettier eslint-config-prettier contains an embedded malicious code vulnerability. Installing an affected package executes an install.js file that launches the node-gyp.dll malware on Windows.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-54313",
+            "isZeroDay": false
+        },
         {
             "cveId": "CVE-2026-20045",
             "dateAdded": "Jan 21, 2026",
