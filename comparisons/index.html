@@ -816,6 +816,361 @@
             color: var(--text-muted);
         }
 
+        .methodology-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .learn-more-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: linear-gradient(135deg, var(--accent-secondary), var(--accent-primary));
+            border: none;
+            border-radius: 100px;
+            color: #fff;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            font-family: inherit;
+        }
+
+        .learn-more-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(168, 85, 247, 0.4);
+        }
+
+        /* Modal Styles */
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(10px);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 10000;
+            padding: 2rem;
+            overflow-y: auto;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        .modal-container {
+            background: linear-gradient(145deg, rgba(15, 15, 24, 0.98), rgba(8, 8, 16, 0.99));
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            max-width: 800px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            animation: modalSlideIn 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        @keyframes modalSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px) scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            width: 40px;
+            height: 40px;
+            border: 1px solid var(--glass-border);
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-secondary);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            z-index: 10;
+        }
+
+        .modal-close:hover {
+            background: var(--accent-red);
+            border-color: var(--accent-red);
+            color: #fff;
+        }
+
+        .modal-header {
+            padding: 3rem 3rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .modal-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--accent-secondary), var(--accent-primary));
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 1.75rem;
+            color: #fff;
+        }
+
+        .modal-header h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .modal-header p {
+            color: var(--text-secondary);
+        }
+
+        .modal-body {
+            padding: 2rem 3rem;
+        }
+
+        /* Timeline */
+        .process-timeline {
+            position: relative;
+        }
+
+        .timeline-item {
+            display: flex;
+            gap: 1.5rem;
+            padding-bottom: 2rem;
+            position: relative;
+        }
+
+        .timeline-item:not(:last-child)::before {
+            content: '';
+            position: absolute;
+            left: 22px;
+            top: 50px;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--accent-secondary), transparent);
+        }
+
+        .timeline-number {
+            width: 45px;
+            height: 45px;
+            min-width: 45px;
+            background: linear-gradient(135deg, var(--accent-secondary), var(--accent-primary));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            font-weight: 700;
+            color: #fff;
+            z-index: 2;
+        }
+
+        .timeline-content {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .timeline-content:hover {
+            border-color: var(--accent-secondary);
+            background: rgba(168, 85, 247, 0.05);
+        }
+
+        .timeline-content h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .timeline-content h3 i {
+            color: var(--accent-secondary);
+        }
+
+        .timeline-content p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .timeline-detail {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .timeline-detail span {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            padding: 0.35rem 0.75rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 100px;
+        }
+
+        .timeline-detail i {
+            color: var(--accent-secondary);
+        }
+
+        /* Transparency Section */
+        .transparency-section {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--glass-border);
+        }
+
+        .transparency-section h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .transparency-section h3 i {
+            color: var(--accent-green);
+        }
+
+        .transparency-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .transparency-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1rem;
+            background: rgba(16, 185, 129, 0.05);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            border-radius: 12px;
+        }
+
+        .transparency-item>i {
+            font-size: 1rem;
+            color: var(--accent-green);
+            padding: 0.5rem;
+            background: rgba(16, 185, 129, 0.1);
+            border-radius: 8px;
+        }
+
+        .transparency-item h4 {
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .transparency-item p {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        /* Time Investment */
+        .time-investment {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 2rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(0, 217, 255, 0.05));
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+        }
+
+        .time-stat {
+            text-align: center;
+        }
+
+        .time-value {
+            font-size: 2rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--accent-secondary), var(--accent-primary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .time-label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .modal-footer {
+            padding: 1.5rem 3rem;
+            border-top: 1px solid var(--glass-border);
+            text-align: center;
+        }
+
+        .modal-footer p {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        .modal-footer a {
+            color: var(--accent-secondary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .modal-footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .methodology-header {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .modal-container {
+                margin: 1rem;
+            }
+
+            .modal-header,
+            .modal-body,
+            .modal-footer {
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+            }
+
+            .transparency-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .time-investment {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+        }
+
         /* Footer */
         footer {
             background: var(--bg-secondary);
@@ -1191,11 +1546,19 @@
     <!-- Methodology Section -->
     <section class="methodology-section">
         <div class="methodology-card">
-            <h2 class="methodology-title"><i class="fas fa-microscope"></i> Our Methodology</h2>
-            <p style="color: var(--text-secondary); margin-bottom: 1rem;">
-                Our comparisons are research-based and data-driven. We don't claim hands-on testing of every tool,
-                but we do extensive research to provide you with accurate, actionable insights.
-            </p>
+            <div class="methodology-header">
+                <div>
+                    <h2 class="methodology-title"><i class="fas fa-microscope"></i> Our Methodology</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 0;">
+                        Our comparisons are research-based and data-driven. We don't claim hands-on testing of every
+                        tool,
+                        but we do extensive research to provide you with accurate, actionable insights.
+                    </p>
+                </div>
+                <button class="learn-more-btn" onclick="openMethodologyModal()">
+                    <i class="fas fa-info-circle"></i> Learn More
+                </button>
+            </div>
             <div class="methodology-grid">
                 <div class="methodology-item">
                     <i class="fas fa-star"></i>
@@ -1243,6 +1606,169 @@
         </div>
     </section>
 
+    <!-- Methodology Modal -->
+    <div id="methodologyModal" class="modal-overlay" onclick="closeMethodologyModal(event)">
+        <div class="modal-container" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeMethodologyModal()">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <div class="modal-header">
+                <div class="modal-icon">
+                    <i class="fas fa-flask"></i>
+                </div>
+                <h2>How We Create Comparisons</h2>
+                <p>A transparent look at our research process</p>
+            </div>
+
+            <div class="modal-body">
+                <!-- Research Process Timeline -->
+                <div class="process-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-number">1</div>
+                        <div class="timeline-content">
+                            <h3><i class="fas fa-search"></i> Initial Research</h3>
+                            <p>We identify the top tools in each category based on market share, analyst rankings, and
+                                industry recognition. We typically select 3-5 leading solutions for head-to-head
+                                comparison.</p>
+                            <div class="timeline-detail">
+                                <span><i class="fas fa-clock"></i> 2-3 hours</span>
+                                <span><i class="fas fa-check"></i> Market analysis</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-number">2</div>
+                        <div class="timeline-content">
+                            <h3><i class="fas fa-star"></i> Review Aggregation</h3>
+                            <p>We collect and analyze reviews from multiple platforms: G2 (typically 200-500 reviews per
+                                tool), Gartner Peer Insights, TrustRadius, and Capterra. We look for patterns in praise
+                                and complaints.</p>
+                            <div class="timeline-detail">
+                                <span><i class="fas fa-database"></i> 500+ reviews</span>
+                                <span><i class="fas fa-chart-line"></i> Sentiment analysis</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-number">3</div>
+                        <div class="timeline-content">
+                            <h3><i class="fas fa-chart-pie"></i> Analyst Reports</h3>
+                            <p>We reference industry analyst reports including Gartner Magic Quadrant, Forrester Wave,
+                                and IDC MarketScape. These provide vendor positioning, strengths/weaknesses, and market
+                                direction.</p>
+                            <div class="timeline-detail">
+                                <span><i class="fas fa-file-alt"></i> Official reports</span>
+                                <span><i class="fas fa-award"></i> Vendor rankings</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-number">4</div>
+                        <div class="timeline-content">
+                            <h3><i class="fas fa-users"></i> Community Research</h3>
+                            <p>We dig through Reddit (r/sysadmin, r/cybersecurity, r/netsec), security forums, Stack
+                                Overflow, and vendor communities to find real-world user experiences and honest
+                                opinions.</p>
+                            <div class="timeline-detail">
+                                <span><i class="fab fa-reddit"></i> Reddit threads</span>
+                                <span><i class="fas fa-comments"></i> Forum discussions</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-number">5</div>
+                        <div class="timeline-content">
+                            <h3><i class="fas fa-file-invoice-dollar"></i> Pricing Research</h3>
+                            <p>We compile pricing information from official vendor websites, user-reported costs on
+                                review platforms, and industry pricing guides. We note when pricing is opaque or
+                                requires quotes.</p>
+                            <div class="timeline-detail">
+                                <span><i class="fas fa-dollar-sign"></i> Per-user/endpoint costs</span>
+                                <span><i class="fas fa-calculator"></i> TCO analysis</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-number">6</div>
+                        <div class="timeline-content">
+                            <h3><i class="fas fa-edit"></i> Writing & Verification</h3>
+                            <p>We synthesize all research into actionable comparisons. Every claim is fact-checked
+                                against sources. We clearly distinguish between verified facts and community opinions.
+                            </p>
+                            <div class="timeline-detail">
+                                <span><i class="fas fa-check-double"></i> Fact-checked</span>
+                                <span><i class="fas fa-quote-right"></i> Cited sources</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Transparency Notes -->
+                <div class="transparency-section">
+                    <h3><i class="fas fa-shield-alt"></i> Our Transparency Pledge</h3>
+                    <div class="transparency-grid">
+                        <div class="transparency-item">
+                            <i class="fas fa-ban"></i>
+                            <div>
+                                <h4>No Vendor Payments</h4>
+                                <p>We don't accept payment from vendors for favorable reviews or rankings.</p>
+                            </div>
+                        </div>
+                        <div class="transparency-item">
+                            <i class="fas fa-link"></i>
+                            <div>
+                                <h4>Affiliate Links Disclosed</h4>
+                                <p>If we use affiliate links, they're clearly marked. They don't influence our analysis.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="transparency-item">
+                            <i class="fas fa-flask"></i>
+                            <div>
+                                <h4>POC Testing Noted</h4>
+                                <p>When we've personally tested a tool, we clearly mark it with a "POC Tested" badge.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="transparency-item">
+                            <i class="fas fa-sync"></i>
+                            <div>
+                                <h4>Regular Updates</h4>
+                                <p>Comparisons are reviewed quarterly and updated when significant changes occur.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Time Investment -->
+                <div class="time-investment">
+                    <div class="time-stat">
+                        <div class="time-value">15-25</div>
+                        <div class="time-label">Hours per comparison</div>
+                    </div>
+                    <div class="time-stat">
+                        <div class="time-value">500+</div>
+                        <div class="time-label">Reviews analyzed</div>
+                    </div>
+                    <div class="time-stat">
+                        <div class="time-value">10+</div>
+                        <div class="time-label">Sources referenced</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <p>Questions about our methodology? <a href="mailto:harish@thehgtech.com">Contact us</a></p>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <p>&copy; 2026 TheHGTech. Making security tool decisions easier.</p>
     </footer>
@@ -1280,6 +1806,27 @@
             document.getElementById('sectionTitle').textContent = categoryNames[category] || 'All Comparisons';
             document.getElementById('resultsCount').textContent = `Showing ${visibleCount} comparison${visibleCount !== 1 ? 's' : ''}`;
         }
+
+        // Modal functions
+        function openMethodologyModal() {
+            const modal = document.getElementById('methodologyModal');
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMethodologyModal(event) {
+            if (event && event.target !== event.currentTarget) return;
+            const modal = document.getElementById('methodologyModal');
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Close modal on ESC key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeMethodologyModal();
+            }
+        });
 
         // Theme toggle
         document.addEventListener('DOMContentLoaded', () => {
