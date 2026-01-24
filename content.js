@@ -4,21 +4,12 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Jan 23 2026",
-            "headline": "ShinyHunters Target SSO Accounts—Corporate Data at Risk",
-            "title": "ShinyHunters Claim Responsibility for SSO Account Data Theft Attacks",
-            "content": "The ShinyHunters extortion gang has claimed responsibility for a series of voice phishing attacks targeting single sign-on (SSO) accounts at major platforms including Okta, Microsoft, and Google. These attacks enable unauthorized access to corporate software-as-a-service (SaaS) platforms, allowing threat actors to steal sensitive company data for extortion purposes. Companies relying on these SSO systems are at risk of data breaches, potentially leading to significant financial and reputational damage. This tactic underscores the increasing sophistication and boldness of cybercriminals in targeting key authentication systems. Organizations should enhance their security protocols, particularly around SSO implementations, to mitigate these risks.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/shinyhunters-claim-to-be-behind-sso-account-data-theft-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 23 2026",
-            "headline": "Fortinet Zero-Day Exploited—Authentication Bypass Discovered",
-            "title": "Fortinet Confirms Exploitation of Zero-Day Vulnerability in Customer Devices",
-            "content": "Fortinet has confirmed that a recent attack campaign is exploiting an unpatched zero-day vulnerability to bypass authentication on customer devices. This new threat is distinct from a campaign last month that targeted vulnerabilities in FortiCloud&#x27;s single sign-on (SSO) feature. Affected systems are at risk of unauthorized access, potentially compromising sensitive data and network integrity. This development highlights the ongoing challenges in securing network devices against evolving threats. Fortinet is urging users to apply any available mitigations and monitor their systems closely for unusual activity until a formal patch is released.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4121682/fortinet-confirms-new-zero-day-attacks-against-customer-devices.html",
+            "date": "Jan 24 2026",
+            "headline": "Amnesia RAT Invades Russia—Phishing Campaign Unleashed",
+            "title": "Multi-Stage Phishing Campaign Hits Russia with Amnesia RAT and Ransomware",
+            "content": "A sophisticated multi-stage phishing campaign has been identified, targeting Russian users with Amnesia RAT and ransomware. The attack begins with deceptive business-themed documents designed to seem routine, leveraging social engineering to gain access. Fortinet FortiGuard reports that once the documents are opened, they deploy malicious payloads, including the remote access trojan (RAT) known as Amnesia. This campaign highlights the growing threat of phishing attacks that combine social engineering with advanced malware to compromise systems. Organizations in Russia are urged to enhance email filtering and educate employees on recognizing phishing attempts to mitigate potential breaches.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/01/multi-stage-phishing-campaign-targets.html",
             "relatedResources": [
                 {
                     "label": "Fortinet Analysis",
@@ -26,34 +17,57 @@ const websiteContent = {
                     "icon": "fa-file-alt"
                 },
                 {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
+                    "label": "Phishing & Security Awareness",
+                    "url": "/guides/phishing-simulation-security-awareness.html",
+                    "icon": "fa-fish"
                 }
             ]
         },
         {
-            "date": "Jan 23 2026",
-            "headline": "Pwn2Own Uncovers Vehicle Hacking Vulnerabilities",
-            "title": "Researchers Discover New Vehicle Hacking Methods at Pwn2Own",
-            "content": "Security researchers have identified numerous vulnerabilities in vehicle infotainment systems and electric vehicle (EV) chargers during the Pwn2Own contest at Automotive World 2026. These findings demonstrate potential risks in modern automotive technology, where exploitation could lead to unauthorized access and control of vehicle systems. The vulnerabilities highlight the need for automakers to prioritize cybersecurity in their product designs to protect against potential threats. As vehicles become increasingly connected, the industry faces growing pressure to address these security challenges effectively. Researchers recommend regular security assessments and updates to safeguard against such exploits.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/endpoint-security/researchers-find-new-ways-hack-vehicles",
+            "date": "Jan 24 2026",
+            "headline": "Nike Data Breach Threat—WorldLeaks Claims Responsibility",
+            "title": "Nike Investigates Possible Data Breach Amid WorldLeaks Threats",
+            "content": "Nike is investigating a potential security incident following claims by the WorldLeaks cybercrime group that they have stolen sensitive data from the company&#x27;s systems. The group has threatened to leak the information if their demands are not met. While details about the breach remain scarce, the incident underscores the vulnerability of large corporations to cyber threats and the ongoing risk of data theft. Security professionals are advised to monitor for any unauthorized access attempts and ensure robust data protection measures are in place. Nike&#x27;s response to this incident will be closely watched by the industry.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/nike-probing-potential-security-incident-as-hackers-threaten-to-leak-data/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 24 2026",
+            "headline": "Sandworm Targets Polish Power—DynoWiper Attack Foiled",
+            "title": "Sandworm&#x27;s Largest Cyber Attack on Polish Power Sector Thwarted",
+            "content": "The Russian hacking group Sandworm has been linked to an attempted cyber attack on Poland&#x27;s power sector, utilizing the new DynoWiper malware. This attack, described as the largest against Poland&#x27;s power system in late December 2025, was successfully mitigated, according to Energy Minister Milosz Motyka. The incident highlights the persistent threat of nation-state actors targeting critical infrastructure. The use of DynoWiper, a destructive malware, indicates a shift towards more aggressive tactics. Organizations in the energy sector must prioritize cybersecurity measures to protect against similar threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/01/new-dynowiper-malware-used-in-attempted.html",
             "relatedResources": [
                 {
-                    "label": "Third-Party Risk Management",
-                    "url": "/guides/third-party-risk-management.html",
-                    "icon": "fa-handshake"
+                    "label": "Threat Intelligence",
+                    "url": "/threat-intel.html",
+                    "icon": "fa-user-secret"
+                },
+                {
+                    "label": "MITRE ATT&CK Mapping",
+                    "url": "/guides/mitre-attack-mapping.html",
+                    "icon": "fa-map"
                 }
             ]
         },
         {
-            "date": "Jan 23 2026",
-            "headline": "Cisco UC Zero-Day—Mass Scanning Detected",
-            "title": "Critical Zero-Day Vulnerability in Cisco UC Affects Millions",
-            "content": "A zero-day vulnerability identified as CVE-2026-20045 in Cisco&#x27;s Unified Communications (UC) systems is under mass scanning by threat actors. This critical flaw could allow attackers to completely take over affected systems, posing severe risks to millions of users worldwide. Cisco has classified the vulnerability as critical due to its potential impact on enterprise communications infrastructure. Organizations using Cisco UC should be on high alert and apply any recommended mitigations immediately while awaiting a comprehensive patch. This incident underscores the importance of proactive vulnerability management in enterprise environments.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/endpoint-security/exploited-zero-day-flaw-cisco-uc-affect-millions",
+            "date": "Jan 24 2026",
+            "headline": "AI Agents in Enterprises—Reevaluating Access and Accountability",
+            "title": "Rethinking Access and Risk Management for AI Agents in Enterprises",
+            "content": "The rise of AI agents in enterprises is transforming productivity, but it also raises significant security concerns. These agents, capable of scheduling meetings, accessing data, and executing tasks in real time, demand a reevaluation of access controls and accountability measures. As AI agents become integral to business operations, security teams face challenges in tracking who approves and oversees these digital entities. Companies must implement robust governance frameworks to manage AI agent activities and mitigate associated risks. The balance between leveraging AI for efficiency and maintaining security is becoming increasingly crucial.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/01/who-approved-this-agent-rethinking.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 24 2026",
+            "headline": "VMware vCenter Flaw Exploited—CISA Adds to KEV Catalog",
+            "title": "CISA Warns of Active Exploitation of VMware vCenter CVE-2024-37079",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added CVE-2024-37079, a critical flaw in VMware vCenter Server, to its Known Exploited Vulnerabilities catalog. This vulnerability, patched in June 2024, is being actively exploited, posing a risk to systems running unpatched versions. Organizations utilizing VMware vCenter are urged to apply the available patches immediately to protect against potential breaches. The inclusion of this flaw in the KEV catalog underscores the importance of timely patch management in mitigating security risks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/01/cisa-adds-actively-exploited-vmware.html",
             "relatedResources": [
                 {
                     "label": "CVE Tracker",
@@ -69,40 +83,25 @@ const websiteContent = {
         },
         {
             "date": "Jan 23 2026",
-            "headline": "Malicious VSCode Extensions Steal Developer Data—1.5M Installs",
-            "title": "Malicious AI Extensions in VSCode Marketplace Exfiltrate Developer Data",
-            "content": "Two malicious extensions in Microsoft&#x27;s Visual Studio Code (VSCode) Marketplace have been discovered, collectively installed 1.5 million times. These extensions exfiltrate developer data to servers in China, posing a significant threat to developers who have installed them. The extensions leverage AI capabilities to disguise their malicious activities, highlighting the evolving tactics of cybercriminals. Developers are advised to review and remove any suspicious extensions from their VSCode installations and monitor for unusual activity. This incident emphasizes the need for vigilance in managing third-party software components.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/malicious-ai-extensions-on-vscode-marketplace-steal-developer-data/",
+            "headline": "NETSCOUT Leads in NDR—Recognized for Excellence",
+            "title": "NETSCOUT Celebrated for Leadership in Network Detection and Response",
+            "content": "NETSCOUT has been acknowledged for its leadership in network detection and response (NDR) by Quadrant Knowledge Solutions&#x27; 2025 SPARK Matrix. This recognition highlights NETSCOUT&#x27;s capabilities in providing unparalleled visibility and precision in network security. As cyber threats become more sophisticated, the ability to detect and respond to anomalies in real time is critical. NETSCOUT&#x27;s achievement reflects its commitment to enhancing network security for its clients. This accolade serves as a reminder of the importance of robust NDR solutions in today&#x27;s threat landscape.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4117431/netscout-recognized-for-leadership-in-network-detection-and-response.html",
             "relatedResources": []
         },
         {
             "date": "Jan 23 2026",
-            "headline": "Cybercrime Industrialization Challenges CISOs in 2026",
-            "title": "Cybercrime Industry&#x27;s Evolution Continues to Challenge CISOs",
-            "content": "The cybercrime landscape has become increasingly industrialized, with organized criminal groups operating similarly to legitimate businesses. According to Martin Zugec, Bitdefender&#x27;s director, these groups are focused on speed and monetization, transforming cybercrime into a return on investment (ROI)-oriented economy. This evolution poses significant challenges for Chief Information Security Officers (CISOs) who must adapt to the sophisticated tactics used by cybercriminals. Organizations are urged to enhance their cybersecurity strategies, focusing on proactive threat detection and response to combat these advanced threats effectively. The industrialization of cybercrime underscores the need for continuous innovation in cybersecurity defenses.",
+            "headline": "Encrypted Traffic Challenges—Smarter DDoS Security Needed",
+            "title": "Addressing DDoS Threats in Encrypted Traffic Environments",
+            "content": "The rise of encrypted traffic, including Transport Layer Security (TLS) 1.3, presents new challenges for defending against distributed denial-of-service (DDoS) attacks. While encryption protects user privacy, it complicates threat detection, as malicious activities can be hidden within encrypted data streams. Security teams must adopt advanced solutions capable of inspecting encrypted traffic without compromising performance. As DDoS attacks continue to evolve, organizations need smarter security measures to safeguard against threats embedded in encrypted communications. This trend highlights the ongoing need for innovation in cybersecurity defenses.",
             "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4119555/cybercrime-inc-the-new-industry-challenging-cisos-in-2026.html",
+            "sourceUrl": "https://www.csoonline.com/article/4117454/smarter-ddos-security-at-scale.html",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
                     "url": "/ransomware-tracker.html",
                     "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Jan 23 2026",
-            "headline": "CISA Warns of Exploited Enterprise Software Vulnerabilities",
-            "title": "CISA Confirms Active Exploitation of Enterprise Software Vulnerabilities",
-            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has issued a warning about the active exploitation of four vulnerabilities affecting enterprise software. These include flaws in Versa and Zimbra products, the Vite frontend tooling framework, and the Prettier code formatter. Exploitation of these vulnerabilities could lead to unauthorized access and data breaches, posing significant risks to organizations relying on these software solutions. CISA advises organizations to apply available patches and monitor their systems for signs of compromise. This alert highlights the critical need for timely vulnerability management in safeguarding enterprise environments.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-confirms-active-exploitation-of-four-enterprise-software-bugs/",
-            "relatedResources": [
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
                 }
             ]
         },
@@ -126,6 +125,115 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Jan 24 2026",
+            "headline": "Gemini Surpasses OpenAI—Launches Personal Intelligence Feature",
+            "title": "Gemini&#x27;s Personal Intelligence Enhances User Experience, Outpaces OpenAI",
+            "content": "Gemini has introduced Personal Intelligence, a feature that personalizes interactions by learning from user preferences, marking another milestone in its competition with OpenAI. This development follows Gemini’s success in generating high-quality imagery and securing a partnership with Apple. The Personal Intelligence feature is designed to tailor responses and suggestions, enhancing user engagement and satisfaction. This advancement could significantly impact productivity tools and personal assistant applications, making them more intuitive and responsive. As AI personalization becomes more prevalent, developers and tech leaders should evaluate integration possibilities and privacy implications.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/866931/gemini-personal-intelligence-ai",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 24 2026",
+            "headline": "Apple Unveils AI Wearable—Asus Exits Smartphone Market",
+            "title": "Apple Launches AI Wearable Amidst Industry Shifts",
+            "content": "Apple has announced a new AI-powered wearable, signaling its continued investment in artificial intelligence technologies. This development coincides with Asus&#x27;s decision to exit the smartphone market, reshaping the competitive landscape. Additionally, Sony has partnered with TCL to enhance its television offerings, highlighting strategic alliances in consumer electronics. The AI wearable is expected to integrate seamlessly with Apple&#x27;s ecosystem, offering advanced features for health monitoring and personal assistance. Industry professionals should monitor these shifts as they could influence market dynamics and consumer preferences.",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/gear-news-of-the-week-apples-ai-wearable-and-a-phone-that-can-boot-android-linux-and-windows/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 24 2026",
+            "headline": "Legal AI Leader Harvey Acquires Hexus—Expands to India",
+            "title": "Harvey Acquires Hexus to Bolster Legal Tech Capabilities",
+            "content": "Harvey, a leader in legal AI solutions, has acquired Hexus to strengthen its technological offerings and expand its global footprint. Hexus founder Sakshi Pratap, with experience at Walmart, Oracle, and Google, will join Harvey&#x27;s team in San Francisco, while the India-based engineers will follow once a Bangalore office is established. This acquisition comes as competition intensifies in the legal tech industry, with companies vying for innovative solutions to streamline legal processes. Legal professionals and tech developers should anticipate enhanced AI-driven tools that could revolutionize legal workflows.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/23/legal-ai-giant-harvey-acquires-hexus-as-competition-heats-up-in-legal-tech/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 23 2026",
+            "headline": "Google Photos Introduces Meme-Making Feature with Gemini AI",
+            "title": "Google Photos Adds Meme Feature Using Gemini&#x27;s Nano Banana",
+            "content": "Google Photos has launched a new feature allowing users to create memes from their personal photos using Gemini&#x27;s Nano Banana AI technology. This playful addition is designed to enhance user interaction with their photo libraries by offering creative and engaging ways to customize images. While primarily for entertainment, the feature showcases the potential of AI in consumer applications, providing a glimpse into more sophisticated image editing and personalization tools. Users and developers alike should explore how such AI capabilities can be leveraged for broader applications in digital media.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/23/google-photos-latest-feature-lets-you-meme-yourself/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Jan 23 2026",
+            "headline": "Meta Halts Teen AI Access—Plans New Version",
+            "title": "Meta Pauses Teen Access to AI Characters for Revision",
+            "content": "Meta has temporarily suspended teens&#x27; access to its AI characters across all platforms to develop an updated version tailored for younger users. This pause reflects Meta&#x27;s commitment to ensuring safe and appropriate interactions with AI, particularly for a younger audience. The company emphasizes that it is not discontinuing the feature but rather refining it to meet safety standards and user expectations. Developers and tech leaders should consider the implications of AI interactions for minors and the importance of responsible AI deployment.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/23/meta-pauses-teen-access-to-ai-characters-ahead-of-new-version/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Jan 23 2026",
+            "headline": "230M Users Seek Health Advice from ChatGPT—Risks Highlighted",
+            "title": "ChatGPT&#x27;s Role in Health Advice Raises Privacy Concerns",
+            "content": "OpenAI reports that over 230 million users consult ChatGPT weekly for health and wellness advice, despite potential privacy risks. Users turn to the chatbot for navigating insurance, filing paperwork, and acting as self-advocates. However, sharing sensitive health information with AI raises concerns about data security and privacy. Tech professionals and healthcare providers should be aware of the limitations and risks associated with AI in health-related contexts and advise users on safeguarding their personal information.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/report/866683/chatgpt-health-sharing-data",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Jan 23 2026",
+            "headline": "AI Agents&#x27; Future Questioned—Research Highlights Flaws",
+            "title": "Study Suggests AI Agents Face Mathematical Limitations",
+            "content": "A recent research paper challenges the viability of AI agents, suggesting they may be mathematically doomed to fail. The study argues that inherent limitations in current AI models could hinder their ability to perform complex tasks reliably. Despite this, the industry remains optimistic, with many companies continuing to invest in AI development and deployment. This research prompts tech leaders and developers to critically assess AI&#x27;s capabilities and explore innovative approaches to overcome potential obstacles.",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/ai-agents-math-doesnt-add-up/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 24 2026",
             "headline": "Yann LeCun Launches AMI Labs—A New AI Frontier",
             "title": "Yann LeCun&#x27;s AMI Labs Aims to Revolutionize AI with &#x27;World Models&#x27;",
             "content": "Yann LeCun, a pioneer in AI research, has left Meta to establish AMI Labs, a startup focused on developing &#x27;world models&#x27; for artificial intelligence. This venture has captured the attention of the tech community, as LeCun aims to push the boundaries of AI by creating systems that can understand and predict complex real-world dynamics. While specific technical details remain under wraps, AMI Labs is expected to leverage advanced machine learning techniques to achieve its ambitious goals. The launch of AMI Labs marks a significant shift in LeCun&#x27;s career and could have widespread implications for AI development and applications. Industry professionals are watching closely to see how this initiative will influence AI research and deployment.",
@@ -138,84 +246,6 @@ const websiteContent = {
                     "icon": "fa-brain"
                 }
             ]
-        },
-        {
-            "date": "Jan 23 2026",
-            "headline": "Claude Cowork Expands—Anthropic Boosts Collaborative AI Tools",
-            "title": "Claude Cowork Now Available for Team and Enterprise Users",
-            "content": "Anthropic has announced the expansion of Claude Cowork, making it accessible to users on Team and Enterprise plans. This update transforms Claude from a mere chat tool into a shared AI infrastructure designed to enhance team workflows. The new features aim to facilitate better collaboration among enterprise teams by integrating AI capabilities into their daily operations. As Claude Cowork becomes more widely available, businesses can expect improved efficiency and streamlined communication. The move underscores Anthropic&#x27;s commitment to making AI more collaborative and accessible for enterprise users. Organizations should evaluate how these updates can be integrated into their existing workflows for maximum benefit.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/claude-cowork-turns-claude-from-a-chat-tool-into-shared-ai-infrastructure",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Jan 23 2026",
-            "headline": "AI Takes Center Stage at Davos—Trump and Tech Titans Speak",
-            "title": "Davos Drama: Trump and AI Giants Share Spotlight at WEF",
-            "content": "The World Economic Forum in Davos witnessed a unique convergence of politics and technology as Donald Trump and major AI companies took the stage. Discussions centered around the role of AI in shaping future economic and political landscapes. This episode of &#x27;Uncanny Valley&#x27; delves into the implications of these discussions, highlighting how AI is becoming a pivotal topic in global forums traditionally focused on economic and social issues. The presence of influential tech leaders at Davos signifies the growing importance of AI in international policy and decision-making. Professionals in the field should stay informed about these developments as they may influence AI regulations and industry standards.",
-            "source": "Feed: Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/uncanny-valley-podcast-trump-davos-ice-ai-midterms-chatgpt-ads/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 23 2026",
-            "headline": "Davos Shifts Focus—AI Dominates Over Climate Change",
-            "title": "AI Overshadows Traditional Topics at Davos Economic Forum",
-            "content": "The World Economic Forum&#x27;s annual meeting in Davos has increasingly become a hub for technology discussions, with AI taking center stage. This year, AI overshadowed traditional topics like climate change and global poverty, as tech CEOs from companies like Meta and Salesforce dominated the conversation. The shift reflects the growing influence of AI on global economic policies and business strategies. As AI continues to permeate various sectors, professionals must consider its implications on traditional industries and global challenges. The trend suggests a need for tech leaders to engage more deeply with policymakers on AI&#x27;s role in addressing societal issues.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/video/how-did-davos-turn-into-a-tech-conference/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Jan 23 2026",
-            "headline": "OpenAI Scales PostgreSQL—800M Users on a Single Database",
-            "title": "OpenAI Utilizes PostgreSQL to Support ChatGPT&#x27;s Massive User Base",
-            "content": "OpenAI has revealed its use of the open-source PostgreSQL database to support ChatGPT and its API platform, which serve 800 million users. Despite the rise of vector databases, OpenAI&#x27;s reliance on PostgreSQL highlights its scalability and robustness in handling extensive workloads. This decision underscores the database&#x27;s capability to manage high-volume, real-time data processing required by AI applications. Organizations using PostgreSQL can take note of its potential to support large-scale AI deployments. OpenAI&#x27;s approach demonstrates a practical application of traditional database technology in modern AI infrastructure, offering insights for developers managing similar workloads.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/data/how-openai-is-scaling-the-postgresql-database-to-800-million-users",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Jan 23 2026",
-            "headline": "AI Defenses Fail—Researchers Bypass All Tested Protections",
-            "title": "Study Reveals Inadequacies in Current AI Defense Mechanisms",
-            "content": "A recent study by researchers from OpenAI, Anthropic, and Google DeepMind has exposed vulnerabilities in AI defenses, showing that all tested systems were bypassed by adaptive attacks. The findings, published in the paper &quot;The Attacker Moves Second: Stronger Adaptive Attacks Bypass Defenses Against LLM Jailbreaks,&quot; highlight the need for more robust security measures in AI applications. Security teams are advised to scrutinize AI defense solutions carefully, as existing mechanisms may not provide adequate protection. This research serves as a wake-up call for CISOs and security professionals to reassess their AI security strategies and invest in more resilient defenses.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/security/12-ai-defenses-claimed-near-zero-attack-success-researchers-broke-all-of-them",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Jan 23 2026",
-            "headline": "Meta Halts Teen AI Chats—Redesign Underway for Better Experience",
-            "title": "Meta Pauses Teen Interactions with AI Characters for Redesign",
-            "content": "Meta has temporarily suspended the ability for teenagers to interact with its AI characters as the company works on developing a new version aimed at enhancing user experience. This decision follows feedback and internal assessments indicating the need for improvements in the AI interactions offered to younger users. By pausing these interactions, Meta aims to address any potential concerns and ensure a more engaging and safe environment for teens. The company plans to reintroduce the feature with enhancements that better cater to its younger audience. Stakeholders in AI development and user safety should monitor these changes to understand their impact on user engagement and safety protocols.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/news/866906/meta-teens-ai-characters-stop-block-new-version",
-            "relatedResources": []
         }
     ],
     "articles": {},
