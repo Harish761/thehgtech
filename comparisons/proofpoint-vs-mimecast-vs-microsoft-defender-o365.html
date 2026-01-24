@@ -530,11 +530,15 @@
 
         .rank-item {
             display: flex;
-            align-items: center;
-            gap: 1rem;
-            padding: 1rem;
-            background: var(--bg-card);
-            border-radius: 8px;
+            align-items: flex-start;
+            /* Align to top for better multi-line readability */
+            gap: 1.5rem;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.03);
+            /* More subtle background */
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            margin-bottom: 1rem;
         }
 
         .rank-number {
@@ -542,25 +546,43 @@
             font-weight: 800;
             width: 50px;
             height: 50px;
+            min-width: 50px;
+            /* Prevent squashing */
+            min-height: 50px;
+            /* Prevent squashing */
+            flex-shrink: 0;
+            /* Prevent squashing */
             display: flex;
             align-items: center;
             justify-content: center;
             border-radius: 50%;
+            margin-top: 0;
+            /* Align with first line of text */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .rank-content {
+            flex: 1;
+            font-size: 1rem;
+            line-height: 1.6;
         }
 
         .rank-1 {
-            background: linear-gradient(135deg, #FFD700, #FFA500);
+            background: linear-gradient(135deg, #FFD700, #FDB931);
             color: #000;
+            border: 2px solid #FFF8D5;
         }
 
         .rank-2 {
-            background: linear-gradient(135deg, #C0C0C0, #808080);
+            background: linear-gradient(135deg, #E0E0E0, #BDBDBD);
             color: #000;
+            border: 2px solid #F5F5F5;
         }
 
         .rank-3 {
-            background: linear-gradient(135deg, #CD7F32, #8B4513);
+            background: linear-gradient(135deg, #CD7F32, #A0522D);
             color: #fff;
+            border: 2px solid #E6BFAA;
         }
 
         /* Responsive */
@@ -1501,7 +1523,7 @@
                 <div class="rank-list">
                     <div class="rank-item">
                         <div class="rank-number rank-1">1</div>
-                        <div>
+                        <div class="rank-content">
                             <strong style="color: var(--mimecast-green);">Mimecast</strong> - Best overall for
                             day-to-day operations, message tracing, and administrator experience. My personal
                             recommendation for most organizations seeking the optimal balance of security effectiveness,
@@ -1510,16 +1532,16 @@
                     </div>
                     <div class="rank-item">
                         <div class="rank-number rank-2">2</div>
-                        <div>
+                        <div class="rank-content">
                             <strong style="color: var(--proofpoint-red);">Proofpoint</strong> - Best-in-class threat
-                            intelligence
-                            and BEC protection. The choice for large enterprises where the 2-5% extra threat detection
+                            intelligence and BEC protection. The choice for large enterprises where the 2-5% extra
+                            threat detection
                             is worth the premium—and where the budget exists to fully leverage the platform.
                         </div>
                     </div>
                     <div class="rank-item">
                         <div class="rank-number rank-3">3</div>
-                        <div>
+                        <div class="rank-content">
                             <strong style="color: var(--microsoft-blue);">Microsoft Defender for Office 365</strong> -
                             Best value proposition for organizations already on E5 licensing. Good protection with
                             excellent ZAP capability, but message tracing, reporting, and admin experience lag behind
