@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-01-25T01:58:39.285155",
+  "last_updated": "2026-01-25T12:43:31.958131",
   "period": "Last 7 days",
   "total_groups": 28,
-  "total_victims": 280,
+  "total_victims": 285,
   "groups": [
     {
       "name": "Qilin",
@@ -97,7 +97,7 @@
     },
     {
       "name": "Thegentlemen",
-      "count": 35,
+      "count": 29,
       "victims": [
         {
           "name": "MBM",
@@ -106,46 +106,10 @@
           "discovered_date": "2026-01-24T21:53:07.624940"
         },
         {
-          "name": "Unimed Anápolis",
-          "date": "2026-01-21 00:27:16.224599",
-          "url": "http://tezwsse5czllksjb7cwp65rvnk4oobmzti2znn42i43bjdfd2prqqkad.onion",
-          "discovered_date": "2026-01-21T00:27:16.224599"
-        },
-        {
-          "name": "Sincere Corporation",
-          "date": "2026-01-21 00:27:51.743441",
-          "url": "http://tezwsse5czllksjb7cwp65rvnk4oobmzti2znn42i43bjdfd2prqqkad.onion",
-          "discovered_date": "2026-01-21T00:27:51.743441"
-        },
-        {
-          "name": "Casa de España",
-          "date": "2026-01-21 00:28:27.283573",
-          "url": "http://tezwsse5czllksjb7cwp65rvnk4oobmzti2znn42i43bjdfd2prqqkad.onion",
-          "discovered_date": "2026-01-21T00:28:27.283573"
-        },
-        {
-          "name": "Garko",
-          "date": "2026-01-21 00:29:03.629174",
-          "url": "http://tezwsse5czllksjb7cwp65rvnk4oobmzti2znn42i43bjdfd2prqqkad.onion",
-          "discovered_date": "2026-01-21T00:29:03.629174"
-        },
-        {
-          "name": "Sibca",
-          "date": "2026-01-21 00:29:38.875062",
-          "url": "http://tezwsse5czllksjb7cwp65rvnk4oobmzti2znn42i43bjdfd2prqqkad.onion",
-          "discovered_date": "2026-01-21T00:29:38.875062"
-        },
-        {
           "name": "Bluemega",
           "date": "2026-01-21 00:30:13.745821",
           "url": "http://tezwsse5czllksjb7cwp65rvnk4oobmzti2znn42i43bjdfd2prqqkad.onion",
           "discovered_date": "2026-01-21T00:30:13.745821"
-        },
-        {
-          "name": "SASI JSC",
-          "date": "2026-01-20 20:42:15.077857",
-          "url": "http://tezwsse5czllksjb7cwp65rvnk4oobmzti2znn42i43bjdfd2prqqkad.onion",
-          "discovered_date": "2026-01-20T20:42:15.077857"
         },
         {
           "name": "MBM",
@@ -158,12 +122,46 @@
           "date": "2026-01-21T00:30:13+00:00",
           "url": "https://www.ransomware.live/id/Qmx1ZW1lZ2FAdGhlZ2VudGxlbWVu",
           "discovered_date": "2026-01-21T00:30:13+00:00"
+        },
+        {
+          "name": "Sibca",
+          "date": "2026-01-21T00:29:38+00:00",
+          "url": "https://www.ransomware.live/id/U2liY2FAdGhlZ2VudGxlbWVu",
+          "discovered_date": "2026-01-21T00:29:38+00:00"
+        },
+        {
+          "name": "Garko",
+          "date": "2026-01-21T00:29:03+00:00",
+          "url": "https://www.ransomware.live/id/R2Fya29AdGhlZ2VudGxlbWVu",
+          "discovered_date": "2026-01-21T00:29:03+00:00"
+        },
+        {
+          "name": "Casa de España",
+          "date": "2026-01-21T00:28:27+00:00",
+          "url": "https://www.ransomware.live/id/Q2FzYSBkZSBFc3Bhw7FhQHRoZWdlbnRsZW1lbg==",
+          "discovered_date": "2026-01-21T00:28:27+00:00"
+        },
+        {
+          "name": "Sincere Corporation",
+          "date": "2026-01-21T00:27:51+00:00",
+          "url": "https://www.ransomware.live/id/U2luY2VyZSBDb3Jwb3JhdGlvbkB0aGVnZW50bGVtZW4=",
+          "discovered_date": "2026-01-21T00:27:51+00:00"
+        },
+        {
+          "name": "Unimed Anápolis",
+          "date": "2026-01-21T00:27:16+00:00",
+          "url": "https://www.ransomware.live/id/VW5pbWVkIEFuw6Fwb2xpc0B0aGVnZW50bGVtZW4=",
+          "discovered_date": "2026-01-21T00:27:16+00:00"
+        },
+        {
+          "name": "SASI JSC",
+          "date": "2026-01-20T20:42:15+00:00",
+          "url": "https://www.ransomware.live/id/U0FTSSBKU0NAdGhlZ2VudGxlbWVu",
+          "discovered_date": "2026-01-20T20:42:15+00:00"
         }
       ],
       "industries": [
-        "Healthcare",
-        "Not Found",
-        "Technology"
+        "Not Found"
       ],
       "countries": [
         "AE",
@@ -176,8 +174,8 @@
       "trend_percentage": 15,
       "daily_counts": [
         1,
-        20,
-        12,
+        19,
+        7,
         0,
         0,
         2,
@@ -274,91 +272,94 @@
       ]
     },
     {
-      "name": "Devman",
-      "count": 20,
+      "name": "Nightspire",
+      "count": 23,
       "victims": [
         {
-          "name": "****cr*nem*ds.c*m",
-          "date": "2026-01-24 02:09:06.518562",
-          "url": "http://devmanblggk7ddrtqj3tsocnayow3bwnozab2s4yhv4shpv6ueitjzid.onion",
-          "discovered_date": "2026-01-24T02:09:06.518562"
+          "name": "The Successful Match",
+          "date": "2026-01-25 05:19:11.136869",
+          "url": "",
+          "discovered_date": "2026-01-25T05:19:11.136869"
         },
         {
-          "name": "***-gr*up.com",
-          "date": "2026-01-24 02:07:25.431771",
-          "url": "http://devmanblggk7ddrtqj3tsocnayow3bwnozab2s4yhv4shpv6ueitjzid.onion",
-          "discovered_date": "2026-01-24T02:07:25.431771"
+          "name": "KICKSTAGE",
+          "date": "2026-01-25 05:18:10.101282",
+          "url": "",
+          "discovered_date": "2026-01-25T05:18:10.101282"
         },
         {
-          "name": "www.saundersandsaunders.com",
-          "date": "2026-01-21 13:16:42.582740",
-          "url": "http://devmanblggk7ddrtqj3tsocnayow3bwnozab2s4yhv4shpv6ueitjzid.onion",
-          "discovered_date": "2026-01-21T13:16:42.582740"
+          "name": "BIDAIAK BANOA S.L.",
+          "date": "2026-01-25 05:17:46.890869",
+          "url": "",
+          "discovered_date": "2026-01-25T05:17:46.890869"
         },
         {
-          "name": "www.mims.com",
-          "date": "2026-01-21 13:18:23.653746",
-          "url": "http://devmanblggk7ddrtqj3tsocnayow3bwnozab2s4yhv4shpv6ueitjzid.onion",
-          "discovered_date": "2026-01-21T13:18:23.653746"
+          "name": "Aromate Industries Co., Ltd. z",
+          "date": "2026-01-25 05:17:23.773659",
+          "url": "",
+          "discovered_date": "2026-01-25T05:17:23.773659"
         },
         {
-          "name": "***om****s-***.com",
-          "date": "2026-01-21 13:20:00.407187",
-          "url": "http://devmanblggk7ddrtqj3tsocnayow3bwnozab2s4yhv4shpv6ueitjzid.onion",
-          "discovered_date": "2026-01-21T13:20:00.407187"
+          "name": "Lesk Engineers Limited",
+          "date": "2026-01-25 05:16:59.859947",
+          "url": "",
+          "discovered_date": "2026-01-25T05:16:59.859947"
         },
         {
-          "name": "Tvgoiania",
-          "date": "2026-01-20 23:01:55.916301",
-          "url": "http://devmanblggk7ddrtqj3tsocnayow3bwnozab2s4yhv4shpv6ueitjzid.onion",
-          "discovered_date": "2026-01-20T23:01:55.916301"
+          "name": "Golden Growth Biotechnology",
+          "date": "2026-01-25 05:16:35.052757",
+          "url": "",
+          "discovered_date": "2026-01-25T05:16:35.052757"
         },
         {
-          "name": "www.****law.com",
-          "date": "2026-01-21 13:21:20.411308",
-          "url": "http://devmanblggk7ddrtqj3tsocnayow3bwnozab2s4yhv4shpv6ueitjzid.onion",
-          "discovered_date": "2026-01-21T13:21:20.411308"
+          "name": "Gianni Botsford Architects",
+          "date": "2026-01-24 18:35:58.562542",
+          "url": "",
+          "discovered_date": "2026-01-24T18:35:58.562542"
         },
         {
-          "name": "***m*sic.fi",
-          "date": "2026-01-21 13:22:56.229640",
-          "url": "http://devmanblggk7ddrtqj3tsocnayow3bwnozab2s4yhv4shpv6ueitjzid.onion",
-          "discovered_date": "2026-01-21T13:22:56.229640"
+          "name": "Hilong Petroleum Pipe Company LLC",
+          "date": "2026-01-24 02:30:36.447438",
+          "url": "",
+          "discovered_date": "2026-01-24T02:30:36.447438"
         },
         {
-          "name": "Syrmasgs",
-          "date": "2026-01-21 13:24:34.292670",
-          "url": "http://devmanblggk7ddrtqj3tsocnayow3bwnozab2s4yhv4shpv6ueitjzid.onion",
-          "discovered_date": "2026-01-21T13:24:34.292670"
+          "name": "Supriya Aesthetic Dermatology",
+          "date": "2026-01-23 17:47:52.545062",
+          "url": "",
+          "discovered_date": "2026-01-23T17:47:52.545062"
         },
         {
-          "name": "automax.com",
-          "date": "2026-01-21 13:26:13.703793",
-          "url": "http://devmanblggk7ddrtqj3tsocnayow3bwnozab2s4yhv4shpv6ueitjzid.onion",
-          "discovered_date": "2026-01-21T13:26:13.703793"
+          "name": "Service Lane eAdvisor",
+          "date": "2026-01-22 10:24:35.478619",
+          "url": "",
+          "discovered_date": "2026-01-22T10:24:35.478619"
         }
       ],
       "industries": [
+        "Construction",
+        "Education",
+        "Energy",
         "Healthcare",
-        "Not Found"
+        "Hospitality and Tourism"
       ],
       "countries": [
-        "FI",
-        "IN",
-        "SJ",
-        "SN",
-        "US"
+        "CN",
+        "ES",
+        "GB",
+        "HK",
+        "JP"
       ],
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
         0,
+        1,
         2,
-        14,
-        0,
-        0,
+        2,
+        2,
         4,
-        0
+        12
       ]
     },
     {
@@ -449,6 +450,94 @@
         10,
         6,
         0,
+        0
+      ]
+    },
+    {
+      "name": "Devman",
+      "count": 19,
+      "victims": [
+        {
+          "name": "****cr*nem*ds.c*m",
+          "date": "2026-01-24 02:09:06.518562",
+          "url": "http://devmanblggk7ddrtqj3tsocnayow3bwnozab2s4yhv4shpv6ueitjzid.onion",
+          "discovered_date": "2026-01-24T02:09:06.518562"
+        },
+        {
+          "name": "***-gr*up.com",
+          "date": "2026-01-24 02:07:25.431771",
+          "url": "http://devmanblggk7ddrtqj3tsocnayow3bwnozab2s4yhv4shpv6ueitjzid.onion",
+          "discovered_date": "2026-01-24T02:07:25.431771"
+        },
+        {
+          "name": "www.saundersandsaunders.com",
+          "date": "2026-01-21 13:16:42.582740",
+          "url": "http://devmanblggk7ddrtqj3tsocnayow3bwnozab2s4yhv4shpv6ueitjzid.onion",
+          "discovered_date": "2026-01-21T13:16:42.582740"
+        },
+        {
+          "name": "www.mims.com",
+          "date": "2026-01-21 13:18:23.653746",
+          "url": "http://devmanblggk7ddrtqj3tsocnayow3bwnozab2s4yhv4shpv6ueitjzid.onion",
+          "discovered_date": "2026-01-21T13:18:23.653746"
+        },
+        {
+          "name": "***om****s-***.com",
+          "date": "2026-01-21 13:20:00.407187",
+          "url": "http://devmanblggk7ddrtqj3tsocnayow3bwnozab2s4yhv4shpv6ueitjzid.onion",
+          "discovered_date": "2026-01-21T13:20:00.407187"
+        },
+        {
+          "name": "www.****law.com",
+          "date": "2026-01-21 13:21:20.411308",
+          "url": "http://devmanblggk7ddrtqj3tsocnayow3bwnozab2s4yhv4shpv6ueitjzid.onion",
+          "discovered_date": "2026-01-21T13:21:20.411308"
+        },
+        {
+          "name": "***m*sic.fi",
+          "date": "2026-01-21 13:22:56.229640",
+          "url": "http://devmanblggk7ddrtqj3tsocnayow3bwnozab2s4yhv4shpv6ueitjzid.onion",
+          "discovered_date": "2026-01-21T13:22:56.229640"
+        },
+        {
+          "name": "Syrmasgs",
+          "date": "2026-01-21 13:24:34.292670",
+          "url": "http://devmanblggk7ddrtqj3tsocnayow3bwnozab2s4yhv4shpv6ueitjzid.onion",
+          "discovered_date": "2026-01-21T13:24:34.292670"
+        },
+        {
+          "name": "automax.com",
+          "date": "2026-01-21 13:26:13.703793",
+          "url": "http://devmanblggk7ddrtqj3tsocnayow3bwnozab2s4yhv4shpv6ueitjzid.onion",
+          "discovered_date": "2026-01-21T13:26:13.703793"
+        },
+        {
+          "name": "****cr*nem*ds.c*m",
+          "date": "2026-01-24T02:09:06+00:00",
+          "url": "https://www.ransomware.live/id/KioqKmNyKm5lbSpkcy5jKm1AZGV2bWFu",
+          "discovered_date": "2026-01-24T02:09:06+00:00"
+        }
+      ],
+      "industries": [
+        "Healthcare",
+        "Not Found"
+      ],
+      "countries": [
+        "FI",
+        "IN",
+        "SJ",
+        "SN",
+        "US"
+      ],
+      "trend": "up",
+      "trend_percentage": 15,
+      "daily_counts": [
+        0,
+        1,
+        14,
+        0,
+        0,
+        4,
         0
       ]
     },
@@ -720,95 +809,6 @@
         2,
         8,
         0,
-        0
-      ]
-    },
-    {
-      "name": "Nightspire",
-      "count": 11,
-      "victims": [
-        {
-          "name": "Gianni Botsford Architects",
-          "date": "2026-01-24 18:35:58.562542",
-          "url": "",
-          "discovered_date": "2026-01-24T18:35:58.562542"
-        },
-        {
-          "name": "Hilong Petroleum Pipe Company LLC",
-          "date": "2026-01-24 02:30:36.447438",
-          "url": "",
-          "discovered_date": "2026-01-24T02:30:36.447438"
-        },
-        {
-          "name": "Supriya Aesthetic Dermatology",
-          "date": "2026-01-23 17:47:52.545062",
-          "url": "",
-          "discovered_date": "2026-01-23T17:47:52.545062"
-        },
-        {
-          "name": "Service Lane eAdvisor",
-          "date": "2026-01-22 10:24:35.478619",
-          "url": "",
-          "discovered_date": "2026-01-22T10:24:35.478619"
-        },
-        {
-          "name": "Serometrix LLC",
-          "date": "2026-01-21 15:53:29.728347",
-          "url": "",
-          "discovered_date": "2026-01-21T15:53:29.728347"
-        },
-        {
-          "name": "Gianni Botsford Architects",
-          "date": "2026-01-24T18:35:58+00:00",
-          "url": "https://www.ransomware.live/id/R2lhbm5pIEJvdHNmb3JkIEFyY2hpdGVjdHNAbmlnaHRzcGlyZQ==",
-          "discovered_date": "2026-01-24T18:35:58+00:00"
-        },
-        {
-          "name": "Hilong Petroleum Pipe Company LLC",
-          "date": "2026-01-24T02:30:36+00:00",
-          "url": "https://www.ransomware.live/id/SGlsb25nIFBldHJvbGV1bSBQaXBlIENvbXBhbnkgTExDQG5pZ2h0c3BpcmU=",
-          "discovered_date": "2026-01-24T02:30:36+00:00"
-        },
-        {
-          "name": "Supriya Aesthetic Dermatology",
-          "date": "2026-01-23T17:47:52+00:00",
-          "url": "https://www.ransomware.live/id/U3Vwcml5YSBBZXN0aGV0aWMgRGVybWF0b2xvZ3lAbmlnaHRzcGlyZQ==",
-          "discovered_date": "2026-01-23T17:47:52+00:00"
-        },
-        {
-          "name": "Service Lane eAdvisor",
-          "date": "2026-01-22T10:24:35+00:00",
-          "url": "https://www.ransomware.live/id/U2VydmljZSBMYW5lIGVBZHZpc29yQG5pZ2h0c3BpcmU=",
-          "discovered_date": "2026-01-22T10:24:35+00:00"
-        },
-        {
-          "name": "Serometrix LLC",
-          "date": "2026-01-21T15:53:29+00:00",
-          "url": "https://www.ransomware.live/id/U2Vyb21ldHJpeCBMTENAbmlnaHRzcGlyZQ==",
-          "discovered_date": "2026-01-21T15:53:29+00:00"
-        }
-      ],
-      "industries": [
-        "Construction",
-        "Energy",
-        "Healthcare",
-        "Not Found",
-        "Technology"
-      ],
-      "countries": [
-        "CN",
-        "GB",
-        "US"
-      ],
-      "trend": "up",
-      "trend_percentage": 15,
-      "daily_counts": [
-        0,
-        1,
-        2,
-        2,
-        2,
-        4,
         0
       ]
     },
@@ -1497,6 +1497,48 @@
       ]
     },
     {
+      "name": "Handala",
+      "count": 3,
+      "victims": [
+        {
+          "name": "Handala New Account – Sunset of the lions",
+          "date": "2026-01-25 12:16:08.664864",
+          "url": "https://handala-hack.to/handala-new-account-sunset-of-the-lions/",
+          "discovered_date": "2026-01-25T12:16:08.664864"
+        },
+        {
+          "name": "Ignite Chaos at Your Own Risk: i24 Channel",
+          "date": "2026-01-21 19:20:37.874795",
+          "url": "https://handala-hack.to/ignite-chaos-at-your-own-risk-i24-channel-hacked/",
+          "discovered_date": "2026-01-21T19:20:37.874795"
+        },
+        {
+          "name": "Ignite Chaos at Your Own Risk: i24 Channel",
+          "date": "2026-01-21T19:20:37+00:00",
+          "url": "https://www.ransomware.live/id/SWduaXRlIENoYW9zIGF0IFlvdXIgT3duIFJpc2s6IGkyNCBDaGFubmVsQGhhbmRhbGE=",
+          "discovered_date": "2026-01-21T19:20:37+00:00"
+        }
+      ],
+      "industries": [
+        "Not Found",
+        "Telecommunication"
+      ],
+      "countries": [
+        "N/A"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
       "name": "Sarcoma",
       "count": 3,
       "victims": [
@@ -1534,47 +1576,6 @@
         0,
         0,
         2,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Handala",
-      "count": 3,
-      "victims": [
-        {
-          "name": "Ignite Chaos at Your Own Risk: i24 Channel",
-          "date": "2026-01-21 19:20:37.874795",
-          "url": "https://handala-hack.to/ignite-chaos-at-your-own-risk-i24-channel-hacked/",
-          "discovered_date": "2026-01-21T19:20:37.874795"
-        },
-        {
-          "name": "Ignite Chaos at Your Own Risk: i24 Channel",
-          "date": "2026-01-21T19:20:37+00:00",
-          "url": "https://www.ransomware.live/id/SWduaXRlIENoYW9zIGF0IFlvdXIgT3duIFJpc2s6IGkyNCBDaGFubmVsQGhhbmRhbGE=",
-          "discovered_date": "2026-01-21T19:20:37+00:00"
-        },
-        {
-          "name": "Avraham Hayyim ( Mehrdad Rahimi ) – Mossad Agent",
-          "date": "2026-01-18T12:25:35+00:00",
-          "url": "https://www.ransomware.live/id/QXZyYWhhbSBIYXl5aW0gKCBNZWhyZGFkIFJhaGltaSApIOKAkyBNb3NzYWQgQWdlbnRAaGFuZGFsYQ==",
-          "discovered_date": "2026-01-18T12:25:35+00:00"
-        }
-      ],
-      "industries": [
-        "Telecommunication"
-      ],
-      "countries": [
-        "N/A"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        2,
-        0,
-        0,
         0,
         0
       ]
