@@ -1,6 +1,46 @@
 {
   "incidents": [
     {
+      "id": "AIID-1348",
+      "incident_id": 1348,
+      "title": "Purported Deepfake Explicit Images of Middle School Students Allegedly Created and Circulated Using ",
+      "date": "2026-01-24",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1349",
+      "incident_id": 1349,
+      "title": "AI Training Dataset for Detecting Nudity Allegedly Found to Contain CSAM Images of Identified Victim",
+      "date": "2026-01-24",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1350",
+      "incident_id": 1350,
+      "title": "Reported Use of AI Apps to Create Sexualized Deepfake Images of High School Students at Cascade High",
+      "date": "2026-01-24",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1351",
+      "incident_id": 1351,
+      "title": "Alleged Use of AI to Create Sexualized Deepfake Images of Middle School Students Under Investigation",
+      "date": "2026-01-24",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1352",
+      "incident_id": 1352,
+      "title": "Malaysian Teenager Allegedly Arrested for Creating and Selling AI-Generated Deepfake Images of Schoo",
+      "date": "2026-01-24",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-610",
       "incident_id": 610,
       "title": "Purported Deepfake Technology Was Reportedly Used to Generate Naked Pictures of Underage Girls in Sp",
@@ -1498,9 +1538,9 @@
     }
   ],
   "stats": {
-    "total": 187,
-    "last7Days": 0,
-    "last30Days": 33
+    "total": 192,
+    "last7Days": 5,
+    "last30Days": 38
   },
-  "lastUpdated": "2026-01-25T02:02:05.257301+05:30"
+  "lastUpdated": "2026-01-25T08:09:24.488974+05:30"
 }
