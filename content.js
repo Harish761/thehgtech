@@ -4,6 +4,109 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Jan 24 2026",
+            "headline": "Amnesia RAT Hits Russia—Phishing Campaign Escalates",
+            "title": "Multi-Stage Phishing Campaign Deploys Amnesia RAT and Ransomware in Russia",
+            "content": "A sophisticated phishing campaign has emerged, targeting Russian users with both ransomware and the Amnesia remote access trojan (RAT). The attack leverages social engineering tactics, using business-themed documents that appear routine to lure victims. Once engaged, the malware is deployed in stages, beginning with the Amnesia RAT, which provides remote control over the infected systems. The campaign&#x27;s dual-threat nature poses significant risks to both individual users and organizations, potentially leading to data theft and system lockdowns. Security professionals are advised to enhance email filtering and user awareness training to mitigate these threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/01/multi-stage-phishing-campaign-targets.html",
+            "relatedResources": [
+                {
+                    "label": "Phishing & Security Awareness",
+                    "url": "/guides/phishing-simulation-security-awareness.html",
+                    "icon": "fa-fish"
+                }
+            ]
+        },
+        {
+            "date": "Jan 24 2026",
+            "headline": "Nike Faces Data Breach Threat—WorldLeaks Claims Hack",
+            "title": "Nike Investigates Security Breach as Hackers Threaten Data Exposure",
+            "content": "Nike is currently investigating a potential security breach following claims by the WorldLeaks cybercrime group that they have accessed sensitive information from the company&#x27;s systems. The hackers have threatened to leak the stolen data, raising concerns about the potential exposure of both corporate and customer information. This incident highlights the growing threat of cyber extortion faced by major corporations. Nike&#x27;s security team is working to assess the breach&#x27;s scope and secure any vulnerabilities. Customers and partners are advised to monitor for updates and potential impacts on their personal data.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/nike-probing-potential-security-incident-as-hackers-threaten-to-leak-data/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 24 2026",
+            "headline": "Sandworm&#x27;s DynoWiper Attack on Polish Grid Thwarted",
+            "title": "Sandworm Group&#x27;s Attempted Cyber Attack on Polish Power Sector Fails",
+            "content": "The notorious Russian hacking group Sandworm has been linked to an attempted cyber attack on Poland&#x27;s power infrastructure using a new malware strain dubbed DynoWiper. The attack, which occurred in late December 2025, was reportedly the largest ever targeting Poland&#x27;s energy sector but was ultimately unsuccessful. Polish energy minister Milosz Motyka confirmed that while the attack was blocked, it underscores the persistent threat posed by state-sponsored cyber operations. The incident serves as a reminder for critical infrastructure sectors worldwide to bolster their cybersecurity defenses.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/01/new-dynowiper-malware-used-in-attempted.html",
+            "relatedResources": [
+                {
+                    "label": "Threat Intelligence",
+                    "url": "/threat-intel.html",
+                    "icon": "fa-user-secret"
+                }
+            ]
+        },
+        {
+            "date": "Jan 24 2026",
+            "headline": "AI Agents Raise Security Questions—Approval Processes Under Scrutiny",
+            "title": "Rethinking AI Agent Approval and Risk Management in Enterprises",
+            "content": "The rapid adoption of AI agents in enterprises is transforming productivity but also raising critical security concerns. These agents, capable of scheduling, data access, and real-time decision-making, often operate with minimal oversight, leading to the question, &quot;Who approved this?&quot; The lack of clear accountability and control mechanisms can expose organizations to significant risks, including unauthorized data access and operational disruptions. Security teams are urged to implement robust approval and monitoring processes for AI agents, ensuring that their deployment aligns with organizational security policies.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/01/who-approved-this-agent-rethinking.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 24 2026",
+            "headline": "CISA Flags VMware vCenter Flaw—Active Exploits Detected",
+            "title": "Critical VMware vCenter Vulnerability CVE-2024-37079 Added to CISA KEV",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added CVE-2024-37079, a critical vulnerability in VMware vCenter Server, to its Known Exploited Vulnerabilities (KEV) catalog. This flaw, patched in June 2024, is being actively exploited in the wild, posing significant risks to organizations using the affected versions. Exploitation could lead to unauthorized access and control of systems, emphasizing the need for immediate patching. Organizations using VMware vCenter are advised to verify their systems are updated and review security configurations to prevent exploitation.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/01/cisa-adds-actively-exploited-vmware.html",
+            "relatedResources": [
+                {
+                    "label": "CVE Tracker",
+                    "url": "/cve-tracker.html",
+                    "icon": "fa-bug"
+                },
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Jan 23 2026",
+            "headline": "Cisco UC Zero-Day—Mass Scanning Threatens Millions",
+            "title": "Critical Zero-Day in Cisco UC CVE-2026-20045 Under Active Exploitation",
+            "content": "A critical zero-day vulnerability, CVE-2026-20045, in Cisco&#x27;s Unified Communications (UC) products is under active exploitation, with mass scanning detected across the internet. The flaw, deemed critical by Cisco, could allow attackers to take complete control of affected systems, impacting potentially millions of users worldwide. Security experts emphasize the urgency of applying available patches and implementing network monitoring to detect and mitigate exploitation attempts. This incident underscores the importance of maintaining up-to-date security measures in communication systems.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/endpoint-security/exploited-zero-day-flaw-cisco-uc-affect-millions",
+            "relatedResources": [
+                {
+                    "label": "CVE Tracker",
+                    "url": "/cve-tracker.html",
+                    "icon": "fa-bug"
+                },
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Jan 23 2026",
+            "headline": "GCVE Sparks Debate on Vulnerability Database Fragmentation",
+            "title": "Europe&#x27;s GCVE Initiative Highlights Challenges in Vulnerability Tracking",
+            "content": "Europe&#x27;s Global Common Vulnerabilities and Exposures (GCVE) initiative aims to enhance collaboration in tracking security flaws but raises concerns over database fragmentation. While GCVE seeks to improve flexibility and efficiency, the potential for duplicate entries and decentralization could complicate efforts for cybersecurity defenders. The initiative reflects a broader trend towards global cooperation in vulnerability management but also highlights the need for standardized practices to ensure clarity and effectiveness. Security professionals are encouraged to stay informed about developments in vulnerability databases to adapt their strategies accordingly.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cyber-risk/gcve-raises-concerns-fragmentation-vulnerability-database",
+            "relatedResources": [
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
             "date": "Jan 25 2026",
             "headline": "Outlook Freeze Fixed—Microsoft Issues Emergency Update",
             "title": "Microsoft Releases OOB Update to Resolve Outlook PST Freeze Issue",
@@ -22,83 +125,6 @@ const websiteContent = {
                     "icon": "fa-sitemap"
                 }
             ]
-        },
-        {
-            "date": "Jan 24 2026",
-            "headline": "Sandworm Targets Poland—DynoWiper Attack Thwarted",
-            "title": "Sandworm Hackers Fail in Attempted DynoWiper Attack on Poland&#x27;s Power Grid",
-            "content": "A cyberattack on Poland&#x27;s power grid in December 2025 has been linked to Sandworm, a Russian state-sponsored hacking group. The attackers attempted to deploy DynoWiper, a new data-wiping malware, aiming to disrupt energy systems. This incident underscores the ongoing threat of state-sponsored cyber warfare targeting critical infrastructure. While the attack was unsuccessful, it highlights the need for robust cybersecurity measures in national power grids. Organizations should remain vigilant against such sophisticated threats and enhance their defensive strategies to protect against potential future attacks.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/sandworm-hackers-linked-to-failed-wiper-attack-on-polands-energy-systems/",
-            "relatedResources": [
-                {
-                    "label": "Threat Intelligence",
-                    "url": "/threat-intel.html",
-                    "icon": "fa-user-secret"
-                }
-            ]
-        },
-        {
-            "date": "Jan 24 2026",
-            "headline": "AI Malware Targets Blockchain—Konni&#x27;s Latest Attack",
-            "title": "Konni Hackers Deploy AI-Generated Malware Against Blockchain Engineers",
-            "content": "The North Korean hacker group Konni, also known as Opal Sleet or TA406, has been identified using AI-generated PowerShell malware to target blockchain developers and engineers. This novel approach leverages artificial intelligence to create sophisticated malware capable of evading traditional detection methods. The attack highlights the increasing convergence of AI and cybersecurity threats, posing significant risks to the blockchain sector. Organizations involved in blockchain development should enhance their security posture and monitor for unusual activity to mitigate potential breaches. This trend underscores the evolving nature of cyber threats in the digital age.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/konni-hackers-target-blockchain-engineers-with-ai-built-malware/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 24 2026",
-            "headline": "Cybersecurity Focus Shifts—Human Decisions in the Spotlight",
-            "title": "2025 Highlights Need to Protect Human Decision-Making in Cybersecurity",
-            "content": "The cybersecurity landscape is evolving from merely protecting systems to safeguarding human decision-making processes. The year 2025 served as a wake-up call, emphasizing the importance of supporting human decisions under uncertainty and system failures. As cyber threats become more sophisticated, the human element of cybersecurity is increasingly vulnerable to manipulation and error. Organizations are urged to develop strategies that empower individuals to make informed decisions, integrating human factors into their cybersecurity frameworks. This shift reflects a broader trend toward holistic security approaches that consider both technological and human vulnerabilities.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyber-risk/wake-up-call-to-protect-human-decisions-not-just-systems",
-            "relatedResources": [
-                {
-                    "label": "NIST CSF 2.0 Implementation",
-                    "url": "/guides/nist-csf-2-implementation.html",
-                    "icon": "fa-check-double"
-                }
-            ]
-        },
-        {
-            "date": "Jan 23 2026",
-            "headline": "ShinyHunters Exploit SSO—Data Theft from Major Platforms",
-            "title": "ShinyHunters Claim Responsibility for SSO Breaches at Okta and Microsoft",
-            "content": "The ShinyHunters extortion gang has claimed responsibility for a series of voice phishing attacks targeting single sign-on (SSO) accounts at Okta, Microsoft, and Google. By breaching these accounts, the threat actors gained access to corporate SaaS platforms, stealing sensitive company data for extortion. This attack underscores the vulnerabilities inherent in SSO systems and the need for enhanced security measures. Organizations using SSO solutions should implement multi-factor authentication and conduct regular security audits to protect against such breaches. The incident highlights the persistent threat of cyber extortion targeting major tech platforms.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/shinyhunters-claim-to-be-behind-sso-account-data-theft-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 23 2026",
-            "headline": "Fortinet Zero-Day Exploited—Customer Devices at Risk",
-            "title": "Fortinet Confirms Zero-Day Exploitation in Recent Customer Device Attacks",
-            "content": "Fortinet has confirmed a new attack campaign exploiting a zero-day vulnerability in customer devices to bypass authentication. This attack differs from a previous campaign targeting FortiCloud SSO vulnerabilities in December. The exploitation of this unpatched issue poses a significant risk to Fortinet users, potentially allowing unauthorized access to sensitive systems. Fortinet advises customers to monitor for unusual activity and apply security patches as they become available. This incident highlights the critical need for timely vulnerability management and proactive security measures in protecting enterprise networks.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4121682/fortinet-confirms-new-zero-day-attacks-against-customer-devices.html",
-            "relatedResources": [
-                {
-                    "label": "Fortinet Analysis",
-                    "url": "/articles/fortinet-fortigate-critical-exploit-2025.html",
-                    "icon": "fa-file-alt"
-                },
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Jan 23 2026",
-            "headline": "Vehicles Vulnerable—Pwn2Own Exposes Infotainment Flaws",
-            "title": "Researchers Discover Vehicle Infotainment Vulnerabilities at Pwn2Own 2026",
-            "content": "Security researchers have uncovered numerous vulnerabilities in vehicle infotainment systems and electric vehicle (EV) chargers during the Pwn2Own contest at Automotive World 2026. These exploits demonstrate the potential for unauthorized access and control over vehicle systems, posing safety and privacy risks to drivers. The findings highlight the increasing complexity and interconnectedness of modern vehicles, which require robust cybersecurity measures. Manufacturers are encouraged to prioritize security in their design processes and address identified vulnerabilities promptly. This event underscores the critical importance of securing automotive technologies against emerging cyber threats.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/endpoint-security/researchers-find-new-ways-hack-vehicles",
-            "relatedResources": []
         },
         {
             "date": "Mar 23 2026",
@@ -120,35 +146,11 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Jan 24 2026",
-            "headline": "Davos Transforms—Tech Titans Clash Over AI&#x27;s Future",
-            "title": "Tech CEOs Clash Over AI&#x27;s Role at World Economic Forum in Davos",
-            "content": "This year&#x27;s World Economic Forum in Davos took on a distinctly tech-driven atmosphere, with AI emerging as the focal point of heated discussions among top executives. The event saw tech CEOs engage in spirited debates over AI&#x27;s potential and its implications for global industries. Key figures from companies like Meta and Google highlighted AI&#x27;s transformative power while also addressing concerns about ethical use and regulation. This shift in focus underscores AI&#x27;s growing influence in shaping global economic and social landscapes. Attendees are urged to consider the implications of AI advancements on their industries and to stay informed about emerging regulatory frameworks.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/24/tech-ceos-boast-and-bicker-about-ai-at-davos/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 24 2026",
-            "headline": "Ex-Googlers Launch AI App—Redefining Kids&#x27; Education",
-            "title": "Former Google Engineers Introduce AI-Powered Learning App for Children",
-            "content": "Former Google employees have unveiled Sparkli, an AI-driven educational app designed to teach children modern skills such as design, financial literacy, and entrepreneurship. The app aims to address the gap in traditional education systems by providing an interactive learning &quot;expedition&quot; that adapts to individual learning styles. Sparkli leverages AI to personalize content and track progress, ensuring a tailored educational experience. This initiative reflects a broader trend of integrating AI into educational tools to enhance learning outcomes. Educators and parents should explore AI-powered educational resources to supplement traditional curricula and foster essential skills in young learners.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/24/former-google-trio-is-building-an-interactive-ai-powered-learning-app-for-kids/",
-            "relatedResources": [
-                {
-                    "label": "DORA Compliance Guide",
-                    "url": "/guides/dora-compliance.html",
-                    "icon": "fa-university"
-                }
-            ]
-        },
-        {
-            "date": "Jan 24 2026",
-            "headline": "AI Labs Under Scrutiny—Profitability Metrics Introduced",
-            "title": "New Rating System Evaluates AI Labs on Profitability Efforts",
-            "content": "TechCrunch has introduced a new rating system to assess AI labs based on their profitability efforts, addressing growing concerns about their financial sustainability. As AI development continues to surge, distinguishing between profit-driven and research-focused labs has become challenging. This system evaluates factors such as revenue streams, investment strategies, and market impact to provide a clearer picture of each lab&#x27;s economic viability. The initiative aims to help investors and stakeholders make informed decisions about supporting AI ventures. AI labs are encouraged to balance innovation with financial strategies to ensure long-term success and viability.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/24/a-new-test-for-ai-labs-are-you-even-trying-to-make-money/",
+            "headline": "Gemini Surpasses OpenAI—Unveils Personal Intelligence Feature",
+            "title": "Gemini Introduces Personal Intelligence as It Outpaces OpenAI in AI Race",
+            "content": "Gemini has taken a significant lead over OpenAI, excelling in creating realistic imagery and securing a partnership with Apple. The introduction of Personal Intelligence marks a new milestone, allowing users to personalize AI interactions to unprecedented levels. This feature enables Gemini to tailor responses and suggestions based on individual user preferences and behaviors. Its advanced capabilities pose a challenge to competitors, raising the bar for AI personalization. Organizations leveraging AI for customer engagement may need to reassess their strategies to keep pace with Gemini’s innovations. As AI continues to evolve, the implications for user privacy and data security are critical considerations.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/866931/gemini-personal-intelligence-ai",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
@@ -159,20 +161,70 @@ const websiteContent = {
         },
         {
             "date": "Jan 24 2026",
-            "headline": "AI&#x27;s Impact on Ads—Creative Joy at Risk",
-            "title": "AI-Driven Advertising Threatens Traditional Creative Expression",
-            "content": "The Verge explores the growing influence of AI in the advertising industry, raising concerns about its impact on creativity. As AI-generated ads become more prevalent, traditional forms of creative advertising are at risk of being overshadowed by data-driven strategies. While AI offers efficiency and targeted marketing capabilities, it may also diminish the emotional and artistic elements that have defined advertising for decades. Industry professionals are urged to find a balance between leveraging AI&#x27;s capabilities and preserving the creative integrity of their campaigns. Advertisers should consider integrating AI thoughtfully to enhance rather than replace human creativity.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/report/866775/ai-generated-ads-slop-human-creativity",
+            "headline": "Apple&#x27;s AI Wearable Debuts—Tri-OS Phone Stuns Market",
+            "title": "Apple Unveils AI Wearable; New Phone Boots Android, Linux, Windows",
+            "content": "Apple has introduced a groundbreaking AI-powered wearable device, signaling its commitment to integrating AI into consumer technology. Simultaneously, a new smartphone capable of booting Android, Linux, and Windows has captured the tech community&#x27;s attention. This tri-OS capability offers unprecedented flexibility for developers and tech enthusiasts, potentially reshaping the mobile OS landscape. Meanwhile, Asus has announced its exit from the smartphone market, and Sony has partnered with TCL to enhance its TV offerings. These developments highlight the dynamic shifts in the tech industry as companies innovate to capture market share. Professionals should monitor these trends for potential impacts on cross-platform development.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/gear-news-of-the-week-apples-ai-wearable-and-a-phone-that-can-boot-android-linux-and-windows/",
             "relatedResources": []
         },
         {
+            "date": "Jan 24 2026",
+            "headline": "Harvey Acquires Hexus—Legal Tech Competition Intensifies",
+            "title": "Harvey Buys Hexus Amid Rising Competition in Legal AI Sector",
+            "content": "In a strategic move to bolster its capabilities, legal AI giant Harvey has acquired Hexus. Founded by Sakshi Pratap, Hexus brings a team with experience from Walmart, Oracle, and Google to Harvey&#x27;s expanding operations. The acquisition includes plans to establish a new office in Bangalore, integrating Hexus&#x27;s India-based engineers. This move underscores the intensifying competition in the legal tech sector, as companies strive to enhance AI-driven legal solutions. Legal professionals should anticipate advancements in AI tools that could streamline workflows and improve efficiency. The consolidation trend in legal tech may also lead to fewer but more robust offerings.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/23/legal-ai-giant-harvey-acquires-hexus-as-competition-heats-up-in-legal-tech/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 24 2026",
+            "headline": "Yann LeCun&#x27;s AMI Labs—Exploring AI &#x27;World Models&#x27;",
+            "title": "Inside AMI Labs: Yann LeCun’s New Venture on AI World Models",
+            "content": "Yann LeCun, renowned for his work in AI, has left Meta to found AMI Labs, a startup focused on developing AI &quot;world models.&quot; This venture has attracted significant attention within the AI community, given LeCun&#x27;s reputation and expertise. World models aim to create comprehensive simulations of real-world environments, potentially transforming fields like robotics and autonomous systems. As AMI Labs progresses, it may drive innovations that enhance AI&#x27;s ability to understand and predict complex systems. Stakeholders in AI research and development should follow AMI Labs&#x27; advancements closely, as they could redefine AI capabilities and applications.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/23/whos-behind-ami-labs-yann-lecuns-world-model-startup/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
             "date": "Jan 23 2026",
-            "headline": "Claude Cowork Expands—AI Infrastructure for Teams",
-            "title": "Claude Cowork Transforms into Collaborative AI Infrastructure for Enterprises",
-            "content": "Anthropic has expanded access to Claude Cowork, an AI platform designed to enhance team workflows, now available for Team and Enterprise plan users. This development marks a significant step towards establishing Claude as a shared AI infrastructure for collaborative projects. The platform&#x27;s new updates facilitate seamless integration into enterprise environments, offering tools for communication, data analysis, and project management. As AI becomes integral to business operations, Claude Cowork&#x27;s enhanced capabilities provide enterprises with a robust solution for leveraging AI in team settings. Organizations should evaluate Claude Cowork&#x27;s potential to streamline workflows and improve productivity.",
+            "headline": "OpenAI Scales PostgreSQL—Supports 800M ChatGPT Users",
+            "title": "OpenAI Leverages PostgreSQL to Support 800 Million ChatGPT Users",
+            "content": "OpenAI has revealed its use of the PostgreSQL database to efficiently manage ChatGPT and its API platform, serving a staggering 800 million users. While vector databases remain relevant, PostgreSQL&#x27;s open-source nature and reliability make it a preferred choice for handling massive data loads. This decision highlights PostgreSQL&#x27;s robustness in supporting large-scale AI applications. Organizations using AI-driven platforms should consider PostgreSQL for scalable and efficient database management. As AI user bases expand, the demand for reliable backend infrastructure will continue to grow, emphasizing the importance of choosing the right database solutions.",
             "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/claude-cowork-turns-claude-from-a-chat-tool-into-shared-ai-infrastructure",
+            "sourceUrl": "https://venturebeat.com/data/how-openai-is-scaling-the-postgresql-database-to-800-million-users",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Jan 23 2026",
+            "headline": "AI Defenses Cracked—7 Vendor Questions to Consider",
+            "title": "Researchers Break AI Defenses: Critical Questions for Vendors",
+            "content": "A study by researchers from OpenAI, Anthropic, and Google DeepMind has revealed vulnerabilities in current AI defenses. Their findings, published in &quot;The Attacker Moves Second,&quot; demonstrate how adaptive attacks can bypass existing security measures against large language models (LLMs). This revelation should prompt Chief Information Security Officers (CISOs) to reevaluate procurement strategies and demand stronger defenses from vendors. Security teams must ask critical questions to ensure AI solutions are resilient against sophisticated threats. As AI becomes integral to operations, safeguarding these systems against evolving attacks is paramount for maintaining trust and security.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/security/12-ai-defenses-claimed-near-zero-attack-success-researchers-broke-all-of-them",
             "relatedResources": [
                 {
                     "label": "LLM Security & Prompt Injection",
@@ -183,21 +235,18 @@ const websiteContent = {
         },
         {
             "date": "Jan 23 2026",
-            "headline": "Trump and AI Giants Share Stage at Davos",
-            "title": "Uncanny Valley Podcast Discusses Trump and AI at Davos Forum",
-            "content": "The latest episode of the Uncanny Valley podcast delves into the World Economic Forum&#x27;s recent meeting in Davos, where former President Donald Trump and leading AI companies shared the spotlight. The discussions highlighted AI&#x27;s pivotal role in global economic strategies, with Trump addressing regulatory challenges and opportunities. The convergence of political and technological leaders underscores AI&#x27;s growing significance in shaping policy and innovation. Podcast listeners are encouraged to tune in for insights into how these developments may influence future AI policy and industry trends. Staying informed on these discussions is crucial for professionals navigating the evolving AI landscape.",
-            "source": "Feed: Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/uncanny-valley-podcast-trump-davos-ice-ai-midterms-chatgpt-ads/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 23 2026",
-            "headline": "AI Dominates Davos—Overshadows Climate, Poverty Talks",
-            "title": "AI Takes Center Stage at World Economic Forum, Shifting Focus from Traditional Issues",
-            "content": "The World Economic Forum&#x27;s annual meeting in Davos experienced a notable shift as artificial intelligence dominated discussions, overshadowing traditional topics like climate change and global poverty. Major tech companies, including Meta and Salesforce, prominently featured AI in their presentations and discussions. This shift reflects AI&#x27;s increasing impact on global priorities and its potential to drive economic and social change. The prominence of AI at such a high-profile event signals a need for industries to adapt and innovate in response to technological advancements. Participants and observers should consider the implications of AI&#x27;s rise on global agendas and industry strategies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/video/how-did-davos-turn-into-a-tech-conference/",
-            "relatedResources": []
+            "headline": "Meta Halts Teen AI Chats—Redesigns for Safety",
+            "title": "Meta Pauses Teen AI Interactions to Enhance Safety Features",
+            "content": "Meta has temporarily suspended the ability for teenagers to interact with its AI characters, citing the need for a safer user experience. This pause will allow Meta to develop a new version of the AI characters with improved features. The decision reflects ongoing concerns about the safety and appropriateness of AI interactions with younger users. Parents and guardians should stay informed about the changes and ensure that digital interactions remain safe for teens. As AI continues to evolve, companies must prioritize user safety to maintain trust and compliance with regulatory standards.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/news/866906/meta-teens-ai-characters-stop-block-new-version",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
         }
     ],
     "articles": {},
