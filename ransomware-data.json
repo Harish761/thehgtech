@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-26T01:58:07.269827",
+  "last_updated": "2026-01-26T12:51:13.802760",
   "period": "Last 7 days",
   "total_groups": 27,
   "total_victims": 300,
@@ -97,8 +97,14 @@
     },
     {
       "name": "Qilin",
-      "count": 29,
+      "count": 31,
       "victims": [
+        {
+          "name": "Mills Products",
+          "date": "2026-01-26 04:30:54.875798",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=d48a4ced-4368-394a-ae47-e174dcf9c24d",
+          "discovered_date": "2026-01-26T04:30:54.875798"
+        },
         {
           "name": "Centrotherm International",
           "date": "2026-01-25 22:09:55.016160",
@@ -152,12 +158,6 @@
           "date": "2026-01-24 05:22:52.838100",
           "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=6ac9fa2b-d371-36d9-976e-b5643e3a9468",
           "discovered_date": "2026-01-24T05:22:52.838100"
-        },
-        {
-          "name": "YCC Parts Mfg",
-          "date": "2026-01-23 16:58:51.826448",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=7e7283e0-1e53-3a8c-858e-4187b35e8721",
-          "discovered_date": "2026-01-23T16:58:51.826448"
         }
       ],
       "industries": [
@@ -183,12 +183,12 @@
         2,
         12,
         6,
-        0
+        2
       ]
     },
     {
       "name": "Thegentlemen",
-      "count": 28,
+      "count": 27,
       "victims": [
         {
           "name": "MBM",
@@ -719,92 +719,6 @@
       ]
     },
     {
-      "name": "Sinobi",
-      "count": 10,
-      "victims": [
-        {
-          "name": "West Cary Group",
-          "date": "2026-01-23 00:42:01.408511",
-          "url": "http://sinobi6ftrg27d6g4sjdt65malds6cfptlnjyw52rskakqjda6uvb7yd.onion/leaks/697128526387a4c9a292ba9b",
-          "discovered_date": "2026-01-23T00:42:01.408511"
-        },
-        {
-          "name": "West Cary Group",
-          "date": "2026-01-23T00:42:01+00:00",
-          "url": "https://www.ransomware.live/id/V2VzdCBDYXJ5IEdyb3VwQHNpbm9iaQ==",
-          "discovered_date": "2026-01-23T00:42:01+00:00"
-        },
-        {
-          "name": "OnSight",
-          "date": "2026-01-22T00:29:46+00:00",
-          "url": "https://www.ransomware.live/id/T25TaWdodEBzaW5vYmk=",
-          "discovered_date": "2026-01-22T00:29:46+00:00"
-        },
-        {
-          "name": "Bayside Dental",
-          "date": "2026-01-21T19:50:03+00:00",
-          "url": "https://www.ransomware.live/id/QmF5c2lkZSBEZW50YWxAc2lub2Jp",
-          "discovered_date": "2026-01-21T19:50:03+00:00"
-        },
-        {
-          "name": "Asian Heart Institute",
-          "date": "2026-01-21T19:48:00+00:00",
-          "url": "https://www.ransomware.live/id/QXNpYW4gSGVhcnQgSW5zdGl0dXRlQHNpbm9iaQ==",
-          "discovered_date": "2026-01-21T19:48:00+00:00"
-        },
-        {
-          "name": "MODERNISTIC GARDEN & PET SUPPLY LTD",
-          "date": "2026-01-21T19:47:31+00:00",
-          "url": "https://www.ransomware.live/id/TU9ERVJOSVNUSUMgR0FSREVOICYgUEVUIFNVUFBMWSBMVERAc2lub2Jp",
-          "discovered_date": "2026-01-21T19:47:31+00:00"
-        },
-        {
-          "name": "ShuBee",
-          "date": "2026-01-21T19:03:46+00:00",
-          "url": "https://www.ransomware.live/id/U2h1QmVlQHNpbm9iaQ==",
-          "discovered_date": "2026-01-21T19:03:46+00:00"
-        },
-        {
-          "name": "Talleyville Fire",
-          "date": "2026-01-20T00:28:15+00:00",
-          "url": "https://www.ransomware.live/id/VGFsbGV5dmlsbGUgRmlyZUBzaW5vYmk=",
-          "discovered_date": "2026-01-20T00:28:15+00:00"
-        },
-        {
-          "name": "Pivotal Healthcare",
-          "date": "2026-01-20T00:27:55+00:00",
-          "url": "https://www.ransomware.live/id/UGl2b3RhbCBIZWFsdGhjYXJlQHNpbm9iaQ==",
-          "discovered_date": "2026-01-20T00:27:55+00:00"
-        },
-        {
-          "name": "Geoplin",
-          "date": "2026-01-20T00:27:35+00:00",
-          "url": "https://www.ransomware.live/id/R2VvcGxpbkBzaW5vYmk=",
-          "discovered_date": "2026-01-20T00:27:35+00:00"
-        }
-      ],
-      "industries": [
-        "Not Found"
-      ],
-      "countries": [
-        "IN",
-        "N/A",
-        "SI",
-        "US"
-      ],
-      "trend": "stable",
-      "trend_percentage": 0,
-      "daily_counts": [
-        3,
-        4,
-        1,
-        2,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Shinyhunters",
       "count": 10,
       "victims": [
@@ -971,6 +885,133 @@
         0,
         0,
         0
+      ]
+    },
+    {
+      "name": "Sinobi",
+      "count": 8,
+      "victims": [
+        {
+          "name": "West Cary Group",
+          "date": "2026-01-23T00:42:01+00:00",
+          "url": "https://www.ransomware.live/id/V2VzdCBDYXJ5IEdyb3VwQHNpbm9iaQ==",
+          "discovered_date": "2026-01-23T00:42:01+00:00"
+        },
+        {
+          "name": "OnSight",
+          "date": "2026-01-22T00:29:46+00:00",
+          "url": "https://www.ransomware.live/id/T25TaWdodEBzaW5vYmk=",
+          "discovered_date": "2026-01-22T00:29:46+00:00"
+        },
+        {
+          "name": "Bayside Dental",
+          "date": "2026-01-21T19:50:03+00:00",
+          "url": "https://www.ransomware.live/id/QmF5c2lkZSBEZW50YWxAc2lub2Jp",
+          "discovered_date": "2026-01-21T19:50:03+00:00"
+        },
+        {
+          "name": "Asian Heart Institute",
+          "date": "2026-01-21T19:48:00+00:00",
+          "url": "https://www.ransomware.live/id/QXNpYW4gSGVhcnQgSW5zdGl0dXRlQHNpbm9iaQ==",
+          "discovered_date": "2026-01-21T19:48:00+00:00"
+        },
+        {
+          "name": "MODERNISTIC GARDEN & PET SUPPLY LTD",
+          "date": "2026-01-21T19:47:31+00:00",
+          "url": "https://www.ransomware.live/id/TU9ERVJOSVNUSUMgR0FSREVOICYgUEVUIFNVUFBMWSBMVERAc2lub2Jp",
+          "discovered_date": "2026-01-21T19:47:31+00:00"
+        },
+        {
+          "name": "ShuBee",
+          "date": "2026-01-21T19:03:46+00:00",
+          "url": "https://www.ransomware.live/id/U2h1QmVlQHNpbm9iaQ==",
+          "discovered_date": "2026-01-21T19:03:46+00:00"
+        },
+        {
+          "name": "Talleyville Fire",
+          "date": "2026-01-20T00:28:15+00:00",
+          "url": "https://www.ransomware.live/id/VGFsbGV5dmlsbGUgRmlyZUBzaW5vYmk=",
+          "discovered_date": "2026-01-20T00:28:15+00:00"
+        },
+        {
+          "name": "Pivotal Healthcare",
+          "date": "2026-01-20T00:27:55+00:00",
+          "url": "https://www.ransomware.live/id/UGl2b3RhbCBIZWFsdGhjYXJlQHNpbm9iaQ==",
+          "discovered_date": "2026-01-20T00:27:55+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "IN",
+        "N/A",
+        "US"
+      ],
+      "trend": "stable",
+      "trend_percentage": 0,
+      "daily_counts": [
+        2,
+        4,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Nova",
+      "count": 5,
+      "victims": [
+        {
+          "name": "KREISEL",
+          "date": "2026-01-26 09:18:58.419513",
+          "url": "http://pifk3xu3vad6cuxsjll4qjomyaaaoyvnyqppro75pazadzctrrvpdnyd.onion/#kreisel",
+          "discovered_date": "2026-01-26T09:18:58.419513"
+        },
+        {
+          "name": "KPMG",
+          "date": "2026-01-23 18:54:41.089132",
+          "url": "http://novadmrkp4vbk2padk5t6pbxolndceuc7hrcq4mjaoyed6nxsqiuzyyd.onion/#kpmg",
+          "discovered_date": "2026-01-23T18:54:41.089132"
+        },
+        {
+          "name": "KREISEL",
+          "date": "2026-01-26T09:18:58+00:00",
+          "url": "https://www.ransomware.live/id/S1JFSVNFTEBub3Zh",
+          "discovered_date": "2026-01-26T09:18:58+00:00"
+        },
+        {
+          "name": "KPMG",
+          "date": "2026-01-23T18:54:41+00:00",
+          "url": "https://www.ransomware.live/id/S1BNR0Bub3Zh",
+          "discovered_date": "2026-01-23T18:54:41+00:00"
+        },
+        {
+          "name": "CYMA",
+          "date": "2026-01-22T13:32:00+00:00",
+          "url": "https://www.ransomware.live/id/Q1lNQUBub3Zh",
+          "discovered_date": "2026-01-22T13:32:00+00:00"
+        }
+      ],
+      "industries": [
+        "Financial Services",
+        "Technology"
+      ],
+      "countries": [
+        "AT",
+        "N/A",
+        "NL"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
+        2
       ]
     },
     {
@@ -1416,90 +1457,6 @@
       ]
     },
     {
-      "name": "Nova",
-      "count": 3,
-      "victims": [
-        {
-          "name": "KPMG",
-          "date": "2026-01-23 18:54:41.089132",
-          "url": "http://novadmrkp4vbk2padk5t6pbxolndceuc7hrcq4mjaoyed6nxsqiuzyyd.onion/#kpmg",
-          "discovered_date": "2026-01-23T18:54:41.089132"
-        },
-        {
-          "name": "KPMG",
-          "date": "2026-01-23T18:54:41+00:00",
-          "url": "https://www.ransomware.live/id/S1BNR0Bub3Zh",
-          "discovered_date": "2026-01-23T18:54:41+00:00"
-        },
-        {
-          "name": "CYMA",
-          "date": "2026-01-22T13:32:00+00:00",
-          "url": "https://www.ransomware.live/id/Q1lNQUBub3Zh",
-          "discovered_date": "2026-01-22T13:32:00+00:00"
-        }
-      ],
-      "industries": [
-        "Financial Services"
-      ],
-      "countries": [
-        "N/A",
-        "NL"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        1,
-        2,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Sarcoma",
-      "count": 3,
-      "victims": [
-        {
-          "name": "Propane Levac Inc.",
-          "date": "2026-01-23 09:58:42.311084",
-          "url": "",
-          "discovered_date": "2026-01-23T09:58:42.311084"
-        },
-        {
-          "name": "Propane Levac Inc.",
-          "date": "2026-01-23T09:58:42+00:00",
-          "url": "https://www.ransomware.live/id/UHJvcGFuZSBMZXZhYyBJbmMuQHNhcmNvbWE=",
-          "discovered_date": "2026-01-23T09:58:42+00:00"
-        },
-        {
-          "name": "MecMatica",
-          "date": "2026-01-20T07:33:07+00:00",
-          "url": "https://www.ransomware.live/id/TWVjTWF0aWNhQHNhcmNvbWE=",
-          "discovered_date": "2026-01-20T07:33:07+00:00"
-        }
-      ],
-      "industries": [
-        "Energy"
-      ],
-      "countries": [
-        "CA",
-        "IT"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        1,
-        0,
-        0,
-        2,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Beast",
       "count": 3,
       "victims": [
@@ -1606,6 +1563,40 @@
         0,
         0,
         2,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Sarcoma",
+      "count": 2,
+      "victims": [
+        {
+          "name": "Propane Levac Inc.",
+          "date": "2026-01-23T09:58:42+00:00",
+          "url": "https://www.ransomware.live/id/UHJvcGFuZSBMZXZhYyBJbmMuQHNhcmNvbWE=",
+          "discovered_date": "2026-01-23T09:58:42+00:00"
+        },
+        {
+          "name": "MecMatica",
+          "date": "2026-01-20T07:33:07+00:00",
+          "url": "https://www.ransomware.live/id/TWVjTWF0aWNhQHNhcmNvbWE=",
+          "discovered_date": "2026-01-20T07:33:07+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "CA",
+        "IT"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        1,
+        0,
+        0,
+        1,
         0,
         0,
         0
