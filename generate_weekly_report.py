@@ -185,6 +185,8 @@ def main():
         "title": f"Weekly Threat Report: {date_str}",
         "date": date_str,
         "category": "Threat Intelligence",
+        "badge": "WEEKLY",
+        "image": "images/articles/weekly-threat-report-generic.png",
         "excerpt": f"Weekly analysis of top malware families, botnets, and SSL threats. Top threat: {top_families[0][0] if top_families else 'Unknown'}.",
         "content": html_content,
         "tags": ["Threat Report", "Malware", "Botnet", "Statistics", "Automated"],
