@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>MEDUSA Security Scanner Guide: AI-First SAST with 180+ AI Rules [2026] | TheHGTech</title>
+    <meta name="description"
+        content="Complete guide to MEDUSA, the AI-first security scanner with 74 analyzers and 180+ AI agent security rules. Learn installation, OWASP LLM Top 10 coverage, and CI/CD integration.">
+    <meta name="keywords"
+        content="MEDUSA security scanner, AI security testing, SAST tool, prompt injection detection, OWASP LLM Top 10, agentic AI security, code security scanner, DevSecOps">
+    <meta name="author" content="TheHGTech">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thehgtech.com/guides/medusa-security-scanner.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="MEDUSA Security Scanner: AI-First SAST with 180+ AI Rules [2026]">
+    <meta property="og:description"
+        content="Complete guide to MEDUSA security scanner. 74 analyzers, 180+ AI rules, OWASP LLM 2025 compliant. Installation, usage, and CI/CD integration.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/guides/medusa-security-scanner.html">
+    <meta property="og:image" content="https://thehgtech.com/images/guides/medusa-security-scanner.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MEDUSA Security Scanner: AI-First SAST with 180+ AI Rules [2026]">
+    <meta name="twitter:description"
+        content="Complete guide to MEDUSA security scanner. 74 analyzers, 180+ AI rules for the agentic era.">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "MEDUSA Security Scanner Guide: AI-First SAST with 180+ AI Rules [2026]",
+      "description": "Complete guide to MEDUSA, the AI-first security scanner with 74 analyzers and 180+ AI agent security rules covering OWASP LLM Top 10 2025.",
+      "author": { "@type": "Organization", "name": "TheHGTech" },
+      "publisher": { "@type": "Organization", "name": "TheHGTech", "url": "https://thehgtech.com" },
+      "datePublished": "2026-01-27",
+      "dateModified": "2026-01-27",
+      "mainEntityOfPage": "https://thehgtech.com/guides/medusa-security-scanner.html",
+      "articleSection": "AI Security Guides",
+      "keywords": ["MEDUSA", "SAST", "AI Security", "Prompt Injection", "OWASP LLM Top 10"]
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is MEDUSA security scanner?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MEDUSA is an AI-first Static Application Security Testing (SAST) tool with 74 specialized scanners covering all major languages and 180+ AI agent security rules. It features intelligent false positive reduction and is updated for OWASP LLM Top 10 2025."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What AI security vulnerabilities does MEDUSA detect?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MEDUSA detects prompt injection, tool poisoning (including CVE-2025-6514), RAG/knowledge base attacks, memory poisoning, workflow hijacking, agent impersonation, and more. It covers all OWASP LLM Top 10 2025 vulnerabilities."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I install MEDUSA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Install MEDUSA using pip: 'pip install medusa-security'. Then initialize with 'medusa init', install scanner tools with 'medusa install --all', and run your first scan with 'medusa scan .' It works on Windows, macOS, and Linux."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does MEDUSA work with AI coding assistants like Cursor and Claude Code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, MEDUSA has built-in IDE integration for Claude Code, Cursor, VS Code, Gemini CLI, GitHub Copilot, and OpenAI Codex. It can scan AI configuration files like .cursorrules, CLAUDE.md, and mcp.json for security issues."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does MEDUSA compare to other SAST tools like Semgrep or SonarQube?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MEDUSA offers more language support (74 scanners vs ~30 in Semgrep), requires no server (unlike SonarQube), has built-in AI/LLM security focus, intelligent false positive filtering, and easier setup. It's free and open source."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can MEDUSA be integrated into CI/CD pipelines?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, MEDUSA is designed for CI/CD integration. It supports sandbox/restricted environments, outputs SARIF format for GitHub Security tab, and can fail builds on specified severity levels using '--fail-on high' flag."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://thehgtech.com"
+      }, {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Guides",
+        "item": "https://thehgtech.com/guides/"
+      }, {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "MEDUSA Security Scanner Guide",
+        "item": "https://thehgtech.com/guides/medusa-security-scanner.html"
+      }]
+    }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/header-dropdown.css?v=1">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF3D3D;
+            --accent-green: #10b981;
+            --accent-orange: #f59e0b;
+            --accent-purple: #8b5cf6;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .guide-header {
+            padding: 3rem 0 2rem;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+            margin-top: 60px;
+        }
+
+        .ai-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #00D9FF, #0099cc);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, #00D9FF, #0099cc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            color: var(--accent-cyan);
+            margin: 2.5rem 0 1rem;
+            font-size: 1.8rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        h3 {
+            color: var(--text-primary);
+            margin: 1.5rem 0 1rem;
+            font-size: 1.3rem;
+        }
+
+        h4 {
+            color: var(--accent-cyan);
+            margin: 1.25rem 0 0.75rem;
+            font-size: 1.1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        ul,
+        ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .info-box {
+            background: rgba(0, 217, 255, 0.05);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .warning-box {
+            background: rgba(255, 76, 76, 0.05);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .success-box {
+            background: rgba(16, 185, 129, 0.05);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        code {
+            background: var(--bg-card);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: var(--accent-cyan);
+            font-size: 0.9rem;
+        }
+
+        pre {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+            color: var(--accent-green);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: rgba(0, 217, 255, 0.1);
+            color: var(--accent-cyan);
+            font-weight: 600;
+        }
+
+        td {
+            color: var(--text-secondary);
+        }
+
+        .toc {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .toc h3 {
+            margin-top: 0;
+            color: var(--accent-cyan);
+        }
+
+        .toc ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .toc li {
+            margin-bottom: 0.5rem;
+        }
+
+        .toc a {
+            color: var(--text-secondary);
+            text-decoration: none;
+        }
+
+        .toc a:hover {
+            color: var(--accent-cyan);
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .feature-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.25rem;
+            text-align: center;
+        }
+
+        .feature-card i {
+            font-size: 2rem;
+            color: var(--accent-cyan);
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .feature-card h4 {
+            margin: 0.5rem 0;
+            font-size: 1rem;
+        }
+
+        .feature-card p {
+            font-size: 0.85rem;
+            margin: 0;
+        }
+
+        .stats-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1.5rem 0;
+            justify-content: center;
+        }
+
+        .stat-badge {
+            background: linear-gradient(135deg, rgba(0, 217, 255, 0.1), rgba(0, 217, 255, 0.05));
+            border: 1px solid rgba(0, 217, 255, 0.3);
+            border-radius: 50px;
+            padding: 0.75rem 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .stat-badge .number {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-cyan);
+        }
+
+        .stat-badge .label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .command-block {
+            background: linear-gradient(135deg, rgba(0, 217, 255, 0.05), rgba(139, 92, 246, 0.05));
+            border: 1px solid rgba(0, 217, 255, 0.2);
+            border-radius: 8px;
+            padding: 1rem 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .command-block code {
+            background: none;
+            color: var(--accent-green);
+            font-size: 1rem;
+        }
+
+        .related-guides {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 3rem 0;
+        }
+
+        .related-guides h3 {
+            color: var(--accent-cyan);
+            margin-bottom: 1rem;
+        }
+
+        .related-guides a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+
+        .related-guides a:hover {
+            text-decoration: underline;
+        }
+
+        .owasp-mapping {
+            background: rgba(139, 92, 246, 0.05);
+            border: 1px solid rgba(139, 92, 246, 0.2);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .owasp-mapping h4 {
+            color: var(--accent-purple);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .stats-row {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <script src="/m-app.js?v=4.3" defer></script>
+</head>
+
+<body>
+    <!-- Mobile Header -->
+    <header class="m-header m-only">
+        <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark"
+                style="height: 28px; width: auto; margin: 0;">
+            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light"
+                style="height: 28px; width: auto; margin: 0;">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #00D9FF, #0099cc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+        </div>
+        <div class="m-header__actions">
+            <button class="m-theme-toggle" onclick="mToggleTheme()" aria-label="Toggle Theme">
+                <span class="m-theme-toggle__thumb"></span>
+                <span class="m-theme-toggle__stars"><span class="m-theme-toggle__star"></span><span
+                        class="m-theme-toggle__star"></span></span>
+            </button>
+            <button class="m-header__btn m-header__btn--search" data-action="search" aria-label="Search"><i
+                    class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <!-- Bottom Navigation -->
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item"><i class="fas fa-bug"></i><span>CVE</span></a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item"><i class="fas fa-shield-alt"></i><span>Intel</span></a>
+        <a href="/articles.html" class="m-bottom-nav__item"><i class="fas fa-newspaper"></i><span>Articles</span></a>
+        <a href="/guides/" class="m-bottom-nav__item active"><i class="fas fa-book"></i><span>Guides</span></a>
+    </nav>
+
+    <!-- Desktop Header -->
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+            <nav class="nav nav-modern" role="navigation">
+                <a href="/index.html#news">News</a>
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">Intelligence <span class="nav-live-badge">LIVE</span> <i
+                            class="fas fa-chevron-down dropdown-arrow"></i></span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/threat-intel.html" class="dropdown-item">
+                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Threat Intelligence <span
+                                        class="dropdown-badge live">LIVE</span></div>
+                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds</div>
+                            </div>
+                        </a>
+                        <a href="/cve-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">CVE Tracker</div>
+                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities</div>
+                            </div>
+                        </a>
+                        <a href="/ransomware-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Ransomware Tracker</div>
+                                <div class="dropdown-item-desc">Track active ransomware groups</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">Resources <i
+                            class="fas fa-chevron-down dropdown-arrow"></i></span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/guides/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
+                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides
+                                    <span class="dropdown-badge popular">40+</span>
+                                </div>
+                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2 & more</div>
+                            </div>
+                        </a>
+                        <a href="/comparisons/" class="dropdown-item">
+                            <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Tool Comparisons</div>
+                                <div class="dropdown-item-desc">Security tool reviews</div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="/articles.html" class="dropdown-item">
+                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Articles</div>
+                                <div class="dropdown-item-desc">Security news and analysis</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="theme-toggle-wrapper"><button class="theme-toggle" id="themeToggle"
+                        aria-label="Toggle theme">
+                        <div class="toggle-stars">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                    </button></div>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <div class="container">
+        <a href="/guides/" class="back-link"><i class="fas fa-arrow-left"></i> Back to Guides</a>
+
+        <div class="guide-header">
+            <span class="ai-badge"><i class="fas fa-robot"></i> AI Security</span>
+            <h1>MEDUSA Security Scanner Guide</h1>
+            <p style="color: var(--text-muted); font-size: 1.1rem;">Complete guide to 74 scanners, 180+ AI security
+                rules, and OWASP LLM Top 10 compliance</p>
+            <div style="margin-top: 1rem; color: var(--text-muted);">
+                <span><i class="fas fa-book-open"></i> 25 min read</span> <span style="margin: 0 0.5rem;">|</span>
+                <span><i class="fas fa-crosshairs"></i> Beginner to Intermediate</span> <span
+                    style="margin: 0 0.5rem;">|</span>
+                <span><i class="far fa-calendar-alt"></i> January 2026</span>
+            </div>
+        </div>
+
+        <img src="/images/guides/medusa-security-scanner.png" alt="MEDUSA Security Scanner Guide" class="featured-image"
+            style="width: 100%; max-width: 100%; height: auto; border-radius: 12px; margin: 2rem 0; box-shadow: 0 10px 40px rgba(0, 217, 255, 0.2); border: 1px solid var(--border);">
+
+        <!-- Key Stats -->
+        <div class="stats-row">
+            <div class="stat-badge">
+                <span class="number">74</span>
+                <span class="label">Scanners</span>
+            </div>
+            <div class="stat-badge">
+                <span class="number">180+</span>
+                <span class="label">AI Rules</span>
+            </div>
+            <div class="stat-badge">
+                <span class="number">42+</span>
+                <span class="label">Languages</span>
+            </div>
+            <div class="stat-badge">
+                <span class="number">40-60%</span>
+                <span class="label">FP Reduction</span>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <strong><i class="fas fa-lightbulb"></i> Why MEDUSA?</strong> As AI coding assistants like Cursor, Claude
+            Code, and GitHub Copilot become standard in development workflows, the attack surface has expanded beyond
+            traditional code vulnerabilities. MEDUSA is the first SAST tool built specifically for this new agentic era.
+        </div>
+
+        <!-- Table of Contents -->
+        <div class="toc">
+            <h3><i class="fas fa-list-ul"></i> Table of Contents</h3>
+            <ul>
+                <li><a href="#what-is-medusa">1. What is MEDUSA?</a></li>
+                <li><a href="#installation">2. Installation & Quick Start</a></li>
+                <li><a href="#core-features">3. Core Features Deep Dive</a></li>
+                <li><a href="#ai-security">4. AI Agent Security (180+ Rules)</a></li>
+                <li><a href="#owasp-mapping">5. OWASP LLM Top 10 2025 Coverage</a></li>
+                <li><a href="#usage-examples">6. Real-World Usage Examples</a></li>
+                <li><a href="#ide-integration">7. IDE Integration</a></li>
+                <li><a href="#cicd">8. CI/CD Integration</a></li>
+                <li><a href="#comparison">9. MEDUSA vs Other Tools</a></li>
+                <li><a href="#best-practices">10. Best Practices</a></li>
+            </ul>
+        </div>
+
+        <h2 id="what-is-medusa">1. What is MEDUSA?</h2>
+
+        <p><strong>MEDUSA</strong> is a comprehensive Static Application Security Testing (SAST) tool built for the AI
+            era. Created by Pantheon Security, it combines traditional code security scanning with cutting-edge AI agent
+            security rules.</p>
+
+        <p>Unlike legacy SAST tools that focus solely on code vulnerabilities, MEDUSA recognizes that modern development
+            involves AI assistants, LLM integrations, and agentic workflows - each introducing new attack vectors that
+            traditional scanners miss.</p>
+
+        <h3>Key Capabilities</h3>
+
+        <div class="feature-grid">
+            <div class="feature-card">
+                <i class="fas fa-search"></i>
+                <h4>74 Scanners</h4>
+                <p>Covers all major languages with intelligent selection</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-robot"></i>
+                <h4>180+ AI Rules</h4>
+                <p>Prompt injection, tool poisoning, RAG attacks</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-filter"></i>
+                <h4>Smart FP Filter</h4>
+                <p>40-60% false positive reduction</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-bolt"></i>
+                <h4>Parallel Processing</h4>
+                <p>10-40x faster than sequential scanning</p>
+            </div>
+        </div>
+
+        <h3>What Makes MEDUSA Different</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Traditional SAST</th>
+                    <th>MEDUSA</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Code vulnerabilities only</td>
+                    <td>Code + AI configuration + Agent security</td>
+                </tr>
+                <tr>
+                    <td>High false positive rates</td>
+                    <td>Context-aware FP filtering (40-60% reduction)</td>
+                </tr>
+                <tr>
+                    <td>Single language focus</td>
+                    <td>42+ languages with 74 specialized scanners</td>
+                </tr>
+                <tr>
+                    <td>Complex server setup</td>
+                    <td>Single command installation, no server</td>
+                </tr>
+                <tr>
+                    <td>No AI-specific rules</td>
+                    <td>180+ rules for OWASP LLM Top 10 2025</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 id="installation">2. Installation & Quick Start</h2>
+
+        <h3>System Requirements</h3>
+        <ul>
+            <li>Python 3.8 or higher</li>
+            <li>Windows, macOS, or Linux</li>
+            <li>2GB RAM minimum (4GB recommended)</li>
+        </ul>
+
+        <h3>Installation</h3>
+
+        <h4>macOS/Linux (Recommended - Virtual Environment)</h4>
+        <pre><code># Create and activate virtual environment
+python3 -m venv medusa-env
+source medusa-env/bin/activate
+
+# Install MEDUSA
+pip install medusa-security
+
+# Verify installation
+medusa --version</code></pre>
+
+        <h4>Windows</h4>
+        <pre><code># Create and activate virtual environment
+py -m venv medusa-env
+medusa-env\Scripts\activate
+
+# Install MEDUSA
+pip install medusa-security
+
+# Verify installation
+medusa --version</code></pre>
+
+        <div class="info-box">
+            <strong><i class="fas fa-lightbulb"></i> Tip:</strong> For Windows, if the <code>medusa</code> command is
+            not found, use <code>py -m medusa</code> instead.
+        </div>
+
+        <h3>5-Minute Setup</h3>
+
+        <pre><code># 1. Initialize in your project
+cd your-project
+medusa init
+
+# 2. Install security tools (auto-detected for your platform)
+medusa install --all
+
+# 3. Run your first scan
+medusa scan .</code></pre>
+
+        <h3>Example Output</h3>
+
+        <pre><code style="color: var(--accent-cyan);">🐍 MEDUSA v2025.9.0 - Security Guardian
+🎯 Target: .
+🔧 Mode: Full
+📁 Found 145 scannable files
+
+📊 Scanning 145 files with 6 workers...
+✅ Scanned 145 files
+
+============================================================
+🎯 PARALLEL SCAN COMPLETE
+============================================================
+📂 Files scanned: 145
+⚡ Files cached: 0
+🔍 Issues found: 114
+⏱️ Total time: 47.28s
+📈 Cache hit rate: 0.0%
+🔧 Scanners used: bandit, eslint, shellcheck, yamllint
+============================================================
+
+📊 Reports generated:
+  JSON → .medusa/reports/medusa-scan-20250119-083045.json
+  HTML → .medusa/reports/medusa-scan-20250119-083045.html
+  Markdown → .medusa/reports/medusa-scan-20250119-083045.md
+
+✅ Scan complete!</code></pre>
+
+        <h2 id="core-features">3. Core Features Deep Dive</h2>
+
+        <h3>74 Specialized Scanners</h3>
+
+        <p>MEDUSA includes scanners for every major language and platform:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Languages/Platforms</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Backend</strong></td>
+                    <td>Python, Go, Rust, Java, C/C++, PHP, Ruby, Perl, Elixir</td>
+                </tr>
+                <tr>
+                    <td><strong>JVM</strong></td>
+                    <td>Kotlin, Scala, Groovy</td>
+                </tr>
+                <tr>
+                    <td><strong>Functional</strong></td>
+                    <td>Haskell, OCaml, F#, Clojure, Erlang</td>
+                </tr>
+                <tr>
+                    <td><strong>Mobile</strong></td>
+                    <td>Swift, Kotlin (Android)</td>
+                </tr>
+                <tr>
+                    <td><strong>Frontend</strong></td>
+                    <td>JavaScript, TypeScript, CSS</td>
+                </tr>
+                <tr>
+                    <td><strong>Infrastructure</strong></td>
+                    <td>Terraform, Kubernetes, Docker, CloudFormation</td>
+                </tr>
+                <tr>
+                    <td><strong>Config</strong></td>
+                    <td>YAML, JSON, TOML, INI, ENV files</td>
+                </tr>
+                <tr>
+                    <td><strong>Shell</strong></td>
+                    <td>Bash, PowerShell, Zsh, Fish</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Intelligent False Positive Reduction</h3>
+
+        <p>MEDUSA's FP filter uses context-aware analysis to reduce noise by 40-60%:</p>
+
+        <ul>
+            <li><strong>Security wrapper detection:</strong> Recognizes SecureString, EncryptedCredential patterns</li>
+            <li><strong>Docstring/comment exclusion:</strong> Ignores security-related documentation</li>
+            <li><strong>Context-aware class analysis:</strong> Understands if code is in test files</li>
+            <li><strong>Test/mock file identification:</strong> Reduces alerts for test fixtures</li>
+            <li><strong>Known-safe pattern database:</strong> Curated list of false positive patterns</li>
+        </ul>
+
+        <h3>CVE Detection</h3>
+
+        <p>MEDUSA actively detects known critical CVEs:</p>
+
+        <div class="warning-box">
+            <strong><i class="fas fa-exclamation-triangle"></i> CVE-2025-55182 "React2Shell":</strong> CVSS 10.0 RCE
+            vulnerability affecting React Server Components (19.0.0-19.2.0) and Next.js App Router (15.0.0-15.0.4).
+            MEDUSA scans package.json, package-lock.json, yarn.lock, and pnpm-lock.yaml.
+        </div>
+
+        <div class="warning-box">
+            <strong><i class="fas fa-exclamation-triangle"></i> CVE-2025-6514:</strong> MCP-remote RCE vulnerability
+            affecting Model Context Protocol servers. MEDUSA detects vulnerable MCP configurations.
+        </div>
+
+        <h3>Report Formats</h3>
+
+        <pre><code># JSON - Machine-readable for CI/CD
+medusa scan . --format json
+
+# HTML - Beautiful glassmorphism UI with charts
+medusa scan . --format html
+
+# Markdown - GitHub/wiki friendly
+medusa scan . --format markdown
+
+# SARIF - GitHub Security tab integration
+medusa scan . --format sarif
+
+# All formats at once
+medusa scan . --format all</code></pre>
+
+        <h2 id="ai-security">4. AI Agent Security (180+ Rules)</h2>
+
+        <p>This is where MEDUSA truly shines. With 180+ specialized rules for AI/LLM security, it's the first SAST tool
+            purpose-built for the agentic era.</p>
+
+        <h3>Attack Categories Covered</h3>
+
+        <h4><i class="fas fa-keyboard" style="color: var(--accent-red);"></i> Context & Input Attacks</h4>
+        <ul>
+            <li>Prompt injection patterns</li>
+            <li>Role/persona manipulation</li>
+            <li>Hidden instructions in system prompts</li>
+            <li>Obfuscation tricks (Base64, Unicode, etc.)</li>
+        </ul>
+
+        <h4><i class="fas fa-memory" style="color: var(--accent-orange);"></i> Memory & State Attacks</h4>
+        <ul>
+            <li>Memory poisoning</li>
+            <li>Context manipulation</li>
+            <li>Checkpoint tampering</li>
+            <li>Cross-session data exposure</li>
+        </ul>
+
+        <h4><i class="fas fa-tools" style="color: var(--accent-purple);"></i> Tool & Action Attacks</h4>
+        <ul>
+            <li>Tool poisoning (CVE-2025-6514)</li>
+            <li>Command injection via tools</li>
+            <li>Tool name spoofing</li>
+            <li>Confused deputy patterns</li>
+        </ul>
+
+        <h4><i class="fas fa-sitemap" style="color: var(--accent-cyan);"></i> Workflow & Routing Attacks</h4>
+        <ul>
+            <li>Router manipulation</li>
+            <li>Agent impersonation</li>
+            <li>Workflow hijacking</li>
+            <li>Delegation abuse</li>
+        </ul>
+
+        <h4><i class="fas fa-database" style="color: var(--accent-green);"></i> RAG & Knowledge Attacks</h4>
+        <ul>
+            <li>Knowledge base poisoning</li>
+            <li>Embedding pipeline attacks</li>
+            <li>Source confusion</li>
+            <li>Retrieval manipulation</li>
+        </ul>
+
+        <h3>Supported AI Configuration Files</h3>
+
+        <p>MEDUSA automatically scans these AI-related files:</p>
+
+        <pre><code>.cursorrules          # Cursor AI instructions
+CLAUDE.md             # Claude Code context
+.claude/              # Claude configuration directory
+copilot-instructions.md  # GitHub Copilot
+AGENTS.md             # Multi-agent definitions
+mcp.json              # MCP server configs
+mcp-config.json       # MCP configuration
+*.mcp.ts / *.mcp.py   # MCP server code
+rag.json              # RAG configurations
+knowledge.json        # Knowledge base configs
+memory.json           # Agent memory configs</code></pre>
+
+        <h3>Quick AI Security Scan</h3>
+
+        <div class="command-block">
+            <code>medusa scan . --ai-only</code>
+        </div>
+
+        <pre><code style="color: var(--accent-orange);"># Example Output:
+🔍 AI Security Scan Results
+├── .cursorrules: 3 issues (1 CRITICAL, 2 HIGH)
+│   └── AIC001: Prompt injection - ignore previous instructions (line 15)
+│   └── AIC011: Tool shadowing - override default tools (line 23)
+├── mcp-config.json: 2 issues (2 HIGH)
+│   └── MCP003: Dangerous path - home directory access (line 8)
+└── rag_config.json: 1 issue (1 CRITICAL)
+    └── AIR010: Knowledge base injection pattern detected (line 45)</code></pre>
+
+        <h2 id="owasp-mapping">5. OWASP LLM Top 10 2025 Coverage</h2>
+
+        <p>MEDUSA is fully aligned with the OWASP Top 10 for LLM Applications 2025:</p>
+
+        <div class="owasp-mapping">
+            <h4><i class="fas fa-shield-alt"></i> OWASP LLM Top 10 2025 Mapping</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>OWASP Risk</th>
+                        <th>MEDUSA Detection</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>LLM01: Prompt Injection</strong></td>
+                        <td><i class="fas fa-check-circle" style="color: var(--accent-green);"></i> AIC001-AIC020 rules
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>LLM02: Sensitive Information Disclosure</strong></td>
+                        <td><i class="fas fa-check-circle" style="color: var(--accent-green);"></i> AIS001-AIS015 rules
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>LLM03: Supply Chain</strong></td>
+                        <td><i class="fas fa-check-circle" style="color: var(--accent-green);"></i> CVE detection +
+                            dependency scanning</td>
+                    </tr>
+                    <tr>
+                        <td><strong>LLM04: Data and Model Poisoning</strong></td>
+                        <td><i class="fas fa-check-circle" style="color: var(--accent-green);"></i> AIR001-AIR020 RAG
+                            rules</td>
+                    </tr>
+                    <tr>
+                        <td><strong>LLM05: Improper Output Handling</strong></td>
+                        <td><i class="fas fa-check-circle" style="color: var(--accent-green);"></i> AIO001-AIO010 rules
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>LLM06: Excessive Agency</strong></td>
+                        <td><i class="fas fa-check-circle" style="color: var(--accent-green);"></i> MCP/tool permission
+                            rules</td>
+                    </tr>
+                    <tr>
+                        <td><strong>LLM07: System Prompt Leakage</strong></td>
+                        <td><i class="fas fa-check-circle" style="color: var(--accent-green);"></i> System prompt
+                            exposure detection</td>
+                    </tr>
+                    <tr>
+                        <td><strong>LLM08: Vector and Embedding Weaknesses</strong></td>
+                        <td><i class="fas fa-check-circle" style="color: var(--accent-green);"></i> RAG poisoning rules
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>LLM09: Misinformation</strong></td>
+                        <td><i class="fas fa-check-circle" style="color: var(--accent-green);"></i> Knowledge base
+                            integrity rules</td>
+                    </tr>
+                    <tr>
+                        <td><strong>LLM10: Unbounded Consumption</strong></td>
+                        <td><i class="fas fa-check-circle" style="color: var(--accent-green);"></i> Resource limit
+                            configuration checks</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2 id="usage-examples">6. Real-World Usage Examples</h2>
+
+        <h3>Scanning a Python Project</h3>
+
+        <pre><code># Full scan with all reports
+medusa scan ./my-python-app --format all
+
+# Quick scan (changed files only)
+medusa scan ./my-python-app --quick
+
+# Scan with 8 workers for faster processing
+medusa scan ./my-python-app --workers 8</code></pre>
+
+        <h3>Scanning a Node.js/React Project</h3>
+
+        <pre><code># Check for React2Shell CVE
+medusa scan ./my-react-app
+
+# Output includes:
+# 🚨 CRITICAL: CVE-2025-55182 React2Shell detected
+#    package.json: react@19.1.0 (vulnerable: 19.0.0-19.2.0)
+#    Fix: Upgrade to react@19.0.1+</code></pre>
+
+        <h3>Scanning AI Agent Configurations</h3>
+
+        <pre><code># Scan only AI-related files
+medusa scan . --ai-only
+
+# Scan MCP server configuration
+medusa scan ./mcp-servers/</code></pre>
+
+        <h3>Fail on High Severity (CI/CD)</h3>
+
+        <pre><code># Fail the build if HIGH or CRITICAL issues found
+medusa scan . --fail-on high
+
+# Exit codes:
+# 0 = No issues at or above threshold
+# 1 = Issues found at or above threshold
+# 2 = Scan error</code></pre>
+
+        <h2 id="ide-integration">7. IDE Integration</h2>
+
+        <p>MEDUSA integrates with popular AI-powered IDEs:</p>
+
+        <h3>Claude Code</h3>
+        <pre><code># Initialize for Claude Code
+medusa init --ide claude-code
+
+# Creates CLAUDE.md with MEDUSA instructions</code></pre>
+
+        <h3>Cursor</h3>
+        <pre><code># Initialize for Cursor
+medusa init --ide cursor
+
+# Creates .cursorrules with security context</code></pre>
+
+        <h3>Multiple IDEs</h3>
+        <pre><code># Initialize for multiple IDEs
+medusa init --ide claude-code --ide cursor --ide gemini-cli
+
+# Or all at once
+medusa init --ide all</code></pre>
+
+        <div class="success-box">
+            <strong><i class="fas fa-check-circle"></i> Best Practice:</strong> After initializing IDE integration, your
+            AI coding assistant will automatically consider security context when generating code, and you can ask it to
+            run MEDUSA scans.
+        </div>
+
+        <h2 id="cicd">8. CI/CD Integration</h2>
+
+        <h3>GitHub Actions Example</h3>
+
+        <pre><code>name: Security Scan
+
+on: [push, pull_request]
+
+jobs:
+  security:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          
+      - name: Install MEDUSA
+        run: pip install medusa-security
+        
+      - name: Initialize MEDUSA
+        run: medusa init
+        
+      - name: Install scanners
+        run: medusa install --all --yes
+        
+      - name: Run security scan
+        run: medusa scan . --format sarif --fail-on high
+        
+      - name: Upload SARIF to GitHub
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: .medusa/reports/*.sarif</code></pre>
+
+        <h3>GitLab CI Example</h3>
+
+        <pre><code>security_scan:
+  stage: test
+  image: python:3.11
+  script:
+    - pip install medusa-security
+    - medusa init
+    - medusa install --all --yes
+    - medusa scan . --format json --fail-on high
+  artifacts:
+    reports:
+      sast: .medusa/reports/*.json</code></pre>
+
+        <h2 id="comparison">9. MEDUSA vs Other Tools</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>MEDUSA</th>
+                    <th>Bandit</th>
+                    <th>SonarQube</th>
+                    <th>Semgrep</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Languages</strong></td>
+                    <td style="color: var(--accent-green);">42+</td>
+                    <td>Python only</td>
+                    <td>29</td>
+                    <td>~30</td>
+                </tr>
+                <tr>
+                    <td><strong>AI Security Rules</strong></td>
+                    <td style="color: var(--accent-green);">180+</td>
+                    <td><i class="fas fa-times" style="color: var(--accent-red);"></i></td>
+                    <td><i class="fas fa-times" style="color: var(--accent-red);"></i></td>
+                    <td>Limited</td>
+                </tr>
+                <tr>
+                    <td><strong>Server Required</strong></td>
+                    <td style="color: var(--accent-green);">No</td>
+                    <td>No</td>
+                    <td style="color: var(--accent-red);">Yes</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td><strong>FP Filtering</strong></td>
+                    <td style="color: var(--accent-green);">40-60% reduction</td>
+                    <td>Manual</td>
+                    <td>Limited</td>
+                    <td>Manual</td>
+                </tr>
+                <tr>
+                    <td><strong>Parallel Scanning</strong></td>
+                    <td style="color: var(--accent-green);">10-40x faster</td>
+                    <td>Sequential</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td><strong>IDE Integration</strong></td>
+                    <td style="color: var(--accent-green);">6 AI IDEs</td>
+                    <td>Limited</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td><strong>Cost</strong></td>
+                    <td style="color: var(--accent-green);">Free/Open Source</td>
+                    <td>Free</td>
+                    <td>Free/Paid tiers</td>
+                    <td>Free/Paid tiers</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 id="best-practices">10. Best Practices</h2>
+
+        <h3>When to Run MEDUSA</h3>
+
+        <ul>
+            <li><strong>Pre-commit:</strong> Quick scan on changed files</li>
+            <li><strong>Pull Request:</strong> Full scan with --fail-on high</li>
+            <li><strong>Main branch:</strong> Comprehensive scan with all reports</li>
+            <li><strong>Weekly:</strong> Full audit scan with AI-only focus</li>
+        </ul>
+
+        <h3>Configuration Best Practices</h3>
+
+        <pre><code># .medusa.yml
+version: "1.0"
+
+scan:
+  workers: 6
+  cache: true
+  fail_on: high
+  
+exclude:
+  - "node_modules/"
+  - "venv/"
+  - "*.test.py"
+  - "**/__tests__/**"
+
+ai_security:
+  enabled: true
+  strict_mode: true
+  
+reports:
+  formats:
+    - json
+    - sarif
+  output_dir: ".medusa/reports"</code></pre>
+
+        <h3>Handling Findings</h3>
+
+        <div class="success-box">
+            <strong><i class="fas fa-check-circle"></i> Prioritization Framework:</strong>
+            <ol>
+                <li><strong>CRITICAL:</strong> Fix immediately - CVEs, prompt injection in production</li>
+                <li><strong>HIGH:</strong> Fix before merge - Tool poisoning, RAG vulnerabilities</li>
+                <li><strong>MEDIUM:</strong> Plan for next sprint - Configuration issues</li>
+                <li><strong>LOW:</strong> Track and address - Style/best practice issues</li>
+            </ol>
+        </div>
+
+        <h3>Team Workflow</h3>
+
+        <ol>
+            <li>Add MEDUSA to CI/CD pipeline</li>
+            <li>Set <code>--fail-on high</code> for pull requests</li>
+            <li>Review findings in weekly security triage</li>
+            <li>Track false positives and update <code>.medusa.yml</code> exclusions</li>
+            <li>Run <code>--ai-only</code> scans when updating AI configurations</li>
+        </ol>
+
+        <!-- Related Guides -->
+        <div class="related-guides">
+            <h3><i class="fas fa-book"></i> Related Guides</h3>
+            <ul>
+                <li><a href="/guides/llm-jailbreaking-defense.html">LLM Jailbreaking Defense Guide</a> - Understand the
+                    attacks MEDUSA detects</li>
+                <li><a href="/guides/unicode-llm-attacks.html">Unicode-Based LLM Attacks</a> - Deep dive into
+                    obfuscation techniques</li>
+                <li><a href="/guides/llm-jailbreaking-defense-advanced.html">Advanced LLM Security</a> - Enterprise
+                    defense strategies</li>
+            </ul>
+        </div>
+
+        <p style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); color: var(--text-muted);">
+            <strong>Author:</strong> TheHGTech Security Team<br>
+            <strong>Last Updated:</strong> January 2026<br>
+            <strong>Reading Time:</strong> 25 minutes<br>
+            <strong>Tool Version:</strong> MEDUSA v2025.9.0.10
+        </p>
+
+        <!-- Interaction Bar -->
+        <div class="interaction-bar">
+            <div class="like-section">
+                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                    <i class="far fa-heart"></i> <span id="likeText">Like this guide</span>
+                </button>
+            </div>
+            <div class="action-buttons">
+                <div class="share-buttons">
+                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"
+                        aria-label="Share on Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"
+                        aria-label="Share on LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link">
+                        <i class="fas fa-link"></i>
+                    </button>
+                </div>
+                <div class="button-separator"></div>
+                <button onclick="printArticle()" class="print-btn" title="Print" aria-label="Print">
+                    <i class="fas fa-print"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/interaction-bar.js?v=20251217"></script>
+</body>
+
+</html>

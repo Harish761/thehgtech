@@ -1,6 +1,18 @@
 {
   "guides": [
     {
+      "id": "medusa-security-scanner",
+      "title": "MEDUSA Security Scanner: AI-First SAST with 180+ AI Rules",
+      "category": "AI Security",
+      "excerpt": "Complete guide to MEDUSA, the AI-first SAST tool with 74 scanners and 180+ AI agent security rules. OWASP LLM Top 10 2025 coverage, CI/CD integration, and IDE setup.",
+      "readTime": "25 min",
+      "level": "Beginner to Intermediate",
+      "date": "Jan 27, 2026",
+      "badge": "New",
+      "featured": true,
+      "image": "/images/guides/medusa-security-scanner.png"
+    },
+    {
       "id": "ai-agent-security",
       "title": "Securing Autonomous AI Agents: The 2026 Architecture Guide",
       "category": "AI Security",
