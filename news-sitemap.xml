@@ -4,6 +4,59 @@
 
   <!-- ========== LATEST NEWS ARTICLES (Last 48 hours for Google News) ========== -->
   
+  <!-- January 27, 2026 - Niche Research Series -->
+  <url>
+    <loc>https://thehgtech.com/articles/infostealer-mfa-bypass-2026.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-01-27T00:00:00+05:30</news:publication_date>
+      <news:title>Infostealer Malware: Why Your MFA Is Already Compromised</news:title>
+      <news:keywords>Infostealer, Lumma, RedLine, session hijacking, MFA bypass, credential theft, cookie theft</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/oauth-worms-saas-attack-2026.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-01-27T00:00:00+05:30</news:publication_date>
+      <news:title>OAuth Worms: The Silent SaaS-to-SaaS Attack Vector Nobody's Watching</news:title>
+      <news:keywords>OAuth worm, SaaS security, consent phishing, Microsoft 365, Google Workspace, cloud attack</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/prompt-injection-physical-ai-2026.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-01-27T00:00:00+05:30</news:publication_date>
+      <news:title>Prompt Injection Goes Physical: Hacking Self-Driving Cars and Drones with Text</news:title>
+      <news:keywords>prompt injection, autonomous vehicles, self-driving cars, drones, embodied AI, CHAI attack</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/shinyhunters-vishing-mfa-bypass-2026.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-01-27T00:00:00+05:30</news:publication_date>
+      <news:title>ShinyHunters Voice Phishing: How Hackers Are Bypassing MFA in Real-Time</news:title>
+      <news:keywords>ShinyHunters, vishing, voice phishing, MFA bypass, SSO hijacking, Okta, social engineering</news:keywords>
+    </news:news>
+  </url>
+
   <!-- January 17, 2026 -->
   <url>
     <loc>https://thehgtech.com/articles/crowdstrike-seraphic-browser-security-2026.html</loc>

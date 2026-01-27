@@ -69,6 +69,51 @@
   
   <!-- ========== ARTICLES - HIGH TRAFFIC POTENTIAL ========== -->
   
+  <!-- January 27, 2026 Articles - Niche Research Series -->
+  <url>
+    <loc>https://thehgtech.com/articles/infostealer-mfa-bypass-2026.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <lastmod>2026-01-27</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/infostealer-mfa-bypass-2026.png</image:loc>
+      <image:title>Infostealer Malware: Why Your MFA Is Already Compromised</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://thehgtech.com/articles/oauth-worms-saas-attack-2026.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <lastmod>2026-01-27</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/oauth-worms-saas-attack-2026.png</image:loc>
+      <image:title>OAuth Worms: The Silent SaaS-to-SaaS Attack Vector</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://thehgtech.com/articles/prompt-injection-physical-ai-2026.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <lastmod>2026-01-27</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/prompt-injection-physical-ai-2026.png</image:loc>
+      <image:title>Prompt Injection Goes Physical: Hacking Self-Driving Cars with Text</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://thehgtech.com/articles/shinyhunters-vishing-mfa-bypass-2026.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <lastmod>2026-01-27</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/shinyhunters-vishing-mfa-bypass-2026.png</image:loc>
+      <image:title>ShinyHunters Voice Phishing: Bypassing MFA in Real-Time</image:title>
+    </image:image>
+  </url>
+
   <!-- January 22, 2026 Articles -->
   <url>
     <loc>https://thehgtech.com/articles/luxshare-apple-breach-2025.html</loc>

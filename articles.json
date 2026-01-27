@@ -17,6 +17,86 @@
       "author": "TheHGTech Bot"
     },
     {
+      "id": "article-infostealer-mfa-bypass-2026",
+      "title": "Infostealer Malware: Why Your MFA Is Already Compromised",
+      "date": "January 27, 2026",
+      "category": "Malware Analysis",
+      "badge": "ACTIVE THREAT",
+      "excerpt": "Infostealers don't steal your credentials—they steal your authenticated session. Analysis of why Lumma, RedLine, and Vidar render MFA completely useless.",
+      "image": "images/articles/infostealer-mfa-bypass-2026.png",
+      "tags": [
+        "Infostealer",
+        "Lumma",
+        "RedLine",
+        "Session Hijacking",
+        "MFA Bypass",
+        "Credential Theft",
+        "Cookie Theft"
+      ],
+      "author": "Harish G",
+      "externalUrl": "articles/infostealer-mfa-bypass-2026.html"
+    },
+    {
+      "id": "article-oauth-worms-saas-attack-2026",
+      "title": "OAuth Worms: The Silent SaaS-to-SaaS Attack Vector Nobody's Watching",
+      "date": "January 27, 2026",
+      "category": "Cloud Security",
+      "badge": "EMERGING",
+      "excerpt": "OAuth worms spread across M365, Google Workspace, Slack, and Salesforce using consent-based propagation. The 2026 threat nobody's prepared for.",
+      "image": "images/articles/oauth-worms-saas-attack-2026.png",
+      "tags": [
+        "OAuth",
+        "SaaS Security",
+        "Microsoft 365",
+        "Google Workspace",
+        "Consent Phishing",
+        "Cloud Attack",
+        "MFA Bypass"
+      ],
+      "author": "Harish G",
+      "externalUrl": "articles/oauth-worms-saas-attack-2026.html"
+    },
+    {
+      "id": "article-prompt-injection-physical-ai-2026",
+      "title": "Prompt Injection Goes Physical: Hacking Self-Driving Cars and Drones with Text",
+      "date": "January 27, 2026",
+      "category": "AI Security Research",
+      "badge": "NEW RESEARCH",
+      "excerpt": "UC Santa Cruz reveals CHAI attacks: text placed in the physical environment can hijack autonomous vehicles and drones. Environmental indirect prompt injection explained.",
+      "image": "images/articles/prompt-injection-physical-ai-2026.png",
+      "tags": [
+        "Prompt Injection",
+        "Autonomous Vehicles",
+        "Self-Driving Cars",
+        "Drones",
+        "Embodied AI",
+        "CHAI Attack",
+        "LLM Security"
+      ],
+      "author": "Harish G",
+      "externalUrl": "articles/prompt-injection-physical-ai-2026.html"
+    },
+    {
+      "id": "article-shinyhunters-vishing-mfa-bypass-2026",
+      "title": "ShinyHunters Voice Phishing: How Hackers Are Bypassing MFA in Real-Time",
+      "date": "January 27, 2026",
+      "category": "Threat Intelligence",
+      "badge": "THREAT ACTOR",
+      "excerpt": "ShinyHunters' vishing campaign targeting 100+ enterprises with real-time MFA bypass. Technical analysis of how they hijack Okta, Microsoft, and Google SSO sessions.",
+      "image": "images/articles/shinyhunters-vishing-mfa-bypass-2026.png",
+      "tags": [
+        "ShinyHunters",
+        "Vishing",
+        "Voice Phishing",
+        "MFA Bypass",
+        "SSO",
+        "Okta",
+        "Social Engineering"
+      ],
+      "author": "Harish G",
+      "externalUrl": "articles/shinyhunters-vishing-mfa-bypass-2026.html"
+    },
+    {
       "id": "article-luxshare-apple-breach-2025",
       "title": "Luxshare Ransomware Attack: Apple Vision Pro CAD Designs and Secret Product Data Stolen",
       "date": "January 22, 2026",
