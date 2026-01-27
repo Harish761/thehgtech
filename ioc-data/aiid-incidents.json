@@ -1527,20 +1527,12 @@
       "date": "2025-10-29",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1252",
-      "incident_id": 1252,
-      "title": "Judges in New Jersey and Mississippi Admit AI Tools Produced Erroneous Federal Court Filings",
-      "date": "2025-10-29",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 192,
+    "total": 191,
     "last7Days": 5,
     "last30Days": 38
   },
-  "lastUpdated": "2026-01-27T02:08:49.686330+05:30"
+  "lastUpdated": "2026-01-27T08:03:13.957870+05:30"
 }
