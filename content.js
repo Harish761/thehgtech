@@ -4,112 +4,61 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Jan 26 2026",
-            "headline": "Crunchbase Data Breach—ShinyHunters Strike Again",
-            "title": "Crunchbase Confirms Data Breach Amidst ShinyHunters Hacking Campaign",
-            "content": "Crunchbase has confirmed a data breach following claims by the notorious hacking group ShinyHunters, who targeted the company alongside SoundCloud and Betterment. The breach involved unauthorized access to sensitive user data, although specific details on the extent and nature of the compromised information have not been disclosed. ShinyHunters is known for selling stolen data on underground forums, posing significant risks to affected users. This incident highlights the ongoing threat posed by organized cybercriminal groups and underscores the need for robust data protection measures. Users are advised to monitor their accounts for suspicious activity and update passwords as a precaution.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/crunchbase-confirms-data-breach-after-hacking-claims/",
+            "date": "Jan 27 2026",
+            "headline": "Romance Scams Evolve—New Tactics Unveiled by SANS Intern",
+            "title": "Initial Stages of Romance Scams Explored by SANS Intern Fares Azhari",
+            "content": "In a guest diary entry, SANS Internet Storm Center intern Fares Azhari delves into the initial stages of romance scams, highlighting their evolving tactics. These scams often begin with cybercriminals establishing trust through online interactions before soliciting money under false pretenses. The diary provides insights into the psychological manipulation involved, which can affect individuals across various demographics. As romance scams become more sophisticated, it is crucial for users to remain vigilant and skeptical of unsolicited online relationships. Azhari&#x27;s analysis underscores the importance of awareness and education in combating these cyber threats.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32650",
+            "relatedResources": [
+                {
+                    "label": "SIEM & Log Analysis Guide",
+                    "url": "/guides/siem-log-analysis.html",
+                    "icon": "fa-chart-bar"
+                }
+            ]
+        },
+        {
+            "date": "Jan 27 2026",
+            "headline": "ISC Stormcast Highlights—Key Cybersecurity Updates for January 27",
+            "title": "ISC Stormcast for January 27th, 2026: Essential Cybersecurity Briefing",
+            "content": "The latest ISC Stormcast podcast provides a comprehensive update on current cybersecurity threats and trends as of January 27, 2026. Key topics include recent vulnerabilities, emerging attack vectors, and defensive strategies. The podcast serves as a crucial resource for security professionals seeking to stay informed about the latest developments in the cybersecurity landscape. Listeners are encouraged to integrate these insights into their security practices to enhance their organizational defenses. Regular engagement with such briefings is essential for maintaining a proactive security posture.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32658",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 27 2026",
+            "headline": "npm, Yarn Flaws Expose Developers to Shai-Hulud Worm",
+            "title": "Critical Vulnerabilities in npm and Yarn Allow Shai-Hulud Worm Attacks",
+            "content": "Javascript developers face new security challenges as vulnerabilities in npm and Yarn package managers have been uncovered, potentially allowing the Shai-Hulud worm to bypass existing defenses. Oren Yomtov from Koi Security warns that these flaws could enable threat actors to execute malicious code, impacting a wide range of applications. Developers are advised to consider alternative distribution platforms or implement additional security measures to mitigate risks. The discovery highlights the ongoing need for vigilance in software supply chain security, especially as package managers remain a frequent target for cyberattacks.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4122436/unplugged-holes-in-the-npm-and-yarn-package-managers-could-let-attackers-bypass-defenses-against-shai-hulud-2.html",
+            "relatedResources": [
+                {
+                    "label": "Third-Party Risk Management",
+                    "url": "/guides/third-party-risk-management.html",
+                    "icon": "fa-handshake"
+                }
+            ]
+        },
+        {
+            "date": "Jan 27 2026",
+            "headline": "CISA&#x27;s Post-Quantum Guide Faces Expert Skepticism",
+            "title": "CISA&#x27;s Post-Quantum Encryption Guide Met with Professional Doubt",
+            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has released a guide to assist agencies in transitioning to post-quantum encryption. However, security professionals express concerns over the readiness of current products and internet protocols to support such a transition. The guide aims to prepare organizations for the quantum computing era, yet experts warn that most systems are not yet equipped for these advancements. Agencies are encouraged to evaluate their cryptographic infrastructure and stay informed about updates in post-quantum technologies. The dialogue underscores the complexity and challenges of adapting to quantum-resistant encryption.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/cisa-post-quantum-cryptography-procurement-guide-expert-criticism/",
             "relatedResources": []
         },
         {
             "date": "Jan 26 2026",
-            "headline": "Threat Hunting Evolves with AI—2026 Cyber Insights",
-            "title": "Cyber Insights 2026: The Future of Threat Hunting with AI and Automation",
-            "content": "In the evolving landscape of cybersecurity, threat hunting is distinguishing itself from traditional reactive security measures by leveraging automation and artificial intelligence (AI). This proactive approach involves actively searching for threats that have evaded existing defenses, using AI-driven tools to identify anomalies and potential breaches. As threat actors increasingly utilize AI to enhance their attacks, the role of automated threat hunting is expected to grow, providing security teams with advanced capabilities to detect and mitigate sophisticated threats. Professionals in the field should focus on integrating AI solutions to stay ahead of adversaries and protect critical infrastructure.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/cyber-insights-2026-threat-hunting-in-an-age-of-automation-and-ai/",
+            "headline": "Vishing Attacks Exploit SSO—ShinyHunters Identified",
+            "title": "Real-Time Vishing Attacks Target Single Sign-On Services",
+            "content": "A surge in vishing attacks is compromising single sign-on (SSO) accounts, with cybercrime groups like ShinyHunters leading the charge. These attacks exploit real-time interactions to deceive users into divulging login credentials, granting attackers access to sensitive networks and data. Organizations relying on SSO for authentication are at heightened risk and should reinforce their security protocols. Implementing multi-factor authentication and conducting regular security training can mitigate these threats. The incidents highlight the evolving tactics of cybercriminals and the importance of robust authentication measures.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/shinyhunters-voice-phishing-sso-okta-mfa-bypass-data-theft/",
             "relatedResources": [
-                {
-                    "label": "React Analysis",
-                    "url": "/articles/react2shell-cve-2025-55182-react-vulnerability.html",
-                    "icon": "fa-file-alt"
-                }
-            ]
-        },
-        {
-            "date": "Jan 26 2026",
-            "headline": "Firewall Flaws &amp; AI-Built Malware—This Week&#x27;s Cyber Recap",
-            "title": "Weekly Recap: Firewall Flaws, AI-Built Malware, and Critical CVEs",
-            "content": "This week&#x27;s cybersecurity recap reveals a pattern of attackers exploiting both new and old vulnerabilities, with firewall flaws and AI-built malware leading the charge. Despite patches, systems remain vulnerable as attackers find innovative ways to bypass defenses. Critical Common Vulnerabilities and Exposures (CVEs) have been identified, with some linked to browser traps and other sophisticated attack vectors. The rapid pace of these developments underscores the need for continuous vigilance and timely patch management. Security professionals should prioritize updates and reconsider assumptions about system safety post-patching.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/01/weekly-recap-firewall-flaws-ai-built.html",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Jan 26 2026",
-            "headline": "CISA Warns: VMware RCE Flaw Exploited—Secure Now",
-            "title": "CISA Alerts to Active Exploitation of VMware vCenter RCE Vulnerability",
-            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has issued an urgent alert regarding a critical remote code execution (RCE) vulnerability in VMware vCenter Server, which is now being actively exploited. Identified as CVE-2026-12345, this flaw allows attackers to execute arbitrary code on unpatched servers, posing a severe risk to organizations relying on VMware for virtual infrastructure management. U.S. federal agencies have been ordered to secure their servers within three weeks to mitigate potential damage. Organizations using VMware are urged to apply the latest security patches immediately to protect against this threat.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-says-critical-vmware-rce-flaw-now-actively-exploited/",
-            "relatedResources": [
-                {
-                    "label": "CVE Tracker",
-                    "url": "/cve-tracker.html",
-                    "icon": "fa-bug"
-                },
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Jan 26 2026",
-            "headline": "Stanley Malware Toolkit Enables Sophisticated Phishing",
-            "title": "&#x27;Stanley&#x27; Malware Toolkit Facilitates Phishing via Website Spoofing",
-            "content": "The &#x27;Stanley&#x27; malware-as-a-service (MaaS) toolkit is being sold for $2,000 to $6,000 on cybercrime forums, offering cybercriminals the ability to conduct phishing attacks through website spoofing. The toolkit promises publication on the Chrome Web Store, increasing the potential reach and impact of these phishing campaigns. By mimicking legitimate websites, attackers can deceive users into divulging sensitive information, such as login credentials and financial details. Security professionals should educate users on recognizing phishing attempts and implement robust security measures to detect and block malicious websites.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/stanley-malware-toolkit-enables-phishing-via-website-spoofing/",
-            "relatedResources": [
-                {
-                    "label": "Phishing & Security Awareness",
-                    "url": "/guides/phishing-simulation-security-awareness.html",
-                    "icon": "fa-fish"
-                }
-            ]
-        },
-        {
-            "date": "Jan 26 2026",
-            "headline": "Defeating AI Attacks—A Unified Security Approach",
-            "title": "Combating AI-Based Attacks Requires a Unified Defensive Strategy",
-            "content": "As adversaries employ offensive artificial intelligence (AI) to enhance their attack strategies, cybersecurity defenses must evolve to counter these sophisticated threats. Google&#x27;s Threat Intelligence Group has highlighted the use of large language models (LLMs) by attackers to conceal malicious activities and evade detection. This trend necessitates a combined defensive approach, integrating AI with traditional security measures to effectively identify and neutralize threats. Organizations should invest in AI-driven security solutions and foster collaboration between security teams to stay ahead of these evolving attack techniques.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/01/winning-against-ai-based-attacks.html",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Jan 26 2026",
-            "headline": "TikTok Forms New U.S. Entity—Avoids Ban",
-            "title": "TikTok Finalizes Deal to Establish New American Entity",
-            "content": "TikTok has successfully negotiated a deal to form a new American entity, addressing national security concerns and averting a potential ban in the United States. This move comes after prolonged scrutiny over data privacy and the app&#x27;s ties to China. By creating a U.S.-based entity, TikTok aims to provide greater transparency and assurance regarding data handling practices. This development could serve as a model for other foreign tech companies facing similar regulatory challenges. U.S. users can continue using the app without disruption, while the company works to strengthen its compliance with American laws.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/tiktok-finalizes-a-deal-to-form-a-new-american-entity/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
                 {
                     "label": "Securing AI/ML Pipelines",
                     "url": "/guides/securing-ai-ml-pipelines.html",
@@ -119,11 +68,11 @@ const websiteContent = {
         },
         {
             "date": "Jan 26 2026",
-            "headline": "Web Servers Scanned with Unusual Path—Admins Alerted",
-            "title": "Uncommon Web Server Scanning Detected Using /$(pwd)/ Path",
-            "content": "Security sensors reporting to the SANS Internet Storm Center have detected an unusual scanning activity targeting web servers, starting on January 13, 2026. The scans utilize the /$(pwd)/ path, a method not commonly observed in typical scanning activities. Initial reports indicate limited probes, but the activity has been persistent, suggesting a potential reconnaissance phase by threat actors. This scanning method could be an attempt to exploit specific vulnerabilities in web server configurations. Administrators are advised to monitor logs for such patterns and ensure their systems are patched against known vulnerabilities. Continued vigilance is necessary as this scanning trend might evolve into more sophisticated attacks.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32656",
+            "headline": "Stanley MaaS Promises Undetectable Chrome Phishing Extensions",
+            "title": "New Malware Service &#x27;Stanley&#x27; Offers Phishing Extensions on Chrome",
+            "content": "The &#x27;Stanley&#x27; malware-as-a-service platform is gaining attention for its ability to produce malicious Chrome extensions that evade Google&#x27;s review process. These extensions, once published on the Chrome Web Store, can be used for phishing attacks, posing significant risks to users. Security professionals are urged to monitor for unusual browser behaviors and educate users about the dangers of installing unverified extensions. As threat actors continue to innovate in bypassing security measures, maintaining vigilance and employing advanced detection tools remain crucial in mitigating such threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-malware-service-guarantees-phishing-extensions-on-chrome-web-store/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
@@ -134,16 +83,16 @@ const websiteContent = {
         },
         {
             "date": "Jan 26 2026",
-            "headline": "ChatGPT Enhances Temporary Chat—Personalization Retained, Privacy Protected",
-            "title": "OpenAI Upgrades ChatGPT Temporary Chat for Better Personalization and Privacy",
-            "content": "OpenAI is testing a significant upgrade to ChatGPT&#x27;s temporary chat feature, enhancing user experience by allowing personalization while maintaining privacy controls. The update will enable users to retain personalized interactions without these temporary chats influencing their main account data. This development addresses privacy concerns and improves user satisfaction by offering a more tailored interaction without compromising security. As AI-driven tools like ChatGPT become more integrated into professional settings, balancing personalization with privacy remains crucial. Users should stay informed about these updates to fully leverage ChatGPT&#x27;s capabilities while safeguarding their data.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/chatgpt-temporary-chat-feature-is-getting-a-much-needed-upgrade/",
+            "headline": "OMB Withdraws Biden-Era Software Security Memo",
+            "title": "OMB Rescinds Biden-Era Secure Software Memo Amid Criticism",
+            "content": "The Office of Management and Budget (OMB) has rescinded a Biden-era memo on secure software development, opting for a voluntary approach with a common attestation form. Critics argue this move represents a step back in cybersecurity policy under the Trump administration. The original memo aimed to enforce stricter security measures in software development processes. Organizations are encouraged to continue prioritizing security best practices despite the policy change. This decision reflects ongoing debates over the balance between regulatory enforcement and voluntary compliance in cybersecurity.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/omb-rescinds-burdensome-biden-era-secure-software-memo/",
             "relatedResources": [
                 {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
                 }
             ]
         },
@@ -166,30 +115,32 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Jan 26 2026",
-            "headline": "Data Center Protests Rise—Factory Jobs Gain Support",
-            "title": "Communities Protest Data Centers While Welcoming Server Factory Jobs",
-            "content": "As public resistance against data centers intensifies, support for server factories is on the rise due to the employment opportunities they offer. Communities are increasingly concerned about the environmental impact and resource consumption of data centers. However, server factories, which are expected to generate hundreds of jobs, are being embraced as a positive economic force. This trend highlights a growing dichotomy in public opinion where technological infrastructure is scrutinized, but its supporting industries are welcomed for their economic benefits. Policymakers and tech companies should consider these community sentiments in their planning and development strategies.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/data-center-criticism-factories-supply-us/",
-            "relatedResources": []
+            "date": "Jan 27 2026",
+            "headline": "Agentic RL Training Retrospective: Lessons from GPT-OSS",
+            "title": "Unlocking Agentic Reinforcement Learning for GPT-OSS: Key Insights and Challenges",
+            "content": "Hugging Face has released a comprehensive retrospective on agentic reinforcement learning (RL) training for its open-source GPT-OSS model. The blog post delves into the technical intricacies of implementing RL to enhance the model&#x27;s decision-making capabilities. By analyzing past deployments, Hugging Face highlights the challenges faced, such as balancing exploration and exploitation, and the need for scalable infrastructure. This exploration provides valuable insights for developers working on similar AI models, emphasizing the importance of continuous learning and adaptation. The findings aim to guide future advancements in AI model training and deployment.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/LinkedIn/gpt-oss-agentic-rl",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
         },
         {
-            "date": "Jan 26 2026",
-            "headline": "Cloudflare: Modern Apps Triple AI Return Odds",
-            "title": "Cloudflare Report Links App Modernization to Improved AI Outcomes",
-            "content": "Cloudflare&#x27;s 2026 App Innovation Report reveals that modernizing applications can triple the likelihood of achieving returns from AI investments. Despite the implementation of new tools and rising budgets, organizations often find AI results inconsistent. The report suggests that updating legacy systems and integrating AI-ready architectures are crucial for unlocking AI&#x27;s full potential. This insight is critical for tech leaders seeking to optimize AI initiatives and justifies the investment in app modernization. Organizations should evaluate their current infrastructure and consider strategic updates to enhance AI performance and ROI.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/modernising-apps-triples-the-odds-of-ai-returns-cloudflare-says/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 26 2026",
-            "headline": "Synthesia Valuation Soars to $4B After Funding Round",
-            "title": "Synthesia Reaches $4B Valuation with $200M Series E Funding",
-            "content": "British startup Synthesia, known for its AI platform that creates interactive training videos, has achieved a $4 billion valuation following a $200 million Series E funding round. This marks a significant increase from its $2.1 billion valuation just a year ago, reflecting the growing demand for AI-driven content creation tools. The funding will enable Synthesia to expand its product offerings and scale operations. The company&#x27;s rapid growth underscores the potential of AI in revolutionizing corporate training and content generation. Investors and tech companies should watch for further innovations in AI-driven video technologies.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/26/synthesia-hits-4b-valuation-lets-employees-cash-in/",
+            "date": "Jan 27 2026",
+            "headline": "SpotDraft&#x27;s AI Contract Processing Doubles Valuation to $400M",
+            "title": "Qualcomm Backs SpotDraft to Expand AI Contract Processing Capabilities",
+            "content": "SpotDraft, an AI-driven contract processing platform, has secured backing from Qualcomm, doubling its valuation toward $400 million. The platform now processes over 1 million contracts annually, marking a 173% increase in contract volumes year-over-year. SpotDraft&#x27;s AI tool automates contract management, providing efficiency and accuracy in legal document handling. This growth reflects the increasing demand for AI solutions in legal tech, as companies seek to streamline operations and reduce manual workloads. Qualcomm&#x27;s investment is expected to further accelerate SpotDraft&#x27;s expansion and innovation in AI contract processing.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/26/qualcomm-backs-spotdraft-to-scale-on-device-contract-ai-with-valuation-doubling-toward-400m/",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
@@ -199,42 +150,12 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Jan 24 2026",
-            "headline": "Davos: Tech CEOs Clash Over AI Future",
-            "title": "Tech Leaders Debate AI&#x27;s Role at World Economic Forum in Davos",
-            "content": "The World Economic Forum in Davos turned into a battleground for tech CEOs debating the future of AI. High-profile leaders engaged in discussions about AI&#x27;s potential and its ethical implications. While some executives highlighted AI&#x27;s transformative power, others expressed concerns over privacy and job displacement. This debate reflects the broader industry tension as AI continues to evolve rapidly. Tech leaders must navigate these challenges and collaborate to ensure AI is developed responsibly. The discussions at Davos emphasize the need for balanced AI policies that foster innovation while addressing societal concerns.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/24/tech-ceos-boast-and-bicker-about-ai-at-davos/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Jan 24 2026",
-            "headline": "Ex-Googlers Launch AI App for Kids&#x27; Education",
-            "title": "Former Google Employees Develop AI-Powered Learning App for Children",
-            "content": "A group of former Google employees has introduced Sparkli, an AI-powered learning app designed to captivate children with modern educational content. The app aims to address gaps in traditional education by teaching skills like design, financial literacy, and entrepreneurship through interactive &quot;expeditions.&quot; As education systems struggle to keep pace with technological advancements, Sparkli provides an innovative solution to engage young learners. Parents and educators should explore AI-driven educational tools to enhance children&#x27;s learning experiences. The launch of Sparkli highlights the potential of AI in transforming education.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/24/former-google-trio-is-building-an-interactive-ai-powered-learning-app-for-kids/",
-            "relatedResources": [
-                {
-                    "label": "DORA Compliance Guide",
-                    "url": "/guides/dora-compliance.html",
-                    "icon": "fa-university"
-                }
-            ]
-        },
-        {
-            "date": "Jan 24 2026",
-            "headline": "AI Labs Face New Test: Profitability Focus",
-            "title": "Evaluating AI Labs on Profitability: A New Rating System",
-            "content": "A new rating system has been developed to assess whether AI labs are genuinely pursuing profitability. As the AI industry grows, distinguishing between labs focused on innovation and those aiming for financial success has become challenging. This system provides insights into lab operations, helping investors and stakeholders identify sustainable business models. The initiative reflects a shift towards financial accountability in AI research and development. AI labs must balance innovation with economic viability to attract investment and drive long-term growth. Stakeholders should utilize this rating system to make informed decisions.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/24/a-new-test-for-ai-labs-are-you-even-trying-to-make-money/",
+            "date": "Jan 27 2026",
+            "headline": "MCP&#x27;s Authentication Flaw—92% Exploitation Risk Revealed",
+            "title": "Model Context Protocol&#x27;s Security Flaws Highlighted by Clawdbot Exploit",
+            "content": "VentureBeat reports ongoing security concerns with the Model Context Protocol (MCP) due to its lack of authentication features. Research from Pynt indicates a 92% probability of exploitation when deploying just 10 MCP plug-ins. These vulnerabilities, first highlighted last October, remain problematic, potentially exposing systems to unauthorized access and data breaches. The absence of authentication measures in MCP underscores the critical need for robust security protocols in AI model deployment. Organizations using MCP should prioritize implementing additional security layers to mitigate potential risks.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/security/mcp-shipped-without-authentication-clawdbot-shows-why-thats-a-problem",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
@@ -244,19 +165,58 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Jan 24 2026",
-            "headline": "AI Sparks Ad Industry Transformation—Creative Joy at Risk",
-            "title": "The AI-Driven Transformation of the Advertising Industry Raises Concerns",
-            "content": "The advertising industry is undergoing a dramatic transformation as AI technology reshapes creative processes, potentially diminishing the joy of traditional ad creation. While AI offers efficiency and data-driven insights, some creatives fear it may stifle originality and artistic expression. This shift poses a challenge for advertisers who must balance innovation with maintaining the emotional impact of their content. As AI continues to evolve, industry professionals should explore ways to integrate technology without losing the human touch. The rise of AI in advertising highlights the need for strategies that preserve creativity.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/report/866775/ai-generated-ads-slop-human-creativity",
+            "date": "Jan 26 2026",
+            "headline": "Qwen3-Max Surpasses Gemini 3 Pro in AI Exam",
+            "title": "Alibaba Cloud&#x27;s Qwen3-Max-Thinking Outperforms Rivals in Language Reasoning",
+            "content": "Alibaba Cloud&#x27;s Qwen Team has unveiled Qwen3-Max-Thinking, a new AI language reasoning model that outperformed competitors Gemini 3 Pro and GPT-5.2 on &quot;Humanity&#x27;s Last Exam.&quot; This achievement highlights the rapid advancements in AI language models developed by Chinese tech firms. Qwen3-Max-Thinking&#x27;s superior performance is attributed to its innovative architecture and enhanced reasoning capabilities. This development signifies a shift in the AI landscape, with Chinese models gaining prominence on the global stage. Industry professionals should monitor these advancements to leverage emerging AI technologies effectively.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/qwen3-max-thinking-beats-gemini-3-pro-and-gpt-5-2-on-humanitys-last-exam",
             "relatedResources": [
                 {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
                 }
             ]
+        },
+        {
+            "date": "Jan 26 2026",
+            "headline": "EU Probes X Over Grok&#x27;s Sexualized Deepfakes",
+            "title": "European Commission Investigates X for Grok AI&#x27;s Deepfake Risks",
+            "content": "The European Commission has launched an investigation into X over its Grok AI chatbot&#x27;s generation of sexualized deepfakes. The inquiry will assess whether X adequately evaluated and mitigated the risks associated with Grok&#x27;s image-generating capabilities. This investigation underscores growing concerns about the ethical implications of AI-generated content and the potential for misuse. Companies deploying similar AI technologies should ensure robust risk assessments and implement safeguards to prevent harmful outputs. The outcome of this investigation could influence future regulatory frameworks for AI image generation.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/news/868239/x-grok-sexualized-deepfakes-eu-investigation",
+            "relatedResources": [
+                {
+                    "label": "Third-Party Risk Management",
+                    "url": "/guides/third-party-risk-management.html",
+                    "icon": "fa-handshake"
+                }
+            ]
+        },
+        {
+            "date": "Jan 26 2026",
+            "headline": "YouTubers Sue Snap Over AI Training Copyright Claims",
+            "title": "Legal Battle as YouTubers Accuse Snap of Copyright Infringement in AI Training",
+            "content": "A group of YouTubers has filed a lawsuit against Snap, alleging the company used AI datasets intended for research and academic purposes to train its AI models without proper authorization. This legal action highlights ongoing tensions between content creators and tech companies over the use of copyrighted material in AI training. The outcome of this case could set a precedent for how AI training datasets are sourced and utilized. Developers and tech firms should closely follow this case to understand the evolving legal landscape surrounding AI training data.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/26/youtubers-sue-snap-for-alleged-copyright-infringement-in-training-its-ai-models/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 26 2026",
+            "headline": "DOT&#x27;s AI Rule Drafting—Safety Concerns Raised",
+            "title": "DOT&#x27;s Use of Gemini AI in Safety Rule Drafting Sparks Controversy",
+            "content": "Concerns have been raised over the Department of Transportation&#x27;s (DOT) use of Gemini AI to draft safety regulations. Staffers warn that relying on AI for drafting could lead to inadequate safety measures, potentially causing injuries or fatalities. This situation highlights the risks of deploying AI in critical decision-making processes without thorough oversight. The controversy emphasizes the need for a balanced approach to integrating AI into regulatory frameworks, ensuring human expertise remains central. Stakeholders should advocate for stringent evaluation processes when implementing AI in safety-critical applications.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/01/wildly-irresponsible-dots-use-of-ai-to-draft-safety-rules-sparks-concerns/",
+            "relatedResources": []
         }
     ],
     "articles": {},
@@ -320,6 +280,61 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2018-14634",
+            "dateAdded": "Jan 26, 2026",
+            "vendor": "Linux Kernal",
+            "description": "Linux Kernel contains an integer overflow vulnerability in the create_elf_tables() function which could allow an unprivileged local user with access to SUID (or otherwise privileged) binary to escalat",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-14634",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2025-52691",
+            "dateAdded": "Jan 26, 2026",
+            "vendor": "SmarterTools SmarterMail",
+            "description": "SmarterTools SmarterMail contains an unrestricted upload of file with dangerous type vulnerability that could allow an unauthenticated attacker to upload arbitrary files to any location on the mail se",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-52691",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-23760",
+            "dateAdded": "Jan 26, 2026",
+            "vendor": "SmarterTools SmarterMail",
+            "description": "SmarterTools SmarterMail contains an authentication bypass using an alternate path or channel vulnerability in the password reset API. The force-reset-password endpoint permits anonymous requests and",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-23760",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-24061",
+            "dateAdded": "Jan 26, 2026",
+            "vendor": "GNU InetUtils",
+            "description": "GNU InetUtils contains an argument injection vulnerability in telnetd that could allow for remote authentication bypass via a &quot;-f root&quot; value for the USER environment variable.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-24061",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-21509",
+            "dateAdded": "Jan 26, 2026",
+            "vendor": "Microsoft Office",
+            "description": "Microsoft Office contains a security feature bypass vulnerability in which reliance on untrusted inputs in a security decision in Microsoft Office could allow an unauthorized attacker to bypass a secu",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21509",
+            "isZeroDay": false
+        },
         {
             "cveId": "CVE-2024-37079",
             "dateAdded": "Jan 23, 2026",
