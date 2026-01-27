@@ -1511,28 +1511,12 @@
       "date": "2025-11-01",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1159",
-      "incident_id": 1159,
-      "title": "Government\u2011Backed AI4Peat Mapping Tool Allegedly Misidentifies Granite Outcrops and Quarries as Peat",
-      "date": "2025-10-29",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1251",
-      "incident_id": 1251,
-      "title": "Purportedly AI-Generated Hunting Regulation Errors Reportedly Lead to Idaho Citation and Multi-State",
-      "date": "2025-10-29",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 191,
+    "total": 189,
     "last7Days": 5,
     "last30Days": 38
   },
-  "lastUpdated": "2026-01-27T18:41:45.857555+05:30"
+  "lastUpdated": "2026-01-27T22:14:23.387629+05:30"
 }
