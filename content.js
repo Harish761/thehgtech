@@ -5,6 +5,99 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Jan 27 2026",
+            "headline": "CISA Maps Post-Quantum Crypto to Enterprise Tech",
+            "title": "CISA Releases Post-Quantum Cryptography Readiness Guide for Enterprises",
+            "content": "The US Cybersecurity and Infrastructure Security Agency (CISA) has published a comprehensive advisory aligning post-quantum cryptography (PQC) standards with common enterprise hardware and software categories. This guide serves as an early reference for CIOs and security teams to assess the readiness of quantum-safe technologies. As quantum computing capabilities advance, the threat to current cryptographic systems grows, necessitating proactive measures. The advisory aids organizations in understanding which technologies are prepared for a quantum future and which may need upgrades. Enterprises are encouraged to review this mapping to ensure their systems remain secure against potential quantum threats.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4122752/cisa-releases-technology-readiness-list-for-post-quantum-cryptography.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 27 2026",
+            "headline": "MITRE&#x27;s CVE Management Under Fire—Private Sector Takeover Suggested",
+            "title": "Calls for Private Sector to Manage CVE Database Amid MITRE Criticism",
+            "content": "Critics argue that MITRE&#x27;s management of the Common Vulnerabilities and Exposures (CVE) database has been inefficient, citing decades of mismanagement and financial waste. The CVE system is crucial for tracking and addressing security vulnerabilities globally. However, inefficiencies in its administration have led to calls for a shift to private sector management, which some believe could enhance responsiveness and accountability. The debate centers around the need for a more agile and effective system to safeguard against evolving cyber threats. Security professionals are urged to consider the implications of such a transition for vulnerability tracking and response.",
+            "source": "Dark Reading",
+            "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/hand-cve-over-to-private-sector",
+            "relatedResources": [
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Jan 27 2026",
+            "headline": "Quantum and AI: A Powerful Synergy for Future Tech",
+            "title": "Exploring the Intersection of Quantum Computing and Advanced AI in 2026",
+            "content": "Quantum computing is poised to revolutionize technology with its immense processing power, potentially transforming industries when combined with advanced artificial intelligence (AI). This synergy could lead to breakthroughs in fields such as cryptography, optimization, and machine learning. As quantum computers approach practical deployment, organizations must prepare for both opportunities and challenges. The integration of quantum and AI technologies could enhance problem-solving capabilities but also requires robust security frameworks to mitigate new risks. Tech leaders are encouraged to stay informed about developments in quantum and AI to leverage their potential effectively.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/cyber-insights-2026-quantum-computing-and-the-potential-synergy-with-advanced-ai/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 27 2026",
+            "headline": "Browser Extensions Steal ChatGPT Data—Beware Fake Tools",
+            "title": "Malicious Chrome and Edge Extensions Compromise ChatGPT Sessions",
+            "content": "Security researchers have identified malicious extensions for Chrome and Edge that masquerade as ChatGPT enhancement tools while secretly harvesting user data. These extensions grant attackers unauthorized access to ChatGPT sessions, potentially exposing sensitive information. The threat actors behind this scheme exploit users seeking productivity boosts from AI tools. Affected users should immediately remove suspicious extensions and monitor their accounts for unauthorized activity. This incident underscores the importance of vetting browser extensions and highlights the growing trend of targeting AI-based services. Users are advised to rely on official sources for downloads.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/chrome-edge-extensions-caught-stealing-chatgpt-sessions/",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Jan 27 2026",
+            "headline": "SoundCloud Breach Exposes 29.8M Accounts—Check Your Data",
+            "title": "Massive SoundCloud Data Breach Compromises Nearly 30 Million User Accounts",
+            "content": "SoundCloud has suffered a significant data breach, with hackers stealing personal and contact information from over 29.8 million user accounts. The breach, which affects a substantial portion of the platform&#x27;s user base, highlights vulnerabilities in SoundCloud&#x27;s security infrastructure. Users are urged to change their passwords and monitor their accounts for suspicious activity. This incident adds to the growing list of high-profile breaches in the digital entertainment sector, emphasizing the need for robust cybersecurity measures. SoundCloud is currently investigating the breach and working to enhance its security protocols.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/have-i-been-pwned-soundcloud-data-breach-impacts-298-million-accounts/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 27 2026",
+            "headline": "AI Fatigue in Enterprises—Navigating the Security Challenges",
+            "title": "Overcoming AI Fatigue: Balancing Innovation and Security in Enterprises",
+            "content": "Enterprises are experiencing AI fatigue as they navigate the complexities of integrating artificial intelligence while ensuring its security. Many Chief Information Security Officers (CISOs) express uncertainty about where to begin, fearing missteps in both utilizing AI and securing it within their organizations. Despite these challenges, AI continues to permeate enterprise environments, offering significant benefits when properly managed. Organizations are encouraged to develop clear strategies for AI deployment and security, balancing innovation with risk management. This approach can help alleviate AI fatigue and drive successful integration.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4122255/overcoming-ai-fatigue.html",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Jan 27 2026",
+            "headline": "WhatsApp Bug Allows Malicious Media Spread—Patch Immediately",
+            "title": "WhatsApp Vulnerability Enables Automatic Download of Malicious Media Files",
+            "content": "A critical vulnerability in WhatsApp allows malicious media files to be downloaded automatically through group chats, posing a significant security risk. Discovered by Google&#x27;s Project Zero team, this flaw can be exploited without user interaction, potentially leading to unauthorized access to devices. Users are urged to update WhatsApp to the latest version immediately to mitigate this risk. This vulnerability highlights the ongoing challenges of securing messaging platforms against sophisticated threats. WhatsApp is working on a patch to address the issue, and users should remain vigilant for updates.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/01/a-whatsapp-bug-lets-malicious-media-files-spread-through-group-chats",
+            "relatedResources": [
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Jan 27 2026",
             "headline": "Romance Scams Evolve—New Tactics Unveiled by SANS Intern",
             "title": "Initial Stages of Romance Scams Explored by SANS Intern Fares Azhari",
             "content": "In a guest diary entry, SANS Internet Storm Center intern Fares Azhari delves into the initial stages of romance scams, highlighting their evolving tactics. These scams often begin with cybercriminals establishing trust through online interactions before soliciting money under false pretenses. The diary provides insights into the psychological manipulation involved, which can affect individuals across various demographics. As romance scams become more sophisticated, it is crucial for users to remain vigilant and skeptical of unsolicited online relationships. Azhari&#x27;s analysis underscores the importance of awareness and education in combating these cyber threats.",
@@ -52,51 +145,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Jan 26 2026",
-            "headline": "Vishing Attacks Exploit SSO—ShinyHunters Identified",
-            "title": "Real-Time Vishing Attacks Target Single Sign-On Services",
-            "content": "A surge in vishing attacks is compromising single sign-on (SSO) accounts, with cybercrime groups like ShinyHunters leading the charge. These attacks exploit real-time interactions to deceive users into divulging login credentials, granting attackers access to sensitive networks and data. Organizations relying on SSO for authentication are at heightened risk and should reinforce their security protocols. Implementing multi-factor authentication and conducting regular security training can mitigate these threats. The incidents highlight the evolving tactics of cybercriminals and the importance of robust authentication measures.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/shinyhunters-voice-phishing-sso-okta-mfa-bypass-data-theft/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 26 2026",
-            "headline": "Stanley MaaS Promises Undetectable Chrome Phishing Extensions",
-            "title": "New Malware Service &#x27;Stanley&#x27; Offers Phishing Extensions on Chrome",
-            "content": "The &#x27;Stanley&#x27; malware-as-a-service platform is gaining attention for its ability to produce malicious Chrome extensions that evade Google&#x27;s review process. These extensions, once published on the Chrome Web Store, can be used for phishing attacks, posing significant risks to users. Security professionals are urged to monitor for unusual browser behaviors and educate users about the dangers of installing unverified extensions. As threat actors continue to innovate in bypassing security measures, maintaining vigilance and employing advanced detection tools remain crucial in mitigating such threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-malware-service-guarantees-phishing-extensions-on-chrome-web-store/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Jan 26 2026",
-            "headline": "OMB Withdraws Biden-Era Software Security Memo",
-            "title": "OMB Rescinds Biden-Era Secure Software Memo Amid Criticism",
-            "content": "The Office of Management and Budget (OMB) has rescinded a Biden-era memo on secure software development, opting for a voluntary approach with a common attestation form. Critics argue this move represents a step back in cybersecurity policy under the Trump administration. The original memo aimed to enforce stricter security measures in software development processes. Organizations are encouraged to continue prioritizing security best practices despite the policy change. This decision reflects ongoing debates over the balance between regulatory enforcement and voluntary compliance in cybersecurity.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/omb-rescinds-burdensome-biden-era-secure-software-memo/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
             "date": "Mar 23 2026",
             "headline": "RSAC 2026 Registration Opens—Secure Your Spot Now",
             "title": "RSA Conference 2026 Registration Opens for Cybersecurity Professionals",
@@ -114,6 +162,104 @@ const websiteContent = {
         }
     ],
     "aiShorts": [
+        {
+            "date": "Jan 27 2026",
+            "headline": "Fauna&#x27;s Humanoid Robots—The Future of Hospitality?",
+            "title": "Fauna&#x27;s Humanoid Robots Aim to Revolutionize Hospitality and Entertainment",
+            "content": "Fauna, a new player in robotics, is introducing humanoid robots designed to serve in hospitality, research, and entertainment industries. The startup believes these robots can efficiently perform tasks such as delivering items like toothbrushes or providing entertainment services. This innovation comes as businesses increasingly seek automated solutions to improve efficiency and customer experience. The humanoid robots are engineered with advanced AI capabilities to understand and respond to human interactions in real-time. Companies considering automation in customer-facing roles should monitor Fauna&#x27;s developments as a potential model for integrating AI-driven robots into their operations.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/humanoid-robot-butler-sprout-fauna/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 27 2026",
+            "headline": "Google Photos Adds Text Prompts for Video Creation",
+            "title": "Google Photos Enhances AI Video Generation with Text Prompt Feature",
+            "content": "Google has upgraded its Photos app to allow users to generate videos from images using text prompts, enhancing the app&#x27;s generative AI capabilities. This feature enables users to specify movements, styles, or effects they want in their videos, offering more creative control. The update reflects a growing trend in AI-driven personalization tools that cater to user preferences. As AI continues to evolve, professionals in digital media should explore how such tools can be integrated into content creation workflows to enhance productivity and creativity.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/news/868510/google-photos-image-to-video-text-prompt-support",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Jan 27 2026",
+            "headline": "RavenDB Lowers Strategic Barriers in Database Management",
+            "title": "RavenDB Offers Performance and Flexibility in Database Solutions",
+            "content": "RavenDB is addressing the common trade-offs in database management by offering a solution that balances performance, flexibility, and security. Traditionally, systems optimized for speed require manual tuning, while flexible platforms can incur early design costs. By mitigating these compromises, RavenDB aims to streamline database operations for businesses, enhancing strategic decision-making. IT professionals should consider evaluating RavenDB&#x27;s capabilities to optimize their database infrastructure, potentially reducing operational complexities and costs.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/lowering-the-barriers-databases-place-in-the-way-of-strategy-with-ravendb/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 27 2026",
+            "headline": "JudgeGPT: AI Assisting in Judicial Review",
+            "title": "JudgeGPT Aims to Enhance Judicial Review Processes with AI",
+            "content": "Bridget McCormack, former chief justice of the Michigan Supreme Court, is working on JudgeGPT, an AI tool designed to assist in judicial reviews. This AI system helps identify overlooked evidence and aspects in legal cases, potentially improving court efficiency and accuracy. As AI increasingly enters the legal domain, professionals should consider its implications on the judicial process and the potential for AI to support legal decision-making. JudgeGPT represents a growing trend of AI applications in specialized professional fields.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/policy/868151/ai-judges-arbitration",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Jan 27 2026",
+            "headline": "Airlines Leverage AI to Navigate US Cold Snap",
+            "title": "AI Helps Airlines Manage Disruptions Amid Severe US Weather",
+            "content": "Amid severe weather conditions in the US, airlines are utilizing AI to manage scheduling and routing challenges. This proactive use of technology helps airlines respond efficiently to customer inquiries and minimize disruptions. The reliance on AI underscores its critical role in operational resilience and customer service during crises. Aviation industry professionals should explore AI solutions to enhance their response strategies and maintain service levels during extreme weather events.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/cold-snap-highlights-airlines-proactive-use-of-ai-airline-industrys-use-of-ai/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 27 2026",
+            "headline": "Meta Trials Premium Subscriptions for Enhanced AI Features",
+            "title": "Meta to Test Premium Subscriptions on Instagram, Facebook, and WhatsApp",
+            "content": "Meta is set to trial premium subscriptions across Instagram, Facebook, and WhatsApp, offering users expanded AI capabilities and features. This move aims to unlock additional productivity and creativity tools for subscribers, reflecting a broader trend towards monetizing advanced digital services. As social media platforms increasingly adopt subscription models, tech leaders should assess the impact on user engagement and revenue streams. The trial could signal a shift in how digital services are packaged and delivered.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/news/868439/meta-premium-subscription-ai-facebook-instagram-whatsapp",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 27 2026",
+            "headline": "AI&#x27;s Future: Insights from Tech Leaders and Students",
+            "title": "Diverse Perspectives on AI&#x27;s Promise and Challenges Revealed",
+            "content": "A survey of tech CEOs, journalists, entertainers, and students reveals diverse opinions on AI&#x27;s potential and risks. While many see AI as a driver of innovation and efficiency, concerns about ethical implications and job displacement persist. This dialogue reflects the ongoing debate around AI&#x27;s role in society and its future trajectory. Stakeholders in technology and education should engage in these discussions to understand AI&#x27;s multifaceted impact and guide responsible development.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/for-future-reference-ai-technology/",
+            "relatedResources": []
+        },
         {
             "date": "Jan 27 2026",
             "headline": "Agentic RL Training Retrospective: Lessons from GPT-OSS",
@@ -163,60 +309,6 @@ const websiteContent = {
                     "icon": "fa-brain"
                 }
             ]
-        },
-        {
-            "date": "Jan 26 2026",
-            "headline": "Qwen3-Max Surpasses Gemini 3 Pro in AI Exam",
-            "title": "Alibaba Cloud&#x27;s Qwen3-Max-Thinking Outperforms Rivals in Language Reasoning",
-            "content": "Alibaba Cloud&#x27;s Qwen Team has unveiled Qwen3-Max-Thinking, a new AI language reasoning model that outperformed competitors Gemini 3 Pro and GPT-5.2 on &quot;Humanity&#x27;s Last Exam.&quot; This achievement highlights the rapid advancements in AI language models developed by Chinese tech firms. Qwen3-Max-Thinking&#x27;s superior performance is attributed to its innovative architecture and enhanced reasoning capabilities. This development signifies a shift in the AI landscape, with Chinese models gaining prominence on the global stage. Industry professionals should monitor these advancements to leverage emerging AI technologies effectively.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/qwen3-max-thinking-beats-gemini-3-pro-and-gpt-5-2-on-humanitys-last-exam",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Jan 26 2026",
-            "headline": "EU Probes X Over Grok&#x27;s Sexualized Deepfakes",
-            "title": "European Commission Investigates X for Grok AI&#x27;s Deepfake Risks",
-            "content": "The European Commission has launched an investigation into X over its Grok AI chatbot&#x27;s generation of sexualized deepfakes. The inquiry will assess whether X adequately evaluated and mitigated the risks associated with Grok&#x27;s image-generating capabilities. This investigation underscores growing concerns about the ethical implications of AI-generated content and the potential for misuse. Companies deploying similar AI technologies should ensure robust risk assessments and implement safeguards to prevent harmful outputs. The outcome of this investigation could influence future regulatory frameworks for AI image generation.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/news/868239/x-grok-sexualized-deepfakes-eu-investigation",
-            "relatedResources": [
-                {
-                    "label": "Third-Party Risk Management",
-                    "url": "/guides/third-party-risk-management.html",
-                    "icon": "fa-handshake"
-                }
-            ]
-        },
-        {
-            "date": "Jan 26 2026",
-            "headline": "YouTubers Sue Snap Over AI Training Copyright Claims",
-            "title": "Legal Battle as YouTubers Accuse Snap of Copyright Infringement in AI Training",
-            "content": "A group of YouTubers has filed a lawsuit against Snap, alleging the company used AI datasets intended for research and academic purposes to train its AI models without proper authorization. This legal action highlights ongoing tensions between content creators and tech companies over the use of copyrighted material in AI training. The outcome of this case could set a precedent for how AI training datasets are sourced and utilized. Developers and tech firms should closely follow this case to understand the evolving legal landscape surrounding AI training data.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/26/youtubers-sue-snap-for-alleged-copyright-infringement-in-training-its-ai-models/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 26 2026",
-            "headline": "DOT&#x27;s AI Rule Drafting—Safety Concerns Raised",
-            "title": "DOT&#x27;s Use of Gemini AI in Safety Rule Drafting Sparks Controversy",
-            "content": "Concerns have been raised over the Department of Transportation&#x27;s (DOT) use of Gemini AI to draft safety regulations. Staffers warn that relying on AI for drafting could lead to inadequate safety measures, potentially causing injuries or fatalities. This situation highlights the risks of deploying AI in critical decision-making processes without thorough oversight. The controversy emphasizes the need for a balanced approach to integrating AI into regulatory frameworks, ensuring human expertise remains central. Stakeholders should advocate for stringent evaluation processes when implementing AI in safety-critical applications.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/01/wildly-irresponsible-dots-use-of-ai-to-draft-safety-rules-sparks-concerns/",
-            "relatedResources": []
         }
     ],
     "articles": {},
