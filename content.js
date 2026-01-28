@@ -4,51 +4,46 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Jan 27 2026",
-            "headline": "CISA Maps Post-Quantum Crypto to Enterprise Tech",
-            "title": "CISA Releases Post-Quantum Cryptography Readiness Guide for Enterprises",
-            "content": "The US Cybersecurity and Infrastructure Security Agency (CISA) has published a comprehensive advisory aligning post-quantum cryptography (PQC) standards with common enterprise hardware and software categories. This guide serves as an early reference for CIOs and security teams to assess the readiness of quantum-safe technologies. As quantum computing capabilities advance, the threat to current cryptographic systems grows, necessitating proactive measures. The advisory aids organizations in understanding which technologies are prepared for a quantum future and which may need upgrades. Enterprises are encouraged to review this mapping to ensure their systems remain secure against potential quantum threats.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4122752/cisa-releases-technology-readiness-list-for-post-quantum-cryptography.html",
+            "date": "Jan 28 2026",
+            "headline": "ISC Stormcast Reports Routine Security Update",
+            "title": "SANS Internet Storm Center Releases January 28th Security Podcast",
+            "content": "The SANS Internet Storm Center has published its latest podcast, providing a routine update on cybersecurity threats and trends as of January 28, 2026. The InfoCON status remains at green, indicating a stable threat environment. The podcast is a valuable resource for security professionals seeking insights into current vulnerabilities and attack patterns. Listeners are encouraged to stay informed about emerging threats and best practices for maintaining robust security postures. Regular updates from trusted sources like SANS are crucial for organizations aiming to preemptively address potential security issues.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32660",
             "relatedResources": []
         },
         {
-            "date": "Jan 27 2026",
-            "headline": "MITRE&#x27;s CVE Management Under Fire—Private Sector Takeover Suggested",
-            "title": "Calls for Private Sector to Manage CVE Database Amid MITRE Criticism",
-            "content": "Critics argue that MITRE&#x27;s management of the Common Vulnerabilities and Exposures (CVE) database has been inefficient, citing decades of mismanagement and financial waste. The CVE system is crucial for tracking and addressing security vulnerabilities globally. However, inefficiencies in its administration have led to calls for a shift to private sector management, which some believe could enhance responsiveness and accountability. The debate centers around the need for a more agile and effective system to safeguard against evolving cyber threats. Security professionals are urged to consider the implications of such a transition for vulnerability tracking and response.",
-            "source": "Dark Reading",
-            "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/hand-cve-over-to-private-sector",
+            "date": "Jan 28 2026",
+            "headline": "AI-Powered Phishing—Unit 42 Uncovers New Threat",
+            "title": "AI-Driven Polymorphic Attacks Transform Webpages into Phishing Lures",
+            "content": "Palo Alto Networks’ Unit 42 has identified a new AI-powered polymorphic attack that converts benign webpages into phishing threats. These sophisticated attacks use advanced obfuscation techniques, making detection challenging and posing a significant risk to users. The AI-driven nature allows these phishing pages to adapt dynamically, increasing their effectiveness and elusiveness. Organizations must enhance their security measures and educate users on recognizing phishing attempts. As AI technology continues to evolve, so too do the methods employed by cybercriminals, necessitating vigilance and proactive defenses.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4123217/ai-powered-polymorphic-attacks-lures-victims-to-phishing-webpages.html",
             "relatedResources": [
                 {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "SIEM & Log Analysis Guide",
+                    "url": "/guides/siem-log-analysis.html",
+                    "icon": "fa-chart-bar"
+                },
+                {
+                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
+                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
+                    "icon": "fa-shield-virus"
                 }
             ]
         },
         {
-            "date": "Jan 27 2026",
-            "headline": "Quantum and AI: A Powerful Synergy for Future Tech",
-            "title": "Exploring the Intersection of Quantum Computing and Advanced AI in 2026",
-            "content": "Quantum computing is poised to revolutionize technology with its immense processing power, potentially transforming industries when combined with advanced artificial intelligence (AI). This synergy could lead to breakthroughs in fields such as cryptography, optimization, and machine learning. As quantum computers approach practical deployment, organizations must prepare for both opportunities and challenges. The integration of quantum and AI technologies could enhance problem-solving capabilities but also requires robust security frameworks to mitigate new risks. Tech leaders are encouraged to stay informed about developments in quantum and AI to leverage their potential effectively.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/cyber-insights-2026-quantum-computing-and-the-potential-synergy-with-advanced-ai/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 27 2026",
-            "headline": "Browser Extensions Steal ChatGPT Data—Beware Fake Tools",
-            "title": "Malicious Chrome and Edge Extensions Compromise ChatGPT Sessions",
-            "content": "Security researchers have identified malicious extensions for Chrome and Edge that masquerade as ChatGPT enhancement tools while secretly harvesting user data. These extensions grant attackers unauthorized access to ChatGPT sessions, potentially exposing sensitive information. The threat actors behind this scheme exploit users seeking productivity boosts from AI tools. Affected users should immediately remove suspicious extensions and monitor their accounts for unauthorized activity. This incident underscores the importance of vetting browser extensions and highlights the growing trend of targeting AI-based services. Users are advised to rely on official sources for downloads.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/chrome-edge-extensions-caught-stealing-chatgpt-sessions/",
+            "date": "Jan 28 2026",
+            "headline": "ChatGPT Ads Cost Comparable to NFL Broadcasts",
+            "title": "OpenAI&#x27;s ChatGPT Ad Prices Rival NFL Broadcast Costs",
+            "content": "OpenAI is set to introduce advertisements on ChatGPT for users with free or $8 Go subscriptions in the United States. However, advertisers may face costs comparable to live NFL broadcast ads, highlighting the platform&#x27;s high engagement and potential reach. This move signifies a shift in monetization strategies for AI services, aiming to leverage ChatGPT&#x27;s widespread popularity. Marketers should prepare for premium pricing, reflecting the value of access to ChatGPT&#x27;s extensive user base. As AI-driven platforms expand, advertising models will likely evolve to align with traditional media costs.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openais-chatgpt-ad-costs-are-on-par-with-live-nfl-broadcasts/",
             "relatedResources": [
                 {
                     "label": "LLM Security & Prompt Injection",
@@ -59,35 +54,11 @@ const websiteContent = {
         },
         {
             "date": "Jan 27 2026",
-            "headline": "SoundCloud Breach Exposes 29.8M Accounts—Check Your Data",
-            "title": "Massive SoundCloud Data Breach Compromises Nearly 30 Million User Accounts",
-            "content": "SoundCloud has suffered a significant data breach, with hackers stealing personal and contact information from over 29.8 million user accounts. The breach, which affects a substantial portion of the platform&#x27;s user base, highlights vulnerabilities in SoundCloud&#x27;s security infrastructure. Users are urged to change their passwords and monitor their accounts for suspicious activity. This incident adds to the growing list of high-profile breaches in the digital entertainment sector, emphasizing the need for robust cybersecurity measures. SoundCloud is currently investigating the breach and working to enhance its security protocols.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/have-i-been-pwned-soundcloud-data-breach-impacts-298-million-accounts/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 27 2026",
-            "headline": "AI Fatigue in Enterprises—Navigating the Security Challenges",
-            "title": "Overcoming AI Fatigue: Balancing Innovation and Security in Enterprises",
-            "content": "Enterprises are experiencing AI fatigue as they navigate the complexities of integrating artificial intelligence while ensuring its security. Many Chief Information Security Officers (CISOs) express uncertainty about where to begin, fearing missteps in both utilizing AI and securing it within their organizations. Despite these challenges, AI continues to permeate enterprise environments, offering significant benefits when properly managed. Organizations are encouraged to develop clear strategies for AI deployment and security, balancing innovation with risk management. This approach can help alleviate AI fatigue and drive successful integration.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4122255/overcoming-ai-fatigue.html",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Jan 27 2026",
-            "headline": "WhatsApp Bug Allows Malicious Media Spread—Patch Immediately",
-            "title": "WhatsApp Vulnerability Enables Automatic Download of Malicious Media Files",
-            "content": "A critical vulnerability in WhatsApp allows malicious media files to be downloaded automatically through group chats, posing a significant security risk. Discovered by Google&#x27;s Project Zero team, this flaw can be exploited without user interaction, potentially leading to unauthorized access to devices. Users are urged to update WhatsApp to the latest version immediately to mitigate this risk. This vulnerability highlights the ongoing challenges of securing messaging platforms against sophisticated threats. WhatsApp is working on a patch to address the issue, and users should remain vigilant for updates.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/01/a-whatsapp-bug-lets-malicious-media-files-spread-through-group-chats",
+            "headline": "WinRAR Flaw Exploited by Nation-State Actors",
+            "title": "Six-Month-Old WinRAR Vulnerability Targeted by Cybercriminals and Nation-States",
+            "content": "A six-month-old vulnerability in WinRAR is being actively exploited by cybercriminals and nation-state groups, targeting sectors such as military, government, and technology. The flaw allows attackers to conduct espionage operations, underscoring the importance of timely software updates. Organizations using WinRAR should prioritize patching to mitigate risks associated with this vulnerability. As attackers increasingly exploit known vulnerabilities, maintaining updated systems becomes critical for safeguarding sensitive information. This incident highlights the persistent threat posed by unpatched software in strategic sectors.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/winrar-defect-active-exploits-google-threat-intel/",
             "relatedResources": [
                 {
                     "label": "CVE Prioritization Guide",
@@ -98,51 +69,58 @@ const websiteContent = {
         },
         {
             "date": "Jan 27 2026",
-            "headline": "Romance Scams Evolve—New Tactics Unveiled by SANS Intern",
-            "title": "Initial Stages of Romance Scams Explored by SANS Intern Fares Azhari",
-            "content": "In a guest diary entry, SANS Internet Storm Center intern Fares Azhari delves into the initial stages of romance scams, highlighting their evolving tactics. These scams often begin with cybercriminals establishing trust through online interactions before soliciting money under false pretenses. The diary provides insights into the psychological manipulation involved, which can affect individuals across various demographics. As romance scams become more sophisticated, it is crucial for users to remain vigilant and skeptical of unsolicited online relationships. Azhari&#x27;s analysis underscores the importance of awareness and education in combating these cyber threats.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32650",
-            "relatedResources": [
-                {
-                    "label": "SIEM & Log Analysis Guide",
-                    "url": "/guides/siem-log-analysis.html",
-                    "icon": "fa-chart-bar"
-                }
-            ]
-        },
-        {
-            "date": "Jan 27 2026",
-            "headline": "ISC Stormcast Highlights—Key Cybersecurity Updates for January 27",
-            "title": "ISC Stormcast for January 27th, 2026: Essential Cybersecurity Briefing",
-            "content": "The latest ISC Stormcast podcast provides a comprehensive update on current cybersecurity threats and trends as of January 27, 2026. Key topics include recent vulnerabilities, emerging attack vectors, and defensive strategies. The podcast serves as a crucial resource for security professionals seeking to stay informed about the latest developments in the cybersecurity landscape. Listeners are encouraged to integrate these insights into their security practices to enhance their organizational defenses. Regular engagement with such briefings is essential for maintaining a proactive security posture.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32658",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 27 2026",
-            "headline": "npm, Yarn Flaws Expose Developers to Shai-Hulud Worm",
-            "title": "Critical Vulnerabilities in npm and Yarn Allow Shai-Hulud Worm Attacks",
-            "content": "Javascript developers face new security challenges as vulnerabilities in npm and Yarn package managers have been uncovered, potentially allowing the Shai-Hulud worm to bypass existing defenses. Oren Yomtov from Koi Security warns that these flaws could enable threat actors to execute malicious code, impacting a wide range of applications. Developers are advised to consider alternative distribution platforms or implement additional security measures to mitigate risks. The discovery highlights the ongoing need for vigilance in software supply chain security, especially as package managers remain a frequent target for cyberattacks.",
+            "headline": "Microsoft Office Zero-Day Exploited—Patch Urgently Needed",
+            "title": "Microsoft Releases Fixes for Actively Exploited Office Zero-Day Vulnerability",
+            "content": "Microsoft has issued fixes for a critical Office zero-day vulnerability that can be triggered by simply opening a malicious document. The flaw is actively exploited, allowing attackers to bypass security measures and compromise systems. Johannes Ullrich from the SANS Institute highlighted the seriousness of this vulnerability, urging administrators to apply patches immediately. Organizations should update their Office installations to protect against potential exploits. This incident serves as a reminder of the importance of timely updates in defending against zero-day threats.",
             "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4122436/unplugged-holes-in-the-npm-and-yarn-package-managers-could-let-attackers-bypass-defenses-against-shai-hulud-2.html",
+            "sourceUrl": "https://www.csoonline.com/article/4123146/fixes-released-for-a-serious-microsoft-office-zero-day-flaw-2.html",
             "relatedResources": [
                 {
-                    "label": "Third-Party Risk Management",
-                    "url": "/guides/third-party-risk-management.html",
-                    "icon": "fa-handshake"
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
                 }
             ]
         },
         {
             "date": "Jan 27 2026",
-            "headline": "CISA&#x27;s Post-Quantum Guide Faces Expert Skepticism",
-            "title": "CISA&#x27;s Post-Quantum Encryption Guide Met with Professional Doubt",
-            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has released a guide to assist agencies in transitioning to post-quantum encryption. However, security professionals express concerns over the readiness of current products and internet protocols to support such a transition. The guide aims to prepare organizations for the quantum computing era, yet experts warn that most systems are not yet equipped for these advancements. Agencies are encouraged to evaluate their cryptographic infrastructure and stay informed about updates in post-quantum technologies. The dialogue underscores the complexity and challenges of adapting to quantum-resistant encryption.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/cisa-post-quantum-cryptography-procurement-guide-expert-criticism/",
-            "relatedResources": []
+            "headline": "Fortinet Blocks FortiCloud SSO Zero-Day Exploitation",
+            "title": "Fortinet Mitigates Critical FortiCloud SSO Vulnerability Ahead of Patch Release",
+            "content": "Fortinet has confirmed a critical zero-day vulnerability in its FortiCloud single sign-on (SSO) system, identified as CVE-2026-24858. This authentication bypass flaw is being actively exploited, prompting Fortinet to block vulnerable SSO connections temporarily. Organizations using affected FortiCloud systems should remain vigilant and await the forthcoming patch to secure their networks. This proactive measure underscores the importance of rapid response to zero-day threats. Users are advised to monitor Fortinet&#x27;s updates and apply patches promptly once available.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/fortinet-blocks-exploited-forticloud-sso-zero-day-until-patch-is-ready/",
+            "relatedResources": [
+                {
+                    "label": "CVE Tracker",
+                    "url": "/cve-tracker.html",
+                    "icon": "fa-bug"
+                },
+                {
+                    "label": "Fortinet Analysis",
+                    "url": "/articles/fortinet-fortigate-critical-exploit-2025.html",
+                    "icon": "fa-file-alt"
+                },
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Jan 27 2026",
+            "headline": "AI Model Collapse Threatens Zero-Trust Security",
+            "title": "AI Model Degradation Challenges Zero-Trust Frameworks and PII Protection",
+            "content": "The phenomenon of AI &quot;model collapse,&quot; where large language models (LLMs) degrade by training on AI-generated data, poses significant challenges to zero-trust security frameworks. This degradation can lead to inaccuracies, facilitate malicious activities, and compromise personally identifiable information (PII) protections. Organizations relying on AI must reassess their data training practices to prevent model collapse. As AI becomes integral to security operations, maintaining model integrity is crucial for ensuring reliable and secure outcomes. This trend highlights the need for robust data governance in AI deployments.",
+            "source": "Dark Reading",
+            "sourceUrl": "https://www.darkreading.com/application-security/ai-death-accuracy-zero-trust",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
         },
         {
             "date": "Mar 23 2026",
@@ -163,116 +141,13 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Jan 27 2026",
-            "headline": "Fauna&#x27;s Humanoid Robots—The Future of Hospitality?",
-            "title": "Fauna&#x27;s Humanoid Robots Aim to Revolutionize Hospitality and Entertainment",
-            "content": "Fauna, a new player in robotics, is introducing humanoid robots designed to serve in hospitality, research, and entertainment industries. The startup believes these robots can efficiently perform tasks such as delivering items like toothbrushes or providing entertainment services. This innovation comes as businesses increasingly seek automated solutions to improve efficiency and customer experience. The humanoid robots are engineered with advanced AI capabilities to understand and respond to human interactions in real-time. Companies considering automation in customer-facing roles should monitor Fauna&#x27;s developments as a potential model for integrating AI-driven robots into their operations.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/humanoid-robot-butler-sprout-fauna/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 27 2026",
-            "headline": "Google Photos Adds Text Prompts for Video Creation",
-            "title": "Google Photos Enhances AI Video Generation with Text Prompt Feature",
-            "content": "Google has upgraded its Photos app to allow users to generate videos from images using text prompts, enhancing the app&#x27;s generative AI capabilities. This feature enables users to specify movements, styles, or effects they want in their videos, offering more creative control. The update reflects a growing trend in AI-driven personalization tools that cater to user preferences. As AI continues to evolve, professionals in digital media should explore how such tools can be integrated into content creation workflows to enhance productivity and creativity.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/news/868510/google-photos-image-to-video-text-prompt-support",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Jan 27 2026",
-            "headline": "RavenDB Lowers Strategic Barriers in Database Management",
-            "title": "RavenDB Offers Performance and Flexibility in Database Solutions",
-            "content": "RavenDB is addressing the common trade-offs in database management by offering a solution that balances performance, flexibility, and security. Traditionally, systems optimized for speed require manual tuning, while flexible platforms can incur early design costs. By mitigating these compromises, RavenDB aims to streamline database operations for businesses, enhancing strategic decision-making. IT professionals should consider evaluating RavenDB&#x27;s capabilities to optimize their database infrastructure, potentially reducing operational complexities and costs.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/lowering-the-barriers-databases-place-in-the-way-of-strategy-with-ravendb/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 27 2026",
-            "headline": "JudgeGPT: AI Assisting in Judicial Review",
-            "title": "JudgeGPT Aims to Enhance Judicial Review Processes with AI",
-            "content": "Bridget McCormack, former chief justice of the Michigan Supreme Court, is working on JudgeGPT, an AI tool designed to assist in judicial reviews. This AI system helps identify overlooked evidence and aspects in legal cases, potentially improving court efficiency and accuracy. As AI increasingly enters the legal domain, professionals should consider its implications on the judicial process and the potential for AI to support legal decision-making. JudgeGPT represents a growing trend of AI applications in specialized professional fields.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/policy/868151/ai-judges-arbitration",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Jan 27 2026",
-            "headline": "Airlines Leverage AI to Navigate US Cold Snap",
-            "title": "AI Helps Airlines Manage Disruptions Amid Severe US Weather",
-            "content": "Amid severe weather conditions in the US, airlines are utilizing AI to manage scheduling and routing challenges. This proactive use of technology helps airlines respond efficiently to customer inquiries and minimize disruptions. The reliance on AI underscores its critical role in operational resilience and customer service during crises. Aviation industry professionals should explore AI solutions to enhance their response strategies and maintain service levels during extreme weather events.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/cold-snap-highlights-airlines-proactive-use-of-ai-airline-industrys-use-of-ai/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 27 2026",
-            "headline": "Meta Trials Premium Subscriptions for Enhanced AI Features",
-            "title": "Meta to Test Premium Subscriptions on Instagram, Facebook, and WhatsApp",
-            "content": "Meta is set to trial premium subscriptions across Instagram, Facebook, and WhatsApp, offering users expanded AI capabilities and features. This move aims to unlock additional productivity and creativity tools for subscribers, reflecting a broader trend towards monetizing advanced digital services. As social media platforms increasingly adopt subscription models, tech leaders should assess the impact on user engagement and revenue streams. The trial could signal a shift in how digital services are packaged and delivered.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/news/868439/meta-premium-subscription-ai-facebook-instagram-whatsapp",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 27 2026",
-            "headline": "AI&#x27;s Future: Insights from Tech Leaders and Students",
-            "title": "Diverse Perspectives on AI&#x27;s Promise and Challenges Revealed",
-            "content": "A survey of tech CEOs, journalists, entertainers, and students reveals diverse opinions on AI&#x27;s potential and risks. While many see AI as a driver of innovation and efficiency, concerns about ethical implications and job displacement persist. This dialogue reflects the ongoing debate around AI&#x27;s role in society and its future trajectory. Stakeholders in technology and education should engage in these discussions to understand AI&#x27;s multifaceted impact and guide responsible development.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/for-future-reference-ai-technology/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 27 2026",
-            "headline": "Agentic RL Training Retrospective: Lessons from GPT-OSS",
-            "title": "Unlocking Agentic Reinforcement Learning for GPT-OSS: Key Insights and Challenges",
-            "content": "Hugging Face has released a comprehensive retrospective on agentic reinforcement learning (RL) training for its open-source GPT-OSS model. The blog post delves into the technical intricacies of implementing RL to enhance the model&#x27;s decision-making capabilities. By analyzing past deployments, Hugging Face highlights the challenges faced, such as balancing exploration and exploitation, and the need for scalable infrastructure. This exploration provides valuable insights for developers working on similar AI models, emphasizing the importance of continuous learning and adaptation. The findings aim to guide future advancements in AI model training and deployment.",
+            "date": "Jan 28 2026",
+            "headline": "Brazil&#x27;s Nemotron-Personas Initiative—A New Era for Sovereign AI",
+            "title": "Nemotron-Personas Project Co-Designs Data for Brazil&#x27;s Sovereign AI Ambitions",
+            "content": "Brazil has launched the Nemotron-Personas project, a pioneering initiative aimed at co-designing data for the development of sovereign AI systems. This effort, spearheaded by local stakeholders and supported by Hugging Face, seeks to create AI models that align with Brazil&#x27;s cultural and ethical values. By focusing on data sovereignty, Brazil aims to reduce dependency on foreign technology and enhance national security. The project underscores a growing trend of countries prioritizing localized AI development to maintain control over data and technology. Participants in the initiative are encouraged to contribute to data governance frameworks that respect privacy and promote transparency.",
             "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/LinkedIn/gpt-oss-agentic-rl",
+            "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-personas-brazil",
             "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
                 {
                     "label": "Securing AI/ML Pipelines",
                     "url": "/guides/securing-ai-ml-pipelines.html",
@@ -281,12 +156,12 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Jan 27 2026",
-            "headline": "SpotDraft&#x27;s AI Contract Processing Doubles Valuation to $400M",
-            "title": "Qualcomm Backs SpotDraft to Expand AI Contract Processing Capabilities",
-            "content": "SpotDraft, an AI-driven contract processing platform, has secured backing from Qualcomm, doubling its valuation toward $400 million. The platform now processes over 1 million contracts annually, marking a 173% increase in contract volumes year-over-year. SpotDraft&#x27;s AI tool automates contract management, providing efficiency and accuracy in legal document handling. This growth reflects the increasing demand for AI solutions in legal tech, as companies seek to streamline operations and reduce manual workloads. Qualcomm&#x27;s investment is expected to further accelerate SpotDraft&#x27;s expansion and innovation in AI contract processing.",
+            "date": "Jan 28 2026",
+            "headline": "Moltbot—The Viral AI Assistant You Need to Know",
+            "title": "Viral AI Assistant Moltbot (Formerly Clawdbot) Gains Rapid Popularity",
+            "content": "Moltbot, previously known as Clawdbot, has become an internet sensation as a personal AI assistant, capturing attention for its user-friendly capabilities. The assistant offers features like task management, personalized reminders, and seamless integration with various apps, making it a versatile tool for both personal and professional use. Despite its popularity, users are advised to consider data privacy implications and thoroughly review the terms of service before adoption. Moltbot’s rapid ascent highlights the increasing demand for intuitive AI solutions that enhance productivity. As AI assistants become more ubiquitous, understanding their data handling practices becomes crucial for users.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/26/qualcomm-backs-spotdraft-to-scale-on-device-contract-ai-with-valuation-doubling-toward-400m/",
+            "sourceUrl": "https://techcrunch.com/2026/01/27/everything-you-need-to-know-about-viral-personal-ai-assistant-clawdbot-now-moltbot/",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
@@ -297,18 +172,54 @@ const websiteContent = {
         },
         {
             "date": "Jan 27 2026",
-            "headline": "MCP&#x27;s Authentication Flaw—92% Exploitation Risk Revealed",
-            "title": "Model Context Protocol&#x27;s Security Flaws Highlighted by Clawdbot Exploit",
-            "content": "VentureBeat reports ongoing security concerns with the Model Context Protocol (MCP) due to its lack of authentication features. Research from Pynt indicates a 92% probability of exploitation when deploying just 10 MCP plug-ins. These vulnerabilities, first highlighted last October, remain problematic, potentially exposing systems to unauthorized access and data breaches. The absence of authentication measures in MCP underscores the critical need for robust security protocols in AI model deployment. Organizations using MCP should prioritize implementing additional security layers to mitigate potential risks.",
+            "headline": "Meta&#x27;s $6.4M Campaign—Data Centers Are &quot;Cool&quot;",
+            "title": "Meta&#x27;s $6.4 Million Campaign Promotes Data Centers Across the U.S.",
+            "content": "Meta has invested $6.4 million in an advertising campaign aimed at reshaping public perception of data centers. Running in cities from Sacramento to Washington, the campaign seeks to highlight the benefits of new data center constructions, including job creation and technological advancement. This initiative is part of Meta&#x27;s broader strategy to address public concerns about environmental impact and energy consumption associated with data centers. As more companies expand their data infrastructure, public acceptance becomes critical. Viewers are encouraged to consider the economic and technological benefits that data centers can bring to their communities.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/news/869008/meta-data-centers-ad-campaign",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 27 2026",
+            "headline": "Moltbot—The AI Agent Revolutionizing Task Management",
+            "title": "Open-Source AI Agent Moltbot Gains Popularity for Practical Applications",
+            "content": "Moltbot, an open-source AI agent, is gaining traction for its practical applications in task automation and management. Users are leveraging Moltbot to handle tasks such as setting reminders, logging health data, and client communication. The agent&#x27;s versatility and ease of integration have made it a popular choice among tech enthusiasts and professionals. As more people adopt AI solutions for everyday tasks, understanding their potential and limitations becomes essential. Moltbot&#x27;s rise reflects a broader trend towards AI tools that offer real-world utility beyond theoretical capabilities.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/report/869004/moltbot-clawdbot-local-ai-agent",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 27 2026",
+            "headline": "SOC Automation—40% Risk Failure Without Governance",
+            "title": "SOC Teams Risk Failure in Triage Automation Without Governance Boundaries",
+            "content": "Security Operations Centers (SOCs) are increasingly automating alert triage, yet 40% risk failure without proper governance boundaries. With enterprises facing an average of 10,000 alerts daily, automation is essential to manage the workload. However, inadequate governance can lead to missed critical alerts, as evidenced by over 60% of security teams admitting to ignoring alerts that later proved crucial. Establishing clear governance frameworks is vital to ensure effective triage and response. SOC teams should prioritize implementing robust policies to manage automation and mitigate risks associated with alert fatigue.",
             "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/security/mcp-shipped-without-authentication-clawdbot-shows-why-thats-a-problem",
+            "sourceUrl": "https://venturebeat.com/security/tier-1-soc-work-becoming-code-architectural-decisions-hours-minutes-response",
             "relatedResources": [
                 {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
+                    "label": "SOC Analyst Fundamentals",
+                    "url": "/guides/soc-analyst-fundamentals.html",
+                    "icon": "fa-shield-alt"
                 }
             ]
+        },
+        {
+            "date": "Jan 27 2026",
+            "headline": "Winter Storm Strains AI Data Center Power Grids",
+            "title": "Winter Storm Fern Tests Power Grids Amid AI Data Center Expansion",
+            "content": "Winter Storm Fern has severely tested power grids across 34 states, highlighting vulnerabilities exacerbated by the rapid expansion of AI data centers. As temperatures plummeted, hundreds of thousands lost electricity, underscoring the strain on infrastructure. The demand for energy-intensive AI data centers is contributing to grid instability, raising concerns about sustainability and resilience. This event serves as a wake-up call for energy providers and tech companies to invest in more robust and sustainable solutions. Stakeholders must address the balance between technological growth and infrastructure capacity to prevent future disruptions.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/report/868859/electricity-rates-power-grid-ai-data-center-winter-storm",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 27 2026",
+            "headline": "Anduril&#x27;s Drone Contest—Winning Coders Get Jobs",
+            "title": "Anduril Launches Drone-Flying Contest for Programmers with Job Offers as Prizes",
+            "content": "Anduril Industries has introduced an innovative drone-flying contest designed for software programmers, offering job positions as prizes to winners. This unique competition, conceived by founder Palmer Luckey, aims to attract top programming talent by combining technical skills with creative problem-solving. Participants are challenged to develop software that enhances drone navigation and performance. The contest reflects Anduril&#x27;s commitment to fostering innovation and recruiting skilled professionals in the competitive tech industry. Programmers interested in cutting-edge drone technology are encouraged to participate and potentially secure a role in the company.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/27/anduril-has-invented-a-wild-new-drone-flying-contest-where-jobs-are-the-prize/",
+            "relatedResources": []
         }
     ],
     "articles": {},
@@ -372,6 +283,17 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2026-24858",
+            "dateAdded": "Jan 27, 2026",
+            "vendor": "Fortinet Multiple Products",
+            "description": "Fortinet FortiAnalyzer, FortiManager, FortiOS, and FortiProxy contain an authentication bypass using an alternate path or channel that could allow an attacker with a FortiCloud account and a registere",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-24858",
+            "isZeroDay": false
+        },
         {
             "cveId": "CVE-2018-14634",
             "dateAdded": "Jan 26, 2026",
@@ -480,17 +402,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-54313",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-20045",
-            "dateAdded": "Jan 21, 2026",
-            "vendor": "Cisco Unified Communications Manager",
-            "description": "Cisco Unified Communications Manager (Unified CM), Cisco Unified Communications Manager Session Management Edition (Unified CM SME), Cisco Unified Communications Manager IM &amp; Presence Service (Unified",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20045",
             "isZeroDay": false
         }
     ],
