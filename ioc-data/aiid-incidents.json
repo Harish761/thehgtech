@@ -953,19 +953,19 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-643",
-      "incident_id": 643,
-      "title": "Purported Deepfake Video Allegedly Claims Kyiv's Assassination Plan Against President Emmanuel Macro",
-      "date": "2025-11-17",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-602",
       "incident_id": 602,
       "title": "Russia Reportedly Using Artificial Intelligence in Disinformation Campaigns to Erode Western Support",
       "date": "2025-11-17",
       "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-643",
+      "incident_id": 643,
+      "title": "Purported Deepfake Video Allegedly Claims Kyiv's Assassination Plan Against President Emmanuel Macro",
+      "date": "2025-11-17",
+      "category": "deepfake",
       "severity": "medium"
     },
     {
@@ -1518,5 +1518,5 @@
     "last7Days": 5,
     "last30Days": 33
   },
-  "lastUpdated": "2026-01-28T22:23:24.995466+05:30"
+  "lastUpdated": "2026-01-29T00:31:39.248324+05:30"
 }
