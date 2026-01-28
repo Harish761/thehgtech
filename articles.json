@@ -1,6 +1,25 @@
 {
   "articles": [
     {
+      "id": "article-microsoft-teams-phishing-2026",
+      "title": "Microsoft Teams Phishing: Hackers Exploit Guest Feature for Credential Theft",
+      "date": "January 28, 2026",
+      "category": "Phishing",
+      "badge": "ACTIVE THREAT",
+      "excerpt": "Sophisticated phishing campaign abuses Microsoft Teams' 'Invite a Guest' feature to bypass email security and steal enterprise credentials with fake billing notifications.",
+      "image": "images/articles/microsoft-teams-phishing-2026.png",
+      "tags": [
+        "Microsoft Teams",
+        "Phishing",
+        "Credential Theft",
+        "Enterprise Security",
+        "Email Security Bypass",
+        "Collaboration Platform Security"
+      ],
+      "author": "TheHGTech Security Team",
+      "externalUrl": "articles/microsoft-teams-phishing-guest-exploit-2026.html"
+    },
+    {
       "id": "article-ms-office-zero-day-cve-2026-21509",
       "title": "Microsoft Office Zero-Day CVE-2026-21509 Actively Exploited - Emergency Patch Released",
       "date": "January 28, 2026",

@@ -69,6 +69,18 @@
   
   <!-- ========== ARTICLES - HIGH TRAFFIC POTENTIAL ========== -->
   
+  <!-- January 28, 2026 - Microsoft Teams Phishing Guest Exploit -->
+  <url>
+    <loc>https://thehgtech.com/articles/microsoft-teams-phishing-guest-exploit-2026.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.98</priority>
+    <lastmod>2026-01-28</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/microsoft-teams-phishing-2026.png</image:loc>
+      <image:title>Microsoft Teams Phishing Guest Feature Exploit</image:title>
+    </image:image>
+  </url>
+
   <!-- January 28, 2026 - Microsoft Office Zero-Day CVE-2026-21509 -->
   <url>
     <loc>https://thehgtech.com/articles/ms-office-zero-day-cve-2026-21509.html</loc>
