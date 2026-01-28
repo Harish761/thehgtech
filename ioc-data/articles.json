@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "id": "article-ms-office-zero-day-cve-2026-21509",
+      "title": "Microsoft Office Zero-Day CVE-2026-21509 Actively Exploited - Emergency Patch Released",
+      "date": "January 28, 2026",
+      "category": "Vulnerability",
+      "badge": "ZERO-DAY",
+      "excerpt": "Microsoft releases emergency out-of-band patch for CVE-2026-21509, an actively exploited OLE security bypass affecting all Office versions. CISA mandates patch by Feb 16.",
+      "image": "images/articles/ms-office-zero-day-cve-2026-21509.png",
+      "tags": [
+        "CVE-2026-21509",
+        "Microsoft Office",
+        "Zero-Day",
+        "OLE Bypass",
+        "CISA KEV",
+        "Active Exploitation",
+        "Emergency Patch"
+      ],
+      "author": "TheHGTech Security Team",
+      "externalUrl": "articles/ms-office-zero-day-cve-2026-21509.html"
+    },
+    {
       "id": "article-infostealer-mfa-bypass-2026",
       "title": "Infostealer Malware: Why Your MFA Is Already Compromised",
       "date": "January 27, 2026",
