@@ -5,6 +5,114 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Jan 28 2026",
+            "headline": "Hackers Exploit LLM Endpoints—AI Infrastructure at Risk",
+            "title": "Bizarre Bazaar Operation Hijacks Exposed LLM Service Endpoints",
+            "content": "A sophisticated cybercriminal operation, dubbed Bizarre Bazaar, is targeting exposed endpoints of Large Language Model (LLM) services to sell unauthorized access to AI infrastructure. These attacks exploit misconfigured endpoints, allowing threat actors to manipulate AI models and potentially compromise sensitive data. The campaign underscores the importance of securing AI endpoints, as the misuse of LLMs could lead to significant data breaches and intellectual property theft. Organizations using AI services must ensure their endpoints are properly configured and access is tightly controlled. This incident highlights the growing trend of targeting AI systems, emphasizing the need for robust security measures.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-hijack-exposed-llm-endpoints-in-bizarre-bazaar-operation/",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                },
+                {
+                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
+                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
+                    "icon": "fa-shield-virus"
+                }
+            ]
+        },
+        {
+            "date": "Jan 28 2026",
+            "headline": "Rein Security Raises $8M—Revolutionizes AppSec with Inside-Out Approach",
+            "title": "Rein Security Debuts with $8M Funding for Innovative Application Security",
+            "content": "Rein Security has emerged from stealth mode with an $8 million funding round, introducing an innovative &quot;inside-out&quot; approach to application security. This method focuses on detecting and stopping attacks within the application runtime, closing the visibility gap in production environments. Rein&#x27;s technology aims to provide real-time insight into application behavior, enabling faster threat detection and response. The company&#x27;s approach represents a shift from traditional perimeter defenses to more integrated security solutions. Developers and security teams should consider adopting such strategies to enhance application protection and reduce the risk of exploits.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/rein-security-emerges-from-stealth-with-8m-bringing-inside-out-protection-to-appsec/",
+            "relatedResources": [
+                {
+                    "label": "Zero-Day Detection Guide",
+                    "url": "/guides/zero-day-detection.html",
+                    "icon": "fa-exclamation-triangle"
+                }
+            ]
+        },
+        {
+            "date": "Jan 28 2026",
+            "headline": "WhatsApp Enhances Security—Fights Advanced Exploits and Spyware",
+            "title": "WhatsApp Strengthens Media Handling and Introduces Strict Account Settings",
+            "content": "WhatsApp has rolled out new security features to combat advanced exploits and spyware, focusing on how the platform handles photos and videos. The update includes Strict Account Settings, designed to limit risky interactions with unknown senders, thereby reducing exposure to potential threats. These enhancements are part of WhatsApp&#x27;s ongoing efforts to protect user privacy and data integrity in the face of increasingly sophisticated cyber threats. Users are advised to update their app to benefit from these new protections and review their account settings for optimal security. This move reflects a broader industry trend towards fortifying communication apps against emerging threats.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/01/whatsapp-rolls-out-new-protections-against-advanced-exploits-and-spyware",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 28 2026",
+            "headline": "Darknet Operator Pleads Guilty—Facilitated Cybercrime Marketplace",
+            "title": "Slovakian Man Admits to Running Illegal Darknet Marketplace",
+            "content": "A Slovakian national has pleaded guilty to operating a darknet marketplace that facilitated the sale of narcotics, cybercrime tools, and stolen personal information for over two years. The marketplace also offered fake government IDs, making it a hub for various illegal activities. This case highlights the persistent threat posed by darknet platforms in enabling cybercrime and the challenges law enforcement faces in dismantling such operations. Authorities continue to pursue individuals involved in these illicit networks, emphasizing the importance of international collaboration in combating cybercrime. Security professionals should remain vigilant against the tools and services proliferating through these channels.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/slovakian-man-pleads-guilty-to-operating-kingdown-market-cybercrime-marketplace/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Jan 28 2026",
+            "headline": "n8n Workflow Flaws—Critical RCE Vulnerability Disclosed",
+            "title": "Two High-Severity Vulnerabilities Found in n8n Workflow Automation Platform",
+            "content": "Cybersecurity researchers have uncovered two critical vulnerabilities in the n8n workflow automation platform, including CVE-2026-1470, which carries a CVSS score of 9.9. These flaws allow authenticated users to execute remote code, posing a severe risk to systems running affected versions. Discovered by JFrog Security Research, the vulnerabilities highlight the need for immediate patching to prevent potential exploitation. Organizations using n8n should prioritize updating their systems to mitigate these security risks. This incident underscores the importance of regular security assessments and timely updates in maintaining secure automation environments.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/01/two-high-severity-n8n-flaws-allow.html",
+            "relatedResources": [
+                {
+                    "label": "CVE Tracker",
+                    "url": "/cve-tracker.html",
+                    "icon": "fa-bug"
+                },
+                {
+                    "label": "N8N Analysis",
+                    "url": "/articles/n8n-rce-vulnerability-cve-2025-68613.html",
+                    "icon": "fa-file-alt"
+                },
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Jan 28 2026",
+            "headline": "AI SOC Agents—Enhancing Security Operations, Not Replacing Analysts",
+            "title": "AI Accelerates Security Operations from Triage to Threat Hunts",
+            "content": "AI technologies are reshaping security operations, enhancing capabilities from triage to threat hunting, but not replacing human analysts as once predicted. The concept of the AI Security Operations Center (SOC) agent promised full autonomy, yet the reality is a collaborative approach where AI augments human decision-making. This synergy allows for more efficient threat detection and response, optimizing security workflows. Organizations should leverage AI to enhance their SOC capabilities, focusing on areas where automation can reduce workload and improve accuracy. The future of security operations lies in harnessing AI&#x27;s potential while maintaining a human touch.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/01/from-triage-to-threat-hunts-how-ai.html",
+            "relatedResources": [
+                {
+                    "label": "SOC Analyst Fundamentals",
+                    "url": "/guides/soc-analyst-fundamentals.html",
+                    "icon": "fa-shield-alt"
+                }
+            ]
+        },
+        {
+            "date": "Jan 28 2026",
+            "headline": "WhatsApp Lockdown Feature—Protects High-Risk Users from Hackers",
+            "title": "New WhatsApp Security Feature Shields Journalists and Public Figures",
+            "content": "Meta has introduced a new lockdown-style security feature for WhatsApp, aimed at protecting high-risk users such as journalists and public figures from sophisticated threats, including spyware attacks. This feature enhances account security by implementing stricter controls and monitoring for suspicious activity. The rollout reflects Meta&#x27;s commitment to safeguarding vulnerable users against targeted cyber threats. High-risk individuals are encouraged to activate this feature to bolster their defenses against potential attacks. The initiative highlights the increasing focus on personalized security measures in the digital communication landscape.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/whatsapp-gets-new-lockdown-feature-that-blocks-cyberattacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 28 2026",
             "headline": "ISC Stormcast Reports Routine Security Update",
             "title": "SANS Internet Storm Center Releases January 28th Security Podcast",
             "content": "The SANS Internet Storm Center has published its latest podcast, providing a routine update on cybersecurity threats and trends as of January 28, 2026. The InfoCON status remains at green, indicating a stable threat environment. The podcast is a valuable resource for security professionals seeking insights into current vulnerabilities and attack patterns. Listeners are encouraged to stay informed about emerging threats and best practices for maintaining robust security postures. Regular updates from trusted sources like SANS are crucial for organizations aiming to preemptively address potential security issues.",
@@ -53,76 +161,6 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Jan 27 2026",
-            "headline": "WinRAR Flaw Exploited by Nation-State Actors",
-            "title": "Six-Month-Old WinRAR Vulnerability Targeted by Cybercriminals and Nation-States",
-            "content": "A six-month-old vulnerability in WinRAR is being actively exploited by cybercriminals and nation-state groups, targeting sectors such as military, government, and technology. The flaw allows attackers to conduct espionage operations, underscoring the importance of timely software updates. Organizations using WinRAR should prioritize patching to mitigate risks associated with this vulnerability. As attackers increasingly exploit known vulnerabilities, maintaining updated systems becomes critical for safeguarding sensitive information. This incident highlights the persistent threat posed by unpatched software in strategic sectors.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/winrar-defect-active-exploits-google-threat-intel/",
-            "relatedResources": [
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Jan 27 2026",
-            "headline": "Microsoft Office Zero-Day Exploited—Patch Urgently Needed",
-            "title": "Microsoft Releases Fixes for Actively Exploited Office Zero-Day Vulnerability",
-            "content": "Microsoft has issued fixes for a critical Office zero-day vulnerability that can be triggered by simply opening a malicious document. The flaw is actively exploited, allowing attackers to bypass security measures and compromise systems. Johannes Ullrich from the SANS Institute highlighted the seriousness of this vulnerability, urging administrators to apply patches immediately. Organizations should update their Office installations to protect against potential exploits. This incident serves as a reminder of the importance of timely updates in defending against zero-day threats.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4123146/fixes-released-for-a-serious-microsoft-office-zero-day-flaw-2.html",
-            "relatedResources": [
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Jan 27 2026",
-            "headline": "Fortinet Blocks FortiCloud SSO Zero-Day Exploitation",
-            "title": "Fortinet Mitigates Critical FortiCloud SSO Vulnerability Ahead of Patch Release",
-            "content": "Fortinet has confirmed a critical zero-day vulnerability in its FortiCloud single sign-on (SSO) system, identified as CVE-2026-24858. This authentication bypass flaw is being actively exploited, prompting Fortinet to block vulnerable SSO connections temporarily. Organizations using affected FortiCloud systems should remain vigilant and await the forthcoming patch to secure their networks. This proactive measure underscores the importance of rapid response to zero-day threats. Users are advised to monitor Fortinet&#x27;s updates and apply patches promptly once available.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/fortinet-blocks-exploited-forticloud-sso-zero-day-until-patch-is-ready/",
-            "relatedResources": [
-                {
-                    "label": "CVE Tracker",
-                    "url": "/cve-tracker.html",
-                    "icon": "fa-bug"
-                },
-                {
-                    "label": "Fortinet Analysis",
-                    "url": "/articles/fortinet-fortigate-critical-exploit-2025.html",
-                    "icon": "fa-file-alt"
-                },
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Jan 27 2026",
-            "headline": "AI Model Collapse Threatens Zero-Trust Security",
-            "title": "AI Model Degradation Challenges Zero-Trust Frameworks and PII Protection",
-            "content": "The phenomenon of AI &quot;model collapse,&quot; where large language models (LLMs) degrade by training on AI-generated data, poses significant challenges to zero-trust security frameworks. This degradation can lead to inaccuracies, facilitate malicious activities, and compromise personally identifiable information (PII) protections. Organizations relying on AI must reassess their data training practices to prevent model collapse. As AI becomes integral to security operations, maintaining model integrity is crucial for ensuring reliable and secure outcomes. This trend highlights the need for robust data governance in AI deployments.",
-            "source": "Dark Reading",
-            "sourceUrl": "https://www.darkreading.com/application-security/ai-death-accuracy-zero-trust",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
             "date": "Mar 23 2026",
             "headline": "RSAC 2026 Registration Opens—Secure Your Spot Now",
             "title": "RSA Conference 2026 Registration Opens for Cybersecurity Professionals",
@@ -140,6 +178,92 @@ const websiteContent = {
         }
     ],
     "aiShorts": [
+        {
+            "date": "Jan 28 2026",
+            "headline": "AI-Blockchain Fusion Boosts Trust in Agent Economy",
+            "title": "Masumi Network Leverages AI-Blockchain for Trusted Agent Economy",
+            "content": "The Masumi Network is pioneering the integration of AI and blockchain to enhance trust in the rapidly growing agent economy. As organizations deploy AI agents across various roles, the need for reliable, tamper-proof systems becomes critical. By 2030, IDC predicts that 20% of enterprise tech will rely on AI-driven agents. Masumi&#x27;s platform ensures transparency and accountability through blockchain&#x27;s immutable ledger, addressing concerns over AI decision-making in sectors like finance and healthcare. Companies are encouraged to explore blockchain-backed AI solutions to mitigate risks and ensure compliance in their AI deployments.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/masumi-network-how-ai-blockchain-fusion-adds-trust-to-burgeoning-agent-economy/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 28 2026",
+            "headline": "White House: AI Era Mirrors Industrial Revolution",
+            "title": "White House Compares AI Impact to Industrial Revolution",
+            "content": "A White House paper titled &quot;Artificial Intelligence and the Great Divergence&quot; highlights AI&#x27;s transformative role in shaping global economies, akin to the industrial revolution of the 18th and 19th centuries. The document underscores AI&#x27;s potential to drive economic divergence, with leading nations leveraging AI advancements to outpace others. Policymakers are urged to consider regulatory frameworks that balance innovation with ethical considerations. This comparison emphasizes the need for strategic investments in AI to enhance national competitiveness and address socioeconomic disparities.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/white-house-predicts-ai-growth-with-comparison-industrial-and-artificial-intelligence-revolutions/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 28 2026",
+            "headline": "Grok Deemed Most Antisemitic Chatbot by ADL Study",
+            "title": "ADL Study Finds Grok Fails at Countering Antisemitic Content",
+            "content": "The Anti-Defamation League&#x27;s recent study reveals that xAI&#x27;s Grok chatbot is the least effective among six large language models in identifying and countering antisemitic content. In contrast, Anthropic&#x27;s Claude performed best in the assessment. This finding raises concerns about the ethical training and deployment of AI models, especially in sensitive areas like hate speech detection. Organizations using AI for content moderation should prioritize models with proven effectiveness in mitigating harmful narratives. The report calls for improved AI training to address biases and enhance content safety.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/news/868925/adl-ai-antisemitism-report-grok-chatgpt-gemini-claude-deepseek-llama-elon-musk",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 28 2026",
+            "headline": "AI Uncovers 1,400 Anomalies in Hubble Archives",
+            "title": "ESA Astronomers Use AI to Discover Hubble Anomalies",
+            "content": "Astronomers at the European Space Agency have employed AI to identify over 1,400 anomalous objects in the Hubble Space Telescope&#x27;s extensive archives. Researchers David O&#x27;Ryan and Pablo Gómez trained a machine learning model to sift through 35 years of Hubble data, uncovering previously undocumented astrophysical phenomena. This breakthrough demonstrates AI&#x27;s potential in enhancing astronomical research by efficiently analyzing vast datasets. The discovery invites further investigation into these anomalies, potentially leading to new insights into the universe&#x27;s mysteries.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/news/869182/astronomers-ai-discover-cosmic-anomalies-hubble-archives",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 28 2026",
+            "headline": "Waabi Secures $1B for Robotaxis with Uber",
+            "title": "Waabi Raises $1B, Partners with Uber for Robotaxi Expansion",
+            "content": "Waabi has successfully raised $1 billion, with $750 million from a Series C round and an additional $250 million from Uber, to advance its autonomous trucking and robotaxi initiatives. The funding will facilitate the deployment of 25,000 robotaxis exclusively on Uber&#x27;s platform, marking a significant step in the commercialization of autonomous vehicles. This collaboration exemplifies the growing trend of partnerships between tech startups and established platforms to accelerate AI-driven transportation solutions. Industry stakeholders should monitor this development as it could reshape urban mobility.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/28/waabi-raises-1b-and-expands-into-robotaxis-with-uber/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 28 2026",
+            "headline": "AI Adoption Uneven in US Workplaces—Gallup Survey",
+            "title": "Gallup Survey Highlights Fragmented AI Adoption in US Workplaces",
+            "content": "According to a Gallup Workforce survey, AI adoption in US workplaces is uneven, with usage varying significantly by role, industry, and organization. The survey, covering data up to December 2025, reveals that while some sectors benefit significantly from AI, others lag behind due to resource constraints or lack of expertise. This disparity highlights the need for targeted strategies to foster AI integration across diverse industries. Organizations should assess their AI readiness and invest in training to harness AI&#x27;s full potential, ensuring competitive advantage and operational efficiency.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/gallup-workforce-ai-shows-details-of-ml-adoption-in-us-workplaces/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 28 2026",
+            "headline": "Google Targets JEE Students with Gemini Practice Tests",
+            "title": "Google Launches Gemini Practice Tests for India&#x27;s JEE Exam",
+            "content": "Google has introduced practice tests for the Joint Entrance Examination (JEE) in India through its Gemini platform, following the release of SAT practice tests. This initiative aims to support students preparing for one of India&#x27;s most competitive college entrance exams by providing tailored study resources. Google&#x27;s move reflects a broader strategy to leverage AI in education, offering personalized learning experiences. Educational institutions and students should consider integrating such AI-powered tools to enhance exam preparation and improve outcomes.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/28/google-turns-gemini-toward-indias-most-competitive-entrance-exam/",
+            "relatedResources": []
+        },
         {
             "date": "Jan 28 2026",
             "headline": "Brazil&#x27;s Nemotron-Personas Initiative—A New Era for Sovereign AI",
@@ -169,57 +293,6 @@ const websiteContent = {
                     "icon": "fa-brain"
                 }
             ]
-        },
-        {
-            "date": "Jan 27 2026",
-            "headline": "Meta&#x27;s $6.4M Campaign—Data Centers Are &quot;Cool&quot;",
-            "title": "Meta&#x27;s $6.4 Million Campaign Promotes Data Centers Across the U.S.",
-            "content": "Meta has invested $6.4 million in an advertising campaign aimed at reshaping public perception of data centers. Running in cities from Sacramento to Washington, the campaign seeks to highlight the benefits of new data center constructions, including job creation and technological advancement. This initiative is part of Meta&#x27;s broader strategy to address public concerns about environmental impact and energy consumption associated with data centers. As more companies expand their data infrastructure, public acceptance becomes critical. Viewers are encouraged to consider the economic and technological benefits that data centers can bring to their communities.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/news/869008/meta-data-centers-ad-campaign",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 27 2026",
-            "headline": "Moltbot—The AI Agent Revolutionizing Task Management",
-            "title": "Open-Source AI Agent Moltbot Gains Popularity for Practical Applications",
-            "content": "Moltbot, an open-source AI agent, is gaining traction for its practical applications in task automation and management. Users are leveraging Moltbot to handle tasks such as setting reminders, logging health data, and client communication. The agent&#x27;s versatility and ease of integration have made it a popular choice among tech enthusiasts and professionals. As more people adopt AI solutions for everyday tasks, understanding their potential and limitations becomes essential. Moltbot&#x27;s rise reflects a broader trend towards AI tools that offer real-world utility beyond theoretical capabilities.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/report/869004/moltbot-clawdbot-local-ai-agent",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 27 2026",
-            "headline": "SOC Automation—40% Risk Failure Without Governance",
-            "title": "SOC Teams Risk Failure in Triage Automation Without Governance Boundaries",
-            "content": "Security Operations Centers (SOCs) are increasingly automating alert triage, yet 40% risk failure without proper governance boundaries. With enterprises facing an average of 10,000 alerts daily, automation is essential to manage the workload. However, inadequate governance can lead to missed critical alerts, as evidenced by over 60% of security teams admitting to ignoring alerts that later proved crucial. Establishing clear governance frameworks is vital to ensure effective triage and response. SOC teams should prioritize implementing robust policies to manage automation and mitigate risks associated with alert fatigue.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/security/tier-1-soc-work-becoming-code-architectural-decisions-hours-minutes-response",
-            "relatedResources": [
-                {
-                    "label": "SOC Analyst Fundamentals",
-                    "url": "/guides/soc-analyst-fundamentals.html",
-                    "icon": "fa-shield-alt"
-                }
-            ]
-        },
-        {
-            "date": "Jan 27 2026",
-            "headline": "Winter Storm Strains AI Data Center Power Grids",
-            "title": "Winter Storm Fern Tests Power Grids Amid AI Data Center Expansion",
-            "content": "Winter Storm Fern has severely tested power grids across 34 states, highlighting vulnerabilities exacerbated by the rapid expansion of AI data centers. As temperatures plummeted, hundreds of thousands lost electricity, underscoring the strain on infrastructure. The demand for energy-intensive AI data centers is contributing to grid instability, raising concerns about sustainability and resilience. This event serves as a wake-up call for energy providers and tech companies to invest in more robust and sustainable solutions. Stakeholders must address the balance between technological growth and infrastructure capacity to prevent future disruptions.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/report/868859/electricity-rates-power-grid-ai-data-center-winter-storm",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 27 2026",
-            "headline": "Anduril&#x27;s Drone Contest—Winning Coders Get Jobs",
-            "title": "Anduril Launches Drone-Flying Contest for Programmers with Job Offers as Prizes",
-            "content": "Anduril Industries has introduced an innovative drone-flying contest designed for software programmers, offering job positions as prizes to winners. This unique competition, conceived by founder Palmer Luckey, aims to attract top programming talent by combining technical skills with creative problem-solving. Participants are challenged to develop software that enhances drone navigation and performance. The contest reflects Anduril&#x27;s commitment to fostering innovation and recruiting skilled professionals in the competitive tech industry. Programmers interested in cutting-edge drone technology are encouraged to participate and potentially secure a role in the company.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/27/anduril-has-invented-a-wild-new-drone-flying-contest-where-jobs-are-the-prize/",
-            "relatedResources": []
         }
     ],
     "articles": {},
