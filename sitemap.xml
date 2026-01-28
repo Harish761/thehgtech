@@ -69,6 +69,18 @@
   
   <!-- ========== ARTICLES - HIGH TRAFFIC POTENTIAL ========== -->
   
+  <!-- January 28, 2026 - Microsoft Office Zero-Day CVE-2026-21509 -->
+  <url>
+    <loc>https://thehgtech.com/articles/ms-office-zero-day-cve-2026-21509.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.98</priority>
+    <lastmod>2026-01-28</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/ms-office-zero-day-cve-2026-21509.png</image:loc>
+      <image:title>Microsoft Office Zero-Day CVE-2026-21509 Actively Exploited</image:title>
+    </image:image>
+  </url>
+
   <!-- January 27, 2026 Articles - Niche Research Series -->
   <url>
     <loc>https://thehgtech.com/articles/infostealer-mfa-bypass-2026.html</loc>
