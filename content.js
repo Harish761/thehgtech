@@ -5,6 +5,93 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Jan 29 2026",
+            "headline": "France Fines Unemployment Agency €5M—43M Records Exposed",
+            "title": "France&#x27;s Unemployment Agency Penalized for Massive Data Breach",
+            "content": "The French data protection authority has fined the national employment agency €5 million following a data breach that compromised the personal information of 43 million job seekers. The breach stemmed from inadequate security measures that allowed unauthorized access to sensitive data. This incident underscores the critical need for robust data protection strategies, especially when handling vast amounts of personal information. The breach has sparked concerns about the agency&#x27;s ability to safeguard its systems against future attacks. Organizations are urged to review and enhance their cybersecurity frameworks to prevent similar breaches.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/france-fines-unemployment-agency-5-million-over-data-breach/",
+            "relatedResources": [
+                {
+                    "label": "NIST CSF 2.0 Implementation",
+                    "url": "/guides/nist-csf-2-implementation.html",
+                    "icon": "fa-check-double"
+                }
+            ]
+        },
+        {
+            "date": "Jan 29 2026",
+            "headline": "SolarWinds Fixes 4 Critical Flaws—Patch Now",
+            "title": "SolarWinds Patches Critical Web Help Desk Vulnerabilities",
+            "content": "SolarWinds has released patches for four critical vulnerabilities in its Web Help Desk software that could be exploited for remote code execution or authentication bypass without user interaction. These vulnerabilities, affecting all versions prior to the latest patch, pose significant risks to organizations using the software for IT service management. Cybersecurity professionals are strongly advised to apply the patches immediately to mitigate potential exploitation. The vulnerabilities highlight the ongoing threat landscape where even widely-used tools can become targets for sophisticated attacks. Staying updated with security patches remains a crucial defense strategy.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/solarwinds-patches-critical-web-help-desk-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 29 2026",
+            "headline": "ThreatsDay Bulletin: RCEs, Darknet Busts, Kernel Bugs",
+            "title": "Weekly Cyber Threats: RCEs, Darknet Busts, Kernel Vulnerabilities",
+            "content": "This week&#x27;s ThreatsDay Bulletin highlights a range of cybersecurity issues, including new remote code execution (RCE) vulnerabilities, darknet marketplace shutdowns, and kernel bugs. The bulletin emphasizes the subtle yet impactful nature of these threats, which often go unnoticed until they accumulate significant damage. It also notes the increasing trend of familiar tools being repurposed for unexpected attacks. Cybersecurity experts are encouraged to remain vigilant, keeping abreast of the evolving threat landscape and employing proactive measures to protect their systems.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/01/threatsday-bulletin-new-rces-darknet.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 29 2026",
+            "headline": "ISC Stormcast: January 29th Update—InfoCON Level Green",
+            "title": "ISC Stormcast Update: January 29th, 2026",
+            "content": "The latest ISC Stormcast provides an overview of the current cybersecurity landscape, maintaining the InfoCON level at green, indicating no immediate threats. This week&#x27;s update includes insights into ongoing security trends and minor incidents that could have broader implications if unaddressed. The Stormcast serves as a reminder for organizations to stay informed and prepared, even when the threat level appears low. Regular updates and security assessments are recommended to ensure continued vigilance against potential threats.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32664",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Jan 29 2026",
+            "headline": "n8n Platform RCE Flaws—Urgent Patch Required",
+            "title": "Critical RCE Bugs in n8n Automation Platform Expose Host Systems",
+            "content": "Two critical sandbox escape vulnerabilities have been identified in the n8n workflow automation platform, allowing authenticated users to execute remote code on affected instances. Discovered by JFrog researchers, these flaws bypass the platform&#x27;s sandboxing safeguards, potentially leading to host-level compromises. Organizations using n8n are urged to apply the latest patches immediately to prevent exploitation. This discovery highlights the importance of regularly assessing and updating security measures in widely-used automation tools.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4124343/critical-rce-bugs-expose-the-n8n-automation-platform-to-host%e2%80%91level-compromise.html",
+            "relatedResources": [
+                {
+                    "label": "N8N Analysis",
+                    "url": "/articles/n8n-rce-vulnerability-cve-2025-68613.html",
+                    "icon": "fa-file-alt"
+                }
+            ]
+        },
+        {
+            "date": "Jan 29 2026",
+            "headline": "Cyber Insights 2026: Navigating Zero Trust&#x27;s Complex Path",
+            "title": "Zero Trust in 2026: A Conceptual Security Framework",
+            "content": "SecurityWeek&#x27;s Cyber Insights 2026 explores the evolving concept of Zero Trust, emphasizing it as a strategic approach rather than a specific product or destination. Zero Trust focuses on continuous verification of user identities and device integrity, crucial in today&#x27;s complex threat environment. The article highlights the challenges organizations face in implementing Zero Trust, including the need for cultural and infrastructural shifts. Security leaders are encouraged to adopt a flexible, adaptive mindset to effectively integrate Zero Trust principles into their cybersecurity strategies.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/cyber-insights-2026-zero-trust-and-following-the-path/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Jan 29 2026",
+            "headline": "Google Enhances Android Theft Protections—Stronger Safeguards Rolled Out",
+            "title": "Google Introduces Enhanced Android Theft Protection Features",
+            "content": "Google has rolled out updates to Android&#x27;s theft protection features, strengthening authentication safeguards and recovery tools to deter smartphone theft. These enhancements aim to make stolen devices less attractive targets by complicating unauthorized access and recovery processes. The updates reflect Google&#x27;s ongoing commitment to improving user security and privacy. Android users are advised to ensure their devices are updated to the latest version to benefit from these new protections. This move aligns with broader industry trends towards improving mobile security measures.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/google/google-rolls-out-android-theft-protection-feature-updates/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 29 2026",
             "headline": "Pegasus Spyware Case—YouTuber Wins Landmark Suit Against Saudi Arabia",
             "title": "London YouTuber Wins Court Case Over Pegasus Spyware Phone Hack",
             "content": "A London-based YouTuber has achieved a significant legal victory against Saudi Arabia after his smartphone was hacked using Pegasus spyware. This case highlights the espionage capabilities of Pegasus, which can transform a device into a continuous surveillance tool via a single text message. The court ruling underscores the risks posed by sophisticated spyware to personal privacy and security. This decision could pave the way for similar legal actions by other victims of state-sponsored cyber intrusions. Security professionals should ensure robust defenses against such spyware, including regular updates and vigilance against suspicious communications.",
@@ -34,80 +121,6 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Jan 28 2026",
-            "headline": "Tsundere Bot—New Tool in Ransomware Attack Arsenal",
-            "title": "TA584 Uses Tsundere Bot for Initial Access in Ransomware Attacks",
-            "content": "The initial access broker TA584 has been identified using the Tsundere Bot in conjunction with the XWorm remote access trojan to infiltrate networks, potentially leading to ransomware attacks. This tactic exemplifies the evolving methods of cybercriminals seeking to exploit vulnerabilities in organizational defenses. The use of such tools allows attackers to gain unauthorized access and escalate privileges within targeted systems. Organizations should enhance their security measures, including network segmentation and advanced threat detection, to mitigate the risk of such intrusions.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/initial-access-hackers-switch-to-tsundere-bot-for-ransomware-attacks/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Response Playbook",
-                    "url": "/guides/ransomware-response-playbook.html",
-                    "icon": "fa-biohazard"
-                }
-            ]
-        },
-        {
-            "date": "Jan 28 2026",
-            "headline": "WinRAR Flaw Exploited—SMBs at Risk Despite Patch",
-            "title": "Nation-State Actors Exploit WinRAR Vulnerability Post-Patch",
-            "content": "Despite a patch released in July, a vulnerability in WinRAR is being actively exploited by Russian and Chinese nation-state attackers. Small and medium-sized businesses (SMBs) are particularly at risk due to slower patch adoption and limited resources. The flaw allows attackers to execute arbitrary code, potentially leading to data breaches and system compromises. This situation highlights the importance of timely patch management and the need for SMBs to prioritize cybersecurity measures. Organizations should ensure that all software is up-to-date and consider implementing automated patch management solutions.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/application-security/months-after-patch-winrar-bug-poised-smbs-hardest",
-            "relatedResources": [
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Jan 28 2026",
-            "headline": "Fortinet Zero-Day Exploited—Customers Face Familiar Security Woes",
-            "title": "Fortinet Zero-Day Allows Unauthorized Firewall Reconfigurations",
-            "content": "A critical zero-day vulnerability in Fortinet&#x27;s security products has been exploited to reconfigure firewall settings and create unauthorized accounts with privileged access. This issue echoes past security challenges faced by Fortinet customers, underscoring the need for proactive vulnerability management. Affected versions include multiple iterations of the vendor&#x27;s products, leaving many users exposed to potential breaches. Customers are urged to apply available patches immediately and review their firewall configurations for any unauthorized changes. This incident highlights the ongoing threat of zero-day vulnerabilities in widely used security solutions.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/ortinet-zero-day-cve-2026-24858-forticloud-sso-auth-bypass/",
-            "relatedResources": [
-                {
-                    "label": "Fortinet Analysis",
-                    "url": "/articles/fortinet-fortigate-critical-exploit-2025.html",
-                    "icon": "fa-file-alt"
-                },
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Jan 28 2026",
-            "headline": "Polish Energy Grid Attack—30 Facilities Targeted in December",
-            "title": "Cyberattack on Polish Energy Grid Affects Multiple Facilities",
-            "content": "A coordinated cyberattack on Poland&#x27;s power grid in late December targeted approximately 30 distributed energy resource sites, including combined heat and power facilities and renewable energy systems. The attack disrupted operations and highlighted vulnerabilities within critical infrastructure. As energy systems become increasingly digitalized, the risk of cyber intrusions grows, necessitating enhanced protective measures. Authorities are investigating the attack&#x27;s origins and working to bolster defenses against future incidents. Organizations in the energy sector should prioritize cybersecurity to safeguard critical operations.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cyberattack-on-polish-energy-grid-impacted-around-30-facilities/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 28 2026",
-            "headline": "Surveillance Powers Expire—Senate Awaits Trump Administration Response",
-            "title": "Senate Judiciary Committee Awaits Trump Administration on Section 702",
-            "content": "The Senate Judiciary Committee held a hearing on the impending expiration of Section 702, a key surveillance authority set to sunset at the end of April. The absence of Trump administration witnesses at the hearing has raised concerns about the future of these surveillance powers. Section 702 allows for the collection of foreign intelligence information, and its expiration could impact national security operations. Lawmakers are urging the administration to clarify its stance and potential plans for renewal or reform. Stakeholders should monitor developments closely, as legislative changes could affect intelligence and privacy frameworks.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/trump-administration-section-702-fisa-renewal-senate-judiciary-hearing/",
-            "relatedResources": [
-                {
-                    "label": "NIST CSF 2.0 Implementation",
-                    "url": "/guides/nist-csf-2-implementation.html",
-                    "icon": "fa-check-double"
-                }
-            ]
-        },
-        {
             "date": "Mar 23 2026",
             "headline": "RSAC 2026 Registration Opens—Secure Your Spot Now",
             "title": "RSA Conference 2026 Registration Opens for Cybersecurity Professionals",
@@ -126,6 +139,98 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
+            "date": "Jan 28 2026",
+            "headline": "Google’s Gemini AI Automates Chrome Tasks for US Users",
+            "title": "Google Launches Gemini AI-Powered Auto Browse Feature in Chrome",
+            "content": "Google has introduced a new &quot;auto browse&quot; feature in Chrome, powered by its Gemini AI, available to Google AI Pro and Ultra subscribers in the US. This feature automates complex, multi-step tasks such as researching hotel and flight costs, scheduling appointments, and filling out forms. By leveraging machine learning, Gemini aims to streamline online interactions, enhancing productivity for users who frequently perform these tasks. This development reflects the growing trend of integrating AI into daily digital activities, offering a glimpse into the future of automated browsing. Users interested in this feature should ensure they are subscribed to eligible plans to access these capabilities.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/news/869731/google-gemini-ai-chrome-auto-browse",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 28 2026",
+            "headline": "ServiceNow Expands AI Reach with Anthropic Partnership",
+            "title": "ServiceNow Partners with Anthropic to Enhance AI Capabilities",
+            "content": "ServiceNow has announced a strategic partnership with Anthropic, marking its second major AI collaboration following a recent deal with OpenAI. This partnership signifies ServiceNow&#x27;s commitment to a multi-model approach, aiming to enhance its AI capabilities across various applications. By integrating Anthropic&#x27;s advanced AI models, ServiceNow seeks to improve automation and efficiency in its offerings, potentially impacting a wide range of industries reliant on its platform. This move underscores the competitive landscape where tech companies are rapidly adopting AI technologies to maintain an edge. Stakeholders should monitor how these partnerships influence ServiceNow&#x27;s product roadmap and market position.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/28/servicenow-inks-another-ai-partnership-this-time-with-anthropic/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 28 2026",
+            "headline": "YouTube Purges Popular AI Slop Channels Amid Concerns",
+            "title": "YouTube Removes Top AI Slop Channels, Including CuentosFacianantes",
+            "content": "YouTube has removed several popular AI slop channels, including CuentosFacianantes, which had amassed over 5.9 million subscribers and 1.2 billion views. This action follows a report by Kapwing highlighting concerns about the content quality and potential policy violations of these channels. The removal reflects YouTube&#x27;s ongoing efforts to maintain content integrity and address the proliferation of low-quality, AI-generated content on its platform. Creators and viewers alike should be aware of YouTube&#x27;s increasing scrutiny and the potential implications for AI-driven content strategies. This development may signal a broader industry trend toward stricter content moderation.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/news/869684/youtube-top-ai-channels-removed-kapwing",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 28 2026",
+            "headline": "Doomsday Clock Advances—Global Risks Intensify",
+            "title": "Doomsday Clock Set to 85 Seconds to Midnight Amid Rising Risks",
+            "content": "The Doomsday Clock, a symbolic representation of global existential threats, has been set to 85 seconds to midnight, indicating heightened risks. This adjustment highlights increasing catastrophic threats and declining international cooperation, urging swift action from global leaders. The clock, maintained by the Bulletin of the Atomic Scientists, serves as a stark reminder of the urgent need for collaborative efforts to address issues like nuclear proliferation and climate change. Professionals in security and policy-making fields should consider the implications of these risks and advocate for proactive measures to mitigate potential global crises.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/the-doomsday-clock-is-now-85-seconds-to-midnight-heres-what-that-means/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 28 2026",
+            "headline": "Claude AI Powers Complex Smart Home Automations",
+            "title": "Using Claude AI to Vibe-Code an Overcomplicated Smart Home",
+            "content": "Tech enthusiasts are increasingly using Claude AI to implement &quot;vibe-coded&quot; smart home projects, showcasing the AI&#x27;s versatility in automating complex tasks. From creating a &quot;master command center&quot; with Lutron systems to managing smart ovens, users are leveraging AI to personalize and optimize their home environments. This trend highlights the growing accessibility of AI technologies for non-coders, enabling them to experiment with advanced home automation. As AI continues to integrate into consumer technology, users should explore how these tools can enhance their living spaces while remaining mindful of privacy and security considerations.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/report/869318/claude-vibe-coding-home-assistant-smart-home",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Jan 28 2026",
+            "headline": "WhatsApp to Charge AI Chatbots in Italy Per Message",
+            "title": "WhatsApp Introduces Messaging Fees for AI Chatbots in Italy",
+            "content": "WhatsApp has announced plans to charge developers of AI chatbots on its platform in Italy a fee per message. This move aims to monetize the growing use of AI-driven interactions on the messaging service, potentially impacting developers&#x27; cost structures and pricing models. As AI chatbots become more prevalent in customer service and engagement, businesses using WhatsApp in Italy must reassess their budgets and strategies. This decision underscores the increasing commercialization of AI technologies and the need for developers to adapt to evolving platform policies. Stakeholders should stay informed about potential changes in other regions.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/28/whatsapp-will-now-charge-ai-chatbots-to-operate-in-italy/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 28 2026",
+            "headline": "Moltbot Gains Popularity Despite Privacy Concerns",
+            "title": "Moltbot AI Assistant Gains Traction in Silicon Valley",
+            "content": "Moltbot, formerly known as Clawdbot, is rapidly gaining popularity in Silicon Valley, with users embracing its AI-driven capabilities to manage daily tasks. Despite privacy concerns, many are allowing the viral assistant to handle various aspects of their lives, from scheduling to personal reminders. This trend highlights the delicate balance between convenience and privacy in the adoption of AI technologies. As Moltbot&#x27;s user base grows, developers and users should remain vigilant about data security and privacy implications, ensuring that the benefits of AI do not come at the expense of personal information protection.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/clawdbot-moltbot-viral-ai-assistant/",
+            "relatedResources": []
+        },
+        {
             "date": "Jan 29 2026",
             "headline": "Data Centers Fuel 25x Surge in US Gas Projects",
             "title": "US Data Centers Drive Massive Increase in Gas Pipeline Projects",
@@ -138,83 +243,6 @@ const websiteContent = {
                     "url": "/ransomware-tracker.html",
                     "icon": "fa-skull-crossbones"
                 },
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 28 2026",
-            "headline": "Zuckerberg Bets on AI for Social Media&#x27;s Future",
-            "title": "Zuckerberg Shifts Focus from Metaverse to AI-Driven Social Media",
-            "content": "In a recent earnings call, Meta CEO Mark Zuckerberg outlined a strategic pivot from the metaverse to AI-driven social feeds, positioning AI as the next transformative media format. Zuckerberg envisions AI-enhanced feeds that offer more immersive and interactive user experiences, potentially reshaping how users engage with content on platforms like Facebook and Instagram. This shift reflects broader industry trends toward AI integration in social media, driven by advancements in machine learning and user data analytics. As Meta invests heavily in AI, developers and tech leaders should prepare for changes in content delivery and user engagement metrics. This strategic move could redefine social media dynamics and influence competitors&#x27; approaches to AI adoption.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/news/869882/mark-zuckerberg-meta-earnings-q4-2025",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 28 2026",
-            "headline": "Zuckerberg Promises &#x27;Personal Super Intelligence&#x27; in 2026",
-            "title": "Zuckerberg Announces Ambitious AI Rollout and Agentic Commerce Tools",
-            "content": "Mark Zuckerberg has declared 2026 as a pivotal year for Meta, focusing on delivering &quot;personal super intelligence&quot; through advanced AI technologies. This announcement includes plans for agentic commerce tools, which could revolutionize how users interact with online shopping platforms. These tools aim to leverage AI to provide personalized shopping experiences, potentially increasing user engagement and sales conversions. As Meta expands its AI capabilities, businesses and developers should anticipate shifts in e-commerce strategies and prepare for new AI-driven opportunities. The rollout underscores Meta&#x27;s commitment to maintaining its competitive edge in the rapidly evolving AI landscape.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/28/zuckerberg-teases-agentic-commerce-tools-and-major-ai-rollout-in-2026/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 28 2026",
-            "headline": "Zuckerberg Envisions Future Dominated by Smart Glasses",
-            "title": "Zuckerberg Sees Smart Glasses as Integral to Future Tech Landscape",
-            "content": "Mark Zuckerberg has expressed a strong belief in the future of smart glasses, stating that a world without them is &quot;hard to imagine.&quot; Despite previous optimism about the metaverse, Zuckerberg&#x27;s current focus suggests a shift towards augmented reality (AR) technologies. Smart glasses, equipped with AR capabilities, could redefine how users interact with digital content and their environment. This outlook aligns with industry trends emphasizing wearable tech as a key growth area. As Meta and other tech giants invest in AR, developers and tech leaders should explore opportunities in creating applications and services that leverage smart glasses&#x27; potential.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/28/mark-zuckerberg-future-smart-glasses/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 28 2026",
-            "headline": "Tesla Commits $2B to Musk&#x27;s xAI Venture",
-            "title": "Tesla Invests $2 Billion in Elon Musk&#x27;s AI Company xAI",
-            "content": "Tesla has announced a substantial $2 billion investment in xAI, Elon Musk&#x27;s AI-focused company, following xAI&#x27;s recent $20 billion fundraising milestone. This investment underscores Tesla&#x27;s commitment to advancing AI technologies, potentially integrating them into its automotive and energy products. The capital influx is expected to accelerate xAI&#x27;s research and development efforts, positioning it as a key player in the AI sector. Industry professionals should watch for potential innovations emerging from xAI that could influence AI applications across various domains, including autonomous driving and smart energy solutions. This move highlights the growing intersection of AI and traditional industries.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/28/tesla-invested-2b-in-elon-musks-xai/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Active Directory Security",
-                    "url": "/guides/active-directory-security-hardening.html",
-                    "icon": "fa-sitemap"
-                }
-            ]
-        },
-        {
-            "date": "Jan 28 2026",
-            "headline": "Musk Hints at New System to Flag Manipulated Media",
-            "title": "Elon Musk Teases Image-Labeling System for Identifying Manipulated Media",
-            "content": "Elon Musk has announced plans for a new system on X (formerly Twitter) to identify &quot;manipulated media,&quot; though details remain sparse. This initiative aims to combat misinformation by flagging altered images and videos, enhancing the platform&#x27;s content integrity. While specifics are not yet available, the move reflects a broader industry push towards improving digital media transparency and accountability. As social media platforms face increasing scrutiny over misinformation, developers and security professionals should anticipate the technical challenges and opportunities associated with implementing such systems. This development could set a precedent for other platforms in addressing media manipulation.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/28/elon-musk-teases-a-new-image-labeling-system-for-xwe-think/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 28 2026",
-            "headline": "ICE Leverages Palantir AI for Tip Line Efficiency",
-            "title": "ICE Utilizes Palantir&#x27;s AI Tools to Process Public Tips",
-            "content": "The U.S. Immigration and Customs Enforcement (ICE) has been employing Palantir&#x27;s AI-powered tools to streamline the processing of tips received through its tip line since last spring. This system uses artificial intelligence to summarize and prioritize incoming tips, enhancing ICE&#x27;s ability to respond to potential threats efficiently. The adoption of AI in law enforcement raises important considerations about privacy and civil liberties, as well as the effectiveness of AI in improving operational workflows. Professionals in the AI and security sectors should consider the implications of such technology deployments in government agencies. This development highlights the expanding role of AI in public safety and intelligence operations.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/ice-is-using-palantirs-ai-tools-to-sort-through-tips/",
-            "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
                     "url": "/guides/securing-ai-ml-pipelines.html",
