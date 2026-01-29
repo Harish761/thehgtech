@@ -4,56 +4,27 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Jan 28 2026",
-            "headline": "Hackers Exploit LLM Endpoints—AI Infrastructure at Risk",
-            "title": "Bizarre Bazaar Operation Hijacks Exposed LLM Service Endpoints",
-            "content": "A sophisticated cybercriminal operation, dubbed Bizarre Bazaar, is targeting exposed endpoints of Large Language Model (LLM) services to sell unauthorized access to AI infrastructure. These attacks exploit misconfigured endpoints, allowing threat actors to manipulate AI models and potentially compromise sensitive data. The campaign underscores the importance of securing AI endpoints, as the misuse of LLMs could lead to significant data breaches and intellectual property theft. Organizations using AI services must ensure their endpoints are properly configured and access is tightly controlled. This incident highlights the growing trend of targeting AI systems, emphasizing the need for robust security measures.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-hijack-exposed-llm-endpoints-in-bizarre-bazaar-operation/",
+            "date": "Jan 29 2026",
+            "headline": "Pegasus Spyware Case—YouTuber Wins Landmark Suit Against Saudi Arabia",
+            "title": "London YouTuber Wins Court Case Over Pegasus Spyware Phone Hack",
+            "content": "A London-based YouTuber has achieved a significant legal victory against Saudi Arabia after his smartphone was hacked using Pegasus spyware. This case highlights the espionage capabilities of Pegasus, which can transform a device into a continuous surveillance tool via a single text message. The court ruling underscores the risks posed by sophisticated spyware to personal privacy and security. This decision could pave the way for similar legal actions by other victims of state-sponsored cyber intrusions. Security professionals should ensure robust defenses against such spyware, including regular updates and vigilance against suspicious communications.",
+            "source": "GRAHAM CLULEY",
+            "sourceUrl": "https://grahamcluley.com/smashing-security-podcast-452/",
             "relatedResources": [
                 {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                },
-                {
-                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
-                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
-                    "icon": "fa-shield-virus"
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
                 }
             ]
         },
         {
-            "date": "Jan 28 2026",
-            "headline": "Rein Security Raises $8M—Revolutionizes AppSec with Inside-Out Approach",
-            "title": "Rein Security Debuts with $8M Funding for Innovative Application Security",
-            "content": "Rein Security has emerged from stealth mode with an $8 million funding round, introducing an innovative &quot;inside-out&quot; approach to application security. This method focuses on detecting and stopping attacks within the application runtime, closing the visibility gap in production environments. Rein&#x27;s technology aims to provide real-time insight into application behavior, enabling faster threat detection and response. The company&#x27;s approach represents a shift from traditional perimeter defenses to more integrated security solutions. Developers and security teams should consider adopting such strategies to enhance application protection and reduce the risk of exploits.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/rein-security-emerges-from-stealth-with-8m-bringing-inside-out-protection-to-appsec/",
-            "relatedResources": [
-                {
-                    "label": "Zero-Day Detection Guide",
-                    "url": "/guides/zero-day-detection.html",
-                    "icon": "fa-exclamation-triangle"
-                }
-            ]
-        },
-        {
-            "date": "Jan 28 2026",
-            "headline": "WhatsApp Enhances Security—Fights Advanced Exploits and Spyware",
-            "title": "WhatsApp Strengthens Media Handling and Introduces Strict Account Settings",
-            "content": "WhatsApp has rolled out new security features to combat advanced exploits and spyware, focusing on how the platform handles photos and videos. The update includes Strict Account Settings, designed to limit risky interactions with unknown senders, thereby reducing exposure to potential threats. These enhancements are part of WhatsApp&#x27;s ongoing efforts to protect user privacy and data integrity in the face of increasingly sophisticated cyber threats. Users are advised to update their app to benefit from these new protections and review their account settings for optimal security. This move reflects a broader industry trend towards fortifying communication apps against emerging threats.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/01/whatsapp-rolls-out-new-protections-against-advanced-exploits-and-spyware",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 28 2026",
-            "headline": "Darknet Operator Pleads Guilty—Facilitated Cybercrime Marketplace",
-            "title": "Slovakian Man Admits to Running Illegal Darknet Marketplace",
-            "content": "A Slovakian national has pleaded guilty to operating a darknet marketplace that facilitated the sale of narcotics, cybercrime tools, and stolen personal information for over two years. The marketplace also offered fake government IDs, making it a hub for various illegal activities. This case highlights the persistent threat posed by darknet platforms in enabling cybercrime and the challenges law enforcement faces in dismantling such operations. Authorities continue to pursue individuals involved in these illicit networks, emphasizing the importance of international collaboration in combating cybercrime. Security professionals should remain vigilant against the tools and services proliferating through these channels.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/slovakian-man-pleads-guilty-to-operating-kingdown-market-cybercrime-marketplace/",
+            "date": "Jan 29 2026",
+            "headline": "AI Infrastructure Hijacked—Hackers Resell Corporate Access",
+            "title": "Cybercriminals Target AI Infrastructure for Unauthorized Resale",
+            "content": "A new report from Pillar Security reveals that cybercriminals are increasingly hijacking and reselling access to exposed corporate AI infrastructure. This trend follows years of unauthorized cryptomining concerns and represents an evolving threat landscape. Companies with insufficiently secured AI systems are particularly vulnerable, potentially facing data breaches and financial losses. The report advises Chief Security Officers (CSOs) to prioritize securing AI infrastructure with robust access controls and continuous monitoring. As AI becomes integral to business operations, protecting these systems from exploitation is crucial.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4123806/crooks-are-hijacking-and-reselling-ai-infrastructure-report.html",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
@@ -64,20 +35,45 @@ const websiteContent = {
         },
         {
             "date": "Jan 28 2026",
-            "headline": "n8n Workflow Flaws—Critical RCE Vulnerability Disclosed",
-            "title": "Two High-Severity Vulnerabilities Found in n8n Workflow Automation Platform",
-            "content": "Cybersecurity researchers have uncovered two critical vulnerabilities in the n8n workflow automation platform, including CVE-2026-1470, which carries a CVSS score of 9.9. These flaws allow authenticated users to execute remote code, posing a severe risk to systems running affected versions. Discovered by JFrog Security Research, the vulnerabilities highlight the need for immediate patching to prevent potential exploitation. Organizations using n8n should prioritize updating their systems to mitigate these security risks. This incident underscores the importance of regular security assessments and timely updates in maintaining secure automation environments.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/01/two-high-severity-n8n-flaws-allow.html",
+            "headline": "Tsundere Bot—New Tool in Ransomware Attack Arsenal",
+            "title": "TA584 Uses Tsundere Bot for Initial Access in Ransomware Attacks",
+            "content": "The initial access broker TA584 has been identified using the Tsundere Bot in conjunction with the XWorm remote access trojan to infiltrate networks, potentially leading to ransomware attacks. This tactic exemplifies the evolving methods of cybercriminals seeking to exploit vulnerabilities in organizational defenses. The use of such tools allows attackers to gain unauthorized access and escalate privileges within targeted systems. Organizations should enhance their security measures, including network segmentation and advanced threat detection, to mitigate the risk of such intrusions.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/initial-access-hackers-switch-to-tsundere-bot-for-ransomware-attacks/",
             "relatedResources": [
                 {
-                    "label": "CVE Tracker",
-                    "url": "/cve-tracker.html",
-                    "icon": "fa-bug"
-                },
+                    "label": "Ransomware Response Playbook",
+                    "url": "/guides/ransomware-response-playbook.html",
+                    "icon": "fa-biohazard"
+                }
+            ]
+        },
+        {
+            "date": "Jan 28 2026",
+            "headline": "WinRAR Flaw Exploited—SMBs at Risk Despite Patch",
+            "title": "Nation-State Actors Exploit WinRAR Vulnerability Post-Patch",
+            "content": "Despite a patch released in July, a vulnerability in WinRAR is being actively exploited by Russian and Chinese nation-state attackers. Small and medium-sized businesses (SMBs) are particularly at risk due to slower patch adoption and limited resources. The flaw allows attackers to execute arbitrary code, potentially leading to data breaches and system compromises. This situation highlights the importance of timely patch management and the need for SMBs to prioritize cybersecurity measures. Organizations should ensure that all software is up-to-date and consider implementing automated patch management solutions.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/application-security/months-after-patch-winrar-bug-poised-smbs-hardest",
+            "relatedResources": [
                 {
-                    "label": "N8N Analysis",
-                    "url": "/articles/n8n-rce-vulnerability-cve-2025-68613.html",
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Jan 28 2026",
+            "headline": "Fortinet Zero-Day Exploited—Customers Face Familiar Security Woes",
+            "title": "Fortinet Zero-Day Allows Unauthorized Firewall Reconfigurations",
+            "content": "A critical zero-day vulnerability in Fortinet&#x27;s security products has been exploited to reconfigure firewall settings and create unauthorized accounts with privileged access. This issue echoes past security challenges faced by Fortinet customers, underscoring the need for proactive vulnerability management. Affected versions include multiple iterations of the vendor&#x27;s products, leaving many users exposed to potential breaches. Customers are urged to apply available patches immediately and review their firewall configurations for any unauthorized changes. This incident highlights the ongoing threat of zero-day vulnerabilities in widely used security solutions.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/ortinet-zero-day-cve-2026-24858-forticloud-sso-auth-bypass/",
+            "relatedResources": [
+                {
+                    "label": "Fortinet Analysis",
+                    "url": "/articles/fortinet-fortigate-critical-exploit-2025.html",
                     "icon": "fa-file-alt"
                 },
                 {
@@ -89,74 +85,25 @@ const websiteContent = {
         },
         {
             "date": "Jan 28 2026",
-            "headline": "AI SOC Agents—Enhancing Security Operations, Not Replacing Analysts",
-            "title": "AI Accelerates Security Operations from Triage to Threat Hunts",
-            "content": "AI technologies are reshaping security operations, enhancing capabilities from triage to threat hunting, but not replacing human analysts as once predicted. The concept of the AI Security Operations Center (SOC) agent promised full autonomy, yet the reality is a collaborative approach where AI augments human decision-making. This synergy allows for more efficient threat detection and response, optimizing security workflows. Organizations should leverage AI to enhance their SOC capabilities, focusing on areas where automation can reduce workload and improve accuracy. The future of security operations lies in harnessing AI&#x27;s potential while maintaining a human touch.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/01/from-triage-to-threat-hunts-how-ai.html",
-            "relatedResources": [
-                {
-                    "label": "SOC Analyst Fundamentals",
-                    "url": "/guides/soc-analyst-fundamentals.html",
-                    "icon": "fa-shield-alt"
-                }
-            ]
-        },
-        {
-            "date": "Jan 28 2026",
-            "headline": "WhatsApp Lockdown Feature—Protects High-Risk Users from Hackers",
-            "title": "New WhatsApp Security Feature Shields Journalists and Public Figures",
-            "content": "Meta has introduced a new lockdown-style security feature for WhatsApp, aimed at protecting high-risk users such as journalists and public figures from sophisticated threats, including spyware attacks. This feature enhances account security by implementing stricter controls and monitoring for suspicious activity. The rollout reflects Meta&#x27;s commitment to safeguarding vulnerable users against targeted cyber threats. High-risk individuals are encouraged to activate this feature to bolster their defenses against potential attacks. The initiative highlights the increasing focus on personalized security measures in the digital communication landscape.",
+            "headline": "Polish Energy Grid Attack—30 Facilities Targeted in December",
+            "title": "Cyberattack on Polish Energy Grid Affects Multiple Facilities",
+            "content": "A coordinated cyberattack on Poland&#x27;s power grid in late December targeted approximately 30 distributed energy resource sites, including combined heat and power facilities and renewable energy systems. The attack disrupted operations and highlighted vulnerabilities within critical infrastructure. As energy systems become increasingly digitalized, the risk of cyber intrusions grows, necessitating enhanced protective measures. Authorities are investigating the attack&#x27;s origins and working to bolster defenses against future incidents. Organizations in the energy sector should prioritize cybersecurity to safeguard critical operations.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/whatsapp-gets-new-lockdown-feature-that-blocks-cyberattacks/",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cyberattack-on-polish-energy-grid-impacted-around-30-facilities/",
             "relatedResources": []
         },
         {
             "date": "Jan 28 2026",
-            "headline": "ISC Stormcast Reports Routine Security Update",
-            "title": "SANS Internet Storm Center Releases January 28th Security Podcast",
-            "content": "The SANS Internet Storm Center has published its latest podcast, providing a routine update on cybersecurity threats and trends as of January 28, 2026. The InfoCON status remains at green, indicating a stable threat environment. The podcast is a valuable resource for security professionals seeking insights into current vulnerabilities and attack patterns. Listeners are encouraged to stay informed about emerging threats and best practices for maintaining robust security postures. Regular updates from trusted sources like SANS are crucial for organizations aiming to preemptively address potential security issues.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32660",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 28 2026",
-            "headline": "AI-Powered Phishing—Unit 42 Uncovers New Threat",
-            "title": "AI-Driven Polymorphic Attacks Transform Webpages into Phishing Lures",
-            "content": "Palo Alto Networks’ Unit 42 has identified a new AI-powered polymorphic attack that converts benign webpages into phishing threats. These sophisticated attacks use advanced obfuscation techniques, making detection challenging and posing a significant risk to users. The AI-driven nature allows these phishing pages to adapt dynamically, increasing their effectiveness and elusiveness. Organizations must enhance their security measures and educate users on recognizing phishing attempts. As AI technology continues to evolve, so too do the methods employed by cybercriminals, necessitating vigilance and proactive defenses.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4123217/ai-powered-polymorphic-attacks-lures-victims-to-phishing-webpages.html",
+            "headline": "Surveillance Powers Expire—Senate Awaits Trump Administration Response",
+            "title": "Senate Judiciary Committee Awaits Trump Administration on Section 702",
+            "content": "The Senate Judiciary Committee held a hearing on the impending expiration of Section 702, a key surveillance authority set to sunset at the end of April. The absence of Trump administration witnesses at the hearing has raised concerns about the future of these surveillance powers. Section 702 allows for the collection of foreign intelligence information, and its expiration could impact national security operations. Lawmakers are urging the administration to clarify its stance and potential plans for renewal or reform. Stakeholders should monitor developments closely, as legislative changes could affect intelligence and privacy frameworks.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/trump-administration-section-702-fisa-renewal-senate-judiciary-hearing/",
             "relatedResources": [
                 {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "SIEM & Log Analysis Guide",
-                    "url": "/guides/siem-log-analysis.html",
-                    "icon": "fa-chart-bar"
-                },
-                {
-                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
-                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
-                    "icon": "fa-shield-virus"
-                }
-            ]
-        },
-        {
-            "date": "Jan 28 2026",
-            "headline": "ChatGPT Ads Cost Comparable to NFL Broadcasts",
-            "title": "OpenAI&#x27;s ChatGPT Ad Prices Rival NFL Broadcast Costs",
-            "content": "OpenAI is set to introduce advertisements on ChatGPT for users with free or $8 Go subscriptions in the United States. However, advertisers may face costs comparable to live NFL broadcast ads, highlighting the platform&#x27;s high engagement and potential reach. This move signifies a shift in monetization strategies for AI services, aiming to leverage ChatGPT&#x27;s widespread popularity. Marketers should prepare for premium pricing, reflecting the value of access to ChatGPT&#x27;s extensive user base. As AI-driven platforms expand, advertising models will likely evolve to align with traditional media costs.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openais-chatgpt-ad-costs-are-on-par-with-live-nfl-broadcasts/",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
+                    "label": "NIST CSF 2.0 Implementation",
+                    "url": "/guides/nist-csf-2-implementation.html",
+                    "icon": "fa-check-double"
                 }
             ]
         },
@@ -179,45 +126,12 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Jan 28 2026",
-            "headline": "AI-Blockchain Fusion Boosts Trust in Agent Economy",
-            "title": "Masumi Network Leverages AI-Blockchain for Trusted Agent Economy",
-            "content": "The Masumi Network is pioneering the integration of AI and blockchain to enhance trust in the rapidly growing agent economy. As organizations deploy AI agents across various roles, the need for reliable, tamper-proof systems becomes critical. By 2030, IDC predicts that 20% of enterprise tech will rely on AI-driven agents. Masumi&#x27;s platform ensures transparency and accountability through blockchain&#x27;s immutable ledger, addressing concerns over AI decision-making in sectors like finance and healthcare. Companies are encouraged to explore blockchain-backed AI solutions to mitigate risks and ensure compliance in their AI deployments.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/masumi-network-how-ai-blockchain-fusion-adds-trust-to-burgeoning-agent-economy/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 28 2026",
-            "headline": "White House: AI Era Mirrors Industrial Revolution",
-            "title": "White House Compares AI Impact to Industrial Revolution",
-            "content": "A White House paper titled &quot;Artificial Intelligence and the Great Divergence&quot; highlights AI&#x27;s transformative role in shaping global economies, akin to the industrial revolution of the 18th and 19th centuries. The document underscores AI&#x27;s potential to drive economic divergence, with leading nations leveraging AI advancements to outpace others. Policymakers are urged to consider regulatory frameworks that balance innovation with ethical considerations. This comparison emphasizes the need for strategic investments in AI to enhance national competitiveness and address socioeconomic disparities.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/white-house-predicts-ai-growth-with-comparison-industrial-and-artificial-intelligence-revolutions/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 28 2026",
-            "headline": "Grok Deemed Most Antisemitic Chatbot by ADL Study",
-            "title": "ADL Study Finds Grok Fails at Countering Antisemitic Content",
-            "content": "The Anti-Defamation League&#x27;s recent study reveals that xAI&#x27;s Grok chatbot is the least effective among six large language models in identifying and countering antisemitic content. In contrast, Anthropic&#x27;s Claude performed best in the assessment. This finding raises concerns about the ethical training and deployment of AI models, especially in sensitive areas like hate speech detection. Organizations using AI for content moderation should prioritize models with proven effectiveness in mitigating harmful narratives. The report calls for improved AI training to address biases and enhance content safety.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/news/868925/adl-ai-antisemitism-report-grok-chatgpt-gemini-claude-deepseek-llama-elon-musk",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 28 2026",
-            "headline": "AI Uncovers 1,400 Anomalies in Hubble Archives",
-            "title": "ESA Astronomers Use AI to Discover Hubble Anomalies",
-            "content": "Astronomers at the European Space Agency have employed AI to identify over 1,400 anomalous objects in the Hubble Space Telescope&#x27;s extensive archives. Researchers David O&#x27;Ryan and Pablo Gómez trained a machine learning model to sift through 35 years of Hubble data, uncovering previously undocumented astrophysical phenomena. This breakthrough demonstrates AI&#x27;s potential in enhancing astronomical research by efficiently analyzing vast datasets. The discovery invites further investigation into these anomalies, potentially leading to new insights into the universe&#x27;s mysteries.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/news/869182/astronomers-ai-discover-cosmic-anomalies-hubble-archives",
+            "date": "Jan 29 2026",
+            "headline": "Data Centers Fuel 25x Surge in US Gas Projects",
+            "title": "US Data Centers Drive Massive Increase in Gas Pipeline Projects",
+            "content": "New research from Global Energy Monitor reveals a staggering increase in US gas projects linked to data centers, surging by nearly 25 times over the past two years. This trend underscores the growing energy demands of data centers, which are critical to supporting AI workloads and cloud services. The expansion of gas infrastructure to meet these demands highlights a significant shift in energy consumption patterns within the tech industry. As data centers continue to proliferate, the environmental and regulatory implications of this gas boom are likely to become a focal point for policymakers and industry leaders. Professionals in the energy and tech sectors should closely monitor these developments to understand potential impacts on operational costs and sustainability initiatives.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/data-centers-are-driving-a-us-gas-boom/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
@@ -233,20 +147,11 @@ const websiteContent = {
         },
         {
             "date": "Jan 28 2026",
-            "headline": "Waabi Secures $1B for Robotaxis with Uber",
-            "title": "Waabi Raises $1B, Partners with Uber for Robotaxi Expansion",
-            "content": "Waabi has successfully raised $1 billion, with $750 million from a Series C round and an additional $250 million from Uber, to advance its autonomous trucking and robotaxi initiatives. The funding will facilitate the deployment of 25,000 robotaxis exclusively on Uber&#x27;s platform, marking a significant step in the commercialization of autonomous vehicles. This collaboration exemplifies the growing trend of partnerships between tech startups and established platforms to accelerate AI-driven transportation solutions. Industry stakeholders should monitor this development as it could reshape urban mobility.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/28/waabi-raises-1b-and-expands-into-robotaxis-with-uber/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 28 2026",
-            "headline": "AI Adoption Uneven in US Workplaces—Gallup Survey",
-            "title": "Gallup Survey Highlights Fragmented AI Adoption in US Workplaces",
-            "content": "According to a Gallup Workforce survey, AI adoption in US workplaces is uneven, with usage varying significantly by role, industry, and organization. The survey, covering data up to December 2025, reveals that while some sectors benefit significantly from AI, others lag behind due to resource constraints or lack of expertise. This disparity highlights the need for targeted strategies to foster AI integration across diverse industries. Organizations should assess their AI readiness and invest in training to harness AI&#x27;s full potential, ensuring competitive advantage and operational efficiency.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/gallup-workforce-ai-shows-details-of-ml-adoption-in-us-workplaces/",
+            "headline": "Zuckerberg Bets on AI for Social Media&#x27;s Future",
+            "title": "Zuckerberg Shifts Focus from Metaverse to AI-Driven Social Media",
+            "content": "In a recent earnings call, Meta CEO Mark Zuckerberg outlined a strategic pivot from the metaverse to AI-driven social feeds, positioning AI as the next transformative media format. Zuckerberg envisions AI-enhanced feeds that offer more immersive and interactive user experiences, potentially reshaping how users engage with content on platforms like Facebook and Instagram. This shift reflects broader industry trends toward AI integration in social media, driven by advancements in machine learning and user data analytics. As Meta invests heavily in AI, developers and tech leaders should prepare for changes in content delivery and user engagement metrics. This strategic move could redefine social media dynamics and influence competitors&#x27; approaches to AI adoption.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/news/869882/mark-zuckerberg-meta-earnings-q4-2025",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
@@ -257,35 +162,58 @@ const websiteContent = {
         },
         {
             "date": "Jan 28 2026",
-            "headline": "Google Targets JEE Students with Gemini Practice Tests",
-            "title": "Google Launches Gemini Practice Tests for India&#x27;s JEE Exam",
-            "content": "Google has introduced practice tests for the Joint Entrance Examination (JEE) in India through its Gemini platform, following the release of SAT practice tests. This initiative aims to support students preparing for one of India&#x27;s most competitive college entrance exams by providing tailored study resources. Google&#x27;s move reflects a broader strategy to leverage AI in education, offering personalized learning experiences. Educational institutions and students should consider integrating such AI-powered tools to enhance exam preparation and improve outcomes.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/28/google-turns-gemini-toward-indias-most-competitive-entrance-exam/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 28 2026",
-            "headline": "Brazil&#x27;s Nemotron-Personas Initiative—A New Era for Sovereign AI",
-            "title": "Nemotron-Personas Project Co-Designs Data for Brazil&#x27;s Sovereign AI Ambitions",
-            "content": "Brazil has launched the Nemotron-Personas project, a pioneering initiative aimed at co-designing data for the development of sovereign AI systems. This effort, spearheaded by local stakeholders and supported by Hugging Face, seeks to create AI models that align with Brazil&#x27;s cultural and ethical values. By focusing on data sovereignty, Brazil aims to reduce dependency on foreign technology and enhance national security. The project underscores a growing trend of countries prioritizing localized AI development to maintain control over data and technology. Participants in the initiative are encouraged to contribute to data governance frameworks that respect privacy and promote transparency.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-personas-brazil",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 28 2026",
-            "headline": "Moltbot—The Viral AI Assistant You Need to Know",
-            "title": "Viral AI Assistant Moltbot (Formerly Clawdbot) Gains Rapid Popularity",
-            "content": "Moltbot, previously known as Clawdbot, has become an internet sensation as a personal AI assistant, capturing attention for its user-friendly capabilities. The assistant offers features like task management, personalized reminders, and seamless integration with various apps, making it a versatile tool for both personal and professional use. Despite its popularity, users are advised to consider data privacy implications and thoroughly review the terms of service before adoption. Moltbot’s rapid ascent highlights the increasing demand for intuitive AI solutions that enhance productivity. As AI assistants become more ubiquitous, understanding their data handling practices becomes crucial for users.",
+            "headline": "Zuckerberg Promises &#x27;Personal Super Intelligence&#x27; in 2026",
+            "title": "Zuckerberg Announces Ambitious AI Rollout and Agentic Commerce Tools",
+            "content": "Mark Zuckerberg has declared 2026 as a pivotal year for Meta, focusing on delivering &quot;personal super intelligence&quot; through advanced AI technologies. This announcement includes plans for agentic commerce tools, which could revolutionize how users interact with online shopping platforms. These tools aim to leverage AI to provide personalized shopping experiences, potentially increasing user engagement and sales conversions. As Meta expands its AI capabilities, businesses and developers should anticipate shifts in e-commerce strategies and prepare for new AI-driven opportunities. The rollout underscores Meta&#x27;s commitment to maintaining its competitive edge in the rapidly evolving AI landscape.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/27/everything-you-need-to-know-about-viral-personal-ai-assistant-clawdbot-now-moltbot/",
+            "sourceUrl": "https://techcrunch.com/2026/01/28/zuckerberg-teases-agentic-commerce-tools-and-major-ai-rollout-in-2026/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 28 2026",
+            "headline": "Zuckerberg Envisions Future Dominated by Smart Glasses",
+            "title": "Zuckerberg Sees Smart Glasses as Integral to Future Tech Landscape",
+            "content": "Mark Zuckerberg has expressed a strong belief in the future of smart glasses, stating that a world without them is &quot;hard to imagine.&quot; Despite previous optimism about the metaverse, Zuckerberg&#x27;s current focus suggests a shift towards augmented reality (AR) technologies. Smart glasses, equipped with AR capabilities, could redefine how users interact with digital content and their environment. This outlook aligns with industry trends emphasizing wearable tech as a key growth area. As Meta and other tech giants invest in AR, developers and tech leaders should explore opportunities in creating applications and services that leverage smart glasses&#x27; potential.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/28/mark-zuckerberg-future-smart-glasses/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 28 2026",
+            "headline": "Tesla Commits $2B to Musk&#x27;s xAI Venture",
+            "title": "Tesla Invests $2 Billion in Elon Musk&#x27;s AI Company xAI",
+            "content": "Tesla has announced a substantial $2 billion investment in xAI, Elon Musk&#x27;s AI-focused company, following xAI&#x27;s recent $20 billion fundraising milestone. This investment underscores Tesla&#x27;s commitment to advancing AI technologies, potentially integrating them into its automotive and energy products. The capital influx is expected to accelerate xAI&#x27;s research and development efforts, positioning it as a key player in the AI sector. Industry professionals should watch for potential innovations emerging from xAI that could influence AI applications across various domains, including autonomous driving and smart energy solutions. This move highlights the growing intersection of AI and traditional industries.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/28/tesla-invested-2b-in-elon-musks-xai/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Active Directory Security",
+                    "url": "/guides/active-directory-security-hardening.html",
+                    "icon": "fa-sitemap"
+                }
+            ]
+        },
+        {
+            "date": "Jan 28 2026",
+            "headline": "Musk Hints at New System to Flag Manipulated Media",
+            "title": "Elon Musk Teases Image-Labeling System for Identifying Manipulated Media",
+            "content": "Elon Musk has announced plans for a new system on X (formerly Twitter) to identify &quot;manipulated media,&quot; though details remain sparse. This initiative aims to combat misinformation by flagging altered images and videos, enhancing the platform&#x27;s content integrity. While specifics are not yet available, the move reflects a broader industry push towards improving digital media transparency and accountability. As social media platforms face increasing scrutiny over misinformation, developers and security professionals should anticipate the technical challenges and opportunities associated with implementing such systems. This development could set a precedent for other platforms in addressing media manipulation.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/28/elon-musk-teases-a-new-image-labeling-system-for-xwe-think/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 28 2026",
+            "headline": "ICE Leverages Palantir AI for Tip Line Efficiency",
+            "title": "ICE Utilizes Palantir&#x27;s AI Tools to Process Public Tips",
+            "content": "The U.S. Immigration and Customs Enforcement (ICE) has been employing Palantir&#x27;s AI-powered tools to streamline the processing of tips received through its tip line since last spring. This system uses artificial intelligence to summarize and prioritize incoming tips, enhancing ICE&#x27;s ability to respond to potential threats efficiently. The adoption of AI in law enforcement raises important considerations about privacy and civil liberties, as well as the effectiveness of AI in improving operational workflows. Professionals in the AI and security sectors should consider the implications of such technology deployments in government agencies. This development highlights the expanding role of AI in public safety and intelligence operations.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/ice-is-using-palantirs-ai-tools-to-sort-through-tips/",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
@@ -431,50 +359,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-37079",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-68645",
-            "dateAdded": "Jan 22, 2026",
-            "vendor": "Synacor Zimbra Collaboration Suite (ZCS)",
-            "description": "Synacor Zimbra Collaboration Suite (ZCS) contains a PHP remote file inclusion vulnerability that could allow for remote attackers to craft requests to the /h/rest endpoint to influence internal reques",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-68645",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-34026",
-            "dateAdded": "Jan 22, 2026",
-            "vendor": "Versa Concerto",
-            "description": "Versa Concerto SD-WAN orchestration platform contains an improper authentication vulnerability in the Traefik reverse proxy configuration, allowing at attacker to access administrative endpoints. The",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-34026",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-31125",
-            "dateAdded": "Jan 22, 2026",
-            "vendor": "Vite Vitejs",
-            "description": "Vite Vitejs contains an improper access control vulnerability that exposes content of non-allowed files using ?inline&amp;import or ?raw?import. Only apps explicitly exposing the Vite dev server to the ne",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-31125",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-54313",
-            "dateAdded": "Jan 22, 2026",
-            "vendor": "Prettier eslint-config-prettier",
-            "description": "Prettier eslint-config-prettier contains an embedded malicious code vulnerability. Installing an affected package executes an install.js file that launches the node-gyp.dll malware on Windows.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-54313",
             "isZeroDay": false
         }
     ],
