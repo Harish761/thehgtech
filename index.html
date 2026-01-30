@@ -4425,128 +4425,148 @@
                     Free • No Signup • Updated Every 4 Hours
                 </div>
 
-                <!-- Main Headline with Rotating Full Lines -->
+                <!-- Main Headline with Rotating Full Lines & Buttons -->
                 <div class="rotating-headline-container"
-                    style="position: relative; min-height: 180px; display: flex; align-items: center; justify-content: center;">
+                    style="position: relative; min-height: 350px; display: flex; align-items: center; justify-content: center; margin-bottom: 2rem;">
 
-                    <a href="/threat-intel.html" class="rotating-headline active" data-index="0"
-                        style="position: absolute; text-decoration: none; text-align: center; opacity: 1; transform: translateY(0); transition: opacity 0.5s ease, transform 0.5s ease;">
+                    <!-- Slide 0: Threat Intel -->
+                    <div class="rotating-slide active" data-index="0"
+                        style="position: absolute; text-align: center; width: 100%; opacity: 1; transform: translateY(0); transition: opacity 0.5s ease, transform 0.5s ease; display: flex; flex-direction: column; align-items: center; gap: 1.5rem;">
                         <h1
                             style="font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 800; line-height: 1.15; margin: 0; max-width: 900px;">
                             Your Free<br><span
                                 style="background: linear-gradient(135deg, var(--accent-cyan), #0099cc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Threat
                                 Intelligence</span><br>Command Center
                         </h1>
-                    </a>
+                        <a href="/threat-intel.html"
+                            style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: rgba(0, 217, 255, 0.1); border: 1px solid rgba(0, 217, 255, 0.3); color: var(--accent-cyan); text-decoration: none; border-radius: 50px; font-weight: 600; font-size: 0.9rem; transition: all 0.3s ease;">
+                            Explore Dashboard <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
 
-                    <a href="/cve-tracker.html" class="rotating-headline" data-index="1"
-                        style="position: absolute; text-decoration: none; text-align: center; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+                    <!-- Slide 1: CVE Tracker -->
+                    <div class="rotating-slide" data-index="1"
+                        style="position: absolute; text-align: center; width: 100%; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; pointer-events: none; display: flex; flex-direction: column; align-items: center; gap: 1.5rem;">
                         <h1
                             style="font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 800; line-height: 1.15; margin: 0; max-width: 900px;">
                             Real-Time<br><span
                                 style="background: linear-gradient(135deg, #FF3D3D, #cc2929); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">CVE
                                 Vulnerability</span><br>Tracker
                         </h1>
-                    </a>
+                        <a href="/cve-tracker.html"
+                            style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: rgba(255, 61, 61, 0.1); border: 1px solid rgba(255, 61, 61, 0.3); color: #FF3D3D; text-decoration: none; border-radius: 50px; font-weight: 600; font-size: 0.9rem; transition: all 0.3s ease;">
+                            View CVEs <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
 
-                    <a href="/ransomware-tracker.html" class="rotating-headline" data-index="2"
-                        style="position: absolute; text-decoration: none; text-align: center; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+                    <!-- Slide 2: Ransomware Tracker -->
+                    <div class="rotating-slide" data-index="2"
+                        style="position: absolute; text-align: center; width: 100%; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; pointer-events: none; display: flex; flex-direction: column; align-items: center; gap: 1.5rem;">
                         <h1
                             style="font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 800; line-height: 1.15; margin: 0; max-width: 900px;">
                             Live<br><span
                                 style="background: linear-gradient(135deg, #8b5cf6, #6d28d9); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Ransomware
                                 Group</span><br>Intelligence
                         </h1>
-                    </a>
+                        <a href="/ransomware-tracker.html"
+                            style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: rgba(139, 92, 246, 0.1); border: 1px solid rgba(139, 92, 246, 0.3); color: #8b5cf6; text-decoration: none; border-radius: 50px; font-weight: 600; font-size: 0.9rem; transition: all 0.3s ease;">
+                            Track Groups <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
 
-                    <a href="/guides/" class="rotating-headline" data-index="3"
-                        style="position: absolute; text-decoration: none; text-align: center; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+                    <!-- Slide 3: Security Guides -->
+                    <div class="rotating-slide" data-index="3"
+                        style="position: absolute; text-align: center; width: 100%; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; pointer-events: none; display: flex; flex-direction: column; align-items: center; gap: 1.5rem;">
                         <h1
                             style="font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 800; line-height: 1.15; margin: 0; max-width: 900px;">
                             40+ Free<br><span
                                 style="background: linear-gradient(135deg, #10b981, #059669); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Security
                                 Guides</span><br>& Frameworks
                         </h1>
-                    </a>
+                        <a href="/guides/"
+                            style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.3); color: #10b981; text-decoration: none; border-radius: 50px; font-weight: 600; font-size: 0.9rem; transition: all 0.3s ease;">
+                            Start Learning <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
 
-                    <a href="/workflows/" class="rotating-headline" data-index="4"
-                        style="position: absolute; text-decoration: none; text-align: center; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+                    <!-- Slide 4: n8n Workflows -->
+                    <div class="rotating-slide" data-index="4"
+                        style="position: absolute; text-align: center; width: 100%; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; pointer-events: none; display: flex; flex-direction: column; align-items: center; gap: 1.5rem;">
                         <h1
                             style="font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 800; line-height: 1.15; margin: 0; max-width: 900px;">
                             Free<br><span
                                 style="background: linear-gradient(135deg, #FF6B35, #f97316); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">n8n
                                 Security</span><br>Automation Workflows
                         </h1>
-                    </a>
+                        <a href="/workflows/"
+                            style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: rgba(255, 107, 53, 0.1); border: 1px solid rgba(255, 107, 53, 0.3); color: #FF6B35; text-decoration: none; border-radius: 50px; font-weight: 600; font-size: 0.9rem; transition: all 0.3s ease;">
+                            Automate Now <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
 
-                    <a href="/comparisons/" class="rotating-headline" data-index="5"
-                        style="position: absolute; text-decoration: none; text-align: center; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+                    <!-- Slide 5: Comparisons -->
+                    <div class="rotating-slide" data-index="5"
+                        style="position: absolute; text-align: center; width: 100%; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; pointer-events: none; display: flex; flex-direction: column; align-items: center; gap: 1.5rem;">
                         <h1
                             style="font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 800; line-height: 1.15; margin: 0; max-width: 900px;">
                             Unbiased<br><span
                                 style="background: linear-gradient(135deg, #f59e0b, #d97706); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Security
                                 Tool</span><br>Comparisons
                         </h1>
-                    </a>
+                        <a href="/comparisons/"
+                            style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: rgba(245, 158, 11, 0.1); border: 1px solid rgba(245, 158, 11, 0.3); color: #f59e0b; text-decoration: none; border-radius: 50px; font-weight: 600; font-size: 0.9rem; transition: all 0.3s ease;">
+                            Compare Tools <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
 
-                    <a href="/articles.html" class="rotating-headline" data-index="6"
-                        style="position: absolute; text-decoration: none; text-align: center; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+                    <!-- Slide 6: Articles -->
+                    <div class="rotating-slide" data-index="6"
+                        style="position: absolute; text-align: center; width: 100%; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; pointer-events: none; display: flex; flex-direction: column; align-items: center; gap: 1.5rem;">
                         <h1
                             style="font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 800; line-height: 1.15; margin: 0; max-width: 900px;">
                             Latest<br><span
                                 style="background: linear-gradient(135deg, #ec4899, #db2777); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Cybersecurity</span><br>News
                             & Analysis
                         </h1>
-                    </a>
+                        <a href="/articles.html"
+                            style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: rgba(236, 72, 153, 0.1); border: 1px solid rgba(236, 72, 153, 0.3); color: #ec4899; text-decoration: none; border-radius: 50px; font-weight: 600; font-size: 0.9rem; transition: all 0.3s ease;">
+                            Read Articles <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
                 </div>
 
                 <script>
                     // Rotating headline animation
                     (function () {
                         let currentIndex = 0;
-                        const headlines = document.querySelectorAll('.rotating-headline');
-                        const totalHeadlines = headlines.length;
+                        const slides = document.querySelectorAll('.rotating-slide');
+                        const totalSlides = slides.length;
 
-                        function rotateHeadline() {
+                        function rotateSlide() {
                             // Hide current
-                            headlines[currentIndex].style.opacity = '0';
-                            headlines[currentIndex].style.transform = 'translateY(-20px)';
-                            headlines[currentIndex].classList.remove('active');
+                            slides[currentIndex].style.opacity = '0';
+                            slides[currentIndex].style.transform = 'translateY(-20px)';
+                            slides[currentIndex].style.pointerEvents = 'none'; // Disable pointer events when hidden
+                            slides[currentIndex].classList.remove('active');
 
                             // Move to next
-                            currentIndex = (currentIndex + 1) % totalHeadlines;
+                            currentIndex = (currentIndex + 1) % totalSlides;
 
                             // Show next
                             setTimeout(() => {
-                                headlines[currentIndex].style.opacity = '1';
-                                headlines[currentIndex].style.transform = 'translateY(0)';
-                                headlines[currentIndex].classList.add('active');
+                                slides[currentIndex].style.opacity = '1';
+                                slides[currentIndex].style.transform = 'translateY(0)';
+                                slides[currentIndex].style.pointerEvents = 'auto'; // Enable pointer events when visible
+                                slides[currentIndex].classList.add('active');
                             }, 200);
                         }
 
                         // Start rotation after page loads
-                        setInterval(rotateHeadline, 3500);
+                        setInterval(rotateSlide, 4000); // 4 seconds interval for better readability
                     })();
                 </script>
 
-                <!-- Subheadline -->
-                <p
-                    style="font-size: 1.25rem; color: var(--text-secondary); max-width: 700px; margin: 0 0 2.5rem; line-height: 1.6;">
-                    52,000+ IOCs from 9 trusted sources. Real-time CVE tracking. AI-powered insights. Export to SIEM.
-                    Zero cost.
-                </p>
-
-                <!-- CTA Buttons -->
-                <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; margin-bottom: 3rem;">
-                    <a href="#snapshot" class="primary-cta"
-                        style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 1rem 2rem; background: linear-gradient(135deg, var(--accent-cyan), #0099cc); color: #000; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 1rem; transition: all 0.3s ease; box-shadow: 0 5px 25px rgba(0, 217, 255, 0.4);">
-                        <i class="fas fa-shield-alt"></i> Explore Dashboard
-                    </a>
-                    <a href="/guides/" class="secondary-cta"
-                        style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 1rem 2rem; background: transparent; color: var(--text-primary); text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 1rem; border: 1px solid var(--border); transition: all 0.3s ease;">
-                        <i class="fas fa-graduation-cap"></i> Security Guides
-                    </a>
-                </div>
+                <!-- Subheadline & CTAs removed (integrated into rotation) -->
 
                 <!-- Stats Bar -->
                 <div class="hero-stats-bar"
