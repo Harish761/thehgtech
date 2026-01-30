@@ -4425,62 +4425,107 @@
                     Free • No Signup • Updated Every 4 Hours
                 </div>
 
-                <!-- Main Headline with Rotating Text -->
-                <h1
-                    style="font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 800; line-height: 1.1; margin: 0 0 1.5rem; max-width: 900px;">
-                    Your Free <span class="rotating-text-container"
-                        style="display: inline-block; position: relative; min-width: 320px; text-align: left;">
-                        <a href="/threat-intel.html" class="rotating-text active" data-index="0"
-                            style="background: linear-gradient(135deg, var(--accent-cyan), #0099cc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-decoration: none; position: absolute; left: 0; opacity: 1; transition: opacity 0.5s ease, transform 0.5s ease;">Threat
-                            Intelligence</a>
-                        <a href="/cve-tracker.html" class="rotating-text" data-index="1"
-                            style="background: linear-gradient(135deg, #FF3D3D, #cc2929); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-decoration: none; position: absolute; left: 0; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">CVE
-                            Tracker</a>
-                        <a href="/ransomware-tracker.html" class="rotating-text" data-index="2"
-                            style="background: linear-gradient(135deg, #8b5cf6, #6d28d9); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-decoration: none; position: absolute; left: 0; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">Ransomware
-                            Tracker</a>
-                        <a href="/guides/" class="rotating-text" data-index="3"
-                            style="background: linear-gradient(135deg, #10b981, #059669); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-decoration: none; position: absolute; left: 0; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">Security
-                            Guides</a>
-                        <a href="/workflows/" class="rotating-text" data-index="4"
-                            style="background: linear-gradient(135deg, #FF6B35, #f97316); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-decoration: none; position: absolute; left: 0; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">n8n
-                            Workflows</a>
-                        <a href="/comparisons/" class="rotating-text" data-index="5"
-                            style="background: linear-gradient(135deg, #f59e0b, #d97706); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-decoration: none; position: absolute; left: 0; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">Tool
-                            Comparisons</a>
-                        <a href="/articles.html" class="rotating-text" data-index="6"
-                            style="background: linear-gradient(135deg, #ec4899, #db2777); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-decoration: none; position: absolute; left: 0; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">Security
-                            Articles</a>
-                        <span style="visibility: hidden;">Ransomware Tracker</span><!-- Spacer for width -->
-                    </span><br>Command Center
-                </h1>
+                <!-- Main Headline with Rotating Full Lines -->
+                <div class="rotating-headline-container"
+                    style="position: relative; min-height: 180px; display: flex; align-items: center; justify-content: center;">
+
+                    <a href="/threat-intel.html" class="rotating-headline active" data-index="0"
+                        style="position: absolute; text-decoration: none; text-align: center; opacity: 1; transform: translateY(0); transition: opacity 0.5s ease, transform 0.5s ease;">
+                        <h1
+                            style="font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 800; line-height: 1.15; margin: 0; max-width: 900px;">
+                            Your Free<br><span
+                                style="background: linear-gradient(135deg, var(--accent-cyan), #0099cc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Threat
+                                Intelligence</span><br>Command Center
+                        </h1>
+                    </a>
+
+                    <a href="/cve-tracker.html" class="rotating-headline" data-index="1"
+                        style="position: absolute; text-decoration: none; text-align: center; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+                        <h1
+                            style="font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 800; line-height: 1.15; margin: 0; max-width: 900px;">
+                            Real-Time<br><span
+                                style="background: linear-gradient(135deg, #FF3D3D, #cc2929); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">CVE
+                                Vulnerability</span><br>Tracker
+                        </h1>
+                    </a>
+
+                    <a href="/ransomware-tracker.html" class="rotating-headline" data-index="2"
+                        style="position: absolute; text-decoration: none; text-align: center; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+                        <h1
+                            style="font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 800; line-height: 1.15; margin: 0; max-width: 900px;">
+                            Live<br><span
+                                style="background: linear-gradient(135deg, #8b5cf6, #6d28d9); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Ransomware
+                                Group</span><br>Intelligence
+                        </h1>
+                    </a>
+
+                    <a href="/guides/" class="rotating-headline" data-index="3"
+                        style="position: absolute; text-decoration: none; text-align: center; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+                        <h1
+                            style="font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 800; line-height: 1.15; margin: 0; max-width: 900px;">
+                            40+ Free<br><span
+                                style="background: linear-gradient(135deg, #10b981, #059669); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Security
+                                Guides</span><br>& Frameworks
+                        </h1>
+                    </a>
+
+                    <a href="/workflows/" class="rotating-headline" data-index="4"
+                        style="position: absolute; text-decoration: none; text-align: center; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+                        <h1
+                            style="font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 800; line-height: 1.15; margin: 0; max-width: 900px;">
+                            Free<br><span
+                                style="background: linear-gradient(135deg, #FF6B35, #f97316); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">n8n
+                                Security</span><br>Automation Workflows
+                        </h1>
+                    </a>
+
+                    <a href="/comparisons/" class="rotating-headline" data-index="5"
+                        style="position: absolute; text-decoration: none; text-align: center; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+                        <h1
+                            style="font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 800; line-height: 1.15; margin: 0; max-width: 900px;">
+                            Unbiased<br><span
+                                style="background: linear-gradient(135deg, #f59e0b, #d97706); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Security
+                                Tool</span><br>Comparisons
+                        </h1>
+                    </a>
+
+                    <a href="/articles.html" class="rotating-headline" data-index="6"
+                        style="position: absolute; text-decoration: none; text-align: center; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+                        <h1
+                            style="font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 800; line-height: 1.15; margin: 0; max-width: 900px;">
+                            Latest<br><span
+                                style="background: linear-gradient(135deg, #ec4899, #db2777); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Cybersecurity</span><br>News
+                            & Analysis
+                        </h1>
+                    </a>
+                </div>
 
                 <script>
-                    // Rotating text animation
+                    // Rotating headline animation
                     (function () {
                         let currentIndex = 0;
-                        const texts = document.querySelectorAll('.rotating-text');
-                        const totalTexts = texts.length;
+                        const headlines = document.querySelectorAll('.rotating-headline');
+                        const totalHeadlines = headlines.length;
 
-                        function rotateText() {
+                        function rotateHeadline() {
                             // Hide current
-                            texts[currentIndex].style.opacity = '0';
-                            texts[currentIndex].style.transform = 'translateY(-20px)';
-                            texts[currentIndex].classList.remove('active');
+                            headlines[currentIndex].style.opacity = '0';
+                            headlines[currentIndex].style.transform = 'translateY(-20px)';
+                            headlines[currentIndex].classList.remove('active');
 
                             // Move to next
-                            currentIndex = (currentIndex + 1) % totalTexts;
+                            currentIndex = (currentIndex + 1) % totalHeadlines;
 
                             // Show next
                             setTimeout(() => {
-                                texts[currentIndex].style.opacity = '1';
-                                texts[currentIndex].style.transform = 'translateY(0)';
-                                texts[currentIndex].classList.add('active');
+                                headlines[currentIndex].style.opacity = '1';
+                                headlines[currentIndex].style.transform = 'translateY(0)';
+                                headlines[currentIndex].classList.add('active');
                             }, 200);
                         }
 
                         // Start rotation after page loads
-                        setInterval(rotateText, 3000);
+                        setInterval(rotateHeadline, 3500);
                     })();
                 </script>
 
