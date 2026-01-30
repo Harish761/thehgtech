@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clawdbot/Moltbot Security Guide 2026 | AI Assistant Risks & Hardening | TheHGTech</title>
+    <meta name="description"
+        content="Complete security guide for Clawdbot (now Moltbot) AI assistant. Learn the critical risks: exposed instances, root access vulnerabilities, prompt injection, and how to secure your installation.">
+    <meta name="keywords"
+        content="Clawdbot security, Moltbot security, AI assistant security, Clawdbot vulnerabilities, exposed Clawdbot instances, prompt injection Moltbot, secure AI assistant, Clawdbot hardening, root access AI risks, ClawdHub security">
+    <meta name="author" content="TheHGTech Security Team">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thehgtech.com/guides/clawdbot-moltbot-security.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Clawdbot/Moltbot Security: Critical Risks & Complete Hardening Guide">
+    <meta property="og:description"
+        content="Hundreds of Clawdbot instances exposed with root access. Learn what this viral AI assistant is, its security risks, and how to protect yourself.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/guides/clawdbot-moltbot-security.html">
+    <meta property="og:image" content="https://thehgtech.com/images/guides/clawdbot-moltbot-security.png">
+    <meta property="og:site_name" content="TheHGTech">
+    <meta property="article:published_time" content="2026-01-30">
+    <meta property="article:author" content="TheHGTech Security Team">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Clawdbot/Moltbot Security: Critical Risks & Complete Hardening Guide">
+    <meta name="twitter:description"
+        content="Hundreds of Clawdbot instances exposed with root access. Learn the risks and how to secure your AI assistant.">
+    <meta name="twitter:image" content="https://thehgtech.com/images/guides/clawdbot-moltbot-security.png">
+
+    <!-- Structured Data: TechArticle -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "headline": "Clawdbot/Moltbot Security Guide: Critical Risks & Complete Hardening",
+        "description": "Complete security analysis of Clawdbot (Moltbot) AI assistant covering exposed instances, root access risks, prompt injection vulnerabilities, and enterprise hardening strategies.",
+        "image": "https://thehgtech.com/images/guides/clawdbot-moltbot-security.png",
+        "author": {
+            "@type": "Organization",
+            "name": "TheHGTech",
+            "url": "https://thehgtech.com"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "TheHGTech",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://thehgtech.com/images/logo.png"
+            }
+        },
+        "datePublished": "2026-01-30",
+        "dateModified": "2026-01-30",
+        "mainEntityOfPage": "https://thehgtech.com/guides/clawdbot-moltbot-security.html",
+        "proficiencyLevel": "Intermediate",
+        "dependencies": "Basic understanding of Linux, networking, and AI concepts"
+    }
+    </script>
+
+    <!-- Structured Data: FAQPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is Clawdbot/Moltbot?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Clawdbot (renamed to Moltbot in January 2026) is a viral open-source AI assistant that provides JARVIS-like capabilities including shell access, file management, browser control, and integration with messaging apps like WhatsApp, Telegram, and Slack."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Why was Clawdbot renamed to Moltbot?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Clawdbot was renamed to Moltbot on January 27, 2026, due to trademark concerns raised by Anthropic regarding the similarity to their Claude AI assistant."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is Clawdbot/Moltbot safe to use?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Clawdbot/Moltbot requires extensive system permissions including root access, which creates significant security risks if not properly configured. Hundreds of exposed instances have been found, and real attacks including credential theft and prompt injection have been reported."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How many Clawdbot instances were exposed?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Security researchers discovered hundreds of publicly exposed Clawdbot/Moltbot instances in January 2026, many with no authentication, granting attackers full root shell access."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Structured Data: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://thehgtech.com"
+        }, {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Guides",
+            "item": "https://thehgtech.com/guides/"
+        }, {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Clawdbot/Moltbot Security",
+            "item": "https://thehgtech.com/guides/clawdbot-moltbot-security.html"
+        }]
+    }
+    </script>
+
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/header-dropdown.css?v=1">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251217">
+    <script src="/m-app.js?v=4.3" defer></script>
+
+    <style>
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF4C4C;
+            --accent-green: #10b981;
+            --accent-orange: #f59e0b;
+            --accent-purple: #8b5cf6;
+            --accent-pink: #ec4899;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        .guide-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .guide-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .guide-header h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, var(--accent-red), var(--accent-orange));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        .featured-image {
+            width: 100%;
+            max-width: 800px;
+            margin: 2rem auto;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(255, 76, 76, 0.2);
+        }
+
+        .featured-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .alert-banner {
+            background: linear-gradient(135deg, rgba(255, 76, 76, 0.15), rgba(255, 76, 76, 0.05));
+            border: 1px solid var(--accent-red);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .alert-banner i {
+            color: var(--accent-red);
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .alert-banner-content h3 {
+            color: var(--accent-red);
+            margin: 0 0 0.5rem 0;
+            font-size: 1.1rem;
+        }
+
+        .alert-banner-content p {
+            margin: 0;
+            color: var(--text-secondary);
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+            margin: 2rem 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--accent-cyan), var(--accent-purple));
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2rem;
+            top: 0.5rem;
+            width: 12px;
+            height: 12px;
+            background: var(--accent-cyan);
+            border-radius: 50%;
+            transform: translateX(-5px);
+        }
+
+        .timeline-date {
+            color: var(--accent-cyan);
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .risk-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            transition: all 0.3s ease;
+        }
+
+        .risk-card:hover {
+            border-color: var(--accent-red);
+            transform: translateY(-2px);
+        }
+
+        .risk-card.critical {
+            border-left: 4px solid var(--accent-red);
+        }
+
+        .risk-card.high {
+            border-left: 4px solid var(--accent-orange);
+        }
+
+        .risk-card.medium {
+            border-left: 4px solid var(--accent-purple);
+        }
+
+        .risk-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .risk-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .risk-card.critical .risk-icon {
+            background: rgba(255, 76, 76, 0.15);
+            color: var(--accent-red);
+        }
+
+        .risk-card.high .risk-icon {
+            background: rgba(245, 158, 11, 0.15);
+            color: var(--accent-orange);
+        }
+
+        .risk-card.medium .risk-icon {
+            background: rgba(139, 92, 246, 0.15);
+            color: var(--accent-purple);
+        }
+
+        .risk-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .risk-severity {
+            font-size: 0.8rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+
+        .risk-card.critical .risk-severity {
+            background: rgba(255, 76, 76, 0.15);
+            color: var(--accent-red);
+        }
+
+        .risk-card.high .risk-severity {
+            background: rgba(245, 158, 11, 0.15);
+            color: var(--accent-orange);
+        }
+
+        .risk-card.medium .risk-severity {
+            background: rgba(139, 92, 246, 0.15);
+            color: var(--accent-purple);
+        }
+
+        .mitigation-step {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            position: relative;
+            padding-left: 4rem;
+        }
+
+        .step-number {
+            position: absolute;
+            left: 1rem;
+            top: 1.5rem;
+            width: 2.5rem;
+            height: 2.5rem;
+            background: linear-gradient(135deg, var(--accent-green), var(--accent-cyan));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: #000;
+        }
+
+        .architecture-diagram {
+            background: #0d1117;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            font-family: 'Fira Code', 'Monaco', monospace;
+            font-size: 0.85rem;
+            overflow-x: auto;
+            white-space: pre;
+            color: var(--accent-cyan);
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+        }
+
+        .comparison-table th {
+            background: rgba(0, 217, 255, 0.1);
+            color: var(--accent-cyan);
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 2px solid var(--accent-cyan);
+        }
+
+        .comparison-table td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-secondary);
+        }
+
+        .comparison-table tr:hover td {
+            background: var(--bg-card);
+        }
+
+        .check-icon {
+            color: var(--accent-green);
+        }
+
+        .cross-icon {
+            color: var(--accent-red);
+        }
+
+        section {
+            margin: 3rem 0;
+        }
+
+        section h2 {
+            color: var(--accent-cyan);
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        section h3 {
+            color: var(--text-primary);
+            font-size: 1.3rem;
+            margin: 2rem 0 1rem 0;
+        }
+
+        .toc {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem 2rem;
+            margin: 2rem 0;
+        }
+
+        .toc h3 {
+            color: var(--accent-cyan);
+            margin: 0 0 1rem 0;
+            font-size: 1.1rem;
+        }
+
+        .toc ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            columns: 2;
+        }
+
+        .toc li {
+            margin: 0.5rem 0;
+        }
+
+        .toc a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .toc a:hover {
+            color: var(--accent-cyan);
+        }
+
+        .info-box {
+            background: rgba(0, 217, 255, 0.1);
+            border: 1px solid var(--accent-cyan);
+            border-radius: 8px;
+            padding: 1rem 1.25rem;
+            margin: 1.5rem 0;
+        }
+
+        .info-box strong {
+            color: var(--accent-cyan);
+        }
+
+        .warning-box {
+            background: rgba(255, 76, 76, 0.1);
+            border: 1px solid var(--accent-red);
+            border-radius: 8px;
+            padding: 1rem 1.25rem;
+            margin: 1.5rem 0;
+        }
+
+        .warning-box strong {
+            color: var(--accent-red);
+        }
+
+        .success-box {
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid var(--accent-green);
+            border-radius: 8px;
+            padding: 1rem 1.25rem;
+            margin: 1.5rem 0;
+        }
+
+        .success-box strong {
+            color: var(--accent-green);
+        }
+
+        pre {
+            background: #0d1117;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.25rem;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+
+        code {
+            font-family: 'Fira Code', 'Monaco', monospace;
+            font-size: 0.9rem;
+            color: var(--accent-cyan);
+        }
+
+        pre code {
+            color: #e6edf3;
+        }
+
+        .comment {
+            color: #8b949e;
+        }
+
+        .keyword {
+            color: #ff7b72;
+        }
+
+        .string {
+            color: #a5d6ff;
+        }
+
+        @media (max-width: 768px) {
+            .guide-header h1 {
+                font-size: 1.8rem;
+            }
+
+            .toc ul {
+                columns: 1;
+            }
+
+            .stat-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Include Header -->
+    <div id="header-placeholder"></div>
+    <script>
+        fetch('/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+    </script>
+
+    <main class="guide-content">
+        <!-- Header -->
+        <div class="guide-header">
+            <h1>Clawdbot/Moltbot Security Guide</h1>
+            <p style="color: var(--text-muted); font-size: 1.1rem;">The viral AI assistant with 30K+ stars - and
+                hundreds of exposed instances granting root access</p>
+            <div style="margin-top: 1rem; color: var(--text-muted);">
+                <span><i class="fas fa-book-open"></i> 18 min read</span> •
+                <span><i class="fas fa-crosshairs"></i> Intermediate</span> •
+                <span><i class="far fa-calendar-alt"></i> January 2026</span>
+            </div>
+        </div>
+
+        <!-- Alert Banner -->
+        <div class="alert-banner">
+            <i class="fas fa-exclamation-triangle"></i>
+            <div class="alert-banner-content">
+                <h3>Active Threat: Exposed Instances Under Attack</h3>
+                <p>Security researchers discovered hundreds of publicly exposed Clawdbot/Moltbot instances in January
+                    2026. Real attacks have been confirmed including credential theft, email inbox wipes via prompt
+                    injection, and unauthorized system access.</p>
+            </div>
+        </div>
+
+        <!-- Featured Image -->
+        <div class="featured-image">
+            <img src="/images/guides/clawdbot-moltbot-security.png"
+                alt="Clawdbot Moltbot Security Guide - AI Assistant Risks and Hardening" loading="lazy">
+        </div>
+
+        <!-- Stats -->
+        <div class="stat-grid">
+            <div class="stat-card">
+                <div class="stat-number">29,900+</div>
+                <div class="stat-label">GitHub Stars in Weeks</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">Hundreds</div>
+                <div class="stat-label">Exposed Instances Found</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">Root</div>
+                <div class="stat-label">Access Level Required</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">6+</div>
+                <div class="stat-label">Messaging App Integrations</div>
+            </div>
+        </div>
+
+        <!-- Table of Contents -->
+        <div class="toc">
+            <h3><i class="fas fa-list-ul"></i> Table of Contents</h3>
+            <ul>
+                <li><a href="#what-is-clawdbot">1. What is Clawdbot/Moltbot?</a></li>
+                <li><a href="#timeline">2. Timeline of Events</a></li>
+                <li><a href="#capabilities">3. Capabilities & Features</a></li>
+                <li><a href="#security-risks">4. Critical Security Risks</a></li>
+                <li><a href="#real-attacks">5. Real-World Attacks</a></li>
+                <li><a href="#hardening">6. Hardening Guide</a></li>
+                <li><a href="#config-examples">7. Secure Configuration</a></li>
+                <li><a href="#monitoring">8. Monitoring & Detection</a></li>
+                <li><a href="#faq">9. FAQ</a></li>
+            </ul>
+        </div>
+
+        <!-- Section 1: What is Clawdbot -->
+        <section id="what-is-clawdbot">
+            <h2><i class="fas fa-robot"></i> What is Clawdbot/Moltbot?</h2>
+
+            <p>Clawdbot (now renamed <strong>Moltbot</strong>) is an open-source, self-hosted AI assistant that
+                functions like a personal JARVIS for your digital life. Created by Peter Steinberger, it became one of
+                the fastest-growing GitHub repositories ever, amassing nearly 30,000 stars within weeks of its release.
+            </p>
+
+            <p>Unlike cloud-based AI assistants like ChatGPT or Claude, Clawdbot runs entirely on your own
+                infrastructure, giving you complete control over your data - but also complete responsibility for
+                security.</p>
+
+            <div class="info-box">
+                <strong><i class="fas fa-lightbulb"></i> Key Distinction:</strong> Clawdbot is NOT the same as
+                "ClaudeBot" (Anthropic's web crawler). Clawdbot is a personal AI assistant that was renamed to Moltbot
+                after Anthropic raised trademark concerns.
+            </div>
+
+            <h3>Core Concept</h3>
+            <p>Think of Clawdbot as an AI-powered command center that:</p>
+            <ul>
+                <li><i class="fas fa-check-circle" style="color: var(--accent-green);"></i> Runs locally on your machine
+                    or server</li>
+                <li><i class="fas fa-check-circle" style="color: var(--accent-green);"></i> Integrates with your
+                    messaging apps (WhatsApp, Telegram, Slack, Discord, iMessage, Teams)</li>
+                <li><i class="fas fa-check-circle" style="color: var(--accent-green);"></i> Executes shell commands on
+                    your behalf</li>
+                <li><i class="fas fa-check-circle" style="color: var(--accent-green);"></i> Manages files and automates
+                    tasks</li>
+                <li><i class="fas fa-check-circle" style="color: var(--accent-green);"></i> Controls your browser and
+                    web interactions</li>
+                <li><i class="fas fa-check-circle" style="color: var(--accent-green);"></i> Sends proactive
+                    notifications and reminders</li>
+            </ul>
+        </section>
+
+        <!-- Section 2: Timeline -->
+        <section id="timeline">
+            <h2><i class="fas fa-clock"></i> Timeline of Events</h2>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Early January 2026</div>
+                    <p>Clawdbot is released as open-source. Rapid viral adoption begins with thousands of stars per day.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Mid-January 2026</div>
+                    <p>Security researchers begin discovering hundreds of exposed Clawdbot instances on the public
+                        internet with no authentication.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">January 27, 2026</div>
+                    <p>Project renamed from Clawdbot to <strong>Moltbot</strong> due to trademark concerns from
+                        Anthropic (makers of Claude).</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Late January 2026</div>
+                    <p>Malicious VS Code extension "ClawdBot Agent" discovered dropping ScreenConnect malware. Real
+                        attacks reported including email inbox wipes.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Capabilities -->
+        <section id="capabilities">
+            <h2><i class="fas fa-cogs"></i> Capabilities & Features</h2>
+
+            <p>Understanding what Clawdbot can do is essential for understanding the security risks. The power that
+                makes it attractive is exactly what makes it dangerous if misconfigured.</p>
+
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Capability</th>
+                        <th>Description</th>
+                        <th>Security Implication</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Shell Access</strong></td>
+                        <td>Execute terminal commands on host system</td>
+                        <td><span class="cross-icon"><i class="fas fa-exclamation-circle"></i></span> Full system
+                            compromise if exploited</td>
+                    </tr>
+                    <tr>
+                        <td><strong>File Management</strong></td>
+                        <td>Read, write, delete files across filesystem</td>
+                        <td><span class="cross-icon"><i class="fas fa-exclamation-circle"></i></span> Data exfiltration,
+                            ransomware potential</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Browser Control</strong></td>
+                        <td>Navigate web, fill forms, extract data</td>
+                        <td><span class="cross-icon"><i class="fas fa-exclamation-circle"></i></span> Session hijacking,
+                            credential theft</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Messaging Integration</strong></td>
+                        <td>WhatsApp, Telegram, Slack, Discord, iMessage, Teams</td>
+                        <td><span class="cross-icon"><i class="fas fa-exclamation-circle"></i></span> Lateral movement,
+                            social engineering</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Skills/Plugins</strong></td>
+                        <td>Extend functionality via ClawdHub marketplace</td>
+                        <td><span class="cross-icon"><i class="fas fa-exclamation-circle"></i></span> Supply chain
+                            attacks, malicious code</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Persistent State</strong></td>
+                        <td>Remembers context, stores data locally</td>
+                        <td><span class="cross-icon"><i class="fas fa-exclamation-circle"></i></span> Secrets stored in
+                            plaintext</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Section 4: Security Risks -->
+        <section id="security-risks">
+            <h2><i class="fas fa-shield-alt"></i> Critical Security Risks</h2>
+
+            <p>The combination of extensive system access and rapid adoption without security review has created a
+                perfect storm of vulnerabilities. Here are the critical risks every Clawdbot user must understand:</p>
+
+            <!-- Risk 1 -->
+            <div class="risk-card critical">
+                <div class="risk-header">
+                    <div class="risk-icon"><i class="fas fa-globe"></i></div>
+                    <div>
+                        <div class="risk-title">Exposed Administrative Ports</div>
+                        <span class="risk-severity">CRITICAL</span>
+                    </div>
+                </div>
+                <p>Hundreds of Moltbot instances have been found publicly accessible on the internet, many with
+                    <strong>no authentication whatsoever</strong>. This grants attackers full shell access with the
+                    privileges of the running user - often root.</p>
+                <p><strong>Root Cause:</strong> Misconfigured reverse proxies treating external connections as internal,
+                    or users binding to 0.0.0.0 without understanding the implications.</p>
+            </div>
+
+            <!-- Risk 2 -->
+            <div class="risk-card critical">
+                <div class="risk-icon"><i class="fas fa-key"></i></div>
+                <div>
+                    <div class="risk-title">Plaintext Secrets Storage</div>
+                    <span class="risk-severity">CRITICAL</span>
+                </div>
+                <p>Moltbot stores sensitive information including API keys, SSH keys, AWS credentials, and conversation
+                    histories in <strong>plaintext Markdown and JSON files</strong> on the local filesystem.</p>
+                <p><strong>Risk:</strong> Infostealer malware like RedLine, Lumma, and Vidar specifically target these
+                    locations, making Clawdbot users prime targets for credential theft.</p>
+            </div>
+
+            <!-- Risk 3 -->
+            <div class="risk-card critical">
+                <div class="risk-header">
+                    <div class="risk-icon"><i class="fas fa-syringe"></i></div>
+                    <div>
+                        <div class="risk-title">Prompt Injection Attacks</div>
+                        <span class="risk-severity">CRITICAL</span>
+                    </div>
+                </div>
+                <p>Clawdbot processes external data from emails, web content, and messages - making it highly
+                    susceptible to prompt injection. Malicious instructions embedded in untrusted inputs can manipulate
+                    the AI into:</p>
+                <ul>
+                    <li>Bypassing safety protocols</li>
+                    <li>Exfiltrating sensitive data</li>
+                    <li>Executing unauthorized shell commands</li>
+                    <li>Deleting files or wiping systems</li>
+                </ul>
+            </div>
+
+            <!-- Risk 4 -->
+            <div class="risk-card high">
+                <div class="risk-header">
+                    <div class="risk-icon"><i class="fas fa-box-open"></i></div>
+                    <div>
+                        <div class="risk-title">Supply Chain Attacks via ClawdHub</div>
+                        <span class="risk-severity">HIGH</span>
+                    </div>
+                </div>
+                <p>The ClawdHub skill library allows third-party extensions. Security researchers demonstrated that
+                    malicious "skills" can be uploaded that enable:</p>
+                <ul>
+                    <li>Remote Command Execution (RCE)</li>
+                    <li>Data exfiltration to attacker-controlled servers</li>
+                    <li>Persistent backdoor installation</li>
+                </ul>
+            </div>
+
+            <!-- Risk 5 -->
+            <div class="risk-card high">
+                <div class="risk-header">
+                    <div class="risk-icon"><i class="fas fa-user-secret"></i></div>
+                    <div>
+                        <div class="risk-title">Malicious Impersonation</div>
+                        <span class="risk-severity">HIGH</span>
+                    </div>
+                </div>
+                <p>A fake VS Code extension named "ClawdBot Agent - AI Coding Assistant" was discovered on the official
+                    Microsoft marketplace. This extension silently installed ScreenConnect malware for persistent remote
+                    access.</p>
+                <div class="warning-box">
+                    <strong><i class="fas fa-exclamation-triangle"></i> Important:</strong> Moltbot does NOT have an
+                    official VS Code extension. Any extension claiming to be Clawdbot/Moltbot is likely malicious.
+                </div>
+            </div>
+
+            <!-- Risk 6 -->
+            <div class="risk-card medium">
+                <div class="risk-header">
+                    <div class="risk-icon"><i class="fas fa-expand-arrows-alt"></i></div>
+                    <div>
+                        <div class="risk-title">Excessive Permission Requirements</div>
+                        <span class="risk-severity">MEDIUM</span>
+                    </div>
+                </div>
+                <p>By design, Clawdbot requires extensive system access: reading private messages, storing auth tokens,
+                    executing commands, and maintaining state. This creates a massive attack surface where any
+                    compromise leads to total system control.</p>
+            </div>
+        </section>
+
+        <!-- Section 5: Real Attacks -->
+        <section id="real-attacks">
+            <h2><i class="fas fa-skull-crossbones"></i> Real-World Attacks Documented</h2>
+
+            <p>These aren't theoretical risks - actual attacks on Clawdbot installations have been documented:</p>
+
+            <div class="warning-box">
+                <strong><i class="fas fa-exclamation-triangle"></i> Documented Incidents:</strong>
+                <ul style="margin: 0.5rem 0 0 1.5rem;">
+                    <li><strong>Failed login attempts</strong> - Exposed instances showing brute-force attack logs</li>
+                    <li><strong>Credential theft</strong> - API keys and tokens stolen from exposed configurations</li>
+                    <li><strong>Email inbox wipes</strong> - Prompt injection attacks that deleted entire email inboxes
+                    </li>
+                    <li><strong>Unauthorized shell access</strong> - Attackers gained root access on unprotected
+                        instances</li>
+                    <li><strong>Keychain access requests</strong> - macOS users reporting suspicious Keychain prompts
+                        after installation</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section 6: Hardening Guide -->
+        <section id="hardening">
+            <h2><i class="fas fa-lock"></i> Hardening Guide</h2>
+
+            <p>If you're determined to use Clawdbot/Moltbot, implement these security measures as an absolute minimum:
+            </p>
+
+            <div class="mitigation-step">
+                <div class="step-number">1</div>
+                <h4>Run on Isolated Infrastructure</h4>
+                <p>Never run Clawdbot on your primary workstation. Use a dedicated, disposable machine:</p>
+                <ul>
+                    <li>Cheap VPS from a cloud provider</li>
+                    <li>Old computer specifically for this purpose</li>
+                    <li>Docker container with limited capabilities</li>
+                </ul>
+                <p><strong>Why:</strong> If compromised, only this isolated system is affected - not your main machine
+                    with SSH keys, credentials, and sensitive data.</p>
+            </div>
+
+            <div class="mitigation-step">
+                <div class="step-number">2</div>
+                <h4>Never Expose to Public Internet</h4>
+                <p>The Clawdbot gateway should NEVER be accessible from the public internet. Options:</p>
+                <ul>
+                    <li><strong>VPN Only:</strong> Use Tailscale, WireGuard, or similar to access</li>
+                    <li><strong>Localhost Only:</strong> Bind to 127.0.0.1, access via SSH tunnel</li>
+                    <li><strong>Firewall:</strong> Block all incoming connections on gateway ports</li>
+                </ul>
+            </div>
+
+            <div class="mitigation-step">
+                <div class="step-number">3</div>
+                <h4>Enable Strong Authentication</h4>
+                <p>Configure mandatory authentication for all Clawdbot services:</p>
+                <pre><code><span class="comment"># In your Clawdbot config</span>
+gateway:
+  auth:
+    enabled: <span class="keyword">true</span>
+    method: token
+    token: <span class="string">"$(openssl rand -hex 32)"</span></code></pre>
+            </div>
+
+            <div class="mitigation-step">
+                <div class="step-number">4</div>
+                <h4>Implement Least Privilege</h4>
+                <p>Don't run as root. Create a dedicated low-privilege user:</p>
+                <pre><code><span class="comment"># Create dedicated user</span>
+sudo useradd -r -s /bin/false moltbot
+
+<span class="comment"># Run as that user</span>
+sudo -u moltbot moltbot start</code></pre>
+            </div>
+
+            <div class="mitigation-step">
+                <div class="step-number">5</div>
+                <h4>Encrypt Secrets at Rest</h4>
+                <p>Don't let sensitive data sit in plaintext. Options:</p>
+                <ul>
+                    <li>Use encrypted filesystem (LUKS, FileVault)</li>
+                    <li>Integrate with secret manager (HashiCorp Vault, 1Password CLI)</li>
+                    <li>Enable Clawdbot's built-in encryption if available</li>
+                </ul>
+            </div>
+
+            <div class="mitigation-step">
+                <div class="step-number">6</div>
+                <h4>Disable or Vet Skills/Plugins</h4>
+                <p>ClawdHub is a supply chain risk. Either:</p>
+                <ul>
+                    <li><strong>Disable entirely:</strong> Don't use third-party skills</li>
+                    <li><strong>Manual vetting:</strong> Review source code before installation</li>
+                    <li><strong>Allowlist:</strong> Only permit specific verified skills</li>
+                </ul>
+            </div>
+
+            <div class="mitigation-step">
+                <div class="step-number">7</div>
+                <h4>Configure Messaging Security</h4>
+                <p>For messaging integrations, reduce attack surface:</p>
+                <pre><code><span class="comment"># Require explicit @mention in group chats</span>
+messaging:
+  require_mention: <span class="keyword">true</span>
+  
+<span class="comment"># Block unknown senders until approved</span>
+  dm_pairing: <span class="keyword">true</span>
+  block_unknown: <span class="keyword">true</span></code></pre>
+            </div>
+
+            <div class="mitigation-step">
+                <div class="step-number">8</div>
+                <h4>Run Security Audit</h4>
+                <p>Use Clawdbot's built-in security audit command regularly:</p>
+                <pre><code>moltbot security audit</code></pre>
+                <p>This checks for common misconfigurations and exposed services.</p>
+            </div>
+        </section>
+
+        <!-- Section 7: Config Examples -->
+        <section id="config-examples">
+            <h2><i class="fas fa-file-code"></i> Secure Configuration Examples</h2>
+
+            <h3>Firewall Rules (UFW)</h3>
+            <pre><code><span class="comment"># Default deny incoming</span>
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+
+<span class="comment"># Allow only SSH from your IP</span>
+sudo ufw allow from YOUR_IP to any port 22
+
+<span class="comment"># DO NOT allow Moltbot ports publicly</span>
+<span class="comment"># sudo ufw allow 8080  # NEVER DO THIS</span>
+
+<span class="comment"># Enable firewall</span>
+sudo ufw enable</code></pre>
+
+            <h3>Secure SSH Configuration</h3>
+            <pre><code><span class="comment"># /etc/ssh/sshd_config</span>
+
+<span class="comment"># Disable password auth</span>
+PasswordAuthentication no
+
+<span class="comment"># Disable root login</span>
+PermitRootLogin no
+
+<span class="comment"># Only allow specific user</span>
+AllowUsers moltbot-admin</code></pre>
+
+            <h3>Docker Isolation</h3>
+            <pre><code><span class="comment"># docker-compose.yml - Run Moltbot isolated</span>
+version: '3.8'
+services:
+  moltbot:
+    image: moltbot/moltbot:latest
+    <span class="comment"># Bind ONLY to localhost</span>
+    ports:
+      - "127.0.0.1:8080:8080"
+    <span class="comment"># Drop all capabilities, add only what's needed</span>
+    cap_drop:
+      - ALL
+    <span class="comment"># Read-only filesystem where possible</span>
+    read_only: true
+    <span class="comment"># Limit resources</span>
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 2G</code></pre>
+
+            <h3>Tailscale VPN Access</h3>
+            <pre><code><span class="comment"># Install Tailscale on your server</span>
+curl -fsSL https://tailscale.com/install.sh | sh
+sudo tailscale up
+
+<span class="comment"># Now access Moltbot only via Tailscale IP</span>
+<span class="comment"># e.g., http://100.x.x.x:8080 (never public IP)</span></code></pre>
+        </section>
+
+        <!-- Section 8: Monitoring -->
+        <section id="monitoring">
+            <h2><i class="fas fa-chart-line"></i> Monitoring & Detection</h2>
+
+            <p>Even with hardening, continuous monitoring is essential to detect compromise attempts or successful
+                breaches.</p>
+
+            <h3>Log Monitoring</h3>
+            <pre><code><span class="comment"># Watch for authentication failures</span>
+tail -f /var/log/moltbot/access.log | grep -i "auth\|fail\|denied"
+
+<span class="comment"># Monitor for suspicious commands</span>
+tail -f /var/log/moltbot/commands.log | grep -iE "curl|wget|nc|bash|sh|python"</code></pre>
+
+            <h3>Fail2ban Configuration</h3>
+            <pre><code><span class="comment"># /etc/fail2ban/jail.local</span>
+[moltbot]
+enabled = true
+port = 8080
+filter = moltbot
+logpath = /var/log/moltbot/access.log
+maxretry = 3
+bantime = 3600</code></pre>
+
+            <h3>Network Monitoring</h3>
+            <pre><code><span class="comment"># Check for unexpected outbound connections</span>
+ss -tunaep | grep moltbot
+
+<span class="comment"># Monitor DNS queries (data exfil detection)</span>
+tcpdump -i any port 53 -n</code></pre>
+
+            <div class="success-box">
+                <strong><i class="fas fa-check-circle"></i> Best Practice:</strong> Set up alerting for any
+                authentication failures, unexpected outbound connections, or unusual command patterns. Use SIEM
+                integration if available.
+            </div>
+        </section>
+
+        <!-- Section 9: FAQ -->
+        <section id="faq">
+            <h2><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>
+
+            <h3>Should I use Clawdbot/Moltbot?</h3>
+            <p>That depends on your threat model. If you're a security professional who can properly isolate and monitor
+                it - proceed with caution. If you're a casual user looking for a "cool AI assistant" - the risks likely
+                outweigh the benefits.</p>
+
+            <h3>Is Moltbot safer than Clawdbot?</h3>
+            <p>No. Moltbot is just a rename due to trademark issues. The code, architecture, and risks are identical.
+            </p>
+
+            <h3>Can I use it safely on my main computer?</h3>
+            <p>We strongly recommend against this. Use isolated, disposable infrastructure only.</p>
+
+            <h3>What's the difference between Clawdbot and ClaudeBot?</h3>
+            <p>Completely different things:</p>
+            <ul>
+                <li><strong>Clawdbot/Moltbot:</strong> Open-source personal AI assistant you self-host</li>
+                <li><strong>ClaudeBot:</strong> Anthropic's web crawler that indexes websites</li>
+            </ul>
+
+            <h3>I found an exposed Clawdbot instance. What do I do?</h3>
+            <p>Report it responsibly. Do not access, exploit, or exfiltrate data. Consider reporting to the hosting
+                provider or security research organizations.</p>
+        </section>
+
+        <!-- Conclusion -->
+        <section>
+            <h2><i class="fas fa-flag-checkered"></i> Conclusion</h2>
+
+            <p>Clawdbot/Moltbot represents both the promise and peril of powerful AI assistants. Its capabilities are
+                impressive - but with great power comes great responsibility for security.</p>
+
+            <p><strong>Key takeaways:</strong></p>
+            <ul>
+                <li><i class="fas fa-times-circle" style="color: var(--accent-red);"></i> Never expose to the public
+                    internet</li>
+                <li><i class="fas fa-times-circle" style="color: var(--accent-red);"></i> Never run on your primary
+                    workstation</li>
+                <li><i class="fas fa-times-circle" style="color: var(--accent-red);"></i> Never run as root</li>
+                <li><i class="fas fa-times-circle" style="color: var(--accent-red);"></i> Never trust third-party skills
+                    without vetting</li>
+                <li><i class="fas fa-check-circle" style="color: var(--accent-green);"></i> Always use VPN/private
+                    network access</li>
+                <li><i class="fas fa-check-circle" style="color: var(--accent-green);"></i> Always enable strong
+                    authentication</li>
+                <li><i class="fas fa-check-circle" style="color: var(--accent-green);"></i> Always encrypt secrets at
+                    rest</li>
+                <li><i class="fas fa-check-circle" style="color: var(--accent-green);"></i> Always monitor for
+                    suspicious activity</li>
+            </ul>
+
+            <p>Stay safe out there.</p>
+        </section>
+
+        <!-- Footer -->
+        <p style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); color: var(--text-muted);">
+            <strong>Author:</strong> TheHGTech Security Team<br>
+            <strong>Last Updated:</strong> January 2026<br>
+            <strong>Reading Time:</strong> 18 minutes
+        </p>
+
+        <!-- Interaction Bar -->
+        <div class="interaction-bar">
+            <div class="like-section">
+                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                    <i class="far fa-heart"></i> <span id="likeText">Like this guide</span>
+                </button>
+            </div>
+            <div class="action-buttons">
+                <div class="share-buttons">
+                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"
+                        aria-label="Share on Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"
+                        aria-label="Share on LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link">
+                        <i class="fas fa-link"></i>
+                    </button>
+                </div>
+                <div class="button-separator"></div>
+                <button onclick="printArticle()" class="print-btn" title="Print" aria-label="Print">
+                    <i class="fas fa-print"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Include -->
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch('/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+
+    <script src="/interaction-bar.js?v=20251217"></script>
+</body>
+
+</html>

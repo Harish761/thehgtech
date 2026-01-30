@@ -1,6 +1,18 @@
 {
   "guides": [
     {
+      "id": "clawdbot-moltbot-security",
+      "title": "Clawdbot/Moltbot Security: Critical Risks & Complete Hardening Guide",
+      "category": "AI Security",
+      "excerpt": "The viral AI assistant with 30K+ stars has hundreds of exposed instances. Learn what Clawdbot/Moltbot is, its security risks (root access, prompt injection, supply chain), and how to secure it.",
+      "readTime": "18 min",
+      "level": "Intermediate",
+      "date": "Jan 30, 2026",
+      "badge": "New",
+      "featured": true,
+      "image": "/images/guides/clawdbot-moltbot-security.png"
+    },
+    {
       "id": "ai-crawler-security",
       "title": "AI Crawler Security: The Hidden Data Leak Risk Nobody Talks About",
       "category": "AI Security",
