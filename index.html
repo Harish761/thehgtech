@@ -4425,13 +4425,64 @@
                     Free • No Signup • Updated Every 4 Hours
                 </div>
 
-                <!-- Main Headline -->
+                <!-- Main Headline with Rotating Text -->
                 <h1
                     style="font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 800; line-height: 1.1; margin: 0 0 1.5rem; max-width: 900px;">
-                    Your Free <span
-                        style="background: linear-gradient(135deg, var(--accent-cyan), #0099cc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Threat
-                        Intelligence</span> Command Center
+                    Your Free <span class="rotating-text-container"
+                        style="display: inline-block; position: relative; min-width: 320px; text-align: left;">
+                        <a href="/threat-intel.html" class="rotating-text active" data-index="0"
+                            style="background: linear-gradient(135deg, var(--accent-cyan), #0099cc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-decoration: none; position: absolute; left: 0; opacity: 1; transition: opacity 0.5s ease, transform 0.5s ease;">Threat
+                            Intelligence</a>
+                        <a href="/cve-tracker.html" class="rotating-text" data-index="1"
+                            style="background: linear-gradient(135deg, #FF3D3D, #cc2929); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-decoration: none; position: absolute; left: 0; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">CVE
+                            Tracker</a>
+                        <a href="/ransomware-tracker.html" class="rotating-text" data-index="2"
+                            style="background: linear-gradient(135deg, #8b5cf6, #6d28d9); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-decoration: none; position: absolute; left: 0; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">Ransomware
+                            Tracker</a>
+                        <a href="/guides/" class="rotating-text" data-index="3"
+                            style="background: linear-gradient(135deg, #10b981, #059669); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-decoration: none; position: absolute; left: 0; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">Security
+                            Guides</a>
+                        <a href="/workflows/" class="rotating-text" data-index="4"
+                            style="background: linear-gradient(135deg, #FF6B35, #f97316); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-decoration: none; position: absolute; left: 0; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">n8n
+                            Workflows</a>
+                        <a href="/comparisons/" class="rotating-text" data-index="5"
+                            style="background: linear-gradient(135deg, #f59e0b, #d97706); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-decoration: none; position: absolute; left: 0; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">Tool
+                            Comparisons</a>
+                        <a href="/articles.html" class="rotating-text" data-index="6"
+                            style="background: linear-gradient(135deg, #ec4899, #db2777); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-decoration: none; position: absolute; left: 0; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">Security
+                            Articles</a>
+                        <span style="visibility: hidden;">Ransomware Tracker</span><!-- Spacer for width -->
+                    </span><br>Command Center
                 </h1>
+
+                <script>
+                    // Rotating text animation
+                    (function () {
+                        let currentIndex = 0;
+                        const texts = document.querySelectorAll('.rotating-text');
+                        const totalTexts = texts.length;
+
+                        function rotateText() {
+                            // Hide current
+                            texts[currentIndex].style.opacity = '0';
+                            texts[currentIndex].style.transform = 'translateY(-20px)';
+                            texts[currentIndex].classList.remove('active');
+
+                            // Move to next
+                            currentIndex = (currentIndex + 1) % totalTexts;
+
+                            // Show next
+                            setTimeout(() => {
+                                texts[currentIndex].style.opacity = '1';
+                                texts[currentIndex].style.transform = 'translateY(0)';
+                                texts[currentIndex].classList.add('active');
+                            }, 200);
+                        }
+
+                        // Start rotation after page loads
+                        setInterval(rotateText, 3000);
+                    })();
+                </script>
 
                 <!-- Subheadline -->
                 <p
