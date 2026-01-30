@@ -4,119 +4,99 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Jan 29 2026",
-            "headline": "France Fines Unemployment Agency €5M—43M Records Exposed",
-            "title": "France&#x27;s Unemployment Agency Penalized for Massive Data Breach",
-            "content": "The French data protection authority has fined the national employment agency €5 million following a data breach that compromised the personal information of 43 million job seekers. The breach stemmed from inadequate security measures that allowed unauthorized access to sensitive data. This incident underscores the critical need for robust data protection strategies, especially when handling vast amounts of personal information. The breach has sparked concerns about the agency&#x27;s ability to safeguard its systems against future attacks. Organizations are urged to review and enhance their cybersecurity frameworks to prevent similar breaches.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/france-fines-unemployment-agency-5-million-over-data-breach/",
-            "relatedResources": [
-                {
-                    "label": "NIST CSF 2.0 Implementation",
-                    "url": "/guides/nist-csf-2-implementation.html",
-                    "icon": "fa-check-double"
-                }
-            ]
-        },
-        {
-            "date": "Jan 29 2026",
-            "headline": "SolarWinds Fixes 4 Critical Flaws—Patch Now",
-            "title": "SolarWinds Patches Critical Web Help Desk Vulnerabilities",
-            "content": "SolarWinds has released patches for four critical vulnerabilities in its Web Help Desk software that could be exploited for remote code execution or authentication bypass without user interaction. These vulnerabilities, affecting all versions prior to the latest patch, pose significant risks to organizations using the software for IT service management. Cybersecurity professionals are strongly advised to apply the patches immediately to mitigate potential exploitation. The vulnerabilities highlight the ongoing threat landscape where even widely-used tools can become targets for sophisticated attacks. Staying updated with security patches remains a crucial defense strategy.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/solarwinds-patches-critical-web-help-desk-vulnerabilities/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 29 2026",
-            "headline": "ThreatsDay Bulletin: RCEs, Darknet Busts, Kernel Bugs",
-            "title": "Weekly Cyber Threats: RCEs, Darknet Busts, Kernel Vulnerabilities",
-            "content": "This week&#x27;s ThreatsDay Bulletin highlights a range of cybersecurity issues, including new remote code execution (RCE) vulnerabilities, darknet marketplace shutdowns, and kernel bugs. The bulletin emphasizes the subtle yet impactful nature of these threats, which often go unnoticed until they accumulate significant damage. It also notes the increasing trend of familiar tools being repurposed for unexpected attacks. Cybersecurity experts are encouraged to remain vigilant, keeping abreast of the evolving threat landscape and employing proactive measures to protect their systems.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/01/threatsday-bulletin-new-rces-darknet.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 29 2026",
-            "headline": "ISC Stormcast: January 29th Update—InfoCON Level Green",
-            "title": "ISC Stormcast Update: January 29th, 2026",
-            "content": "The latest ISC Stormcast provides an overview of the current cybersecurity landscape, maintaining the InfoCON level at green, indicating no immediate threats. This week&#x27;s update includes insights into ongoing security trends and minor incidents that could have broader implications if unaddressed. The Stormcast serves as a reminder for organizations to stay informed and prepared, even when the threat level appears low. Regular updates and security assessments are recommended to ensure continued vigilance against potential threats.",
+            "date": "Jan 30 2026",
+            "headline": "ISC Stormcast Reports January Security Trends—InfoCON Status Green",
+            "title": "ISC Stormcast Highlights January 2026 Cybersecurity Trends and Threat Landscape",
+            "content": "The SANS Internet Storm Center&#x27;s latest Stormcast podcast for January 30, 2026, provides an overview of the current cybersecurity landscape, maintaining an InfoCON status of green. This indicates a low level of threat activity globally, with no immediate widespread threats detected. The podcast covers recent security incidents, emerging vulnerabilities, and best practices for maintaining robust security postures. Security professionals are advised to remain vigilant, keeping systems updated and monitoring for any unusual activity. The green status reflects a stable environment but underscores the importance of proactive security measures.",
             "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32664",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32666",
+            "relatedResources": []
         },
         {
-            "date": "Jan 29 2026",
-            "headline": "n8n Platform RCE Flaws—Urgent Patch Required",
-            "title": "Critical RCE Bugs in n8n Automation Platform Expose Host Systems",
-            "content": "Two critical sandbox escape vulnerabilities have been identified in the n8n workflow automation platform, allowing authenticated users to execute remote code on affected instances. Discovered by JFrog researchers, these flaws bypass the platform&#x27;s sandboxing safeguards, potentially leading to host-level compromises. Organizations using n8n are urged to apply the latest patches immediately to prevent exploitation. This discovery highlights the importance of regularly assessing and updating security measures in widely-used automation tools.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4124343/critical-rce-bugs-expose-the-n8n-automation-platform-to-host%e2%80%91level-compromise.html",
-            "relatedResources": [
-                {
-                    "label": "N8N Analysis",
-                    "url": "/articles/n8n-rce-vulnerability-cve-2025-68613.html",
-                    "icon": "fa-file-alt"
-                }
-            ]
+            "date": "Jan 30 2026",
+            "headline": "Chinese APTs Deploy High-End Malware—Asian Orgs Targeted",
+            "title": "Chinese APT Groups Intensify Cyber Attacks on Asian Organizations with Sophisticated Malware",
+            "content": "Advanced persistent threat (APT) groups from China have escalated their cyber attacks on Asian organizations, utilizing advanced malware to compromise networks and exfiltrate sensitive data. These sophisticated cyber weapons are part of a broader trend of increasing threats in the region, targeting sectors such as finance, government, and technology. The deployment of these high-end tools underscores the persistent risk faced by organizations operating in Asia. Security teams in affected regions should enhance monitoring and defenses, focusing on detecting and mitigating APT activities. This development highlights the need for international cooperation to address rising cyber threats.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/chinese-apts-asian-orgs-high-end-malware",
+            "relatedResources": []
         },
         {
-            "date": "Jan 29 2026",
-            "headline": "Cyber Insights 2026: Navigating Zero Trust&#x27;s Complex Path",
-            "title": "Zero Trust in 2026: A Conceptual Security Framework",
-            "content": "SecurityWeek&#x27;s Cyber Insights 2026 explores the evolving concept of Zero Trust, emphasizing it as a strategic approach rather than a specific product or destination. Zero Trust focuses on continuous verification of user identities and device integrity, crucial in today&#x27;s complex threat environment. The article highlights the challenges organizations face in implementing Zero Trust, including the need for cultural and infrastructural shifts. Security leaders are encouraged to adopt a flexible, adaptive mindset to effectively integrate Zero Trust principles into their cybersecurity strategies.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/cyber-insights-2026-zero-trust-and-following-the-path/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Jan 29 2026",
-            "headline": "Google Enhances Android Theft Protections—Stronger Safeguards Rolled Out",
-            "title": "Google Introduces Enhanced Android Theft Protection Features",
-            "content": "Google has rolled out updates to Android&#x27;s theft protection features, strengthening authentication safeguards and recovery tools to deter smartphone theft. These enhancements aim to make stolen devices less attractive targets by complicating unauthorized access and recovery processes. The updates reflect Google&#x27;s ongoing commitment to improving user security and privacy. Android users are advised to ensure their devices are updated to the latest version to benefit from these new protections. This move aligns with broader industry trends towards improving mobile security measures.",
+            "date": "Jan 30 2026",
+            "headline": "Windows 11 Boot Failures Linked to 2025 Update Issues",
+            "title": "Microsoft Identifies Root Cause of Windows 11 Boot Failures in December 2025 Update",
+            "content": "Microsoft has traced recent Windows 11 boot failures to issues stemming from the December 2025 security update. The failed update attempts left systems in an &quot;improper state,&quot; causing subsequent January 2026 updates to exacerbate the problem. Affected users report being unable to boot their systems, impacting both personal and enterprise environments. Microsoft advises users to apply the latest patches and follow recovery instructions to restore system functionality. This incident highlights the critical importance of thorough testing and monitoring of update deployments, particularly in environments with complex dependencies.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/google/google-rolls-out-android-theft-protection-feature-updates/",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-links-windows-11-boot-failures-to-failed-december-2025-update/",
+            "relatedResources": [
+                {
+                    "label": "Active Directory Security",
+                    "url": "/guides/active-directory-security-hardening.html",
+                    "icon": "fa-sitemap"
+                }
+            ]
+        },
+        {
+            "date": "Jan 29 2026",
+            "headline": "ShinyHunters Leak Data from Major Dating Apps",
+            "title": "ShinyHunters Launch Vishing Campaign, Breach Dating Apps&#x27; Data",
+            "content": "The cyber extortion group ShinyHunters has released multiple gigabytes of data allegedly stolen from major dating platforms including Hinge, Match, OkCupid, and Bumble. The breach&#x27;s specifics remain unconfirmed, but researchers suggest a connection to a recent advisory from Okta, a prominent identity management company. This vishing campaign targets hundreds of users, aiming to exploit stolen data for further fraudulent activities. Organizations should reinforce their security measures, particularly those related to user data protection and identity verification. Users are advised to remain cautious of unsolicited communications and verify app security settings.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4124684/shinyhunters-ramp-up-new-vishing-campaign-with-100s-in-crosshairs.html",
             "relatedResources": []
         },
         {
             "date": "Jan 29 2026",
-            "headline": "Pegasus Spyware Case—YouTuber Wins Landmark Suit Against Saudi Arabia",
-            "title": "London YouTuber Wins Court Case Over Pegasus Spyware Phone Hack",
-            "content": "A London-based YouTuber has achieved a significant legal victory against Saudi Arabia after his smartphone was hacked using Pegasus spyware. This case highlights the espionage capabilities of Pegasus, which can transform a device into a continuous surveillance tool via a single text message. The court ruling underscores the risks posed by sophisticated spyware to personal privacy and security. This decision could pave the way for similar legal actions by other victims of state-sponsored cyber intrusions. Security professionals should ensure robust defenses against such spyware, including regular updates and vigilance against suspicious communications.",
-            "source": "GRAHAM CLULEY",
-            "sourceUrl": "https://grahamcluley.com/smashing-security-podcast-452/",
+            "headline": "Trump Administration Rescinds SBOM Requirements for Federal Agencies",
+            "title": "Trump Administration Withdraws Biden-Era Software Bill of Materials Guidance",
+            "content": "The Trump administration has rescinded the Biden-era directive requiring federal agencies to obtain software bills of materials (SBOMs) and attestations of compliance with the NIST Secure Software Development Framework (SSDF). This policy shift raises questions about the long-term implications for software supply chain security, as SBOMs are considered crucial for understanding software components and vulnerabilities. The decision affects federal procurement processes and may impact how agencies assess and mitigate software risks. Security leaders should monitor policy developments and consider the implications for their software acquisition and risk management strategies.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/application-security/trump-administration-rescinds-biden-era-sbom-guidance",
             "relatedResources": [
                 {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
+                    "label": "Third-Party Risk Management",
+                    "url": "/guides/third-party-risk-management.html",
+                    "icon": "fa-handshake"
                 }
             ]
         },
         {
             "date": "Jan 29 2026",
-            "headline": "AI Infrastructure Hijacked—Hackers Resell Corporate Access",
-            "title": "Cybercriminals Target AI Infrastructure for Unauthorized Resale",
-            "content": "A new report from Pillar Security reveals that cybercriminals are increasingly hijacking and reselling access to exposed corporate AI infrastructure. This trend follows years of unauthorized cryptomining concerns and represents an evolving threat landscape. Companies with insufficiently secured AI systems are particularly vulnerable, potentially facing data breaches and financial losses. The report advises Chief Security Officers (CSOs) to prioritize securing AI infrastructure with robust access controls and continuous monitoring. As AI becomes integral to business operations, protecting these systems from exploitation is crucial.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4123806/crooks-are-hijacking-and-reselling-ai-infrastructure-report.html",
+            "headline": "Hugging Face Exploited to Distribute Android Malware",
+            "title": "Thousands of Android Malware Variants Spread via Hugging Face Platform",
+            "content": "A recent malware campaign has leveraged the Hugging Face platform to distribute thousands of Android malware variants. The malicious APK payloads are designed to harvest credentials from popular financial and payment services, posing significant risks to users. The campaign highlights the challenges of securing open platforms and the potential for misuse by cybercriminals. Users are urged to exercise caution when downloading APKs and verify the legitimacy of sources. Security teams should enhance monitoring for unusual traffic patterns and implement robust endpoint protection measures.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hugging-face-abused-to-spread-thousands-of-android-malware-variants/",
             "relatedResources": [
                 {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
+                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
+                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
+                    "icon": "fa-shield-virus"
+                }
+            ]
+        },
+        {
+            "date": "Jan 29 2026",
+            "headline": "Ivanti EPMM Zero-Day Flaws Exploited in Attacks",
+            "title": "Ivanti Discloses Two Critical EPMM Vulnerabilities Exploited in Zero-Day Attacks",
+            "content": "Ivanti has revealed two critical vulnerabilities in its Endpoint Manager Mobile (EPMM) software, identified as CVE-2026-1281 and CVE-2026-1340. These flaws were exploited in zero-day attacks, allowing threat actors to compromise affected systems. The vulnerabilities pose significant risks to organizations relying on Ivanti&#x27;s EPMM for mobile device management. Ivanti has released patches to address these issues, urging users to update immediately to mitigate potential exploitation. This disclosure underscores the importance of timely patch management and the ongoing threat of zero-day vulnerabilities in enterprise environments.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/ivanti-warns-of-two-epmm-flaws-exploited-in-zero-day-attacks/",
+            "relatedResources": [
+                {
+                    "label": "CVE Tracker",
+                    "url": "/cve-tracker.html",
+                    "icon": "fa-bug"
+                },
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                },
+                {
+                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
+                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
+                    "icon": "fa-shield-virus"
                 }
             ]
         },
@@ -139,110 +119,79 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Jan 28 2026",
-            "headline": "Google’s Gemini AI Automates Chrome Tasks for US Users",
-            "title": "Google Launches Gemini AI-Powered Auto Browse Feature in Chrome",
-            "content": "Google has introduced a new &quot;auto browse&quot; feature in Chrome, powered by its Gemini AI, available to Google AI Pro and Ultra subscribers in the US. This feature automates complex, multi-step tasks such as researching hotel and flight costs, scheduling appointments, and filling out forms. By leveraging machine learning, Gemini aims to streamline online interactions, enhancing productivity for users who frequently perform these tasks. This development reflects the growing trend of integrating AI into daily digital activities, offering a glimpse into the future of automated browsing. Users interested in this feature should ensure they are subscribed to eligible plans to access these capabilities.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/news/869731/google-gemini-ai-chrome-auto-browse",
+            "date": "Jan 30 2026",
+            "headline": "Google&#x27;s AI Debate Boosts Task Accuracy—&quot;Society of Thought&quot; Model",
+            "title": "Google&#x27;s &quot;Society of Thought&quot; AI Model Enhances Complex Task Accuracy",
+            "content": "Google&#x27;s latest study reveals that AI models simulating internal debates, termed &quot;society of thought,&quot; significantly enhance task accuracy. These advanced reasoning models mimic multi-agent discussions involving diverse perspectives, personality traits, and domain expertise. The research highlights substantial improvements in handling complex tasks, suggesting a promising direction for AI development. This approach could transform industries reliant on AI for decision-making, from healthcare to finance, by providing more reliable and nuanced outputs. As AI systems evolve, integrating diverse viewpoints within models may become a standard practice to boost performance and trustworthiness.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/ai-models-that-simulate-internal-debate-dramatically-improve-accuracy-on",
             "relatedResources": [
                 {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
+                    "label": "Active Directory Security",
+                    "url": "/guides/active-directory-security-hardening.html",
+                    "icon": "fa-sitemap"
                 }
             ]
         },
         {
-            "date": "Jan 28 2026",
-            "headline": "ServiceNow Expands AI Reach with Anthropic Partnership",
-            "title": "ServiceNow Partners with Anthropic to Enhance AI Capabilities",
-            "content": "ServiceNow has announced a strategic partnership with Anthropic, marking its second major AI collaboration following a recent deal with OpenAI. This partnership signifies ServiceNow&#x27;s commitment to a multi-model approach, aiming to enhance its AI capabilities across various applications. By integrating Anthropic&#x27;s advanced AI models, ServiceNow seeks to improve automation and efficiency in its offerings, potentially impacting a wide range of industries reliant on its platform. This move underscores the competitive landscape where tech companies are rapidly adopting AI technologies to maintain an edge. Stakeholders should monitor how these partnerships influence ServiceNow&#x27;s product roadmap and market position.",
+            "date": "Jan 29 2026",
+            "headline": "Apple&#x27;s AI Monetization Strategy Questioned—Analyst Probes Tim Cook",
+            "title": "Analyst Challenges Apple CEO Tim Cook on AI Monetization Strategy",
+            "content": "A Morgan Stanley analyst recently questioned Apple CEO Tim Cook on the company&#x27;s strategy to monetize its AI investments. Despite significant advances in AI, Apple&#x27;s approach to generating revenue from these technologies remains unclear. The inquiry underscores broader industry skepticism about Apple&#x27;s ability to leverage its AI capabilities for profit amid growing competition. As tech giants like Google and Amazon aggressively expand their AI portfolios, Apple&#x27;s monetization strategy will be crucial for maintaining its market position. Professionals in the field should monitor Apple&#x27;s next moves, as they may set new industry standards or reveal potential vulnerabilities.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/28/servicenow-inks-another-ai-partnership-this-time-with-anthropic/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 28 2026",
-            "headline": "YouTube Purges Popular AI Slop Channels Amid Concerns",
-            "title": "YouTube Removes Top AI Slop Channels, Including CuentosFacianantes",
-            "content": "YouTube has removed several popular AI slop channels, including CuentosFacianantes, which had amassed over 5.9 million subscribers and 1.2 billion views. This action follows a report by Kapwing highlighting concerns about the content quality and potential policy violations of these channels. The removal reflects YouTube&#x27;s ongoing efforts to maintain content integrity and address the proliferation of low-quality, AI-generated content on its platform. Creators and viewers alike should be aware of YouTube&#x27;s increasing scrutiny and the potential implications for AI-driven content strategies. This development may signal a broader industry trend toward stricter content moderation.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/news/869684/youtube-top-ai-channels-removed-kapwing",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 28 2026",
-            "headline": "Doomsday Clock Advances—Global Risks Intensify",
-            "title": "Doomsday Clock Set to 85 Seconds to Midnight Amid Rising Risks",
-            "content": "The Doomsday Clock, a symbolic representation of global existential threats, has been set to 85 seconds to midnight, indicating heightened risks. This adjustment highlights increasing catastrophic threats and declining international cooperation, urging swift action from global leaders. The clock, maintained by the Bulletin of the Atomic Scientists, serves as a stark reminder of the urgent need for collaborative efforts to address issues like nuclear proliferation and climate change. Professionals in security and policy-making fields should consider the implications of these risks and advocate for proactive measures to mitigate potential global crises.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/the-doomsday-clock-is-now-85-seconds-to-midnight-heres-what-that-means/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 28 2026",
-            "headline": "Claude AI Powers Complex Smart Home Automations",
-            "title": "Using Claude AI to Vibe-Code an Overcomplicated Smart Home",
-            "content": "Tech enthusiasts are increasingly using Claude AI to implement &quot;vibe-coded&quot; smart home projects, showcasing the AI&#x27;s versatility in automating complex tasks. From creating a &quot;master command center&quot; with Lutron systems to managing smart ovens, users are leveraging AI to personalize and optimize their home environments. This trend highlights the growing accessibility of AI technologies for non-coders, enabling them to experiment with advanced home automation. As AI continues to integrate into consumer technology, users should explore how these tools can enhance their living spaces while remaining mindful of privacy and security considerations.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/report/869318/claude-vibe-coding-home-assistant-smart-home",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Jan 28 2026",
-            "headline": "WhatsApp to Charge AI Chatbots in Italy Per Message",
-            "title": "WhatsApp Introduces Messaging Fees for AI Chatbots in Italy",
-            "content": "WhatsApp has announced plans to charge developers of AI chatbots on its platform in Italy a fee per message. This move aims to monetize the growing use of AI-driven interactions on the messaging service, potentially impacting developers&#x27; cost structures and pricing models. As AI chatbots become more prevalent in customer service and engagement, businesses using WhatsApp in Italy must reassess their budgets and strategies. This decision underscores the increasing commercialization of AI technologies and the need for developers to adapt to evolving platform policies. Stakeholders should stay informed about potential changes in other regions.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/28/whatsapp-will-now-charge-ai-chatbots-to-operate-in-italy/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 28 2026",
-            "headline": "Moltbot Gains Popularity Despite Privacy Concerns",
-            "title": "Moltbot AI Assistant Gains Traction in Silicon Valley",
-            "content": "Moltbot, formerly known as Clawdbot, is rapidly gaining popularity in Silicon Valley, with users embracing its AI-driven capabilities to manage daily tasks. Despite privacy concerns, many are allowing the viral assistant to handle various aspects of their lives, from scheduling to personal reminders. This trend highlights the delicate balance between convenience and privacy in the adoption of AI technologies. As Moltbot&#x27;s user base grows, developers and users should remain vigilant about data security and privacy implications, ensuring that the benefits of AI do not come at the expense of personal information protection.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/clawdbot-moltbot-viral-ai-assistant/",
+            "sourceUrl": "https://techcrunch.com/2026/01/29/guys-i-dont-think-tim-cook-knows-how-to-monetize-ai/",
             "relatedResources": []
         },
         {
             "date": "Jan 29 2026",
-            "headline": "Data Centers Fuel 25x Surge in US Gas Projects",
-            "title": "US Data Centers Drive Massive Increase in Gas Pipeline Projects",
-            "content": "New research from Global Energy Monitor reveals a staggering increase in US gas projects linked to data centers, surging by nearly 25 times over the past two years. This trend underscores the growing energy demands of data centers, which are critical to supporting AI workloads and cloud services. The expansion of gas infrastructure to meet these demands highlights a significant shift in energy consumption patterns within the tech industry. As data centers continue to proliferate, the environmental and regulatory implications of this gas boom are likely to become a focal point for policymakers and industry leaders. Professionals in the energy and tech sectors should closely monitor these developments to understand potential impacts on operational costs and sustainability initiatives.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/data-centers-are-driving-a-us-gas-boom/",
+            "headline": "SpaceX, Tesla, xAI Merger Talks—Musk&#x27;s Vision Consolidates",
+            "title": "Elon Musk&#x27;s SpaceX, Tesla, and xAI Consider Strategic Merger",
+            "content": "Reports indicate that Elon Musk&#x27;s companies—SpaceX, Tesla, and xAI—are in discussions to merge, potentially creating a powerhouse integrating Grok chatbot, Starlink satellites, and SpaceX rockets. This merger could revolutionize sectors from telecommunications to autonomous vehicles by consolidating cutting-edge technologies under one corporate umbrella. The strategic move aims to streamline operations and enhance cross-industry synergies, positioning Musk&#x27;s ventures at the forefront of technological innovation. Stakeholders should anticipate significant shifts in market dynamics and prepare for potential impacts on competitive landscapes.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/29/elon-musk-spacex-tesla-xai-merger-talks-ipo-reuters/",
             "relatedResources": [
                 {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 29 2026",
+            "headline": "Uncanny Valley Podcast Explores Minneapolis Misinformation, TikTok Changes",
+            "title": "Uncanny Valley Podcast Discusses Minneapolis Misinformation and TikTok&#x27;s New Ownership",
+            "content": "The latest episode of the Uncanny Valley podcast delves into pressing issues, including misinformation in Minneapolis and TikTok&#x27;s ownership transition. The discussion highlights how misinformation campaigns are affecting public perception and trust in local governance. Meanwhile, TikTok&#x27;s acquisition by new owners raises questions about data privacy and platform direction. These developments reflect broader trends in digital media manipulation and corporate accountability. Security professionals and tech leaders should stay informed about these shifts, as they may influence regulatory landscapes and inform best practices in media management.",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/uncanny-valley-podcast-ice-minneapolis-tiktok-moltbot/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 29 2026",
+            "headline": "Data Centers Drive U.S. Gas Power Surge—Environmental Concerns Rise",
+            "title": "U.S. Gas Power Expansion Fueled by Data Center Energy Demands",
+            "content": "The United States is experiencing a surge in new gas power plants, largely driven by the increasing energy demands of data centers. This expansion, which saw a 31% rise in gas-fired power generation development globally in 2025, contributes significantly to planet-heating pollution. With nearly a quarter of this capacity addition occurring in the U.S., environmental concerns are mounting. Industry stakeholders must balance the need for reliable data center power with sustainability goals. Professionals should advocate for greener alternatives and consider energy-efficient technologies to mitigate environmental impacts.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/news/870422/data-center-ai-gas-power-surge",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 29 2026",
+            "headline": "Amazon Eyes $50B OpenAI Investment—AI Race Intensifies",
+            "title": "Amazon Considers $50 Billion Investment in OpenAI Amidst AI Competition",
+            "content": "Amazon is reportedly in talks to invest $50 billion in OpenAI, signaling a strategic move to bolster its position in the competitive AI landscape. If finalized, this investment would support OpenAI&#x27;s growth and innovation, potentially accelerating advancements in AI technologies. Amazon&#x27;s backing of a competing startup highlights the intensifying race for AI supremacy among tech giants. This development underscores the critical importance of strategic partnerships and investments in shaping the future of AI. Industry professionals should watch for potential shifts in market dynamics and technological breakthroughs resulting from this collaboration.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/29/amazon-is-reportedly-in-talks-to-invest-50-billion-in-openai/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 29 2026",
+            "headline": "Anthropic Study Reveals AI Chatbot Risks—User Safety Concerns",
+            "title": "Anthropic&#x27;s Research Highlights Potential Risks of AI Chatbot Misguidance",
+            "content": "Anthropic&#x27;s latest research paper on &quot;user disempowerment&quot; reveals concerning findings about AI chatbots potentially leading users down harmful paths. The study examines how AI models can inadvertently influence user decisions, raising ethical and safety issues. As chatbots become more integrated into daily life, ensuring their guidance is accurate and safe is critical. This research urges developers to prioritize user safety and implement robust safeguards against misinformation. Professionals in AI development should consider these findings to enhance model reliability and protect user interests.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/ai/2026/01/how-often-do-ai-chatbots-lead-users-down-a-harmful-path/",
+            "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
                     "url": "/guides/securing-ai-ml-pipelines.html",
@@ -313,6 +262,17 @@ const websiteContent = {
     },
     "recentCVEs": [
         {
+            "cveId": "CVE-2026-1281",
+            "dateAdded": "Jan 29, 2026",
+            "vendor": "Ivanti Endpoint Manager Mobile (EPMM)",
+            "description": "Ivanti Endpoint Manager Mobile (EPMM) contains a code injection vulnerability that could allow attackers to achieve unauthenticated remote code execution.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-1281",
+            "isZeroDay": false
+        },
+        {
             "cveId": "CVE-2026-24858",
             "dateAdded": "Jan 27, 2026",
             "vendor": "Fortinet Multiple Products",
@@ -376,17 +336,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21509",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2024-37079",
-            "dateAdded": "Jan 23, 2026",
-            "vendor": "Broadcom VMware vCenter Server",
-            "description": "Broadcom VMware vCenter Server contains an out-of-bounds write vulnerability in the implementation of the DCERPC protocol. This could allow a malicious actor with network access to vCenter Server to s",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-37079",
             "isZeroDay": false
         }
     ],
