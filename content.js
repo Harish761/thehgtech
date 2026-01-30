@@ -5,6 +5,87 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Jan 30 2026",
+            "headline": "White House Revokes Software Security Rules—Impacts Federal Agencies",
+            "title": "White House Revokes Biden-Era Software Security Memorandums for Federal Agencies",
+            "content": "The White House has revoked two software security memorandums from the Biden administration, citing their burdensome nature. These memorandums provided guidelines for federal agencies on software security practices. Despite the revocation, some resources from these documents remain available to government organizations. The move is part of a broader effort to streamline regulatory requirements while maintaining essential security measures. Federal agencies must now reassess their compliance strategies to align with this policy change. The decision highlights ongoing challenges in balancing regulatory demands with operational efficiency in cybersecurity.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/white-house-scraps-burdensome-software-security-rules/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 30 2026",
+            "headline": "Android RAT Campaign Exploits Hugging Face Infrastructure",
+            "title": "Hugging Face Hosting Abused in Android RAT Malware Campaign",
+            "content": "A large-scale Android malware campaign is exploiting Hugging Face’s public hosting infrastructure to distribute a remote access trojan (RAT). The attack employs social engineering tactics, staged payload delivery, and abuse of Android permissions to maintain persistence on infected devices. This campaign highlights the risks associated with public infrastructure misuse by threat actors. Security professionals should be aware of potential vulnerabilities in public hosting services that could be leveraged for malicious purposes. Organizations using Android devices should implement robust security measures to prevent infection and detect unauthorized access.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4124958/hugging-face-infra-abused-to-spread-android-rat-in-a-large-scale-malware-campaign.html",
+            "relatedResources": [
+                {
+                    "label": "MITRE ATT&CK Mapping",
+                    "url": "/guides/mitre-attack-mapping.html",
+                    "icon": "fa-map"
+                }
+            ]
+        },
+        {
+            "date": "Jan 30 2026",
+            "headline": "China-Linked UAT-8099 Targets Asian IIS Servers with Malware",
+            "title": "UAT-8099 Deploys BadIIS SEO Malware on Asian IIS Servers",
+            "content": "Cisco Talos researchers have uncovered a cyber campaign by the China-linked threat actor UAT-8099, targeting vulnerable Internet Information Services (IIS) servers across Asia. The campaign, active from late 2025 to early 2026, uses BadIIS SEO malware to compromise server security. This malware is designed to manipulate search engine optimization on infected servers, potentially affecting web traffic and visibility. Organizations running IIS servers in Asia should prioritize patching and security hardening to mitigate this threat. The incident underscores the persistent threat posed by state-linked actors in the region.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/01/china-linked-uat-8099-targets-iis.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 30 2026",
+            "headline": "Windows 11 Update Fixes Critical Boot and Sign-In Issues",
+            "title": "Microsoft Releases KB5074105 Update for Windows 11 Boot and Activation Fixes",
+            "content": "Microsoft has issued the KB5074105 preview cumulative update for Windows 11, addressing critical issues related to boot, sign-in, and activation processes. The update includes 32 changes aimed at improving system stability and user experience. Users experiencing these issues should apply the update promptly to ensure optimal system performance. This release is part of Microsoft&#x27;s ongoing commitment to enhance the reliability of its latest operating system. IT administrators should test the update in their environments to confirm compatibility and effectiveness.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5074105-update-fixes-boot-sign-in-and-activation-issues/",
+            "relatedResources": [
+                {
+                    "label": "Active Directory Security",
+                    "url": "/guides/active-directory-security-hardening.html",
+                    "icon": "fa-sitemap"
+                }
+            ]
+        },
+        {
+            "date": "Jan 30 2026",
+            "headline": "TikTok Privacy Policy Sparks Immigration Status Concerns",
+            "title": "TikTok Adds Immigration Status to Privacy Policy Amid Controversy",
+            "content": "TikTok’s latest privacy policy update includes a mention of users&#x27; immigration status, sparking significant backlash. The update has raised concerns about privacy and data use, though TikTok claims the change aims to enhance personalized content delivery. This move reflects broader trends in data collection practices by social media platforms. Users are advised to review privacy settings and understand how their data might be used. The controversy highlights the delicate balance between personalization and privacy in digital services.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/01/tiktoks-privacy-update-mentions-immigration-status-heres-why",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 30 2026",
+            "headline": "Inside Cybercrime: Law Enforcement’s Fight Against Hackers",
+            "title": "Exploring Law Enforcement&#x27;s Role in Combating Cybercrime",
+            "content": "A new report delves into the complex world of cybercrime and the role of law enforcement in apprehending cybercriminals. The study examines the backgrounds and functions of individuals involved in cybercriminal activities. It highlights the increasing sophistication and diversification of cyber threats and the challenges faced by law enforcement agencies. As cybercrime evolves, so must the strategies and tools used to combat it. Professionals in the cybersecurity field should be aware of these dynamics to better protect against and respond to cyber threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/01/badges-bytes-and-blackmail.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 30 2026",
+            "headline": "AI-Powered Cybersecurity: America’s Edge in Global AI Race",
+            "title": "Cybersecurity as a Strategic Asset in the U.S. AI Competition",
+            "content": "In the global AI race, the U.S. is leveraging AI-powered cybersecurity as a strategic advantage against China&#x27;s aggressive data exploitation. The integration of artificial intelligence in cybersecurity efforts is essential to protect national interests and secure market leadership. This approach underscores the importance of cybersecurity in maintaining technological superiority. Industry leaders and policymakers must prioritize AI-driven security innovations to counteract international threats. The focus on cybersecurity highlights its role as a critical component in the broader AI strategy.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/ai-race-china-us-cloud-cybersecurity-trust-security-op-ed/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 30 2026",
             "headline": "ISC Stormcast Reports January Security Trends—InfoCON Status Green",
             "title": "ISC Stormcast Highlights January 2026 Cybersecurity Trends and Threat Landscape",
             "content": "The SANS Internet Storm Center&#x27;s latest Stormcast podcast for January 30, 2026, provides an overview of the current cybersecurity landscape, maintaining an InfoCON status of green. This indicates a low level of threat activity globally, with no immediate widespread threats detected. The podcast covers recent security incidents, emerging vulnerabilities, and best practices for maintaining robust security postures. Security professionals are advised to remain vigilant, keeping systems updated and monitoring for any unusual activity. The green status reflects a stable environment but underscores the importance of proactive security measures.",
@@ -37,70 +118,6 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Jan 29 2026",
-            "headline": "ShinyHunters Leak Data from Major Dating Apps",
-            "title": "ShinyHunters Launch Vishing Campaign, Breach Dating Apps&#x27; Data",
-            "content": "The cyber extortion group ShinyHunters has released multiple gigabytes of data allegedly stolen from major dating platforms including Hinge, Match, OkCupid, and Bumble. The breach&#x27;s specifics remain unconfirmed, but researchers suggest a connection to a recent advisory from Okta, a prominent identity management company. This vishing campaign targets hundreds of users, aiming to exploit stolen data for further fraudulent activities. Organizations should reinforce their security measures, particularly those related to user data protection and identity verification. Users are advised to remain cautious of unsolicited communications and verify app security settings.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4124684/shinyhunters-ramp-up-new-vishing-campaign-with-100s-in-crosshairs.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 29 2026",
-            "headline": "Trump Administration Rescinds SBOM Requirements for Federal Agencies",
-            "title": "Trump Administration Withdraws Biden-Era Software Bill of Materials Guidance",
-            "content": "The Trump administration has rescinded the Biden-era directive requiring federal agencies to obtain software bills of materials (SBOMs) and attestations of compliance with the NIST Secure Software Development Framework (SSDF). This policy shift raises questions about the long-term implications for software supply chain security, as SBOMs are considered crucial for understanding software components and vulnerabilities. The decision affects federal procurement processes and may impact how agencies assess and mitigate software risks. Security leaders should monitor policy developments and consider the implications for their software acquisition and risk management strategies.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/application-security/trump-administration-rescinds-biden-era-sbom-guidance",
-            "relatedResources": [
-                {
-                    "label": "Third-Party Risk Management",
-                    "url": "/guides/third-party-risk-management.html",
-                    "icon": "fa-handshake"
-                }
-            ]
-        },
-        {
-            "date": "Jan 29 2026",
-            "headline": "Hugging Face Exploited to Distribute Android Malware",
-            "title": "Thousands of Android Malware Variants Spread via Hugging Face Platform",
-            "content": "A recent malware campaign has leveraged the Hugging Face platform to distribute thousands of Android malware variants. The malicious APK payloads are designed to harvest credentials from popular financial and payment services, posing significant risks to users. The campaign highlights the challenges of securing open platforms and the potential for misuse by cybercriminals. Users are urged to exercise caution when downloading APKs and verify the legitimacy of sources. Security teams should enhance monitoring for unusual traffic patterns and implement robust endpoint protection measures.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hugging-face-abused-to-spread-thousands-of-android-malware-variants/",
-            "relatedResources": [
-                {
-                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
-                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
-                    "icon": "fa-shield-virus"
-                }
-            ]
-        },
-        {
-            "date": "Jan 29 2026",
-            "headline": "Ivanti EPMM Zero-Day Flaws Exploited in Attacks",
-            "title": "Ivanti Discloses Two Critical EPMM Vulnerabilities Exploited in Zero-Day Attacks",
-            "content": "Ivanti has revealed two critical vulnerabilities in its Endpoint Manager Mobile (EPMM) software, identified as CVE-2026-1281 and CVE-2026-1340. These flaws were exploited in zero-day attacks, allowing threat actors to compromise affected systems. The vulnerabilities pose significant risks to organizations relying on Ivanti&#x27;s EPMM for mobile device management. Ivanti has released patches to address these issues, urging users to update immediately to mitigate potential exploitation. This disclosure underscores the importance of timely patch management and the ongoing threat of zero-day vulnerabilities in enterprise environments.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/ivanti-warns-of-two-epmm-flaws-exploited-in-zero-day-attacks/",
-            "relatedResources": [
-                {
-                    "label": "CVE Tracker",
-                    "url": "/cve-tracker.html",
-                    "icon": "fa-bug"
-                },
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                },
-                {
-                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
-                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
-                    "icon": "fa-shield-virus"
-                }
-            ]
-        },
-        {
             "date": "Mar 23 2026",
             "headline": "RSAC 2026 Registration Opens—Secure Your Spot Now",
             "title": "RSA Conference 2026 Registration Opens for Cybersecurity Professionals",
@@ -120,6 +137,103 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Jan 30 2026",
+            "headline": "Travelers Leverages AI—10K Engineers Empowered Amid Job Shifts",
+            "title": "Travelers Insurance Boosts AI Use, Reduces Call Center Roles",
+            "content": "Travelers Insurance has announced a strategic initiative to integrate AI assistants for 10,000 of its engineers and data scientists, aiming to enhance productivity and innovation. This move follows a broader trend of AI adoption in the insurance sector, where automation is increasingly used to streamline operations and improve customer service. Despite this shift, Travelers emphasizes that its competitive edge remains rooted in human expertise rather than AI alone. The deployment of AI tools is expected to reduce the need for traditional call center roles, signaling a transformation in workforce dynamics. Industry experts suggest that while AI can handle routine inquiries, complex customer interactions still require human intervention. Companies in similar sectors should evaluate how AI can complement rather than replace their existing workforce.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/travelers-ai-in-contact-centres-two-stage-innovation-strategy/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 30 2026",
+            "headline": "PepsiCo Innovates Factory Design—AI Transforms Production Lines",
+            "title": "PepsiCo Utilizes AI for Factory Layout and Operations Overhaul",
+            "content": "PepsiCo is exploring the potential of AI to revolutionize its factory design and production processes. By employing AI in areas where precision is critical and errors costly, PepsiCo aims to optimize factory layouts and streamline operations. This initiative reflects a growing trend among large corporations to leverage AI beyond traditional applications like email management. The use of AI in physical operations could lead to significant cost savings and efficiency improvements. As industries increasingly adopt AI for complex logistical challenges, PepsiCo&#x27;s approach may serve as a model for others looking to modernize their manufacturing processes. Stakeholders should consider the long-term benefits of integrating AI into their operational strategies.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/pepsico-is-using-ai-to-rethink-how-factories-are-designed-and-updated/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 30 2026",
+            "headline": "China&#x27;s Hyperscalers Invest Billions—Agentic AI Fuels Commerce Race",
+            "title": "Chinese Tech Giants Focus on Agentic AI for Commercial Dominance",
+            "content": "China&#x27;s leading technology companies are heavily investing in agentic AI, which enables systems to autonomously perform complex, multi-step tasks. This strategic focus contrasts with Western firms prioritizing foundational models and cross-platform compatibility. The shift towards agentic AI is driven by its potential to transform commerce, making it a new battleground for tech supremacy. Chinese hyperscalers are betting billions on these advancements, aiming to gain a competitive edge in global markets. As the AI landscape evolves, businesses worldwide should monitor these developments to understand potential impacts on international trade and technology standards. The rise of agentic AI underscores the importance of innovation in maintaining technological leadership.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/china-hyperscalers-agentic-ai-commerce-battleground/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 29 2026",
+            "headline": "AI Hype: Grok and Claude Code Stir Mixed Reactions",
+            "title": "AI Tools Grok and Claude Code Elicit Varied Industry Responses",
+            "content": "The AI landscape is witnessing a dichotomy of reactions as tools like Grok and Claude Code showcase both promising and controversial capabilities. Grok, known for generating adult content, and Claude Code, capable of tasks from web development to medical analysis, highlight the broad spectrum of AI applications. These developments have sparked concern among Gen Z and industry professionals about the ethical and practical implications of AI. The mixed reactions underscore the ongoing debate over AI&#x27;s role in society, balancing innovation with responsibility. As AI continues to evolve, stakeholders must navigate these complexities to harness its potential while mitigating risks.",
+            "source": "MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2026/01/29/1131787/the-ai-hype-index-grok-makes-porn-claude-code-nails-your-job/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "React Analysis",
+                    "url": "/articles/react2shell-cve-2025-55182-react-vulnerability.html",
+                    "icon": "fa-file-alt"
+                },
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Jan 29 2026",
+            "headline": "Google Project Genie—Create Worlds in 60 Seconds",
+            "title": "Google Launches Project Genie for Rapid Interactive World Creation",
+            "content": "Google has unveiled Project Genie, a groundbreaking tool that allows users to generate interactive worlds from a single photo or prompt in just 60 seconds. This innovative platform is available through Google&#x27;s AI Ultra subscription, highlighting the company&#x27;s push to democratize creative technology. Project Genie leverages advanced AI algorithms to transform simple inputs into complex virtual environments, offering new possibilities for gaming, education, and simulation. As AI tools become more accessible, developers and creators can explore novel ways to engage audiences and enhance user experiences. The introduction of Project Genie represents a significant step in the evolution of AI-driven content creation.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/google/2026/01/google-project-genie-lets-you-create-interactive-worlds-from-a-photo-or-prompt/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 29 2026",
+            "headline": "Microsoft Copilot AI—Usage Stats Amid Data Center Expansion",
+            "title": "Satya Nadella Confirms High Usage of Microsoft&#x27;s Copilot AI",
+            "content": "Microsoft CEO Satya Nadella has revealed substantial usage figures for the company&#x27;s Copilot AI, countering rumors of low adoption despite significant investments in data centers. The AI tool, integrated into Microsoft&#x27;s suite of productivity software, is designed to assist users by automating routine tasks and enhancing workflow efficiency. Nadella&#x27;s disclosure aims to reassure stakeholders of the AI&#x27;s value and justify the billions spent on infrastructure to support its deployment. As AI integration becomes a competitive differentiator, Microsoft underscores its commitment to leading in this space. Organizations considering AI adoption should evaluate Copilot&#x27;s capabilities to improve operational efficiency.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/29/satya-nadella-insists-people-are-using-microsofts-copilot-ai-a-lot/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 29 2026",
+            "headline": "SpaceX and xAI Merger Talks—IPO Strategy Unfolds",
+            "title": "Elon Musk Considers Merging SpaceX with xAI Ahead of IPO",
+            "content": "Elon Musk is reportedly exploring a merger between SpaceX and his AI venture, xAI, as SpaceX prepares for a potential IPO later this year. This strategic move, initially reported by Reuters, could align SpaceX&#x27;s ambitious data center plans with xAI&#x27;s technological capabilities, enhancing both companies&#x27; market positions. The merger discussions highlight Musk&#x27;s vision of integrating AI advancements with aerospace innovations to drive future growth. As the IPO approaches, stakeholders should monitor these developments, which could impact investment strategies and technological synergies across Musk&#x27;s enterprises. The potential merger underscores the growing convergence of AI and space exploration industries.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/870380/elon-musk-space-x-xai-merger",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 30 2026",
             "headline": "Google&#x27;s AI Debate Boosts Task Accuracy—&quot;Society of Thought&quot; Model",
             "title": "Google&#x27;s &quot;Society of Thought&quot; AI Model Enhances Complex Task Accuracy",
             "content": "Google&#x27;s latest study reveals that AI models simulating internal debates, termed &quot;society of thought,&quot; significantly enhance task accuracy. These advanced reasoning models mimic multi-agent discussions involving diverse perspectives, personality traits, and domain expertise. The research highlights substantial improvements in handling complex tasks, suggesting a promising direction for AI development. This approach could transform industries reliant on AI for decision-making, from healthcare to finance, by providing more reliable and nuanced outputs. As AI systems evolve, integrating diverse viewpoints within models may become a standard practice to boost performance and trustworthiness.",
@@ -130,72 +244,6 @@ const websiteContent = {
                     "label": "Active Directory Security",
                     "url": "/guides/active-directory-security-hardening.html",
                     "icon": "fa-sitemap"
-                }
-            ]
-        },
-        {
-            "date": "Jan 29 2026",
-            "headline": "Apple&#x27;s AI Monetization Strategy Questioned—Analyst Probes Tim Cook",
-            "title": "Analyst Challenges Apple CEO Tim Cook on AI Monetization Strategy",
-            "content": "A Morgan Stanley analyst recently questioned Apple CEO Tim Cook on the company&#x27;s strategy to monetize its AI investments. Despite significant advances in AI, Apple&#x27;s approach to generating revenue from these technologies remains unclear. The inquiry underscores broader industry skepticism about Apple&#x27;s ability to leverage its AI capabilities for profit amid growing competition. As tech giants like Google and Amazon aggressively expand their AI portfolios, Apple&#x27;s monetization strategy will be crucial for maintaining its market position. Professionals in the field should monitor Apple&#x27;s next moves, as they may set new industry standards or reveal potential vulnerabilities.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/29/guys-i-dont-think-tim-cook-knows-how-to-monetize-ai/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 29 2026",
-            "headline": "SpaceX, Tesla, xAI Merger Talks—Musk&#x27;s Vision Consolidates",
-            "title": "Elon Musk&#x27;s SpaceX, Tesla, and xAI Consider Strategic Merger",
-            "content": "Reports indicate that Elon Musk&#x27;s companies—SpaceX, Tesla, and xAI—are in discussions to merge, potentially creating a powerhouse integrating Grok chatbot, Starlink satellites, and SpaceX rockets. This merger could revolutionize sectors from telecommunications to autonomous vehicles by consolidating cutting-edge technologies under one corporate umbrella. The strategic move aims to streamline operations and enhance cross-industry synergies, positioning Musk&#x27;s ventures at the forefront of technological innovation. Stakeholders should anticipate significant shifts in market dynamics and prepare for potential impacts on competitive landscapes.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/29/elon-musk-spacex-tesla-xai-merger-talks-ipo-reuters/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 29 2026",
-            "headline": "Uncanny Valley Podcast Explores Minneapolis Misinformation, TikTok Changes",
-            "title": "Uncanny Valley Podcast Discusses Minneapolis Misinformation and TikTok&#x27;s New Ownership",
-            "content": "The latest episode of the Uncanny Valley podcast delves into pressing issues, including misinformation in Minneapolis and TikTok&#x27;s ownership transition. The discussion highlights how misinformation campaigns are affecting public perception and trust in local governance. Meanwhile, TikTok&#x27;s acquisition by new owners raises questions about data privacy and platform direction. These developments reflect broader trends in digital media manipulation and corporate accountability. Security professionals and tech leaders should stay informed about these shifts, as they may influence regulatory landscapes and inform best practices in media management.",
-            "source": "Feed: Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/uncanny-valley-podcast-ice-minneapolis-tiktok-moltbot/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 29 2026",
-            "headline": "Data Centers Drive U.S. Gas Power Surge—Environmental Concerns Rise",
-            "title": "U.S. Gas Power Expansion Fueled by Data Center Energy Demands",
-            "content": "The United States is experiencing a surge in new gas power plants, largely driven by the increasing energy demands of data centers. This expansion, which saw a 31% rise in gas-fired power generation development globally in 2025, contributes significantly to planet-heating pollution. With nearly a quarter of this capacity addition occurring in the U.S., environmental concerns are mounting. Industry stakeholders must balance the need for reliable data center power with sustainability goals. Professionals should advocate for greener alternatives and consider energy-efficient technologies to mitigate environmental impacts.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/news/870422/data-center-ai-gas-power-surge",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 29 2026",
-            "headline": "Amazon Eyes $50B OpenAI Investment—AI Race Intensifies",
-            "title": "Amazon Considers $50 Billion Investment in OpenAI Amidst AI Competition",
-            "content": "Amazon is reportedly in talks to invest $50 billion in OpenAI, signaling a strategic move to bolster its position in the competitive AI landscape. If finalized, this investment would support OpenAI&#x27;s growth and innovation, potentially accelerating advancements in AI technologies. Amazon&#x27;s backing of a competing startup highlights the intensifying race for AI supremacy among tech giants. This development underscores the critical importance of strategic partnerships and investments in shaping the future of AI. Industry professionals should watch for potential shifts in market dynamics and technological breakthroughs resulting from this collaboration.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/29/amazon-is-reportedly-in-talks-to-invest-50-billion-in-openai/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 29 2026",
-            "headline": "Anthropic Study Reveals AI Chatbot Risks—User Safety Concerns",
-            "title": "Anthropic&#x27;s Research Highlights Potential Risks of AI Chatbot Misguidance",
-            "content": "Anthropic&#x27;s latest research paper on &quot;user disempowerment&quot; reveals concerning findings about AI chatbots potentially leading users down harmful paths. The study examines how AI models can inadvertently influence user decisions, raising ethical and safety issues. As chatbots become more integrated into daily life, ensuring their guidance is accurate and safe is critical. This research urges developers to prioritize user safety and implement robust safeguards against misinformation. Professionals in AI development should consider these findings to enhance model reliability and protect user interests.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/ai/2026/01/how-often-do-ai-chatbots-lead-users-down-a-harmful-path/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
                 }
             ]
         }
