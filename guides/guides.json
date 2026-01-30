@@ -1,6 +1,18 @@
 {
   "guides": [
     {
+      "id": "ai-crawler-security",
+      "title": "AI Crawler Security: The Hidden Data Leak Risk Nobody Talks About",
+      "category": "AI Security",
+      "excerpt": "AI crawlers like ClaudeBot and GPTBot scrape your site for training. Learn the hidden security risks: data leakage, reconnaissance, PII exposure - plus complete blocking guide.",
+      "readTime": "20 min",
+      "level": "Intermediate",
+      "date": "Jan 30, 2026",
+      "badge": "New",
+      "featured": true,
+      "image": "/images/guides/ai-crawler-security.png"
+    },
+    {
       "id": "medusa-security-scanner",
       "title": "MEDUSA Security Scanner: AI-First SAST with 180+ AI Rules",
       "category": "AI Security",

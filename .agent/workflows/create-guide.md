@@ -320,38 +320,47 @@ After guides are no longer "new" (after ~2 weeks), change to category-specific b
 ## Featured Image Generation Guidelines
 
 ### Image Location
-- Path: `/images/guides/[guide-name].png`
-- Naming: Must match the guide HTML filename (e.g., `llm-security-prompt-injection.png`)
+- Path: `/images/guides/[guide-name].png` or `/images/articles/[article-name].png`
+- Naming: Must match the HTML filename
 
-### Required Visual Style: "Cartoon Instructor"
-All guide featured images MUST follow this consistent style:
+### Required Visual Style: "Harish at Whiteboard"
+ALL images (guides, articles, LinkedIn) MUST follow this EXACT consistent style:
 
-**Image prompt template:**
+**MANDATORY Image prompt template:**
 ```
-A professional cybersecurity educational illustration featuring a cartoon character 
-who is styled as Harish G (Indian male, glasses, dark blue polo shirt or tech-themed 
-casual attire, friendly expression, minimal cartoon style) standing at a whiteboard 
-or futuristic display.
+Create a professional cybersecurity presentation-style illustration. 
 
-The whiteboard/display shows: [SPECIFIC TOPIC ELEMENTS]
+CHARACTER: Cartoon version of Harish G - Indian man with beard, sunglasses pushed up on head, confident friendly expression, wearing black t-shirt with subtle tech logo. Standing to the left side, holding a marker/stylus, presenting gesture pointing at whiteboard.
 
-Background: Dark gradient (#0a0a0a to #1a1a2e) with subtle tech patterns.
-Style: Modern, clean, corporate-friendly but approachable.
-Colors: Use accent colors from the guide theme - cyan (#00D9FF), purple (#8b5cf6), 
-red (#FF3D3D), or green (#10b981) as appropriate for the topic.
-NO text on the image.
+WHITEBOARD/DISPLAY (right side, futuristic glowing screen):
+- Title: "[MAIN TOPIC]" in large cyan (#00D9FF) bold text
+- Subtitle: "[KEY METRIC OR TAGLINE]" in red (#FF3D3D)
+- Key points with red arrows (→):
+  → [Point 1]
+  → [Point 2]
+  → [Point 3]
+  → [Point 4]
+- Attack/process flow diagram at bottom: [Step 1] → [Step 2] → [Step 3] → [Step 4]
+
+VISUAL ELEMENTS:
+- Red warning triangle icon (⚠) on the whiteboard
+- "ACTIVE THREAT" or relevant red stamp in corner
+- Topic-specific icon/logo (e.g., Microsoft Teams logo, robot icon, etc.)
+
+BACKGROUND: Dark cybersecurity-themed (#0a0a0a) with subtle glowing circuit patterns, matrix-style code rain, red and cyan neon highlights.
+
+STYLE: Clean cartoon illustration similar to tech explainer videos. Professional but engaging. Dark theme with red/cyan accents. 1200x630 aspect ratio.
 ```
 
-### Topic-Specific Elements to Show on Whiteboard:
-- **AI/LLM Security**: Robot icons, neural networks, prompt bubbles, shield icons
-- **Compliance (ISO, SOC2)**: Checkmarks, certificate badges, audit symbols
-- **Detection (YARA, Sigma)**: Code patterns, magnifying glass, alert icons
-- **Threat Intelligence**: Maps, threat actor symbols, IOC patterns
-- **Incident Response**: Timeline charts, fire/alert symbols, playbook steps
-- **Cloud Security**: Cloud icons, lock symbols, infrastructure diagrams
+### CRITICAL RULES:
+1. ALWAYS include the cartoon Harish character
+2. ALWAYS have a whiteboard/display with structured content
+3. ALWAYS use the title + subtitle + bullet points + flow diagram format
+4. ALWAYS use dark background with circuit patterns
+5. NEVER generate abstract/3D isometric images without the character
 
 ### Image Generation Tool
-Use the `generate_image` tool with the prompt template above, customized for the specific guide topic. Save directly to `/images/guides/[guide-name].png`.
+Use the `generate_image` tool with the template above. Customize the [BRACKETS] for each topic.
 
 ## Guide Ordering Rules
 **Always maintain chronological order (newest first):**

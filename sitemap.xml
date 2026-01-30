@@ -574,6 +574,18 @@
 
   <!-- ========== SECURITY GUIDES - HIGH VALUE LONG-TAIL KEYWORDS ========== -->
   
+  <!-- NEW GUIDE - January 30, 2026 (AI Crawler Security) -->
+  <url>
+    <loc>https://thehgtech.com/guides/ai-crawler-security.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.92</priority>
+    <lastmod>2026-01-30</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/guides/ai-crawler-security.png</image:loc>
+      <image:title>AI Crawler Security Guide - ClaudeBot GPTBot Blocking</image:title>
+    </image:image>
+  </url>
+
   <!-- NEW GUIDE - January 27, 2026 (MEDUSA AI Security Scanner) -->
   <url>
     <loc>https://thehgtech.com/guides/medusa-security-scanner.html</loc>
