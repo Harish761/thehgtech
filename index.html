@@ -4418,182 +4418,345 @@
                 style="min-height: 85vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; position: relative; padding: 4rem 2rem;">
                 <canvas class="hero-canvas" id="heroCanvas"></canvas>
 
-                <!-- Trust Badge -->
-                <div class="hero-badge"
-                    style="background: linear-gradient(135deg, rgba(0, 217, 255, 0.15), rgba(0, 217, 255, 0.05)); border: 1px solid rgba(0, 217, 255, 0.3); padding: 0.5rem 1.25rem; border-radius: 50px; font-size: 0.75rem; font-weight: 600; color: var(--accent-cyan); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 2rem;">
-                    <div class="pulse-dot"></div>
-                    Free • No Signup • Updated Every 4 Hours
+                <!-- Hero Brand Section -->
+                <div class="hero-brand" style="text-align: center; margin-bottom: 1.5rem;">
+                    <!-- Trust Badge -->
+                    <div class="hero-badge"
+                        style="display: inline-flex; align-items: center; gap: 0.5rem; background: linear-gradient(135deg, rgba(0, 217, 255, 0.15), rgba(0, 217, 255, 0.05)); border: 1px solid rgba(0, 217, 255, 0.3); padding: 0.5rem 1.25rem; border-radius: 50px; font-size: 0.75rem; font-weight: 600; color: var(--accent-cyan); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1.5rem;">
+                        <div class="pulse-dot"></div>
+                        Free • No Signup • Updated Every 4 Hours
+                    </div>
+
+                    <!-- Main Static Headline -->
+                    <h1
+                        style="font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 800; line-height: 1.15; margin: 0 0 0.75rem 0; color: #fff;">
+                        Your Cybersecurity<br>
+                        <span
+                            style="background: linear-gradient(135deg, #00d9ff, #0099cc, #00d9ff); background-size: 200% auto; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: shimmer 3s linear infinite;">Command
+                            Center</span>
+                    </h1>
+                    <p style="font-size: 1.1rem; color: #888; margin: 0; max-width: 600px; margin-inline: auto;">
+                        Enterprise-grade threat intelligence, completely free.
+                    </p>
                 </div>
 
-                <!-- Main Headline with Rotating Full Lines & Buttons -->
-                <div class="rotating-headline-container"
-                    style="position: relative; min-height: 400px; width: 100%; max-width: 1200px; display: flex; align-items: center; justify-content: center; margin-bottom: 2rem; margin-top: 1rem;">
+                <!-- Feature Spotlight Carousel -->
+                <div class="feature-spotlight"
+                    style="position: relative; width: 100%; max-width: 800px; margin: 0 auto 2rem;">
 
-                    <!-- Slide 0: Threat Intel -->
-                    <div class="rotating-slide active" data-index="0"
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 1; transform: translateY(0); transition: opacity 0.5s ease, transform 0.5s ease; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem;">
-                        <h1
-                            style="font-size: clamp(1.8rem, 3vw, 2.8rem); font-weight: 800; line-height: 1.2; margin: 0; max-width: 1000px;">
-                            Free Threat Intel<br>
-                            <span
-                                style="background: linear-gradient(135deg, var(--accent-cyan), #0099cc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Command
-                                Center</span>
-                        </h1>
-                        <p style="font-size: 1.1rem; color: #a3a3a3; margin: 0; max-width: 600px; line-height: 1.5;">
-                            Access 52k+ live IOCs, updated every 4 hours for free.
-                        </p>
-                        <a href="/threat-intel.html"
-                            style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: rgba(0, 217, 255, 0.1); border: 1px solid rgba(0, 217, 255, 0.3); color: var(--accent-cyan); text-decoration: none; border-radius: 50px; font-weight: 600; font-size: 0.9rem; transition: all 0.3s ease;">
-                            Explore Dashboard <i class="fas fa-arrow-right"></i>
-                        </a>
+                    <!-- Glassmorphism Card Container -->
+                    <div class="feature-card-container"
+                        style="position: relative; min-height: 280px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 24px; backdrop-filter: blur(20px); overflow: hidden;">
+
+                        <!-- Animated Glow Border -->
+                        <div class="glow-border"
+                            style="position: absolute; inset: -1px; border-radius: 24px; background: conic-gradient(from 0deg, transparent, var(--current-accent, #00d9ff), transparent 30%); opacity: 0.5; animation: rotate-glow 8s linear infinite; pointer-events: none;">
+                        </div>
+
+                        <!-- Feature Slides -->
+                        <!-- Slide 0: Threat Intelligence Dashboard -->
+                        <article class="feature-slide active" data-index="0" data-accent="#00d9ff"
+                            style="position: absolute; inset: 0; padding: 2.5rem; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; opacity: 1; transform: translateY(0); transition: opacity 0.6s ease, transform 0.6s ease;">
+                            <div class="feature-icon"
+                                style="width: 64px; height: 64px; border-radius: 16px; background: rgba(0, 217, 255, 0.1); border: 1px solid rgba(0, 217, 255, 0.3); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
+                                <i class="fas fa-satellite-dish" style="font-size: 1.75rem; color: #00d9ff;"></i>
+                            </div>
+                            <h2
+                                style="font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 700; margin: 0 0 0.75rem 0; background: linear-gradient(135deg, #00d9ff, #0099cc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                                Threat Intelligence Dashboard
+                            </h2>
+                            <p
+                                style="font-size: 1rem; color: #a0a0a0; margin: 0 0 1.5rem 0; max-width: 550px; line-height: 1.6;">
+                                Access over 52,000 live Indicators of Compromise (IOCs) from 9 premium threat feeds.
+                                Updated every 4 hours with malicious IPs, domains, URLs, and file hashes.
+                            </p>
+                            <a href="/threat-intel.html" class="feature-cta"
+                                style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1.75rem; background: linear-gradient(135deg, rgba(0, 217, 255, 0.2), rgba(0, 217, 255, 0.1)); border: 1px solid rgba(0, 217, 255, 0.4); color: #00d9ff; text-decoration: none; border-radius: 50px; font-weight: 600; font-size: 0.95rem; transition: all 0.3s ease;"
+                                onmouseover="this.style.background='rgba(0, 217, 255, 0.25)'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(0, 217, 255, 0.3)';"
+                                onmouseout="this.style.background='linear-gradient(135deg, rgba(0, 217, 255, 0.2), rgba(0, 217, 255, 0.1))'; this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+                                Explore Dashboard <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </article>
+
+                        <!-- Slide 1: CVE Vulnerability Tracker -->
+                        <article class="feature-slide" data-index="1" data-accent="#FF3D3D"
+                            style="position: absolute; inset: 0; padding: 2.5rem; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; pointer-events: none;">
+                            <div class="feature-icon"
+                                style="width: 64px; height: 64px; border-radius: 16px; background: rgba(255, 61, 61, 0.1); border: 1px solid rgba(255, 61, 61, 0.3); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
+                                <i class="fas fa-bug" style="font-size: 1.75rem; color: #FF3D3D;"></i>
+                            </div>
+                            <h2
+                                style="font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 700; margin: 0 0 0.75rem 0; background: linear-gradient(135deg, #FF3D3D, #cc2929); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                                CVE Vulnerability Tracker
+                            </h2>
+                            <p
+                                style="font-size: 1rem; color: #a0a0a0; margin: 0 0 1.5rem 0; max-width: 550px; line-height: 1.6;">
+                                Stay ahead of critical vulnerabilities with real-time CVE monitoring. Get instant alerts
+                                on high-severity exploits, CVSS scores, and vendor patches as they're published.
+                            </p>
+                            <a href="/cve-tracker.html" class="feature-cta"
+                                style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1.75rem; background: linear-gradient(135deg, rgba(255, 61, 61, 0.2), rgba(255, 61, 61, 0.1)); border: 1px solid rgba(255, 61, 61, 0.4); color: #FF3D3D; text-decoration: none; border-radius: 50px; font-weight: 600; font-size: 0.95rem; transition: all 0.3s ease;"
+                                onmouseover="this.style.background='rgba(255, 61, 61, 0.25)'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(255, 61, 61, 0.3)';"
+                                onmouseout="this.style.background='linear-gradient(135deg, rgba(255, 61, 61, 0.2), rgba(255, 61, 61, 0.1))'; this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+                                View CVE Tracker <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </article>
+
+                        <!-- Slide 2: Ransomware Group Monitor -->
+                        <article class="feature-slide" data-index="2" data-accent="#8b5cf6"
+                            style="position: absolute; inset: 0; padding: 2.5rem; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; pointer-events: none;">
+                            <div class="feature-icon"
+                                style="width: 64px; height: 64px; border-radius: 16px; background: rgba(139, 92, 246, 0.1); border: 1px solid rgba(139, 92, 246, 0.3); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
+                                <i class="fas fa-skull-crossbones" style="font-size: 1.75rem; color: #8b5cf6;"></i>
+                            </div>
+                            <h2
+                                style="font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 700; margin: 0 0 0.75rem 0; background: linear-gradient(135deg, #8b5cf6, #6d28d9); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                                Ransomware Group Monitor
+                            </h2>
+                            <p
+                                style="font-size: 1rem; color: #a0a0a0; margin: 0 0 1.5rem 0; max-width: 550px; line-height: 1.6;">
+                                Track active ransomware gangs, their latest victims, and attack patterns. Monitor threat
+                                actor activity across LockBit, BlackCat, Cl0p, and 50+ other groups.
+                            </p>
+                            <a href="/ransomware-tracker.html" class="feature-cta"
+                                style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1.75rem; background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(139, 92, 246, 0.1)); border: 1px solid rgba(139, 92, 246, 0.4); color: #8b5cf6; text-decoration: none; border-radius: 50px; font-weight: 600; font-size: 0.95rem; transition: all 0.3s ease;"
+                                onmouseover="this.style.background='rgba(139, 92, 246, 0.25)'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(139, 92, 246, 0.3)';"
+                                onmouseout="this.style.background='linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(139, 92, 246, 0.1))'; this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+                                Track Ransomware <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </article>
+
+                        <!-- Slide 3: Security Guides & Frameworks -->
+                        <article class="feature-slide" data-index="3" data-accent="#10b981"
+                            style="position: absolute; inset: 0; padding: 2.5rem; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; pointer-events: none;">
+                            <div class="feature-icon"
+                                style="width: 64px; height: 64px; border-radius: 16px; background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.3); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
+                                <i class="fas fa-book-open" style="font-size: 1.75rem; color: #10b981;"></i>
+                            </div>
+                            <h2
+                                style="font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 700; margin: 0 0 0.75rem 0; background: linear-gradient(135deg, #10b981, #059669); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                                Security Guides & Frameworks
+                            </h2>
+                            <p
+                                style="font-size: 1rem; color: #a0a0a0; margin: 0 0 1.5rem 0; max-width: 550px; line-height: 1.6;">
+                                Master cybersecurity with comprehensive guides on NIST, ISO 27001, SOC 2, and more.
+                                Step-by-step tutorials, checklists, and implementation strategies.
+                            </p>
+                            <a href="/guides/" class="feature-cta"
+                                style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1.75rem; background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(16, 185, 129, 0.1)); border: 1px solid rgba(16, 185, 129, 0.4); color: #10b981; text-decoration: none; border-radius: 50px; font-weight: 600; font-size: 0.95rem; transition: all 0.3s ease;"
+                                onmouseover="this.style.background='rgba(16, 185, 129, 0.25)'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(16, 185, 129, 0.3)';"
+                                onmouseout="this.style.background='linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(16, 185, 129, 0.1))'; this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+                                Browse Guides <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </article>
+
+                        <!-- Slide 4: n8n Security Automation -->
+                        <article class="feature-slide" data-index="4" data-accent="#FF6B35"
+                            style="position: absolute; inset: 0; padding: 2.5rem; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; pointer-events: none;">
+                            <div class="feature-icon"
+                                style="width: 64px; height: 64px; border-radius: 16px; background: rgba(255, 107, 53, 0.1); border: 1px solid rgba(255, 107, 53, 0.3); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
+                                <i class="fas fa-cogs" style="font-size: 1.75rem; color: #FF6B35;"></i>
+                            </div>
+                            <h2
+                                style="font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 700; margin: 0 0 0.75rem 0; background: linear-gradient(135deg, #FF6B35, #f97316); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                                n8n Security Automation
+                            </h2>
+                            <p
+                                style="font-size: 1rem; color: #a0a0a0; margin: 0 0 1.5rem 0; max-width: 550px; line-height: 1.6;">
+                                Automate your SOC with ready-to-deploy n8n workflows. Threat detection, incident
+                                response, and security orchestration templates you can customize.
+                            </p>
+                            <a href="/workflows/" class="feature-cta"
+                                style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1.75rem; background: linear-gradient(135deg, rgba(255, 107, 53, 0.2), rgba(255, 107, 53, 0.1)); border: 1px solid rgba(255, 107, 53, 0.4); color: #FF6B35; text-decoration: none; border-radius: 50px; font-weight: 600; font-size: 0.95rem; transition: all 0.3s ease;"
+                                onmouseover="this.style.background='rgba(255, 107, 53, 0.25)'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(255, 107, 53, 0.3)';"
+                                onmouseout="this.style.background='linear-gradient(135deg, rgba(255, 107, 53, 0.2), rgba(255, 107, 53, 0.1))'; this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+                                Get Workflows <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </article>
+
+                        <!-- Slide 5: Security Tool Comparisons -->
+                        <article class="feature-slide" data-index="5" data-accent="#f59e0b"
+                            style="position: absolute; inset: 0; padding: 2.5rem; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; pointer-events: none;">
+                            <div class="feature-icon"
+                                style="width: 64px; height: 64px; border-radius: 16px; background: rgba(245, 158, 11, 0.1); border: 1px solid rgba(245, 158, 11, 0.3); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
+                                <i class="fas fa-balance-scale" style="font-size: 1.75rem; color: #f59e0b;"></i>
+                            </div>
+                            <h2
+                                style="font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 700; margin: 0 0 0.75rem 0; background: linear-gradient(135deg, #f59e0b, #d97706); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                                Security Tool Comparisons
+                            </h2>
+                            <p
+                                style="font-size: 1rem; color: #a0a0a0; margin: 0 0 1.5rem 0; max-width: 550px; line-height: 1.6;">
+                                Make informed decisions with unbiased, side-by-side comparisons of SIEM, EDR, XDR, and
+                                other security tools. Features, pricing, and real-world performance.
+                            </p>
+                            <a href="/comparisons/" class="feature-cta"
+                                style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1.75rem; background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(245, 158, 11, 0.1)); border: 1px solid rgba(245, 158, 11, 0.4); color: #f59e0b; text-decoration: none; border-radius: 50px; font-weight: 600; font-size: 0.95rem; transition: all 0.3s ease;"
+                                onmouseover="this.style.background='rgba(245, 158, 11, 0.25)'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(245, 158, 11, 0.3)';"
+                                onmouseout="this.style.background='linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(245, 158, 11, 0.1))'; this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+                                Compare Tools <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </article>
+
+                        <!-- Slide 6: Cybersecurity News & Analysis -->
+                        <article class="feature-slide" data-index="6" data-accent="#ec4899"
+                            style="position: absolute; inset: 0; padding: 2.5rem; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; pointer-events: none;">
+                            <div class="feature-icon"
+                                style="width: 64px; height: 64px; border-radius: 16px; background: rgba(236, 72, 153, 0.1); border: 1px solid rgba(236, 72, 153, 0.3); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
+                                <i class="fas fa-newspaper" style="font-size: 1.75rem; color: #ec4899;"></i>
+                            </div>
+                            <h2
+                                style="font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 700; margin: 0 0 0.75rem 0; background: linear-gradient(135deg, #ec4899, #db2777); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                                Cybersecurity News & Analysis
+                            </h2>
+                            <p
+                                style="font-size: 1rem; color: #a0a0a0; margin: 0 0 1.5rem 0; max-width: 550px; line-height: 1.6;">
+                                Stay informed with breaking cybersecurity news, breach reports, and expert analysis.
+                                In-depth coverage of the latest threats, vulnerabilities, and industry trends.
+                            </p>
+                            <a href="/articles.html" class="feature-cta"
+                                style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1.75rem; background: linear-gradient(135deg, rgba(236, 72, 153, 0.2), rgba(236, 72, 153, 0.1)); border: 1px solid rgba(236, 72, 153, 0.4); color: #ec4899; text-decoration: none; border-radius: 50px; font-weight: 600; font-size: 0.95rem; transition: all 0.3s ease;"
+                                onmouseover="this.style.background='rgba(236, 72, 153, 0.25)'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(236, 72, 153, 0.3)';"
+                                onmouseout="this.style.background='linear-gradient(135deg, rgba(236, 72, 153, 0.2), rgba(236, 72, 153, 0.1))'; this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+                                Read Articles <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </article>
                     </div>
 
-                    <!-- Slide 1: CVE Tracker -->
-                    <div class="rotating-slide" data-index="1"
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; pointer-events: none; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem;">
-                        <h1
-                            style="font-size: clamp(1.8rem, 3vw, 2.8rem); font-weight: 800; line-height: 1.2; margin: 0; max-width: 1000px;">
-                            Real-Time<br>
-                            <span
-                                style="background: linear-gradient(135deg, #FF3D3D, #cc2929); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">CVE
-                                Alerts</span>
-                        </h1>
-                        <p style="font-size: 1.1rem; color: #a3a3a3; margin: 0; max-width: 600px; line-height: 1.5;">
-                            Instant alerts on the latest vulnerabilities and exploits.
-                        </p>
-                        <a href="/cve-tracker.html"
-                            style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: rgba(255, 61, 61, 0.1); border: 1px solid rgba(255, 61, 61, 0.3); color: #FF3D3D; text-decoration: none; border-radius: 50px; font-weight: 600; font-size: 0.9rem; transition: all 0.3s ease;">
-                            View CVEs <i class="fas fa-arrow-right"></i>
-                        </a>
+                    <!-- Navigation Dots -->
+                    <div class="feature-nav"
+                        style="display: flex; justify-content: center; gap: 0.5rem; margin-top: 1.5rem;" role="tablist"
+                        aria-label="Feature navigation">
+                        <button class="nav-dot active" data-index="0" aria-label="Threat Intelligence"
+                            aria-selected="true" role="tab"
+                            style="width: 10px; height: 10px; border-radius: 50%; border: none; background: #00d9ff; cursor: pointer; transition: all 0.3s ease; opacity: 1;"></button>
+                        <button class="nav-dot" data-index="1" aria-label="CVE Tracker" aria-selected="false" role="tab"
+                            style="width: 10px; height: 10px; border-radius: 50%; border: none; background: #555; cursor: pointer; transition: all 0.3s ease; opacity: 0.5;"></button>
+                        <button class="nav-dot" data-index="2" aria-label="Ransomware Monitor" aria-selected="false"
+                            role="tab"
+                            style="width: 10px; height: 10px; border-radius: 50%; border: none; background: #555; cursor: pointer; transition: all 0.3s ease; opacity: 0.5;"></button>
+                        <button class="nav-dot" data-index="3" aria-label="Security Guides" aria-selected="false"
+                            role="tab"
+                            style="width: 10px; height: 10px; border-radius: 50%; border: none; background: #555; cursor: pointer; transition: all 0.3s ease; opacity: 0.5;"></button>
+                        <button class="nav-dot" data-index="4" aria-label="n8n Workflows" aria-selected="false"
+                            role="tab"
+                            style="width: 10px; height: 10px; border-radius: 50%; border: none; background: #555; cursor: pointer; transition: all 0.3s ease; opacity: 0.5;"></button>
+                        <button class="nav-dot" data-index="5" aria-label="Tool Comparisons" aria-selected="false"
+                            role="tab"
+                            style="width: 10px; height: 10px; border-radius: 50%; border: none; background: #555; cursor: pointer; transition: all 0.3s ease; opacity: 0.5;"></button>
+                        <button class="nav-dot" data-index="6" aria-label="News & Articles" aria-selected="false"
+                            role="tab"
+                            style="width: 10px; height: 10px; border-radius: 50%; border: none; background: #555; cursor: pointer; transition: all 0.3s ease; opacity: 0.5;"></button>
                     </div>
-
-                    <!-- Slide 2: Ransomware Tracker -->
-                    <div class="rotating-slide" data-index="2"
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; pointer-events: none; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem;">
-                        <h1
-                            style="font-size: clamp(1.8rem, 3vw, 2.8rem); font-weight: 800; line-height: 1.2; margin: 0; max-width: 1000px;">
-                            Global Ransomware<br>
-                            <span
-                                style="background: linear-gradient(135deg, #8b5cf6, #6d28d9); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Monitor</span>
-                        </h1>
-                        <p style="font-size: 1.1rem; color: #a3a3a3; margin: 0; max-width: 600px; line-height: 1.5;">
-                            Track active groups and victim data in real-time.
-                        </p>
-                        <a href="/ransomware-tracker.html"
-                            style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: rgba(139, 92, 246, 0.1); border: 1px solid rgba(139, 92, 246, 0.3); color: #8b5cf6; text-decoration: none; border-radius: 50px; font-weight: 600; font-size: 0.9rem; transition: all 0.3s ease;">
-                            Track Groups <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-
-                    <!-- Slide 3: Security Guides -->
-                    <div class="rotating-slide" data-index="3"
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; pointer-events: none; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem;">
-                        <h1
-                            style="font-size: clamp(1.8rem, 3vw, 2.8rem); font-weight: 800; line-height: 1.2; margin: 0; max-width: 1000px;">
-                            Security Guides<br>
-                            <span
-                                style="background: linear-gradient(135deg, #10b981, #059669); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">&
-                                Frameworks</span>
-                        </h1>
-                        <p style="font-size: 1.1rem; color: #a3a3a3; margin: 0; max-width: 600px; line-height: 1.5;">
-                            Master cybersecurity with expert-led frameworks.
-                        </p>
-                        <a href="/guides/"
-                            style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.3); color: #10b981; text-decoration: none; border-radius: 50px; font-weight: 600; font-size: 0.9rem; transition: all 0.3s ease;">
-                            Start Learning <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-
-                    <!-- Slide 4: n8n Workflows -->
-                    <div class="rotating-slide" data-index="4"
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; pointer-events: none; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem;">
-                        <h1
-                            style="font-size: clamp(1.8rem, 3vw, 2.8rem); font-weight: 800; line-height: 1.2; margin: 0; max-width: 1000px;">
-                            Free n8n<br>
-                            <span
-                                style="background: linear-gradient(135deg, #FF6B35, #f97316); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Security
-                                Workflows</span>
-                        </h1>
-                        <p style="font-size: 1.1rem; color: #a3a3a3; margin: 0; max-width: 600px; line-height: 1.5;">
-                            Automate your SOC with free, ready-to-use templates.
-                        </p>
-                        <a href="/workflows/"
-                            style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: rgba(255, 107, 53, 0.1); border: 1px solid rgba(255, 107, 53, 0.3); color: #FF6B35; text-decoration: none; border-radius: 50px; font-weight: 600; font-size: 0.9rem; transition: all 0.3s ease;">
-                            Automate Now <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-
-                    <!-- Slide 5: Comparisons -->
-                    <div class="rotating-slide" data-index="5"
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; pointer-events: none; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem;">
-                        <h1
-                            style="font-size: clamp(1.8rem, 3vw, 2.8rem); font-weight: 800; line-height: 1.2; margin: 0; max-width: 1000px;">
-                            Security Tool<br>
-                            <span
-                                style="background: linear-gradient(135deg, #f59e0b, #d97706); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Comparisons</span>
-                        </h1>
-                        <p style="font-size: 1.1rem; color: #a3a3a3; margin: 0; max-width: 600px; line-height: 1.5;">
-                            Unbiased, side-by-side reviews of top industry tools.
-                        </p>
-                        <a href="/comparisons/"
-                            style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: rgba(245, 158, 11, 0.1); border: 1px solid rgba(245, 158, 11, 0.3); color: #f59e0b; text-decoration: none; border-radius: 50px; font-weight: 600; font-size: 0.9rem; transition: all 0.3s ease;">
-                            Compare Tools <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-
-                    <!-- Slide 6: Articles -->
-                    <div class="rotating-slide" data-index="6"
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; pointer-events: none; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem;">
-                        <h1
-                            style="font-size: clamp(1.8rem, 3vw, 2.8rem); font-weight: 800; line-height: 1.2; margin: 0; max-width: 1000px;">
-                            Cyber Security<br>
-                            <span
-                                style="background: linear-gradient(135deg, #ec4899, #db2777); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">News
-                                Updates</span>
-                        </h1>
-                        <p style="font-size: 1.1rem; color: #a3a3a3; margin: 0; max-width: 600px; line-height: 1.5;">
-                            Breaking updates and analysis on the latest threats.
-                        </p>
-                        <a href="/articles.html"
-                            style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: rgba(236, 72, 153, 0.1); border: 1px solid rgba(236, 72, 153, 0.3); color: #ec4899; text-decoration: none; border-radius: 50px; font-weight: 600; font-size: 0.9rem; transition: all 0.3s ease;">
-                            Read Articles <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-
-                    <script>
-                        // Rotating headline animation
-                        (function () {
-                            let currentIndex = 0;
-                            const slides = document.querySelectorAll('.rotating-slide');
-                            const totalSlides = slides.length;
-
-                            function rotateSlide() {
-                                // Hide current
-                                slides[currentIndex].style.opacity = '0';
-                                slides[currentIndex].style.transform = 'translateY(-20px)';
-                                slides[currentIndex].style.pointerEvents = 'none'; // Disable pointer events when hidden
-                                slides[currentIndex].classList.remove('active');
-
-                                // Move to next
-                                currentIndex = (currentIndex + 1) % totalSlides;
-
-                                // Show next
-                                setTimeout(() => {
-                                    slides[currentIndex].style.opacity = '1';
-                                    slides[currentIndex].style.transform = 'translateY(0)';
-                                    slides[currentIndex].style.pointerEvents = 'auto'; // Enable pointer events when visible
-                                    slides[currentIndex].classList.add('active');
-                                }, 200);
-                            }
-
-                            // Start rotation after page loads
-                            setInterval(rotateSlide, 4000); // 4 seconds interval for better readability
-                        })();
-                    </script>
-
-                    <!-- Subheadline & CTAs removed (integrated into rotation) -->
-
                 </div>
+
+                <!-- Feature Carousel Script -->
+                <script>
+                    (function () {
+                        let currentIndex = 0;
+                        let autoRotateInterval;
+                        const slides = document.querySelectorAll('.feature-slide');
+                        const dots = document.querySelectorAll('.nav-dot');
+                        const totalSlides = slides.length;
+                        const accentColors = ['#00d9ff', '#FF3D3D', '#8b5cf6', '#10b981', '#FF6B35', '#f59e0b', '#ec4899'];
+
+                        function showSlide(index) {
+                            // Hide all slides
+                            slides.forEach((slide, i) => {
+                                slide.style.opacity = '0';
+                                slide.style.transform = 'translateY(30px)';
+                                slide.style.pointerEvents = 'none';
+                                slide.classList.remove('active');
+                            });
+
+                            // Update dots
+                            dots.forEach((dot, i) => {
+                                dot.classList.remove('active');
+                                dot.setAttribute('aria-selected', 'false');
+                                dot.style.background = '#555';
+                                dot.style.opacity = '0.5';
+                            });
+
+                            // Show current slide
+                            slides[index].style.opacity = '1';
+                            slides[index].style.transform = 'translateY(0)';
+                            slides[index].style.pointerEvents = 'auto';
+                            slides[index].classList.add('active');
+
+                            // Highlight current dot with accent color
+                            dots[index].classList.add('active');
+                            dots[index].setAttribute('aria-selected', 'true');
+                            dots[index].style.background = accentColors[index];
+                            dots[index].style.opacity = '1';
+
+                            // Update glow border color
+                            document.documentElement.style.setProperty('--current-accent', accentColors[index]);
+                        }
+
+                        function nextSlide() {
+                            currentIndex = (currentIndex + 1) % totalSlides;
+                            showSlide(currentIndex);
+                        }
+
+                        function startAutoRotate() {
+                            autoRotateInterval = setInterval(nextSlide, 5000);
+                        }
+
+                        function resetAutoRotate() {
+                            clearInterval(autoRotateInterval);
+                            startAutoRotate();
+                        }
+
+                        // Dot click handlers
+                        dots.forEach((dot, index) => {
+                            dot.addEventListener('click', () => {
+                                currentIndex = index;
+                                showSlide(currentIndex);
+                                resetAutoRotate();
+                            });
+                        });
+
+                        // Start rotation
+                        startAutoRotate();
+                    })();
+                </script>
+
+                <!-- Shimmer Animation CSS -->
+                <style>
+                    @keyframes shimmer {
+                        0% {
+                            background-position: 0% center;
+                        }
+
+                        100% {
+                            background-position: 200% center;
+                        }
+                    }
+
+                    @keyframes rotate-glow {
+                        0% {
+                            transform: rotate(0deg);
+                        }
+
+                        100% {
+                            transform: rotate(360deg);
+                        }
+                    }
+
+                    .feature-slide h2 {
+                        text-shadow: 0 0 30px currentColor;
+                    }
+
+                    .nav-dot:hover {
+                        transform: scale(1.3);
+                        opacity: 0.8 !important;
+                    }
+
+                    .feature-cta:focus {
+                        outline: 2px solid currentColor;
+                        outline-offset: 2px;
+                    }
+                </style>
 
                 <!-- Stats Bar -->
                 <div class="hero-stats-bar"
