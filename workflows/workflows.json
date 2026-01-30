@@ -4,22 +4,19 @@
         "title": "CVE to Slack Alerts",
         "category": "Threat Intelligence",
         "description": "Automatically fetch new CVEs from NVD/CISA KEV and send formatted alerts to Slack with severity and affected products.",
+        "goal": "Get real-time CVE alerts in your Slack channel so your security team never misses critical vulnerabilities.",
         "features": [
             "NVD API integration",
             "CISA KEV sync",
             "Severity filtering",
             "Slack rich messages"
         ],
-        "downloads": 847,
-        "rating": 4.9,
         "complexity": "Beginner",
         "estimatedTime": "10 min",
         "author": "TheHGTech",
         "date": "Jan 30, 2026",
-        "version": "1.2.0",
-        "nodes": 8,
-        "badge": "Popular",
-        "featured": true,
+        "version": "1.0.0",
+        "nodes": 6,
         "tags": [
             "cve",
             "slack",
@@ -29,68 +26,76 @@
             "vulnerability"
         ],
         "requirements": [
-            "Slack webhook",
-            "Optional: NVD API key"
+            "n8n instance (self-hosted or cloud)",
+            "Slack Incoming Webhook URL",
+            "Optional: NVD API key for higher rate limits"
         ],
-        "image": "/images/workflows/cve-slack-alerts.png"
+        "dataSources": [
+            "NVD (National Vulnerability Database)",
+            "CISA KEV Catalog"
+        ],
+        "outputs": [
+            "Slack channel messages"
+        ]
     },
     {
         "id": "phishing-email-triage",
         "title": "Phishing Email Triage",
         "category": "Incident Response",
-        "description": "Automated phishing analysis workflow: extract IOCs, check reputation via VirusTotal, and create Jira tickets for confirmed threats.",
+        "description": "Automated phishing analysis workflow: extract IOCs, check reputation via VirusTotal, and create tickets for confirmed threats.",
+        "goal": "Automate the initial triage of reported phishing emails to reduce analyst workload and speed up response.",
         "features": [
             "Email parsing",
             "IOC extraction",
             "VirusTotal lookup",
-            "Auto ticket creation"
+            "Ticket creation"
         ],
-        "downloads": 623,
-        "rating": 4.8,
         "complexity": "Intermediate",
         "estimatedTime": "20 min",
         "author": "TheHGTech",
         "date": "Jan 30, 2026",
         "version": "1.0.0",
-        "nodes": 12,
-        "badge": "New",
-        "featured": true,
+        "nodes": 10,
         "tags": [
             "phishing",
             "email",
             "virustotal",
-            "jira",
             "ioc",
             "incident-response"
         ],
         "requirements": [
-            "VirusTotal API key",
-            "Jira credentials",
-            "Email trigger"
+            "n8n instance",
+            "VirusTotal API key (free tier works)",
+            "Email inbox or trigger",
+            "Optional: Jira/ServiceNow for ticketing"
         ],
-        "image": "/images/workflows/phishing-email-triage.png"
+        "dataSources": [
+            "Email inbox",
+            "VirusTotal API"
+        ],
+        "outputs": [
+            "Enriched alert",
+            "Ticket creation"
+        ]
     },
     {
         "id": "ssl-certificate-monitor",
         "title": "SSL Certificate Expiry Monitor",
         "category": "Monitoring",
         "description": "Monitor your domains for SSL certificate expiry and get alerts before they expire. Supports bulk domain checking.",
+        "goal": "Prevent SSL certificate expiry incidents by getting advance notifications before certificates expire.",
         "features": [
             "Bulk domain check",
-            "Expiry alerts",
+            "Configurable alert threshold",
             "Slack/Email notifications",
-            "Scheduled runs"
+            "Scheduled daily runs"
         ],
-        "downloads": 512,
-        "rating": 4.7,
         "complexity": "Beginner",
         "estimatedTime": "15 min",
         "author": "TheHGTech",
         "date": "Jan 30, 2026",
-        "version": "1.1.0",
-        "nodes": 6,
-        "badge": null,
-        "featured": false,
+        "version": "1.0.0",
+        "nodes": 5,
         "tags": [
             "ssl",
             "certificate",
@@ -99,112 +104,131 @@
             "domains"
         ],
         "requirements": [
+            "n8n instance",
+            "List of domains to monitor",
             "Slack webhook or email"
         ],
-        "image": "/images/workflows/ssl-certificate-monitor.png"
+        "dataSources": [
+            "SSL certificate check (built-in)"
+        ],
+        "outputs": [
+            "Expiry alerts to Slack/Email"
+        ]
     },
     {
         "id": "shodan-asset-discovery",
         "title": "Shodan Asset Discovery",
         "category": "Threat Intelligence",
-        "description": "Discover exposed assets on your IP ranges using Shodan API. Get weekly reports of new exposures and vulnerabilities.",
+        "description": "Discover exposed assets on your IP ranges using Shodan API. Get weekly reports of new exposures.",
+        "goal": "Continuously monitor your external attack surface and get notified about newly exposed services.",
         "features": [
             "IP range scanning",
-            "Vulnerability detection",
-            "Weekly reports",
-            "Change detection"
+            "Open port detection",
+            "Weekly summary reports",
+            "New exposure alerts"
         ],
-        "downloads": 389,
-        "rating": 4.6,
         "complexity": "Intermediate",
         "estimatedTime": "25 min",
         "author": "TheHGTech",
         "date": "Jan 30, 2026",
         "version": "1.0.0",
-        "nodes": 10,
-        "badge": null,
-        "featured": false,
+        "nodes": 8,
         "tags": [
             "shodan",
             "asset-discovery",
             "exposure",
-            "vulnerability",
+            "attack-surface",
             "recon"
         ],
         "requirements": [
-            "Shodan API key (paid)",
+            "n8n instance",
+            "Shodan API key (membership required)",
+            "Your IP ranges or domains",
             "Slack webhook"
         ],
-        "image": "/images/workflows/shodan-asset-discovery.png"
+        "dataSources": [
+            "Shodan API"
+        ],
+        "outputs": [
+            "Weekly exposure report",
+            "New asset alerts"
+        ]
     },
     {
         "id": "github-secret-scanner",
         "title": "GitHub Secret Leak Scanner",
         "category": "SOC Automation",
-        "description": "Monitor your GitHub organization for accidentally committed secrets, API keys, and credentials. Auto-create incidents.",
+        "description": "Monitor your GitHub organization for accidentally committed secrets, API keys, and credentials.",
+        "goal": "Detect leaked secrets in code repositories before attackers find them.",
         "features": [
-            "Real-time monitoring",
-            "Pattern matching",
-            "Auto-revocation alerts",
-            "Slack incidents"
+            "Organization monitoring",
+            "Regex pattern matching",
+            "Immediate alerts",
+            "Commit details included"
         ],
-        "downloads": 445,
-        "rating": 4.8,
         "complexity": "Advanced",
         "estimatedTime": "30 min",
         "author": "TheHGTech",
         "date": "Jan 30, 2026",
         "version": "1.0.0",
-        "nodes": 14,
-        "badge": "Pro",
-        "featured": false,
+        "nodes": 12,
         "tags": [
             "github",
             "secrets",
             "leaks",
             "scanning",
-            "devops",
-            "soc"
+            "devops"
         ],
         "requirements": [
-            "GitHub App/Token",
+            "n8n instance",
+            "GitHub Personal Access Token with repo scope",
             "Slack webhook"
         ],
-        "image": "/images/workflows/github-secret-scanner.png"
+        "dataSources": [
+            "GitHub API"
+        ],
+        "outputs": [
+            "Secret leak alerts with repo/file details"
+        ]
     },
     {
         "id": "threat-intel-aggregator",
         "title": "Threat Intel Feed Aggregator",
         "category": "Threat Intelligence",
-        "description": "Aggregate IOCs from multiple threat intel feeds (AlienVault, AbuseIPDB, etc.) into a unified format for your SIEM.",
+        "description": "Aggregate IOCs from multiple threat intel feeds into a unified format for your SIEM or security tools.",
+        "goal": "Centralize threat intelligence from multiple sources into a single, deduplicated feed for easier consumption.",
         "features": [
             "Multi-feed support",
             "IOC deduplication",
-            "SIEM-ready output",
-            "Daily digest"
+            "STIX/CSV output",
+            "Daily automated runs"
         ],
-        "downloads": 567,
-        "rating": 4.9,
         "complexity": "Intermediate",
         "estimatedTime": "35 min",
         "author": "TheHGTech",
         "date": "Jan 30, 2026",
-        "version": "2.0.0",
-        "nodes": 16,
-        "badge": "Popular",
-        "featured": false,
+        "version": "1.0.0",
+        "nodes": 14,
         "tags": [
             "threat-intel",
             "ioc",
             "siem",
             "alienvault",
-            "abuseipdb",
             "aggregation"
         ],
         "requirements": [
-            "Various API keys",
-            "SIEM webhook/API"
+            "n8n instance",
+            "AlienVault OTX API key (free)",
+            "Optional: AbuseIPDB API key",
+            "SIEM webhook or file output"
         ],
-        "image": "/images/workflows/threat-intel-aggregator.png"
+        "dataSources": [
+            "AlienVault OTX",
+            "AbuseIPDB",
+            "URLhaus"
+        ],
+        "outputs": [
+            "Unified IOC feed (JSON/CSV)"
+        ]
     }
 ]

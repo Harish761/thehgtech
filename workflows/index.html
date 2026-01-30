@@ -984,12 +984,12 @@
                     <div class="hero-stat-label">Workflows</div>
                 </div>
                 <div class="hero-stat">
-                    <div class="hero-stat-value" id="totalDownloads">3.3K</div>
-                    <div class="hero-stat-label">Downloads</div>
-                </div>
-                <div class="hero-stat">
                     <div class="hero-stat-value">4</div>
                     <div class="hero-stat-label">Categories</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-value">Free</div>
+                    <div class="hero-stat-label">Forever</div>
                 </div>
             </div>
         </div>
@@ -1079,7 +1079,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="card-stats">
-                                <span class="card-stat"><i class="fas fa-download"></i> ${w.downloads}</span>
+                                <span class="card-stat"><i class="fas fa-layer-group"></i> ${w.complexity}</span>
                                 <span class="card-stat nodes"><i class="fas fa-project-diagram"></i> ${w.nodes} nodes</span>
                                 <span class="card-stat time"><i class="fas fa-clock"></i> ${w.estimatedTime}</span>
                             </div>
@@ -1129,10 +1129,7 @@
         }
 
         function updateStats(workflows) {
-            const totalDownloads = workflows.reduce((sum, w) => sum + w.downloads, 0);
             document.getElementById('totalWorkflows').textContent = workflows.length;
-            document.getElementById('totalDownloads').textContent =
-                totalDownloads >= 1000 ? (totalDownloads / 1000).toFixed(1) + 'K' : totalDownloads;
         }
 
         // Initialize
