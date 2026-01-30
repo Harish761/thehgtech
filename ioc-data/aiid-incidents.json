@@ -1479,44 +1479,12 @@
       "date": "2025-11-02",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-124",
-      "incident_id": 124,
-      "title": "Optum Algorithmic Health Risk Scores Reportedly Underestimated Black Patients' Needs",
-      "date": "2025-11-01",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-465",
-      "incident_id": 465,
-      "title": "Generative Models Reportedly Trained on Dataset Containing Private Medical Photos",
-      "date": "2025-11-01",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-700",
-      "incident_id": 700,
-      "title": "Meta's AI Chatbots Are Reportedly Entering Online Support Communities Uninvited",
-      "date": "2025-11-01",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-708",
-      "incident_id": 708,
-      "title": "Reportedly Faulty AI Transcription Threatens Integrity of Genoa Bribery Probe",
-      "date": "2025-11-01",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 189,
+    "total": 185,
     "last7Days": 5,
     "last30Days": 31
   },
-  "lastUpdated": "2026-01-30T22:25:04.610172+05:30"
+  "lastUpdated": "2026-01-31T00:39:08.022666+05:30"
 }
