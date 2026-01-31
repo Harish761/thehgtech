@@ -5,110 +5,88 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Jan 30 2026",
-            "headline": "White House Revokes Software Security Rules—Impacts Federal Agencies",
-            "title": "White House Revokes Biden-Era Software Security Memorandums for Federal Agencies",
-            "content": "The White House has revoked two software security memorandums from the Biden administration, citing their burdensome nature. These memorandums provided guidelines for federal agencies on software security practices. Despite the revocation, some resources from these documents remain available to government organizations. The move is part of a broader effort to streamline regulatory requirements while maintaining essential security measures. Federal agencies must now reassess their compliance strategies to align with this policy change. The decision highlights ongoing challenges in balancing regulatory demands with operational efficiency in cybersecurity.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/white-house-scraps-burdensome-software-security-rules/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 30 2026",
-            "headline": "Android RAT Campaign Exploits Hugging Face Infrastructure",
-            "title": "Hugging Face Hosting Abused in Android RAT Malware Campaign",
-            "content": "A large-scale Android malware campaign is exploiting Hugging Face’s public hosting infrastructure to distribute a remote access trojan (RAT). The attack employs social engineering tactics, staged payload delivery, and abuse of Android permissions to maintain persistence on infected devices. This campaign highlights the risks associated with public infrastructure misuse by threat actors. Security professionals should be aware of potential vulnerabilities in public hosting services that could be leveraged for malicious purposes. Organizations using Android devices should implement robust security measures to prevent infection and detect unauthorized access.",
+            "headline": "Ivanti Patches Critical EPMM Flaws—Actively Exploited",
+            "title": "Ivanti Releases Patches for Critical EPMM Vulnerabilities Under Attack",
+            "content": "Ivanti has issued crucial patches for two remote code execution vulnerabilities in its Endpoint Manager Mobile (EPMM) product, already being exploited in the wild. The vulnerabilities, affecting specific versions of EPMM, allow attackers to execute arbitrary code remotely, posing a severe risk to enterprise environments. Ivanti confirmed that a limited number of customers have already been targeted, underscoring the urgency for all users to update immediately. This development highlights the ongoing threat landscape where critical infrastructure remains a prime target for cybercriminals. Organizations using EPMM should prioritize deploying these patches to mitigate potential exploits.",
             "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4124958/hugging-face-infra-abused-to-spread-android-rat-in-a-large-scale-malware-campaign.html",
+            "sourceUrl": "https://www.csoonline.com/article/4125196/ivanti-patches-two-actively-exploited-critical-vulnerabilities-in-epmm.html",
             "relatedResources": [
                 {
-                    "label": "MITRE ATT&CK Mapping",
-                    "url": "/guides/mitre-attack-mapping.html",
-                    "icon": "fa-map"
+                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
+                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
+                    "icon": "fa-shield-virus"
                 }
             ]
         },
         {
             "date": "Jan 30 2026",
-            "headline": "China-Linked UAT-8099 Targets Asian IIS Servers with Malware",
-            "title": "UAT-8099 Deploys BadIIS SEO Malware on Asian IIS Servers",
-            "content": "Cisco Talos researchers have uncovered a cyber campaign by the China-linked threat actor UAT-8099, targeting vulnerable Internet Information Services (IIS) servers across Asia. The campaign, active from late 2025 to early 2026, uses BadIIS SEO malware to compromise server security. This malware is designed to manipulate search engine optimization on infected servers, potentially affecting web traffic and visibility. Organizations running IIS servers in Asia should prioritize patching and security hardening to mitigate this threat. The incident underscores the persistent threat posed by state-linked actors in the region.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/01/china-linked-uat-8099-targets-iis.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 30 2026",
-            "headline": "Windows 11 Update Fixes Critical Boot and Sign-In Issues",
-            "title": "Microsoft Releases KB5074105 Update for Windows 11 Boot and Activation Fixes",
-            "content": "Microsoft has issued the KB5074105 preview cumulative update for Windows 11, addressing critical issues related to boot, sign-in, and activation processes. The update includes 32 changes aimed at improving system stability and user experience. Users experiencing these issues should apply the update promptly to ensure optimal system performance. This release is part of Microsoft&#x27;s ongoing commitment to enhance the reliability of its latest operating system. IT administrators should test the update in their environments to confirm compatibility and effectiveness.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5074105-update-fixes-boot-sign-in-and-activation-issues/",
-            "relatedResources": [
-                {
-                    "label": "Active Directory Security",
-                    "url": "/guides/active-directory-security-hardening.html",
-                    "icon": "fa-sitemap"
-                }
-            ]
-        },
-        {
-            "date": "Jan 30 2026",
-            "headline": "TikTok Privacy Policy Sparks Immigration Status Concerns",
-            "title": "TikTok Adds Immigration Status to Privacy Policy Amid Controversy",
-            "content": "TikTok’s latest privacy policy update includes a mention of users&#x27; immigration status, sparking significant backlash. The update has raised concerns about privacy and data use, though TikTok claims the change aims to enhance personalized content delivery. This move reflects broader trends in data collection practices by social media platforms. Users are advised to review privacy settings and understand how their data might be used. The controversy highlights the delicate balance between personalization and privacy in digital services.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/01/tiktoks-privacy-update-mentions-immigration-status-heres-why",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 30 2026",
-            "headline": "Inside Cybercrime: Law Enforcement’s Fight Against Hackers",
-            "title": "Exploring Law Enforcement&#x27;s Role in Combating Cybercrime",
-            "content": "A new report delves into the complex world of cybercrime and the role of law enforcement in apprehending cybercriminals. The study examines the backgrounds and functions of individuals involved in cybercriminal activities. It highlights the increasing sophistication and diversification of cyber threats and the challenges faced by law enforcement agencies. As cybercrime evolves, so must the strategies and tools used to combat it. Professionals in the cybersecurity field should be aware of these dynamics to better protect against and respond to cyber threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/01/badges-bytes-and-blackmail.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 30 2026",
-            "headline": "AI-Powered Cybersecurity: America’s Edge in Global AI Race",
-            "title": "Cybersecurity as a Strategic Asset in the U.S. AI Competition",
-            "content": "In the global AI race, the U.S. is leveraging AI-powered cybersecurity as a strategic advantage against China&#x27;s aggressive data exploitation. The integration of artificial intelligence in cybersecurity efforts is essential to protect national interests and secure market leadership. This approach underscores the importance of cybersecurity in maintaining technological superiority. Industry leaders and policymakers must prioritize AI-driven security innovations to counteract international threats. The focus on cybersecurity highlights its role as a critical component in the broader AI strategy.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/ai-race-china-us-cloud-cybersecurity-trust-security-op-ed/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 30 2026",
-            "headline": "ISC Stormcast Reports January Security Trends—InfoCON Status Green",
-            "title": "ISC Stormcast Highlights January 2026 Cybersecurity Trends and Threat Landscape",
-            "content": "The SANS Internet Storm Center&#x27;s latest Stormcast podcast for January 30, 2026, provides an overview of the current cybersecurity landscape, maintaining an InfoCON status of green. This indicates a low level of threat activity globally, with no immediate widespread threats detected. The podcast covers recent security incidents, emerging vulnerabilities, and best practices for maintaining robust security postures. Security professionals are advised to remain vigilant, keeping systems updated and monitoring for any unusual activity. The green status reflects a stable environment but underscores the importance of proactive security measures.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32666",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 30 2026",
-            "headline": "Chinese APTs Deploy High-End Malware—Asian Orgs Targeted",
-            "title": "Chinese APT Groups Intensify Cyber Attacks on Asian Organizations with Sophisticated Malware",
-            "content": "Advanced persistent threat (APT) groups from China have escalated their cyber attacks on Asian organizations, utilizing advanced malware to compromise networks and exfiltrate sensitive data. These sophisticated cyber weapons are part of a broader trend of increasing threats in the region, targeting sectors such as finance, government, and technology. The deployment of these high-end tools underscores the persistent risk faced by organizations operating in Asia. Security teams in affected regions should enhance monitoring and defenses, focusing on detecting and mitigating APT activities. This development highlights the need for international cooperation to address rising cyber threats.",
+            "headline": "Agentic AI—2026&#x27;s Emerging Cybersecurity Challenge",
+            "title": "Agentic AI Predicted as 2026&#x27;s Key Cybersecurity Threat",
+            "content": "In a survey conducted by Dark Reading, industry professionals identified agentic AI attacks as a major emerging cybersecurity threat for 2026. This form of AI, capable of autonomous decision-making, poses unique challenges to traditional security frameworks. The survey also highlighted concerns about advanced deepfake threats and the growing importance of cybersecurity at the board level. As organizations increasingly adopt AI technologies, the attack surface expands, necessitating new defense strategies. Security teams are urged to stay informed about AI developments and integrate AI-specific protections into their security postures.",
             "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/chinese-apts-asian-orgs-high-end-malware",
+            "sourceUrl": "https://www.darkreading.com/threat-intelligence/2026-agentic-ai-attack-surface-poster-child",
             "relatedResources": []
         },
         {
             "date": "Jan 30 2026",
-            "headline": "Windows 11 Boot Failures Linked to 2025 Update Issues",
-            "title": "Microsoft Identifies Root Cause of Windows 11 Boot Failures in December 2025 Update",
-            "content": "Microsoft has traced recent Windows 11 boot failures to issues stemming from the December 2025 security update. The failed update attempts left systems in an &quot;improper state,&quot; causing subsequent January 2026 updates to exacerbate the problem. Affected users report being unable to boot their systems, impacting both personal and enterprise environments. Microsoft advises users to apply the latest patches and follow recovery instructions to restore system functionality. This incident highlights the critical importance of thorough testing and monitoring of update deployments, particularly in environments with complex dependencies.",
+            "headline": "2026 Cybersecurity Risks—A New Reality Check",
+            "title": "Emerging Cybersecurity Risks for 2026 Demand Strategic Planning",
+            "content": "The cybersecurity landscape for 2026 presents a complex array of risks that security teams must address proactively. Dark Reading outlines a diverse set of emerging threats, from evolving attack vectors to the integration of new technologies in enterprise environments. As organizations strive to balance innovation with security, understanding these risks is crucial to avoid costly breaches. Security professionals should focus on comprehensive risk assessments and adaptive security measures to safeguard their networks. Staying ahead of these trends will be vital for maintaining robust security postures in the coming year.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/threat-intelligence/cyber-expectations-2026-grab-bag-risk",
+            "relatedResources": [
+                {
+                    "label": "Third-Party Risk Management",
+                    "url": "/guides/third-party-risk-management.html",
+                    "icon": "fa-handshake"
+                }
+            ]
+        },
+        {
+            "date": "Jan 30 2026",
+            "headline": "Tenable Enhances AI Governance Amid Shadow AI Concerns",
+            "title": "Tenable Introduces AI Exposure Add-On to Manage Shadow AI Risks",
+            "content": "Tenable has launched the Tenable One AI Exposure add-on to address the growing challenge of shadow AI within organizations. This tool helps identify unauthorized AI deployments and ensures compliance with approved AI tools and policies. As AI technologies proliferate, shadow AI—AI systems deployed without IT oversight—presents significant security and governance risks. Tenable&#x27;s solution aims to provide visibility and control over these unsanctioned systems, reducing potential data exposure and compliance violations. Organizations are encouraged to integrate such tools to maintain effective AI governance and risk management.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cyber-risk/tenable-tackles-ai-governance-shadow-ai-risks-data-exposure",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 30 2026",
+            "headline": "Amutable Plans Linux Security Revamp—Details Sparse",
+            "title": "Berlin&#x27;s Amutable Aims to Overhaul Linux Security Landscape",
+            "content": "Berlin-based startup Amutable has emerged from stealth mode, announcing plans to revolutionize Linux security. While specific details remain under wraps, the company has captured attention with its bold claims of addressing pervasive Linux vulnerabilities and enhancing system resilience against hacking threats. The announcement comes at a time when Linux systems, widely used in enterprise environments, face increasing targeted attacks. Security professionals are advised to monitor Amutable&#x27;s developments closely, as their solutions could significantly impact Linux security practices. The tech community awaits further information on Amutable&#x27;s approach and potential contributions to the field.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4125145/startup-amutable-plotting-linux-security-overhaul-to-counter-hacking-threats.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 30 2026",
+            "headline": "Crypto Wallets Hit $158B Illicit Funds Record in 2025",
+            "title": "Illicit Cryptocurrency Transactions Surge to $158 Billion in 2025",
+            "content": "Cryptocurrency wallets received a record $158 billion in illicit funds in 2025, reversing a downward trend from previous years. This surge, reported by BleepingComputer, highlights the persistent challenges in regulating and securing digital currency transactions. The increase from $64 billion in 2024 underscores the effectiveness of cybercriminals in exploiting vulnerabilities within the cryptocurrency ecosystem. Financial institutions and regulators are urged to enhance monitoring and compliance measures to combat this growing threat. The data reflects the need for continuous advancements in blockchain security and fraud detection technologies.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-links-windows-11-boot-failures-to-failed-december-2025-update/",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/crypto-wallets-received-a-record-158-billion-in-illicit-funds-last-year/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Zero-Day Detection Guide",
+                    "url": "/guides/zero-day-detection.html",
+                    "icon": "fa-exclamation-triangle"
+                }
+            ]
+        },
+        {
+            "date": "Jan 30 2026",
+            "headline": "DOJ Seizes Piracy Sites; Italy Dismantles IPTV Operation",
+            "title": "U.S. and Italian Authorities Crack Down on Online Piracy Networks",
+            "content": "The Department of Justice (DOJ) has seized three U.S.-registered domains involved in distributing copyrighted content, while Italian police dismantled a significant illegal IPTV operation. These actions, targeting networks with millions of annual visits, mark a concerted effort by international authorities to combat digital piracy. The crackdown reflects ongoing challenges in protecting intellectual property rights in the digital age. Organizations involved in content distribution are encouraged to strengthen their digital rights management and collaborate with law enforcement to deter piracy. This operation underscores the importance of global cooperation in addressing cybercrime.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/doj-seizes-piracy-sites-zamunda-arenabg-zelka/",
             "relatedResources": [
                 {
                     "label": "Active Directory Security",
@@ -136,12 +114,21 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
+            "date": "Jan 31 2026",
+            "headline": "Silicon Valley&#x27;s Buzziest Robot Brains—A Stripe Veteran&#x27;s New Venture",
+            "title": "Physical Intelligence Aims to Revolutionize Robotics with Advanced AI",
+            "content": "Lachy Groom, co-founder and former Stripe executive, is spearheading a new initiative in robotics with Physical Intelligence, a company focused on developing cutting-edge AI for robot brains. Groom collaborates with a team of seasoned experts who have been tackling the complexities of robotic intelligence for decades. The venture aims to capitalize on recent advancements in AI and robotics, promising to enhance the capabilities of autonomous systems. This initiative could significantly impact industries relying on automation, potentially transforming logistics, manufacturing, and service sectors. Professionals in these fields should monitor developments closely, as breakthroughs could redefine operational efficiencies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/30/physical-intelligence-stripe-veteran-lachy-grooms-latest-bet-is-building-silicon-valleys-buzziest-robot-brains/",
+            "relatedResources": []
+        },
+        {
             "date": "Jan 30 2026",
-            "headline": "Travelers Leverages AI—10K Engineers Empowered Amid Job Shifts",
-            "title": "Travelers Insurance Boosts AI Use, Reduces Call Center Roles",
-            "content": "Travelers Insurance has announced a strategic initiative to integrate AI assistants for 10,000 of its engineers and data scientists, aiming to enhance productivity and innovation. This move follows a broader trend of AI adoption in the insurance sector, where automation is increasingly used to streamline operations and improve customer service. Despite this shift, Travelers emphasizes that its competitive edge remains rooted in human expertise rather than AI alone. The deployment of AI tools is expected to reduce the need for traditional call center roles, signaling a transformation in workforce dynamics. Industry experts suggest that while AI can handle routine inquiries, complex customer interactions still require human intervention. Companies in similar sectors should evaluate how AI can complement rather than replace their existing workforce.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/travelers-ai-in-contact-centres-two-stage-innovation-strategy/",
+            "headline": "OpenClaw AI Exposes Security Flaws—1,800 Instances Leaked",
+            "title": "OpenClaw&#x27;s Popularity Highlights Critical Security Model Vulnerabilities",
+            "content": "OpenClaw, the open-source AI assistant formerly known as Clawdbot and Moltbot, has reached 180,000 GitHub stars, drawing significant attention. However, security researchers have identified over 1,800 exposed instances leaking sensitive API keys and chat logs. This vulnerability underscores the challenges of securing open-source AI tools, particularly as they gain widespread adoption. Developers and organizations using OpenClaw must reassess their security protocols to prevent unauthorized access and data breaches. The incident serves as a crucial reminder of the importance of robust security measures in the rapidly evolving AI landscape.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/security/openclaw-agentic-ai-security-risk-ciso-guide",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
@@ -152,100 +139,66 @@ const websiteContent = {
         },
         {
             "date": "Jan 30 2026",
-            "headline": "PepsiCo Innovates Factory Design—AI Transforms Production Lines",
-            "title": "PepsiCo Utilizes AI for Factory Layout and Operations Overhaul",
-            "content": "PepsiCo is exploring the potential of AI to revolutionize its factory design and production processes. By employing AI in areas where precision is critical and errors costly, PepsiCo aims to optimize factory layouts and streamline operations. This initiative reflects a growing trend among large corporations to leverage AI beyond traditional applications like email management. The use of AI in physical operations could lead to significant cost savings and efficiency improvements. As industries increasingly adopt AI for complex logistical challenges, PepsiCo&#x27;s approach may serve as a model for others looking to modernize their manufacturing processes. Stakeholders should consider the long-term benefits of integrating AI into their operational strategies.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/pepsico-is-using-ai-to-rethink-how-factories-are-designed-and-updated/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
+            "headline": "OpenClaw AI Assistants Build Their Own Social Network",
+            "title": "OpenClaw&#x27;s AI Assistants Launch Innovative Social Networking Platform",
+            "content": "OpenClaw, the AI assistant formerly known as Clawdbot and Moltbot, has introduced a new feature—AI assistants are now capable of creating their own social networks. This development leverages the viral nature of OpenClaw, allowing AI entities to interact and share information autonomously. The platform could revolutionize how AI systems communicate, potentially enhancing collaborative tasks and problem-solving capabilities. While this innovation opens new possibilities, it also raises questions about data privacy and security. Developers and users should remain vigilant and consider the implications of AI-driven social interactions.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/30/openclaws-ai-assistants-are-now-building-their-own-social-network/",
+            "relatedResources": []
         },
         {
             "date": "Jan 30 2026",
-            "headline": "China&#x27;s Hyperscalers Invest Billions—Agentic AI Fuels Commerce Race",
-            "title": "Chinese Tech Giants Focus on Agentic AI for Commercial Dominance",
-            "content": "China&#x27;s leading technology companies are heavily investing in agentic AI, which enables systems to autonomously perform complex, multi-step tasks. This strategic focus contrasts with Western firms prioritizing foundational models and cross-platform compatibility. The shift towards agentic AI is driven by its potential to transform commerce, making it a new battleground for tech supremacy. Chinese hyperscalers are betting billions on these advancements, aiming to gain a competitive edge in global markets. As the AI landscape evolves, businesses worldwide should monitor these developments to understand potential impacts on international trade and technology standards. The rise of agentic AI underscores the importance of innovation in maintaining technological leadership.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/china-hyperscalers-agentic-ai-commerce-battleground/",
+            "headline": "Google AI Tool Sinks Video Game Stocks—Project Genie Impact",
+            "title": "Video Game Stocks Tumble Following Google&#x27;s AI World-Generation Tool Launch",
+            "content": "The announcement of Google&#x27;s Project Genie, an AI tool for generating interactive gaming experiences, has resulted in a decline in stock prices for major video game companies such as Take-Two Interactive, Roblox, and Unity. Project Genie allows users to create immersive environments with AI, potentially disrupting traditional game development processes. The stock market&#x27;s reaction highlights the industry&#x27;s concerns about the competitive edge offered by AI-driven innovation. Gaming companies must now evaluate how to integrate AI technologies to maintain market relevance and capitalize on new opportunities presented by AI advancements.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/games/871348/google-project-genie-take-two-roblox-unity",
             "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 29 2026",
-            "headline": "AI Hype: Grok and Claude Code Stir Mixed Reactions",
-            "title": "AI Tools Grok and Claude Code Elicit Varied Industry Responses",
-            "content": "The AI landscape is witnessing a dichotomy of reactions as tools like Grok and Claude Code showcase both promising and controversial capabilities. Grok, known for generating adult content, and Claude Code, capable of tasks from web development to medical analysis, highlight the broad spectrum of AI applications. These developments have sparked concern among Gen Z and industry professionals about the ethical and practical implications of AI. The mixed reactions underscore the ongoing debate over AI&#x27;s role in society, balancing innovation with responsibility. As AI continues to evolve, stakeholders must navigate these complexities to harness its potential while mitigating risks.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2026/01/29/1131787/the-ai-hype-index-grok-makes-porn-claude-code-nails-your-job/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
                 {
                     "label": "React Analysis",
                     "url": "/articles/react2shell-cve-2025-55182-react-vulnerability.html",
                     "icon": "fa-file-alt"
-                },
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
                 }
             ]
-        },
-        {
-            "date": "Jan 29 2026",
-            "headline": "Google Project Genie—Create Worlds in 60 Seconds",
-            "title": "Google Launches Project Genie for Rapid Interactive World Creation",
-            "content": "Google has unveiled Project Genie, a groundbreaking tool that allows users to generate interactive worlds from a single photo or prompt in just 60 seconds. This innovative platform is available through Google&#x27;s AI Ultra subscription, highlighting the company&#x27;s push to democratize creative technology. Project Genie leverages advanced AI algorithms to transform simple inputs into complex virtual environments, offering new possibilities for gaming, education, and simulation. As AI tools become more accessible, developers and creators can explore novel ways to engage audiences and enhance user experiences. The introduction of Project Genie represents a significant step in the evolution of AI-driven content creation.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/google/2026/01/google-project-genie-lets-you-create-interactive-worlds-from-a-photo-or-prompt/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 29 2026",
-            "headline": "Microsoft Copilot AI—Usage Stats Amid Data Center Expansion",
-            "title": "Satya Nadella Confirms High Usage of Microsoft&#x27;s Copilot AI",
-            "content": "Microsoft CEO Satya Nadella has revealed substantial usage figures for the company&#x27;s Copilot AI, countering rumors of low adoption despite significant investments in data centers. The AI tool, integrated into Microsoft&#x27;s suite of productivity software, is designed to assist users by automating routine tasks and enhancing workflow efficiency. Nadella&#x27;s disclosure aims to reassure stakeholders of the AI&#x27;s value and justify the billions spent on infrastructure to support its deployment. As AI integration becomes a competitive differentiator, Microsoft underscores its commitment to leading in this space. Organizations considering AI adoption should evaluate Copilot&#x27;s capabilities to improve operational efficiency.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/29/satya-nadella-insists-people-are-using-microsofts-copilot-ai-a-lot/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 29 2026",
-            "headline": "SpaceX and xAI Merger Talks—IPO Strategy Unfolds",
-            "title": "Elon Musk Considers Merging SpaceX with xAI Ahead of IPO",
-            "content": "Elon Musk is reportedly exploring a merger between SpaceX and his AI venture, xAI, as SpaceX prepares for a potential IPO later this year. This strategic move, initially reported by Reuters, could align SpaceX&#x27;s ambitious data center plans with xAI&#x27;s technological capabilities, enhancing both companies&#x27; market positions. The merger discussions highlight Musk&#x27;s vision of integrating AI advancements with aerospace innovations to drive future growth. As the IPO approaches, stakeholders should monitor these developments, which could impact investment strategies and technological synergies across Musk&#x27;s enterprises. The potential merger underscores the growing convergence of AI and space exploration industries.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/870380/elon-musk-space-x-xai-merger",
-            "relatedResources": []
         },
         {
             "date": "Jan 30 2026",
-            "headline": "Google&#x27;s AI Debate Boosts Task Accuracy—&quot;Society of Thought&quot; Model",
-            "title": "Google&#x27;s &quot;Society of Thought&quot; AI Model Enhances Complex Task Accuracy",
-            "content": "Google&#x27;s latest study reveals that AI models simulating internal debates, termed &quot;society of thought,&quot; significantly enhance task accuracy. These advanced reasoning models mimic multi-agent discussions involving diverse perspectives, personality traits, and domain expertise. The research highlights substantial improvements in handling complex tasks, suggesting a promising direction for AI development. This approach could transform industries reliant on AI for decision-making, from healthcare to finance, by providing more reliable and nuanced outputs. As AI systems evolve, integrating diverse viewpoints within models may become a standard practice to boost performance and trustworthiness.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/ai-models-that-simulate-internal-debate-dramatically-improve-accuracy-on",
+            "headline": "Google&#x27;s Auto Browse AI—Struggles to Meet Expectations",
+            "title": "Google&#x27;s &#x27;Auto Browse&#x27; AI Agent Faces Challenges in User Experience",
+            "content": "Google&#x27;s Auto Browse AI agent, designed to automate online tasks such as shopping and travel planning, has not yet lived up to its potential. Users report mixed experiences, with the AI struggling to perform complex tasks seamlessly. Despite its promise, Auto Browse&#x27;s limitations highlight the ongoing challenges in developing intuitive AI solutions for everyday use. Google&#x27;s efforts to refine the tool will be crucial in determining its future success. Users and developers should stay informed about updates and improvements as Google addresses these initial shortcomings.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/google-chrome-auto-browse-hands-on/",
             "relatedResources": [
                 {
-                    "label": "Active Directory Security",
-                    "url": "/guides/active-directory-security-hardening.html",
-                    "icon": "fa-sitemap"
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
                 }
             ]
+        },
+        {
+            "date": "Jan 30 2026",
+            "headline": "Arcee&#x27;s Open Source AI Models—Trinity Large Unveiled",
+            "title": "Arcee Reveals Open Source Trinity Large Model for AI Development",
+            "content": "San Francisco-based AI lab Arcee has released the Trinity Large model, an open-source AI framework offering a rare glimpse into raw model intelligence. This release includes a 10T-checkpoint, providing developers and enterprises with unprecedented access to cutting-edge AI technology. Arcee&#x27;s commitment to open-source development sets it apart in the AI landscape, encouraging innovation and collaboration. The availability of such powerful models can accelerate AI research and application development across various industries. Stakeholders should consider leveraging these resources to enhance their AI capabilities and drive technological progress.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/arcees-u-s-made-open-source-trinity-large-and-10t-checkpoint-offer-rare-look",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 30 2026",
+            "headline": "AI Agents&#x27; Social Network—Moltbook&#x27;s Unconventional Platform",
+            "title": "Moltbook: OpenClaw&#x27;s AI Agents Create Their Own Social Network",
+            "content": "OpenClaw&#x27;s AI agents have launched Moltbook, a unique social network designed specifically for AI interactions. Formerly known as Clawdbot and Moltbot, OpenClaw&#x27;s latest evolution facilitates communication and collaboration among AI entities. This unconventional platform allows AI agents to share data and strategies, potentially enhancing their functionality and learning capabilities. While Moltbook presents exciting opportunities for AI development, it also raises concerns about privacy and security in AI communications. Developers and users should monitor this space closely to understand the implications of AI-driven social networking.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/871006/social-network-facebook-for-ai-agents-moltbook-moltbot-openclaw",
+            "relatedResources": []
         }
     ],
     "articles": {},
