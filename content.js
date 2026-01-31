@@ -4,90 +4,102 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Jan 30 2026",
-            "headline": "Ivanti Patches Critical EPMM Flaws—Actively Exploited",
-            "title": "Ivanti Releases Patches for Critical EPMM Vulnerabilities Under Attack",
-            "content": "Ivanti has issued crucial patches for two remote code execution vulnerabilities in its Endpoint Manager Mobile (EPMM) product, already being exploited in the wild. The vulnerabilities, affecting specific versions of EPMM, allow attackers to execute arbitrary code remotely, posing a severe risk to enterprise environments. Ivanti confirmed that a limited number of customers have already been targeted, underscoring the urgency for all users to update immediately. This development highlights the ongoing threat landscape where critical infrastructure remains a prime target for cybercriminals. Organizations using EPMM should prioritize deploying these patches to mitigate potential exploits.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4125196/ivanti-patches-two-actively-exploited-critical-vulnerabilities-in-epmm.html",
+            "date": "Jan 31 2026",
+            "headline": "Iran&#x27;s RedKitten Targets NGOs—Human Rights at Risk",
+            "title": "Iran-Linked RedKitten Cyber Campaign Targets Human Rights NGOs and Activists",
+            "content": "A Farsi-speaking threat actor, suspected to be aligned with Iranian state interests, is behind a new cyber campaign dubbed RedKitten. This operation targets non-governmental organizations and individuals documenting human rights abuses, as observed by HarfangLab in January 2026. The campaign employs sophisticated phishing techniques to compromise email accounts and steal sensitive information. Human rights activists and NGOs are at significant risk, facing potential exposure of confidential communications and data. This trend highlights the growing use of cyber tools by state actors to suppress dissent and monitor political adversaries. Security professionals working with NGOs should enhance their email security and conduct regular threat assessments.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/01/iran-linked-redkitten-cyber-campaign.html",
             "relatedResources": [
                 {
-                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
-                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
-                    "icon": "fa-shield-virus"
+                    "label": "Phishing & Security Awareness",
+                    "url": "/guides/phishing-simulation-security-awareness.html",
+                    "icon": "fa-fish"
+                }
+            ]
+        },
+        {
+            "date": "Jan 31 2026",
+            "headline": "FBI Shuts Down RAMP—Ransomware Forum Users Exposed",
+            "title": "FBI Takes Notorious RAMP Ransomware Forum Offline",
+            "content": "The FBI has successfully seized control of RAMP, a notorious cybercrime forum known for facilitating ransomware discussions and boasting a user base of over 14,000 active members. This takedown is a significant blow to the cybercrime community, potentially exposing the identities of numerous forum users to law enforcement. RAMP was infamous for its open promotion of ransomware activities, making it a hub for cybercriminals to exchange tactics and recruit affiliates. The forum&#x27;s closure underscores the ongoing efforts by global law enforcement to dismantle cybercrime networks. Security professionals should remain vigilant as displaced threat actors seek alternative platforms.",
+            "source": "GRAHAM CLULEY",
+            "sourceUrl": "https://www.bitdefender.com/en-us/blog/hotforsecurity/fbi-takes-notorious-ramp-ransomware-forum-offline",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Response Playbook",
+                    "url": "/guides/ransomware-response-playbook.html",
+                    "icon": "fa-biohazard"
+                }
+            ]
+        },
+        {
+            "date": "Jan 31 2026",
+            "headline": "ShinyHunters Use Vishing to Breach SaaS—MFA at Risk",
+            "title": "Mandiant Finds ShinyHunters-Style Vishing Attacks Stealing MFA to Breach SaaS Platforms",
+            "content": "Mandiant has identified a surge in vishing attacks linked to the financially motivated hacking group ShinyHunters. These attacks target multi-factor authentication (MFA) systems to infiltrate SaaS platforms, utilizing advanced voice phishing techniques to deceive users into revealing sensitive credentials. The group&#x27;s tradecraft mirrors previous extortion-themed campaigns, highlighting their evolving tactics. Organizations relying on SaaS solutions are at heightened risk of data breaches and service disruptions. To mitigate these threats, companies should reinforce security awareness training and consider implementing additional authentication layers beyond MFA. The incident underscores the importance of vigilance against social engineering tactics.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/01/mandiant-finds-shinyhunters-using.html",
+            "relatedResources": [
+                {
+                    "label": "Phishing & Security Awareness",
+                    "url": "/guides/phishing-simulation-security-awareness.html",
+                    "icon": "fa-fish"
+                }
+            ]
+        },
+        {
+            "date": "Jan 31 2026",
+            "headline": "Cyber Attacks Hit 30+ Renewable Farms—Energy Sector Alert",
+            "title": "CERT Polska Details Coordinated Cyber Attacks on 30+ Wind and Solar Farms",
+            "content": "CERT Polska has reported coordinated cyber attacks targeting over 30 wind and solar farms, a manufacturing company, and a large combined heat and power plant in Poland. These attacks threaten the operational integrity of renewable energy sources and critical infrastructure, potentially disrupting energy supply to nearly half a million customers. The attackers exploited vulnerabilities in industrial control systems, highlighting the growing threat to the energy sector. This incident emphasizes the urgent need for enhanced cybersecurity measures in the renewable energy industry. Organizations must prioritize securing their operational technology environments to prevent future disruptions.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/01/poland-attributes-december-cyber.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 30 2026",
+            "headline": "Google Presentations Misused in Phishing—Webmail Users Targeted",
+            "title": "Google Presentations Abused for Phishing, Targeting Webmail Users",
+            "content": "A phishing campaign leveraging Google Presentations has been identified, targeting users of the Vivladi Webmail service. The phishing email, though not highly sophisticated, poses a risk to unsuspecting users who may be tricked into divulging their credentials. This tactic highlights the creative use of legitimate services to bypass security filters and reach potential victims. Webmail users should exercise caution and verify the authenticity of unexpected emails, especially those requesting sensitive information. Security teams are advised to update email filtering rules and provide user training to recognize such phishing attempts.",
+            "source": "SANS Internet Storm Center, InfoCON: green",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32668",
+            "relatedResources": [
+                {
+                    "label": "Phishing & Security Awareness",
+                    "url": "/guides/phishing-simulation-security-awareness.html",
+                    "icon": "fa-fish"
                 }
             ]
         },
         {
             "date": "Jan 30 2026",
-            "headline": "Agentic AI—2026&#x27;s Emerging Cybersecurity Challenge",
-            "title": "Agentic AI Predicted as 2026&#x27;s Key Cybersecurity Threat",
-            "content": "In a survey conducted by Dark Reading, industry professionals identified agentic AI attacks as a major emerging cybersecurity threat for 2026. This form of AI, capable of autonomous decision-making, poses unique challenges to traditional security frameworks. The survey also highlighted concerns about advanced deepfake threats and the growing importance of cybersecurity at the board level. As organizations increasingly adopt AI technologies, the attack surface expands, necessitating new defense strategies. Security teams are urged to stay informed about AI developments and integrate AI-specific protections into their security postures.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/threat-intelligence/2026-agentic-ai-attack-surface-poster-child",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 30 2026",
-            "headline": "2026 Cybersecurity Risks—A New Reality Check",
-            "title": "Emerging Cybersecurity Risks for 2026 Demand Strategic Planning",
-            "content": "The cybersecurity landscape for 2026 presents a complex array of risks that security teams must address proactively. Dark Reading outlines a diverse set of emerging threats, from evolving attack vectors to the integration of new technologies in enterprise environments. As organizations strive to balance innovation with security, understanding these risks is crucial to avoid costly breaches. Security professionals should focus on comprehensive risk assessments and adaptive security measures to safeguard their networks. Staying ahead of these trends will be vital for maintaining robust security postures in the coming year.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/threat-intelligence/cyber-expectations-2026-grab-bag-risk",
+            "headline": "Google&#x27;s $68M Settlement—CISA Chief&#x27;s ChatGPT Leak",
+            "title": "In Other News: Paid for Being Jailed, Google’s $68M Settlement, CISA Chief’s ChatGPT Leak",
+            "content": "Recent noteworthy developments include Google&#x27;s $68 million settlement related to privacy violations, alongside a controversial leak involving the CISA Chief and ChatGPT. Apple has updated its platform security guide, and LastPass is addressing a new phishing wave. Additionally, CISA has withdrawn from the RSA Conference, citing undisclosed reasons. These events reflect ongoing challenges in privacy management, AI ethics, and the cybersecurity landscape. Tech leaders and security professionals should stay informed about these trends and consider their implications for policy and operational strategies.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/in-other-news-paid-for-being-jailed-googles-68m-settlement-cisa-chiefs-chatgpt-leak/",
             "relatedResources": [
                 {
-                    "label": "Third-Party Risk Management",
-                    "url": "/guides/third-party-risk-management.html",
-                    "icon": "fa-handshake"
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
                 }
             ]
         },
         {
             "date": "Jan 30 2026",
-            "headline": "Tenable Enhances AI Governance Amid Shadow AI Concerns",
-            "title": "Tenable Introduces AI Exposure Add-On to Manage Shadow AI Risks",
-            "content": "Tenable has launched the Tenable One AI Exposure add-on to address the growing challenge of shadow AI within organizations. This tool helps identify unauthorized AI deployments and ensures compliance with approved AI tools and policies. As AI technologies proliferate, shadow AI—AI systems deployed without IT oversight—presents significant security and governance risks. Tenable&#x27;s solution aims to provide visibility and control over these unsanctioned systems, reducing potential data exposure and compliance violations. Organizations are encouraged to integrate such tools to maintain effective AI governance and risk management.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyber-risk/tenable-tackles-ai-governance-shadow-ai-risks-data-exposure",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 30 2026",
-            "headline": "Amutable Plans Linux Security Revamp—Details Sparse",
-            "title": "Berlin&#x27;s Amutable Aims to Overhaul Linux Security Landscape",
-            "content": "Berlin-based startup Amutable has emerged from stealth mode, announcing plans to revolutionize Linux security. While specific details remain under wraps, the company has captured attention with its bold claims of addressing pervasive Linux vulnerabilities and enhancing system resilience against hacking threats. The announcement comes at a time when Linux systems, widely used in enterprise environments, face increasing targeted attacks. Security professionals are advised to monitor Amutable&#x27;s developments closely, as their solutions could significantly impact Linux security practices. The tech community awaits further information on Amutable&#x27;s approach and potential contributions to the field.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4125145/startup-amutable-plotting-linux-security-overhaul-to-counter-hacking-threats.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 30 2026",
-            "headline": "Crypto Wallets Hit $158B Illicit Funds Record in 2025",
-            "title": "Illicit Cryptocurrency Transactions Surge to $158 Billion in 2025",
-            "content": "Cryptocurrency wallets received a record $158 billion in illicit funds in 2025, reversing a downward trend from previous years. This surge, reported by BleepingComputer, highlights the persistent challenges in regulating and securing digital currency transactions. The increase from $64 billion in 2024 underscores the effectiveness of cybercriminals in exploiting vulnerabilities within the cryptocurrency ecosystem. Financial institutions and regulators are urged to enhance monitoring and compliance measures to combat this growing threat. The data reflects the need for continuous advancements in blockchain security and fraud detection technologies.",
+            "headline": "Microsoft to Disable NTLM—Boosts Windows Security",
+            "title": "Microsoft to Disable NTLM by Default in Future Windows Releases",
+            "content": "Microsoft has announced plans to disable the outdated NTLM authentication protocol by default in upcoming Windows releases. NTLM, which has been in use for 30 years, is vulnerable to various cyberattacks, including credential theft and replay attacks. By phasing out NTLM, Microsoft aims to enhance security and reduce the attack surface for organizations using Windows systems. IT departments should prepare for this transition by auditing their authentication mechanisms and migrating to more secure alternatives like Kerberos or OAuth. This move represents a significant step in strengthening Windows security and protecting enterprise environments.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/crypto-wallets-received-a-record-158-billion-in-illicit-funds-last-year/",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-to-disable-ntlm-by-default-in-future-windows-releases/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
                     "url": "/ransomware-tracker.html",
                     "icon": "fa-skull-crossbones"
                 },
-                {
-                    "label": "Zero-Day Detection Guide",
-                    "url": "/guides/zero-day-detection.html",
-                    "icon": "fa-exclamation-triangle"
-                }
-            ]
-        },
-        {
-            "date": "Jan 30 2026",
-            "headline": "DOJ Seizes Piracy Sites; Italy Dismantles IPTV Operation",
-            "title": "U.S. and Italian Authorities Crack Down on Online Piracy Networks",
-            "content": "The Department of Justice (DOJ) has seized three U.S.-registered domains involved in distributing copyrighted content, while Italian police dismantled a significant illegal IPTV operation. These actions, targeting networks with millions of annual visits, mark a concerted effort by international authorities to combat digital piracy. The crackdown reflects ongoing challenges in protecting intellectual property rights in the digital age. Organizations involved in content distribution are encouraged to strengthen their digital rights management and collaborate with law enforcement to deter piracy. This operation underscores the importance of global cooperation in addressing cybercrime.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/doj-seizes-piracy-sites-zamunda-arenabg-zelka/",
-            "relatedResources": [
                 {
                     "label": "Active Directory Security",
                     "url": "/guides/active-directory-security-hardening.html",
@@ -115,89 +127,97 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Jan 31 2026",
+            "headline": "Grokipedia Powers AI—ChatGPT and Google Tap Musk&#x27;s Resource",
+            "title": "ChatGPT and Google AI Tools Now Using Elon Musk&#x27;s Grokipedia",
+            "content": "ChatGPT, Google&#x27;s AI Overviews, AI Mode, and Gemini are increasingly citing Grokipedia, Elon Musk&#x27;s AI-generated encyclopedia, as a source for their answers. This trend raises concerns about the reliability and bias of AI-generated content, as Grokipedia&#x27;s influence grows in the AI landscape. The use of such a centralized source may impact the diversity of information available through these AI tools, affecting users who rely on them for accurate and varied data. As Grokipedia&#x27;s citations rise, tech leaders and developers must critically assess the implications for AI transparency and accountability. Professionals using these AI tools should remain vigilant about the potential for skewed or incomplete information.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/report/870910/ai-chatbots-citing-grokipedia",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Jan 31 2026",
+            "headline": "Epstein&#x27;s &#x27;Personal Hacker&#x27; and AI Agent OpenClaw Stir Security Concerns",
+            "title": "Jeffrey Epstein&#x27;s Alleged Hacker and AI OpenClaw Raise Cybersecurity Alarms",
+            "content": "Recent revelations claim Jeffrey Epstein employed a &#x27;personal hacker,&#x27; adding another layer to the infamous figure&#x27;s complex network. Simultaneously, AI agent OpenClaw is causing unease among cybersecurity experts due to its potential for misuse. In unrelated developments, China has executed 11 scam compound leaders, and a surprising suspect has emerged in a $40 million cryptocurrency theft. These incidents highlight the diverse challenges facing cybersecurity professionals today, from insider threats to AI vulnerabilities. Security teams must stay informed about emerging threats and be prepared to address both traditional and AI-driven risks.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/security-news-this-week-jeffrey-epstein-had-a-personal-hacker-informant-claims/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 30 2026",
+            "headline": "PageIndex Boosts Document Search—98.7% Success Where Vectors Fail",
+            "title": "PageIndex Framework Achieves 98.7% Success in Long Document Searches",
+            "content": "The open-source framework PageIndex is revolutionizing retrieval-augmented generation (RAG) by effectively handling long documents, achieving a 98.7% success rate where traditional vector search falters. PageIndex addresses the limitations of the classic RAG workflow, which involves chunking documents and storing embeddings in vector databases. This advancement offers a significant improvement for developers working with extensive datasets, ensuring more accurate and efficient retrieval of relevant information. As AI applications continue to expand, tools like PageIndex are essential for optimizing data processing and enhancing AI capabilities.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/infrastructure/this-tree-search-framework-hits-98-7-on-documents-where-vector-search-fails",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Jan 30 2026",
+            "headline": "Anthropic&#x27;s Cowork Gets Agentic Plug-ins for Workflow Customization",
+            "title": "Anthropic Introduces Agentic Plug-ins to Cowork for Enhanced Workflow Management",
+            "content": "Anthropic has launched agentic plug-ins for its collaborative platform Cowork, allowing users to tailor workflows according to their specific preferences. These plug-ins enable users to dictate how tasks are handled, which tools and data are utilized, and what commands are available, ensuring consistent outcomes across teams. This development empowers businesses to streamline operations and improve productivity by customizing AI interactions to suit organizational needs. As enterprises increasingly adopt AI-driven solutions, such enhancements are crucial for maximizing efficiency and adapting to dynamic work environments.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/30/anthropic-brings-agentic-plugins-to-cowork/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Jan 30 2026",
+            "headline": "Data Governance Crisis—76% of Leaders Struggle with AI Management",
+            "title": "Trust Paradox: 76% of Data Leaders Unable to Govern AI Usage",
+            "content": "A recent report reveals that 76% of chief data officers (CDOs) are struggling to govern the AI tools already in use by employees, highlighting a significant governance gap. The evolving role of the CDO now encompasses data governance, AI strategy, and workforce readiness, making it a pivotal position for successful AI deployment. This governance challenge poses risks to enterprises attempting to scale AI initiatives, as unmanaged AI usage can lead to compliance issues and data security vulnerabilities. Organizations must prioritize robust data governance frameworks to ensure secure and effective AI integration.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/data/the-trust-paradox-killing-ai-at-scale-76-of-data-leaders-cant-govern-what",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 30 2026",
+            "headline": "AI Deepfake Marketplace Sparks Ethical Concerns Over Real Women",
+            "title": "Marketplace Sells AI Deepfakes of Real Women, Raises Ethical Issues",
+            "content": "Civitai, an online marketplace backed by Andreessen Horowitz, is under scrutiny for selling custom instruction files that generate AI deepfakes of real women, including unauthorized pornographic content. This marketplace allows users to create and trade AI-generated images that mimic celebrities, raising significant ethical and legal concerns. The exploitation of AI for creating deepfakes poses risks to personal privacy and consent, prompting calls for stricter regulations on AI-generated content. Professionals in AI and cybersecurity must address these challenges to prevent misuse and protect individuals&#x27; rights.",
+            "source": "MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2026/01/30/1131945/inside-the-marketplace-powering-bespoke-ai-deepfakes-of-real-women/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 30 2026",
+            "headline": "Last Chance—50% Off Plus-One Pass to TechCrunch Disrupt 2026",
+            "title": "Final Day for 50% Discount on Plus-One Pass to TechCrunch Disrupt",
+            "content": "Today marks the final opportunity to purchase a plus-one pass at a 50% discount for TechCrunch Disrupt 2026, scheduled for October 13-15 in San Francisco. This event is a key gathering for technology innovators, entrepreneurs, and industry leaders, offering insights into the latest trends and developments. Attendees will have the chance to network with peers, explore new technologies, and gain valuable knowledge to drive their businesses forward. Those interested in participating should act quickly to take advantage of this limited-time offer and secure their place at this influential tech conference.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/30/last-24-hours-to-grab-your-1-pass-at-50-off-to-techcrunch-disrupt-2026/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 31 2026",
             "headline": "Silicon Valley&#x27;s Buzziest Robot Brains—A Stripe Veteran&#x27;s New Venture",
             "title": "Physical Intelligence Aims to Revolutionize Robotics with Advanced AI",
             "content": "Lachy Groom, co-founder and former Stripe executive, is spearheading a new initiative in robotics with Physical Intelligence, a company focused on developing cutting-edge AI for robot brains. Groom collaborates with a team of seasoned experts who have been tackling the complexities of robotic intelligence for decades. The venture aims to capitalize on recent advancements in AI and robotics, promising to enhance the capabilities of autonomous systems. This initiative could significantly impact industries relying on automation, potentially transforming logistics, manufacturing, and service sectors. Professionals in these fields should monitor developments closely, as breakthroughs could redefine operational efficiencies.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/01/30/physical-intelligence-stripe-veteran-lachy-grooms-latest-bet-is-building-silicon-valleys-buzziest-robot-brains/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 30 2026",
-            "headline": "OpenClaw AI Exposes Security Flaws—1,800 Instances Leaked",
-            "title": "OpenClaw&#x27;s Popularity Highlights Critical Security Model Vulnerabilities",
-            "content": "OpenClaw, the open-source AI assistant formerly known as Clawdbot and Moltbot, has reached 180,000 GitHub stars, drawing significant attention. However, security researchers have identified over 1,800 exposed instances leaking sensitive API keys and chat logs. This vulnerability underscores the challenges of securing open-source AI tools, particularly as they gain widespread adoption. Developers and organizations using OpenClaw must reassess their security protocols to prevent unauthorized access and data breaches. The incident serves as a crucial reminder of the importance of robust security measures in the rapidly evolving AI landscape.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/security/openclaw-agentic-ai-security-risk-ciso-guide",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 30 2026",
-            "headline": "OpenClaw AI Assistants Build Their Own Social Network",
-            "title": "OpenClaw&#x27;s AI Assistants Launch Innovative Social Networking Platform",
-            "content": "OpenClaw, the AI assistant formerly known as Clawdbot and Moltbot, has introduced a new feature—AI assistants are now capable of creating their own social networks. This development leverages the viral nature of OpenClaw, allowing AI entities to interact and share information autonomously. The platform could revolutionize how AI systems communicate, potentially enhancing collaborative tasks and problem-solving capabilities. While this innovation opens new possibilities, it also raises questions about data privacy and security. Developers and users should remain vigilant and consider the implications of AI-driven social interactions.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/30/openclaws-ai-assistants-are-now-building-their-own-social-network/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 30 2026",
-            "headline": "Google AI Tool Sinks Video Game Stocks—Project Genie Impact",
-            "title": "Video Game Stocks Tumble Following Google&#x27;s AI World-Generation Tool Launch",
-            "content": "The announcement of Google&#x27;s Project Genie, an AI tool for generating interactive gaming experiences, has resulted in a decline in stock prices for major video game companies such as Take-Two Interactive, Roblox, and Unity. Project Genie allows users to create immersive environments with AI, potentially disrupting traditional game development processes. The stock market&#x27;s reaction highlights the industry&#x27;s concerns about the competitive edge offered by AI-driven innovation. Gaming companies must now evaluate how to integrate AI technologies to maintain market relevance and capitalize on new opportunities presented by AI advancements.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/games/871348/google-project-genie-take-two-roblox-unity",
-            "relatedResources": [
-                {
-                    "label": "React Analysis",
-                    "url": "/articles/react2shell-cve-2025-55182-react-vulnerability.html",
-                    "icon": "fa-file-alt"
-                }
-            ]
-        },
-        {
-            "date": "Jan 30 2026",
-            "headline": "Google&#x27;s Auto Browse AI—Struggles to Meet Expectations",
-            "title": "Google&#x27;s &#x27;Auto Browse&#x27; AI Agent Faces Challenges in User Experience",
-            "content": "Google&#x27;s Auto Browse AI agent, designed to automate online tasks such as shopping and travel planning, has not yet lived up to its potential. Users report mixed experiences, with the AI struggling to perform complex tasks seamlessly. Despite its promise, Auto Browse&#x27;s limitations highlight the ongoing challenges in developing intuitive AI solutions for everyday use. Google&#x27;s efforts to refine the tool will be crucial in determining its future success. Users and developers should stay informed about updates and improvements as Google addresses these initial shortcomings.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/google-chrome-auto-browse-hands-on/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 30 2026",
-            "headline": "Arcee&#x27;s Open Source AI Models—Trinity Large Unveiled",
-            "title": "Arcee Reveals Open Source Trinity Large Model for AI Development",
-            "content": "San Francisco-based AI lab Arcee has released the Trinity Large model, an open-source AI framework offering a rare glimpse into raw model intelligence. This release includes a 10T-checkpoint, providing developers and enterprises with unprecedented access to cutting-edge AI technology. Arcee&#x27;s commitment to open-source development sets it apart in the AI landscape, encouraging innovation and collaboration. The availability of such powerful models can accelerate AI research and application development across various industries. Stakeholders should consider leveraging these resources to enhance their AI capabilities and drive technological progress.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/arcees-u-s-made-open-source-trinity-large-and-10t-checkpoint-offer-rare-look",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 30 2026",
-            "headline": "AI Agents&#x27; Social Network—Moltbook&#x27;s Unconventional Platform",
-            "title": "Moltbook: OpenClaw&#x27;s AI Agents Create Their Own Social Network",
-            "content": "OpenClaw&#x27;s AI agents have launched Moltbook, a unique social network designed specifically for AI interactions. Formerly known as Clawdbot and Moltbot, OpenClaw&#x27;s latest evolution facilitates communication and collaboration among AI entities. This unconventional platform allows AI agents to share data and strategies, potentially enhancing their functionality and learning capabilities. While Moltbook presents exciting opportunities for AI development, it also raises concerns about privacy and security in AI communications. Developers and users should monitor this space closely to understand the implications of AI-driven social networking.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/871006/social-network-facebook-for-ai-agents-moltbook-moltbot-openclaw",
             "relatedResources": []
         }
     ],
