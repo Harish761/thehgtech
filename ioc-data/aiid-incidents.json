@@ -1,6 +1,38 @@
 {
   "incidents": [
     {
+      "id": "AIID-1340",
+      "incident_id": 1340,
+      "title": "Purported AI-Generated Image Depicting JD Vance and Usha Vance in Public Altercation Circulated on S",
+      "date": "2026-01-31",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1353",
+      "incident_id": 1353,
+      "title": "ICE Facial Recognition App Mobile Fortify Reportedly Misidentified Woman Twice During Immigration En",
+      "date": "2026-01-31",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1354",
+      "incident_id": 1354,
+      "title": "AI-Altered Fake Nude Images of High School Girls and Women Reportedly Created and Disseminated in Pe",
+      "date": "2026-01-31",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1355",
+      "incident_id": 1355,
+      "title": "Reported AI Impersonations of Pastors Used in Online Donation and Influence Scams",
+      "date": "2026-01-31",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
       "id": "AIID-1348",
       "incident_id": 1348,
       "title": "Purported Deepfake Explicit Images of Middle School Students Allegedly Created and Circulated Using ",
@@ -46,14 +78,6 @@
       "title": "Purported Deepfake Technology Was Reportedly Used to Generate Naked Pictures of Underage Girls in Sp",
       "date": "2026-01-17",
       "category": "deepfake",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1340",
-      "incident_id": 1340,
-      "title": "Purported AI-Generated Image Falsely Depicting JD Vance and Usha Vance in Public Altercation Circula",
-      "date": "2026-01-17",
-      "category": "misinformation",
       "severity": "medium"
     },
     {
@@ -1482,9 +1506,9 @@
     }
   ],
   "stats": {
-    "total": 185,
-    "last7Days": 5,
-    "last30Days": 31
+    "total": 188,
+    "last7Days": 4,
+    "last30Days": 34
   },
-  "lastUpdated": "2026-01-31T22:12:38.453355+05:30"
+  "lastUpdated": "2026-02-01T00:27:21.036631+05:30"
 }
