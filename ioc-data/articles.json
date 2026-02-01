@@ -1,6 +1,63 @@
 {
   "articles": [
     {
+      "id": "article-ivanti-epmm-zeroday-2026",
+      "title": "Ivanti EPMM Zero-Days CVE-2026-1281: Critical RCE Exploited in Wild",
+      "date": "February 1, 2026",
+      "category": "Zero-Day Vulnerability",
+      "badge": "CRITICAL",
+      "excerpt": "Active exploitation of two new Ivanti EPMM zero-days (CVE-2026-1281 & 1340) allows authentication bypass and RCE. CISA mandates federal patching by Feb 1.",
+      "image": "images/articles/ivanti-epmm-zeroday-2026.png",
+      "tags": [
+        "Ivanti",
+        "Zero-Day",
+        "CVE-2026-1281",
+        "RCE",
+        "CISA KEV",
+        "Mobile Security"
+      ],
+      "author": "TheHGTech Security Team",
+      "externalUrl": "articles/ivanti-epmm-zeroday-cve-2026-1281.html"
+    },
+    {
+      "id": "article-nike-data-breach-2026",
+      "title": "Nike Data Breach: 1.4TB of Internal Designs & Employee Data Stolen",
+      "date": "January 31, 2026",
+      "category": "Data Breach",
+      "badge": "BREAKING",
+      "excerpt": "Hackers claim theft of 1.4TB from Nike's internal network, including futuristic product designs and employee PII, via third-party vendor compromise.",
+      "image": "images/articles/nike-data-breach-2026.png",
+      "tags": [
+        "Nike",
+        "Data Breach",
+        "Intellectual Property",
+        "Supply Chain Attack",
+        "Employee Data",
+        "Retail Security"
+      ],
+      "author": "TheHGTech Security Team",
+      "externalUrl": "articles/nike-data-breach-1tb-stolen-2026.html"
+    },
+    {
+      "id": "article-vscode-malicious-extensions-2026",
+      "title": "Malicious VS Code Extensions Steal Source Code: 'MaliciousCorgi' Campaign",
+      "date": "January 30, 2026",
+      "category": "Supply Chain Attack",
+      "badge": "DEV ALERT",
+      "excerpt": "Thousands of developers compromised by fake AI coding extensions in VS Code Marketplace. 'MaliciousCorgi' campaign steals source code and AWS keys.",
+      "image": "images/articles/vscode-malicious-extensions-2026.png",
+      "tags": [
+        "VS Code",
+        "Supply Chain",
+        "Malicious Extensions",
+        "Developer Security",
+        "MaliciousCorgi",
+        "AI Security"
+      ],
+      "author": "TheHGTech Security Team",
+      "externalUrl": "articles/vscode-malicious-extensions-supply-chain-2026.html"
+    },
+    {
       "id": "article-microsoft-teams-phishing-2026",
       "title": "Microsoft Teams Phishing: Hackers Exploit Guest Feature for Credential Theft",
       "date": "January 28, 2026",
