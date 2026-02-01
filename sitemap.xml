@@ -83,7 +83,41 @@
   
   <!-- ========== ARTICLES - HIGH TRAFFIC POTENTIAL ========== -->
   
-  <!-- January 28, 2026 - Microsoft Teams Phishing Guest Exploit -->
+  <!-- Feb 1, 2026 - Ivanti Zero-Days -->
+  <url>
+    <loc>https://thehgtech.com/articles/ivanti-epmm-zeroday-cve-2026-1281.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.98</priority>
+    <lastmod>2026-02-01</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/ivanti-epmm-zeroday-2026.png</image:loc>
+      <image:title>Ivanti Endpoint Zero-Days CVE-2026-1281</image:title>
+    </image:image>
+  </url>
+
+  <!-- Jan 31, 2026 - Nike Data Breach -->
+  <url>
+    <loc>https://thehgtech.com/articles/nike-data-breach-1tb-stolen-2026.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.98</priority>
+    <lastmod>2026-01-31</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/nike-data-breach-2026.png</image:loc>
+      <image:title>Nike Data Breach 1.4TB Stolen</image:title>
+    </image:image>
+  </url>
+
+  <!-- Jan 30, 2026 - VS Code Malicious Extensions -->
+  <url>
+    <loc>https://thehgtech.com/articles/vscode-malicious-extensions-supply-chain-2026.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.98</priority>
+    <lastmod>2026-01-30</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/vscode-malicious-extensions-2026.png</image:loc>
+      <image:title>VS Code Malicious Extensions MaliciousCorgi</image:title>
+    </image:image>
+  </url>
   <url>
     <loc>https://thehgtech.com/articles/microsoft-teams-phishing-guest-exploit-2026.html</loc>
     <changefreq>weekly</changefreq>

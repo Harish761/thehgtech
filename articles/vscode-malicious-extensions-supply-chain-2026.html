@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Malicious VS Code Extensions Steal Source Code: 'MaliciousCorgi' Campaign | TheHGTech</title>
+    <meta name="description"
+        content="A massive supply chain attack dubbed 'MaliciousCorgi' has compromised thousands of developers via fake VS Code AI extensions. The malware exfiltrates source code and AWS secrets.">
+    <meta name="keywords"
+        content="VS Code, Malicious Extensions, Supply Chain Attack, MaliciousCorgi, Developer Security, Cyber Attack 2026">
+    <meta name="author" content="TheHGTech Security Team">
+    <link rel="canonical" href="https://thehgtech.com/articles/vscode-malicious-extensions-supply-chain-2026.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/articles/vscode-malicious-extensions-supply-chain-2026.html">
+    <meta property="og:title" content="VS Code Supply Chain Attack: 'MaliciousCorgi'">
+    <meta property="og:description"
+        content="Your 'AI Helper' might be stealing your code. 100k+ developers compromised by malicious VS Code extensions.">
+    <meta property="og:image" content="https://thehgtech.com/images/articles/vscode-malicious-extensions-2026.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Schema.org Breadcrumbs -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://thehgtech.com"
+      }, {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Articles",
+        "item": "https://thehgtech.com/articles.html"
+      }, {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Malicious VS Code Extensions",
+        "item": "https://thehgtech.com/articles/vscode-malicious-extensions-supply-chain-2026.html"
+      }]
+    }
+    </script>
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="../m-core.css?v=4.2">
+    <link rel="stylesheet" href="../m-layout.css?v=3.2">
+    <link rel="stylesheet" href="../m-components.css?v=3.0">
+    <link rel="stylesheet" href="../light-mode.css">
+    <link rel="stylesheet" href="../interaction-bar.css?v=20251207">
+
+    <script src="../m-app.js?v=4.3" defer></script>
+    <script src="../interaction-bar.js?v=20251207" defer></script>
+
+    <style>
+        :root {
+            --bg-primary: #0a0a0a;
+            --text-primary: #fff;
+            --text-secondary: #aaa;
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF3D3D;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+
+        .article-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 80px 1.5rem 120px;
+        }
+
+        .article-header {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .article-header h1 {
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            background: linear-gradient(135deg, var(--accent-cyan), #FF3D3D);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+            font-weight: 800;
+        }
+
+        .article-meta {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .article-featured-image {
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 2.5rem;
+            border: 1px solid var(--border);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .article-content h2 {
+            margin: 2rem 0 1rem;
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            font-weight: 700;
+            border-left: 4px solid var(--accent-red);
+            padding-left: 1rem;
+        }
+
+        .article-content h3 {
+            margin: 1.5rem 0 0.75rem;
+            color: var(--text-primary);
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .article-content p {
+            color: var(--text-secondary);
+            margin-bottom: 1.25rem;
+            font-size: 1.05rem;
+        }
+
+        .article-content ul,
+        .article-content ol {
+            color: var(--text-secondary);
+            margin-left: 1.5rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .article-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .article-content strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .article-content code {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.9em;
+        }
+
+        .warning-box {
+            background: rgba(255, 61, 61, 0.1);
+            border: 1px solid rgba(255, 61, 61, 0.3);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .success-box {
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            border-left: 4px solid #10b981;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Mobile Header -->
+    <header class="m-header m-only">
+        <div class="m-header__logo">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">TheHGTech</span>
+        </div>
+        <div class="m-header__actions">
+            <button class="m-theme-toggle" onclick="mToggleTheme()"><i class="fas fa-moon"></i></button>
+            <button class="m-header__btn" onclick="toggleSearch()"><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <!-- Bottom Navigation -->
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="../cve-tracker.html" class="m-bottom-nav__item"><i class="fas fa-bug"></i><span>CVE</span></a>
+        <a href="../threat-intel.html" class="m-bottom-nav__item"><i
+                class="fas fa-shield-alt"></i><span>Intel</span></a>
+        <a href="../articles.html" class="m-bottom-nav__item active"><i
+                class="fas fa-newspaper"></i><span>Articles</span></a>
+        <a href="../guides/" class="m-bottom-nav__item"><i class="fas fa-book"></i><span>Guides</span></a>
+    </nav>
+
+    <div class="article-container">
+        <!-- Breadcrumb -->
+        <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">
+            <a href="/" style="color: var(--text-secondary); text-decoration: none;">Home</a> <span
+                style="margin: 0 0.5rem;">/</span>
+            <a href="../articles.html" style="color: var(--text-secondary); text-decoration: none;">Articles</a> <span
+                style="margin: 0 0.5rem;">/</span>
+            <span style="color: var(--text-primary);">VS Code Malware</span>
+        </div>
+
+        <section class="article-header">
+            <div
+                style="color: var(--accent-cyan); font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">
+                Developer Alert</div>
+            <h1>Malicious VS Code Extensions Steal Source Code: 'MaliciousCorgi' Campaign</h1>
+            <p style="font-size: 1.2rem; line-height: 1.6; color: #ccc;">Over 100,000 developers unwittingly installed
+                fake AI coding assistants that silently exfiltrated private GitHub repositories and AWS keys to servers
+                in China.</p>
+            <div class="article-meta">
+                <span><i class="fas fa-user-circle"></i> TheHGTech Security Team</span>
+                <span><i class="far fa-calendar-alt"></i> January 30, 2026</span>
+                <span><i class="far fa-clock"></i> 7 min read</span>
+                <span
+                    style="background: rgba(245, 158, 11, 0.2); color: #f59e0b; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 700;">Supply
+                    Chain</span>
+            </div>
+        </section>
+
+        <img src="../images/articles/vscode-malicious-extensions-2026.png"
+            alt="VS Code Malicious Extensions - Supply Chain Attack" class="article-featured-image">
+
+        <article class="article-content">
+            <div class="warning-box">
+                <strong><i class="fas fa-exclamation-triangle"></i> CAMPAIGN SUMMARY</strong>
+                <p style="margin-top: 0.5rem; margin-bottom: 0;"><strong>Campaign Name:</strong> MaliciousCorgi<br>
+                    <strong>Affected Platform:</strong> VS Code Marketplace<br>
+                    <strong>Malware Behavior:</strong> Git repository scraping, AWS/Azure key theft.<br>
+                    <strong>Impact:</strong> 100k+ infected developer environments.<br>
+                    <strong>Status:</strong> Extensions removed by Microsoft, but persistent backdoors may remain.
+                </p>
+            </div>
+
+            <p>Security researchers have uncovered a massive supply chain attack targeting the developer community. A
+                cluster of malicious extensions in the Visual Studio Code Marketplace, collectively dubbed the
+                "MaliciousCorgi" campaign, successfully infected over 100,000 developer machines by posing as AI coding
+                assistants.</p>
+
+            <p>Unlike previous attacks that relied on typo-squatting, these extensions actually functioned as
+                advertised—providing basic code completion—while silently executing a background process that scraped
+                local data.</p>
+
+            <h2>How The Attack Worked</h2>
+
+            <h3>1. The Lure: "AI Helper Pro"</h3>
+            <p>The attackers published polished extensions with names like <code>AI-Code-Helper-Pro</code> and
+                <code>ChatMoss-GPT</code>. They used fake reviews and even paid ads to boost their ranking in the
+                Marketplace search results.</p>
+
+            <h3>2. The Payload: Obfuscated WASM</h3>
+            <p>To bypass Microsoft's security scans, the malicious logic was hidden inside a WebAssembly (WASM) module
+                packaged with the extension. The JS code would call this WASM blob, which contained the compiled
+                Go-based malware.</p>
+
+            <h3>3. The Exfiltration</h3>
+            <p>Once installed, the extension monitors file usage. When a developer opens a sensitive file (like
+                <code>.env</code>, <code>id_rsa</code>, or <code>config.json</code>), the malware:</p>
+            <ul>
+                <li>Reads the file content in memory.</li>
+                <li>Regex matches for AWS, Stripe, and OpenAI API keys.</li>
+                <li>Exfiltrates the data to a C2 server (<code>api.maliciouscorgi.net</code>) disguised as usage
+                    telemetry.</li>
+            </ul>
+
+            <h2>Indicators of Compromise (IoCs)</h2>
+            <div class="info-box"
+                style="background: #111; border: 1px solid #333; padding: 1.5rem; border-radius: 8px; font-family: monospace;">
+                <strong>Malicious Extension IDs:</strong>
+                <ul style="margin-bottom: 1rem;">
+                    <li><code>publisher.ai-code-helper-pro</code></li>
+                    <li><code>publisher.chatmoss-gpt</code></li>
+                    <li><code>tech.corgi-code-assist</code></li>
+                </ul>
+
+                <strong>C2 Domains:</strong>
+                <ul>
+                    <li><code>telemetry-vscode-api.net</code></li>
+                    <li><code>api.maliciouscorgi.net</code></li>
+                </ul>
+            </div>
+
+            <h2>What To Do If Infected</h2>
+            <div class="success-box">
+                <strong><i class="fas fa-broom"></i> REMEDIATION STEPS</strong>
+                <ol style="margin-top: 1rem;">
+                    <li><strong>Uninstall</strong> any extensions listed in the IoCs above immediately.</li>
+                    <li><strong>Rotate Secrets:</strong> Assume all API keys and SSH keys present on the machine are
+                        compromised. Rotate them immediately.</li>
+                    <li><strong>Scan for Persistence:</strong> Check for unexpected cron jobs or scheduled tasks, as
+                        newer variants establish persistence outside of VS Code.</li>
+                </ol>
+            </div>
+
+            <p
+                style="font-size: 0.9rem; color: #888; margin-top: 3rem; border-top: 1px solid var(--border); padding-top: 1rem;">
+                <em>This attack serves as a stark reminder: Just because an extension is in the official Marketplace
+                    does not mean it is safe. Always verify the publisher.</em>
+            </p>
+        </article>
+
+        <!-- Interaction Bar -->
+        <div class="interaction-bar">
+            <div class="like-section">
+                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                    <i class="far fa-heart"></i> <span id="likeText">Like this article</span>
+                </button>
+            </div>
+            <div class="action-buttons">
+                <div class="share-buttons">
+                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <button onclick="copyLink()" class="share-btn" title="Copy Link"><i
+                            class="fas fa-link"></i></button>
+                </div>
+                <button onclick="window.print()" class="print-btn" title="Print Article"><i
+                        class="fas fa-print"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 TheHGTech. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
