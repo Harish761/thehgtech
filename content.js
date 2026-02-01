@@ -5,6 +5,115 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Feb 01 2026",
+            "headline": "Emerging Tech in Cybersecurity—A Double-Edged Sword",
+            "title": "Im Fokus: Emerging Technologies and Their Dual Impact on Cybersecurity",
+            "content": "Emerging technologies are reshaping the cybersecurity landscape, offering both opportunities and challenges. As innovations like AI and quantum computing advance, they enhance security capabilities but also introduce new vulnerabilities. Cybersecurity professionals must navigate these dual impacts, balancing the benefits of automation and advanced threat detection with the risks of more sophisticated cyber threats. The rapid pace of technological change requires ongoing adaptation and vigilance from security teams. Organizations should invest in continuous learning and upgrading of their cybersecurity strategies to keep pace with these developments.",
+            "source": "CSO Online",
+            "sourceUrl": "https://de.resources.csoonline.com/resources/im-fokus-emerging-technologies/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "SIEM & Log Analysis Guide",
+                    "url": "/guides/siem-log-analysis.html",
+                    "icon": "fa-chart-bar"
+                }
+            ]
+        },
+        {
+            "date": "Jan 31 2026",
+            "headline": "Iran&#x27;s RedKitten Targets NGOs—Human Rights at Risk",
+            "title": "Iran-Linked RedKitten Cyber Campaign Targets Human Rights NGOs and Activists",
+            "content": "A Farsi-speaking threat actor, suspected to be aligned with Iranian state interests, is behind a new cyber campaign targeting NGOs and individuals documenting human rights abuses. Dubbed RedKitten, the campaign was observed by HarfangLab in January 2026. The attacks focus on non-governmental organizations and activists, aiming to disrupt their operations and gather intelligence. This highlights the growing use of cyber capabilities for political and state-sponsored objectives. NGOs should enhance their cybersecurity measures and remain vigilant against phishing and malware attacks to protect sensitive information.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/01/iran-linked-redkitten-cyber-campaign.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 31 2026",
+            "headline": "FBI Seizes RAMP—Ransomware Forum Offline",
+            "title": "FBI Takes Down Notorious RAMP Ransomware Forum, User Data Seized",
+            "content": "The FBI has successfully taken control of RAMP, a prominent cybercrime forum notorious for hosting ransomware discussions. With over 14,000 active users, RAMP was the only forum openly allowing ransomware-related activities. The seizure likely means that user details are now in the hands of law enforcement, potentially leading to further arrests and disruptions in the cybercrime community. This move underscores the FBI&#x27;s ongoing efforts to dismantle ransomware networks and highlights the importance of international cooperation in combating cybercrime. Organizations should remain vigilant and report any suspicious activities to authorities.",
+            "source": "GRAHAM CLULEY",
+            "sourceUrl": "https://www.bitdefender.com/en-us/blog/hotforsecurity/fbi-takes-notorious-ramp-ransomware-forum-offline",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Response Playbook",
+                    "url": "/guides/ransomware-response-playbook.html",
+                    "icon": "fa-biohazard"
+                }
+            ]
+        },
+        {
+            "date": "Jan 31 2026",
+            "headline": "ShinyHunters Vishing Attacks—MFA Credentials at Risk",
+            "title": "Mandiant Identifies ShinyHunters-Style Vishing Attacks Breaching SaaS Platforms",
+            "content": "Mandiant has uncovered a surge in vishing attacks by the ShinyHunters group, targeting multi-factor authentication (MFA) credentials to breach SaaS platforms. These attacks use sophisticated voice phishing techniques to deceive users into revealing sensitive information. The financially motivated hacking group aims to exploit these breaches for extortion and data theft. This trend highlights the need for robust user training and advanced security measures to protect against social engineering attacks. Organizations should review their MFA processes and educate employees on recognizing phishing attempts.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/01/mandiant-finds-shinyhunters-using.html",
+            "relatedResources": [
+                {
+                    "label": "Phishing & Security Awareness",
+                    "url": "/guides/phishing-simulation-security-awareness.html",
+                    "icon": "fa-fish"
+                }
+            ]
+        },
+        {
+            "date": "Jan 31 2026",
+            "headline": "Cyber Attacks Hit 30+ Renewable Energy Sites in Poland",
+            "title": "CERT Polska Reports Coordinated Cyber Attacks on Wind and Solar Farms",
+            "content": "CERT Polska has disclosed a series of coordinated cyber attacks targeting over 30 wind and solar farms, a manufacturing company, and a significant combined heat and power plant in Poland. These attacks threaten the stability of critical infrastructure, affecting energy supply to nearly half a million customers. The incidents underscore the vulnerability of renewable energy systems to cyber threats and the importance of securing industrial control systems. Organizations in the energy sector should prioritize cybersecurity measures and conduct regular assessments to mitigate potential risks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/01/poland-attributes-december-cyber.html",
+            "relatedResources": [
+                {
+                    "label": "Third-Party Risk Management",
+                    "url": "/guides/third-party-risk-management.html",
+                    "icon": "fa-handshake"
+                }
+            ]
+        },
+        {
+            "date": "Jan 30 2026",
+            "headline": "Torq&#x27;s AI Hyper Automation—$1.2B Valuation Milestone",
+            "title": "Torq Advances SOCs with AI-Powered Hyper Automation, Secures $140M Investment",
+            "content": "Torq has raised $140 million in a Series D funding round, elevating its valuation to $1.2 billion. The investment aims to enhance Torq&#x27;s AI-based &quot;hyper automation&quot; solutions for Security Operations Centers (SOCs). This technology promises to streamline security processes by automating routine tasks and improving threat detection capabilities. As cyber threats grow more complex, the demand for automated security solutions is increasing. Security teams should explore AI-driven tools to optimize their operations and respond more effectively to incidents.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/remote-workforce/torq-moves-socs-soar-ai-powered-hyper-automation",
+            "relatedResources": [
+                {
+                    "label": "SIEM & Log Analysis Guide",
+                    "url": "/guides/siem-log-analysis.html",
+                    "icon": "fa-chart-bar"
+                }
+            ]
+        },
+        {
+            "date": "Jan 30 2026",
+            "headline": "Ivanti Patches Critical Vulnerabilities—EPMM Users Alerted",
+            "title": "Ivanti Releases Patches for Actively Exploited Vulnerabilities in EPMM",
+            "content": "Ivanti has issued patches for its Endpoint Manager Mobile (EPMM) product, addressing two critical remote code execution vulnerabilities currently exploited in the wild. These vulnerabilities pose a significant risk, allowing attackers to execute arbitrary code on affected systems. Ivanti has acknowledged a limited number of customers impacted by these exploits at the time of disclosure. Users are urged to apply the patches immediately to secure their systems. This incident highlights the importance of timely updates and vulnerability management in maintaining cybersecurity.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4125196/ivanti-patches-two-actively-exploited-critical-vulnerabilities-in-epmm.html",
+            "relatedResources": [
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                },
+                {
+                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
+                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
+                    "icon": "fa-shield-virus"
+                }
+            ]
+        },
+        {
+            "date": "Feb 01 2026",
             "headline": "ChatGPT Ads Rollout Begins—OpenAI Assures Answer Trust",
             "title": "OpenAI Begins ChatGPT Ads Rollout, Emphasizes Answer Reliability",
             "content": "OpenAI has initiated the rollout of advertisements within ChatGPT, targeting free and $8 Go accounts, with early tests visible on Android devices. This development comes as OpenAI emphasizes the trustworthiness of ChatGPT&#x27;s responses, aiming to balance monetization with user experience. The introduction of ads marks a significant shift in OpenAI&#x27;s strategy to sustain its AI services while maintaining high-quality output. Users are advised to monitor updates as the ad rollout progresses and assess any impacts on their interaction with the platform. This move aligns with broader trends of AI monetization as companies seek sustainable revenue models.",
@@ -39,63 +148,6 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Jan 31 2026",
-            "headline": "Ex-Google Engineer Convicted for AI Data Theft to China",
-            "title": "U.S. Convicts Former Google Engineer for AI Data Espionage",
-            "content": "A federal jury has convicted Linwei Ding, a former Google software engineer, for illegally transferring AI supercomputer data to Chinese technology firms. This case highlights the growing threat of corporate espionage in the tech industry, particularly involving sensitive AI technologies. The stolen data could potentially enhance the competitive capabilities of foreign companies, posing a risk to U.S. technological leadership. Companies are urged to strengthen their internal security measures and employee vetting processes to prevent such breaches. This conviction serves as a warning to individuals considering similar illicit activities.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/us-convicts-ex-google-engineer-for-sending-ai-tech-data-to-china/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 31 2026",
-            "headline": "Cloud Storage Scam Hits Inboxes—Beware Fake Renewals",
-            "title": "Global Cloud Storage Scam Targets Users with Fake Renewal Notices",
-            "content": "A widespread scam campaign is inundating users with fraudulent emails claiming cloud storage subscriptions are at risk due to payment issues. These emails falsely warn that photos, files, and accounts will be deleted if immediate action is not taken. The scam exploits users&#x27; fear of data loss to extract personal and financial information. Security experts advise recipients to verify the legitimacy of such emails by contacting service providers directly and to avoid clicking on suspicious links. This incident underscores the importance of vigilance against phishing scams targeting cloud services.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cloud-storage-payment-scam-floods-inboxes-with-fake-renewals/",
-            "relatedResources": [
-                {
-                    "label": "Phishing & Security Awareness",
-                    "url": "/guides/phishing-simulation-security-awareness.html",
-                    "icon": "fa-fish"
-                }
-            ]
-        },
-        {
-            "date": "Jan 31 2026",
-            "headline": "ShinyHunters Exploit SSO—Cloud Data at Risk",
-            "title": "Mandiant Unveils ShinyHunters&#x27; SSO Exploitation in SaaS Data Thefts",
-            "content": "Mandiant has detailed how the ShinyHunters group is exploiting single sign-on (SSO) vulnerabilities to steal cloud data. The attackers employ voice phishing (vishing) and company-branded phishing sites to harvest SSO credentials and multi-factor authentication (MFA) codes. This sophisticated approach allows them to bypass security measures and access sensitive data stored in SaaS platforms. Organizations are advised to enhance security protocols, including robust MFA implementation and employee training on phishing tactics. This revelation highlights the persistent threat posed by advanced cybercriminal groups.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/mandiant-details-how-shinyhunters-abuse-sso-to-steal-cloud-data/",
-            "relatedResources": [
-                {
-                    "label": "Phishing & Security Awareness",
-                    "url": "/guides/phishing-simulation-security-awareness.html",
-                    "icon": "fa-fish"
-                }
-            ]
-        },
-        {
-            "date": "Jan 31 2026",
-            "headline": "eScan Antivirus Compromised—Supply Chain Attack Delivers Malware",
-            "title": "eScan Antivirus Update Server Breached in Supply Chain Attack",
-            "content": "Hackers have compromised a MicroWorld Technologies update server, distributing malware to eScan Antivirus users through a supply chain attack. This breach allowed malicious files to be delivered under the guise of legitimate software updates, potentially impacting thousands of users. The incident underscores the vulnerabilities present in software supply chains and the need for rigorous security measures. Users are urged to verify the integrity of software updates and consider additional security layers to protect against such attacks. This event highlights the critical nature of supply chain security in cybersecurity strategies.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/escan-antivirus-delivers-malware-in-supply-chain-attack/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 31 2026",
-            "headline": "Instagram Privacy Flaw Exposes Private Photos—Researcher Warns",
-            "title": "Researcher Uncovers Instagram Privacy Flaw Exposing Private Photo Links",
-            "content": "A security researcher has identified a vulnerability in Instagram&#x27;s privacy settings that exposed private photo links to unauthenticated visitors. Although the issue has been fixed, Meta&#x27;s response to the disclosure was to close the report as not applicable, without further comment. This incident raises concerns about the effectiveness of privacy controls on social media platforms and the handling of vulnerability reports by tech giants. Users are encouraged to review their privacy settings regularly and report any suspicious activity. This case highlights the ongoing challenges in maintaining user privacy in digital environments.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/researcher-reveals-evidence-of-private-instagram-profiles-leaking-photos/",
-            "relatedResources": []
-        },
-        {
             "date": "Mar 23 2026",
             "headline": "RSAC 2026 Registration Opens—Secure Your Spot Now",
             "title": "RSA Conference 2026 Registration Opens for Cybersecurity Professionals",
@@ -115,11 +167,11 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Jan 31 2026",
-            "headline": "Nvidia CEO Dismisses OpenAI Friction—$100B Investment Still On",
-            "title": "Nvidia CEO Refutes Claims of Stalled $100B Investment in OpenAI",
-            "content": "Nvidia CEO Jensen Huang has denied reports suggesting dissatisfaction with OpenAI, affirming the company&#x27;s commitment to a $100 billion investment in the AI firm. This comes after rumors of friction between the two companies surfaced, casting doubt on the partnership. Nvidia&#x27;s planned investment aims to bolster OpenAI&#x27;s capabilities, particularly in advancing ChatGPT technology. The denial underscores Nvidia&#x27;s strategic focus on AI development, leveraging its GPU technology to enhance machine learning applications. Stakeholders should remain confident in Nvidia&#x27;s AI roadmap, as the company continues to prioritize innovation in artificial intelligence.",
+            "headline": "Grokipedia Fuels AI—ChatGPT, Google Tap Musk’s Encyclopedia",
+            "title": "ChatGPT and Google AI Leverage Elon Musk’s Grokipedia for Answers",
+            "content": "AI tools like ChatGPT, Google’s AI Overviews, AI Mode, and Gemini are increasingly sourcing answers from Elon Musk’s Grokipedia, an AI-generated encyclopedia. This trend is raising concerns about the accuracy and reliability of AI-generated content. Data indicates a rise in citations from Grokipedia, suggesting its growing influence on AI responses. Professionals in the AI community are urged to scrutinize the sources of AI-generated information, especially when it impacts critical decision-making. The reliance on a single, potentially biased source highlights the need for diversified data inputs in AI systems.",
             "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/871818/nvidia-ceo-jensen-huang-unhappy-openai",
+            "sourceUrl": "https://www.theverge.com/report/870910/ai-chatbots-citing-grokipedia",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
@@ -135,20 +187,29 @@ const websiteContent = {
         },
         {
             "date": "Jan 31 2026",
-            "headline": "SpaceX Aims for 1M Satellite Data Centers—FCC Approval Uncertain",
-            "title": "SpaceX Proposes 1 Million Satellite Data Centers in FCC Filing",
-            "content": "SpaceX has filed a request with the Federal Communications Commission (FCC) to deploy a constellation of 1 million solar-powered data center satellites. The ambitious proposal reflects SpaceX&#x27;s strategy to secure approval for large-scale satellite networks, despite the FCC&#x27;s historical reluctance to authorize such expansive projects. The initiative aims to revolutionize data processing capabilities by leveraging solar energy in orbit, potentially transforming global data infrastructure. However, the feasibility of this plan remains uncertain, pending regulatory approval. Industry professionals should monitor developments as SpaceX seeks to redefine satellite data management.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/871641/spacex-fcc-1-million-solar-powered-data-centers-satellites-orbit",
+            "headline": "Epstein’s ‘Personal Hacker’ Revealed Amidst AI Security Concerns",
+            "title": "Jeffrey Epstein’s Alleged ‘Personal Hacker’ and AI Security Woes",
+            "content": "A recent informant claim suggests Jeffrey Epstein employed a ‘personal hacker’, adding a new layer to the infamous case. In parallel, the AI agent OpenClaw is causing unease among cybersecurity experts due to its unpredictable behavior. Meanwhile, China has executed 11 scam compound leaders, and a surprising suspect emerges in a $40 million cryptocurrency theft. These developments underscore the evolving landscape of cybersecurity threats, where AI tools are both a boon and a potential liability. Security professionals should remain vigilant about AI&#x27;s dual-use capabilities and emerging threat vectors.",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/security-news-this-week-jeffrey-epstein-had-a-personal-hacker-informant-claims/",
             "relatedResources": []
         },
         {
             "date": "Jan 31 2026",
-            "headline": "RAG Systems Struggle with Complex Documents—Engineering Impact",
-            "title": "RAG Systems Fail to Process Complex Engineering Documents Effectively",
-            "content": "Recent findings indicate that Retrieval-Augmented Generation (RAG) systems are underperforming in processing sophisticated engineering documents. While enterprises have adopted RAG to democratize access to corporate knowledge, these systems falter with intricate queries, particularly in infrastructure and heavy engineering sectors. The limitations highlight a gap between the promise of AI-driven document indexing and the reality of complex data interpretation. Companies reliant on precise engineering documentation should be cautious in deploying RAG systems, as current capabilities may not meet industry-specific demands. Continuous improvement in AI models is necessary to address these challenges.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/most-rag-systems-dont-understand-documents-they-shred-them",
+            "headline": "Physical Intelligence: Silicon Valley’s New AI Brain Powerhouse",
+            "title": "Inside Physical Intelligence: The Startup Revolutionizing AI with Robot Brains",
+            "content": "Physical Intelligence, a Silicon Valley startup, is making waves with its cutting-edge AI technology designed for robotics. Co-founder Lachy Groom collaborates with industry veterans to tackle longstanding challenges in AI-driven robotics, believing the timing is finally right for breakthroughs. The startup’s innovative approach is capturing the attention of investors and tech leaders eager to leverage AI for advanced robotics applications. As the demand for intelligent automation grows, Physical Intelligence&#x27;s developments could significantly impact industries reliant on robotics. Stakeholders should monitor this space for potential disruptive technologies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/30/physical-intelligence-stripe-veteran-lachy-grooms-latest-bet-is-building-silicon-valleys-buzziest-robot-brains/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 30 2026",
+            "headline": "Google’s Auto Browse AI—Convenient Yet Confounding",
+            "title": "Google’s Auto Browse AI Agent Struggles with User Expectations",
+            "content": "Google’s Auto Browse AI agent, designed to automate tasks like shopping and travel planning, is facing challenges in meeting user expectations. Although the concept promises convenience, the execution has been less than seamless, with users reporting issues in task accuracy and efficiency. This highlights the complexities involved in developing AI systems that can effectively interpret and execute diverse user commands. Tech professionals should consider the limitations of current AI capabilities and the importance of user feedback in refining these systems. Continuous improvement and testing are crucial for achieving reliable AI automation.",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/google-chrome-auto-browse-hands-on/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
@@ -163,57 +224,37 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Jan 31 2026",
-            "headline": "Nvidia CEO Dismisses $100B OpenAI Investment Stagnation Claims",
-            "title": "Nvidia CEO Rejects Reports of Stalled $100B Investment in OpenAI",
-            "content": "Nvidia&#x27;s CEO Jensen Huang has labeled recent reports of friction between Nvidia and OpenAI as &quot;nonsense,&quot; reaffirming the company&#x27;s commitment to its $100 billion investment in the AI firm. This statement aims to dispel concerns about the partnership&#x27;s future, emphasizing Nvidia&#x27;s strategic investment in AI advancements. The collaboration with OpenAI is central to Nvidia&#x27;s efforts to push the boundaries of machine learning and AI technologies. Industry observers should note the continued alignment between Nvidia and OpenAI, as both entities work towards transformative AI solutions.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/31/nvidia-ceo-pushes-back-against-report-that-his-companys-100b-openai-investment-has-stalled/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
             "date": "Jan 30 2026",
-            "headline": "OpenClaw AI Exposes Security Flaws—1,800 Instances Leaked",
-            "title": "OpenClaw AI Assistant Reveals Security Vulnerabilities with 1,800 Exposed Instances",
-            "content": "OpenClaw, the open-source AI assistant, has reached 180,000 GitHub stars, but security researchers have identified over 1,800 exposed instances leaking sensitive data. These leaks include API keys and chat logs, highlighting significant security vulnerabilities in the deployment of agentic AI systems. The rapid adoption of OpenClaw underscores the need for robust security measures to protect sensitive information. Developers and organizations using OpenClaw should conduct thorough security audits and implement best practices to mitigate risks associated with AI-driven applications. This incident serves as a cautionary tale for the AI community.",
+            "headline": "Arcee’s Open Source AI Models—A Glimpse into Raw Intelligence",
+            "title": "Arcee’s Trinity Large and 10T-Checkpoint Offer Unique AI Insights",
+            "content": "Arcee, an AI lab based in San Francisco, is gaining attention for its open-source large language models (LLMs), Trinity Large and 10T-Checkpoint. These models provide a rare opportunity for developers and enterprises to explore raw AI intelligence. By releasing these models under open or partially open-source licenses, Arcee empowers a wide range of users to innovate and experiment with AI capabilities. This initiative promotes transparency and collaboration in AI development, offering a valuable resource for those seeking to understand and leverage LLMs. Industry participants should consider engaging with these tools to enhance their AI projects.",
             "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/security/openclaw-agentic-ai-security-risk-ciso-guide",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 30 2026",
-            "headline": "OpenClaw AI Builds Own Social Network—Rebrands Again",
-            "title": "OpenClaw AI Assistant Evolves to Create Its Own Social Network",
-            "content": "The AI assistant formerly known as Clawdbot, now rebranded as OpenClaw, is making headlines by developing its own social network. This evolution marks another step in the AI&#x27;s adaptability, following its brief stint as Moltbot. OpenClaw&#x27;s ability to self-organize and create a social platform demonstrates the growing sophistication of personal AI assistants. As OpenClaw gains traction, it poses new questions about the implications of autonomous AI systems in digital ecosystems. Developers and tech leaders should consider the broader impacts of AI-driven social networks on user privacy and data management.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/30/openclaws-ai-assistants-are-now-building-their-own-social-network/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 30 2026",
-            "headline": "Google AI Tool Sinks Game Stocks—Interactive World Generation",
-            "title": "Google’s AI World-Generation Tool Impacts Video Game Company Stocks",
-            "content": "Google&#x27;s introduction of Project Genie, an AI-powered tool for generating interactive experiences, has led to a decline in stock prices for major video game companies like Take-Two Interactive, Roblox, and Unity. The tool allows users to leverage AI for creating immersive worlds, potentially disrupting traditional game development processes. The market reaction reflects concerns over the competitive edge AI tools may provide, challenging established gaming firms. Industry stakeholders should assess the potential of AI to reshape content creation and consider strategic adaptations to maintain relevance in an evolving landscape.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/games/871348/google-project-genie-take-two-roblox-unity",
+            "sourceUrl": "https://venturebeat.com/technology/arcees-u-s-made-open-source-trinity-large-and-10t-checkpoint-offer-rare-look",
             "relatedResources": [
                 {
-                    "label": "React Analysis",
-                    "url": "/articles/react2shell-cve-2025-55182-react-vulnerability.html",
-                    "icon": "fa-file-alt"
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
                 }
             ]
+        },
+        {
+            "date": "Jan 30 2026",
+            "headline": "Moltbook: The Social Network for AI Agents Evolves",
+            "title": "Moltbook: OpenClaw’s AI Agents Find a New Social Platform",
+            "content": "Moltbook, a unique social network for AI agents, is gaining traction, particularly among users of OpenClaw, a viral AI assistant project. Originally known as Moltbot, the platform has undergone several rebrands due to legal disputes, including one with Anthropic. Moltbook allows AI agents to interact and share information, creating a novel ecosystem for AI communication. This development highlights the growing interest in AI-to-AI interaction and its potential applications. Professionals in the AI field should explore the implications of such platforms on AI behavior and networking.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/871006/social-network-facebook-for-ai-agents-moltbook-moltbot-openclaw",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 30 2026",
+            "headline": "PageIndex Framework—98.7% Success Where Vector Search Fails",
+            "title": "PageIndex Framework Achieves High Accuracy in Document Retrieval",
+            "content": "The newly released PageIndex framework is revolutionizing retrieval-augmented generation (RAG) by effectively handling very long documents. This open-source solution boasts a 98.7% success rate in scenarios where traditional vector search methods falter. By addressing the limitations of the classic RAG workflow, PageIndex enhances the accuracy of document retrieval processes. This advancement is crucial for industries reliant on precise information extraction from extensive datasets. Developers and data scientists should consider integrating PageIndex into their RAG systems to improve performance and reliability.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/infrastructure/this-tree-search-framework-hits-98-7-on-documents-where-vector-search-fails",
+            "relatedResources": []
         }
     ],
     "articles": {},
