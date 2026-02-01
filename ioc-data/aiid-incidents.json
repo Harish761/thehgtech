@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-481",
+      "incident_id": 481,
+      "title": "Purported Deepfake TikTok Video Reportedly Featured Joe Rogan Endorsing Supplement Brand",
+      "date": "2026-01-31",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1340",
       "incident_id": 1340,
       "title": "Purported AI-Generated Image Depicting JD Vance and Usha Vance in Public Altercation Circulated on S",
@@ -30,6 +38,38 @@
       "title": "Reported AI Impersonations of Pastors Used in Online Donation and Influence Scams",
       "date": "2026-01-31",
       "category": "fraud",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1356",
+      "incident_id": 1356,
+      "title": "Urban VPN Proxy Browser Extension Reportedly Harvested and Sold Private AI Chatbot Conversations via",
+      "date": "2026-01-31",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1357",
+      "incident_id": 1357,
+      "title": "White House Reportedly Shares Purportedly AI-Altered Arrest Photo Depicting Minnesota Protester Neki",
+      "date": "2026-01-31",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1358",
+      "incident_id": 1358,
+      "title": "Purportedly AI-Altered Images Reportedly Distort Evidence After Minneapolis Shooting of ICU Nurse Al",
+      "date": "2026-01-31",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1359",
+      "incident_id": 1359,
+      "title": "Reported Deepfake Influencers on TikTok Allegedly Used to Promote Fraudulent Wellness Products",
+      "date": "2026-01-31",
+      "category": "deepfake",
       "severity": "high"
     },
     {
@@ -1495,20 +1535,12 @@
       "date": "2025-11-06",
       "category": "deepfake",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1214",
-      "incident_id": 1214,
-      "title": "Donald Trump Reportedly Posts Purported AI-Modified Video of Chuck Schumer and Hakeem Jeffries Durin",
-      "date": "2025-11-02",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 188,
-    "last7Days": 4,
-    "last30Days": 34
+    "total": 192,
+    "last7Days": 9,
+    "last30Days": 39
   },
-  "lastUpdated": "2026-02-01T02:07:00.382272+05:30"
+  "lastUpdated": "2026-02-01T08:55:48.110886+05:30"
 }
