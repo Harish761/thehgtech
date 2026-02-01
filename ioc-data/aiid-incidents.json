@@ -9,6 +9,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1361",
+      "incident_id": 1361,
+      "title": "Waymo Autonomous Vehicle Reportedly Struck Child Near Elementary School in Santa Monica, California",
+      "date": "2026-02-01",
+      "category": "autonomous_vehicle",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-481",
       "incident_id": 481,
       "title": "Purported Deepfake TikTok Video Reportedly Featured Joe Rogan Endorsing Supplement Brand",
@@ -1546,9 +1554,9 @@
     }
   ],
   "stats": {
-    "total": 193,
-    "last7Days": 10,
-    "last30Days": 40
+    "total": 194,
+    "last7Days": 11,
+    "last30Days": 41
   },
-  "lastUpdated": "2026-02-01T18:40:29.115340+05:30"
+  "lastUpdated": "2026-02-01T22:14:16.756327+05:30"
 }
