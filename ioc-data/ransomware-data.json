@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-02-01T02:29:35.938000",
+  "last_updated": "2026-02-01T12:52:04.705535",
   "period": "Last 7 days",
-  "total_groups": 24,
-  "total_victims": 241,
+  "total_groups": 25,
+  "total_victims": 242,
   "groups": [
     {
       "name": "0Apt",
@@ -965,52 +965,6 @@
       ]
     },
     {
-      "name": "Nightspire",
-      "count": 4,
-      "victims": [
-        {
-          "name": "BrandingBusiness",
-          "date": "2026-01-29T14:09:14+00:00",
-          "url": "https://www.ransomware.live/id/QnJhbmRpbmdCdXNpbmVzc0BuaWdodHNwaXJl",
-          "discovered_date": "2026-01-29T14:09:14+00:00"
-        },
-        {
-          "name": "CMA Flooring & Design",
-          "date": "2026-01-28T16:47:59+00:00",
-          "url": "https://www.ransomware.live/id/Q01BIEZsb29yaW5nICYgRGVzaWduQG5pZ2h0c3BpcmU=",
-          "discovered_date": "2026-01-28T16:47:59+00:00"
-        },
-        {
-          "name": "DataBank",
-          "date": "2026-01-28T01:34:56+00:00",
-          "url": "https://www.ransomware.live/id/RGF0YUJhbmtAbmlnaHRzcGlyZQ==",
-          "discovered_date": "2026-01-28T01:34:56+00:00"
-        },
-        {
-          "name": "Abu Dhabi Indian School – Branch 1, Al Wathba",
-          "date": "2026-01-27T16:35:47+00:00",
-          "url": "https://www.ransomware.live/id/QWJ1IERoYWJpIEluZGlhbiBTY2hvb2wg4oCTIEJyYW5jaCAxLCBBbCBXYXRoYmFAbmlnaHRzcGlyZQ==",
-          "discovered_date": "2026-01-27T16:35:47+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "AE",
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        1,
-        2,
-        1,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Ransomhouse",
       "count": 3,
       "victims": [
@@ -1047,6 +1001,45 @@
         0,
         1,
         2,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Nightspire",
+      "count": 3,
+      "victims": [
+        {
+          "name": "BrandingBusiness",
+          "date": "2026-01-29T14:09:14+00:00",
+          "url": "https://www.ransomware.live/id/QnJhbmRpbmdCdXNpbmVzc0BuaWdodHNwaXJl",
+          "discovered_date": "2026-01-29T14:09:14+00:00"
+        },
+        {
+          "name": "CMA Flooring & Design",
+          "date": "2026-01-28T16:47:59+00:00",
+          "url": "https://www.ransomware.live/id/Q01BIEZsb29yaW5nICYgRGVzaWduQG5pZ2h0c3BpcmU=",
+          "discovered_date": "2026-01-28T16:47:59+00:00"
+        },
+        {
+          "name": "DataBank",
+          "date": "2026-01-28T01:34:56+00:00",
+          "url": "https://www.ransomware.live/id/RGF0YUJhbmtAbmlnaHRzcGlyZQ==",
+          "discovered_date": "2026-01-28T01:34:56+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        2,
+        1,
+        0,
         0,
         0
       ]
@@ -1119,6 +1112,41 @@
         2,
         0,
         0
+      ]
+    },
+    {
+      "name": "Dragonforce",
+      "count": 2,
+      "victims": [
+        {
+          "name": "Mullinax Ford",
+          "date": "2026-02-01 04:02:39.146373",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=8ba838e1-c373-4384-b8f8-217a377b7066",
+          "discovered_date": "2026-02-01T04:02:39.146373"
+        },
+        {
+          "name": "Mullinax Ford",
+          "date": "2026-02-01T04:02:39+00:00",
+          "url": "https://www.ransomware.live/id/TXVsbGluYXggRm9yZEBkcmFnb25mb3JjZQ==",
+          "discovered_date": "2026-02-01T04:02:39+00:00"
+        }
+      ],
+      "industries": [
+        "Manufacturing"
+      ],
+      "countries": [
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
       ]
     },
     {

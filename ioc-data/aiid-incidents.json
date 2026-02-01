@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1360",
+      "incident_id": 1360,
+      "title": "CISA Acting Director Reportedly Uploaded Sensitive Government Documents to Public ChatGPT Instance",
+      "date": "2026-02-01",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-481",
       "incident_id": 481,
       "title": "Purported Deepfake TikTok Video Reportedly Featured Joe Rogan Endorsing Supplement Brand",
@@ -1538,9 +1546,9 @@
     }
   ],
   "stats": {
-    "total": 192,
-    "last7Days": 9,
-    "last30Days": 39
+    "total": 193,
+    "last7Days": 10,
+    "last30Days": 40
   },
-  "lastUpdated": "2026-02-01T14:17:42.004023+05:30"
+  "lastUpdated": "2026-02-01T18:40:29.115340+05:30"
 }
