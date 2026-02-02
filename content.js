@@ -5,6 +5,141 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Feb 02 2026",
+            "headline": "Risk Culture Boosts Cyber Teams&#x27; Predictive Abilities",
+            "title": "How Risk Culture Enhances Cyber Teams&#x27; Predictive Capabilities",
+            "content": "Organizations entrenched in a reactive &quot;incident mode&quot; risk overlooking critical questions that could prevent future cyber incidents. When constant alerts become the norm, cybersecurity teams may become desensitized, failing to probe the underlying causes of repeated breaches. A robust risk culture encourages teams to shift from reactive to predictive, identifying and mitigating potential threats before they materialize. By fostering a proactive mindset, organizations can enhance their cybersecurity posture, reducing the frequency and impact of incidents. Cybersecurity leaders must prioritize cultivating a risk-aware culture to stay ahead of evolving threats.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4125172/how-risk-culture-turns-cyber-teams-predictive.html",
+            "relatedResources": [
+                {
+                    "label": "React Analysis",
+                    "url": "/articles/react2shell-cve-2025-55182-react-vulnerability.html",
+                    "icon": "fa-file-alt"
+                }
+            ]
+        },
+        {
+            "date": "Feb 02 2026",
+            "headline": "Stealthy RAT Enables Live Operator Chats on Windows",
+            "title": "New Windows RAT Allows Live Conversations with Operators",
+            "content": "Security researchers at Point Wild have uncovered a sophisticated Windows Remote Access Trojan (RAT) enabling live communication between attackers and infected systems. The malware employs a multi-stage infection process, leveraging standard Windows components to maintain persistent, memory-resident access. This stealthy approach allows attackers to exfiltrate sensitive data without detection. Organizations using Windows systems are at risk, particularly those with inadequate security measures. IT teams should enhance monitoring and implement robust endpoint protection to detect and mitigate such advanced threats.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4125567/this-stealthy-windows-rat-holds-live-conversations-with-its-operators.html",
+            "relatedResources": [
+                {
+                    "label": "Active Directory Security",
+                    "url": "/guides/active-directory-security-hardening.html",
+                    "icon": "fa-sitemap"
+                },
+                {
+                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
+                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
+                    "icon": "fa-shield-virus"
+                }
+            ]
+        },
+        {
+            "date": "Feb 02 2026",
+            "headline": "AI Transforms Malware—Cyber Defenses Must Evolve",
+            "title": "Cyber Insights 2026: AI&#x27;s Impact on Malware and Cyber Defense",
+            "content": "Artificial intelligence is reshaping the landscape of cyber threats, with AI-driven malware and ransomware becoming increasingly sophisticated. Security leaders emphasize the need for defenses that can adapt to AI-enhanced attacks, which are more targeted and difficult to detect. Identity-led intrusions are also on the rise, requiring enhanced authentication and monitoring strategies. Organizations must invest in AI-powered security solutions to keep pace with these evolving threats. As AI continues to advance, its dual role as both a tool for attackers and a defensive measure becomes a critical focus for cybersecurity professionals.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/cyber-insights-2026-malware-and-cyberattacks-in-the-age-of-ai/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Ransomware Response Playbook",
+                    "url": "/guides/ransomware-response-playbook.html",
+                    "icon": "fa-biohazard"
+                }
+            ]
+        },
+        {
+            "date": "Feb 02 2026",
+            "headline": "Weekly Cyber Recap: Botnets, Zero-Days, and AI Threats",
+            "title": "Weekly Cybersecurity Recap: Emerging Threats and Defenses",
+            "content": "The cybersecurity landscape continues to evolve with new threats and defenses emerging weekly. Recent highlights include the discovery of a proxy botnet, exploitation of an Office zero-day vulnerability, and a surge in MongoDB ransom attacks. AI hijacks and other novel threats underscore the need for continuous vigilance and adaptation. Each incident serves as a reminder of the dynamic nature of cyber risk and the importance of proactive security measures. Cybersecurity teams must stay informed and agile to effectively counter these evolving challenges.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/02/weekly-recap-proxy-botnet-office-zero.html",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Mongodb Analysis",
+                    "url": "/articles/mongodb-mongobleed-cve-2025-14847.html",
+                    "icon": "fa-file-alt"
+                },
+                {
+                    "label": "Zero-Day Detection Guide",
+                    "url": "/guides/zero-day-detection.html",
+                    "icon": "fa-exclamation-triangle"
+                }
+            ]
+        },
+        {
+            "date": "Feb 02 2026",
+            "headline": "1,400 MongoDB Databases Compromised by Single Threat Actor",
+            "title": "Over 1,400 MongoDB Databases Ransacked by Threat Actor",
+            "content": "A single threat actor has compromised over 1,400 out of 3,100 unprotected MongoDB databases, highlighting the critical need for robust security measures. These databases remain vulnerable due to misconfigurations and lack of proper access controls, allowing attackers to exfiltrate sensitive data and demand ransoms. Organizations using MongoDB must prioritize securing their instances by implementing strong authentication, encryption, and regular security audits. This incident underscores the persistent threat of database attacks and the importance of proactive database security strategies.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/over-1400-mongodb-databases-ransacked-by-threat-actor/",
+            "relatedResources": [
+                {
+                    "label": "Mongodb Analysis",
+                    "url": "/articles/mongodb-mongobleed-cve-2025-14847.html",
+                    "icon": "fa-file-alt"
+                }
+            ]
+        },
+        {
+            "date": "Feb 02 2026",
+            "headline": "Mid-Market Firms Tackle Complete Cyber Threat Lifecycle",
+            "title": "Securing the Mid-Market Across the Complete Threat Lifecycle",
+            "content": "Mid-market organizations face unique cybersecurity challenges, balancing proactive and reactive measures to protect their expanding attack surfaces. Effective security strategies must encompass the entire threat lifecycle, from prevention to detection and response. By implementing comprehensive security frameworks, these organizations can mitigate risks and prevent damage from cyberattacks. As threats evolve, mid-market firms must continually assess and enhance their cybersecurity posture, leveraging both technology and human expertise to stay ahead of attackers. The focus on lifecycle security is crucial for maintaining resilience in a dynamic threat landscape.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/02/securing-mid-market-across-complete.html",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "React Analysis",
+                    "url": "/articles/react2shell-cve-2025-55182-react-vulnerability.html",
+                    "icon": "fa-file-alt"
+                },
+                {
+                    "label": "SIEM & Log Analysis Guide",
+                    "url": "/guides/siem-log-analysis.html",
+                    "icon": "fa-chart-bar"
+                }
+            ]
+        },
+        {
+            "date": "Feb 02 2026",
+            "headline": "Microsoft Fixes Vanishing Password Sign-In Bug",
+            "title": "Microsoft Resolves Windows 11 Password Sign-In Disappearance Issue",
+            "content": "Microsoft has addressed a bug causing the password sign-in option to disappear from Windows 11 lock screens following updates since August 2025. This issue affected users&#x27; ability to access their devices using traditional credentials, leading to frustration and potential security concerns. The fix restores the missing functionality, ensuring users can reliably sign in with passwords. Microsoft advises users to apply the latest updates to resolve the issue and maintain system security. This incident highlights the importance of thorough testing in software updates to prevent user disruptions.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-bug-causing-password-sign-in-option-to-disappear/",
+            "relatedResources": [
+                {
+                    "label": "Active Directory Security",
+                    "url": "/guides/active-directory-security-hardening.html",
+                    "icon": "fa-sitemap"
+                }
+            ]
+        },
+        {
+            "date": "Feb 02 2026",
             "headline": "Quantum and AI Transform Cybersecurity Landscape",
             "title": "Quantum Computing and AI Herald New Era in Cybersecurity",
             "content": "The convergence of quantum computing and artificial intelligence (AI) is poised to revolutionize cybersecurity, marking a new era of both challenges and opportunities. As AI extends its influence across the tech landscape, it becomes crucial in addressing the complex security issues posed by quantum advancements. The potential for quantum computers to break traditional encryption methods poses a significant threat, prompting the need for quantum-resistant algorithms. Organizations must prepare for this shift by investing in research and development to safeguard data integrity. This technological evolution underscores the urgency for cybersecurity professionals to adapt to rapidly changing threats.",
@@ -28,80 +163,6 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Feb 01 2026",
-            "headline": "AI and IoT Revolutionize Manufacturing Security",
-            "title": "Manufacturing Sector Reimagined with AI and IoT Innovations",
-            "content": "The manufacturing industry is undergoing a transformation as artificial intelligence (AI) and the Internet of Things (IoT) reshape its security landscape. Integrating these technologies enhances operational efficiency and introduces new security challenges. AI-driven analytics enable predictive maintenance and real-time threat detection, while IoT devices streamline production processes. However, the increased connectivity also expands the attack surface, necessitating robust cybersecurity measures. Companies must adopt comprehensive strategies to protect sensitive data and maintain system integrity in this evolving environment.",
-            "source": "CSO Online",
-            "sourceUrl": "https://us.resources.cio.com/resources/enterprise-spotlight-manufacturing-reimagined/",
-            "relatedResources": [
-                {
-                    "label": "SIEM & Log Analysis Guide",
-                    "url": "/guides/siem-log-analysis.html",
-                    "icon": "fa-chart-bar"
-                }
-            ]
-        },
-        {
-            "date": "Feb 01 2026",
-            "headline": "MongoDB Extortion Threatens Data Integrity",
-            "title": "Exposed MongoDB Instances Targeted in Extortion Attacks",
-            "content": "Threat actors are exploiting exposed MongoDB databases in a wave of automated data extortion attacks, demanding ransoms to restore access. These attacks target databases left unsecured on the internet, often due to misconfigurations, leaving sensitive data vulnerable. The attackers demand low ransoms, making it financially tempting for victims to pay rather than risk data loss. Organizations using MongoDB should immediately secure their instances by implementing authentication and access controls. Regular audits and monitoring can help identify and mitigate these vulnerabilities before they are exploited.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/exposed-mongodb-instances-still-targeted-in-data-extortion-attacks/",
-            "relatedResources": [
-                {
-                    "label": "Mongodb Analysis",
-                    "url": "/articles/mongodb-mongobleed-cve-2025-14847.html",
-                    "icon": "fa-file-alt"
-                },
-                {
-                    "label": "API Security Best Practices",
-                    "url": "/guides/api-security-best-practices.html",
-                    "icon": "fa-plug"
-                }
-            ]
-        },
-        {
-            "date": "Feb 01 2026",
-            "headline": "Apple Enhances Privacy with Location Data Precision Control",
-            "title": "Apple Introduces Privacy Feature to Limit Location Tracking",
-            "content": "Apple has unveiled a new privacy feature allowing users to control the precision of location data shared with cellular networks on select iPhone and iPad models. This feature aims to enhance user privacy by reducing the granularity of location data, making it less useful for tracking purposes. It is part of Apple&#x27;s ongoing commitment to user privacy, providing users with more control over their personal information. Users can adjust these settings in their device&#x27;s privacy settings, balancing functionality with privacy needs. This update underscores the growing demand for privacy-focused features in consumer technology.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/apple/new-apple-privacy-feature-limits-location-tracking-on-iphones-ipads/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 31 2026",
-            "headline": "Ex-Google Engineer Convicted for AI Data Theft",
-            "title": "U.S. Convicts Former Google Engineer for AI Data Theft to China",
-            "content": "A U.S. federal jury has convicted Linwei Ding, a former Google software engineer, for stealing AI supercomputer data and sharing it with Chinese tech companies. The stolen data included proprietary information critical to Google&#x27;s AI research and development efforts. This case highlights the ongoing risks of corporate espionage and the importance of safeguarding intellectual property. Companies are urged to implement stringent access controls and monitor employee activities to prevent data breaches. The conviction serves as a warning to individuals considering exploiting their access to sensitive information.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/us-convicts-ex-google-engineer-for-sending-ai-tech-data-to-china/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 31 2026",
-            "headline": "Cloud Scam Targets Users with Fake Payment Alerts",
-            "title": "Cloud Storage Payment Scam Floods Inboxes with Fake Renewals",
-            "content": "A widespread cloud storage subscription scam is inundating users with fraudulent emails warning of impending account suspensions due to alleged payment failures. These emails aim to trick recipients into providing payment information or clicking on malicious links, potentially leading to data theft or financial loss. The scam targets users globally, exploiting common fears of losing access to valuable data. Users are advised to verify the legitimacy of such emails directly with their service providers and avoid clicking on suspicious links. This incident underscores the need for vigilance against phishing attacks.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cloud-storage-payment-scam-floods-inboxes-with-fake-renewals/",
-            "relatedResources": [
-                {
-                    "label": "Phishing & Security Awareness",
-                    "url": "/guides/phishing-simulation-security-awareness.html",
-                    "icon": "fa-fish"
-                }
-            ]
-        },
-        {
             "date": "Mar 23 2026",
             "headline": "RSAC 2026 Registration Opens—Secure Your Spot Now",
             "title": "RSA Conference 2026 Registration Opens for Cybersecurity Professionals",
@@ -120,12 +181,27 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Feb 01 2026",
-            "headline": "AI Layoffs: Excuse or Reality?",
-            "title": "Companies Blame AI for Layoffs—But Is It Just &#x27;AI-washing&#x27;?",
-            "content": "Recent waves of layoffs in tech companies have raised questions about whether AI is being used as a convenient scapegoat. As firms announce job cuts, some analysts suggest that &quot;AI-washing&quot;—using AI as a pretext for layoffs—might be at play. Companies claim automation and AI advancements necessitate workforce reductions, but critics argue that financial pressures or poor management are the true drivers. This trend affects thousands of employees across sectors like customer service and data analysis, where AI tools are increasingly implemented. Professionals should scrutinize these claims and consider the broader economic context when assessing job security and organizational strategies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/01/ai-layoffs-or-ai-washing/",
+            "date": "Feb 02 2026",
+            "headline": "SAP Overhauls UK Tax System with AI—HMRC Leads Modernization",
+            "title": "HMRC Selects SAP to Modernize UK Tax Infrastructure with AI Integration",
+            "content": "The UK&#x27;s HM Revenue and Customs (HMRC) has partnered with SAP to revamp its core revenue systems, emphasizing AI as a cornerstone of its tax administration strategy. This initiative marks a significant shift from merely layering AI over existing systems to a complete overhaul of the infrastructure. The transformation aims to enhance efficiency, accuracy, and responsiveness in tax processing. Public sector bodies are increasingly adopting such comprehensive automation strategies to meet modern demands. This change is expected to streamline operations and improve service delivery for taxpayers across the UK.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/how-sap-modernising-hmrc-tax-infrastructure-with-ai/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 02 2026",
+            "headline": "ThoughtSpot Empowers Analytics with Agentic AI—Transforming Data Insights",
+            "title": "ThoughtSpot Introduces Agentic AI to Revolutionize Modern Analytics for Leaders",
+            "content": "ThoughtSpot is leveraging agentic AI to redefine the landscape of data analytics, offering unprecedented speed and precision in deriving insights. This development is crucial for data and analytics leaders who face the challenge of not only recognizing the need for AI but also implementing it effectively. ThoughtSpot&#x27;s solutions are designed to empower organizations to navigate these complexities, optimizing their data analytics capabilities. As AI continues to evolve, companies are urged to embrace these advancements to maintain competitive edges and drive informed decision-making processes.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/thoughtspot-on-the-new-fleet-of-agents-delivering-modern-analytics/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
@@ -135,21 +211,27 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Feb 01 2026",
-            "headline": "Tether CEO Returns to U.S. Amid Regulatory Scrutiny",
-            "title": "Tether CEO Reemerges in U.S. as Regulatory Pressure Mounts",
-            "content": "After years of avoiding the United States, Tether&#x27;s CEO has returned to American soil, signaling a potential shift in the company&#x27;s strategy amidst increasing regulatory scrutiny. Previously operating offshore, the CEO&#x27;s presence in the U.S. comes as regulators and prosecutors intensify investigations into Tether&#x27;s operations and financial practices. This development could influence Tether&#x27;s compliance strategies and its standing in the cryptocurrency market. Industry observers should monitor how this move affects Tether&#x27;s transparency and regulatory engagements moving forward.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/01/why-tethers-ceo-is-everywhere-right-now/",
-            "relatedResources": []
+            "date": "Feb 02 2026",
+            "headline": "AI Notetakers Revolutionize Meetings—Transcription and Translation in Real-Time",
+            "title": "AI-Powered Notetaking Devices Enhance Meeting Efficiency with Transcription and Translation",
+            "content": "AI-driven notetaking devices are transforming how meetings are documented, offering real-time transcription and summarization of audio content. Some models even provide live translation, making them invaluable in multilingual settings. These tools can streamline meeting processes by generating actionable items and summaries, enhancing productivity and ensuring no detail is missed. As businesses increasingly rely on virtual and hybrid meetings, these devices cater to the growing demand for efficient, accurate documentation. Organizations should consider integrating these technologies to boost collaboration and communication.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/02/ai-notetaker-hardware-devices-pins-pendants-record-transcribe/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
         },
         {
-            "date": "Feb 01 2026",
-            "headline": "Enterprises Misjudge RAG—A Foundational AI Dependency",
-            "title": "RAG&#x27;s Role Misunderstood by Enterprises in AI Deployments",
-            "content": "Enterprises adopting Retrieval-Augmented Generation (RAG) to enhance Large Language Models (LLMs) with proprietary data are discovering that retrieval is a critical system dependency, not just an add-on. Many organizations fail to recognize the integral role of data retrieval in AI model performance, impacting decision-making processes and operational efficiency. As AI systems become more embedded in business operations, understanding RAG&#x27;s full capabilities is essential for maximizing AI investments. Companies should reassess their AI strategies to ensure they are leveraging RAG effectively to support robust, data-driven decisions.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/enterprises-are-measuring-the-wrong-part-of-rag",
+            "date": "Jan 31 2026",
+            "headline": "Nvidia CEO Dismisses OpenAI Tensions—$100B Investment on Track",
+            "title": "Nvidia CEO Jensen Huang Denies Friction with OpenAI Amid Investment Plans",
+            "content": "Nvidia CEO Jensen Huang has refuted claims of dissatisfaction with OpenAI, affirming the company&#x27;s commitment to a substantial $100 billion investment in the ChatGPT developer. Despite recent rumors suggesting tensions, Huang emphasized Nvidia&#x27;s strategic interest in advancing AI capabilities through this partnership. This investment underscores Nvidia&#x27;s dedication to maintaining its leadership in the AI sector, leveraging OpenAI&#x27;s innovations. Stakeholders are advised to view these developments as part of Nvidia&#x27;s broader strategy to enhance AI infrastructure and applications.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/871818/nvidia-ceo-jensen-huang-unhappy-openai",
             "relatedResources": [
                 {
                     "label": "LLM Security & Prompt Injection",
@@ -159,45 +241,12 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Feb 01 2026",
-            "headline": "Iran&#x27;s Record Internet Blackout Fails to Quell Protests",
-            "title": "Iran&#x27;s Longest Internet Blackout Amidst Protests Highlights Digital Control",
-            "content": "Following widespread protests in January, Iran imposed its longest internet blackout to date, aiming to curb the spread of dissent. Despite the regime&#x27;s efforts, demonstrations persisted, although the information flow was significantly hindered, affecting both domestic and international communications. This blackout underscores the regime&#x27;s reliance on digital control to maintain power, raising concerns about internet freedom and human rights. Observers should be aware of the implications for digital rights and the potential for similar tactics in other authoritarian regimes.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/policy/871848/iran-blackout-internet-mahsa-alimardani",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 01 2026",
-            "headline": "Indonesia Eases Ban on Grok Chatbot",
-            "title": "Indonesia Lifts Ban on xAI&#x27;s Grok Chatbot with Conditions",
-            "content": "Indonesia has conditionally lifted its ban on xAI&#x27;s conversational AI, Grok, following similar actions by Malaysia and the Philippines. The decision allows Grok to operate under specific regulatory conditions, reflecting a cautious approach to AI integration. This move is part of a broader trend in Southeast Asia to balance technological innovation with regulatory oversight. Companies using Grok should ensure compliance with the stipulated guidelines to avoid potential legal issues and maximize the chatbot&#x27;s utility in customer engagement and data collection.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/01/indonesia-conditionally-lifts-ban-on-grok/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 01 2026",
-            "headline": "India Offers Tax-Free AI Investments Until 2047",
-            "title": "India Lures Global AI Investments with Zero Tax Offer Until 2047",
-            "content": "In a bold move to attract global AI workloads, India has announced a zero-tax policy for AI investments until 2047. This initiative coincides with significant data center expansions by tech giants like Amazon, Google, and Microsoft in the country. By eliminating taxes, India aims to position itself as a leading hub for AI development and deployment. This policy is expected to drive substantial foreign investment and technological growth, making India a pivotal player in the global AI landscape. Companies considering AI investments should explore opportunities in India to capitalize on this tax incentive.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/01/india-offers-zero-taxes-through-2047-to-lure-global-ai-workloads/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Feb 01 2026",
-            "headline": "Musk&#x27;s Mega-Merger: SpaceX, xAI, Tesla Unite",
-            "title": "Elon Musk Merges SpaceX, xAI, and Tesla into Personal Conglomerate",
-            "content": "Elon Musk is reportedly merging SpaceX, xAI, and Tesla, creating a personal conglomerate reminiscent of historical industrial giants. This strategic alignment aims to streamline operations and leverage synergies across aerospace, AI, and automotive sectors. By consolidating these entities, Musk seeks to enhance innovation and efficiency, potentially reshaping the tech landscape. The merger could lead to groundbreaking advancements, but also raises questions about regulatory challenges and market dominance. Stakeholders should watch for developments in governance and competitive dynamics as this conglomerate takes shape.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/01/bye-bye-corporate-conglomerates-hello-personal-conglomerates/",
+            "date": "Jan 31 2026",
+            "headline": "SpaceX Plans 1M Satellite Data Centers—FCC Approval Sought",
+            "title": "SpaceX Proposes 1 Million Solar-Powered Data Centers in Orbit",
+            "content": "SpaceX has submitted a proposal to the FCC to deploy a constellation of one million solar-powered data center satellites. While the FCC is expected to scrutinize the feasibility of such an expansive network, SpaceX&#x27;s strategy often involves ambitious requests to push technological boundaries. This initiative aims to revolutionize data processing and storage by leveraging solar energy and orbital positioning. Industry experts are closely monitoring this development, which could significantly impact data infrastructure and energy consumption models globally.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/871641/spacex-fcc-1-million-solar-powered-data-centers-satellites-orbit",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
@@ -205,6 +254,24 @@ const websiteContent = {
                     "icon": "fa-brain"
                 }
             ]
+        },
+        {
+            "date": "Jan 31 2026",
+            "headline": "RAG Systems Fail on Complex Docs—Enterprises Face Challenges",
+            "title": "RAG Systems Struggle with Complex Documents, Hindering Enterprise Knowledge Access",
+            "content": "Despite the widespread adoption of Retrieval-Augmented Generation (RAG) systems in enterprises, these tools often fall short when processing sophisticated documents. Industries reliant on detailed engineering specifications find RAG systems inadequate for extracting precise information. This shortcoming highlights the need for more advanced AI solutions capable of understanding complex data structures. Organizations must reassess their knowledge management strategies to ensure they can fully leverage their information assets. As AI technology evolves, addressing these limitations will be crucial for maintaining operational efficiency.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/most-rag-systems-dont-understand-documents-they-shred-them",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 31 2026",
+            "headline": "Nvidia CEO Rejects OpenAI Investment Stall Rumors—Commitment Strong",
+            "title": "Nvidia CEO Jensen Huang Rebuts Claims of Stalled $100B OpenAI Investment",
+            "content": "Nvidia&#x27;s CEO Jensen Huang has dismissed reports of friction between Nvidia and OpenAI, reiterating the company&#x27;s unwavering commitment to its $100 billion investment in the AI firm. Huang labeled the rumors as &quot;nonsense,&quot; emphasizing the strategic importance of the partnership to Nvidia&#x27;s future AI endeavors. This clarification aims to reassure stakeholders of Nvidia&#x27;s dedication to advancing AI technologies and its collaborative efforts with OpenAI. Industry observers should note this as a reaffirmation of Nvidia&#x27;s strategic priorities in the AI landscape.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/01/31/nvidia-ceo-pushes-back-against-report-that-his-companys-100b-openai-investment-has-stalled/",
+            "relatedResources": []
         }
     ],
     "articles": {},
