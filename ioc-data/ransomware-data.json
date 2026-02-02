@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-02-02T02:12:58.435040",
+  "last_updated": "2026-02-02T13:01:29.270251",
   "period": "Last 7 days",
-  "total_groups": 26,
-  "total_victims": 252,
+  "total_groups": 25,
+  "total_victims": 258,
   "groups": [
     {
       "name": "0Apt",
@@ -97,8 +97,32 @@
     },
     {
       "name": "Qilin",
-      "count": 25,
+      "count": 33,
       "victims": [
+        {
+          "name": "Jcm Agricola",
+          "date": "2026-02-02 07:40:41.566782",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=326b5082-c44a-323d-9751-845ec539f249",
+          "discovered_date": "2026-02-02T07:40:41.566782"
+        },
+        {
+          "name": "Sprokkit",
+          "date": "2026-02-02 07:39:22.409137",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=4ad73744-e7b7-3d78-8808-45b929b0a632",
+          "discovered_date": "2026-02-02T07:39:22.409137"
+        },
+        {
+          "name": "Stephenson Ziegenhorn & Bernard",
+          "date": "2026-02-02 07:38:42.231259",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=41f47f0e-68ff-3b21-a221-e3fa7c34a4b4",
+          "discovered_date": "2026-02-02T07:38:42.231259"
+        },
+        {
+          "name": "INGUS",
+          "date": "2026-02-02 07:40:00.288579",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=e76562a5-3295-3414-908b-9778f0bc3f9d",
+          "discovered_date": "2026-02-02T07:40:00.288579"
+        },
         {
           "name": "SoCal ROC",
           "date": "2026-02-01 00:58:47.454829",
@@ -134,30 +158,6 @@
           "date": "2026-01-30 13:37:48.959369",
           "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=ddcd2577-a257-3449-8c63-325c8c6dc356",
           "discovered_date": "2026-01-30T13:37:48.959369"
-        },
-        {
-          "name": "Tulsa International Airport",
-          "date": "2026-01-30 08:12:29.667823",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=416e12c2-7247-3c6c-8b3b-6a3bb7a694bb",
-          "discovered_date": "2026-01-30T08:12:29.667823"
-        },
-        {
-          "name": "Cooperativa de Hostelería de Navarra",
-          "date": "2026-01-30 15:11:11.116955",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=3d04004c-e380-335c-afb8-1f9ed40a57a0",
-          "discovered_date": "2026-01-30T15:11:11.116955"
-        },
-        {
-          "name": "SoCal ROC",
-          "date": "2026-02-01T00:58:47+00:00",
-          "url": "https://www.ransomware.live/id/U29DYWwgUk9DQHFpbGlu",
-          "discovered_date": "2026-02-01T00:58:47+00:00"
-        },
-        {
-          "name": "MBC",
-          "date": "2026-01-30T15:11:50+00:00",
-          "url": "https://www.ransomware.live/id/TUJDQHFpbGlu",
-          "discovered_date": "2026-01-30T15:11:50+00:00"
         }
       ],
       "industries": [
@@ -182,12 +182,12 @@
         14,
         0,
         2,
-        0
+        8
       ]
     },
     {
       "name": "Incransom",
-      "count": 19,
+      "count": 17,
       "victims": [
         {
           "name": "Foamtec International",
@@ -220,6 +220,18 @@
           "discovered_date": "2026-01-30T07:39:02.239291"
         },
         {
+          "name": "Best Attorneys",
+          "date": "2026-02-02 04:54:22.470352",
+          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/697e0f238f1d14b743361209",
+          "discovered_date": "2026-02-02T04:54:22.470352"
+        },
+        {
+          "name": "Best Attorneys",
+          "date": "2026-02-02T04:54:22+00:00",
+          "url": "https://www.ransomware.live/id/QmVzdCBBdHRvcm5leXNAaW5jcmFuc29t",
+          "discovered_date": "2026-02-02T04:54:22+00:00"
+        },
+        {
           "name": "Foamtec International",
           "date": "2026-02-01T16:22:13+00:00",
           "url": "https://www.ransomware.live/id/Rm9hbXRlYyBJbnRlcm5hdGlvbmFsQGluY3JhbnNvbQ==",
@@ -236,18 +248,6 @@
           "date": "2026-01-31T00:31:54+00:00",
           "url": "https://www.ransomware.live/id/QmVhY29uIE11dHVhbCBJbnN1cmFuY2VAaW5jcmFuc29t",
           "discovered_date": "2026-01-31T00:31:54+00:00"
-        },
-        {
-          "name": "PK PINHÃO & KOIFFMAN ATTORNEYS AT LAW",
-          "date": "2026-01-30T07:39:02+00:00",
-          "url": "https://www.ransomware.live/id/UEsgUElOSMODTyAmIEtPSUZGTUFOIEFUVE9STkVZUyBBVCBMQVdAaW5jcmFuc29t",
-          "discovered_date": "2026-01-30T07:39:02+00:00"
-        },
-        {
-          "name": "DIEHL & CELLA ADVOGADOS ASSOCIADOS",
-          "date": "2026-01-30T07:38:47+00:00",
-          "url": "https://www.ransomware.live/id/RElFSEwgJiBDRUxMQSBBRFZPR0FET1MgQVNTT0NJQURPU0BpbmNyYW5zb20=",
-          "discovered_date": "2026-01-30T07:38:47+00:00"
         }
       ],
       "industries": [
@@ -259,20 +259,109 @@
       "countries": [
         "AU",
         "BR",
-        "GB",
         "GE",
-        "TH"
+        "US"
       ],
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        5,
+        1,
         3,
         1,
         4,
         2,
         4,
-        0
+        2
+      ]
+    },
+    {
+      "name": "Everest",
+      "count": 14,
+      "victims": [
+        {
+          "name": "Polycom",
+          "date": "2026-02-02 02:37:43.103527",
+          "url": "http://ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad.onion/news/Polycom/",
+          "discovered_date": "2026-02-02T02:37:43.103527"
+        },
+        {
+          "name": "Iron Mountain",
+          "date": "2026-02-02 02:37:23.385794",
+          "url": "http://ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad.onion/news/Iron_Mountain/",
+          "discovered_date": "2026-02-02T02:37:23.385794"
+        },
+        {
+          "name": "Shinwa Co Ltd",
+          "date": "2026-02-01 22:21:59.018020",
+          "url": "http://ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad.onion/news/Shinwa_Co_Ltd/",
+          "discovered_date": "2026-02-01T22:21:59.018020"
+        },
+        {
+          "name": "Hosowaka Micron Group",
+          "date": "2026-02-01 22:21:40.026154",
+          "url": "http://ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad.onion/news/Hosowaka_Micron_Group/",
+          "discovered_date": "2026-02-01T22:21:40.026154"
+        },
+        {
+          "name": "Stellium",
+          "date": "2026-02-01 17:33:36.292937",
+          "url": "http://ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad.onion/news/Stellium/",
+          "discovered_date": "2026-02-01T17:33:36.292937"
+        },
+        {
+          "name": "Acu Trans Solutions LLC",
+          "date": "2026-02-01 17:33:15.812250",
+          "url": "http://ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad.onion/news/Acu_Trans_Solutions_LLC/",
+          "discovered_date": "2026-02-01T17:33:15.812250"
+        },
+        {
+          "name": "SIGMA Processing Group",
+          "date": "2026-02-01 17:32:55.156768",
+          "url": "http://ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad.onion/news/SIGMA_Processing_Group/",
+          "discovered_date": "2026-02-01T17:32:55.156768"
+        },
+        {
+          "name": "Polycom",
+          "date": "2026-02-02T02:37:43+00:00",
+          "url": "https://www.ransomware.live/id/UG9seWNvbUBldmVyZXN0",
+          "discovered_date": "2026-02-02T02:37:43+00:00"
+        },
+        {
+          "name": "Iron Mountain",
+          "date": "2026-02-02T02:37:23+00:00",
+          "url": "https://www.ransomware.live/id/SXJvbiBNb3VudGFpbkBldmVyZXN0",
+          "discovered_date": "2026-02-02T02:37:23+00:00"
+        },
+        {
+          "name": "Shinwa Co Ltd",
+          "date": "2026-02-01T22:21:59+00:00",
+          "url": "https://www.ransomware.live/id/U2hpbndhIENvIEx0ZEBldmVyZXN0",
+          "discovered_date": "2026-02-01T22:21:59+00:00"
+        }
+      ],
+      "industries": [
+        "Business Services",
+        "Manufacturing",
+        "Not Found",
+        "Technology",
+        "Transportation/Logistics"
+      ],
+      "countries": [
+        "DE",
+        "GB",
+        "JP",
+        "US"
+      ],
+      "trend": "up",
+      "trend_percentage": 15,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        10,
+        4
       ]
     },
     {
@@ -522,11 +611,11 @@
         "Technology"
       ],
       "countries": [
+        "BR",
         "DE",
         "FR",
         "ID",
-        "PL",
-        "TW"
+        "PL"
       ],
       "trend": "up",
       "trend_percentage": 15,
@@ -542,7 +631,7 @@
     },
     {
       "name": "Devman",
-      "count": 11,
+      "count": 10,
       "victims": [
         {
           "name": "woodwardoralsurgery.com",
@@ -614,103 +703,15 @@
         "SJ",
         "US"
       ],
-      "trend": "up",
-      "trend_percentage": 15,
+      "trend": "stable",
+      "trend_percentage": 0,
       "daily_counts": [
-        1,
+        0,
         4,
         2,
         4,
         0,
         0,
-        0
-      ]
-    },
-    {
-      "name": "Everest",
-      "count": 10,
-      "victims": [
-        {
-          "name": "Shinwa Co Ltd",
-          "date": "2026-02-01 22:21:59.018020",
-          "url": "http://ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad.onion/news/Shinwa_Co_Ltd/",
-          "discovered_date": "2026-02-01T22:21:59.018020"
-        },
-        {
-          "name": "Hosowaka Micron Group",
-          "date": "2026-02-01 22:21:40.026154",
-          "url": "http://ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad.onion/news/Hosowaka_Micron_Group/",
-          "discovered_date": "2026-02-01T22:21:40.026154"
-        },
-        {
-          "name": "Stellium",
-          "date": "2026-02-01 17:33:36.292937",
-          "url": "http://ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad.onion/news/Stellium/",
-          "discovered_date": "2026-02-01T17:33:36.292937"
-        },
-        {
-          "name": "Acu Trans Solutions LLC",
-          "date": "2026-02-01 17:33:15.812250",
-          "url": "http://ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad.onion/news/Acu_Trans_Solutions_LLC/",
-          "discovered_date": "2026-02-01T17:33:15.812250"
-        },
-        {
-          "name": "SIGMA Processing Group",
-          "date": "2026-02-01 17:32:55.156768",
-          "url": "http://ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad.onion/news/SIGMA_Processing_Group/",
-          "discovered_date": "2026-02-01T17:32:55.156768"
-        },
-        {
-          "name": "Shinwa Co Ltd",
-          "date": "2026-02-01T22:21:59+00:00",
-          "url": "https://www.ransomware.live/id/U2hpbndhIENvIEx0ZEBldmVyZXN0",
-          "discovered_date": "2026-02-01T22:21:59+00:00"
-        },
-        {
-          "name": "Hosowaka Micron Group",
-          "date": "2026-02-01T22:21:40+00:00",
-          "url": "https://www.ransomware.live/id/SG9zb3dha2EgTWljcm9uIEdyb3VwQGV2ZXJlc3Q=",
-          "discovered_date": "2026-02-01T22:21:40+00:00"
-        },
-        {
-          "name": "Stellium",
-          "date": "2026-02-01T17:33:36+00:00",
-          "url": "https://www.ransomware.live/id/U3RlbGxpdW1AZXZlcmVzdA==",
-          "discovered_date": "2026-02-01T17:33:36+00:00"
-        },
-        {
-          "name": "Acu Trans Solutions LLC",
-          "date": "2026-02-01T17:33:15+00:00",
-          "url": "https://www.ransomware.live/id/QWN1IFRyYW5zIFNvbHV0aW9ucyBMTENAZXZlcmVzdA==",
-          "discovered_date": "2026-02-01T17:33:15+00:00"
-        },
-        {
-          "name": "SIGMA Processing Group",
-          "date": "2026-02-01T17:32:55+00:00",
-          "url": "https://www.ransomware.live/id/U0lHTUEgUHJvY2Vzc2luZyBHcm91cEBldmVyZXN0",
-          "discovered_date": "2026-02-01T17:32:55+00:00"
-        }
-      ],
-      "industries": [
-        "Manufacturing",
-        "Not Found",
-        "Transportation/Logistics"
-      ],
-      "countries": [
-        "DE",
-        "GB",
-        "JP",
-        "US"
-      ],
-      "trend": "stable",
-      "trend_percentage": 0,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        10,
         0
       ]
     },
@@ -1263,74 +1264,6 @@
       ]
     },
     {
-      "name": "Worldleaks",
-      "count": 2,
-      "victims": [
-        {
-          "name": "FluidOne",
-          "date": "2026-01-30 19:09:31.540935",
-          "url": "https://worldleaksartrjm3c6vasllvgacbi5u3mgzkluehrzhk2jz4taufuid.onion/companies/1702029443",
-          "discovered_date": "2026-01-30T19:09:31.540935"
-        },
-        {
-          "name": "FluidOne",
-          "date": "2026-01-30T19:09:31+00:00",
-          "url": "https://www.ransomware.live/id/Rmx1aWRPbmVAd29ybGRsZWFrcw==",
-          "discovered_date": "2026-01-30T19:09:31+00:00"
-        }
-      ],
-      "industries": [
-        "Telecommunication"
-      ],
-      "countries": [
-        "GB"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        2,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Shinyhunters",
-      "count": 2,
-      "victims": [
-        {
-          "name": "Bumble Inc.",
-          "date": "2026-01-28T20:46:25+00:00",
-          "url": "https://www.ransomware.live/id/QnVtYmxlIEluYy5Ac2hpbnlodW50ZXJz",
-          "discovered_date": "2026-01-28T20:46:25+00:00"
-        },
-        {
-          "name": "Match Group",
-          "date": "2026-01-27T22:44:04+00:00",
-          "url": "https://www.ransomware.live/id/TWF0Y2ggR3JvdXBAc2hpbnlodW50ZXJz",
-          "discovered_date": "2026-01-27T22:44:04+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Beast",
       "count": 1,
       "victims": [
@@ -1432,6 +1365,33 @@
         0,
         0,
         1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Shinyhunters",
+      "count": 1,
+      "victims": [
+        {
+          "name": "Bumble Inc.",
+          "date": "2026-01-28T20:46:25+00:00",
+          "url": "https://www.ransomware.live/id/QnVtYmxlIEluYy5Ac2hpbnlodW50ZXJz",
+          "discovered_date": "2026-01-28T20:46:25+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        1,
+        0,
         0,
         0,
         0,
