@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1260",
+      "incident_id": 1260,
+      "title": "Purported Deepfake of Andrew Forrest Used to Promote Fraudulent 'Quantum AI' Crypto Platform on Face",
+      "date": "2026-02-02",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
       "id": "AIID-1360",
       "incident_id": 1360,
       "title": "CISA Acting Director Reportedly Uploaded Sensitive Government Documents to Public ChatGPT Instance",
@@ -1521,14 +1529,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1260",
-      "incident_id": 1260,
-      "title": "AI-Generated Deepfake of Andrew Forrest Used to Promote Fraudulent 'Quantum AI' Crypto Platform on F",
-      "date": "2025-11-08",
-      "category": "deepfake",
-      "severity": "high"
-    },
-    {
       "id": "AIID-1261",
       "incident_id": 1261,
       "title": "Alleged AI-Generated Deepfake of Western Australia Premier Roger Cook Used in YouTube Investment Sca",
@@ -1555,8 +1555,8 @@
   ],
   "stats": {
     "total": 194,
-    "last7Days": 11,
-    "last30Days": 40
+    "last7Days": 12,
+    "last30Days": 41
   },
-  "lastUpdated": "2026-02-02T18:51:58.970588+05:30"
+  "lastUpdated": "2026-02-02T22:26:33.143205+05:30"
 }
