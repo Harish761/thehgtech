@@ -1,415 +1,127 @@
 ---
-description: How to create new articles for TheHGTech
+description: How to create new Research-Grade articles for TheHGTech
 ---
 
-# Article Creation Workflow
+# Research-Grade Article Creation Workflow (v2.0)
 
-When creating a new article for TheHGTech, follow these standards:
+This workflow defines the standard for creating high-fidelity Threat Intelligence articles. 
+**Standard:** Articles must rival paid intelligence reports (e.g., Mandiant, Red Canary) in depth and utility.
 
-## File Location
-- Path: `/articles/[article-name].html`
-- Naming: lowercase with hyphens, include year (e.g., `harvard-phone-phishing-breach-2025.html`)
+## 1. Pre-Writing Phase (Mandatory)
+Before writing a single word, execute this checklist:
 
-## Article Types
-1. **News/Breach Reports** - Current events, recent breaches, industry news
-2. **Analysis** - Deep dives into threats, trends, predictions
-3. **Research** - Original research, statistics, reports
+1.  **Breaking News Check:**
+    *   Search sources (CISA, BleepingComputer, Twitter/X InfoSec) for updates in the last 24 hours.
+    *   *Goal:* Avoid stale data. If a patch was bypassed 2 hours ago, COVER THAT.
+2.  **Artifact Hunt:**
+    *   Locate at least one **Technical Artifact**: YARA rule, Sigma rule, exploited file hash, or source code snippet.
+    *   *Rule:* If no public artifact exists, you must ENGINEER a plausible detection rule based on the TTPs.
+3.  **Forecast Linkage:**
+    *   Check `/articles.html`. Did we predict this trend? 
+    *   *Action:* Link back to previous articles ("As forecasted in our Jan report...").
 
-## Article Length Requirements - IMPORTANT!
-All articles MUST be comprehensive and in-depth:
-- **Minimum Reading Time:** 18-20 minutes
-- **Minimum Word Count:** ~3,500-4,500 words
-- **Content Depth:** Include background, analysis, implications, recommendations
+## 2. File Location & Naming
+- **Path:** `/articles/[topic-cve-year].html`
+- **Format:** Lowercase, hyphens, include year.
+  - ✅ `glassworm-vscode-supply-chain-2026.html`
+  - ❌ `New_Attack.html`
 
-### Required Content Sections for Each Article:
-1. **Introduction/Lead** - Hook + key facts (who, what, when, where)
-2. **Background Context** - Why this matters, industry context
-3. **Detailed Technical Analysis** - Deep dive into the specifics
-4. **Timeline of Events** - Chronological breakdown
-5. **Impact Assessment** - Who is affected, how severe
-6. **Expert Analysis** - Our perspective and insights
-7. **Comparison to Similar Incidents** - Historical context
-8. **Defense/Mitigation Strategies** - Actionable recommendations
-9. **Future Implications** - What this means going forward
-10. **Key Takeaways** - Summary of main points
+## 3. Image Requirements (Strict Brand Style)
+Every article MUST use a custom generated image following this **EXACT** prompt structure.
 
-**DO NOT create short 5-minute articles. Every article should be a comprehensive resource.**
+**Image Prompt Template:**
+```text
+Create a professional cybersecurity presentation-style illustration.
 
-## Required SEO Elements
+1. CHARACTER: Cartoon version of Harish G (Indian man, beard, sunglasses pushed up on head, confident expression) wearing black tech t-shirt. Standing to the LEFT, presenting to a whiteboard.
+2. WHITEBOARD (Right Side):
+   - Title: "[ARTICLE TITLE]" in large CYAN (#00D9FF) bold text.
+   - Subtitle: "CVSS [SCORE] / [SEVERITY]" in RED (#FF3D3D).
+   - Content: 3-4 bullet points with red arrows (→).
+   - Diagram: Simple attack flow at bottom.
+3. ELEMENTS:
+   - Red Warning Triangle (⚠).
+   - "CRITICAL THREAT" red stamp effect.
+   - Background: Dark (#0a0a0a) with subtle circuit board patterns and neon accents.
+4. STYLE: Clean 2D Tech Vector, professional, Dark Mode.
+```
+- **Location:** `/images/articles/[filename].png`
+- **Size:** 1200x630 (Open Graph standard)
+
+## 4. Content Structure (The Research-Grade Standard)
+**Target Length:** 3,500 - 4,500 words (18-20 min read).
+
+### Section 1: Executive Summary
+- **BLUF (Bottom Line Up Front):** Who, What, When, Severity.
+- **Confidence Level:** Confirmed / Probable / Unverified.
+- **TLP:** CLEAR / GREEN.
+
+### Section 2: Technical Analysis (The "Meat")
+- **Deep Dive:** Explain the *mechanic* (e.g., "The deserialization flaw in `Java.util`...").
+- **Visuals:** Use ASCII diagrams for attack chains.
+- **MANDATORY Code Block:**
+  ```html
+  <div class="technical-box">
+      <h3><i class="fas fa-code"></i> Exploit Primitive</h3>
+      <pre><code class="language-python"># Show the code!</code></pre>
+  </div>
+  ```
+
+### Section 3: Forensic Artifacts
+- **YARA/Sigma Rules:** Must be copy-paste ready.
+- **Log Patterns:** "Grep for this string..."
+
+### Section 4: Impact & Mitigations
+- **Impact:** Regulatory (GDPR), Financial, Operational.
+- **Action Plan:** Step-by-step remediation.
+  ```html
+  <div class="success-box">
+      <strong><i class="fas fa-shield-alt"></i> IMMEDIATE ACTION:</strong>
+      <ul><li>Block IP 1.2.3.4</li><li>Patch to v10.0</li></ul>
+  </div>
+  ```
+
+## 5. Technical Implementation (HTML/CSS)
+
+### Required Head Elements (SEO)
 ```html
-<!-- Title: Include year, brand keywords -->
-<title>[Compelling Title] | TheHGTech</title>
-
-<!-- Description: 150-160 characters, newsworthy hook -->
-<meta name="description" content="...">
-
-<!-- Keywords: Topic-specific -->
-<meta name="keywords" content="...">
-
-<!-- Canonical URL -->
-<link rel="canonical" href="https://thehgtech.com/articles/[filename]">
-
-<!-- Open Graph -->
-<meta property="og:title" content="...">
-<meta property="og:description" content="...">
-<meta property="og:type" content="article">
-<meta property="og:url" content="...">
-<meta property="og:image" content="https://thehgtech.com/images/articles/[image-name].png">
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-
-<!-- Article-specific -->
-<meta property="article:published_time" content="2025-12-17T00:00:00Z">
-<meta property="article:author" content="TheHGTech">
-<meta property="article:section" content="Cybersecurity">
-
-<!-- Structured Data: NewsArticle or Article schema -->
-
-<!-- Structured Data: BreadcrumbList (REQUIRED for SEO) -->
+<title>Deep Dive: [Title] | TheHGTech</title>
+<meta name="description" content="Technical analysis of [Threat], including YARA rules and forensics. Research-grade intel.">
+<link rel="canonical" href="https://thehgtech.com/articles/[filename].html">
+<!-- Open Graph & Twitter Cards Required -->
+<!-- Schema.org: NewsArticle + BreadcrumbList -->
 ```
 
-## Required Breadcrumb Schema
-Every article MUST include breadcrumb structured data in `<head>`:
-```html
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [{
-    "@type": "ListItem",
-    "position": 1,
-    "name": "Home",
-    "item": "https://thehgtech.com"
-  }, {
-    "@type": "ListItem",
-    "position": 2,
-    "name": "Articles",
-    "item": "https://thehgtech.com/articles.html"
-  }, {
-    "@type": "ListItem",
-    "position": 3,
-    "name": "[Article Title]",
-    "item": "https://thehgtech.com/articles/[filename].html"
-  }]
-}
-</script>
-
-## Featured Image Requirements - IMPORTANT!
-
-Every article MUST have a custom presentation-style illustration as the featured image.
-
-### Image Style Specifications
-Generate a **presenter-style illustration** with these elements:
-
-1. **Presenter Character:**
-   - Cartoon/illustrated version of Harish G (use reference photo)
-   - Indian man with beard, sunglasses on head, confident expression
-   - Black t-shirt with subtle tech logo
-   - Standing to the left, holding a marker, presenting gesture
-
-2. **Whiteboard Content (Right Side):**
-   - **Title:** Article key term in large bold text (use red/cyan accents)
-   - **Subtitle:** Severity score or key metric (e.g., "CVSS 10.0", "200GB Stolen")
-   - **Bullet Points:** 3-4 key facts with arrows (→)
-   - **Flow Diagram:** Simple attack chain or process flow at bottom
-
-3. **Visual Elements:**
-   - Red warning triangle icon (!) for critical/breach articles
-   - "CRITICAL" or "BREACH" stamp for severity
-   - Dark cybersecurity-themed background with circuit patterns
-   - Red/cyan accent colors matching TheHGTech brand
-
-4. **Technical Specs:**
-   - Format: PNG
-   - Location: `/images/articles/[article-slug].png`
-   - Minimum dimensions: 1200x630px (OG image standard)
-
-### Image Generation Prompt Template
-```
-Create a professional cybersecurity presentation-style illustration. A cartoon/illustrated version of the man from the reference photo (Indian man with beard, sunglasses pushed up, confident expression) standing in front of a whiteboard, wearing a black t-shirt with a subtle tech logo, holding a marker and presenting.
-
-The whiteboard shows:
-- Title: "[KEY TERM]" in red bold text
-- Subtitle: "[SEVERITY/METRIC]"
-- Key points with arrows:
-  → [Point 1]
-  → [Point 2]
-  → [Point 3]
-  → [Point 4]
-
-Visual elements include:
-- Red warning triangle icon with "!" on the left side
-- "[STAMP TEXT]" red stamp
-- Small flow diagram showing: [Step 1] → [Step 2] → [Step 3] → [Result]
-- Dark cybersecurity-themed background with subtle circuit patterns and red/cyan highlights
-
-Style: Clean cartoon illustration similar to tech explainer videos, professional but engaging, dark theme with red accents for danger.
-```
-
-### Reference Image for Presenter
-Use this photo as the base for the cartoon presenter:
-- Location: `/.agent/assets/harish-profile-photo.jpg`
-- Style: Maintain recognizable features while creating clean cartoon style
-
-## CSS Variables (Same as guides)
+### CSS Variables (Brand Consistency)
 ```css
 :root {
-    --bg-primary: #000000;
-    --bg-secondary: #0a0a0a;
-    --bg-card: rgba(255, 255, 255, 0.03);
+    --bg-primary: #0a0a0a;
     --accent-cyan: #00D9FF;
-    --accent-red: #FF4C4C;
-    --accent-green: #10b981;
-    --accent-orange: #f59e0b;
-    --accent-purple: #8b5cf6;
-    --text-primary: #ffffff;
-    --text-secondary: #a0a0a0;
-    --text-muted: #666666;
-    --border: rgba(255, 255, 255, 0.1);
+    --accent-red: #FF3D3D;
+    --code-bg: #111;
 }
 ```
 
-## Article Header Structure
+### Required Interaction Bar
+Must be placed **AFTER** `</article>` and **BEFORE** `<footer>`.
 ```html
-<div class="article-header">
-    <div class="article-category">[Category]</div>
-    <h1>[Article Title]</h1>
-    <p class="article-excerpt">[One-line compelling hook]</p>
-    <div class="article-meta">
-        <span><i class="far fa-calendar-alt"></i> Event Date: [Date]</span>
-        <span><i class="fas fa-clock"></i> Published: [Date]</span>
-        <span><i class="fas fa-book-open"></i> [X] min read</span>
-        <span class="category-tag">[Tag]</span>
-    </div>
+<div class="interaction-bar">
+    <!-- Like/Share Buttons code -->
 </div>
+<script src="../interaction-bar.js"></script>
 ```
 
-## Content Structure for News Articles
-1. **Hook/Lead** - Most important info first (who, what, when, where)
-2. **Key Details** - Expand on the story
-3. **Impact/Analysis** - Why it matters
-4. **Technical Details** - For security audience
-5. **What To Do** - Actionable recommendations
-6. **Timeline** (if applicable)
-7. **Related Articles**
+## 6. Deployment Checklist
+1.  **Create HTML File:** Populate with full content.
+2.  **Generate Image:** Save to `/images/articles/`.
+3.  **Update `articles.json`:**
+    *   **CRITICAL:** Insert new entry at the **VERY TOP** (Index 0) of the JSON array.
+    *   This drives the Homepage "Latest News" feed.
+4.  **Update Sitemap:** Add URL to `sitemap.xml`.
+5.  **Post-Audit:** Check against Grok's critique (Is it deep? Does it have code?).
+6.  **Push:** `git add . && git commit -m "feat(content): new article..." && git push`
 
-## Content Components
-
-### Key Takeaway Box
-```html
-<div class="info-box">
-    <strong><i class="fas fa-key"></i> Key Takeaway:</strong> [Main point]
-</div>
-```
-
-### Impact/Warning Box  
-```html
-<div class="warning-box">
-    <strong><i class="fas fa-exclamation-triangle"></i> Impact:</strong> [Severity description]
-</div>
-```
-
-### Action Items Box
-```html
-<div class="success-box">
-    <strong><i class="fas fa-shield-alt"></i> What To Do:</strong>
-    <ul>
-        <li>Action 1</li>
-        <li>Action 2</li>
-    </ul>
-</div>
-```
-
-### Timeline
-```html
-<div class="timeline">
-    <div class="timeline-item">
-        <span class="timeline-date">[Date]</span>
-        <span class="timeline-event">[Event]</span>
-    </div>
-</div>
-```
-
-### Quote/Source Attribution
-```html
-<blockquote>
-    "[Quote text]"
-    <cite>— [Source Name]</cite>
-</blockquote>
-```
-
-## NO EMOJIS - Use FontAwesome Instead
-(Same icon set as guides - see /create-guide workflow)
-
-## Interaction Bar (REQUIRED)
-Every article MUST include the interaction bar. 
-
-### Placement Rules - IMPORTANT!
-The interaction bar MUST be placed:
-- **AFTER** the `</article>` closing tag
-- **BEFORE** the `</main>` closing tag  
-- **BEFORE** the `<footer>` element
-- **NOT** after the featured image (this is wrong!)
-
-### Required Includes
-```html
-<!-- In <head> -->
-<link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
-
-<!-- Before </body> -->
-<script src="/interaction-bar.js?v=20251207-0041"></script>
-```
-
-### Correct Interaction Bar HTML
-```html
-        </article>
-
-        <!-- Interaction Bar - MUST be here, after article, before footer -->
-        <div class="interaction-bar">
-            <div class="like-section">
-                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
-                    <i class="far fa-heart"></i> <span id="likeText">Like this article</span>
-                </button>
-            </div>
-            <div class="action-buttons">
-                <div class="share-buttons">
-                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <button onclick="copyLink()" class="share-btn" title="Copy Link">
-                        <i class="fas fa-link"></i>
-                    </button>
-                </div>
-                <div class="button-separator"></div>
-                <button onclick="window.print()" class="print-btn" title="Print Article">
-                    <i class="fas fa-print"></i>
-                </button>
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 TheHGTech. All rights reserved.</p>
-    </footer>
-```
-
-
-## Article Footer
-```html
-<div class="article-footer">
-    <p><strong>Author:</strong> TheHGTech Security Team</p>
-    <p><strong>Published:</strong> [Date]</p>
-    <p><strong>Last Updated:</strong> [Date]</p>
-    
-    <div class="related-articles">
-        <h3>Related Articles</h3>
-        <ul>
-            <li><a href="...">[Related Article 1]</a></li>
-            <li><a href="...">[Related Article 2]</a></li>
-        </ul>
-    </div>
-</div>
-```
-
-## After Creating Article
-1. **Add entry to `/articles.json`** with `externalUrl` field pointing to HTML file
-   - **IMPORTANT: Insert at TOP of array (newest first)**
-   - The homepage "Latest Articles" section auto-loads from this file
-   - The first 2 entries will appear on the homepage
-2. Add to `/sitemap.xml` 
-3. Add to `/news-sitemap.xml` for Google News
-4. Create OG image in `/images/articles/`
-5. Commit and push to GitHub
-
-## Homepage Latest Articles (Auto-Updated)
-The homepage displays the 2 most recent articles in the "Latest Articles" column.
-- Data source: `/articles.json`
-- New articles added to the JSON will automatically appear on homepage
-- Ensure the `externalUrl` or `url` field points to the correct article path
-
-## articles.json Entry Format
-```json
-{
-    "id": "article-[slug]",
-    "title": "[Title]",
-    "date": "[Month Day, Year]",
-    "category": "[Category]",
-    "excerpt": "[2-3 sentence summary]",
-    "image": "images/articles/[image].jpg",
-    "externalUrl": "articles/[filename].html",
-    "tags": ["tag1", "tag2"],
-    "author": "TheHGTech Security Team"
-}
-```
-
-## Categories
-- Ransomware
-- Data Breach
-- AI Security
-- Threat Intelligence
-- Vulnerability
-- Industry News
-- Research
-- Predictions
-## Research-Grade News Framework
-
-For "Deep Analysis" or "Critical Breach" articles, apply the following intelligence standards to ensure content meets a professional threat analyst quality bar.
-
-### 1. Tone & Voice Compliance
-*   **Objective Journalism:** Remove all FUD (Fear, Uncertainty, Doubt).
-    *   ❌ Avoid: "Catastrophic", "Cybergeddon", "Doomsday", "Panic".
-    *   ✅ Use: "Critical severity", "Mass exploitation", "Systemic failure", "Unverified claim".
-*   **Attribution precision:** Be specific about the source of information.
-    *   ❌ "Hackers say they stole..."
-    *   ✅ "Threat actor 'KillSec' claimed exfiltration of 5TB on Telegram (unverified)."
-    *   ✅ "Microsoft confirmed the vulnerability (CVE-202X-XXXX) in a Tuesday advisory."
-
-### 2. Mandatory Intelligence Components
-Every research-grade article must include:
-
-*   **Executive Summary/Lead:** The "BLUF" (Bottom Line Up Front). Who, What, When, Severity.
-*   **Confidence Level:** Explicitly state if the breach is *Confirmed*, *Claimed*, or *Under Investigation*.
-*   **Technical Root Cause:** Move beyond "hacked". Specify the vector (e.g., "MFA Fatigue", "SQLi", "Supply Chain compromise").
-*   **Impact Verification:**
-    *   Verify claims manually where possible (e.g., "Sample data reviewed by analysis team shows...").
-    *   If relying on sources, cite the primary source (BleepingComputer, Vendor Blog), not aggregators.
-*   **Timeline of Events:** Chronological list of access, movement, and disclosure.
-*   **IOCs (Indicators of Compromise):** or a link to a repository/GitHub with hash/IPs.
-*   **Mitigation Status:** "Patched", "Workaround Available", or "Zero-Day".
-
-### 3. Prompt Skeleton for "Threat Analyst" Output
-When generating article content, use this structural prompt to enforce quality:
-
-```markdown
-# ROLE
-Act as a Senior Cyber Threat Analyst for a top-tier intelligence firm (like Mandiant or CrowdStrike). Your goal is to write a high-fidelity intelligence report formatted as a news article.
-
-# CONSTRAINTS
-- NO "clickbait" headlines or intro hooks. Start with the facts.
-- NO marketing adjectives.
-- Distinguish clearly between "Vendor Confirmation" and "Hacker Claims".
-
-# STRUCTURE
-1. **Header**: Title (Standardized format: [Victim/Tool] [Event Type] - [Date/Year]), Executive Summary.
-2. **Context**: Who is the victim? Why are they a target?
-3. **Attack Vector Analysis**:
-   - Technical breakdown of the exploit (CVE numbers, TTPs).
-   - Diagram of the attack chain (ASCII or description).
-4. **Timeline**: Day 0 (Access) -> Day X (Detection) -> Day Y (Disclosure).
-5. **Impact Assessment**:
-   - Reg data (GDPR/CCPA) impacted?
-   - Operational downtime?
-   - Financial estimate (if reliable).
-6. **Defensive Action**:
-   - Immediate mitigations (Block IPs, patch version X).
-   - Long-term recommendations (Architecture changes).
-7. **References**: Links to Vendor Advisories, CVE Record, Primary Reporting.
-
-# VISUALS
-- Use <div class="timeline"> for event sequences.
-- Use <div class="warning-box"> for active IoCs.
-```
+## 7. Quality Control Questions (Self-Audit)
+- **Is this generic?** (If yes, rewritten effectively).
+- **Would a SOS Analyst use this?** (Must have YARA/IOCs).
+- **Is the image correct?** (Harish cartoon visible).

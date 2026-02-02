@@ -1,6 +1,18 @@
 {
   "guides": [
     {
+      "id": "vscode-supply-chain-hardening-2026",
+      "title": "Securing the AI-Powered IDE: Hardening VS Code, Cursor & Windsurf",
+      "category": "DevSecOps",
+      "excerpt": "Research-grade hardening guide for VS Code and AI editors (Cursor/Windsurf). Prevent 2026 supply chain attacks with auditing scripts, strict extension policies, and .cursorignore isolation.",
+      "readTime": "25 min",
+      "level": "Intermediate to Advanced",
+      "date": "Feb 2, 2026",
+      "badge": "New",
+      "featured": true,
+      "image": "/images/guides/vscode-supply-chain-hardening-2026.png"
+    },
+    {
       "id": "clawdbot-moltbot-security",
       "title": "Clawdbot/Moltbot Security: Critical Risks & Complete Hardening Guide",
       "category": "AI Security",

