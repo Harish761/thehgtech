@@ -4,18 +4,37 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Feb 01 2026",
-            "headline": "Emerging Tech in Cybersecurity—A Double-Edged Sword",
-            "title": "Im Fokus: Emerging Technologies and Their Dual Impact on Cybersecurity",
-            "content": "Emerging technologies are reshaping the cybersecurity landscape, offering both opportunities and challenges. As innovations like AI and quantum computing advance, they enhance security capabilities but also introduce new vulnerabilities. Cybersecurity professionals must navigate these dual impacts, balancing the benefits of automation and advanced threat detection with the risks of more sophisticated cyber threats. The rapid pace of technological change requires ongoing adaptation and vigilance from security teams. Organizations should invest in continuous learning and upgrading of their cybersecurity strategies to keep pace with these developments.",
+            "date": "Feb 02 2026",
+            "headline": "Quantum and AI Transform Cybersecurity Landscape",
+            "title": "Quantum Computing and AI Herald New Era in Cybersecurity",
+            "content": "The convergence of quantum computing and artificial intelligence (AI) is poised to revolutionize cybersecurity, marking a new era of both challenges and opportunities. As AI extends its influence across the tech landscape, it becomes crucial in addressing the complex security issues posed by quantum advancements. The potential for quantum computers to break traditional encryption methods poses a significant threat, prompting the need for quantum-resistant algorithms. Organizations must prepare for this shift by investing in research and development to safeguard data integrity. This technological evolution underscores the urgency for cybersecurity professionals to adapt to rapidly changing threats.",
             "source": "CSO Online",
-            "sourceUrl": "https://de.resources.csoonline.com/resources/im-fokus-emerging-technologies/",
+            "sourceUrl": "https://www.csoonline.com/article/4122039/das-nachste-grose-security-schlachtfeld.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 02 2026",
+            "headline": "ISC Stormcast Highlights Latest Cyber Threats",
+            "title": "ISC Stormcast Provides Insights on Current Cybersecurity Threats",
+            "content": "The SANS Internet Storm Center&#x27;s latest Stormcast podcast covers emerging cybersecurity threats and trends as of February 2, 2026. The episode provides insights into the latest vulnerabilities and exploits affecting various systems, offering guidance for security professionals to enhance their defenses. By staying informed about these developments, organizations can better protect themselves against potential attacks. The podcast emphasizes the importance of continuous monitoring and proactive measures in maintaining robust cybersecurity postures. Listeners are encouraged to implement recommended security updates and patches to mitigate risks.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32672",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
                     "url": "/ransomware-tracker.html",
                     "icon": "fa-skull-crossbones"
-                },
+                }
+            ]
+        },
+        {
+            "date": "Feb 01 2026",
+            "headline": "AI and IoT Revolutionize Manufacturing Security",
+            "title": "Manufacturing Sector Reimagined with AI and IoT Innovations",
+            "content": "The manufacturing industry is undergoing a transformation as artificial intelligence (AI) and the Internet of Things (IoT) reshape its security landscape. Integrating these technologies enhances operational efficiency and introduces new security challenges. AI-driven analytics enable predictive maintenance and real-time threat detection, while IoT devices streamline production processes. However, the increased connectivity also expands the attack surface, necessitating robust cybersecurity measures. Companies must adopt comprehensive strategies to protect sensitive data and maintain system integrity in this evolving environment.",
+            "source": "CSO Online",
+            "sourceUrl": "https://us.resources.cio.com/resources/enterprise-spotlight-manufacturing-reimagined/",
+            "relatedResources": [
                 {
                     "label": "SIEM & Log Analysis Guide",
                     "url": "/guides/siem-log-analysis.html",
@@ -24,126 +43,61 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Jan 31 2026",
-            "headline": "Iran&#x27;s RedKitten Targets NGOs—Human Rights at Risk",
-            "title": "Iran-Linked RedKitten Cyber Campaign Targets Human Rights NGOs and Activists",
-            "content": "A Farsi-speaking threat actor, suspected to be aligned with Iranian state interests, is behind a new cyber campaign targeting NGOs and individuals documenting human rights abuses. Dubbed RedKitten, the campaign was observed by HarfangLab in January 2026. The attacks focus on non-governmental organizations and activists, aiming to disrupt their operations and gather intelligence. This highlights the growing use of cyber capabilities for political and state-sponsored objectives. NGOs should enhance their cybersecurity measures and remain vigilant against phishing and malware attacks to protect sensitive information.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/01/iran-linked-redkitten-cyber-campaign.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 31 2026",
-            "headline": "FBI Seizes RAMP—Ransomware Forum Offline",
-            "title": "FBI Takes Down Notorious RAMP Ransomware Forum, User Data Seized",
-            "content": "The FBI has successfully taken control of RAMP, a prominent cybercrime forum notorious for hosting ransomware discussions. With over 14,000 active users, RAMP was the only forum openly allowing ransomware-related activities. The seizure likely means that user details are now in the hands of law enforcement, potentially leading to further arrests and disruptions in the cybercrime community. This move underscores the FBI&#x27;s ongoing efforts to dismantle ransomware networks and highlights the importance of international cooperation in combating cybercrime. Organizations should remain vigilant and report any suspicious activities to authorities.",
-            "source": "GRAHAM CLULEY",
-            "sourceUrl": "https://www.bitdefender.com/en-us/blog/hotforsecurity/fbi-takes-notorious-ramp-ransomware-forum-offline",
+            "date": "Feb 01 2026",
+            "headline": "MongoDB Extortion Threatens Data Integrity",
+            "title": "Exposed MongoDB Instances Targeted in Extortion Attacks",
+            "content": "Threat actors are exploiting exposed MongoDB databases in a wave of automated data extortion attacks, demanding ransoms to restore access. These attacks target databases left unsecured on the internet, often due to misconfigurations, leaving sensitive data vulnerable. The attackers demand low ransoms, making it financially tempting for victims to pay rather than risk data loss. Organizations using MongoDB should immediately secure their instances by implementing authentication and access controls. Regular audits and monitoring can help identify and mitigate these vulnerabilities before they are exploited.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/exposed-mongodb-instances-still-targeted-in-data-extortion-attacks/",
             "relatedResources": [
                 {
-                    "label": "Ransomware Response Playbook",
-                    "url": "/guides/ransomware-response-playbook.html",
-                    "icon": "fa-biohazard"
+                    "label": "Mongodb Analysis",
+                    "url": "/articles/mongodb-mongobleed-cve-2025-14847.html",
+                    "icon": "fa-file-alt"
+                },
+                {
+                    "label": "API Security Best Practices",
+                    "url": "/guides/api-security-best-practices.html",
+                    "icon": "fa-plug"
+                }
+            ]
+        },
+        {
+            "date": "Feb 01 2026",
+            "headline": "Apple Enhances Privacy with Location Data Precision Control",
+            "title": "Apple Introduces Privacy Feature to Limit Location Tracking",
+            "content": "Apple has unveiled a new privacy feature allowing users to control the precision of location data shared with cellular networks on select iPhone and iPad models. This feature aims to enhance user privacy by reducing the granularity of location data, making it less useful for tracking purposes. It is part of Apple&#x27;s ongoing commitment to user privacy, providing users with more control over their personal information. Users can adjust these settings in their device&#x27;s privacy settings, balancing functionality with privacy needs. This update underscores the growing demand for privacy-focused features in consumer technology.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/apple/new-apple-privacy-feature-limits-location-tracking-on-iphones-ipads/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
                 }
             ]
         },
         {
             "date": "Jan 31 2026",
-            "headline": "ShinyHunters Vishing Attacks—MFA Credentials at Risk",
-            "title": "Mandiant Identifies ShinyHunters-Style Vishing Attacks Breaching SaaS Platforms",
-            "content": "Mandiant has uncovered a surge in vishing attacks by the ShinyHunters group, targeting multi-factor authentication (MFA) credentials to breach SaaS platforms. These attacks use sophisticated voice phishing techniques to deceive users into revealing sensitive information. The financially motivated hacking group aims to exploit these breaches for extortion and data theft. This trend highlights the need for robust user training and advanced security measures to protect against social engineering attacks. Organizations should review their MFA processes and educate employees on recognizing phishing attempts.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/01/mandiant-finds-shinyhunters-using.html",
+            "headline": "Ex-Google Engineer Convicted for AI Data Theft",
+            "title": "U.S. Convicts Former Google Engineer for AI Data Theft to China",
+            "content": "A U.S. federal jury has convicted Linwei Ding, a former Google software engineer, for stealing AI supercomputer data and sharing it with Chinese tech companies. The stolen data included proprietary information critical to Google&#x27;s AI research and development efforts. This case highlights the ongoing risks of corporate espionage and the importance of safeguarding intellectual property. Companies are urged to implement stringent access controls and monitor employee activities to prevent data breaches. The conviction serves as a warning to individuals considering exploiting their access to sensitive information.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/us-convicts-ex-google-engineer-for-sending-ai-tech-data-to-china/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jan 31 2026",
+            "headline": "Cloud Scam Targets Users with Fake Payment Alerts",
+            "title": "Cloud Storage Payment Scam Floods Inboxes with Fake Renewals",
+            "content": "A widespread cloud storage subscription scam is inundating users with fraudulent emails warning of impending account suspensions due to alleged payment failures. These emails aim to trick recipients into providing payment information or clicking on malicious links, potentially leading to data theft or financial loss. The scam targets users globally, exploiting common fears of losing access to valuable data. Users are advised to verify the legitimacy of such emails directly with their service providers and avoid clicking on suspicious links. This incident underscores the need for vigilance against phishing attacks.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cloud-storage-payment-scam-floods-inboxes-with-fake-renewals/",
             "relatedResources": [
                 {
                     "label": "Phishing & Security Awareness",
                     "url": "/guides/phishing-simulation-security-awareness.html",
                     "icon": "fa-fish"
-                }
-            ]
-        },
-        {
-            "date": "Jan 31 2026",
-            "headline": "Cyber Attacks Hit 30+ Renewable Energy Sites in Poland",
-            "title": "CERT Polska Reports Coordinated Cyber Attacks on Wind and Solar Farms",
-            "content": "CERT Polska has disclosed a series of coordinated cyber attacks targeting over 30 wind and solar farms, a manufacturing company, and a significant combined heat and power plant in Poland. These attacks threaten the stability of critical infrastructure, affecting energy supply to nearly half a million customers. The incidents underscore the vulnerability of renewable energy systems to cyber threats and the importance of securing industrial control systems. Organizations in the energy sector should prioritize cybersecurity measures and conduct regular assessments to mitigate potential risks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/01/poland-attributes-december-cyber.html",
-            "relatedResources": [
-                {
-                    "label": "Third-Party Risk Management",
-                    "url": "/guides/third-party-risk-management.html",
-                    "icon": "fa-handshake"
-                }
-            ]
-        },
-        {
-            "date": "Jan 30 2026",
-            "headline": "Torq&#x27;s AI Hyper Automation—$1.2B Valuation Milestone",
-            "title": "Torq Advances SOCs with AI-Powered Hyper Automation, Secures $140M Investment",
-            "content": "Torq has raised $140 million in a Series D funding round, elevating its valuation to $1.2 billion. The investment aims to enhance Torq&#x27;s AI-based &quot;hyper automation&quot; solutions for Security Operations Centers (SOCs). This technology promises to streamline security processes by automating routine tasks and improving threat detection capabilities. As cyber threats grow more complex, the demand for automated security solutions is increasing. Security teams should explore AI-driven tools to optimize their operations and respond more effectively to incidents.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/remote-workforce/torq-moves-socs-soar-ai-powered-hyper-automation",
-            "relatedResources": [
-                {
-                    "label": "SIEM & Log Analysis Guide",
-                    "url": "/guides/siem-log-analysis.html",
-                    "icon": "fa-chart-bar"
-                }
-            ]
-        },
-        {
-            "date": "Jan 30 2026",
-            "headline": "Ivanti Patches Critical Vulnerabilities—EPMM Users Alerted",
-            "title": "Ivanti Releases Patches for Actively Exploited Vulnerabilities in EPMM",
-            "content": "Ivanti has issued patches for its Endpoint Manager Mobile (EPMM) product, addressing two critical remote code execution vulnerabilities currently exploited in the wild. These vulnerabilities pose a significant risk, allowing attackers to execute arbitrary code on affected systems. Ivanti has acknowledged a limited number of customers impacted by these exploits at the time of disclosure. Users are urged to apply the patches immediately to secure their systems. This incident highlights the importance of timely updates and vulnerability management in maintaining cybersecurity.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4125196/ivanti-patches-two-actively-exploited-critical-vulnerabilities-in-epmm.html",
-            "relatedResources": [
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                },
-                {
-                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
-                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
-                    "icon": "fa-shield-virus"
-                }
-            ]
-        },
-        {
-            "date": "Feb 01 2026",
-            "headline": "ChatGPT Ads Rollout Begins—OpenAI Assures Answer Trust",
-            "title": "OpenAI Begins ChatGPT Ads Rollout, Emphasizes Answer Reliability",
-            "content": "OpenAI has initiated the rollout of advertisements within ChatGPT, targeting free and $8 Go accounts, with early tests visible on Android devices. This development comes as OpenAI emphasizes the trustworthiness of ChatGPT&#x27;s responses, aiming to balance monetization with user experience. The introduction of ads marks a significant shift in OpenAI&#x27;s strategy to sustain its AI services while maintaining high-quality output. Users are advised to monitor updates as the ad rollout progresses and assess any impacts on their interaction with the platform. This move aligns with broader trends of AI monetization as companies seek sustainable revenue models.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-you-can-trust-chatgpt-answers-as-it-kicks-off-ads-rollout-preparation/",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Feb 01 2026",
-            "headline": "OpenAI Retires GPT-4o—Focus Shifts to GPT 5.2",
-            "title": "OpenAI Phases Out GPT-4o, Introduces Enhanced GPT 5.2 Model",
-            "content": "OpenAI has announced the retirement of its widely used GPT-4o model, alongside several others, including GPT-5 Instant and GPT-5 Thinking. The company is pivoting its focus to the advanced GPT 5.2 model, which OpenAI claims offers superior performance and reliability. This decision reflects OpenAI&#x27;s commitment to refining its AI offerings and ensuring users have access to the most effective tools. Developers and businesses relying on deprecated models should transition to GPT 5.2 to leverage its enhanced capabilities. This shift underscores the rapid evolution and continuous improvement within the AI landscape.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-is-retiring-famous-gpt-4o-model-says-gpt-52-is-good-enough/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
                 }
             ]
         },
@@ -166,18 +120,37 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Jan 31 2026",
-            "headline": "Grokipedia Fuels AI—ChatGPT, Google Tap Musk’s Encyclopedia",
-            "title": "ChatGPT and Google AI Leverage Elon Musk’s Grokipedia for Answers",
-            "content": "AI tools like ChatGPT, Google’s AI Overviews, AI Mode, and Gemini are increasingly sourcing answers from Elon Musk’s Grokipedia, an AI-generated encyclopedia. This trend is raising concerns about the accuracy and reliability of AI-generated content. Data indicates a rise in citations from Grokipedia, suggesting its growing influence on AI responses. Professionals in the AI community are urged to scrutinize the sources of AI-generated information, especially when it impacts critical decision-making. The reliance on a single, potentially biased source highlights the need for diversified data inputs in AI systems.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/report/870910/ai-chatbots-citing-grokipedia",
+            "date": "Feb 01 2026",
+            "headline": "AI Layoffs: Excuse or Reality?",
+            "title": "Companies Blame AI for Layoffs—But Is It Just &#x27;AI-washing&#x27;?",
+            "content": "Recent waves of layoffs in tech companies have raised questions about whether AI is being used as a convenient scapegoat. As firms announce job cuts, some analysts suggest that &quot;AI-washing&quot;—using AI as a pretext for layoffs—might be at play. Companies claim automation and AI advancements necessitate workforce reductions, but critics argue that financial pressures or poor management are the true drivers. This trend affects thousands of employees across sectors like customer service and data analysis, where AI tools are increasingly implemented. Professionals should scrutinize these claims and consider the broader economic context when assessing job security and organizational strategies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/01/ai-layoffs-or-ai-washing/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
                     "url": "/ransomware-tracker.html",
                     "icon": "fa-skull-crossbones"
-                },
+                }
+            ]
+        },
+        {
+            "date": "Feb 01 2026",
+            "headline": "Tether CEO Returns to U.S. Amid Regulatory Scrutiny",
+            "title": "Tether CEO Reemerges in U.S. as Regulatory Pressure Mounts",
+            "content": "After years of avoiding the United States, Tether&#x27;s CEO has returned to American soil, signaling a potential shift in the company&#x27;s strategy amidst increasing regulatory scrutiny. Previously operating offshore, the CEO&#x27;s presence in the U.S. comes as regulators and prosecutors intensify investigations into Tether&#x27;s operations and financial practices. This development could influence Tether&#x27;s compliance strategies and its standing in the cryptocurrency market. Industry observers should monitor how this move affects Tether&#x27;s transparency and regulatory engagements moving forward.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/01/why-tethers-ceo-is-everywhere-right-now/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 01 2026",
+            "headline": "Enterprises Misjudge RAG—A Foundational AI Dependency",
+            "title": "RAG&#x27;s Role Misunderstood by Enterprises in AI Deployments",
+            "content": "Enterprises adopting Retrieval-Augmented Generation (RAG) to enhance Large Language Models (LLMs) with proprietary data are discovering that retrieval is a critical system dependency, not just an add-on. Many organizations fail to recognize the integral role of data retrieval in AI model performance, impacting decision-making processes and operational efficiency. As AI systems become more embedded in business operations, understanding RAG&#x27;s full capabilities is essential for maximizing AI investments. Companies should reassess their AI strategies to ensure they are leveraging RAG effectively to support robust, data-driven decisions.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/enterprises-are-measuring-the-wrong-part-of-rag",
+            "relatedResources": [
                 {
                     "label": "LLM Security & Prompt Injection",
                     "url": "/guides/llm-security-prompt-injection.html",
@@ -186,75 +159,52 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Jan 31 2026",
-            "headline": "Epstein’s ‘Personal Hacker’ Revealed Amidst AI Security Concerns",
-            "title": "Jeffrey Epstein’s Alleged ‘Personal Hacker’ and AI Security Woes",
-            "content": "A recent informant claim suggests Jeffrey Epstein employed a ‘personal hacker’, adding a new layer to the infamous case. In parallel, the AI agent OpenClaw is causing unease among cybersecurity experts due to its unpredictable behavior. Meanwhile, China has executed 11 scam compound leaders, and a surprising suspect emerges in a $40 million cryptocurrency theft. These developments underscore the evolving landscape of cybersecurity threats, where AI tools are both a boon and a potential liability. Security professionals should remain vigilant about AI&#x27;s dual-use capabilities and emerging threat vectors.",
-            "source": "Feed: Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/security-news-this-week-jeffrey-epstein-had-a-personal-hacker-informant-claims/",
+            "date": "Feb 01 2026",
+            "headline": "Iran&#x27;s Record Internet Blackout Fails to Quell Protests",
+            "title": "Iran&#x27;s Longest Internet Blackout Amidst Protests Highlights Digital Control",
+            "content": "Following widespread protests in January, Iran imposed its longest internet blackout to date, aiming to curb the spread of dissent. Despite the regime&#x27;s efforts, demonstrations persisted, although the information flow was significantly hindered, affecting both domestic and international communications. This blackout underscores the regime&#x27;s reliance on digital control to maintain power, raising concerns about internet freedom and human rights. Observers should be aware of the implications for digital rights and the potential for similar tactics in other authoritarian regimes.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/policy/871848/iran-blackout-internet-mahsa-alimardani",
             "relatedResources": []
         },
         {
-            "date": "Jan 31 2026",
-            "headline": "Physical Intelligence: Silicon Valley’s New AI Brain Powerhouse",
-            "title": "Inside Physical Intelligence: The Startup Revolutionizing AI with Robot Brains",
-            "content": "Physical Intelligence, a Silicon Valley startup, is making waves with its cutting-edge AI technology designed for robotics. Co-founder Lachy Groom collaborates with industry veterans to tackle longstanding challenges in AI-driven robotics, believing the timing is finally right for breakthroughs. The startup’s innovative approach is capturing the attention of investors and tech leaders eager to leverage AI for advanced robotics applications. As the demand for intelligent automation grows, Physical Intelligence&#x27;s developments could significantly impact industries reliant on robotics. Stakeholders should monitor this space for potential disruptive technologies.",
+            "date": "Feb 01 2026",
+            "headline": "Indonesia Eases Ban on Grok Chatbot",
+            "title": "Indonesia Lifts Ban on xAI&#x27;s Grok Chatbot with Conditions",
+            "content": "Indonesia has conditionally lifted its ban on xAI&#x27;s conversational AI, Grok, following similar actions by Malaysia and the Philippines. The decision allows Grok to operate under specific regulatory conditions, reflecting a cautious approach to AI integration. This move is part of a broader trend in Southeast Asia to balance technological innovation with regulatory oversight. Companies using Grok should ensure compliance with the stipulated guidelines to avoid potential legal issues and maximize the chatbot&#x27;s utility in customer engagement and data collection.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/30/physical-intelligence-stripe-veteran-lachy-grooms-latest-bet-is-building-silicon-valleys-buzziest-robot-brains/",
+            "sourceUrl": "https://techcrunch.com/2026/02/01/indonesia-conditionally-lifts-ban-on-grok/",
             "relatedResources": []
         },
         {
-            "date": "Jan 30 2026",
-            "headline": "Google’s Auto Browse AI—Convenient Yet Confounding",
-            "title": "Google’s Auto Browse AI Agent Struggles with User Expectations",
-            "content": "Google’s Auto Browse AI agent, designed to automate tasks like shopping and travel planning, is facing challenges in meeting user expectations. Although the concept promises convenience, the execution has been less than seamless, with users reporting issues in task accuracy and efficiency. This highlights the complexities involved in developing AI systems that can effectively interpret and execute diverse user commands. Tech professionals should consider the limitations of current AI capabilities and the importance of user feedback in refining these systems. Continuous improvement and testing are crucial for achieving reliable AI automation.",
-            "source": "Feed: Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/google-chrome-auto-browse-hands-on/",
+            "date": "Feb 01 2026",
+            "headline": "India Offers Tax-Free AI Investments Until 2047",
+            "title": "India Lures Global AI Investments with Zero Tax Offer Until 2047",
+            "content": "In a bold move to attract global AI workloads, India has announced a zero-tax policy for AI investments until 2047. This initiative coincides with significant data center expansions by tech giants like Amazon, Google, and Microsoft in the country. By eliminating taxes, India aims to position itself as a leading hub for AI development and deployment. This policy is expected to drive substantial foreign investment and technological growth, making India a pivotal player in the global AI landscape. Companies considering AI investments should explore opportunities in India to capitalize on this tax incentive.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/01/india-offers-zero-taxes-through-2047-to-lure-global-ai-workloads/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
                     "url": "/ransomware-tracker.html",
                     "icon": "fa-skull-crossbones"
-                },
+                }
+            ]
+        },
+        {
+            "date": "Feb 01 2026",
+            "headline": "Musk&#x27;s Mega-Merger: SpaceX, xAI, Tesla Unite",
+            "title": "Elon Musk Merges SpaceX, xAI, and Tesla into Personal Conglomerate",
+            "content": "Elon Musk is reportedly merging SpaceX, xAI, and Tesla, creating a personal conglomerate reminiscent of historical industrial giants. This strategic alignment aims to streamline operations and leverage synergies across aerospace, AI, and automotive sectors. By consolidating these entities, Musk seeks to enhance innovation and efficiency, potentially reshaping the tech landscape. The merger could lead to groundbreaking advancements, but also raises questions about regulatory challenges and market dominance. Stakeholders should watch for developments in governance and competitive dynamics as this conglomerate takes shape.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/01/bye-bye-corporate-conglomerates-hello-personal-conglomerates/",
+            "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
                     "url": "/guides/securing-ai-ml-pipelines.html",
                     "icon": "fa-brain"
                 }
             ]
-        },
-        {
-            "date": "Jan 30 2026",
-            "headline": "Arcee’s Open Source AI Models—A Glimpse into Raw Intelligence",
-            "title": "Arcee’s Trinity Large and 10T-Checkpoint Offer Unique AI Insights",
-            "content": "Arcee, an AI lab based in San Francisco, is gaining attention for its open-source large language models (LLMs), Trinity Large and 10T-Checkpoint. These models provide a rare opportunity for developers and enterprises to explore raw AI intelligence. By releasing these models under open or partially open-source licenses, Arcee empowers a wide range of users to innovate and experiment with AI capabilities. This initiative promotes transparency and collaboration in AI development, offering a valuable resource for those seeking to understand and leverage LLMs. Industry participants should consider engaging with these tools to enhance their AI projects.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/arcees-u-s-made-open-source-trinity-large-and-10t-checkpoint-offer-rare-look",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Jan 30 2026",
-            "headline": "Moltbook: The Social Network for AI Agents Evolves",
-            "title": "Moltbook: OpenClaw’s AI Agents Find a New Social Platform",
-            "content": "Moltbook, a unique social network for AI agents, is gaining traction, particularly among users of OpenClaw, a viral AI assistant project. Originally known as Moltbot, the platform has undergone several rebrands due to legal disputes, including one with Anthropic. Moltbook allows AI agents to interact and share information, creating a novel ecosystem for AI communication. This development highlights the growing interest in AI-to-AI interaction and its potential applications. Professionals in the AI field should explore the implications of such platforms on AI behavior and networking.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/871006/social-network-facebook-for-ai-agents-moltbook-moltbot-openclaw",
-            "relatedResources": []
-        },
-        {
-            "date": "Jan 30 2026",
-            "headline": "PageIndex Framework—98.7% Success Where Vector Search Fails",
-            "title": "PageIndex Framework Achieves High Accuracy in Document Retrieval",
-            "content": "The newly released PageIndex framework is revolutionizing retrieval-augmented generation (RAG) by effectively handling very long documents. This open-source solution boasts a 98.7% success rate in scenarios where traditional vector search methods falter. By addressing the limitations of the classic RAG workflow, PageIndex enhances the accuracy of document retrieval processes. This advancement is crucial for industries reliant on precise information extraction from extensive datasets. Developers and data scientists should consider integrating PageIndex into their RAG systems to improve performance and reliability.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/infrastructure/this-tree-search-framework-hits-98-7-on-documents-where-vector-search-fails",
-            "relatedResources": []
         }
     ],
     "articles": {},
@@ -338,61 +288,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-24858",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2018-14634",
-            "dateAdded": "Jan 26, 2026",
-            "vendor": "Linux Kernal",
-            "description": "Linux Kernel contains an integer overflow vulnerability in the create_elf_tables() function which could allow an unprivileged local user with access to SUID (or otherwise privileged) binary to escalat",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-14634",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-52691",
-            "dateAdded": "Jan 26, 2026",
-            "vendor": "SmarterTools SmarterMail",
-            "description": "SmarterTools SmarterMail contains an unrestricted upload of file with dangerous type vulnerability that could allow an unauthenticated attacker to upload arbitrary files to any location on the mail se",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-52691",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-23760",
-            "dateAdded": "Jan 26, 2026",
-            "vendor": "SmarterTools SmarterMail",
-            "description": "SmarterTools SmarterMail contains an authentication bypass using an alternate path or channel vulnerability in the password reset API. The force-reset-password endpoint permits anonymous requests and",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-23760",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-24061",
-            "dateAdded": "Jan 26, 2026",
-            "vendor": "GNU InetUtils",
-            "description": "GNU InetUtils contains an argument injection vulnerability in telnetd that could allow for remote authentication bypass via a &quot;-f root&quot; value for the USER environment variable.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-24061",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-21509",
-            "dateAdded": "Jan 26, 2026",
-            "vendor": "Microsoft Office",
-            "description": "Microsoft Office contains a security feature bypass vulnerability in which reliance on untrusted inputs in a security decision in Microsoft Office could allow an unauthorized attacker to bypass a secu",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21509",
             "isZeroDay": false
         }
     ],
