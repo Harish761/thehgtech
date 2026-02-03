@@ -90,7 +90,79 @@ Must be placed **AFTER** `content` and **BEFORE** `footer`.
 <script src="/interaction-bar.js"></script>
 ```
 
-## 6. Deployment Checklist
+## 6. Required UI Components (Site Consistency)
+
+### Required CSS Includes (in `<head>`)
+```html
+<!-- Style System - FULL SET REQUIRED -->
+<link rel="stylesheet" href="/header.css">
+<link rel="stylesheet" href="/header-dropdown.css?v=1">
+<link rel="stylesheet" href="/print.css">
+<link rel="stylesheet" href="/m-core.css?v=4.2">
+<link rel="stylesheet" href="/m-layout.css?v=3.2">
+<link rel="stylesheet" href="/m-components.css?v=3.0">
+<link rel="stylesheet" href="/light-mode.css">
+<link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+
+<script src="/m-app.js?v=4.3" defer></script>
+<script src="/interaction-bar.js" defer></script>
+```
+
+### Required Desktop Header
+Must be placed **AFTER** `<nav class="m-bottom-nav">` and **BEFORE** `<div class="container">`.
+```html
+<!-- Desktop Header -->
+<header class="header" role="banner">
+    <div class="header-content">
+        <div class="logo">
+            <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                <span class="logo-text">TheHGTech</span>
+            </a>
+        </div>
+        <nav class="nav nav-modern" role="navigation">
+            <a href="/index.html#news">News</a>
+            <div class="nav-dropdown">
+                <span class="nav-dropdown-trigger">Intelligence <span class="nav-live-badge">LIVE</span> <i class="fas fa-chevron-down dropdown-arrow"></i></span>
+                <div class="nav-dropdown-panel">
+                    <a href="/threat-intel.html" class="dropdown-item"><!-- Threat Intel --></a>
+                    <a href="/cve-tracker.html" class="dropdown-item"><!-- CVE Tracker --></a>
+                    <a href="/ransomware-tracker.html" class="dropdown-item"><!-- Ransomware --></a>
+                </div>
+            </div>
+            <div class="nav-dropdown">
+                <span class="nav-dropdown-trigger">Resources <i class="fas fa-chevron-down dropdown-arrow"></i></span>
+                <div class="nav-dropdown-panel">
+                    <a href="/guides/" class="dropdown-item"><!-- Guides --></a>
+                    <a href="/comparisons/" class="dropdown-item"><!-- Comparisons --></a>
+                    <a href="/articles.html" class="dropdown-item"><!-- Articles --></a>
+                </div>
+            </div>
+            <div class="theme-toggle-wrapper">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <div class="toggle-stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div>
+                </button>
+            </div>
+        </nav>
+        <button class="mobile-menu-btn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+</header>
+```
+
+### Required Back Link
+Must be the **FIRST element** inside `<div class="container">`, before the `guide-header`.
+```html
+<div class="container">
+    <a href="/guides/" class="back-link" style="display: inline-block; margin-bottom: 1.5rem; color: var(--accent-cyan); text-decoration: none;">
+        <i class="fas fa-arrow-left"></i> Back to Guides
+    </a>
+    <!-- Then guide-header follows -->
+```
+
+**Reference:** See `/guides/ai-agent-security.html` for complete implementation.
+
+## 7. Deployment Checklist
 1.  **Create HTML File:** Populate with full content.
 2.  **Generate Image:** Save to `/images/guides/`.
 3.  **Update `guides.json`:**
