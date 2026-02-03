@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-02-03T02:11:15.473772",
+  "last_updated": "2026-02-03T13:02:27.924328",
   "period": "Last 7 days",
-  "total_groups": 26,
-  "total_victims": 275,
+  "total_groups": 27,
+  "total_victims": 277,
   "groups": [
     {
       "name": "0Apt",
-      "count": 86,
+      "count": 84,
       "victims": [
         {
           "name": "Liberia Electricity Corporation (LEC)",
@@ -86,7 +86,7 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        2,
+        0,
         1,
         60,
         20,
@@ -278,8 +278,14 @@
     },
     {
       "name": "Incransom",
-      "count": 17,
+      "count": 20,
       "victims": [
+        {
+          "name": "H-Behbehani Brothers WLL",
+          "date": "2026-02-03 04:08:21.580521",
+          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/69800db88f1d14b7435a6af4",
+          "discovered_date": "2026-02-03T04:08:21.580521"
+        },
         {
           "name": "www.pucobre.cl",
           "date": "2026-02-02 16:05:43.776181",
@@ -291,6 +297,12 @@
           "date": "2026-02-02 17:36:21.034589",
           "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6980d22f8f1d14b7436bdbca",
           "discovered_date": "2026-02-02T17:36:21.034589"
+        },
+        {
+          "name": "Blystone & Bailey",
+          "date": "2026-02-03 04:08:41.924840",
+          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/697f3f9e8f1d14b7434aab44",
+          "discovered_date": "2026-02-03T04:08:41.924840"
         },
         {
           "name": "Foamtec International",
@@ -311,12 +323,6 @@
           "discovered_date": "2026-01-31T00:31:54.015144"
         },
         {
-          "name": "DIEHL & CELLA ADVOGADOS ASSOCIADOS",
-          "date": "2026-01-30 07:38:47.234473",
-          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/697c55308f1d14b74313e587",
-          "discovered_date": "2026-01-30T07:38:47.234473"
-        },
-        {
           "name": "PK PINHÃO & KOIFFMAN ATTORNEYS AT LAW",
           "date": "2026-01-30 07:39:02.239291",
           "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/697c506e8f1d14b7431387bc",
@@ -329,16 +335,10 @@
           "discovered_date": "2026-02-02T04:54:22.470352"
         },
         {
-          "name": "ChokChey Finance",
-          "date": "2026-02-02T17:36:21+00:00",
-          "url": "https://www.ransomware.live/id/Q2hva0NoZXkgRmluYW5jZUBpbmNyYW5zb20=",
-          "discovered_date": "2026-02-02T17:36:21+00:00"
-        },
-        {
-          "name": "www.pucobre.cl",
-          "date": "2026-02-02T16:05:43+00:00",
-          "url": "https://www.ransomware.live/id/d3d3LnB1Y29icmUuY2xAaW5jcmFuc29t",
-          "discovered_date": "2026-02-02T16:05:43+00:00"
+          "name": "Blystone & Bailey",
+          "date": "2026-02-03T04:08:41+00:00",
+          "url": "https://www.ransomware.live/id/Qmx5c3RvbmUgJiBCYWlsZXlAaW5jcmFuc29t",
+          "discovered_date": "2026-02-03T04:08:41+00:00"
         }
       ],
       "industries": [
@@ -349,21 +349,21 @@
       ],
       "countries": [
         "AU",
+        "BH",
         "BR",
         "CL",
-        "GE",
-        "KH"
+        "GE"
       ],
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
         0,
         1,
-        4,
+        3,
         2,
         4,
         6,
-        0
+        4
       ]
     },
     {
@@ -1288,6 +1288,33 @@
         0,
         0,
         0
+      ]
+    },
+    {
+      "name": "Cloak",
+      "count": 1,
+      "victims": [
+        {
+          "name": "****ne*i***pe.de",
+          "date": "2026-02-03 12:38:26.182421",
+          "url": "",
+          "discovered_date": "2026-02-03T12:38:26.182421"
+        }
+      ],
+      "industries": [
+        "Not Found"
+      ],
+      "countries": [],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
       ]
     },
     {
