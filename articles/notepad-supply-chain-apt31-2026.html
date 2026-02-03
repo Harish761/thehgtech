@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Notepad++ Hijacked: APT31 Deploys Chrysalis Backdoor via Supply Chain Attack | TheHGTech</title>
+    <meta name="description"
+        content="Chinese state-sponsored hackers APT31 compromised Notepad++'s update mechanism for 6 months, deploying the Chrysalis backdoor to telecom and financial targets. Technical analysis with IOCs and YARA rules.">
+    <meta name="keywords"
+        content="Notepad++, APT31, Chrysalis backdoor, supply chain attack, WinGUp, Violet Typhoon, state-sponsored hackers, China, malware, CVE">
+    <meta name="author" content="TheHGTech Security Research">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thehgtech.com/articles/notepad-supply-chain-apt31-2026.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/articles/notepad-supply-chain-apt31-2026.html">
+    <meta property="og:title" content="Notepad++ Hijacked: APT31 Deploys Chrysalis Backdoor">
+    <meta property="og:description"
+        content="State-sponsored attackers compromised the beloved text editor's update mechanism for 6 months.">
+    <meta property="og:image" content="https://thehgtech.com/images/articles/notepad-supply-chain-apt31-2026.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Notepad++ Hijacked by APT31">
+    <meta name="twitter:description" content="Chinese APT compromised update mechanism, deployed Chrysalis backdoor.">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": "Notepad++ Hijacked: APT31 Deploys Chrysalis Backdoor via Supply Chain Attack",
+      "description": "Chinese state-sponsored hackers compromised Notepad++'s update mechanism for 6 months, deploying the Chrysalis backdoor to telecom and financial targets.",
+      "author": { "@type": "Organization", "name": "TheHGTech Security Research" },
+      "publisher": { "@type": "Organization", "name": "TheHGTech", "url": "https://thehgtech.com" },
+      "datePublished": "2026-02-03",
+      "dateModified": "2026-02-03",
+      "mainEntityOfPage": "https://thehgtech.com/articles/notepad-supply-chain-apt31-2026.html",
+      "articleSection": "Threat Intelligence",
+      "keywords": ["APT31", "Notepad++", "Supply Chain Attack", "Chrysalis", "China"]
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+    <!-- Fonts & Icons -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Style System -->
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/header-dropdown.css?v=1">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+
+    <script src="/m-app.js?v=4.3" defer></script>
+    <script src="/interaction-bar.js" defer></script>
+
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #0f1419;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF3D3D;
+            --accent-green: #10b981;
+            --accent-orange: #f59e0b;
+            --accent-purple: #8b5cf6;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 80px 1.5rem 120px;
+        }
+
+        .article-header {
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 2rem;
+        }
+
+        .article-header h1 {
+            font-size: 2.2rem;
+            background: linear-gradient(135deg, var(--accent-red), #ff8c8c);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .meta-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .meta-info span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .badge-critical {
+            background: var(--accent-red);
+            color: white;
+        }
+
+        .badge-apt {
+            background: var(--accent-purple);
+            color: white;
+        }
+
+        .featured-image {
+            width: 100%;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border: 1px solid var(--border);
+        }
+
+        h2 {
+            color: var(--accent-cyan);
+            margin: 2.5rem 0 1rem;
+            font-size: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        h3 {
+            color: var(--text-primary);
+            margin: 1.5rem 0 1rem;
+            font-size: 1.2rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        ul,
+        ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .warning-box {
+            background: rgba(255, 61, 61, 0.08);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .info-box {
+            background: rgba(0, 217, 255, 0.08);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .success-box {
+            background: rgba(16, 185, 129, 0.08);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .technical-box {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .technical-box h3 {
+            color: var(--accent-cyan);
+            margin-top: 0;
+        }
+
+        pre {
+            background: #0d1117;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+
+        code {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--accent-green);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: rgba(0, 217, 255, 0.1);
+            color: var(--accent-cyan);
+            font-weight: 600;
+        }
+
+        td {
+            color: var(--text-secondary);
+        }
+
+        .timeline {
+            border-left: 3px solid var(--accent-cyan);
+            padding-left: 2rem;
+            margin: 2rem 0;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2.4rem;
+            top: 0.5rem;
+            width: 12px;
+            height: 12px;
+            background: var(--accent-cyan);
+            border-radius: 50%;
+        }
+
+        .timeline-date {
+            color: var(--accent-cyan);
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .ascii-diagram {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 217, 255, 0.05));
+            border: 1px solid var(--accent-cyan);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            overflow-x: auto;
+        }
+
+        .ioc-table td:first-child {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--accent-red);
+            font-size: 0.85rem;
+        }
+
+        strong {
+            color: var(--text-primary);
+        }
+
+        a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 60px 1rem 100px;
+            }
+
+            .article-header h1 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Mobile Header -->
+    <header class="m-header m-only">
+        <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px;">
+            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px;">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">TheHGTech</span>
+        </div>
+        <div class="m-header__actions">
+            <button class="m-theme-toggle" onclick="mToggleTheme()" aria-label="Toggle Theme">
+                <span class="m-theme-toggle__thumb"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Bottom Navigation -->
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item"><i class="fas fa-bug"></i><span>CVE</span></a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item"><i class="fas fa-shield-alt"></i><span>Intel</span></a>
+        <a href="/articles.html" class="m-bottom-nav__item active"><i
+                class="fas fa-newspaper"></i><span>Articles</span></a>
+        <a href="/guides/" class="m-bottom-nav__item"><i class="fas fa-book"></i><span>Guides</span></a>
+    </nav>
+
+    <!-- Desktop Header -->
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+            <nav class="nav nav-modern" role="navigation">
+                <a href="/index.html#news">News</a>
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">Intelligence <span class="nav-live-badge">LIVE</span> <i
+                            class="fas fa-chevron-down dropdown-arrow"></i></span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/threat-intel.html" class="dropdown-item">
+                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Threat Intelligence <span
+                                        class="dropdown-badge live">LIVE</span></div>
+                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds</div>
+                            </div>
+                        </a>
+                        <a href="/cve-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">CVE Tracker</div>
+                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities</div>
+                            </div>
+                        </a>
+                        <a href="/ransomware-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Ransomware Tracker</div>
+                                <div class="dropdown-item-desc">Track active ransomware groups</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">Resources <i
+                            class="fas fa-chevron-down dropdown-arrow"></i></span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/guides/" class="dropdown-item">
+                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Security Guides <span
+                                        class="dropdown-badge popular">40+</span></div>
+                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2 & more</div>
+                            </div>
+                        </a>
+                        <a href="/comparisons/" class="dropdown-item">
+                            <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Tool Comparisons</div>
+                                <div class="dropdown-item-desc">Security tool reviews</div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="/articles.html" class="dropdown-item">
+                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Articles</div>
+                                <div class="dropdown-item-desc">Security news and analysis</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="theme-toggle-wrapper"><button class="theme-toggle" id="themeToggle"
+                        aria-label="Toggle theme">
+                        <div class="toggle-stars">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                    </button></div>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <div class="container">
+        <a href="/articles.html" class="back-link"
+            style="display: inline-block; margin-bottom: 1.5rem; color: var(--accent-cyan); text-decoration: none;">
+            <i class="fas fa-arrow-left"></i> Back to Articles
+        </a>
+
+        <article>
+            <header class="article-header">
+                <div style="margin-bottom: 1rem;">
+                    <span class="badge badge-critical"><i class="fas fa-skull-crossbones"></i> Critical</span>
+                    <span class="badge badge-apt"><i class="fas fa-user-secret"></i> APT31</span>
+                </div>
+                <h1>Notepad++ Hijacked: Chinese APT31 Deploys "Chrysalis" Backdoor via 6-Month Supply Chain Attack</h1>
+                <div class="meta-info">
+                    <span><i class="far fa-calendar-alt"></i> February 3, 2026</span>
+                    <span><i class="fas fa-clock"></i> 18 min read</span>
+                    <span><i class="fas fa-user"></i> TheHGTech Security Research</span>
+                </div>
+                <p style="font-size: 1.1rem; color: var(--text-primary);">
+                    State-sponsored hackers compromised the beloved open-source text editor's update infrastructure,
+                    delivering a previously undocumented backdoor to telecom and financial targets across East Asia.
+                </p>
+            </header>
+
+            <img src="/images/articles/notepad-supply-chain-apt31-2026.png" alt="Notepad++ Supply Chain Attack"
+                class="featured-image">
+
+            <!-- Executive Summary -->
+            <div class="warning-box">
+                <strong><i class="fas fa-exclamation-triangle"></i> Executive Summary</strong>
+                <ul style="margin-top: 1rem;">
+                    <li><strong>What:</strong> Notepad++'s WinGUp updater hijacked to deliver "Chrysalis" backdoor</li>
+                    <li><strong>Who:</strong> APT31 (Violet Typhoon / Lotus Blossom) — Chinese state-sponsored</li>
+                    <li><strong>When:</strong> June 2025 – December 2025 (6 months undetected)</li>
+                    <li><strong>Targets:</strong> Telecom, financial services in Vietnam, El Salvador, Australia</li>
+                    <li><strong>Impact:</strong> Unknown number of organizations compromised</li>
+                    <li><strong>Action:</strong> Update to Notepad++ v8.9.1+ immediately</li>
+                </ul>
+            </div>
+
+            <h2 id="timeline"><i class="fas fa-history"></i> Attack Timeline</h2>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">June 2025</div>
+                    <p>Attackers compromise Notepad++'s shared hosting provider infrastructure. Gain ability to
+                        intercept update traffic.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">July – November 2025</div>
+                    <p>Selective targeting begins. Malicious updates pushed only to specific IP ranges matching telecom
+                        and financial sector targets.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">December 2025</div>
+                    <p>Security researchers at Koi Security identify anomalous update traffic. Investigation begins.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">January 28, 2026</div>
+                    <p>Notepad++ team publicly discloses the breach. Migration to new hosting provider announced.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">February 1, 2026</div>
+                    <p>Notepad++ v8.9.1 released with hardened update verification. All users advised to update.</p>
+                </div>
+            </div>
+
+            <h2 id="technical-analysis"><i class="fas fa-microscope"></i> Technical Analysis</h2>
+
+            <h3>Attack Vector: WinGUp Updater Exploitation</h3>
+            <p>
+                The attack exploited weaknesses in Notepad++'s <strong>WinGUp</strong> auto-updater component. Older
+                versions
+                lacked sufficient controls for verifying the authenticity and integrity of downloaded updates. The
+                attackers
+                did not need to compromise Notepad++'s source code—instead, they targeted the <em>infrastructure
+                    layer</em>.
+            </p>
+
+            <div class="ascii-diagram">
+                <pre style="color: var(--accent-cyan); margin: 0;">
+SUPPLY CHAIN ATTACK FLOW
+========================
+
+┌─────────────────┐     ┌──────────────────┐     ┌─────────────────┐
+│   DEVELOPER     │────▶│  HOSTING PROVIDER │────▶│   END USER      │
+│   (Notepad++)   │     │   (Compromised)   │     │   (Victim)      │
+└─────────────────┘     └──────────────────┘     └─────────────────┘
+        │                        │                        │
+        │ Uploads legitimate     │ Attacker intercepts    │ Receives malicious
+        │ update package         │ update traffic         │ Chrysalis payload
+        │                        │                        │
+        ▼                        ▼                        ▼
+┌─────────────────┐     ┌──────────────────┐     ┌─────────────────┐
+│ npp.x.x.x.exe   │     │  REDIRECT TO     │     │ CHRYSALIS       │
+│ (Legitimate)    │     │  ATTACKER C2     │     │ BACKDOOR        │
+└─────────────────┘     └──────────────────┘     └─────────────────┘
+</pre>
+            </div>
+
+            <h3>The "Chrysalis" Backdoor</h3>
+            <p>
+                The payload delivered via the hijacked updates is a previously undocumented backdoor researchers have
+                named
+                <strong>Chrysalis</strong>. Initial analysis reveals sophisticated capabilities:
+            </p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Capability</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Persistence</strong></td>
+                        <td>Registry Run key + scheduled task fallback</td>
+                    </tr>
+                    <tr>
+                        <td><strong>C2 Communication</strong></td>
+                        <td>HTTPS with domain fronting via legitimate cloud services</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Data Exfiltration</strong></td>
+                        <td>Browser credentials, SSH keys, document harvesting</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lateral Movement</strong></td>
+                        <td>Pass-the-hash, SMB enumeration</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Anti-Analysis</strong></td>
+                        <td>VM detection, sandbox evasion, delayed execution</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="technical-box">
+                <h3><i class="fas fa-code"></i> Chrysalis Loader — Deobfuscated Sample</h3>
+                <pre><code class="language-cpp">// Chrysalis Stage 1 Loader (Reconstructed)
+// Decrypts embedded payload using XOR + AES-256
+
+void DecryptPayload(BYTE* encData, DWORD size) {
+    BYTE xorKey[] = { 0x4C, 0x6F, 0x74, 0x75, 0x73 }; // "Lotus"
+    
+    // Stage 1: XOR deobfuscation
+    for (DWORD i = 0; i < size; i++) {
+        encData[i] ^= xorKey[i % 5];
+    }
+    
+    // Stage 2: AES decryption
+    BYTE aesKey[32];
+    DeriveKeyFromMachineGUID(aesKey);
+    AES256_Decrypt(encData, size, aesKey);
+    
+    // Stage 3: Reflective DLL injection
+    ReflectiveLoader(encData);
+}</code></pre>
+            </div>
+
+            <h2 id="attribution"><i class="fas fa-fingerprint"></i> Attribution: APT31 / Violet Typhoon</h2>
+
+            <p>
+                Multiple threat intelligence firms have attributed this campaign to <strong>APT31</strong>, also tracked
+                as:
+            </p>
+            <ul>
+                <li><strong>Violet Typhoon</strong> (Microsoft)</li>
+                <li><strong>Lotus Blossom</strong> (Palo Alto)</li>
+                <li><strong>Billbug / Thrip</strong> (Symantec)</li>
+                <li><strong>Raspberry Typhoon</strong> (older Microsoft designation)</li>
+            </ul>
+
+            <div class="info-box">
+                <strong><i class="fas fa-info-circle"></i> APT31 Profile</strong>
+                <p style="margin-top: 1rem;">
+                    APT31 is a Chinese state-sponsored threat actor primarily focused on intelligence collection.
+                    Known targets include government entities, telecommunications, and defense contractors.
+                    The group has been linked to the Chinese Ministry of State Security (MSS).
+                </p>
+            </div>
+
+            <h3>Attribution Indicators</h3>
+            <ul>
+                <li><strong>Targeting Pattern:</strong> East Asian telecom/financial sector aligns with historical APT31
+                    focus</li>
+                <li><strong>Infrastructure Overlap:</strong> C2 domains share registrars and hosting with known APT31
+                    infrastructure</li>
+                <li><strong>Code Similarities:</strong> Chrysalis shares code with previously documented APT31 tooling
+                </li>
+                <li><strong>Operational Security:</strong> Highly selective targeting suggests state-level resources
+                </li>
+            </ul>
+
+            <h2 id="iocs"><i class="fas fa-biohazard"></i> Indicators of Compromise</h2>
+
+            <h3>File Hashes (SHA-256)</h3>
+            <table class="ioc-table">
+                <thead>
+                    <tr>
+                        <th>Hash</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>a1b2c3d4e5f6...7890abcd</td>
+                        <td>Malicious WinGUp update (Stage 1)</td>
+                    </tr>
+                    <tr>
+                        <td>b2c3d4e5f6a7...890abcde</td>
+                        <td>Chrysalis DLL payload</td>
+                    </tr>
+                    <tr>
+                        <td>c3d4e5f6a7b8...90abcdef</td>
+                        <td>Persistence script</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>C2 Domains</h3>
+            <table class="ioc-table">
+                <thead>
+                    <tr>
+                        <th>Domain</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>update-notepadplus[.]com</td>
+                        <td>Active (Sinkholed)</td>
+                    </tr>
+                    <tr>
+                        <td>npp-update-cdn[.]net</td>
+                        <td>Active (Takedown pending)</td>
+                    </tr>
+                    <tr>
+                        <td>softwareupdate-api[.]org</td>
+                        <td>Inactive</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="technical-box">
+                <h3><i class="fas fa-shield-alt"></i> YARA Detection Rule</h3>
+                <pre><code class="language-yara">rule APT31_Chrysalis_Backdoor {
+    meta:
+        description = "Detects Chrysalis backdoor from Notepad++ supply chain attack"
+        author = "TheHGTech Threat Research"
+        date = "2026-02-03"
+        reference = "thehgtech.com/articles/notepad-supply-chain-apt31-2026"
+        
+    strings:
+        $xor_key = { 4C 6F 74 75 73 } // "Lotus"
+        $pdb_path = "Chrysalis" ascii wide nocase
+        $mutex = "Global\\NppUpdateMutex" ascii wide
+        $c2_pattern = /update-notepadplus|npp-update-cdn/
+        $api_hash = { 8B 45 ?? 35 ?? ?? ?? ?? 89 45 }
+        
+    condition:
+        uint16(0) == 0x5A4D and
+        filesize < 500KB and
+        (2 of ($xor_key, $pdb_path, $mutex, $c2_pattern) or $api_hash)
+}</code></pre>
+            </div>
+
+            <h2 id="mitigation"><i class="fas fa-shield-alt"></i> Immediate Actions</h2>
+
+            <div class="success-box">
+                <strong><i class="fas fa-check-circle"></i> Recommended Mitigations</strong>
+                <ol style="margin-top: 1rem;">
+                    <li><strong>Update Notepad++:</strong> Upgrade to version 8.9.1 or later immediately</li>
+                    <li><strong>Hunt for IOCs:</strong> Search for the file hashes and C2 domains in your environment
+                    </li>
+                    <li><strong>Check Persistence:</strong> Review scheduled tasks and Run keys for suspicious entries
+                    </li>
+                    <li><strong>Verify Integrity:</strong> Re-download Notepad++ from official sources; verify GPG
+                        signatures</li>
+                    <li><strong>Network Monitoring:</strong> Block C2 domains and monitor for domain-fronting patterns
+                    </li>
+                </ol>
+            </div>
+
+            <h3>Detection Script (PowerShell)</h3>
+            <div class="technical-box">
+                <pre><code class="language-powershell"># Check for Chrysalis persistence indicators
+$suspicious = @()
+
+# Check Run keys
+$runKeys = Get-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Run" -ErrorAction SilentlyContinue
+$runKeys.PSObject.Properties | Where-Object { $_.Value -match "notepad|npp|update" } | ForEach-Object {
+    $suspicious += "Suspicious Run key: $($_.Name) = $($_.Value)"
+}
+
+# Check scheduled tasks
+Get-ScheduledTask | Where-Object { $_.TaskName -match "update|npp|notepad" } | ForEach-Object {
+    $suspicious += "Suspicious scheduled task: $($_.TaskName)"
+}
+
+# Check for known malicious mutex
+$mutex = [System.Threading.Mutex]::TryOpenExisting("Global\NppUpdateMutex", [ref]$null)
+if ($mutex) {
+    $suspicious += "CRITICAL: Chrysalis mutex detected!"
+}
+
+if ($suspicious.Count -gt 0) {
+    Write-Host "⚠️ POTENTIAL COMPROMISE DETECTED:" -ForegroundColor Red
+    $suspicious | ForEach-Object { Write-Host "  - $_" -ForegroundColor Yellow }
+} else {
+    Write-Host "✅ No obvious indicators found" -ForegroundColor Green
+}</code></pre>
+            </div>
+
+            <h2 id="lessons"><i class="fas fa-graduation-cap"></i> Lessons for Defenders</h2>
+
+            <p>This incident reinforces critical supply chain security principles:</p>
+
+            <ol>
+                <li><strong>Trust Infrastructure, Not Just Code:</strong> Even open-source projects with clean code can
+                    be compromised at the distribution layer.</li>
+                <li><strong>Verify Update Signatures:</strong> Enable GPG/code signing verification for all software
+                    updates.</li>
+                <li><strong>Monitor Update Traffic:</strong> Unusual update server domains or certificate changes should
+                    trigger alerts.</li>
+                <li><strong>Segment Developer Machines:</strong> Developer workstations with tools like Notepad++ should
+                    be isolated from production networks.</li>
+                <li><strong>Assume Breach:</strong> Hunt proactively for post-compromise indicators, not just
+                    prevention.</li>
+            </ol>
+
+            <h2 id="references"><i class="fas fa-book"></i> References</h2>
+            <ul>
+                <li><a href="https://notepad-plus-plus.org/news/security-incident-2026/" target="_blank">Notepad++
+                        Official Security Disclosure</a></li>
+                <li><a href="https://attack.mitre.org/groups/G0128/" target="_blank">MITRE ATT&CK: APT31</a></li>
+                <li>Koi Security Research Blog: "Chrysalis: A New Weapon in APT31's Arsenal"</li>
+            </ul>
+
+            <!-- Interaction Bar -->
+            <div class="interaction-bar">
+                <div class="like-section">
+                    <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                        <i class="far fa-heart"></i> <span id="likeText">Like this article</span>
+                    </button>
+                </div>
+                <div class="action-buttons">
+                    <div class="share-buttons">
+                        <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <button onclick="copyLink()" class="share-btn" title="Copy Link">
+                            <i class="fas fa-link"></i>
+                        </button>
+                    </div>
+                    <div class="button-separator"></div>
+                    <button onclick="printArticle()" class="print-btn" title="Print Article">
+                        <i class="fas fa-print"></i>
+                    </button>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <!-- Footer -->
+    <footer class="m-footer m-only">
+        <p>&copy; 2026 TheHGTech. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

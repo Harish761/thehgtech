@@ -1,6 +1,63 @@
 {
   "articles": [
     {
+      "id": "article-notepad-supply-chain-apt31-2026",
+      "title": "Notepad++ Hijacked: APT31 Deploys Chrysalis Backdoor via 6-Month Supply Chain Attack",
+      "date": "February 3, 2026",
+      "category": "APT / Supply Chain",
+      "badge": "CRITICAL",
+      "excerpt": "Chinese state-sponsored hackers APT31 compromised Notepad++'s WinGUp update mechanism for 6 months, deploying the previously undocumented 'Chrysalis' backdoor to telecom and financial targets in East Asia.",
+      "image": "images/articles/notepad-supply-chain-apt31-2026.png",
+      "tags": [
+        "APT31",
+        "Notepad++",
+        "Supply Chain",
+        "Chrysalis",
+        "China",
+        "State-Sponsored"
+      ],
+      "author": "TheHGTech Security Team",
+      "externalUrl": "articles/notepad-supply-chain-apt31-2026.html"
+    },
+    {
+      "id": "article-purerat-ai-malware-vietnam-2026",
+      "title": "PureRAT: Vietnamese Threat Actor Deploys AI-Generated Malware in Phishing Campaign",
+      "date": "February 3, 2026",
+      "category": "Malware / AI Threats",
+      "badge": "AI-POWERED",
+      "excerpt": "Vietnamese hackers leverage AI to develop malware components in ongoing PureRAT campaign. First documented case showing clear AI-generation markers including emojis and numbered steps in attack scripts.",
+      "image": "images/articles/purerat-ai-malware-vietnam-2026.png",
+      "tags": [
+        "PureRAT",
+        "AI Malware",
+        "Vietnam",
+        "Phishing",
+        "DLL Sideloading",
+        "HVNC"
+      ],
+      "author": "TheHGTech Security Team",
+      "externalUrl": "articles/purerat-ai-malware-vietnam-2026.html"
+    },
+    {
+      "id": "article-glassworm-openvsx-2026",
+      "title": "GlassWorm Returns: Open VSX Extensions Compromised in Second Wave Supply Chain Attack",
+      "date": "February 3, 2026",
+      "category": "Supply Chain",
+      "badge": "WAVE 2",
+      "excerpt": "Self-propagating GlassWorm malware strikes again, compromising 4 established Open VSX extensions via credential theft. New variant targets macOS developers, uses Solana blockchain for C2.",
+      "image": "images/articles/glassworm-openvsx-supply-chain-2026.png",
+      "tags": [
+        "GlassWorm",
+        "Open VSX",
+        "VS Code",
+        "Supply Chain",
+        "Blockchain C2",
+        "macOS"
+      ],
+      "author": "TheHGTech Security Team",
+      "externalUrl": "articles/glassworm-openvsx-supply-chain-2026.html"
+    },
+    {
       "id": "report-20260202",
       "title": "Weekly Threat Report: February 02, 2026",
       "date": "February 02, 2026",

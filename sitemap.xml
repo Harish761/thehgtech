@@ -83,6 +83,42 @@
   
   <!-- ========== ARTICLES - HIGH TRAFFIC POTENTIAL ========== -->
   
+  <!-- Feb 3, 2026 - Notepad++ APT31 Supply Chain Attack -->
+  <url>
+    <loc>https://thehgtech.com/articles/notepad-supply-chain-apt31-2026.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.99</priority>
+    <lastmod>2026-02-03</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/notepad-supply-chain-apt31-2026.png</image:loc>
+      <image:title>Notepad++ APT31 Chrysalis Backdoor Supply Chain Attack</image:title>
+    </image:image>
+  </url>
+
+  <!-- Feb 3, 2026 - PureRAT AI Malware -->
+  <url>
+    <loc>https://thehgtech.com/articles/purerat-ai-malware-vietnam-2026.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.98</priority>
+    <lastmod>2026-02-03</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/purerat-ai-malware-vietnam-2026.png</image:loc>
+      <image:title>PureRAT AI-Generated Malware Vietnamese Campaign</image:title>
+    </image:image>
+  </url>
+
+  <!-- Feb 3, 2026 - GlassWorm Open VSX Attack -->
+  <url>
+    <loc>https://thehgtech.com/articles/glassworm-openvsx-supply-chain-2026.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.98</priority>
+    <lastmod>2026-02-03</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/glassworm-openvsx-supply-chain-2026.png</image:loc>
+      <image:title>GlassWorm Open VSX VS Code Extensions Supply Chain Attack</image:title>
+    </image:image>
+  </url>
+
   <!-- Feb 1, 2026 - Ivanti Zero-Days -->
   <url>
     <loc>https://thehgtech.com/articles/ivanti-epmm-zeroday-cve-2026-1281.html</loc>
