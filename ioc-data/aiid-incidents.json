@@ -9,6 +9,54 @@
       "severity": "high"
     },
     {
+      "id": "AIID-1315",
+      "incident_id": 1315,
+      "title": "Purportedly AI-Generated Nude Images of Middle School Students Reportedly Circulated at Louisiana Sc",
+      "date": "2026-02-02",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1317",
+      "incident_id": 1317,
+      "title": "Purported Deepfake Impersonation of Elon Musk Used to Promote Fraudulent '17-Hour' Diabetes Treatmen",
+      "date": "2026-02-02",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1334",
+      "incident_id": 1334,
+      "title": "Grok Reportedly Generated False 'Unmasked' Images of ICE Agent, Purportedly Triggering Online Miside",
+      "date": "2026-02-02",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1344",
+      "incident_id": 1344,
+      "title": "Purported AI-Generated Images Depict Kate Garraway With Fictitious Partner",
+      "date": "2026-02-02",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1346",
+      "incident_id": 1346,
+      "title": "Purported AI-Generated Videos Depicted George Will Reportedly Commenting on Trump and Supreme Court ",
+      "date": "2026-02-02",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1354",
+      "incident_id": 1354,
+      "title": "Purportedly AI-Altered Fake Nude Images of High School Girls and Women Reportedly Created and Dissem",
+      "date": "2026-02-02",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1360",
       "incident_id": 1360,
       "title": "CISA Acting Director Reportedly Uploaded Sensitive Government Documents to Public ChatGPT Instance",
@@ -44,14 +92,6 @@
       "id": "AIID-1353",
       "incident_id": 1353,
       "title": "ICE Facial Recognition App Mobile Fortify Reportedly Misidentified Woman Twice During Immigration En",
-      "date": "2026-01-31",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1354",
-      "incident_id": 1354,
-      "title": "AI-Altered Fake Nude Images of High School Girls and Women Reportedly Created and Disseminated in Pe",
       "date": "2026-01-31",
       "category": "other",
       "severity": "medium"
@@ -169,27 +209,11 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1344",
-      "incident_id": 1344,
-      "title": "Purported AI-Generated Images Falsely Depict Kate Garraway With Fictitious Partner",
-      "date": "2026-01-17",
-      "category": "misinformation",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1345",
       "incident_id": 1345,
       "title": "Purported Deepfake Video Allegedly Used to Harass Washington State Patrol Trooper",
       "date": "2026-01-17",
       "category": "deepfake",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1346",
-      "incident_id": 1346,
-      "title": "Purported AI-Generated Videos Falsely Depicted George Will Reportedly Commenting on Trump and Suprem",
-      "date": "2026-01-17",
-      "category": "misinformation",
       "severity": "medium"
     },
     {
@@ -297,14 +321,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1334",
-      "incident_id": 1334,
-      "title": "Grok Reportedly Generated False \"Unmasked\" Images of ICE Agent, Purportedly Triggering Online Miside",
-      "date": "2026-01-10",
-      "category": "misinformation",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1335",
       "incident_id": 1335,
       "title": "OpenDream AI Platform Reportedly Commercialized AI-Generated CSAM and Non-consensual Deepfake Sexual",
@@ -335,14 +351,6 @@
       "date": "2026-01-02",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1317",
-      "incident_id": 1317,
-      "title": "Purported Deepfake Impersonation of Elon Musk Used to Promote Fraudulent '17-Hour' Diabetes Treatmen",
-      "date": "2025-12-30",
-      "category": "deepfake",
-      "severity": "high"
     },
     {
       "id": "AIID-1323",
@@ -415,14 +423,6 @@
       "date": "2025-12-24",
       "category": "deepfake",
       "severity": "high"
-    },
-    {
-      "id": "AIID-1315",
-      "incident_id": 1315,
-      "title": "Purportedly AII-Generated Nude Images of Middle School Students Reportedly Circulated at Louisiana S",
-      "date": "2025-12-24",
-      "category": "other",
-      "severity": "medium"
     },
     {
       "id": "AIID-1316",
@@ -1555,8 +1555,8 @@
   ],
   "stats": {
     "total": 194,
-    "last7Days": 12,
-    "last30Days": 41
+    "last7Days": 17,
+    "last30Days": 43
   },
-  "lastUpdated": "2026-02-02T22:26:33.143205+05:30"
+  "lastUpdated": "2026-02-03T08:24:04.511560+05:30"
 }
