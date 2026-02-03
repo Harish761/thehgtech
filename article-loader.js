@@ -5,7 +5,11 @@ let articlesData = {};
 async function loadArticlesFromJSON() {
     try {
         console.log('[article-loader] Starting to load articles.json...');
-        const response = await fetch('articles.json?v=20251206-2352');
+        // Use timestamp as cache buster to always get fresh data (fixes Safari mobile caching)
+        const cacheBuster = Date.now();
+        const response = await fetch(`articles.json?v=${cacheBuster}`, {
+            cache: 'no-store' // Force network fetch
+        });
         const data = await response.json();
         console.log('[article-loader] Loaded articles.json:', data.articles.length, 'articles');
 

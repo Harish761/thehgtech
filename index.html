@@ -63,6 +63,11 @@
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
     <link rel="alternate" type="application/rss+xml" title="TheHGTech RSS Feed" href="/rss.xml">
 
+    <!-- ========== CACHE CONTROL (Safari Mobile Fix) ========== -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
     <!-- ========== SECURITY HEADERS ========== -->
     <!-- Note: frame-ancestors and X-Frame-Options only work as HTTP headers, not meta tags -->
     <meta http-equiv="Content-Security-Policy"
@@ -317,14 +322,14 @@
 
     <!-- ========== MOBILE OPTIMIZATION ========== -->
     <!-- Preload mobile CSS for faster loading (while keeping sync to prevent CLS) -->
-    <link rel="preload" href="m-core.min.css?v=1" as="style" media="(max-width: 768px)">
-    <link rel="preload" href="m-layout.min.css?v=1" as="style" media="(max-width: 768px)">
-    <link rel="preload" href="m-components.min.css?v=1" as="style" media="(max-width: 768px)">
+    <link rel="preload" href="m-core.min.css?v=20260203" as="style" media="(max-width: 768px)">
+    <link rel="preload" href="m-layout.min.css?v=20260203" as="style" media="(max-width: 768px)">
+    <link rel="preload" href="m-components.min.css?v=20260203" as="style" media="(max-width: 768px)">
     <!-- Mobile CSS - Sync load required to prevent CLS (layout shifts) -->
-    <link rel="stylesheet" href="m-core.min.css?v=1" media="(max-width: 768px)">
-    <link rel="stylesheet" href="m-layout.min.css?v=1" media="(max-width: 768px)">
-    <link rel="stylesheet" href="m-components.min.css?v=1" media="(max-width: 768px)">
-    <script src="m-app.js?v=4.6" defer></script>
+    <link rel="stylesheet" href="m-core.min.css?v=20260203" media="(max-width: 768px)">
+    <link rel="stylesheet" href="m-layout.min.css?v=20260203" media="(max-width: 768px)">
+    <link rel="stylesheet" href="m-components.min.css?v=20260203" media="(max-width: 768px)">
+    <script src="m-app.js?v=20260203" defer></script>
     <script src="theme-toggle.js" defer></script>
 
 

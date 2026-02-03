@@ -3,7 +3,7 @@
  * Provides offline support and performance caching
  */
 
-const CACHE_VERSION = 'thehgtech-v2.0.0'; // Bumped version to invalidate old caches
+const CACHE_VERSION = 'thehgtech-v3.0.0-20260203'; // Bumped to force refresh on mobile Safari
 const CACHE_STATIC = `${CACHE_VERSION}-static`;
 const CACHE_DYNAMIC = `${CACHE_VERSION}-dynamic`;
 const CACHE_IMAGES = `${CACHE_VERSION}-images`;
@@ -93,9 +93,37 @@ self.addEventListener('fetch', (event) => {
 
 // ========== REQUEST HANDLERS ==========
 
-// Static assets: Cache first, network fallback
+// Static assets: Stale-while-revalidate for HTML, cache-first for others
 async function handleStaticRequest(request) {
     try {
+        const url = new URL(request.url);
+        const isHTML = request.mode === 'navigate' ||
+            url.pathname.endsWith('.html') ||
+            url.pathname === '/' ||
+            url.pathname === '';
+
+        if (isHTML) {
+            // NETWORK-FIRST for HTML pages (fixes Safari mobile caching)
+            try {
+                const networkResponse = await fetch(request);
+
+                if (networkResponse.ok) {
+                    const cache = await caches.open(CACHE_STATIC);
+                    cache.put(request, networkResponse.clone());
+                }
+
+                return networkResponse;
+            } catch (error) {
+                // Fallback to cache if network fails
+                const cachedResponse = await caches.match(request);
+                if (cachedResponse) {
+                    return cachedResponse;
+                }
+                return caches.match('/offline.html');
+            }
+        }
+
+        // Cache-first for other static assets (CSS, JS, fonts)
         const cachedResponse = await caches.match(request);
 
         if (cachedResponse) {
