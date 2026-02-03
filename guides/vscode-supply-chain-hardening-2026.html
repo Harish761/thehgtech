@@ -31,11 +31,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Style System -->
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/header-dropdown.css?v=1">
+    <link rel="stylesheet" href="/print.css">
     <link rel="stylesheet" href="/m-core.css?v=4.2">
     <link rel="stylesheet" href="/m-layout.css?v=3.2">
     <link rel="stylesheet" href="/m-components.css?v=3.0">
     <link rel="stylesheet" href="/light-mode.css">
-    <link rel="stylesheet" href="/interaction-bar.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
 
     <script src="/m-app.js?v=4.3" defer></script>
     <script src="/interaction-bar.js" defer></script>
@@ -432,7 +435,94 @@
         <a href="/guides/" class="m-bottom-nav__item active"><i class="fas fa-book"></i><span>Guides</span></a>
     </nav>
 
+    <!-- Desktop Header -->
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+            <nav class="nav nav-modern" role="navigation">
+                <a href="/index.html#news">News</a>
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">Intelligence <span class="nav-live-badge">LIVE</span> <i
+                            class="fas fa-chevron-down dropdown-arrow"></i></span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/threat-intel.html" class="dropdown-item">
+                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Threat Intelligence <span
+                                        class="dropdown-badge live">LIVE</span></div>
+                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds</div>
+                            </div>
+                        </a>
+                        <a href="/cve-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">CVE Tracker</div>
+                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities</div>
+                            </div>
+                        </a>
+                        <a href="/ransomware-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Ransomware Tracker</div>
+                                <div class="dropdown-item-desc">Track active ransomware groups</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">Resources <i
+                            class="fas fa-chevron-down dropdown-arrow"></i></span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/guides/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
+                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides
+                                    <span class="dropdown-badge popular">40+</span>
+                                </div>
+                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2 & more</div>
+                            </div>
+                        </a>
+                        <a href="/comparisons/" class="dropdown-item">
+                            <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Tool Comparisons</div>
+                                <div class="dropdown-item-desc">Security tool reviews</div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="/articles.html" class="dropdown-item">
+                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Articles</div>
+                                <div class="dropdown-item-desc">Security news and analysis</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="theme-toggle-wrapper"><button class="theme-toggle" id="themeToggle"
+                        aria-label="Toggle theme">
+                        <div class="toggle-stars">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                    </button></div>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
     <div class="container">
+        <a href="/guides/" class="back-link"
+            style="display: inline-block; margin-bottom: 1.5rem; color: var(--accent-cyan); text-decoration: none;"><i
+                class="fas fa-arrow-left"></i> Back to Guides</a>
         <header class="guide-header">
             <div class="breadcrumb">
                 <a href="/">Home</a> / <a href="/guides/">Security Guides</a> / IDE Hardening
