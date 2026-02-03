@@ -4,47 +4,12 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Feb 02 2026",
-            "headline": "Risk Culture Boosts Cyber Teams&#x27; Predictive Abilities",
-            "title": "How Risk Culture Enhances Cyber Teams&#x27; Predictive Capabilities",
-            "content": "Organizations entrenched in a reactive &quot;incident mode&quot; risk overlooking critical questions that could prevent future cyber incidents. When constant alerts become the norm, cybersecurity teams may become desensitized, failing to probe the underlying causes of repeated breaches. A robust risk culture encourages teams to shift from reactive to predictive, identifying and mitigating potential threats before they materialize. By fostering a proactive mindset, organizations can enhance their cybersecurity posture, reducing the frequency and impact of incidents. Cybersecurity leaders must prioritize cultivating a risk-aware culture to stay ahead of evolving threats.",
+            "date": "Feb 03 2026",
+            "headline": "PDF Phishing Exploits Trust in Dropbox—Stay Alert",
+            "title": "New Phishing Attack Uses PDFs and Dropbox to Steal Credentials",
+            "content": "Cybersecurity researchers have uncovered a new phishing campaign that leverages PDF documents and Dropbox to deceive users into revealing sensitive information. This attack exploits the widespread trust in Dropbox and familiarity with PDFs to lure victims into clicking malicious links. The phishing emails typically contain a PDF attachment that claims to be an important document, prompting users to enter their credentials into a fake Dropbox login page. As these attacks continue to evolve with AI-driven tools, they remain effective due to their simplicity and the trust users place in widely used services. Security professionals are advised to educate users about verifying the authenticity of unexpected emails and to implement email filtering solutions to detect and block such threats.",
             "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4125172/how-risk-culture-turns-cyber-teams-predictive.html",
-            "relatedResources": [
-                {
-                    "label": "React Analysis",
-                    "url": "/articles/react2shell-cve-2025-55182-react-vulnerability.html",
-                    "icon": "fa-file-alt"
-                }
-            ]
-        },
-        {
-            "date": "Feb 02 2026",
-            "headline": "Stealthy RAT Enables Live Operator Chats on Windows",
-            "title": "New Windows RAT Allows Live Conversations with Operators",
-            "content": "Security researchers at Point Wild have uncovered a sophisticated Windows Remote Access Trojan (RAT) enabling live communication between attackers and infected systems. The malware employs a multi-stage infection process, leveraging standard Windows components to maintain persistent, memory-resident access. This stealthy approach allows attackers to exfiltrate sensitive data without detection. Organizations using Windows systems are at risk, particularly those with inadequate security measures. IT teams should enhance monitoring and implement robust endpoint protection to detect and mitigate such advanced threats.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4125567/this-stealthy-windows-rat-holds-live-conversations-with-its-operators.html",
-            "relatedResources": [
-                {
-                    "label": "Active Directory Security",
-                    "url": "/guides/active-directory-security-hardening.html",
-                    "icon": "fa-sitemap"
-                },
-                {
-                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
-                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
-                    "icon": "fa-shield-virus"
-                }
-            ]
-        },
-        {
-            "date": "Feb 02 2026",
-            "headline": "AI Transforms Malware—Cyber Defenses Must Evolve",
-            "title": "Cyber Insights 2026: AI&#x27;s Impact on Malware and Cyber Defense",
-            "content": "Artificial intelligence is reshaping the landscape of cyber threats, with AI-driven malware and ransomware becoming increasingly sophisticated. Security leaders emphasize the need for defenses that can adapt to AI-enhanced attacks, which are more targeted and difficult to detect. Identity-led intrusions are also on the rise, requiring enhanced authentication and monitoring strategies. Organizations must invest in AI-powered security solutions to keep pace with these evolving threats. As AI continues to advance, its dual role as both a tool for attackers and a defensive measure becomes a critical focus for cybersecurity professionals.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/cyber-insights-2026-malware-and-cyberattacks-in-the-age-of-ai/",
+            "sourceUrl": "https://www.csoonline.com/article/4125990/new-phishing-attack-leverages-pdfs-and-dropbox.html",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
@@ -52,113 +17,92 @@ const websiteContent = {
                     "icon": "fa-skull-crossbones"
                 },
                 {
-                    "label": "Ransomware Response Playbook",
-                    "url": "/guides/ransomware-response-playbook.html",
-                    "icon": "fa-biohazard"
+                    "label": "Phishing & Security Awareness",
+                    "url": "/guides/phishing-simulation-security-awareness.html",
+                    "icon": "fa-fish"
                 }
             ]
         },
         {
-            "date": "Feb 02 2026",
-            "headline": "Weekly Cyber Recap: Botnets, Zero-Days, and AI Threats",
-            "title": "Weekly Cybersecurity Recap: Emerging Threats and Defenses",
-            "content": "The cybersecurity landscape continues to evolve with new threats and defenses emerging weekly. Recent highlights include the discovery of a proxy botnet, exploitation of an Office zero-day vulnerability, and a surge in MongoDB ransom attacks. AI hijacks and other novel threats underscore the need for continuous vigilance and adaptation. Each incident serves as a reminder of the dynamic nature of cyber risk and the importance of proactive security measures. Cybersecurity teams must stay informed and agile to effectively counter these evolving challenges.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/02/weekly-recap-proxy-botnet-office-zero.html",
+            "date": "Feb 03 2026",
+            "headline": "February 3rd ISC Stormcast—Stay Informed on Cyber Threats",
+            "title": "ISC Stormcast Discusses Current Cyber Threat Landscape",
+            "content": "The SANS Internet Storm Center&#x27;s daily Stormcast podcast for February 3rd, 2026, highlights ongoing cybersecurity threats and vulnerabilities. The podcast provides insights into recent phishing campaigns, malware developments, and other significant security issues affecting organizations worldwide. Security professionals can gain valuable knowledge on how to protect their networks and systems by staying informed about the latest tactics used by threat actors. The InfoCON level remains green, indicating a stable threat environment, but vigilance is encouraged. Regular updates and patches, along with employee training, are recommended to mitigate potential risks.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32676",
             "relatedResources": [
                 {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Mongodb Analysis",
-                    "url": "/articles/mongodb-mongobleed-cve-2025-14847.html",
-                    "icon": "fa-file-alt"
-                },
-                {
-                    "label": "Zero-Day Detection Guide",
-                    "url": "/guides/zero-day-detection.html",
-                    "icon": "fa-exclamation-triangle"
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
                 }
             ]
         },
         {
             "date": "Feb 02 2026",
-            "headline": "1,400 MongoDB Databases Compromised by Single Threat Actor",
-            "title": "Over 1,400 MongoDB Databases Ransacked by Threat Actor",
-            "content": "A single threat actor has compromised over 1,400 out of 3,100 unprotected MongoDB databases, highlighting the critical need for robust security measures. These databases remain vulnerable due to misconfigurations and lack of proper access controls, allowing attackers to exfiltrate sensitive data and demand ransoms. Organizations using MongoDB must prioritize securing their instances by implementing strong authentication, encryption, and regular security audits. This incident underscores the persistent threat of database attacks and the importance of proactive database security strategies.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/over-1400-mongodb-databases-ransacked-by-threat-actor/",
-            "relatedResources": [
-                {
-                    "label": "Mongodb Analysis",
-                    "url": "/articles/mongodb-mongobleed-cve-2025-14847.html",
-                    "icon": "fa-file-alt"
-                }
-            ]
-        },
-        {
-            "date": "Feb 02 2026",
-            "headline": "Mid-Market Firms Tackle Complete Cyber Threat Lifecycle",
-            "title": "Securing the Mid-Market Across the Complete Threat Lifecycle",
-            "content": "Mid-market organizations face unique cybersecurity challenges, balancing proactive and reactive measures to protect their expanding attack surfaces. Effective security strategies must encompass the entire threat lifecycle, from prevention to detection and response. By implementing comprehensive security frameworks, these organizations can mitigate risks and prevent damage from cyberattacks. As threats evolve, mid-market firms must continually assess and enhance their cybersecurity posture, leveraging both technology and human expertise to stay ahead of attackers. The focus on lifecycle security is crucial for maintaining resilience in a dynamic threat landscape.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/02/securing-mid-market-across-complete.html",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "React Analysis",
-                    "url": "/articles/react2shell-cve-2025-55182-react-vulnerability.html",
-                    "icon": "fa-file-alt"
-                },
-                {
-                    "label": "SIEM & Log Analysis Guide",
-                    "url": "/guides/siem-log-analysis.html",
-                    "icon": "fa-chart-bar"
-                }
-            ]
-        },
-        {
-            "date": "Feb 02 2026",
-            "headline": "Microsoft Fixes Vanishing Password Sign-In Bug",
-            "title": "Microsoft Resolves Windows 11 Password Sign-In Disappearance Issue",
-            "content": "Microsoft has addressed a bug causing the password sign-in option to disappear from Windows 11 lock screens following updates since August 2025. This issue affected users&#x27; ability to access their devices using traditional credentials, leading to frustration and potential security concerns. The fix restores the missing functionality, ensuring users can reliably sign in with passwords. Microsoft advises users to apply the latest updates to resolve the issue and maintain system security. This incident highlights the importance of thorough testing in software updates to prevent user disruptions.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-bug-causing-password-sign-in-option-to-disappear/",
-            "relatedResources": [
-                {
-                    "label": "Active Directory Security",
-                    "url": "/guides/active-directory-security-hardening.html",
-                    "icon": "fa-sitemap"
-                }
-            ]
-        },
-        {
-            "date": "Feb 02 2026",
-            "headline": "Quantum and AI Transform Cybersecurity Landscape",
-            "title": "Quantum Computing and AI Herald New Era in Cybersecurity",
-            "content": "The convergence of quantum computing and artificial intelligence (AI) is poised to revolutionize cybersecurity, marking a new era of both challenges and opportunities. As AI extends its influence across the tech landscape, it becomes crucial in addressing the complex security issues posed by quantum advancements. The potential for quantum computers to break traditional encryption methods poses a significant threat, prompting the need for quantum-resistant algorithms. Organizations must prepare for this shift by investing in research and development to safeguard data integrity. This technological evolution underscores the urgency for cybersecurity professionals to adapt to rapidly changing threats.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4122039/das-nachste-grose-security-schlachtfeld.html",
+            "headline": "States Ramp Up Election Security Amid Federal Pullback",
+            "title": "States Seek Local Solutions as Federal Election Security Support Declines",
+            "content": "As federal support for election cybersecurity diminishes, states are taking proactive measures to secure their electoral processes. Secretaries of State are urgently seeking to replace services previously provided by the Cybersecurity and Infrastructure Security Agency (CISA) and other federal entities. This shift comes as the federal government reallocates resources, leaving states to bolster their defenses against potential cyber threats. The move underscores the growing need for state-level cybersecurity initiatives and collaboration with private sector partners. Election officials are encouraged to invest in robust security frameworks and enhance their incident response capabilities to protect the integrity of upcoming elections.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/cisa-election-security-cutbacks-states-trump-administration/",
             "relatedResources": []
         },
         {
             "date": "Feb 02 2026",
-            "headline": "ISC Stormcast Highlights Latest Cyber Threats",
-            "title": "ISC Stormcast Provides Insights on Current Cybersecurity Threats",
-            "content": "The SANS Internet Storm Center&#x27;s latest Stormcast podcast covers emerging cybersecurity threats and trends as of February 2, 2026. The episode provides insights into the latest vulnerabilities and exploits affecting various systems, offering guidance for security professionals to enhance their defenses. By staying informed about these developments, organizations can better protect themselves against potential attacks. The podcast emphasizes the importance of continuous monitoring and proactive measures in maintaining robust cybersecurity postures. Listeners are encouraged to implement recommended security updates and patches to mitigate risks.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32672",
+            "headline": "Fake PDF Lures Steal Dropbox Logins—Beware Phishing",
+            "title": "Attackers Use Fake PDF Lures to Harvest Dropbox Credentials",
+            "content": "A recent phishing campaign has been identified targeting corporate inboxes with fake PDF documents designed to steal Dropbox login credentials. The attackers send emails containing PDFs labeled as &quot;request orders,&quot; which redirect victims to a fraudulent Dropbox login page. This malware-free tactic exploits users&#x27; trust in familiar document formats and cloud services, making it difficult to detect without proper security measures. Organizations are urged to implement multi-factor authentication and educate employees about the dangers of phishing to prevent unauthorized access to sensitive data. Security teams should also employ advanced email filtering solutions to identify and block these deceptive emails.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cloud-security/attackers-harvest-dropbox-logins-fake-pdf-lures",
+            "relatedResources": [
+                {
+                    "label": "Phishing & Security Awareness",
+                    "url": "/guides/phishing-simulation-security-awareness.html",
+                    "icon": "fa-fish"
+                }
+            ]
+        },
+        {
+            "date": "Feb 02 2026",
+            "headline": "Microsoft Disables NTLM—Boosts Windows Security",
+            "title": "Microsoft Phases Out NTLM to Enhance Windows Security",
+            "content": "Microsoft has announced the default disabling of NT LAN Manager (NTLM) in Windows 11 and Windows Server, marking a significant step towards improved security. NTLM, a legacy authentication protocol introduced in the 1990s, is being phased out in favor of the more secure Kerberos protocol. This transition aims to reduce vulnerabilities associated with NTLM, such as credential theft and replay attacks. Organizations using Windows environments are advised to transition to Kerberos and review their authentication protocols to ensure compliance with Microsoft&#x27;s security recommendations. This move is part of Microsoft&#x27;s broader strategy to fortify Windows against evolving cyber threats.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4125947/microsoft-disables-ntlm-in-windows.html",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
                     "url": "/ransomware-tracker.html",
                     "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Active Directory Security",
+                    "url": "/guides/active-directory-security-hardening.html",
+                    "icon": "fa-sitemap"
+                }
+            ]
+        },
+        {
+            "date": "Feb 02 2026",
+            "headline": "GlassWorm Targets macOS—Steals Passwords and Crypto Data",
+            "title": "GlassWorm Malware Exploits OpenVSX Extensions on macOS",
+            "content": "A new malware strain named GlassWorm is targeting macOS systems through compromised OpenVSX extensions, focusing on stealing passwords, cryptocurrency wallet data, and developer credentials. The attack takes advantage of vulnerabilities in the OpenVSX extension repository, allowing malicious actors to distribute infected extensions. This highlights the importance of verifying the integrity of third-party software and extensions before installation. Developers and users of macOS are advised to conduct regular security audits and use trusted sources for downloading extensions. The incident underscores the growing threat landscape targeting macOS platforms, which have traditionally been perceived as more secure.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-glassworm-attack-targets-macos-via-compromised-openvsx-extensions/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 02 2026",
+            "headline": "$600K Settlement for Wrongfully Jailed Pen Testers",
+            "title": "Iowa County Settles with Pen Testers Wrongfully Arrested in 2019",
+            "content": "Two penetration testers wrongfully arrested by Iowa police in 2019 have received a $600,000 settlement, highlighting the risks faced by security professionals during red teaming exercises. The testers were conducting authorized security assessments when they were detained, underscoring the need for clear communication and understanding between security teams and law enforcement. This incident has prompted calls for better awareness and training for law enforcement regarding cybersecurity practices. Organizations engaging in penetration testing are advised to ensure all legal agreements and authorizations are clearly documented and communicated to avoid similar situations.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/county-pays-600k-wrongfully-jailed-pen-testers",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
                 }
             ]
         },
@@ -182,95 +126,65 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Feb 02 2026",
-            "headline": "SAP Overhauls UK Tax System with AI—HMRC Leads Modernization",
-            "title": "HMRC Selects SAP to Modernize UK Tax Infrastructure with AI Integration",
-            "content": "The UK&#x27;s HM Revenue and Customs (HMRC) has partnered with SAP to revamp its core revenue systems, emphasizing AI as a cornerstone of its tax administration strategy. This initiative marks a significant shift from merely layering AI over existing systems to a complete overhaul of the infrastructure. The transformation aims to enhance efficiency, accuracy, and responsiveness in tax processing. Public sector bodies are increasingly adopting such comprehensive automation strategies to meet modern demands. This change is expected to streamline operations and improve service delivery for taxpayers across the UK.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/how-sap-modernising-hmrc-tax-infrastructure-with-ai/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 02 2026",
-            "headline": "ThoughtSpot Empowers Analytics with Agentic AI—Transforming Data Insights",
-            "title": "ThoughtSpot Introduces Agentic AI to Revolutionize Modern Analytics for Leaders",
-            "content": "ThoughtSpot is leveraging agentic AI to redefine the landscape of data analytics, offering unprecedented speed and precision in deriving insights. This development is crucial for data and analytics leaders who face the challenge of not only recognizing the need for AI but also implementing it effectively. ThoughtSpot&#x27;s solutions are designed to empower organizations to navigate these complexities, optimizing their data analytics capabilities. As AI continues to evolve, companies are urged to embrace these advancements to maintain competitive edges and drive informed decision-making processes.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/thoughtspot-on-the-new-fleet-of-agents-delivering-modern-analytics/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Feb 02 2026",
-            "headline": "AI Notetakers Revolutionize Meetings—Transcription and Translation in Real-Time",
-            "title": "AI-Powered Notetaking Devices Enhance Meeting Efficiency with Transcription and Translation",
-            "content": "AI-driven notetaking devices are transforming how meetings are documented, offering real-time transcription and summarization of audio content. Some models even provide live translation, making them invaluable in multilingual settings. These tools can streamline meeting processes by generating actionable items and summaries, enhancing productivity and ensuring no detail is missed. As businesses increasingly rely on virtual and hybrid meetings, these devices cater to the growing demand for efficient, accurate documentation. Organizations should consider integrating these technologies to boost collaboration and communication.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/02/ai-notetaker-hardware-devices-pins-pendants-record-transcribe/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 31 2026",
-            "headline": "Nvidia CEO Dismisses OpenAI Tensions—$100B Investment on Track",
-            "title": "Nvidia CEO Jensen Huang Denies Friction with OpenAI Amid Investment Plans",
-            "content": "Nvidia CEO Jensen Huang has refuted claims of dissatisfaction with OpenAI, affirming the company&#x27;s commitment to a substantial $100 billion investment in the ChatGPT developer. Despite recent rumors suggesting tensions, Huang emphasized Nvidia&#x27;s strategic interest in advancing AI capabilities through this partnership. This investment underscores Nvidia&#x27;s dedication to maintaining its leadership in the AI sector, leveraging OpenAI&#x27;s innovations. Stakeholders are advised to view these developments as part of Nvidia&#x27;s broader strategy to enhance AI infrastructure and applications.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/871818/nvidia-ceo-jensen-huang-unhappy-openai",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Jan 31 2026",
-            "headline": "SpaceX Plans 1M Satellite Data Centers—FCC Approval Sought",
-            "title": "SpaceX Proposes 1 Million Solar-Powered Data Centers in Orbit",
-            "content": "SpaceX has submitted a proposal to the FCC to deploy a constellation of one million solar-powered data center satellites. While the FCC is expected to scrutinize the feasibility of such an expansive network, SpaceX&#x27;s strategy often involves ambitious requests to push technological boundaries. This initiative aims to revolutionize data processing and storage by leveraging solar energy and orbital positioning. Industry experts are closely monitoring this development, which could significantly impact data infrastructure and energy consumption models globally.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/871641/spacex-fcc-1-million-solar-powered-data-centers-satellites-orbit",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Jan 31 2026",
-            "headline": "RAG Systems Fail on Complex Docs—Enterprises Face Challenges",
-            "title": "RAG Systems Struggle with Complex Documents, Hindering Enterprise Knowledge Access",
-            "content": "Despite the widespread adoption of Retrieval-Augmented Generation (RAG) systems in enterprises, these tools often fall short when processing sophisticated documents. Industries reliant on detailed engineering specifications find RAG systems inadequate for extracting precise information. This shortcoming highlights the need for more advanced AI solutions capable of understanding complex data structures. Organizations must reassess their knowledge management strategies to ensure they can fully leverage their information assets. As AI technology evolves, addressing these limitations will be crucial for maintaining operational efficiency.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/most-rag-systems-dont-understand-documents-they-shred-them",
+            "headline": "Musk Merges SpaceX and xAI—World&#x27;s Top Private Firm Emerges",
+            "title": "Elon Musk Integrates SpaceX and xAI, Shaping the Future of Tech",
+            "content": "Elon Musk has strategically merged SpaceX with xAI, a move that consolidates his influence over key technological sectors including national security, social media, and artificial intelligence. This fusion follows xAI&#x27;s acquisition of X last year, positioning the newly combined entity as the world&#x27;s most valuable private company. The integration is expected to enhance innovation by leveraging AI and space technologies in unison. The merger underscores Musk&#x27;s vision of a vertically-integrated innovation powerhouse, potentially impacting global tech dynamics and competitive landscapes. Stakeholders should monitor developments for implications on market trends and technological advancements.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/spacex-acquires-xai-elon-musk/",
             "relatedResources": []
         },
         {
-            "date": "Jan 31 2026",
-            "headline": "Nvidia CEO Rejects OpenAI Investment Stall Rumors—Commitment Strong",
-            "title": "Nvidia CEO Jensen Huang Rebuts Claims of Stalled $100B OpenAI Investment",
-            "content": "Nvidia&#x27;s CEO Jensen Huang has dismissed reports of friction between Nvidia and OpenAI, reiterating the company&#x27;s unwavering commitment to its $100 billion investment in the AI firm. Huang labeled the rumors as &quot;nonsense,&quot; emphasizing the strategic importance of the partnership to Nvidia&#x27;s future AI endeavors. This clarification aims to reassure stakeholders of Nvidia&#x27;s dedication to advancing AI technologies and its collaborative efforts with OpenAI. Industry observers should note this as a reaffirmation of Nvidia&#x27;s strategic priorities in the AI landscape.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/01/31/nvidia-ceo-pushes-back-against-report-that-his-companys-100b-openai-investment-has-stalled/",
+            "date": "Feb 02 2026",
+            "headline": "SpaceX Acquires xAI—Plans Space-Based Data Centers",
+            "title": "SpaceX and xAI Merger to Pioneer Space-Based Data Centers",
+            "content": "SpaceX&#x27;s acquisition of xAI marks the formation of the world&#x27;s most valuable private company, with plans to explore the feasibility of space-based data centers. This strategic move could revolutionize data storage and processing, leveraging the unique advantages of space such as reduced latency and enhanced security. The merger aligns with Elon Musk&#x27;s broader vision of integrating AI with space technologies to push the boundaries of innovation. Professionals in the field should consider the potential for new opportunities and challenges in data infrastructure and AI applications.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/02/elon-musk-spacex-acquires-xai-data-centers-space-merger/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 02 2026",
+            "headline": "SpaceX, xAI, and X Unite—Musk&#x27;s Visionary Tech Giant",
+            "title": "Elon Musk Unifies SpaceX, xAI, and X for Integrated Innovation",
+            "content": "Elon Musk has announced the merger of SpaceX, xAI, and X into a single entity aimed at creating a vertically-integrated innovation platform. This ambitious move seeks to harness AI, rocket technology, and space-based internet services to drive technological advancement both on Earth and beyond. The consolidation is set to redefine industry standards and could have far-reaching implications for sectors such as telecommunications, defense, and social media. Industry leaders should evaluate the potential impacts on competitive dynamics and regulatory landscapes.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/872619/elon-musk-merges-spacex-with-xai-and-x",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 02 2026",
+            "headline": "HHS Utilizes AI to Scrutinize Grant Ideologies",
+            "title": "HHS Employs Palantir AI to Assess DEI and Gender Ideology in Grants",
+            "content": "The U.S. Department of Health and Human Services (HHS) has been using AI tools from Palantir and Credal AI since March 2025 to evaluate grant applications for alignment with diversity, equity, and inclusion (DEI) and gender ideology. This initiative aims to ensure that federal funding aligns with specific ideological criteria, raising concerns about potential biases and ethical considerations. The deployment of AI in grant assessments highlights the increasing role of technology in governmental decision-making processes. Stakeholders should be aware of the implications for transparency and accountability in AI-driven evaluations.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/hhs-is-using-ai-tools-from-palantir-to-target-dei-and-gender-ideology-in-grants/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 02 2026",
+            "headline": "Shared Memory—Key to Effective AI in Enterprises",
+            "title": "Shared Memory Enhances AI Orchestration in Enterprise Environments",
+            "content": "According to Asana&#x27;s Chief Product Officer Arnab Bose, shared memory and context are crucial for the effective orchestration of AI agents within enterprises. By providing detailed historical data and direct access, these elements enable more efficient task management and decision-making processes. The integration of guardrails and human oversight ensures that AI systems operate within ethical and practical boundaries. This approach can significantly enhance productivity and operational efficiency, making it a critical consideration for organizations implementing AI solutions. Enterprises should evaluate their AI strategies to incorporate shared memory systems for improved outcomes.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/shared-memory-is-the-missing-layer-in-ai-orchestration",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 02 2026",
+            "headline": "Firefox Offers AI Control—User Privacy Enhanced",
+            "title": "Firefox Introduces AI Control Switch to Enhance User Privacy",
+            "content": "Mozilla is set to release an update for Firefox on February 24th, introducing a new &quot;AI control&quot; option in the browser&#x27;s settings menu. This feature will allow users to enable or disable AI functionalities, providing greater control over their privacy and browsing experience. Unlike other browsers that integrate AI features without user consent, Firefox&#x27;s approach emphasizes user autonomy and transparency. This move could influence user preferences and set a precedent for privacy-focused innovations in the browser market. Users should prepare to update their browsers to take advantage of this new feature.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/news/872489/mozilla-firefox-ai-features-off-button",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 02 2026",
+            "headline": "Snowflake and OpenAI Deal Signals Enterprise AI Trends",
+            "title": "Snowflake Partners with OpenAI, Indicating Future Enterprise AI Directions",
+            "content": "Snowflake has entered into multi-year agreements with OpenAI and other AI companies, highlighting a growing trend among enterprises to integrate advanced AI capabilities. This partnership aims to leverage OpenAI&#x27;s expertise to enhance data analytics and cloud services, positioning Snowflake at the forefront of AI-driven innovation. The collaboration reflects a broader industry shift towards adopting AI to improve operational efficiency and competitive advantage. Enterprises should consider the strategic implications of such partnerships and explore opportunities to integrate AI technologies into their operations.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/02/what-snowflakes-deal-with-openai-tells-us-about-the-enterprise-ai-race/",
             "relatedResources": []
         }
     ],
@@ -344,17 +258,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-1281",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-24858",
-            "dateAdded": "Jan 27, 2026",
-            "vendor": "Fortinet Multiple Products",
-            "description": "Fortinet FortiAnalyzer, FortiManager, FortiOS, and FortiProxy contain an authentication bypass using an alternate path or channel that could allow an attacker with a FortiCloud account and a registere",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-24858",
             "isZeroDay": false
         }
     ],
