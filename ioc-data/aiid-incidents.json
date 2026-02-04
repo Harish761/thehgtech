@@ -1543,20 +1543,12 @@
       "date": "2025-11-06",
       "category": "deepfake",
       "severity": "high"
-    },
-    {
-      "id": "AIID-1255",
-      "incident_id": 1255,
-      "title": "Purported Deepfake Reportedly Circulated on Facebook Impersonating Thai PBS World Anchors and Busine",
-      "date": "2025-11-06",
-      "category": "deepfake",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 194,
+    "total": 193,
     "last7Days": 17,
     "last30Days": 43
   },
-  "lastUpdated": "2026-02-04T14:27:18.888391+05:30"
+  "lastUpdated": "2026-02-04T18:52:52.899352+05:30"
 }
