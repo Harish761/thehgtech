@@ -1,27 +1,11 @@
 {
   "vendor": "Feodo Tracker",
-  "lastUpdated": "2026-02-04T22:32:35.304609+05:30",
-  "totalCount": 4,
-  "displayedCount": 4,
+  "lastUpdated": "2026-02-05T00:53:48.947185+05:30",
+  "totalCount": 3,
+  "displayedCount": 3,
   "isCapped": false,
   "cappingStrategy": null,
   "iocs": [
-    {
-      "type": "ip",
-      "indicator": "162[.]243[.]103[.]246",
-      "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
-      "timestamp": "just now",
-      "source": "Feodo Tracker",
-      "sourceUrl": "https://feodotracker.abuse.ch/",
-      "analysisTime": "2026-02-04 22:32 IST",
-      "tags": [
-        "botnet",
-        "c2",
-        "banking-trojan"
-      ],
-      "addedAt": "2026-02-04T22:32:32.322972+05:30",
-      "campaign": "Banking Malware C2"
-    },
     {
       "type": "ip",
       "indicator": "167[.]86[.]75[.]145",
@@ -29,13 +13,13 @@
       "timestamp": "just now",
       "source": "Feodo Tracker",
       "sourceUrl": "https://feodotracker.abuse.ch/",
-      "analysisTime": "2026-02-04 22:32 IST",
+      "analysisTime": "2026-02-05 00:53 IST",
       "tags": [
         "botnet",
         "c2",
         "banking-trojan"
       ],
-      "addedAt": "2026-02-04T22:32:32.322972+05:30",
+      "addedAt": "2026-02-05T00:53:45.943700+05:30",
       "campaign": "Banking Malware C2"
     },
     {
@@ -45,13 +29,13 @@
       "timestamp": "just now",
       "source": "Feodo Tracker",
       "sourceUrl": "https://feodotracker.abuse.ch/",
-      "analysisTime": "2026-02-04 22:32 IST",
+      "analysisTime": "2026-02-05 00:53 IST",
       "tags": [
         "botnet",
         "c2",
         "banking-trojan"
       ],
-      "addedAt": "2026-02-04T22:32:32.322972+05:30",
+      "addedAt": "2026-02-05T00:53:45.943700+05:30",
       "campaign": "Banking Malware C2"
     },
     {
@@ -61,13 +45,13 @@
       "timestamp": "just now",
       "source": "Feodo Tracker",
       "sourceUrl": "https://feodotracker.abuse.ch/",
-      "analysisTime": "2026-02-04 22:32 IST",
+      "analysisTime": "2026-02-05 00:53 IST",
       "tags": [
         "botnet",
         "c2",
         "banking-trojan"
       ],
-      "addedAt": "2026-02-04T22:32:32.322972+05:30",
+      "addedAt": "2026-02-05T00:53:45.943700+05:30",
       "campaign": "Banking Malware C2"
     }
   ]

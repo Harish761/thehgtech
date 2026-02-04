@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-824",
+      "incident_id": 824,
+      "title": "Purported Deepfake Allegedly Misattributes Claims to Former Student in Attack on Vice-Presidential C",
+      "date": "2026-02-04",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1260",
       "incident_id": 1260,
       "title": "Purported Deepfake of Andrew Forrest Used to Promote Fraudulent 'Quantum AI' Crypto Platform on Face",
@@ -1538,9 +1546,9 @@
     }
   ],
   "stats": {
-    "total": 192,
-    "last7Days": 17,
-    "last30Days": 43
+    "total": 193,
+    "last7Days": 18,
+    "last30Days": 44
   },
-  "lastUpdated": "2026-02-04T22:32:38.283599+05:30"
+  "lastUpdated": "2026-02-05T00:53:52.248465+05:30"
 }
