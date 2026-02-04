@@ -6232,10 +6232,11 @@
 
             function drawAnimation() {
                 const isLightMode = document.body.classList.contains('light-mode');
-                const nodeColor = isLightMode ? 'rgba(255, 61, 61, 0.6)' : 'rgba(255, 61, 61, 0.8)';
-                const hubColor = isLightMode ? 'rgba(255, 61, 61, 0.9)' : 'rgba(255, 107, 107, 1)';
-                const lineColor = isLightMode ? 'rgba(255, 61, 61, 0.15)' : 'rgba(255, 61, 61, 0.25)';
-                const packetColor = isLightMode ? 'rgba(255, 140, 140, 0.9)' : 'rgba(255, 255, 255, 0.9)';
+                // Use cyan in light mode instead of red
+                const nodeColor = isLightMode ? 'rgba(0, 153, 204, 0.5)' : 'rgba(255, 61, 61, 0.8)';
+                const hubColor = isLightMode ? 'rgba(0, 153, 204, 0.7)' : 'rgba(255, 107, 107, 1)';
+                const lineColor = isLightMode ? 'rgba(0, 153, 204, 0.12)' : 'rgba(255, 61, 61, 0.25)';
+                const packetColor = isLightMode ? 'rgba(0, 180, 220, 0.8)' : 'rgba(255, 255, 255, 0.9)';
 
                 ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -6411,8 +6412,9 @@
                 if (!isActive) return;
 
                 const isLightMode = document.body.classList.contains('light-mode');
-                const particleColor = isLightMode ? 'rgba(255, 61, 61, 0.4)' : 'rgba(255, 61, 61, 0.5)';
-                const lineColor = isLightMode ? 'rgba(255, 61, 61, 0.2)' : 'rgba(255, 61, 61, 0.3)';
+                // Use cyan in light mode instead of red
+                const particleColor = isLightMode ? 'rgba(0, 153, 204, 0.35)' : 'rgba(255, 61, 61, 0.5)';
+                const lineColor = isLightMode ? 'rgba(0, 153, 204, 0.15)' : 'rgba(255, 61, 61, 0.3)';
 
                 ctx.clearRect(0, 0, canvas.width, canvas.height);
 
