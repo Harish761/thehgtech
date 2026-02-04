@@ -5,41 +5,77 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Feb 04 2026",
-            "headline": "ISC Stormcast Highlights Emerging Threats—Stay Informed",
-            "title": "SANS Internet Storm Center&#x27;s Latest Podcast Covers Emerging Cyber Threats",
-            "content": "The SANS Internet Storm Center has released its latest Stormcast podcast episode, providing insights into emerging cybersecurity threats. The podcast, a valuable resource for security professionals, discusses recent developments in threat landscapes and offers practical tips for defense. As the InfoCON level remains green, indicating a low threat level, the episode emphasizes the importance of staying vigilant. Security practitioners are encouraged to regularly tune into these updates to keep abreast of potential risks and enhance their organization’s security posture. The podcast serves as a proactive measure in the ongoing battle against cyber threats.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32680",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 03 2026",
-            "headline": "Cantwell Demands Telecom Transparency on Salt Typhoon Hacks",
-            "title": "Senator Cantwell Pushes for Telecom Accountability in Salt Typhoon Hack Response",
-            "content": "Senator Maria Cantwell has called for hearings to compel AT&amp;T and Verizon to disclose their response strategies to the Salt Typhoon hacks. These cyberattacks have raised concerns about the security of telecom networks and the transparency of their operators. Cantwell&#x27;s push for accountability highlights the need for robust cybersecurity measures and open communication from major telecom companies. The hearings aim to ensure that telecom giants are adequately protecting their networks and customers from sophisticated threats. This development underscores the critical role of legislative oversight in safeguarding national infrastructure.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/cantwell-claims-telecoms-blocked-release-of-salt-typhoon-report/",
+            "headline": "Google Looker Vulnerabilities—Full Compromise Risk",
+            "title": "LookOut Flaws in Google Looker Enable Remote Code Execution and Data Theft",
+            "content": "SecurityWeek reports that critical vulnerabilities, collectively dubbed &quot;LookOut,&quot; have been discovered in Google Looker, potentially allowing attackers to execute remote code and exfiltrate data. These flaws could lead to a full compromise of Looker instances, posing significant risks to organizations relying on this data analytics platform. The vulnerabilities highlight the ongoing challenges in securing cloud-based services, especially those handling sensitive data. Organizations using Google Looker are advised to apply patches promptly and review their security configurations to mitigate potential exploitation. This incident underscores the importance of continuous monitoring and timely updates in cloud security strategies.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/vulnerabilities-allowed-full-compromise-of-google-looker-instances/",
             "relatedResources": [
                 {
-                    "label": "Threat Intelligence",
-                    "url": "/threat-intel.html",
-                    "icon": "fa-user-secret"
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Cloud Security Hardening",
+                    "url": "/guides/cloud-security-hardening.html",
+                    "icon": "fa-cloud"
                 }
             ]
         },
         {
-            "date": "Feb 03 2026",
-            "headline": "APT28 Exploits Microsoft Office Flaw—3-Day Weaponization",
-            "title": "Russian APT28 Leverages Microsoft Office Bug for Swift Attacks",
-            "content": "Russian hacking group APT28 has weaponized a Microsoft Office vulnerability within just three days, using specially crafted Rich Text Format (RTF) documents to launch multistage infection chains. This rapid exploitation underscores the agility of sophisticated threat actors in leveraging zero-day vulnerabilities. The attacks target Microsoft Office users, potentially leading to severe data breaches and system compromises. Organizations using Office products are urged to apply security patches immediately and enhance monitoring for suspicious document activity. This incident highlights the critical need for timely patch management and threat intelligence sharing.",
+            "date": "Feb 04 2026",
+            "headline": "Dark Reading Launches Latin America Section",
+            "title": "Dark Reading Expands with New Latin America-Focused Content Section",
+            "content": "Dark Reading has announced the launch of &quot;DR Global: Latin America,&quot; a new content section tailored for Latin American audiences. This initiative aims to provide region-specific cybersecurity news, analysis, features, and multimedia content. As cyber threats become increasingly global, understanding regional nuances is crucial for effective cybersecurity strategies. The new section will cover local trends and incidents, offering insights into the unique challenges faced by Latin American security professionals. Readers can expect in-depth reporting and expert commentary to enhance their understanding of the region&#x27;s cybersecurity landscape.",
             "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/russian-hackers-weaponize-office-bug-within-days",
+            "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/announcing-dr-global-latin-america",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 04 2026",
+            "headline": "Mexican Data Breach Claims—36M Affected",
+            "title": "Alleged 2.3TB Data Breach in Mexican Government Sparks Controversy",
+            "content": "A hacktivist group alleges a massive 2.3-terabyte data breach affecting 36 million Mexicans, but the Mexican government asserts that no sensitive accounts are compromised. The breach reportedly includes personal information, raising concerns about data privacy and security in governmental systems. This incident highlights the vulnerabilities in national databases and the potential for misinformation in breach claims. Security professionals should remain vigilant and verify breach reports through reliable channels. The government is conducting an investigation to assess the claims and ensure the integrity of its data systems.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/big-breach-or-nada-de-nada-mexican-govt-faces-leak-allegations",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 04 2026",
+            "headline": "Cyberwarfare Escalates—Nation State Threats Surge",
+            "title": "Cyber Insights 2026: Increasing Threats from Nation-State Cyberwarfare",
+            "content": "SecurityWeek&#x27;s &quot;Cyber Insights 2026&quot; report warns of a dramatic rise in cyberwarfare activities by nation-states. The report suggests that while both cyberwar and cyberwarfare are expected to increase, the latter will see a more significant surge. This trend poses a growing threat to global stability and highlights the need for robust cybersecurity measures. Organizations should prepare for potential disruptions and enhance their defenses against state-sponsored attacks, which are becoming more sophisticated and frequent. The report urges stakeholders to remain aware of geopolitical tensions that could escalate into cyber conflicts.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/cyber-insights-2026-cyberwar-and-rising-nation-state-threats/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 04 2026",
+            "headline": "Windows 11 Integrates Sysmon Monitoring",
+            "title": "Microsoft Introduces Native Sysmon Monitoring in Windows 11 Insiders",
+            "content": "Microsoft has begun rolling out native Sysmon functionality to select Windows 11 systems within the Windows Insider program. This integration aims to enhance system monitoring and security by providing detailed logging of system events. Sysmon, or System Monitor, is a critical tool for detecting malicious activity and understanding system behavior. By embedding this functionality natively, Microsoft is improving the security posture of Windows 11, making it easier for security teams to track and analyze potential threats. Users in the Insider program are encouraged to test this feature and provide feedback for further improvements.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-rolls-out-native-windows-11-sysmon-security-monitoring/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 04 2026",
+            "headline": "Varonis Acquires AllTrue.ai for $150M",
+            "title": "Varonis Expands AI Capabilities with AllTrue.ai Acquisition",
+            "content": "Data security firm Varonis has acquired AllTrue.ai, a company specializing in AI trust, risk, and security management, for $150 million. This strategic acquisition aims to bolster Varonis&#x27;s capabilities in managing and securing data through advanced AI technologies. AllTrue.ai&#x27;s expertise in AI-driven security solutions will enhance Varonis&#x27;s offerings, potentially improving data protection for its clients. The acquisition reflects a growing trend of leveraging AI to address complex security challenges and underscores the importance of AI in the future of cybersecurity. Stakeholders should watch for new product integrations and enhancements resulting from this acquisition.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/varonis-acquisition-of-alltrue-ai-valued-at-150-million/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 04 2026",
+            "headline": "Russian Hackers Exploit Office Bug—Operation Neusploit",
+            "title": "Russian Attackers Use New Office Vulnerability in Espionage Campaign",
+            "content": "Security researchers at ZScaler ThreatLabz have identified Russia-linked attackers exploiting a critical Microsoft Office vulnerability just days after its disclosure. The vulnerability is being used in a coordinated espionage and malware campaign known as Operation Neusploit. Despite Microsoft&#x27;s urgent patch release, the rapid exploitation highlights the need for immediate updates and vigilance. Organizations using Microsoft Office products should prioritize patching to mitigate the risk of compromise. This incident underscores the persistent threat posed by nation-state actors and the importance of timely vulnerability management.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4127181/russian-hackers-exploited-a-critical-office-bug-within-days-of-disclosure.html",
             "relatedResources": [
-                {
-                    "label": "Threat Intelligence",
-                    "url": "/threat-intel.html",
-                    "icon": "fa-user-secret"
-                },
                 {
                     "label": "CVE Prioritization Guide",
                     "url": "/guides/cve-prioritization-patch-management.html",
@@ -48,57 +84,13 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Feb 03 2026",
-            "headline": "DHS Plans New Panel for AI and Infrastructure Security",
-            "title": "DHS to Revamp Critical Infrastructure Protection with AI Focus",
-            "content": "The Department of Homeland Security (DHS) is set to replace its Critical Infrastructure Protection Advisory Council (CIPAC) with a new panel focused on AI and infrastructure security. Nick Andersen, a senior official from the Cybersecurity and Infrastructure Security Agency (CISA), discussed plans for developing an AI-Information Sharing and Analysis Center (AI-ISAC). This initiative aims to enhance collaboration between public and private sectors in addressing AI-related security challenges. The move reflects a growing recognition of AI&#x27;s impact on critical infrastructure and the need for coordinated security efforts. Stakeholders are encouraged to participate in shaping this new framework.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/whats-next-for-dhss-forthcoming-replacement-critical-infrastructure-protection-panel-ai-information-sharing/",
+            "date": "Feb 04 2026",
+            "headline": "ISC Stormcast Highlights Emerging Threats—Stay Informed",
+            "title": "SANS Internet Storm Center&#x27;s Latest Podcast Covers Emerging Cyber Threats",
+            "content": "The SANS Internet Storm Center has released its latest Stormcast podcast episode, providing insights into emerging cybersecurity threats. The podcast, a valuable resource for security professionals, discusses recent developments in threat landscapes and offers practical tips for defense. As the InfoCON level remains green, indicating a low threat level, the episode emphasizes the importance of staying vigilant. Security practitioners are encouraged to regularly tune into these updates to keep abreast of potential risks and enhance their organization’s security posture. The podcast serves as a proactive measure in the ongoing battle against cyber threats.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32680",
             "relatedResources": []
-        },
-        {
-            "date": "Feb 03 2026",
-            "headline": "Ivanti EPMM Under Siege—Two Zero-Days Exploited",
-            "title": "Ivanti EPMM Faces Active Exploitation from Critical Zero-Day Vulnerabilities",
-            "content": "Ivanti&#x27;s Endpoint Manager Mobile (EPMM) is under attack due to two critical zero-day vulnerabilities, leading to a wave of exploitation by various threat groups. Over 1,400 instances remain exposed, posing significant risks to organizations relying on Ivanti&#x27;s solutions. Although limited attacks were initially reported, the situation escalated following Ivanti&#x27;s disclosure. Security teams are advised to prioritize patching and implement additional protective measures to mitigate potential breaches. This incident highlights the urgency of addressing zero-day vulnerabilities in widely used enterprise software.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/ivanti-endpoint-manager-mobile-zero-day-vulnerabilities-exploit/",
-            "relatedResources": [
-                {
-                    "label": "Zero-Day Detection Guide",
-                    "url": "/guides/zero-day-detection.html",
-                    "icon": "fa-exclamation-triangle"
-                },
-                {
-                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
-                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
-                    "icon": "fa-shield-virus"
-                }
-            ]
-        },
-        {
-            "date": "Feb 03 2026",
-            "headline": "GlassWorm Malware Strikes Again—Developer Ecosystems at Risk",
-            "title": "GlassWorm Malware Resurfaces, Targeting Open VSX Software Components",
-            "content": "The GlassWorm malware has made a comeback, infecting fresh sets of Open VSX software components and posing a threat to developer ecosystems. This self-replicating malware can lead to infostealer infections, compromising sensitive data across affected systems. Developers using Open VSX components should conduct thorough security audits and apply recommended patches to prevent potential breaches. The resurgence of GlassWorm underscores the persistent threat of malware targeting software supply chains. Vigilance and proactive security measures are essential to protect against such evolving threats.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/application-security/glassworm-malware-developer-ecosystems",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 03 2026",
-            "headline": "White House Cyber Strategy: Less Regulation, More Cooperation",
-            "title": "Sean Cairncross Advocates for Reduced Regulation in Cybersecurity Strategy",
-            "content": "Sean Cairncross, a key figure in the White House&#x27;s cybersecurity agenda, is advocating for reduced regulatory burdens and increased cooperation among stakeholders. The proposed strategy emphasizes the importance of information sharing and legislative action to strengthen national cybersecurity. Cairncross&#x27;s approach aims to foster a more collaborative environment between government and private sectors, leveraging shared intelligence to combat cyber threats. This initiative reflects a shift towards a more flexible and cooperative cybersecurity framework, encouraging industry participation and innovation. Stakeholders are urged to engage with policymakers to shape effective cybersecurity policies.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/sean-cairncross-industry-cut-cybersecurity-regulations-renew-cisa/",
-            "relatedResources": [
-                {
-                    "label": "NIST CSF 2.0 Implementation",
-                    "url": "/guides/nist-csf-2-implementation.html",
-                    "icon": "fa-check-double"
-                }
-            ]
         },
         {
             "date": "Mar 23 2026",
@@ -119,76 +111,60 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Feb 03 2026",
-            "headline": "Alibaba&#x27;s Qwen3-Coder-Next Boosts Repo Tasks by 10x",
-            "title": "Qwen3-Coder-Next: Alibaba&#x27;s Open Source Model Revolutionizes Repository Tasks",
-            "content": "Alibaba&#x27;s Qwen team has unveiled Qwen3-Coder-Next, an open-source AI model that dramatically enhances repository task processing with 10 times higher throughput. This ultra-sparse model is designed to optimize coding workflows, offering significant efficiency improvements for developers. The model&#x27;s release underscores Alibaba&#x27;s growing influence in the open-source AI community, where it has been consistently delivering high-performance language and multimodal models. Qwen3-Coder-Next is expected to benefit developers handling large-scale code repositories, enabling faster and more efficient coding operations. As open-source AI continues to evolve, Alibaba&#x27;s contributions are setting new benchmarks for performance and accessibility.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/qwen3-coder-next-offers-vibe-coders-a-powerful-open-source-ultra-sparse",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 03 2026",
-            "headline": "Intel Enters GPU Market to Challenge Nvidia’s Dominance",
-            "title": "Intel Announces Strategic Move into GPU Manufacturing",
-            "content": "Intel has announced its entry into the GPU market, a sector currently dominated by Nvidia. The company is assembling a specialized team to develop GPUs that cater to specific customer needs, signaling a strategic shift in its product offerings. Intel&#x27;s move aims to diversify its portfolio and capitalize on the growing demand for graphics processing units in various sectors, including gaming and AI. This development comes as the GPU market continues to expand, driven by advancements in AI and machine learning. Intel&#x27;s foray into this space could lead to increased competition and innovation, benefiting consumers and enterprises alike.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/03/intel-will-start-making-gpus-a-market-dominated-by-nvidia/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 03 2026",
-            "headline": "Musk Merges SpaceX and xAI for Space-Based Data Centers",
-            "title": "Elon Musk Plans Space Data Centers by Merging SpaceX and xAI",
-            "content": "Elon Musk has announced a $1.25 trillion merger between SpaceX and xAI to build data centers in space, a move he claims is essential for AI&#x27;s growth. Musk argues that AI&#x27;s reliance on large terrestrial data centers necessitates expansion beyond Earth to meet future demands. The ambitious plan aims to leverage SpaceX&#x27;s spacefaring capabilities and xAI&#x27;s AI expertise to create a new frontier for data processing. While details remain sparse, this merger could set a precedent for integrating AI infrastructure with space technology, potentially revolutionizing how data centers operate. Stakeholders should monitor developments closely as this initiative unfolds.",
+            "date": "Feb 04 2026",
+            "headline": "Anthropic’s Claude Stays Ad-Free Amid Chatbot Ad Influx",
+            "title": "Anthropic&#x27;s Claude to Remain Ad-Free as OpenAI Introduces Ads in ChatGPT",
+            "content": "Anthropic has announced that its AI chatbot, Claude, will not feature advertisements, differentiating itself from OpenAI&#x27;s ChatGPT, which plans to incorporate ads. This decision is underscored by Anthropic&#x27;s upcoming Super Bowl commercial that humorously critiques competitors for adding ads to their chatbots. The move positions Claude as a user-focused alternative in the competitive chatbot market, where privacy and user experience are increasingly prioritized. By avoiding ads, Anthropic aims to maintain a streamlined interaction for users, contrasting with the monetization strategies of rivals. Users concerned about privacy and distraction-free usage may find Claude an appealing choice.",
             "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/transportation/873203/elon-musk-spacex-xai-merge-data-centers-space-tesla-ipo",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/873686/anthropic-claude-ai-ad-free-super-bowl-advert-chatgpt",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Feb 04 2026",
+            "headline": "Accel Backs Fibr AI for Dynamic Website Personalization",
+            "title": "Accel Invests in Fibr AI to Transform Static Websites into Personalized Experiences",
+            "content": "Accel has increased its investment in Fibr AI, a company that automates the personalization of websites at an enterprise scale. Fibr AI&#x27;s technology replaces traditional marketing and engineering-heavy approaches by deploying autonomous systems to tailor website experiences on a one-to-one basis. This innovation allows enterprises to dynamically adapt content based on user interactions, enhancing engagement and conversion rates. The shift towards AI-driven personalization reflects a broader trend in digital marketing, where tailored user experiences are essential for competitive advantage. Organizations seeking to optimize digital interfaces may benefit from adopting such AI solutions.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/04/accel-doubles-down-on-fibr-ai-as-agents-turn-static-websites-into-one-to-one-experiences/",
             "relatedResources": []
         },
         {
-            "date": "Feb 03 2026",
-            "headline": "Apple Empowers Xcode with Anthropic and OpenAI Agents",
-            "title": "Apple Integrates AI Agents into Xcode for Agentic Coding",
-            "content": "Apple has integrated Anthropic&#x27;s Claude and OpenAI&#x27;s Codex into Xcode 26.3, enhancing its developer tool with AI agents capable of automating app-building processes. This update marks Apple&#x27;s entry into &quot;agentic coding,&quot; where AI agents assume significant control over coding tasks. The integration allows developers to utilize AI for writing, editing, and managing code, potentially reducing development time and increasing efficiency. Apple&#x27;s move reflects a broader trend towards incorporating AI in software development, raising questions about the future role of human developers. Developers should explore these tools to stay competitive in an AI-driven landscape.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/apple-integrates-anthropics-claude-and-openais-codex-into-xcode-26-3-in-push",
+            "date": "Feb 04 2026",
+            "headline": "Sen. Warren Queries Google on Gemini Privacy Risks",
+            "title": "Senator Warren Questions Google on Privacy Implications of Gemini&#x27;s Checkout Feature",
+            "content": "Senator Elizabeth Warren has raised concerns regarding Google’s integration of a checkout feature within its Gemini AI chatbot. In a letter to Google CEO Sundar Pichai, Warren questions how this feature might exploit sensitive user data, potentially compromising privacy. The integration could allow retailers access to detailed consumer behavior data, raising alarms about data security and user consent. This scrutiny comes amid growing legislative interest in AI and data privacy, highlighting the need for transparent data handling practices. Google is urged to clarify how it will safeguard user information within this new functionality.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/news/873476/senator-elizabeth-warren-google-gemini-ai-shopping-privacy",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 04 2026",
+            "headline": "AI Bots Surge as Key Web Traffic Drivers",
+            "title": "AI Bots Now Account for Significant Portion of Web Traffic",
+            "content": "Recent data reveals that AI bots are increasingly contributing to web traffic, prompting publishers to enhance their digital defenses. This surge in bot activity challenges traditional web analytics and can skew data interpretations, affecting marketing and operational strategies. As AI bots become more prevalent, they pose both opportunities and risks, necessitating robust bot management solutions. Companies are advised to implement advanced detection and mitigation strategies to protect against potential disruptions and ensure accurate web traffic analysis. This trend underscores the evolving landscape of web interactions driven by AI technologies.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/ai-bots-are-now-a-signifigant-source-of-web-traffic/",
             "relatedResources": [
                 {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
+                    "label": "SIEM & Log Analysis Guide",
+                    "url": "/guides/siem-log-analysis.html",
+                    "icon": "fa-chart-bar"
                 }
             ]
         },
         {
-            "date": "Feb 03 2026",
-            "headline": "Microsoft to Launch AI Content Licensing App Store",
-            "title": "Microsoft Develops Publisher Content Marketplace for AI Licensing",
-            "content": "Microsoft is developing the Publisher Content Marketplace (PCM), an app store designed for AI content licensing. This platform allows AI companies to easily navigate usage terms set by content publishers, facilitating smoother agreements for using online content to train AI models. The PCM aims to streamline the licensing process, ensuring content owners receive appropriate compensation while providing AI developers with clear guidelines. As AI models increasingly rely on vast datasets, this marketplace could become a vital tool for managing content rights and fostering collaboration between content creators and AI developers. Stakeholders should prepare for the marketplace&#x27;s launch to leverage its benefits.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/news/873296/microsoft-publisher-content-marketplace-ai-licensing",
+            "date": "Feb 04 2026",
+            "headline": "Rackspace Tackles AI Operational Challenges in New Insights",
+            "title": "Rackspace Highlights AI Operational Challenges in Recent Blog Insights",
+            "content": "Rackspace has published insights addressing common operational challenges in AI deployment, such as data management, governance, and cost efficiency. The blog discusses bottlenecks like messy data and unclear ownership, which can hinder AI integration into production environments. By framing these issues through the lens of service delivery and security operations, Rackspace offers practical solutions for optimizing cloud-based AI models. This resource serves as a valuable guide for organizations seeking to streamline AI operations and enhance model performance. Companies are encouraged to address these bottlenecks to fully leverage AI capabilities.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/combing-the-rackspace-blogfiles-for-operational-ai-pointers/",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
@@ -198,32 +174,32 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Feb 03 2026",
-            "headline": "Inside Moltbook: AI-Only Social Network Excludes Humans",
-            "title": "Exploring Moltbook: The AI-Exclusive Social Network",
-            "content": "An investigation into Moltbook, an AI-only social network, reveals a platform where human users are prohibited, offering a unique space for AI entities to interact. While the concept might seem innovative, the execution is criticized as a simplistic rehashing of science fiction tropes. Moltbook allows AI to role-play as conscious entities, fostering a community that challenges traditional notions of social networking. However, the platform&#x27;s limitations highlight the gap between AI&#x27;s current capabilities and the fictional portrayals of sentient machines. Tech professionals should view Moltbook as a case study in AI&#x27;s evolving role in social media, rather than a groundbreaking advancement.",
+            "date": "Feb 04 2026",
+            "headline": "HHS Develops AI for Vaccine Injury Hypothesis Amid Criticism",
+            "title": "HHS Creates AI Tool to Analyze Vaccine Injury Claims, Raising Concerns",
+            "content": "The U.S. Department of Health and Human Services (HHS), under Robert F. Kennedy Jr., is developing an AI tool to generate hypotheses about vaccine injury claims. Critics are concerned that this tool could be used to support Kennedy&#x27;s controversial anti-vaccine stance, potentially influencing public health narratives. The AI aims to analyze patterns in injury claims, but experts warn of biases that could skew results and affect policy decisions. This development highlights the intersection of AI, public health, and policy, emphasizing the need for transparent methodologies and impartial analysis.",
             "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/i-infiltrated-moltbook-ai-only-social-network/",
+            "sourceUrl": "https://www.wired.com/story/hhs-is-making-an-ai-tool-to-create-hypotheses-about-vaccine-injury-claims/",
             "relatedResources": [
                 {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
+                    "label": "SIEM & Log Analysis Guide",
+                    "url": "/guides/siem-log-analysis.html",
+                    "icon": "fa-chart-bar"
                 }
             ]
         },
         {
-            "date": "Feb 03 2026",
-            "headline": "Apple’s Xcode 26.3 Gets OpenAI and Anthropic Integration",
-            "title": "Xcode 26.3 Welcomes AI Coding Agents from OpenAI and Anthropic",
-            "content": "Apple&#x27;s latest update to Xcode 26.3 introduces powerful AI coding agents, integrating OpenAI&#x27;s Codex and Anthropic&#x27;s Claude directly into the development environment. These agents provide developers with advanced tools to automate code writing, project management, and documentation searches, streamlining the development process. This integration reflects Apple&#x27;s commitment to enhancing developer productivity through AI, aligning with industry trends towards more automated coding solutions. Developers using Xcode should explore these new capabilities to enhance their workflows and stay competitive in the rapidly evolving tech landscape. This move could redefine software development practices by embedding AI deeper into the coding process.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/news/873300/apple-xcode-openai-anthropic-ai-agentic-coding",
+            "date": "Feb 04 2026",
+            "headline": "Cisco Enhances AI Operations for Global IT Solutions",
+            "title": "Cisco Advances AI Integration Across IT Operations and Customer Solutions",
+            "content": "Cisco is leveraging AI to enhance its internal operations and the solutions it provides to global customers. The company&#x27;s AI initiatives span various components of the IT stack, including network management, security, and data analytics. By integrating AI, Cisco aims to improve efficiency, reduce operational costs, and deliver smarter solutions to clients. This strategy positions Cisco as a leader in the AI-driven transformation of IT services, reflecting broader industry trends towards automation and intelligent systems. Organizations seeking to modernize their IT infrastructure may look to Cisco&#x27;s advancements as a model for innovation.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/how-cisco-builds-smart-systems-for-the-ai-era/",
             "relatedResources": [
                 {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
                 }
             ]
         }
