@@ -363,3 +363,236 @@ body.light-mode .success-box {
 body.light-mode .meta span {
     color: #6a6a6a !important;
 }
+
+/* ========== HOMEPAGE HERO LIGHT MODE ========== */
+
+/* Hero section background */
+body.light-mode .hero,
+body.light-mode .hero-section {
+    background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%) !important;
+}
+
+/* Floating particles - use cyan/blue instead of red in light mode */
+body.light-mode .hero-particles span,
+body.light-mode .particle {
+    background: rgba(0, 153, 204, 0.4) !important;
+    border-color: rgba(0, 153, 204, 0.3) !important;
+}
+
+/* Canvas particles - handled via JS, but override CSS opacity */
+body.light-mode .particle-canvas {
+    opacity: 0.5;
+}
+
+/* News stack/carousel section */
+body.light-mode .news-stack-container,
+body.light-mode .news-carousel,
+body.light-mode .mobile-news-wrapper {
+    background: #f8f9fa !important;
+}
+
+body.light-mode .news-stack-card,
+body.light-mode .mobile-news-card {
+    background: rgba(0, 0, 0, 0.02) !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+body.light-mode .news-stack-card:hover,
+body.light-mode .mobile-news-card:hover {
+    border-color: #0099cc !important;
+    box-shadow: 0 8px 30px rgba(0, 153, 204, 0.15) !important;
+}
+
+/* Stats bar in hero */
+body.light-mode .stats-bar,
+body.light-mode .hero-stats,
+body.light-mode .stat-item {
+    background: rgba(0, 0, 0, 0.03) !important;
+    border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+body.light-mode .stat-value,
+body.light-mode .stat-label {
+    color: #1a1a1a !important;
+}
+
+/* ========== N8N WORKFLOWS PAGE LIGHT MODE ========== */
+
+body.light-mode .workflows-hero {
+    background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%) !important;
+}
+
+body.light-mode .workflows-hero::before {
+    background:
+        radial-gradient(ellipse 80% 60% at 20% 20%, rgba(255, 107, 53, 0.08) 0%, transparent 50%),
+        radial-gradient(ellipse 70% 50% at 80% 30%, rgba(139, 92, 246, 0.06) 0%, transparent 50%),
+        radial-gradient(ellipse 90% 70% at 50% 80%, rgba(0, 153, 204, 0.05) 0%, transparent 50%) !important;
+}
+
+body.light-mode .workflows-hero::after {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px) !important;
+}
+
+/* Floating n8n nodes in hero */
+body.light-mode .hero-nodes .node {
+    background: rgba(255, 107, 53, 0.08) !important;
+    border-color: rgba(255, 107, 53, 0.25) !important;
+}
+
+body.light-mode .hero-nodes .node::before {
+    background: linear-gradient(90deg, rgba(255, 107, 53, 0.3), transparent) !important;
+}
+
+/* Hero stat boxes */
+body.light-mode .hero-stat {
+    background: rgba(0, 0, 0, 0.03) !important;
+    border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+body.light-mode .hero-stat:hover {
+    border-color: #FF6B35 !important;
+}
+
+/* Filter bar */
+body.light-mode .filter-bar {
+    background: rgba(0, 0, 0, 0.02) !important;
+    border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+body.light-mode .category-tab {
+    background: rgba(0, 0, 0, 0.03) !important;
+    border-color: rgba(0, 0, 0, 0.1) !important;
+    color: #4a4a4a !important;
+}
+
+body.light-mode .category-tab:hover {
+    border-color: #FF6B35 !important;
+    color: #FF6B35 !important;
+}
+
+body.light-mode .category-tab.active {
+    color: #fff !important;
+}
+
+body.light-mode .search-container input {
+    background: #fff !important;
+    border-color: rgba(0, 0, 0, 0.15) !important;
+    color: #1a1a1a !important;
+}
+
+body.light-mode .search-container input::placeholder {
+    color: #6a6a6a !important;
+}
+
+body.light-mode .results-count {
+    background: rgba(0, 0, 0, 0.03) !important;
+    color: #4a4a4a !important;
+}
+
+/* Workflow cards - THE MAIN FIX */
+body.light-mode .workflow-card {
+    background: #fff !important;
+    border-color: rgba(0, 0, 0, 0.12) !important;
+}
+
+body.light-mode .workflow-card:hover {
+    border-color: rgba(255, 107, 53, 0.4) !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1), 0 0 30px rgba(255, 107, 53, 0.1) !important;
+}
+
+body.light-mode .card-category {
+    color: #FF6B35 !important;
+}
+
+body.light-mode .card-title {
+    color: #1a1a1a !important;
+}
+
+body.light-mode .card-description {
+    color: #4a4a4a !important;
+}
+
+body.light-mode .card-feature {
+    background: rgba(0, 0, 0, 0.04) !important;
+    border-color: rgba(0, 0, 0, 0.1) !important;
+    color: #4a4a4a !important;
+}
+
+body.light-mode .card-footer {
+    border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+body.light-mode .card-stat {
+    color: #4a4a4a !important;
+}
+
+/* Container backgrounds */
+body.light-mode .workflows-container,
+body.light-mode .filter-section {
+    background: transparent !important;
+}
+
+/* ========== GUIDES/COMPARISONS HERO PARTICLES ========== */
+
+body.light-mode .hero-particles span {
+    background: rgba(0, 153, 204, 0.35) !important;
+}
+
+/* ========== HOMEPAGE NEWS SECTION ========== */
+
+body.light-mode #news,
+body.light-mode .news-section {
+    background: #f8f9fa !important;
+}
+
+body.light-mode .section-header h2 {
+    color: #1a1a1a !important;
+}
+
+/* ========== TAB SWITCHES (Cyber Threats / AI Security) ========== */
+
+body.light-mode .content-tabs,
+body.light-mode .tab-switch {
+    background: rgba(0, 0, 0, 0.05) !important;
+    border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+body.light-mode .tab-button:not(.active) {
+    color: #4a4a4a !important;
+}
+
+/* ========== TICKER/NEWS MARQUEE ========== */
+
+body.light-mode .news-ticker,
+body.light-mode .ticker-wrapper {
+    background: rgba(0, 0, 0, 0.03) !important;
+    border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+body.light-mode .ticker-item {
+    color: #1a1a1a !important;
+}
+
+/* ========== MOBILE SPECIFIC ========== */
+
+@media (max-width: 768px) {
+    body.light-mode .m-header {
+        background: rgba(255, 255, 255, 0.95) !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+    }
+
+    body.light-mode .m-bottom-nav {
+        background: rgba(255, 255, 255, 0.98) !important;
+        border-top: 1px solid rgba(0, 0, 0, 0.1) !important;
+    }
+
+    body.light-mode .m-bottom-nav__item {
+        color: #4a4a4a !important;
+    }
+
+    body.light-mode .m-bottom-nav__item.active {
+        color: #0099cc !important;
+    }
+}
