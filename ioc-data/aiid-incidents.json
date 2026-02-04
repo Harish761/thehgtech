@@ -1535,20 +1535,12 @@
       "date": "2025-11-08",
       "category": "deepfake",
       "severity": "high"
-    },
-    {
-      "id": "AIID-1254",
-      "incident_id": 1254,
-      "title": "Purported AI Deepfake Reportedly Impersonated Thai PBS World Anchor and Miss Universe CEO in Fraudul",
-      "date": "2025-11-06",
-      "category": "deepfake",
-      "severity": "high"
     }
   ],
   "stats": {
-    "total": 193,
+    "total": 192,
     "last7Days": 17,
     "last30Days": 43
   },
-  "lastUpdated": "2026-02-04T18:52:52.899352+05:30"
+  "lastUpdated": "2026-02-04T22:32:38.283599+05:30"
 }
