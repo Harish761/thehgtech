@@ -15,8 +15,12 @@ const STATIC_ASSETS = [
     '/m-core.min.css',
     '/m-layout.min.css',
     '/m-components.min.css',
-    '/m-app.js',
-    '/content.js',
+    '/m-app.min.js',
+    '/content.min.js',
+    '/design-system.min.css',
+    '/lazy-loader.js',
+    '/logo-dark.png',
+    '/logo-light.png',
     '/offline.html' // Fallback page
 ];
 
