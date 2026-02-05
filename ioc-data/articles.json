@@ -1,70 +1,61 @@
 {
   "articles": [
     {
-      "id": "article-critical-n8n-flaws-disclosed-along-with-public-exploits",
-      "title": "Critical n8n flaws disclosed along with public exploits",
+      "id": "article-langflow-ai-rce-cve-2025-3248",
+      "title": "Langflow AI RCE (CVE-2025-3248): Unauthenticated Code Execution in AI Pipeline Platform",
       "date": "February 05, 2026",
-      "category": "Security News",
+      "category": "AI Security",
       "badge": "CRITICAL",
-      "excerpt": "Multiple critical vulnerabilities in the popular n8n open-source workflow automation platform allow escaping the confines of the environment and taking complete control of the host server. [...]...",
-      "image": "images/articles/auto-generated-news.png",
+      "excerpt": "Critical vulnerability in Langflow AI orchestration platform allows unauthenticated attackers to execute arbitrary Python code. CVSS 9.8, actively exploited to deploy the Flodrix botnet.",
+      "image": "images/articles/langflow-ai-rce-cve-2025-3248.png",
       "tags": [
-        "Security News",
-        "BleepingComputer",
-        "Auto-Generated"
+        "CVE-2025-3248",
+        "Langflow",
+        "AI Security",
+        "RCE",
+        "Python",
+        "CISA KEV"
       ],
-      "author": "TheHGTech Bot",
-      "externalUrl": "articles/critical-n8n-flaws-disclosed-along-with-public-exploits.html"
+      "author": "TheHGTech Security Team",
+      "externalUrl": "articles/langflow-ai-rce-cve-2025-3248.html"
     },
     {
-      "id": "article-cisa-vmware-esxi-flaw-now-exploited-in-ransomware-attacks",
-      "title": "CISA: VMware ESXi flaw now exploited in ransomware attacks",
+      "id": "article-fortinet-auth-bypass-cve-2026-24858",
+      "title": "Critical Fortinet Auth Bypass (CVE-2026-24858): FortiCloud SSO Exploitation Under Active Attack",
       "date": "February 05, 2026",
       "category": "Zero-Day Vulnerability",
-      "badge": "ZERO-DAY",
-      "excerpt": "CISA confirmed on Wednesday that ransomware gangs have begun exploiting a high-severity VMware ESXi sandbox escape vulnerability that was previously used in zero-day attacks. [...]...",
-      "image": "images/articles/auto-generated-news.png",
+      "badge": "CRITICAL",
+      "excerpt": "CVSS 9.4 authentication bypass allows any FortiCloud account holder to gain admin access to other customers' Fortinet devices. Active exploitation confirmed, CISA KEV listed.",
+      "image": "images/articles/fortinet-auth-bypass-cve-2026-24858.png",
       "tags": [
-        "Zero-Day Vulnerability",
-        "BleepingComputer",
-        "Auto-Generated"
+        "CVE-2026-24858",
+        "Fortinet",
+        "FortiOS",
+        "FortiManager",
+        "Authentication Bypass",
+        "CISA KEV"
       ],
-      "author": "TheHGTech Bot",
-      "externalUrl": "articles/cisa-vmware-esxi-flaw-now-exploited-in-ransomware-attacks.html"
+      "author": "TheHGTech Security Team",
+      "externalUrl": "articles/fortinet-auth-bypass-cve-2026-24858.html"
     },
     {
-      "id": "article-new-amaranth-dragon-cyberespionage-group-exploits-winrar-flaw",
-      "title": "New Amaranth Dragon cyberespionage group exploits WinRAR flaw",
+      "id": "article-harvard-shinyhunters-breach-2026",
+      "title": "Harvard Breach: ShinyHunters Expose 115,000 Donor Records via Vishing Attack",
       "date": "February 05, 2026",
-      "category": "APT / Nation-State",
-      "badge": "APT",
-      "excerpt": "A new threat actor called Amaranth Dragon, linked to APT41 state-sponsored Chinese operations, exploited the CVE-2025-8088 vulnerability in WinRAR in espionage attacks on government and law enforcemen...",
-      "image": "images/articles/auto-generated-news.png",
+      "category": "Data Breach",
+      "badge": "BREACH",
+      "excerpt": "ShinyHunters breach Harvard University via sophisticated vishing campaign, exposing 115,000 donor records including financial profiles of Zuckerberg, Bloomberg, and Ballmer.",
+      "image": "images/articles/harvard-shinyhunters-breach-2026.png",
       "tags": [
-        "APT / Nation-State",
-        "BleepingComputer",
-        "Auto-Generated",
-        "CVE-2025-8088"
+        "Harvard",
+        "ShinyHunters",
+        "Vishing",
+        "Data Breach",
+        "Donor Data",
+        "SSO Bypass"
       ],
-      "author": "TheHGTech Bot",
-      "externalUrl": "articles/new-amaranth-dragon-cyberespionage-group-exploits-winrar-flaw.html"
-    },
-    {
-      "id": "article-cisa-adds-actively-exploited-solarwinds-web-help-desk-rce-to-kev-catalog",
-      "title": "CISA Adds Actively Exploited SolarWinds Web Help Desk RCE to KEV Catalog",
-      "date": "February 05, 2026",
-      "category": "Zero-Day Vulnerability",
-      "badge": "ZERO-DAY",
-      "excerpt": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical security flaw impacting SolarWinds Web Help Desk (WHD) to its Known Exploited Vulnerabilities (KEV) catalog...",
-      "image": "images/articles/auto-generated-news.png",
-      "tags": [
-        "Zero-Day Vulnerability",
-        "TheHackerNews",
-        "Auto-Generated",
-        "CVE-2025-40551"
-      ],
-      "author": "TheHGTech Bot",
-      "externalUrl": "articles/cisa-adds-actively-exploited-solarwinds-web-help-desk-rce-to-kev-catalog.html"
+      "author": "TheHGTech Security Team",
+      "externalUrl": "articles/harvard-shinyhunters-breach-2026.html"
     },
     {
       "id": "article-notepad-supply-chain-apt31-2026",
