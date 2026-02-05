@@ -1,6 +1,63 @@
 {
   "articles": [
     {
+      "id": "article-langflow-ai-rce-cve-2025-3248",
+      "title": "Langflow AI RCE (CVE-2025-3248): Unauthenticated Code Execution in AI Pipeline Platform",
+      "date": "February 05, 2026",
+      "category": "AI Security",
+      "badge": "CRITICAL",
+      "excerpt": "Critical vulnerability in Langflow AI orchestration platform allows unauthenticated attackers to execute arbitrary Python code. CVSS 9.8, actively exploited to deploy the Flodrix botnet.",
+      "image": "images/articles/langflow-ai-rce-cve-2025-3248.png",
+      "tags": [
+        "CVE-2025-3248",
+        "Langflow",
+        "AI Security",
+        "RCE",
+        "Python",
+        "CISA KEV"
+      ],
+      "author": "TheHGTech Security Team",
+      "externalUrl": "articles/langflow-ai-rce-cve-2025-3248.html"
+    },
+    {
+      "id": "article-fortinet-auth-bypass-cve-2026-24858",
+      "title": "Critical Fortinet Auth Bypass (CVE-2026-24858): FortiCloud SSO Exploitation Under Active Attack",
+      "date": "February 05, 2026",
+      "category": "Zero-Day Vulnerability",
+      "badge": "CRITICAL",
+      "excerpt": "CVSS 9.4 authentication bypass allows any FortiCloud account holder to gain admin access to other customers' Fortinet devices. Active exploitation confirmed, CISA KEV listed.",
+      "image": "images/articles/fortinet-auth-bypass-cve-2026-24858.png",
+      "tags": [
+        "CVE-2026-24858",
+        "Fortinet",
+        "FortiOS",
+        "FortiManager",
+        "Authentication Bypass",
+        "CISA KEV"
+      ],
+      "author": "TheHGTech Security Team",
+      "externalUrl": "articles/fortinet-auth-bypass-cve-2026-24858.html"
+    },
+    {
+      "id": "article-harvard-shinyhunters-breach-2026",
+      "title": "Harvard Breach: ShinyHunters Expose 115,000 Donor Records via Vishing Attack",
+      "date": "February 05, 2026",
+      "category": "Data Breach",
+      "badge": "BREACH",
+      "excerpt": "ShinyHunters breach Harvard University via sophisticated vishing campaign, exposing 115,000 donor records including financial profiles of Zuckerberg, Bloomberg, and Ballmer.",
+      "image": "images/articles/harvard-shinyhunters-breach-2026.png",
+      "tags": [
+        "Harvard",
+        "ShinyHunters",
+        "Vishing",
+        "Data Breach",
+        "Donor Data",
+        "SSO Bypass"
+      ],
+      "author": "TheHGTech Security Team",
+      "externalUrl": "articles/harvard-shinyhunters-breach-2026.html"
+    },
+    {
       "id": "article-critical-n8n-flaws-disclosed-along-with-public-exploits",
       "title": "Critical n8n flaws disclosed along with public exploits",
       "date": "February 05, 2026",

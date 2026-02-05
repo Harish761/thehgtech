@@ -83,6 +83,42 @@
   
   <!-- ========== ARTICLES - HIGH TRAFFIC POTENTIAL ========== -->
   
+  <!-- Feb 5, 2026 - Langflow AI RCE CVE-2025-3248 -->
+  <url>
+    <loc>https://thehgtech.com/articles/langflow-ai-rce-cve-2025-3248.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.99</priority>
+    <lastmod>2026-02-05</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/langflow-ai-rce-cve-2025-3248.png</image:loc>
+      <image:title>Langflow AI RCE CVE-2025-3248 Unauthenticated Code Execution</image:title>
+    </image:image>
+  </url>
+
+  <!-- Feb 5, 2026 - Fortinet Auth Bypass CVE-2026-24858 -->
+  <url>
+    <loc>https://thehgtech.com/articles/fortinet-auth-bypass-cve-2026-24858.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.99</priority>
+    <lastmod>2026-02-05</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/fortinet-auth-bypass-cve-2026-24858.png</image:loc>
+      <image:title>Fortinet Authentication Bypass CVE-2026-24858 FortiCloud SSO</image:title>
+    </image:image>
+  </url>
+
+  <!-- Feb 5, 2026 - Harvard ShinyHunters Breach -->
+  <url>
+    <loc>https://thehgtech.com/articles/harvard-shinyhunters-breach-2026.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.99</priority>
+    <lastmod>2026-02-05</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/harvard-shinyhunters-breach-2026.png</image:loc>
+      <image:title>Harvard ShinyHunters Data Breach Vishing Attack</image:title>
+    </image:image>
+  </url>
+
   <!-- Feb 3, 2026 - Notepad++ APT31 Supply Chain Attack -->
   <url>
     <loc>https://thehgtech.com/articles/notepad-supply-chain-apt31-2026.html</loc>

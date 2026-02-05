@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Harvard Breach: ShinyHunters Expose 115,000 Donor Records via Vishing Attack | TheHGTech</title>
+    <meta name="description"
+        content="Deep dive into the Harvard University data breach by ShinyHunters. Analysis of the vishing attack vector, exposed donor data, and SSO bypass techniques used.">
+    <meta name="keywords"
+        content="Harvard breach, ShinyHunters, vishing attack, data breach, donor data, SSO bypass, MFA bypass, university security, scattered spider">
+    <meta name="author" content="TheHGTech Security Research">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thehgtech.com/articles/harvard-shinyhunters-breach-2026.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/articles/harvard-shinyhunters-breach-2026.html">
+    <meta property="og:title" content="Harvard Breach: ShinyHunters Expose 115,000 Donor Records">
+    <meta property="og:description"
+        content="ShinyHunters breach Harvard University via sophisticated vishing campaign, exposing billionaire donor data.">
+    <meta property="og:image" content="https://thehgtech.com/images/articles/harvard-shinyhunters-breach-2026.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Harvard Breach: 115K Donor Records Exposed">
+    <meta name="twitter:description" content="ShinyHunters vishing attack compromises Harvard's donor database.">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": "Harvard Breach: ShinyHunters Expose 115,000 Donor Records via Vishing Attack",
+      "description": "Deep analysis of the Harvard University data breach attributed to ShinyHunters.",
+      "author": { "@type": "Organization", "name": "TheHGTech Security Research" },
+      "publisher": { "@type": "Organization", "name": "TheHGTech", "url": "https://thehgtech.com" },
+      "datePublished": "2026-02-05",
+      "dateModified": "2026-02-05",
+      "mainEntityOfPage": "https://thehgtech.com/articles/harvard-shinyhunters-breach-2026.html",
+      "articleSection": "Data Breach",
+      "keywords": ["Harvard", "ShinyHunters", "Vishing", "Data Breach", "SSO Bypass"]
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+    <!-- Fonts & Icons -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Style System -->
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/header-dropdown.css?v=1">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+
+    <script src="/m-app.js?v=4.3" defer></script>
+    <script src="/interaction-bar.js" defer></script>
+
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #0f1419;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF3D3D;
+            --accent-green: #10b981;
+            --accent-orange: #f59e0b;
+            --accent-purple: #8b5cf6;
+            --accent-crimson: #A51C30;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 80px 1.5rem 120px;
+        }
+
+        .article-header {
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 2rem;
+        }
+
+        .article-header h1 {
+            font-size: 2.2rem;
+            background: linear-gradient(135deg, var(--accent-crimson), #ff6b6b);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .meta-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .meta-info span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .badge-breach {
+            background: var(--accent-red);
+            color: white;
+        }
+
+        .badge-vishing {
+            background: var(--accent-orange);
+            color: black;
+        }
+
+        .featured-image {
+            width: 100%;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border: 1px solid var(--border);
+        }
+
+        h2 {
+            color: var(--accent-cyan);
+            margin: 2.5rem 0 1rem;
+            font-size: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        h3 {
+            color: var(--text-primary);
+            margin: 1.5rem 0 1rem;
+            font-size: 1.2rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        ul,
+        ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .warning-box {
+            background: rgba(255, 61, 61, 0.08);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .info-box {
+            background: rgba(0, 217, 255, 0.08);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .success-box {
+            background: rgba(16, 185, 129, 0.08);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .technical-box {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .technical-box h3 {
+            color: var(--accent-cyan);
+            margin-top: 0;
+        }
+
+        pre {
+            background: #0d1117;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+
+        code {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--accent-green);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: rgba(165, 28, 48, 0.2);
+            color: var(--accent-crimson);
+            font-weight: 600;
+        }
+
+        td {
+            color: var(--text-secondary);
+        }
+
+        .ascii-diagram {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(165, 28, 48, 0.1));
+            border: 1px solid var(--accent-crimson);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            overflow-x: auto;
+        }
+
+        .donor-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--accent-orange);
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 0.5rem 0;
+        }
+
+        .donor-card .donor-name {
+            color: var(--accent-cyan);
+            font-weight: 600;
+        }
+
+        .donor-card .donor-amount {
+            color: var(--accent-orange);
+            font-size: 0.9rem;
+        }
+
+        strong {
+            color: var(--text-primary);
+        }
+
+        a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .vishing-highlight {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(255, 61, 61, 0.15));
+            border: 1px solid var(--accent-orange);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 60px 1rem 100px;
+            }
+
+            .article-header h1 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Mobile Header -->
+    <header class="m-header m-only">
+        <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px;">
+            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px;">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">TheHGTech</span>
+        </div>
+        <div class="m-header__actions">
+            <button class="m-theme-toggle" onclick="mToggleTheme()" aria-label="Toggle Theme">
+                <span class="m-theme-toggle__thumb"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Bottom Navigation -->
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item"><i class="fas fa-bug"></i><span>CVE</span></a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item"><i class="fas fa-shield-alt"></i><span>Intel</span></a>
+        <a href="/articles.html" class="m-bottom-nav__item active"><i
+                class="fas fa-newspaper"></i><span>Articles</span></a>
+        <a href="/guides/" class="m-bottom-nav__item"><i class="fas fa-book"></i><span>Guides</span></a>
+    </nav>
+
+    <!-- Desktop Header -->
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+            <nav class="nav nav-modern" role="navigation">
+                <a href="/index.html#news">News</a>
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">Intelligence <span class="nav-live-badge">LIVE</span> <i
+                            class="fas fa-chevron-down dropdown-arrow"></i></span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/threat-intel.html" class="dropdown-item">
+                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Threat Intelligence <span
+                                        class="dropdown-badge live">LIVE</span></div>
+                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds</div>
+                            </div>
+                        </a>
+                        <a href="/cve-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">CVE Tracker</div>
+                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities</div>
+                            </div>
+                        </a>
+                        <a href="/ransomware-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Ransomware Tracker</div>
+                                <div class="dropdown-item-desc">Track active ransomware groups</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">Resources <i
+                            class="fas fa-chevron-down dropdown-arrow"></i></span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/guides/" class="dropdown-item">
+                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Security Guides <span
+                                        class="dropdown-badge popular">40+</span></div>
+                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2 & more</div>
+                            </div>
+                        </a>
+                        <a href="/comparisons/" class="dropdown-item">
+                            <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Tool Comparisons</div>
+                                <div class="dropdown-item-desc">Security tool reviews</div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="/articles.html" class="dropdown-item">
+                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Articles</div>
+                                <div class="dropdown-item-desc">Security news and analysis</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="theme-toggle-wrapper">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <div class="toggle-stars">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                    </button>
+                </div>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <div class="container">
+        <a href="/articles.html" class="back-link"
+            style="display: inline-block; margin-bottom: 1.5rem; color: var(--accent-cyan); text-decoration: none;">
+            <i class="fas fa-arrow-left"></i> Back to Articles
+        </a>
+
+        <article>
+            <header class="article-header">
+                <div style="margin-bottom: 1rem;">
+                    <span class="badge badge-breach"><i class="fas fa-database"></i> Data Breach</span>
+                    <span class="badge badge-vishing"><i class="fas fa-phone-alt"></i> Vishing</span>
+                </div>
+                <h1>Harvard Breach: ShinyHunters Expose 115,000 Donor Records via Sophisticated Vishing Attack</h1>
+                <div class="meta-info">
+                    <span><i class="far fa-calendar-alt"></i> February 5, 2026</span>
+                    <span><i class="fas fa-clock"></i> 14 min read</span>
+                    <span><i class="fas fa-user"></i> TheHGTech Security Research</span>
+                </div>
+                <p style="font-size: 1.1rem; color: var(--text-primary);">
+                    The notorious ShinyHunters collective has compromised Harvard University's Alumni Affairs and
+                    Development department, exposing the financial profiles of some of the world's wealthiest
+                    individuals including Zuckerberg, Bloomberg, and Ballmer.
+                </p>
+            </header>
+
+            <img src="/images/articles/harvard-shinyhunters-breach-2026.png" alt="Harvard ShinyHunters Breach"
+                class="featured-image">
+
+            <!-- Executive Summary -->
+            <div class="warning-box">
+                <strong><i class="fas fa-exclamation-triangle"></i> Executive Summary</strong>
+                <ul style="margin-top: 1rem;">
+                    <li><strong>What:</strong> Harvard University Alumni Affairs & Development (AAD) data breach</li>
+                    <li><strong>Threat Actor:</strong> ShinyHunters / "Scattered LAPSUS$ Hunters" collective</li>
+                    <li><strong>Records Exposed:</strong> 115,000+ sensitive donor records</li>
+                    <li><strong>Attack Vector:</strong> Sophisticated voice-phishing (vishing) with real-time MFA bypass
+                    </li>
+                    <li><strong>Data Leaked:</strong> Donor names, lifetime giving amounts, family relationships, wealth
+                        bands</li>
+                    <li><strong>Discovery Date:</strong> November 18, 2025 (disclosed February 2026)</li>
+                    <li><strong>Status:</strong> Data publicly dumped after ransom negotiations failed</li>
+                </ul>
+            </div>
+
+            <h2 id="background"><i class="fas fa-university"></i> The Attack: A Collapse of Institutional Data
+                Sovereignty</h2>
+
+            <p>
+                On <strong>February 4, 2026</strong>, security researchers confirmed that the ShinyHunters threat actor
+                had publicly dumped over 1 million records from Harvard University, with approximately <strong>115,000
+                    highly sensitive records</strong> originating from the Alumni Affairs and Development (AAD)
+                department.
+            </p>
+
+            <p>
+                This wasn't a typical data breach. The AAD department manages Harvard's relationships with its most
+                influential donors—billionaires, Fortune 500 executives, and political figures whose giving patterns,
+                family connections, and "wealth bands" were all exposed.
+            </p>
+
+            <div class="info-box">
+                <strong><i class="fas fa-info-circle"></i> Why This Matters</strong>
+                <p style="margin-top: 0.5rem;">
+                    The Harvard breach represents something far more dangerous than typical PII exposure. This data
+                    provides a comprehensive map of elite social networks, family financial structures, and
+                    institutional influence strategies—intelligence that could fuel targeted social engineering,
+                    extortion, or corporate espionage for years.
+                </p>
+            </div>
+
+            <h2 id="technical"><i class="fas fa-phone-slash"></i> Attack Vector: The Vishing Campaign</h2>
+
+            <p>
+                ShinyHunters, sometimes operating as part of the "Scattered LAPSUS$ Hunters" collective, employed their
+                signature attack technique: <strong>sophisticated voice phishing (vishing)</strong> targeting
+                administrative staff.
+            </p>
+
+            <h3>The Attack Chain</h3>
+
+            <div class="ascii-diagram">
+                <pre style="color: var(--accent-crimson); margin: 0;">
+HARVARD VISHING ATTACK CHAIN
+============================
+
+┌─────────────────┐     ┌──────────────────┐     ┌─────────────────┐
+│ RECONNAISSANCE  │────▶│  VISHING CALL    │────▶│  FAKE SSO       │
+│                 │     │                  │     │  PORTAL         │
+│ • LinkedIn OSINT│     │ • Impersonate IT │     │ • Credential    │
+│ • Org chart     │     │ • Deepfake voice │     │   harvest       │
+│ • Staff targets │     │ • Urgency tactics│     │ • MFA capture   │
+└─────────────────┘     └──────────────────┘     └─────────────────┘
+                                                          │
+                                                          ▼
+                                                ┌──────────────────┐
+                                                │  REAL-TIME       │
+                                                │  MFA RELAY       │
+                                                │                  │
+                                                │  Victim enters   │
+                                                │  MFA → Attacker  │
+                                                │  uses it live    │
+                                                └──────────────────┘
+                                                          │
+          ┌───────────────────────────────────────────────┤
+          │                                               │
+          ▼                                               ▼
+┌──────────────────┐                            ┌──────────────────┐
+│  AAD DATABASE    │                            │  DATA            │
+│  ACCESS          │                            │  EXFILTRATION    │
+│                  │                            │                  │
+│  • Donor records │                            │  • 115K records  │
+│  • Gift history  │                            │  • Relations DB  │
+│  • Family data   │                            │  • Strategy docs │
+└──────────────────┘                            └──────────────────┘
+                </pre>
+            </div>
+
+            <h3>Vishing Technique Analysis</h3>
+
+            <div class="vishing-highlight">
+                <h3><i class="fas fa-microphone-alt"></i> The Call</h3>
+                <p>
+                    Attackers called AAD administrative staff pretending to be Harvard IT support. Key tactics included:
+                </p>
+                <ul>
+                    <li><strong>Caller ID Spoofing:</strong> Displayed Harvard's legitimate IT helpdesk number</li>
+                    <li><strong>AI Voice Synthesis:</strong> Potentially used deepfake voice technology to sound
+                        authoritative</li>
+                    <li><strong>Urgency Framing:</strong> "We've detected suspicious login attempts on your account..."
+                    </li>
+                    <li><strong>SSO Redirect:</strong> Directed victims to a fake Harvard SSO portal</li>
+                </ul>
+            </div>
+
+            <div class="technical-box">
+                <h3><i class="fas fa-code"></i> Real-Time MFA Proxy Attack Flow</h3>
+                <pre><code class="language-python"># Simplified view of a real-time MFA relay attack
+# Attacker infrastructure intercepts credentials and MFA tokens live
+
+class MFAProxy:
+    def handle_victim_login(self, credentials):
+        # Step 1: Victim enters username/password on fake portal
+        username, password = credentials
+        
+        # Step 2: Attacker immediately uses them on real Harvard SSO
+        real_session = self.login_to_real_harvard(username, password)
+        
+        # Step 3: Harvard's SSO sends MFA push/code to victim
+        # Victim enters MFA thinking they're logging in legitimately
+        
+    def capture_mfa_token(self, mfa_code):
+        # Step 4: Attacker captures MFA code and uses it within ~30 seconds
+        self.complete_real_login(mfa_code)
+        
+        # Step 5: Attacker now has valid session token
+        # Victim sees "login failed, try again" error
+        return self.exfiltrate_data()</code></pre>
+            </div>
+
+            <h2 id="exposed-data"><i class="fas fa-user-secret"></i> Exposed Data: The Donor Intelligence Goldmine</h2>
+
+            <p>
+                The leaked data goes far beyond typical breach content. It provides what security analysts describe as a
+                "comprehensive census of the university's human capital"—mapping wealth, relationships, and
+                institutional influence.
+            </p>
+
+            <h3>Data Categories Exposed</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Description</th>
+                        <th>Risk Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lifetime Recognition Amount</td>
+                        <td>Total donations over donor's lifetime</td>
+                        <td style="color: var(--accent-red);">Critical — Wealth quantification</td>
+                    </tr>
+                    <tr>
+                        <td>Wealth Band Classifications</td>
+                        <td>Internal ratings of donor financial capacity</td>
+                        <td style="color: var(--accent-red);">Critical — Targeting potential</td>
+                    </tr>
+                    <tr>
+                        <td>Family Relationship Graphs</td>
+                        <td>Connections to other Harvard-affiliated individuals</td>
+                        <td style="color: var(--accent-red);">Critical — Social engineering fuel</td>
+                    </tr>
+                    <tr>
+                        <td>Admissions Pauses/Holds</td>
+                        <td>Donor families with prospective students</td>
+                        <td style="color: var(--accent-orange);">High — Admission process insights</td>
+                    </tr>
+                    <tr>
+                        <td>Fundraising-Admissions Sync</td>
+                        <td>Coordination between donations and admissions</td>
+                        <td style="color: var(--accent-orange);">High — Reputational damage</td>
+                    </tr>
+                    <tr>
+                        <td>Contact Information</td>
+                        <td>Personal emails, phone numbers, addresses</td>
+                        <td style="color: var(--accent-orange);">High — Direct targeting</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>High-Profile Donors Exposed</h3>
+
+            <p>
+                The breach exposed detailed giving histories of some of the world's most prominent individuals:
+            </p>
+
+            <div class="donor-card">
+                <span class="donor-name">Mark E. Zuckerberg</span>
+                <span class="donor-amount">| Lifetime Recognition Amount: Disclosed</span>
+                <p style="margin: 0.5rem 0 0; color: var(--text-secondary);">Meta CEO, Harvard Dropout (2004)</p>
+            </div>
+
+            <div class="donor-card">
+                <span class="donor-name">Michael R. Bloomberg</span>
+                <span class="donor-amount">| Lifetime Recognition Amount: Disclosed</span>
+                <p style="margin: 0.5rem 0 0; color: var(--text-secondary);">Bloomberg LP Founder, Former NYC Mayor, MBA
+                    1966</p>
+            </div>
+
+            <div class="donor-card">
+                <span class="donor-name">Steven A. Ballmer</span>
+                <span class="donor-amount">| Lifetime Recognition Amount: Disclosed</span>
+                <p style="margin: 0.5rem 0 0; color: var(--text-secondary);">Former Microsoft CEO, LA Clippers Owner,
+                    MBA 1980</p>
+            </div>
+
+            <h2 id="threat-actor"><i class="fas fa-user-ninja"></i> Threat Actor: ShinyHunters</h2>
+
+            <p>
+                ShinyHunters has been one of the most prolific data breach actors since 2020. Their victim list
+                includes:
+            </p>
+
+            <ul>
+                <li><strong>Microsoft GitHub repositories</strong> (2020)</li>
+                <li><strong>Tokopedia</strong> - 91 million accounts</li>
+                <li><strong>Wattpad</strong> - 270 million records</li>
+                <li><strong>BigBasket</strong> - 20 million accounts</li>
+                <li><strong>AT&T</strong> - 70 million customer records (2024)</li>
+            </ul>
+
+            <p>
+                The group is known for:
+            </p>
+
+            <ol>
+                <li><strong>Aggressive Ransom Demands:</strong> They typically demand payment to prevent public data
+                    release</li>
+                <li><strong>No-Bluff Leaks:</strong> When negotiations fail, they follow through on data dumps</li>
+                <li><strong>SSO/Identity Focus:</strong> Specializing in identity provider and authentication attacks
+                </li>
+                <li><strong>Scattered Spider Overlap:</strong> Sharing tactics with the broader "Scattered LAPSUS$"
+                    ecosystem</li>
+            </ol>
+
+            <h2 id="impact"><i class="fas fa-bomb"></i> Impact Analysis</h2>
+
+            <h3>Immediate Risks</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Risk Category</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Targeted Spear Phishing</td>
+                        <td>Attackers now have detailed profiles for highly targeted attacks on wealthy individuals</td>
+                    </tr>
+                    <tr>
+                        <td>Extortion Campaigns</td>
+                        <td>Donors may be approached with threats to expose embarrassing donation patterns</td>
+                    </tr>
+                    <tr>
+                        <td>Corporate Espionage</td>
+                        <td>Relationship maps reveal business connections useful for competitive intelligence</td>
+                    </tr>
+                    <tr>
+                        <td>Identity Theft Fuel</td>
+                        <td>Personal data enables creation of synthetic identities or account takeover</td>
+                    </tr>
+                    <tr>
+                        <td>Reputational Damage</td>
+                        <td>Admissions-donations correlation may fuel media scrutiny</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 id="detection"><i class="fas fa-search"></i> Detection & IoCs</h2>
+
+            <div class="technical-box">
+                <h3><i class="fas fa-shield-alt"></i> Vishing Attack Indicators</h3>
+                <p>Watch for these signs of vishing campaigns targeting your organization:</p>
+                <ul>
+                    <li>Unexpected calls claiming to be from IT/Security requiring immediate action</li>
+                    <li>Caller ID showing internal numbers but conversation feels "off"</li>
+                    <li>Requests to visit a link or enter credentials while on the call</li>
+                    <li>Pressure to bypass normal security procedures due to "urgency"</li>
+                    <li>MFA prompts that appear unexpectedly during a "support" call</li>
+                </ul>
+            </div>
+
+            <h2 id="mitigations"><i class="fas fa-shield-alt"></i> Defensive Recommendations</h2>
+
+            <div class="success-box">
+                <strong><i class="fas fa-check-circle"></i> Immediate Actions</strong>
+                <ul style="margin-top: 0.5rem;">
+                    <li><strong>Implement Phishing-Resistant MFA:</strong> FIDO2/WebAuthn hardware keys cannot be
+                        proxied like TOTP or push notifications</li>
+                    <li><strong>Vishing Awareness Training:</strong> Specific training on phone-based social engineering
+                        attacks</li>
+                    <li><strong>Out-of-Band Verification:</strong> Require callback on known numbers for any credential
+                        reset requests</li>
+                    <li><strong>Privileged Access Monitoring:</strong> Enhanced logging for access to sensitive
+                        databases</li>
+                    <li><strong>Zero Trust Architecture:</strong> Assume breach; verify every access request</li>
+                </ul>
+            </div>
+
+            <h3>Technical Controls</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Control</th>
+                        <th>Implementation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>FIDO2/WebAuthn</td>
+                        <td>Deploy hardware security keys (YubiKey, Titan) for all admin accounts</td>
+                    </tr>
+                    <tr>
+                        <td>Conditional Access</td>
+                        <td>Block logins from unusual locations/devices pending additional verification</td>
+                    </tr>
+                    <tr>
+                        <td>DLP for Donor Data</td>
+                        <td>Monitor and alert on bulk exports from CRM/donor management systems</td>
+                    </tr>
+                    <tr>
+                        <td>Callback Verification</td>
+                        <td>IT policy requiring hang-up and callback on published numbers</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 id="conclusion"><i class="fas fa-gavel"></i> Conclusion</h2>
+
+            <p>
+                The Harvard breach represents a stark warning: <strong>no institution is too prestigious to be
+                    targeted</strong>, and traditional MFA is not sufficient against real-time phishing attacks.
+            </p>
+
+            <p>
+                ShinyHunters' success demonstrates the effectiveness of human-focused attack vectors. Technical controls
+                alone cannot prevent social engineering—organizations must invest equally in security awareness,
+                procedural safeguards, and phishing-resistant authentication.
+            </p>
+
+            <p>
+                For the 115,000 exposed donors, the breach creates long-term risk. Their detailed financial profiles and
+                relationship networks will likely be traded on dark web forums for years, fueling targeted attacks far
+                beyond Harvard's walls.
+            </p>
+
+            <div class="info-box">
+                <strong><i class="fas fa-link"></i> Related Reading</strong>
+                <ul style="margin-top: 0.5rem;">
+                    <li><a href="/articles/harvard-phone-phishing-breach-2025.html">Previous Harvard Phishing
+                            Coverage</a></li>
+                    <li><a href="/guides/email-security-spf-dkim-dmarc.html">Guide: Email Security Hardening</a></li>
+                </ul>
+            </div>
+
+        </article>
+
+        <!-- Interaction Bar -->
+        <div class="interaction-bar" data-article-id="harvard-shinyhunters-breach-2026"></div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer
+        style="background: var(--bg-secondary); padding: 2rem; text-align: center; border-top: 1px solid var(--border);">
+        <p style="color: var(--text-secondary); margin: 0;">© 2026 TheHGTech. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
