@@ -1,13 +1,25 @@
 {
-  "last_updated": "2026-02-05T02:07:23.241444",
+  "last_updated": "2026-02-05T13:04:17.265172",
   "period": "Last 7 days",
-  "total_groups": 27,
-  "total_victims": 238,
+  "total_groups": 26,
+  "total_victims": 230,
   "groups": [
     {
       "name": "Qilin",
-      "count": 53,
+      "count": 55,
       "victims": [
+        {
+          "name": "University of Applied Sciences,Worms",
+          "date": "2026-02-05 08:20:29.153844",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=53f208de-a186-3184-87eb-b408e65bbbc6",
+          "discovered_date": "2026-02-05T08:20:29.153844"
+        },
+        {
+          "name": "Conpet S.A. (COTE.RO)",
+          "date": "2026-02-05 08:19:47.435039",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=5479c4af-4071-3fd7-b872-aa04507ba5fe",
+          "discovered_date": "2026-02-05T08:19:47.435039"
+        },
         {
           "name": "Kopas Cosmetics",
           "date": "2026-02-04 15:13:10.871746",
@@ -55,18 +67,6 @@
           "date": "2026-02-03 14:27:16.244277",
           "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=e39d12bd-55e1-31cb-919f-9fa4c2fdb9fc",
           "discovered_date": "2026-02-03T14:27:16.244277"
-        },
-        {
-          "name": "Jingchang Enterprise Co., Ltd",
-          "date": "2026-02-03 15:34:36.007045",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=95291e6f-8755-3a7f-a2c5-55053d53122f",
-          "discovered_date": "2026-02-03T15:34:36.007045"
-        },
-        {
-          "name": "Medinah School District 11",
-          "date": "2026-02-02 18:13:16.844730",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=9d923f57-52c6-310b-bc40-be6f6b2ea7a8",
-          "discovered_date": "2026-02-02T18:13:16.844730"
         }
       ],
       "industries": [
@@ -74,7 +74,7 @@
         "Business Services",
         "Consumer Services",
         "Education",
-        "Financial Services"
+        "Energy"
       ],
       "countries": [
         "AT",
@@ -86,18 +86,18 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        9,
+        7,
         0,
         2,
         22,
         4,
         14,
-        0
+        4
       ]
     },
     {
       "name": "Akira",
-      "count": 40,
+      "count": 38,
       "victims": [
         {
           "name": "efulfillment Service",
@@ -546,7 +546,7 @@
     },
     {
       "name": "Coinbasecartel",
-      "count": 12,
+      "count": 9,
       "victims": [
         {
           "name": "Neuviz",
@@ -601,12 +601,6 @@
           "date": "2026-01-29T19:33:03+00:00",
           "url": "https://www.ransomware.live/id/TkdDIFNvZnR3YXJlQGNvaW5iYXNlY2FydGVs",
           "discovered_date": "2026-01-29T19:33:03+00:00"
-        },
-        {
-          "name": "RAKS Sp. z o.o.",
-          "date": "2026-01-29T11:05:39+00:00",
-          "url": "https://www.ransomware.live/id/UkFLUyBTcC4geiBvLm8uQGNvaW5iYXNlY2FydGVs",
-          "discovered_date": "2026-01-29T11:05:39+00:00"
         }
       ],
       "industries": [
@@ -615,13 +609,12 @@
       ],
       "countries": [
         "BR",
-        "DE",
         "FR",
         "ID",
-        "PL"
+        "US"
       ],
-      "trend": "up",
-      "trend_percentage": 15,
+      "trend": "stable",
+      "trend_percentage": 0,
       "daily_counts": [
         0,
         8,
@@ -634,7 +627,7 @@
     },
     {
       "name": "Devman",
-      "count": 10,
+      "count": 8,
       "victims": [
         {
           "name": "Crystal Coast Pain Management",
@@ -683,18 +676,6 @@
           "date": "2026-01-30T17:34:18+00:00",
           "url": "https://www.ransomware.live/id/d2pua2xhdy5jb21AZGV2bWFu",
           "discovered_date": "2026-01-30T17:34:18+00:00"
-        },
-        {
-          "name": "consultaegis.com",
-          "date": "2026-01-29T11:31:37+00:00",
-          "url": "https://www.ransomware.live/id/Y29uc3VsdGFlZ2lzLmNvbUBkZXZtYW4=",
-          "discovered_date": "2026-01-29T11:31:37+00:00"
-        },
-        {
-          "name": "zallc.org",
-          "date": "2026-01-29T11:29:46+00:00",
-          "url": "https://www.ransomware.live/id/emFsbGMub3JnQGRldm1hbg==",
-          "discovered_date": "2026-01-29T11:29:46+00:00"
         }
       ],
       "industries": [
@@ -911,61 +892,6 @@
       ]
     },
     {
-      "name": "Rhysida",
-      "count": 5,
-      "victims": [
-        {
-          "name": "Lakeside Union School District",
-          "date": "2026-02-04 08:01:07.947483",
-          "url": "",
-          "discovered_date": "2026-02-04T08:01:07.947483"
-        },
-        {
-          "name": "Elabs",
-          "date": "2026-02-02 15:16:04.313364",
-          "url": "",
-          "discovered_date": "2026-02-02T15:16:04.313364"
-        },
-        {
-          "name": "Lakeside Union School District",
-          "date": "2026-02-04T08:01:07+00:00",
-          "url": "https://www.ransomware.live/id/TGFrZXNpZGUgVW5pb24gU2Nob29sIERpc3RyaWN0QHJoeXNpZGE=",
-          "discovered_date": "2026-02-04T08:01:07+00:00"
-        },
-        {
-          "name": "Elabs",
-          "date": "2026-02-02T15:16:04+00:00",
-          "url": "https://www.ransomware.live/id/RWxhYnNAcmh5c2lkYQ==",
-          "discovered_date": "2026-02-02T15:16:04+00:00"
-        },
-        {
-          "name": "MACT Health Board",
-          "date": "2026-01-29T12:46:06+00:00",
-          "url": "https://www.ransomware.live/id/TUFDVCBIZWFsdGggQm9hcmRAcmh5c2lkYQ==",
-          "discovered_date": "2026-01-29T12:46:06+00:00"
-        }
-      ],
-      "industries": [
-        "Education",
-        "Not Found"
-      ],
-      "countries": [
-        "SE",
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        2,
-        0,
-        2,
-        0
-      ]
-    },
-    {
       "name": "Anubis",
       "count": 4,
       "victims": [
@@ -1010,6 +936,55 @@
         0,
         0,
         2,
+        2,
+        0
+      ]
+    },
+    {
+      "name": "Rhysida",
+      "count": 4,
+      "victims": [
+        {
+          "name": "Lakeside Union School District",
+          "date": "2026-02-04 08:01:07.947483",
+          "url": "",
+          "discovered_date": "2026-02-04T08:01:07.947483"
+        },
+        {
+          "name": "Elabs",
+          "date": "2026-02-02 15:16:04.313364",
+          "url": "",
+          "discovered_date": "2026-02-02T15:16:04.313364"
+        },
+        {
+          "name": "Lakeside Union School District",
+          "date": "2026-02-04T08:01:07+00:00",
+          "url": "https://www.ransomware.live/id/TGFrZXNpZGUgVW5pb24gU2Nob29sIERpc3RyaWN0QHJoeXNpZGE=",
+          "discovered_date": "2026-02-04T08:01:07+00:00"
+        },
+        {
+          "name": "Elabs",
+          "date": "2026-02-02T15:16:04+00:00",
+          "url": "https://www.ransomware.live/id/RWxhYnNAcmh5c2lkYQ==",
+          "discovered_date": "2026-02-02T15:16:04+00:00"
+        }
+      ],
+      "industries": [
+        "Education",
+        "Not Found"
+      ],
+      "countries": [
+        "SE",
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        2,
+        0,
         2,
         0
       ]
@@ -1062,54 +1037,6 @@
       ]
     },
     {
-      "name": "Ransomhouse",
-      "count": 4,
-      "victims": [
-        {
-          "name": "[Apple Data, Additional evidence (Apple Watch) pack-2]Luxshare Precision Industry Co. Ltd.",
-          "date": "2026-02-04 12:11:36.277601",
-          "url": "http://zohlm7ahjwegcedoz7lrdrti7bvpofymcayotp744qhx6gjmxbuo2yid.onion/r/57858fb284b4b8a1e1feadee174d0778591000fe",
-          "discovered_date": "2026-02-04T12:11:36.277601"
-        },
-        {
-          "name": "[Apple Data, Additional evidence (Apple Watch) pack-2]Luxshare Precision Industry Co. Ltd.",
-          "date": "2026-02-04T12:11:36+00:00",
-          "url": "https://www.ransomware.live/id/W0FwcGxlIERhdGEsIEFkZGl0aW9uYWwgZXZpZGVuY2UgKEFwcGxlIFdhdGNoKSBwYWNrLTJdTHV4c2hhcmUgUHJlY2lzaW9uIEluZHVzdHJ5IENvLiBMdGQuQHJhbnNvbWhvdXNl",
-          "discovered_date": "2026-02-04T12:11:36+00:00"
-        },
-        {
-          "name": "[Internal database pack 1] Warren County Sheriff’s Office",
-          "date": "2026-01-30T12:13:21+00:00",
-          "url": "https://www.ransomware.live/id/W0ludGVybmFsIGRhdGFiYXNlIHBhY2sgMV0gV2FycmVuIENvdW50eSBTaGVyaWZm4oCZcyBPZmZpY2VAcmFuc29taG91c2U=",
-          "discovered_date": "2026-01-30T12:13:21+00:00"
-        },
-        {
-          "name": "[Weapons License] Warren County Sheriff’s Office",
-          "date": "2026-01-29T09:41:41+00:00",
-          "url": "https://www.ransomware.live/id/W1dlYXBvbnMgTGljZW5zZV0gV2FycmVuIENvdW50eSBTaGVyaWZm4oCZcyBPZmZpY2VAcmFuc29taG91c2U=",
-          "discovered_date": "2026-01-29T09:41:41+00:00"
-        }
-      ],
-      "industries": [
-        "Technology"
-      ],
-      "countries": [
-        "CN",
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        1,
-        0,
-        0,
-        0,
-        0,
-        2,
-        0
-      ]
-    },
-    {
       "name": "Interlock",
       "count": 3,
       "victims": [
@@ -1148,6 +1075,48 @@
         0,
         0,
         0,
+        0
+      ]
+    },
+    {
+      "name": "Ransomhouse",
+      "count": 3,
+      "victims": [
+        {
+          "name": "[Apple Data, Additional evidence (Apple Watch) pack-2]Luxshare Precision Industry Co. Ltd.",
+          "date": "2026-02-04 12:11:36.277601",
+          "url": "http://zohlm7ahjwegcedoz7lrdrti7bvpofymcayotp744qhx6gjmxbuo2yid.onion/r/57858fb284b4b8a1e1feadee174d0778591000fe",
+          "discovered_date": "2026-02-04T12:11:36.277601"
+        },
+        {
+          "name": "[Apple Data, Additional evidence (Apple Watch) pack-2]Luxshare Precision Industry Co. Ltd.",
+          "date": "2026-02-04T12:11:36+00:00",
+          "url": "https://www.ransomware.live/id/W0FwcGxlIERhdGEsIEFkZGl0aW9uYWwgZXZpZGVuY2UgKEFwcGxlIFdhdGNoKSBwYWNrLTJdTHV4c2hhcmUgUHJlY2lzaW9uIEluZHVzdHJ5IENvLiBMdGQuQHJhbnNvbWhvdXNl",
+          "discovered_date": "2026-02-04T12:11:36+00:00"
+        },
+        {
+          "name": "[Internal database pack 1] Warren County Sheriff’s Office",
+          "date": "2026-01-30T12:13:21+00:00",
+          "url": "https://www.ransomware.live/id/W0ludGVybmFsIGRhdGFiYXNlIHBhY2sgMV0gV2FycmVuIENvdW50eSBTaGVyaWZm4oCZcyBPZmZpY2VAcmFuc29taG91c2U=",
+          "discovered_date": "2026-01-30T12:13:21+00:00"
+        }
+      ],
+      "industries": [
+        "Technology"
+      ],
+      "countries": [
+        "CN",
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        2,
         0
       ]
     },
@@ -1464,33 +1433,6 @@
       "industries": [],
       "countries": [
         "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Morpheus",
-      "count": 1,
-      "victims": [
-        {
-          "name": "SUNSETWORLDRESORTS",
-          "date": "2026-01-29T12:40:04+00:00",
-          "url": "https://www.ransomware.live/id/U1VOU0VUV09STERSRVNPUlRTQG1vcnBoZXVz",
-          "discovered_date": "2026-01-29T12:40:04+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "MX"
       ],
       "trend": "down",
       "trend_percentage": -5,
