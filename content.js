@@ -5,6 +5,108 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Feb 05 2026",
+            "headline": "GitHub Codespaces Vulnerable—VS Code Configs Enable Attacks",
+            "title": "VS Code Configuration Files Expose GitHub Codespaces to Potential Attacks",
+            "content": "A vulnerability in Visual Studio Code&#x27;s integration with GitHub Codespaces has been identified, where configuration files are automatically executed when a repository or pull request is opened. This flaw could allow malicious actors to inject harmful scripts into these configuration files, potentially compromising the environment. Developers using Codespaces are at risk, particularly if they work with public repositories where malicious configurations might be introduced. This vulnerability emphasizes the need for heightened scrutiny of configuration files and the importance of using trusted sources for repository access. GitHub users are advised to review configurations and apply strict access controls to mitigate risks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/vs-code-configs-expose-github-codespaces-to-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 05 2026",
+            "headline": "Nullify Raises $12.5M—Boosts Cybersecurity AI Workforce",
+            "title": "Nullify Secures $12.5 Million to Enhance Cybersecurity AI Workforce",
+            "content": "Cybersecurity startup Nullify has successfully raised $12.5 million in seed funding, led by SYN Ventures, bringing its total funding to $16.9 million. The company specializes in developing AI-driven solutions to enhance cybersecurity operations and workforce capabilities. This funding will accelerate the development of its AI platform designed to assist security teams in identifying and mitigating threats more efficiently. The investment highlights the growing demand for AI-powered cybersecurity solutions as organizations face increasingly sophisticated cyber threats. Industry professionals should watch for Nullify&#x27;s advancements as they could significantly impact the cybersecurity landscape.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/nullify-secures-12-5-million-in-seed-funding-for-cybersecurity-ai-workforce/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 05 2026",
+            "headline": "ThreatsDay: Codespaces RCE, AsyncRAT, AI Cloud Intrusions",
+            "title": "Weekly ThreatsDay Bulletin Highlights Emerging Cybersecurity Threats",
+            "content": "This week&#x27;s ThreatsDay Bulletin from The Hacker News reveals a slew of emerging cybersecurity threats, including a remote code execution (RCE) vulnerability in GitHub Codespaces, AsyncRAT command and control (C2) activities, and AI cloud intrusions. Researchers are observing a trend where attacks originate from routine developer workflows, cloud access points, and identity paths, indicating a shift towards exploiting everyday tools and processes. The bulletin underscores the importance of securing these often-overlooked areas as they could serve as entry points for sophisticated attacks. Security professionals should enhance monitoring and fortify defenses around these vectors to mitigate potential risks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/02/threatsday-bulletin-codespaces-rce.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 05 2026",
+            "headline": "Substack Data Breach—User Emails, Phones Compromised",
+            "title": "Substack Notifies Users of Data Breach Involving Personal Information",
+            "content": "Substack has alerted its users to a data breach that occurred in October 2025, where attackers accessed email addresses and phone numbers. The breach raises concerns about the security of personal information for users of the newsletter platform. While no financial data is reported to have been compromised, the exposure of contact details could lead to phishing attacks and other social engineering exploits. Substack users are advised to remain vigilant for suspicious communications and consider changing passwords to enhance account security. The incident highlights the ongoing challenges in protecting user data in digital platforms.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/newsletter-platform-substack-notifies-users-of-data-breach/",
+            "relatedResources": [
+                {
+                    "label": "Phishing & Security Awareness",
+                    "url": "/guides/phishing-simulation-security-awareness.html",
+                    "icon": "fa-fish"
+                }
+            ]
+        },
+        {
+            "date": "Feb 05 2026",
+            "headline": "Italy Thwarts Russian Cyberattacks on Olympics Sites",
+            "title": "Italy Foils Russian-Linked Cyberattacks on Winter Olympics Websites",
+            "content": "Italy&#x27;s foreign ministry has successfully thwarted a series of cyberattacks linked to Russian actors, targeting its offices and Winter Olympics-related websites. The attacks aimed at disrupting operations and accessing sensitive information, but were intercepted before causing significant damage. This incident underscores the persistent threat posed by state-sponsored cyber actors, particularly during high-profile international events like the Olympics. As geopolitical tensions continue to influence cyber activities, organizations involved in such events must bolster their cybersecurity measures to prevent potential disruptions. Italy&#x27;s proactive measures serve as a model for safeguarding critical infrastructure against cyber threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/italy-averted-russian-linked-cyberattacks-targeting-winter-olympics-websites-foreign-minister-says/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 05 2026",
+            "headline": "SystemBC Malware Infects 10,000 Devices Post-Takedown",
+            "title": "SystemBC Malware Surges, Infecting 10,000 Devices Despite Takedown",
+            "content": "SystemBC malware has managed to infect 10,000 devices, continuing its operations despite a recent law enforcement takedown attempt. Known for distributing ransomware and other malicious payloads, SystemBC exploits infected machines to proxy traffic, complicating detection and mitigation efforts. The resilience of this malware highlights the adaptability of cybercriminals in evading law enforcement actions. Organizations are urged to enhance their network monitoring and deploy updated security measures to detect and block SystemBC activities. The incident serves as a reminder of the ongoing battle between cybersecurity forces and persistent threat actors.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/systembc-infects-10000-devices-after-defying-law-enforcement-takedown/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Ransomware Response Playbook",
+                    "url": "/guides/ransomware-response-playbook.html",
+                    "icon": "fa-biohazard"
+                }
+            ]
+        },
+        {
+            "date": "Feb 05 2026",
+            "headline": "Windows Driver Flaw Exploited—EDR Tools Disabled",
+            "title": "Attackers Exploit Decade-Old Windows Driver Flaw to Disable EDR",
+            "content": "A recent attack has leveraged a decade-old vulnerability in a legitimate Windows kernel driver to disable endpoint detection and response (EDR) tools during an incident response. This exploitation of an outdated driver, identified during a Huntress investigation, highlights the risks associated with legacy software components. The flaw allows attackers to bypass modern security defenses, posing significant risks to affected systems. Organizations using Windows systems must ensure that all drivers are up-to-date and consider implementing additional security layers to protect against such vulnerabilities. The incident underscores the importance of maintaining robust patch management practices.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4127968/attackers-exploit-decade%e2%80%91old-windows-driver-flaw-to-shut-down-modern-edr-defenses.html",
+            "relatedResources": [
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                },
+                {
+                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
+                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
+                    "icon": "fa-shield-virus"
+                }
+            ]
+        },
+        {
+            "date": "Feb 05 2026",
             "headline": "1.5M AI Agents at Risk—Governance Urgently Needed",
             "title": "Study Reveals Half of AI Agents in US and UK Ungoverned",
             "content": "A recent study by Gravitee highlights a significant risk in AI management, revealing that 1.5 million AI agents in the US and UK are ungoverned and potentially rogue. The study surveyed 750 IT executives and practitioners in December 2025, underscoring the lack of oversight for half of the three million agents currently deployed. This lack of governance could lead to unauthorized actions by AI systems, posing severe operational risks for organizations. The findings suggest a pressing need for improved AI governance frameworks to mitigate potential security threats. Organizations are advised to audit their AI systems and establish comprehensive oversight mechanisms.",
@@ -31,70 +133,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Feb 04 2026",
-            "headline": "NGINX Servers Hijacked—Traffic Redirected by Hackers",
-            "title": "Threat Actors Compromise NGINX Servers to Divert User Traffic",
-            "content": "Hackers have compromised NGINX servers in a campaign designed to hijack and redirect user traffic through malicious backend infrastructure. This attack affects organizations relying on NGINX for web services, potentially exposing users to phishing and malware. The threat actors exploit vulnerabilities in server configurations to gain control and reroute traffic. Organizations using NGINX should immediately review their server security settings and apply necessary patches to protect against this threat. The incident highlights the critical need for regular system audits and robust security measures in web server management.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-compromise-nginx-servers-to-redirect-user-traffic/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 04 2026",
-            "headline": "DragonForce Ransomware—Cartel Model Fuels Cybercrime",
-            "title": "DragonForce Ransomware Gang Adopts Cartel Model for Operations",
-            "content": "Since its emergence in 2023, the DragonForce ransomware gang has adopted a cartel model, fostering cooperation among various ransomware groups. This approach enhances their operational efficiency and expands their reach, posing a significant threat to businesses worldwide. The cartel model allows for resource sharing and coordinated attacks, increasing the complexity and impact of ransomware incidents. Organizations are urged to strengthen their cybersecurity defenses and conduct regular threat assessments to counteract this growing menace. The rise of cartel-style operations marks a concerning trend in the evolution of cybercrime tactics.",
-            "source": "Dark Reading",
-            "sourceUrl": "https://www.darkreading.com/cyber-risk/ransomware-gang-full-godfather-cartel",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Response Playbook",
-                    "url": "/guides/ransomware-response-playbook.html",
-                    "icon": "fa-biohazard"
-                }
-            ]
-        },
-        {
-            "date": "Feb 04 2026",
-            "headline": "React2Shell Exploit Diverts Web Traffic—Security Alert",
-            "title": "React2Shell Vulnerability Exploited to Hijack Web Domains",
-            "content": "Threat actors are exploiting the React2Shell vulnerability in React server components to compromise web domains and divert traffic for malicious purposes. Researchers at Datadog Security Labs identified this exploit, which primarily targets businesses using React frameworks. The vulnerability allows attackers to gain unauthorized access and manipulate web traffic, posing a severe risk to affected organizations. Businesses utilizing React should apply security patches and monitor their systems for unusual activity. This incident underscores the importance of proactive vulnerability management in safeguarding web applications.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4127554/threat-actors-hijack-web-traffic-after-exploiting-react2shell-vulnerability-report.html",
-            "relatedResources": [
-                {
-                    "label": "React Analysis",
-                    "url": "/articles/react2shell-cve-2025-55182-react-vulnerability.html",
-                    "icon": "fa-file-alt"
-                },
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Feb 04 2026",
-            "headline": "CISA Updates KEV Catalog—Ransomware Focus",
-            "title": "CISA Enhances KEV Catalog with New Ransomware Insights",
-            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has quietly updated its Known Exploited Vulnerabilities (KEV) catalog with new ransomware-related entries. Analysis reveals that a third of the newly added Common Vulnerabilities and Exposures (CVEs) affect network edge devices, emphasizing the need for robust perimeter defenses. Researchers suggest that ransomware operators are increasingly targeting these devices, building playbooks around them to facilitate attacks. Organizations should review the KEV catalog updates and prioritize patching vulnerabilities affecting their network infrastructure. Staying informed about CISA&#x27;s updates is essential for maintaining a strong cybersecurity posture.",
-            "source": "Dark Reading",
-            "sourceUrl": "https://www.darkreading.com/threat-intelligence/cisa-hidden-ransomware-updates-kev-catalog",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Ransomware Response Playbook",
-                    "url": "/guides/ransomware-response-playbook.html",
-                    "icon": "fa-biohazard"
-                }
-            ]
-        },
-        {
             "date": "Mar 23 2026",
             "headline": "RSAC 2026 Registration Opens—Secure Your Spot Now",
             "title": "RSA Conference 2026 Registration Opens for Cybersecurity Professionals",
@@ -112,6 +150,98 @@ const websiteContent = {
         }
     ],
     "aiShorts": [
+        {
+            "date": "Feb 05 2026",
+            "headline": "Microsoft Scans Expose LLM Backdoors—Poisoned Models Detected",
+            "title": "Microsoft Develops Method to Identify Sleeper Agent Backdoors in LLMs",
+            "content": "Microsoft researchers have introduced a novel scanning technique to detect sleeper agent backdoors in large language models (LLMs) without prior knowledge of triggers or outcomes. This method addresses a critical supply chain vulnerability in organizations using open-weight LLMs, where unique memory leaks and internal attention patterns can signal compromised models. The technique is particularly relevant for enterprises integrating AI solutions from third-party vendors, as it enhances the security of AI deployments. This development underscores the importance of robust AI model vetting processes to prevent potential exploitation. Organizations should consider incorporating Microsoft&#x27;s scanning method to safeguard their AI systems against hidden threats.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/microsoft-unveils-method-detect-sleeper-agent-backdoors/",
+            "relatedResources": [
+                {
+                    "label": "Third-Party Risk Management",
+                    "url": "/guides/third-party-risk-management.html",
+                    "icon": "fa-handshake"
+                }
+            ]
+        },
+        {
+            "date": "Feb 05 2026",
+            "headline": "AI Fatigue Hits Hollywood—Audience Interest Declines",
+            "title": "Hollywood Faces Audience Decline Due to AI Fatigue in Entertainment",
+            "content": "The entertainment industry is experiencing a downturn in audience engagement with AI-themed content, as viewers show signs of AI fatigue. Over the past year, films and TV shows either featuring AI or created using AI technologies have failed to resonate with audiences. This trend suggests a growing disinterest in AI narratives, which were once novel and intriguing. Industry analysts speculate that the saturation of AI-related content may be contributing to this decline. As Hollywood grapples with this shift, creators may need to explore new storytelling techniques or diversify themes to recapture audience interest.",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/hollywood-is-losing-audiences-to-ai-fatigue/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 05 2026",
+            "headline": "Misunderstood AI Graph—Industry Holds Breath for New Models",
+            "title": "The Most Misunderstood Graph in AI: Industry Awaits New Models",
+            "content": "The release of new large language models by AI giants like OpenAI, Google, and Anthropic often prompts anticipation across the industry, yet one particular graph consistently causes confusion. This graph, frequently misinterpreted, plays a crucial role in understanding the capabilities and limitations of these advanced models. As the AI community eagerly awaits each new iteration, clarity around this graph&#x27;s implications is essential for accurate assessments. Understanding this key visualization helps industry professionals gauge model performance and potential applications. The ongoing challenge is to demystify complex AI metrics for broader comprehension and informed decision-making.",
+            "source": "Artificial intelligence – MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2026/02/05/1132254/this-is-the-most-misunderstood-graph-in-ai/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 05 2026",
+            "headline": "OpenAI&#x27;s $100B Ambition—Consultants Bridge Tech and Enterprise",
+            "title": "OpenAI&#x27;s Enterprise Strategy: AI Consultants Drive $100B Revenue Goal",
+            "content": "OpenAI is aggressively targeting a $100 billion revenue milestone by 2027, bolstered by an expanding team of AI consultants. These consultants are tasked with translating cutting-edge AI technologies into actionable insights for enterprise boardrooms, marking a strategic pivot in OpenAI&#x27;s market approach. This move reflects a broader industry trend where AI firms are increasingly focusing on enterprise solutions to drive growth. By bridging the gap between technical innovation and business needs, OpenAI aims to solidify its leadership in the competitive AI landscape. Enterprises should consider leveraging these consultancy services to enhance their AI integration strategies.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/openai-ai-consultants-enterprise-adoption-challenges/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 04 2026",
+            "headline": "Amazon Tests AI in Film Production—Closed Beta Launches",
+            "title": "Amazon MGM Studios to Test AI Tools for Film and TV Production",
+            "content": "Amazon MGM Studios is set to commence a closed beta program in March to evaluate its AI tools designed for film and TV production. This initiative aims to streamline various production processes, potentially transforming how content is created and managed. By integrating AI, Amazon seeks to enhance efficiency, reduce costs, and foster creativity within its production teams. This move aligns with a growing industry trend of leveraging AI technologies to innovate traditional media workflows. Participants in the beta program will provide valuable feedback to refine these tools before wider implementation.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/04/amazon-to-begin-testing-ai-tools-for-film-and-tv-production-next-month/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 04 2026",
+            "headline": "LLMs Struggle with Context—&#x27;Brownie Recipe Problem&#x27; Explained",
+            "title": "Fine-Grained Context Essential for LLMs in Real-Time Applications",
+            "content": "Today&#x27;s large language models (LLMs) excel in reasoning but often falter when context is crucial, exemplified by the &quot;brownie recipe problem&quot; identified by Instacart CTO Anirban Kundu. In real-time systems like Instacart, LLMs can misinterpret simple requests without detailed context. This limitation highlights the need for more sophisticated context management to improve AI performance in dynamic environments. As businesses increasingly rely on LLMs for customer interactions, understanding and addressing these contextual challenges is vital. Developers should focus on enhancing LLMs&#x27; contextual awareness to ensure accurate and reliable real-time responses.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/the-brownie-recipe-problem-why-llms-must-have-fine-grained-context-to",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Feb 04 2026",
+            "headline": "Altman Critiques Anthropic Ads—Calls Campaign &#x27;Dishonest&#x27;",
+            "title": "Sam Altman Criticizes Anthropic&#x27;s Super Bowl Ads as &#x27;Dishonest&#x27;",
+            "content": "Sam Altman, CEO of OpenAI, publicly criticized Anthropic&#x27;s recent Super Bowl advertising campaign, labeling it &quot;clearly dishonest&quot; in a social media post. The ads, which aimed to promote Anthropic&#x27;s AI capabilities, were described by Altman as emblematic of the company&#x27;s tendency towards &quot;doublespeak.&quot; This exchange highlights the competitive tensions between AI firms as they vie for market dominance. Altman&#x27;s comments suggest a broader industry concern about transparency and authenticity in AI marketing. Industry professionals should remain vigilant about the messaging and claims made by AI companies to ensure informed decision-making.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/news/874084/ai-chatgpt-claude-super-bowl-ads-openai-anthropic",
+            "relatedResources": []
+        },
         {
             "date": "Feb 05 2026",
             "headline": "Sam Altman Slams Rival in Fiery Online Rant",
@@ -139,80 +269,6 @@ const websiteContent = {
                     "label": "LLM Security & Prompt Injection",
                     "url": "/guides/llm-security-prompt-injection.html",
                     "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Feb 04 2026",
-            "headline": "Alphabet Dodges Google-Apple AI Deal Question in Earnings Call",
-            "title": "Alphabet CEO Avoids Discussing Google-Apple AI Partnership Amid Investor Queries",
-            "content": "During Alphabet&#x27;s recent earnings call, CEO Sundar Pichai sidestepped questions regarding a potential AI partnership between Google and Apple. The lack of transparency has raised eyebrows among investors eager for information on strategic collaborations in the AI space. Alphabet&#x27;s reluctance to comment suggests the sensitive nature of such deals, which could significantly impact market positioning and competitive dynamics. As AI technologies become integral to tech giants&#x27; growth strategies, stakeholders are keen to understand how these alliances could shape industry trajectories. Analysts should continue to scrutinize corporate communications for insights into evolving AI partnerships.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/04/alphabet-wont-talk-about-the-google-apple-ai-deal-even-to-investors/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Feb 04 2026",
-            "headline": "Google’s Gemini App Hits 750M Monthly Users—Challenges Rivals",
-            "title": "Google’s Gemini App Achieves 750 Million Monthly Active Users Milestone",
-            "content": "Google has announced that its Gemini app has reached over 750 million monthly active users, marking a significant achievement in its competition with ChatGPT and Meta AI. This growth reflects the app&#x27;s increasing popularity and the effectiveness of Google&#x27;s strategy to capture a larger share of the AI-driven application market. As user engagement climbs, Google positions itself as a formidable player in the AI ecosystem, leveraging its extensive resources and technological expertise. Developers and tech leaders should watch for further advancements in Gemini&#x27;s offerings, as its success could influence trends in AI application development and user engagement strategies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/04/googles-gemini-app-has-surpassed-750m-monthly-active-users/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Feb 04 2026",
-            "headline": "Alphabet Surpasses $400B Revenue Mark—Driven by Cloud and YouTube",
-            "title": "Alphabet Reports Over $400 Billion in Annual Revenue for First Time",
-            "content": "Alphabet, Google&#x27;s parent company, has reported an annual revenue exceeding $400 billion for the first time, as detailed in its Q4 2025 earnings report. This milestone represents a 15 percent year-over-year increase, largely attributed to the robust performance of its cloud services and YouTube platform. The achievement underscores Alphabet&#x27;s strategic focus on diversifying revenue streams and capitalizing on high-growth sectors. As cloud computing and digital media consumption continue to expand, Alphabet&#x27;s financial success highlights the potential for sustained growth in these areas. Industry professionals should consider the implications of Alphabet&#x27;s revenue trends on competitive dynamics and market opportunities.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/news/874161/google-400-billion-revenue-q4-2025-earnings",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Feb 04 2026",
-            "headline": "Gizmo App Revolutionizes with Vibe-Coded Interactive Mini Apps",
-            "title": "Gizmo Introduces TikTok-Style Platform for Interactive Mini Apps",
-            "content": "Gizmo has launched a new app described as a &quot;TikTok for vibe-coded mini apps,&quot; offering users an engaging platform to create and explore interactive experiences. This innovative approach combines the viral nature of TikTok with the functionality of mini applications, allowing for creative expression and user-driven content. Gizmo&#x27;s entry into this space highlights the growing trend of integrating social media dynamics with application development, catering to a younger, tech-savvy audience. Developers and tech entrepreneurs should explore the potential of vibe-coded apps as a means to engage users and foster community-driven content creation.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/04/meet-gizmo-a-tiktok-for-interactive-vibe-coded-mini-apps/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 04 2026",
-            "headline": "Resolve AI Secures $125M Funding—Achieves Unicorn Status",
-            "title": "AI SRE Startup Resolve AI Raises $125 Million, Valued at $1 Billion",
-            "content": "Resolve AI, a startup specializing in AI Site Reliability Engineering (SRE), has secured $125 million in a Series A funding round led by Lightspeed Venture Partners, achieving a unicorn valuation of $1 billion. This funding will enable Resolve AI to expand its operations and enhance its AI-driven solutions for optimizing IT infrastructure reliability. The company&#x27;s rapid growth reflects the increasing demand for AI in automating and improving IT service management. As organizations seek to leverage AI for operational efficiency, Resolve AI&#x27;s success underscores the potential for innovation in the SRE domain. Investors and IT leaders should monitor developments in AI-driven SRE technologies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/04/ai-sre-resolve-ai-confirms-125m-raise-unicorn-valuation/",
-            "relatedResources": [
-                {
-                    "label": "Active Directory Security",
-                    "url": "/guides/active-directory-security-hardening.html",
-                    "icon": "fa-sitemap"
                 }
             ]
         }
