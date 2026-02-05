@@ -4,78 +4,69 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Feb 05 2026",
+            "headline": "1.5M AI Agents at Risk—Governance Urgently Needed",
+            "title": "Study Reveals Half of AI Agents in US and UK Ungoverned",
+            "content": "A recent study by Gravitee highlights a significant risk in AI management, revealing that 1.5 million AI agents in the US and UK are ungoverned and potentially rogue. The study surveyed 750 IT executives and practitioners in December 2025, underscoring the lack of oversight for half of the three million agents currently deployed. This lack of governance could lead to unauthorized actions by AI systems, posing severe operational risks for organizations. The findings suggest a pressing need for improved AI governance frameworks to mitigate potential security threats. Organizations are advised to audit their AI systems and establish comprehensive oversight mechanisms.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4127733/1-5-million-ai-agents-are-at-risk-of-going-rogue.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 05 2026",
+            "headline": "ISC Stormcast Highlights Emerging Cyber Threats",
+            "title": "ISC Stormcast Discusses Latest Cybersecurity Developments and Threats",
+            "content": "The SANS Internet Storm Center&#x27;s latest Stormcast podcast provides an overview of emerging cybersecurity threats and developments. The podcast, dated February 5th, 2026, covers various topics relevant to security professionals, including recent vulnerabilities and threat actor activities. The InfoCON remains at green, indicating a stable threat level, but listeners are encouraged to stay informed about the rapidly evolving cyber landscape. The podcast serves as a valuable resource for IT professionals seeking to enhance their understanding of current security challenges and defense strategies. Regular updates from ISC are crucial for maintaining effective cybersecurity postures.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32684",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 05 2026",
+            "headline": "Sloppy Redaction Exposes Identities in Epstein Files",
+            "title": "AI and LinkedIn Reveal Identities in Poorly Redacted Epstein Files",
+            "content": "The Smashing Security podcast episode #453 discusses how poorly redacted Jeffrey Epstein files have inadvertently revealed identities, thanks to AI and LinkedIn. The episode highlights how even minimal biographical data can be pieced together to identify individuals, leading to reputational damage for those involved. This incident underscores the importance of robust data redaction practices, especially in sensitive documents. Cybersecurity vendors face scrutiny as their tools are implicated in the flawed redaction process. Organizations handling sensitive information should review their data protection and redaction protocols to prevent similar exposures.",
+            "source": "Graham Cluley",
+            "sourceUrl": "https://grahamcluley.com/smashing-security-podcast-453/",
+            "relatedResources": []
+        },
+        {
             "date": "Feb 04 2026",
-            "headline": "Google Looker Vulnerabilities—Full Compromise Risk",
-            "title": "LookOut Flaws in Google Looker Enable Remote Code Execution and Data Theft",
-            "content": "SecurityWeek reports that critical vulnerabilities, collectively dubbed &quot;LookOut,&quot; have been discovered in Google Looker, potentially allowing attackers to execute remote code and exfiltrate data. These flaws could lead to a full compromise of Looker instances, posing significant risks to organizations relying on this data analytics platform. The vulnerabilities highlight the ongoing challenges in securing cloud-based services, especially those handling sensitive data. Organizations using Google Looker are advised to apply patches promptly and review their security configurations to mitigate potential exploitation. This incident underscores the importance of continuous monitoring and timely updates in cloud security strategies.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/vulnerabilities-allowed-full-compromise-of-google-looker-instances/",
+            "headline": "NGINX Servers Hijacked—Traffic Redirected by Hackers",
+            "title": "Threat Actors Compromise NGINX Servers to Divert User Traffic",
+            "content": "Hackers have compromised NGINX servers in a campaign designed to hijack and redirect user traffic through malicious backend infrastructure. This attack affects organizations relying on NGINX for web services, potentially exposing users to phishing and malware. The threat actors exploit vulnerabilities in server configurations to gain control and reroute traffic. Organizations using NGINX should immediately review their server security settings and apply necessary patches to protect against this threat. The incident highlights the critical need for regular system audits and robust security measures in web server management.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-compromise-nginx-servers-to-redirect-user-traffic/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 04 2026",
+            "headline": "DragonForce Ransomware—Cartel Model Fuels Cybercrime",
+            "title": "DragonForce Ransomware Gang Adopts Cartel Model for Operations",
+            "content": "Since its emergence in 2023, the DragonForce ransomware gang has adopted a cartel model, fostering cooperation among various ransomware groups. This approach enhances their operational efficiency and expands their reach, posing a significant threat to businesses worldwide. The cartel model allows for resource sharing and coordinated attacks, increasing the complexity and impact of ransomware incidents. Organizations are urged to strengthen their cybersecurity defenses and conduct regular threat assessments to counteract this growing menace. The rise of cartel-style operations marks a concerning trend in the evolution of cybercrime tactics.",
+            "source": "Dark Reading",
+            "sourceUrl": "https://www.darkreading.com/cyber-risk/ransomware-gang-full-godfather-cartel",
             "relatedResources": [
                 {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Cloud Security Hardening",
-                    "url": "/guides/cloud-security-hardening.html",
-                    "icon": "fa-cloud"
+                    "label": "Ransomware Response Playbook",
+                    "url": "/guides/ransomware-response-playbook.html",
+                    "icon": "fa-biohazard"
                 }
             ]
         },
         {
             "date": "Feb 04 2026",
-            "headline": "Dark Reading Launches Latin America Section",
-            "title": "Dark Reading Expands with New Latin America-Focused Content Section",
-            "content": "Dark Reading has announced the launch of &quot;DR Global: Latin America,&quot; a new content section tailored for Latin American audiences. This initiative aims to provide region-specific cybersecurity news, analysis, features, and multimedia content. As cyber threats become increasingly global, understanding regional nuances is crucial for effective cybersecurity strategies. The new section will cover local trends and incidents, offering insights into the unique challenges faced by Latin American security professionals. Readers can expect in-depth reporting and expert commentary to enhance their understanding of the region&#x27;s cybersecurity landscape.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/announcing-dr-global-latin-america",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 04 2026",
-            "headline": "Mexican Data Breach Claims—36M Affected",
-            "title": "Alleged 2.3TB Data Breach in Mexican Government Sparks Controversy",
-            "content": "A hacktivist group alleges a massive 2.3-terabyte data breach affecting 36 million Mexicans, but the Mexican government asserts that no sensitive accounts are compromised. The breach reportedly includes personal information, raising concerns about data privacy and security in governmental systems. This incident highlights the vulnerabilities in national databases and the potential for misinformation in breach claims. Security professionals should remain vigilant and verify breach reports through reliable channels. The government is conducting an investigation to assess the claims and ensure the integrity of its data systems.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/big-breach-or-nada-de-nada-mexican-govt-faces-leak-allegations",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 04 2026",
-            "headline": "Cyberwarfare Escalates—Nation State Threats Surge",
-            "title": "Cyber Insights 2026: Increasing Threats from Nation-State Cyberwarfare",
-            "content": "SecurityWeek&#x27;s &quot;Cyber Insights 2026&quot; report warns of a dramatic rise in cyberwarfare activities by nation-states. The report suggests that while both cyberwar and cyberwarfare are expected to increase, the latter will see a more significant surge. This trend poses a growing threat to global stability and highlights the need for robust cybersecurity measures. Organizations should prepare for potential disruptions and enhance their defenses against state-sponsored attacks, which are becoming more sophisticated and frequent. The report urges stakeholders to remain aware of geopolitical tensions that could escalate into cyber conflicts.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/cyber-insights-2026-cyberwar-and-rising-nation-state-threats/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 04 2026",
-            "headline": "Windows 11 Integrates Sysmon Monitoring",
-            "title": "Microsoft Introduces Native Sysmon Monitoring in Windows 11 Insiders",
-            "content": "Microsoft has begun rolling out native Sysmon functionality to select Windows 11 systems within the Windows Insider program. This integration aims to enhance system monitoring and security by providing detailed logging of system events. Sysmon, or System Monitor, is a critical tool for detecting malicious activity and understanding system behavior. By embedding this functionality natively, Microsoft is improving the security posture of Windows 11, making it easier for security teams to track and analyze potential threats. Users in the Insider program are encouraged to test this feature and provide feedback for further improvements.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-rolls-out-native-windows-11-sysmon-security-monitoring/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 04 2026",
-            "headline": "Varonis Acquires AllTrue.ai for $150M",
-            "title": "Varonis Expands AI Capabilities with AllTrue.ai Acquisition",
-            "content": "Data security firm Varonis has acquired AllTrue.ai, a company specializing in AI trust, risk, and security management, for $150 million. This strategic acquisition aims to bolster Varonis&#x27;s capabilities in managing and securing data through advanced AI technologies. AllTrue.ai&#x27;s expertise in AI-driven security solutions will enhance Varonis&#x27;s offerings, potentially improving data protection for its clients. The acquisition reflects a growing trend of leveraging AI to address complex security challenges and underscores the importance of AI in the future of cybersecurity. Stakeholders should watch for new product integrations and enhancements resulting from this acquisition.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/varonis-acquisition-of-alltrue-ai-valued-at-150-million/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 04 2026",
-            "headline": "Russian Hackers Exploit Office Bug—Operation Neusploit",
-            "title": "Russian Attackers Use New Office Vulnerability in Espionage Campaign",
-            "content": "Security researchers at ZScaler ThreatLabz have identified Russia-linked attackers exploiting a critical Microsoft Office vulnerability just days after its disclosure. The vulnerability is being used in a coordinated espionage and malware campaign known as Operation Neusploit. Despite Microsoft&#x27;s urgent patch release, the rapid exploitation highlights the need for immediate updates and vigilance. Organizations using Microsoft Office products should prioritize patching to mitigate the risk of compromise. This incident underscores the persistent threat posed by nation-state actors and the importance of timely vulnerability management.",
+            "headline": "React2Shell Exploit Diverts Web Traffic—Security Alert",
+            "title": "React2Shell Vulnerability Exploited to Hijack Web Domains",
+            "content": "Threat actors are exploiting the React2Shell vulnerability in React server components to compromise web domains and divert traffic for malicious purposes. Researchers at Datadog Security Labs identified this exploit, which primarily targets businesses using React frameworks. The vulnerability allows attackers to gain unauthorized access and manipulate web traffic, posing a severe risk to affected organizations. Businesses utilizing React should apply security patches and monitor their systems for unusual activity. This incident underscores the importance of proactive vulnerability management in safeguarding web applications.",
             "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4127181/russian-hackers-exploited-a-critical-office-bug-within-days-of-disclosure.html",
+            "sourceUrl": "https://www.csoonline.com/article/4127554/threat-actors-hijack-web-traffic-after-exploiting-react2shell-vulnerability-report.html",
             "relatedResources": [
+                {
+                    "label": "React Analysis",
+                    "url": "/articles/react2shell-cve-2025-55182-react-vulnerability.html",
+                    "icon": "fa-file-alt"
+                },
                 {
                     "label": "CVE Prioritization Guide",
                     "url": "/guides/cve-prioritization-patch-management.html",
@@ -85,12 +76,23 @@ const websiteContent = {
         },
         {
             "date": "Feb 04 2026",
-            "headline": "ISC Stormcast Highlights Emerging Threats—Stay Informed",
-            "title": "SANS Internet Storm Center&#x27;s Latest Podcast Covers Emerging Cyber Threats",
-            "content": "The SANS Internet Storm Center has released its latest Stormcast podcast episode, providing insights into emerging cybersecurity threats. The podcast, a valuable resource for security professionals, discusses recent developments in threat landscapes and offers practical tips for defense. As the InfoCON level remains green, indicating a low threat level, the episode emphasizes the importance of staying vigilant. Security practitioners are encouraged to regularly tune into these updates to keep abreast of potential risks and enhance their organization’s security posture. The podcast serves as a proactive measure in the ongoing battle against cyber threats.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32680",
-            "relatedResources": []
+            "headline": "CISA Updates KEV Catalog—Ransomware Focus",
+            "title": "CISA Enhances KEV Catalog with New Ransomware Insights",
+            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has quietly updated its Known Exploited Vulnerabilities (KEV) catalog with new ransomware-related entries. Analysis reveals that a third of the newly added Common Vulnerabilities and Exposures (CVEs) affect network edge devices, emphasizing the need for robust perimeter defenses. Researchers suggest that ransomware operators are increasingly targeting these devices, building playbooks around them to facilitate attacks. Organizations should review the KEV catalog updates and prioritize patching vulnerabilities affecting their network infrastructure. Staying informed about CISA&#x27;s updates is essential for maintaining a strong cybersecurity posture.",
+            "source": "Dark Reading",
+            "sourceUrl": "https://www.darkreading.com/threat-intelligence/cisa-hidden-ransomware-updates-kev-catalog",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Ransomware Response Playbook",
+                    "url": "/guides/ransomware-response-playbook.html",
+                    "icon": "fa-biohazard"
+                }
+            ]
         },
         {
             "date": "Mar 23 2026",
@@ -111,12 +113,27 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Feb 04 2026",
-            "headline": "Anthropic’s Claude Stays Ad-Free Amid Chatbot Ad Influx",
-            "title": "Anthropic&#x27;s Claude to Remain Ad-Free as OpenAI Introduces Ads in ChatGPT",
-            "content": "Anthropic has announced that its AI chatbot, Claude, will not feature advertisements, differentiating itself from OpenAI&#x27;s ChatGPT, which plans to incorporate ads. This decision is underscored by Anthropic&#x27;s upcoming Super Bowl commercial that humorously critiques competitors for adding ads to their chatbots. The move positions Claude as a user-focused alternative in the competitive chatbot market, where privacy and user experience are increasingly prioritized. By avoiding ads, Anthropic aims to maintain a streamlined interaction for users, contrasting with the monetization strategies of rivals. Users concerned about privacy and distraction-free usage may find Claude an appealing choice.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/873686/anthropic-claude-ai-ad-free-super-bowl-advert-chatgpt",
+            "date": "Feb 05 2026",
+            "headline": "Sam Altman Slams Rival in Fiery Online Rant",
+            "title": "OpenAI CEO Sam Altman Criticizes Claude Ads in Lengthy Online Post",
+            "content": "In a surprising public outburst, OpenAI CEO Sam Altman issued a lengthy, critical post targeting his competitor, Claude, over their Super Bowl advertisements. Altman&#x27;s tirade accused Claude&#x27;s leadership of being &quot;dishonest&quot; and &quot;authoritarian,&quot; sparking widespread discussion in the tech community. The incident highlights the intense competition in the AI sector, where companies vie for dominance in a rapidly evolving market. Altman&#x27;s comments reflect broader tensions as AI firms aggressively market their capabilities to capture consumer and enterprise interest. Professionals in the field should monitor these dynamics, as they could influence AI development and deployment strategies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/04/sam-altman-got-exceptionally-testy-over-claude-super-bowl-ads/",
+            "relatedResources": [
+                {
+                    "label": "API Security Best Practices",
+                    "url": "/guides/api-security-best-practices.html",
+                    "icon": "fa-plug"
+                }
+            ]
+        },
+        {
+            "date": "Feb 05 2026",
+            "headline": "ChatGPT Aids Family in Critical Cancer Treatment Decisions",
+            "title": "Family Uses ChatGPT for Cancer Treatment Guidance Alongside Medical Experts",
+            "content": "A family has shared their experience of using ChatGPT to navigate complex cancer treatment decisions for their son, complementing the expert advice from medical professionals. The AI model provided valuable insights and clarification, helping the family understand medical jargon and explore treatment options. This case underscores the growing role of AI in healthcare, where tools like ChatGPT can offer support in decision-making processes. While AI cannot replace professional medical advice, it can serve as a supplementary resource for patients and families seeking to make informed choices. Healthcare professionals should consider the potential of AI to enhance patient engagement and understanding.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/navigating-health-questions",
             "relatedResources": [
                 {
                     "label": "LLM Security & Prompt Injection",
@@ -127,79 +144,75 @@ const websiteContent = {
         },
         {
             "date": "Feb 04 2026",
-            "headline": "Accel Backs Fibr AI for Dynamic Website Personalization",
-            "title": "Accel Invests in Fibr AI to Transform Static Websites into Personalized Experiences",
-            "content": "Accel has increased its investment in Fibr AI, a company that automates the personalization of websites at an enterprise scale. Fibr AI&#x27;s technology replaces traditional marketing and engineering-heavy approaches by deploying autonomous systems to tailor website experiences on a one-to-one basis. This innovation allows enterprises to dynamically adapt content based on user interactions, enhancing engagement and conversion rates. The shift towards AI-driven personalization reflects a broader trend in digital marketing, where tailored user experiences are essential for competitive advantage. Organizations seeking to optimize digital interfaces may benefit from adopting such AI solutions.",
+            "headline": "Alphabet Dodges Google-Apple AI Deal Question in Earnings Call",
+            "title": "Alphabet CEO Avoids Discussing Google-Apple AI Partnership Amid Investor Queries",
+            "content": "During Alphabet&#x27;s recent earnings call, CEO Sundar Pichai sidestepped questions regarding a potential AI partnership between Google and Apple. The lack of transparency has raised eyebrows among investors eager for information on strategic collaborations in the AI space. Alphabet&#x27;s reluctance to comment suggests the sensitive nature of such deals, which could significantly impact market positioning and competitive dynamics. As AI technologies become integral to tech giants&#x27; growth strategies, stakeholders are keen to understand how these alliances could shape industry trajectories. Analysts should continue to scrutinize corporate communications for insights into evolving AI partnerships.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/04/accel-doubles-down-on-fibr-ai-as-agents-turn-static-websites-into-one-to-one-experiences/",
-            "relatedResources": []
+            "sourceUrl": "https://techcrunch.com/2026/02/04/alphabet-wont-talk-about-the-google-apple-ai-deal-even-to-investors/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
         },
         {
             "date": "Feb 04 2026",
-            "headline": "Sen. Warren Queries Google on Gemini Privacy Risks",
-            "title": "Senator Warren Questions Google on Privacy Implications of Gemini&#x27;s Checkout Feature",
-            "content": "Senator Elizabeth Warren has raised concerns regarding Google’s integration of a checkout feature within its Gemini AI chatbot. In a letter to Google CEO Sundar Pichai, Warren questions how this feature might exploit sensitive user data, potentially compromising privacy. The integration could allow retailers access to detailed consumer behavior data, raising alarms about data security and user consent. This scrutiny comes amid growing legislative interest in AI and data privacy, highlighting the need for transparent data handling practices. Google is urged to clarify how it will safeguard user information within this new functionality.",
+            "headline": "Google’s Gemini App Hits 750M Monthly Users—Challenges Rivals",
+            "title": "Google’s Gemini App Achieves 750 Million Monthly Active Users Milestone",
+            "content": "Google has announced that its Gemini app has reached over 750 million monthly active users, marking a significant achievement in its competition with ChatGPT and Meta AI. This growth reflects the app&#x27;s increasing popularity and the effectiveness of Google&#x27;s strategy to capture a larger share of the AI-driven application market. As user engagement climbs, Google positions itself as a formidable player in the AI ecosystem, leveraging its extensive resources and technological expertise. Developers and tech leaders should watch for further advancements in Gemini&#x27;s offerings, as its success could influence trends in AI application development and user engagement strategies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/04/googles-gemini-app-has-surpassed-750m-monthly-active-users/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Feb 04 2026",
+            "headline": "Alphabet Surpasses $400B Revenue Mark—Driven by Cloud and YouTube",
+            "title": "Alphabet Reports Over $400 Billion in Annual Revenue for First Time",
+            "content": "Alphabet, Google&#x27;s parent company, has reported an annual revenue exceeding $400 billion for the first time, as detailed in its Q4 2025 earnings report. This milestone represents a 15 percent year-over-year increase, largely attributed to the robust performance of its cloud services and YouTube platform. The achievement underscores Alphabet&#x27;s strategic focus on diversifying revenue streams and capitalizing on high-growth sectors. As cloud computing and digital media consumption continue to expand, Alphabet&#x27;s financial success highlights the potential for sustained growth in these areas. Industry professionals should consider the implications of Alphabet&#x27;s revenue trends on competitive dynamics and market opportunities.",
             "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/news/873476/senator-elizabeth-warren-google-gemini-ai-shopping-privacy",
+            "sourceUrl": "https://www.theverge.com/news/874161/google-400-billion-revenue-q4-2025-earnings",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Feb 04 2026",
+            "headline": "Gizmo App Revolutionizes with Vibe-Coded Interactive Mini Apps",
+            "title": "Gizmo Introduces TikTok-Style Platform for Interactive Mini Apps",
+            "content": "Gizmo has launched a new app described as a &quot;TikTok for vibe-coded mini apps,&quot; offering users an engaging platform to create and explore interactive experiences. This innovative approach combines the viral nature of TikTok with the functionality of mini applications, allowing for creative expression and user-driven content. Gizmo&#x27;s entry into this space highlights the growing trend of integrating social media dynamics with application development, catering to a younger, tech-savvy audience. Developers and tech entrepreneurs should explore the potential of vibe-coded apps as a means to engage users and foster community-driven content creation.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/04/meet-gizmo-a-tiktok-for-interactive-vibe-coded-mini-apps/",
             "relatedResources": []
         },
         {
             "date": "Feb 04 2026",
-            "headline": "AI Bots Surge as Key Web Traffic Drivers",
-            "title": "AI Bots Now Account for Significant Portion of Web Traffic",
-            "content": "Recent data reveals that AI bots are increasingly contributing to web traffic, prompting publishers to enhance their digital defenses. This surge in bot activity challenges traditional web analytics and can skew data interpretations, affecting marketing and operational strategies. As AI bots become more prevalent, they pose both opportunities and risks, necessitating robust bot management solutions. Companies are advised to implement advanced detection and mitigation strategies to protect against potential disruptions and ensure accurate web traffic analysis. This trend underscores the evolving landscape of web interactions driven by AI technologies.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/ai-bots-are-now-a-signifigant-source-of-web-traffic/",
+            "headline": "Resolve AI Secures $125M Funding—Achieves Unicorn Status",
+            "title": "AI SRE Startup Resolve AI Raises $125 Million, Valued at $1 Billion",
+            "content": "Resolve AI, a startup specializing in AI Site Reliability Engineering (SRE), has secured $125 million in a Series A funding round led by Lightspeed Venture Partners, achieving a unicorn valuation of $1 billion. This funding will enable Resolve AI to expand its operations and enhance its AI-driven solutions for optimizing IT infrastructure reliability. The company&#x27;s rapid growth reflects the increasing demand for AI in automating and improving IT service management. As organizations seek to leverage AI for operational efficiency, Resolve AI&#x27;s success underscores the potential for innovation in the SRE domain. Investors and IT leaders should monitor developments in AI-driven SRE technologies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/04/ai-sre-resolve-ai-confirms-125m-raise-unicorn-valuation/",
             "relatedResources": [
                 {
-                    "label": "SIEM & Log Analysis Guide",
-                    "url": "/guides/siem-log-analysis.html",
-                    "icon": "fa-chart-bar"
-                }
-            ]
-        },
-        {
-            "date": "Feb 04 2026",
-            "headline": "Rackspace Tackles AI Operational Challenges in New Insights",
-            "title": "Rackspace Highlights AI Operational Challenges in Recent Blog Insights",
-            "content": "Rackspace has published insights addressing common operational challenges in AI deployment, such as data management, governance, and cost efficiency. The blog discusses bottlenecks like messy data and unclear ownership, which can hinder AI integration into production environments. By framing these issues through the lens of service delivery and security operations, Rackspace offers practical solutions for optimizing cloud-based AI models. This resource serves as a valuable guide for organizations seeking to streamline AI operations and enhance model performance. Companies are encouraged to address these bottlenecks to fully leverage AI capabilities.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/combing-the-rackspace-blogfiles-for-operational-ai-pointers/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 04 2026",
-            "headline": "HHS Develops AI for Vaccine Injury Hypothesis Amid Criticism",
-            "title": "HHS Creates AI Tool to Analyze Vaccine Injury Claims, Raising Concerns",
-            "content": "The U.S. Department of Health and Human Services (HHS), under Robert F. Kennedy Jr., is developing an AI tool to generate hypotheses about vaccine injury claims. Critics are concerned that this tool could be used to support Kennedy&#x27;s controversial anti-vaccine stance, potentially influencing public health narratives. The AI aims to analyze patterns in injury claims, but experts warn of biases that could skew results and affect policy decisions. This development highlights the intersection of AI, public health, and policy, emphasizing the need for transparent methodologies and impartial analysis.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/hhs-is-making-an-ai-tool-to-create-hypotheses-about-vaccine-injury-claims/",
-            "relatedResources": [
-                {
-                    "label": "SIEM & Log Analysis Guide",
-                    "url": "/guides/siem-log-analysis.html",
-                    "icon": "fa-chart-bar"
-                }
-            ]
-        },
-        {
-            "date": "Feb 04 2026",
-            "headline": "Cisco Enhances AI Operations for Global IT Solutions",
-            "title": "Cisco Advances AI Integration Across IT Operations and Customer Solutions",
-            "content": "Cisco is leveraging AI to enhance its internal operations and the solutions it provides to global customers. The company&#x27;s AI initiatives span various components of the IT stack, including network management, security, and data analytics. By integrating AI, Cisco aims to improve efficiency, reduce operational costs, and deliver smarter solutions to clients. This strategy positions Cisco as a leader in the AI-driven transformation of IT services, reflecting broader industry trends towards automation and intelligent systems. Organizations seeking to modernize their IT infrastructure may look to Cisco&#x27;s advancements as a model for innovation.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/how-cisco-builds-smart-systems-for-the-ai-era/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
+                    "label": "Active Directory Security",
+                    "url": "/guides/active-directory-security-hardening.html",
+                    "icon": "fa-sitemap"
                 }
             ]
         }
@@ -265,17 +278,6 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
-        {
-            "cveId": "CVE-2026-1281",
-            "dateAdded": "Jan 29, 2026",
-            "vendor": "Ivanti Endpoint Manager Mobile (EPMM)",
-            "description": "Ivanti Endpoint Manager Mobile (EPMM) contains a code injection vulnerability that could allow attackers to achieve unauthenticated remote code execution.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-1281",
-            "isZeroDay": false
-        },
         {
             "cveId": "CVE-2021-39935",
             "dateAdded": "Feb 03, 2026",
