@@ -1,7 +1,9 @@
 {
   "hashes": [
     "9c6bfce9999e",
-    "9b4f2d4a07f3"
+    "9b4f2d4a07f3",
+    "26a7742fd884",
+    "8ca47e0192da"
   ],
   "articles": [
     {
@@ -13,6 +15,16 @@
       "title": "CISA Adds Actively Exploited SolarWinds Web Help Desk RCE to KEV Catalog",
       "date": "2026-02-05",
       "hash": "9b4f2d4a07f3"
+    },
+    {
+      "title": "Critical n8n flaws disclosed along with public exploits",
+      "date": "2026-02-05",
+      "hash": "26a7742fd884"
+    },
+    {
+      "title": "CISA: VMware ESXi flaw now exploited in ransomware attacks",
+      "date": "2026-02-05",
+      "hash": "8ca47e0192da"
     }
   ]
 }

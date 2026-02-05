@@ -1,6 +1,38 @@
 {
   "articles": [
     {
+      "id": "article-critical-n8n-flaws-disclosed-along-with-public-exploits",
+      "title": "Critical n8n flaws disclosed along with public exploits",
+      "date": "February 05, 2026",
+      "category": "Security News",
+      "badge": "CRITICAL",
+      "excerpt": "Multiple critical vulnerabilities in the popular n8n open-source workflow automation platform allow escaping the confines of the environment and taking complete control of the host server. [...]...",
+      "image": "images/articles/auto-generated-news.png",
+      "tags": [
+        "Security News",
+        "BleepingComputer",
+        "Auto-Generated"
+      ],
+      "author": "TheHGTech Bot",
+      "externalUrl": "articles/critical-n8n-flaws-disclosed-along-with-public-exploits.html"
+    },
+    {
+      "id": "article-cisa-vmware-esxi-flaw-now-exploited-in-ransomware-attacks",
+      "title": "CISA: VMware ESXi flaw now exploited in ransomware attacks",
+      "date": "February 05, 2026",
+      "category": "Zero-Day Vulnerability",
+      "badge": "ZERO-DAY",
+      "excerpt": "CISA confirmed on Wednesday that ransomware gangs have begun exploiting a high-severity VMware ESXi sandbox escape vulnerability that was previously used in zero-day attacks. [...]...",
+      "image": "images/articles/auto-generated-news.png",
+      "tags": [
+        "Zero-Day Vulnerability",
+        "BleepingComputer",
+        "Auto-Generated"
+      ],
+      "author": "TheHGTech Bot",
+      "externalUrl": "articles/cisa-vmware-esxi-flaw-now-exploited-in-ransomware-attacks.html"
+    },
+    {
       "id": "article-new-amaranth-dragon-cyberespionage-group-exploits-winrar-flaw",
       "title": "New Amaranth Dragon cyberespionage group exploits WinRAR flaw",
       "date": "February 05, 2026",
