@@ -1,0 +1,594 @@
+/* ==============================================================
+   QUICK WINS UX IMPROVEMENTS
+   Created: Feb 4, 2026
+   These CSS improvements address 5 key UX issues:
+   1. Make content cards fully clickable
+   2. Reduce hero section heights on mobile
+   3. Improve clickable area for cards
+   4. Add view count styling
+   5. Improve card hover states
+   ============================================================== */
+
+/* ==============================================================
+   1. MAKE CONTENT CARDS FULLY CLICKABLE
+   Ensures entire card area is clickable, not just the button
+   ============================================================== */
+
+/* Article cards - make entire card clickable */
+.article-card-link {
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+    border-radius: 16px;
+    outline-offset: 4px;
+}
+
+.article-card-link:hover .article-card {
+    transform: translateY(-6px);
+    border-color: rgba(255, 61, 61, 0.4);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 30px rgba(255, 61, 61, 0.1);
+}
+
+.article-card-link:focus-visible {
+    outline: 2px solid var(--accent-primary, #FF3D3D);
+}
+
+/* Guide cards - make entire card clickable */
+.guide-card-link {
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 16px;
+    outline-offset: 4px;
+}
+
+.guide-card-link:hover .guide-card {
+    transform: translateY(-6px);
+    border-color: rgba(0, 217, 255, 0.4);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 217, 255, 0.1);
+}
+
+.guide-card-link:focus-visible {
+    outline: 2px solid var(--accent-cyan, #00D9FF);
+}
+
+/* Featured cards - ensure clickable */
+.featured-card {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.featured-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* Comparison cards - ensure clickable */
+.comparison-card-link {
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 24px;
+    outline-offset: 4px;
+}
+
+.comparison-card-link:focus-visible {
+    outline: 2px solid var(--accent-secondary, #A855F7);
+}
+
+
+/* ==============================================================
+   2. REDUCE HERO SECTION HEIGHTS ON MOBILE (30-40%)
+   Brings content above the fold faster
+   ============================================================== */
+
+@media (max-width: 768px) {
+
+    /* Articles hero - reduce by 35% */
+    .articles-hero {
+        padding: 5rem 1.5rem 3rem !important;
+    }
+
+    .articles-hero .hero-title {
+        font-size: 2rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .articles-hero .hero-subtitle {
+        font-size: 0.95rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    .articles-hero .hero-stats {
+        gap: 0.75rem !important;
+    }
+
+    .articles-hero .hero-stat {
+        padding: 0.85rem 1rem !important;
+    }
+
+    .articles-hero .hero-stat-value {
+        font-size: 1.75rem !important;
+    }
+
+    /* Guides hero - reduce by 35% */
+    .guides-hero {
+        padding: 5rem 1.5rem 3rem !important;
+    }
+
+    .guides-hero .hero-title {
+        font-size: 2rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .guides-hero .hero-subtitle {
+        font-size: 0.95rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    .guides-hero .hero-stats {
+        gap: 0.75rem !important;
+    }
+
+    .guides-hero .hero-stat {
+        padding: 0.85rem 1rem !important;
+    }
+
+    /* Threat Intel hero - reduce by 35% */
+    .ti-hero {
+        padding: 80px 1.5rem 50px !important;
+    }
+
+    .ti-hero h1 {
+        font-size: 2rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .ti-hero p {
+        font-size: 0.9rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .ti-badge {
+        padding: 0.4rem 1rem !important;
+        font-size: 0.75rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    /* CVE hero is already optimized in cve-tracker.html */
+
+    /* Featured section - reduce margin to bring content up */
+    .featured-section {
+        margin-top: -2rem !important;
+        margin-bottom: 2rem !important;
+    }
+
+    .featured-card {
+        grid-template-columns: 1fr !important;
+        border-radius: 16px !important;
+    }
+
+    .featured-content {
+        padding: 1.5rem !important;
+    }
+
+    .featured-title {
+        font-size: 1.25rem !important;
+    }
+
+    .featured-excerpt {
+        font-size: 0.9rem !important;
+        margin-bottom: 1rem !important;
+        -webkit-line-clamp: 2 !important;
+        line-clamp: 2 !important;
+    }
+
+    .featured-meta {
+        gap: 1rem !important;
+        font-size: 0.75rem !important;
+    }
+
+    /* Reduce hero particles visibility on mobile for performance */
+    .hero-particles {
+        opacity: 0.3 !important;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+
+    .articles-hero,
+    .guides-hero {
+        padding: 4.5rem 1rem 2.5rem !important;
+    }
+
+    .articles-hero .hero-title,
+    .guides-hero .hero-title {
+        font-size: 1.75rem !important;
+    }
+
+    .ti-hero {
+        padding: 70px 1rem 40px !important;
+    }
+
+    .ti-hero h1 {
+        font-size: 1.75rem !important;
+    }
+}
+
+
+/* ==============================================================
+   3. VIEW COUNT / ENGAGEMENT METRICS STYLING
+   Adds visual styling for view counts on cards
+   ============================================================== */
+
+.card-view-count {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.75rem;
+    color: var(--text-muted, #6b7084);
+}
+
+.card-view-count i {
+    font-size: 0.65rem;
+    color: var(--accent-secondary, #00D9FF);
+    opacity: 0.7;
+}
+
+/* Popular indicator badge */
+.popularity-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.25rem 0.6rem;
+    background: linear-gradient(135deg, rgba(249, 115, 22, 0.15), rgba(249, 115, 22, 0.05));
+    border: 1px solid rgba(249, 115, 22, 0.3);
+    border-radius: 100px;
+    font-size: 0.6rem;
+    font-weight: 700;
+    color: #F97316;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.popularity-badge i {
+    font-size: 0.55rem;
+}
+
+/* Trending badge */
+.trending-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.25rem 0.6rem;
+    background: linear-gradient(135deg, rgba(168, 85, 247, 0.15), rgba(168, 85, 247, 0.05));
+    border: 1px solid rgba(168, 85, 247, 0.3);
+    border-radius: 100px;
+    font-size: 0.6rem;
+    font-weight: 700;
+    color: #A855F7;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    animation: trendingPulse 2s ease-in-out infinite;
+}
+
+@keyframes trendingPulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+}
+
+
+/* ==============================================================
+   4. MOST POPULAR SECTION STYLING
+   Styling for popular content sections on articles/guides
+   ============================================================== */
+
+.most-popular-section {
+    max-width: 1400px;
+    margin: 0 auto 3rem;
+    padding: 0 2rem;
+}
+
+.most-popular-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.most-popular-title {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary, #fff);
+}
+
+.most-popular-title i {
+    color: #F97316;
+}
+
+.most-popular-subtitle {
+    font-size: 0.85rem;
+    color: var(--text-muted, #6b7084);
+}
+
+.most-popular-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.popular-card {
+    display: flex;
+    gap: 1rem;
+    padding: 1.25rem;
+    background: linear-gradient(145deg, rgba(15, 15, 24, 0.9), rgba(8, 8, 16, 0.95));
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.popular-card:hover {
+    border-color: rgba(249, 115, 22, 0.4);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.popular-rank {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(135deg, #F97316, #EA580C);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #fff;
+    flex-shrink: 0;
+}
+
+.popular-card:nth-child(1) .popular-rank {
+    background: linear-gradient(135deg, #F59E0B, #D97706);
+}
+
+.popular-card:nth-child(2) .popular-rank {
+    background: linear-gradient(135deg, #94A3B8, #64748B);
+}
+
+.popular-card:nth-child(3) .popular-rank {
+    background: linear-gradient(135deg, #CD7F32, #A0522D);
+}
+
+.popular-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.popular-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary, #fff);
+    margin-bottom: 0.35rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.popular-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.75rem;
+    color: var(--text-muted, #6b7084);
+}
+
+.popular-views {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.popular-views i {
+    color: #F97316;
+}
+
+/* Light mode */
+body.light-mode .most-popular-title {
+    color: #1a1a1a;
+}
+
+body.light-mode .popular-card {
+    background: #fff;
+    border-color: rgba(0, 0, 0, 0.08);
+}
+
+body.light-mode .popular-card:hover {
+    border-color: rgba(249, 115, 22, 0.4);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .popular-title {
+    color: #1a1a1a;
+}
+
+
+/* ==============================================================
+   5. IMPROVED CARD GRID DENSITY 
+   Slightly smaller cards for better content density
+   ============================================================== */
+
+@media (min-width: 769px) {
+
+    .articles-grid,
+    .guides-grid {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 2rem;
+    }
+
+    .card-content {
+        padding: 1.5rem;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .card-excerpt {
+        font-size: 0.85rem;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+    }
+}
+
+
+/* ==============================================================
+   6. LIVE THREAT FEED STYLING
+   For the threat intel "latest threats" feed
+   ============================================================== */
+
+.live-threat-feed {
+    background: linear-gradient(145deg, rgba(15, 15, 24, 0.95), rgba(8, 8, 16, 0.98));
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.live-feed-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.live-feed-title {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary, #fff);
+}
+
+.live-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.25rem 0.75rem;
+    background: rgba(34, 197, 94, 0.15);
+    border: 1px solid rgba(34, 197, 94, 0.4);
+    border-radius: 100px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: #22C55E;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.live-indicator::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: #22C55E;
+    border-radius: 50%;
+    animation: livePulse 2s ease-in-out infinite;
+}
+
+@keyframes livePulse {
+
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: scale(1.2);
+    }
+}
+
+.live-feed-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.live-feed-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    font-size: 0.85rem;
+    transition: background 0.2s ease;
+}
+
+.live-feed-item:hover {
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.feed-type-badge {
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    flex-shrink: 0;
+}
+
+.feed-type-badge.malware {
+    background: rgba(255, 61, 61, 0.15);
+    color: #FF3D3D;
+}
+
+.feed-type-badge.phishing {
+    background: rgba(249, 115, 22, 0.15);
+    color: #F97316;
+}
+
+.feed-type-badge.ip {
+    background: rgba(0, 217, 255, 0.15);
+    color: #00D9FF;
+}
+
+.feed-time {
+    font-size: 0.7rem;
+    color: var(--text-muted, #6b7084);
+    margin-left: auto;
+    flex-shrink: 0;
+}
+
+/* Light mode for threat feed */
+body.light-mode .live-threat-feed {
+    background: #fff;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .live-feed-item {
+    background: rgba(0, 0, 0, 0.03);
+}
+
+body.light-mode .live-feed-item:hover {
+    background: rgba(0, 0, 0, 0.06);
+}

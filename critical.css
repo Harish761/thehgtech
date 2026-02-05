@@ -1,0 +1,306 @@
+/**
+ * Critical CSS for Above-the-Fold Content
+ * ========================================
+ * This file contains only the critical CSS needed for initial page render.
+ * It should be inlined in the <head> or loaded with high priority.
+ * Non-critical CSS should be loaded async.
+ */
+
+/* Reset & Core */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #0a0a0a;
+    color: #fff;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Design Tokens */
+:root {
+    --bg-primary: #0a0a0a;
+    --bg-secondary: #111;
+    --text-primary: #fff;
+    --text-secondary: #b0b0b0;
+    --text-muted: #666;
+    --accent: #FF3D3D;
+    --accent-cyan: #00D9FF;
+    --border: rgba(255, 255, 255, 0.1);
+}
+
+/* Header (above-the-fold) */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+/* Hero Section */
+.hero {
+    padding: 5rem 1rem 3rem;
+    text-align: center;
+    background: linear-gradient(180deg, #0a0a0a 0%, #111 100%);
+}
+
+.hero h1 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 800;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #fff 0%, #FF3D3D 50%, #00D9FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+/* Mobile Header */
+.m-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 56px;
+    background: #000;
+    border-bottom: 1px solid var(--border);
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+}
+
+/* Mobile Bottom Nav */
+.m-bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 64px;
+    background: #1c1c1e;
+    border-top: 1px solid var(--border);
+    z-index: 1000;
+    display: none;
+    align-items: stretch;
+    justify-content: space-around;
+    padding-bottom: env(safe-area-inset-bottom, 0);
+}
+
+.m-bottom-nav__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 8px 4px;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-size: 0.65rem;
+}
+
+.m-bottom-nav__item i {
+    font-size: 1.25rem;
+    margin-bottom: 4px;
+}
+
+.m-bottom-nav__item.active {
+    color: var(--accent-cyan);
+}
+
+/* Mobile Only Styles */
+@media (max-width: 768px) {
+
+    .m-header,
+    .m-bottom-nav {
+        display: flex;
+    }
+
+    .header {
+        display: none !important;
+    }
+
+    body {
+        padding-top: 56px;
+        padding-bottom: 80px;
+    }
+
+    .hero {
+        padding: 3rem 1rem 2rem;
+    }
+
+    .hero h1 {
+        font-size: 1.75rem;
+    }
+}
+
+/* FOUC Prevention */
+.nav-dropdown-panel {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.m-only {
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+    .m-only {
+        display: flex !important;
+    }
+
+    .desktop-only {
+        display: none !important;
+    }
+}
+
+/* Content Layout */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.section {
+    padding: 4rem 0;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.grid-2 {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-3 {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* Cards (above the fold) */
+.card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.card:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+}
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.btn-primary {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #fff;
+    border: 1px solid var(--border);
+}
+
+/* Statistics (often above fold) */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-value {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--accent-cyan);
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+/* CLS Prevention - Reserve space */
+.news-stack-container {
+    min-height: 400px;
+    contain: layout style;
+}
+
+.mobile-news-card {
+    min-height: 350px;
+}
+
+.faq-section {
+    min-height: 200px;
+    contain: layout style;
+}
+
+.search-modal {
+    min-height: 300px;
+    contain: layout style;
+}
+
+/* Light Mode */
+.light-mode body {
+    background: #fff;
+    color: #1a1a1a;
+}
+
+.light-mode .header,
+.light-mode .m-header {
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.light-mode .m-bottom-nav {
+    background: #f5f5f5;
+}
+
+.light-mode .card {
+    background: #fff;
+    border-color: #e0e0e0;
+}

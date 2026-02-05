@@ -9,21 +9,236 @@
     <link>https://thehgtech.com</link>
     <atom:link href="https://thehgtech.com/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Dec 2025 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 04 Feb 2026 00:00:00 GMT</lastBuildDate>
     <ttl>60</ttl>
     <image>
       <url>https://thehgtech.com/logo-dark.png</url>
       <title>TheHGTech</title>
       <link>https://thehgtech.com</link>
     </image>
-    <copyright>Copyright 2025 TheHGTech. All rights reserved.</copyright>
+    <copyright>Copyright 2026 TheHGTech. All rights reserved.</copyright>
     <managingEditor>harish@thehgtech.com (TheHGTech)</managingEditor>
     <webMaster>harish@thehgtech.com (TheHGTech)</webMaster>
     <category>Technology</category>
     <category>Cybersecurity</category>
     <category>Threat Intelligence</category>
 
-    <!-- ========== SECURITY GUIDES (December 2025) ========== -->
+    <!-- ========== SECURITY ARTICLES (February 2026) ========== -->
+
+    <item>
+      <title>Notepad++ Hijacked: APT31 Deploys Chrysalis Backdoor via 6-Month Supply Chain Attack</title>
+      <link>https://thehgtech.com/articles/notepad-supply-chain-apt31-2026.html</link>
+      <description>Chinese state-sponsored hackers APT31 compromised Notepad++'s WinGUp update mechanism for 6 months, deploying the previously undocumented 'Chrysalis' backdoor to telecom and financial targets in East Asia.</description>
+      <pubDate>Mon, 03 Feb 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://thehgtech.com/articles/notepad-supply-chain-apt31-2026.html</guid>
+      <dc:creator>TheHGTech Security Team</dc:creator>
+      <category>APT</category>
+      <category>Supply Chain</category>
+      <category>APT31</category>
+    </item>
+
+    <item>
+      <title>PureRAT: Vietnamese Threat Actor Deploys AI-Generated Malware in Phishing Campaign</title>
+      <link>https://thehgtech.com/articles/purerat-ai-malware-vietnam-2026.html</link>
+      <description>Vietnamese hackers leverage AI to develop malware components in ongoing PureRAT campaign. First documented case showing clear AI-generation markers including emojis and numbered steps in attack scripts.</description>
+      <pubDate>Mon, 03 Feb 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://thehgtech.com/articles/purerat-ai-malware-vietnam-2026.html</guid>
+      <dc:creator>TheHGTech Security Team</dc:creator>
+      <category>AI Malware</category>
+      <category>Phishing</category>
+      <category>Vietnam</category>
+    </item>
+
+    <item>
+      <title>GlassWorm Returns: Open VSX Extensions Compromised in Second Wave Supply Chain Attack</title>
+      <link>https://thehgtech.com/articles/glassworm-openvsx-supply-chain-2026.html</link>
+      <description>Self-propagating GlassWorm malware strikes again, compromising 4 established Open VSX extensions via credential theft. New variant targets macOS developers, uses Solana blockchain for C2.</description>
+      <pubDate>Mon, 03 Feb 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://thehgtech.com/articles/glassworm-openvsx-supply-chain-2026.html</guid>
+      <dc:creator>TheHGTech Security Team</dc:creator>
+      <category>Supply Chain</category>
+      <category>VS Code</category>
+      <category>macOS</category>
+    </item>
+
+    <item>
+      <title>Ivanti EPMM Zero-Days CVE-2026-1281: Critical RCE Exploited in Wild</title>
+      <link>https://thehgtech.com/articles/ivanti-epmm-zeroday-cve-2026-1281.html</link>
+      <description>Active exploitation of two new Ivanti EPMM zero-days (CVE-2026-1281 &amp; 1340) allows authentication bypass and RCE. CISA mandates federal patching by Feb 1.</description>
+      <pubDate>Sat, 01 Feb 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://thehgtech.com/articles/ivanti-epmm-zeroday-cve-2026-1281.html</guid>
+      <dc:creator>TheHGTech Security Team</dc:creator>
+      <category>Zero-Day</category>
+      <category>Ivanti</category>
+      <category>CISA KEV</category>
+    </item>
+
+    <item>
+      <title>Nike Data Breach: 1.4TB of Internal Designs &amp; Employee Data Stolen</title>
+      <link>https://thehgtech.com/articles/nike-data-breach-1tb-stolen-2026.html</link>
+      <description>Hackers claim theft of 1.4TB from Nike's internal network, including futuristic product designs and employee PII, via third-party vendor compromise.</description>
+      <pubDate>Fri, 31 Jan 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://thehgtech.com/articles/nike-data-breach-1tb-stolen-2026.html</guid>
+      <dc:creator>TheHGTech Security Team</dc:creator>
+      <category>Data Breach</category>
+      <category>Supply Chain</category>
+    </item>
+
+    <item>
+      <title>Malicious VS Code Extensions Steal Source Code: 'MaliciousCorgi' Campaign</title>
+      <link>https://thehgtech.com/articles/vscode-malicious-extensions-supply-chain-2026.html</link>
+      <description>Thousands of developers compromised by fake AI coding extensions in VS Code Marketplace. 'MaliciousCorgi' campaign steals source code and AWS keys.</description>
+      <pubDate>Thu, 30 Jan 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://thehgtech.com/articles/vscode-malicious-extensions-supply-chain-2026.html</guid>
+      <dc:creator>TheHGTech Security Team</dc:creator>
+      <category>Supply Chain</category>
+      <category>Developer Security</category>
+      <category>VS Code</category>
+    </item>
+
+    <item>
+      <title>Microsoft Teams Phishing: Hackers Exploit Guest Feature for Credential Theft</title>
+      <link>https://thehgtech.com/articles/microsoft-teams-phishing-guest-exploit-2026.html</link>
+      <description>Sophisticated phishing campaign abuses Microsoft Teams' 'Invite a Guest' feature to bypass email security and steal enterprise credentials.</description>
+      <pubDate>Tue, 28 Jan 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://thehgtech.com/articles/microsoft-teams-phishing-guest-exploit-2026.html</guid>
+      <dc:creator>TheHGTech Security Team</dc:creator>
+      <category>Phishing</category>
+      <category>Microsoft Teams</category>
+    </item>
+
+    <item>
+      <title>Microsoft Office Zero-Day CVE-2026-21509 Actively Exploited - Emergency Patch Released</title>
+      <link>https://thehgtech.com/articles/ms-office-zero-day-cve-2026-21509.html</link>
+      <description>Microsoft releases emergency out-of-band patch for CVE-2026-21509, an actively exploited OLE security bypass affecting all Office versions. CISA mandates patch by Feb 16.</description>
+      <pubDate>Tue, 28 Jan 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://thehgtech.com/articles/ms-office-zero-day-cve-2026-21509.html</guid>
+      <dc:creator>TheHGTech Security Team</dc:creator>
+      <category>Zero-Day</category>
+      <category>Microsoft Office</category>
+      <category>CISA KEV</category>
+    </item>
+
+    <item>
+      <title>Infostealer Malware: Why Your MFA Is Already Compromised</title>
+      <link>https://thehgtech.com/articles/infostealer-mfa-bypass-2026.html</link>
+      <description>Infostealers don't steal your credentials—they steal your authenticated session. Analysis of why Lumma, RedLine, and Vidar render MFA completely useless.</description>
+      <pubDate>Mon, 27 Jan 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://thehgtech.com/articles/infostealer-mfa-bypass-2026.html</guid>
+      <dc:creator>Harish G</dc:creator>
+      <category>Malware Analysis</category>
+      <category>MFA Bypass</category>
+      <category>Infostealer</category>
+    </item>
+
+    <item>
+      <title>OAuth Worms: The Silent SaaS-to-SaaS Attack Vector Nobody's Watching</title>
+      <link>https://thehgtech.com/articles/oauth-worms-saas-attack-2026.html</link>
+      <description>OAuth worms spread across M365, Google Workspace, Slack, and Salesforce using consent-based propagation. The 2026 threat nobody's prepared for.</description>
+      <pubDate>Mon, 27 Jan 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://thehgtech.com/articles/oauth-worms-saas-attack-2026.html</guid>
+      <dc:creator>Harish G</dc:creator>
+      <category>Cloud Security</category>
+      <category>OAuth</category>
+      <category>SaaS</category>
+    </item>
+
+    <item>
+      <title>Prompt Injection Goes Physical: Hacking Self-Driving Cars and Drones with Text</title>
+      <link>https://thehgtech.com/articles/prompt-injection-physical-ai-2026.html</link>
+      <description>UC Santa Cruz reveals CHAI attacks: text placed in the physical environment can hijack autonomous vehicles and drones. Environmental indirect prompt injection explained.</description>
+      <pubDate>Mon, 27 Jan 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://thehgtech.com/articles/prompt-injection-physical-ai-2026.html</guid>
+      <dc:creator>Harish G</dc:creator>
+      <category>AI Security</category>
+      <category>Prompt Injection</category>
+      <category>Autonomous Vehicles</category>
+    </item>
+
+    <item>
+      <title>ShinyHunters Voice Phishing: How Hackers Are Bypassing MFA in Real-Time</title>
+      <link>https://thehgtech.com/articles/shinyhunters-vishing-mfa-bypass-2026.html</link>
+      <description>ShinyHunters' vishing campaign targeting 100+ enterprises with real-time MFA bypass. Technical analysis of how they hijack Okta, Microsoft, and Google SSO sessions.</description>
+      <pubDate>Mon, 27 Jan 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://thehgtech.com/articles/shinyhunters-vishing-mfa-bypass-2026.html</guid>
+      <dc:creator>Harish G</dc:creator>
+      <category>Threat Intel</category>
+      <category>Vishing</category>
+      <category>ShinyHunters</category>
+    </item>
+
+    <item>
+      <title>Luxshare Ransomware Attack: Apple Vision Pro CAD Designs and Secret Product Data Stolen</title>
+      <link>https://thehgtech.com/articles/luxshare-apple-breach-2025.html</link>
+      <description>RansomHub claims breach of Apple supplier Luxshare. Over 1TB of confidential data stolen including 3D CAD designs for Vision Pro, iPhone, AirPods, and unreleased products.</description>
+      <pubDate>Wed, 22 Jan 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://thehgtech.com/articles/luxshare-apple-breach-2025.html</guid>
+      <dc:creator>Harish G</dc:creator>
+      <category>Supply Chain</category>
+      <category>Ransomware</category>
+      <category>Apple</category>
+    </item>
+
+    <item>
+      <title>DragonForce: The New Ransomware Cartel Built on LockBit and Conti DNA</title>
+      <link>https://thehgtech.com/articles/dragonforce-ransomware-cartel-2026.html</link>
+      <description>From hacktivists to criminal cartel. DragonForce combines LockBit 3.0 and Conti code into a powerful RaaS platform targeting UK retailers and global supply chains.</description>
+      <pubDate>Mon, 20 Jan 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://thehgtech.com/articles/dragonforce-ransomware-cartel-2026.html</guid>
+      <dc:creator>Harish G</dc:creator>
+      <category>Ransomware</category>
+      <category>DragonForce</category>
+      <category>Threat Actor</category>
+    </item>
+
+    <item>
+      <title>AI Agents Will Be the Primary Attack Vector in 2026: A Deep Security Analysis</title>
+      <link>https://thehgtech.com/articles/ai-agents-attack-vectors-2026.html</link>
+      <description>With 91,000+ attack sessions targeting AI infrastructure in just three months, AI agents are becoming the primary attack vector. Technical analysis of threats, real incidents, and defense strategies.</description>
+      <pubDate>Mon, 20 Jan 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://thehgtech.com/articles/ai-agents-attack-vectors-2026.html</guid>
+      <dc:creator>Harish G</dc:creator>
+      <category>AI Security</category>
+      <category>AI Agents</category>
+      <category>Deep Analysis</category>
+    </item>
+
+    <!-- ========== SECURITY GUIDES (January/February 2026) ========== -->
+
+    <item>
+      <title>VS Code Supply Chain Hardening Guide 2026</title>
+      <link>https://thehgtech.com/guides/vscode-supply-chain-hardening-2026.html</link>
+      <description>Protect your development environment from VS Code extension supply chain attacks. Learn to verify publishers, restrict permissions, and detect malicious extensions.</description>
+      <pubDate>Thu, 30 Jan 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://thehgtech.com/guides/vscode-supply-chain-hardening-2026.html</guid>
+      <dc:creator>TheHGTech</dc:creator>
+      <category>Developer Security</category>
+      <category>Supply Chain</category>
+    </item>
+
+    <item>
+      <title>Unicode-Based LLM Attacks: Defense and Detection Guide</title>
+      <link>https://thehgtech.com/guides/unicode-llm-attacks.html</link>
+      <description>Comprehensive guide to understanding and defending against Unicode smuggling and homoglyph attacks targeting LLMs. Covers detection strategies and mitigation techniques.</description>
+      <pubDate>Sat, 18 Jan 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://thehgtech.com/guides/unicode-llm-attacks.html</guid>
+      <dc:creator>TheHGTech</dc:creator>
+      <category>AI Security</category>
+      <category>LLM Security</category>
+      <category>Unicode</category>
+    </item>
+
+    <item>
+      <title>LLM Jailbreaking Defense: Beginner to Intermediate Guide</title>
+      <link>https://thehgtech.com/guides/llm-jailbreaking-defense.html</link>
+      <description>Learn to defend your LLM applications against jailbreak attacks. Covers prompt injection, system prompt extraction, and guardrail bypass techniques.</description>
+      <pubDate>Sat, 18 Jan 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://thehgtech.com/guides/llm-jailbreaking-defense.html</guid>
+      <dc:creator>TheHGTech</dc:creator>
+      <category>AI Security</category>
+      <category>LLM Security</category>
+      <category>Jailbreaking</category>
+    </item>
 
     <item>
       <title>DORA Compliance Guide - Digital Operational Resilience Act</title>
@@ -47,149 +262,6 @@
       <category>Compliance</category>
       <category>NIST</category>
       <category>Framework</category>
-    </item>
-
-    <item>
-      <title>AI Governance Framework - ChatGPT &amp; Copilot Security Policies</title>
-      <link>https://thehgtech.com/guides/ai-governance-framework.html</link>
-      <description>Enterprise AI governance guide covering policies for ChatGPT, GitHub Copilot, and generative AI tools. Includes risk management frameworks and EU AI Act compliance requirements.</description>
-      <pubDate>Mon, 23 Dec 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://thehgtech.com/guides/ai-governance-framework.html</guid>
-      <dc:creator>TheHGTech</dc:creator>
-      <category>AI Security</category>
-      <category>Governance</category>
-      <category>Policy</category>
-    </item>
-
-    <item>
-      <title>ZTNA Deployment Guide - Zero Trust Network Access</title>
-      <link>https://thehgtech.com/guides/ztna-deployment.html</link>
-      <description>Complete Zero Trust Network Access deployment guide. Covers ZTNA vs VPN comparison, architecture models (service-initiated vs endpoint-initiated), key components, and implementation roadmap.</description>
-      <pubDate>Mon, 23 Dec 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://thehgtech.com/guides/ztna-deployment.html</guid>
-      <dc:creator>TheHGTech</dc:creator>
-      <category>Zero Trust</category>
-      <category>Network Security</category>
-      <category>Architecture</category>
-    </item>
-
-    <item>
-      <title>Third-Party Risk Management (TPRM) Guide</title>
-      <link>https://thehgtech.com/guides/third-party-risk-management.html</link>
-      <description>Comprehensive TPRM guide covering vendor security assessment, supply chain risk management, due diligence checklists, and continuous monitoring strategies.</description>
-      <pubDate>Mon, 23 Dec 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://thehgtech.com/guides/third-party-risk-management.html</guid>
-      <dc:creator>TheHGTech</dc:creator>
-      <category>Risk Management</category>
-      <category>Vendor Security</category>
-      <category>Supply Chain</category>
-    </item>
-
-    <item>
-      <title>Splunk SPL Query Guide for SOC Analysts</title>
-      <link>https://thehgtech.com/guides/splunk-spl-guide.html</link>
-      <description>Master Splunk Search Processing Language with this comprehensive guide. Covers SPL basics, essential commands, security use cases, threat detection queries, and optimization techniques.</description>
-      <pubDate>Mon, 23 Dec 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://thehgtech.com/guides/splunk-spl-guide.html</guid>
-      <dc:creator>TheHGTech</dc:creator>
-      <category>SIEM</category>
-      <category>Splunk</category>
-      <category>SOC</category>
-    </item>
-
-    <item>
-      <title>CVE Prioritization &amp; Patch Management Guide</title>
-      <link>https://thehgtech.com/guides/cve-prioritization-patch-management.html</link>
-      <description>Risk-based vulnerability management guide using CVSS, EPSS, and CISA KEV. Learn to prioritize CVEs effectively and build efficient patch management workflows.</description>
-      <pubDate>Mon, 23 Dec 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://thehgtech.com/guides/cve-prioritization-patch-management.html</guid>
-      <dc:creator>TheHGTech</dc:creator>
-      <category>Vulnerability Management</category>
-      <category>CVE</category>
-      <category>Patching</category>
-    </item>
-
-    <item>
-      <title>MITRE ATT&amp;CK Mapping Guide for Detection Engineering</title>
-      <link>https://thehgtech.com/guides/mitre-attack-mapping.html</link>
-      <description>Learn to use the MITRE ATT&amp;CK framework for detection engineering. Covers tactics, techniques, sub-techniques, detection rule development, and coverage analysis.</description>
-      <pubDate>Mon, 23 Dec 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://thehgtech.com/guides/mitre-attack-mapping.html</guid>
-      <dc:creator>TheHGTech</dc:creator>
-      <category>MITRE ATT&amp;CK</category>
-      <category>Detection</category>
-      <category>Threat Hunting</category>
-    </item>
-
-    <item>
-      <title>Threat Intelligence Feeds Integration Guide</title>
-      <link>https://thehgtech.com/guides/threat-intelligence-feeds-integration.html</link>
-      <description>Complete guide to integrating threat intelligence feeds. Covers IOC types, STIX/TAXII standards, SIEM integration patterns, and feed quality management.</description>
-      <pubDate>Mon, 23 Dec 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://thehgtech.com/guides/threat-intelligence-feeds-integration.html</guid>
-      <dc:creator>TheHGTech</dc:creator>
-      <category>Threat Intelligence</category>
-      <category>STIX/TAXII</category>
-      <category>SIEM</category>
-    </item>
-
-    <item>
-      <title>SOC 2 Compliance Checklist</title>
-      <link>https://thehgtech.com/guides/soc2-compliance-checklist.html</link>
-      <description>Complete SOC 2 compliance checklist covering all Trust Services Criteria. Includes Type I vs Type II comparison, evidence requirements, and audit preparation guide.</description>
-      <pubDate>Mon, 23 Dec 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://thehgtech.com/guides/soc2-compliance-checklist.html</guid>
-      <dc:creator>TheHGTech</dc:creator>
-      <category>Compliance</category>
-      <category>SOC 2</category>
-      <category>Audit</category>
-    </item>
-
-    <!-- ========== PREVIOUS GUIDES ========== -->
-
-    <item>
-      <title>SIEM Log Analysis Guide</title>
-      <link>https://thehgtech.com/guides/siem-log-analysis.html</link>
-      <description>Master security event correlation and log analysis. Covers log sources, parsing techniques, correlation rules, and threat detection patterns.</description>
-      <pubDate>Tue, 17 Dec 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://thehgtech.com/guides/siem-log-analysis.html</guid>
-      <dc:creator>TheHGTech</dc:creator>
-      <category>SIEM</category>
-      <category>Log Analysis</category>
-    </item>
-
-    <item>
-      <title>Security Metrics &amp; KPIs Dashboard Guide</title>
-      <link>https://thehgtech.com/guides/security-metrics-kpis-dashboard.html</link>
-      <description>Build effective security dashboards with meaningful metrics. Covers MTTD, MTTR, vulnerability metrics, and executive reporting.</description>
-      <pubDate>Tue, 17 Dec 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://thehgtech.com/guides/security-metrics-kpis-dashboard.html</guid>
-      <dc:creator>TheHGTech</dc:creator>
-      <category>Metrics</category>
-      <category>Reporting</category>
-    </item>
-
-    <item>
-      <title>Incident Response Automation Guide</title>
-      <link>https://thehgtech.com/guides/incident-response-automation.html</link>
-      <description>Automate IR workflows with SOAR playbooks. Covers automation use cases, playbook design, and integration patterns.</description>
-      <pubDate>Sat, 14 Dec 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://thehgtech.com/guides/incident-response-automation.html</guid>
-      <dc:creator>TheHGTech</dc:creator>
-      <category>Incident Response</category>
-      <category>SOAR</category>
-      <category>Automation</category>
-    </item>
-
-    <item>
-      <title>Threat Intelligence Feeds Comparison</title>
-      <link>https://thehgtech.com/guides/threat-intelligence-feeds-comparison.html</link>
-      <description>Compare top threat intelligence feeds - paid vs free. Covers feed types, quality metrics, and selection criteria.</description>
-      <pubDate>Sat, 14 Dec 2025 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://thehgtech.com/guides/threat-intelligence-feeds-comparison.html</guid>
-      <dc:creator>TheHGTech</dc:creator>
-      <category>Threat Intelligence</category>
-      <category>Comparison</category>
     </item>
 
   </channel>

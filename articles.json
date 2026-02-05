@@ -1,6 +1,40 @@
 {
   "articles": [
     {
+      "id": "article-new-amaranth-dragon-cyberespionage-group-exploits-winrar-flaw",
+      "title": "New Amaranth Dragon cyberespionage group exploits WinRAR flaw",
+      "date": "February 05, 2026",
+      "category": "APT / Nation-State",
+      "badge": "APT",
+      "excerpt": "A new threat actor called Amaranth Dragon, linked to APT41 state-sponsored Chinese operations, exploited the CVE-2025-8088 vulnerability in WinRAR in espionage attacks on government and law enforcemen...",
+      "image": "images/articles/auto-generated-news.png",
+      "tags": [
+        "APT / Nation-State",
+        "BleepingComputer",
+        "Auto-Generated",
+        "CVE-2025-8088"
+      ],
+      "author": "TheHGTech Bot",
+      "externalUrl": "articles/new-amaranth-dragon-cyberespionage-group-exploits-winrar-flaw.html"
+    },
+    {
+      "id": "article-cisa-adds-actively-exploited-solarwinds-web-help-desk-rce-to-kev-catalog",
+      "title": "CISA Adds Actively Exploited SolarWinds Web Help Desk RCE to KEV Catalog",
+      "date": "February 05, 2026",
+      "category": "Zero-Day Vulnerability",
+      "badge": "ZERO-DAY",
+      "excerpt": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical security flaw impacting SolarWinds Web Help Desk (WHD) to its Known Exploited Vulnerabilities (KEV) catalog...",
+      "image": "images/articles/auto-generated-news.png",
+      "tags": [
+        "Zero-Day Vulnerability",
+        "TheHackerNews",
+        "Auto-Generated",
+        "CVE-2025-40551"
+      ],
+      "author": "TheHGTech Bot",
+      "externalUrl": "articles/cisa-adds-actively-exploited-solarwinds-web-help-desk-rce-to-kev-catalog.html"
+    },
+    {
       "id": "article-notepad-supply-chain-apt31-2026",
       "title": "Notepad++ Hijacked: APT31 Deploys Chrysalis Backdoor via 6-Month Supply Chain Attack",
       "date": "February 3, 2026",

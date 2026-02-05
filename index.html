@@ -63,10 +63,7 @@
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
     <link rel="alternate" type="application/rss+xml" title="TheHGTech RSS Feed" href="/rss.xml">
 
-    <!-- ========== CACHE CONTROL (Safari Mobile Fix) ========== -->
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
+    <!-- Note: Cache-Control is handled by .htaccess for proper static asset caching -->
 
     <!-- ========== SECURITY HEADERS ========== -->
     <!-- Note: frame-ancestors and X-Frame-Options only work as HTTP headers, not meta tags -->
@@ -290,16 +287,16 @@
             rel="stylesheet">
     </noscript>
 
-    <!-- Enterprise Design System (Core tokens and base styles) -->
-    <link rel="stylesheet" href="design-system.css?v=2.0">
+    <!-- Enterprise Design System (Core tokens and base styles) - Minified -->
+    <link rel="stylesheet" href="design-system.min.css?v=2.1">
 
-    <!-- Non-critical CSS - Load async -->
-    <link rel="stylesheet" href="rotating-text.css?v=2" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="cve-display.css?v=4" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="ransomware-display.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="article-links-fix.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="header-dropdown.css?v=1" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="news-timeline.css?v=1" media="print" onload="this.media='all'">
+    <!-- Non-critical CSS - Load async (Minified) -->
+    <link rel="stylesheet" href="rotating-text.min.css?v=2" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="cve-display.min.css?v=4" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="ransomware-display.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="article-links-fix.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="header-dropdown.min.css?v=1" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="news-timeline.min.css?v=1" media="print" onload="this.media='all'">
 
     <!-- Font Awesome (Deferred until after page load for performance) -->
     <script>
@@ -329,8 +326,14 @@
     <link rel="stylesheet" href="m-core.min.css?v=20260203" media="(max-width: 768px)">
     <link rel="stylesheet" href="m-layout.min.css?v=20260203" media="(max-width: 768px)">
     <link rel="stylesheet" href="m-components.min.css?v=20260203" media="(max-width: 768px)">
-    <script src="m-app.js?v=20260203" defer></script>
+    <script src="m-app.min.js?v=20260205" defer></script>
     <script src="theme-toggle.js" defer></script>
+
+    <!-- Quick Wins UX Improvements (Feb 2026) - Async load -->
+    <link rel="stylesheet" href="quick-wins.css?v=20260204" media="print" onload="this.media='all'">
+
+    <!-- Performance: Lazy load non-critical scripts -->
+    <script src="lazy-loader.js" defer></script>
 
 
 
@@ -1575,6 +1578,7 @@
             line-height: 1.7;
             display: -webkit-box;
             -webkit-line-clamp: 2;
+            line-clamp: 2;
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
@@ -2766,6 +2770,7 @@
 
         .article-content {
             /* Container for text content when image is present */
+            display: block;
         }
 
         .article-category {
@@ -2799,6 +2804,7 @@
             margin-bottom: 1rem;
             display: -webkit-box;
             -webkit-line-clamp: 3;
+            line-clamp: 3;
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
@@ -5171,7 +5177,7 @@
                                         style="color: var(--text-primary); font-size: 0.95rem; font-weight: 600; margin: 0 0 0.25rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                                         Advanced Unicode LLM Attacks</h3>
                                     <p
-                                        style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin: 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                                        style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin: 0; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
                                         Variation selector exploitation and defense architecture</p>
                                 </div>
                             </a>
@@ -5186,7 +5192,7 @@
                                         style="color: var(--text-primary); font-size: 0.95rem; font-weight: 600; margin: 0 0 0.25rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                                         Advanced LLM Jailbreaking Defense</h3>
                                     <p
-                                        style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin: 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                                        style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin: 0; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
                                         GCG attacks, adversarial suffixes, and red team techniques</p>
                                 </div>
                             </a>
@@ -5550,6 +5556,11 @@
                         <li><a href="#" onclick="openModal('terms'); return false;">Terms of Service</a></li>
                         <li><a href="#" onclick="openModal('advertise'); return false;">Advertise</a></li>
                     </ul>
+                    <h4 style="margin-top: 1rem;">Developers</h4>
+                    <ul class="footer-links">
+                        <li><a href="/embed/cve-widget.html">Embed CVE Widget</a></li>
+                        <li><a href="/rss.xml">RSS Feed</a></li>
+                    </ul>
                 </div>
                 <div>
                     <h4>Categories</h4>
@@ -5838,20 +5849,20 @@
         })();
     </script>
 
-    <!-- Load Content Files (deferred to prevent render blocking) -->
-    <script src="content.js?v=20251219" defer></script>
-    <script src="news-timeline.js?v=1" defer></script>
-    <script src="article-loader.js?v=20251207-1255" defer></script>
+    <!-- Load Content Files (deferred to prevent render blocking) - Minified -->
+    <script src="content.min.js?v=20260205" defer></script>
+    <script src="news-timeline.min.js?v=2" defer></script>
+    <script src="article-loader.min.js?v=20260205" defer></script>
     <link rel="stylesheet" href="article-modal.css" media="print" onload="this.media='all'">
-    <script src="article-modal.js" defer></script>
+    <script src="article-modal.min.js" defer></script>
     <link rel="stylesheet" href="interaction-bar.css?v=20251207-0041" media="print" onload="this.media='all'">
-    <script src="interaction-bar.js?v=20251206" defer></script>
+    <script src="interaction-bar.min.js?v=20260205" defer></script>
 
-    <!-- Visual Enhancements (deferred) -->
+    <!-- Visual Enhancements (deferred) - Minified -->
     <link rel="stylesheet" href="visual-enhancements.css" media="print" onload="this.media='all'">
-    <script src="visual-enhancements.js" defer></script>
-    <script src="rotating-text.js?v=4" defer></script>
-    <script src="cve-display.js?v=20251125" defer></script>
+    <script src="visual-enhancements.min.js" defer></script>
+    <script src="rotating-text.min.js?v=4" defer></script>
+    <script src="cve-display.min.js?v=20260205" defer></script>
     <script defer>
         // Load CVE stats for homepage preview
         document.addEventListener('DOMContentLoaded', async function () {
@@ -7670,20 +7681,23 @@
     <!-- Back to Top Button -->
     <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
 
-    <!-- Non-critical scripts (deferred) -->
+    <!-- Non-critical scripts (now handled by lazy-loader.js) -->
     <script src="ransomware-display.js" defer></script>
     <script src="copy-to-clipboard.js" defer></script>
 
-    <!-- UX Enhancement Scripts -->
-    <script src="command-palette.js" defer></script>
+    <!-- 
+    UX Enhancement Scripts are now lazy-loaded by lazy-loader.js:
+    - recommendation-engine.js
+    - content-hub.js
+    - bookmarks.js
+    - keyboard-shortcuts.js
+    - share-buttons.js
+    - toast.js
+    - command-palette.js (loaded on Ctrl+K)
+    This reduces initial JS payload by ~56 KiB
+    -->
     <script src="live-dashboard.js" defer></script>
-    <script src="recommendation-engine.js" defer></script>
     <script src="performance.js" defer></script>
-    <script src="content-hub.js" defer></script>
-    <script src="toast.js" defer></script>
-    <script src="bookmarks.js" defer></script>
-    <script src="keyboard-shortcuts.js" defer></script>
-    <script src="share-buttons.js" defer></script>
 
 </body>
 

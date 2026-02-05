@@ -1,0 +1,18 @@
+{
+  "hashes": [
+    "9c6bfce9999e",
+    "9b4f2d4a07f3"
+  ],
+  "articles": [
+    {
+      "title": "New Amaranth Dragon cyberespionage group exploits WinRAR flaw",
+      "date": "2026-02-05",
+      "hash": "9c6bfce9999e"
+    },
+    {
+      "title": "CISA Adds Actively Exploited SolarWinds Web Help Desk RCE to KEV Catalog",
+      "date": "2026-02-05",
+      "hash": "9b4f2d4a07f3"
+    }
+  ]
+}
