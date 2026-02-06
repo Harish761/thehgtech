@@ -1505,14 +1505,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1256",
-      "incident_id": 1256,
-      "title": "Purportedly AI-Generated Deepfake Investment Ads Defrauded 5,000 Swedish Investors of 500 Million SE",
-      "date": "2025-11-08",
-      "category": "deepfake",
-      "severity": "critical"
-    },
-    {
       "id": "AIID-1257",
       "incident_id": 1257,
       "title": "Argentine Court Reportedly Annuls Criminal Conviction After Judge Allegedly Used ChatGPT to Draft Ru",
@@ -1535,20 +1527,12 @@
       "date": "2025-11-08",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1261",
-      "incident_id": 1261,
-      "title": "Alleged AI-Generated Deepfake of Western Australia Premier Roger Cook Used in YouTube Investment Sca",
-      "date": "2025-11-08",
-      "category": "deepfake",
-      "severity": "high"
     }
   ],
   "stats": {
-    "total": 193,
+    "total": 191,
     "last7Days": 18,
     "last30Days": 44
   },
-  "lastUpdated": "2026-02-06T02:18:16.388053+05:30"
+  "lastUpdated": "2026-02-06T08:21:05.265691+05:30"
 }
