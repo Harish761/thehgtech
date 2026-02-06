@@ -144,7 +144,31 @@
 
         .hero {
             padding: 3rem 1rem;
-            text-align: center
+            text-align: center;
+            position: relative;
+        }
+
+        /* CRITICAL: Logo Visibility */
+        .logo-dark {
+            display: block;
+        }
+
+        .logo-light {
+            display: none;
+        }
+
+        body.light-mode .logo-dark {
+            display: none;
+        }
+
+        body.light-mode .logo-light {
+            display: block;
+        }
+
+        .hero h1 {
+            font-weight: 800;
+            color: #fff;
+            line-height: 1.1;
         }
 
         .hero h1 {
