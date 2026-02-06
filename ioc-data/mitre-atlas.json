@@ -1,5 +1,5 @@
 {
-  "version": "5.3.0",
+  "version": "5.4.0",
   "name": "Adversarial Threat Landscape for AI Systems",
   "tactics": [
     {
@@ -1047,7 +1047,7 @@
     {
       "id": "AML.T0081",
       "name": "Modify AI Agent Configuration",
-      "description": "Adversaries may modify the configuration files for AI agents on a system. This allows malicious changes to persist beyond the life of a single agent and affects any agents that share the configuration.\n\nConfiguration changes may include modifications to the system prompt, tampering with or replacing knowledge sources, modification to settings of connected tools, and more. Through those changes, an attacker could redirect outputs or tools to malicious services, embed covert instructions that exfiltrate data, or weaken security controls that normally restrict agent behavior.",
+      "description": "Adversaries may modify the configuration files for AI agents on a system. This allows malicious changes to persist beyond the life of a single agent and affects any agents that share the configuration.\n\nConfiguration changes may include modifications to the system prompt, tampering with or replacing knowledge sources, modification to settings of connected tools, and more. Through those changes, an attacker could redirect outputs or tools to malicious services, embed covert instructions that exfiltrate data, or weaken security controls that normally restrict agent behavior.\n\nAdversaries may modify or disable a configuration setting related to security controls, such as those that would prevent the AI Agent from taking actions that may be harmful to the user's system without human-in-the-loop oversight. Disabling AI agent security features may allow adversaries to achieve their malicious goals and maintain long-term corruption of the AI agent.",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -1280,6 +1280,62 @@
       "id": "AML.T0103",
       "name": "Deploy AI Agent",
       "description": "Adversaries may launch AI agents in the victim's environment to execute actions on their behalf. AI agents may have access to a wide range of tools and data sources, as well as permissions to access and interact with other services and systems in the victim's environment. The adversary may leverage these capabilities to carry out their operations.\n\nAdversaries may configure the AI agent by providing an initial system prompt and granting access to tools, effectively defining their goals for the agent to achieve. They may deploy the agent with excessive trust permissions and disable any user interactions to ensure the agent's actions aren't blocked.\n\nLaunching an AI agent may provide for some autonomous behavior, allowing for the agent to make decisions and determine how to achieve the adversary's goals. This also represents a loss of control for the adversary.",
+      "tactic": "",
+      "type": "technique",
+      "severity": "low"
+    },
+    {
+      "id": "AML.T0104",
+      "name": "Publish Poisoned AI Agent Tool",
+      "description": "Adversaries may create and publish poisoned AI agent tools. Poisoned tools may contain an [LLM Prompt Injection](/techniques/AML.T0051), which can lead to a variety of impacts.\n\nTools may be published to open source version control repositories (e.g. GitHub, GitLab), to package registries (e.g. npm), or to repositories specifically designed for sharing tools (e.g. OpenClaw Hub). These registries may be largely unregulated and may contain many poisoned tools [\\[1\\]][1].\n\n[1]: https://opensourcemalware.com/blog/clawdbot-skills-ganked-your-crypto",
+      "tactic": "",
+      "type": "technique",
+      "severity": "high"
+    },
+    {
+      "id": "AML.T0011.002",
+      "name": "Poisoned AI Agent Tool",
+      "description": "A victim may invoke a poisoned tool when interacting with their AI agent. A poisoned tool may execute an [LLM Prompt Injection](/techniques/AML.T0051) or perform [AI Agent Tool Invocation](/techniques/AML.T0053).\n\nPoisoned AI agent tools may be introduced into the victim's environment via [AI Software](/techniques/AML.T0010.001), or the user may configure their agent to connect to remote tools.",
+      "tactic": "",
+      "type": "technique",
+      "severity": "high"
+    },
+    {
+      "id": "AML.T0011.003",
+      "name": "Malicious Link",
+      "description": "An adversary may rely upon a user clicking a malicious link in order to gain execution. Users may be subjected to social engineering to get them to click on a link that will lead to code execution. This user action will typically be observed as follow-on behavior from Spearphishing Link. Clicking on a link may also lead to other execution techniques such as exploitation of a browser or application vulnerability via Exploitation for Client Execution. Links may also lead users to download files that require execution via Malicious File.\n\nThere are many ways an adversary can leverage malicious links to gain access to a victim system via an AI system. For example, an AI Agent that is configured to not validate website origin headers will accept connections from any website, allowing adversaries the ability to get around previously inaccessible network.",
+      "tactic": "",
+      "type": "technique",
+      "severity": "low"
+    },
+    {
+      "id": "AML.T0105",
+      "name": "Escape to Host",
+      "description": "Adversaries may break out of a container or virtualized environment to gain access to the underlying host. This can allow an adversary access to other containerized or virtualized resources from the host level or to the host itself. In principle, containerized / virtualized resources should provide a clear separation of application functionality and be isolated from the host environment.\n\nThere are many ways an adversary may escape from a container or sandbox environment via AI Systems. For example, modifying an AI Agent's configuration to disable safety features or user confirmations could allow the adversary to invoke tools to be run on host environments rather than in the sandbox.",
+      "tactic": "",
+      "type": "technique",
+      "severity": "low"
+    },
+    {
+      "id": "AML.T0106",
+      "name": "Exploitation for Credential Access",
+      "description": "Adversaries may exploit software vulnerabilities in an attempt to collect credentials. Exploitation of a software vulnerability occurs when an adversary takes advantage of a programming error in a program, service, or within the operating system software or kernel itself to execute adversary-controlled code.",
+      "tactic": "",
+      "type": "technique",
+      "severity": "low"
+    },
+    {
+      "id": "AML.T0107",
+      "name": "Exploitation for Defense Evasion",
+      "description": "Adversaries may exploit a system or application vulnerability to bypass security features. Exploitation of a vulnerability occurs when an adversary takes advantage of a programming error in a program, service, or within the operating system software or kernel itself to execute adversary-controlled code. Vulnerabilities may exist in defensive security software that can be used to disable or circumvent them.",
+      "tactic": "",
+      "type": "technique",
+      "severity": "high"
+    },
+    {
+      "id": "AML.T0108",
+      "name": "AI Agent",
+      "description": "Adversaries may abuse AI agents present on the victim's system for command and control. AI agents are often granted access to tools that can execute shell commands, reach out to the internet, and interact with other services in the victim's environment, making them capable C2 agents.\n\nThe adversary may modify the behavior of an AI agent for C2 via [LLM Prompt Injection](/techniques/AML.T0051) and rely on the agent's ability to invoke tools to retrieve and execute the adversary's commands. They may maintain persistent control of an agent via [Modify AI Agent Configuration](/techniques/AML.T0081) or [AI Agent Context Poisoning](/techniques/AML.T0080). They may instruct the agent to not report their actions to the user in an attempt to remain covert.",
       "tactic": "",
       "type": "technique",
       "severity": "low"
@@ -1573,12 +1629,36 @@
       "name": "Code to Deploy Destructive AI Agent Discovered in Amazon Q VS Code Extension",
       "summary": "On July 13th, 2025, a malicious actor using the GitHub username \"lkmanka58\" used an inappropriately scoped GitHub token to make a commit containing malicious code to the Amazon Q Developer Visual Stud...",
       "techniques": []
+    },
+    {
+      "id": "AML.CS0048",
+      "name": "Exposed ClawdBot Control Interfaces Leads to Credential Access and Execution",
+      "summary": "A security researcher identified hundreds of exposed ClawdBot control interfaces on the public internet. ClawdBot (now OpenClaw) \u201cis a personal AI assistant you run on your own devices. It answers you...",
+      "techniques": []
+    },
+    {
+      "id": "AML.CS0049",
+      "name": "Supply Chain Compromise via Poisoned ClawdBot Skill",
+      "summary": "A security researcher demonstrated a proof-of-concept supply chain attack using a poisoned ClawdBot Skill shared on ClawdHub, a Skill registry for agents. The poisoned Skill contained a prompt injecti...",
+      "techniques": []
+    },
+    {
+      "id": "AML.CS0050",
+      "name": "OpenClaw 1-Click Remote Code Execution",
+      "summary": "A security researcher demonstrated a 1-click remote code execution (RCE) vulnerability to the OpenClaw AI Agent via a malicious link containing a JavaScript script that only takes milliseconds to exec...",
+      "techniques": []
+    },
+    {
+      "id": "AML.CS0051",
+      "name": "OpenClaw Command & Control via Prompt Injection",
+      "summary": "Researchers at HiddenLayer demonstrated how a webpage can embed an indirect prompt injection that causes OpenClaw to silently execute a malicious script. Once executed, the script plants persistent ma...",
+      "techniques": []
     }
   ],
   "stats": {
     "totalTactics": 16,
-    "totalTechniques": 148,
-    "totalCaseStudies": 48
+    "totalTechniques": 155,
+    "totalCaseStudies": 52
   },
-  "lastUpdated": "2026-02-06T08:21:03.364776+05:30"
+  "lastUpdated": "2026-02-06T10:49:35.189781+05:30"
 }
