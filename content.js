@@ -5,6 +5,87 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Feb 06 2026",
+            "headline": "KEV Collider Enhances Vulnerability Triage for Security Teams",
+            "title": "New Data Tool KEV Collider Optimizes Exploited Vulnerability Assessment",
+            "content": "The KEV Collider tool has been launched to address the gap between organizational cybersecurity needs and existing vulnerability lists like CISA&#x27;s Known Exploited Vulnerabilities (KEV) Catalog. By integrating data from multiple open-source vulnerability frameworks, KEV Collider helps security teams rapidly prioritize vulnerabilities based on their unique priorities and threat landscape. This tool aims to streamline the vulnerability management process, reducing the time and resources spent on addressing less critical threats. Organizations can now better allocate their defenses against vulnerabilities that pose the greatest risk. The innovation underscores the ongoing need for adaptive and responsive security strategies in the face of evolving cyber threats.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/threat-intelligence/data-tool-triage-exploited-vulnerabilities-make-kev-catalog-more-useful",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 06 2026",
+            "headline": "Illinois Man Guilty—Hacked 600 Snapchat Accounts for Nudes",
+            "title": "Illinois Man Admits to Hacking Hundreds of Snapchat Accounts for Nude Photos",
+            "content": "An Illinois man has pleaded guilty to hacking nearly 600 women&#x27;s Snapchat accounts to steal and distribute nude photographs. The hacker exploited weak security measures to gain unauthorized access, selling and trading the images online. Among the compromised accounts were those targeted at the behest of a former university track coach, who was later convicted of sextortion. This case highlights the persistent threat of social media account breaches and the need for stronger security protocols. Snapchat users are advised to enable two-factor authentication and regularly update passwords to protect against such intrusions.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/man-pleads-guilty-to-hacking-nearly-600-womens-snapchat-accounts/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 06 2026",
+            "headline": "CISO Tenure Shrinks—Avoid Career-Ending Mistakes",
+            "title": "Ten Career-Ending Mistakes CISOs Make and How to Avoid Them",
+            "content": "A recent study by Hitch Partners reveals the precarious nature of the Chief Information Security Officer (CISO) role, with an average tenure of just 39 months. High-pressure environments and evolving cyber threats contribute to 77% of CISOs fearing dismissal. Common career-ending mistakes include failing to align security with business goals, neglecting team development, and underestimating insider threats. To succeed, CISOs must foster strong communication with executive leadership and stay ahead of emerging threats. This report underscores the importance of strategic foresight and adaptability in maintaining a successful CISO career.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4128090/ten-career-ending-mistakes-cisos-make-and-how-to-avoid-them.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 06 2026",
+            "headline": "Asian Group TGR-STA-1030 Hacks 70 Global Entities",
+            "title": "Asian State-Backed Group TGR-STA-1030 Breaches Global Government Networks",
+            "content": "The cyber espionage group TGR-STA-1030, operating from Asia, has infiltrated the networks of 70 government and critical infrastructure entities across 37 countries. This previously undocumented group has been active over the past year, according to Palo Alto Networks Unit 42. The attacks primarily targeted sensitive government data and critical infrastructure systems, posing significant national security risks. Organizations in affected regions should review their network defenses and consider threat intelligence sharing to mitigate further risks. This breach highlights the persistent threat posed by state-backed cyber actors on a global scale.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/02/asian-state-backed-group-tgr-sta-1030.html",
+            "relatedResources": [
+                {
+                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
+                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
+                    "icon": "fa-shield-virus"
+                }
+            ]
+        },
+        {
+            "date": "Feb 06 2026",
+            "headline": "Flickr Breach Exposes User Data via Third-Party Email",
+            "title": "Flickr Security Incident Linked to Third-Party Email System Breach",
+            "content": "A security incident at Flickr has potentially exposed usernames, email addresses, IP addresses, and activity data due to a vulnerability in a third-party email system. The breach raises concerns about the security of user data managed by external vendors. Flickr users are urged to monitor their accounts for suspicious activity and change their passwords as a precaution. This incident underscores the importance of rigorous third-party risk management and vendor security assessments in safeguarding user information. Organizations should evaluate their third-party dependencies to prevent similar breaches.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/flickr-security-incident-tied-to-third-party-email-system/",
+            "relatedResources": [
+                {
+                    "label": "Third-Party Risk Management",
+                    "url": "/guides/third-party-risk-management.html",
+                    "icon": "fa-handshake"
+                }
+            ]
+        },
+        {
+            "date": "Feb 06 2026",
+            "headline": "Living off AI: New Attacker Strategy Emerges",
+            "title": "Attackers Exploit AI Systems in Evolving Cyber Tradecraft",
+            "content": "Cyber attackers are increasingly exploiting artificial intelligence (AI) systems in a strategy known as &quot;Living off the AI.&quot; This approach involves leveraging AI assistants, agents, and machine control programs (MCP) to execute attacks more efficiently. The shift represents a natural evolution of existing tradecraft, demanding new defensive strategies from cybersecurity teams. Organizations must adapt by enhancing their AI system security and monitoring capabilities. This trend highlights the dual-use nature of AI technologies and the need for vigilant security practices to counteract emerging threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/living-off-the-ai-the-next-evolution-of-attacker-tradecraft/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 06 2026",
+            "headline": "Record DDoS and ESET Flaws—Security Roundup",
+            "title": "Security Roundup: Record DDoS Attack, ESET Vulnerabilities, and More",
+            "content": "Recent cybersecurity developments include a record-breaking Distributed Denial-of-Service (DDoS) attack and vulnerabilities in ESET security products. The DDoS attack targeted major telecommunications providers like AT&amp;T and Verizon, causing widespread service disruptions. Meanwhile, ESET has addressed critical vulnerabilities in its software, urging users to update immediately. Additionally, a man in Poland was arrested for orchestrating DDoS attacks. These incidents emphasize the ongoing challenges in network security and the importance of timely patching and robust DDoS defenses. Organizations should remain vigilant and proactive in addressing these evolving threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/in-other-news-record-ddos-epsteins-hacker-eset-product-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 06 2026",
             "headline": "Ingress NGINX Vulnerabilities—Critical Update Required",
             "title": "Four New Vulnerabilities Discovered in Ingress NGINX Traffic Controller",
             "content": "Four security vulnerabilities have been identified in the open-source Ingress NGINX traffic controller, widely used in Kubernetes deployments. Two of these vulnerabilities are particularly severe, with high Common Vulnerability Scoring System (CVSS) scores, though specific CVE IDs were not disclosed. These flaws could potentially allow attackers to disrupt or gain unauthorized access to affected systems. Organizations using Ingress NGINX are advised to upgrade to the latest version immediately to mitigate these risks. This discovery underscores the importance of regular updates and security audits for open-source components in critical infrastructure.",
@@ -37,70 +118,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Feb 05 2026",
-            "headline": "Asian APT Targets 37 Nations—Urgent Security Alert",
-            "title": "New APT Group Breaches Government and Critical Infrastructure in 37 Countries",
-            "content": "A new advanced persistent threat (APT) group from Asia has infiltrated 70 government and critical infrastructure organizations across 37 countries over the past year. This cyberespionage group employs a sophisticated arsenal, including phishing attacks, exploitation kits, custom malware, Linux rootkits, and web shells. The widespread impact of these attacks highlights the urgent need for enhanced cybersecurity measures in government and infrastructure sectors. Organizations are advised to strengthen their defenses against these advanced tactics and ensure robust incident response strategies are in place.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4128378/new-apt-group-breached-gov-and-critical-infrastructure-orgs-in-37-countries.html",
-            "relatedResources": [
-                {
-                    "label": "MITRE ATT&CK Mapping",
-                    "url": "/guides/mitre-attack-mapping.html",
-                    "icon": "fa-map"
-                }
-            ]
-        },
-        {
-            "date": "Feb 05 2026",
-            "headline": "EnCase Driver Exploited—EDR Bypass Alert",
-            "title": "EnCase Driver Weaponized as EDR Killers Persist in Cyber Attacks",
-            "content": "The driver for EnCase, a popular forensic tool, has been weaponized by attackers to bypass endpoint detection and response (EDR) systems. Despite the driver&#x27;s digital certificate having expired years ago, vulnerabilities in Windows allowed it to be loaded, posing significant security risks. This incident underscores the importance of rigorous certificate management and the need for continuous monitoring of security tools. Organizations are urged to review their EDR configurations and ensure all drivers are up-to-date and verified to prevent similar exploitation.",
-            "source": "Dark Reading",
-            "sourceUrl": "https://www.darkreading.com/threat-intelligence/encase-driver-weaponized-edr-killers-persist",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Zero-Day Detection Guide",
-                    "url": "/guides/zero-day-detection.html",
-                    "icon": "fa-exclamation-triangle"
-                },
-                {
-                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
-                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
-                    "icon": "fa-shield-virus"
-                }
-            ]
-        },
-        {
-            "date": "Feb 05 2026",
-            "headline": "AI-Created Site &#x27;Moltbook&#x27; Exposes Data—Security Warning",
-            "title": "Agentic AI Site &#x27;Moltbook&#x27; Riddled with Security Risks",
-            "content": "The AI-generated web platform &#x27;Moltbook&#x27; has exposed all its data through a publicly accessible API, highlighting significant security risks associated with automated site creation. This incident demonstrates the potential vulnerabilities in AI-driven web development, where security considerations may be overlooked. Organizations leveraging AI for web development should prioritize security audits and implement stringent access controls to protect sensitive data. This case serves as a cautionary tale for developers to incorporate security checks throughout the AI development lifecycle.",
-            "source": "Dark Reading",
-            "sourceUrl": "https://www.darkreading.com/cyber-risk/agentic-ai-moltbook-security-risks",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 05 2026",
-            "headline": "Spanish Science Ministry Breach—Systems Shut Down",
-            "title": "Spain&#x27;s Ministry of Science Shuts Down Systems After Breach Claims",
-            "content": "Following claims of a security breach, Spain&#x27;s Ministry of Science has partially shut down its IT systems, affecting several services available to citizens and companies. The ministry is currently investigating the breach&#x27;s scope and potential impact on sensitive data. This incident highlights the vulnerabilities faced by governmental institutions and the critical need for robust cybersecurity frameworks. Organizations are advised to review their incident response plans and ensure they are prepared to handle potential breaches effectively.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/spains-ministry-of-science-shuts-down-systems-after-breach-claims/",
-            "relatedResources": [
-                {
-                    "label": "NIST CSF 2.0 Implementation",
-                    "url": "/guides/nist-csf-2-implementation.html",
-                    "icon": "fa-check-double"
-                }
-            ]
-        },
-        {
             "date": "Mar 23 2026",
             "headline": "RSAC 2026 Registration Opens—Secure Your Spot Now",
             "title": "RSA Conference 2026 Registration Opens for Cybersecurity Professionals",
@@ -120,6 +137,93 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Feb 06 2026",
+            "headline": "Epstein&#x27;s Legacy Undermines #MeToo—A Societal Reckoning",
+            "title": "How Epstein&#x27;s Influence Continues to Challenge the #MeToo Movement",
+            "content": "Despite Jeffrey Epstein&#x27;s arrest and subsequent death in jail, his legacy of exploiting power dynamics persists, posing a significant challenge to the #MeToo movement. Epstein&#x27;s ideology, which favored wealthy white men, continues to influence societal norms, suggesting a need for deeper systemic change. The movement aimed to hold powerful individuals accountable, but the enduring impact of Epstein&#x27;s network reveals the complexities in achieving justice. This situation underscores the importance of sustained efforts to dismantle entrenched power structures and protect vulnerable populations. Stakeholders in social justice and legal reform are urged to intensify their focus on long-term systemic change.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/874721/epstein-thiel-musk-trump-metoo",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Feb 06 2026",
+            "headline": "AI Scalability Enhanced by Logic-Search Separation",
+            "title": "Decoupling Logic and Search to Boost AI Agent Scalability",
+            "content": "AI researchers have discovered that separating logic from search processes can significantly enhance the scalability of AI agents. This approach addresses the inherent stochastic nature of large language models (LLMs), which can lead to unpredictable outcomes in production environments. By decoupling core workflows from execution strategies, developers can achieve more reliable and scalable AI systems. This advancement is crucial as enterprises transition from generative AI prototypes to production-grade agents capable of handling complex tasks. Technical professionals should explore this methodology to improve the robustness and efficiency of AI deployments.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/how-separating-logic-and-search-boosts-ai-agent-scalability/",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Feb 06 2026",
+            "headline": "Intuit, Uber, State Farm Test AI in Workflows",
+            "title": "Enterprises Trial AI Agents in Operational Workflows",
+            "content": "Intuit, Uber, and State Farm are pioneering the integration of AI agents into their enterprise workflows, signaling a shift from experimental tools to practical applications. These companies are moving beyond simple AI-driven tasks to deploying agents capable of executing complex operations within their systems. This transition marks a significant evolution in AI utilization, promising enhanced efficiency and productivity. The initiative reflects a broader trend of enterprises leveraging AI to streamline processes and improve decision-making. Organizations considering similar integrations should evaluate the potential impact on their operational frameworks.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/intuit-uber-and-state-farm-trial-ai-agents-inside-enterprise-workflows/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 05 2026",
+            "headline": "ICE, CBP Face-Recognition App Fails Verification",
+            "title": "ICE and CBP&#x27;s Face-Recognition App Fails Identity Verification",
+            "content": "The U.S. Immigration and Customs Enforcement (ICE) and Customs and Border Protection (CBP) have faced criticism for their use of Mobile Fortify, a face-recognition app that reportedly fails to accurately verify identities. Despite being used over 100,000 times, the app was not designed for such extensive use and was approved after the Department of Homeland Security (DHS) bypassed its privacy protocols. This situation raises significant privacy and efficacy concerns, particularly for immigrants and citizens subjected to potential misidentification. Stakeholders are urged to reassess the deployment and oversight of biometric technologies within governmental agencies.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/cbp-ice-dhs-mobile-fortify-face-recognition-verify-identity/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 05 2026",
+            "headline": "OpenAI, Anthropic Race to Launch Coding Models",
+            "title": "OpenAI and Anthropic Launch Competing Agentic Coding Models",
+            "content": "OpenAI has introduced a new agentic coding model designed to enhance the capabilities of Codex, its existing coding tool, just minutes after Anthropic unveiled its own model. This rapid succession highlights the competitive landscape in AI-driven coding solutions, with both companies aiming to provide more powerful and efficient tools for developers. OpenAI&#x27;s model promises accelerated coding capabilities, potentially transforming how software is developed and optimized. Developers should stay informed about these advancements to leverage the latest tools for improved productivity and innovation in coding practices.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/05/openai-launches-new-agentic-coding-model-only-minutes-after-anthropic-drops-its-own/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 05 2026",
+            "headline": "Musk&#x27;s Orbital Data Centers—A Vision Takes Shape",
+            "title": "Elon Musk Advances Plans for Orbital AI Data Centers",
+            "content": "Elon Musk is advancing plans to establish orbital AI data centers, a concept that is beginning to take tangible form. These data clusters aim to leverage the unique advantages of space-based infrastructure, such as reduced latency and enhanced global connectivity. The initiative could revolutionize data processing and storage, offering unprecedented capabilities for AI applications. As the vision progresses, stakeholders in technology and space industries should monitor developments closely, as they may present new opportunities and challenges in data management and satellite technology.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/05/elon-musk-is-getting-serious-about-orbital-data-centers/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 05 2026",
+            "headline": "AI Dominates Super Bowl LX Ads",
+            "title": "AI Takes Center Stage in Super Bowl LX Advertisements",
+            "content": "As Super Bowl LX approaches, AI is set to dominate the commercial breaks, echoing the crypto ad trend of previous years. With the Seattle Seahawks facing the New England Patriots, and Bad Bunny headlining the halftime show, AI-driven advertisements are expected to capture significant attention. This shift highlights the growing influence of AI in marketing strategies, as companies seek innovative ways to engage audiences. Marketers and advertisers should consider the implications of AI integration in campaigns, exploring how these technologies can enhance consumer engagement and brand visibility.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/entertainment/874504/super-bowl-lx-ads-big-game",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 06 2026",
             "headline": "$2B Cloud IAM Risk—Recruitment Fraud Exfiltrates Developer Credentials",
             "title": "Recruitment Fraud Turns Cloud IAM into a $2 Billion Attack Surface",
             "content": "A sophisticated recruitment fraud scheme has exposed a $2 billion attack surface in cloud Identity and Access Management (IAM) systems. Developers receive seemingly legitimate job offers via LinkedIn, which include coding assessments requiring the installation of malicious packages. These packages exfiltrate sensitive cloud credentials, including GitHub personal access tokens and AWS API keys, from the developer&#x27;s machine. The attack compromises cloud environments, potentially affecting thousands of organizations relying on these platforms. Security experts emphasize the need for enhanced credential hygiene and verification processes to mitigate such risks. This incident underscores the growing threat of social engineering attacks targeting the tech industry.",
@@ -130,89 +234,6 @@ const websiteContent = {
                     "label": "Cloud Security Hardening",
                     "url": "/guides/cloud-security-hardening.html",
                     "icon": "fa-cloud"
-                }
-            ]
-        },
-        {
-            "date": "Feb 05 2026",
-            "headline": "Sapiom Secures $15M—Empowers AI Agents with Financial Autonomy",
-            "title": "Sapiom Raises $15M to Enable AI Agents to Purchase Tech Tools",
-            "content": "Sapiom, a startup supported by Accel, has raised $15 million to develop a financial infrastructure that allows AI agents to autonomously purchase technology tools. This innovative platform manages authentication and micropayments for AI agents, facilitating their operational independence. The funding will accelerate Sapiom&#x27;s efforts to integrate this financial layer into existing AI ecosystems, potentially transforming how AI agents interact with technology markets. This development could significantly impact industries relying on AI for automation and efficiency, as it enables AI systems to dynamically acquire resources without human intervention. Sapiom&#x27;s initiative reflects a broader trend towards increasing AI autonomy.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/05/sapiom-raises-15m-to-help-ai-agents-buy-their-own-tech-tools/",
-            "relatedResources": [
-                {
-                    "label": "API Security Best Practices",
-                    "url": "/guides/api-security-best-practices.html",
-                    "icon": "fa-plug"
-                }
-            ]
-        },
-        {
-            "date": "Feb 05 2026",
-            "headline": "Reddit Eyes AI-Powered Search—Aiming for Market Domination",
-            "title": "Reddit Explores AI Search Integration as a Major Growth Opportunity",
-            "content": "Reddit is pursuing AI-driven search capabilities as its next strategic growth area, as revealed during its fourth-quarter earnings call. The company plans to merge traditional and AI-powered search functionalities to enhance user experience and capture a larger market share. Although Reddit&#x27;s search feature is currently not monetized, executives highlighted its vast potential, citing the search market as an untapped opportunity. This move aligns with industry trends where AI integration in search technologies is becoming increasingly prevalent. Reddit&#x27;s initiative could redefine its platform&#x27;s utility, attracting more users and advertisers seeking advanced search capabilities.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/05/reddit-looks-to-ai-search-as-its-next-big-opportunity/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 05 2026",
-            "headline": "AWS Revenue Surges—AI Demand Fuels Record Growth",
-            "title": "AWS Achieves Record Revenue Growth Amidst High Cloud Demand",
-            "content": "Amazon Web Services (AWS) reported its highest revenue growth in 13 quarters during Q4 2025, driven by soaring demand for cloud-based AI solutions. The surge reflects the increasing reliance on AWS infrastructure to support AI deployments across various sectors. This growth trend underscores the pivotal role of cloud services in enabling AI advancements, as organizations seek scalable and robust platforms. AWS&#x27;s performance highlights its competitive edge in the cloud market, as it continues to attract enterprises investing in AI technologies. The sustained demand for cloud resources suggests a promising outlook for AWS and the broader cloud industry.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/05/aws-revenue-continues-to-soar-as-cloud-demand-remains-high/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Cloud Security Hardening",
-                    "url": "/guides/cloud-security-hardening.html",
-                    "icon": "fa-cloud"
-                }
-            ]
-        },
-        {
-            "date": "Feb 05 2026",
-            "headline": "Amazon, Google Lead $375B AI Capex Race—What&#x27;s at Stake?",
-            "title": "Amazon and Google Dominate AI Capex Investments in 2026",
-            "content": "Amazon and Google are leading the AI capital expenditure (capex) race, with Amazon planning a $200 billion investment and Google allocating between $175 billion to $185 billion in 2026. These substantial investments reflect their commitment to advancing AI infrastructure and capabilities. The capex race underscores the fierce competition between tech giants to dominate the AI landscape, with significant implications for innovation and market leadership. The investments are expected to enhance data centers, AI research, and cloud services, driving technological advancements. Industry observers are keenly watching how these investments will shape the future of AI development.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/05/amazon-and-google-are-winning-the-ai-capex-race-but-whats-the-prize/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 05 2026",
-            "headline": "GPU Kernel Optimization—TTT-Discover Outpaces Human Experts 2x",
-            "title": "TTT-Discover Optimizes GPU Kernels Twice as Fast as Experts",
-            "content": "A collaborative effort by researchers from Stanford, Nvidia, and Together AI has led to the development of TTT-Discover, a technique that optimizes GPU kernels twice as fast as human experts. By training during inference, TTT-Discover identifies efficient solutions to complex computational problems, significantly improving performance. This breakthrough demonstrates the potential of AI to enhance hardware efficiency, particularly in fields requiring high computational power. The technique&#x27;s success could lead to widespread adoption in industries relying on GPU-intensive tasks, such as gaming and AI research. The collaboration highlights the importance of cross-institutional efforts in advancing AI capabilities.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/infrastructure/ttt-discover-optimizes-gpu-kernels-2x-faster-than-human-experts-by-training",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 05 2026",
-            "headline": "Silicon Valley Loyalty Shifts—Founders Easily Enticed by Offers",
-            "title": "Loyalty Declines in Silicon Valley as Founders Pursue Better Offers",
-            "content": "A cultural shift is occurring in Silicon Valley, where founders are increasingly open to leaving their companies for more lucrative opportunities. This trend marks a departure from the traditional model where founders remained committed to their ventures. The changing landscape is driven by competitive compensation packages and the dynamic nature of the tech industry. This shift could impact startup stability and innovation, as experienced leaders move between companies. Industry analysts suggest that organizations may need to offer more than financial incentives to retain top talent, emphasizing the importance of culture and growth opportunities.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/model-behavior-loyalty-is-dead-in-silicon-valley/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
                 }
             ]
         }
