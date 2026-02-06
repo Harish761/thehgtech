@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-02-06T02:07:25.263315",
+  "last_updated": "2026-02-06T13:01:32.713862",
   "period": "Last 7 days",
-  "total_groups": 26,
-  "total_victims": 234,
+  "total_groups": 27,
+  "total_victims": 227,
   "groups": [
     {
       "name": "Qilin",
-      "count": 55,
+      "count": 54,
       "victims": [
         {
           "name": "La Fabrica",
@@ -97,7 +97,7 @@
     },
     {
       "name": "Akira",
-      "count": 35,
+      "count": 34,
       "victims": [
         {
           "name": "United Hospital Supply",
@@ -188,7 +188,7 @@
     },
     {
       "name": "Incransom",
-      "count": 21,
+      "count": 19,
       "victims": [
         {
           "name": "AOT Japan",
@@ -260,10 +260,10 @@
       ],
       "countries": [
         "BH",
-        "BR",
         "CL",
         "GE",
-        "JP"
+        "JP",
+        "KH"
       ],
       "trend": "up",
       "trend_percentage": 15,
@@ -457,7 +457,7 @@
     },
     {
       "name": "Play",
-      "count": 13,
+      "count": 11,
       "victims": [
         {
           "name": "ISTS",
@@ -484,18 +484,6 @@
           "discovered_date": "2026-02-01T19:54:45.267168"
         },
         {
-          "name": "Bar S Services",
-          "date": "2026-01-31 17:28:08.719984",
-          "url": "http://k7kg3jqxang3wh7hnmaiokchk7qoebupfgoik6rha6mjpzwupwtj25yd.onion/topic.php?id=D4CfsdWAXpbKY0",
-          "discovered_date": "2026-01-31T17:28:08.719984"
-        },
-        {
-          "name": "NAI Plotkin",
-          "date": "2026-01-31 17:27:29.819516",
-          "url": "http://k7kg3jqxang3wh7hnmaiokchk7qoebupfgoik6rha6mjpzwupwtj25yd.onion/topic.php?id=Pi6eTRCs0flqzv",
-          "discovered_date": "2026-01-31T17:27:29.819516"
-        },
-        {
           "name": "ISTS",
           "date": "2026-02-04T20:25:49+00:00",
           "url": "https://www.ransomware.live/id/SVNUU0BwbGF5",
@@ -518,10 +506,21 @@
           "date": "2026-02-01T19:54:45+00:00",
           "url": "https://www.ransomware.live/id/RGVhdGFrQHBsYXk=",
           "discovered_date": "2026-02-01T19:54:45+00:00"
+        },
+        {
+          "name": "Bar S Services",
+          "date": "2026-01-31T17:28:08+00:00",
+          "url": "https://www.ransomware.live/id/QmFyIFMgU2VydmljZXNAcGxheQ==",
+          "discovered_date": "2026-01-31T17:28:08+00:00"
+        },
+        {
+          "name": "NAI Plotkin",
+          "date": "2026-01-31T17:27:29+00:00",
+          "url": "https://www.ransomware.live/id/TkFJIFBsb3RraW5AcGxheQ==",
+          "discovered_date": "2026-01-31T17:27:29+00:00"
         }
       ],
       "industries": [
-        "Business Services",
         "Construction",
         "Not Found"
       ],
@@ -533,7 +532,7 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        5,
+        3,
         2,
         0,
         0,
@@ -718,6 +717,68 @@
       ]
     },
     {
+      "name": "Anubis",
+      "count": 6,
+      "victims": [
+        {
+          "name": "Advent Aircraft Systems, Inc.",
+          "date": "2026-02-06 02:49:24.673671",
+          "url": "http://om6q4a6cyipxvt7ioudxt24cw4oqu4yodmqzl25mqd2hgllymrgu4aqd.onion/r/4cE5Ccf6iBUOzCID0xKzwRGq1oC8wrzhxArRfv3P2Q+Przzka+yAyMJlIIqWYI5C8+1sML4TNHEZRUGUcmg0SlpvOU1m",
+          "discovered_date": "2026-02-06T02:49:24.673671"
+        },
+        {
+          "name": "Ashby Computers",
+          "date": "2026-02-04 17:51:57.554337",
+          "url": "http://om6q4a6cyipxvt7ioudxt24cw4oqu4yodmqzl25mqd2hgllymrgu4aqd.onion/r/C6FErg2xMJR0Nan08pg5kLBFO5F++dRDHqZIgInQCrAv44Ypb+xpmqAMROOcXqvXyIYQQ912M12Bd1WXjZhha0o2VVFsN3FK",
+          "discovered_date": "2026-02-04T17:51:57.554337"
+        },
+        {
+          "name": "Law Offices of Thomas J Skinner, IV",
+          "date": "2026-02-03 13:54:09.153142",
+          "url": "http://om6q4a6cyipxvt7ioudxt24cw4oqu4yodmqzl25mqd2hgllymrgu4aqd.onion/r/HqTG8pkzmxDBLoP2iOqHs6mqdz2TU5M1mJs8Hax+VGWl2DNHbkEbs9KFscTY8GynwFmqJVu4d4wx9+7NSpTJPMGg0a3VW",
+          "discovered_date": "2026-02-03T13:54:09.153142"
+        },
+        {
+          "name": "Advent Aircraft Systems, Inc.",
+          "date": "2026-02-06T02:49:24+00:00",
+          "url": "https://www.ransomware.live/id/QWR2ZW50IEFpcmNyYWZ0IFN5c3RlbXMsIEluYy5AYW51Ymlz",
+          "discovered_date": "2026-02-06T02:49:24+00:00"
+        },
+        {
+          "name": "Ashby Computers",
+          "date": "2026-02-04T17:51:57+00:00",
+          "url": "https://www.ransomware.live/id/QXNoYnkgQ29tcHV0ZXJzQGFudWJpcw==",
+          "discovered_date": "2026-02-04T17:51:57+00:00"
+        },
+        {
+          "name": "Law Offices of Thomas J Skinner, IV",
+          "date": "2026-02-03T13:54:09+00:00",
+          "url": "https://www.ransomware.live/id/TGF3IE9mZmljZXMgb2YgVGhvbWFzIEogU2tpbm5lciwgSVZAYW51Ymlz",
+          "discovered_date": "2026-02-03T13:54:09+00:00"
+        }
+      ],
+      "industries": [
+        "Business Services",
+        "Manufacturing",
+        "Technology"
+      ],
+      "countries": [
+        "GB",
+        "US"
+      ],
+      "trend": "stable",
+      "trend_percentage": 0,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        2
+      ]
+    },
+    {
       "name": "Rhysida",
       "count": 6,
       "victims": [
@@ -777,69 +838,6 @@
         2,
         0,
         2
-      ]
-    },
-    {
-      "name": "Lynx",
-      "count": 6,
-      "victims": [
-        {
-          "name": "www.trisa.ch",
-          "date": "2026-02-04 13:41:26.430454",
-          "url": "http://lynxchatly4zludmhmi75jrwhycnoqvkxb4prohxmyzf4euf5gjxroad.onion/leaks/69834a9e9c439c5f45efda87",
-          "discovered_date": "2026-02-04T13:41:26.430454"
-        },
-        {
-          "name": "peterboroughpublichealth.ca",
-          "date": "2026-02-03 21:23:19.745421",
-          "url": "http://lynxchatly4zludmhmi75jrwhycnoqvkxb4prohxmyzf4euf5gjxroad.onion/leaks/698253b19c439c5f45deb8ba",
-          "discovered_date": "2026-02-03T21:23:19.745421"
-        },
-        {
-          "name": "www.trisa.ch",
-          "date": "2026-02-04T13:41:26+00:00",
-          "url": "https://www.ransomware.live/id/d3d3LnRyaXNhLmNoQGx5bng=",
-          "discovered_date": "2026-02-04T13:41:26+00:00"
-        },
-        {
-          "name": "peterboroughpublichealth.ca",
-          "date": "2026-02-03T21:23:19+00:00",
-          "url": "https://www.ransomware.live/id/cGV0ZXJib3JvdWdocHVibGljaGVhbHRoLmNhQGx5bng=",
-          "discovered_date": "2026-02-03T21:23:19+00:00"
-        },
-        {
-          "name": "shorelinenyc.com",
-          "date": "2026-01-30T09:29:41+00:00",
-          "url": "https://www.ransomware.live/id/c2hvcmVsaW5lbnljLmNvbUBseW54",
-          "discovered_date": "2026-01-30T09:29:41+00:00"
-        },
-        {
-          "name": "www.roschvisionary.com",
-          "date": "2026-01-30T09:29:06+00:00",
-          "url": "https://www.ransomware.live/id/d3d3LnJvc2NodmlzaW9uYXJ5LmNvbUBseW54",
-          "discovered_date": "2026-01-30T09:29:06+00:00"
-        }
-      ],
-      "industries": [
-        "Manufacturing",
-        "Public Sector"
-      ],
-      "countries": [
-        "CA",
-        "CH",
-        "DE",
-        "US"
-      ],
-      "trend": "stable",
-      "trend_percentage": 0,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        0
       ]
     },
     {
@@ -905,61 +903,6 @@
       ]
     },
     {
-      "name": "Ransomhouse",
-      "count": 5,
-      "victims": [
-        {
-          "name": "[Internal database pack 2] Warren County Sheriff’s Office",
-          "date": "2026-02-05 15:09:46.848580",
-          "url": "http://zohlm7ahjwegcedoz7lrdrti7bvpofymcayotp744qhx6gjmxbuo2yid.onion/r/04e1ecc83f66a962233cb148d505d48dd27e8948",
-          "discovered_date": "2026-02-05T15:09:46.848580"
-        },
-        {
-          "name": "[Apple Data, Additional evidence (Apple Watch) pack-2]Luxshare Precision Industry Co. Ltd.",
-          "date": "2026-02-04 12:11:36.277601",
-          "url": "http://zohlm7ahjwegcedoz7lrdrti7bvpofymcayotp744qhx6gjmxbuo2yid.onion/r/57858fb284b4b8a1e1feadee174d0778591000fe",
-          "discovered_date": "2026-02-04T12:11:36.277601"
-        },
-        {
-          "name": "[Internal database pack 2] Warren County Sheriff’s Office",
-          "date": "2026-02-05T15:09:46+00:00",
-          "url": "https://www.ransomware.live/id/W0ludGVybmFsIGRhdGFiYXNlIHBhY2sgMl0gV2FycmVuIENvdW50eSBTaGVyaWZm4oCZcyBPZmZpY2VAcmFuc29taG91c2U=",
-          "discovered_date": "2026-02-05T15:09:46+00:00"
-        },
-        {
-          "name": "[Apple Data, Additional evidence (Apple Watch) pack-2]Luxshare Precision Industry Co. Ltd.",
-          "date": "2026-02-04T12:11:36+00:00",
-          "url": "https://www.ransomware.live/id/W0FwcGxlIERhdGEsIEFkZGl0aW9uYWwgZXZpZGVuY2UgKEFwcGxlIFdhdGNoKSBwYWNrLTJdTHV4c2hhcmUgUHJlY2lzaW9uIEluZHVzdHJ5IENvLiBMdGQuQHJhbnNvbWhvdXNl",
-          "discovered_date": "2026-02-04T12:11:36+00:00"
-        },
-        {
-          "name": "[Internal database pack 1] Warren County Sheriff’s Office",
-          "date": "2026-01-30T12:13:21+00:00",
-          "url": "https://www.ransomware.live/id/W0ludGVybmFsIGRhdGFiYXNlIHBhY2sgMV0gV2FycmVuIENvdW50eSBTaGVyaWZm4oCZcyBPZmZpY2VAcmFuc29taG91c2U=",
-          "discovered_date": "2026-01-30T12:13:21+00:00"
-        }
-      ],
-      "industries": [
-        "Public Sector",
-        "Technology"
-      ],
-      "countries": [
-        "CN",
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0
-      ]
-    },
-    {
       "name": "Tengu",
       "count": 4,
       "victims": [
@@ -1008,41 +951,41 @@
       ]
     },
     {
-      "name": "Anubis",
+      "name": "Lynx",
       "count": 4,
       "victims": [
         {
-          "name": "Ashby Computers",
-          "date": "2026-02-04 17:51:57.554337",
-          "url": "http://om6q4a6cyipxvt7ioudxt24cw4oqu4yodmqzl25mqd2hgllymrgu4aqd.onion/r/C6FErg2xMJR0Nan08pg5kLBFO5F++dRDHqZIgInQCrAv44Ypb+xpmqAMROOcXqvXyIYQQ912M12Bd1WXjZhha0o2VVFsN3FK",
-          "discovered_date": "2026-02-04T17:51:57.554337"
+          "name": "www.trisa.ch",
+          "date": "2026-02-04 13:41:26.430454",
+          "url": "http://lynxchatly4zludmhmi75jrwhycnoqvkxb4prohxmyzf4euf5gjxroad.onion/leaks/69834a9e9c439c5f45efda87",
+          "discovered_date": "2026-02-04T13:41:26.430454"
         },
         {
-          "name": "Law Offices of Thomas J Skinner, IV",
-          "date": "2026-02-03 13:54:09.153142",
-          "url": "http://om6q4a6cyipxvt7ioudxt24cw4oqu4yodmqzl25mqd2hgllymrgu4aqd.onion/r/HqTG8pkzmxDBLoP2iOqHs6mqdz2TU5M1mJs8Hax+VGWl2DNHbkEbs9KFscTY8GynwFmqJVu4d4wx9+7NSpTJPMGg0a3VW",
-          "discovered_date": "2026-02-03T13:54:09.153142"
+          "name": "peterboroughpublichealth.ca",
+          "date": "2026-02-03 21:23:19.745421",
+          "url": "http://lynxchatly4zludmhmi75jrwhycnoqvkxb4prohxmyzf4euf5gjxroad.onion/leaks/698253b19c439c5f45deb8ba",
+          "discovered_date": "2026-02-03T21:23:19.745421"
         },
         {
-          "name": "Ashby Computers",
-          "date": "2026-02-04T17:51:57+00:00",
-          "url": "https://www.ransomware.live/id/QXNoYnkgQ29tcHV0ZXJzQGFudWJpcw==",
-          "discovered_date": "2026-02-04T17:51:57+00:00"
+          "name": "www.trisa.ch",
+          "date": "2026-02-04T13:41:26+00:00",
+          "url": "https://www.ransomware.live/id/d3d3LnRyaXNhLmNoQGx5bng=",
+          "discovered_date": "2026-02-04T13:41:26+00:00"
         },
         {
-          "name": "Law Offices of Thomas J Skinner, IV",
-          "date": "2026-02-03T13:54:09+00:00",
-          "url": "https://www.ransomware.live/id/TGF3IE9mZmljZXMgb2YgVGhvbWFzIEogU2tpbm5lciwgSVZAYW51Ymlz",
-          "discovered_date": "2026-02-03T13:54:09+00:00"
+          "name": "peterboroughpublichealth.ca",
+          "date": "2026-02-03T21:23:19+00:00",
+          "url": "https://www.ransomware.live/id/cGV0ZXJib3JvdWdocHVibGljaGVhbHRoLmNhQGx5bng=",
+          "discovered_date": "2026-02-03T21:23:19+00:00"
         }
       ],
       "industries": [
-        "Business Services",
-        "Technology"
+        "Manufacturing",
+        "Public Sector"
       ],
       "countries": [
-        "GB",
-        "US"
+        "CA",
+        "CH"
       ],
       "trend": "down",
       "trend_percentage": -5,
@@ -1053,6 +996,55 @@
         2,
         2,
         0,
+        0
+      ]
+    },
+    {
+      "name": "Ransomhouse",
+      "count": 4,
+      "victims": [
+        {
+          "name": "[Internal database pack 2] Warren County Sheriff’s Office",
+          "date": "2026-02-05 15:09:46.848580",
+          "url": "http://zohlm7ahjwegcedoz7lrdrti7bvpofymcayotp744qhx6gjmxbuo2yid.onion/r/04e1ecc83f66a962233cb148d505d48dd27e8948",
+          "discovered_date": "2026-02-05T15:09:46.848580"
+        },
+        {
+          "name": "[Apple Data, Additional evidence (Apple Watch) pack-2]Luxshare Precision Industry Co. Ltd.",
+          "date": "2026-02-04 12:11:36.277601",
+          "url": "http://zohlm7ahjwegcedoz7lrdrti7bvpofymcayotp744qhx6gjmxbuo2yid.onion/r/57858fb284b4b8a1e1feadee174d0778591000fe",
+          "discovered_date": "2026-02-04T12:11:36.277601"
+        },
+        {
+          "name": "[Internal database pack 2] Warren County Sheriff’s Office",
+          "date": "2026-02-05T15:09:46+00:00",
+          "url": "https://www.ransomware.live/id/W0ludGVybmFsIGRhdGFiYXNlIHBhY2sgMl0gV2FycmVuIENvdW50eSBTaGVyaWZm4oCZcyBPZmZpY2VAcmFuc29taG91c2U=",
+          "discovered_date": "2026-02-05T15:09:46+00:00"
+        },
+        {
+          "name": "[Apple Data, Additional evidence (Apple Watch) pack-2]Luxshare Precision Industry Co. Ltd.",
+          "date": "2026-02-04T12:11:36+00:00",
+          "url": "https://www.ransomware.live/id/W0FwcGxlIERhdGEsIEFkZGl0aW9uYWwgZXZpZGVuY2UgKEFwcGxlIFdhdGNoKSBwYWNrLTJdTHV4c2hhcmUgUHJlY2lzaW9uIEluZHVzdHJ5IENvLiBMdGQuQHJhbnNvbWhvdXNl",
+          "discovered_date": "2026-02-04T12:11:36+00:00"
+        }
+      ],
+      "industries": [
+        "Public Sector",
+        "Technology"
+      ],
+      "countries": [
+        "CN",
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
         0
       ]
     },
@@ -1105,42 +1097,38 @@
       ]
     },
     {
-      "name": "Pear",
-      "count": 3,
+      "name": "Tridentlocker",
+      "count": 2,
       "victims": [
         {
-          "name": "Hallauer Law Firm",
-          "date": "2026-01-31T09:19:52+00:00",
-          "url": "https://www.ransomware.live/id/SGFsbGF1ZXIgTGF3IEZpcm1AcGVhcg==",
-          "discovered_date": "2026-01-31T09:19:52+00:00"
+          "name": "TMPartner",
+          "date": "2026-02-06 09:13:25.024678",
+          "url": "http://tridentfrdy6jydwywfx4vx422vnto7pktao2gyx2qdcwjanogq454ad.onion/article/200c65ca-7f2c-48b3-a76b-9d05421afc68",
+          "discovered_date": "2026-02-06T09:13:25.024678"
         },
         {
-          "name": "Rocky Mountain Associated Physicians",
-          "date": "2026-01-30T12:11:45+00:00",
-          "url": "https://www.ransomware.live/id/Um9ja3kgTW91bnRhaW4gQXNzb2NpYXRlZCBQaHlzaWNpYW5zQHBlYXI=",
-          "discovered_date": "2026-01-30T12:11:45+00:00"
-        },
-        {
-          "name": "Atlantic National Trust",
-          "date": "2026-01-30T12:11:09+00:00",
-          "url": "https://www.ransomware.live/id/QXRsYW50aWMgTmF0aW9uYWwgVHJ1c3RAcGVhcg==",
-          "discovered_date": "2026-01-30T12:11:09+00:00"
+          "name": "TMPartner",
+          "date": "2026-02-06T09:13:25+00:00",
+          "url": "https://www.ransomware.live/id/VE1QYXJ0bmVyQHRyaWRlbnRsb2NrZXI=",
+          "discovered_date": "2026-02-06T09:13:25+00:00"
         }
       ],
-      "industries": [],
+      "industries": [
+        "Not Found"
+      ],
       "countries": [
-        "US"
+        "JP"
       ],
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        1,
         0,
         0,
         0,
         0,
         0,
-        0
+        0,
+        2
       ]
     },
     {
@@ -1454,6 +1442,33 @@
         0,
         0,
         2,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pear",
+      "count": 1,
+      "victims": [
+        {
+          "name": "Hallauer Law Firm",
+          "date": "2026-01-31T09:19:52+00:00",
+          "url": "https://www.ransomware.live/id/SGFsbGF1ZXIgTGF3IEZpcm1AcGVhcg==",
+          "discovered_date": "2026-01-31T09:19:52+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        1,
+        0,
+        0,
+        0,
+        0,
         0,
         0
       ]
