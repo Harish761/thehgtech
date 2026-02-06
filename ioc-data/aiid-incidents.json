@@ -1049,19 +1049,19 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-602",
-      "incident_id": 602,
-      "title": "Russia Reportedly Using Artificial Intelligence in Disinformation Campaigns to Erode Western Support",
-      "date": "2025-11-17",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-643",
       "incident_id": 643,
       "title": "Purported Deepfake Video Allegedly Claims Kyiv's Assassination Plan Against President Emmanuel Macro",
       "date": "2025-11-17",
       "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-602",
+      "incident_id": 602,
+      "title": "Russia Reportedly Using Artificial Intelligence in Disinformation Campaigns to Erode Western Support",
+      "date": "2025-11-17",
+      "category": "other",
       "severity": "medium"
     },
     {
@@ -1505,34 +1505,18 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1257",
-      "incident_id": 1257,
-      "title": "Argentine Court Reportedly Annuls Criminal Conviction After Judge Allegedly Used ChatGPT to Draft Ru",
-      "date": "2025-11-08",
-      "category": "other",
-      "severity": "critical"
-    },
-    {
       "id": "AIID-1258",
       "incident_id": 1258,
       "title": "Purported Deepfake Mimicking RT\u00c9 Broadcast Falsely Announced Irish Presidential Candidate Catherine ",
       "date": "2025-11-08",
       "category": "deepfake",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1259",
-      "incident_id": 1259,
-      "title": "ChatGPT Allegedly Encouraged 23-Year-Old Texas User's Suicide During Extended Conversations",
-      "date": "2025-11-08",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 191,
+    "total": 189,
     "last7Days": 18,
     "last30Days": 44
   },
-  "lastUpdated": "2026-02-06T18:52:20.814439+05:30"
+  "lastUpdated": "2026-02-06T22:29:58.905669+05:30"
 }
