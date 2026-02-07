@@ -1495,28 +1495,12 @@
       "date": "2025-11-12",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1253",
-      "incident_id": 1253,
-      "title": "Large-Scale Mental Health Crises Allegedly Associated with ChatGPT Interactions",
-      "date": "2025-11-08",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1258",
-      "incident_id": 1258,
-      "title": "Purported Deepfake Mimicking RT\u00c9 Broadcast Falsely Announced Irish Presidential Candidate Catherine ",
-      "date": "2025-11-08",
-      "category": "deepfake",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 189,
+    "total": 187,
     "last7Days": 18,
     "last30Days": 44
   },
-  "lastUpdated": "2026-02-07T02:18:01.666922+05:30"
+  "lastUpdated": "2026-02-07T08:17:07.459596+05:30"
 }
