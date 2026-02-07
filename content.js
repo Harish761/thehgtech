@@ -5,93 +5,26 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Feb 06 2026",
-            "headline": "KEV Collider Enhances Vulnerability Triage for Security Teams",
-            "title": "New Data Tool KEV Collider Optimizes Exploited Vulnerability Assessment",
-            "content": "The KEV Collider tool has been launched to address the gap between organizational cybersecurity needs and existing vulnerability lists like CISA&#x27;s Known Exploited Vulnerabilities (KEV) Catalog. By integrating data from multiple open-source vulnerability frameworks, KEV Collider helps security teams rapidly prioritize vulnerabilities based on their unique priorities and threat landscape. This tool aims to streamline the vulnerability management process, reducing the time and resources spent on addressing less critical threats. Organizations can now better allocate their defenses against vulnerabilities that pose the greatest risk. The innovation underscores the ongoing need for adaptive and responsive security strategies in the face of evolving cyber threats.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/threat-intelligence/data-tool-triage-exploited-vulnerabilities-make-kev-catalog-more-useful",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 06 2026",
-            "headline": "Illinois Man Guilty—Hacked 600 Snapchat Accounts for Nudes",
-            "title": "Illinois Man Admits to Hacking Hundreds of Snapchat Accounts for Nude Photos",
-            "content": "An Illinois man has pleaded guilty to hacking nearly 600 women&#x27;s Snapchat accounts to steal and distribute nude photographs. The hacker exploited weak security measures to gain unauthorized access, selling and trading the images online. Among the compromised accounts were those targeted at the behest of a former university track coach, who was later convicted of sextortion. This case highlights the persistent threat of social media account breaches and the need for stronger security protocols. Snapchat users are advised to enable two-factor authentication and regularly update passwords to protect against such intrusions.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/man-pleads-guilty-to-hacking-nearly-600-womens-snapchat-accounts/",
+            "headline": "DHS Biometric Tracking Under Privacy Probe—Expands to ICE, OBIM",
+            "title": "DHS Privacy Investigation Targets Biometric Use by ICE, OBIM",
+            "content": "The Department of Homeland Security (DHS) is undergoing a privacy audit focusing on its use of biometric tracking technologies, specifically within Immigration and Customs Enforcement (ICE) and the Office of Biometric Identity Management (OBIM). The investigation, prompted by concerns over privacy violations, may extend to other DHS divisions as well. The audit will scrutinize the agency&#x27;s reliance on biometric markers, such as facial recognition and fingerprinting, in immigration enforcement. This move reflects growing unease about the balance between security and privacy. Stakeholders in the tech and privacy sectors are advised to monitor developments closely as the probe could influence future regulatory measures.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/dhs-ig-audit-ice-obim-biometric-data-privacy-facial-recognition/",
             "relatedResources": []
         },
         {
             "date": "Feb 06 2026",
-            "headline": "CISO Tenure Shrinks—Avoid Career-Ending Mistakes",
-            "title": "Ten Career-Ending Mistakes CISOs Make and How to Avoid Them",
-            "content": "A recent study by Hitch Partners reveals the precarious nature of the Chief Information Security Officer (CISO) role, with an average tenure of just 39 months. High-pressure environments and evolving cyber threats contribute to 77% of CISOs fearing dismissal. Common career-ending mistakes include failing to align security with business goals, neglecting team development, and underestimating insider threats. To succeed, CISOs must foster strong communication with executive leadership and stay ahead of emerging threats. This report underscores the importance of strategic foresight and adaptability in maintaining a successful CISO career.",
+            "headline": "Critical Vulnerabilities Found in n8n Platform—Patch Immediately",
+            "title": "Six Critical Vulnerabilities Discovered in n8n Automation Platform",
+            "content": "Security researchers have identified six vulnerabilities in the n8n workflow automation platform, four of which are rated critical with CVSS scores of 9.4. These vulnerabilities, affecting versions used for building large language model (LLM) powered agents, include remote code execution risks. The flaws expose systems to potential attacks that could compromise business process automation. Organizations utilizing n8n are urged to apply patches immediately to mitigate potential exploitation. This discovery underscores the importance of regular security assessments in automation tools, especially as their integration in business processes increases.",
             "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4128090/ten-career-ending-mistakes-cisos-make-and-how-to-avoid-them.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 06 2026",
-            "headline": "Asian Group TGR-STA-1030 Hacks 70 Global Entities",
-            "title": "Asian State-Backed Group TGR-STA-1030 Breaches Global Government Networks",
-            "content": "The cyber espionage group TGR-STA-1030, operating from Asia, has infiltrated the networks of 70 government and critical infrastructure entities across 37 countries. This previously undocumented group has been active over the past year, according to Palo Alto Networks Unit 42. The attacks primarily targeted sensitive government data and critical infrastructure systems, posing significant national security risks. Organizations in affected regions should review their network defenses and consider threat intelligence sharing to mitigate further risks. This breach highlights the persistent threat posed by state-backed cyber actors on a global scale.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/02/asian-state-backed-group-tgr-sta-1030.html",
+            "sourceUrl": "https://www.csoonline.com/article/4128998/six-more-vulnerabilities-found-in-n8n-automation-platform.html",
             "relatedResources": [
                 {
-                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
-                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
-                    "icon": "fa-shield-virus"
-                }
-            ]
-        },
-        {
-            "date": "Feb 06 2026",
-            "headline": "Flickr Breach Exposes User Data via Third-Party Email",
-            "title": "Flickr Security Incident Linked to Third-Party Email System Breach",
-            "content": "A security incident at Flickr has potentially exposed usernames, email addresses, IP addresses, and activity data due to a vulnerability in a third-party email system. The breach raises concerns about the security of user data managed by external vendors. Flickr users are urged to monitor their accounts for suspicious activity and change their passwords as a precaution. This incident underscores the importance of rigorous third-party risk management and vendor security assessments in safeguarding user information. Organizations should evaluate their third-party dependencies to prevent similar breaches.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/flickr-security-incident-tied-to-third-party-email-system/",
-            "relatedResources": [
-                {
-                    "label": "Third-Party Risk Management",
-                    "url": "/guides/third-party-risk-management.html",
-                    "icon": "fa-handshake"
-                }
-            ]
-        },
-        {
-            "date": "Feb 06 2026",
-            "headline": "Living off AI: New Attacker Strategy Emerges",
-            "title": "Attackers Exploit AI Systems in Evolving Cyber Tradecraft",
-            "content": "Cyber attackers are increasingly exploiting artificial intelligence (AI) systems in a strategy known as &quot;Living off the AI.&quot; This approach involves leveraging AI assistants, agents, and machine control programs (MCP) to execute attacks more efficiently. The shift represents a natural evolution of existing tradecraft, demanding new defensive strategies from cybersecurity teams. Organizations must adapt by enhancing their AI system security and monitoring capabilities. This trend highlights the dual-use nature of AI technologies and the need for vigilant security practices to counteract emerging threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/living-off-the-ai-the-next-evolution-of-attacker-tradecraft/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 06 2026",
-            "headline": "Record DDoS and ESET Flaws—Security Roundup",
-            "title": "Security Roundup: Record DDoS Attack, ESET Vulnerabilities, and More",
-            "content": "Recent cybersecurity developments include a record-breaking Distributed Denial-of-Service (DDoS) attack and vulnerabilities in ESET security products. The DDoS attack targeted major telecommunications providers like AT&amp;T and Verizon, causing widespread service disruptions. Meanwhile, ESET has addressed critical vulnerabilities in its software, urging users to update immediately. Additionally, a man in Poland was arrested for orchestrating DDoS attacks. These incidents emphasize the ongoing challenges in network security and the importance of timely patching and robust DDoS defenses. Organizations should remain vigilant and proactive in addressing these evolving threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/in-other-news-record-ddos-epsteins-hacker-eset-product-vulnerabilities/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 06 2026",
-            "headline": "Ingress NGINX Vulnerabilities—Critical Update Required",
-            "title": "Four New Vulnerabilities Discovered in Ingress NGINX Traffic Controller",
-            "content": "Four security vulnerabilities have been identified in the open-source Ingress NGINX traffic controller, widely used in Kubernetes deployments. Two of these vulnerabilities are particularly severe, with high Common Vulnerability Scoring System (CVSS) scores, though specific CVE IDs were not disclosed. These flaws could potentially allow attackers to disrupt or gain unauthorized access to affected systems. Organizations using Ingress NGINX are advised to upgrade to the latest version immediately to mitigate these risks. This discovery underscores the importance of regular updates and security audits for open-source components in critical infrastructure.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4128439/four-new-vulnerabilities-found-in-ingress-nginx.html",
-            "relatedResources": [
+                    "label": "N8N Analysis",
+                    "url": "/articles/n8n-rce-vulnerability-cve-2025-68613.html",
+                    "icon": "fa-file-alt"
+                },
                 {
                     "label": "CVE Prioritization Guide",
                     "url": "/guides/cve-prioritization-patch-management.html",
@@ -101,21 +34,71 @@ const websiteContent = {
         },
         {
             "date": "Feb 06 2026",
-            "headline": "Zscaler Buys SquareX—Enhances Browser Security",
-            "title": "Zscaler Acquires SquareX to Boost Browser Security Capabilities",
-            "content": "Zscaler has announced the acquisition of SquareX, a browser security firm, aiming to enhance security features by allowing customers to embed lightweight extensions into any browser. This strategic move eliminates the need for third-party browsers and offers a more integrated security solution. Zscaler&#x27;s acquisition reflects a growing trend of consolidating security capabilities to address the increasing threats faced by traditional web browsers. The enhanced security measures are expected to provide more robust protection against phishing and malware attacks. Security professionals should monitor how this integration affects their current security protocols.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/zscaler-acquires-browser-security-firm-squarex/",
+            "headline": "Signal Hijacking Targets German Officials—State Actors Suspected",
+            "title": "Germany Warns of Signal Account Hijacking by State-Sponsored Actors",
+            "content": "Germany&#x27;s domestic intelligence agency has issued an alert regarding phishing attacks targeting high-ranking officials through messaging apps like Signal. These attacks are believed to be orchestrated by state-sponsored threat actors aiming to hijack accounts of senior figures. The phishing campaigns involve sophisticated social engineering tactics to gain unauthorized access to sensitive communications. This warning highlights the escalating threat landscape where secure messaging platforms are increasingly targeted. Organizations and individuals in positions of influence are advised to enhance their cybersecurity measures, particularly around communication channels.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/germany-warns-of-signal-account-hijacking-targeting-senior-figures/",
+            "relatedResources": [
+                {
+                    "label": "Phishing & Security Awareness",
+                    "url": "/guides/phishing-simulation-security-awareness.html",
+                    "icon": "fa-fish"
+                }
+            ]
+        },
+        {
+            "date": "Feb 06 2026",
+            "headline": "DKnife Toolkit Exploits Routers—Malware Delivered in Espionage Campaigns",
+            "title": "DKnife Linux Toolkit Hijacks Router Traffic for Espionage",
+            "content": "A newly uncovered toolkit, DKnife, has been actively used since 2019 to hijack router traffic and deploy malware in espionage operations. This Linux-based toolkit targets edge devices, redirecting traffic to malicious servers for data interception and malware distribution. The toolkit&#x27;s long-term activity suggests a highly organized threat actor with significant resources. Organizations using vulnerable routers are at risk of data breaches and are advised to update firmware and monitor network traffic for anomalies. This discovery adds to the growing list of sophisticated tools used in cyber-espionage.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/dknife-linux-toolkit-hijacks-router-traffic-to-spy-deliver-malware/",
             "relatedResources": []
         },
         {
             "date": "Feb 06 2026",
-            "headline": "ISC Stormcast Highlights—February 6th, 2026 Edition",
-            "title": "Key Insights from ISC Stormcast for February 6th, 2026",
-            "content": "The latest ISC Stormcast podcast provides an overview of current cybersecurity threats and trends, as discussed by the SANS Internet Storm Center. The episode includes updates on recent vulnerabilities, emerging threat actors, and defensive strategies. It serves as a valuable resource for security professionals seeking to stay informed about the evolving cybersecurity landscape. Listeners are encouraged to integrate the discussed insights into their security frameworks to bolster defenses against potential attacks. Regular engagement with such resources can significantly enhance an organization&#x27;s threat awareness and response capabilities.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32688",
+            "headline": "CISA Alerts on SmarterMail RCE Flaw—Ransomware Attacks Increase",
+            "title": "Critical RCE Flaw in SmarterMail Exploited in Ransomware Attacks",
+            "content": "The Cybersecurity &amp; Infrastructure Security Agency (CISA) has issued a warning about a critical remote code execution (RCE) vulnerability, CVE-2026-24423, in SmarterMail. This flaw, which requires no authentication, is being exploited in ransomware attacks, posing a significant threat to affected systems. Organizations using SmarterMail are strongly encouraged to apply available patches immediately to prevent potential ransomware infections. The vulnerability highlights the persistent risk of RCE flaws in widely used communication platforms, emphasizing the need for proactive cybersecurity measures.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-smartermail-rce-flaw-used-in-ransomware-attacks/",
+            "relatedResources": [
+                {
+                    "label": "CVE Tracker",
+                    "url": "/cve-tracker.html",
+                    "icon": "fa-bug"
+                },
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Feb 06 2026",
+            "headline": "EFF Campaigns for Default E2E Encryption—Big Tech Urged to Act",
+            "title": "EFF Pushes Big Tech for Default End-to-End Encryption",
+            "content": "The Electronic Frontier Foundation (EFF) has launched the &quot;Encrypt It Already&quot; campaign, urging major tech companies to implement end-to-end (E2E) encryption by default across their services. This call to action comes amid rising privacy concerns linked to increased AI integration in digital communications. The EFF emphasizes that E2E encryption is crucial for protecting user privacy against unauthorized access and surveillance. As tech giants face mounting pressure, stakeholders in the tech industry should prepare for potential shifts in encryption policies and practices.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cloud-security/encrypt-it-already-pushes-big-tech-e2e-encryption",
             "relatedResources": []
+        },
+        {
+            "date": "Feb 06 2026",
+            "headline": "Supply Chain Attacks&#x27; Hidden Costs—Shai-hulud Worms Spread Widely",
+            "title": "Shai-hulud Worms Highlight Hidden Costs of Supply Chain Attacks",
+            "content": "Recent supply chain attacks involving the Shai-hulud self-propagating worms have demonstrated widespread impact, though the full extent of the damage remains difficult to quantify. These attacks exploit vulnerabilities within interconnected systems, leading to cascading effects across supply chains. The incidents underscore the need for robust security measures to protect against such complex threats. Organizations are advised to conduct thorough risk assessments and enhance monitoring of supply chain partners. This trend highlights the evolving nature of cyber threats and the critical importance of supply chain security.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/application-security/shai-hulud-hidden-cost-supply-chain-attacks",
+            "relatedResources": [
+                {
+                    "label": "Third-Party Risk Management",
+                    "url": "/guides/third-party-risk-management.html",
+                    "icon": "fa-handshake"
+                }
+            ]
         },
         {
             "date": "Mar 23 2026",
@@ -137,26 +120,38 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Feb 06 2026",
-            "headline": "Epstein&#x27;s Legacy Undermines #MeToo—A Societal Reckoning",
-            "title": "How Epstein&#x27;s Influence Continues to Challenge the #MeToo Movement",
-            "content": "Despite Jeffrey Epstein&#x27;s arrest and subsequent death in jail, his legacy of exploiting power dynamics persists, posing a significant challenge to the #MeToo movement. Epstein&#x27;s ideology, which favored wealthy white men, continues to influence societal norms, suggesting a need for deeper systemic change. The movement aimed to hold powerful individuals accountable, but the enduring impact of Epstein&#x27;s network reveals the complexities in achieving justice. This situation underscores the importance of sustained efforts to dismantle entrenched power structures and protect vulnerable populations. Stakeholders in social justice and legal reform are urged to intensify their focus on long-term systemic change.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/874721/epstein-thiel-musk-trump-metoo",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
+            "headline": "OpenClaw AI Out in the Wild—Enterprise Implications",
+            "title": "OpenClaw Marks First Autonomous AI Agents Entering Workforce",
+            "content": "The &quot;OpenClaw moment&quot; signifies a pivotal shift as autonomous AI agents transition from experimental labs to mainstream enterprise environments. Developed by Austrian engineer Peter Steinberger, the Clawdbot project, initiated in November 2025, has evolved into a tool now accessible to the general workforce. This development poses both opportunities and challenges for enterprises as they integrate autonomous agents into daily operations. Organizations must assess the impact on productivity, employee roles, and security protocols. As AI agents become more prevalent, companies should establish guidelines to manage AI interactions and data security. This marks a significant step in AI&#x27;s integration into business processes.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/what-the-openclaw-moment-means-for-enterprises-5-big-takeaways",
+            "relatedResources": []
         },
         {
             "date": "Feb 06 2026",
-            "headline": "AI Scalability Enhanced by Logic-Search Separation",
-            "title": "Decoupling Logic and Search to Boost AI Agent Scalability",
-            "content": "AI researchers have discovered that separating logic from search processes can significantly enhance the scalability of AI agents. This approach addresses the inherent stochastic nature of large language models (LLMs), which can lead to unpredictable outcomes in production environments. By decoupling core workflows from execution strategies, developers can achieve more reliable and scalable AI systems. This advancement is crucial as enterprises transition from generative AI prototypes to production-grade agents capable of handling complex tasks. Technical professionals should explore this methodology to improve the robustness and efficiency of AI deployments.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/how-separating-logic-and-search-boosts-ai-agent-scalability/",
+            "headline": "AI Takes Center Stage in Super Bowl LX Ads",
+            "title": "AI-Driven Ads Dominate Super Bowl LX, Stirring Industry Buzz",
+            "content": "Super Bowl LX witnessed a groundbreaking moment with AI-generated advertisements taking the spotlight. Svedka introduced the first AI-generated Big Game ad, while Anthropic&#x27;s ad sparked a rivalry with OpenAI, highlighting competitive tensions in the AI space. This trend underscores the increasing reliance on AI for creative and strategic marketing efforts. The use of AI in high-profile advertising events like the Super Bowl demonstrates its potential to revolutionize brand engagement and consumer interaction. Marketers should consider the ethical implications and creative possibilities as AI becomes integral to advertising strategies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/06/super-bowl-60-ai-ads-svedka-anthropic-brands-commercials/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 06 2026",
+            "headline": "AI Misuse in Court—Judge Dismisses Case",
+            "title": "Lawyer&#x27;s Overuse of AI in Legal Filings Leads to Case Dismissal",
+            "content": "A recent court case has set a precedent for the misuse of AI in legal proceedings, as a judge dismissed a case due to excessively AI-generated legal filings. This incident highlights the growing concern over the inappropriate application of AI technologies in professional settings. Legal professionals are urged to exercise caution and discernment when integrating AI tools into their practices. The case serves as a warning that over-reliance on AI without proper oversight can undermine the integrity of legal processes. Legal firms should establish clear guidelines for AI use to maintain professional standards.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/02/randomly-quoting-ray-bradbury-did-not-save-lawyer-from-losing-case-over-ai-errors/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 06 2026",
+            "headline": "Claude Enhances WordPress Traffic Analysis",
+            "title": "Claude AI Now Available for WordPress Traffic and Metrics Analysis",
+            "content": "WordPress users can now utilize Claude, an AI tool, to gain insights into web traffic and internal site metrics. This development simplifies the process for website administrators to monitor and analyze site performance using AI-driven analytics. By integrating Claude, WordPress site owners can enhance their understanding of user behavior and site efficiency. This tool is poised to improve decision-making and optimize content strategies. Users should explore the capabilities of Claude to leverage its full potential in enhancing website management.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/06/it-just-got-easier-for-claude-to-check-in-on-your-wordpress-site/",
             "relatedResources": [
                 {
                     "label": "LLM Security & Prompt Injection",
@@ -167,75 +162,41 @@ const websiteContent = {
         },
         {
             "date": "Feb 06 2026",
-            "headline": "Intuit, Uber, State Farm Test AI in Workflows",
-            "title": "Enterprises Trial AI Agents in Operational Workflows",
-            "content": "Intuit, Uber, and State Farm are pioneering the integration of AI agents into their enterprise workflows, signaling a shift from experimental tools to practical applications. These companies are moving beyond simple AI-driven tasks to deploying agents capable of executing complex operations within their systems. This transition marks a significant evolution in AI utilization, promising enhanced efficiency and productivity. The initiative reflects a broader trend of enterprises leveraging AI to streamline processes and improve decision-making. Organizations considering similar integrations should evaluate the potential impact on their operational frameworks.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/intuit-uber-and-state-farm-trial-ai-agents-inside-enterprise-workflows/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 05 2026",
-            "headline": "ICE, CBP Face-Recognition App Fails Verification",
-            "title": "ICE and CBP&#x27;s Face-Recognition App Fails Identity Verification",
-            "content": "The U.S. Immigration and Customs Enforcement (ICE) and Customs and Border Protection (CBP) have faced criticism for their use of Mobile Fortify, a face-recognition app that reportedly fails to accurately verify identities. Despite being used over 100,000 times, the app was not designed for such extensive use and was approved after the Department of Homeland Security (DHS) bypassed its privacy protocols. This situation raises significant privacy and efficacy concerns, particularly for immigrants and citizens subjected to potential misidentification. Stakeholders are urged to reassess the deployment and oversight of biometric technologies within governmental agencies.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/cbp-ice-dhs-mobile-fortify-face-recognition-verify-identity/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 05 2026",
-            "headline": "OpenAI, Anthropic Race to Launch Coding Models",
-            "title": "OpenAI and Anthropic Launch Competing Agentic Coding Models",
-            "content": "OpenAI has introduced a new agentic coding model designed to enhance the capabilities of Codex, its existing coding tool, just minutes after Anthropic unveiled its own model. This rapid succession highlights the competitive landscape in AI-driven coding solutions, with both companies aiming to provide more powerful and efficient tools for developers. OpenAI&#x27;s model promises accelerated coding capabilities, potentially transforming how software is developed and optimized. Developers should stay informed about these advancements to leverage the latest tools for improved productivity and innovation in coding practices.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/05/openai-launches-new-agentic-coding-model-only-minutes-after-anthropic-drops-its-own/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 05 2026",
-            "headline": "Musk&#x27;s Orbital Data Centers—A Vision Takes Shape",
-            "title": "Elon Musk Advances Plans for Orbital AI Data Centers",
-            "content": "Elon Musk is advancing plans to establish orbital AI data centers, a concept that is beginning to take tangible form. These data clusters aim to leverage the unique advantages of space-based infrastructure, such as reduced latency and enhanced global connectivity. The initiative could revolutionize data processing and storage, offering unprecedented capabilities for AI applications. As the vision progresses, stakeholders in technology and space industries should monitor developments closely, as they may present new opportunities and challenges in data management and satellite technology.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/05/elon-musk-is-getting-serious-about-orbital-data-centers/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 05 2026",
-            "headline": "AI Dominates Super Bowl LX Ads",
-            "title": "AI Takes Center Stage in Super Bowl LX Advertisements",
-            "content": "As Super Bowl LX approaches, AI is set to dominate the commercial breaks, echoing the crypto ad trend of previous years. With the Seattle Seahawks facing the New England Patriots, and Bad Bunny headlining the halftime show, AI-driven advertisements are expected to capture significant attention. This shift highlights the growing influence of AI in marketing strategies, as companies seek innovative ways to engage audiences. Marketers and advertisers should consider the implications of AI integration in campaigns, exploring how these technologies can enhance consumer engagement and brand visibility.",
+            "headline": "ChatGPT Coming to CarPlay—Siri Faces Competition",
+            "title": "Apple to Integrate ChatGPT and Others into CarPlay Voice Control",
+            "content": "Apple is reportedly working on integrating third-party chatbot apps, including ChatGPT, into CarPlay, allowing users to choose alternatives to Siri for voice control. This move could significantly alter the in-car digital assistant landscape, offering users more flexibility and personalization options. Previously, accessing third-party chatbots required cumbersome workarounds, but the new integration aims to streamline user experience. This development reflects Apple&#x27;s strategy to enhance CarPlay&#x27;s functionality and user satisfaction. CarPlay users should stay informed about updates to take advantage of these new features.",
             "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/entertainment/874504/super-bowl-lx-ads-big-game",
+            "sourceUrl": "https://www.theverge.com/transportation/875199/apple-carplay-third-party-chatbots-rumor",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Feb 06 2026",
+            "headline": "Opus 4.6 Advances AI Legal Capabilities",
+            "title": "Opus 4.6 Release Sparks Debate on AI as Legal Agents",
+            "content": "The release of Opus 4.6 has reignited discussions about the role of AI in the legal profession. This latest version of the agentic AI tool has shown potential in performing tasks traditionally handled by human lawyers, challenging existing norms. While AI&#x27;s role in legal settings remains controversial, Opus 4.6&#x27;s capabilities suggest a future where AI could augment or even replace certain legal functions. Legal professionals should consider the implications of AI advancements on their practice and explore opportunities for integration while addressing ethical concerns.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/06/maybe-ai-agents-can-be-lawyers-after-all/",
             "relatedResources": []
         },
         {
             "date": "Feb 06 2026",
-            "headline": "$2B Cloud IAM Risk—Recruitment Fraud Exfiltrates Developer Credentials",
-            "title": "Recruitment Fraud Turns Cloud IAM into a $2 Billion Attack Surface",
-            "content": "A sophisticated recruitment fraud scheme has exposed a $2 billion attack surface in cloud Identity and Access Management (IAM) systems. Developers receive seemingly legitimate job offers via LinkedIn, which include coding assessments requiring the installation of malicious packages. These packages exfiltrate sensitive cloud credentials, including GitHub personal access tokens and AWS API keys, from the developer&#x27;s machine. The attack compromises cloud environments, potentially affecting thousands of organizations relying on these platforms. Security experts emphasize the need for enhanced credential hygiene and verification processes to mitigate such risks. This incident underscores the growing threat of social engineering attacks targeting the tech industry.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/security/recruitment-fraud-cloud-iam-2-billion-attack-surface",
-            "relatedResources": [
-                {
-                    "label": "Cloud Security Hardening",
-                    "url": "/guides/cloud-security-hardening.html",
-                    "icon": "fa-cloud"
-                }
-            ]
+            "headline": "New York Considers Data Center Moratorium",
+            "title": "New York Joins States in Proposing Data Center Development Pause",
+            "content": "New York is the latest state to propose legislation halting data center development, joining a national trend driven by concerns over climate impact and energy consumption. Both red and blue states have introduced similar measures, reflecting bipartisan apprehension about the environmental and economic effects of data centers. This legislative push underscores the need for sustainable practices in tech infrastructure development. Companies involved in data center operations should prepare for potential regulatory changes and explore sustainable alternatives to address these concerns.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/new-york-is-the-latest-state-to-consider-a-data-center-pause/",
+            "relatedResources": []
         }
     ],
     "articles": {},
