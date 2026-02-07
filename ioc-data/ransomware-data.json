@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-02-07T02:03:09.709383",
+  "last_updated": "2026-02-07T12:50:55.222644",
   "period": "Last 7 days",
-  "total_groups": 26,
-  "total_victims": 237,
+  "total_groups": 25,
+  "total_victims": 230,
   "groups": [
     {
       "name": "Qilin",
@@ -97,7 +97,7 @@
     },
     {
       "name": "Thegentlemen",
-      "count": 43,
+      "count": 42,
       "victims": [
         {
           "name": "L'Aeroclub",
@@ -710,68 +710,6 @@
       ]
     },
     {
-      "name": "Coinbasecartel",
-      "count": 6,
-      "victims": [
-        {
-          "name": "Logility",
-          "date": "2026-02-06 15:26:08.471798",
-          "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/logility",
-          "discovered_date": "2026-02-06T15:26:08.471798"
-        },
-        {
-          "name": "Logility",
-          "date": "2026-02-06T15:26:08+00:00",
-          "url": "https://www.ransomware.live/id/TG9naWxpdHlAY29pbmJhc2VjYXJ0ZWw=",
-          "discovered_date": "2026-02-06T15:26:08+00:00"
-        },
-        {
-          "name": "Neuviz",
-          "date": "2026-01-31T05:40:34+00:00",
-          "url": "https://www.ransomware.live/id/TmV1dml6QGNvaW5iYXNlY2FydGVs",
-          "discovered_date": "2026-01-31T05:40:34+00:00"
-        },
-        {
-          "name": "CigamSoftware",
-          "date": "2026-01-31T05:39:58+00:00",
-          "url": "https://www.ransomware.live/id/Q2lnYW1Tb2Z0d2FyZUBjb2luYmFzZWNhcnRlbA==",
-          "discovered_date": "2026-01-31T05:39:58+00:00"
-        },
-        {
-          "name": "Pellenc",
-          "date": "2026-01-31T05:39:22+00:00",
-          "url": "https://www.ransomware.live/id/UGVsbGVuY0Bjb2luYmFzZWNhcnRlbA==",
-          "discovered_date": "2026-01-31T05:39:22+00:00"
-        },
-        {
-          "name": "Dolby Laboratories",
-          "date": "2026-01-31T05:38:43+00:00",
-          "url": "https://www.ransomware.live/id/RG9sYnkgTGFib3JhdG9yaWVzQGNvaW5iYXNlY2FydGVs",
-          "discovered_date": "2026-01-31T05:38:43+00:00"
-        }
-      ],
-      "industries": [
-        "Technology"
-      ],
-      "countries": [
-        "BR",
-        "FR",
-        "ID",
-        "US"
-      ],
-      "trend": "stable",
-      "trend_percentage": 0,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        0
-      ]
-    },
-    {
       "name": "Anubis",
       "count": 6,
       "victims": [
@@ -1096,34 +1034,27 @@
       ]
     },
     {
-      "name": "Tengu",
-      "count": 3,
+      "name": "Coinbasecartel",
+      "count": 2,
       "victims": [
         {
-          "name": "megasilver.com.tw",
-          "date": "2026-02-04 20:33:28.193270",
-          "url": "http://longcc4fqrfcqt5lzceutylaxir6h66fp6df3oin6mvwvz6pfdbxc6qd.onion/blog/30e47bb0863906821793d4c00e09821bcae53f5b31419e6964b3a41cee88dec7/",
-          "discovered_date": "2026-02-04T20:33:28.193270"
+          "name": "Logility",
+          "date": "2026-02-06 15:26:08.471798",
+          "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/logility",
+          "discovered_date": "2026-02-06T15:26:08.471798"
         },
         {
-          "name": "megasilver.com.tw",
-          "date": "2026-02-04T20:33:28+00:00",
-          "url": "https://www.ransomware.live/id/bWVnYXNpbHZlci5jb20udHdAdGVuZ3U=",
-          "discovered_date": "2026-02-04T20:33:28+00:00"
-        },
-        {
-          "name": "all Data",
-          "date": "2026-01-31T02:03:56+00:00",
-          "url": "https://www.ransomware.live/id/YWxsIERhdGFAdGVuZ3U=",
-          "discovered_date": "2026-01-31T02:03:56+00:00"
+          "name": "Logility",
+          "date": "2026-02-06T15:26:08+00:00",
+          "url": "https://www.ransomware.live/id/TG9naWxpdHlAY29pbmJhc2VjYXJ0ZWw=",
+          "discovered_date": "2026-02-06T15:26:08+00:00"
         }
       ],
       "industries": [
-        "Not Found"
+        "Technology"
       ],
       "countries": [
-        "N/A",
-        "TW"
+        "US"
       ],
       "trend": "down",
       "trend_percentage": -5,
@@ -1131,9 +1062,9 @@
         0,
         0,
         0,
+        0,
+        0,
         2,
-        0,
-        0,
         0
       ]
     },
@@ -1264,6 +1195,41 @@
       ],
       "countries": [
         "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Tengu",
+      "count": 2,
+      "victims": [
+        {
+          "name": "megasilver.com.tw",
+          "date": "2026-02-04 20:33:28.193270",
+          "url": "http://longcc4fqrfcqt5lzceutylaxir6h66fp6df3oin6mvwvz6pfdbxc6qd.onion/blog/30e47bb0863906821793d4c00e09821bcae53f5b31419e6964b3a41cee88dec7/",
+          "discovered_date": "2026-02-04T20:33:28.193270"
+        },
+        {
+          "name": "megasilver.com.tw",
+          "date": "2026-02-04T20:33:28+00:00",
+          "url": "https://www.ransomware.live/id/bWVnYXNpbHZlci5jb20udHdAdGVuZ3U=",
+          "discovered_date": "2026-02-04T20:33:28+00:00"
+        }
+      ],
+      "industries": [
+        "Not Found"
+      ],
+      "countries": [
+        "TW"
       ],
       "trend": "down",
       "trend_percentage": -5,
@@ -1436,33 +1402,6 @@
       "trend_percentage": -5,
       "daily_counts": [
         1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Pear",
-      "count": 1,
-      "victims": [
-        {
-          "name": "Hallauer Law Firm",
-          "date": "2026-01-31T09:19:52+00:00",
-          "url": "https://www.ransomware.live/id/SGFsbGF1ZXIgTGF3IEZpcm1AcGVhcg==",
-          "discovered_date": "2026-01-31T09:19:52+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
         0,
         0,
         0,
