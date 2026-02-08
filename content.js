@@ -5,102 +5,94 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Feb 07 2026",
-            "headline": "Fake Dubai Prince Scam Nets $2.5M—Tracked to Nigeria",
-            "title": "Nigerian Fraudster Posing as Dubai Crown Prince Scams $2.5M from Businesswoman",
-            "content": "A Romanian businesswoman was defrauded of $2.5 million in a romance scam by a fraudster posing as the Dubai Crown Prince. Investigators tracked the perpetrator to a mansion in Nigeria, where he was masquerading as a philanthropist. The scam highlights the ongoing threat of romance frauds, which often exploit victims&#x27; emotions for financial gain. Security professionals emphasize the importance of verifying identities in online relationships and being cautious of unsolicited requests for money. The case underscores the global reach of cybercriminals and the sophisticated methods they employ to deceive victims.",
-            "source": "GRAHAM CLULEY",
-            "sourceUrl": "https://www.bitdefender.com/en-us/blog/hotforsecurity/fake-dubai-crown-prince-tracked-to-nigerian-mansion-after-2-5m-romance-scam",
+            "headline": "Global Espionage: 155 Nations Targeted in &#x27;Shadow Campaigns&#x27;",
+            "title": "State-Aligned Cyber Group TGR-STA-1030 Targets 155 Countries in Espionage",
+            "content": "A state-aligned cyberespionage group identified as TGR-STA-1030, also known as UNC6619, has launched a widespread operation called &quot;Shadow Campaigns,&quot; targeting government infrastructure across 155 countries. The group&#x27;s activities include sophisticated cyber attacks aimed at extracting sensitive data and disrupting governmental operations. This campaign highlights the increasing threat of state-sponsored cyber activities on a global scale. Security experts warn that such operations could compromise national security and disrupt critical infrastructure. Organizations worldwide are advised to enhance their cybersecurity defenses and monitor for indicators of compromise.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/state-actor-targets-155-countries-in-shadow-campaigns-espionage-op/",
             "relatedResources": []
         },
         {
-            "date": "Feb 07 2026",
-            "headline": "State-Sponsored Hackers Target Unsupported Edge Devices",
-            "title": "Urgent Replacement Needed for Discontinued Edge Devices Amid Cyber Threats",
-            "content": "The U.S. government has issued a warning that state-sponsored hackers are targeting discontinued edge devices, exploiting their lack of security updates. Organizations are urged to replace these unsupported devices to mitigate the risk of cyberattacks. Without regular updates, these devices present vulnerabilities that can be exploited for unauthorized access and data breaches. This advisory highlights the critical need for maintaining up-to-date hardware and software to protect against evolving threats. Security teams should conduct audits to identify and replace any obsolete devices within their networks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/organizations-urged-to-replace-discontinued-edge-devices/",
+            "date": "Feb 06 2026",
+            "headline": "DHS Under Scrutiny—Biometric Tracking Probe Launched",
+            "title": "DHS Privacy Investigation to Examine Biometric Tracking by ICE and OBIM",
+            "content": "The Department of Homeland Security (DHS) is facing a privacy probe focusing on its use of biometric tracking in immigration enforcement, specifically by Immigration and Customs Enforcement (ICE) and the Office of Biometric Identity Management (OBIM). Auditors have indicated the investigation may expand to other DHS components as concerns rise over privacy implications. The probe aims to assess the extent and impact of biometric data collection and its potential misuse. As biometric technologies become more prevalent, the investigation underscores the need for stringent oversight and transparency in their application.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/dhs-ig-audit-ice-obim-biometric-data-privacy-facial-recognition/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 06 2026",
+            "headline": "Critical Flaws Found—n8n Platform Vulnerable to Exploits",
+            "title": "Six Vulnerabilities Discovered in n8n Automation Platform, Four Rated Critical",
+            "content": "Security researchers have uncovered six vulnerabilities in the n8n automation platform, widely used for building large language model (LLM)-powered agents to streamline business processes. Four of these vulnerabilities are classified as critical, with CVSS severity scores of 9.4, posing significant risks of remote code execution. The vulnerabilities span multiple attack vectors, making the platform susceptible to exploitation. Organizations utilizing n8n are urged to apply patches immediately to mitigate potential security breaches. This discovery highlights the importance of regular security assessments in automation tools.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4128998/six-more-vulnerabilities-found-in-n8n-automation-platform.html",
             "relatedResources": [
                 {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
+                    "label": "N8N Analysis",
+                    "url": "/articles/n8n-rce-vulnerability-cve-2025-68613.html",
+                    "icon": "fa-file-alt"
+                },
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
                 }
             ]
         },
         {
-            "date": "Feb 07 2026",
-            "headline": "Signal Phishing Campaign Targets German Officials",
-            "title": "German Authorities Warn of Signal Phishing Targeting Sensitive Sectors",
-            "content": "Germany&#x27;s Federal Office for the Protection of the Constitution and Federal Office for Information Security have issued a joint advisory about a phishing campaign targeting politicians, military, and journalists. The likely state-sponsored threat actor uses Signal phishing tactics to compromise sensitive communications. This campaign demonstrates the increasing sophistication of phishing attacks aimed at high-profile targets. Organizations and individuals in these sectors are advised to enhance their security awareness training and implement multifactor authentication to protect against such threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/02/german-agencies-warn-of-signal-phishing.html",
-            "relatedResources": [
-                {
-                    "label": "Phishing & Security Awareness",
-                    "url": "/guides/phishing-simulation-security-awareness.html",
-                    "icon": "fa-fish"
-                }
-            ]
-        },
-        {
-            "date": "Feb 07 2026",
-            "headline": "BridgePay Outage Caused by Ransomware Attack",
-            "title": "Ransomware Attack Disrupts Services of Payment Platform BridgePay",
-            "content": "BridgePay, a major U.S. payment gateway, has confirmed that a ransomware attack is responsible for a widespread service outage. The attack began on Friday, crippling key systems and causing nationwide disruptions. This incident underscores the vulnerabilities of critical financial infrastructure to ransomware attacks, which can lead to significant operational and financial impacts. Organizations are reminded to implement robust backup and recovery plans, alongside regular security audits, to mitigate the effects of such attacks. BridgePay is working to restore services while collaborating with authorities to investigate the breach.",
+            "date": "Feb 06 2026",
+            "headline": "Signal Hijacking Alert—Germany Warns Senior Officials",
+            "title": "German Intelligence Warns of Signal Account Hijacking Targeting Officials",
+            "content": "Germany&#x27;s domestic intelligence agency has issued a warning about state-sponsored threat actors conducting phishing attacks via messaging apps like Signal, specifically targeting high-ranking officials. The attackers aim to hijack accounts and gain unauthorized access to sensitive communications. This alert underscores the growing sophistication of phishing campaigns and the need for heightened vigilance among government personnel. Officials are advised to implement robust security measures, including two-factor authentication and regular security training, to protect against these threats.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/payments-platform-bridgepay-confirms-ransomware-attack-behind-outage/",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/germany-warns-of-signal-account-hijacking-targeting-senior-figures/",
             "relatedResources": [
                 {
-                    "label": "Ransomware Response Playbook",
-                    "url": "/guides/ransomware-response-playbook.html",
-                    "icon": "fa-biohazard"
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
                 }
             ]
         },
         {
             "date": "Feb 06 2026",
-            "headline": "Claude AI Uncovers 500 Critical Software Flaws",
-            "title": "Claude AI Model Identifies 500 High-Severity Vulnerabilities in Software",
-            "content": "Anthropic&#x27;s latest AI model, Claude Opus 4.6, has discovered 500 high-severity software vulnerabilities during its initial trial. Embedded in a virtual machine, Claude was tasked with analyzing open-source software for zero-day vulnerabilities. This achievement highlights the potential of AI in enhancing cybersecurity by automating the detection of critical flaws. Organizations are encouraged to integrate AI-driven tools into their security processes to proactively identify and address vulnerabilities. This development marks a significant step forward in leveraging AI for cybersecurity defenses.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4128889/claude-ai-finds-500-high-severity-software-vulnerabilities.html",
+            "headline": "DKnife Toolkit—Router Traffic Hijacked for Espionage",
+            "title": "DKnife Linux Toolkit Exploits Routers to Spy and Deliver Malware",
+            "content": "A newly identified toolkit named DKnife has been actively used since 2019 to hijack router traffic at the edge-device level, facilitating espionage campaigns and malware delivery. This toolkit enables attackers to intercept and manipulate network traffic, posing severe risks to network security and data integrity. Organizations using Linux-based routers are particularly vulnerable and should implement stringent security measures, including regular firmware updates and network monitoring, to defend against such threats. The persistence of DKnife underscores the critical need for securing edge devices in network infrastructures.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/dknife-linux-toolkit-hijacks-router-traffic-to-spy-deliver-malware/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 06 2026",
+            "headline": "SmarterMail RCE Flaw—Ransomware Attacks on the Rise",
+            "title": "CISA Alerts on SmarterMail RCE Vulnerability Exploited in Ransomware Attacks",
+            "content": "The Cybersecurity &amp; Infrastructure Security Agency (CISA) has issued an alert regarding CVE-2026-24423, an unauthenticated remote code execution (RCE) vulnerability in SmarterMail that is being exploited in ransomware attacks. The flaw allows attackers to execute arbitrary code without authentication, leading to potential data breaches and service disruptions. Organizations using SmarterMail are advised to apply security patches promptly to mitigate risks. This vulnerability highlights the ongoing threat of ransomware and the critical importance of maintaining up-to-date software.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-smartermail-rce-flaw-used-in-ransomware-attacks/",
             "relatedResources": [
                 {
-                    "label": "Zero-Day Detection Guide",
-                    "url": "/guides/zero-day-detection.html",
-                    "icon": "fa-exclamation-triangle"
+                    "label": "CVE Tracker",
+                    "url": "/cve-tracker.html",
+                    "icon": "fa-bug"
+                },
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
                 }
             ]
         },
         {
             "date": "Feb 06 2026",
-            "headline": "OpenClaw AI Assistant Faces Security Challenges",
-            "title": "Security Concerns Plague OpenClaw AI Assistant&#x27;s Deployment and Removal",
-            "content": "Researchers have identified security issues with the OpenClaw AI assistant, including malicious &quot;skills&quot; and complex configuration settings. These challenges complicate both the installation and removal processes, posing risks to users. The findings highlight the importance of rigorous security assessments for AI tools before deployment. Organizations using AI assistants should ensure thorough vetting of third-party integrations and maintain strict security protocols. This case serves as a reminder of the potential security pitfalls in adopting emerging AI technologies.",
+            "headline": "EFF Pushes Big Tech—Default E2E Encryption Urged",
+            "title": "&#x27;Encrypt It Already&#x27; Campaign Advocates for Default End-to-End Encryption",
+            "content": "The Electronic Frontier Foundation (EFF) has launched the &quot;Encrypt It Already&quot; campaign, urging major tech companies to implement end-to-end encryption (E2E) by default across their services. As privacy concerns escalate amid increased AI usage, the campaign emphasizes the necessity of robust encryption to protect user data from unauthorized access. The EFF argues that E2E encryption is vital for safeguarding privacy and ensuring secure communications. Tech companies are called to prioritize encryption in their product development to address growing security and privacy challenges.",
             "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/application-security/openclaw-insecurities-safe-usage-difficult",
-            "relatedResources": [
-                {
-                    "label": "Third-Party Risk Management",
-                    "url": "/guides/third-party-risk-management.html",
-                    "icon": "fa-handshake"
-                }
-            ]
-        },
-        {
-            "date": "Feb 06 2026",
-            "headline": "Malicious PDFs Linked to Virtual Hard Disk Malware",
-            "title": "Phishing Campaign Uses Fake PDFs to Deliver Malware via Virtual Disks",
-            "content": "A new phishing campaign is distributing malware disguised as PDF documents linked to virtual hard disks. This tactic exploits the common practice of receiving purchase orders or invoices in PDF format, increasing the likelihood of users opening malicious files. The campaign underscores the evolving nature of phishing attacks and the need for users to exercise caution with unexpected attachments. Security professionals recommend implementing advanced email filtering and educating employees about the risks of unsolicited downloads. This strategy highlights the importance of vigilance against deceptive file formats.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4128872/pretend-disk-format-pdfs-harbor-new-dangers-2.html",
-            "relatedResources": [
-                {
-                    "label": "Phishing & Security Awareness",
-                    "url": "/guides/phishing-simulation-security-awareness.html",
-                    "icon": "fa-fish"
-                }
-            ]
+            "sourceUrl": "https://www.darkreading.com/cloud-security/encrypt-it-already-pushes-big-tech-e2e-encryption",
+            "relatedResources": []
         },
         {
             "date": "Mar 23 2026",
@@ -122,11 +114,77 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Feb 07 2026",
-            "headline": "2026 Winter Olympics—AI Tech Transforms Viewer Experience",
-            "title": "AI and Drone Technology Revolutionize 2026 Winter Olympics Viewing",
-            "content": "The 2026 Winter Olympics in Milan and Cortina will offer viewers an unprecedented immersive experience through cutting-edge AI and drone technologies. Drones equipped with &quot;first-person&quot; visualization capabilities will provide dynamic perspectives, while real-time 360-degree replays will enhance the viewing experience. Additionally, the introduction of Olympics GPT, an AI-driven commentary system, aims to deliver personalized insights and analysis. These advancements highlight the growing integration of AI in sports broadcasting, promising to redefine how audiences engage with live events. Viewers should prepare for a more interactive and engaging Olympic Games, setting a new standard for future sports coverage.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/the-technologies-changing-how-youll-watch-the-2026-winter-olympic-games/",
+            "headline": "Super Bowl Ads Go All-In on AI—Crypto Takes Back Seat",
+            "title": "AI Takes Center Stage in Super Bowl LX Commercials",
+            "content": "As Super Bowl LX approaches, AI is set to dominate the commercial breaks, eclipsing the crypto-themed ads of previous years. The Seattle Seahawks and New England Patriots will face off, while AI-generated content will vie for viewers&#x27; attention during the breaks. Last year&#x27;s Google Gemini ad fell short, but this year promises more sophisticated AI-driven campaigns. Advertisers are leveraging AI to create personalized, engaging content that could redefine viewer interaction. This trend reflects AI&#x27;s growing influence in marketing, as companies aim to capture audiences with cutting-edge technology. Professionals should watch for innovative uses of AI that could set new industry standards.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/entertainment/874504/super-bowl-lx-ads-big-game",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 07 2026",
+            "headline": "New York Considers 3-Year Data Center Construction Pause",
+            "title": "New York Lawmakers Propose Temporary Halt on New Data Centers",
+            "content": "New York lawmakers have proposed a three-year moratorium on the construction of new data centers, making it the sixth state to consider such a measure. The bill&#x27;s future remains uncertain, but it reflects growing concerns over environmental impacts and energy consumption of data centers. If passed, the pause could significantly affect the tech industry, particularly cloud service providers and enterprises reliant on data infrastructure. Stakeholders are urged to evaluate their data strategies and consider alternative solutions to mitigate potential disruptions. This move highlights an increasing scrutiny of data center sustainability across the United States.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/07/new-york-lawmakers-propose-a-three-year-pause-on-new-data-centers/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 06 2026",
+            "headline": "OpenClaw&#x27;s Enterprise Impact—5 Key Insights for Businesses",
+            "title": "OpenClaw Moment: Autonomous AI Agents Enter Workforce",
+            "content": "The &quot;OpenClaw moment&quot; marks a pivotal shift as autonomous AI agents transition from experimental labs to practical enterprise applications. Developed by Austrian engineer Peter Steinberger, the Clawdbot project illustrates AI&#x27;s potential to automate complex tasks within businesses. This development signifies increased accessibility of AI tools for the general workforce, potentially enhancing productivity and efficiency. Enterprises must prepare for integration challenges and opportunities associated with autonomous AI deployment. The trend underscores the need for organizations to adapt to rapidly evolving AI capabilities.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/what-the-openclaw-moment-means-for-enterprises-5-big-takeaways",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 06 2026",
+            "headline": "AI-Generated Ads Debut at Super Bowl—Svedka Leads Charge",
+            "title": "Brands Leverage AI for Bold Super Bowl LX Ad Campaigns",
+            "content": "Super Bowl LX will feature a groundbreaking lineup of AI-generated advertisements, with Svedka introducing the first AI-driven Big Game ad. Anthropic and OpenAI&#x27;s rivalry also takes center stage, as brands explore AI&#x27;s creative potential in marketing. These ads demonstrate AI&#x27;s capability to produce engaging content that resonates with diverse audiences. The shift towards AI-generated ads reflects broader trends in digital marketing, where personalization and innovation are key. Marketers should consider the implications of AI in crafting compelling narratives that capture consumer attention.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/06/super-bowl-60-ai-ads-svedka-anthropic-brands-commercials/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 06 2026",
+            "headline": "AI Misuse in Court—Judge Dismisses Overwrought Case",
+            "title": "Judge Rejects Case Due to Lawyer&#x27;s Excessive AI Use",
+            "content": "In a recent legal proceeding, a judge dismissed a case after deeming the lawyer&#x27;s AI-generated filings excessively convoluted. This incident highlights the potential pitfalls of relying too heavily on AI for legal documentation without proper oversight. The case serves as a cautionary tale for legal professionals considering AI tools to streamline processes. Legal practitioners should ensure AI-generated content meets professional standards and enhances, rather than hinders, case presentations. This development underscores the importance of balancing technological innovation with traditional legal practices.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/02/randomly-quoting-ray-bradbury-did-not-save-lawyer-from-losing-case-over-ai-errors/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 06 2026",
+            "headline": "Claude Enhances WordPress—Easier Site Metrics Analysis",
+            "title": "Claude Integrates with WordPress for Improved Site Analytics",
+            "content": "WordPress users can now utilize Claude, an AI tool, to gain insights into web traffic and internal site metrics. This integration allows site administrators to efficiently analyze performance data, enhancing their ability to optimize content and user experience. The update reflects a growing trend towards embedding AI capabilities in content management systems, offering users advanced analytical tools. Site owners should explore Claude&#x27;s features to leverage data-driven decision-making effectively. This development emphasizes the increasing role of AI in website management and performance optimization.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/06/it-just-got-easier-for-claude-to-check-in-on-your-wordpress-site/",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Feb 06 2026",
+            "headline": "ChatGPT Coming to CarPlay—Apple Expands Voice Control Options",
+            "title": "Apple Plans to Integrate ChatGPT with CarPlay Voice Control",
+            "content": "Apple is reportedly working to integrate ChatGPT and other third-party voice assistants into its CarPlay platform, expanding beyond its native Siri. This move would allow users greater flexibility in choosing their preferred chatbot for in-car voice interactions. The integration signifies Apple&#x27;s recognition of the growing popularity of AI-driven voice assistants and its commitment to enhancing user experience. CarPlay users should anticipate more personalized and versatile voice control options, potentially increasing the platform&#x27;s appeal. This development aligns with broader trends of AI integration in consumer technology.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/transportation/875199/apple-carplay-third-party-chatbots-rumor",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
@@ -134,77 +192,11 @@ const websiteContent = {
                     "icon": "fa-skull-crossbones"
                 },
                 {
-                    "label": "SIEM & Log Analysis Guide",
-                    "url": "/guides/siem-log-analysis.html",
-                    "icon": "fa-chart-bar"
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
                 }
             ]
-        },
-        {
-            "date": "Feb 07 2026",
-            "headline": "Moltbook Data Leak—Human Data Exposed by AI Network",
-            "title": "Moltbook AI Social Network Breach Exposes Human Data",
-            "content": "Moltbook, a social network designed for AI agents, inadvertently exposed personal data belonging to real human users. The breach raises significant privacy concerns as Moltbook&#x27;s platform, intended for AI interactions, failed to adequately secure human data. In related news, Apple&#x27;s Lockdown mode successfully thwarted an FBI attempt to access a reporter&#x27;s phone, showcasing its effectiveness in protecting user privacy. Moreover, Elon Musk&#x27;s Starlink has reportedly disrupted Russian military communications, reflecting the geopolitical impact of tech innovations. Users of AI-driven platforms should remain vigilant about data privacy and security measures.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/security-news-this-week-moltbook-the-social-network-for-ai-agents-exposed-real-humans-data/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 07 2026",
-            "headline": "Benchmark Invests $225M—Cerebras Funding Boost",
-            "title": "Benchmark Capital Allocates $225M to Support Cerebras Growth",
-            "content": "Benchmark Capital has announced a $225 million investment to bolster its commitment to Cerebras, a company known for its AI processing capabilities and as a competitor to Nvidia. This funding aims to accelerate Cerebras&#x27; development of advanced AI hardware, particularly its innovative wafer-scale engine technology. Since its initial investment in 2016, Benchmark has supported Cerebras in its quest to revolutionize AI computation. This move underscores the growing demand for powerful AI infrastructure and the competitive landscape in AI hardware development. Stakeholders in AI technology should monitor Cerebras&#x27; progress as it seeks to challenge industry giants.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/06/benchmark-raises-225m-in-special-funds-to-double-down-on-cerebras/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 06 2026",
-            "headline": "Musk&#x27;s $800B Empire—SpaceX and xAI Merge",
-            "title": "Elon Musk Merges SpaceX and xAI, Redefining Founder Influence",
-            "content": "Elon Musk has strategically merged SpaceX and xAI, creating a new model for corporate power in Silicon Valley. With a net worth of $800 billion, Musk&#x27;s empire now rivals the peak market capitalization of General Electric. This merger exemplifies Musk&#x27;s belief that technological success hinges on rapid innovation. By consolidating these entities, Musk aims to streamline operations and enhance synergies between space exploration and AI development. This bold move may inspire other tech leaders to reconsider traditional business structures. Industry professionals should watch for potential shifts in corporate governance and innovation strategies.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/video/how-elon-musk-is-rewriting-the-rules-on-founder-power/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 06 2026",
-            "headline": "SpaceX and xAI Unite—Musk&#x27;s Vision for Tech Dominance",
-            "title": "SpaceX and xAI Merger: Musk&#x27;s Ambitious Tech Integration",
-            "content": "In a groundbreaking move, Elon Musk has merged SpaceX with xAI, aiming to create a comprehensive &quot;everything&quot; business model. This merger reflects Musk&#x27;s strategy to leverage synergies between aerospace and artificial intelligence, potentially setting a new precedent for tech giants. With Musk&#x27;s net worth nearing $800 billion, the merger underscores his influence in reshaping industry norms. His focus on innovation velocity highlights the importance of agility in maintaining competitive advantage. Tech leaders should consider the implications of such integrations on future business models and competitive dynamics.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/podcast/how-far-will-elon-musk-take-the-everything-business-as-spacex-and-xai-merge/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 06 2026",
-            "headline": "Moltbook&#x27;s AI Experiment—Human Data Risks Exposed",
-            "title": "Moltbook&#x27;s AI Social Network Highlights Data Privacy Challenges",
-            "content": "Moltbook, a social network crafted for AI agents, became a focal point for privacy discussions after exposing human data. The platform, designed as a &quot;vibe-coded&quot; Reddit clone for AI interactions, inadvertently allowed human data to be compromised. Launched in January, Moltbook&#x27;s tagline—&quot;Where AI agents share, discuss, and upvote. Humans welcome to observe&quot;—now raises concerns about data protection in AI-driven environments. This incident serves as a reminder of the complexities involved in securing AI platforms. Developers and users should prioritize robust data protection measures to prevent similar breaches.",
-            "source": "Artificial intelligence – MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2026/02/06/1132448/moltbook-was-peak-ai-theater/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 06 2026",
-            "headline": "Kindle Scribe Colorsoft—AI-Powered E-Ink Tablet Debuts",
-            "title": "Amazon Launches Kindle Scribe Colorsoft with AI Features",
-            "content": "Amazon has introduced the Kindle Scribe Colorsoft, a sophisticated e-ink color tablet equipped with AI capabilities. Designed for users who frequently annotate e-books and documents, this device offers advanced features for marking up and highlighting content. Despite its premium price, the Kindle Scribe Colorsoft appeals to professionals seeking a versatile and interactive reading tool. The integration of AI enhances user experience by providing intelligent suggestions and organizational tools. Potential buyers should weigh the investment against the benefits of enhanced productivity and convenience in document management.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/06/kindle-scribe-colorsoft-review-e-ink-color-tablet/",
-            "relatedResources": []
         }
     ],
     "articles": {},
