@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-02-08T02:36:03.630578",
+  "last_updated": "2026-02-08T12:52:11.435078",
   "period": "Last 7 days",
-  "total_groups": 29,
+  "total_groups": 30,
   "total_victims": 300,
   "groups": [
     {
@@ -97,8 +97,20 @@
     },
     {
       "name": "Qilin",
-      "count": 37,
+      "count": 36,
       "victims": [
+        {
+          "name": "AB Data",
+          "date": "2026-02-08 08:37:50.410845",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=df123a44-ad61-32ef-85bb-32ec0433351b",
+          "discovered_date": "2026-02-08T08:37:50.410845"
+        },
+        {
+          "name": "Voyages Robin",
+          "date": "2026-02-08 07:24:49.771242",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=64eec247-e1fb-3bfa-a404-13c12a1911df",
+          "discovered_date": "2026-02-08T07:24:49.771242"
+        },
         {
           "name": "granmanor.org",
           "date": "2026-02-07 22:01:55.230361",
@@ -136,12 +148,6 @@
           "discovered_date": "2026-02-07T21:58:29.377377"
         },
         {
-          "name": "AMR PEMCO",
-          "date": "2026-02-07 13:22:13.779969",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=42e7a2c2-083c-3c91-a1c0-b6fe919afcb2",
-          "discovered_date": "2026-02-07T13:22:13.779969"
-        },
-        {
           "name": "PARIS & MARSEILLE",
           "date": "2026-02-07 20:05:24.754754",
           "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=f352aa9e-1ce3-3a30-a24b-625996b67b50",
@@ -152,38 +158,32 @@
           "date": "2026-02-07 21:57:52.521091",
           "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=18dce9a1-05a7-3618-b8ea-cc23ebe241a8",
           "discovered_date": "2026-02-07T21:57:52.521091"
-        },
-        {
-          "name": "granmanor.org",
-          "date": "2026-02-07T22:01:55+00:00",
-          "url": "https://www.ransomware.live/id/Z3Jhbm1hbm9yLm9yZ0BxaWxpbg==",
-          "discovered_date": "2026-02-07T22:01:55+00:00"
         }
       ],
       "industries": [
         "Energy",
         "Hospitality and Tourism",
-        "Manufacturing",
         "Not Found",
-        "Public Sector"
+        "Public Sector",
+        "Technology"
       ],
       "countries": [
-        "CA",
         "CH",
         "CN",
         "DE",
-        "ES"
+        "ES",
+        "FR"
       ],
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        6,
+        2,
         2,
         7,
         2,
         2,
-        18,
-        0
+        17,
+        4
       ]
     },
     {
@@ -276,8 +276,20 @@
     },
     {
       "name": "Thegentlemen",
-      "count": 20,
+      "count": 22,
       "victims": [
+        {
+          "name": "rea Limpia",
+          "date": "2026-02-08 06:36:02.708042",
+          "url": "http://tezwsse5czllksjb7cwp65rvnk4oobmzti2znn42i43bjdfd2prqqkad.onion",
+          "discovered_date": "2026-02-08T06:36:02.708042"
+        },
+        {
+          "name": "rea Limpia",
+          "date": "2026-02-08T06:36:02+00:00",
+          "url": "https://www.ransomware.live/id/cmVhIExpbXBpYUB0aGVnZW50bGVtZW4=",
+          "discovered_date": "2026-02-08T06:36:02+00:00"
+        },
         {
           "name": "CPQ Ingenieros",
           "date": "2026-02-06T20:11:19+00:00",
@@ -325,21 +337,11 @@
           "date": "2026-02-06T18:45:07+00:00",
           "url": "https://www.ransomware.live/id/TWFyaW5hIEhvbWUgSW50ZXJpb3JzQHRoZWdlbnRsZW1lbg==",
           "discovered_date": "2026-02-06T18:45:07+00:00"
-        },
-        {
-          "name": "Nishiyama Seisakusho",
-          "date": "2026-02-06T18:43:43+00:00",
-          "url": "https://www.ransomware.live/id/TmlzaGl5YW1hIFNlaXNha3VzaG9AdGhlZ2VudGxlbWVu",
-          "discovered_date": "2026-02-06T18:43:43+00:00"
-        },
-        {
-          "name": "BAM - Brand Art Media",
-          "date": "2026-02-06T18:42:28+00:00",
-          "url": "https://www.ransomware.live/id/QkFNIC0gQnJhbmQgQXJ0IE1lZGlhQHRoZWdlbnRsZW1lbg==",
-          "discovered_date": "2026-02-06T18:42:28+00:00"
         }
       ],
-      "industries": [],
+      "industries": [
+        "Not Found"
+      ],
       "countries": [
         "AE",
         "DE",
@@ -356,12 +358,12 @@
         0,
         19,
         0,
-        0
+        2
       ]
     },
     {
       "name": "Play",
-      "count": 17,
+      "count": 16,
       "victims": [
         {
           "name": "Carlton Scale",
@@ -400,12 +402,6 @@
           "discovered_date": "2026-02-07T20:01:24.656689"
         },
         {
-          "name": "KaiserAir",
-          "date": "2026-02-07 20:00:45.738557",
-          "url": "http://k7kg3jqxang3wh7hnmaiokchk7qoebupfgoik6rha6mjpzwupwtj25yd.onion/topic.php?id=WcDTUEyVo87FDG",
-          "discovered_date": "2026-02-07T20:00:45.738557"
-        },
-        {
           "name": "Carlton Scale",
           "date": "2026-02-07T20:04:41+00:00",
           "url": "https://www.ransomware.live/id/Q2FybHRvbiBTY2FsZUBwbGF5",
@@ -422,6 +418,12 @@
           "date": "2026-02-07T20:03:22+00:00",
           "url": "https://www.ransomware.live/id/RVNTIE1ldHJvbkBwbGF5",
           "discovered_date": "2026-02-07T20:03:22+00:00"
+        },
+        {
+          "name": "Ilderton Contracting",
+          "date": "2026-02-07T20:02:43+00:00",
+          "url": "https://www.ransomware.live/id/SWxkZXJ0b24gQ29udHJhY3RpbmdAcGxheQ==",
+          "discovered_date": "2026-02-07T20:02:43+00:00"
         }
       ],
       "industries": [
@@ -443,13 +445,13 @@
         3,
         0,
         0,
-        14,
+        13,
         0
       ]
     },
     {
       "name": "Akira",
-      "count": 16,
+      "count": 15,
       "victims": [
         {
           "name": "TriPartum",
@@ -517,13 +519,13 @@
         "CN",
         "DE",
         "DK",
-        "FR",
-        "GB"
+        "GB",
+        "N/A"
       ],
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        2,
+        1,
         5,
         5,
         2,
@@ -870,13 +872,19 @@
     },
     {
       "name": "Anubis",
-      "count": 4,
+      "count": 5,
       "victims": [
         {
           "name": "Abel Schillinger",
           "date": "2026-02-08 02:14:48.527404",
           "url": "http://om6q4a6cyipxvt7ioudxt24cw4oqu4yodmqzl25mqd2hgllymrgu4aqd.onion/r/x2C+hrHSSEb9PGFSjNsohsM9vzKbUyE9Ia3mQYNblxcub8TAlCi1wEEPW22uP3ypX5fx3SY4GyNhtjXrVV3RHNHZIVHVU",
           "discovered_date": "2026-02-08T02:14:48.527404"
+        },
+        {
+          "name": "Abel Schillinger",
+          "date": "2026-02-08T02:14:48+00:00",
+          "url": "https://www.ransomware.live/id/QWJlbCBTY2hpbGxpbmdlckBhbnViaXM=",
+          "discovered_date": "2026-02-08T02:14:48+00:00"
         },
         {
           "name": "Advent Aircraft Systems, Inc.",
@@ -914,7 +922,7 @@
         0,
         1,
         0,
-        1
+        2
       ]
     },
     {
@@ -999,59 +1007,24 @@
       ]
     },
     {
-      "name": "Nova",
+      "name": "Pear",
       "count": 2,
       "victims": [
         {
-          "name": "Open Retail",
-          "date": "2026-02-07 15:29:30.898988",
-          "url": "http://novadmrkp4vbk2padk5t6pbxolndceuc7hrcq4mjaoyed6nxsqiuzyyd.onion/#open-retail",
-          "discovered_date": "2026-02-07T15:29:30.898988"
+          "name": "San Diego Eye Bank",
+          "date": "2026-02-08 08:36:53.848355",
+          "url": "http://peargxn3oki34c4savcbcfqofjjwjnnyrlrbszfv6ujlx36mhrh57did.onion/Companies/sdeb",
+          "discovered_date": "2026-02-08T08:36:53.848355"
         },
         {
-          "name": "Open Retail",
-          "date": "2026-02-07T15:29:30+00:00",
-          "url": "https://www.ransomware.live/id/T3BlbiBSZXRhaWxAbm92YQ==",
-          "discovered_date": "2026-02-07T15:29:30+00:00"
+          "name": "San Diego Eye Bank",
+          "date": "2026-02-08T08:36:53+00:00",
+          "url": "https://www.ransomware.live/id/U2FuIERpZWdvIEV5ZSBCYW5rQHBlYXI=",
+          "discovered_date": "2026-02-08T08:36:53+00:00"
         }
       ],
       "industries": [
-        "Not Found"
-      ],
-      "countries": [
-        "N/A"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        0
-      ]
-    },
-    {
-      "name": "Everest",
-      "count": 2,
-      "victims": [
-        {
-          "name": "Atlas Air",
-          "date": "2026-02-06 22:48:41.243185",
-          "url": "http://ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad.onion/news/Atlas_Air/",
-          "discovered_date": "2026-02-06T22:48:41.243185"
-        },
-        {
-          "name": "Atlas Air",
-          "date": "2026-02-06T22:48:41+00:00",
-          "url": "https://www.ransomware.live/id/QXRsYXMgQWlyQGV2ZXJlc3Q=",
-          "discovered_date": "2026-02-06T22:48:41+00:00"
-        }
-      ],
-      "industries": [
-        "Transportation/Logistics"
+        "Healthcare"
       ],
       "countries": [
         "US"
@@ -1063,9 +1036,9 @@
         0,
         0,
         0,
-        2,
         0,
-        0
+        0,
+        2
       ]
     },
     {
@@ -1131,6 +1104,60 @@
         1,
         0,
         0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Nova",
+      "count": 1,
+      "victims": [
+        {
+          "name": "Open Retail",
+          "date": "2026-02-07T15:29:30+00:00",
+          "url": "https://www.ransomware.live/id/T3BlbiBSZXRhaWxAbm92YQ==",
+          "discovered_date": "2026-02-07T15:29:30+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "N/A"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "Everest",
+      "count": 1,
+      "victims": [
+        {
+          "name": "Atlas Air",
+          "date": "2026-02-06T22:48:41+00:00",
+          "url": "https://www.ransomware.live/id/QXRsYXMgQWlyQGV2ZXJlc3Q=",
+          "discovered_date": "2026-02-06T22:48:41+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        1,
         0,
         0
       ]
