@@ -5,6 +5,99 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Feb 09 2026",
+            "headline": "Cybersecurity M&amp;A: 34 Deals in January 2026",
+            "title": "CrowdStrike, Infoblox, and Others Lead 34 Cybersecurity M&amp;A Deals in January",
+            "content": "January 2026 saw a flurry of activity in the cybersecurity sector with 34 mergers and acquisitions announced. Prominent companies like CrowdStrike, Infoblox, JumpCloud, LevelBlue, OneSpan, and Radware were involved, signaling a robust market for strategic consolidation. These deals aim to enhance technological capabilities and expand market reach amid increasing cyber threats. The trend reflects a growing need for comprehensive security solutions as organizations face sophisticated attacks. Industry leaders are advised to monitor these developments for potential shifts in market dynamics and competitive landscapes.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/cybersecurity-ma-roundup-34-deals-announced-in-january-2026/",
+            "relatedResources": [
+                {
+                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
+                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
+                    "icon": "fa-shield-virus"
+                }
+            ]
+        },
+        {
+            "date": "Feb 09 2026",
+            "headline": "BeyondTrust Urges Patch for Critical Remote Code Execution Flaw",
+            "title": "Critical RCE Vulnerability Found in BeyondTrust Remote Support Software",
+            "content": "BeyondTrust has issued an urgent advisory for customers to patch a critical remote code execution (RCE) vulnerability in its Remote Support (RS) and Privileged Remote Access (PRA) software. The flaw could allow unauthenticated attackers to execute arbitrary code, posing a severe risk to enterprises relying on these tools for secure remote access. This vulnerability underscores the importance of timely updates and vigilant security practices. Organizations using these products should apply the patch immediately to mitigate potential exploitation. This advisory highlights the persistent challenge of securing remote access solutions in an increasingly remote workforce environment.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/beyondtrust-warns-of-critical-rce-flaw-in-remote-support-software/",
+            "relatedResources": [
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Feb 09 2026",
+            "headline": "AI Skill Malware and 31Tbps DDoS Highlight Cyber Threats",
+            "title": "Weekly Recap: AI Skill Malware, 31Tbps DDoS, and LLM Backdoors",
+            "content": "This week&#x27;s cybersecurity recap reveals diverse threats, including AI skill malware and a massive 31 terabits per second distributed denial-of-service (DDoS) attack. Threat actors are increasingly targeting the interconnected ecosystems of AI, cloud applications, and developer tools. The discovery of backdoors in large language models (LLMs) further emphasizes the evolving threat landscape. Organizations must strengthen defenses across all platforms and remain vigilant against these sophisticated attack vectors. The convergence of technology and cyber threats necessitates a proactive approach to security.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/02/weekly-recap-ai-skill-malware-31tbps.html",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Feb 09 2026",
+            "headline": "SolarWinds Zero-Days Exploited for Initial Access",
+            "title": "SolarWinds Web Help Desk Exploited as Zero-Days in Recent Attacks",
+            "content": "Security researchers have identified that vulnerabilities in SolarWinds Web Help Desk were exploited as zero-days in December 2025. These flaws provided initial access to threat actors, underscoring the ongoing risks associated with unpatched software. The exploitation of these vulnerabilities highlights the critical need for timely updates and robust security measures. Organizations using SolarWinds products should review their security posture and apply necessary patches to prevent similar breaches. This incident serves as a reminder of the persistent threats targeting widely-used IT management solutions.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/recent-solarwinds-flaws-potentially-exploited-as-zero-days/",
+            "relatedResources": [
+                {
+                    "label": "Zero-Day Detection Guide",
+                    "url": "/guides/zero-day-detection.html",
+                    "icon": "fa-exclamation-triangle"
+                }
+            ]
+        },
+        {
+            "date": "Feb 09 2026",
+            "headline": "OpenClaw Adds VirusTotal as Malware Risks Mount",
+            "title": "OpenClaw Integrates VirusTotal Amid Rising Enterprise Security Concerns",
+            "content": "OpenClaw, an open-source AI agent criticized for being &quot;insecure by default,&quot; has integrated VirusTotal&#x27;s malware scanning into its ClawHub skills marketplace. This move follows reports of malicious extensions and unauthorized deployments in enterprise environments. The integration aims to enhance security by providing users with real-time malware scanning capabilities. Security professionals are advised to scrutinize AI tools for potential vulnerabilities and unauthorized usage. This development highlights the balance between innovation and security in the rapidly evolving AI landscape.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4129393/openclaw-integrates-virustotal-malware-scanning-as-security-firms-flag-enterprise-risks.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 09 2026",
+            "headline": "SmarterTools Ransomware Attack via Product Vulnerability",
+            "title": "SmarterTools Customers Hit by Ransomware Through Product Vulnerability",
+            "content": "SmarterTools has confirmed a ransomware attack impacting customers after hackers exploited a vulnerability in its own product. The breach occurred via a compromised data center used for quality control testing, highlighting the risks of vulnerabilities within software supply chains. Affected organizations face potential data loss and operational disruptions. SmarterTools is urging customers to implement recommended security patches and review their security protocols. This incident underscores the importance of securing internal systems to prevent supply chain attacks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/smartertools-hit-by-ransomware-via-vulnerability-in-its-own-product/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Response Playbook",
+                    "url": "/guides/ransomware-response-playbook.html",
+                    "icon": "fa-biohazard"
+                }
+            ]
+        },
+        {
+            "date": "Feb 09 2026",
+            "headline": "DKnife AitM Framework Targets Network Gateways",
+            "title": "DKnife Framework Exploits Network Gateways in Long-Running AitM Campaign",
+            "content": "Cisco Talos researchers have uncovered a China-linked adversary-in-the-middle (AitM) framework, named DKnife, targeting network gateways. Active since 2019, DKnife intercepts and manipulates in-transit traffic, posing a significant threat to network security. Organizations using vulnerable network gateways should enhance monitoring and apply security updates to mitigate risks. This discovery highlights the persistent threat of AitM attacks and the need for comprehensive network security strategies. The ongoing campaign reflects the sophistication and persistence of state-sponsored threat actors.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4129383/dknife-targets-network-gateways-in-long-running-aitm-campaign.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 09 2026",
             "headline": "Top CIAM Tools—Enhancing Customer Identity Security",
             "title": "Leading CIAM Solutions to Strengthen Customer Identity and Access Management",
             "content": "CSO Online has curated a list of top Customer Identity and Access Management (CIAM) tools, highlighting their role in bolstering security for customer interactions. CIAM, a subset of Identity and Access Management (IAM), focuses on authenticating and managing customer identities. These tools are critical for businesses aiming to secure customer data while providing seamless user experiences. With the rise of digital services, robust CIAM solutions help mitigate risks associated with unauthorized access and data breaches. Organizations are encouraged to evaluate these tools to enhance security frameworks and align with compliance requirements.",
@@ -15,83 +108,6 @@ const websiteContent = {
                     "label": "Securing AI/ML Pipelines",
                     "url": "/guides/securing-ai-ml-pipelines.html",
                     "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 08 2026",
-            "headline": "Tirith Tool—Stops Command-Line Homoglyph Attacks",
-            "title": "Tirith: Open-Source Tool Mitigates Command-Line Homoglyph Threats",
-            "content": "A new open-source tool named Tirith has been released to combat homoglyph attacks in command-line environments. This cross-platform utility analyzes URLs in typed commands to detect and block malicious homoglyphs, which are deceptive characters resembling legitimate ones. Such attacks can lead to the execution of harmful commands, posing risks to system integrity. Tirith&#x27;s introduction is timely, given the increasing sophistication of command-line attacks targeting developers and IT professionals. Users are advised to integrate Tirith into their security practices to safeguard against these subtle but dangerous threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-tool-blocks-imposter-attacks-disguised-as-safe-commands/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 07 2026",
-            "headline": "Shadow Campaigns—Global Espionage Hits 155 Nations",
-            "title": "State-Aligned Group TGR-STA-1030 Launches Global &#x27;Shadow Campaigns&#x27;",
-            "content": "A state-aligned cyberespionage group, identified as TGR-STA-1030/UNC6619, has conducted extensive operations known as &quot;Shadow Campaigns,&quot; targeting government infrastructures across 155 countries. This global-scale espionage highlights the persistent threat posed by sophisticated state actors. The campaigns involve exploiting vulnerabilities in government networks to gather intelligence, potentially impacting national security and diplomatic relations. Organizations in the public sector are urged to enhance their cybersecurity measures and monitor for indicators of compromise associated with TGR-STA-1030 activities.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/state-actor-targets-155-countries-in-shadow-campaigns-espionage-op/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 06 2026",
-            "headline": "DHS Probes ICE&#x27;s Biometric Tracking Practices",
-            "title": "DHS Launches Privacy Probe into ICE and OBIM Biometric Use",
-            "content": "The Department of Homeland Security (DHS) has initiated a privacy investigation into the use of biometric tracking by Immigration and Customs Enforcement (ICE) and the Office of Biometric Identity Management (OBIM). This probe will examine the increasing reliance on biometric markers, such as facial recognition and fingerprints, in immigration enforcement. The investigation may extend to other DHS components, reflecting growing concerns over privacy and civil liberties. Stakeholders are advised to remain informed about potential policy changes that could arise from this scrutiny.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/dhs-ig-audit-ice-obim-biometric-data-privacy-facial-recognition/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 06 2026",
-            "headline": "Critical Flaws in n8n Platform—Urgent Patching Needed",
-            "title": "Six Critical Vulnerabilities Discovered in n8n Automation Platform",
-            "content": "Security researchers have identified six vulnerabilities in the n8n workflow automation platform, with four rated as critical, each carrying a CVSS score of 9.4. These flaws, including remote code execution capabilities, threaten the security of systems integrating n8n for business process automation. Organizations using n8n for LLM-powered agents should prioritize patching to prevent potential exploitation. The discovery underscores the need for rigorous security assessments in automation tools that connect sensitive business operations.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4128998/six-more-vulnerabilities-found-in-n8n-automation-platform.html",
-            "relatedResources": [
-                {
-                    "label": "N8N Analysis",
-                    "url": "/articles/n8n-rce-vulnerability-cve-2025-68613.html",
-                    "icon": "fa-file-alt"
-                },
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Feb 06 2026",
-            "headline": "Signal Hijacking—Germany Warns High-Ranking Targets",
-            "title": "German Intelligence Warns of Signal Phishing Targeting Officials",
-            "content": "Germany&#x27;s domestic intelligence agency has issued a warning about state-sponsored threat actors targeting high-ranking individuals through phishing attacks on messaging apps like Signal. These campaigns aim to hijack accounts, potentially compromising sensitive communications. The warning comes amid a surge in phishing tactics exploiting trusted platforms to reach influential targets. High-profile individuals and their security teams are urged to enhance vigilance and implement robust authentication measures to protect against these sophisticated threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/germany-warns-of-signal-account-hijacking-targeting-senior-figures/",
-            "relatedResources": [
-                {
-                    "label": "MITRE ATT&CK Mapping",
-                    "url": "/guides/mitre-attack-mapping.html",
-                    "icon": "fa-map"
-                }
-            ]
-        },
-        {
-            "date": "Feb 06 2026",
-            "headline": "DKnife Toolkit—Router Hijacking for Espionage",
-            "title": "DKnife Toolkit Exploits Routers to Deliver Malware in Espionage",
-            "content": "The DKnife toolkit, active since 2019, has been identified as hijacking router traffic to facilitate espionage campaigns and malware delivery. This toolkit operates at the edge-device level, redirecting network traffic to malicious endpoints. Such capabilities pose significant risks to organizations relying on vulnerable routers, potentially leading to data breaches and unauthorized surveillance. Security professionals are advised to audit their network infrastructure and apply necessary updates to mitigate the threat posed by DKnife.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/dknife-linux-toolkit-hijacks-router-traffic-to-spy-deliver-malware/",
-            "relatedResources": [
-                {
-                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
-                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
-                    "icon": "fa-shield-virus"
                 }
             ]
         },
@@ -114,83 +130,95 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Feb 08 2026",
-            "headline": "AI Dominates Super Bowl LX Ads—Crypto Era Over",
-            "title": "AI-Powered Commercials Take Center Stage at Super Bowl LX",
-            "content": "As Super Bowl LX approaches, AI is set to dominate the advertising space, reminiscent of the crypto craze in previous years. With the Seattle Seahawks facing the New England Patriots, the commercial breaks promise to be filled with AI-generated content. Last year&#x27;s attempt by Google Gemini to showcase AI in ads didn&#x27;t meet expectations, but this year brands are doubling down on AI technology to capture audience attention. The shift highlights a growing trend where AI is increasingly utilized for creative and marketing purposes, offering new opportunities and challenges for advertisers. Companies are leveraging AI to create more personalized and engaging content, signaling a broader adoption of AI in mainstream media.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/entertainment/874504/super-bowl-lx-ads-big-game",
+            "date": "Feb 09 2026",
+            "headline": "No NY Firms Admit AI Job Cuts—Transparency Law Tested",
+            "title": "New York&#x27;s Transparency Law Reveals No AI-Driven Job Losses Yet",
+            "content": "Nearly a year after New York state mandated companies to disclose AI-driven job losses, no firm has reported such layoffs. The law requires businesses to specify if &quot;technological innovation or automation&quot; led to job cuts. Despite widespread fears of AI replacing human jobs, the data suggests either minimal impact or reluctance to disclose. This raises questions about the effectiveness of the law in capturing the true influence of AI on employment. Companies may be using AI in ways that don&#x27;t directly result in layoffs, or they might be hesitant to report due to reputational concerns. Professionals should monitor how this regulatory landscape evolves and its implications for workforce planning.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/no-company-has-admitted-to-replacing-workers-with-ai-in-new-york/",
             "relatedResources": []
         },
         {
-            "date": "Feb 08 2026",
-            "headline": "New York Targets AI—Proposes Content Labels, Data Center Pause",
-            "title": "New York State Proposes AI Content Labels and Data Center Moratorium",
-            "content": "New York&#x27;s state legislature is considering two significant bills aimed at regulating the AI industry. The proposed New York Fundamental Artificial Intelligence Requirements in News Act (NY FAIR News Act) would mandate clear labeling on AI-generated content to ensure transparency for consumers. Additionally, a separate bill seeks to impose a three-year moratorium on new data center construction to address environmental and infrastructure concerns. These legislative efforts reflect growing apprehension about AI&#x27;s societal impact and the environmental footprint of data centers. If passed, these measures could influence similar regulatory actions in other states, prompting tech companies to adapt their strategies.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/875501/new-york-is-considering-two-bills-to-rein-in-the-ai-industry",
+            "date": "Feb 09 2026",
+            "headline": "AI to Replace Nuclear Treaties? Experts Divided",
+            "title": "Satellite Surveillance and AI Eyed as Nuclear Treaty Alternatives",
+            "content": "With the expiration of the last major nuclear arms treaty between the US and Russia, some experts propose using AI, satellite surveillance, and human reviewers as substitutes. This technological approach aims to monitor nuclear activities without formal treaties. However, skepticism remains about AI&#x27;s reliability in such high-stakes scenarios, given the potential for errors and misinterpretations. The shift reflects a broader trend towards leveraging AI for national security, yet highlights the challenges of ensuring accuracy and trust. Policymakers and security professionals must weigh the benefits against the risks of relying on AI for critical international agreements.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/satellites-ai-nuclear-treaties/",
             "relatedResources": []
         },
         {
-            "date": "Feb 08 2026",
-            "headline": "Crypto.com Acquires AI.com for $70M—Pre-Super Bowl Move",
-            "title": "Crypto.com Makes Record-Breaking $70M Purchase of AI.com Domain",
-            "content": "In a bold move ahead of Super Bowl LX, Crypto.com has acquired the AI.com domain for a staggering $70 million, setting a new record in domain acquisitions. This strategic purchase underscores the intersection of AI and cryptocurrency, as companies seek to capitalize on AI&#x27;s growing influence. The acquisition highlights the crypto industry&#x27;s willingness to invest heavily in digital assets, despite recent market volatility. As AI gains prominence, owning a prime domain like AI.com could provide Crypto.com with significant branding and strategic advantages. This move also signals a broader trend of tech companies investing in AI-related assets to strengthen their market presence.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/08/crypto-com-places-70m-bet-on-ai-com-domain-ahead-of-super-bowl/",
-            "relatedResources": [
-                {
-                    "label": "Active Directory Security",
-                    "url": "/guides/active-directory-security-hardening.html",
-                    "icon": "fa-sitemap"
-                }
-            ]
-        },
-        {
-            "date": "Feb 08 2026",
-            "headline": "Controversial AI Film Project Faces Mixed Reactions",
-            "title": "Debate Continues Over AI-Driven &#x27;Magnificent Ambersons&#x27; Film Project",
-            "content": "The AI-driven project to recreate the classic film &#x27;The Magnificent Ambersons&#x27; continues to spark debate within the industry. While some critics have softened their stance, acknowledging the project&#x27;s technical achievements, others remain concerned about the ethical implications of using AI in creative arts. The project utilizes advanced AI algorithms to simulate the directorial style of Orson Welles, raising questions about authenticity and artistic integrity. This initiative reflects a broader trend of AI&#x27;s encroachment into creative domains, prompting discussions about the role of human creativity versus machine-generated content. As AI technology advances, the industry must grapple with these complex ethical challenges.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/08/okay-im-slightly-less-mad-about-that-magnificent-ambersons-ai-project/",
+            "date": "Feb 09 2026",
+            "headline": "MIT Launches AI Newsletter—Explores Real-World Applications",
+            "title": "&quot;Making AI Work&quot; Newsletter Debuts to Explore AI&#x27;s Practical Uses",
+            "content": "MIT Technology Review has launched &quot;Making AI Work,&quot; a newsletter dedicated to exploring the practical applications of artificial intelligence. The publication aims to dissect AI&#x27;s limitations, potential dangers, and its growing energy demands. It will delve into how generative AI tools are used in fields such as coding and scientific research. This initiative reflects a growing need to understand AI&#x27;s tangible impact across various sectors. As AI continues to evolve, professionals must stay informed about its capabilities and challenges to leverage its potential effectively. Subscribers can expect insights into AI&#x27;s role in shaping the future of technology and industry.",
+            "source": "MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2026/02/09/1132462/ai-newsletter-professional-applications/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
                     "url": "/ransomware-tracker.html",
                     "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Active Directory Security",
-                    "url": "/guides/active-directory-security-hardening.html",
-                    "icon": "fa-sitemap"
                 }
             ]
         },
         {
-            "date": "Feb 08 2026",
-            "headline": "Super Bowl LX Ads Feature AI-Generated Content from Top Brands",
-            "title": "Brands Leverage AI for Innovative Super Bowl LX Advertisements",
-            "content": "Super Bowl LX is set to feature groundbreaking AI-generated advertisements from major brands like Svedka and Anthropic. Svedka is pioneering the first AI-generated ad for the Big Game, while Anthropic is using its ad to highlight its rivalry with OpenAI. These ads demonstrate the increasing reliance on AI technology to create engaging and personalized marketing content. The trend underscores AI&#x27;s transformative impact on advertising, as companies seek to differentiate themselves in a competitive market. By harnessing AI&#x27;s capabilities, brands can deliver unique and memorable experiences to audiences, setting a new standard for future advertising campaigns.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/08/super-bowl-60-ai-ads-svedka-anthropic-brands-commercials/",
-            "relatedResources": []
+            "date": "Feb 09 2026",
+            "headline": "AI&#x27;s Role in ETF-Driven Crypto Markets—A Mixed Bag",
+            "title": "AI&#x27;s Influence on XRP and ETF-Driven Cryptocurrency Markets Examined",
+            "content": "Cryptocurrency markets, once volatile and reactive to headlines, are now influenced by more complex forces, including AI and exchange-traded funds (ETFs). AI tools analyze vast datasets to predict market movements, but their effectiveness in the current slow-moving market is uncertain. The shift from rapid sentiment-driven changes to ETF-driven stability presents challenges for AI models, which may struggle to adapt. Investors and traders should be cautious about over-relying on AI predictions in this evolving landscape. Understanding AI&#x27;s capabilities and limitations is crucial for navigating these ETF-driven markets effectively.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/what-ai-can-and-cant-tell-us-about-xrp-in-etf-driven-markets/",
+            "relatedResources": [
+                {
+                    "label": "React Analysis",
+                    "url": "/articles/react2shell-cve-2025-55182-react-vulnerability.html",
+                    "icon": "fa-file-alt"
+                },
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
         },
         {
-            "date": "Feb 07 2026",
-            "headline": "New York Eyes Data Center Moratorium—Environmental Concerns Rise",
-            "title": "New York Lawmakers Push for Three-Year Freeze on Data Center Construction",
-            "content": "New York is considering a three-year pause on new data center construction, joining at least five other states in addressing environmental and infrastructure concerns. The proposed legislation reflects growing awareness of the environmental impact of data centers, which are significant energy consumers. If enacted, the moratorium could slow the rapid expansion of data infrastructure in the state, affecting tech companies reliant on data center growth. This move is part of a broader trend of states reevaluating the balance between technological advancement and environmental sustainability. Companies may need to explore alternative solutions to meet their data processing needs while adhering to potential new regulations.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/07/new-york-lawmakers-propose-a-three-year-pause-on-new-data-centers/",
-            "relatedResources": []
+            "date": "Feb 09 2026",
+            "headline": "Chinese AI Models Lead Open-Source as West Retreats",
+            "title": "Chinese Developers Dominate Open-Source AI Amid Western Pullback",
+            "content": "Chinese AI developers are increasingly dominating the open-source landscape as Western labs like OpenAI, Anthropic, and Google face pressures to limit their models. These Chinese models are designed to run on commodity hardware, making them accessible and powerful for a wide range of applications. The trend indicates a shift in AI innovation towards more open and collaborative approaches outside Western constraints. This development could reshape global AI dynamics, offering new opportunities and challenges for developers worldwide. Professionals should consider the implications of this shift for open-source collaboration and innovation.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/chinese-ai-models-175k-unprotected-systems-western-retreat/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
         },
         {
-            "date": "Feb 06 2026",
-            "headline": "OpenClaw Moment—AI Agents Enter Workforce",
-            "title": "OpenClaw Marks AI&#x27;s Transition from Lab to Enterprise Use",
-            "content": "The &quot;OpenClaw moment&quot; signifies a pivotal development as autonomous AI agents transition from experimental projects to practical applications in the workforce. Originally developed by Austrian engineer Peter Steinberger as the hobby project &quot;Clawdbot,&quot; these AI agents have now moved into enterprise environments. This shift demonstrates AI&#x27;s growing capability to perform complex tasks independently, raising questions about the future of work and the role of human oversight. Enterprises must consider the implications of integrating autonomous AI agents, including potential productivity gains and ethical considerations. This development marks a significant milestone in AI&#x27;s evolution, with far-reaching impacts on various industries.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/what-the-openclaw-moment-means-for-enterprises-5-big-takeaways",
+            "date": "Feb 09 2026",
+            "headline": "Goldman Sachs Tests AI Agents for Complex Tasks",
+            "title": "Goldman Sachs Partners with Anthropic for Autonomous AI Agents",
+            "content": "Goldman Sachs is advancing its use of artificial intelligence by developing autonomous AI agents in collaboration with startup Anthropic. These agents, powered by Anthropic&#x27;s Claude model, are designed to handle complex, process-heavy tasks autonomously. This initiative represents a significant step in automating financial operations, potentially improving efficiency and accuracy. The move aligns with broader trends of integrating AI into financial services to streamline processes. Financial professionals should watch for developments in AI-driven automation as it could transform industry practices and operational strategies.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/goldman-sachs-tests-autonomous-ai-agents-for-process-heavy-work/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 09 2026",
+            "headline": "OpenAI Super Bowl Ad Hoax—No Leak, Just a Fake",
+            "title": "OpenAI&#x27;s Alleged Super Bowl Ad Leak Proven to Be a Hoax",
+            "content": "OpenAI faced a peculiar situation when rumors of a &quot;leaked&quot; Super Bowl ad spread, only to be debunked as a hoax. The supposed ad, featuring earbuds and a shiny orb, was never actually produced by OpenAI. This incident highlights the challenges companies face with misinformation, especially during high-profile events like the Super Bowl. It underscores the importance of verifying information before it spreads widely. Tech professionals should remain vigilant against such misinformation and ensure accurate communication to maintain credibility in the industry.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/875615/openai-super-bowl-ai-hardware-leak-hoax-fake",
             "relatedResources": []
         }
     ],
