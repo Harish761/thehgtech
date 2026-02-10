@@ -1527,28 +1527,12 @@
       "date": "2025-11-14",
       "category": "deepfake",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-6",
-      "incident_id": 6,
-      "title": "Microsoft's TayBot Allegedly Posts Racist, Sexist, and Anti-Semitic Content to Twitter",
-      "date": "2025-11-12",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-40",
-      "incident_id": 40,
-      "title": "COMPAS Algorithm Reportedly Performs Poorly in Crime Recidivism Prediction",
-      "date": "2025-11-12",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 193,
+    "total": 191,
     "last7Days": 7,
     "last30Days": 37
   },
-  "lastUpdated": "2026-02-10T19:18:09.459311+05:30"
+  "lastUpdated": "2026-02-10T22:45:31.899976+05:30"
 }
