@@ -470,13 +470,13 @@
         color: rgba(255, 255, 255, 0.9) !important;
     }
 
-    /* TI Hero text background for readability */
+    /* TI Hero content - transparent on mobile (left-aligned design) */
     .ti-hero .hero-content,
     .ti-hero>div {
-        background: rgba(0, 0, 0, 0.5) !important;
-        border-radius: 16px !important;
-        padding: 1rem !important;
-        backdrop-filter: blur(10px) !important;
+        background: transparent !important;
+        border-radius: 0 !important;
+        padding: 0 1rem !important;
+        backdrop-filter: none !important;
     }
 
     /* Horizontal stats row - Optimized for 5 items */

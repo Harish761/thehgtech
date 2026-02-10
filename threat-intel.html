@@ -213,9 +213,13 @@
             --text-muted: #888888;
             --border: rgba(255, 255, 255, 0.1);
             --glass: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --accent-primary: #00D9FF;
+            --accent-secondary: #0066FF;
             --accent-cyan: #00D9FF;
             --accent-red: #FF3D3D;
             --accent-green: #22C55E;
+            --accent-purple: #9d4edd;
             --glow-cyan: rgba(0, 217, 255, 0.3);
             --glow-red: rgba(255, 61, 61, 0.3);
             --glow-green: rgba(0, 255, 136, 0.3);
@@ -232,11 +236,10 @@
 
         /* Header CSS moved to header.css */
 
-        /* ========== PREMIUM HERO (Cyan/Blue Theme) ========== */
+        /* ========== PREMIUM HERO (Left-Aligned CVE Style - Cyan) ========== */
         .ti-hero {
             position: relative;
             padding: 10rem 2rem 6rem;
-            text-align: center;
             overflow: hidden;
             background: var(--bg-primary);
         }
@@ -296,13 +299,13 @@
             position: absolute;
             width: 4px;
             height: 4px;
-            background: var(--accent-cyan);
+            background: var(--accent-primary);
             border-radius: 50%;
             opacity: 0.4;
             animation: particleFloat 15s infinite ease-in-out;
         }
 
-        /* Particle positions and delays */
+        /* Particle positions */
         .hero-particles span:nth-child(1) {
             left: 10%;
             top: 20%;
@@ -313,7 +316,7 @@
             left: 20%;
             top: 80%;
             animation-delay: 2s;
-            background: #0066ff;
+            background: var(--accent-secondary);
         }
 
         .hero-particles span:nth-child(3) {
@@ -339,7 +342,7 @@
             left: 80%;
             top: 30%;
             animation-delay: 5s;
-            background: #0066ff;
+            background: var(--accent-secondary);
         }
 
         .hero-particles span:nth-child(7) {
@@ -352,7 +355,7 @@
             left: 75%;
             top: 85%;
             animation-delay: 4.5s;
-            background: var(--accent-cyan);
+            background: var(--accent-primary);
         }
 
         @keyframes particleFloat {
@@ -379,133 +382,154 @@
             }
         }
 
-        .ti-hero-content {
+        .hero-content {
+            max-width: 1400px;
+            margin: 0 auto;
             position: relative;
             z-index: 2;
-            max-width: 1000px;
-            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            /* Key change: Left Align */
         }
 
-        .ti-badge {
+        .hero-badge {
             display: inline-flex;
             align-items: center;
-            gap: 8px;
-            background: rgba(0, 217, 255, 0.1);
-            border: 1px solid rgba(0, 217, 255, 0.2);
-            padding: 6px 16px;
-            border-radius: 30px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            color: var(--accent-cyan);
+            gap: 0.6rem;
+            padding: 0.6rem 1.25rem;
+            background: linear-gradient(135deg, rgba(0, 217, 255, 0.15), rgba(0, 217, 255, 0.05));
+            border: 1px solid rgba(0, 217, 255, 0.3);
+            border-radius: 100px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: var(--accent-primary);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
             margin-bottom: 2rem;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 0 20px rgba(0, 217, 255, 0.1);
-            animation: none;
-            /* Removed pulse for cleaner look */
+            animation: fadeInUp 0.6s ease-out, badgeGlow 3s ease-in-out infinite;
         }
 
-        .ti-badge::before {
-            content: '';
+        .hero-badge .pulse-dot {
             width: 8px;
             height: 8px;
-            background: var(--accent-cyan);
+            background: var(--accent-primary);
             border-radius: 50%;
-            box-shadow: 0 0 10px var(--accent-cyan);
-            animation: blink 1.5s ease-in-out infinite;
+            animation: pulse 2s infinite;
         }
 
-        .pulse-dot {
-            display: none;
-        }
-
-        /* Removed old dot */
-
-        @keyframes blink {
+        @keyframes pulse {
 
             0%,
             100% {
                 opacity: 1;
+                box-shadow: 0 0 0 0 rgba(0, 217, 255, 0.7);
             }
 
             50% {
-                opacity: 0.3;
+                opacity: 0.8;
+                box-shadow: 0 0 0 8px rgba(0, 217, 255, 0);
             }
         }
 
-        .ti-hero h1 {
-            font-size: 4rem;
-            font-weight: 800;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, #fff 0%, #fff 50%, var(--accent-cyan) 100%);
+        @keyframes badgeGlow {
+
+            0%,
+            100% {
+                box-shadow: 0 0 15px rgba(0, 217, 255, 0.2);
+            }
+
+            50% {
+                box-shadow: 0 0 25px rgba(0, 217, 255, 0.4);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 7vw, 5rem);
+            font-weight: 900;
+            line-height: 1.05;
+            margin-bottom: 1.5rem;
+            text-align: left;
+            animation: fadeInUp 0.6s ease-out 0.1s both;
+        }
+
+        .hero-title .gradient-text {
+            background: linear-gradient(135deg, #fff 0%, var(--accent-primary) 50%, var(--accent-secondary) 100%);
+            background-size: 200% 200%;
             -webkit-background-clip: text;
-            background-clip: text;
             -webkit-text-fill-color: transparent;
-            letter-spacing: -1px;
-            line-height: 1.1;
+            background-clip: text;
+            animation: gradientShift 8s ease-in-out infinite;
         }
 
-        .ti-hero h1 span {
-            background: none;
-            -webkit-text-fill-color: inherit;
+        @keyframes gradientShift {
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
         }
 
-        .ti-hero p {
+        .hero-subtitle {
             font-size: 1.25rem;
             color: var(--text-secondary);
             max-width: 700px;
-            margin: 0 auto 3rem;
+            margin-bottom: 3rem;
+            text-align: left;
+            animation: fadeInUp 0.6s ease-out 0.2s both;
         }
 
-        /* Stats in hero */
-        .live-stats {
+        .hero-stats {
             display: flex;
-            gap: 1.5rem;
-            justify-content: center;
+            gap: 2rem;
             flex-wrap: wrap;
-            margin-top: 2rem;
+            animation: fadeInUp 0.6s ease-out 0.3s both;
         }
 
-        .ai-stat {
-            background: rgba(255, 255, 255, 0.03);
+        .hero-stat {
+            text-align: left;
+            padding: 1.25rem 2rem;
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 20px;
-            padding: 1.5rem 2.5rem;
-            text-align: center;
-            min-width: 160px;
             transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
+            min-width: 140px;
         }
 
-        .ai-stat::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-        }
-
-        .ai-stat:hover {
-            transform: translateY(-5px);
-            border-color: var(--accent-cyan);
-            box-shadow: 0 10px 40px rgba(0, 217, 255, 0.1);
+        .hero-stat:hover {
+            border-color: var(--accent-primary);
+            transform: translateY(-3px);
             background: rgba(0, 217, 255, 0.05);
         }
 
-        .ai-stat .stat-number {
+        .hero-stat-value {
             font-size: 2.5rem;
             font-weight: 800;
-            color: #fff;
-            line-height: 1;
-            margin-bottom: 0.5rem;
-            display: block;
-            text-shadow: 0 0 20px rgba(0, 217, 255, 0.3);
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2;
         }
 
-        .ai-stat .stat-label {
+        .hero-stat-label {
             font-size: 0.85rem;
             color: var(--text-muted);
             text-transform: uppercase;
@@ -513,9 +537,7 @@
             font-weight: 600;
         }
 
-        .stat-divider {
-            display: none;
-        }
+
 
         /* Main Content */
         .main {
@@ -959,7 +981,7 @@
 
         /* Mobile Responsive */
         @media (max-width: 768px) {
-            .ti-hero h1 {
+            .hero-title {
                 font-size: 2.5rem;
             }
 
@@ -1022,38 +1044,24 @@
             background: rgba(255, 255, 255, 0.95);
         }
 
-        /* Seamless fade blend for hero section */
-        .ti-hero::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 150px;
-            background: linear-gradient(to bottom, transparent, var(--bg-primary));
-            z-index: 2;
-            pointer-events: none;
-        }
-
         body.light-mode .ti-hero {
             background: linear-gradient(135deg, #e0f2fe 0%, #fce7f3 100%);
         }
 
-        /* Fix green badge in light mode */
-        body.light-mode .ti-badge {
-            background: rgba(5, 150, 105, 0.15);
-            border: 1px solid rgba(5, 150, 105, 0.4);
-            color: #047857;
-            box-shadow: 0 0 20px rgba(5, 150, 105, 0.2);
+        /* Light mode badge */
+        body.light-mode .hero-badge {
+            background: rgba(0, 102, 204, 0.1);
+            border: 1px solid rgba(0, 102, 204, 0.3);
+            color: #0066CC;
         }
 
         body.light-mode .pulse-dot {
-            background: #047857;
-            box-shadow: 0 0 10px rgba(5, 150, 105, 0.4);
+            background: #0066CC;
+            box-shadow: 0 0 10px rgba(0, 102, 204, 0.4);
         }
 
-        /* Fix blue gradient text in light mode */
-        body.light-mode .ti-hero h1 span {
+        /* Light mode gradient text */
+        body.light-mode .hero-title .gradient-text {
             background: linear-gradient(135deg, #0066CC, #DC2626);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -1320,49 +1328,44 @@
         </div>
     </noscript>
 
-    <!-- Hero Section - Premium Design v2 -->
+    <!-- Premium Hero Section (Left-Aligned CVE Style - Cyan) -->
     <section class="ti-hero">
         <div class="hero-particles">
             <span></span><span></span><span></span><span></span>
             <span></span><span></span><span></span><span></span>
         </div>
 
-        <!-- Main Hero Content -->
-        <div class="ti-hero-content">
-            <!-- Live Badge - Inside Content -->
-            <div class="ti-badge">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="pulse-dot"></span>
                 LIVE INTELLIGENCE FEED
             </div>
-
-            <!-- Title -->
-            <h1>
-                Threat Intelligence<br>
-                <span>In Real-Time</span>
+            <h1 class="hero-title">
+                <span class="gradient-text">Threat Intelligence</span>
             </h1>
-
-            <!-- Description -->
-            <p>
+            <p class="hero-subtitle">
                 Live indicators of compromise from 9 security vendors + AI threat intelligence from MITRE ATLAS,
                 AI Incident Database & OWASP LLM Top 10. Your unified command center for cyber & AI security.
             </p>
 
-            <!-- Live Stats - Premium Glass Cards -->
-            <div class="live-stats">
-                <div class="ai-stat">
-                    <span class="stat-number" data-target="52639">52.6K</span>
-                    <span class="stat-label">Active IOCs</span>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="hero-stat-value stat-number" data-target="52639">52.6K</div>
+                    <div class="hero-stat-label">Active IOCs</div>
                 </div>
-                <div class="ai-stat">
-                    <span class="stat-number" data-target="9">9</span>
-                    <span class="stat-label">IOC Sources</span>
+                <div class="hero-stat">
+                    <div class="hero-stat-value stat-number" data-target="9">9</div>
+                    <div class="hero-stat-label">IOC Sources</div>
                 </div>
-                <div class="ai-stat">
-                    <span class="stat-number" id="heroAtlasCount" data-target="140" style="color: #00D9FF;">140</span>
-                    <span class="stat-label">ATLAS Techniques</span>
+                <div class="hero-stat">
+                    <div class="hero-stat-value stat-number" id="heroAtlasCount" data-target="140"
+                        style="color: #00D9FF;">140</div>
+                    <div class="hero-stat-label">ATLAS Techniques</div>
                 </div>
-                <div class="ai-stat">
-                    <span class="stat-number" id="heroAiidCount" data-target="191" style="color: #FF3D3D;">191</span>
-                    <span class="stat-label">AI Incidents</span>
+                <div class="hero-stat">
+                    <div class="hero-stat-value stat-number" id="heroAiidCount" data-target="191"
+                        style="color: #FF3D3D;">191</div>
+                    <div class="hero-stat-label">AI Incidents</div>
                 </div>
             </div>
         </div>

@@ -148,13 +148,18 @@
             --bg-primary: #000000;
             --bg-secondary: #0a0a0a;
             --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-primary: #FF3D3D;
+            --accent-secondary: #FF8C00;
             --accent-orange: #FF8C00;
             --accent-red: #FF3D3D;
             --accent-cyan: #00D9FF;
+            --accent-green: #10b981;
             --text-primary: #ffffff;
             --text-secondary: #a0a0a0;
             --text-muted: #666666;
             --border: rgba(255, 255, 255, 0.1);
+            --glass: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.08);
         }
 
         body {
@@ -165,13 +170,12 @@
             overflow-x: hidden;
         }
 
-        /* ========== PREMIUM HERO (Red/Orange Theme) ========== */
+        /* ========== PREMIUM HERO (Left-Aligned CVE Style) ========== */
         .ransomware-hero {
             position: relative;
             padding: 10rem 2rem 6rem;
             overflow: hidden;
             background: var(--bg-primary);
-            text-align: center;
         }
 
         .ransomware-hero::before {
@@ -229,13 +233,13 @@
             position: absolute;
             width: 4px;
             height: 4px;
-            background: var(--accent-red);
+            background: var(--accent-primary);
             border-radius: 50%;
             opacity: 0.4;
             animation: particleFloat 15s infinite ease-in-out;
         }
 
-        /* Particle positions and delays */
+        /* Particle positions */
         .hero-particles span:nth-child(1) {
             left: 10%;
             top: 20%;
@@ -246,7 +250,7 @@
             left: 20%;
             top: 80%;
             animation-delay: 2s;
-            background: var(--accent-orange);
+            background: var(--accent-secondary);
         }
 
         .hero-particles span:nth-child(3) {
@@ -272,7 +276,7 @@
             left: 80%;
             top: 30%;
             animation-delay: 5s;
-            background: var(--accent-orange);
+            background: var(--accent-secondary);
         }
 
         .hero-particles span:nth-child(7) {
@@ -285,7 +289,7 @@
             left: 75%;
             top: 85%;
             animation-delay: 4.5s;
-            background: var(--accent-red);
+            background: var(--accent-primary);
         }
 
         @keyframes particleFloat {
@@ -312,145 +316,163 @@
             }
         }
 
-        .ransomware-hero__content {
+        /* Hero Content - Left Aligned */
+        .hero-content {
+            max-width: 1400px;
+            margin: 0 auto;
             position: relative;
             z-index: 2;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .ransomware-hero__icon {
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(135deg, var(--accent-red), var(--accent-orange));
-            border-radius: 24px;
             display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            /* Key change: Left Align */
+        }
+
+        .hero-badge {
+            display: inline-flex;
             align-items: center;
-            justify-content: center;
-            margin: 0 auto 2rem;
-            position: relative;
-            box-shadow: 0 20px 40px rgba(255, 61, 61, 0.2);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            animation: pulse-glow 3s ease-in-out infinite;
+            gap: 0.6rem;
+            padding: 0.6rem 1.25rem;
+            background: linear-gradient(135deg, rgba(255, 61, 61, 0.15), rgba(255, 61, 61, 0.05));
+            border: 1px solid rgba(255, 61, 61, 0.3);
+            border-radius: 100px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: var(--accent-primary);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 2rem;
+            animation: fadeInUp 0.6s ease-out, badgeGlow 3s ease-in-out infinite;
         }
 
-        .ransomware-hero__icon i {
-            font-size: 2.5rem;
-            color: #fff;
-            filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
+        .hero-badge .pulse-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--accent-primary);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
         }
 
-        @keyframes pulse-glow {
+        @keyframes pulse {
 
             0%,
             100% {
-                box-shadow: 0 20px 40px rgba(255, 61, 61, 0.2);
-                transform: scale(1);
+                opacity: 1;
+                box-shadow: 0 0 0 0 rgba(255, 61, 61, 0.7);
             }
 
             50% {
-                box-shadow: 0 20px 60px rgba(255, 61, 61, 0.4);
-                transform: scale(1.05);
+                opacity: 0.8;
+                box-shadow: 0 0 0 8px rgba(255, 61, 61, 0);
             }
         }
 
-        .ransomware-hero__title {
-            font-size: 4rem;
-            font-weight: 800;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, #fff 0%, #fff 50%, var(--accent-red) 100%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            letter-spacing: -1px;
+        @keyframes badgeGlow {
+
+            0%,
+            100% {
+                box-shadow: 0 0 15px rgba(255, 61, 61, 0.2);
+            }
+
+            50% {
+                box-shadow: 0 0 25px rgba(255, 61, 61, 0.4);
+            }
         }
 
-        .ransomware-hero__subtitle {
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 7vw, 5rem);
+            font-weight: 900;
+            line-height: 1.05;
+            margin-bottom: 1.5rem;
+            text-align: left;
+            animation: fadeInUp 0.6s ease-out 0.1s both;
+        }
+
+        .hero-title .gradient-text {
+            background: linear-gradient(135deg, #fff 0%, var(--accent-primary) 50%, var(--accent-secondary) 100%);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradientShift 8s ease-in-out infinite;
+        }
+
+        @keyframes gradientShift {
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        .hero-subtitle {
             font-size: 1.25rem;
             color: var(--text-secondary);
             max-width: 700px;
-            margin: 0 auto 3rem;
+            margin-bottom: 3rem;
+            text-align: left;
+            animation: fadeInUp 0.6s ease-out 0.2s both;
         }
 
-        .live-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: rgba(255, 61, 61, 0.1);
-            border: 1px solid rgba(255, 61, 61, 0.2);
-            padding: 6px 16px;
-            border-radius: 30px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            color: var(--accent-red);
-            margin-bottom: 2rem;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 0 20px rgba(255, 61, 61, 0.1);
-        }
-
-        .live-badge::before {
-            content: '';
-            width: 8px;
-            height: 8px;
-            background: var(--accent-red);
-            border-radius: 50%;
-            box-shadow: 0 0 10px var(--accent-red);
-            animation: blink 1.5s ease-in-out infinite;
-        }
-
-        .ransomware-hero__stats {
+        .hero-stats {
             display: flex;
-            gap: 1.5rem;
-            justify-content: center;
+            gap: 2rem;
             flex-wrap: wrap;
+            animation: fadeInUp 0.6s ease-out 0.3s both;
         }
 
-        .ransomware-hero__stat {
-            background: rgba(255, 255, 255, 0.03);
+        .hero-stat {
+            text-align: left;
+            padding: 1.25rem 2rem;
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 20px;
-            padding: 1.5rem 2.5rem;
-            text-align: center;
-            min-width: 160px;
             transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
+            min-width: 140px;
         }
 
-        .ransomware-hero__stat::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-        }
-
-        .ransomware-hero__stat:hover {
-            transform: translateY(-5px);
-            border-color: var(--accent-red);
-            box-shadow: 0 10px 40px rgba(255, 61, 61, 0.1);
+        .hero-stat:hover {
+            border-color: var(--accent-primary);
+            transform: translateY(-3px);
             background: rgba(255, 61, 61, 0.05);
         }
 
-        .ransomware-hero__stat-value {
+        .hero-stat-value {
             font-size: 2.5rem;
             font-weight: 800;
-            color: #fff;
-            line-height: 1;
-            margin-bottom: 0.5rem;
-            text-shadow: 0 0 20px rgba(255, 61, 61, 0.3);
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2;
         }
 
-        .ransomware-hero__stat-label {
+        .hero-stat-label {
             font-size: 0.85rem;
             color: var(--text-muted);
             text-transform: uppercase;
             letter-spacing: 1px;
             font-weight: 600;
         }
+
+
 
         /* ========== CONTENT SECTION ========== */
         .content-section {
@@ -826,36 +848,36 @@
         </div>
     </header>
 
-    <!-- Beautiful Animated Hero Section -->
+    <!-- Premium Hero Section (Left-Aligned CVE Style) -->
     <section class="ransomware-hero">
         <div class="hero-particles">
             <span></span><span></span><span></span><span></span>
             <span></span><span></span><span></span><span></span>
         </div>
-
-        <div class="ransomware-hero__content">
-            <div class="live-badge">
-                LIVE DATA SOURCE
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="pulse-dot"></span>
+                LIVE TRACKING
             </div>
-            <div class="ransomware-hero__icon">
-                <i class="fas fa-skull-crossbones"></i>
-            </div>
-            <h1 class="ransomware-hero__title">Ransomware Tracker</h1>
-            <p class="ransomware-hero__subtitle">Real-time monitoring of active ransomware groups and victims. Data is
-                aggregated from dark web leak sites and updated every 4 hours.</p>
-
-            <div class="ransomware-hero__stats">
-                <div class="ransomware-hero__stat">
-                    <div class="ransomware-hero__stat-value" id="totalVictims">--</div>
-                    <div class="ransomware-hero__stat-label">Total Victims</div>
+            <h1 class="hero-title">
+                <span class="gradient-text">Ransomware Tracker</span>
+            </h1>
+            <p class="hero-subtitle">
+                Real-time monitoring of active ransomware groups, victim leaks, and negotiation sites.
+                Data aggregated from dark web leak sites and reliable intelligence feeds.
+            </p>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="hero-stat-value" id="totalRansomwareVictims">--</div>
+                    <div class="hero-stat-label">Total Victims</div>
                 </div>
-                <div class="ransomware-hero__stat">
-                    <div class="ransomware-hero__stat-value" id="activeGroups">--</div>
-                    <div class="ransomware-hero__stat-label">Active Groups</div>
+                <div class="hero-stat">
+                    <div class="hero-stat-value" id="totalRansomwareGroups">--</div>
+                    <div class="hero-stat-label">Active Groups</div>
                 </div>
-                <div class="ransomware-hero__stat">
-                    <div class="ransomware-hero__stat-value" id="thisWeek">--</div>
-                    <div class="ransomware-hero__stat-label">Victims (7 Days)</div>
+                <div class="hero-stat">
+                    <div class="hero-stat-value" id="victimsThisWeek" style="color: var(--accent-orange);">--</div>
+                    <div class="hero-stat-label">Victims (7d)</div>
                 </div>
             </div>
         </div>
@@ -978,13 +1000,13 @@
                 const allVictims = groups.flatMap(g => g.victims || []);
 
                 // Total victims (use data.total_victims if available, otherwise calculate)
-                const totalVictimsEl = document.getElementById('totalVictims');
+                const totalVictimsEl = document.getElementById('totalRansomwareVictims');
                 if (totalVictimsEl) {
                     totalVictimsEl.textContent = data.total_victims || allVictims.length;
                 }
 
                 // Active groups
-                const activeGroupsEl = document.getElementById('activeGroups');
+                const activeGroupsEl = document.getElementById('totalRansomwareGroups');
                 if (activeGroupsEl) {
                     activeGroupsEl.textContent = data.total_groups || groups.length;
                 }
@@ -996,7 +1018,7 @@
                     const victimDate = new Date(v.date || v.discovered_date);
                     return victimDate >= oneWeekAgo;
                 }).length;
-                const thisWeekEl = document.getElementById('thisWeek');
+                const thisWeekEl = document.getElementById('victimsThisWeek');
                 if (thisWeekEl) {
                     thisWeekEl.textContent = thisWeekCount;
                 }

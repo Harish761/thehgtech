@@ -15,13 +15,9 @@
    ============================================ */
 .ti-hero {
     position: relative;
-    min-height: 75vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     overflow: hidden;
-    background: linear-gradient(180deg, #000 0%, #0a0a12 50%, #0d0d18 100%);
-    padding: 120px 2rem 60px;
+    background: var(--bg-primary, #000);
+    padding: 10rem 2rem 6rem;
 }
 
 /* Subtle gradient orbs - very subtle, not distracting */
@@ -74,18 +70,13 @@
    HERO CONTENT - GLASSMORPHISM CARD
    ============================================ */
 .hero-content {
+    max-width: 1400px;
+    margin: 0 auto;
     position: relative;
     z-index: 10;
-    text-align: center;
-    max-width: 850px;
-    padding: 3rem 4rem;
-    background: rgba(15, 15, 25, 0.7);
-    backdrop-filter: blur(30px);
-    border-radius: 24px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    box-shadow:
-        0 25px 50px rgba(0, 0, 0, 0.5),
-        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     animation: fadeInScale 0.8s ease-out;
 }
 
@@ -199,11 +190,12 @@
 
 /* Description text */
 .ti-hero p:not(.typing-subtitle) {
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: rgba(255, 255, 255, 0.6);
     line-height: 1.7;
-    max-width: 600px;
-    margin: 0 auto 2rem;
+    max-width: 700px;
+    margin-bottom: 3rem;
+    text-align: left;
 }
 
 /* ============================================
@@ -211,27 +203,22 @@
    ============================================ */
 .live-stats {
     display: flex;
-    gap: 1rem;
-    justify-content: center;
+    gap: 2rem;
     flex-wrap: wrap;
-    margin-top: 1.5rem;
+    margin-top: 0;
 }
 
 .stat-item {
-    text-align: center;
-    padding: 1.25rem 1.5rem;
-    background: linear-gradient(145deg, rgba(10, 10, 25, 0.8), rgba(15, 15, 35, 0.6));
-    border: 1px solid rgba(0, 217, 255, 0.2);
+    text-align: left;
+    padding: 1.25rem 2rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 16px;
-    min-width: 130px;
-    min-height: 90px;
+    min-width: 140px;
+    backdrop-filter: blur(10px);
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 /* Subtle glow effect on hover */
@@ -276,13 +263,15 @@
 }
 
 .stat-number {
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--hero-accent);
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--accent-primary, #00D9FF), var(--accent-secondary, #0066FF));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     display: block;
     margin-bottom: 4px;
-    min-width: 70px;
-    text-align: center;
+    line-height: 1.2;
     font-feature-settings: "tnum";
     font-variant-numeric: tabular-nums;
 }
@@ -343,8 +332,7 @@
     }
 
     .hero-content {
-        padding: 1.5rem;
-        border-radius: 20px;
+        padding: 0;
         margin: 0 0.5rem;
     }
 
@@ -420,9 +408,7 @@
 }
 
 .light-mode .hero-content {
-    background: rgba(255, 255, 255, 0.8);
-    border-color: rgba(0, 0, 0, 0.08);
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+    background: transparent;
 }
 
 .light-mode .glitch-title {
