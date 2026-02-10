@@ -4,27 +4,75 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Feb 09 2026",
-            "headline": "Cybersecurity M&amp;A: 34 Deals in January 2026",
-            "title": "CrowdStrike, Infoblox, and Others Lead 34 Cybersecurity M&amp;A Deals in January",
-            "content": "January 2026 saw a flurry of activity in the cybersecurity sector with 34 mergers and acquisitions announced. Prominent companies like CrowdStrike, Infoblox, JumpCloud, LevelBlue, OneSpan, and Radware were involved, signaling a robust market for strategic consolidation. These deals aim to enhance technological capabilities and expand market reach amid increasing cyber threats. The trend reflects a growing need for comprehensive security solutions as organizations face sophisticated attacks. Industry leaders are advised to monitor these developments for potential shifts in market dynamics and competitive landscapes.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/cybersecurity-ma-roundup-34-deals-announced-in-january-2026/",
+            "date": "Mar 19 2026",
+            "headline": "Shields Up: Virtual Event Explores Cybersecurity&#x27;s Future",
+            "title": "Virtual Event Highlights Key Technologies Reshaping Cybersecurity Defenses",
+            "content": "Dark Reading is hosting a virtual event titled &quot;Shields Up,&quot; focusing on emerging technologies that are transforming cybersecurity defenses. The event will cover advancements in artificial intelligence, machine learning, and automated threat detection systems. Industry experts will discuss how these technologies can be leveraged to enhance security postures and protect against sophisticated cyber threats. With the rise of complex attack vectors, staying informed about the latest tools and strategies is crucial for security professionals. Attendees will gain insights into the future of cybersecurity and how to implement cutting-edge solutions in their organizations.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/events/shields-up-key-technologies-reshaping-cybersecurity-defenses",
             "relatedResources": [
                 {
-                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
-                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
-                    "icon": "fa-shield-virus"
+                    "label": "SIEM & Log Analysis Guide",
+                    "url": "/guides/siem-log-analysis.html",
+                    "icon": "fa-chart-bar"
                 }
             ]
         },
         {
+            "date": "Feb 10 2026",
+            "headline": "Anthropic’s DXT Vulnerability—Remote Code Execution Risk",
+            "title": "Critical RCE Vulnerability Found in Anthropic’s Claude Desktop Extensions",
+            "content": "LayerX Security has identified a critical remote code execution (RCE) vulnerability in Anthropic’s Claude Desktop Extensions (DXT). The flaw allows a malicious Google Calendar invite to compromise systems by executing code with full privileges, affecting enterprises using DXT. Analysts warn that the zero-click nature of the exploit makes it particularly dangerous, as it requires no user interaction. This vulnerability highlights the ongoing risks associated with desktop extension software and the importance of rigorous security assessments. Organizations using DXT should apply available patches and review their security protocols to mitigate potential threats.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4129820/anthropics-dxt-poses-critical-rce-vulnerability-by-running-with-full-system-privileges.html",
+            "relatedResources": [
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Feb 10 2026",
+            "headline": "ISC Stormcast—Daily Cyber Threat Update",
+            "title": "SANS Internet Storm Center Provides Daily Cyber Threat Intelligence",
+            "content": "The SANS Internet Storm Center continues to offer its daily &quot;Stormcast&quot; podcast, providing valuable insights into the latest cyber threats and vulnerabilities. The February 10th edition highlights recent trends in malware activity, phishing campaigns, and emerging vulnerabilities. Security professionals can leverage this information to enhance their threat intelligence and defensive strategies. With the InfoCON level at green, the current threat landscape remains stable, but vigilance is essential. The podcast serves as a critical resource for staying informed about potential risks and maintaining robust cybersecurity defenses.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32698",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Feb 10 2026",
+            "headline": "Critics: US AI Strategy Risks Global Market Position",
+            "title": "Concerns Over US &#x27;Move Fast&#x27; AI Strategy and Global Market Impact",
+            "content": "Critics are raising alarms about the United States&#x27; &quot;move fast&quot; approach to artificial intelligence regulation, warning it could jeopardize its position in the global market. As the U.S. adopts a light-touch regulatory framework, businesses are left to navigate the complexities of AI implementation independently. This strategy contrasts with more structured approaches in regions like the EU, which could lead to competitive disadvantages. Stakeholders are urged to collaborate on establishing industry standards to ensure responsible AI development. The debate underscores the balancing act between innovation and regulation in the rapidly evolving AI landscape.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/trump-ai-policy-global-adoption-safety-regulation-critics/",
+            "relatedResources": []
+        },
+        {
             "date": "Feb 09 2026",
-            "headline": "BeyondTrust Urges Patch for Critical Remote Code Execution Flaw",
-            "title": "Critical RCE Vulnerability Found in BeyondTrust Remote Support Software",
-            "content": "BeyondTrust has issued an urgent advisory for customers to patch a critical remote code execution (RCE) vulnerability in its Remote Support (RS) and Privileged Remote Access (PRA) software. The flaw could allow unauthenticated attackers to execute arbitrary code, posing a severe risk to enterprises relying on these tools for secure remote access. This vulnerability underscores the importance of timely updates and vigilant security practices. Organizations using these products should apply the patch immediately to mitigate potential exploitation. This advisory highlights the persistent challenge of securing remote access solutions in an increasingly remote workforce environment.",
+            "headline": "Chinese Cyberspies Breach Singapore&#x27;s Top Telcos",
+            "title": "UNC3886 Breaches Singapore&#x27;s Four Largest Telecommunication Providers",
+            "content": "The Chinese threat actor UNC3886 has successfully breached Singapore&#x27;s four largest telecommunication providers: Singtel, StarHub, M1, and Simba. The cyber espionage campaign reportedly occurred at least once last year, compromising sensitive communication infrastructures. This breach highlights the persistent threat posed by state-sponsored actors targeting critical national infrastructure. Singaporean authorities and affected companies are working to assess the full scope of the intrusion and bolster their defenses. The incident underscores the need for heightened security measures and international cooperation in combating cyber espionage.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/beyondtrust-warns-of-critical-rce-flaw-in-remote-support-software/",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/chinese-cyberspies-breach-singapores-four-largest-telcos/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 09 2026",
+            "headline": "Ivanti Zero-Days Impact Nearly 100 Victims",
+            "title": "Fallout from Ivanti Zero-Days Affects Close to 100 Systems",
+            "content": "Recent Shadowserver scans have identified 86 compromised instances resulting from newly discovered zero-day vulnerabilities in Ivanti software. Multiple threat groups are exploiting these vulnerabilities, affecting organizations across various sectors. The vulnerabilities allow attackers to execute arbitrary code, leading to significant security breaches. Ivanti is working on patches, but security experts urge affected organizations to implement interim mitigation measures immediately. This incident highlights the critical importance of timely vulnerability management and patch deployment in preventing widespread exploitation.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/ivanti-zero-day-vulnerabilities-netherlands-european-commission-shadowserver/",
             "relatedResources": [
                 {
                     "label": "CVE Prioritization Guide",
@@ -35,79 +83,16 @@ const websiteContent = {
         },
         {
             "date": "Feb 09 2026",
-            "headline": "AI Skill Malware and 31Tbps DDoS Highlight Cyber Threats",
-            "title": "Weekly Recap: AI Skill Malware, 31Tbps DDoS, and LLM Backdoors",
-            "content": "This week&#x27;s cybersecurity recap reveals diverse threats, including AI skill malware and a massive 31 terabits per second distributed denial-of-service (DDoS) attack. Threat actors are increasingly targeting the interconnected ecosystems of AI, cloud applications, and developer tools. The discovery of backdoors in large language models (LLMs) further emphasizes the evolving threat landscape. Organizations must strengthen defenses across all platforms and remain vigilant against these sophisticated attack vectors. The convergence of technology and cyber threats necessitates a proactive approach to security.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/02/weekly-recap-ai-skill-malware-31tbps.html",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Feb 09 2026",
-            "headline": "SolarWinds Zero-Days Exploited for Initial Access",
-            "title": "SolarWinds Web Help Desk Exploited as Zero-Days in Recent Attacks",
-            "content": "Security researchers have identified that vulnerabilities in SolarWinds Web Help Desk were exploited as zero-days in December 2025. These flaws provided initial access to threat actors, underscoring the ongoing risks associated with unpatched software. The exploitation of these vulnerabilities highlights the critical need for timely updates and robust security measures. Organizations using SolarWinds products should review their security posture and apply necessary patches to prevent similar breaches. This incident serves as a reminder of the persistent threats targeting widely-used IT management solutions.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/recent-solarwinds-flaws-potentially-exploited-as-zero-days/",
-            "relatedResources": [
-                {
-                    "label": "Zero-Day Detection Guide",
-                    "url": "/guides/zero-day-detection.html",
-                    "icon": "fa-exclamation-triangle"
-                }
-            ]
-        },
-        {
-            "date": "Feb 09 2026",
-            "headline": "OpenClaw Adds VirusTotal as Malware Risks Mount",
-            "title": "OpenClaw Integrates VirusTotal Amid Rising Enterprise Security Concerns",
-            "content": "OpenClaw, an open-source AI agent criticized for being &quot;insecure by default,&quot; has integrated VirusTotal&#x27;s malware scanning into its ClawHub skills marketplace. This move follows reports of malicious extensions and unauthorized deployments in enterprise environments. The integration aims to enhance security by providing users with real-time malware scanning capabilities. Security professionals are advised to scrutinize AI tools for potential vulnerabilities and unauthorized usage. This development highlights the balance between innovation and security in the rapidly evolving AI landscape.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4129393/openclaw-integrates-virustotal-malware-scanning-as-security-firms-flag-enterprise-risks.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 09 2026",
-            "headline": "SmarterTools Ransomware Attack via Product Vulnerability",
-            "title": "SmarterTools Customers Hit by Ransomware Through Product Vulnerability",
-            "content": "SmarterTools has confirmed a ransomware attack impacting customers after hackers exploited a vulnerability in its own product. The breach occurred via a compromised data center used for quality control testing, highlighting the risks of vulnerabilities within software supply chains. Affected organizations face potential data loss and operational disruptions. SmarterTools is urging customers to implement recommended security patches and review their security protocols. This incident underscores the importance of securing internal systems to prevent supply chain attacks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/smartertools-hit-by-ransomware-via-vulnerability-in-its-own-product/",
+            "headline": "Warlock Gang Exploits SmarterMail Flaws",
+            "title": "Warlock Gang Breaches SmarterTools via SmarterMail Vulnerabilities",
+            "content": "The ransomware group known as Warlock Gang has exploited vulnerabilities in SmarterTools&#x27; SmarterMail product to breach the company&#x27;s systems. The attack underscores the ongoing threat posed by ransomware groups targeting software vulnerabilities to gain unauthorized access. SmarterTools is investigating the breach and working to address the security flaws in its email server product. Organizations using SmarterMail are advised to apply patches and review their security configurations to prevent similar attacks. This incident highlights the critical need for proactive vulnerability management and robust security practices.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/application-security/warlock-gang-breaches-smartertools-smartermail-bugs",
             "relatedResources": [
                 {
                     "label": "Ransomware Response Playbook",
                     "url": "/guides/ransomware-response-playbook.html",
                     "icon": "fa-biohazard"
-                }
-            ]
-        },
-        {
-            "date": "Feb 09 2026",
-            "headline": "DKnife AitM Framework Targets Network Gateways",
-            "title": "DKnife Framework Exploits Network Gateways in Long-Running AitM Campaign",
-            "content": "Cisco Talos researchers have uncovered a China-linked adversary-in-the-middle (AitM) framework, named DKnife, targeting network gateways. Active since 2019, DKnife intercepts and manipulates in-transit traffic, posing a significant threat to network security. Organizations using vulnerable network gateways should enhance monitoring and apply security updates to mitigate risks. This discovery highlights the persistent threat of AitM attacks and the need for comprehensive network security strategies. The ongoing campaign reflects the sophistication and persistence of state-sponsored threat actors.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4129383/dknife-targets-network-gateways-in-long-running-aitm-campaign.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 09 2026",
-            "headline": "Top CIAM Tools—Enhancing Customer Identity Security",
-            "title": "Leading CIAM Solutions to Strengthen Customer Identity and Access Management",
-            "content": "CSO Online has curated a list of top Customer Identity and Access Management (CIAM) tools, highlighting their role in bolstering security for customer interactions. CIAM, a subset of Identity and Access Management (IAM), focuses on authenticating and managing customer identities. These tools are critical for businesses aiming to secure customer data while providing seamless user experiences. With the rise of digital services, robust CIAM solutions help mitigate risks associated with unauthorized access and data breaches. Organizations are encouraged to evaluate these tools to enhance security frameworks and align with compliance requirements.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/3492789/customer-identity-access-management-die-6-besten-ciam-tools.html",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
                 }
             ]
         },
@@ -131,94 +116,83 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Feb 09 2026",
-            "headline": "No NY Firms Admit AI Job Cuts—Transparency Law Tested",
-            "title": "New York&#x27;s Transparency Law Reveals No AI-Driven Job Losses Yet",
-            "content": "Nearly a year after New York state mandated companies to disclose AI-driven job losses, no firm has reported such layoffs. The law requires businesses to specify if &quot;technological innovation or automation&quot; led to job cuts. Despite widespread fears of AI replacing human jobs, the data suggests either minimal impact or reluctance to disclose. This raises questions about the effectiveness of the law in capturing the true influence of AI on employment. Companies may be using AI in ways that don&#x27;t directly result in layoffs, or they might be hesitant to report due to reputational concerns. Professionals should monitor how this regulatory landscape evolves and its implications for workforce planning.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/no-company-has-admitted-to-replacing-workers-with-ai-in-new-york/",
+            "headline": "OpenAI Codex Hits 1M Downloads—Free Tier Changes Loom",
+            "title": "OpenAI&#x27;s Codex App Surpasses 1 Million Downloads, Faces Potential Limits",
+            "content": "OpenAI&#x27;s Codex application for Mac has reached a significant milestone, surpassing 1 million downloads within its first week of release. This rapid adoption highlights the growing demand for AI-powered coding tools amidst the broader &quot;AI coding wars.&quot; However, OpenAI CEO Sam Altman hinted at possible limitations for free and Go users, as the company evaluates its service offerings. The Codex app, leveraging GPT-4, assists developers by generating code snippets and offering real-time coding suggestions. Users should stay informed about potential changes to service tiers that could impact access and usage.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/openais-new-codex-app-hits-1m-downloads-in-first-week-but-limits-may-be",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Feb 09 2026",
+            "headline": "ChatGPT Introduces Ads—Impact on User Experience",
+            "title": "OpenAI Tests Ads in ChatGPT&#x27;s Cheapest Plans to Boost Revenue",
+            "content": "OpenAI has announced the introduction of ads in its ChatGPT platform, specifically targeting users on the cheapest subscription plans. These ads will appear as labeled &quot;sponsored&quot; links at the bottom of ChatGPT responses, but OpenAI assures that they will not influence the AI&#x27;s answers. The move aims to generate additional revenue to support the platform&#x27;s development and operational costs. This development follows a trend of monetizing AI services as companies seek sustainable business models. Users on these plans should anticipate the presence of ads and consider their impact on the overall experience.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/876029/openai-testing-ads-in-chatgpt",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Feb 09 2026",
+            "headline": "AI to Challenge SaaS Dominance—Databricks CEO&#x27;s Vision",
+            "title": "Databricks CEO Predicts AI&#x27;s Rise Could Eclipse Traditional SaaS",
+            "content": "Databricks CEO Ali Ghodsi has expressed a bold vision for the future, suggesting that while Software as a Service (SaaS) isn&#x27;t dead, AI could soon render it irrelevant. Ghodsi believes AI&#x27;s transformative potential will lead to the emergence of new competitors that could outperform traditional SaaS applications. This perspective underscores the ongoing evolution in the tech landscape, where AI capabilities are increasingly integrated into enterprise solutions. Companies relying on SaaS should consider how AI advancements might influence their strategic planning and competitive positioning.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/09/databricks-ceo-says-saas-isnt-dead-but-ai-will-soon-make-it-irrelevant/",
             "relatedResources": []
         },
         {
             "date": "Feb 09 2026",
-            "headline": "AI to Replace Nuclear Treaties? Experts Divided",
-            "title": "Satellite Surveillance and AI Eyed as Nuclear Treaty Alternatives",
-            "content": "With the expiration of the last major nuclear arms treaty between the US and Russia, some experts propose using AI, satellite surveillance, and human reviewers as substitutes. This technological approach aims to monitor nuclear activities without formal treaties. However, skepticism remains about AI&#x27;s reliability in such high-stakes scenarios, given the potential for errors and misinterpretations. The shift reflects a broader trend towards leveraging AI for national security, yet highlights the challenges of ensuring accuracy and trust. Policymakers and security professionals must weigh the benefits against the risks of relying on AI for critical international agreements.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/satellites-ai-nuclear-treaties/",
+            "headline": "Anthropic Faces Legal Battle in India Over Name Rights",
+            "title": "U.S. AI Giant Anthropic in Legal Dispute Over Name in India",
+            "content": "Anthropic, a prominent U.S. AI company, is embroiled in a legal dispute in India over its name. The conflict arises from a case filed by India&#x27;s Anthropic Software, which claims prior rights to the name within the region. This legal challenge highlights the complexities of global expansion for technology firms, particularly in navigating intellectual property rights across different jurisdictions. Companies planning international growth should ensure thorough due diligence on trademark and naming rights to avoid similar disputes.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/09/anthropics-india-expansion-collides-with-a-local-company-that-already-had-the-name/",
             "relatedResources": []
         },
         {
             "date": "Feb 09 2026",
-            "headline": "MIT Launches AI Newsletter—Explores Real-World Applications",
-            "title": "&quot;Making AI Work&quot; Newsletter Debuts to Explore AI&#x27;s Practical Uses",
-            "content": "MIT Technology Review has launched &quot;Making AI Work,&quot; a newsletter dedicated to exploring the practical applications of artificial intelligence. The publication aims to dissect AI&#x27;s limitations, potential dangers, and its growing energy demands. It will delve into how generative AI tools are used in fields such as coding and scientific research. This initiative reflects a growing need to understand AI&#x27;s tangible impact across various sectors. As AI continues to evolve, professionals must stay informed about its capabilities and challenges to leverage its potential effectively. Subscribers can expect insights into AI&#x27;s role in shaping the future of technology and industry.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2026/02/09/1132462/ai-newsletter-professional-applications/",
+            "headline": "OpenAI Faces Backlash—ChatGPT Ads Spark Controversy",
+            "title": "OpenAI Introduces Ads in ChatGPT to Offset Development Costs",
+            "content": "OpenAI has rolled out ads within its ChatGPT platform, a move that has sparked controversy among users. The ads, appearing as suggestions, aim to generate revenue to support the costly development and expansion of the AI technology. This decision follows previous backlash when OpenAI tested similar features that users perceived as intrusive. As AI platforms seek sustainable financial models, the balance between monetization and user experience remains a critical challenge. Users should be aware of these changes and consider their implications on service usage.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/09/chatgpt-rolls-out-ads/",
             "relatedResources": [
                 {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
                 }
             ]
         },
         {
             "date": "Feb 09 2026",
-            "headline": "AI&#x27;s Role in ETF-Driven Crypto Markets—A Mixed Bag",
-            "title": "AI&#x27;s Influence on XRP and ETF-Driven Cryptocurrency Markets Examined",
-            "content": "Cryptocurrency markets, once volatile and reactive to headlines, are now influenced by more complex forces, including AI and exchange-traded funds (ETFs). AI tools analyze vast datasets to predict market movements, but their effectiveness in the current slow-moving market is uncertain. The shift from rapid sentiment-driven changes to ETF-driven stability presents challenges for AI models, which may struggle to adapt. Investors and traders should be cautious about over-relying on AI predictions in this evolving landscape. Understanding AI&#x27;s capabilities and limitations is crucial for navigating these ETF-driven markets effectively.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/what-ai-can-and-cant-tell-us-about-xrp-in-etf-driven-markets/",
-            "relatedResources": [
-                {
-                    "label": "React Analysis",
-                    "url": "/articles/react2shell-cve-2025-55182-react-vulnerability.html",
-                    "icon": "fa-file-alt"
-                },
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
+            "headline": "Discord Breach Exposes 70K IDs—Age Verification Under Fire",
+            "title": "Discord&#x27;s Age Verification Under Scrutiny After Data Breach Exposes IDs",
+            "content": "Discord is facing significant backlash following a data breach that exposed 70,000 user IDs, prompting concerns over its age verification process. The platform plans to block adult content unless users verify their age using selfies or IDs, a move that raises privacy concerns. This breach underscores the importance of robust security measures in protecting user data, especially for platforms with younger audiences. Users should review their privacy settings and be cautious about sharing sensitive information online.",
+            "source": "Artificial Intelligence - Ars Technica",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/02/discord-faces-backlash-over-age-checks-after-data-breach-exposed-70000-ids/",
+            "relatedResources": []
         },
         {
             "date": "Feb 09 2026",
-            "headline": "Chinese AI Models Lead Open-Source as West Retreats",
-            "title": "Chinese Developers Dominate Open-Source AI Amid Western Pullback",
-            "content": "Chinese AI developers are increasingly dominating the open-source landscape as Western labs like OpenAI, Anthropic, and Google face pressures to limit their models. These Chinese models are designed to run on commodity hardware, making them accessible and powerful for a wide range of applications. The trend indicates a shift in AI innovation towards more open and collaborative approaches outside Western constraints. This development could reshape global AI dynamics, offering new opportunities and challenges for developers worldwide. Professionals should consider the implications of this shift for open-source collaboration and innovation.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/chinese-ai-models-175k-unprotected-systems-western-retreat/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 09 2026",
-            "headline": "Goldman Sachs Tests AI Agents for Complex Tasks",
-            "title": "Goldman Sachs Partners with Anthropic for Autonomous AI Agents",
-            "content": "Goldman Sachs is advancing its use of artificial intelligence by developing autonomous AI agents in collaboration with startup Anthropic. These agents, powered by Anthropic&#x27;s Claude model, are designed to handle complex, process-heavy tasks autonomously. This initiative represents a significant step in automating financial operations, potentially improving efficiency and accuracy. The move aligns with broader trends of integrating AI into financial services to streamline processes. Financial professionals should watch for developments in AI-driven automation as it could transform industry practices and operational strategies.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/goldman-sachs-tests-autonomous-ai-agents-for-process-heavy-work/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 09 2026",
-            "headline": "OpenAI Super Bowl Ad Hoax—No Leak, Just a Fake",
-            "title": "OpenAI&#x27;s Alleged Super Bowl Ad Leak Proven to Be a Hoax",
-            "content": "OpenAI faced a peculiar situation when rumors of a &quot;leaked&quot; Super Bowl ad spread, only to be debunked as a hoax. The supposed ad, featuring earbuds and a shiny orb, was never actually produced by OpenAI. This incident highlights the challenges companies face with misinformation, especially during high-profile events like the Super Bowl. It underscores the importance of verifying information before it spreads widely. Tech professionals should remain vigilant against such misinformation and ensure accurate communication to maintain credibility in the industry.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/875615/openai-super-bowl-ai-hardware-leak-hoax-fake",
+            "headline": "Workday CEO Change—Bhusri Returns to Lead AI Focus",
+            "title": "Workday Co-Founder Aneel Bhusri Returns as CEO to Drive AI Strategy",
+            "content": "Workday has announced a leadership change, with co-founder Aneel Bhusri returning as CEO following the departure of Carl Eschenbach. Bhusri emphasized that the company&#x27;s next phase will concentrate on leveraging AI technologies to enhance its offerings. This leadership shift reflects Workday&#x27;s commitment to integrating AI into its business strategy, aligning with broader industry trends. Stakeholders should monitor how this strategic focus on AI could influence Workday&#x27;s product development and market positioning.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/09/workday-ceo-eschenbach-departs-with-co-founder-aneel-bhusri-returning-as-ceo/",
             "relatedResources": []
         }
     ],
@@ -303,50 +277,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-24423",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2021-39935",
-            "dateAdded": "Feb 03, 2026",
-            "vendor": "GitLab Community and Enterprise Editions",
-            "description": "GitLab Community and Enterprise Editions contain a server-side request forgery vulnerability which could allow unauthorized external users to perform Server Side Requests via the CI Lint API.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-39935",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-64328",
-            "dateAdded": "Feb 03, 2026",
-            "vendor": "Sangoma FreePBX",
-            "description": "Sangoma FreePBX Endpoint Manager contains an OS command injection vulnerability that could allow for a post-authentication command injection by an authenticated known user via the testconnection -&gt; ch",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-64328",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2019-19006",
-            "dateAdded": "Feb 03, 2026",
-            "vendor": "Sangoma FreePBX",
-            "description": "Sangoma FreePBX contains an improper authentication vulnerability that potentially allows unauthorized users to bypass password authentication and access services provided by the FreePBX admin.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-19006",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-40551",
-            "dateAdded": "Feb 03, 2026",
-            "vendor": "SolarWinds Web Help Desk",
-            "description": "SolarWinds Web Help Desk contains a deserialization of untrusted data vulnerability that could lead to remote code execution, which would allow an attacker to run commands on the host machine. This co",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-40551",
             "isZeroDay": false
         }
     ],
