@@ -4,6 +4,98 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Feb 10 2026",
+            "headline": "Backslash Secures $19M for Vibe Coding Expansion",
+            "title": "Backslash Raises $19 Million to Enhance Vibe Coding Security Platform",
+            "content": "Backslash has successfully raised $19 million to bolster its efforts in securing Vibe Coding, a platform designed to enhance software development security. The investment will be allocated towards expanding the company&#x27;s research and development team, enhancing platform capabilities, and increasing its market presence. This funding round underscores the growing demand for robust security solutions in the software development lifecycle. As cyber threats evolve, the need for advanced security measures within coding environments becomes increasingly critical. Backslash&#x27;s initiative aims to address these challenges by providing developers with tools to write more secure code.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/backslash-raises-19-million-to-secure-vibe-coding/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 10 2026",
+            "headline": "Snapchat Security Codes Scam Exploits Women&#x27;s Privacy",
+            "title": "Man Deceives Women into Revealing Snapchat Security Codes",
+            "content": "A man has been exposed for tricking hundreds of women into divulging their Snapchat security codes, compromising their accounts. This scheme highlights ongoing privacy violations, as the perpetrator also used smart glasses for secret filming. The incident serves as a stark reminder of the vulnerabilities in digital platforms and the need for heightened awareness around personal security. Women, in particular, remain frequent targets of such privacy invasions, underlining the importance of secure authentication practices. Users are advised to enable two-factor authentication and remain vigilant against unsolicited requests for personal information.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/privacy/2026/02/man-tricked-hundreds-of-women-into-handing-over-snapchat-security-codes",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 10 2026",
+            "headline": "Windows 11 to Adopt Mobile-Style Security Prompts",
+            "title": "Microsoft Introduces App Permission Prompts in Windows 11",
+            "content": "Microsoft is set to implement mobile-style app permission prompts in Windows 11, enhancing user control over app access to sensitive resources like files, cameras, and microphones. This update aims to improve privacy and security by requiring explicit user consent before applications can access critical system components. The move aligns with broader industry trends towards greater transparency and user empowerment in digital environments. As cyber threats continue to target user data, these prompts will help mitigate unauthorized access and enhance overall system security. Users should prepare for these changes and review app permissions regularly.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-announces-new-mobile-style-windows-security-controls/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Active Directory Security",
+                    "url": "/guides/active-directory-security-hardening.html",
+                    "icon": "fa-sitemap"
+                }
+            ]
+        },
+        {
+            "date": "Feb 10 2026",
+            "headline": "ZeroDayRAT Malware Targets Mobile Devices via Telegram",
+            "title": "ZeroDayRAT Malware Offers Full Control Over Android, iOS Devices",
+            "content": "ZeroDayRAT, a new commercial spyware platform, is being marketed to cybercriminals on Telegram, offering full remote control over compromised Android and iOS devices. This malware allows attackers to access personal data, intercept communications, and manipulate device functions. The platform&#x27;s capabilities are comparable to spyware tools typically developed by nation-state actors, raising concerns about its potential impact. Security experts warn of the severe privacy risks posed to individuals and organizations alike. Users are urged to stay informed about mobile security threats and to install reputable security software on their devices.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/zerodayrat-malware-grants-full-access-to-android-ios-devices/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 10 2026",
+            "headline": "ZeroDayRAT Spyware Kit Threatens Mobile Device Security",
+            "title": "ZeroDayRAT Spyware Kit Enables Total Compromise of iOS, Android Devices",
+            "content": "Security researchers have identified ZeroDayRAT, a sophisticated spyware kit available on Telegram, which enables complete compromise of iOS and Android devices. This toolkit&#x27;s capabilities are akin to those requiring nation-state resources, highlighting its advanced nature. The spyware can intercept communications, access personal data, and control device functions, posing significant privacy and security threats. As mobile devices continue to be integral to personal and professional life, the emergence of such tools underscores the need for robust mobile security measures. Users should remain vigilant and consider implementing advanced security solutions to protect their devices.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/new-zerodayrat-spyware-kit-enables-total-compromise-of-ios-android-devices/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Feb 10 2026",
+            "headline": "SSHStalker Botnet Infects 7,000 Linux Systems",
+            "title": "SSHStalker Linux Botnet Employs Classic Techniques to Spread",
+            "content": "The SSHStalker botnet has reportedly infected 7,000 Linux systems using traditional mass-compromise techniques. This botnet leverages a combination of scanners and malware to propagate across networks, exploiting known vulnerabilities in Linux environments. Despite using older methods, SSHStalker&#x27;s effectiveness signals the persistent threat posed by botnets, particularly in systems lacking updated security protocols. Organizations are advised to regularly update and patch their Linux systems to mitigate such risks. The incident serves as a reminder of the importance of maintaining robust cybersecurity defenses, even against seemingly outdated attack strategies.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/new-sshstalker-linux-botnet-uses-old-techniques/",
+            "relatedResources": [
+                {
+                    "label": "MITRE ATT&CK Mapping",
+                    "url": "/guides/mitre-attack-mapping.html",
+                    "icon": "fa-map"
+                }
+            ]
+        },
+        {
+            "date": "Feb 10 2026",
+            "headline": "Phorpiex Botnet Uses Weaponized Shortcuts in Ransomware Attack",
+            "title": "Windows Shortcut Exploited in Phorpiex-Linked Ransomware Campaign",
+            "content": "Researchers at Forcepoint X-Labs have uncovered a phishing campaign linked to the Phorpiex botnet that utilizes weaponized Windows shortcut files to deploy Global Group ransomware. This campaign, active since late 2024, employs common email lures to trick victims into executing malicious payloads. The use of Windows shortcuts as an attack vector highlights the evolving tactics of cybercriminals in bypassing traditional security measures. Organizations are urged to educate employees about phishing threats and to implement robust email filtering solutions to prevent such attacks. Keeping systems updated and conducting regular security audits are also recommended.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4130019/windows-shortcut-weaponized-in-phorpiex-linked-ransomware-campaign.html",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Response Playbook",
+                    "url": "/guides/ransomware-response-playbook.html",
+                    "icon": "fa-biohazard"
+                }
+            ]
+        },
+        {
             "date": "Mar 19 2026",
             "headline": "Shields Up: Virtual Event Explores Cybersecurity&#x27;s Future",
             "title": "Virtual Event Highlights Key Technologies Reshaping Cybersecurity Defenses",
@@ -58,45 +150,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Feb 09 2026",
-            "headline": "Chinese Cyberspies Breach Singapore&#x27;s Top Telcos",
-            "title": "UNC3886 Breaches Singapore&#x27;s Four Largest Telecommunication Providers",
-            "content": "The Chinese threat actor UNC3886 has successfully breached Singapore&#x27;s four largest telecommunication providers: Singtel, StarHub, M1, and Simba. The cyber espionage campaign reportedly occurred at least once last year, compromising sensitive communication infrastructures. This breach highlights the persistent threat posed by state-sponsored actors targeting critical national infrastructure. Singaporean authorities and affected companies are working to assess the full scope of the intrusion and bolster their defenses. The incident underscores the need for heightened security measures and international cooperation in combating cyber espionage.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/chinese-cyberspies-breach-singapores-four-largest-telcos/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 09 2026",
-            "headline": "Ivanti Zero-Days Impact Nearly 100 Victims",
-            "title": "Fallout from Ivanti Zero-Days Affects Close to 100 Systems",
-            "content": "Recent Shadowserver scans have identified 86 compromised instances resulting from newly discovered zero-day vulnerabilities in Ivanti software. Multiple threat groups are exploiting these vulnerabilities, affecting organizations across various sectors. The vulnerabilities allow attackers to execute arbitrary code, leading to significant security breaches. Ivanti is working on patches, but security experts urge affected organizations to implement interim mitigation measures immediately. This incident highlights the critical importance of timely vulnerability management and patch deployment in preventing widespread exploitation.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/ivanti-zero-day-vulnerabilities-netherlands-european-commission-shadowserver/",
-            "relatedResources": [
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Feb 09 2026",
-            "headline": "Warlock Gang Exploits SmarterMail Flaws",
-            "title": "Warlock Gang Breaches SmarterTools via SmarterMail Vulnerabilities",
-            "content": "The ransomware group known as Warlock Gang has exploited vulnerabilities in SmarterTools&#x27; SmarterMail product to breach the company&#x27;s systems. The attack underscores the ongoing threat posed by ransomware groups targeting software vulnerabilities to gain unauthorized access. SmarterTools is investigating the breach and working to address the security flaws in its email server product. Organizations using SmarterMail are advised to apply patches and review their security configurations to prevent similar attacks. This incident highlights the critical need for proactive vulnerability management and robust security practices.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/application-security/warlock-gang-breaches-smartertools-smartermail-bugs",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Response Playbook",
-                    "url": "/guides/ransomware-response-playbook.html",
-                    "icon": "fa-biohazard"
-                }
-            ]
-        },
-        {
             "date": "Mar 23 2026",
             "headline": "RSAC 2026 Registration Opens—Secure Your Spot Now",
             "title": "RSA Conference 2026 Registration Opens for Cybersecurity Professionals",
@@ -115,85 +168,85 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Feb 09 2026",
-            "headline": "OpenAI Codex Hits 1M Downloads—Free Tier Changes Loom",
-            "title": "OpenAI&#x27;s Codex App Surpasses 1 Million Downloads, Faces Potential Limits",
-            "content": "OpenAI&#x27;s Codex application for Mac has reached a significant milestone, surpassing 1 million downloads within its first week of release. This rapid adoption highlights the growing demand for AI-powered coding tools amidst the broader &quot;AI coding wars.&quot; However, OpenAI CEO Sam Altman hinted at possible limitations for free and Go users, as the company evaluates its service offerings. The Codex app, leveraging GPT-4, assists developers by generating code snippets and offering real-time coding suggestions. Users should stay informed about potential changes to service tiers that could impact access and usage.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/openais-new-codex-app-hits-1m-downloads-in-first-week-but-limits-may-be",
+            "date": "Feb 10 2026",
+            "headline": "Runway Secures $315M—Valued at $5.3B for AI Expansion",
+            "title": "Runway Raises $315M to Expand Beyond AI Video Generation",
+            "content": "AI video startup Runway has raised $315 million, valuing the company at $5.3 billion, as it seeks to expand its capabilities beyond video generation into more advanced world models. These world models aim to understand and simulate complex environments, potentially revolutionizing industries such as gaming, film, and virtual reality. The funding round was led by prominent venture capital firms, highlighting the growing interest in AI&#x27;s potential to create immersive digital experiences. By developing these models, Runway hopes to enable more sophisticated and interactive content creation. Stakeholders in the digital media and entertainment sectors should watch for advancements in AI-driven content tools.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/10/ai-video-startup-runway-raises-315m-at-5-3b-valuation-eyes-more-capable-world-models/",
             "relatedResources": [
                 {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
+                    "label": "API Security Best Practices",
+                    "url": "/guides/api-security-best-practices.html",
+                    "icon": "fa-plug"
                 }
             ]
         },
         {
-            "date": "Feb 09 2026",
-            "headline": "ChatGPT Introduces Ads—Impact on User Experience",
-            "title": "OpenAI Tests Ads in ChatGPT&#x27;s Cheapest Plans to Boost Revenue",
-            "content": "OpenAI has announced the introduction of ads in its ChatGPT platform, specifically targeting users on the cheapest subscription plans. These ads will appear as labeled &quot;sponsored&quot; links at the bottom of ChatGPT responses, but OpenAI assures that they will not influence the AI&#x27;s answers. The move aims to generate additional revenue to support the platform&#x27;s development and operational costs. This development follows a trend of monetizing AI services as companies seek sustainable business models. Users on these plans should anticipate the presence of ads and consider their impact on the overall experience.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/876029/openai-testing-ads-in-chatgpt",
+            "date": "Feb 10 2026",
+            "headline": "Trump Phone&#x27;s Viability Questioned Amidst Shifting Goals",
+            "title": "Trump Mobile T1 Phone&#x27;s Feasibility in Doubt as Goals Shift",
+            "content": "The Trump Mobile T1 Phone 8002, commonly referred to as the Trump Phone, has faced skepticism regarding its viability since its initial debut. Over the past eight months, the development team has frequently altered the device’s specifications and objectives, leading to questions about its ability to deliver on promises. Technical challenges, coupled with shifting project goals, have left potential users and industry analysts uncertain about its future in the competitive smartphone market. For developers and tech leaders, this serves as a reminder of the importance of clear project scopes and stable development targets. The phone&#x27;s success will depend heavily on its ability to meet consumer expectations.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/podcast/876188/trump-phone-specs-price-date-moltbook-openclaw-vergecast",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 10 2026",
+            "headline": "Nothing&#x27;s Apps: Fun to Code, Hard to Utilize",
+            "title": "Vibe Coding with Nothing’s Apps: Fun Yet Functionally Limited",
+            "content": "After a week of experimenting with Nothing&#x27;s Essential Apps Builder, users find the experience enjoyable but lacking in practical utility. The platform promises software that adapts to user behavior, but current offerings fall short of delivering meaningful functionality. While the concept of adaptive apps is appealing, the transition from novelty to a useful tool remains challenging. Developers and tech leaders should consider the gap between innovative ideas and real-world application as they explore adaptive technologies. This highlights the ongoing challenge of balancing creativity with practicality in software development.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/876229/nothing-essential-ai-app-builder",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 10 2026",
+            "headline": "Chinese Tech Giants Push Agentic AI in Industries",
+            "title": "Alibaba, Tencent, Huawei Drive Agentic AI for Industry Use",
+            "content": "Leading Chinese technology firms Alibaba, Tencent, and Huawei are advancing agentic AI systems, which autonomously execute multi-step tasks across various industries. These systems interact with software, data, and services without human intervention, aiming to enhance efficiency in targeted sectors. Alibaba is particularly focused on integrating these capabilities into industry-specific workflows, potentially transforming operations in sectors like finance, logistics, and manufacturing. As these technologies mature, businesses should prepare for a shift towards more autonomous processes, potentially reducing operational costs and increasing productivity. This trend underscores China&#x27;s strategic investment in AI to maintain competitive advantage.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/chinese-hyperscalers-and-industry-specific-chinas-agentic-ai/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 10 2026",
+            "headline": "Agentic AI in Healthcare—$450B Value by 2028",
+            "title": "Agentic AI to Revolutionize Life Sciences Marketing by 2028",
+            "content": "Agentic AI is poised to transform healthcare marketing by autonomously executing complex tasks, potentially generating up to $450 billion in economic value by 2028. Life sciences companies are increasingly integrating these AI agents into their commercial strategies, moving beyond simple prompt-based interactions. According to a report by Capgemini Invent, these systems could significantly enhance marketing efficiency and effectiveness. Healthcare marketers should consider adopting agentic AI to stay competitive, leveraging its capabilities to streamline operations and improve customer engagement. This development marks a significant evolution in how AI is applied in the life sciences sector.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/agentic-ai-healthcare-pharma-marketing-450b-value-2028/",
             "relatedResources": [
                 {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
                 }
             ]
         },
         {
-            "date": "Feb 09 2026",
-            "headline": "AI to Challenge SaaS Dominance—Databricks CEO&#x27;s Vision",
-            "title": "Databricks CEO Predicts AI&#x27;s Rise Could Eclipse Traditional SaaS",
-            "content": "Databricks CEO Ali Ghodsi has expressed a bold vision for the future, suggesting that while Software as a Service (SaaS) isn&#x27;t dead, AI could soon render it irrelevant. Ghodsi believes AI&#x27;s transformative potential will lead to the emergence of new competitors that could outperform traditional SaaS applications. This perspective underscores the ongoing evolution in the tech landscape, where AI capabilities are increasingly integrated into enterprise solutions. Companies relying on SaaS should consider how AI advancements might influence their strategic planning and competitive positioning.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/09/databricks-ceo-says-saas-isnt-dead-but-ai-will-soon-make-it-irrelevant/",
+            "date": "Feb 10 2026",
+            "headline": "AI Enthusiasts Show First Signs of Burnout",
+            "title": "Early Burnout Detected Among AI-Adopting Employees",
+            "content": "Employees who have embraced AI in their workflows are beginning to show signs of burnout as increased productivity expectations extend work hours into personal time. The efficiency gains provided by AI have paradoxically led to expanded to-do lists, with tasks filling every available moment, including lunch breaks and evenings. This trend highlights the need for organizations to balance productivity with employee well-being, ensuring that AI tools enhance rather than overwhelm. Managers should monitor workloads and encourage reasonable work-life boundaries to prevent burnout. This serves as a cautionary tale for industries rapidly integrating AI technologies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/09/the-first-signs-of-burnout-are-coming-from-the-people-who-embrace-ai-the-most/",
             "relatedResources": []
         },
         {
-            "date": "Feb 09 2026",
-            "headline": "Anthropic Faces Legal Battle in India Over Name Rights",
-            "title": "U.S. AI Giant Anthropic in Legal Dispute Over Name in India",
-            "content": "Anthropic, a prominent U.S. AI company, is embroiled in a legal dispute in India over its name. The conflict arises from a case filed by India&#x27;s Anthropic Software, which claims prior rights to the name within the region. This legal challenge highlights the complexities of global expansion for technology firms, particularly in navigating intellectual property rights across different jurisdictions. Companies planning international growth should ensure thorough due diligence on trademark and naming rights to avoid similar disputes.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/09/anthropics-india-expansion-collides-with-a-local-company-that-already-had-the-name/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 09 2026",
-            "headline": "OpenAI Faces Backlash—ChatGPT Ads Spark Controversy",
-            "title": "OpenAI Introduces Ads in ChatGPT to Offset Development Costs",
-            "content": "OpenAI has rolled out ads within its ChatGPT platform, a move that has sparked controversy among users. The ads, appearing as suggestions, aim to generate revenue to support the costly development and expansion of the AI technology. This decision follows previous backlash when OpenAI tested similar features that users perceived as intrusive. As AI platforms seek sustainable financial models, the balance between monetization and user experience remains a critical challenge. Users should be aware of these changes and consider their implications on service usage.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/09/chatgpt-rolls-out-ads/",
+            "date": "Feb 10 2026",
+            "headline": "OpenAI Drops ‘io’ Branding for Upcoming Hardware",
+            "title": "OpenAI Abandons ‘io’ Branding Amid Trademark Dispute",
+            "content": "OpenAI has decided to discontinue the use of the &quot;io&quot; branding for its forthcoming AI hardware, following a trademark lawsuit. The device, which is anticipated to launch in 2027, has been at the center of legal challenges over its name. This decision reflects the complexities of branding in the highly competitive AI hardware market, where intellectual property rights are fiercely protected. Companies should be mindful of trademark issues when developing new products to avoid similar conflicts. OpenAI&#x27;s strategic pivot underscores the importance of adaptable branding strategies in the tech industry.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/openai-drops-io-branding-hardware-devices/",
             "relatedResources": [
                 {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
                 }
             ]
-        },
-        {
-            "date": "Feb 09 2026",
-            "headline": "Discord Breach Exposes 70K IDs—Age Verification Under Fire",
-            "title": "Discord&#x27;s Age Verification Under Scrutiny After Data Breach Exposes IDs",
-            "content": "Discord is facing significant backlash following a data breach that exposed 70,000 user IDs, prompting concerns over its age verification process. The platform plans to block adult content unless users verify their age using selfies or IDs, a move that raises privacy concerns. This breach underscores the importance of robust security measures in protecting user data, especially for platforms with younger audiences. Users should review their privacy settings and be cautious about sharing sensitive information online.",
-            "source": "Artificial Intelligence - Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/02/discord-faces-backlash-over-age-checks-after-data-breach-exposed-70000-ids/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 09 2026",
-            "headline": "Workday CEO Change—Bhusri Returns to Lead AI Focus",
-            "title": "Workday Co-Founder Aneel Bhusri Returns as CEO to Drive AI Strategy",
-            "content": "Workday has announced a leadership change, with co-founder Aneel Bhusri returning as CEO following the departure of Carl Eschenbach. Bhusri emphasized that the company&#x27;s next phase will concentrate on leveraging AI technologies to enhance its offerings. This leadership shift reflects Workday&#x27;s commitment to integrating AI into its business strategy, aligning with broader industry trends. Stakeholders should monitor how this strategic focus on AI could influence Workday&#x27;s product development and market positioning.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/09/workday-ceo-eschenbach-departs-with-co-founder-aneel-bhusri-returning-as-ceo/",
-            "relatedResources": []
         }
     ],
     "articles": {},
