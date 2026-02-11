@@ -82,8 +82,21 @@
   </url>
   
   <!-- ========== ARTICLES - HIGH TRAFFIC POTENTIAL ========== -->
-  
+
+  <!-- Feb 11, 2026 - Windows Notepad RCE CVE-2026-20841 -->
+  <url>
+    <loc>https://thehgtech.com/articles/windows-notepad-rce-cve-2026-20841.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.99</priority>
+    <lastmod>2026-02-11</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/windows-notepad-rce-cve-2026-20841.png</image:loc>
+      <image:title>Windows Notepad RCE CVE-2026-20841 Markdown Link Injection</image:title>
+    </image:image>
+  </url>
+
   <!-- Feb 5, 2026 - Langflow AI RCE CVE-2025-3248 -->
+
   <url>
     <loc>https://thehgtech.com/articles/langflow-ai-rce-cve-2025-3248.html</loc>
     <changefreq>weekly</changefreq>
