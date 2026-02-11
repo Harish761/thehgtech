@@ -1,6 +1,30 @@
 {
   "guides": [
     {
+      "id": "soc-analyst-career-roadmap",
+      "title": "SOC Analyst Career Roadmap: From Tier 1 to Security Architect (2026)",
+      "category": "Career Guides",
+      "excerpt": "Complete SOC analyst career roadmap. Tier 1-3 progression, required skills, certifications with ROI analysis (Security+, CySA+, GSOC), salary benchmarks ($55K-$160K+), and hands-on lab exercises.",
+      "readTime": "28 min",
+      "level": "Beginner to Advanced",
+      "date": "Feb 11, 2026",
+      "badge": "New",
+      "featured": true,
+      "image": "/images/guides/soc-analyst-career-roadmap.png"
+    },
+    {
+      "id": "ceh-vs-oscp-certification",
+      "title": "CEH vs OSCP: The Definitive Certification Comparison (2026)",
+      "category": "Career Guides",
+      "excerpt": "Data-driven CEH vs OSCP comparison. Exam formats, difficulty (60-70% vs 30-40% pass rate), salary impact (+$8K vs +$25K), total costs, and a decision framework for your career stage.",
+      "readTime": "22 min",
+      "level": "Beginner to Intermediate",
+      "date": "Feb 11, 2026",
+      "badge": "New",
+      "featured": true,
+      "image": "/images/guides/ceh-vs-oscp-certification.png"
+    },
+    {
       "id": "vscode-supply-chain-hardening-2026",
       "title": "Securing the AI-Powered IDE: Hardening VS Code, Cursor & Windsurf",
       "category": "DevSecOps",

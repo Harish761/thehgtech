@@ -707,6 +707,30 @@
 
   <!-- ========== SECURITY GUIDES - HIGH VALUE LONG-TAIL KEYWORDS ========== -->
   
+  <!-- NEW GUIDE - February 11, 2026 (SOC Analyst Career Roadmap) -->
+  <url>
+    <loc>https://thehgtech.com/guides/soc-analyst-career-roadmap.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.92</priority>
+    <lastmod>2026-02-11</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/guides/soc-analyst-career-roadmap.png</image:loc>
+      <image:title>SOC Analyst Career Roadmap 2026 - Tier 1 to Security Architect</image:title>
+    </image:image>
+  </url>
+
+  <!-- NEW GUIDE - February 11, 2026 (CEH vs OSCP) -->
+  <url>
+    <loc>https://thehgtech.com/guides/ceh-vs-oscp-certification.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.92</priority>
+    <lastmod>2026-02-11</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/guides/ceh-vs-oscp-certification.png</image:loc>
+      <image:title>CEH vs OSCP Certification Comparison 2026</image:title>
+    </image:image>
+  </url>
+
   <!-- NEW GUIDE - January 30, 2026 (Clawdbot/Moltbot Security) -->
   <url>
     <loc>https://thehgtech.com/guides/clawdbot-moltbot-security.html</loc>
