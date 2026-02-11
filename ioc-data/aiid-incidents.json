@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1368",
+      "incident_id": 1368,
+      "title": "Malicious OpenClaw Skills Reportedly Delivered AMOS Stealer and Exfiltrated Credentials via ClawHub",
+      "date": "2026-02-11",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1365",
       "incident_id": 1365,
       "title": "AkiraBot Reportedly Used OpenAI to Spam Website Chats and Contact Forms at Scale",
@@ -1097,19 +1105,19 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-643",
-      "incident_id": 643,
-      "title": "Purported Deepfake Video Allegedly Claims Kyiv's Assassination Plan Against President Emmanuel Macro",
-      "date": "2025-11-17",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-602",
       "incident_id": 602,
       "title": "Russia Reportedly Using Artificial Intelligence in Disinformation Campaigns to Erode Western Support",
       "date": "2025-11-17",
       "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-643",
+      "incident_id": 643,
+      "title": "Purported Deepfake Video Allegedly Claims Kyiv's Assassination Plan Against President Emmanuel Macro",
+      "date": "2025-11-17",
+      "category": "deepfake",
       "severity": "medium"
     },
     {
@@ -1530,9 +1538,9 @@
     }
   ],
   "stats": {
-    "total": 191,
-    "last7Days": 7,
-    "last30Days": 35
+    "total": 192,
+    "last7Days": 8,
+    "last30Days": 36
   },
-  "lastUpdated": "2026-02-11T19:13:52.424253+05:30"
+  "lastUpdated": "2026-02-11T22:45:08.241709+05:30"
 }
