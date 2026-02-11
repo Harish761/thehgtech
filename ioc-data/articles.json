@@ -1,6 +1,25 @@
 {
   "articles": [
     {
+      "id": "windows-notepad-rce-cve-2026-20841",
+      "title": "Windows Notepad RCE (CVE-2026-20841): Markdown Link Injection Turns Text Editor into Attack Vector",
+      "date": "February 11, 2026",
+      "category": "Vulnerability",
+      "badge": "HIGH",
+      "excerpt": "Microsoft patches CVE-2026-20841, a CVSS 8.8 RCE in Windows Notepad. Crafted Markdown files exploit protocol handler misvalidation for command injection. The text editor trusted by millions for 40 years is no longer safe by default.",
+      "image": "images/articles/windows-notepad-rce-cve-2026-20841.png",
+      "tags": [
+        "CVE-2026-20841",
+        "Windows Notepad",
+        "RCE",
+        "Markdown",
+        "Command Injection",
+        "Patch Tuesday"
+      ],
+      "author": "TheHGTech Security Research",
+      "externalUrl": "articles/windows-notepad-rce-cve-2026-20841.html"
+    },
+    {
       "id": "report-20260209",
       "title": "Weekly Threat Report: February 09, 2026",
       "date": "February 09, 2026",
