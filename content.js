@@ -5,6 +5,98 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Feb 11 2026",
+            "headline": "Conduent Breach Exposes 17,000 Volvo Employees&#x27; Data",
+            "title": "Conduent Data Breach Widens, Affecting Volvo Group Employees",
+            "content": "A major data breach at Conduent has compromised the personal information of nearly 17,000 employees at Volvo Group. Initially believed to impact 10 million individuals, the breach now affects at least 25 million people globally. The breach involves sensitive data, raising concerns over identity theft and corporate espionage. This incident underscores the vulnerabilities in third-party service providers that handle vast amounts of employee information. Affected individuals are advised to monitor their personal accounts for suspicious activity and consider identity theft protection services. This breach highlights the importance of robust data security measures within supply chains.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/conduent-breach-hits-volvo-group-nearly-17000-employees-data-exposed/",
+            "relatedResources": [
+                {
+                    "label": "Third-Party Risk Management",
+                    "url": "/guides/third-party-risk-management.html",
+                    "icon": "fa-handshake"
+                }
+            ]
+        },
+        {
+            "date": "Feb 11 2026",
+            "headline": "Zast.AI Secures $6M for AI Code Security Innovation",
+            "title": "Zast.AI Raises $6 Million to Enhance AI-Powered Code Security",
+            "content": "Zast.AI has successfully raised $6 million in funding to advance its AI-driven code security solutions. The startup utilizes AI agents to detect and validate software vulnerabilities before they can be exploited. This investment will accelerate the development of their platform, which aims to provide more efficient and accurate security assessments for developers. As software vulnerabilities remain a critical concern, Zast.AI&#x27;s approach could significantly reduce the risk of cyberattacks. Developers and organizations are encouraged to explore AI-enhanced security tools to bolster their defenses against emerging threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/zast-ai-raises-6-million-for-ai-powered-code-security/",
+            "relatedResources": [
+                {
+                    "label": "Third-Party Risk Management",
+                    "url": "/guides/third-party-risk-management.html",
+                    "icon": "fa-handshake"
+                }
+            ]
+        },
+        {
+            "date": "Feb 11 2026",
+            "headline": "WSL2: A New Frontier for Malware in Windows",
+            "title": "Windows Subsystem for Linux 2 Emerges as a Malware Vector",
+            "content": "The Windows Subsystem for Linux (WSL), particularly its latest version WSL2, is becoming a notable entry point for malware within the Windows ecosystem. WSL2 allows users to run a Linux environment directly inside Windows, which attackers are now exploiting to bypass traditional security measures. This development poses a significant risk, as it can facilitate the spread of Linux-based malware on Windows systems. Security professionals should be aware of this trend and ensure that endpoint protection solutions are updated to detect threats leveraging WSL2. This highlights the evolving nature of cross-platform malware threats.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32704",
+            "relatedResources": [
+                {
+                    "label": "Active Directory Security",
+                    "url": "/guides/active-directory-security-hardening.html",
+                    "icon": "fa-sitemap"
+                },
+                {
+                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
+                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
+                    "icon": "fa-shield-virus"
+                }
+            ]
+        },
+        {
+            "date": "Feb 11 2026",
+            "headline": "GOP&#x27;s MEGA and SAVE Acts Aim to Revamp Election Laws",
+            "title": "GOP Congress Introduces MEGA and SAVE Acts to Reform Election Laws",
+            "content": "The GOP Congress has proposed the MEGA Act and SAVE Act to overhaul U.S. election laws, aiming to address concerns over election fraud. Despite audits and expert analyses indicating that election improprieties are rare, these acts seek to implement more stringent measures. The proposed changes could have far-reaching implications for how elections are conducted and monitored in the future. Stakeholders in the election process should closely examine these legislative efforts and consider their potential impact on election integrity and voter accessibility.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/republicans-propose-save-america-act-mega-act-election-laws/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 11 2026",
+            "headline": "Hidden Information: A Silent Threat in Security Failures",
+            "title": "Recognizing Hidden Information as a Catalyst for Security Failures",
+            "content": "Security breaches often stem not from external attacks but from overlooked or hidden information within organizations. These blind spots can lead to significant vulnerabilities, making it crucial for security teams to uncover and address them proactively. The article emphasizes the importance of transparency and thorough information audits to prevent security failures. Organizations are encouraged to implement comprehensive data management practices and regular audits to ensure all critical information is accounted for and protected. This approach can help mitigate risks associated with hidden data and enhance overall security posture.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/security-in-the-dark-recognizing-the-signs-of-hidden-information/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 11 2026",
+            "headline": "Microsoft to Update Secure Boot Certificates by June 2026",
+            "title": "Microsoft Plans to Refresh Windows Secure Boot Certificates in June 2026",
+            "content": "Microsoft has announced that it will update its Windows Secure Boot certificates in June 2026, as the current certificates approach their expiration after 15 years of service. This update is critical to maintaining the integrity and security of the boot process, preventing unauthorized code from running during system startup. Organizations relying on Secure Boot should prepare for this transition by ensuring their systems are compatible with the new certificates. This update highlights the importance of keeping security protocols up-to-date to protect against evolving threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/microsoft-to-refresh-windows-secure-boot-certificates-in-june-2026/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 11 2026",
+            "headline": "February Patch Tuesday Fixes Six Active Zero-Days",
+            "title": "Microsoft February 2026 Patch Tuesday Addresses Six Zero-Day Vulnerabilities",
+            "content": "Microsoft&#x27;s February 2026 Patch Tuesday includes fixes for 59 security flaws, notably six zero-day vulnerabilities that are currently being exploited in the wild. These zero-days pose significant risks, allowing attackers to execute arbitrary code and compromise affected systems. Security professionals should prioritize deploying these updates to safeguard against potential exploits. This patch release underscores the ongoing challenge of zero-day vulnerabilities and the critical need for timely patch management. Organizations are advised to review their patching strategies to ensure rapid response to such threats.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/02/february-2026-patch-tuesday-includes-six-actively-exploited-zero-days",
+            "relatedResources": [
+                {
+                    "label": "Zero-Day Detection Guide",
+                    "url": "/guides/zero-day-detection.html",
+                    "icon": "fa-exclamation-triangle"
+                }
+            ]
+        },
+        {
+            "date": "Feb 11 2026",
             "headline": "Windows 11 26H1—Exclusive for Snapdragon X2 Devices",
             "title": "Microsoft Launches Windows 11 26H1 for Snapdragon X2 and ARM Chips",
             "content": "Microsoft has unveiled Windows 11 26H1, a version not intended for existing PCs but rather for devices powered by the Snapdragon X2 processor and potentially other ARM-based chips. This release marks a strategic move by Microsoft to enhance Windows compatibility and performance on ARM architecture, which is gaining traction in the mobile and lightweight computing market. The Snapdragon X2 is expected to offer improved energy efficiency and processing power, making it an attractive option for next-generation devices. Existing Windows users will not receive this update, emphasizing the company&#x27;s focus on new hardware ecosystems. Developers and IT teams should prepare to support these devices as they enter the market.",
@@ -28,54 +120,6 @@ const websiteContent = {
             "content": "Microsoft&#x27;s February Patch Tuesday release tackles six actively exploited vulnerabilities among a total of 60 security fixes. These vulnerabilities affect various Microsoft products and have been used in the wild, posing significant risks to affected systems. Tyler Reguly from Fortra highlights the ease of mitigating these issues with regular Microsoft patches, underscoring the importance of timely updates. Organizations using Microsoft products should prioritize applying these patches to safeguard against potential exploitation. This update cycle reflects Microsoft&#x27;s ongoing efforts to enhance the security of its software ecosystem.",
             "source": "CSO Online",
             "sourceUrl": "https://www.csoonline.com/article/4130446/february-2026-patch-tuesday-six-new-and-actively-exploited-microsoft-vulnerabilities-addressed.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 10 2026",
-            "headline": "BeyondTrust RCE Flaw—Patch Critical Vulnerability Now",
-            "title": "BeyondTrust Urges Patching Critical RCE Vulnerability in Remote Access Tools",
-            "content": "BeyondTrust has released patches for a critical remote code execution (RCE) vulnerability affecting its Remote Support (RS) and Privileged Remote Access (PRA) tools. This flaw allows attackers to execute operating system commands without authentication or user interaction, posing a severe threat to organizations using self-hosted versions of these tools. The vulnerability highlights the importance of securing remote access solutions against unauthorized exploitation. Companies are strongly advised to apply the available patches immediately to prevent potential breaches. This incident underscores the critical need for robust security measures in remote access technologies.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4130415/beyondtrust-fixes-critical-rce-flaw-in-remote-access-tools.html",
-            "relatedResources": [
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Feb 10 2026",
-            "headline": "SSHStalker Botnet—IRC Powers New Linux Threat",
-            "title": "SSHStalker Botnet Utilizes IRC for Command-and-Control Operations",
-            "content": "A newly identified Linux botnet, named SSHStalker, is exploiting the Internet Relay Chat (IRC) protocol for its command-and-control (C2) communications. This approach leverages an older technology to manage infected devices, demonstrating the adaptability of threat actors. SSHStalker targets Linux systems, potentially affecting a wide range of servers and IoT devices. Security professionals should monitor network traffic for unusual IRC activity and implement robust SSH configurations to mitigate infection risks. This development highlights the ongoing evolution and persistence of botnet threats in the cybersecurity landscape.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-linux-botnet-sshstalker-uses-old-school-irc-for-c2-comms/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 10 2026",
-            "headline": "North Korean Hackers Deploy macOS Malware in Crypto Heists",
-            "title": "North Korean Hackers Use macOS Malware in Cryptocurrency Theft Operations",
-            "content": "North Korean cyber actors are employing new macOS malware in targeted attacks against the cryptocurrency sector. Utilizing AI-generated videos and the ClickFix technique, these campaigns aim to deliver malware to both macOS and Windows environments. The attacks are part of a broader strategy to exfiltrate funds from cryptocurrency exchanges and individual wallets. Organizations in the cryptocurrency industry should enhance their security postures and remain vigilant against such sophisticated threats. This operation underscores the growing threat of nation-state actors in the digital financial realm.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/north-korean-hackers-use-new-macos-malware-in-crypto-theft-attacks/",
-            "relatedResources": [
-                {
-                    "label": "Active Directory Security",
-                    "url": "/guides/active-directory-security-hardening.html",
-                    "icon": "fa-sitemap"
-                }
-            ]
-        },
-        {
-            "date": "Feb 10 2026",
-            "headline": "SolarWinds WHD Exposures—Public Apps Risk Cyber Attacks",
-            "title": "SolarWinds WHD Attacks Highlight Dangers of Publicly Exposed Applications",
-            "content": "Recent attacks on SolarWinds Web Help Desk (WHD) instances have exposed the vulnerabilities of applications left accessible on the public internet. These attacks demonstrate the risks associated with inadequate security configurations, making exposed apps attractive targets for cybercriminals. Organizations using WHD should review their security settings and restrict public access to mitigate potential threats. This incident serves as a reminder of the importance of securing web applications and maintaining a strong cybersecurity posture. The exposure of such applications can lead to significant data breaches and operational disruptions.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/solarwinds-whd-attacks-exposed-apps",
             "relatedResources": []
         },
         {
@@ -113,6 +157,97 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Feb 11 2026",
+            "headline": "T-Mobile—50 Languages, No App Needed",
+            "title": "T-Mobile to Launch Live Translation for Phone Calls in 50+ Languages",
+            "content": "T-Mobile is set to launch a groundbreaking AI-powered feature that translates live phone calls into over 50 languages without the need for a separate app. Announced for beta testing this spring, the Live Translation feature aims to break language barriers for T-Mobile customers, who can register for early access starting today. This innovation utilizes advanced natural language processing to provide seamless, real-time translations directly during calls. The service could significantly impact global communication, making it easier for individuals and businesses to interact across language divides. With this move, T-Mobile continues to leverage AI to enhance user experience and expand its service offerings.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/877008/t-mobile-live-translation-languages-ai-network",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 11 2026",
+            "headline": "Uber Eats AI—Your New Grocery Shopping Assistant",
+            "title": "Uber Eats Introduces AI Cart Assistant for Enhanced Grocery Shopping",
+            "content": "Uber has unveiled a new AI feature called &quot;Cart Assistant&quot; within its Uber Eats app, designed to streamline the grocery shopping experience. Users can interact with the AI via text prompts to generate grocery lists or upload images of items they need. This feature is part of Uber&#x27;s broader strategy to integrate AI into its services, aiming to simplify and personalize user interactions. The Cart Assistant could particularly benefit busy consumers looking for efficient ways to manage their shopping needs. By leveraging AI, Uber Eats is enhancing its app functionality, potentially increasing user engagement and satisfaction.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/transportation/876540/uber-eats-ai-chatbot-cart-assistant-grocery-shopping",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 11 2026",
+            "headline": "Tech Workers Demand Transparency on ICE Relations",
+            "title": "Tech Employees Frustrated by Companies&#x27; Silence on ICE Collaboration",
+            "content": "Amid heightened immigration enforcement by the U.S. Department of Homeland Security, tech workers are expressing frustration over their companies&#x27; lack of transparency regarding collaborations with Immigration and Customs Enforcement (ICE). Many employees interpret their CEOs&#x27; silence as a directive to avoid controversy, even as federal actions reportedly involve widespread violence. This situation highlights ongoing tensions within tech companies over ethical responsibilities and government contracts. Employees are increasingly vocal about their desire for corporate accountability and clarity on how their work intersects with governmental actions. This issue underscores the broader industry challenge of balancing business interests with ethical considerations.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/876558/tech-workers-ice-resistance-google-microsoft-clear-abbott",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 11 2026",
+            "headline": "OpenAI, Google Unite for Paris Startup Accelerator",
+            "title": "AI Giants Collaborate on Paris-Based Startup Accelerator F/ai",
+            "content": "OpenAI, Anthropic, and Google, among other tech leaders, have joined forces to launch F/ai, a new startup accelerator in Paris. This collaboration aims to foster innovation and support emerging AI talent by providing resources and mentorship to startups. The initiative represents a significant shift towards cooperation among industry rivals, driven by a shared interest in advancing AI technology. By pooling their expertise, these companies hope to accelerate the development of cutting-edge AI applications and solutions. The accelerator is expected to attract a diverse range of participants, contributing to Europe&#x27;s growing status as a hub for AI innovation.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/ai-industry-rivals-are-teaming-up-on-a-startup-accelerator/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 11 2026",
+            "headline": "Barclays Leverages AI—12% Profit Surge in 2025",
+            "title": "Barclays Harnesses AI to Enhance Profitability and Operational Efficiency",
+            "content": "Barclays has reported a 12% increase in annual profit for 2025, with earnings before tax reaching £9.1 billion, up from £8.1 billion the previous year. The bank attributes this growth to its strategic investment in AI technologies aimed at reducing costs and boosting returns. Barclays has set ambitious targets through 2028, aiming for a return on tangible equity (RoTE) of over 14%, up from a previous goal of above 13%. This move reflects a broader trend in the financial sector towards adopting AI to improve efficiency and financial performance. Barclays&#x27; success may encourage other financial institutions to accelerate their AI adoption.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/barclays-bets-on-ai-to-cut-costs-and-boost-returns/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 11 2026",
+            "headline": "Insurance Industry Turns to Agentic AI for Savings",
+            "title": "Agentic AI Drives Cost Efficiency in Insurance Sector Transformation",
+            "content": "Insurance companies are increasingly adopting agentic AI to achieve scalable efficiency amid ongoing digital transformation challenges. Despite having extensive data reserves and analytic expertise, the industry has struggled to move beyond pilot projects. Agentic AI offers a solution by automating decision-making processes and optimizing operations, ultimately reducing costs. This shift is crucial as insurers face pressure to modernize and improve profitability. By leveraging AI, insurance leaders can enhance service delivery and maintain competitiveness in a rapidly evolving market. The adoption of agentic AI is expected to accelerate as companies seek to capitalize on its potential.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/how-insurance-leaders-use-agentic-ai-to-cut-operational-costs/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 11 2026",
+            "headline": "UK MOD Partners with Red Hat for AI Deployment",
+            "title": "Red Hat to Build AI and Cloud Infrastructure for UK MOD",
+            "content": "The UK Ministry of Defence (MOD) has partnered with Red Hat to create a unified AI and hybrid cloud infrastructure across its operations. This initiative aims to eliminate data silos and expedite AI model deployment from data centers to tactical environments. The collaboration is part of the MOD&#x27;s strategy to enhance its technological capabilities and operational efficiency. For CIOs, this partnership signifies a significant step towards integrating advanced AI solutions within defense operations. Red Hat&#x27;s involvement underscores its role as a key player in providing robust, scalable technology solutions for government entities.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/red-hat-unifies-ai-tactical-edge-deployment-for-uk-mod/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 11 2026",
             "headline": "OpenAI Exec Fired Amid Controversy—Denies Discrimination Claims",
             "title": "OpenAI Executive Dismissed Over Discrimination Allegation Linked to Chatbot Policy",
             "content": "An OpenAI policy executive has been dismissed following allegations of discrimination related to her opposition to an &quot;adult mode&quot; for chatbots. The executive has denied any discriminatory behavior, but the incident highlights ongoing tensions within AI companies over content moderation policies. The dismissal raises questions about internal governance and decision-making processes at OpenAI, especially as it navigates the complexities of AI ethics. Stakeholders in AI development should pay close attention to how this situation unfolds, as it may influence future policy and ethical guidelines within the industry.",
@@ -128,81 +263,6 @@ const websiteContent = {
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/02/10/nearly-half-of-xais-founding-team-has-now-left-the-company/",
             "relatedResources": []
-        },
-        {
-            "date": "Feb 10 2026",
-            "headline": "Amazon Eyes AI Content Marketplace—Media Sites to Benefit",
-            "title": "Amazon Plans to Launch Marketplace for Media Content Licensing to AI Firms",
-            "content": "Amazon is reportedly planning to create a marketplace that connects media publishers with AI companies seeking licensable content. This initiative aims to streamline the process of content acquisition for AI training, potentially providing media companies with a new revenue stream. As AI models increasingly rely on diverse datasets, this marketplace could become a critical resource for ensuring high-quality training data. Media organizations should prepare to engage with this platform to capitalize on emerging opportunities in the AI ecosystem. This move by Amazon signals a growing convergence between traditional media and AI technologies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/10/amazon-may-launch-a-marketplace-where-media-sites-can-sell-their-content-to-ai-companies/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 10 2026",
-            "headline": "ChatGPT Tool Enhanced—Now Includes Document Viewer",
-            "title": "OpenAI Enhances ChatGPT&#x27;s Research Tool with Built-In Document Viewer",
-            "content": "OpenAI has upgraded ChatGPT&#x27;s deep research tool by adding a full-screen document viewer, allowing users to navigate AI-generated reports more efficiently. This feature enhances the user experience by enabling seamless scrolling and targeted access to specific report sections. As AI-generated content becomes more prevalent, tools like this are essential for professionals who rely on detailed analyses. The update reflects OpenAI&#x27;s commitment to improving its AI offerings and supporting user needs in research and data analysis. Users should explore this new functionality to maximize the utility of ChatGPT in their workflows.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/876775/openai-deep-research-chatgpt-full-screen-report-viewer",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Feb 10 2026",
-            "headline": "Olympic Ice Dance—AI Music Sparks Plagiarism Concerns",
-            "title": "Czech Ice Dancers Face Plagiarism Issues with AI-Generated Music at Olympics",
-            "content": "Czech ice dancers Katerina Mrazkova and Daniel Mrazek encountered unexpected challenges when their Olympic performance featured AI-generated music that was later found to contain plagiarized elements. This incident highlights the potential pitfalls of using large language models (LLMs) for creative purposes, where originality is crucial. The situation underscores the importance of thorough vetting and copyright checks when employing AI in artistic contexts. Artists and creators should be vigilant about the sources and originality of AI-generated content to avoid legal and reputational risks. This case serves as a cautionary tale for the integration of AI in the arts.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/10/olympics-czech-ice-dancers-duo-ai-music/",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Feb 10 2026",
-            "headline": "OpenAI Boosts API—Adds Agent Skills, Terminal Shell",
-            "title": "OpenAI Enhances Responses API with Agent Skills and Terminal Shell",
-            "content": "OpenAI has upgraded its Responses API to include agent skills and a complete terminal shell, significantly enhancing its capabilities for building AI agents. This update addresses previous limitations where AI models struggled with memory retention over extended interactions. By providing a more robust framework, OpenAI enables developers to create more sophisticated and context-aware AI systems. This advancement is crucial for applications requiring sustained engagement and complex task execution. Developers should explore these new features to leverage the full potential of AI agents in their projects.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/openai-upgrades-its-responses-api-to-support-agent-skills-and-a-complete",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 10 2026",
-            "headline": "Sequoia-Backed Lab Secures $180M—Aims for Human-Like AI Learning",
-            "title": "Flapping Airplanes Secures $180M to Develop Human-Like AI Learning Models",
-            "content": "Flapping Airplanes, an AI lab backed by Sequoia, Google Ventures, and Index, has raised $180 million to pursue AI models that learn like humans rather than relying on vast internet data. Led by brothers Ben and Asher Spec, the lab aims to revolutionize AI learning processes by mimicking human cognitive functions. This approach challenges the current trend of data-intensive AI training, promising more efficient and adaptable AI systems. Investors and tech leaders should monitor this initiative as it could redefine AI development paradigms and influence future research directions.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/podcast/this-sequoia-backed-lab-thinks-the-brain-is-the-floor-not-the-ceiling-for-ai/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
         }
     ],
     "articles": {},
