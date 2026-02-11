@@ -4,36 +4,64 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Feb 10 2026",
-            "headline": "Backslash Secures $19M for Vibe Coding Expansion",
-            "title": "Backslash Raises $19 Million to Enhance Vibe Coding Security Platform",
-            "content": "Backslash has successfully raised $19 million to bolster its efforts in securing Vibe Coding, a platform designed to enhance software development security. The investment will be allocated towards expanding the company&#x27;s research and development team, enhancing platform capabilities, and increasing its market presence. This funding round underscores the growing demand for robust security solutions in the software development lifecycle. As cyber threats evolve, the need for advanced security measures within coding environments becomes increasingly critical. Backslash&#x27;s initiative aims to address these challenges by providing developers with tools to write more secure code.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/backslash-raises-19-million-to-secure-vibe-coding/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 10 2026",
-            "headline": "Snapchat Security Codes Scam Exploits Women&#x27;s Privacy",
-            "title": "Man Deceives Women into Revealing Snapchat Security Codes",
-            "content": "A man has been exposed for tricking hundreds of women into divulging their Snapchat security codes, compromising their accounts. This scheme highlights ongoing privacy violations, as the perpetrator also used smart glasses for secret filming. The incident serves as a stark reminder of the vulnerabilities in digital platforms and the need for heightened awareness around personal security. Women, in particular, remain frequent targets of such privacy invasions, underlining the importance of secure authentication practices. Users are advised to enable two-factor authentication and remain vigilant against unsolicited requests for personal information.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/privacy/2026/02/man-tricked-hundreds-of-women-into-handing-over-snapchat-security-codes",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 10 2026",
-            "headline": "Windows 11 to Adopt Mobile-Style Security Prompts",
-            "title": "Microsoft Introduces App Permission Prompts in Windows 11",
-            "content": "Microsoft is set to implement mobile-style app permission prompts in Windows 11, enhancing user control over app access to sensitive resources like files, cameras, and microphones. This update aims to improve privacy and security by requiring explicit user consent before applications can access critical system components. The move aligns with broader industry trends towards greater transparency and user empowerment in digital environments. As cyber threats continue to target user data, these prompts will help mitigate unauthorized access and enhance overall system security. Users should prepare for these changes and review app permissions regularly.",
+            "date": "Feb 11 2026",
+            "headline": "Windows 11 26H1—Exclusive for Snapdragon X2 Devices",
+            "title": "Microsoft Launches Windows 11 26H1 for Snapdragon X2 and ARM Chips",
+            "content": "Microsoft has unveiled Windows 11 26H1, a version not intended for existing PCs but rather for devices powered by the Snapdragon X2 processor and potentially other ARM-based chips. This release marks a strategic move by Microsoft to enhance Windows compatibility and performance on ARM architecture, which is gaining traction in the mobile and lightweight computing market. The Snapdragon X2 is expected to offer improved energy efficiency and processing power, making it an attractive option for next-generation devices. Existing Windows users will not receive this update, emphasizing the company&#x27;s focus on new hardware ecosystems. Developers and IT teams should prepare to support these devices as they enter the market.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-announces-new-mobile-style-windows-security-controls/",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-11-26h1-for-select-and-upcoming-cpus/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 11 2026",
+            "headline": "ISC Stormcast Highlights—February 11th Security Insights",
+            "title": "SANS ISC Stormcast Discusses Current Cybersecurity Threats and Trends",
+            "content": "The SANS Internet Storm Center&#x27;s latest podcast episode covers a range of cybersecurity issues relevant to professionals. The discussion includes emerging threats, recent vulnerabilities, and trends in cyber defense strategies. The InfoCON level remains at green, indicating no immediate widespread threats, but the episode stresses the importance of vigilance and regular system updates. Security teams are advised to stay informed through such resources to preemptively address potential risks. This podcast serves as a valuable tool for keeping abreast of the evolving cybersecurity landscape.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32702",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 11 2026",
+            "headline": "Microsoft Patches 6 Exploited Vulnerabilities—Update Now",
+            "title": "February 2026 Patch Tuesday Addresses Six Actively Exploited Microsoft Vulnerabilities",
+            "content": "Microsoft&#x27;s February Patch Tuesday release tackles six actively exploited vulnerabilities among a total of 60 security fixes. These vulnerabilities affect various Microsoft products and have been used in the wild, posing significant risks to affected systems. Tyler Reguly from Fortra highlights the ease of mitigating these issues with regular Microsoft patches, underscoring the importance of timely updates. Organizations using Microsoft products should prioritize applying these patches to safeguard against potential exploitation. This update cycle reflects Microsoft&#x27;s ongoing efforts to enhance the security of its software ecosystem.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4130446/february-2026-patch-tuesday-six-new-and-actively-exploited-microsoft-vulnerabilities-addressed.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 10 2026",
+            "headline": "BeyondTrust RCE Flaw—Patch Critical Vulnerability Now",
+            "title": "BeyondTrust Urges Patching Critical RCE Vulnerability in Remote Access Tools",
+            "content": "BeyondTrust has released patches for a critical remote code execution (RCE) vulnerability affecting its Remote Support (RS) and Privileged Remote Access (PRA) tools. This flaw allows attackers to execute operating system commands without authentication or user interaction, posing a severe threat to organizations using self-hosted versions of these tools. The vulnerability highlights the importance of securing remote access solutions against unauthorized exploitation. Companies are strongly advised to apply the available patches immediately to prevent potential breaches. This incident underscores the critical need for robust security measures in remote access technologies.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4130415/beyondtrust-fixes-critical-rce-flaw-in-remote-access-tools.html",
             "relatedResources": [
                 {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Feb 10 2026",
+            "headline": "SSHStalker Botnet—IRC Powers New Linux Threat",
+            "title": "SSHStalker Botnet Utilizes IRC for Command-and-Control Operations",
+            "content": "A newly identified Linux botnet, named SSHStalker, is exploiting the Internet Relay Chat (IRC) protocol for its command-and-control (C2) communications. This approach leverages an older technology to manage infected devices, demonstrating the adaptability of threat actors. SSHStalker targets Linux systems, potentially affecting a wide range of servers and IoT devices. Security professionals should monitor network traffic for unusual IRC activity and implement robust SSH configurations to mitigate infection risks. This development highlights the ongoing evolution and persistence of botnet threats in the cybersecurity landscape.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-linux-botnet-sshstalker-uses-old-school-irc-for-c2-comms/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 10 2026",
+            "headline": "North Korean Hackers Deploy macOS Malware in Crypto Heists",
+            "title": "North Korean Hackers Use macOS Malware in Cryptocurrency Theft Operations",
+            "content": "North Korean cyber actors are employing new macOS malware in targeted attacks against the cryptocurrency sector. Utilizing AI-generated videos and the ClickFix technique, these campaigns aim to deliver malware to both macOS and Windows environments. The attacks are part of a broader strategy to exfiltrate funds from cryptocurrency exchanges and individual wallets. Organizations in the cryptocurrency industry should enhance their security postures and remain vigilant against such sophisticated threats. This operation underscores the growing threat of nation-state actors in the digital financial realm.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/north-korean-hackers-use-new-macos-malware-in-crypto-theft-attacks/",
+            "relatedResources": [
                 {
                     "label": "Active Directory Security",
                     "url": "/guides/active-directory-security-hardening.html",
@@ -43,57 +71,12 @@ const websiteContent = {
         },
         {
             "date": "Feb 10 2026",
-            "headline": "ZeroDayRAT Malware Targets Mobile Devices via Telegram",
-            "title": "ZeroDayRAT Malware Offers Full Control Over Android, iOS Devices",
-            "content": "ZeroDayRAT, a new commercial spyware platform, is being marketed to cybercriminals on Telegram, offering full remote control over compromised Android and iOS devices. This malware allows attackers to access personal data, intercept communications, and manipulate device functions. The platform&#x27;s capabilities are comparable to spyware tools typically developed by nation-state actors, raising concerns about its potential impact. Security experts warn of the severe privacy risks posed to individuals and organizations alike. Users are urged to stay informed about mobile security threats and to install reputable security software on their devices.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/zerodayrat-malware-grants-full-access-to-android-ios-devices/",
+            "headline": "SolarWinds WHD Exposures—Public Apps Risk Cyber Attacks",
+            "title": "SolarWinds WHD Attacks Highlight Dangers of Publicly Exposed Applications",
+            "content": "Recent attacks on SolarWinds Web Help Desk (WHD) instances have exposed the vulnerabilities of applications left accessible on the public internet. These attacks demonstrate the risks associated with inadequate security configurations, making exposed apps attractive targets for cybercriminals. Organizations using WHD should review their security settings and restrict public access to mitigate potential threats. This incident serves as a reminder of the importance of securing web applications and maintaining a strong cybersecurity posture. The exposure of such applications can lead to significant data breaches and operational disruptions.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/solarwinds-whd-attacks-exposed-apps",
             "relatedResources": []
-        },
-        {
-            "date": "Feb 10 2026",
-            "headline": "ZeroDayRAT Spyware Kit Threatens Mobile Device Security",
-            "title": "ZeroDayRAT Spyware Kit Enables Total Compromise of iOS, Android Devices",
-            "content": "Security researchers have identified ZeroDayRAT, a sophisticated spyware kit available on Telegram, which enables complete compromise of iOS and Android devices. This toolkit&#x27;s capabilities are akin to those requiring nation-state resources, highlighting its advanced nature. The spyware can intercept communications, access personal data, and control device functions, posing significant privacy and security threats. As mobile devices continue to be integral to personal and professional life, the emergence of such tools underscores the need for robust mobile security measures. Users should remain vigilant and consider implementing advanced security solutions to protect their devices.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/new-zerodayrat-spyware-kit-enables-total-compromise-of-ios-android-devices/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Feb 10 2026",
-            "headline": "SSHStalker Botnet Infects 7,000 Linux Systems",
-            "title": "SSHStalker Linux Botnet Employs Classic Techniques to Spread",
-            "content": "The SSHStalker botnet has reportedly infected 7,000 Linux systems using traditional mass-compromise techniques. This botnet leverages a combination of scanners and malware to propagate across networks, exploiting known vulnerabilities in Linux environments. Despite using older methods, SSHStalker&#x27;s effectiveness signals the persistent threat posed by botnets, particularly in systems lacking updated security protocols. Organizations are advised to regularly update and patch their Linux systems to mitigate such risks. The incident serves as a reminder of the importance of maintaining robust cybersecurity defenses, even against seemingly outdated attack strategies.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/new-sshstalker-linux-botnet-uses-old-techniques/",
-            "relatedResources": [
-                {
-                    "label": "MITRE ATT&CK Mapping",
-                    "url": "/guides/mitre-attack-mapping.html",
-                    "icon": "fa-map"
-                }
-            ]
-        },
-        {
-            "date": "Feb 10 2026",
-            "headline": "Phorpiex Botnet Uses Weaponized Shortcuts in Ransomware Attack",
-            "title": "Windows Shortcut Exploited in Phorpiex-Linked Ransomware Campaign",
-            "content": "Researchers at Forcepoint X-Labs have uncovered a phishing campaign linked to the Phorpiex botnet that utilizes weaponized Windows shortcut files to deploy Global Group ransomware. This campaign, active since late 2024, employs common email lures to trick victims into executing malicious payloads. The use of Windows shortcuts as an attack vector highlights the evolving tactics of cybercriminals in bypassing traditional security measures. Organizations are urged to educate employees about phishing threats and to implement robust email filtering solutions to prevent such attacks. Keeping systems updated and conducting regular security audits are also recommended.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4130019/windows-shortcut-weaponized-in-phorpiex-linked-ransomware-campaign.html",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Response Playbook",
-                    "url": "/guides/ransomware-response-playbook.html",
-                    "icon": "fa-biohazard"
-                }
-            ]
         },
         {
             "date": "Mar 19 2026",
@@ -109,45 +92,6 @@ const websiteContent = {
                     "icon": "fa-chart-bar"
                 }
             ]
-        },
-        {
-            "date": "Feb 10 2026",
-            "headline": "Anthropic’s DXT Vulnerability—Remote Code Execution Risk",
-            "title": "Critical RCE Vulnerability Found in Anthropic’s Claude Desktop Extensions",
-            "content": "LayerX Security has identified a critical remote code execution (RCE) vulnerability in Anthropic’s Claude Desktop Extensions (DXT). The flaw allows a malicious Google Calendar invite to compromise systems by executing code with full privileges, affecting enterprises using DXT. Analysts warn that the zero-click nature of the exploit makes it particularly dangerous, as it requires no user interaction. This vulnerability highlights the ongoing risks associated with desktop extension software and the importance of rigorous security assessments. Organizations using DXT should apply available patches and review their security protocols to mitigate potential threats.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4129820/anthropics-dxt-poses-critical-rce-vulnerability-by-running-with-full-system-privileges.html",
-            "relatedResources": [
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Feb 10 2026",
-            "headline": "ISC Stormcast—Daily Cyber Threat Update",
-            "title": "SANS Internet Storm Center Provides Daily Cyber Threat Intelligence",
-            "content": "The SANS Internet Storm Center continues to offer its daily &quot;Stormcast&quot; podcast, providing valuable insights into the latest cyber threats and vulnerabilities. The February 10th edition highlights recent trends in malware activity, phishing campaigns, and emerging vulnerabilities. Security professionals can leverage this information to enhance their threat intelligence and defensive strategies. With the InfoCON level at green, the current threat landscape remains stable, but vigilance is essential. The podcast serves as a critical resource for staying informed about potential risks and maintaining robust cybersecurity defenses.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32698",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Feb 10 2026",
-            "headline": "Critics: US AI Strategy Risks Global Market Position",
-            "title": "Concerns Over US &#x27;Move Fast&#x27; AI Strategy and Global Market Impact",
-            "content": "Critics are raising alarms about the United States&#x27; &quot;move fast&quot; approach to artificial intelligence regulation, warning it could jeopardize its position in the global market. As the U.S. adopts a light-touch regulatory framework, businesses are left to navigate the complexities of AI implementation independently. This strategy contrasts with more structured approaches in regions like the EU, which could lead to competitive disadvantages. Stakeholders are urged to collaborate on establishing industry standards to ensure responsible AI development. The debate underscores the balancing act between innovation and regulation in the rapidly evolving AI landscape.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/trump-ai-policy-global-adoption-safety-regulation-critics/",
-            "relatedResources": []
         },
         {
             "date": "Mar 23 2026",
@@ -168,54 +112,30 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Feb 10 2026",
-            "headline": "Runway Secures $315M—Valued at $5.3B for AI Expansion",
-            "title": "Runway Raises $315M to Expand Beyond AI Video Generation",
-            "content": "AI video startup Runway has raised $315 million, valuing the company at $5.3 billion, as it seeks to expand its capabilities beyond video generation into more advanced world models. These world models aim to understand and simulate complex environments, potentially revolutionizing industries such as gaming, film, and virtual reality. The funding round was led by prominent venture capital firms, highlighting the growing interest in AI&#x27;s potential to create immersive digital experiences. By developing these models, Runway hopes to enable more sophisticated and interactive content creation. Stakeholders in the digital media and entertainment sectors should watch for advancements in AI-driven content tools.",
+            "date": "Feb 11 2026",
+            "headline": "OpenAI Exec Fired Amid Controversy—Denies Discrimination Claims",
+            "title": "OpenAI Executive Dismissed Over Discrimination Allegation Linked to Chatbot Policy",
+            "content": "An OpenAI policy executive has been dismissed following allegations of discrimination related to her opposition to an &quot;adult mode&quot; for chatbots. The executive has denied any discriminatory behavior, but the incident highlights ongoing tensions within AI companies over content moderation policies. The dismissal raises questions about internal governance and decision-making processes at OpenAI, especially as it navigates the complexities of AI ethics. Stakeholders in AI development should pay close attention to how this situation unfolds, as it may influence future policy and ethical guidelines within the industry.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/10/ai-video-startup-runway-raises-315m-at-5-3b-valuation-eyes-more-capable-world-models/",
-            "relatedResources": [
-                {
-                    "label": "API Security Best Practices",
-                    "url": "/guides/api-security-best-practices.html",
-                    "icon": "fa-plug"
-                }
-            ]
+            "sourceUrl": "https://techcrunch.com/2026/02/10/openai-policy-exec-who-opposed-chatbots-adult-mode-reportedly-fired-on-discrimination-claim/",
+            "relatedResources": []
         },
         {
-            "date": "Feb 10 2026",
-            "headline": "Trump Phone&#x27;s Viability Questioned Amidst Shifting Goals",
-            "title": "Trump Mobile T1 Phone&#x27;s Feasibility in Doubt as Goals Shift",
-            "content": "The Trump Mobile T1 Phone 8002, commonly referred to as the Trump Phone, has faced skepticism regarding its viability since its initial debut. Over the past eight months, the development team has frequently altered the device’s specifications and objectives, leading to questions about its ability to deliver on promises. Technical challenges, coupled with shifting project goals, have left potential users and industry analysts uncertain about its future in the competitive smartphone market. For developers and tech leaders, this serves as a reminder of the importance of clear project scopes and stable development targets. The phone&#x27;s success will depend heavily on its ability to meet consumer expectations.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/podcast/876188/trump-phone-specs-price-date-moltbook-openclaw-vergecast",
+            "date": "Feb 11 2026",
+            "headline": "xAI Faces Turmoil—Half Founding Team Exits Pre-IPO",
+            "title": "Half of xAI&#x27;s Founding Team Departs Amid Pre-IPO Challenges",
+            "content": "In a surprising development, half of the founding team at xAI has departed the company, raising concerns about its stability as it approaches a highly scrutinized IPO. The departures come at a critical time, potentially impacting the company&#x27;s ability to deliver on its ambitious AI projects. xAI, known for its cutting-edge research, now faces increased pressure to maintain momentum and reassure investors. This situation underscores the challenges tech startups face in retaining talent and managing growth during pivotal phases. Industry observers will be watching closely to see how xAI navigates these internal challenges.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/10/nearly-half-of-xais-founding-team-has-now-left-the-company/",
             "relatedResources": []
         },
         {
             "date": "Feb 10 2026",
-            "headline": "Nothing&#x27;s Apps: Fun to Code, Hard to Utilize",
-            "title": "Vibe Coding with Nothing’s Apps: Fun Yet Functionally Limited",
-            "content": "After a week of experimenting with Nothing&#x27;s Essential Apps Builder, users find the experience enjoyable but lacking in practical utility. The platform promises software that adapts to user behavior, but current offerings fall short of delivering meaningful functionality. While the concept of adaptive apps is appealing, the transition from novelty to a useful tool remains challenging. Developers and tech leaders should consider the gap between innovative ideas and real-world application as they explore adaptive technologies. This highlights the ongoing challenge of balancing creativity with practicality in software development.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/876229/nothing-essential-ai-app-builder",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 10 2026",
-            "headline": "Chinese Tech Giants Push Agentic AI in Industries",
-            "title": "Alibaba, Tencent, Huawei Drive Agentic AI for Industry Use",
-            "content": "Leading Chinese technology firms Alibaba, Tencent, and Huawei are advancing agentic AI systems, which autonomously execute multi-step tasks across various industries. These systems interact with software, data, and services without human intervention, aiming to enhance efficiency in targeted sectors. Alibaba is particularly focused on integrating these capabilities into industry-specific workflows, potentially transforming operations in sectors like finance, logistics, and manufacturing. As these technologies mature, businesses should prepare for a shift towards more autonomous processes, potentially reducing operational costs and increasing productivity. This trend underscores China&#x27;s strategic investment in AI to maintain competitive advantage.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/chinese-hyperscalers-and-industry-specific-chinas-agentic-ai/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 10 2026",
-            "headline": "Agentic AI in Healthcare—$450B Value by 2028",
-            "title": "Agentic AI to Revolutionize Life Sciences Marketing by 2028",
-            "content": "Agentic AI is poised to transform healthcare marketing by autonomously executing complex tasks, potentially generating up to $450 billion in economic value by 2028. Life sciences companies are increasingly integrating these AI agents into their commercial strategies, moving beyond simple prompt-based interactions. According to a report by Capgemini Invent, these systems could significantly enhance marketing efficiency and effectiveness. Healthcare marketers should consider adopting agentic AI to stay competitive, leveraging its capabilities to streamline operations and improve customer engagement. This development marks a significant evolution in how AI is applied in the life sciences sector.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/agentic-ai-healthcare-pharma-marketing-450b-value-2028/",
+            "headline": "Amazon Eyes AI Content Marketplace—Media Sites to Benefit",
+            "title": "Amazon Plans to Launch Marketplace for Media Content Licensing to AI Firms",
+            "content": "Amazon is reportedly planning to create a marketplace that connects media publishers with AI companies seeking licensable content. This initiative aims to streamline the process of content acquisition for AI training, potentially providing media companies with a new revenue stream. As AI models increasingly rely on diverse datasets, this marketplace could become a critical resource for ensuring high-quality training data. Media organizations should prepare to engage with this platform to capitalize on emerging opportunities in the AI ecosystem. This move by Amazon signals a growing convergence between traditional media and AI technologies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/10/amazon-may-launch-a-marketplace-where-media-sites-can-sell-their-content-to-ai-companies/",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
@@ -226,25 +146,61 @@ const websiteContent = {
         },
         {
             "date": "Feb 10 2026",
-            "headline": "AI Enthusiasts Show First Signs of Burnout",
-            "title": "Early Burnout Detected Among AI-Adopting Employees",
-            "content": "Employees who have embraced AI in their workflows are beginning to show signs of burnout as increased productivity expectations extend work hours into personal time. The efficiency gains provided by AI have paradoxically led to expanded to-do lists, with tasks filling every available moment, including lunch breaks and evenings. This trend highlights the need for organizations to balance productivity with employee well-being, ensuring that AI tools enhance rather than overwhelm. Managers should monitor workloads and encourage reasonable work-life boundaries to prevent burnout. This serves as a cautionary tale for industries rapidly integrating AI technologies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/09/the-first-signs-of-burnout-are-coming-from-the-people-who-embrace-ai-the-most/",
-            "relatedResources": []
+            "headline": "ChatGPT Tool Enhanced—Now Includes Document Viewer",
+            "title": "OpenAI Enhances ChatGPT&#x27;s Research Tool with Built-In Document Viewer",
+            "content": "OpenAI has upgraded ChatGPT&#x27;s deep research tool by adding a full-screen document viewer, allowing users to navigate AI-generated reports more efficiently. This feature enhances the user experience by enabling seamless scrolling and targeted access to specific report sections. As AI-generated content becomes more prevalent, tools like this are essential for professionals who rely on detailed analyses. The update reflects OpenAI&#x27;s commitment to improving its AI offerings and supporting user needs in research and data analysis. Users should explore this new functionality to maximize the utility of ChatGPT in their workflows.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/876775/openai-deep-research-chatgpt-full-screen-report-viewer",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
         },
         {
             "date": "Feb 10 2026",
-            "headline": "OpenAI Drops ‘io’ Branding for Upcoming Hardware",
-            "title": "OpenAI Abandons ‘io’ Branding Amid Trademark Dispute",
-            "content": "OpenAI has decided to discontinue the use of the &quot;io&quot; branding for its forthcoming AI hardware, following a trademark lawsuit. The device, which is anticipated to launch in 2027, has been at the center of legal challenges over its name. This decision reflects the complexities of branding in the highly competitive AI hardware market, where intellectual property rights are fiercely protected. Companies should be mindful of trademark issues when developing new products to avoid similar conflicts. OpenAI&#x27;s strategic pivot underscores the importance of adaptable branding strategies in the tech industry.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/openai-drops-io-branding-hardware-devices/",
+            "headline": "Olympic Ice Dance—AI Music Sparks Plagiarism Concerns",
+            "title": "Czech Ice Dancers Face Plagiarism Issues with AI-Generated Music at Olympics",
+            "content": "Czech ice dancers Katerina Mrazkova and Daniel Mrazek encountered unexpected challenges when their Olympic performance featured AI-generated music that was later found to contain plagiarized elements. This incident highlights the potential pitfalls of using large language models (LLMs) for creative purposes, where originality is crucial. The situation underscores the importance of thorough vetting and copyright checks when employing AI in artistic contexts. Artists and creators should be vigilant about the sources and originality of AI-generated content to avoid legal and reputational risks. This case serves as a cautionary tale for the integration of AI in the arts.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/10/olympics-czech-ice-dancers-duo-ai-music/",
             "relatedResources": [
                 {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Feb 10 2026",
+            "headline": "OpenAI Boosts API—Adds Agent Skills, Terminal Shell",
+            "title": "OpenAI Enhances Responses API with Agent Skills and Terminal Shell",
+            "content": "OpenAI has upgraded its Responses API to include agent skills and a complete terminal shell, significantly enhancing its capabilities for building AI agents. This update addresses previous limitations where AI models struggled with memory retention over extended interactions. By providing a more robust framework, OpenAI enables developers to create more sophisticated and context-aware AI systems. This advancement is crucial for applications requiring sustained engagement and complex task execution. Developers should explore these new features to leverage the full potential of AI agents in their projects.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/openai-upgrades-its-responses-api-to-support-agent-skills-and-a-complete",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 10 2026",
+            "headline": "Sequoia-Backed Lab Secures $180M—Aims for Human-Like AI Learning",
+            "title": "Flapping Airplanes Secures $180M to Develop Human-Like AI Learning Models",
+            "content": "Flapping Airplanes, an AI lab backed by Sequoia, Google Ventures, and Index, has raised $180 million to pursue AI models that learn like humans rather than relying on vast internet data. Led by brothers Ben and Asher Spec, the lab aims to revolutionize AI learning processes by mimicking human cognitive functions. This approach challenges the current trend of data-intensive AI training, promising more efficient and adaptable AI systems. Investors and tech leaders should monitor this initiative as it could redefine AI development paradigms and influence future research directions.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/podcast/this-sequoia-backed-lab-thinks-the-brain-is-the-floor-not-the-ceiling-for-ai/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
                 }
             ]
         }
@@ -310,6 +266,72 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2026-21513",
+            "dateAdded": "Feb 10, 2026",
+            "vendor": "Microsoft Windows",
+            "description": "Microsoft MSHTML Framework contains a protection mechanism failure vulnerability that could allow an unauthorized attacker to bypass a security feature over a network.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21513",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-21525",
+            "dateAdded": "Feb 10, 2026",
+            "vendor": "Microsoft Windows",
+            "description": "Microsoft Windows Remote Access Connection Manager contains a NULL pointer dereference that could allow an unauthorized attacker to deny service locally.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21525",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-21510",
+            "dateAdded": "Feb 10, 2026",
+            "vendor": "Microsoft Windows",
+            "description": "Microsoft Windows Shell contains a protection mechanism failure vulnerability that could allow an unauthorized attacker to bypass a security feature over a network.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21510",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-21533",
+            "dateAdded": "Feb 10, 2026",
+            "vendor": "Microsoft Windows",
+            "description": "Microsoft Windows Remote Desktop Services contains an improper privilege management vulnerability that could allow an authorized attacker to elevate privileges locally.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21533",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-21519",
+            "dateAdded": "Feb 10, 2026",
+            "vendor": "Microsoft Windows",
+            "description": "Microsoft Desktop Windows Manager contains a type confusion vulnerability that could allow an authorized attacker to elevate privileges locally.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21519",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-21514",
+            "dateAdded": "Feb 10, 2026",
+            "vendor": "Microsoft Office",
+            "description": "Microsoft Office Word contains a reliance on untrusted inputs in a security decision vulnerability that could allow an authorized attacker to elevate privileges locally.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21514",
+            "isZeroDay": false
+        },
         {
             "cveId": "CVE-2025-11953",
             "dateAdded": "Feb 05, 2026",
