@@ -1984,6 +1984,13 @@
       "durationSeconds": 180,
       "durationMinutes": 3.0,
       "status": "success"
+    },
+    {
+      "timestamp": "2026-02-12T19:35:12.830384",
+      "workflow": "threat-intel",
+      "durationSeconds": 180,
+      "durationMinutes": 3.0,
+      "status": "success"
     }
   ],
   "dailyStats": {
@@ -2398,12 +2405,12 @@
       }
     },
     "2026-02-12": {
-      "totalMinutes": 15.0,
-      "runCount": 5,
+      "totalMinutes": 18.0,
+      "runCount": 6,
       "workflows": {
         "threat-intel": {
-          "runs": 5,
-          "minutes": 15.0
+          "runs": 6,
+          "minutes": 18.0
         }
       }
     }
