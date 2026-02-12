@@ -4,123 +4,90 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Feb 11 2026",
-            "headline": "Conduent Breach Exposes 17,000 Volvo Employees&#x27; Data",
-            "title": "Conduent Data Breach Widens, Affecting Volvo Group Employees",
-            "content": "A major data breach at Conduent has compromised the personal information of nearly 17,000 employees at Volvo Group. Initially believed to impact 10 million individuals, the breach now affects at least 25 million people globally. The breach involves sensitive data, raising concerns over identity theft and corporate espionage. This incident underscores the vulnerabilities in third-party service providers that handle vast amounts of employee information. Affected individuals are advised to monitor their personal accounts for suspicious activity and consider identity theft protection services. This breach highlights the importance of robust data security measures within supply chains.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/conduent-breach-hits-volvo-group-nearly-17000-employees-data-exposed/",
-            "relatedResources": [
-                {
-                    "label": "Third-Party Risk Management",
-                    "url": "/guides/third-party-risk-management.html",
-                    "icon": "fa-handshake"
-                }
-            ]
-        },
-        {
-            "date": "Feb 11 2026",
-            "headline": "Zast.AI Secures $6M for AI Code Security Innovation",
-            "title": "Zast.AI Raises $6 Million to Enhance AI-Powered Code Security",
-            "content": "Zast.AI has successfully raised $6 million in funding to advance its AI-driven code security solutions. The startup utilizes AI agents to detect and validate software vulnerabilities before they can be exploited. This investment will accelerate the development of their platform, which aims to provide more efficient and accurate security assessments for developers. As software vulnerabilities remain a critical concern, Zast.AI&#x27;s approach could significantly reduce the risk of cyberattacks. Developers and organizations are encouraged to explore AI-enhanced security tools to bolster their defenses against emerging threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/zast-ai-raises-6-million-for-ai-powered-code-security/",
-            "relatedResources": [
-                {
-                    "label": "Third-Party Risk Management",
-                    "url": "/guides/third-party-risk-management.html",
-                    "icon": "fa-handshake"
-                }
-            ]
-        },
-        {
-            "date": "Feb 11 2026",
-            "headline": "WSL2: A New Frontier for Malware in Windows",
-            "title": "Windows Subsystem for Linux 2 Emerges as a Malware Vector",
-            "content": "The Windows Subsystem for Linux (WSL), particularly its latest version WSL2, is becoming a notable entry point for malware within the Windows ecosystem. WSL2 allows users to run a Linux environment directly inside Windows, which attackers are now exploiting to bypass traditional security measures. This development poses a significant risk, as it can facilitate the spread of Linux-based malware on Windows systems. Security professionals should be aware of this trend and ensure that endpoint protection solutions are updated to detect threats leveraging WSL2. This highlights the evolving nature of cross-platform malware threats.",
+            "date": "Feb 12 2026",
+            "headline": "ISC Stormcast Highlights—Feb 12: Key Security Updates",
+            "title": "ISC Stormcast for February 12th, 2026: Essential Security Developments",
+            "content": "The SANS Internet Storm Center&#x27;s Stormcast for February 12th, 2026, provides a comprehensive overview of the latest cybersecurity threats and updates. Key topics include recent vulnerabilities in widely-used software, emerging threat actor tactics, and new security patches. The podcast emphasizes the importance of timely updates and vigilance against evolving cyber threats. As always, the ISC advises organizations to maintain robust security practices and stay informed about the latest developments in the cybersecurity landscape. This episode continues the ISC&#x27;s commitment to providing actionable intelligence for security professionals.",
             "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32704",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32710",
             "relatedResources": [
                 {
-                    "label": "Active Directory Security",
-                    "url": "/guides/active-directory-security-hardening.html",
-                    "icon": "fa-sitemap"
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Feb 12 2026",
+            "headline": "SSH Worm Propagates in 4 Seconds—Cryptographic C2 Analysis",
+            "title": "Four Seconds to Botnet: Analyzing a Self-Propagating SSH Worm",
+            "content": "A self-propagating SSH worm has been dissected in a guest diary by Johnathan Husch, an ISC intern, revealing its rapid spread and cryptographically signed command and control (C2) mechanisms. The worm exploits weak SSH passwords to quickly compromise systems, with propagation taking as little as four seconds. This analysis underscores the critical need for strong password policies and robust SSH configurations to prevent unauthorized access. The worm&#x27;s sophisticated use of cryptographic signatures for C2 communication highlights the increasing complexity of modern cyber threats. Security teams are urged to review their SSH security measures immediately.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32708",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 12 2026",
+            "headline": "Apple Patches Zero-Day in Targeted Sophisticated Attacks",
+            "title": "Apple Fixes Zero-Day Flaw Exploited in Sophisticated Attacks",
+            "content": "Apple has issued security updates to address a zero-day vulnerability actively exploited in highly sophisticated attacks targeting specific individuals. The flaw, which affected multiple Apple products, allowed attackers to execute arbitrary code with elevated privileges. This marks another instance of Apple&#x27;s software being targeted by advanced persistent threats (APTs) seeking to exploit zero-day vulnerabilities. Users are strongly advised to update their devices immediately to mitigate potential risks. This incident highlights the ongoing threat of zero-day exploits and the importance of timely patch management.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/apple-fixes-zero-day-flaw-used-in-extremely-sophisticated-attacks/",
+            "relatedResources": [
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Feb 12 2026",
+            "headline": "SSHStalker Botnet Compromises 7,000 Linux Servers",
+            "title": "SSHStalker Botnet Brute-Forces 7,000 Linux Machines",
+            "content": "The SSHStalker botnet has successfully brute-forced its way into approximately 7,000 poorly-protected Linux servers by exploiting weak SSH password authentication. Discovered by Flare Systems, the botnet&#x27;s operators utilized staging servers to coordinate their attacks, compromising a significant number of systems by the end of January. This incident serves as a stark reminder of the importance of implementing strong, unique passwords and enabling two-factor authentication (2FA) for SSH access. Organizations using Linux servers are advised to review their security configurations to prevent similar breaches.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4130967/sshstalker-botnet-brute-forces-its-way-onto-7000-linux-machines.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 12 2026",
+            "headline": "AI Bots Causing Panic—Human Misinterpretation at Fault",
+            "title": "Smashing Security Podcast Debunks AI Plotting Humanity&#x27;s Demise",
+            "content": "The latest episode of the Smashing Security podcast delves into the hysteria surrounding AI bots allegedly plotting against humanity, fueled by the AI-only social network Moltbook. Hosts discuss how the platform, which sparked widespread concern, was misinterpreted as a harbinger of the singularity. In reality, human misunderstanding and exaggeration were at the core of the panic. The episode emphasizes the need for critical thinking and skepticism when interpreting AI-related claims. Listeners are encouraged to stay informed and question sensational narratives about AI capabilities.",
+            "source": "GRAHAM CLULEY",
+            "sourceUrl": "https://grahamcluley.com/smashing-security-podcast-454/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 12 2026",
+            "headline": "AI Summarization Tools Manipulated—Microsoft Warns of Poisoning",
+            "title": "Companies Exploit &#x27;Summarize with AI&#x27; for Prompt Manipulation",
+            "content": "Microsoft has warned of a new threat vector termed &quot;AI recommendation poisoning,&quot; where the &#x27;Summarize with AI&#x27; feature is manipulated to alter enterprise chatbot outputs. This technique involves crafting malicious prompts that skew AI-generated summaries, potentially misleading users and affecting decision-making processes. As AI tools become more embedded in business operations, the risk of manipulation grows, necessitating vigilance and robust security measures. Organizations are advised to monitor AI interactions closely and implement safeguards to protect against such manipulative tactics.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4131078/companies-are-using-summarize-with-ai-to-manipulate-enterprise-chatbots-3.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 11 2026",
+            "headline": "Windows 11 Notepad Flaw Allows Silent Code Execution",
+            "title": "Windows 11 Notepad Vulnerability Enables Remote Code Execution",
+            "content": "Microsoft has patched a critical vulnerability in Windows 11 Notepad that allowed attackers to execute code by tricking users into clicking specially crafted Markdown links. This flaw, categorized as a remote code execution (RCE) vulnerability, enabled the execution of local or remote programs without triggering Windows security warnings. Users are urged to update their systems immediately to protect against potential exploitation. This incident highlights the need for continuous vigilance and timely updates to safeguard against emerging threats in commonly used applications.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/windows-11-notepad-flaw-let-files-execute-silently-via-markdown-links/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
                 },
                 {
-                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
-                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
-                    "icon": "fa-shield-virus"
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
                 }
             ]
-        },
-        {
-            "date": "Feb 11 2026",
-            "headline": "GOP&#x27;s MEGA and SAVE Acts Aim to Revamp Election Laws",
-            "title": "GOP Congress Introduces MEGA and SAVE Acts to Reform Election Laws",
-            "content": "The GOP Congress has proposed the MEGA Act and SAVE Act to overhaul U.S. election laws, aiming to address concerns over election fraud. Despite audits and expert analyses indicating that election improprieties are rare, these acts seek to implement more stringent measures. The proposed changes could have far-reaching implications for how elections are conducted and monitored in the future. Stakeholders in the election process should closely examine these legislative efforts and consider their potential impact on election integrity and voter accessibility.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/republicans-propose-save-america-act-mega-act-election-laws/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 11 2026",
-            "headline": "Hidden Information: A Silent Threat in Security Failures",
-            "title": "Recognizing Hidden Information as a Catalyst for Security Failures",
-            "content": "Security breaches often stem not from external attacks but from overlooked or hidden information within organizations. These blind spots can lead to significant vulnerabilities, making it crucial for security teams to uncover and address them proactively. The article emphasizes the importance of transparency and thorough information audits to prevent security failures. Organizations are encouraged to implement comprehensive data management practices and regular audits to ensure all critical information is accounted for and protected. This approach can help mitigate risks associated with hidden data and enhance overall security posture.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/security-in-the-dark-recognizing-the-signs-of-hidden-information/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 11 2026",
-            "headline": "Microsoft to Update Secure Boot Certificates by June 2026",
-            "title": "Microsoft Plans to Refresh Windows Secure Boot Certificates in June 2026",
-            "content": "Microsoft has announced that it will update its Windows Secure Boot certificates in June 2026, as the current certificates approach their expiration after 15 years of service. This update is critical to maintaining the integrity and security of the boot process, preventing unauthorized code from running during system startup. Organizations relying on Secure Boot should prepare for this transition by ensuring their systems are compatible with the new certificates. This update highlights the importance of keeping security protocols up-to-date to protect against evolving threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/microsoft-to-refresh-windows-secure-boot-certificates-in-june-2026/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 11 2026",
-            "headline": "February Patch Tuesday Fixes Six Active Zero-Days",
-            "title": "Microsoft February 2026 Patch Tuesday Addresses Six Zero-Day Vulnerabilities",
-            "content": "Microsoft&#x27;s February 2026 Patch Tuesday includes fixes for 59 security flaws, notably six zero-day vulnerabilities that are currently being exploited in the wild. These zero-days pose significant risks, allowing attackers to execute arbitrary code and compromise affected systems. Security professionals should prioritize deploying these updates to safeguard against potential exploits. This patch release underscores the ongoing challenge of zero-day vulnerabilities and the critical need for timely patch management. Organizations are advised to review their patching strategies to ensure rapid response to such threats.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/02/february-2026-patch-tuesday-includes-six-actively-exploited-zero-days",
-            "relatedResources": [
-                {
-                    "label": "Zero-Day Detection Guide",
-                    "url": "/guides/zero-day-detection.html",
-                    "icon": "fa-exclamation-triangle"
-                }
-            ]
-        },
-        {
-            "date": "Feb 11 2026",
-            "headline": "Windows 11 26H1—Exclusive for Snapdragon X2 Devices",
-            "title": "Microsoft Launches Windows 11 26H1 for Snapdragon X2 and ARM Chips",
-            "content": "Microsoft has unveiled Windows 11 26H1, a version not intended for existing PCs but rather for devices powered by the Snapdragon X2 processor and potentially other ARM-based chips. This release marks a strategic move by Microsoft to enhance Windows compatibility and performance on ARM architecture, which is gaining traction in the mobile and lightweight computing market. The Snapdragon X2 is expected to offer improved energy efficiency and processing power, making it an attractive option for next-generation devices. Existing Windows users will not receive this update, emphasizing the company&#x27;s focus on new hardware ecosystems. Developers and IT teams should prepare to support these devices as they enter the market.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-11-26h1-for-select-and-upcoming-cpus/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 11 2026",
-            "headline": "ISC Stormcast Highlights—February 11th Security Insights",
-            "title": "SANS ISC Stormcast Discusses Current Cybersecurity Threats and Trends",
-            "content": "The SANS Internet Storm Center&#x27;s latest podcast episode covers a range of cybersecurity issues relevant to professionals. The discussion includes emerging threats, recent vulnerabilities, and trends in cyber defense strategies. The InfoCON level remains at green, indicating no immediate widespread threats, but the episode stresses the importance of vigilance and regular system updates. Security teams are advised to stay informed through such resources to preemptively address potential risks. This podcast serves as a valuable tool for keeping abreast of the evolving cybersecurity landscape.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32702",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 11 2026",
-            "headline": "Microsoft Patches 6 Exploited Vulnerabilities—Update Now",
-            "title": "February 2026 Patch Tuesday Addresses Six Actively Exploited Microsoft Vulnerabilities",
-            "content": "Microsoft&#x27;s February Patch Tuesday release tackles six actively exploited vulnerabilities among a total of 60 security fixes. These vulnerabilities affect various Microsoft products and have been used in the wild, posing significant risks to affected systems. Tyler Reguly from Fortra highlights the ease of mitigating these issues with regular Microsoft patches, underscoring the importance of timely updates. Organizations using Microsoft products should prioritize applying these patches to safeguard against potential exploitation. This update cycle reflects Microsoft&#x27;s ongoing efforts to enhance the security of its software ecosystem.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4130446/february-2026-patch-tuesday-six-new-and-actively-exploited-microsoft-vulnerabilities-addressed.html",
-            "relatedResources": []
         },
         {
             "date": "Mar 19 2026",
@@ -156,12 +123,45 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
+            "date": "Feb 12 2026",
+            "headline": "z.ai&#x27;s GLM-5 Slashes Hallucination Rates with New RL &#x27;Slime&#x27; Technique",
+            "title": "z.ai&#x27;s GLM-5 Model Achieves Record Low Hallucination Rates with RL &#x27;Slime&#x27;",
+            "content": "Chinese AI startup Zhupai, known as z.ai, has unveiled its latest large language model, GLM-5, which boasts a record low hallucination rate. The open-source model, available under the MIT License, is designed for enterprise deployment and leverages a novel reinforcement learning technique dubbed &#x27;slime&#x27;. This approach significantly enhances the model&#x27;s accuracy and reliability, reducing erroneous outputs that have plagued AI models. The GLM-5&#x27;s advancements mark a notable step forward in AI development, offering enterprises a more dependable tool for natural language processing tasks. Organizations considering AI integration should evaluate GLM-5 for its potential to improve operational efficiency and decision-making processes.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/z-ais-open-source-glm-5-achieves-record-low-hallucination-rate-and-leverages",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
             "date": "Feb 11 2026",
-            "headline": "T-Mobile—50 Languages, No App Needed",
-            "title": "T-Mobile to Launch Live Translation for Phone Calls in 50+ Languages",
-            "content": "T-Mobile is set to launch a groundbreaking AI-powered feature that translates live phone calls into over 50 languages without the need for a separate app. Announced for beta testing this spring, the Live Translation feature aims to break language barriers for T-Mobile customers, who can register for early access starting today. This innovation utilizes advanced natural language processing to provide seamless, real-time translations directly during calls. The service could significantly impact global communication, making it easier for individuals and businesses to interact across language divides. With this move, T-Mobile continues to leverage AI to enhance user experience and expand its service offerings.",
+            "headline": "xAI Shares Interplanetary Vision in Public All-Hands Meeting",
+            "title": "xAI Reveals Ambitious Interplanetary Plans in Public All-Hands Presentation",
+            "content": "xAI, the innovative AI firm, has taken the unprecedented step of releasing its full 45-minute all-hands presentation to the public via the X platform. The presentation outlines xAI&#x27;s ambitious plans for interplanetary expansion, highlighting the company&#x27;s commitment to advancing AI technologies beyond Earth. This bold move underlines xAI&#x27;s dedication to transparency and its vision of leveraging AI for space exploration and colonization. The public release aims to foster community engagement and gather feedback from a broader audience. Stakeholders and tech enthusiasts are encouraged to review the presentation to understand xAI&#x27;s strategic direction and potential collaboration opportunities.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/11/xai-lays-out-interplanetary-ambitions-in-public-all-hands/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 11 2026",
+            "headline": "xAI Co-Founders Exit Post-SpaceX Merger—$1.25T Valuation Impact",
+            "title": "Two xAI Co-Founders Depart Following Historic SpaceX Merger",
+            "content": "Following the historic merger between xAI and SpaceX, valued at $1.25 trillion, two co-founders of xAI have announced their departure from the company. The merger, which also involves social media platform X, is the largest of its kind to date. The exits have sparked discussions about the merger&#x27;s impact on xAI&#x27;s internal dynamics and future direction. Departing co-founders have shared detailed statements expressing their reasons for leaving, which include concerns about strategic alignment and corporate culture. Industry observers are closely monitoring the situation to assess the long-term implications for xAI&#x27;s operations and leadership structure.",
             "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/877008/t-mobile-live-translation-languages-ai-network",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/877609/two-more-xai-co-founders-are-among-those-leaving-after-the-spacex-merger",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 11 2026",
+            "headline": "Modal Labs Eyes $2.5B Valuation in Funding Talks",
+            "title": "Modal Labs in Negotiations for Funding at $2.5 Billion Valuation",
+            "content": "Modal Labs, a startup specializing in AI inference, is reportedly in discussions to raise a new round of funding, potentially valuing the company at $2.5 billion. General Catalyst is expected to lead the investment round for the four-year-old company. This funding could significantly accelerate Modal Labs&#x27; growth, enabling advancements in AI inference technologies that are critical for efficient data processing and analysis. The startup&#x27;s innovative solutions are gaining traction in industries ranging from finance to healthcare. Investors and tech leaders should watch for further developments as Modal Labs positions itself as a key player in the AI landscape.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/11/ai-inference-startup-modal-labs-in-talks-to-raise-at-2-5b-valuation-sources-say/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
@@ -169,70 +169,28 @@ const websiteContent = {
                     "icon": "fa-skull-crossbones"
                 },
                 {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
+                    "label": "SIEM & Log Analysis Guide",
+                    "url": "/guides/siem-log-analysis.html",
+                    "icon": "fa-chart-bar"
                 }
             ]
         },
         {
             "date": "Feb 11 2026",
-            "headline": "Uber Eats AI—Your New Grocery Shopping Assistant",
-            "title": "Uber Eats Introduces AI Cart Assistant for Enhanced Grocery Shopping",
-            "content": "Uber has unveiled a new AI feature called &quot;Cart Assistant&quot; within its Uber Eats app, designed to streamline the grocery shopping experience. Users can interact with the AI via text prompts to generate grocery lists or upload images of items they need. This feature is part of Uber&#x27;s broader strategy to integrate AI into its services, aiming to simplify and personalize user interactions. The Cart Assistant could particularly benefit busy consumers looking for efficient ways to manage their shopping needs. By leveraging AI, Uber Eats is enhancing its app functionality, potentially increasing user engagement and satisfaction.",
+            "headline": "Anthropic Pledges to Offset Data Center Power Costs",
+            "title": "Anthropic Commits to Mitigating Data Center Electricity Impact",
+            "content": "Anthropic, an AI company, has announced its commitment to offset the electricity costs associated with its data centers to prevent increases in local residents&#x27; bills. The company plans to cover 100% of the necessary upgrades to connect its data centers to existing power grids, ensuring no additional financial burden on nearby communities. This initiative reflects a growing trend among tech companies to address the environmental and economic impacts of their operations. Residents and local governments can expect Anthropic&#x27;s proactive approach to set a precedent for sustainable data center management in the AI industry.",
             "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/transportation/876540/uber-eats-ai-chatbot-cart-assistant-grocery-shopping",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 11 2026",
-            "headline": "Tech Workers Demand Transparency on ICE Relations",
-            "title": "Tech Employees Frustrated by Companies&#x27; Silence on ICE Collaboration",
-            "content": "Amid heightened immigration enforcement by the U.S. Department of Homeland Security, tech workers are expressing frustration over their companies&#x27; lack of transparency regarding collaborations with Immigration and Customs Enforcement (ICE). Many employees interpret their CEOs&#x27; silence as a directive to avoid controversy, even as federal actions reportedly involve widespread violence. This situation highlights ongoing tensions within tech companies over ethical responsibilities and government contracts. Employees are increasingly vocal about their desire for corporate accountability and clarity on how their work intersects with governmental actions. This issue underscores the broader industry challenge of balancing business interests with ethical considerations.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/876558/tech-workers-ice-resistance-google-microsoft-clear-abbott",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/877526/anthropic-ai-electricity-costs-data-center-pledge",
             "relatedResources": []
         },
         {
             "date": "Feb 11 2026",
-            "headline": "OpenAI, Google Unite for Paris Startup Accelerator",
-            "title": "AI Giants Collaborate on Paris-Based Startup Accelerator F/ai",
-            "content": "OpenAI, Anthropic, and Google, among other tech leaders, have joined forces to launch F/ai, a new startup accelerator in Paris. This collaboration aims to foster innovation and support emerging AI talent by providing resources and mentorship to startups. The initiative represents a significant shift towards cooperation among industry rivals, driven by a shared interest in advancing AI technology. By pooling their expertise, these companies hope to accelerate the development of cutting-edge AI applications and solutions. The accelerator is expected to attract a diverse range of participants, contributing to Europe&#x27;s growing status as a hub for AI innovation.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/ai-industry-rivals-are-teaming-up-on-a-startup-accelerator/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 11 2026",
-            "headline": "Barclays Leverages AI—12% Profit Surge in 2025",
-            "title": "Barclays Harnesses AI to Enhance Profitability and Operational Efficiency",
-            "content": "Barclays has reported a 12% increase in annual profit for 2025, with earnings before tax reaching £9.1 billion, up from £8.1 billion the previous year. The bank attributes this growth to its strategic investment in AI technologies aimed at reducing costs and boosting returns. Barclays has set ambitious targets through 2028, aiming for a return on tangible equity (RoTE) of over 14%, up from a previous goal of above 13%. This move reflects a broader trend in the financial sector towards adopting AI to improve efficiency and financial performance. Barclays&#x27; success may encourage other financial institutions to accelerate their AI adoption.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/barclays-bets-on-ai-to-cut-costs-and-boost-returns/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 11 2026",
-            "headline": "Insurance Industry Turns to Agentic AI for Savings",
-            "title": "Agentic AI Drives Cost Efficiency in Insurance Sector Transformation",
-            "content": "Insurance companies are increasingly adopting agentic AI to achieve scalable efficiency amid ongoing digital transformation challenges. Despite having extensive data reserves and analytic expertise, the industry has struggled to move beyond pilot projects. Agentic AI offers a solution by automating decision-making processes and optimizing operations, ultimately reducing costs. This shift is crucial as insurers face pressure to modernize and improve profitability. By leveraging AI, insurance leaders can enhance service delivery and maintain competitiveness in a rapidly evolving market. The adoption of agentic AI is expected to accelerate as companies seek to capitalize on its potential.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/how-insurance-leaders-use-agentic-ai-to-cut-operational-costs/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 11 2026",
-            "headline": "UK MOD Partners with Red Hat for AI Deployment",
-            "title": "Red Hat to Build AI and Cloud Infrastructure for UK MOD",
-            "content": "The UK Ministry of Defence (MOD) has partnered with Red Hat to create a unified AI and hybrid cloud infrastructure across its operations. This initiative aims to eliminate data silos and expedite AI model deployment from data centers to tactical environments. The collaboration is part of the MOD&#x27;s strategy to enhance its technological capabilities and operational efficiency. For CIOs, this partnership signifies a significant step towards integrating advanced AI solutions within defense operations. Red Hat&#x27;s involvement underscores its role as a key player in providing robust, scalable technology solutions for government entities.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/red-hat-unifies-ai-tactical-edge-deployment-for-uk-mod/",
+            "headline": "OpenAI Shifts Strategy—Disbands Mission Alignment Team",
+            "title": "OpenAI Disbands Mission Alignment Team, Appoints Chief Futurist",
+            "content": "OpenAI has announced the disbandment of its mission alignment team, reallocating its members to various roles within the company. The team&#x27;s leader has been appointed as OpenAI&#x27;s chief futurist, signaling a strategic shift in the organization&#x27;s focus. This move comes as OpenAI continues to refine its approach to AI development and deployment, emphasizing long-term vision and innovation. The restructuring aims to enhance OpenAI&#x27;s ability to address emerging challenges and opportunities in the rapidly evolving AI landscape. Stakeholders should anticipate further updates as OpenAI adapts its strategies to maintain leadership in the field.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/11/openai-disbands-mission-alignment-team-which-focused-on-safe-and-trustworthy-ai-development/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
@@ -240,28 +198,19 @@ const websiteContent = {
                     "icon": "fa-skull-crossbones"
                 },
                 {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
+                    "label": "API Security Best Practices",
+                    "url": "/guides/api-security-best-practices.html",
+                    "icon": "fa-plug"
                 }
             ]
         },
         {
             "date": "Feb 11 2026",
-            "headline": "OpenAI Exec Fired Amid Controversy—Denies Discrimination Claims",
-            "title": "OpenAI Executive Dismissed Over Discrimination Allegation Linked to Chatbot Policy",
-            "content": "An OpenAI policy executive has been dismissed following allegations of discrimination related to her opposition to an &quot;adult mode&quot; for chatbots. The executive has denied any discriminatory behavior, but the incident highlights ongoing tensions within AI companies over content moderation policies. The dismissal raises questions about internal governance and decision-making processes at OpenAI, especially as it navigates the complexities of AI ethics. Stakeholders in AI development should pay close attention to how this situation unfolds, as it may influence future policy and ethical guidelines within the industry.",
+            "headline": "Siri Revamp Delayed—Features Pushed to iOS 27",
+            "title": "Apple&#x27;s Siri Overhaul Postponed, Some Features Delayed Until iOS 27",
+            "content": "Apple&#x27;s anticipated Siri revamp has encountered delays, with some features now expected to roll out with iOS 27 instead of the upcoming iOS 26.4 update. The revised timeline indicates a phased release of new capabilities, potentially affecting user expectations and competitive positioning. Apple&#x27;s decision to delay the overhaul suggests a focus on ensuring quality and functionality before launch. Developers and users should prepare for a gradual introduction of Siri&#x27;s enhancements, which aim to improve voice recognition and user interaction. The delay reflects ongoing challenges in AI-driven voice assistant development.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/10/openai-policy-exec-who-opposed-chatbots-adult-mode-reportedly-fired-on-discrimination-claim/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 11 2026",
-            "headline": "xAI Faces Turmoil—Half Founding Team Exits Pre-IPO",
-            "title": "Half of xAI&#x27;s Founding Team Departs Amid Pre-IPO Challenges",
-            "content": "In a surprising development, half of the founding team at xAI has departed the company, raising concerns about its stability as it approaches a highly scrutinized IPO. The departures come at a critical time, potentially impacting the company&#x27;s ability to deliver on its ambitious AI projects. xAI, known for its cutting-edge research, now faces increased pressure to maintain momentum and reassure investors. This situation underscores the challenges tech startups face in retaining talent and managing growth during pivotal phases. Industry observers will be watching closely to see how xAI navigates these internal challenges.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/10/nearly-half-of-xais-founding-team-has-now-left-the-company/",
+            "sourceUrl": "https://techcrunch.com/2026/02/11/apples-siri-revamp-reportedly-delayed-again/",
             "relatedResources": []
         }
     ],
@@ -390,28 +339,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21514",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-11953",
-            "dateAdded": "Feb 05, 2026",
-            "vendor": "React Native Community CLI",
-            "description": "React Native Community CLI contains an OS command injection vulnerability which could allow unauthenticated network attackers to send POST requests to the Metro Development Server and run arbitrary ex",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-11953",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-24423",
-            "dateAdded": "Feb 05, 2026",
-            "vendor": "SmarterTools SmarterMail",
-            "description": "SmarterTools SmarterMail contains a missing authentication for critical function vulnerability in the ConnectToHub API method. This could allow the attacker to point the SmarterMail instance to a mali",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-24423",
             "isZeroDay": false
         }
     ],
